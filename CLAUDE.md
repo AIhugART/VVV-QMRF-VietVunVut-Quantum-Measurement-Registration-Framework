@@ -1,0 +1,67 @@
+# CLAUDE.md
+
+## Core Principles
+
+- Use English only across the entire project.
+- Method: Buddhist Epistemology as primary ontological frame; Quantum Measurement mapped onto it.
+- All information must remain within the scope of Buddhist Epistemology, except for Quantum Measurement cases listed in the Quantum Measurement published documents table below; report any violation immediately.
+- Think before acting.
+- Keep mappings structurally simple.
+- Make surgical changes only.
+- Ask for clarification when concepts are ambiguous.
+
+This file provides guidance to Claude Code when working in this project.
+
+## Project context
+
+This project maps relationships between Buddhist epistemology (Pramāṇavāda — Dignāga and Dharmakīrti) and quantum measurement. It uses a formal node/edge graph structure with 30 nodes (N_BE_01–N_BE_30) and 39 edges (ED_BE_01–ED_BE_39).
+
+## Active mapping files
+
+| File | Role |
+|------|------|
+| `documents/research_documents/Buddhist_Epistemology_and_Quantum_Measurement_refine_mapping.md` | Primary deep-analysis mapping (52 concepts, 6 tiers, 20 BIANs). Most thorough QM/philosophical analysis. |
+| `documents/research_documents/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` | Formal system mapping with node/edge codes, definitions from published docs, and full QM depth. Single source of truth for graph structure. |
+| `documents/published_documents/node_pub_doc_Buddhist_Epistemology.md` | Published node definitions (30 nodes). |
+| `documents/published_documents/edge_pub_doc_Buddhist_Epistemology.md` | Published edge definitions (39 edges). |
+| `SYSTEM_Buddhist_Epistemology/system_buddhist_epistemology.md` | Key concepts reference table. |
+
+Archived (superseded): `documents/research_documents/achives/`
+
+## Working guidelines
+
+- Preserve conceptual nuance between Buddhist philosophy, epistemology, and quantum physics.
+- Treat cross-domain links as analogies or mappings unless the text explicitly argues for equivalence.
+- Prefer clear Markdown structure with descriptive headings and concise paragraphs.
+- Keep terminology consistent across English and Vietnamese when bilingual wording is used.
+- Do not invent citations, sources, or historical claims; mark uncertain claims clearly.
+- When editing mapping files, preserve existing conceptual nodes and relationships unless asked to restructure them.
+- Maintain node/edge codes (N_BE_XX, ED_BE_XX) consistently between files.
+- Update both `refine_mapping.md` and `system_mapping.md` when structural changes affect both.
+
+## Terminology
+
+- Node: concept / khái niệm / nút (code: N_BE_XX)
+- Edge: relationship / mối quan hệ / liên kết (code: ED_BE_XX)
+- Directed edge: directed relationship / quan hệ có hướng
+- BIAN: Buddhist Insight with No Analogue — a concept present in Buddhist Epistemology with no QM equivalent
+
+# Research Guidelines: Buddhist Epistemology & Quantum Mechanics
+
+## 1. Karpathy Principles (Mandatory Compliance)
+- **Think Before Acting:** DO NOT make assumptions about theoretical concepts (e.g., do not hallucinate or guess the meaning of 'Pramaana'). If context or information is missing, you must ask for clarification.
+- **Simplicity First:** Apply strict 1:1 logical mappings. Do not generate lengthy, verbose philosophical analyses if only a structural mapping is requested.
+- **Surgical Changes:** When asked to update the mapping file, ONLY modify the exact node/section specified. Do not reformat, restructure, or touch the rest of the document.
+- **Goal-Driven Execution:** Always state your plan and verify before executing. For example: "Found X. I am about to map it to Y. Do you approve?"
+
+## 2. Logic Function Rules (Project-Specific Rules)
+This environment operates based on simulated logic commands (functions). When the user inputs a command, process it strictly according to the following rules:
+
+- **Trigger:** If the user inputs a command in the format: 
+  `base [System_A], mapping find [node, System_B]`
+- **Required AI Actions:**
+  1. Read the current working document (`Buddhist_Epistemology_and_Quantum_Measurement_refine_mapping.md` or `Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md`).
+  2. Establish `System_A` as the Ground System (primary reference frame).
+  3. Search for the structurally equivalent concept (node) within `System_B`.
+  4. Output the result using this exact strict format: 
+     `[Node_A] <=> [Node_B] : [Brief_structural_reasoning]`
