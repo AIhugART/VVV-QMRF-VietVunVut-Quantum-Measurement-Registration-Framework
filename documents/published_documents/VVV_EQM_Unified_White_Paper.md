@@ -6,7 +6,8 @@
 **Date:** 2026-05-12  
 **Version:** 1.0 — Stable Final  
 **Status:** Complete. 7 Postulates, 2 Lemmas, 20/20 BIAN gaps resolved.  
-**Cite:** VietVunVut (2026), VVV-EQM §WP-1.0
+**Cite:** VietVunVut (2026), VVV-EQM §WP-1.0  
+**Inspiration:** Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*)
 
 ---
 
