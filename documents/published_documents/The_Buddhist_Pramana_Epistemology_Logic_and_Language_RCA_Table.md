@@ -2,7 +2,7 @@
 
 ## RCA rules
 
-- This table is a line-evidenced concept extraction from the article body, not a bibliography table.
+- This table is a line-evidenced concept extraction from the article body (sources: [Main Source](./achives/The_Buddhist_Pramana_-Epistemology_Logic_and_Langu.md) & [OL Source](./achives/The_Buddhist_Pramana_-Epistemology_Logic_and_Langu_ol.md)), not a bibliography table.
 - `Source` cites the exact source line or line range supporting the row.
 - `RCA: direct` means the definition is directly supported by the cited source line(s).
 - `RCA: listed only` means the source line lists the term but does not elaborate it; the definition is intentionally minimal.

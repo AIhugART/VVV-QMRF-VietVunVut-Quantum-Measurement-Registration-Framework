@@ -73,4 +73,4 @@
 | 65 | Degrees of Freedom (Counting Parameters) | States & Vectors | A single spin state is specified by 2 real parameters (after normalization and ignoring global phase), matching the two angles needed to specify a direction in 3D space. A general two-spin state has 6 real parameters vs 4 for a product state — the extra 2 quantify entanglement. |
 
 ---
-*Source: Susskind, L. & Friedman, A. (2014). Quantum Mechanics: The Theoretical Minimum. Basic Books. File contains Spanish machine-translated pages 1–200 only (Lectures 1–7). Concepts 49, 51–56 flagged [NGOẠI SUY] are from Lectures 8–10 (pages 235–311) not present in the source file. RCA verified 2026-05-10.*
+*Source: Susskind, L. & Friedman, A. (2014). Quantum Mechanics: The Theoretical Minimum. Basic Books. [File](./achives/592419193-Leonard-Susskind-Art-Friedman-Quantum-Mechanics-the-Theoretical-Minimum-Basic-Books-2014-1-200-1.txt) contains Spanish machine-translated pages 1–200 only (Lectures 1–7). Concepts 49, 51–56 flagged [NGOẠI SUY] are from Lectures 8–10 (pages 235–311) not present in the source file. RCA verified 2026-05-10.*

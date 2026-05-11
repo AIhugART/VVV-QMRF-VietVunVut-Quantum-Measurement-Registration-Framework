@@ -12,7 +12,7 @@ This document maps the complete Buddhist Epistemology system (263 nodes + 226 ed
 - Quantum Measurement target: `documents/published_documents/QM_Measurement_Unified_Concept_Table.md` (105 concepts)
 - Framework guide: `documents/research_documents/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md`
 - Schema reference: `documents/research_documents/mapping/BE_QM_codex_framework_1to1_RCA_Mapping.md`
-- BIAN Index: `documents/research_documents/gap/BIAN_index.md` (20 structural labels for BE concepts absent from QM formalism)
+- BIAN Index: [`documents/research_documents/gap/BIAN_index_v2.md`](../gap/BIAN_index_v2.md) (20 structural labels for BE concepts absent from QM formalism)
 
 ## Framework lens key
 

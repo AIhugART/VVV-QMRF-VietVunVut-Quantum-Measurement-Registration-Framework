@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## Scope
 
-This file expands the compact Buddhist Epistemology system table into a strict line-by-line RCA concept system using the line-evidenced RCA concept table as source material.
+This file expands the compact Buddhist Epistemology system table into a strict line-by-line RCA concept system using the line-evidenced [RCA concept table](../documents/published_documents/The_Buddhist_Pramana_Epistemology_Logic_and_Language_RCA_Table.md) as source material.
 
 ## RCA status labels (LLM-friendly)
 

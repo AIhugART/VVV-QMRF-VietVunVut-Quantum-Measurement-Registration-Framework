@@ -1,7 +1,7 @@
 # Jordan & Siddiqi — Quantum Measurement: Theory and Practice (2024)
 ## Concept Extraction Table (LLM-Friendly)
 
-> **Source**: Jordan, A.N. & Siddiqi, I.A. (2024). *Quantum Measurement: Theory and Practice*. Cambridge University Press. 11 chapters + Appendices A–B. Concept extraction across full text.
+> **Source**: Jordan, A.N. & Siddiqi, I.A. (2024). *Quantum Measurement: Theory and Practice*. Cambridge University Press. [File](./achives/753872152-Andrew-N-Jordan-Irfan-a-Siddiqi-Quantum-Measurement-Theory-and-Practice-Cambridge-University-Press-2024.txt) contains 11 chapters + Appendices A–B. Concept extraction across full text.
 
 | No. | Concept | Category | Definition |
 |-----|---------|----------|------------|

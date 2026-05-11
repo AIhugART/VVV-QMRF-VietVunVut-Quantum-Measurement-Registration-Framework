@@ -29,8 +29,8 @@ This document provides a complete index of 20 BIAN (Buddhist-Interpretive Absent
 | BIAN-1 | Post-Detection Internal Representational State | N_BE_00010 | core | Mental consciousness | Mano-vijñāna | A3 | 40 | N_QM_00040 | Stochastic Master Equation (SME) | Weak | Post-detection representational state |
 | BIAN-2 | Observer Self-Reference / Reflexive Cognition | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | N_QM_00038 | Quantum Trajectory | Weak | Observer self-reference |
 | BIAN-3 | Limit-Case Observation by Different Faculty | N_BE_00012 | core | Transcendental perception | Alaukika pratyakṣa | A3 | 28 | N_QM_00028 | Weak Measurement | Weak | Limit-case observation |
-| BIAN-4 | Measurement Representation / Internal Encoding | N_BE_00151 | RCA | Cognitive aspect | Ākāra | A3 | 13 | N_QM_00013 | Wave Function ψ(x) | Medium | Internal encoding structure |
-| BIAN-5 | Epistemic Commitment Act / Moment of Determination | N_BE_00155 | RCA | Determination | Vyavasāya | A3 | 22 | N_QM_00022 | Post-Measurement State Update | Medium | Epistemic commitment |
+| BIAN-4 | Measurement Representation / Internal Encoding | — | — | — | Ākāra | — | — | — | — | — | No separate node in BE system (SOT T2.01 L287). N_BE_00151 is Abhāva (Ontology), not Ākāra. |
+| BIAN-5 | Epistemic Commitment Act / Moment of Determination | — | — | — | Vyavasāya | — | — | — | — | — | No separate node in BE system (SOT T2.04 L324). N_BE_00155 is Sādhya (Logic), not Vyavasāya. |
 | BIAN-6 | Self-Certifying Measurement / No External Meta-Level | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | N_QM_00038 | Quantum Trajectory | Weak | Self-certifying measurement |
 | BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | N_BE_00009 | core | Non-conceptual perception | Nirvikalpaka pratyakṣa | A3 | 14 | N_QM_00014 | Projective Measurement (PVM) | Medium | Pre-symbolic stratum |
 | BIAN-8 | Epistemological Theorization of Temporal Discontinuity | N_BE_00029 | core | Momentariness | Kṣaṇabhaṅgavāda | A1 | 37 | N_QM_00037 | Continuous Measurement: Quantum Jump Case | Medium | Temporal discontinuity |
@@ -162,11 +162,11 @@ This document provides a complete index of 20 BIAN (Buddhist-Interpretive Absent
 |-----------|----------|-----|----------------|-------------|-------:|------------|-----|
 | ED_BE_00116 | Intra-Logic | in | N_BE_00253 → N_BE_00151 | replaces realist theory of | 33 | No-Result Measurement (Null) | Strong |
 
-### BIAN-5 — N_BE_00155 (Vyavasāya) — 1 edge
+### BIAN-5 — No node (Vyavasāya) — 0 edges
 
-| Edge code | Category | Dir | Source → Target | Relationship | QM No. | QM concept | RCA |
-|-----------|----------|-----|----------------|-------------|-------:|------------|-----|
-| ED_BE_00125 | Intra-Logic | out | N_BE_00155 → N_BE_00154 | is property in | 17 | Observable (Hermitian Operator) | Medium |
+No separate node exists in the 263-node BE system (SOT T2.04 L324: "No separate node in published documents").
+
+> **⚠️ RCA correction (2026-05-11):** Previously listed N_BE_00155 with edge ED_BE_00125. N_BE_00155 is actually **Sādhya** (Logic, system_be_full.md L187), not Vyavasāya. Edge ED_BE_00125 (Sādhya → Pakṣa) belongs to the Logic subsystem, not to BIAN-5.
 
 ### BIAN-9 — N_BE_00253 (Anupalabdhi) — 1 edge
 
@@ -181,7 +181,7 @@ This document provides a complete index of 20 BIAN (Buddhist-Interpretive Absent
 | ED_BE_00181 | Ontology | out | N_BE_00066 → N_BE_00065 | rejects | 100 | Classical Realism vs QM Indeterminacy | Strong |
 | ED_BE_00186 | Ontology | in | N_BE_00073 → N_BE_00066 | includes | 100 | Classical Realism vs QM Indeterminacy | Weak |
 
-### BIAN-12, BIAN-13, BIAN-15, BIAN-18
+### BIAN-5, BIAN-12, BIAN-13, BIAN-15, BIAN-18
 
 No separate node exists in the 263-node BE system. No edges to report. These concepts are structurally accounted for in Weak-level mappings where BE concepts have no direct QM counterpart (source file line 613).
 
@@ -192,9 +192,9 @@ No separate node exists in the 263-node BE system. No edges to report. These con
 | Metric | Value |
 |--------|------:|
 | Total BIAN labels | 20 |
-| BIAN with explicit node (tagged in mapping) | 13 |
+| BIAN with explicit node (tagged in mapping) | 12 |
 | BIAN with nearest structural node (inferred) | 2 |
-| BIAN with no node in BE system | 4 |
+| BIAN with no node in BE system | 5 |
 | BIAN reserved | 1 |
 | Unique node codes referenced | 11 |
 | Total edges connected to BIAN nodes | 57 |
@@ -241,6 +241,6 @@ No separate node exists in the 263-node BE system. No edges to report. These con
 | BIAN-3 | N_BE_00012 | 3 |
 | BIAN-1 | N_BE_00010 | 2 |
 | BIAN-19 | N_BE_00066 | 2 |
-| BIAN-4 | N_BE_00151 | 1 |
-| BIAN-5 | N_BE_00155 | 1 |
+| BIAN-4 | — (no node) | 0 |
+| BIAN-5 | — (no node) | 0 |
 | BIAN-9 | N_BE_00253 | 1 |

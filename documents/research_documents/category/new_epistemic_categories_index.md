@@ -6,9 +6,9 @@
 **Facebook:** https://www.facebook.com/xuanviet  
 
 > **Context / Ngữ cảnh:**  
-> This document catalogs the 9 foundational epistemic categories newly established to resolve the structural gaps (BIAN) discovered during the Root Cause Analysis (RCA) mapping between Buddhist Epistemology and Quantum Measurement formalism. These 9 categories collectively upgrade Quantum Mechanics from a purely predictive mathematical tool into a logically complete, self-critical epistemic system.
+> This document catalogs the 10 foundational epistemic categories newly established to resolve the structural gaps (BIAN) discovered during the Root Cause Analysis (RCA) mapping between Buddhist Epistemology and Quantum Measurement formalism. These 10 categories collectively upgrade Quantum Mechanics from a purely predictive mathematical tool into a logically complete, self-critical epistemic system.
 > 
-> *Tài liệu này tổng hợp 9 phạm trù nhận thức luận nền tảng mới được thiết lập nhằm giải quyết các khoảng trống cấu trúc (BIAN) phát hiện được trong quá trình đối chiếu Phân tích Nguyên nhân gốc rễ (RCA) giữa Nhận thức luận Phật giáo và Hệ thống Lượng tử. 9 phạm trù này cùng nhau nâng cấp Cơ học Lượng tử từ một công cụ toán học dự đoán thuần túy thành một hệ thống nhận thức tự phê phán, khép kín hoàn toàn về mặt logic.*
+> *Tài liệu này tổng hợp 10 phạm trù nhận thức luận nền tảng mới được thiết lập nhằm giải quyết các khoảng trống cấu trúc (BIAN) phát hiện được trong quá trình đối chiếu Phân tích Nguyên nhân gốc rễ (RCA) giữa Nhận thức luận Phật giáo và Hệ thống Lượng tử. 10 phạm trù này cùng nhau nâng cấp Cơ học Lượng tử từ một công cụ toán học dự đoán thuần túy thành một hệ thống nhận thức tự phê phán, khép kín hoàn toàn về mặt logic.*
 
 ---
 
@@ -25,6 +25,7 @@
 | **07** | Observer-as-Process Framework / Momentary Epistemic Series | Khung Quan sát viên Chuỗi sự kiện / Chuỗi Nhận thức Khoảnh khắc | *Anātmavāda* | BIAN-19 | [`observer_as_process.md`](./observer_as_process.md) |
 | **08** | Epistemic Commitment Operator / Semantic Translation State | Toán tử Kiến lập Nhận thức / Trạng thái Chuyển đổi Ngữ nghĩa | *Ākāra* & *Vyavasāya* | BIAN-4, 5 | [`epistemic_commitment_operator.md`](./epistemic_commitment_operator.md) |
 | **09** | Tripartite Measurement Validity Matrix / Strict Apparatus Axiom | Ma trận Hợp lệ Tam phân / Tiên đề Máy đo Khắt khe | *Trairūpya* | BIAN-14 | [`tripartite_validity_matrix.md`](./tripartite_validity_matrix.md) |
+| **10** | Pre-Symbolic Stratum / Formalism-External Physical Event | Tầng Tiền Biểu tượng / Sự kiện Vật lý Ngoài Hình thức | *Nirvikalpaka pratyakṣa* | BIAN-7 | [`pre_symbolic_stratum.md`](./pre_symbolic_stratum.md) |
 
 ---
 

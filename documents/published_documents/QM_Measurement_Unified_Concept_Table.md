@@ -1,7 +1,7 @@
 # Quantum Measurement — Unified Concept Table
 ## Merged from Susskind & Friedman (2014) + Jordan & Siddiqi (2024)
 
-> **Sources**: (S) Susskind, L. & Friedman, A. (2014). *Quantum Mechanics: The Theoretical Minimum*. Basic Books. Pages 1–200 (Lectures 1–7). (J) Jordan, A.N. & Siddiqi, I.A. (2024). *Quantum Measurement: Theory and Practice*. Cambridge University Press. 11 chapters + Appendices A–B.
+> **Sources**: (S) Susskind, L. & Friedman, A. (2014). *Quantum Mechanics: The Theoretical Minimum*. Basic Books. Pages 1–200 (Lectures 1–7) — [Concept Table](./Susskind_QM_Theoretical_Minimum_concept_table.md). (J) Jordan, A.N. & Siddiqi, I.A. (2024). *Quantum Measurement: Theory and Practice*. Cambridge University Press. 11 chapters + Appendices A–B. — [Concept Table](./Jordan_Siddiqi_QM_Measurement_concept_table.md)
 >
 > **Flags**: `[NGOẠI SUY]` = extrapolated (not in S source pages). `[PARTIAL]` = partially in source. `[SUY DIỄN]` = inferred.
 >
