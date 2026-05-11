@@ -1,5 +1,6 @@
 # E2 — Measurement Self-Completion Postulate / Tiên đề Phép đo Tự hoàn tất
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  

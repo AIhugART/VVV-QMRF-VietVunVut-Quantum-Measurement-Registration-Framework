@@ -26,7 +26,7 @@ This document provides a complete index of 20 BIAN (Buddhist-Interpretive Absent
 
 | BIAN | Structural concept | Node code | Layer | BE concept | Pali / Sanskrit | Lens | QM No. | QM Node code | QM concept | RCA | Note |
 |------|--------------------|-----------|-------|------------|-----------------|------|-------:|--------------|------------|-----|------|
-| BIAN-1 | Post-Detection Internal Representational State | N_BE_00010 | core | Mental consciousness | Mano-vijñāna | A3 | 40 | N_QM_00040 | Stochastic Master Equation (SME) | Weak | Post-detection representational state |
+| BIAN-1 | Post-Detection Internal Representational State | N_BE_00010 | core | Mental consciousness | Mano-vijñāna | A3 | 40 | N_QM_00040 | Stochastic Master Equation (SME) | Weak | **Resolved via Lemma S1-Λ** (2026-05-11). Λ operator in E4 covers transition; N_BE_00010 is receiver (E5-side), not transition operator. |
 | BIAN-2 | Observer Self-Reference / Reflexive Cognition | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | N_QM_00038 | Quantum Trajectory | Weak | Observer self-reference |
 | BIAN-3 | Limit-Case Observation by Different Faculty | N_BE_00012 | core | Transcendental perception | Alaukika pratyakṣa | A3 | 28 | N_QM_00028 | Weak Measurement | Weak | Limit-case observation |
 | BIAN-4 | Measurement Representation / Internal Encoding | — | — | — | Ākāra | — | — | — | — | — | No separate node in BE system (SOT T2.01 L287). N_BE_00151 is Abhāva (Ontology), not Ākāra. |
@@ -83,12 +83,14 @@ This document provides a complete index of 20 BIAN (Buddhist-Interpretive Absent
 | ED_BE_00061 | Thinker → Doctrine | in | N_BE_00039 → N_BE_00011 | expounds theory of | 38 | Quantum Trajectory | Weak |
 | ED_BE_00105 | Text → Doctrine | in | N_BE_00118 → N_BE_00011 | provides foundation for | 38 | Quantum Trajectory | Weak |
 
-### BIAN-1 — N_BE_00010 (Mano-vijñāna) — 2 edges
+### BIAN-1 — N_BE_00010 (Mano-vijñāna) — 2 edges — ✅ Resolved via Lemma S1-Λ
 
 | Edge code | Category | Dir | Source → Target | Relationship | QM No. | QM concept | RCA |
 |-----------|----------|-----|----------------|-------------|-------:|------------|-----|
 | ED_BE_00018 | Ontology | out | N_BE_00010 → N_BE_00002 | tentatively classified under | 40 | SME | Weak |
 | ED_BE_00020 | Ontology | out | N_BE_00010 → N_BE_00011 | tentatively linked to | 40 | SME | Weak |
+
+> **RCA note (2026-05-11):** Both edges are `uncertain`. N_BE_00010 (Mānasa pratyakṣa) is the **receiving faculty** for Λ output, not the transition operator itself. BIAN-1 is resolved by Lemma S1-Λ in `synthesis/epistemic_measurement_pipeline.md §4d`. See `RCA_BIAN1_E8_vs_Lemma.md`.
 
 ### BIAN-3 — N_BE_00012 (Alaukika pratyakṣa) — 3 edges
 

@@ -1,12 +1,13 @@
-# S1 — Epistemic Measurement Pipeline (ε → Ā → V)
-# S1 — Ống dẫn Đo lường Nhận thức (ε → Ā → V)
+# S1 — Epistemic Measurement Pipeline (ε → Λ → Ā → V)
+# S1 — Ống dẫn Đo lường Nhận thức (ε → Λ → Ā → V)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
 **Date:** 2026-05-11  
 **Status:** Synthesis — Epistemic class D (Cross-postulate integration, awaiting formal verification)  
-**Lineage:** framework/ (E4 + E5 + E3) → synthesis/ (S1)  
+**Lineage:** framework/ (E4 + Λ + E5 + E3) → synthesis/ (S1)  
 **Layer:** Synthesis (Tầng Tổng hợp) — above gap/, category/, framework/
 
 ---
@@ -14,10 +15,10 @@
 ## 1. Overview / Tổng quan
 
 **English:**
-> The Epistemic Measurement Pipeline is the first cross-postulate synthesis pattern in this framework. It integrates three individual postulates — E4 (Pre-Symbolic Stratum), E5 (Internal Encoding), and E3 (Epistemic Commitment) — into a single sequential chain that models the complete epistemic journey from raw physical event to definite knowledge. This pipeline fills the structural void that standard QM leaves between "measurement occurs" and "eigenvalue obtained."
+> The Epistemic Measurement Pipeline is the first cross-postulate synthesis pattern in the VVV-EQM framework. It integrates three individual postulates — E4 (Pre-Symbolic Stratum), E5 (Internal Encoding), and E3 (Epistemic Commitment) — connected by Transition Lemma S1-Λ, into a single sequential chain that models the complete epistemic journey from raw physical event to definite knowledge. This pipeline fills the structural void that standard QM leaves between "measurement occurs" and "eigenvalue obtained."
 
 **Vietnamese:**
-> Ống dẫn Đo lường Nhận thức là mẫu tổng hợp liên tiên đề đầu tiên trong hệ thống này. Nó tích hợp ba tiên đề riêng lẻ — E4 (Tầng Tiền Biểu tượng), E5 (Mã hóa Nội tại), và E3 (Cam kết Nhận thức) — thành một chuỗi tuần tự duy nhất mô hình hóa toàn bộ hành trình nhận thức từ sự kiện vật lý thô đến tri thức xác định. Ống dẫn này lấp đầy khoảng trống cấu trúc mà QM tiêu chuẩn để lại giữa "phép đo xảy ra" và "eigenvalue thu được."
+> Ống dẫn Đo lường Nhận thức là mẫu tổng hợp liên tiên đề đầu tiên trong hệ thống VVV-EQM. Nó tích hợp ba tiên đề riêng lẻ — E4 (Tầng Tiền Biểu tượng), E5 (Mã hóa Nội tại), và E3 (Cam kết Nhận thức) — kết nối bởi Bổ đề Chuyển tiếp S1-Λ, thành một chuỗi tuần tự duy nhất mô hình hóa toàn bộ hành trình nhận thức từ sự kiện vật lý thô đến tri thức xác định. Ống dẫn này lấp đầy khoảng trống cấu trúc mà QM tiêu chuẩn để lại giữa "phép đo xảy ra" và "eigenvalue thu được."
 
 ---
 
@@ -210,6 +211,88 @@ Properties:
 
 ---
 
+## 4d. Transition Lemma S1-Λ — E4↔E5 Interface / Bổ đề Chuyển tiếp S1-Λ — Giao diện E4↔E5
+
+**Added:** 2026-05-11  
+**Resolves:** BIAN-1 (Post-Detection Internal Representational State)  
+**RCA verdict:** Lemma (not postulate E8). See `RCA_BIAN1_E8_vs_Lemma.md`.
+
+### Why Lemma, not Postulate / Tại sao Bổ đề, không phải Tiên đề
+
+**English:**
+> BIAN-1 identifies a gap: QM has no account of the representational transition between physical detection and symbolic readout. RCA recheck found that this transition is a *natural interface* between E4 and E5, not a separate epistemic operation. The Source of Truth (L207) describes it as "passed on to the internal mental faculty... in natural manner" — a handoff, not a cognitive act. The symbolization operator Λ (already defined in E4) formally covers this transition. No new postulate is needed.
+
+**Vietnamese:**
+> BIAN-1 xác định khoảng trống: QM không có lý thuyết về quá trình chuyển đổi biểu diễn giữa phát hiện vật lý và giá trị số. RCA recheck phát hiện quá trình chuyển tiếp này là *giao diện tự nhiên* giữa E4 và E5, không phải thao tác nhận thức riêng biệt. Nguồn gốc (L207) mô tả "chuyển giao... một cách tự nhiên" — đây là sự trao tay, không phải hành động nhận thức. Toán tử biểu tượng hóa Λ (đã định nghĩa trong E4) xử lý hình thức quá trình chuyển tiếp này. Không cần tiên đề mới.
+
+### Lemma S1-Λ Statement / Phát biểu Bổ đề S1-Λ
+
+**English:**
+> The symbolization operator Λ, which maps pre-symbolic event ε(M) to internal encoding Ā(M), is the formal counterpart of the Buddhist "natural passing-on" (sahaja-pravṛtti) of sensory data from the five sense-faculties to the mental faculty (mano-vijñāna). This transition is not a separate epistemic operation but the inherent interface between E4 and E5 within the S1 pipeline.
+
+**Vietnamese:**
+> Toán tử biểu tượng hóa Λ, ánh xạ sự kiện tiền biểu tượng ε(M) thành mã hóa nội tại Ā(M), là đối tác hình thức của quá trình "chuyển giao tự nhiên" (sahaja-pravṛtti) của dữ liệu giác quan từ năm giác quan đến tâm thức (mano-vijñāna) trong Phật giáo. Quá trình chuyển tiếp này không phải thao tác nhận thức riêng biệt mà là giao diện vốn có giữa E4 và E5 trong ống dẫn S1.
+
+### Formalism
+
+```
+Lemma S1-Λ:
+  Given E4 (∃ ε(M)) and E5 (∃ |Rₖ⟩_A):
+    Λ: ε(M) → Ā(M) is the unique map satisfying:
+      (i)   Λ preserves causal content of ε(M)
+      (ii)  Λ adds symbolic value to produce Ā(M)
+      (iii) Λ is natural — does not require a separate epistemic act
+      (iv)  Degree of Λ determines weak vs projective measurement
+
+  Buddhist correlate:
+    mano-vijñāna (N_BE_00010) = the faculty that RECEIVES
+    the output of Λ, not the operator Λ itself
+
+  BIAN-1 resolution:
+    Λ is the "representational transition" that BIAN-1 identifies as missing
+    Status: BIAN-1 → Resolved via S1-Λ
+```
+
+### Updated Pipeline Flow / Sơ đồ Ống dẫn Cập nhật
+
+```
+  ┌─────────────────────────────────────────────────┐
+  │  ① ε(M) — Pre-Symbolic Stratum (E4)            │
+  │     N_BE_00009 (Nirvikalpaka pratyakṣa)         │
+  └──────────────────┬──────────────────────────────┘
+                     │
+                     │  Λ — Symbolization (Lemma S1-Λ)
+                     │  "passed on... in natural manner"
+                     │  BIAN-1 resolved HERE
+                     │  Receiver: N_BE_00010 (Mano-vijñāna)
+                     │
+                     ▼
+  ┌─────────────────────────────────────────────────┐
+  │  ② Â_kāra — Internal Encoding (E5)             │
+  │     N_BE_00151 (Ākāra)                          │
+  └──────────────────┬──────────────────────────────┘
+                     │
+                     ▼
+  ┌─────────────────────────────────────────────────┐
+  │  ③ V̂_yava — Epistemic Commitment (E3)          │
+  └──────────────────┬──────────────────────────────┘
+                     │
+                     ▼
+            MEASUREMENT COMPLETE ✓
+```
+
+### Key Evidence / Bằng chứng then chốt
+
+| # | Evidence | Source | Conclusion |
+|:-:|----------|--------|------------|
+| 1 | "passed on... **in natural manner**" | Source doc L207 | Transition = natural, not a separate operation |
+| 2 | N_BE_00010: 2/2 edges **uncertain** | system_be_full.md L330, L332 | Node too weak for standalone postulate |
+| 3 | Λ already defined in E4 | E4 §3: r = Λ(ε(M)) | No new operator needed |
+| 4 | Dignāga defines only **4 processes** | Source doc L203 | No 5th process for inter-stage transition |
+| 5 | N_BE_00010 is **receiver**, not operator | SOT: "Type of consciousness" | Mano-vijñāna ∈ E5 side, not transition |
+
+---
+
 ## 5. Comparison: QM Standard vs Pipeline / So sánh: QM Tiêu chuẩn vs Ống dẫn
 
 | Aspect | QM Standard (P3) | Epistemic Pipeline (S1) |
@@ -296,6 +379,8 @@ Properties:
 | "V̂_yava commitment operator" | **D** | Proposed (E3/Cat 08) |
 | "Three-phase sequential integration" | **D** | **This document — novel synthesis** |
 | "Weak vs projective = degree of Λ" | **D** | Novel applied consequence |
+| "Lemma S1-Λ: Λ is natural interface E4↔E5" | **D** | RCA recheck 2026-05-11 (resolves BIAN-1) |
+| "N_BE_00010 is receiver, not operator" | **M** | system_be_full.md: Category = Type of consciousness |
 
 ---
 
@@ -317,11 +402,11 @@ Properties:
 
 ## 10. Future Synthesis Patterns / Các Mẫu Tổng hợp Tương lai
 
-| Code | Potential pattern | Components | Status |
-|:----:|-------------------|------------|:------:|
-| **S1** | **Epistemic Measurement Pipeline** | **E4 + E5 + E3** | **This document** |
-| S2 | Self-Validation Loop? | E1 + E2 + E7? | Planned |
-| S3 | Observer Decomposition Chain? | E6 + E3? | Planned |
+| Code | Pattern | Components | Status |
+|:----:|---------|------------|:------:|
+| **S1** | **Epistemic Measurement Pipeline** | **E4 + Λ + E5 + E3** | **This document (+ Lemma S1-Λ)** |
+| **S2** | **Self-Validation Loop** | **E1 + E2 + E7** | **Completed** (self_validation_loop.md) |
+| **S3** | **Observer Ontological Foundation** | **E6 (Hub)** | **Completed** (observer_ontological_foundation.md) |
 
 ---
 

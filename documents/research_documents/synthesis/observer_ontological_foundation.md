@@ -1,6 +1,7 @@
 # S3 — Observer Ontological Foundation (E6 Hub)
 # S3 — Nền tảng Bản thể học Quan sát viên (Trung tâm E6)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
@@ -14,7 +15,7 @@
 ## 1. Overview / Tổng quan
 
 **English:**
-> The Observer Ontological Foundation is the third synthesis pattern. Unlike S1 (linear pipeline) and S2 (closed loop), S3 is a **hub** — a single postulate (E6: Observer-as-Process) that serves as the ontological bedrock upon which all other postulates and both prior synthesis patterns stand. S3 answers the most fundamental question: "What IS the observer?" The answer: the observer is a causal process (santāna), not a substance (ātman). This single ontological commitment enables every other epistemic operation in the framework.
+> The Observer Ontological Foundation is the third synthesis pattern in the VVV-EQM framework. Unlike S1 (linear pipeline) and S2 (closed loop), S3 is a **hub** — a single postulate (E6: Observer-as-Process) that serves as the ontological bedrock upon which all other postulates and both prior synthesis patterns stand. S3 answers the most fundamental question: "What IS the observer?" The answer: the observer is a causal process (santāna), not a substance (ātman). This single ontological commitment enables every other epistemic operation in the VVV-EQM framework.
 
 **Vietnamese:**
 > Nền tảng Bản thể học Quan sát viên là mẫu tổng hợp thứ ba. Khác với S1 (ống dẫn tuyến tính) và S2 (vòng lặp đóng kín), S3 là **trung tâm** — một tiên đề duy nhất (E6: Quan sát viên là Quá trình) đóng vai trò nền móng bản thể học mà tất cả các tiên đề khác và cả hai mẫu tổng hợp trước đều đứng trên. S3 trả lời câu hỏi căn bản nhất: "Người quan sát LÀ GÌ?" Câu trả lời: người quan sát là quá trình nhân quả (santāna), không phải thực thể (ātman). Cam kết bản thể học duy nhất này kích hoạt mọi thao tác nhận thức khác trong hệ thống.
@@ -294,9 +295,9 @@ Properties:
 |:----:|-----------|-----------|:----------:|:---------:|:-----:|:------:|
 | **S3** | **Observer Ontological Foundation** | **Nền tảng Bản thể học Quan sát viên** | **E6** | **Hub** | **Ontological** | **This document** |
 | S2 | Self-Validation Loop | Vòng lặp Tự xác thực | E1+E2+E7 | Cyclic | Validation | Established |
-| S1 | Epistemic Measurement Pipeline | Ống dẫn Đo lường Nhận thức | E4+E5+E3 | Linear | Process | Established |
+| S1 | Epistemic Measurement Pipeline | Ống dẫn Đo lường Nhận thức | E4+Λ+E5+E3 | Linear | Process | Established (+ Lemma S1-Λ) |
 
-> **All 7 postulates (E1–E7) are now fully integrated into 3 synthesis patterns. The synthesis layer is architecturally complete.**
+> **VVV-EQM: All 7 postulates (E1–E7) + Transition Lemma S1-Λ are now fully integrated into 3 synthesis patterns. The synthesis layer is architecturally complete.**
 
 ---
 

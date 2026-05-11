@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Epistemic Commitment Operator (Ākāra & Vyavasāya)
 # Phạm trù Nhận thức luận: Toán tử Kiến lập Nhận thức (Ảnh tượng & Phán đoán)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

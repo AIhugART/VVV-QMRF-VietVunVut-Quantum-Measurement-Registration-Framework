@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Self-Certifying Measurement Operator (Regress-Stopping Principle)
 # Phạm trù Nhận thức luận: Toán tử Tự chứng Phép đo (Nguyên lý Chấm dứt Chuỗi Vô hạn)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

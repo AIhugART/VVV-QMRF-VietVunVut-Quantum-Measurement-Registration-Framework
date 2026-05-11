@@ -1,5 +1,6 @@
 # E5 — Internal Encoding Postulate / Tiên đề Mã hóa Nội tại
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  

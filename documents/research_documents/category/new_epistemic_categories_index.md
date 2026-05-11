@@ -1,6 +1,7 @@
 # Index of New Epistemic Categories for Quantum Mechanics
 # Mục lục Các Phạm trù Nhận thức luận Mới cho Cơ học Lượng tử
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

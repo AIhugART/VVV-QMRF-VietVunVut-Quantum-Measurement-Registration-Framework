@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Observer-as-Process Framework (Anātmavāda in Measurement)
 # Phạm trù Nhận thức luận: Khung Quan sát viên Chuỗi sự kiện (Vô ngã trong Đo lường)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

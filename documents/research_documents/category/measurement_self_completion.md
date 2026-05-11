@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Measurement Self-Completion Matrix (Pramāṇa-Phala Identity)
 # Phạm trù Nhận thức luận: Sự Tự hoàn tất Phép đo (Sự đồng nhất giữa Nhận thức và Kết quả)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

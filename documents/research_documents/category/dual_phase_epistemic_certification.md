@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Dual-Phase Epistemic Certification (Formal Validity Location)
 # Phạm trù Nhận thức luận: Sự Xác thực Nhận thức Kép (Định vị Tính hợp lệ Chính thức)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Contrapositive Quantum Evidence
 # Phạm trù Nhận thức luận: Bằng chứng Lượng tử Thuần Loại trừ
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

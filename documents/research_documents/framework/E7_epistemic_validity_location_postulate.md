@@ -1,5 +1,6 @@
 # E7 — Epistemic Validity Location Postulate / Tiên đề Định vị Tính hợp lệ Nhận thức
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  

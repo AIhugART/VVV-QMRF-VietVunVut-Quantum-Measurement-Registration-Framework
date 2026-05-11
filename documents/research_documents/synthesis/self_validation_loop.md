@@ -1,6 +1,7 @@
 # S2 — Self-Validation Loop (E1 ↔ E2 ↔ E7)
 # S2 — Vòng lặp Tự xác thực (E1 ↔ E2 ↔ E7)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
@@ -14,7 +15,7 @@
 ## 1. Overview / Tổng quan
 
 **English:**
-> The Self-Validation Loop is the second cross-postulate synthesis pattern. Unlike S1 (a linear pipeline), S2 is a **closed loop** — three postulates (E1 Self-Certification, E2 Self-Completion, E7 Validity Location) mutually reinforce each other to form a self-sustaining epistemic closure system. This loop answers a single question that standard QM cannot: "Why is a measurement valid?" The answer: because measurement self-certifies (E1), self-completes (E2), and therefore possesses intrinsic validity (E7) — which in turn is grounded by self-certification (E1). No external element required. No infinite regress possible.
+> The Self-Validation Loop is the second cross-postulate synthesis pattern in the VVV-EQM framework. Unlike S1 (a linear pipeline), S2 is a **closed loop** — three postulates (E1 Self-Certification, E2 Self-Completion, E7 Validity Location) mutually reinforce each other to form a self-sustaining epistemic closure system. This loop answers a single question that standard QM cannot: "Why is a measurement valid?" The answer: because measurement self-certifies (E1), self-completes (E2), and therefore possesses intrinsic validity (E7) — which in turn is grounded by self-certification (E1). No external element required. No infinite regress possible.
 
 **Vietnamese:**
 > Vòng lặp Tự xác thực là mẫu tổng hợp liên tiên đề thứ hai. Khác với S1 (ống dẫn tuyến tính), S2 là **vòng tròn đóng kín** — ba tiên đề (E1 Tự chứng nhận, E2 Tự hoàn tất, E7 Định vị Hợp lệ) củng cố lẫn nhau tạo thành hệ thống khép kín nhận thức tự duy trì. Vòng lặp này trả lời một câu hỏi duy nhất mà QM tiêu chuẩn không thể: "Tại sao phép đo hợp lệ?" Câu trả lời: vì phép đo tự chứng nhận (E1), tự hoàn tất (E2), và do đó sở hữu tính hợp lệ nội tại (E7) — mà tính hợp lệ nội tại đó lại được bảo chứng bởi tự chứng nhận (E1). Không cần yếu tố ngoại tại. Không thể có chuỗi lùi vô hạn.
@@ -317,13 +318,13 @@ S1 and S2 are **orthogonal and complementary**:
 - S1 answers: "What are the internal phases of measurement?"
 - S2 answers: "Why does measurement not need external validation?"
 
-Together they form the complete epistemic architecture of quantum measurement.
+Together they form the complete epistemic architecture of VVV-EQM quantum measurement.
 
 S1 và S2 là **trực giao và bổ sung**:
 - S1 trả lời: "Các giai đoạn nội tại của phép đo là gì?"
 - S2 trả lời: "Tại sao phép đo không cần xác thực ngoại tại?"
 
-Cùng nhau chúng tạo thành kiến trúc nhận thức hoàn chỉnh của phép đo lượng tử.
+Cùng nhau chúng tạo thành kiến trúc nhận thức hoàn chỉnh của phép đo lượng tử VVV-EQM.
 
 ---
 
@@ -331,9 +332,9 @@ Cùng nhau chúng tạo thành kiến trúc nhận thức hoàn chỉnh của ph
 
 | Code | Pattern | Components | Structure | Status |
 |:----:|---------|:----------:|:---------:|:------:|
-| S1 | Epistemic Measurement Pipeline | E4 + E5 + E3 | Linear | Established |
+| S1 | Epistemic Measurement Pipeline | E4 + Λ + E5 + E3 | Linear | Established (+ Lemma S1-Λ) |
 | **S2** | **Self-Validation Loop** | **E1 + E2 + E7** | **Cyclic** | **This document** |
-| S3 | Observer Decomposition Chain? | E6 + E3? | ? | Planned |
+| **S3** | **Observer Ontological Foundation** | **E6 (Hub)** | **Hub** | **Established** |
 
 ---
 

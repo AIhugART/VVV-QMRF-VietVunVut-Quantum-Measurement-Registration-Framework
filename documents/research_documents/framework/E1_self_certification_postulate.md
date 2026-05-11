@@ -1,6 +1,7 @@
 # E1 — Self-Certification Postulate / Tiên đề Tự chứng nhận
 # Epistemic Postulate for Quantum Measurement / Tiên đề Nhận thức luận cho Phép đo Lượng tử
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Retroactive Epistemic Override
 # Phạm trù Nhận thức luận: Sự Phủ quyết Nhận thức Hồi tố
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

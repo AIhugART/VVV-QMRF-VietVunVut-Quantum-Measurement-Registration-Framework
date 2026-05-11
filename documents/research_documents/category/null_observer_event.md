@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Null Observer Event (Epistemic Non-Engagement)
 # Phạm trù Nhận thức luận: Sự kiện Quan sát viên Rỗng (Trạng thái Bất tạo Nhận thức)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

@@ -1,5 +1,6 @@
 # E6 — Observer-as-Process Postulate / Tiên đề Quan sát viên là Quá trình
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  

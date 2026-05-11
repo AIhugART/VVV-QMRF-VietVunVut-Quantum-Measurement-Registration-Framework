@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Pre-Symbolic Stratum / Formalism-External Physical Event
 # Phạm trù Nhận thức luận: Tầng Tiền Biểu tượng / Sự kiện Vật lý Ngoài Hình thức
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  

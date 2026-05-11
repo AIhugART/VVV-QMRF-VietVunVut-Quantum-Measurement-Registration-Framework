@@ -1,5 +1,6 @@
 # E4 — Pre-Symbolic Stratum Postulate / Tiên đề Tầng Tiền Biểu tượng
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  

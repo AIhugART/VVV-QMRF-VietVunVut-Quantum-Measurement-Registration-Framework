@@ -1,6 +1,7 @@
 # Formal Epistemic Category: Tripartite Measurement Validity Matrix (Trairūpya)
 # Phạm trù Nhận thức luận: Ma trận Hợp lệ Tam phân (Ba điều kiện của Logic)
 
+**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
