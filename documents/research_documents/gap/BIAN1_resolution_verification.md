@@ -350,4 +350,4 @@ Nirvikalpaka pratyakṣa      Mānasa pratyakṣa              Ākāra
 
 ---
 
-*Evidence base: Source doc L171, L203, L207; system_be_full.md L42, L330, L332; BIAN_gap_analysis_ver_01.md L26-33; BIAN_index_v2.md Row 1, Edge §BIAN-1; E4 §3; E5 §3b; S1 §4d; RCA_BIAN1_E8_vs_Lemma.md §1-9.*
+*Evidence base: Source doc L171, L203, L207; system_be_full.md L42, L330, L332; BIAN_gap_analysis_ver_01.md L26-33; BIAN_index_SOT.md Row 1, Edge §BIAN-1; E4 §3; E5 §3b; S1 §4d; RCA_BIAN1_E8_vs_Lemma.md §1-9.*
