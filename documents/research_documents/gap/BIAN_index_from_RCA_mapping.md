@@ -13,7 +13,7 @@
 | BIAN-2 | Observer Self-Reference / Reflexive Cognition | N_BE_00011 | core | Self-awareness | Svasaṃvedana (Skt.) | A3 Consciousness-Only | 38 | N_QM_00038 | Quantum Trajectory | Weak | BIAN-2 notes observer self-reference |
 | BIAN-3 | Limit-Case Observation by Different Faculty | N_BE_00012 | core | Transcendental perception | Alaukika perception (Skt.) | A3 Consciousness-Only | 28 | N_QM_00028 | Weak Measurement | Weak | BIAN-3 notes limit-case observation |
 | BIAN-4 | Measurement Representation / Internal Encoding | N_BE_00151 | RCA | Ākāra | Ākāra (Skt.) | A3 Consciousness-Only | 13 | N_QM_00013 | Wave Function ψ(x) | Medium | BIAN-4 notes internal encoding |
-| BIAN-5 | Epistemic Commitment Act / Moment of Determination | N_BE_00155 | RCA | Vyavasāya | Vyavasāya (Skt.) | A3 Consciousness-Only | 22 | N_QM_00022 | Post-Measurement State Update | Medium | BIAN-5 notes epistemic commitment |
+| BIAN-5 | Epistemic Commitment Act / Moment of Determination | — | — | Vyavasāya | Vyavasāya (Skt.) | — | — | — | — | — | ⚠️ CORRECTED 2026-05-11: No separate node. N_BE_00155 is Sādhya (Logic), not Vyavasāya (SOT T2.04 L324). |
 | BIAN-6 | Self-Certifying Measurement / No External Meta-Level | N_BE_00011 | core | Self-awareness | Svasaṃvedana (Skt.) | A3 Consciousness-Only | 38 | N_QM_00038 | Quantum Trajectory | Weak | BIAN-6 notes self-certifying measurement |
 | BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | N_BE_00009 | core | Non-conceptual perception | Nirvikalpaka pratyakṣa (Skt.) | A3 Consciousness-Only | 14 | N_QM_00014 | Projective Measurement (PVM) | Medium | BIAN-7 notes pre-symbolic stratum |
 | BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | N_BE_00029 | core | Momentariness | Kṣaṇabhaṅgavāda (Skt.) | A1 Dependent Arising | 37 | N_QM_00037 | Continuous Measurement: Quantum Jump Case | Medium | BIAN-8 notes temporal discontinuity |
@@ -150,11 +150,12 @@
 |-----------|----------|-----------|----------------|-------------|-------:|------------|-----------|
 | ED_BE_00116 | Intra-Logic | Target | N_BE_00253 → N_BE_00151 | replaces realist theory of | 33 | No-Result Measurement (Null) | Strong |
 
-### BIAN-5 → N_BE_00155 (Vyavasāya)
+### BIAN-5 — No node (Vyavasāya) — 0 edges
 
-| Edge code | Category | Direction | Source → Target | Relationship | QM No. | QM concept | RCA level |
-|-----------|----------|-----------|----------------|-------------|-------:|------------|-----------|
-| ED_BE_00125 | Intra-Logic | Source | N_BE_00155 → N_BE_00154 | is property in | 17 | Observable (Hermitian Operator) | Medium |
+> ⚠️ **RCA correction (2026-05-11):** Previously listed N_BE_00155 with edge ED_BE_00125.
+> N_BE_00155 is actually **Sādhya** (Logic, system_be_full.md L187), not Vyavasāya.
+> Edge ED_BE_00125 (Sādhya → Pakṣa) belongs to the Logic subsystem, not to BIAN-5.
+> BIAN-5 has no dedicated node per SOT T2.04 L324.
 
 ### BIAN-9 → N_BE_00253 (Anupalabdhi) — nearest structural node
 

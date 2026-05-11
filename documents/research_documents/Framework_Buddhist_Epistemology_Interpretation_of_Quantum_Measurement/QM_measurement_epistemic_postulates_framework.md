@@ -126,7 +126,7 @@ process-perspective (M) and content-perspective (r).
 | Property | Value |
 |----------|-------|
 | BIAN source | **BIAN-5** (Epistemic Commitment Act) |
-| BE grounding | Vyavasāya (N_BE_00155) — *"Determination: the moment of epistemic commitment that converts cognitive process into definite knowledge."* |
+| BE grounding | Vyavasāya (no dedicated node — SOT T2.04 L324) — *"Determination: the moment of epistemic commitment that converts cognitive process into definite knowledge."* |
 | Current QM deficit | P3 does not distinguish a measurement from any other physical interaction. System-meter coupling (concept #21) is a unitary evolution — indistinguishable from any other interaction until someone declares it a "measurement." |
 | What this resolves | Provides a formal criterion for when a physical interaction becomes a measurement. Without E3, the Heisenberg cut remains arbitrary. |
 
