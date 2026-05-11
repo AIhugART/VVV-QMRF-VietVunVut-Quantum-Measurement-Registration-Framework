@@ -466,6 +466,7 @@ BIAN-1 → S1-Λ (constructive)
 | ENI + MIP + PCC | RCA_BIAN1_new_epistemic.md | ✅ |
 | Capstone synthesis | RCA_BIAN1_epistemic_establishment.md | ✅ |
 | Mathematical Model | VVV_EQM_Mathematical_Formalization.md | ✅ |
+| Wigner's Friend Exp | VVV_EQM_Wigners_Friend.md | ✅ |
 
 ### 12d. Node Investigations
 
