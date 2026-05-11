@@ -13,9 +13,9 @@
 - **Scope:** Pure epistemology. No religious or metaphysical content.
 - **References:**
   - [QM_Measurement_Unified_Concept_Table.md](../../published_documents/QM_Measurement_Unified_Concept_Table.md) — Concepts #45–52
-  - [system_axioms_mapping.md](../Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T3.08, BIAN-10
-  - [95_Decoherence_ver_01.md](../95_Decoherence_ver_01.md) — Entanglement as decoherence mechanism
-  - [19_Measurement_Physical_Act_ver_01.md](../19_Measurement_Physical_Act_ver_01.md) — Measurement creates entanglement
+  - [system_axioms_mapping.md](../../mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T3.08, BIAN-10
+  - [95_Decoherence_ver_01.md](./95_Decoherence_ver_01.md) — Entanglement as decoherence mechanism
+  - [19_Measurement_Physical_Act_ver_01.md](./19_Measurement_Physical_Act_ver_01.md) — Measurement creates entanglement
 
 ---
 

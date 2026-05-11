@@ -12,9 +12,9 @@
 - **Scope:** Pure epistemology. No religious or metaphysical content.
 - **References:**
   - [QM_Measurement_Unified_Concept_Table.md](../../published_documents/QM_Measurement_Unified_Concept_Table.md) — Concept #27
-  - [system_axioms_mapping.md](../Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T2.05, T2.07
-  - [BIAN_gap_analysis_ver_01.md](../BIAN_gap_analysis_ver_01.md) — BIAN-6, BIAN-7
-  - [81_Wavefunction_Collapse_ver_01.md](../81_Wavefunction_Collapse_ver_01.md) — Collapse as maximal-disturbance limit
+  - [system_axioms_mapping.md](../../mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T2.05, T2.07
+  - [BIAN_index_v2.md](../../gap/BIAN_index_v2.md) — BIAN-6, BIAN-7
+  - [81_Wavefunction_Collapse_ver_01.md](./81_Wavefunction_Collapse_ver_01.md) — Collapse as maximal-disturbance limit
 
 ---
 

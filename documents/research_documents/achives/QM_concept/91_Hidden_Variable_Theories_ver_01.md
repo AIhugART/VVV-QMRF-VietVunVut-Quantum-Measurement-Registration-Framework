@@ -13,10 +13,10 @@
 - **Scope:** Pure epistemology. No religious or metaphysical content.
 - **References:**
   - [QM_Measurement_Unified_Concept_Table.md](../../published_documents/QM_Measurement_Unified_Concept_Table.md) — Concept #91
-  - [system_axioms_mapping.md](../Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T3.05
-  - [90_Bell_s_Inequality_ver_01.md](../90_Bell_s_Inequality_ver_01.md) — Bell eliminates local hidden variables
-  - [47_Entanglement_ver_01.md](../47_Entanglement_ver_01.md) — Entanglement as the phenomenon that refutes local HV
-  - [81_Wavefunction_Collapse_ver_01.md](../81_Wavefunction_Collapse_ver_01.md) — Collapse = what HV theories attempt to explain away
+  - [system_axioms_mapping.md](../../mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T3.05
+  - [90_Bell_s_Inequality_ver_01.md](./90_Bell_s_Inequality_ver_01.md) — Bell eliminates local hidden variables
+  - [47_Entanglement_ver_01.md](./47_Entanglement_ver_01.md) — Entanglement as the phenomenon that refutes local HV
+  - [81_Wavefunction_Collapse_ver_01.md](./81_Wavefunction_Collapse_ver_01.md) — Collapse = what HV theories attempt to explain away
 
 ---
 

@@ -13,9 +13,9 @@
 - **Scope:** Pure epistemology. No religious or metaphysical content.
 - **References:**
   - [QM_Measurement_Unified_Concept_Table.md](../../published_documents/QM_Measurement_Unified_Concept_Table.md) — Concept #76
-  - [system_axioms_mapping.md](../Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T5.15
-  - [81_Wavefunction_Collapse_ver_01.md](../81_Wavefunction_Collapse_ver_01.md) — Collapse as unitarity violation
-  - [93_Copenhagen_Interpretation_ver_01.md](../93_Copenhagen_Interpretation_ver_01.md) — Copenhagen's two-dynamics problem
+  - [system_axioms_mapping.md](../../mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T5.15
+  - [81_Wavefunction_Collapse_ver_01.md](./81_Wavefunction_Collapse_ver_01.md) — Collapse as unitarity violation
+  - [93_Copenhagen_Interpretation_ver_01.md](./93_Copenhagen_Interpretation_ver_01.md) — Copenhagen's two-dynamics problem
 
 ---
 

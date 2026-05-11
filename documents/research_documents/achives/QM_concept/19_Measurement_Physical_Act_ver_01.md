@@ -13,10 +13,10 @@
 - **Scope:** Pure epistemology. No religious or metaphysical content.
 - **References:**
   - [QM_Measurement_Unified_Concept_Table.md](../../published_documents/QM_Measurement_Unified_Concept_Table.md) — Concept #19
-  - [system_axioms_mapping.md](../Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T1.01, T1.02
-  - [14_Projective_Measurement_PVM_ver_01.md](../14_Projective_Measurement_PVM_ver_01.md) — PVM as the canonical measurement
-  - [76_Time_Evolution_Unitarity_ver_01.md](../76_Time_Evolution_Unitarity_ver_01.md) — Two-dynamics problem
-  - [81_Wavefunction_Collapse_ver_01.md](../81_Wavefunction_Collapse_ver_01.md) — Collapse as measurement consequence
+  - [system_axioms_mapping.md](../../mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T1.01, T1.02
+  - [14_Projective_Measurement_PVM_ver_01.md](./14_Projective_Measurement_PVM_ver_01.md) — PVM as the canonical measurement
+  - [76_Time_Evolution_Unitarity_ver_01.md](./76_Time_Evolution_Unitarity_ver_01.md) — Two-dynamics problem
+  - [81_Wavefunction_Collapse_ver_01.md](./81_Wavefunction_Collapse_ver_01.md) — Collapse as measurement consequence
 
 ---
 

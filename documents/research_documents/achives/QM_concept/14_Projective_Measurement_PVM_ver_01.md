@@ -13,10 +13,10 @@
 - **Scope:** Pure epistemology. No religious or metaphysical content.
 - **References:**
   - [QM_Measurement_Unified_Concept_Table.md](../../published_documents/QM_Measurement_Unified_Concept_Table.md) — Concept #14
-  - [system_axioms_mapping.md](../Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T1.02
-  - [81_Wavefunction_Collapse_ver_01.md](../81_Wavefunction_Collapse_ver_01.md) — Collapse = PVM's defining feature
-  - [76_Time_Evolution_Unitarity_ver_01.md](../76_Time_Evolution_Unitarity_ver_01.md) — PVM breaks unitarity
-  - [27_Info-Disturbance_Trade-off_ver_01.md](../27_Info-Disturbance_Trade-off_ver_01.md) — PVM = maximal-information limit
+  - [system_axioms_mapping.md](../../mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_axioms_mapping.md) — T1.02
+  - [81_Wavefunction_Collapse_ver_01.md](./81_Wavefunction_Collapse_ver_01.md) — Collapse = PVM's defining feature
+  - [76_Time_Evolution_Unitarity_ver_01.md](./76_Time_Evolution_Unitarity_ver_01.md) — PVM breaks unitarity
+  - [27_Info-Disturbance_Trade-off_ver_01.md](./27_Info-Disturbance_Trade-off_ver_01.md) — PVM = maximal-information limit
 
 ---
 
