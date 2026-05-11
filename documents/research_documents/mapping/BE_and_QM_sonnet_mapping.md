@@ -1,9 +1,16 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # Buddhist Epistemology and Quantum Measurement: Line-by-Line RCA Mapping
 ## Method: Each row sourced directly from document corpus. No extrapolation beyond source lines.
-## Ground system: Buddhist Epistemology (BE). QM mapped onto BE. Gaps labeled BIAN-N.
+## Ground system: Buddhist Epistemology (BE). QM mapped onto BE. RCA gaps labeled Sonnet BIAN-N and resolved to canonical System BIAN labels through the crosswalk below.
 ## RCA flags: direct = definition supported by cited source line. listed only = term present, definition minimal. gap = no QM concept found in QM source table.
 ## BE source: The_Buddhist_Pramana_Epistemology_Logic_and_Language_RCA_Table.md
 ## QM source: QM_Measurement_Unified_Concept_Table.md
+
+## Status: Auxiliary RCA Evidence Map
+This document is an auxiliary line-by-line RCA mapping. It preserves evidence-level MAP entries, source provenance, RCA flags, and retrieval anchors. The canonical graph structure, node/edge codes, and canonical BIAN index are maintained in Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md.
+
+Cross-domain correspondences are structural analogies only. RCA evidence supports retrieval and auditing; it does not create canonical nodes, edges, BIAN labels, or equivalence claims by itself.
 
 ---
 
@@ -54,7 +61,11 @@
 - BE source line: Source doc L45
 - BE definition: Self-cognition theory expounded by Dinnaaga on the basis of cognition's internal appearance.
 - RCA: direct
-- QM concept: BIAN-1 — Observer Self-Reference
+- RCA gap label: Sonnet BIAN-1 — Observer Self-Reference
+- Canonical System BIAN: BIAN-2 — Observer Self-Reference / Reflexive Cognition of Measurement Act
+- Secondary System relation: BIAN-17 — Regress-Stopping Principle for Measurement Chain
+- System node: N_BE_00011 — Svasamvedana
+- System tier: T1.06 / T6.02
 - QM row: none
 - QM source: gap
 - QM definition: No formal QM account of an observer's cognition of its own measurement act. Measurement is modeled as a physical interaction (see QM row 19, 20). No formalism for the system that registers and is simultaneously aware of having registered.
@@ -93,7 +104,9 @@
 - BE source line: Source doc L17, L141-L143
 - BE definition: Comparison, counted by Nyaaya as a source of knowledge but not accepted by Dinnaaga as independent.
 - RCA: direct
-- QM concept: BIAN-2 — Analogical Inference in Measurement
+- RCA gap label: Sonnet BIAN-2 — Analogical Inference in Measurement
+- Canonical System BIAN: none — RCA-only minor gap
+- System status: Not promoted to canonical ontology because Dinnaaga rejects Upamaana as an independent pramaana.
 - QM row: none
 - QM source: gap
 - QM definition: No formal QM category for comparison-based inference as a distinct epistemic mode. Analogical reasoning is used informally in experimental design but is not part of the measurement formalism.
@@ -106,7 +119,9 @@
 - BE source line: Source doc L17, L141-L143, L243-L245
 - BE definition: Trustworthy word or testimony, accepted by Nyaaya as pramaana but rejected by Dinnaaga as independent from inference.
 - RCA: direct
-- QM concept: BIAN-3 — Testimonial Measurement Record
+- RCA gap label: Sonnet BIAN-3 — Testimonial Measurement Record
+- Canonical System BIAN: none — reduced to inference in canonical ontology
+- System node/edge: N_BE_00004 — Agama / Sabda; ED_BE_00017 — reduced to N_BE_00003 Anumaana
 - QM row: none (QM row 25 density matrix / row 22 post-measurement state update are closest but do not address testimony as epistemic category)
 - QM source: gap
 - QM definition: No formal QM category for testimony or trustworthy report as a distinct epistemic mode. In practice, experimental results are communicated via publications and peer review, but this is external to the measurement formalism.
@@ -136,7 +151,10 @@
 - BE source line: Source doc L159-L161
 - BE definition: Non-conceptual mode of perception.
 - RCA: direct
-- QM concept: BIAN-4 — Pre-Symbolic Physical Event
+- RCA gap label: Sonnet BIAN-4 — Pre-Symbolic Physical Event
+- Canonical System BIAN: BIAN-7 — Pre-Symbolic Physical Event / Formalism-External Stratum
+- System node: N_BE_00009 — Nirvikalpaka pratyaksa
+- System tier: T2.07
 - QM row: none
 - QM source: gap
 - QM definition: The quantum interaction between system and apparatus before any numerical, symbolic, or linguistic encoding. QM begins its formalism after this level (see QM row 19, 20, 81). The pre-symbolic stratum is outside QM scope.
@@ -149,7 +167,11 @@
 - BE source line: Source doc L141-L143, L161-L163
 - BE definition: Characterization of perception as free from conceptual construction.
 - RCA: direct
-- QM concept: BIAN-5 — Pre-Interpretive Measurement Event
+- RCA gap label: Sonnet BIAN-5 — Pre-Interpretive Measurement Event
+- Canonical System BIAN: BIAN-7 — Pre-Symbolic Physical Event / Formalism-External Stratum
+- System status: Subcase of canonical BIAN-7, not an independent canonical BIAN.
+- System node: N_BE_00009 — Nirvikalpaka pratyaksa
+- System tier: T2.07
 - QM row: none
 - QM source: gap
 - QM definition: QM has no formal category distinguishing a measurement result before and after theoretical embedding. The raw detector event and the theoretically interpreted result are not distinguished within the formalism.
@@ -188,7 +210,10 @@
 - BE source line: Source doc L307-L311
 - BE definition: Determination of real particulars through unreal or fictional conceptual thought.
 - RCA: direct
-- QM concept: BIAN-6 — Epistemic Commitment to Measurement Outcome
+- RCA gap label: Sonnet BIAN-6 — Epistemic Commitment to Measurement Outcome
+- Canonical System BIAN: BIAN-5 — Epistemic Commitment Act / Moment of Determination
+- System node: no separate node — Vyavasaaya / Adhyavasaaya
+- System tier: T2.04
 - QM row: none
 - QM source: gap
 - QM definition: The epistemic act by which an observer commits to a particular outcome as the result, distinct from the physical registration event. QM describes the physical collapse (see QM row 22, 81) but has no formal account of the agent's determination act.
@@ -283,7 +308,10 @@
 - BE source line: Source doc L27, L147-L149
 - BE definition: Radical doctrine that reality is fluxional and momentary. A moment disappears as soon as it appears.
 - RCA: direct
-- QM concept: BIAN-7 — Epistemological Theorization of Quantum Temporal Discontinuity
+- RCA gap label: Sonnet BIAN-7 — Epistemological Theorization of Quantum Temporal Discontinuity
+- Canonical System BIAN: BIAN-8 — Epistemological Theorization of Quantum Temporal Discontinuity
+- System node: N_BE_00029 — Ksanabhangavaada / Ksanikavaada
+- System tier: T3.04
 - QM row: 81 (wavefunction collapse), 15 (instantaneous collapse as idealization)
 - QM source: Jordan & Siddiqi (J)
 - QM definition: QM has no doctrine of momentary existence for quantum states. Time in QM is a continuous parameter (Schrodinger evolution, QM row 77). However the measurement event produces a new eigenstate discontinuously (QM row 81). This at-measurement discontinuity structurally mirrors Ksanikavaada but has not been theorized epistemologically in QM.
@@ -309,7 +337,10 @@
 - BE source line: Source doc L103, L303-L305
 - BE definition: Non-existence or absence, a realist category later replaced in Dharmakirti's logic by non-perception (Anupalabdhi).
 - RCA: direct
-- QM concept: BIAN-8 — Formal Cognition of Absence as Epistemic Category
+- RCA gap label: Sonnet BIAN-8 — Formal Cognition of Absence as Epistemic Category
+- Canonical System BIAN: BIAN-9 — Formal Cognition of Absence as Distinct Epistemic Category
+- System node: no separate node — Abhaava / Anupalabdhi
+- System tier: T3.06
 - QM row: 33 (null measurement / no-result measurement)
 - QM source: Jordan & Siddiqi (J)
 - QM definition: QM row 33 describes null measurement: absence of detector click constitutes a measurement outcome (Sherlock Holmes analogy). However this is treated as a measurement event, not as a formal epistemic category of cognition-of-absence distinct from cognition-of-presence. No formal QM epistemological theory of absence-cognition equivalent to Anupalabdhi.
@@ -335,7 +366,10 @@
 - BE source line: Source doc L303-L305
 - BE definition: Identity relation between two essentially common individuals, used as a type of essential connection in Dharmakirti's logic.
 - RCA: direct
-- QM concept: BIAN-9 — Cross-Basis State Identity
+- RCA gap label: Sonnet BIAN-9 — Cross-Basis State Identity
+- Canonical System BIAN: none direct — needs review against System T3.08 / BIAN-10
+- System status: Related to N_BE_00021 Svabhaavapratibandha, but System BIAN-10 is a reverse-direction gap for entanglement as a non-classical relation.
+- System tier: T3.08
 - QM row: none
 - QM source: gap
 - QM definition: No formal QM concept establishing whether the entity measured in one basis is the same entity measured in a different basis. Particle identity across incompatible measurements is ontologically unresolved in QM formalism. Entanglement correlations (QM row 47, 90) are not identity relations in the required sense.
@@ -404,7 +438,10 @@
 - BE source line: Source doc L81-L83
 - BE definition: Doubt that motivates pursuit of certainty in pramaana inquiry.
 - RCA: direct
-- QM concept: BIAN-10 — Observer Epistemic Indeterminacy State
+- RCA gap label: Sonnet BIAN-10 — Observer Epistemic Indeterminacy State
+- Canonical System BIAN: BIAN-11 — Observer Epistemic Indeterminacy State before Measurement
+- System node: N_BE_00007 — Samsaya
+- System tier: T4.02
 - QM row: none (QM row 5 superposition describes physical indeterminacy, not observer's epistemic state)
 - QM source: gap
 - QM definition: The formal epistemic state of an observer who knows psi but does not yet know the outcome. QM describes the physical superposition (QM row 5); it does not formally describe the epistemic state of the agent who holds this description before measurement.
@@ -417,7 +454,10 @@
 - BE source line: Source doc L313-L315 (Dharmakirti's definition of valid cognition implies correction mechanism), L267-L271 (avisamvaaditva)
 - BE definition: A subsequent valid cognition that overrides and formally invalidates a prior cognition, revealing it as bhranti.
 - RCA: listed only (inferred from Dharmakirti's pramaana definition and avisamvaaditva criterion)
-- QM concept: BIAN-11 — Formal Measurement Invalidation
+- RCA gap label: Sonnet BIAN-11 — Formal Measurement Invalidation
+- Canonical System BIAN: BIAN-12 — Formal Measurement Invalidation / Epistemological Override
+- System node: no separate node — Baadhaka-pramaana
+- System tier: T4.04
 - QM row: none (QM row 102 measurement reversal is physical reversal, not epistemological invalidation)
 - QM source: gap
 - QM definition: QM has no formal mechanism by which a subsequent measurement invalidates the epistemic status of a prior measurement. Measurement reversal (QM row 102) cancels information gain but does not retroactively address the epistemic validity of the prior result. Quantum error correction (QM row 105) is physical, not epistemological.
@@ -469,7 +509,9 @@
 - BE source line: Source doc L23, L259-L263
 - BE definition: Ignorance that constructs the phenomenal conventional world and causes suffering.
 - RCA: direct
-- QM concept: BIAN-12 — Epistemological Account of Pre-Measurement Ignorance
+- RCA gap label: Sonnet BIAN-12 — Epistemological Account of Pre-Measurement Ignorance
+- Canonical System BIAN: none direct — RCA-only epistemic-dimension gap
+- System status: Related to N_BE_00023 Avidyaa as background error/root condition, but not promoted to canonical System BIAN.
 - QM row: none (QM row 100 classical realism vs quantum indeterminacy addresses the philosophical issue but not as an epistemological category of the agent's condition)
 - QM source: gap
 - QM definition: QM has no formal epistemological category for the condition of an observer who does not yet know the quantum state or outcome. The observer's state of ignorance before measurement is treated implicitly through probability but not theorized as a formal epistemic category.
@@ -551,7 +593,10 @@
 - BE source line: Source doc L107, L209-L215, L191-L215
 - BE definition: Three necessary and sufficient conditions for a valid logical reason: presence in paksa (Paksa-dharmataa), occurrence in similar cases (Sapakse sattvam), absence from dissimilar cases (Vipakse asattvam).
 - RCA: direct
-- QM concept: BIAN-13 — Tripartite Measurement Validity Conditions
+- RCA gap label: Sonnet BIAN-13 — Tripartite Measurement Validity Conditions
+- Canonical System BIAN: BIAN-14 — Tripartite Measurement Validity Conditions
+- System node: N_BE_00018 — Trairuupya
+- System tier: T5.06
 - QM row: none (QM row 90 Bell's theorem, row 68 SNR are partial analogs; no unified tripartite structure in QM source table)
 - QM source: gap
 - QM definition: QM has no analogous three-condition formal structure for when a measurement constitutes valid evidence for a theoretical claim. Statistical significance thresholds and Bell inequality violations serve partial functions but are not organized into a unified tripartite validity structure.
@@ -642,7 +687,10 @@
 - BE source line: Source doc L209-L215 (Trairuupya discussion)
 - BE definition: A linga established entirely by contrastive absence, without any positive similar cases.
 - RCA: listed only (inferred from inference framework, not standalone row in BE source table)
-- QM concept: BIAN-14 — Purely Contrastive Quantum Evidence
+- RCA gap label: Sonnet BIAN-14 — Purely Contrastive Quantum Evidence
+- Canonical System BIAN: BIAN-15 — Purely Contrastive Quantum Evidence Structure
+- System node: no separate node — Kevalavyatirekin
+- System tier: T5.09
 - QM row: 33 (null measurement) — partial
 - QM source: gap (QM row 33 is closest; not formalized as a distinct evidential category)
 - QM definition: No formal QM category for evidence established entirely through null results and contrapositive structure. Interaction-free measurement (Elitzur-Vaidman, referenced in QM row 33) comes closest but is not theorized as a distinct evidential category.
@@ -707,7 +755,10 @@
 - BE source line: Source doc L285-L287, L303-L305
 - BE definition: Mere non-observation, criticized by Dharmakirti as insufficient for establishing dissociation or universality.
 - RCA: direct
-- QM concept: BIAN-15 — Absence of Evidence vs. Evidence of Absence
+- RCA gap label: Sonnet BIAN-15 — Absence of Evidence vs. Evidence of Absence
+- Canonical System BIAN: subcase of BIAN-9 and BIAN-15
+- System status: Treat as an RCA refinement of absence-cognition and contrastive-evidence gaps, not an independent canonical BIAN.
+- System tiers: T3.06 / T5.09
 - QM row: 33 (null measurement)
 - QM source: partial
 - QM definition: QM row 33 treats null measurement as evidence. However QM has no formal epistemological distinction between mere non-observation (detector not activated) and genuine evidence of absence (interaction-free measurement that confirms non-presence). Dharmakirti's critique of Adarasanamaaatra applies directly to naive interpretations of QM null results.
@@ -724,7 +775,10 @@
 - BE source line: Source doc L71-L73
 - BE definition: Theory of truth or apprehension of truth, asking whether cognition and truth are known intrinsically or extrinsically.
 - RCA: direct
-- QM concept: BIAN-16 — Intrinsic vs. Extrinsic Measurement Validity Location
+- RCA gap label: Sonnet BIAN-16 — Intrinsic vs. Extrinsic Measurement Validity Location
+- Canonical System BIAN: BIAN-18 — Intrinsic vs. Extrinsic Measurement Validity Location
+- System node: no separate node — Svatah / Paratah praamaanya
+- System tier: T6.03
 - QM row: none (QM row 101 interpretation maxim is closest meta-level statement; QM row 15 three cardinal properties assume validity but do not locate it)
 - QM source: gap
 - QM definition: QM does not formalize whether a measurement's validity is established by the measurement itself (intrinsic) or by a subsequent verification procedure (extrinsic). In practice experimental physics uses extrinsic verification; this is not integrated into the formalism.
@@ -776,7 +830,10 @@
 - BE source line: Source doc L19-L23
 - BE definition: Buddhist doctrine of non-self and non-substantialism.
 - RCA: direct
-- QM concept: BIAN-17 — Observer as Causal Process not Substance
+- RCA gap label: Sonnet BIAN-17 — Observer as Causal Process not Substance
+- Canonical System BIAN: BIAN-19 — Observer as Causal Process not Substance
+- System node: no separate node — Anaatmavaada structural commitment, implicit through process ontology
+- System tier: T6.04
 - QM row: none (QM row 93 Copenhagen, row 94 Heisenberg cut both leave observer undefined)
 - QM source: gap
 - QM definition: QM implicitly assumes a substantive observer: a classical, unified, persistent agent. No QM formalism models the observer as a causal series of events rather than a fixed point. The Heisenberg cut (QM row 94) and Copenhagen (QM row 93) both leave the observer's nature undefined while implicitly treating it as stable substance.
@@ -802,7 +859,9 @@
 - BE source line: Source doc L265-L271
 - BE definition: Circular relation among valid cognition, Buddha's teaching, reliability, successful activity, human goals, and nirvana.
 - RCA: direct
-- QM concept: BIAN-18 — Circularity of Measurement Foundations
+- RCA gap label: Sonnet BIAN-18 — Circularity of Measurement Foundations
+- Canonical System BIAN: none direct — structural parallel, not canonical BIAN
+- System status: Related to T6.06 and to BIAN-16 through BIAN-18, but not separately indexed in the canonical System BIAN list.
 - QM row: 101 (interpretation maxim)
 - QM source: partial (QM row 101 acknowledges but does not resolve)
 - QM definition: QM validation is formally circular: the Born rule is accepted because measurements confirm it, but measurements are validated by the Born rule. The interpretation maxim (QM row 101) gestures at this by grounding interpretation in experimental fruitfulness, but does not resolve the circularity formally.
@@ -850,7 +909,9 @@
 
 ---
 
-# BIAN Index — Concepts in Buddhist Epistemology with No Quantum Measurement Equivalent
+# Sonnet RCA BIAN Index — Evidence Labels for Concepts with No Direct Quantum Measurement Equivalent
+
+These labels are retained for RCA retrieval. For canonical graph usage, resolve them through the BIAN Crosswalk below.
 
 - BIAN-1: Observer Self-Reference / Reflexive Cognition of Measurement Act (Sva-samvitti) — MAP-04
 - BIAN-2: Analogical Inference as Distinct Epistemic Mode (Upamaana) — MAP-07 (minor; Dinnaaga rejects it)
@@ -871,6 +932,31 @@
 - BIAN-17: Observer as Causal Process not Substance (Anaatmavaada structural) — MAP-58
 - BIAN-18: Circularity of Measurement Foundations (formal resolution absent in QM) — MAP-60
 
+## BIAN Crosswalk to Canonical System Mapping
+
+This table aligns the RCA-only Sonnet BIAN labels in this document with the canonical BIAN index in Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md. Sonnet BIAN labels are retained for evidence retrieval; canonical System BIAN labels should be used for graph structure, ontology, and publication-facing references.
+
+| Sonnet RCA gap label | MAP | Canonical System BIAN | Alignment status | Notes |
+| --- | --- | --- | --- | --- |
+| Sonnet BIAN-1 — Observer Self-Reference | MAP-04 | System BIAN-2; secondary relation BIAN-17 | Aligned | Use System BIAN-2 for self-reference and BIAN-17 for regress-stopping. |
+| Sonnet BIAN-2 — Analogical Inference | MAP-07 | None | RCA-only minor gap | Upamaana is not promoted to canonical ontology because Dinnaaga rejects it as independent pramaana. |
+| Sonnet BIAN-3 — Testimonial Measurement Record | MAP-08 | None | RCA-only / reduced | System treats Agama / Sabda as N_BE_00004 reduced to Anumaana via ED_BE_00017. |
+| Sonnet BIAN-4 — Pre-Symbolic Physical Event | MAP-10 | System BIAN-7 | Aligned | Canonical node: N_BE_00009; tier: T2.07. |
+| Sonnet BIAN-5 — Pre-Interpretive Measurement Event | MAP-11 | System BIAN-7 | Subcase | Treat as part of the pre-symbolic / formalism-external stratum. |
+| Sonnet BIAN-6 — Epistemic Commitment Act | MAP-14 | System BIAN-5 | Aligned | Tier: T2.04; no separate node. |
+| Sonnet BIAN-7 — Quantum Temporal Discontinuity | MAP-21 | System BIAN-8 | Aligned | Canonical node: N_BE_00029; tier: T3.04. |
+| Sonnet BIAN-8 — Cognition of Absence | MAP-23 | System BIAN-9 | Aligned | Tier: T3.06; no separate node. |
+| Sonnet BIAN-9 — Cross-Basis State Identity | MAP-25 | None direct | Needs review | Related to System T3.08 / BIAN-10, but System BIAN-10 is a reverse-direction entanglement gap. |
+| Sonnet BIAN-10 — Observer Epistemic Indeterminacy | MAP-30 | System BIAN-11 | Aligned | Canonical node: N_BE_00007; tier: T4.02. |
+| Sonnet BIAN-11 — Formal Measurement Invalidation | MAP-31 | System BIAN-12 | Aligned | Tier: T4.04; no separate node. |
+| Sonnet BIAN-12 — Pre-Measurement Ignorance | MAP-35 | None direct | RCA-only | Related to N_BE_00023 Avidyaa as background error/root condition, not canonical BIAN. |
+| Sonnet BIAN-13 — Tripartite Measurement Validity | MAP-41 | System BIAN-14 | Aligned | Canonical node: N_BE_00018; tier: T5.06. |
+| Sonnet BIAN-14 — Purely Contrastive Quantum Evidence | MAP-48 | System BIAN-15 | Aligned | Tier: T5.09; no separate node. |
+| Sonnet BIAN-15 — Absence of Evidence vs Evidence of Absence | MAP-53 | System BIAN-9 / BIAN-15 | Subcase | RCA refinement of absence-cognition and contrastive-evidence gaps. |
+| Sonnet BIAN-16 — Intrinsic vs Extrinsic Validity | MAP-54 | System BIAN-18 | Aligned | Tier: T6.03; no separate node. |
+| Sonnet BIAN-17 — Observer as Process not Substance | MAP-58 | System BIAN-19 | Aligned | Tier: T6.04; implicit through process ontology. |
+| Sonnet BIAN-18 — Measurement Foundations Circularity | MAP-60 | None direct | Structural parallel | Related to T6.06 and BIAN-16 through BIAN-18, but not separately canonical. |
+
 ---
 
 # Structural Summary
@@ -879,23 +965,23 @@
 - Total MAP entries: 63
 - Full or strong correspondence: 18 (MAP-01 through MAP-03, MAP-15, MAP-18 through MAP-20, MAP-22, MAP-26 through MAP-27, MAP-36 through MAP-38, MAP-42, MAP-45, MAP-55 through MAP-57, MAP-62)
 - Moderate or partial correspondence: 27
-- BIAN (structural gap — no QM equivalent): 18
+- Sonnet RCA gap labels: 18 (including canonical alignments, RCA-only minor gaps, subcases, and structural parallels; use the crosswalk above for canonical System BIAN references)
 
 ## Critical Asymmetries (highest structural significance for research)
 
-1. BIAN-1 (MAP-04): Svasamvitti / observer self-reference. Root of von Neumann chain and Wigner's Friend problem. QM has no regress-stopping principle; BE resolves it formally via self-certifying cognition.
-2. BIAN-4 and BIAN-5 (MAP-10, MAP-11): QM formalism begins after the pre-symbolic event. BE theorizes this stratum explicitly. QM is entirely post-nirvikalpaka.
-3. BIAN-17 (MAP-58): QM implicitly assumes substantive observer; BE explicitly denies one. Foundational ontological inversion.
-4. BIAN-13 (MAP-41): Trairuupya absent from QM. QM has no formal unified tripartite theory of evidential validity.
-5. MAP-22 negative parallel (strongest empirical convergence): Niihsvabhaavata denial of intrinsic nature = Bell's theorem denial of local hidden variables. Same logical structure; different proof methods.
-6. MAP-57 (deepest meta-level convergence): Arthakriyaa = predictive success. Both systems ground epistemic validity in practical efficacy, not correspondence to mind-independent reality.
+1. Sonnet BIAN-1 / System BIAN-2 and BIAN-17 (MAP-04): Svasamvitti / observer self-reference. Root of von Neumann chain and Wigner's Friend problem. QM has no regress-stopping principle; BE resolves it formally via self-certifying cognition.
+2. Sonnet BIAN-4 and BIAN-5 / System BIAN-7 (MAP-10, MAP-11): QM formalism begins after the pre-symbolic event. BE theorizes this stratum explicitly. QM is entirely post-nirvikalpaka.
+3. Sonnet BIAN-17 / System BIAN-19 (MAP-58): QM implicitly assumes substantive observer; BE explicitly denies one. Foundational ontological inversion.
+4. Sonnet BIAN-13 / System BIAN-14 (MAP-41): Trairuupya absent from QM. QM has no formal unified tripartite theory of evidential validity.
+5. MAP-22 negative parallel (strongest empirical convergence): Niihsvabhaavata denial of intrinsic nature and Bell's theorem denial of local hidden variables have a strong structural analogy; different proof methods.
+6. MAP-57 (deepest meta-level convergence): Arthakriyaa and predictive success have a strong structural analogy. Both systems ground epistemic validity in practical efficacy, not correspondence to mind-independent reality.
 
 ---
 
 # Notes for LLM Processing
 - All Sanskrit and Pali terms are written in simplified ASCII romanization without diacritics for parsing stability.
 - MAP-N labels are the primary indexing keys for each correspondence row.
-- BIAN-N labels index structural gaps. Each BIAN entry cross-references its MAP row.
+- Sonnet BIAN-N labels are RCA evidence labels for structural gaps, subcases, and retrieval anchors. Use the BIAN Crosswalk to resolve canonical System BIAN references.
 - RCA flags: direct = supported by cited source line; listed only = term present in source, definition minimal; gap = no corresponding concept in QM source table; partial = functional analog present but not formalized.
 - Scope is strictly epistemological. Soteriological terms (Dukkha, Nirvana, Four Noble Truths) appear only when they carry epistemological content.
 - BE ground tradition: Pramaanavada (Dinnaaga, Dharmakirti). Source: The_Buddhist_Pramana_Epistemology_Logic_and_Language_RCA_Table.md.

@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # System + Interpretive Lens Mapping: Buddhist Epistemology and Quantum Measurement
 ## Ground System: Pramāṇavāda — Dignāga and Dharmakīrti corpus
 ## Method: Tier-by-tier mapping (system) augmented with four interpretive lenses as a secondary heuristic layer. The six-tier Pramāṇavāda structure remains the primary backbone.
@@ -20,44 +22,44 @@ The six-tier Pramāṇavāda mapping remains the primary structure of this docum
 
 ## Node-to-Lens Assignment
 
-All 30 formally coded nodes (N_BE_01–N_BE_30) are assigned to a primary interpretive lens and, where useful, a secondary lens. These assignments are heuristic and paper-synthesis oriented; they do not replace the six-tier Pramāṇavāda structure.
+All 30 formally coded nodes (N_BE_00001–N_BE_00030) are assigned to a primary interpretive lens and, where useful, a secondary lens. These assignments are heuristic and paper-synthesis oriented; they do not replace the six-tier Pramāṇavāda structure.
 
 | Node code | Concept (Skt.) | Category | Primary lens | Secondary lens | Confidence |
 | --- | --- | --- | --- | --- | --- |
-| N_BE_01 | Pramāṇa (Valid cognition) | Foundation | 1 — Dependent Arising | 3 — Cognitive Reflexivity | H |
-| N_BE_02 | Pratyakṣa (Direct perception) | Source of knowledge | 3 — Cognitive Reflexivity | 2 — Emptiness | H |
-| N_BE_03 | Anumāna (Inference) | Source of knowledge | 4 — Two Descriptive Registers | 1 — Dependent Arising | H |
-| N_BE_04 | Āgama / Śabda (Testimony) | Source of knowledge | 4 — Two Descriptive Registers | 3 — Cognitive Reflexivity | M |
-| N_BE_05 | Prameya (Object of cognition) | Foundation | 2 — Emptiness | 1 — Dependent Arising | H |
-| N_BE_06 | Bhrānti (Erroneous cognition) | Epistemic error | 3 — Cognitive Reflexivity | 2 — Emptiness | H |
-| N_BE_07 | Saṃśaya (Doubt) | Epistemic error | 3 — Cognitive Reflexivity | 4 — Two Descriptive Registers | H |
-| N_BE_08 | Vikalpa / Kalpanā (Conceptual construction) | Mental structure | 2 — Emptiness | 4 — Two Descriptive Registers | H |
-| N_BE_09 | Nirvikalpaka pratyakṣa (Non-conceptual perception) | Mental structure | 2 — Emptiness | 3 — Cognitive Reflexivity | H |
-| N_BE_10 | Mānasa pratyakṣa (Mental perception) | Type of consciousness | 3 — Cognitive Reflexivity | 2 — Emptiness | H |
-| N_BE_11 | Svasaṃvedana (Self-awareness) | Type of perception | 3 — Cognitive Reflexivity | 1 — Dependent Arising | H |
-| N_BE_12 | Yogipratyakṣa (Yogic perception) | Type of perception | 4 — Two Descriptive Registers | 3 — Cognitive Reflexivity | M |
-| N_BE_13 | Svalakṣaṇa (Particular / Unique mark) | Ontology–cognition | 2 — Emptiness | 1 — Dependent Arising | H |
-| N_BE_14 | Sāmānyalakṣaṇa (Universal / General mark) | Ontology–cognition | 2 — Emptiness | 4 — Two Descriptive Registers | H |
-| N_BE_15 | Apoha / Anyāpoha (Exclusion) | Philosophy of language | 2 — Emptiness | 4 — Two Descriptive Registers | H |
-| N_BE_16 | Liṅga / Hetu (Sign / Logical reason) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | H |
-| N_BE_17 | Pakṣa (Thesis) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | H |
-| N_BE_18 | Trairūpya (Triple-condition syllogism) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | H |
-| N_BE_19 | Vyāpti (Pervasion) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | H |
-| N_BE_20 | Avinābhāva (Necessary relation) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | M |
-| N_BE_21 | Svabhāvapratibandha (Essential relation) | Logic | 1 — Dependent Arising | 2 — Emptiness | H |
-| N_BE_22 | Arthakriyā (Causal efficacy) | Ontology–cognition | 2 — Emptiness | 1 — Dependent Arising | H |
-| N_BE_23 | Avidyā / Avijjā (Ignorance) | Epistemic obstacle | 3 — Cognitive Reflexivity | 2 — Emptiness | M |
-| N_BE_24 | Prajñā / Paññā (Wisdom) | Epistemic correction | 4 — Two Descriptive Registers | 3 — Cognitive Reflexivity | L |
-| N_BE_25 | Śūnyatā (Emptiness) | Ultimate object | 2 — Emptiness | 4 — Two Descriptive Registers | M |
-| N_BE_26 | Dvisatya (Two truths) | Ontology–cognition | 4 — Two Descriptive Registers | 2 — Emptiness | M |
-| N_BE_27 | Svārthānumāna (Inference for oneself) | Logic | 4 — Two Descriptive Registers | 1 — Dependent Arising | H |
-| N_BE_28 | Parārthānumāna (Inference for others) | Logic | 4 — Two Descriptive Registers | 1 — Dependent Arising | H |
-| N_BE_29 | Kṣaṇabhaṅgavāda (Momentariness) | Ontology–cognition | 1 — Dependent Arising | 2 — Emptiness | H |
-| N_BE_30 | Pramāṇabhūta (Means of valid cognition) | Foundation | 4 — Two Descriptive Registers | 1 — Dependent Arising | M |
+| N_BE_00001 | Pramāṇa (Valid cognition) | Foundation | 1 — Dependent Arising | 3 — Cognitive Reflexivity | H |
+| N_BE_00002 | Pratyakṣa (Direct perception) | Source of knowledge | 3 — Cognitive Reflexivity | 2 — Emptiness | H |
+| N_BE_00003 | Anumāna (Inference) | Source of knowledge | 4 — Two Descriptive Registers | 1 — Dependent Arising | H |
+| N_BE_00004 | Āgama / Śabda (Testimony) | Source of knowledge | 4 — Two Descriptive Registers | 3 — Cognitive Reflexivity | M |
+| N_BE_00005 | Prameya (Object of cognition) | Foundation | 2 — Emptiness | 1 — Dependent Arising | H |
+| N_BE_00006 | Bhrānti (Erroneous cognition) | Epistemic error | 3 — Cognitive Reflexivity | 2 — Emptiness | H |
+| N_BE_00007 | Saṃśaya (Doubt) | Epistemic error | 3 — Cognitive Reflexivity | 4 — Two Descriptive Registers | H |
+| N_BE_00008 | Vikalpa / Kalpanā (Conceptual construction) | Mental structure | 2 — Emptiness | 4 — Two Descriptive Registers | H |
+| N_BE_00009 | Nirvikalpaka pratyakṣa (Non-conceptual perception) | Mental structure | 2 — Emptiness | 3 — Cognitive Reflexivity | H |
+| N_BE_00010 | Mānasa pratyakṣa (Mental perception) | Type of consciousness | 3 — Cognitive Reflexivity | 2 — Emptiness | H |
+| N_BE_00011 | Svasaṃvedana (Self-awareness) | Type of perception | 3 — Cognitive Reflexivity | 1 — Dependent Arising | H |
+| N_BE_00012 | Yogipratyakṣa (Yogic perception) | Type of perception | 4 — Two Descriptive Registers | 3 — Cognitive Reflexivity | M |
+| N_BE_00013 | Svalakṣaṇa (Particular / Unique mark) | Ontology–cognition | 2 — Emptiness | 1 — Dependent Arising | H |
+| N_BE_00014 | Sāmānyalakṣaṇa (Universal / General mark) | Ontology–cognition | 2 — Emptiness | 4 — Two Descriptive Registers | H |
+| N_BE_00015 | Apoha / Anyāpoha (Exclusion) | Philosophy of language | 2 — Emptiness | 4 — Two Descriptive Registers | H |
+| N_BE_00016 | Liṅga / Hetu (Sign / Logical reason) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | H |
+| N_BE_00017 | Pakṣa (Thesis) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | H |
+| N_BE_00018 | Trairūpya (Triple-condition syllogism) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | H |
+| N_BE_00019 | Vyāpti (Pervasion) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | H |
+| N_BE_00020 | Avinābhāva (Necessary relation) | Logic | 1 — Dependent Arising | 4 — Two Descriptive Registers | M |
+| N_BE_00021 | Svabhāvapratibandha (Essential relation) | Logic | 1 — Dependent Arising | 2 — Emptiness | H |
+| N_BE_00022 | Arthakriyā (Causal efficacy) | Ontology–cognition | 2 — Emptiness | 1 — Dependent Arising | H |
+| N_BE_00023 | Avidyā / Avijjā (Ignorance) | Epistemic obstacle | 3 — Cognitive Reflexivity | 2 — Emptiness | M |
+| N_BE_00024 | Prajñā / Paññā (Wisdom) | Epistemic correction | 4 — Two Descriptive Registers | 3 — Cognitive Reflexivity | L |
+| N_BE_00025 | Śūnyatā (Emptiness) | Ultimate object | 2 — Emptiness | 4 — Two Descriptive Registers | M |
+| N_BE_00026 | Dvisatya (Two truths) | Ontology–cognition | 4 — Two Descriptive Registers | 2 — Emptiness | M |
+| N_BE_00027 | Svārthānumāna (Inference for oneself) | Logic | 4 — Two Descriptive Registers | 1 — Dependent Arising | H |
+| N_BE_00028 | Parārthānumāna (Inference for others) | Logic | 4 — Two Descriptive Registers | 1 — Dependent Arising | H |
+| N_BE_00029 | Kṣaṇabhaṅgavāda (Momentariness) | Ontology–cognition | 1 — Dependent Arising | 2 — Emptiness | H |
+| N_BE_00030 | Pramāṇabhūta (Means of valid cognition) | Foundation | 4 — Two Descriptive Registers | 1 — Dependent Arising | M |
 
 **Primary lens distribution:** Lens 1: 8 nodes | Lens 2: 8 nodes | Lens 3: 6 nodes | Lens 4: 8 nodes
 
-**Scope note:** N_BE_24 (Prajñā), N_BE_25 (Śūnyatā), and N_BE_26 (Dvisatya) are retained only where they affect epistemic structure. Soteriological, metaphysical, and cosmological claims are outside the scope of this document.
+**Scope note:** N_BE_00024 (Prajñā), N_BE_00025 (Śūnyatā), and N_BE_00026 (Dvisatya) are retained only where they affect epistemic structure. Soteriological, metaphysical, and cosmological claims are outside the scope of this document.
 
 ---
 
@@ -67,36 +69,36 @@ Formal concept codes applied to tier locations. Nodes are drawn from [node_pub_d
 
 | Node code | Concept (Skt.) | Category | Tier location | Lens |
 | --- | --- | --- | --- | --- |
-| N_BE_01 | Pramāṇa (Valid cognition) | Foundation | T1.01, T6.01, T6.06 | 1 |
-| N_BE_02 | Pratyakṣa (Direct perception) | Source of knowledge | T1.02 | 3 |
-| N_BE_03 | Anumāna (Inference) | Source of knowledge | T1.03 | 4 |
-| N_BE_04 | Āgama / Śabda (Testimony) | Source of knowledge | T1.03 (reduced to inference) | 4 |
-| N_BE_05 | Prameya (Object of cognition) | Foundation | T2.02 | 2 |
-| N_BE_06 | Bhrānti (Erroneous cognition) | Epistemic error | T4.01 | 3 |
-| N_BE_07 | Saṃśaya (Doubt) | Epistemic error | T4.02 | 3 |
-| N_BE_08 | Vikalpa / Kalpanā (Conceptual construction) | Mental structure | T2.06, T4.07 | 2 |
-| N_BE_09 | Nirvikalpaka pratyakṣa (Non-conceptual perception) | Mental structure | T2.07 | 2 |
-| N_BE_10 | Mānasa pratyakṣa (Mental perception) | Type of consciousness | T1.05 | 3 |
-| N_BE_11 | Svasaṃvedana (Self-awareness) | Type of perception | T1.06, T2.05, T6.02 | 3 |
-| N_BE_12 | Yogipratyakṣa (Yogic perception) | Type of perception | T1.07 | 4 |
-| N_BE_13 | Svalakṣaṇa (Particular / Unique mark) | Ontology–cognition | T3.01 | 2 |
-| N_BE_14 | Sāmānyalakṣaṇa (Universal / General mark) | Ontology–cognition | T3.02, T3.07 | 2 |
-| N_BE_15 | Apoha / Anyāpoha (Exclusion) | Philosophy of language | T6.05 | 2 |
-| N_BE_16 | Liṅga / Hetu (Sign / Logical reason) | Logic | T5.01 | 1 |
-| N_BE_17 | Pakṣa (Thesis) | Logic | T5.03 | 1 |
-| N_BE_18 | Trairūpya (Triple-condition syllogism) | Logic | T5.06 | 1 |
-| N_BE_19 | Vyāpti (Pervasion) | Logic | T5.07 | 1 |
-| N_BE_20 | Avinābhāva (Necessary relation) | Logic | T5 area (precursor of vyāpti) | 1 |
-| N_BE_21 | Svabhāvapratibandha (Essential relation) | Logic | T3.08 | 1 |
-| N_BE_22 | Arthakriyā (Causal efficacy) | Ontology–cognition | T3.03, T6.06 | 2 |
-| N_BE_23 | Avidyā / Avijjā (Ignorance) | Epistemic obstacle | T4 area (causal root) | 3 |
-| N_BE_24 | Prajñā / Paññā (Wisdom) | Liberation | T4 area (soteriological) | 4 |
-| N_BE_25 | Śūnyatā (Emptiness) | Ultimate object | T1.07 area (object of yogic perception) | 2 |
-| N_BE_26 | Dvisatya (Two truths) | Ontology–cognition | T6 area (ontological framework) | 4 |
-| N_BE_27 | Svārthānumāna (Inference for oneself) | Logic | T1.08 | 4 |
-| N_BE_28 | Parārthānumāna (Inference for others) | Logic | T1.09 | 4 |
-| N_BE_29 | Kṣaṇabhaṅgavāda (Momentariness) | Ontology–cognition | T3.04 | 1 |
-| N_BE_30 | Pramāṇabhūta (Means of valid cognition) | Foundation | T1.01 area (epithet) | 4 |
+| N_BE_00001 | Pramāṇa (Valid cognition) | Foundation | T1.01, T6.01, T6.06 | 1 |
+| N_BE_00002 | Pratyakṣa (Direct perception) | Source of knowledge | T1.02 | 3 |
+| N_BE_00003 | Anumāna (Inference) | Source of knowledge | T1.03 | 4 |
+| N_BE_00004 | Āgama / Śabda (Testimony) | Source of knowledge | T1.03 (reduced to inference) | 4 |
+| N_BE_00005 | Prameya (Object of cognition) | Foundation | T2.02 | 2 |
+| N_BE_00006 | Bhrānti (Erroneous cognition) | Epistemic error | T4.01 | 3 |
+| N_BE_00007 | Saṃśaya (Doubt) | Epistemic error | T4.02 | 3 |
+| N_BE_00008 | Vikalpa / Kalpanā (Conceptual construction) | Mental structure | T2.06, T4.07 | 2 |
+| N_BE_00009 | Nirvikalpaka pratyakṣa (Non-conceptual perception) | Mental structure | T2.07 | 2 |
+| N_BE_00010 | Mānasa pratyakṣa (Mental perception) | Type of consciousness | T1.05 | 3 |
+| N_BE_00011 | Svasaṃvedana (Self-awareness) | Type of perception | T1.06, T2.05, T6.02 | 3 |
+| N_BE_00012 | Yogipratyakṣa (Yogic perception) | Type of perception | T1.07 | 4 |
+| N_BE_00013 | Svalakṣaṇa (Particular / Unique mark) | Ontology–cognition | T3.01 | 2 |
+| N_BE_00014 | Sāmānyalakṣaṇa (Universal / General mark) | Ontology–cognition | T3.02, T3.07 | 2 |
+| N_BE_00015 | Apoha / Anyāpoha (Exclusion) | Philosophy of language | T6.05 | 2 |
+| N_BE_00016 | Liṅga / Hetu (Sign / Logical reason) | Logic | T5.01 | 1 |
+| N_BE_00017 | Pakṣa (Thesis) | Logic | T5.03 | 1 |
+| N_BE_00018 | Trairūpya (Triple-condition syllogism) | Logic | T5.06 | 1 |
+| N_BE_00019 | Vyāpti (Pervasion) | Logic | T5.07 | 1 |
+| N_BE_00020 | Avinābhāva (Necessary relation) | Logic | T5 area (precursor of vyāpti) | 1 |
+| N_BE_00021 | Svabhāvapratibandha (Essential relation) | Logic | T3.08 | 1 |
+| N_BE_00022 | Arthakriyā (Causal efficacy) | Ontology–cognition | T3.03, T6.06 | 2 |
+| N_BE_00023 | Avidyā / Avijjā (Ignorance) | Epistemic obstacle | T4 area (causal root) | 3 |
+| N_BE_00024 | Prajñā / Paññā (Wisdom) | Liberation | T4 area (soteriological) | 4 |
+| N_BE_00025 | Śūnyatā (Emptiness) | Ultimate object | T1.07 area (object of yogic perception) | 2 |
+| N_BE_00026 | Dvisatya (Two truths) | Ontology–cognition | T6 area (ontological framework) | 4 |
+| N_BE_00027 | Svārthānumāna (Inference for oneself) | Logic | T1.08 | 4 |
+| N_BE_00028 | Parārthānumāna (Inference for others) | Logic | T1.09 | 4 |
+| N_BE_00029 | Kṣaṇabhaṅgavāda (Momentariness) | Ontology–cognition | T3.04 | 1 |
+| N_BE_00030 | Pramāṇabhūta (Means of valid cognition) | Foundation | T1.01 area (epithet) | 4 |
 
 ---
 
@@ -106,45 +108,45 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 | Edge code | Source → Target | Relationship | Type | Connects tier items | Lens |
 | --- | --- | --- | --- | --- | --- |
-| ED_BE_01 | N_BE_01 → N_BE_02 | includes | Hierarchical | T1.01 → T1.02 | 1, 3 |
-| ED_BE_02 | N_BE_01 → N_BE_03 | includes | Hierarchical | T1.01 → T1.03 | 1, 4 |
-| ED_BE_03 | N_BE_01 → N_BE_05 | has as object | Structural | T1.01 → T2.02 | 1 |
-| ED_BE_04 | N_BE_01 → pramāṇaphala | produces | Structural | T1.01 → T2.03 | 1 |
-| ED_BE_05 | N_BE_02 → N_BE_13 | apprehends | Epistemic | T1.02 → T3.01 | 2, 3 |
-| ED_BE_06 | N_BE_03 → N_BE_14 | apprehends | Epistemic | T1.03 → T3.02 | 2, 4 |
-| ED_BE_07 | N_BE_03 → N_BE_16 | operates through | Logical | T1.03 → T5.01 | 4 |
-| ED_BE_08 | N_BE_03 → N_BE_18 | validated by | Logical | T1.03 → T5.06 | 4 |
-| ED_BE_09 | N_BE_16 → N_BE_17 | qualifies | Logical | T5.01 → T5.03 | 1 |
-| ED_BE_10 | N_BE_16 → N_BE_19 | requires | Logical | T5.01 → T5.07 | 1 |
-| ED_BE_11 | N_BE_19 → N_BE_21 | grounded in | Logical | T5.07 → T3.08 | 1 |
-| ED_BE_12 | N_BE_21 → N_BE_22 | has as basis | Ontological | T3.08 → T3.03 | 1 |
-| ED_BE_13 | N_BE_08 → N_BE_14 | operates on | Epistemic | T2.06 → T3.02 | 2 |
-| ED_BE_14 | N_BE_09 → N_BE_13 | apprehends | Epistemic | T2.07 → T3.01 | 2 |
-| ED_BE_15 | N_BE_09 → N_BE_08 | contrasted with | Oppositional | T2.07 → T2.06 | 2 |
-| ED_BE_16 | N_BE_15 → N_BE_03 | is linguistic variant of | Logical | T6.05 → T1.03 | 2 |
-| ED_BE_17 | N_BE_04 → N_BE_03 | reduced to | Hierarchical | — → T1.03 | 4 |
-| ED_BE_18 | N_BE_10 → N_BE_02 | is subtype of | Hierarchical | T1.05 → T1.02 | 3 |
-| ED_BE_19 | N_BE_11 → N_BE_02 | is subtype of | Hierarchical | T1.06 → T1.02 | 3 |
-| ED_BE_20 | N_BE_10 → N_BE_11 | entails | Structural | T1.05 → T1.06 | 3 |
-| ED_BE_21 | N_BE_12 → N_BE_02 | is subtype of | Hierarchical | T1.07 → T1.02 | 4 |
-| ED_BE_22 | N_BE_12 → N_BE_25 | realizes | Epistemic | T1.07 → (śūnyatā) | 2, 4 |
-| ED_BE_23 | N_BE_27 → N_BE_03 | is subtype of | Hierarchical | T1.08 → T1.03 | 4 |
-| ED_BE_24 | N_BE_28 → N_BE_03 | is subtype of | Hierarchical | T1.09 → T1.03 | 4 |
-| ED_BE_25 | N_BE_27 → N_BE_28 | grounds | Logical | T1.08 → T1.09 | 4 |
-| ED_BE_26 | N_BE_20 → N_BE_19 | is precursor of | Logical | T5 area → T5.07 | 1 |
-| ED_BE_27 | N_BE_23 → N_BE_06 | causes | Causal | T4 area → T4.01 | 3 |
-| ED_BE_28 | N_BE_23 → N_BE_07 | gives rise to | Causal | T4 area → T4.02 | 3 |
-| ED_BE_29 | N_BE_24 → N_BE_23 | dispels | Soteriological | T4 area | 4 |
-| ED_BE_30 | N_BE_24 → N_BE_25 | realizes | Epistemic | → (śūnyatā) | 2, 4 |
-| ED_BE_31 | N_BE_25 → N_BE_26 | is ultimate aspect of | Ontological | two truths framework | 2, 4 |
-| ED_BE_32 | N_BE_13 → N_BE_22 | possesses | Ontological | T3.01 → T3.03 | 2 |
-| ED_BE_33 | N_BE_14 → N_BE_22 | lacks | Ontological | T3.02 → T3.03 | 2 |
-| ED_BE_34 | N_BE_29 → N_BE_22 | supports | Ontological | T3.04 → T3.03 | 1 |
-| ED_BE_35 | N_BE_29 → N_BE_13 | characterizes | Ontological | T3.04 → T3.01 | 1 |
-| ED_BE_36 | N_BE_30 → N_BE_01 | is epithet of | Foundational | → T1.01 | 4 |
-| ED_BE_37 | N_BE_07 → N_BE_27 | motivates | Psychological | T4.02 → T1.08 | 3 |
-| ED_BE_38 | N_BE_02 → N_BE_08 | is free from | Exclusionary | T1.02 → T2.06 | 2, 3 |
-| ED_BE_39 | N_BE_16 → N_BE_20 | requires | Logical | T5.01 → T5 area | 1 |
+| ED_BE_00001 | N_BE_00001 → N_BE_00002 | includes | Hierarchical | T1.01 → T1.02 | 1, 3 |
+| ED_BE_00002 | N_BE_00001 → N_BE_00003 | includes | Hierarchical | T1.01 → T1.03 | 1, 4 |
+| ED_BE_00003 | N_BE_00001 → N_BE_00005 | has as object | Structural | T1.01 → T2.02 | 1 |
+| ED_BE_00004 | N_BE_00001 → pramāṇaphala | produces | Structural | T1.01 → T2.03 | 1 |
+| ED_BE_00005 | N_BE_00002 → N_BE_00013 | apprehends | Epistemic | T1.02 → T3.01 | 2, 3 |
+| ED_BE_00006 | N_BE_00003 → N_BE_00014 | apprehends | Epistemic | T1.03 → T3.02 | 2, 4 |
+| ED_BE_00007 | N_BE_00003 → N_BE_00016 | operates through | Logical | T1.03 → T5.01 | 4 |
+| ED_BE_00008 | N_BE_00003 → N_BE_00018 | validated by | Logical | T1.03 → T5.06 | 4 |
+| ED_BE_00009 | N_BE_00016 → N_BE_00017 | qualifies | Logical | T5.01 → T5.03 | 1 |
+| ED_BE_00010 | N_BE_00016 → N_BE_00019 | requires | Logical | T5.01 → T5.07 | 1 |
+| ED_BE_00011 | N_BE_00019 → N_BE_00021 | grounded in | Logical | T5.07 → T3.08 | 1 |
+| ED_BE_00012 | N_BE_00021 → N_BE_00022 | has as basis | Ontological | T3.08 → T3.03 | 1 |
+| ED_BE_00013 | N_BE_00008 → N_BE_00014 | operates on | Epistemic | T2.06 → T3.02 | 2 |
+| ED_BE_00014 | N_BE_00009 → N_BE_00013 | apprehends | Epistemic | T2.07 → T3.01 | 2 |
+| ED_BE_00015 | N_BE_00009 → N_BE_00008 | contrasted with | Oppositional | T2.07 → T2.06 | 2 |
+| ED_BE_00016 | N_BE_00015 → N_BE_00003 | is linguistic variant of | Logical | T6.05 → T1.03 | 2 |
+| ED_BE_00017 | N_BE_00004 → N_BE_00003 | reduced to | Hierarchical | — → T1.03 | 4 |
+| ED_BE_00018 | N_BE_00010 → N_BE_00002 | is subtype of | Hierarchical | T1.05 → T1.02 | 3 |
+| ED_BE_00019 | N_BE_00011 → N_BE_00002 | is subtype of | Hierarchical | T1.06 → T1.02 | 3 |
+| ED_BE_00020 | N_BE_00010 → N_BE_00011 | entails | Structural | T1.05 → T1.06 | 3 |
+| ED_BE_00021 | N_BE_00012 → N_BE_00002 | is subtype of | Hierarchical | T1.07 → T1.02 | 4 |
+| ED_BE_00022 | N_BE_00012 → N_BE_00025 | realizes | Epistemic | T1.07 → (śūnyatā) | 2, 4 |
+| ED_BE_00023 | N_BE_00027 → N_BE_00003 | is subtype of | Hierarchical | T1.08 → T1.03 | 4 |
+| ED_BE_00024 | N_BE_00028 → N_BE_00003 | is subtype of | Hierarchical | T1.09 → T1.03 | 4 |
+| ED_BE_00025 | N_BE_00027 → N_BE_00028 | grounds | Logical | T1.08 → T1.09 | 4 |
+| ED_BE_00026 | N_BE_00020 → N_BE_00019 | is precursor of | Logical | T5 area → T5.07 | 1 |
+| ED_BE_00027 | N_BE_00023 → N_BE_00006 | causes | Causal | T4 area → T4.01 | 3 |
+| ED_BE_00028 | N_BE_00023 → N_BE_00007 | gives rise to | Causal | T4 area → T4.02 | 3 |
+| ED_BE_00029 | N_BE_00024 → N_BE_00023 | dispels | Soteriological | T4 area | 4 |
+| ED_BE_00030 | N_BE_00024 → N_BE_00025 | realizes | Epistemic | → (śūnyatā) | 2, 4 |
+| ED_BE_00031 | N_BE_00025 → N_BE_00026 | is ultimate aspect of | Ontological | two truths framework | 2, 4 |
+| ED_BE_00032 | N_BE_00013 → N_BE_00022 | possesses | Ontological | T3.01 → T3.03 | 2 |
+| ED_BE_00033 | N_BE_00014 → N_BE_00022 | lacks | Ontological | T3.02 → T3.03 | 2 |
+| ED_BE_00034 | N_BE_00029 → N_BE_00022 | supports | Ontological | T3.04 → T3.03 | 1 |
+| ED_BE_00035 | N_BE_00029 → N_BE_00013 | characterizes | Ontological | T3.04 → T3.01 | 1 |
+| ED_BE_00036 | N_BE_00030 → N_BE_00001 | is epithet of | Foundational | → T1.01 | 4 |
+| ED_BE_00037 | N_BE_00007 → N_BE_00027 | motivates | Psychological | T4.02 → T1.08 | 3 |
+| ED_BE_00038 | N_BE_00002 → N_BE_00008 | is free from | Exclusionary | T1.02 → T2.06 | 2, 3 |
+| ED_BE_00039 | N_BE_00016 → N_BE_00020 | requires | Logical | T5.01 → T5 area | 1 |
 
 ---
 
@@ -152,17 +154,17 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T1.01 — Pramāṇa (Valid cognition / Valid epistemic instrument)
 
-**Node:** N_BE_01 — Pramāṇa (Skt.). Category: Foundation.
+**Node:** N_BE_00001 — Pramāṇa (Skt.). Category: Foundation.
 **Definition:** A reliable source of knowledge; the means by which correct cognition is attained. Structured with four integrated components: means of knowing (pramāṇa), valid cognition (pramā), object to be known (prameya), and resultant cognition (pramāṇaphala).
 
 **Inbound edges:**
-- ED_BE_36: N_BE_30 (Pramāṇabhūta) → N_BE_01 — is epithet of (Foundational)
+- ED_BE_00036: N_BE_00030 (Pramāṇabhūta) → N_BE_00001 — is epithet of (Foundational)
 
 **Outbound edges:**
-- ED_BE_01: N_BE_01 → N_BE_02 (Pratyakṣa) — includes (Hierarchical)
-- ED_BE_02: N_BE_01 → N_BE_03 (Anumāna) — includes (Hierarchical)
-- ED_BE_03: N_BE_01 → N_BE_05 (Prameya) — has as object (Structural)
-- ED_BE_04: N_BE_01 → pramāṇaphala — produces (Structural)
+- ED_BE_00001: N_BE_00001 → N_BE_00002 (Pratyakṣa) — includes (Hierarchical)
+- ED_BE_00002: N_BE_00001 → N_BE_00003 (Anumāna) — includes (Hierarchical)
+- ED_BE_00003: N_BE_00001 → N_BE_00005 (Prameya) — has as object (Structural)
+- ED_BE_00004: N_BE_00001 → pramāṇaphala — produces (Structural)
 
 - **Buddhist Epistemology:** The foundational category of Pramāṇavāda. A cognition qualifies as pramāṇa if it is non-deceptive (avisaṃvādin) with respect to its object and causally efficacious in guiding action toward that object. Validity is relational and functional, not intrinsic to any object or subject alone. Pramāṇa is the condition-event under which knowledge is certified. Dignāga identifies two pramāṇas: pratyakṣa and anumāna. Dharmakīrti refines and defends both against Mīmāṃsaka and Nyāya objections.
 - **Quantum Measurement:** Measurement operator. A Hermitian (self-adjoint) operator on Hilbert space. Defines the formal conditions under which a physical quantity is a valid observable. Validity is defined by the mathematical structure of the operator (real spectrum, completeness of eigenstates), not by relation to a cognitive agent.
@@ -172,18 +174,18 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T1.02 — Pratyakṣa (Direct perception / Non-inferential cognition)
 
-**Node:** N_BE_02 — Pratyakṣa (Skt.). Category: Source of knowledge.
+**Node:** N_BE_00002 — Pratyakṣa (Skt.). Category: Source of knowledge.
 **Definition:** Immediate cognition through the senses, prior to inference or conceptual overlay. Dignāga defines it as "perception (pratyakṣam) is devoid of mental construction (kalpanāpodham)." It apprehends the particular (svalakṣaṇa) as pure sensation without conceptual structure.
 
 **Inbound edges:**
-- ED_BE_01: N_BE_01 (Pramāṇa) → N_BE_02 — includes (Hierarchical)
-- ED_BE_18: N_BE_10 (Mānasa pratyakṣa) → N_BE_02 — is subtype of (Hierarchical)
-- ED_BE_19: N_BE_11 (Svasaṃvedana) → N_BE_02 — is subtype of (Hierarchical)
-- ED_BE_21: N_BE_12 (Yogipratyakṣa) → N_BE_02 — is subtype of (Hierarchical)
+- ED_BE_00001: N_BE_00001 (Pramāṇa) → N_BE_00002 — includes (Hierarchical)
+- ED_BE_00018: N_BE_00010 (Mānasa pratyakṣa) → N_BE_00002 — is subtype of (Hierarchical)
+- ED_BE_00019: N_BE_00011 (Svasaṃvedana) → N_BE_00002 — is subtype of (Hierarchical)
+- ED_BE_00021: N_BE_00012 (Yogipratyakṣa) → N_BE_00002 — is subtype of (Hierarchical)
 
 **Outbound edges:**
-- ED_BE_05: N_BE_02 → N_BE_13 (Svalakṣaṇa) — apprehends (Epistemic)
-- ED_BE_38: N_BE_02 → N_BE_08 (Vikalpa) — is free from (Exclusionary)
+- ED_BE_00005: N_BE_00002 → N_BE_00013 (Svalakṣaṇa) — apprehends (Epistemic)
+- ED_BE_00038: N_BE_00002 → N_BE_00008 (Vikalpa) — is free from (Exclusionary)
 
 - **Buddhist Epistemology:** One of the two valid pramāṇas in Dignāga-Dharmakīrti. Defined negatively: cognition free from kalpanā (conceptual construction) and abhrānta (error). Pratyakṣa apprehends the svalakṣaṇa (unique particular) directly, without inferential mediation. It is momentary and non-repeatable in the strict sense. Dignāga distinguishes four subtypes (see T1.04 through T1.07).
 - **Quantum Measurement:** Eigenvalue readout. The singular, definite numerical outcome produced by a projective measurement on a quantum system. Non-inferential in the sense that it is the terminal output, not derived from prior outcomes. Produced at a specific moment; non-repeatable in the sense that the post-measurement state differs from the pre-measurement state.
@@ -193,20 +195,20 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T1.03 — Anumāna (Inference / Inferential cognition)
 
-**Node:** N_BE_03 — Anumāna (Skt.). Category: Source of knowledge.
+**Node:** N_BE_00003 — Anumāna (Skt.). Category: Source of knowledge.
 **Definition:** Indirect knowledge obtained through logical reasoning based on a sign (liṅga). Vasubandhu defines it as "the observation of an object not occurring without [the probandum] for someone who knows that." It operates on the universal (sāmānyalakṣaṇa).
 
 **Inbound edges:**
-- ED_BE_02: N_BE_01 (Pramāṇa) → N_BE_03 — includes (Hierarchical)
-- ED_BE_16: N_BE_15 (Apoha) → N_BE_03 — is linguistic variant of (Logical)
-- ED_BE_17: N_BE_04 (Āgama) → N_BE_03 — reduced to (Hierarchical)
-- ED_BE_23: N_BE_27 (Svārthānumāna) → N_BE_03 — is subtype of (Hierarchical)
-- ED_BE_24: N_BE_28 (Parārthānumāna) → N_BE_03 — is subtype of (Hierarchical)
+- ED_BE_00002: N_BE_00001 (Pramāṇa) → N_BE_00003 — includes (Hierarchical)
+- ED_BE_00016: N_BE_00015 (Apoha) → N_BE_00003 — is linguistic variant of (Logical)
+- ED_BE_00017: N_BE_00004 (Āgama) → N_BE_00003 — reduced to (Hierarchical)
+- ED_BE_00023: N_BE_00027 (Svārthānumāna) → N_BE_00003 — is subtype of (Hierarchical)
+- ED_BE_00024: N_BE_00028 (Parārthānumāna) → N_BE_00003 — is subtype of (Hierarchical)
 
 **Outbound edges:**
-- ED_BE_06: N_BE_03 → N_BE_14 (Sāmānyalakṣaṇa) — apprehends (Epistemic)
-- ED_BE_07: N_BE_03 → N_BE_16 (Liṅga) — operates through (Logical)
-- ED_BE_08: N_BE_03 → N_BE_18 (Trairūpya) — validated by (Logical)
+- ED_BE_00006: N_BE_00003 → N_BE_00014 (Sāmānyalakṣaṇa) — apprehends (Epistemic)
+- ED_BE_00007: N_BE_00003 → N_BE_00016 (Liṅga) — operates through (Logical)
+- ED_BE_00008: N_BE_00003 → N_BE_00018 (Trairūpya) — validated by (Logical)
 
 - **Buddhist Epistemology:** Second valid pramāṇa. Valid cognition of an object not directly present, derived from a logical mark (liṅga) via invariant pervasion (vyāpti). Anumāna does not contact its object directly; it constructs knowledge from relational structure. It operates on sāmānyalakṣaṇa (conceptual universals), not svalakṣaṇa. Dignāga distinguishes svārtha anumāna (for oneself) and parārtha anumāna (for others / publicly demonstrable). Full treatment of anumāna architecture in Tier 5.
 - **Quantum Measurement:** Wave function ψ. A probability amplitude function that encodes the relational structure of possible outcomes without directly representing any particular outcome. All predictions derived from ψ are inferential relative to actual measurement events. ψ is not observed directly; it is inferred from statistical patterns.
@@ -216,7 +218,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T1.04 — Indriyajñāna (Sense perception)
 
-**Node:** Subdivision of N_BE_02 (Pratyakṣa). Not a separate node.
+**Node:** Subdivision of N_BE_00002 (Pratyakṣa). Not a separate node.
 
 - **Buddhist Epistemology:** Perception arising from causal contact between a sense faculty (indriya) and its appropriate object. The primary, most basic form of pratyakṣa. Produced by the object through the sense organ as causal chain.
 - **Quantum Measurement:** Detector response. The physical signal produced in a measurement apparatus upon direct interaction with a quantum system: photon count, current spike, pointer deflection, ionization track. The causal-physical interface between system and apparatus.
@@ -226,12 +228,12 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T1.05 — Mānasapratyakṣa (Mental perception)
 
-**Node:** N_BE_10 — Mānasa pratyakṣa (Skt.). Category: Type of consciousness.
+**Node:** N_BE_00010 — Mānasa pratyakṣa (Skt.). Category: Type of consciousness.
 **Definition:** Inner cognition through mental consciousness, treated here as post-sensory mental perception within the Pramāṇavāda mapping. Some Yogācāra contexts relate this to mental consciousness within broader vijñāna taxonomies, but those ontological claims are outside the present scope.
 
 **Outbound edges:**
-- ED_BE_18: N_BE_10 → N_BE_02 (Pratyakṣa) — is subtype of (Hierarchical)
-- ED_BE_20: N_BE_10 → N_BE_11 (Svasaṃvedana) — entails (Structural)
+- ED_BE_00018: N_BE_00010 → N_BE_00002 (Pratyakṣa) — is subtype of (Hierarchical)
+- ED_BE_00020: N_BE_00010 → N_BE_00011 (Svasaṃvedana) — entails (Structural)
 
 - **Buddhist Epistemology:** Perception arising in manas (mind-faculty) immediately following indriyajñāna. Apprehends the mental image (ākāra) of the sense object rather than the external object directly. Still non-conceptual (free of kalpanā) but one causal step removed from direct sense contact.
 - **Quantum Measurement:** BIAN-1 — Post-Detection Internal Representational State. The internal state of an observer or apparatus system after a detector event fires but before any symbolic encoding, recording, or storage of the result. QM moves directly from physical interaction to symbolic output value. The intermediate stratum — between raw physical signal and registered number — is unmodeled.
@@ -241,14 +243,14 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T1.06 — Svasaṃvedana (Self-awareness / Reflexive cognition)
 
-**Node:** N_BE_11 — Svasaṃvedana (Skt.). Category: Type of perception.
+**Node:** N_BE_00011 — Svasaṃvedana (Skt.). Category: Type of perception.
 **Definition:** [uncertain] The reflexive dimension by which a cognition is aware of its own occurrence. In this document, svasaṃvedana is used as a principle of epistemic self-certification and regress-stopping, not as a general metaphysical thesis about the existence of external objects.
 
 **Inbound edges:**
-- ED_BE_20: N_BE_10 (Mānasa pratyakṣa) → N_BE_11 — entails (Structural) [Note: uncertain]
+- ED_BE_00020: N_BE_00010 (Mānasa pratyakṣa) → N_BE_00011 — entails (Structural) [Note: uncertain]
 
 **Outbound edges:**
-- ED_BE_19: N_BE_11 → N_BE_02 (Pratyakṣa) — is subtype of (Hierarchical) [Note: uncertain]
+- ED_BE_00019: N_BE_00011 → N_BE_00002 (Pratyakṣa) — is subtype of (Hierarchical) [Note: uncertain]
 
 - **Buddhist Epistemology:** Every cognition is simultaneously aware of itself. Cognition of blue is also, non-inferentially, an awareness of the cognizing-of-blue. This is a distinct pramāṇa for Dharmakīrti: self-luminous (svaprakāśa), not requiring a second-order act to register the first-order act. Svasaṃvedana is the structural grounding of the entire Pramāṇavāda system: it stops the regress of meta-cognitions and self-certifies every valid cognition without external verification. Its implications at the system level are treated in T2.05, T6.01, and T6.02.
 - **Quantum Measurement:** BIAN-2 — Observer Self-Reference / Reflexive Cognition of Measurement Act. QM has no formal account of an observer's cognition of its own measurement act. A measurement is modeled as a physical interaction between system and apparatus. There is no formalism for the registering agent being simultaneously aware of its own registering. The measurement problem (von Neumann chain / Wigner's friend) is, in structural terms, the consequence of this gap: without a self-certifying epistemic layer, the registration chain has no formal stopping point.
@@ -258,12 +260,12 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T1.07 — Yogijñāna (Yogic direct perception)
 
-**Node:** N_BE_12 — Yogipratyakṣa (Skt.). Category: Type of perception.
+**Node:** N_BE_00012 — Yogipratyakṣa (Skt.). Category: Type of perception.
 **Definition:** [uncertain] Direct, supra-ordinary perception attributed to cultivated epistemic capacity. Ultimate-object and soteriological claims are outside the present scope unless used only as structural features of epistemic access.
 
 **Outbound edges:**
-- ED_BE_21: N_BE_12 → N_BE_02 (Pratyakṣa) — is subtype of (Hierarchical) [Note: uncertain]
-- ED_BE_22: N_BE_12 → N_BE_25 (Śūnyatā) — realizes (Epistemic) [Note: uncertain]
+- ED_BE_00021: N_BE_00012 → N_BE_00002 (Pratyakṣa) — is subtype of (Hierarchical) [Note: uncertain]
+- ED_BE_00022: N_BE_00012 → N_BE_00025 (Śūnyatā) — realizes (Epistemic) [Note: uncertain]
 
 - **Buddhist Epistemology:** Non-inferential, non-conceptual cognition achieved through sustained meditative cultivation (bhāvanā). Accesses objects or levels of reality normally beyond sensory reach. Debated within Pramāṇavāda but included by Dharmakīrti as a limiting case of pratyakṣa, achieved when a cognitive agent reaches a qualitatively different epistemic faculty through practice.
 - **Quantum Measurement:** BIAN-3 — Limit-Case Observation by Different Faculty. QM has no formal category for observation that operates through a qualitatively different faculty or mechanism than standard measurement. All observers are formally equivalent in QM: any physical system that interacts with a quantum system and produces a correlated output counts as a measurement apparatus. There is no spectrum of observer types based on cultivated capacity.
@@ -273,15 +275,15 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T1.08 — Svārtha anumāna (Inference for oneself)
 
-**Node:** N_BE_27 — Svārthānumāna (Skt.). Category: Logic.
+**Node:** N_BE_00027 — Svārthānumāna (Skt.). Category: Logic.
 **Definition:** "Inference for oneself" — a private inferential cognition based on observation of an evidential sign (liṅga) fulfilling the three conditions (trairūpya). Endowed with personal psychological characteristics; the process begins with perceptible observation (darśana) of the sign.
 
 **Inbound edges:**
-- ED_BE_37: N_BE_07 (Saṃśaya) → N_BE_27 — motivates (Psychological) [Note: uncertain]
+- ED_BE_00037: N_BE_00007 (Saṃśaya) → N_BE_00027 — motivates (Psychological) [Note: uncertain]
 
 **Outbound edges:**
-- ED_BE_23: N_BE_27 → N_BE_03 (Anumāna) — is subtype of (Hierarchical)
-- ED_BE_25: N_BE_27 → N_BE_28 (Parārthānumāna) — grounds (Logical)
+- ED_BE_00023: N_BE_00027 → N_BE_00003 (Anumāna) — is subtype of (Hierarchical)
+- ED_BE_00025: N_BE_00027 → N_BE_00028 (Parārthānumāna) — grounds (Logical)
 
 - **Buddhist Epistemology:** Inference conducted by a cognitive agent for its own epistemic purposes. The full syllogistic structure need not be made explicit. The primary, psychologically real form of inference. Its validity conditions are the same as parārtha anumāna but its expression is internal.
 - **Quantum Measurement:** Private theoretical calculation. A physicist's internal derivation of a predicted outcome from ψ before experiment. The reasoning process that leads from known wave function to expected eigenvalue distribution. Not formalized as a distinct category in QM.
@@ -291,14 +293,14 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T1.09 — Parārtha anumāna (Inference for others / Public demonstration)
 
-**Node:** N_BE_28 — Parārthānumāna (Skt.). Category: Logic.
+**Node:** N_BE_00028 — Parārthānumāna (Skt.). Category: Logic.
 **Definition:** "Inference for others" — syllogistic reasoning communicating new knowledge to another person. Its purpose is "to produce in the opponent the same kind of ascertainment that is obtained by the proponent through an inference (svārthānumāna)." Taken in a metaphorical sense (upacāra).
 
 **Inbound edges:**
-- ED_BE_25: N_BE_27 (Svārthānumāna) → N_BE_28 — grounds (Logical)
+- ED_BE_00025: N_BE_00027 (Svārthānumāna) → N_BE_00028 — grounds (Logical)
 
 **Outbound edges:**
-- ED_BE_24: N_BE_28 → N_BE_03 (Anumāna) — is subtype of (Hierarchical)
+- ED_BE_00024: N_BE_00028 → N_BE_00003 (Anumāna) — is subtype of (Hierarchical)
 
 - **Buddhist Epistemology:** Inference made explicit in syllogistic form (prayoga) for the purpose of demonstrating a conclusion to another cognitive agent. Requires full articulation of pakṣa (subject), hetu (reason / liṅga), and dṛṣṭānta (example). The public, communicable, and contestable form of inference.
 - **Quantum Measurement:** Published experimental result with full measurement protocol. The public, reproducible form of a quantum measurement including apparatus specification, preparation procedure, statistical output, and error bars. Subject to peer scrutiny and replication.
@@ -320,11 +322,11 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T2.02 — Viṣaya (Object domain / Intentional object)
 
-**Node:** N_BE_05 — Prameya (Skt.). Category: Foundation.
+**Node:** N_BE_00005 — Prameya (Skt.). Category: Foundation.
 **Definition:** The reality that serves as the object of valid knowledge. Dignāga maintains exclusive duality: svalakṣaṇa as the object of perception and sāmānyalakṣaṇa as the object of inference.
 
 **Inbound edges:**
-- ED_BE_03: N_BE_01 (Pramāṇa) → N_BE_05 — has as object (Structural)
+- ED_BE_00003: N_BE_00001 (Pramāṇa) → N_BE_00005 — has as object (Structural)
 
 - **Buddhist Epistemology:** The domain to which a cognition is directed. Distinguished from artha (the real external causal ground): viṣaya is the epistemic object as it figures in the cognitive act; artha is what causally produces the ākāra. The two are structurally distinct. Erroneous cognition has a viṣaya but its artha is not as the viṣaya presents it.
 - **Quantum Measurement:** Observable. The physical quantity to which a measurement is directed: position, momentum, spin, energy. Distinguished from the actual quantum state of the system, which may not have a definite value for that observable prior to measurement. The observable is the epistemic target; the state is the causal ground.
@@ -334,10 +336,10 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T2.03 — Phala (Result of cognition / Epistemic fruit)
 
-**Node:** Sub-component of N_BE_01 (Pramāṇa). Pramāṇaphala is the fourth component.
+**Node:** Sub-component of N_BE_00001 (Pramāṇa). Pramāṇaphala is the fourth component.
 
 **Inbound edges:**
-- ED_BE_04: N_BE_01 (Pramāṇa) → pramāṇaphala — produces (Structural)
+- ED_BE_00004: N_BE_00001 (Pramāṇa) → pramāṇaphala — produces (Structural)
 
 - **Buddhist Epistemology:** The outcome of a valid cognitive act. In Dharmakīrti's analysis, phala is not a product separate from the cognitive act; it is the act in its resultant aspect (pramiti). Knowing is its own result. No additional act is required to produce the knowing-that-one-has-known. This identification of pramāṇa with its phala has major consequences for the regress problem (see T6.01).
 - **Quantum Measurement:** Measurement outcome. The registered eigenvalue after measurement. In relational QM (Rovelli), the outcome is defined only relative to the observer-system interaction, not as an absolute fact. In QBism (Fuchs-Schack), the outcome is an agent's experience, not a property of the system. Both relational QM and QBism partially approach the Dharmakīrti position by resisting the reification of the outcome as a separate object from the measurement act.
@@ -357,8 +359,8 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T2.05 — Svasaṃvedana as structural principle (Self-certification of cognition)
 
-**Node:** N_BE_11 — Svasaṃvedana (Skt.). Category: Type of perception.
-**Related edges:** ED_BE_19, ED_BE_20 (see T1.06)
+**Node:** N_BE_00011 — Svasaṃvedana (Skt.). Category: Type of perception.
+**Related edges:** ED_BE_00019, ED_BE_00020 (see T1.06)
 
 - **Buddhist Epistemology:** Beyond being a pramāṇa type (T1.06), svasaṃvedana functions as a universal structural principle: every valid cognition self-certifies its own occurrence. No regress of meta-cognitions is required to establish that a cognition occurred. The act certifies itself. This is not a separate second-order act; it is a structural feature of every first-order valid cognition.
 - **Quantum Measurement:** BIAN-6 — Self-Certifying Measurement. QM has no principle by which a measurement self-certifies its own occurrence. In the formalism, measurement is an external imposition on a system. In practice, an experimenter must make a decision that measurement has occurred — but this decision is outside the formalism. The question "has the measurement been completed?" requires a meta-level agent to answer. Buddhist Epistemology eliminates this meta-level requirement via svasaṃvedana. QM does not.
@@ -368,15 +370,15 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T2.06 — Kalpanā (Conceptual construction / Propositional overlay)
 
-**Node:** N_BE_08 — Vikalpa / Kalpanā (Skt.). Category: Mental structure.
+**Node:** N_BE_00008 — Vikalpa / Kalpanā (Skt.). Category: Mental structure.
 **Definition:** Conceptualized, categorizing cognition that applies names and classes — contrasted with bare perception. The mind superimposes structures like proper names (yadṛcchā-śabda), genus-words (jāti-śabda), quality-words (guṇa-śabda), action-words (kriyā-śabda), and substance-words (dravya-śabda).
 
 **Inbound edges:**
-- ED_BE_15: N_BE_09 (Nirvikalpaka pratyakṣa) → N_BE_08 — contrasted with (Oppositional)
-- ED_BE_38: N_BE_02 (Pratyakṣa) → N_BE_08 — is free from (Exclusionary)
+- ED_BE_00015: N_BE_00009 (Nirvikalpaka pratyakṣa) → N_BE_00008 — contrasted with (Oppositional)
+- ED_BE_00038: N_BE_00002 (Pratyakṣa) → N_BE_00008 — is free from (Exclusionary)
 
 **Outbound edges:**
-- ED_BE_13: N_BE_08 → N_BE_14 (Sāmānyalakṣaṇa) — operates on (Epistemic)
+- ED_BE_00013: N_BE_00008 → N_BE_00014 (Sāmānyalakṣaṇa) — operates on (Epistemic)
 
 - **Buddhist Epistemology:** The cognitive act of imposing conceptual, linguistic, and relational structure onto raw perceptual content. Kalpanā is what transforms nirvikalpaka pratyakṣa into savikalpaka pratyakṣa. It is epistemically productive (enabling communication, inference, and action-planning) but also the source of most epistemic errors (bhrānti, saṃśaya, vikalpa).
 - **Quantum Measurement:** Theoretical interpretation of measurement results. The act of embedding a raw measurement result into a physical theory: assigning it a variable name, a unit, a place in an equation, a physical interpretation. This is standard scientific practice but is not formalized within QM itself.
@@ -386,12 +388,12 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T2.07 — Nirvikalpaka pratyakṣa (Non-conceptual perception / Pre-propositional apprehension)
 
-**Node:** N_BE_09 — Nirvikalpaka pratyakṣa (Skt.). Category: Mental structure.
+**Node:** N_BE_00009 — Nirvikalpaka pratyakṣa (Skt.). Category: Mental structure.
 **Definition:** Pure, direct perception free from conceptual or linguistic elaboration (nirvikalpaka, avyapadeśya). The object is the extensionless particular moment that disappears as soon as it appears.
 
 **Outbound edges:**
-- ED_BE_14: N_BE_09 → N_BE_13 (Svalakṣaṇa) — apprehends (Epistemic)
-- ED_BE_15: N_BE_09 → N_BE_08 (Vikalpa) — contrasted with (Oppositional)
+- ED_BE_00014: N_BE_00009 → N_BE_00013 (Svalakṣaṇa) — apprehends (Epistemic)
+- ED_BE_00015: N_BE_00009 → N_BE_00008 (Vikalpa) — contrasted with (Oppositional)
 
 - **Buddhist Epistemology:** Perception entirely prior to kalpanā. Apprehends the svalakṣaṇa directly without any linguistic, categorical, or inferential processing. Linguistically ineffable; it cannot be stated without becoming savikalpaka. Epistemically foundational: it is the ground from which all valid cognition ultimately derives its contact with reality.
 - **Quantum Measurement:** BIAN-7 — Pre-Symbolic Physical Event. The quantum interaction between system and apparatus before any numerical, symbolic, or linguistic encoding. QM begins its formalism after this stratum. The physical event at which system properties influence apparatus configuration is the causal ground of the eigenvalue, but it is not modeled within the formalism. The formalism operates on the symbolic output of this event, not on the event itself.
@@ -401,7 +403,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T2.08 — Savikalpaka pratyakṣa (Conceptual perception / Interpreted apprehension)
 
-**Node:** No separate node in published documents. Implicit as the complement of N_BE_09.
+**Node:** No separate node in published documents. Implicit as the complement of N_BE_00009.
 
 - **Buddhist Epistemology:** Perception already processed through kalpanā. Carries propositional structure: this is a pot, that is blue. Valid as a secondary cognitive form; not the epistemological foundation. It is what ordinary perception presents and what enables communication and inference.
 - **Quantum Measurement:** Interpreted measurement result. The eigenvalue after it has been assigned physical meaning: this is 0.5 eV, that particle is spin-up. The standard output of any real experiment, as it appears in a lab notebook or published paper.
@@ -413,16 +415,16 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T3.01 — Svalakṣaṇa (Particular / Unique causally efficacious instance)
 
-**Node:** N_BE_13 — Svalakṣaṇa (Skt.). Category: Ontology–cognition.
+**Node:** N_BE_00013 — Svalakṣaṇa (Skt.). Category: Ontology–cognition.
 **Definition:** The individual, unique characteristic of a thing; the object of direct perception. Per Dharmakīrti: (a) has power to produce effects (arthakriyākāritva), (b) is specific (asādhāraṇa), (c) is not denotable by a word (śabdasyāviṣaya), (d) is apprehensible without depending upon other factors.
 
 **Inbound edges:**
-- ED_BE_05: N_BE_02 (Pratyakṣa) → N_BE_13 — apprehends (Epistemic)
-- ED_BE_14: N_BE_09 (Nirvikalpaka pratyakṣa) → N_BE_13 — apprehends (Epistemic)
-- ED_BE_35: N_BE_29 (Kṣaṇabhaṅgavāda) → N_BE_13 — characterizes (Ontological)
+- ED_BE_00005: N_BE_00002 (Pratyakṣa) → N_BE_00013 — apprehends (Epistemic)
+- ED_BE_00014: N_BE_00009 (Nirvikalpaka pratyakṣa) → N_BE_00013 — apprehends (Epistemic)
+- ED_BE_00035: N_BE_00029 (Kṣaṇabhaṅgavāda) → N_BE_00013 — characterizes (Ontological)
 
 **Outbound edges:**
-- ED_BE_32: N_BE_13 → N_BE_22 (Arthakriyā) — possesses (Ontological)
+- ED_BE_00032: N_BE_00013 → N_BE_00022 (Arthakriyā) — possesses (Ontological)
 
 - **Buddhist Epistemology:** The real object. Momentary, unique, causally efficacious (arthakriyāśakti), and non-repeatable. It is what pratyakṣa actually contacts at the moment of valid perception. Its causal efficacy — its capacity to produce effects — is the sole criterion of its reality. It has no extension beyond its own moment.
 - **Quantum Measurement:** Post-measurement eigenstate. The definite, particular state of the quantum system after measurement-induced collapse. Unique to that measurement event. The only state with a definite value for the measured observable. All subsequent evolution proceeds from this particular.
@@ -432,15 +434,15 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T3.02 — Sāmānyalakṣaṇa (Universal / Conceptual construct without direct causal power)
 
-**Node:** N_BE_14 — Sāmānyalakṣaṇa (Skt.). Category: Ontology–cognition.
+**Node:** N_BE_00014 — Sāmānyalakṣaṇa (Skt.). Category: Ontology–cognition.
 **Definition:** A shared, general characteristic; the object of inference and conceptual thought. Per Dharmakīrti: (a) has no power to produce effects, (b) is common to many things, (c) is denotable by a word, (d) is not apprehensible without depending upon other factors such as verbal conventions.
 
 **Inbound edges:**
-- ED_BE_06: N_BE_03 (Anumāna) → N_BE_14 — apprehends (Epistemic)
-- ED_BE_13: N_BE_08 (Vikalpa) → N_BE_14 — operates on (Epistemic)
+- ED_BE_00006: N_BE_00003 (Anumāna) → N_BE_00014 — apprehends (Epistemic)
+- ED_BE_00013: N_BE_00008 (Vikalpa) → N_BE_00014 — operates on (Epistemic)
 
 **Outbound edges:**
-- ED_BE_33: N_BE_14 → N_BE_22 (Arthakriyā) — lacks (Ontological)
+- ED_BE_00033: N_BE_00014 → N_BE_00022 (Arthakriyā) — lacks (Ontological)
 
 - **Buddhist Epistemology:** The conceptual universal. A mental construction abstracted across multiple svalakṣaṇa instances. Not causally efficacious on its own; real only as a cognitive object. It is the object of anumāna, not pratyakṣa. Dharmakīrti's apoha theory explains how sāmānyalakṣaṇa refer through exclusion rather than positive essence.
 - **Quantum Measurement:** Superposition / wave function ψ. A linear combination of eigenstates: a mathematical construct that represents potential, not actuality. Not directly observable. Causally relevant only through its squared modulus (Born rule). ψ before measurement corresponds to the conceptual construct: it organizes the space of possibilities without being any one of them.
@@ -450,14 +452,14 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T3.03 — Arthakriyāśakti (Causal efficacy / Power to perform a function)
 
-**Node:** N_BE_22 — Arthakriyā (Skt.). Category: Ontology–cognition.
+**Node:** N_BE_00022 — Arthakriyā (Skt.). Category: Ontology–cognition.
 **Definition:** Double meaning: (1) Ontological: causal efficacy as the criterion of reality — "That which is able to perform a function exists ultimately." Only objects able to participate causally in producing phenomena are real. (2) Epistemological: to fulfill a practical purpose — valid cognitions provide the cognitive basis for successful human activities (puruṣārthasiddhi).
 
 **Inbound edges:**
-- ED_BE_12: N_BE_21 (Svabhāvapratibandha) → N_BE_22 — has as basis (Ontological)
-- ED_BE_32: N_BE_13 (Svalakṣaṇa) → N_BE_22 — possesses (Ontological)
-- ED_BE_33: N_BE_14 (Sāmānyalakṣaṇa) → N_BE_22 — lacks (Ontological)
-- ED_BE_34: N_BE_29 (Kṣaṇabhaṅgavāda) → N_BE_22 — supports (Ontological)
+- ED_BE_00012: N_BE_00021 (Svabhāvapratibandha) → N_BE_00022 — has as basis (Ontological)
+- ED_BE_00032: N_BE_00013 (Svalakṣaṇa) → N_BE_00022 — possesses (Ontological)
+- ED_BE_00033: N_BE_00014 (Sāmānyalakṣaṇa) → N_BE_00022 — lacks (Ontological)
+- ED_BE_00034: N_BE_00029 (Kṣaṇabhaṅgavāda) → N_BE_00022 — supports (Ontological)
 
 - **Buddhist Epistemology:** The criterion of reality for Dharmakīrti. What is real is what can causally produce effects. Svalakṣaṇa has arthakriyāśakti; sāmānyalakṣaṇa does not. This criterion cleanly separates the real from the merely conceptual.
 - **Quantum Measurement:** Observability / empirical accessibility. What is real in QM is what can produce a measurement outcome. Quantities that produce no observable difference (absolute phase, specific branch in many-worlds before decoherence) have no physical status within the formalism. QM's implicit ontological criterion is functional: real = detectable.
@@ -467,12 +469,12 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T3.04 — Kṣaṇikatva / Kṣaṇikavāda (Momentariness / Doctrine of momentary existence)
 
-**Node:** N_BE_29 — Kṣaṇabhaṅgavāda (Skt.). Category: Ontology–cognition.
+**Node:** N_BE_00029 — Kṣaṇabhaṅgavāda (Skt.). Category: Ontology–cognition.
 **Definition:** The Sautrāntika doctrine: "a moment disappears as soon as it appears without duration." Here it is used only as an epistemic-ontological account of momentary particulars in Pramāṇavāda. It can be structurally related to dependent arising, but the present mapping does not develop a broader metaphysical doctrine of temporal reality.
 
 **Outbound edges:**
-- ED_BE_34: N_BE_29 → N_BE_22 (Arthakriyā) — supports (Ontological)
-- ED_BE_35: N_BE_29 → N_BE_13 (Svalakṣaṇa) — characterizes (Ontological)
+- ED_BE_00034: N_BE_00029 → N_BE_00022 (Arthakriyā) — supports (Ontological)
+- ED_BE_00035: N_BE_00029 → N_BE_00013 (Svalakṣaṇa) — characterizes (Ontological)
 
 - **Buddhist Epistemology:** All real entities (svalakṣaṇa) exist for only one moment. Apparent persistence is a conceptual overlay (kalpanā) applied to a causal series of distinct momentary particulars. No entity endures through time; what appears to persist is a sequence, not a substance.
 - **Quantum Measurement:** BIAN-8 — Quantum Temporal Discontinuity. QM does not have a doctrine of momentary existence. Time in QM is a continuous parameter in the Schrödinger equation. However, the measurement event introduces a discontinuity: the pre-measurement state and the post-measurement state are categorically different. Between measurements, evolution is continuous; at measurement, it is discontinuous. QM has the formal structure corresponding to kṣaṇikavāda but has not theorized it epistemologically. Decoherence theory describes the process mechanism; it does not address the epistemological question of what kind of entity exists between measurements.
@@ -502,7 +504,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T3.07 — Sāmānya (Generic property / Repeatable attribute)
 
-**Node:** N_BE_14 — Sāmānyalakṣaṇa (Skt.). Same node as T3.02; different aspect.
+**Node:** N_BE_00014 — Sāmānyalakṣaṇa (Skt.). Same node as T3.02; different aspect.
 
 - **Buddhist Epistemology:** Repeatable, shareable attributes that multiple svalakṣaṇa can instantiate. Real as cognitive objects and instrumentally necessary for inference and communication. Not real as external universals in the Nyāya sense; real only as epistemically functional constructs.
 - **Quantum Measurement:** Quantum number / conserved quantity. Repeatable properties that multiple particles can instantiate: spin, charge, isospin, lepton number. Treated as physically real properties in QM, not merely as cognitive constructs.
@@ -512,12 +514,12 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T3.08 — Tādātmya and Tadutpatti as object-relations (Identity and causation between objects)
 
-**Node:** N_BE_21 — Svabhāvapratibandha (Skt.). Category: Logic.
+**Node:** N_BE_00021 — Svabhāvapratibandha (Skt.). Category: Logic.
 **Definition:** Dharmakīrti's innovation providing universal foundation for inference. Two types: tadutpatti (causality — relation between effect and cause) and tādātmya (identity — relation between two essentially common individuals, e.g., vṛkṣa/tree and siṃśapā/oak). Replaces Dignāga's purely inductive vyāpti with a deductive, ontology-grounded relation.
 
 **Outbound edges:**
-- ED_BE_11: N_BE_19 (Vyāpti) → N_BE_21 — grounded in (Logical)
-- ED_BE_12: N_BE_21 → N_BE_22 (Arthakriyā) — has as basis (Ontological)
+- ED_BE_00011: N_BE_00019 (Vyāpti) → N_BE_00021 — grounded in (Logical)
+- ED_BE_00012: N_BE_00021 → N_BE_00022 (Arthakriyā) — has as basis (Ontological)
 
 - **Buddhist Epistemology:** The two valid inter-object relations that can ground inference. The following account is a structural simplification; classical examples and formulations vary across Buddhist logic discussions. Tādātmya indicates an identity or co-nature relation; tadutpatti indicates causal production. Both function as relations that can ground valid anumāna rather than as merely conceptual associations.
 - **Quantum Measurement:** Entanglement correlations. Quantum entanglement produces invariant correlations between measurement outcomes on spatially separated systems. These correlations are not causal in the local sense (no signaling possible; Bell inequality violated) and not relations of shared intrinsic nature (svabhāva is denied). Entanglement is a third type of inter-object relation with no classical analogue.
@@ -530,11 +532,11 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T4.01 — Bhrānti (Erroneous cognition / Illusion)
 
-**Node:** N_BE_06 — Bhrānti (Skt.). Category: Epistemic error.
+**Node:** N_BE_00006 — Bhrānti (Skt.). Category: Epistemic error.
 **Definition:** A mistaken apprehension of reality; an inversion of the true nature of an object. In the conventional world, mistaking a mirage for water is mithyā-saṃvṛti (erroneous conventional truth).
 
 **Inbound edges:**
-- ED_BE_27: N_BE_23 (Avidyā) → N_BE_06 — causes (Causal)
+- ED_BE_00027: N_BE_00023 (Avidyā) → N_BE_00006 — causes (Causal)
 
 - **Buddhist Epistemology:** Cognition that presents its object in a manner that does not correspond to the object's causal structure. The classic examples: perceiving a rope as a snake; perceiving a distant moving object as stationary. Bhrānti is a real cognition (it occurs, it has ākāra, it produces action) but epistemically invalid (it is not avisaṃvādin). Bhrānti is to be formally distinguished from saṃśaya (doubt), anadhyavasāya (non-determination), and vikalpa (conceptual fiction).
 - **Quantum Measurement:** Measurement error / systematic bias. A measurement that returns an incorrect value due to apparatus malfunction, calibration error, selection bias, or systematic confound. A real physical process; an epistemically invalid result. The event occurs and produces a registered number; the number does not correctly represent the target observable.
@@ -544,14 +546,14 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T4.02 — Saṃśaya (Doubt / Indeterminate cognition)
 
-**Node:** N_BE_07 — Saṃśaya (Skt.). Category: Epistemic error.
+**Node:** N_BE_00007 — Saṃśaya (Skt.). Category: Epistemic error.
 **Definition:** [uncertain] A state of indecision in which neither alternative is definitively established. The pursuit of certainty (nirṇaya) requires some initial doubt (saṃśaya) or desire to know (jijñāsā) as its motivation.
 
 **Inbound edges:**
-- ED_BE_28: N_BE_23 (Avidyā) → N_BE_07 — gives rise to (Causal) [Note: uncertain]
+- ED_BE_00028: N_BE_00023 (Avidyā) → N_BE_00007 — gives rise to (Causal) [Note: uncertain]
 
 **Outbound edges:**
-- ED_BE_37: N_BE_07 → N_BE_27 (Svārthānumāna) — motivates (Psychological) [Note: uncertain]
+- ED_BE_00037: N_BE_00007 → N_BE_00027 (Svārthānumāna) — motivates (Psychological) [Note: uncertain]
 
 - **Buddhist Epistemology:** Cognition that oscillates between two or more incompatible determinations without resolving. Active uncertainty: the cognitive agent holds x and non-x as simultaneously possible without committing to either. Not a valid pramāṇa. Requires resolution via pratyakṣa or anumāna.
 - **Quantum Measurement:** Pre-measurement epistemic state. An observer who knows the wave function but not the outcome is in a state of genuine indeterminacy about which eigenvalue will result. This is partially modeled as physical superposition, but the epistemic state of the observer holding this description is not formally theorized.
@@ -602,7 +604,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T4.07 — Vikalpa (Conceptual fiction / Purely conceptual construct with no corresponding particular)
 
-**Node:** N_BE_08 — Vikalpa / Kalpanā (Skt.). Same node as T2.06; different aspect.
+**Node:** N_BE_00008 — Vikalpa / Kalpanā (Skt.). Same node as T2.06; different aspect.
 
 - **Buddhist Epistemology:** A concept that has no corresponding svalakṣaṇa as causal ground. It refers only within the conceptual domain (sāmānyalakṣaṇa) without grounding in a real particular. Examples: a rabbit's horn; a permanent self; a universal substance. Epistemically empty in terms of arthakriyāśakti.
 - **Quantum Measurement:** Unmeasurable theoretical construct. A formal quantity that appears in the mathematical framework but produces no observable prediction. Examples: the absolute phase of a wave function (only relative phases are observable); the identity of specific many-worlds branches before decoherence; the specific value of a hidden variable in a non-contextual hidden variable theory.
@@ -614,16 +616,16 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.01 — Liṅga (Logical mark / Inferential sign)
 
-**Node:** N_BE_16 — Liṅga / Hetu (Skt.). Category: Logic.
+**Node:** N_BE_00016 — Liṅga / Hetu (Skt.). Category: Logic.
 **Definition:** The inferential mark or logical reason used to derive a conclusion (e.g., smoke → fire). A property (dharma) located in the property-possessor (dharmin, pakṣa) that serves as evidence for inferring the probandum (sādhyadharma, liṅgin).
 
 **Inbound edges:**
-- ED_BE_07: N_BE_03 (Anumāna) → N_BE_16 — operates through (Logical)
+- ED_BE_00007: N_BE_00003 (Anumāna) → N_BE_00016 — operates through (Logical)
 
 **Outbound edges:**
-- ED_BE_09: N_BE_16 → N_BE_17 (Pakṣa) — qualifies (Logical)
-- ED_BE_10: N_BE_16 → N_BE_19 (Vyāpti) — requires (Logical)
-- ED_BE_39: N_BE_16 → N_BE_20 (Avinābhāva) — requires (Logical)
+- ED_BE_00009: N_BE_00016 → N_BE_00017 (Pakṣa) — qualifies (Logical)
+- ED_BE_00010: N_BE_00016 → N_BE_00019 (Vyāpti) — requires (Logical)
+- ED_BE_00039: N_BE_00016 → N_BE_00020 (Avinābhāva) — requires (Logical)
 
 - **Buddhist Epistemology:** The evidence term in an inference. That from which the sādhya (probandum) is inferred. Must satisfy three conditions (trairūpya: see T5.06) to ground valid anumāna. Liṅga is the epistemically accessible fact from which the inaccessible fact is derived.
 - **Quantum Measurement:** Measurement pointer state. The macroscopic, classically readable state of a measurement apparatus after interaction with the quantum system. The accessible evidence from which the quantum state is inferred: the meter reading, the detector click, the track in a bubble chamber.
@@ -633,7 +635,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.02 — Sādhya (Probandum / What is to be proved / Inferred object)
 
-**Node:** No separate node in published documents. Implicit in the liṅga-sādhya relation (N_BE_16 definition).
+**Node:** No separate node in published documents. Implicit in the liṅga-sādhya relation (N_BE_00016 definition).
 
 - **Buddhist Epistemology:** The fact to be established by inference. Typically beyond direct perceptual reach. Liṅga is the accessible evidence; sādhya is the inferred conclusion.
 - **Quantum Measurement:** Pre-measurement quantum state / wave function. What is inferred from the pattern of measurement outcomes. Not directly observable; reconstructed from statistical distributions of eigenvalues. The target of quantum state tomography.
@@ -643,11 +645,11 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.03 — Pakṣa (Logical subject / The case under consideration)
 
-**Node:** N_BE_17 — Pakṣa (Skt.). Category: Logic.
+**Node:** N_BE_00017 — Pakṣa (Skt.). Category: Logic.
 **Definition:** The proposition to be established in a Buddhist syllogism; also the argument's subject (dharmin), the locus where both the logical reason (hetu) and the property to be established (sādhya) co-occur.
 
 **Inbound edges:**
-- ED_BE_09: N_BE_16 (Liṅga) → N_BE_17 — qualifies (Logical)
+- ED_BE_00009: N_BE_00016 (Liṅga) → N_BE_00017 — qualifies (Logical)
 
 - **Buddhist Epistemology:** The subject of the inference. The entity about which the inferential claim is made. The hill, in the classic inference: the hill has fire because it has smoke.
 - **Quantum Measurement:** Quantum system under measurement. The specific physical system about which the measurement statement is made: this electron, this photon, this ensemble of atoms.
@@ -657,7 +659,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.04 — Sapakṣa (Positive confirming case / Similar instance)
 
-**Node:** Sub-component of N_BE_18 (Trairūpya) — the second condition.
+**Node:** Sub-component of N_BE_00018 (Trairūpya) — the second condition.
 
 - **Buddhist Epistemology:** Cases known to have both liṅga and sādhya. Establishes the positive correlation required by vyāpti. The kitchen is sapakṣa for the smoke-fire inference: both smoke and fire are present.
 - **Quantum Measurement:** Confirming experimental runs. Measurement trials in which the predicted correlation between preparation and outcome is observed. Establishes the empirical pattern that grounds the Born rule application in a given context.
@@ -667,7 +669,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.05 — Vipakṣa (Negative excluding case / Dissimilar instance)
 
-**Node:** Sub-component of N_BE_18 (Trairūpya) — the third condition.
+**Node:** Sub-component of N_BE_00018 (Trairūpya) — the third condition.
 
 - **Buddhist Epistemology:** Cases known to lack the sādhya. Establishes that liṅga is absent wherever sādhya is absent. The lake is vipakṣa for the smoke-fire inference: no fire, and indeed no smoke.
 - **Quantum Measurement:** Disconfirming experimental runs / null results. Measurement trials in which the predicted outcome does not occur. Establishes the boundary conditions and failure modes of a quantum measurement protocol.
@@ -677,11 +679,11 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.06 — Trairūpya (Three conditions of a valid inferential mark)
 
-**Node:** N_BE_18 — Trairūpya (Skt.). Category: Logic.
+**Node:** N_BE_00018 — Trairūpya (Skt.). Category: Logic.
 **Definition:** The three conditions for a valid reason (trirūpa-hetu): (i) pakṣadharmatva — the reason must be a property of the subject; (ii) anvaya / sapakṣe sattvam — presence in similar cases (positive concomitance); (iii) vyatireka / vipakṣe 'sattvam — absence in dissimilar cases (negative concomitance).
 
 **Inbound edges:**
-- ED_BE_08: N_BE_03 (Anumāna) → N_BE_18 — validated by (Logical)
+- ED_BE_00008: N_BE_00003 (Anumāna) → N_BE_00018 — validated by (Logical)
 
 - **Buddhist Epistemology:** The three necessary and sufficient conditions for a liṅga to ground valid anumāna. (1) Pakṣa-dharmatā: the liṅga is present in the pakṣa. (2) Sapakṣa-sattvam: the liṅga co-occurs with sādhya in at least some similar cases. (3) Vipakṣa-asattvam: the liṅga is entirely absent from all cases in which sādhya is absent. All three must hold; any failure generates a hetvābhāsa (see T5.10 through T5.13).
 - **Quantum Measurement:** BIAN-14 — Tripartite Measurement Validity Conditions. QM has no formally unified three-condition structure for when measurement data constitutes valid inferential evidence for a theoretical claim. Statistical significance thresholds (p-value, sigma levels) serve a partial function. Bell inequality violations provide a boundary condition. But these are not integrated into a unified formal structure equivalent to trairūpya. Experimental physics has informal methodological norms; it does not have a formal epistemological theory of when a measurement constitutes valid evidence.
@@ -691,15 +693,15 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.07 — Vyāpti (Invariant pervasion / Necessary concomitance)
 
-**Node:** N_BE_19 — Vyāpti (Skt.). Category: Logic.
+**Node:** N_BE_00019 — Vyāpti (Skt.). Category: Logic.
 **Definition:** The logical relation of pervasion between probans (hetu) and probandum (sādhya) that guarantees successful inference. Dignāga introduced this concept but did not explain how the relation could be universalized — a gap later addressed by Dharmakīrti's svabhāvapratibandha.
 
 **Inbound edges:**
-- ED_BE_10: N_BE_16 (Liṅga) → N_BE_19 — requires (Logical)
-- ED_BE_26: N_BE_20 (Avinābhāva) → N_BE_19 — is precursor of (Logical)
+- ED_BE_00010: N_BE_00016 (Liṅga) → N_BE_00019 — requires (Logical)
+- ED_BE_00026: N_BE_00020 (Avinābhāva) → N_BE_00019 — is precursor of (Logical)
 
 **Outbound edges:**
-- ED_BE_11: N_BE_19 → N_BE_21 (Svabhāvapratibandha) — grounded in (Logical)
+- ED_BE_00011: N_BE_00019 → N_BE_00021 (Svabhāvapratibandha) — grounded in (Logical)
 
 - **Buddhist Epistemology:** The invariant relation between liṅga and sādhya that grounds all anumāna. Wherever liṅga, there sādhya; wherever not-sādhya, there not-liṅga. Not merely a statistical correlation but a nomologically necessary relation within the domain. Establishing vyāpti is the central epistemological problem of inference theory. It cannot be established by any finite enumeration of cases (a point Dharmakīrti addresses through tarka and the analysis of tādātmya / tadutpatti).
 - **Quantum Measurement:** Born rule. The invariant mapping from probability amplitude to probability: P(outcome) = |⟨eigenstate|ψ⟩|². Nomologically necessary within QM. Empirically confirmed to extraordinary precision across all domains of physics. Not derived from deeper first principles within the theory. Its justification within QM is empirical (it works) rather than foundational — which is precisely the same epistemic status as vyāpti.
@@ -769,8 +771,8 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.14 — Tādātmya as inference ground (Identity-of-nature relation)
 
-**Node:** N_BE_21 — Svabhāvapratibandha (See T3.08). Category: Logic.
-**Related edges:** ED_BE_11, ED_BE_12 (see T3.08)
+**Node:** N_BE_00021 — Svabhāvapratibandha (See T3.08). Category: Logic.
+**Related edges:** ED_BE_00011, ED_BE_00012 (see T3.08)
 
 - **Buddhist Epistemology:** The first of the two valid grounds for anumāna. A relation of essential co-nature between liṅga and sādhya: the two share an essential production relation or identity of nature such that the presence of one invariably accompanies the presence of the other. Example: the inference from smoke to fire is grounded in their shared nature of production from a common source.
 - **Quantum Measurement:** Correlated quantum properties from common preparation. When two observable properties of a quantum system co-occur because they are both determined by the same preparation procedure or conservation law, their correlation is grounded in a shared production relation. Example: conservation of angular momentum in pair production correlates spin outcomes across detectors.
@@ -780,8 +782,8 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.15 — Tadutpatti as inference ground (Causal production relation)
 
-**Node:** N_BE_21 — Svabhāvapratibandha (See T3.08). Category: Logic.
-**Related edges:** ED_BE_11, ED_BE_12 (see T3.08)
+**Node:** N_BE_00021 — Svabhāvapratibandha (See T3.08). Category: Logic.
+**Related edges:** ED_BE_00011, ED_BE_00012 (see T3.08)
 
 - **Buddhist Epistemology:** The second of the two valid grounds for anumāna. A relation of causal production between liṅga and sādhya: the presence of liṅga is caused by the presence of sādhya. Example: smoke is caused by fire; the presence of smoke is thus a reliable indicator of fire.
 - **Quantum Measurement:** Schrödinger evolution. The deterministic, unitary time-evolution of the quantum state between measurements, governed by the Hamiltonian. Causal, continuous, fully determined. Given the state at t₁, the state at t₂ is determined by the Schrödinger equation.
@@ -793,8 +795,8 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T6.01 — Pramāṇa-phala identity (Cognition is its own result)
 
-**Node:** N_BE_01 (Pramāṇa) — specifically the phala component (pramāṇaphala).
-**Related edge:** ED_BE_04: N_BE_01 → pramāṇaphala — produces (Structural)
+**Node:** N_BE_00001 (Pramāṇa) — specifically the phala component (pramāṇaphala).
+**Related edge:** ED_BE_00004: N_BE_00001 → pramāṇaphala — produces (Structural)
 
 - **Buddhist Epistemology:** Dharmakīrti's position: the result (phala) of a cognitive act is not a product separate from the act. Knowing is the knowing-of-the-result. No additional act is required to register that a cognition has occurred and produced a result. The act is self-completing: pramāṇa and phala are identified. This eliminates a potential regress: if phala were a separate product, one would need a further cognition to register the phala, and so on without end.
 - **Quantum Measurement:** BIAN-16 — Measurement Self-Completion. QM does not formally specify whether a measurement is self-completing or requires a subsequent act (physical registration, recording, observer update, or environmental stabilization) to be complete. This is a meta-epistemological root of the measurement problem in the present mapping. Buddhist Epistemology resolves the analogous regress through pramāṇa-phala identity: the act certifies itself. Many interpretations can be read, from this mapping's perspective, as supplying an external or alternative stopping condition, rather than the internal self-certification provided by pramāṇa-phala identity and svasaṃvedana.
@@ -804,8 +806,8 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T6.02 — Svasaṃvedana as meta-epistemological principle (Self-certification without regress)
 
-**Node:** N_BE_11 — Svasaṃvedana (Skt.).
-**Related edges:** ED_BE_19, ED_BE_20 (see T1.06, T2.05)
+**Node:** N_BE_00011 — Svasaṃvedana (Skt.).
+**Related edges:** ED_BE_00019, ED_BE_00020 (see T1.06, T2.05)
 
 - **Buddhist Epistemology:** Valid cognition does not require a second-order cognition to certify it as having occurred. This stops the regress: you do not need to know-that-you-know in order to know. The first-order act certifies itself through svasaṃvedana. This is the foundational principle of the entire Pramāṇavāda system. It is not a claim about consciousness in the phenomenal sense; it is a formal claim about the structure of valid epistemic acts.
 - **Quantum Measurement:** BIAN-17 — Regress-Stopping Principle. QM has no principle that stops the measurement regress. The von Neumann chain: system interacts with apparatus; apparatus state is entangled with system; a second apparatus is needed to register the first; a third is needed to register the second; the chain is formally infinite. Wigner's friend extends this to the level of observers. Every proposed resolution introduces an external stopping condition (consciousness, many-worlds branching, environmental decoherence treated as a collapse substitute) rather than a formal self-certifying principle within the theory. Svasaṃvedana stops this regress without external conditions. QM requires them.
@@ -825,7 +827,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T6.04 — Anātmavāda as epistemological commitment (No-self as structural principle)
 
-**Node:** No separate node in published documents. Implicit in momentariness (N_BE_29) and process ontology.
+**Node:** No separate node in published documents. Implicit in momentariness (N_BE_00029) and process ontology.
 
 - **Buddhist Epistemology:** The denial of a permanent, unified self-entity (ātman) underlying cognition is not merely a metaphysical claim in Pramāṇavāda; it is a structural epistemological commitment. The pramātṛ is not a substance but a causal series of cognitive events (santāna). The knower is a process, not a fixed point. This directly shapes the epistemology: there is no persistent subject of cognition to whom all results are presented; there are only momentary cognitive events in causal series.
 - **Quantum Measurement:** BIAN-19 — Observer as Process, not Substance. QM's observer is formally undefined. Many operational presentations treat the observer or apparatus as an unanalyzed classical reference point that receives or records measurement results. This contrasts with anātmavāda's process account of the knower as a causal series of cognitive events. QBism (Fuchs-Schack) comes closest by identifying the observer with a Bayesian agent who updates beliefs, but even QBism usually treats the agent as a unified decision-maker rather than as a momentary causal series.
@@ -835,11 +837,11 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T6.05 — Apoha theory as meta-semantic principle (Meaning through exclusion, not essence)
 
-**Node:** N_BE_15 — Apoha / Anyāpoha (Skt.). Category: Philosophy of language.
+**Node:** N_BE_00015 — Apoha / Anyāpoha (Skt.). Category: Philosophy of language.
 **Definition:** Meaning is conveyed by excluding what something is not (e.g., not-non-cow → cow). Dignāga's theory: "a word expresses its own object through the exclusion of the other [things], just as an inferential mark establishes the object to be proved through exclusion." Verbal cognition is not an independent pramāṇa but a variety of inference.
 
 **Outbound edges:**
-- ED_BE_16: N_BE_15 → N_BE_03 (Anumāna) — is linguistic variant of (Logical)
+- ED_BE_00016: N_BE_00015 → N_BE_00003 (Anumāna) — is linguistic variant of (Logical)
 
 - **Buddhist Epistemology:** All conceptual meaning is constituted through exclusion (apoha): a term refers by excluding what it does not denote, not by picking out a positive essence. This applies at the meta-level: the term pramāṇa itself refers through exclusion of non-pramāṇa events. Positive essence is not a legitimate semantic category in the Pramāṇavāda framework.
 - **Quantum Measurement:** Complementarity and mutual exclusion of observables. Bohr's complementarity: conjugate observables (position-momentum, energy-time) are mutually exclusive; the definition of one excludes the simultaneous definite determination of the other. Physical meaning in QM is partly constituted by exclusion relations between incompatible observables. An observable is defined partly by what it is not simultaneously compatible with.
@@ -849,7 +851,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T6.06 — Pramāṇa as action-guiding (Epistemology grounded in praxis)
 
-**Node:** N_BE_22 — Arthakriyā (Skt.) — epistemological aspect. Category: Ontology–cognition.
+**Node:** N_BE_00022 — Arthakriyā (Skt.) — epistemological aspect. Category: Ontology–cognition.
 **Definition (epistemological aspect):** To fulfill a practical purpose — valid cognitions provide the cognitive basis for successful human activities (puruṣārthasiddhi).
 
 - **Buddhist Epistemology:** Valid cognition is ultimately defined and validated by its capacity to guide successful action (arthakriyā): the capacity to produce the expected result when acted upon. A cognition that fails to guide action successfully is retroactively invalidated by bādhaka pramāṇa. Epistemology is not merely theoretical; it is grounded in pragmatic efficacy. This is not a concession to pragmatism from outside the system; it is the criterion built into the definition of pramāṇa.
@@ -866,45 +868,45 @@ All 39 edges assigned to their primary interpretive lens.
 
 | Edge code | Source → Target | Relationship | Type | Lens |
 | --- | --- | --- | --- | --- |
-| ED_BE_34 | N_BE_29 → N_BE_22 | supports | Ontological | 1 |
-| ED_BE_35 | N_BE_29 → N_BE_13 | characterizes | Ontological | 1 |
-| ED_BE_11 | N_BE_19 → N_BE_21 | grounded in | Logical | 1 |
-| ED_BE_12 | N_BE_21 → N_BE_22 | has as basis | Ontological | 1 |
-| ED_BE_26 | N_BE_20 → N_BE_19 | is precursor of | Logical | 1 |
-| ED_BE_10 | N_BE_16 → N_BE_19 | requires | Logical | 1 |
-| ED_BE_09 | N_BE_16 → N_BE_17 | qualifies | Logical | 1 |
-| ED_BE_39 | N_BE_16 → N_BE_20 | requires | Logical | 1 |
-| ED_BE_01 | N_BE_01 → N_BE_02 | includes | Hierarchical | 1, 3 |
-| ED_BE_02 | N_BE_01 → N_BE_03 | includes | Hierarchical | 1, 4 |
-| ED_BE_03 | N_BE_01 → N_BE_05 | has as object | Structural | 1 |
-| ED_BE_04 | N_BE_01 → pramāṇaphala | produces | Structural | 1 |
-| ED_BE_32 | N_BE_13 → N_BE_22 | possesses | Ontological | 2 |
-| ED_BE_33 | N_BE_14 → N_BE_22 | lacks | Ontological | 2 |
-| ED_BE_05 | N_BE_02 → N_BE_13 | apprehends | Epistemic | 2, 3 |
-| ED_BE_14 | N_BE_09 → N_BE_13 | apprehends | Epistemic | 2 |
-| ED_BE_06 | N_BE_03 → N_BE_14 | apprehends | Epistemic | 2, 4 |
-| ED_BE_13 | N_BE_08 → N_BE_14 | operates on | Epistemic | 2 |
-| ED_BE_15 | N_BE_09 → N_BE_08 | contrasted with | Oppositional | 2 |
-| ED_BE_16 | N_BE_15 → N_BE_03 | is linguistic variant of | Logical | 2 |
-| ED_BE_31 | N_BE_25 → N_BE_26 | is ultimate aspect of | Ontological | 2, 4 |
-| ED_BE_22 | N_BE_12 → N_BE_25 | realizes | Epistemic | 2, 4 |
-| ED_BE_30 | N_BE_24 → N_BE_25 | realizes | Epistemic | 2, 4 |
-| ED_BE_38 | N_BE_02 → N_BE_08 | is free from | Exclusionary | 2, 3 |
-| ED_BE_19 | N_BE_11 → N_BE_02 | is subtype of | Hierarchical | 3 |
-| ED_BE_20 | N_BE_10 → N_BE_11 | entails | Structural | 3 |
-| ED_BE_18 | N_BE_10 → N_BE_02 | is subtype of | Hierarchical | 3 |
-| ED_BE_27 | N_BE_23 → N_BE_06 | causes | Causal | 3 |
-| ED_BE_28 | N_BE_23 → N_BE_07 | gives rise to | Causal | 3 |
-| ED_BE_37 | N_BE_07 → N_BE_27 | motivates | Psychological | 3 |
-| ED_BE_07 | N_BE_03 → N_BE_16 | operates through | Logical | 4 |
-| ED_BE_08 | N_BE_03 → N_BE_18 | validated by | Logical | 4 |
-| ED_BE_23 | N_BE_27 → N_BE_03 | is subtype of | Hierarchical | 4 |
-| ED_BE_24 | N_BE_28 → N_BE_03 | is subtype of | Hierarchical | 4 |
-| ED_BE_25 | N_BE_27 → N_BE_28 | grounds | Logical | 4 |
-| ED_BE_29 | N_BE_24 → N_BE_23 | dispels | Soteriological | 4 |
-| ED_BE_21 | N_BE_12 → N_BE_02 | is subtype of | Hierarchical | 4 |
-| ED_BE_36 | N_BE_30 → N_BE_01 | is epithet of | Foundational | 4 |
-| ED_BE_17 | N_BE_04 → N_BE_03 | reduced to | Hierarchical | 4 |
+| ED_BE_00034 | N_BE_00029 → N_BE_00022 | supports | Ontological | 1 |
+| ED_BE_00035 | N_BE_00029 → N_BE_00013 | characterizes | Ontological | 1 |
+| ED_BE_00011 | N_BE_00019 → N_BE_00021 | grounded in | Logical | 1 |
+| ED_BE_00012 | N_BE_00021 → N_BE_00022 | has as basis | Ontological | 1 |
+| ED_BE_00026 | N_BE_00020 → N_BE_00019 | is precursor of | Logical | 1 |
+| ED_BE_00010 | N_BE_00016 → N_BE_00019 | requires | Logical | 1 |
+| ED_BE_00009 | N_BE_00016 → N_BE_00017 | qualifies | Logical | 1 |
+| ED_BE_00039 | N_BE_00016 → N_BE_00020 | requires | Logical | 1 |
+| ED_BE_00001 | N_BE_00001 → N_BE_00002 | includes | Hierarchical | 1, 3 |
+| ED_BE_00002 | N_BE_00001 → N_BE_00003 | includes | Hierarchical | 1, 4 |
+| ED_BE_00003 | N_BE_00001 → N_BE_00005 | has as object | Structural | 1 |
+| ED_BE_00004 | N_BE_00001 → pramāṇaphala | produces | Structural | 1 |
+| ED_BE_00032 | N_BE_00013 → N_BE_00022 | possesses | Ontological | 2 |
+| ED_BE_00033 | N_BE_00014 → N_BE_00022 | lacks | Ontological | 2 |
+| ED_BE_00005 | N_BE_00002 → N_BE_00013 | apprehends | Epistemic | 2, 3 |
+| ED_BE_00014 | N_BE_00009 → N_BE_00013 | apprehends | Epistemic | 2 |
+| ED_BE_00006 | N_BE_00003 → N_BE_00014 | apprehends | Epistemic | 2, 4 |
+| ED_BE_00013 | N_BE_00008 → N_BE_00014 | operates on | Epistemic | 2 |
+| ED_BE_00015 | N_BE_00009 → N_BE_00008 | contrasted with | Oppositional | 2 |
+| ED_BE_00016 | N_BE_00015 → N_BE_00003 | is linguistic variant of | Logical | 2 |
+| ED_BE_00031 | N_BE_00025 → N_BE_00026 | is ultimate aspect of | Ontological | 2, 4 |
+| ED_BE_00022 | N_BE_00012 → N_BE_00025 | realizes | Epistemic | 2, 4 |
+| ED_BE_00030 | N_BE_00024 → N_BE_00025 | realizes | Epistemic | 2, 4 |
+| ED_BE_00038 | N_BE_00002 → N_BE_00008 | is free from | Exclusionary | 2, 3 |
+| ED_BE_00019 | N_BE_00011 → N_BE_00002 | is subtype of | Hierarchical | 3 |
+| ED_BE_00020 | N_BE_00010 → N_BE_00011 | entails | Structural | 3 |
+| ED_BE_00018 | N_BE_00010 → N_BE_00002 | is subtype of | Hierarchical | 3 |
+| ED_BE_00027 | N_BE_00023 → N_BE_00006 | causes | Causal | 3 |
+| ED_BE_00028 | N_BE_00023 → N_BE_00007 | gives rise to | Causal | 3 |
+| ED_BE_00037 | N_BE_00007 → N_BE_00027 | motivates | Psychological | 3 |
+| ED_BE_00007 | N_BE_00003 → N_BE_00016 | operates through | Logical | 4 |
+| ED_BE_00008 | N_BE_00003 → N_BE_00018 | validated by | Logical | 4 |
+| ED_BE_00023 | N_BE_00027 → N_BE_00003 | is subtype of | Hierarchical | 4 |
+| ED_BE_00024 | N_BE_00028 → N_BE_00003 | is subtype of | Hierarchical | 4 |
+| ED_BE_00025 | N_BE_00027 → N_BE_00028 | grounds | Logical | 4 |
+| ED_BE_00029 | N_BE_00024 → N_BE_00023 | dispels | Soteriological | 4 |
+| ED_BE_00021 | N_BE_00012 → N_BE_00002 | is subtype of | Hierarchical | 4 |
+| ED_BE_00036 | N_BE_00030 → N_BE_00001 | is epithet of | Foundational | 4 |
+| ED_BE_00017 | N_BE_00004 → N_BE_00003 | reduced to | Hierarchical | 4 |
 
 **Edge distribution:** Lens 1: 12 | Lens 2: 12 | Lens 3: 11 | Lens 4: 14
 
@@ -918,15 +920,15 @@ All 19 substantive BIAN gaps, plus BIAN-20 as a reserved cross-reference, are gr
 
 | BIAN | Concept | Node | Description |
 | --- | --- | --- | --- |
-| BIAN-8 | Ksanikavada (Temporal discontinuity) | N_BE_29 | QM has temporal discontinuity formally (collapse) but no epistemological doctrine of momentariness. |
-| BIAN-10 | Entanglement as third relation type | N_BE_21 | Non-causal, non-identity-based necessary correlation beyond tadatmya and tadutpatti. Reverse BIAN: QM has a concept BE lacks. |
-| BIAN-14 | Trairupya (Tripartite validity) | N_BE_18 | QM has no formally unified three-condition structure for valid evidential inference. |
+| BIAN-8 | Ksanikavada (Temporal discontinuity) | N_BE_00029 | QM has temporal discontinuity formally (collapse) but no epistemological doctrine of momentariness. |
+| BIAN-10 | Entanglement as third relation type | N_BE_00021 | Non-causal, non-identity-based necessary correlation beyond tadatmya and tadutpatti. Reverse BIAN: QM has a concept BE lacks. |
+| BIAN-14 | Trairupya (Tripartite validity) | N_BE_00018 | QM has no formally unified three-condition structure for valid evidential inference. |
 
 ### Lens 2 — Emptiness (2 gaps)
 
 | BIAN | Concept | Node | Description |
 | --- | --- | --- | --- |
-| BIAN-7 | Non-conceptual stratum of pratyaksa | N_BE_02 | Pratyaksa is non-conceptual by definition. Eigenvalue readout is already symbolic. QM operates post-nirvikalpaka. |
+| BIAN-7 | Non-conceptual stratum of pratyaksa | N_BE_00002 | Pratyaksa is non-conceptual by definition. Eigenvalue readout is already symbolic. QM operates post-nirvikalpaka. |
 | BIAN-9 | Abhava (Formal absence cognition) | -- (no node) | QM has no formal epistemic category for cognition of absence, despite Elitzur-Vaidman interaction-free measurement. |
 
 **Note:** Lens 2 has the fewest BIAN gaps. The denial of intrinsic properties has the strongest QM parallels (Bell, Kochen-Specker -- T3.05 negative parallel, strongest convergence in the mapping).
@@ -935,16 +937,16 @@ All 19 substantive BIAN gaps, plus BIAN-20 as a reserved cross-reference, are gr
 
 | BIAN | Concept | Node | Description |
 | --- | --- | --- | --- |
-| BIAN-1 | Manasapratyaksa (Post-detection state) | N_BE_10 | QM has no account of the representational transition between physical detection and symbolic readout. |
-| BIAN-2 | Svasamvedana (Observer self-reference) | N_BE_11 | Deepest asymmetry. QM has no self-certifying epistemic layer. The measurement problem is the consequence. |
-| BIAN-6 | Self-certifying measurement / Svasaṃvedana structural principle | N_BE_11 | Buddhist Epistemology treats valid cognition as self-certifying through svasaṃvedana. QM has no formal epistemic principle by which a measurement certifies its own completion without an external meta-level. |
+| BIAN-1 | Manasapratyaksa (Post-detection state) | N_BE_00010 | QM has no account of the representational transition between physical detection and symbolic readout. |
+| BIAN-2 | Svasamvedana (Observer self-reference) | N_BE_00011 | Deepest asymmetry. QM has no self-certifying epistemic layer. The measurement problem is the consequence. |
+| BIAN-6 | Self-certifying measurement / Svasaṃvedana structural principle | N_BE_00011 | Buddhist Epistemology treats valid cognition as self-certifying through svasaṃvedana. QM has no formal epistemic principle by which a measurement certifies its own completion without an external meta-level. |
 | BIAN-4 | Akara (Representational form) | -- (no node) | BE has explicit theory of representational form. QM specifies output values but not internal representation. |
 | BIAN-5 | Vyavasaya (Determinate judgment) | -- (no node) | QM merges physical registration with epistemic commitment. BE maintains the distinction formally. |
-| BIAN-11 | Observer epistemic indeterminacy | N_BE_07 | QM describes physical superposition but not the epistemic state of the agent prior to measurement. |
+| BIAN-11 | Observer epistemic indeterminacy | N_BE_00007 | QM describes physical superposition but not the epistemic state of the agent prior to measurement. |
 | BIAN-12 | Badhaka pramana (Formal invalidation) | -- (no node) | QM has no formal mechanism for epistemic override of prior measurement claims. |
 | BIAN-13 | Anadhyavasaya (Null observer event) | -- (no node) | QM has detection efficiency as a parameter but no epistemological category for non-engagement. |
-| BIAN-16 | Pramana-phala identity (Self-completion) | N_BE_01 | QM does not specify whether measurement is self-completing. BE resolves the regress via pramana-phala identity. |
-| BIAN-17 | Regress-stopping principle | N_BE_11 | QM has no principle that stops the von Neumann chain. Svasamvedana stops it without external conditions. |
+| BIAN-16 | Pramana-phala identity (Self-completion) | N_BE_00001 | QM does not specify whether measurement is self-completing. BE resolves the regress via pramana-phala identity. |
+| BIAN-17 | Regress-stopping principle | N_BE_00011 | QM has no principle that stops the von Neumann chain. Svasamvedana stops it without external conditions. |
 | BIAN-18 | Svatah/Paratah pramanya (Validity) | -- (no node) | QM does not formalize whether measurement validity is intrinsic or extrinsic. |
 | BIAN-19 | Anatmavada (Observer as process) | -- (no node) | QM assumes a substantive observer. BE explicitly denies one. Foundational inversion. |
 
@@ -952,7 +954,7 @@ All 19 substantive BIAN gaps, plus BIAN-20 as a reserved cross-reference, are gr
 
 | BIAN | Concept | Node | Description |
 | --- | --- | --- | --- |
-| BIAN-3 | Yogipratyaksa (Different faculty) | N_BE_12 | QM has no formal category for observation through a qualitatively different faculty. |
+| BIAN-3 | Yogipratyaksa (Different faculty) | N_BE_00012 | QM has no formal category for observation through a qualitatively different faculty. |
 | BIAN-15 | Kevalavyatirekin (Contrastive evidence) | -- (no node) | No formal QM category for evidence established entirely through null results. |
 
 ### Gap Distribution Summary
@@ -987,23 +989,23 @@ Ranked by structural significance, merged from tier-level and interpretive-lens 
 
 | BIAN | Concept | Tier item | Node reference | Lens |
 | --- | --- | --- | --- | --- |
-| BIAN-1 | Post-Detection Internal Representational State | T1.05 | N_BE_10 (Manasa pratyaksa) | 3 |
-| BIAN-2 | Observer Self-Reference / Reflexive Cognition of Measurement Act | T1.06 | N_BE_11 (Svasamvedana) | 3 |
-| BIAN-3 | Limit-Case Observation by Different Faculty | T1.07 | N_BE_12 (Yogipratyaksa) | 4 |
+| BIAN-1 | Post-Detection Internal Representational State | T1.05 | N_BE_00010 (Manasa pratyaksa) | 3 |
+| BIAN-2 | Observer Self-Reference / Reflexive Cognition of Measurement Act | T1.06 | N_BE_00011 (Svasamvedana) | 3 |
+| BIAN-3 | Limit-Case Observation by Different Faculty | T1.07 | N_BE_00012 (Yogipratyaksa) | 4 |
 | BIAN-4 | Measurement Representation / Internal Encoding Structure | T2.01 | (No separate node -- akara) | 3 |
 | BIAN-5 | Epistemic Commitment Act / Moment of Determination | T2.04 | (No separate node -- vyavasaya) | 3 |
-| BIAN-6 | Self-Certifying Measurement / No External Meta-Level Required | T2.05 | N_BE_11 (Svasamvedana structural) | 3 |
-| BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | T2.07 | N_BE_09 (Nirvikalpaka pratyaksa) | 2 |
-| BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | T3.04 | N_BE_29 (Ksanikavada) | 1 |
+| BIAN-6 | Self-Certifying Measurement / No External Meta-Level Required | T2.05 | N_BE_00011 (Svasamvedana structural) | 3 |
+| BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | T2.07 | N_BE_00009 (Nirvikalpaka pratyaksa) | 2 |
+| BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | T3.04 | N_BE_00029 (Ksanikavada) | 1 |
 | BIAN-9 | Formal Cognition of Absence as Distinct Epistemic Category | T3.06 | (No separate node -- abhava/anupalabdhi) | 2 |
-| BIAN-10 | Non-Classical Correlation Relation / Entanglement as Third Relation Type | T3.08 | N_BE_21 (Svabhavapratibandha -- partial) | 1 |
-| BIAN-11 | Observer Epistemic Indeterminacy State before Measurement | T4.02 | N_BE_07 (Samsaya analog) | 3 |
+| BIAN-10 | Non-Classical Correlation Relation / Entanglement as Third Relation Type | T3.08 | N_BE_00021 (Svabhavapratibandha -- partial) | 1 |
+| BIAN-11 | Observer Epistemic Indeterminacy State before Measurement | T4.02 | N_BE_00007 (Samsaya analog) | 3 |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | T4.04 | (No separate node -- badhaka pramana) | 3 |
 | BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | T4.05 | (No separate node -- anadhyavasaya) | 3 |
-| BIAN-14 | Tripartite Measurement Validity Conditions | T5.06 | N_BE_18 (Trairupya) | 1 |
+| BIAN-14 | Tripartite Measurement Validity Conditions | T5.06 | N_BE_00018 (Trairupya) | 1 |
 | BIAN-15 | Purely Contrastive Quantum Evidence Structure | T5.09 | (No separate node -- kevalavyatirekin) | 4 |
-| BIAN-16 | Measurement Self-Completion / No External Registration Required | T6.01 | N_BE_01 (Pramana-phala identity) | 3 |
-| BIAN-17 | Regress-Stopping Principle for Measurement Chain | T6.02 | N_BE_11 (Svasamvedana meta) | 3 |
+| BIAN-16 | Measurement Self-Completion / No External Registration Required | T6.01 | N_BE_00001 (Pramana-phala identity) | 3 |
+| BIAN-17 | Regress-Stopping Principle for Measurement Chain | T6.02 | N_BE_00011 (Svasamvedana meta) | 3 |
 | BIAN-18 | Intrinsic vs. Extrinsic Measurement Validity Location | T6.03 | (No separate node -- svatah/paratah pramanya) | 3 |
 | BIAN-19 | Observer as Causal Process not Substance | T6.04 | (No separate node -- anatmavada structural) | 3 |
 | BIAN-20 | [Reserved -- Entanglement correlation type -- see T3.08 / BIAN-10] | -- | -- | 1 |
@@ -1014,8 +1016,8 @@ Ranked by structural significance, merged from tier-level and interpretive-lens 
 
 ## Full Concept Count
 - Total Buddhist Epistemology concepts mapped: 52 (across 6 tiers)
-- Published node codes applied: 30 (N_BE_01 through N_BE_30)
-- Published edge codes applied: 39 (ED_BE_01 through ED_BE_39)
+- Published node codes applied: 30 (N_BE_00001 through N_BE_00030)
+- Published edge codes applied: 39 (ED_BE_00001 through ED_BE_00039)
 - Concepts with QM correspondence (full or partial): 32
 - BIAN concepts: 19 substantive gaps (+ BIAN-20 reserved cross-reference)
 
@@ -1023,21 +1025,21 @@ Ranked by structural significance, merged from tier-level and interpretive-lens 
 
 | Tier | Tier name | Nodes covered | Description |
 | --- | --- | --- | --- |
-| T1 | Sources of Valid Cognition | N_BE_01, N_BE_02, N_BE_03, N_BE_04, N_BE_10, N_BE_11, N_BE_12, N_BE_27, N_BE_28, N_BE_30 | Core pramana framework and its subdivisions |
-| T2 | Structure of Cognition | N_BE_05, N_BE_08, N_BE_09, N_BE_11 | Internal architecture of cognitive acts |
-| T3 | Theory of Objects | N_BE_13, N_BE_14, N_BE_21, N_BE_22, N_BE_29 | Ontology of epistemic objects |
-| T4 | Error Theory | N_BE_06, N_BE_07, N_BE_08, N_BE_23, N_BE_24 | Epistemology of false and indeterminate cognition |
-| T5 | Theory of Inference | N_BE_16, N_BE_17, N_BE_18, N_BE_19, N_BE_20 | Anumana logical architecture |
-| T6 | Meta-Epistemology | N_BE_01, N_BE_11, N_BE_15, N_BE_22, N_BE_25, N_BE_26 | Epistemology of the epistemological system itself |
+| T1 | Sources of Valid Cognition | N_BE_00001, N_BE_00002, N_BE_00003, N_BE_00004, N_BE_00010, N_BE_00011, N_BE_00012, N_BE_00027, N_BE_00028, N_BE_00030 | Core pramana framework and its subdivisions |
+| T2 | Structure of Cognition | N_BE_00005, N_BE_00008, N_BE_00009, N_BE_00011 | Internal architecture of cognitive acts |
+| T3 | Theory of Objects | N_BE_00013, N_BE_00014, N_BE_00021, N_BE_00022, N_BE_00029 | Ontology of epistemic objects |
+| T4 | Error Theory | N_BE_00006, N_BE_00007, N_BE_00008, N_BE_00023, N_BE_00024 | Epistemology of false and indeterminate cognition |
+| T5 | Theory of Inference | N_BE_00016, N_BE_00017, N_BE_00018, N_BE_00019, N_BE_00020 | Anumana logical architecture |
+| T6 | Meta-Epistemology | N_BE_00001, N_BE_00011, N_BE_00015, N_BE_00022, N_BE_00025, N_BE_00026 | Epistemology of the epistemological system itself |
 
 ## Node Coverage by Interpretive Lens
 
 | Lens | Pali / Sanskrit | Primary nodes | Relevant QM interpretive domain | BIAN gaps |
 | --- | --- | --- | --- | --- |
-| 1 | Pratītyasamutpāda / Paṭiccasamuppāda | N_BE_29, N_BE_21, N_BE_20, N_BE_01, N_BE_19, N_BE_16, N_BE_18, N_BE_17 | Relational interpretations, reference-context dependence, and non-classical correlation structures | BIAN-8, 10, 14 |
-| 2 | Śūnyatā / Suññatā | N_BE_25, N_BE_13, N_BE_14, N_BE_22, N_BE_05, N_BE_15, N_BE_08, N_BE_09 | Contextuality constraints, Bell-type limits on local hidden-variable accounts, Kochen-Specker constraints on non-contextual assignments | BIAN-7, 9 |
-| 3 | Vijñaptimātra (used narrowly) / Svasaṃvedana | N_BE_11, N_BE_10, N_BE_02, N_BE_06, N_BE_07, N_BE_23 | Epistemic interpretations of collapse, observer-side registration, representational transition, and self-certification gaps | BIAN-1, 2, 4, 5, 6, 11, 12, 13, 16, 17, 18, 19 |
-| 4 | Dvisatya | N_BE_26, N_BE_03, N_BE_27, N_BE_28, N_BE_24, N_BE_12, N_BE_30, N_BE_04 | Quantum/classical descriptive split used as an analogy for formal/contextual vs conventional/communicable registers | BIAN-3, 15 |
+| 1 | Pratītyasamutpāda / Paṭiccasamuppāda | N_BE_00029, N_BE_00021, N_BE_00020, N_BE_00001, N_BE_00019, N_BE_00016, N_BE_00018, N_BE_00017 | Relational interpretations, reference-context dependence, and non-classical correlation structures | BIAN-8, 10, 14 |
+| 2 | Śūnyatā / Suññatā | N_BE_00025, N_BE_00013, N_BE_00014, N_BE_00022, N_BE_00005, N_BE_00015, N_BE_00008, N_BE_00009 | Contextuality constraints, Bell-type limits on local hidden-variable accounts, Kochen-Specker constraints on non-contextual assignments | BIAN-7, 9 |
+| 3 | Vijñaptimātra (used narrowly) / Svasaṃvedana | N_BE_00011, N_BE_00010, N_BE_00002, N_BE_00006, N_BE_00007, N_BE_00023 | Epistemic interpretations of collapse, observer-side registration, representational transition, and self-certification gaps | BIAN-1, 2, 4, 5, 6, 11, 12, 13, 16, 17, 18, 19 |
+| 4 | Dvisatya | N_BE_00026, N_BE_00003, N_BE_00027, N_BE_00028, N_BE_00024, N_BE_00012, N_BE_00030, N_BE_00004 | Quantum/classical descriptive split used as an analogy for formal/contextual vs conventional/communicable registers | BIAN-3, 15 |
 
 **Final conclusion:** Within this mapping, the wavefunction is treated as an inferential structure of possible outcomes rather than as a directly perceived particular. Measurement is treated as the epistemic condition under which an outcome becomes available for registration, interpretation, and public inference. The quantum/classical boundary is used here as an analogy for a shift between formal/contextual description and conventional communicable description. These claims are epistemological and comparative; they do not assert an ontological identity between Buddhist doctrine and quantum mechanics.
 

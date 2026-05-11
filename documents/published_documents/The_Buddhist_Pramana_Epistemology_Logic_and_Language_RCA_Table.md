@@ -164,13 +164,13 @@
 | 151 | Viṃśatikā | Text | Vasubandhu tract criticizing realism and preparing Yogācāra perspective. | Source doc L57, L157 |
 | 152 | Triṃśikā | Text | Vasubandhu tract establishing Yogācāra phenomenalism or idealism and transformation of mind. | Source doc L57, L157 |
 | 153 | Nirvikalpaka | Epistemology | Non-conceptual mode of perception. | Source doc L159-L161 |
-| 154 | Avyapadeśya | Epistemology and language | Inexpressible character of pure particular sensation. | Source doc L159-L161 |
+| 154 | Avyapadeśya | Epistemology and language | Inexpressible character of pure particular sensation. | Source doc L159-L161; RCA: OCR-normalized |
 | 155 | Yojanā | Cognition | Superimposition by which mind applies conceptual structures to fleeting sensations. | Source doc L161 |
-| 156 | Yadṛcchā-śabda | Language | Proper name as one category of conceptual word imposed by mind. | Source doc L161 |
-| 157 | Jāti-śabda | Language | Genus-word or common noun as a conceptual word category. | Source doc L161 |
-| 158 | Guṇa-śabda | Language | Quality-word or adjective as a conceptual word category. | Source doc L161 |
-| 159 | Kriyā-śabda | Language | Action-word or verbal noun as a conceptual word category. | Source doc L161 |
-| 160 | Dravya-śabda | Language | Substance-word as a conceptual word category. | Source doc L161 |
+| 156 | Yadṛcchā-śabda | Language | Proper name as one category of conceptual word imposed by mind. | Source doc L161; RCA: OCR-normalized |
+| 157 | Jāti-śabda | Language | Genus-word or common noun as a conceptual word category. | Source doc L161; RCA: OCR-normalized |
+| 158 | Guṇa-śabda | Language | Quality-word or adjective as a conceptual word category. | Source doc L161; RCA: OCR-normalized |
+| 159 | Kriyā-śabda | Language | Action-word or verbal noun as a conceptual word category. | Source doc L161; RCA: OCR-normalized |
+| 160 | Dravya-śabda | Language | Substance-word as a conceptual word category. | Source doc L161; RCA: OCR-normalized |
 | 161 | Pratyakṣa kalpanā-apoham | Epistemology | Diṅnāga's concise definition: perception is devoid of mental construction. | Source doc L161; RCA: direct; OCR-normalized from `pratyaka kalpan-apoham` |
 | 162 | Pramāṇa-samplava | Epistemology | Non-Buddhist theory that the same object can be known by multiple pramāṇas. | Source doc L163 |
 | 163 | Dharmakīrti's anti-realism | Ontology | Rejection of substantialist Nyāya-style realism while retaining process-based analysis. | Source doc L165-L169 |
@@ -211,7 +211,7 @@
 | 198 | Partial property focus | Logic and language | In inference and communication, cognition targets selected properties rather than the whole object. | Source doc L249-L251 |
 | 199 | Pot example | Epistemology and language | Object properties such as blue or round are mentally constructed through exclusion from non-blue or non-round things. | Source doc L253-L255 |
 | 200 | Self-clinging | Soteriology | Attachment to self caused by belief in a permanent self within the aggregates. | Source doc L261-L263 |
-| 201 | Satkāyadṛṣṭi | Soteriology and error | Dogmatic belief that the aggregates are the locus of an absolute self. | Source doc L261-L263 |
+| 201 | Satkāyadṛṣṭi | Soteriology and error | Dogmatic belief that the aggregates are the locus of an absolute self. | Source doc L261-L263; RCA: OCR-normalized |
 | 202 | Skandha | Buddhist psychology | Psychological aggregates mistakenly taken as locus of a permanent self. | Source doc L261-L263 |
 | 203 | Dharmakīrti's conceptual circularity | Hermeneutics | Circular relation among valid cognition, Buddha's teaching, reliability, successful activity, human goals, and nirvāṇa. | Source doc L265-L271 |
 | 204 | Aviṣaṃvāditva | Epistemology | Reliability or non-deceptiveness of cognition. | Source doc L267-L271, L313-L315 |
@@ -224,7 +224,7 @@
 | 211 | Vyāpti in Dharmakīrti | Logic | Pervasion grounded in natural causal relation rather than mere repeated observation. | Source doc L295-L301 |
 | 212 | Vyāpaka | Logic | Pervader in an inferential relation, such as fire in relation to smoke. | Source doc L295 |
 | 213 | Vyāpya | Logic | Pervaded item in an inferential relation, such as smoke in relation to fire. | Source doc L295 |
-| 214 | Bhūyodarśana | Logic | Repeated observation, rejected by Dharmakīrti as insufficient for certainty. | Source doc L295 |
+| 214 | Bhūyodarśana | Logic | Repeated observation, rejected by Dharmakīrti as insufficient for certainty. | Source doc L295; RCA: OCR-normalized |
 | 215 | Anvaya-vyāpti | Logic | Entailment-like pervasion through association or presence. | Source doc L297-L301 |
 | 216 | Vyatireka-vyāpti | Logic | Restriction-like pervasion through absence or dissociation. | Source doc L297-L301 |
 | 217 | Dharmakīrti's momentariness principle | Ontology | Fundamental commitment to the Sautrāntika doctrine of momentariness. | Source doc L303-L305 |
@@ -232,14 +232,15 @@
 | 219 | Conceptual mental construction | Cognition | Vikalpa derived from actual reality and used in perceptual judgment and discourse. | Source doc L303-L305 |
 | 220 | Tadutpatti | Logic and causality | Causal production as one type of essential connection in Dharmakīrti's logic. | Source doc L303-L305 |
 | 221 | Tādātmya | Logic and identity | Identity relation between two essentially common individuals, used as a type of essential connection. | Source doc L303-L305 |
-| 222 | Anupalabdhi | Logic | Non-perception introduced to replace realist absence theory and incorrect proof of non-existence. | Source doc L303-L305 |
-| 223 | Kārya-hetu | Logic | Effect reason, one of Dharmakīrti's new categories of hetu. | Source doc L303-L305 |
-| 224 | Svabhāva-hetu | Logic | Essential-property reason, one of Dharmakīrti's new categories of hetu. | Source doc L303-L305 |
-| 225 | Anupalabdhi-hetu | Logic | Non-perception reason, one of Dharmakīrti's new categories of hetu. | Source doc L303-L305 |
-| 226 | Bhrānti | Cognition and error | Unconscious error involved in ordinary cognition and conceptual construction. | Source doc L307-L311 |
-| 227 | Adhyavasāya | Cognition | Determination of real particulars through unreal or fictional conceptual thought. | Source doc L307-L311 |
-| 228 | Prāpaka | Cognition and pragmatics | Reaching or directing cognition toward real particulars through fictional conceptual tools. | Source doc L307-L311 |
-| 229 | Dharmakīrti's definition of pramāṇa | Epistemology | Valid cognition is non-deceptive knowledge and connected with successful object-related activity. | Source doc L313-L315 |
-| 230 | Samyagjñāna | Epistemology | Right or valid cognition, prerequisite for accomplishing human purposes. | Source doc L313-L315 |
-| 231 | Article's self-limitation | Research method | Author acknowledges the difficulty of pramāṇa-epistemology, logic, language, and the three thinkers. | Source doc L317; RCA: meta |
-| 232 | Modern source dependence | Research method | Article depends heavily on modern scholars, especially Hattori, Katsura, and Hayes, due to Tibetan-source transmission and lost Sanskrit materials. | Source doc L11, L33, L123-L127; RCA: meta |
+| 222 | Anutpatti | Ontology and logic | Non-production, listed in the article keywords but not elaborated in the body. | Source doc L13; RCA: listed only; OCR-normalized |
+| 223 | Anupalabdhi | Logic | Non-perception introduced to replace realist absence theory and incorrect proof of non-existence. | Source doc L303-L305 |
+| 224 | Kārya-hetu | Logic | Effect reason, one of Dharmakīrti's new categories of hetu. | Source doc L303-L305 |
+| 225 | Svabhāva-hetu | Logic | Essential-property reason, one of Dharmakīrti's new categories of hetu. | Source doc L303-L305 |
+| 226 | Anupalabdhi-hetu | Logic | Non-perception reason, one of Dharmakīrti's new categories of hetu. | Source doc L303-L305 |
+| 227 | Bhrānti | Cognition and error | Unconscious error involved in ordinary cognition and conceptual construction. | Source doc L307-L311; RCA: OCR-normalized |
+| 228 | Adhyavasāya | Cognition | Determination of real particulars through unreal or fictional conceptual thought. | Source doc L307-L311; RCA: OCR-normalized |
+| 229 | Prāpaka | Cognition and pragmatics | Reaching or directing cognition toward real particulars through fictional conceptual tools. | Source doc L307-L311; RCA: OCR-normalized |
+| 230 | Dharmakīrti's definition of pramāṇa | Epistemology | Valid cognition is non-deceptive knowledge and connected with successful object-related activity. | Source doc L313-L315 |
+| 231 | Samyagjñāna | Epistemology | Right or valid cognition, prerequisite for accomplishing human purposes. | Source doc L313-L315; RCA: OCR-normalized |
+| 232 | Article's self-limitation | Research method | Author acknowledges the difficulty of pramāṇa-epistemology, logic, language, and the three thinkers. | Source doc L317; RCA: meta |
+| 233 | Modern source dependence | Research method | Article depends heavily on modern scholars, especially Hattori, Katsura, and Hayes, due to Tibetan-source transmission and lost Sanskrit materials. | Source doc L11, L33, L123-L127; RCA: meta |

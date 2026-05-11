@@ -1,8 +1,18 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # CLAUDE.md
+
+## RULE ZERO — Root Cause Analysis (RCA)
 
 ## Core Principles
 
 - Use English only across the entire project.
+- Before creating or editing project files outside `documents/published_documents/`, check whether the file already starts with author metadata; if it does not, add this author metadata at the top: Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+- Do not add author metadata or author names to files under `documents/published_documents/`.
+- Name each new Quantum Measurement concept node as BIAN-XX, where XX ranges from 01 to 99; here, BIAN derives from the Vietnamese word "bí ẩn", meaning "mystery" in English.
+- Use five-digit Buddhist Epistemology node codes consistently: N_BE_00001, N_BE_00002, ... N_BE_00030; do not use older shorter forms.
+- Use five-digit Buddhist Epistemology edge codes consistently: ED_BE_00001, ED_BE_00002, ... ED_BE_00039; do not use older shorter forms.
+- Communicate with the user in Vietnamese; keep technical terms in English inside quotation marks (for example, "cat") and explain concepts at a high-school level.
 - Method: Buddhist Epistemology as primary ontological frame; Quantum Measurement mapped onto it.
 - All information must remain within the scope of Buddhist Epistemology, except for Quantum Measurement cases listed in the Quantum Measurement published documents table below; report any violation immediately.
 - Think before acting.
@@ -14,7 +24,7 @@ This file provides guidance to Claude Code when working in this project.
 
 ## Project context
 
-This project maps relationships between Buddhist epistemology (Pramāṇavāda — Dignāga and Dharmakīrti) and quantum measurement. It uses a formal node/edge graph structure with 30 nodes (N_BE_01–N_BE_30) and 39 edges (ED_BE_01–ED_BE_39).
+This project maps relationships between Buddhist epistemology (Pramāṇavāda — Dignāga and Dharmakīrti) and quantum measurement. It uses a formal node/edge graph structure with 30 nodes (N_BE_00001–N_BE_00030) and 39 edges (ED_BE_00001–ED_BE_00039).
 
 ## Active mapping files
 

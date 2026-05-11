@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # Buddhist Epistemology to Quantum Measurement — 1:1 RCA Mapping
 
 ## Purpose
@@ -9,7 +11,7 @@ This pure Markdown document maps each Buddhist Epistemology RCA-table row to exa
 - Buddhist source table: `documents/published_documents/The_Buddhist_Pramana_Epistemology_Logic_and_Language_RCA_Table.md`
 - Quantum Measurement source table: `documents/published_documents/QM_Measurement_Unified_Concept_Table.md`
 - Framework guide: `documents/research_documents/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md`
-- Canonical BIAN source: `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` — BIAN Index at L805-L828; BIAN notes at L864-L865.
+- Canonical BIAN source: `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` — BIAN Index at L833-L856; BIAN notes at L890-L893.
 
 ## Framework lens key
 
@@ -26,13 +28,104 @@ This pure Markdown document maps each Buddhist Epistemology RCA-table row to exa
 - `Strong` means close formal or functional analogy.
 - `Medium` means clear structural analogy without formal equivalence.
 - `Weak` means nearest available 1:1 anchor with limited analogy, including rows with no direct Quantum Measurement analogue but no canonical BIAN assignment.
-- `BIAN-n` is reserved for canonical BIAN labels defined in `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` L805-L828.
+- `BIAN-n` is reserved for canonical BIAN labels defined in `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` L833-L856.
 - BIAN labels identify structural Buddhist Epistemology concepts absent from Quantum Measurement formalism; they are not generic table-completion markers.
 - Evidence columns cite the source-table line number and the source evidence already carried inside the source tables.
 
 ## Canonical BIAN reference
 
-Canonical BIAN labels are maintained in `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` L805-L828. Per that source, BIAN-1 through BIAN-19 are structural labels for concepts present in Buddhist Epistemology but absent from Quantum Measurement formalism, and BIAN-20 is reserved. This codex treats that file as the source of truth for BIAN labeling.
+Canonical BIAN labels are maintained in `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` L833-L856. Per that source, BIAN-1 through BIAN-19 are structural labels for concepts present in Buddhist Epistemology but absent from Quantum Measurement formalism, and BIAN-20 is reserved. This codex treats that file as the source of truth for BIAN labeling.
+
+## Buddhist system code crosswalk
+
+Buddhist node codes (`N_BE_XX`) and edge codes (`ED_BE_XX`) are maintained canonically in `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md`, especially the `# System Node Reference` and `# System Edge Reference` sections. This codex is an RCA-indexed retrieval table; it does not create new Buddhist nodes or edges.
+
+Node codes below identify direct or close codex-row anchors for canonical Buddhist system nodes. Edge codes below identify related canonical system relationships. Edge-code rows list source/target codex anchors only; they are not one-to-one RCA mappings and do not create new cross-domain edges. Sanskrit/Pali labels in this crosswalk are ASCII-normalized for ingestion stability; canonical spellings remain in the system mapping.
+
+### Node crosswalk
+
+| Node code | Canonical system concept | Codex BE No. anchor(s) | Codex concept label(s) | Notes |
+| --- | --- | --- | --- | --- |
+| N_BE_00001 | Pramana (Valid cognition) | 24; 97; 229 | Pramana; Pramana formula; Dharmakirti's definition of pramana | Direct Pramana anchors. |
+| N_BE_00002 | Pratyaksa (Direct perception) | 27; 101; 161 | Pratyaksa; Laukika perception; Pratyaksa kalpana-apoham | Perception cluster. |
+| N_BE_00003 | Anumana (Inference) | 28; 113; 129 | Anumana; Inference in Indian logic; Anumana-epistemology | Inference cluster. |
+| N_BE_00004 | Agama / Sabda (Testimony) | 30; 191 | Sabda; Sabda-pramana rejection | Sabda anchors for testimony. |
+| N_BE_00005 | Prameya (Object of cognition) | 23; 134; 135 | Prameya; Pramanadhina prameyadhigama; Prameyadhina pramanasiddhi | Object-of-cognition anchors. |
+| N_BE_00006 | Bhranti (Erroneous cognition) | 226 | Bhranti | Direct error anchor. |
+| N_BE_00007 | Samsaya (Doubt) | 107 | Samsaya | Direct doubt anchor. |
+| N_BE_00008 | Vikalpa / Kalpana (Conceptual construction) | 146; 219 | Kalpana; Conceptual mental construction | Conceptual-construction anchors. |
+| N_BE_00009 | Nirvikalpaka pratyaksa (Non-conceptual perception) | 137; 153; 161 | Kalpanapodha; Nirvikalpaka; Pratyaksa kalpana-apoham | Non-conceptual perception anchors. |
+| N_BE_00010 | Manasa pratyaksa (Mental perception) | 176 | Mano-vijnana | Nearest mental-consciousness anchor; not an exact replacement for manasa pratyaksa. |
+| N_BE_00011 | Svasamvedana (Self-awareness) | 90; 144 | Sva-samvitti; Samvedana | Self-cognition and sensation anchors. |
+| N_BE_00012 | Yogipratyaksa (Yogic perception) | 102 | Alaukika perception | Nearest nonordinary-perception anchor. |
+| N_BE_00013 | Svalaksana (Particular / Unique mark) | 138; 164 | Svalaksana; Svalaksana criteria | Direct particularity anchors. |
+| N_BE_00014 | Samanyalaksana (Universal / General mark) | 139; 165 | Samanyalaksana; Samanyalaksana criteria | Direct universality anchors. |
+| N_BE_00015 | Apoha / Anyapoha (Exclusion) | 5; 74; 189; 192 | Double negation theory of meaning; Apoha; Anyapoha; Anya-vyavrtti | Exclusion-theory anchors. |
+| N_BE_00016 | Linga / Hetu (Sign / Logical reason) | 126; 180; 224; 225 | Hetu or linga; Trairupya-linga; Svabhava-hetu; Anupalabdhi-hetu | Sign and reason anchors. |
+| N_BE_00017 | Paksa (Thesis) | 124; 181 | Paksa; Paksadharmatva | Thesis and subject-locus anchors. |
+| N_BE_00018 | Trairupya (Triple-condition syllogism) | 128; 180; 181; 182; 183 | Tri-rupa-hetu; Trairupya-linga; Paksadharmatva; Sapakse sattvam; Vipakse asattvam | Triple-condition anchors. |
+| N_BE_00019 | Vyapti (Pervasion) | 69; 211; 215; 216 | Vyapti; Vyapti in Dharmakirti; Anvaya-vyapti; Vyatireka-vyapti | Pervasion anchors. |
+| N_BE_00020 | Avinabhava (Necessary relation) | 68; 130 | Avinabhava; Avinabhava definition | Necessary-relation anchors. |
+| N_BE_00021 | Svabhavapratibandha (Essential relation) | 70 | Svabhavapratibandha | Direct essential-relation anchor. |
+| N_BE_00022 | Arthakriya (Causal efficacy) | 105; 166; 167; 168 | Arthakriya; Artha-kriya-sakti; Arthakriya as causal efficacy; Arthakriya as practical success | Causal-efficacy and practical-success anchors. |
+| N_BE_00023 | Avidya / Avijja (Ignorance) | 42 | Avidya | Direct ignorance anchor. |
+| N_BE_00024 | Prajna / Panna (Wisdom) | 54; 76 | Prajna; Prajnaparamita | Wisdom anchors; row 76 is a textual extension anchor. |
+| N_BE_00025 | Sunyata (Emptiness) | 60; 62; 76 | Nihsvabhavata; Sarvasunyavada; Prajnaparamita | Emptiness-related anchors; no exact Sunyata row. |
+| N_BE_00026 | Dvisatya (Two truths) | 98; 99; 100; 109; 110 | Vyavaharika-sat; Samvrti-sat; Paramartha-sat; Paramarthasat or dravyasat; Samvrtisat or prajnaptisat | Two-truths row cluster. |
+| N_BE_00027 | Svarthanumana (Inductive reasoning) | 170 | Svarthanumana | Direct inference-for-oneself anchor. |
+| N_BE_00028 | Pararthanumana (Deductive reasoning) | 171 | Pararthanumana | Direct inference-for-others anchor. |
+| N_BE_00029 | Ksanabhangavada (Momentariness) | 56; 57; 217 | Momentariness; Ksanabhangavada; Dharmakirti's momentariness principle | Momentariness anchors. |
+| N_BE_00030 | Pramanabhuta (Means of valid cognition) | 11 | Pramanabhuta | Direct ideal-valid-knower anchor. |
+
+### Edge crosswalk
+
+The anchor column lists codex BE rows for the source and target concepts, or the nearest direct aliases when the codex table lacks an exact row label. These edge codes remain canonical system relationships from the system mapping; they are not new RCA table edges.
+
+| Edge code | Canonical system relation | Related codex BE No. anchor(s) | Notes |
+| --- | --- | --- | --- |
+| ED_BE_00001 | N_BE_00001 -> N_BE_00002 (includes) | 24; 27 | Direct source/target anchors. |
+| ED_BE_00002 | N_BE_00001 -> N_BE_00003 (includes) | 24; 28 | Direct source/target anchors. |
+| ED_BE_00003 | N_BE_00001 -> N_BE_00005 (has as object) | 24; 23 | Direct source/target anchors. |
+| ED_BE_00004 | N_BE_00001 -> pramanaphala (produces) | 24; 25 | Uses codex row 25 for pramanaphala, which has no node code in the system reference. |
+| ED_BE_00005 | N_BE_00002 -> N_BE_00013 (apprehends) | 27; 138 | Direct source/target anchors. |
+| ED_BE_00006 | N_BE_00003 -> N_BE_00014 (apprehends) | 28; 139 | Direct source/target anchors. |
+| ED_BE_00007 | N_BE_00003 -> N_BE_00016 (operates through) | 28; 126 | Direct source/target anchors. |
+| ED_BE_00008 | N_BE_00003 -> N_BE_00018 (validated by) | 28; 128; 180 | Direct source/target anchors. |
+| ED_BE_00009 | N_BE_00016 -> N_BE_00017 (qualifies) | 126; 124 | Direct source/target anchors. |
+| ED_BE_00010 | N_BE_00016 -> N_BE_00019 (requires) | 126; 69; 211 | Direct source/target anchors. |
+| ED_BE_00011 | N_BE_00019 -> N_BE_00021 (grounded in) | 69; 70 | Direct source/target anchors. |
+| ED_BE_00012 | N_BE_00021 -> N_BE_00022 (has as basis) | 70; 105 | Direct source/target anchors. |
+| ED_BE_00013 | N_BE_00008 -> N_BE_00014 (operates on) | 146; 219; 139 | Direct source/target anchors. |
+| ED_BE_00014 | N_BE_00009 -> N_BE_00013 (apprehends) | 137; 153; 138 | Direct source/target anchors. |
+| ED_BE_00015 | N_BE_00009 -> N_BE_00008 (contrasted with) | 137; 153; 146; 219 | Direct source/target anchors. |
+| ED_BE_00016 | N_BE_00015 -> N_BE_00003 (is linguistic variant of) | 74; 189; 28 | Direct source/target anchors. |
+| ED_BE_00017 | N_BE_00004 -> N_BE_00003 (reduced to) | 30; 28 | Direct source/target anchors. |
+| ED_BE_00018 | N_BE_00010 -> N_BE_00002 (is subtype of) | 176; 27 | Includes nearest N_BE_00010 anchor. |
+| ED_BE_00019 | N_BE_00011 -> N_BE_00002 (is subtype of) | 90; 27 | Direct source/target anchors. |
+| ED_BE_00020 | N_BE_00010 -> N_BE_00011 (entails) | 176; 90 | Includes nearest N_BE_00010 anchor. |
+| ED_BE_00021 | N_BE_00012 -> N_BE_00002 (is subtype of) | 102; 27 | Uses nearest yogic/nonordinary perception anchor. |
+| ED_BE_00022 | N_BE_00012 -> N_BE_00025 (realizes) | 102; 60; 62 | Uses nearest nonordinary-perception and emptiness anchors. |
+| ED_BE_00023 | N_BE_00027 -> N_BE_00003 (is subtype of) | 170; 28 | Direct source/target anchors. |
+| ED_BE_00024 | N_BE_00028 -> N_BE_00003 (is subtype of) | 171; 28 | Direct source/target anchors. |
+| ED_BE_00025 | N_BE_00027 -> N_BE_00028 (grounds) | 170; 171 | Direct source/target anchors. |
+| ED_BE_00026 | N_BE_00020 -> N_BE_00019 (is precursor of) | 68; 69 | Direct source/target anchors. |
+| ED_BE_00027 | N_BE_00023 -> N_BE_00006 (causes) | 42; 226 | Direct source/target anchors. |
+| ED_BE_00028 | N_BE_00023 -> N_BE_00007 (gives rise to) | 42; 107 | Direct source/target anchors. |
+| ED_BE_00029 | N_BE_00024 -> N_BE_00023 (dispels) | 54; 42 | Direct source/target anchors. |
+| ED_BE_00030 | N_BE_00024 -> N_BE_00025 (realizes) | 54; 60; 62 | Direct source/target anchors. |
+| ED_BE_00031 | N_BE_00025 -> N_BE_00026 (is ultimate aspect of) | 60; 62; 98; 99; 100 | Uses emptiness-related and two-truths anchors. |
+| ED_BE_00032 | N_BE_00013 -> N_BE_00022 (possesses) | 138; 105 | Direct source/target anchors. |
+| ED_BE_00033 | N_BE_00014 -> N_BE_00022 (lacks) | 139; 105 | Direct source/target anchors. |
+| ED_BE_00034 | N_BE_00029 -> N_BE_00022 (supports) | 56; 57; 105 | Direct source/target anchors. |
+| ED_BE_00035 | N_BE_00029 -> N_BE_00013 (characterizes) | 56; 57; 138 | Direct source/target anchors. |
+| ED_BE_00036 | N_BE_00030 -> N_BE_00001 (is epithet of) | 11; 24 | Direct source/target anchors. |
+| ED_BE_00037 | N_BE_00007 -> N_BE_00027 (motivates) | 107; 170 | Direct source/target anchors. |
+| ED_BE_00038 | N_BE_00002 -> N_BE_00008 (is free from) | 27; 146; 219 | Direct source/target anchors. |
+| ED_BE_00039 | N_BE_00016 -> N_BE_00020 (requires) | 126; 68 | Direct source/target anchors. |
+
+### Use note for Buddhist system codes
+
+For downstream graph construction, use `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` as the canonical source for Buddhist nodes and edges. This codex supplies RCA-row retrieval anchors only. A codex row may point to a canonical node when the row directly names that concept or a clear alias, but a codex row should not be treated as creating a new node. Edge codes should be used as related system relationships around the node anchors, not as new one-to-one cross-domain RCA edges.
 
 ## Mapping table
 

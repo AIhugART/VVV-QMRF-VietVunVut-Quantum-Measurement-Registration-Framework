@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # Buddhist Epistemology and Quantum Measurement: Unified Structural Mapping
 ## Ground System: Pramaanavada — Dignaga and Dharmakirti corpus
 ## Method: Buddhist Epistemology as primary ontological frame; Quantum Measurement mapped onto it concept by concept
@@ -11,7 +13,7 @@
 # TIER 1 — Sources of Valid Cognition (Pramaana Sources)
 
 ### T1.01 — Pramaana (valid cognition / valid epistemic instrument)
-**Node:** N_BE_01 — Pramaana | **Edges:** ← ED_BE_36, → ED_BE_01, ED_BE_02, ED_BE_03, ED_BE_04
+**Node:** N_BE_00001 — Pramaana | **Edges:** ← ED_BE_00036, → ED_BE_00001, ED_BE_00002, ED_BE_00003, ED_BE_00004
 
 - Buddhist Epistemology: The foundational category of Pramaanavada. A cognition qualifies as pramaana if it is non-deceptive (avisamvaadin) with respect to its object and causally efficacious in guiding action toward that object. Validity is relational and functional, not intrinsic to any object or subject alone. Pramaana is the condition-event under which knowledge is certified. Dignaga identifies two pramaanas: pratyaksa and anumaana. Dharmakirti refines and defends both against Mimamsaka and Nyaya objections.
 - Quantum Measurement: Measurement operator. A Hermitian (self-adjoint) operator on Hilbert space. Defines the formal conditions under which a physical quantity is a valid observable. Validity is defined by the mathematical structure of the operator (real spectrum, completeness of eigenstates), not by relation to a cognitive agent.
@@ -20,7 +22,7 @@
 ---
 
 ### T1.02 — Pratyaksa (direct perception / non-inferential cognition)
-**Node:** N_BE_02 — Pratyaksa | **Edges:** ← ED_BE_01, ED_BE_18, ED_BE_19, ED_BE_21, → ED_BE_05, ED_BE_38
+**Node:** N_BE_00002 — Pratyaksa | **Edges:** ← ED_BE_00001, ED_BE_00018, ED_BE_00019, ED_BE_00021, → ED_BE_00005, ED_BE_00038
 
 - Buddhist Epistemology: One of the two valid pramaanas in Dignaga-Dharmakirti. Defined negatively: cognition free from kalpanaa (conceptual construction) and abhranta (error). Pratyaksa apprehends the svalaksana (unique particular) directly, without inferential mediation. It is momentary and non-repeatable in the strict sense. Dignaga distinguishes four subtypes (see T1.04 through T1.07).
 - Quantum Measurement: Eigenvalue readout. The singular, definite numerical outcome produced by a projective measurement on a quantum system. Non-inferential in the sense that it is the terminal output, not derived from prior outcomes. Produced at a specific moment; non-repeatable in the sense that the post-measurement state differs from the pre-measurement state.
@@ -29,7 +31,7 @@
 ---
 
 ### T1.03 — Anumaana (inference / inferential cognition)
-**Node:** N_BE_03 — Anumaana | **Edges:** ← ED_BE_02, ED_BE_16, ED_BE_17, ED_BE_23, ED_BE_24, → ED_BE_06, ED_BE_07, ED_BE_08
+**Node:** N_BE_00003 — Anumaana | **Edges:** ← ED_BE_00002, ED_BE_00016, ED_BE_00017, ED_BE_00023, ED_BE_00024, → ED_BE_00006, ED_BE_00007, ED_BE_00008
 
 - Buddhist Epistemology: Second valid pramaana. Valid cognition of an object not directly present, derived from a logical mark (linga) via invariant pervasion (vyaapti). Anumaana does not contact its object directly; it constructs knowledge from relational structure. It operates on saamaanyalaksana (conceptual universals), not svalaksana. Dignaga distinguishes svaartha anumaana (for oneself) and paraartha anumaana (for others / publicly demonstrable). Full treatment of anumaana architecture in Tier 5.
 - Quantum Measurement: Wave function psi. A probability amplitude function that encodes the relational structure of possible outcomes without directly representing any particular outcome. All predictions derived from psi are inferential relative to actual measurement events. Psi is not observed directly; it is inferred from statistical patterns.
@@ -38,7 +40,7 @@
 ---
 
 ### T1.04 — Pratyaksa subdivision — Indriyajnaana (sense perception / faculty-based perception)
-**Node:** Subdivision of N_BE_02 (Pratyaksa)
+**Node:** Subdivision of N_BE_00002 (Pratyaksa)
 
 - Buddhist Epistemology: Perception arising from causal contact between a sense faculty (indriya) and its appropriate object. The primary, most basic form of pratyaksa. Produced by the object through the sense organ as causal chain.
 - Quantum Measurement: Detector response. The physical signal produced in a measurement apparatus upon direct interaction with a quantum system: photon count, current spike, pointer deflection, ionization track. The causal-physical interface between system and apparatus.
@@ -47,7 +49,7 @@
 ---
 
 ### T1.05 — Pratyaksa subdivision — Maanasapratyaksa (mental perception / post-sensory internal apprehension)
-**Node:** N_BE_10 — Maanasa pratyaksa | **Edges:** → ED_BE_18, ED_BE_20
+**Node:** N_BE_00010 — Maanasa pratyaksa | **Edges:** → ED_BE_00018, ED_BE_00020
 
 - Buddhist Epistemology: Perception arising in manas (mind-faculty) immediately following indriyajnaana. Apprehends the mental image (aakaara) of the sense object rather than the external object directly. Still non-conceptual (free of kalpanaa) but one causal step removed from direct sense contact.
 - Quantum Measurement: BIAN-1 — Post-Detection Internal Representational State. The internal state of an observer or apparatus system after a detector event fires but before any symbolic encoding, recording, or storage of the result. QM moves directly from physical interaction to symbolic output value. The intermediate stratum — between raw physical signal and registered number — is unmodeled.
@@ -56,7 +58,7 @@
 ---
 
 ### T1.06 — Pratyaksa subdivision — Svasamvedana (self-awareness / reflexive cognition of one's own cognitive act)
-**Node:** N_BE_11 — Svasamvedana | **Edges:** ← ED_BE_20, → ED_BE_19
+**Node:** N_BE_00011 — Svasamvedana | **Edges:** ← ED_BE_00020, → ED_BE_00019
 
 - Buddhist Epistemology: Every cognition is simultaneously aware of itself. Cognition of blue is also, non-inferentially, an awareness of the cognizing-of-blue. This is a distinct pramaana for Dharmakirti: self-luminous (svaprakaasa), not requiring a second-order act to register the first-order act. Svasamvedana is the structural grounding of the entire Pramaanavada system: it stops the regress of meta-cognitions and self-certifies every valid cognition without external verification. Its implications at the system level are treated in T2.05, T6.01, and T6.02.
 - Quantum Measurement: BIAN-2 — Observer Self-Reference / Reflexive Cognition of Measurement Act. QM has no formal account of an observer's cognition of its own measurement act. A measurement is modeled as a physical interaction between system and apparatus. There is no formalism for the registering agent being simultaneously aware of its own registering. The measurement problem (von Neumann chain / Wigner's friend) is, in structural terms, the consequence of this gap: without a self-certifying epistemic layer, the registration chain has no formal stopping point.
@@ -65,7 +67,7 @@
 ---
 
 ### T1.07 — Pratyaksa subdivision — Yogijnaana (yogic direct perception / cultivated non-inferential cognition)
-**Node:** N_BE_12 — Yogipratyaksa | **Edges:** → ED_BE_21, ED_BE_22
+**Node:** N_BE_00012 — Yogipratyaksa | **Edges:** → ED_BE_00021, ED_BE_00022
 
 - Buddhist Epistemology: Non-inferential, non-conceptual cognition achieved through sustained meditative cultivation (bhaavana). Accesses objects or levels of reality normally beyond sensory reach. Debated within Pramaanavada but included by Dharmakirti as a limiting case of pratyaksa, achieved when a cognitive agent reaches a qualitatively different epistemic faculty through practice.
 - Quantum Measurement: BIAN-3 — Limit-Case Observation by Different Faculty. QM has no formal category for observation that operates through a qualitatively different faculty or mechanism than standard measurement. All observers are formally equivalent in QM: any physical system that interacts with a quantum system and produces a correlated output counts as a measurement apparatus. There is no spectrum of observer types based on cultivated capacity.
@@ -74,7 +76,7 @@
 ---
 
 ### T1.08 — Anumaana subdivision — Svaartha anumaana (inference for oneself / private inference)
-**Node:** N_BE_27 — Svaartha anumaana | **Edges:** ← ED_BE_37, → ED_BE_23, ED_BE_25
+**Node:** N_BE_00027 — Svaartha anumaana | **Edges:** ← ED_BE_00037, → ED_BE_00023, ED_BE_00025
 
 - Buddhist Epistemology: Inference conducted by a cognitive agent for its own epistemic purposes. The full syllogistic structure need not be made explicit. The primary, psychologically real form of inference. Its validity conditions are the same as paraartha anumaana but its expression is internal.
 - Quantum Measurement: Private theoretical calculation. A physicist's internal derivation of a predicted outcome from psi before experiment. The reasoning process that leads from known wave function to expected eigenvalue distribution. Not formalized as a distinct category in QM.
@@ -83,7 +85,7 @@
 ---
 
 ### T1.09 — Anumaana subdivision — Paraartha anumaana (inference for others / public demonstration)
-**Node:** N_BE_28 — Paraartha anumaana | **Edges:** ← ED_BE_25, → ED_BE_24
+**Node:** N_BE_00028 — Paraartha anumaana | **Edges:** ← ED_BE_00025, → ED_BE_00024
 
 - Buddhist Epistemology: Inference made explicit in syllogistic form (prayoga) for the purpose of demonstrating a conclusion to another cognitive agent. Requires full articulation of paksa (subject), hetu (reason / linga), and drstanta (example). The public, communicable, and contestable form of inference.
 - Quantum Measurement: Published experimental result with full measurement protocol. The public, reproducible form of a quantum measurement including apparatus specification, preparation procedure, statistical output, and error bars. Subject to peer scrutiny and replication.
@@ -103,7 +105,7 @@
 ---
 
 ### T2.02 — Visaya (intentional object / epistemic object domain)
-**Node:** N_BE_05 — Prameya | **Edges:** ← ED_BE_03
+**Node:** N_BE_00005 — Prameya | **Edges:** ← ED_BE_00003
 
 - Buddhist Epistemology: The domain to which a cognition is directed. Distinguished from artha (the real external causal ground): visaya is the epistemic object as it figures in the cognitive act; artha is what causally produces the aakaara. The two are structurally distinct. Erroneous cognition has a visaya but its artha is not as the visaya presents it.
 - Quantum Measurement: Observable. The physical quantity to which a measurement is directed: position, momentum, spin, energy. Distinguished from the actual quantum state of the system, which may not have a definite value for that observable prior to measurement. The observable is the epistemic target; the state is the causal ground.
@@ -112,7 +114,7 @@
 ---
 
 ### T2.03 — Phala (epistemic result / cognitive fruit)
-**Node:** Sub-component of N_BE_01 (Pramaana-phala) | **Edges:** ← ED_BE_04
+**Node:** Sub-component of N_BE_00001 (Pramaana-phala) | **Edges:** ← ED_BE_00004
 
 - Buddhist Epistemology: The outcome of a valid cognitive act. In Dharmakirti's analysis, phala is not a product separate from the cognitive act; it is the act in its resultant aspect (pramiti). Knowing is its own result. No additional act is required to produce the knowing-that-one-has-known. This identification of pramaana with its phala has major consequences for the regress problem (see T6.01).
 - Quantum Measurement: Measurement outcome. The registered eigenvalue after measurement. In relational QM (Rovelli), the outcome is defined only relative to the observer-system interaction, not as an absolute fact. In QBism (Fuchs-Schack), the outcome is an agent's experience, not a property of the system. Both relational QM and QBism partially approach the Dharmakirti position by resisting the reification of the outcome as a separate object from the measurement act.
@@ -130,7 +132,7 @@
 ---
 
 ### T2.05 — Svasamvedana as structural principle (self-certification of every valid cognition)
-**Node:** N_BE_11 — Svasamvedana (See T1.06) | **Edges:** (See T1.06)
+**Node:** N_BE_00011 — Svasamvedana (See T1.06) | **Edges:** (See T1.06)
 
 - Buddhist Epistemology: Beyond being a pramaana type (T1.06), svasamvedana functions as a universal structural principle: every valid cognition self-certifies its own occurrence. No regress of meta-cognitions is required to establish that a cognition occurred. The act certifies itself. This is not a separate second-order act; it is a structural feature of every first-order valid cognition.
 - Quantum Measurement: BIAN-6 — Self-Certifying Measurement. QM has no principle by which a measurement self-certifies its own occurrence. In the formalism, measurement is an external imposition on a system. In practice, an experimenter must make a decision that measurement has occurred — but this decision is outside the formalism. The question "has the measurement been completed?" requires a meta-level agent to answer. Buddhist Epistemology eliminates this meta-level requirement via svasamvedana. QM does not.
@@ -139,7 +141,7 @@
 ---
 
 ### T2.06 — Kalpanaa (conceptual construction / propositional overlay)
-**Node:** N_BE_08 — Vikalpa / Kalpanaa | **Edges:** ← ED_BE_15, ED_BE_38, → ED_BE_13
+**Node:** N_BE_00008 — Vikalpa / Kalpanaa | **Edges:** ← ED_BE_00015, ED_BE_00038, → ED_BE_00013
 
 - Buddhist Epistemology: The cognitive act of imposing conceptual, linguistic, and relational structure onto raw perceptual content. Kalpanaa is what transforms nirvikalpaka pratyaksa into savikalpaka pratyaksa. It is epistemically productive (enabling communication, inference, and action-planning) but also the source of most epistemic errors (bhranti, samsaya, vikalpa).
 - Quantum Measurement: Theoretical interpretation of measurement results. The act of embedding a raw measurement result into a physical theory: assigning it a variable name, a unit, a place in an equation, a physical interpretation. This is standard scientific practice but is not formalized within QM itself.
@@ -148,7 +150,7 @@
 ---
 
 ### T2.07 — Nirvikalpaka pratyaksa (non-conceptual perception / pre-propositional apprehension)
-**Node:** N_BE_09 — Nirvikalpaka pratyaksa | **Edges:** → ED_BE_14, ED_BE_15
+**Node:** N_BE_00009 — Nirvikalpaka pratyaksa | **Edges:** → ED_BE_00014, ED_BE_00015
 
 - Buddhist Epistemology: Perception entirely prior to kalpanaa. Apprehends the svalaksana directly without any linguistic, categorical, or inferential processing. Linguistically ineffable; it cannot be stated without becoming savikalpaka. Epistemically foundational: it is the ground from which all valid cognition ultimately derives its contact with reality.
 - Quantum Measurement: BIAN-7 — Pre-Symbolic Physical Event. The quantum interaction between system and apparatus before any numerical, symbolic, or linguistic encoding. QM begins its formalism after this stratum. The physical event at which system properties influence apparatus configuration is the causal ground of the eigenvalue, but it is not modeled within the formalism. The formalism operates on the symbolic output of this event, not on the event itself.
@@ -157,7 +159,7 @@
 ---
 
 ### T2.08 — Savikalpaka pratyaksa (conceptual perception / interpreted apprehension)
-**Node:** (No separate node — complement of N_BE_09)
+**Node:** (No separate node — complement of N_BE_00009)
 
 - Buddhist Epistemology: Perception already processed through kalpanaa. Carries propositional structure: this is a pot, that is blue. Valid as a secondary cognitive form; not the epistemological foundation. It is what ordinary perception presents and what enables communication and inference.
 - Quantum Measurement: Interpreted measurement result. The eigenvalue after it has been assigned physical meaning: this is 0.5 eV, that particle is spin-up. The standard output of any real experiment, as it appears in a lab notebook or published paper.
@@ -168,7 +170,7 @@
 # TIER 3 — Theory of Objects (Ontology of the Epistemic Object)
 
 ### T3.01 — Svalaksana (particular / unique causally efficacious momentary instance)
-**Node:** N_BE_13 — Svalaksana | **Edges:** ← ED_BE_05, ED_BE_14, ED_BE_35, → ED_BE_32
+**Node:** N_BE_00013 — Svalaksana | **Edges:** ← ED_BE_00005, ED_BE_00014, ED_BE_00035, → ED_BE_00032
 
 - Buddhist Epistemology: The real object. Momentary, unique, causally efficacious (arthakriyaasakti), and non-repeatable. It is what pratyaksa actually contacts at the moment of valid perception. Its causal efficacy — its capacity to produce effects — is the sole criterion of its reality. It has no extension beyond its own moment.
 - Quantum Measurement: Post-measurement eigenstate. The definite, particular state of the quantum system after measurement-induced collapse. Unique to that measurement event. The only state with a definite value for the measured observable. All subsequent evolution proceeds from this particular.
@@ -177,7 +179,7 @@
 ---
 
 ### T3.02 — Saamaanyalaksana (universal / conceptual construct without direct causal efficacy)
-**Node:** N_BE_14 — Saamaanyalaksana | **Edges:** ← ED_BE_06, ED_BE_13, → ED_BE_33
+**Node:** N_BE_00014 — Saamaanyalaksana | **Edges:** ← ED_BE_00006, ED_BE_00013, → ED_BE_00033
 
 - Buddhist Epistemology: The conceptual universal. A mental construction abstracted across multiple svalaksana instances. Not causally efficacious on its own; real only as a cognitive object. It is the object of anumaana, not pratyaksa. Dharmakirti's apoha theory explains how saamaanyalaksana refer through exclusion rather than positive essence.
 - Quantum Measurement: Superposition / wave function psi. A linear combination of eigenstates: a mathematical construct that represents potential, not actuality. Not directly observable. Causally relevant only through its squared modulus (Born rule). Psi before measurement corresponds to the conceptual construct: it organizes the space of possibilities without being any one of them.
@@ -186,7 +188,7 @@
 ---
 
 ### T3.03 — Arthakriyaasakti (causal efficacy / power to perform a function)
-**Node:** N_BE_22 — Arthakriyaa | **Edges:** ← ED_BE_12, ED_BE_32, ED_BE_33, ED_BE_34
+**Node:** N_BE_00022 — Arthakriyaa | **Edges:** ← ED_BE_00012, ED_BE_00032, ED_BE_00033, ED_BE_00034
 
 - Buddhist Epistemology: The criterion of reality for Dharmakirti. What is real is what can causally produce effects. Svalaksana has arthakriyaasakti; saamaanyalaksana does not. This criterion cleanly separates the real from the merely conceptual.
 - Quantum Measurement: Observability / empirical accessibility. What is real in QM is what can produce a measurement outcome. Quantities that produce no observable difference (absolute phase, specific branch in many-worlds before decoherence) have no physical status within the formalism. QM's implicit ontological criterion is functional: real = detectable.
@@ -195,7 +197,7 @@
 ---
 
 ### T3.04 — Ksanikavaada (momentariness / doctrine of momentary existence)
-**Node:** N_BE_29 — Ksanabhangavaada | **Edges:** → ED_BE_34, ED_BE_35
+**Node:** N_BE_00029 — Ksanabhangavaada | **Edges:** → ED_BE_00034, ED_BE_00035
 
 - Buddhist Epistemology: All real entities (svalaksana) exist for only one moment. Apparent persistence is a conceptual overlay (kalpanaa) applied to a causal series of distinct momentary particulars. No entity endures through time; what appears to persist is a sequence, not a substance.
 - Quantum Measurement: BIAN-8 — Quantum Temporal Discontinuity. QM does not have a doctrine of momentary existence. Time in QM is a continuous parameter in the Schrodinger equation. However, the measurement event introduces a discontinuity: the pre-measurement state and the post-measurement state are categorically different. Between measurements, evolution is continuous; at measurement, it is discontinuous. QM has the formal structure corresponding to ksanikavaada but has not theorized it epistemologically. Decoherence theory describes the process mechanism; it does not address the epistemological question of what kind of entity exists between measurements.
@@ -222,7 +224,7 @@
 ---
 
 ### T3.07 — Samaanya (repeatable property / generic attribute)
-**Node:** N_BE_14 — Saamaanyalaksana (See T3.02)
+**Node:** N_BE_00014 — Saamaanyalaksana (See T3.02)
 
 - Buddhist Epistemology: Repeatable, shareable attributes that multiple svalaksana can instantiate. Real as cognitive objects and instrumentally necessary for inference and communication. Not real as external universals in the Nyaya sense; real only as epistemically functional constructs.
 - Quantum Measurement: Quantum number / conserved quantity. Repeatable properties that multiple particles can instantiate: spin, charge, isospin, lepton number. Treated as physically real properties in QM, not merely as cognitive constructs.
@@ -231,7 +233,7 @@
 ---
 
 ### T3.08 — Tadaatmya and Tadutpatti as object-relations (identity and causal relations between real particulars)
-**Node:** N_BE_21 — Svabhaavapratibandha | **Edges:** ← ED_BE_11, → ED_BE_12
+**Node:** N_BE_00021 — Svabhaavapratibandha | **Edges:** ← ED_BE_00011, → ED_BE_00012
 
 - Buddhist Epistemology: The two valid inter-object relations that can ground inference. Tadaatmya: essential co-nature or identity of production (smoke and fire share an essential production relation). Tadutpatti: causal production (sprout produced by seed). Both are relations between real particulars, not conceptual associations. All valid anumaana must be grounded in one or the other.
 - Quantum Measurement: Entanglement correlations. Quantum entanglement produces invariant correlations between measurement outcomes on spatially separated systems. These correlations are not causal in the local sense (no signaling possible; Bell inequality violated) and not relations of shared intrinsic nature (svabhaava is denied). Entanglement is a third type of inter-object relation with no classical analogue.
@@ -243,7 +245,7 @@
 # TIER 4 — Error Theory (Epistemology of False Cognition)
 
 ### T4.01 — Bhranti (erroneous cognition / illusion)
-**Node:** N_BE_06 — Bhraanti | **Edges:** ← ED_BE_27
+**Node:** N_BE_00006 — Bhraanti | **Edges:** ← ED_BE_00027
 
 - Buddhist Epistemology: Cognition that presents its object in a manner that does not correspond to the object's causal structure. The classic examples: perceiving a rope as a snake; perceiving a distant moving object as stationary. Bhranti is a real cognition (it occurs, it has aakaara, it produces action) but epistemically invalid (it is not avisamvaadin). Bhranti is to be formally distinguished from samsaya (doubt), anadhyavasaaya (non-determination), and vikalpa (conceptual fiction).
 - Quantum Measurement: Measurement error / systematic bias. A measurement that returns an incorrect value due to apparatus malfunction, calibration error, selection bias, or systematic confound. A real physical process; an epistemically invalid result. The event occurs and produces a registered number; the number does not correctly represent the target observable.
@@ -252,7 +254,7 @@
 ---
 
 ### T4.02 — Samsaya (doubt / indeterminate cognition)
-**Node:** N_BE_07 — Samsaya | **Edges:** ← ED_BE_28, → ED_BE_37
+**Node:** N_BE_00007 — Samsaya | **Edges:** ← ED_BE_00028, → ED_BE_00037
 
 - Buddhist Epistemology: Cognition that oscillates between two or more incompatible determinations without resolving. Active uncertainty: the cognitive agent holds x and non-x as simultaneously possible without committing to either. Not a valid pramaana. Requires resolution via pratyaksa or anumaana.
 - Quantum Measurement: Pre-measurement epistemic state. An observer who knows the wave function but not the outcome is in a state of genuine indeterminacy about which eigenvalue will result. This is partially modeled as physical superposition, but the epistemic state of the observer holding this description is not formally theorized.
@@ -298,7 +300,7 @@
 ---
 
 ### T4.07 — Vikalpa (conceptual fiction / construct with no corresponding particular)
-**Node:** N_BE_08 — Vikalpa / Kalpanaa (See T2.06)
+**Node:** N_BE_00008 — Vikalpa / Kalpanaa (See T2.06)
 
 - Buddhist Epistemology: A concept that has no corresponding svalaksana as causal ground. It refers only within the conceptual domain (saamaanyalaksana) without grounding in a real particular. Examples: a rabbit's horn; a permanent self; a universal substance. Epistemically empty in terms of arthakriyaasakti.
 - Quantum Measurement: Unmeasurable theoretical construct. A formal quantity that appears in the mathematical framework but produces no observable prediction. Examples: the absolute phase of a wave function (only relative phases are observable); the identity of specific many-worlds branches before decoherence; the specific value of a hidden variable in a non-contextual hidden variable theory.
@@ -309,7 +311,7 @@
 # TIER 5 — Theory of Inference (Anumaana Architecture)
 
 ### T5.01 — Linga (logical mark / inferential sign)
-**Node:** N_BE_16 — Linga / Hetu | **Edges:** ← ED_BE_07, → ED_BE_09, ED_BE_10, ED_BE_39
+**Node:** N_BE_00016 — Linga / Hetu | **Edges:** ← ED_BE_00007, → ED_BE_00009, ED_BE_00010, ED_BE_00039
 
 - Buddhist Epistemology: The evidence term in an inference. That from which the sadhya (probandum) is inferred. Must satisfy three conditions (trairuupya: see T5.06) to ground valid anumaana. Linga is the epistemically accessible fact from which the inaccessible fact is derived.
 - Quantum Measurement: Measurement pointer state. The macroscopic, classically readable state of a measurement apparatus after interaction with the quantum system. The accessible evidence from which the quantum state is inferred: the meter reading, the detector click, the track in a bubble chamber.
@@ -318,7 +320,7 @@
 ---
 
 ### T5.02 — Sadhya (probandum / what is to be inferred)
-**Node:** (No separate node — implicit in N_BE_16)
+**Node:** (No separate node — implicit in N_BE_00016)
 
 - Buddhist Epistemology: The fact to be established by inference. Typically beyond direct perceptual reach. Linga is the accessible evidence; sadhya is the inferred conclusion.
 - Quantum Measurement: Pre-measurement quantum state / wave function. What is inferred from the pattern of measurement outcomes. Not directly observable; reconstructed from statistical distributions of eigenvalues. The target of quantum state tomography.
@@ -327,7 +329,7 @@
 ---
 
 ### T5.03 — Paksa (logical subject / the entity under consideration)
-**Node:** N_BE_17 — Paksa | **Edges:** ← ED_BE_09
+**Node:** N_BE_00017 — Paksa | **Edges:** ← ED_BE_00009
 
 - Buddhist Epistemology: The subject of the inference. The entity about which the inferential claim is made. The hill, in the classic inference: the hill has fire because it has smoke.
 - Quantum Measurement: Quantum system under measurement. The specific physical system about which the measurement statement is made: this electron, this photon, this ensemble of atoms.
@@ -336,7 +338,7 @@
 ---
 
 ### T5.04 — Sapaksa (positive confirming case / similar instance)
-**Node:** Sub-component of N_BE_18 (Trairuupya)
+**Node:** Sub-component of N_BE_00018 (Trairuupya)
 
 - Buddhist Epistemology: Cases known to have both linga and sadhya. Establishes the positive correlation required by vyaapti. The kitchen is sapaksa for the smoke-fire inference: both smoke and fire are present.
 - Quantum Measurement: Confirming experimental runs. Measurement trials in which the predicted correlation between preparation and outcome is observed. Establishes the empirical pattern that grounds the Born rule application in a given context.
@@ -345,7 +347,7 @@
 ---
 
 ### T5.05 — Vipaksa (negative excluding case / dissimilar instance)
-**Node:** Sub-component of N_BE_18 (Trairuupya)
+**Node:** Sub-component of N_BE_00018 (Trairuupya)
 
 - Buddhist Epistemology: Cases known to lack the sadhya. Establishes that linga is absent wherever sadhya is absent. The lake is vipaksa for the smoke-fire inference: no fire, and indeed no smoke.
 - Quantum Measurement: Disconfirming experimental runs / null results. Measurement trials in which the predicted outcome does not occur. Establishes the boundary conditions and failure modes of a quantum measurement protocol.
@@ -354,7 +356,7 @@
 ---
 
 ### T5.06 — Trairuupya (three necessary conditions of a valid inferential mark)
-**Node:** N_BE_18 — Trairuupya | **Edges:** ← ED_BE_08
+**Node:** N_BE_00018 — Trairuupya | **Edges:** ← ED_BE_00008
 
 - Buddhist Epistemology: The three necessary and sufficient conditions for a linga to ground valid anumaana. (1) Paksa-dharmataa: the linga is present in the paksa. (2) Sapaksa-sattvam: the linga co-occurs with sadhya in at least some similar cases. (3) Vipaksa-asattvam: the linga is entirely absent from all cases in which sadhya is absent. All three must hold; any failure generates a hetvaabaasa (see T5.10 through T5.13).
 - Quantum Measurement: BIAN-14 — Tripartite Measurement Validity Conditions. QM has no formally unified three-condition structure for when measurement data constitutes valid inferential evidence for a theoretical claim. Statistical significance thresholds (p-value, sigma levels) serve a partial function. Bell inequality violations provide a boundary condition. But these are not integrated into a unified formal structure equivalent to trairuupya. Experimental physics has informal methodological norms; it does not have a formal epistemological theory of when a measurement constitutes valid evidence.
@@ -363,7 +365,7 @@
 ---
 
 ### T5.07 — Vyaapti (invariant pervasion / necessary concomitance)
-**Node:** N_BE_19 — Vyaapti | **Edges:** ← ED_BE_10, ED_BE_26, → ED_BE_11
+**Node:** N_BE_00019 — Vyaapti | **Edges:** ← ED_BE_00010, ED_BE_00026, → ED_BE_00011
 
 - Buddhist Epistemology: The invariant relation between linga and sadhya that grounds all anumaana. Wherever linga, there sadhya; wherever not-sadhya, there not-linga. Not merely a statistical correlation but a nomologically necessary relation within the domain. Establishing vyaapti is the central epistemological problem of inference theory. It cannot be established by any finite enumeration of cases (a point Dharmakirti addresses through tarka and the analysis of tadaatmya / tadutpatti).
 - Quantum Measurement: Born rule. The invariant mapping from probability amplitude to probability: P(outcome) = |<eigenstate|psi>|^2. Nomologically necessary within QM. Empirically confirmed to extraordinary precision across all domains of physics. Not derived from deeper first principles within the theory. Its justification within QM is empirical (it works) rather than foundational — which is precisely the same epistemic status as vyaapti.
@@ -426,7 +428,7 @@
 ---
 
 ### T5.14 — Tadaatmya as inference ground (identity-of-nature relation)
-**Node:** N_BE_21 — Svabhaavapratibandha (See T3.08) | **Edges:** ← ED_BE_11, → ED_BE_12
+**Node:** N_BE_00021 — Svabhaavapratibandha (See T3.08) | **Edges:** ← ED_BE_00011, → ED_BE_00012
 
 - Buddhist Epistemology: The first of the two valid grounds for anumaana. A relation of essential co-nature between linga and sadhya: the two share an essential production relation or identity of nature such that the presence of one invariably accompanies the presence of the other. Example: the inference from smoke to fire is grounded in their shared nature of production from a common source.
 - Quantum Measurement: Correlated quantum properties from common preparation. When two observable properties of a quantum system co-occur because they are both determined by the same preparation procedure or conservation law, their correlation is grounded in a shared production relation. Example: conservation of angular momentum in pair production correlates spin outcomes across detectors.
@@ -435,7 +437,7 @@
 ---
 
 ### T5.15 — Tadutpatti as inference ground (causal production relation)
-**Node:** N_BE_21 — Svabhaavapratibandha (See T3.08) | **Edges:** ← ED_BE_11, → ED_BE_12
+**Node:** N_BE_00021 — Svabhaavapratibandha (See T3.08) | **Edges:** ← ED_BE_00011, → ED_BE_00012
 
 - Buddhist Epistemology: The second of the two valid grounds for anumaana. A relation of causal production between linga and sadhya: the presence of linga is caused by the presence of sadhya. Example: smoke is caused by fire; the presence of smoke is thus a reliable indicator of fire.
 - Quantum Measurement: Schrodinger evolution. The deterministic, unitary time-evolution of the quantum state between measurements, governed by the Hamiltonian. Causal, continuous, fully determined. Given the state at t1, the state at t2 is determined by the Schrodinger equation.
@@ -446,7 +448,7 @@
 # TIER 6 — Meta-Epistemology
 
 ### T6.01 — Pramaana-phala identity (cognition is its own result / the act self-completes)
-**Node:** N_BE_01 — Pramaana (phala component) | **Edges:** → ED_BE_04
+**Node:** N_BE_00001 — Pramaana (phala component) | **Edges:** → ED_BE_00004
 
 - Buddhist Epistemology: Dharmakirti's position: the result (phala) of a cognitive act is not a product separate from the act. Knowing is the knowing-of-the-result. No additional act is required to register that a cognition has occurred and produced a result. The act is self-completing: pramaana and phala are identified. This eliminates a potential regress: if phala were a separate product, one would need a further cognition to register the phala, and so on without end.
 - Quantum Measurement: BIAN-16 — Measurement Self-Completion. QM does not formally specify whether a measurement is self-completing or requires a subsequent act (physical registration, recording, consciousness interaction) to be complete. This is the meta-epistemological root of the measurement problem. Buddhist Epistemology resolves the analogous problem via pramaana-phala identity: the act certifies itself. QM has no equivalent resolution. Every proposed solution to the measurement problem (Copenhagen: observer consciousness collapses; Many-Worlds: branching completes; decoherence: environment registers) is attempting to supply a principle that Pramaanavada already has in pramaana-phala identity combined with svasamvedana.
@@ -455,7 +457,7 @@
 ---
 
 ### T6.02 — Svasamvedana as meta-epistemological regress-stopper
-**Node:** N_BE_11 — Svasamvedana (See T1.06, T2.05) | **Edges:** → ED_BE_19
+**Node:** N_BE_00011 — Svasamvedana (See T1.06, T2.05) | **Edges:** → ED_BE_00019
 
 - Buddhist Epistemology: Valid cognition does not require a second-order cognition to certify it as having occurred. This stops the regress: you do not need to know-that-you-know in order to know. The first-order act certifies itself through svasamvedana. This is the foundational principle of the entire Pramaanavada system. It is not a claim about consciousness in the phenomenal sense; it is a formal claim about the structure of valid epistemic acts.
 - Quantum Measurement: BIAN-17 — Regress-Stopping Principle. QM has no principle that stops the measurement regress. The von Neumann chain: system interacts with apparatus; apparatus state is entangled with system; a second apparatus is needed to register the first; a third is needed to register the second; the chain is formally infinite. Wigner's friend extends this to the level of observers. Every proposed resolution introduces an external stopping condition (consciousness, many-worlds branching, environmental decoherence treated as a collapse substitute) rather than a formal self-certifying principle within the theory. Svasamvedana stops this regress without external conditions. QM requires them.
@@ -473,7 +475,7 @@
 ---
 
 ### T6.04 — Anaatmavaada as epistemological structural commitment (observer as process, not substance)
-**Node:** (No separate node — implicit in N_BE_29)
+**Node:** (No separate node — implicit in N_BE_00029)
 
 - Buddhist Epistemology: The denial of a permanent, unified self-entity (aatman) underlying cognition is not merely a metaphysical claim in Pramaanavada; it is a structural epistemological commitment. The pramaatri is not a substance but a causal series of cognitive events (santaana). The knower is a process, not a fixed point. This directly shapes the epistemology: there is no persistent subject of cognition to whom all results are presented; there are only momentary cognitive events in causal series.
 - Quantum Measurement: BIAN-19 — Observer as Process, not Substance. QM's observer is formally undefined. To the extent that an observer is assumed in QM, it is assumed as a classical, unified, persistent agent who receives measurement results: the implicit opposite of anaatmavaada. No QM formalism models the observer as a causal series of events rather than a fixed point. QBism (Fuchs-Schack) comes closest by identifying the observer with a Bayesian agent who updates beliefs, but even QBism treats the agent as a unified decision-maker, not as a causal series of momentary events.
@@ -482,7 +484,7 @@
 ---
 
 ### T6.05 — Apoha at the meta-semantic level (meaning through exclusion as foundational principle)
-**Node:** N_BE_15 — Apoha / Anyaapoha | **Edges:** → ED_BE_16
+**Node:** N_BE_00015 — Apoha / Anyaapoha | **Edges:** → ED_BE_00016
 
 - Buddhist Epistemology: All conceptual meaning is constituted through exclusion (apoha): a term refers by excluding what it does not denote, not by picking out a positive essence. This applies at the meta-level: the term pramaana itself refers through exclusion of non-pramaana events. Positive essence is not a legitimate semantic category in the Pramaanavada framework.
 - Quantum Measurement: Complementarity and mutual exclusion of observables. Bohr's complementarity: conjugate observables (position-momentum, energy-time) are mutually exclusive; the definition of one excludes the simultaneous definite determination of the other. Physical meaning in QM is partly constituted by exclusion relations between incompatible observables. An observable is defined partly by what it is not simultaneously compatible with.
@@ -491,7 +493,7 @@
 ---
 
 ### T6.06 — Pramaana grounded in arthakriyaa (epistemology grounded in praxis)
-**Node:** N_BE_22 — Arthakriyaa (See T3.03)
+**Node:** N_BE_00022 — Arthakriyaa (See T3.03)
 
 - Buddhist Epistemology: Valid cognition is ultimately defined and validated by its capacity to guide successful action (arthakriyaa): the capacity to produce the expected result when acted upon. A cognition that fails to guide action successfully is retroactively invalidated by baadhaka pramaana. Epistemology is not merely theoretical; it is grounded in pragmatic efficacy. This is not a concession to pragmatism from outside the system; it is the criterion built into the definition of pramaana.
 - Quantum Measurement: Predictive success as the validity criterion of the theory. QM's formalism is validated by its predictive accuracy: agreement with experiment to twelve or more significant figures in QED. The Born rule is accepted because it reliably guides successful experimental action. There is no deeper justification for the Born rule within QM; its warrant is entirely empirical-pragmatic.

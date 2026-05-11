@@ -6,8 +6,8 @@
 - **Method:** Root Cause Analysis (RCA) — line-by-line structural audit
 - **Domain:** Philosophy of measurement, epistemic architecture, formal epistemology
 - **Framework:** Standard QM formalism (von Neumann, Copenhagen, RQM, QBism, decoherence)
-- **Gap count:** 19 structural deficiencies + 1 reserved
-- **Classification:** Each gap tagged by epistemic axiom cluster (A1–A4)
+- **Gap count:** 18 QM-side structural deficiencies + 1 reverse gap + 1 reserved entry
+- **Classification:** Each substantive entry tagged by epistemic axiom cluster (A1–A4); reverse-gap direction marked explicitly
 - **LLM usage:** This document is optimized for LLM ingestion. All terms are in standard English. No diacritics. No domain-specific religious vocabulary.
 
 ---
@@ -80,7 +80,7 @@
 
 ## BIAN-6 — No Self-Certifying Measurement Structure
 
-- **Axiom:** A1
+- **Axiom:** A3
 - **Gap:** QM has no formal principle by which a measurement certifies its own completion without requiring an external meta-level registration.
 - **QM state:** The question "has the measurement been completed?" requires a second measurement to answer. But the second measurement faces the same question, generating infinite regress.
 - **RCA:** Structural variant of BIAN-2 at the operational level. BIAN-2 concerns the epistemic act; BIAN-6 concerns the measurement procedure. Both trace to the same root: absence of self-certification.
@@ -122,14 +122,14 @@
 
 ---
 
-## BIAN-10 — Non-Classical Correlation Without Causal or Identity Basis (REVERSE GAP)
+## BIAN-10 — Non-Classical Correlation Without Causal or Identity Basis (Reverse-BIAN)
 
 - **Axiom:** A1
-- **Gap direction:** REVERSE. QM has a structural concept that general epistemology lacks.
+- **Gap direction:** Reverse-BIAN. QM has a structural concept that Buddhist Epistemology lacks.
 - **QM state:** Entanglement produces necessary correlations between spatially separated systems that cannot be explained by: (1) shared identity (the systems are distinct), (2) causal interaction (no signal passes between them, Bell inequality violation). This is a third type of necessary connection beyond identity-based and causation-based relations.
 - **RCA:** Classical epistemology recognizes two types of necessary connection: identity (A is B) and causation (A produces B). Entanglement is neither. It is a formally verified relation type that has no classical epistemological precedent.
-- **Consequence:** This is the only gap where QM formalism exceeds classical epistemic categories. Any complete epistemology must accommodate this third relation type.
-- **Severity:** Critical. Demonstrates that QM extends, not merely challenges, classical epistemic frameworks.
+- **Consequence:** This is the only reverse-gap entry where QM formalism exceeds Buddhist Epistemology's canonical relation categories. Any complete epistemology must accommodate this third relation type.
+- **Severity:** Critical reverse-gap. Demonstrates that QM extends, not merely challenges, classical epistemic frameworks.
 
 ---
 
@@ -232,9 +232,9 @@
 
 ---
 
-## BIAN-20 — [Reserved for Entanglement Correlation Type]
+## BIAN-20 — [Reserved; cross-reference Reverse-BIAN-10]
 
-- **Status:** Reserved. Cross-reference BIAN-10.
+- **Status:** Reserved only. Cross-reference Reverse-BIAN-10; not counted as a substantive gap.
 
 ---
 
@@ -242,9 +242,9 @@
 
 | Axiom | Gap Count | Structural Diagnosis |
 |---|---|---|
-| A1 — Relational Dependence | 4 (BIAN-6, 8, 10, 14) | Relational structure present but missing: knower role, temporal doctrine, inference validity framework. BIAN-10 is reverse gap. |
+| A1 — Relational Dependence | 2 QM-side gaps + 1 reverse gap (BIAN-8, 14; Reverse-BIAN-10) | Relational structure present but missing temporal doctrine and inference validity framework. Reverse-BIAN-10 marks a QM-side relation type absent from Buddhist Epistemology's canonical relation categories. |
 | A2 — Anti-Intrinsic-Property | 2 (BIAN-7, 9) | Fewest gaps. Bell/Kochen-Specker theorems independently reach the same structural conclusion. Strongest empirical-formal convergence. |
-| A3 — Reflexive Cognition | 11 (BIAN-1, 2, 4, 5, 11, 12, 13, 16, 17, 18, 19) | Deepest concentration. All gaps trace to absent cognitive-reflexive architecture. The measurement problem is an A3 problem. |
+| A3 — Reflexive Cognition | 12 (BIAN-1, 2, 4, 5, 6, 11, 12, 13, 16, 17, 18, 19) | Deepest concentration. All gaps trace to absent cognitive-reflexive architecture. The measurement problem is an A3 problem. |
 | A4 — Two-Tier Description | 2 (BIAN-3, 15) | QM has implicit two-tier structure (quantum/classical domains) but lacks formal epistemological articulation. |
 
 ---
@@ -268,7 +268,8 @@ BIAN-17 (no regress stopper)
 
 | Level | BIAN IDs | Count |
 |---|---|---|
-| Critical | BIAN-2, 6, 10, 16, 17 | 5 |
+| Critical | BIAN-2, 6, 16, 17 | 4 |
+| Critical reverse-gap | Reverse-BIAN-10 | 1 |
 | High | BIAN-8, 19 | 2 |
 | Moderate | BIAN-1, 4, 5, 9, 11, 12, 14, 18 | 8 |
 | Low | BIAN-3, 7, 13, 15 | 4 |
@@ -277,8 +278,8 @@ BIAN-17 (no regress stopper)
 
 ## Notes for LLM Processing
 
-- All 19 gaps are structural, not empirical. They cannot be resolved by new experimental data; they require formal extension of the measurement axioms.
-- BIAN-10 is the only reverse gap: QM has a concept (entanglement) that classical epistemology lacks.
+- All 18 QM-side gaps are structural, not empirical. They cannot be resolved by new experimental data; they require formal extension of the measurement axioms.
+- Reverse-BIAN-10 is the only reverse-gap entry: QM has a concept (entanglement) that Buddhist Epistemology lacks.
 - BIAN-2, BIAN-16, and BIAN-17 form a causal triad: self-reference → self-completion → regress-stopping. Resolving any one partially alleviates the others.
 - This document contains no claims about consciousness, phenomenology, or subjective experience. All gaps are analyzed at the level of formal epistemic architecture.
 - Scope boundary: this analysis covers standard non-relativistic QM. QFT and quantum gravity may introduce additional or different gaps.

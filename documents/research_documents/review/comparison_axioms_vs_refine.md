@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # So Sánh Chi Tiết: Axioms Mapping vs Refine Mapping
 # Comparative Analysis: Buddhist Epistemology & Quantum Measurement
 # Vicāra-Paṭisandhi: Pramāṇavāda & Quantum Measurement
@@ -15,7 +17,7 @@
 | **Ngôn ngữ thuật ngữ** | Sanskrit có diacritics đầy đủ (Pramāṇa, Pratyakṣa…) | ASCII romanization không dấu (Pramaana, Pratyaksa…) |
 | **Số khái niệm BE được ánh xạ** | 52 khái niệm | 52 khái niệm |
 | **Số BIAN** | BIAN-1 đến BIAN-19 (BIAN-20 reserved) | BIAN-1 đến BIAN-20 (BIAN-20 reserved) |
-| **Mã node/edge** | Có (N_BE_01–N_BE_30, ED_BE_01–ED_BE_39) đầy đủ cho từng mục | Có, nhưng chỉ liệt kê tại header node, không nhúng vào phần phân tích |
+| **Mã node/edge** | Có (N_BE_00001–N_BE_00030, ED_BE_00001–ED_BE_00039) đầy đủ cho từng mục | Có, nhưng chỉ liệt kê tại header node, không nhúng vào phần phân tích |
 
 ---
 
@@ -160,7 +162,7 @@ Tương đương ở tất cả mục.
 | BIAN-19 | Anātmavāda structural | Axiom 3 | ✅ | Tương đương |
 | BIAN-20 | Reserved | Reserved | Reserved | Tương đương |
 
-> **⚠️ Lỗi phát hiện / Error Detected:** Tài liệu A phân BIAN-6 vào Axiom 1 trong bảng BIAN Index cuối tài liệu, nhưng BIAN-6 liên quan đến Svasaṃvedana — vốn là Axiom 3 node (N_BE_11). Trong bảng "BIAN Gap Distribution by Axiom" cùng tài liệu, BIAN-6 lại được liệt kê ở **Axiom 3**. Tài liệu B không có sự bất nhất này vì không phân axiom.
+> **⚠️ Lỗi phát hiện / Error Detected:** Tài liệu A phân BIAN-6 vào Axiom 1 trong bảng BIAN Index cuối tài liệu, nhưng BIAN-6 liên quan đến Svasaṃvedana — vốn là Axiom 3 node (N_BE_00011). Trong bảng "BIAN Gap Distribution by Axiom" cùng tài liệu, BIAN-6 lại được liệt kê ở **Axiom 3**. Tài liệu B không có sự bất nhất này vì không phân axiom.
 
 ---
 
