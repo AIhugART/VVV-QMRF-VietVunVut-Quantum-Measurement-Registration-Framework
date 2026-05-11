@@ -69,7 +69,7 @@ Phạm trù nhận thức luận chính thức biểu diễn sự kiện vật l
 |------|----------|------|--------|------------|-----|
 | BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | N_BE_00009 | 14 | Projective Measurement (PVM) | Medium |
 
-### 3d. Edge connections (from BIAN_index_v2.md)
+### 3d. Edge connections (from BIAN_index_SOT.md)
 
 | Edge code | Category | Dir | Source → Target | Relationship | QM No. | QM concept | RCA |
 |-----------|----------|-----|----------------|-------------|-------:|------------|-----|
@@ -143,7 +143,7 @@ BIAN-7 (Gap diagnosis)
 
 | Layer | Document | Role |
 |-------|----------|------|
-| Gap | BIAN_index_v2.md (BIAN-7) | Diagnosis |
+| Gap | BIAN_index_SOT.md (BIAN-7) | Diagnosis |
 | Category | **This document (Cat 10)** | Prescription |
 | Framework | E4_pre_symbolic_stratum_postulate.md | Architecture |
 
@@ -162,4 +162,4 @@ BIAN-7 (Gap diagnosis)
 
 ---
 
-*Source: BIAN_index_v2.md (BIAN-7), system_be_full.md (N_BE_00009), system_mapping_SOT.md (T2.07 L361-L372)*
+*Source: BIAN_index_SOT.md (BIAN-7), system_be_full.md (N_BE_00009), system_mapping_SOT.md (T2.07 L361-L372)*

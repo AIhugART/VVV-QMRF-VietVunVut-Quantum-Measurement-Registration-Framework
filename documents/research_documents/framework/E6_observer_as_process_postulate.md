@@ -155,7 +155,7 @@ E6 is the **deepest architectural postulate** — it enables E1.
 
 | Layer | Document | Role |
 |-------|----------|------|
-| Gap | BIAN-19 (in mapping files, not in BIAN_index_v2) | Diagnosis |
+| Gap | BIAN-19 (in mapping files, not in BIAN_index_SOT) | Diagnosis |
 | Category | observer_as_process.md (Category 07) | Prescription |
 | Framework | **This document (E6)** | Architecture |
 
@@ -178,9 +178,9 @@ E6 is the **deepest architectural postulate** — it enables E1.
 
 ## 9. RCA Findings / Phát hiện RCA
 
-### ⚠️ Finding: BIAN-19 missing from BIAN_index_v2
+### ⚠️ Finding: BIAN-19 missing from BIAN_index_SOT
 
-BIAN-19 exists in SOT (T6.04 L800) and mapping files but is **absent from BIAN_index_v2.md**. The v2 index only goes to BIAN-17. BIAN-18 and BIAN-19 are documented in the SOT BIAN table (L857) but not in the standalone gap index.
+BIAN-19 exists in SOT (T6.04 L800) and mapping files but is **absent from BIAN_index_SOT.md**. The v2 index only goes to BIAN-17. BIAN-18 and BIAN-19 are documented in the SOT BIAN table (L857) but not in the standalone gap index.
 
 ### ✅ No node conflict
 

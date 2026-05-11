@@ -356,7 +356,7 @@ Lemma S1-Λ:
 |------|------|
 | system_mapping_SOT.md | Source of Truth definitions |
 | system_be_full.md | Node registry (263 nodes) |
-| BIAN_index_from_RCA_mapping.md | Gap diagnosis |
+| BIAN_index_SOT.md | Gap diagnosis |
 | pre_symbolic_stratum.md | Category 10 prescription |
 | epistemic_commitment_operator.md | Category 08 prescription |
 | E4_pre_symbolic_stratum_postulate.md | Phase ① architecture |
@@ -410,4 +410,4 @@ Lemma S1-Λ:
 
 ---
 
-*Source: E4_pre_symbolic_stratum_postulate.md, E5_internal_encoding_postulate.md, E3_epistemic_commitment_postulate.md, pre_symbolic_stratum.md, epistemic_commitment_operator.md, system_mapping_SOT.md, system_be_full.md, BIAN_index_from_RCA_mapping.md*
+*Source: E4_pre_symbolic_stratum_postulate.md, E5_internal_encoding_postulate.md, E3_epistemic_commitment_postulate.md, pre_symbolic_stratum.md, epistemic_commitment_operator.md, system_mapping_SOT.md, system_be_full.md, BIAN_index_SOT.md*

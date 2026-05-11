@@ -171,7 +171,7 @@ E7 depends on E1: self-certification (E1) establishes that a measurement CAN be 
 
 | Layer | Document | Role |
 |-------|----------|------|
-| Gap | SOT BIAN table L856 (also absent from BIAN_index_v2) | Diagnosis |
+| Gap | SOT BIAN table L856 (also absent from BIAN_index_SOT) | Diagnosis |
 | Category | dual_phase_epistemic_certification.md (Category 04) | Prescription |
 | Framework | **This document (E7)** | Architecture |
 
@@ -194,9 +194,9 @@ E7 depends on E1: self-certification (E1) establishes that a measurement CAN be 
 
 ## 9. RCA Findings / Phát hiện RCA
 
-### ⚠️ Finding 1: BIAN-18 missing from BIAN_index_v2
+### ⚠️ Finding 1: BIAN-18 missing from BIAN_index_SOT
 
-Same as E6 (BIAN-19): BIAN-18 exists in SOT BIAN table (L856) and mapping files but is **absent from BIAN_index_v2.md**. The v2 index stops at BIAN-17.
+Same as E6 (BIAN-19): BIAN-18 exists in SOT BIAN table (L856) and mapping files but is **absent from BIAN_index_SOT.md**. The v2 index stops at BIAN-17.
 
 ### ⚠️ Finding 2: No dedicated BE node
 

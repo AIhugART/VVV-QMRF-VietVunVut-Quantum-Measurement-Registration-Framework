@@ -104,7 +104,7 @@ The Commitment Operator V̂_yava acts on internal correlate M_i:
 | SOT section | T2.04 |
 | Name | Vyavasaya (Determinate judgment / Epistemic verdict) |
 | Node status | **No dedicated node** — Vyavasāya is a process concept without a node in the 263-node BE system (SOT T2.04 L324) |
-| BIAN_index_v2 status | ✔️ Corrected 2026-05-11: BIAN-5 row updated to no-node status |
+| BIAN_index_SOT status | ✔️ Corrected 2026-05-11: BIAN-5 row updated to no-node status |
 | Previous error | N_BE_00155 was incorrectly assigned to Vyavasāya. N_BE_00155 = **Sādhya** (Logic, system_be_full.md L187) |
 
 ### 5c. Key quotation
@@ -124,10 +124,10 @@ The Commitment Operator V̂_yava acts on internal correlate M_i:
 | File | N_BE_00155 = | Status |
 |------|-------------|--------|
 | system_be_full.md L187 | **Sādhya** (Property to be established) | ✔️ SOT (unchanged) |
-| BIAN_index_v2.md L33 | ~~Vyavasāya~~ → **— (no node)** | ✔️ Fixed 2026-05-11 |
+| BIAN_index_SOT.md L33 | ~~Vyavasāya~~ → **— (no node)** | ✔️ Fixed 2026-05-11 |
 | SOT T2.04 L324 | "No separate node" | ✔️ Confirmed |
 
-**Resolution:** BIAN_index_v2.md corrected. BIAN-5 now has no-node status (like BIAN-12, 13, 15, 18). Edge ED_BE_00125 returned to Sādhya→Pakṣa (Logic subsystem).
+**Resolution:** BIAN_index_SOT.md corrected. BIAN-5 now has no-node status (like BIAN-12, 13, 15, 18). Edge ED_BE_00125 returned to Sādhya→Pakṣa (Logic subsystem).
 
 ### ⚠️ Finding 2: BIAN-4 Coverage
 
@@ -144,7 +144,7 @@ E1 (Self-Certification)
 
 | Layer | Document | Role |
 |-------|----------|------|
-| Gap | BIAN_index_v2.md row 5 | Diagnosis |
+| Gap | BIAN_index_SOT.md row 5 | Diagnosis |
 | Category | epistemic_commitment_operator.md | Prescription |
 | Framework | **This document (E3)** | Architecture |
 
@@ -160,7 +160,7 @@ E1 (Self-Certification)
 | "Resolves Heisenberg cut" | **D** | Applied consequence |
 | "C(I) formalism" | **D** | Proposed |
 | "V̂_yava operator" | **D** | Proposed |
-| "Node ID N_BE_00155" | **✔️ RESOLVED** | BIAN_index_v2 corrected 2026-05-11 |
+| "Node ID N_BE_00155" | **✔️ RESOLVED** | BIAN_index_SOT corrected 2026-05-11 |
 
 ---
 
@@ -172,4 +172,4 @@ E1 (Self-Certification)
 
 ---
 
-*Source: BIAN_index_v2.md, system_be_full.md, system_mapping_SOT.md, epistemic_commitment_operator.md, QM_measurement_epistemic_postulates_framework.md*
+*Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, epistemic_commitment_operator.md, QM_measurement_epistemic_postulates_framework.md*

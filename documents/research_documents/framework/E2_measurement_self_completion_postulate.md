@@ -123,7 +123,7 @@ E1 (Self-Certification)
 
 | Layer | Document | Role |
 |-------|----------|------|
-| Gap | BIAN_index_v2.md row 16 | Diagnosis |
+| Gap | BIAN_index_SOT.md row 16 | Diagnosis |
 | Category | measurement_self_completion.md | Prescription |
 | Framework | **This document (E2)** | Architecture |
 
@@ -148,4 +148,4 @@ E1 (Self-Certification)
 
 ---
 
-*Source: BIAN_index_v2.md, system_be_full.md, system_mapping_SOT.md, measurement_self_completion.md, QM_measurement_epistemic_postulates_framework.md*
+*Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, measurement_self_completion.md, QM_measurement_epistemic_postulates_framework.md*

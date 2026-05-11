@@ -139,7 +139,7 @@ E3 (Epistemic Commitment) — committed as definite knowledge
 
 | Layer | Document | Role |
 |-------|----------|------|
-| Gap | BIAN_index_v2.md row 7 | Diagnosis |
+| Gap | BIAN_index_SOT.md row 7 | Diagnosis |
 | Category | category/pre_symbolic_stratum.md (Cat 10) | Prescription |
 | Framework | **This document (E4)** | Architecture |
 
@@ -166,4 +166,4 @@ E3 (Epistemic Commitment) — committed as definite knowledge
 
 ---
 
-*Source: BIAN_index_v2.md, system_be_full.md, system_mapping_SOT.md, QM_measurement_epistemic_postulates_framework.md*
+*Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, QM_measurement_epistemic_postulates_framework.md*
