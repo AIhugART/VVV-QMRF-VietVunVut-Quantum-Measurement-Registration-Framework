@@ -13,7 +13,7 @@
 **Version / Phiên bản:** 1.0 — Stable Final  
 **Status / Trạng thái:** ✅ Complete — 7 Postulates, 2 Lemmas, 20/20 BIAN gaps resolved  
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-1.0  
-**Inspiration / Cảm hứng:** Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*)
+**Inspiration / Cảm hứng:** Albert Einstein — tác giả Thuyết tương đối hẹp (1905) và Thuyết tương đối rộng (1915); Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*)
 
 ---
 
