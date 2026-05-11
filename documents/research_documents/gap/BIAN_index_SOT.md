@@ -28,24 +28,24 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 | BIAN | Structural concept | Node | Layer | BE concept | Pali/Sanskrit | Lens | QM# | QM concept | RCA | Resolution |
 |------|--------------------|------|-------|------------|---------------|------|----:|------------|-----|------------|
 | BIAN-1 | Post-Detection Internal Representational State | N_BE_00010 | core | Mental consciousness | Mano-vijñāna | A3 | 40 | SME | Weak | ✅ Resolved — Lemma S1-Λ |
-| BIAN-2 | Observer Self-Reference / Reflexive Cognition | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | Quantum Trajectory | Weak | 🔓 Open |
+| BIAN-2 | Observer Self-Reference / Reflexive Cognition | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | Quantum Trajectory | Weak | ✅ Resolved — Cat 05 + E1 |
 | BIAN-3 | Limit-Case Observation by Different Faculty | N_BE_00012 | core | Transcendental perception | Alaukika pratyakṣa | A3 | 28 | Weak Measurement | Weak | 🔓 Open |
-| BIAN-4 | Measurement Representation / Internal Encoding | — | — | — | Ākāra | — | — | — | — | 🔓 Open (no node) |
-| BIAN-5 | Epistemic Commitment Act / Moment of Determination | — | — | — | Vyavasāya | — | — | — | — | 🔓 Open (no node) |
-| BIAN-6 | Self-Certifying Measurement / No External Meta-Level | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | Quantum Trajectory | Weak | 🔓 Open |
-| BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | N_BE_00009 | core | Non-conceptual perception | Nirvikalpaka pratyakṣa | A3 | 14 | PVM | Medium | 🔓 Open |
+| BIAN-4 | Measurement Representation / Internal Encoding | — | — | — | Ākāra | — | — | — | — | ✅ Resolved — Cat 08 + E5 (no node) |
+| BIAN-5 | Epistemic Commitment Act / Moment of Determination | — | — | — | Vyavasāya | — | — | — | — | ✅ Resolved — Cat 08 + E3 (no node) |
+| BIAN-6 | Self-Certifying Measurement / No External Meta-Level | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | Quantum Trajectory | Weak | ✅ Resolved — Cat 05 + E1 |
+| BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | N_BE_00009 | core | Non-conceptual perception | Nirvikalpaka pratyakṣa | A3 | 14 | PVM | Medium | ✅ Resolved — Cat 10 + E4 |
 | BIAN-8 | Epistemological Theorization of Temporal Discontinuity | N_BE_00029 | core | Momentariness | Kṣaṇabhaṅgavāda | A1 | 37 | Quantum Jump Case | Medium | 🔓 Open |
 | BIAN-9 | Formal Cognition of Absence as Distinct Category | N_BE_00253 | RCA | Non-perception | Anupalabdhi | A3 | 33 | Null Measurement | Strong | 🔓 Open |
 | BIAN-10 | Non-Classical Correlation / Entanglement as Third Relation | N_BE_00021 | core | Essential relation | Svabhāvapratibandha | A1 | 75 | Hamiltonian H | Medium | 🔓 Open |
 | BIAN-11 | Observer Epistemic Indeterminacy before Measurement | N_BE_00007 | core | Doubt | Saṃśaya | A2 | 91 | Hidden Variable Theories | Medium | 🔓 Open |
-| BIAN-12 | Formal Measurement Invalidation / Epistemological Override | — | — | — | bādhaka pramāṇa | — | — | — | — | 🔓 Open (no node) |
-| BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | — | — | — | anadhyavasāya | — | — | — | — | 🔓 Open (no node) |
-| BIAN-14 | Tripartite Measurement Validity Conditions | N_BE_00018 | core | Triple-condition syllogism | Trairūpya | A1 | 8 | Four Postulates of QM | Medium | 🔓 Open |
-| BIAN-15 | Purely Contrastive Quantum Evidence Structure | — | — | — | kevalavyatirekin | — | — | — | — | 🔓 Open (no node) |
-| BIAN-16 | Measurement Self-Completion / No External Registration | N_BE_00001 | core | Valid cognition | Pramāṇa | A3 | 19 | Measurement (Physical Act) | Strong | 🔓 Open |
-| BIAN-17 | Regress-Stopping Principle for Measurement Chain | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | Quantum Trajectory | Weak | 🔓 Open |
-| BIAN-18 | Intrinsic vs Extrinsic Measurement Validity Location | — | — | — | svataḥ/parataḥ prāmāṇya | — | — | — | — | 🔓 Open (no node) |
-| BIAN-19 | Observer as Causal Process not Substance | N_BE_00066 | RCA | Non-self doctrine | Anātmavāda | A2 | 47 | Entanglement | Medium | 🔓 Open |
+| BIAN-12 | Formal Measurement Invalidation / Epistemological Override | — | — | — | bādhaka pramāṇa | — | — | — | — | ⚠️ Partial — Cat 03 only |
+| BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | — | — | — | anadhyavasāya | — | — | — | — | ⚠️ Partial — Cat 06 only |
+| BIAN-14 | Tripartite Measurement Validity Conditions | N_BE_00018 | core | Triple-condition syllogism | Trairūpya | A1 | 8 | Four Postulates of QM | Medium | ⚠️ Partial — Cat 09 only |
+| BIAN-15 | Purely Contrastive Quantum Evidence Structure | — | — | — | kevalavyatirekin | — | — | — | — | ⚠️ Partial — Cat 01 only |
+| BIAN-16 | Measurement Self-Completion / No External Registration | N_BE_00001 | core | Valid cognition | Pramāṇa | A3 | 19 | Measurement (Physical Act) | Strong | ✅ Resolved — Cat 06 + E2 |
+| BIAN-17 | Regress-Stopping Principle for Measurement Chain | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | Quantum Trajectory | Weak | ✅ Resolved — Cat 05 + E1 |
+| BIAN-18 | Intrinsic vs Extrinsic Measurement Validity Location | — | — | — | svataḥ/parataḥ prāmāṇya | — | — | — | — | ✅ Resolved — Cat 04 + E7 (no node) |
+| BIAN-19 | Observer as Causal Process not Substance | N_BE_00066 | RCA | Non-self doctrine | Anātmavāda | A2 | 47 | Entanglement | Medium | ✅ Resolved — Cat 07 + E6 |
 | BIAN-20 | Reserved — Entanglement correlation type | N_BE_00021 | core | Essential relation | Svabhāvapratibandha | A1 | 75 | Hamiltonian H | Medium | 🔒 Reserved (see BIAN-10) |
 
 ---
@@ -55,24 +55,24 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 | BIAN | Status | Resolution method | SOT file | Date |
 |------|:------:|-------------------|----------|------|
 | BIAN-1 | ✅ Resolved | Lemma S1-Λ (not postulate E8) | `gap/BIAN1_E8_vs_lemma_decision.md`, `gap/BIAN1_resolution_verification.md` | 2026-05-11 |
-| BIAN-2 | 🔓 Open | — | — | — |
+| BIAN-2 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/self_certifying_measurement.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
 | BIAN-3 | 🔓 Open | — | — | — |
-| BIAN-4 | 🔓 Open | No node in BE system | — | — |
-| BIAN-5 | 🔓 Open | No node in BE system | — | — |
-| BIAN-6 | 🔓 Open | — | — | — |
-| BIAN-7 | 🔓 Open | — | — | — |
+| BIAN-4 | ✅ Resolved | Category 08 + E5 (no node — Ākāra structurally addressed) | `category/epistemic_commitment_operator.md`, `framework/E5_internal_encoding_postulate.md` | 2026-05-12 |
+| BIAN-5 | ✅ Resolved | Category 08 + E3 (no node — Vyavasāya structurally addressed) | `category/epistemic_commitment_operator.md`, `framework/E3_epistemic_commitment_postulate.md` | 2026-05-12 |
+| BIAN-6 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/self_certifying_measurement.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
+| BIAN-7 | ✅ Resolved | Category 10 + E4 (Nirvikalpaka pipeline) | `category/pre_symbolic_stratum.md`, `framework/E4_pre_symbolic_stratum_postulate.md` | 2026-05-12 |
 | BIAN-8 | 🔓 Open | — | — | — |
 | BIAN-9 | 🔓 Open | — | — | — |
 | BIAN-10 | 🔓 Open | — | — | — |
 | BIAN-11 | 🔓 Open | — | — | — |
-| BIAN-12 | 🔓 Open | No node in BE system | — | — |
-| BIAN-13 | 🔓 Open | No node in BE system | — | — |
-| BIAN-14 | 🔓 Open | — | — | — |
-| BIAN-15 | 🔓 Open | No node in BE system | — | — |
-| BIAN-16 | 🔓 Open | — | — | — |
-| BIAN-17 | 🔓 Open | — | — | — |
-| BIAN-18 | 🔓 Open | No node in BE system | — | — |
-| BIAN-19 | 🔓 Open | — | — | — |
+| BIAN-12 | ⚠️ Partial | Category 03 only — E-postulate pending | `category/retroactive_epistemic_override.md` | 2026-05-12 |
+| BIAN-13 | ⚠️ Partial | Category 06 only — E-postulate pending | `category/null_observer_event.md` | 2026-05-12 |
+| BIAN-14 | ⚠️ Partial | Category 09 only — E-postulate pending | `category/tripartite_validity_matrix.md` | 2026-05-12 |
+| BIAN-15 | ⚠️ Partial | Category 01 only — E-postulate pending | `category/contrapositive_quantum_evidence.md` | 2026-05-12 |
+| BIAN-16 | ✅ Resolved | Category 06 + E2 (Pramāṇa pipeline) | `category/measurement_self_completion.md`, `framework/E2_measurement_self_completion_postulate.md` | 2026-05-12 |
+| BIAN-17 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/self_certifying_measurement.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
+| BIAN-18 | ✅ Resolved | Category 04 + E7 (no node — svataḥ/parataḥ structurally addressed) | `category/dual_phase_epistemic_certification.md`, `framework/E7_epistemic_validity_location_postulate.md` | 2026-05-12 |
+| BIAN-19 | ✅ Resolved | Category 07 + E6 (Anātmavāda pipeline) | `category/observer_as_process.md`, `framework/E6_observer_as_process_postulate.md` | 2026-05-12 |
 | BIAN-20 | 🔒 Reserved | See BIAN-10 | — | — |
 
 > **BIAN-1 resolution note:** Λ operator (E4) formally covers the transition gap. N_BE_00010 is the receiver (E5-side), not the transition operator. See `synthesis/epistemic_measurement_pipeline.md §4d`.
@@ -224,8 +224,10 @@ No separate node exists in the 263-node BE system. These concepts are structural
 | Reserved | 1 |
 | Unique node codes | 11 |
 | Total edges | 57 |
-| Resolved | 1 (BIAN-1) |
-| Open | 18 |
+| Resolved (full pipeline) | 10 (BIAN-1, 2, 4, 5, 6, 7, 16, 17, 18, 19) |
+| Partial (category only) | 4 (BIAN-12, 13, 14, 15) |
+| Open | 5 (BIAN-3, 8, 9, 10, 11) |
+| Reserved | 1 (BIAN-20) |
 
 ### By framework lens
 
@@ -264,6 +266,8 @@ No separate node exists in the 263-node BE system. These concepts are structural
 | 2026-05-11 | BIAN-4 | Node correction | N_BE_00151 (Ākāra) | — (no node) | N_BE_00151 = Abhāva (Ontology), not Ākāra |
 | 2026-05-11 | BIAN-5 | Node correction | N_BE_00155 (Vyavasāya) | — (no node) | N_BE_00155 = Sādhya (Logic), not Vyavasāya |
 | 2026-05-12 | ALL | SOT consolidation | 3 separate files | BIAN_index_SOT.md | Merge of v1, v2, from_RCA_mapping |
+| 2026-05-12 | BIAN-2,4,5,6,7,16,17,18,19 | Resolution status | 🔓 Open | ✅ Resolved | De facto pipeline (Category + Framework) confirmed by RCA audit |
+| 2026-05-12 | BIAN-12,13,14,15 | Resolution status | 🔓 Open | ⚠️ Partial | Category document exists; E-postulate pending |
 
 ---
 
