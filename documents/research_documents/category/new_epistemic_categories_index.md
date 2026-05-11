@@ -4,6 +4,9 @@
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
+**Date:** 2026-05-11  
+**Status:** Index — Epistemic class M (Maintained registry)  
+**Lineage:** gap/ (BIAN-1–BIAN-20) → category/ (Category 01–10) → framework/ (E1–E7)
 
 > **Context / Ngữ cảnh:**  
 > This document catalogs the 10 foundational epistemic categories newly established to resolve the structural gaps (BIAN) discovered during the Root Cause Analysis (RCA) mapping between Buddhist Epistemology and Quantum Measurement formalism. These 10 categories collectively upgrade Quantum Mechanics from a purely predictive mathematical tool into a logically complete, self-critical epistemic system.

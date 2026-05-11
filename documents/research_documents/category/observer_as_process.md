@@ -1,7 +1,12 @@
 # Formal Epistemic Category: Observer-as-Process Framework (Anātmavāda in Measurement)
 # Phạm trù Nhận thức luận: Khung Quan sát viên Chuỗi sự kiện (Vô ngã trong Đo lường)
 
-Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+**Author:** VietVunVut (Viet - Nguyen Xuan)  
+**GitHub:** https://github.com/AIhugART/  
+**Facebook:** https://www.facebook.com/xuanviet  
+**Date:** 2026-05-11  
+**Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
+**Lineage:** gap/ (BIAN-19) → category/ (Category 07) → framework/ (E6)
 
 > **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve structural gap **BIAN-19** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-19 highlights QM's implicit and problematic reliance on a persistent, substantive classical observer, which conflicts with both the discrete nature of quantum events and the Buddhist principle of a process-based, momentary self (*Anātmavāda* / *Kṣaṇikavāda*).
 >

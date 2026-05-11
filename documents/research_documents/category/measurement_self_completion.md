@@ -1,7 +1,12 @@
 # Formal Epistemic Category: Measurement Self-Completion Matrix (Pramāṇa-Phala Identity)
 # Phạm trù Nhận thức luận: Sự Tự hoàn tất Phép đo (Sự đồng nhất giữa Nhận thức và Kết quả)
 
-Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+**Author:** VietVunVut (Viet - Nguyen Xuan)  
+**GitHub:** https://github.com/AIhugART/  
+**Facebook:** https://www.facebook.com/xuanviet  
+**Date:** 2026-05-11  
+**Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
+**Lineage:** gap/ (BIAN-16) → category/ (Category 02) → framework/ (E2)
 
 > **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve structural gap **BIAN-16** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-16 highlights QM's failure to formally unite the physical act of measurement with the resulting epistemic outcome into a single irreducible event (equivalent to the *Pramāṇa-Phala identity* in Buddhist logic).
 >

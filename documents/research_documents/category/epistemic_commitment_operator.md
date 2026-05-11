@@ -1,7 +1,12 @@
 # Formal Epistemic Category: Epistemic Commitment Operator (Ākāra & Vyavasāya)
 # Phạm trù Nhận thức luận: Toán tử Kiến lập Nhận thức (Ảnh tượng & Phán đoán)
 
-Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+**Author:** VietVunVut (Viet - Nguyen Xuan)  
+**GitHub:** https://github.com/AIhugART/  
+**Facebook:** https://www.facebook.com/xuanviet  
+**Date:** 2026-05-11  
+**Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
+**Lineage:** gap/ (BIAN-4, BIAN-5) → category/ (Category 08) → framework/ (E3)
 
 > **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve structural gaps **BIAN-4 and BIAN-5** identified in the Buddhist Epistemology - Quantum Measurement mapping. These gaps highlight QM's failure to formalize the transition from a purely physical macroscopic state (e.g., a dial pointing to 'UP') to an actual subjective state of knowledge (equivalent to the concepts of *Ākāra* - internal representation, and *Vyavasāya* - epistemic determination in Buddhist logic).
 >

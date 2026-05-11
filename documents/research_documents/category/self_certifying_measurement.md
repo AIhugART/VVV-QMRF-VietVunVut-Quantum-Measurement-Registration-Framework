@@ -1,7 +1,12 @@
 # Formal Epistemic Category: Self-Certifying Measurement Operator (Regress-Stopping Principle)
 # Phạm trù Nhận thức luận: Toán tử Tự chứng Phép đo (Nguyên lý Chấm dứt Chuỗi Vô hạn)
 
-Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+**Author:** VietVunVut (Viet - Nguyen Xuan)  
+**GitHub:** https://github.com/AIhugART/  
+**Facebook:** https://www.facebook.com/xuanviet  
+**Date:** 2026-05-11  
+**Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
+**Lineage:** gap/ (BIAN-2, 6, 17) → category/ (Category 05) → framework/ (E1)
 
 > **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve the structural gaps **BIAN-2, BIAN-6, and BIAN-17** identified in the Buddhist Epistemology - Quantum Measurement mapping. These gaps highlight QM's inability to stop the infinite von Neumann measurement chain without appealing to an external meta-observer (equivalent to the absence of *Svasaṃvedana* - Self-awareness in Buddhist logic).
 >

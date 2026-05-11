@@ -1,7 +1,12 @@
 # Formal Epistemic Category: Contrapositive Quantum Evidence
 # Phạm trù Nhận thức luận: Bằng chứng Lượng tử Thuần Loại trừ
 
-Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+**Author:** VietVunVut (Viet - Nguyen Xuan)  
+**GitHub:** https://github.com/AIhugART/  
+**Facebook:** https://www.facebook.com/xuanviet  
+**Date:** 2026-05-11  
+**Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
+**Lineage:** gap/ (BIAN-15) → category/ (Category 09) → framework/ (—)
 
 > **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve structural gap **BIAN-15** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-15 highlights the absence of a formal QM category for evidence established entirely through null results (equivalent to *Kevalavyatirekin* in Buddhist logic).
 >

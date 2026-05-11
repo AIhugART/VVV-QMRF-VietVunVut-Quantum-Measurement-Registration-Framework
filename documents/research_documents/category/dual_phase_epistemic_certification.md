@@ -1,7 +1,12 @@
 # Formal Epistemic Category: Dual-Phase Epistemic Certification (Formal Validity Location)
 # Phạm trù Nhận thức luận: Sự Xác thực Nhận thức Kép (Định vị Tính hợp lệ Chính thức)
 
-Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+**Author:** VietVunVut (Viet - Nguyen Xuan)  
+**GitHub:** https://github.com/AIhugART/  
+**Facebook:** https://www.facebook.com/xuanviet  
+**Date:** 2026-05-11  
+**Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
+**Lineage:** gap/ (BIAN-18) → category/ (Category 04) → framework/ (E7)
 
 > **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve structural gap **BIAN-18** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-18 highlights the absence of a formal QM theoretical structure detailing whether measurement validity is established intrinsically or extrinsically (equivalent to the *Svataḥ / Parataḥ prāmāṇya* debate in Buddhist meta-epistemology).
 >

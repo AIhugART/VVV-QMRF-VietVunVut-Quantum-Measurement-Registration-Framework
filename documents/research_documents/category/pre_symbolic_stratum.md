@@ -1,7 +1,12 @@
 # Formal Epistemic Category: Pre-Symbolic Stratum / Formalism-External Physical Event
 # Phạm trù Nhận thức luận: Tầng Tiền Biểu tượng / Sự kiện Vật lý Ngoài Hình thức
 
-Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+**Author:** VietVunVut (Viet - Nguyen Xuan)  
+**GitHub:** https://github.com/AIhugART/  
+**Facebook:** https://www.facebook.com/xuanviet  
+**Date:** 2026-05-11  
+**Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
+**Lineage:** gap/ (BIAN-7) → category/ (Category 10) → framework/ (E4)
 
 > **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve the structural gap **BIAN-7** identified in the Buddhist Epistemology - Quantum Measurement mapping. This gap highlights QM's inability to represent the pre-symbolic, pre-conceptual physical event that precedes the emergence of a definite eigenvalue.
 >
