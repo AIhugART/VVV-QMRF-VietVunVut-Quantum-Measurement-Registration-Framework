@@ -5,7 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Method: Tier-by-tier mapping (system) augmented with four interpretive lenses as a secondary heuristic layer. The six-tier Pramāṇavāda structure remains the primary backbone.
 ## Scope: Epistemology only. No metaphysics, soteriology, or cosmology.
 ## Node/Edge Codes: Nodes from [node_pub_doc_Buddhist_Epistemology.md](../../published_documents/node_pub_doc_Buddhist_Epistemology.md); Edges from [edge_pub_doc_Buddhist_Epistemology.md](../../published_documents/edge_pub_doc_Buddhist_Epistemology.md)
-## Interpretive lens source: [bei_framework_4_axioms.md](../Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
+## Interpretive lens source: [bei_framework_4_axioms.md](../achives/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
 
 ---
 

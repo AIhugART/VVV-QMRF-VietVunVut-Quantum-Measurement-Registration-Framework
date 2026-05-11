@@ -6,7 +6,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Method: Axiom-driven clustering. BE nodes and edges from published documents are assigned to the axiom they structurally support. Each axiom is mapped to its Quantum Measurement interpretation.
 ## Scope: Epistemology only. No metaphysics, soteriology, or cosmology.
 ## Node/Edge Codes: Nodes from [node_pub_doc_Buddhist_Epistemology.md](../published_documents/node_pub_doc_Buddhist_Epistemology.md); Edges from [edge_pub_doc_Buddhist_Epistemology.md](../published_documents/edge_pub_doc_Buddhist_Epistemology.md)
-## Framework source: [bei_framework_4_axioms.md](Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
+## Framework source: [bei_framework_4_axioms.md](../achives/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
 
 ---
 

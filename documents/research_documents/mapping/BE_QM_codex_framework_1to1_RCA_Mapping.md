@@ -10,7 +10,7 @@ This pure Markdown document maps each Buddhist Epistemology RCA-table row to exa
 
 - Buddhist source table: `documents/published_documents/The_Buddhist_Pramana_Epistemology_Logic_and_Language_RCA_Table.md`
 - Quantum Measurement source table: `documents/published_documents/QM_Measurement_Unified_Concept_Table.md`
-- Framework guide: `documents/research_documents/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md`
+- Framework guide: `documents/research_documents/achives/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md`
 - Canonical BIAN source: `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` — BIAN Index at L833-L856; BIAN notes at L890-L893.
 
 ## Framework lens key

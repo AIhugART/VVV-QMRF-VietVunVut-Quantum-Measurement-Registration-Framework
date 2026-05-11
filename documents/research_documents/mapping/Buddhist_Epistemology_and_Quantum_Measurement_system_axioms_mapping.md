@@ -5,7 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Method: Tier-by-tier mapping (system) augmented with 4-axiom synthesis (framework). Axiom layer is additive — tier structure remains the primary backbone.
 ## Scope: Epistemology only. No metaphysics, soteriology, or cosmology.
 ## Node/Edge Codes: Nodes from [node_pub_doc_Buddhist_Epistemology.md](../published_documents/node_pub_doc_Buddhist_Epistemology.md); Edges from [edge_pub_doc_Buddhist_Epistemology.md](../published_documents/edge_pub_doc_Buddhist_Epistemology.md)
-## Axiom framework: [bei_framework_4_axioms.md](Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
+## Axiom framework: [bei_framework_4_axioms.md](../achives/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
 
 ---
 
