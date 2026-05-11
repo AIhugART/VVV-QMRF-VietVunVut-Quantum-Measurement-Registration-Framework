@@ -465,6 +465,7 @@ BIAN-1 → S1-Λ (constructive)
 | GCS | RCA_gap_classification_system.md | ✅ |
 | ENI + MIP + PCC | RCA_BIAN1_new_epistemic.md | ✅ |
 | Capstone synthesis | RCA_BIAN1_epistemic_establishment.md | ✅ |
+| Mathematical Model | VVV_EQM_Mathematical_Formalization.md | ✅ |
 
 ### 12d. Node Investigations
 
