@@ -279,7 +279,7 @@ Nirvikalpaka pratyakṣa      Mānasa pratyakṣa              Ākāra
 | Priority | Action | Target file |
 |:--------:|--------|-------------|
 | 1 | Thêm Lemma S1-Λ vào S1 pipeline | `synthesis/epistemic_measurement_pipeline.md` |
-| 2 | Cập nhật BIAN-1 status → "Resolved via S1-Λ" | `gap/BIAN_index_v2.md` |
+| 2 | Cập nhật BIAN-1 status → "Resolved via S1-Λ" | `gap/BIAN_index_SOT.md` |
 | 3 | Confirm: N_BE_00010 → E5 receiver (not transition operator) | `category/` or inline note |
 
 ---

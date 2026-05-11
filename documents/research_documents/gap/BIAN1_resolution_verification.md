@@ -244,10 +244,10 @@ Lemma S1-Λ:
 
 | Document | Section | BIAN-1 status |
 |----------|---------|:-------------:|
-| `gap/BIAN_gap_analysis_ver_01.md` | §BIAN-1, L26-33 | ✅ Original gap |
-| `gap/BIAN_index_v2.md` | Master Table Row 1 | ✅ "Resolved via Lemma S1-Λ" |
-| `gap/BIAN_index_v2.md` | Edge Section §BIAN-1 | ✅ RCA note added |
-| `gap/BIAN_index_from_RCA_mapping.md` | Row 1 | ✅ N_BE_00010, Weak |
+| `achives/gap/BIAN_gap_analysis_ver_01.md` | §BIAN-1, L26-33 | ✅ Original gap |
+| `achives/gap/BIAN_index_v2.md` | Master Table Row 1 | ✅ "Resolved via Lemma S1-Λ" |
+| `achives/gap/BIAN_index_v2.md` | Edge Section §BIAN-1 | ✅ RCA note added |
+| `achives/gap/BIAN_index_from_RCA_mapping.md` | Row 1 | ✅ N_BE_00010, Weak |
 | `category/pre_symbolic_stratum.md` | §1: ε(M), Λ | ✅ Λ operator defined |
 | `framework/E4_pre_symbolic_stratum_postulate.md` | §3: r = Λ(ε(M)) | ✅ Λ formalized |
 | `framework/E5_internal_encoding_postulate.md` | §3b: Phase 2 | ✅ Receiver side |
@@ -340,8 +340,8 @@ Nirvikalpaka pratyakṣa      Mānasa pratyakṣa              Ākāra
 | File | Relevance | Status |
 |------|-----------|:------:|
 | [BIAN_gap_analysis_ver_01.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/achives/gap/BIAN_gap_analysis_ver_01.md) | Original BIAN-1 definition | ✅ |
-| [BIAN_index_v2.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/gap/BIAN_index_v2.md) | Master table + edge section | ✅ Updated |
-| [BIAN_index_from_RCA_mapping.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/gap/BIAN_index_from_RCA_mapping.md) | 1:1 mapping coordinates | ✅ |
+| [BIAN_index_v2.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/achives/gap/BIAN_index_v2.md) | Master table + edge section | ✅ Updated |
+| [BIAN_index_from_RCA_mapping.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/achives/gap/BIAN_index_from_RCA_mapping.md) | 1:1 mapping coordinates | ✅ |
 | [E4_pre_symbolic_stratum_postulate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/E4_pre_symbolic_stratum_postulate.md) | Λ operator origin | ✅ |
 | [E5_internal_encoding_postulate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/E5_internal_encoding_postulate.md) | Receiver side (Phase 2) | ✅ |
 | [pre_symbolic_stratum.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/pre_symbolic_stratum.md) | Category-level Λ definition | ✅ |
