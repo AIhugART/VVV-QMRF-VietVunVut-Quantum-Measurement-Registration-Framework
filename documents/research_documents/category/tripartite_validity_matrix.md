@@ -7,7 +7,7 @@
 **Facebook:** https://www.facebook.com/xuanviet  
 **Date:** 2026-05-11  
 **Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
-**Lineage:** gap/ (BIAN-14) → category/ (Category 01) → framework/ (E3)
+**Lineage:** gap/ (BIAN-14) → category/ (Category 01) → framework/ (E10)
 
 > **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve structural gap **BIAN-14** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-14 highlights QM's lack of a rigorous, formal logical criterion to distinguish a true "Measurement Apparatus" from mere random environmental noise (equivalent to Dignāga's *Trairūpya* - the Three Conditions of a Valid Logical Mark).
 >

@@ -7,7 +7,7 @@
 **Facebook:** https://www.facebook.com/xuanviet  
 **Date:** 2026-05-11  
 **Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
-**Lineage:** gap/ (BIAN-13) → category/ (Category 06) → framework/ (E6)
+**Lineage:** gap/ (BIAN-13) → category/ (Category 06) → framework/ (E9)
 
 > **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve structural gap **BIAN-13** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-13 highlights the absence of a formal QM category for the state of an observer when a quantum event is causally present but produces no epistemic outcome (equivalent to *Anadhyavasāya* in Buddhist logic).
 >

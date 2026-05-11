@@ -38,10 +38,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 | BIAN-9 | Formal Cognition of Absence as Distinct Category | N_BE_00253 | RCA | Non-perception | Anupalabdhi | A3 | 33 | Null Measurement | Strong | 🔓 Open |
 | BIAN-10 | Non-Classical Correlation / Entanglement as Third Relation | N_BE_00021 | core | Essential relation | Svabhāvapratibandha | A1 | 75 | Hamiltonian H | Medium | 🔓 Open |
 | BIAN-11 | Observer Epistemic Indeterminacy before Measurement | N_BE_00007 | core | Doubt | Saṃśaya | A2 | 91 | Hidden Variable Theories | Medium | 🔓 Open |
-| BIAN-12 | Formal Measurement Invalidation / Epistemological Override | — | — | — | bādhaka pramāṇa | — | — | — | — | ⚠️ Partial — Cat 03 only |
-| BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | — | — | — | anadhyavasāya | — | — | — | — | ⚠️ Partial — Cat 06 only |
-| BIAN-14 | Tripartite Measurement Validity Conditions | N_BE_00018 | core | Triple-condition syllogism | Trairūpya | A1 | 8 | Four Postulates of QM | Medium | ⚠️ Partial — Cat 09 only |
-| BIAN-15 | Purely Contrastive Quantum Evidence Structure | — | — | — | kevalavyatirekin | — | — | — | — | ⚠️ Partial — Cat 01 only |
+| BIAN-12 | Formal Measurement Invalidation / Epistemological Override | — | — | — | bādhaka pramāṇa | — | — | — | — | ✅ Resolved — Cat 03 + E8 (no node) |
+| BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | — | — | — | anadhyavasāya | — | — | — | — | ✅ Resolved — Cat 06 + E9 (no node) |
+| BIAN-14 | Tripartite Measurement Validity Conditions | N_BE_00018 | core | Triple-condition syllogism | Trairūpya | A1 | 8 | Four Postulates of QM | Medium | ✅ Resolved — Cat 09 + E10 |
+| BIAN-15 | Purely Contrastive Quantum Evidence Structure | — | — | — | kevalavyatirekin | — | — | — | — | ✅ Resolved — Cat 01 + E11 (no node) |
 | BIAN-16 | Measurement Self-Completion / No External Registration | N_BE_00001 | core | Valid cognition | Pramāṇa | A3 | 19 | Measurement (Physical Act) | Strong | ✅ Resolved — Cat 06 + E2 |
 | BIAN-17 | Regress-Stopping Principle for Measurement Chain | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | Quantum Trajectory | Weak | ✅ Resolved — Cat 05 + E1 |
 | BIAN-18 | Intrinsic vs Extrinsic Measurement Validity Location | — | — | — | svataḥ/parataḥ prāmāṇya | — | — | — | — | ✅ Resolved — Cat 04 + E7 (no node) |
@@ -65,10 +65,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 | BIAN-9 | 🔓 Open | — | — | — |
 | BIAN-10 | 🔓 Open | — | — | — |
 | BIAN-11 | 🔓 Open | — | — | — |
-| BIAN-12 | ⚠️ Partial | Category 03 only — E-postulate pending | `category/retroactive_epistemic_override.md` | 2026-05-12 |
-| BIAN-13 | ⚠️ Partial | Category 06 only — E-postulate pending | `category/null_observer_event.md` | 2026-05-12 |
-| BIAN-14 | ⚠️ Partial | Category 09 only — E-postulate pending | `category/tripartite_validity_matrix.md` | 2026-05-12 |
-| BIAN-15 | ⚠️ Partial | Category 01 only — E-postulate pending | `category/contrapositive_quantum_evidence.md` | 2026-05-12 |
+| BIAN-12 | ✅ Resolved | Category 03 + E8 (Bādhaka pramāṇa pipeline) | `category/retroactive_epistemic_override.md`, `framework/E8_retroactive_override_postulate.md` | 2026-05-12 |
+| BIAN-13 | ✅ Resolved | Category 06 + E9 (Anadhyavasāya pipeline) | `category/null_observer_event.md`, `framework/E9_null_observer_postulate.md` | 2026-05-12 |
+| BIAN-14 | ✅ Resolved | Category 09 + E10 (Trairūpya pipeline) | `category/tripartite_validity_matrix.md`, `framework/E10_tripartite_validity_postulate.md` | 2026-05-12 |
+| BIAN-15 | ✅ Resolved | Category 01 + E11 (Kevalavyatirekin pipeline) | `category/contrapositive_quantum_evidence.md`, `framework/E11_contrapositive_evidence_postulate.md` | 2026-05-12 |
 | BIAN-16 | ✅ Resolved | Category 06 + E2 (Pramāṇa pipeline) | `category/measurement_self_completion.md`, `framework/E2_measurement_self_completion_postulate.md` | 2026-05-12 |
 | BIAN-17 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/self_certifying_measurement.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
 | BIAN-18 | ✅ Resolved | Category 04 + E7 (no node — svataḥ/parataḥ structurally addressed) | `category/dual_phase_epistemic_certification.md`, `framework/E7_epistemic_validity_location_postulate.md` | 2026-05-12 |
@@ -224,8 +224,8 @@ No separate node exists in the 263-node BE system. These concepts are structural
 | Reserved | 1 |
 | Unique node codes | 11 |
 | Total edges | 57 |
-| Resolved (full pipeline) | 10 (BIAN-1, 2, 4, 5, 6, 7, 16, 17, 18, 19) |
-| Partial (category only) | 4 (BIAN-12, 13, 14, 15) |
+| Resolved (full pipeline) | 14 (BIAN-1, 2, 4, 5, 6, 7, 12, 13, 14, 15, 16, 17, 18, 19) |
+| Partial (category only) | 0 |
 | Open | 5 (BIAN-3, 8, 9, 10, 11) |
 | Reserved | 1 (BIAN-20) |
 
@@ -267,7 +267,7 @@ No separate node exists in the 263-node BE system. These concepts are structural
 | 2026-05-11 | BIAN-5 | Node correction | N_BE_00155 (Vyavasāya) | — (no node) | N_BE_00155 = Sādhya (Logic), not Vyavasāya |
 | 2026-05-12 | ALL | SOT consolidation | 3 separate files | BIAN_index_SOT.md | Merge of v1, v2, from_RCA_mapping |
 | 2026-05-12 | BIAN-2,4,5,6,7,16,17,18,19 | Resolution status | 🔓 Open | ✅ Resolved | De facto pipeline (Category + Framework) confirmed by RCA audit |
-| 2026-05-12 | BIAN-12,13,14,15 | Resolution status | 🔓 Open | ⚠️ Partial | Category document exists; E-postulate pending |
+| 2026-05-12 | BIAN-12,13,14,15 | Resolution status | ⚠️ Partial | ✅ Resolved | E8–E11 postulates created, completing gap→category→framework pipeline |
 
 ---
 
