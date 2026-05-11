@@ -189,3 +189,5 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 ---
 
 *VietVunVut (2026). VVV-EQM: Seven Epistemic Postulates for Quantum Measurement — A Structural Analysis Grounded in Buddhist Pramāṇa Epistemology.*
+
+© 2026 VietVunVut. All Rights Reserved.
