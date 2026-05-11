@@ -218,9 +218,9 @@ No separate node exists in the 263-node BE system. These concepts are structural
 | Metric | Value |
 |--------|------:|
 | Total BIAN labels | 20 |
-| With explicit node | 12 |
+| With explicit node | 11 |
 | With nearest structural node (inferred) | 2 |
-| No node in BE system | 5 |
+| No node in BE system | 6 |
 | Reserved | 1 |
 | Unique node codes | 11 |
 | Total edges | 57 |
@@ -245,7 +245,7 @@ No separate node exists in the 263-node BE system. These concepts are structural
 | Strong | 2 | BIAN-9, 16 |
 | Medium | 7 | BIAN-7, 8, 10, 11, 14, 19, 20 |
 | Weak | 5 | BIAN-1, 2, 3, 6, 17 |
-| No mapping | 5 | BIAN-4, 5, 12, 13, 15, 18 |
+| No mapping | 6 | BIAN-4, 5, 12, 13, 15, 18 |
 
 ### Multi-BIAN nodes
 

@@ -339,7 +339,7 @@ Nirvikalpaka pratyakṣa      Mānasa pratyakṣa              Ākāra
 
 | File | Relevance | Status |
 |------|-----------|:------:|
-| [BIAN_gap_analysis_ver_01.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/gap/BIAN_gap_analysis_ver_01.md) | Original BIAN-1 definition | ✅ |
+| [BIAN_gap_analysis_ver_01.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/achives/gap/BIAN_gap_analysis_ver_01.md) | Original BIAN-1 definition | ✅ |
 | [BIAN_index_v2.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/gap/BIAN_index_v2.md) | Master table + edge section | ✅ Updated |
 | [BIAN_index_from_RCA_mapping.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/gap/BIAN_index_from_RCA_mapping.md) | 1:1 mapping coordinates | ✅ |
 | [E4_pre_symbolic_stratum_postulate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/E4_pre_symbolic_stratum_postulate.md) | Λ operator origin | ✅ |
