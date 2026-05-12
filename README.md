@@ -15,6 +15,11 @@
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-2.0  
 **Inspiration / Cảm hứng:** Albert Einstein — tác giả Thuyết tương đối hẹp (1905) và Thuyết tương đối rộng (1915); Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*)
 
+> *"The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery every day. Never lose a holy curiosity."*
+> 
+> *"Điều quan trọng là không ngừng đặt câu hỏi. Sự tò mò có lý do tồn tại của riêng nó. Người ta không thể không kinh ngạc khi chiêm nghiệm những bí ẩn của sự vĩnh hằng, của cuộc sống, của cấu trúc tuyệt diệu của thực tại. Chỉ cần mỗi ngày người ta cố gắng hiểu một chút về bí ẩn này là đủ rồi. Đừng bao giờ đánh mất sự tò mò thiêng liêng."*
+> 
+> — **Albert Einstein**
 ---
 
 ## Sources of Truth / Nguồn Sự thật
