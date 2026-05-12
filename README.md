@@ -144,6 +144,9 @@ S3 — Observer Ontological Hub / Trung tâm Bản thể Người quan sát
 > **Principle / Nguyên tắc:** Ontological doctrines → Lemmas. Cognitive processes → Postulates.  
 > **Nguyên tắc:** Giáo lý bản thể luận → Bổ đề. Quá trình nhận thức → Tiên đề.
 
+> **v2 Update / Cập nhật v2:** In v2, BIAN-8 received an additional resolution as **Postulate E13 (Temporal Discontinuity)** — treating quantum jumps as primary indivisible epistemic moments (*kṣaṇa*). This is distinct from the rejected "E8" proposal: E13 focuses on the *epistemic structure* of discontinuous transitions, not the ontological doctrine of momentariness. The Lemma S2-Δ remains as the inter-pipeline connector.  
+> **Cập nhật v2:** Trong v2, BIAN-8 được giải quyết bổ sung bằng **Tiên đề E13 (Gián đoạn Thời gian)** — coi bước nhảy lượng tử là sát-na nhận thức nguyên thủy bất phân. Đây khác với đề xuất "E8" bị bác bỏ: E13 tập trung vào *cấu trúc nhận thức* của chuyển tiếp gián đoạn, không phải giáo lý bản thể luận sát-na. Bổ đề S2-Δ vẫn giữ vai trò kết nối giữa các pipeline.
+
 ---
 
 ## Repository Structure / Cấu trúc thư mục
