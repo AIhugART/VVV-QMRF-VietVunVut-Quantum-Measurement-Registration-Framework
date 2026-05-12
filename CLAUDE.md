@@ -4,9 +4,49 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## RULE ZERO — Root Cause Analysis (RCA)
 
+**This is the highest mandatory rule, applied to every activity: research planning, literature review, conceptual mapping, documentation, critique, revision, and publication preparation.**
+
+Never treat a symptom, ambiguity, or attractive analogy as the conclusion. Always trace the observed issue, claim, or mismatch back to its root cause before acting.
+
+### Five-step process
+
+1. **Define** — Describe the observed issue precisely. Separate the *symptom* (what appears in the text, argument, mapping, citation, or structure) from the *cause* (the assumption, source gap, conceptual mismatch, or methodological error that produced it).
+2. **Trace** — Follow the causal chain backward by asking: "What made this issue appear?" Repeat at least three times using the "5 Whys" method.
+3. **Isolate** — Identify the starting point of the failure: an unsupported claim, weak citation, ambiguous term, broken mapping, category error, outdated source, missing definition, or structural inconsistency. If it is not isolated, do not revise yet.
+4. **Fix the cause, not the symptom** — Correct the root cause directly. Do not patch prose, soften wording, add a vague caveat, or create a workaround unless it is explicitly marked as `TODO(HOTFIX)`.
+5. **Verify** — Show that the root cause has been removed, not merely that the visible symptom disappeared. When possible, verify against the source text, the active mapping files, the published node/edge definitions, and the research objective.
+
+### Activity-specific application
+
+| Activity | RCA requirement |
+|----------|-----------------|
+| **Research planning** | Ask "Why is this research question necessary?" before "How should it be written?" Identify the real problem behind the requested document or section. |
+| **Literature review** | Trace every major claim to a source, and distinguish established scholarship from interpretation, analogy, or hypothesis. |
+| **Conceptual mapping** | Understand why each concept exists in its original system before mapping it across systems. Treat cross-domain links as analogies unless equivalence is explicitly justified. |
+| **Documentation** | Find what caused confusion before rewriting. Fix the structure, terminology, missing definition, or broken reference, not only the sentence that looks unclear. |
+| **Review** | Classify every finding as either symptom or root cause. A blocking issue must identify the root cause; a surface-level wording issue is only a documentation bug. |
+| **Revision** | Identify what is truly causing complexity or inconsistency before simplifying, reorganizing, or abstracting. Do not create structure around a symptom. |
+
+### Example
+
+```text
+Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
+  → Why? The wording treats a philosophical mapping as a physical explanation.
+    → Why? The document does not separate analogy, interpretation, and prediction.
+      → Why? The claim lacks a formal boundary between ontology and physics.
+        → Root cause: Category error between epistemological interpretation and empirical physical theory.
+          → Fix: Reframe the section as an interpretive mapping unless formal proof, peer review, physical predictions, and experimental tests are supplied.
+```
+
+### Warnings
+
+- If the revision only changes the sentence where the symptom appears, it is **not enough**; return to step 2.
+- If the root cause cannot be explained in one sentence, understanding is **not complete**; return to step 1.
+- If the fix only adds a vague caveat, fallback phrase, or defensive wording, it is **treating the symptom**; return to step 4.
+
 ## Core Principles
 
-- Use English only across the entire project.
+- Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English.
 - Before creating or editing project files outside `documents/published_documents/`, check whether the file already starts with author metadata; if it does not, add this author metadata at the top: Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 - Do not add author metadata or author names to files under `documents/published_documents/`.
 - Name each new Quantum Measurement concept node as BIAN-XX, where XX ranges from 01 to 99; here, BIAN derives from the Vietnamese word "bí ẩn", meaning "mystery" in English.
@@ -16,6 +56,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 - Method: Buddhist Epistemology as primary ontological frame; Quantum Measurement mapped onto it.
 - All information must remain within the scope of Buddhist Epistemology, except for Quantum Measurement cases listed in the Quantum Measurement published documents table below; report any violation immediately.
 - Think before acting.
+- Use the project skill `/rca-scientific-paper` only for scientific paper documents (`scientific paper`) when planning, reviewing, or revising scientific paper claims.
 - Keep mappings structurally simple.
 - Make surgical changes only.
 - Ask for clarification when concepts are ambiguous.
