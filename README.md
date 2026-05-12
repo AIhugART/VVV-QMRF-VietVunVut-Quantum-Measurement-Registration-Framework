@@ -198,200 +198,215 @@ buddhist-epistemology-quantum-measurement/
 
 ---
 
-## Comprehensive Vietnamese Summary / Báo Cáo RCA Tổng Hợp (Tiếng Việt)
+## Comprehensive Bilingual Summary / Báo Cáo RCA Tổng Hợp Song Ngữ (EN/VN)
 
-*(Phần này trình bày chi tiết báo cáo Root Cause Analysis (RCA) bằng tiếng Việt / This section provides the detailed RCA report in Vietnamese).*
+**EN:** *This section provides the detailed Root Cause Analysis (RCA) report in bilingual English / Vietnamese format.*  
+**VN:** *Phần này trình bày chi tiết báo cáo Phân tích Nguyên nhân Gốc rễ (RCA) theo định dạng song ngữ Anh / Việt.*
 
-### 1. VVV-EQM là gì?
+### 1. What is VVV-EQM? / VVV-EQM là gì?
 
-VVV-EQM là một khung lý thuyết so sánh hai hệ thống tư tưởng:
+**EN:** VVV-EQM is a comparative theoretical framework between two systems of thought:  
+**VN:** VVV-EQM là một khung lý thuyết so sánh hai hệ thống tư tưởng:
 
-| Bên | Tên | Đặc điểm |
-|:---:|-----|----------|
-| 🧘 | **Nhận thức luận Phật giáo (BE)** | Hệ thống lý thuyết về nhận thức của Dignāga và Dharmakīrti — giải thích **cách con người biết** |
-| ⚛️ | **Cơ học Lượng tử (QM)** | Lý thuyết vật lý hiện đại — mô tả **cách đo lường hạt vi mô** |
+| Side / Bên | Name / Tên | Characteristics / Đặc điểm |
+|:----------:|------------|-----------------------------|
+| 🧘 | **Buddhist Epistemology (BE) / Nhận thức luận Phật giáo (BE)** | Dignāga–Dharmakīrti theory of cognition — explains **how humans know** / Hệ thống lý thuyết về nhận thức — giải thích **cách con người biết** |
+| ⚛️ | **Quantum Mechanics (QM) / Cơ học Lượng tử (QM)** | Modern physical theory — describes **how to measure subatomic particles** / Lý thuyết vật lý hiện đại — mô tả **cách đo lường hạt vi mô** |
 
-#### Câu hỏi trung tâm
+#### Central Question / Câu hỏi trung tâm
 
-> **Cơ học Lượng tử thiếu gì mà Nhận thức luận Phật giáo đã có?**
+> **EN: What does Quantum Mechanics lack that Buddhist Epistemology already has?**  
+> **VN: Cơ học Lượng tử thiếu gì mà Nhận thức luận Phật giáo đã có?**
 
-Qua phân tích, chúng tôi tìm ra **20 khoảng trống (BIAN gaps)** — những chỗ mà QM thiếu lý thuyết nhận thức mà Phật giáo đã phát triển từ hàng nghìn năm trước.
+**EN:** Through analysis, we identified **20 structural gaps (BIAN gaps)** — areas where QM lacks epistemic theory that Buddhism developed thousands of years ago.  
+**VN:** Qua phân tích, chúng tôi tìm ra **20 khoảng trống (BIAN gaps)** — những chỗ mà QM thiếu lý thuyết nhận thức mà Phật giáo đã phát triển từ hàng nghìn năm trước.
 
-### 2. Kết quả chính: 16 Tiên đề + 2 Bổ đề
+### 2. Main Results: 16 Postulates + 2 Lemmas / Kết quả chính: 16 Tiên đề + 2 Bổ đề
 
-#### 2a. Bảy Tiên đề Cốt lõi (E1–E7)
+#### 2a. Seven Core Postulates (E1–E7) / Bảy Tiên đề Cốt lõi (E1–E7)
 
-Tiên đề = **nguyên lý cốt lõi** mà QM hoàn toàn thiếu. Mỗi tiên đề mô tả một **hành động nhận thức** của người quan sát.
+**EN:** A Postulate = a **core principle** entirely absent from QM. Each postulate describes a **cognitive act** of the observer.  
+**VN:** Tiên đề = **nguyên lý cốt lõi** mà QM hoàn toàn thiếu. Mỗi tiên đề mô tả một **hành động nhận thức** của người quan sát.
 
-| # | Tên tiếng Việt | Ý nghĩa đơn giản | Nguồn Phật giáo |
-|:-:|---------------|-------------------|-----------------|
-| **E1** | Tự chứng nhận | Phép đo phải tự biết nó đang đo — QM không có khả năng này | Svasaṃvedana (Tự giác) |
-| **E2** | Tự hoàn thành đo lường | Phép đo phải tự kết thúc mà không cần ai bên ngoài xác nhận | Pramāṇa-phala (Kết quả nhận thức) |
-| **E3** | Cam kết nhận thức | Phải có hành động **quyết định** kết quả, tách biệt khỏi việc ghi nhận vật lý | Vyavasāya (Quyết đoán) |
-| **E4** | Tầng tiền biểu tượng | Trước khi có số liệu, có một lớp trải nghiệm thô chưa có cấu trúc | Nirvikalpaka pratyakṣa (Tri giác thuần túy) |
-| **E5** | Mã hóa nội tại | Dữ liệu thô phải được chuyển thành biểu diễn nội tại trong tâm trí | Ākāra (Hình thức nhận thức) |
-| **E6** | Người quan sát là quá trình | Người quan sát không phải vật thể cố định mà là một **dòng chảy liên tục** | Anātmavāda (Vô ngã) |
-| **E7** | Vị trí hiệu lực | Phải xác định **ở đâu** trong hệ thống mà kết quả đo được coi là hợp lệ | Svataḥ prāmāṇya (Tự chứng thực) |
+| # | EN Name | VN Name / Tên tiếng Việt | Simple Meaning / Ý nghĩa đơn giản | Buddhist Source / Nguồn Phật giáo |
+|:-:|---------|--------------------------|------------------------------------|---------------------------------|
+| **E1** | Self-Certification | Tự chứng nhận | EN: Measurement must know it is measuring — QM lacks this / VN: Phép đo phải tự biết nó đang đo — QM không có khả năng này | Svasaṃvedana (Self-awareness / Tự giác) |
+| **E2** | Measurement Self-Completion | Tự hoàn thành đo lường | EN: Measurement must terminate without external confirmation / VN: Phép đo phải tự kết thúc mà không cần ai bên ngoài xác nhận | Pramāṇa-phala (Epistemic result / Kết quả nhận thức) |
+| **E3** | Epistemic Commitment | Cam kết nhận thức | EN: A distinct **decision act** separate from physical recording / VN: Phải có hành động **quyết định** kết quả, tách biệt khỏi việc ghi nhận vật lý | Vyavasāya (Determination / Quyết đoán) |
+| **E4** | Pre-Symbolic Layer | Tầng tiền biểu tượng | EN: Before data, there is a raw unstructured experience layer / VN: Trước khi có số liệu, có một lớp trải nghiệm thô chưa có cấu trúc | Nirvikalpaka pratyakṣa (Pure perception / Tri giác thuần túy) |
+| **E5** | Internal Encoding | Mã hóa nội tại | EN: Raw data must be converted into internal mental representation / VN: Dữ liệu thô phải được chuyển thành biểu diễn nội tại trong tâm trí | Ākāra (Cognitive form / Hình thức nhận thức) |
+| **E6** | Observer as Process | Người quan sát là quá trình | EN: Observer is not a fixed object but a **continuous flow** / VN: Người quan sát không phải vật thể cố định mà là một **dòng chảy liên tục** | Anātmavāda (Non-self / Vô ngã) |
+| **E7** | Validity Locus | Vị trí hiệu lực | EN: Must specify **where** in the system a measurement result is valid / VN: Phải xác định **ở đâu** trong hệ thống mà kết quả đo được coi là hợp lệ | Svataḥ prāmāṇya (Self-validation / Tự chứng thực) |
 
-#### 2b. Chín Tiên đề Mở rộng (E8–E16)
+#### 2b. Nine Extended Postulates (E8–E16) / Chín Tiên đề Mở rộng (E8–E16)
 
-Tiên đề mở rộng = **nguyên lý bổ sung** giải quyết các khoảng trống cấu trúc phức tạp hơn mà v1 chưa đặt tên.
+**EN:** Extended postulates = **supplementary principles** addressing complex structural gaps not named in v1.  
+**VN:** Tiên đề mở rộng = **nguyên lý bổ sung** giải quyết các khoảng trống cấu trúc phức tạp hơn mà v1 chưa đặt tên.
 
-| # | Tên tiếng Việt | Ý nghĩa đơn giản | Nguồn Phật giáo |
-|:-:|---------------|-------------------|-----------------|
-| **E8** | Phủ quyết hồi tố | Phép đo sau có thể **hủy bỏ** kết quả đo trước — QM không có cơ chế này | Bādhaka pramāṇa (Phủ quyết) |
-| **E9** | Sự kiện quan sát viên rỗng | Tương tác vật lý + **không thu được thông tin** = trạng thái nhận thức riêng biệt | Anadhyavasāya (Bất xác định) |
-| **E10** | Hợp lệ tam phân | Cần **3 điều kiện** để phân biệt "đo thật" với "nhiễu ngẫu nhiên" | Trairūpya (Tam tướng) |
-| **E11** | Bằng chứng phản chứng | Biết chắc một điều nhờ **KHÔNG phát hiện** — QM chưa có phạm trù này | Kevalavyatirekin (Thuần loại trừ) |
-| **E12** | Tri giác giới hạn | Phép đo hợp lệ bằng năng lực **vượt giới hạn** phép chiếu chuẩn (PVM) | Alaukika pratyakṣa (Tri giác phi thường) |
-| **E13** | Gián đoạn thời gian | Bước nhảy lượng tử là **sát-na nhận thức** nguyên thủy bất phân | Kṣaṇabhaṅgavāda (Sát-na luận) |
-| **E14** | Nhận thức vắng mặt | Kết quả đo "rỗng" = **nhận thức dương tính** về sự vắng mặt | Anupalabdhi (Vô tri giác) |
-| **E15** | Liên kết nội tại | Vướng víu (entanglement) là loại **quan hệ nhận thức thứ ba** bất khả giản | Svabhāvapratibandha (Quan hệ nội tại) |
-| **E16** | Nghi ngờ có cấu trúc | Chồng chập trước đo = **bất định có cấu trúc** hoàn chỉnh, không phải "chưa biết" | Saṃśaya (Nghi ngờ) |
+| # | EN Name | VN Name | Simple Meaning / Ý nghĩa | Buddhist Source / Nguồn Phật giáo |
+|:-:|---------|---------|--------------------------|----------------------------------|
+| **E8** | Retroactive Invalidation | Phủ quyết hồi tố | EN: A later measurement can **annul** prior results — QM has no such mechanism / VN: Phép đo sau có thể **hủy bỏ** kết quả đo trước | Bādhaka pramāṇa (Invalidation / Phủ quyết) |
+| **E9** | Null Observer Event | Sự kiện quan sát viên rỗng | EN: Physical interaction + **no information gained** = distinct epistemic state / VN: Tương tác vật lý + **không thu được thông tin** = trạng thái nhận thức riêng biệt | Anadhyavasāya (Indetermination / Bất xác định) |
+| **E10** | Tripartite Validity | Hợp lệ tam phân | EN: **3 conditions** needed to distinguish genuine measurement from noise / VN: Cần **3 điều kiện** để phân biệt "đo thật" với "nhiễu ngẫu nhiên" | Trairūpya (Triple mark / Tam tướng) |
+| **E11** | Contra-positive Evidence | Bằng chứng phản chứng | EN: Know something by **NOT detecting** — QM lacks this category / VN: Biết chắc một điều nhờ **KHÔNG phát hiện** | Kevalavyatirekin (Pure exclusion / Thuần loại trừ) |
+| **E12** | Limit Perception | Tri giác giới hạn | EN: Valid measurement using capacity **beyond** standard projection (PVM) / VN: Phép đo hợp lệ bằng năng lực **vượt giới hạn** phép chiếu chuẩn | Alaukika pratyakṣa (Extraordinary perception / Tri giác phi thường) |
+| **E13** | Temporal Discontinuity | Gián đoạn thời gian | EN: Quantum jump = primordial **moment-cognition** / VN: Bước nhảy lượng tử là **sát-na nhận thức** nguyên thủy bất phân | Kṣaṇabhaṅgavāda (Momentariness / Sát-na luận) |
+| **E14** | Absence Cognition | Nhận thức vắng mặt | EN: Null measurement result = **positive cognition** of absence / VN: Kết quả đo "rỗng" = **nhận thức dương tính** về sự vắng mặt | Anupalabdhi (Non-perception / Vô tri giác) |
+| **E15** | Intrinsic Relation | Liên kết nội tại | EN: Entanglement = irreducible **third epistemic relation** / VN: Vướng víu là loại **quan hệ nhận thức thứ ba** bất khả giản | Svabhāvapratibandha (Intrinsic relation / Quan hệ nội tại) |
+| **E16** | Structured Doubt | Nghi ngờ có cấu trúc | EN: Pre-measurement superposition = complete **structured indeterminacy**, not "unknown" / VN: Chồng chập trước đo = **bất định có cấu trúc** hoàn chỉnh | Saṃśaya (Structured doubt / Nghi ngờ) |
 
-#### 2c. Hai Bổ đề (S1-Λ, S2-Δ)
+#### 2c. Two Lemmas (S1-Λ, S2-Δ) / Hai Bổ đề (S1-Λ, S2-Δ)
 
-Bổ đề = **mối nối** giữa các tiên đề, không phải hành động nhận thức riêng mà là điều kiện biên.
+**EN:** A Lemma = a **bridge** between postulates — not a standalone cognitive act but a boundary condition.  
+**VN:** Bổ đề = **mối nối** giữa các tiên đề, không phải hành động nhận thức riêng mà là điều kiện biên.
 
-| # | Tên tiếng Việt | Ý nghĩa đơn giản | Nguồn Phật giáo |
-|:-:|---------------|-------------------|-----------------|
-| **S1-Λ** | Bổ đề Chuyển tiếp | Cách dữ liệu thô (E4) chuyển thành mã hóa (E5) — giống dữ liệu giác quan "chảy" vào tâm thức | Sahaja-pravṛtti (Chuyển giao tự nhiên) |
-| **S2-Δ** | Bổ đề Gián đoạn Thời gian | Giữa hai phép đo liên tiếp có một **khoảng trống nhận thức** — người quan sát "tan rã" rồi "tái cấu trúc" | Kṣaṇabhaṅgavāda (Sát-na diệt) |
+| # | EN Name | VN Name | Simple Meaning / Ý nghĩa | Buddhist Source / Nguồn |
+|:-:|---------|---------|--------------------------|-------------------------|
+| **S1-Λ** | Transition Lemma | Bổ đề Chuyển tiếp | EN: How raw data (E4) transitions into encoding (E5) — like sensory data "flowing" into mind / VN: Cách dữ liệu thô (E4) chuyển thành mã hóa (E5) — giống dữ liệu giác quan "chảy" vào tâm thức | Sahaja-pravṛtti (Natural transfer / Chuyển giao tự nhiên) |
+| **S2-Δ** | Temporal Gap Lemma | Bổ đề Gián đoạn Thời gian | EN: Between two consecutive measurements there is a **cognitive gap** — observer "dissolves" then "reconstitutes" / VN: Giữa hai phép đo liên tiếp có một **khoảng trống nhận thức** — người quan sát "tan rã" rồi "tái cấu trúc" | Kṣaṇabhaṅgavāda (Momentariness / Sát-na diệt) |
 
-### 3. Hệ thống phân loại 20 khoảng trống
+### 3. Gap Classification System / Hệ thống phân loại 20 khoảng trống
 
-#### 3a. Sáu lớp phân loại
+#### 3a. Six Classification Layers / Sáu lớp phân loại
 
-| Lớp | Tên | Ý nghĩa | Cách giải quyết | Số lượng |
-|:---:|-----|---------|-----------------|:--------:|
-| **A** | Cấu trúc | QM **hoàn toàn thiếu** khái niệm | Tạo Tiên đề mới | **9** |
-| **B** | Giao diện | QM có hai giai đoạn kề nhau nhưng thiếu **cầu nối** | Tạo Bổ đề | **2** |
-| **C** | Ngầm định | QM có hiện tượng nhưng thiếu **phân loại chính thức** | Danh mục + Tiên đề E8–E12, E14, E16 | **7** |
-| **R** | Ngược | QM có thứ mà Phật giáo **không có** | Danh mục 14 + Tiên đề E15 | **1** |
-| **X** | Chưa giải | Chưa xác định được cách xử lý | Nghiên cứu thêm | **0** |
-| **∅** | Dự trữ | Giữ chỗ | — | **1** |
+| Layer / Lớp | EN Name | VN Name | Meaning / Ý nghĩa | Resolution / Cách giải quyết | Count / Số lượng |
+|:-----------:|---------|---------|-------------------|------------------------------|:----------------:|
+| **A** | Structural | Cấu trúc | EN: QM **completely lacks** the concept / VN: QM **hoàn toàn thiếu** khái niệm | Create new Postulate / Tạo Tiên đề mới | **9** |
+| **B** | Interface | Giao diện | EN: QM has adjacent phases but lacks a **bridge** / VN: QM có hai giai đoạn kề nhau nhưng thiếu **cầu nối** | Create Lemma / Tạo Bổ đề | **2** |
+| **C** | Implicit | Ngầm định | EN: QM has the phenomenon but lacks **formal classification** / VN: QM có hiện tượng nhưng thiếu **phân loại chính thức** | Category + Postulate E8–E12, E14, E16 / Danh mục + Tiên đề | **7** |
+| **R** | Reverse | Ngược | EN: QM has something Buddhism **does not** / VN: QM có thứ mà Phật giáo **không có** | Category 14 + E15 / Danh mục 14 + Tiên đề E15 | **1** |
+| **X** | Unresolved | Chưa giải | EN: Resolution method not yet identified / VN: Chưa xác định được cách xử lý | Further research / Nghiên cứu thêm | **0** |
+| **∅** | Reserve | Dự trữ | EN: Placeholder / VN: Giữ chỗ | — | **1** |
 
-#### 3b. Bảng tổng hợp 20 BIAN
+#### 3b. Summary Table of 20 BIANs / Bảng tổng hợp 20 BIAN
 
-| BIAN | Khoảng trống | Lớp | Giải pháp |
-|:----:|-------------|:---:|-----------|
-| 1 | Chuyển tiếp biểu diễn sau phát hiện | **B** | Bổ đề S1-Λ |
-| 2 | Thiếu lớp nhận thức tự tham chiếu | **A** | Tiên đề E1 |
-| 3 | Không có phổ năng lực quan sát | **C** | Danh mục 11 + Tiên đề E12 |
-| 4 | Không có lý thuyết hình thức biểu diễn nội tại | **A** | Tiên đề E5 |
-| 5 | Lẫn lộn ghi nhận vật lý và cam kết nhận thức | **A** | Tiên đề E3 |
-| 6 | Không có cấu trúc đo lường tự chứng nhận | **A** | Tiên đề E1 |
-| 7 | Không có tầng tiền biểu tượng | **A** | Tiên đề E4 |
-| 8 | Không có lý thuyết nhận thức về gián đoạn thời gian | **B** | Bổ đề S2-Δ + Tiên đề E13 |
-| 9 | Không có phân loại nhận thức vắng mặt | **C** | Danh mục 13 + Tiên đề E14 |
-| 10 | Tương quan phi cổ điển (BIAN ngược) | **R** | Danh mục 14 + Tiên đề E15 |
-| 11 | Không có mô hình trạng thái nhận thức trước đo | **C** | Danh mục 15 + Tiên đề E16 |
-| 12 | Không có cơ chế ghi đè nhận thức | **C** | Danh mục 03 + Tiên đề E8 |
-| 13 | Không có phân loại sự kiện quan sát rỗng | **C** | Danh mục 06 + Tiên đề E9 |
-| 14 | Không có điều kiện hiệu lực thống nhất | **C** | Danh mục 09 + Tiên đề E10 |
-| 15 | Không có phân loại chứng cứ thuần đối lập | **C** | Danh mục 01 + Tiên đề E11 |
-| 16 | Tự hoàn thành đo lường chưa được định nghĩa | **A** | Tiên đề E2 |
-| 17 | Không có nguyên lý dừng hồi quy nội sinh | **A** | Tiên đề E1 |
-| 18 | Không có lý thuyết vị trí hiệu lực đo lường | **A** | Tiên đề E7 |
-| 19 | Người quan sát giả định là thực thể, không phải quá trình | **A** | Tiên đề E6 |
-| 20 | Dự trữ (xem BIAN-10) | **∅** | — |
+| BIAN | EN Gap Description | VN Gap / Khoảng trống | Layer / Lớp | Solution / Giải pháp |
+|:----:|-------------------|----------------------|:-----------:|---------------------|
+| 1 | Representational transition after detection | Chuyển tiếp biểu diễn sau phát hiện | **B** | Lemma S1-Λ / Bổ đề S1-Λ |
+| 2 | Missing self-referential cognition layer | Thiếu lớp nhận thức tự tham chiếu | **A** | Postulate E1 / Tiên đề E1 |
+| 3 | No observer capacity spectrum | Không có phổ năng lực quan sát | **C** | Cat.11 + E12 / Danh mục 11 + Tiên đề E12 |
+| 4 | No formal theory of internal representation | Không có lý thuyết hình thức biểu diễn nội tại | **A** | Postulate E5 / Tiên đề E5 |
+| 5 | Confusion of physical recording and epistemic commitment | Lẫn lộn ghi nhận vật lý và cam kết nhận thức | **A** | Postulate E3 / Tiên đề E3 |
+| 6 | No self-certifying measurement structure | Không có cấu trúc đo lường tự chứng nhận | **A** | Postulate E1 / Tiên đề E1 |
+| 7 | No pre-symbolic layer | Không có tầng tiền biểu tượng | **A** | Postulate E4 / Tiên đề E4 |
+| 8 | No epistemic theory of temporal discontinuity | Không có lý thuyết nhận thức về gián đoạn thời gian | **B** | Lemma S2-Δ + E13 / Bổ đề S2-Δ + Tiên đề E13 |
+| 9 | No classification of absence cognition | Không có phân loại nhận thức vắng mặt | **C** | Cat.13 + E14 / Danh mục 13 + Tiên đề E14 |
+| 10 | Non-classical correlation (reverse BIAN) | Tương quan phi cổ điển (BIAN ngược) | **R** | Cat.14 + E15 / Danh mục 14 + Tiên đề E15 |
+| 11 | No pre-measurement epistemic state model | Không có mô hình trạng thái nhận thức trước đo | **C** | Cat.15 + E16 / Danh mục 15 + Tiên đề E16 |
+| 12 | No epistemic override mechanism | Không có cơ chế ghi đè nhận thức | **C** | Cat.03 + E8 / Danh mục 03 + Tiên đề E8 |
+| 13 | No classification of null observer events | Không có phân loại sự kiện quan sát rỗng | **C** | Cat.06 + E9 / Danh mục 06 + Tiên đề E9 |
+| 14 | No unified validity conditions | Không có điều kiện hiệu lực thống nhất | **C** | Cat.09 + E10 / Danh mục 09 + Tiên đề E10 |
+| 15 | No contra-positive evidence classification | Không có phân loại chứng cứ thuần đối lập | **C** | Cat.01 + E11 / Danh mục 01 + Tiên đề E11 |
+| 16 | Measurement self-completion undefined | Tự hoàn thành đo lường chưa được định nghĩa | **A** | Postulate E2 / Tiên đề E2 |
+| 17 | No endogenous recursion-stop principle | Không có nguyên lý dừng hồi quy nội sinh | **A** | Postulate E1 / Tiên đề E1 |
+| 18 | No validity-locus theory of measurement | Không có lý thuyết vị trí hiệu lực đo lường | **A** | Postulate E7 / Tiên đề E7 |
+| 19 | Observer assumed as entity, not process | Người quan sát giả định là thực thể, không phải quá trình | **A** | Postulate E6 / Tiên đề E6 |
+| 20 | Reserve (see BIAN-10) | Dự trữ (xem BIAN-10) | **∅** | — |
 
-### 4. Quyết định quan trọng nhất: BIAN-8 có cần Tiên đề E8 không?
+### 4. Key Decision: Does BIAN-8 Need Postulate E8? / Quyết định quan trọng nhất: BIAN-8 có cần Tiên đề E8 không?
 
-#### 4a. Vấn đề
+#### 4a. Problem / Vấn đề
 
-Kṣaṇabhaṅgavāda (Sát-na diệt) là một giáo lý **rất lớn** trong Phật giáo — nói rằng mọi thứ sinh ra rồi diệt ngay lập tức, không có khoảnh khắc tồn tại. Câu hỏi: giáo lý lớn thế này có xứng đáng là Tiên đề thứ 8 không?
+**EN:** Kṣaṇabhaṅgavāda (Doctrine of Momentariness) is a **major** Buddhist doctrine — stating that all things arise and cease instantly, with no moment of persistence. Question: does this doctrine deserve to be the 8th Postulate?  
+**VN:** Kṣaṇabhaṅgavāda (Sát-na diệt) là một giáo lý **rất lớn** trong Phật giáo — nói rằng mọi thứ sinh ra rồi diệt ngay lập tức, không có khoảnh khắc tồn tại. Câu hỏi: giáo lý lớn thế này có xứng đáng là Tiên đề thứ 8 không?
 
-#### 4b. Bài kiểm tra 4 tiêu chí
+#### 4b. Four-Criteria Test / Bài kiểm tra 4 tiêu chí
 
-| # | Tiêu chí | Yêu cầu | BIAN-8 đạt không? |
-|:-:|----------|---------|:-----------------:|
-| 1 | Ngôn ngữ nhận thức | Tiên đề phải mô tả **hành động** của người quan sát | ❌ — Sát-na diệt mô tả **thực tại** (bản thể luận), không phải hành động nhận thức |
-| 2 | Kết nối phân tán | Phải liên kết đến **nhiều** khái niệm QM khác nhau | ❌ — 5/7 cạnh đều trỏ về cùng 1 khái niệm (Quantum Jump) |
-| 3 | Cần toán tử mới | Phải tạo ra phép toán mà QM chưa có | ❌ — QM đã có toán tử nhảy lượng tử (Ĉ_jump) |
-| 4 | Thêm bước nhận thức mới | Phải thêm một bước vào quy trình đo lường | ❌ — Gián đoạn xảy ra **giữa** hai lần đo, không phải **trong** quy trình đo |
+| # | EN Criterion | VN Tiêu chí | Requirement / Yêu cầu | BIAN-8 pass? / Đạt không? |
+|:-:|-------------|-------------|----------------------|:--------------------------:|
+| 1 | Epistemic language | Ngôn ngữ nhận thức | Must describe observer's **act** / Phải mô tả **hành động** của người quan sát | ❌ EN: Momentariness describes **reality** (ontology), not epistemic act / VN: Sát-na diệt mô tả **thực tại**, không phải hành động nhận thức |
+| 2 | Distributed connection | Kết nối phân tán | Must link to **many** QM concepts / Phải liên kết đến **nhiều** khái niệm QM | ❌ EN: 5/7 edges point to same concept (Quantum Jump) / VN: 5/7 cạnh trỏ về cùng 1 khái niệm |
+| 3 | Requires new operator | Cần toán tử mới | Must create operation QM lacks / Phải tạo ra phép toán QM chưa có | ❌ EN: QM already has quantum jump operator (Ĉ_jump) / VN: QM đã có toán tử nhảy lượng tử |
+| 4 | Adds new cognitive step | Thêm bước nhận thức mới | Must add a step to measurement process / Phải thêm một bước vào quy trình đo | ❌ EN: Gap occurs **between** measurements, not **within** / VN: Gián đoạn xảy ra **giữa** hai lần đo, không phải **trong** quy trình |
 
-**Kết quả: 0/4 — E8 bị bác bỏ.**
+**EN: Result: 0/4 — E8 rejected. / VN: Kết quả: 0/4 — E8 bị bác bỏ.**
 
-#### 4c. Giải pháp thay thế
+#### 4c. Alternative Solution / Giải pháp thay thế
 
-Thay vì tạo Tiên đề E8, chúng tôi tạo **Bổ đề S2-Δ**:
+**EN:** Instead of creating Postulate E8, we create **Lemma S2-Δ**:  
+**VN:** Thay vì tạo Tiên đề E8, chúng tôi tạo **Bổ đề S2-Δ**:
 
-> Giữa hai phép đo liên tiếp M₁ và M₂, tồn tại một gián đoạn nhận thức Δ(M₁,M₂). Trạng thái sau M₁ và trạng thái trước M₂ **không** được nối bởi tiến hóa liên tục, mà bởi ranh giới sát-na: một khoảnh khắc giải thể và tái cấu trúc nhận thức hoàn toàn.
+> **EN:** Between two consecutive measurements M₁ and M₂, there exists a cognitive gap Δ(M₁,M₂). The state after M₁ and the state before M₂ are **not** connected by continuous evolution, but by a momentary boundary — an instant of complete cognitive dissolution and reconstitution.  
+> **VN:** Giữa hai phép đo liên tiếp M₁ và M₂, tồn tại một gián đoạn nhận thức Δ(M₁,M₂). Trạng thái sau M₁ và trạng thái trước M₂ **không** được nối bởi tiến hóa liên tục, mà bởi ranh giới sát-na: một khoảnh khắc giải thể và tái cấu trúc nhận thức hoàn toàn.
 
-#### 4d. Phép so sánh dễ hiểu
+#### 4d. Analogy / Phép so sánh dễ hiểu
 
-| | Tiên đề (E1–E16) | Bổ đề (S1-Λ, S2-Δ) |
+| | EN: Postulates (E1–E16) / VN: Tiên đề | EN: Lemmas (S1-Λ, S2-Δ) / VN: Bổ đề |
 |---|---|---|
-| **Giống gì?** | Các **động tác** trong quy trình đo | Các **mối nối** giữa động tác |
-| **Ví dụ** | Giống các bước nấu ăn (rửa, cắt, xào) | Giống khoảng chuyển tiếp giữa các bước |
-| **Sát-na diệt** | — | Giống khoảng **nghỉ** giữa hai lần nấu |
+| **What they are like / Giống gì?** | The **steps** in the measurement process / Các **động tác** trong quy trình đo | The **connectors** between steps / Các **mối nối** giữa động tác |
+| **Example / Ví dụ** | Like cooking steps: wash, cut, stir-fry / Giống các bước nấu ăn (rửa, cắt, xào) | Like the transition between steps / Giống khoảng chuyển tiếp giữa các bước |
+| **Momentariness / Sát-na diệt** | — | Like the **pause** between two cooking sessions / Giống khoảng **nghỉ** giữa hai lần nấu |
 
-Trong vật lý, tốc độ ánh sáng *c* rất quan trọng nhưng nó là **hằng số** (điều kiện biên), không phải **lực**. Tương tự, Sát-na diệt là hằng số nhận thức, không phải phép toán nhận thức.
+**EN:** In physics, the speed of light *c* is vital but it is a **constant** (boundary condition), not a **force**. Similarly, Momentariness is an epistemic constant, not an epistemic operator.  
+**VN:** Trong vật lý, tốc độ ánh sáng *c* rất quan trọng nhưng nó là **hằng số** (điều kiện biên), không phải **lực**. Tương tự, Sát-na diệt là hằng số nhận thức, không phải phép toán nhận thức.
 
-### 5. Ống dẫn đo lường nhận thức (S1 Pipeline)
+### 5. Epistemic Measurement Pipeline / Ống dẫn đo lường nhận thức (S1 Pipeline)
 
-Đây là "quy trình" mà một phép đo nhận thức trải qua:
+**EN:** The sequence every epistemic measurement passes through:  
+**VN:** Đây là "quy trình" mà một phép đo nhận thức trải qua:
 
 ```
-Bước 1: ε(M) — Sự kiện thô, chưa có cấu trúc (E4)
-   │        Ví dụ: Ánh sáng chạm mắt
+Step 1 / Bước 1: ε(M) — Raw event, unstructured (E4)
+                          Sự kiện thô, chưa có cấu trúc
+   │    Example / Ví dụ: Light hits the eye / Ánh sáng chạm mắt
    │
-   ▼ ◆ Λ — Biểu tượng hóa (Bổ đề S1-Λ)
-   │        Ví dụ: Tín hiệu truyền từ mắt đến tâm trí
+   ▼ ◆ Λ — Symbolization (Lemma S1-Λ) / Biểu tượng hóa (Bổ đề S1-Λ)
+   │    Example / Ví dụ: Signal travels from eye to mind / Tín hiệu truyền từ mắt đến tâm trí
    │
-Bước 2: Ā(M) — Mã hóa nội tại (E5)
-   │        Ví dụ: Tâm trí tạo "hình ảnh" nội tại
-   │
-   ▼
-Bước 3: V̂ — Cam kết nhận thức (E3)
-   │        Ví dụ: Tâm trí quyết định "đây là cái bàn"
+Step 2 / Bước 2: Ā(M) — Internal encoding (E5) / Mã hóa nội tại
+   │    Example / Ví dụ: Mind creates internal "image" / Tâm trí tạo "hình ảnh" nội tại
    │
    ▼
-   r — Kết quả đo lường ✓
+Step 3 / Bước 3: V̂ — Epistemic commitment (E3) / Cam kết nhận thức
+   │    Example / Ví dụ: Mind decides "this is a table" / Tâm trí quyết định "đây là cái bàn"
+   │
+   ▼
+   r — Measurement result ✓ / Kết quả đo lường ✓
 
    ║
-   ║ ◆ Δ — Gián đoạn thời gian (Bổ đề S2-Δ)
+   ║ ◆ Δ — Temporal gap (Lemma S2-Δ) / Gián đoạn thời gian (Bổ đề S2-Δ)
+   ║        Moment of "dissolution" before next measurement
    ║        Khoảnh khắc "tan rã" trước phép đo tiếp theo
    ║
-   
-Bước 1': ε'(M') — Sự kiện thô tiếp theo...
+
+Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp theo...
 ```
 
-### 6. QM thiếu gì? — Tóm tắt nhanh
+### 6. What Does QM Lack? — Quick Reference / QM thiếu gì? — Tóm tắt nhanh
 
-| QM nói | Phật giáo nói thêm | Tiên đề VVV-EQM |
-|--------|--------------------|-----------------| 
-| "Đo xong có kết quả" | "Phép đo phải **tự biết** nó đang đo" | E1 |
-| "Kết quả xuất hiện" | "Phép đo phải **tự kết thúc**, không cần ai bên ngoài" | E2 |
-| "Trạng thái sụp đổ" | "Phải có hành động **quyết định** riêng biệt" | E3 |
-| "Bắt đầu từ eigenvalue" | "Trước eigenvalue có **trải nghiệm thô** chưa biểu tượng" | E4 |
-| "Ghi nhận số liệu" | "Số liệu phải được **mã hóa nội tại** trong tâm trí" | E5 |
-| "Người quan sát là hệ vật lý" | "Người quan sát là **dòng chảy**, không phải vật thể" | E6 |
-| "Kết quả hợp lệ khi tái lặp" | "Phải xác định **ở đâu** kết quả có hiệu lực" | E7 |
-| "Kết quả đo cũ vẫn đúng" | "Phép đo sau có thể **hủy** kết quả trước" | E8 |
-| "Không đo = không có gì" | "Tương tác + không thông tin = trạng thái **riêng biệt**" | E9 |
-| "Đo = chiếu lên eigenvector" | "Cần **3 điều kiện** để phân biệt đo thật vs nhiễu" | E10 |
-| "Phát hiện = có tín hiệu" | "Biết chắc nhờ **KHÔNG phát hiện**" | E11 |
-| "Chỉ có PVM và POVM" | "Có phép đo bằng năng lực **vượt giới hạn** chiếu" | E12 |
-| "Bước nhảy = ngẫu nhiên" | "Bước nhảy = **sát-na nhận thức** nguyên thủy" | E13 |
-| "Null result = thống kê thừa" | "Kết quả rỗng = nhận thức **dương tính** về vắng mặt" | E14 |
-| "Entanglement = tương quan" | "Vướng víu = quan hệ nhận thức **thứ ba** bất khả giản" | E15 |
-| "Superposition = chưa biết" | "Chồng chập = **bất định có cấu trúc** hoàn chỉnh" | E16 |
+| QM says / QM nói | Buddhism adds / Phật giáo nói thêm | Postulate / Tiên đề |
+|------------------|-------------------------------------|:-------------------:|
+| "Measurement yields result" / "Đo xong có kết quả" | "Measurement must **know itself** measuring" / "Phép đo phải **tự biết** nó đang đo" | E1 |
+| "Result appears" / "Kết quả xuất hiện" | "Must **self-terminate** without external confirmation" / "Phải **tự kết thúc**, không cần ai bên ngoài" | E2 |
+| "State collapses" / "Trạng thái sụp đổ" | "Must have a distinct **decision act**" / "Phải có hành động **quyết định** riêng biệt" | E3 |
+| "Starts from eigenvalue" / "Bắt đầu từ eigenvalue" | "Before eigenvalue: **raw pre-symbolic experience**" / "Trước eigenvalue có **trải nghiệm thô** chưa biểu tượng" | E4 |
+| "Data recorded" / "Ghi nhận số liệu" | "Data must be **internally encoded** in the mind" / "Số liệu phải được **mã hóa nội tại** trong tâm trí" | E5 |
+| "Observer is a physical system" / "Người quan sát là hệ vật lý" | "Observer is a **flow**, not an object" / "Người quan sát là **dòng chảy**, không phải vật thể" | E6 |
+| "Result valid when repeatable" / "Kết quả hợp lệ khi tái lặp" | "Must specify **where** result is valid" / "Phải xác định **ở đâu** kết quả có hiệu lực" | E7 |
+| "Old result still holds" / "Kết quả đo cũ vẫn đúng" | "Later measurement can **annul** prior result" / "Phép đo sau có thể **hủy** kết quả trước" | E8 |
+| "No measurement = nothing" / "Không đo = không có gì" | "Interaction + no info = **distinct state**" / "Tương tác + không thông tin = trạng thái **riêng biệt**" | E9 |
+| "Measure = project onto eigenvector" / "Đo = chiếu lên eigenvector" | "Need **3 conditions** to distinguish real measure from noise" / "Cần **3 điều kiện** để phân biệt đo thật vs nhiễu" | E10 |
+| "Detection = signal present" / "Phát hiện = có tín hiệu" | "Know via **NOT detecting**" / "Biết chắc nhờ **KHÔNG phát hiện**" | E11 |
+| "Only PVM and POVM" / "Chỉ có PVM và POVM" | "Measurement valid via capacity **beyond** projection" / "Có phép đo bằng năng lực **vượt giới hạn** chiếu" | E12 |
+| "Jump = random" / "Bước nhảy = ngẫu nhiên" | "Jump = primordial **moment-cognition**" / "Bước nhảy = **sát-na nhận thức** nguyên thủy" | E13 |
+| "Null result = surplus statistics" / "Null result = thống kê thừa" | "Null = **positive cognition** of absence" / "Kết quả rỗng = nhận thức **dương tính** về vắng mặt" | E14 |
+| "Entanglement = correlation" / "Entanglement = tương quan" | "Entanglement = irreducible **third relation**" / "Vướng víu = quan hệ nhận thức **thứ ba** bất khả giản" | E15 |
+| "Superposition = unknown" / "Superposition = chưa biết" | "Superposition = complete **structured indeterminacy**" / "Chồng chập = **bất định có cấu trúc** hoàn chỉnh" | E16 |
 
-### 7. Kết luận RCA
+### 7. RCA Conclusions / Kết luận RCA
 
-#### Những gì đã đạt được
+#### Achievements / Những gì đã đạt được
 
-1. **19/19 khoảng trống hoạt động đã giải quyết** + 1 dự trữ — không còn vấn đề mở
-2. **16 tiên đề ổn định** (E1–E7 cốt lõi + E8–E16 mở rộng)
-3. **2 bổ đề xác nhận** — bao phủ tất cả mối nối
-4. **Nguyên tắc ENI** — phương pháp phân loại mối nối nhận thức
-5. **Hệ thống GCS** — phương pháp phân loại khoảng trống tự động
+1. **EN:** 19/19 active gaps resolved + 1 reserve — no open issues / **VN:** 19/19 khoảng trống hoạt động đã giải quyết + 1 dự trữ — không còn vấn đề mở
+2. **EN:** 16 stable postulates (E1–E7 core + E8–E16 extended) / **VN:** 16 tiên đề ổn định (E1–E7 cốt lõi + E8–E16 mở rộng)
+3. **EN:** 2 confirmed lemmas — covering all connective joints / **VN:** 2 bổ đề xác nhận — bao phủ tất cả mối nối
+4. **EN:** ENI Principle — method for classifying epistemic joints / **VN:** Nguyên tắc ENI — phương pháp phân loại mối nối nhận thức
+5. **EN:** GCS System — automated gap classification method / **VN:** Hệ thống GCS — phương pháp phân loại khoảng trống tự động
 
-#### Ý nghĩa
+#### Significance / Ý nghĩa
 
-> Cơ học Lượng tử không chỉ thiếu một lý thuyết đo lường — nó thiếu **toàn bộ kiến trúc nhận thức** mà Nhận thức luận Phật giáo đã xây dựng. VVV-EQM cung cấp 16 tiên đề để lấp đầy khoảng trống đó.
+> **EN:** Quantum Mechanics lacks not just a measurement theory — it lacks the **entire epistemic architecture** that Buddhist Epistemology has already built. VVV-EQM provides 16 postulates to fill that gap.  
+> **VN:** Cơ học Lượng tử không chỉ thiếu một lý thuyết đo lường — nó thiếu **toàn bộ kiến trúc nhận thức** mà Nhận thức luận Phật giáo đã xây dựng. VVV-EQM cung cấp 16 tiên đề để lấp đầy khoảng trống đó.
 
 ---
 
