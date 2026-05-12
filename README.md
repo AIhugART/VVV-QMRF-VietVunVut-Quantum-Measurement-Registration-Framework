@@ -17,6 +17,20 @@
 
 ---
 
+## Sources of Truth / Nguồn Sự thật
+
+| # | SOT Role | Title | Author | Affiliation | Published in | DOI / ISBN |
+|:-:|----------|-------|--------|-------------|-------------|------------|
+| 1 | **BE System SOT** | The Buddhist Pramāṇa-Epistemology, Logic, and Language: with Reference to Vasubandhu, Diṅnāga, and Dharmakīrti | Hari Shankar Prasad | University of Delhi, Delhi 110007, India | *Studia Humana*, Vol. 12:1-2 (2023), pp. 21–52 | `10.2478/sh-2023-0004` |
+| 2 | **QM Target SOT** | Quantum Mechanics: The Theoretical Minimum | Leonard Susskind; Art Friedman | Stanford University; Portland State University | Basic Books, 2014 | ISBN 978-0-465-06569-2 |
+| 3 | **QM Target SOT** | Quantum Measurement Theory and Practice | Andrew N. Jordan; Irfan A. Siddiqi | University of Rochester; University of California, Berkeley | Cambridge University Press, 2024 | `10.1017/9781009100069` |
+| 4 | **SOT Mapping** | VVV-EQM Buddhist–QM Epistemic Mapping | Claude (Anthropic) | Anthropic | Internal research document, 2026 | — |
+| 5 | **BIAN Index SOT** | BIAN Index — Source of Truth | VietVunVut (Viet - Nguyen Xuan) | Independent researcher | Internal research document, 2026 | — |
+
+> **BIAN etymology:** "BIAN" is derived from the Vietnamese word *bí ẩn* — meaning **mystery** or **enigma** in English.
+
+---
+
 ## What is VVV-EQM? / VVV-EQM là gì?
 
 **EN:** Standard Quantum Mechanics has four physical postulates (P1–P4) that describe state space, observables, measurement, and dynamics. These postulates are *silent* on the epistemic architecture of measurement — they don't specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the observer. VVV-EQM fills these gaps by adding 16 epistemic postulates derived from structural analysis of Buddhist Pramāṇa epistemology (Dignāga–Dharmakīrti tradition). The first 7 (E1–E7) define core cognitive operations; the remaining 9 (E8–E16) extend the framework to cover retroactive invalidation, null events, validity conditions, contrapositive evidence, transcendental observation, temporal discontinuity, absence cognition, entanglement relations, and pre-measurement indeterminacy.

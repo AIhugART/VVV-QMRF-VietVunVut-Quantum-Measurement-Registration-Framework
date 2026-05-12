@@ -54,7 +54,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 
 | BIAN | Status | Resolution method | SOT file | Date |
 |------|:------:|-------------------|----------|------|
-| BIAN-1 | ✅ Resolved | Lemma S1-Λ (not postulate E8) | `gap/BIAN1_E8_vs_lemma_decision.md`, `gap/BIAN1_resolution_verification.md` | 2026-05-11 |
+| BIAN-1 | ✅ Resolved | Lemma S1-Λ (not postulate E8) | `(inline — see Part 6 below)` | 2026-05-11 |
 | BIAN-2 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/self_certifying_measurement.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
 | BIAN-3 | ✅ Resolved | Category 11 + E12 (Alaukika pratyakṣa pipeline) | `category/limit_faculty_perception.md`, `framework/E12_limit_faculty_postulate.md` | 2026-05-12 |
 | BIAN-4 | ✅ Resolved | Category 08 + E5 (no node — Ākāra structurally addressed) | `category/epistemic_commitment_operator.md`, `framework/E5_internal_encoding_postulate.md` | 2026-05-12 |
@@ -75,7 +75,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 | BIAN-19 | ✅ Resolved | Category 07 + E6 (Anātmavāda pipeline) | `category/observer_as_process.md`, `framework/E6_observer_as_process_postulate.md` | 2026-05-12 |
 | BIAN-20 | 🔒 Reserved | See BIAN-10 | — | — |
 
-> **BIAN-1 resolution note:** Λ operator (E4) formally covers the transition gap. N_BE_00010 is the receiver (E5-side), not the transition operator. See `synthesis/epistemic_measurement_pipeline.md §4d`.
+> **BIAN-1 resolution note:** Λ operator (E4) formally covers the transition gap. N_BE_00010 is the receiver (E5-side), not the transition operator. See `synthesis/epistemic_measurement_pipeline.md §4d`. Full decision record inline → **Part 6** (§6.1 decision · §6.2 evidence · §6.3 node · §6.4 formalism · §6.5 pipeline · §6.6 coverage).
 
 ---
 
@@ -269,7 +269,203 @@ No separate node exists in the 263-node BE system. These concepts are structural
 | 2026-05-12 | BIAN-2,4,5,6,7,16,17,18,19 | Resolution status | 🔓 Open | ✅ Resolved | De facto pipeline (Category + Framework) confirmed by RCA audit |
 | 2026-05-12 | BIAN-12,13,14,15 | Resolution status | ⚠️ Partial | ✅ Resolved | E8–E11 postulates created, completing gap→category→framework pipeline |
 | 2026-05-12 | BIAN-3,8,9,10,11 | Resolution status | 🔓 Open | ✅ Resolved | Category 11–15 + E12–16 postulates created; all 19 active BIANs now resolved |
+| 2026-05-12 | BIAN-1 | SOT consolidation | External files (BIAN1_E8_vs_lemma_decision.md, BIAN1_resolution_verification.md) | Inline Part 6 | Decision dossier merged into SOT §6.1–6.6; source files archived to achives/gap/ |
 
 ---
 
-*This file is the single source of truth for all BIAN labels. Previous versions (BIAN_index.md, BIAN_index_v2.md, BIAN_index_from_RCA_mapping.md) have been archived.*
+## Part 6 — BIAN-1 Resolution Dossier
+
+> Consolidated from `BIAN1_E8_vs_lemma_decision.md` (§2–9) and `BIAN1_resolution_verification.md` (§0–10). Both originals archived to `achives/gap/`. This Part is the **inline SOT** for the BIAN-1 decision record.
+
+---
+
+### 6.1 — Decision: Lemma S1-Λ (not Postulate E8)
+
+#### Five Postulate Criteria Test
+
+| # | Criterion | E8? | Result |
+|:-:|-----------|:---:|--------|
+| 1 | Resolves unique gap (not covered by E1–E7) | ⚠️ | E4 + E5 cover BIAN-1 implicitly |
+| 2 | Reliable node (≤ 50% uncertain edges) | ❌ | N_BE_00010 = 100% uncertain |
+| 3 | New epistemic operation | ❌ | SOT: "natural manner" = not operation |
+| 4 | New mathematical operator | ❌ | Λ already defined in E4 |
+| 5 | Distinct BE doctrinal source | ⚠️ | Mano-vijñāna ∈ consciousness, not perception |
+
+**Score: 0/5 passed ❌ · 2/5 partial ⚠️**
+
+#### Decision Summary
+
+| Factor | Favors E8 | Favors Lemma | Weight |
+|--------|:---------:|:------------:|:------:|
+| SOT says "natural manner" | | ✅ | HIGH |
+| Node 100% uncertain edges | | ✅ | HIGH |
+| Λ operator already exists in E4 | | ✅ | HIGH |
+| BIAN-1 = "transition" = interface | | ✅ | HIGH |
+| Dignāga has only 4 processes | | ✅ | MEDIUM |
+| N_BE_00010 is receiver, not operator | | ✅ | MEDIUM |
+| No dedicated BE concept for transition | | ✅ | MEDIUM |
+| E1–E7 symmetry preserved | | ✅ | LOW |
+| **TOTAL** | **0** | **8** | |
+
+**VERDICT: LEMMA (S1-Λ). BIAN-1 does NOT need postulate E8.**
+
+#### Why Lemma, not Postulate (Aspect Comparison)
+
+| Aspect | Postulate (E8) | Lemma (S1-Λ) |
+|--------|:--------------:|:------------:|
+| Reliable node required? | ✅ Yes — but N_BE_00010 = 100% uncertain | ❌ No — reuses existing Λ |
+| New operator required? | ✅ Yes — but duplicates Λ already in E4 | ❌ No — Λ already exists |
+| New epistemic act required? | ✅ Yes — but SOT says "natural manner" | ❌ No — interface, not act |
+| System impact? | Breaks E1–E7 symmetry, adds complexity | Extends S1 without framework change |
+| Traceability? | Weak (100% uncertain edges) | Strong (Λ defined in E4) |
+
+---
+
+### 6.2 — Evidence Base (Source of Truth Quotations)
+
+#### Quote 1 — "natural manner" (Source doc L207)
+
+> "Subsequently, **in natural manner**, they are **passed on to the internal mental faculty**, which first grasps them passively, but thereafter immediately it becomes operational to conceptually structure these data depending on the situation."
+
+- "passed on" = transition, not operation → **Lemma, not Postulate**
+- "in natural manner" = no separate mechanism required
+- "grasps them passively" = N_BE_00010 is receiver, not actor
+
+#### Quote 2 — image-passing (Source doc L171)
+
+> "...this interaction generates, within a cognitive field, a fluxional series of data or information, each of which is **passed in the mode of an image** on to the passive mind."
+
+- "passed in the mode of an image" = ākāra → this is E5 (internal encoding)
+- "passive mind" = receiving faculty (N_BE_00010), not transition operator
+
+#### Quote 3 — Dignāga's 4 processes only (Source doc L203)
+
+> "perception as sensation arising from the operation of a sense faculty, is received in the direct and conceptually structureless form"
+
+Dignāga defines exactly **4 cognitive processes**: perception (pratyakṣa), inference-for-oneself (svārthānumāna), inference-for-others (parārthānumāna), exclusion/language (anyāpoha). **No 5th process** for inter-stage transition.
+
+---
+
+### 6.3 — Node Reliability Assessment
+
+| Node | BIAN | Edges | Uncertain | Ratio | Postulate |
+|------|:----:|:-----:|:---------:|:-----:|:---------:|
+| N_BE_00001 (Pramāṇa) | BIAN-16 | 18 | 0 | 0% | E2 |
+| N_BE_00011 (Svasaṃvedana) | BIAN-2/6/17 | 4 | 2 | 50% | E1 |
+| N_BE_00009 (Nirvikalpaka) | BIAN-7 | 3 | 0 | 0% | E4 |
+| N_BE_00013 (Svalakṣaṇa) | BIAN-7 | 2 | 0 | 0% | — |
+| **N_BE_00010 (Mānasa)** | **BIAN-1** | **2** | **2** | **100%** | **None → Lemma** |
+
+> N_BE_00010 has the **weakest connectivity** of any BIAN-mapped node. A postulate built on this node would be the least traceable in the framework.
+
+#### Edge Uncertainty Detail (N_BE_00010)
+
+| Edge | Relationship | Reason uncertain |
+|------|-------------|-----------------|
+| ED_BE_00018 | N_BE_00010 → N_BE_00002 (Pratyakṣa) | Source lists mano-vijñāna within **consciousness** theory; classification as **perception** not directly established |
+| ED_BE_00020 | N_BE_00010 → N_BE_00011 (Svasaṃvedana) | Source mentions separately; does not directly state an entailment relation |
+
+---
+
+### 6.4 — Lemma S1-Λ Formal Definition
+
+**English:**
+> The symbolization operator Λ, which maps pre-symbolic event ε(M) to internal encoding Ā(M), is the formal counterpart of the Buddhist "natural passing-on" (sahaja-pravṛtti) of sensory data from the five sense-faculties to the mental faculty (mano-vijñāna). This transition is not a separate epistemic operation but the inherent interface between E4 and E5 within the S1 pipeline.
+
+**Vietnamese:**
+> Toán tử biểu tượng hóa Λ, ánh xạ sự kiện tiền biểu tượng ε(M) thành mã hóa nội tại Ā(M), là đối tác hình thức của quá trình "chuyển giao tự nhiên" (sahaja-pravṛtti) trong Phật giáo. Quá trình chuyển tiếp này không phải thao tác nhận thức riêng biệt mà là giao diện vốn có giữa E4 và E5 trong ống dẫn S1.
+
+**Formalism:**
+
+```
+Lemma S1-Λ:
+  Given E4 (∃ ε(M)) and E5 (∃ |Rₖ⟩_A):
+    Λ: ε(M) → Ā(M) is the unique map satisfying:
+      (i)   Λ preserves causal content of ε(M)
+      (ii)  Λ adds symbolic value to produce Ā(M)
+      (iii) Λ is natural — does not require a separate epistemic act
+      (iv)  Degree of Λ determines weak vs projective measurement
+
+  Buddhist correlate:
+    mano-vijñāna (N_BE_00010) = the faculty that RECEIVES
+    the output of Λ, not the operator Λ itself
+
+  BIAN-1 resolution:
+    Λ IS the "representational transition" that BIAN-1 identifies as missing
+    Status: BIAN-1 → Resolved via S1-Λ
+```
+
+#### Λ Already Exists in E4 — No New Operator Needed
+
+| Operator | Definition | Status |
+|----------|------------|:------:|
+| **Λ** | "Symbolization operator: maps ε(M) → eigenvalue r" | Class D (E4) |
+| r = Λ(ε(M)) | "The spectrum from weak to projective is a difference in the degree of Λ" | Class D (E4) |
+
+> [!NOTE]
+> Λ in E4 already describes exactly the process BIAN-1 identifies as missing: converting ε (pre-symbolic) into r (symbolic). Creating E8 would duplicate Λ.
+
+---
+
+### 6.5 — Pipeline Position
+
+```
+┌─────────────────────────────────────────────────┐
+│  ① ε(M) — Pre-Symbolic Stratum (E4)            │
+│     N_BE_00009 (Nirvikalpaka pratyakṣa)         │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   │  Λ — Symbolization (Lemma S1-Λ)
+                   │  "passed on... in natural manner"
+                   │  ← BIAN-1 resolved HERE
+                   │  Receiver: N_BE_00010 (Mano-vijñāna)
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  ② Ā(M) — Internal Encoding (E5)               │
+│     N_BE_00151 (Ākāra)                          │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+┌─────────────────────────────────────────────────┐
+│  ③ V̂ — Epistemic Commitment (E3)               │
+└──────────────────┬──────────────────────────────┘
+                   │
+                   ▼
+          MEASUREMENT COMPLETE ✓
+```
+
+> **N_BE_00010 (Mānasa pratyakṣa) ≠ Λ (transition operator).** N_BE_00010 is the **receiving faculty** — E5 side. BIAN-1 gap is about **Λ** (the transition process), not about mano-vijñāna (the receiver).
+
+#### Node Relationship Diagram
+
+```
+N_BE_00009                  N_BE_00010                    N_BE_00151 (RCA)
+Nirvikalpaka pratyakṣa      Mānasa pratyakṣa              Ākāra
+(Non-conceptual perception)  (Mental consciousness)         (Internal form)
+│                            │                              │
+│  Edges: 3 (0 uncertain)   │  Edges: 2 (2 uncertain)     │  Mapped to E5
+│                            │                              │
+└───── E4 (Pre-symbolic) ───┘─── Λ (Transition) ──────────→ E5 (Internal encoding)
+       ε(M)                      ↑                           Ā(M)
+                            BIAN-1 lives HERE
+                            as Lemma S1-Λ
+                            NOT as E8
+```
+
+---
+
+### 6.6 — Coverage Verification (Before / After Lemma)
+
+| Layer | Before Lemma | After Lemma | Action |
+|-------|:------------:|:-----------:|--------|
+| gap/ | ✅ Documented | ✅ No change | — |
+| category/ | ❌ Missing | ✅ Absorbed | Λ lives in Cat 10 (pre_symbolic_stratum) |
+| framework/ | ❌ Missing | ✅ Absorbed | Λ defined in E4; receiver is E5 |
+| synthesis/ | ⚠️ Implicit | ✅ Explicit | S1 §4d: Transition Lemma S1-Λ |
+
+**Evidence base:** Source doc L171, L203, L207; system_be_full.md L330, L332; E4 §3; E5 §3b; S1 §4d.
+
+---
+
+*This file is the single source of truth for all BIAN labels. Previous versions (BIAN_index.md, BIAN_index_v2.md, BIAN_index_from_RCA_mapping.md) have been archived. BIAN-1 decision records (BIAN1_E8_vs_lemma_decision.md, BIAN1_resolution_verification.md) consolidated inline — see Part 6.*
