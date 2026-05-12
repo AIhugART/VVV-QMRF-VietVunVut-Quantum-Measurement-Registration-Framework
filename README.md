@@ -74,7 +74,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | 4 | **SOT Mapping** | VVV-EQM Buddhist–QM Epistemic Mapping | Claude (Anthropic) | Anthropic | Internal research document, 2026 | — |
 | 5 | **BIAN Index SOT** | BIAN Index — Source of Truth | VietVunVut (Viet - Nguyen Xuan) | AI hug ART | Internal research document, 2026 | — |
 
-> **BIAN etymology:** "BIAN" is derived from the Vietnamese word *bí ẩn* — meaning **mystery** or **enigma** in English.
+> **EN:** **BIAN etymology:** "BIAN" is derived from the Vietnamese word *bí ẩn* — meaning **mystery** or **enigma** in English.
+>
+> **VN:** **Nguồn gốc tên gọi BIAN:** "BIAN" bắt nguồn từ tiếng Việt *bí ẩn* — nghĩa là **mystery** hoặc **enigma** trong tiếng Anh.
 
 ---
 
