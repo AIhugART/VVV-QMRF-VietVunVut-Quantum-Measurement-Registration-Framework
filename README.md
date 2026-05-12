@@ -13,13 +13,19 @@
 **Version / Phiên bản:** 2.0 — Stable Final  
 **Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20/20 BIAN gaps resolved  
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-2.0  
-**Inspiration / Cảm hứng:** Albert Einstein — tác giả Thuyết tương đối hẹp (1905) và Thuyết tương đối rộng (1915); Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*)
+**Inspiration / Cảm hứng:** Albert Einstein — tác giả Thuyết tương đối hẹp (1905) và Thuyết tương đối rộng (1915); Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc. (*co-founded Apple Inc.*)
 
 > *"The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery every day. Never lose a holy curiosity."*
 > 
 > *"Điều quan trọng là không ngừng đặt câu hỏi. Sự tò mò có lý do tồn tại của riêng nó. Người ta không thể không kinh ngạc khi chiêm nghiệm những bí ẩn của sự vĩnh hằng, của cuộc sống, của cấu trúc tuyệt diệu của thực tại. Chỉ cần mỗi ngày người ta cố gắng hiểu một chút về bí ẩn này là đủ rồi. Đừng bao giờ đánh mất sự tò mò thiêng liêng."*
 > 
 > — **Albert Einstein**
+
+> *"Stay hungry, stay foolish."*
+> 
+> *"Hãy cứ khát khao, hãy cứ dại khờ."*
+> 
+> — **Steve Jobs**
 ---
 
 ## Sources of Truth / Nguồn Sự thật
