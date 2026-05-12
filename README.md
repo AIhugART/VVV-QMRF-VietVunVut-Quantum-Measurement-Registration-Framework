@@ -192,9 +192,9 @@ VVV-EQM là một khung lý thuyết so sánh hai hệ thống tư tưởng:
 
 Qua phân tích, chúng tôi tìm ra **20 khoảng trống (BIAN gaps)** — những chỗ mà QM thiếu lý thuyết nhận thức mà Phật giáo đã phát triển từ hàng nghìn năm trước.
 
-### 2. Kết quả chính: 7 Tiên đề + 2 Bổ đề
+### 2. Kết quả chính: 16 Tiên đề + 2 Bổ đề
 
-#### 2a. Bảy Tiên đề (E1–E7)
+#### 2a. Bảy Tiên đề Cốt lõi (E1–E7)
 
 Tiên đề = **nguyên lý cốt lõi** mà QM hoàn toàn thiếu. Mỗi tiên đề mô tả một **hành động nhận thức** của người quan sát.
 
@@ -208,7 +208,23 @@ Tiên đề = **nguyên lý cốt lõi** mà QM hoàn toàn thiếu. Mỗi tiên
 | **E6** | Người quan sát là quá trình | Người quan sát không phải vật thể cố định mà là một **dòng chảy liên tục** | Anātmavāda (Vô ngã) |
 | **E7** | Vị trí hiệu lực | Phải xác định **ở đâu** trong hệ thống mà kết quả đo được coi là hợp lệ | Svataḥ prāmāṇya (Tự chứng thực) |
 
-#### 2b. Hai Bổ đề (S1-Λ, S2-Δ)
+#### 2b. Chín Tiên đề Mở rộng (E8–E16)
+
+Tiên đề mở rộng = **nguyên lý bổ sung** giải quyết các khoảng trống cấu trúc phức tạp hơn mà v1 chưa đặt tên.
+
+| # | Tên tiếng Việt | Ý nghĩa đơn giản | Nguồn Phật giáo |
+|:-:|---------------|-------------------|-----------------|
+| **E8** | Phủ quyết hồi tố | Phép đo sau có thể **hủy bỏ** kết quả đo trước — QM không có cơ chế này | Bādhaka pramāṇa (Phủ quyết) |
+| **E9** | Sự kiện quan sát viên rỗng | Tương tác vật lý + **không thu được thông tin** = trạng thái nhận thức riêng biệt | Anadhyavasāya (Bất xác định) |
+| **E10** | Hợp lệ tam phân | Cần **3 điều kiện** để phân biệt "đo thật" với "nhiễu ngẫu nhiên" | Trairūpya (Tam tướng) |
+| **E11** | Bằng chứng phản chứng | Biết chắc một điều nhờ **KHÔNG phát hiện** — QM chưa có phạm trù này | Kevalavyatirekin (Thuần loại trừ) |
+| **E12** | Tri giác giới hạn | Phép đo hợp lệ bằng năng lực **vượt giới hạn** phép chiếu chuẩn (PVM) | Alaukika pratyakṣa (Tri giác phi thường) |
+| **E13** | Gián đoạn thời gian | Bước nhảy lượng tử là **sát-na nhận thức** nguyên thủy bất phân | Kṣaṇabhaṅgavāda (Sát-na luận) |
+| **E14** | Nhận thức vắng mặt | Kết quả đo "rỗng" = **nhận thức dương tính** về sự vắng mặt | Anupalabdhi (Vô tri giác) |
+| **E15** | Liên kết nội tại | Vướng víu (entanglement) là loại **quan hệ nhận thức thứ ba** bất khả giản | Svabhāvapratibandha (Quan hệ nội tại) |
+| **E16** | Nghi ngờ có cấu trúc | Chồng chập trước đo = **bất định có cấu trúc** hoàn chỉnh, không phải "chưa biết" | Saṃśaya (Nghi ngờ) |
+
+#### 2c. Hai Bổ đề (S1-Λ, S2-Δ)
 
 Bổ đề = **mối nối** giữa các tiên đề, không phải hành động nhận thức riêng mà là điều kiện biên.
 
@@ -225,8 +241,8 @@ Bổ đề = **mối nối** giữa các tiên đề, không phải hành độn
 |:---:|-----|---------|-----------------|:--------:|
 | **A** | Cấu trúc | QM **hoàn toàn thiếu** khái niệm | Tạo Tiên đề mới | **9** |
 | **B** | Giao diện | QM có hai giai đoạn kề nhau nhưng thiếu **cầu nối** | Tạo Bổ đề | **2** |
-| **C** | Ngầm định | QM có hiện tượng nhưng thiếu **phân loại chính thức** | Nâng cấp danh mục | **7** |
-| **R** | Ngược | QM có thứ mà Phật giáo **không có** | Ghi nhận | **1** |
+| **C** | Ngầm định | QM có hiện tượng nhưng thiếu **phân loại chính thức** | Danh mục + Tiên đề E8–E12, E14, E16 | **7** |
+| **R** | Ngược | QM có thứ mà Phật giáo **không có** | Danh mục 14 + Tiên đề E15 | **1** |
 | **X** | Chưa giải | Chưa xác định được cách xử lý | Nghiên cứu thêm | **0** |
 | **∅** | Dự trữ | Giữ chỗ | — | **1** |
 
@@ -236,24 +252,24 @@ Bổ đề = **mối nối** giữa các tiên đề, không phải hành độn
 |:----:|-------------|:---:|-----------|
 | 1 | Chuyển tiếp biểu diễn sau phát hiện | **B** | Bổ đề S1-Λ |
 | 2 | Thiếu lớp nhận thức tự tham chiếu | **A** | Tiên đề E1 |
-| 3 | Không có phổ năng lực quan sát | **C** | Danh mục 11 |
+| 3 | Không có phổ năng lực quan sát | **C** | Danh mục 11 + Tiên đề E12 |
 | 4 | Không có lý thuyết hình thức biểu diễn nội tại | **A** | Tiên đề E5 |
 | 5 | Lẫn lộn ghi nhận vật lý và cam kết nhận thức | **A** | Tiên đề E3 |
 | 6 | Không có cấu trúc đo lường tự chứng nhận | **A** | Tiên đề E1 |
 | 7 | Không có tầng tiền biểu tượng | **A** | Tiên đề E4 |
-| 8 | Không có lý thuyết nhận thức về gián đoạn thời gian | **B** | Bổ đề S2-Δ |
-| 9 | Không có phân loại nhận thức vắng mặt | **C** | Danh mục 12 |
-| 10 | Tương quan phi cổ điển (BIAN ngược) | **R** | QM vượt BE |
-| 11 | Không có mô hình trạng thái nhận thức trước đo | **C** | Danh mục 13 |
-| 12 | Không có cơ chế ghi đè nhận thức | **C** | Danh mục 03 |
-| 13 | Không có phân loại sự kiện quan sát rỗng | **C** | Danh mục 02 |
-| 14 | Không có điều kiện hiệu lực thống nhất | **C** | Danh mục 09 |
-| 15 | Không có phân loại chứng cứ thuần đối lập | **C** | Danh mục 01 |
+| 8 | Không có lý thuyết nhận thức về gián đoạn thời gian | **B** | Bổ đề S2-Δ + Tiên đề E13 |
+| 9 | Không có phân loại nhận thức vắng mặt | **C** | Danh mục 13 + Tiên đề E14 |
+| 10 | Tương quan phi cổ điển (BIAN ngược) | **R** | Danh mục 14 + Tiên đề E15 |
+| 11 | Không có mô hình trạng thái nhận thức trước đo | **C** | Danh mục 15 + Tiên đề E16 |
+| 12 | Không có cơ chế ghi đè nhận thức | **C** | Danh mục 03 + Tiên đề E8 |
+| 13 | Không có phân loại sự kiện quan sát rỗng | **C** | Danh mục 06 + Tiên đề E9 |
+| 14 | Không có điều kiện hiệu lực thống nhất | **C** | Danh mục 09 + Tiên đề E10 |
+| 15 | Không có phân loại chứng cứ thuần đối lập | **C** | Danh mục 01 + Tiên đề E11 |
 | 16 | Tự hoàn thành đo lường chưa được định nghĩa | **A** | Tiên đề E2 |
 | 17 | Không có nguyên lý dừng hồi quy nội sinh | **A** | Tiên đề E1 |
 | 18 | Không có lý thuyết vị trí hiệu lực đo lường | **A** | Tiên đề E7 |
 | 19 | Người quan sát giả định là thực thể, không phải quá trình | **A** | Tiên đề E6 |
-| 20 | Dự trữ | **∅** | — |
+| 20 | Dự trữ (xem BIAN-10) | **∅** | — |
 
 ### 4. Quyết định quan trọng nhất: BIAN-8 có cần Tiên đề E8 không?
 
@@ -280,7 +296,7 @@ Thay vì tạo Tiên đề E8, chúng tôi tạo **Bổ đề S2-Δ**:
 
 #### 4d. Phép so sánh dễ hiểu
 
-| | Tiên đề (E1–E7) | Bổ đề (S1-Λ, S2-Δ) |
+| | Tiên đề (E1–E16) | Bổ đề (S1-Λ, S2-Δ) |
 |---|---|---|
 | **Giống gì?** | Các **động tác** trong quy trình đo | Các **mối nối** giữa động tác |
 | **Ví dụ** | Giống các bước nấu ăn (rửa, cắt, xào) | Giống khoảng chuyển tiếp giữa các bước |
@@ -328,20 +344,29 @@ Bước 1': ε'(M') — Sự kiện thô tiếp theo...
 | "Ghi nhận số liệu" | "Số liệu phải được **mã hóa nội tại** trong tâm trí" | E5 |
 | "Người quan sát là hệ vật lý" | "Người quan sát là **dòng chảy**, không phải vật thể" | E6 |
 | "Kết quả hợp lệ khi tái lặp" | "Phải xác định **ở đâu** kết quả có hiệu lực" | E7 |
+| "Kết quả đo cũ vẫn đúng" | "Phép đo sau có thể **hủy** kết quả trước" | E8 |
+| "Không đo = không có gì" | "Tương tác + không thông tin = trạng thái **riêng biệt**" | E9 |
+| "Đo = chiếu lên eigenvector" | "Cần **3 điều kiện** để phân biệt đo thật vs nhiễu" | E10 |
+| "Phát hiện = có tín hiệu" | "Biết chắc nhờ **KHÔNG phát hiện**" | E11 |
+| "Chỉ có PVM và POVM" | "Có phép đo bằng năng lực **vượt giới hạn** chiếu" | E12 |
+| "Bước nhảy = ngẫu nhiên" | "Bước nhảy = **sát-na nhận thức** nguyên thủy" | E13 |
+| "Null result = thống kê thừa" | "Kết quả rỗng = nhận thức **dương tính** về vắng mặt" | E14 |
+| "Entanglement = tương quan" | "Vướng víu = quan hệ nhận thức **thứ ba** bất khả giản" | E15 |
+| "Superposition = chưa biết" | "Chồng chập = **bất định có cấu trúc** hoàn chỉnh" | E16 |
 
 ### 7. Kết luận RCA
 
 #### Những gì đã đạt được
 
-1. **20/20 khoảng trống đã giải quyết** — không còn vấn đề mở
-2. **7 tiên đề ổn định** — không cần thêm E8
+1. **19/19 khoảng trống hoạt động đã giải quyết** + 1 dự trữ — không còn vấn đề mở
+2. **16 tiên đề ổn định** (E1–E7 cốt lõi + E8–E16 mở rộng)
 3. **2 bổ đề xác nhận** — bao phủ tất cả mối nối
 4. **Nguyên tắc ENI** — phương pháp phân loại mối nối nhận thức
 5. **Hệ thống GCS** — phương pháp phân loại khoảng trống tự động
 
 #### Ý nghĩa
 
-> Cơ học Lượng tử không chỉ thiếu một lý thuyết đo lường — nó thiếu **toàn bộ kiến trúc nhận thức** mà Nhận thức luận Phật giáo đã xây dựng. VVV-EQM cung cấp 7 tiên đề để lấp đầy khoảng trống đó.
+> Cơ học Lượng tử không chỉ thiếu một lý thuyết đo lường — nó thiếu **toàn bộ kiến trúc nhận thức** mà Nhận thức luận Phật giáo đã xây dựng. VVV-EQM cung cấp 16 tiên đề để lấp đầy khoảng trống đó.
 
 ---
 
