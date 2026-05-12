@@ -109,15 +109,15 @@ S3 — Observer Ontological Hub / Trung tâm Bản thể Người quan sát
 
 ## BIAN Gap Resolution / Giải quyết Khoảng trống BIAN
 
-**20/20 BIAN gaps resolved / 20/20 khoảng trống đã giải quyết:**
+**19/19 active BIAN gaps resolved + 1 reserved / 19/19 khoảng trống hoạt động đã giải quyết + 1 dự trữ:**
 
 | Class | EN / Tiếng Anh | VN / Tiếng Việt | Count | Resolution / Giải pháp |
 |:-----:|----------------|-----------------|:-----:|----------------------|
 | **A** | QM lacks concept entirely | QM hoàn toàn thiếu khái niệm | 9 | Postulates E1–E7 |
-| **B** | QM has stages, lacks map | QM có giai đoạn, thiếu ánh xạ | 2 | Lemmas S1-Λ, S2-Δ |
-| **C** | QM has phenomenon, no label | QM có hiện tượng, chưa đặt tên | 7 | Category upgrades |
-| **R** | QM exceeds BE | QM vượt quá Phật học | 1 | N/A |
-| **∅** | Reserved | Dự trữ | 1 | N/A |
+| **B** | QM has stages, lacks map | QM có giai đoạn, thiếu ánh xạ | 2 | Lemma S1-Λ (BIAN-1) + Lemma S2-Δ / E13 (BIAN-8) |
+| **C** | QM has phenomenon, no label | QM có hiện tượng, chưa đặt tên | 7 | Categories + Postulates E8–E12, E14, E16 |
+| **R** | QM exceeds BE | QM vượt quá Phật học | 1 | Category 14 + Postulate E15 (BIAN-10) |
+| **∅** | Reserved | Dự trữ | 1 | Reserved — see BIAN-10 |
 
 ---
 
