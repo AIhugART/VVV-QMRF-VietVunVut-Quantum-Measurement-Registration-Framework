@@ -51,11 +51,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-> *"The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery every day. Never lose a holy curiosity."*
+> *"Man follows Earth. Earth follows Heaven. Heaven follows the Tao. The Tao follows only itself."*
 > 
-> *"Điều quan trọng là không ngừng đặt câu hỏi. Sự tò mò có lý do tồn tại của riêng nó. Người ta không thể không kinh ngạc khi chiêm nghiệm những bí ẩn của sự vĩnh hằng, của cuộc sống, của cấu trúc tuyệt diệu của thực tại. Chỉ cần mỗi ngày người ta cố gắng hiểu một chút về bí ẩn này là đủ rồi. Đừng bao giờ đánh mất sự tò mò thiêng liêng."*
+> *"Nhân pháp địa, địa pháp thiên, thiên pháp Đạo, Đạo pháp tự nhiên."*
 > 
-> — **Albert Einstein**
+> — **Lão Tử**
 
 > *"Stay hungry, stay foolish."*
 > 
