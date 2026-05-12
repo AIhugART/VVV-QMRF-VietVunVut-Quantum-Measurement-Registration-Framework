@@ -101,7 +101,18 @@
 
 ---
 
-## The Sixteen Postulates / Mười sáu Tiên đề
+**EN:** For the two strongest structural convergences between Buddhist Epistemology and Quantum Mechanics — where both systems independently reach identical logical conclusions separated by 15 centuries — see: 📄 **[VVV_EQM_convergences.md](documents/research_documents/meta_architecture/VVV_EQM_convergences.md)**
+
+**VN:** Hai hội tụ cấu trúc mạnh nhất — nơi cả hai hệ thống độc lập đi đến cùng kết luận logic cách nhau 15 thế kỷ — xem: 📄 **[VVV_EQM_convergences.md](documents/research_documents/meta_architecture/VVV_EQM_convergences.md)**
+
+| Convergence / Hội tụ | Buddhist / Phật giáo | QM / Lượng tử |
+|:--------------------:|:--------------------:|:-------------:|
+| **C1** | Niḥsvabhāvatā — vô tự tánh (thế kỷ 5) | Bell's Theorem — không hidden variables (1964–2015) |
+| **C2** | Arthakriyā — hợp lệ = hành động thành công (thế kỷ 7) | Predictive success as validity criterion (2024) |
+
+---
+
+
 
 ### Core Postulates (E1–E7) — Cognitive Operations / Tiên đề Cốt lõi — Phép toán Nhận thức
 
