@@ -365,42 +365,13 @@ buddhist-epistemology-quantum-measurement/
 | 19 | Observer assumed as entity, not process | Người quan sát giả định là thực thể, không phải quá trình | **A** | Postulate E6 / Tiên đề E6 |
 | 20 | Reserve (see BIAN-10) | Dự trữ (xem BIAN-10) | **∅** | — |
 
-### 4. Key Decision: Does BIAN-8 Need Postulate E8? / Quyết định quan trọng nhất: BIAN-8 có cần Tiên đề E8 không?
+### 4. Key Decision: BIAN-8 → Lemma S2-Δ (not Postulate E8)
 
-#### 4a. Problem / Vấn đề
+**EN:** Kṣaṇabhaṅgavāda (Momentariness / Sát-na diệt) was evaluated against 4 criteria for Postulate status. **Result: 0/4 — rejected as a Postulate.** It describes ontological reality, not an epistemic act; it adds no new cognitive operator that QM lacks; and its gap occurs *between* measurements, not *within* them. It was correctly classified as **Lemma S2-Δ** — an epistemic boundary condition, not an operator.
 
-**EN:** Kṣaṇabhaṅgavāda (Doctrine of Momentariness) is a **major** Buddhist doctrine — stating that all things arise and cease instantly, with no moment of persistence. Question: does this doctrine deserve to be the 8th Postulate?  
-**VN:** Kṣaṇabhaṅgavāda (Sát-na diệt) là một giáo lý **rất lớn** trong Phật giáo — nói rằng mọi thứ sinh ra rồi diệt ngay lập tức, không có khoảnh khắc tồn tại. Câu hỏi: giáo lý lớn thế này có xứng đáng là Tiên đề thứ 8 không?
+**VN:** Kṣaṇabhaṅgavāda (Sát-na diệt) được kiểm tra theo 4 tiêu chí để xét địa vị Tiên đề. **Kết quả: 0/4 — bị bác.** Nó mô tả thực tại bản thể học, không phải hành động nhận thức; không thêm toán tử nhận thức mới mà QM đang thiếu; và gián đoạn xảy ra *giữa* hai phép đo, không phải *trong* quy trình. Được phân loại đúng là **Bổ đề S2-Δ** — điều kiện biên nhận thức, không phải toán tử.
 
-#### 4b. Four-Criteria Test / Bài kiểm tra 4 tiêu chí
-
-| # | EN Criterion | VN Tiêu chí | Requirement / Yêu cầu | BIAN-8 pass? / Đạt không? |
-|:-:|-------------|-------------|----------------------|:--------------------------:|
-| 1 | Epistemic language | Ngôn ngữ nhận thức | Must describe observer's **act** / Phải mô tả **hành động** của người quan sát | ❌ EN: Momentariness describes **reality** (ontology), not epistemic act / VN: Sát-na diệt mô tả **thực tại**, không phải hành động nhận thức |
-| 2 | Distributed connection | Kết nối phân tán | Must link to **many** QM concepts / Phải liên kết đến **nhiều** khái niệm QM | ❌ EN: 5/7 edges point to same concept (Quantum Jump) / VN: 5/7 cạnh trỏ về cùng 1 khái niệm |
-| 3 | Requires new operator | Cần toán tử mới | Must create operation QM lacks / Phải tạo ra phép toán QM chưa có | ❌ EN: QM already has quantum jump operator (Ĉ_jump) / VN: QM đã có toán tử nhảy lượng tử |
-| 4 | Adds new cognitive step | Thêm bước nhận thức mới | Must add a step to measurement process / Phải thêm một bước vào quy trình đo | ❌ EN: Gap occurs **between** measurements, not **within** / VN: Gián đoạn xảy ra **giữa** hai lần đo, không phải **trong** quy trình |
-
-**EN: Result: 0/4 — E8 rejected. / VN: Kết quả: 0/4 — E8 bị bác bỏ.**
-
-#### 4c. Alternative Solution / Giải pháp thay thế
-
-**EN:** Instead of creating Postulate E8, we create **Lemma S2-Δ**:  
-**VN:** Thay vì tạo Tiên đề E8, chúng tôi tạo **Bổ đề S2-Δ**:
-
-> **EN:** Between two consecutive measurements M₁ and M₂, there exists a cognitive gap Δ(M₁,M₂). The state after M₁ and the state before M₂ are **not** connected by continuous evolution, but by a momentary boundary — an instant of complete cognitive dissolution and reconstitution.  
-> **VN:** Giữa hai phép đo liên tiếp M₁ và M₂, tồn tại một gián đoạn nhận thức Δ(M₁,M₂). Trạng thái sau M₁ và trạng thái trước M₂ **không** được nối bởi tiến hóa liên tục, mà bởi ranh giới sát-na: một khoảnh khắc giải thể và tái cấu trúc nhận thức hoàn toàn.
-
-#### 4d. Analogy / Phép so sánh dễ hiểu
-
-| | EN: Postulates (E1–E16) / VN: Tiên đề | EN: Lemmas (S1-Λ, S2-Δ) / VN: Bổ đề |
-|---|---|---|
-| **What they are like / Giống gì?** | The **steps** in the measurement process / Các **động tác** trong quy trình đo | The **connectors** between steps / Các **mối nối** giữa động tác |
-| **Example / Ví dụ** | Like cooking steps: wash, cut, stir-fry / Giống các bước nấu ăn (rửa, cắt, xào) | Like the transition between steps / Giống khoảng chuyển tiếp giữa các bước |
-| **Momentariness / Sát-na diệt** | — | Like the **pause** between two cooking sessions / Giống khoảng **nghỉ** giữa hai lần nấu |
-
-**EN:** In physics, the speed of light *c* is vital but it is a **constant** (boundary condition), not a **force**. Similarly, Momentariness is an epistemic constant, not an epistemic operator.  
-**VN:** Trong vật lý, tốc độ ánh sáng *c* rất quan trọng nhưng nó là **hằng số** (điều kiện biên), không phải **lực**. Tương tự, Sát-na diệt là hằng số nhận thức, không phải phép toán nhận thức.
+> 📄 **Full 4-criteria test, analogy, and architectural justification:** [BIAN1_resolution_verification.md](documents/research_documents/gap/BIAN1_resolution_verification.md)
 
 ### 5. Epistemic Measurement Pipeline / Ống dẫn đo lường nhận thức (S1 Pipeline)
 
