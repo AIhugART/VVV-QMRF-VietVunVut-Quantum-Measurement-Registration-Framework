@@ -23,7 +23,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Version / Phiên bản:** 2.0 — Stable Final  
 **Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20/20 BIAN gaps resolved  
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-2.0  
-**Inspiration / Cảm hứng:** Albert Einstein — tác giả Thuyết tương đối hẹp (1905) và Thuyết tương đối rộng (1915); Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc. (*co-founded Apple Inc.*)
+**Inspiration / Cảm hứng:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại của Trung Quốc, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc. (*co-founded Apple Inc.*)
 
 ## The Central Question / Câu Hỏi Trung Tâm
 
