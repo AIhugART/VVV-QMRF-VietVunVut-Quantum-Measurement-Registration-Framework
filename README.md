@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # VVV-EQM: Sixteen Epistemic Postulates for Quantum Measurement
 # Mười sáu Tiên đề Nhận thức luận cho Đo lường Lượng tử
 
@@ -485,6 +487,15 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 |:-------:|--------------------------|-------|
 | **v1** | 2026-05-10, 2026-05-11, before 02:00:00 2026-05-12 | Initial release — 7 Postulates (E1–E7), 2 Lemmas (S1-Λ, S2-Δ), 20/20 BIAN resolved |
 | **v2** | after 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 19/19 active BIAN fully resolved via gap→category→framework pipeline |
+
+## Research Timeline / Dòng thời gian nghiên cứu
+
+| Phase / Giai đoạn | Time / Thời gian |
+|-------------------|------------------|
+| Pre research / Tiền nghiên cứu | 09:15:00 2026-05-08 |
+| Main research / Nghiên cứu chính | 09:00:00 2026-05-11 (24h) |
+| Revision research / Nghiên cứu chỉnh sửa | 08:00:00 2026-05-12 |
+| Public research / Công bố nghiên cứu | 13:10:00 2026-05-12 |
 
 ---
 
