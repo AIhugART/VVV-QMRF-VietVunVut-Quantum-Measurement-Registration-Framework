@@ -1,5 +1,5 @@
-# VVV-EQM: Seven Epistemic Postulates for Quantum Measurement
-# Bảy Tiên đề Nhận thức luận cho Đo lường Lượng tử
+# VVV-EQM: Sixteen Epistemic Postulates for Quantum Measurement
+# Mười sáu Tiên đề Nhận thức luận cho Đo lường Lượng tử
 
 <p align="center">
   <strong>A structural extension of Quantum Mechanics grounded in Buddhist Pramāṇa Epistemology</strong><br/>
@@ -12,20 +12,22 @@
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)  
 **Version / Phiên bản:** 2.0 — Stable Final  
 **Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20/20 BIAN gaps resolved  
-**Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-1.0  
+**Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-2.0  
 **Inspiration / Cảm hứng:** Albert Einstein — tác giả Thuyết tương đối hẹp (1905) và Thuyết tương đối rộng (1915); Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*)
 
 ---
 
 ## What is VVV-EQM? / VVV-EQM là gì?
 
-**EN:** Standard Quantum Mechanics has four physical postulates (P1–P4) that describe state space, observables, measurement, and dynamics. These postulates are *silent* on the epistemic architecture of measurement — they don't specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the observer. VVV-EQM fills these gaps by adding 7 epistemic postulates derived from structural analysis of Buddhist Pramāṇa epistemology (Dignāga–Dharmakīrti tradition).
+**EN:** Standard Quantum Mechanics has four physical postulates (P1–P4) that describe state space, observables, measurement, and dynamics. These postulates are *silent* on the epistemic architecture of measurement — they don't specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the observer. VVV-EQM fills these gaps by adding 16 epistemic postulates derived from structural analysis of Buddhist Pramāṇa epistemology (Dignāga–Dharmakīrti tradition). The first 7 (E1–E7) define core cognitive operations; the remaining 9 (E8–E16) extend the framework to cover retroactive invalidation, null events, validity conditions, contrapositive evidence, transcendental observation, temporal discontinuity, absence cognition, entanglement relations, and pre-measurement indeterminacy.
 
-**VN:** Cơ học Lượng tử chuẩn có bốn tiên đề vật lý (P1–P4) mô tả không gian trạng thái, đại lượng đo được, phép đo, và động lực học. Các tiên đề này *im lặng* về kiến trúc nhận thức luận của phép đo — chúng không chỉ rõ điều gì xác nhận một phép đo, điều gì phân biệt phép đo với tương tác thông thường, hay người quan sát là gì. VVV-EQM lấp đầy các khoảng trống này bằng 7 tiên đề nhận thức luận được rút ra từ phân tích cấu trúc của Nhận thức luận Phật giáo Pramāṇa (truyền thống Dignāga–Dharmakīrti).
+**VN:** Cơ học Lượng tử chuẩn có bốn tiên đề vật lý (P1–P4) mô tả không gian trạng thái, đại lượng đo được, phép đo, và động lực học. Các tiên đề này *im lặng* về kiến trúc nhận thức luận của phép đo. VVV-EQM lấp đầy các khoảng trống này bằng 16 tiên đề nhận thức luận từ Nhận thức luận Phật giáo Pramāṇa (truyền thống Dignāga–Dharmakīrti). 7 tiên đề đầu (E1–E7) định nghĩa các phép toán nhận thức cốt lõi; 9 tiên đề mở rộng (E8–E16) bao phủ phủ quyết hồi tố, sự kiện rỗng, điều kiện hợp lệ, bằng chứng phản chứng, quan sát siêu việt, gián đoạn thời gian, nhận thức vắng mặt, quan hệ vướng víu, và bất định trước đo.
 
 ---
 
-## The Seven Postulates / Bảy Tiên đề
+## The Sixteen Postulates / Mười sáu Tiên đề
+
+### Core Postulates (E1–E7) — Cognitive Operations / Tiên đề Cốt lõi — Phép toán Nhận thức
 
 | # | Postulate / Tiên đề | EN Summary / Tóm tắt | VN Summary / Tóm tắt | Buddhist Source / Nguồn |
 |:-:|:--------------------:|----------------------|----------------------|------------------------|
@@ -36,6 +38,20 @@
 | **E5** | Internal Encoding / Mã hóa nội tại | Results are internally encoded, not just abstract eigenvalues | Kết quả được mã hóa bên trong, không chỉ là giá trị riêng trừu tượng | Ākāra |
 | **E6** | Observer-as-Process / Người quan sát là quá trình | The observer is a causal process, not a substance | Người quan sát là quá trình nhân quả, không phải thực thể | Anātmavāda |
 | **E7** | Validity Location / Vị trí hiệu lực | Validity is intrinsic by default; invalidity requires external detection | Hiệu lực là nội tại; vô hiệu cần phát hiện bên ngoài | Svataḥ prāmāṇya |
+
+### Extended Postulates (E8–E16) — Structural Expansions / Tiên đề Mở rộng — Mở rộng Cấu trúc
+
+| # | Postulate / Tiên đề | EN Summary / Tóm tắt | VN Summary / Tóm tắt | Buddhist Source / Nguồn |
+|:-:|:--------------------:|----------------------|----------------------|------------------------|
+| **E8** | Retroactive Override / Phủ quyết hồi tố | A subsequent measurement can retroactively void a prior result | Phép đo sau có thể hồi tố vô hiệu hóa kết quả trước | Bādhaka pramāṇa |
+| **E9** | Null Observer Event / Sự kiện quan sát viên rỗng | Physical interaction + zero information = distinct epistemic state | Tương tác vật lý + không thông tin = trạng thái nhận thức riêng | Anadhyavasāya |
+| **E10** | Tripartite Validity / Hợp lệ tam phân | Three necessary conditions distinguish measurement from decoherence | Ba điều kiện cần phân biệt phép đo với giải kết hợp | Trairūpya |
+| **E11** | Contrapositive Evidence / Bằng chứng phản chứng | Knowledge acquired without physical interaction via null detection | Tri thức thu được không tương tác vật lý qua phát hiện rỗng | Kevalavyatirekin |
+| **E12** | Limit-Faculty Perception / Tri giác giới hạn | Valid measurement by faculty beyond standard projective limits | Phép đo hợp lệ bởi năng lực vượt giới hạn phép chiếu chuẩn | Alaukika pratyakṣa |
+| **E13** | Temporal Discontinuity / Gián đoạn thời gian | Quantum jumps are primary indivisible epistemic moments | Bước nhảy lượng tử là sát-na nhận thức nguyên thủy bất phân | Kṣaṇabhaṅgavāda |
+| **E14** | Epistemic Absence / Nhận thức vắng mặt | Null measurement result = positive cognition of absence | Kết quả đo rỗng = nhận thức dương tính về vắng mặt | Anupalabdhi |
+| **E15** | Intrinsic Relational Binding / Liên kết nội tại | Entanglement is a third irreducible epistemic relation type | Vướng víu là loại quan hệ nhận thức thứ ba bất khả giản | Svabhāvapratibandha |
+| **E16** | Structured Doubt / Nghi ngờ có cấu trúc | Pre-measurement superposition = complete structured indeterminacy | Chồng chập trước đo = bất định có cấu trúc hoàn chỉnh | Saṃśaya |
 
 ---
 
@@ -52,17 +68,19 @@
 
 ```
 ┌───────────────────────────────────────────────────────┐
-│       VVV-EQM FINAL ARCHITECTURE (v1.0 Stable)       │
+│       VVV-EQM FINAL ARCHITECTURE (v2.0 Stable)       │
 │                                                       │
-│  POSTULATES:  E1–E7 (7)     — cognitive operations    │
+│  POSTULATES:  E1–E16 (16)    — epistemic operations   │
+│    Core:      E1–E7 (7)      — cognitive operations   │
+│    Extended:  E8–E16 (9)     — structural expansions  │
 │  LEMMAS:      S1-Λ, S2-Δ (2) — interface connectors   │
-│  CATEGORIES:  Cat 01–13 (7)  — implicit gap labels    │
+│  CATEGORIES:  Cat 01–15 (15)  — epistemic categories  │
 │  SYNTHESIS:   S1, S2, S3 (3) — integration patterns    │
 │  META:        ENI, GCS, MIP, PCC (4)                  │
-│  BIAN GAPS:   20/20 resolved — zero open               │
+│  BIAN GAPS:   19/19 resolved + 1 reserved              │
 │                                                       │
-│  QM Extended: P1–P4 (physical) + E1–E7 (epistemic)    │
-│  Total: 11 postulates for complete measurement theory  │
+│  QM Extended: P1–P4 (physical) + E1–E16 (epistemic)   │
+│  Total: 20 postulates for complete measurement theory  │
 │                                                       │
 │  STATUS: COMPLETE ✅                                   │
 └───────────────────────────────────────────────────────┘
@@ -141,10 +159,10 @@ buddhist-epistemology-quantum-measurement/
 │   │   ├── RCA_bao_cao_tong_hop_tieng_Viet.md  ← Vietnamese summary
 │   │   └── achives/                   ← Primary source scholarship
 │   └── research_documents/
-│       ├── framework/                 ← E1–E7 postulate definitions
+│       ├── framework/                 ← E1–E16 postulate definitions
 │       ├── synthesis/                 ← S1, S2, S3 integration patterns
-│       ├── category/                  ← 13 epistemic category files
-│       ├── gap/                       ← BIAN index + resolution files
+│       ├── category/                  ← 15 epistemic category files
+│       ├── gap/                       ← BIAN index SOT + resolution files
 │       ├── mapping/                   ← SOT BE↔QM 1:1 mapping
 │       ├── meta_architecture/         ← ENI, GCS, PCC definitions
 │       └── review/                    ← RCA audit reports
@@ -340,10 +358,10 @@ Bước 1': ε'(M') — Sự kiện thô tiếp theo...
 
 ```bibtex
 @techreport{VietVunVut2026,
-  title   = {VVV-EQM: Seven Epistemic Postulates for Quantum Measurement},
+  title   = {VVV-EQM: Sixteen Epistemic Postulates for Quantum Measurement},
   author  = {VietVunVut (Viet - Nguyen Xuan)},
   year    = {2026},
-  note    = {VVV-EQM §WP-1.0, Stable Final},
+  note    = {VVV-EQM §WP-2.0, Stable Final},
   url     = {https://github.com/AIhugART/buddhist-epistemology-quantum-measurement}
 }
 ```
@@ -369,6 +387,6 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 
 ---
 
-*VietVunVut (2026). VVV-EQM: Seven Epistemic Postulates for Quantum Measurement — A Structural Analysis Grounded in Buddhist Pramāṇa Epistemology.*
+*VietVunVut (2026). VVV-EQM: Sixteen Epistemic Postulates for Quantum Measurement — A Structural Analysis Grounded in Buddhist Pramāṇa Epistemology.*
 
 © 2026 VietVunVut. All Rights Reserved.
