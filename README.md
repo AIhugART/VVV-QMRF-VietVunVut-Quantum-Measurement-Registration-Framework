@@ -8,12 +8,46 @@
 
 ---
 
+## Thesis / Luận điểm
+
+> **EN:** Quantum Mechanics describes physical events with extraordinary precision but contains no theory of the conditions under which a physical event becomes a valid epistemic act; Pramāṇavāda was constructed precisely to answer that question, and its answers — non-substantialist knower, pragmatist validity criterion, denial of context-independent intrinsic properties, self-certifying epistemic act — map structurally onto the unresolved foundations of quantum measurement.
+>
+> **VN:** Cơ Học Lượng Tử mô tả các sự kiện vật lý với độ chính xác phi thường nhưng không chứa lý thuyết về các điều kiện theo đó một sự kiện vật lý trở thành một hành vi nhận thức hợp lệ; Pramāṇavāda được xây dựng chính xác để trả lời câu hỏi đó, và các câu trả lời của nó — người nhận thức phi thực thể luận, tiêu chí hợp lệ thực dụng luận, phủ nhận các tính chất nội tại độc lập ngữ cảnh, hành vi nhận thức tự chứng — ánh xạ về cấu trúc lên các nền tảng chưa được giải quyết của phép đo lượng tử.
+
+---
+
 **Framework / Khung lý thuyết:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)  
 **Version / Phiên bản:** 2.0 — Stable Final  
 **Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20/20 BIAN gaps resolved  
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-2.0  
 **Inspiration / Cảm hứng:** Albert Einstein — tác giả Thuyết tương đối hẹp (1905) và Thuyết tương đối rộng (1915); Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc. (*co-founded Apple Inc.*)
+
+## The Central Question / Câu Hỏi Trung Tâm
+
+**EN:** When does a physical event become a cognitive event?  
+**VN:** Khi nào một sự kiện vật lý trở thành một sự kiện nhận thức?
+
+**EN:** More precisely: what are the sufficient conditions under which a physical event constitutes a valid epistemic act?  
+**VN:** Chính xác hơn: điều kiện đủ nào khiến một sự kiện vật lý trở thành một hành vi nhận thức hợp lệ?
+
+---
+
+## The Problem / Vấn Đề
+
+**EN:** Quantum Mechanics is the most empirically successful theory in the history of science — predicting experimental outcomes to ten decimal places. Yet it contains an unresolved foundational question known as the **Measurement Problem**: what exactly constitutes a measurement, and when does it occur? After one hundred years, QM has no formal answer to this question within its own formalism.
+
+**VN:** Cơ Học Lượng Tử là lý thuyết thành công nhất trong lịch sử khoa học tính theo độ chính xác thực nghiệm — dự đoán kết quả thí nghiệm chính xác đến mười chữ số thập phân. Tuy nhiên nó chứa một câu hỏi nền tảng chưa được giải quyết gọi là **Measurement Problem**: điều gì cấu thành một phép đo, và nó xảy ra khi nào? Sau một trăm năm, QM không có câu trả lời hình thức cho câu hỏi này trong chính formalism của nó.
+
+**EN:** Buddhist Epistemology in the Pramāṇa tradition (Dignāga, Dharmakīrti, 5th–7th century) was built precisely to answer this question. Its entire architecture — the theory of valid cognition, the structure of the epistemic act, the conditions of validity, the self-certifying nature of cognition — constitutes a formal answer to: when does a contact with reality constitute a valid epistemic event?
+
+**VN:** Nhận Thức Luận Phật Giáo trong truyền thống Pramāṇa (Diṅnāga, Dharmakīrti, thế kỷ 5–7) được xây dựng chính xác để trả lời câu hỏi này. Toàn bộ kiến trúc của nó — lý thuyết về nhận thức hợp lệ, cấu trúc của hành vi nhận thức, các điều kiện hợp lệ, bản chất tự chứng của nhận thức — cấu thành một câu trả lời hình thức cho: khi nào một tiếp xúc với thực tại trở thành một sự kiện nhận thức hợp lệ?
+
+**EN:** Both systems face the same logical pressure from the same direction: not every physical interaction is a measurement; not every contact between systems produces valid information; something must distinguish the epistemic event from the merely physical event; neither system can derive this distinction from physics alone.
+
+**VN:** Cả hai hệ thống đối mặt với cùng một áp lực logic từ cùng một hướng: không phải mọi tương tác vật lý đều là một phép đo; không phải mọi tiếp xúc giữa các hệ thống đều tạo ra thông tin hợp lệ; phải có cái gì đó phân biệt sự kiện nhận thức với sự kiện thuần túy vật lý; không hệ thống nào có thể derive sự phân biệt này từ vật lý đơn thuần.
+
+---
 
 > *"The important thing is not to stop questioning. Curiosity has its own reason for existing. One cannot help but be in awe when he contemplates the mysteries of eternity, of life, of the marvelous structure of reality. It is enough if one tries merely to comprehend a little of this mystery every day. Never lose a holy curiosity."*
 > 
@@ -39,6 +73,23 @@
 | 5 | **BIAN Index SOT** | BIAN Index — Source of Truth | VietVunVut (Viet - Nguyen Xuan) | AI hug ART | Internal research document, 2026 | — |
 
 > **BIAN etymology:** "BIAN" is derived from the Vietnamese word *bí ẩn* — meaning **mystery** or **enigma** in English.
+
+---
+
+## What This Research Is NOT / Nghiên Cứu Này Không Phải Là Gì
+
+> [!IMPORTANT]
+> **EN:** Precision requires exclusion. The following are **NOT** the intersection this research addresses — to avoid confusion with quantum mysticism or pseudoscience.
+>
+> **VN:** Sự chính xác đòi hỏi loại trừ. Sau đây **KHÔNG PHẢI** giao điểm mà nghiên cứu này đề cập — nhằm tránh nhầm lẫn với huyền bí lượng tử hoặc giả khoa học.
+
+| ❌ NOT / Không phải | ✅ IS / Mà là |
+|:-------------------:|:-------------:|
+| "Buddhist philosophy predicted quantum mechanics" / "Triết học Phật giáo dự đoán cơ học lượng tử" | Two systems independently forced by internal logic to solve the same structural problem / Hai hệ thống độc lập bị buộc bởi logic nội tại phải giải cùng một vấn đề cấu trúc |
+| "Consciousness causes wavefunction collapse" / "Ý thức gây ra wavefunction collapse" | Structural epistemic architecture analysis — no consciousness metaphysics / Phân tích kiến trúc nhận thức cấu trúc — không có siêu hình học ý thức |
+| "Buddhist monks understood entanglement" / "Tu sĩ Phật giáo hiểu entanglement" | Formal convergence in validity conditions, derived independently / Hội tụ hình thức trong điều kiện hợp lệ, được derive độc lập |
+| "Everything is connected" / "Mọi thứ đều kết nối" | Non-analogical structural identity at the level of epistemic act conditions / Đồng nhất cấu trúc phi analogie ở tầng điều kiện hành vi nhận thức |
+| New interpretation of QM / Diễn giải mới của QM | Structural extension — physically neutral, interpretation-agnostic / Mở rộng cấu trúc — trung lập về diễn giải vật lý |
 
 ---
 
