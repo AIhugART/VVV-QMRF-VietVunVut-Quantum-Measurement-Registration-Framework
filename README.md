@@ -10,8 +10,8 @@
 
 **Framework / Khung lý thuyết:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)  
-**Version / Phiên bản:** 1.0 — Stable Final  
-**Status / Trạng thái:** ✅ Complete — 7 Postulates, 2 Lemmas, 20/20 BIAN gaps resolved  
+**Version / Phiên bản:** 2.0 — Stable Final  
+**Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20/20 BIAN gaps resolved  
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-1.0  
 **Inspiration / Cảm hứng:** Albert Einstein — tác giả Thuyết tương đối hẹp (1905) và Thuyết tương đối rộng (1915); Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*)
 
@@ -365,6 +365,7 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 | Version | Working Sessions (GMT+7) | Notes |
 |:-------:|--------------------------|-------|
 | **v1** | 2026-05-10, 2026-05-11, before 02:00:00 2026-05-12 | Initial release — 7 Postulates (E1–E7), 2 Lemmas (S1-Λ, S2-Δ), 20/20 BIAN resolved |
+| **v2** | after 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 19/19 active BIAN fully resolved via gap→category→framework pipeline |
 
 ---
 
