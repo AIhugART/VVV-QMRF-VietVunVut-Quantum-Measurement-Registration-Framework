@@ -36,7 +36,7 @@
 | 2 | **QM Target SOT** | Quantum Mechanics: The Theoretical Minimum | Leonard Susskind; Art Friedman | Stanford University; Portland State University | Basic Books, 2014 | ISBN 978-0-465-06569-2 (paperback) |
 | 3 | **QM Target SOT** | Quantum Measurement Theory and Practice | Andrew N. Jordan; Irfan A. Siddiqi | Chapman University; University of Rochester; University of California, Berkeley | Cambridge University Press, 2024 | `10.1017/9781009103909` |
 | 4 | **SOT Mapping** | VVV-EQM Buddhist–QM Epistemic Mapping | Claude (Anthropic) | Anthropic | Internal research document, 2026 | — |
-| 5 | **BIAN Index SOT** | BIAN Index — Source of Truth | VietVunVut (Viet - Nguyen Xuan) | Independent researcher | Internal research document, 2026 | — |
+| 5 | **BIAN Index SOT** | BIAN Index — Source of Truth | VietVunVut (Viet - Nguyen Xuan) | AI hug ART | Internal research document, 2026 | — |
 
 > **BIAN etymology:** "BIAN" is derived from the Vietnamese word *bí ẩn* — meaning **mystery** or **enigma** in English.
 
