@@ -492,12 +492,12 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 
 ## Research Timeline / Dòng thời gian nghiên cứu
 
-| Phase / Giai đoạn | Time / Thời gian |
-|-------------------|------------------|
-| Pre research / Tiền nghiên cứu | 09:15:00 2026-05-08 |
-| Main research / Nghiên cứu chính | 09:00:00 2026-05-11 (24h) |
-| Revision research / Nghiên cứu chỉnh sửa | 08:00:00 2026-05-12 |
-| Public research / Công bố nghiên cứu | 13:10:00 2026-05-12 |
+| Phase / Giai đoạn | Time / Thời gian | AI tool / Công cụ AI |
+|-------------------|------------------|----------------------|
+| Pre research / Tiền nghiên cứu | 09:15:00 2026-05-08 | Claude Sonnet 4.6, Deepseek v4 pro (claude.ai, Google Antigravity IDE) |
+| Main research / Nghiên cứu chính | 09:00:00 2026-05-11 (24h) | Claude Opus 4.6, Gemini 3.1 pro (Google Antigravity IDE) |
+| Revision research / Nghiên cứu chỉnh sửa | 08:00:00 2026-05-12 | Claude Opus 4.6, Gemini 3.1 pro (Google Antigravity IDE) |
+| Public research / Công bố nghiên cứu | 13:10:00 2026-05-12 | — |
 
 ---
 
