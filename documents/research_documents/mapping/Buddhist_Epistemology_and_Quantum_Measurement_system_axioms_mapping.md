@@ -17,7 +17,7 @@ The Pramāṇavāda → Quantum Measurement mapping is organized around four fou
 | --- | --- | --- | --- | --- |
 | 1 | Dependent Arising | Paṭiccasamuppāda (Pāli) / Pratītyasamutpāda (Skt.) | No state exists independently. All phenomena arise in dependence on conditions. | No absolute quantum state — only states relative to a reference system. Wavefunction describes the structure of possibilities within a given relational network. |
 | 2 | Emptiness | Suññatā (Pāli) / Śūnyatā (Skt.) | No entity has intrinsic properties (niḥsvabhāvatā). What appears as a property is a conceptual imputation dependent on relational conditions. | Spin, position are properties of the particle-in-relation-to-apparatus. Properties are relations, not intrinsic attributes. Bell's theorem and Kochen-Specker rule out context-independent hidden variables. |
-| 3 | Consciousness-Only | Vijñaptimātra (Skt.) | Consciousness (vijñāna) is the condition for reality to manifest. The object of cognition (ālambana) is nothing other than the appearance of an object in cognition itself (svasaṃvedana). | Measurement does not reveal a pre-existing state — measurement is the condition for the state to manifest. Collapse is an epistemic update, not a physical event. |
+| 3 | Consciousness-Only | Vijñaptimātra (Skt.) | Consciousness (vijñāna) is the condition for reality to manifest. The object of cognition (ālambana) is nothing other than the appearance of an object in cognition itself (svasaṃvedana). | Measurement does not reveal a pre-existing state — measurement is the condition for the state to manifest. Collapse is a registration-state update, not a physical event. |
 | 4 | Two Truths | Dvisatya (Skt.) | Conventional truth (saṃvṛtisat) and ultimate truth (paramārthasat) are two levels at which reality is cognized. The conventional world is the domain of conceptual construction (vikalpa); the ultimate is dynamically subtle, non-conceptual, irreducible. | The quantum-classical boundary is epistemic, not physical. Classical physics functions analogously to conventional description; quantum mechanics approaches the ultimate tier where observer and system cannot be pried apart. |
 
 ## Node-to-Axiom Assignment
@@ -1036,10 +1036,10 @@ Ranked by structural significance, merged from tier-level and axiom-level analys
 | --- | --- | --- | --- | --- |
 | 1 | Pratityasamutpada | N_BE_00029, N_BE_00021, N_BE_00020, N_BE_00001, N_BE_00019, N_BE_00016, N_BE_00018, N_BE_00017 | Relational QM, no absolute state, entanglement | BIAN-6, 8, 10, 14 |
 | 2 | Sunyata | N_BE_00025, N_BE_00013, N_BE_00014, N_BE_00022, N_BE_00005, N_BE_00015, N_BE_00008, N_BE_00009 | Contextuality, Bell theorem, properties-as-relations | BIAN-7, 9 |
-| 3 | Vijnaptimatra | N_BE_00011, N_BE_00010, N_BE_00002, N_BE_00006, N_BE_00007, N_BE_00023 | Collapse as epistemic update, measurement as condition | BIAN-1, 2, 4, 5, 11, 12, 13, 16, 17, 18, 19 |
+| 3 | Vijnaptimatra | N_BE_00011, N_BE_00010, N_BE_00002, N_BE_00006, N_BE_00007, N_BE_00023 | Collapse as registration-state update, measurement as condition | BIAN-1, 2, 4, 5, 11, 12, 13, 16, 17, 18, 19 |
 | 4 | Dvisatya | N_BE_00026, N_BE_00003, N_BE_00027, N_BE_00028, N_BE_00024, N_BE_00012, N_BE_00030, N_BE_00004 | Quantum-classical cut as epistemic boundary | BIAN-3, 15 |
 
-**Final conclusion:** Wavefunction does not describe "where a particle is." Wavefunction describes the structure of possibilities within a given relational network. The quantum-classical boundary is epistemic, not physical. Properties are relations, not intrinsic attributes. Collapse is an epistemic update, not a physical event. This is epistemology, not ontology.
+**Final conclusion:** Wavefunction does not describe "where a particle is." Wavefunction describes the structure of possibilities within a given relational network. The quantum-classical boundary is epistemic, not physical. Properties are relations, not intrinsic attributes. Collapse is a registration-state update, not a physical event. This is epistemology, not ontology.
 
 ---
 

@@ -25,7 +25,7 @@
 
 QM formally recognizes only one mode of knowledge acquisition: direct physical interaction (Projective Measurement / PVM). The Elitzur-Vaidman interaction-free measurement (1993) demonstrated that a quantum system can be detected without the detector ever absorbing a photon from it — yet QM has no formal category for this. It is treated as an interesting "effect" or "paradox" rather than a structurally distinct epistemic instrument.
 
-E11 closes this gap. It establishes that *Kevalavyatirekin* (purely contrastive inference) — a rigorous category from Dignāga/Dharmakīrti's Buddhist logic — maps precisely onto interaction-free quantum measurement. The epistemic mechanism: the null result at detector A, combined with the quantum superposition structure, logically entails the particle's position in path B. No energy exchange occurs. The wave function collapse is driven entirely by the *epistemic update* of the observer, not by physical disturbance.
+E11 closes this gap. It establishes that *Kevalavyatirekin* (purely contrastive inference) — a rigorous category from Dignāga/Dharmakīrti's Buddhist logic — maps precisely onto interaction-free quantum measurement. The registration-state mechanism: the null result at detector A, combined with the quantum superposition structure, logically entails the particle's position in path B. No energy exchange occurs. The wave function collapse is driven entirely by the *registration-state update*, not by physical disturbance.
 
 E11 paired with E9 (Null Observer Event / BIAN-13) completes the 2×2 Epistemic-Physical matrix: E9 is "interaction without information"; E11 is "information without interaction."
 
@@ -33,7 +33,7 @@ E11 paired with E9 (Null Observer Event / BIAN-13) completes the 2×2 Epistemic-
 
 QM chính thức chỉ công nhận một phương thức thu nhận tri thức: tương tác vật lý trực tiếp (Phép đo chiếu PVM). Thí nghiệm Elitzur-Vaidman (1993) đã chứng minh rằng một hệ lượng tử có thể được phát hiện mà không cần hấp thụ bất kỳ photon nào — nhưng QM không có phạm trù chính thức cho điều này. Nó được coi là "hiệu ứng thú vị" thay vì một công cụ nhận thức khác biệt về cấu trúc.
 
-E11 đóng khoảng trống này. Nó thiết lập rằng *Kevalavyatirekin* (suy luận thuần loại trừ) — phạm trù nghiêm ngặt từ logic Phật giáo Dignāga/Dharmakīrti — ánh xạ chính xác lên phép đo phi tương tác lượng tử. Cơ chế nhận thức: kết quả rỗng tại máy dò A, kết hợp với cấu trúc chồng chập lượng tử, suy luận logic ra vị trí hạt tại nhánh B. Không có trao đổi năng lượng. Sụp đổ hàm sóng được thúc đẩy hoàn toàn bởi *cập nhật nhận thức* của người quan sát, không phải bởi nhiễu loạn vật lý.
+E11 đóng khoảng trống này. Nó thiết lập rằng *Kevalavyatirekin* (suy luận thuần loại trừ) — phạm trù nghiêm ngặt từ logic Phật giáo Dignāga/Dharmakīrti — ánh xạ chính xác lên phép đo phi tương tác lượng tử. Cơ chế trạng thái ghi nhận: kết quả rỗng tại máy dò A, kết hợp với cấu trúc chồng chập lượng tử, suy luận logic ra vị trí hạt tại nhánh B. Không có trao đổi năng lượng. Sụp đổ hàm sóng được thúc đẩy hoàn toàn bởi *"registration-state update" / cập nhật trạng thái ghi nhận*, không phải bởi nhiễu loạn vật lý.
 
 ---
 
@@ -56,7 +56,7 @@ Contrapositive inference:
               ∴ Particle IS in path B (certainty = 1)
 
 Wave function collapse: |ψ⟩ → |path B⟩
-Mechanism: epistemic update only — zero energy exchange
+Mechanism: registration-state update only — zero energy exchange
 ```
 
 ### 3b. Null-Projection Operator $\hat{P}_{null}$

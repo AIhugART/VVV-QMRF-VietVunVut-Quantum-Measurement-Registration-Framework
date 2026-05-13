@@ -53,6 +53,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 - Use five-digit Buddhist Epistemology node codes consistently: N_BE_00001, N_BE_00002, ... N_BE_00030; do not use older shorter forms.
 - Use five-digit Buddhist Epistemology edge codes consistently: ED_BE_00001, ED_BE_00002, ... ED_BE_00039; do not use older shorter forms.
 - Communicate with the user in Vietnamese; keep technical terms in English inside quotation marks (for example, "cat") and explain concepts at a high-school level.
+- In VVV-EQM terminology, use "registration-state update" / "cập nhật trạng thái ghi nhận" for the general K-side update beyond human cognition; use "detector response" only for the apparatus' physical response.
 - Method: Buddhist Epistemology as primary ontological frame; Quantum Measurement mapped onto it.
 - All information must remain within the scope of Buddhist Epistemology, except for Quantum Measurement cases listed in the Quantum Measurement published documents table below; report any violation immediately.
 - Think before acting.
