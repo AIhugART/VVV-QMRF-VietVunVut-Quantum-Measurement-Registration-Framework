@@ -83,7 +83,7 @@ These concepts appear in the category files but already have canonical nodes in 
 | Information-Disturbance Trade-off | N_QM_00027 Information-Disturbance Trade-off | ED_QM_00026; ED_QM_00034; ED_QM_00073 | Existing QM concept; ideal null-branch formulation is new |
 | Partial Wavefunction Collapse | N_QM_00032 Partial Wavefunction Collapse | ED_QM_00038; ED_QM_00039 | Existing QM concept; no VVV node needed |
 | No-Result Measurement / Null Measurement | N_QM_00033 No-Result Measurement | ED_QM_00039 | Existing QM concept; VVV nodes add epistemic-category structure only |
-| Quantum Bayesian update / epistemic update | N_QM_00034 Quantum Bayesian Point of View; N_QM_00022 Post-Measurement State Update | ED_QM_00040 | Existing QM interpretation of update; no VVV node unless tied to contrapositive null evidence |
+| Quantum Bayesian update / registration-state update | N_QM_00034 Quantum Bayesian Point of View; N_QM_00022 Post-Measurement State Update | ED_QM_00040 | Existing QM interpretation of update; no VVV node unless tied to contrapositive null evidence |
 | Measurement / physical act | N_QM_00019 Measurement (Physical Act) | ED_QM_00019; ED_QM_00020 | Existing physical act; DPEC adds validity-location structure only |
 | System-meter interaction | N_QM_00021 System-Meter Coupling | ED_QM_00021; ED_QM_00024 | Existing causal interaction; DPEC recodes it only as a provisional intrinsic phase |
 | Density matrix and post-measurement formalism | N_QM_00025 Density Matrix & Mixed States; N_QM_00022 Post-Measurement State Update | ED_QM_00025; ED_QM_00028 | Existing state formalism; DPEC adds conditional/certified state-status distinctions |
@@ -102,7 +102,7 @@ These concepts appear in the category files but already have canonical nodes in 
 | `contrapositive_quantum_evidence.md` L1-L14 | Contrapositive Quantum Evidence as new epistemic category | No exact equivalent; nearest is N_QM_00033 | New epistemic category, not merely null measurement | N_QM_VVV_00001 |
 | `contrapositive_quantum_evidence.md` L20-L23 | Purely Contrastive Evidence / IFSI / P_null | IFSI and P_null absent; projection exists as N_QM_00018 | Split into inference mechanism and proposed operator | N_QM_VVV_00002; N_QM_VVV_00003 |
 | `contrapositive_quantum_evidence.md` L30-L33 | Definite knowledge from absence of physical interaction event | Partly: N_QM_00033, N_QM_00027 | Stronger idealized claim than old QM table | N_QM_VVV_00002; N_QM_VVV_00008 |
-| `contrapositive_quantum_evidence.md` L40-L51 | No-click implies path B and collapse by epistemic update | Partly: N_QM_00033, N_QM_00022 | New contrapositive inference structure built on existing state update | N_QM_VVV_00002; N_QM_VVV_00003 |
+| `contrapositive_quantum_evidence.md` L40-L51 | No-click implies path B and collapse by registration-state update | Partly: N_QM_00033, N_QM_00022 | New contrapositive inference structure built on existing state update | N_QM_VVV_00002; N_QM_VVV_00003 |
 | `contrapositive_quantum_evidence.md` L60-L62 | Maximum information with zero intervention | Old QM has trade-off, not this ideal limit category | New idealized VVV limit claim | N_QM_VVV_00008 |
 | `contrapositive_quantum_evidence.md` L64-L66 | Counterfactual/empty branches carry evidential power | No exact equivalent | New interpretive VVV concept; weak until formalized | N_QM_VVV_00007 |
 | `contrapositive_quantum_evidence.md` L68-L70 | Apoha-like exclusion as practical operator | No QM node; BE Apoha support exists | New VVV exclusion-based state-selection concept | N_QM_VVV_00006 |
