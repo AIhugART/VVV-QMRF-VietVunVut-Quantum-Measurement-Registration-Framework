@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # Formal Epistemic Category: Contrapositive Quantum Evidence
 # Phạm trù Nhận thức luận: Bằng chứng Lượng tử Thuần Loại trừ
 
@@ -41,14 +43,14 @@ While a traditional Projective Measurement (PVM) operates on the principle of di
 1. **Premise:** If the particle enters path A $\rightarrow$ Detector A will certainly click.
 2. **Observation:** Detector A does **not** click (Null event).
 3. **Epistemic Conclusion (Phala):** The particle is definitely in path B. The wave function collapses to path B.
-4. **Epistemic Mechanism:** The wave function collapse does not occur due to physical interaction (as the particle never touched detector A), but occurs entirely due to the **epistemic update** of the observer upon excluding a possibility.
+4. **Registration-State Mechanism:** The wave function collapse does not occur due to physical interaction (as the particle never touched detector A), but occurs entirely due to the **registration-state update** produced by excluding a possibility.
 
 **Vietnamese:**
 Trong khi phép đo lượng tử truyền thống (PVM) hoạt động theo nguyên lý tương quan trực tiếp ("Có tín hiệu $\rightarrow$ Có hạt" — tương đương *Anvaya / Sapaksa*), phạm trù này hoạt động hoàn toàn theo nguyên lý phản chứng:
 1. **Tiền đề:** Nếu hạt đi vào nhánh A $\rightarrow$ Máy dò A chắc chắn sẽ kêu.
 2. **Sự kiện quan sát:** Máy dò A **không** kêu (Null event).
 3. **Kết luận nhận thức (Phala):** Hạt chắc chắn nằm ở nhánh B. Sóng lượng tử sụp đổ (collapse) về nhánh B.
-4. **Cơ chế nhận thức:** Quá trình sụp đổ hàm sóng không xảy ra do tương tác vật lý (vì hạt không chạm vào máy dò A), mà xảy ra hoàn toàn do **sự cập nhật nhận thức (epistemic update)** của người quan sát khi loại trừ được một khả năng.
+4. **Cơ chế trạng thái ghi nhận:** Quá trình sụp đổ hàm sóng không xảy ra do tương tác vật lý (vì hạt không chạm vào máy dò A), mà xảy ra hoàn toàn do **"registration-state update" / cập nhật trạng thái ghi nhận** khi loại trừ được một khả năng.
 
 ---
 
@@ -87,32 +89,47 @@ Formalizing this category bridges the structural gap (BIAN-15) and strengthens Q
 
 ---
 
-## 6. Concept Traceability Table / Bảng Truy vết Concept
+## 6. RCA Concept Traceability Matrix / Bảng Truy vết RCA Khái niệm
 
-> **RCA note / Ghi chú RCA:** BIAN-15 itself has no dedicated BE node, QM node, or edge in the SOT. The table below separates the BIAN-15 core concept from supporting BE/QM concepts used to justify the framework category.
->
-> **Ghi chú RCA:** BIAN-15 tự thân không có node BE, node QM, hoặc edge riêng trong SOT. Bảng dưới đây tách concept lõi BIAN-15 khỏi các concept hỗ trợ trong BE/QM dùng để biện minh cho phạm trù framework.
+**Purpose / Mục đích:** This table records traceability for the main concepts used in this category. It combines concept-level mapping with claim anchors, RCA labels, and boundary notes so that direct SOT evidence is not confused with derived framework proposals.
 
-| Concept | Evidence / Bằng chứng truy vết | Node code | Edge code | RCA strength / Độ mạnh RCA |
-|---|---|---|---|---|
-| BIAN-15 / Purely Contrastive Quantum Evidence Structure | BIAN SOT identifies BIAN-15 as *kevalavyatirekin*, resolved by Category 01 + E11, with no node. | — | — | No mapping / no node / no edge |
-| Contrapositive Quantum Evidence | Category 01 lineage: gap/BIAN-15 → category/Category 01 → framework/E11. | — | — | BIAN-15 resolved; no direct node or edge |
-| Purely Contrastive Evidence / IFSI | E11 defines IFSI as the framework category for interaction-free state inference. | — | — | Class D proposal |
-| Kevalavyatirekin | Buddhist logic equivalent for the BIAN-15 category; E11 records no dedicated node in the 263-node BE system. | — | — | No node / no edge; resolved through Cat 01 + E11 |
-| Contrapositive logic / negative concomitance | Closest BE support is *Vipakṣe asattvam*, the third condition of *Trairūpya*, requiring absence in dissimilar cases. | N_BE_00213 → N_BE_00018 | ED_BE_00110 | Medium support via BIAN-14 |
-| Null event / detector does not click | QM system defines No-Result Measurement as a detector non-click that still brings information and updates the state. | N_QM_00033 | ED_QM_00039 | QM direct; Strong BE-QM support via BIAN-9 |
-| No-Result Measurement / Null Measurement | Null Measurement produces Partial Wavefunction Collapse without detector click. | N_QM_00033 → N_QM_00032 | ED_QM_00039 | QM direct |
-| Anupalabdhi / Non-perception | BE SOT maps formal cognition of absence to Null Measurement. | N_BE_00253 | ED_BE_00116 | Strong via BIAN-9 |
-| Abhāva / Absence | Dharmakīrti's Anupalabdhi replaces realist absence theory with an epistemological account. | N_BE_00253 → N_BE_00151 | ED_BE_00116 | Strong via BIAN-9 |
-| Informative silence | Supported by the combination of Null Measurement and Anupalabdhi: silence functions as evidence only when the measurement context is valid. | N_QM_00033; N_BE_00253 | ED_QM_00039; ED_BE_00116 | QM direct; Strong support via BIAN-9 |
-| Broken Detector / inferential error | Category-level contrast with informative silence; no dedicated BE node for *Asiddha hetvābhāsa* is present in the current BE system. | — | — | No trace / needs formal node if promoted |
-| Apoha / Exclusion | BE system defines Apoha as meaning by exclusion; used here as an analogy for exclusion-based evidence. | N_BE_00015 | ED_BE_00057 | BE internal direct; not BIAN-15 direct mapping |
-| Projective Measurement / PVM | QM system defines PVM as textbook measurement represented by projection operators and state collapse. | N_QM_00014 | ED_QM_00012; ED_QM_00013; ED_QM_00014; ED_QM_00015 | QM direct |
-| Projection Operator | QM system defines projection operators for standard PVM; P_null is only a proposed adaptation. | N_QM_00018 | ED_QM_00012; ED_QM_00018 | Base QM operator direct; P_null is Class D |
-| Null-Projection Operator P_null | E11 proposes P_null as a framework notation for collapse by null detection and exclusion. | —; support: N_QM_00018 | —; support: ED_QM_00012 | Class D proposal |
-| Post-Measurement State Update / epistemic update | QM system defines post-measurement update; QBism interprets update as quantum Bayesian updating. | N_QM_00022; N_QM_00034 | ED_QM_00014; ED_QM_00025; ED_QM_00040 | QM direct |
-| Partial Wavefunction Collapse | QM system defines partial collapse in weak/generalized measurement; Null Measurement produces it. | N_QM_00032 | ED_QM_00038; ED_QM_00039 | QM direct |
-| Information without disturbance | Supported generally by information-disturbance trade-off, but the stronger claim of maximum information with zero disturbance requires idealized conditions. | N_QM_00027 | ED_QM_00026; ED_QM_00034; ED_QM_00073 | QM direct for trade-off; Class C-D for zero-disturbance equivalence |
-| Superposition structure | QM system defines superposition as the wave-function structure enabling interference and branch alternatives. | N_QM_00005 | — | QM direct |
-| Elitzur-Vaidman interaction-free measurement | E11 treats it as external experimental grounding for IFSI; it is not a node in the current QM system table. | — | — | Class M external evidence; no system node |
-| Counterfactual / empty-branch evidential power | Category-level interpretation that unactualized alternatives can carry evidential force; no direct SOT node or edge currently exists. | — | — | No direct trace; interpretive / weak support |
+**RCA labels / Nhãn RCA:**
+- **Strong:** direct node/edge or SOT evidence exists.
+- **Medium:** structurally supported, but not a direct concept-node equivalence.
+- **Derived:** proposed by this category/framework, not a source-system node.
+- **QM-only:** supported in QM only, not Buddhist Epistemology.
+- **No node:** no dedicated node/edge exists in the current SOT.
+- **Overclaim:** wording is stronger than the traceable evidence.
+- **External:** external experimental or historical support, not a current SOT node.
+
+| Claim anchor | Concept | Evidence / Bằng chứng truy vết | Node code | Edge code | RCA label | Boundary / Fix note |
+|---|---|---|---|---|---|---|
+| §1-§2 | BIAN-15 / Purely Contrastive Quantum Evidence Structure | BIAN SOT identifies BIAN-15 as *kevalavyatirekin*, resolved by Category 01 + E11, with no node. | — | — | No node | Treat as a structural gap/category, not a source-system node. |
+| §1 | Contrapositive Quantum Evidence | Category 01 lineage: gap/BIAN-15 → category/Category 01 → framework/E11. | — | — | Derived | Framework category; BIAN-15 is resolved without a direct node or edge. |
+| §1 | Purely Contrastive Evidence / IFSI | E11 defines IFSI as the framework category for interaction-free state inference. | — | — | Derived | Class D proposal, not a canonical QM category. |
+| §1, §3 | Kevalavyatirekin | Buddhist logic equivalent for the BIAN-15 category; E11 records no dedicated node in the 263-node BE system. | — | — | No node | BE equivalent category, not a current node/edge. |
+| §3 | Contrapositive logic / negative concomitance | Closest BE support is *Vipakṣe asattvam*, the third condition of *Trairūpya*, requiring absence in dissimilar cases. | N_BE_00213 → N_BE_00018 | ED_BE_00110 | Medium | Support via BIAN-14; not a direct BIAN-15 node. |
+| §3 | Null event / detector does not click | QM system defines No-Result Measurement as a detector non-click that still brings information and updates the state. | N_QM_00033 | ED_QM_00039 | Strong | Direct QM support for the null event, not for the whole category. |
+| §3 | No-Result Measurement / Null Measurement | Null Measurement produces Partial Wavefunction Collapse without detector click. | N_QM_00033 → N_QM_00032 | ED_QM_00039 | Strong | Mechanism support; not identical to IFSI. |
+| §3, §4.3 | Anupalabdhi / Non-perception | BE SOT maps formal cognition of absence to Null Measurement. | N_BE_00253 | ED_BE_00116 | Strong | Strong BE support via BIAN-9. |
+| §4.3 | Abhāva / Absence | Dharmakīrti's Anupalabdhi replaces realist absence theory with an epistemological account. | N_BE_00253 → N_BE_00151 | ED_BE_00116 | Strong | Absence is BE epistemological support, not a QM node. |
+| §5.2 | Informative silence | Supported by the combination of Null Measurement and Anupalabdhi: silence functions as evidence only when the measurement context is valid. | N_QM_00033; N_BE_00253 | ED_QM_00039; ED_BE_00116 | Medium | Valid only under a controlled measurement context; not every silence is evidence. |
+| §5.2 | Broken Detector / inferential error | Category-level contrast with informative silence; no dedicated BE node for *Asiddha hetvābhāsa* is present in the current BE system. | — | — | No node | Needs a formal node if promoted beyond contrastive explanation. |
+| §4.3 | Apoha / Exclusion | BE system defines Apoha as meaning by exclusion; used here as an analogy for exclusion-based evidence. | N_BE_00015 | ED_BE_00057 | Medium | Analogy for exclusion-based evidence; not direct QM equivalence. |
+| §3 | Projective Measurement / PVM | QM system defines PVM as textbook measurement represented by projection operators and state collapse. | N_QM_00014 | ED_QM_00012; ED_QM_00013; ED_QM_00014; ED_QM_00015 | QM-only | Baseline contrast, not BIAN-15 evidence by itself. |
+| §1, §3 | Projection Operator | QM system defines projection operators for standard PVM; P_null is only a proposed adaptation. | N_QM_00018 | ED_QM_00012; ED_QM_00018 | QM-only | Base operator only; P_null remains derived. |
+| §1 | Null-Projection Operator P_null | E11 proposes P_null as a framework notation for collapse by null detection and exclusion. | —; support: N_QM_00018 | —; support: ED_QM_00012 | Derived | Framework notation, not a source-system operator. |
+| §3 | Post-Measurement State Update / registration-state update | QM system defines post-measurement update; QBism interprets update as quantum Bayesian updating. | N_QM_00022; N_QM_00034 | ED_QM_00014; ED_QM_00025; ED_QM_00040 | QM-only | “Registration-state update” is the VVV-EQM K-side term; QM sources support state update only. |
+| §3, §4 | Partial Wavefunction Collapse | QM system defines partial collapse in weak/generalized measurement; Null Measurement produces it. | N_QM_00032 | ED_QM_00038; ED_QM_00039 | QM-only | Mechanism support, not direct category equivalence. |
+| §4.1 | Information without disturbance | Supported generally by information-disturbance trade-off, but the stronger claim of maximum information with zero disturbance requires idealized conditions. | N_QM_00027 | ED_QM_00026; ED_QM_00034; ED_QM_00073 | Medium / Overclaim | Zero-disturbance and maximum-information wording require idealized boundary conditions. |
+| §3 | Superposition structure | QM system defines superposition as the wave-function structure enabling interference and branch alternatives. | N_QM_00005 | — | QM-only | Enables branch alternatives; no edge is listed here. |
+| §5.1 | Elitzur-Vaidman interaction-free measurement | E11 treats it as external experimental grounding for IFSI; it is not a node in the current QM system table. | — | — | External | Experimental grounding; no current system node. |
+| §4.2 | Counterfactual / empty-branch evidential power | Category-level interpretation that unactualized alternatives can carry evidential force; no direct SOT node or edge currently exists. | — | — | Overclaim | Interpretive until a formal node/edge or bounded claim is added. |
+
+### 6.1. RCA Summary / Tóm tắt RCA
+
+1. **BIAN-15 is structurally valid but node-less.** The SOT resolves it through Category 01 + E11, not through a dedicated BE/QM node.
+2. **The strongest anchors are supporting concepts, not the BIAN-15 category itself:** Null Measurement, Anupalabdhi, Abhāva, Projection Operator, and post-measurement state update support the framework but do not become BIAN-15.
+3. **IFSI and P_null are framework-derived terms.** They should be cited as Category 01 / E11 proposals, not as canonical source-system nodes.
+4. **Claims about zero disturbance and counterfactual causal force need boundaries.** They are useful as VVV-EQM interpretations, but the traceable evidence supports them only under idealized or derived conditions.
+5. **Broken Detector vs Informative Silence is a valid distinction, but node-less.** It should remain explanatory unless promoted into the formal node/edge system.
