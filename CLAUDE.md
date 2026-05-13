@@ -52,6 +52,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 - Name each new Quantum Measurement concept node as BIAN-XX, where XX ranges from 01 to 99; here, BIAN derives from the Vietnamese word "bí ẩn", meaning "mystery" in English.
 - Use five-digit Buddhist Epistemology node codes consistently: N_BE_00001, N_BE_00002, ... N_BE_00030; do not use older shorter forms.
 - Use five-digit Buddhist Epistemology edge codes consistently: ED_BE_00001, ED_BE_00002, ... ED_BE_00039; do not use older shorter forms.
+- For RCA on Buddhist Epistemology node and edge definitions, use only `SYSTEM_Buddhist_Epistemology/system_be_full.md` as the single source of truth; treat other BE node/edge tables as derived references.
 - Communicate with the user in Vietnamese; keep technical terms in English inside quotation marks (for example, "cat") and explain concepts at a high-school level.
 - In VVV-EQM terminology, use "registration-state update" / "cập nhật trạng thái ghi nhận" for the general K-side update beyond human cognition; use "detector response" only for the apparatus' physical response.
 - Method: Buddhist Epistemology as primary ontological frame; Quantum Measurement mapped onto it.
@@ -72,11 +73,12 @@ This project maps relationships between Buddhist epistemology (Pramāṇavāda �
 
 | File | Role |
 |------|------|
-| `documents/research_documents/Buddhist_Epistemology_and_Quantum_Measurement_refine_mapping.md` | Primary deep-analysis mapping (52 concepts, 6 tiers, 20 BIANs). Most thorough QM/philosophical analysis. |
-| `documents/research_documents/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` | Formal system mapping with node/edge codes, definitions from published docs, and full QM depth. Single source of truth for graph structure. |
-| `documents/published_documents/node_pub_doc_Buddhist_Epistemology.md` | Published node definitions (30 nodes). |
-| `documents/published_documents/edge_pub_doc_Buddhist_Epistemology.md` | Published edge definitions (39 edges). |
-| `SYSTEM_Buddhist_Epistemology/system_buddhist_epistemology.md` | Key concepts reference table. |
+| `SYSTEM_Buddhist_Epistemology/system_be_full.md` | Single source of truth for Buddhist Epistemology node and edge definitions used in RCA. |
+| `SYSTEM_Buddhist_Epistemology/system_buddhist_epistemology.md` | Compact derived key concepts table for the 30 core BE nodes. |
+| `documents/published_documents/node_pub_doc_Buddhist_Epistemology.md` | Published compact derived node definitions (30 core nodes). |
+| `documents/published_documents/edge_pub_doc_Buddhist_Epistemology.md` | Published compact derived edge definitions (39 core edges). |
+| `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_refine_mapping.md` | Primary deep-analysis BE-QM mapping that applies the BE SOT. |
+| `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` | Formal BE-QM system mapping that applies BE node/edge codes from the BE SOT. |
 
 Archived (superseded): `documents/research_documents/achives/`
 

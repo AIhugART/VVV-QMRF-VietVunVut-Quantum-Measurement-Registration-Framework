@@ -1,5 +1,7 @@
 # SYSTEM: Buddhist Epistemology
 
+> Derived compact reference: the single RCA source of truth for Buddhist Epistemology node and edge definitions is [system_be_full.md](../../SYSTEM_Buddhist_Epistemology/system_be_full.md). This table preserves the 39 published core edges.
+
 ## Published Documents
 
 **Buddhist Epistemology**

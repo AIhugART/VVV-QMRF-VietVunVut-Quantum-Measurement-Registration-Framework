@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # E5 — Internal Encoding Postulate / Tiên đề Mã hóa Nội tại
 
 **Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
@@ -107,7 +109,7 @@ The Internal Encoding Operator Â_kāra:
 |----------|-------|
 | SOT section | T2.01 |
 | Name | Akara (Representational form / Intentional content) |
-| Node status | **No separate node in SOT** (T2.01 L287: "No separate node in published documents") |
+| Node status | **No separate node in SOT** (T2.01 L287: "No separate node in the BE SOT") |
 | BIAN_index_SOT status | — (no node) — corrected 2026-05-11 |
 | Previous error | N_BE_00151 was incorrectly assigned. N_BE_00151 = Abhāva (Non-existence/Ontology) in SOT L183. |
 
@@ -133,7 +135,7 @@ The Internal Encoding Operator Â_kāra:
 | system_be_full.md L183 | **Abhāva** (Non-existence/absence) | ✅ SOT authority |
 | BIAN_index_SOT.md L32 (before) | ~~Ākāra (Cognitive aspect)~~ | ❌ Incorrect |
 | BIAN_index_SOT.md L32 (after) | — (no node) | ✅ Fixed 2026-05-11 |
-| SOT T2.01 L287 | "No separate node in published documents" | ✅ Authoritative |
+| SOT T2.01 L287 | "No separate node in the BE SOT" | ✅ Authoritative |
 
 **Diagnosis:** Same class of error as E3 (BIAN-5/N_BE_00155). The RCA mapping incorrectly assigned N_BE_00151 (Abhāva) to Ākāra. Ākāra has no dedicated node in the BE system. Corrected by stripping invalid node assignment from BIAN-4 row.
 

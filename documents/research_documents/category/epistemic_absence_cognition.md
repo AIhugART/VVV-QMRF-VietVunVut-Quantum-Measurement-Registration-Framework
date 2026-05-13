@@ -21,7 +21,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 * **English Name:** Epistemic Absence Cognition / Non-Perception as Valid Knowledge (EAC)
 * **Vietnamese Name:** Nhận thức Vắng mặt / Vô tri giác như Tri thức Hợp lệ
 * **Buddhist Equivalent:** *Anupalabdhi* (Non-perception — the valid cognition of the absence of a perceivable object)
-* **Node:** N_BE_00253
+* **Node:** N_BE_00253 — Anupalabdhi (RCA node; `SYSTEM_Buddhist_Epistemology/system_be_full.md`)
 * **Mathematical Symbol:** Absence Projection Operator $\hat{\Pi}_{absent}$
 
 ---

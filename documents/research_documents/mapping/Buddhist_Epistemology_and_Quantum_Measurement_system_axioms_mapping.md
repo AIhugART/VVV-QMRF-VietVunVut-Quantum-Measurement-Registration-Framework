@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Ground System: Pramāṇavāda — Dignāga and Dharmakīrti corpus
 ## Method: Tier-by-tier mapping (system) augmented with 4-axiom synthesis (framework). Axiom layer is additive — tier structure remains the primary backbone.
 ## Scope: Epistemology only. No metaphysics, soteriology, or cosmology.
-## Node/Edge Codes: Nodes from [node_pub_doc_Buddhist_Epistemology.md](../published_documents/node_pub_doc_Buddhist_Epistemology.md); Edges from [edge_pub_doc_Buddhist_Epistemology.md](../published_documents/edge_pub_doc_Buddhist_Epistemology.md)
+## Node/Edge Codes: BE node and edge definitions follow the single RCA SOT: [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md)
 ## Axiom framework: [bei_framework_4_axioms.md](../achives/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
 
 ---
@@ -63,7 +63,7 @@ All 30 formally coded nodes (N_BE_00001–N_BE_00030) assigned to their primary 
 
 # System Node Reference
 
-Formal concept codes applied to tier locations. Nodes are drawn from [node_pub_doc_Buddhist_Epistemology.md](../published_documents/node_pub_doc_Buddhist_Epistemology.md).
+Formal concept codes applied to tier locations. BE node definitions follow the single RCA SOT: [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md).
 
 | Node code | Concept (Skt.) | Category | Tier location | Axiom |
 | --- | --- | --- | --- | --- |
@@ -102,7 +102,7 @@ Formal concept codes applied to tier locations. Nodes are drawn from [node_pub_d
 
 # System Edge Reference
 
-Formal relationship codes applied to tier connections. Edges are drawn from [edge_pub_doc_Buddhist_Epistemology.md](../published_documents/edge_pub_doc_Buddhist_Epistemology.md).
+Formal relationship codes applied to tier connections. BE edge definitions follow the single RCA SOT: [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md).
 
 | Edge code | Source → Target | Relationship | Type | Connects tier items | Axiom |
 | --- | --- | --- | --- | --- | --- |
@@ -310,7 +310,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T2.01 — Ākāra (Representational form / Intentional content)
 
-**Node:** No separate node in published documents. Implicit in the structure of cognition.
+**Node:** No separate node in the BE SOT. Implicit in the structure of cognition.
 
 - **Buddhist Epistemology:** The form that an object takes within cognition. Cognition does not contact the external object directly but apprehends its ākāra (intentional image). The Sākāra-Nirākāra debate: Sākāra schools (including Dharmakīrti) hold that ākāra is a real feature of cognition; Nirākāra schools deny it. On the Sākāra reading, the ākāra is the proximate object of every cognition. The gap between ākāra and the external object (artha) is foundational.
 - **Quantum Measurement:** BIAN-4 — Measurement Representation / Internal Encoding Structure. QM specifies the output value of a measurement (the eigenvalue) but not the form in which that output is represented within any cognizing or registering system. The formalism ends at the number; what the number means in the observer's representational structure is outside the theory.
@@ -347,7 +347,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T2.04 — Vyavasāya (Determinate judgment / Epistemic verdict)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** The cognitive act of determining that x is the case: the moment of propositional crystallization at which a cognition becomes an actionable epistemic commitment. Vyavasāya follows pratyakṣa and involves conceptual structure but is not reducible to mere perception. It is the point at which cognition becomes judgment.
 - **Quantum Measurement:** BIAN-5 — Measurement Commitment. The moment at which an observer commits to a particular outcome as the result of a measurement. QM describes the physical process of state reduction; it has no formal account of the epistemic act by which an observer determines that a specific outcome is the case. Physical registration and epistemic commitment are collapsed into a single undefined event.
@@ -401,7 +401,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T2.08 — Savikalpaka pratyakṣa (Conceptual perception / Interpreted apprehension)
 
-**Node:** No separate node in published documents. Implicit as the complement of N_BE_00009.
+**Node:** No separate node in the BE SOT. Implicit as the complement of N_BE_00009.
 
 - **Buddhist Epistemology:** Perception already processed through kalpanā. Carries propositional structure: this is a pot, that is blue. Valid as a secondary cognitive form; not the epistemological foundation. It is what ordinary perception presents and what enables communication and inference.
 - **Quantum Measurement:** Interpreted measurement result. The eigenvalue after it has been assigned physical meaning: this is 0.5 eV, that particle is spin-up. The standard output of any real experiment, as it appears in a lab notebook or published paper.
@@ -482,7 +482,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T3.05 — Svabhāva (Intrinsic nature — what Pramāṇavāda denies)
 
-**Node:** No separate node in published documents. Implicit across ontology–cognition nodes.
+**Node:** No separate node in the BE SOT. Implicit across ontology–cognition nodes.
 
 - **Buddhist Epistemology:** Svabhāva is the concept of an entity having a fixed, intrinsic, context-independent nature. Pramāṇavāda (under Madhyamaka influence and through its own analysis of arthakriyāśakti) denies that any real entity has svabhāva in this sense. The nature of any particular is always relational, always context-constituted. There is no context-independent fact of the matter about what x is independently of the relational conditions that define it.
 - **Quantum Measurement:** Context-independent hidden variable state. The assumption that a quantum system has definite, pre-existing values for all observables simultaneously, independently of which measurement is performed. This is precisely what Bell's theorem (1964, tested from Aspect 1982 onward) rules out experimentally. Kochen-Specker theorem (1967) independently establishes that quantum systems cannot have non-contextual value assignments.
@@ -492,7 +492,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T3.06 — Abhāva (Absence / Non-entity as epistemic object)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** Absence is a real epistemic object. Knowing that the pot is not on the table is a valid cognitive act (anupalabdhi). Abhāva has its own ontological status as the object of absence-cognition. Some schools (Kumārila Bhaṭṭa) treat anupalabdhi as a distinct pramāṇa; Dharmakīrti integrates it into the pratyakṣa-anumāna framework.
 - **Quantum Measurement:** BIAN-9 — Formal Absence Cognition. QM has no formal epistemic category for cognition of absence. The Elitzur-Vaidman interaction-free measurement demonstrates that information about a quantum system can be obtained without direct interaction — knowing by non-detection. This is the experimental instantiation of anupalabdhi-type cognition. However, QM does not theorize it as a distinct epistemic category. It is a result within the theory, not a recognized epistemic type.
@@ -562,7 +562,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T4.03 — Tarka (Counterfactual reasoning / Reductio reasoning)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** A form of reasoning that establishes a thesis by demonstrating the absurdity of its negation. Not an independent pramāṇa but a supporting tool for anumāna. Used specifically to establish vyāpti (invariant pervasion) by showing what would follow if the pervasion did not hold.
 - **Quantum Measurement:** No-go theorems — Bell (1964), Kochen-Specker (1967), PBR (2012). Establish constraints on quantum reality by demonstrating what follows if certain assumptions hold (local realism, non-contextual value assignments, epistemic interpretation of ψ). Each proves its conclusion by reductio: the assumption entails a contradiction with empirical results.
@@ -572,7 +572,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T4.04 — Bādhaka pramāṇa (Invalidating cognition / Epistemic override)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** A subsequent valid cognition that formally overrides and invalidates a prior cognition. The earlier cognition is revealed as bhrānti. This is a formal mechanism of epistemic correction built into the system. Dharmakīrti distinguishes conditions under which bādhaka pramāṇa can operate and its relationship to svataḥ and parataḥ prāmāṇya (see T6.03).
 - **Quantum Measurement:** BIAN-12 — Formal Measurement Invalidation. QM has no formal mechanism by which a subsequent measurement invalidates the epistemic status of a prior measurement. A new measurement updates the quantum state; it does not retroactively address whether the prior result was epistemically valid or invalid. Quantum error correction codes correct physical errors in quantum states; they do not constitute an epistemological theory of measurement invalidation.
@@ -582,7 +582,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T4.05 — Anadhyavasāya (Non-determination / Failure to cognize)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** The epistemic state in which an object is causally present and capable of producing cognition, but no determination occurs. Neither valid cognition nor erroneous cognition — no cognition at all. Distinct from saṃśaya (which involves active oscillation) and from bhrānti (which involves misdetermined cognition).
 - **Quantum Measurement:** BIAN-13 — Null Observer Event. The state of a measurement apparatus for which a quantum event occurs but produces no registration — a detector that fails to fire when a particle passes through it. QM models this as detection efficiency (a probability parameter). It does not theorize the epistemic state of an observer for whom an event is causally present but produces no outcome.
@@ -592,7 +592,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T4.06 — Smṛti (Memory / Retained cognition)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** Cognition that takes a previously experienced object as its content. Not a valid pramāṇa (it does not produce new contact with the object) but epistemically relevant as the basis for comparative inference and as a source of error when confused with fresh pratyakṣa.
 - **Quantum Measurement:** Classical measurement record. The stored output of a prior measurement. Not a new measurement but retained data. Plays a role in sequential measurement protocols, quantum state tomography, and Bayesian updating of state estimates.
@@ -633,7 +633,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.02 — Sādhya (Probandum / What is to be proved / Inferred object)
 
-**Node:** No separate node in published documents. Implicit in the liṅga-sādhya relation (N_BE_00016 definition).
+**Node:** No separate node in the BE SOT. Implicit in the liṅga-sādhya relation (N_BE_00016 definition).
 
 - **Buddhist Epistemology:** The fact to be established by inference. Typically beyond direct perceptual reach. Liṅga is the accessible evidence; sādhya is the inferred conclusion.
 - **Quantum Measurement:** Pre-measurement quantum state / wave function. What is inferred from the pattern of measurement outcomes. Not directly observable; reconstructed from statistical distributions of eigenvalues. The target of quantum state tomography.
@@ -709,7 +709,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.08 — Kevalānvayin (Mark present in all cases / Universal positive mark)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** A liṅga that is present in every possible case, leaving no vipakṣa. Because everything that exists is, for example, knowable, knowability cannot be established as a liṅga by reference to vipakṣa. Special treatment is required: the inference must be established by pakṣa-dharmatā and sapakṣa-sattvam alone.
 - **Quantum Measurement:** Universal conservation laws. Quantities conserved in every quantum interaction without exception: energy, momentum, charge, lepton number, baryon number (within Standard Model). No experiment constitutes a vipakṣa for these laws. They hold in every known case.
@@ -719,7 +719,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.09 — Kevalavyatirekin (Mark present only in negative cases / Purely contrastive mark)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** A liṅga established entirely by the contrapositive: whenever sādhya is absent, liṅga is absent. No positive sapakṣa is available. The inference is grounded purely in contrastive exclusion.
 - **Quantum Measurement:** BIAN-15 — Purely Contrastive Quantum Evidence. No formal QM category for evidence established entirely through null results and contrapositive structure. The Elitzur-Vaidman interaction-free measurement comes closest (information obtained by non-detection) but is not theorized as a distinct evidential category within QM methodology.
@@ -729,7 +729,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.10 — Hetvābhāsa (Pseudo-mark / Fallacious inferential sign)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** A liṅga that appears to satisfy trairūpya but fails on examination. Generates invalid inference. Dharmakīrti identifies three primary subtypes: asiddha (unestablished), viruddha (contrary), anāikāntika (non-exclusive). Each produces a characteristic type of epistemic failure.
 - **Quantum Measurement:** Measurement artifact / systematic confound. A measurement result that appears to confirm a hypothesis but arises from systematic error, apparatus coupling, selection bias, or confounding interaction. Each subtype of hetvābhāsa has a functional analogue in experimental design.
@@ -739,7 +739,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.11 — Asiddha hetvābhāsa (Unestablished mark / Liṅga not present in pakṣa)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** The liṅga is not actually present in the subject of inference. The evidential basis is simply absent. The inference proceeds from a non-existent ground.
 - **Quantum Measurement:** Null detector / failed apparatus. The measurement apparatus did not actually interact with the system. No valid inference can be drawn from the null output.
@@ -749,7 +749,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.12 — Viruddha hetvābhāsa (Contrary mark / Liṅga that proves the opposite)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** The liṅga actually establishes the negation of the intended sādhya. The evidence, properly analyzed, proves the opposite conclusion.
 - **Quantum Measurement:** Inverted result / sign error. A measurement result that, due to calibration inversion or sign convention error, systematically indicates the opposite of the correct outcome.
@@ -759,7 +759,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T5.13 — Anāikāntika hetvābhāsa (Non-exclusive mark / Liṅga present in both sapakṣa and vipakṣa)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** The liṅga appears in cases with and without the sādhya. The correlation is imperfect; the liṅga is present in both confirming and disconfirming instances and therefore cannot ground a valid inference.
 - **Quantum Measurement:** Non-selective measurement / weak correlation. A measurement whose outcomes correlate imperfectly with the target quantum property. The measurement pointer state occurs in both confirming and disconfirming contexts.
@@ -815,7 +815,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T6.03 — Svataḥ prāmāṇya vs. Parataḥ prāmāṇya (Intrinsic vs. Extrinsic validity)
 
-**Node:** No separate node in published documents.
+**Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** A foundational meta-epistemological debate. Svataḥ prāmāṇya: a cognition's validity is established by the cognition itself (Mīmāṃsaka position, partially accommodated by Dharmakīrti). Parataḥ prāmāṇya: validity is established by a subsequent cognition. Dharmakīrti's complex position: initial validity is intrinsic (via svasaṃvedana and arthakriyāśakti); invalidity is detected extrinsically (via bādhaka pramāṇa).
 - **Quantum Measurement:** BIAN-18 — Intrinsic vs. Extrinsic Measurement Validity. QM does not formalize whether a measurement's validity is established by the measurement itself or by subsequent verification. In experimental practice, extrinsic verification is standard: cross-checks, calibration runs, repetition, statistical analysis. But none of this is integrated into the formalism. QM has no formal analogue to either the Mīmāṃsaka or the Dharmakīrti position on this question.
@@ -825,7 +825,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 ## T6.04 — Anātmavāda as epistemological commitment (No-self as structural principle)
 
-**Node:** No separate node in published documents. Implicit in momentariness (N_BE_00029) and process ontology.
+**Node:** No separate node in the BE SOT. Implicit in momentariness (N_BE_00029) and process ontology.
 
 - **Buddhist Epistemology:** The denial of a permanent, unified self-entity (ātman) underlying cognition is not merely a metaphysical claim in Pramāṇavāda; it is a structural epistemological commitment. The pramātṛ is not a substance but a causal series of cognitive events (santāna). The knower is a process, not a fixed point. This directly shapes the epistemology: there is no persistent subject of cognition to whom all results are presented; there are only momentary cognitive events in causal series.
 - **Quantum Measurement:** BIAN-19 — Observer as Process, not Substance. QM's observer is formally undefined. To the extent that an observer is assumed in QM, it is assumed as a classical, unified, persistent agent who receives measurement results: the implicit opposite of anātmavāda. No QM formalism models the observer as a causal series of events rather than a fixed point. QBism (Fuchs-Schack) comes closest by identifying the observer with a Bayesian agent who updates beliefs, but even QBism treats the agent as a unified decision-maker, not as a causal series of momentary events.
@@ -1052,7 +1052,7 @@ Ranked by structural significance, merged from tier-level and axiom-level analys
 - This document is intended for comparative philosophical analysis. It does not claim historical or intentional correspondence between the two systems.
 - Tier structure: T1 Sources, T2 Cognition Architecture, T3 Object Theory, T4 Error Theory, T5 Inference Theory, T6 Meta-Epistemology.
 - Axiom structure: A1 Dependent Arising (Pratityasamutpada), A2 Emptiness (Sunyata), A3 Consciousness-Only (Vijnaptimatra), A4 Two Truths (Dvisatya).
-- Node codes (N_BE_XX) sourced from [node_pub_doc_Buddhist_Epistemology.md](../published_documents/node_pub_doc_Buddhist_Epistemology.md).
-- Edge codes (ED_BE_XX) sourced from [edge_pub_doc_Buddhist_Epistemology.md](../published_documents/edge_pub_doc_Buddhist_Epistemology.md).
+- Node codes (N_BE_XX) sourced from [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md).
+- Edge codes (ED_BE_XX) sourced from [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md).
 - Tier backbone sourced from [system_mapping.md](Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md).
 - Axiom layer sourced from [framework_mapping.md](Buddhist_Epistemology_and_Quantum_Measurement_framework_mapping.md).

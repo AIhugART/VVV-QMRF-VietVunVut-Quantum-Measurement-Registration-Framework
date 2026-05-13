@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # E7 — Epistemic Validity Location Postulate / Tiên đề Định vị Tính hợp lệ Nhận thức
 
 **Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
@@ -200,7 +202,7 @@ BIAN-18 was absent from BIAN_index_v2 (which stopped at BIAN-17), but has been *
 
 ### ⚠️ Finding 2: No dedicated BE node
 
-SOT T6.03 explicitly states: "No separate node in published documents." Svataḥ/parataḥ prāmāṇya is a meta-epistemological debate, not a single concept with a node. This is architecturally correct — it reflects that E7 derives from a structural principle, not a single entity.
+SOT T6.03 explicitly states: "No separate node in the BE SOT." Svataḥ/parataḥ prāmāṇya is a meta-epistemological debate, not a single concept with a node. This is architecturally correct — it reflects that E7 derives from a structural principle, not a single entity.
 
 ### ✅ Finding 3: Category 04 is well-developed
 

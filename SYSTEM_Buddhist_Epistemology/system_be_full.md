@@ -6,6 +6,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 This file expands the compact Buddhist Epistemology system table into a strict line-by-line RCA concept system using the line-evidenced [RCA concept table](../documents/published_documents/The_Buddhist_Pramana_Epistemology_Logic_and_Language_RCA_Table.md) as source material.
 
+## Source of truth policy
+
+This file is the single source of truth for Buddhist Epistemology node and edge definitions used in RCA. Other BE node/edge tables are compact or derived references.
+
 ## RCA status labels (LLM-friendly)
 
 The `RCA status` column is a reliability-and-provenance label for each concept or edge. It tells an LLM how the row should be interpreted relative to the cited source lines:

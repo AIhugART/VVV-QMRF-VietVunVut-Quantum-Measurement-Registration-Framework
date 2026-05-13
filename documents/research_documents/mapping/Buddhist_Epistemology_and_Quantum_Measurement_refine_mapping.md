@@ -6,7 +6,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Scope: Epistemology only. No metaphysics, soteriology, or cosmology.
 ## Structure: Six tiers. Concepts with QM equivalents are classified by correspondence type. Concepts without QM equivalents are assigned BIAN designations (Buddhist Insight with No Analogue).
 ## Correspondence types used: strong parallel, moderate parallel, weak parallel, functional parallel, negative parallel (both systems deny the same thing), partial (divergence noted), structural gap (BIAN assigned).
-## Node/Edge Codes: Nodes from [node_pub_doc_Buddhist_Epistemology.md](../published_documents/node_pub_doc_Buddhist_Epistemology.md); Edges from [edge_pub_doc_Buddhist_Epistemology.md](../published_documents/edge_pub_doc_Buddhist_Epistemology.md)
+## Node/Edge Codes: BE node and edge definitions follow the single RCA SOT: [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md)
 
 ---
 

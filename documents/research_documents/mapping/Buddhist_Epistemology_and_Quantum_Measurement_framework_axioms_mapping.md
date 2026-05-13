@@ -3,9 +3,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Framework Mapping: Buddhist Epistemology → Quantum Measurement — Four Axioms
 
 ## Ground System: Pramāṇavāda — Dignāga and Dharmakīrti corpus
-## Method: Axiom-driven clustering. BE nodes and edges from published documents are assigned to the axiom they structurally support. Each axiom is mapped to its Quantum Measurement interpretation.
+## Method: Axiom-driven clustering. BE nodes and edges from [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md) are assigned to the axiom they structurally support. Each axiom is mapped to its Quantum Measurement interpretation.
 ## Scope: Epistemology only. No metaphysics, soteriology, or cosmology.
-## Node/Edge Codes: Nodes from [node_pub_doc_Buddhist_Epistemology.md](../published_documents/node_pub_doc_Buddhist_Epistemology.md); Edges from [edge_pub_doc_Buddhist_Epistemology.md](../published_documents/edge_pub_doc_Buddhist_Epistemology.md)
+## Node/Edge Codes: BE node and edge definitions follow the single RCA SOT: [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md)
 ## Framework source: [bei_framework_4_axioms.md](../achives/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
 
 ---
@@ -317,7 +317,7 @@ No physical boundary separates the macro world from the micro world. The boundar
 
 # Cross-Axiom Edge Table
 
-All 39 edges from [edge_pub_doc_Buddhist_Epistemology.md](../published_documents/edge_pub_doc_Buddhist_Epistemology.md) assigned to their primary axiom.
+All 39 core edges from [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md) assigned to their primary axiom.
 
 | Edge code | Source → Target | Relationship | Type | Axiom |
 | --- | --- | --- | --- | --- |

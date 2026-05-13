@@ -2,6 +2,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Buddhist Epistemology — Key Concepts
 
+> Derived compact reference: the single RCA source of truth for Buddhist Epistemology node and edge definitions is [system_be_full.md](system_be_full.md).
+
 | No. | Node code | Concept | Pali / Sanskrit | Category | Definition |
 | --- | --- | --- | --- | --- | --- |
 | 1 | N_BE_00001 | Valid cognition | Pramāṇa (Skt.) | Foundation | A reliable source of knowledge; the means by which correct cognition is attained. Structured with four integrated components: pramāṇa, pramā, prameya, pramāṇaphala. |
