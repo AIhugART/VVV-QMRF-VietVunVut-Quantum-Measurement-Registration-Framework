@@ -60,17 +60,17 @@ flowchart LR
     detector["apparatus detector response<br/>physical signal only"]
     outcome["o<br/>outcome / eigenvalue readout"]
     rho1["ρ_after = ρ_o<br/>standard state update"]
-    observer["observer / registering system<br/>formal black box"]
+    registering["registering system<br/>formal black box"]
 
     rho0 --> setting --> born --> outcome --> rho1
     setting --> detector --> outcome
-    observer -. "registration not formalized as K" .-> outcome
+    registering -. "registration not formalized as K" .-> outcome
   end
 ```
 
 ## RCA note
 
-Standard Quantum Measurement has a precise physical-probabilistic structure. Its weak point for this project is not the physical mathematics, but the undefined registration side: the observer/registering system is needed in practice but not formalized as a `K`-state.
+Standard Quantum Measurement has a precise physical-probabilistic structure. Its weak point for this project is not the physical mathematics, but the undefined registration side: the registering system is needed in practice but not formalized as a `K`-state.
 
 ---
 
@@ -99,7 +99,7 @@ flowchart TB
       eps["ε(M)<br/>pre-symbolic event"]
       lambda["Λ<br/>symbolization"]
       akara["Ā<br/>internal encoding"]
-      vyava["V_yava<br/>epistemic commitment"]
+      vyava["V_yava<br/>registration lock"]
       k1["K_after = U_K(K_before, o)"]
 
       k0 --> eps --> lambda --> akara --> vyava --> k1
@@ -134,7 +134,7 @@ flowchart LR
 
 ## RCA note
 
-This loop addresses the regress problem at the registration-validity level. It should not be read as a new physical collapse equation. It says why a registration can be treated as complete and valid inside the epistemic model.
+This loop addresses the regress problem at the registration-validity level. It should not be read as a new physical collapse equation. It says why a registration can be treated as complete and valid inside the VVV-EQM registration model.
 
 ---
 
@@ -177,7 +177,7 @@ The boundary is the outcome `o`. Standard QM explains how `o` is physically prob
 | Source file | Role in this diagram |
 |---|---|
 | [formal_epistemic_measurement_model.md](research_documents/framework/formal_epistemic_measurement_model.md) | Defines the conservative two-level model: `ρ` transition plus `K` registration-state update. |
-| [epistemic_measurement_pipeline.md](research_documents/synthesis/epistemic_measurement_pipeline.md) | Defines the S1 pipeline: `ε(M) → Λ → Ā → V_yava`. |
+| [epistemic_measurement_pipeline.md](research_documents/synthesis/epistemic_measurement_pipeline.md) | Defines the S1 registration pipeline: `ε(M) → Λ → Ā → V_yava`; `Ā` and `V_yava` remain source notation, not physical QM names. |
 | [self_validation_loop.md](research_documents/synthesis/self_validation_loop.md) | Defines the S2 loop: E1 self-certification, E2 self-completion, E7 intrinsic validity. |
 | [system_qm_full.md](../SYSTEM_Quantum_Measurement/system_qm_full.md) | Provides the Quantum Measurement system nodes and standard measurement concepts. |
 | [system_be_full.md](../SYSTEM_Buddhist_Epistemology/system_be_full.md) | Single RCA SOT for Buddhist Epistemology node and edge definitions. |

@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # Buddhist Epistemology and Quantum Measurement: A 1:1 Structural Mapping
 ## Ground System: Pramanaavada (Dignaga-Dharmakirti tradition)
 ## Method: Buddhist Epistemology as primary ontological frame; Quantum Measurement mapped onto it
@@ -105,7 +107,7 @@
 ---
 
 ### 15. Taadaatmya — Identity relation / essential co-nature
-- Buddhist Epistemology: Taadaatmya is one of the two valid grounds for inference: a relation of essential identity or co-nature between mark and probandum. It grounds inferences of the type: this is smoke, therefore fire, because smoke and fire share an essential production relation.
+- Buddhist Epistemology: Taadaatmya is one of the two valid grounds for inference: a relation of essential identity or co-nature between mark and probandum. It grounds inferences where the mark and probandum share identity or co-nature, not causal production.
 - Quantum Measurement: BIAN-5 — Cross-Basis State Identity. There is no formal QM concept that establishes whether the entity measured in one basis is the same entity as that measured in a different basis. Particle identity across incompatible measurements is ontologically unresolved in the formalism.
 - Structural gap: QM cannot formally answer whether x measured in basis A is the same x measured in basis B.
 

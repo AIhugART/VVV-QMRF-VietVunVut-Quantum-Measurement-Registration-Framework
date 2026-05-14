@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Work History
 # Lịch sử làm việc hệ thống VVV-QMRF
 
-**Last updated:** 2026-05-14<br/>
+**Last updated:** 2026-05-14T15:41+07:00<br/>
 **Scope:** Historical record of work completed, system milestones, and VVV-QMRF concept nodes created.<br/>
 **Status:** Historical summary only; not a source of truth for node definitions.
 
@@ -85,6 +85,49 @@ This history is derived from these active project files:
 - Centralized Buddhist Epistemology node/edge RCA around [SYSTEM_Buddhist_Epistemology/system_be_full.md](SYSTEM_Buddhist_Epistemology/system_be_full.md) as the single BE source of truth.
 - Added this [history.md](history.md) file to preserve a clear historical record of completed work and created VVV-QM nodes.
 
+### 2026-05-14T15:00+07:00 — Epistemic Fidelity Audit (Opus 4.6)
+
+**Auditor:** Google Gemini — Opus 4.6 (Antigravity agent)  
+**Method:** Line-by-line RCA of 15 category files, cross-referenced against 3 primary SOT sources  
+**SOT Sources used:**
+- **SOT-1 (BE):** Hari Shankar Prasad, *The Buddhist Pramāṇa-Epistemology, Logic, and Language* (Studia Humana)
+- **SOT-2 (QM):** Andrew N. Jordan & Irfan A. Siddiqi, *Quantum Measurement: Theory and Practice* (Cambridge University Press, 2024)
+- **SOT-3 (QM):** Leonard Susskind & Art Friedman, *Quantum Mechanics: The Theoretical Minimum* (Basic Books, 2014)
+
+**Discovered 5 logic errors (D1–D5):**
+
+| ID | File | Line(s) | Error Type | Severity | Description |
+|:--:|:-----|:-------:|:-----------|:--------:|:------------|
+| **D1** | Cat 14 | L49-52, L63 | Misattribution | 🔴 CRITICAL | Claimed IRB as "third subtype" of Dharmakīrti's *Svabhāvapratibandha*. SOT-1 L348 (Katsura [25]) confirms Dharmakīrti recognizes exactly **2 types** (Tadutpatti + Tādātmya). IRB is a VVV-QMRF extension, not a classical Buddhist category. |
+| **D2** | Cat 14 | L62 | Wrong physics explanation | 🔴 CRITICAL | Claimed LHV theories fail because "they assume all relations are causal". SOT-1 L348: Dharmakīrti's own system has non-causal Tādātmya. SOT-2 L688-742: LHV fail because **Bell inequality is experimentally violated** under locality + realism assumptions (Nobel 2022). |
+| **D3** | BIAN_index_SOT | L45 | Typo in SOT | 🔴 HIGH | Master table L45 wrote `BIAN-16 → Cat 06 + E2` but L72 + Cat 02 file both confirm correct target is `Cat 02 + E2`. Cat 06 is Anadhyavasāya (BIAN-13). |
+| **D4** | Cat 15 | L21 | Over-restriction | 🟡 MEDIUM | Defined *Saṃśaya* as "indeterminacy between **two** equally weighted alternatives". SOT-1 L89: classical definition not restricted to binary. SOT-2 L467: QM superposition is N-ary with unequal |cᵢ|². Formal structure (L39-63) correctly handles N-ary — error is only in summary text. |
+| **D5** | Cat 14 | L50 | Stretched mapping | 🟡 MEDIUM | Mapped Tādātmya → identical particles. SOT-1 L348: Tādātmya = logical genus-species identity ("oak IS a tree"). QM identical particles = physical exchange symmetry. Different senses of "identity" — mapping is analogical, not direct equivalence. |
+
+**Remediation status (as of 2026-05-14T15:41+07:00):**
+
+| ID | Status | Detail |
+|:--:|:------:|:-------|
+| D1 | ✅ Patched | Cat 14 L13, L21, L30, L42, L49, L52, L63, L65 updated with qualifier "VVV-QMRF extension, not classical subtype" |
+| D2 | ✅ Patched | Cat 14 L62 rewritten: now cites Bell inequality violation under locality+realism (SOT-2) as reason LHV fail, not philosophical "all causal" claim. Also L47 updated. |
+| D3 | ⏳ Pending | BIAN_index_SOT L45 typo not yet corrected |
+| D4 | ⏳ Pending | Cat 15 L21 summary text not yet generalized |
+| D5 | ✅ Patched | Cat 14 L50 updated with "logical genus-species identity; classical Dharmakīrti type" (per Katsura/Prasad SOT-1 L348). Katsura [25] reference added to L69. |
+
+**Impact assessment:**
+- 12/15 category files have **no** critical errors
+- Errors concentrated in Cat 14 (3/5 errors) — Cat 14 now fully patched (D1, D2, D5 ✅)
+- Framework architecture is **not** structurally broken — all fixes are precision corrections
+- D3 (BIAN_index_SOT typo) and D4 (Cat 15 Saṃśaya binary) remain open
+
+**Propagation trace (files also affected by Cat 14 errors):**
+- `vvv-qmrf/node_QM_VVV.md` L25, L55 — N_QM_VVV_00025 description
+- `vvv-eqm/node_QM_VVV.md` L27, L57 — copy of above
+- `vvv-qmrf/dictionary.md` L96 — IRB entry
+- `vvv-eqm/dictionary.md` L98 — copy of above
+- `gap/BIAN_index_SOT.md` L66 — BIAN-10 resolution claim
+- `framework/E15_intrinsic_relation_postulate.md` L88, L104 — Cat 14 back-reference
+
 ---
 
 ## 5. Completed Work / Những việc đã làm
@@ -135,7 +178,7 @@ This history is derived from these active project files:
 | BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | No dedicated BE node | Category 06 + E9 |
 | BIAN-14 | Tripartite Measurement Validity Conditions | `N_BE_00018` | Category 09 + E10 |
 | BIAN-15 | Purely Contrastive Quantum Evidence Structure | No dedicated BE node | Category 01 + E11 |
-| BIAN-16 | Measurement Self-Completion / No External Registration | `N_BE_00001` | Category 06 + E2 |
+| BIAN-16 | Measurement Self-Completion / No External Registration | `N_BE_00001` | Category 02 + E2 |
 | BIAN-17 | Regress-Stopping Principle for Measurement Chain | `N_BE_00011` | Category 05 + E1 |
 | BIAN-18 | Intrinsic vs Extrinsic Measurement Validity Location | No dedicated BE node | Category 04 + E7 |
 | BIAN-19 | Observer as Causal Process not Substance | `N_BE_00066` | Category 07 + E6 |
