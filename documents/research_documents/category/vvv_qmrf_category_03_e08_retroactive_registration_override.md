@@ -42,14 +42,14 @@ Là một cơ chế chính thức nằm bên trong hệ thống lý thuyết lư
 Standard QM describes detector responses and state updates; it does not by itself assign VVV-QMRF registration validity to every detector response. Under this category, VVV-QMRF adds a K-side invalidation rule:
 1. **Event 1 ($M_1$):** Measures state $|\lambda_1\rangle$. The system is (temporarily) considered collapsed into $|\lambda_1\rangle$.
 2. **Event 2 ($M_2$):** A second measurement (often on an entangled particle or a conserved quantity) yields outcome $|\lambda_2\rangle$.
-3. **Contradiction Detection:** The formal consistency check shows that the transition probability from $|\lambda_1\rangle$ to $|\lambda_2\rangle$ is zero under the stated model. (Meaning: if the true state was actually $|\lambda_1\rangle$, then $M_2$ yielding $|\lambda_2\rangle$ is ruled out by that model).
+3. **Contradiction Detection:** The formal consistency check shows that $\langle\lambda_2|\lambda_1\rangle = 0$ (or that the relevant projectors have zero overlap) under the stated model. This is an orthogonality condition, not a dynamical transition claim. (Meaning: if the true state was actually $|\lambda_1\rangle$, then $M_2$ yielding $|\lambda_2\rangle$ is ruled out by that model).
 4. **Registration Override:** The operator $\hat{O}_{bhranti}$ is triggered. VVV-QMRF classifies the result of $M_1$ as registration-invalid. The registration state is **retroactively corrected** as if $M_1$ never functioned as a valid registration event.
 
 **Vietnamese:**
 QM tiêu chuẩn mô tả detector response và cập nhật trạng thái; tự thân nó chưa gán tính hợp lệ ghi nhận VVV-QMRF cho mọi detector response. Với phạm trù này, VVV-QMRF thêm một quy tắc vô hiệu hóa phía K:
 1. **Sự kiện 1 ($M_1$):** Đo được trạng thái $|\lambda_1\rangle$. Hệ thống được (tạm thời) coi là đã sụp đổ về $|\lambda_1\rangle$.
 2. **Sự kiện 2 ($M_2$):** Một phép đo thứ hai (thường thực hiện trên một hạt vướng víu hoặc một đại lượng bảo toàn) thu được kết quả $|\lambda_2\rangle$.
-3. **Phát hiện Mâu thuẫn:** Toán học chứng minh xác suất chuyển đổi từ $|\lambda_1\rangle$ sang $|\lambda_2\rangle$ hoàn toàn bằng 0. (Nghĩa là: Nếu hệ thực sự ở $|\lambda_1\rangle$, thì $M_2$ không bao giờ có thể cho ra $|\lambda_2\rangle$).
+3. **Phát hiện Mâu thuẫn:** Kiểm tra hình thức cho thấy $\langle\lambda_2|\lambda_1\rangle = 0$ (hoặc các projector liên quan không có overlap) trong mô hình đang xét. Đây là điều kiện orthogonality, không phải khẳng định về một quá trình chuyển động lực học. (Nghĩa là: nếu hệ thực sự ở $|\lambda_1\rangle$, thì $M_2$ không thể cho ra $|\lambda_2\rangle$ trong mô hình đó).
 4. **Cơ chế Phủ quyết Ghi nhận:** Toán tử $\hat{O}_{bhranti}$ được kích hoạt. VVV-QMRF phân loại kết quả của $M_1$ là vô hiệu ở tầng ghi nhận. Trạng thái ghi nhận được **chỉnh sửa hồi tố (retroactively corrected)** như thể $M_1$ chưa từng đóng vai trò là một sự kiện ghi nhận hợp lệ.
 
 ---

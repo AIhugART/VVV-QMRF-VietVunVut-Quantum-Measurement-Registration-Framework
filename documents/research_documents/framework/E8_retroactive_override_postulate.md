@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # E8 — Retroactive Epistemic Override Postulate / Tiên đề Phủ quyết Nhận thức Hồi tố
 
 **Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
@@ -12,10 +14,10 @@
 ## 1. Postulate Statement / Phát biểu Tiên đề
 
 **English:**
-> A measurement result M₁ is not epistemically permanent. A subsequent measurement M₂, if it yields a result whose probability of occurring given M₁ is strictly zero, retroactively voids the epistemic validity of M₁. M₁ is reclassified as a *bhrānti* (epistemic error) — not a true state update.
+> A measurement result M₁ is not epistemically permanent. A subsequent measurement M₂, if it yields a result orthogonal to the state claimed by M₁ under the stated model, retroactively voids the registration validity of M₁. M₁ is reclassified as a *bhrānti* (registration error) — not a valid registration-state update.
 
 **Vietnamese:**
-> Kết quả đo M₁ không có giá trị nhận thức vĩnh viễn. Một phép đo sau M₂, nếu cho ra kết quả có xác suất xảy ra với điều kiện M₁ bằng không tuyệt đối, sẽ hồi tố vô hiệu hóa tính hợp lệ nhận thức của M₁. M₁ bị tái phân loại thành *bhrānti* (lỗi nhận thức) — không phải là một cập nhật trạng thái thực sự.
+> Kết quả đo M₁ không có giá trị ghi nhận vĩnh viễn. Một phép đo sau M₂, nếu cho ra kết quả orthogonal với trạng thái mà M₁ đã xác nhận trong mô hình đang xét, sẽ hồi tố vô hiệu hóa tính hợp lệ ghi nhận của M₁. M₁ bị tái phân loại thành *bhrānti* (lỗi ghi nhận) — không phải là một cập nhật trạng thái ghi nhận hợp lệ.
 
 ---
 
@@ -25,7 +27,7 @@
 
 QM treats every detector click as a valid state update causing permanent wave function collapse. There is no built-in mechanism to formally declare a prior measurement invalid from within the formalism. When experimentalists encounter anomalous data (detector dark counts, cross-talk, equipment failure), they discard it manually — a *classical* act external to the mathematical framework.
 
-E8 internalizes this process. It introduces a formal operator $\hat{O}_{bhranti}$ (invalidation operator, from *bhrānti* = error) that is triggered when a subsequent measurement M₂ is logically incompatible with M₁. The trigger condition is: the transition probability P(M₂ | M₁ state) = 0. When triggered, the system retroactively retraces to the pre-M₁ state — not physically (the interaction still occurred) but *epistemically* (M₁ carries no wave function collapse authority).
+E8 internalizes this process. It introduces a formal operator $\hat{O}_{bhranti}$ (invalidation operator, from *bhrānti* = error) that is triggered when a subsequent measurement M₂ is logically incompatible with M₁. The trigger condition is an orthogonality or zero-overlap condition under the stated model: $\langle\lambda_2|\lambda_1\rangle = 0$, or the relevant projectors have zero overlap. When triggered, the system retroactively voids the registration authority of M₁ — not physically (the interaction still occurred) but at the registration layer (M₁ carries no valid registration-state update authority).
 
 This derives from the *Bādhaka pramāṇa* (invalidating cognition) principle in Buddhist Epistemology: a cognition that was initially treated as valid is retroactively overridden when a stronger, incompatible cognition arises.
 
@@ -33,7 +35,7 @@ This derives from the *Bādhaka pramāṇa* (invalidating cognition) principle i
 
 QM coi mọi tín hiệu máy dò là cập nhật trạng thái hợp lệ, gây ra sụp đổ hàm sóng vĩnh viễn. Không có cơ chế nội tại nào để tuyên bố một phép đo trước đó là không hợp lệ. Khi nhà thực nghiệm gặp dữ liệu bất thường, họ loại bỏ thủ công — hành động *cổ điển* nằm ngoài hệ hình thức toán học.
 
-E8 nội tại hóa quá trình này. Nó đưa vào toán tử phủ quyết $\hat{O}_{bhranti}$ được kích hoạt khi M₂ logic không tương thích với M₁. Điều kiện kích hoạt: xác suất chuyển P(M₂ | trạng thái M₁) = 0. Khi được kích hoạt, hệ thống hồi nguyên về trạng thái trước M₁ — không về mặt vật lý, nhưng về mặt *nhận thức* (M₁ mất quyền làm sụp đổ hàm sóng).
+E8 nội tại hóa quá trình này. Nó đưa vào toán tử phủ quyết $\hat{O}_{bhranti}$ được kích hoạt khi M₂ logic không tương thích với M₁. Điều kiện kích hoạt là orthogonality hoặc zero-overlap trong mô hình đang xét: $\langle\lambda_2|\lambda_1\rangle = 0$, hoặc các projector liên quan không có overlap. Khi được kích hoạt, hệ thống hồi tố hủy thẩm quyền ghi nhận của M₁ — không phải về mặt vật lý (tương tác vẫn đã xảy ra), mà ở tầng ghi nhận (M₁ mất thẩm quyền cập nhật trạng thái ghi nhận hợp lệ).
 
 ---
 
@@ -44,12 +46,13 @@ E8 nội tại hóa quá trình này. Nó đưa vào toán tử phủ quyết $\
 ```
 Given: M₁ yields |λ₁⟩, M₂ yields |λ₂⟩
 
-Override trigger: P(λ₂ | λ₁) = |⟨λ₂|λ₁⟩|² = 0
+Override trigger: ⟨λ₂|λ₁⟩ = 0
+or, for projectors: Π₂Π₁ = 0
 
 If triggered:
-  M₁ → reclassified as bhrānti (epistemic void)
-  Wave function: retroactively uncollapsed at M₁
-  System state: reverts to pre-M₁ density matrix ρ₀
+  M₁ → reclassified as bhrānti (registration error)
+  Registration authority: retroactively voided for M₁
+  Registration state: corrected as if M₁ never functioned as a valid registration event
 ```
 
 ### 3b. Invalidation operator $\hat{O}_{bhranti}$
@@ -57,7 +60,7 @@ If triggered:
 ```
 Action:
   Normal (no trigger): ρ → ρ_M₁  (standard collapse)
-  Override (triggered): ρ → ρ₀   (M₁ voided retroactively)
+  Override (triggered): M₁ registration authority → void
 
 Hierarchy condition:
   Override only fires if Weight(M₂) > Weight(M₁)
@@ -81,7 +84,7 @@ Hierarchy condition:
 | M₁, M₂ | First, second measurement | Phép đo 1, 2 | Epistemic events |
 | $\hat{O}_{bhranti}$ | Invalidation operator | Toán tử phủ quyết | E8 |
 | ρ₀ | Pre-M₁ density matrix | Ma trận mật độ trước M₁ | Hilbert space |
-| P(λ₂\|λ₁) | Conditional transition probability | Xác suất chuyển có điều kiện | QM |
+| $\langle\lambda_2|\lambda_1\rangle = 0$ | Orthogonality / zero-overlap trigger | Điều kiện orthogonality / zero-overlap | QM |
 | bhrānti | Epistemic error / illusion | Lỗi nhận thức / ảo giác | Buddhist term |
 | Bādhaka pramāṇa | Invalidating cognition | Nhận thức phủ quyết | Buddhist term |
 
