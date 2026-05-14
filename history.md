@@ -50,7 +50,7 @@ This history is derived from these active project files:
 | BE source of truth | `SYSTEM_Buddhist_Epistemology/system_be_full.md` |
 | QM source | `SYSTEM_Quantum_Measurement/system_qm_full.md` |
 | BE core graph | 30 core BE nodes and 39 core BE edges in published compact form; expanded BE SOT used for RCA |
-| BIAN status | 20 BIAN labels: 19 active resolved + 1 reserved |
+| BIAN status | 20 BIAN labels accounted for: 19 active gaps resolved + 1 reserved label |
 | VVV-QM node policy | New VVV nodes use `N_QM_VVV_00001`, `N_QM_VVV_00002`, ... |
 | Boundary | VVV-QM nodes are epistemic / interpretive / formal-category extensions, not replacement canonical QM nodes |
 
@@ -223,3 +223,32 @@ These nodes are recorded in [documents/research_documents/node_QM_VVV.md](docume
 - Update this file only after a meaningful project milestone, new VVV-QM node extraction, BIAN resolution change, or source-of-truth change.
 - When a VVV-QM node definition changes, update [documents/research_documents/node_QM_VVV.md](documents/research_documents/node_QM_VVV.md) first, then update this history file.
 - When BE node or edge definitions change, verify against [SYSTEM_Buddhist_Epistemology/system_be_full.md](SYSTEM_Buddhist_Epistemology/system_be_full.md) before editing any derived history summary.
+
+---
+
+## 11. Completion TODO List / Danh sách việc cần làm để hoàn thiện
+
+This TODO list records remaining work needed to make VVV-EQM clearer, safer, and more publication-ready. It does not change the current source-of-truth hierarchy.
+
+| Priority | Area | TODO | RCA reason | Target file |
+|---|---|---|---|---|
+| P0 | SOT consistency | Standardize BIAN status wording as "20 labels accounted for: 19 active gaps resolved + 1 reserved label" across public-facing summaries | Avoid apparent contradiction between "20/20 resolved" and "19 active + 1 reserved" | [README.md](README.md); [history.md](history.md) |
+| P0 | Boundary control | Keep all VVV-QM nodes explicitly marked as epistemic, interpretive, inferential, or formal-category extensions, not canonical QM replacements | Prevent category error between epistemology and physics | [history.md](history.md); [documents/research_documents/node_QM_VVV.md](documents/research_documents/node_QM_VVV.md) |
+| P1 | Node status | Add a status label for each of the 23 `N_QM_VVV_XXXXX` nodes: complete, needs formalization, overclaim-sensitive, or example-only | Readers need to know which nodes are stable and which are proposals | [documents/research_documents/node_QM_VVV.md](documents/research_documents/node_QM_VVV.md) |
+| P1 | Formalism | Formalize `P_null`, `Ĉ_ext`, `ρ̃`, `ρ_certified`, and `V̂_yava` with minimal equations and explicit proposal labels | Several VVV-QM nodes are currently proposal or overclaim-sensitive | framework files |
+| P1 | RCA traceability | For each VVV-QM node, verify source category, nearest canonical QM node, BE/BIAN root, and claim strength | Prevent duplicate, unsupported, or overextended nodes | [documents/research_documents/node_QM_VVV.md](documents/research_documents/node_QM_VVV.md) |
+| P2 | Diagram integration | Review the VVV-EQM vs Standard QM diagram and decide whether it belongs in active docs or draft materials | Architecture diagrams help readers but can overclaim if not boundary-labeled | diagram file |
+| P2 | Bridge layer | Review bridge files and decide whether they are active architecture or draft material | Bridge files may be needed to connect BE, QM, and VVV-QM, but should not create a second SOT | bridge folder |
+| P2 | Publication prep | Create a claim-strength table before using the framework in paper-facing or README-facing text | Publication-facing claims need clear strength labels | paper / README files |
+| P3 | Cleanup | Decide whether `desktop.ini` files should be ignored or removed | These are OS artifacts, not research content | repo config / working tree |
+
+### 11.1. High-priority weak or overclaim-sensitive nodes
+
+| Node | Issue to resolve | Suggested next action |
+|---|---|---|
+| `N_QM_VVV_00005` | Detector-failure control is weak until detector-validity criteria are formalized | Define minimum validity conditions distinguishing informative silence from broken-detector silence |
+| `N_QM_VVV_00007` | Counterfactual evidential branch is interpretive and weak until formal criteria are supplied | Specify when an unrealized branch may count as evidence without becoming metaphysical speculation |
+| `N_QM_VVV_00008` | Ideal zero-direct-disturbance claim depends on idealized conditions | State the ideal-limit assumptions and avoid treating them as ordinary laboratory conditions |
+| `N_QM_VVV_00010` | PVM-equivalent epistemic authority is not formally validated | Reframe as a proposal unless equivalence conditions are proven |
+| `N_QM_VVV_00018` | Verification-integrated density matrix evolution lacks a full equation | Provide a minimal equation or downgrade to framework note |
+| `N_QM_VVV_00021`–`N_QM_VVV_00024` | ECO layer is psycho-physical and not canonical QM | Keep it explicitly VVV-EQM epistemic architecture, not a physical collapse mechanism |
