@@ -134,7 +134,7 @@ E8 depends on E7: E7 establishes that validity is intrinsic (svataḥ). E8 provi
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-12 (BIAN_index_SOT.md L41, no node) | Diagnosis |
-| Category | retroactive_epistemic_override.md (Category 03) | Prescription |
+| Category | vvv_qmrf_category_03_e08_retroactive_registration_override.md (Category 03) | Prescription |
 | Framework | **This document (E8)** | Architecture |
 
 ---
@@ -155,7 +155,7 @@ E8 depends on E7: E7 establishes that validity is intrinsic (svataḥ). E8 provi
 
 ### ✅ BIAN-12 resolved by this postulate
 
-BIAN-12 had a complete Category 03 document (`retroactive_epistemic_override.md`). E8 completes the pipeline by elevating the category prescription to a formal architectural postulate. SOT updated 2026-05-12.
+BIAN-12 had a complete Category 03 document (`vvv_qmrf_category_03_e08_retroactive_registration_override.md`). E8 completes the pipeline by elevating the category prescription to a formal architectural postulate. SOT updated 2026-05-12.
 
 ### ✅ Relationship to E7 confirmed
 
@@ -171,4 +171,4 @@ E8 is the "invalidation arm" of the E7 asymmetric validity principle: E7 says va
 
 ---
 
-*Source: category/retroactive_epistemic_override.md, framework/E7_epistemic_validity_location_postulate.md, BIAN_index_SOT.md, system_mapping_SOT.md*
+*Source: category/vvv_qmrf_category_03_e08_retroactive_registration_override.md, framework/E7_epistemic_validity_location_postulate.md, BIAN_index_SOT.md, system_mapping_SOT.md*

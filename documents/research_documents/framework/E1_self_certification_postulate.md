@@ -180,7 +180,7 @@ E6 (Observer-as-Process)
 | Layer | Folder | Document | Role |
 |-------|--------|----------|------|
 | Gap (raw material) | `gap/` | BIAN_index_SOT.md rows 2, 6, 17 | Diagnosis — what QM lacks |
-| Category (detailed spec) | `category/` | self_certifying_measurement.md | Prescription — detailed concept card |
+| Category (detailed spec) | `category/` | vvv_qmrf_category_05_e01_self_certifying_registration_operator.md | Prescription — detailed concept card |
 | Framework (postulate) | `framework/` | **This document (E1)** | Architecture — minimal axiom statement |
 
 ---
@@ -222,12 +222,12 @@ E6 (Observer-as-Process)
 | Document | Path | Relevance |
 |----------|------|-----------|
 | BIAN Master Table | `gap/BIAN_index_SOT.md` | BIAN-2 (L30), BIAN-6 (L34), BIAN-17 (L45) |
-| Category 05 | `category/self_certifying_measurement.md` | Detailed concept card with R̂_svasa |
+| Category 05 | `category/vvv_qmrf_category_05_e01_self_certifying_registration_operator.md` | Detailed concept card with R̂_svasa |
 | SOT Mapping | `mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` | T1.06 (L216), T2.05 (L332), T6.02 (L779) |
 | BE System | `../../SYSTEM_Buddhist_Epistemology/system_be_full.md` | N_BE_00011 (L43) |
 | 1:1 RCA Mapping | `mapping/system_be_qm_framework_1to1_RCA_mapping.md` | N_BE_00011 (L52) |
 | Full Framework | `Framework_.../QM_measurement_epistemic_postulates_framework.md` | E1 within 11-postulate system |
-| Category Index | `category/new_epistemic_categories_index.md` | Category 05 (L23) |
+| Category Index | `category/vvv_qmrf_registration_categories_index.md` | Category 05 (L23) |
 
 ---
 
@@ -242,4 +242,4 @@ E6 (Observer-as-Process)
 
 ---
 
-*Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, system_be_qm_framework_1to1_RCA_mapping.md, self_certifying_measurement.md, QM_measurement_epistemic_postulates_framework.md*
+*Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, system_be_qm_framework_1to1_RCA_mapping.md, vvv_qmrf_category_05_e01_self_certifying_registration_operator.md, QM_measurement_epistemic_postulates_framework.md*

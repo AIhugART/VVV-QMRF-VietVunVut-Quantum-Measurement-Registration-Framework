@@ -5,7 +5,7 @@
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
 **Status:** Proposal — Epistemic class D  
-**Lineage:** gap/ (BIAN-7) → category/ (Cat 10 — pre_symbolic_stratum.md) → framework/ (E4)
+**Lineage:** gap/ (BIAN-7) → category/ (Cat 10 — vvv_qmrf_category_10_e04_pre_symbolic_stratum.md) → framework/ (E4)
 
 ---
 
@@ -59,7 +59,7 @@ In projective measurement: Λ is complete → r is eigenvalue.
 | Formalism | Source | Status |
 |-----------|--------|--------|
 | ε(M), Λ operator | Framework E4 | Class D |
-| No Category formalism | category/pre_symbolic_stratum.md | ✅ Created 2026-05-11 |
+| No Category formalism | category/vvv_qmrf_category_10_e04_pre_symbolic_stratum.md | ✅ Created 2026-05-11 |
 
 ---
 
@@ -114,12 +114,12 @@ In projective measurement: Λ is complete → r is eigenvalue.
 
 | E postulate | Category file | Status |
 |---|---|---|
-| E1 | self_certifying_measurement.md | ✅ |
-| E2 | measurement_self_completion.md | ✅ |
-| E3 | epistemic_commitment_operator.md | ✅ |
-| **E4** | **pre_symbolic_stratum.md** | **✅ Created 2026-05-11** |
+| E1 | vvv_qmrf_category_05_e01_self_certifying_registration_operator.md | ✅ |
+| E2 | vvv_qmrf_category_02_e02_registration_self_completion_matrix.md | ✅ |
+| E3 | vvv_qmrf_category_08_e03_registration_lock_operation.md | ✅ |
+| **E4** | **vvv_qmrf_category_10_e04_pre_symbolic_stratum.md** | **✅ Created 2026-05-11** |
 
-E4 content appears only indirectly in Category 08 Phase 1 ("Physical Trace / Nirvikalpaka"). A standalone `category/pre_symbolic_stratum.md` should be created.
+E4 content appears only indirectly in Category 08 Phase 1 ("Physical Trace / Nirvikalpaka"). A standalone `category/vvv_qmrf_category_10_e04_pre_symbolic_stratum.md` should be created.
 
 ### Notable new content
 
@@ -140,7 +140,7 @@ E3 (Epistemic Commitment) — committed as definite knowledge
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN_index_SOT.md row 7 | Diagnosis |
-| Category | category/pre_symbolic_stratum.md (Cat 10) | Prescription |
+| Category | category/vvv_qmrf_category_10_e04_pre_symbolic_stratum.md (Cat 10) | Prescription |
 | Framework | **This document (E4)** | Architecture |
 
 ---

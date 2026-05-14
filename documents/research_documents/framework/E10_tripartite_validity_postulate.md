@@ -113,7 +113,7 @@ E10 (Tripartite Validity) ← THIS POSTULATE
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-14 (SOT L43, N_BE_00018) | Diagnosis |
-| Category | tripartite_validity_matrix.md (Category 09) | Prescription |
+| Category | vvv_qmrf_category_09_e10_tripartite_registration_validity_matrix.md (Category 09) | Prescription |
 | Framework | **This document (E10)** | Architecture |
 
 ---
@@ -133,7 +133,7 @@ E10 (Tripartite Validity) ← THIS POSTULATE
 
 ### ✅ BIAN-14 resolved
 
-Category 09 was complete (`tripartite_validity_matrix.md`). E10 elevates it to architectural postulate. SOT updated 2026-05-12.
+Category 09 was complete (`vvv_qmrf_category_09_e10_tripartite_registration_validity_matrix.md`). E10 elevates it to architectural postulate. SOT updated 2026-05-12.
 
 ### ✅ Integration with E8 and E9
 
@@ -141,4 +141,4 @@ E10 defines the gate; E8 and E9 handle specific failure modes (C3 failure → E8
 
 ---
 
-*Source: category/tripartite_validity_matrix.md, framework/E7_epistemic_validity_location_postulate.md, BIAN_index_SOT.md*
+*Source: category/vvv_qmrf_category_09_e10_tripartite_registration_validity_matrix.md, framework/E7_epistemic_validity_location_postulate.md, BIAN_index_SOT.md*

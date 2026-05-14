@@ -79,7 +79,7 @@ E11 (IFSI) — no interaction, positive output via contrapositive
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-9 (SOT L38, N_BE_00253) | Diagnosis |
-| Category | epistemic_absence_cognition.md (Category 13) | Prescription |
+| Category | vvv_qmrf_category_13_e14_validated_absence_registration.md (Category 13) | Prescription |
 | Framework | **This document (E14)** | Architecture |
 
 ---
@@ -95,4 +95,4 @@ E11 (IFSI) — no interaction, positive output via contrapositive
 
 ---
 
-*Source: category/epistemic_absence_cognition.md, framework/E10_tripartite_validity_postulate.md, framework/E9_null_observer_postulate.md, BIAN_index_SOT.md*
+*Source: category/vvv_qmrf_category_13_e14_validated_absence_registration.md, framework/E10_tripartite_validity_postulate.md, framework/E9_null_observer_postulate.md, BIAN_index_SOT.md*

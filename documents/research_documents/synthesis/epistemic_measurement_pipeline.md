@@ -124,7 +124,7 @@ Wave function collapse / Sụp đổ hàm sóng
 |----------|-------|
 | Postulate | E4 |
 | BIAN | BIAN-7 |
-| Category | Cat 10 (pre_symbolic_stratum.md) |
+| Category | Cat 10 (vvv_qmrf_category_10_e04_pre_symbolic_stratum.md) |
 | Node | N_BE_00009 |
 | SOT | T2.07 (L361–L372) |
 | Symbol | ε(M) — pre-symbolic event; Λ — symbolization operator |
@@ -161,7 +161,7 @@ Projective measurement: Λ complete → r eigenvalue
 |----------|-------|
 | Postulate | E5 |
 | BIAN | BIAN-4 |
-| Category | Cat 08 (epistemic_commitment_operator.md — Phase 2) |
+| Category | Cat 08 (vvv_qmrf_category_08_e03_registration_lock_operation.md — Phase 2) |
 | Node | N_BE_00151 (RCA) |
 | SOT | T2.01 |
 | Symbol | Â_kāra — internal encoding operator |
@@ -184,7 +184,7 @@ VN: Hệ thống giác quan của người quan sát tương tác với dấu v�
 |----------|-------|
 | Postulate | E3 |
 | BIAN | BIAN-5 |
-| Category | Cat 08 (epistemic_commitment_operator.md — Phase 3) |
+| Category | Cat 08 (vvv_qmrf_category_08_e03_registration_lock_operation.md — Phase 3) |
 | Node | — (No dedicated node; SOT T2.04 L324) |
 | SOT | T2.04 (L322–L328) |
 | Symbol | V̂_yava — commitment operator |
@@ -357,8 +357,8 @@ Lemma S1-Λ:
 | system_mapping_SOT.md | Source of Truth definitions |
 | system_be_full.md | Node registry (263 nodes) |
 | BIAN_index_SOT.md | Gap diagnosis |
-| pre_symbolic_stratum.md | Category 10 prescription |
-| epistemic_commitment_operator.md | Category 08 prescription |
+| vvv_qmrf_category_10_e04_pre_symbolic_stratum.md | Category 10 prescription |
+| vvv_qmrf_category_08_e03_registration_lock_operation.md | Category 08 prescription |
 | E4_pre_symbolic_stratum_postulate.md | Phase ① architecture |
 | E5_internal_encoding_postulate.md | Phase ② architecture |
 | E3_epistemic_commitment_postulate.md | Phase ③ architecture |
@@ -410,4 +410,4 @@ Lemma S1-Λ:
 
 ---
 
-*Source: E4_pre_symbolic_stratum_postulate.md, E5_internal_encoding_postulate.md, E3_epistemic_commitment_postulate.md, pre_symbolic_stratum.md, epistemic_commitment_operator.md, system_mapping_SOT.md, system_be_full.md, BIAN_index_SOT.md*
+*Source: E4_pre_symbolic_stratum_postulate.md, E5_internal_encoding_postulate.md, E3_epistemic_commitment_postulate.md, vvv_qmrf_category_10_e04_pre_symbolic_stratum.md, vvv_qmrf_category_08_e03_registration_lock_operation.md, system_mapping_SOT.md, system_be_full.md, BIAN_index_SOT.md*

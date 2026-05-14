@@ -40,6 +40,33 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
+## VVV-QMRF ↔ VVV-EQM Filename Correspondence / Bảng Đối chiếu Tên file
+
+> This table preserves the 1:1 migration trace between the current VVV-QMRF filenames and the archived VVV-EQM filenames.
+>
+> *Bảng này giữ dấu vết di trú 1:1 giữa tên file VVV-QMRF hiện hành và tên file VVV-EQM đã lưu trong archive.*
+
+| No. | VVV-QMRF active file (`category/`) | VVV-EQM archived file (`category/achives/`) |
+|:---:|:---|:---|
+| **01** | [`vvv_qmrf_category_01_e11_purely_contrastive_evidence.md`](../vvv_qmrf_category_01_e11_purely_contrastive_evidence.md) | [`contrapositive_quantum_evidence.md`](./contrapositive_quantum_evidence.md) |
+| **02** | [`vvv_qmrf_category_02_e02_registration_self_completion_matrix.md`](../vvv_qmrf_category_02_e02_registration_self_completion_matrix.md) | [`measurement_self_completion.md`](./measurement_self_completion.md) |
+| **03** | [`vvv_qmrf_category_03_e08_retroactive_registration_override.md`](../vvv_qmrf_category_03_e08_retroactive_registration_override.md) | [`retroactive_epistemic_override.md`](./retroactive_epistemic_override.md) |
+| **04** | [`vvv_qmrf_category_04_e07_dual_phase_registration_certification.md`](../vvv_qmrf_category_04_e07_dual_phase_registration_certification.md) | [`dual_phase_epistemic_certification.md`](./dual_phase_epistemic_certification.md) |
+| **05** | [`vvv_qmrf_category_05_e01_self_certifying_registration_operator.md`](../vvv_qmrf_category_05_e01_self_certifying_registration_operator.md) | [`self_certifying_measurement.md`](./self_certifying_measurement.md) |
+| **06** | [`vvv_qmrf_category_06_e09_null_registering_system_event.md`](../vvv_qmrf_category_06_e09_null_registering_system_event.md) | [`null_observer_event.md`](./null_observer_event.md) |
+| **07** | [`vvv_qmrf_category_07_e06_registering_system_as_process_framework.md`](../vvv_qmrf_category_07_e06_registering_system_as_process_framework.md) | [`observer_as_process.md`](./observer_as_process.md) |
+| **08** | [`vvv_qmrf_category_08_e03_registration_lock_operation.md`](../vvv_qmrf_category_08_e03_registration_lock_operation.md) | [`epistemic_commitment_operator.md`](./epistemic_commitment_operator.md) |
+| **09** | [`vvv_qmrf_category_09_e10_tripartite_registration_validity_matrix.md`](../vvv_qmrf_category_09_e10_tripartite_registration_validity_matrix.md) | [`tripartite_validity_matrix.md`](./tripartite_validity_matrix.md) |
+| **10** | [`vvv_qmrf_category_10_e04_pre_symbolic_stratum.md`](../vvv_qmrf_category_10_e04_pre_symbolic_stratum.md) | [`pre_symbolic_stratum.md`](./pre_symbolic_stratum.md) |
+| **11** | [`vvv_qmrf_category_11_e12_limit_faculty_registration.md`](../vvv_qmrf_category_11_e12_limit_faculty_registration.md) | [`limit_faculty_perception.md`](./limit_faculty_perception.md) |
+| **12** | [`vvv_qmrf_category_12_e13_temporal_discontinuity_doctrine.md`](../vvv_qmrf_category_12_e13_temporal_discontinuity_doctrine.md) | [`temporal_discontinuity_doctrine.md`](./temporal_discontinuity_doctrine.md) |
+| **13** | [`vvv_qmrf_category_13_e14_validated_absence_registration.md`](../vvv_qmrf_category_13_e14_validated_absence_registration.md) | [`epistemic_absence_cognition.md`](./epistemic_absence_cognition.md) |
+| **14** | [`vvv_qmrf_category_14_e15_intrinsic_relational_binding.md`](../vvv_qmrf_category_14_e15_intrinsic_relational_binding.md) | [`intrinsic_relational_binding.md`](./intrinsic_relational_binding.md) |
+| **15** | [`vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md`](../vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md) | [`pre_measurement_indeterminacy.md`](./pre_measurement_indeterminacy.md) |
+| **Index** | [`vvv_qmrf_registration_categories_index.md`](../vvv_qmrf_registration_categories_index.md) | [`new_epistemic_categories_index.md`](./new_epistemic_categories_index.md) |
+
+---
+
 ## Architectural Significance / Ý nghĩa Kiến trúc
 
 The establishment of these registration categories reframes the "Measurement Problem" at the registration layer by addressing root gaps in how outcomes become registered, classified, and validated:

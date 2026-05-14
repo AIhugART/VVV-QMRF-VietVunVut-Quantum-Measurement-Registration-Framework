@@ -72,7 +72,7 @@ E10 (Tripartite Validity) — defines what counts as valid measurement
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-3 (SOT L32, N_BE_00012) | Diagnosis |
-| Category | limit_faculty_perception.md (Category 11) | Prescription |
+| Category | vvv_qmrf_category_11_e12_limit_faculty_registration.md (Category 11) | Prescription |
 | Framework | **This document (E12)** | Architecture |
 
 ---
@@ -101,4 +101,4 @@ E10 (Tripartite Validity) — defines what counts as valid measurement
 
 ---
 
-*Source: category/limit_faculty_perception.md, framework/E10_tripartite_validity_postulate.md, BIAN_index_SOT.md*
+*Source: category/vvv_qmrf_category_11_e12_limit_faculty_registration.md, framework/E10_tripartite_validity_postulate.md, BIAN_index_SOT.md*

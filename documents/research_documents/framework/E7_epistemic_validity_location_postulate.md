@@ -174,7 +174,7 @@ E7 depends on E1: self-certification (E1) establishes that a measurement CAN be 
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-18 (in BIAN_index_SOT.md L47, no node) | Diagnosis |
-| Category | dual_phase_epistemic_certification.md (Category 04) | Prescription |
+| Category | vvv_qmrf_category_04_e07_dual_phase_registration_certification.md (Category 04) | Prescription |
 | Framework | **This document (E7)** | Architecture |
 
 ---
@@ -206,7 +206,7 @@ SOT T6.03 explicitly states: "No separate node in the BE SOT." Svataḥ/parata�
 
 ### ✅ Finding 3: Category 04 is well-developed
 
-Unlike E4 (missing category), E7 has a complete Category 04 document (`dual_phase_epistemic_certification.md`) with bilingual prose, formal structure, and implications.
+Unlike E4 (missing category), E7 has a complete Category 04 document (`vvv_qmrf_category_04_e07_dual_phase_registration_certification.md`) with bilingual prose, formal structure, and implications.
 
 ---
 
@@ -218,4 +218,4 @@ Unlike E4 (missing category), E7 has a complete Category 04 document (`dual_phas
 
 ---
 
-*Source: system_mapping_SOT.md, dual_phase_epistemic_certification.md, QM_measurement_epistemic_postulates_framework.md*
+*Source: system_mapping_SOT.md, vvv_qmrf_category_04_e07_dual_phase_registration_certification.md, QM_measurement_epistemic_postulates_framework.md*

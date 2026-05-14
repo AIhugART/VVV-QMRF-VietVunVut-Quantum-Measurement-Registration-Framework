@@ -108,7 +108,7 @@ E6 (Observer-as-Process)
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-13 (SOT L42, no node) | Diagnosis |
-| Category | null_observer_event.md (Category 06) | Prescription |
+| Category | vvv_qmrf_category_06_e09_null_registering_system_event.md (Category 06) | Prescription |
 | Framework | **This document (E9)** | Architecture |
 
 ---
@@ -132,4 +132,4 @@ Category 06 was complete. E9 elevates it to architectural postulate status. SOT 
 
 ---
 
-*Source: category/null_observer_event.md, framework/E6_observer_as_process_postulate.md, BIAN_index_SOT.md*
+*Source: category/vvv_qmrf_category_06_e09_null_registering_system_event.md, framework/E6_observer_as_process_postulate.md, BIAN_index_SOT.md*

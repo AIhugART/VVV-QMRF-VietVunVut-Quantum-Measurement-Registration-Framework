@@ -148,7 +148,7 @@ E10 (Tripartite Validity) — defines what counts as a valid measurement
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-15 (SOT L44, no node) | Diagnosis |
-| Category | contrapositive_quantum_evidence.md (Category 01) | Prescription |
+| Category | vvv_qmrf_category_01_e11_purely_contrastive_evidence.md (Category 01) | Prescription |
 | Framework | **This document (E11)** | Architecture |
 
 ---
@@ -169,7 +169,7 @@ E10 (Tripartite Validity) — defines what counts as a valid measurement
 
 ### ✅ BIAN-15 resolved
 
-Category 01 (`contrapositive_quantum_evidence.md`) was complete. E11 elevates it to architectural postulate status. SOT Part 2 updated 2026-05-12.
+Category 01 (`vvv_qmrf_category_01_e11_purely_contrastive_evidence.md`) was complete. E11 elevates it to architectural postulate status. SOT Part 2 updated 2026-05-12.
 
 ### ✅ Structural pairing with E9 (BIAN-13) confirmed
 
@@ -185,4 +185,4 @@ E11 (no interaction, yes information) and E9 (yes interaction, no information) a
 
 ---
 
-*Source: category/contrapositive_quantum_evidence.md, framework/E9_null_observer_postulate.md, framework/E10_tripartite_validity_postulate.md, BIAN_index_SOT.md*
+*Source: category/vvv_qmrf_category_01_e11_purely_contrastive_evidence.md, framework/E9_null_observer_postulate.md, framework/E10_tripartite_validity_postulate.md, BIAN_index_SOT.md*

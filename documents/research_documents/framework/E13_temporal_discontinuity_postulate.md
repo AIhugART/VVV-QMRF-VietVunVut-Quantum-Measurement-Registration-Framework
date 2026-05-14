@@ -65,7 +65,7 @@ E6 (Observer-as-Process) — observer is a causal series of moments
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-8 (SOT L37, N_BE_00029) | Diagnosis |
-| Category | temporal_discontinuity_doctrine.md (Category 12) | Prescription |
+| Category | vvv_qmrf_category_12_e13_temporal_discontinuity_doctrine.md (Category 12) | Prescription |
 | Framework | **This document (E13)** | Architecture |
 
 ---
@@ -94,4 +94,4 @@ E6 (Observer-as-Process) — observer is a causal series of moments
 
 ---
 
-*Source: category/temporal_discontinuity_doctrine.md, framework/E6_observer_as_process_postulate.md, BIAN_index_SOT.md*
+*Source: category/vvv_qmrf_category_12_e13_temporal_discontinuity_doctrine.md, framework/E6_observer_as_process_postulate.md, BIAN_index_SOT.md*

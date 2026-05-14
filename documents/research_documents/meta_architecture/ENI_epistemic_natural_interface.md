@@ -284,7 +284,7 @@ ENI:    φᵢ (natural interface)    → general principle covering Λ, κ, and 
 | [epistemic_measurement_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/epistemic_measurement_pipeline.md) | §4d: S1-Λ | First ENI instance |
 | [E4_pre_symbolic_stratum_postulate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/E4_pre_symbolic_stratum_postulate.md) | §3: Λ operator | Operator origin |
 | [Jordan_Siddiqi_QM_Measurement_concept_table.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/published_documents/Jordan_Siddiqi_QM_Measurement_concept_table.md) | #12, #17, #29, #51, #57 | QM-side mapping |
-| [new_epistemic_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/new_epistemic_categories_index.md) | Master Index | Framework context |
+| [vvv_qmrf_registration_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/vvv_qmrf_registration_categories_index.md) | Master Index | Framework context |
 
 ---
 

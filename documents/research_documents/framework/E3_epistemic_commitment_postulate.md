@@ -145,7 +145,7 @@ E1 (Self-Certification)
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN_index_SOT.md row 5 | Diagnosis |
-| Category | epistemic_commitment_operator.md | Prescription |
+| Category | vvv_qmrf_category_08_e03_registration_lock_operation.md | Prescription |
 | Framework | **This document (E3)** | Architecture |
 
 ---
@@ -172,4 +172,4 @@ E1 (Self-Certification)
 
 ---
 
-*Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, epistemic_commitment_operator.md, QM_measurement_epistemic_postulates_framework.md*
+*Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, vvv_qmrf_category_08_e03_registration_lock_operation.md, QM_measurement_epistemic_postulates_framework.md*

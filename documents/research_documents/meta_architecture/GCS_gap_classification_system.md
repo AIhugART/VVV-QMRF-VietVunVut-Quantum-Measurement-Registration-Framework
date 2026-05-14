@@ -340,7 +340,7 @@ Categories 04–08, 10 are **not Class C** — they are intermediate products in
 | [RCA_BIAN1_new_epistemic.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_new_epistemic.md) | ENI principle — source of GCS |
 | [BIAN_gap_analysis_ver_01.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/achives/gap/BIAN_gap_analysis_ver_01.md) | 20 BIAN gap definitions |
 | [BIAN_index_SOT.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/gap/BIAN_index_SOT.md) | Node/edge registry |
-| [new_epistemic_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/new_epistemic_categories_index.md) | Category resolution registry |
+| [vvv_qmrf_registration_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/vvv_qmrf_registration_categories_index.md) | Category resolution registry |
 | [epistemic_measurement_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/epistemic_measurement_pipeline.md) | S1 + S1-Λ |
 | [self_validation_loop.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/self_validation_loop.md) | S2 loop |
 | [observer_ontological_foundation.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/observer_ontological_foundation.md) | S3 hub |

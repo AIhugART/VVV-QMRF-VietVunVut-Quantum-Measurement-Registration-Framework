@@ -85,7 +85,7 @@ E7 (Validity Location) — intrinsic vs extrinsic validity
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-10 (SOT L39, N_BE_00021) | Diagnosis |
-| Category | intrinsic_relational_binding.md (Category 14) | Prescription |
+| Category | vvv_qmrf_category_14_e15_intrinsic_relational_binding.md (Category 14) | Prescription |
 | Framework | **This document (E15)** | Architecture |
 
 ---
@@ -101,4 +101,4 @@ E7 (Validity Location) — intrinsic vs extrinsic validity
 
 ---
 
-*Source: category/intrinsic_relational_binding.md, framework/E7_epistemic_validity_location_postulate.md, BIAN_index_SOT.md*
+*Source: category/vvv_qmrf_category_14_e15_intrinsic_relational_binding.md, framework/E7_epistemic_validity_location_postulate.md, BIAN_index_SOT.md*

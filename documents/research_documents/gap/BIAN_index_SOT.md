@@ -55,24 +55,24 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 | BIAN | Status | Resolution method | SOT file | Date |
 |------|:------:|-------------------|----------|------|
 | BIAN-1 | ✅ Resolved | Lemma S1-Λ (not postulate E8) | `(inline — see Part 6 below)` | 2026-05-11 |
-| BIAN-2 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/self_certifying_measurement.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
-| BIAN-3 | ✅ Resolved | Category 11 + E12 (Alaukika pratyakṣa pipeline) | `category/limit_faculty_perception.md`, `framework/E12_limit_faculty_postulate.md` | 2026-05-12 |
-| BIAN-4 | ✅ Resolved | Category 08 + E5 (no node — Ākāra structurally addressed) | `category/epistemic_commitment_operator.md`, `framework/E5_internal_encoding_postulate.md` | 2026-05-12 |
-| BIAN-5 | ✅ Resolved | Category 08 + E3 (no node — Vyavasāya structurally addressed) | `category/epistemic_commitment_operator.md`, `framework/E3_epistemic_commitment_postulate.md` | 2026-05-12 |
-| BIAN-6 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/self_certifying_measurement.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
-| BIAN-7 | ✅ Resolved | Category 10 + E4 (Nirvikalpaka pipeline) | `category/pre_symbolic_stratum.md`, `framework/E4_pre_symbolic_stratum_postulate.md` | 2026-05-12 |
-| BIAN-8 | ✅ Resolved | Category 12 + E13 (Kṣaṇabhaṅgavāda pipeline) | `category/temporal_discontinuity_doctrine.md`, `framework/E13_temporal_discontinuity_postulate.md` | 2026-05-12 |
-| BIAN-9 | ✅ Resolved | Category 13 + E14 (Anupalabdhi pipeline) | `category/epistemic_absence_cognition.md`, `framework/E14_epistemic_absence_postulate.md` | 2026-05-12 |
-| BIAN-10 | ✅ Resolved | Category 14 + E15 (Svabhāvapratibandha pipeline) | `category/intrinsic_relational_binding.md`, `framework/E15_intrinsic_relation_postulate.md` | 2026-05-12 |
-| BIAN-11 | ✅ Resolved | Category 15 + E16 (Saṃśaya pipeline) | `category/pre_measurement_indeterminacy.md`, `framework/E16_structured_doubt_postulate.md` | 2026-05-12 |
-| BIAN-12 | ✅ Resolved | Category 03 + E8 (Bādhaka pramāṇa pipeline) | `category/retroactive_epistemic_override.md`, `framework/E8_retroactive_override_postulate.md` | 2026-05-12 |
-| BIAN-13 | ✅ Resolved | Category 06 + E9 (Anadhyavasāya pipeline) | `category/null_observer_event.md`, `framework/E9_null_observer_postulate.md` | 2026-05-12 |
-| BIAN-14 | ✅ Resolved | Category 09 + E10 (Trairūpya pipeline) | `category/tripartite_validity_matrix.md`, `framework/E10_tripartite_validity_postulate.md` | 2026-05-12 |
-| BIAN-15 | ✅ Resolved | Category 01 + E11 (Kevalavyatirekin pipeline) | `category/contrapositive_quantum_evidence.md`, `framework/E11_contrapositive_evidence_postulate.md` | 2026-05-12 |
-| BIAN-16 | ✅ Resolved | Category 06 + E2 (Pramāṇa pipeline) | `category/measurement_self_completion.md`, `framework/E2_measurement_self_completion_postulate.md` | 2026-05-12 |
-| BIAN-17 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/self_certifying_measurement.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
-| BIAN-18 | ✅ Resolved | Category 04 + E7 (no node — svataḥ/parataḥ structurally addressed) | `category/dual_phase_epistemic_certification.md`, `framework/E7_epistemic_validity_location_postulate.md` | 2026-05-12 |
-| BIAN-19 | ✅ Resolved | Category 07 + E6 (Anātmavāda pipeline) | `category/observer_as_process.md`, `framework/E6_observer_as_process_postulate.md` | 2026-05-12 |
+| BIAN-2 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/vvv_qmrf_category_05_e01_self_certifying_registration_operator.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
+| BIAN-3 | ✅ Resolved | Category 11 + E12 (Alaukika pratyakṣa pipeline) | `category/vvv_qmrf_category_11_e12_limit_faculty_registration.md`, `framework/E12_limit_faculty_postulate.md` | 2026-05-12 |
+| BIAN-4 | ✅ Resolved | Category 08 + E5 (no node — Ākāra structurally addressed) | `category/vvv_qmrf_category_08_e03_registration_lock_operation.md`, `framework/E5_internal_encoding_postulate.md` | 2026-05-12 |
+| BIAN-5 | ✅ Resolved | Category 08 + E3 (no node — Vyavasāya structurally addressed) | `category/vvv_qmrf_category_08_e03_registration_lock_operation.md`, `framework/E3_epistemic_commitment_postulate.md` | 2026-05-12 |
+| BIAN-6 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/vvv_qmrf_category_05_e01_self_certifying_registration_operator.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
+| BIAN-7 | ✅ Resolved | Category 10 + E4 (Nirvikalpaka pipeline) | `category/vvv_qmrf_category_10_e04_pre_symbolic_stratum.md`, `framework/E4_pre_symbolic_stratum_postulate.md` | 2026-05-12 |
+| BIAN-8 | ✅ Resolved | Category 12 + E13 (Kṣaṇabhaṅgavāda pipeline) | `category/vvv_qmrf_category_12_e13_temporal_discontinuity_doctrine.md`, `framework/E13_temporal_discontinuity_postulate.md` | 2026-05-12 |
+| BIAN-9 | ✅ Resolved | Category 13 + E14 (Anupalabdhi pipeline) | `category/vvv_qmrf_category_13_e14_validated_absence_registration.md`, `framework/E14_epistemic_absence_postulate.md` | 2026-05-12 |
+| BIAN-10 | ✅ Resolved | Category 14 + E15 (Svabhāvapratibandha pipeline) | `category/vvv_qmrf_category_14_e15_intrinsic_relational_binding.md`, `framework/E15_intrinsic_relation_postulate.md` | 2026-05-12 |
+| BIAN-11 | ✅ Resolved | Category 15 + E16 (Saṃśaya pipeline) | `category/vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md`, `framework/E16_structured_doubt_postulate.md` | 2026-05-12 |
+| BIAN-12 | ✅ Resolved | Category 03 + E8 (Bādhaka pramāṇa pipeline) | `category/vvv_qmrf_category_03_e08_retroactive_registration_override.md`, `framework/E8_retroactive_override_postulate.md` | 2026-05-12 |
+| BIAN-13 | ✅ Resolved | Category 06 + E9 (Anadhyavasāya pipeline) | `category/vvv_qmrf_category_06_e09_null_registering_system_event.md`, `framework/E9_null_observer_postulate.md` | 2026-05-12 |
+| BIAN-14 | ✅ Resolved | Category 09 + E10 (Trairūpya pipeline) | `category/vvv_qmrf_category_09_e10_tripartite_registration_validity_matrix.md`, `framework/E10_tripartite_validity_postulate.md` | 2026-05-12 |
+| BIAN-15 | ✅ Resolved | Category 01 + E11 (Kevalavyatirekin pipeline) | `category/vvv_qmrf_category_01_e11_purely_contrastive_evidence.md`, `framework/E11_contrapositive_evidence_postulate.md` | 2026-05-12 |
+| BIAN-16 | ✅ Resolved | Category 06 + E2 (Pramāṇa pipeline) | `category/vvv_qmrf_category_02_e02_registration_self_completion_matrix.md`, `framework/E2_measurement_self_completion_postulate.md` | 2026-05-12 |
+| BIAN-17 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/vvv_qmrf_category_05_e01_self_certifying_registration_operator.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
+| BIAN-18 | ✅ Resolved | Category 04 + E7 (no node — svataḥ/parataḥ structurally addressed) | `category/vvv_qmrf_category_04_e07_dual_phase_registration_certification.md`, `framework/E7_epistemic_validity_location_postulate.md` | 2026-05-12 |
+| BIAN-19 | ✅ Resolved | Category 07 + E6 (Anātmavāda pipeline) | `category/vvv_qmrf_category_07_e06_registering_system_as_process_framework.md`, `framework/E6_observer_as_process_postulate.md` | 2026-05-12 |
 | BIAN-20 | 🔒 Reserved | See BIAN-10 | — | — |
 
 > **BIAN-1 resolution note:** Λ operator (E4) formally covers the transition gap. N_BE_00010 is the receiver (E5-side), not the transition operator. See `synthesis/epistemic_measurement_pipeline.md §4d`. Full decision record inline → **Part 6** (§6.1 decision · §6.2 evidence · §6.3 node · §6.4 formalism · §6.5 pipeline · §6.6 coverage).

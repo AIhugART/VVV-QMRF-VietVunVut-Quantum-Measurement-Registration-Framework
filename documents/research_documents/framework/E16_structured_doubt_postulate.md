@@ -71,7 +71,7 @@ E15 (IRB) — entanglement as intrinsic relation (system structure)
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-11 (SOT L40, N_BE_00007) | Diagnosis |
-| Category | pre_measurement_indeterminacy.md (Category 15) | Prescription |
+| Category | vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md (Category 15) | Prescription |
 | Framework | **This document (E16)** | Architecture |
 
 ---
@@ -100,4 +100,4 @@ E15 (IRB) — entanglement as intrinsic relation (system structure)
 
 ---
 
-*Source: category/pre_measurement_indeterminacy.md, framework/E15_intrinsic_relation_postulate.md, BIAN_index_SOT.md*
+*Source: category/vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md, framework/E15_intrinsic_relation_postulate.md, BIAN_index_SOT.md*

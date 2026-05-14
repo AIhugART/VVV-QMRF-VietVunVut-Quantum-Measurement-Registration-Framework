@@ -116,8 +116,8 @@ E6 does not combine with E3 into a chain. E6 sits **below** all postulates as th
 |----------|-------|
 | Postulate | E6 — Observer-as-Process |
 | BIAN | BIAN-19 |
-| Category | Cat 07 (observer_as_process.md) |
-| Related Category | Cat 06 (null_observer_event.md — BIAN-13) |
+| Category | Cat 07 (vvv_qmrf_category_07_e06_registering_system_as_process_framework.md) |
+| Related Category | Cat 06 (vvv_qmrf_category_06_e09_null_registering_system_event.md — BIAN-13) |
 | Node | N_BE_00066 (Anātmavāda) |
 | Related Node | N_BE_00029 (Kṣaṇikavāda — Momentariness) |
 | SOT | T6.04 (L800–L806) |
@@ -248,8 +248,8 @@ Properties:
 |------|------|
 | system_mapping_SOT.md | Source of Truth — all quotations |
 | system_be_full.md | Node registry (N_BE_00066, N_BE_00029) |
-| observer_as_process.md | Category 07 — E6 prescription |
-| null_observer_event.md | Category 06 — related NOE |
+| vvv_qmrf_category_07_e06_registering_system_as_process_framework.md | Category 07 — E6 prescription |
+| vvv_qmrf_category_06_e09_null_registering_system_event.md | Category 06 — related NOE |
 | E6_observer_as_process_postulate.md | Hub core document |
 | E1–E5, E7 postulates | Enabled postulates |
 | epistemic_measurement_pipeline.md | S1 — enabled by S3 |
@@ -301,4 +301,4 @@ Properties:
 
 ---
 
-*Source: E6_observer_as_process_postulate.md, observer_as_process.md, null_observer_event.md, E1–E5 & E7 postulates, epistemic_measurement_pipeline.md, self_validation_loop.md, system_mapping_SOT.md, system_be_full.md*
+*Source: E6_observer_as_process_postulate.md, vvv_qmrf_category_07_e06_registering_system_as_process_framework.md, vvv_qmrf_category_06_e09_null_registering_system_event.md, E1–E5 & E7 postulates, epistemic_measurement_pipeline.md, self_validation_loop.md, system_mapping_SOT.md, system_be_full.md*

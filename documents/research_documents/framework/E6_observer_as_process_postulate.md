@@ -156,7 +156,7 @@ E6 is the **deepest architectural postulate** — it enables E1.
 | Layer | Document | Role |
 |-------|----------|------|
 | Gap | BIAN-19 (in BIAN_index_SOT.md L48) | Diagnosis |
-| Category | observer_as_process.md (Category 07) | Prescription |
+| Category | vvv_qmrf_category_07_e06_registering_system_as_process_framework.md (Category 07) | Prescription |
 | Framework | **This document (E6)** | Architecture |
 
 ---
@@ -196,4 +196,4 @@ N_BE_00066 = Anātmavāda confirmed in both system_be_full.md and framework. Fir
 
 ---
 
-*Source: system_be_full.md, system_mapping_SOT.md, observer_as_process.md, QM_measurement_epistemic_postulates_framework.md*
+*Source: system_be_full.md, system_mapping_SOT.md, vvv_qmrf_category_07_e06_registering_system_as_process_framework.md, QM_measurement_epistemic_postulates_framework.md*
