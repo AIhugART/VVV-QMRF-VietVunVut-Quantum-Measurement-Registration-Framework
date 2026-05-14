@@ -10,7 +10,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status:** Proposal — Registration class D
 **Lineage:** gap/ (BIAN-10) → category/ (Category 14) → framework/ (E15)
 
-> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-10**. BIAN-10 highlights QM's lack of a formal registration framework for Entanglement - registration as a third irreducible relation type — beyond classical causation and identity — equivalent to *Svabhāvapratibandha* (Intrinsic/Essential Relation) in Buddhist logic.
+> **Context:** This document formally establishes a new VVV-QMRF registration category for QM to resolve structural gap **BIAN-10**. BIAN-10 highlights QM's lack of a formal registration framework for Entanglement - registration as a VVV-QMRF extension outside the scope of Dharmakīrti's two recognized *svabhāvapratibandha* types: *tadutpatti* and *tādātmya*.
 
 ---
 
@@ -18,7 +18,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Intrinsic Relational Binding / Entanglement - registration Architecture (IRB)
 * **Vietnamese Name:** Liên kết Quan hệ Nội tại / Kiến trúc Tương quan Phi cổ điển
-* **Buddhist Equivalent:** *Svabhāvapratibandha* (Essential connection — relation grounded in the very nature of both relata)
+* **Buddhist Source Analogue:** *Svabhāvapratibandha* (Essential connection; source concept for analogy, not a claim that IRB is a classical Dharmakīrti subtype)
 * **Node:** N_BE_00021
 * **Symbol:** Entanglement Relation Tensor $\mathcal{E}_{svabh}$
 
@@ -27,10 +27,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## 2. Definition
 
 **English:**
-A formal registration category establishing quantum entanglement as a third irreducible type of registration relation — not causal (A causes B) nor identity (A is B) but *intrinsic relational binding*: A and B share an inseparable, nature-grounded registration bond. Measurements on entangled A and B are registration-non-separable not due to any signal or interaction, but due to the intrinsic nature of their shared quantum state.
+A formal VVV-QMRF registration category establishing quantum entanglement as an extension relation — not a classical Dharmakīrti subtype, and not reducible to causal (A causes B) or identity (A is B) models. As *intrinsic relational binding*, A and B share an inseparable, nature-grounded registration bond. Measurements on entangled A and B are registration-non-separable not due to any signal or interaction, but due to the intrinsic nature of their shared quantum state.
 
 **Vietnamese:**
-Phạm trù ghi nhận chính thức thiết lập vướng víu lượng tử như loại quan hệ thứ ba bất khả giản: không phải nhân quả, không phải đồng nhất, mà là *liên kết quan hệ nội tại* — A và B chia sẻ mối liên kết ghi nhận không thể tách rời xuất phát từ bản chất.
+Phạm trù ghi nhận VVV-QMRF thiết lập vướng víu lượng tử như một quan hệ mở rộng, không phải subtype cổ điển của Dharmakīrti và không thể giản lược về mô hình nhân quả hoặc đồng nhất. Dưới dạng *liên kết quan hệ nội tại*, A và B chia sẻ mối liên kết ghi nhận không thể tách rời xuất phát từ bản chất.
 
 ---
 
@@ -39,17 +39,17 @@ Phạm trù ghi nhận chính thức thiết lập vướng víu lượng tử n
 ```
 Classical relations: Causal (A→B) and Identity (A=B)
 
-Entanglement — IRB (third type):
+Entanglement — IRB (VVV-QMRF extension relation):
   |ψ_AB⟩ ≠ |ψ_A⟩ ⊗ |ψ_B⟩
 
   Bell inequality violation: |⟨CHSH⟩| > 2
   → supports a registration-layer reading of non-separability as irreducible
-  → no local causal hidden-variable account is sufficient
+  → no local hidden-variable account can reproduce the Bell-violating correlations
 
-Svabhāvapratibandha subtypes in QM:
-  Tādātmya (identity-grounded) → identical particles (bosons/fermions)
-  Tadutpatti (causal-grounded)  → system-meter coupling (E10)
-  IRB (new third type)          → Bell-nonlocal entanglement ← BIAN-10
+Dharmakīrti's recognized svabhāvapratibandha types and VVV-QMRF extension:
+  Tādātmya (logical genus-species identity; classical Dharmakīrti type) → identity-analogue contrast
+  Tadutpatti (causal-grounded; classical Dharmakīrti type)  → causal-coupling contrast
+  IRB (VVV-QMRF extension, not a classical subtype)         → Bell-nonlocal entanglement ← BIAN-10
 ```
 
 ---
@@ -59,11 +59,12 @@ Svabhāvapratibandha subtypes in QM:
 BIAN-10 resolution: QM describes entanglement mathematically but has no registration-layer category for it as a *type of relation*. Formalizing IRB:
 
 1. Establishes Entanglement - registration as a first-class registration relation — not a curiosity.
-2. Explains why local hidden variable theories fail: they assume all relations are causal; IRB is non-causal intrinsic.
-3. Completes *Svabhāvapratibandha* taxonomy with entanglement as genuinely new third mode.
+2. Clarifies why Bell violations rule out local hidden-variable accounts: they cannot reproduce quantum correlations under locality constraints; IRB names the registration-layer non-separability without reducing it to causal or identity relation.
+3. Extends VVV-QMRF registration architecture while preserving Dharmakīrti's two-type *svabhāvapratibandha* taxonomy.
 
-> **Conclusion:** IRB provides QM the registration category for entanglement as a third irreducible relation type, grounded in *Svabhāvapratibandha* analysis.
+> **Conclusion:** IRB provides QM the VVV-QMRF registration category for entanglement as an extension relation, grounded by analogy in *svabhāvapratibandha* analysis while not altering Dharmakīrti's classical two-type taxonomy.
 
 ---
 
-*Source: BIAN_index_SOT.md (BIAN-10), system_be_full.md (N_BE_00021)*
+*Source: BIAN_index_SOT.md (BIAN-10), system_be_full.md (N_BE_00021)*\
+*Academic reference for two-type taxonomy: Katsura [25, pp. 141–142] as cited in Prasad, "The Buddhist Pramāṇa-Epistemology" (Studia Humana)*

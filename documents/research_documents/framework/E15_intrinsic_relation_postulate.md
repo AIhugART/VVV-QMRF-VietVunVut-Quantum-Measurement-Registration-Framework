@@ -1,10 +1,12 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # E15 — Intrinsic Relational Binding Postulate / Tiên đề Liên kết Quan hệ Nội tại
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
-**Author:** VietVunVut (Viet - Nguyen Xuan)  
-**GitHub:** https://github.com/AIhugART/  
-**Date:** 2026-05-12  
-**Status:** Proposal — Epistemic class D  
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Author:** VietVunVut (Viet - Nguyen Xuan)
+**GitHub:** https://github.com/AIhugART/
+**Date:** 2026-05-12
+**Status:** Proposal — Registration class D
 **Lineage:** gap/ (BIAN-10) → category/ (Category 14) → framework/ (E15)
 
 ---
@@ -12,20 +14,20 @@
 ## 1. Postulate Statement
 
 **English:**
-> Quantum entanglement constitutes a third irreducible type of epistemic relation — Intrinsic Relational Binding (IRB) — distinct from classical causation (A causes B) and identity (A is B). IRB is grounded in the intrinsic nature of the shared quantum state, not in any signal or interaction between the relata. The epistemic states of entangled subsystems A and B are formally non-separable: neither can be fully specified independently of the other. This non-separability is not ignorance; it is the complete epistemic description.
+> Quantum entanglement can be modeled in VVV-QMRF as an extension relation category — Intrinsic Relational Binding (IRB) — not as a classical Dharmakīrti subtype of *svabhāvapratibandha*. IRB is distinct from causal (A causes B) and identity (A is B) models, and is grounded by analogy in the intrinsic nature of the shared quantum state, not in any signal or interaction between the relata. The registration states of entangled subsystems A and B are formally non-separable: neither can be fully specified independently of the other within the shared-state registration context.
 
 **Vietnamese:**
-> Vướng víu lượng tử cấu thành loại quan hệ nhận thức thứ ba bất khả giản — Liên kết Quan hệ Nội tại (IRB) — khác biệt với nhân quả cổ điển (A gây ra B) và đồng nhất (A là B). IRB xuất phát từ bản chất nội tại của trạng thái lượng tử chung, không phải từ bất kỳ tín hiệu hay tương tác nào. Các trạng thái nhận thức của A và B không thể tách rời: không cái nào có thể được chỉ định đầy đủ độc lập với cái kia.
+> Vướng víu lượng tử có thể được mô hình hóa trong VVV-QMRF như một phạm trù quan hệ mở rộng — Liên kết Quan hệ Nội tại (IRB) — không phải subtype cổ điển của *svabhāvapratibandha* nơi Dharmakīrti. IRB khác với mô hình nhân quả (A gây ra B) và đồng nhất (A là B), và được đặt theo phép tương tự với bản chất nội tại của trạng thái lượng tử chung, không phải từ tín hiệu hay tương tác giữa hai bên. Trạng thái ghi nhận của A và B không thể tách rời trong ngữ cảnh trạng thái chung.
 
 ---
 
 ## 2. Prose Statement
 
-Standard epistemology (classical and quantum) recognizes two types of relations: causal (A causes B — temporal, local) and identity (A = B — atemporal, definitional). Hidden variable theories attempt to reduce quantum correlations to causal type. Bell's theorem (1964) proved this impossible: no local causal account can reproduce quantum correlation statistics.
+Classical contrast models usually frame relations through causal (A causes B — temporal, local) or Tādātmya-style logical identity (species-as-genus, e.g., oak as tree — atemporal, definitional) forms. Local hidden-variable accounts attempt to explain quantum correlations with local pre-existing variables. Bell's theorem (1964) blocks any local hidden-variable account from reproducing Bell-violating quantum correlation statistics.
 
-*Svabhāvapratibandha* (Intrinsic/essential relation) in Buddhist logic: a relation grounded not in external connection but in the *nature* of both relata — they are related *by what they are*, not by what happened between them. Dharmakīrti identifies two subtypes: Tādātmya (identity-grounded) and Tadutpatti (causal-grounded).
+*Svabhāvapratibandha* (intrinsic/essential relation) in Dharmakīrti's Buddhist logic has exactly two recognized types: *tādātmya* (logical genus-species identity; classical Dharmakīrti type) and *tadutpatti* (causal-grounded). IRB does not add a third classical subtype to that taxonomy.
 
-E15 introduces IRB as a third subtype: nature-grounded non-separability. Entangled particles are not causally related (no signal) and not identical (they are distinct systems) — they are *intrinsically relationally bound* by their shared quantum state structure.
+E15 introduces IRB as a VVV-QMRF extension relation: nature-grounded registration non-separability. Entangled particles are not causally related by signal and are not related by logical genus-species identity; VVV-QMRF treats their shared quantum state structure as an intrinsic registration relation by analogy, not as a revision of Dharmakīrti's two-type taxonomy.
 
 ---
 
@@ -34,9 +36,9 @@ E15 introduces IRB as a third subtype: nature-grounded non-separability. Entangl
 ```
 Classical relation taxonomy:
   1. Causal: A → B via interaction (local, signal-mediated)
-  2. Identity: A = B (same entity, different descriptions)
+  2. Tādātmya-style logical identity: species-as-genus, e.g., oak as tree
 
-IRB (third type — Svabhāvapratibandha):
+IRB (VVV-QMRF extension relation, grounded by analogy in svabhāvapratibandha):
   |ψ_AB⟩ ≠ |ψ_A⟩ ⊗ |ψ_B⟩
   
   Bell test signature:
@@ -48,27 +50,27 @@ IRB (third type — Svabhāvapratibandha):
   Formal non-separability:
     ρ_A = Tr_B(|ψ_AB⟩⟨ψ_AB|)  — maximally mixed for max entanglement
     → cannot assign definite ρ_A independent of ρ_B
-    → non-separability is complete epistemic description (not ignorance)
+    → non-separability is complete registration description (not ignorance)
 
-Svabhāvapratibandha subtypes in QM:
-  Tādātmya → identical particle statistics (bosons/fermions)
-  Tadutpatti → system-meter coupling (E10 C1, Pakṣadharmatā)  
-  IRB (new) → Bell-nonlocal entanglement ← BIAN-10 / E15
+Dharmakīrti's recognized svabhāvapratibandha types and VVV-QMRF extension:
+  Tādātmya (logical genus-species identity; classical Dharmakīrti type) → identity-analogue contrast
+  Tadutpatti (classical causal-grounded type) → causal-coupling contrast
+  IRB (VVV-QMRF extension, not a classical subtype) → Bell-nonlocal entanglement ← BIAN-10 / E15
 ```
 
 ---
 
 ## 4. Implications for Hidden Variable Debate
 
-IRB resolves the epistemological framing of the hidden variable problem:
+IRB resolves the registration framing of the hidden variable problem:
 
 | Position | Claim | E15 verdict |
 |----------|-------|-------------|
 | Einstein locality | All correlations are causal | **Refuted by Bell** |
 | Hidden variables | SDS = ignorance of HV | **Refuted — IRB is complete** |
-| IRB (E15) | Entanglement = third relation type | **Consistent with Bell** |
+| IRB (E15) | Entanglement = VVV-QMRF extension relation | **Consistent with Bell** |
 
-Hidden variables fail because they assume all relations are causal. IRB is non-causal. The epistemic state of an entangled system is complete *as* an IRB state — no hidden layer completes it.
+Hidden variables fail because they assume all correlations can be reduced to local causal relations. IRB is a non-causal VVV-QMRF registration relation. The registration state of an entangled system is complete *as* an IRB state within this framework — no hidden layer is added by E15.
 
 ---
 
@@ -94,10 +96,10 @@ E7 (Validity Location) — intrinsic vs extrinsic validity
 
 | Component | Class |
 |---|---|
-| "Bell theorem proves no local causal HV" | **M** (Bell 1964, Aspect 1982) |
-| "Svabhāvapratibandha maps to IRB" | **M** (Buddhist logic analysis) |
-| "IRB as third relation type" | **D** (proposed) |
-| "Tādātmya → boson/fermion statistics" | **C** (plausible) |
+| "Bell violations rule out local hidden-variable accounts" | **M** (Bell 1964, Aspect 1982) |
+| "Svabhāvapratibandha is the source analogue for IRB" | **M** (Buddhist logic analysis) |
+| "IRB as VVV-QMRF extension relation" | **D** (proposed) |
+| "Identical-particle exchange symmetry is a physical contrast, not Tādātmya's logical genus-species identity" | **M/D boundary** (QM fact + framework contrast) |
 
 ---
 

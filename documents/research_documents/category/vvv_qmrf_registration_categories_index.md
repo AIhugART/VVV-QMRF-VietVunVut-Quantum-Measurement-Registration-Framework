@@ -20,7 +20,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## Master Index Table / Bảng Mục lục Tổng hợp
 
-| No. | Category Name (English) | Phạm trù (Vietnamese) | Buddhist Equivalent | BIAN Resolved | File Link |
+| No. | Category Name (English) | Phạm trù (Vietnamese) | Buddhist Source Analogue | BIAN Resolved | File Link |
 |:---:|:---|:---|:---|:---:|:---|
 | **01** | Purely Contrastive Evidence / Interaction-Free State Inference | Bằng chứng Thuần Loại trừ / Suy luận Trạng thái Phi Tương tác | *Kevalavyatirekin* | BIAN-15 | [`vvv_qmrf_category_01_e11_purely_contrastive_evidence.md`](./vvv_qmrf_category_01_e11_purely_contrastive_evidence.md) |
 | **02** | Registration Self-Completion Matrix / Act-Result Identity | Ma trận Tự hoàn tất Ghi nhận / Sự đồng nhất Hành động - Kết quả | *Pramāṇa-Phala Identity* | BIAN-16 | [`vvv_qmrf_category_02_e02_registration_self_completion_matrix.md`](./vvv_qmrf_category_02_e02_registration_self_completion_matrix.md) |

@@ -20,7 +20,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## Master Index Table / Bảng Mục lục Tổng hợp
 
-| No. | Category Name (English) | Phạm trù (Vietnamese) | Buddhist Equivalent | BIAN Resolved | File Link |
+| No. | Category Name (English) | Phạm trù (Vietnamese) | Buddhist Source Analogue | BIAN Resolved | File Link |
 |:---:|:---|:---|:---|:---:|:---|
 | **01** | Purely Contrastive Evidence / Interaction-Free State Inference | Bằng chứng Thuần Loại trừ / Suy luận Trạng thái Phi Tương tác | *Kevalavyatirekin* | BIAN-15 | [`contrapositive_quantum_evidence.md`](./contrapositive_quantum_evidence.md) |
 | **02** | Null Registering-System Event / Registration Non-Engagement | Sự kiện Hệ ghi nhận Rỗng / Trạng thái Bất tạo Ghi nhận | *Anadhyavasāya* | BIAN-13 | [`null_observer_event.md`](./null_observer_event.md) |

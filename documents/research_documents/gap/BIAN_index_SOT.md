@@ -63,7 +63,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 | BIAN-7 | ✅ Resolved | Category 10 + E4 (Nirvikalpaka pipeline) | `category/vvv_qmrf_category_10_e04_pre_symbolic_stratum.md`, `framework/E4_pre_symbolic_stratum_postulate.md` | 2026-05-12 |
 | BIAN-8 | ✅ Resolved | Category 12 + E13 (Kṣaṇabhaṅgavāda pipeline) | `category/vvv_qmrf_category_12_e13_temporal_discontinuity_doctrine.md`, `framework/E13_temporal_discontinuity_postulate.md` | 2026-05-12 |
 | BIAN-9 | ✅ Resolved | Category 13 + E14 (Anupalabdhi pipeline) | `category/vvv_qmrf_category_13_e14_validated_absence_registration.md`, `framework/E14_epistemic_absence_postulate.md` | 2026-05-12 |
-| BIAN-10 | ✅ Resolved | Category 14 + E15 (Svabhāvapratibandha pipeline) | `category/vvv_qmrf_category_14_e15_intrinsic_relational_binding.md`, `framework/E15_intrinsic_relation_postulate.md` | 2026-05-12 |
+| BIAN-10 | ✅ Resolved | Category 14 + E15 (Svabhāvapratibandha source-analogue; IRB as VVV-QMRF extension) | `category/vvv_qmrf_category_14_e15_intrinsic_relational_binding.md`, `framework/E15_intrinsic_relation_postulate.md` | 2026-05-12 |
 | BIAN-11 | ✅ Resolved | Category 15 + E16 (Saṃśaya pipeline) | `category/vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md`, `framework/E16_structured_doubt_postulate.md` | 2026-05-12 |
 | BIAN-12 | ✅ Resolved | Category 03 + E8 (Bādhaka pramāṇa pipeline) | `category/vvv_qmrf_category_03_e08_retroactive_registration_override.md`, `framework/E8_retroactive_override_postulate.md` | 2026-05-12 |
 | BIAN-13 | ✅ Resolved | Category 06 + E9 (Anadhyavasāya pipeline) | `category/vvv_qmrf_category_06_e09_null_registering_system_event.md`, `framework/E9_null_observer_postulate.md` | 2026-05-12 |
