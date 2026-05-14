@@ -54,32 +54,229 @@ QM tiêu chuẩn mô tả detector response và cập nhật trạng thái; tự
 
 ---
 
-## 4. Core Characteristics / Các Đặc tính Cốt lõi
+## 4. Foundational Implications / Ý nghĩa Nền tảng
 
-### 4.1. Retroactive Correction / Tính Hồi tố Ghi nhận
-* **EN:** Unlike the Schrödinger time-evolution operator which only points toward the future, this category acts upon the past. It does not alter physical history, but it re-evaluates the **registration validity** of that history.
-* **VN:** Khác với toán tử tiến hóa thời gian (Schrödinger) chỉ hướng về tương lai, phạm trù này can thiệp vào quá khứ. Nó không thay đổi lịch sử vật lý, nhưng thay đổi **giá trị ghi nhận** của lịch sử đó.
+BIAN-12 resolution: Retroactive Registration Override / Formal Measurement Invalidation supplies the missing registration-layer category for standard QM and experimental practice can reject bad data, but the registration-layer status of a prior detector response is not formally demoted inside the measurement category. Formalizing REO has three bounded implications:
 
-### 4.2. Registration Hierarchy / Tính Phân cấp Độ tin cậy
-* **EN:** For $M_2$ to successfully override $M_1$ within VVV-QMRF, the registration layer uses a proposed parameter: "Registration Weight". The override operator $\hat{O}_{bhranti}$ is triggered only if Weight($M_2$) > Weight($M_1$).
-* **VN:** Để $M_2$ có thể phủ quyết $M_1$ trong VVV-QMRF, tầng ghi nhận dùng một biến số đề xuất: "Trọng lượng Ghi nhận" (Registration Weight). Chỉ khi Weight($M_2$) > Weight($M_1$) thì $\hat{O}_{bhranti}$ mới được kích hoạt.
+1. It formalizes K-side invalidation rather than physical time reversal.
+2. It separates detector artifact from valid measurement result.
+3. It links the error status to VVV-QMRF registration hierarchy instead of ad hoc prose.
 
-### 4.3. Delineation of Physical vs. Registration Error / Phân định rạch ròi Lỗi Vật lý và Lỗi Ghi nhận
-* **EN:** Current experimental practice distinguishes physical noise, decoherence, and detector artifacts, while VVV-QMRF adds a registration-layer classification: a false-positive detector click can be treated as a *Registration Error* (*bhrānti*) and overridden via *Bādhaka pramāṇa*.
-* **VN:** Thực hành thí nghiệm hiện nay đã phân biệt nhiễu vật lý, decoherence, và detector artifact, còn VVV-QMRF thêm một phân loại ở tầng ghi nhận: một detector click dương tính giả có thể được xem là *Registration Error* (*bhrānti*) và bị phủ quyết bằng *Bādhaka pramāṇa*.
+> **Conclusion:** Retroactive Registration Override / Formal Measurement Invalidation resolves BIAN-12 only as a VVV-QMRF registration-layer category. It preserves the standard QM substrate while adding the missing K-side classification and validity boundary.
 
 ---
 
-## 5. Foundational Implications / Ý nghĩa Nền tảng
+## 5. RCA Concept Traceability Matrix / Bảng Truy vết RCA Khái niệm
 
-Formalizing this category bridges structural gap BIAN-12:
-*(Việc đưa Retroactive Registration Override vào QM giải quyết triệt để BIAN-12:)*
+**Purpose / Mục đích:** This table records traceability for the main concepts used in this category. It separates direct SOT evidence, framework-derived proposals, QM-only support, and boundary-sensitive applications so that Retroactive Registration Override / Formal Measurement Invalidation is not confused with ordinary canonical QM or with an unrestricted Buddhist equivalence.
 
-1. **Self-Correcting Mathematical Language:** Currently, when an experiment yields anomalous data due to detector failure, physicists manually cross out the data on paper (a "classical" action outside the formalism). With this category, QM develops the formal language to mathematically assert: *"Event M1 lacks the prerequisite validity to collapse the wave function."*
-   *(Trả lại quyền tự sửa sai cho toán học: Hiện nay, khi một thí nghiệm cho ra kết quả sai (do nhiễu máy), các nhà vật lý phải dùng bút gạch bỏ data (một hành động cổ điển bên ngoài hệ thống). Với phạm trù này, QM tự có ngôn ngữ toán học để nói rằng: "Sự kiện M1 không đủ tiêu chuẩn làm sụp đổ hàm sóng".)*
+**RCA labels / Nhãn RCA:**
+- **Strong:** direct node/edge or SOT evidence exists.
+- **Medium:** structurally supported, but not a direct concept-node equivalence.
+- **Derived:** proposed by this category/framework, not a source-system node.
+- **QM-only:** supported in QM only, not Buddhist Epistemology.
+- **No node:** no dedicated node/edge exists in the current SOT.
+- **Overclaim:** wording is stronger than the traceable evidence.
+- **External:** external experimental or historical support, not a current SOT node.
 
-2. **Self-Critical Registration System:** It transforms quantum mechanics from a theory that passively records whatever a detector output displays into a **self-critical registration system**, elevating it to the sophisticated epistemological standard of Dharmakīrti's Buddhist philosophy.
-   *(Hệ thống ghi nhận tự phê phán: Nó biến cơ học lượng tử từ một lý thuyết chỉ biết "ghi nhận thụ động" mọi kết quả đo, trở thành một hệ thống ghi nhận tự phê phán — đạt đến cấp độ hoàn thiện của tư duy Phật giáo Dharmakirti.)*
+| Claim anchor | Concept | Evidence / Bằng chứng truy vết | Node code | Edge code | RCA label | Boundary / Fix note |
+|---|---|---|---|---|---|---|
+| §1-§2 | BIAN-12 / gap diagnosis | BIAN SOT resolves this gap through Category 03 + E8. | —; support: N_BE_00006, N_BE_00001 | — | Strong / No node | Gap diagnosis is not by itself an empirical proof; it identifies the missing registration category. |
+| §1-§2 | Retroactive Registration Override / Formal Measurement Invalidation | VVV-QM RCA assigns the category support in node_QM_VVV. | N_QM_VVV_00029; N_QM_VVV_00030; N_QM_VVV_00031; N_QM_VVV_00032 | — | Derived | Framework category; not a canonical QM postulate unless independently validated. |
+| §1 | BE source analogue | *Bādhaka pramāṇa* source analogue; node-less in the current BE SOT | —; support: N_BE_00006, N_BE_00001 | — | Medium | Source lineage or analogy; do not collapse BE ontology into QM physics. |
+| §2-§3 | QM substrate | measurement reversal, quantum feedback, decoherence, post-measurement state update, detector-noise support | N_QM_00102; N_QM_00103; N_QM_00095; N_QM_00022 | ED_QM_00115; ED_QM_00116; ED_QM_00041; ED_QM_00014 | QM-only | Canonical QM supports the physical substrate, not the whole VVV-QMRF category. |
+| §3 | Formal symbol / operator | Invalidation Operator `Ô_bhranti` | N_QM_VVV_00029; N_QM_VVV_00030; N_QM_VVV_00031; N_QM_VVV_00032 | — | Derived | Framework notation; do not cite as a source-system operator. |
+| §4 | Category implication | Let a stronger later registration event override the earlier K-side registration status when contradiction and validity hierarchy conditions are satisfied. | N_QM_VVV_00029; N_QM_VVV_00030; N_QM_VVV_00031; N_QM_VVV_00032 | — | Medium | Valid only within the stated registration-layer boundary. |
+| §4 | Overclaim risk | not physical time travel, not reversal of historical interaction, and not permission to discard data without a validity test | — | — | Overclaim | Keep wording conditional and registration-layer specific. |
 
-> **Conclusion:** The category of *Retroactive Registration Override* provides the missing piece required for Quantum Mechanics to mathematically distinguish between a "valid measurement whose physical response and registration status are accepted" and merely the "hallucinatory beep of a faulty detector."
-> *(Kết luận: Phạm trù Sự Phủ quyết Ghi nhận Hồi tố chính là mảnh ghép còn thiếu để Cơ học Lượng tử phân biệt được bằng ngôn ngữ toán học rạch ròi đâu là một "phép đo hợp lệ có detector response và trạng thái ghi nhận được chấp nhận" và đâu chỉ là "tiếng bíp ảo giác của một chiếc máy dò hỏng".)*
+### 5.1. RCA Summary / Tóm tắt RCA
+
+1. **BIAN-12 is a structural gap, not a direct physical discovery.** The gap identifies missing registration architecture.
+2. **The BE source is bounded.** *Bādhaka pramāṇa* source analogue; node-less in the current BE SOT anchors the analogy or source lineage, but does not automatically become a QM mechanism.
+3. **The QM substrate is real but insufficient.** measurement reversal, quantum feedback, decoherence, post-measurement state update, detector-noise support provides support, while Retroactive Registration Override / Formal Measurement Invalidation names the added K-side layer.
+4. **The VVV node(s) are derived.** N_QM_VVV_00029; N_QM_VVV_00030; N_QM_VVV_00031; N_QM_VVV_00032 belong to the framework proposal and should be labeled as derived unless later validated.
+5. **Boundary control is mandatory.** The main overclaim to avoid is: not physical time travel, not reversal of historical interaction, and not permission to discard data without a validity test.
+
+### 5.2. RCA Five-Step Analysis / Phân tích RCA 5 bước
+
+#### 5.2.1 Define — observed issue / Xác định vấn đề
+
+**Symptom:** The old formulation can make Retroactive Registration Override / Formal Measurement Invalidation look like either ordinary QM vocabulary or a direct Buddhist-QM equivalence.
+
+**Cause:** The category document did not fully separate BE source support, canonical QM substrate, VVV-QMRF derived formalism, and boundary-sensitive claims.
+
+#### 5.2.2 Trace — 5 Whys / Truy nguyên 5 lần hỏi “vì sao”
+
+1. **Why does the ambiguity appear?** Because the same words describe source analogy, physical measurement support, and framework proposal.
+2. **Why is that a schema problem?** Because older category files lacked a complete RCA matrix and assertion-boundary section.
+3. **Why can this create overclaim?** Because a derived registration category may be read as a canonical QM postulate or as a literal BE equivalence.
+4. **Why is traceability required?** Because each claim needs a node/edge, QM substrate, or explicit `No node` status.
+5. **Why does Category 03 exist?** Because BIAN-12 isolates a registration-layer gap: standard QM and experimental practice can reject bad data, but the registration-layer status of a prior detector response is not formally demoted inside the measurement category.
+
+#### 5.2.3 Isolate — root cause / Cô lập nguyên nhân gốc
+
+**Root cause:** The document needed explicit schema-level separation between source-system evidence, QM support, VVV-derived notation, and boundary conditions.
+
+#### 5.2.4 Fix — corrected formulation / Sửa đúng nguyên nhân
+
+Use this bounded formulation when precision is required:
+
+```text
+Retroactive Registration Override / Formal Measurement Invalidation = a VVV-QMRF registration-layer category for BIAN-12.
+BE source: *Bādhaka pramāṇa* source analogue; node-less in the current BE SOT.
+QM substrate: measurement reversal, quantum feedback, decoherence, post-measurement state update, detector-noise support.
+VVV formalism: Invalidation Operator `Ô_bhranti` / N_QM_VVV_00029; N_QM_VVV_00030; N_QM_VVV_00031; N_QM_VVV_00032.
+Boundary: not physical time travel, not reversal of historical interaction, and not permission to discard data without a validity test.
+```
+
+#### 5.2.5 Verify — root cause removed / Kiểm chứng đã loại bỏ nguyên nhân gốc
+
+The ambiguity is removed if every use of Category 03 distinguishes:
+
+```text
+BE source analogue = *Bādhaka pramāṇa* source analogue; node-less in the current BE SOT.
+QM substrate = measurement reversal, quantum feedback, decoherence, post-measurement state update, detector-noise support.
+VVV-QMRF category = Retroactive Registration Override / Formal Measurement Invalidation.
+Formal symbol = Invalidation Operator `Ô_bhranti`.
+Boundary = not physical time travel, not reversal of historical interaction, and not permission to discard data without a validity test.
+```
+
+### 5.3. Gap Type Classification / Phân loại Loại Khoảng trống
+
+| Gap aspect | Classification | RCA note |
+|---|---|---|
+| Source gap | **BIAN-12** | Standard qm and experimental practice can reject bad data, but the registration-layer status of a prior detector response is not formally demoted inside the measurement category. |
+| Gap type | **Retroactive validity-invalidation gap** | The missing piece is a registration-category distinction, not merely a prettier sentence. |
+| Resolution type | **Category + framework postulate** | Category 03 supplies the detailed category; E8 installs it into VVV-QMRF architecture. |
+| Why not only canonical QM? | Canonical QM supports the substrate but not the K-side classification. | Use QM nodes as support, not as proof that the category already exists in standard QM. |
+| Boundary | **node-less BE analogue; derived K-side invalidation rule** | Keep labels such as Derived, Medium, No node, or QM-only visible in publication-facing prose. |
+
+### 5.4. Prototype REO Instance / Trường hợp Mẫu của REO
+
+```text
+Prototype REO instance:
+
+  Setup: M1 records a detector response but remains validity-sensitive.
+  Event: M2 later produces a stronger contradictory registration.
+  Gate: registration weight and model-consistency test favor M2.
+  Update: `Ô_bhranti` demotes M1 to registration-error status.
+  Contrast: physical history remains unchanged; only registration validity is revised.
+
+  → REO instance confirmed only within its boundary.
+```
+
+**RCA boundary:** The prototype is valid only when the stated source support, QM substrate, and registration-validity conditions are all kept distinct.
+
+### 5.5. Layer Architecture Position / Vị trí trong Kiến trúc Tầng
+
+```text
+gap/BIAN-12
+  ↓ diagnoses missing registration structure
+category/Category 03 — Retroactive Registration Override / Formal Measurement Invalidation
+  ↓ specifies detailed category and boundary conditions
+framework/E8
+  ↓ installs the rule into VVV-QMRF postulate architecture
+VVV-QMRF registration-state update layer
+  ↓ applies the category without replacing canonical QM physics
+```
+
+| Layer | Document / component | Role |
+|---|---|---|
+| Gap | BIAN-12 | Diagnoses the missing registration distinction. |
+| Category | Category 03 | Defines the detailed registration category. |
+| Framework | E8 | Promotes the category into postulate-level architecture. |
+| BE source | *Bādhaka pramāṇa* source analogue; node-less in the current BE SOT | Supplies source-lineage or analogy under RCA boundary. |
+| QM substrate | measurement reversal, quantum feedback, decoherence, post-measurement state update, detector-noise support | Supplies physical or operational support only. |
+
+---
+
+## 6. Assertion Level / Mức Khẳng định
+
+| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+|---|---|---|---|
+| BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | —; support: N_BE_00006, N_BE_00001; —. |
+| QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00102; N_QM_00103; N_QM_00095; N_QM_00022; ED_QM_00115; ED_QM_00116; ED_QM_00041; ED_QM_00014. |
+| Retroactive Registration Override / Formal Measurement Invalidation is a VVV-QMRF category | Phủ quyết Ghi nhận Hồi tố / Hủy bỏ Phép đo Chính thức là phạm trù VVV-QMRF | **D** — framework-derived | N_QM_VVV_00029; N_QM_VVV_00030; N_QM_VVV_00031; N_QM_VVV_00032; E8. |
+| Invalidation Operator `Ô_bhranti` formalizes the category | Invalidation Operator `Ô_bhranti` hình thức hóa phạm trù | **D** — notation-derived | Framework notation, not a canonical source-system operator. |
+| The category resolves BIAN-12 | Phạm trù giải quyết BIAN-12 | **D / M** — bounded resolution | Resolution holds at registration-layer architecture level. |
+| Boundary-free reading of the category | Cách đọc không ranh giới về phạm trù | **O** — overclaim | not physical time travel, not reversal of historical interaction, and not permission to discard data without a validity test. |
+
+**Summary / Tóm tắt:** The category is traceable as a VVV-QMRF registration-layer proposal. Its BE source and QM substrate support the architecture, but neither should be overstated as a direct one-to-one physical equivalence.
+
+---
+
+## 7. What Category 03 / E8 Does NOT Claim / Những gì Category 03 / E8 KHÔNG tuyên bố
+
+1. **Not a canonical QM replacement** — Retroactive Registration Override / Formal Measurement Invalidation is a VVV-QMRF registration-layer proposal built beside standard QM support.
+   *Không thay thế QM chuẩn; đây là tầng ghi nhận VVV-QMRF đặt bên cạnh nền vật lý QM.*
+
+2. **Not unrestricted equivalence with the BE source** — *Bādhaka pramāṇa* source analogue; node-less in the current BE SOT supplies source-lineage or analogy only within the stated boundary.
+   *Không đồng nhất vô điều kiện với nguồn BE; nguồn BE chỉ làm mô hình nguồn hoặc phép tương tự có ranh giới.*
+
+3. **Not boundary-free application** — not physical time travel, not reversal of historical interaction, and not permission to discard data without a validity test.
+   *Không áp dụng tự do ngoài điều kiện hợp lệ đã nêu.*
+
+4. **Not a detector-engineering shortcut** — validity still depends on calibration, context, and the relevant E10-style gate where applicable.
+   *Không bỏ qua hiệu chuẩn, bối cảnh, hoặc cổng hợp lệ kiểu E10 khi cần.*
+
+5. **Not an empirical proof of a new physical mechanism** — the category remains derived unless formal predictions and tests are supplied.
+   *Chưa phải bằng chứng thực nghiệm cho cơ chế vật lý mới nếu chưa có dự đoán và kiểm nghiệm.*
+
+6. **Not human-consciousness dependence** — registration-state update is a K-side framework term broader than human cognition.
+   *Không phụ thuộc ý thức con người; cập nhật trạng thái ghi nhận là thuật ngữ tầng K rộng hơn cognition của người.*
+
+---
+
+## 8. Vietnamese Explanation / Giải thích tiếng Việt rõ ràng
+
+Nói đơn giản, Category 03 / E8 xử lý câu hỏi:
+
+```text
+Trong trường hợp này, cái gì thật sự được ghi nhận ở tầng K,
+và điều kiện nào làm cho ghi nhận đó hợp lệ?
+```
+
+Câu trả lời của VVV-QMRF là:
+
+```text
+Nếu kết quả sau mạnh hơn cho thấy kết quả trước là tiếng bíp lỗi, Category 03 không nói quá khứ vật lý bị đổi. Nó chỉ nói trạng thái ghi nhận của kết quả cũ bị hạ xuống `registration error`.
+```
+
+Ranh giới cần nhớ:
+
+```text
+BE source không tự động trở thành cơ chế vật lý QM.
+QM substrate không tự động chứa toàn bộ category VVV-QMRF.
+VVV-QMRF thêm tầng registration-state update / cập nhật trạng thái ghi nhận.
+Nếu thiếu điều kiện hợp lệ, claim phải bị hạ xuống Medium, Derived, No node, hoặc Overclaim.
+```
+
+---
+
+## 9. Mermaid Diagram Map / Sơ đồ Mermaid
+
+```mermaid
+flowchart TD
+    subgraph BE["Buddhist Epistemology source layer"]
+        BE1["*Bādhaka pramāṇa* source analogue; node-less in the current BE SOT"]
+    end
+
+    subgraph QM["Standard Quantum Measurement substrate"]
+        QM1["measurement reversal, quantum feedback, decoherence, post-measurement state update, detector-noise support"]
+    end
+
+    subgraph VVV["VVV-QMRF Registration Layer"]
+        CAT["Category 03 / E8<br/>Retroactive Registration Override / Formal Measurement Invalidation"]
+        SYM["Invalidation Operator `Ô_bhranti`"]
+        BOUND["RCA boundary<br/>not physical time travel, not reversal of historical interaction, and not permission to discard data without a validity test"]
+    end
+
+    BE1 -->|"source-lineage / analogy"| CAT
+    QM1 -->|"physical or operational support"| CAT
+    SYM -->|"formalizes"| CAT
+    CAT --> BOUND
+```
+
+---
+
+*Source: BIAN_index_SOT.md (BIAN-12), system_be_full.md (Bhrānti and Pramāṇa support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00029-00032), framework/E8_retroactive_override_postulate.md*

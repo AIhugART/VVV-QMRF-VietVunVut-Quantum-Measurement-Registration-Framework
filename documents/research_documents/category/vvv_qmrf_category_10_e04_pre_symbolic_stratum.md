@@ -39,74 +39,9 @@ Phạm trù ghi nhận chính thức biểu diễn sự kiện vật lý tiền 
 
 ---
 
-## 3. Source Traceability / Truy vết Nguồn gốc
+## 3. Formal Structure / Cấu trúc Hình thức
 
-### 3a. SOT Reference
-
-| Property | Value |
-|----------|-------|
-| SOT section | T2.07 |
-| SOT line | L361-L372 |
-| Node | N_BE_00009 |
-| Layer | core |
-| Name | Nirvikalpaka pratyakṣa |
-| Category in BE | Mental structure |
-| Definition | Pure, direct perception free from conceptual or linguistic elaboration |
-| Source | system_be_full.md L41 |
-
-### 3b. Key quotations from SOT
-
-**SOT T2.07 (L370):**
-> "Perception entirely prior to kalpanā. Apprehends the svalakṣaṇa directly without any linguistic, categorical, or inferential processing. Linguistically ineffable; it cannot be stated without becoming savikalpaka. Epistemically foundational: it is the ground from which all valid cognition ultimately derives its contact with reality."
-
-**SOT T2.07 (L371):**
-> "QM can model the physical pre-readout interaction through system–meter coupling, von Neumann measurement, and generalized measurement. What it does not model is a non-conceptual cognitive apprehension analogous to nirvikalpaka pratyakṣa."
-
-**SOT T2.07 (L372):**
-> "The gap is not a missing physical interaction model. The gap is that QM has no formal category for non-conceptual cognition prior to symbolic or numerical interpretation."
-
-### 3c. BIAN gap reference
-
-| BIAN | Gap name | Node | QM No. | QM concept | RCA |
-|------|----------|------|--------|------------|-----|
-| BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | N_BE_00009 | 14 | Projective Measurement (PVM) | Medium |
-
-### 3d. Edge connections (from BIAN_index_SOT.md)
-
-| Edge code | Category | Dir | Source → Target | Relationship | QM No. | QM concept | RCA |
-|-----------|----------|-----|----------------|-------------|-------:|------------|-----|
-| ED_BE_00014 | Epistemic Process | out | N_BE_00009 → N_BE_00013 | apprehends | 14 | PVM | Medium |
-| ED_BE_00015 | Epistemic Process | out | N_BE_00009 → N_BE_00008 | contrasted with | 94 | Heisenberg Cut | Medium |
-| ED_BE_00126 | Epistemic Process | in | N_BE_00171 → N_BE_00009 | begins with | 20 | von Neumann Model | Strong |
-| ED_BE_00129 | Epistemic Process | in | N_BE_00174 → N_BE_00009 | is identical with | 28 | Weak Measurement | Medium |
-| ED_BE_00144 | Epistemic Process | in | N_BE_00167 → N_BE_00009 | defines | 14 | PVM | Strong |
-| ED_BE_00145 | Epistemic Process | in | N_BE_00183 → N_BE_00009 | is identical with | 14 | PVM | Medium |
-| ED_BE_00146 | Epistemic Process | in | N_BE_00184 → N_BE_00009 | characterizes | 2 | Quantum State | Weak |
-| ED_BE_00149 | Epistemic Process | in | N_BE_00191 → N_BE_00009 | is definition of | 14 | PVM | Strong |
-
----
-
-## 4. Formal Structure / Cấu trúc Hình thức
-
-### 4.1. The Symbolization Model
-
-**English:**
-In standard QM, Postulate P3 jumps from "measurement occurs" to "eigenvalue obtained." There is no intermediate formal layer. Under this category:
-
-1. **Pre-Symbolic Event ε(M):** Every measurement M generates a physical event ε(M) that has causal content but no symbolic value.
-2. **Symbolization Operator Λ:** The eigenvalue r emerges through r = Λ(ε(M)), where Λ maps the pre-symbolic event to a symbolic result.
-3. **Degree of Symbolization:** The spectrum from weak to projective measurement is a difference in the degree of Λ, not in the physical event itself.
-
-**Vietnamese:**
-Trong QM tiêu chuẩn, Tiên đề P3 nhảy từ "phép đo xảy ra" sang "eigenvalue thu được." Không có tầng hình thức trung gian. Với phạm trù mới này:
-
-1. **Sự kiện Tiền Biểu tượng ε(M):** Mọi phép đo M tạo ra sự kiện vật lý ε(M) có nội dung nhân quả nhưng không có giá trị biểu tượng.
-2. **Toán tử Biểu tượng hóa Λ:** Eigenvalue r phát sinh qua r = Λ(ε(M)), trong đó Λ ánh xạ sự kiện tiền biểu tượng sang kết quả biểu tượng.
-3. **Mức độ Biểu tượng hóa:** Phổ từ đo yếu đến đo chiếu là sự khác biệt trong mức độ Λ, không phải trong sự kiện vật lý.
-
-### 4.2. Formal Sketch
-
-```
+```text
 For measurement M yielding result r with symbolic label λ:
   ∃ pre-symbolic event ε(M) such that:
     (i)   ε(M) precedes λ-assignment
@@ -117,51 +52,233 @@ In weak measurement: Λ is partial → r is partial.
 In projective measurement: Λ is complete → r is eigenvalue.
 ```
 
----
-
-## 5. Core Characteristics / Các Đặc tính Cốt lõi
-
-### 5.1. Bridging Physical Event and Symbolic Result
-* **EN:** It provides the missing formal layer between the physical interaction (system-meter coupling) and the emergence of a definite measurement outcome.
-* **VN:** Cung cấp tầng hình thức còn thiếu giữa tương tác vật lý (ghép nối hệ-máy đo) và sự xuất hiện của kết quả đo xác định.
-
-### 5.2. Unifying Weak and Projective Measurement
-* **EN:** By treating the difference as a degree of symbolization (Λ), both weak and projective measurements are explained within a single formal framework rather than as fundamentally different operations.
-* **VN:** Bằng cách coi sự khác biệt là mức độ biểu tượng hóa (Λ), cả đo yếu và đo chiếu được giải thích trong cùng một khung hình thức thay vì là các phép toán khác nhau căn bản.
-
-### 5.3. Non-Mystical Interpretation
-* **EN:** The pre-symbolic stratum is a structural category, not a phenomenal or mystical claim about "pure awareness." It is about what QM's formalism does not represent, not about consciousness.
-* **VN:** Tầng tiền biểu tượng là phạm trù cấu trúc, không phải tuyên bố hiện tượng hay thần bí về "nhận thức thuần túy." Đây là về điều hình thức QM không biểu diễn, không phải về ý thức.
+**RCA boundary:** `ε(M)` is not an extra mystical entity. It names the registration-layer slot between physical interaction and symbolic/eigenvalue assignment.
 
 ---
 
-## 6. Architectural Position / Vị trí Kiến trúc
+## 4. Foundational Implications / Ý nghĩa Nền tảng
 
+BIAN-7 resolution: Pre-Symbolic Stratum / Formalism-External Physical Event supplies the missing registration-layer category for QM models physical interaction and readout, but lacks a category for the pre-symbolic event before eigenvalue or symbolic registration assignment. Formalizing PSS has three bounded implications:
+
+1. It bridges physical interaction and symbolic result.
+2. It explains weak/projective difference as degree of symbolization at the registration layer.
+3. It keeps the category non-mystical and formalism-focused.
+
+> **Conclusion:** Pre-Symbolic Stratum / Formalism-External Physical Event resolves BIAN-7 only as a VVV-QMRF registration-layer category. It preserves the standard QM substrate while adding the missing K-side classification and validity boundary.
+
+---
+
+## 5. RCA Concept Traceability Matrix / Bảng Truy vết RCA Khái niệm
+
+**Purpose / Mục đích:** This table records traceability for the main concepts used in this category. It separates direct SOT evidence, framework-derived proposals, QM-only support, and boundary-sensitive applications so that Pre-Symbolic Stratum / Formalism-External Physical Event is not confused with ordinary canonical QM or with an unrestricted Buddhist equivalence.
+
+**RCA labels / Nhãn RCA:**
+- **Strong:** direct node/edge or SOT evidence exists.
+- **Medium:** structurally supported, but not a direct concept-node equivalence.
+- **Derived:** proposed by this category/framework, not a source-system node.
+- **QM-only:** supported in QM only, not Buddhist Epistemology.
+- **No node:** no dedicated node/edge exists in the current SOT.
+- **Overclaim:** wording is stronger than the traceable evidence.
+- **External:** external experimental or historical support, not a current SOT node.
+
+| Claim anchor | Concept | Evidence / Bằng chứng truy vết | Node code | Edge code | RCA label | Boundary / Fix note |
+|---|---|---|---|---|---|---|
+| §1-§2 | BIAN-7 / gap diagnosis | BIAN SOT resolves this gap through Category 10 + E4. | N_BE_00009; support: N_BE_00183, N_BE_00184, N_BE_00167 | ED_BE_00014; ED_BE_00015; ED_BE_00144; ED_BE_00145; ED_BE_00146 | Strong / No node | Gap diagnosis is not by itself an empirical proof; it identifies the missing registration category. |
+| §1-§2 | Pre-Symbolic Stratum / Formalism-External Physical Event | VVV-QM RCA assigns the category support in node_QM_VVV. | N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047 | — | Derived | Framework category; not a canonical QM postulate unless independently validated. |
+| §1 | BE source analogue | *Nirvikalpaka pratyakṣa* source anchor | N_BE_00009; support: N_BE_00183, N_BE_00184, N_BE_00167 | ED_BE_00014; ED_BE_00015; ED_BE_00144; ED_BE_00145; ED_BE_00146 | Medium | Source lineage or analogy; do not collapse BE ontology into QM physics. |
+| §2-§3 | QM substrate | physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement | N_QM_00019; N_QM_00021; N_QM_00014; N_QM_00026; N_QM_00028 | ED_QM_00019; ED_QM_00021; ED_QM_00029; ED_QM_00031; ED_QM_00038 | QM-only | Canonical QM supports the physical substrate, not the whole VVV-QMRF category. |
+| §3 | Formal symbol / operator | Pre-symbolic event `ε(M)` and Symbolization Operator `Λ` | N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047 | — | Derived | Framework notation; do not cite as a source-system operator. |
+| §4 | Category implication | Name `ε(M)` as the causal but not-yet-symbolic event and `Λ` as the mapping from causal event to symbolic/eigenvalue result. | N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047 | — | Medium | Valid only within the stated registration-layer boundary. |
+| §4 | Overclaim risk | not mystical pure awareness and not a new physical interaction hidden behind measurement | — | — | Overclaim | Keep wording conditional and registration-layer specific. |
+
+### 5.1. RCA Summary / Tóm tắt RCA
+
+1. **BIAN-7 is a structural gap, not a direct physical discovery.** The gap identifies missing registration architecture.
+2. **The BE source is bounded.** *Nirvikalpaka pratyakṣa* source anchor anchors the analogy or source lineage, but does not automatically become a QM mechanism.
+3. **The QM substrate is real but insufficient.** physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement provides support, while Pre-Symbolic Stratum / Formalism-External Physical Event names the added K-side layer.
+4. **The VVV node(s) are derived.** N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047 belong to the framework proposal and should be labeled as derived unless later validated.
+5. **Boundary control is mandatory.** The main overclaim to avoid is: not mystical pure awareness and not a new physical interaction hidden behind measurement.
+
+### 5.2. RCA Five-Step Analysis / Phân tích RCA 5 bước
+
+#### 5.2.1 Define — observed issue / Xác định vấn đề
+
+**Symptom:** The old formulation can make Pre-Symbolic Stratum / Formalism-External Physical Event look like either ordinary QM vocabulary or a direct Buddhist-QM equivalence.
+
+**Cause:** The category document did not fully separate BE source support, canonical QM substrate, VVV-QMRF derived formalism, and boundary-sensitive claims.
+
+#### 5.2.2 Trace — 5 Whys / Truy nguyên 5 lần hỏi “vì sao”
+
+1. **Why does the ambiguity appear?** Because the same words describe source analogy, physical measurement support, and framework proposal.
+2. **Why is that a schema problem?** Because older category files lacked a complete RCA matrix and assertion-boundary section.
+3. **Why can this create overclaim?** Because a derived registration category may be read as a canonical QM postulate or as a literal BE equivalence.
+4. **Why is traceability required?** Because each claim needs a node/edge, QM substrate, or explicit `No node` status.
+5. **Why does Category 10 exist?** Because BIAN-7 isolates a registration-layer gap: QM models physical interaction and readout, but lacks a category for the pre-symbolic event before eigenvalue or symbolic registration assignment.
+
+#### 5.2.3 Isolate — root cause / Cô lập nguyên nhân gốc
+
+**Root cause:** The document needed explicit schema-level separation between source-system evidence, QM support, VVV-derived notation, and boundary conditions.
+
+#### 5.2.4 Fix — corrected formulation / Sửa đúng nguyên nhân
+
+Use this bounded formulation when precision is required:
+
+```text
+Pre-Symbolic Stratum / Formalism-External Physical Event = a VVV-QMRF registration-layer category for BIAN-7.
+BE source: *Nirvikalpaka pratyakṣa* source anchor.
+QM substrate: physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement.
+VVV formalism: Pre-symbolic event `ε(M)` and Symbolization Operator `Λ` / N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047.
+Boundary: not mystical pure awareness and not a new physical interaction hidden behind measurement.
 ```
-BIAN-7 (Gap diagnosis)
-  → Category 10 (THIS DOCUMENT — Formal prescription)
-    → E4 (Framework — Pre-Symbolic Stratum Postulate)
+
+#### 5.2.5 Verify — root cause removed / Kiểm chứng đã loại bỏ nguyên nhân gốc
+
+The ambiguity is removed if every use of Category 10 distinguishes:
+
+```text
+BE source analogue = *Nirvikalpaka pratyakṣa* source anchor.
+QM substrate = physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement.
+VVV-QMRF category = Pre-Symbolic Stratum / Formalism-External Physical Event.
+Formal symbol = Pre-symbolic event `ε(M)` and Symbolization Operator `Λ`.
+Boundary = not mystical pure awareness and not a new physical interaction hidden behind measurement.
 ```
 
-| Layer | Document | Role |
-|-------|----------|------|
-| Gap | BIAN_index_SOT.md (BIAN-7) | Diagnosis |
-| Category | **This document (Cat 10)** | Prescription |
-| Framework | E4_pre_symbolic_stratum_postulate.md | Architecture |
+### 5.3. Gap Type Classification / Phân loại Loại Khoảng trống
+
+| Gap aspect | Classification | RCA note |
+|---|---|---|
+| Source gap | **BIAN-7** | Qm models physical interaction and readout, but lacks a category for the pre-symbolic event before eigenvalue or symbolic registration assignment. |
+| Gap type | **Pre-symbolic registration-layer gap** | The missing piece is a registration-category distinction, not merely a prettier sentence. |
+| Resolution type | **Category + framework postulate** | Category 10 supplies the detailed category; E4 installs it into VVV-QMRF architecture. |
+| Why not only canonical QM? | Canonical QM supports the substrate but not the K-side classification. | Use QM nodes as support, not as proof that the category already exists in standard QM. |
+| Boundary | **source-supported BE anchor; derived symbolization-layer category** | Keep labels such as Derived, Medium, No node, or QM-only visible in publication-facing prose. |
+
+### 5.4. Prototype PSS Instance / Trường hợp Mẫu của PSS
+
+```text
+Prototype PSS instance:
+
+  Setup: measurement interaction occurs before the outcome label is assigned.
+  Event: `ε(M)` carries causal content without symbolic value.
+  Gate: `Λ` maps the event into a symbolic result according to measurement strength.
+  Update: partial or complete symbolization yields weak or projective registration output.
+  Contrast: the pre-symbolic layer is structural, not psychological.
+
+  → PSS instance confirmed only within its boundary.
+```
+
+**RCA boundary:** The prototype is valid only when the stated source support, QM substrate, and registration-validity conditions are all kept distinct.
+
+### 5.5. Layer Architecture Position / Vị trí trong Kiến trúc Tầng
+
+```text
+gap/BIAN-7
+  ↓ diagnoses missing registration structure
+category/Category 10 — Pre-Symbolic Stratum / Formalism-External Physical Event
+  ↓ specifies detailed category and boundary conditions
+framework/E4
+  ↓ installs the rule into VVV-QMRF postulate architecture
+VVV-QMRF registration-state update layer
+  ↓ applies the category without replacing canonical QM physics
+```
+
+| Layer | Document / component | Role |
+|---|---|---|
+| Gap | BIAN-7 | Diagnoses the missing registration distinction. |
+| Category | Category 10 | Defines the detailed registration category. |
+| Framework | E4 | Promotes the category into postulate-level architecture. |
+| BE source | *Nirvikalpaka pratyakṣa* source anchor | Supplies source-lineage or analogy under RCA boundary. |
+| QM substrate | physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement | Supplies physical or operational support only. |
 
 ---
 
-## 7. Assertion Level / Mức Khẳng định
+## 6. Assertion Level / Mức Khẳng định
 
-| Component | Class | Evidence |
-|-----------|-------|----------|
-| "Pre-conceptual perception exists in BE" | **M** | SOT T2.07 L370 |
-| "QM has no pre-symbolic category" | **M** | SOT T2.07 L371-372 |
-| "Gap is epistemic, not physical" | **M** | SOT T2.07 L372 |
-| "ε(M) pre-symbolic event" | **D** | Proposed formalism |
-| "Λ symbolization operator" | **D** | Proposed — novel |
-| "Weak vs projective = degree of Λ" | **D** | Novel applied consequence |
+| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+|---|---|---|---|
+| BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | N_BE_00009; support: N_BE_00183, N_BE_00184, N_BE_00167; ED_BE_00014; ED_BE_00015; ED_BE_00144; ED_BE_00145; ED_BE_00146. |
+| QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00019; N_QM_00021; N_QM_00014; N_QM_00026; N_QM_00028; ED_QM_00019; ED_QM_00021; ED_QM_00029; ED_QM_00031; ED_QM_00038. |
+| Pre-Symbolic Stratum / Formalism-External Physical Event is a VVV-QMRF category | Tầng Tiền Biểu tượng / Sự kiện Vật lý Ngoài Hình thức là phạm trù VVV-QMRF | **D** — framework-derived | N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047; E4. |
+| Pre-symbolic event `ε(M)` and Symbolization Operator `Λ` formalizes the category | Pre-symbolic event `ε(M)` and Symbolization Operator `Λ` hình thức hóa phạm trù | **D** — notation-derived | Framework notation, not a canonical source-system operator. |
+| The category resolves BIAN-7 | Phạm trù giải quyết BIAN-7 | **D / M** — bounded resolution | Resolution holds at registration-layer architecture level. |
+| Boundary-free reading of the category | Cách đọc không ranh giới về phạm trù | **O** — overclaim | not mystical pure awareness and not a new physical interaction hidden behind measurement. |
+
+**Summary / Tóm tắt:** The category is traceable as a VVV-QMRF registration-layer proposal. Its BE source and QM substrate support the architecture, but neither should be overstated as a direct one-to-one physical equivalence.
 
 ---
 
-*Source: BIAN_index_SOT.md (BIAN-7), system_be_full.md (N_BE_00009), system_mapping_SOT.md (T2.07 L361-L372)*
+## 7. What Category 10 / E4 Does NOT Claim / Những gì Category 10 / E4 KHÔNG tuyên bố
+
+1. **Not a canonical QM replacement** — Pre-Symbolic Stratum / Formalism-External Physical Event is a VVV-QMRF registration-layer proposal built beside standard QM support.
+   *Không thay thế QM chuẩn; đây là tầng ghi nhận VVV-QMRF đặt bên cạnh nền vật lý QM.*
+
+2. **Not unrestricted equivalence with the BE source** — *Nirvikalpaka pratyakṣa* source anchor supplies source-lineage or analogy only within the stated boundary.
+   *Không đồng nhất vô điều kiện với nguồn BE; nguồn BE chỉ làm mô hình nguồn hoặc phép tương tự có ranh giới.*
+
+3. **Not boundary-free application** — not mystical pure awareness and not a new physical interaction hidden behind measurement.
+   *Không áp dụng tự do ngoài điều kiện hợp lệ đã nêu.*
+
+4. **Not a detector-engineering shortcut** — validity still depends on calibration, context, and the relevant E10-style gate where applicable.
+   *Không bỏ qua hiệu chuẩn, bối cảnh, hoặc cổng hợp lệ kiểu E10 khi cần.*
+
+5. **Not an empirical proof of a new physical mechanism** — the category remains derived unless formal predictions and tests are supplied.
+   *Chưa phải bằng chứng thực nghiệm cho cơ chế vật lý mới nếu chưa có dự đoán và kiểm nghiệm.*
+
+6. **Not human-consciousness dependence** — registration-state update is a K-side framework term broader than human cognition.
+   *Không phụ thuộc ý thức con người; cập nhật trạng thái ghi nhận là thuật ngữ tầng K rộng hơn cognition của người.*
+
+---
+
+## 8. Vietnamese Explanation / Giải thích tiếng Việt rõ ràng
+
+Nói đơn giản, Category 10 / E4 xử lý câu hỏi:
+
+```text
+Trong trường hợp này, cái gì thật sự được ghi nhận ở tầng K,
+và điều kiện nào làm cho ghi nhận đó hợp lệ?
+```
+
+Câu trả lời của VVV-QMRF là:
+
+```text
+Trước khi có con số eigenvalue, đã có một sự kiện vật lý xảy ra. Category 10 gọi lớp đó là `pre-symbolic`: có nhân quả nhưng chưa thành ký hiệu đo.
+```
+
+Ranh giới cần nhớ:
+
+```text
+BE source không tự động trở thành cơ chế vật lý QM.
+QM substrate không tự động chứa toàn bộ category VVV-QMRF.
+VVV-QMRF thêm tầng registration-state update / cập nhật trạng thái ghi nhận.
+Nếu thiếu điều kiện hợp lệ, claim phải bị hạ xuống Medium, Derived, No node, hoặc Overclaim.
+```
+
+---
+
+## 9. Mermaid Diagram Map / Sơ đồ Mermaid
+
+```mermaid
+flowchart TD
+    subgraph BE["Buddhist Epistemology source layer"]
+        BE1["*Nirvikalpaka pratyakṣa* source anchor"]
+    end
+
+    subgraph QM["Standard Quantum Measurement substrate"]
+        QM1["physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement"]
+    end
+
+    subgraph VVV["VVV-QMRF Registration Layer"]
+        CAT["Category 10 / E4<br/>Pre-Symbolic Stratum / Formalism-External Physical Event"]
+        SYM["Pre-symbolic event `ε(M)` and Symbolization Operator `Λ`"]
+        BOUND["RCA boundary<br/>not mystical pure awareness and not a new physical interaction hidden behind measurement"]
+    end
+
+    BE1 -->|"source-lineage / analogy"| CAT
+    QM1 -->|"physical or operational support"| CAT
+    SYM -->|"formalizes"| CAT
+    CAT --> BOUND
+```
+
+---
+
+*Source: BIAN_index_SOT.md (BIAN-7), system_be_full.md (N_BE_00009), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00044-00047), framework/E4_pre_symbolic_stratum_postulate.md*

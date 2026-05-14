@@ -62,41 +62,21 @@ Trong QM tiêu chuẩn, $\rho \rightarrow \rho_{m}$ mô tả cập nhật trạn
 
 ---
 
-## 4. Core Characteristics / Các Đặc tính Cốt lõi
+## 4. Foundational Implications / Ý nghĩa Nền tảng
 
-### 4.1. Defining the Location of Validity / Định vị rõ Nguồn gốc Tính hợp lệ
-* **EN:** This category resolves the ancient philosophical question: *Where does validity reside?* In QM, the physical seed of validity lies in the intrinsic interaction (Phase 1), but the certified registration validity resides in the extrinsic verification network (Phase 2). Neither can stand alone.
-* **VN:** Phạm trù này giải quyết câu hỏi hàng thiên niên kỷ: *Tính hợp lệ nằm ở đâu?* Trong QM, mầm mống tính hợp lệ vật lý nằm ở tương tác nội tại (Pha 1), nhưng tính hợp lệ ghi nhận đã được xác thực nằm ở mạng lưới xác thực ngoại tại (Pha 2). Không có cái nào đứng một mình.
+BIAN-18 resolution: Dual-Phase Registration Certification / Formal Validity Location supplies the missing registration-layer category for standard QM updates the physical state but does not locate registration validity as intrinsic trigger, extrinsic certification, or both. Formalizing DPEC has three bounded implications:
 
-### 4.2. Eliminating Mathematical Naive Realism / Loại bỏ Chủ nghĩa Hiện thực Ngây thơ của Toán học
-* **EN:** Standard QM equations describe detector responses and physical state updates, but do not by themselves assign VVV-QMRF registration validity. DPEC adds a skeptical certification layer aligned with experimental cross-checking.
-* **VN:** Phương trình QM chuẩn mô tả detector response và cập nhật trạng thái vật lý, nhưng tự thân chưa gán tính hợp lệ ghi nhận theo VVV-QMRF. DPEC thêm một tầng xác thực hoài nghi, tương ứng với việc kiểm tra chéo trong thực nghiệm.
+1. It answers where measurement validity is located at the registration layer.
+2. It keeps intrinsic physical triggering and extrinsic certification distinct.
+3. It binds DPEC to REO without collapsing BIAN-18 into BIAN-12.
 
-### 4.3. Bridging Theory and Practice / Toán học hóa Thực hành Phòng thí nghiệm
-* **EN:** BIAN-18 identifies a gap between practical cross-checking (extrinsic verification) and the formal state-update description. This category adds that verification as a registration-certification layer alongside density matrix evolution.
-* **VN:** BIAN-18 chỉ ra khoảng cách giữa việc kiểm tra chéo trong thực hành (xác thực ngoại tại) và mô tả cập nhật trạng thái trong hình thức luận. Phạm trù này thêm hoạt động xác thực đó như một tầng xác thực ghi nhận bên cạnh tiến hóa ma trận mật độ.
+> **Conclusion:** Dual-Phase Registration Certification / Formal Validity Location resolves BIAN-18 only as a VVV-QMRF registration-layer category. It preserves the standard QM substrate while adding the missing K-side classification and validity boundary.
 
 ---
 
-## 5. Foundational Implications / Ý nghĩa Nền tảng
+## 5. RCA Concept Traceability Matrix / Bảng Truy vết RCA Khái niệm
 
-Formalizing *Dual-Phase Registration Certification* resolves structural gap BIAN-18:
-*(Việc đưa Dual-Phase Registration Certification vào QM giải quyết triệt để BIAN-18:)*
-
-1. **Registration Interface with BIAN-12:** It interfaces with the Retroactive Registration Override (BIAN-12). BIAN-18 provides the "Court System" (the 2-step verification process); if an error is found, this "Court" orders BIAN-12 to execute the verdict (Retroactive Invalidation).
-   *(Ghép nối hoàn hảo với BIAN-12: Cung cấp "Hệ thống Tòa án" (Quy trình xác thực 2 bước), để nếu có lỗi, "Tòa án" này sẽ ra lệnh cho BIAN-12 thực thi việc hủy án (Phủ quyết Hồi tố).)*
-
-2. **Modeling the Theory-Practice Interface:** It models the gap between Quantum Theory's physical update and Quantum Practice's extrinsic verification as a registration-layer structure. Quantum Measurement Registration becomes more explicit about where validity is certified.
-   *(Mô hình hóa giao diện Lý thuyết - Thực hành: Nó mô hình hóa khoảng cách giữa cập nhật vật lý trong lý thuyết lượng tử và xác thực ngoại tại trong thực hành như một cấu trúc tầng ghi nhận. Ghi nhận Đo lường Lượng tử nhờ đó rõ hơn về nơi tính hợp lệ được xác thực.)*
-
-> **Conclusion:** By establishing this category, VVV-QMRF separates the detector's intrinsic physical trigger (*Svataḥ*) from extrinsic registration certification (*Parataḥ*) through environmental correlations, cross-checks, or equivalent validation structures.
-> *(Kết luận: Với việc thiết lập phạm trù này, VVV-QMRF tách kích hoạt vật lý nội tại của máy đo (*Svataḥ*) khỏi xác thực ghi nhận ngoại tại (*Parataḥ*) thông qua tương quan môi trường, kiểm tra chéo, hoặc cấu trúc xác thực tương đương.)*
-
----
-
-## 6. RCA Concept Traceability Matrix / Bảng Truy vết RCA Khái niệm
-
-**Purpose / Mục đích:** This table records traceability for the main concepts used in this category. It combines concept-level mapping with claim anchors, RCA labels, and boundary notes so that direct SOT evidence is not confused with derived framework proposals.
+**Purpose / Mục đích:** This table records traceability for the main concepts used in this category. It separates direct SOT evidence, framework-derived proposals, QM-only support, and boundary-sensitive applications so that Dual-Phase Registration Certification / Formal Validity Location is not confused with ordinary canonical QM or with an unrestricted Buddhist equivalence.
 
 **RCA labels / Nhãn RCA:**
 - **Strong:** direct node/edge or SOT evidence exists.
@@ -109,43 +89,202 @@ Formalizing *Dual-Phase Registration Certification* resolves structural gap BIAN
 
 | Claim anchor | Concept | Evidence / Bằng chứng truy vết | Node code | Edge code | RCA label | Boundary / Fix note |
 |---|---|---|---|---|---|---|
-| §1 | Dual-Phase Registration Certification (DPEC) | E7 §3b defines “Category 04 formalism — DPEC” (`framework/E7_epistemic_validity_location_postulate.md` L68-L79). | — | — | Derived | Framework category; not a source-system node. |
-| §1 | Formal Validity Location | Mapping SOT T6.03 states that QM lacks a formal account of where measurement validity is located (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L790-L796). | — | — | No node | Treat as the BIAN-18 gap target, not as a node. |
-| Lineage | BIAN-18 → Category 04 → E7 | BIAN SOT confirms BIAN-18 is resolved by Category 04 + E7 (`gap/BIAN_index_SOT.md` L47, L74). | — | — | No node | Resolution path only; no dedicated BE/QM node. |
-| Context | Structural gap BIAN-18 | BIAN SOT: “Intrinsic vs Extrinsic Measurement Validity Location” (`gap/BIAN_index_SOT.md` L47). | — | — | No node | Gap label, not formal source-system concept. |
-| Context | QM lacks formal validity-location structure | Mapping SOT: QM does not formalize whether measurement validity is established by the measurement itself or by later verification (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L795-L796). | — | — | Strong | Strong gap evidence; it supports the need for DPEC, not every DPEC operator. |
-| §1, §3 | Svataḥ / Parataḥ prāmāṇya | Mapping SOT T6.03 names the debate and explicitly says there is no separate node (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L790-L792). | — | — | No node | BE debate equivalent, not a current node/edge. |
-| §1 | Dharmakīrti’s position | BE full system has Dharmakīrti as thinker and connects him to causal efficacy; no direct edge to svataḥ/parataḥ is defined (`SYSTEM_Buddhist_Epistemology/system_be_full.md` L72, L378-L379). | N_BE_00040 | ED_BE_00067 | Medium | Supports lineage and philosophical grounding, not a direct validity-location edge. |
-| §1, §3 | Extrinsic Certification Operator $\hat{C}_{ext}$ | E7 notation table defines `Ĉ_ext` as the extrinsic certification operator (`framework/E7_epistemic_validity_location_postulate.md` L104-L114). | — | — | Derived | Framework notation, not a source-system operator. |
-| §2-§3 | Two-phase split: intrinsic / extrinsic | E7 §3b defines Phase 1 and Phase 2 (`framework/E7_epistemic_validity_location_postulate.md` L70-L79). | — | — | Derived | Core DPEC formalism; not a canonical QM split. |
-| §2 | Singular quantum measurement event | QM full system defines Measurement (Physical Act) (`SYSTEM_Quantum_Measurement/system_qm_full.md` L56). | N_QM_00019 | ED_QM_00019, ED_QM_00020 | QM-only | QM support for the target event, not for two-phase certification. |
-| §2 | Instantaneous wave function collapse | QM full system defines Wavefunction Collapse (`SYSTEM_Quantum_Measurement/system_qm_full.md` L118). | N_QM_00081 | ED_QM_00015 | QM-only | Baseline contrast; not DPEC evidence by itself. |
-| §2-§3 | Intrinsic causal triggering / physical interaction | QM full system defines System–Meter Coupling (`SYSTEM_Quantum_Measurement/system_qm_full.md` L58); BE supports causal efficacy via Arthakriyā. | N_QM_00021; N_BE_00022 | ED_QM_00021, ED_QM_00024; ED_BE_00012 | Medium | Mixed QM/BE support; not full concept-node equivalence. |
-| §2-§3 | Extrinsic registration certification | E7 defines Phase 2 as `Ĉ_ext` acting on the conditionally updated state (`framework/E7_epistemic_validity_location_postulate.md` L75-L78). | — | — | Derived | Category 04 / E7 proposal. |
-| §2 | Validity status not generated by local click alone | Mapping SOT says QM lacks a formal account of measurement-validity location (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L795-L796). | — | — | Medium | Gap evidence supports skepticism about local-click sufficiency, not a complete proof. |
-| §3 | $\rho \rightarrow \rho_m$ / state update | QM full system defines Post-Measurement State Update and Density Matrix (`SYSTEM_Quantum_Measurement/system_qm_full.md` L59, L62). | N_QM_00022; N_QM_00025 | ED_QM_00025, ED_QM_00028 | QM-only | Supports state update only, not validity certification. |
-| §3 | “Immediately grants validity” | QM source supports state update, not registration validity certification. | N_QM_00022 | ED_QM_00025 | Overclaim | Publication-facing wording should be softened or bounded. |
-| §3 | Conditionally Updated State $\tilde{\rho}$ | E7 notation defines $\tilde{\rho}$; QM state update provides formal support (`framework/E7_epistemic_validity_location_postulate.md` L104-L109; `SYSTEM_Quantum_Measurement/system_qm_full.md` L59). | N_QM_00022 | ED_QM_00025 | Derived / QM-only | Derived state label built on QM state update. |
-| §3 | Arthakriyāśakti / causal efficacy | BE SOT defines Arthakriyā; BE SOT edges connect it to essential relation and particularity (`SYSTEM_Buddhist_Epistemology/system_be_full.md` L58, L328, L348). | N_BE_00022 | ED_BE_00012, ED_BE_00032 | Strong | Strong BE anchor for intrinsic efficacy. |
-| §3 | Pramāṇa / valid cognition | BE SOT defines Pramāṇa; BE SOT edges define its relation to perception, inference, object, and result (`SYSTEM_Buddhist_Epistemology/system_be_full.md` L37, L317-L320). | N_BE_00001 | ED_BE_00001-ED_BE_00004 | Strong | Strong BE anchor for validity/certification language. |
-| §3 | Environmental correlations | QM full system defines Decoherence & Environment as Measurement; QM edge links unselective measurement to decoherence (`SYSTEM_Quantum_Measurement/system_qm_full.md` L132, L192). | N_QM_00095 | ED_QM_00041 | QM-only | Supports extrinsic correlation network, not certification by itself. |
-| §3 | Cross-measurements / subsequent verification | Mapping SOT names cross-checks, calibration, repetition, and statistical analysis as experimental practice (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L795). | — | — | Medium | Practice-level support; no dedicated node. |
-| §3 | Stabilizer codes | Closest indexed QM support is Continuous Quantum Error Correction (`SYSTEM_Quantum_Measurement/system_qm_full.md` L142, L270-L271). | N_QM_00105 | ED_QM_00119, ED_QM_00120 | QM-only | Related technical support, not identical to DPEC certification. |
-| §3 | $\rho_{certified}$ / validated registration state | E7 notation defines $\rho_{certified}$ (`framework/E7_epistemic_validity_location_postulate.md` L104-L110). | — | — | Derived | Framework state label, not source-system node. |
-| §3, §5 | REO / BIAN-12 | BIAN SOT defines BIAN-12 and its Category 03 + E8 resolution (`gap/BIAN_index_SOT.md` L41, L68). | — | — | No node | Related invalidation interface, not root evidence for BIAN-18. |
-| §3, §5 | Bādhaka pramāṇa / invalidating cognition | Mapping SOT T4.04 says bādhaka pramāṇa has no separate node and defines it as subsequent valid cognition that invalidates prior cognition in the BE source system (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L547-L553). | — | — | No node | Supports invalidation logic; no direct node/edge. |
-| §4.1 | Location of validity | Mapping SOT T6.03 is the direct evidence for validity location (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L790-L796). | — | — | No node | Validity-location issue is real, but node-less. |
-| §4.2 | Local-click sufficiency critique / treating detector response as already valid registration | SOT supports absence of explicit validity-location formalism, not a broad criticism of Standard QM (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L795-L796). | — | — | Overclaim | Keep as a bounded VVV-QMRF critique unless independently justified. |
-| §4.3 | Theory-practice gap: extrinsic verification outside equations | Mapping SOT explicitly names cross-checks, calibration runs, repetition, and statistical analysis as practice not integrated into formalism (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L795). | — | — | Strong | Strong gap evidence for the category’s motivation. |
-| §5 | DPEC resolves BIAN-18 | BIAN SOT Resolution Registry confirms Category 04 + E7 (`gap/BIAN_index_SOT.md` L74). | — | — | Strong | Strong resolution evidence inside VVV-QMRF. |
-| §5 | BIAN-18 interface with BIAN-12 | E7 §3d connects validity location to Retroactive Override when bādhaka is detected (`framework/E7_epistemic_validity_location_postulate.md` L89-L98). | — | — | Medium | Interface relation, not identity between BIAN-18 and BIAN-12. |
-| §5 | Closing theory-practice schism | Supported only as BIAN-18 gap closure, not as total logical completion (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L795-L796). | — | — | Medium / Overclaim | Keep as framework ambition, not proven total completion. |
-| Conclusion | Detector intrinsic trigger; extrinsic network certification | Intrinsic/extrinsic validity has SOT support; detector/environment parts have QM support (`mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md` L794-L796; `SYSTEM_Quantum_Measurement/system_qm_full.md` L56, L132). | N_QM_00019; N_QM_00095 | ED_QM_00019; ED_QM_00041 | Medium | Restates DPEC split; direct node support covers only the physical pieces. |
+| §1-§2 | BIAN-18 / gap diagnosis | BIAN SOT resolves this gap through Category 04 + E7. | —; support: N_BE_00001, N_BE_00022, N_BE_00040 | ED_BE_00012; ED_BE_00156 | Strong / No node | Gap diagnosis is not by itself an empirical proof; it identifies the missing registration category. |
+| §1-§2 | Dual-Phase Registration Certification / Formal Validity Location | VVV-QM RCA assigns the category support in node_QM_VVV. | N_QM_VVV_00011; N_QM_VVV_00012; N_QM_VVV_00013; N_QM_VVV_00014; N_QM_VVV_00015; N_QM_VVV_00016; N_QM_VVV_00018 | — | Derived | Framework category; not a canonical QM postulate unless independently validated. |
+| §1 | BE source analogue | *Svataḥ / Parataḥ prāmāṇya* source debate; node-less in the current BE SOT | —; support: N_BE_00001, N_BE_00022, N_BE_00040 | ED_BE_00012; ED_BE_00156 | Medium | Source lineage or analogy; do not collapse BE ontology into QM physics. |
+| §2-§3 | QM substrate | measurement act, system-meter coupling, post-measurement state update, density matrix, decoherence/environment correlations | N_QM_00019; N_QM_00021; N_QM_00022; N_QM_00025; N_QM_00095 | ED_QM_00019; ED_QM_00021; ED_QM_00025; ED_QM_00028; ED_QM_00041 | QM-only | Canonical QM supports the physical substrate, not the whole VVV-QMRF category. |
+| §3 | Formal symbol / operator | Extrinsic Certification Operator `Ĉ_ext` | N_QM_VVV_00011; N_QM_VVV_00012; N_QM_VVV_00013; N_QM_VVV_00014; N_QM_VVV_00015; N_QM_VVV_00016; N_QM_VVV_00018 | — | Derived | Framework notation; do not cite as a source-system operator. |
+| §4 | Category implication | Separate provisional intrinsic triggering from extrinsic registration certification and route contradiction to REO when certification fails. | N_QM_VVV_00011; N_QM_VVV_00012; N_QM_VVV_00013; N_QM_VVV_00014; N_QM_VVV_00015; N_QM_VVV_00016; N_QM_VVV_00018 | — | Medium | Valid only within the stated registration-layer boundary. |
+| §4 | Overclaim risk | not a claim that every laboratory cross-check is already a new physical law, and not a replacement for density-matrix evolution | — | — | Overclaim | Keep wording conditional and registration-layer specific. |
 
-### 6.1. RCA Summary / Tóm tắt RCA
+### 5.1. RCA Summary / Tóm tắt RCA
 
-1. **BIAN-18 is structurally correct but node-less.** The SOT identifies BIAN-18 as “Intrinsic vs Extrinsic Measurement Validity Location” and explicitly gives no BE node or edge.
-2. **The strongest BE anchors are supporting concepts, not BIAN-18 itself:** Pramāṇa (`N_BE_00001`) and Arthakriyā (`N_BE_00022`) support the formalization but do not convert BIAN-18 into a node-based mapping.
-3. **$\hat{C}_{ext}$, $\tilde{\rho}$, and $\rho_{certified}$ are framework-derived operators/states.** They are valid within Category 04 / E7 but should not be cited as source-system nodes.
-4. **BIAN-12 is a related invalidation interface, not the root evidence for BIAN-18.** BIAN-18 asks where measurement validity is located; BIAN-12 handles later invalidation when contradiction appears.
-5. **Rhetorical claims have been bounded as interpretation.** Any strong wording about validity, certification, or completeness should be read as framework interpretation unless directly supported by node/edge evidence.
+1. **BIAN-18 is a structural gap, not a direct physical discovery.** The gap identifies missing registration architecture.
+2. **The BE source is bounded.** *Svataḥ / Parataḥ prāmāṇya* source debate; node-less in the current BE SOT anchors the analogy or source lineage, but does not automatically become a QM mechanism.
+3. **The QM substrate is real but insufficient.** measurement act, system-meter coupling, post-measurement state update, density matrix, decoherence/environment correlations provides support, while Dual-Phase Registration Certification / Formal Validity Location names the added K-side layer.
+4. **The VVV node(s) are derived.** N_QM_VVV_00011; N_QM_VVV_00012; N_QM_VVV_00013; N_QM_VVV_00014; N_QM_VVV_00015; N_QM_VVV_00016; N_QM_VVV_00018 belong to the framework proposal and should be labeled as derived unless later validated.
+5. **Boundary control is mandatory.** The main overclaim to avoid is: not a claim that every laboratory cross-check is already a new physical law, and not a replacement for density-matrix evolution.
+
+### 5.2. RCA Five-Step Analysis / Phân tích RCA 5 bước
+
+#### 5.2.1 Define — observed issue / Xác định vấn đề
+
+**Symptom:** The old formulation can make Dual-Phase Registration Certification / Formal Validity Location look like either ordinary QM vocabulary or a direct Buddhist-QM equivalence.
+
+**Cause:** The category document did not fully separate BE source support, canonical QM substrate, VVV-QMRF derived formalism, and boundary-sensitive claims.
+
+#### 5.2.2 Trace — 5 Whys / Truy nguyên 5 lần hỏi “vì sao”
+
+1. **Why does the ambiguity appear?** Because the same words describe source analogy, physical measurement support, and framework proposal.
+2. **Why is that a schema problem?** Because older category files lacked a complete RCA matrix and assertion-boundary section.
+3. **Why can this create overclaim?** Because a derived registration category may be read as a canonical QM postulate or as a literal BE equivalence.
+4. **Why is traceability required?** Because each claim needs a node/edge, QM substrate, or explicit `No node` status.
+5. **Why does Category 04 exist?** Because BIAN-18 isolates a registration-layer gap: standard QM updates the physical state but does not locate registration validity as intrinsic trigger, extrinsic certification, or both.
+
+#### 5.2.3 Isolate — root cause / Cô lập nguyên nhân gốc
+
+**Root cause:** The document needed explicit schema-level separation between source-system evidence, QM support, VVV-derived notation, and boundary conditions.
+
+#### 5.2.4 Fix — corrected formulation / Sửa đúng nguyên nhân
+
+Use this bounded formulation when precision is required:
+
+```text
+Dual-Phase Registration Certification / Formal Validity Location = a VVV-QMRF registration-layer category for BIAN-18.
+BE source: *Svataḥ / Parataḥ prāmāṇya* source debate; node-less in the current BE SOT.
+QM substrate: measurement act, system-meter coupling, post-measurement state update, density matrix, decoherence/environment correlations.
+VVV formalism: Extrinsic Certification Operator `Ĉ_ext` / N_QM_VVV_00011; N_QM_VVV_00012; N_QM_VVV_00013; N_QM_VVV_00014; N_QM_VVV_00015; N_QM_VVV_00016; N_QM_VVV_00018.
+Boundary: not a claim that every laboratory cross-check is already a new physical law, and not a replacement for density-matrix evolution.
+```
+
+#### 5.2.5 Verify — root cause removed / Kiểm chứng đã loại bỏ nguyên nhân gốc
+
+The ambiguity is removed if every use of Category 04 distinguishes:
+
+```text
+BE source analogue = *Svataḥ / Parataḥ prāmāṇya* source debate; node-less in the current BE SOT.
+QM substrate = measurement act, system-meter coupling, post-measurement state update, density matrix, decoherence/environment correlations.
+VVV-QMRF category = Dual-Phase Registration Certification / Formal Validity Location.
+Formal symbol = Extrinsic Certification Operator `Ĉ_ext`.
+Boundary = not a claim that every laboratory cross-check is already a new physical law, and not a replacement for density-matrix evolution.
+```
+
+### 5.3. Gap Type Classification / Phân loại Loại Khoảng trống
+
+| Gap aspect | Classification | RCA note |
+|---|---|---|
+| Source gap | **BIAN-18** | Standard qm updates the physical state but does not locate registration validity as intrinsic trigger, extrinsic certification, or both. |
+| Gap type | **Measurement-validity location gap** | The missing piece is a registration-category distinction, not merely a prettier sentence. |
+| Resolution type | **Category + framework postulate** | Category 04 supplies the detailed category; E7 installs it into VVV-QMRF architecture. |
+| Why not only canonical QM? | Canonical QM supports the substrate but not the K-side classification. | Use QM nodes as support, not as proof that the category already exists in standard QM. |
+| Boundary | **derived two-phase validity-location category** | Keep labels such as Derived, Medium, No node, or QM-only visible in publication-facing prose. |
+
+### 5.4. Prototype DPEC Instance / Trường hợp Mẫu của DPEC
+
+```text
+Prototype DPEC instance:
+
+  Setup: detector interaction produces a conditionally updated state.
+  Event: intrinsic causal trigger gives provisional registration status.
+  Gate: `Ĉ_ext` checks environmental correlations, repetition, or equivalent verification.
+  Update: successful certification upgrades the state to certified registration status.
+  Contrast: contradiction routes to Category 03 / E8 instead of automatic validity.
+
+  → DPEC instance confirmed only within its boundary.
+```
+
+**RCA boundary:** The prototype is valid only when the stated source support, QM substrate, and registration-validity conditions are all kept distinct.
+
+### 5.5. Layer Architecture Position / Vị trí trong Kiến trúc Tầng
+
+```text
+gap/BIAN-18
+  ↓ diagnoses missing registration structure
+category/Category 04 — Dual-Phase Registration Certification / Formal Validity Location
+  ↓ specifies detailed category and boundary conditions
+framework/E7
+  ↓ installs the rule into VVV-QMRF postulate architecture
+VVV-QMRF registration-state update layer
+  ↓ applies the category without replacing canonical QM physics
+```
+
+| Layer | Document / component | Role |
+|---|---|---|
+| Gap | BIAN-18 | Diagnoses the missing registration distinction. |
+| Category | Category 04 | Defines the detailed registration category. |
+| Framework | E7 | Promotes the category into postulate-level architecture. |
+| BE source | *Svataḥ / Parataḥ prāmāṇya* source debate; node-less in the current BE SOT | Supplies source-lineage or analogy under RCA boundary. |
+| QM substrate | measurement act, system-meter coupling, post-measurement state update, density matrix, decoherence/environment correlations | Supplies physical or operational support only. |
+
+---
+
+## 6. Assertion Level / Mức Khẳng định
+
+| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+|---|---|---|---|
+| BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | —; support: N_BE_00001, N_BE_00022, N_BE_00040; ED_BE_00012; ED_BE_00156. |
+| QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00019; N_QM_00021; N_QM_00022; N_QM_00025; N_QM_00095; ED_QM_00019; ED_QM_00021; ED_QM_00025; ED_QM_00028; ED_QM_00041. |
+| Dual-Phase Registration Certification / Formal Validity Location is a VVV-QMRF category | Sự Xác thực Ghi nhận Kép / Định vị Tính hợp lệ Chính thức là phạm trù VVV-QMRF | **D** — framework-derived | N_QM_VVV_00011; N_QM_VVV_00012; N_QM_VVV_00013; N_QM_VVV_00014; N_QM_VVV_00015; N_QM_VVV_00016; N_QM_VVV_00018; E7. |
+| Extrinsic Certification Operator `Ĉ_ext` formalizes the category | Extrinsic Certification Operator `Ĉ_ext` hình thức hóa phạm trù | **D** — notation-derived | Framework notation, not a canonical source-system operator. |
+| The category resolves BIAN-18 | Phạm trù giải quyết BIAN-18 | **D / M** — bounded resolution | Resolution holds at registration-layer architecture level. |
+| Boundary-free reading of the category | Cách đọc không ranh giới về phạm trù | **O** — overclaim | not a claim that every laboratory cross-check is already a new physical law, and not a replacement for density-matrix evolution. |
+
+**Summary / Tóm tắt:** The category is traceable as a VVV-QMRF registration-layer proposal. Its BE source and QM substrate support the architecture, but neither should be overstated as a direct one-to-one physical equivalence.
+
+---
+
+## 7. What Category 04 / E7 Does NOT Claim / Những gì Category 04 / E7 KHÔNG tuyên bố
+
+1. **Not a canonical QM replacement** — Dual-Phase Registration Certification / Formal Validity Location is a VVV-QMRF registration-layer proposal built beside standard QM support.
+   *Không thay thế QM chuẩn; đây là tầng ghi nhận VVV-QMRF đặt bên cạnh nền vật lý QM.*
+
+2. **Not unrestricted equivalence with the BE source** — *Svataḥ / Parataḥ prāmāṇya* source debate; node-less in the current BE SOT supplies source-lineage or analogy only within the stated boundary.
+   *Không đồng nhất vô điều kiện với nguồn BE; nguồn BE chỉ làm mô hình nguồn hoặc phép tương tự có ranh giới.*
+
+3. **Not boundary-free application** — not a claim that every laboratory cross-check is already a new physical law, and not a replacement for density-matrix evolution.
+   *Không áp dụng tự do ngoài điều kiện hợp lệ đã nêu.*
+
+4. **Not a detector-engineering shortcut** — validity still depends on calibration, context, and the relevant E10-style gate where applicable.
+   *Không bỏ qua hiệu chuẩn, bối cảnh, hoặc cổng hợp lệ kiểu E10 khi cần.*
+
+5. **Not an empirical proof of a new physical mechanism** — the category remains derived unless formal predictions and tests are supplied.
+   *Chưa phải bằng chứng thực nghiệm cho cơ chế vật lý mới nếu chưa có dự đoán và kiểm nghiệm.*
+
+6. **Not human-consciousness dependence** — registration-state update is a K-side framework term broader than human cognition.
+   *Không phụ thuộc ý thức con người; cập nhật trạng thái ghi nhận là thuật ngữ tầng K rộng hơn cognition của người.*
+
+---
+
+## 8. Vietnamese Explanation / Giải thích tiếng Việt rõ ràng
+
+Nói đơn giản, Category 04 / E7 xử lý câu hỏi:
+
+```text
+Trong trường hợp này, cái gì thật sự được ghi nhận ở tầng K,
+và điều kiện nào làm cho ghi nhận đó hợp lệ?
+```
+
+Câu trả lời của VVV-QMRF là:
+
+```text
+Một detector click có thể là mầm hợp lệ, nhưng chưa nhất thiết là ghi nhận đã được xác thực. Category 04 chia việc này thành hai pha: kích hoạt nội tại và xác thực ngoại tại.
+```
+
+Ranh giới cần nhớ:
+
+```text
+BE source không tự động trở thành cơ chế vật lý QM.
+QM substrate không tự động chứa toàn bộ category VVV-QMRF.
+VVV-QMRF thêm tầng registration-state update / cập nhật trạng thái ghi nhận.
+Nếu thiếu điều kiện hợp lệ, claim phải bị hạ xuống Medium, Derived, No node, hoặc Overclaim.
+```
+
+---
+
+## 9. Mermaid Diagram Map / Sơ đồ Mermaid
+
+```mermaid
+flowchart TD
+    subgraph BE["Buddhist Epistemology source layer"]
+        BE1["*Svataḥ / Parataḥ prāmāṇya* source debate; node-less in the current BE SOT"]
+    end
+
+    subgraph QM["Standard Quantum Measurement substrate"]
+        QM1["measurement act, system-meter coupling, post-measurement state update, density matrix, decoherence/environment correlations"]
+    end
+
+    subgraph VVV["VVV-QMRF Registration Layer"]
+        CAT["Category 04 / E7<br/>Dual-Phase Registration Certification / Formal Validity Location"]
+        SYM["Extrinsic Certification Operator `Ĉ_ext`"]
+        BOUND["RCA boundary<br/>not a claim that every laboratory cross-check is already a new physical law, and not a replacement for density-matrix evolution"]
+    end
+
+    BE1 -->|"source-lineage / analogy"| CAT
+    QM1 -->|"physical or operational support"| CAT
+    SYM -->|"formalizes"| CAT
+    CAT --> BOUND
+```
+
+---
+
+*Source: BIAN_index_SOT.md (BIAN-18), system_be_full.md (Pramāṇa and Arthakriyā support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00011-00018), framework/E7_epistemic_validity_location_postulate.md*

@@ -54,44 +54,21 @@ Trong khi phép đo lượng tử truyền thống (PVM) hoạt động theo ngu
 
 ---
 
-## 4. Core Characteristics / Các Đặc tính Cốt lõi
+## 4. Foundational Implications / Ý nghĩa Nền tảng
 
-To be recognized as an independent registration-layer category with authority comparable to traditional measurement, it exhibits three fundamental characteristics:
-*(Để được công nhận là một phạm trù tầng ghi nhận độc lập có thẩm quyền tương đương phép đo truyền thống, nó mang 3 đặc tính cơ bản:)*
+BIAN-15 resolution: Purely Contrastive Evidence / Interaction-Free State Inference (IFSI) supplies the missing registration-layer category for standard QM has null measurement and state update, but no category that makes controlled non-click evidence a registration-authoritative inference class. Formalizing IFSI has three bounded implications:
 
-### 4.1. Information without Disturbance / Thông tin không nhiễu loạn
-* **EN:** In idealized interaction-free cases, it separates registration information from direct energy transfer at the queried path. The zero-intervention claim is a bounded registration-layer interpretation, not a general replacement for information-disturbance limits.
-* **VN:** Trong các trường hợp phi tương tác lý tưởng, nó tách thông tin ghi nhận khỏi trao đổi năng lượng trực tiếp tại nhánh được hỏi. Mệnh đề can thiệp bằng không là diễn giải có giới hạn ở tầng ghi nhận, không thay thế các giới hạn thông tin-nhiễu loạn nói chung.
+1. It raises controlled non-click evidence to a registration-layer category rather than treating it as mere absence of data.
+2. It keeps `P_null` as framework notation built on ordinary projection and null-measurement support.
+3. It requires a negative-control distinction between informative silence and broken-detector silence.
 
-### 4.2. Causality of Counterfactuals / Tính nhân quả của sự kiện không xảy ra
-* **EN:** The value of the evidence relies on "what would have happened but did not". Its registration weight supports a VVV-QMRF reading in which unactualized possibilities (empty branches) retain evidential force under controlled conditions.
-* **VN:** Giá trị của bằng chứng dựa vào "những gì lẽ ra đã xảy ra nhưng không xảy ra". Sức nặng ghi nhận của nó hỗ trợ cách đọc VVV-QMRF rằng các khả năng chưa thành hiện thực (empty branches) có lực chứng cứ trong điều kiện được kiểm soát.
-
-### 4.3. Exclusion-Based Registration (BE source: Apoha) as a Practical Operator / Loại trừ như một Toán tử thực tế
-* **EN:** Using Apoha as the BE source for exclusion, this registration category treats the "non-detection" at detector A as a valid registration-side cut to constrain the inferred state at detector B.
-* **VN:** Tương tự lý thuyết Apoha của Dharmakirti (định nghĩa sự vật bằng việc loại trừ những gì không phải nó), phạm trù này coi sự "không-đo-được" ở detector A là một nhát cắt toán học hợp lệ để định hình thực tại ở B.
+> **Conclusion:** Purely Contrastive Evidence / Interaction-Free State Inference (IFSI) resolves BIAN-15 only as a VVV-QMRF registration-layer category. It preserves the standard QM substrate while adding the missing K-side classification and validity boundary.
 
 ---
 
-## 5. Foundational Implications / Ý nghĩa Nền tảng
+## 5. RCA Concept Traceability Matrix / Bảng Truy vết RCA Khái niệm
 
-Formalizing this category bridges the structural gap (BIAN-15) and strengthens QM's foundations:
-*(Việc chính thức hóa phạm trù này giúp giải quyết khoảng trống cấu trúc BIAN-15 và củng cố nền tảng Lượng tử:)*
-
-1. **Elevating Interaction-Free Measurement:** It directly legitimizes the **Elitzur-Vaidman interaction-free measurement** from merely an "interesting paradox/effect" to a standard **valid registration status (BE source: Pramāṇa)**.
-   *(Nâng tầm Phép đo Phi tương tác: Trực tiếp hợp thức hóa thí nghiệm Elitzur-Vaidman từ vị thế chỉ là một "nghịch lý thú vị" trở thành một trạng thái ghi nhận hợp lệ chuẩn mực.)*
-
-2. **Differentiating Null Events:** It clearly separates a "Broken Detector" (*Asiddha hetvaabaasa* - inferential error due to missing signal) from an "Informative Silence" (*Kevalavyatirekin*). Both are Null Events, but one is registration-layer noise/error, and the other is pure registration evidence.
-   *(Phân biệt các Sự kiện Rỗng: Tách biệt rõ ràng giữa "Máy dò hỏng" (lỗi suy luận do không có tín hiệu) với "Sự im lặng mang thông tin". Cả hai đều là Null Event, nhưng một cái là nhiễu/lỗi ở lớp ghi nhận, một cái là bằng chứng ghi nhận thuần túy.)*
-
-> **Conclusion:** Within VVV-QMRF, *Contrapositive Quantum Evidence - registration* names the registration-layer category in which controlled null results carry positive evidential authority, closing a framework gap traced to *Kevalavyatirekin*.
-> *(Kết luận: Trong VVV-QMRF, Bằng chứng Lượng tử Thuần Loại trừ - registration gọi tên phạm trù tầng ghi nhận trong đó kết quả rỗng có kiểm soát mang thẩm quyền chứng cứ dương tính, khép lại một khoảng trống framework được truy về Kevalavyatirekin.)*
-
----
-
-## 6. RCA Concept Traceability Matrix / Bảng Truy vết RCA Khái niệm
-
-**Purpose / Mục đích:** This table records traceability for the main concepts used in this category. It combines concept-level mapping with claim anchors, RCA labels, and boundary notes so that direct SOT evidence is not confused with derived framework proposals.
+**Purpose / Mục đích:** This table records traceability for the main concepts used in this category. It separates direct SOT evidence, framework-derived proposals, QM-only support, and boundary-sensitive applications so that Purely Contrastive Evidence / Interaction-Free State Inference (IFSI) is not confused with ordinary canonical QM or with an unrestricted Buddhist equivalence.
 
 **RCA labels / Nhãn RCA:**
 - **Strong:** direct node/edge or SOT evidence exists.
@@ -104,32 +81,202 @@ Formalizing this category bridges the structural gap (BIAN-15) and strengthens Q
 
 | Claim anchor | Concept | Evidence / Bằng chứng truy vết | Node code | Edge code | RCA label | Boundary / Fix note |
 |---|---|---|---|---|---|---|
-| §1-§2 | BIAN-15 / Purely Contrastive Quantum Evidence Structure | BIAN SOT identifies BIAN-15 as *kevalavyatirekin*, resolved by Category 01 + E11, with no node. | — | — | No node | Treat as a structural gap/category, not a source-system node. |
-| §1 | Contrapositive Quantum Evidence | Category 01 lineage: gap/BIAN-15 → category/Category 01 → framework/E11. | — | — | Derived | Framework category; BIAN-15 is resolved without a direct node or edge. |
-| §1 | Purely Contrastive Evidence / IFSI | E11 defines IFSI as the framework category for interaction-free state inference. | — | — | Derived | Class D proposal, not a canonical QM category. |
-| §1, §3 | Kevalavyatirekin | Buddhist logic equivalent for the BIAN-15 category; E11 records no dedicated node in the 263-node BE system. | — | — | No node | BE equivalent category, not a current node/edge. |
-| §3 | Contrapositive logic / negative concomitance | Closest BE support is *Vipakṣe asattvam*, the third condition of *Trairūpya*, requiring absence in dissimilar cases. | N_BE_00213 → N_BE_00018 | ED_BE_00110 | Medium | Support via BIAN-14; not a direct BIAN-15 node. |
-| §3 | Null event / detector does not click | QM system defines No-Result Measurement as a detector non-click that still brings information and updates the state. | N_QM_00033 | ED_QM_00039 | Strong | Direct QM support for the null event, not for the whole category. |
-| §3 | No-Result Measurement / Null Measurement | Null Measurement produces Partial Wavefunction Collapse without detector click. | N_QM_00033 → N_QM_00032 | ED_QM_00039 | Strong | Mechanism support; not identical to IFSI. |
-| §3, §4.3 | Anupalabdhi / Non-perception | BE SOT maps formal cognition of absence to Null Measurement. | N_BE_00253 | ED_BE_00116 | Strong | Strong BE support via BIAN-9. |
-| §4.3 | Abhāva / Absence | Dharmakīrti's Anupalabdhi replaces realist absence theory with an registration-layer account. | N_BE_00253 → N_BE_00151 | ED_BE_00116 | Strong | Absence is BE epistemological support, not a QM node. |
-| §5.2 | Informative silence | Supported by the combination of Null Measurement and Anupalabdhi: silence functions as evidence only when the measurement context is valid. | N_QM_00033; N_BE_00253 | ED_QM_00039; ED_BE_00116 | Medium | Valid only under a controlled measurement context; not every silence is evidence. |
-| §5.2 | Broken Detector / inferential error | Category-level contrast with informative silence; no dedicated BE node for *Asiddha hetvābhāsa* is present in the current BE system. | — | — | No node | Needs a formal node if promoted beyond contrastive explanation. |
-| §4.3 | Apoha / Exclusion | BE system defines Apoha as meaning by exclusion; used here as an analogy for exclusion-based evidence. | N_BE_00015 | ED_BE_00057 | Medium | Analogy for exclusion-based evidence; not direct QM equivalence. |
-| §3 | Projective Measurement / PVM | QM system defines PVM as textbook measurement represented by projection operators and state collapse. | N_QM_00014 | ED_QM_00012; ED_QM_00013; ED_QM_00014; ED_QM_00015 | QM-only | Baseline contrast, not BIAN-15 evidence by itself. |
-| §1, §3 | Projection Operator | QM system defines projection operators for standard PVM; P_null is only a proposed adaptation. | N_QM_00018 | ED_QM_00012; ED_QM_00018 | QM-only | Base operator only; P_null remains derived. |
-| §1 | Null-Projection Operator - registration P_null | E11 proposes P_null as a framework notation for collapse by null detection and exclusion. | —; support: N_QM_00018 | —; support: ED_QM_00012 | Derived | Framework notation, not a source-system operator. |
-| §3 | Post-Measurement State Update / registration-state update | QM system defines post-measurement update; QBism interprets update as quantum Bayesian updating. | N_QM_00022; N_QM_00034 | ED_QM_00014; ED_QM_00025; ED_QM_00040 | QM-only | “Registration-state update” is the VVV-QMRF K-side term; QM sources support state update only. |
-| §3, §4 | Partial Wavefunction Collapse | QM system defines partial collapse in weak/generalized measurement; Null Measurement produces it. | N_QM_00032 | ED_QM_00038; ED_QM_00039 | QM-only | Mechanism support, not direct category equivalence. |
-| §4.1 | Information without disturbance | Supported generally by information-disturbance trade-off, but the stronger claim of maximum information with zero disturbance requires idealized conditions. | N_QM_00027 | ED_QM_00026; ED_QM_00034; ED_QM_00073 | Medium / Overclaim | Zero-disturbance and maximum-information wording require idealized boundary conditions. |
-| §3 | Superposition structure | QM system defines superposition as the wave-function structure enabling interference and branch alternatives. | N_QM_00005 | — | QM-only | Enables branch alternatives; no edge is listed here. |
-| §5.1 | Elitzur-Vaidman interaction-free measurement | E11 treats it as external experimental grounding for IFSI; it is not a node in the current QM system table. | — | — | External | Experimental grounding; no current system node. |
-| §4.2 | Counterfactual / empty-branch evidential power | Category-level interpretation that unactualized alternatives can carry evidential force; no direct SOT node or edge currently exists. | — | — | Overclaim | Interpretive until a formal node/edge or bounded claim is added. |
+| §1-§2 | BIAN-15 / gap diagnosis | BIAN SOT resolves this gap through Category 01 + E11. | —; support: N_BE_00213, N_BE_00018, N_BE_00253, N_BE_00015 | ED_BE_00110; ED_BE_00116; ED_BE_00057 | Strong / No node | Gap diagnosis is not by itself an empirical proof; it identifies the missing registration category. |
+| §1-§2 | Purely Contrastive Evidence / Interaction-Free State Inference (IFSI) | VVV-QM RCA assigns the category support in node_QM_VVV. | N_QM_VVV_00001; N_QM_VVV_00002; N_QM_VVV_00003; support: N_QM_VVV_00004, N_QM_VVV_00005 | — | Derived | Framework category; not a canonical QM postulate unless independently validated. |
+| §1 | BE source analogue | *Kevalavyatirekin* as source analogue; node-less in the current BE SOT | —; support: N_BE_00213, N_BE_00018, N_BE_00253, N_BE_00015 | ED_BE_00110; ED_BE_00116; ED_BE_00057 | Medium | Source lineage or analogy; do not collapse BE ontology into QM physics. |
+| §2-§3 | QM substrate | No-result measurement, partial collapse, projection support, post-measurement update | N_QM_00033; N_QM_00032; N_QM_00018; N_QM_00022 | ED_QM_00039; ED_QM_00012; ED_QM_00014; ED_QM_00025 | QM-only | Canonical QM supports the physical substrate, not the whole VVV-QMRF category. |
+| §3 | Formal symbol / operator | Null-Projection Operator `P_null` | N_QM_VVV_00001; N_QM_VVV_00002; N_QM_VVV_00003; support: N_QM_VVV_00004, N_QM_VVV_00005 | — | Derived | Framework notation; do not cite as a source-system operator. |
+| §4 | Category implication | Treat controlled non-click evidence as IFSI only when the counterfactual detector condition is valid and broken-detector silence is ruled out. | N_QM_VVV_00001; N_QM_VVV_00002; N_QM_VVV_00003; support: N_QM_VVV_00004, N_QM_VVV_00005 | — | Medium | Valid only within the stated registration-layer boundary. |
+| §4 | Overclaim risk | not every no-click event is interaction-free evidence, and not every null result proves the inferred alternative with no boundary conditions | — | — | Overclaim | Keep wording conditional and registration-layer specific. |
 
-### 6.1. RCA Summary / Tóm tắt RCA
+### 5.1. RCA Summary / Tóm tắt RCA
 
-1. **BIAN-15 is structurally valid but node-less.** The SOT resolves it through Category 01 + E11, not through a dedicated BE/QM node.
-2. **The strongest anchors are supporting concepts, not the BIAN-15 category itself:** Null Measurement, Anupalabdhi, Abhāva, Projection Operator, and post-measurement state update support the framework but do not become BIAN-15.
-3. **IFSI and P_null are framework-derived terms.** They should be cited as Category 01 / E11 proposals, not as canonical source-system nodes.
-4. **Claims about zero disturbance and counterfactual causal force need boundaries.** They are useful as VVV-QMRF registration-layer interpretations, but the traceable evidence supports them only under idealized or derived conditions.
-5. **Broken Detector vs Informative Silence is a valid distinction, but node-less.** It should remain explanatory unless promoted into the formal node/edge system.
+1. **BIAN-15 is a structural gap, not a direct physical discovery.** The gap identifies missing registration architecture.
+2. **The BE source is bounded.** *Kevalavyatirekin* as source analogue; node-less in the current BE SOT anchors the analogy or source lineage, but does not automatically become a QM mechanism.
+3. **The QM substrate is real but insufficient.** No-result measurement, partial collapse, projection support, post-measurement update provides support, while Purely Contrastive Evidence / Interaction-Free State Inference (IFSI) names the added K-side layer.
+4. **The VVV node(s) are derived.** N_QM_VVV_00001; N_QM_VVV_00002; N_QM_VVV_00003; support: N_QM_VVV_00004, N_QM_VVV_00005 belong to the framework proposal and should be labeled as derived unless later validated.
+5. **Boundary control is mandatory.** The main overclaim to avoid is: not every no-click event is interaction-free evidence, and not every null result proves the inferred alternative with no boundary conditions.
+
+### 5.2. RCA Five-Step Analysis / Phân tích RCA 5 bước
+
+#### 5.2.1 Define — observed issue / Xác định vấn đề
+
+**Symptom:** The old formulation can make Purely Contrastive Evidence / Interaction-Free State Inference (IFSI) look like either ordinary QM vocabulary or a direct Buddhist-QM equivalence.
+
+**Cause:** The category document did not fully separate BE source support, canonical QM substrate, VVV-QMRF derived formalism, and boundary-sensitive claims.
+
+#### 5.2.2 Trace — 5 Whys / Truy nguyên 5 lần hỏi “vì sao”
+
+1. **Why does the ambiguity appear?** Because the same words describe source analogy, physical measurement support, and framework proposal.
+2. **Why is that a schema problem?** Because older category files lacked a complete RCA matrix and assertion-boundary section.
+3. **Why can this create overclaim?** Because a derived registration category may be read as a canonical QM postulate or as a literal BE equivalence.
+4. **Why is traceability required?** Because each claim needs a node/edge, QM substrate, or explicit `No node` status.
+5. **Why does Category 01 exist?** Because BIAN-15 isolates a registration-layer gap: standard QM has null measurement and state update, but no category that makes controlled non-click evidence a registration-authoritative inference class.
+
+#### 5.2.3 Isolate — root cause / Cô lập nguyên nhân gốc
+
+**Root cause:** The document needed explicit schema-level separation between source-system evidence, QM support, VVV-derived notation, and boundary conditions.
+
+#### 5.2.4 Fix — corrected formulation / Sửa đúng nguyên nhân
+
+Use this bounded formulation when precision is required:
+
+```text
+Purely Contrastive Evidence / Interaction-Free State Inference (IFSI) = a VVV-QMRF registration-layer category for BIAN-15.
+BE source: *Kevalavyatirekin* as source analogue; node-less in the current BE SOT.
+QM substrate: No-result measurement, partial collapse, projection support, post-measurement update.
+VVV formalism: Null-Projection Operator `P_null` / N_QM_VVV_00001; N_QM_VVV_00002; N_QM_VVV_00003; support: N_QM_VVV_00004, N_QM_VVV_00005.
+Boundary: not every no-click event is interaction-free evidence, and not every null result proves the inferred alternative with no boundary conditions.
+```
+
+#### 5.2.5 Verify — root cause removed / Kiểm chứng đã loại bỏ nguyên nhân gốc
+
+The ambiguity is removed if every use of Category 01 distinguishes:
+
+```text
+BE source analogue = *Kevalavyatirekin* as source analogue; node-less in the current BE SOT.
+QM substrate = No-result measurement, partial collapse, projection support, post-measurement update.
+VVV-QMRF category = Purely Contrastive Evidence / Interaction-Free State Inference (IFSI).
+Formal symbol = Null-Projection Operator `P_null`.
+Boundary = not every no-click event is interaction-free evidence, and not every null result proves the inferred alternative with no boundary conditions.
+```
+
+### 5.3. Gap Type Classification / Phân loại Loại Khoảng trống
+
+| Gap aspect | Classification | RCA note |
+|---|---|---|
+| Source gap | **BIAN-15** | Standard qm has null measurement and state update, but no category that makes controlled non-click evidence a registration-authoritative inference class. |
+| Gap type | **Contrastive-evidence registration gap** | The missing piece is a registration-category distinction, not merely a prettier sentence. |
+| Resolution type | **Category + framework postulate** | Category 01 supplies the detailed category; E11 installs it into VVV-QMRF architecture. |
+| Why not only canonical QM? | Canonical QM supports the substrate but not the K-side classification. | Use QM nodes as support, not as proof that the category already exists in standard QM. |
+| Boundary | **node-less BE analogue; VVV-QMRF derived category** | Keep labels such as Derived, Medium, No node, or QM-only visible in publication-facing prose. |
+
+### 5.4. Prototype IFSI Instance / Trường hợp Mẫu của IFSI
+
+```text
+Prototype IFSI instance:
+
+  Setup: interferometer path A would trigger detector A if occupied.
+  Event: detector A does not click under calibrated conditions.
+  Gate: broken detector and non-measurement paths are ruled out.
+  Update: K-side registration-state update excludes path A and infers the contrastive alternative.
+  Contrast: E9-style failed silence is rejected.
+
+  → IFSI instance confirmed only within its boundary.
+```
+
+**RCA boundary:** The prototype is valid only when the stated source support, QM substrate, and registration-validity conditions are all kept distinct.
+
+### 5.5. Layer Architecture Position / Vị trí trong Kiến trúc Tầng
+
+```text
+gap/BIAN-15
+  ↓ diagnoses missing registration structure
+category/Category 01 — Purely Contrastive Evidence / Interaction-Free State Inference (IFSI)
+  ↓ specifies detailed category and boundary conditions
+framework/E11
+  ↓ installs the rule into VVV-QMRF postulate architecture
+VVV-QMRF registration-state update layer
+  ↓ applies the category without replacing canonical QM physics
+```
+
+| Layer | Document / component | Role |
+|---|---|---|
+| Gap | BIAN-15 | Diagnoses the missing registration distinction. |
+| Category | Category 01 | Defines the detailed registration category. |
+| Framework | E11 | Promotes the category into postulate-level architecture. |
+| BE source | *Kevalavyatirekin* as source analogue; node-less in the current BE SOT | Supplies source-lineage or analogy under RCA boundary. |
+| QM substrate | No-result measurement, partial collapse, projection support, post-measurement update | Supplies physical or operational support only. |
+
+---
+
+## 6. Assertion Level / Mức Khẳng định
+
+| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+|---|---|---|---|
+| BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | —; support: N_BE_00213, N_BE_00018, N_BE_00253, N_BE_00015; ED_BE_00110; ED_BE_00116; ED_BE_00057. |
+| QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00033; N_QM_00032; N_QM_00018; N_QM_00022; ED_QM_00039; ED_QM_00012; ED_QM_00014; ED_QM_00025. |
+| Purely Contrastive Evidence / Interaction-Free State Inference (IFSI) is a VVV-QMRF category | Bằng chứng Thuần Loại trừ / Suy luận Trạng thái Phi Tương tác là phạm trù VVV-QMRF | **D** — framework-derived | N_QM_VVV_00001; N_QM_VVV_00002; N_QM_VVV_00003; support: N_QM_VVV_00004, N_QM_VVV_00005; E11. |
+| Null-Projection Operator `P_null` formalizes the category | Null-Projection Operator `P_null` hình thức hóa phạm trù | **D** — notation-derived | Framework notation, not a canonical source-system operator. |
+| The category resolves BIAN-15 | Phạm trù giải quyết BIAN-15 | **D / M** — bounded resolution | Resolution holds at registration-layer architecture level. |
+| Boundary-free reading of the category | Cách đọc không ranh giới về phạm trù | **O** — overclaim | not every no-click event is interaction-free evidence, and not every null result proves the inferred alternative with no boundary conditions. |
+
+**Summary / Tóm tắt:** The category is traceable as a VVV-QMRF registration-layer proposal. Its BE source and QM substrate support the architecture, but neither should be overstated as a direct one-to-one physical equivalence.
+
+---
+
+## 7. What Category 01 / E11 Does NOT Claim / Những gì Category 01 / E11 KHÔNG tuyên bố
+
+1. **Not a canonical QM replacement** — Purely Contrastive Evidence / Interaction-Free State Inference (IFSI) is a VVV-QMRF registration-layer proposal built beside standard QM support.
+   *Không thay thế QM chuẩn; đây là tầng ghi nhận VVV-QMRF đặt bên cạnh nền vật lý QM.*
+
+2. **Not unrestricted equivalence with the BE source** — *Kevalavyatirekin* as source analogue; node-less in the current BE SOT supplies source-lineage or analogy only within the stated boundary.
+   *Không đồng nhất vô điều kiện với nguồn BE; nguồn BE chỉ làm mô hình nguồn hoặc phép tương tự có ranh giới.*
+
+3. **Not boundary-free application** — not every no-click event is interaction-free evidence, and not every null result proves the inferred alternative with no boundary conditions.
+   *Không áp dụng tự do ngoài điều kiện hợp lệ đã nêu.*
+
+4. **Not a detector-engineering shortcut** — validity still depends on calibration, context, and the relevant E10-style gate where applicable.
+   *Không bỏ qua hiệu chuẩn, bối cảnh, hoặc cổng hợp lệ kiểu E10 khi cần.*
+
+5. **Not an empirical proof of a new physical mechanism** — the category remains derived unless formal predictions and tests are supplied.
+   *Chưa phải bằng chứng thực nghiệm cho cơ chế vật lý mới nếu chưa có dự đoán và kiểm nghiệm.*
+
+6. **Not human-consciousness dependence** — registration-state update is a K-side framework term broader than human cognition.
+   *Không phụ thuộc ý thức con người; cập nhật trạng thái ghi nhận là thuật ngữ tầng K rộng hơn cognition của người.*
+
+---
+
+## 8. Vietnamese Explanation / Giải thích tiếng Việt rõ ràng
+
+Nói đơn giản, Category 01 / E11 xử lý câu hỏi:
+
+```text
+Trong trường hợp này, cái gì thật sự được ghi nhận ở tầng K,
+và điều kiện nào làm cho ghi nhận đó hợp lệ?
+```
+
+Câu trả lời của VVV-QMRF là:
+
+```text
+Nếu máy đáng lẽ phải kêu khi hạt đi qua nhánh A, nhưng máy không kêu trong điều kiện hợp lệ, thì sự im lặng đó có thể là bằng chứng loại trừ. Đây là `IFSI`, không phải mọi im lặng của detector.
+```
+
+Ranh giới cần nhớ:
+
+```text
+BE source không tự động trở thành cơ chế vật lý QM.
+QM substrate không tự động chứa toàn bộ category VVV-QMRF.
+VVV-QMRF thêm tầng registration-state update / cập nhật trạng thái ghi nhận.
+Nếu thiếu điều kiện hợp lệ, claim phải bị hạ xuống Medium, Derived, No node, hoặc Overclaim.
+```
+
+---
+
+## 9. Mermaid Diagram Map / Sơ đồ Mermaid
+
+```mermaid
+flowchart TD
+    subgraph BE["Buddhist Epistemology source layer"]
+        BE1["*Kevalavyatirekin* as source analogue; node-less in the current BE SOT"]
+    end
+
+    subgraph QM["Standard Quantum Measurement substrate"]
+        QM1["No-result measurement, partial collapse, projection support, post-measurement update"]
+    end
+
+    subgraph VVV["VVV-QMRF Registration Layer"]
+        CAT["Category 01 / E11<br/>Purely Contrastive Evidence / Interaction-Free State Inference (IFSI)"]
+        SYM["Null-Projection Operator `P_null`"]
+        BOUND["RCA boundary<br/>not every no-click event is interaction-free evidence, and not every null result proves the inferred alternative with no boundary conditions"]
+    end
+
+    BE1 -->|"source-lineage / analogy"| CAT
+    QM1 -->|"physical or operational support"| CAT
+    SYM -->|"formalizes"| CAT
+    CAT --> BOUND
+```
+
+---
+
+*Source: BIAN_index_SOT.md (BIAN-15), system_be_full.md (Trairūpya/Vipakṣe asattvam, Anupalabdhi, Apoha support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00001-00003), framework/E11_interaction_free_state_inference_postulate.md*
