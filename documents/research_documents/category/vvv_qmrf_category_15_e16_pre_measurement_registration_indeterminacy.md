@@ -62,6 +62,8 @@ Hidden variable connection (QM#91):
   → Within VVV-QMRF, SDS is treated as the pre-measurement K-side category, not as a missing physical variable
 ```
 
+[^nyaya-samsaya]: The tree-stump/man-at-dusk illustration is a standard Nyāya example of *Saṃśaya*. It is used here only as a cross-tradition illustration of structured doubt; within Buddhist Pramāṇavāda, *Saṃśaya* remains a non-pramāṇa / epistemic-error state that motivates inquiry toward valid cognition, not an independent source of valid knowledge.
+
 ---
 
 ## 4. Foundational Implications / Ý nghĩa Nền tảng
