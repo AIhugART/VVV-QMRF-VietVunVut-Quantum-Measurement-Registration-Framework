@@ -1,19 +1,19 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# VVV-EQM Work History
-# Lịch sử làm việc hệ thống VVV-EQM
+# VVV-QMRF Work History
+# Lịch sử làm việc hệ thống VVV-QMRF
 
-**Last updated:** 2026-05-14  
-**Scope:** Historical record of work completed, system milestones, and VVV-EQM concept nodes created.  
+**Last updated:** 2026-05-14<br/>
+**Scope:** Historical record of work completed, system milestones, and VVV-QMRF concept nodes created.<br/>
 **Status:** Historical summary only; not a source of truth for node definitions.
 
 ---
 
 ## 1. Purpose / Mục đích
 
-This file records the working history of the **VietVunVut Epistemic Quantum Measurement (VVV-EQM)** system.
+This file records the working history of the **VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)** system. Its legacy name is **VietVunVut Epistemic Quantum Measurement (VVV-EQM)**.
 
-File này ghi lại lịch sử làm việc của hệ thống **VVV-EQM**: đã làm gì, đã giải quyết những khoảng trống nào, và đã tạo những "node" khái niệm nào trong lớp mở rộng VVV-QM.
+File này ghi lại lịch sử làm việc của hệ thống **VVV-QMRF**: đã làm gì, đã giải quyết những khoảng trống nào, và đã tạo những "node" khái niệm nào trong lớp mở rộng VVV-QM. Tên cũ của hệ thống là **VVV-EQM**.
 
 ### RCA root cause / Căn nguyên RCA
 
@@ -45,7 +45,7 @@ This history is derived from these active project files:
 
 | Item | Current state |
 |---|---|
-| System name | VVV-EQM — VietVunVut Epistemic Quantum Measurement |
+| System name | VVV-QMRF — VietVunVut Quantum Measurement Registration Framework |
 | Primary method | Buddhist Epistemology as the primary ontological frame; Quantum Measurement mapped onto it |
 | BE source of truth | `SYSTEM_Buddhist_Epistemology/system_be_full.md` |
 | QM source | `SYSTEM_Quantum_Measurement/system_qm_full.md` |
@@ -75,10 +75,10 @@ This history is derived from these active project files:
 ### 2026-05-13 — VVV-QM node system extracted
 
 - Created the VVV-QM RCA node table in [documents/research_documents/node_QM_VVV.md](documents/research_documents/node_QM_VVV.md).
-- Distinguished canonical QM nodes `N_QM_XXXXX` from VVV-EQM extension nodes `N_QM_VVV_XXXXX`.
+- Distinguished canonical QM nodes `N_QM_XXXXX` from VVV-QMRF extension nodes `N_QM_VVV_XXXXX`.
 - Aligned terminology around **"registration-state update" / "cập nhật trạng thái ghi nhận"** for the general K-side update beyond human cognition.
 - Added RCA traceability for VVV-QM materials and standardized traceability tables.
-- Synchronized VVV-EQM research materials across mapping, framework, and node files.
+- Synchronized VVV-QMRF research materials across mapping, framework, and node files.
 
 ### 2026-05-14 — BE SOT centralized and history file added
 
@@ -112,7 +112,7 @@ This history is derived from these active project files:
 
 - Standardized **"registration-state update" / "cập nhật trạng thái ghi nhận"** for the general K-side update.
 - Restricted **"detector response"** to the apparatus' physical response.
-- Preserved the distinction between physical QM measurement and VVV-EQM epistemic certification.
+- Preserved the distinction between physical QM measurement and VVV-QMRF registration certification.
 
 ---
 
@@ -228,7 +228,7 @@ These nodes are recorded in [documents/research_documents/node_QM_VVV.md](docume
 
 ## 11. Completion TODO List / Danh sách việc cần làm để hoàn thiện
 
-This TODO list records remaining work needed to make VVV-EQM clearer, safer, and more publication-ready. It does not change the current source-of-truth hierarchy.
+This TODO list records remaining work needed to make VVV-QMRF clearer, safer, and more publication-ready. It does not change the current source-of-truth hierarchy.
 
 | Priority | Area | TODO | RCA reason | Target file |
 |---|---|---|---|---|
@@ -237,7 +237,7 @@ This TODO list records remaining work needed to make VVV-EQM clearer, safer, and
 | P1 | Node status | Add a status label for each of the 23 `N_QM_VVV_XXXXX` nodes: complete, needs formalization, overclaim-sensitive, or example-only | Readers need to know which nodes are stable and which are proposals | [documents/research_documents/node_QM_VVV.md](documents/research_documents/node_QM_VVV.md) |
 | P1 | Formalism | Formalize `P_null`, `Ĉ_ext`, `ρ̃`, `ρ_certified`, and `V̂_yava` with minimal equations and explicit proposal labels | Several VVV-QM nodes are currently proposal or overclaim-sensitive | framework files |
 | P1 | RCA traceability | For each VVV-QM node, verify source category, nearest canonical QM node, BE/BIAN root, and claim strength | Prevent duplicate, unsupported, or overextended nodes | [documents/research_documents/node_QM_VVV.md](documents/research_documents/node_QM_VVV.md) |
-| P2 | Diagram integration | Review the VVV-EQM vs Standard QM diagram and decide whether it belongs in active docs or draft materials | Architecture diagrams help readers but can overclaim if not boundary-labeled | diagram file |
+| P2 | Diagram integration | Review the VVV-QMRF vs Standard QM diagram and decide whether it belongs in active docs or draft materials | Architecture diagrams help readers but can overclaim if not boundary-labeled | diagram file |
 | P2 | Bridge layer | Review bridge files and decide whether they are active architecture or draft material | Bridge files may be needed to connect BE, QM, and VVV-QM, but should not create a second SOT | bridge folder |
 | P2 | Publication prep | Create a claim-strength table before using the framework in paper-facing or README-facing text | Publication-facing claims need clear strength labels | paper / README files |
 | P3 | Cleanup | Decide whether `desktop.ini` files should be ignored or removed | These are OS artifacts, not research content | repo config / working tree |
@@ -251,7 +251,7 @@ This TODO list records remaining work needed to make VVV-EQM clearer, safer, and
 | `N_QM_VVV_00008` | Ideal zero-direct-disturbance claim depends on idealized conditions | State the ideal-limit assumptions and avoid treating them as ordinary laboratory conditions |
 | `N_QM_VVV_00010` | PVM-equivalent epistemic authority is not formally validated | Reframe as a proposal unless equivalence conditions are proven |
 | `N_QM_VVV_00018` | Verification-integrated density matrix evolution lacks a full equation | Provide a minimal equation or downgrade to framework note |
-| `N_QM_VVV_00021`–`N_QM_VVV_00024` | ECO layer is psycho-physical and not canonical QM | Keep it explicitly VVV-EQM epistemic architecture, not a physical collapse mechanism |
+| `N_QM_VVV_00021`–`N_QM_VVV_00024` | ECO layer is registration-side and not canonical QM | Keep it explicitly VVV-QMRF registration architecture, not a physical collapse mechanism |
 
 ### 11.2. Action Plan 1-2-3 / Kế hoạch hành động 1-2-3
 
@@ -259,7 +259,7 @@ This action plan compresses the completion TODO list into a short execution orde
 
 1. **Lock wording and boundary first**
    - Standardize BIAN wording to **"20 labels accounted for: 19 active gaps resolved + 1 reserved label"** in [README.md](README.md) and [history.md](history.md).
-   - Keep all `N_QM_VVV_XXXXX` nodes explicitly marked as VVV-EQM extension nodes, not canonical QM nodes.
+   - Keep all `N_QM_VVV_XXXXX` nodes explicitly marked as VVV-QMRF extension nodes, not canonical QM nodes.
 
 2. **Add status and traceability to each VVV-QM node**
    - Add one status label to each of the 23 VVV-QM nodes: `complete`, `needs formalization`, `overclaim-sensitive`, or `example-only`.

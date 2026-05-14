@@ -1,11 +1,11 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# VVV-EQM: Sixteen Epistemic Postulates for Quantum Measurement
-# Mười sáu Tiên đề Nhận thức luận cho Đo lường Lượng tử
+# VVV-QMRF: Quantum Measurement Registration Framework
+# Khung Ghi nhận Đo lường Lượng tử VVV-QMRF
 
 <p align="center">
-  <strong>A structural extension of Quantum Mechanics grounded in Buddhist Pramāṇa Epistemology</strong><br/>
-  <em>Mở rộng cấu trúc Cơ học Lượng tử dựa trên Nhận thức luận Phật giáo Pramāṇa</em>
+  <strong>A registration-layer framework for Quantum Measurement grounded in Buddhist Pramāṇa Epistemology</strong><br/>
+  <em>Khung tầng ghi nhận cho Đo lường Lượng tử dựa trên Nhận thức luận Phật giáo Pramāṇa</em>
 </p>
 
 ---
@@ -18,11 +18,12 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-**Framework / Khung lý thuyết:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
-**Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)  
-**Version / Phiên bản:** 2.0 — Stable Final  
-**Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20 labels accounted for: 19 active gaps resolved + 1 reserved label  
-**Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-2.0  
+**Framework / Khung lý thuyết:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)<br/>
+**Legacy name / Tên cũ:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)<br/>
+**Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)<br/>
+**Version / Phiên bản:** 2.0 — Stable Final<br/>
+**Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20 labels accounted for: 19 active gaps resolved + 1 reserved label<br/>
+**Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF §WP-2.0
 **Inspiration / Cảm hứng:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại của Trung Quốc, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc. (*co-founded Apple Inc.*)
 
 ## The Central Question / Câu Hỏi Trung Tâm
@@ -71,7 +72,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | 1 | **BE System SOT** | The Buddhist Pramāṇa-Epistemology, Logic, and Language: with Reference to Vasubandhu, Diṅnāga, and Dharmakīrti | Hari Shankar Prasad | University of Delhi, Delhi 110007, India | *Studia Humana*, Vol. 12:1-2 (2023), pp. 21–52 | `10.2478/sh-2023-0004` |
 | 2 | **QM Target SOT** | Quantum Mechanics: The Theoretical Minimum | Leonard Susskind; Art Friedman | Stanford University; Portland State University | Basic Books, 2014 | ISBN 978-0-465-06569-2 (paperback) |
 | 3 | **QM Target SOT** | Quantum Measurement Theory and Practice | Andrew N. Jordan; Irfan A. Siddiqi | Chapman University; University of Rochester; University of California, Berkeley | Cambridge University Press, 2024 | `10.1017/9781009103909` |
-| 4 | **SOT Mapping** | VVV-EQM Buddhist–QM Epistemic Mapping | Claude (Anthropic) | Anthropic | Internal research document, 2026 | — |
+| 4 | **SOT Mapping** | VVV-QMRF Buddhist–QM Registration Mapping | Claude (Anthropic) | Anthropic | Internal research document, 2026 | — |
 | 5 | **BIAN Index SOT** | BIAN Index — Source of Truth | VietVunVut (Viet - Nguyen Xuan) | AI hug ART | Internal research document, 2026 | — |
 
 > **EN:** **BIAN etymology:** "BIAN" is derived from the Vietnamese word *bí ẩn* — meaning **mystery** or **enigma** in English.
@@ -97,11 +98,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-## What is VVV-EQM? / VVV-EQM là gì?
+## What is VVV-QMRF? / VVV-QMRF là gì?
 
-**EN:** Standard Quantum Mechanics has four physical postulates (P1–P4) that describe state space, observables, measurement, and dynamics. These postulates are *silent* on the epistemic architecture of measurement — they don't specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the observer. VVV-EQM fills these gaps by adding 16 epistemic postulates derived from structural analysis of Buddhist Pramāṇa epistemology (Dignāga–Dharmakīrti tradition). The first 7 (E1–E7) define core cognitive operations; the remaining 9 (E8–E16) extend the framework to cover retroactive invalidation, null events, validity conditions, contrapositive evidence, transcendental observation, temporal discontinuity, absence cognition, entanglement relations, and pre-measurement indeterminacy.
+**EN:** Standard Quantum Mechanics has four physical postulates (P1–P4) that describe state space, observables, measurement, and dynamics. These postulates are *silent* on the registration architecture of measurement — they do not specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the registering system. VVV-QMRF fills these gaps by adding 16 registration-layer postulates derived from structural analysis of Buddhist Pramāṇa epistemology (Dignāga–Dharmakīrti tradition). The first 7 (E1–E7) define core registration operations; the remaining 9 (E8–E16) extend the framework to cover retroactive invalidation, null events, validity conditions, contrapositive evidence, transcendental observation, temporal discontinuity, absence cognition, entanglement relations, and pre-measurement indeterminacy.
 
-**VN:** Cơ học Lượng tử chuẩn có bốn tiên đề vật lý (P1–P4) mô tả không gian trạng thái, đại lượng đo được, phép đo, và động lực học. Các tiên đề này *im lặng* về kiến trúc nhận thức luận của phép đo. VVV-EQM lấp đầy các khoảng trống này bằng 16 tiên đề nhận thức luận từ Nhận thức luận Phật giáo Pramāṇa (truyền thống Dignāga–Dharmakīrti). 7 tiên đề đầu (E1–E7) định nghĩa các phép toán nhận thức cốt lõi; 9 tiên đề mở rộng (E8–E16) bao phủ phủ quyết hồi tố, sự kiện rỗng, điều kiện hợp lệ, bằng chứng phản chứng, quan sát siêu việt, gián đoạn thời gian, nhận thức vắng mặt, quan hệ vướng víu, và bất định trước đo.
+**VN:** Cơ học Lượng tử chuẩn có bốn tiên đề vật lý (P1–P4) mô tả không gian trạng thái, đại lượng đo được, phép đo, và động lực học. Các tiên đề này *im lặng* về kiến trúc ghi nhận của phép đo. VVV-QMRF lấp đầy các khoảng trống này bằng 16 tiên đề thuộc tầng ghi nhận, rút ra từ phân tích cấu trúc của Nhận thức luận Phật giáo Pramāṇa (truyền thống Dignāga–Dharmakīrti). 7 tiên đề đầu (E1–E7) định nghĩa các phép toán ghi nhận cốt lõi; 9 tiên đề mở rộng (E8–E16) bao phủ phủ quyết hồi tố, sự kiện rỗng, điều kiện hợp lệ, bằng chứng phản chứng, quan sát siêu việt, gián đoạn thời gian, nhận thức vắng mặt, quan hệ vướng víu, và bất định trước đo.
 
 ---
 
@@ -159,7 +160,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                 VVV-EQM FINAL ARCHITECTURE (v2.0 Stable)           │
+│                 VVV-QMRF FINAL ARCHITECTURE (v2.0 Stable)           │
 │                                                                     │
 │  POSTULATES:  E1–E16 (16)    — epistemic operations                 │
 │    Core:      E1–E7 (7)      — cognitive operations                 │
@@ -269,10 +270,10 @@ buddhist-epistemology-quantum-measurement/
 **EN:** *This section provides the detailed Root Cause Analysis (RCA) report in bilingual English / Vietnamese format.*  
 **VN:** *Phần này trình bày chi tiết báo cáo Phân tích Nguyên nhân Gốc rễ (RCA) theo định dạng song ngữ Anh / Việt.*
 
-### 1. What is VVV-EQM? / VVV-EQM là gì?
+### 1. What is VVV-QMRF? / VVV-QMRF là gì?
 
-**EN:** VVV-EQM is a comparative theoretical framework between two systems of thought:  
-**VN:** VVV-EQM là một khung lý thuyết so sánh hai hệ thống tư tưởng:
+**EN:** VVV-QMRF is a comparative theoretical framework between two systems of thought:<br/>
+**VN:** VVV-QMRF là một khung lý thuyết so sánh hai hệ thống tư tưởng:
 
 | Side / Bên | Name / Tên | Characteristics / Đặc điểm |
 |:----------:|------------|-----------------------------|
@@ -442,8 +443,8 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 
 #### Significance / Ý nghĩa
 
-> **EN:** Quantum Mechanics lacks not just a measurement theory — it lacks the **entire epistemic architecture** that Buddhist Epistemology has already built. VVV-EQM provides 16 postulates to fill that gap.  
-> **VN:** Cơ học Lượng tử không chỉ thiếu một lý thuyết đo lường — nó thiếu **toàn bộ kiến trúc nhận thức** mà Nhận thức luận Phật giáo đã xây dựng. VVV-EQM cung cấp 16 tiên đề để lấp đầy khoảng trống đó.
+> **EN:** Quantum Mechanics lacks not just a measurement theory — it lacks the **entire epistemic architecture** that Buddhist Epistemology has already built. VVV-QMRF provides 16 postulates to fill that gap.<br/>
+> **VN:** Cơ học Lượng tử không chỉ thiếu một lý thuyết đo lường — nó thiếu **toàn bộ kiến trúc nhận thức** mà Nhận thức luận Phật giáo đã xây dựng. VVV-QMRF cung cấp 16 tiên đề để lấp đầy khoảng trống đó.
 
 ---
 
@@ -465,7 +466,7 @@ This short roadmap keeps future completion work aligned with the current source-
 
 1. **Lock wording and boundary first**
    - Keep the BIAN status wording fixed as **"20 labels accounted for: 19 active gaps resolved + 1 reserved label"**.
-   - Keep all `N_QM_VVV_XXXXX` nodes explicitly marked as VVV-EQM extension nodes, not canonical QM nodes.
+   - Keep all `N_QM_VVV_XXXXX` nodes explicitly marked as VVV-QMRF extension nodes, not canonical QM nodes.
 
 2. **Add status and traceability to each VVV-QM node**
    - Add one status label to each of the 23 VVV-QM nodes: `complete`, `needs formalization`, `overclaim-sensitive`, or `example-only`.
@@ -482,10 +483,10 @@ This short roadmap keeps future completion work aligned with the current source-
 
 ```bibtex
 @techreport{VietVunVut2026,
-  title   = {VVV-EQM: Sixteen Epistemic Postulates for Quantum Measurement},
+  title   = {VVV-QMRF: Quantum Measurement Registration Framework},
   author  = {VietVunVut (Viet - Nguyen Xuan)},
   year    = {2026},
-  note    = {VVV-EQM §WP-2.0, Stable Final},
+  note    = {VVV-QMRF §WP-2.0, Stable Final},
   url     = {https://github.com/AIhugART/buddhist-epistemology-quantum-measurement}
 }
 ```
@@ -508,6 +509,7 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 |:-------:|--------------------------|-------|
 | **v1** | 2026-05-10, 2026-05-11, before 02:00:00 2026-05-12 | Initial release — 7 Postulates (E1–E7), 2 Lemmas (S1-Λ, S2-Δ), 20 labels accounted for: 19 active gaps resolved + 1 reserved label |
 | **v2** | after 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 20 labels accounted for: 19 active gaps resolved + 1 reserved label |
+| **v3** | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. |
 
 ## Research Timeline / Dòng thời gian nghiên cứu
 
@@ -520,6 +522,6 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 
 ---
 
-*VietVunVut (2026). VVV-EQM: Sixteen Epistemic Postulates for Quantum Measurement — A Structural Analysis Grounded in Buddhist Pramāṇa Epistemology.*
+*VietVunVut (2026). VVV-QMRF: Quantum Measurement Registration Framework — A Structural Analysis Grounded in Buddhist Pramāṇa Epistemology.*
 
 © 2026 VietVunVut. All Rights Reserved.
