@@ -45,15 +45,20 @@ Standard QM treatment of null result:
   → Treated as residual probability: P(null) = 1 - Σᵢ P(λᵢ)
 
 VAR formal treatment:
-  Absence Projector: Π̂_absent = Î - Σᵢ |λᵢ⟩⟨λᵢ|
+  Absence Projector (within measurement-accessible subspace ℋ_M):
+    Π̂_absent^(ℋ_M) = Î_ℋ_M - Σᵢ |λᵢ⟩⟨λᵢ|, with |λᵢ⟩ ∈ ℋ_M
+
+  Subspace condition:
+    Π̂_absent^(ℋ_M) only registers absence inside the measurement-accessible subspace ℋ_M;
+    it does not assert absence outside the domain that the setup can validly test.
 
   Null measurement event:
     Pre-state:   |ψ⟩ in possible superposition
-    Null click:  Π̂_absent triggers
-    Post-state:  ρ → Π̂_absent ρ Π̂_absent / Tr(Π̂_absent ρ)
+    Null click:  Π̂_absent^(ℋ_M) triggers
+    Post-state:  ρ → Π̂_absent^(ℋ_M) ρ Π̂_absent^(ℋ_M) / Tr(Π̂_absent^(ℋ_M) ρ)
 
   Registration content:
-    "The system does NOT have any of {λᵢ}" — positive registration of absence
+    "The system does NOT have any tested property in {λᵢ} within ℋ_M" — positive registration of absence
     This is NOT the same as "we don't know what the system is"
 
 Key distinction from E9 (Null Registering-System Event):
@@ -67,7 +72,7 @@ Key distinction from E9 (Null Registering-System Event):
 |-----------|---------------|--------|
 | Object is perceivable IF present | System would couple to detector if in {λᵢ} | ✅ Must hold |
 | Object is not perceived | Null click — detector does not fire | ✅ Observed |
-| Conclusion | Object is absent from {λᵢ} | ✅ Valid registration |
+| Conclusion | Tested property is absent from {λᵢ} inside ℋ_M | ✅ Valid registration |
 
 ---
 
@@ -103,7 +108,7 @@ BIAN-9 resolution: QM treats null results as statistical leftovers. *Anupalabdhi
 | §1-§2 | *Anupalabdhi* / Non-perception | BE system defines *Anupalabdhi* as non-perception replacing realist absence theory with a Buddhist epistemological account. | N_BE_00253 | ED_BE_00115; ED_BE_00116 | Strong | Direct BE support for absence cognition as source lineage; not a canonical QM mechanism by itself. |
 | §2-§4 | Abhāva / Absence | BE system links *Anupalabdhi* to Abhāva as the absence theory it replaces or reframes. | N_BE_00151; N_BE_00253 | ED_BE_00116 | Strong | Absence remains a BE epistemological source, not as a separate realist object added to QM. |
 | §2-§3 | Null result / no detection | QM system defines No-Result Measurement as a detector non-click that still updates the state and produces partial collapse. | N_QM_00033 → N_QM_00032 | ED_QM_00039 | Strong | Supports the operational null event; VAR adds the positive absence-registration interpretation. |
-| §3 | Absence Projection Operator `Π̂_absent` | QM has Projection Operator support, and VVV-QM RCA folds `Π̂_absent` into the existing proposed null-projection operator rather than creating a new node. | N_QM_00018; support: N_QM_VVV_00003 | ED_QM_00012; ED_QM_00018 | Derived | Framework notation; do not treat as a canonical source-system operator or separate VVV node. |
+| §3 | Absence Projection Operator `Π̂_absent^(ℋ_M)` | QM has Projection Operator support, and VVV-QM RCA folds `Π̂_absent^(ℋ_M)` into the existing proposed null-projection operator rather than creating a new node. | N_QM_00018; support: N_QM_VVV_00003 | ED_QM_00012; ED_QM_00018 | Derived | Framework notation; do not treat as a canonical source-system operator or separate VVV node; its absence claim is bounded by the measurement-accessible subspace. |
 | §3 | Post-state update / "registration-state update" | QM system defines Post-Measurement State Update and Bayesian update support; VAR uses this as the K-side update after valid null projection. | N_QM_00022; N_QM_00034 | ED_QM_00014; ED_QM_00025; ED_QM_00040 | QM-only | Use "registration-state update" for the VVV-QMRF K-side term; QM support is state update only. |
 | §2-§3 | Trairūpya validity conditions | BE system defines Trairūpya as the triple-condition validity criterion; E10 imports it as the measurement-validity gate. | N_BE_00018; support: N_BE_00210 | ED_BE_00008; ED_BE_00108; ED_BE_00109; ED_BE_00110 | Medium | Validity condition for VAR, not a standalone QM category or separate VAR node. |
 | §3 | VAR vs Null Registering-System Event / apparatus failure | E14 distinguishes VAR from E9 and failure domains; VVV-QM RCA requires contrast with non-informative broken-detector null events. | N_QM_VVV_00020; support: N_QM_VVV_00005 | — | Derived | Negative control: not every silence is evidence; only valid null events under E10 conditions count. |
@@ -116,7 +121,7 @@ BIAN-9 resolution: QM treats null results as statistical leftovers. *Anupalabdhi
 
 1. **BIAN-9 is strongly anchored on the BE side.** The direct source-system support is *Anupalabdhi* (`N_BE_00253`) and its relation to absence (`ED_BE_00116`).
 2. **VAR is a VVV-QMRF derived category, not ordinary QM.** Canonical QM supports null measurement, projection, and state update, while `N_QM_VVV_00020` names the new registration-category layer.
-3. **`Π̂_absent` is formal notation, not a separate canonical operator.** It should remain folded into the null/absence projection support rather than being promoted as an independent source-system node.
+3. **`Π̂_absent^(ℋ_M)` is formal notation, not a separate canonical operator.** It should remain folded into the null/absence projection support and bounded by the measurement-accessible subspace rather than being promoted as an independent source-system node.
 4. **Trairūpya is the validity gate.** A null event becomes positive absence registration only when the setup makes the object detectable if present and rules out detector failure or non-measurement.
 5. **Application claims require boundaries.** Dark-matter reasoning and pramāṇa-level authority are useful framework applications, but they must remain conditional on rigorous measurement validity.
 
@@ -163,7 +168,7 @@ Null result = operational no-click event.
 Failed measurement = no reliable registration.
 VAR/E14 = valid positive absence registration under conditions.
 Anupalabdhi = BE source for valid absence cognition.
-Π̂_absent = framework notation for conditioned absence projection.
+Π̂_absent^(ℋ_M) = framework notation for conditioned absence projection inside the measurement-accessible subspace.
 ```
 
 ### 5.3. Gap Type Classification / Phân loại Loại Khoảng trống
@@ -186,7 +191,7 @@ Prototype VAR instance:
   Target:     The measured property would couple to the detector if present.
   Event:      Detector does not fire / no-result measurement occurs.
   Gate:       E10 / Trairūpya validity check passes.
-  Operator:   Π̂_absent applies as conditioned absence projection.
+  Operator:   Π̂_absent^(ℋ_M) applies as conditioned absence projection inside the measurement-accessible subspace.
   Update:     Registration-state update records absence, not ignorance.
   Contrast:   E9 failure path is ruled out.
 
@@ -225,7 +230,7 @@ VVV-QMRF registration-state update layer
 | *Anupalabdhi* supports valid absence cognition | *Anupalabdhi* hỗ trợ nhận thức vắng mặt hợp lệ | **M** — source-supported | Direct BE support: `N_BE_00253`; `ED_BE_00115`; `ED_BE_00116`. |
 | A no-result measurement can still update the quantum state | Phép đo không có kết quả vẫn có thể cập nhật trạng thái lượng tử | **M** — QM-operational | QM support: `N_QM_00033 → N_QM_00032`; `ED_QM_00039`. |
 | VAR treats a valid null result as a positive registration act | VAR coi kết quả rỗng hợp lệ là hành vi ghi nhận dương tính | **D** — framework-derived | VVV-QMRF category proposal: `N_QM_VVV_00020`; depends on E10 validity conditions. |
-| `Π̂_absent` formalizes conditioned absence projection | `Π̂_absent` hình thức hóa phép chiếu vắng mặt có điều kiện | **D** — notation-derived | Supported by projection/state-update structure; not a separate canonical QM operator. |
+| `Π̂_absent^(ℋ_M)` formalizes conditioned absence projection | `Π̂_absent^(ℋ_M)` hình thức hóa phép chiếu vắng mặt có điều kiện trong miền đo hợp lệ | **D** — notation-derived | Supported by projection/state-update structure; not a separate canonical QM operator; bounded to the measurement-accessible subspace. |
 | Trairūpya functions as the validity gate for VAR | Trairūpya là cổng điều kiện hợp lệ cho VAR | **D** — cross-system mapping | BE support: `N_BE_00018`; framework use through E10; not a native QM condition. |
 | VAR generalizes beyond E11 interaction-free measurement | VAR khái quát rộng hơn E11 về phép đo không tương tác | **D** — framework relation | VAR covers conditioned null registration; E11 remains the narrower interaction-free case. |
 | Dark-matter registration reasoning follows from VAR | Lập luận ghi nhận kiểu vật chất tối đi theo VAR | **B** — boundary-sensitive application | No dedicated SOT node here; use only as conditional evidential analogy, not proof. |
@@ -287,7 +292,7 @@ Trong ngôn ngữ của project:
 ```text
 Anupalabdhi = nguồn BE cho nhận thức vắng mặt hợp lệ.
 VAR/E14 = tầng VVV-QMRF biến no-result hợp lệ thành ghi nhận vắng mặt.
-Π̂_absent = ký hiệu framework cho phép chiếu vắng mặt có điều kiện.
+Π̂_absent^(ℋ_M) = ký hiệu framework cho phép chiếu vắng mặt có điều kiện trong miền đo hợp lệ.
 E10 / Trairūpya = cổng kiểm tra điều kiện hợp lệ.
 E9 = vùng lỗi hoặc null event không mang thông tin.
 ```
@@ -320,7 +325,7 @@ flowchart TD
 
     subgraph VVV["VVV-QMRF Registration Layer"]
         VAR["N_QM_VVV_00020<br/>Validated Absence Registration<br/>Category 13 / E14"]
-        PI["Π̂_absent<br/>conditioned absence projection"]
+        PI["Π̂_absent^(ℋ_M)<br/>conditioned absence projection"]
         E10["E10<br/>measurement-validity gate"]
         E9["E9<br/>non-informative null event / failure contrast"]
         BOUND["RCA boundary<br/>evidence under conditions, not physical substance"]
