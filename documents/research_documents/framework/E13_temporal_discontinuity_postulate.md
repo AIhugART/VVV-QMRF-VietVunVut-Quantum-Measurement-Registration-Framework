@@ -90,9 +90,9 @@ E6 (Observer-as-Process) — observer is a causal series of moments
 | Component | Class |
 |---|---|
 | "QM has unresolved continuous/discontinuous schism" | **M** |
-| "Kṣaṇabhaṅgavāda maps to quantum jump epistemology" | **M** |
+| "Kṣaṇabhaṅgavāda supplies a source analogue for quantum-jump registration bounding" | **M** |
 | "Continuity is a registration-layer overlay on bounded registration jumps" | **D** |
-| "Kṣaṇa causal chain = Born rule probability" | **C** |
+| "Kṣaṇa causal chain structurally indexes Born-rule-governed registration sequence" | **C** |
 
 ---
 
