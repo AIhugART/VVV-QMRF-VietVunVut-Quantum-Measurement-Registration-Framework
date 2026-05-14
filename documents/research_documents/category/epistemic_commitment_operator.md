@@ -42,13 +42,13 @@ Là một thao tác khóa ghi nhận chính thức giúp bắc cầu qua "Vết 
 Currently, QM assumes that once the physical pointer moves, the detector response is available. Under this new category, the process still needs a K-side registration lock:
 1. **Detector Response (Nirvikalpaka as BE source):** The physical measurement leaves a detector response $D_i$ on the detector.
 2. **Internal Representation Encoding Phase ($\hat{A}_{kāra}$):** The registering system's internal interface encodes $D_i$, generating an internal representation $\mathcal{M}_i$. This is still just data processing, not yet a locked registration status.
-3. **The Registration Lock Act ($\hat{V}_{yava}$):** The operator $\hat{V}_{yava}$ acts upon $\mathcal{M}_i$. It strips away uncertainty and locks the registration state into a definitive judgment: "The state IS $D_i$". Only at this exact mathematical moment does the K-side registration-state update close.
+3. **The Registration Lock Act ($\hat{V}_{yava}$):** The operator $\hat{V}_{yava}$ acts upon $\mathcal{M}_i$. It resolves the K-side uncertainty and locks the registration state as registered status $D_i$. Only at this registration-lock moment does the K-side registration-state update close.
 
 **Vietnamese:**
 Hiện tại, QM giả định rằng một khi kim đo vật lý dịch chuyển, detector response đã có sẵn. Với phạm trù mới này, tiến trình vẫn cần khóa ghi nhận phía K:
 1. **Detector Response (Nirvikalpaka là nguồn BE):** Phép đo vật lý để lại detector response $D_i$ trên máy dò.
 2. **Pha Mã hóa Nội tại ($\hat{A}_{kāra}$):** Giao diện nội tại của hệ ghi nhận mã hóa $D_i$, tạo ra biểu tượng nội tại $\mathcal{M}_i$. Đây vẫn chỉ là quá trình xử lý dữ liệu, chưa phải trạng thái ghi nhận đã khóa.
-3. **Hành động Khóa Ghi nhận ($\hat{V}_{yava}$):** Toán tử $\hat{V}_{yava}$ tác động lên $\mathcal{M}_i$. Nó gọt bỏ mọi sự hoài nghi và khóa trạng thái ghi nhận thành phán đoán dứt khoát: "Trạng thái LÀ $D_i$". Chỉ tại khoảnh khắc toán học này, cập nhật trạng thái ghi nhận phía K mới khép lại.
+3. **Hành động Khóa Ghi nhận ($\hat{V}_{yava}$):** Toán tử $\hat{V}_{yava}$ tác động lên $\mathcal{M}_i$. Nó xử lý bất định phía K và khóa trạng thái ghi nhận thành registered status $D_i$. Chỉ tại khoảnh khắc registration-lock này, cập nhật trạng thái ghi nhận phía K mới khép lại.
 
 ---
 
@@ -69,5 +69,5 @@ Hiện tại, QM giả định rằng một khi kim đo vật lý dịch chuyể
 Formalizing the *Registration Lock Operation* resolves BIAN-4 and BIAN-5:
 *(Việc chính thức hóa Thao tác Khóa Ghi nhận giải quyết BIAN-4 và BIAN-5:)*
 
-1. **Modeling the Registering System's Internal Encoding:** QM has historically treated the registering side as a "black box". This category finally forces QM to map the internal architecture of the registering system, completing the physics-to-registration unbroken chain originally envisioned by von Neumann, but executed with the rigorous precision of Buddhist Epistemology.
-   *(Mô hình hóa Mã hóa Nội tại của Hệ ghi nhận: Xưa nay QM coi hệ ghi nhận là một "hộp đen". Phạm trù này cuối cùng cũng buộc QM phải vẽ lại kiến trúc nội tại của hệ ghi nhận, hoàn thiện chuỗi liên kết không đứt gãy từ vật lý đến ghi nhận mà von Neumann từng mơ ước, nhưng được thực thi bằng độ chính xác khắt khe của Nhận thức luận Phật giáo.)*
+1. **Modeling the Registering System's Internal Encoding:** Where the registering side is treated as a black box, this category proposes a K-side internal architecture that links detector response, internal representation, and registration lock.
+   *(Mô hình hóa Mã hóa Nội tại của Hệ ghi nhận: Khi hệ ghi nhận bị xem như một "hộp đen", phạm trù này đề xuất một kiến trúc nội tại phía K liên kết detector response, internal representation, và registration lock.)*

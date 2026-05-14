@@ -9,12 +9,12 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Facebook:** https://www.facebook.com/xuanviet
 **Date:** 2026-05-11
 **Status:** Index — Registration class M (Maintained registry)
-**Lineage:** gap/ (BIAN-1–BIAN-20) → category/ (Category 01–10) → framework/ (E1–E7)
+**Lineage:** gap/ (BIAN-1–BIAN-20) → category/ (Category 01–15) → framework/ (E1–E16)
 
 > **Context / Ngữ cảnh:**
-> This document catalogs the 10 foundational registration categories newly established to resolve the structural gaps (BIAN) discovered during the Root Cause Analysis (RCA) mapping between Buddhist Epistemology and Quantum Measurement formalism. These 10 categories collectively upgrade Quantum Mechanics from a purely predictive mathematical tool into a logically complete, self-critical registration system.
+> This document catalogs the 15 registration categories currently documented to resolve the structural gaps (BIAN) discovered during the Root Cause Analysis (RCA) mapping between Buddhist Epistemology and Quantum Measurement formalism. These categories add a VVV-QMRF registration layer alongside Standard Quantum Mechanics rather than replacing its physical formalism.
 > 
-> *Tài liệu này tổng hợp 10 phạm trù ghi nhận nền tảng mới được thiết lập nhằm giải quyết các khoảng trống cấu trúc (BIAN) phát hiện được trong quá trình đối chiếu Phân tích Nguyên nhân gốc rễ (RCA) giữa Nhận thức luận Phật giáo và Hệ thống Lượng tử. 10 phạm trù này cùng nhau nâng cấp Cơ học Lượng tử từ một công cụ toán học dự đoán thuần túy thành một hệ thống ghi nhận tự phê phán, khép kín hoàn toàn về mặt logic.*
+> *Tài liệu này tổng hợp 15 phạm trù ghi nhận hiện đang được ghi thành tài liệu nhằm giải quyết các khoảng trống cấu trúc (BIAN) phát hiện trong quá trình đối chiếu Phân tích Nguyên nhân gốc rễ (RCA) giữa Nhận thức luận Phật giáo và Đo lường Lượng tử. Các phạm trù này thêm một tầng ghi nhận VVV-QMRF bên cạnh Cơ học Lượng tử chuẩn, không thay thế hình thức vật lý của nó.*
 
 ---
 
@@ -30,15 +30,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | **06** | Registration Self-Completion Matrix / Act-Result Identity | Ma trận Tự hoàn tất Ghi nhận / Sự đồng nhất Hành động - Kết quả | *Pramāṇa-Phala Identity* | BIAN-16 | [`measurement_self_completion.md`](./measurement_self_completion.md) |
 | **07** | Registering-System-as-Process Framework / Momentary Registration Series | Khung Hệ ghi nhận Chuỗi sự kiện / Chuỗi Ghi nhận Khoảnh khắc | *Anātmavāda* | BIAN-19 | [`observer_as_process.md`](./observer_as_process.md) |
 | **08** | Registration Lock Operation / Internal Representation Encoding | Thao tác Khóa Ghi nhận / Mã hóa Biểu tượng Nội tại | *Ākāra* & *Vyavasāya* | BIAN-4, 5 | [`epistemic_commitment_operator.md`](./epistemic_commitment_operator.md) |
-| **09** | Tripartite Measurement Validity Matrix / Strict Apparatus Axiom | Ma trận Hợp lệ Tam phân / Tiên đề Máy đo Khắt khe | *Trairūpya* | BIAN-14 | [`tripartite_validity_matrix.md`](./tripartite_validity_matrix.md) |
+| **09** | Tripartite Registration Validity Matrix / Strict Apparatus Axiom | Ma trận Hợp lệ Ghi nhận Tam phân / Tiên đề Máy đo Khắt khe | *Trairūpya* | BIAN-14 | [`tripartite_validity_matrix.md`](./tripartite_validity_matrix.md) |
 | **10** | Pre-Symbolic Stratum / Formalism-External Physical Event | Tầng Tiền Biểu tượng / Sự kiện Vật lý Ngoài Hình thức | *Nirvikalpaka pratyakṣa* | BIAN-7 | [`pre_symbolic_stratum.md`](./pre_symbolic_stratum.md) |
+| **11** | Limit-Faculty Registration / Transcendental Registration Mode | Ghi nhận Giới hạn Năng lực / Chế độ Ghi nhận Siêu việt | *Alaukika pratyakṣa* | BIAN-3 | [`limit_faculty_perception.md`](./limit_faculty_perception.md) |
+| **12** | Temporal Discontinuity Doctrine / Moment-to-Moment Quantum Transition | Học thuyết Gián đoạn Thời gian / Chuyển đổi Lượng tử Sát-na | *Kṣaṇabhaṅgavāda* | BIAN-8 | [`temporal_discontinuity_doctrine.md`](./temporal_discontinuity_doctrine.md) |
+| **13** | Validated Absence Registration / Conditioned Null Registration | Ghi nhận Vắng mặt Hợp lệ / Ghi nhận Rỗng Có Điều kiện | *Anupalabdhi* | BIAN-9 | [`epistemic_absence_cognition.md`](./epistemic_absence_cognition.md) |
+| **14** | Intrinsic Relational Binding / Entanglement - registration Architecture | Liên kết Quan hệ Nội tại / Kiến trúc Tương quan Phi cổ điển | *Svabhāvapratibandha* | BIAN-10 | [`intrinsic_relational_binding.md`](./intrinsic_relational_binding.md) |
+| **15** | Pre-Measurement Registration Indeterminacy / Structured Registration-Doubt State | Bất định Ghi nhận Tiền đo / Trạng thái Nghi ngờ Ghi nhận Có Cấu trúc | *Saṃśaya* | BIAN-11 | [`pre_measurement_indeterminacy.md`](./pre_measurement_indeterminacy.md) |
 
 ---
 
 ## Architectural Significance / Ý nghĩa Kiến trúc
 
-The establishment of these 10 categories fundamentally rewrites the "Measurement Problem" by addressing its root registration-layer flaws:
-*(Việc thiết lập 10 phạm trù này viết lại hoàn toàn "Bài toán Đo lường" bằng cách giải quyết tận gốc các lỗ hổng lớp ghi nhận của nó:)*
+The establishment of these registration categories reframes the "Measurement Problem" at the registration layer by addressing root gaps in how outcomes become registered, classified, and validated:
+*(Việc thiết lập các phạm trù ghi nhận này tái khung "Bài toán Đo lường" ở tầng ghi nhận bằng cách xử lý các khoảng trống gốc trong cách kết quả được ghi nhận, phân loại, và xác thực:)*
 
 1. **The Architecture of the Registering System (05, 06, 07):** Replaces the persistent classical registering boundary with a self-completing, momentary causal series (*Anātmavāda* + *Svasaṃvedana*).
    *(Kiến trúc Hệ ghi nhận: Thay thế ranh giới ghi nhận cổ điển vĩnh cửu bằng một chuỗi nhân quả khoảnh khắc, tự hoàn tất.)*

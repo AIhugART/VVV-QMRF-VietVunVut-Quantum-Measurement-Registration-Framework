@@ -42,30 +42,30 @@ Là sự thu nhận thông tin xác định (đạt mức xác suất 100%) về
 While a traditional Projective Measurement (PVM) operates on the principle of direct positive correlation ("Signal detected $\rightarrow$ Particle present" — analogous to *Anvaya / Sapaksa*), this category operates entirely on contrapositive logic:
 1. **Premise:** If the particle enters path A $\rightarrow$ Detector A will certainly click.
 2. **Observation:** Detector A does **not** click (Null event).
-3. **Registration Conclusion (Phala):** The particle is definitely in path B. The wave function collapses to path B.
-4. **Registration-State Mechanism:** The wave function collapse does not occur due to physical interaction (as the particle never touched detector A), but occurs entirely due to the **registration-state update** produced by excluding a possibility.
+3. **Registration Conclusion (Phala):** The particle is definitely in path B. Standard QM supplies the null-measurement state update; VVV-QMRF names the K-side registration conclusion.
+4. **Registration-State Mechanism:** The VVV-QMRF novelty is the **registration-state update** produced by excluding a possibility, not a replacement for the standard physical state-update rule.
 
 **Vietnamese:**
 Trong khi phép đo lượng tử truyền thống (PVM) hoạt động theo nguyên lý tương quan trực tiếp ("Có tín hiệu $\rightarrow$ Có hạt" — tương đương *Anvaya / Sapaksa*), phạm trù này hoạt động hoàn toàn theo nguyên lý phản chứng:
 1. **Tiền đề:** Nếu hạt đi vào nhánh A $\rightarrow$ Máy dò A chắc chắn sẽ kêu.
 2. **Sự kiện quan sát:** Máy dò A **không** kêu (Null event).
-3. **Kết luận ghi nhận (Phala):** Hạt chắc chắn nằm ở nhánh B. Sóng lượng tử sụp đổ (collapse) về nhánh B.
-4. **Cơ chế trạng thái ghi nhận:** Quá trình sụp đổ hàm sóng không xảy ra do tương tác vật lý (vì hạt không chạm vào máy dò A), mà xảy ra hoàn toàn do **"registration-state update" / cập nhật trạng thái ghi nhận** khi loại trừ được một khả năng.
+3. **Kết luận ghi nhận (Phala):** Hạt chắc chắn nằm ở nhánh B. QM chuẩn cung cấp cập nhật trạng thái do phép đo rỗng; VVV-QMRF gọi tên kết luận ghi nhận phía K.
+4. **Cơ chế trạng thái ghi nhận:** Điểm mới của VVV-QMRF là **"registration-state update" / cập nhật trạng thái ghi nhận** khi loại trừ được một khả năng, không phải thay thế quy tắc cập nhật trạng thái vật lý chuẩn.
 
 ---
 
 ## 4. Core Characteristics / Các Đặc tính Cốt lõi
 
-To be recognized as an independent Registration Category equivalent to traditional measurement, it exhibits three fundamental characteristics:
-*(Để được công nhận là một Phạm trù Ghi nhận độc lập ngang hàng với phép đo truyền thống, nó mang 3 đặc tính cơ bản:)*
+To be recognized as an independent registration-layer category with authority comparable to traditional measurement, it exhibits three fundamental characteristics:
+*(Để được công nhận là một phạm trù tầng ghi nhận độc lập có thẩm quyền tương đương phép đo truyền thống, nó mang 3 đặc tính cơ bản:)*
 
 ### 4.1. Information without Disturbance / Thông tin không nhiễu loạn
-* **EN:** It breaks the classical physics principle that "measurement always entails disturbance/energy transfer". In this category, maximum Shannon information is extracted while physical intervention remains strictly zero.
-* **VN:** Phá vỡ nguyên lý cổ điển của vật lý là "đo lường luôn đi kèm nhiễu loạn/trao đổi năng lượng". Trong phạm trù này, thông tin Shannon được trích xuất tối đa nhưng sự can thiệp vật lý bằng 0.
+* **EN:** In idealized interaction-free cases, it separates registration information from direct energy transfer at the queried path. The zero-intervention claim is a bounded registration-layer interpretation, not a general replacement for information-disturbance limits.
+* **VN:** Trong các trường hợp phi tương tác lý tưởng, nó tách thông tin ghi nhận khỏi trao đổi năng lượng trực tiếp tại nhánh được hỏi. Mệnh đề can thiệp bằng không là diễn giải có giới hạn ở tầng ghi nhận, không thay thế các giới hạn thông tin-nhiễu loạn nói chung.
 
 ### 4.2. Causality of Counterfactuals / Tính nhân quả của sự kiện không xảy ra
-* **EN:** The value of the evidence relies entirely on "what would have happened but did not". Its registration weight proves that in QM, unactualized possibilities (empty branches) retain causal power.
-* **VN:** Giá trị của bằng chứng hoàn toàn dựa vào "những gì lẽ ra đã xảy ra nhưng không xảy ra". Sức nặng ghi nhận của nó chứng minh rằng trong QM, các khả năng chưa thành hiện thực (empty branches) vẫn có sức mạnh nhân quả.
+* **EN:** The value of the evidence relies on "what would have happened but did not". Its registration weight supports a VVV-QMRF reading in which unactualized possibilities (empty branches) retain evidential force under controlled conditions.
+* **VN:** Giá trị của bằng chứng dựa vào "những gì lẽ ra đã xảy ra nhưng không xảy ra". Sức nặng ghi nhận của nó hỗ trợ cách đọc VVV-QMRF rằng các khả năng chưa thành hiện thực (empty branches) có lực chứng cứ trong điều kiện được kiểm soát.
 
 ### 4.3. Exclusion-Based Registration (BE source: Apoha) as a Practical Operator / Loại trừ như một Toán tử thực tế
 * **EN:** Using Apoha as the BE source for exclusion, this registration category treats the "non-detection" at detector A as a valid registration-side cut to constrain the inferred state at detector B.
@@ -84,8 +84,8 @@ Formalizing this category bridges the structural gap (BIAN-15) and strengthens Q
 2. **Differentiating Null Events:** It clearly separates a "Broken Detector" (*Asiddha hetvaabaasa* - inferential error due to missing signal) from an "Informative Silence" (*Kevalavyatirekin*). Both are Null Events, but one is registration-layer noise/error, and the other is pure registration evidence.
    *(Phân biệt các Sự kiện Rỗng: Tách biệt rõ ràng giữa "Máy dò hỏng" (lỗi suy luận do không có tín hiệu) với "Sự im lặng mang thông tin". Cả hai đều là Null Event, nhưng một cái là nhiễu/lỗi ở lớp ghi nhận, một cái là bằng chứng ghi nhận thuần túy.)*
 
-> **Conclusion:** If quantum mechanics formally adopts *Contrapositive Quantum Evidence* as an official measurement category, its theoretical framework will be more complete, closing a registration-layer gap that Buddhist philosophy identified centuries ago via the concept of *Kevalavyatirekin*.
-> *(Kết luận: Nếu cơ học lượng tử chấp nhận bổ sung Bằng chứng Lượng tử Thuần Loại trừ thành một danh mục đo lường chính thức, hệ thống lý thuyết của nó sẽ hoàn thiện hơn và tự đóng lại được khoảng trống lớp ghi nhận mà triết học Phật giáo đã nhìn ra từ nhiều thế kỷ trước thông qua khái niệm Kevalavyatirekin.)*
+> **Conclusion:** Within VVV-QMRF, *Contrapositive Quantum Evidence - registration* names the registration-layer category in which controlled null results carry positive evidential authority, closing a framework gap traced to *Kevalavyatirekin*.
+> *(Kết luận: Trong VVV-QMRF, Bằng chứng Lượng tử Thuần Loại trừ - registration gọi tên phạm trù tầng ghi nhận trong đó kết quả rỗng có kiểm soát mang thẩm quyền chứng cứ dương tính, khép lại một khoảng trống framework được truy về Kevalavyatirekin.)*
 
 ---
 

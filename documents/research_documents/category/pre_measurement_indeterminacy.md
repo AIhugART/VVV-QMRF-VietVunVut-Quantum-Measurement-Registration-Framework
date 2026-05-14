@@ -57,9 +57,9 @@ Saṃśaya mapping:
   → K-side state: suspended, awaiting registration-state update
 
 Hidden variable connection (QM#91):
-  Hidden variable theories claim SDS is merely classical ignorance
-  → Bell theorem disproves this: SDS contains irreducible quantum coherence
-  → SDS is NOT "ignorance of a hidden variable" — it IS the complete pre-measurement K-state
+  Some hidden-variable readings treat SDS as hidden classical ignorance
+  → Bell-type results rule out local hidden-variable completion under standard assumptions
+  → Within VVV-QMRF, SDS is treated as the pre-measurement K-side category, not as a missing physical variable
 ```
 
 ---
@@ -69,8 +69,8 @@ Hidden variable connection (QM#91):
 BIAN-11 resolution: QM has no formal name for the registering system's K-state before measurement. It is treated as just "the wavefunction" without registration-layer categorization. Formalizing SDS:
 
 1. **Distinguishes quantum superposition from classical ignorance** at the registration layer — not just mathematical.
-2. **Addresses the hidden variable debate**: SDS is the complete pre-measurement K-state; it cannot be "completed" by hidden variables without violating Bell inequalities.
-3. **Formalizes the registration role of superposition**: *Saṃśaya* is not a defect but a source-lineage model for a structurally complete, valid K-side suspension when facing irreducibly indeterminate reality.
+2. **Addresses the hidden variable debate at the registration layer**: SDS is treated as a defined K-side category for pre-measurement suspension, while physical hidden-variable claims remain bounded by Bell-type constraints.
+3. **Formalizes the registration role of superposition**: *Saṃśaya* is not a defect but a source-lineage model for a valid K-side suspension when facing quantum indeterminacy.
 
 > **Conclusion:** Structured Doubt State resolves BIAN-11 by giving QM the formal registration category for the registering system's pre-measurement K-state of quantum indeterminacy — grounded in *Saṃśaya*'s rigorous characterization of doubt as structured non-determination.
 

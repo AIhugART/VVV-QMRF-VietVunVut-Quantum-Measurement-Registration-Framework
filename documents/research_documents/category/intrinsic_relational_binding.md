@@ -43,8 +43,8 @@ Entanglement — IRB (third type):
   |ψ_AB⟩ ≠ |ψ_A⟩ ⊗ |ψ_B⟩
 
   Bell inequality violation: |⟨CHSH⟩| > 2
-  → proves registration-side non-separability is irreducible
-  → no causal hidden-variable account is sufficient
+  → supports a registration-layer reading of non-separability as irreducible
+  → no local causal hidden-variable account is sufficient
 
 Svabhāvapratibandha subtypes in QM:
   Tādātmya (identity-grounded) → identical particles (bosons/fermions)

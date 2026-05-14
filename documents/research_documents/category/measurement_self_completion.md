@@ -29,20 +29,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## 2. Definition / Định nghĩa
 
 **English:**
-A formal structural principle stating that the detector response and the resulting K-side registration-state update are structurally inseparable within the registration layer. It denies any temporal or structural gap between the "collapse mechanism" and the "registration-state update of the result."
+A formal structural principle stating that the detector response and the resulting K-side registration-state update are structurally inseparable within the registration layer. It denies a registration-layer gap between the physical detector response and the registered result, without redefining the standard physical collapse law.
 
 **Vietnamese:**
-Là một nguyên lý cấu trúc chính thức khẳng định rằng detector response và cập nhật trạng thái ghi nhận phía K phát sinh từ nó là không thể tách rời trong lớp ghi nhận. Nó phủ nhận mọi khoảng trống về thời gian hay cấu trúc giữa "cơ chế sụp đổ" và "cập nhật trạng thái ghi nhận của kết quả".
+Là một nguyên lý cấu trúc chính thức khẳng định rằng detector response và cập nhật trạng thái ghi nhận phía K phát sinh từ nó là không thể tách rời trong lớp ghi nhận. Nó phủ nhận khoảng trống ở tầng ghi nhận giữa detector response vật lý và kết quả đã ghi nhận, nhưng không định nghĩa lại luật sụp đổ vật lý chuẩn.
 
 ---
 
 ## 3. Formal Structure / Cấu trúc Hình thức
 
 **English:**
-Currently, QM describes the physical interaction (Schrödinger evolution) and then separately imposes the Born Rule to get the result. The Act is distinct from the Result. Under this new category:
-1. **Act = Result:** The operator representing the measurement process ($\hat{M}$) is mathematically fused with the Projection Operator - registration of the outcome ($\hat{P}_i$).
-2. **Elimination of the Secondary Step:** At the registration layer, a valid detector response and its locked result form one closure event. There is no intermediate state where the measurement has occurred but the result has not yet crystallized.
-3. **The Irreducible Tensor:** This is formalized as a tensor $\mathcal{T}_{act-res}$ where the process matrix and the outcome vector are fundamentally inseparable.
+Standard QM describes physical interaction and outcome probabilities through its existing formalism. Under this VVV-QMRF category, the registration act and registered result are modeled as one K-side closure:
+1. **Act = Result:** The operator representing the registration process ($\hat{M}$) is mathematically paired with the Projection Operator - registration of the outcome ($\hat{P}_i$).
+2. **Elimination of the Secondary Step:** At the registration layer, a valid detector response and its locked result form one closure event. There is no intermediate K-state where the measurement has occurred but the registered result has not yet crystallized.
+3. **The Act-Result Tensor:** This is formalized as a tensor $\mathcal{T}_{act-res}$ where the process matrix and the outcome vector are inseparable within the registration-layer model.
 
 **Vietnamese:**
 Hiện tại, QM mô tả tương tác vật lý (tiến hóa Schrödinger) và sau đó áp đặt riêng biệt Quy tắc Born để ra kết quả. Hành động và Kết quả bị tách rời. Với phạm trù mới này:
@@ -55,12 +55,12 @@ Hiện tại, QM mô tả tương tác vật lý (tiến hóa Schrödinger) và 
 ## 4. Core Characteristics / Các Đặc tính Cốt lõi
 
 ### 4.1. The Irreducible Registration Event / Biến cố Ghi nhận Bất khả phân
-* **EN:** It stops theorists from endlessly dissecting the fraction of a microsecond of wave function collapse looking for a "mechanism". The event is functionally fundamental.
-* **VN:** Nó ngăn chặn các nhà lý thuyết mổ xẻ vô tận từng phần tư micro-giây của sự sụp đổ hàm sóng để tìm kiếm một "cơ chế". Biến cố này là cơ bản về mặt chức năng.
+* **EN:** It treats the valid detector response and the registered result as one terminal K-side closure event, without redefining the physical collapse mechanism.
+* **VN:** Nó xem detector response hợp lệ và kết quả đã ghi nhận như một biến cố closure phía K, không định nghĩa lại cơ chế collapse vật lý.
 
 ### 4.2. Closing the gap of "What registers the dial?" / Lấp đầy khoảng trống "Cái gì ghi nhận kim đo?"
-* **EN:** By uniting the act and result, it eliminates the ghost of a secondary registering system needed to "read" the physical dial. The dial moving *is* the reading.
-* **VN:** Bằng cách hợp nhất hành động và kết quả, nó loại bỏ bóng ma của một hệ ghi nhận thứ hai cần thiết để "đọc" kim đo vật lý. detector response hợp lệ đã là đầu vào ghi nhận để khép kín kết quả.
+* **EN:** By uniting the registration act and registered result, it removes the need for a second registering system to create the first K-side closure. A valid detector response becomes the registration input that closes the result.
+* **VN:** Bằng cách hợp nhất hành động ghi nhận và kết quả đã ghi nhận, nó loại bỏ nhu cầu cần hệ ghi nhận thứ hai để tạo closure phía K đầu tiên. Detector response hợp lệ trở thành đầu vào ghi nhận để khép kín kết quả.
 
 ---
 
@@ -69,7 +69,7 @@ Hiện tại, QM mô tả tương tác vật lý (tiến hóa Schrödinger) và 
 Formalizing *Measurement Self-Completion* resolves BIAN-16:
 *(Việc chính thức hóa Sự Tự hoàn tất Phép đo giải quyết BIAN-16:)*
 
-1. **Axiomatizing the Born Rule:** It provides a philosophical grounding for why the Born Rule works seamlessly. It works because the registration layer does not separate valid detector response from registration closure.
-   *(Tiên đề hóa Quy tắc Born: Nó cung cấp nền tảng triết học giải thích vì sao Quy tắc Born hoạt động trơn tru. Nó hoạt động vì tầng ghi nhận không tách detector response hợp lệ khỏi sự khép kín ghi nhận.)*
-2. **Alignment with Dharmakīrti:** It brings physics back to the profound insight of Dharmakīrti: Registered status is not a human mental product; the valid detector response becomes registered only through registration closure.
-   *(Sự đồng điệu với Dharmakirti: Nó mang vật lý trở lại với tuệ giác sâu sắc của Dharmakirti: Trạng thái ghi nhận không phải là sản phẩm tâm lý con người; detector response hợp lệ chỉ trở thành ghi nhận thông qua sự khép kín ghi nhận.)*
+1. **Registration-Layer Reading of the Born Rule:** It provides a registration-layer explanation for why a valid outcome can close as a registered result without adding a second registering act.
+   *(Cách đọc Quy tắc Born ở tầng ghi nhận: Nó cung cấp một giải thích ở tầng ghi nhận cho việc vì sao một outcome hợp lệ có thể khép lại như kết quả đã ghi nhận mà không thêm hành động ghi nhận thứ hai.)*
+2. **Alignment with Dharmakīrti:** It aligns VVV-QMRF with Dharmakīrti's act-result identity: registered status is not a human mental product; the valid detector response becomes registered only through registration closure.
+   *(Sự đồng điệu với Dharmakirti: Nó đặt VVV-QMRF tương ứng với nguyên lý đồng nhất hành động-kết quả của Dharmakirti: trạng thái ghi nhận không phải là sản phẩm tâm lý con người; detector response hợp lệ chỉ trở thành ghi nhận thông qua closure ghi nhận.)*

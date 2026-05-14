@@ -22,17 +22,17 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 * **Vietnamese Name:** Ghi nhận Vắng mặt Hợp lệ / Ghi nhận Rỗng Có Điều kiện
 * **Buddhist Equivalent:** *Anupalabdhi* (Non-perception — the valid registration of the absence of a perceivable object)
 * **Node:** N_BE_00253 — Anupalabdhi (RCA node; `SYSTEM_Buddhist_Epistemology/system_be_full.md`)
-* **Mathematical Symbol:** Absence Projection Operator $\hat{\Pi}_{absent}$
+* **Mathematical Symbol:** Absence Projection Operator - registration $\hat{\Pi}_{absent}$
 
 ---
 
 ## 2. Definition
 
 **English:**
-A formal quantum registration category establishing that the null result of a measurement — detecting no particle, no photon, no signal — is not a registration failure but a distinct, structurally complete positive registration act. The null result, when the measurement setup satisfies E10's Trairūpya conditions, formally establishes the *absence* of the measured property as positive absence registration. This is categorically different from both "measurement not performed" and "measurement failed."
+A formal quantum registration category establishing that the null result of a measurement — detecting no particle, no photon, no signal — is not a registration failure but a distinct positive registration act under validity conditions. When the measurement setup satisfies E10's Trairūpya conditions, the null result registers the *absence* of the measured property as conditioned absence registration. This is categorically different from both "measurement not performed" and "measurement failed."
 
 **Vietnamese:**
-Một phạm trù ghi nhận lượng tử chính thức khẳng định rằng kết quả rỗng của phép đo — không phát hiện hạt, không có photon, không có tín hiệu — không phải là thất bại ghi nhận mà là một hành vi ghi nhận dương tính hoàn chỉnh riêng biệt. Kết quả rỗng, khi thiết lập đo thỏa điều kiện Trairūpya của E10, chính thức thiết lập *sự vắng mặt* của thuộc tính đo như ghi nhận vắng mặt dương tính.
+Một phạm trù ghi nhận lượng tử chính thức khẳng định rằng kết quả rỗng của phép đo — không phát hiện hạt, không có photon, không có tín hiệu — không phải là thất bại ghi nhận mà là một hành vi ghi nhận dương tính riêng biệt trong điều kiện hợp lệ. Khi thiết lập đo thỏa điều kiện Trairūpya của E10, kết quả rỗng ghi nhận *sự vắng mặt* của thuộc tính đo như ghi nhận vắng mặt có điều kiện.
 
 ---
 

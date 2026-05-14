@@ -22,7 +22,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 * **Vietnamese Name:** Ghi nhận Giới hạn Năng lực / Chế độ Ghi nhận Siêu việt
 * **Buddhist Equivalent:** *Alaukika pratyakṣa* (Extraordinary perception — perception by a faculty operating beyond ordinary sensory limits)
 * **Node:** N_BE_00012
-* **Mathematical Symbol:** Transcendental Measurement Operator $\hat{M}_{trans}$
+* **Mathematical Symbol:** Limit-Faculty Registration Operator $\hat{M}_{trans}$
 
 ---
 

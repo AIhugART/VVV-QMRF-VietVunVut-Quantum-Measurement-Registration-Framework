@@ -29,10 +29,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## 2. Definition
 
 **English:**
-A formal registration-layer framework positing that quantum state transitions (quantum jumps) are not continuous processes but instantaneous, indivisible registration discontinuities. The quantum jump between eigenstate $|E_n\rangle$ and $|E_m\rangle$ is not a smooth evolution but a structurally complete singular moment — a *kṣaṇa* — with no intermediate state. The apparent Schrödinger continuous evolution is the *conceptual* narrative imposed between discrete jump-moments.
+A formal registration-layer framework treating quantum state transitions (quantum jumps) as discrete registration discontinuities. The quantum jump between eigenstate $|E_n\rangle$ and $|E_m\rangle$ is modeled as a structurally bounded registration moment — a *kṣaṇa* — while Schrödinger evolution remains the standard continuous physical dynamics between such registration events.
 
 **Vietnamese:**
-Một khung lớp ghi nhận chính thức khẳng định rằng các chuyển đổi trạng thái lượng tử (bước nhảy lượng tử) không phải là quá trình liên tục mà là các gián đoạn ghi nhận tức thời, bất phân. Bước nhảy lượng tử giữa $|E_n\rangle$ và $|E_m\rangle$ là một sát-na đơn hoàn chỉnh về cấu trúc — không có trạng thái trung gian. Tiến hóa liên tục Schrödinger biểu kiến là câu chuyện *khái niệm* được áp đặt giữa các sát-na nhảy rời rạc.
+Một khung tầng ghi nhận xem các chuyển đổi trạng thái lượng tử (quantum jumps) như các gián đoạn ghi nhận rời rạc. Bước nhảy lượng tử giữa $|E_n\rangle$ và $|E_m\rangle$ được mô hình hóa như một khoảnh khắc ghi nhận có biên cấu trúc — một *kṣaṇa* — trong khi tiến hóa Schrödinger vẫn là động lực vật lý liên tục chuẩn giữa các sự kiện ghi nhận đó.
 
 ---
 
@@ -44,9 +44,9 @@ Standard QM narrative:
   Discontinuous: |E_n⟩ → |E_m⟩  ← quantum jump (no intermediate state)
 
 Kṣaṇa model:
-  The jump IS the fundamental unit — the kṣaṇa moment
-  Schrödinger evolution is the registration-layer interpolation between kṣaṇa events
-  Each kṣaṇa: complete, indivisible, causally linked to next kṣaṇa
+  The jump is treated as the registration unit — the kṣaṇa moment
+  Schrödinger evolution remains the physical dynamics between registration events
+  Each kṣaṇa: bounded as a registration event and causally linked to the next kṣaṇa
 
 Formal distinction:
   Continuous evolution: ρ(t) = e^{-iHt/ℏ}ρ(0)e^{+iHt/ℏ}  (unitary, smooth)
