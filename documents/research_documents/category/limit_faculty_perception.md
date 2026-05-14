@@ -1,23 +1,25 @@
-# Formal Epistemic Category: Limit-Faculty Perception / Transcendental Observation Mode
-# Phạm trù Nhận thức luận: Tri giác Giới hạn Năng lực / Chế độ Quan sát Siêu việt
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
-**Author:** VietVunVut (Viet - Nguyen Xuan)  
-**GitHub:** https://github.com/AIhugART/  
-**Date:** 2026-05-12  
-**Status:** Proposal — Epistemic class D  
+# Formal Registration Category: Limit-Faculty Registration / Transcendental Registration Mode
+# Phạm trù Ghi nhận: Ghi nhận Giới hạn Năng lực / Chế độ Ghi nhận Siêu việt
+
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Author:** VietVunVut (Viet - Nguyen Xuan)
+**GitHub:** https://github.com/AIhugART/
+**Date:** 2026-05-12
+**Status:** Proposal — Registration class D
 **Lineage:** gap/ (BIAN-3) → category/ (Category 11) → framework/ (E12)
 
-> **Context:** This document formally establishes a new epistemic category for QM to resolve structural gap **BIAN-3**. BIAN-3 highlights QM's lack of a formal category for measurement by a faculty operating beyond the limits of ordinary classical perception — equivalent to *Alaukika pratyakṣa* (Transcendental/Extraordinary Perception) in Buddhist Epistemology.
+> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-3**. BIAN-3 highlights QM's lack of a formal category for registration by a faculty operating beyond the limits of ordinary classical perception — equivalent to *Alaukika pratyakṣa* (Transcendental/Extraordinary Perception) in Buddhist Epistemology.
 >
-> *Tài liệu này giải quyết khoảng trống cấu trúc **BIAN-3**. BIAN-3 chỉ ra sự thiếu hụt của QM về phạm trù phép đo bởi một năng lực vượt giới hạn tri giác thông thường — tương đương Alaukika pratyakṣa (Tri giác Phi thường) trong Phật giáo.*
+> *Tài liệu này giải quyết khoảng trống cấu trúc **BIAN-3**. BIAN-3 chỉ ra sự thiếu hụt của QM về phạm trù ghi nhận bởi một năng lực vượt giới hạn tri giác thông thường — tương đương Alaukika pratyakṣa (Tri giác Phi thường) trong Phật giáo.*
 
 ---
 
 ## 1. Category Identity
 
-* **English Name:** Limit-Faculty Perception / Transcendental Observation Mode (TOM)
-* **Vietnamese Name:** Tri giác Giới hạn Năng lực / Chế độ Quan sát Siêu việt
+* **English Name:** Limit-Faculty Registration / Transcendental Registration Mode (TOM)
+* **Vietnamese Name:** Ghi nhận Giới hạn Năng lực / Chế độ Ghi nhận Siêu việt
 * **Buddhist Equivalent:** *Alaukika pratyakṣa* (Extraordinary perception — perception by a faculty operating beyond ordinary sensory limits)
 * **Node:** N_BE_00012
 * **Mathematical Symbol:** Transcendental Measurement Operator $\hat{M}_{trans}$
@@ -27,10 +29,10 @@
 ## 2. Definition
 
 **English:**
-A formal quantum measurement mode in which the observing instrument operates at or beyond the classical information-theoretic resolution limit, yet still yields valid epistemic content. This includes: weak measurements (extracting partial information without full collapse), quantum-limited amplifiers, and back-action-evading measurements. The defining characteristic is that the measurement faculty transcends ordinary projective measurement constraints while remaining epistemically valid.
+A formal quantum measurement mode in which the measurement instrument operates at or beyond the classical information-theoretic resolution limit, yet still yields valid registration content. This includes: weak measurements (extracting partial information without full collapse), quantum-limited amplifiers, and back-action-evading measurements. The defining characteristic is that the measurement faculty transcends ordinary projective measurement constraints while remaining registration-valid.
 
 **Vietnamese:**
-Một chế độ đo lường lượng tử chính thức trong đó công cụ quan sát hoạt động tại hoặc vượt giới hạn phân giải thông tin cổ điển, nhưng vẫn cho ra nội dung nhận thức hợp lệ. Gồm: phép đo yếu (trích xuất thông tin một phần không sụp đổ đầy đủ), khuếch đại giới hạn lượng tử, và phép đo né tránh phản tác dụng.
+Một chế độ đo lường lượng tử chính thức trong đó công cụ quan sát hoạt động tại hoặc vượt giới hạn phân giải thông tin cổ điển, nhưng vẫn cho ra nội dung ghi nhận hợp lệ. Gồm: phép đo yếu (trích xuất thông tin một phần không sụp đổ đầy đủ), khuếch đại giới hạn lượng tử, và phép đo né tránh phản tác dụng.
 
 ---
 
@@ -41,7 +43,7 @@ Standard PVM:   Full collapse — |ψ⟩ → |λᵢ⟩, ΔI = max, Δback-action
 
 TOM (Weak):     Partial collapse — |ψ⟩ → |ψ'⟩ (slightly shifted)
                 ΔI = ε (small), Δback-action = ε (small)
-                Valid epistemic content extracted via: weak value Aᵥ = ⟨φ|Â|ψ⟩/⟨φ|ψ⟩
+                Valid registration content extracted via: weak value Aᵥ = ⟨φ|Â|ψ⟩/⟨φ|ψ⟩
 
 Key property: Aᵥ can lie OUTSIDE the eigenvalue spectrum of Â
   → reveals quantum interference structure invisible to PVM
@@ -64,11 +66,11 @@ TOM satisfies the E10 validity gate — it is a genuine measurement, not decoher
 
 BIAN-3 resolution: QM's standard measurement formalism recognizes only the "ordinary" projective faculty (PVM). Weak measurement / back-action-evading techniques constitute a distinct faculty class that Buddhist logic anticipated via *Alaukika pratyakṣa*. Formalizing TOM:
 
-1. Legitimizes weak values as a first-class epistemic output (not mere "paradox").
-2. Provides the epistemic category for quantum-limited sensing beyond SQL (Standard Quantum Limit).
+1. Legitimizes weak values as first-class registration output (not mere "paradox").
+2. Provides the registration category for quantum-limited sensing beyond SQL (Standard Quantum Limit).
 3. Connects Buddhist *Alaukika* (extraordinary, non-ordinary-sense) perception to quantum metrology.
 
-> **Conclusion:** The Transcendental Observation Mode provides QM with the category it lacks: a valid measurement performed by a faculty that transcends the ordinary projective eigenvalue-only perception — exactly as *Alaukika pratyakṣa* transcends *Laukika* (ordinary sense) perception in Buddhist Epistemology.
+> **Conclusion:** The Transcendental Registration Mode provides QM with the category it lacks: a valid measurement performed by a faculty that transcends the ordinary projective eigenvalue-only perception — exactly as *Alaukika pratyakṣa* transcends *Laukika* (ordinary sense) perception in Buddhist Epistemology.
 
 ---
 

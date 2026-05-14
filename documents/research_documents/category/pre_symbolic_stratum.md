@@ -1,17 +1,19 @@
-# Formal Epistemic Category: Pre-Symbolic Stratum / Formalism-External Physical Event
-# Phạm trù Nhận thức luận: Tầng Tiền Biểu tượng / Sự kiện Vật lý Ngoài Hình thức
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
-**Author:** VietVunVut (Viet - Nguyen Xuan)  
-**GitHub:** https://github.com/AIhugART/  
-**Facebook:** https://www.facebook.com/xuanviet  
-**Date:** 2026-05-11  
-**Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
+# Formal Registration Category: Pre-Symbolic Stratum / Formalism-External Physical Event
+# Phạm trù Ghi nhận: Tầng Tiền Biểu tượng / Sự kiện Vật lý Ngoài Hình thức
+
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Author:** VietVunVut (Viet - Nguyen Xuan)
+**GitHub:** https://github.com/AIhugART/
+**Facebook:** https://www.facebook.com/xuanviet
+**Date:** 2026-05-11
+**Status:** Proposal — Registration class D (Derived, awaiting formal verification)
 **Lineage:** gap/ (BIAN-7) → category/ (Category 10) → framework/ (E4)
 
-> **Context / Ngữ cảnh:** This document formally establishes a new epistemic category for Quantum Mechanics (QM) to resolve the structural gap **BIAN-7** identified in the Buddhist Epistemology - Quantum Measurement mapping. This gap highlights QM's inability to represent the pre-symbolic, pre-conceptual physical event that precedes the emergence of a definite eigenvalue.
+> **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve the structural gap **BIAN-7** identified in the Buddhist Epistemology - Quantum Measurement mapping. This gap highlights QM's inability to represent the pre-symbolic, pre-conceptual physical event that precedes the emergence of a definite eigenvalue.
 >
-> *Tài liệu này chính thức thiết lập một phạm trù nhận thức luận mới cho Cơ học Lượng tử (QM) nhằm giải quyết khoảng trống cấu trúc **BIAN-7**. Khoảng trống này chỉ ra sự bất lực của QM trong việc biểu diễn sự kiện vật lý tiền biểu tượng, tiền khái niệm xảy ra trước khi eigenvalue xác định xuất hiện.*
+> *Tài liệu này chính thức thiết lập một phạm trù ghi nhận mới cho Cơ học Lượng tử (QM) nhằm giải quyết khoảng trống cấu trúc **BIAN-7**. Khoảng trống này chỉ ra sự bất lực của QM trong việc biểu diễn sự kiện vật lý tiền biểu tượng, tiền khái niệm xảy ra trước khi eigenvalue xác định xuất hiện.*
 
 ---
 
@@ -30,10 +32,10 @@
 ## 2. Definition / Định nghĩa
 
 **English:**
-A formal epistemic category that represents the pre-conceptual, pre-symbolic physical event occurring during measurement, prior to any eigenvalue assignment or symbolic registration. This event has causal content but no symbolic value. It is the physical stratum from which measurement results emerge through a symbolization process.
+A formal registration category that represents the pre-conceptual, pre-symbolic physical event occurring during measurement, prior to any eigenvalue assignment or K-side symbolic registration. This event has causal content but no symbolic value. It is the physical stratum from which measurement results emerge through a symbolization process.
 
 **Vietnamese:**
-Phạm trù nhận thức luận chính thức biểu diễn sự kiện vật lý tiền khái niệm, tiền biểu tượng xảy ra trong quá trình đo lường, trước bất kỳ phép gán eigenvalue hay đăng ký biểu tượng nào. Sự kiện này có nội dung nhân quả nhưng không có giá trị biểu tượng. Đây là tầng vật lý từ đó kết quả đo phát sinh qua quá trình biểu tượng hóa.
+Phạm trù ghi nhận chính thức biểu diễn sự kiện vật lý tiền khái niệm, tiền biểu tượng xảy ra trong quá trình đo lường, trước bất kỳ phép gán eigenvalue hay ghi nhận biểu tượng phía K nào. Sự kiện này có nội dung nhân quả nhưng không có giá trị biểu tượng. Đây là tầng vật lý từ đó kết quả đo phát sinh qua quá trình biểu tượng hóa.
 
 ---
 
