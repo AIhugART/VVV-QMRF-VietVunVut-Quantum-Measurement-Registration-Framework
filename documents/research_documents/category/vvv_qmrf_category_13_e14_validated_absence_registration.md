@@ -120,6 +120,226 @@ BIAN-9 resolution: QM treats null results as statistical leftovers. *Anupalabdhi
 4. **Trairūpya is the validity gate.** A null event becomes positive absence registration only when the setup makes the object detectable if present and rules out detector failure or non-measurement.
 5. **Application claims require boundaries.** Dark-matter reasoning and pramāṇa-level authority are useful framework applications, but they must remain conditional on rigorous measurement validity.
 
+### 5.2. RCA Five-Step Analysis / Phân tích RCA 5 bước
+
+#### 5.2.1 Define — observed issue / Xác định vấn đề
+
+**Symptom:** In standard QM language, a null result can look like ordinary detector silence, failed measurement, residual probability, or lack of information.
+
+**Cause:** Canonical QM supports no-result measurement and state update, but it does not provide a registration-layer category that distinguishes valid absence registration from apparatus failure or non-measurement.
+
+#### 5.2.2 Trace — 5 Whys / Truy nguyên 5 lần hỏi “vì sao”
+
+1. **Why can a null result be ambiguous?** Because “no detection” may mean absence, detector failure, no interaction, or incomplete setup.
+2. **Why is this ambiguity structural?** Because standard QM formalism records probabilities and state update, but not the authority conditions under which silence counts as a valid registration.
+3. **Why is a validity gate required?** Because a null event is evidential only if the object would be detectable if present and the registering system is functioning.
+4. **Why does Buddhist Epistemology help here?** Because *Anupalabdhi* treats non-perception of a perceivable object as valid absence cognition only under proper conditions.
+5. **Why does Category 13 exist?** Because VVV-QMRF needs a formal category that separates conditioned absence registration from E9-style non-informative null events.
+
+#### 5.2.3 Isolate — root cause / Cô lập nguyên nhân gốc
+
+**Root cause:** The old QM-side description of null results lacked a registration-category distinction between valid conditioned absence and invalid detector silence.
+
+#### 5.2.4 Fix — corrected formulation / Sửa đúng nguyên nhân
+
+Use this corrected formulation when precision is required:
+
+```text
+Validated Absence Registration (VAR) = a null result that positively registers absence
+only when E10-style validity conditions hold.
+
+VAR is not ordinary silence.
+VAR is not detector failure.
+VAR is not proof of a hidden physical substance.
+VAR is conditioned absence registration.
+```
+
+#### 5.2.5 Verify — root cause removed / Kiểm chứng đã loại bỏ nguyên nhân gốc
+
+The ambiguity is removed if every use of Category 13 distinguishes:
+
+```text
+Null result = operational no-click event.
+Failed measurement = no reliable registration.
+VAR/E14 = valid positive absence registration under conditions.
+Anupalabdhi = BE source for valid absence cognition.
+Π̂_absent = framework notation for conditioned absence projection.
+```
+
+### 5.3. Gap Type Classification / Phân loại Loại Khoảng trống
+
+| Gap aspect | Classification | RCA note |
+|---|---|---|
+| Source gap | **BIAN-9** — formal absence registration gap | QM lacks a registration category that treats valid null results as positive absence registration. |
+| Gap type | **Registration-category gap** | This is not merely a missing equation; it is a missing category for when null evidence becomes authoritative. |
+| Resolution type | **Category + framework postulate** | Category 13 supplies the detailed registration class; E14 supplies the framework-level postulate. |
+| Why not only a lemma? | A lemma connects existing stages; BIAN-9 requires a new registration class. | Unlike ENI/S1-Λ, this is not an interface between already-defined stages. |
+| Why not a canonical QM postulate? | VAR is VVV-QMRF registration-layer architecture. | Canonical QM supports null measurement and state update, but not the Buddhist-derived validity category. |
+| Boundary | **Derived, not canonical** | Treat VAR as a framework proposal unless future formal and experimental validation upgrades it. |
+
+### 5.4. Prototype VAR Instance / Trường hợp Mẫu của VAR
+
+```text
+Prototype VAR instance:
+
+  Setup:      Detector and measurement context are valid under E10 conditions.
+  Target:     The measured property would couple to the detector if present.
+  Event:      Detector does not fire / no-result measurement occurs.
+  Gate:       E10 / Trairūpya validity check passes.
+  Operator:   Π̂_absent applies as conditioned absence projection.
+  Update:     Registration-state update records absence, not ignorance.
+  Contrast:   E9 failure path is ruled out.
+
+  → VAR instance confirmed.
+```
+
+**RCA boundary:** The prototype is confirmed only when the detector was capable of registering the target if present. If the detector is broken, misaligned, or outside the valid measurement context, the event falls back to E9-style non-informative null registration.
+
+### 5.5. Layer Architecture Position / Vị trí trong Kiến trúc Tầng
+
+```text
+gap/BIAN-9
+  ↓ diagnoses missing formal absence-registration category
+category/Category 13 — Validated Absence Registration (VAR)
+  ↓ specifies detailed registration class and boundary conditions
+framework/E14 — Epistemic Absence Postulate
+  ↓ installs VAR into VVV-QMRF postulate architecture
+VVV-QMRF registration-state update layer
+  ↓ applies conditioned absence registration in valid null events
+```
+
+| Layer | Document / component | Role |
+|---|---|---|
+| Gap | BIAN-9 | Diagnoses QM's missing category for valid absence registration. |
+| Category | Category 13 / VAR | Defines the registration class and validity boundaries. |
+| Framework | E14 | Promotes the category into a postulate-level rule. |
+| Validation gate | E10 / Trairūpya | Decides when a null event is valid evidence rather than failure. |
+| Failure contrast | E9 | Separates VAR from non-informative null events and detector failure. |
+
 ---
 
-*Source: BIAN_index_SOT.md (BIAN-9), system_be_full.md (N_BE_00253), SYSTEM_Quantum_Measurement/system_qm_full.md, documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md, node_QM_VVV.md (N_QM_VVV_00020), framework/E10_tripartite_validity_postulate.md, framework/E14_epistemic_absence_postulate.md*
+## 6. Assertion Level / Mức Khẳng định
+
+| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+|---|---|---|---|
+| *Anupalabdhi* supports valid absence cognition | *Anupalabdhi* hỗ trợ nhận thức vắng mặt hợp lệ | **M** — source-supported | Direct BE support: `N_BE_00253`; `ED_BE_00115`; `ED_BE_00116`. |
+| A no-result measurement can still update the quantum state | Phép đo không có kết quả vẫn có thể cập nhật trạng thái lượng tử | **M** — QM-operational | QM support: `N_QM_00033 → N_QM_00032`; `ED_QM_00039`. |
+| VAR treats a valid null result as a positive registration act | VAR coi kết quả rỗng hợp lệ là hành vi ghi nhận dương tính | **D** — framework-derived | VVV-QMRF category proposal: `N_QM_VVV_00020`; depends on E10 validity conditions. |
+| `Π̂_absent` formalizes conditioned absence projection | `Π̂_absent` hình thức hóa phép chiếu vắng mặt có điều kiện | **D** — notation-derived | Supported by projection/state-update structure; not a separate canonical QM operator. |
+| Trairūpya functions as the validity gate for VAR | Trairūpya là cổng điều kiện hợp lệ cho VAR | **D** — cross-system mapping | BE support: `N_BE_00018`; framework use through E10; not a native QM condition. |
+| VAR generalizes beyond E11 interaction-free measurement | VAR khái quát rộng hơn E11 về phép đo không tương tác | **D** — framework relation | VAR covers conditioned null registration; E11 remains the narrower interaction-free case. |
+| Dark-matter registration reasoning follows from VAR | Lập luận ghi nhận kiểu vật chất tối đi theo VAR | **B** — boundary-sensitive application | No dedicated SOT node here; use only as conditional evidential analogy, not proof. |
+| VAR proves absence as a physical substance or hidden object | VAR chứng minh vắng mặt như một thực thể vật lý hoặc vật ẩn | **O** — overclaim | Not supported; absence is treated as conditioned registration content, not an added ontology. |
+
+**Summary / Tóm tắt:** Source-side absence cognition and QM null-state update are traceable. VAR/E14 remains a VVV-QMRF registration-layer proposal. Application claims are valid only when E10-style measurement-validity conditions are satisfied.
+
+---
+
+## 7. What Category 13 / E14 Does NOT Claim / Những gì Category 13 / E14 KHÔNG tuyên bố
+
+1. **Not every detector silence is valid absence registration** — a null event counts as VAR only when the object would be detectable if present and measurement validity conditions are satisfied.
+   *Không phải mọi sự im lặng của máy dò đều là ghi nhận vắng mặt hợp lệ — sự kiện rỗng chỉ là VAR khi đối tượng đáng lẽ phát hiện được nếu hiện diện và điều kiện hợp lệ của phép đo được thỏa mãn.*
+
+2. **Not a measurement failure claim** — VAR is distinct from broken-detector silence, non-measurement, or E9-style non-informative null events.
+   *Không phải tuyên bố về thất bại đo — VAR khác với máy dò hỏng, không đo, hoặc sự kiện rỗng không mang thông tin kiểu E9.*
+
+3. **Not a new canonical QM postulate** — VAR is a VVV-QMRF registration-layer category built on canonical null measurement and state-update support.
+   *Không phải tiên đề QM tiêu chuẩn mới — VAR là phạm trù tầng ghi nhận của VVV-QMRF, dựa trên nền hỗ trợ từ phép đo rỗng và cập nhật trạng thái trong QM.*
+
+4. **Not proof that absence is a physical substance** — the framework treats absence as conditioned registration content, not as an independent physical object added to QM ontology.
+   *Không chứng minh rằng vắng mặt là một thực thể vật lý — framework coi vắng mặt là nội dung ghi nhận có điều kiện, không phải vật thể vật lý độc lập được thêm vào bản thể luận QM.*
+
+5. **Not proof of dark matter or any specific hidden entity** — dark-matter reasoning is only a bounded example of evidential non-detection under rigorous conditions.
+   *Không chứng minh vật chất tối hay bất kỳ thực thể ẩn cụ thể nào — lập luận vật chất tối chỉ là ví dụ có giới hạn về không-phát-hiện có giá trị chứng cứ trong điều kiện nghiêm ngặt.*
+
+6. **Not experimentally validated as a new physical mechanism** — E14 is an architectural registration postulate unless future formal predictions and tests are supplied.
+   *Chưa được kiểm chứng thực nghiệm như một cơ chế vật lý mới — E14 là tiên đề kiến trúc về ghi nhận trừ khi có dự đoán hình thức và kiểm nghiệm tương lai.*
+
+---
+
+## 8. Vietnamese Explanation / Giải thích tiếng Việt rõ ràng
+
+Nói đơn giản, Category 13 / E14 xử lý câu hỏi:
+
+```text
+Khi máy đo không phát hiện gì, đó là “không biết”, “máy hỏng”, hay là một ghi nhận hợp lệ rằng cái cần tìm vắng mặt?
+```
+
+Câu trả lời của VVV-QMRF là:
+
+```text
+Không phải mọi “no detection” đều có giá trị.
+Chỉ khi điều kiện đo hợp lệ, “no detection” mới trở thành “Validated Absence Registration”.
+```
+
+Ví dụ dễ hiểu:
+
+```text
+Nếu đèn cảm biến hoạt động tốt và chắc chắn sẽ sáng khi có người,
+thì việc đèn không sáng có thể ghi nhận rằng không có người trong vùng cảm biến.
+
+Nhưng nếu đèn hỏng, mất điện, hoặc đặt sai chỗ,
+thì việc đèn không sáng không chứng minh được gì.
+```
+
+Trong ngôn ngữ của project:
+
+```text
+Anupalabdhi = nguồn BE cho nhận thức vắng mặt hợp lệ.
+VAR/E14 = tầng VVV-QMRF biến no-result hợp lệ thành ghi nhận vắng mặt.
+Π̂_absent = ký hiệu framework cho phép chiếu vắng mặt có điều kiện.
+E10 / Trairūpya = cổng kiểm tra điều kiện hợp lệ.
+E9 = vùng lỗi hoặc null event không mang thông tin.
+```
+
+Ranh giới cần nhớ:
+
+```text
+VAR giống “Anupalabdhi” ở cấu trúc ghi nhận vắng mặt hợp lệ,
+nhưng VAR không biến vắng mặt thành một vật thể vật lý mới.
+VAR cũng không chứng minh dark matter; nó chỉ cho thấy non-detection có thể là evidence nếu điều kiện đo đủ chặt.
+```
+
+---
+
+## 9. Mermaid Diagram Map / Sơ đồ Mermaid
+
+```mermaid
+flowchart TD
+    subgraph BE["Buddhist Epistemology — Pramāṇavāda"]
+        ANU["N_BE_00253<br/>Anupalabdhi<br/>valid absence cognition"]
+        ABH["N_BE_00151<br/>Abhāva<br/>absence"]
+        TRA["N_BE_00018<br/>Trairūpya<br/>validity conditions"]
+    end
+
+    subgraph QMS["Standard Quantum Measurement"]
+        NULL["N_QM_00033<br/>No-result measurement<br/>detector non-click"]
+        UPDATE["N_QM_00022<br/>Post-measurement state update"]
+        PROJ["N_QM_00018<br/>Projection operator support"]
+    end
+
+    subgraph VVV["VVV-QMRF Registration Layer"]
+        VAR["N_QM_VVV_00020<br/>Validated Absence Registration<br/>Category 13 / E14"]
+        PI["Π̂_absent<br/>conditioned absence projection"]
+        E10["E10<br/>measurement-validity gate"]
+        E9["E9<br/>non-informative null event / failure contrast"]
+        BOUND["RCA boundary<br/>evidence under conditions, not physical substance"]
+    end
+
+    ANU -->|"supports absence cognition"| VAR
+    ABH -->|"absence source lineage"| ANU
+    TRA -->|"validity structure"| E10
+
+    NULL -->|"operational null event"| VAR
+    PROJ -->|"formal support"| PI
+    UPDATE -->|"state-update support"| VAR
+
+    E10 -->|"validates"| VAR
+    PI -->|"formalizes"| VAR
+    E9 -. "negative control" .-> VAR
+    VAR --> BOUND
+```
+
+---
+
+*Source: BIAN_index_SOT.md (BIAN-9), system_be_full.md (N_BE_00253), SYSTEM_Quantum_Measurement/system_qm_full.md, documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md, node_QM_VVV.md (N_QM_VVV_00020), framework/E10_tripartite_validity_postulate.md, framework/E14_epistemic_absence_postulate.md; schema pattern adapted from framework/E1_self_certification_postulate.md, mapping/BE15_Apoha_exclusion.md, and meta_architecture/ENI_epistemic_natural_interface.md*
