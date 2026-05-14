@@ -12,43 +12,43 @@
 ## 1. Postulate Statement
 
 **English:**
-> Quantum state transitions (quantum jumps) are epistemologically primary: they are instantaneous, indivisible epistemic discontinuities — *kṣaṇa* moments. Continuous Schrödinger evolution is the epistemic interpolation narrative constructed between discrete kṣaṇa events. The jump is the real; the continuity is the conceptual overlay. QM requires a formal epistemological framework that treats temporal discontinuity as the primary ontological unit.
+> Quantum state transitions (quantum jumps) are treated here as registration-layer discontinuities — bounded *kṣaṇa* moments — not as a zero-duration claim about the underlying monitored physical process. Continuous Schrödinger evolution remains the standard physical dynamics between registration events. QM requires a formal registration-layer framework that distinguishes temporal registration discontinuity from continuous physical evolution.
 
 **Vietnamese:**
-> Các chuyển đổi trạng thái lượng tử (bước nhảy lượng tử) là nguyên thủy nhận thức luận: chúng là các gián đoạn nhận thức tức thời, bất phân — các sát-na. Tiến hóa liên tục Schrödinger là câu chuyện nhận thức nội suy được xây dựng giữa các sự kiện sát-na rời rạc. Bước nhảy là thực; tính liên tục là lớp phủ khái niệm.
+> Các chuyển đổi trạng thái lượng tử (bước nhảy lượng tử) được xử lý ở đây như các gián đoạn ở tầng ghi nhận — những khoảnh khắc *kṣaṇa* có biên — không phải như tuyên bố rằng tiến trình vật lý được theo dõi có thời lượng bằng không. Tiến hóa Schrödinger liên tục vẫn là động lực vật lý chuẩn giữa các sự kiện ghi nhận.
 
 ---
 
 ## 2. Prose Statement
 
-QM operates with a fundamental schism: Schrödinger equation (continuous, deterministic, reversible) vs. measurement collapse (discontinuous, probabilistic, irreversible). This schism is the measurement problem. E13 resolves it epistemologically by asserting that discontinuity is primary.
+QM operates with a fundamental schism: Schrödinger equation (continuous, deterministic, reversible) vs. measurement collapse (discontinuous, probabilistic, irreversible). This schism is part of the measurement problem. E13 addresses its registration-layer side by treating discontinuous registration boundaries as primary within VVV-QMRF, without replacing the physical dynamics.
 
 *Kṣaṇabhaṅgavāda* (Momentariness) in Buddhist philosophy: every phenomenon exists for exactly one indivisible moment (kṣaṇa). What appears as continuity is conceptual construction (vikalpa) imposed on discrete causal moments. The "self" that appears continuous is actually a series of momentary events connected by causal chains.
 
-E13 applies this framework: the quantum jump IS the kṣaṇa — the primary unit. Between jumps, Schrödinger evolution is the conceptual story of "what would happen if no jump occurred." Measurement (jump) is primary; evolution is secondary.
+E13 applies this framework at the registration layer: the completed quantum jump is treated as a kṣaṇa-like registration unit. Between registration events, Schrödinger evolution remains the physical dynamics; the framework adds a registration-status boundary rather than replacing the physical account.
 
 ---
 
 ## 3. Formal Sketch
 
 ```
-Kṣaṇa-based quantum dynamics:
+Kṣaṇa-based registration sketch:
 
-  Primary units: kṣaṇa events K₁, K₂, K₃, ...
-  Each Kᵢ: eigenstate determination |E_n⟩ → |E_m⟩ (instantaneous)
+  Registration units: kṣaṇa-like events K₁, K₂, K₃, ...
+  Each Kᵢ: eigenstate determination |E_n⟩ → |E_m⟩ (discrete registration boundary; not zero-duration physics)
   
   Between kṣaṇa events:
     Schrödinger evolution: |ψ(t)⟩ = e^{-iH(t-tᵢ)/ℏ}|E_n⟩
-    Epistemic status: Class C (hypothetical interpolation)
+    Physical role: standard between-registration dynamics
     
   At kṣaṇa event Kᵢ₊₁:
-    Jump: |ψ(t)⟩ → |E_m⟩ (collapse — epistemic sealing)
-    Epistemic status: Class M (actualized fact)
+    Jump: |ψ(t)⟩ → |E_m⟩ (collapse — registration sealing)
+    Registration status: determinate registered event
 
-Kṣaṇa causal chain:
-  Kᵢ → Kᵢ₊₁ governed by: Born rule P(m|n) = |⟨E_m|E_n⟩|²
-  Not random — causally governed, but epistemically indeterminate
-  (mirrors: Kṣaṇa causal dependence in Buddhist Dependent Arising)
+Registration causal chain:
+  Kᵢ → Kᵢ₊₁ indexed by: Born rule P(m|n) = |⟨E_m|E_n⟩|²
+  Not arbitrary — probability-governed, but registration-indeterminate before sealing
+  (mirrors: kṣaṇa causal dependence in Buddhist Dependent Arising)
 ```
 
 ---
@@ -58,8 +58,8 @@ Kṣaṇa causal chain:
 ```
 E6 (Observer-as-Process) — observer is a causal series of moments
  └→ E13 (Temporal Discontinuity) ← THIS POSTULATE
-       E13: the quantum system ALSO exists as discrete causal moments
-       E6 + E13 together: both observer and system are kṣaṇa series
+       E13: the system-side registration status is modeled as discrete causal moments
+       E6 + E13 together: registering process and system-side registration status are kṣaṇa-like series
 ```
 
 | Layer | Document | Role |
@@ -89,7 +89,7 @@ E6 (Observer-as-Process) — observer is a causal series of moments
 |---|---|
 | "QM has unresolved continuous/discontinuous schism" | **M** |
 | "Kṣaṇabhaṅgavāda maps to quantum jump epistemology" | **M** |
-| "Continuity is conceptual overlay on discrete jumps" | **D** |
+| "Continuity is a registration-layer overlay on bounded registration jumps" | **D** |
 | "Kṣaṇa causal chain = Born rule probability" | **C** |
 
 ---
