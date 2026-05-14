@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # Buddhist Epistemology to Quantum Measurement — 1:1 RCA Mapping
 
 ## Scope
@@ -242,7 +244,7 @@ This is a line-by-line RCA mapping from the Buddhist Epistemology concept table 
 | 218 | Dharmakīrti's pragmatism | 101 | Interpretation Maxim | Strong | Pragmatic integration maps to judging interpretation by fruitful insight and experimental use. | BE 218; QM 101 |
 | 219 | Conceptual mental construction | 3 | Classical vs Quantum State | Medium | Vikalpa as constructed category maps to classical description layered over quantum state structure. | BE 219; QM 3 |
 | 220 | Tadutpatti | 75 | Hamiltonian H | Strong | Causal production maps to Hamiltonian-generated evolution. | BE 220; QM 75 |
-| 221 | Tādātmya | 72 | Simultaneously Measurable Observables | Medium | Identity relation maps to shared-eigenbasis compatibility among commuting observables. | BE 221; QM 72 |
+| 221 | Tādātmya | 72 | Simultaneously Measurable Observables | Medium | Logical genus-species identity is only analogically compared with shared-eigenbasis compatibility among commuting observables; not physical identity. | BE 221; QM 72 |
 | 222 | Anupalabdhi | 33 | No-Result Measurement (Null Measurement) | Strong | Non-perception maps directly to a null measurement outcome carrying information. | BE 222; QM 33 |
 | 223 | Kārya-hetu | 21 | System–Meter Coupling | Medium | Effect reason maps to an observed effect produced through causal coupling. | BE 223; QM 21 |
 | 224 | Svabhāva-hetu | 17 | Observable (Hermitian Operator) | Medium | Essential-property reason maps to an observable property taken as structurally diagnostic. | BE 224; QM 17 |

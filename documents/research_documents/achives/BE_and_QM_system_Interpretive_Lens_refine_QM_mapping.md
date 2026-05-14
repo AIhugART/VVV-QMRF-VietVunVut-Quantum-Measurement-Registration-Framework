@@ -793,7 +793,7 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 
 - **Buddhist Epistemology:** The first of the two valid grounds for anumāna. A relation of essential co-nature between liṅga and sādhya: the two share an essential production relation or identity of nature such that the presence of one invariably accompanies the presence of the other. Example: the inference from smoke to fire is grounded in their shared nature of production from a common source.
 - **Quantum Measurement:** Correlated quantum properties from common preparation. When two observable properties of a quantum system co-occur because they are both determined by the same preparation procedure or conservation law, their correlation is grounded in a shared production relation. Example: conservation of angular momentum in pair production correlates spin outcomes across detectors.
-- **Correspondence type:** Partial. Conservation-based correlations approximate tādātmya. Entanglement correlations exceed both tādātmya and tadutpatti (see BIAN-10).
+- **Correspondence type:** Partial. Conservation-based correlations approximate tadutpatti; any comparison with tādātmya is only an analogy to invariance, not Tādātmya proper. Entanglement correlations exceed both tādātmya and tadutpatti (see BIAN-10).
 
 ---
 

@@ -47,7 +47,7 @@ Entanglement — IRB (VVV-QMRF extension relation):
   → no local hidden-variable account can reproduce the Bell-violating correlations
 
 Dharmakīrti's recognized svabhāvapratibandha types and VVV-QMRF extension:
-  Tādātmya (identity-grounded; classical Dharmakīrti type) → identity-analogue contrast
+  Tādātmya (logical genus-species identity; classical Dharmakīrti type) → identity-analogue contrast
   Tadutpatti (causal-grounded; classical Dharmakīrti type)  → causal-coupling contrast
   IRB (VVV-QMRF extension, not a classical subtype)         → Bell-nonlocal entanglement ← BIAN-10
 ```

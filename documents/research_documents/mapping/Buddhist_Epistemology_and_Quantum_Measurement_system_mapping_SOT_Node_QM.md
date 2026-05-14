@@ -840,7 +840,7 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 - **Quantum Measurement:** Correlated quantum properties from common preparation. When two observable properties of a quantum system co-occur because they are both determined by the same preparation procedure or conservation law, their correlation is grounded in a shared production relation. Example: conservation of angular momentum in pair production correlates spin outcomes across detectors.
 - **QM node(s):** N_QM_00047 — Entanglement; N_QM_00051 — Composite Observables; N_QM_00075 — Hamiltonian H
 - **QM edge(s):** ED_QM_00059: N_QM_00051 → N_QM_00047 — detects structure of (direct).
-- **Correspondence type:** Partial. Conservation-based correlations approximate tādātmya. Entanglement correlations exceed both tādātmya and tadutpatti (see BIAN-10).
+- **Correspondence type:** Partial. Conservation-based correlations approximate tadutpatti; any comparison with tādātmya is only an analogy to invariance, not Tādātmya proper. Entanglement correlations exceed both tādātmya and tadutpatti (see BIAN-10).
 
 ---
 
