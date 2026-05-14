@@ -44,7 +44,8 @@ Entanglement — IRB (VVV-QMRF extension relation):
 
   Bell inequality violation: |⟨CHSH⟩| > 2
   → supports a registration-layer reading of non-separability as irreducible
-  → no local hidden-variable account can reproduce the Bell-violating correlations
+  → under standard Bell assumptions (locality + measurement independence), no local hidden-variable account can reproduce the Bell-violating correlations
+  → superdeterministic and retrocausal interpretations remain exotic loopholes / alternative assumption frameworks, not ordinary local hidden-variable accounts
 
 Dharmakīrti's recognized svabhāvapratibandha types and VVV-QMRF extension:
   Tādātmya (logical genus-species identity; classical Dharmakīrti type) → logical-identity contrast only; not QM state-vector identity or identical-particle exchange symmetry
@@ -60,7 +61,7 @@ BIAN-10 resolution: Intrinsic Relational Binding / Entanglement-registration Arc
 
 1. It names entanglement as a registration relation category, not merely a physical curiosity.
 2. It preserves Dharmakīrti's two-type taxonomy by marking IRB as a VVV extension.
-3. It explains local-hidden-variable failure through Bell violation, not by saying all local theories are causal only.
+3. It explains local-hidden-variable failure under standard Bell assumptions through Bell violation, not by saying all local theories are causal only.
 
 > **Conclusion:** Intrinsic Relational Binding / Entanglement-registration Architecture resolves BIAN-10 only as a VVV-QMRF registration-layer category. It preserves the standard QM substrate while adding the missing K-side classification and validity boundary.
 
@@ -84,7 +85,7 @@ BIAN-10 resolution: Intrinsic Relational Binding / Entanglement-registration Arc
 | §1-§2 | BIAN-10 / gap diagnosis | BIAN SOT resolves this gap through Category 14 + E15. | N_BE_00021; support: N_BE_00100 | ED_BE_00012 | Strong / No node | Gap diagnosis is not by itself an empirical proof; it identifies the missing registration category. |
 | §1-§2 | Intrinsic Relational Binding / Entanglement-registration Architecture | VVV-QM RCA assigns the category support in node_QM_VVV. | N_QM_VVV_00025 | — | Derived | Framework category; not a canonical QM postulate unless independently validated. |
 | §1 | BE source analogue | *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types | N_BE_00021; support: N_BE_00100 | ED_BE_00012 | Medium | Source lineage or analogy; do not collapse BE ontology into QM physics. |
-| §2-§3 | QM substrate | tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion | N_QM_00045; N_QM_00046; N_QM_00047; N_QM_00090; N_QM_00091 | ED_QM_00053; ED_QM_00054; ED_QM_00055; ED_QM_00103; ED_QM_00104 | QM-only | Canonical QM supports the physical substrate, not the whole VVV-QMRF category. |
+| §2-§3 | QM substrate | tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions | N_QM_00045; N_QM_00046; N_QM_00047; N_QM_00090; N_QM_00091 | ED_QM_00053; ED_QM_00054; ED_QM_00055; ED_QM_00103; ED_QM_00104 | QM-only | Canonical QM supports the physical substrate, not the whole VVV-QMRF category. |
 | §3 | Formal symbol / operator | Entanglement Relation Tensor `𝓔_svabh` | N_QM_VVV_00025 | — | Derived | Framework notation; do not cite as a source-system operator. |
 | §4 | Category implication | Classify entanglement-registration as IRB: an extension relation supported by Bell-nonlocal correlations but not reducible to Dharmakīrti's classical causal or identity types. | N_QM_VVV_00025 | — | Medium | Valid only within the stated registration-layer boundary. |
 | §4 | Overclaim risk | not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation | — | — | Overclaim | Keep wording conditional and registration-layer specific. |
@@ -93,7 +94,7 @@ BIAN-10 resolution: Intrinsic Relational Binding / Entanglement-registration Arc
 
 1. **BIAN-10 is a structural gap, not a direct physical discovery.** The gap identifies missing registration architecture.
 2. **The BE source is bounded.** *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types anchors the analogy or source lineage, but does not automatically become a QM mechanism.
-3. **The QM substrate is real but insufficient.** tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion provides support, while Intrinsic Relational Binding / Entanglement-registration Architecture names the added K-side layer.
+3. **The QM substrate is real but insufficient.** tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions provides support, while Intrinsic Relational Binding / Entanglement-registration Architecture names the added K-side layer.
 4. **The VVV node(s) are derived.** N_QM_VVV_00025 belong to the framework proposal and should be labeled as derived unless later validated.
 5. **Boundary control is mandatory.** The main overclaim to avoid is: not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation.
 
@@ -124,7 +125,7 @@ Use this bounded formulation when precision is required:
 ```text
 Intrinsic Relational Binding / Entanglement-registration Architecture = a VVV-QMRF registration-layer category for BIAN-10.
 BE source: *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types.
-QM substrate: tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion.
+QM substrate: tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions.
 VVV formalism: Entanglement Relation Tensor `𝓔_svabh` / N_QM_VVV_00025.
 Boundary: not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation.
 ```
@@ -135,7 +136,7 @@ The ambiguity is removed if every use of Category 14 distinguishes:
 
 ```text
 BE source analogue = *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types.
-QM substrate = tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion.
+QM substrate = tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions.
 VVV-QMRF category = Intrinsic Relational Binding / Entanglement-registration Architecture.
 Formal symbol = Entanglement Relation Tensor `𝓔_svabh`.
 Boundary = not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation.
@@ -157,8 +158,8 @@ Boundary = not a third classical Dharmakīrti subtype, not a hidden signal, and 
 Prototype IRB instance:
 
   Setup: composite state is non-factorizable.
-  Event: measurements show Bell-violating correlations under appropriate assumptions.
-  Gate: local hidden-variable explanation is ruled out by Bell-type support.
+  Event: measurements show Bell-violating correlations under standard Bell assumptions.
+  Gate: local hidden-variable explanation is ruled out by Bell-type support under those assumptions.
   Update: VVV-QMRF classifies the relation as IRB at the registration layer.
   Contrast: causal production and identity remain contrast classes, not equivalents.
 
@@ -186,7 +187,7 @@ VVV-QMRF registration-state update layer
 | Category | Category 14 | Defines the detailed registration category. |
 | Framework | E15 | Promotes the category into postulate-level architecture. |
 | BE source | *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types | Supplies source-lineage or analogy under RCA boundary. |
-| QM substrate | tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion | Supplies physical or operational support only. |
+| QM substrate | tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions | Supplies physical or operational support only. |
 
 ---
 
@@ -216,13 +217,16 @@ VVV-QMRF registration-state update layer
 3. **Not boundary-free application** — not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation.
    *Không áp dụng tự do ngoài điều kiện hợp lệ đã nêu.*
 
-4. **Not a detector-engineering shortcut** — validity still depends on calibration, context, and the relevant E10-style gate where applicable.
+4. **Not closure of exotic Bell loopholes** — superdeterminism and retrocausality remain interpretation-dependent alternative assumption frameworks.
+   *Không đóng hoàn toàn các loophole diễn giải hiếm như superdeterminism hoặc retrocausality.*
+
+5. **Not a detector-engineering shortcut** — validity still depends on calibration, context, and the relevant E10-style gate where applicable.
    *Không bỏ qua hiệu chuẩn, bối cảnh, hoặc cổng hợp lệ kiểu E10 khi cần.*
 
-5. **Not an empirical proof of a new physical mechanism** — the category remains derived unless formal predictions and tests are supplied.
+6. **Not an empirical proof of a new physical mechanism** — the category remains derived unless formal predictions and tests are supplied.
    *Chưa phải bằng chứng thực nghiệm cho cơ chế vật lý mới nếu chưa có dự đoán và kiểm nghiệm.*
 
-6. **Not human-consciousness dependence** — registration-state update is a K-side framework term broader than human cognition.
+7. **Not human-consciousness dependence** — registration-state update is a K-side framework term broader than human cognition.
    *Không phụ thuộc ý thức con người; cập nhật trạng thái ghi nhận là thuật ngữ tầng K rộng hơn cognition của người.*
 
 ---
@@ -262,7 +266,7 @@ flowchart TD
     end
 
     subgraph QM["Standard Quantum Measurement substrate"]
-        QM1["tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion"]
+        QM1["tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions"]
     end
 
     subgraph VVV["VVV-QMRF Registration Layer"]
