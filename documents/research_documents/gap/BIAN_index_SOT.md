@@ -1,7 +1,7 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # BIAN Index — Source of Truth (SOT)
 # Chỉ mục BIAN — Nguồn Sự thật Duy nhất
-
-Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 
 **Version:** 1.0  
 **Date:** 2026-05-12  
@@ -42,7 +42,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 | BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | — | — | — | anadhyavasāya | — | — | — | — | ✅ Resolved — Cat 06 + E9 (no node) |
 | BIAN-14 | Tripartite Measurement Validity Conditions | N_BE_00018 | core | Triple-condition syllogism | Trairūpya | A1 | 8 | Four Postulates of QM | Medium | ✅ Resolved — Cat 09 + E10 |
 | BIAN-15 | Purely Contrastive Quantum Evidence Structure | — | — | — | kevalavyatirekin | — | — | — | — | ✅ Resolved — Cat 01 + E11 (no node) |
-| BIAN-16 | Measurement Self-Completion / No External Registration | N_BE_00001 | core | Valid cognition | Pramāṇa | A3 | 19 | Measurement (Physical Act) | Strong | ✅ Resolved — Cat 06 + E2 |
+| BIAN-16 | Measurement Self-Completion / No External Registration | N_BE_00001 | core | Valid cognition | Pramāṇa | A3 | 19 | Measurement (Physical Act) | Strong | ✅ Resolved — Cat 02 + E2 |
 | BIAN-17 | Regress-Stopping Principle for Measurement Chain | N_BE_00011 | core | Self-awareness | Svasaṃvedana | A3 | 38 | Quantum Trajectory | Weak | ✅ Resolved — Cat 05 + E1 |
 | BIAN-18 | Intrinsic vs Extrinsic Measurement Validity Location | — | — | — | svataḥ/parataḥ prāmāṇya | — | — | — | — | ✅ Resolved — Cat 04 + E7 (no node) |
 | BIAN-19 | Observer as Causal Process not Substance | N_BE_00066 | RCA | Non-self doctrine | Anātmavāda | A2 | 47 | Entanglement | Medium | ✅ Resolved — Cat 07 + E6 |
@@ -69,7 +69,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/
 | BIAN-13 | ✅ Resolved | Category 06 + E9 (Anadhyavasāya pipeline) | `category/vvv_qmrf_category_06_e09_null_registering_system_event.md`, `framework/E9_null_observer_postulate.md` | 2026-05-12 |
 | BIAN-14 | ✅ Resolved | Category 09 + E10 (Trairūpya pipeline) | `category/vvv_qmrf_category_09_e10_tripartite_registration_validity_matrix.md`, `framework/E10_tripartite_validity_postulate.md` | 2026-05-12 |
 | BIAN-15 | ✅ Resolved | Category 01 + E11 (Kevalavyatirekin pipeline) | `category/vvv_qmrf_category_01_e11_purely_contrastive_evidence.md`, `framework/E11_contrapositive_evidence_postulate.md` | 2026-05-12 |
-| BIAN-16 | ✅ Resolved | Category 06 + E2 (Pramāṇa pipeline) | `category/vvv_qmrf_category_02_e02_registration_self_completion_matrix.md`, `framework/E2_measurement_self_completion_postulate.md` | 2026-05-12 |
+| BIAN-16 | ✅ Resolved | Category 02 + E2 (Pramāṇa pipeline) | `category/vvv_qmrf_category_02_e02_registration_self_completion_matrix.md`, `framework/E2_measurement_self_completion_postulate.md` | 2026-05-12 |
 | BIAN-17 | ✅ Resolved | Category 05 + E1 (Svasaṃvedana pipeline) | `category/vvv_qmrf_category_05_e01_self_certifying_registration_operator.md`, `framework/E1_self_certification_postulate.md` | 2026-05-12 |
 | BIAN-18 | ✅ Resolved | Category 04 + E7 (no node — svataḥ/parataḥ structurally addressed) | `category/vvv_qmrf_category_04_e07_dual_phase_registration_certification.md`, `framework/E7_epistemic_validity_location_postulate.md` | 2026-05-12 |
 | BIAN-19 | ✅ Resolved | Category 07 + E6 (Anātmavāda pipeline) | `category/vvv_qmrf_category_07_e06_registering_system_as_process_framework.md`, `framework/E6_observer_as_process_postulate.md` | 2026-05-12 |
