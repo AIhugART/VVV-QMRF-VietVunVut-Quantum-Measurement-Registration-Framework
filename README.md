@@ -104,6 +104,15 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **VN:** Cơ học Lượng tử chuẩn có bốn tiên đề vật lý (P1–P4) mô tả không gian trạng thái, đại lượng đo được, phép đo, và động lực học. Các tiên đề này *im lặng* về kiến trúc ghi nhận của phép đo. VVV-QMRF lấp đầy các khoảng trống này bằng 16 tiên đề thuộc tầng ghi nhận, rút ra từ phân tích cấu trúc của Nhận thức luận Phật giáo Pramāṇa (truyền thống Dignāga–Dharmakīrti). 7 tiên đề đầu (E1–E7) định nghĩa các phép toán ghi nhận cốt lõi; 9 tiên đề mở rộng (E8–E16) bao phủ phủ quyết hồi tố, sự kiện rỗng, điều kiện hợp lệ, bằng chứng phản chứng, ghi nhận vượt phép chiếu, gián đoạn thời gian, ghi nhận vắng mặt đã xác thực, quan hệ vướng víu ở tầng ghi nhận, và bất định trước đo.
 
+### P/E Quick Comparison — Big Update / Bảng ngắn P/E — Ghi chú Big Update
+
+| Layer / Tầng | Standard QM | VVV-QMRF |
+|--------------|-------------|----------|
+| Core postulates / Tiên đề lõi | P1–P4: state space, observables, measurement, dynamics | E1–E16: registration-layer postulates |
+| Description / Mô tả | Describes how the physical quantum system changes / Mô tả hệ vật lý lượng tử biến đổi thế nào | Describes when measurement becomes valid registration / Mô tả khi nào phép đo trở thành ghi nhận hợp lệ |
+| What it does not do / Điều nó không làm | Does not fully specify the registration architecture of measurement / Không mô tả đầy đủ kiến trúc ghi nhận của phép đo | Does not replace the physical equations of QM / Không thay thế phương trình vật lý của QM |
+| Correct terms / Thuật ngữ đúng | "state", "observable", "measurement outcome", "dynamics", "detector response" | "registration-state update", "certification", "null event", "retroactive invalidation" |
+
 ---
 
 **EN:** For the two strongest structural convergences between Buddhist Epistemology and Quantum Mechanics — where both systems independently reach identical logical conclusions separated by 15 centuries — see: 📄 **[VVV-QMRF convergences](documents/research_documents/meta_architecture/VVV_EQM_convergences.md)**
