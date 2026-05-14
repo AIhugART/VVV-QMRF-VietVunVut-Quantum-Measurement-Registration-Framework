@@ -519,6 +519,7 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 | Main research / Nghiên cứu chính | 09:00:00 2026-05-11 (24h) | Claude Opus 4.6, Gemini 3.1 pro (Google Antigravity IDE) |
 | Revision research / Nghiên cứu chỉnh sửa | 08:00:00 2026-05-12 | Claude Opus 4.6, Gemini 3.1 pro (Google Antigravity IDE) |
 | Public research / Công bố nghiên cứu | 13:10:00 2026-05-12 | — |
+| v3 rename update / Cập nhật đổi tên v3 | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. |
 
 ---
 
