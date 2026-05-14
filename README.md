@@ -21,7 +21,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework / Khung lý thuyết:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)  
 **Version / Phiên bản:** 2.0 — Stable Final  
-**Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20/20 BIAN gaps resolved  
+**Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20 labels accounted for: 19 active gaps resolved + 1 reserved label  
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-EQM §WP-2.0  
 **Inspiration / Cảm hứng:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại của Trung Quốc, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc. (*co-founded Apple Inc.*)
 
@@ -158,23 +158,23 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Architecture / Kiến trúc
 
 ```
-┌───────────────────────────────────────────────────────┐
-│       VVV-EQM FINAL ARCHITECTURE (v2.0 Stable)       │
-│                                                       │
-│  POSTULATES:  E1–E16 (16)    — epistemic operations   │
-│    Core:      E1–E7 (7)      — cognitive operations   │
-│    Extended:  E8–E16 (9)     — structural expansions  │
-│  LEMMAS:      S1-Λ, S2-Δ (2) — interface connectors   │
-│  CATEGORIES:  Cat 01–15 (15)  — epistemic categories  │
-│  SYNTHESIS:   S1, S2, S3 (3) — integration patterns    │
-│  META:        ENI, GCS, MIP, PCC (4)                  │
-│  BIAN GAPS:   19/19 resolved + 1 reserved              │
-│                                                       │
-│  QM Extended: P1–P4 (physical) + E1–E16 (epistemic)   │
-│  Total: 20 postulates for complete measurement theory  │
-│                                                       │
-│  STATUS: COMPLETE ✅                                   │
-└───────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│                 VVV-EQM FINAL ARCHITECTURE (v2.0 Stable)           │
+│                                                                     │
+│  POSTULATES:  E1–E16 (16)    — epistemic operations                 │
+│    Core:      E1–E7 (7)      — cognitive operations                 │
+│    Extended:  E8–E16 (9)     — structural expansions                │
+│  LEMMAS:      S1-Λ, S2-Δ (2) — interface connectors                 │
+│  CATEGORIES:  Cat 01–15 (15) — epistemic categories                 │
+│  SYNTHESIS:   S1, S2, S3 (3) — integration patterns                 │
+│  META:        ENI, GCS, MIP, PCC (4)                                │
+│  20 labels accounted for: 19 active gaps resolved + 1 reserved label │
+│                                                                     │
+│  QM Extended: P1–P4 (physical) + E1–E16 (epistemic)                 │
+│  Total: 20 postulates for complete measurement theory               │
+│                                                                     │
+│  STATUS: COMPLETE ✅                                                │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Synthesis Patterns / Mẫu Tổng hợp
@@ -200,7 +200,7 @@ S3 — Observer Ontological Hub / Trung tâm Bản thể Người quan sát
 
 ## BIAN Gap Resolution / Giải quyết Khoảng trống BIAN
 
-**19/19 active BIAN gaps resolved + 1 reserved / 19/19 khoảng trống hoạt động đã giải quyết + 1 dự trữ:**
+**20 labels accounted for: 19 active gaps resolved + 1 reserved label**
 
 | Class | EN / Tiếng Anh | VN / Tiếng Việt | Count | Resolution / Giải pháp |
 |:-----:|----------------|-----------------|:-----:|----------------------|
@@ -434,7 +434,7 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 
 #### Achievements / Những gì đã đạt được
 
-1. **EN:** 19/19 active gaps resolved + 1 reserve — no open issues / **VN:** 19/19 khoảng trống hoạt động đã giải quyết + 1 dự trữ — không còn vấn đề mở
+1. **20 labels accounted for: 19 active gaps resolved + 1 reserved label**
 2. **EN:** 16 stable postulates (E1–E7 core + E8–E16 extended) / **VN:** 16 tiên đề ổn định (E1–E7 cốt lõi + E8–E16 mở rộng)
 3. **EN:** 2 confirmed lemmas — covering all connective joints / **VN:** 2 bổ đề xác nhận — bao phủ tất cả mối nối
 4. **EN:** ENI Principle — method for classifying epistemic joints / **VN:** Nguyên tắc ENI — phương pháp phân loại mối nối nhận thức
@@ -456,6 +456,25 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 | Not Buddhist doctrine — structural extraction, not religious claims | Không phải giáo lý Phật giáo — trích xuất cấu trúc, không phải tôn giáo |
 | Not experimentally testable (yet) — architectural principles | Chưa kiểm chứng thực nghiệm — nguyên tắc kiến trúc |
 | Not claiming QM is wrong — physical predictions untouched | Không cho rằng QM sai — dự đoán vật lý không bị thay đổi |
+
+---
+
+## Action Plan 1-2-3 / Kế hoạch hành động 1-2-3
+
+This short roadmap keeps future completion work aligned with the current source-of-truth hierarchy and boundary rules.
+
+1. **Lock wording and boundary first**
+   - Keep the BIAN status wording fixed as **"20 labels accounted for: 19 active gaps resolved + 1 reserved label"**.
+   - Keep all `N_QM_VVV_XXXXX` nodes explicitly marked as VVV-EQM extension nodes, not canonical QM nodes.
+
+2. **Add status and traceability to each VVV-QM node**
+   - Add one status label to each of the 23 VVV-QM nodes: `complete`, `needs formalization`, `overclaim-sensitive`, or `example-only`.
+   - For each node, verify source category, nearest canonical QM node, BE/BIAN root, and claim strength.
+
+3. **Formalize weak nodes before publication-facing use**
+   - Formalize `P_null`, `Ĉ_ext`, `ρ̃`, `ρ_certified`, and `V̂_yava` with minimal equations and explicit proposal labels.
+   - Review weak or overclaim-sensitive nodes before using them in paper-facing or README-facing text.
+   - Only after this step, create the claim-strength table and decide whether diagrams and bridge files belong in active architecture or draft material.
 
 ---
 
@@ -487,8 +506,8 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 
 | Version | Working Sessions (GMT+7) | Notes |
 |:-------:|--------------------------|-------|
-| **v1** | 2026-05-10, 2026-05-11, before 02:00:00 2026-05-12 | Initial release — 7 Postulates (E1–E7), 2 Lemmas (S1-Λ, S2-Δ), 20/20 BIAN resolved |
-| **v2** | after 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 19/19 active BIAN fully resolved via gap→category→framework pipeline |
+| **v1** | 2026-05-10, 2026-05-11, before 02:00:00 2026-05-12 | Initial release — 7 Postulates (E1–E7), 2 Lemmas (S1-Λ, S2-Δ), 20 labels accounted for: 19 active gaps resolved + 1 reserved label |
+| **v2** | after 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 20 labels accounted for: 19 active gaps resolved + 1 reserved label |
 
 ## Research Timeline / Dòng thời gian nghiên cứu
 

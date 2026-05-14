@@ -50,7 +50,7 @@ This history is derived from these active project files:
 | BE source of truth | `SYSTEM_Buddhist_Epistemology/system_be_full.md` |
 | QM source | `SYSTEM_Quantum_Measurement/system_qm_full.md` |
 | BE core graph | 30 core BE nodes and 39 core BE edges in published compact form; expanded BE SOT used for RCA |
-| BIAN status | 20 BIAN labels accounted for: 19 active gaps resolved + 1 reserved label |
+| BIAN status | 20 labels accounted for: 19 active gaps resolved + 1 reserved label |
 | VVV-QM node policy | New VVV nodes use `N_QM_VVV_00001`, `N_QM_VVV_00002`, ... |
 | Boundary | VVV-QM nodes are epistemic / interpretive / formal-category extensions, not replacement canonical QM nodes |
 
@@ -232,7 +232,7 @@ This TODO list records remaining work needed to make VVV-EQM clearer, safer, and
 
 | Priority | Area | TODO | RCA reason | Target file |
 |---|---|---|---|---|
-| P0 | SOT consistency | Standardize BIAN status wording as "20 labels accounted for: 19 active gaps resolved + 1 reserved label" across public-facing summaries | Avoid apparent contradiction between "20/20 resolved" and "19 active + 1 reserved" | [README.md](README.md); [history.md](history.md) |
+| P0 | SOT consistency | Standardize BIAN status wording as "20 labels accounted for: 19 active gaps resolved + 1 reserved label" across public-facing summaries | Remove wording drift around BIAN accounting in active docs | [README.md](README.md); [history.md](history.md) |
 | P0 | Boundary control | Keep all VVV-QM nodes explicitly marked as epistemic, interpretive, inferential, or formal-category extensions, not canonical QM replacements | Prevent category error between epistemology and physics | [history.md](history.md); [documents/research_documents/node_QM_VVV.md](documents/research_documents/node_QM_VVV.md) |
 | P1 | Node status | Add a status label for each of the 23 `N_QM_VVV_XXXXX` nodes: complete, needs formalization, overclaim-sensitive, or example-only | Readers need to know which nodes are stable and which are proposals | [documents/research_documents/node_QM_VVV.md](documents/research_documents/node_QM_VVV.md) |
 | P1 | Formalism | Formalize `P_null`, `Ĉ_ext`, `ρ̃`, `ρ_certified`, and `V̂_yava` with minimal equations and explicit proposal labels | Several VVV-QM nodes are currently proposal or overclaim-sensitive | framework files |
@@ -252,3 +252,20 @@ This TODO list records remaining work needed to make VVV-EQM clearer, safer, and
 | `N_QM_VVV_00010` | PVM-equivalent epistemic authority is not formally validated | Reframe as a proposal unless equivalence conditions are proven |
 | `N_QM_VVV_00018` | Verification-integrated density matrix evolution lacks a full equation | Provide a minimal equation or downgrade to framework note |
 | `N_QM_VVV_00021`–`N_QM_VVV_00024` | ECO layer is psycho-physical and not canonical QM | Keep it explicitly VVV-EQM epistemic architecture, not a physical collapse mechanism |
+
+### 11.2. Action Plan 1-2-3 / Kế hoạch hành động 1-2-3
+
+This action plan compresses the completion TODO list into a short execution order that fixes root causes before formal expansion or publication-facing use.
+
+1. **Lock wording and boundary first**
+   - Standardize BIAN wording to **"20 labels accounted for: 19 active gaps resolved + 1 reserved label"** in [README.md](README.md) and [history.md](history.md).
+   - Keep all `N_QM_VVV_XXXXX` nodes explicitly marked as VVV-EQM extension nodes, not canonical QM nodes.
+
+2. **Add status and traceability to each VVV-QM node**
+   - Add one status label to each of the 23 VVV-QM nodes: `complete`, `needs formalization`, `overclaim-sensitive`, or `example-only`.
+   - For each node, verify source category, nearest canonical QM node, BE/BIAN root, and claim strength.
+
+3. **Formalize weak nodes before publication-facing use**
+   - Formalize `P_null`, `Ĉ_ext`, `ρ̃`, `ρ_certified`, and `V̂_yava` with minimal equations and explicit proposal labels.
+   - Review the high-priority weak or overclaim-sensitive nodes before using them in paper-facing or README-facing text.
+   - Only after this step, create the claim-strength table and decide whether diagrams and bridge files belong in active architecture or draft material.
