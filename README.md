@@ -532,6 +532,17 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 
 ---
 
+## Contact & Sponsorship / Liên hệ & Tài trợ
+
+**Liên hệ:** VietVunVut (Viet - Nguyen Xuan)  
+**Số điện thoại:** +84 908 329 666 (VN)
+
+**Tài trợ:** Do việc nghiên cứu dựa vào sức mạnh tính toán của AI compute nên tiêu tốn rất nhiều token, quý vị có thể tài trợ cho tôi qua hình thức: PayPal: `vietvunut`.
+
+Tôi xin ghi nhận sự hỗ trợ của quý vị và xin chân thành cám ơn. Tất cả vì sự tiến bộ của Nhân loại.
+
+---
+
 *VietVunVut (2026). VVV-QMRF: Quantum Measurement Registration Framework — A Structural Analysis Grounded in Buddhist Pramāṇa Epistemology.*
 
 © 2026 VietVunVut. All Rights Reserved.
