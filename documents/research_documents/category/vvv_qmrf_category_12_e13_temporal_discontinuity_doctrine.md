@@ -10,9 +10,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status:** Proposal — Registration class D
 **Lineage:** gap/ (BIAN-8) → category/ (Category 12) → framework/ (E13)
 
-> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-8**. BIAN-8 highlights QM's lack of a formal registration-layer theorization of temporal discontinuity — the quantum jump. Buddhist *Kṣaṇabhaṅgavāda* (Momentariness Doctrine) provides the rigorous framework: all phenomena exist only for a single indivisible moment, and apparent continuity is a conceptual construction imposed on discrete moments.
+> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-8**. BIAN-8 highlights QM's lack of a formal registration-layer theorization of temporal discontinuity — the quantum jump. Buddhist *Kṣaṇabhaṅgavāda* (Momentariness Doctrine) provides the rigorous source analogue: in BE, momentariness is an ontological doctrine about the arising and perishing of dharmas, while MMT uses *kṣaṇa* only as a bounded registration-event unit.
 >
-> *Tài liệu này giải quyết **BIAN-8**. BIAN-8 chỉ ra QM thiếu một lý thuyết lớp ghi nhận chính thức về tính gián đoạn thời gian — bước nhảy lượng tử. Kṣaṇabhaṅgavāda (Học thuyết Sát-na) cung cấp khung: mọi hiện tượng chỉ tồn tại trong một sát-na bất phân, và tính liên tục biểu kiến là kiến tạo khái niệm.*
+> *Tài liệu này giải quyết **BIAN-8**. BIAN-8 chỉ ra QM thiếu một lý thuyết lớp ghi nhận chính thức về tính gián đoạn thời gian — bước nhảy lượng tử. Kṣaṇabhaṅgavāda (Học thuyết Sát-na) cung cấp tương tự nguồn: trong BE, sát-na là học thuyết bản thể học về sự sinh-diệt của các dharma, còn MMT chỉ dùng *kṣaṇa* như đơn vị biên của một sự kiện ghi nhận.*
 
 ---
 
@@ -20,7 +20,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Temporal Discontinuity Doctrine / Moment-to-Moment Quantum Transition (MMT)
 * **Vietnamese Name:** Học thuyết Gián đoạn Thời gian / Chuyển đổi Lượng tử Sát-na
-* **Buddhist Equivalent:** *Kṣaṇabhaṅgavāda* (Momentariness — doctrine that all existents last only one indivisible moment)
+* **Buddhist Source Analogue:** *Kṣaṇabhaṅgavāda* (Momentariness — ontology of momentary dharma existence, not full QM equivalence)
 * **Node:** N_BE_00029
 * **Mathematical Symbol:** Discrete Transition Operator $\hat{T}_{kṣaṇa}$
 
@@ -44,6 +44,8 @@ Standard QM narrative:
   Discontinuous registration: |E_n⟩ → |E_m⟩  ← completed jump registration (not a zero-duration physical claim)
 
 Kṣaṇa model:
+  BE kṣaṇa: ontological existence-moment of dharmas
+  MMT kṣaṇa: bounded registration-event moment, not a physical-duration claim
   The jump is treated as the registration unit — the kṣaṇa moment
   Schrödinger evolution remains the physical dynamics between registration events
   Each kṣaṇa: bounded as a registration event and causally linked to the next kṣaṇa
