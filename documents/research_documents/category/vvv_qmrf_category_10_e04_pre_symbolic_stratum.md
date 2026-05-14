@@ -52,7 +52,7 @@ In weak measurement: Λ is partial → r is partial.
 In projective measurement: Λ is complete → r is eigenvalue.
 ```
 
-**RCA boundary:** `ε(M)` is not an extra mystical entity. It names the registration-layer slot between physical interaction and symbolic/eigenvalue assignment.
+**RCA boundary:** `ε(M)` is not an extra mystical entity. It names the registration-layer slot between physical interaction and symbolic/eigenvalue assignment. `ε(M)` is a registration-layer classification, not a claim about ontic sub-quantum content.
 
 ---
 
@@ -89,7 +89,7 @@ BIAN-7 resolution: Pre-Symbolic Stratum / Formalism-External Physical Event supp
 | §2-§3 | QM substrate | physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement | N_QM_00019; N_QM_00021; N_QM_00014; N_QM_00026; N_QM_00028 | ED_QM_00019; ED_QM_00021; ED_QM_00029; ED_QM_00031; ED_QM_00038 | QM-only | Canonical QM supports the physical substrate, not the whole VVV-QMRF category. |
 | §3 | Formal symbol / operator | Pre-symbolic event `ε(M)` and Symbolization Operator `Λ` | N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047 | — | Derived | Framework notation; do not cite as a source-system operator. |
 | §4 | Category implication | Name `ε(M)` as the causal but not-yet-symbolic event and `Λ` as the mapping from causal event to symbolic/eigenvalue result. | N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047 | — | Medium | Valid only within the stated registration-layer boundary. |
-| §4 | Overclaim risk | not mystical pure awareness and not a new physical interaction hidden behind measurement | — | — | Overclaim | Keep wording conditional and registration-layer specific. |
+| §4 | Overclaim risk | not mystical pure awareness, not hidden-variable-style ontic content, and not a new physical interaction hidden behind measurement | — | — | Overclaim | Keep wording conditional and registration-layer specific. |
 
 ### 5.1. RCA Summary / Tóm tắt RCA
 
@@ -97,7 +97,7 @@ BIAN-7 resolution: Pre-Symbolic Stratum / Formalism-External Physical Event supp
 2. **The BE source is bounded.** *Nirvikalpaka pratyakṣa* source anchor anchors the analogy or source lineage, but does not automatically become a QM mechanism.
 3. **The QM substrate is real but insufficient.** physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement provides support, while Pre-Symbolic Stratum / Formalism-External Physical Event names the added K-side layer.
 4. **The VVV node(s) are derived.** N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047 belong to the framework proposal and should be labeled as derived unless later validated.
-5. **Boundary control is mandatory.** The main overclaim to avoid is: not mystical pure awareness and not a new physical interaction hidden behind measurement.
+5. **Boundary control is mandatory.** The main overclaim to avoid is: not mystical pure awareness, not hidden-variable-style ontic content, and not a new physical interaction hidden behind measurement.
 
 ### 5.2. RCA Five-Step Analysis / Phân tích RCA 5 bước
 
@@ -128,7 +128,7 @@ Pre-Symbolic Stratum / Formalism-External Physical Event = a VVV-QMRF registrati
 BE source: *Nirvikalpaka pratyakṣa* source anchor.
 QM substrate: physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement.
 VVV formalism: Pre-symbolic event `ε(M)` and Symbolization Operator `Λ` / N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047.
-Boundary: not mystical pure awareness and not a new physical interaction hidden behind measurement.
+Boundary: not mystical pure awareness, not hidden-variable-style ontic content, and not a new physical interaction hidden behind measurement.
 ```
 
 #### 5.2.5 Verify — root cause removed / Kiểm chứng đã loại bỏ nguyên nhân gốc
@@ -140,7 +140,7 @@ BE source analogue = *Nirvikalpaka pratyakṣa* source anchor.
 QM substrate = physical measurement, system-meter coupling, PVM, generalized measurement, weak measurement.
 VVV-QMRF category = Pre-Symbolic Stratum / Formalism-External Physical Event.
 Formal symbol = Pre-symbolic event `ε(M)` and Symbolization Operator `Λ`.
-Boundary = not mystical pure awareness and not a new physical interaction hidden behind measurement.
+Boundary = not mystical pure awareness, not hidden-variable-style ontic content, and not a new physical interaction hidden behind measurement.
 ```
 
 ### 5.3. Gap Type Classification / Phân loại Loại Khoảng trống
@@ -201,7 +201,7 @@ VVV-QMRF registration-state update layer
 | Pre-Symbolic Stratum / Formalism-External Physical Event is a VVV-QMRF category | Tầng Tiền Biểu tượng / Sự kiện Vật lý Ngoài Hình thức là phạm trù VVV-QMRF | **D** — framework-derived | N_QM_VVV_00044; N_QM_VVV_00045; N_QM_VVV_00046; N_QM_VVV_00047; E4. |
 | Pre-symbolic event `ε(M)` and Symbolization Operator `Λ` formalizes the category | Pre-symbolic event `ε(M)` and Symbolization Operator `Λ` hình thức hóa phạm trù | **D** — notation-derived | Framework notation, not a canonical source-system operator. |
 | The category resolves BIAN-7 | Phạm trù giải quyết BIAN-7 | **D / M** — bounded resolution | Resolution holds at registration-layer architecture level. |
-| Boundary-free reading of the category | Cách đọc không ranh giới về phạm trù | **O** — overclaim | not mystical pure awareness and not a new physical interaction hidden behind measurement. |
+| Boundary-free reading of the category | Cách đọc không ranh giới về phạm trù | **O** — overclaim | not mystical pure awareness, not hidden-variable-style ontic content, and not a new physical interaction hidden behind measurement. |
 
 **Summary / Tóm tắt:** The category is traceable as a VVV-QMRF registration-layer proposal. Its BE source and QM substrate support the architecture, but neither should be overstated as a direct one-to-one physical equivalence.
 
@@ -215,7 +215,7 @@ VVV-QMRF registration-state update layer
 2. **Not unrestricted equivalence with the BE source** — *Nirvikalpaka pratyakṣa* source anchor supplies source-lineage or analogy only within the stated boundary.
    *Không đồng nhất vô điều kiện với nguồn BE; nguồn BE chỉ làm mô hình nguồn hoặc phép tương tự có ranh giới.*
 
-3. **Not boundary-free application** — not mystical pure awareness and not a new physical interaction hidden behind measurement.
+3. **Not boundary-free application** — not mystical pure awareness, not hidden-variable-style ontic content, and not a new physical interaction hidden behind measurement.
    *Không áp dụng tự do ngoài điều kiện hợp lệ đã nêu.*
 
 4. **Not a detector-engineering shortcut** — validity still depends on calibration, context, and the relevant E10-style gate where applicable.
@@ -270,7 +270,7 @@ flowchart TD
     subgraph VVV["VVV-QMRF Registration Layer"]
         CAT["Category 10 / E4<br/>Pre-Symbolic Stratum / Formalism-External Physical Event"]
         SYM["Pre-symbolic event `ε(M)` and Symbolization Operator `Λ`"]
-        BOUND["RCA boundary<br/>not mystical pure awareness and not a new physical interaction hidden behind measurement"]
+        BOUND["RCA boundary<br/>not mystical pure awareness, not hidden-variable-style ontic content, and not a new physical interaction hidden behind measurement"]
     end
 
     BE1 -->|"source-lineage / analogy"| CAT
