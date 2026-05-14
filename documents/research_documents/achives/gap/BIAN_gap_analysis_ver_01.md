@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # BIAN Gap Analysis v01 — Epistemic Architecture Deficiencies in Quantum Measurement Formalism
 
 ## Document Metadata
@@ -133,14 +135,14 @@
 
 ---
 
-## BIAN-11 — No Model of Observer Epistemic State Before Measurement
+## BIAN-11 — No Formal Category for Pre-Measurement Registration Indeterminacy
 
-- **Axiom:** A3
-- **Gap:** QM describes the physical state of the system before measurement (superposition) but not the epistemic state of the observer who holds that description.
-- **QM state:** Observer knows ψ = α|0⟩ + β|1⟩. Observer has not yet measured. What is the observer's epistemic state? QM assigns no formal description to this. The observer "knows the wavefunction" but QM does not model what "knowing the wavefunction without having measured" means epistemically.
-- **RCA:** QM models system states, not observer states. The observer is the describer, never the described. This asymmetry is structural.
-- **Consequence:** Pre-measurement epistemic states (doubt, expectation, uncertainty-about-outcome) are outside the formalism.
-- **Severity:** Moderate. Relevant to QBism and epistemic interpretations.
+- **Axiom:** A2
+- **Gap:** QM describes the system-side state before measurement as superposition or density matrix, but it does not name the registering system's K-side structured suspension before eigenvalue registration.
+- **QM state:** A system may be represented as |ψ⟩ = Σᵢ cᵢ|λᵢ⟩ or as a density matrix with coherence terms. The registering system has not yet registered which λᵢ obtains; standard QM provides the physical substrate, not a K-side registration-state category.
+- **RCA:** QM models physical states, probabilities, and measurement dynamics, but it does not provide a registration-layer taxonomy for structured K-side suspension. Hidden-variable theories serve only as a boundary contrast, not as an equivalent category.
+- **Consequence:** Pre-measurement registration-state suspension is outside the standard formalism; VVV-QMRF adds it as a derived category.
+- **Severity:** Moderate. Relevant to hidden-variable, QBist, and epistemic interpretations as boundary contrast.
 
 ---
 

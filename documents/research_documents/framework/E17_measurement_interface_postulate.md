@@ -2,11 +2,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # E17 — Measurement Interface Postulate / Tiên đề Giao diện Phép đo
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-13  
-**Status:** Proposal — Epistemic interface postulate  
+**Status:** Proposal — Registration interface postulate  
 **Lineage:** framework/RCA_formal_epistemic_measurement_model.md → framework/ (E17)
 
 ---
@@ -142,8 +142,8 @@ Nó đi qua chuỗi: xuất hiện → ghi nhận/nhận ra → phân loại →
 ## 7. Architectural Position
 
 ```text
-E16 (Structured Doubt State)
-  └→ pre-measurement epistemic condition
+E16 (Structured Registration-Doubt State)
+  └→ pre-measurement registration-state condition
 
 E17 (Measurement Interface Postulate) ← THIS POSTULATE
   ├→ physical layer: ρ changes by standard quantum mechanics
@@ -152,9 +152,9 @@ E17 (Measurement Interface Postulate) ← THIS POSTULATE
 
 | Layer | Document | Role |
 |---|---|---|
-| Framework | E16_structured_doubt_postulate.md | Defines structured pre-measurement epistemic condition. |
+| Framework | E16_structured_doubt_postulate.md | Defines structured pre-measurement registration-state condition. |
 | Framework | RCA_formal_epistemic_measurement_model.md | Defines the two-level RCA boundary for measurement. |
-| Framework | **This document (E17)** | Defines measurement as a physical-epistemic interface event. |
+| Framework | **This document (E17)** | Defines measurement as a physical-registration interface event. |
 
 ---
 
@@ -231,7 +231,7 @@ then it violates the RCA boundary.
 
 | Line range | RCA task | What E17 determines | Why it matters |
 |---|---|---|---|
-| Lines 1-10 | Metadata and lineage | E17 belongs to VVV-EQM and follows `RCA_formal_epistemic_measurement_model.md`. | Establishes traceability and prevents E17 from appearing as an isolated claim. |
+| Lines 1-10 | Metadata and lineage | E17 belongs to VVV-QMRF and follows `RCA_formal_epistemic_measurement_model.md`. | Establishes traceability and prevents E17 from appearing as an isolated claim. |
 | Lines 14-20 | State the postulate | Measurement is an interface between `ρ-transition` and `registration-state update`. | This is the core definition of E17. |
 | Lines 17-20 | Preserve the physics boundary | The physical layer keeps `p_QM(o) = Tr(E_o ρ)`. | Prevents accidental claim that E17 modifies the Born rule. |
 | Lines 17-20 | Locate the novelty | The registration-state layer updates `K` through appearance, registration/recognition, conceptual classification, and valid registration. | Places the contribution in the `K` side, not in new physics. |
@@ -249,12 +249,12 @@ then it violates the RCA boundary.
 | Lines 105-131 | Expand `K` | `K = (A, R, C, V)`. | Opens the black box of registration state. |
 | Lines 115-118 | Define `A`, `R`, `C`, `V` | Outcome passes through appearance, registration/recognition, conceptual classification, and valid registration. | Connects E17 to Buddhist Epistemology's analysis of valid cognition without restricting `K` to human consciousness. |
 | Lines 136-137 | Plain-language meaning | Outcome `o` does not automatically become valid data. | Clarifies the registration-state claim for human and LLM readers. |
-| Lines 142-157 | Architectural position | E17 follows E16 and the RCA model. | Places E17 as the transition from pre-measurement epistemic condition to measurement interface. |
+| Lines 142-157 | Architectural position | E17 follows E16 and the RCA model. | Places E17 as the transition from pre-measurement registration-state condition to measurement interface. |
 | Lines 161-184 | Category risk | E17 is interpretive mapping plus ontological-epistemological framework. | Prevents classifying E17 as a physical theory. |
 | Lines 188-194 | Mandatory boundary | E17 only proposes formalization of the registration-state update side. | Defines what the postulate claims and does not claim. |
 | Lines 198-226 | Verification | E17 is valid only if it preserves both `p_QM(o) = Tr(E_o ρ)` and `K_after = U_K(K_before, o)`. | Provides a test for whether E17 stays inside its RCA boundary. |
 | Lines 230-248 | Assertion level | Separates standard mathematics, framework definitions, interpretation, and not-claimed items. | Helps readers distinguish established formalism from project-defined structure. |
-| Lines 252-258 | Final statement | E17 is a two-level interface event; the novelty is the epistemic side. | Gives the final conservative conclusion. |
+| Lines 252-258 | Final statement | E17 is a two-level interface event; the novelty is the registration-state side. | Gives the final conservative conclusion. |
 
 ### Tóm tắt RCA task xác định E17
 

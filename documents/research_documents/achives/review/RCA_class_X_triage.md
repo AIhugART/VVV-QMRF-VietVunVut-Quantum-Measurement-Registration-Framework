@@ -1,10 +1,12 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # RCA: 4 Class X Gaps — Triage & Reclassification
 # RCA: 4 Khoảng trống Lớp X — Phân loại & Tái phân loại
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Date:** 2026-05-11  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
-**Cite:** VVV-EQM §GCS-X  
+**Cite:** VVV-QMRF §GCS-X  
 **Source:** RCA_gap_classification_system.md §6
 
 ---
@@ -163,7 +165,7 @@ RECOMMENDATION: Dedicated RCA session to evaluate:
 ```
 
 > [!WARNING]
-> BIAN-8 is the **only remaining candidate for postulate expansion** (E8). All other Class X gaps reclassify to C. Decision on BIAN-8 determines whether VVV-EQM remains a 7-postulate or becomes an 8-postulate framework.
+> BIAN-8 is the **only remaining candidate for postulate expansion** (E8). All other Class X gaps reclassify to C. Decision on BIAN-8 determines whether VVV-QMRF remains a 7-postulate or becomes an 8-postulate framework.
 
 ---
 
@@ -239,18 +241,18 @@ Cat 01 = the EVIDENCE type from contrast.
 
 ---
 
-## 4. BIAN-11: Pre-Measurement Observer State
+## 4. BIAN-11: Pre-Measurement Registration Indeterminacy
 
 ### 4a. Gap Definition
 
-> QM describes the physical state of the system before measurement (superposition) but not the epistemic state of the observer who holds that description.
+> QM describes the system-side state before measurement as superposition or density matrix, but it does not name the registering system's K-side structured suspension before eigenvalue registration.
 
 | Property | Value |
 |----------|-------|
-| **Axiom** | A3 (Reflexive Cognition) |
+| **Axiom** | A2 (structured suspension / non-determination) |
 | **Node** | N_BE_00007 (Saṃśaya — Doubt) |
 | **Edges** | 4 — 2 Weak + 2 Medium |
-| **QM mapping** | N_QM_00091 (Hidden Variable Theories) |
+| **QM mapping** | N_QM_00091 (Hidden Variable Theories) as boundary contrast |
 | **Severity** | Moderate |
 
 ### 4b. Edge Analysis
@@ -266,44 +268,43 @@ Cat 01 = the EVIDENCE type from contrast.
 
 | Test | Question | Answer |
 |:----:|----------|--------|
-| 1 | Does QM have ANY concept? | **YES** — QBism explicitly models observer epistemic states; Bayesian QM treats ψ as belief state |
+| 1 | Does QM have ANY concept? | **YES** — superposition and density matrices describe the system-side substrate; hidden-variable debates provide boundary contrast |
 | 2 | Adjacent stages lack MAP? | NO |
-| 3 | QM has phenomenon but no taxonomy? | **YES** — QBism/Bayesian QM have observer epistemic states implicitly but no formal pre-measurement category |
+| 3 | QM has phenomenon but no taxonomy? | **YES** — QM has physical pre-measurement structure but no formal registration-state category for the registering system's K-side suspension |
 
-### 4d. QM Implicit Presence Evidence
+### 4d. QM Boundary Evidence
 
-| Framework | How it models pre-measurement observer | Why not sufficient |
-|-----------|--------------------------------------|-------------------|
-| QBism | ψ = agent's belief about outcomes | No formal "pre-measurement epistemic state" category |
-| Bayesian QM | Prior distribution over outcomes | Prior is statistical, not epistemic taxonomy |
-| Copenhagen | Observer "knows" the wavefunction | "Knowing ψ" has no formal epistemic definition |
-| Many-worlds | Observer in superposition (pre-branch) | No epistemic content — purely physical |
+| Framework | How it frames pre-measurement structure | Why not sufficient |
+|-----------|-----------------------------------------|-------------------|
+| QBism | ψ = agent's belief about outcomes | Agent belief is not a registration-state taxonomy |
+| Bayesian QM | Prior distribution over outcomes | Prior is statistical, not a structured K-side registration category |
+| Copenhagen | Observer "knows" the wavefunction | "Knowing ψ" does not define a registering system's K-state |
+| Many-worlds | Observer in superposition (pre-branch) | Physical branching is not a registration-state category |
 
 ### 4e. Verdict
 
 ```
-BIAN-11: X → C (Implicit)
+BIAN-11: X → C (Implicit boundary only)
 
-Rationale: QM interpretations (QBism, Bayesian) implicitly
-model observer pre-measurement states as belief/credence,
-but there is no formal epistemic CATEGORY for "the observer's
-cognitive state before measurement." The phenomenon exists
-implicitly across interpretations; the taxonomy does not.
+Rationale: QM has physical pre-measurement structures and
+interpretive accounts of belief or branching, but it does not
+formalize the registering system's K-side structured suspension
+before eigenvalue registration.
 
-Resolution path: New Category 13 — Pre-Measurement Epistemic State
-Buddhist source: Saṃśaya (Doubt) — the formal state of
-epistemic indeterminacy prior to pramāṇa engagement.
+Resolution path: Category 15 — Pre-Measurement Registration Indeterminacy / SDS
+Buddhist source: Saṃśaya (Doubt) — a bounded source analogue for
+structured suspension that motivates inquiry, not a binary/equal-weight state.
 ```
 
-### 4f. Category 13 Sketch
+### 4f. Category 15 Sketch
 
 | Property | Value |
 |----------|-------|
-| **Number** | 13 |
-| **Name EN** | Pre-Measurement Epistemic State |
-| **Tên VN** | Trạng thái Nhận thức Tiền Đo lường |
-| **Buddhist** | Saṃśaya (N_BE_00007) |
-| **QM implicit** | QBism belief state, Bayesian prior, Copenhagen "knowledge of ψ" |
+| **Number** | 15 |
+| **Name EN** | Pre-Measurement Registration Indeterminacy |
+| **Tên VN** | Bất định Ghi nhận Tiền đo |
+| **Buddhist** | Saṃśaya (N_BE_00007) as bounded source analogue |
+| **QM implicit** | Superposition/density matrix as substrate; hidden-variable theories as boundary contrast |
 | **Class** | C (terminal) |
 
 ---
@@ -315,7 +316,7 @@ epistemic indeterminacy prior to pramāṇa engagement.
 | **3** | Observer Faculty Spectrum | X | **C** | QM has κ parametrization implicitly | Category 11 |
 | **8** | Temporal Discontinuity | X | **X→A?** | No implicit QM presence; brute fact | **E8 candidate** |
 | **9** | Cognition of Absence | X | **C** | QM has null measurement implicitly | Category 12 |
-| **11** | Pre-Measurement Observer State | X | **C** | QBism has belief state implicitly | Category 13 |
+| **11** | Pre-Measurement Registration Indeterminacy | X | **C** | QM has physical substrate but no K-side registration-state taxonomy | Category 15 |
 
 ### Updated GCS Distribution
 
@@ -338,7 +339,7 @@ epistemic indeterminacy prior to pramāṇa engagement.
 | 09 | Tripartite Validity | 14 | Existing |
 | **11** | **Observer Faculty Taxonomy** | **3** | **NEW** |
 | **12** | **Epistemic Absence Cognition** | **9** | **NEW** |
-| **13** | **Pre-Measurement Epistemic State** | **11** | **NEW** |
+| **15** | **Pre-Measurement Registration Indeterminacy** | **11** | **NEW** |
 
 ---
 

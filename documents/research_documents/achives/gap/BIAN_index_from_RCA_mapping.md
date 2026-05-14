@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # BIAN Index — Tổng hợp từ `system_be_qm_framework_1to1_RCA_mapping.md`
 
 > Source: `documents/research_documents/mapping/system_be_qm_framework_1to1_RCA_mapping.md`
@@ -19,7 +21,7 @@
 | BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | N_BE_00029 | core | Momentariness | Kṣaṇabhaṅgavāda (Skt.) | A1 Dependent Arising | 37 | N_QM_00037 | Continuous Measurement: Quantum Jump Case | Medium | BIAN-8 notes temporal discontinuity |
 | BIAN-9 | Formal Cognition of Absence as Distinct Epistemic Category | N_BE_00253 ¹ | RCA | Anupalabdhi | Anupalabdhi (Skt.) | A3 Consciousness-Only | 33 | N_QM_00033 | No-Result Measurement (Null) | Strong | Structurally accounted in Weak-level mappings ² |
 | BIAN-10 | Non-Classical Correlation / Entanglement as Third Relation | N_BE_00021 | core | Essential relation | Svabhāvapratibandha (Skt.) | A1 Dependent Arising | 75 | N_QM_00075 | Hamiltonian H | Medium | BIAN-10 notes non-classical correlation |
-| BIAN-11 | Observer Epistemic Indeterminacy before Measurement | N_BE_00007 | core | Doubt | Saṃśaya (Skt.) | A2 Emptiness | 91 | N_QM_00091 | Hidden Variable Theories | Medium | BIAN-11 notes observer indeterminacy |
+| BIAN-11 | Pre-Measurement Registration Indeterminacy | N_BE_00007 | core | Doubt | Saṃśaya (Skt.) | A2 Emptiness | 91 | N_QM_00091 | Hidden Variable Theories | Medium | BIAN-11 notes K-side registration indeterminacy |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | — ³ | — | bādhaka pramāṇa | — | — | — | — | — | — | No separate node in BE system; structurally accounted in Weak-level mappings ² |
 | BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | — ³ | — | anadhyavasāya | — | — | — | — | — | — | No separate node in BE system; structurally accounted in Weak-level mappings ² |
 | BIAN-14 | Tripartite Measurement Validity Conditions | N_BE_00018 | core | Triple-condition syllogism | Trairūpya (Skt.) | A1 Dependent Arising | 8 | N_QM_00008 | Four Postulates of QM | Medium | BIAN-14 notes tripartite validity conditions |

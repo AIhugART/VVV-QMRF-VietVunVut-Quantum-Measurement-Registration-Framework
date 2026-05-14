@@ -1,10 +1,12 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # RCA: Gap Classification System — Class A / B / C
 # RCA: Hệ thống Phân loại Khoảng trống — Lớp A / B / C
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Date:** 2026-05-11  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
-**Cite:** VietVunVut (2026), VVV-EQM §GCS  
+**Cite:** VietVunVut (2026), VVV-QMRF §GCS  
 **Source:** ENI Principle (RCA_BIAN1_new_epistemic.md §4a)
 
 ---
@@ -63,9 +65,9 @@ For each BIAN gap G:
 | **8** | No Epistemic Theory of Temporal Discontinuity | **X** | *Unresolved* | Mapped to N_BE_00029 but no postulate/category assigned |
 | **9** | No Formal Category for Cognition of Absence | **X** | *Unresolved* | Mapped to N_BE_00253 but no postulate assigned |
 | **10** | Non-Classical Correlation (Reverse-BIAN) | **R** | *Reverse* | QM exceeds BE — entanglement has no BE counterpart |
-| **11** | No Model of Observer Epistemic State Before Measurement | **X** | *Unresolved* | Mapped to N_BE_00007 but no postulate assigned |
+| **11** | No Formal Category for Pre-Measurement Registration Indeterminacy | **C** | Category 15 + E16 | Mapped to N_BE_00007 as Saṃśaya source analogue; resolved as SDS registration-state category |
 | **12** | No Formal Mechanism for Epistemic Override | **C** | Category 03 | QM has override implicitly (state update) but no epistemic taxonomy |
-| **13** | No Category for Null Observer Event | **C** | Category 02 | QM has η<1 implicitly but no epistemic classification |
+| **13** | No Category for Null Registering-System Event | **C** | Category 06 + E9 | QM has detection-efficiency and POVM/no-click support but no registration-layer non-engagement category |
 | **14** | No Unified Validity Conditions for Evidential Inference | **C** | Category 09 | QM has validity criteria (p-values etc.) but no unified structure |
 | **15** | No Formal Category for Purely Contrastive Evidence | **C** | Category 01 | QM has null-result experiments but no epistemic type |
 | **16** | Measurement Self-Completion Undefined | **A** | Postulate E2 | QM has zero self-completion concept |
@@ -208,7 +210,7 @@ Candidate: φ₂: Ā(M) → V̂_yava(Ā)
 | BIAN | Gap | Category | Buddhist Source | QM Implicit Presence |
 |:----:|-----|:--------:|---------------|---------------------|
 | 12 | Epistemic Override | Cat 03 | Bādhaka pramāṇa | State update (post-measurement) exists but lacks epistemic invalidation taxonomy |
-| 13 | Null Observer Event | Cat 02 | Anadhyavasāya | Detection efficiency η<1 exists but lacks epistemic non-engagement category |
+| 13 | Null Registering-System Event | Cat 06 + E9 | Anadhyavasāya | Detection-efficiency and POVM/no-click support exist, but QM lacks a registration-layer non-engagement category |
 | 14 | Tripartite Validity | Cat 09 | Trairūpya | p-values, σ-levels exist but lack unified necessary/sufficient structure |
 | 15 | Contrastive Evidence | Cat 01 | Kevalavyatirekin | Null-result experiments exist but lack distinct evidence-type classification |
 
@@ -219,7 +221,7 @@ Each Class C gap must satisfy: **QM has the phenomenon but lacks the epistemic l
 | BIAN | QM has phenomenon? | QM has epistemic label? | Class C? |
 |:----:|:-----------------:|:----------------------:|:--------:|
 | 12 | ✅ State update exists | ❌ No "epistemic override" concept | ✅ |
-| 13 | ✅ η<1 exists | ❌ No "epistemic non-engagement" concept | ✅ |
+| 13 | ✅ Detection-efficiency and POVM/no-click support exist | ❌ No "registration non-engagement" category | ✅ |
 | 14 | ✅ Validity criteria exist | ❌ No unified tripartite structure | ✅ |
 | 15 | ✅ Null-result experiments exist | ❌ No "contrastive evidence" type | ✅ |
 
@@ -245,7 +247,7 @@ Each Class C gap must satisfy: **QM has the phenomenon but lacks the epistemic l
 | 3 | Observer Faculty Spectrum | No category/postulate | Low severity; limited QM impact |
 | 8 | Temporal Discontinuity Theory | No category/postulate | Medium-high severity; connects to measurement problem timing |
 | 9 | Cognition of Absence | No category/postulate | Strong RCA mapping (N_BE_00253) but no resolution path |
-| 11 | Pre-Measurement Observer State | No category/postulate | Medium severity; relevant to QBism |
+| 11 | Pre-Measurement Registration Indeterminacy | Category 15 + E16 | Medium severity; QM has physical substrate but no K-side registration-state taxonomy |
 
 ### 6b. Class X Triage — Potential Reclassification
 
@@ -282,7 +284,7 @@ gap/ (20 BIAN)
   │                      └──→ synthesis/ (S1, S2, S3)
   │                             └──→ meta-architecture/ (ENI, GCS)
   ├── 1 × Class B ──→ synthesis/ (Lemma S1-Λ)
-  ├── 4 × Class C ──→ category/ (Cat 01, 02, 03, 09)
+  ├── 4 × Class C ──→ category/ (Cat 01, 03, 06, 09)
   ├── 1 × Class R ──→ (reverse — QM exceeds BE)
   ├── 4 × Class X ──→ (unresolved — open research)
   └── 1 × Class ∅ ──→ (reserved)
@@ -290,18 +292,18 @@ gap/ (20 BIAN)
 
 ### 7c. Cross-check: Categories NOT in Class C
 
-Categories 04–08, 10 are **not Class C** — they are intermediate products in the Class A pipeline:
+Categories 02, 04, 05, 07, 08, 10 are **not Class C** — they are intermediate products in the Class A pipeline:
 
 | Category | Role | Class of originating BIAN |
 |:--------:|------|:------------------------:|
+| Cat 02 | Measurement Self-Completion → E2 | A (BIAN-16) |
 | Cat 04 | Dual-Phase Certification → E7 | A (BIAN-18) |
 | Cat 05 | Self-Certifying Measurement → E1 | A (BIAN-2,6,17) |
-| Cat 06 | Measurement Self-Completion → E2 | A (BIAN-16) |
 | Cat 07 | Observer-as-Process → E6 | A (BIAN-19) |
 | Cat 08 | Epistemic Commitment → E3, E5 | A (BIAN-4,5) |
 | Cat 10 | Pre-Symbolic Stratum → E4 | A (BIAN-7) |
 
-> Class C categories (01, 02, 03, 09) are **terminal** — they do not escalate to postulates. Class A categories (04–08, 10) are **transitional** — they escalate through the pipeline to framework/.
+> Class C categories (01, 03, 06, 09) are **terminal** — they do not escalate to postulates. Class A categories (02, 04, 05, 07, 08, 10) are **transitional** — they escalate through the pipeline to framework/.
 
 ---
 
@@ -315,7 +317,7 @@ Categories 04–08, 10 are **not Class C** — they are intermediate products in
 │                                                              │
 │  Class A (Structural):  9 gaps → 7 postulates (E1-E7)       │
 │  Class B (Interface):   1 gap  → 1 lemma (S1-Λ)             │
-│  Class C (Implicit):    4 gaps → 4 categories (01,02,03,09) │
+│  Class C (Implicit):    4 gaps → 4 categories (01,03,06,09) │
 │  Class R (Reverse):     1 gap  → QM exceeds BE              │
 │  Class X (Unresolved):  4 gaps → open research              │
 │  Class ∅ (Reserved):    1 gap  → placeholder                │

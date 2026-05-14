@@ -438,14 +438,14 @@ Cross-domain correspondences are structural analogies only. RCA evidence support
 - BE source line: Source doc L81-L83
 - BE definition: Doubt that motivates pursuit of certainty in pramaana inquiry.
 - RCA: direct
-- RCA gap label: Sonnet BIAN-10 — Observer Epistemic Indeterminacy State
-- Canonical System BIAN: BIAN-11 — Observer Epistemic Indeterminacy State before Measurement
+- RCA gap label: Sonnet BIAN-10 — Pre-Measurement Registration Indeterminacy
+- Canonical System BIAN: BIAN-11 — Pre-Measurement Registration Indeterminacy
 - System node: N_BE_00007 — Samsaya
 - System tier: T4.02
-- QM row: none (QM row 5 superposition describes physical indeterminacy, not observer's epistemic state)
+- QM row: none (QM row 5 superposition describes physical indeterminacy, not the registering system's K-side registration-state condition)
 - QM source: gap
-- QM definition: The formal epistemic state of an observer who knows psi but does not yet know the outcome. QM describes the physical superposition (QM row 5); it does not formally describe the epistemic state of the agent who holds this description before measurement.
-- Correspondence type: Structural gap. Saamsaya is a formal epistemic category with motivational and methodological role in BE. The observer's pre-measurement epistemic indeterminacy is structurally analogous but entirely absent from QM formalism.
+- QM definition: QM describes the system-side superposition (QM row 5); it does not formally name the registering system's K-side structured suspension before eigenvalue registration.
+- Correspondence type: Structural gap. Saamsaya is a source analogue with motivational and methodological role in BE; the VVV-QMRF category is a derived registration-layer classification, not a canonical QM postulate.
 - Correspondence strength: None — BIAN
 
 ## MAP-31
@@ -922,7 +922,7 @@ These labels are retained for RCA retrieval. For canonical graph usage, resolve 
 - BIAN-7: Epistemological Theorization of Quantum Temporal Discontinuity (Ksanikavaada) — MAP-21
 - BIAN-8: Formal Cognition of Absence as Distinct Epistemic Object Type (Abhaava / Anupalabdhi) — MAP-23
 - BIAN-9: Cross-Basis State Identity / Particle Identity Across Incompatible Measurements (Taadaatmya) — MAP-25
-- BIAN-10: Observer Epistemic Indeterminacy State Before Measurement (Saamsaya analog) — MAP-30
+- BIAN-10: Pre-Measurement Registration Indeterminacy (Saamsaya source analogue) — MAP-30
 - BIAN-11: Formal Measurement Invalidation / Epistemological Override (Baadhaka-pramaana) — MAP-31
 - BIAN-12: Epistemological Account of Pre-Measurement Ignorance (Avidyaa epistemic dimension) — MAP-35
 - BIAN-13: Tripartite Measurement Validity Conditions (Trairuupya-linga) — MAP-41
@@ -947,7 +947,7 @@ This table aligns the RCA-only Sonnet BIAN labels in this document with the cano
 | Sonnet BIAN-7 — Quantum Temporal Discontinuity | MAP-21 | System BIAN-8 | Aligned | Canonical node: N_BE_00029; tier: T3.04. |
 | Sonnet BIAN-8 — Cognition of Absence | MAP-23 | System BIAN-9 | Aligned | Tier: T3.06; no separate node. |
 | Sonnet BIAN-9 — Cross-Basis State Identity | MAP-25 | None direct | Needs review | Related to System T3.08 / BIAN-10, but System BIAN-10 is a reverse-direction entanglement gap. |
-| Sonnet BIAN-10 — Observer Epistemic Indeterminacy | MAP-30 | System BIAN-11 | Aligned | Canonical node: N_BE_00007; tier: T4.02. |
+| Sonnet BIAN-10 — Pre-Measurement Registration Indeterminacy | MAP-30 | System BIAN-11 | Aligned | Canonical node: N_BE_00007; tier: T4.02. |
 | Sonnet BIAN-11 — Formal Measurement Invalidation | MAP-31 | System BIAN-12 | Aligned | Tier: T4.04; no separate node. |
 | Sonnet BIAN-12 — Pre-Measurement Ignorance | MAP-35 | None direct | RCA-only | Related to N_BE_00023 Avidyaa as background error/root condition, not canonical BIAN. |
 | Sonnet BIAN-13 — Tripartite Measurement Validity | MAP-41 | System BIAN-14 | Aligned | Canonical node: N_BE_00018; tier: T5.06. |

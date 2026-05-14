@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # Buddhist Epistemology and Quantum Measurement: Line-by-Line RCA Mapping
 ## Method: Each row sourced directly from document corpus. No extrapolation beyond source lines.
 ## Ground system: Buddhist Epistemology (BE). QM mapped onto BE. Gaps labeled BIAN-N.
@@ -404,11 +406,11 @@
 - BE source line: Source doc L81-L83
 - BE definition: Doubt that motivates pursuit of certainty in pramaana inquiry.
 - RCA: direct
-- QM concept: BIAN-10 — Observer Epistemic Indeterminacy State
-- QM row: none (QM row 5 superposition describes physical indeterminacy, not observer's epistemic state)
+- QM concept: BIAN-10 — Pre-Measurement Registration Indeterminacy
+- QM row: none (QM row 5 superposition describes physical indeterminacy, not the registering system's K-side registration-state condition)
 - QM source: gap
-- QM definition: The formal epistemic state of an observer who knows psi but does not yet know the outcome. QM describes the physical superposition (QM row 5); it does not formally describe the epistemic state of the agent who holds this description before measurement.
-- Correspondence type: Structural gap. Saamsaya is a formal epistemic category with motivational and methodological role in BE. The observer's pre-measurement epistemic indeterminacy is structurally analogous but entirely absent from QM formalism.
+- QM definition: QM describes the system-side superposition (QM row 5); it does not formally name the registering system's K-side structured suspension before eigenvalue registration.
+- Correspondence type: Structural gap. Saamsaya is a source analogue with motivational and methodological role in BE; the VVV-QMRF category is a derived registration-layer classification, not a canonical QM postulate.
 - Correspondence strength: None — BIAN
 
 ## MAP-31
@@ -861,7 +863,7 @@
 - BIAN-7: Epistemological Theorization of Quantum Temporal Discontinuity (Ksanikavaada) — MAP-21
 - BIAN-8: Formal Cognition of Absence as Distinct Epistemic Object Type (Abhaava / Anupalabdhi) — MAP-23
 - BIAN-9: Cross-Basis State Identity / Particle Identity Across Incompatible Measurements (Taadaatmya) — MAP-25
-- BIAN-10: Observer Epistemic Indeterminacy State Before Measurement (Saamsaya analog) — MAP-30
+- BIAN-10: Pre-Measurement Registration Indeterminacy (Saamsaya source analogue) — MAP-30
 - BIAN-11: Formal Measurement Invalidation / Epistemological Override (Baadhaka-pramaana) — MAP-31
 - BIAN-12: Epistemological Account of Pre-Measurement Ignorance (Avidyaa epistemic dimension) — MAP-35
 - BIAN-13: Tripartite Measurement Validity Conditions (Trairuupya-linga) — MAP-41

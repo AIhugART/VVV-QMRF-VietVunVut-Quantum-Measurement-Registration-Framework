@@ -14,7 +14,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## 1. Postulate Statement
 
 **English:**
-> Quantum entanglement can be modeled in VVV-QMRF as an extension relation category — Intrinsic Relational Binding (IRB) — not as a classical Dharmakīrti subtype of *svabhāvapratibandha*. IRB is distinct from causal (A causes B) and identity (A is B) models, and is grounded by analogy in the intrinsic nature of the shared quantum state, not in any signal or interaction between the relata. The registration states of entangled subsystems A and B are formally non-separable: neither can be fully specified independently of the other within the shared-state registration context.
+> Quantum entanglement can be modeled in VVV-QMRF as an extension relation category — Intrinsic Relational Binding (IRB) — not as a classical Dharmakīrti subtype of *svabhāvapratibandha*. IRB is distinct from causal (A causes B) and logical identity (A is B / genus-species) models, and is grounded by analogy in the intrinsic nature of the shared quantum state, not in any signal or interaction between the relata. The registration states of entangled subsystems A and B are formally non-separable: neither can be fully specified independently of the other within the shared-state registration context.
 
 **Vietnamese:**
 > Vướng víu lượng tử có thể được mô hình hóa trong VVV-QMRF như một phạm trù quan hệ mở rộng — Liên kết Quan hệ Nội tại (IRB) — không phải subtype cổ điển của *svabhāvapratibandha* nơi Dharmakīrti. IRB khác với mô hình nhân quả (A gây ra B) và đồng nhất (A là B), và được đặt theo phép tương tự với bản chất nội tại của trạng thái lượng tử chung, không phải từ tín hiệu hay tương tác giữa hai bên. Trạng thái ghi nhận của A và B không thể tách rời trong ngữ cảnh trạng thái chung.
@@ -53,7 +53,7 @@ IRB (VVV-QMRF extension relation, grounded by analogy in svabhāvapratibandha):
     → non-separability is complete registration description (not ignorance)
 
 Dharmakīrti's recognized svabhāvapratibandha types and VVV-QMRF extension:
-  Tādātmya (logical genus-species identity; classical Dharmakīrti type) → identity-analogue contrast
+  Tādātmya (logical genus-species identity; classical Dharmakīrti type) → logical-identity contrast only; not QM state-vector identity or identical-particle exchange symmetry
   Tadutpatti (classical causal-grounded type) → causal-coupling contrast
   IRB (VVV-QMRF extension, not a classical subtype) → Bell-nonlocal entanglement ← BIAN-10 / E15
 ```

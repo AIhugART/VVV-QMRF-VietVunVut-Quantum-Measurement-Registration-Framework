@@ -84,7 +84,7 @@ The framework contribution is on the `K` side: the structure of registration-sta
 | Code | File | Title | Role |
 |---|---|---|---|
 | E8 | [E8_retroactive_override_postulate.md](E8_retroactive_override_postulate.md) | Retroactive Epistemic Override Postulate / Tiên đề Phủ quyết Nhận thức Hồi tố | Covers later correction or invalidation of a prior registration. |
-| E9 | [E9_null_observer_postulate.md](E9_null_observer_postulate.md) | Null Observer Event Postulate / Tiên đề Sự kiện Quan sát viên Rỗng | Covers the case where expected registration does not occur. |
+| E9 | [E9_null_observer_postulate.md](E9_null_observer_postulate.md) | Null Registering-System Event Postulate / Tiên đề Sự kiện Hệ ghi nhận Rỗng | Covers physical interaction without valid K-side registration encoding. |
 | E10 | [E10_tripartite_validity_postulate.md](E10_tripartite_validity_postulate.md) | Tripartite Measurement Validity Postulate / Tiên đề Ma trận Hợp lệ Tam phân | Organizes validity through a three-part measurement-validity structure. |
 | E11 | [E11_contrapositive_evidence_postulate.md](E11_contrapositive_evidence_postulate.md) | Contrapositive Quantum Evidence Postulate / Tiên đề Bằng chứng Lượng tử Thuần Loại trừ | Covers evidence structured through exclusion or contrast. |
 | E12 | [E12_limit_faculty_postulate.md](E12_limit_faculty_postulate.md) | Limit-Faculty Perception Postulate / Tiên đề Tri giác Giới hạn Năng lực | Covers registration constrained by the capacity of the registering faculty or system. |

@@ -1,6 +1,6 @@
-# BIAN Index v2 — Buddhist-Absent-In-QM Structural Labels
-
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
+# BIAN Index v2 — Buddhist-Absent-In-QM Structural Labels
 
 ## Purpose
 
@@ -36,7 +36,7 @@ This document provides a complete index of 20 BIAN (Buddhist-Interpretive Absent
 | BIAN-8 | Epistemological Theorization of Temporal Discontinuity | N_BE_00029 | core | Momentariness | Kṣaṇabhaṅgavāda | A1 | 37 | N_QM_00037 | Continuous Measurement: Quantum Jump Case | Medium | Temporal discontinuity |
 | BIAN-9 | Formal Cognition of Absence as Distinct Category | N_BE_00253 | RCA | Non-perception | Anupalabdhi | A3 | 33 | N_QM_00033 | No-Result Measurement (Null) | Strong | Nearest structural node; no explicit tag |
 | BIAN-10 | Non-Classical Correlation / Entanglement as Third Relation | N_BE_00021 | core | Essential relation | Svabhāvapratibandha | A1 | 75 | N_QM_00075 | Hamiltonian H | Medium | Non-classical correlation |
-| BIAN-11 | Observer Epistemic Indeterminacy before Measurement | N_BE_00007 | core | Doubt | Saṃśaya | A2 | 91 | N_QM_00091 | Hidden Variable Theories | Medium | Observer indeterminacy |
+| BIAN-11 | Pre-Measurement Registration Indeterminacy | N_BE_00007 | core | Doubt | Saṃśaya | A2 | 91 | N_QM_00091 | Hidden Variable Theories | Medium | K-side registration indeterminacy |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | — | — | — | bādhaka pramāṇa | — | — | — | — | — | No separate node in BE system |
 | BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | — | — | — | anadhyavasāya | — | — | — | — | — | No separate node in BE system |
 | BIAN-14 | Tripartite Measurement Validity Conditions | N_BE_00018 | core | Triple-condition syllogism | Trairūpya | A1 | 8 | N_QM_00008 | Four Postulates of QM | Medium | Tripartite validity conditions |

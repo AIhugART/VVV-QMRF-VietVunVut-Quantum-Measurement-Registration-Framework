@@ -235,10 +235,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ### T3.08 — Tadaatmya and Tadutpatti as object-relations (identity and causal relations between real particulars)
 **Node:** N_BE_00021 — Svabhaavapratibandha | **Edges:** ← ED_BE_00011, → ED_BE_00012
 
-- Buddhist Epistemology: The two valid inter-object relations that can ground inference. Tadaatmya indicates an identity or co-nature relation; tadutpatti indicates causal production. Both function as relations that can ground valid anumaana rather than as merely conceptual associations.
+- Buddhist Epistemology: The two valid inter-object relations that can ground inference. Tadaatmya indicates a logical identity or co-nature relation; tadutpatti indicates causal production. Both function as relations that can ground valid anumaana rather than as merely conceptual associations.
 - Quantum Measurement: Entanglement correlations. Quantum entanglement produces invariant correlations between measurement outcomes on spatially separated systems. These correlations are not causal in the local sense (no signaling possible; Bell inequality violated) and not relations of shared intrinsic nature (svabhaava is denied). In VVV-QMRF, entanglement is treated as an extension relation category rather than a third classical subtype of Dharmakīrti's svabhāvapratibandha taxonomy.
 - Correspondence type: Partial. Entanglement correlations do not map cleanly onto either tadaatmya or tadutpatti.
-- BIAN-10 — Non-Classical Correlation Relation. Quantum entanglement constitutes a non-causal, non-identity correlation structure in QM. Buddhist Epistemology has no classical *svabhāvapratibandha* subtype for this structure beyond *tādātmya* and *tadutpatti*, so VVV-QMRF treats IRB as an extension relation category. (Note: this BIAN runs in the opposite direction — Buddhist Epistemology lacks a category-language slot for a QM structure.)
+- BIAN-10 — Non-Classical Correlation Relation. Quantum entanglement constitutes a non-causal, non-logical-identity correlation structure in QM. Buddhist Epistemology has no classical *svabhāvapratibandha* subtype for this structure beyond *tādātmya* and *tadutpatti*, so VVV-QMRF treats IRB as an extension relation category. (Note: this BIAN runs in the opposite direction — Buddhist Epistemology lacks a category-language slot for a QM structure.)
 
 ---
 
@@ -256,10 +256,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ### T4.02 — Samsaya (doubt / indeterminate cognition)
 **Node:** N_BE_00007 — Samsaya | **Edges:** ← ED_BE_00028, → ED_BE_00037
 
-- Buddhist Epistemology: Cognition that oscillates between two or more incompatible determinations without resolving. Active uncertainty: the cognitive agent holds x and non-x as simultaneously possible without committing to either. Not a valid pramaana. Requires resolution via pratyaksa or anumaana.
-- Quantum Measurement: Pre-measurement epistemic state. An observer who knows the wave function but not the outcome is in a state of genuine indeterminacy about which eigenvalue will result. This is partially modeled as physical superposition, but the epistemic state of the observer holding this description is not formally theorized.
+- Buddhist Epistemology: Samsaya is doubt that motivates pursuit of certainty in pramaana inquiry. In this mapping it functions as a bounded source analogue for structured suspension, not as a binary/equal-weight doctrine or a physical mechanism.
+- Quantum Measurement: Pre-measurement registration-state condition. QM describes the system-side state as superposition or density matrix; VVV-QMRF adds the K-side classification of a registering system that encodes alternatives, weights, and coherences before any eigenvalue is registered.
 - Correspondence type: Partial.
-- BIAN-11 — Observer Epistemic Indeterminacy. The formal epistemic state of an observer who knows psi but not the outcome. QM describes the physical superposition. It does not describe the epistemic state of the agent who holds the description. The agent's pre-measurement epistemic condition — the analogue of samsaya — is outside the formalism.
+- BIAN-11 — Pre-Measurement Registration Indeterminacy. QM describes physical superposition but does not name the registering system's K-side structured suspension before measurement. The samsaya link is source lineage only; the VVV-QMRF category remains derived.
 
 ---
 
@@ -285,8 +285,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Node:** (No separate node — anadhyavasaaya)
 
 - Buddhist Epistemology: The epistemic state in which an object is causally present and capable of producing cognition, but no determination occurs. Neither valid cognition nor erroneous cognition — no cognition at all. Distinct from samsaya (which involves active oscillation) and from bhranti (which involves misdetermined cognition).
-- Quantum Measurement: BIAN-13 — Null Observer Event. The state of a measurement apparatus for which a quantum event occurs but produces no registration — a detector that fails to fire when a particle passes through it. QM models this as detection efficiency (a probability parameter). It does not theorize the epistemic state of an observer for whom an event is causally present but produces no outcome.
-- Structural gap: QM has detection efficiency as a statistical parameter. It does not have an epistemological category for non-engagement as a distinct cognitive state.
+- Quantum Measurement: BIAN-13 — Null Registering-System Event / Registration Non-Engagement. The state of a measurement apparatus for which a quantum event occurs but produces no registration — a detector that fails to fire when a particle passes through it. QM can describe this through experimental detection efficiency ($\eta$) and formal POVM/no-click or no-result measurement models, but it does not theorize the K-side registration state in which an event is causally present yet produces no registration outcome.
+- Structural gap: QM has detection-efficiency parameters and no-click/no-result formalisms, but it does not have a registration-layer category for non-engagement as a distinct K-side state.
 
 ---
 
@@ -548,7 +548,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 - T2.03 Phala — Measurement outcome
 - T3.04 Ksanikavaada — Quantum temporal discontinuity (BIAN-8 partial)
 - T3.08 Tadaatmya — Entanglement (diverges into BIAN-10)
-- T4.02 Samsaya — Pre-measurement epistemic state (diverges into BIAN-11)
+- T4.02 Samsaya — Pre-measurement registration-state condition (diverges into BIAN-11)
 - T5.02 Sadhya — Wave function as inferred state
 - T5.03 Paksa — Quantum system under measurement
 - T5.14 Tadaatmya — Conservation-based correlations (partial)
@@ -569,9 +569,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 - BIAN-8: Epistemological Theorization of Quantum Temporal Discontinuity (Ksanikavaada — partial gap)
 - BIAN-9: Formal Absence Cognition as Distinct Epistemic Category (Abhaava / Anupalabdhi)
 - BIAN-10: Non-Classical Correlation Relation — Entanglement as Third Relation Type (beyond Tadaatmya and Tadutpatti) — note: this is the one gap where QM has a concept Pramaanavada lacks
-- BIAN-11: Observer Epistemic Indeterminacy State Prior to Measurement (Samsaya analog)
+- BIAN-11: Pre-Measurement Registration Indeterminacy (Samsaya source analogue)
 - BIAN-12: Formal Measurement Invalidation and Epistemic Override (Baadhaka pramaana)
-- BIAN-13: Null Observer Event and Non-Engagement Epistemic State (Anadhyavasaaya)
+- BIAN-13: Null Registering-System Event / Registration Non-Engagement (Anadhyavasaaya)
 - BIAN-14: Tripartite Measurement Validity Conditions (Trairuupya)
 - BIAN-15: Purely Contrastive Quantum Evidence (Kevalavyatirekin)
 - BIAN-16: Measurement Self-Completion without External Registration Requirement (Pramaana-Phala identity)

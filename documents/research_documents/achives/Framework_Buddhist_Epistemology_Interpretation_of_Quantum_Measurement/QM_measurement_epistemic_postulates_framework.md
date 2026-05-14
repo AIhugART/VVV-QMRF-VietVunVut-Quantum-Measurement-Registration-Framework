@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # Epistemic Extension Framework for Quantum Measurement
 
 ## QM-E: Seven Epistemic Postulates Derived from BIAN Gap Analysis
@@ -312,7 +314,7 @@ graph TD
 | BIAN-8 | Temporal discontinuity | E4 + E3 (discreteness of commitment acts) | ✅ |
 | BIAN-9 | Cognition of absence | E3 + E7 (null commitment = valid absence-measurement) | ✅ |
 | BIAN-10 | Entanglement (reverse gap) | — (not an epistemic deficit in QM) | N/A |
-| BIAN-11 | Observer indeterminacy before measurement | E3 (pre-commitment state) | ✅ |
+| BIAN-11 | Pre-measurement registration indeterminacy | E16 / SDS (pre-measurement registration-state condition) | ✅ |
 | BIAN-12 | Measurement invalidation | E7 (extrinsic invalidity detection) | ✅ |
 | BIAN-13 | Null observer event | E3 (non-engagement = no commitment act) | ✅ |
 | BIAN-14 | Tripartite validity conditions | E7 + E3 + E1 (three conditions for valid measurement) | ✅ |

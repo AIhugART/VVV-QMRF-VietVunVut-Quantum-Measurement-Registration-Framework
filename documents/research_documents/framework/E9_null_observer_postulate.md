@@ -1,10 +1,14 @@
-# E9 — Null Observer Event Postulate / Tiên đề Sự kiện Quan sát viên Rỗng
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+# E9 — Null Registering-System Event Postulate / Tiên đề Sự kiện Hệ ghi nhận Rỗng
+# Legacy Name: Null Observer Event Postulate / Tiên đề Sự kiện Quan sát viên Rỗng
+
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
+**Facebook:** https://www.facebook.com/xuanviet  
 **Date:** 2026-05-12  
-**Status:** Proposal — Epistemic class D  
+**Status:** Proposal — Registration class D  
 **Lineage:** gap/ (BIAN-13) → category/ (Category 06) → framework/ (E9)
 
 ---
@@ -12,32 +16,32 @@
 ## 1. Postulate Statement
 
 **English:**
-> There exists a formally distinct quantum epistemic state in which a physical interaction between system and apparatus has verifiably occurred, yet the observer registers zero information change (ΔI = 0). This state — the Null Observer Event (NOE) — is not a hardware failure. It is a structurally complete epistemic category.
+> There exists a formally distinct quantum registration state in which a physical interaction between system and apparatus has verifiably occurred, yet the registering system records zero information change (ΔI = 0). This state — the Null Registering-System Event (NRE) — is not reducible to hardware failure. It is a VVV-QMRF registration-layer category.
 
 **Vietnamese:**
-> Tồn tại một trạng thái nhận thức lượng tử chính thức, trong đó tương tác vật lý giữa hệ thống và máy đo đã xác nhận xảy ra, nhưng người quan sát ghi nhận ΔI = 0. Trạng thái này không phải lỗi phần cứng — đây là phạm trù nhận thức hoàn chỉnh.
+> Tồn tại một trạng thái ghi nhận lượng tử chính thức, trong đó tương tác vật lý giữa hệ thống và máy đo đã xác nhận xảy ra, nhưng hệ ghi nhận có ΔI = 0. Trạng thái này không quy giản thành lỗi phần cứng — đây là phạm trù tầng ghi nhận của VVV-QMRF.
 
 ---
 
 ## 2. Prose Statement
 
-QM conflates two fundamentally different null events: (a) no physical interaction (particle missed detector), and (b) physical interaction occurred but produced no epistemic outcome. Both are currently handled by Detection Efficiency η — an engineering concept that obscures a deep epistemic distinction.
+Standard QM separates no-click cases through experimental detection efficiency ($\eta$), POVM/no-click effects, no-result measurement, and decoherence models, but those tools do not by themselves classify the K-side registration status of an interaction that occurs without valid registration encoding.
 
-E9 separates these. The NOE state: physical coupling present (H_int ≠ 0) + epistemic outcome absent (ΔI = 0). Formal operator: $\hat{E}_\emptyset$. Its action leaves the observer's density matrix unchanged while the physical interaction dissipates into the environment via decoherence — leaving no epistemic trace.
+E9 adds that bounded registration-layer distinction. The NRE state: physical coupling present (H_int ≠ 0) + registration outcome absent (ΔI = 0). Formal operator: $\hat{E}_\emptyset$. Its action marks the registering system as unchanged while the physical interaction dissipates into the environment via decoherence — leaving no valid registration trace for that registering system.
 
-This derives from *Anadhyavasāya* in Buddhist Epistemology: the mind causally present to an object but failing to generate any epistemic determination — not doubt (Saṃśaya), not error (bhrānti), but structurally complete non-engagement.
+This uses *Anadhyavasāya* in Buddhist Epistemology as a source analogue: the mind is causally present to an object but fails to generate any epistemic determination — not doubt (Saṃśaya), not error (bhrānti), but structurally complete non-engagement.
 
 ---
 
 ## 3. Formal Sketch
 
-### 3a. NOE state definition
+### 3a. NRE state definition
 
 ```
 Physical condition:  H_int ≠ 0  (coupling occurred)
-Epistemic condition: ΔI = 0     (observer info unchanged)
+Registration condition: ΔI = 0  (registering-system information unchanged)
 
-NOE = {H_int ≠ 0} ∩ {ΔI = 0}
+NRE = {H_int ≠ 0} ∩ {ΔI = 0}
 
 Distinguished from:
   Unmeasured:         {H_int = 0} ∩ {ΔI = 0}
@@ -45,11 +49,11 @@ Distinguished from:
   Error (bhrānti):    {H_int = 0} ∩ {ΔI > 0}  ← spurious click
 ```
 
-### 3b. Epistemic-Physical 2×2 matrix (with E11/BIAN-15)
+### 3b. Registration-Physical 2×2 matrix (with E11/BIAN-15)
 
 | | Information YES | Information NO |
 |---|:---:|:---:|
-| **Interaction YES** | Standard Measurement | **NOE — E9** |
+| **Interaction YES** | Standard Measurement | **NRE — E9** |
 | **Interaction NO** | IFSI — E11 | Unmeasured |
 
 ### 3c. Equivalence status
@@ -57,7 +61,7 @@ Distinguished from:
 | Formalism | Source | Status |
 |-----------|--------|--------|
 | $\hat{E}_\emptyset$ operator | Framework E9 | Class D |
-| NOE category | Category 06 | Class D |
+| NRE category | Category 06 | Class D |
 | Equivalence? | Unproven | Class C |
 
 ---
@@ -66,8 +70,8 @@ Distinguished from:
 
 | Symbol | Meaning EN | Domain |
 |--------|-----------|--------|
-| $\hat{E}_\emptyset$ | Null Epistemic Operator | E9 |
-| ΔI | Information change for observer | Information theory |
+| $\hat{E}_\emptyset$ | Null Registration Operator | E9 |
+| ΔI | Information change for registering system | Information theory |
 | H_int | Interaction Hamiltonian | QM |
 | Anadhyavasāya | Non-determination | Buddhist term |
 
@@ -79,7 +83,7 @@ Distinguished from:
 
 | BIAN | Gap name | SOT line |
 |------|----------|:--------:|
-| BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | L42 |
+| BIAN-13 | Null Registering-System Event / Registration Non-Engagement | L42 |
 
 ### 5b. Buddhist source
 
@@ -93,7 +97,7 @@ Distinguished from:
 
 ## 6. QM Deficit
 
-QM handles missed detections via engineering parameter η only. There is no epistemic distinction between "missed because no interaction" and "missed because interaction dissipated epistemically." E9 establishes this distinction as a formal axiom.
+QM can describe missed detections through experimental efficiency ($\eta$), POVM/no-click effects, no-result measurement, and decoherence. What remains missing is a registration-layer distinction between "missed because no interaction occurred" and "interaction occurred but no valid K-side registration was encoded." E9 establishes that distinction as a VVV-QMRF postulate.
 
 ---
 
@@ -101,7 +105,7 @@ QM handles missed detections via engineering parameter η only. There is no epis
 
 ```
 E6 (Observer-as-Process)
- └→ E9 (Null Observer Event) ← THIS POSTULATE
+ └→ E9 (Null Registering-System Event) ← THIS POSTULATE
       E9 paired with E11 (IFSI/BIAN-15) to complete 2×2 matrix
 ```
 
@@ -117,18 +121,18 @@ E6 (Observer-as-Process)
 
 | Component | Class | Evidence |
 |---|---|---|
-| "QM conflates two null event types" | **M** | Category 06, experimental practice |
-| "Anadhyavasāya principle" | **M** | Buddhist logic |
-| "$\hat{E}_\emptyset$ operator" | **D** | Proposed |
-| "2×2 Epistemic-Physical matrix" | **D** | Proposed (with E11) |
+| "QM lacks a K-side classification for interaction without valid registration" | **M** | Category 06, QM no-click support, experimental practice |
+| "Anadhyavasāya source analogue" | **M** | Buddhist logic |
+| "$\hat{E}_\emptyset$ operator" | **D** | Proposed VVV-QMRF notation |
+| "2×2 Registration-Physical matrix" | **D** | Proposed (with E11) |
 
 ---
 
 ## 9. RCA Findings
 
-### ✅ BIAN-13 resolved
+### BIAN-13 resolved
 
-Category 06 was complete. E9 elevates it to architectural postulate status. SOT updated 2026-05-12.
+Category 06 supplies the bounded registration category. E9 elevates it to architectural postulate status while preserving standard QM's experimental efficiency, POVM/no-click, no-result, and decoherence formalisms as substrate support. SOT updated 2026-05-12.
 
 ---
 

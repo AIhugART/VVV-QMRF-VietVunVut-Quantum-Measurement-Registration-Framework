@@ -151,7 +151,7 @@ Tương đương ở tất cả mục.
 | BIAN-8 | Kṣaṇabhaṅgavāda (Ksanabhangavaada) | Axiom 1 | ✅ partial | Tương đương |
 | BIAN-9 | Abhāva/Anupalabdhi (Abhaava) | Axiom 2 | ✅ | Tương đương |
 | BIAN-10 | Entanglement — reverse BIAN | Axiom 1 | ✅ | Tương đương — cả hai ghi nhận đây là BIAN duy nhất ngược chiều |
-| BIAN-11 | Saṃśaya analog (Samsaya) | Axiom 3 | ✅ | Tương đương |
+| BIAN-11 | Saṃśaya source analogue (Samsaya) | Axiom 3 | ✅ | Tương đương |
 | BIAN-12 | Bādhaka pramāṇa (Baadhaka pramaana) | Axiom 3 | ✅ | Tương đương |
 | BIAN-13 | Anadhyavasāya (Anadhyavasaaya) | Axiom 3 | ✅ | Tương đương |
 | BIAN-14 | Trairūpya (Trairuupya) | Axiom 1 | ✅ | Tương đương |

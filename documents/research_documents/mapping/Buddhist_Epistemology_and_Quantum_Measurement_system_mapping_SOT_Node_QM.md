@@ -541,12 +541,12 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 - ED_BE_00011: N_BE_00019 (Vyāpti) → N_BE_00021 — grounded in (Logical)
 - ED_BE_00012: N_BE_00021 → N_BE_00022 (Arthakriyā) — has as basis (Ontological)
 
-- **Buddhist Epistemology:** The two valid inter-object relations that can ground inference. The following account is a structural simplification; classical examples and formulations vary across Buddhist logic discussions. Tādātmya indicates an identity or co-nature relation; tadutpatti indicates causal production. Both function as relations that can ground valid anumāna rather than as merely conceptual associations.
+- **Buddhist Epistemology:** The two valid inter-object relations that can ground inference. The following account is a structural simplification; classical examples and formulations vary across Buddhist logic discussions. Tādātmya indicates a logical identity or co-nature relation; tadutpatti indicates causal production. Both function as relations that can ground valid anumāna rather than as merely conceptual associations.
 - **Quantum Measurement:** Entanglement correlations. Quantum entanglement produces invariant correlations between measurement outcomes on spatially separated systems. These correlations are not causal in the local sense (no signaling possible; Bell inequality violated) and not relations of shared intrinsic nature (svabhāva is denied). In VVV-QMRF, entanglement is treated as an extension relation category rather than a third classical subtype of Dharmakīrti's *svabhāvapratibandha* taxonomy.
 - **QM node(s):** N_QM_00047 — Entanglement; N_QM_00051 — Composite Observables; N_QM_00090 — Bell's Inequality & Bell Correlations
 - **QM edge(s):** ED_QM_00059: N_QM_00051 → N_QM_00047 — detects structure of (direct).
 - **Correspondence type:** Partial. Entanglement correlations do not map cleanly onto either tādātmya or tadutpatti.
-- **BIAN-10 — Non-Classical Correlation Relation.** Quantum entanglement constitutes a non-causal, non-identity correlation structure in QM. Buddhist Epistemology has no classical *svabhāvapratibandha* subtype for this structure beyond *tādātmya* and *tadutpatti*, so VVV-QMRF treats IRB as an extension relation category. (Note: this BIAN runs in the opposite direction — Buddhist Epistemology lacks a category-language slot for a QM structure.)
+- **BIAN-10 — Non-Classical Correlation Relation.** Quantum entanglement constitutes a non-causal, non-logical-identity correlation structure in QM. Buddhist Epistemology has no classical *svabhāvapratibandha* subtype for this structure beyond *tādātmya* and *tadutpatti*, so VVV-QMRF treats IRB as an extension relation category. (Note: this BIAN runs in the opposite direction — Buddhist Epistemology lacks a category-language slot for a QM structure.)
 
 ---
 
@@ -579,12 +579,12 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 **Outbound edges:**
 - ED_BE_00037: N_BE_00007 → N_BE_00027 (Svārthānumāna) — motivates (Psychological) [Note: uncertain]
 
-- **Buddhist Epistemology:** Cognition that oscillates between two or more incompatible determinations without resolving. Active uncertainty: the cognitive agent holds x and non-x as simultaneously possible without committing to either. Not a valid pramāṇa. Requires resolution via pratyakṣa or anumāna.
-- **Quantum Measurement:** Pre-measurement epistemic state. An observer who knows the wave function but not the outcome is in a state of genuine indeterminacy about which eigenvalue will result. This is partially modeled as physical superposition, but the epistemic state of the observer holding this description is not formally theorized.
+- **Buddhist Epistemology:** Saṃśaya is doubt that motivates pursuit of certainty in pramāṇa inquiry. In this mapping it functions as a bounded source analogue for structured suspension, not as a binary/equal-weight doctrine or a physical mechanism.
+- **Quantum Measurement:** Pre-measurement registration-state condition. QM describes the system-side state as superposition or density matrix; VVV-QMRF adds the K-side classification of a registering system that encodes alternatives, weights, and coherences before any eigenvalue is registered.
 - **QM node(s):** N_QM_00005 — Superposition; N_QM_00013 — [PARTIAL] Wave Function ψ(x); N_QM_00002 — Quantum State
-- **Closest QM edge(s):** No direct ED_QM edge connects the listed QM nodes. Closest local support: ED_QM_00003: N_QM_00004 → N_QM_00005 — supports (direct); ED_QM_00004: N_QM_00005 → N_QM_00006 — depends on (direct); ED_QM_00011: N_QM_00013 → N_QM_00016 — feeds into (partial). Not a direct analogue; listed only as closest supported QM structure.
+- **Closest QM edge(s):** No direct ED_QM edge creates a Buddhist-QM equivalence. Closest local support: ED_QM_00003: N_QM_00004 → N_QM_00005 — supports (direct); ED_QM_00004: N_QM_00005 → N_QM_00006 — depends on (direct); ED_QM_00011: N_QM_00013 → N_QM_00016 — feeds into (partial). Listed only as canonical QM substrate for the derived VVV-QMRF category.
 - **Correspondence type:** Partial.
-- **BIAN-11 — Observer Epistemic Indeterminacy.** The formal epistemic state of an observer who knows ψ but not the outcome. QM describes the physical superposition. It does not describe the epistemic state of the agent who holds the description. The agent's pre-measurement epistemic condition — the analogue of saṃśaya — is outside the formalism.
+- **BIAN-11 — Pre-Measurement Registration Indeterminacy.** QM describes physical superposition but does not name the registering system's K-side structured suspension before measurement. The Saṃśaya link is source lineage only; the VVV-QMRF category remains derived.
 
 ---
 
@@ -617,10 +617,10 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 **Node:** No separate node in the BE SOT.
 
 - **Buddhist Epistemology:** The epistemic state in which an object is causally present and capable of producing cognition, but no determination occurs. Neither valid cognition nor erroneous cognition — no cognition at all. Distinct from saṃśaya (which involves active oscillation) and from bhrānti (which involves misdetermined cognition).
-- **Quantum Measurement:** BIAN-13 — Null Observer Event. The state of a measurement apparatus for which a quantum event occurs but produces no registration — a detector that fails to fire when a particle passes through it. The closest table-supported analogue is no-result / null measurement when the absence of a click itself carries information and updates the quantum state. QM does not theorize the epistemic state of an observer for whom an event is causally present but produces no cognition.
-- **QM node(s):** N_QM_00033 — No-Result Measurement (Null Measurement); N_QM_00058 — Linear Detector
-- **Closest QM edge(s):** No direct ED_QM edge connects the listed QM nodes. Closest local support: ED_QM_00039: N_QM_00033 → N_QM_00032 — produces (direct); ED_QM_00069: N_QM_00058 → N_QM_00061 — is limited by (direct); ED_QM_00074: N_QM_00062 → N_QM_00058 — describes (direct). Not a direct analogue; listed only as closest supported QM structure.
-- **Structural gap:** QM has table-supported no-result outcomes, but it does not have an epistemological category for non-engagement as a distinct cognitive state.
+- **Quantum Measurement:** BIAN-13 — Null Registering-System Event / Registration Non-Engagement. The state of a measurement apparatus for which a quantum event occurs but produces no registration — a detector that fails to fire when a particle passes through it. The closest table-supported supports are experimental detection efficiency, POVM/no-click or no-result measurement, and decoherence; these describe the QM substrate, but not the K-side state in which an event is causally present yet produces no registration outcome.
+- **QM node(s):** N_QM_00024 — POVM; N_QM_00033 — No-Result Measurement (Null Measurement); N_QM_00058 — Linear Detector
+- **Closest QM edge(s):** No direct ED_QM edge connects all listed QM nodes. Closest local support: ED_QM_00027: N_QM_00024 → N_QM_00026 — is part of (direct); ED_QM_00039: N_QM_00033 → N_QM_00032 — produces (direct); ED_QM_00069: N_QM_00058 → N_QM_00061 — is limited by (direct); ED_QM_00074: N_QM_00062 → N_QM_00058 — describes (direct). Not a direct analogue; listed only as closest supported QM structure.
+- **Structural gap:** QM has table-supported no-click/no-result outcomes and detector-performance parameters, but it does not have a registration-layer category for non-engagement as a distinct K-side state.
 
 ---
 
@@ -952,9 +952,9 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 | BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | T3.04 | N_BE_00029 (Kṣaṇikavāda) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-9 | Formal Cognition of Absence as Distinct Epistemic Category | T3.06 | (No separate node — abhāva/anupalabdhi; QM has null outcomes but no equivalent epistemic category) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-10 | Non-Classical Correlation Relation / Entanglement as Third Relation Type | T3.08 | N_BE_00021 (Svabhāvapratibandha — partial) | Reverse gap: Quantum Measurement → Buddhist Epistemology |
-| BIAN-11 | Observer Epistemic Indeterminacy State before Measurement | T4.02 | N_BE_00007 (Saṃśaya analog) | Buddhist Epistemology → Quantum Measurement gap |
+| BIAN-11 | Pre-Measurement Registration Indeterminacy | T4.02 | N_BE_00007 (Saṃśaya source analogue) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | T4.04 | (No separate node — bādhaka pramāṇa) | Buddhist Epistemology → Quantum Measurement gap |
-| BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | T4.05 | (No separate node — anadhyavasāya) | Buddhist Epistemology → Quantum Measurement gap |
+| BIAN-13 | Null Registering-System Event / Registration Non-Engagement | T4.05 | (No separate node — anadhyavasāya) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-14 | Tripartite Measurement Validity Conditions | T5.06 | N_BE_00018 (Trairūpya) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-15 | Purely Contrastive Quantum Evidence Structure | T5.09 | (No separate node — kevalavyatirekin) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-16 | Measurement Self-Completion / No External Registration Required | T6.01 | N_BE_00001 (Pramāṇa-phala identity) | Buddhist Epistemology → Quantum Measurement gap |

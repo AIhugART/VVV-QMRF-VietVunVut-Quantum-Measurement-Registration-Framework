@@ -37,9 +37,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | BIAN-8 | Epistemological Theorization of Temporal Discontinuity | N_BE_00029 | core | Momentariness | Kṣaṇabhaṅgavāda | A1 | 37 | Quantum Jump Case | Medium | ✅ Resolved — Cat 12 + E13 |
 | BIAN-9 | Formal Cognition of Absence as Distinct Category | N_BE_00253 | RCA | Non-perception | Anupalabdhi | A3 | 33 | Null Measurement | Strong | ✅ Resolved — Cat 13 + E14 |
 | BIAN-10 | Non-Classical Correlation / Entanglement as Third Relation | N_BE_00021 | core | Essential relation | Svabhāvapratibandha | A1 | 75 | Hamiltonian H | Medium | ✅ Resolved — Cat 14 + E15 |
-| BIAN-11 | Observer Epistemic Indeterminacy before Measurement | N_BE_00007 | core | Doubt | Saṃśaya | A2 | 91 | Hidden Variable Theories | Medium | ✅ Resolved — Cat 15 + E16 |
+| BIAN-11 | Pre-Measurement Registration Indeterminacy | N_BE_00007 | core | Doubt | Saṃśaya | A2 | 91 | Hidden Variable Theories | Medium | ✅ Resolved — Cat 15 + E16 |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | — | — | — | bādhaka pramāṇa | — | — | — | — | ✅ Resolved — Cat 03 + E8 (no node) |
-| BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | — | — | — | anadhyavasāya | — | — | — | — | ✅ Resolved — Cat 06 + E9 (no node) |
+| BIAN-13 | Null Registering-System Event / Registration Non-Engagement | — | — | — | anadhyavasāya | — | — | — | — | ✅ Resolved — Cat 06 + E9 (no node) |
 | BIAN-14 | Tripartite Measurement Validity Conditions | N_BE_00018 | core | Triple-condition syllogism | Trairūpya | A1 | 8 | Four Postulates of QM | Medium | ✅ Resolved — Cat 09 + E10 |
 | BIAN-15 | Purely Contrastive Quantum Evidence Structure | — | — | — | kevalavyatirekin | — | — | — | — | ✅ Resolved — Cat 01 + E11 (no node) |
 | BIAN-16 | Measurement Self-Completion / No External Registration | N_BE_00001 | core | Valid cognition | Pramāṇa | A3 | 19 | Measurement (Physical Act) | Strong | ✅ Resolved — Cat 02 + E2 |

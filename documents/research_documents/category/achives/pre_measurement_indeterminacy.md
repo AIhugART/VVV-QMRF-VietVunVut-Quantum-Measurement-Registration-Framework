@@ -10,7 +10,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status:** Proposal — Registration class D
 **Lineage:** gap/ (BIAN-11) → category/ (Category 15) → framework/ (E16)
 
-> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-11**. BIAN-11 highlights QM's lack of a formal registration category for the registering system's K-state of indeterminacy *before* measurement — structurally analogous to *Saṃśaya* (Doubt — the BE source model of hovering between two incompatible alternatives).
+> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-11**. BIAN-11 highlights QM's lack of a formal registration category for the registering system's K-state of indeterminacy *before* measurement — structurally analogous to *Saṃśaya* (Doubt — the BE source model of epistemic suspension that motivates inquiry toward certainty).
 
 ---
 
@@ -18,7 +18,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Pre-Measurement Registration Indeterminacy / Structured Registration-Doubt State (SDS)
 * **Vietnamese Name:** Bất định Ghi nhận Tiền đo / Trạng thái Nghi ngờ Ghi nhận Có Cấu trúc
-* **Buddhist Equivalent:** *Saṃśaya* (Doubt — definite indeterminacy between two equally weighted alternatives)
+* **Buddhist Equivalent:** *Saṃśaya* (Doubt — epistemic suspension that motivates inquiry toward certainty; used here as a bounded source analogue for structured non-determination, not a binary/equal-weight state)
 * **Node:** N_BE_00007
 * **Symbol:** Indeterminacy Operator $\hat{S}_{saṃśaya}$
 
@@ -27,10 +27,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## 2. Definition
 
 **English:**
-A formal registration category for the registering system's K-state when facing a quantum system in superposition before measurement. This state is NOT mere ignorance (the registering system encodes the superposition structure), NOT certainty (no eigenvalue is determined), but *structured indeterminacy* — the registering system holds a structured K-side suspension between definite alternatives, with a known probability distribution over them. This is the quantum counterpart of Buddhist *Saṃśaya*: doubt not as confusion but as a rigorous source-lineage analogue for structured non-determination.
+A formal registration category for the registering system's K-state when facing a quantum system in superposition before measurement. This state is NOT mere ignorance (the registering system encodes the superposition structure), NOT certainty (no eigenvalue is determined), but *structured indeterminacy* — the registering system holds a structured K-side suspension across alternatives, weights, and coherence relations before any eigenvalue is registered. This is the quantum counterpart of Buddhist *Saṃśaya*: doubt not as confusion but as a rigorous source-lineage analogue for structured non-determination.
 
 **Vietnamese:**
-Phạm trù ghi nhận chính thức cho trạng thái K của hệ ghi nhận khi đối mặt với hệ lượng tử trong chồng chập trước khi đo. Không phải vô tri (hệ ghi nhận mã hóa cấu trúc chồng chập), không phải chắc chắn (chưa có eigenvalue), mà là *bất định có cấu trúc* — hệ ghi nhận ở trạng thái treo có cấu trúc giữa các lựa chọn xác định với phân phối xác suất đã biết.
+Phạm trù ghi nhận chính thức cho trạng thái K của hệ ghi nhận khi đối mặt với hệ lượng tử trong chồng chập trước khi đo. Không phải vô tri (hệ ghi nhận mã hóa cấu trúc chồng chập), không phải chắc chắn (chưa có eigenvalue), mà là *bất định có cấu trúc* — hệ ghi nhận ở trạng thái treo có cấu trúc qua các khả năng, trọng số, và quan hệ coherence trước khi có eigenvalue được ghi nhận.
 
 ---
 
@@ -41,7 +41,7 @@ Ignorance (classical): P(λ) = unknown
 Certainty: ρ = |λᵢ⟩⟨λᵢ| (definite eigenstate)
 
 SDS (Structured Doubt State):
-  ρ = Σᵢ cᵢ |λᵢ⟩⟨λᵢ| + off-diagonal coherence terms
+  ρ = Σᵢ |cᵢ|² |λᵢ⟩⟨λᵢ| + Σᵢ≠ⱼ cᵢcⱼ* |λᵢ⟩⟨λⱼ|
   Registering system encodes: {λᵢ}, {|cᵢ|²}, AND the coherences ρᵢⱼ
   Registering system has NOT registered: which λᵢ will actualize
 
@@ -51,9 +51,9 @@ This is richer than classical probability distribution:
        → the "doubt" is quantum-coherent, not merely statistical
 
 Saṃśaya mapping:
-  "Hovering between tree-stump and man in dusk" (Nyāya example)
-  → Quantum: state |ψ⟩ = α|0⟩ + β|1⟩
-  → Registering system encodes both alternatives and their weights
+  A dusk example illustrates suspension, not a binary/equal-weight limit
+  → Quantum: state |ψ⟩ = Σᵢ cᵢ |λᵢ⟩
+  → Registering system encodes the alternatives, their weights, and coherence relations
   → K-side state: suspended, awaiting registration-state update
 
 Hidden variable connection (QM#91):

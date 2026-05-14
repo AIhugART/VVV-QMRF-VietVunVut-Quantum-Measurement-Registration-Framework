@@ -1,10 +1,13 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # E11 — Contrapositive Quantum Evidence Postulate / Tiên đề Bằng chứng Lượng tử Thuần Loại trừ
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
+**Facebook:** https://www.facebook.com/xuanviet  
 **Date:** 2026-05-12  
-**Status:** Proposal — Epistemic class D  
+**Status:** Proposal — Registration class D  
 **Lineage:** gap/ (BIAN-15) → category/ (Category 01) → framework/ (E11)
 
 ---
@@ -27,7 +30,7 @@ QM formally recognizes only one mode of knowledge acquisition: direct physical i
 
 E11 closes this gap. It establishes that *Kevalavyatirekin* (purely contrastive inference) — a rigorous category from Dignāga/Dharmakīrti's Buddhist logic — maps precisely onto interaction-free quantum measurement. The registration-state mechanism: the null result at detector A, combined with the quantum superposition structure, logically entails the particle's position in path B. No energy exchange occurs. The wave function collapse is driven entirely by the *registration-state update*, not by physical disturbance.
 
-E11 paired with E9 (Null Observer Event / BIAN-13) completes the 2×2 Epistemic-Physical matrix: E9 is "interaction without information"; E11 is "information without interaction."
+E11 paired with E9 (Null Registering-System Event / Registration Non-Engagement / BIAN-13) completes the 2×2 Registration-Physical matrix: E9 is "interaction without registration"; E11 is "registration through structured non-interaction."
 
 ### Vietnamese
 

@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # Exhaustive Mapping: Buddhist Epistemology and Quantum Measurement
 ## Ground System: Pramaanavada — Dignaga and Dharmakirti corpus
 ## Method: Exhaustive tier-by-tier enumeration of Buddhist Epistemology; independent QM query for each concept
@@ -151,10 +153,10 @@
 - Correspondence type: Functional parallel. Both are real cognitive/physical events producing invalid epistemic output.
 
 ### T4.02 — Samsaya (doubt / indeterminate cognition)
-- Buddhist Epistemology: Cognition that oscillates between two or more incompatible determinations without resolving. It cognizes both x and non-x as possible without committing. Not a valid pramaana. An intermediate epistemic state requiring resolution.
-- Quantum Measurement: Pre-measurement superposition as epistemic state. Before measurement, an observer who knows the wave function but not the outcome is in a state of genuine indeterminacy about which eigenvalue will result. This is not formally theorized as a distinct epistemic state in QM.
-- Correspondence type: Partial. The physical superposition is mapped; the epistemic state of the observer in superposition is BIAN.
-- BIAN-11 — Observer Epistemic Indeterminacy. The formal epistemic state of an observer who knows psi but not the outcome. QM describes the physical superposition; it does not describe the epistemic state of the agent who holds this description.
+- Buddhist Epistemology: Samsaya is doubt that motivates pursuit of certainty in pramaana inquiry. In this mapping it functions as a bounded source analogue for structured suspension, not as a binary/equal-weight doctrine or a physical mechanism.
+- Quantum Measurement: Pre-measurement registration-state condition. QM describes the system-side state as superposition or density matrix; VVV-QMRF adds the K-side classification of a registering system that encodes alternatives, weights, and coherences before any eigenvalue is registered.
+- Correspondence type: Partial. The physical superposition substrate is mapped; the registering system's K-side structured suspension is a derived VVV-QMRF category.
+- BIAN-11 — Pre-Measurement Registration Indeterminacy. QM describes physical superposition but does not name the registering system's K-side structured suspension before measurement. The Samsaya link is source lineage only; the VVV-QMRF category remains derived.
 
 ### T4.03 — Tarka (counterfactual reasoning / reductio reasoning)
 - Buddhist Epistemology: A form of reasoning that establishes a thesis by demonstrating the absurdity of its negation. Not an independent pramaana but a support for anumaana. Used to establish vyaapti (invariant pervasion) by showing what would follow if it did not hold.
@@ -305,7 +307,7 @@
 - BIAN-8: Epistemological Theorization of Quantum Temporal Discontinuity (Ksanikavaada)
 - BIAN-9: Formal Cognition of Absence as Distinct Epistemic Category (Abhaava / Anupalabdhi)
 - BIAN-10: Non-Classical Correlation Relation / Entanglement as Third Relation Type (beyond Tadaatmya and Tadutpatti)
-- BIAN-11: Observer Epistemic Indeterminacy State before Measurement (Samsaya analog)
+- BIAN-11: Pre-Measurement Registration Indeterminacy (Samsaya source analogue)
 - BIAN-12: Formal Measurement Invalidation / Epistemological Override (Baadhaka pramaana)
 - BIAN-13: Null Observer Event / Non-Engagement Epistemic State (Anadhyavasaaya)
 - BIAN-14: Tripartite Measurement Validity Conditions (Trairuupya)

@@ -175,11 +175,11 @@ Properties:
 
 **VN:** "Ai quan sát vũ trụ?" là câu hỏi sai nếu observer = thực thể. Với E6, các quá trình nhân quả của vũ trụ tự tạo thành "quan sát" — không cần siêu-quan-sát-viên ngoại tại.
 
-### 6.4 Grounds Null Observer Events / Bảo chứng Sự kiện Quan sát viên Rỗng
+### 6.4 Grounds Null Registering-System Events / Bảo chứng Sự kiện Hệ ghi nhận Rỗng
 
-**EN:** Category 06 (BIAN-13, Null Observer Event) becomes architecturally natural: if observer is process, then a process-moment can fail to register — ô_k fires but Ê_∅ produces zero information change. This is not "broken hardware" but a formal epistemic state.
+**EN:** Category 06 (BIAN-13, Null Registering-System Event / Registration Non-Engagement) becomes architecturally natural: if the registering system is processual, then a process-moment can fail to register — ô_k fires but Ê_∅ produces zero information change. This is not reducible to "broken hardware"; it is a VVV-QMRF registration-layer state.
 
-**VN:** Category 06 (BIAN-13, Sự kiện Quan sát viên Rỗng) trở nên tự nhiên về kiến trúc: nếu observer là quá trình, thì một khoảnh-khắc-quá-trình có thể không ghi nhận — ô_k kích hoạt nhưng Ê_∅ cho ΔI = 0. Đây không phải "phần cứng hỏng" mà là trạng thái nhận thức hình thức.
+**VN:** Category 06 (BIAN-13, Sự kiện Hệ ghi nhận Rỗng / Trạng thái Bất tạo Ghi nhận) trở nên tự nhiên về kiến trúc: nếu hệ ghi nhận là một quá trình, thì một khoảnh-khắc-quá-trình có thể không ghi nhận — ô_k kích hoạt nhưng Ê_∅ cho ΔI = 0. Điều này không quy giản thành "phần cứng hỏng"; nó là trạng thái tầng ghi nhận của VVV-QMRF.
 
 ---
 

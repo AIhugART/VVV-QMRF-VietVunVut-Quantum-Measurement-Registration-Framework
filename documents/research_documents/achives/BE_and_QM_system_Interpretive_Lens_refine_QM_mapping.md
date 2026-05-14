@@ -572,10 +572,10 @@ Formal relationship codes applied to tier connections. Edges are drawn from [edg
 **Outbound edges:**
 - ED_BE_00037: N_BE_00007 → N_BE_00027 (Svārthānumāna) — motivates (Psychological) [Note: uncertain]
 
-- **Buddhist Epistemology:** Cognition that oscillates between two or more incompatible determinations without resolving. Active uncertainty: the cognitive agent holds x and non-x as simultaneously possible without committing to either. Not a valid pramāṇa. Requires resolution via pratyakṣa or anumāna.
-- **Quantum Measurement:** Pre-measurement epistemic state. An observer who knows the wave function but not the outcome is in a state of genuine indeterminacy about which eigenvalue will result. This is partially modeled as physical superposition, but the epistemic state of the observer holding this description is not formally theorized.
+- **Buddhist Epistemology:** Saṃśaya is doubt that motivates pursuit of certainty in pramāṇa inquiry. In this mapping it functions as a bounded source analogue for structured suspension, not as a binary/equal-weight doctrine or a physical mechanism.
+- **Quantum Measurement:** Pre-measurement registration-state condition. QM describes the system-side state as superposition or density matrix; VVV-QMRF adds the K-side classification of a registering system that encodes alternatives, weights, and coherences before any eigenvalue is registered.
 - **Correspondence type:** Partial.
-- **BIAN-11 — Observer Epistemic Indeterminacy.** The formal epistemic state of an observer who knows ψ but not the outcome. QM describes the physical superposition. It does not describe the epistemic state of the agent who holds the description. The agent's pre-measurement epistemic condition — the analogue of saṃśaya — is outside the formalism.
+- **BIAN-11 — Pre-Measurement Registration Indeterminacy.** QM describes physical superposition but does not name the registering system's K-side structured suspension before measurement. The Saṃśaya link is source lineage only; the VVV-QMRF category remains derived.
 
 ---
 
@@ -959,7 +959,7 @@ All 19 substantive BIAN gaps, plus BIAN-20 as a reserved cross-reference, are gr
 | BIAN-6 | Self-certifying measurement / Svasaṃvedana structural principle | N_BE_00011 | Buddhist Epistemology treats valid cognition as self-certifying through svasaṃvedana. QM has no formal epistemic principle by which a measurement certifies its own completion without an external meta-level. |
 | BIAN-4 | Akara (Representational form) | -- (no node) | BE has explicit theory of representational form. QM specifies output values but not internal representation. |
 | BIAN-5 | Vyavasaya (Determinate judgment) | -- (no node) | QM merges physical registration with epistemic commitment. BE maintains the distinction formally. |
-| BIAN-11 | Observer epistemic indeterminacy | N_BE_00007 | QM describes physical superposition but not the epistemic state of the agent prior to measurement. |
+| BIAN-11 | Pre-measurement registration indeterminacy | N_BE_00007 | QM describes physical superposition or density matrix but not the registering system's K-side structured suspension before measurement. |
 | BIAN-12 | Badhaka pramana (Formal invalidation) | -- (no node) | QM has no formal mechanism for epistemic override of prior measurement claims. |
 | BIAN-13 | Anadhyavasaya (Null observer event) | -- (no node) | QM has table-supported no-result outcomes but no epistemological category for non-engagement. |
 | BIAN-16 | Pramana-phala identity (Self-completion) | N_BE_00001 | QM does not specify whether measurement is self-completing. BE resolves the regress via pramana-phala identity. |
@@ -1016,7 +1016,7 @@ Ranked by structural significance, merged from tier-level and interpretive-lens 
 | BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | T3.04 | N_BE_00029 (Ksanikavada) | 1 |
 | BIAN-9 | Formal Cognition of Absence as Distinct Epistemic Category | T3.06 | (No separate node -- abhava/anupalabdhi; QM has null outcomes but no equivalent epistemic category) | 2 |
 | BIAN-10 | Non-Classical Correlation Relation / Entanglement as Third Relation Type | T3.08 | N_BE_00021 (Svabhavapratibandha -- partial) | 1 |
-| BIAN-11 | Observer Epistemic Indeterminacy State before Measurement | T4.02 | N_BE_00007 (Samsaya analog) | 3 |
+| BIAN-11 | Pre-Measurement Registration Indeterminacy | T4.02 | N_BE_00007 (Saṃśaya source analogue) | 3 |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | T4.04 | (No separate node -- badhaka pramana) | 3 |
 | BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | T4.05 | (No separate node -- anadhyavasaya) | 3 |
 | BIAN-14 | Tripartite Measurement Validity Conditions | T5.06 | N_BE_00018 (Trairupya) | 1 |

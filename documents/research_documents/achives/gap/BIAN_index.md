@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # BIAN Index — Concepts in Buddhist Epistemology with No QM Equivalent
 
 | BIAN | Concept | Tier item | Node reference |
@@ -12,7 +14,7 @@
 | BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | T3.04 | N_BE_00029 (Kṣaṇikavāda) |
 | BIAN-9 | Formal Cognition of Absence as Distinct Epistemic Category | T3.06 | (No separate node — abhāva/anupalabdhi) |
 | BIAN-10 | Non-Classical Correlation Relation / Entanglement as Third Relation Type | T3.08 | N_BE_00021 (Svabhāvapratibandha — partial) |
-| BIAN-11 | Observer Epistemic Indeterminacy State before Measurement | T4.02 | N_BE_00007 (Saṃśaya analog) |
+| BIAN-11 | Pre-Measurement Registration Indeterminacy | T4.02 | N_BE_00007 (Saṃśaya source analogue) |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | T4.04 | (No separate node — bādhaka pramāṇa) |
 | BIAN-13 | Null Observer Event / Non-Engagement Epistemic State | T4.05 | (No separate node — anadhyavasāya) |
 | BIAN-14 | Tripartite Measurement Validity Conditions | T5.06 | N_BE_00018 (Trairūpya) |
