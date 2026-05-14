@@ -19,7 +19,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 |:-----:|---------|--------|------------|:---------------:|
 | **A** | **Structural Gap** | Khoảng trống Cấu trúc | QM lacks the concept entirely — no operator, no state, no principle exists | **New Postulate** (E1–E7) |
 | **B** | **Interface Gap** | Khoảng trống Giao diện | QM has consecutive stages but lacks the formal connection between them | **Lemma** (ENI instance) |
-| **C** | **Implicit Gap** | Khoảng trống Ngầm định | QM has the phenomenon implicitly but lacks explicit epistemic categorization | **Category upgrade** (Cat 01–10) |
+| **C** | **Implicit Gap** | Khoảng trống Ngầm định | QM has the phenomenon implicitly but lacks explicit registration-layer taxonomy | **Category upgrade** (Cat 01–15; extension postulate when documented) |
 
 ### 1b. Formal Decision Test
 
@@ -216,10 +216,10 @@ Candidate: φ₂: Ā(M) → V̂_yava(Ā)
 
 ### 5b. Class C Verification Test
 
-Each Class C gap must satisfy: **QM has the phenomenon but lacks the epistemic label.**
+Each Class C gap must satisfy: **QM has the phenomenon but lacks the registration-layer category.**
 
-| BIAN | QM has phenomenon? | QM has epistemic label? | Class C? |
-|:----:|:-----------------:|:----------------------:|:--------:|
+| BIAN | QM has phenomenon? | QM has registration-layer category? | Class C? |
+|:----:|:-----------------:|:--------------------------------:|:--------:|
 | 12 | ✅ State update exists | ❌ No "epistemic override" concept | ✅ |
 | 13 | ✅ Detection-efficiency and POVM/no-click support exist | ❌ No "registration non-engagement" category | ✅ |
 | 14 | ✅ Validity criteria exist | ❌ No unified tripartite structure | ✅ |
@@ -303,7 +303,7 @@ Categories 02, 04, 05, 07, 08, 10 are **not Class C** — they are intermediate 
 | Cat 08 | Epistemic Commitment → E3, E5 | A (BIAN-4,5) |
 | Cat 10 | Pre-Symbolic Stratum → E4 | A (BIAN-7) |
 
-> Class C categories (01, 03, 06, 09) are **terminal** — they do not escalate to postulates. Class A categories (02, 04, 05, 07, 08, 10) are **transitional** — they escalate through the pipeline to framework/.
+> Class C categories (01, 03, 06, 09) are **category-led** resolutions — they classify implicit QM phenomena at the registration layer and may be paired with extension postulates when documented. Class A categories (02, 04, 05, 07, 08, 10) are **core-pipeline** resolutions — they escalate toward the E1–E7 framework layer.
 
 ---
 
@@ -325,7 +325,7 @@ Categories 02, 04, 05, 07, 08, 10 are **not Class C** — they are intermediate 
 │  Key findings:                                               │
 │  • Class B is CLOSED — only 1 ENI instance (S1-Λ)           │
 │  • Class X candidate for E8: BIAN-8 (temporal discontinuity) │
-│  • Categories split: 4 terminal (C) + 6 transitional (A)    │
+│  • Categories split: 4 category-led (C) + 6 core-pipeline (A) │
 │  • All Class A gaps fully integrated into synthesis layer    │
 │                                                              │
 │  GCS layer: meta-architecture/ (above synthesis/)            │

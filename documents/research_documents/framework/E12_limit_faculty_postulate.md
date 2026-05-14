@@ -47,8 +47,8 @@ TOM (weak measurement):
   Aᵥ ∈ ℂ in general
   
   Key: anomalous weak values occur when Re(Aᵥ) ∉ {eigenvalues of Â}
-       → extracts quantum interference information invisible to PVM
-       → transcends ordinary eigenvalue perception without treating complex Aᵥ as a direct eigenvalue
+       → extracts interference-sensitive weak-value information with less full projective back-action
+       → transcends ordinary eigenvalue-readout perception without claiming categorical inaccessibility to projective methods
 ```
 
 ### 3b. E10 compatibility check

@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # E13 — Temporal Discontinuity Postulate / Tiên đề Gián đoạn Thời gian
 
 **Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
@@ -25,7 +27,7 @@ QM operates with a fundamental schism: Schrödinger equation (continuous, determ
 
 *Kṣaṇabhaṅgavāda* (Momentariness) in Buddhist philosophy: every phenomenon exists for exactly one indivisible moment (kṣaṇa). What appears as continuity is conceptual construction (vikalpa) imposed on discrete causal moments. The "self" that appears continuous is actually a series of momentary events connected by causal chains.
 
-E13 applies this framework at the registration layer: the completed quantum jump is treated as a kṣaṇa-like registration unit. Between registration events, Schrödinger evolution remains the physical dynamics; the framework adds a registration-status boundary rather than replacing the physical account.
+E13 uses this as a source analogue, not as full equivalence: BE momentariness is an ontological claim about dharma existence, while E13 models only the bounding of registration events. The completed quantum jump is treated as a kṣaṇa-like registration unit. Between registration events, Schrödinger evolution remains the physical dynamics; the framework adds a registration-status boundary rather than replacing the physical account.
 
 ---
 
@@ -78,7 +80,7 @@ E6 (Observer-as-Process) — observer is a causal series of moments
 
 | Buddhist concept | Value |
 |-----------------|-------|
-| Kṣaṇabhaṅgavāda | Momentariness — all existents last one indivisible moment |
+| Kṣaṇabhaṅgavāda | Momentariness — BE ontology of momentary dharma existence; E13 uses it only as a source analogue for registration-event bounding |
 | Vikalpa | Conceptual construction — narrative imposed on discrete moments |
 
 ---
