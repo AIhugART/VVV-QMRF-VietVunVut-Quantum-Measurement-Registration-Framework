@@ -44,10 +44,11 @@ Standard PVM:   Full collapse — |ψ⟩ → |λᵢ⟩, ΔI = max, Δback-action
 TOM (Weak):     Partial collapse — |ψ⟩ → |ψ'⟩ (slightly shifted)
                 ΔI = ε (small), Δback-action = ε (small)
                 Valid registration content extracted via: weak value Aᵥ = ⟨φ|Â|ψ⟩/⟨φ|ψ⟩
+                Aᵥ ∈ ℂ in general
 
-Key property: Aᵥ can lie OUTSIDE the eigenvalue spectrum of Â
+Key property: anomalous weak values occur when Re(Aᵥ) lies OUTSIDE the eigenvalue spectrum of Â
   → reveals quantum interference structure invisible to PVM
-  → transcends the "ordinary" eigenvalue-only perception of PVM
+  → transcends the "ordinary" eigenvalue-only perception of PVM without treating complex Aᵥ as a direct eigenvalue
 ```
 
 ### Trairūpya check for TOM (E10 compatibility)

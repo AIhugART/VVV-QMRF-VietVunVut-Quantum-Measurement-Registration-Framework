@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # E12 — Limit-Faculty Perception Postulate / Tiên đề Tri giác Giới hạn Năng lực
 
 **Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
@@ -23,7 +25,7 @@
 
 Standard QM recognizes one valid measurement mode: projective measurement (PVM), where the outcome is a definite eigenvalue and the system collapses to the corresponding eigenstate. This is the *Laukika* (ordinary, sensory) faculty of quantum epistemology.
 
-Weak measurement — demonstrated by Aharonov, Albert, and Vaidman (1988) — extracts partial information without full collapse. The "weak value" $A_w = \langle\phi|\hat{A}|\psi\rangle / \langle\phi|\psi\rangle$ can lie *outside* the eigenvalue spectrum of $\hat{A}$. This represents a faculty transcending ordinary projective perception — exactly *Alaukika pratyakṣa* (extraordinary perception) which Buddhist Epistemology contrasts with ordinary *Laukika pratyakṣa*.
+Weak measurement — demonstrated by Aharonov, Albert, and Vaidman (1988) — extracts partial information without full collapse. The "weak value" $A_w = \langle\phi|\hat{A}|\psi\rangle / \langle\phi|\psi\rangle$ is generally complex; anomalous weak values occur when $\mathrm{Re}(A_w)$ lies *outside* the eigenvalue spectrum of $\hat{A}$. This represents a faculty transcending ordinary projective perception without treating complex $A_w$ as a direct eigenvalue — exactly *Alaukika pratyakṣa* (extraordinary perception) which Buddhist Epistemology contrasts with ordinary *Laukika pratyakṣa*.
 
 E12 formally establishes this as a distinct postulate: the existence of a valid epistemic faculty class (TOM) that operates beyond the PVM limit while remaining epistemically authoritative.
 
@@ -42,10 +44,11 @@ TOM (weak measurement):
   Post-select: ⟨φ|
   
   Weak value: Aᵥ = ⟨φ|Â|ψ⟩ / ⟨φ|ψ⟩
+  Aᵥ ∈ ℂ in general
   
-  Key: Aᵥ ∉ {eigenvalues of Â} in general
+  Key: anomalous weak values occur when Re(Aᵥ) ∉ {eigenvalues of Â}
        → extracts quantum interference information invisible to PVM
-       → transcends ordinary eigenvalue perception
+       → transcends ordinary eigenvalue perception without treating complex Aᵥ as a direct eigenvalue
 ```
 
 ### 3b. E10 compatibility check
