@@ -47,8 +47,8 @@ TOM (Weak):     Partial collapse — |ψ⟩ → |ψ'⟩ (slightly shifted)
                 Aᵥ ∈ ℂ in general
 
 Key property: anomalous weak values occur when Re(Aᵥ) lies OUTSIDE the eigenvalue spectrum of Â
-  → reveals quantum interference structure invisible to PVM
-  → transcends the "ordinary" eigenvalue-only perception of PVM without treating complex Aᵥ as a direct eigenvalue
+  → reveals interference-sensitive weak-value structure without the full back-action of a corresponding PVM readout
+  → transcends the ordinary eigenvalue-readout profile of PVM without treating complex Aᵥ as a direct eigenvalue
 ```
 
 ### Trairūpya check for TOM (E10 compatibility)
