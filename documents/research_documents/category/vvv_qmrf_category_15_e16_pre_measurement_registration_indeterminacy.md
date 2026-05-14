@@ -10,7 +10,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status:** Proposal — Registration class D
 **Lineage:** gap/ (BIAN-11) → category/ (Category 15) → framework/ (E16)
 
-> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-11**. BIAN-11 highlights QM's lack of a formal registration category for the registering system's K-state of indeterminacy *before* measurement — structurally analogous to *Saṃśaya* (Doubt — the BE source model of hovering between two incompatible alternatives).
+> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-11**. BIAN-11 highlights QM's lack of a formal registration category for the registering system's K-state of indeterminacy *before* measurement — structurally analogous to *Saṃśaya* (Doubt — the BE source model of epistemic suspension that motivates inquiry toward certainty).
 
 ---
 
@@ -18,7 +18,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Pre-Measurement Registration Indeterminacy / Structured Registration-Doubt State (SDS)
 * **Vietnamese Name:** Bất định Ghi nhận Tiền đo / Trạng thái Nghi ngờ Ghi nhận Có Cấu trúc
-* **Buddhist Equivalent:** *Saṃśaya* (Doubt — definite indeterminacy between two equally weighted alternatives)
+* **Buddhist Equivalent:** *Saṃśaya* (Doubt — epistemic suspension that motivates inquiry toward certainty; used here as a bounded source analogue for structured non-determination, not a binary/equal-weight state)
 * **Node:** N_BE_00007
 * **Symbol:** Indeterminacy Operator $\hat{S}_{saṃśaya}$
 
@@ -41,8 +41,8 @@ Ignorance (classical): P(λ) = unknown
 Certainty: ρ = |λᵢ⟩⟨λᵢ| (definite eigenstate)
 
 SDS (Structured Doubt State):
-  ρ = Σᵢ cᵢ |λᵢ⟩⟨λᵢ| + off-diagonal coherence terms
-  Registering system encodes: {λᵢ}, {|cᵢ|²}, AND the coherences ρᵢⱼ
+  ρ = Σᵢ pᵢ |λᵢ⟩⟨λᵢ| + Σᵢ≠ⱼ ρᵢⱼ |λᵢ⟩⟨λⱼ|, where pᵢ = |cᵢ|²
+  Registering system encodes: {λᵢ}, {pᵢ = |cᵢ|²}, AND the coherences ρᵢⱼ
   Registering system has NOT registered: which λᵢ will actualize
 
 This is richer than classical probability distribution:
@@ -52,8 +52,8 @@ This is richer than classical probability distribution:
 
 Saṃśaya mapping:
   "Hovering between tree-stump and man in dusk" (Nyāya example)
-  → Quantum: state |ψ⟩ = α|0⟩ + β|1⟩
-  → Registering system encodes both alternatives and their weights
+  → Quantum: state |ψ⟩ = Σᵢ cᵢ |λᵢ⟩
+  → Registering system encodes the alternatives, their weights, and coherence relations
   → K-side state: suspended, awaiting registration-state update
 
 Hidden variable connection (QM#91):
