@@ -2,40 +2,97 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # VVV-QMRF Exclusive Notation and Symbology
 
-## 1. Abstract
-This document outlines the exclusive mathematical and logical notation introduced by the VietVunVut Quantum Measurement Registration Framework (VVV-QMRF). While standard Quantum Mechanics utilizes symbols like $\rho$ (density matrix) and $\psi$ (wave function) to model the **Physical Layer**, VVV-QMRF introduces a parallel set of symbols to formally model the **Registration Layer ($K$)**.
+## 0. Source of Truth / Nguồn chuẩn
 
-## 2. Registration State Variables ($K$)
+Research source of truth: `documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md`, section `RCA Symbol Registry / Bảng RCA ký hiệu`.
+
+This file is the high-school guide. It explains the notation in simpler language; it does not override the research-level RCA status table.
+
+## 1. Abstract
+
+This document outlines the exclusive mathematical and logical notation introduced by the VietVunVut Quantum Measurement Registration Framework (VVV-QMRF). Standard Quantum Mechanics uses symbols such as $\rho$ (density matrix), $\psi$ (wave function), and $\mathcal{H}$ (Hilbert space) to model the **Physical Layer**. VVV-QMRF introduces a parallel notation set for the **Registration Layer ($K$)**.
+
+Nói dễ hiểu: QM chuẩn nói hệ vật lý biến đổi thế nào; VVV-QMRF nói kết quả đó được ghi nhận, phân loại, và xác thực thế nào ở tầng $K$.
+
+## 2. Big Rule: $\rho$ is not $K$
+
+| Symbol | Easy meaning | Do not confuse with |
+| :--- | :--- | :--- |
+| $\rho$ | Physical quantum state / trạng thái vật lý lượng tử | $K$ |
+| $\mathcal{H}$ | Hilbert space / không gian vật lý của QM | $\mathcal{K}$ |
+| $K$ | Registration state / trạng thái ghi nhận | $\rho$ |
+| $\mathcal{K}$ | Registration-state space / không gian các trạng thái ghi nhận | $\mathcal{H}$ |
+
+Core boundary:
+
+$$ \rho \in D(\mathcal{H}), \quad k \in \mathcal{K}, \quad \mathcal{K} \neq \mathcal{H} $$
+
+## 3. Registration State Variables ($K$)
+
 The letter $K$ denotes the registration state of a measuring/registering system. It tracks whether information has been successfully recorded and updated, strictly separated from the physical state $\rho$.
 
-| Symbol | Name | Technical Definition |
+| Symbol | Name | Easy explanation |
 | :--- | :--- | :--- |
-| **$K_{before}$** | Prior Registration State | The registration state of the registering system prior to a measurement outcome. It represents an informational vacuum or an un-updated memory register regarding the specific measurement $M$. |
-| **$K_{after}$** | Posterior Registration State | The registration state of the registering system after the successful processing and recording of the measurement outcome $o$. A valid measurement guarantees $K_{after} \neq K_{before}$. |
+| $K_{before}$ | Prior Registration State | Trạng thái ghi nhận trước khi có kết quả được ghi nhận. |
+| $K_{after}$ | Posterior Registration State | Trạng thái ghi nhận sau khi outcome $o$ được xử lý và ghi lại. |
+| $k$ | One registration state | Một phần tử cụ thể của không gian $\mathcal{K}$. |
+| $\mathcal{K}$ | Registration-state space | Không gian trừu tượng chứa các trạng thái ghi nhận; Class C trong RCA. |
 
-## 3. Registration Update Mechanism ($U_K$)
-| Symbol | Name | Technical Definition |
+## 4. Registration Update Mechanism ($U_K$)
+
+| Symbol | Name | Easy explanation |
 | :--- | :--- | :--- |
-| **$U_K$** | Registration Update Rule | The system-specific operator or algorithmic mechanism that processes the measurement outcome $o$ to alter the registration state. It governs the transition: <br> **$K_{after} = U_K(K_{before}, o)$** |
-| **$o$** | Measurement Outcome | The outcome supplied by the physical measurement side, which serves as the input parameter for $U_K$. |
+| $U_K$ | Registration Update Rule | Quy tắc cập nhật trạng thái ghi nhận: $K_{after}=U_K(K_{before},o)$. |
+| $o$ | Measurement Outcome | Kết quả được phía vật lý cung cấp để tầng $K$ ghi nhận. |
 
-## 4. Self-Certification Formalisms
-VVV-QMRF introduces specific mathematical operators to resolve the "von Neumann chain" by enforcing that a measurement event certifies its own occurrence at the Registration Layer.
+Boundary: $U_K$ is not the Schrödinger equation, not the Born rule, and not a new physical collapse law.
 
-### 4.1 The Binary Certification Function
-| Symbol | Name | Technical Definition |
+## 5. Self-Certification Formalisms
+
+VVV-QMRF introduces specific K-side notation for the idea that a measurement-registration event certifies its own occurrence at the Registration Layer.
+
+| Symbol | Name | Easy explanation |
 | :--- | :--- | :--- |
-| **$\sigma(M)$** | Self-Certification Function | A binary function mapping a measurement act $M$ to $\{0, 1\}$. <br> $\sigma(M) = 1$ if and only if $M$ has occurred. The critical property is that $\sigma(M)$ is determined intrinsically by $M$ itself, eliminating the need for a second-order meta-measurement $M'$. |
+| $M$ | Measurement-registration act | Sự kiện đo-ghi nhận ở tầng $K$. |
+| $M'$ | Second-order meta-registration | Một ghi nhận bậc hai; E1 nói nó không cần cho chứng nhận sơ cấp. |
+| $\sigma(M)$ | Self-Certification Function | $\sigma(M)=1$ means $M$ has occurred as a K-side registration event. |
+| $\hat{R}_{svasa}$ | Reflexive Registration Operator | Toán tử đề xuất ghi cùng lúc outcome $o$ và việc chính sự kiện đo đã xảy ra. |
 
-### 4.2 The Reflexive Registration Operator
-This is the most distinct signature of VVV-QMRF, formally bridging Buddhist Epistemology (*Svasaṃvedana* / *Svaprakāśa* - self-luminosity/reflexive cognition) with Quantum Measurement architecture.
+Boundary: these symbols stop the K-side registration regress; they do not claim that consciousness collapses the wavefunction.
 
-| Symbol | Name | Technical Definition |
+## 6. Core Formalization Symbols
+
+| Symbol | Name | Easy explanation |
 | :--- | :--- | :--- |
-| **$\hat{R}_{svasa}$** | Reflexive Registration Operator | An operator acting strictly within the $K$-layer. When executed, it simultaneously updates the system with the outcome $o$ and inherently records the occurrence of the measurement itself. The subscript *svasa* denotes its self-certifying, reflexive nature, effectively halting infinite registration regress. |
+| $C$ / $C_R$ | Registration Lock | Khóa interaction thành trạng thái đã được ghi nhận. |
+| $\varepsilon(M)$ | Pre-Symbolic Registration Event | Sự kiện ghi nhận thô, chưa có nhãn/ký hiệu kết quả. |
+| $\Lambda$ | Symbolization Operator | Biến ghi nhận thô thành kết quả có thể đọc: $r=\Lambda(\varepsilon(M))$. |
+| $V(M,t)$ | Validity Function | Cho biết registration $M$ còn hợp lệ hay đã bị phủ quyết tại thời điểm $t$. |
+| $R=\langle M_1,M_2,\dots,M_n\rangle$ | Registering System as Process | Hệ ghi nhận là chuỗi sự kiện, không phải một chủ thể cố định. |
+| $\Delta(M_i,M_{i+1})$ | Temporal Registration Gap | Khoảng giữa hai lần ghi nhận; không phải tuyên bố physical time bị rời rạc. |
 
-## 5. Architectural Alignment
+## 7. Extended Proposed Symbols
+
+These are advanced research symbols. They are mostly Class D proposals unless the research source of truth says otherwise.
+
+| Symbol | Short meaning | Boundary |
+| :--- | :--- | :--- |
+| $P_{null}$ / $\hat{P}_{null}$ | Null-projection registration | Not canonical PVM by itself. |
+| $\hat{\Pi}_{absent}^{(\mathcal{H}_M)}$ | Bounded absence projection | Valid only inside tested subspace $\mathcal{H}_M$. |
+| $\hat{C}_{ext}$ | Extrinsic registration certification | Not decoherence itself. |
+| $\tilde{\rho}$ | Conditionally updated state | Provisional notation, not new density-matrix law. |
+| $\rho_{certified}$ | Certified registration-status label | Status label, not canonical QM state. |
+| $\mathcal{T}_{act-res}$ | Act-result tensor | Registration-layer inseparability, not Born-rule tensor. |
+| $\hat{O}_{bhranti}$ | Invalidation / override operator | Reclassifies registration status, not physical history. |
+| $\mathbb{V}_{tri}$ | Tripartite validity tensor | Validity gate, not detector physics itself. |
+| $\hat{M}_{trans}$ | Limit-faculty registration operator | Validity-gated non-ordinary registration. |
+| $\hat{T}_{kṣaṇa}$ | Discrete registration transition | Not a replacement for quantum jump operators. |
+| $\hat{S}_{saṃśaya}$ | Structured registration-doubt operator | Not hidden-variable ignorance. |
+
+## 8. Architectural Alignment
+
 | Layer | Domain | Primary Operator/State | Source |
 | :--- | :--- | :--- | :--- |
-| **Physical Layer** | Ontology | $\rho$, $\psi$, $\hat{H}$ | Standard Quantum Mechanics (Schrödinger, von Neumann, etc.) |
-| **Registration Layer** | Registration / K-side | $K$, $U_K$, $\hat{R}_{svasa}$ | VVV-QMRF (VietVunVut) |
+| **Physical Layer** | Ontology / physics | $\rho$, $\psi$, $\mathcal{H}$, $\hat{H}$ | Standard Quantum Mechanics |
+| **Registration Layer** | Registration / K-side | $K$, $\mathcal{K}$, $U_K$, $\sigma(M)$, $\hat{R}_{svasa}$ | VVV-QMRF (VietVunVut) |
+| **BE-source Lineage** | Structural source | Svasaṃvedana, Pramāṇa-phala, Apoha, Anupalabdhi, etc. | Buddhist Epistemology source analogy |
