@@ -73,12 +73,12 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 |----------------|----|----|
 | Author / Tác giả | Designed research questions, framework architecture, decision protocol | Thiết kế câu hỏi nghiên cứu, kiến trúc khung lý thuyết, giao thức quyết định |
 | Decision protocol / Giao thức quyết định | 3-round RCA + 5-Why evaluation + scoring (≥3.5/5 threshold) | 3 vòng RCA + đánh giá 5-Why + chấm điểm (ngưỡng ≥3.5/5) |
-| AI tools / Công cụ AI | Claude Opus 4.6, Gemini 3.1 Pro — executed within author-defined protocol | Claude Opus 4.6, Gemini 3.1 Pro — thực thi trong giao thức do tác giả định nghĩa |
+| AI tools / Công cụ AI | Claude Opus 4.6, Codex, Gemini 3.1 Pro, DeepSeek V4 Pro — executed within author-defined protocol | Claude Opus 4.6, Codex, Gemini 3.1 Pro, DeepSeek V4 Pro — thực thi trong giao thức do tác giả định nghĩa |
 | Final decisions / Quyết định cuối | All architectural decisions made by author | Mọi quyết định kiến trúc do tác giả thực hiện |
 
 ### Tools / Công cụ
 
-- **Claude Opus 4.6, Gemini 3.1 Pro:** AI research partners / đối tác nghiên cứu AI.
+- **Claude Opus 4.6, Codex, Gemini 3.1 Pro, DeepSeek V4 Pro:** AI research partners / đối tác nghiên cứu AI.
 - **GitHub:** open publication platform / nền tảng công bố mở.
 
 ### Personal / Cá nhân
@@ -89,6 +89,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 - **EN:** Parents — the first condition of all / **VN:** Cha mẹ — duyên đầu tiên của tất cả.
 - **EN:** Family — time, patience, and sacrifice / **VN:** Gia đình — thời gian, sự kiên nhẫn và hy sinh.
+- **EN:** Chương — the child of the author's friend Văn, who inspired the author to see that LLMs and AI tools could open unexpectedly wide creative possibilities / **VN:** Cháu Chương — con của người bạn tên Văn, người gợi cảm hứng rằng "LLM" và các công cụ AI có thể mở ra những khả năng sáng tạo rộng hơn dự kiến.
 - **EN:** 45 years of living, a small affinity with Buddhism and science, and one idle afternoon that began with a question / **VN:** 45 năm sống, một chút duyên với Phật giáo và khoa học, và một buổi rảnh rỗi bắt đầu bằng một câu hỏi.
 
 ## The Central Question / Câu Hỏi Trung Tâm
