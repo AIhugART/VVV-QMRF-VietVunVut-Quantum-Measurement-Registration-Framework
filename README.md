@@ -44,6 +44,53 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 - **Công cụ AI:** Claude Opus 4.6, Codex, Gemini 3.1 Pro, và DeepSeek V4 Pro thực thi trong giao thức do tác giả định nghĩa.
 - **Quyết định kiến trúc:** mọi quyết định kiến trúc đều do tác giả thực hiện.
 
+## Acknowledgements / Tri ân
+
+**EN:** This work exists because of many conditions converging.
+
+**VN:** Công trình này tồn tại vì nhiều duyên hội tụ.
+
+### Intellectual lineage / Di sản tri thức
+
+- **Dignāga, Dharmakīrti (5th–7th century):** Pramāṇavāda (Buddhist Epistemology / Nhận thức luận Phật giáo).
+- **Nāgārjuna:** Śūnyatā (Emptiness / Tánh Không).
+- **Schrödinger, von Neumann, Einstein:** Quantum Mechanics / Cơ học Lượng tử.
+- **Lão Tử:** Đạo Đức Kinh / Tao Te Ching.
+
+> *"Man follows Earth. Earth follows Heaven. Heaven follows the Tao. The Tao follows only itself."*
+>
+> *"Nhân pháp địa, địa pháp thiên, thiên pháp Đạo, Đạo pháp tự nhiên."*
+>
+> — **Lão Tử**
+
+### Research Methodology / Phương pháp Nghiên cứu
+
+**EN:** This framework was developed using human-directed AI research.
+
+**VN:** Khung lý thuyết này được phát triển bằng phương pháp nghiên cứu AI có định hướng con người.
+
+| Role / Vai trò | EN | VN |
+|----------------|----|----|
+| Author / Tác giả | Designed research questions, framework architecture, decision protocol | Thiết kế câu hỏi nghiên cứu, kiến trúc khung lý thuyết, giao thức quyết định |
+| Decision protocol / Giao thức quyết định | 3-round RCA + 5-Why evaluation + scoring (≥3.5/5 threshold) | 3 vòng RCA + đánh giá 5-Why + chấm điểm (ngưỡng ≥3.5/5) |
+| AI tools / Công cụ AI | Claude Opus 4.6, Gemini 3.1 Pro — executed within author-defined protocol | Claude Opus 4.6, Gemini 3.1 Pro — thực thi trong giao thức do tác giả định nghĩa |
+| Final decisions / Quyết định cuối | All architectural decisions made by author | Mọi quyết định kiến trúc do tác giả thực hiện |
+
+### Tools / Công cụ
+
+- **Claude Opus 4.6, Gemini 3.1 Pro:** AI research partners / đối tác nghiên cứu AI.
+- **GitHub:** open publication platform / nền tảng công bố mở.
+
+### Personal / Cá nhân
+
+**EN:** This work would not exist without:
+
+**VN:** Công trình này không tồn tại nếu thiếu:
+
+- **EN:** Parents — the first condition of all / **VN:** Cha mẹ — duyên đầu tiên của tất cả.
+- **EN:** Family — time, patience, and sacrifice / **VN:** Gia đình — thời gian, sự kiên nhẫn và hy sinh.
+- **EN:** 45 years of living, a small affinity with Buddhism and science, and one idle afternoon that began with a question / **VN:** 45 năm sống, một chút duyên với Phật giáo và khoa học, và một buổi rảnh rỗi bắt đầu bằng một câu hỏi.
+
 ## The Central Question / Câu Hỏi Trung Tâm
 
 **EN:** When does a physical event become a registered measurement event?<br/>
