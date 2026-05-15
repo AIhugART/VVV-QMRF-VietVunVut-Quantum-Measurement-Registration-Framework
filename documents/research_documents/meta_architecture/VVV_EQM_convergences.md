@@ -1,19 +1,31 @@
-# VVV-EQM: Two Strongest Structural Convergences
-# VVV-EQM: Hai Hội Tụ Cấu Trúc Mạnh Nhất
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
+# VVV-QMRF: Two Strongest Structural Convergences
+# VVV-QMRF: Hai Hội Tụ Cấu Trúc Mạnh Nhất
 
 **Document type / Loại tài liệu:** Structural convergence analysis — Grade B supplementary  
 **Source / Nguồn:** `root_case_epistemic_act.md` §4  
-**Framework / Khung:** VVV-EQM v2.0 — Stable Final  
+**Framework / Khung:** VVV-QMRF v2.0 — Stable Final
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan) | AI hug ART, 2026  
 **Parent document / Tài liệu cha:** [README.md](../../../README.md)
+
+## Legacy terminology cross-reference / Bảng đối chiếu thuật ngữ cũ
+
+| Legacy term | Current VVV-QMRF term | Decision score | Reason |
+|---|---|---:|---|
+| VVV-EQM | VVV-QMRF | 5/5 | Current public name uses registration framing; legacy retained for traceability. |
+| `VVV_EQM_convergences.md` | VVV-QMRF convergences (legacy filename retained) | 4/5 | File name is not changed; document title and framework line use current VVV-QMRF naming. |
+| `root_case_epistemic_act.md` | registration-act root case (legacy filename retained) | 3.5/5 | Source filename is retained for traceability; current framing separates Buddhist epistemic source from K-side registration. |
+| epistemic validity | registration validity / Buddhist epistemic validity by context | 3.5/5 | Replace only when the claim concerns the K-side framework; keep when describing Buddhist Epistemology directly. |
+| cognition | valid cognition / registration status by context | 3.5/5 | Keep for Buddhist source `pramāṇa`; avoid as VVV-QMRF technical framing. |
 
 ---
 
 ## Overview / Tổng Quan
 
-**EN:** Within the VVV-EQM root case, two specific convergences between Buddhist Epistemology and Quantum Mechanics are not analogical but **structurally identical** — meaning both systems arrive at the *same logical structure* through entirely independent derivations, separated by fifteen centuries.
+**EN:** Within the VVV-QMRF root case, two specific convergences between Buddhist Epistemology and Quantum Mechanics are not analogical but **structurally identical** — meaning both systems arrive at the *same logical structure* through entirely independent derivations, separated by fifteen centuries.
 
-**VN:** Trong root case VVV-EQM, hai hội tụ cụ thể giữa Nhận Thức Luận Phật Giáo và Cơ Học Lượng Tử không phải là tương tự (analogical) mà là **đồng nhất về cấu trúc** — có nghĩa là cả hai hệ thống đi đến *cùng một cấu trúc logic* thông qua các con đường derive hoàn toàn độc lập, cách nhau mười lăm thế kỷ.
+**VN:** Trong root case VVV-QMRF, hai hội tụ cụ thể giữa Nhận Thức Luận Phật Giáo và Cơ Học Lượng Tử không phải là tương tự (analogical) mà là **đồng nhất về cấu trúc** — có nghĩa là cả hai hệ thống đi đến *cùng một cấu trúc logic* thông qua các con đường derive hoàn toàn độc lập, cách nhau mười lăm thế kỷ.
 
 > [!NOTE]
 > **EN:** "Structural identity" ≠ "historical influence." These two systems did not influence each other. The convergence is evidence of a shared underlying logical constraint, not cultural borrowing.
@@ -118,9 +130,9 @@ Jordan và Siddiqi phát biểu tường minh trong chuyên khảo 2024: *"diễ
 | **Philosophy type / Loại triết học** | Pragmatist epistemology / Nhận thức luận thực dụng | Implicit pragmatism / Thực dụng luận ẩn |
 | **Century / Thế kỷ** | 7th CE | 21st CE (explicit statement) |
 
-> **EN:** Both systems are **pragmatist at their meta-level**. Neither grounds epistemic validity in correspondence to a mind-independent reality. Both ground it in the capacity to guide successful action or generate successful predictions. This is the deepest meta-level convergence in the VVV-EQM map.
+> **EN:** Both systems are **pragmatist at their meta-level**. Neither grounds Buddhist epistemic validity or QM interpretive validity in correspondence to a mind-independent reality. Both ground validity in the capacity to guide successful action or generate successful predictions. This is the deepest meta-level convergence in the VVV-QMRF map.
 >
-> **VN:** Cả hai hệ thống đều là **thực dụng luận ở tầng meta** của chúng. Không hệ thống nào đặt nền tảng hợp lệ nhận thức trên sự tương ứng với thực tại độc lập tâm trí. Cả hai đặt nền tảng trên khả năng hướng dẫn hành động thành công hoặc tạo ra dự đoán thành công. Đây là hội tụ tầng meta sâu nhất trong bản đồ VVV-EQM.
+> **VN:** Cả hai hệ thống đều là **thực dụng luận ở tầng meta** của chúng. Không hệ thống nào đặt nền tảng hợp lệ nhận thức trên sự tương ứng với thực tại độc lập tâm trí. Cả hai đặt nền tảng trên khả năng hướng dẫn hành động thành công hoặc tạo ra dự đoán thành công. Đây là hội tụ tầng meta sâu nhất trong bản đồ VVV-QMRF.
 
 ---
 
@@ -161,4 +173,4 @@ Jordan và Siddiqi phát biểu tường minh trong chuyên khảo 2024: *"diễ
 
 ---
 
-*VietVunVut (2026). VVV-EQM Convergences: Structural Identity Between Buddhist Pramāṇa Epistemology and Quantum Measurement Theory. AI hug ART.*
+*VietVunVut (2026). VVV-QMRF Convergences: Structural Identity Between Buddhist Pramāṇa Epistemology and Quantum Measurement Theory. AI hug ART.*

@@ -1,7 +1,7 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# RCA: 4 Class X Gaps — Triage & Reclassification
-# RCA: 4 Khoảng trống Lớp X — Phân loại & Tái phân loại
+# RCA: 4 Class X Gaps — Triage & Resolution
+# RCA: 4 Khoảng trống Lớp X — Phân loại & Giải quyết
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Date:** 2026-05-11  
@@ -9,11 +9,22 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Cite:** VVV-QMRF §GCS-X  
 **Source:** RCA_gap_classification_system.md §6
 
+## Legacy terminology cross-reference / Bảng đối chiếu thuật ngữ cũ
+
+| Legacy term | Current VVV-QMRF term | Decision score | Reason |
+|---|---|---:|---|
+| Observer Faculty Taxonomy | Limit-Faculty Registration | 5/5 | Current Category 11 and E12 use limit-faculty registration. |
+| Epistemic Absence Cognition | Validated Absence Registration | 5/5 | Current Category 13 and E14 use validated absence registration. |
+| epistemic theory | registration-layer theory | 4/5 | Use when the text discusses the K-side measurement-registration layer. |
+| Observer "knows" the wavefunction | registering system's K-state, when used as VVV-QMRF analysis | 3.5/5 | Keep as Copenhagen boundary evidence only; do not use as VVV-QMRF technical framing. |
+| Observer in superposition | physical branching / registering-system boundary by context | 3.5/5 | Keep as Many-worlds boundary evidence only; use registering-system language for the framework layer. |
+| is commitment to | is registration-lock relation to / legacy edge wording by context | 3.5/5 | Preserve source edge traceability while avoiding `commitment` as VVV-QMRF technical framing. |
+
 ---
 
 ## 0. Objective / Mục tiêu
 
-Resolve the 4 remaining Class X (Unresolved) gaps by applying the GCS Decision Test to each:
+Resolve the 4 former Class X (Unresolved) gaps by applying the GCS Decision Test to each and synchronizing the results with the current category/framework source:
 
 ```
 TEST 1: Does QM have ANY concept covering G?  → NO = Class A
@@ -24,11 +35,11 @@ ELSE: Remains Class X
 
 ---
 
-## 1. BIAN-3: Observer Faculty Spectrum
+## 1. BIAN-3: Limit-Faculty Registration
 
 ### 1a. Gap Definition
 
-> QM defines exactly one type of observer interaction. There is no formal category for observation through qualitatively different epistemic faculties.
+> QM defines measurement interactions by physical setup, basis, and coupling strength. It has no formal registration-layer category for qualitatively different registering capacities.
 
 | Property | Value |
 |----------|-------|
@@ -36,7 +47,7 @@ ELSE: Remains Class X
 | **Node** | N_BE_00012 (Alaukika pratyakṣa — Transcendental perception) |
 | **Edges** | 3 — all Weak RCA |
 | **QM mapping** | N_QM_00028 (Weak Measurement) |
-| **Severity** | Low (physics) / High (epistemology) |
+| **Severity** | Low (physics) / High (registration-layer analysis) |
 
 ### 1b. Edge Analysis
 
@@ -52,7 +63,7 @@ ELSE: Remains Class X
 |:----:|----------|--------|
 | 1 | Does QM have ANY concept? | **YES** — QM distinguishes weak vs projective vs continuous measurement (different "interaction strengths") |
 | 2 | Adjacent stages lack MAP? | NO — not a pipeline gap |
-| 3 | QM has phenomenon but no taxonomy? | **YES** — QM parametrizes measurement types by κ (strength), but has no formal **faculty-type taxonomy** |
+| 3 | QM has phenomenon but no taxonomy? | **YES** — QM parametrizes measurement types by κ (strength), but has no formal **limit-faculty registration taxonomy** |
 
 ### 1d. Verdict
 
@@ -61,11 +72,11 @@ BIAN-3: X → C (Implicit)
 
 Rationale: QM has measurement-type diversity implicitly
 (weak, projective, continuous, null) but treats them as
-parameter variations, not as distinct observer-faculty types.
-The epistemic distinction "different kinds of observer access"
+parameter variations, not as distinct limit-faculty registration types.
+The registration-layer distinction "different kinds of registering access"
 exists implicitly but lacks formal categorization.
 
-Resolution path: New Category 11 — Observer Faculty Taxonomy
+Resolution path: New Category 11 — Limit-Faculty Registration
 Buddhist source: Alaukika pratyakṣa (extraordinary perception)
 ```
 
@@ -74,8 +85,8 @@ Buddhist source: Alaukika pratyakṣa (extraordinary perception)
 | Property | Value |
 |----------|-------|
 | **Number** | 11 |
-| **Name EN** | Observer Faculty Taxonomy |
-| **Tên VN** | Phân loại Năng lực Quan sát |
+| **Name EN** | Limit-Faculty Registration |
+| **Tên VN** | Ghi nhận theo Năng lực Giới hạn |
 | **Buddhist** | Alaukika pratyakṣa (N_BE_00012) |
 | **QM implicit** | κ parametrization, POVM vs PVM, weak vs projective |
 | **Class** | C (terminal — no postulate escalation) |
@@ -86,7 +97,7 @@ Buddhist source: Alaukika pratyakṣa (extraordinary perception)
 
 ### 2a. Gap Definition
 
-> QM has temporal discontinuity as a physical feature (state collapse is instantaneous) but no epistemic theory of why or how discontinuity occurs at the measurement level.
+> QM has temporal discontinuity as a physical feature (state collapse is instantaneous) but no registration-layer theory of why or how discontinuity occurs at the measurement level.
 
 | Property | Value |
 |----------|-------|
@@ -112,9 +123,9 @@ Buddhist source: Alaukika pratyakṣa (extraordinary perception)
 
 | Test | Question | Answer |
 |:----:|----------|--------|
-| 1 | Does QM have ANY concept? | **PARTIAL** — QM has discontinuity as brute postulate but NO epistemic theory of it |
+| 1 | Does QM have ANY concept? | **PARTIAL** — QM has discontinuity as brute postulate but NO registration-layer theory of it |
 | 2 | Adjacent stages lack MAP? | NO — not a pipeline gap |
-| 3 | QM has phenomenon but no taxonomy? | **NO** — QM does NOT have temporal discontinuity as epistemic phenomenon; it has it as physical postulate only |
+| 3 | QM has phenomenon but no taxonomy? | **NO** — QM does NOT have temporal discontinuity as registration-layer phenomenon; it has it as physical postulate only |
 
 ### 2d. Deep Analysis: Why BIAN-8 ≠ Class C
 
@@ -123,15 +134,15 @@ Class C requires: QM has the phenomenon implicitly
 BIAN-8 fails this test:
 
   QM's "two dynamics" (Schrödinger + Projection) is not
-  an implicit epistemic phenomenon — it is an EXPLICIT
-  physical postulate with NO epistemic content.
+  an implicit registration-layer phenomenon — it is an EXPLICIT
+  physical postulate with NO registration-layer content.
 
   QM does not ask "WHY does measurement introduce discontinuity?"
-  QM does not ask "WHAT epistemic event causes the temporal break?"
+  QM does not ask "WHAT registration event causes the temporal break?"
   QM only says "AT measurement, state changes discontinuously."
 
   → This is a STRUCTURAL absence, not an implicit presence
-  → Class A candidate, not Class C
+  → Class A structural resolution, not Class C
 ```
 
 ### 2e. Node Strength Comparison
@@ -142,38 +153,35 @@ BIAN-8 fails this test:
 | **8** | **N_BE_00029** | **7** | **1** | **5** | **1** | **High** |
 | 3 | N_BE_00012 | 3 | 0 | 0 | 3 | Very Low |
 
-> BIAN-8's node has **7 edges with 1 Strong + 5 Medium** — far stronger than BIAN-1's node (2 edges, all Weak). If BIAN-1's node was too weak for E8, BIAN-8's node is **strong enough** for postulate consideration.
+> BIAN-8's node has **7 edges with 1 Strong + 5 Medium** — far stronger than BIAN-1's node (2 edges, all Weak). If BIAN-1's node was too weak for postulate escalation, BIAN-8's node is **strong enough** for postulate consideration.
 
 ### 2f. Verdict
 
 ```
-BIAN-8: REMAINS Class X → CANDIDATE Class A
+BIAN-8: X → A (Structural) → Category 12 + E13
 
 Rationale: QM's temporal discontinuity at measurement is a
 BRUTE FACT postulate, not an implicit phenomenon. There is
-no epistemic theory explaining WHY measurement breaks temporal
+no registration-layer theory explaining WHY measurement breaks temporal
 continuity. This is a structural gap, not an implicit gap.
 
 N_BE_00029 (Kṣaṇabhaṅgavāda) has strong connectivity:
-7 edges, 1 Strong, 5 Medium — sufficient for postulate.
+7 edges, 1 Strong, 5 Medium — sufficient for postulate-level treatment.
 
-RECOMMENDATION: Dedicated RCA session to evaluate:
-  (a) Should BIAN-8 → E8 (Temporal Discontinuity Postulate)?
-  (b) Or can it be resolved via lemma within S1/S2?
-  (c) Buddhist SOT evidence for kṣaṇabhaṅgavāda as 
-      independent epistemic principle
+Resolution path: Category 12 — Temporal Discontinuity Doctrine;
+E13 — Temporal Discontinuity Registration Postulate.
 ```
 
-> [!WARNING]
-> BIAN-8 is the **only remaining candidate for postulate expansion** (E8). All other Class X gaps reclassify to C. Decision on BIAN-8 determines whether VVV-QMRF remains a 7-postulate or becomes an 8-postulate framework.
+> [!NOTE]
+> BIAN-8 is no longer an unresolved Class X gap in the current category/framework source. It is registered as Cat 12 and E13, so the Class X remainder becomes zero.
 
 ---
 
-## 3. BIAN-9: Cognition of Absence
+## 3. BIAN-9: Validated Absence Registration
 
 ### 3a. Gap Definition
 
-> QM has no formal epistemic category for gaining information from the absence of a detection event.
+> QM has no formal registration-layer category for gaining information from the absence of a detection event.
 
 | Property | Value |
 |----------|-------|
@@ -190,51 +198,51 @@ RECOMMENDATION: Dedicated RCA session to evaluate:
 |:----:|----------|--------|
 | 1 | Does QM have ANY concept? | **YES** — Elitzur-Vaidman interaction-free measurement, Renninger negative-result experiment |
 | 2 | Adjacent stages lack MAP? | NO — not a pipeline gap |
-| 3 | QM has phenomenon but no taxonomy? | **YES** — QM has null-result measurement as standard projection but no distinct "cognition of absence" category |
+| 3 | QM has phenomenon but no taxonomy? | **YES** — QM has null-result measurement as standard projection but no distinct "validated absence registration" category |
 
 ### 3c. QM Implicit Presence Evidence
 
 | QM Concept | How it relates | Why not sufficient |
 |-----------|---------------|-------------------|
-| Null measurement | Projects onto orthogonal subspace | Treated as standard measurement, not distinct epistemic type |
-| Elitzur-Vaidman | Information from non-interaction | Modeled as standard QM; no "absence cognition" label |
-| Renninger | Negative-result experiment | Reduced to probability update; no epistemic category |
-| POVM null element | Ê₀ = I - Σ Êₖ | Mathematical artifact, not epistemic concept |
+| Null measurement | Projects onto orthogonal subspace | Treated as standard measurement, not distinct registration type |
+| Elitzur-Vaidman | Information from non-interaction | Modeled as standard QM; no "validated absence registration" label |
+| Renninger | Negative-result experiment | Reduced to probability update; no registration-layer category |
+| POVM null element | Ê₀ = I - Σ Êₖ | Mathematical artifact, not registration-layer concept |
 
 ### 3d. Relation to BIAN-15 (Class C)
 
 | | BIAN-9 | BIAN-15 |
 |---|---|---|
-| **Focus** | Cognition FROM absence | Contrastive evidence structure |
+| **Focus** | Registration FROM validated absence | Contrastive evidence structure |
 | **Buddhist** | Anupalabdhi (non-perception) | Kevalavyatirekin (purely negative) |
 | **QM implicit** | Null measurement | Null-result experiments |
-| **Overlap** | Related but distinct — BIAN-9 is about the ACT, BIAN-15 about the EVIDENCE |
-| **Category** | New Cat 12 | Existing Cat 01 |
+| **Overlap** | Related but distinct — BIAN-9 is about the registration act/status, BIAN-15 about the EVIDENCE |
+| **Category** | New Cat 13 | Existing Cat 01 |
 
 ### 3e. Verdict
 
 ```
 BIAN-9: X → C (Implicit)
 
-Rationale: QM has cognition-from-absence phenomena
+Rationale: QM has validated-absence registration phenomena
 (Elitzur-Vaidman, Renninger, POVM null) but does not
-categorize them as a distinct epistemic type. The
+categorize them as a distinct registration type. The
 phenomena exist; the taxonomy does not.
 
-Resolution path: New Category 12 — Epistemic Absence Cognition
+Resolution path: New Category 13 — Validated Absence Registration
 Buddhist source: Anupalabdhi (N_BE_00253)
 Note: Distinct from Cat 01 (contrastive evidence);
-Cat 12 = the ACT of knowing through absence;
+Cat 13 = the registration act/status through validated absence;
 Cat 01 = the EVIDENCE type from contrast.
 ```
 
-### 3f. Category 12 Sketch
+### 3f. Category 13 Sketch
 
 | Property | Value |
 |----------|-------|
-| **Number** | 12 |
-| **Name EN** | Epistemic Absence Cognition |
-| **Tên VN** | Nhận thức Vắng mặt Nhận thức luận |
+| **Number** | 13 |
+| **Name EN** | Validated Absence Registration |
+| **Tên VN** | Ghi nhận Vắng mặt Đã xác lập |
 | **Buddhist** | Anupalabdhi (N_BE_00253) |
 | **QM implicit** | Null measurement, interaction-free measurement, Renninger |
 | **Class** | C (terminal) |
@@ -313,20 +321,20 @@ structured suspension that motivates inquiry, not a binary/equal-weight state.
 
 | BIAN | Gap | Before | After | Evidence | New Component |
 |:----:|-----|:------:|:-----:|----------|:-------------:|
-| **3** | Observer Faculty Spectrum | X | **C** | QM has κ parametrization implicitly | Category 11 |
-| **8** | Temporal Discontinuity | X | **X→A?** | No implicit QM presence; brute fact | **E8 candidate** |
-| **9** | Cognition of Absence | X | **C** | QM has null measurement implicitly | Category 12 |
+| **3** | Limit-Faculty Registration | X | **C** | QM has κ parametrization implicitly | Category 11 |
+| **8** | Temporal Discontinuity Registration | X | **A** | No implicit QM presence; brute fact | Category 12 + E13 |
+| **9** | Validated Absence Registration | X | **C** | QM has null measurement implicitly | Category 13 |
 | **11** | Pre-Measurement Registration Indeterminacy | X | **C** | QM has physical substrate but no K-side registration-state taxonomy | Category 15 |
 
 ### Updated GCS Distribution
 
 | Class | Before | After | Change |
 |:-----:|:------:|:-----:|:------:|
-| A (Structural) | 9 | 9 (+1 candidate) | BIAN-8 pending |
+| A (Structural) | 9 | **10** | +1 (BIAN-8) |
 | B (Interface) | 1 | 1 | — |
 | C (Implicit) | 4 | **7** | +3 (BIAN-3,9,11) |
 | R (Reverse) | 1 | 1 | — |
-| X (Unresolved) | 4 | **1** | -3 |
+| X (Unresolved) | 4 | **0** | -4 |
 | ∅ (Reserved) | 1 | 1 | — |
 
 ### Category Registry Update
@@ -335,44 +343,39 @@ structured suspension that motivates inquiry, not a binary/equal-weight state.
 |:---:|------|:----:|:------:|
 | 01 | Contrastive Evidence | 15 | Existing |
 | 06 | Null Registering-System Event | 13 | Existing |
-| 03 | Epistemic Override | 12 | Existing |
+| 03 | Retroactive Registration Override | 12 | Existing |
 | 09 | Tripartite Validity | 14 | Existing |
-| **11** | **Observer Faculty Taxonomy** | **3** | **NEW** |
-| **12** | **Epistemic Absence Cognition** | **9** | **NEW** |
+| **11** | **Limit-Faculty Registration** | **3** | **NEW** |
+| **12** | **Temporal Discontinuity Doctrine** | **8** | **NEW** |
+| **13** | **Validated Absence Registration** | **9** | **NEW** |
 | **15** | **Pre-Measurement Registration Indeterminacy** | **11** | **NEW** |
 
 ---
 
-## 6. BIAN-8 Decision Framework
+## 6. BIAN-8 Resolution Framework
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  BIAN-8 is the LAST REMAINING Class X gap                    │
+│  BIAN-8 is no longer a remaining Class X gap                 │
 │                                                              │
-│  Decision required:                                          │
+│  Current source-backed resolution:                           │
 │                                                              │
-│  Option A: BIAN-8 → E8 (Temporal Discontinuity Postulate)   │
+│  BIAN-8 → Category 12 + E13                                  │
 │    + Strong node (7 edges, 1 Strong, 5 Medium)               │
 │    + Deep Buddhist SOT (Kṣaṇabhaṅgavāda = major doctrine)   │
 │    + High severity gap (measurement problem variant)          │
-│    - Breaks 7-postulate symmetry                             │
-│    - May be derivable from E4 + E6 combination               │
+│    + Category 12 records the doctrine/category layer          │
+│    + E13 records the Temporal Discontinuity Registration      │
+│      Postulate in the framework layer                        │
 │                                                              │
-│  Option B: BIAN-8 → Lemma within S1 or S2                   │
-│    + Preserves 7-postulate structure                          │
-│    - Kṣaṇabhaṅgavāda is a MAJOR Buddhist doctrine            │
-│      (not a minor transition like BIAN-1)                    │
-│    - Gap severity is HIGH, not Moderate                       │
+│  RCA decision: Structural gap, not Class C                   │
+│    QM has temporal discontinuity as brute physical postulate  │
+│    but lacks the K-side registration theory of discontinuity. │
 │                                                              │
-│  Option C: BIAN-8 → New Category (force into Class C)        │
-│    - Fails GCS Test 3 (QM does NOT have implicit presence)   │
-│    - Would be architecturally dishonest                       │
-│                                                              │
-│  RECOMMENDATION: Dedicated RCA session for BIAN-8            │
-│  with full SOT analysis of Kṣaṇabhaṅgavāda                  │
+│  Result: Class X remainder = 0                               │
 └──────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-*Evidence chain: GCS §6 → 4 Class X gaps → apply GCS Decision Test → 3 reclassified C, 1 remains X. Status: Class D (Derived).*
+*Evidence chain: GCS §6 → 4 former Class X gaps → apply GCS Decision Test → 3 reclassified C, 1 reclassified A via Cat 12 + E13. Status: Class D (Derived).*

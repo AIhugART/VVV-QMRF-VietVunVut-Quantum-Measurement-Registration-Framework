@@ -9,6 +9,18 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Cite:** VietVunVut (2026), VVV-QMRF §GCS  
 **Source:** ENI Principle (RCA_BIAN1_new_epistemic.md §4a)
 
+## Legacy terminology cross-reference / Bảng đối chiếu thuật ngữ cũ
+
+| Legacy term | Current VVV-QMRF term | Decision score | Reason |
+|---|---|---:|---|
+| VVV-EQM | VVV-QMRF | 5/5 | Current public name uses registration framing; legacy retained for traceability. |
+| Epistemic Commitment | Registration Lock | 5/5 | Current E3 framework terminology is registration lock. |
+| Observer as process | Registering-System-as-Process | 5/5 | Current E6 framework terminology avoids human-only observer framing. |
+| Cognition of Absence | Validated Absence Registration | 5/5 | Current Category 13 and E14 use validated absence registration. |
+| `RCA_BIAN1_new_epistemic.md` | Registration Natural Interface derivation artifact (legacy filename retained) | 3.5/5 | External artifact name is preserved for traceability while GCS uses registration naming. |
+| `epistemic_measurement_pipeline.md` | registration measurement pipeline (legacy filename retained) | 3.5/5 | File name is not changed; content role is the K-side registration pipeline. |
+| `observer_ontological_foundation.md` | registering-system ontological foundation (legacy filename retained) | 3.5/5 | File name is not changed; VVV-QMRF terminology uses registering system rather than human-only observer framing. |
+
 ---
 
 ## 1. Definitions / Định nghĩa
@@ -17,7 +29,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Class | Name EN | Tên VN | Definition | Resolution Type |
 |:-----:|---------|--------|------------|:---------------:|
-| **A** | **Structural Gap** | Khoảng trống Cấu trúc | QM lacks the concept entirely — no operator, no state, no principle exists | **New Postulate** (E1–E7) |
+| **A** | **Structural Gap** | Khoảng trống Cấu trúc | QM lacks the concept entirely — no operator, no state, no principle exists | **New Postulate** (E1–E17 where documented) |
 | **B** | **Interface Gap** | Khoảng trống Giao diện | QM has consecutive stages but lacks the formal connection between them | **Lemma** (ENI instance) |
 | **C** | **Implicit Gap** | Khoảng trống Ngầm định | QM has the phenomenon implicitly but lacks explicit registration-layer taxonomy | **Category upgrade** (Cat 01–15; extension postulate when documented) |
 
@@ -34,7 +46,7 @@ For each BIAN gap G:
     YES → Class B (Interface)
     NO  → TEST 3
 
-  TEST 3: Does QM have the phenomenon but lack explicit epistemic taxonomy?
+  TEST 3: Does QM have the phenomenon but lack explicit registration-layer taxonomy?
     YES → Class C (Implicit)
     NO  → Class X (Unresolved / Special)
 ```
@@ -44,7 +56,7 @@ For each BIAN gap G:
 | Class | Name | Definition | Example |
 |:-----:|------|------------|---------|
 | **R** | **Reverse Gap** | QM has concept that BE lacks | BIAN-10 |
-| **X** | **Unresolved** | Gap identified but no resolution path yet | BIAN-3, 8, 9, 11 |
+| **X** | **Unresolved** | Gap identified but no resolution path yet | None after current triage |
 | **∅** | **Reserved** | Placeholder, not substantive | BIAN-20 |
 
 ---
@@ -56,35 +68,35 @@ For each BIAN gap G:
 | BIAN | Gap Name | Class | Resolution | Evidence |
 |:----:|----------|:-----:|:----------:|----------|
 | **1** | Post-Detection Representational Transition | **B** | Lemma S1-Λ | QM has E4 stage + E5 stage but lacks Λ map between them |
-| **2** | Absence of Self-Referential Epistemic Layer | **A** | Postulate E1 | QM has zero self-certification concept |
-| **3** | No Spectrum of Observer Faculties | **X** | *Unresolved* | No category or postulate assigned; A4 lens |
-| **4** | No Theory of Internal Representational Form | **A** | Postulate E5 | QM has zero internal encoding concept |
-| **5** | Conflation of Physical Registration & Epistemic Commitment | **A** | Postulate E3 | QM conflates two distinct operations into one |
-| **6** | No Self-Certifying Measurement Structure | **A** | Postulate E1 | QM has zero self-certification at operational level |
-| **7** | No Pre-Symbolic Stratum in Formalism | **A** | Postulate E4 | QM begins at symbolic level; pre-symbolic absent |
-| **8** | No Epistemic Theory of Temporal Discontinuity | **X** | *Unresolved* | Mapped to N_BE_00029 but no postulate/category assigned |
-| **9** | No Formal Category for Cognition of Absence | **X** | *Unresolved* | Mapped to N_BE_00253 but no postulate assigned |
+| **2** | Absence of Self-Certifying Registration Layer | **A** | Postulate E1 | QM has zero self-certification concept |
+| **3** | No Limit-Faculty Registration Taxonomy | **C** | Category 11 + E12 | QM has κ parametrization implicitly but lacks limit-faculty registration taxonomy |
+| **4** | No Theory of Internal Representation Encoding | **A** | Postulate E5 | QM has zero internal encoding concept |
+| **5** | Conflation of Physical Registration & Registration Lock | **A** | Postulate E3 | QM conflates two distinct operations into one |
+| **6** | No Self-Certifying Registration Structure | **A** | Postulate E1 | QM has zero self-certification at operational level |
+| **7** | No Pre-Symbolic Registration Stratum in Formalism | **A** | Postulate E4 | QM begins at symbolic level; pre-symbolic absent |
+| **8** | No Temporal Discontinuity Registration Theory | **A** | Category 12 + E13 | QM has discontinuity as brute physical postulate but lacks K-side registration theory |
+| **9** | No Formal Category for Validated Absence Registration | **C** | Category 13 + E14 | QM has null-result measurement implicitly but lacks validated absence registration taxonomy |
 | **10** | Non-Classical Correlation (Reverse-BIAN) | **R** | *Reverse* | QM exceeds BE — entanglement has no BE counterpart |
 | **11** | No Formal Category for Pre-Measurement Registration Indeterminacy | **C** | Category 15 + E16 | Mapped to N_BE_00007 as Saṃśaya source analogue; resolved as SDS registration-state category |
-| **12** | No Formal Mechanism for Epistemic Override | **C** | Category 03 | QM has override implicitly (state update) but no epistemic taxonomy |
+| **12** | No Formal Mechanism for Retroactive Registration Override | **C** | Category 03 | QM has override implicitly (state update) but no registration-layer taxonomy |
 | **13** | No Category for Null Registering-System Event | **C** | Category 06 + E9 | QM has detection-efficiency and POVM/no-click support but no registration-layer non-engagement category |
 | **14** | No Unified Validity Conditions for Evidential Inference | **C** | Category 09 | QM has validity criteria (p-values etc.) but no unified structure |
-| **15** | No Formal Category for Purely Contrastive Evidence | **C** | Category 01 | QM has null-result experiments but no epistemic type |
-| **16** | Measurement Self-Completion Undefined | **A** | Postulate E2 | QM has zero self-completion concept |
+| **15** | No Formal Category for Purely Contrastive Evidence | **C** | Category 01 | QM has null-result experiments but no registration-layer evidence type |
+| **16** | Registration Self-Completion Undefined | **A** | Postulate E2 | QM has zero self-completion concept |
 | **17** | No Endogenous Regress-Stopping Principle | **A** | Postulate E1 | QM has zero regress stopper |
 | **18** | No Theory of Measurement Validity Location | **A** | Postulate E7 | QM has zero validity-location concept |
-| **19** | Observer Assumed as Substance, Not Process | **A** | Postulate E6 | QM assumes substance observer; process model absent |
+| **19** | Registering System Assumed as Substance, Not Process | **A** | Postulate E6 | QM assumes a substance-style registering role; process model absent |
 | **20** | Reserved (cross-ref BIAN-10) | **∅** | — | Not a substantive gap |
 
 ### 2b. Distribution Summary
 
 | Class | Count | BIAN IDs | Resolution Type |
 |:-----:|:-----:|----------|:---------------:|
-| **A** (Structural) | **9** | 2, 4, 5, 6, 7, 16, 17, 18, 19 | Postulate (E1–E7) |
+| **A** (Structural) | **10** | 2, 4, 5, 6, 7, 8, 16, 17, 18, 19 | Postulate (E1–E17 where documented) |
 | **B** (Interface) | **1** | 1 | Lemma (S1-Λ) |
-| **C** (Implicit) | **4** | 12, 13, 14, 15 | Category (01–09) |
+| **C** (Implicit) | **7** | 3, 9, 11, 12, 13, 14, 15 | Category (01–15; extension postulate when documented) |
 | **R** (Reverse) | **1** | 10 | N/A — QM exceeds BE |
-| **X** (Unresolved) | **4** | 3, 8, 9, 11 | *Open research* |
+| **X** (Unresolved) | **0** | — | Closed by current triage |
 | **∅** (Reserved) | **1** | 20 | N/A |
 | **Total** | **20** | | |
 
@@ -99,11 +111,11 @@ For each BIAN gap G:
 | 2 | Self-referential layer | **E1** | Svasaṃvedana (T2.05 L337) | N_BE_00011 | S2 |
 | 6 | Self-certifying measurement | **E1** | Svasaṃvedana (T6.02 L784) | N_BE_00011 | S2 |
 | 17 | Regress-stopping principle | **E1** | Svasaṃvedana (T1.06 L227) | N_BE_00011 | S2 |
-| 16 | Measurement self-completion | **E2** | Pramāṇa-phala (T6.01 L773) | N_BE_00001 | S2 |
-| 5 | Epistemic commitment act | **E3** | Vyavasāya (T2.04 L326) | — (no node) | S1 |
+| 16 | Registration self-completion | **E2** | Pramāṇa-phala (T6.01 L773) | N_BE_00001 | S2 |
+| 5 | Registration Lock act | **E3** | Vyavasāya (T2.04 L326) | — (no node) | S1 |
 | 7 | Pre-symbolic stratum | **E4** | Nirvikalpaka (T2.07 L361) | N_BE_00009 | S1 |
 | 4 | Internal representational form | **E5** | Ākāra (T2.01 L287) | — (no node) | S1 |
-| 19 | Observer as process | **E6** | Anātmavāda (T6.04 L800) | N_BE_00066 | S3 |
+| 19 | Registering-System-as-Process | **E6** | Anātmavāda (T6.04 L800) | N_BE_00066 | S3 |
 | 18 | Validity location | **E7** | Svataḥ/Parataḥ (T6.03 L790) | — (no node) | S2 |
 
 ### 3b. Multi-BIAN Consolidation
@@ -112,11 +124,11 @@ BIAN-2, 6, 17 → **all resolve to E1**. This is architecturally correct:
 
 | BIAN | Aspect of E1 addressed |
 |:----:|----------------------|
-| 2 | Epistemic self-reference (the concept) |
+| 2 | Self-certifying registration (the concept) |
 | 6 | Operational self-certification (the procedure) |
 | 17 | Regress termination (the consequence) |
 
-> Three facets of ONE structural deficit: QM's total absence of self-referential epistemic architecture.
+> Three facets of ONE structural deficit: QM's total absence of self-certifying registration architecture.
 
 ### 3c. Postulate-to-Synthesis Coverage
 
@@ -170,13 +182,13 @@ ENI Test for BIAN-1:
 ```
 Candidate: φ₂: Ā(M) → V̂_yava(Ā)
 
-  (i)   C(φ₂(Ā)) =? C(Ā)     — Does commitment preserve causal content?
-  (ii)  Sym(V) >? Sym(Ā)      — Does commitment add structure?
+  (i)   C(φ₂(Ā)) =? C(Ā)     — Does Registration Lock preserve causal content?
+  (ii)  Sym(V) >? Sym(Ā)      — Does Registration Lock add structure?
   (iii) φ₂ ∉? {E5, E3}        — Is it a separate operation?
   (iv)  φ₂ ≠? id              — Is it non-trivial?
 
   Analysis:
-    - V̂_yava is defined as a SEPARATE epistemic act (E3 postulate)
+    - V̂_yava is defined as a SEPARATE registration act (E3 postulate)
     - Therefore φ₂ ∈ Ops(P) → φ₂ is an OPERATION, not an interface
     - → TEST (iii) FAILS
     - → E5→E3 joint is NOT Class B
@@ -190,7 +202,7 @@ Candidate: φ₂: Ā(M) → V̂_yava(Ā)
 ```
 ┌──────────────────────────────────────────────────┐
 │                                                  │
-│  Class B instances in VVV-EQM:                   │
+│  Class B instances in VVV-QMRF:                   │
 │                                                  │
 │  CONFIRMED:  1 — S1-Λ (E4→E5)                   │
 │  REJECTED:   5 — S1:E5→E3, S2 joints, S3 radial │
@@ -209,10 +221,13 @@ Candidate: φ₂: Ā(M) → V̂_yava(Ā)
 
 | BIAN | Gap | Category | Buddhist Source | QM Implicit Presence |
 |:----:|-----|:--------:|---------------|---------------------|
-| 12 | Epistemic Override | Cat 03 | Bādhaka pramāṇa | State update (post-measurement) exists but lacks epistemic invalidation taxonomy |
+| 3 | Limit-Faculty Registration | Cat 11 + E12 | Alaukika pratyakṣa | κ parametrization and weak/projective/continuous measurement distinctions exist but lack limit-faculty taxonomy |
+| 9 | Validated Absence Registration | Cat 13 + E14 | Anupalabdhi | Null-result and interaction-free measurements exist but lack validated-absence registration taxonomy |
+| 11 | Pre-Measurement Registration Indeterminacy | Cat 15 + E16 | Saṃśaya | Superposition/density matrix substrate exists but lacks K-side registration-state taxonomy |
+| 12 | Retroactive Registration Override | Cat 03 + E8 | Bādhaka pramāṇa | State update (post-measurement) exists but lacks registration invalidation taxonomy |
 | 13 | Null Registering-System Event | Cat 06 + E9 | Anadhyavasāya | Detection-efficiency and POVM/no-click support exist, but QM lacks a registration-layer non-engagement category |
-| 14 | Tripartite Validity | Cat 09 | Trairūpya | p-values, σ-levels exist but lack unified necessary/sufficient structure |
-| 15 | Contrastive Evidence | Cat 01 | Kevalavyatirekin | Null-result experiments exist but lack distinct evidence-type classification |
+| 14 | Tripartite Validity | Cat 09 + E10 | Trairūpya | p-values, σ-levels exist but lack unified necessary/sufficient structure |
+| 15 | Contrastive Evidence | Cat 01 + E11 | Kevalavyatirekin | Null-result experiments exist but lack distinct evidence-type classification |
 
 ### 5b. Class C Verification Test
 
@@ -220,12 +235,15 @@ Each Class C gap must satisfy: **QM has the phenomenon but lacks the registratio
 
 | BIAN | QM has phenomenon? | QM has registration-layer category? | Class C? |
 |:----:|:-----------------:|:--------------------------------:|:--------:|
-| 12 | ✅ State update exists | ❌ No "epistemic override" concept | ✅ |
-| 13 | ✅ Detection-efficiency and POVM/no-click support exist | ❌ No "registration non-engagement" category | ✅ |
+| 3 | ✅ Measurement-strength variation exists | ❌ No limit-faculty registration taxonomy | ✅ |
+| 9 | ✅ Null-result measurement exists | ❌ No validated-absence registration category | ✅ |
+| 11 | ✅ Pre-measurement physical substrate exists | ❌ No K-side registration-state category | ✅ |
+| 12 | ✅ State update exists | ❌ No retroactive registration override category | ✅ |
+| 13 | ✅ Detection-efficiency and POVM/no-click support exist | ❌ No registration non-engagement category | ✅ |
 | 14 | ✅ Validity criteria exist | ❌ No unified tripartite structure | ✅ |
-| 15 | ✅ Null-result experiments exist | ❌ No "contrastive evidence" type | ✅ |
+| 15 | ✅ Null-result experiments exist | ❌ No contrastive evidence type | ✅ |
 
-**All 4 Class C assignments verified.**
+**All 7 Class C assignments verified.**
 
 ### 5c. Why Class C ≠ Class A
 
@@ -238,28 +256,28 @@ Each Class C gap must satisfy: **QM has the phenomenon but lacks the registratio
 
 ---
 
-## 6. RCA: Class X Audit / Kiểm toán Lớp X
+## 6. RCA: Former Class X Audit / Kiểm toán Lớp X Cũ
 
-### 6a. Unresolved Gaps
+### 6a. Resolved Former Class X Gaps
 
-| BIAN | Gap | Current Status | Blocking Issue |
+| BIAN | Gap | Current Status | Resolution Cause |
 |:----:|-----|:--------------:|---------------|
-| 3 | Observer Faculty Spectrum | No category/postulate | Low severity; limited QM impact |
-| 8 | Temporal Discontinuity Theory | No category/postulate | Medium-high severity; connects to measurement problem timing |
-| 9 | Cognition of Absence | No category/postulate | Strong RCA mapping (N_BE_00253) but no resolution path |
-| 11 | Pre-Measurement Registration Indeterminacy | Category 15 + E16 | Medium severity; QM has physical substrate but no K-side registration-state taxonomy |
+| 3 | Limit-Faculty Registration | Category 11 + E12 | QM has measurement-strength variation but lacks limit-faculty taxonomy |
+| 8 | Temporal Discontinuity Registration Theory | Category 12 + E13 | QM has discontinuity as brute physical postulate but lacks K-side registration theory |
+| 9 | Validated Absence Registration | Category 13 + E14 | QM has null-result measurement but lacks validated-absence registration taxonomy |
+| 11 | Pre-Measurement Registration Indeterminacy | Category 15 + E16 | QM has physical substrate but no K-side registration-state taxonomy |
 
-### 6b. Class X Triage — Potential Reclassification
+### 6b. Class X Closure
 
-| BIAN | Likely reclassification | Rationale |
+| Former BIAN | Final class | Rationale |
 |:----:|:----------------------:|-----------|
 | 3 | **C** (Implicit) | QM has weak measurement as implicit analogue; needs category, not postulate |
-| 8 | **A** (Structural) | QM has temporal discontinuity as brute fact but no epistemic theory → may need postulate E8 |
-| 9 | **C** (Implicit) | QM has null-result measurement implicitly; needs category like BIAN-15 |
-| 11 | **C** (Implicit) | QM has superposition-as-ignorance (QBism) implicitly; needs category |
+| 8 | **A** (Structural) | QM has temporal discontinuity as brute fact but no registration-layer theory → E13 |
+| 9 | **C** (Implicit) | QM has null-result measurement implicitly; needs validated-absence category |
+| 11 | **C** (Implicit) | QM has physical substrate but no K-side registration-state category |
 
-> [!WARNING]
-> BIAN-8 is the strongest candidate for future **Class A reclassification** and potential **E8 postulate**. Unlike BIAN-1 (which was rejected as E8 in favor of S1-Λ), BIAN-8's temporal discontinuity has NO implicit QM presence — it is a brute-fact postulate gap.
+> [!NOTE]
+> Class X is closed in the current source-backed GCS state. BIAN-8 is no longer a pending E8 candidate; it is resolved as Category 12 plus E13.
 
 ---
 
@@ -269,41 +287,42 @@ Each Class C gap must satisfy: **QM has the phenomenon but lacks the registratio
 
 | Class | Resolution Layer | Repository Path | Count |
 |:-----:|:----------------:|:---------------:|:-----:|
-| A | framework/ | E1–E7 postulates | 9 gaps → 7 postulates |
+| A | framework/ | E1–E17 postulates where documented | 10 gaps → framework postulates/categories |
 | B | synthesis/ (lemma) | S1-Λ in pipeline | 1 gap → 1 lemma |
-| C | category/ | Cat 01–09 | 4 gaps → 4 categories |
+| C | category/ | Cat 01–15 where applicable | 7 gaps → 7 categories |
 | R | N/A (reverse) | — | 1 |
-| X | *pending* | — | 4 |
+| X | Closed | — | 0 |
 | ∅ | N/A (reserved) | — | 1 |
 
 ### 7b. Layer Hierarchy Verification
 
 ```
 gap/ (20 BIAN)
-  ├── 9 × Class A ──→ framework/ (7 postulates E1-E7)
-  │                      └──→ synthesis/ (S1, S2, S3)
-  │                             └──→ meta-architecture/ (ENI, GCS)
-  ├── 1 × Class B ──→ synthesis/ (Lemma S1-Λ)
-  ├── 4 × Class C ──→ category/ (Cat 01, 03, 06, 09)
-  ├── 1 × Class R ──→ (reverse — QM exceeds BE)
-  ├── 4 × Class X ──→ (unresolved — open research)
-  └── 1 × Class ∅ ──→ (reserved)
+  ├── 10 × Class A ──→ framework/ (postulates where documented)
+  │                       └──→ synthesis/ (S1, S2, S3)
+  │                              └──→ meta-architecture/ (ENI, GCS)
+  ├── 1 × Class B ───→ synthesis/ (Lemma S1-Λ)
+  ├── 7 × Class C ───→ category/ (Cat 01, 03, 06, 09, 11, 13, 15)
+  ├── 1 × Class R ───→ (reverse — QM exceeds BE)
+  ├── 0 × Class X ───→ closed by current triage
+  └── 1 × Class ∅ ───→ (reserved)
 ```
 
 ### 7c. Cross-check: Categories NOT in Class C
 
-Categories 02, 04, 05, 07, 08, 10 are **not Class C** — they are intermediate products in the Class A pipeline:
+Categories 02, 04, 05, 07, 08, 10, and 12 are **not Class C** — they are Class A pipeline or structural-extension products:
 
 | Category | Role | Class of originating BIAN |
 |:--------:|------|:------------------------:|
-| Cat 02 | Measurement Self-Completion → E2 | A (BIAN-16) |
-| Cat 04 | Dual-Phase Certification → E7 | A (BIAN-18) |
-| Cat 05 | Self-Certifying Measurement → E1 | A (BIAN-2,6,17) |
-| Cat 07 | Observer-as-Process → E6 | A (BIAN-19) |
-| Cat 08 | Epistemic Commitment → E3, E5 | A (BIAN-4,5) |
-| Cat 10 | Pre-Symbolic Stratum → E4 | A (BIAN-7) |
+| Cat 02 | Registration Self-Completion → E2 | A (BIAN-16) |
+| Cat 04 | Dual-Phase Registration Certification → E7 | A (BIAN-18) |
+| Cat 05 | Self-Certifying Registration → E1 | A (BIAN-2,6,17) |
+| Cat 07 | Registering-System-as-Process → E6 | A (BIAN-19) |
+| Cat 08 | Registration Lock → E3, E5 | A (BIAN-4,5) |
+| Cat 10 | Pre-Symbolic Registration Stratum → E4 | A (BIAN-7) |
+| Cat 12 | Temporal Discontinuity Doctrine → E13 | A (BIAN-8) |
 
-> Class C categories (01, 03, 06, 09) are **category-led** resolutions — they classify implicit QM phenomena at the registration layer and may be paired with extension postulates when documented. Class A categories (02, 04, 05, 07, 08, 10) are **core-pipeline** resolutions — they escalate toward the E1–E7 framework layer.
+> Class C categories (01, 03, 06, 09, 11, 13, 15) are **category-led** resolutions — they classify implicit QM phenomena at the registration layer and may be paired with extension postulates when documented. Class A categories (02, 04, 05, 07, 08, 10, 12) are **pipeline or structural-extension** resolutions — they escalate toward the framework layer.
 
 ---
 
@@ -311,25 +330,25 @@ Categories 02, 04, 05, 07, 08, 10 are **not Class C** — they are intermediate 
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  VVV-EQM Gap Classification System (GCS)                     │
+│  VVV-QMRF Gap Classification System (GCS)                     │
 │                                                              │
 │  20 BIAN gaps classified into 6 classes:                     │
 │                                                              │
-│  Class A (Structural):  9 gaps → 7 postulates (E1-E7)       │
+│  Class A (Structural): 10 gaps → framework postulates/cats   │
 │  Class B (Interface):   1 gap  → 1 lemma (S1-Λ)             │
-│  Class C (Implicit):    4 gaps → 4 categories (01,03,06,09) │
+│  Class C (Implicit):    7 gaps → 7 categories               │
 │  Class R (Reverse):     1 gap  → QM exceeds BE              │
-│  Class X (Unresolved):  4 gaps → open research              │
+│  Class X (Unresolved):  0 gaps → closed by current triage    │
 │  Class ∅ (Reserved):    1 gap  → placeholder                │
 │                                                              │
 │  Key findings:                                               │
 │  • Class B is CLOSED — only 1 ENI instance (S1-Λ)           │
-│  • Class X candidate for E8: BIAN-8 (temporal discontinuity) │
-│  • Categories split: 4 category-led (C) + 6 core-pipeline (A) │
-│  • All Class A gaps fully integrated into synthesis layer    │
+│  • Class X is CLOSED — BIAN-8 resolves as Cat 12 + E13      │
+│  • Categories split: 7 category-led (C) + 7 non-C categories │
+│  • Class A gaps escalate toward the framework layer          │
 │                                                              │
 │  GCS layer: meta-architecture/ (above synthesis/)            │
-│  Cite: VVV-EQM §GCS                                         │
+│  Cite: VVV-QMRF §GCS                                         │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -339,13 +358,13 @@ Categories 02, 04, 05, 07, 08, 10 are **not Class C** — they are intermediate 
 
 | Document | Role |
 |----------|------|
-| [RCA_BIAN1_new_epistemic.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_new_epistemic.md) | ENI principle — source of GCS |
+| [RCA_BIAN1_new_epistemic.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_new_epistemic.md) | Registration Natural Interface derivation — legacy filename retained |
 | [BIAN_gap_analysis_ver_01.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/achives/gap/BIAN_gap_analysis_ver_01.md) | 20 BIAN gap definitions |
 | [BIAN_index_SOT.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/gap/BIAN_index_SOT.md) | Node/edge registry |
 | [vvv_qmrf_registration_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/vvv_qmrf_registration_categories_index.md) | Category resolution registry |
-| [epistemic_measurement_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/epistemic_measurement_pipeline.md) | S1 + S1-Λ |
+| [epistemic_measurement_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/epistemic_measurement_pipeline.md) | S1 + S1-Λ — legacy filename; registration measurement pipeline |
 | [self_validation_loop.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/self_validation_loop.md) | S2 loop |
-| [observer_ontological_foundation.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/observer_ontological_foundation.md) | S3 hub |
+| [observer_ontological_foundation.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/observer_ontological_foundation.md) | S3 hub — legacy filename; registering-system foundation |
 
 ---
 

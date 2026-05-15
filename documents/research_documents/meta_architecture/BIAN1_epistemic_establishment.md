@@ -1,19 +1,33 @@
-# RCA: Thiết lập Epistemic Mới cho VVV-EQM từ BIAN-1
-# RCA: New Epistemic Establishment for VVV-EQM from BIAN-1
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
-**Date:** 2026-05-11  
-**Author:** VietVunVut (Viet - Nguyen Xuan)  
-**Cite:** VVV-EQM §META  
+# RCA: Thiết lập Registration Mới cho VVV-QMRF từ BIAN-1
+# RCA: New Registration Establishment for VVV-QMRF from BIAN-1
+
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Date:** 2026-05-11
+**Author:** VietVunVut (Viet - Nguyen Xuan)
+**Cite:** VVV-QMRF §META
 **Type:** Capstone Synthesis — consolidates all BIAN-1 derivatives
+
+## Legacy terminology cross-reference / Bảng đối chiếu thuật ngữ cũ
+
+| Legacy term | Current VVV-QMRF term | Decision score | Reason |
+|---|---|---:|---|
+| VVV-EQM | VVV-QMRF | 5/5 | Current public name uses registration framing; legacy retained for traceability. |
+| Epistemic Establishment | Registration Establishment | 4/5 | This file describes the K-side architecture generated from BIAN-1. |
+| epistemic stages | registration stages | 4/5 | Use when the stages refer to VVV-QMRF's K-side pipeline rather than Buddhist source cognition. |
+| Epistemic Commitment | Registration Lock | 5/5 | Current E3 framework terminology is registration lock. |
+| `BIAN1_epistemic_establishment.md` | BIAN-1 registration establishment (legacy filename retained) | 4/5 | File name is not changed; document title and component names use registration framing. |
+| `epistemic_measurement_pipeline.md` | registration measurement pipeline (legacy filename retained) | 3.5/5 | File name is not changed; content role is the K-side registration pipeline. |
+| `RCA_BIAN1_new_epistemic.md` | Registration Natural Interface derivation artifact (legacy filename retained) | 3.5/5 | External artifact name is preserved for traceability while ENI uses registration naming. |
 
 ---
 
 ## 0. Thesis / Luận đề
 
-> **Một khoảng trống duy nhất (BIAN-1) không chỉ được giải quyết — nó sinh ra toàn bộ tầng kiến trúc mới cho VVV-EQM.**
+> **Một khoảng trống duy nhất (BIAN-1) không chỉ được giải quyết — nó sinh ra toàn bộ tầng kiến trúc mới cho VVV-QMRF.**
 
-> **A single gap (BIAN-1) was not merely resolved — it generated an entire new architectural layer for VVV-EQM.**
+> **A single gap (BIAN-1) was not merely resolved — it generated an entire new architectural layer for VVV-QMRF.**
 
 ```
 BIAN-1 (gap)
@@ -26,12 +40,12 @@ BIAN-1 (gap)
 
 ---
 
-## 1. Inventory: 5 New Epistemic Components / 5 Thành phần Nhận thức Mới
+## 1. Inventory: 5 New Registration Components / 5 Thành phần Ghi nhận Mới
 
 | # | Code | Name EN | Tên VN | Type | Source |
 |:-:|:----:|---------|--------|:----:|:------:|
 | 1 | **S1-Λ** | Transition Lemma | Bổ đề Chuyển tiếp | Lemma | BIAN-1 direct |
-| 2 | **ENI** | Epistemic Natural Interface | Giao diện Nhận thức Tự nhiên | Meta-principle | S1-Λ generalization |
+| 2 | **ENI** | Registration Natural Interface (legacy code: Epistemic Natural Interface) | Giao diện Ghi nhận Tự nhiên | Meta-principle | S1-Λ generalization |
 | 3 | **GCS** | Gap Classification System | Hệ thống Phân loại Khoảng trống | Classification | ENI application |
 | 4 | **MIP** | Measurement Interiority Principle | Nguyên lý Nội tại Phép đo | Axiom-level | BIAN-1 existence proof |
 | 5 | **PCC** | Pipeline Completeness Criterion | Tiêu chí Hoàn chỉnh Ống dẫn | Test criterion | ENI + GCS corollary |
@@ -49,21 +63,21 @@ BIAN-1 (gap)
 | **Buddhist SOT** | "passed on... in natural manner" (Source doc L207) |
 | **Formalism** | Λ preserves causal content, adds symbolic structure, is natural (not separate operation) |
 | **QM mapping** | κ (measurement strength, J-S #29) parametrizes Λ degree |
-| **Status** | Integrated into `synthesis/epistemic_measurement_pipeline.md §4d` |
-| **Cite** | VVV-EQM §S1-Λ |
+| **Status** | Integrated into `synthesis/epistemic_measurement_pipeline.md §4d` (legacy filename; registration measurement pipeline) |
+| **Cite** | VVV-QMRF §S1-Λ |
 
 **Artifact:** [RCA_BIAN1_verification.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_verification.md)
 
-### 2b. ENI — Epistemic Natural Interface / Giao diện Nhận thức Tự nhiên
+### 2b. ENI — Registration Natural Interface (legacy code: Epistemic Natural Interface) / Giao diện Ghi nhận Tự nhiên
 
 | Property | Value |
 |----------|-------|
-| **What** | Between consecutive epistemic stages, natural interfaces exist — maps that preserve causation while adding symbolization |
+| **What** | Between consecutive registration stages, natural interfaces exist — maps that preserve causation while adding symbolization |
 | **Why new** | Never formalized in QM, BE, Philosophy of Science, or Information Theory |
 | **Derived from** | Generalizing S1-Λ: "if THIS joint has a natural interface, do ALL joints?" |
 | **4-point test** | (i) preserves causal content, (ii) adds symbolic structure, (iii) not separate operation, (iv) not trivial |
 | **Instance** | S1-Λ is the first (and currently only) confirmed ENI instance |
-| **Cite** | VVV-EQM §ENI |
+| **Cite** | VVV-QMRF §ENI |
 
 **Artifact:** [RCA_BIAN1_new_epistemic.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_new_epistemic.md)
 
@@ -71,12 +85,12 @@ BIAN-1 (gap)
 
 | Property | Value |
 |----------|-------|
-| **What** | 6-class system for categorizing epistemic gaps |
+| **What** | 6-class system for categorizing registration-layer gaps |
 | **Why new** | Previous BIAN analysis treated all gaps uniformly; GCS reveals 3 distinct resolution paths |
 | **Derived from** | ENI 4-point test applied as classifier |
 | **Classes** | A (Structural→Postulate), B (Interface→Lemma), C (Implicit→Category), R (Reverse), X (Unresolved), ∅ (Reserved) |
 | **Key finding** | Class B is CLOSED — only 1 instance. BIAN-8 is strongest Class X→A candidate |
-| **Cite** | VVV-EQM §GCS |
+| **Cite** | VVV-QMRF §GCS |
 
 **Artifact:** [RCA_gap_classification_system.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_gap_classification_system.md)
 
@@ -84,26 +98,26 @@ BIAN-1 (gap)
 
 | Property | Value |
 |----------|-------|
-| **What** | Every measurement act has formally analyzable internal epistemic structure |
+| **What** | Every measurement act has formally analyzable internal registration structure |
 | **Why new** | QM treats measurement as black box (input: quantum state → output: classical number) |
 | **Derived from** | The very existence of BIAN-1 proves measurement has "interior" that QM ignores |
 
 **Statement (EN):**
-> Every measurement act M possesses internal epistemic structure that is formally decomposable into distinct stages (pre-symbolic, encoding, commitment). The treatment of M as an atomic, structureless event is an architectural simplification, not a physical fact.
+> Every measurement act M possesses internal registration structure that is formally decomposable into distinct stages (pre-symbolic, encoding, registration lock). The treatment of M as an atomic, structureless event is an architectural simplification, not a physical fact.
 
 **Statement (VN):**
-> Mọi hành động đo lường M đều có cấu trúc nhận thức nội tại, phân tích được thành các giai đoạn riêng biệt (tiền biểu tượng, mã hóa, cam kết). Việc coi M như sự kiện nguyên tử không cấu trúc là một đơn giản hóa kiến trúc, không phải sự thật vật lý.
+> Mọi hành động đo lường M đều có cấu trúc ghi nhận nội tại, phân tích được thành các giai đoạn riêng biệt (tiền biểu tượng, mã hóa, khóa ghi nhận). Việc coi M như sự kiện nguyên tử không cấu trúc là một đơn giản hóa kiến trúc, không phải sự thật vật lý.
 
 **Formalism:**
 ```
 MIP:
   For any measurement M:
     ∃ decomposition M = {S₁, φ₁, S₂, φ₂, ..., Sₙ}
-    where Sᵢ are epistemic stages
+    where Sᵢ are registration stages
     and φᵢ are inter-stage maps (postulates or ENI instances)
     
   QM violation: QM treats M = {input → output}
-  VVV-EQM correction: M = {ε(M) →[Λ]→ Ā(M) →[E3]→ V̂(M)}
+  VVV-QMRF correction: M = {ε(M) →[Λ]→ Ā(M) →[E3]→ V̂(M)}
 ```
 
 **Why MIP is distinct from ENI:**
@@ -120,11 +134,11 @@ MIP:
 | Property | Value |
 |----------|-------|
 | **What** | For an n-stage pipeline, all n-1 inter-stage joints must be formally classified |
-| **Why new** | Before GCS, VVV-EQM had no systematic way to verify pipeline completeness |
+| **Why new** | Before GCS, VVV-QMRF had no systematic way to verify pipeline completeness |
 | **Derived from** | ENI + GCS corollary — "if we can classify joints, we MUST classify ALL joints" |
 
 **Statement (EN):**
-> A measurement pipeline P with n consecutive epistemic stages S₁, S₂, ..., Sₙ is formally complete if and only if each of the n-1 inter-stage joints J_{i,i+1} has been classified as either: (A) a separate operation (postulate), (B) a natural interface (ENI lemma), or (T) a trivial identity.
+> A measurement pipeline P with n consecutive registration stages S₁, S₂, ..., Sₙ is formally complete if and only if each of the n-1 inter-stage joints J_{i,i+1} has been classified as either: (A) a separate operation (postulate), (B) a natural interface (ENI lemma), or (T) a trivial identity.
 
 **Formalism:**
 ```
@@ -209,7 +223,7 @@ AFTER BIAN-1:
 |-----------|:-----:|-----------|
 | BIAN-1 to BIAN-20 | gap/ | Problem identification |
 | Cat 01-10 | category/ | Gap resolution prescriptions |
-| E1-E7 | framework/ | Epistemic postulates |
+| E1-E7 | framework/ | Registration postulates |
 | S1, S2, S3 | synthesis/ | Cross-postulate integrations |
 | S1-Λ | synthesis/ (lemma) | Pipeline-internal interface |
 | **ENI** | **meta-architecture/** | Principle about interfaces |
@@ -249,7 +263,7 @@ AFTER BIAN-1:
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
-│  BIAN-1 is the most productive gap in VVV-EQM:              │
+│  BIAN-1 is the most productive gap in VVV-QMRF:              │
 │                                                              │
 │  Input:   1 moderate-severity gap                            │
 │  Output:  1 lemma + 3 meta-principles + 1 classification    │
@@ -274,11 +288,11 @@ AFTER BIAN-1:
 
 | Code | Full Name | Layer | Class | Cite |
 |:----:|-----------|:-----:|:-----:|------|
-| S1-Λ | Transition Lemma | synthesis/ | D | VVV-EQM §S1-Λ |
-| ENI | Epistemic Natural Interface | meta-architecture/ | D | VVV-EQM §ENI |
-| GCS | Gap Classification System | meta-architecture/ | D | VVV-EQM §GCS |
-| MIP | Measurement Interiority Principle | meta-architecture/ | D | VVV-EQM §MIP |
-| PCC | Pipeline Completeness Criterion | meta-architecture/ | D | VVV-EQM §PCC |
+| S1-Λ | Transition Lemma | synthesis/ | D | VVV-QMRF §S1-Λ |
+| ENI | Registration Natural Interface (legacy code: Epistemic Natural Interface) | meta-architecture/ | D | VVV-QMRF §ENI |
+| GCS | Gap Classification System | meta-architecture/ | D | VVV-QMRF §GCS |
+| MIP | Measurement Interiority Principle | meta-architecture/ | D | VVV-QMRF §MIP |
+| PCC | Pipeline Completeness Criterion | meta-architecture/ | D | VVV-QMRF §PCC |
 
 ### 6b. Artifact Registry
 
@@ -310,4 +324,4 @@ All evidence traceable to SOT. All derivations Class D (awaiting verification). 
 
 ---
 
-*Cite: VVV-EQM §META. Sources: BIAN_gap_analysis_ver_01 §BIAN-1; S1 §4d; E4 §3; Source doc L171, L207; J-S #29; system_be_full.md L188-189, L330-332.*
+*Cite: VVV-QMRF §META. Sources: BIAN_gap_analysis_ver_01 §BIAN-1; S1 §4d; E4 §3; Source doc L171, L207; J-S #29; system_be_full.md L188-189, L330-332.*
