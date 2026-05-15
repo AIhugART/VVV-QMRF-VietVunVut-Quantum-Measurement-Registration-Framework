@@ -21,10 +21,12 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework / Khung lý thuyết:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)<br/>
 **Legacy name / Tên cũ:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)<br/>
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)<br/>
-**Version / Phiên bản:** 2.0 — Stable Final<br/>
-**Status / Trạng thái:** ✅ Complete — 16 Postulates (E1–E16), 2 Lemmas, 20 labels accounted for: 19 active gaps resolved + 1 reserved label<br/>
-**Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF §WP-2.0
-**Inspiration / Cảm hứng:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại của Trung Quốc, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc. (*co-founded Apple Inc.*)
+**Version / Phiên bản:** 2.1 — Active Research Snapshot / Ảnh chụp nghiên cứu đang hoạt động<br/>
+**Status / Trạng thái:** Active — 16 stable registration postulates (E1–E16), E17 measurement-interface proposal, 2 lemmas, 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Đang hoạt động — 16 tiên đề ghi nhận ổn định (E1–E16), đề xuất giao diện phép đo E17, 2 bổ đề, đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ<br/>
+**Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF §WP-2.0 + E17 research addendum / phụ lục nghiên cứu E17<br/>
+**Inspiration / Cảm hứng:**<br/>
+**EN:** Laozi (Chinese: 老子; pinyin: Lǎozǐ) — legendary Chinese philosopher and author of the *Dao De Jing*; Sun Wu (commonly called Sun Tzu) — author of *The Art of War*; Steve Jobs — co-founder of Apple Inc.<br/>
+**VN:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại của Trung Quốc, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc.
 
 ## The Central Question / Câu Hỏi Trung Tâm
 
@@ -67,13 +69,13 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## Sources of Truth / Nguồn Sự thật
 
-| # | SOT Role | Title | Author | Affiliation | Published in | DOI / ISBN |
-|:-:|----------|-------|--------|-------------|-------------|------------|
-| 1 | **BE System SOT** | The Buddhist Pramāṇa-Epistemology, Logic, and Language: with Reference to Vasubandhu, Diṅnāga, and Dharmakīrti | Hari Shankar Prasad | University of Delhi, Delhi 110007, India | *Studia Humana*, Vol. 12:1-2 (2023), pp. 21–52 | `10.2478/sh-2023-0004` |
-| 2 | **QM Target SOT** | Quantum Mechanics: The Theoretical Minimum | Leonard Susskind; Art Friedman | Stanford University; Portland State University | Basic Books, 2014 | ISBN 978-0-465-06569-2 (paperback) |
-| 3 | **QM Target SOT** | Quantum Measurement Theory and Practice | Andrew N. Jordan; Irfan A. Siddiqi | Chapman University; University of Rochester; University of California, Berkeley | Cambridge University Press, 2024 | `10.1017/9781009103909` |
-| 4 | **SOT Mapping** | VVV-QMRF Buddhist–QM Registration Mapping | Claude (Anthropic) | Anthropic | Internal research document, 2026 | — |
-| 5 | **BIAN Index SOT** | BIAN Index — Source of Truth | VietVunVut (Viet - Nguyen Xuan) | AI hug ART | Internal research document, 2026 | — |
+| # | SOT Role / Vai trò SOT | Title / Nhan đề | Author / Tác giả | Affiliation / Đơn vị | Published in / Nơi xuất bản | DOI / ISBN |
+|:-:|--------------------------|-----------------|------------------|-----------------------|-----------------------------|------------|
+| 1 | **BE System SOT / SOT hệ BE** | The Buddhist Pramāṇa-Epistemology, Logic, and Language: with Reference to Vasubandhu, Diṅnāga, and Dharmakīrti | Hari Shankar Prasad | University of Delhi, Delhi 110007, India | *Studia Humana*, Vol. 12:1-2 (2023), pp. 21–52 | `10.2478/sh-2023-0004` |
+| 2 | **QM Target SOT / SOT mục tiêu QM** | Quantum Mechanics: The Theoretical Minimum | Leonard Susskind; Art Friedman | Stanford University; Portland State University | Basic Books, 2014 | ISBN 978-0-465-06569-2 (paperback) |
+| 3 | **QM Target SOT / SOT mục tiêu QM** | Quantum Measurement Theory and Practice | Andrew N. Jordan; Irfan A. Siddiqi | Chapman University; University of Rochester; University of California, Berkeley | Cambridge University Press, 2024 | `10.1017/9781009103909` |
+| 4 | **SOT Mapping / SOT ánh xạ** | VVV-QMRF Buddhist–QM Registration Mapping / Ánh xạ ghi nhận Buddhist–QM của VVV-QMRF | Claude (Anthropic) | Anthropic | Internal research document, 2026 / Tài liệu nghiên cứu nội bộ, 2026 | — |
+| 5 | **BIAN Index SOT / SOT mục lục BIAN** | BIAN Index — Source of Truth / Mục lục BIAN — Nguồn sự thật | VietVunVut (Viet - Nguyen Xuan) | AI hug ART | Internal research document, 2026 / Tài liệu nghiên cứu nội bộ, 2026 | — |
 
 > **EN:** **BIAN etymology:** "BIAN" is derived from the Vietnamese word *bí ẩn* — meaning **mystery** or **enigma** in English.
 >
@@ -93,36 +95,36 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | "Buddhist philosophy predicted quantum mechanics" / "Triết học Phật giáo dự đoán cơ học lượng tử" | Two systems independently forced by internal logic to solve the same structural problem / Hai hệ thống độc lập bị buộc bởi logic nội tại phải giải cùng một vấn đề cấu trúc |
 | "Consciousness causes wavefunction collapse" / "Ý thức gây ra wavefunction collapse" | Registration-architecture analysis grounded in Buddhist Epistemology — no consciousness metaphysics / Phân tích kiến trúc ghi nhận dựa trên Nhận thức luận Phật giáo — không có siêu hình học ý thức |
 | "Buddhist monks understood entanglement" / "Tu sĩ Phật giáo hiểu entanglement" | Formal convergence in validity conditions, derived independently / Hội tụ hình thức trong điều kiện hợp lệ, được derive độc lập |
-| "Everything is connected" / "Mọi thứ đều kết nối" | Non-analogical structural identity at the level of valid-registration conditions / Đồng nhất cấu trúc phi analogie ở tầng điều kiện ghi nhận hợp lệ |
+| "Everything is connected" / "Mọi thứ đều kết nối" | Bounded structural analogy at the level of valid-registration conditions / Tương đồng cấu trúc có giới hạn ở tầng điều kiện ghi nhận hợp lệ |
 | New interpretation of QM / Diễn giải mới của QM | Structural extension — physically neutral, interpretation-agnostic / Mở rộng cấu trúc — trung lập về diễn giải vật lý |
 
 ---
 
 ## What is VVV-QMRF? / VVV-QMRF là gì?
 
-**EN:** Standard Quantum Mechanics has four physical postulates (P1–P4) that describe state space, observables, measurement, and dynamics. These postulates are *silent* on the registration architecture of measurement — they do not specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the registering system. VVV-QMRF fills these gaps by adding 16 registration-layer postulates derived from structural analysis of Buddhist Pramāṇa epistemology (Dignāga–Dharmakīrti tradition). The first 7 (E1–E7) define core registration operations; the remaining 9 (E8–E16) extend the framework to cover retroactive invalidation, null events, validity conditions, contrapositive evidence, beyond-projection registration, temporal discontinuity, validated absence registration, entanglement-registration relations, and pre-measurement indeterminacy.
+**EN:** Standard Quantum Mechanics has four physical postulates (P1–P4) that describe state space, observables, measurement, and dynamics. These postulates are *silent* on the registration architecture of measurement — they do not specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the registering system. VVV-QMRF fills these gaps with 16 stable registration-layer postulates derived from structural analysis of Buddhist Pramāṇa epistemology (Dignāga–Dharmakīrti tradition). The first 7 (E1–E7) define core registration operations; the remaining 9 (E8–E16) extend the framework to cover retroactive invalidation, null events, validity conditions, contrapositive evidence, limit-faculty registration, temporal discontinuity, validated absence registration, intrinsic relational binding, and pre-measurement indeterminacy. The active research layer also contains E17, a measurement-interface proposal that separates the physical quantum state `ρ` from the registration state `K`.
 
-**VN:** Cơ học Lượng tử chuẩn có bốn tiên đề vật lý (P1–P4) mô tả không gian trạng thái, đại lượng đo được, phép đo, và động lực học. Các tiên đề này *im lặng* về kiến trúc ghi nhận của phép đo. VVV-QMRF lấp đầy các khoảng trống này bằng 16 tiên đề thuộc tầng ghi nhận, rút ra từ phân tích cấu trúc của Nhận thức luận Phật giáo Pramāṇa (truyền thống Dignāga–Dharmakīrti). 7 tiên đề đầu (E1–E7) định nghĩa các phép toán ghi nhận cốt lõi; 9 tiên đề mở rộng (E8–E16) bao phủ phủ quyết hồi tố, sự kiện rỗng, điều kiện hợp lệ, bằng chứng phản chứng, ghi nhận vượt phép chiếu, gián đoạn thời gian, ghi nhận vắng mặt đã xác thực, quan hệ vướng víu ở tầng ghi nhận, và bất định trước đo.
+**VN:** Cơ học Lượng tử chuẩn có bốn tiên đề vật lý (P1–P4) mô tả không gian trạng thái, đại lượng đo được, phép đo, và động lực học. Các tiên đề này *im lặng* về kiến trúc ghi nhận của phép đo. VVV-QMRF lấp đầy các khoảng trống này bằng 16 tiên đề ổn định thuộc tầng ghi nhận, rút ra từ phân tích cấu trúc của Nhận thức luận Phật giáo Pramāṇa (truyền thống Dignāga–Dharmakīrti). 7 tiên đề đầu (E1–E7) định nghĩa các phép toán ghi nhận cốt lõi; 9 tiên đề mở rộng (E8–E16) bao phủ phủ quyết hồi tố, sự kiện rỗng, điều kiện hợp lệ, bằng chứng phản chứng, ghi nhận giới hạn năng lực, gián đoạn thời gian, ghi nhận vắng mặt đã xác thực, liên kết quan hệ nội tại, và bất định trước đo. Lớp nghiên cứu đang hoạt động cũng có E17, một đề xuất giao diện phép đo tách trạng thái lượng tử vật lý `ρ` khỏi trạng thái ghi nhận `K`.
 
 ### P/E Quick Comparison — Big Update / Bảng ngắn P/E — Ghi chú Big Update
 
-| Layer / Tầng | Standard QM | VVV-QMRF |
-|--------------|-------------|----------|
-| Core postulates / Tiên đề lõi | P1–P4: state space, observables, measurement, dynamics | E1–E16: registration-layer postulates |
+| Layer / Tầng | Standard QM / Cơ học Lượng tử chuẩn | VVV-QMRF |
+|--------------|--------------------------------------|----------|
+| Core postulates / Tiên đề lõi | P1–P4: state space, observables, measurement, dynamics / P1–P4: không gian trạng thái, đại lượng quan sát, phép đo, động lực học | E1–E16: stable registration-layer postulates; E17: measurement-interface proposal / E1–E16: các tiên đề ổn định ở tầng ghi nhận; E17: đề xuất giao diện phép đo |
 | Description / Mô tả | Describes how the physical quantum system changes / Mô tả hệ vật lý lượng tử biến đổi thế nào | Describes when measurement becomes valid registration / Mô tả khi nào phép đo trở thành ghi nhận hợp lệ |
 | What it does not do / Điều nó không làm | Does not fully specify the registration architecture of measurement / Không mô tả đầy đủ kiến trúc ghi nhận của phép đo | Does not replace the physical equations of QM / Không thay thế phương trình vật lý của QM |
-| Correct terms / Thuật ngữ đúng | "state", "observable", "measurement outcome", "dynamics", "detector response" | "registration-state update", "certification", "null event", "retroactive invalidation" |
+| Correct terms / Thuật ngữ đúng | "state", "observable", "measurement outcome", "dynamics", "detector response" / "trạng thái", "đại lượng quan sát", "kết quả đo", "động lực học", "phản ứng máy dò" | "registration-state update", "certification", "null event", "retroactive invalidation" / "cập nhật trạng thái ghi nhận", "xác nhận hợp lệ", "sự kiện rỗng", "vô hiệu hóa hồi tố" |
 
 ---
 
-**EN:** For the two strongest structural convergences between Buddhist Epistemology and Quantum Mechanics — where both systems independently reach identical logical conclusions separated by 15 centuries — see: 📄 **[VVV-QMRF convergences](documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_two_strongest_structural_convergences.md)**
+**EN:** For the two strongest structural convergences between Buddhist Epistemology and Quantum Mechanics — where both systems independently reach closely analogous registration-validity pressures — see: 📄 **[VVV-QMRF convergences](documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_two_strongest_structural_convergences.md)**
 
-**VN:** Hai hội tụ cấu trúc mạnh nhất — nơi cả hai hệ thống độc lập đi đến cùng kết luận logic cách nhau 15 thế kỷ — xem: 📄 **[VVV-QMRF convergences](documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_two_strongest_structural_convergences.md)**
+**VN:** Hai hội tụ cấu trúc mạnh nhất — nơi cả hai hệ thống độc lập gặp áp lực tương tự về tính hợp lệ của ghi nhận — xem: 📄 **[VVV-QMRF convergences](documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_two_strongest_structural_convergences.md)**
 
 | Convergence / Hội tụ | Buddhist / Phật giáo | QM / Lượng tử |
 |:--------------------:|:--------------------:|:-------------:|
-| **C1** | Niḥsvabhāvatā — vô tự tánh (thế kỷ 5) | Bell's Theorem — không hidden variables (1964–2015) |
-| **C2** | Arthakriyā — hợp lệ = hành động thành công (thế kỷ 7) | Predictive success as validity criterion (2024) |
+| **C1** | Niḥsvabhāvatā — lack of context-independent intrinsic nature / vô tự tánh (thế kỷ 5) | Bell's Theorem — no hidden variables / không hidden variables (1964–2015) |
+| **C2** | Arthakriyā — validity as successful action / hợp lệ = hành động thành công (thế kỷ 7) | Predictive success as validity criterion / thành công dự đoán như tiêu chí hợp lệ (2024) |
 
 ---
 
@@ -169,23 +171,27 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                 VVV-QMRF FINAL ARCHITECTURE (v2.0 Stable)           │
+│              VVV-QMRF ACTIVE ARCHITECTURE (v2.1 Snapshot)           │
 │                                                                     │
-│  POSTULATES:  E1–E16 (16)    — registration operations              │
+│  STABLE CORE: E1–E16 (16)    — registration-layer postulates        │
 │    Core:      E1–E7 (7)      — core registration operations         │
 │    Extended:  E8–E16 (9)     — structural expansions                │
+│  PROPOSAL:    E17 (1)        — measurement interface: ρ ↔ K          │
 │  LEMMAS:      S1-Λ, S2-Δ (2) — interface connectors                 │
 │  CATEGORIES:  Cat 01–15 (15) — registration categories              │
 │  SYNTHESIS:   S1, S2, S3 (3) — integration patterns                 │
-│  META:        ENI, GCS, MIP, PCC (4)                                │
+│  META:        ENI, GCS, MIP, PCC + registration-layer formalization │
+│  NODES:       N_QM_VVV_00001–00055 — VVV-QMRF extension nodes       │
 │  20 labels accounted for: 19 active gaps resolved + 1 reserved label │
 │                                                                     │
-│  QM Extended: P1–P4 (physical) + E1–E16 (registration-layer)         │
-│  Total: 20 postulates for complete measurement theory               │
+│  QM preserved: P1–P4 physical formalism and Born rule               │
+│  VVV-QMRF adds: K-side registration-state update                    │
 │                                                                     │
-│  STATUS: COMPLETE ✅                                                │
+│  STATUS: ACTIVE — E17 remains proposal, not stable physical theory  │
 └─────────────────────────────────────────────────────────────────────┘
 ```
+
+**VN:** Sơ đồ trên nói rằng lõi ổn định của VVV-QMRF là E1–E16; E17 vẫn là đề xuất giao diện phép đo, không phải lý thuyết vật lý ổn định. Standard QM vẫn giữ P1–P4 và "Born rule"; VVV-QMRF chỉ bổ sung tầng `K` như `registration-state update` / cập nhật trạng thái ghi nhận.
 
 ### Synthesis Patterns / Mẫu Tổng hợp
 
@@ -210,7 +216,7 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 
 ## BIAN Gap Resolution / Giải quyết Khoảng trống BIAN
 
-**20 labels accounted for: 19 active gaps resolved + 1 reserved label**
+**20 labels accounted for: 19 active gaps resolved + 1 reserved label / Đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ**
 
 | Class | EN / Tiếng Anh | VN / Tiếng Việt | Count | Resolution / Giải pháp |
 |:-----:|----------------|-----------------|:-----:|----------------------|
@@ -226,11 +232,11 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 
 | Interpretation / Diễn giải | Compatible? / Tương thích? | Notes / Ghi chú |
 |----------------------------|:--------------------------:|-----------------|
-| Copenhagen | ✅ Extends / Mở rộng | E1/E2 formalize registration authority for the "classical apparatus" |
-| QBism | ✅ Extends / Mở rộng | E6 aligns with agent-centered interpretations without making the agent human-only |
-| Relational QM | ✅ Extends / Mở rộng | E6 supports process-relative registration; E1 provides self-certification |
-| Many-Worlds | ⚠️ Partial / Một phần | E2 may conflict with "all outcomes occur" |
-| Decoherence | ✅ Compatible / Tương thích | E4/E5 support registration of pointer-basis outcomes without replacing decoherence |
+| Copenhagen | ✅ Extends / Mở rộng | E1/E2 formalize registration authority for the "classical apparatus" / E1/E2 hình thức hóa thẩm quyền ghi nhận của "classical apparatus" |
+| QBism | ✅ Extends / Mở rộng | E6 aligns with agent-centered interpretations without making the agent human-only / E6 tương thích với diễn giải lấy tác nhân làm trung tâm mà không giới hạn tác nhân là con người |
+| Relational QM | ✅ Extends / Mở rộng | E6 supports process-relative registration; E1 provides self-certification / E6 hỗ trợ ghi nhận tương đối theo quá trình; E1 cung cấp tự chứng nhận |
+| Many-Worlds | ⚠️ Partial / Một phần | E2 may conflict with "all outcomes occur" / E2 có thể xung đột với ý "mọi kết quả đều xảy ra" |
+| Decoherence | ✅ Compatible / Tương thích | E4/E5 support registration of pointer-basis outcomes without replacing decoherence / E4/E5 hỗ trợ ghi nhận kết quả theo "pointer basis" mà không thay thế decoherence |
 
 ---
 
@@ -256,20 +262,23 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 buddhist-epistemology-quantum-measurement/
 ├── README.md                          ← You are here / Bạn đang ở đây
 ├── SYSTEM_Buddhist_Epistemology/
-│   └── system_be_full.md              ← Source of Truth: 263 nodes, 226 edges
+│   └── system_be_full.md              ← BE source of truth for RCA node/edge definitions / SOT BE cho định nghĩa node/edge RCA
+├── SYSTEM_Quantum_Measurement/
+│   ├── index.md                       ← Compact QM node index / Mục lục node QM rút gọn
+│   └── edge_Quantum_Measurement/      ← QM edge documents / Tài liệu edge QM
 ├── documents/
-│   ├── published_documents/
-│   │   ├── VVV_EQM_Unified_White_Paper.md  ← Legacy filename; full VVV-QMRF technical specification
-│   │   ├── RCA_bao_cao_tong_hop_tieng_Viet.md  ← Vietnamese summary
-│   │   └── achives/                   ← Primary source scholarship
+│   ├── published_documents/           ← Published source tables and QM/BE reference documents / Bảng nguồn đã công bố và tài liệu tham chiếu QM/BE
+│   ├── course-highschool-vvv-qmrf/    ← 25-lesson Vietnamese high-school course / Khóa học phổ thông 25 bài bằng tiếng Việt
 │   └── research_documents/
-│       ├── framework/                 ← E1–E16 postulate definitions
-│       ├── synthesis/                 ← S1, S2, S3 integration patterns
-│       ├── category/                  ← 15 registration category files
-│       ├── gap/                       ← BIAN index SOT + resolution files
-│       ├── mapping/                   ← SOT BE↔QM 1:1 mapping
-│       ├── meta_architecture/         ← ENI, GCS, PCC definitions
-│       └── review/                    ← RCA audit reports
+│       ├── framework/                 ← E1–E16 stable postulates, E17 proposal, formal ρ/K model / E1–E16 ổn định, đề xuất E17, mô hình ρ/K hình thức
+│       ├── synthesis/                 ← S1, S2, S3 integration patterns / Mẫu tích hợp S1, S2, S3
+│       ├── category/                  ← 15 registration category files / 15 file phạm trù ghi nhận
+│       ├── bridge/                    ← Bridge documents between category and framework layers / Tài liệu cầu nối giữa tầng category và framework
+│       ├── mapping/                   ← BE↔QM mapping documents and archives / Tài liệu ánh xạ BE↔QM và archive
+│       ├── meta_architecture/         ← ENI, GCS, MIP, PCC, and registration-layer formalization / ENI, GCS, MIP, PCC và hình thức hóa tầng ghi nhận
+│       ├── vvv-qmrf/                  ← VVV-QMRF node table, dictionary, and system diagrams / Bảng node, từ điển, và sơ đồ hệ thống VVV-QMRF
+│       └── review/                    ← RCA audit reports / Báo cáo audit RCA
+└── papers/                            ← Paper-specific working material / Tư liệu làm việc riêng cho bài viết
 ```
 
 ---
@@ -297,7 +306,7 @@ buddhist-epistemology-quantum-measurement/
 **EN:** Through analysis, we identified **20 structural gaps (BIAN gaps)** — areas where QM lacks a registration-structure theory whose source model appears in Buddhist Epistemology.<br/>
 **VN:** Qua phân tích, chúng tôi tìm ra **20 khoảng trống (BIAN gaps)** — những chỗ QM thiếu lý thuyết cấu trúc ghi nhận, còn mô hình nguồn có trong Nhận thức luận Phật giáo.
 
-### 2. Main Results: 16 Postulates + 2 Lemmas / Kết quả chính: 16 Tiên đề + 2 Bổ đề
+### 2. Main Results: 16 Stable Postulates + E17 Proposal + 2 Lemmas / Kết quả chính: 16 Tiên đề ổn định + đề xuất E17 + 2 Bổ đề
 
 #### 2a. Seven Core Postulates (E1–E7) / Bảy Tiên đề Cốt lõi (E1–E7)
 
@@ -340,6 +349,12 @@ buddhist-epistemology-quantum-measurement/
 |:-:|---------|---------|--------------------------|-------------------------|
 | **S1-Λ** | Transition Lemma | Bổ đề Chuyển tiếp | EN: How raw data (E4) transitions into internal representation encoding (E5) / VN: Cách dữ liệu thô (E4) chuyển thành mã hóa biểu diễn nội tại (E5) | Sahaja-pravṛtti (Natural transfer / Chuyển giao tự nhiên) |
 | **S2-Δ** | Temporal Gap Lemma | Bổ đề Gián đoạn Thời gian | EN: Between two consecutive measurements there is a **registration gap** — the registering process resets before the next event / VN: Giữa hai phép đo liên tiếp có một **khoảng trống ghi nhận** — quy trình ghi nhận đặt lại trước sự kiện tiếp theo | Kṣaṇabhaṅgavāda (Momentariness / Sát-na diệt) |
+
+#### 2d. E17 Measurement Interface Proposal / Đề xuất Giao diện Phép đo E17
+
+**EN:** E17 is an active proposal, not a stable physical postulate. It models measurement as an interface between the physical quantum transition of `ρ` and the `K`-side `registration-state update`: `(ρ_before, K_before, M) → (o, ρ_after, K_after)`.
+
+**VN:** E17 là đề xuất đang nghiên cứu, không phải tiên đề vật lý ổn định. Nó mô hình hóa phép đo như giao diện giữa chuyển đổi lượng tử vật lý của `ρ` và `registration-state update` / cập nhật trạng thái ghi nhận phía `K`: `(ρ_before, K_before, M) → (o, ρ_after, K_after)`.
 
 ### 3. Gap Classification System / Hệ thống phân loại 20 khoảng trống
 
@@ -385,7 +400,8 @@ buddhist-epistemology-quantum-measurement/
 
 **VN:** Kṣaṇabhaṅgavāda (Sát-na diệt) được kiểm tra theo 4 tiêu chí để xét địa vị Tiên đề. **Kết quả: 0/4 — bị bác.** Nó mô tả thực tại bản thể học, không phải phép toán ghi nhận; không thêm toán tử ghi nhận mới mà QM đang thiếu; và gián đoạn xảy ra *giữa* hai phép đo, không phải *trong* quy trình. Được phân loại đúng là **Bổ đề S2-Δ** — điều kiện biên ghi nhận, không phải toán tử.
 
-> 📄 **Full 4-criteria test, analogy, and architectural justification:** [BIAN1_resolution_verification.md](documents/research_documents/gap/BIAN1_resolution_verification.md)
+> 📄 **EN:** Full 4-criteria test, analogy, and architectural justification: [BIAN1_resolution_verification.md](documents/research_documents/gap/BIAN1_resolution_verification.md)<br/>
+> **VN:** Bài kiểm tra đầy đủ 4 tiêu chí, phần tương đồng, và biện minh kiến trúc: [BIAN1_resolution_verification.md](documents/research_documents/gap/BIAN1_resolution_verification.md)
 
 ### 5. Measurement Registration Pipeline / Ống dẫn ghi nhận đo lường (S1 Pipeline)
 
@@ -439,21 +455,22 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 | "Null result = surplus statistics" / "Null result = thống kê thừa" | "Null = **valid registration** of absence" / "Kết quả rỗng = **ghi nhận hợp lệ** về vắng mặt" | E14 |
 | "Entanglement = correlation" / "Entanglement = tương quan" | "Entanglement - registration = irreducible **third relation**" / "Vướng víu ở tầng ghi nhận = quan hệ **thứ ba** bất khả giản" | E15 |
 | "Superposition = unknown" / "Superposition = chưa biết" | "Superposition = complete **structured indeterminacy**" / "Chồng chập = **bất định có cấu trúc** hoàn chỉnh" | E16 |
+| "Measurement = one mixed event" / "Phép đo = một sự kiện trộn lẫn" | "Measurement interface separates physical `ρ` transition from `K`-side registration-state update" / "Giao diện phép đo tách chuyển đổi vật lý `ρ` khỏi cập nhật trạng thái ghi nhận phía `K`" | E17 proposal |
 
 ### 7. RCA Conclusions / Kết luận RCA
 
 #### Achievements / Những gì đã đạt được
 
-1. **20 labels accounted for: 19 active gaps resolved + 1 reserved label**
+1. **20 labels accounted for: 19 active gaps resolved + 1 reserved label / Đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ**
 2. **EN:** 16 stable postulates (E1–E7 core + E8–E16 extended) / **VN:** 16 tiên đề ổn định (E1–E7 cốt lõi + E8–E16 mở rộng)
-3. **EN:** 2 confirmed lemmas — covering all connective joints / **VN:** 2 bổ đề xác nhận — bao phủ tất cả mối nối
-4. **EN:** ENI Principle — method for classifying registration joints / **VN:** Nguyên tắc ENI — phương pháp phân loại mối nối ghi nhận
-5. **EN:** GCS System — automated gap classification method / **VN:** Hệ thống GCS — phương pháp phân loại khoảng trống tự động
+3. **EN:** E17 measurement-interface proposal — separates physical `ρ` transition from `K`-side registration-state update / **VN:** Đề xuất E17 về giao diện phép đo — tách chuyển đổi vật lý `ρ` khỏi cập nhật trạng thái ghi nhận phía `K`
+4. **EN:** 2 confirmed lemmas — covering connective joints / **VN:** 2 bổ đề xác nhận — bao phủ các mối nối
+5. **EN:** ENI Principle and GCS System — methods for classifying registration joints and gaps / **VN:** Nguyên tắc ENI và hệ thống GCS — phương pháp phân loại mối nối ghi nhận và khoảng trống
 
 #### Significance / Ý nghĩa
 
-> **EN:** Quantum Mechanics lacks not just a measurement theory — it lacks the **registration architecture** whose source model Buddhist Epistemology has already built. VVV-QMRF provides 16 postulates to fill that gap.<br/>
-> **VN:** Cơ học Lượng tử không chỉ thiếu một lý thuyết đo lường — nó thiếu **kiến trúc ghi nhận** mà mô hình nguồn trong Nhận thức luận Phật giáo đã xây dựng. VVV-QMRF cung cấp 16 tiên đề để lấp đầy khoảng trống đó.
+> **EN:** Quantum Mechanics lacks not just a measurement theory — it lacks the **registration architecture** whose source model Buddhist Epistemology helps formalize by analogy. VVV-QMRF provides 16 stable registration postulates and an E17 interface proposal for that gap.<br/>
+> **VN:** Cơ học Lượng tử không chỉ thiếu một lý thuyết đo lường — nó thiếu **kiến trúc ghi nhận** mà mô hình nguồn trong Nhận thức luận Phật giáo giúp hình thức hóa bằng tương đồng cấu trúc. VVV-QMRF cung cấp 16 tiên đề ghi nhận ổn định và đề xuất giao diện E17 cho khoảng trống đó.
 
 ---
 
@@ -471,20 +488,31 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 
 ## Action Plan 1-2-3 / Kế hoạch hành động 1-2-3
 
-This short roadmap keeps future completion work aligned with the current source-of-truth hierarchy and boundary rules.
+**EN:** This short roadmap keeps future completion work aligned with the current source-of-truth hierarchy and boundary rules.
 
-1. **Lock wording and boundary first**
-   - Keep the BIAN status wording fixed as **"20 labels accounted for: 19 active gaps resolved + 1 reserved label"**.
-   - Keep all `N_QM_VVV_XXXXX` nodes explicitly marked as VVV-QMRF extension nodes, not canonical QM nodes.
+**VN:** Lộ trình ngắn này giữ cho các bước hoàn thiện sau này bám đúng thứ bậc source-of-truth và các quy tắc biên.
 
-2. **Add status and traceability to each VVV-QMRF extension node**
-   - Add one status label to each of the 23 VVV-QMRF extension nodes: `complete`, `needs formalization`, `overclaim-sensitive`, or `example-only`.
-   - For each node, verify source category, nearest canonical QM node, BE/BIAN root, and claim strength.
+1. **Lock wording and boundary first / Khóa wording và ranh giới trước**
+   - **EN:** Keep the BIAN status wording fixed as **"20 labels accounted for: 19 active gaps resolved + 1 reserved label"**.
+   - **VN:** Giữ cố định cách viết trạng thái BIAN là **"đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ"**.
+   - **EN:** Keep `E1–E16` marked as stable registration postulates and `E17` marked as a measurement-interface proposal unless the framework files are updated.
+   - **VN:** Giữ `E1–E16` là các tiên đề ghi nhận ổn định và `E17` là đề xuất giao diện phép đo, trừ khi các file framework được cập nhật.
+   - **EN:** Keep all `N_QM_VVV_XXXXX` nodes explicitly marked as VVV-QMRF extension nodes, not canonical QM nodes.
+   - **VN:** Giữ mọi node `N_QM_VVV_XXXXX` được đánh dấu rõ là node mở rộng VVV-QMRF, không phải node QM chuẩn.
 
-3. **Formalize weak nodes before publication-facing use**
-   - Formalize `P_null`, `Ĉ_ext`, `ρ̃`, `ρ_certified`, and `V̂_yava` with minimal equations and explicit proposal labels.
-   - Review weak or overclaim-sensitive nodes before using them in paper-facing or README-facing text.
-   - Only after this step, create the claim-strength table and decide whether diagrams and bridge files belong in active architecture or draft material.
+2. **Maintain node traceability / Duy trì truy vết node**
+   - **EN:** Treat the active VVV-QMRF node range as `N_QM_VVV_00001–00055`, with folded/skipped candidates documented in the node table.
+   - **VN:** Xem dải node VVV-QMRF đang hoạt động là `N_QM_VVV_00001–00055`, với các candidate đã gộp/bỏ qua được ghi trong bảng node.
+   - **EN:** For each node, preserve source category, nearest canonical QM node, BE/BIAN root, and claim strength.
+   - **VN:** Với mỗi node, giữ nguyên category nguồn, node QM chuẩn gần nhất, gốc BE/BIAN, và mức mạnh của claim.
+
+3. **Formalize weak nodes before publication-facing use / Hình thức hóa node yếu trước khi dùng trong văn bản công bố**
+   - **EN:** Keep proposed objects such as `P_null`, `Ĉ_ext`, `ρ̃`, `ρ_certified`, and `V̂_yava` explicitly labeled as registration-layer proposals unless fully formalized.
+   - **VN:** Giữ các đối tượng đề xuất như `P_null`, `Ĉ_ext`, `ρ̃`, `ρ_certified`, và `V̂_yava` được ghi rõ là đề xuất tầng ghi nhận, trừ khi đã được hình thức hóa đầy đủ.
+   - **EN:** Review weak or overclaim-sensitive nodes before using them in paper-facing or README-facing text.
+   - **VN:** Rà soát các node yếu hoặc nhạy cảm với overclaim trước khi dùng trong văn bản hướng đến paper hoặc README.
+   - **EN:** Only after this step, decide whether diagrams and bridge files belong in active architecture or draft material.
+   - **VN:** Chỉ sau bước này mới quyết định các diagram và bridge file thuộc kiến trúc đang hoạt động hay tài liệu nháp.
 
 ---
 
@@ -495,16 +523,19 @@ This short roadmap keeps future completion work aligned with the current source-
   title   = {VVV-QMRF: Quantum Measurement Registration Framework},
   author  = {VietVunVut (Viet - Nguyen Xuan)},
   year    = {2026},
-  note    = {VVV-QMRF §WP-2.0, Stable Final},
+  note    = {VVV-QMRF §WP-2.0 plus E17 research addendum, active research snapshot},
   url     = {https://github.com/AIhugART/buddhist-epistemology-quantum-measurement}
 }
 ```
+
+**VN:** Mục trích dẫn này ghi VVV-QMRF như một technical report năm 2026, gồm §WP-2.0 và phụ lục nghiên cứu E17, ở trạng thái ảnh chụp nghiên cứu đang hoạt động.
 
 ---
 
 ## Inspiration / Nguồn cảm hứng
 
-Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*)
+**EN:** Sun Wu (commonly called Sun Tzu) — author of *The Art of War*.<br/>
+**VN:** Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*).
 
 > *"Biết người biết ta, trăm trận trăm thắng."*  
 > *"Know yourself and know your enemy, and you will never be defeated."*  
@@ -514,11 +545,12 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 
 ## Version History / Lịch sử Phiên bản
 
-| Version | Working Sessions (GMT+7) | Notes |
-|:-------:|--------------------------|-------|
-| **v1** | 2026-05-10, 2026-05-11, before 02:00:00 2026-05-12 | Initial release — 7 Postulates (E1–E7), 2 Lemmas (S1-Λ, S2-Δ), 20 labels accounted for: 19 active gaps resolved + 1 reserved label |
-| **v2** | after 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 20 labels accounted for: 19 active gaps resolved + 1 reserved label |
-| **v3** | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. |
+| Version / Phiên bản | Working Sessions (GMT+7) / Phiên làm việc | Notes / Ghi chú |
+|:-------------------:|--------------------------------------------|-----------------|
+| **v1** | 2026-05-10, 2026-05-11, before / trước 02:00:00 2026-05-12 | Initial release — 7 Postulates (E1–E7), 2 Lemmas (S1-Λ, S2-Δ), 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Bản phát hành đầu — 7 tiên đề (E1–E7), 2 bổ đề (S1-Λ, S2-Δ), đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ |
+| **v2** | after / sau 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Khung mở rộng — 16 tiên đề (E1–E16), 15 phạm trù (Cat 01–15), đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ |
+| **v3** | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. / Đổi tên dự án chính thức từ tên cũ `VVV-EQM` sang tên công khai mới `VVV-QMRF`. Lý do RCA: dùng `registration-state update` / `cập nhật trạng thái ghi nhận` cho cập nhật phía `K` vượt khỏi nhận thức con người; chỉ dùng `detector response` cho phản ứng vật lý của máy đo. |
+| **v4 / v2.1 snapshot** | 2026-05-16 | Active research snapshot — E1–E16 remain stable registration postulates; E17 is documented as a measurement-interface proposal separating physical `ρ` transition from `K`-side registration-state update. / Ảnh chụp nghiên cứu đang hoạt động — E1–E16 vẫn là các tiên đề ghi nhận ổn định; E17 được ghi là đề xuất giao diện phép đo tách chuyển đổi vật lý `ρ` khỏi `registration-state update` phía `K`. |
 
 ## Research Timeline / Dòng thời gian nghiên cứu
 
@@ -528,21 +560,29 @@ Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh
 | Main research / Nghiên cứu chính | 09:00:00 2026-05-11 (24h) | Claude Opus 4.6, Gemini 3.1 pro (Google Antigravity IDE) |
 | Revision research / Nghiên cứu chỉnh sửa | 08:00:00 2026-05-12 | Claude Opus 4.6, Gemini 3.1 pro (Google Antigravity IDE) |
 | Public research / Công bố nghiên cứu | 13:10:00 2026-05-12 | — |
-| v3 rename update / Cập nhật đổi tên v3 | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. |
+| v3 rename update / Cập nhật đổi tên v3 | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. / Đổi tên dự án chính thức từ tên cũ `VVV-EQM` sang tên công khai mới `VVV-QMRF`. Lý do RCA: dùng `registration-state update` / `cập nhật trạng thái ghi nhận` cho cập nhật phía `K` vượt khỏi nhận thức con người; chỉ dùng `detector response` cho phản ứng vật lý của máy đo. |
+| README RCA refresh / Cập nhật README theo RCA | 2026-05-16 | README aligned with active codebase: E17 proposal, ρ/K measurement-interface boundary, active VVV-QMRF node table, and high-school course directory. / README được căn chỉnh với codebase đang hoạt động: đề xuất E17, ranh giới giao diện phép đo ρ/K, bảng node VVV-QMRF đang hoạt động, và thư mục khóa học phổ thông. |
 
 ---
 
 ## Contact & Sponsorship / Liên hệ & Tài trợ
 
-**Liên hệ:** VietVunVut (Viet - Nguyen Xuan)  
-**Số điện thoại:** +84 908 329 666 (VN)
+**Contact / Liên hệ:** VietVunVut (Viet - Nguyen Xuan)<br/>
+**Phone / Số điện thoại:** +84 908 329 666 (VN)
 
-**Tài trợ:** Do việc nghiên cứu dựa vào sức mạnh tính toán của AI compute nên tiêu tốn rất nhiều token, quý vị có thể tài trợ cho tôi qua hình thức: PayPal: `vietvunut`.
+**Sponsorship / Tài trợ:**
 
-Tôi xin ghi nhận sự hỗ trợ của quý vị và xin chân thành cám ơn. Tất cả vì sự tiến bộ của Nhân loại.
+**EN:** This research depends heavily on AI compute and consumes many tokens. If you would like to support the work, you can sponsor via PayPal: `vietvunut`.
+
+**VN:** Do việc nghiên cứu dựa vào sức mạnh tính toán của AI compute nên tiêu tốn rất nhiều token, quý vị có thể tài trợ cho tôi qua hình thức PayPal: `vietvunut`.
+
+**EN:** I gratefully acknowledge your support. All for the progress of humanity.<br/>
+**VN:** Tôi xin ghi nhận sự hỗ trợ của quý vị và xin chân thành cám ơn. Tất cả vì sự tiến bộ của Nhân loại.
 
 ---
 
 *VietVunVut (2026). VVV-QMRF: Quantum Measurement Registration Framework — A Structural Analysis Grounded in Buddhist Pramāṇa Epistemology.*
+
+*VN: VietVunVut (2026). VVV-QMRF: Khung Ghi nhận Đo lường Lượng tử — Phân tích Cấu trúc dựa trên Nhận thức luận Phật giáo Pramāṇa.*
 
 © 2026 VietVunVut. All Rights Reserved.
