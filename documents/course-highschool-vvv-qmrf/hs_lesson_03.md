@@ -1,0 +1,157 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
+# Bài 03 — Bốn "postulates" của "Quantum Mechanics"
+
+Chào các em! Bài này giúp ta hiểu nền nhà trước khi xây thêm tầng ghi nhận. Nền nhà đó là "Standard Quantum Mechanics" với các "postulates" cơ bản.
+
+---
+
+## 1. Mục tiêu bài học
+
+Sau bài này, các em có thể:
+
+1. Biết bốn nhóm ý chính của "Quantum Mechanics" chuẩn.
+2. Hiểu VVV-QMRF không phá bốn nhóm ý này.
+3. Thấy chỗ VVV-QMRF bổ sung: tầng ghi nhận của phép đo.
+
+---
+
+## 2. RCA: vì sao phải học phần này?
+
+**Triệu chứng:** Nếu nghe nói VVV-QMRF thêm 16–17 tiên đề ghi nhận, ta dễ tưởng nó thay thế vật lý lượng tử.
+
+**5 Whys ngắn:**
+
+1. Vì sao dễ hiểu sai? Vì chữ "postulate" nghe giống như đang xây một vật lý mới.
+2. Vì sao không được hiểu như vậy? Vì VVV-QMRF giữ nguyên lõi tính toán của "Quantum Mechanics".
+3. Vì sao cần nhắc bốn "postulates"? Để biết phần nào thuộc vật lý chuẩn.
+4. Vì sao cần tách tầng? Để không trộn xác suất vật lý với ghi nhận kết quả.
+5. Gốc vấn đề là gì? Nhầm giữa **physical layer** và **registration layer**.
+
+---
+
+## 3. Bài giảng chính
+
+Ở mức phổ thông, ta có thể hiểu bốn phần lớn của "Quantum Mechanics" như sau:
+
+### 3.1. Trạng thái
+
+Hệ lượng tử có một trạng thái vật lý. Trong dự án này, ta thường ký hiệu trạng thái vật lý bằng `ρ`.
+
+Ví dụ dễ hiểu: giống như một hồ sơ mô tả "hệ đang có những khả năng nào".
+
+### 3.2. Đại lượng đo được
+
+Muốn đo điều gì, ta cần một cách biểu diễn đại lượng đó. Trong vật lý lượng tử, các đại lượng đo được gắn với toán tử hoặc tập phép đo.
+
+Ví dụ: đo vị trí, đo spin, đo năng lượng.
+
+### 3.3. Xác suất kết quả đo
+
+"Quantum Mechanics" cho ta công thức tính xác suất các kết quả có thể xuất hiện. Đây là phần rất mạnh và đã được kiểm nghiệm rộng rãi.
+
+### 3.4. Tiến hóa theo thời gian
+
+Nếu không đo, hệ lượng tử tiến hóa theo quy luật động lực học. Khi đo, trạng thái vật lý có thể được cập nhật theo kết quả.
+
+---
+
+## 4. VVV-QMRF đứng ở đâu?
+
+VVV-QMRF không nói:
+
+```text
+Bỏ bốn phần trên đi.
+```
+
+VVV-QMRF nói:
+
+```text
+Bốn phần trên rất quan trọng, nhưng chưa nói đủ về trạng thái ghi nhận K.
+```
+
+Vậy ta có thể hình dung:
+
+```text
+Standard QM: ρ, phép đo, xác suất, ρ_after
+VVV-QMRF: thêm K_before → K_after
+```
+
+---
+
+## 5. Công thức dễ hiểu
+
+Một sơ đồ an toàn là:
+
+```text
+Standard QM tính: xác suất kết quả o từ trạng thái ρ
+VVV-QMRF hỏi: kết quả o làm K thay đổi thế nào?
+```
+
+Vậy hai câu hỏi khác nhau:
+
+```text
+Câu hỏi vật lý: o có xác suất bao nhiêu?
+Câu hỏi ghi nhận: o được ghi nhận ra sao?
+```
+
+---
+
+## 6. Minh họa dễ nhớ
+
+Hãy tưởng tượng một cuộc thi bắn cung:
+
+- Luật vật lý mô tả mũi tên bay thế nào.
+- Bảng điểm ghi nhận mũi tên trúng vòng mấy điểm.
+
+Không thể lấy bảng điểm để thay thế đường bay của mũi tên. Nhưng nếu không có bảng điểm, cuộc thi không có kết quả được ghi nhận.
+
+VVV-QMRF giống như phần nghiên cứu **bảng điểm ghi nhận**, không phải phần thay thế đường bay vật lý.
+
+---
+
+## 7. Câu hỏi trắc nghiệm dễ thương
+
+**Câu 1.** VVV-QMRF có thay thế "Quantum Mechanics" chuẩn không?
+
+A. Không  
+B. Có, thay hết  
+C. Chỉ thay vào giờ ra chơi  
+D. Chỉ dùng để vẽ tranh
+
+**Câu 2.** `ρ` trong bài này là gì?
+
+A. Trạng thái vật lý lượng tử  
+B. Một loại bánh  
+C. Tên nhân vật hoạt hình  
+D. Ký hiệu điểm danh
+
+**Câu 3.** VVV-QMRF thêm câu hỏi nào?
+
+A. Kết quả được ghi nhận như thế nào  
+B. Ăn gì cho bữa trưa  
+C. Vì sao mây màu trắng  
+D. Cách sạc điện thoại nhanh
+
+**Câu 4.** Bốn "postulates" thuộc tầng nào?
+
+A. Tầng vật lý chuẩn của "Quantum Mechanics"  
+B. Tầng truyện cổ tích  
+C. Tầng nấu ăn  
+D. Tầng thời trang
+
+**Câu 5.** So sánh bắn cung trong bài giúp hiểu gì?
+
+A. Đường bay vật lý khác với bảng điểm ghi nhận  
+B. Mũi tên biết suy nghĩ  
+C. Bảng điểm làm mũi tên bay  
+D. Không cần luật chơi
+
+**Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
+
+---
+
+## 8. Nguồn liên quan trong dự án
+
+- [System Quantum Measurement](../../SYSTEM_Quantum_Measurement/system_qm_full.md)
+- [Sơ đồ VVV-QMRF và Standard QM](../research_documents/vvv-qmrf/VVV_QMRF_vs_Standard_QM_system_diagram.md)
