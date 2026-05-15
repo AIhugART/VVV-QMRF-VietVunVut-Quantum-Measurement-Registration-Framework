@@ -28,6 +28,22 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **EN:** Laozi (Chinese: 老子; pinyin: Lǎozǐ) — legendary Chinese philosopher and author of the *Dao De Jing*; Sun Wu (commonly called Sun Tzu) — author of *The Art of War*; Steve Jobs — co-founder of Apple Inc.<br/>
 **VN:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại của Trung Quốc, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc.
 
+## Research Methodology / Phương pháp Nghiên cứu
+
+**EN:** This framework was developed using human-directed AI research.
+
+- **Author:** designed the research questions, framework architecture, and decision protocol.
+- **Decision protocol:** 3-round RCA, 5-Why evaluation, and scoring with a ≥3.5/5 threshold.
+- **AI tools:** Claude Opus 4.6, Codex, Gemini 3.1 Pro, and DeepSeek V4 Pro executed within the author-defined protocol.
+- **Architectural decisions:** all architectural decisions were made by the author.
+
+**VN:** Khung này được phát triển bằng "human-directed AI research" / nghiên cứu AI do con người định hướng.
+
+- **Tác giả:** thiết kế câu hỏi nghiên cứu, kiến trúc khung, và giao thức ra quyết định.
+- **Giao thức ra quyết định:** 3 vòng "RCA", đánh giá "5-Why", và chấm điểm với ngưỡng ≥3.5/5.
+- **Công cụ AI:** Claude Opus 4.6, Codex, Gemini 3.1 Pro, và DeepSeek V4 Pro thực thi trong giao thức do tác giả định nghĩa.
+- **Quyết định kiến trúc:** mọi quyết định kiến trúc đều do tác giả thực hiện.
+
 ## The Central Question / Câu Hỏi Trung Tâm
 
 **EN:** When does a physical event become a registered measurement event?<br/>
