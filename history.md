@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Work History
 # Lá»‹ch sá»­ lÃ m viá»‡c há»‡ thá»‘ng VVV-QMRF
 
-**Last updated:** 2026-05-14T22:36+07:00<br/>
+**Last updated:** 2026-05-15T17:00+07:00<br/>
 **Scope:** Historical record of work completed, system milestones, and VVV-QMRF concept nodes created.<br/>
 **Status:** Historical summary only; not a source of truth for node definitions.
 
@@ -204,9 +204,114 @@ This history is derived from these active project files:
 - **Highest priority advisory:** ADV-12 (index section missing Cat 10â€“15 grouping).
 - Generated `rca_audit_full_categories_01_15.md` as consolidated report.
 
+### 2026-05-15T09:00+07:00 — Framework Folder RCA Audit (Opus 4.6 Thinking)
+
+**Auditor:** Google Gemini — Opus 4.6 Thinking (Antigravity agent)  
+**Method:** Line-by-line logic verification of all 19 files in `documents/research_documents/framework/` (excluding `achives/`), cross-checked against standard QM physics, Buddhist Epistemology source fidelity, internal cross-file consistency, and CLAUDE.md boundary rules.  
+**Files audited:** index.md, formal_registration_state_measurement_model.md, E01–E17 postulate files.
+
+**Discovered 22 issues (C1–C3 critical, M1–M11 moderate, m1–m8 minor):**
+
+| ID | File | Severity | Description |
+|:--:|:-----|:--------:|:------------|
+| **C-1** | E01 L34 | 🔴 CRITICAL | "There is no chain to begin with" — claims physical von Neumann chain dissolved from K-side. Violates ρ/K boundary. Fix: add "at the registration layer" qualifier. |
+| **C-2** | E01 L238 vs E06 L157 | 🔴 CRITICAL | Both claim to be "deepest postulate". Dependency graph confirms E06→E01, so E06 is architecturally deeper. E01 L238 is wrong. |
+| **C-3** | E09 L49 | 🔴 CRITICAL | bhránti cell `{H_int=0, ΔI>0}` conflicts with E11 IFSI (same cell = valid measurement). Fix: add qualifier "no valid superposition grounding." |
+| **M-1** | E01 L199 | 🟠 MODERATE | "Resolves Wigner's Friend" at Class D — should be Class C or scoped to K-side. |
+| **M-2** | E02 L51 | 🟠 MODERATE | `M ≡ r` without temporal qualification — could read as predetermination, conflicting with E16 SDS. |
+| **M-3** | E03 L35 | 🟠 MODERATE | "replaced" Heisenberg cut — K-side postulate cannot replace a physical demarcation. Should say "reframed." |
+| **M-4** | E04 L31 | 🟠 MODERATE | Claims weak/projective differ only in symbolization degree — physically they differ in coupling strength (g→0 vs strong). |
+| **M-5** | E05 L35 | 🟠 MODERATE | "specifies what decoherence selects" — einselection is physical (system-environment Hamiltonian). Should say "provides K-side description of." |
+| **M-6** | E06 L35 | 🟠 MODERATE | Same "dissolved" Heisenberg cut overclaim as E03. Same fix. |
+| **M-7** | E08 L31 | 🟠 MODERATE | Override trigger `⟨λ₂|λ₁⟩=0` needs same-observable constraint; otherwise non-commuting measurements always trigger override. |
+| **M-8** | E10 L47 | 🟠 MODERATE | C3 demands strictly zero false positive — physically unrealizable. Needs "idealized limit" qualifier. |
+| **M-9** | E11 L62 | 🟠 MODERATE | Calls K-side update "wavefunction collapse" — contradicts ρ/K separation. Should use "registration-state update." |
+| **M-10** | E12 L29 | 🟠 MODERATE | "Transcendental" framing of weak values overclaims; anomalous weak values are standard QM, not epistemic mystery. |
+| **M-11** | E17 L108 | 🟠 MODERATE | K=(A,R,C,V) implicitly assumes cognitive architecture; E06 states registering system need not be conscious. Needs non-cognitive note. |
+| **m-1** | E01 L240 | 🟡 MINOR | MWI "partial compatibility" unjustified. |
+| **m-2** | E02 L124 | 🟡 MINOR | E2→E7 link not confirmed by E07. |
+| **m-3** | E03 L164 | 🟡 MINOR | Symbol C(I) vs L(I) mismatch in assertion table. |
+| **m-4** | E04 L125 | 🟡 MINOR | Contradictory "should be created" / "✅ Created" in same section. |
+| **m-5** | E07 L158 | 🟡 MINOR | Informal paraphrase attributed as QM deficit. |
+| **m-6** | E08 L67 | 🟡 MINOR | "Weight" introduced but never formally defined. |
+| **m-7** | E10 L18 | 🟡 MINOR | "Necessary and sufficient" claimed but sufficiency not proven. |
+| **m-8** | E15 L74 | 🟡 MINOR | "Complete" conflates with EPR completeness meaning. |
+
+**Files with zero issues (5/19):** index.md, formal_registration_state_measurement_model.md, E13, E14, E16.
+
+**Root cause pattern:** Postulate prose statements violate the ρ/K boundary rules that the framework itself correctly defines in the formal model and E17. The boundary *architecture* is sound; the boundary *language* in individual postulates is not.
+
+**Overall assessment:** Framework structural integrity is HIGH. The 3 critical issues and all 11 moderate boundary issues (M-1 to M-11) have been successfully patched. The text now clearly maintains the ρ/K epistemic boundary without overclaiming physical equivalence.
+
+**Actions taken (2026-05-15 11:00):** Applied patches for all 11 moderate issues:
+- **E01 (M-1):** Downgraded Wigner's Friend claim to Class C and scoped to K-side registration framing only.
+- **E02 (M-2):** Added temporal qualification to `M ≡ r` to prevent predetermination reading.
+- **E03 (M-3), E04 (M-4), E05 (M-5), E06 (M-6), E10 (M-8), E11 (M-9):** Previously patched in an earlier pass to fix "replace" / physical overclaims.
+- **E08 (M-7):** Added same-observable constraint to the retroactive override trigger `⟨λ₂|λ₁⟩=0`.
+- **E12 (M-10):** Reframed transcendental claim; clarified anomalous weak values are standard QM.
+- **E17 (M-11):** Added note clarifying K=(A,R,C,V) components are functional stages, not restricted to cognitive systems.
+**Report:** `framework_rca_audit.md` (artifacts).
+
+### 2026-05-15T17:00+07:00 — Meta-Architecture Folder RCA Audit (Opus 4.6 Thinking)
+
+**Auditor:** Google Gemini — Opus 4.6 Thinking (Antigravity agent)  
+**Method:** Line-by-line logic verification of all 7 files in `documents/research_documents/meta_architecture/` (excluding `achives/`), cross-checked against framework/ postulate files (E1–E17), category/ files (Cat 01–15), standard QM physics, Buddhist Epistemology source fidelity, and internal cross-file consistency.  
+**Files audited:**
+- F1: `bian_01_registration_establishment.md` (330 lines)
+- F2: `class_x_gap_triage.md` (386 lines)
+- F3: `gap_classification_system.md` (376 lines)
+- F4: `registration_layer_formalization.md` (111 lines)
+- F5: `registration_natural_interface_principle.md` (309 lines)
+- F6: `two_strongest_structural_convergences.md` (179 lines)
+- F7: `wigners_friend_registration_layer_mapping.md` (73 lines)
+
+**Discovered 31 issues (4 High, 17 Medium, 7 Low):**
+
+| ID | File | Severity | Description |
+|:--:|:-----|:--------:|:------------|
+| **M26** | F6 L28 | 🔴 HIGH | "Structurally identical" overclaim — Niḥsvabhāvatā covers all phenomena (ontological); Bell's theorem covers quantum observables only (physical). Different domain quantifiers → structural **analogy**, not identity. |
+| **M27** | F6 L87 | 🔴 HIGH | Same scope error: "same logical structure" while ∀x ≠ ∀quantum-observables. |
+| **M19** | F4 L25 | 🔴 HIGH | Abstract references "7 Postulates (E1–E7) + 2 Lemmas (S1-Λ, S2-Δ)" — severely outdated. Current framework has E1–E17. S2-Δ is a legacy ghost not documented elsewhere. |
+| **M22** | F4 L68 | 🔴 HIGH | Registration Lock C defined as C: H→K (Hilbert→K-space). Should be intra-K operation (K_pre→K_locked). H→K is the measurement interaction boundary, not the lock. |
+| **M01** | F1 L36 | 🟡 MED | MIP derivation claimed as logical consequence of BIAN-1; actually an independent axiom **motivated** by BIAN-1. |
+| **M05** | F1 L229 | 🟡 MED | References E1–E7; should be E1–E17. |
+| **M08** | F2 L157 | 🟡 MED | BIAN-8 edge count table: "Weak=1" but §2b lists 0 Weak edges — inconsistency. |
+| **M09** | F2 L160 | 🟡 MED | Misleading strength comparison BIAN-1 vs BIAN-8 — different classification paths (B vs A), not strength ranking. |
+| **M15** | F3 L99 | 🟡 MED | Class A count = 10 in §2b but §3a table shows only 9 BIANs (missing BIAN-8→E13 row). |
+| **M16** | F3 L149 | 🟡 MED | Text says "9 Class A gaps" — should be 10. |
+| **M18** | F3 L351 | 🟡 MED | Category split "7+7=14" but 15 categories exist — missing Cat 14. |
+| **M21** | F4 L64 | 🟡 MED | Pipeline shorthand I→ε→Λ→r skips E5 (Ā) and E3 (V̂). |
+| **M23** | F4 L101 | 🟡 MED | S2-Δ called "Lemma" but current architecture has E13 as Temporal Discontinuity Registration Postulate. Legacy ghost. |
+| **M24** | F5 L189 | 🟡 MED | ENI lists S2 joints as "Open — needs RCA" but F3 §4b already classified them as CLOSED (not ENI candidates). |
+| **M25** | F5 L156 | 🟡 MED | Claims ENI first in Information Theory — debatable (Shannon channel maps exist). |
+| **M28** | F6 L99 | 🟡 MED | Arthakriyā dual meaning omitted (ontological + epistemological). |
+| **M29** | F6 L135 | 🟡 MED | Attributes pragmatism to all QM — applies mainly to QBism, not Copenhagen/standard. |
+| **M30** | F7 L27 | 🟡 MED | "Postulate 3 (Collapse)" — ambiguous between standard QM P3 and VVV-QMRF E3. |
+| + 7 Low items | Various | 🟢 LOW | Minor counting, labeling, and terminology precision issues. |
+
+**Per-file grades:**
+
+| File | Grade | Key Issue |
+|:----:|:-----:|:----------|
+| F7 — Wigner's Friend | **A-** | Best file. Clean mapping, good ρ/K boundary disclaimer. |
+| F2 — Class X Triage | **B+** | Strong analysis. Minor edge-count inconsistency. |
+| F3 — Gap Classification | **B+** | Most comprehensive. 9→10 count mismatch, Cat 14 off-by-one. |
+| F1 — BIAN-01 Establishment | **B** | Solid but stale cross-refs (E1-E7 → E1-E17). |
+| F5 — ENI Principle | **B** | S2 joint status contradicts F3. |
+| F6 — Convergences | **C** | Core overclaim: "identical" → should be "analogous". |
+| F4 — Formalization | **D** | Severely outdated. Major revision required. |
+
+**Top 3 priority fixes:**
+1. F6: Downgrade "structurally identical" → "structurally analogous" (scope mismatch)
+2. F4: Major revision — update E1-E7→E1-E17, resolve S2-Δ ghost, fix C operator domain
+3. F1/F3/F5: Sync all postulate/category counts to E1–E17 / Cat 01–15
+
+**Remediation status:** ⏳ Pending — audit report generated, no patches applied yet.  
+**Report:** [rca_audit_meta_architecture.md](documents/research_documents/achives/review/rca_audit_meta_architecture.md)
+
 ---
 
-## 5. Completed Work / Nhá»¯ng viá»‡c Ä‘Ã£ lÃ m
+## 5. Completed Work / Những việc đã làm
 
 ### 5.1. Source-of-truth structure
 
