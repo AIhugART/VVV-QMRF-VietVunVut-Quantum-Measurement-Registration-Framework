@@ -18,7 +18,7 @@ Danh sÃ¡ch nÃ y lÆ°u láº¡i tiáº¿n trÃ¬nh há»c táº­p, thá»
 - **TÃ³m táº¯t ná»™i dung:** Giáº£i thÃ­ch váº¥n Ä‘á» Ä‘o lÆ°á»ng á»Ÿ má»©c phá»• thÃ´ng, phÃ¢n biá»‡t kháº£ nÄƒng lÆ°á»£ng tá»­, káº¿t quáº£ Ä‘o vÃ  tráº¡ng thÃ¡i ghi nháº­n.
 - **TÃ i liá»‡u vÃ  liÃªn káº¿t liÃªn quan:**
   - [Ná»™i dung bÃ i há»c: hs_lesson_02.md](./hs_lesson_02.md)
-  - [Formal Epistemic Measurement Model](../research_documents/framework/formal_registration_state_measurement_model.md)
+  - [Formal Registration-State Measurement Model](../research_documents/framework/vvv_qmrf_framework_formal_registration_state_measurement_model.md)
 
 ### BÃ i 03: Bá»‘n "postulates" cá»§a "Quantum Mechanics"
 - **Thá»i gian lÆ°u:** 2026-05-14 17:01:15 (GMT+7)
@@ -32,7 +32,7 @@ Danh sÃ¡ch nÃ y lÆ°u láº¡i tiáº¿n trÃ¬nh há»c táº­p, thá»
 - **TÃ³m táº¯t ná»™i dung:** Giáº£i thÃ­ch `p_QM(o) = Tr(E_o Ï)` nhÆ° cÃ´ng thá»©c xÃ¡c suáº¥t váº­t lÃ½ vÃ  phÃ¢n biá»‡t nÃ³ vá»›i cÃ´ng thá»©c cáº­p nháº­t ghi nháº­n `K_after = U_K(K_before, o)`.
 - **TÃ i liá»‡u vÃ  liÃªn káº¿t liÃªn quan:**
   - [Ná»™i dung bÃ i há»c: hs_lesson_04.md](./hs_lesson_04.md)
-  - [Formal Epistemic Measurement Model](../research_documents/framework/formal_registration_state_measurement_model.md)
+  - [Formal Registration-State Measurement Model](../research_documents/framework/vvv_qmrf_framework_formal_registration_state_measurement_model.md)
 
 ### BÃ i 05: PhÃ¢n biá»‡t `Ï` vÃ  `K`
 - **Thá»i gian lÆ°u:** 2026-05-14 17:01:15 (GMT+7)

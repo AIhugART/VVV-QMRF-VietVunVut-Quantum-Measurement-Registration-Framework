@@ -22,8 +22,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | Observer as process | Registering-System-as-Process | 5/5 | Current E6 framework terminology avoids human-only observer framing. |
 | Cognition of Absence | Validated Absence Registration | 5/5 | Current Category 13 and E14 use validated absence registration. |
 | `RCA_BIAN1_new_epistemic.md` | Registration Natural Interface derivation artifact (legacy filename retained) | 3.5/5 | External artifact name is preserved for traceability while GCS uses registration naming. |
-| `epistemic_measurement_pipeline.md` | registration measurement pipeline (legacy filename retained) | 3.5/5 | File name is not changed; content role is the K-side registration pipeline. |
-| `observer_ontological_foundation.md` | registering-system ontological foundation (legacy filename retained) | 3.5/5 | File name is not changed; VVV-QMRF terminology uses registering system rather than human-only observer framing. |
+| `vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md` | Registration-State Update Pipeline | 5/5 | Current S1 synthesis filename; content role is the K-side registration pipeline. |
+| `vvv_qmrf_synthesis_s3_registering_system_as_process_foundation.md` | Registering-System-as-Process Foundation | 5/5 | Current S3 synthesis filename; VVV-QMRF terminology uses registering system rather than human-only observer framing. |
 
 ---
 
@@ -366,9 +366,9 @@ Categories 02, 04, 05, 07, 08, 10, and 12 are **not Class C** — they are Class
 | [BIAN_gap_analysis_ver_01.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/achives/gap/BIAN_gap_analysis_ver_01.md) | 20 BIAN gap definitions |
 | [BIAN_index_SOT.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/gap/BIAN_index_SOT.md) | Node/edge registry |
 | [vvv_qmrf_registration_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/vvv_qmrf_registration_categories_index.md) | Category resolution registry |
-| [epistemic_measurement_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/epistemic_measurement_pipeline.md) | S1 + S1-Λ — legacy filename; registration measurement pipeline |
-| [self_validation_loop.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/self_validation_loop.md) | S2 loop |
-| [observer_ontological_foundation.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/observer_ontological_foundation.md) | S3 hub — legacy filename; registering-system foundation |
+| [vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) | S1 + S1-Λ — Registration-State Update Pipeline |
+| [vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md) | S2 loop |
+| [vvv_qmrf_synthesis_s3_registering_system_as_process_foundation.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/vvv_qmrf_synthesis_s3_registering_system_as_process_foundation.md) | S3 hub — Registering-System-as-Process Foundation |
 
 ---
 

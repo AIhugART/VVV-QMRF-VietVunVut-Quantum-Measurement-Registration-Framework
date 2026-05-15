@@ -19,7 +19,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | Epistemic Natural Interface | Registration Natural Interface / ENI as legacy code | 3.5/5 | ENI is retained as a legacy code, while explanations should mark K-side registration context. |
 | epistemic stages | registration stages | 4/5 | Use when the stages refer to VVV-QMRF's K-side pipeline rather than Buddhist source cognition. |
 | `ENI_epistemic_natural_interface.md` | Registration Natural Interface document (legacy filename retained) | 4/5 | Renamed to `vvv_qmrf_meta_architecture_registration_natural_interface_principle.md`; legacy filename and intermediate filename retained in the header for comparison and traceability. |
-| `epistemic_measurement_pipeline.md` | registration measurement pipeline (legacy filename retained) | 3.5/5 | File name is not changed; ENI role is the K-side registration pipeline. |
+| `vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md` | Registration-State Update Pipeline | 5/5 | Current S1 synthesis filename; ENI role is the K-side registration pipeline. |
 | `RCA_BIAN1_new_epistemic.md` | Registration Natural Interface derivation artifact (legacy filename retained) | 3.5/5 | Preserve external artifact traceability while using registration naming in explanations. |
 
 ---
@@ -297,7 +297,7 @@ ENI:    φᵢ (natural interface)    → general principle covering Λ, κ, and 
 |----------|---------|------|
 | [RCA_BIAN1_verification.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_verification.md) | Full BIAN-1 RCA | Source evidence |
 | [RCA_BIAN1_E8_vs_Lemma.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_E8_vs_Lemma.md) | E8 vs Lemma decision | Resolution path |
-| [epistemic_measurement_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/epistemic_measurement_pipeline.md) | §4d: S1-Λ (legacy filename; registration measurement pipeline) | First ENI instance |
+| [vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) | §4d: S1-Λ (Registration-State Update Pipeline) | First ENI instance |
 | [vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md) | §3: Λ operator | Operator origin |
 | [Jordan_Siddiqi_QM_Measurement_concept_table.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/published_documents/Jordan_Siddiqi_QM_Measurement_concept_table.md) | #12, #17, #29, #51, #57 | QM-side mapping |
 | [vvv_qmrf_registration_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/vvv_qmrf_registration_categories_index.md) | Master Index | Framework context |

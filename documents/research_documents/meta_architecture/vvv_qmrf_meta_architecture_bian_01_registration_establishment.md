@@ -20,7 +20,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | epistemic stages | registration stages | 4/5 | Use when the stages refer to VVV-QMRF's K-side pipeline rather than Buddhist source cognition. |
 | Epistemic Commitment | Registration Lock | 5/5 | Current E3 framework terminology is registration lock. |
 | `BIAN1_epistemic_establishment.md` | BIAN-1 registration establishment (legacy filename retained) | 4/5 | Renamed to `vvv_qmrf_meta_architecture_bian_01_registration_establishment.md`; legacy filename retained for comparison and traceability. |
-| `epistemic_measurement_pipeline.md` | registration measurement pipeline (legacy filename retained) | 3.5/5 | File name is not changed; content role is the K-side registration pipeline. |
+| `vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md` | Registration-State Update Pipeline | 5/5 | Current S1 synthesis filename; content role is the K-side registration pipeline. |
 | `RCA_BIAN1_new_epistemic.md` | Registration Natural Interface derivation artifact (legacy filename retained) | 3.5/5 | External artifact name is preserved for traceability while ENI uses registration naming. |
 
 ---
@@ -65,7 +65,7 @@ BIAN-1 (gap)
 | **Buddhist SOT** | "passed on... in natural manner" (Source doc L207) |
 | **Formalism** | Λ preserves causal content, adds symbolic structure, is natural (not separate operation) |
 | **QM mapping** | κ (measurement strength, J-S #29) parametrizes Λ degree |
-| **Status** | Integrated into `synthesis/epistemic_measurement_pipeline.md §4d` (legacy filename; registration measurement pipeline) |
+| **Status** | Integrated into `synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md §4d` (Registration-State Update Pipeline) |
 | **Cite** | VVV-QMRF §S1-Λ |
 
 **Artifact:** [RCA_BIAN1_verification.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_verification.md)

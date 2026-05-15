@@ -75,7 +75,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | BIAN-19 | âœ… Resolved | Category 07 + E6 (AnÄtmavÄda pipeline) | `category/vvv_qmrf_category_07_e06_registering_system_as_process_framework.md`, `framework/vvv_qmrf_framework_e06_registering_system_as_process_postulate.md` | 2026-05-12 |
 | BIAN-20 | ðŸ”’ Reserved | See BIAN-10 | â€” | â€” |
 
-> **BIAN-1 resolution note:** Î› operator (E4) formally covers the transition gap. N_BE_00010 is the receiver (E5-side), not the transition operator. See `synthesis/epistemic_measurement_pipeline.md Â§4d`. Full decision record inline â†’ **Part 6** (Â§6.1 decision Â· Â§6.2 evidence Â· Â§6.3 node Â· Â§6.4 formalism Â· Â§6.5 pipeline Â· Â§6.6 coverage).
+> **BIAN-1 resolution note:** Î› operator (E4) formally covers the transition gap. N_BE_00010 is the receiver (E5-side), not the transition operator. See `synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md Â§4d`. Full decision record inline â†’ **Part 6** (Â§6.1 decision Â· Â§6.2 evidence Â· Â§6.3 node Â· Â§6.4 formalism Â· Â§6.5 pipeline Â· Â§6.6 coverage).
 
 ---
 

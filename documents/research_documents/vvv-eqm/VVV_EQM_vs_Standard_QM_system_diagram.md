@@ -176,9 +176,9 @@ The boundary is the outcome `o`. Standard QM explains how `o` is physically prob
 
 | Source file | Role in this diagram |
 |---|---|
-| [formal_registration_state_measurement_model.md](research_documents/framework/formal_registration_state_measurement_model.md) | Defines the conservative two-level model: `Ï` transition plus `K` registration-state update. |
-| [epistemic_measurement_pipeline.md](research_documents/synthesis/epistemic_measurement_pipeline.md) | Defines the S1 registration pipeline: `Îµ(M) â†’ Î› â†’ Ä€ â†’ V_yava`; `Ä€` and `V_yava` remain source notation, not physical QM names. |
-| [self_validation_loop.md](research_documents/synthesis/self_validation_loop.md) | Defines the S2 loop: E1 self-certification, E2 self-completion, E7 intrinsic validity. |
+| [vvv_qmrf_framework_formal_registration_state_measurement_model.md](research_documents/framework/vvv_qmrf_framework_formal_registration_state_measurement_model.md) | Defines the conservative two-level model: `Ï` transition plus `K` registration-state update. |
+| [vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md](research_documents/synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) | Defines the S1 registration pipeline: `Îµ(M) â†’ Î› â†’ Ä€ â†’ V_yava`; `Ä€` and `V_yava` remain source notation, not physical QM names. |
+| [vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md](research_documents/synthesis/vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md) | Defines the S2 loop: E1 self-certification, E2 self-completion, E7 intrinsic validity. |
 | [system_qm_full.md](../SYSTEM_Quantum_Measurement/system_qm_full.md) | Provides the Quantum Measurement system nodes and standard measurement concepts. |
 | [system_be_full.md](../SYSTEM_Buddhist_Epistemology/system_be_full.md) | Single RCA SOT for Buddhist Epistemology node and edge definitions. |
 
