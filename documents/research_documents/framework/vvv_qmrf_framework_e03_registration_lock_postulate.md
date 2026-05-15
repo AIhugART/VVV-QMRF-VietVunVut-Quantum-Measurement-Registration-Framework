@@ -1,10 +1,13 @@
-# E3 — Epistemic Commitment Postulate / Tiên đề Cam kết Nhận thức
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+# E3 — Registration Lock Postulate / Tiên đề Khóa Ghi nhận
+# Legacy Name: Epistemic Commitment Postulate / Tiên đề Cam kết Nhận thức / VVV-EQM
+
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
-**Status:** Proposal — Epistemic class D  
+**Status:** Proposal — Registration class D  
 **Lineage:** gap/ (BIAN-5) → category/ (Category 08) → framework/ (E3)
 
 ---
@@ -12,10 +15,10 @@
 ## 1. Postulate Statement / Phát biểu Tiên đề
 
 **English:**
-> A measurement is distinguished from a mere physical interaction by an act of epistemic commitment (determination) that converts a physical correlation into an irreversible epistemic fact.
+> A measurement is distinguished from a mere physical interaction by a registration-lock operation (determination) that converts a physical correlation into an irreversible registration-status fact.
 
 **Vietnamese:**
-> Phép đo được phân biệt với tương tác vật lý thuần túy bởi một hành động cam kết nhận thức (sự kiến lập) chuyển đổi tương quan vật lý thành sự kiện nhận thức không thể đảo ngược.
+> Phép đo được phân biệt với tương tác vật lý thuần túy bởi một thao tác khóa ghi nhận (sự kiến lập) chuyển đổi tương quan vật lý thành sự kiện trạng thái ghi nhận không thể đảo ngược.
 
 ---
 
@@ -25,54 +28,54 @@
 
 In standard QM, P3 does not distinguish a measurement from any other physical interaction. System-meter coupling is a unitary evolution — indistinguishable from any other interaction until someone declares it a "measurement." What makes a measurement a measurement?
 
-E3 answers: measurement requires an act of epistemic commitment — the moment of propositional crystallization at which a cognition becomes an actionable epistemic fact. This is not a physical process but a structural transition from "correlated states" to "definite knowledge."
+E3 answers: measurement requires a registration-lock operation — the moment of propositional crystallization at which a registration becomes actionable and determinate. This is not a physical process but a structural transition from "correlated states" to "determinate registration status."
 
-This derives from the Buddhist concept of Vyavasaya (determinate judgment): the cognitive act of determining that x is the case. Vyavasaya follows perception and involves conceptual structure but is irreducible to mere perception. It is the point at which cognition becomes judgment.
+This derives from the Buddhist concept of Vyavasaya (determinate judgment): the cognitive act of determining that x is the case. Vyavasaya follows perception and involves conceptual structure but is irreducible to mere perception. In VVV-QMRF it functions as the source analogue for registration lock.
 
-The immediate consequence: the Heisenberg cut — the arbitrary boundary between "quantum" and "classical" — is replaced by a formal epistemic boundary. The cut is not where the quantum world ends; it is where epistemic commitment begins.
+The immediate consequence: the Heisenberg cut — the arbitrary boundary between "quantum" and "classical" — is replaced by a formal registration boundary. The cut is not where the quantum world ends; it is where registration lock begins.
 
 ### Vietnamese
 
 Trong QM tiêu chuẩn, P3 không phân biệt phép đo với bất kỳ tương tác vật lý nào khác. Tương tác hệ-máy đo là tiến hóa unitary — không phân biệt được với tương tác khác cho đến khi ai đó tuyên bố nó là "phép đo." Điều gì khiến phép đo là phép đo?
 
-E3 trả lời: phép đo đòi hỏi hành động cam kết nhận thức — khoảnh khắc kết tinh mệnh đề khi nhận thức trở thành sự kiện nhận thức có thể hành động. Đây không phải quá trình vật lý mà là bước chuyển cấu trúc từ "trạng thái tương quan" sang "tri thức xác định."
+E3 trả lời: phép đo đòi hỏi thao tác khóa ghi nhận — khoảnh khắc kết tinh mệnh đề khi ghi nhận trở nên có thể hành động và xác định. Đây không phải quá trình vật lý mà là bước chuyển cấu trúc từ "trạng thái tương quan" sang "trạng thái ghi nhận xác định."
 
-Bắt nguồn từ khái niệm Vyavasaya (phán đoán xác quyết): hành động nhận thức xác định rằng x đúng. Vyavasaya theo sau tri giác, có cấu trúc khái niệm nhưng không thể quy giản về tri giác thuần túy. Đó là điểm nhận thức trở thành phán đoán.
+Bắt nguồn từ khái niệm Vyavasaya (phán đoán xác quyết): hành động nhận thức xác định rằng x đúng. Vyavasaya theo sau tri giác, có cấu trúc khái niệm nhưng không thể quy giản về tri giác thuần túy. Trong VVV-QMRF, nó đóng vai trò tương tự nguồn cho thao tác khóa ghi nhận.
 
-Hệ quả: vết cắt Heisenberg — ranh giới tùy ý giữa "lượng tử" và "cổ điển" — được thay thế bởi ranh giới nhận thức hình thức. Vết cắt không phải nơi thế giới lượng tử kết thúc; mà là nơi cam kết nhận thức bắt đầu.
+Hệ quả: vết cắt Heisenberg — ranh giới tùy ý giữa "lượng tử" và "cổ điển" — được thay thế bởi ranh giới ghi nhận hình thức. Vết cắt không phải nơi thế giới lượng tử kết thúc; mà là nơi khóa ghi nhận bắt đầu.
 
 ---
 
 ## 3. Formal Sketch / Phác thảo Hình thức
 
-### 3a. Framework formalism — C(I) commitment function
+### 3a. Framework formalism — L(I) registration-lock function
 
 ```
 For physical interaction I between system S and apparatus A:
-  I becomes measurement M iff C(I) = 1
-  where C: {interactions} → {0,1} is the commitment function.
+  I becomes measurement M iff L(I) = 1
+  where L: {interactions} → {0,1} is the registration-lock function.
   
-  C(I) = 1 iff the interaction produces an irreversible
-  epistemic state transition in the registering system.
+  L(I) = 1 iff the interaction produces an irreversible
+  registration-state update in the registering system.
 ```
 
 ### 3b. Category 08 formalism — V̂_yava operator
 
 ```
-The Commitment Operator V̂_yava acts on internal correlate M_i:
-  V̂_yava(M_i) = K_i  (definite knowledge state)
+The Registration-Lock Operator V̂_yava acts on internal correlate M_i:
+  V̂_yava(M_i) = K_i  (definite registration state)
   
   Properties:
     (i)   V̂_yava is irreversible
     (ii)  V̂_yava strips uncertainty
-    (iii) V̂_yava produces epistemic closure
+    (iii) V̂_yava produces registration closure
 ```
 
 ### 3c. Equivalence status
 
 | Formalism | Source | Status |
 |-----------|--------|--------|
-| C(I) ∈ {0,1} | Framework E3 | Class D |
+| L(I) ∈ {0,1} | Framework E3 | Class D |
 | V̂_yava | Category 08 | Class D |
 | Equivalence? | Unproven | Class C |
 
@@ -83,8 +86,8 @@ The Commitment Operator V̂_yava acts on internal correlate M_i:
 | Symbol | Meaning EN | Ý nghĩa VN | Domain |
 |--------|-----------|-------------|--------|
 | I | Physical interaction | Tương tác vật lý | Unitary evolution |
-| C(I) | Commitment function | Hàm cam kết | {0,1} |
-| V̂_yava | Commitment operator | Toán tử cam kết | Category 08 |
+| L(I) | Registration-lock function | Hàm khóa ghi nhận | {0,1} |
+| V̂_yava | Registration-lock operator | Toán tử khóa ghi nhận | Category 08 |
 | Vyavasaya | Determinate judgment | Phán đoán xác quyết | Buddhist term |
 
 ---
@@ -138,8 +141,8 @@ Category 08 covers both BIAN-4 (Akara) and BIAN-5 (Vyavasaya). E3 only retains B
 ## 7. Architectural Position / Vị trí Kiến trúc
 
 ```
-E1 (Self-Certification)
- └→ E3 (Epistemic Commitment)  ← THIS POSTULATE
+E1 (Self-Certifying Registration)
+ └→ E3 (Registration Lock)  ← THIS POSTULATE
 ```
 
 | Layer | Document | Role |
@@ -154,7 +157,7 @@ E1 (Self-Certification)
 
 | Component | Class | Evidence |
 |---|---|---|
-| "Epistemic commitment act" | **M** | SOT T2.04 L326 |
+| "Vyavasaya / registration-lock act" | **M** | SOT T2.04 L326 |
 | "Converts correlation to fact" | **M** | SOT T2.04 L326 |
 | "QM merges act/registration" | **M** | SOT T2.04 L327-328 |
 | "Resolves Heisenberg cut" | **D** | Applied consequence |
@@ -166,8 +169,8 @@ E1 (Self-Certification)
 
 ## 9. What E3 Does NOT Claim
 
-1. Not claiming consciousness required — epistemic commitment is structural, not phenomenal.
-2. Not claiming physical interaction insufficient — E3 adds an epistemic layer, not a physical one.
+1. Not claiming consciousness required — registration lock is structural, not phenomenal.
+2. Not claiming physical interaction insufficient — E3 adds a registration layer, not a physical one.
 3. Not interpretation-dependent — compatible with Copenhagen, QBism, RQM.
 
 ---

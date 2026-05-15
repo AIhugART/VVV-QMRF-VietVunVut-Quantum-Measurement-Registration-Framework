@@ -277,4 +277,4 @@ flowchart TD
 
 ---
 
-*Source: BIAN_index_SOT.md (BIAN-16), system_be_full.md (Pramāṇa support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00027-00028), framework/E2_registration_self_completion_postulate.md*
+*Source: BIAN_index_SOT.md (BIAN-16), system_be_full.md (Pramāṇa support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00027-00028), framework/vvv_qmrf_framework_e02_registration_self_completion_postulate.md*

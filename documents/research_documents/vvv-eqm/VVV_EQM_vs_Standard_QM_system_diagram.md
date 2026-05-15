@@ -1,16 +1,16 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Ghi chú phiên bản cũ / Legacy note:** File này thuộc đường dẫn cũ `VVV-EQM` và chỉ giữ để tham chiếu lịch sử. Khi làm việc hiện tại phiên bản VVV-QMRF (after 2026-05-14), bắt buộc phải dùng phiên bản mới tại `documents\research_documents\vvv-qmrf\VVV_QMRF_vs_Standard_QM_system_diagram.md`; nếu phát hiện đang dùng file cũ này, phải tự cập nhật hướng làm việc sang phiên bản mới.
+**Ghi chÃº phiÃªn báº£n cÅ© / Legacy note:** File nÃ y thuá»™c Ä‘Æ°á»ng dáº«n cÅ© `VVV-EQM` vÃ  chá»‰ giá»¯ Ä‘á»ƒ tham chiáº¿u lá»‹ch sá»­. Khi lÃ m viá»‡c hiá»‡n táº¡i phiÃªn báº£n VVV-QMRF (after 2026-05-14), báº¯t buá»™c pháº£i dÃ¹ng phiÃªn báº£n má»›i táº¡i `documents\research_documents\vvv-qmrf\VVV_QMRF_vs_Standard_QM_system_diagram.md`; náº¿u phÃ¡t hiá»‡n Ä‘ang dÃ¹ng file cÅ© nÃ y, pháº£i tá»± cáº­p nháº­t hÆ°á»›ng lÃ m viá»‡c sang phiÃªn báº£n má»›i.
 
 # RCA System Diagram: VVV-EQM vs Standard Quantum Measurement
 
 ## Vietnamese title
 
-Sơ đồ RCA hệ thống VVV-EQM và hệ thống đo lượng tử chuẩn hiện tại
+SÆ¡ Ä‘á»“ RCA há»‡ thá»‘ng VVV-EQM vÃ  há»‡ thá»‘ng Ä‘o lÆ°á»£ng tá»­ chuáº©n hiá»‡n táº¡i
 
 ## Document status
 
-- **Document type:** RCA system diagram / sơ đồ hệ thống RCA
+- **Document type:** RCA system diagram / sÆ¡ Ä‘á»“ há»‡ thá»‘ng RCA
 - **Primary frame:** Buddhist Epistemology
 - **Mapped domain:** Quantum Measurement
 - **Claim level:** Interpretive mapping and formal epistemic model
@@ -24,42 +24,42 @@ Sơ đồ RCA hệ thống VVV-EQM và hệ thống đo lượng tử chuẩn hi
 
 **Symptom:** Diagrams of quantum measurement often compress the physical outcome and the known/validated outcome into one box called "measurement".
 
-**Root cause:** The physical quantum state `ρ` and the registration state `K` are not separated explicitly. This makes it too easy to confuse a physical state transition with a registration-state update.
+**Root cause:** The physical quantum state `Ï` and the registration state `K` are not separated explicitly. This makes it too easy to confuse a physical state transition with a registration-state update.
 
 **Fix:** Draw the systems as two layers:
 
-1. Standard Quantum Measurement keeps the physical layer: `ρ`, `M = {E_o}`, `p_QM(o)`, `o`, and `ρ_after`.
-2. VVV-EQM adds the registration-state layer: `K_before → K_after`, formalized as `K_after = U_K(K_before, o)`.
+1. Standard Quantum Measurement keeps the physical layer: `Ï`, `M = {E_o}`, `p_QM(o)`, `o`, and `Ï_after`.
+2. VVV-EQM adds the registration-state layer: `K_before â†’ K_after`, formalized as `K_after = U_K(K_before, o)`.
 
-**Verification:** The diagram keeps `p_QM(o) = Tr(E_o ρ)` unchanged. Novelty is placed only in `U_K`, not in the Born rule or physical collapse mechanism.
+**Verification:** The diagram keeps `p_QM(o) = Tr(E_o Ï)` unchanged. Novelty is placed only in `U_K`, not in the Born rule or physical collapse mechanism.
 
-## Tiếng Việt
+## Tiáº¿ng Viá»‡t
 
-**Triệu chứng:** Nhiều sơ đồ phép đo lượng tử gom kết quả vật lý và kết quả đã được biết/xác nhận vào một hộp duy nhất gọi là "measurement".
+**Triá»‡u chá»©ng:** Nhiá»u sÆ¡ Ä‘á»“ phÃ©p Ä‘o lÆ°á»£ng tá»­ gom káº¿t quáº£ váº­t lÃ½ vÃ  káº¿t quáº£ Ä‘Ã£ Ä‘Æ°á»£c biáº¿t/xÃ¡c nháº­n vÃ o má»™t há»™p duy nháº¥t gá»i lÃ  "measurement".
 
-**Nguyên nhân gốc:** Trạng thái lượng tử vật lý `ρ` và trạng thái ghi nhận `K` chưa được tách rõ. Vì vậy dễ nhầm chuyển đổi vật lý với "registration-state update" / cập nhật trạng thái ghi nhận.
+**NguyÃªn nhÃ¢n gá»‘c:** Tráº¡ng thÃ¡i lÆ°á»£ng tá»­ váº­t lÃ½ `Ï` vÃ  tráº¡ng thÃ¡i ghi nháº­n `K` chÆ°a Ä‘Æ°á»£c tÃ¡ch rÃµ. VÃ¬ váº­y dá»… nháº§m chuyá»ƒn Ä‘á»•i váº­t lÃ½ vá»›i "registration-state update" / cáº­p nháº­t tráº¡ng thÃ¡i ghi nháº­n.
 
-**Cách sửa:** Vẽ hệ thống thành hai tầng:
+**CÃ¡ch sá»­a:** Váº½ há»‡ thá»‘ng thÃ nh hai táº§ng:
 
-1. Hệ đo lượng tử chuẩn giữ tầng vật lý: `ρ`, `M = {E_o}`, `p_QM(o)`, `o`, và `ρ_after`.
-2. VVV-EQM thêm tầng trạng thái ghi nhận: `K_before → K_after`, hình thức hóa bằng `K_after = U_K(K_before, o)`.
+1. Há»‡ Ä‘o lÆ°á»£ng tá»­ chuáº©n giá»¯ táº§ng váº­t lÃ½: `Ï`, `M = {E_o}`, `p_QM(o)`, `o`, vÃ  `Ï_after`.
+2. VVV-EQM thÃªm táº§ng tráº¡ng thÃ¡i ghi nháº­n: `K_before â†’ K_after`, hÃ¬nh thá»©c hÃ³a báº±ng `K_after = U_K(K_before, o)`.
 
-**Kiểm chứng:** Sơ đồ giữ nguyên `p_QM(o) = Tr(E_o ρ)`. Điểm mới chỉ nằm ở `U_K`, không nằm ở "Born rule" hay cơ chế vật lý của "collapse".
+**Kiá»ƒm chá»©ng:** SÆ¡ Ä‘á»“ giá»¯ nguyÃªn `p_QM(o) = Tr(E_o Ï)`. Äiá»ƒm má»›i chá»‰ náº±m á»Ÿ `U_K`, khÃ´ng náº±m á»Ÿ "Born rule" hay cÆ¡ cháº¿ váº­t lÃ½ cá»§a "collapse".
 
 ---
 
-# 2. Diagram A — Standard Quantum Measurement system
+# 2. Diagram A â€” Standard Quantum Measurement system
 
 ```mermaid
 flowchart LR
-  subgraph SQM["Standard Quantum Measurement system / Hệ đo lượng tử chuẩn hiện tại"]
+  subgraph SQM["Standard Quantum Measurement system / Há»‡ Ä‘o lÆ°á»£ng tá»­ chuáº©n hiá»‡n táº¡i"]
     direction LR
-    rho0["ρ_before<br/>physical quantum state"]
+    rho0["Ï_before<br/>physical quantum state"]
     setting["M = {E_o}<br/>measurement setting / effects"]
-    born["p_QM(o) = Tr(E_o ρ_before)<br/>Born rule"]
+    born["p_QM(o) = Tr(E_o Ï_before)<br/>Born rule"]
     detector["apparatus detector response<br/>physical signal only"]
     outcome["o<br/>outcome / eigenvalue readout"]
-    rho1["ρ_after = ρ_o<br/>standard state update"]
+    rho1["Ï_after = Ï_o<br/>standard state update"]
     registering["registering system<br/>formal black box"]
 
     rho0 --> setting --> born --> outcome --> rho1
@@ -74,31 +74,31 @@ Standard Quantum Measurement has a precise physical-probabilistic structure. Its
 
 ---
 
-# 3. Diagram B — VVV-EQM two-level measurement interface
+# 3. Diagram B â€” VVV-EQM two-level measurement interface
 
 ```mermaid
 flowchart TB
-  subgraph VVV["VVV-EQM two-level measurement interface / Giao diện đo hai tầng"]
+  subgraph VVV["VVV-EQM two-level measurement interface / Giao diá»‡n Ä‘o hai táº§ng"]
     direction TB
-    input["Input<br/>ρ_before + K_before + M"]
+    input["Input<br/>Ï_before + K_before + M"]
 
-    subgraph physical["Physical layer preserved from Standard QM / Tầng vật lý giữ nguyên QM chuẩn"]
+    subgraph physical["Physical layer preserved from Standard QM / Táº§ng váº­t lÃ½ giá»¯ nguyÃªn QM chuáº©n"]
       direction LR
-      rho["ρ_before"]
+      rho["Ï_before"]
       effects["M = {E_o}"]
-      prob["p_QM(o) = Tr(E_o ρ)"]
+      prob["p_QM(o) = Tr(E_o Ï)"]
       response["detector response<br/>physical trace D_o"]
-      rhoupdate["ρ_after = ρ_o"]
+      rhoupdate["Ï_after = Ï_o"]
 
       rho --> effects --> prob --> response --> rhoupdate
     end
 
-    subgraph epistemic["Registration-state layer K / Tầng cập nhật trạng thái ghi nhận K"]
+    subgraph epistemic["Registration-state layer K / Táº§ng cáº­p nháº­t tráº¡ng thÃ¡i ghi nháº­n K"]
       direction LR
       k0["K_before"]
-      eps["ε(M)<br/>pre-symbolic event"]
-      lambda["Λ<br/>symbolization"]
-      akara["Ā<br/>internal encoding"]
+      eps["Îµ(M)<br/>pre-symbolic event"]
+      lambda["Î›<br/>symbolization"]
+      akara["Ä€<br/>internal encoding"]
       vyava["V_yava<br/>registration lock"]
       k1["K_after = U_K(K_before, o)"]
 
@@ -119,12 +119,12 @@ VVV-EQM does not replace the physical layer. It opens the black box between dete
 
 ---
 
-# 4. Diagram C — VVV-EQM self-validation loop
+# 4. Diagram C â€” VVV-EQM self-validation loop
 
 ```mermaid
 flowchart LR
-  E1["E1: σ(M) = 1<br/>self-certification"]
-  E2["E2: M ≡ r<br/>self-completion"]
+  E1["E1: Ïƒ(M) = 1<br/>self-certification"]
+  E2["E2: M â‰¡ r<br/>self-completion"]
   E7["E7: V(M) = 1 by default<br/>intrinsic validity"]
 
   E1 --> E2
@@ -138,15 +138,15 @@ This loop addresses the regress problem at the registration-validity level. It s
 
 ---
 
-# 5. Diagram D — Boundary map between the two systems
+# 5. Diagram D â€” Boundary map between the two systems
 
 ```mermaid
 flowchart LR
-  subgraph STD["Standard QM / QM chuẩn"]
-    std1["ρ_before"] --> std2["M = {E_o}"] --> std3["p_QM(o)=Tr(E_oρ)"] --> std4["o"] --> std5["ρ_after"]
+  subgraph STD["Standard QM / QM chuáº©n"]
+    std1["Ï_before"] --> std2["M = {E_o}"] --> std3["p_QM(o)=Tr(E_oÏ)"] --> std4["o"] --> std5["Ï_after"]
   end
 
-  subgraph VVVK["VVV-EQM addition / Phần VVV-EQM thêm vào"]
+  subgraph VVVK["VVV-EQM addition / Pháº§n VVV-EQM thÃªm vÃ o"]
     kbefore["K_before"] --> uk["U_K(K_before,o)"] --> kafter["K_after"]
   end
 
@@ -157,7 +157,7 @@ flowchart LR
 
 ## RCA note
 
-The boundary is the outcome `o`. Standard QM explains how `o` is physically probable and how `ρ` updates. VVV-EQM explains how `o` becomes registered, classified, and validated as `K_after`.
+The boundary is the outcome `o`. Standard QM explains how `o` is physically probable and how `Ï` updates. VVV-EQM explains how `o` becomes registered, classified, and validated as `K_after`.
 
 ---
 
@@ -167,8 +167,8 @@ The boundary is the outcome `o`. Standard QM explains how `o` is physically prob
 |---|---|---|
 | Diagram level | VVV-EQM adds a registration-state layer to Standard QM. | VVV-EQM replaces Standard QM. |
 | Mathematical level | `K_after = U_K(K_before, o)` can be formalized. | `p_QM(o)` is changed without a new equation. |
-| Physical level | Current status is interpretive unless `δ(o) ≠ 0`. | The framework already gives a new experimentally verified physical theory. |
-| RCA level | Root cause is the hidden mixing of `ρ` and `K`. | The root cause is that QM mathematics is simply wrong. |
+| Physical level | Current status is interpretive unless `Î´(o) â‰  0`. | The framework already gives a new experimentally verified physical theory. |
+| RCA level | Root cause is the hidden mixing of `Ï` and `K`. | The root cause is that QM mathematics is simply wrong. |
 
 ---
 
@@ -176,8 +176,8 @@ The boundary is the outcome `o`. Standard QM explains how `o` is physically prob
 
 | Source file | Role in this diagram |
 |---|---|
-| [formal_epistemic_measurement_model.md](research_documents/framework/formal_epistemic_measurement_model.md) | Defines the conservative two-level model: `ρ` transition plus `K` registration-state update. |
-| [epistemic_measurement_pipeline.md](research_documents/synthesis/epistemic_measurement_pipeline.md) | Defines the S1 registration pipeline: `ε(M) → Λ → Ā → V_yava`; `Ā` and `V_yava` remain source notation, not physical QM names. |
+| [formal_registration_state_measurement_model.md](research_documents/framework/formal_registration_state_measurement_model.md) | Defines the conservative two-level model: `Ï` transition plus `K` registration-state update. |
+| [epistemic_measurement_pipeline.md](research_documents/synthesis/epistemic_measurement_pipeline.md) | Defines the S1 registration pipeline: `Îµ(M) â†’ Î› â†’ Ä€ â†’ V_yava`; `Ä€` and `V_yava` remain source notation, not physical QM names. |
 | [self_validation_loop.md](research_documents/synthesis/self_validation_loop.md) | Defines the S2 loop: E1 self-certification, E2 self-completion, E7 intrinsic validity. |
 | [system_qm_full.md](../SYSTEM_Quantum_Measurement/system_qm_full.md) | Provides the Quantum Measurement system nodes and standard measurement concepts. |
 | [system_be_full.md](../SYSTEM_Buddhist_Epistemology/system_be_full.md) | Single RCA SOT for Buddhist Epistemology node and edge definitions. |
@@ -186,8 +186,9 @@ The boundary is the outcome `o`. Standard QM explains how `o` is physically prob
 
 # 8. Final RCA verification
 
-- **Root cause removed:** The diagram explicitly separates `ρ` and `K`.
-- **Physical boundary preserved:** Standard QM probability remains `p_QM(o) = Tr(E_o ρ)`.
+- **Root cause removed:** The diagram explicitly separates `Ï` and `K`.
+- **Physical boundary preserved:** Standard QM probability remains `p_QM(o) = Tr(E_o Ï)`.
 - **Novelty localized:** VVV-EQM novelty is `U_K`, the registration-state update function.
 - **No category error:** The diagram does not claim that Buddhist Epistemology supplies a new physical collapse mechanism.
 - **Scope respected:** The diagram stays within Buddhist Epistemology as the primary frame and Quantum Measurement as the mapped domain.
+

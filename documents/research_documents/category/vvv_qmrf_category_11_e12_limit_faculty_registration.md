@@ -288,4 +288,4 @@ flowchart TD
 
 ---
 
-*Source: BIAN_index_SOT.md (BIAN-3), system_be_full.md (N_BE_00012), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00048-00050), framework/E12_limit_faculty_registration_postulate.md*
+*Source: BIAN_index_SOT.md (BIAN-3), system_be_full.md (N_BE_00012), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00048-00050), framework/vvv_qmrf_framework_e12_limit_faculty_registration_postulate.md*

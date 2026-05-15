@@ -1,12 +1,13 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# E5 — Internal Encoding Postulate / Tiên đề Mã hóa Nội tại
+# E5 — Internal Representation Encoding Postulate / Tiên đề Mã hóa Biểu diễn Nội tại
+# Legacy Name: Internal Encoding Postulate / Tiên đề Mã hóa Nội tại / VVV-EQM
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
-**Status:** Proposal — Epistemic class D  
+**Status:** Proposal — Registration class D  
 **Lineage:** gap/ (BIAN-4) → category/ (Category 08, Phase 2) → framework/ (E5)
 
 ---
@@ -14,10 +15,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## 1. Postulate Statement / Phát biểu Tiên đề
 
 **English:**
-> A measurement result is internally encoded within the measuring system as a representational state, not merely recorded as an external classical bit.
+> A measurement result is internally encoded within the registering system as a representational state, not merely recorded as an external classical bit.
 
 **Vietnamese:**
-> Kết quả đo được mã hóa nội tại bên trong hệ đo dưới dạng trạng thái biểu diễn, không chỉ đơn thuần được ghi lại dưới dạng bit cổ điển bên ngoài.
+> Kết quả đo được mã hóa nội tại bên trong hệ ghi nhận dưới dạng trạng thái biểu diễn, không chỉ đơn thuần được ghi lại dưới dạng bit cổ điển bên ngoài.
 
 ---
 
@@ -27,7 +28,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 Standard QM treats measurement results as eigenvalues — abstract numbers. P3 specifies what number you get and with what probability, but says nothing about how the result is internally represented within the measuring apparatus. The distinction between "a number appears" and "the apparatus encodes a state" is not formalized.
 
-E5 asserts that after measurement M yields eigenvalue aₖ, the apparatus A enters an internal representational state |Rₖ⟩_A that encodes aₖ within A's internal structure. This is the akara (internal form) of the result. Retrieval of aₖ from |Rₖ⟩_A does not require a second measurement on A.
+E5 asserts that after measurement M yields eigenvalue aₖ, the registering apparatus A enters an internal representational state |Rₖ⟩_A that encodes aₖ within A's internal structure. This is the akara (internal form) of the result. Retrieval of aₖ from |Rₖ⟩_A does not require a second measurement on A.
 
 This derives from the Buddhist concept of Akara (representational form): the form that an object takes within cognition. Cognition does not contact the external object directly but apprehends its akara (intentional image). The akara is the proximate object of every cognition. QM has no equivalent — it specifies output but not how output is internally represented.
 
@@ -64,7 +65,7 @@ After measurement M yields eigenvalue aₖ:
 ```
 The Internal Encoding Operator Â_kāra:
   Â_kāra(D_i) = M_i
-  where D_i = physical detector trace, M_i = internal mental correlate
+  where D_i = physical detector trace, M_i = internal registration correlate
   
   Â_kāra is Phase 2 of the 3-phase Category 08 process:
     Phase 1: Nirvikalpaka (physical trace)  → E4
@@ -90,7 +91,7 @@ The Internal Encoding Operator Â_kāra:
 | \|Rₖ⟩_A | Internal representational state | Trạng thái biểu diễn nội tại | Apparatus Hilbert space |
 | Â_kāra | Internal encoding operator | Toán tử mã hóa nội tại | Category 08 |
 | D_i | Physical detector trace | Vết vật lý trên detector | Classical |
-| M_i | Internal mental correlate | Tương quan tinh thần nội tại | Epistemic |
+| M_i | Internal registration correlate | Tương quan ghi nhận nội tại | Registration |
 | Akara | Internal form/representation | Ảnh tượng nội tại | Buddhist term |
 
 ---
@@ -148,7 +149,7 @@ E4 (Pre-Symbolic Stratum)
  ↓ symbolized into
 E5 (Internal Encoding)  ← THIS POSTULATE
  ↓ committed by
-E3 (Epistemic Commitment)
+E3 (Registration Lock)
 ```
 
 This follows the 3-phase sequence of Category 08:

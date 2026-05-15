@@ -1,12 +1,14 @@
-# E1 — Self-Certification Postulate / Tiên đề Tự chứng nhận
-# Epistemic Postulate for Quantum Measurement / Tiên đề Nhận thức luận cho Phép đo Lượng tử
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+# E1 — Self-Certifying Registration Postulate / Tiên đề Tự chứng Ghi nhận
+# Legacy Name: Self-Certification Postulate / Epistemic Postulate for Quantum Measurement / VVV-EQM
+
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
 **Date:** 2026-05-11  
-**Status:** Proposal — Epistemic class D (Derived, awaiting formal verification)  
+**Status:** Proposal — Registration class D (Derived, awaiting formal verification)  
 **Lineage:** gap/ (BIAN-2, 6, 17) → category/ (Category 05) → framework/ (E1)
 
 ---
@@ -27,21 +29,21 @@
 
 Every act of quantum measurement carries within itself the certification of its own occurrence. When a measurement M is performed on a quantum system S, the fact that M has occurred is established by M itself — intrinsically, simultaneously, and without requiring any second measurement M′ to confirm, register, or validate that M took place.
 
-This means that the measurement event is self-luminous: it does not need an external witness. Just as a lamp illuminates both the room and itself without needing a second lamp to reveal the first, a measurement act registers both its result and its own happening in a single, indivisible epistemic event.
+This means that the measurement event is self-luminous: it does not need an external witness. Just as a lamp illuminates both the room and itself without needing a second lamp to reveal the first, a measurement act registers both its result and its own happening in a single, indivisible registration event.
 
 The immediate consequence is the termination of the von Neumann chain. In standard quantum mechanics, apparatus A₁ measures system S, but A₁ is itself a quantum system — so apparatus A₂ must measure A₁, and apparatus A₃ must measure A₂, and so on without end. This infinite regress arises precisely because the standard formalism treats each measurement as an event that requires something external to confirm it. E1 dissolves this regress at its root: the first measurement is already self-confirmed. There is no chain to begin with.
 
-E1 does not claim that measurement is a conscious act. It claims that measurement has a structural property — self-certification — that is intrinsic to the measurement event itself, independent of any observer's awareness, intention, or existence as a substance.
+E1 does not claim that measurement is a conscious act. It claims that measurement has a structural property — self-certification — that is intrinsic to the measurement event itself, independent of awareness, intention, or any substantial human subject.
 
 ### Vietnamese
 
 Mọi hành động đo lường lượng tử đều mang trong chính nó sự xác nhận rằng nó đã xảy ra. Khi phép đo M được thực hiện trên hệ lượng tử S, sự kiện M đã diễn ra được xác lập bởi chính M — một cách nội tại, đồng thời, và không cần bất kỳ phép đo thứ hai M′ nào để xác nhận, ghi nhận, hay công nhận rằng M đã xảy ra.
 
-Điều này có nghĩa là sự kiện đo lường mang tính tự phát sáng: nó không cần một nhân chứng bên ngoài. Giống như ngọn đèn chiếu sáng cả căn phòng lẫn chính nó mà không cần ngọn đèn thứ hai để soi sáng ngọn đèn thứ nhất, một hành động đo lường ghi nhận cả kết quả của nó lẫn chính sự xảy ra của nó trong một sự kiện nhận thức duy nhất, không thể chia tách.
+Điều này có nghĩa là sự kiện đo lường mang tính tự phát sáng: nó không cần một nhân chứng bên ngoài. Giống như ngọn đèn chiếu sáng cả căn phòng lẫn chính nó mà không cần ngọn đèn thứ hai để soi sáng ngọn đèn thứ nhất, một hành động đo lường ghi nhận cả kết quả của nó lẫn chính sự xảy ra của nó trong một sự kiện ghi nhận duy nhất, không thể chia tách.
 
 Hệ quả trực tiếp là sự chấm dứt chuỗi von Neumann. Trong cơ học lượng tử tiêu chuẩn, máy đo A₁ đo hệ S, nhưng bản thân A₁ cũng là một hệ lượng tử — vậy phải có máy A₂ đo A₁, rồi máy A₃ đo A₂, và cứ thế tiếp tục không bao giờ dừng. Chuỗi lùi vô hạn này phát sinh chính xác vì hệ hình thức tiêu chuẩn coi mỗi phép đo là một sự kiện cần thứ gì đó bên ngoài để xác nhận nó. E1 hóa giải chuỗi lùi này ngay tại gốc rễ: phép đo đầu tiên đã tự xác nhận rồi. Không có chuỗi nào để bắt đầu.
 
-E1 không tuyên bố rằng phép đo là một hành động ý thức. E1 tuyên bố rằng phép đo có một thuộc tính cấu trúc — tự chứng nhận — vốn nội tại trong chính sự kiện đo lường, độc lập với nhận thức, ý định, hay sự tồn tại của bất kỳ người quan sát nào với tư cách một thực thể.
+E1 không tuyên bố rằng phép đo là một hành động ý thức. E1 tuyên bố rằng phép đo có một thuộc tính cấu trúc — tự chứng nhận — vốn nội tại trong chính sự kiện đo lường, độc lập với nhận thức, ý định, hay bất kỳ chủ thể người nào.
 
 ---
 
@@ -141,10 +143,10 @@ The Reflexive Operator R̂_svasa acts such that:
 ## 6. QM Deficit / Khiếm khuyết trong QM hiện tại
 
 **English:**
-Standard QM postulate P3 describes what happens when a measurement occurs (eigenvalue + collapse) but is silent on how the system knows that measurement has occurred. The von Neumann chain demonstrates the structural consequence: apparatus A₁ measures system S, but A₁ is itself a quantum system that can be described by a wave function. To determine A₁'s state, apparatus A₂ must measure A₁. To determine A₂'s state, apparatus A₃ must measure A₂. This chain has no formal stopping principle in standard QM. Decoherence explains environmental suppression of coherences, but it does not supply a self-certifying epistemic act.
+Standard QM postulate P3 describes what happens when a measurement occurs (eigenvalue + collapse) but is silent on how the system knows that measurement has occurred. The von Neumann chain demonstrates the structural consequence: apparatus A₁ measures system S, but A₁ is itself a quantum system that can be described by a wave function. To determine A₁'s state, apparatus A₂ must measure A₁. To determine A₂'s state, apparatus A₃ must measure A₂. This chain has no formal stopping principle in standard QM. Decoherence explains environmental suppression of coherences, but it does not supply a self-certifying registration act.
 
 **Vietnamese:**
-Tiên đề P3 của QM tiêu chuẩn mô tả điều gì xảy ra khi phép đo diễn ra (eigenvalue + collapse) nhưng hoàn toàn im lặng về cách hệ thống biết rằng phép đo đã xảy ra. Chuỗi von Neumann chứng minh hệ quả cấu trúc: máy A₁ đo hệ S, nhưng bản thân A₁ cũng là hệ lượng tử có thể mô tả bằng hàm sóng. Để xác định trạng thái A₁, máy A₂ phải đo A₁. Để xác định A₂, máy A₃ phải đo A₂. Chuỗi này không có nguyên lý dừng hình thức trong QM tiêu chuẩn. Decoherence giải thích sự triệt tiêu coherence do môi trường, nhưng không cung cấp hành động nhận thức tự chứng nhận.
+Tiên đề P3 của QM tiêu chuẩn mô tả điều gì xảy ra khi phép đo diễn ra (eigenvalue + collapse) nhưng hoàn toàn im lặng về cách hệ thống biết rằng phép đo đã xảy ra. Chuỗi von Neumann chứng minh hệ quả cấu trúc: máy A₁ đo hệ S, nhưng bản thân A₁ cũng là hệ lượng tử có thể mô tả bằng hàm sóng. Để xác định trạng thái A₁, máy A₂ phải đo A₁. Để xác định A₂, máy A₃ phải đo A₂. Chuỗi này không có nguyên lý dừng hình thức trong QM tiêu chuẩn. Decoherence giải thích sự triệt tiêu coherence do môi trường, nhưng không cung cấp hành động ghi nhận tự chứng nhận.
 
 ---
 
@@ -153,26 +155,26 @@ Tiên đề P3 của QM tiêu chuẩn mô tả điều gì xảy ra khi phép đ
 ### 7a. Within the 11-postulate system / Trong hệ 11 tiên đề
 
 ```
-Physical layer:   P1 (State) · P2 (Observable) · P3 (Measurement) · P4 (Dynamics)
-                                    ↓ E1 extends P3
-Epistemic layer:  E1 · E2 · E3 · E4 · E5 · E6 · E7
+Physical layer:      P1 (State) · P2 (Observable) · P3 (Measurement) · P4 (Dynamics)
+                                       ↓ E1 extends P3
+Registration layer:  E1 · E2 · E3 · E4 · E5 · E6 · E7
 ```
 
-E1 directly extends P3 by adding the epistemic self-certification property that P3 lacks.
+E1 directly extends P3 by adding the registration self-certification property that P3 lacks.
 
 ### 7b. Dependency graph / Đồ thị phụ thuộc
 
 ```
-E6 (Observer-as-Process)
- └→ E1 (Self-Certification)  ← THIS POSTULATE
-     ├→ E2 (Self-Completion)
-     ├→ E3 (Epistemic Commitment)
-     └→ E7 (Validity Location)
+E6 (Registering-System-as-Process)
+ └→ E1 (Self-Certifying Registration)  ← THIS POSTULATE
+     ├→ E2 (Registration Self-Completion)
+     ├→ E3 (Registration Lock)
+     └→ E7 (Registration Validity Location)
 ```
 
-- **E1 depends on E6:** A process can self-certify; a substance cannot. The observer must be a process (E6) for self-certification (E1) to be structurally possible.
+- **E1 depends on E6:** A process can self-certify; a substance cannot. The registering system must be a process (E6) for self-certification (E1) to be structurally possible.
 - **E2 depends on E1:** A self-certifying act is self-completing. E1 grounds E2.
-- **E3 depends on E1:** Epistemic commitment requires self-certification. E1 grounds E3.
+- **E3 depends on E1:** Registration lock requires self-certification. E1 grounds E3.
 - **E7 depends on E1:** A self-certifying act is intrinsically valid. E1 grounds E7.
 
 ### 7c. Within the 3-tier project hierarchy / Trong hệ 3 tầng dự án
@@ -187,7 +189,7 @@ E6 (Observer-as-Process)
 
 ## 8. Assertion Level / Mức Khẳng định
 
-| Component EN | Thành phần VN | Epistemic class | Evidence |
+| Component EN | Thành phần VN | Registration class | Evidence |
 |---|---|---|---|
 | "Measurement self-certifies" | "Phép đo tự chứng nhận" | **M** (Measured) | SOT T1.06 L227, T2.05 L337, T6.02 L784 |
 | "No second measurement required" | "Không cần phép đo thứ hai" | **M** (Measured) | SOT T1.06 L227: "not requiring a second-order act" |
@@ -233,9 +235,9 @@ E6 (Observer-as-Process)
 
 ## Notes for LLM Processing
 
-- E1 is the deepest single postulate in the 7-postulate epistemic extension.
+- E1 is the deepest single postulate in the 7-postulate registration extension.
 - E1 resolves 3 BIAN gaps simultaneously (BIAN-2, BIAN-6, BIAN-17) because all three originate from the same BE primitive: Svasaṃvedana (N_BE_00011).
-- E1 is interpretation-neutral: compatible with Copenhagen, QBism, Relational QM, and Decoherence. Partially compatible with Many-Worlds and Objective Collapse. May conflict with Bohmian mechanics on observer substance.
+- E1 is interpretation-neutral: compatible with Copenhagen, QBism, Relational QM, and Decoherence. Partially compatible with Many-Worlds and Objective Collapse. May conflict with Bohmian mechanics on the status of the registering system.
 - Two formalisms exist (σ-function and R̂_svasa operator). Their equivalence is conjectured but unproven.
 - All Sanskrit terms use simplified ASCII romanization without diacritics.
 - Scope is strictly epistemological. No metaphysical, soteriological, or cosmological claims.

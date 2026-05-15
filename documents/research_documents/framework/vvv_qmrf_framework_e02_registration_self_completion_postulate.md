@@ -1,10 +1,13 @@
-# E2 — Measurement Self-Completion Postulate / Tiên đề Phép đo Tự hoàn tất
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+# E2 — Registration Self-Completion Postulate / Tiên đề Tự hoàn tất Ghi nhận
+# Legacy Name: Measurement Self-Completion Postulate / Tiên đề Phép đo Tự hoàn tất / VVV-EQM
+
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
-**Status:** Proposal — Epistemic class D  
+**Status:** Proposal — Registration class D  
 **Lineage:** gap/ (BIAN-16) → category/ (Category 06) → framework/ (E2)
 
 ---
@@ -12,10 +15,10 @@
 ## 1. Postulate Statement / Phát biểu Tiên đề
 
 **English:**
-> A measurement is complete in itself: the act of measuring and the result of measuring are structurally identical — there is no gap between the process of measurement and its epistemic outcome.
+> A measurement-registration act is complete in itself: the act of measuring and the registered result are structurally identical at the registration layer — there is no gap between the process of measurement and its registration outcome.
 
 **Vietnamese:**
-> Phép đo tự hoàn tất trong chính nó: hành động đo và kết quả đo đồng nhất về cấu trúc — không có khoảng trống giữa quá trình đo và kết quả nhận thức của nó.
+> Hành động đo-ghi nhận tự hoàn tất trong chính nó: hành động đo và kết quả được ghi nhận đồng nhất về cấu trúc ở tầng ghi nhận — không có khoảng trống giữa quá trình đo và kết quả ghi nhận của nó.
 
 ---
 
@@ -23,19 +26,19 @@
 
 ### English
 
-In standard QM, measurement is a physical process (system-apparatus interaction) yielding an eigenvalue. The process and the result appear separate: first the interaction, then the number. E2 asserts this separation is an artifact of incomplete formalization. The act of measurement and its epistemic result are one and the same event — structurally, not merely temporally.
+In standard QM, measurement is a physical process (system-apparatus interaction) yielding an eigenvalue. The process and the result appear separate: first the interaction, then the number. E2 asserts this separation is an artifact of incomplete formalization at the registration layer. The act of measurement-registration and its registered result are one and the same event — structurally, not merely temporally.
 
-This derives from the Buddhist concept of Pramana-phala identity: the instrument of valid cognition (pramana) and the cognitive result (phala) are structurally identical. The cognition that apprehends blue IS the result of that cognition. Applied to QM: the measurement interaction IS the measurement result. The eigenvalue is not "produced by" the interaction — the eigenvalue IS the interaction, formalized.
+This derives from the Buddhist concept of Pramana-phala identity: the instrument of valid cognition (pramana) and the cognitive result (phala) are structurally identical. The cognition that apprehends blue IS the result of that cognition. Applied to VVV-QMRF: the measurement-registration interaction IS the registered result. The eigenvalue is not "produced by" the interaction at the registration layer — the eigenvalue IS the interaction formalized as completed registration.
 
 E2 depends on E1: a self-certifying measurement is necessarily self-completing.
 
 ### Vietnamese
 
-Trong QM tiêu chuẩn, phép đo là quá trình vật lý cho ra eigenvalue. Quá trình và kết quả dường như tách biệt. E2 khẳng định sự tách biệt này là hệ quả của hình thức hóa chưa hoàn chỉnh. Hành động đo và kết quả nhận thức là một sự kiện duy nhất — về cấu trúc, không chỉ thời gian.
+Trong QM tiêu chuẩn, phép đo là quá trình vật lý cho ra eigenvalue. Quá trình và kết quả dường như tách biệt. E2 khẳng định sự tách biệt này là hệ quả của hình thức hóa chưa hoàn chỉnh ở tầng ghi nhận. Hành động đo-ghi nhận và kết quả ghi nhận là một sự kiện duy nhất — về cấu trúc, không chỉ thời gian.
 
-Nguyên lý bắt nguồn từ đồng nhất Pramana-phala: công cụ nhận thức hợp lệ (pramana) và kết quả nhận thức (phala) đồng nhất cấu trúc. Nhận thức nắm bắt màu xanh CHÍNH LÀ kết quả của nhận thức đó. Áp dụng: tương tác đo CHÍNH LÀ kết quả đo. Eigenvalue CHÍNH LÀ tương tác, đã hình thức hóa.
+Nguyên lý bắt nguồn từ đồng nhất Pramana-phala: công cụ nhận thức hợp lệ (pramana) và kết quả nhận thức (phala) đồng nhất cấu trúc. Nhận thức nắm bắt màu xanh CHÍNH LÀ kết quả của nhận thức đó. Áp dụng trong VVV-QMRF: tương tác đo-ghi nhận CHÍNH LÀ kết quả ghi nhận. Eigenvalue CHÍNH LÀ tương tác đã được hình thức hóa như ghi nhận hoàn tất.
 
-E2 phụ thuộc E1: phép đo tự chứng nhận tất yếu tự hoàn tất.
+E2 phụ thuộc E1: phép đo-ghi nhận tự chứng nhận tất yếu tự hoàn tất ở tầng ghi nhận.
 
 ---
 
@@ -73,10 +76,10 @@ Properties:
 
 | Symbol | Meaning EN | Ý nghĩa VN | Domain |
 |--------|-----------|-------------|--------|
-| M | Measurement act | Hành động đo | Epistemic event |
+| M | Measurement-registration act | Hành động đo-ghi nhận | Registration event |
 | r | Measurement result | Kết quả đo | Eigenvalue space |
 | 𝒯_act-res | Act-result identity tensor | Tensor đồng nhất hành-quả | Category 06 |
-| Pramana | Means of valid knowledge | Phương tiện nhận thức | Buddhist term |
+| Pramana | Means of valid cognition | Phương tiện nhận thức hợp lệ | Buddhist term |
 | Phala | Fruit/result of cognition | Quả nhận thức | Buddhist term |
 
 ---

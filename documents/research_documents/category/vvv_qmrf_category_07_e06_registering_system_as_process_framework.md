@@ -277,4 +277,4 @@ flowchart TD
 
 ---
 
-*Source: BIAN_index_SOT.md (BIAN-19), system_be_full.md (N_BE_00066, N_BE_00029), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00039-00041), framework/E6_registering_system_as_process_postulate.md*
+*Source: BIAN_index_SOT.md (BIAN-19), system_be_full.md (N_BE_00066, N_BE_00029), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00039-00041), framework/vvv_qmrf_framework_e06_registering_system_as_process_postulate.md*

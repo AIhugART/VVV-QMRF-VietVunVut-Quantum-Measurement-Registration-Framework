@@ -1,10 +1,13 @@
-# E4 — Pre-Symbolic Stratum Postulate / Tiên đề Tầng Tiền Biểu tượng
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+# E4 — Pre-Symbolic Registration Stratum Postulate / Tiên đề Tầng Ghi nhận Tiền Biểu tượng
+# Legacy Name: Pre-Symbolic Stratum Postulate / Tiên đề Tầng Tiền Biểu tượng / VVV-EQM
+
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
-**Status:** Proposal — Epistemic class D  
+**Status:** Proposal — Registration class D  
 **Lineage:** gap/ (BIAN-7) → category/ (Cat 10 — vvv_qmrf_category_10_e04_pre_symbolic_stratum.md) → framework/ (E4)
 
 ---
@@ -134,7 +137,7 @@ E4 (Pre-Symbolic Stratum)  ← THIS POSTULATE
  ↓ feeds into
 E5 (Internal Encoding) — symbolized result enters internal representation
  ↓
-E3 (Epistemic Commitment) — committed as definite knowledge
+E3 (Registration Lock) — sealed as determinate registration status
 ```
 
 | Layer | Document | Role |

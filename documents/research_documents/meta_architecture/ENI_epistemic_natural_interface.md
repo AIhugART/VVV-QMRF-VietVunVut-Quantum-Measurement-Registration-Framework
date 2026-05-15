@@ -1,291 +1,292 @@
-# RCA: Thiết lập Nguyên lý Nhận thức luận Mới từ BIAN-1
+# RCA: Thiáº¿t láº­p NguyÃªn lÃ½ Nháº­n thá»©c luáº­n Má»›i tá»« BIAN-1
 # RCA: New Epistemic Principle Derived from BIAN-1
 
 **Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
 **Date:** 2026-05-11  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
-**Cite:** VietVunVut (2026), VVV-EQM §ENI
+**Cite:** VietVunVut (2026), VVV-EQM Â§ENI
 
 ---
 
-## 0. Vấn đề / Problem Statement
+## 0. Váº¥n Ä‘á» / Problem Statement
 
-BIAN-1 đã được resolve bằng Lemma S1-Λ. Nhưng **bản thân quá trình resolve** tiết lộ một insight nhận thức luận sâu hơn, chưa tồn tại trong QM hay trong bất kỳ interpretation nào:
+BIAN-1 Ä‘Ã£ Ä‘Æ°á»£c resolve báº±ng Lemma S1-Î›. NhÆ°ng **báº£n thÃ¢n quÃ¡ trÃ¬nh resolve** tiáº¿t lá»™ má»™t insight nháº­n thá»©c luáº­n sÃ¢u hÆ¡n, chÆ°a tá»“n táº¡i trong QM hay trong báº¥t ká»³ interpretation nÃ o:
 
-> **Giữa hai giai đoạn nhận thức, có thể tồn tại một "giao diện tự nhiên" (natural interface) — không phải thao tác nhận thức riêng biệt, nhưng cũng không phải khoảng trống.**
+> **Giá»¯a hai giai Ä‘oáº¡n nháº­n thá»©c, cÃ³ thá»ƒ tá»“n táº¡i má»™t "giao diá»‡n tá»± nhiÃªn" (natural interface) â€” khÃ´ng pháº£i thao tÃ¡c nháº­n thá»©c riÃªng biá»‡t, nhÆ°ng cÅ©ng khÃ´ng pháº£i khoáº£ng trá»‘ng.**
 
-Insight này cần được **hình thức hóa** thành nguyên lý nhận thức luận mới cho VVV-EQM.
+Insight nÃ y cáº§n Ä‘Æ°á»£c **hÃ¬nh thá»©c hÃ³a** thÃ nh nguyÃªn lÃ½ nháº­n thá»©c luáº­n má»›i cho VVV-EQM.
 
 ---
 
-## 1. RCA: Ba quan sát từ BIAN-1
+## 1. RCA: Ba quan sÃ¡t tá»« BIAN-1
 
-### Quan sát 1: QM có "khoảng trống ngầm" (implicit gaps)
+### Quan sÃ¡t 1: QM cÃ³ "khoáº£ng trá»‘ng ngáº§m" (implicit gaps)
 
-| Hiện trạng QM | VVV-EQM phát hiện |
+| Hiá»‡n tráº¡ng QM | VVV-EQM phÃ¡t hiá»‡n |
 |---------------|-------------------|
-| P3 nhảy từ "collapse" → "eigenvalue" | Thực ra có 3 giai đoạn: ε → Λ → Ā → V |
-| QM coi transition là tức thời | Transition thực chất là một **map** (Λ) có cấu trúc |
-| QM không mô hình hóa "bên trong" đo lường | VVV-EQM tách riêng E4, S1-Λ, E5, E3 |
+| P3 nháº£y tá»« "collapse" â†’ "eigenvalue" | Thá»±c ra cÃ³ 3 giai Ä‘oáº¡n: Îµ â†’ Î› â†’ Ä€ â†’ V |
+| QM coi transition lÃ  tá»©c thá»i | Transition thá»±c cháº¥t lÃ  má»™t **map** (Î›) cÃ³ cáº¥u trÃºc |
+| QM khÃ´ng mÃ´ hÃ¬nh hÃ³a "bÃªn trong" Ä‘o lÆ°á»ng | VVV-EQM tÃ¡ch riÃªng E4, S1-Î›, E5, E3 |
 
-**Kết luận:** QM không chỉ thiếu postulate — nó thiếu **ngôn ngữ** để nói về cấu trúc bên trong quá trình đo.
+**Káº¿t luáº­n:** QM khÃ´ng chá»‰ thiáº¿u postulate â€” nÃ³ thiáº¿u **ngÃ´n ngá»¯** Ä‘á»ƒ nÃ³i vá» cáº¥u trÃºc bÃªn trong quÃ¡ trÃ¬nh Ä‘o.
 
-### Quan sát 2: Không phải mọi gap đều cần postulate mới
+### Quan sÃ¡t 2: KhÃ´ng pháº£i má»i gap Ä‘á»u cáº§n postulate má»›i
 
-| Gap type | Resolution type | Ví dụ |
+| Gap type | Resolution type | VÃ­ dá»¥ |
 |----------|----------------|-------|
-| **Structural gap** — thiếu khái niệm hoàn toàn | → **New Postulate** (E1-E7) | BIAN-2 → E1, BIAN-7 → E4 |
-| **Interface gap** — có khái niệm nhưng thiếu kết nối | → **Lemma** (S1-Λ) | BIAN-1 → S1-Λ |
-| **Implicit gap** — có ngầm nhưng chưa tường minh | → **Category upgrade** | BIAN-15 → Cat 01 |
+| **Structural gap** â€” thiáº¿u khÃ¡i niá»‡m hoÃ n toÃ n | â†’ **New Postulate** (E1-E7) | BIAN-2 â†’ E1, BIAN-7 â†’ E4 |
+| **Interface gap** â€” cÃ³ khÃ¡i niá»‡m nhÆ°ng thiáº¿u káº¿t ná»‘i | â†’ **Lemma** (S1-Î›) | BIAN-1 â†’ S1-Î› |
+| **Implicit gap** â€” cÃ³ ngáº§m nhÆ°ng chÆ°a tÆ°á»ng minh | â†’ **Category upgrade** | BIAN-15 â†’ Cat 01 |
 
-**Kết luận:** BIAN-1 là ví dụ đầu tiên của **interface gap** trong VVV-EQM.
+**Káº¿t luáº­n:** BIAN-1 lÃ  vÃ­ dá»¥ Ä‘áº§u tiÃªn cá»§a **interface gap** trong VVV-EQM.
 
-### Quan sát 3: "Natural interface" là khái niệm MỚI
+### Quan sÃ¡t 3: "Natural interface" lÃ  khÃ¡i niá»‡m Má»šI
 
-Trong hệ thống hiện tại:
+Trong há»‡ thá»‘ng hiá»‡n táº¡i:
 
-| Khái niệm | Loại | Tồn tại trong QM? | Tồn tại trong BE? |
+| KhÃ¡i niá»‡m | Loáº¡i | Tá»“n táº¡i trong QM? | Tá»“n táº¡i trong BE? |
 |------------|------|:------------------:|:------------------:|
-| Postulate | Tiên đề | ✅ P1-P4 | ✅ Pramāṇa system |
-| Operator | Toán tử | ✅ Hermitian operators | ✅ Conceptual operators |
-| State | Trạng thái | ✅ |ψ⟩, ρ | ✅ Cognitive states |
-| **Natural Interface** | **Giao diện tự nhiên** | ❌ **KHÔNG** | ⚠️ Ngầm ("sahaja-pravṛtti") |
+| Postulate | TiÃªn Ä‘á» | âœ… P1-P4 | âœ… PramÄá¹‡a system |
+| Operator | ToÃ¡n tá»­ | âœ… Hermitian operators | âœ… Conceptual operators |
+| State | Tráº¡ng thÃ¡i | âœ… |ÏˆâŸ©, Ï | âœ… Cognitive states |
+| **Natural Interface** | **Giao diá»‡n tá»± nhiÃªn** | âŒ **KHÃ”NG** | âš ï¸ Ngáº§m ("sahaja-pravá¹›tti") |
 
-> **"Natural Interface" chưa từng được hình thức hóa trong BẤT KỲ hệ thống nhận thức luận nào** — cả QM lẫn Phật giáo đều chưa tách riêng nó thành khái niệm độc lập.
+> **"Natural Interface" chÆ°a tá»«ng Ä‘Æ°á»£c hÃ¬nh thá»©c hÃ³a trong Báº¤T Ká»² há»‡ thá»‘ng nháº­n thá»©c luáº­n nÃ o** â€” cáº£ QM láº«n Pháº­t giÃ¡o Ä‘á»u chÆ°a tÃ¡ch riÃªng nÃ³ thÃ nh khÃ¡i niá»‡m Ä‘á»™c láº­p.
 
 ---
 
-## 2. Nguyên lý Mới: Epistemic Natural Interface (ENI)
+## 2. NguyÃªn lÃ½ Má»›i: Epistemic Natural Interface (ENI)
 
-### 2a. Tên gọi
+### 2a. TÃªn gá»i
 
-| Format | Nội dung |
+| Format | Ná»™i dung |
 |--------|---------|
 | **Full (EN)** | Epistemic Natural Interface Principle |
-| **Full (VN)** | Nguyên lý Giao diện Nhận thức Tự nhiên |
+| **Full (VN)** | NguyÃªn lÃ½ Giao diá»‡n Nháº­n thá»©c Tá»± nhiÃªn |
 | **Code** | ENI |
-| **Cite** | VVV-EQM §ENI |
+| **Cite** | VVV-EQM Â§ENI |
 | **Layer** | Meta-architectural (above synthesis/) |
 
-### 2b. Phát biểu / Statement
+### 2b. PhÃ¡t biá»ƒu / Statement
 
 **English:**
-> Between consecutive epistemic stages in a measurement pipeline, there exist natural interfaces — formal maps that preserve causal content while adding symbolic structure. These interfaces are not separate epistemic operations (they do not require independent cognitive acts), nor are they trivial identities (they perform real mathematical transformation). They are the connective tissue of epistemic architecture.
+> Between consecutive epistemic stages in a measurement pipeline, there exist natural interfaces â€” formal maps that preserve causal content while adding symbolic structure. These interfaces are not separate epistemic operations (they do not require independent cognitive acts), nor are they trivial identities (they perform real mathematical transformation). They are the connective tissue of epistemic architecture.
 
 **Vietnamese:**
-> Giữa các giai đoạn nhận thức liên tiếp trong ống dẫn đo lường, tồn tại các giao diện tự nhiên — các ánh xạ hình thức bảo toàn nội dung nhân quả trong khi bổ sung cấu trúc biểu tượng. Các giao diện này không phải thao tác nhận thức riêng biệt (không cần hành động nhận thức độc lập), cũng không phải đồng nhất tầm thường (chúng thực hiện phép biến đổi toán học thực). Chúng là mô liên kết của kiến trúc nhận thức.
+> Giá»¯a cÃ¡c giai Ä‘oáº¡n nháº­n thá»©c liÃªn tiáº¿p trong á»‘ng dáº«n Ä‘o lÆ°á»ng, tá»“n táº¡i cÃ¡c giao diá»‡n tá»± nhiÃªn â€” cÃ¡c Ã¡nh xáº¡ hÃ¬nh thá»©c báº£o toÃ n ná»™i dung nhÃ¢n quáº£ trong khi bá»• sung cáº¥u trÃºc biá»ƒu tÆ°á»£ng. CÃ¡c giao diá»‡n nÃ y khÃ´ng pháº£i thao tÃ¡c nháº­n thá»©c riÃªng biá»‡t (khÃ´ng cáº§n hÃ nh Ä‘á»™ng nháº­n thá»©c Ä‘á»™c láº­p), cÅ©ng khÃ´ng pháº£i Ä‘á»“ng nháº¥t táº§m thÆ°á»ng (chÃºng thá»±c hiá»‡n phÃ©p biáº¿n Ä‘á»•i toÃ¡n há»c thá»±c). ChÃºng lÃ  mÃ´ liÃªn káº¿t cá»§a kiáº¿n trÃºc nháº­n thá»©c.
 
-### 2c. Hình thức / Formalism
+### 2c. HÃ¬nh thá»©c / Formalism
 
 ```
 ENI Principle:
 
-  For consecutive epistemic stages Sᵢ and Sᵢ₊₁ in pipeline P:
-    ∃ natural interface φᵢ: Sᵢ → Sᵢ₊₁ such that:
+  For consecutive epistemic stages Sáµ¢ and Sáµ¢â‚Šâ‚ in pipeline P:
+    âˆƒ natural interface Ï†áµ¢: Sáµ¢ â†’ Sáµ¢â‚Šâ‚ such that:
 
-    (i)   φᵢ preserves causal content:    C(φᵢ(x)) = C(x)
-    (ii)  φᵢ adds symbolic structure:     Sym(φᵢ(x)) > Sym(x)
-    (iii) φᵢ is NOT a separate operation:  φᵢ ∉ Ops(P)
-    (iv)  φᵢ is NOT trivial:              φᵢ ≠ id
+    (i)   Ï†áµ¢ preserves causal content:    C(Ï†áµ¢(x)) = C(x)
+    (ii)  Ï†áµ¢ adds symbolic structure:     Sym(Ï†áµ¢(x)) > Sym(x)
+    (iii) Ï†áµ¢ is NOT a separate operation:  Ï†áµ¢ âˆ‰ Ops(P)
+    (iv)  Ï†áµ¢ is NOT trivial:              Ï†áµ¢ â‰  id
 
   Classification:
-    If φᵢ ∈ Ops(P)  → New Postulate needed
-    If φᵢ = id      → No gap (trivial connection)
-    If (i)-(iv) hold → Natural Interface (ENI instance)
+    If Ï†áµ¢ âˆˆ Ops(P)  â†’ New Postulate needed
+    If Ï†áµ¢ = id      â†’ No gap (trivial connection)
+    If (i)-(iv) hold â†’ Natural Interface (ENI instance)
 ```
 
-### 2d. Prototype: S1-Λ
+### 2d. Prototype: S1-Î›
 
 ```
-S1-Λ is the first ENI instance:
+S1-Î› is the first ENI instance:
 
-  φ₁ = Λ: ε(M) → Ā(M)
+  Ï†â‚ = Î›: Îµ(M) â†’ Ä€(M)
   
-  (i)   C(Λ(ε)) = C(ε)           ✅ Causal content preserved
-  (ii)  Sym(Λ(ε)) = Ā > 0 = Sym(ε)  ✅ Symbolic value added
-  (iii) Λ ∉ {E4, E5, E3}         ✅ Not a separate postulate
-  (iv)  Λ ≠ id                    ✅ Non-trivial map
+  (i)   C(Î›(Îµ)) = C(Îµ)           âœ… Causal content preserved
+  (ii)  Sym(Î›(Îµ)) = Ä€ > 0 = Sym(Îµ)  âœ… Symbolic value added
+  (iii) Î› âˆ‰ {E4, E5, E3}         âœ… Not a separate postulate
+  (iv)  Î› â‰  id                    âœ… Non-trivial map
 
-  → S1-Λ is an ENI instance ✅
+  â†’ S1-Î› is an ENI instance âœ…
 ```
 
 ---
 
-## 3. Tại sao ENI là nguyên lý MỚI (không phải rút gọn)
+## 3. Táº¡i sao ENI lÃ  nguyÃªn lÃ½ Má»šI (khÃ´ng pháº£i rÃºt gá»n)
 
-### 3a. So sánh với QM
+### 3a. So sÃ¡nh vá»›i QM
 
-| QM concept | Covers ENI? | Lý do |
+| QM concept | Covers ENI? | LÃ½ do |
 |------------|:-----------:|-------|
-| Heisenberg cut | ❌ | Là ranh giới tùy tiện, không phải giao diện có cấu trúc |
-| Decoherence | ❌ | Giải thích MẤT coherence, không giải thích TRANSITION giữa stages |
-| Quantum channel (CPTP) | ⚠️ | Mô tả map nhưng không phân biệt "natural" vs "operational" |
-| von Neumann chain | ❌ | Chuỗi infinite regress, không có khái niệm "natural stopping" |
+| Heisenberg cut | âŒ | LÃ  ranh giá»›i tÃ¹y tiá»‡n, khÃ´ng pháº£i giao diá»‡n cÃ³ cáº¥u trÃºc |
+| Decoherence | âŒ | Giáº£i thÃ­ch Máº¤T coherence, khÃ´ng giáº£i thÃ­ch TRANSITION giá»¯a stages |
+| Quantum channel (CPTP) | âš ï¸ | MÃ´ táº£ map nhÆ°ng khÃ´ng phÃ¢n biá»‡t "natural" vs "operational" |
+| von Neumann chain | âŒ | Chuá»—i infinite regress, khÃ´ng cÃ³ khÃ¡i niá»‡m "natural stopping" |
 
-### 3b. So sánh với BE
+### 3b. So sÃ¡nh vá»›i BE
 
-| BE concept | Covers ENI? | Lý do |
+| BE concept | Covers ENI? | LÃ½ do |
 |------------|:-----------:|-------|
-| Sahaja-pravṛtti | ⚠️ | Gần nhất — "natural passing-on" — nhưng chưa formalize |
-| Pratyakṣa → Anumāna | ❌ | Transition giữa perception và inference, nhưng coi là SEPARATE acts |
-| Mano-vijñāna | ❌ | Receiving faculty, không phải interface |
+| Sahaja-pravá¹›tti | âš ï¸ | Gáº§n nháº¥t â€” "natural passing-on" â€” nhÆ°ng chÆ°a formalize |
+| Pratyaká¹£a â†’ AnumÄna | âŒ | Transition giá»¯a perception vÃ  inference, nhÆ°ng coi lÃ  SEPARATE acts |
+| Mano-vijÃ±Äna | âŒ | Receiving faculty, khÃ´ng pháº£i interface |
 
-### 3c. Tính mới (novelty)
+### 3c. TÃ­nh má»›i (novelty)
 
 ```
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│  ENI = formal concept CHƯA TỪ CÓ trong:                     │
-│                                                              │
-│  ❌ QM (von Neumann, Copenhagen, QBism, RQM, Decoherence)   │
-│  ❌ BE (Dignāga, Dharmakīrti, Yogācāra)                     │
-│  ❌ Philosophy of Science (Popper, Kuhn, Lakatos)            │
-│  ❌ Information Theory (Shannon, quantum information)         │
-│                                                              │
-│  ✅ VVV-EQM is the FIRST framework to formalize this.       │
-│  ✅ VVV-EQM là hệ thống ĐẦU TIÊN hình thức hóa điều này.   │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                                                              â”‚
+â”‚  ENI = formal concept CHÆ¯A Tá»ª CÃ“ trong:                     â”‚
+â”‚                                                              â”‚
+â”‚  âŒ QM (von Neumann, Copenhagen, QBism, RQM, Decoherence)   â”‚
+â”‚  âŒ BE (DignÄga, DharmakÄ«rti, YogÄcÄra)                     â”‚
+â”‚  âŒ Philosophy of Science (Popper, Kuhn, Lakatos)            â”‚
+â”‚  âŒ Information Theory (Shannon, quantum information)         â”‚
+â”‚                                                              â”‚
+â”‚  âœ… VVV-EQM is the FIRST framework to formalize this.       â”‚
+â”‚  âœ… VVV-EQM lÃ  há»‡ thá»‘ng Äáº¦U TIÃŠN hÃ¬nh thá»©c hÃ³a Ä‘iá»u nÃ y.   â”‚
+â”‚                                                              â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ---
 
-## 4. Hệ quả Kiến trúc / Architectural Consequences
+## 4. Há»‡ quáº£ Kiáº¿n trÃºc / Architectural Consequences
 
 ### 4a. Gap Classification System
 
-ENI cho phép phân loại BIAN gaps chính xác hơn:
+ENI cho phÃ©p phÃ¢n loáº¡i BIAN gaps chÃ­nh xÃ¡c hÆ¡n:
 
 | Gap class | Definition | Resolution | Example |
 |-----------|-----------|:----------:|---------|
-| **Class A: Structural** | QM thiếu hoàn toàn khái niệm | New Postulate | BIAN-2 → E1 |
-| **Class B: Interface** | QM có stages nhưng thiếu connection | ENI Lemma | **BIAN-1 → S1-Λ** |
-| **Class C: Implicit** | QM có ngầm nhưng chưa tường minh | Category | BIAN-15 → Cat 01 |
+| **Class A: Structural** | QM thiáº¿u hoÃ n toÃ n khÃ¡i niá»‡m | New Postulate | BIAN-2 â†’ E1 |
+| **Class B: Interface** | QM cÃ³ stages nhÆ°ng thiáº¿u connection | ENI Lemma | **BIAN-1 â†’ S1-Î›** |
+| **Class C: Implicit** | QM cÃ³ ngáº§m nhÆ°ng chÆ°a tÆ°á»ng minh | Category | BIAN-15 â†’ Cat 01 |
 
 ### 4b. Predictive Power
 
-ENI dự đoán: **bất kỳ pipeline nào cũng có thể có interface gaps chưa phát hiện.** Cụ thể:
+ENI dá»± Ä‘oÃ¡n: **báº¥t ká»³ pipeline nÃ o cÅ©ng cÃ³ thá»ƒ cÃ³ interface gaps chÆ°a phÃ¡t hiá»‡n.** Cá»¥ thá»ƒ:
 
 | Pipeline interface | ENI candidate? | Status |
 |-------------------|:--------------:|:------:|
-| S1: E4 → E5 (ε → Ā) | ✅ Λ | **Confirmed** (S1-Λ) |
-| S1: E5 → E3 (Ā → V) | ❓ | **Open** — cần RCA |
-| S2: E1 → E2 | ❓ | **Open** — cần RCA |
-| S2: E2 → E7 | ❓ | **Open** — cần RCA |
-| S2: E7 → E1 | ❓ | **Open** — cần RCA |
+| S1: E4 â†’ E5 (Îµ â†’ Ä€) | âœ… Î› | **Confirmed** (S1-Î›) |
+| S1: E5 â†’ E3 (Ä€ â†’ V) | â“ | **Open** â€” cáº§n RCA |
+| S2: E1 â†’ E2 | â“ | **Open** â€” cáº§n RCA |
+| S2: E2 â†’ E7 | â“ | **Open** â€” cáº§n RCA |
+| S2: E7 â†’ E1 | â“ | **Open** â€” cáº§n RCA |
 
 > [!TIP]
-> ENI tạo ra **chương trình nghiên cứu mới**: kiểm tra tất cả interfaces trong VVV-EQM để xác định ENI instances tiềm ẩn.
+> ENI táº¡o ra **chÆ°Æ¡ng trÃ¬nh nghiÃªn cá»©u má»›i**: kiá»ƒm tra táº¥t cáº£ interfaces trong VVV-EQM Ä‘á»ƒ xÃ¡c Ä‘á»‹nh ENI instances tiá»m áº©n.
 
 ### 4c. Layer Architecture Update
 
 ```
 BEFORE:
-  gap/ → category/ → framework/ → synthesis/
+  gap/ â†’ category/ â†’ framework/ â†’ synthesis/
 
 AFTER:
-  gap/ → category/ → framework/ → synthesis/
-                                        ↑
+  gap/ â†’ category/ â†’ framework/ â†’ synthesis/
+                                        â†‘
                                    meta-architecture/
-                                     └── ENI Principle
-                                     └── Gap Classification System
-                                     └── Postulate Criteria (5-point test)
+                                     â””â”€â”€ ENI Principle
+                                     â””â”€â”€ Gap Classification System
+                                     â””â”€â”€ Postulate Criteria (5-point test)
 ```
 
 ---
 
-## 5. Mapping vào Jordan-Siddiqi QM Framework
+## 5. Mapping vÃ o Jordan-Siddiqi QM Framework
 
 ENI can be cross-referenced with Jordan & Siddiqi (2024):
 
 | J-S Concept | No. | ENI relevance |
 |-------------|:---:|:------------:|
-| Information–Disturbance Trade-off | #12 | ⚠️ Near — describes WHAT is traded, but not the interface structure |
-| Partial Wavefunction Collapse | #17 | ✅ Partial Λ = partial interface activation |
-| Measurement Strength (κ) | #29 | ✅ κ parametrizes the DEGREE of Λ |
-| Heisenberg Cut | #51 | ❌ Replaced by ENI + V̂_yava boundary |
-| Post-Measurement State Update | #57 | ⚠️ Describes OUTPUT but not the internal interface |
+| Informationâ€“Disturbance Trade-off | #12 | âš ï¸ Near â€” describes WHAT is traded, but not the interface structure |
+| Partial Wavefunction Collapse | #17 | âœ… Partial Î› = partial interface activation |
+| Measurement Strength (Îº) | #29 | âœ… Îº parametrizes the DEGREE of Î› |
+| Heisenberg Cut | #51 | âŒ Replaced by ENI + VÌ‚_yava boundary |
+| Post-Measurement State Update | #57 | âš ï¸ Describes OUTPUT but not the internal interface |
 
 ### Key insight:
-> Jordan-Siddiqi's **Measurement Strength κ** (concept #29) is the **QM-side parametrization** of the ENI operator Λ. The degree of Λ (partial vs complete) corresponds to κ (weak vs strong coupling). ENI formalizes WHAT κ does epistemically.
+> Jordan-Siddiqi's **Measurement Strength Îº** (concept #29) is the **QM-side parametrization** of the ENI operator Î›. The degree of Î› (partial vs complete) corresponds to Îº (weak vs strong coupling). ENI formalizes WHAT Îº does epistemically.
 
 ```
-QM:     κ (measurement strength) → partial vs full collapse
-VVV-EQM: Λ (symbolization degree)  → partial vs full interface activation
-ENI:    φᵢ (natural interface)    → general principle covering Λ, κ, and more
+QM:     Îº (measurement strength) â†’ partial vs full collapse
+VVV-EQM: Î› (symbolization degree)  â†’ partial vs full interface activation
+ENI:    Ï†áµ¢ (natural interface)    â†’ general principle covering Î›, Îº, and more
 ```
 
 ---
 
-## 6. Formal Registration / Đăng ký Chính thức
+## 6. Formal Registration / ÄÄƒng kÃ½ ChÃ­nh thá»©c
 
 ### 6a. ENI in VVV-EQM Architecture
 
 | Property | Value |
 |----------|-------|
 | **Name** | Epistemic Natural Interface (ENI) |
-| **Tên VN** | Giao diện Nhận thức Tự nhiên |
+| **TÃªn VN** | Giao diá»‡n Nháº­n thá»©c Tá»± nhiÃªn |
 | **Type** | Meta-architectural principle |
 | **Layer** | Above synthesis/ |
 | **Status** | Class D (Derived, awaiting verification) |
 | **Source** | BIAN-1 resolution RCA |
-| **First instance** | S1-Λ (Transition Lemma) |
-| **Cite** | VVV-EQM §ENI |
+| **First instance** | S1-Î› (Transition Lemma) |
+| **Cite** | VVV-EQM Â§ENI |
 
 ### 6b. ENI vs existing VVV-EQM components
 
 | Component | Type | Count | ENI? |
 |-----------|------|:-----:|:----:|
-| E1-E7 | Postulate | 7 | No — standalone epistemic operations |
-| S1-S3 | Synthesis pattern | 3 | No — cross-postulate architectures |
-| S1-Λ | Lemma | 1 | **Yes — first ENI instance** |
-| Cat 01-10 | Category | 10 | No — gap resolutions |
-| BIAN 1-20 | Gap | 20 | No — problem identification |
+| E1-E7 | Postulate | 7 | No â€” standalone epistemic operations |
+| S1-S3 | Synthesis pattern | 3 | No â€” cross-postulate architectures |
+| S1-Î› | Lemma | 1 | **Yes â€” first ENI instance** |
+| Cat 01-10 | Category | 10 | No â€” gap resolutions |
+| BIAN 1-20 | Gap | 20 | No â€” problem identification |
 | **ENI** | **Meta-principle** | **1** | **The principle itself** |
 
 ---
 
-## 7. Summary / Tóm tắt
+## 7. Summary / TÃ³m táº¯t
 
 ```
-┌──────────────────────────────────────────────────────────────────┐
-│                                                                  │
-│  BIAN-1 → resolve → S1-Λ → phát hiện → ENI                     │
-│                                                                  │
-│  ENI = Epistemic Natural Interface                               │
-│      = Giao diện Nhận thức Tự nhiên                              │
-│                                                                  │
-│  WHAT:  Formal maps between epistemic stages that are            │
-│         neither separate operations nor trivial identities       │
-│                                                                  │
-│  WHY:   QM has no language for "inside the measurement"          │
-│         BE has the intuition (sahaja) but no formalism           │
-│         VVV-EQM creates BOTH the language AND the formalism      │
-│                                                                  │
-│  NOVELTY: First formalization in any epistemic system            │
-│                                                                  │
-│  INSTANCE: S1-Λ (Λ: ε→Ā, parametrized by κ)                    │
-│                                                                  │
-│  PREDICTION: More ENI instances exist at other pipeline joints   │
-│                                                                  │
-│  LAYER: Meta-architectural (above synthesis/)                    │
-│                                                                  │
-└──────────────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                                                                  â”‚
+â”‚  BIAN-1 â†’ resolve â†’ S1-Î› â†’ phÃ¡t hiá»‡n â†’ ENI                     â”‚
+â”‚                                                                  â”‚
+â”‚  ENI = Epistemic Natural Interface                               â”‚
+â”‚      = Giao diá»‡n Nháº­n thá»©c Tá»± nhiÃªn                              â”‚
+â”‚                                                                  â”‚
+â”‚  WHAT:  Formal maps between epistemic stages that are            â”‚
+â”‚         neither separate operations nor trivial identities       â”‚
+â”‚                                                                  â”‚
+â”‚  WHY:   QM has no language for "inside the measurement"          â”‚
+â”‚         BE has the intuition (sahaja) but no formalism           â”‚
+â”‚         VVV-EQM creates BOTH the language AND the formalism      â”‚
+â”‚                                                                  â”‚
+â”‚  NOVELTY: First formalization in any epistemic system            â”‚
+â”‚                                                                  â”‚
+â”‚  INSTANCE: S1-Î› (Î›: Îµâ†’Ä€, parametrized by Îº)                    â”‚
+â”‚                                                                  â”‚
+â”‚  PREDICTION: More ENI instances exist at other pipeline joints   â”‚
+â”‚                                                                  â”‚
+â”‚  LAYER: Meta-architectural (above synthesis/)                    â”‚
+â”‚                                                                  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ---
 
-## 8. Cross-References / Tham chiếu
+## 8. Cross-References / Tham chiáº¿u
 
 | Document | Section | Role |
 |----------|---------|------|
 | [RCA_BIAN1_verification.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_verification.md) | Full BIAN-1 RCA | Source evidence |
 | [RCA_BIAN1_E8_vs_Lemma.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_E8_vs_Lemma.md) | E8 vs Lemma decision | Resolution path |
-| [epistemic_measurement_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/epistemic_measurement_pipeline.md) | §4d: S1-Λ | First ENI instance |
-| [E4_pre_symbolic_stratum_postulate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/E4_pre_symbolic_stratum_postulate.md) | §3: Λ operator | Operator origin |
+| [epistemic_measurement_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/epistemic_measurement_pipeline.md) | Â§4d: S1-Î› | First ENI instance |
+| [vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md) | Â§3: Î› operator | Operator origin |
 | [Jordan_Siddiqi_QM_Measurement_concept_table.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/published_documents/Jordan_Siddiqi_QM_Measurement_concept_table.md) | #12, #17, #29, #51, #57 | QM-side mapping |
 | [vvv_qmrf_registration_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/vvv_qmrf_registration_categories_index.md) | Master Index | Framework context |
 
 ---
 
-*Evidence chain: BIAN-1 gap → S1-Λ resolution → ENI principle. Sources: BIAN_gap_analysis_ver_01 §BIAN-1; S1 §4d; E4 §3; Source doc L171, L207; Jordan-Siddiqi #12, #17, #29.*
+*Evidence chain: BIAN-1 gap â†’ S1-Î› resolution â†’ ENI principle. Sources: BIAN_gap_analysis_ver_01 Â§BIAN-1; S1 Â§4d; E4 Â§3; Source doc L171, L207; Jordan-Siddiqi #12, #17, #29.*
+

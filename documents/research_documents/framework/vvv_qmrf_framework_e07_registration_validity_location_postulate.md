@@ -1,12 +1,13 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# E7 — Epistemic Validity Location Postulate / Tiên đề Định vị Tính hợp lệ Nhận thức
+# E7 — Registration Validity Location Postulate / Tiên đề Định vị Tính hợp lệ Ghi nhận
+# Legacy Name: Epistemic Validity Location Postulate / Tiên đề Định vị Tính hợp lệ Nhận thức / VVV-EQM
 
-**Framework:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)  
+**Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
-**Status:** Proposal — Epistemic class D  
+**Status:** Proposal — Registration class D  
 **Lineage:** gap/ (BIAN-18) → category/ (Category 04) → framework/ (E7)
 
 ---
@@ -33,9 +34,9 @@ E7 introduces an asymmetric validity principle:
 
 This derives from the Svatah/Paratah pramanya debate in Buddhist meta-epistemology, specifically Dharmakirti's synthetic position: initial validity is intrinsic (via svasaṃvedana and arthakriyasakti); invalidity is detected extrinsically (via badhaka pramana).
 
-The key insight is the **asymmetry**: validity and invalidity have different epistemic structures. Validity does not require an external certifier. Invalidity does. This matches experimental practice and provides the formal ground for why single-shot measurements are meaningful (e.g., BB84 in quantum cryptography).
+The key insight is the **asymmetry**: validity and invalidity have different registration structures. Validity does not require an external certifier. Invalidity does. This matches experimental practice and provides the formal ground for why single-shot measurements are meaningful (e.g., BB84 in quantum cryptography).
 
-E7 pairs with Category 01 (Retroactive Epistemic Override / badhaka) to form a complete validity-invalidation architecture: E7 establishes where validity lives; the Override category provides the mechanism for when validity fails.
+E7 pairs with the Retroactive Registration Override mechanism (bādhaka) to form a complete validity-invalidation architecture: E7 establishes where validity lives; the override mechanism provides the mechanism for when validity fails.
 
 ### Vietnamese
 
@@ -67,7 +68,7 @@ For measurement M yielding result r:
              Invalidity requires M′.
 ```
 
-### 3b. Category 04 formalism — DPEC (Dual-Phase Epistemic Certification)
+### 3b. Category 04 formalism — DPEC (Dual-Phase Registration Certification)
 
 ```
 Phase 1 — Intrinsic Validity (Svataḥ):
@@ -76,8 +77,8 @@ Phase 1 — Intrinsic Validity (Svataḥ):
 
 Phase 2 — Extrinsic Certification (Parataḥ):
   Ĉ_ext acts on ρ̃:
-    If consensus: ρ̃ → ρ_certified (truth-stamped)
-    If contradiction: invoke REO (Retroactive Epistemic Override)
+    If consensus: ρ̃ → ρ_certified (registration-valid)
+    If contradiction: invoke REO (Retroactive Registration Override)
 ```
 
 ### 3c. Equivalence status
@@ -105,14 +106,14 @@ E7 (Validity Location)
 
 | Symbol | Meaning EN | Ý nghĩa VN | Domain |
 |--------|-----------|-------------|--------|
-| M | Measurement act | Hành động đo | Epistemic event |
+| M | Measurement-registration act | Hành động đo-ghi nhận | Registration event |
 | M′ | Subsequent measurement | Phép đo tiếp theo | Verification |
 | ρ̃ | Conditionally updated state | Trạng thái cập nhật có điều kiện | Density matrix |
-| ρ_certified | Truth-stamped state | Trạng thái đóng dấu chân lý | Density matrix |
+| ρ_certified | Registration-valid state | Trạng thái hợp lệ ghi nhận | Density matrix |
 | Ĉ_ext | Extrinsic certification operator | Toán tử xác thực ngoại tại | Category 04 |
 | svataḥ | Intrinsic validity | Tính hợp lệ nội tại | Buddhist term |
 | parataḥ | Extrinsic validity | Tính hợp lệ ngoại tại | Buddhist term |
-| bādhaka | Invalidating cognition | Nhận thức phủ quyết | Buddhist term |
+| bādhaka | Invalidating cognition | Nhận thức phủ quyết | Buddhist term; source analogue for registration override |
 | arthakriyāśakti | Causal efficacy | Tác dụng nhân quả | Buddhist term |
 
 ---
@@ -146,8 +147,8 @@ E7 (Validity Location)
 **SOT T6.03 (L796):**
 > "QM has no formal account of where measurement validity is located."
 
-**Category 04 (L84):**
-> "The detector triggers the phenomenon intrinsically (Svataḥ), but the Universe, through extrinsic correlations (Parataḥ), is the ultimate entity that stamps the seal of truth onto that measurement."
+**Category 04 (L84), legacy wording requiring registration-layer reading:**
+> "The detector triggers the phenomenon intrinsically (Svataḥ), but the Universe, through extrinsic correlations (Parataḥ), is the ultimate entity that stamps the validated registration status onto that measurement."
 
 ---
 

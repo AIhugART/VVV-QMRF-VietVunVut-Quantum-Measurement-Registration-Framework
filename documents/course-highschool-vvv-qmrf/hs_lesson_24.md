@@ -138,4 +138,4 @@ D. Trước ghi nhận, "Born rule" bị xóa
 ## 8. Nguồn liên quan trong dự án
 
 - [E16 Pre-Measurement Registration Indeterminacy](../research_documents/category/vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md)
-- [Measurement Interface Postulate E17](../research_documents/framework/E17_measurement_interface_postulate.md)
+- [Measurement Interface Postulate E17](../research_documents/framework/vvv_qmrf_framework_e17_measurement_interface_postulate.md)

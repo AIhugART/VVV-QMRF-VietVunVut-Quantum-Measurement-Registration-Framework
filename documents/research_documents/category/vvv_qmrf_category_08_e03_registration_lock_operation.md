@@ -277,4 +277,4 @@ flowchart TD
 
 ---
 
-*Source: BIAN_index_SOT.md (BIAN-4, BIAN-5), system_be_full.md (Ākāra/Vyavasāya node-less status with conceptual support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00021-00024), framework/E3_registration_lock_postulate.md*
+*Source: BIAN_index_SOT.md (BIAN-4, BIAN-5), system_be_full.md (Ākāra/Vyavasāya node-less status with conceptual support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00021-00024), framework/vvv_qmrf_framework_e03_registration_lock_postulate.md*
