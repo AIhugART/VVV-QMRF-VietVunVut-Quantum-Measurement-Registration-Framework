@@ -2,12 +2,16 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # RCA: 4 Class X Gaps — Triage & Resolution
 # RCA: 4 Khoảng trống Lớp X — Phân loại & Giải quyết
+# Legacy Name: GCS_class_X_triage.md / VVV-EQM
+# Cite Code: GCS-X
+# Previous Filename: vvv_qmrf_meta_architecture_gcs_class_x_gap_triage.md
+# Current Filename: vvv_qmrf_meta_architecture_class_x_gap_triage.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Date:** 2026-05-11  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **Cite:** VVV-QMRF §GCS-X  
-**Source:** RCA_gap_classification_system.md §6
+**Source:** vvv_qmrf_meta_architecture_gap_classification_system.md §6
 
 ## Legacy terminology cross-reference / Bảng đối chiếu thuật ngữ cũ
 

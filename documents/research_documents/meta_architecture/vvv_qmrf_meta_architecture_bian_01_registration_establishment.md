@@ -2,6 +2,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # RCA: Thiết lập Registration Mới cho VVV-QMRF từ BIAN-1
 # RCA: New Registration Establishment for VVV-QMRF from BIAN-1
+# Legacy Name: BIAN1_epistemic_establishment.md / VVV-EQM
+# Current Filename: vvv_qmrf_meta_architecture_bian_01_registration_establishment.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Date:** 2026-05-11
@@ -17,7 +19,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | Epistemic Establishment | Registration Establishment | 4/5 | This file describes the K-side architecture generated from BIAN-1. |
 | epistemic stages | registration stages | 4/5 | Use when the stages refer to VVV-QMRF's K-side pipeline rather than Buddhist source cognition. |
 | Epistemic Commitment | Registration Lock | 5/5 | Current E3 framework terminology is registration lock. |
-| `BIAN1_epistemic_establishment.md` | BIAN-1 registration establishment (legacy filename retained) | 4/5 | File name is not changed; document title and component names use registration framing. |
+| `BIAN1_epistemic_establishment.md` | BIAN-1 registration establishment (legacy filename retained) | 4/5 | Renamed to `vvv_qmrf_meta_architecture_bian_01_registration_establishment.md`; legacy filename retained for comparison and traceability. |
 | `epistemic_measurement_pipeline.md` | registration measurement pipeline (legacy filename retained) | 3.5/5 | File name is not changed; content role is the K-side registration pipeline. |
 | `RCA_BIAN1_new_epistemic.md` | Registration Natural Interface derivation artifact (legacy filename retained) | 3.5/5 | External artifact name is preserved for traceability while ENI uses registration naming. |
 

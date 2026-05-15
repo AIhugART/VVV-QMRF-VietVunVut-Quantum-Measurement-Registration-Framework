@@ -1,6 +1,8 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
 # VVV-QMRF: Mathematical and Logical Formalization
+# Legacy Name: VVV_EQM_Mathematical_Formalization.md / VVV-EQM
+# Current Filename: vvv_qmrf_meta_architecture_registration_layer_formalization.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Phase:** Formalization Phase
@@ -14,7 +16,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | Epistemic Space | K-side registration space | 5/5 | The current model separates physical `ρ` from registration state `K`. |
 | Epistemic Commitment | Registration Lock | 5/5 | Current E3 framework terminology is registration lock. |
 | Observer as Process | Registering-System-as-Process | 5/5 | Current E6 framework terminology avoids human-only observer framing. |
-| `VVV_EQM_Mathematical_Formalization.md` | VVV-QMRF mathematical formalization (legacy filename retained) | 4/5 | File name is not changed; document title and content use current VVV-QMRF naming. |
+| `VVV_EQM_Mathematical_Formalization.md` | VVV-QMRF mathematical formalization (legacy filename retained) | 4/5 | Renamed to `vvv_qmrf_meta_architecture_registration_layer_formalization.md`; legacy filename retained for comparison and traceability. |
 | Self-awareness of cognition | Self-Certifying Registration / BE source: Svasaṃvedana | 4/5 | Keep as Buddhist source label; VVV-QMRF technical term is registration-layer closure. |
 | Pramāṇa-phala identity | Registration Self-Completion / BE source: Pramāṇa-phala | 5/5 | Current E2 term names the K-side act-result closure. |
 | Ākāra / cognitive aspect | Internal Representation Encoding / BE source: Ākāra | 5/5 | Current E5 term avoids human-only cognition framing. |

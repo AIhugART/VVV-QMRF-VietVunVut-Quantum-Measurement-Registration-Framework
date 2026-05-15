@@ -1,6 +1,8 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
 # VVV-QMRF Thought Experiment 1: Wigner's Friend as Registration-Layer Mapping
+# Legacy Name: VVV_EQM_Wigners_Friend.md / VVV-EQM
+# Current Filename: vvv_qmrf_meta_architecture_wigners_friend_registration_layer_mapping.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Phase:** Experimental Design Phase
@@ -14,7 +16,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | formal epistemic operators | registration-layer operators | 5/5 | The Wigner's Friend mapping concerns K-side registration, not a new physical collapse law. |
 | Epistemic Space | K-side registration space | 5/5 | The current model separates physical `ρ` from registration state `K`. |
 | Observer-as-Process | Registering-System-as-Process | 5/5 | Current E6 framework terminology avoids human-only observer framing. |
-| `VVV_EQM_Wigners_Friend.md` | VVV-QMRF Wigner's Friend registration-layer mapping (legacy filename retained) | 4/5 | File name is not changed; document title and framework line use current VVV-QMRF naming. |
+| `VVV_EQM_Wigners_Friend.md` | VVV-QMRF Wigner's Friend registration-layer mapping (legacy filename retained) | 4/5 | Renamed to `vvv_qmrf_meta_architecture_wigners_friend_registration_layer_mapping.md`; legacy filename retained for comparison and traceability. |
 | observer (canonical Wigner's Friend role) | registering system when used in VVV-QMRF analysis | 4/5 | Keep `observer` only inside the classic thought experiment; use `registering system` for the framework layer. |
 | subjective consciousness | local K-side registration status | 4/5 | The mapping avoids making collapse depend on human consciousness. |
 

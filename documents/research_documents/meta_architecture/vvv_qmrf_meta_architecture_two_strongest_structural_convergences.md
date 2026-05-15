@@ -2,6 +2,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # VVV-QMRF: Two Strongest Structural Convergences
 # VVV-QMRF: Hai Hội Tụ Cấu Trúc Mạnh Nhất
+# Legacy Name: VVV_EQM_convergences.md / VVV-EQM
+# Current Filename: vvv_qmrf_meta_architecture_two_strongest_structural_convergences.md
 
 **Document type / Loại tài liệu:** Structural convergence analysis — Grade B supplementary  
 **Source / Nguồn:** `root_case_epistemic_act.md` §4  
@@ -14,7 +16,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | Legacy term | Current VVV-QMRF term | Decision score | Reason |
 |---|---|---:|---|
 | VVV-EQM | VVV-QMRF | 5/5 | Current public name uses registration framing; legacy retained for traceability. |
-| `VVV_EQM_convergences.md` | VVV-QMRF convergences (legacy filename retained) | 4/5 | File name is not changed; document title and framework line use current VVV-QMRF naming. |
+| `VVV_EQM_convergences.md` | VVV-QMRF convergences (legacy filename retained) | 4/5 | Renamed to `vvv_qmrf_meta_architecture_two_strongest_structural_convergences.md`; legacy filename retained for comparison and traceability. |
 | `root_case_epistemic_act.md` | registration-act root case (legacy filename retained) | 3.5/5 | Source filename is retained for traceability; current framing separates Buddhist epistemic source from K-side registration. |
 | epistemic validity | registration validity / Buddhist epistemic validity by context | 3.5/5 | Replace only when the claim concerns the K-side framework; keep when describing Buddhist Epistemology directly. |
 | cognition | valid cognition / registration status by context | 3.5/5 | Keep for Buddhist source `pramāṇa`; avoid as VVV-QMRF technical framing. |
@@ -169,7 +171,7 @@ Jordan và Siddiqi phát biểu tường minh trong chuyên khảo 2024: *"diễ
 | [README.md](../../../README.md) | Project overview, 16 Postulates, 20 BIAN gaps |
 | [root_case_epistemic_act.md](../achives/root_case_epistemic_act.md) | Full root case analysis, source of §4 |
 | [BIAN_index_SOT.md](../gap/BIAN_index_SOT.md) | Master BIAN gap index |
-| [GCS_gap_classification_system.md](GCS_gap_classification_system.md) | Gap classification methodology |
+| [VVV-QMRF GCS gap classification system](vvv_qmrf_meta_architecture_gap_classification_system.md) | Gap classification methodology |
 
 ---
 

@@ -115,9 +115,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-**EN:** For the two strongest structural convergences between Buddhist Epistemology and Quantum Mechanics — where both systems independently reach identical logical conclusions separated by 15 centuries — see: 📄 **[VVV-QMRF convergences](documents/research_documents/meta_architecture/VVV_EQM_convergences.md)**
+**EN:** For the two strongest structural convergences between Buddhist Epistemology and Quantum Mechanics — where both systems independently reach identical logical conclusions separated by 15 centuries — see: 📄 **[VVV-QMRF convergences](documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_two_strongest_structural_convergences.md)**
 
-**VN:** Hai hội tụ cấu trúc mạnh nhất — nơi cả hai hệ thống độc lập đi đến cùng kết luận logic cách nhau 15 thế kỷ — xem: 📄 **[VVV-QMRF convergences](documents/research_documents/meta_architecture/VVV_EQM_convergences.md)**
+**VN:** Hai hội tụ cấu trúc mạnh nhất — nơi cả hai hệ thống độc lập đi đến cùng kết luận logic cách nhau 15 thế kỷ — xem: 📄 **[VVV-QMRF convergences](documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_two_strongest_structural_convergences.md)**
 
 | Convergence / Hội tụ | Buddhist / Phật giáo | QM / Lượng tử |
 |:--------------------:|:--------------------:|:-------------:|

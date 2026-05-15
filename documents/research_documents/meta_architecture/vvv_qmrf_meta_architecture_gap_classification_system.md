@@ -2,6 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # RCA: Gap Classification System — Class A / B / C
 # RCA: Hệ thống Phân loại Khoảng trống — Lớp A / B / C
+# Legacy Name: GCS_gap_classification_system.md / VVV-EQM
+# Cite Code: GCS
+# Previous Filename: vvv_qmrf_meta_architecture_gcs_gap_classification_system.md
+# Current Filename: vvv_qmrf_meta_architecture_gap_classification_system.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Date:** 2026-05-11  
