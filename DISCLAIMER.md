@@ -33,6 +33,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **VN:** VVV-QMRF chưa được peer-reviewed, chưa được kiểm chứng thực nghiệm, và chưa được công nhận như một lý thuyết vật lý chuẩn.
 
+**EN:** VVV-QMRF should not be presented as a complete measurement theory; it is a proposed registration-layer framework.
+
+**VN:** Không nên trình bày VVV-QMRF như một lý thuyết đo lường hoàn chỉnh; nó là một khung đề xuất ở tầng ghi nhận.
+
 ## 4. No Practical-Use Warranty / Không bảo đảm cho ứng dụng thực tế
 
 **EN:** VVV-QMRF should not be used as the basis for engineering, medical, safety-critical, legal, financial, military, industrial, or real-world technical decisions.

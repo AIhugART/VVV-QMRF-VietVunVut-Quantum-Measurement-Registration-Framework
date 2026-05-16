@@ -95,7 +95,7 @@ For each BIAN gap G:
 | **A** | 9 | 7 Postulates (E1–E7) | 2, 4, 5, 6, 7, 16, 17, 18, 19 |
 | **B** | 2 | 2 Lemmas (S1-Λ, S2-Δ) | 1, 8 |
 | **C** | 7 | 7 Category upgrades | 3, 9, 11, 12, 13, 14, 15 |
-| **R** | 1 | QM exceeds BE | 10 |
+| **R** | 1 | IRB extension using N_BE_00021 as source analogue | 10 |
 | **∅** | 1 | Reserved | 20 |
 | **Total** | **20** | **All resolved** | ✅ |
 
@@ -287,7 +287,7 @@ neither separate cognitive operations nor trivial identities.
 | A | Structural | QM lacks concept entirely | Postulate |
 | B | Interface | QM has adjacent stages, lacks map | Lemma (ENI) |
 | C | Implicit | QM has phenomenon, lacks label | Category |
-| R | Reverse | QM exceeds BE | N/A |
+| R | Reverse | IRB extension using N_BE_00021 as source analogue | Category 14 + E15 |
 | X | Unresolved | No resolution path | Research |
 | ∅ | Reserved | Placeholder | N/A |
 
@@ -396,7 +396,7 @@ BIAN-1 → S1-Λ (constructive)
 | 7 | Pre-symbolic stratum | A | E4 | Nirvikalpaka |
 | 8 | Temporal discontinuity | B | S2-Δ | Kṣaṇabhaṅgavāda |
 | 9 | Cognition of absence | C | Cat 12 | Anupalabdhi |
-| 10 | Non-classical correlation | R | — | (QM exceeds BE) |
+| 10 | Non-classical correlation as IRB extension | R | Category 14 + E15 | N_BE_00021 source analogue |
 | 11 | Pre-measurement state | C | Cat 13 | Saṃśaya |
 | 12 | Epistemic override | C | Cat 03 | Bādhaka pramāṇa |
 | 13 | Null observer event | C | Cat 02 | Anadhyavasāya |

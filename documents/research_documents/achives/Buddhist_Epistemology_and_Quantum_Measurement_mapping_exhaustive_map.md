@@ -306,7 +306,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 - BIAN-7: Pre-Symbolic Physical Event / Formalism-External Stratum (Nirvikalpaka)
 - BIAN-8: Epistemological Theorization of Quantum Temporal Discontinuity (Ksanikavaada)
 - BIAN-9: Formal Cognition of Absence as Distinct Epistemic Category (Abhaava / Anupalabdhi)
-- BIAN-10: Non-Classical Correlation Relation / Entanglement as Third Relation Type (beyond Tadaatmya and Tadutpatti)
+- BIAN-10: Non-Classical Correlation Relation / Entanglement as IRB Extension Relation (beyond Tadaatmya and Tadutpatti; N_BE_00021 source analogue)
 - BIAN-11: Pre-Measurement Registration Indeterminacy (Samsaya source analogue)
 - BIAN-12: Formal Measurement Invalidation / Epistemological Override (Baadhaka pramaana)
 - BIAN-13: Null Observer Event / Non-Engagement Epistemic State (Anadhyavasaaya)

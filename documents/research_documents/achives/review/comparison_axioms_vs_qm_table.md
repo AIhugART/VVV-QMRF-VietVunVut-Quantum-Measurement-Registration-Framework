@@ -34,7 +34,7 @@
 | 22 | Post-Measurement State Update | T3.01 (Eigenstate ↔ Svalakṣaṇa) | Strong parallel | ✅ Đúng |
 | 23 | Measurement Backaction | T4.01 (Bhrānti — disturbance aspect) | Functional | ⚠️ Yếu — backaction ≠ error |
 | 27 | Info–Disturbance Trade-off | T2.05/T2.07 (BIAN-6/7 area) | No direct mapping | ✅ Đúng rằng không có mapping |
-| 47 | Entanglement | T3.08 (BIAN-10 — reverse gap) | Partial / BIAN-10 | ✅ Đúng — BE lacks this category |
+| 47 | Entanglement | T3.08 (BIAN-10 — reverse gap) | Partial / BIAN-10 | ✅ Đúng — BE chỉ cung cấp N_BE_00021 làm source analogue; IRB là extension relation |
 | 70 | Uncertainty ΔA | T6.05 (Apoha ↔ Complementarity) | Structural at meta-semantic | ⚠️ Gián tiếp |
 | 74 | Complementarity (Bohr) | T6.05 (Apoha / exclusion theory) | Structural parallel | ✅ Đúng |
 | 76 | Time Evolution (Unitarity) | T5.15 (Schrödinger ↔ Tadutpatti) | Partial | ✅ Đúng |

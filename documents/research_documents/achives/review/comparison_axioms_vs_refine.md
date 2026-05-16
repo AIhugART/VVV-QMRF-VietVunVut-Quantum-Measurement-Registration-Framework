@@ -97,7 +97,7 @@ Tương đương ở tất cả mục.
 | 5 | **Svabhāva denial ↔ Bell/Kochen-Specker** (negative parallel) | ✅ Luận điểm mạnh nhất, được xác nhận thực nghiệm | ✅ Cùng luận điểm | **Đúng** — đây là hội tụ thực chất nhất |
 | 6 | **Svasaṃvedana = nguồn gốc của measurement problem** | ✅ Luận điểm có giá trị triết học cao — BIAN-2/17/16 | ✅ Cùng luận điểm | **Đúng** về mặt cấu trúc, nhưng là luận điểm **diễn giải** (không phải khoa học vật lý) |
 | 7 | **Vyāpti ↔ Born rule** — "both empirically confirmed but not foundationally derived" | ✅ Hợp lý — Born rule không có derivation từ first principles, vyāpti cũng vậy | ✅ Hợp lý | **Đúng** — tương đồng epistemic status |
-| 8 | **Tādātmya/Tadutpatti** không bao quát entanglement → BIAN-10 | ✅ Đúng — entanglement là "third relation type" beyond classical categories | ✅ Đúng | **Đúng** cả hai |
+| 8 | **Tādātmya/Tadutpatti** không bao quát entanglement → BIAN-10 | ✅ Đúng — entanglement là "IRB extension relation" beyond BE's two classical relation types | ✅ Đúng | **Đúng** cả hai |
 | 9 | **Indriyajñāna ↔ Detector response** là "Moderate parallel" | ⚠️ **Questionable** — mapping có giá trị analogy nhưng divergence rất sâu (cognitive faculty vs physical apparatus) | ⚠️ Cùng | **Yếu** — analogy bề mặt |
 | 10 | **Yogipratyakṣa** có BIAN-3 trong QM | ✅ Đúng — QM không có phổ observer types | ✅ Đúng | **Đúng** |
 | 11 | **Āgama (Testimony)** được reduce về Anumāna (T1.03) | ✅ Đúng theo Dharmakīrti | ✅ Đúng | **Đúng** |
@@ -186,7 +186,7 @@ Tương đương ở tất cả mục.
 | 2 | **Pramāṇa-phala identity** — QM không có self-completion | Pramāṇaphala | Quan trọng — meta-epistemological root |
 | 3 | **Anātmavāda** — QM giả định substantive observer | Anattā / Anātmavāda | Quan trọng — foundational inversion |
 | 4 | **Pramātṛ** — QM không có knower trong formalism | Pramātṛ | Quan trọng — propagates through all BIAN |
-| 5 | **Entanglement** — BE không có third relation type | BIAN-10 (reverse) | Quan trọng — QM has concept BE lacks |
+| 5 | **Entanglement** — IRB extension beyond BE's two classical relation types | BIAN-10 (reverse) | Quan trọng — N_BE_00021 là source analogue; IRB là extension relation |
 
 ---
 

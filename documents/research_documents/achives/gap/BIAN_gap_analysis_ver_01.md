@@ -127,10 +127,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## BIAN-10 — Non-Classical Correlation Without Causal or Identity Basis (Reverse-BIAN)
 
 - **Axiom:** A1
-- **Gap direction:** Reverse-BIAN. QM has a structural concept that Buddhist Epistemology lacks.
+- **Gap direction:** Reverse-BIAN. QM has an entanglement relation beyond Buddhist Epistemology's two classical *svabhāvapratibandha* relation types; N_BE_00021 functions only as a source analogue.
 - **QM state:** Entanglement produces necessary correlations between spatially separated systems that cannot be explained by: (1) shared identity (the systems are distinct), (2) causal interaction (no signal passes between them, Bell inequality violation). This is a third type of necessary connection beyond identity-based and causation-based relations.
 - **RCA:** Classical epistemology recognizes two types of necessary connection: identity (A is B) and causation (A produces B). Entanglement is neither. It is a formally verified relation type that has no classical epistemological precedent.
-- **Consequence:** This is the only reverse-gap entry where QM formalism exceeds Buddhist Epistemology's canonical relation categories. Any complete epistemology must accommodate this third relation type.
+- **Consequence:** This is the only reverse-gap entry where QM entanglement exceeds Buddhist Epistemology's canonical two-type relation taxonomy. VVV-QMRF accommodates it as IRB, an extension relation grounded by Category 14 + E15.
 - **Severity:** Critical reverse-gap. Demonstrates that QM extends, not merely challenges, classical epistemic frameworks.
 
 ---
@@ -281,7 +281,7 @@ BIAN-17 (no regress stopper)
 ## Notes for LLM Processing
 
 - All 18 QM-side gaps are structural, not empirical. They cannot be resolved by new experimental data; they require formal extension of the measurement axioms.
-- Reverse-BIAN-10 is the only reverse-gap entry: QM has a concept (entanglement) that Buddhist Epistemology lacks.
+- Reverse-BIAN-10 is the only reverse-gap entry: QM has entanglement beyond BE's two classical relation types; N_BE_00021 is a source analogue and IRB is the VVV-QMRF extension.
 - BIAN-2, BIAN-16, and BIAN-17 form a causal triad: self-reference → self-completion → regress-stopping. Resolving any one partially alleviates the others.
 - This document contains no claims about consciousness, phenomenology, or subjective experience. All gaps are analyzed at the level of formal epistemic architecture.
 - Scope boundary: this analysis covers standard non-relativistic QM. QFT and quantum gravity may introduce additional or different gaps.

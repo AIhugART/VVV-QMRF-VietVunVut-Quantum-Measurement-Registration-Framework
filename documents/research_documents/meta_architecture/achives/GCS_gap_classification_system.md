@@ -55,7 +55,7 @@ For each BIAN gap G:
 
 | Class | Name | Definition | Example |
 |:-----:|------|------------|---------|
-| **R** | **Reverse Gap** | QM has concept that BE lacks | BIAN-10 |
+| **R** | **Reverse Gap** | QM has an entanglement relation beyond BE's two classical *svabhāvapratibandha* relation types; BE supplies N_BE_00021 only as a bounded source analogue | BIAN-10 |
 | **X** | **Unresolved** | Gap identified but no resolution path yet | None after current triage |
 | **∅** | **Reserved** | Placeholder, not substantive | BIAN-20 |
 
@@ -76,7 +76,7 @@ For each BIAN gap G:
 | **7** | No Pre-Symbolic Registration Stratum in Formalism | **A** | Postulate E4 | QM begins at symbolic level; pre-symbolic absent |
 | **8** | No Temporal Discontinuity Registration Theory | **A** | Category 12 + E13 | QM has discontinuity as brute physical postulate but lacks K-side registration theory |
 | **9** | No Formal Category for Validated Absence Registration | **C** | Category 13 + E14 | QM has null-result measurement implicitly but lacks validated absence registration taxonomy |
-| **10** | Non-Classical Correlation (Reverse-BIAN) | **R** | *Reverse* | QM exceeds BE — entanglement has no BE counterpart |
+| **10** | Non-Classical Correlation (Reverse-BIAN) | **R** | Category 14 + E15 | QM entanglement exceeds BE's classical relation taxonomy; N_BE_00021 is a source analogue, while IRB is a VVV-QMRF extension relation |
 | **11** | No Formal Category for Pre-Measurement Registration Indeterminacy | **C** | Category 15 + E16 | Mapped to N_BE_00007 as Saṃśaya source analogue; resolved as SDS registration-state category |
 | **12** | No Formal Mechanism for Retroactive Registration Override | **C** | Category 03 | QM has override implicitly (state update) but no registration-layer taxonomy |
 | **13** | No Category for Null Registering-System Event | **C** | Category 06 + E9 | QM has detection-efficiency and POVM/no-click support but no registration-layer non-engagement category |
@@ -95,7 +95,7 @@ For each BIAN gap G:
 | **A** (Structural) | **10** | 2, 4, 5, 6, 7, 8, 16, 17, 18, 19 | Postulate (E1–E17 where documented) |
 | **B** (Interface) | **1** | 1 | Lemma (S1-Λ) |
 | **C** (Implicit) | **7** | 3, 9, 11, 12, 13, 14, 15 | Category (01–15; extension postulate when documented) |
-| **R** (Reverse) | **1** | 10 | N/A — QM exceeds BE |
+| **R** (Reverse) | **1** | 10 | Category 14 + E15 — IRB extension using N_BE_00021 as source analogue |
 | **X** (Unresolved) | **0** | — | Closed by current triage |
 | **∅** (Reserved) | **1** | 20 | N/A |
 | **Total** | **20** | | |
@@ -303,7 +303,7 @@ gap/ (20 BIAN)
   │                              └──→ meta-architecture/ (ENI, GCS)
   ├── 1 × Class B ───→ synthesis/ (Lemma S1-Λ)
   ├── 7 × Class C ───→ category/ (Cat 01, 03, 06, 09, 11, 13, 15)
-  ├── 1 × Class R ───→ (reverse — QM exceeds BE)
+  ├── 1 × Class R ───→ Category 14 + E15 (IRB extension; N_BE_00021 source analogue)
   ├── 0 × Class X ───→ closed by current triage
   └── 1 × Class ∅ ───→ (reserved)
 ```
@@ -337,7 +337,7 @@ Categories 02, 04, 05, 07, 08, 10, and 12 are **not Class C** — they are Class
 │  Class A (Structural): 10 gaps → framework postulates/cats   │
 │  Class B (Interface):   1 gap  → 1 lemma (S1-Λ)             │
 │  Class C (Implicit):    7 gaps → 7 categories               │
-│  Class R (Reverse):     1 gap  → QM exceeds BE              │
+│  Class R (Reverse):     1 gap  → IRB extension via Cat 14 + E15 │
 │  Class X (Unresolved):  0 gaps → closed by current triage    │
 │  Class ∅ (Reserved):    1 gap  → placeholder                │
 │                                                              │

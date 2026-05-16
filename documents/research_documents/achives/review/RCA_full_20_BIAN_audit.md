@@ -18,7 +18,7 @@
 | 7 | BIAN-7 | Pre-symbolic stratum | **A** | **E4** | Nirvikalpaka | ✅ | N_BE_00009, 8 edges, Medium |
 | 8 | BIAN-8 | Temporal discontinuity | **B** | **S2-Δ** | Kṣaṇabhaṅgavāda | ✅ | Lemma ENI #2. E8 rejected (0/4) |
 | 9 | BIAN-9 | Cognition of absence | **C** | **Cat 12** | Anupalabdhi | ✅ | N_BE_00253, 1 edge, Strong |
-| 10 | BIAN-10 | Non-classical correlation | **R** | **—** | (QM exceeds BE) | ✅ | N_BE_00021. QM > BE here |
+| 10 | BIAN-10 | Non-classical correlation as IRB extension | **R** | **Category 14 + E15** | N_BE_00021 source analogue | ✅ | IRB is VVV-QMRF extension, not classical BE subtype |
 | 11 | BIAN-11 | Pre-measurement state | **C** | **Cat 13** | Saṃśaya | ✅ | N_BE_00007, 4 edges |
 | 12 | BIAN-12 | Epistemic override | **C** | **Cat 03** | Bādhaka pramāṇa | ✅ | No node in BE system |
 | 13 | BIAN-13 | Null observer event | **C** | **Cat 02** | Anadhyavasāya | ✅ | No node in BE system |
@@ -66,7 +66,7 @@ BIAN-20: Entanglement correlation type → N_BE_00021 → N_QM_00075
                                          CÙNG NODE     CÙNG TARGET
 ```
 
-**Logic:** Khi BIAN-10 được gán Class R (QM exceeds BE), câu hỏi "entanglement correlation type" (BIAN-20) cũng được giải quyết ngầm — vì cả hai đều nói về cùng một cặp node mapping.
+**Logic:** Khi BIAN-10 được gán Class R (IRB extension via Category 14 + E15), câu hỏi "entanglement correlation type" (BIAN-20) cũng được giải quyết ngầm — vì cả hai đều nói về cùng một cặp node mapping với N_BE_00021 làm source analogue.
 
 ### 3c. Tại sao không gộp BIAN-20 vào BIAN-10?
 
