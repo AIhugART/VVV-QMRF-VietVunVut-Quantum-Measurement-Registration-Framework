@@ -939,7 +939,7 @@ All 19 substantive BIAN gaps, plus BIAN-20 as a reserved cross-reference, are gr
 | BIAN | Concept | Node | Description |
 | --- | --- | --- | --- |
 | BIAN-8 | Ksanikavada (Temporal discontinuity) | N_BE_00029 | QM has temporal discontinuity formally (collapse) but no epistemological doctrine of momentariness. |
-| BIAN-10 | Entanglement as third relation type | N_BE_00021 | Non-causal, non-identity-based necessary correlation beyond tadatmya and tadutpatti. Reverse BIAN: QM has a concept BE lacks. |
+| BIAN-10 | Entanglement as IRB extension relation | N_BE_00021 | Non-causal, non-identity-based registration non-separability beyond tadatmya and tadutpatti. Reverse BIAN: QM has entanglement beyond BE's two classical relation types; N_BE_00021 is a source analogue and IRB is the VVV-QMRF extension. |
 | BIAN-14 | Trairupya (Tripartite validity) | N_BE_00018 | QM has no formally unified three-condition structure for valid evidential inference. |
 
 ### Lens 2 — Emptiness (2 gaps)
@@ -998,7 +998,7 @@ Ranked by structural significance, merged from tier-level and interpretive-lens 
 | 3 | Observer left unanalyzed as process | BIAN-19 | 3 | Many operational presentations treat the observer or apparatus as an unanalyzed classical reference point; Buddhist Epistemology explicitly models the knower as a process-series rather than a substance. |
 | 4 | Svabhāva denial as strong structural convergence | -- (T3.05) | 2 | Bell-type constraints and Kochen-Specker contextuality support an analogous structural constraint against context-independent intrinsic properties. |
 | 5 | Epistemology grounded in praxis as meta-level convergence | -- (T6.06) | 2 | Within this mapping, both systems can be read as grounding epistemic validity in practical efficacy rather than in intrinsic essence. |
-| 6 | Entanglement as third relation type | BIAN-10 | 1 | Only reverse BIAN: QM has a relation category BE lacks. |
+| 6 | Entanglement as IRB extension relation | BIAN-10 | 1 | Only reverse BIAN: QM has entanglement beyond BE's two classical relation types; N_BE_00021 is a source analogue and IRB is the VVV-QMRF extension. |
 | 7 | No spectrum of observer faculties | BIAN-3 | 4 | BE has observer types by epistemic faculty; QM has one undefined observer type. |
 
 ---
@@ -1016,7 +1016,7 @@ Ranked by structural significance, merged from tier-level and interpretive-lens 
 | BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | T2.07 | N_BE_00009 (Nirvikalpaka pratyaksa) | 2 |
 | BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | T3.04 | N_BE_00029 (Ksanikavada) | 1 |
 | BIAN-9 | Formal Cognition of Absence as Distinct Epistemic Category | T3.06 | (No separate node -- abhava/anupalabdhi) | 2 |
-| BIAN-10 | Non-Classical Correlation Relation / Entanglement as Third Relation Type | T3.08 | N_BE_00021 (Svabhavapratibandha -- partial) | 1 |
+| BIAN-10 | Non-Classical Correlation Relation / Entanglement as IRB Extension Relation | T3.08 | N_BE_00021 (Svabhavapratibandha -- partial) | 1 |
 | BIAN-11 | Pre-Measurement Registration Indeterminacy | T4.02 | N_BE_00007 (Saṃśaya source analogue) | 3 |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | T4.04 | (No separate node -- badhaka pramana) | 3 |
 | BIAN-13 | Null Registering-System Event / Registration Non-Engagement | T4.05 | (No separate node -- anadhyavasaya) | 3 |

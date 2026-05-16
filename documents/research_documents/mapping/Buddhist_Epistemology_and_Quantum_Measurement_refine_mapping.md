@@ -586,7 +586,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 - BIAN-7: Pre-Symbolic Physical Event Prior to Formalism (Nirvikalpaka)
 - BIAN-8: Epistemological Theorization of Quantum Temporal Discontinuity (Ksanikavaada — partial gap)
 - BIAN-9: Formal Absence Cognition as Distinct Epistemic Category (Abhaava / Anupalabdhi)
-- BIAN-10: Non-Classical Correlation Relation — Entanglement as Third Relation Type (beyond Tadaatmya and Tadutpatti) — note: this is the one gap where QM has a concept Pramaanavada lacks
+- BIAN-10: Non-Classical Correlation Relation — Entanglement as IRB Extension Relation (beyond Tadaatmya and Tadutpatti) — note: this is the one reverse gap where QM has entanglement beyond BE's two classical relation types; N_BE_00021 is a source analogue
 - BIAN-11: Pre-Measurement Registration Indeterminacy (Samsaya source analogue)
 - BIAN-12: Formal Measurement Invalidation and Epistemic Override (Baadhaka pramaana)
 - BIAN-13: Null Registering-System Event / Registration Non-Engagement (Anadhyavasaaya)
@@ -596,7 +596,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 - BIAN-17: Regress-Stopping Principle for Measurement Chain (Svasamvedana meta-epistemological)
 - BIAN-18: Intrinsic vs. Extrinsic Location of Measurement Validity (Svatah vs. Paratah pramaanya)
 - BIAN-19: Observer as Causal Process Series, not Persistent Substance (Anaatmavaada structural)
-- BIAN-20: Reserved — cross-reference BIAN-10 (Entanglement as third relation type)
+- BIAN-20: Reserved — cross-reference BIAN-10 (Entanglement as IRB extension relation)
 
 ## Critical Asymmetries (Ranked by Structural Significance)
 

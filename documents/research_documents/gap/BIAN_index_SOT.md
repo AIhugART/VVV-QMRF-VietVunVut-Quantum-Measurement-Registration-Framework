@@ -37,7 +37,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | N_BE_00009 | core | Non-conceptual perception | Nirvikalpaka pratyaká¹£a | A3 | 14 | PVM | Medium | âœ… Resolved â€” Cat 10 + E4 |
 | BIAN-8 | Epistemological Theorization of Temporal Discontinuity | N_BE_00029 | core | Momentariness | Ká¹£aá¹‡abhaá¹…gavÄda | A1 | 37 | Quantum Jump Case | Medium | âœ… Resolved â€” Cat 12 + E13 |
 | BIAN-9 | Formal Cognition of Absence as Distinct Category | N_BE_00253 | RCA | Non-perception | Anupalabdhi | A3 | 33 | Null Measurement | Strong | âœ… Resolved â€” Cat 13 + E14 |
-| BIAN-10 | Non-Classical Correlation / Entanglement as Third Relation | N_BE_00021 | core | Essential relation | SvabhÄvapratibandha | A1 | 75 | Hamiltonian H | Medium | âœ… Resolved â€” Cat 14 + E15 |
+| BIAN-10 | Non-Classical Correlation / Entanglement as IRB Extension Relation | N_BE_00021 | core | Essential relation | SvabhÄvapratibandha | A1 | 75 | Hamiltonian H | Medium | âœ… Resolved â€” Cat 14 + E15 |
 | BIAN-11 | Pre-Measurement Registration Indeterminacy | N_BE_00007 | core | Doubt | Saá¹ƒÅ›aya | A2 | 91 | Hidden Variable Theories | Medium | âœ… Resolved â€” Cat 15 + E16 |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | â€” | â€” | â€” | bÄdhaka pramÄá¹‡a | â€” | â€” | â€” | â€” | âœ… Resolved â€” Cat 03 + E8 (no node) |
 | BIAN-13 | Null Registering-System Event / Registration Non-Engagement | â€” | â€” | â€” | anadhyavasÄya | â€” | â€” | â€” | â€” | âœ… Resolved â€” Cat 06 + E9 (no node) |

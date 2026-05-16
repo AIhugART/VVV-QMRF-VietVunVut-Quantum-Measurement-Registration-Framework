@@ -863,7 +863,7 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 | BIAN-7 | Pre-Symbolic Physical Event / Formalism-External Stratum | T2.07 | N_BE_00009 (Nirvikalpaka pratyakṣa) |
 | BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | T3.04 | N_BE_00029 (Kṣaṇikavāda) |
 | BIAN-9 | Formal Cognition of Absence as Distinct Epistemic Category | T3.06 | (No separate node — abhāva/anupalabdhi) |
-| BIAN-10 | Non-Classical Correlation Relation / Entanglement as Third Relation Type | T3.08 | N_BE_00021 (Svabhāvapratibandha — partial) |
+| BIAN-10 | Non-Classical Correlation Relation / Entanglement as IRB Extension Relation | T3.08 | N_BE_00021 (Svabhāvapratibandha — partial) |
 | BIAN-11 | Pre-Measurement Registration Indeterminacy | T4.02 | N_BE_00007 (Saṃśaya source analogue) |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | T4.04 | (No separate node — bādhaka pramāṇa) |
 | BIAN-13 | Null Registering-System Event / Registration Non-Engagement | T4.05 | (No separate node — anadhyavasāya) |
