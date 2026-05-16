@@ -5,6 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Current Filename: vvv_qmrf_meta_architecture_registration_layer_formalization.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** meta_architecture
 **Phase:** Formalization Phase
 **Status:** Initial Draft (v0.1)
 
@@ -50,8 +51,28 @@ Minimal Class C definition:
 $$ k \in \mathcal{K}, \quad k = \langle M, o, cert, t, V \rangle $$
 where $M$ is the measurement-registration act, $o$ is the registered outcome, $cert$ is the self-certification marker, $t$ is registration time, and $V$ is validity status.
 
+RCA definition decision: this tuple is the minimal formal shape of one VVV-QMRF registration state. It belongs in `documents/research_documents/meta_architecture/` because it defines the architecture of the K-side state itself, not a topic-specific category example or course-level shorthand.
+
+| Tuple field | Formal role | RCA boundary |
+|---|---|---|
+| $M$ | K-side measurement-registration act instantiated as a registration event. | Not identical to $M=\{E_o\}$ as a physical-side measurement setting. |
+| $o$ | Outcome supplied by the physical measurement side and entered into K-side registration. | Its probability remains governed by Standard QM, e.g. $p_{QM}(o)=\operatorname{Tr}(E_o\rho)$. |
+| $cert$ | Self-certification marker recording that $M$ has occurred as K-side registration, aligned with $\sigma(M)$. | Not consciousness, introspection, or an extra physical detector. |
+| $t$ | Registration time at which $M$ is instantiated in the registration sequence. | Not a claim that physical time itself is discrete. |
+| $V$ | Validity status of the registration, governed by the K-side validity rule. | Not absolute metaphysical truth and not a new physical observable. |
+
+Boundary verification: $k$ is a registration-state tuple, not a wavefunction, not a density matrix, and not a collapse state. The formula defines what must minimally be present for a K-side registration state to be modeled; it does not modify Standard QM state space, probabilities, or dynamics.
+
 Layer separation:
 $$ \rho \in D(\mathcal{H}), \quad k \in \mathcal{K}, \quad \mathcal{K} \neq \mathcal{H} $$
+
+Registration-state update rule:
+$$ K_{after}=U_K(K_{before},o) $$
+where $K_{before}\in\mathcal{K}$, $K_{after}\in\mathcal{K}$, and $o$ is the outcome supplied by the physical measurement side.
+
+RCA definition decision: the complete $U_K$ formula belongs in `documents/research_documents/meta_architecture/` because it defines the conservative K-side update relation that connects the minimal registration-state tuple to post-measurement registration status.
+
+Boundary verification: $U_K$ updates registration state only. It does not replace Schrödinger evolution, does not calculate $p_{QM}(o)=\operatorname{Tr}(E_o\rho)$, does not collapse $\rho$, and does not alter $\rho_{after}$.
 
 ### 1.2 RCA Symbol Registry / Bảng RCA ký hiệu
 
@@ -154,30 +175,72 @@ RCA decision: this registry is the research-level source for VVV-QMRF mathematic
 | Saṃśaya | Structured pre-measurement registration doubt lineage | BE-source | Not subjective uncertainty or hidden variables. |
 | Svabhāvapratibandha | Intrinsic relational binding lineage | BE-source | Not a third physical entanglement mechanism. |
 
+### 1.3 Advanced Research Formula Registry / Bảng RCA công thức nghiên cứu nâng cao
+
+RCA decision: these formulas belong in `documents/research_documents/meta_architecture/` because they define the formal registration-layer architecture of VVV-QMRF. Course files may cite simplified versions, and category files may analyze specific applications, but this section controls the source placement, status, and boundary of the advanced formulas.
+
+| Formula | Name | Layer | Status | Boundary |
+|---|---|---|---|---|
+| $k \in \mathcal{K},\; k = \langle M, o, cert, t, V \rangle$ | Minimal K-state tuple | K-side | Class C | Defines a registration state only; not a physical state vector or density matrix. |
+| $K_{before}\in\mathcal{K};\; K_{after}=U_K(K_{before},o);\; K_{after}\in\mathcal{K}$ | Registration-state update | K-side | Class D | Updates K-side registration status; not Schrödinger evolution, Born-rule probability, or physical collapse. |
+| $\sigma:\mathcal{M}_K\to\{0,1\};\; \sigma(M)=1 \iff M \text{ occurred as K-side registration};\; cert(k):=\sigma(M)$ | Self-certifying registration | K-side | Class D | Certifies occurrence of $M$ without requiring $M'$; not consciousness-caused collapse. |
+| $M \equiv^K r$ | Registration self-completion | K-side | Class D | Act-result inseparability inside $\mathcal{K}$; not physical identity in $\mathcal{H}$. |
+| $V:\mathcal{M}_K\to\{0,1\};\; V(M)=1;\; V(M)\to0 \iff \exists M' : t(M')>t(M) \land M'\perp M;\; \neg\exists F: F(M')\to\{V(M)=1\}$ | Validity and invalidation rule | K-side | Class D | K-side validity can be contradicted but not externally confirmed as absolute truth; this is not a universal metaphysical truth predicate. |
+| $I \to \varepsilon(M) \to \Lambda(\varepsilon(M))=r$ | Measurement registration pipeline | Bridge / K-side | Class D | Describes registration flow from interaction to symbolic result; not a replacement for detector physics. |
+| $C: \mathcal{H}\to\mathcal{K};\; C(I)=k_{locked}$ | Registration lock map | Bridge / K-side | Class D | Marks K-side locked registration status for an available interaction $I$; does not by itself collapse $\rho$. |
+| $\varepsilon(M)\in\mathcal{K}_{pre};\; \operatorname{Sym}(\varepsilon(M))=\emptyset$ | Pre-symbolic non-symbolization | K-side | Class D | Means no symbolic result at the pre-symbolic layer; not absence of physical interaction. |
+| $\Lambda:\mathcal{K}_{pre}\to\mathcal{K}_{sym};\; \varepsilon(M)\in\mathcal{K}_{pre};\; r=\Lambda(\varepsilon(M));\; r\in\mathcal{K}_{sym}$ | Symbolization map | K-side | Class D | Converts pre-symbolic registration into symbolic registered result; not the Born rule, detector physics, or physical collapse. |
+| $\exists f_{enc}: \lvert R_k\rangle_A \mapsto a_k \text{ internally within } \mathcal{K}$ | Internal representation encoding | Bridge / K-side | Class D | Encodes outcome in registration structure; not a second physical apparatus measurement. |
+| $R=\{M_1,M_2,\dots,M_n\};\; t(M_1)<t(M_2)<\dots<t(M_n);\; \neg\exists\mathbf{I}_R \text{ independent of } \{M_i\}$ | Registering system as process | K-side | Class D | Defines the registering system as ordered registration events; not a fixed observer, soul, or independent substance. |
+| $\forall t\in(t(M_i),t(M_{i+1})),\; \text{RegistrationState}(t)=\emptyset$ | Temporal registration gap | K-side | Class D | No active K-side registration identity between events; not a claim that physical time is discontinuous. |
+
+**RCA verification:** The root cause of formula misplacement is source-layer mixing: research formulas, teaching notation, and category examples were easy to read as equivalent. This registry fixes the cause by assigning each formula to the meta-architecture source layer and by preserving the non-claim boundary against Standard QM replacement.
+
 ---
 
 ## 2. Foundational Operators (E1, E2, E7)
 
 ### 2.1 The Self-Certifying Registration Operator $\sigma$ (Postulate E1)
 **VVV-QMRF term:** Self-Certifying Registration. **BE source:** Svasaṃvedana (self-awareness of cognition).
-**Formalization:** Let $\sigma(M) \in \{0,1\}$ be a K-side self-certification function acting on a measurement-registration act $M$.
+**Formalization:** Let $\mathcal{M}_K$ be the class of K-side measurement-registration acts. The self-certification function is:
+$$ \sigma: \mathcal{M}_K \to \{0,1\} $$
 $$ \sigma(M)=1 \iff M \text{ has occurred as a K-side registration event.} $$
 Crucially, $\sigma(M)$ is determined within $M$ itself and does not require a second-order meta-registration act $M' \neq M$.
 $$ \sigma(M) \text{ is intrinsic to } M; \quad M' \text{ is not required for primary certification.} $$
-This terminates the K-side registration regress without claiming to end or replace the physical von Neumann chain in $\mathcal{H}$.
+Within the minimal K-state tuple $k=\langle M,o,cert,t,V\rangle$, the certification field is read as:
+$$ cert(k) := \sigma(M) $$
+
+RCA definition decision: the complete Self-Certification formula belongs in `documents/research_documents/meta_architecture/` because it defines the closure condition of K-side registration itself. It is not a course-level shorthand and not a category-specific example.
+
+Boundary verification: $\sigma(M)$ certifies that $M$ occurred as a K-side registration event; it does not certify that the physical outcome is true, does not replace $p_{QM}(o)=\operatorname{Tr}(E_o\rho)$, does not add a second physical detector, and does not claim consciousness collapses the wavefunction. This terminates the K-side registration regress without claiming to end or replace the physical von Neumann chain in $\mathcal{H}$.
 
 ### 2.2 Registration Self-Completion $\equiv^K$ (Postulate E2)
 **VVV-QMRF term:** Registration Self-Completion. **BE source:** Pramāṇa-phala identity (act-result identity).
-**Formalization:** Let $M$ be the measurement act and $r$ be the distinct symbolic result (eigenvalue). In the K-side registration space $\mathcal{K}$, the act and the result are internally inseparable:
+**Formalization:** Let $M$ be the K-side measurement-registration act and $r$ be the symbolic registered result produced at registration completion. In the K-side registration space $\mathcal{K}$, the act and the result are internally inseparable:
 $$ M \equiv^K r $$
-There is no $\Delta t$ between the completion of $M$ and the instantiation of $r$.
+The superscript $K$ is essential: $\equiv^K$ denotes K-side act-result inseparability, not physical identity in $\mathcal{H}$. There is no K-side interval between the completion of $M$ and the instantiation of $r$; no second registration act is required to turn $M$ into a registered result.
+
+RCA definition decision: the complete $M \equiv^K r$ formula belongs in `documents/research_documents/meta_architecture/` because it defines the registration self-completion relation of the K-side architecture. It is not a high-school shorthand and not a category-specific application.
+
+Boundary verification: $M \equiv^K r$ does not mean $M=\{E_o\}$ as a Standard QM measurement setting, does not mean the physical interaction and the physical outcome are the same entity, does not replace the Born rule, and does not prove that the physical outcome is true. It only states that, inside $\mathcal{K}$, the completed registration act and its symbolic registered result are not separated by another registration step.
 
 ### 2.3 The Validity Function $V$ (Postulate E7)
 **VVV-QMRF term:** Validity Function. **BE source:** Svataḥ prāmāṇya (intrinsic validity) and Bādhaka pramāṇa (contradicting measurement).
-**Formalization:** Let $V(M) \in \{0, 1\}$ denote the validity of measurement $M$.
-*   **Axiom 1 (Default):** $V(M) = 1$ upon instantiation of $M$.
+**Formalization:** Let $\mathcal{M}_K$ be the class of K-side measurement-registration acts. The validity function is:
+$$ V: \mathcal{M}_K \to \{0,1\} $$
+where $V(M)=1$ means $M$ remains valid as a K-side registration, and $V(M)=0$ means $M$ has been invalidated inside the registration layer.
+
+The complete K-side validity rule has three parts:
+
+*   **Axiom 1 (Default validity):** $V(M) = 1$ upon instantiation of $M$.
 *   **Axiom 2 (Invalidation):** $V(M) \to 0 \iff \exists M'$ such that $t(M') > t(M)$ and $M' \perp M$ (where $\perp$ denotes a registration contradiction).
-*   **Asymmetry:** No function $F(M') \to \{V(M)=1\}$ exists. Validity cannot be externally confirmed, only externally contradicted.
+*   **Axiom 3 (Asymmetry):** $\neg \exists F$ such that $F(M') \to \{V(M)=1\}$. Validity cannot be externally confirmed, only externally contradicted.
+
+Within the minimal K-state tuple $k=\langle M,o,cert,t,V\rangle$, the field $V$ records the current K-side validity status of $M$.
+
+RCA definition decision: the complete Validity Function formula set belongs in `documents/research_documents/meta_architecture/` because it defines the validity architecture of K-side registration itself. It is not a high-school shorthand and not a category-specific example.
+
+Boundary verification: $V(M)$ is a K-side registration-validity status, not absolute metaphysical truth, not a physical observable, and not proof that the physical outcome is correct. It does not replace $p_{QM}(o)=\operatorname{Tr}(E_o\rho)$, does not alter $\rho_{after}$, and does not add a new Standard QM validation rule.
 
 ---
 
@@ -188,20 +251,38 @@ The pipeline describes the temporal intra-measurement registration flow: $I \to 
 ### 3.1 Registration Lock $C$ (Postulate E3)
 **VVV-QMRF term:** Registration Lock. **BE source:** Vyavasāya (determination).
 **Formalization:** Let $C: \mathcal{H} \to \mathcal{K}$ be the Registration Lock operator.
-For an interaction $I$, $C(I)$ is the operation that irreversibly fixes the physical correlation as a registered status.
-If $C(I)$ is applied, the superposition in $\mathcal{H}$ is no longer the operative description from the perspective of $\mathcal{K}$.
+For an interaction $I$ available from the physical layer, the lock operation is represented as:
+$$ C(I)=k_{locked} $$
+where $k_{locked}\in\mathcal{K}$ is the K-side registration state in which $I$ has been accepted as a locked measurement-registration act. In tuple form, $k_{locked}$ is a registration state $k=\langle M,o,cert,t,V\rangle$ whose $M$ is locked as the operative K-side registration act.
+
+RCA definition decision: the complete Registration Lock formula belongs in `documents/research_documents/meta_architecture/` because it defines the bridge condition by which an available physical interaction is treated as registered at the K-side layer. It is not a course-level shorthand and not a category-specific example.
+
+Boundary verification: $C: \mathcal{H}\to\mathcal{K}$ is architectural shorthand for K-side registration locking, not a physical dynamics map that transforms the whole Hilbert space. $C(I)=k_{locked}$ does not collapse $\rho$, does not replace Schrödinger evolution, does not replace the Born rule, and is not decoherence itself. If $C(I)$ is applied, the operative description changes for K-side registration purposes only; this does not remove, replace, or redefine the physical-state description in $\mathcal{H}$ under Standard QM.
 
 ### 3.2 Pre-Symbolic Registration Stratum $\varepsilon(M)$ (Postulate E4)
 **VVV-QMRF term:** Pre-Symbolic Registration Stratum. **BE source:** Nirvikalpaka pratyakṣa (pure perception).
 **Formalization:** Let $\varepsilon(M) \in \mathcal{K}_{pre}$ be the raw, pre-conceptual physical interaction state (e.g., the specific photon hitting the retina). It has no symbolic eigenvalue representation yet.
+$$ \varepsilon(M) \in \mathcal{K}_{pre} $$
 $$ \text{Sym}(\varepsilon(M)) = \emptyset $$
+
+RCA definition decision: the complete pre-symbolic registration formula belongs in `documents/research_documents/meta_architecture/` because it defines the K-side state before symbolic registration is introduced by $\Lambda$.
+
+Boundary verification: $\operatorname{Sym}(\varepsilon(M))=\emptyset$ means the K-side event has no symbolic value yet; it does not mean no physical interaction occurred, does not erase detector response, and does not replace Standard QM measurement effects.
 
 ### 3.3 The Symbolization Operator $\Lambda$ (Lemma S1-Λ)
 **VVV-QMRF term:** Symbolization Operator. **BE source:** Sahaja-pravṛtti (natural passing-on).
 **Formalization:** The mapping from the pre-symbolic registration stratum $\mathcal{K}_{pre}$ to the encoded symbolic stratum $\mathcal{K}_{sym}$.
 $$ \Lambda: \mathcal{K}_{pre} \to \mathcal{K}_{sym} $$
+$$ \varepsilon(M) \in \mathcal{K}_{pre} $$
 $$ r = \Lambda(\varepsilon(M)) $$
+$$ r \in \mathcal{K}_{sym} $$
+In pipeline form:
+$$ I \to \varepsilon(M) \to \Lambda(\varepsilon(M)) = r $$
 Where $\Lambda$ preserves causal structure but introduces symbolic representation.
+
+RCA definition decision: the complete $\Lambda$ formula belongs in `documents/research_documents/meta_architecture/` because it defines the K-side transition from pre-symbolic registration to symbolic registered result. It is not a high-school shorthand and not a category-specific example.
+
+Boundary verification: $\Lambda$ does not generate a physical outcome from nothing, does not calculate $p_{QM}(o)=\operatorname{Tr}(E_o\rho)$, does not replace detector physics, does not collapse $\rho$, and does not alter $\rho_{after}$. It only assigns symbolic registration form to a pre-symbolic K-side registration event.
 
 ### 3.4 Internal Representation Encoding (Postulate E5)
 **VVV-QMRF term:** Internal Representation Encoding. **BE source:** Ākāra (cognitive aspect/form).
@@ -209,16 +290,25 @@ Where $\Lambda$ preserves causal structure but introduces symbolic representatio
 $$ \exists f_{enc}: |R_k\rangle_A \mapsto a_k \text{ internally within } \mathcal{K} $$
 There is no need for a secondary system $\mathcal{A}'$ to measure $\mathcal{A}$ to read $a_k$.
 
+RCA definition decision: the complete Internal Representation Encoding formula belongs in `documents/research_documents/meta_architecture/` because it defines how symbolic outcome content is encoded inside the K-side registration structure after symbolization.
+
+Boundary verification: $f_{enc}$ is an internal K-side encoding map, not a second apparatus, not a hidden-variable mechanism, not a new physical observable, and not a replacement for detector physics. It does not modify the Born rule or the physical post-measurement state.
+
 ---
 
 ## 4. The Registering System and Time (E6, S2-Δ)
 
 ### 4.1 Registering-System-as-Process $R$ (Postulate E6)
 **VVV-QMRF term:** Registering-System-as-Process. **BE source:** Anātmavāda (non-self / process-only).
-**Formalization:** A registering system $R$ is not a static object in $\mathcal{H}$, but a temporally ordered sequence of measurement acts in $\mathcal{K}$:
+**Formalization:** A registering system $R$ is not a static object in $\mathcal{H}$, but a temporally ordered sequence of measurement-registration acts in $\mathcal{K}$:
 $$ R = \{ M_1, M_2, \dots, M_n \} $$
-Ordered by time $t(M_1) < t(M_2) < \dots < t(M_n)$.
-$R$ possesses no identity matrix $\mathbf{I}_R$ independent of the set $\{M_i\}$.
+$$ t(M_1) < t(M_2) < \dots < t(M_n) $$
+$$ \neg\exists\mathbf{I}_R \text{ independent of } \{M_i\} $$
+Equivalently, $R$ possesses no identity matrix $\mathbf{I}_R$ independent of the set $\{M_i\}$. Each $M_i$ is a K-side registration event; $R$ is the ordered process formed by those events, not an entity that remains identical apart from them.
+
+RCA definition decision: the complete Registering-System-as-Process formula belongs in `documents/research_documents/meta_architecture/` because it defines the identity structure of the K-side registering system. It is not a course-level shorthand and not a category-specific example.
+
+Boundary verification: $R$ is not a fixed observer, not a soul, not consciousness, and not a single physical apparatus replacing $\mathcal{A}$ in Standard QM. The formula defines only the K-side process identity of a registering system as an ordered set of registration events; it does not change detector physics, Hilbert-space dynamics, the Born rule, or physical apparatus identity.
 
 ### 4.2 Temporal Discontinuity Registration $\Delta$ (Lemma S2-Δ)
 **VVV-QMRF term:** Temporal Discontinuity Registration. **BE source:** Kṣaṇabhaṅgavāda (momentariness).
@@ -226,7 +316,23 @@ $R$ possesses no identity matrix $\mathbf{I}_R$ independent of the set $\{M_i\}$
 $$ \forall t \in (t(M_i), t(M_{i+1})), \quad \text{RegistrationState}(t) = \emptyset $$
 The registering system $R$ has no active registration-state identity during $\Delta$. Registration time is discrete and defined only at points $t(M_i)$.
 
+**RCA placement decision:** This formula belongs in `documents/research_documents/meta_architecture/` because it defines the time structure of the K-side registration layer, not a topic-specific category example or a high-school teaching shorthand.
+
+**Boundary verification:** $\text{RegistrationState}(t)=\emptyset$ means no active K-side registration-state identity exists between two registration events. It does not claim that physical time is discontinuous, that Standard QM dynamics pause, or that the Schrödinger equation is replaced.
+
 ---
 
 ## Conclusion
 This mathematical formalization allows the VVV-QMRF framework to be integrated alongside standard QM mathematical formulations (like the Dirac-von Neumann axioms) without altering the probabilistic predictions (Born Rule) or physical dynamics (Schrödinger equation). It formalizes the K-side registration-state structure associated with measurement outcomes.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |
