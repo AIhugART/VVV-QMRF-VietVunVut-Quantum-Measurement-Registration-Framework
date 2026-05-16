@@ -21,9 +21,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework / Khung lý thuyết:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)<br/>
 **Legacy name / Tên cũ:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)<br/>
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)<br/>
-**Version / Phiên bản:** 2.1 — Active Research Snapshot / Ảnh chụp nghiên cứu đang hoạt động<br/>
-**Status / Trạng thái:** Active — 16 stable registration postulates (E1–E16), E17 measurement-interface proposal, 2 lemmas, 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Đang hoạt động — 16 tiên đề ghi nhận ổn định (E1–E16), đề xuất giao diện phép đo E17, 2 bổ đề, đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ<br/>
-**Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF §WP-2.0 + E17 research addendum / phụ lục nghiên cứu E17<br/>
+**Version / Phiên bản:** v4 Final — Registration-Layer Formalization Release / Bản hoàn tất v4 — phát hành hình thức hóa tầng ghi nhận<br/>
+**Status / Trạng thái:** v4 final documentation release — 16 stable registration postulates (E1–E16), E17 measurement-interface proposal, 2 lemmas, and formalized K-side registration formula registry; 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Bản hoàn tất tài liệu v4 — 16 tiên đề ghi nhận ổn định (E1–E16), đề xuất giao diện phép đo E17, 2 bổ đề, và bảng công thức ghi nhận phía K đã được hình thức hóa; đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ<br/>
+**Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF v4 final documentation release — registration-layer formalization / bản hoàn tất tài liệu v4 — hình thức hóa tầng ghi nhận<br/>
 **Disclaimer / Tuyên bố giới hạn:** [VVV-QMRF Research Status & Disclaimer](DISCLAIMER.md)<br/>
 **Inspiration / Cảm hứng:**<br/>
 **EN:** Laozi (Chinese: 老子; pinyin: Lǎozǐ) — legendary Chinese philosopher and author of the *Dao De Jing*; Sun Wu (commonly called Sun Tzu) — author of *The Art of War*; Steve Jobs — co-founder of Apple Inc.<br/>
@@ -236,7 +236,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│              VVV-QMRF ACTIVE ARCHITECTURE (v2.1 Snapshot)           │
+│              VVV-QMRF ACTIVE ARCHITECTURE (v4 Final)                │
 │                                                                     │
 │  STABLE CORE: E1–E16 (16)    — registration-layer postulates        │
 │    Core:      E1–E7 (7)      — core registration operations         │
@@ -588,12 +588,12 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
   title   = {VVV-QMRF: Quantum Measurement Registration Framework},
   author  = {VietVunVut (Viet - Nguyen Xuan)},
   year    = {2026},
-  note    = {VVV-QMRF §WP-2.0 plus E17 research addendum, active research snapshot},
+  note    = {VVV-QMRF v4 final documentation release: registration-layer formalization, E1--E16 stable registration postulates, E17 measurement-interface proposal},
   url     = {https://github.com/AIhugART/buddhist-epistemology-quantum-measurement}
 }
 ```
 
-**VN:** Mục trích dẫn này ghi VVV-QMRF như một technical report năm 2026, gồm §WP-2.0 và phụ lục nghiên cứu E17, ở trạng thái ảnh chụp nghiên cứu đang hoạt động.
+**VN:** Mục trích dẫn này ghi VVV-QMRF như một technical report năm 2026 ở bản hoàn tất tài liệu v4, gồm hình thức hóa tầng ghi nhận, E1–E16 là các tiên đề ghi nhận ổn định, và E17 là đề xuất giao diện phép đo.
 
 ---
 
@@ -615,7 +615,7 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 | **v1** | 2026-05-10, 2026-05-11, before / trước 02:00:00 2026-05-12 | Initial release — 7 Postulates (E1–E7), 2 Lemmas (S1-Λ, S2-Δ), 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Bản phát hành đầu — 7 tiên đề (E1–E7), 2 bổ đề (S1-Λ, S2-Δ), đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ |
 | **v2** | after / sau 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Khung mở rộng — 16 tiên đề (E1–E16), 15 phạm trù (Cat 01–15), đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ |
 | **v3** | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. / Đổi tên dự án chính thức từ tên cũ `VVV-EQM` sang tên công khai mới `VVV-QMRF`. Lý do RCA: dùng `registration-state update` / `cập nhật trạng thái ghi nhận` cho cập nhật phía `K` vượt khỏi nhận thức con người; chỉ dùng `detector response` cho phản ứng vật lý của máy đo. |
-| **v4 / v2.1 snapshot** | 2026-05-16 | Active research snapshot — E1–E16 remain stable registration postulates; E17 is documented as a measurement-interface proposal separating physical `ρ` transition from `K`-side registration-state update. / Ảnh chụp nghiên cứu đang hoạt động — E1–E16 vẫn là các tiên đề ghi nhận ổn định; E17 được ghi là đề xuất giao diện phép đo tách chuyển đổi vật lý `ρ` khỏi `registration-state update` phía `K`. |
+| **v4 final** | 2026-05-16 | Registration-layer formalization release — E1–E16 remain stable registration postulates; E17 remains a measurement-interface proposal separating physical `ρ` transition from `K`-side registration-state update; the K-side formula registry is centralized and boundary-checked against Standard QM replacement. / Bản hoàn tất hình thức hóa tầng ghi nhận — E1–E16 vẫn là các tiên đề ghi nhận ổn định; E17 vẫn là đề xuất giao diện phép đo tách chuyển đổi vật lý `ρ` khỏi `registration-state update` phía `K`; bảng công thức phía K được tập trung hóa và kiểm tra ranh giới để không thay thế QM chuẩn. |
 
 ## Research Timeline / Dòng thời gian nghiên cứu
 
@@ -627,6 +627,7 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 | Public research / Công bố nghiên cứu | 13:10:00 2026-05-12 | — |
 | v3 rename update / Cập nhật đổi tên v3 | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. / Đổi tên dự án chính thức từ tên cũ `VVV-EQM` sang tên công khai mới `VVV-QMRF`. Lý do RCA: dùng `registration-state update` / `cập nhật trạng thái ghi nhận` cho cập nhật phía `K` vượt khỏi nhận thức con người; chỉ dùng `detector response` cho phản ứng vật lý của máy đo. |
 | README RCA refresh / Cập nhật README theo RCA | 2026-05-16 | README aligned with active codebase: E17 proposal, ρ/K measurement-interface boundary, active VVV-QMRF node table, and high-school course directory. / README được căn chỉnh với codebase đang hoạt động: đề xuất E17, ranh giới giao diện phép đo ρ/K, bảng node VVV-QMRF đang hoạt động, và thư mục khóa học phổ thông. |
+| v4 final update / Cập nhật v4 final | 2026-05-16 | Completed VVV-QMRF v4 final documentation update: README version metadata, architecture label, citation note, Version History, and Research Timeline now identify v4 as the registration-layer formalization release. / Hoàn thành cập nhật tài liệu VVV-QMRF v4 final: metadata phiên bản, nhãn kiến trúc, ghi chú trích dẫn, Lịch sử Phiên bản, và Dòng thời gian nghiên cứu nay xác định v4 là bản phát hành hình thức hóa tầng ghi nhận. |
 
 ---
 

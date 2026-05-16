@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Work History
 # Lá»‹ch sá»­ lÃ m viá»‡c há»‡ thá»‘ng VVV-QMRF
 
-**Last updated:** 2026-05-15T17:00+07:00<br/>
+**Last updated:** 2026-05-16<br/>
 **Scope:** Historical record of work completed, system milestones, and VVV-QMRF concept nodes created.<br/>
 **Status:** Historical summary only; not a source of truth for node definitions.
 
@@ -308,6 +308,13 @@ This history is derived from these active project files:
 
 **Remediation status:** ⏳ Pending — audit report generated, no patches applied yet.  
 **Report:** [rca_audit_meta_architecture.md](documents/research_documents/achives/review/rca_audit_meta_architecture.md)
+
+### 2026-05-16 — Registration-Layer Formula Formalization
+
+- Formalized the VVV-QMRF registration-layer formula source in [documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md](documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md).
+- Centralized the RCA formula registry for the minimal K-state tuple, `U_K`, self-certification `sigma(M)`, `M equiv^K r`, validity `V`, registration lock `C`, pre-symbolic registration `epsilon(M)`, symbolization `Lambda`, internal encoding `f_enc`, registering-system-as-process `R`, and temporal registration gap `Delta`.
+- Preserved the boundary that VVV-QMRF is a K-side registration-layer framework, not a replacement for Standard Quantum Mechanics, Born-rule probability, Schrödinger evolution, physical collapse, detector physics, or Hilbert-space dynamics.
+- Commit pushed to `origin/main`: `93b75ff docs: formalize VVV-QMRF registration formulas`.
 
 ---
 
