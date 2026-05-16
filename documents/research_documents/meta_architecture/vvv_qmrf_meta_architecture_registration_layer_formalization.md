@@ -34,7 +34,7 @@ An interaction $I$ between a quantum system $\mathcal{S}$ and an apparatus $\mat
 
 ### 1.1 RCA notation provenance and formal status
 
-Source notation file: `documents/course-highschool-vvv-qmrf/bo_ky_hieu_VVV_QMRF.md` defines the VVV-QMRF exclusive notation for the Registration Layer ($K$). RCA root cause: without explicit provenance, $K$ and $\mathcal{K}$ can be misread as standard Quantum Mechanics objects. Fix: $K$ is treated as VVV-QMRF registration-state notation, while $\mathcal{K}$ is a Class C abstract registration-state space introduced by VVV-QMRF (VietVunVut), not a canonical Hilbert-space object.
+Source terminology registry: `documents/research_documents/vvv-qmrf/VVV_QMRF_research_terminology.md` defines the VVV-QMRF research notation for the Registration Layer ($K$). RCA root cause: without explicit provenance, $K$ and $\mathcal{K}$ can be misread as standard Quantum Mechanics objects. Fix: $K$ is treated as VVV-QMRF registration-state notation, while $\mathcal{K}$ is a Class C abstract registration-state space introduced by VVV-QMRF (VietVunVut), not a canonical Hilbert-space object.
 
 | Symbol | Name | Formal role | Status | Boundary |
 |---|---|---|---|---|
