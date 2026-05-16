@@ -11,6 +11,14 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Claim boundary:** This lesson is an educational interpretation of the registration layer, not a replacement for Standard Quantum Mechanics.
 **Formula boundary:** Symbols here are registration-layer teaching notation, not new physical laws.
 
+> **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
+>
+> Bốn điểm đọc đúng:
+> 1. VVV-QMRF là "registration-layer research framework", không phải lý thuyết vật lý chuẩn.
+> 2. Nó không thay thế, không sửa, và không bác bỏ "Standard Quantum Mechanics".
+> 3. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
+> 4. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không phù hợp cho quyết định kỹ thuật ngoài thực tế.
+
 ## 0. Educational Schema Alignment
 
 ### Learning Objectives
@@ -91,7 +99,7 @@ The introduction of the Registration Layer and the Self-Certification postulate 
 
 For this lesson, the RCA risk is the conflation of these two domains. VVV-QMRF keeps the analysis bounded:
 *   The physical layer and registration layer must be named separately.
-*   A registering system's lack of an updated record (an un-updated $K$ state) does not by itself imply a macroscopic physical superposition.
+*   A registering system's lack of an updated record (an un-updated $K$ state) means only that this specific registering system has not yet registered the outcome. By itself, it should not be used to infer either the presence or the absence of a macroscopic physical superposition in the physical layer.
 *   When analyzing a quantum paradox, one must explicitly define: *"Which specific system's Registration State ($K$) is currently being evaluated?"*
 
 ## 7. What This Lesson Does NOT Claim
@@ -107,3 +115,13 @@ For this lesson, the RCA risk is the conflation of these two domains. VVV-QMRF k
 *   The registration-layer model is not presented as a physical law.
 *   The lesson separates physical layer ($\rho$) from registration layer ($K$).
 *   Analogy is used only as analogy, not as proof.
+
+---
+
+> **NHẮC LẠI / END DISCLAIMER:** Nội dung trên chỉ là tài liệu giáo dục và "registration-layer reading" của VVV-QMRF ở "Registration Class D".
+>
+> Bốn điểm đọc đúng:
+> 1. VVV-QMRF là "registration-layer research framework", không phải lý thuyết vật lý chuẩn hay "Standard Quantum Mechanics".
+> 2. Nó không thay thế, không sửa, và không bác bỏ "Standard Quantum Mechanics".
+> 3. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
+> 4. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không dùng cho quyết định kỹ thuật hoặc ứng dụng thực tế.

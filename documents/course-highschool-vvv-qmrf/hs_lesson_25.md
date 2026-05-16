@@ -11,6 +11,14 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
+> **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
+>
+> Bốn điểm đọc đúng:
+> 1. VVV-QMRF là "registration-layer research framework", không phải lý thuyết vật lý chuẩn.
+> 2. Nó không thay thế, không sửa, và không bác bỏ "Standard Quantum Mechanics".
+> 3. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
+> 4. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không phù hợp cho quyết định kỹ thuật ngoài thực tế.
+
 Chào các em! Đây là bài tổng kết của chặng đầu khóa học. Ta gom lại toàn bộ ý chính bằng E17: phép đo là một **giao diện** giữa trạng thái vật lý `ρ`, trạng thái ghi nhận `K`, thiết lập đo `M`, kết quả `o`, và các cập nhật sau đo.
 
 ---
@@ -209,3 +217,13 @@ D. VVV-QMRF chỉ là chuyện cổ tích
 *   The lesson is framed as educational VVV-QMRF interpretation.
 *   Formula notation is bounded as teaching notation, not as a new physical law.
 *   Analogy is used only as analogy, not as proof.
+
+---
+
+> **NHẮC LẠI / END DISCLAIMER:** Nội dung trên chỉ là tài liệu giáo dục và "registration-layer reading" của VVV-QMRF ở "Registration Class D".
+>
+> Bốn điểm đọc đúng:
+> 1. VVV-QMRF là "registration-layer research framework", không phải lý thuyết vật lý chuẩn hay "Standard Quantum Mechanics".
+> 2. Nó không thay thế, không sửa, và không bác bỏ "Standard Quantum Mechanics".
+> 3. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
+> 4. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không dùng cho quyết định kỹ thuật hoặc ứng dụng thực tế.
