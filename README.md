@@ -24,6 +24,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Version / Phiên bản:** 2.1 — Active Research Snapshot / Ảnh chụp nghiên cứu đang hoạt động<br/>
 **Status / Trạng thái:** Active — 16 stable registration postulates (E1–E16), E17 measurement-interface proposal, 2 lemmas, 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Đang hoạt động — 16 tiên đề ghi nhận ổn định (E1–E16), đề xuất giao diện phép đo E17, 2 bổ đề, đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ<br/>
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF §WP-2.0 + E17 research addendum / phụ lục nghiên cứu E17<br/>
+**Disclaimer / Tuyên bố giới hạn:** [VVV-QMRF Research Status & Disclaimer](DISCLAIMER.md)<br/>
 **Inspiration / Cảm hứng:**<br/>
 **EN:** Laozi (Chinese: 老子; pinyin: Lǎozǐ) — legendary Chinese philosopher and author of the *Dao De Jing*; Sun Wu (commonly called Sun Tzu) — author of *The Art of War*; Steve Jobs — co-founder of Apple Inc.<br/>
 **VN:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại của Trung Quốc, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc.
