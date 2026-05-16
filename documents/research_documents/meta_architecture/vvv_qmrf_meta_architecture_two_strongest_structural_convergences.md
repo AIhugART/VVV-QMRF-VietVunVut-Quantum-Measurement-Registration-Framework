@@ -142,8 +142,8 @@ Jordan và Siddiqi phát biểu tường minh trong chuyên khảo 2024: *"diễ
 
 | Convergence | Buddhist Concept | QM Concept | Type / Loại |
 |:-----------:|:----------------:|:----------:|:-----------:|
-| **C1** | Niḥsvabhāvatā — no intrinsic properties / Vô tự tánh | Bell's Theorem — no pre-measurement definite values / Định lý Bell | Logical structure identity / Đồng nhất cấu trúc logic |
-| **C2** | Arthakriyā — validity = successful action / Hiệu lực = hành động thành công | Predictive success = validity criterion / Thành công dự đoán = tiêu chí hợp lệ | Meta-level pragmatist identity / Đồng nhất thực dụng luận tầng meta |
+| **C1** | Niḥsvabhāvatā — no intrinsic properties / Vô tự tánh | Bell's Theorem — no pre-measurement definite values / Định lý Bell | Selected logical-structure convergence / Hội tụ cấu trúc logic được chọn lọc |
+| **C2** | Arthakriyā — validity = successful action / Hiệu lực = hành động thành công | Predictive success = validity criterion / Thành công dự đoán = tiêu chí hợp lệ | Selected meta-level pragmatist convergence / Hội tụ thực dụng luận tầng meta được chọn lọc |
 
 ---
 

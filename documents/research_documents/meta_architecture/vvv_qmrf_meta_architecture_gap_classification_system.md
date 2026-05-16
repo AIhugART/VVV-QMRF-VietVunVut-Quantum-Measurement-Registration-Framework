@@ -76,9 +76,9 @@ For each BIAN gap G:
 | **2** | Absence of Self-Certifying Registration Layer | **A** | Postulate E1 | Standard QM has no explicit K-side self-certification concept |
 | **3** | No Limit-Faculty Registration Taxonomy | **C** | Category 11 + E12 | QM has κ parametrization implicitly but lacks limit-faculty registration taxonomy |
 | **4** | No Theory of Internal Representation Encoding | **A** | Postulate E5 | Standard QM has no explicit K-side internal encoding concept |
-| **5** | Conflation of Physical Registration & Registration Lock | **A** | Postulate E3 | QM conflates two distinct operations into one |
+| **5** | Conflation of Physical Registration & Registration Lock | **A** | Postulate E3 | Standard QM does not explicitly separate detector response from K-side registration lock in a registration-layer account |
 | **6** | No Self-Certifying Registration Structure | **A** | Postulate E1 | Standard QM has no explicit K-side self-certification at operational level |
-| **7** | No Pre-Symbolic Registration Stratum in Formalism | **A** | Postulate E4 | QM begins at symbolic level; pre-symbolic absent |
+| **7** | No Pre-Symbolic Registration Stratum in Formalism | **A** | Postulate E4 | Standard QM formalism begins at symbolic observables and lacks an explicit K-side pre-symbolic registration stratum |
 | **8** | No Temporal Discontinuity Registration Theory | **A** | Category 12 + E13 | QM has discontinuity as brute physical postulate but lacks K-side registration theory |
 | **9** | No Formal Category for Validated Absence Registration | **C** | Category 13 + E14 | QM has null-result measurement implicitly but lacks validated absence registration taxonomy |
 | **10** | Non-Classical Correlation (Reverse-BIAN) | **R** | *Reverse* | QM exceeds BE — entanglement has no BE counterpart |
@@ -90,7 +90,7 @@ For each BIAN gap G:
 | **16** | Registration Self-Completion Undefined | **A** | Postulate E2 | Standard QM has no explicit K-side self-completion concept |
 | **17** | No Endogenous Regress-Stopping Principle | **A** | Postulate E1 | Standard QM has no explicit K-side regress stopper |
 | **18** | No Theory of Measurement Validity Location | **A** | Postulate E7 | Standard QM has no explicit K-side validity-location concept |
-| **19** | Registering System Assumed as Substance, Not Process | **A** | Postulate E6 | QM assumes a substance-style registering role; process model absent |
+| **19** | Registering System Assumed as Substance, Not Process | **A** | Postulate E6 | Standard QM does not specify a K-side registering-system-as-process model; the registering role remains externally assumed |
 | **20** | Reserved (cross-ref BIAN-10) | **∅** | — | Not a substantive gap |
 
 ### 2b. Distribution Summary
