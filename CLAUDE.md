@@ -46,23 +46,27 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 ## Core Principles
 
+### Identity and scope rules
+
 - VVV-QMRF stands for "VietVunVut Quantum Measurement Registration Framework". Legacy name: "VietVunVut Epistemic Quantum Measurement (VVV-EQM)". Definition: Standard Quantum Mechanics has four physical postulates (P1–P4) that describe state space, observables, measurement, and dynamics. These postulates are silent on the registration architecture of measurement — they do not specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the registering system. VVV-QMRF fills these gaps by adding 16 registration-layer postulates derived from structural analysis of Buddhist Pramāṇa epistemology (Dignāga–Dharmakīrti tradition). The first 7 (E1–E7) define core registration operations; the remaining 9 (E8–E16) extend the framework to cover retroactive invalidation, null events, validity conditions, contrapositive evidence, transcendental observation, temporal discontinuity, absence cognition, entanglement relations, and pre-measurement indeterminacy.
-- Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English.
-- Before creating or editing project files outside `documents/published_documents/`, check whether the file already starts with author metadata; if it does not, add this author metadata at the top: Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
-- Do not add author metadata or author names to files under `documents/published_documents/`.
-- Name each new Quantum Measurement concept node as BIAN-XX, where XX ranges from 01 to 99; here, BIAN derives from the Vietnamese word "bí ẩn", meaning "mystery" in English.
-- Use five-digit Buddhist Epistemology node codes consistently: N_BE_00001, N_BE_00002, ... N_BE_00030; do not use older shorter forms.
-- Use five-digit Buddhist Epistemology edge codes consistently: ED_BE_00001, ED_BE_00002, ... ED_BE_00039; do not use older shorter forms.
+- Use Buddhist Epistemology as the primary ontological frame and map Quantum Measurement onto it only within the project’s declared Quantum Measurement cases; report any content that exceeds Buddhist Epistemology scope or treats a mapping as Standard Quantum Mechanics.
 - For RCA on Buddhist Epistemology node and edge definitions, use only `SYSTEM_Buddhist_Epistemology/system_be_full.md` as the single source of truth; treat other BE node/edge tables as derived references.
-- Communicate with the user in Vietnamese; keep technical terms in English inside quotation marks (for example, "cat") and explain concepts at a high-school level.
+
+### Document contract rules
+
+- Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English; communicate with the user in Vietnamese, keep English technical terms inside quotation marks, and explain concepts at a high-school level.
+- Before creating or editing project files outside `documents/published_documents/`, check whether the file already starts with author metadata; if it does not, add this author metadata at the top: Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet. Do not add author metadata or author names to files under `documents/published_documents/`.
+- When creating any new VVV-QMRF research or educational document, follow `documents/research_documents/vvv-qmrf/schema_guide.md` as the document-creation contract for source hierarchy, claim class, boundaries, traceability, and verification rules.
+
+### Terminology rules
+
+- Name each new Quantum Measurement concept node as BIAN-XX, where XX ranges from 01 to 99; here, BIAN derives from the Vietnamese word "bí ẩn", meaning "mystery" in English.
+- Use five-digit Buddhist Epistemology node and edge codes consistently: N_BE_00001, N_BE_00002, ... N_BE_00030; ED_BE_00001, ED_BE_00002, ... ED_BE_00039; do not use older shorter forms.
 - In VVV-QMRF terminology, use "registration-state update" / "cập nhật trạng thái ghi nhận" for the general K-side update beyond human cognition; use "detector response" only for the apparatus' physical response.
-- Method: Buddhist Epistemology as primary ontological frame; Quantum Measurement mapped onto it.
-- All information must remain within the scope of Buddhist Epistemology, except for Quantum Measurement cases listed in the Quantum Measurement published documents table below; report any violation immediately.
-- Think before acting.
+
+### Specialized execution rules
+
 - Use the project skill `/rca-scientific-paper` only for scientific paper documents (`scientific paper`) when planning, reviewing, or revising scientific paper claims.
-- Keep mappings structurally simple.
-- Make surgical changes only.
-- Ask for clarification when concepts are ambiguous.
 
 This file provides guidance to Claude Code when working in this project.
 
