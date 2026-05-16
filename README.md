@@ -10,14 +10,6 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-## Thesis / Luận điểm
-
-> **EN:** Quantum Mechanics describes physical events with extraordinary precision but contains no theory of the conditions under which a physical event becomes a valid registration event; Pramāṇavāda was constructed to answer the Buddhist-source question of valid cognition, and its answers — non-substantialist knower, pragmatist validity criterion, denial of context-independent intrinsic properties, self-certifying cognition — map structurally onto the unresolved registration layer of quantum measurement.
->
-> **VN:** Cơ Học Lượng Tử mô tả các sự kiện vật lý với độ chính xác phi thường nhưng không chứa lý thuyết về các điều kiện theo đó một sự kiện vật lý trở thành một sự kiện ghi nhận hợp lệ; Pramāṇavāda trả lời câu hỏi nguồn trong Buddhist Epistemology về nhận thức hợp lệ, và các câu trả lời của nó — người nhận thức phi thực thể luận, tiêu chí hợp lệ thực dụng luận, phủ nhận các tính chất nội tại độc lập ngữ cảnh, nhận thức tự chứng — ánh xạ cấu trúc vào tầng ghi nhận chưa được giải quyết của phép đo lượng tử.
-
----
-
 **Framework / Khung lý thuyết:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)<br/>
 **Legacy name / Tên cũ:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)<br/>
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)<br/>
@@ -25,73 +17,16 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status / Trạng thái:** v4 final documentation release — 16 stable registration postulates (E1–E16), E17 measurement-interface proposal, 2 lemmas, and formalized K-side registration formula registry; 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Bản hoàn tất tài liệu v4 — 16 tiên đề ghi nhận ổn định (E1–E16), đề xuất giao diện phép đo E17, 2 bổ đề, và bảng công thức ghi nhận phía K đã được hình thức hóa; đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ<br/>
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF v4 final documentation release — registration-layer formalization / bản hoàn tất tài liệu v4 — hình thức hóa tầng ghi nhận<br/>
 **Disclaimer / Tuyên bố giới hạn:** [VVV-QMRF Research Status & Disclaimer](DISCLAIMER.md)<br/>
-**Inspiration / Cảm hứng:**<br/>
-**EN:** Laozi (Chinese: 老子; pinyin: Lǎozǐ) — legendary philosopher and author of the *Dao De Jing*; Sun Wu (commonly called Sun Tzu) — author of *The Art of War*; Steve Jobs — co-founder of Apple Inc.<br/>
-**VN:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc.
 
-## Research Methodology / Phương pháp Nghiên cứu
+---
 
-**EN:** This framework was developed using human-directed AI research.
+## Thesis / Luận điểm
 
-- **Author:** designed the research questions, framework architecture, and decision protocol.
-- **Decision protocol:** 3-round RCA, 5-Why evaluation, and scoring with a ≥3.5/5 threshold.
-- **AI tools:** Claude Opus 4.6, Codex, Gemini 3.1 Pro, and DeepSeek V4 Pro executed within the author-defined protocol.
-- **Architectural decisions:** all architectural decisions were made by the author.
-
-**VN:** Khung này được phát triển bằng "human-directed AI research" / nghiên cứu AI do con người định hướng.
-
-- **Tác giả:** thiết kế câu hỏi nghiên cứu, kiến trúc khung, và giao thức ra quyết định.
-- **Giao thức ra quyết định:** 3 vòng "RCA", đánh giá "5-Why", và chấm điểm với ngưỡng ≥3.5/5.
-- **Công cụ AI:** Claude Opus 4.6, Codex, Gemini 3.1 Pro, và DeepSeek V4 Pro thực thi trong giao thức do tác giả định nghĩa.
-- **Quyết định kiến trúc:** mọi quyết định kiến trúc đều do tác giả thực hiện.
-
-## Acknowledgements / Tri ân
-
-**EN:** This work exists because of many conditions converging.
-
-**VN:** Công trình này tồn tại vì nhiều duyên hội tụ.
-
-### Intellectual lineage / Di sản tri thức
-
-- **Dignāga, Dharmakīrti (5th–7th century):** Pramāṇavāda (Buddhist Epistemology / Nhận thức luận Phật giáo).
-- **Nāgārjuna:** Śūnyatā (Emptiness / Tánh Không).
-- **Schrödinger, von Neumann, Einstein:** Quantum Mechanics / Cơ học Lượng tử.
-- **Lão Tử:** Đạo Đức Kinh / Tao Te Ching.
-
-> *"Man follows Earth. Earth follows Heaven. Heaven follows the Tao. The Tao follows only itself."*
+> **EN:** Quantum Mechanics describes physical events with extraordinary precision but contains no theory of the conditions under which a physical event becomes a valid registration event; Pramāṇavāda was constructed to answer the Buddhist-source question of valid cognition, and its answers — non-substantialist knower, pragmatist validity criterion, denial of context-independent intrinsic properties, self-certifying cognition — map structurally onto the unresolved registration layer of quantum measurement.
 >
-> *"Nhân pháp địa, địa pháp thiên, thiên pháp Đạo, Đạo pháp tự nhiên."*
->
-> — **Lão Tử**
+> **VN:** Cơ Học Lượng Tử mô tả các sự kiện vật lý với độ chính xác phi thường nhưng không chứa lý thuyết về các điều kiện theo đó một sự kiện vật lý trở thành một sự kiện ghi nhận hợp lệ; Pramāṇavāda trả lời câu hỏi nguồn trong Buddhist Epistemology về nhận thức hợp lệ, và các câu trả lời của nó — người nhận thức phi thực thể luận, tiêu chí hợp lệ thực dụng luận, phủ nhận các tính chất nội tại độc lập ngữ cảnh, nhận thức tự chứng — ánh xạ cấu trúc vào tầng ghi nhận chưa được giải quyết của phép đo lượng tử.
 
-### Research Methodology / Phương pháp Nghiên cứu
-
-**EN:** This framework was developed using human-directed AI research.
-
-**VN:** Khung lý thuyết này được phát triển bằng phương pháp nghiên cứu AI có định hướng con người.
-
-| Role / Vai trò | EN | VN |
-|----------------|----|----|
-| Author / Tác giả | Designed research questions, framework architecture, decision protocol | Thiết kế câu hỏi nghiên cứu, kiến trúc khung lý thuyết, giao thức quyết định |
-| Decision protocol / Giao thức quyết định | 3-round RCA + 5-Why evaluation + scoring (≥3.5/5 threshold) | 3 vòng RCA + đánh giá 5-Why + chấm điểm (ngưỡng ≥3.5/5) |
-| AI tools / Công cụ AI | Claude Opus 4.6, Codex, Gemini 3.1 Pro, DeepSeek V4 Pro — executed within author-defined protocol | Claude Opus 4.6, Codex, Gemini 3.1 Pro, DeepSeek V4 Pro — thực thi trong giao thức do tác giả định nghĩa |
-| Final decisions / Quyết định cuối | All architectural decisions made by author | Mọi quyết định kiến trúc do tác giả thực hiện |
-
-### Tools / Công cụ
-
-- **Claude Opus 4.6, Codex, Gemini 3.1 Pro, DeepSeek V4 Pro:** AI research partners / đối tác nghiên cứu AI.
-- **GitHub:** open publication platform / nền tảng công bố mở.
-
-### Personal / Cá nhân
-
-**EN:** This work would not exist without:
-
-**VN:** Công trình này không tồn tại nếu thiếu:
-
-- **EN:** Parents — the first condition of all / **VN:** Cha mẹ — duyên đầu tiên của tất cả.
-- **EN:** Family — time, patience, and sacrifice / **VN:** Gia đình — thời gian, sự kiên nhẫn và hy sinh.
-- **EN:** Chương — the child of the author's friend Văn, who inspired the author to see that LLMs and AI tools could open unexpectedly wide creative possibilities / **VN:** Cháu Chương — con của người bạn tên Văn, người gợi cảm hứng rằng "LLM" và các công cụ AI có thể mở ra những khả năng sáng tạo rộng hơn dự kiến.
-- **EN:** 45 years of living, a small affinity with Buddhism and science, and one idle afternoon that began with a question / **VN:** 45 năm sống, một chút duyên với Phật giáo và khoa học, và một buổi rảnh rỗi bắt đầu bằng một câu hỏi.
+---
 
 ## The Central Question / Câu Hỏi Trung Tâm
 
@@ -116,35 +51,6 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **EN:** Both systems face the same logical pressure from the same direction: not every physical interaction is a measurement; not every contact between systems produces valid registration status; something must distinguish the registered measurement event from the merely physical event; neither system can derive this distinction from physics alone.
 
 **VN:** Cả hai hệ thống đối mặt với cùng một áp lực logic từ cùng một hướng: không phải mọi tương tác vật lý đều là một phép đo; không phải mọi tiếp xúc giữa các hệ thống đều tạo ra trạng thái ghi nhận hợp lệ; phải có cái gì đó phân biệt sự kiện đo lường đã được ghi nhận với sự kiện thuần túy vật lý; không hệ thống nào có thể derive sự phân biệt này từ vật lý đơn thuần.
-
----
-
-> *"Man follows Earth. Earth follows Heaven. Heaven follows the Tao. The Tao follows only itself."*
-> 
-> *"Nhân pháp địa, địa pháp thiên, thiên pháp Đạo, Đạo pháp tự nhiên."*
-> 
-> — **Lão Tử**
-
-> *"Stay hungry, stay foolish."*
-> 
-> *"Hãy cứ khát khao, hãy cứ dại khờ."*
-> 
-> — **Steve Jobs**
----
-
-## Sources of Truth / Nguồn Sự thật
-
-| # | SOT Role / Vai trò SOT | Title / Nhan đề | Author / Tác giả | Affiliation / Đơn vị | Published in / Nơi xuất bản | DOI / ISBN |
-|:-:|--------------------------|-----------------|------------------|-----------------------|-----------------------------|------------|
-| 1 | **BE System SOT / SOT hệ BE** | The Buddhist Pramāṇa-Epistemology, Logic, and Language: with Reference to Vasubandhu, Diṅnāga, and Dharmakīrti | Hari Shankar Prasad | University of Delhi, Delhi 110007, India | *Studia Humana*, Vol. 12:1-2 (2023), pp. 21–52 | `10.2478/sh-2023-0004` |
-| 2 | **QM Target SOT / SOT mục tiêu QM** | Quantum Mechanics: The Theoretical Minimum | Leonard Susskind; Art Friedman | Stanford University; Portland State University | Basic Books, 2014 | ISBN 978-0-465-06569-2 (paperback) |
-| 3 | **QM Target SOT / SOT mục tiêu QM** | Quantum Measurement Theory and Practice | Andrew N. Jordan; Irfan A. Siddiqi | Chapman University; University of Rochester; University of California, Berkeley | Cambridge University Press, 2024 | `10.1017/9781009103909` |
-| 4 | **SOT Mapping / SOT ánh xạ** | VVV-QMRF Buddhist–QM Registration Mapping / Ánh xạ ghi nhận Buddhist–QM của VVV-QMRF | Claude (Anthropic) | Anthropic | Internal research document, 2026 / Tài liệu nghiên cứu nội bộ, 2026 | — |
-| 5 | **BIAN Index SOT / SOT mục lục BIAN** | BIAN Index — Source of Truth / Mục lục BIAN — Nguồn sự thật | VietVunVut (Viet - Nguyen Xuan) | AI hug ART | Internal research document, 2026 / Tài liệu nghiên cứu nội bộ, 2026 | — |
-
-> **EN:** **BIAN etymology:** "BIAN" is derived from the Vietnamese word *bí ẩn* — meaning **mystery** or **enigma** in English.
->
-> **VN:** **Nguồn gốc tên gọi BIAN:** "BIAN" bắt nguồn từ tiếng Việt *bí ẩn* — nghĩa là **mystery** hoặc **enigma** trong tiếng Anh.
 
 ---
 
@@ -222,6 +128,15 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | **E5** | $\exists f_{enc}: \lvert R_k\rangle_A \mapsto a_k\text{ internally within }\mathcal{K}$ | Internal K-side encoding; not a second apparatus or new physical observable. |
 | **E6** | $R=\{M_1,M_2,\dots,M_n\}$; $t(M_1)<\dots<t(M_n)$; $\neg\exists\mathbf{I}_R\text{ independent of }\{M_i\}$ | Registering system as ordered process; not a fixed observer, soul, or object replacing the apparatus. |
 | **E7** | $V:\mathcal{M}_K\to\{0,1\}$; $V(M)=1$ by default; $V(M)\to0 \iff \exists M': t(M')>t(M)\land M'\perp M$; $\neg\exists F:F(M')\to\{V(M)=1\}$ | Validity status inside K-side registration; not absolute truth, a physical observable, or a Born-rule replacement. |
+
+> **VN — Ranh giới RCA cho bảng Neo Công thức E1–E7:**
+> E1: Tự chứng nhận sự xuất hiện phía K của M mà không cần M'; không phải sụp đổ do ý thức.
+> E2: Bất khả phân hành vi–kết quả bên trong 𝒦; không phải đồng nhất vật lý trong ℋ.
+> E3: Khóa tương tác khả dụng I thành ghi nhận phía K; không sụp đổ ρ.
+> E4: Không có giá trị biểu tượng ở tầng tiền biểu tượng; không phải vắng mặt tương tác vật lý.
+> E5: Mã hóa nội tại phía K; không phải thiết bị thứ hai hay đại lượng quan sát vật lý mới.
+> E6: Hệ ghi nhận là quá trình có thứ tự; không phải người quan sát cố định, linh hồn, hay vật thể thay thế thiết bị.
+> E7: Trạng thái hợp lệ bên trong ghi nhận phía K; không phải chân lý tuyệt đối, đại lượng quan sát vật lý, hay thay thế quy tắc Born.
 
 ### Extended Postulates (E8–E16) — Structural Expansions / Tiên đề Mở rộng — Mở rộng Cấu trúc
 
@@ -335,33 +250,6 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 
 > **Principle / Nguyên tắc:** Ontological doctrine alone → not a postulate. Extracted registration structure → postulate when it defines a missing K-side operation. Boundary between pipelines → lemma.<br/>
 > **Nguyên tắc:** Chỉ riêng giáo lý bản thể luận → không phải tiên đề. Cấu trúc ghi nhận được trích xuất → là tiên đề khi nó định nghĩa một phép toán phía K còn thiếu. Biên giữa các pipeline → bổ đề.
-
----
-
-## Repository Structure / Cấu trúc thư mục
-
-```
-buddhist-epistemology-quantum-measurement/
-├── README.md                          ← You are here / Bạn đang ở đây
-├── SYSTEM_Buddhist_Epistemology/
-│   └── system_be_full.md              ← BE source of truth for RCA node/edge definitions / SOT BE cho định nghĩa node/edge RCA
-├── SYSTEM_Quantum_Measurement/
-│   ├── index.md                       ← Compact QM node index / Mục lục node QM rút gọn
-│   └── edge_Quantum_Measurement/      ← QM edge documents / Tài liệu edge QM
-├── documents/
-│   ├── published_documents/           ← Published source tables and QM/BE reference documents / Bảng nguồn đã công bố và tài liệu tham chiếu QM/BE
-│   ├── course-highschool-vvv-qmrf/    ← 25-lesson Vietnamese high-school course / Khóa học phổ thông 25 bài bằng tiếng Việt
-│   └── research_documents/
-│       ├── framework/                 ← E1–E16 stable postulates, E17 proposal, formal ρ/K model / E1–E16 ổn định, đề xuất E17, mô hình ρ/K hình thức
-│       ├── synthesis/                 ← S1, S2, S3 integration patterns / Mẫu tích hợp S1, S2, S3
-│       ├── category/                  ← 15 registration category files / 15 file phạm trù ghi nhận
-│       ├── bridge/                    ← Bridge documents between category and framework layers / Tài liệu cầu nối giữa tầng category và framework
-│       ├── mapping/                   ← BE↔QM mapping documents and archives / Tài liệu ánh xạ BE↔QM và archive
-│       ├── meta_architecture/         ← ENI, GCS, MIP, PCC, and registration-layer formalization / ENI, GCS, MIP, PCC và hình thức hóa tầng ghi nhận
-│       ├── vvv-qmrf/                  ← VVV-QMRF node table, dictionary, and system diagrams / Bảng node, từ điển, và sơ đồ hệ thống VVV-QMRF
-│       └── review/                    ← RCA audit reports / Báo cáo audit RCA
-└── papers/                            ← Paper-specific working material / Tư liệu làm việc riêng cho bài viết
-```
 
 ---
 
@@ -597,6 +485,119 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 
 ---
 
+## Sources of Truth / Nguồn Sự thật
+
+| # | SOT Role / Vai trò SOT | Title / Nhan đề | Author / Tác giả | Affiliation / Đơn vị | Published in / Nơi xuất bản | DOI / ISBN |
+|:-:|--------------------------|-----------------|------------------|-----------------------|-----------------------------|------------|
+| 1 | **BE System SOT / SOT hệ BE** | The Buddhist Pramāṇa-Epistemology, Logic, and Language: with Reference to Vasubandhu, Diṅnāga, and Dharmakīrti | Hari Shankar Prasad | University of Delhi, Delhi 110007, India | *Studia Humana*, Vol. 12:1-2 (2023), pp. 21–52 | `10.2478/sh-2023-0004` |
+| 2 | **QM Target SOT / SOT mục tiêu QM** | Quantum Mechanics: The Theoretical Minimum | Leonard Susskind; Art Friedman | Stanford University; Portland State University | Basic Books, 2014 | ISBN 978-0-465-06569-2 (paperback) |
+| 3 | **QM Target SOT / SOT mục tiêu QM** | Quantum Measurement Theory and Practice | Andrew N. Jordan; Irfan A. Siddiqi | Chapman University; University of Rochester; University of California, Berkeley | Cambridge University Press, 2024 | `10.1017/9781009103909` |
+| 4 | **SOT Mapping / SOT ánh xạ** | VVV-QMRF Buddhist–QM Registration Mapping / Ánh xạ ghi nhận Buddhist–QM của VVV-QMRF | Claude (Anthropic) | Anthropic | Internal research document, 2026 / Tài liệu nghiên cứu nội bộ, 2026 | — |
+| 5 | **BIAN Index SOT / SOT mục lục BIAN** | BIAN Index — Source of Truth / Mục lục BIAN — Nguồn sự thật | VietVunVut (Viet - Nguyen Xuan) | AI hug ART | Internal research document, 2026 / Tài liệu nghiên cứu nội bộ, 2026 | — |
+
+> **EN:** **BIAN etymology:** "BIAN" is derived from the Vietnamese word *bí ẩn* — meaning **mystery** or **enigma** in English.
+>
+> **VN:** **Nguồn gốc tên gọi BIAN:** "BIAN" bắt nguồn từ tiếng Việt *bí ẩn* — nghĩa là **mystery** hoặc **enigma** trong tiếng Anh.
+
+---
+
+## Research Methodology / Phương pháp Nghiên cứu
+
+**EN:** This framework was developed using human-directed AI research.
+
+**VN:** Khung lý thuyết này được phát triển bằng phương pháp nghiên cứu AI có định hướng con người.
+
+| Role / Vai trò | EN | VN |
+|----------------|----|----|
+| Author / Tác giả | Designed research questions, framework architecture, decision protocol | Thiết kế câu hỏi nghiên cứu, kiến trúc khung lý thuyết, giao thức quyết định |
+| Decision protocol / Giao thức quyết định | 3-round RCA + 5-Why evaluation + scoring (≥3.5/5 threshold) | 3 vòng RCA + đánh giá 5-Why + chấm điểm (ngưỡng ≥3.5/5) |
+| AI tools / Công cụ AI | Claude Opus 4.6, Codex, Gemini 3.1 Pro, DeepSeek V4 Pro — executed within author-defined protocol | Claude Opus 4.6, Codex, Gemini 3.1 Pro, DeepSeek V4 Pro — thực thi trong giao thức do tác giả định nghĩa |
+| Final decisions / Quyết định cuối | All architectural decisions made by author | Mọi quyết định kiến trúc do tác giả thực hiện |
+
+### Tools / Công cụ
+
+- **Claude Opus 4.6, Codex, Gemini 3.1 Pro, DeepSeek V4 Pro:** AI research partners / đối tác nghiên cứu AI.
+- **GitHub:** open publication platform / nền tảng công bố mở.
+
+---
+
+## Repository Structure / Cấu trúc thư mục
+
+```
+buddhist-epistemology-quantum-measurement/
+├── README.md                          ← You are here / Bạn đang ở đây
+├── SYSTEM_Buddhist_Epistemology/
+│   └── system_be_full.md              ← BE source of truth for RCA node/edge definitions / SOT BE cho định nghĩa node/edge RCA
+├── SYSTEM_Quantum_Measurement/
+│   ├── index.md                       ← Compact QM node index / Mục lục node QM rút gọn
+│   └── edge_Quantum_Measurement/      ← QM edge documents / Tài liệu edge QM
+├── documents/
+│   ├── published_documents/           ← Published source tables and QM/BE reference documents / Bảng nguồn đã công bố và tài liệu tham chiếu QM/BE
+│   ├── course-highschool-vvv-qmrf/    ← 25-lesson Vietnamese high-school course / Khóa học phổ thông 25 bài bằng tiếng Việt
+│   └── research_documents/
+│       ├── framework/                 ← E1–E16 stable postulates, E17 proposal, formal ρ/K model / E1–E16 ổn định, đề xuất E17, mô hình ρ/K hình thức
+│       ├── synthesis/                 ← S1, S2, S3 integration patterns / Mẫu tích hợp S1, S2, S3
+│       ├── category/                  ← 15 registration category files / 15 file phạm trù ghi nhận
+│       ├── bridge/                    ← Bridge documents between category and framework layers / Tài liệu cầu nối giữa tầng category và framework
+│       ├── mapping/                   ← BE↔QM mapping documents and archives / Tài liệu ánh xạ BE↔QM và archive
+│       ├── meta_architecture/         ← ENI, GCS, MIP, PCC, and registration-layer formalization / ENI, GCS, MIP, PCC và hình thức hóa tầng ghi nhận
+│       ├── vvv-qmrf/                  ← VVV-QMRF node table, dictionary, and system diagrams / Bảng node, từ điển, và sơ đồ hệ thống VVV-QMRF
+│       └── review/                    ← RCA audit reports / Báo cáo audit RCA
+└── papers/                            ← Paper-specific working material / Tư liệu làm việc riêng cho bài viết
+```
+
+---
+
+## Acknowledgements / Tri ân
+
+**EN:** This work exists because of many conditions converging.
+
+**VN:** Công trình này tồn tại vì nhiều duyên hội tụ.
+
+### Intellectual lineage / Di sản tri thức
+
+- **Dignāga, Dharmakīrti (5th–7th century):** Pramāṇavāda (Buddhist Epistemology / Nhận thức luận Phật giáo).
+- **Nāgārjuna:** Śūnyatā (Emptiness / Tánh Không).
+- **Schrödinger, von Neumann, Einstein:** Quantum Mechanics / Cơ học Lượng tử.
+- **Lão Tử:** Đạo Đức Kinh / Tao Te Ching.
+
+### Personal / Cá nhân
+
+**EN:** This work would not exist without:
+
+**VN:** Công trình này không tồn tại nếu thiếu:
+
+- **EN:** Parents — the first condition of all / **VN:** Cha mẹ — duyên đầu tiên của tất cả.
+- **EN:** Family — time, patience, and sacrifice / **VN:** Gia đình — thời gian, sự kiên nhẫn và hy sinh.
+- **EN:** Chương — the child of the author's friend Văn, who inspired the author to see that LLMs and AI tools could open unexpectedly wide creative possibilities / **VN:** Cháu Chương — con của người bạn tên Văn, người gợi cảm hứng rằng "LLM" và các công cụ AI có thể mở ra những khả năng sáng tạo rộng hơn dự kiến.
+- **EN:** 45 years of living, a small affinity with Buddhism and science, and one idle afternoon that began with a question / **VN:** 45 năm sống, một chút duyên với Phật giáo và khoa học, và một buổi rảnh rỗi bắt đầu bằng một câu hỏi.
+
+---
+
+## Inspiration / Nguồn cảm hứng
+
+**EN:** Laozi (Chinese: 老子; pinyin: Lǎozǐ) — legendary philosopher and author of the *Dao De Jing*; Sun Wu (commonly called Sun Tzu) — author of *The Art of War*; Steve Jobs — co-founder of Apple Inc.
+
+**VN:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc.
+
+> *"Man follows Earth. Earth follows Heaven. Heaven follows the Tao. The Tao follows only itself."*
+>
+> *"Nhân pháp địa, địa pháp thiên, thiên pháp Đạo, Đạo pháp tự nhiên."*
+>
+> — **Lão Tử**
+
+> *"Biết người biết ta, trăm trận trăm thắng."*  
+> *"Know yourself and know your enemy, and you will never be defeated."*  
+> — Tôn Tử / Sun Tzu
+
+> *"Stay hungry, stay foolish."*
+>
+> *"Hãy cứ khát khao, hãy cứ dại khờ."*
+>
+> — **Steve Jobs**
+
+---
+
 ## Citation / Trích dẫn
 
 ```bibtex
@@ -613,17 +614,6 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 
 ---
 
-## Inspiration / Nguồn cảm hứng
-
-**EN:** Sun Wu (commonly called Sun Tzu) — author of *The Art of War*.<br/>
-**VN:** Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*).
-
-> *"Biết người biết ta, trăm trận trăm thắng."*  
-> *"Know yourself and know your enemy, and you will never be defeated."*  
-> — Tôn Tử / Sun Tzu
-
----
-
 ## Version History / Lịch sử Phiên bản
 
 | Version / Phiên bản | Working Sessions (GMT+7) / Phiên làm việc | Notes / Ghi chú |
@@ -632,6 +622,8 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 | **v2** | after / sau 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Khung mở rộng — 16 tiên đề (E1–E16), 15 phạm trù (Cat 01–15), đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ |
 | **v3** | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. / Đổi tên dự án chính thức từ tên cũ `VVV-EQM` sang tên công khai mới `VVV-QMRF`. Lý do RCA: dùng `registration-state update` / `cập nhật trạng thái ghi nhận` cho cập nhật phía `K` vượt khỏi nhận thức con người; chỉ dùng `detector response` cho phản ứng vật lý của máy đo. |
 | **v4 final** | 2026-05-16 | Registration-layer formalization release — E1–E16 remain stable registration postulates; E17 remains a measurement-interface proposal separating physical `ρ` transition from `K`-side registration-state update; the K-side formula registry is centralized and boundary-checked against Standard QM replacement. / Bản hoàn tất hình thức hóa tầng ghi nhận — E1–E16 vẫn là các tiên đề ghi nhận ổn định; E17 vẫn là đề xuất giao diện phép đo tách chuyển đổi vật lý `ρ` khỏi `registration-state update` phía `K`; bảng công thức phía K được tập trung hóa và kiểm tra ranh giới để không thay thế QM chuẩn. |
+
+---
 
 ## Research Timeline / Dòng thời gian nghiên cứu
 
