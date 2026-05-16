@@ -159,6 +159,8 @@ formula_inventory:
 relationship_rules:
   - relation_id: "R-001"
     relation_type: "dependency | analogy | contrast | derivation | support"
+    arrow: "optional visual notation, for example A → B or A -. label .-> B"
+    arrow_semantics: "what the arrow means and what it must not imply"
 validation_checklist:
   - check: "rule to verify before finalizing"
 failure_modes:
@@ -631,7 +633,42 @@ Các ví dụ này chỉ minh họa cấu trúc trình bày. Chúng không phả
 | `depends_on` | One component requires another. | Must state dependency direction. |
 | `generalizes` | Broader category includes narrower case. | Must avoid erasing the narrower case. |
 
-### 9.2 Non-negotiable boundaries / Ranh giới bắt buộc
+### 9.2 Arrow Semantics / Quy tắc mũi tên
+
+Use arrows only after the relation type is known. An arrow is visual notation for a declared relation; it is not automatically a physical cause, proof, or identity claim.
+
+Chỉ dùng mũi tên sau khi đã biết loại quan hệ. Mũi tên là ký hiệu nhìn cho một quan hệ đã khai báo; nó không tự động là nguyên nhân vật lý, chứng minh, hoặc claim đồng nhất.
+
+| Arrow form | Allowed meaning | Required boundary |
+|---|---|---|
+| `A → B` | Directed dependency or sequence inside one declared layer. | Must state whether the layer is physical `ρ-side`, registration `K-side`, or document logic. |
+| `A ↔ B` | Structural correspondence between two systems. | Mapping is not identity; do not read as equivalence unless separately proven. |
+| `A ⇒ B` | Logical implication inside one formal rule set. | Use only when the source or derivation explicitly supports implication. |
+| `A ⇢ B` | Registration-state update on the K-side. | Not a detector response and not a Standard QM state update. |
+| `A -. label .-> B` | Boundary note, preservation note, contrast, or RCA fix path. | The label must say what is preserved, limited, contrasted, or fixed. |
+| `A ~ B` | Educational analogy or interpretive resemblance. | Analogy is not proof and must not create physical or doctrinal identity. |
+
+Decision rule:
+
+```text
+If the relation is a BE SOT edge, cite ED_BE_000xx first.
+If the relation maps BE to QM, prefer structural correspondence or analogy notation, not causal notation.
+If the relation updates K, use registration-state update language.
+If the relation is Standard QM physics, keep it inside the physical ρ-side and do not mix it with K-side novelty.
+If the relation type is unclear, do not draw the arrow; run RCA first.
+```
+
+Quy tắc chọn:
+
+```text
+Nếu quan hệ là edge trong BE SOT, cite ED_BE_000xx trước.
+Nếu quan hệ map BE sang QM, ưu tiên tương ứng cấu trúc hoặc analogy, không dùng ký hiệu nhân quả.
+Nếu quan hệ cập nhật K, dùng ngôn ngữ "registration-state update".
+Nếu quan hệ là vật lý Standard QM, giữ trong tầng vật lý ρ-side và không trộn với điểm mới K-side.
+Nếu chưa rõ loại quan hệ, không vẽ mũi tên; RCA trước.
+```
+
+### 9.3 Non-negotiable boundaries / Ranh giới bắt buộc
 
 ```text
 Mapping is not identity.

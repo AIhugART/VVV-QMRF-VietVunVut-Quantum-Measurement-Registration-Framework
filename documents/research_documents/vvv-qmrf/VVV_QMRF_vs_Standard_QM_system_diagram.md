@@ -13,6 +13,7 @@ Sơ đồ RCA hệ thống VVV-QMRF và hệ thống đo lượng tử chuẩn h
 - **Mapped domain:** Quantum Measurement
 - **Claim level:** Interpretive mapping and formal registration-layer model
 - **Boundary:** This diagram preserves standard quantum probabilities and state-update rules. It does not claim to replace standard quantum mechanics.
+- **Notation contract:** Arrows follow the Arrow Semantics rule in `documents/research_documents/vvv-qmrf/schema_guide.md`; they mark declared relation types, not automatic physical causation.
 
 ---
 
