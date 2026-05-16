@@ -201,10 +201,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | **E1** | Self-Certification / Tự chứng nhận | Registered measurement certifies itself without external meta-level | Phép đo đã ghi nhận tự xác nhận mà không cần cấp bên ngoài | Svasaṃvedana |
 | **E2** | Self-Completion / Tự hoàn thành | The registration process produces its registered result as part of its operation | Quy trình ghi nhận tự tạo kết quả đã ghi nhận như một phần của chính nó | Pramāṇa-phala |
 | **E3** | Registration Lock / Khóa ghi nhận | An irreversible registration-lock operation converts physical interaction into registered measurement | Phép khóa ghi nhận không đảo ngược biến tương tác vật lý thành phép đo đã ghi nhận | Vyavasāya |
-| **E4** | Pre-Symbolic Stratum / Tầng tiền biểu tượng | Every measurement includes a pre-conceptual physical event | Mỗi phép đo bao gồm sự kiện vật lý trước khái niệm | Nirvikalpaka pratyakṣa |
+| **E4** | Pre-Symbolic Registration Stratum / Tầng ghi nhận tiền biểu tượng | Every measurement includes a raw pre-symbolic registration stratum | Mỗi phép đo bao gồm một tầng ghi nhận thô tiền biểu tượng | Nirvikalpaka pratyakṣa |
 | **E5** | Internal Representation Encoding / Mã hóa biểu diễn nội tại | Results are internally encoded as registration-state representations, not just abstract eigenvalues | Kết quả được mã hóa thành biểu diễn trạng thái ghi nhận, không chỉ là giá trị riêng trừu tượng | Ākāra |
 | **E6** | Registering System as Process / Hệ ghi nhận là quá trình | The registering system is a causal process, not a substance | Hệ ghi nhận là quá trình nhân quả, không phải thực thể | Anātmavāda |
-| **E7** | Validity Location / Vị trí hiệu lực | Registration validity is intrinsic by default; invalidity requires external detection | Hiệu lực ghi nhận là nội tại; vô hiệu cần phát hiện bên ngoài | Svataḥ prāmāṇya |
+| **E7** | Registration Validity Location / Định vị tính hợp lệ ghi nhận | The framework specifies where registered status is valid | Khung này xác định nơi trạng thái đã ghi nhận có hiệu lực | Svataḥ prāmāṇya |
 
 ### Extended Postulates (E8–E16) — Structural Expansions / Tiên đề Mở rộng — Mở rộng Cấu trúc
 
@@ -260,12 +260,12 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ### Synthesis Patterns / Mẫu Tổng hợp
 
 ```
-S1 — Measurement Registration Pipeline / Pipeline Ghi nhận Đo lường
-  E4 →[S1-Λ]→ E5 →[E3]→ r
-  (Pre-symbolic → Encoding → Registration lock → Result)
-  (Tiền biểu tượng → Mã hóa → Khóa ghi nhận → Kết quả)
+S1 — Registration-State Update Pipeline / Ống dẫn Cập nhật Trạng thái Ghi nhận
+  E4 →[S1-Λ]→ E5 →[E3]→ K_i
+  (Pre-symbolic → Encoding → Registration lock → Registered status)
+  (Tiền biểu tượng → Mã hóa → Khóa ghi nhận → Trạng thái đã ghi nhận)
 
-S2 — Self-Validation Loop / Vòng Tự Xác nhận
+S2 — Self-Certifying Registration Loop / Vòng Ghi nhận Tự chứng nhận
   E1 ↔ E2 ↔ E7
   (Self-certification ↔ Self-completion ↔ Registration validity)
   (Tự chứng nhận ↔ Tự hoàn thành ↔ Hiệu lực ghi nhận)
@@ -288,8 +288,8 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 
 | Class | EN / Tiếng Anh | VN / Tiếng Việt | Count | Resolution / Giải pháp |
 |:-----:|----------------|-----------------|:-----:|----------------------|
-| **A** | QM lacks concept entirely | QM hoàn toàn thiếu khái niệm | 9 | Postulates E1–E7 |
-| **B** | QM has stages, lacks map | QM có giai đoạn, thiếu ánh xạ | 2 | Lemma S1-Λ (BIAN-1) + Lemma S2-Δ / E13 (BIAN-8) |
+| **A** | QM lacks concept entirely | QM hoàn toàn thiếu khái niệm | 10 | Postulates E1–E7 + E13 |
+| **B** | QM has stages, lacks map | QM có giai đoạn, thiếu ánh xạ | 1 | Lemma S1-Λ (BIAN-1) |
 | **C** | QM has phenomenon, no label | QM có hiện tượng, chưa đặt tên | 7 | Categories + Postulates E8–E12, E14, E16 |
 | **R** | QM exceeds BE | QM vượt quá Phật học | 1 | Category 14 + Postulate E15 (BIAN-10) |
 | **∅** | Reserved | Dự trữ | 1 | Reserved — see BIAN-10 |
@@ -310,17 +310,14 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 
 ## Key Decisions / Quyết định quan trọng
 
-### BIAN-8 → E8? ❌ Rejected / Bác bỏ
+### BIAN-8 → E13, not E8 / BIAN-8 → E13, không phải E8
 
-**EN:** Kṣaṇabhaṅgavāda (Momentariness) is an important Buddhist doctrine, but it describes *what reality is* (ontology), not *what the registering system does* (registration process). It failed the 4-criteria test (0/4) and is resolved as Lemma S2-Δ instead.
+**EN:** BIAN-8 was rejected only as the earlier proposed **Postulate E8**. Root cause: Kṣaṇabhaṅgavāda (Momentariness) by itself is an ontological doctrine, not a direct registration operator. In the active architecture, BIAN-8 is **Class A** and is resolved by **Category 12 + Postulate E13** as temporal-discontinuity registration. Lemma S2-Δ remains the temporal boundary/connector between successive registration pipelines.
 
-**VN:** Kṣaṇabhaṅgavāda (Thuyết sát-na) là giáo lý Phật giáo quan trọng, nhưng nó mô tả *thực tại là gì* (bản thể luận), không phải *hệ ghi nhận làm gì* (quy trình ghi nhận). Nó thất bại bài kiểm tra 4 tiêu chí (0/4) và được giải quyết bằng Bổ đề S2-Δ.
+**VN:** BIAN-8 chỉ bị bác trong vai trò đề xuất **Tiên đề E8** trước đây. Nguyên nhân gốc: Kṣaṇabhaṅgavāda (Thuyết sát-na) tự nó là giáo lý bản thể luận, không phải toán tử ghi nhận trực tiếp. Trong kiến trúc hiện hành, BIAN-8 là **Class A** và được giải quyết bằng **Category 12 + Postulate E13** như ghi nhận gián đoạn thời gian. Bổ đề S2-Δ vẫn là biên/kết nối thời gian giữa các pipeline ghi nhận liên tiếp.
 
-> **Principle / Nguyên tắc:** Ontological doctrines → Lemmas. Registration processes → Postulates.<br/>
-> **Nguyên tắc:** Giáo lý bản thể luận → Bổ đề. Quá trình ghi nhận → Tiên đề.
-
-> **v2 Update / Cập nhật v2:** In v2, BIAN-8 received an additional resolution as **Postulate E13 (Temporal Discontinuity)** — treating quantum jumps as primary indivisible registration moments (*kṣaṇa*). This is distinct from the rejected "E8" proposal: E13 focuses on the *registration structure* of discontinuous transitions, not the ontological doctrine of momentariness. The Lemma S2-Δ remains as the inter-pipeline connector.<br/>
-> **Cập nhật v2:** Trong v2, BIAN-8 được giải quyết bổ sung bằng **Tiên đề E13 (Gián đoạn Thời gian)** — coi bước nhảy lượng tử là sát-na ghi nhận nguyên thủy bất phân. Đây khác với đề xuất "E8" bị bác bỏ: E13 tập trung vào *cấu trúc ghi nhận* của chuyển tiếp gián đoạn, không phải giáo lý bản thể luận sát-na. Bổ đề S2-Δ vẫn giữ vai trò kết nối giữa các pipeline.
+> **Principle / Nguyên tắc:** Ontological doctrine alone → not a postulate. Extracted registration structure → postulate when it defines a missing K-side operation. Boundary between pipelines → lemma.<br/>
+> **Nguyên tắc:** Chỉ riêng giáo lý bản thể luận → không phải tiên đề. Cấu trúc ghi nhận được trích xuất → là tiên đề khi nó định nghĩa một phép toán phía K còn thiếu. Biên giữa các pipeline → bổ đề.
 
 ---
 
@@ -363,7 +360,7 @@ buddhist-epistemology-quantum-measurement/
 
 | Side / Bên | Name / Tên | Characteristics / Đặc điểm |
 |:----------:|------------|-----------------------------|
-| 🧘 | **Buddhist Epistemology (BE) / Nhận thức luận Phật giáo (BE)** | Dignāga–Dharmakīrti theory of cognition — explains **how humans know** / Hệ thống lý thuyết về nhận thức — giải thích **cách con người biết** |
+| 🧘 | **Buddhist Epistemology (BE) / Nhận thức luận Phật giáo (BE)** | Dignāga–Dharmakīrti theory of cognition and valid registration — models **how cognition is certified** / Hệ thống lý thuyết về nhận thức và ghi nhận hợp lệ — mô hình hóa **cách nhận thức được chứng nhận** |
 | ⚛️ | **Quantum Mechanics (QM) / Cơ học Lượng tử (QM)** | Modern physical theory — describes **how to measure subatomic particles** / Lý thuyết vật lý hiện đại — mô tả **cách đo lường hạt vi mô** |
 
 #### Central Question / Câu hỏi trung tâm
@@ -386,10 +383,10 @@ buddhist-epistemology-quantum-measurement/
 | **E1** | Self-Certification | Tự chứng nhận | EN: Registered measurement must self-certify — QM lacks this / VN: Phép đo đã ghi nhận phải tự chứng nhận — QM không có điều này | Svasaṃvedana (Self-awareness / Tự giác) |
 | **E2** | Registration Self-Completion | Tự hoàn thành ghi nhận | EN: Registration process must terminate without external confirmation / VN: Quy trình ghi nhận phải tự kết thúc mà không cần ai bên ngoài xác nhận | Pramāṇa-phala (Epistemic result / Kết quả nhận thức) |
 | **E3** | Registration Lock | Khóa ghi nhận | EN: A distinct **registration-lock operation** separate from physical recording / VN: Phải có phép **khóa ghi nhận** riêng, tách khỏi ghi nhận vật lý | Vyavasāya (Determination / Quyết đoán) |
-| **E4** | Pre-Symbolic Layer | Tầng tiền biểu tượng | EN: Before data, there is a raw unstructured event layer / VN: Trước khi có số liệu, có một lớp sự kiện thô chưa có cấu trúc | Nirvikalpaka pratyakṣa (Pure perception / Tri giác thuần túy) |
+| **E4** | Pre-Symbolic Registration Stratum | Tầng ghi nhận tiền biểu tượng | EN: Before data, there is a raw unstructured registration stratum / VN: Trước khi có số liệu, có một tầng ghi nhận thô chưa có cấu trúc | Nirvikalpaka pratyakṣa (Pure perception / Tri giác thuần túy) |
 | **E5** | Internal Representation Encoding | Mã hóa biểu diễn nội tại | EN: Raw data must be converted into internal representation / VN: Dữ liệu thô phải được chuyển thành biểu diễn nội tại | Ākāra (Cognitive form / Hình thức nhận thức) |
 | **E6** | Registering System as Process | Hệ ghi nhận là quá trình | EN: The registering system is not a fixed object but a **continuous process** / VN: Hệ ghi nhận không phải vật thể cố định mà là một **quá trình liên tục** | Anātmavāda (Non-self / Vô ngã) |
-| **E7** | Validity Locus | Vị trí hiệu lực | EN: Must specify **where** in the system a registered result is valid / VN: Phải xác định **ở đâu** trong hệ thống mà kết quả đã ghi nhận được coi là hợp lệ | Svataḥ prāmāṇya (Self-validation / Tự chứng thực) |
+| **E7** | Registration Validity Location | Định vị tính hợp lệ ghi nhận | EN: Must specify **where** in the registration framework a registered result is valid / VN: Phải xác định **ở đâu** trong khung ghi nhận mà kết quả đã ghi nhận được coi là hợp lệ | Svataḥ prāmāṇya (Self-validation / Tự chứng thực) |
 
 #### 2b. Nine Extended Postulates (E8–E16) / Chín Tiên đề Mở rộng (E8–E16)
 
@@ -430,8 +427,8 @@ buddhist-epistemology-quantum-measurement/
 
 | Layer / Lớp | EN Name | VN Name | Meaning / Ý nghĩa | Resolution / Cách giải quyết | Count / Số lượng |
 |:-----------:|---------|---------|-------------------|------------------------------|:----------------:|
-| **A** | Structural | Cấu trúc | EN: QM **completely lacks** the concept / VN: QM **hoàn toàn thiếu** khái niệm | Create new Postulate / Tạo Tiên đề mới | **9** |
-| **B** | Interface | Giao diện | EN: QM has adjacent phases but lacks a **bridge** / VN: QM có hai giai đoạn kề nhau nhưng thiếu **cầu nối** | Create Lemma / Tạo Bổ đề | **2** |
+| **A** | Structural | Cấu trúc | EN: QM **completely lacks** the concept / VN: QM **hoàn toàn thiếu** khái niệm | Create new Postulate / Tạo Tiên đề mới | **10** |
+| **B** | Interface | Giao diện | EN: QM has adjacent phases but lacks a **bridge** / VN: QM có hai giai đoạn kề nhau nhưng thiếu **cầu nối** | Create Lemma / Tạo Bổ đề | **1** |
 | **C** | Implicit | Ngầm định | EN: QM has the phenomenon but lacks **formal classification** / VN: QM có hiện tượng nhưng thiếu **phân loại chính thức** | Category + Postulate E8–E12, E14, E16 / Danh mục + Tiên đề | **7** |
 | **R** | Reverse | Ngược | EN: QM has something Buddhism **does not** / VN: QM có thứ mà Phật giáo **không có** | Category 14 + E15 / Danh mục 14 + Tiên đề E15 | **1** |
 | **X** | Unresolved | Chưa giải | EN: Resolution method not yet identified / VN: Chưa xác định được cách xử lý | Further research / Nghiên cứu thêm | **0** |
@@ -447,8 +444,8 @@ buddhist-epistemology-quantum-measurement/
 | 4 | No formal theory of internal representation | Không có lý thuyết hình thức biểu diễn nội tại | **A** | Postulate E5 / Tiên đề E5 |
 | 5 | Confusion of physical recording and registration lock | Lẫn lộn ghi nhận vật lý và khóa ghi nhận | **A** | Postulate E3 / Tiên đề E3 |
 | 6 | No self-certifying measurement structure | Không có cấu trúc đo lường tự chứng nhận | **A** | Postulate E1 / Tiên đề E1 |
-| 7 | No pre-symbolic layer | Không có tầng tiền biểu tượng | **A** | Postulate E4 / Tiên đề E4 |
-| 8 | No registration theory of temporal discontinuity | Không có lý thuyết ghi nhận về gián đoạn thời gian | **B** | Lemma S2-Δ + E13 / Bổ đề S2-Δ + Tiên đề E13 |
+| 7 | No pre-symbolic registration stratum | Không có tầng ghi nhận tiền biểu tượng | **A** | Postulate E4 / Tiên đề E4 |
+| 8 | No registration theory of temporal discontinuity | Không có lý thuyết ghi nhận về gián đoạn thời gian | **A** | Cat.12 + E13; S2-Δ boundary/connector / Danh mục 12 + Tiên đề E13; S2-Δ là biên/kết nối |
 | 9 | No classification of absence registration | Không có phân loại ghi nhận vắng mặt | **C** | Cat.13 + E14 / Danh mục 13 + Tiên đề E14 |
 | 10 | Non-classical correlation (reverse BIAN) | Tương quan phi cổ điển (BIAN ngược) | **R** | Cat.14 + E15 / Danh mục 14 + Tiên đề E15 |
 | 11 | No pre-measurement registration-state model | Không có mô hình trạng thái ghi nhận trước đo | **C** | Cat.15 + E16 / Danh mục 15 + Tiên đề E16 |
@@ -462,19 +459,18 @@ buddhist-epistemology-quantum-measurement/
 | 19 | Registering system assumed as entity, not process | Hệ ghi nhận bị giả định là thực thể, không phải quá trình | **A** | Postulate E6 / Tiên đề E6 |
 | 20 | Reserve (see BIAN-10) | Dự trữ (xem BIAN-10) | **∅** | — |
 
-### 4. Key Decision: BIAN-8 → Lemma S2-Δ (not Postulate E8)
+### 4. Key Decision: BIAN-8 → Category 12 + E13, with S2-Δ boundary / BIAN-8 → Category 12 + E13, với biên S2-Δ
 
-**EN:** Kṣaṇabhaṅgavāda (Momentariness / Sát-na diệt) was evaluated against 4 criteria for Postulate status. **Result: 0/4 — rejected as a Postulate.** It describes ontological reality, not a registration operation; it adds no new registration operator that QM lacks; and its gap occurs *between* measurements, not *within* them. It was correctly classified as **Lemma S2-Δ** — a registration boundary condition, not an operator.
+**EN:** BIAN-8 is no longer classified as only Lemma S2-Δ. The earlier **Postulate E8** proposal was rejected because the raw doctrine of momentariness is ontological, not a direct registration operator. The active architecture isolates the registration-side structure of temporal discontinuity, classifies BIAN-8 as **Class A**, and resolves it through **Category 12 + Postulate E13**. Lemma S2-Δ remains a temporal boundary/connector between successive pipelines, not the whole resolution.
 
-**VN:** Kṣaṇabhaṅgavāda (Sát-na diệt) được kiểm tra theo 4 tiêu chí để xét địa vị Tiên đề. **Kết quả: 0/4 — bị bác.** Nó mô tả thực tại bản thể học, không phải phép toán ghi nhận; không thêm toán tử ghi nhận mới mà QM đang thiếu; và gián đoạn xảy ra *giữa* hai phép đo, không phải *trong* quy trình. Được phân loại đúng là **Bổ đề S2-Δ** — điều kiện biên ghi nhận, không phải toán tử.
+**VN:** BIAN-8 không còn được phân loại chỉ là Bổ đề S2-Δ. Đề xuất **Tiên đề E8** trước đây bị bác vì giáo lý sát-na thô là bản thể luận, không phải toán tử ghi nhận trực tiếp. Kiến trúc hiện hành cô lập cấu trúc phía ghi nhận của gián đoạn thời gian, xếp BIAN-8 là **Class A**, và giải quyết bằng **Category 12 + Postulate E13**. Bổ đề S2-Δ vẫn là biên/kết nối thời gian giữa các pipeline liên tiếp, không phải toàn bộ lời giải.
 
-> 📄 **EN:** Full 4-criteria test, analogy, and architectural justification: [BIAN1_resolution_verification.md](documents/research_documents/gap/BIAN1_resolution_verification.md)<br/>
-> **VN:** Bài kiểm tra đầy đủ 4 tiêu chí, phần tương đồng, và biện minh kiến trúc: [BIAN1_resolution_verification.md](documents/research_documents/gap/BIAN1_resolution_verification.md)
+> **Docs / Tài liệu:** [BIAN_index_SOT.md](documents/research_documents/gap/BIAN_index_SOT.md), [S2 self-certifying registration loop](documents/research_documents/synthesis/vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md), [E13 temporal discontinuity registration postulate](documents/research_documents/framework/vvv_qmrf_framework_e13_temporal_discontinuity_registration_postulate.md)
 
-### 5. Measurement Registration Pipeline / Ống dẫn ghi nhận đo lường (S1 Pipeline)
+### 5. Registration-State Update Pipeline / Ống dẫn Cập nhật Trạng thái Ghi nhận (S1 Pipeline)
 
-**EN:** The sequence every registered measurement passes through:<br/>
-**VN:** Đây là "quy trình" mà một phép đo đã ghi nhận trải qua:
+**EN:** The K-side sequence every registered measurement passes through:<br/>
+**VN:** Đây là chuỗi phía `K` mà một phép đo đã ghi nhận trải qua:
 
 ```
 Step 1 / Bước 1: ε(M) — Raw event, unstructured (E4)
@@ -482,17 +478,17 @@ Step 1 / Bước 1: ε(M) — Raw event, unstructured (E4)
    │    Example / Ví dụ: physical interaction occurs at detector boundary / tương tác vật lý xảy ra tại ranh giới máy dò
    │
    ▼ ◆ Λ — Symbolization (Lemma S1-Λ) / Biểu tượng hóa (Bổ đề S1-Λ)
-   │    Example / Ví dụ: Signal enters the registration interface / Tín hiệu đi vào giao diện ghi nhận
+   │    Example / Ví dụ: physical signal reaches the registration interface / tín hiệu vật lý đạt tới giao diện ghi nhận
    │
 Step 2 / Bước 2: Ā(M) — Internal representation encoding (E5) / Mã hóa biểu diễn nội tại
    │    Example / Ví dụ: registration-state update occurs with an internal representation / cập nhật trạng thái ghi nhận xảy ra với một biểu diễn nội tại
    │
    ▼
 Step 3 / Bước 3: V̂ — Registration lock (E3) / Khóa ghi nhận
-   │    Example / Ví dụ: Registration lock classifies the result as r / Khóa ghi nhận phân loại kết quả là r
+   │    Example / Ví dụ: registration lock establishes K_i as definite registered status / khóa ghi nhận thiết lập K_i như trạng thái đã ghi nhận xác định
    │
    ▼
-   r — Registered measurement result ✓ / Kết quả đo lường đã ghi nhận ✓
+   K_i — Definite registered status ✓ / Trạng thái đã ghi nhận xác định ✓
 
    ║
    ║ ◆ Δ — Temporal gap (Lemma S2-Δ) / Gián đoạn thời gian (Bổ đề S2-Δ)
@@ -510,9 +506,9 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 | "Measurement yields result" / "Đo xong có kết quả" | "Registered measurement must **self-certify**" / "Phép đo đã ghi nhận phải **tự chứng nhận**" | E1 |
 | "Result appears" / "Kết quả xuất hiện" | "Must **self-terminate** without external confirmation" / "Phải **tự kết thúc**, không cần ai bên ngoài" | E2 |
 | "State collapses" / "Trạng thái sụp đổ" | "Must have a distinct **registration lock**" / "Phải có **khóa ghi nhận** riêng biệt" | E3 |
-| "Starts from eigenvalue" / "Bắt đầu từ eigenvalue" | "Before eigenvalue: **raw pre-symbolic event**" / "Trước eigenvalue có **sự kiện thô** chưa biểu tượng" | E4 |
+| "Starts from eigenvalue" / "Bắt đầu từ eigenvalue" | "Before eigenvalue: **raw pre-symbolic registration stratum**" / "Trước eigenvalue có **tầng ghi nhận thô tiền biểu tượng**" | E4 |
 | "Data recorded" / "Ghi nhận số liệu" | "Data must be **internally encoded** as a registration representation" / "Số liệu phải được **mã hóa nội tại** thành biểu diễn ghi nhận" | E5 |
-| "Observer is a physical system" / "Người quan sát là hệ vật lý" | "Registering system is a **process**, not an object" / "Hệ ghi nhận là **quá trình**, không phải vật thể" | E6 |
+| "Registering role is treated as a physical system" / "Vai trò ghi nhận được xem như một hệ vật lý" | "Registering system is a **process**, not an object" / "Hệ ghi nhận là **quá trình**, không phải vật thể" | E6 |
 | "Result valid when repeatable" / "Kết quả hợp lệ khi tái lặp" | "Must specify **where** registered result is valid" / "Phải xác định **ở đâu** kết quả đã ghi nhận có hiệu lực" | E7 |
 | "Old result still holds" / "Kết quả đo cũ vẫn đúng" | "Later registered measurement can **annul** prior result" / "Phép đo đã ghi nhận sau có thể **hủy** kết quả trước" | E8 |
 | "No measurement = nothing" / "Không đo = không có gì" | "Interaction + no registered information = **distinct registration status**" / "Tương tác + không có thông tin đã ghi nhận = trạng thái ghi nhận **riêng biệt**" | E9 |
