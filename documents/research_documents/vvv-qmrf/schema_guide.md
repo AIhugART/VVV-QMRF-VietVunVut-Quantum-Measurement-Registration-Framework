@@ -6,9 +6,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Document type:** Schema guide / Document creation contract  
 **Status:** Derived control guide — not a new postulate, not a new SOT  
-**Scope:** `documents/research_documents/` and future VVV-QMRF research documents  
-**Primary purpose:** Create new VVV-QMRF documents that are structurally complete, traceable to SOT, and safe against overclaiming.  
-**Mục đích chính:** Tạo tài liệu VVV-QMRF mới sao cho đủ cấu trúc, truy vết được về "SOT", và tránh khẳng định quá mức.
+**Scope:** `documents/research_documents/`, `documents/course-highschool-vvv-qmrf/`, and future VVV-QMRF research or educational documents  
+**Primary purpose:** Create new VVV-QMRF documents and educational lessons that are structurally complete, traceable to SOT, and safe against overclaiming.  
+**Mục đích chính:** Tạo tài liệu VVV-QMRF và bài học giáo dục mới sao cho đủ cấu trúc, truy vết được về "SOT", và tránh khẳng định quá mức.
 
 ---
 
@@ -131,7 +131,7 @@ Mọi doc mới nên có các trường này, hoặc nói rõ vì sao trường 
 
 ```yaml
 document_id: "stable identifier for the document"
-document_type: "framework | category | mapping | meta_architecture | synthesis | mathematical_formula | index | publication_draft"
+document_type: "framework | category | mapping | meta_architecture | synthesis | mathematical_formula | index | publication_draft | course_lesson | highschool_lesson | academic_lesson"
 date: "YYYY-MM-DD, for example 2026-05-16"
 title_en: "English title"
 title_vn: "Vietnamese title when useful"
@@ -366,6 +366,68 @@ Required blocks:
 | `citation_discipline` | No invented sources. Mark missing citation explicitly. |
 | `non_overclaim_rule` | Never say BE solves QM unless formal proof and tests exist. |
 | `reader_level` | State whether the text is technical, general, or bilingual explanatory. |
+
+### 5.9 Educational course document / Tài liệu bài học giáo dục
+
+Use for lessons, course units, high-school explanations, and academic teaching notes derived from VVV-QMRF.
+
+Dùng cho bài học, đơn vị khóa học, giải thích phổ thông, và ghi chú giảng dạy học thuật được rút ra từ VVV-QMRF.
+
+Allowed educational `document_type` values:
+
+| Document type | Use when | Reader level |
+|---|---|---|
+| `course_lesson` | The lesson belongs to a course but does not need a more specific level. | Declared in the lesson metadata. |
+| `highschool_lesson` | The lesson is written for high-school learners or introductory public teaching. | High-school / phổ thông. |
+| `academic_lesson` | The lesson is written for university, research, or technically trained readers. | Undergraduate, graduate, or research-facing. |
+
+Required blocks:
+
+| Block | Requirement |
+|---|---|
+| `learning_objectives` | State what the learner should understand after the lesson. |
+| `reader_level` | Declare `highschool`, `undergraduate`, `academic`, or another explicit level. |
+| `source_trace` | Point back to this schema and the active VVV-QMRF or BE/QM sources used. |
+| `concept_boundary` | State what each simplified concept must not be taken to mean. |
+| `formula_boundary` | Required when symbols appear; distinguish teaching notation from formal claim. |
+| `misconception_guard` | List likely misunderstandings and block them directly. |
+| `main_lesson` | Present the teaching content at the declared reader level. |
+| `example_or_analogy` | Mark examples as analogy unless equivalence is explicitly justified. |
+| `exercise_or_quiz` | Include questions or exercises when useful for learning validation. |
+| `what_this_lesson_does_not_claim` | Required non-claims for QM, BE, and VVV-QMRF boundaries. |
+| `mini_validation_checklist` | Short checklist confirming source trace, boundaries, and no overclaim. |
+
+High-school lesson rule:
+
+```text
+A highschool_lesson may simplify language, but it must not simplify the claim boundary.
+Teaching analogies are allowed only when they are marked as analogies, not proofs.
+```
+
+```text
+Bài highschool_lesson có thể làm ngôn ngữ dễ hơn, nhưng không được làm ranh giới claim lỏng hơn.
+Ví dụ minh họa chỉ được dùng như analogy, không phải proof.
+```
+
+Academic lesson rule:
+
+```text
+An academic_lesson must preserve source trace, claim type, formula class, and boundary conditions when it teaches a research concept.
+```
+
+```text
+Bài academic_lesson phải giữ truy vết nguồn, loại claim, loại công thức, và điều kiện biên khi giảng một concept nghiên cứu.
+```
+
+Educational RCA rule:
+
+```text
+If a learner-friendly sentence sounds stronger than the research source, downgrade the sentence before adding more explanation.
+```
+
+```text
+Nếu một câu dễ học nghe mạnh hơn nguồn nghiên cứu, hãy hạ cấp câu đó trước khi thêm giải thích.
+```
 
 ---
 
@@ -766,6 +828,58 @@ This is a structural mapping, not an identity claim.
 ## LLM Usage Rule
 ````
 
+### 12.4 Educational lesson template / Template bài học giáo dục
+
+```markdown
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
+# [Lesson Title EN or VN]
+
+**Document type:** [course_lesson/highschool_lesson/academic_lesson]
+**Date:** YYYY-MM-DD
+**Status:** educational draft
+**Reader level:** [highschool/undergraduate/academic]
+**Scope:** [allowed teaching scope]
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; [active source path]
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation unless explicitly classified as formal VVV-QMRF notation.
+
+## 1. Learning Objectives / Mục tiêu bài học
+
+## 2. RCA Learning Problem / Vấn đề học tập theo RCA
+
+### Define
+### Trace
+### Isolate
+### Fix
+### Verify
+
+## 3. Main Lesson / Bài giảng chính
+
+## 4. Example or Analogy / Ví dụ hoặc analogy
+
+## 5. Formula or Symbol Explanation / Giải thích công thức hoặc ký hiệu
+
+## 6. Misconception Guard / Chặn hiểu sai
+
+## 7. Exercise or Quiz / Bài tập hoặc trắc nghiệm
+
+## 8. Source Links / Nguồn liên quan
+
+## What This Lesson Does NOT Claim
+
+* It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+* It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+* It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+* Reader level is declared.
+* Source trace is listed.
+* Claim boundary and formula boundary are stated.
+* Analogies are marked as analogies, not proofs.
+```
+
 ---
 
 ## 13. RCA Verification Checklist / Checklist Kiểm chứng RCA
@@ -785,6 +899,11 @@ Dùng checklist này trước khi coi doc mới là hoàn thành.
 | Derived claims | Every derived claim has a derivation path. |
 | Mapping boundary | Every cross-system mapping says whether it is analogy, support, contrast, or equivalence. |
 | Formula registry | Every formula has defined symbols and a validity domain. |
+| Reader level | Educational documents declare the intended learner level. |
+| Lesson boundaries | Educational documents include claim boundary and formula boundary. |
+| Teaching analogy | A lesson marks analogies as analogies, not proof. |
+| High-school simplification | `highschool_lesson` simplifies language without weakening claim boundaries. |
+| Academic lesson trace | `academic_lesson` preserves source trace, claim type, formula class, and boundary conditions. |
 | Non-claims | The document states what it does not claim. |
 | K-side vs ρ-side | Registration-layer claims do not modify physical QM unless explicitly justified. |
 | Terminology | Uses `registration-state update` for K-side update and `detector response` only for apparatus response. |
