@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Legacy Name: Null Observer Event Postulate / Tiên đề Sự kiện Quan sát viên Rỗng / VVV-EQM
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** framework
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
@@ -95,9 +96,9 @@ Distinguished from:
 
 ---
 
-## 6. QM Deficit
+## 6. K-side non-specification in Standard QM
 
-QM can describe missed detections through experimental efficiency ($\eta$), POVM/no-click effects, no-result measurement, and decoherence. What remains missing is a registration-layer distinction between "missed because no interaction occurred" and "interaction occurred but no valid K-side registration was encoded." E9 establishes that distinction as a VVV-QMRF postulate.
+Standard QM can describe missed detections through experimental efficiency ($\eta$), POVM/no-click effects, no-result measurement, and decoherence. What remains unspecified at the K-side registration layer is the distinction between "missed because no interaction occurred" and "interaction occurred but no valid K-side registration was encoded." E9 establishes that bounded registration-layer distinction as a VVV-QMRF postulate.
 
 ---
 
@@ -138,3 +139,14 @@ Category 06 supplies the bounded registration category. E9 elevates it to archit
 
 *Source: category/vvv_qmrf_category_06_e09_null_registering_system_event.md, framework/vvv_qmrf_framework_e06_registering_system_as_process_postulate.md, BIAN_index_SOT.md*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `framework` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Review required | Add explicit non-identity and non-physical-law boundaries before reuse. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

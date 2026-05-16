@@ -7,6 +7,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Current Filename: vvv_qmrf_meta_architecture_registration_natural_interface_principle.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** meta_architecture
 **Date:** 2026-05-11  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **Cite:** VietVunVut (2026), VVV-QMRF §ENI
@@ -219,7 +220,7 @@ ENI can be cross-referenced with Jordan & Siddiqi (2024):
 | Information–Disturbance Trade-off | #12 | ⚠️ Near — describes WHAT is traded, but not the interface structure |
 | Partial Wavefunction Collapse | #17 | ✅ Partial Λ = partial interface activation |
 | Measurement Strength (κ) | #29 | ✅ κ parametrizes the DEGREE of Λ |
-| Heisenberg Cut | #51 | ❌ Replaced by ENI + V̂_yava boundary |
+| Heisenberg Cut | #51 | ⚠️ K-side registration-boundary counterpart: ENI + V̂_yava; not a replacement of the physical formalism |
 | Post-Measurement State Update | #57 | ⚠️ Describes OUTPUT but not the internal interface |
 
 ### Key insight:
@@ -274,9 +275,10 @@ ENI:    φᵢ (natural interface)    → general principle covering Λ, κ, and 
 │  WHAT:  Formal maps between registration stages that are          │
 │         neither separate operations nor trivial identities       │
 │                                                                  │
-│  WHY:   QM has no language for "inside the measurement"          │
+│  WHY:   Standard QM does not explicitly model K-side              │
+│         registration-interior structure                           │
 │         BE has the intuition (sahaja) but no formalism           │
-│         VVV-QMRF creates BOTH the language AND the formalism      │
+│         VVV-QMRF creates K-side language and formalism            │
 │                                                                  │
 │  NOVELTY: First formalization as a registration-layer system      │
 │                                                                  │
@@ -295,14 +297,25 @@ ENI:    φᵢ (natural interface)    → general principle covering Λ, κ, and 
 
 | Document | Section | Role |
 |----------|---------|------|
-| [RCA_BIAN1_verification.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_verification.md) | Full BIAN-1 RCA | Source evidence |
-| [RCA_BIAN1_E8_vs_Lemma.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_E8_vs_Lemma.md) | E8 vs Lemma decision | Resolution path |
-| [vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) | §4d: S1-Λ (Registration-State Update Pipeline) | First ENI instance |
-| [vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md) | §3: Λ operator | Operator origin |
-| [Jordan_Siddiqi_QM_Measurement_concept_table.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/published_documents/Jordan_Siddiqi_QM_Measurement_concept_table.md) | #12, #17, #29, #51, #57 | QM-side mapping |
-| [vvv_qmrf_registration_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/vvv_qmrf_registration_categories_index.md) | Master Index | Framework context |
+| [BIAN1_resolution_verification.md](../achives/gap/BIAN1_resolution_verification.md) | Full BIAN-1 RCA | Source evidence |
+| [RCA_BIAN1_E8_vs_Lemma.md](../achives/review/RCA_BIAN1_E8_vs_Lemma.md) | E8 vs Lemma decision | Resolution path |
+| [vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md](../synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) | §4d: S1-Λ (Registration-State Update Pipeline) | First ENI instance |
+| [vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md](../framework/vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md) | §3: Λ operator | Operator origin |
+| [Jordan_Siddiqi_QM_Measurement_concept_table.md](../../published_documents/Jordan_Siddiqi_QM_Measurement_concept_table.md) | #12, #17, #29, #51, #57 | QM-side mapping |
+| [vvv_qmrf_registration_categories_index.md](../category/vvv_qmrf_registration_categories_index.md) | Master Index | Framework context |
 
 ---
 
 *Evidence chain: BIAN-1 gap → S1-Λ resolution → ENI principle. Sources: BIAN_gap_analysis_ver_01 §BIAN-1; S1 §4d; E4 §3; Source doc L171, L207; Jordan-Siddiqi #12, #17, #29.*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

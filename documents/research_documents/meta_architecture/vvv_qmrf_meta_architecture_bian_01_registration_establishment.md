@@ -6,6 +6,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Current Filename: vvv_qmrf_meta_architecture_bian_01_registration_establishment.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** meta_architecture
 **Date:** 2026-05-11
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **Cite:** VVV-QMRF §META
@@ -68,7 +69,7 @@ BIAN-1 (gap)
 | **Status** | Integrated into `synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md §4d` (Registration-State Update Pipeline) |
 | **Cite** | VVV-QMRF §S1-Λ |
 
-**Artifact:** [RCA_BIAN1_verification.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_verification.md)
+**Artifact:** [BIAN1_resolution_verification.md](../achives/gap/BIAN1_resolution_verification.md)
 
 ### 2b. ENI — Registration Natural Interface (legacy code: Epistemic Natural Interface) / Giao diện Ghi nhận Tự nhiên
 
@@ -81,7 +82,7 @@ BIAN-1 (gap)
 | **Instance** | S1-Λ is the first (and currently only) confirmed ENI instance |
 | **Cite** | VVV-QMRF §ENI |
 
-**Artifact:** [RCA_BIAN1_new_epistemic.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_new_epistemic.md)
+**Artifact:** [RCA_BIAN1_new_epistemic.md](../achives/review/RCA_BIAN1_new_epistemic.md)
 
 ### 2c. GCS — Gap Classification System / Hệ thống Phân loại Khoảng trống
 
@@ -94,15 +95,15 @@ BIAN-1 (gap)
 | **Key finding** | Class B is CLOSED — only 1 instance. BIAN-8 is strongest Class X→A candidate |
 | **Cite** | VVV-QMRF §GCS |
 
-**Artifact:** [RCA_gap_classification_system.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_gap_classification_system.md)
+**Artifact:** [vvv_qmrf_meta_architecture_gap_classification_system.md](vvv_qmrf_meta_architecture_gap_classification_system.md)
 
 ### 2d. MIP — Measurement Interiority Principle / Nguyên lý Nội tại Phép đo
 
 | Property | Value |
 |----------|-------|
-| **What** | Every measurement act has formally analyzable internal registration structure |
-| **Why new** | QM treats measurement as black box (input: quantum state → output: classical number) |
-| **Derived from** | The very existence of BIAN-1 proves measurement has "interior" that QM ignores |
+| **What** | Every measurement act has formally analyzable K-side internal registration structure |
+| **Why new** | Standard QM treats measurement operationally for physical probability and state update, without an explicit K-side registration-interior model |
+| **Derived from** | BIAN-1 motivates a K-side registration-interior model not specified by standard physical QM |
 
 **Statement (EN):**
 > Every measurement act M possesses internal registration structure that is formally decomposable into distinct stages (pre-symbolic, encoding, registration lock). The treatment of M as an atomic, structureless event is an architectural simplification, not a physical fact.
@@ -118,8 +119,8 @@ MIP:
     where Sᵢ are registration stages
     and φᵢ are inter-stage maps (postulates or ENI instances)
     
-  QM violation: QM treats M = {input → output}
-  VVV-QMRF correction: M = {ε(M) →[Λ]→ Ā(M) →[E3]→ V̂(M)}
+  Standard QM physical layer: M supports physical probability and state-update calculation
+  VVV-QMRF registration-layer extension: M_K = {ε(M) →[Λ]→ Ā(M) →[E3]→ V̂(M)}
 ```
 
 **Why MIP is distinct from ENI:**
@@ -129,7 +130,7 @@ MIP:
 | **Scope** | About interfaces BETWEEN stages | About the EXISTENCE of internal structure |
 | **Claim** | "Natural maps exist at joints" | "Measurement HAS joints to begin with" |
 | **Level** | Architectural (how to connect) | Ontological (that structure exists) |
-| **QM deficit** | No interface formalism | No interiority concept at all |
+| **K-side non-specification in Standard QM** | No explicit registration-interface formalism | No explicit registration-interiority model |
 
 ### 2e. PCC — Pipeline Completeness Criterion / Tiêu chí Hoàn chỉnh Ống dẫn
 
@@ -300,10 +301,10 @@ AFTER BIAN-1:
 
 | Artifact | Content | Status |
 |----------|---------|:------:|
-| [RCA_BIAN1_E8_vs_Lemma.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_E8_vs_Lemma.md) | E8 rejection decision | ✅ Final |
-| [RCA_BIAN1_verification.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_verification.md) | Complete BIAN-1 resolution evidence | ✅ Final |
-| [RCA_BIAN1_new_epistemic.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_new_epistemic.md) | ENI principle derivation | ✅ Final |
-| [RCA_gap_classification_system.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_gap_classification_system.md) | GCS full audit of 20 BIAN | ✅ Final |
+| [RCA_BIAN1_E8_vs_Lemma.md](../achives/review/RCA_BIAN1_E8_vs_Lemma.md) | E8 rejection decision | ✅ Final |
+| [BIAN1_resolution_verification.md](../achives/gap/BIAN1_resolution_verification.md) | Complete BIAN-1 resolution evidence | ✅ Final |
+| [RCA_BIAN1_new_epistemic.md](../achives/review/RCA_BIAN1_new_epistemic.md) | ENI principle derivation | ✅ Final |
+| [vvv_qmrf_meta_architecture_gap_classification_system.md](vvv_qmrf_meta_architecture_gap_classification_system.md) | GCS full audit of 20 BIAN | ✅ Final |
 | **This document** | Capstone synthesis — all 5 components | ✅ Final |
 
 ---
@@ -327,3 +328,15 @@ All evidence traceable to SOT. All derivations Class D (awaiting verification). 
 ---
 
 *Cite: VVV-QMRF §META. Sources: BIAN_gap_analysis_ver_01 §BIAN-1; S1 §4d; E4 §3; Source doc L171, L207; J-S #29; system_be_full.md L188-189, L330-332.*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

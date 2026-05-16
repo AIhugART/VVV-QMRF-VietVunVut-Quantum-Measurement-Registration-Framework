@@ -59,8 +59,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | **VN: Có điểm vào?** | Có | **Không** — bất kỳ nút nào cũng là điểm vào |
 | **EN: Has exit point?** | Yes (registered status) | **No** — self-closing |
 | **VN: Có điểm ra?** | Có | **Không** — tự đóng kín |
-| **EN: QM deficit solved** | Gap inside measurement process | Von Neumann infinite regress |
-| **VN: Lỗ hổng QM** | Khoảng trống bên trong phép đo | Chuỗi von Neumann vô hạn |
+| **EN: K-side non-specification addressed** | Registration-interior gap inside measurement modeling | Von Neumann certification regress at the registration layer |
+| **VN: Phần K-side chưa đặc tả** | Khoảng trống nội tại ghi nhận bên trong mô hình phép đo | Chuỗi chứng nhận von Neumann ở tầng ghi nhận |
 | **BIAN sources** | BIAN-7, 4, 5 | BIAN-2, 6, 16, 17, 18 |
 | **Components** | E4 + E5 + E3 | E1 + E2 + E7 |
 
@@ -89,7 +89,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
   │  E2: Self-Completion          │       │
   │  Tự hoàn tất                  │       │
   │                               │       │
-  │  M ≡ r (structural identity)  │       │
+  │  M ≡ r (K-side equivalence)  │       │
   │  "Hành động đo = Kết quả đo" │       │
   └──────────┬────────────────────┘       │
              │                            │
@@ -116,7 +116,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | Step | Postulate | Statement EN | Phát biểu VN | Leads to |
 |:----:|:---------:|-------------|--------------|:--------:|
 | 1 | **E1** | M self-certifies: σ(M)=1 by M itself, no M′ needed | M tự chứng nhận: σ(M)=1 bởi chính M, không cần M′ | → E2 |
-| 2 | **E2** | M ≡ r: act and result are structurally identical | M ≡ r: hành động đo và kết quả đo đồng nhất cấu trúc | → E7 |
+| 2 | **E2** | M ≡ r: act and result are equivalent at the K-side registration layer | M ≡ r: hành động đo và kết quả đo tương đương ở tầng ghi nhận K-side | → E7 |
 | 3 | **E7** | Validity is intrinsic (svataḥ), invalidity is extrinsic | Hợp lệ là nội tại, bất hợp lệ là ngoại tại | → E1 |
 | 4 | **E1** | Why intrinsic? Because M self-certifies | Tại sao nội tại? Vì M tự chứng nhận | **LOOP** |
 

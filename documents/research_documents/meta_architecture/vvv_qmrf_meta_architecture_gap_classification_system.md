@@ -8,6 +8,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Current Filename: vvv_qmrf_meta_architecture_gap_classification_system.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** meta_architecture
 **Date:** 2026-05-11  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **Cite:** VietVunVut (2026), VVV-QMRF §GCS  
@@ -33,7 +34,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Class | Name EN | Tên VN | Definition | Resolution Type |
 |:-----:|---------|--------|------------|:---------------:|
-| **A** | **Structural Gap** | Khoảng trống Cấu trúc | QM lacks the concept entirely — no operator, no state, no principle exists | **New Postulate** (E1–E17 where documented) |
+| **A** | **Structural Gap** | Khoảng trống Cấu trúc | Standard QM does not explicitly specify the K-side registration concept — no registration operator, registration state, or registration principle exists in the VVV-QMRF sense | **New Postulate** (E1–E17 where documented) |
 | **B** | **Interface Gap** | Khoảng trống Giao diện | QM has consecutive stages but lacks the formal connection between them | **Lemma** (ENI instance) |
 | **C** | **Implicit Gap** | Khoảng trống Ngầm định | QM has the phenomenon implicitly but lacks explicit registration-layer taxonomy | **Category upgrade** (Cat 01–15; extension postulate when documented) |
 
@@ -42,7 +43,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ```
 For each BIAN gap G:
 
-  TEST 1: Does QM have ANY concept covering G?
+  TEST 1: Does Standard QM have an explicit K-side registration-layer concept covering G?
     NO  → Class A (Structural)
     YES → TEST 2
 
@@ -72,11 +73,11 @@ For each BIAN gap G:
 | BIAN | Gap Name | Class | Resolution | Evidence |
 |:----:|----------|:-----:|:----------:|----------|
 | **1** | Post-Detection Representational Transition | **B** | Lemma S1-Λ | QM has E4 stage + E5 stage but lacks Λ map between them |
-| **2** | Absence of Self-Certifying Registration Layer | **A** | Postulate E1 | QM has zero self-certification concept |
+| **2** | Absence of Self-Certifying Registration Layer | **A** | Postulate E1 | Standard QM has no explicit K-side self-certification concept |
 | **3** | No Limit-Faculty Registration Taxonomy | **C** | Category 11 + E12 | QM has κ parametrization implicitly but lacks limit-faculty registration taxonomy |
-| **4** | No Theory of Internal Representation Encoding | **A** | Postulate E5 | QM has zero internal encoding concept |
+| **4** | No Theory of Internal Representation Encoding | **A** | Postulate E5 | Standard QM has no explicit K-side internal encoding concept |
 | **5** | Conflation of Physical Registration & Registration Lock | **A** | Postulate E3 | QM conflates two distinct operations into one |
-| **6** | No Self-Certifying Registration Structure | **A** | Postulate E1 | QM has zero self-certification at operational level |
+| **6** | No Self-Certifying Registration Structure | **A** | Postulate E1 | Standard QM has no explicit K-side self-certification at operational level |
 | **7** | No Pre-Symbolic Registration Stratum in Formalism | **A** | Postulate E4 | QM begins at symbolic level; pre-symbolic absent |
 | **8** | No Temporal Discontinuity Registration Theory | **A** | Category 12 + E13 | QM has discontinuity as brute physical postulate but lacks K-side registration theory |
 | **9** | No Formal Category for Validated Absence Registration | **C** | Category 13 + E14 | QM has null-result measurement implicitly but lacks validated absence registration taxonomy |
@@ -86,9 +87,9 @@ For each BIAN gap G:
 | **13** | No Category for Null Registering-System Event | **C** | Category 06 + E9 | QM has detection-efficiency and POVM/no-click support but no registration-layer non-engagement category |
 | **14** | No Unified Validity Conditions for Evidential Inference | **C** | Category 09 | QM has validity criteria (p-values etc.) but no unified structure |
 | **15** | No Formal Category for Purely Contrastive Evidence | **C** | Category 01 | QM has null-result experiments but no registration-layer evidence type |
-| **16** | Registration Self-Completion Undefined | **A** | Postulate E2 | QM has zero self-completion concept |
-| **17** | No Endogenous Regress-Stopping Principle | **A** | Postulate E1 | QM has zero regress stopper |
-| **18** | No Theory of Measurement Validity Location | **A** | Postulate E7 | QM has zero validity-location concept |
+| **16** | Registration Self-Completion Undefined | **A** | Postulate E2 | Standard QM has no explicit K-side self-completion concept |
+| **17** | No Endogenous Regress-Stopping Principle | **A** | Postulate E1 | Standard QM has no explicit K-side regress stopper |
+| **18** | No Theory of Measurement Validity Location | **A** | Postulate E7 | Standard QM has no explicit K-side validity-location concept |
 | **19** | Registering System Assumed as Substance, Not Process | **A** | Postulate E6 | QM assumes a substance-style registering role; process model absent |
 | **20** | Reserved (cross-ref BIAN-10) | **∅** | — | Not a substantive gap |
 
@@ -113,7 +114,7 @@ For each BIAN gap G:
 | BIAN | Gap | Postulate | Buddhist SOT | Node | Synthesis |
 |:----:|-----|:---------:|-------------|:----:|:---------:|
 | 2 | Self-referential layer | **E1** | Svasaṃvedana (T2.05 L337) | N_BE_00011 | S2 |
-| 6 | Self-certifying measurement | **E1** | Svasaṃvedana (T6.02 L784) | N_BE_00011 | S2 |
+| 6 | Self-certifying registration structure | **E1** | Svasaṃvedana (T6.02 L784) | N_BE_00011 | S2 |
 | 17 | Regress-stopping principle | **E1** | Svasaṃvedana (T1.06 L227) | N_BE_00011 | S2 |
 | 16 | Registration self-completion | **E2** | Pramāṇa-phala (T6.01 L773) | N_BE_00001 | S2 |
 | 5 | Registration Lock act | **E3** | Vyavasāya (T2.04 L326) | — (no node) | S1 |
@@ -362,14 +363,26 @@ Categories 02, 04, 05, 07, 08, 10, and 12 are **not Class C** — they are Class
 
 | Document | Role |
 |----------|------|
-| [RCA_BIAN1_new_epistemic.md](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_new_epistemic.md) | Registration Natural Interface derivation — legacy filename retained |
-| [BIAN_gap_analysis_ver_01.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/achives/gap/BIAN_gap_analysis_ver_01.md) | 20 BIAN gap definitions |
-| [BIAN_index_SOT.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/gap/BIAN_index_SOT.md) | Node/edge registry |
-| [vvv_qmrf_registration_categories_index.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/category/vvv_qmrf_registration_categories_index.md) | Category resolution registry |
-| [vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) | S1 + S1-Λ — Registration-State Update Pipeline |
-| [vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md) | S2 loop |
-| [vvv_qmrf_synthesis_s3_registering_system_as_process_foundation.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/vvv_qmrf_synthesis_s3_registering_system_as_process_foundation.md) | S3 hub — Registering-System-as-Process Foundation |
+| [RCA_BIAN1_new_epistemic.md](../achives/review/RCA_BIAN1_new_epistemic.md) | Registration Natural Interface derivation — legacy filename retained |
+| [BIAN_gap_analysis_ver_01.md](../achives/gap/BIAN_gap_analysis_ver_01.md) | 20 BIAN gap definitions |
+| [BIAN_index_SOT.md](../gap/BIAN_index_SOT.md) | Node/edge registry |
+| [vvv_qmrf_registration_categories_index.md](../category/vvv_qmrf_registration_categories_index.md) | Category resolution registry |
+| [vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md](../synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) | S1 + S1-Λ — Registration-State Update Pipeline |
+| [vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md](../synthesis/vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md) | S2 loop |
+| [vvv_qmrf_synthesis_s3_registering_system_as_process_foundation.md](../synthesis/vvv_qmrf_synthesis_s3_registering_system_as_process_foundation.md) | S3 hub — Registering-System-as-Process Foundation |
 
 ---
 
 *Evidence chain: ENI §4a → GCS definition → 20 BIAN line-by-line classification → cross-verification against framework/, category/, synthesis/. Status: Class D (Derived).*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Review required | Add explicit non-identity and non-physical-law boundaries before reuse. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -25,14 +25,14 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## Overview / Tổng Quan
 
-**EN:** Within the VVV-QMRF root case, two specific convergences between Buddhist Epistemology and Quantum Mechanics are not analogical but **structurally identical** — meaning both systems arrive at the *same logical structure* through entirely independent derivations, separated by fifteen centuries.
+**EN:** Within the VVV-QMRF root case, two specific convergences between Buddhist Epistemology and Quantum Mechanics are not loose analogies but **selected structural convergences** — meaning both systems arrive at closely matching logical pressure points through entirely independent derivations, separated by fifteen centuries.
 
-**VN:** Trong root case VVV-QMRF, hai hội tụ cụ thể giữa Nhận Thức Luận Phật Giáo và Cơ Học Lượng Tử không phải là tương tự (analogical) mà là **đồng nhất về cấu trúc** — có nghĩa là cả hai hệ thống đi đến *cùng một cấu trúc logic* thông qua các con đường derive hoàn toàn độc lập, cách nhau mười lăm thế kỷ.
+**VN:** Trong root case VVV-QMRF, hai hội tụ cụ thể giữa Nhận Thức Luận Phật Giáo và Cơ Học Lượng Tử không chỉ là tương tự lỏng lẻo (loose analogy), mà là **hội tụ cấu trúc được chọn lọc** — nghĩa là cả hai hệ thống đi đến các điểm áp lực logic rất gần nhau thông qua các con đường derive hoàn toàn độc lập, cách nhau mười lăm thế kỷ.
 
 > [!NOTE]
-> **EN:** "Structural identity" ≠ "historical influence." These two systems did not influence each other. The convergence is evidence of a shared underlying logical constraint, not cultural borrowing.
+> **EN:** "Selected structural convergence" ≠ ontological or physical identity. These two systems did not influence each other. The convergence is evidence of a shared logical constraint at the selected mapping level, not cultural borrowing or a claim that Buddhist Epistemology is Quantum Mechanics.
 >
-> **VN:** "Đồng nhất cấu trúc" ≠ "ảnh hưởng lịch sử." Hai hệ thống này không ảnh hưởng lẫn nhau. Sự hội tụ là bằng chứng của một ràng buộc logic nền tảng chung, không phải vay mượn văn hóa.
+> **VN:** "Hội tụ cấu trúc được chọn lọc" ≠ đồng nhất bản thể học hoặc đồng nhất vật lý. Hai hệ thống này không ảnh hưởng lẫn nhau. Sự hội tụ là bằng chứng của một ràng buộc logic chung ở tầng mapping được chọn, không phải vay mượn văn hóa và cũng không phải tuyên bố rằng Nhận Thức Luận Phật Giáo chính là Cơ Học Lượng Tử.
 
 ---
 
@@ -75,7 +75,7 @@ Bell's theorem (1964) and its experimental confirmations (Aspect 1981–82; loop
 
 ---
 
-### The Structural Identity / Đồng Nhất Cấu Trúc
+### Selected Structural Convergence / Hội Tụ Cấu Trúc Được Chọn Lọc
 
 | | Buddhist Epistemology / Phật Giáo | Quantum Mechanics / Cơ Học Lượng Tử |
 |---|---|---|
@@ -84,9 +84,9 @@ Bell's theorem (1964) and its experimental confirmations (Aspect 1981–82; loop
 | **Century / Thế kỷ** | 5th–7th CE | 20th CE |
 | **Type / Loại** | Logical derivation from epistemological axioms / Derive logic từ tiên đề nhận thức luận | Empirical falsification of hidden-variable theories / Bác bỏ thực nghiệm lý thuyết hidden-variable |
 
-> **EN:** These are not analogous conclusions. They are the **same logical structure**: the denial of intrinsic context-independent properties. One derived through philosophical analysis in the fifth century. One derived through statistical experiment in the twentieth century.
+> **EN:** These are not loose analogies, but selected structural convergences at the logical level: both deny intrinsic context-independent properties within their own systems. One is derived through philosophical analysis; the other through statistical experiment. This does not imply ontological identity or replacement of Standard QM.
 >
-> **VN:** Đây không phải những kết luận tương tự. Chúng là **cùng một cấu trúc logic**: sự phủ nhận các tính chất nội tại độc lập ngữ cảnh. Một được derive qua phân tích triết học vào thế kỷ thứ năm. Một được derive qua thực nghiệm thống kê vào thế kỷ hai mươi.
+> **VN:** Đây không phải những tương tự lỏng lẻo, mà là hội tụ cấu trúc được chọn ở tầng logic: cả hai đều phủ nhận tính chất nội tại độc lập ngữ cảnh trong hệ thống riêng của mình. Một được derive qua phân tích triết học; một qua thực nghiệm thống kê. Điều này không hàm ý đồng nhất bản thể học hoặc thay thế Cơ Học Lượng Tử chuẩn.
 
 ---
 
@@ -123,7 +123,7 @@ Jordan và Siddiqi phát biểu tường minh trong chuyên khảo 2024: *"diễ
 
 ---
 
-### The Structural Identity / Đồng Nhất Cấu Trúc
+### Selected Structural Convergence / Hội Tụ Cấu Trúc Được Chọn Lọc
 
 | | Buddhist Epistemology / Phật Giáo | Quantum Mechanics / Cơ Học Lượng Tử |
 |---|---|---|
@@ -175,4 +175,16 @@ Jordan và Siddiqi phát biểu tường minh trong chuyên khảo 2024: *"diễ
 
 ---
 
-*VietVunVut (2026). VVV-QMRF Convergences: Structural Identity Between Buddhist Pramāṇa Epistemology and Quantum Measurement Theory. AI hug ART.*
+*VietVunVut (2026). VVV-QMRF Convergences: Selected Structural Convergences Between Buddhist Pramāṇa Epistemology and Quantum Measurement Theory. AI hug ART.*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Review required | Add explicit non-identity and non-physical-law boundaries before reuse. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -1,37 +1,38 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# E14 â€” Validated Absence Registration Postulate / TiÃªn Ä‘á» Ghi nháº­n Váº¯ng máº·t Há»£p lá»‡
-# Legacy Name: Epistemic Absence Cognition Postulate / TiÃªn Ä‘á» Nháº­n thá»©c Váº¯ng máº·t / VVV-EQM
+# E14 — Validated Absence Registration Postulate / Tiên đề Ghi nhận Vắng mặt Hợp lệ
+# Legacy Name: Epistemic Absence Cognition Postulate / Tiên đề Nhận thức Vắng mặt / VVV-EQM
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** framework
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
 **Date:** 2026-05-12  
-**Status:** Proposal â€” Registration class D  
-**Lineage:** gap/ (BIAN-9) â†’ category/ (Category 13) â†’ framework/ (E14)
+**Status:** Proposal — Registration class D  
+**Lineage:** gap/ (BIAN-9) → category/ (Category 13) → framework/ (E14)
 
 ---
 
 ## 1. Postulate Statement
 
 **English:**
-> The null result of a quantum measurement â€” when the measurement setup satisfies E10's TrairÅ«pya conditions â€” constitutes a distinct, formally valid registration act: the positive registration of the *absence* of the measured property. This act (Validated Absence Registration, VAR) is registration-equivalent in authority to a positive detection event within the valid measurement context. It is categorically distinct from measurement failure (E8 domain) and from Null Registering-System Event / Registration Non-Engagement (E9 domain).
+> The null result of a quantum measurement — when the measurement setup satisfies E10's Trairūpya conditions — constitutes a distinct, formally valid registration act: the positive registration of the *absence* of the measured property. This act (Validated Absence Registration, VAR) is registration-equivalent in authority to a positive detection event within the valid measurement context. It is categorically distinct from measurement failure (E8 domain) and from Null Registering-System Event / Registration Non-Engagement (E9 domain).
 
 **Vietnamese:**
-> Káº¿t quáº£ rá»—ng cá»§a phÃ©p Ä‘o lÆ°á»£ng tá»­ â€” khi thiáº¿t láº­p Ä‘o thá»a Ä‘iá»u kiá»‡n TrairÅ«pya cá»§a E10 â€” táº¡o thÃ nh má»™t hÃ nh vi ghi nháº­n riÃªng biá»‡t, chÃ­nh thá»©c há»£p lá»‡: ghi nháº­n dÆ°Æ¡ng tÃ­nh vá» *sá»± váº¯ng máº·t* cá»§a thuá»™c tÃ­nh Ä‘o. HÃ nh vi nÃ y (VAR) cÃ³ tháº©m quyá»n ghi nháº­n tÆ°Æ¡ng Ä‘Æ°Æ¡ng vá»›i sá»± kiá»‡n phÃ¡t hiá»‡n dÆ°Æ¡ng tÃ­nh trong bá»‘i cáº£nh Ä‘o há»£p lá»‡. KhÃ¡c biá»‡t hoÃ n toÃ n vá»›i lá»—i Ä‘o (E8) vÃ  Sá»± kiá»‡n Há»‡ ghi nháº­n Rá»—ng / Tráº¡ng thÃ¡i Báº¥t táº¡o Ghi nháº­n (E9).
+> Kết quả rỗng của phép đo lượng tử — khi thiết lập đo thỏa điều kiện Trairūpya của E10 — tạo thành một hành vi ghi nhận riêng biệt, chính thức hợp lệ: ghi nhận dương tính về *sự vắng mặt* của thuộc tính đo. Hành vi này (VAR) có thẩm quyền ghi nhận tương đương với sự kiện phát hiện dương tính trong bối cảnh đo hợp lệ. Khác biệt hoàn toàn với lỗi đo (E8) và Sự kiện Hệ ghi nhận Rỗng / Trạng thái Bất tạo Ghi nhận (E9).
 
 ---
 
 ## 2. Prose Statement
 
-QM handles null results implicitly: they appear as residual probability (1 âˆ’ Î£ P(Î»áµ¢)). There is no formal category treating "no detection" as a first-class registration act. *Anupalabdhi* (Non-perception) in Buddhist Epistemology establishes this: under the right conditions, NOT perceiving an object that WOULD be perceived if present is a valid means of registration, using pramÄá¹‡a as its source analogue, for establishing absence.
+QM handles null results implicitly: they appear as residual probability (1 − Σ P(λᵢ)). There is no formal category treating "no detection" as a first-class registration act. *Anupalabdhi* (Non-perception) in Buddhist Epistemology establishes this: under the right conditions, NOT perceiving an object that WOULD be perceived if present is a valid means of registration, using pramāṇa as its source analogue, for establishing absence.
 
-E14 maps this directly. When E10's three conditions hold (the detector is properly coupled, calibrated, and dark-count-free), a null result is not a failure â€” it is a positive registration of the property's absence within the measurement-accessible subspace. The Absence Projector $\hat{\Pi}_{absent}^{(\mathcal{H}_M)}$ yields a definite post-measurement state that encodes positive absence registration only inside that valid test domain.
+E14 maps this directly. When E10's three conditions hold (the detector is properly coupled, calibrated, and dark-count-free), a null result is not a failure — it is a positive registration of the property's absence within the measurement-accessible subspace. The Absence Projector $\hat{\Pi}_{absent}^{(\mathcal{H}_M)}$ yields a definite post-measurement state that encodes positive absence registration only inside that valid test domain.
 
 Key distinction from E9 and E11:
 - **E9**: Physical interaction occurred, no valid K-side registration encoding (non-informative registration non-engagement)
-- **E11**: No physical interaction, positive registration via contrapositive (IFSI â€” interaction-free)
+- **E11**: No physical interaction, positive registration via contrapositive (IFSI — interaction-free)
 - **E14**: Physical interaction offered, valid null result = positive registration of *absence* (Anupalabdhi)
 
 ---
@@ -39,25 +40,28 @@ Key distinction from E9 and E11:
 ## 3. Formal Sketch
 
 ```
-Absence Projector (within measurement-accessible subspace â„‹_M):
-  Î Ì‚_absent^(â„‹_M) = ÃŽ_â„‹_M âˆ’ Î£áµ¢ |Î»áµ¢âŸ©âŸ¨Î»áµ¢|, with |Î»áµ¢âŸ© âˆˆ â„‹_M
+Absence Projector (within measurement-accessible subspace ℋ_M):
+  Π̂_absent^(ℋ_M) = I_ℋ_M − Σᵢ |λᵢ⟩⟨λᵢ|, with |λᵢ⟩ ∈ ℋ_M
 
 Subspace condition:
-  Î Ì‚_absent^(â„‹_M) registers absence only inside â„‹_M, not outside the valid test domain.
+  Π̂_absent^(ℋ_M) registers absence only inside ℋ_M, not outside the valid test domain.
 
 Null measurement event (under E10 conditions):
-  Pre-state:   |ÏˆâŸ© (arbitrary superposition)
-  Null click:  Î Ì‚_absent^(â„‹_M) triggers
-  Post-state:  Ï â†’ Î Ì‚_absent^(â„‹_M) Ï Î Ì‚_absent^(â„‹_M) / Tr(Î Ì‚_absent^(â„‹_M) Ï)
+  Pre-state:   |ψ⟩ (arbitrary superposition)
+  Null click:  Π̂_absent^(ℋ_M) triggers
+  Post-state:  ρ → Π̂_absent^(ℋ_M) ρ Π̂_absent^(ℋ_M) / Tr(Π̂_absent^(ℋ_M) ρ)
 
 Registration content:
-  "System does NOT have any tested property in {Î»â‚, Î»â‚‚, ...Î»â‚™} within â„‹_M"
-  This IS positive absence registration â€” not "we don't know"
+  "System does NOT have any tested property in {λ₁, λ₂, ...λₙ} within ℋ_M"
+  This IS positive absence registration — not "we don't know"
+
+Boundary:
+  Π̂_absent^(ℋ_M) is used here as registration-authority notation inside the tested subspace, not as a new physical postulate replacing Standard QM projection rules.
 
 Anupalabdhi conditions check:
-  1. Object perceivable IF present:  E10 C2 (Sapaká¹£asattva) âœ…
-  2. Object not perceived:           null click âœ…
-  3. Therefore absent:               valid registration âœ…
+  1. Object perceivable IF present:  E10 C2 (Sapakṣasattva) ✅
+  2. Object not perceived:           null click ✅
+  3. Therefore absent:               valid registration ✅
 ```
 
 ---
@@ -66,8 +70,8 @@ Anupalabdhi conditions check:
 
 | Scenario | Physical interaction | Registration output | Domain |
 |----------|:-------------------:|:-------------------:|--------|
-| BhrÄnti (false positive) | NO | YES (error) | E8 override |
-| NOE | YES | NONE (decoherence) | E9 |
+| Bhrānti (false positive) | NO | YES (error) | E8 override |
+| NRE | YES | NONE (no valid K-side output) | E9 |
 | IFSI | NO | YES (contrapositive) | E11 |
 | **EAC (null = absence)** | **YES** | **YES (absence)** | **E14** |
 | Standard PVM | YES | YES (presence) | PVM |
@@ -77,11 +81,10 @@ Anupalabdhi conditions check:
 ## 5. Architectural Position
 
 ```
-E10 (Validity gate) â€” conditions for valid measurement
-E9  (NOE) â€” interaction without registration output
-E11 (IFSI) â€” no interaction, positive registration via contrapositive
- â””â†’ E14 (EAC) â† THIS POSTULATE
-       E14: interaction + null output â†’ positive absence registration
+E10 (Validity gate) — conditions for valid registration
+ ├→ E14 (EAC) ← THIS POSTULATE: valid null output as positive absence registration
+ ├→ E9  (NRE) — contrast case: interaction without valid K-side output
+ └→ E11 (IFSI) — contrast case: no target interaction, positive registration via contrapositive
 ```
 
 | Layer | Document | Role |
@@ -96,12 +99,23 @@ E11 (IFSI) â€” no interaction, positive registration via contrapositive
 
 | Component | Class |
 |---|---|
-| "Anupalabdhi is valid pramÄá¹‡a" | **M** (Buddhist logic) |
+| "Anupalabdhi is valid pramāṇa" | **M** (Buddhist logic) |
 | "Null result under E10 = positive absence registration" | **D** |
-| "Î Ì‚_absent^(â„‹_M) operator definition" | **D** |
-| "EAC â‰  NOE â‰  IFSI" | **M** (structural analysis) |
+| "Π̂_absent^(ℋ_M) operator definition" | **D** |
+| "EAC ≠ NRE ≠ IFSI" | **M** (structural analysis) |
 
 ---
 
 *Source: category/vvv_qmrf_category_13_e14_validated_absence_registration.md, framework/vvv_qmrf_framework_e10_tripartite_registration_validity_matrix_postulate.md, framework/vvv_qmrf_framework_e09_null_registering_system_event_postulate.md, BIAN_index_SOT.md*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `framework` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Review required | Add explicit non-identity and non-physical-law boundaries before reuse. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

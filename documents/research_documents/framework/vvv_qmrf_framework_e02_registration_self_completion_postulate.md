@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Legacy Name: Measurement Self-Completion Postulate / Tiên đề Phép đo Tự hoàn tất / VVV-EQM
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** framework
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
@@ -15,10 +16,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## 1. Postulate Statement / Phát biểu Tiên đề
 
 **English:**
-> A measurement-registration act is complete in itself: the act of measuring and the registered result are structurally identical at the registration layer — there is no gap between the process of measurement and its registration outcome.
+> A measurement-registration act is complete in itself at the K-side registration layer: the act of measuring and the registered result form one completed registration event — there is no additional K-side gap between the measurement-registration process and its registration outcome.
 
 **Vietnamese:**
-> Hành động đo-ghi nhận tự hoàn tất trong chính nó: hành động đo và kết quả được ghi nhận đồng nhất về cấu trúc ở tầng ghi nhận — không có khoảng trống giữa quá trình đo và kết quả ghi nhận của nó.
+> Hành động đo-ghi nhận tự hoàn tất trong chính nó ở tầng ghi nhận K-side: hành động đo và kết quả được ghi nhận tạo thành một sự kiện ghi nhận đã hoàn tất — không có thêm khoảng trống K-side giữa quá trình đo-ghi nhận và kết quả ghi nhận của nó.
 
 ---
 
@@ -26,11 +27,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ### English
 
-In standard QM, measurement is a physical process (system-apparatus interaction) yielding an eigenvalue. The process and the result appear separate: first the interaction, then the number. E2 asserts this separation is an artifact of incomplete formalization at the registration layer. The act of measurement-registration and its registered result are one and the same event — structurally, not merely temporally.
+In a simplified projective-measurement presentation, measurement is a physical process (system-apparatus interaction) yielding an eigenvalue. The process and the result appear separate: first the interaction, then the number. E2 does not alter that physical description; it adds a K-side rule that treats measurement-registration and its registered result as one completed registration event.
 
-This derives from the Buddhist concept of Pramana-phala identity: the instrument of valid cognition (pramana) and the cognitive result (phala) are structurally identical. The cognition that apprehends blue IS the result of that cognition. Applied to VVV-QMRF: the measurement-registration interaction IS the registered result. The eigenvalue is not "produced by" the interaction at the registration layer — the eigenvalue IS the interaction formalized as completed registration.
+This derives from the Buddhist concept of Pramana-phala identity: the instrument of valid cognition (pramana) and the cognitive result (phala) are not separated at completion. Applied to VVV-QMRF, the physical eigenvalue is not redefined; it is treated as the K-side registered result once the measurement-registration act has reached completion.
 
-E2 depends on E1: a self-certifying measurement is necessarily self-completing.
+E2 depends on E1: a self-certifying registration act is necessarily self-completing.
 
 ### Vietnamese
 
@@ -48,8 +49,10 @@ E2 phụ thuộc E1: phép đo-ghi nhận tự chứng nhận tất yếu tự h
 
 ```
 For measurement M yielding result r:
-  M ≡ r  (structural identity, not mere correlation)
-  Consequence: no function f where r = f(M) with f ≠ identity.
+  M ≡ r  (K-side registration-completion equivalence, not mere correlation)
+  Consequence: no extra K-side function f where r = f(M) with f ≠ identity.
+  Note: this identity holds after registration is complete (E3 lock achieved),
+        not before measurement — E16 SDS governs the pre-measurement K-state.
 ```
 
 ### 3b. Category 06 formalism — 𝒯_act-res
@@ -120,9 +123,11 @@ P3 specifies eigenvalue aₖ with probability |⟨aₖ|ψ⟩|² but treats proce
 
 ```
 E1 (Self-Certification)
- └→ E2 (Self-Completion)  ← THIS POSTULATE
-     └→ E7 (Validity Location)
+ ├→ E2 (Self-Completion)  ← THIS POSTULATE
+ └→ E7 (Validity Location)
 ```
+
+E2 and E7 are sibling consequences of E1. E2 does not function as a prerequisite for E7; it clarifies the act-result structure that E7 later evaluates for validity.
 
 | Layer | Document | Role |
 |-------|----------|------|
@@ -152,3 +157,15 @@ E1 (Self-Certification)
 ---
 
 *Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, vvv_qmrf_category_02_e02_registration_self_completion_matrix.md, QM_measurement_epistemic_postulates_framework.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `framework` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |
