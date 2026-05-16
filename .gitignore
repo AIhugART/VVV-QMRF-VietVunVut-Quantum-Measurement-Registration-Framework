@@ -5,3 +5,4 @@ documents/published_documents/achives/*.pdf
 screenshot_*.png
 *.png
 !documents/**/*.png
+build/mermaid-preview/
