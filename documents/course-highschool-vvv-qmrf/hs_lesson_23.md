@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 23 — E15: "Intrinsic Relational Binding"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Bài này nói về E15: trong một số trường hợp, điều quan trọng không phải từng phần riêng lẻ, mà là **quan hệ ràng buộc** giữa các phần trong toàn hệ.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: lỗi gốc mà E15 xử lý
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: lỗi gốc mà E15 xử lý
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Ta dễ tưởng hệ gồm A và B thì chỉ cần hiểu A riêng, B riêng rồi ghép lại.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng một đôi găng tay: nếu em có một chiếc bên trái, em biết chiếc còn lại là bên phải. Nhưng entanglement lượng tử phức tạp hơn ví dụ găng tay cổ điển, vì nó không chỉ là “đã có sẵn rồi ta chưa biết”.
 
@@ -40,7 +53,9 @@ Trong nguồn, E15 nhấn mạnh đây là **mở rộng của VVV-QMRF**, khôn
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Công thức:
 
@@ -64,7 +79,9 @@ Các em không cần tính; chỉ cần hiểu đây là dấu hiệu cho thấy
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Không phải:
@@ -78,7 +95,7 @@ Giống như một bài song ca: nghe từng người hát riêng chưa chắc h
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -90,48 +107,62 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** E15 nhấn mạnh điều gì?
 
-A. Quan hệ giữa các phần có thể quan trọng như chính các phần  
-B. Cách làm bánh mì  
-C. Cách vẽ ngôi sao  
+A. Quan hệ giữa các phần có thể quan trọng như chính các phần
+B. Cách làm bánh mì
+C. Cách vẽ ngôi sao
 D. Cách chọn balo
 
 **Câu 2.** `|ψ_AB⟩ ≠ |ψ_A⟩ ⊗ |ψ_B⟩` nghĩa dễ hiểu là gì?
 
-A. Toàn hệ AB không tách đơn giản thành A riêng và B riêng  
-B. A và B là hai món ăn  
-C. A luôn bằng B  
+A. Toàn hệ AB không tách đơn giản thành A riêng và B riêng
+B. A và B là hai món ăn
+C. A luôn bằng B
 D. Không có quan hệ nào cả
 
 **Câu 3.** E15 có phải khái niệm Dharmakīrti cổ điển y hệt không?
 
-A. Không, đây là mở rộng VVV-QMRF  
-B. Có, y hệt từng chữ  
-C. Chỉ trong giờ ra chơi  
+A. Không, đây là mở rộng VVV-QMRF
+B. Có, y hệt từng chữ
+C. Chỉ trong giờ ra chơi
 D. Không liên quan gì đến dự án
 
 **Câu 4.** Ví dụ song ca giúp hiểu gì?
 
-A. Quan hệ/hòa âm chung có thể không hiểu hết bằng từng giọng riêng  
-B. Ca sĩ là hạt lượng tử  
-C. Âm nhạc thay đổi "Born rule"  
+A. Quan hệ/hòa âm chung có thể không hiểu hết bằng từng giọng riêng
+B. Ca sĩ là hạt lượng tử
+C. Âm nhạc thay đổi "Born rule"
 D. Micro có tâm thức
 
 **Câu 5.** E15 thuộc tầng nào trong dự án?
 
-A. Tầng ghi nhận quan hệ trong VVV-QMRF  
-B. Tầng nấu ăn  
-C. Tầng thể thao  
+A. Tầng ghi nhận quan hệ trong VVV-QMRF
+B. Tầng nấu ăn
+C. Tầng thể thao
 D. Tầng thay thế mọi vật lý
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [E15 Intrinsic Relational Binding](../research_documents/category/vvv_qmrf_category_14_e15_intrinsic_relational_binding.md)
 - [System Quantum Measurement](../../SYSTEM_Quantum_Measurement/system_qm_full.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

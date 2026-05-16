@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 19 — E11: "Purely Contrastive Evidence"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Bài này nói về E11: đôi khi **không thấy một kết quả ở nơi đáng lẽ phải thấy** lại trở thành bằng chứng cho một kết quả khác. Đây là kiểu bằng chứng tương phản.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: lỗi gốc mà E11 xử lý
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: lỗi gốc mà E11 xử lý
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Ta dễ nghĩ chỉ detector click mới là bằng chứng, còn không click thì không có thông tin.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng có hai cửa A và B. Nếu bạn đi qua cửa A, chuông A chắc chắn reo. Nếu chuông A không reo, trong điều kiện chuông hoạt động tốt và chỉ có hai cửa, ta có thể suy ra bạn đã đi qua cửa B.
 
@@ -46,7 +59,9 @@ Vậy hệ không đi đường A; trong bối cảnh hai đường, suy ra đư
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Dạng ngắn:
 
@@ -76,7 +91,9 @@ P_null = xác suất của kết quả không-click có ý nghĩa trong thiết 
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Chuông A hoạt động tốt
@@ -90,7 +107,7 @@ Chuông không reo
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -102,48 +119,62 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** E11 nói về điều gì?
 
-A. Bằng chứng tương phản từ kết quả không-click có kiểm soát  
-B. Cách làm bánh quy  
-C. Cách chọn màu áo  
+A. Bằng chứng tương phản từ kết quả không-click có kiểm soát
+B. Cách làm bánh quy
+C. Cách chọn màu áo
 D. Một bài hát ru
 
 **Câu 2.** Không-click khi nào có thể có ý nghĩa?
 
-A. Khi thiết lập kiểm soát cho biết đáng lẽ phải click nếu khả năng A xảy ra  
-B. Khi máy hỏng mà không ai biết  
-C. Khi trời mưa  
+A. Khi thiết lập kiểm soát cho biết đáng lẽ phải click nếu khả năng A xảy ra
+B. Khi máy hỏng mà không ai biết
+C. Khi trời mưa
 D. Khi lớp học ồn
 
 **Câu 3.** Nếu A thì chuông reo; chuông không reo; trong bối cảnh chỉ có A hoặc B, ta suy ra gì?
 
-A. Không A, nên có thể là B  
-B. A chắc chắn xảy ra  
-C. Chuông biết giận  
+A. Không A, nên có thể là B
+B. A chắc chắn xảy ra
+C. Chuông biết giận
 D. Không có logic nào cả
 
 **Câu 4.** `P_null` gần với ý nào nhất?
 
-A. Xác suất của kết quả không-click có ý nghĩa  
-B. Xác suất ăn kem  
-C. Xác suất mèo ngủ  
+A. Xác suất của kết quả không-click có ý nghĩa
+B. Xác suất ăn kem
+C. Xác suất mèo ngủ
 D. Xác suất bút chì biết bay
 
 **Câu 5.** Điều kiện quan trọng của E11 là gì?
 
-A. Bối cảnh kiểm soát rõ ràng  
-B. Detector có cảm xúc  
-C. Bỏ hết vật lý chuẩn  
+A. Bối cảnh kiểm soát rõ ràng
+B. Detector có cảm xúc
+C. Bỏ hết vật lý chuẩn
 D. Không cần kiểm tra gì
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [E11 Purely Contrastive Evidence](../research_documents/category/vvv_qmrf_category_01_e11_purely_contrastive_evidence.md)
 - [E9 Null Registering-System Event](../research_documents/category/vvv_qmrf_category_06_e09_null_registering_system_event.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

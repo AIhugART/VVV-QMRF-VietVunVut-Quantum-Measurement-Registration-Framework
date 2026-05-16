@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 17 — E9: "Null Registering-System Event"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Bài này nói về E9: có khi một tương tác vật lý xảy ra, nhưng hệ ghi nhận không thu được thông tin mới. Đó là một **sự kiện ghi nhận rỗng**.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: lỗi gốc mà E9 xử lý
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: lỗi gốc mà E9 xử lý
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Ta dễ nghĩ nếu không có kết quả hiển thị thì chắc không có sự kiện nào đáng nói.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng em bấm nút chụp ảnh nhưng điện thoại báo lỗi và không lưu ảnh. Có thể ánh sáng đã vào camera, cảm biến đã hoạt động, nhưng thư viện ảnh không có ảnh mới.
 
@@ -50,7 +63,9 @@ lượng thông tin ghi nhận mới bằng 0
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Ký hiệu thường gặp:
 
@@ -78,7 +93,9 @@ không có thông tin ghi nhận mới được thêm vào K
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Có tín hiệu vật lý
@@ -94,7 +111,7 @@ Ví dụ: camera bắt sáng nhưng file ảnh không được lưu.
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -106,48 +123,62 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** E9 nói về điều gì?
 
-A. Sự kiện ghi nhận rỗng  
-B. Một chiếc hộp bánh đầy kẹo  
-C. Một bài hát mới  
+A. Sự kiện ghi nhận rỗng
+B. Một chiếc hộp bánh đầy kẹo
+C. Một bài hát mới
 D. Một buổi đá bóng
 
 **Câu 2.** `ΔI = 0` nghĩa là gì trong bài này?
 
-A. Không có thông tin ghi nhận mới  
-B. Không có học sinh trong lớp  
-C. Không có ánh sáng trong vũ trụ  
+A. Không có thông tin ghi nhận mới
+B. Không có học sinh trong lớp
+C. Không có ánh sáng trong vũ trụ
 D. Không có bài tập về nhà
 
 **Câu 3.** E9 giúp phân biệt điều gì?
 
-A. Tương tác vật lý và thông tin được ghi nhận  
-B. Bánh và kẹo  
-C. Mèo và chó  
+A. Tương tác vật lý và thông tin được ghi nhận
+B. Bánh và kẹo
+C. Mèo và chó
 D. Bút chì và thước kẻ
 
 **Câu 4.** Ví dụ camera không lưu ảnh giúp hiểu gì?
 
-A. Có thể có tín hiệu nhưng không có bản ghi mới  
-B. Camera biết suy nghĩ  
-C. Ảnh là hạt lượng tử  
+A. Có thể có tín hiệu nhưng không có bản ghi mới
+B. Camera biết suy nghĩ
+C. Ảnh là hạt lượng tử
 D. Điện thoại thay đổi quá khứ
 
 **Câu 5.** Cách nói đúng là gì?
 
-A. Không có ghi nhận mới không nhất thiết bằng không có tương tác vật lý  
-B. Không có ghi nhận mới nghĩa là vũ trụ dừng lại  
-C. Không có ghi nhận mới nghĩa là detector có cảm xúc  
+A. Không có ghi nhận mới không nhất thiết bằng không có tương tác vật lý
+B. Không có ghi nhận mới nghĩa là vũ trụ dừng lại
+C. Không có ghi nhận mới nghĩa là detector có cảm xúc
 D. Không có ghi nhận mới nghĩa là bỏ "Born rule"
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [E9 Null Registering-System Event](../research_documents/category/vvv_qmrf_category_06_e09_null_registering_system_event.md)
 - [Sơ đồ VVV-QMRF và Standard QM](../research_documents/vvv-qmrf/VVV_QMRF_vs_Standard_QM_system_diagram.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

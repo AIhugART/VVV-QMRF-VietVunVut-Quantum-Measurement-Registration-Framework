@@ -2,6 +2,15 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Mục Lục Khóa Học: VVV-QMRF Dành Cho Học Sinh Phổ Thông
 
+**Document type:** index
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào mừng các em đến với khóa học đặc biệt kết nối giữa **"Quantum Measurement"** và **"Buddhist Epistemology"**. Khóa học này trình bày dự án **VVV-QMRF — VietVunVut Quantum Measurement Registration Framework** bằng tiếng Việt, ở mức tiếp nhận phổ thông, có công thức giải thích dễ hiểu, minh họa gần gũi và câu hỏi trắc nghiệm cuối bài.
 
 ---
@@ -44,3 +53,16 @@ Chào mừng các em đến với khóa học đặc biệt kết nối giữa *
 - Khi học, các em nhớ ranh giới quan trọng: VVV-QMRF là **khung ghi nhận**, không phải lý thuyết thay thế "Standard Quantum Mechanics".
 - Nếu khóa học được mở rộng tiếp, các bài sau có thể đi vào bài tập tổng hợp, sơ đồ ôn tập, hoặc phiên bản nâng cao hơn cho sinh viên đại học.
 
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

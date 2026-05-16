@@ -1,6 +1,6 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Ghi chú phiên bản cũ / Legacy note:** File này thuộc đường dẫn cũ `VVV-EQM` và chỉ giữ để tham chiếu lịch sử. Khi làm việc hiện tại phiên bản VVV-QMRF (after 2026-05-14), bắt buộc phải dùng phiên bản mới tại [documents\research_documents\vvv-qmrf\node_QM_VVV.md](../vvv-qmrf/node_QM_VVV.md); nếu phát hiện đang dùng file cũ này, phải tự cập nhật hướng làm việc sang phiên bản mới.
+**Ghi chú phiên bản cũ / Legacy note:** File này thuộc đường dẫn cũ `VVV-EQM` và chỉ giữ để tham chiếu lịch sử. Khi làm việc hiện tại phiên bản VVV-QMRF (after 2026-05-14), bắt buộc phải dùng phiên bản mới tại [documents\research_documents\vvv-qmrf\node_QM_VVV.md](../../vvv-qmrf/node_QM_VVV.md); nếu phát hiện đang dùng file cũ này, phải tự cập nhật hướng làm việc sang phiên bản mới.
 
 # VVV Quantum Measurement Node Table
 # Bảng Node Lượng tử VVV

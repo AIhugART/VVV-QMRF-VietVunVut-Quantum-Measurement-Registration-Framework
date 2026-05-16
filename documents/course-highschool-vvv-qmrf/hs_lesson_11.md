@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 11 — E3: "Registration Lock"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Hôm nay ta học E3, một tiên đề rất dễ liên tưởng: kết quả đo cần có bước **khóa ghi nhận** để trở thành bản ghi ổn định trong hệ ghi nhận.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: lỗi gốc mà E3 xử lý
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: lỗi gốc mà E3 xử lý
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Ta dễ xem tín hiệu detector là kết quả cuối cùng ngay lập tức.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng em chụp ảnh trên điện thoại.
 
@@ -54,7 +67,9 @@ tín hiệu máy đo → biểu diễn bên trong → khóa ghi nhận
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Dạng ngắn:
 
@@ -76,7 +91,9 @@ Khi nào tín hiệu đã được khóa thành một kết quả ghi nhận?
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Bài làm được nộp
@@ -92,7 +109,7 @@ Bấm lưu chính thức chính là hình ảnh gần gũi của "Registration L
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -104,48 +121,62 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** E3 nói về điều gì?
 
-A. Khóa ghi nhận kết quả  
-B. Khóa cửa lớp học  
-C. Khóa xe đạp  
+A. Khóa ghi nhận kết quả
+B. Khóa cửa lớp học
+C. Khóa xe đạp
 D. Khóa màn hình điện thoại để ngủ
 
 **Câu 2.** Trong chuỗi `D_i → M_i → V̂_yava`, `D_i` là gì?
 
-A. Phản hồi của detector  
-B. Điểm kiểm tra  
-C. Một cái bánh  
+A. Phản hồi của detector
+B. Điểm kiểm tra
+C. Một cái bánh
 D. Một con chim
 
 **Câu 3.** `V̂_yava` có vai trò gì?
 
-A. Khóa kết quả thành bản ghi  
-B. Tăng xác suất vật lý  
-C. Làm detector biết nói  
+A. Khóa kết quả thành bản ghi
+B. Tăng xác suất vật lý
+C. Làm detector biết nói
 D. Sơn màu cho máy đo
 
 **Câu 4.** Ví dụ chụp ảnh giúp hiểu gì?
 
-A. Dữ liệu cần được lưu mới thành ảnh trong thư viện  
-B. Camera là hạt electron  
-C. Ánh sáng biết chấm điểm  
+A. Dữ liệu cần được lưu mới thành ảnh trong thư viện
+B. Camera là hạt electron
+C. Ánh sáng biết chấm điểm
 D. Điện thoại là nhà sư
 
 **Câu 5.** E3 giúp tránh nhầm điều gì?
 
-A. Nhầm tín hiệu detector với bản ghi đã khóa  
-B. Nhầm bút với thước  
-C. Nhầm trời mưa với trời nắng  
+A. Nhầm tín hiệu detector với bản ghi đã khóa
+B. Nhầm bút với thước
+C. Nhầm trời mưa với trời nắng
 D. Nhầm mèo với chó
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [E3 Registration Lock Operation](../research_documents/category/vvv_qmrf_category_08_e03_registration_lock_operation.md)
 - [Measurement Interface Postulate E17](../research_documents/framework/vvv_qmrf_framework_e17_measurement_interface_postulate.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

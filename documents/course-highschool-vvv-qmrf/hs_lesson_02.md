@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 02 — "Measurement Problem" là gì?
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Ở bài trước, ta biết VVV-QMRF quan tâm đến việc **kết quả đo được ghi nhận như thế nào**. Hôm nay, ta đi vào câu hỏi gốc: vì sao trong "Quantum Mechanics" lại có một vấn đề nổi tiếng gọi là "Measurement Problem"?
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: vấn đề gốc nằm ở đâu?
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: vấn đề gốc nằm ở đâu?
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Trước khi đo, hệ lượng tử có thể được mô tả như nhiều khả năng cùng tồn tại. Sau khi đo, ta chỉ thấy một kết quả cụ thể.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng có một hộp bí mật chứa một viên bi có thể rơi vào ngăn trái hoặc ngăn phải. Trước khi mở hộp, em chỉ biết các khả năng. Khi mở ra, em thấy một kết quả rõ ràng.
 
@@ -49,7 +62,9 @@ Dòng đầu nói về trạng thái vật lý. Dòng thứ hai nói về trạn
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Trong bài này, em chỉ cần nhớ sơ đồ:
 
@@ -72,7 +87,9 @@ Viết gọn:
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Camera hướng vào sân trường
@@ -92,7 +109,7 @@ Nếu cảm biến có tín hiệu nhưng ảnh không được lưu, thì sự 
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nên nói:
 
@@ -104,49 +121,62 @@ Nên nói:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** "Measurement Problem" hỏi điều gì?
 
-A. Vì sao mèo thích hộp  
-B. Khi nào khả năng lượng tử trở thành kết quả đo cụ thể  
-C. Vì sao điện thoại hết pin  
+A. Vì sao mèo thích hộp
+B. Khi nào khả năng lượng tử trở thành kết quả đo cụ thể
+C. Vì sao điện thoại hết pin
 D. Cách pha trà sữa
 
 **Câu 2.** Trong bài này, `ρ` chủ yếu chỉ gì?
 
-A. Trạng thái vật lý lượng tử  
-B. Tên một món ăn  
-C. Mã phòng học  
+A. Trạng thái vật lý lượng tử
+B. Tên một món ăn
+C. Mã phòng học
 D. Mật khẩu Wi-Fi
 
 **Câu 3.** Trong VVV-QMRF, `K` chủ yếu chỉ gì?
 
-A. Trạng thái ghi nhận  
-B. Khối lượng Trái Đất  
-C. Tốc độ xe đạp  
+A. Trạng thái ghi nhận
+B. Khối lượng Trái Đất
+C. Tốc độ xe đạp
 D. Số trang sách
 
 **Câu 4.** Vì sao cần phân biệt tương tác và ghi nhận?
 
-A. Vì không phải tương tác nào cũng thành kết quả được ghi nhận  
-B. Vì chữ dài hơn thì hay hơn  
-C. Vì máy đo biết nói chuyện  
+A. Vì không phải tương tác nào cũng thành kết quả được ghi nhận
+B. Vì chữ dài hơn thì hay hơn
+C. Vì máy đo biết nói chuyện
 D. Vì vật lý không cần toán
 
 **Câu 5.** VVV-QMRF thêm lớp nào vào cách hiểu phép đo?
 
-A. Lớp ghi nhận, tức "registration layer"  
-B. Lớp kem dâu  
-C. Lớp học thể dục  
+A. Lớp ghi nhận, tức "registration layer"
+B. Lớp kem dâu
+C. Lớp học thể dục
 D. Lớp sơn tường
 
 **Đáp án:** 1.B — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [Formal Registration-State Measurement Model](../research_documents/framework/vvv_qmrf_framework_formal_registration_state_measurement_model.md)
 - [Sơ đồ VVV-QMRF và Standard QM](../research_documents/vvv-qmrf/VVV_QMRF_vs_Standard_QM_system_diagram.md)
 
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

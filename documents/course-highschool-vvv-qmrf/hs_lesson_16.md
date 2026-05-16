@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 16 — E8: "Retroactive Registration Override"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Bài này nói về E8: đôi khi một ghi nhận trước đó có thể bị **vô hiệu hóa ngược lại** nếu về sau xuất hiện bằng chứng mạnh hơn cho thấy bản ghi cũ không hợp lệ.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: lỗi gốc mà E8 xử lý
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: lỗi gốc mà E8 xử lý
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Ta dễ tưởng một khi đã ghi nhận thì bản ghi đó mãi mãi hợp lệ.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng cô nhập điểm cho một bạn là 9. Sau đó, hệ thống phát hiện cô đã chọn nhầm mã học sinh. Điểm 9 không thể tiếp tục được xem là bản ghi hợp lệ cho bạn đó. Hệ thống phải sửa lại và đánh dấu bản ghi cũ là sai.
 
@@ -50,7 +63,9 @@ Ký hiệu thường gặp:
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Dạng trực giác:
 
@@ -72,7 +87,9 @@ Ví dụ sổ điểm:
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Bản ghi cũ: "A đúng"
@@ -88,7 +105,7 @@ E8 không làm quá khứ vật lý biến mất. Nó nói về việc **trạng
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -100,48 +117,62 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** E8 nói về điều gì?
 
-A. Ghi đè hoặc vô hiệu hóa bản ghi cũ khi có bằng chứng mạnh hơn  
-B. Làm bài tập toán nhanh hơn  
-C. Sơn lại bảng lớp  
+A. Ghi đè hoặc vô hiệu hóa bản ghi cũ khi có bằng chứng mạnh hơn
+B. Làm bài tập toán nhanh hơn
+C. Sơn lại bảng lớp
 D. Chọn món ăn trưa
 
 **Câu 2.** `Ô_bhranti` gần với ý nào nhất?
 
-A. Thao tác nhận ra sai lệch và ghi đè bản ghi không hợp lệ  
-B. Một bài hát vui  
-C. Một loại bánh  
+A. Thao tác nhận ra sai lệch và ghi đè bản ghi không hợp lệ
+B. Một bài hát vui
+C. Một loại bánh
 D. Một cái ghế
 
 **Câu 3.** E8 có làm quá khứ vật lý biến mất không?
 
-A. Không  
-B. Có  
-C. Chỉ khi trời nắng  
+A. Không
+B. Có
+C. Chỉ khi trời nắng
 D. Chỉ trong giờ kiểm tra
 
 **Câu 4.** Ví dụ nhập nhầm điểm giúp hiểu gì?
 
-A. Bản ghi cũ có thể bị sửa khi phát hiện sai  
-B. Điểm số là hạt lượng tử  
-C. Cô giáo làm đổi "Born rule"  
+A. Bản ghi cũ có thể bị sửa khi phát hiện sai
+B. Điểm số là hạt lượng tử
+C. Cô giáo làm đổi "Born rule"
 D. Sổ điểm có ý thức
 
 **Câu 5.** E8 thuộc tầng nào?
 
-A. Tầng ghi nhận và đánh giá tính hợp lệ của bản ghi  
-B. Tầng thay đổi lực hấp dẫn  
-C. Tầng nấu ăn  
+A. Tầng ghi nhận và đánh giá tính hợp lệ của bản ghi
+B. Tầng thay đổi lực hấp dẫn
+C. Tầng nấu ăn
 D. Tầng thể thao
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [E8 Retroactive Registration Override](../research_documents/category/vvv_qmrf_category_03_e08_retroactive_registration_override.md)
 - [E7 Dual-Phase Registration Certification](../research_documents/category/vvv_qmrf_category_04_e07_dual_phase_registration_certification.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

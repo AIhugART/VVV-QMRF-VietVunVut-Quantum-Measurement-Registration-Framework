@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 21 — E13: "Temporal Discontinuity"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Bài này nói về E13: trạng thái vật lý có thể được mô tả bằng tiến hóa liên tục, nhưng ghi nhận kết quả thường xuất hiện như những mốc rời rạc.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: lỗi gốc mà E13 xử lý
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: lỗi gốc mà E13 xử lý
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Ta dễ trộn dòng tiến hóa vật lý liên tục với khoảnh khắc bản ghi xuất hiện.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng em quay video một bạn chạy. Chuyển động của bạn ấy là liên tục. Nhưng khi em bấm chụp ảnh màn hình, em tạo ra một bức ảnh tại một khoảnh khắc.
 
@@ -40,7 +53,9 @@ E13 dùng trực giác “khoảnh khắc” để nói rằng ghi nhận có th
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Ký hiệu:
 
@@ -65,7 +80,9 @@ Ta không nói các mốc ghi nhận thay thế dòng vật lý. Ta chỉ tách 
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Video chạy liên tục
@@ -79,7 +96,7 @@ Video giống dòng biến đổi; ảnh chụp giống mốc ghi nhận.
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -91,48 +108,62 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** E13 nói về điều gì?
 
-A. Sự rời rạc của các mốc ghi nhận theo thời gian  
-B. Cách làm bánh  
-C. Cách vẽ mèo  
+A. Sự rời rạc của các mốc ghi nhận theo thời gian
+B. Cách làm bánh
+C. Cách vẽ mèo
 D. Cách chọn ghế
 
 **Câu 2.** Ví dụ video và ảnh chụp giúp hiểu gì?
 
-A. Chuyển động có thể liên tục, còn ảnh là mốc ghi nhận  
-B. Video là hạt lượng tử  
-C. Ảnh chụp thay thế mọi vật lý  
+A. Chuyển động có thể liên tục, còn ảnh là mốc ghi nhận
+B. Video là hạt lượng tử
+C. Ảnh chụp thay thế mọi vật lý
 D. Máy ảnh có ý thức
 
 **Câu 3.** `T̂_kṣaṇa` gần với ý nào nhất?
 
-A. Thao tác đánh dấu khoảnh khắc ghi nhận  
-B. Một món ăn  
-C. Một con số may mắn  
+A. Thao tác đánh dấu khoảnh khắc ghi nhận
+B. Một món ăn
+C. Một con số may mắn
 D. Một bài hát
 
 **Câu 4.** E13 giúp tránh nhầm điều gì?
 
-A. Tiến hóa vật lý liên tục với sự kiện ghi nhận rời rạc  
-B. Mèo với chó  
-C. Bút với sách  
+A. Tiến hóa vật lý liên tục với sự kiện ghi nhận rời rạc
+B. Mèo với chó
+C. Bút với sách
 D. Mưa với nắng
 
 **Câu 5.** Cách nói đúng là gì?
 
-A. E13 không phủ nhận "Quantum Mechanics", mà tách mốc ghi nhận khỏi dòng vật lý  
-B. E13 xóa hết thời gian  
-C. E13 làm detector biết nghĩ  
+A. E13 không phủ nhận "Quantum Mechanics", mà tách mốc ghi nhận khỏi dòng vật lý
+B. E13 xóa hết thời gian
+C. E13 làm detector biết nghĩ
 D. E13 là trò chơi chữ
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [E13 Temporal Discontinuity Doctrine](../research_documents/category/vvv_qmrf_category_12_e13_temporal_discontinuity_doctrine.md)
 - [Measurement Interface Postulate E17](../research_documents/framework/vvv_qmrf_framework_e17_measurement_interface_postulate.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

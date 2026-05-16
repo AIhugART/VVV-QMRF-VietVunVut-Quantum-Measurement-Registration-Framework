@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 06 — "Buddhist Epistemology" trong dự án này là gì?
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Hôm nay ta bước sang phía thứ hai của cây cầu: "Buddhist Epistemology". Nghe tên có vẻ khó, nhưng ý chính rất gần gũi: **làm sao biết một nhận thức là hợp lệ?**
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: vì sao cần nói rõ phạm vi?
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: vì sao cần nói rõ phạm vi?
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Khi nghe "Buddhist" và "Quantum" cùng xuất hiện, nhiều người dễ hiểu thành "Phật giáo chứng minh vật lý lượng tử".
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 "Epistemology" nghĩa là nhận thức luận: ngành hỏi về tri thức, nhận biết, bằng chứng và tính hợp lệ.
 
@@ -50,7 +63,9 @@ VVV-QMRF mượn kiểu câu hỏi này để hỏi về phép đo:
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Ta có thể viết bằng ngôn ngữ đơn giản:
 
@@ -79,7 +94,9 @@ Trong đó:
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Nhìn xa thấy một hình dài
@@ -97,7 +114,7 @@ Bài học không phải là "sợi dây lượng tử". Bài học là: nhận 
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -109,48 +126,62 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** "Epistemology" là gì?
 
-A. Nhận thức luận  
-B. Môn đá bóng  
-C. Tên một loại bánh  
+A. Nhận thức luận
+B. Môn đá bóng
+C. Tên một loại bánh
 D. Cách gấp giấy
 
 **Câu 2.** Câu hỏi trung tâm của "Buddhist Epistemology" trong bài này là gì?
 
-A. Khi nào một nhận thức hợp lệ  
-B. Khi nào tan học  
-C. Vì sao mèo ngủ nhiều  
+A. Khi nào một nhận thức hợp lệ
+B. Khi nào tan học
+C. Vì sao mèo ngủ nhiều
 D. Cách trồng cây
 
 **Câu 3.** VVV-QMRF dùng "Buddhist Epistemology" như thế nào?
 
-A. Như khung cấu trúc cho tầng ghi nhận  
-B. Như phép màu thay thế vật lý  
-C. Như công thức nấu ăn  
+A. Như khung cấu trúc cho tầng ghi nhận
+B. Như phép màu thay thế vật lý
+C. Như công thức nấu ăn
 D. Như bảng cửu chương
 
 **Câu 4.** Ví dụ sợi dây và con rắn nói về điều gì?
 
-A. Nhận thức có thể cần kiểm chứng để hợp lệ  
-B. Sợi dây là hạt lượng tử  
-C. Con rắn là detector  
+A. Nhận thức có thể cần kiểm chứng để hợp lệ
+B. Sợi dây là hạt lượng tử
+C. Con rắn là detector
 D. Bóng tối là công thức toán
 
 **Câu 5.** Cách nói nào an toàn?
 
-A. Đây là "structural analogy" và mapping, không phải bằng chứng vật lý mới  
-B. Đây là vật lý thay thế hoàn toàn  
-C. Đây là truyện thần thoại  
+A. Đây là "structural analogy" và mapping, không phải bằng chứng vật lý mới
+B. Đây là vật lý thay thế hoàn toàn
+C. Đây là truyện thần thoại
 D. Đây là bài học vẽ tranh
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [System Buddhist Epistemology Full](../../SYSTEM_Buddhist_Epistemology/system_be_full.md)
 - [Buddhist Epistemology and Quantum Measurement Refine Mapping](../research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_refine_mapping.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

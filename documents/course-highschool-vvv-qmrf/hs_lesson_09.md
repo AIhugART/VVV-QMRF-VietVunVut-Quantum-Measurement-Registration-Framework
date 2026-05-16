@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 09 — E1: "Self-Certifying Registration"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Từ bài này, ta bắt đầu đi vào các tiên đề của VVV-QMRF. Bài 09 nói về E1: một kết quả ghi nhận hợp lệ phải có khả năng **tự hoàn tất tư cách ghi nhận** trong hệ ghi nhận.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: lỗi gốc mà E1 xử lý
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: lỗi gốc mà E1 xử lý
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Nếu một kết quả đo luôn cần một kết quả khác xác nhận, ta sẽ rơi vào chuỗi hỏi vô tận.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng cô nhập điểm vào sổ điện tử. Nếu mỗi lần nhập điểm, hệ thống lại hỏi một hệ thống khác xác nhận, rồi hệ thống khác lại hỏi hệ thống khác nữa, thì điểm không bao giờ được chốt.
 
@@ -50,7 +63,9 @@ R̂_svasa = thao tác ghi nhận tự chứng nhận trong tầng K
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Ý tưởng của E1 có thể viết rất đơn giản:
 
@@ -68,7 +83,9 @@ E1 không tính xác suất vật lý. E1 hỏi: **khi kết quả đã có, đi
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Detector báo o
@@ -84,7 +101,7 @@ Nếu không có bước khép kín, ta giống như cứ ký nháy giấy tờ 
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -96,48 +113,62 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** E1 xử lý vấn đề gì?
 
-A. Chuỗi xác nhận vô tận  
-B. Cách nấu cơm  
-C. Tốc độ chạy của mèo  
+A. Chuỗi xác nhận vô tận
+B. Cách nấu cơm
+C. Tốc độ chạy của mèo
 D. Màu của cầu vồng
 
 **Câu 2.** `R̂_svasa` thuộc tầng nào?
 
-A. Tầng ghi nhận `K`  
-B. Tầng trang trí lớp học  
-C. Tầng âm nhạc  
+A. Tầng ghi nhận `K`
+B. Tầng trang trí lớp học
+C. Tầng âm nhạc
 D. Tầng thời tiết
 
 **Câu 3.** E1 có nói detector có ý thức không?
 
-A. Không  
-B. Có  
-C. Chỉ khi trời mưa  
+A. Không
+B. Có
+C. Chỉ khi trời mưa
 D. Chỉ trong truyện tranh
 
 **Câu 4.** Ví dụ nào gần với E1 nhất?
 
-A. Hệ thống chốt điểm thành bản ghi hợp lệ  
-B. Mèo ngủ trên ghế  
-C. Bút chì bị gãy  
+A. Hệ thống chốt điểm thành bản ghi hợp lệ
+B. Mèo ngủ trên ghế
+C. Bút chì bị gãy
 D. Cây xanh lớn lên
 
 **Câu 5.** E1 giúp kết quả đo tránh điều gì?
 
-A. Không bị treo trong chuỗi xác nhận mãi mãi  
-B. Không bị nóng lên  
-C. Không bị đổi màu  
+A. Không bị treo trong chuỗi xác nhận mãi mãi
+B. Không bị nóng lên
+C. Không bị đổi màu
 D. Không bị phát nhạc
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [E1 Self-Certifying Registration Operator](../research_documents/category/vvv_qmrf_category_05_e01_self_certifying_registration_operator.md)
 - [Measurement Interface Postulate E17](../research_documents/framework/vvv_qmrf_framework_e17_measurement_interface_postulate.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

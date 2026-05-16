@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 20 — E12: "Limit-Faculty Registration"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Bài này nói về E12: có những phép đo rất tinh tế, rất yếu hoặc rất sát giới hạn khả năng ghi nhận. VVV-QMRF gọi đây là vùng **ghi nhận ở giới hạn năng lực**.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: lỗi gốc mà E12 xử lý
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: lỗi gốc mà E12 xử lý
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Ta dễ tưởng mọi phép đo đều cho kết quả rõ, mạnh và trực tiếp như kim đồng hồ chỉ số.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng em nghe tiếng gõ cửa rất nhỏ trong lúc lớp ồn. Em không thể khẳng định ngay như khi nghe tiếng trống trường rất to. Em cần chú ý hơn, có thể cần lặp lại hoặc dùng bối cảnh để hiểu.
 
@@ -46,7 +59,9 @@ Các em không cần tính công thức này. Chỉ cần hiểu: đây là mộ
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Công thức:
 
@@ -69,7 +84,9 @@ Dấu hiệu yếu này được ghi nhận và chứng nhận như thế nào?
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Tín hiệu rất yếu
@@ -85,7 +102,7 @@ Giống như nghe tiếng rất nhỏ: không phải không có tiếng, nhưng 
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -97,7 +114,7 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** E12 nói về điều gì?
 
@@ -138,7 +155,21 @@ D. Tầng thể thao
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [E12 Limit-Faculty Registration](../research_documents/category/vvv_qmrf_category_11_e12_limit_faculty_registration.md)
 - [System Quantum Measurement](../../SYSTEM_Quantum_Measurement/system_qm_full.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

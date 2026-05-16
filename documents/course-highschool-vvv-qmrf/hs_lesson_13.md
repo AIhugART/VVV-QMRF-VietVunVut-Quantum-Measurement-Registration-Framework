@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 13 — E5: "Internal Encoding"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Ở bài trước, ta học tầng xuất hiện trước ký hiệu. Bài này nói về E5: tín hiệu cần được **mã hóa bên trong** trước khi trở thành dạng có thể xử lý trong hệ ghi nhận.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: lỗi gốc mà E5 xử lý
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: lỗi gốc mà E5 xử lý
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Ta dễ tưởng tín hiệu vật lý đi thẳng vào bản ghi cuối cùng.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Hãy tưởng tượng em chụp ảnh. Ánh sáng ngoài đời không tự biến thành file ảnh ngay. Điện thoại phải chuyển ánh sáng thành tín hiệu điện, rồi thành dữ liệu ảnh, rồi mới lưu được.
 
@@ -50,7 +63,9 @@ E5 không nói detector có tâm trí. Nó chỉ nói hệ ghi nhận cần mộ
 
 ---
 
-## 4. Công thức dễ hiểu
+## 4. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Công thức:
 
@@ -74,7 +89,9 @@ E3: khóa thành bản ghi
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Ánh sáng vào camera
@@ -90,7 +107,7 @@ E5 là bước "phần mềm mã hóa thành dữ liệu ảnh" trong ví dụ n
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -102,50 +119,63 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** E5 nói về điều gì?
 
-A. Mã hóa bên trong của tín hiệu  
-B. Sơn lại phòng học  
-C. Làm bánh sinh nhật  
+A. Mã hóa bên trong của tín hiệu
+B. Sơn lại phòng học
+C. Làm bánh sinh nhật
 D. Chọn bài hát
 
 **Câu 2.** Trong `Â_kāra(D_i) = M_i`, `D_i` là gì?
 
-A. Phản hồi detector  
-B. Một quả táo  
-C. Một bài văn  
+A. Phản hồi detector
+B. Một quả táo
+C. Một bài văn
 D. Một đôi giày
 
 **Câu 3.** `M_i` là gì?
 
-A. Biểu diễn nội bộ  
-B. Màu áo  
-C. Tên sân bóng  
+A. Biểu diễn nội bộ
+B. Màu áo
+C. Tên sân bóng
 D. Nhiệt độ nước
 
 **Câu 4.** E5 nằm giữa hai bước nào trong chuỗi dễ nhớ?
 
-A. E4 xuất hiện thô và E3 khóa ghi nhận  
-B. Bữa sáng và bữa tối  
-C. Mưa và nắng  
+A. E4 xuất hiện thô và E3 khóa ghi nhận
+B. Bữa sáng và bữa tối
+C. Mưa và nắng
 D. Mèo và cá
 
 **Câu 5.** Cách hiểu đúng về E5 là gì?
 
-A. Hệ ghi nhận cần biến tín hiệu thành dạng có thể xử lý  
-B. Detector biết suy nghĩ như người  
-C. E5 thay thế "Born rule"  
+A. Hệ ghi nhận cần biến tín hiệu thành dạng có thể xử lý
+B. Detector biết suy nghĩ như người
+C. E5 thay thế "Born rule"
 D. E5 là công thức nấu ăn
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [E5 Internal Encoding Postulate](../research_documents/framework/vvv_qmrf_framework_e05_internal_representation_encoding_postulate.md)
 - [E4 Pre-Symbolic Stratum](../research_documents/category/vvv_qmrf_category_10_e04_pre_symbolic_stratum.md)
 - [E3 Registration Lock Operation](../research_documents/category/vvv_qmrf_category_08_e03_registration_lock_operation.md)
 
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

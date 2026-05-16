@@ -2,6 +2,49 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # VVV-QMRF Exclusive Notation and Symbology
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
+## 0. Educational Schema Alignment
+
+### Learning Objectives
+
+- Distinguish physical-layer rho notation from registration-layer K notation.
+- Read VVV-QMRF symbols such as U_K, sigma(M), and R_hat_svasa at high-school level.
+- Treat advanced symbols as teaching notation or Class D proposals unless the research source says otherwise.
+
+### RCA Learning Problem
+
+#### Define / Trace / Isolate / Fix / Verify
+
+Learners may mistake VVV-QMRF notation for new physical law. The root cause is a missing boundary between symbolic teaching notation and Standard Quantum Mechanics claims. The fix is to keep rho for the physical layer, K for the registration layer, and verify the boundary against the non-claims at the end of the lesson.
+
+### Main Lesson
+
+The main lesson is in the structured sections below. This block only declares schema alignment for learners and LLM reuse.
+
+### Example or Analogy
+
+Examples in this document are educational "analogy", not physical "proof".
+
+### Formula or Symbol Explanation
+
+Symbols in this document are teaching notation or bounded VVV-QMRF notation; they do not automatically become new physical laws.
+
+### Misconception Guard
+
+Do not use this notation table to replace Born rule, Schrodinger equation, or the ontology of Standard Quantum Mechanics.
+
+### Exercise or Quiz
+
+- Why should K not be read as rho? Short answer: K belongs to registration state; rho belongs to physical quantum state.
+
 ## 0. Source of Truth / Nguồn chuẩn
 
 Research source of truth: `documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md`, section `RCA Symbol Registry / Bảng RCA ký hiệu`.
@@ -96,3 +139,17 @@ These are advanced research symbols. They are mostly Class D proposals unless th
 | **Physical Layer** | Ontology / physics | $\rho$, $\psi$, $\mathcal{H}$, $\hat{H}$ | Standard Quantum Mechanics |
 | **Registration Layer** | Registration / K-side | $K$, $\mathcal{K}$, $U_K$, $\sigma(M)$, $\hat{R}_{svasa}$ | VVV-QMRF (VietVunVut) |
 | **BE-source Lineage** | Structural source | Svasaṃvedana, Pramāṇa-phala, Apoha, Anupalabdhi, etc. | Buddhist Epistemology source analogy |
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 08 — Công thức trung tâm `K_after = U_K(K_before, o)`
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Bài này tập trung vào công thức trung tâm của VVV-QMRF. Nhìn có vẻ toán học, nhưng nếu đọc chậm, nó rất giống việc cập nhật một cuốn sổ ghi chép.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: vì sao công thức này cần thiết?
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: vì sao công thức này cần thiết?
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Ta có công thức xác suất cho kết quả đo, nhưng chưa có cách nói gọn về việc trạng thái ghi nhận thay đổi thế nào.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Công thức:
 
@@ -62,7 +75,9 @@ Tách từng phần:
 
 ---
 
-## 4. So sánh với "Born rule"
+## 4. Formula or Symbol Explanation - Compared with Born rule
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 "Quantum Mechanics" có công thức:
 
@@ -92,7 +107,9 @@ Hai câu hỏi cùng liên quan đến phép đo, nhưng không giống nhau.
 
 ---
 
-## 5. Minh họa dễ nhớ
+## 5. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 ```text
 Máy đo tạo kết quả o
@@ -112,7 +129,7 @@ Sổ cũ + điểm mới + quy tắc nhập điểm = sổ mới
 
 ---
 
-## 6. Điều cần tránh hiểu sai
+## 6. Misconception Guard
 
 Không nói:
 
@@ -124,50 +141,63 @@ Nói đúng hơn:
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** Trong `K_after = U_K(K_before, o)`, `o` là gì?
 
-A. Kết quả đo  
-B. Một quả trứng  
-C. Một chiếc ghế  
+A. Kết quả đo
+B. Một quả trứng
+C. Một chiếc ghế
 D. Một bài hát
 
 **Câu 2.** `U_K` là gì?
 
-A. Quy tắc cập nhật trạng thái ghi nhận  
-B. Tên một đội bóng  
-C. Một loại bánh quy  
+A. Quy tắc cập nhật trạng thái ghi nhận
+B. Tên một đội bóng
+C. Một loại bánh quy
 D. Một màu sơn
 
 **Câu 3.** `K_after` là gì?
 
-A. Trạng thái ghi nhận sau khi xử lý kết quả  
-B. Nhiệt độ ngoài trời  
-C. Tốc độ xe buýt  
+A. Trạng thái ghi nhận sau khi xử lý kết quả
+B. Nhiệt độ ngoài trời
+C. Tốc độ xe buýt
 D. Độ dài cây bút
 
 **Câu 4.** `p_QM(o) = Tr(E_o ρ)` trả lời câu hỏi nào?
 
-A. Kết quả `o` có xác suất bao nhiêu  
-B. Kết quả `o` được ghi vào sổ thế nào  
-C. Mèo ăn gì  
+A. Kết quả `o` có xác suất bao nhiêu
+B. Kết quả `o` được ghi vào sổ thế nào
+C. Mèo ăn gì
 D. Cây cao bao nhiêu
 
 **Câu 5.** Cách hiểu đúng về `U_K` là gì?
 
-A. Quy tắc của tầng ghi nhận, không phải lực vật lý mới  
-B. Một phép màu thay thế vật lý  
-C. Một hạt mới  
+A. Quy tắc của tầng ghi nhận, không phải lực vật lý mới
+B. Một phép màu thay thế vật lý
+C. Một hạt mới
 D. Một detector biết suy nghĩ
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [Measurement Interface Postulate E17](../research_documents/framework/vvv_qmrf_framework_e17_measurement_interface_postulate.md)
 - [Formal Registration-State Measurement Model](../research_documents/framework/vvv_qmrf_framework_formal_registration_state_measurement_model.md)
 - [Sơ đồ VVV-QMRF và Standard QM](../research_documents/vvv-qmrf/VVV_QMRF_vs_Standard_QM_system_diagram.md)
 
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.

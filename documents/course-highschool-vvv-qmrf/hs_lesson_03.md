@@ -2,11 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Bài 03 — Bốn "postulates" của "Quantum Mechanics"
 
+**Document type:** highschool_lesson
+**Date:** 2026-05-16
+**Status:** educational draft
+**Reader level:** highschool
+**Scope:** High-school / LLM-friendly VVV-QMRF course material.
+**Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
+**Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
+
 Chào các em! Bài này giúp ta hiểu nền nhà trước khi xây thêm tầng ghi nhận. Nền nhà đó là "Standard Quantum Mechanics" với các "postulates" cơ bản.
 
 ---
 
-## 1. Mục tiêu bài học
+## 1. Learning Objectives
 
 Sau bài này, các em có thể:
 
@@ -16,7 +25,11 @@ Sau bài này, các em có thể:
 
 ---
 
-## 2. RCA: vì sao phải học phần này?
+## 2. RCA Learning Problem
+
+**RCA focus:** RCA: vì sao phải học phần này?
+
+### Define / Trace / Isolate / Fix / Verify
 
 **Triệu chứng:** Nếu nghe nói VVV-QMRF thêm 16–17 tiên đề ghi nhận, ta dễ tưởng nó thay thế vật lý lượng tử.
 
@@ -30,7 +43,7 @@ Sau bài này, các em có thể:
 
 ---
 
-## 3. Bài giảng chính
+## 3. Main Lesson
 
 Ở mức phổ thông, ta có thể hiểu bốn phần lớn của "Quantum Mechanics" như sau:
 
@@ -56,7 +69,7 @@ Nếu không đo, hệ lượng tử tiến hóa theo quy luật động lực h
 
 ---
 
-## 4. VVV-QMRF đứng ở đâu?
+## 4. Misconception Guard - VVV-QMRF boundary
 
 VVV-QMRF không nói:
 
@@ -79,7 +92,9 @@ VVV-QMRF: thêm K_before → K_after
 
 ---
 
-## 5. Công thức dễ hiểu
+## 5. Formula or Symbol Explanation
+
+Symbols in this section are "teaching notation" unless the source classifies them otherwise.
 
 Một sơ đồ an toàn là:
 
@@ -97,7 +112,9 @@ Câu hỏi ghi nhận: o được ghi nhận ra sao?
 
 ---
 
-## 6. Minh họa dễ nhớ
+## 6. Example or Analogy
+
+Examples in this section are educational "analogy", not "proof".
 
 Hãy tưởng tượng một cuộc thi bắn cung:
 
@@ -110,48 +127,62 @@ VVV-QMRF giống như phần nghiên cứu **bảng điểm ghi nhận**, không
 
 ---
 
-## 7. Câu hỏi trắc nghiệm dễ thương
+## 7. Exercise or Quiz
 
 **Câu 1.** VVV-QMRF có thay thế "Quantum Mechanics" chuẩn không?
 
-A. Không  
-B. Có, thay hết  
-C. Chỉ thay vào giờ ra chơi  
+A. Không
+B. Có, thay hết
+C. Chỉ thay vào giờ ra chơi
 D. Chỉ dùng để vẽ tranh
 
 **Câu 2.** `ρ` trong bài này là gì?
 
-A. Trạng thái vật lý lượng tử  
-B. Một loại bánh  
-C. Tên nhân vật hoạt hình  
+A. Trạng thái vật lý lượng tử
+B. Một loại bánh
+C. Tên nhân vật hoạt hình
 D. Ký hiệu điểm danh
 
 **Câu 3.** VVV-QMRF thêm câu hỏi nào?
 
-A. Kết quả được ghi nhận như thế nào  
-B. Ăn gì cho bữa trưa  
-C. Vì sao mây màu trắng  
+A. Kết quả được ghi nhận như thế nào
+B. Ăn gì cho bữa trưa
+C. Vì sao mây màu trắng
 D. Cách sạc điện thoại nhanh
 
 **Câu 4.** Bốn "postulates" thuộc tầng nào?
 
-A. Tầng vật lý chuẩn của "Quantum Mechanics"  
-B. Tầng truyện cổ tích  
-C. Tầng nấu ăn  
+A. Tầng vật lý chuẩn của "Quantum Mechanics"
+B. Tầng truyện cổ tích
+C. Tầng nấu ăn
 D. Tầng thời trang
 
 **Câu 5.** So sánh bắn cung trong bài giúp hiểu gì?
 
-A. Đường bay vật lý khác với bảng điểm ghi nhận  
-B. Mũi tên biết suy nghĩ  
-C. Bảng điểm làm mũi tên bay  
+A. Đường bay vật lý khác với bảng điểm ghi nhận
+B. Mũi tên biết suy nghĩ
+C. Bảng điểm làm mũi tên bay
 D. Không cần luật chơi
 
 **Đáp án:** 1.A — 2.A — 3.A — 4.A — 5.A
 
 ---
 
-## 8. Nguồn liên quan trong dự án
+## 8. Source Links
 
 - [System Quantum Measurement](../../SYSTEM_Quantum_Measurement/system_qm_full.md)
 - [Sơ đồ VVV-QMRF và Standard QM](../research_documents/vvv-qmrf/VVV_QMRF_vs_Standard_QM_system_diagram.md)
+
+## What This Lesson Does NOT Claim
+
+*   It does not claim that VVV-QMRF replaces Standard Quantum Mechanics.
+*   It does not claim that Buddhist Epistemology proves Quantum Mechanics.
+*   It does not identify "detector response" with "registration-state update"; the first is apparatus response, the second is K-side state change.
+*   It does not use analogy or teaching notation as proof of a physical theory.
+
+## Mini Validation Checklist
+
+*   Source trace is listed.
+*   The lesson is framed as educational VVV-QMRF interpretation.
+*   Formula notation is bounded as teaching notation, not as a new physical law.
+*   Analogy is used only as analogy, not as proof.
