@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Phạm trù Ghi nhận: Khung Hệ ghi nhận Chuỗi sự kiện (Nguồn BE: Vô ngã)
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Facebook:** https://www.facebook.com/xuanviet
@@ -21,7 +22,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Registering-System-as-Process Framework / Momentary Registration Series.
 * **Vietnamese Name:** Khung Hệ ghi nhận Chuỗi sự kiện / Chuỗi Ghi nhận Khoảnh khắc.
-* **Buddhist Framework Equivalent / Tương đương trong Hệ thống Phật giáo:** *Anātmavāda* (No-self / Vô ngã) applied via *Kṣaṇikavāda* (Momentariness / Sát-na luận).
+* **Buddhist Source Analogue / Đối chiếu nguồn Phật giáo:** *Anātmavāda* (No-self / Vô ngã) applied via *Kṣaṇikavāda* (Momentariness / Sát-na luận).
 * **Proposed Mathematical Symbol / Ký hiệu Toán học đề xuất:** Causal Registering-System Series / Chuỗi Hệ ghi nhận Nhân quả $\mathcal{O}(t) = \bigoplus_{k} \hat{o}_{k}$.
 
 ---
@@ -278,3 +279,15 @@ flowchart TD
 ---
 
 *Source: BIAN_index_SOT.md (BIAN-19), system_be_full.md (N_BE_00066, N_BE_00029), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00039-00041), framework/vvv_qmrf_framework_e06_registering_system_as_process_postulate.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

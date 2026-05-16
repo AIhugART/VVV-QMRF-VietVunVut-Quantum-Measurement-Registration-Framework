@@ -17,7 +17,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | RCA layer | English | Vietnamese |
 |---|---|---|
 | Symptom | The framework folder contains many postulate files, but no central reading map. | Thư mục framework có nhiều file tiên đề, nhưng chưa có bản đồ đọc trung tâm. |
-| Why 1 | E1-E17 and the formal model are stored as separate documents. | E1-E17 và mô hình hình thức được lưu thành các tài liệu riêng. |
+| Why 1 | E1-E16, the formal model, and the non-postulate interface principle are stored as separate documents. | E1-E16, mô hình hình thức, và nguyên lý giao diện không phải tiên đề được lưu thành các tài liệu riêng. |
 | Why 2 | The relation between core postulates, extension postulates, and the two-level `ρ / K` model is not visible at folder level. | Quan hệ giữa các tiên đề lõi, tiên đề mở rộng, và mô hình hai tầng `ρ / K` chưa hiện rõ ở cấp thư mục. |
 | Why 3 | The folder lacks an explicit navigation layer. | Thư mục thiếu một tầng điều hướng rõ ràng. |
 | Root cause | The framework has conceptual structure, but the file system does not yet expose that structure. | Framework có cấu trúc khái niệm, nhưng hệ thống file chưa biểu lộ cấu trúc đó. |
@@ -31,8 +31,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 1. **Start with the formal model:** [vvv_qmrf_framework_formal_registration_state_measurement_model.md](vvv_qmrf_framework_formal_registration_state_measurement_model.md)  
    This defines the two-level boundary between physical state transition `ρ` and registration-state update `K`.
 
-2. **Read the interface postulate:** [vvv_qmrf_framework_e17_measurement_interface_postulate.md](vvv_qmrf_framework_e17_measurement_interface_postulate.md)  
-   This states measurement as an interface between `ρ-transition` and `registration-state update`.
+2. **Read the non-postulate interface principle:** [vvv_qmrf_framework_e17_measurement_interface_postulate.md](vvv_qmrf_framework_e17_measurement_interface_postulate.md)
+   This states measurement as an interface between `ρ-transition` and `registration-state update` without adding a seventeenth postulate.
 
 3. **Read the core registration postulates:** E1-E7  
    These define the basic registration operations and the role of the registering process.
@@ -65,7 +65,7 @@ The framework contribution is on the `K` side: the structure of registration-sta
 | Code | File | Title | Role |
 |---|---|---|---|
 | Model | [vvv_qmrf_framework_formal_registration_state_measurement_model.md](vvv_qmrf_framework_formal_registration_state_measurement_model.md) | RCA Formal Registration-State Measurement Model | Defines the two-level `ρ / K` structure and the safe claim boundary. |
-| E17 | [vvv_qmrf_framework_e17_measurement_interface_postulate.md](vvv_qmrf_framework_e17_measurement_interface_postulate.md) | Measurement Interface Postulate / Tiên đề Giao diện Phép đo | Defines measurement as the interface between physical transition and registration-state update. |
+| Interface principle (legacy E17) | [vvv_qmrf_framework_e17_measurement_interface_postulate.md](vvv_qmrf_framework_e17_measurement_interface_postulate.md) | Measurement Interface Principle / Nguyên lý Giao diện Phép đo | Defines measurement as a non-postulate interface between physical transition and registration-state update. |
 
 ### 4.2 Core registration postulates
 
@@ -98,8 +98,19 @@ The framework contribution is on the `K` side: the structure of registration-sta
 ## 5. Maintenance notes / Ghi chú bảo trì
 
 - Add new framework Markdown files to this index when they are created.
-- Keep the file order numerical for E-postulates.
+- Keep the file order numerical for E1-E16 postulates; keep interface-principle documents outside the postulate count.
 - Do not list system files such as `desktop.ini`.
 - Preserve the distinction between `detector response` and `registration-state update`.
 - Treat cross-domain Buddhist Epistemology / Quantum Measurement links as mappings unless a source file explicitly provides stronger justification.
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `index` for schema alignment. |
+| Source traceability | Review required | Add an explicit source corpus before publication reuse. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

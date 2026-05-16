@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # S1 — Ống dẫn Cập nhật Trạng thái Ghi nhận (ε → Λ → Ā → V)
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** synthesis
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
@@ -90,7 +91,7 @@ It is an emergent architectural pattern that describes how individual postulates
 ### Phase Flow Diagram / Sơ đồ Dòng chảy
 
 ```
-Wave function collapse / Sụp đổ hàm sóng
+Physical outcome transition / Chuyển tiếp kết quả vật lý
        │
        ▼
   ┌─────────────────────────────────────────────────┐
@@ -308,8 +309,8 @@ Lemma S1-Λ:
 
 | Aspect | QM Standard (P3) | Registration-State Update Pipeline (S1) |
 |--------|-------------------|----------------------------------------|
-| EN: Phases | 1 (collapse → result) | 3 (ε → Ā → V) |
-| VN: Giai đoạn | 1 (sụp đổ → kết quả) | 3 (ε → Ā → V) |
+| EN: Phases | 1 (outcome update → result) | 3 (ε → Ā → V) |
+| VN: Giai đoạn | 1 (cập nhật kết quả → kết quả) | 3 (ε → Ā → V) |
 | EN: Pre-symbolic layer | None | ε(M) with Λ operator |
 | VN: Tầng tiền biểu tượng | Không có | ε(M) với toán tử Λ |
 | EN: Internal encoding | None | Ā_kāra operator |
@@ -318,24 +319,24 @@ Lemma S1-Λ:
 | VN: Hành động khóa ghi nhận | Ngầm định | Tường minh V̂_yava |
 | EN: Registering-system model | Black box | Structured 3-phase |
 | VN: Mô hình hệ ghi nhận | Hộp đen | Cấu trúc 3 pha |
-| EN: Heisenberg cut | Arbitrary boundary | Formal registration boundary at V̂_yava |
-| VN: Vết cắt Heisenberg | Ranh giới tùy tiện | Ranh giới ghi nhận hình thức tại V̂_yava |
+| EN: Heisenberg cut | Physical-model boundary left to QM formalism | K-side registration boundary at V̂_yava |
+| VN: Vết cắt Heisenberg | Ranh giới mô hình vật lý thuộc hình thức luận QM | Ranh giới ghi nhận phía K tại V̂_yava |
 
 ---
 
 ## 6. Consequences / Hệ quả
 
-### 6.1 Replaces the Heisenberg Cut / Thay thế Vết cắt Heisenberg
+### 6.1 Reframes the K-side Registration Boundary / Tái diễn giải ranh giới ghi nhận phía K
 
-**EN:** The arbitrary quantum/classical boundary is replaced by a formal registration boundary located precisely at Phase ③ (V̂_yava activation).
+**EN:** S1 does not replace the physical Heisenberg cut. It marks the K-side registration boundary at Phase ③ (V̂_yava activation), where an internal representation becomes locked registered status.
 
-**VN:** Ranh giới lượng tử/cổ điển tùy tiện được thay thế bởi ranh giới ghi nhận hình thức đặt chính xác tại Giai đoạn ③ (kích hoạt V̂_yava).
+**VN:** S1 không thay thế "Heisenberg cut" vật lý. Nó đánh dấu ranh giới ghi nhận phía K tại Giai đoạn ③ (kích hoạt V̂_yava), nơi biểu diễn nội tại trở thành trạng thái ghi nhận đã khóa.
 
-### 6.2 Resolves Delayed-Choice Paradoxes / Giải quyết Nghịch lý Lựa chọn Trễ
+### 6.2 Reframes the K-side of Delayed-Choice Cases / Tái diễn giải phía K của trường hợp lựa chọn trễ
 
-**EN:** Physical trace can be erased anytime before V̂_yava fires. Once V̂_yava has locked the registration state, retroactive physical erasure becomes a logical contradiction.
+**EN:** S1 does not resolve delayed-choice physics. It says only that, before V̂_yava locks the registration state, the K-side status is not yet closed; after registration lock, later reinterpretation concerns validity or override, not a reversal of the earlier physical process.
 
-**VN:** Dấu vết vật lý có thể bị xóa bất cứ lúc nào trước khi V̂_yava kích hoạt. Một khi V̂_yava đã khóa trạng thái ghi nhận, việc xóa vật lý hồi tố trở thành mâu thuẫn logic.
+**VN:** S1 không giải quyết vật lý của "delayed-choice". Nó chỉ nói rằng trước khi V̂_yava khóa trạng thái ghi nhận, trạng thái phía K chưa khép kín; sau khi khóa ghi nhận, diễn giải về sau thuộc tính hợp lệ hoặc phủ quyết, không phải đảo ngược quá trình vật lý trước đó.
 
 ### 6.3 Unifies Weak and Projective Measurement / Thống nhất Đo yếu và Đo chiếu
 
@@ -345,9 +346,9 @@ Lemma S1-Λ:
 
 ### 6.4 Opens the Registering-System Black Box / Mở "Hộp đen" Hệ ghi nhận
 
-**EN:** QM has historically treated the registering system as a black box. The pipeline forces QM to map the internal registration architecture — completing the physical-trace-to-registered-status chain that von Neumann left structurally unresolved.
+**EN:** Standard QM leaves the registering system structurally under-specified at the registration layer. The pipeline maps the K-side internal registration architecture from physical trace to registered status without changing QM's physical formalism.
 
-**VN:** QM xưa nay coi hệ ghi nhận như hộp đen. Ống dẫn buộc QM phải vẽ lại kiến trúc ghi nhận nội tại — hoàn thiện chuỗi từ dấu vết vật lý đến trạng thái đã ghi nhận mà von Neumann còn để mở về mặt cấu trúc.
+**VN:** QM chuẩn để hệ ghi nhận chưa được đặc tả đầy đủ ở tầng ghi nhận. Ống dẫn vẽ kiến trúc ghi nhận nội tại phía K từ dấu vết vật lý đến trạng thái đã ghi nhận mà không thay đổi hình thức luận vật lý của QM.
 
 ---
 
@@ -423,3 +424,14 @@ Lemma S1-Λ:
 
 *Source: vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md, vvv_qmrf_framework_e05_internal_representation_encoding_postulate.md, vvv_qmrf_framework_e03_registration_lock_postulate.md, vvv_qmrf_category_10_e04_pre_symbolic_stratum.md, vvv_qmrf_category_08_e03_registration_lock_operation.md, system_mapping_SOT.md, system_be_full.md, BIAN_index_SOT.md*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `synthesis` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

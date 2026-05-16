@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Phạm trù Ghi nhận: Thao tác Khóa Ghi nhận (Nguồn BE: Ảnh tượng & Phán đoán)
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Facebook:** https://www.facebook.com/xuanviet
@@ -11,9 +12,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status:** Proposal — Registration class D (Derived, awaiting formal verification)
 **Lineage:** gap/ (BIAN-4, BIAN-5) → category/ (Category 08) → framework/ (E3)
 
-> **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve structural gaps **BIAN-4 and BIAN-5** identified in the Buddhist Epistemology - Quantum Measurement mapping. These gaps highlight QM's failure to formalize the transition from a purely physical macroscopic state (e.g., a dial pointing to 'UP') to an actual K-side registration status (equivalent to the concepts of *Ākāra* - internal representation, and *Vyavasāya* - registration lock in Buddhist-source lineage).
+> **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve structural gaps **BIAN-4 and BIAN-5** identified in the Buddhist Epistemology - Quantum Measurement mapping. These gaps highlight QM's failure to formalize the transition from a purely physical macroscopic state (e.g., a dial pointing to 'UP') to an actual K-side registration status (using *Ākāra* - internal representation, and *Vyavasāya* - registration lock in Buddhist-source lineage as bounded source analogues).
 >
-> *Tài liệu này chính thức thiết lập một phạm trù ghi nhận mới cho Cơ học Lượng tử (QM) nhằm giải quyết các khoảng trống cấu trúc **BIAN-4 và BIAN-5** được xác định trong bản đồ đối chiếu Nhận thức luận Phật giáo - Đo lường Lượng tử. Các lỗ hổng này chỉ ra sự thất bại của QM trong việc hình thức hóa bước chuyển tiếp từ một trạng thái vật lý vĩ mô thuần túy (ví dụ: kim đồng hồ chỉ chữ 'UP') sang một trạng thái ghi nhận phía K thực sự (tương đương với khái niệm Ākāra - Ảnh tượng nội tại, và Vyavasāya - Khóa ghi nhận trong logic Phật giáo).*
+> *Tài liệu này chính thức thiết lập một phạm trù ghi nhận mới cho Cơ học Lượng tử (QM) nhằm giải quyết các khoảng trống cấu trúc **BIAN-4 và BIAN-5** được xác định trong bản đồ đối chiếu Nhận thức luận Phật giáo - Đo lường Lượng tử. Các lỗ hổng này chỉ ra sự thất bại của QM trong việc hình thức hóa bước chuyển tiếp từ một trạng thái vật lý vĩ mô thuần túy (ví dụ: kim đồng hồ chỉ chữ 'UP') sang một trạng thái ghi nhận phía K thực sự (dùng khái niệm Ākāra - Ảnh tượng nội tại, và Vyavasāya - Khóa ghi nhận trong logic Phật giáo như các đối chiếu nguồn có giới hạn).*
 
 ---
 
@@ -21,7 +22,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Registration Lock Operation / Internal Representation Encoding.
 * **Vietnamese Name:** Thao tác Khóa Ghi nhận / Mã hóa Biểu tượng Nội tại.
-* **Buddhist Framework Equivalent / Tương đương trong Hệ thống Phật giáo:** *Ākāra* (Internal form/representation) and *Vyavasāya* (Registration lock/determination).
+* **Buddhist Source Analogue / Đối chiếu nguồn Phật giáo:** *Ākāra* (Internal form/representation) and *Vyavasāya* (Registration lock/determination).
 * **Proposed Mathematical Symbol / Ký hiệu Toán học đề xuất:** Registration Lock Operator / Toán tử Khóa Ghi nhận $\hat{V}_{yava}$.
 
 ---
@@ -190,7 +191,7 @@ VVV-QMRF registration-state update layer
 
 ## 6. Assertion Level / Mức Khẳng định
 
-| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+| Component EN | Thành phần VN | RCA assertion class | Evidence / Boundary |
 |---|---|---|---|
 | BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | —; support: N_BE_00008, N_BE_00009; ED_BE_00015; ED_BE_00144-ED_BE_00146. |
 | QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00019; N_QM_00022; N_QM_00094; N_QM_00102; ED_QM_00019; ED_QM_00014; ED_QM_00107; ED_QM_00115. |
@@ -278,3 +279,15 @@ flowchart TD
 ---
 
 *Source: BIAN_index_SOT.md (BIAN-4, BIAN-5), system_be_full.md (Ākāra/Vyavasāya node-less status with conceptual support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00021-00024), framework/vvv_qmrf_framework_e03_registration_lock_postulate.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

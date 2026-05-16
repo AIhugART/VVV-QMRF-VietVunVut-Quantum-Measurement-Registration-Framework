@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # S3 — Nền tảng Hệ ghi nhận như Quá trình (Trung tâm E6)
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** synthesis
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
@@ -18,14 +19,14 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 |---|---|---|
 | VietVunVut Epistemic Quantum Measurement (VVV-EQM) | VietVunVut Quantum Measurement Registration Framework (VVV-QMRF) | The public frame is registration-layer architecture, not human-like epistemic cognition. |
 | Observer Ontological Foundation | Registering-System-as-Process Foundation | E6 defines the registering system as process, not a human observer-substance. |
-| Observer-as-Process | Registering System as Process | The generalized K-side system can be non-human and non-conscious. |
+| Observer-as-Process | Registering-System-as-Process | The generalized K-side system can be non-human and non-conscious. |
 
 ---
 
 ## 1. Overview / Tổng quan
 
 **English:**
-> The Registering-System-as-Process Foundation is the third synthesis pattern in the VVV-QMRF framework. Unlike S1 (linear registration-state update pipeline) and S2 (closed registration loop), S3 is a **hub** — a single postulate (E6: Registering System as Process) that serves as the ontological bedrock upon which all other postulates and both prior synthesis patterns stand. S3 answers the most fundamental question: "What IS the registering system?" The answer: the registering system is a causal process (santāna), not a substance (ātman). This single ontological premise enables every other registration operation in the VVV-QMRF framework.
+> The Registering-System-as-Process Foundation is the third synthesis pattern in the VVV-QMRF framework. Unlike S1 (linear registration-state update pipeline) and S2 (closed registration loop), S3 is a **hub** — a single postulate (E6: Registering-System-as-Process) that serves as the ontological bedrock upon which all other postulates and both prior synthesis patterns stand. S3 answers the most fundamental question: "What IS the registering system?" The answer: the registering system is a causal process (santāna), not a substance (ātman). This single ontological premise enables every other registration operation in the VVV-QMRF framework.
 
 **Vietnamese:**
 > Nền tảng Hệ ghi nhận như Quá trình là mẫu tổng hợp thứ ba trong hệ thống VVV-QMRF. Khác với S1 (ống dẫn cập nhật trạng thái ghi nhận tuyến tính) và S2 (vòng lặp ghi nhận đóng kín), S3 là **trung tâm** — một tiên đề duy nhất (E6: Hệ ghi nhận như Quá trình) đóng vai trò nền móng bản thể học mà tất cả các tiên đề khác và cả hai mẫu tổng hợp trước đều đứng trên. S3 trả lời câu hỏi căn bản nhất: "Hệ ghi nhận LÀ GÌ?" Câu trả lời: hệ ghi nhận là quá trình nhân quả (santāna), không phải thực thể (ātman). Tiền đề bản thể học duy nhất này kích hoạt mọi thao tác ghi nhận khác trong hệ thống VVV-QMRF.
@@ -124,7 +125,7 @@ E6 does not combine with E3 into a chain. E6 sits **below** all postulates as th
 
 | Property | Value |
 |----------|-------|
-| Postulate | E6 — Registering System as Process |
+| Postulate | E6 — Registering-System-as-Process |
 | BIAN | BIAN-19 |
 | Category | Cat 07 (vvv_qmrf_category_07_e06_registering_system_as_process_framework.md) |
 | Related Category | Cat 06 (vvv_qmrf_category_06_e09_null_registering_system_event.md — BIAN-13) |
@@ -167,23 +168,23 @@ Properties:
 
 ## 6. Consequences / Hệ quả
 
-### 6.1 Dissolves the Heisenberg Cut / Hóa giải Vết cắt Heisenberg
+### 6.1 Reframes the Registering-System Side of the Heisenberg Cut / Tái diễn giải phía hệ ghi nhận của "Heisenberg cut"
 
-**EN:** By making the registering system the same ontological type as quantum events (process, not substance), the arbitrary boundary between "quantum" and "classical" loses its privileged status. There is no special substance-based cut — only a continuum of processes at different causal scales.
+**EN:** By treating the registering system as process, not substance, S3 removes the need for a special observer-substance on the K side. It does not dissolve the physical Heisenberg cut; it reframes the registering role as a process relation inside the registration layer.
 
-**VN:** Khi hệ ghi nhận cùng loại bản thể với sự kiện lượng tử (quá trình, không phải thực thể), ranh giới tùy ý giữa "lượng tử" và "cổ điển" mất vị thế đặc quyền. Không có vết cắt của một thực thể quan sát đặc biệt — chỉ có phổ liên tục của các quá trình ở các quy mô nhân quả khác nhau.
+**VN:** Khi xem hệ ghi nhận là quá trình, không phải thực thể, S3 loại bỏ nhu cầu về một thực thể-quan sát đặc biệt ở phía K. Nó không hóa giải "Heisenberg cut" vật lý; nó tái diễn giải vai trò ghi nhận như một quan hệ quá trình trong tầng ghi nhận.
 
-### 6.2 Eliminates Quantum Solipsism / Triệt tiêu Thuyết Duy ngã Lượng tử
+### 6.2 Removes Consciousness from the Registering-System Definition / Loại bỏ ý thức khỏi định nghĩa hệ ghi nhận
 
-**EN:** If the registering system is not a special substance (conscious soul), then consciousness has no privileged role in wave function collapse. Measurement is a causal registration process, not a human mental act.
+**EN:** If the registering system is not a special substance, then consciousness has no privileged role in defining K-side registration. This does not claim a physical collapse mechanism; it only says measurement registration can be modeled as a causal registration process rather than a human mental act.
 
-**VN:** Nếu hệ ghi nhận không phải thực thể đặc biệt (linh hồn có ý thức), thì ý thức không có vai trò ưu tiên trong sụp đổ hàm sóng. Phép đo là quá trình ghi nhận nhân quả, không phải hành động tinh thần của con người.
+**VN:** Nếu hệ ghi nhận không phải thực thể đặc biệt, thì ý thức không có vai trò ưu tiên trong việc định nghĩa ghi nhận phía K. Điều này không tuyên bố cơ chế vật lý cho "wavefunction collapse"; nó chỉ nói rằng ghi nhận trong phép đo có thể được mô hình hóa như quá trình ghi nhận nhân quả, không phải hành động tinh thần của con người.
 
-### 6.3 Resolves Quantum Cosmology / Giải quyết Vũ trụ học Lượng tử
+### 6.3 Reframes the Registration Question in Cosmology Contexts / Tái diễn giải câu hỏi ghi nhận trong bối cảnh vũ trụ học
 
-**EN:** "Who observes the universe?" is ill-posed if registration is treated as substance-based observation. Under E6, the universe's own causal processes can constitute registration — no external meta-registering system is needed.
+**EN:** "Who observes the universe?" is ill-posed if registration is treated as substance-based observation. Under E6, the relevant K-side question is whether causal processes can instantiate registration roles; this is not a solution to physical quantum cosmology.
 
-**VN:** "Ai quan sát vũ trụ?" là câu hỏi sai nếu hệ ghi nhận bị hiểu như một thực thể quan sát. Với E6, các quá trình nhân quả của vũ trụ có thể tự tạo thành ghi nhận — không cần siêu-quan-sát-viên ngoại tại.
+**VN:** "Ai quan sát vũ trụ?" là câu hỏi sai nếu hệ ghi nhận bị hiểu như một thực thể quan sát. Với E6, câu hỏi phía K là liệu các quá trình nhân quả có thể giữ vai trò ghi nhận hay không; đây không phải lời giải cho vật lý vũ trụ học lượng tử.
 
 ### 6.4 Grounds Null Registering-System Events / Bảo chứng Sự kiện Hệ ghi nhận Rỗng
 
@@ -278,8 +279,8 @@ Properties:
 | "O(t) = ⊕ ô_k formalism" | **D** | Proposed (Cat 07) |
 | "E6 is hub for all postulates" | **D** | **This document — novel synthesis** |
 | "S1 and S2 depend on S3" | **D** | Architectural analysis (this RCA) |
-| "Dissolves Heisenberg cut" | **D** | Applied consequence |
-| "Resolves quantum cosmology registration problem" | **D** | Applied consequence |
+| "Reframes the K-side registering-system role near the Heisenberg cut" | **D** | K-side applied consequence |
+| "Reframes the registration question in cosmology contexts" | **D** | K-side applied consequence |
 
 ---
 
@@ -313,3 +314,14 @@ Properties:
 
 *Source: vvv_qmrf_framework_e06_registering_system_as_process_postulate.md, vvv_qmrf_category_07_e06_registering_system_as_process_framework.md, vvv_qmrf_category_06_e09_null_registering_system_event.md, E1–E5 & E7 postulates, vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md, vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md, system_mapping_SOT.md, system_be_full.md*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `synthesis` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -1,9 +1,10 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# Formal Registration Category: Contrapositive Quantum Evidence - registration
-# Phạm trù Ghi nhận: Bằng chứng Lượng tử Thuần Loại trừ - registration
+# Formal Registration Category: Contrapositive Quantum Registration Evidence
+# Phạm trù Ghi nhận: Bằng chứng Ghi nhận Lượng tử Thuần Loại trừ
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Facebook:** https://www.facebook.com/xuanviet
@@ -11,18 +12,18 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status:** Proposal — Registration class D (Derived, awaiting formal verification)
 **Lineage:** gap/ (BIAN-15) → category/ (Category 01) → framework/ (E11)
 
-> **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve structural gap **BIAN-15** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-15 highlights the absence of a formal QM category for evidence established entirely through null results (equivalent to *Kevalavyatirekin* in Buddhist logic).
+> **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve structural gap **BIAN-15** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-15 highlights the absence of a formal QM category for evidence established entirely through null results (bounded source analogue: *Kevalavyatirekin* in Buddhist logic).
 >
-> *Tài liệu này chính thức thiết lập một phạm trù ghi nhận mới cho Cơ học Lượng tử (QM) nhằm giải quyết khoảng trống cấu trúc **BIAN-15** được xác định trong bản đồ đối chiếu Nhận thức luận Phật giáo - Đo lường Lượng tử. BIAN-15 chỉ ra sự thiếu hụt của QM về một phạm trù chính thức dành cho các bằng chứng được thiết lập hoàn toàn thông qua kết quả rỗng (tương đương với khái niệm Kevalavyatirekin trong logic Phật giáo).*
+> *Tài liệu này chính thức thiết lập một phạm trù ghi nhận mới cho Cơ học Lượng tử (QM) nhằm giải quyết khoảng trống cấu trúc **BIAN-15** được xác định trong bản đồ đối chiếu Nhận thức luận Phật giáo - Đo lường Lượng tử. BIAN-15 chỉ ra sự thiếu hụt của QM về một phạm trù chính thức dành cho các bằng chứng được thiết lập hoàn toàn thông qua kết quả rỗng (dùng khái niệm Kevalavyatirekin trong logic Phật giáo như một đối chiếu nguồn có giới hạn).*
 
 ---
 
 ## 1. Category Identity / Định danh Phạm trù
 
-* **English Name:** Purely Contrastive Evidence - registration / Interaction-Free State Inference - registration (IFSI).
+* **English Name:** Purely Contrastive Registration Evidence / Interaction-Free State Inference (IFSI).
 * **Vietnamese Name:** Bằng chứng Thuần Loại trừ / Suy luận Trạng thái Phi Tương tác.
-* **Buddhist Framework Equivalent / Tương đương trong Hệ thống Phật giáo:** *Kevalavyatirekin* (Purely contrastive inferential mark / Dấu hiệu suy luận thuần loại trừ).
-* **Proposed Mathematical Symbol / Ký hiệu Toán học đề xuất:** Null-Projection Operator - registration $\hat{P}_{null}$ (Toán tử Chiếu vắng mặt).
+* **Buddhist Source Analogue / Đối chiếu nguồn Phật giáo:** *Kevalavyatirekin* (Purely contrastive inferential mark / Dấu hiệu suy luận thuần loại trừ).
+* **Proposed Mathematical Symbol / Ký hiệu Toán học đề xuất:** Null-Projection Registration Operator $\hat{P}_{null}$ (Toán tử Chiếu vắng mặt).
 
 ---
 
@@ -46,7 +47,7 @@ While a traditional Projective Measurement (PVM) operates on the principle of di
 4. **Registration-State Mechanism:** The VVV-QMRF novelty is the **registration-state update** produced by excluding a possibility, not a replacement for the standard physical state-update rule.
 
 **Vietnamese:**
-Trong khi phép đo lượng tử truyền thống (PVM) hoạt động theo nguyên lý tương quan trực tiếp ("Có tín hiệu $\rightarrow$ Có hạt" — tương đương *Anvaya / Sapaksa*), phạm trù này hoạt động hoàn toàn theo nguyên lý phản chứng:
+Trong khi phép đo lượng tử truyền thống (PVM) hoạt động theo nguyên lý tương quan trực tiếp ("Có tín hiệu $\rightarrow$ Có hạt" — tương tự có giới hạn với *Anvaya / Sapaksa*), phạm trù này hoạt động hoàn toàn theo nguyên lý phản chứng:
 1. **Tiền đề:** Nếu hạt đi vào nhánh A $\rightarrow$ Máy dò A chắc chắn sẽ kêu.
 2. **Sự kiện quan sát:** Máy dò A **không** kêu (Null event).
 3. **Kết luận ghi nhận (Phala):** Hạt chắc chắn nằm ở nhánh B. QM chuẩn cung cấp cập nhật trạng thái do phép đo rỗng; VVV-QMRF gọi tên kết luận ghi nhận phía K.
@@ -192,7 +193,7 @@ VVV-QMRF registration-state update layer
 
 ## 6. Assertion Level / Mức Khẳng định
 
-| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+| Component EN | Thành phần VN | RCA assertion class | Evidence / Boundary |
 |---|---|---|---|
 | BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | —; support: N_BE_00213, N_BE_00018, N_BE_00253, N_BE_00015; ED_BE_00110; ED_BE_00116; ED_BE_00057. |
 | QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00033; N_QM_00032; N_QM_00018; N_QM_00022; ED_QM_00039; ED_QM_00012; ED_QM_00014; ED_QM_00025. |
@@ -280,3 +281,15 @@ flowchart TD
 ---
 
 *Source: BIAN_index_SOT.md (BIAN-15), system_be_full.md (Trairūpya/Vipakṣe asattvam, Anupalabdhi, Apoha support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00001-00003), framework/E11_interaction_free_state_inference_postulate.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

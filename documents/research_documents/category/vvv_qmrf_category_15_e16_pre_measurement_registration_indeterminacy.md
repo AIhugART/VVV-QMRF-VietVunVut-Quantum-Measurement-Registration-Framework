@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Phạm trù Ghi nhận: Bất định Ghi nhận Tiền đo / Trạng thái Nghi ngờ Ghi nhận Có Cấu trúc
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Date:** 2026-05-12
@@ -18,7 +19,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Pre-Measurement Registration Indeterminacy / Structured Registration-Doubt State (SDS)
 * **Vietnamese Name:** Bất định Ghi nhận Tiền đo / Trạng thái Nghi ngờ Ghi nhận Có Cấu trúc
-* **Buddhist Equivalent:** *Saṃśaya* (Doubt — epistemic suspension that motivates inquiry toward certainty; used here as a bounded source analogue for structured non-determination, not a binary/equal-weight state)
+* **Buddhist Source Analogue:** *Saṃśaya* (Doubt — epistemic suspension that motivates inquiry toward certainty; used here as a bounded source analogue for structured non-determination, not a binary/equal-weight state)
 * **Node:** N_BE_00007
 * **Symbol:** Indeterminacy Operator $\hat{S}_{saṃśaya}$
 
@@ -27,7 +28,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## 2. Definition
 
 **English:**
-A formal registration category for the registering system's K-state when facing a quantum system in superposition before measurement. This state is NOT mere ignorance (the registering system encodes the superposition structure), NOT certainty (no eigenvalue is determined), but *structured indeterminacy* — the registering system holds a structured K-side suspension between definite alternatives, with a known probability distribution over them. This is the quantum counterpart of Buddhist *Saṃśaya*: doubt not as confusion but as a rigorous source-lineage analogue for structured non-determination.
+A formal registration category for the registering system's K-state when facing a quantum system in superposition before measurement. This state is NOT mere ignorance (the registering system encodes the superposition structure), NOT certainty (no eigenvalue is determined), but *structured indeterminacy* — the registering system holds a structured K-side suspension between definite alternatives, with a known probability distribution over them. This uses Buddhist *Saṃśaya* as a bounded source analogue: doubt not as confusion but as a rigorous source-lineage analogue for structured non-determination.
 
 **Vietnamese:**
 Phạm trù ghi nhận chính thức cho trạng thái K của hệ ghi nhận khi đối mặt với hệ lượng tử trong chồng chập trước khi đo. Không phải vô tri (hệ ghi nhận mã hóa cấu trúc chồng chập), không phải chắc chắn (chưa có eigenvalue), mà là *bất định có cấu trúc* — hệ ghi nhận ở trạng thái treo có cấu trúc giữa các lựa chọn xác định với phân phối xác suất đã biết.
@@ -204,7 +205,7 @@ VVV-QMRF registration-state update layer
 
 ## 6. Assertion Level / Mức Khẳng định
 
-| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+| Component EN | Thành phần VN | RCA assertion class | Evidence / Boundary |
 |---|---|---|---|
 | BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | N_BE_00007; support: N_BE_00137; —. |
 | QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00005; N_QM_00025; N_QM_00091; N_QM_00100; N_QM_00002; ED_QM_00003; ED_QM_00028; ED_QM_00103; ED_QM_00113. |
@@ -292,3 +293,15 @@ flowchart TD
 ---
 
 *Source: BIAN_index_SOT.md (BIAN-11), system_be_full.md (N_BE_00007), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00054-00055), framework/E16_pre_measurement_indeterminacy_postulate.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

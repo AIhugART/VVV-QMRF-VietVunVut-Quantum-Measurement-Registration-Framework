@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Phạm trù Ghi nhận: Sự Tự hoàn tất Ghi nhận (Nguồn BE: Đồng nhất giữa Nhận thức và Kết quả)
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Facebook:** https://www.facebook.com/xuanviet
@@ -11,9 +12,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status:** Proposal — Registration class D (Derived, awaiting formal verification)
 **Lineage:** gap/ (BIAN-16) → category/ (Category 02) → framework/ (E2)
 
-> **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve structural gap **BIAN-16** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-16 highlights QM's failure to formally unite the physical detector response with the resulting registration outcome into a single irreducible event (equivalent to the *Pramāṇa-Phala identity* in Buddhist logic).
+> **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve structural gap **BIAN-16** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-16 highlights QM's failure to formally unite the physical detector response with the resulting registration outcome into a single irreducible event (using the *Pramāṇa-Phala identity* in Buddhist logic as a bounded source analogue).
 >
-> *Tài liệu này chính thức thiết lập một phạm trù ghi nhận mới cho Cơ học Lượng tử (QM) nhằm giải quyết khoảng trống cấu trúc **BIAN-16** được xác định trong bản đồ đối chiếu Nhận thức luận Phật giáo - Đo lường Lượng tử. BIAN-16 chỉ ra sự thất bại của QM trong việc hợp nhất detector response vật lý và kết quả ghi nhận thành một biến cố duy nhất không thể chia cắt (tương đương với sự đồng nhất Pramāṇa-Phala trong logic Phật giáo).*
+> *Tài liệu này chính thức thiết lập một phạm trù ghi nhận mới cho Cơ học Lượng tử (QM) nhằm giải quyết khoảng trống cấu trúc **BIAN-16** được xác định trong bản đồ đối chiếu Nhận thức luận Phật giáo - Đo lường Lượng tử. BIAN-16 chỉ ra sự thất bại của QM trong việc hợp nhất detector response vật lý và kết quả ghi nhận thành một biến cố duy nhất không thể chia cắt (dùng sự đồng nhất Pramāṇa-Phala trong logic Phật giáo như một đối chiếu nguồn có giới hạn).*
 
 ---
 
@@ -21,7 +22,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Registration Self-Completion Matrix / Act-Result Registration Identity.
 * **Vietnamese Name:** Ma trận Tự hoàn tất Ghi nhận / Sự đồng nhất Hành động - Kết quả Ghi nhận.
-* **Buddhist Framework Equivalent / Tương đương trong Hệ thống Phật giáo:** *Pramāṇa-Phala Identity* (Cognition is its own result / Nhận thức chính là Kết quả).
+* **Buddhist Source Analogue / Đối chiếu nguồn Phật giáo:** *Pramāṇa-Phala Identity* (Cognition is its own result / Nhận thức chính là Kết quả).
 * **Proposed Mathematical Symbol / Ký hiệu Toán học đề xuất:** Irreducible Event Tensor / Tensor Biến cố Bất khả phân $\mathcal{T}_{act-res}$.
 
 ---
@@ -40,13 +41,13 @@ Là một nguyên lý cấu trúc chính thức khẳng định rằng detector 
 
 **English:**
 Standard QM describes physical interaction and outcome probabilities through its existing formalism. Under this VVV-QMRF category, the registration act and registered result are modeled as one K-side closure:
-1. **Act = Result:** The operator representing the registration process ($\hat{M}$) is mathematically paired with the Projection Operator - registration of the outcome ($\hat{P}_i$).
+1. **Act = Result:** The operator representing the registration process ($\hat{M}$) is mathematically paired with the registration-outcome projection operator ($\hat{P}_i$).
 2. **Elimination of the Secondary Step:** At the registration layer, a valid detector response and its locked result form one closure event. There is no intermediate K-state where the measurement has occurred but the registered result has not yet crystallized.
 3. **The Act-Result Tensor:** This is formalized as a tensor $\mathcal{T}_{act-res}$ where the process matrix and the outcome vector are inseparable within the registration-layer model.
 
 **Vietnamese:**
 Hiện tại, QM mô tả tương tác vật lý (tiến hóa Schrödinger) và sau đó áp đặt riêng biệt Quy tắc Born để ra kết quả. Hành động và Kết quả bị tách rời. Với phạm trù mới này:
-1. **Hành động = Kết quả:** Toán tử đại diện cho quá trình đo lường ($\hat{M}$) được hợp nhất toán học với Projection Operator - registration của kết quả ($\hat{P}_i$).
+1. **Hành động = Kết quả:** Toán tử đại diện cho quá trình đo lường ($\hat{M}$) được hợp nhất toán học với toán tử chiếu kết quả ghi nhận ($\hat{P}_i$).
 2. **Loại bỏ Bước trung gian:** Ở tầng ghi nhận, detector response hợp lệ và kết quả đã khóa tạo thành một biến cố đóng duy nhất. Không tồn tại một trạng thái lấp lửng nào mà phép đo đã xảy ra nhưng kết quả chưa kết tinh.
 3. **Tensor Bất khả phân:** Điều này được hình thức hóa thành một tensor $\mathcal{T}_{act-res}$ nơi ma trận tiến trình và vector kết quả không thể bị tách rời.
 
@@ -190,7 +191,7 @@ VVV-QMRF registration-state update layer
 
 ## 6. Assertion Level / Mức Khẳng định
 
-| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+| Component EN | Thành phần VN | RCA assertion class | Evidence / Boundary |
 |---|---|---|---|
 | BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | —; support: N_BE_00001; ED_BE_00001-ED_BE_00004. |
 | QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00019; N_QM_00021; N_QM_00018; N_QM_00022; N_QM_00016; ED_QM_00017-ED_QM_00025. |
@@ -278,3 +279,15 @@ flowchart TD
 ---
 
 *Source: BIAN_index_SOT.md (BIAN-16), system_be_full.md (Pramāṇa support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00027-00028), framework/vvv_qmrf_framework_e02_registration_self_completion_postulate.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

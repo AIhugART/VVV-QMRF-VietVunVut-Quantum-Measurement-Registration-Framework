@@ -4,15 +4,16 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Phạm trù Ghi nhận: Ghi nhận Vắng mặt Hợp lệ / Ghi nhận Rỗng Có Điều kiện
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Date:** 2026-05-12
 **Status:** Proposal — Registration class D
 **Lineage:** gap/ (BIAN-9) → category/ (Category 13) → framework/ (E14)
 
-> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-9**. BIAN-9 highlights QM's lack of a formal category treating the absence registration (null measurement result) as a distinct, positive registration act — equivalent to *Anupalabdhi* (Non-perception as valid cognition) in Buddhist Epistemology.
+> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-9**. BIAN-9 highlights QM's lack of a formal category treating the absence registration (null measurement result) as a distinct, positive registration act — using *Anupalabdhi* (Non-perception as valid cognition) in Buddhist Epistemology as a bounded source analogue.
 >
-> *Tài liệu này giải quyết **BIAN-9**. BIAN-9 chỉ ra QM thiếu phạm trù coi ghi nhận vắng mặt (kết quả đo rỗng) là hành vi ghi nhận dương tính riêng biệt — tương đương Anupalabdhi (Vô tri giác như nguồn BE cho ghi nhận hợp lệ) trong Phật giáo.*
+> *Tài liệu này giải quyết **BIAN-9**. BIAN-9 chỉ ra QM thiếu phạm trù coi ghi nhận vắng mặt (kết quả đo rỗng) là hành vi ghi nhận dương tính riêng biệt — dùng Anupalabdhi (Vô tri giác như nguồn BE cho ghi nhận hợp lệ) trong Phật giáo như một đối chiếu nguồn có giới hạn.*
 
 ---
 
@@ -20,7 +21,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Validated Absence Registration / Conditioned Null Registration (VAR)
 * **Vietnamese Name:** Ghi nhận Vắng mặt Hợp lệ / Ghi nhận Rỗng Có Điều kiện
-* **Buddhist Equivalent:** *Anupalabdhi* (Non-perception — the valid registration of the absence of a perceivable object)
+* **Buddhist Source Analogue:** *Anupalabdhi* (Non-perception — the valid registration of the absence of a perceivable object)
 * **Node:** N_BE_00253 — Anupalabdhi (RCA node; `SYSTEM_Buddhist_Epistemology/system_be_full.md`)
 * **Mathematical Symbol:** Subspace-Bounded Absence Projection Operator $\hat{\Pi}_{absent}$
 
@@ -82,9 +83,9 @@ BIAN-9 resolution: QM treats null results as statistical leftovers. *Anupalabdhi
 
 1. **Elevates null measurement to pramāṇa status** — the null result is a valid registration status.
 2. **Connects to interaction-free measurement** (E11/BIAN-15) but extends it: VAR covers ANY null result under proper Trairūpya conditions, not only interferometer cases.
-3. **Provides the formal basis for "dark matter" registration reasoning**: absence of detection under rigorous conditions IS positive registration evidence.
+3. **Uses dark-matter-style non-detection as a bounded example**: absence of detection under rigorous conditions can be positive registration evidence, not a formal basis for dark matter theory by itself.
 
-> **Conclusion:** Validated Absence Registration resolves BIAN-9 by providing QM with the category it lacks: the null measurement result treated as a distinct, positive registration act — the quantum counterpart of Buddhist *Anupalabdhi*.
+> **Conclusion:** Validated Absence Registration resolves BIAN-9 only as a VVV-QMRF registration-layer category: the null measurement result treated as a distinct, positive registration act, using Buddhist *Anupalabdhi* as a bounded source analogue.
 
 ---
 
@@ -349,3 +350,14 @@ flowchart TD
 
 *Source: BIAN_index_SOT.md (BIAN-9), system_be_full.md (N_BE_00253), SYSTEM_Quantum_Measurement/system_qm_full.md, documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping_SOT.md, node_QM_VVV.md (N_QM_VVV_00020), framework/vvv_qmrf_framework_e10_tripartite_registration_validity_matrix_postulate.md, framework/vvv_qmrf_framework_e14_validated_absence_registration_postulate.md; schema pattern adapted from framework/vvv_qmrf_framework_e01_self_certifying_registration_postulate.md, mapping/vvv_qmrf_mapping_be15_exclusion_based_registration.md, and meta_architecture/ENI_epistemic_natural_interface.md*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

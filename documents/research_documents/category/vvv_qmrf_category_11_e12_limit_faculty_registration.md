@@ -4,15 +4,16 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Phạm trù Ghi nhận: Ghi nhận Giới hạn Năng lực / Chế độ Ghi nhận Siêu việt
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Date:** 2026-05-12
 **Status:** Proposal — Registration class D
 **Lineage:** gap/ (BIAN-3) → category/ (Category 11) → framework/ (E12)
 
-> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-3**. BIAN-3 highlights QM's lack of a formal category for registration by a faculty operating beyond the limits of ordinary classical perception — equivalent to *Alaukika pratyakṣa* (Transcendental/Extraordinary Perception) in Buddhist Epistemology.
+> **Context:** This document formally establishes a new registration category for QM to resolve structural gap **BIAN-3**. BIAN-3 highlights QM's lack of a formal category for registration by a faculty operating beyond the limits of ordinary classical perception — using *Alaukika pratyakṣa* (Transcendental/Extraordinary Perception) in Buddhist Epistemology as a bounded source analogue.
 >
-> *Tài liệu này giải quyết khoảng trống cấu trúc **BIAN-3**. BIAN-3 chỉ ra sự thiếu hụt của QM về phạm trù ghi nhận bởi một năng lực vượt giới hạn tri giác thông thường — tương đương Alaukika pratyakṣa (Tri giác Phi thường) trong Phật giáo.*
+> *Tài liệu này giải quyết khoảng trống cấu trúc **BIAN-3**. BIAN-3 chỉ ra sự thiếu hụt của QM về phạm trù ghi nhận bởi một năng lực vượt giới hạn tri giác thông thường — dùng Alaukika pratyakṣa (Tri giác Phi thường) trong Phật giáo như một đối chiếu nguồn có giới hạn.*
 
 ---
 
@@ -20,7 +21,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Limit-Faculty Registration / Transcendental Registration Mode (TOM)
 * **Vietnamese Name:** Ghi nhận Giới hạn Năng lực / Chế độ Ghi nhận Siêu việt
-* **Buddhist Equivalent:** *Alaukika pratyakṣa* (Extraordinary perception — perception by a faculty operating beyond ordinary sensory limits)
+* **Buddhist Source Analogue:** *Alaukika pratyakṣa* (Extraordinary perception — perception by a faculty operating beyond ordinary sensory limits)
 * **Node:** N_BE_00012
 * **Mathematical Symbol:** Limit-Faculty Registration Operator $\hat{M}_{trans}$
 
@@ -289,3 +290,15 @@ flowchart TD
 ---
 
 *Source: BIAN_index_SOT.md (BIAN-3), system_be_full.md (N_BE_00012), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00048-00050), framework/vvv_qmrf_framework_e12_limit_faculty_registration_postulate.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

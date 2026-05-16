@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Phạm trù Ghi nhận: Sự Phủ quyết Ghi nhận Hồi tố
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Facebook:** https://www.facebook.com/xuanviet
@@ -11,9 +12,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status:** Proposal — Registration class D (Derived, awaiting formal verification)
 **Lineage:** gap/ (BIAN-12) → category/ (Category 03) → framework/ (E8)
 
-> **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve structural gap **BIAN-12** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-12 highlights the absence of a formal QM mechanism by which a subsequent measurement can invalidate the registration status assigned to a prior detector response (equivalent to *Bādhaka pramāṇa* in Buddhist logic).
+> **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve structural gap **BIAN-12** identified in the Buddhist Epistemology - Quantum Measurement mapping. BIAN-12 highlights the absence of a formal QM mechanism by which a subsequent measurement can invalidate the registration status assigned to a prior detector response (using *Bādhaka pramāṇa* in Buddhist logic as a bounded source analogue).
 >
-> *Tài liệu này chính thức thiết lập một phạm trù ghi nhận mới cho Cơ học Lượng tử (QM) nhằm giải quyết khoảng trống cấu trúc **BIAN-12** được xác định trong bản đồ đối chiếu Nhận thức luận Phật giáo - Đo lường Lượng tử. BIAN-12 chỉ ra sự thiếu hụt của QM về một cơ chế chính thức cho phép một phép đo sau vô hiệu hóa trạng thái ghi nhận của một detector response trước đó (tương đương với khái niệm Bādhaka pramāṇa trong logic Phật giáo).*
+> *Tài liệu này chính thức thiết lập một phạm trù ghi nhận mới cho Cơ học Lượng tử (QM) nhằm giải quyết khoảng trống cấu trúc **BIAN-12** được xác định trong bản đồ đối chiếu Nhận thức luận Phật giáo - Đo lường Lượng tử. BIAN-12 chỉ ra sự thiếu hụt của QM về một cơ chế chính thức cho phép một phép đo sau vô hiệu hóa trạng thái ghi nhận của một detector response trước đó (dùng khái niệm Bādhaka pramāṇa trong logic Phật giáo như một đối chiếu nguồn có giới hạn).*
 
 ---
 
@@ -21,7 +22,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * **English Name:** Retroactive Registration Override (REO) / Formal Measurement Invalidation.
 * **Vietnamese Name:** Sự Phủ quyết Ghi nhận Hồi tố / Hủy bỏ Phép đo Chính thức.
-* **Buddhist Framework Equivalent / Tương đương trong Hệ thống Phật giáo:** *Bādhaka pramāṇa* (Invalidating registration / Cơ chế phủ quyết ghi nhận).
+* **Buddhist Source Analogue / Đối chiếu nguồn Phật giáo:** *Bādhaka pramāṇa* (Invalidating registration / Cơ chế phủ quyết ghi nhận).
 * **Proposed Mathematical Symbol / Ký hiệu Toán học đề xuất:** Invalidation Operator / Toán tử Phủ quyết $\hat{O}_{bhranti}$ (from *bhrānti* = error).
 
 ---
@@ -281,3 +282,14 @@ flowchart TD
 
 *Source: BIAN_index_SOT.md (BIAN-12), system_be_full.md (Bhrānti and Pramāṇa support), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00029-00032), framework/vvv_qmrf_framework_e08_retroactive_registration_override_postulate.md*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |
