@@ -35,9 +35,9 @@ E2 depends on E1: a self-certifying registration act is necessarily self-complet
 
 ### Vietnamese
 
-Trong QM tiêu chuẩn, phép đo là quá trình vật lý cho ra eigenvalue. Quá trình và kết quả dường như tách biệt. E2 khẳng định sự tách biệt này là hệ quả của hình thức hóa chưa hoàn chỉnh ở tầng ghi nhận. Hành động đo-ghi nhận và kết quả ghi nhận là một sự kiện duy nhất — về cấu trúc, không chỉ thời gian.
+Trong một cách trình bày đơn giản của phép đo projective, phép đo là một quá trình vật lý, tức tương tác giữa hệ và thiết bị, tạo ra một eigenvalue. Quá trình và kết quả dường như tách biệt: trước là tương tác, sau là con số. E2 không thay đổi mô tả vật lý đó; E2 thêm một quy tắc phía K xem hành động đo-ghi nhận và kết quả đã ghi nhận như một sự kiện ghi nhận hoàn tất.
 
-Nguyên lý bắt nguồn từ đồng nhất Pramana-phala: công cụ nhận thức hợp lệ (pramana) và kết quả nhận thức (phala) đồng nhất cấu trúc. Nhận thức nắm bắt màu xanh CHÍNH LÀ kết quả của nhận thức đó. Áp dụng trong VVV-QMRF: tương tác đo-ghi nhận CHÍNH LÀ kết quả ghi nhận. Eigenvalue CHÍNH LÀ tương tác đã được hình thức hóa như ghi nhận hoàn tất.
+Nguyên lý bắt nguồn từ đồng nhất Pramana-phala: công cụ nhận thức hợp lệ (pramana) và kết quả nhận thức (phala) không tách rời nhau tại điểm hoàn tất. Áp dụng trong VVV-QMRF, eigenvalue vật lý không bị định nghĩa lại; nó được xem là kết quả đã ghi nhận phía K khi hành động đo-ghi nhận đã đạt tới hoàn tất.
 
 E2 phụ thuộc E1: phép đo-ghi nhận tự chứng nhận tất yếu tự hoàn tất ở tầng ghi nhận.
 
