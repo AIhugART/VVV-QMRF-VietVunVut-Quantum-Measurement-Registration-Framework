@@ -207,6 +207,22 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | **E6** | Registering System as Process / Hệ ghi nhận là quá trình | The registering system is a causal process, not a substance | Hệ ghi nhận là quá trình nhân quả, không phải thực thể | Anātmavāda |
 | **E7** | Registration Validity Location / Định vị tính hợp lệ ghi nhận | The framework specifies where registered status is valid | Khung này xác định nơi trạng thái đã ghi nhận có hiệu lực | Svataḥ prāmāṇya |
 
+### Formal Anchors for Core Postulates (E1–E7) / Neo Công thức cho Tiên đề Cốt lõi
+
+**EN:** The formulas below are README-level anchors sourced from [registration-layer formalization](documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md); their full RCA status and boundaries remain controlled there.
+
+**VN:** Các công thức dưới đây là neo tóm tắt ở README, lấy từ file [registration-layer formalization](documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md); trạng thái RCA đầy đủ và ranh giới diễn giải vẫn do file đó kiểm soát.
+
+| # | Formal anchor / Neo công thức | RCA boundary / Ranh giới RCA |
+|:-:|-------------------------------|------------------------------|
+| **E1** | $\sigma:\mathcal{M}_K\to\{0,1\}$; $\sigma(M)=1 \iff M\text{ occurred as K-side registration}$; $cert(k):=\sigma(M)$ | Self-certifies K-side occurrence of $M$ without requiring $M'$; not consciousness-caused collapse. |
+| **E2** | $M \equiv^K r$ | Act-result inseparability inside $\mathcal{K}$; not physical identity in $\mathcal{H}$. |
+| **E3** | $C:\mathcal{H}\to\mathcal{K}$; $C(I)=k_{locked}$ | Locks available interaction $I$ as K-side registration; does not collapse $\rho$. |
+| **E4** | $\varepsilon(M)\in\mathcal{K}_{pre}$; $\operatorname{Sym}(\varepsilon(M))=\emptyset$ | No symbolic value at the pre-symbolic layer; not absence of physical interaction. |
+| **E5** | $\exists f_{enc}: \lvert R_k\rangle_A \mapsto a_k\text{ internally within }\mathcal{K}$ | Internal K-side encoding; not a second apparatus or new physical observable. |
+| **E6** | $R=\{M_1,M_2,\dots,M_n\}$; $t(M_1)<\dots<t(M_n)$; $\neg\exists\mathbf{I}_R\text{ independent of }\{M_i\}$ | Registering system as ordered process; not a fixed observer, soul, or object replacing the apparatus. |
+| **E7** | $V:\mathcal{M}_K\to\{0,1\}$; $V(M)=1$ by default; $V(M)\to0 \iff \exists M': t(M')>t(M)\land M'\perp M$; $\neg\exists F:F(M')\to\{V(M)=1\}$ | Validity status inside K-side registration; not absolute truth, a physical observable, or a Born-rule replacement. |
+
 ### Extended Postulates (E8–E16) — Structural Expansions / Tiên đề Mở rộng — Mở rộng Cấu trúc
 
 | # | Postulate / Tiên đề | EN Summary / Tóm tắt | VN Summary / Tóm tắt | Buddhist Source / Nguồn |
@@ -225,10 +241,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## Two Lemmas / Hai Bổ đề
 
-| Lemma | EN / Tiếng Anh | VN / Tiếng Việt | Position / Vị trí |
-|:-----:|----------------|-----------------|-------------------|
-| **S1-Λ** | Transition Lemma — maps pre-symbolic event to internal representation encoding | Bổ đề Chuyển tiếp — ánh xạ sự kiện tiền biểu tượng sang mã hóa biểu diễn nội tại | E4 → E5 (trong pipeline) |
-| **S2-Δ** | Temporal Discontinuity Lemma — registration gap between successive measurements | Bổ đề Gián đoạn Thời gian — khoảng cách ghi nhận giữa các phép đo liên tiếp | Pipeline N → N+1 (giữa pipelines) |
+| Lemma | EN / Tiếng Anh | VN / Tiếng Việt | Formula anchor / Neo công thức | Position / Vị trí |
+|:-----:|----------------|-----------------|-------------------------------|-------------------|
+| **S1-Λ** | Transition Lemma — maps pre-symbolic event to internal representation encoding | Bổ đề Chuyển tiếp — ánh xạ sự kiện tiền biểu tượng sang mã hóa biểu diễn nội tại | $\Lambda:\mathcal{K}_{pre}\to\mathcal{K}_{sym}$; $r=\Lambda(\varepsilon(M))$ | E4 → E5 (trong pipeline) |
+| **S2-Δ** | Temporal Discontinuity Lemma — registration gap between successive measurements | Bổ đề Gián đoạn Thời gian — khoảng cách ghi nhận giữa các phép đo liên tiếp | $\forall t\in(t(M_i),t(M_{i+1})),\;\text{RegistrationState}(t)=\emptyset$ | Pipeline N → N+1 (giữa pipelines) |
 
 ---
 
