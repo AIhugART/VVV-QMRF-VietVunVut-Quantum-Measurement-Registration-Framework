@@ -27,23 +27,23 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ### English
 
-Every act of quantum measurement carries within itself the certification of its own occurrence. When a measurement M is performed on a quantum system S, the fact that M has occurred is established by M itself — intrinsically, simultaneously, and without requiring any second measurement M′ to confirm, register, or validate that M took place.
+At the registration layer, a measurement-registration act carries its own certification of occurrence. When a standard physical measurement procedure M is applied to a quantum system S, the physical transition remains governed by standard QM; E1 concerns the K-side fact that the occurrence of the registration does not require a second registration act M′.
 
-This means that the measurement event is self-luminous: it does not need an external witness. Just as a lamp illuminates both the room and itself without needing a second lamp to reveal the first, a measurement act registers both its result and its own happening in a single, indivisible registration event.
+This means the registration event has reflexive certification: it does not need an external witness at the registration layer. The lamp analogy should be read structurally, not physically: one registration-state update occurs with both outcome o and the occurrence marker for that registration event.
 
-The immediate consequence is the termination of the von Neumann chain. In standard quantum mechanics, apparatus A₁ measures system S, but A₁ is itself a quantum system — so apparatus A₂ must measure A₁, and apparatus A₃ must measure A₂, and so on without end. This infinite regress arises precisely because the standard formalism treats each measurement as an event that requires something external to confirm it. E1 dissolves this regress at its root: the first measurement is already self-confirmed. There is no chain to begin with.
+The immediate consequence at the registration layer is a stopping point for the registration version of the von Neumann chain. Standard quantum mechanics may still model apparatus A₁ as a quantum system in a larger physical description. E1 does not alter that ρ-side description; it says that K_after already includes certification that the registration event occurred, so no additional K-side meta-registration is required.
 
-E1 does not claim that measurement is a conscious act. It claims that measurement has a structural property — self-certification — that is intrinsic to the measurement event itself, independent of awareness, intention, or any substantial human subject.
+E1 does not claim that measurement is a conscious act. It claims that measurement-registration has a structural property — self-certification — that belongs to the K-side registration event, independent of awareness, intention, or any substantial human subject.
 
 ### Vietnamese
 
-Mọi hành động đo lường lượng tử đều mang trong chính nó sự xác nhận rằng nó đã xảy ra. Khi phép đo M được thực hiện trên hệ lượng tử S, sự kiện M đã diễn ra được xác lập bởi chính M — một cách nội tại, đồng thời, và không cần bất kỳ phép đo thứ hai M′ nào để xác nhận, ghi nhận, hay công nhận rằng M đã xảy ra.
+Ở tầng ghi nhận, một hành động đo-ghi nhận mang trong chính nó sự xác nhận rằng việc ghi nhận đã xảy ra. Khi quy trình đo vật lý chuẩn M được áp dụng lên hệ lượng tử S, chuyển đổi vật lý vẫn tuân theo QM chuẩn; E1 chỉ nói về phía K: sự xảy ra của ghi nhận không cần một hành động ghi nhận thứ hai M′.
 
-Điều này có nghĩa là sự kiện đo lường mang tính tự phát sáng: nó không cần một nhân chứng bên ngoài. Giống như ngọn đèn chiếu sáng cả căn phòng lẫn chính nó mà không cần ngọn đèn thứ hai để soi sáng ngọn đèn thứ nhất, một hành động đo lường ghi nhận cả kết quả của nó lẫn chính sự xảy ra của nó trong một sự kiện ghi nhận duy nhất, không thể chia tách.
+Điều này có nghĩa là sự kiện ghi nhận có tính tự chứng nhận phản thân: nó không cần một nhân chứng bên ngoài ở tầng ghi nhận. Ẩn dụ ngọn đèn chỉ nên hiểu theo nghĩa cấu trúc, không phải vật lý: một cập nhật trạng thái ghi nhận ghi lại cả kết quả o và sự xảy ra của chính sự kiện ghi nhận đó.
 
-Hệ quả trực tiếp là sự chấm dứt chuỗi von Neumann. Trong cơ học lượng tử tiêu chuẩn, máy đo A₁ đo hệ S, nhưng bản thân A₁ cũng là một hệ lượng tử — vậy phải có máy A₂ đo A₁, rồi máy A₃ đo A₂, và cứ thế tiếp tục không bao giờ dừng. Chuỗi lùi vô hạn này phát sinh chính xác vì hệ hình thức tiêu chuẩn coi mỗi phép đo là một sự kiện cần thứ gì đó bên ngoài để xác nhận nó. E1 hóa giải chuỗi lùi này ngay tại gốc rễ: phép đo đầu tiên đã tự xác nhận rồi. Không có chuỗi nào để bắt đầu.
+Hệ quả trực tiếp ở tầng ghi nhận là một điểm dừng cho phiên bản ghi nhận của chuỗi von Neumann. QM chuẩn vẫn có thể mô hình hóa máy đo A₁ như một hệ lượng tử trong mô tả vật lý lớn hơn. E1 không sửa mô tả phía ρ; nó nói rằng K_after đã bao gồm xác nhận rằng sự kiện ghi nhận đã xảy ra, nên không cần thêm siêu-ghi nhận ở phía K.
 
-E1 không tuyên bố rằng phép đo là một hành động ý thức. E1 tuyên bố rằng phép đo có một thuộc tính cấu trúc — tự chứng nhận — vốn nội tại trong chính sự kiện đo lường, độc lập với nhận thức, ý định, hay bất kỳ chủ thể người nào.
+E1 không tuyên bố rằng phép đo là một hành động ý thức. E1 tuyên bố rằng đo-ghi nhận có một thuộc tính cấu trúc — tự chứng nhận — thuộc về sự kiện ghi nhận phía K, độc lập với nhận thức, ý định, hay bất kỳ chủ thể người nào.
 
 ---
 
@@ -63,14 +63,14 @@ measurement to establish its value.
 ### 3b. Category 05 formalism — R̂_svasa operator
 
 ```
-The Reflexive Operator R̂_svasa acts such that:
-  1. The measurement interaction Hamiltonian includes a 
-     self-referential trace component.
-  2. The macroscopic state transition of Apparatus A 
-     is self-luminous (svaprakāśa).
-  3. The event E_A is mathematically complete and verified 
-     at the exact moment it occurs.
-  4. The probability amplitude vector structurally "seals" itself.
+The Reflexive Registration Operator R̂_svasa is read only at the K side:
+  1. A registration event includes a reflexive occurrence marker.
+  2. A registration-state update occurs with the occurrence marker.
+  3. The occurrence marker is completed within the same K-side update.
+  4. No second K-side meta-registration M′ is required.
+
+Boundary: R̂_svasa does not modify the interaction Hamiltonian,
+the Born rule, or any probability-amplitude dynamics.
 ```
 
 ### 3c. Equivalence status / Trạng thái tương đương
@@ -91,7 +91,7 @@ The Reflexive Operator R̂_svasa acts such that:
 | M′ | Second-order measurement | Phép đo bậc hai | Epistemic event |
 | S | Quantum system being measured | Hệ lượng tử bị đo | Hilbert space ℋ |
 | σ(M) | Self-certification function | Hàm tự chứng nhận | {0, 1} |
-| R̂_svasa | Reflexive operator | Toán tử phản thân | Operator on ℋ |
+| R̂_svasa | Reflexive registration operator | Toán tử ghi nhận phản thân | Registration layer |
 | E_A | Apparatus event | Sự kiện của máy đo | Classical event |
 | svaprakāśa | Self-luminosity | Tính tự phát sáng | Buddhist technical term |
 
@@ -196,7 +196,7 @@ E6 (Registering-System-as-Process)
 | "Resolves von Neumann chain" | "Giải quyết chuỗi von Neumann" | **M** (Measured) | SOT T1.06 L228, T6.02 L785 |
 | "σ(M) formalism" | "Hình thức hóa σ(M)" | **D** (Derived) | Framework E1 — proposed, not proven |
 | "R̂_svasa operator" | "Toán tử R̂_svasa" | **D** (Derived) | Category 05 — proposed, not proven |
-| "Resolves Wigner's Friend" | "Giải quyết Wigner's Friend" | **D** (Derived) | Category 05 L54 — claimed, not verified |
+| "Addresses K-side framing of Wigner's Friend" | "Xử lý khung ghi nhận phía K của Wigner's Friend" | **C** (Conjecture) | Category 05 L54 — K-side registration framing only; does not resolve the ρ-side physical superposition aspect |
 | "σ(M) ≡ R̂_svasa" | "Tương đương hai formalism" | **C** (Conjecture) | Not yet established |
 
 **Summary / Tóm tắt:** Descriptive claims = Class M (solid). Formal claims = Class D (proposed). Cross-formalism equivalence = Class C (conjecture).
@@ -235,7 +235,7 @@ E6 (Registering-System-as-Process)
 
 ## Notes for LLM Processing
 
-- E1 is the deepest single postulate in the 7-postulate registration extension.
+- E6 is the deepest architectural postulate in the 7-postulate registration extension; E1 is the first consequence it enables.
 - E1 resolves 3 BIAN gaps simultaneously (BIAN-2, BIAN-6, BIAN-17) because all three originate from the same BE primitive: Svasaṃvedana (N_BE_00011).
 - E1 is interpretation-neutral: compatible with Copenhagen, QBism, Relational QM, and Decoherence. Partially compatible with Many-Worlds and Objective Collapse. May conflict with Bohmian mechanics on the status of the registering system.
 - Two formalisms exist (σ-function and R̂_svasa operator). Their equivalence is conjectured but unproven.

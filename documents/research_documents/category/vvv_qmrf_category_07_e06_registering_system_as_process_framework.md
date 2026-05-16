@@ -155,10 +155,10 @@ Boundary = not that the apparatus literally disappears after each click, and not
 Prototype RSPF instance:
 
   Setup: measurement records appear across time.
-  Event: each record moment is modeled as `o_k`, not as a permanent observer-substance.
+  Event: each registration moment is modeled as `o_k`, not as a permanent registering substance.
   Gate: causal memory projection links `o_k` to `o_{k+1}`.
   Update: continuity is reconstructed by causal registration linkage.
-  Contrast: a fixed hidden observer core is not required.
+  Contrast: a fixed hidden registration core is not required.
 
   → RSPF instance confirmed only within its boundary.
 ```
@@ -190,7 +190,7 @@ VVV-QMRF registration-state update layer
 
 ## 6. Assertion Level / Mức Khẳng định
 
-| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+| Component EN | Thành phần VN | RCA assertion class | Evidence / Boundary |
 |---|---|---|---|
 | BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | N_BE_00066; support: N_BE_00029; ED_BE_00181; ED_BE_00183. |
 | QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00094; N_QM_00020; N_QM_00038; N_QM_00036; N_QM_00095; ED_QM_00107; ED_QM_00043; ED_QM_00041. |

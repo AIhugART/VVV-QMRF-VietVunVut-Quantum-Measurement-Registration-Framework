@@ -26,27 +26,27 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ### English
 
-QM uses "observer" as a primitive term without formal definition. The observer is implicitly treated as a persistent substance that exists before, during, and after measurement. This creates confusion in Wigner's Friend scenarios and quantum cosmology: who observes the observer? What makes the observer classical?
+QM leaves the registering role without formal K-side definition. That role may be assigned physically to apparatus, environment, or a larger quantum system, but its registration function is not formally separated from that physical description.
 
-E6 replaces the substance-observer framing with a registering-system-as-process model. The registering system is the causal chain of measurement-registration acts — nothing more. There is no invariant core, no "soul," no fixed reference frame underlying the series of measurement events. Each registration moment rₙ is a newly generated registration state that inherits classical data from rₙ₋₁ via causal memory, but is not identical to it.
+E6 replaces substance-based framing at the registration layer with a registering-system-as-process model. The registering system is the causal chain of measurement-registration acts — nothing more on the K side. There is no invariant registration-core, no "soul," and no fixed registration reference frame underlying the series of measurement events. Each registration moment rₙ is a newly generated registration state that inherits registered data from rₙ₋₁ via causal memory, but is not identical to it.
 
 This derives from Anatmavada (non-self doctrine): the denial of a permanent, unified self-entity (atman) underlying cognition. The knower (pramatr) is not a substance but a causal series of cognitive events (santana). In VVV-QMRF, this functions as the source analogue for a registering system grounded as a process rather than a substance.
 
-The immediate consequence: the Heisenberg cut is dissolved. By making the registering system the same ontological type as quantum events (process, not substance), the arbitrary boundary between quantum and classical disappears.
+At the registration layer, the immediate consequence is that the Heisenberg cut is not treated as a physical boundary that disappears. Instead, its registration role is re-expressed inside the process model: the relevant K-side boundary is where a causal series of registration acts becomes stable enough to function as a registering system.
 
-E6 is architecturally foundational: E1 (Self-Certification) depends on E6 because only a process can self-certify — a substance cannot. Self-certification is a structural property of events, not of things.
+E6 is architecturally foundational: E1 (Self-Certification) depends on E6 because only a registration process can self-certify; a substance-model of registration cannot explain self-certification without adding a second meta-registration layer.
 
 ### Vietnamese
 
-QM dùng "người quan sát" như thuật ngữ nguyên thủy không có định nghĩa hình thức. Người quan sát ngầm định được coi là thực thể bền vững tồn tại trước, trong, và sau phép đo. Điều này gây nhầm lẫn trong kịch bản Wigner's Friend và vũ trụ học lượng tử.
+QM để vai trò ghi nhận thiếu định nghĩa phía K chính thức. Về mặt vật lý, vai trò đó có thể được gán cho máy đo, môi trường, hoặc một hệ lượng tử lớn hơn; nhưng chức năng ghi nhận của nó chưa được tách rõ khỏi mô tả vật lý đó.
 
-E6 thay thế khung quan-sát-viên-thực-thể bằng mô hình hệ-ghi-nhận-như-quá-trình. Hệ ghi nhận là chuỗi nhân quả của các hành động đo-ghi nhận — không hơn. Không có lõi bất biến, không "linh hồn", không hệ quy chiếu cố định. Mỗi khoảnh-khắc-ghi-nhận rₙ là trạng thái ghi nhận mới kế thừa dữ liệu từ rₙ₋₁ qua bộ nhớ nhân quả, nhưng không đồng nhất với nó.
+E6 thay thế khung ghi-nhận-như-thực-thể ở tầng ghi nhận bằng mô hình hệ-ghi-nhận-như-quá-trình. Hệ ghi nhận là chuỗi nhân quả của các hành động đo-ghi nhận — không hơn ở phía K. Không có lõi ghi nhận bất biến, không "linh hồn", không hệ quy chiếu ghi nhận cố định. Mỗi khoảnh-khắc-ghi-nhận rₙ là trạng thái ghi nhận mới kế thừa dữ liệu đã ghi nhận từ rₙ₋₁ qua bộ nhớ nhân quả, nhưng không đồng nhất với nó.
 
 Bắt nguồn từ Vô ngã (Anatmavada): phủ nhận thực thể tự ngã bền vững (atman) nằm dưới nhận thức. Chủ thể nhận thức (pramatr) không phải thực thể mà là chuỗi nhân quả của các sự kiện nhận thức (santana). Trong VVV-QMRF, cấu trúc này được dùng như tương tự nguồn cho hệ ghi nhận dạng quá trình, không phải như tên kỹ thuật chính của tầng `K`.
 
-Hệ quả: vết cắt Heisenberg tan rã. Biến hệ ghi nhận thành cùng loại bản thể với sự kiện lượng tử, ranh giới giữa lượng tử và cổ điển biến mất.
+Hệ quả ở tầng ghi nhận là vết cắt Heisenberg không được coi như một ranh giới vật lý biến mất. Thay vào đó, vai trò ghi nhận của nó được diễn đạt lại trong mô hình quá trình: ranh giới phía K là nơi chuỗi nhân quả của các hành động ghi nhận đủ ổn định để vận hành như một hệ ghi nhận.
 
-E6 là nền tảng kiến trúc: E1 phụ thuộc E6 vì chỉ quá trình mới tự chứng nhận được — thực thể thì không.
+E6 là nền tảng kiến trúc: E1 phụ thuộc E6 vì chỉ quá trình ghi nhận mới có thể tự chứng nhận; mô hình ghi nhận như thực thể sẽ cần thêm một tầng siêu-ghi-nhận thứ hai để giải thích tự chứng nhận.
 
 ---
 
@@ -137,10 +137,10 @@ Properties:
 ## 6. QM Deficit / Khiếm khuyết QM
 
 **English:**
-QM uses "observer" without defining it. The observer is implicitly a persistent classical entity — a substance that exists across measurements. This creates the Wigner's Friend paradox, the quantum cosmology problem (who observes the universe?), and the Heisenberg cut arbitrariness. QM does not formally analyze the observer as a causal series.
+QM can model apparatus, environment, or a larger system physically, but it does not define the K-side registering role as a causal registration process. In Wigner's Friend-type cases, quantum cosmology discussions, and Heisenberg-cut debates, the under-specified point is not a new physical dynamics but the registration role assigned to the registering system. E6 does not solve those physical problems; it supplies a K-side process model for the registering role.
 
 **Vietnamese:**
-QM dùng "người quan sát" mà không định nghĩa. Người quan sát ngầm định là thực thể cổ điển bền vững — tồn tại qua các phép đo. Điều này tạo ra nghịch lý Wigner's Friend, bài toán vũ trụ học lượng tử, và tính tùy ý của vết cắt Heisenberg.
+QM để vai trò ghi nhận thiếu định nghĩa. Vai trò đó thường bị ngầm định như một thực thể cổ điển bền vững — tồn tại qua các phép đo. Điều này tạo ra nghịch lý Wigner's Friend, bài toán vũ trụ học lượng tử, và tính tùy ý của vết cắt Heisenberg.
 
 ---
 
@@ -170,11 +170,11 @@ E6 is the **deepest architectural postulate** — it enables E1.
 |---|---|---|
 | "Registering system is process not substance" | **M** | SOT T6.04 L804 |
 | "Causal series (santāna)" | **M** | SOT T6.04 L804 |
-| "QM leaves observer unanalyzed" | **M** | SOT T6.04 L805-806 |
+| "QM leaves registering role unanalyzed" | **M** | SOT T6.04 L805-806 |
 | "No persistent identity" | **M** | SOT T6.04 L804 |
 | "R = {Mᵢ} formalism" | **D** | Proposed |
 | "R(t) = ⊕ r_k formalism" | **D** | Proposed |
-| "Dissolves Wigner's Friend" | **D** | Applied consequence |
+| "Reframes Wigner's Friend-type cases at the K-side registration role" | **D** | Applied consequence, not a physical solution |
 | "Node N_BE_00066" | **✅** | Confirmed: Anātmavāda |
 
 ---

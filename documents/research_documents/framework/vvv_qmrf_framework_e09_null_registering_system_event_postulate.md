@@ -1,25 +1,25 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# E9 â€” Null Registering-System Event Postulate / TiÃªn Ä‘á» Sá»± kiá»‡n Há»‡ ghi nháº­n Rá»—ng
-# Legacy Name: Null Observer Event Postulate / TiÃªn Ä‘á» Sá»± kiá»‡n Quan sÃ¡t viÃªn Rá»—ng / VVV-EQM
+# E9 — Null Registering-System Event Postulate / Tiên đề Sự kiện Hệ ghi nhận Rỗng
+# Legacy Name: Null Observer Event Postulate / Tiên đề Sự kiện Quan sát viên Rỗng / VVV-EQM
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
 **Date:** 2026-05-12  
-**Status:** Proposal â€” Registration class D  
-**Lineage:** gap/ (BIAN-13) â†’ category/ (Category 06) â†’ framework/ (E9)
+**Status:** Proposal — Registration class D  
+**Lineage:** gap/ (BIAN-13) → category/ (Category 06) → framework/ (E9)
 
 ---
 
 ## 1. Postulate Statement
 
 **English:**
-> There exists a formally distinct quantum registration state in which a physical interaction between system and apparatus has verifiably occurred, yet the registering system records zero information change (Î”I = 0). This state â€” the Null Registering-System Event (NRE) â€” is not reducible to hardware failure. It is a VVV-QMRF registration-layer category.
+> There exists a formally distinct quantum registration state in which a physical interaction between system and apparatus has verifiably occurred, yet registration-state update occurs with zero information change (ΔI = 0). This state — the Null Registering-System Event (NRE) — is not reducible to hardware failure. It is a VVV-QMRF registration-layer category.
 
 **Vietnamese:**
-> Tá»“n táº¡i má»™t tráº¡ng thÃ¡i ghi nháº­n lÆ°á»£ng tá»­ chÃ­nh thá»©c, trong Ä‘Ã³ tÆ°Æ¡ng tÃ¡c váº­t lÃ½ giá»¯a há»‡ thá»‘ng vÃ  mÃ¡y Ä‘o Ä‘Ã£ xÃ¡c nháº­n xáº£y ra, nhÆ°ng há»‡ ghi nháº­n cÃ³ Î”I = 0. Tráº¡ng thÃ¡i nÃ y khÃ´ng quy giáº£n thÃ nh lá»—i pháº§n cá»©ng â€” Ä‘Ã¢y lÃ  pháº¡m trÃ¹ táº§ng ghi nháº­n cá»§a VVV-QMRF.
+> Tồn tại một trạng thái ghi nhận lượng tử chính thức, trong đó tương tác vật lý giữa hệ thống và máy đo đã xác nhận xảy ra, nhưng hệ ghi nhận có ΔI = 0. Trạng thái này không quy giản thành lỗi phần cứng — đây là phạm trù tầng ghi nhận của VVV-QMRF.
 
 ---
 
@@ -27,9 +27,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 Standard QM separates no-click cases through experimental detection efficiency ($\eta$), POVM/no-click effects, no-result measurement, and decoherence models, but those tools do not by themselves classify the K-side registration status of an interaction that occurs without valid registration encoding.
 
-E9 adds that bounded registration-layer distinction. The NRE state: physical coupling present (H_int â‰  0) + registration outcome absent (Î”I = 0). Formal operator: $\hat{E}_\emptyset$. Its action marks the registering system as unchanged while the physical interaction dissipates into the environment via decoherence â€” leaving no valid registration trace for that registering system.
+E9 adds that bounded registration-layer distinction. The NRE state: physical coupling present (H_int ≠ 0) + registration outcome absent (ΔI = 0). Formal operator: $\hat{E}_\emptyset$. Its action marks the registering system as unchanged while the physical interaction dissipates into the environment via decoherence — leaving no valid registration trace for that registering system.
 
-This uses *AnadhyavasÄya* in Buddhist Epistemology as a source analogue: the mind is causally present to an object but fails to generate any epistemic determination â€” not doubt (Saá¹ƒÅ›aya), not error (bhrÄnti), but structurally complete non-engagement.
+This uses *Anadhyavasāya* in Buddhist Epistemology as a source analogue: the mind is causally present to an object but fails to generate any epistemic determination — not doubt (Saṃśaya), not error (bhrānti), but structurally complete non-engagement.
 
 ---
 
@@ -38,23 +38,23 @@ This uses *AnadhyavasÄya* in Buddhist Epistemology as a source analogue: the 
 ### 3a. NRE state definition
 
 ```
-Physical condition:  H_int â‰  0  (coupling occurred)
-Registration condition: Î”I = 0  (registering-system information unchanged)
+Physical condition:  H_int ≠ 0  (coupling occurred)
+Registration condition: ΔI = 0  (registering-system information unchanged)
 
-NRE = {H_int â‰  0} âˆ© {Î”I = 0}
+NRE = {H_int ≠ 0} ∩ {ΔI = 0}
 
 Distinguished from:
-  Unmeasured:         {H_int = 0} âˆ© {Î”I = 0}
-  Successful meas.:   {H_int â‰  0} âˆ© {Î”I > 0}
-  Error (bhrÄnti):    {H_int = 0} âˆ© {Î”I > 0}  â† spurious click
+  Unmeasured:         {H_int = 0} ∩ {ΔI = 0}
+  Successful meas.:   {H_int ≠ 0} ∩ {ΔI > 0}
+  Error (bhrānti):    separate invalid-positive pathology; not mapped into the 2×2 matrix
 ```
 
-### 3b. Registration-Physical 2Ã—2 matrix (with E11/BIAN-15)
+### 3b. Registration-Physical 2×2 matrix (with E11/BIAN-15)
 
 | | Information YES | Information NO |
 |---|:---:|:---:|
-| **Interaction YES** | Standard Measurement | **NRE â€” E9** |
-| **Interaction NO** | IFSI â€” E11 | Unmeasured |
+| **Interaction YES** | Standard Measurement | **NRE — E9** |
+| **Interaction NO** | IFSI — E11 | Unmeasured |
 
 ### 3c. Equivalence status
 
@@ -71,9 +71,9 @@ Distinguished from:
 | Symbol | Meaning EN | Domain |
 |--------|-----------|--------|
 | $\hat{E}_\emptyset$ | Null Registration Operator | E9 |
-| Î”I | Information change for registering system | Information theory |
+| ΔI | Information change for registering system | Information theory |
 | H_int | Interaction Hamiltonian | QM |
-| AnadhyavasÄya | Non-determination | Buddhist term |
+| Anadhyavasāya | Non-determination | Buddhist term |
 
 ---
 
@@ -89,8 +89,8 @@ Distinguished from:
 
 | Property | Value |
 |----------|-------|
-| Concept | AnadhyavasÄya |
-| Node | â€” (no dedicated node) |
+| Concept | Anadhyavasāya |
+| Node | — (no dedicated node) |
 | Paired with | BIAN-15 Kevalavyatirekin (E11) |
 
 ---
@@ -105,8 +105,8 @@ QM can describe missed detections through experimental efficiency ($\eta$), POVM
 
 ```
 E6 (Registering-System-as-Process)
- â””â†’ E9 (Null Registering-System Event) â† THIS POSTULATE
-      E9 paired with E11 (IFSI/BIAN-15) to complete 2Ã—2 matrix
+ └→ E9 (Null Registering-System Event) ← THIS POSTULATE
+      E9 paired with E11 (IFSI/BIAN-15) to complete 2×2 matrix
 ```
 
 | Layer | Document | Role |
@@ -122,9 +122,9 @@ E6 (Registering-System-as-Process)
 | Component | Class | Evidence |
 |---|---|---|
 | "QM lacks a K-side classification for interaction without valid registration" | **M** | Category 06, QM no-click support, experimental practice |
-| "AnadhyavasÄya source analogue" | **M** | Buddhist logic |
+| "Anadhyavasāya source analogue" | **M** | Buddhist logic |
 | "$\hat{E}_\emptyset$ operator" | **D** | Proposed VVV-QMRF notation |
-| "2Ã—2 Registration-Physical matrix" | **D** | Proposed (with E11) |
+| "2×2 Registration-Physical matrix" | **D** | Proposed (with E11) |
 
 ---
 

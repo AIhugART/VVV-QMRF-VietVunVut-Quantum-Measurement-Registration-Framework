@@ -280,6 +280,10 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 
 ## BIAN Gap Resolution / Giải quyết Khoảng trống BIAN
 
+> **EN:** "BIAN" is derived from the Vietnamese word *bí ẩn*, meaning **mystery** or **enigma**; in this framework, it labels unresolved registration-structure gaps between Buddhist Epistemology and Quantum Measurement.
+>
+> **VN:** "BIAN" bắt nguồn từ tiếng Việt *bí ẩn*, nghĩa là **mystery** hoặc **enigma**; trong khung này, nó dùng để gọi các khoảng trống cấu trúc ghi nhận giữa Nhận thức luận Phật giáo và Đo lường Lượng tử.
+
 **20 labels accounted for: 19 active gaps resolved + 1 reserved label / Đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ**
 
 | Class | EN / Tiếng Anh | VN / Tiếng Việt | Count | Resolution / Giải pháp |
@@ -475,13 +479,13 @@ buddhist-epistemology-quantum-measurement/
 ```
 Step 1 / Bước 1: ε(M) — Raw event, unstructured (E4)
                           Sự kiện thô, chưa có cấu trúc
-   │    Example / Ví dụ: Detector receives a signal / Detector nhận tín hiệu
+   │    Example / Ví dụ: physical interaction occurs at detector boundary / tương tác vật lý xảy ra tại ranh giới máy dò
    │
    ▼ ◆ Λ — Symbolization (Lemma S1-Λ) / Biểu tượng hóa (Bổ đề S1-Λ)
    │    Example / Ví dụ: Signal enters the registration interface / Tín hiệu đi vào giao diện ghi nhận
    │
 Step 2 / Bước 2: Ā(M) — Internal representation encoding (E5) / Mã hóa biểu diễn nội tại
-   │    Example / Ví dụ: Registering system creates an internal representation / Hệ ghi nhận tạo biểu diễn nội tại
+   │    Example / Ví dụ: registration-state update occurs with an internal representation / cập nhật trạng thái ghi nhận xảy ra với một biểu diễn nội tại
    │
    ▼
 Step 3 / Bước 3: V̂ — Registration lock (E3) / Khóa ghi nhận

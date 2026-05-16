@@ -27,7 +27,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | RCA layer | English | Vietnamese |
 |---|---|---|
 | Phenomenon | Quantum measurement produces an outcome `o` from a quantum state `ρ`. | Phép đo lượng tử tạo ra kết quả `o` từ trạng thái lượng tử `ρ`. |
-| Proximate cause | The outcome is both physically registered and registration-valid. | Kết quả vừa được ghi nhận vật lý, vừa hợp lệ ở tầng trạng thái ghi nhận. |
+| Proximate cause | The outcome is both recorded as a detector response and registration-valid. | Kết quả vừa được ghi như một "detector response", vừa hợp lệ ở tầng trạng thái ghi nhận. |
 | Underlying mechanism | The term "measurement" hides two processes: physical state transition and registration-state update. | Thuật ngữ "measurement" che khuất hai quá trình: chuyển đổi trạng thái vật lý và cập nhật trạng thái ghi nhận. |
 | Root cause | `ρ` and `K` are not formally separated. | `ρ` và `K` chưa được tách rõ về mặt hình thức. |
 | New principle | Measurement is an interface between `ρ-transition` and `registration-state update`. | Phép đo là giao diện giữa `ρ-transition` và "registration-state update" / cập nhật trạng thái ghi nhận. |
@@ -51,7 +51,7 @@ Why 2:
 Because the physical state ρ and the registration state K are described in different vocabularies but are often discussed under the same term: "measurement".
 
 Why 3:
-Because the ontology of observation is under-specified: the relation between physical registration, appearance, classification, and valid registration is not formally separated.
+Because the ontology of observation is under-specified: the relation between detector response, appearance, classification, and valid registration is not formally separated.
 
 Root cause:
 The framework lacks a formal boundary between physical state transition and registration-state update.
@@ -114,7 +114,7 @@ K = (A, R, C, V)
 | Component | English | Vietnamese | Role |
 |---|---|---|---|
 | `A` | Appearance | Sự xuất hiện | The outcome appears as available data. |
-| `R` | Registration/identification | Ghi nhận / nhận ra | The registering system records that an outcome has appeared. |
+| `R` | Registration/identification | Ghi nhận / nhận ra | Registration-state update occurs for the appeared outcome. |
 | `C` | Conceptual classification | Phân loại bằng khái niệm | The outcome is labeled, categorized, or interpreted. |
 | `V` | Valid registration | Ghi nhận hợp lệ | The outcome is accepted as valid data within the registration frame. |
 
@@ -239,7 +239,7 @@ then it violates the RCA boundary.
 | Lines 17-20 | Preserve the physics boundary | The physical layer keeps `p_QM(o) = Tr(E_o ρ)`. | Prevents accidental claim that E17 modifies the Born rule. |
 | Lines 17-20 | Locate the novelty | The registration-state layer updates `K` through appearance, registration/identification, conceptual classification, and valid registration. | Places the contribution in the `K` side, not in new physics. |
 | Lines 24-33 | RCA summary | The visible problem is measurement ambiguity; the root cause is the lack of formal separation between `ρ` and `K`. | Shows that E17 fixes a root cause, not just a wording problem. |
-| Lines 28-29 | Define phenomenon and proximate cause | Quantum measurement produces `o`, and `o` is both physically registered and registration-valid. | Identifies why the two levels become confused. |
+| Lines 28-29 | Define phenomenon and proximate cause | Quantum measurement produces `o`, and `o` is both recorded as a detector response and registration-valid. | Identifies why the two levels become confused. |
 | Lines 30-31 | Isolate root cause | The word "measurement" hides physical transition and registration-state update. | Finds the conceptual failure point. |
 | Lines 32-33 | Fix and scope | Measurement is an interface; Buddhist Epistemology contributes to `K`, not by replacing `ρ`. | Establishes the safe contribution of E17. |
 | Lines 37-63 | Three-Why trace | The apparent unity of collapse and valid registration is traced back to an under-specified ontology of observation. | Provides RCA depth before making the postulate. |

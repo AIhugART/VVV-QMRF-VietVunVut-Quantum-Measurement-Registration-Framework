@@ -168,7 +168,7 @@ Prototype TOM instance:
   Setup: measurement is weak, quantum-limited, or back-action-evading.
   Event: the instrument extracts non-ordinary but traceable registration content.
   Gate: E10 criteria still pass statistically or in the appropriate limit.
-  Update: `M̂_trans` records a valid limit-faculty registration output.
+  Update: a valid limit-faculty registration output is established by `M̂_trans`.
   Contrast: anomalous weak values are bounded registration outputs, not magic.
 
   → TOM instance confirmed only within its boundary.
@@ -201,7 +201,7 @@ VVV-QMRF registration-state update layer
 
 ## 6. Assertion Level / Mức Khẳng định
 
-| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+| Component EN | Thành phần VN | RCA assertion class | Evidence / Boundary |
 |---|---|---|---|
 | BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | N_BE_00012; support: N_BE_00132; ED_BE_00021; ED_BE_00158. |
 | QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00028; N_QM_00029; N_QM_00031; N_QM_00086; N_QM_00027; ED_QM_00034; ED_QM_00035; ED_QM_00037; ED_QM_00100; ED_QM_00026. |
