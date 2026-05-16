@@ -26,8 +26,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF v4 final documentation release — registration-layer formalization / bản hoàn tất tài liệu v4 — hình thức hóa tầng ghi nhận<br/>
 **Disclaimer / Tuyên bố giới hạn:** [VVV-QMRF Research Status & Disclaimer](DISCLAIMER.md)<br/>
 **Inspiration / Cảm hứng:**<br/>
-**EN:** Laozi (Chinese: 老子; pinyin: Lǎozǐ) — legendary Chinese philosopher and author of the *Dao De Jing*; Sun Wu (commonly called Sun Tzu) — author of *The Art of War*; Steve Jobs — co-founder of Apple Inc.<br/>
-**VN:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại của Trung Quốc, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc.
+**EN:** Laozi (Chinese: 老子; pinyin: Lǎozǐ) — legendary philosopher and author of the *Dao De Jing*; Sun Wu (commonly called Sun Tzu) — author of *The Art of War*; Steve Jobs — co-founder of Apple Inc.<br/>
+**VN:** Lão Tử (tiếng Trung: 老子; bính âm: Lǎozǐ) — vị triết gia huyền thoại, tác giả *Đạo Đức Kinh*; Tôn Vũ (thường được gọi là Tôn Tử / Sun Tzu) — tác giả *Binh pháp Tôn Tử* (*The Art of War*); Steve Jobs — đồng sáng lập Apple Inc.
 
 ## Research Methodology / Phương pháp Nghiên cứu
 
