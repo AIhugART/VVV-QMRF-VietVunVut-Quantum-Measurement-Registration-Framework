@@ -1,5 +1,9 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
+> **DISCLAIMER / CẢNH BÁO:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
+>
+> VVV-QMRF là nghiên cứu cá nhân độc lập ở Class D, không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế. Giao thức giới hạn đầy đủ: `DISCLAIMER.md`.
+
 # RCA System Diagram: VVV-QMRF vs Standard Quantum Measurement
 
 ## Vietnamese title
@@ -47,7 +51,77 @@ Sơ đồ RCA hệ thống VVV-QMRF và hệ thống đo lượng tử chuẩn h
 
 ---
 
-# 2. Diagram A — Standard Quantum Measurement system
+# 2. Diagram 0 — One-page styled system comparison
+
+This styled version gives the full system view in one diagram. The simpler basic diagrams remain in Sections 3–6 for step-by-step reading.
+
+```mermaid
+flowchart LR
+  %% Diagram 0: one-page system boundary map.
+  %% Blue nodes are the Standard QM physical/probability layer.
+  %% Green nodes are the VVV-QMRF registration-state layer.
+  %% Red nodes are boundary guards, not new physics claims.
+
+  subgraph STD["Standard Quantum Measurement<br/>physical-probabilistic layer"]
+    direction LR
+    S0["ρ_before<br/>quantum state"]
+    S1["M = {E_o}<br/>measurement setting"]
+    S2["p_QM(o) = Tr(E_o ρ)<br/>Born rule"]
+    S3["detector response D_o<br/>physical trace"]
+    S4["o<br/>outcome value"]
+    S5["ρ_after = ρ_o<br/>standard state update"]
+
+    S0 --> S1 --> S2 --> S3 --> S4 --> S5
+  end
+
+  subgraph GAP["RCA boundary<br/>where 'measurement' gets compressed"]
+    direction TB
+    G1["Symptom<br/>physical outcome and known outcome are merged"]
+    G2["Root cause<br/>ρ-state and K-state are not separated"]
+    G1 --> G2
+  end
+
+  subgraph VVV["VVV-QMRF addition<br/>registration-state layer K"]
+    direction LR
+    K0["K_before<br/>prior registration state"]
+    K1["ε(M)<br/>pre-symbolic trace"]
+    K2["Λ<br/>symbolization"]
+    K3["Ā<br/>internal representation encoding"]
+    K4["V_yava<br/>registration lock"]
+    K5["K_after = U_K(K_before, o)<br/>validated registration state"]
+
+    K0 --> K1 --> K2 --> K3 --> K4 --> K5
+  end
+
+  S3 --> K1
+  S4 --> K5
+  G2 -. "fix: split layers" .-> STD
+  G2 -. "fix: formalize K-side" .-> VVV
+  S2 -. "preserved unchanged" .-> B1["Boundary guard<br/>no Born-rule modification"]
+  S5 -. "preserved unchanged" .-> B2["Boundary guard<br/>no replacement of Standard QM"]
+  K5 -. "novelty localized here" .-> B3["VVV-QMRF claim<br/>formal registration-state update"]
+
+  classDef qm fill:#e8f1ff,stroke:#2f65c8,stroke-width:1.5px,color:#10213f;
+  classDef reg fill:#eaf7ef,stroke:#23804a,stroke-width:1.5px,color:#102b17;
+  classDef rca fill:#fff6dc,stroke:#b7791f,stroke-width:1.5px,color:#3b2600;
+  classDef guard fill:#fdecec,stroke:#c53030,stroke-width:1.5px,color:#3b0808;
+  class S0,S1,S2,S3,S4,S5 qm;
+  class K0,K1,K2,K3,K4,K5 reg;
+  class G1,G2 rca;
+  class B1,B2,B3 guard;
+```
+
+## Rendering note
+
+Use any Mermaid-compatible Markdown renderer. If the diagram becomes too wide, export it as SVG or switch the top line from `flowchart LR` to `flowchart TB`.
+
+## Accessibility note
+
+The color coding is redundant with labels: Standard QM is marked by `ρ`, `M`, `p_QM(o)`, and `ρ_after`; VVV-QMRF is marked by `K_before`, `ε(M)`, `Λ`, `Ā`, `V_yava`, and `K_after`.
+
+---
+
+# 3. Diagram A — Standard Quantum Measurement system
 
 ```mermaid
 flowchart LR
@@ -73,7 +147,7 @@ Standard Quantum Measurement has a precise physical-probabilistic structure. Its
 
 ---
 
-# 3. Diagram B — VVV-QMRF two-level measurement interface
+# 4. Diagram B — VVV-QMRF two-level measurement interface
 
 ```mermaid
 flowchart TB
@@ -118,7 +192,7 @@ VVV-QMRF does not replace the physical layer. It opens the black box between det
 
 ---
 
-# 4. Diagram C — VVV-QMRF self-validation loop
+# 5. Diagram C — VVV-QMRF self-validation loop
 
 ```mermaid
 flowchart LR
@@ -137,7 +211,7 @@ This loop addresses the regress problem at the registration-validity level. It s
 
 ---
 
-# 5. Diagram D — Boundary map between the two systems
+# 6. Diagram D — Boundary map between the two systems
 
 ```mermaid
 flowchart LR
@@ -160,7 +234,7 @@ The boundary is the outcome `o`. Standard QM explains how `o` is physically prob
 
 ---
 
-# 6. Claim ladder for this diagram
+# 7. Claim ladder for this diagram
 
 | Level | Allowed claim | Not allowed claim |
 |---|---|---|
@@ -171,7 +245,26 @@ The boundary is the outcome `o`. Standard QM explains how `o` is physically prob
 
 ---
 
-# 7. Source traceability
+# 8. Claim Traceability Matrix
+
+This table connects each major diagram claim to its source role, claim type, boundary, and RCA verification rule.
+
+| Claim ID | Diagram element | Claim | Claim type | Source anchor | Boundary | Verification rule |
+|---|---|---|---|---|---|---|
+| C-001 | `ρ_before`, `M = {E_o}`, `p_QM(o)`, `ρ_after` | Standard QM keeps the physical-probabilistic measurement layer intact. | source / boundary_guard | `system_qm_full.md`; formal registration-state model, sections on core definitions and mathematical model | Does not weaken or replace Standard QM mathematics. | Check that all diagrams keep `p_QM(o) = Tr(E_o ρ)` and `ρ_before → ρ_after` on the physical layer. |
+| C-002 | `K_before → K_after` | VVV-QMRF adds a registration-state layer to the measurement event. | formal_model / interpretive_mapping | `vvv_qmrf_framework_formal_registration_state_measurement_model.md`, two-level model | K-side addition only; not a new physical state-transition law. | Check that `K` is drawn separately from `ρ`. |
+| C-003 | `K_after = U_K(K_before, o)` | `U_K` formalizes a registration-state update after outcome `o`. | formal_model | Formal registration-state model; S1 registration-state update pipeline | `U_K` is not a collapse mechanism and not a Born-rule replacement. | Check that `U_K` receives `o` from Standard QM but does not modify `p_QM(o)`. |
+| C-004 | `detector response D_o` | A detector response is a physical trace, not yet a validated registration. | derived / boundary_guard | S1 pipeline: `ε(M) → Λ → Ā → V_yava` | Raw signal must not be treated as already validated `K_after`. | Check that `D_o` enters `ε(M)` before `Λ`, `Ā`, and `V_yava`. |
+| C-005 | `ε(M) → Λ → Ā → V_yava` | S1 describes the K-side transition from raw physical trace to registered status. | synthesis / formal_model | `vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md` | S1 describes registration processing, not detector physics itself. | Check that S1 nodes appear only in the registration-state layer. |
+| C-006 | `E1 → E2 → E7 → E1` | S2 describes self-certifying registration validity without an external meta-certifier. | synthesis / interpretive_mapping | `vvv_qmrf_synthesis_s2_self_certifying_registration_loop.md` | Validity loop is registration-layer closure, not a physical collapse equation. | Check that the loop is labeled as validity/regress handling, not physical dynamics. |
+| C-007 | `No Born-rule modification` | VVV-QMRF does not modify `p_QM(o) = Tr(E_o ρ)`. | boundary_guard | Formal model mandatory boundary; Standard QM Born rule source concepts | No claim of changed quantum probabilities unless a separate `δ(o) ≠ 0` model is supplied. | Check that every diagram keeps `p_QM(o)` unchanged. |
+| C-008 | `No replacement of Standard QM` | VVV-QMRF is an added registration-layer model, not a replacement for Standard QM. | boundary_guard | Document status and formal model mandatory boundary | Do not frame Standard QM as defective or superseded. | Check that Standard QM is described as preserved, not corrected. |
+| C-009 | `δ(o)` boundary in claim ladder | Current status remains interpretive if `δ(o) = 0`. | boundary_guard / empirical_status | Formal registration-state model, testable difference section | No experimental validation claim without a nonzero predictive difference and tests. | Check that the physical-level claim stays interpretive unless `δ(o) ≠ 0`. |
+| C-010 | RCA boundary box | Root cause is the hidden compression of `ρ-state` and `K-state` inside the word "measurement". | RCA finding | This document's RCA finding; schema guide RCA rules | The root cause is not that Standard QM mathematics is invalid. | Check that the fix separates layers instead of attacking Standard QM. |
+
+---
+
+# 9. Source traceability
 
 | Source file | Role in this diagram |
 |---|---|
@@ -183,7 +276,7 @@ The boundary is the outcome `o`. Standard QM explains how `o` is physically prob
 
 ---
 
-# 8. Final RCA verification
+# 10. Final RCA verification
 
 - **Root cause removed:** The diagram explicitly separates `ρ` and `K`.
 - **Physical boundary preserved:** Standard QM probability remains `p_QM(o) = Tr(E_o ρ)`.
@@ -191,3 +284,19 @@ The boundary is the outcome `o`. Standard QM explains how `o` is physically prob
 - **No category error:** The diagram does not claim that Buddhist Epistemology supplies a new physical collapse mechanism.
 - **Scope respected:** The diagram stays within Buddhist Epistemology as the primary frame and Quantum Measurement as the mapped domain.
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `RCA system diagram / sơ đồ hệ thống RCA` for schema alignment. |
+| RCA root cause isolated | Pass | Root cause is stated as hidden compression of `ρ-state` and `K-state`, not as a defect in Standard QM. |
+| Two-layer separation | Pass | The diagrams separate the physical `ρ-side` from the registration `K-side`. |
+| Source traceability | Pass | Source files are listed in Source traceability and major claims cite source anchors in the Claim Traceability Matrix. |
+| Claim traceability | Pass | Claim IDs, claim types, source anchors, boundaries, and RCA verification rules are listed in the Claim Traceability Matrix. |
+| Arrow semantics / notation contract | Pass | The document declares that arrows follow the Arrow Semantics rule in `schema_guide.md`; arrows are relation markers, not automatic physical causation. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming: no Born-rule modification, no replacement of Standard QM, no experimental validation claim without `δ(o) ≠ 0`. |
+| Symbol registry | Pass | Core diagram symbols are covered by `documents/research_documents/vvv-qmrf/VVV_QMRF_research_terminology.md`, including domain, notation type, claim class, status, usage rule, source trace, and boundary. |
+| Mermaid render preview | Review required | Mermaid fences and headings are structurally present; render the diagrams in a Mermaid preview/export tool before publication use. |
+| Validation rule | Pass | Reuse only with source, claim type, arrow semantics, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |
