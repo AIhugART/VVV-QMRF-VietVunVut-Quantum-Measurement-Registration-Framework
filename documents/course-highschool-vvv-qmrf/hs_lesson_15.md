@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -35,7 +36,7 @@ Sau bài này, các em có thể:
 
 ## 2. RCA Learning Problem
 
-**RCA focus:** RCA: lỗi gốc mà E7 xử lý
+**RCA focus:** RCA: vấn đề gốc mà E7 xử lý
 
 ### Define / Trace / Isolate / Fix / Verify
 
@@ -45,7 +46,7 @@ Sau bài này, các em có thể:
 
 1. Vì sao dễ tưởng vậy? Vì màn hình thường chỉ hiển thị một con số cuối.
 2. Vì sao con số đầu tiên chưa đủ? Vì hệ có thể cần kiểm tra điều kiện hợp lệ.
-3. Vì sao cần kiểm tra? Vì tín hiệu có thể nhiễu, lỗi hoặc mâu thuẫn với kiểm chứng sau.
+3. Vì sao cần kiểm tra? Vì tín hiệu có thể nhiễu, không đạt điều kiện hoặc mâu thuẫn với kiểm chứng sau.
 4. Vì sao phải tách hai pha? Vì xuất hiện kết quả và chứng nhận kết quả là hai bước khác nhau.
 5. Gốc vấn đề là gì? Nhầm **provisional registration** với **certified registration**.
 
@@ -56,9 +57,9 @@ Sau bài này, các em có thể:
 Hãy tưởng tượng bài kiểm tra trắc nghiệm được máy chấm tự động.
 
 - Pha 1: máy quét phiếu và đưa ra điểm tạm thời.
-- Pha 2: hệ thống kiểm tra mã đề, lỗi tô đáp án, dữ liệu học sinh rồi mới chốt điểm.
+- Pha 2: hệ thống kiểm tra mã đề, điều kiện tô đáp án, dữ liệu học sinh rồi mới chốt điểm.
 
-Nếu pha 1 có điểm nhưng pha 2 phát hiện mã đề sai, điểm đó chưa được chứng nhận.
+Nếu pha 1 có điểm nhưng pha 2 phát hiện mã đề không khớp, điểm đó chưa được chứng nhận.
 
 E7 dùng trực giác tương tự: kết quả có thể đi từ trạng thái tạm đến trạng thái đã chứng nhận.
 

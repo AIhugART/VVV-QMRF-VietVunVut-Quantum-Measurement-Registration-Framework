@@ -7,6 +7,24 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Node/Edge Codes: BE node and edge definitions follow the single RCA SOT: [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md)
 ## Interpretive lens source: [bei_framework_4_axioms.md](../achives/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
 
+**Document type:** mapping
+
+---
+
+## Canonical Identification / Nhận diện Chuẩn
+
+| Field | Value |
+|---|---|
+| Document type | mapping |
+| System A / Ground system | Buddhist Epistemology / Pramāṇavāda |
+| System B / Target system | Quantum Measurement / VVV-QMRF registration layer |
+| Mapping status | Structural analogy, support, contrast, or gap mapping unless a local row states otherwise. |
+| Graph relation | Uses BE node/edge codes from `SYSTEM_Buddhist_Epistemology/system_be_full.md` when present. |
+| Identity boundary | Mapping is not identity; BE concepts do not become canonical QM mechanisms or physical laws. |
+| RCA boundary | Treat cross-domain links as structurally useful comparisons, not proof that Buddhist Epistemology solves Quantum Measurement. |
+| Terminology rule | Use `registration-state update` for the K-side update and `detector response` only for the apparatus physical signal. |
+
+
 ---
 
 # Four Interpretive Lenses — Secondary Epistemological Synthesis
@@ -799,8 +817,8 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 **Related edge:** ED_BE_00004: N_BE_00001 → pramāṇaphala — produces (Structural)
 
 - **Buddhist Epistemology:** Dharmakīrti's position: the result (phala) of a cognitive act is not a product separate from the act. Knowing is the knowing-of-the-result. No additional act is required to register that a cognition has occurred and produced a result. The act is self-completing: pramāṇa and phala are identified. This eliminates a potential regress: if phala were a separate product, one would need a further cognition to register the phala, and so on without end.
-- **Quantum Measurement:** BIAN-16 — Measurement Self-Completion. QM does not formally specify whether a measurement is self-completing or requires a subsequent act (physical registration, recording, observer update, or environmental stabilization) to be complete. This is a meta-epistemological root of the measurement problem in the present mapping. Buddhist Epistemology resolves the analogous regress through pramāṇa-phala identity: the act certifies itself. Many interpretations can be read, from this mapping's perspective, as supplying an external or alternative stopping condition, rather than the internal self-certification provided by pramāṇa-phala identity and svasaṃvedana.
-- **Structural gap:** This is the meta-epistemological core of the mapping. The absence of pramāṇa-phala identity in QM is the formal source of the measurement problem.
+- **Quantum Measurement:** BIAN-16 — Measurement Self-Completion. QM does not formally specify whether a measurement is self-completing or requires a subsequent act (physical registration, recording, observer update, or environmental stabilization) to be complete. In the present mapping, this marks a meta-epistemological pressure point in the measurement problem. Buddhist Epistemology offers a source-side regress-stopping analogue through pramāṇa-phala identity: the act certifies itself; this is not a QM resolution. Many interpretations can be read, from this mapping's perspective, as supplying an external or alternative stopping condition, rather than the internal self-certification provided by pramāṇa-phala identity and svasaṃvedana.
+- **Structural gap:** This is the meta-epistemological core of the mapping. In this mapping, the absence of a direct QM equivalent to pramāṇa-phala identity is treated as a pressure point in the measurement problem, not as a claim that QM has a single formal source of failure.
 
 ---
 
@@ -945,7 +963,7 @@ All 19 substantive BIAN gaps, plus BIAN-20 as a reserved cross-reference, are gr
 | BIAN-11 | Pre-measurement registration indeterminacy | N_BE_00007 | QM describes physical superposition or density matrix but not the registering system's K-side structured suspension before measurement. |
 | BIAN-12 | Badhaka pramana (Formal invalidation) | -- (no node) | QM has no formal mechanism for epistemic override of prior measurement claims. |
 | BIAN-13 | Anadhyavasaya (Null Registering-System Event / Registration Non-Engagement) | -- (no node) | QM has detection-efficiency parameters and POVM/no-click formalism, but no registration-layer category for non-engagement. |
-| BIAN-16 | Pramana-phala identity (Self-completion) | N_BE_00001 | QM does not specify whether measurement is self-completing. BE resolves the regress via pramana-phala identity. |
+| BIAN-16 | Pramana-phala identity (Self-completion) | N_BE_00001 | QM does not specify whether measurement is self-completing. BE offers a source-side regress-stopping analogue via pramana-phala identity. |
 | BIAN-17 | Regress-stopping principle | N_BE_00011 | QM has no principle that stops the von Neumann chain. Svasamvedana stops it without external conditions. |
 | BIAN-18 | Svatah/Paratah pramanya (Validity) | -- (no node) | QM does not formalize whether measurement validity is intrinsic or extrinsic. |
 | BIAN-19 | Anatmavada (Observer as process) | -- (no node) | QM assumes a substantive observer. BE explicitly denies one. Foundational inversion. |
@@ -976,7 +994,7 @@ Ranked by structural significance, merged from tier-level and interpretive-lens 
 | Rank | Asymmetry | BIAN | Lens | Description |
 | --- | --- | --- | --- | --- |
 | 1 | No self-referential epistemic layer + no regress-stopper | BIAN-2, BIAN-17 | 3 | In this mapping, these gaps can be read as central to the measurement problem. QM has no formal equivalent to svasaṃvedana as an epistemic self-certification principle. |
-| 2 | Measurement self-completion undefined | BIAN-16 | 3 | QM does not specify whether measurement is self-completing. Pramana-phala identity is BE resolution. |
+| 2 | Measurement self-completion undefined | BIAN-16 | 3 | QM does not specify whether measurement is self-completing. Pramana-phala identity is a BE source-side regress-stopping analogue, not a QM resolution. |
 | 3 | Observer left unanalyzed as process | BIAN-19 | 3 | Many operational presentations treat the observer or apparatus as an unanalyzed classical reference point; Buddhist Epistemology explicitly models the knower as a process-series rather than a substance. |
 | 4 | Svabhāva denial as strong structural convergence | -- (T3.05) | 2 | Bell-type constraints and Kochen-Specker contextuality support an analogous structural constraint against context-independent intrinsic properties. |
 | 5 | Epistemology grounded in praxis as meta-level convergence | -- (T6.06) | 2 | Within this mapping, both systems can be read as grounding epistemic validity in practical efficacy rather than in intrinsic essence. |
@@ -1058,3 +1076,24 @@ Ranked by structural significance, merged from tier-level and interpretive-lens 
 - Edge codes (ED_BE_XX) sourced from [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md).
 - Tier backbone sourced from [system_mapping.md](Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md).
 - Interpretive lens layer sourced from [framework_mapping.md](Buddhist_Epistemology_and_Quantum_Measurement_framework_mapping.md).
+
+---
+
+## What This Mapping Does NOT Claim / Những gì Mapping này KHÔNG tuyên bố
+
+1. This mapping does not claim identity between Buddhist Epistemology and Quantum Measurement.
+2. This mapping does not introduce new canonical QM laws, operators, or postulates unless a separate VVV-QMRF framework document explicitly proposes them.
+3. This mapping does not claim that Buddhist Epistemology proves or solves Quantum Measurement; it only identifies structural analogies, contrasts, supports, and gaps.
+4. `registration-state update` names the VVV-QMRF K-side update; `detector response` remains only the apparatus physical response.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `mapping` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Legacy Name: Pre-Symbolic Stratum Postulate / Tiên đề Tầng Tiền Biểu tượng / VVV-EQM
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** framework
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
@@ -26,42 +27,43 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ### English
 
-Standard QM postulate P3 jumps directly from "measurement occurs" to "eigenvalue obtained." There is no formal account of what happens before the result is symbolically registered — the raw physical event prior to its interpretation as a definite eigenvalue.
+Standard QM postulate P3 gives outcome probabilities and state-update rules, but it does not give a K-side account of how a raw detector or apparatus trace becomes symbolically registered as an outcome.
 
-E4 asserts that every measurement has a pre-symbolic stratum: a physical event ε(M) that has causal content but no symbolic value. The eigenvalue r emerges from ε(M) through a symbolization process Λ. In projective measurement, Λ is complete and r is a definite eigenvalue. In weak measurement, Λ is partial and r is a partial result.
+E4 asserts that every measurement-registration event has a pre-symbolic stratum: a trace ε(M) with causal content but no registration-symbolic value by itself. The trace belongs to the physical event stream, while Λ is the K-side registration-symbolization process that reads ε(M) within a specified measurement context. In projective measurement, Λ may assign a definite outcome label only after the standard projective readout supplied by the physical model. In weak measurement, Λ may assign a weak-value, statistical, or partial registration label only under the appropriate weak-measurement model and post-selection conditions.
 
 This derives from Nirvikalpaka pratyaksa (non-conceptual perception): perception entirely prior to conceptual construction (kalpana). It apprehends the particular (svalaksana) directly without linguistic, categorical, or inferential processing. It is linguistically ineffable and epistemically foundational — the ground from which all valid cognition derives its contact with reality.
 
-The key insight is that the spectrum from weak to projective measurement is not a difference in the physical event, but a difference in the degree of symbolization applied to the same pre-symbolic stratum.
+The key insight is not that weak and projective measurement differ only by symbolization. Their physical coupling, disturbance, and information-gain structures can differ. E4 claims only that both require a K-side transition from pre-symbolic trace to registered outcome content.
 
 ### Vietnamese
 
-Tiên đề P3 của QM nhảy trực tiếp từ "phép đo xảy ra" sang "eigenvalue thu được." Không có mô tả hình thức về điều gì xảy ra trước khi kết quả được ghi nhận biểu tượng — sự kiện vật lý thô trước khi được diễn giải thành eigenvalue xác định.
+Tiên đề P3 của QM cho xác suất kết quả và quy tắc cập nhật trạng thái, nhưng không mô tả phía K: làm sao một vết thô của detector hoặc máy đo trở thành kết quả được ghi nhận bằng ký hiệu.
 
-E4 khẳng định mọi phép đo có tầng tiền biểu tượng: sự kiện vật lý ε(M) có nội dung nhân quả nhưng không có giá trị biểu tượng. Eigenvalue r phát sinh từ ε(M) qua quá trình biểu tượng hóa Λ. Trong đo chiếu, Λ hoàn chỉnh và r là eigenvalue xác định. Trong đo yếu, Λ bán phần và r là kết quả bán phần.
+E4 khẳng định mọi sự kiện đo-ghi nhận có tầng tiền biểu tượng: một vết ε(M) có nội dung nhân quả nhưng tự nó chưa có giá trị ký hiệu-ghi nhận. Vết này thuộc dòng sự kiện vật lý, còn Λ là quá trình biểu tượng hóa ghi nhận phía K đọc ε(M) trong một bối cảnh đo xác định. Trong đo chiếu, Λ chỉ có thể gán nhãn kết quả xác định sau readout chiếu chuẩn do mô hình vật lý cung cấp. Trong đo yếu, Λ chỉ có thể gán nhãn yếu, thống kê, hoặc bán phần theo đúng mô hình đo yếu và điều kiện hậu tuyển tương ứng.
 
 Bắt nguồn từ Nirvikalpaka pratyaksa (tri giác phi khái niệm): tri giác hoàn toàn trước kalpana (cấu trúc khái niệm). Nó nắm bắt đặc thù (svalaksana) trực tiếp, không qua xử lý ngôn ngữ, phạm trù, hay suy luận. Nó bất khả diễn đạt bằng ngôn ngữ và là nền tảng nhận thức — mặt đất từ đó mọi nhận thức hợp lệ lấy sự tiếp xúc với thực tại.
 
-Ý tưởng then chốt: phổ từ đo yếu đến đo chiếu không phải khác biệt trong sự kiện vật lý, mà khác biệt trong mức độ biểu tượng hóa áp dụng lên cùng một tầng tiền biểu tượng.
+Ý tưởng then chốt không phải là đo yếu và đo chiếu chỉ khác nhau ở mức biểu tượng hóa. Chúng có thể khác nhau về coupling vật lý, nhiễu loạn, và lượng thông tin thu được. E4 chỉ nói rằng cả hai đều cần bước phía K: từ vết tiền biểu tượng sang nội dung kết quả được ghi nhận.
 
 ---
 
 ## 3. Formal Sketch / Phác thảo Hình thức
 
 ```
-For measurement M yielding result r with symbolic label λ:
-  ∃ pre-symbolic event ε(M) such that:
-    (i)   ε(M) precedes λ-assignment
-    (ii)  ε(M) has causal content but no symbolic value
-    (iii) r = Λ(ε(M)) where Λ is the symbolization operator
+For measurement M yielding outcome o with symbolic label λ:
+  ∃ pre-symbolic trace ε(M) such that:
+    (i)   ε(M) precedes λ-assignment at the registration layer
+    (ii)  ε(M) has causal content but no registration-symbolic value by itself
+    (iii) λ = Λ_K(ε(M), context_M) where Λ_K is the K-side registration-symbolization operator
 
-In weak measurement: Λ is partial → r is partial.
-In projective measurement: Λ is complete → r is eigenvalue.
+In projective measurement: Λ_K may assign a definite outcome label after standard projective readout supplied by the physical model.
+In weak measurement: Λ_K may assign a weak-value, statistical, or partial registration label only under a weak-measurement model and its post-selection conditions.
+Boundary: Λ_K classifies registration content; it does not replace the physical measurement model, coupling model, disturbance model, or Born-rule probability rule.
 ```
 
 | Formalism | Source | Status |
 |-----------|--------|--------|
-| ε(M), Λ operator | Framework E4 | Class D |
+| ε(M), Λ_K operator | Framework E4 | Class D |
 | No Category formalism | category/vvv_qmrf_category_10_e04_pre_symbolic_stratum.md | ✅ Created 2026-05-11 |
 
 ---
@@ -71,7 +73,7 @@ In projective measurement: Λ is complete → r is eigenvalue.
 | Symbol | Meaning EN | Ý nghĩa VN | Domain |
 |--------|-----------|-------------|--------|
 | ε(M) | Pre-symbolic event | Sự kiện tiền biểu tượng | Physical event space |
-| Λ | Symbolization operator | Toán tử biểu tượng hóa | Maps ε → eigenvalue |
+| Λ | Registration-symbolization operator | Toán tử biểu tượng hóa ghi nhận | Maps ε(M) and context_M → registered label λ |
 | r | Measurement result | Kết quả đo | Eigenvalue space |
 | λ | Symbolic label | Nhãn biểu tượng | Label set |
 | Nirvikalpaka | Non-conceptual perception | Tri giác phi khái niệm | Buddhist term |
@@ -126,7 +128,7 @@ E4 content appears only indirectly in Category 08 Phase 1 ("Physical Trace / Nir
 
 ### Notable new content
 
-The Λ operator (symbolization degree) — a unified explanation of weak vs projective measurement — is **novel content** not present in SOT. This is a genuine E4 contribution, class D.
+The Λ_K operator (symbolization degree) — a common K-side account of how different physical measurement models receive registration labels — is **novel content** not present in SOT. This is a genuine E4 contribution, class D.
 
 ---
 
@@ -156,8 +158,8 @@ E3 (Registration Lock) — sealed as determinate registration status
 | "Ground of measurement result" | **M** | SOT T2.07 L370 |
 | "QM has no pre-symbolic category" | **M** | SOT T2.07 L371-372 |
 | "ε(M) pre-symbolic event" | **D** | Proposed formalism |
-| "Λ symbolization operator" | **D** | Proposed — novel |
-| "Weak vs projective = degree of Λ" | **D** | Novel applied consequence |
+| "Λ_K registration-symbolization operator" | **D** | Proposed — novel |
+| "Weak/projective outputs require different K-side symbolization forms" | **D** | Novel applied consequence; does not replace physical weak/projective measurement models |
 
 ---
 
@@ -170,3 +172,15 @@ E3 (Registration Lock) — sealed as determinate registration status
 ---
 
 *Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, QM_measurement_epistemic_postulates_framework.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `framework` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -39,7 +40,7 @@ Sau bài này, các em có thể:
 
 ### Define / Trace / Isolate / Fix / Verify
 
-**Triệu chứng:** Khi nghe "Buddhist" và "Quantum" cùng xuất hiện, nhiều người dễ hiểu thành "Phật giáo chứng minh vật lý lượng tử".
+**Triệu chứng:** Khi nghe "Buddhist" và "Quantum" cùng xuất hiện, nhiều người dễ hiểu thành "Phật giáo xác nhận vật lý lượng tử".
 
 **5 Whys ngắn:**
 
@@ -63,7 +64,7 @@ Ví dụ đời thường:
 
 - Em thấy một sợi dây trong bóng tối và tưởng là con rắn.
 - Khi bật đèn, em biết đó là sợi dây.
-- Nhận thức đầu có thể sai; nhận thức sau có điều kiện kiểm chứng tốt hơn.
+- Nhận thức đầu có thể chưa đủ điều kiện kiểm chứng; nhận thức sau có điều kiện kiểm chứng tốt hơn.
 
 VVV-QMRF mượn kiểu câu hỏi này để hỏi về phép đo:
 

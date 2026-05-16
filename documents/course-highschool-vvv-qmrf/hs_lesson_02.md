@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -113,7 +114,7 @@ Ta có một bản ghi có thể xem lại
 
 Nếu cảm biến có tín hiệu nhưng ảnh không được lưu, thì sự kiện vật lý đã xảy ra, nhưng bản ghi chưa chắc tồn tại. Đó là trực giác chính của VVV-QMRF.
 
-*(Bản cập nhật từ Tiên đề E1)*: Điều này còn giải quyết triệt để **"Chuỗi von Neumann"** (von Neumann chain). Trong Vật lý lượng tử cũ, người ta hay hỏi "Ai là người quan sát cái máy ảnh đó?". Nhờ Lớp Ghi Nhận ($K$) và tính **Tự chứng nhận (Self-Certification)**, VVV-QMRF khẳng định: Chuyện bức ảnh được lưu vào bộ nhớ là điểm DỪNG của phép đo. Phép đo đã tự chứng nhận thành công, độc lập hoàn toàn với việc có con người mở ra xem hay không. Ranh giới giữa Lớp Vật Lý ($\rho$) và Lớp Ghi Nhận ($K$) chia tách rõ ràng Thực tại (Ontology) và Thông tin (Epistemology).
+*(Bản cập nhật từ Tiên đề E1)*: Đoạn này minh họa cách VVV-QMRF đặt **"Chuỗi von Neumann"** (von Neumann chain) vào tầng ghi nhận. Trong cách trình bày đo lường quen thuộc, ta có thể hỏi "Ai ghi nhận máy ảnh đó?". Với Lớp Ghi Nhận ($K$) và tính **Tự chứng nhận (Self-Certification)**, VVV-QMRF mô tả việc bức ảnh được lưu vào bộ nhớ như một điểm khóa ghi nhận đủ điều kiện trong ví dụ này. Đây là ranh giới tầng ghi nhận, không phải tuyên bố thay đổi tầng vật lý ($\rho$) hay thực tại học.
 
 ---
 

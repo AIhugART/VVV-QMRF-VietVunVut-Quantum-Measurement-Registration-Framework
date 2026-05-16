@@ -2,6 +2,24 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Framework Mapping: Buddhist Epistemology → Quantum Measurement — Four Axioms
 
+**Document type:** mapping
+
+---
+
+## Canonical Identification / Nhận diện Chuẩn
+
+| Field | Value |
+|---|---|
+| Document type | mapping |
+| System A / Ground system | Buddhist Epistemology / Pramāṇavāda |
+| System B / Target system | Quantum Measurement / VVV-QMRF registration layer |
+| Mapping status | Structural analogy, support, contrast, or gap mapping unless a local row states otherwise. |
+| Graph relation | Uses BE node/edge codes from `SYSTEM_Buddhist_Epistemology/system_be_full.md` when present. |
+| Identity boundary | Mapping is not identity; BE concepts do not become canonical QM mechanisms or physical laws. |
+| RCA boundary | Treat cross-domain links as structurally useful comparisons, not proof that Buddhist Epistemology solves Quantum Measurement. |
+| Terminology rule | Use `registration-state update` for the K-side update and `detector response` only for the apparatus physical signal. |
+
+
 ## Ground System: Pramāṇavāda — Dignāga and Dharmakīrti corpus
 ## Method: Axiom-driven clustering. BE nodes and edges from [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md) are assigned to the axiom they structurally support. Each axiom is mapped to its Quantum Measurement interpretation.
 ## Scope: Epistemology only. No metaphysics, soteriology, or cosmology.
@@ -16,7 +34,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | --- | --- | --- | --- | --- |
 | 1 | Dependent Arising | Paṭiccasamuppāda (Pāli) / Pratītyasamutpāda (Skt.) | No state exists independently. All phenomena arise in dependence on conditions. | No absolute quantum state — only states relative to a reference system. |
 | 2 | Emptiness | Suññatā (Pāli) / Śūnyatā (Skt.) | No entity has intrinsic properties (niḥsvabhāvatā). What appears as a property is a conceptual imputation dependent on relational conditions. | Spin, position are properties of the particle-in-relation-to-apparatus. Properties are relations, not intrinsic attributes. |
-| 3 | Consciousness-Only | Vijñaptimātra (Skt.) | Consciousness (vijñāna) is the condition for reality to manifest. The object of cognition (ālambana) is nothing other than the appearance of an object in cognition itself. | Measurement does not reveal a pre-existing state — measurement is the condition for the state to manifest. Collapse is a registration-state update, not a physical event. |
+| 3 | Consciousness-Only | Vijñaptimātra (Skt.) | Consciousness (vijñāna) is the condition for reality to manifest. The object of cognition (ālambana) is nothing other than the appearance of an object in cognition itself. | Measurement does not reveal a pre-existing state — measurement is the condition for the state to manifest. Within this interpretive mapping, the epistemically relevant closure is modeled as a registration-state update; this does not by itself deny Standard QM's ρ-side state-update language. |
 | 4 | Two Truths | Dvisatya (Skt.) | Conventional truth (saṃvṛtisat) and ultimate truth (paramārthasat) are two levels at which reality is cognized. | The quantum-classical boundary is epistemic, not physical. Classical emerges from the epistemic position where the observer can stand "outside" the system. |
 
 ---
@@ -54,8 +72,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ### A1.2.2 — Essential Relation as the Ground of Dependence
 
 - **Buddhist Epistemology:** N_BE_00021 (Svabhāvapratibandha) — Dharmakīrti's innovation. Two types: tadutpatti (causality — relation between effect and cause) and tādātmya (logical genus-species identity — relation between a specific and its general class). Replaces Dignāga's purely inductive vyāpti with a deductive, ontology-grounded relation. Things are connected not by logical convention but by ontological dependence.
-- **Quantum Measurement:** Entanglement correlations and conservation-based correlations. The quantum state of a composite system is not factorable into independent states of subsystems. Conservation laws (e.g., angular momentum in pair production) ground correlations of the tadutpatti type; any comparison with tādātmya is only an analogy to invariance, not a physical identity relation. Entanglement proper constitutes a third relation type — non-causal, non-identity-based necessary correlation — that has no formal equivalent in Buddhist Epistemology (see BIAN-10 in refine_mapping.md). Svabhāvapratibandha captures the two classical relation types; QM introduces a third.
-- **Correspondence type:** Partial. Conservation-based correlations approximate tadutpatti; they are at most analogies to invariance, not tādātmya proper. Entanglement proper exceeds both categories — it is a relation type present in QM with no BE equivalent (BIAN-10).
+- **Quantum Measurement:** Entanglement correlations and conservation-based correlations. The quantum state of a composite system is not factorable into independent states of subsystems. Conservation laws (e.g., angular momentum in pair production) ground correlations of the tadutpatti type; any comparison with tādātmya is only an analogy to invariance, not a physical identity relation. Entanglement proper motivates a VVV-QMRF extension relation — non-causal, non-identity-based registration non-separability — beyond Buddhist Epistemology's two classical *svabhāvapratibandha* relation types (see BIAN-10 in refine_mapping.md). Svabhāvapratibandha supplies the bounded source analogue; IRB is the VVV-QMRF extension.
+- **Correspondence type:** Partial. Conservation-based correlations approximate tadutpatti; they are at most analogies to invariance, not tādātmya proper. Entanglement proper exceeds both classical BE relation categories; VVV-QMRF treats it as IRB, an extension relation using N_BE_00021 only as a source analogue (BIAN-10).
 
 **Relevant edges:**
 - ED_BE_00011: N_BE_00019 → N_BE_00021 (grounded in — pervasion grounded in essential relation)
@@ -172,7 +190,7 @@ Wavefunction does not describe "where a particle is." Wavefunction describes the
 # Axiom 3 — Consciousness-Only (Vijñaptimātra)
 
 **Principle:** Consciousness (vijñāna) is the condition for reality to manifest. The object of cognition (ālambana) is nothing other than the appearance of an object in cognition itself (svasaṃvedana).
-**QM Mapping:** Measurement does not "reveal" a pre-existing state — measurement is the condition for the state to manifest. Collapse is not a physical event — collapse is the cognitive update that occurs when a new relation is established.
+**QM Mapping:** Measurement does not "reveal" a pre-existing state — measurement is the condition for the state to manifest. Within this interpretive mapping, the epistemically relevant closure is modeled as a cognitive or registration-state update when a new relation is established. This does not deny that Standard QM may use ρ-side state-update or collapse language when describing the physical layer.
 
 ## A3.1 — Node Assignment
 
@@ -231,7 +249,7 @@ Wavefunction does not describe "where a particle is." Wavefunction describes the
 
 ### A3.2.5 — Axiom 3 Conclusion
 
-Collapse is not a physical event. Collapse is the cognitive update that occurs when a new relation is established. Nothing "happens" to the particle — the particle enters into a new relation. Measurement is the condition for the state to manifest, not the revelation of a pre-existing state. The observer is structurally necessary but undefined in QM — this is the deepest gap in the mapping (BIAN-2).
+Within this interpretive mapping, the epistemically relevant closure is modeled as a cognitive or registration-state update when a new relation is established. This does not deny that Standard QM may use ρ-side state-update or collapse language for the physical layer. Nothing in this claim by itself replaces the physical description of the particle; it marks a change in epistemic relation and registered status. Measurement is the condition for the state to manifest, not the revelation of a pre-existing state. The observer is structurally necessary but undefined in QM — this is the deepest gap in the mapping (BIAN-2).
 
 ---
 
@@ -401,4 +419,25 @@ BIAN (Buddhist Insight with No Analogue) designations identify BE concepts that 
 | 3 | Vijñaptimātra | N_BE_00011, N_BE_00010, N_BE_00002, N_BE_00006, N_BE_00007, N_BE_00023 | Collapse as registration-state update, measurement as condition | BIAN-1, BIAN-2, BIAN-4, BIAN-5, BIAN-7 |
 | 4 | Dvisatya | N_BE_00026, N_BE_00003, N_BE_00027, N_BE_00028, N_BE_00024, N_BE_00012, N_BE_00030, N_BE_00004 | Quantum-classical cut as epistemic boundary | BIAN-3 |
 
-**Final conclusion:** Wavefunction does not describe "where a particle is." Wavefunction describes the structure of possibilities within a given relational network. The quantum-classical boundary is epistemic, not physical. Properties are relations, not intrinsic attributes. Collapse is a registration-state update, not a physical event. This is epistemology, not ontology.
+**Final conclusion:** Wavefunction does not describe "where a particle is." Wavefunction describes the structure of possibilities within a given relational network. The quantum-classical boundary is epistemic, not physical. Properties are relations, not intrinsic attributes. Within this interpretive mapping, the epistemically relevant closure is modeled as a registration-state update; this does not by itself deny Standard QM's ρ-side state-update language. This is epistemology, not ontology.
+
+---
+
+## What This Mapping Does NOT Claim / Những gì Mapping này KHÔNG tuyên bố
+
+1. This mapping does not claim identity between Buddhist Epistemology and Quantum Measurement.
+2. This mapping does not introduce new canonical QM laws, operators, or postulates unless a separate VVV-QMRF framework document explicitly proposes them.
+3. This mapping does not claim that Buddhist Epistemology proves or solves Quantum Measurement; it only identifies structural analogies, contrasts, supports, and gaps.
+4. `registration-state update` names the VVV-QMRF K-side update; `detector response` remains only the apparatus physical response.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `mapping` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

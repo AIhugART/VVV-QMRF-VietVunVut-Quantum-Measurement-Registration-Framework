@@ -223,7 +223,7 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 | **A** | QM lacks concept entirely | QM hoàn toàn thiếu khái niệm | 10 | Postulates E1–E7 + E13 |
 | **B** | QM has stages, lacks map | QM có giai đoạn, thiếu ánh xạ | 1 | Lemma S1-Λ (BIAN-1) |
 | **C** | QM has phenomenon, no label | QM có hiện tượng, chưa đặt tên | 7 | Categories + Postulates E8–E12, E14, E16 |
-| **R** | QM exceeds BE | QM vượt quá Phật học | 1 | Category 14 + Postulate E15 (BIAN-10) |
+| **R** | QM has an entanglement relation beyond BE's classical relation taxonomy | QM có quan hệ vướng víu vượt ngoài phân loại quan hệ cổ điển của BE | 1 | Category 14 + Postulate E15 (BIAN-10; N_BE_00021 source analogue; IRB extension) |
 | **∅** | Reserved | Dự trữ | 1 | Reserved — see BIAN-10 |
 
 ---
@@ -307,7 +307,7 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 | **E12** | Beyond-Projection Registration | Ghi nhận vượt phép chiếu | EN: Valid registration using capacity **beyond** standard projection (PVM) / VN: Ghi nhận hợp lệ bằng năng lực **vượt giới hạn** phép chiếu chuẩn | Alaukika pratyakṣa (Extraordinary perception / Tri giác phi thường) |
 | **E13** | Temporal Discontinuity | Gián đoạn thời gian | EN: Quantum jump = primordial **registration moment** / VN: Bước nhảy lượng tử là **sát-na ghi nhận** nguyên thủy bất phân | Kṣaṇabhaṅgavāda (Momentariness / Sát-na luận) |
 | **E14** | Validated Absence Registration | Ghi nhận vắng mặt đã xác thực | EN: Null measurement result = **valid registration** of absence / VN: Kết quả đo "rỗng" = **ghi nhận hợp lệ** về sự vắng mặt | Anupalabdhi (Non-perception / Vô tri giác) |
-| **E15** | Intrinsic Relation | Liên kết nội tại | EN: Entanglement - registration = irreducible **third registration relation** / VN: Vướng víu ở tầng ghi nhận = **quan hệ ghi nhận thứ ba** bất khả giản | Svabhāvapratibandha (Intrinsic relation / Quan hệ nội tại) |
+| **E15** | Intrinsic Relation | Liên kết nội tại | EN: Entanglement-registration = irreducible **VVV-QMRF extension relation**, not a classical BE subtype / VN: Ghi nhận vướng víu = **quan hệ mở rộng VVV-QMRF** bất khả giản, không phải subtype cổ điển của BE | Svabhāvapratibandha as bounded source analogue (Intrinsic relation / Quan hệ nội tại) |
 | **E16** | Structured Doubt | Nghi ngờ có cấu trúc | EN: Pre-measurement superposition = complete **structured indeterminacy**, not "unknown" / VN: Chồng chập trước đo = **bất định có cấu trúc** hoàn chỉnh | Saṃśaya (Structured doubt / Nghi ngờ) |
 
 #### 2c. Two Lemmas (S1-Λ, S2-Δ) / Hai Bổ đề (S1-Λ, S2-Δ)
@@ -335,7 +335,7 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 | **A** | Structural | Cấu trúc | EN: QM **completely lacks** the concept / VN: QM **hoàn toàn thiếu** khái niệm | Create new Postulate / Tạo Tiên đề mới | **10** |
 | **B** | Interface | Giao diện | EN: QM has adjacent phases but lacks a **bridge** / VN: QM có hai giai đoạn kề nhau nhưng thiếu **cầu nối** | Create Lemma / Tạo Bổ đề | **1** |
 | **C** | Implicit | Ngầm định | EN: QM has the phenomenon but lacks **formal classification** / VN: QM có hiện tượng nhưng thiếu **phân loại chính thức** | Category + Postulate E8–E12, E14, E16 / Danh mục + Tiên đề | **7** |
-| **R** | Reverse | Ngược | EN: QM has something Buddhism **does not** / VN: QM có thứ mà Phật giáo **không có** | Category 14 + E15 / Danh mục 14 + Tiên đề E15 | **1** |
+| **R** | Reverse | Ngược | EN: QM has an **entanglement relation beyond BE's classical relation taxonomy** / VN: QM có **quan hệ vướng víu vượt ngoài phân loại quan hệ cổ điển của BE** | Category 14 + E15 using N_BE_00021 as source analogue / Danh mục 14 + Tiên đề E15 dùng N_BE_00021 làm nguồn tương tự | **1** |
 | **X** | Unresolved | Chưa giải | EN: Resolution method not yet identified / VN: Chưa xác định được cách xử lý | Further research / Nghiên cứu thêm | **0** |
 | **∅** | Reserve | Dự trữ | EN: Placeholder / VN: Giữ chỗ | — | **1** |
 
@@ -352,7 +352,7 @@ S3 — Registering-System Process Hub / Trung tâm Quá trình Hệ ghi nhận
 | 7 | No pre-symbolic registration stratum | Không có tầng ghi nhận tiền biểu tượng | **A** | Postulate E4 / Tiên đề E4 |
 | 8 | No registration theory of temporal discontinuity | Không có lý thuyết ghi nhận về gián đoạn thời gian | **A** | Cat.12 + E13; S2-Δ boundary/connector / Danh mục 12 + Tiên đề E13; S2-Δ là biên/kết nối |
 | 9 | No classification of absence registration | Không có phân loại ghi nhận vắng mặt | **C** | Cat.13 + E14 / Danh mục 13 + Tiên đề E14 |
-| 10 | Non-classical correlation (reverse BIAN) | Tương quan phi cổ điển (BIAN ngược) | **R** | Cat.14 + E15 / Danh mục 14 + Tiên đề E15 |
+| 10 | Non-classical correlation as IRB extension (reverse BIAN) | Tương quan phi cổ điển như phần mở rộng IRB (BIAN ngược) | **R** | Cat.14 + E15; N_BE_00021 source analogue / Danh mục 14 + Tiên đề E15; N_BE_00021 là nguồn tương tự |
 | 11 | No pre-measurement registration-state model | Không có mô hình trạng thái ghi nhận trước đo | **C** | Cat.15 + E16 / Danh mục 15 + Tiên đề E16 |
 | 12 | No registration override mechanism | Không có cơ chế ghi đè ghi nhận | **C** | Cat.03 + E8 / Danh mục 03 + Tiên đề E8 |
 | 13 | No classification of null registration events | Không có phân loại sự kiện ghi nhận rỗng | **C** | Cat.06 + E9 / Danh mục 06 + Tiên đề E9 |
@@ -422,7 +422,7 @@ Step 1' / Bước 1': ε'(M') — Next raw event... / Sự kiện thô tiếp th
 | "Only PVM and POVM" / "Chỉ có PVM và POVM" | "Registration valid via capacity **beyond** projection" / "Ghi nhận hợp lệ bằng năng lực **vượt giới hạn** chiếu" | E12 |
 | "Jump = random" / "Bước nhảy = ngẫu nhiên" | "Jump = primordial **registration moment**" / "Bước nhảy = **sát-na ghi nhận** nguyên thủy" | E13 |
 | "Null result = surplus statistics" / "Null result = thống kê thừa" | "Null = **valid registration** of absence" / "Kết quả rỗng = **ghi nhận hợp lệ** về vắng mặt" | E14 |
-| "Entanglement = correlation" / "Entanglement = tương quan" | "Entanglement - registration = irreducible **third relation**" / "Vướng víu ở tầng ghi nhận = quan hệ **thứ ba** bất khả giản" | E15 |
+| "Entanglement = correlation" / "Entanglement = tương quan" | "Entanglement-registration = irreducible **VVV-QMRF extension relation** beyond BE's two classical relation types" / "Ghi nhận vướng víu = **quan hệ mở rộng VVV-QMRF** vượt ngoài hai loại quan hệ cổ điển của BE" | E15 |
 | "Superposition = unknown" / "Superposition = chưa biết" | "Superposition = complete **structured indeterminacy**" / "Chồng chập = **bất định có cấu trúc** hoàn chỉnh" | E16 |
 | "Measurement = one mixed event" / "Phép đo = một sự kiện trộn lẫn" | "Measurement interface separates physical `ρ` transition from `K`-side registration-state update" / "Giao diện phép đo tách chuyển đổi vật lý `ρ` khỏi cập nhật trạng thái ghi nhận phía `K`" | E17 proposal |
 

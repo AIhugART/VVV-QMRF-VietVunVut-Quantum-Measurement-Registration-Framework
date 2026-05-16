@@ -1,5 +1,9 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
+> **DISCLAIMER / CẢNH BÁO:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
+>
+> VVV-QMRF là nghiên cứu cá nhân độc lập ở Class D, không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế. Giao thức giới hạn đầy đủ: `DISCLAIMER.md`.
+
 # VVV-QMRF Registration Dictionary
 # Từ điển Thuật ngữ Registration của VVV-QMRF
 
@@ -7,8 +11,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** Dictionary for VVV-QMRF terms and `N_QM_VVV_XXXXX` node codes that resemble existing Standard Quantum Measurement terms; `VVV-EQM` is retained as a legacy name.
 **Primary frame:** Buddhist Epistemology
 **Mapped domain:** Quantum Measurement
-**RCA rule:** If a VVV-QMRF term looks like an existing QM term, append `- registration` unless the text is explicitly discussing the canonical physical QM concept.
+**RCA rule:** If a VVV-QMRF term looks like an existing QM term, do not rename it by mechanically appending `- registration`. Rename the VVV-QMRF term according to its specific `K`-side function, such as registration evidence, validity, lock, certification, absence, or relational binding; use `- registration` only when it is the clearest boundary marker.
 
+**Document type:** index
 ---
 
 ## 0. Project Name RCA
@@ -58,7 +63,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Root cause:** The physical quantum state `ρ` and the registration state `K` are not always separated in the term name. This can make a VVV-QMRF registration-layer concept appear to be a redefinition of a canonical QM physical concept.
 
-**Fix:** Keep canonical QM node names unchanged in `SYSTEM_Quantum_Measurement/system_qm_full.md`. For VVV-QMRF concepts, use `- registration` to mark that the novelty belongs to the `K`-side registration layer, not to the physical `ρ`-side formalism.
+**Fix:** Keep canonical QM node names unchanged in `SYSTEM_Quantum_Measurement/system_qm_full.md`. For VVV-QMRF concepts, choose a context-specific VVV-QMRF name grounded in the `registration` or `K` layer; use `- registration` only when that suffix is the clearest way to separate the novelty from the physical `ρ`-side formalism.
 
 **Verification:** Standard QM still supplies `p_QM(o) = Tr(E_o ρ)`, physical detector response, and `ρ_after`. VVV-QMRF adds `K_before → K_after`, formalized as `K_after = U_K(K_before, o)`. The novelty is in `U_K`, not in the Born rule or a new physical collapse law.
 
@@ -68,7 +73,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Nguyên nhân gốc:** Tên gọi chưa luôn tách rõ trạng thái lượng tử vật lý `ρ` và trạng thái ghi nhận `K`. Vì vậy người đọc có thể hiểu nhầm rằng VVV-QMRF đang định nghĩa lại khái niệm vật lý QM cũ.
 
-**Cách sửa:** Giữ nguyên tên node QM chuẩn trong `SYSTEM_Quantum_Measurement/system_qm_full.md`. Với khái niệm VVV-QMRF, thêm hậu tố `- registration` để đánh dấu rằng điểm mới nằm ở tầng ghi nhận `K`, không phải tầng vật lý `ρ`.
+**Cách sửa:** Giữ nguyên tên node QM chuẩn trong `SYSTEM_Quantum_Measurement/system_qm_full.md`. Với khái niệm VVV-QMRF, chọn tên mới theo đúng ngữ cảnh và đặt trên tầng `registration` hoặc `K`; chỉ dùng hậu tố `- registration` khi đó là cách rõ nhất để tách điểm mới khỏi tầng vật lý `ρ`.
 
 **Kiểm chứng:** QM chuẩn vẫn giữ `p_QM(o) = Tr(E_o ρ)`, `detector response`, và `ρ_after`. VVV-QMRF chỉ thêm `K_before → K_after`, hình thức hóa bằng `K_after = U_K(K_before, o)`. Điểm mới nằm ở `U_K`, không nằm ở `Born rule` hay luật `collapse` vật lý mới.
 
@@ -79,7 +84,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | Rule | Use |
 |---|---|
 | Canonical QM term | Use only for the existing physical QM concept. |
-| VVV-QMRF term resembling QM | Append `- registration`. |
+| VVV-QMRF term resembling QM | Rename it with a context-specific VVV-QMRF term; use `- registration` only when it is the clearest contextual boundary marker. |
 | General K-side update | Prefer `registration-state update` / cập nhật trạng thái ghi nhận. |
 | Apparatus physical signal | Use `detector response`, not `registration`. |
 | Human-only language | Avoid unless the context is explicitly human cognition; use `registering system` for the general case. |
@@ -236,7 +241,7 @@ Use these sentences when a document risks confusing VVV-QMRF with Standard QM:
 Before publishing or extending a VVV-QMRF term, verify:
 
 - [ ] Does the term look identical to an existing QM node?
-- [ ] If yes, has `- registration` been added for VVV-QMRF usage?
+- [ ] If yes, has the VVV-QMRF term been renamed according to the `registration` or `K` layer, with `- registration` used only when it is the clearest boundary marker?
 - [ ] Does the text clearly say whether it refers to `ρ` or `K`?
 - [ ] Does the text preserve `p_QM(o) = Tr(E_o ρ)` unchanged?
 - [ ] Does the text distinguish `detector response` from `registration-state update`?
@@ -253,4 +258,16 @@ Before publishing or extending a VVV-QMRF term, verify:
 | `K` | Trạng thái ghi nhận: cái hệ đã ghi nhận, phân loại, hoặc xác thực. |
 | `detector response` | Phản ứng vật lý của máy đo, ví dụ click hoặc tín hiệu. |
 | `registration-state update` | Cập nhật trạng thái ghi nhận `K`; đây là vùng mới của VVV-QMRF. |
-| `- registration` | Hậu tố báo rằng thuật ngữ đang nói về tầng ghi nhận, không phải khái niệm vật lý QM cũ. |
+| `- registration` | Một dấu hiệu ranh giới khi cần nói rõ thuật ngữ thuộc tầng ghi nhận `K`, không phải khái niệm vật lý QM cũ; không phải hậu tố bắt buộc cho mọi tên VVV-QMRF. |
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `index` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

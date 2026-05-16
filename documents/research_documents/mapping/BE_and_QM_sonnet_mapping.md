@@ -7,6 +7,24 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## BE source: The_Buddhist_Pramana_Epistemology_Logic_and_Language_RCA_Table.md
 ## QM source: QM_Measurement_Unified_Concept_Table.md
 
+**Document type:** mapping
+
+---
+
+## Canonical Identification / Nhận diện Chuẩn
+
+| Field | Value |
+|---|---|
+| Document type | mapping |
+| System A / Ground system | Buddhist Epistemology / Pramāṇavāda |
+| System B / Target system | Quantum Measurement / VVV-QMRF registration layer |
+| Mapping status | Structural analogy, support, contrast, or gap mapping unless a local row states otherwise. |
+| Graph relation | Uses BE node/edge codes from `SYSTEM_Buddhist_Epistemology/system_be_full.md` when present. |
+| Identity boundary | Mapping is not identity; BE concepts do not become canonical QM mechanisms or physical laws. |
+| RCA boundary | Treat cross-domain links as structurally useful comparisons, not proof that Buddhist Epistemology solves Quantum Measurement. |
+| Terminology rule | Use `registration-state update` for the K-side update and `detector response` only for the apparatus physical signal. |
+
+
 ## Status: Auxiliary RCA Evidence Map
 This document is an auxiliary line-by-line RCA mapping. It preserves evidence-level MAP entries, source provenance, RCA flags, and retrieval anchors. The canonical graph structure, node/edge codes, and canonical BIAN index are maintained in Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md.
 
@@ -865,7 +883,7 @@ Cross-domain correspondences are structural analogies only. RCA evidence support
 - QM row: 101 (interpretation maxim)
 - QM source: partial (QM row 101 acknowledges but does not resolve)
 - QM definition: QM validation is formally circular: the Born rule is accepted because measurements confirm it, but measurements are validated by the Born rule. The interpretation maxim (QM row 101) gestures at this by grounding interpretation in experimental fruitfulness, but does not resolve the circularity formally.
-- Correspondence type: Structural parallel. Both systems contain an acknowledged foundational circularity. BE resolves it through the soteriological framework (human purposes, nirvana). QM does not formally resolve it.
+- Correspondence type: Structural parallel. Both systems contain an acknowledged foundational circularity. BE contains a source-side resolution within its soteriological framework (human purposes, nirvana); this is not a QM resolution.
 - Correspondence strength: Moderate
 
 ## MAP-61
@@ -969,7 +987,7 @@ This table aligns the RCA-only Sonnet BIAN labels in this document with the cano
 
 ## Critical Asymmetries (highest structural significance for research)
 
-1. Sonnet BIAN-1 / System BIAN-2 and BIAN-17 (MAP-04): Svasamvitti / observer self-reference. Root of von Neumann chain and Wigner's Friend problem. QM has no regress-stopping principle; BE resolves it formally via self-certifying cognition.
+1. Sonnet BIAN-1 / System BIAN-2 and BIAN-17 (MAP-04): Svasamvitti / observer self-reference. Root of von Neumann chain and Wigner's Friend problem. QM has no regress-stopping principle; BE provides a source-side regress-stopping analogue through self-certifying cognition.
 2. Sonnet BIAN-4 and BIAN-5 / System BIAN-7 (MAP-10, MAP-11): QM formalism begins after the pre-symbolic event. BE theorizes this stratum explicitly. QM is entirely post-nirvikalpaka.
 3. Sonnet BIAN-17 / System BIAN-19 (MAP-58): QM implicitly assumes substantive observer; BE explicitly denies one. Foundational ontological inversion.
 4. Sonnet BIAN-13 / System BIAN-14 (MAP-41): Trairuupya absent from QM. QM has no formal unified tripartite theory of evidential validity.
@@ -987,3 +1005,24 @@ This table aligns the RCA-only Sonnet BIAN labels in this document with the cano
 - BE ground tradition: Pramaanavada (Dinnaaga, Dharmakirti). Source: The_Buddhist_Pramana_Epistemology_Logic_and_Language_RCA_Table.md.
 - QM framework: Susskind & Friedman (2014) + Jordan & Siddiqi (2024). Source: QM_Measurement_Unified_Concept_Table.md.
 - No concepts have been added beyond what appears in the two source documents. No extrapolation beyond source lines except where explicitly flagged as listed only or inferred.
+
+---
+
+## What This Mapping Does NOT Claim / Những gì Mapping này KHÔNG tuyên bố
+
+1. This mapping does not claim identity between Buddhist Epistemology and Quantum Measurement.
+2. This mapping does not introduce new canonical QM laws, operators, or postulates unless a separate VVV-QMRF framework document explicitly proposes them.
+3. This mapping does not claim that Buddhist Epistemology proves or solves Quantum Measurement; it only identifies structural analogies, contrasts, supports, and gaps.
+4. `registration-state update` names the VVV-QMRF K-side update; `detector response` remains only the apparatus physical response.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `mapping` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

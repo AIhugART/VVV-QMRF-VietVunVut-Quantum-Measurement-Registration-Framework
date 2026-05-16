@@ -1,5 +1,9 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
+> **DISCLAIMER / CẢNH BÁO:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
+>
+> VVV-QMRF là nghiên cứu cá nhân độc lập ở Class D, không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế. Giao thức giới hạn đầy đủ: `DISCLAIMER.md`.
+
 # VVV Quantum Measurement Node Table
 # Bảng Node Lượng tử VVV
 
@@ -9,6 +13,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Decision Gate:** For decisions that require judgment, use up to three rounds of RCA → 5 WHY → score against the 3.5/5 threshold → accept only decisions scoring ≥ 3.5/5; otherwise fold/no-node or mark ambiguous.
 **Code policy:** New VVV nodes use `N_QM_VVV_00001`, `N_QM_VVV_00002`, ... to distinguish them from canonical QM system nodes `N_QM_XXXXX`.
 
+**Document type:** index
 ---
 
 ## 1. RCA Decision Summary
@@ -546,3 +551,15 @@ These concepts appear in the category files but already have canonical nodes in 
 **Decision Gate:** 4.5/5 for the root and 3.5/5 for `Ŝ_saṃśaya`; accepted.
 
 **Fix:** Assign `N_QM_VVV_00054` to Pre-Measurement Registration Indeterminacy / SDS and `N_QM_VVV_00055` to the Indeterminacy Operator. Keep superposition, density matrix, and hidden-variable debate as canonical support.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `index` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

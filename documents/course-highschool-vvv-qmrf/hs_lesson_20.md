@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -35,7 +36,7 @@ Sau bài này, các em có thể:
 
 ## 2. RCA Learning Problem
 
-**RCA focus:** RCA: lỗi gốc mà E12 xử lý
+**RCA focus:** RCA: vấn đề gốc mà E12 xử lý
 
 ### Define / Trace / Isolate / Fix / Verify
 
@@ -53,7 +54,7 @@ Sau bài này, các em có thể:
 
 ## 3. Main Lesson
 
-Hãy tưởng tượng em nghe tiếng gõ cửa rất nhỏ trong lúc lớp ồn. Em không thể khẳng định ngay như khi nghe tiếng trống trường rất to. Em cần chú ý hơn, có thể cần lặp lại hoặc dùng bối cảnh để hiểu.
+Hãy tưởng tượng em nghe tiếng gõ cửa rất nhỏ trong lúc lớp ồn. Em không thể kết luận ngay như khi nghe tiếng trống trường rất to. Em cần chú ý hơn, có thể cần lặp lại hoặc dùng bối cảnh để hiểu.
 
 E12 nói về các trường hợp hệ ghi nhận hoạt động ở giới hạn: tín hiệu yếu, điều kiện tinh tế, hoặc cách đọc kết quả không trực tiếp như phép đo thường.
 

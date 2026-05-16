@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Legacy Name: Epistemic Validity Location Postulate / Tiên đề Định vị Tính hợp lệ Nhận thức / VVV-EQM
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** framework
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
@@ -220,3 +221,15 @@ Unlike E4 (missing category), E7 has a complete Category 04 document (`vvv_qmrf_
 ---
 
 *Source: system_mapping_SOT.md, vvv_qmrf_category_04_e07_dual_phase_registration_certification.md, QM_measurement_epistemic_postulates_framework.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `framework` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

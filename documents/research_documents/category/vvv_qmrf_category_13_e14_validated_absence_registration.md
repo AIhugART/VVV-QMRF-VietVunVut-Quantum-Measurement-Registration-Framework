@@ -310,6 +310,23 @@ VAR cũng không chứng minh dark matter; nó chỉ cho thấy non-detection c�
 
 ## 9. Mermaid Diagram Map / Sơ đồ Mermaid
 
+### 9.1 Local Arrow Semantics / Quy ước mũi tên local
+
+This table explains only the arrows used in this diagram. It follows the broader Arrow Semantics rule in `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+Bảng này chỉ giải thích các mũi tên dùng trong sơ đồ này. Nó tuân theo quy tắc Arrow Semantics rộng hơn trong `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+| Diagram arrow label | Local meaning | Must not imply |
+|---|---|---|
+| `supports absence cognition` | Anupalabdhi supports the registration-layer idea of valid absence cognition. | Absence becomes a physical substance. |
+| `absence source lineage` | Abhāva supplies source-lineage context for absence cognition. | Direct identity between Buddhist absence ontology and Quantum Mechanics. |
+| `validity structure` / `validates` | Validity conditions constrain when absence can count as registration evidence. | Every non-detection is automatically valid evidence. |
+| `operational null event` | Standard QM no-result measurement supplies the operational substrate for the registration analysis. | VVV-QMRF replaces standard null-measurement physics. |
+| `formal support` / `state-update support` | Standard QM formal structures support the physical side of the diagram. | The VVV-QMRF category is already a canonical QM postulate. |
+| `formalizes` | The proposed absence-projection notation formalizes the K-side registration category. | A new experimentally validated physical operator by itself. |
+| `negative control` | E9 marks the contrast case where silence is non-informative or invalid. | A dismissal of null-result measurement in Standard QM. |
+| Unlabeled category-to-boundary arrow | The category must be read under its RCA boundary. | Boundary-free use of absence as evidence. |
+
 ```mermaid
 flowchart TD
     subgraph BE["Buddhist Epistemology — Pramāṇavāda"]

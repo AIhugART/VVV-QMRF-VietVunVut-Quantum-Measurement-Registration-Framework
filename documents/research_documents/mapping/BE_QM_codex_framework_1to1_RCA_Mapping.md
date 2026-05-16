@@ -2,6 +2,24 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Buddhist Epistemology to Quantum Measurement — 1:1 RCA Mapping
 
+**Document type:** mapping
+
+---
+
+## Canonical Identification / Nhận diện Chuẩn
+
+| Field | Value |
+|---|---|
+| Document type | mapping |
+| System A / Ground system | Buddhist Epistemology / Pramāṇavāda |
+| System B / Target system | Quantum Measurement / VVV-QMRF registration layer |
+| Mapping status | Structural analogy, support, contrast, or gap mapping unless a local row states otherwise. |
+| Graph relation | Uses BE node/edge codes from `SYSTEM_Buddhist_Epistemology/system_be_full.md` when present. |
+| Identity boundary | Mapping is not identity; BE concepts do not become canonical QM mechanisms or physical laws. |
+| RCA boundary | Treat cross-domain links as structurally useful comparisons, not proof that Buddhist Epistemology solves Quantum Measurement. |
+| Terminology rule | Use `registration-state update` for the K-side update and `detector response` only for the apparatus physical signal. |
+
+
 ## Purpose
 
 This pure Markdown document maps each Buddhist Epistemology RCA-table row to exactly one Quantum Measurement concept row. The mapping is guided by the four-axiom Buddhist Epistemic Interpretation framework and is designed for LLM ingestion, retrieval, and downstream graph construction.
@@ -377,3 +395,24 @@ For downstream graph construction, use `documents/research_documents/mapping/Bud
 ## Use note
 
 Use this document as an RCA-indexed structural mapping. Do not read the mappings as claims that Buddhist concepts and quantum-measurement concepts are identical; the mapping level and reason column define the permitted analogy strength.
+
+---
+
+## What This Mapping Does NOT Claim / Những gì Mapping này KHÔNG tuyên bố
+
+1. This mapping does not claim identity between Buddhist Epistemology and Quantum Measurement.
+2. This mapping does not introduce new canonical QM laws, operators, or postulates unless a separate VVV-QMRF framework document explicitly proposes them.
+3. This mapping does not claim that Buddhist Epistemology proves or solves Quantum Measurement; it only identifies structural analogies, contrasts, supports, and gaps.
+4. `registration-state update` names the VVV-QMRF K-side update; `detector response` remains only the apparatus physical response.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `mapping` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

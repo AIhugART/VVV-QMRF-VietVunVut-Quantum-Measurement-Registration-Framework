@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Legacy Name: Self-Certification Postulate / Epistemic Postulate for Quantum Measurement / VVV-EQM
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** framework
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Facebook:** https://www.facebook.com/xuanviet  
@@ -245,3 +246,15 @@ E6 (Registering-System-as-Process)
 ---
 
 *Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, system_be_qm_framework_1to1_RCA_mapping.md, vvv_qmrf_category_05_e01_self_certifying_registration_operator.md, QM_measurement_epistemic_postulates_framework.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `framework` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # RCA Tổng hợp: S1-Λ — Bổ đề Chuyển tiếp
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** synthesis
 **Code:** S1-Λ  
 **Name EN:** Transition Lemma  
 **Tên VN:** Bổ đề Chuyển tiếp  
@@ -259,16 +260,27 @@ S1 Pipeline (Registration-State Update Pipeline):
 
 | Document | Role | Path |
 |----------|------|------|
-| E4 Postulate | Λ operator origin | [E4](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md) §3 |
-| E5 Postulate | Ā(M) output domain | [E5](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/vvv_qmrf_framework_e05_internal_representation_encoding_postulate.md) §3 |
-| S1 Pipeline | Integration site | [S1](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) §4d |
-| E8 vs Lemma | Architecture decision | [Decision](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_E8_vs_Lemma.md) |
-| BIAN-1 Verification | Complete resolution | [Verification](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_verification.md) |
-| ENI Principle | Generalization | [ENI](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_new_epistemic.md) |
-| GCS | Classification | [GCS](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_gap_classification_system.md) |
-| Capstone | Full yield | [Capstone](file:///C:/Users/PC/.gemini/antigravity/brain/67079c0d-5c87-490c-9dd3-799682c1df23/artifacts/RCA_BIAN1_epistemic_establishment.md) |
+| E4 Postulate | Λ operator origin | [E4](../framework/vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md) §3 |
+| E5 Postulate | Ā(M) output domain | [E5](../framework/vvv_qmrf_framework_e05_internal_representation_encoding_postulate.md) §3 |
+| S1 Pipeline | Integration site | [S1](vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) §4d |
+| E8 vs Lemma | Architecture decision | [Decision](../achives/review/RCA_BIAN1_E8_vs_Lemma.md) |
+| BIAN-1 Verification | Complete resolution | [Verification](../achives/gap/BIAN1_resolution_verification.md) |
+| ENI Principle | Generalization | [ENI](../achives/review/RCA_BIAN1_new_epistemic.md) |
+| GCS | Classification | [GCS](../meta_architecture/vvv_qmrf_meta_architecture_gap_classification_system.md) |
+| Capstone | Full yield | [Capstone](../meta_architecture/vvv_qmrf_meta_architecture_bian_01_registration_establishment.md) |
 
 ---
 
 *Evidence chain: SOT L207, L171, L203 → N_BE_00010 (2/2 uncertain) → E4 §3 (Λ exists) → Dignāga (4 processes only) → Lemma S1-Λ → ENI instance #1 → Class B. Status: Class D (Derived).*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `synthesis` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Review required | Add explicit non-identity and non-physical-law boundaries before reuse. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Mục lục Các Phạm trù Ghi nhận Mới cho Đo lường Lượng tử
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** index
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Facebook:** https://www.facebook.com/xuanviet
@@ -35,7 +36,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | **11** | Limit-Faculty Registration / Transcendental Registration Mode | Ghi nhận Giới hạn Năng lực / Chế độ Ghi nhận Siêu việt | *Alaukika pratyakṣa* | BIAN-3 | [`vvv_qmrf_category_11_e12_limit_faculty_registration.md`](./vvv_qmrf_category_11_e12_limit_faculty_registration.md) |
 | **12** | Temporal Discontinuity Doctrine / Moment-to-Moment Quantum Transition | Học thuyết Gián đoạn Thời gian / Chuyển đổi Lượng tử Sát-na | *Kṣaṇabhaṅgavāda* | BIAN-8 | [`vvv_qmrf_category_12_e13_temporal_discontinuity_doctrine.md`](./vvv_qmrf_category_12_e13_temporal_discontinuity_doctrine.md) |
 | **13** | Validated Absence Registration / Conditioned Null Registration | Ghi nhận Vắng mặt Hợp lệ / Ghi nhận Rỗng Có Điều kiện | *Anupalabdhi* | BIAN-9 | [`vvv_qmrf_category_13_e14_validated_absence_registration.md`](./vvv_qmrf_category_13_e14_validated_absence_registration.md) |
-| **14** | Intrinsic Relational Binding / Entanglement - registration Architecture | Liên kết Quan hệ Nội tại / Kiến trúc Tương quan Phi cổ điển | *Svabhāvapratibandha* | BIAN-10 | [`vvv_qmrf_category_14_e15_intrinsic_relational_binding.md`](./vvv_qmrf_category_14_e15_intrinsic_relational_binding.md) |
+| **14** | Intrinsic Relational Binding / Non-Classical Correlation Architecture | Liên kết Quan hệ Nội tại / Kiến trúc Tương quan Phi cổ điển | *Svabhāvapratibandha* | BIAN-10 | [`vvv_qmrf_category_14_e15_intrinsic_relational_binding.md`](./vvv_qmrf_category_14_e15_intrinsic_relational_binding.md) |
 | **15** | Pre-Measurement Registration Indeterminacy / Structured Registration-Doubt State | Bất định Ghi nhận Tiền đo / Trạng thái Nghi ngờ Ghi nhận Có Cấu trúc | *Saṃśaya* | BIAN-11 | [`vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md`](./vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md) |
 
 ---
@@ -74,7 +75,19 @@ The establishment of these registration categories reframes the "Measurement Pro
 
 1. **The Architecture of the Registering System (02, 05, 07):** Replaces the persistent classical registering boundary with a self-completing, self-certifying, momentary causal series (*Pramāṇa-Phala Identity* + *Svasaṃvedana* + *Anātmavāda*).
    *(Kiến trúc Hệ ghi nhận: Thay thế ranh giới ghi nhận cổ điển vĩnh cửu bằng một chuỗi nhân quả khoảnh khắc, tự hoàn tất và tự chứng.)*
-2. **The Definition of Valid Measurement - registration (08, 09):** Axiomatizes what constitutes an apparatus (*Trairūpya*) and when registration lock occurs (*Vyavasāya*).
+2. **The Definition of Valid Registration-Qualified Measurement (08, 09):** Axiomatizes what constitutes an apparatus (*Trairūpya*) and when registration lock occurs (*Vyavasāya*).
    *(Định nghĩa Phép đo Hợp lệ ở tầng ghi nhận: Tiên đề hóa thế nào là một cỗ máy đo lường và khi nào registration lock / khóa ghi nhận thực sự xảy ra.)*
 3. **The Dynamics of Validity & Error (01, 03, 04, 06):** Provides a mathematical language for retroactive invalidation (*Bādhaka*), pure contrastive logic (*Kevalavyatirekin*), null registration non-engagement (*Anadhyavasāya*), and the verification of validity (*Svataḥ/Parataḥ*).
    *(Động lực học của Tính hợp lệ & Sai lầm: Cung cấp ngôn ngữ toán học cho việc phủ quyết hồi tố, logic loại trừ thuần túy, bất tạo ghi nhận, và việc kiểm chứng tính hợp lệ.)*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `index` for schema alignment. |
+| Source traceability | Review required | Add an explicit source corpus before publication reuse. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

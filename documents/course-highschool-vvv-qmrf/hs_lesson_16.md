@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -27,15 +28,15 @@ Chào các em! Bài này nói về E8: đôi khi một ghi nhận trước đó 
 
 Sau bài này, các em có thể:
 
-1. Hiểu “retroactive override” là ghi nhận sau có thể sửa giá trị của ghi nhận trước.
-2. Biết vì sao E8 xử lý trường hợp kết quả tạm hoặc sai bị bác bỏ.
-3. Đọc ký hiệu `Ô_bhranti` như thao tác phát hiện và ghi đè sai lệch ở tầng ghi nhận.
+1. Hiểu “retroactive override” là ghi nhận sau có thể đánh giá lại giá trị của ghi nhận trước.
+2. Biết vì sao E8 xử lý trường hợp kết quả tạm hoặc không còn đủ điều kiện hợp lệ.
+3. Đọc ký hiệu `Ô_bhranti` như thao tác phát hiện lệch điều kiện và ghi đè ở tầng ghi nhận.
 
 ---
 
 ## 2. RCA Learning Problem
 
-**RCA focus:** RCA: lỗi gốc mà E8 xử lý
+**RCA focus:** RCA: vấn đề gốc mà E8 xử lý
 
 ### Define / Trace / Isolate / Fix / Verify
 
@@ -45,15 +46,15 @@ Sau bài này, các em có thể:
 
 1. Vì sao dễ tưởng vậy? Vì bản ghi thường được xem là đã chốt.
 2. Vì sao không phải lúc nào cũng vậy? Vì có thể xuất hiện bằng chứng sau mạnh hơn.
-3. Vì sao bằng chứng sau quan trọng? Vì nó có thể cho thấy bản ghi trước bị nhiễu hoặc sai điều kiện.
-4. Vì sao cần cơ chế ghi đè? Vì nếu không, hệ sẽ giữ bản ghi sai như bản ghi hợp lệ.
+3. Vì sao bằng chứng sau quan trọng? Vì nó có thể cho thấy bản ghi trước bị nhiễu hoặc không đúng điều kiện.
+4. Vì sao cần cơ chế ghi đè? Vì nếu không, hệ sẽ giữ bản ghi không hợp lệ như bản ghi hợp lệ.
 5. Gốc vấn đề là gì? Thiếu cơ chế xử lý **invalidated prior registration**.
 
 ---
 
 ## 3. Main Lesson
 
-Hãy tưởng tượng cô nhập điểm cho một bạn là 9. Sau đó, hệ thống phát hiện cô đã chọn nhầm mã học sinh. Điểm 9 không thể tiếp tục được xem là bản ghi hợp lệ cho bạn đó. Hệ thống phải sửa lại và đánh dấu bản ghi cũ là sai.
+Hãy tưởng tượng cô nhập điểm cho một bạn là 9. Sau đó, hệ thống phát hiện cô đã chọn nhầm mã học sinh. Điểm 9 không thể tiếp tục được xem là bản ghi hợp lệ cho bạn đó. Hệ thống phải cập nhật lại và đánh dấu bản ghi cũ là không còn hợp lệ.
 
 E8 nói về tình huống tương tự trong tầng ghi nhận: một bản ghi trước có thể bị ghi đè hoặc vô hiệu hóa khi có chứng nhận sau mạnh hơn.
 
@@ -66,7 +67,7 @@ Ký hiệu thường gặp:
 Đọc dễ hiểu:
 
 ```text
-Ô_bhranti = thao tác nhận ra sai lệch và ghi đè bản ghi không hợp lệ
+Ô_bhranti = thao tác nhận ra lệch điều kiện và ghi đè bản ghi không hợp lệ
 ```
 
 ---
@@ -136,7 +137,7 @@ D. Chọn món ăn trưa
 
 **Câu 2.** `Ô_bhranti` gần với ý nào nhất?
 
-A. Thao tác nhận ra sai lệch và ghi đè bản ghi không hợp lệ
+A. Thao tác nhận ra lệch điều kiện và ghi đè bản ghi không hợp lệ
 B. Một bài hát vui
 C. Một loại bánh
 D. Một cái ghế
@@ -150,7 +151,7 @@ D. Chỉ trong giờ kiểm tra
 
 **Câu 4.** Ví dụ nhập nhầm điểm giúp hiểu gì?
 
-A. Bản ghi cũ có thể bị sửa khi phát hiện sai
+A. Bản ghi cũ có thể được cập nhật khi phát hiện không khớp điều kiện
 B. Điểm số là hạt lượng tử
 C. Cô giáo làm đổi "Born rule"
 D. Sổ điểm có ý thức

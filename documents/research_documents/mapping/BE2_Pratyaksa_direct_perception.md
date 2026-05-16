@@ -20,6 +20,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Canonical statement:** N_BE_00002 denotes Pratyakṣa, the Buddhist epistemological category of direct perception within the Pramāṇavāda framework. It is classified as a source of knowledge and functions as one of the two primary forms of Pramāṇa, alongside N_BE_00003 — Anumāna.
 
+**Document type:** mapping
 ---
 
 ## 2. RCA Definition
@@ -221,6 +222,21 @@ có thể được so với `Pratyakṣa` vì nó là kết quả trực tiếp 
 
 ## 8. Mermaid Diagram Map
 
+### 8.1 Local Arrow Semantics / Quy ước mũi tên local
+
+This table explains only the arrows used in this diagram. It follows the broader Arrow Semantics rule in `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+Bảng này chỉ giải thích các mũi tên dùng trong sơ đồ này. Nó tuân theo quy tắc Arrow Semantics rộng hơn trong `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+| Diagram arrow label | Local meaning | Must not imply |
+|---|---|---|
+| `includes / ED_BE_00001`, `includes / ED_BE_00002` | Canonical Buddhist Epistemology inclusion edges from the BE SOT. | A Quantum Mechanics relation or a cross-system identity claim. |
+| `apprehends / ED_BE_00005`, `is free from / ED_BE_00038`, `operates through / ED_BE_00007`, `requires / ED_BE_00010`, `grounds valid inference` | Internal Buddhist Epistemology node relations or SOT-supported dependency relations. | Physical causation inside Standard Quantum Mechanics. |
+| `P2 --> QREAD`, `P4 --> QPRED` | Internal Standard Quantum Mechanics diagram flow from postulate to measurement-output or probability component. | A VVV-QMRF novelty or Buddhist Epistemology equivalence. |
+| Dashed QM-to-BE arrows with labels such as `Pratyakṣa-like terminal output` | Structural analogy or bounded mapping between systems. | Identity, proof, or doctrinal equivalence. |
+| Dashed arrows to `RCA Boundary` | Boundary guard showing where the analogy must be constrained. | That the boundary is optional. |
+| `BOUND --> WARN` | RCA boundary explanation leading to the warning that BE2 and eigenvalue readout differ in kind. | A rejection of the useful structural comparison. |
+
 ```mermaid
 flowchart TD
     subgraph QM["Quantum Mechanics — Four Postulates"]
@@ -292,3 +308,24 @@ meaning:
 ```text
 The eigenvalue readout of quantum measurement plays a Pratyakṣa-like terminal-output role, but only as a structural analogy, because Pratyakṣa is non-conceptual whereas an eigenvalue is already symbolic.
 ```
+
+---
+
+## What This Mapping Does NOT Claim / Những gì Mapping này KHÔNG tuyên bố
+
+1. This mapping does not claim identity between Buddhist Epistemology and Quantum Measurement.
+2. This mapping does not introduce new canonical QM laws, operators, or postulates unless a separate VVV-QMRF framework document explicitly proposes them.
+3. This mapping does not claim that Buddhist Epistemology proves or solves Quantum Measurement; it only identifies structural analogies, contrasts, supports, and gaps.
+4. `registration-state update` names the VVV-QMRF K-side update; `detector response` remains only the apparatus physical response.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `mapping` for schema alignment. |
+| Source traceability | Review required | Add an explicit source corpus before publication reuse. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

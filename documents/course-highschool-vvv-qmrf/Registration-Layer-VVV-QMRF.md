@@ -7,8 +7,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Status:** educational draft
 **Reader level:** highschool
 **Scope:** High-school / LLM-friendly explanation of the VVV-QMRF registration layer.
-**Source trace:** `documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md`; `documents/research_documents/framework/vvv_qmrf_framework_e01_self_certifying_registration_postulate.md`; `documents/research_documents/vvv-qmrf/schema_guide.md`.
+**Source trace:** `documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md`; `documents/research_documents/framework/vvv_qmrf_framework_e01_self_certifying_registration_postulate.md`; `documents/research_documents/vvv-qmrf/schema_guide.md`; `DISCLAIMER.md`.
 **Claim boundary:** This lesson is an educational interpretation of the registration layer, not a replacement for Standard Quantum Mechanics.
+**Concept boundary:** The registration layer explains K-side registration distinctions only; it must not be read as an identity claim about Standard Quantum Mechanics, physical collapse, or Buddhist doctrine.
 **Formula boundary:** Symbols here are registration-layer teaching notation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -70,7 +71,7 @@ To illustrate the decoupling of $\rho$ and $K$, consider a bank transfer:
     *   **The Bank Server:** Its registration state ($K_{bank}$) is updated (a transaction log is created).
     *   **The Smartphone:** It receives the radio signal and displays a notification. Its registration state ($K_{phone}$) is updated.
     *   **The User:** The user is asleep and has not checked the phone. The user's registration state ($K_{user}$) remains un-updated ($K = null$).
-*   **The Registration Fallacy:** A mistaken observer-centered reading would confuse the user's un-updated registration state with the physical transaction state. VVV-QMRF separates the two: the user's uncertainty belongs to $K_{user}$, not automatically to the physical transaction layer.
+*   **Registration-layer boundary:** An observer-centered reading may confuse the user's un-updated registration state with the physical transaction state. VVV-QMRF separates the two: the user's uncertainty belongs to $K_{user}$, not automatically to the physical transaction layer.
 
 ## 4. The Formal Mathematical Model
 The Registration Layer operates on a specific state-update function:
@@ -92,7 +93,7 @@ The **"von Neumann chain"** raises an observer-regress question: if a camera mea
 
 VVV-QMRF proposes a K-side regress-stopping rule through **Postulate E1: Self-Certifying Registration**.
 *   **The Principle:** A measurement act inherently certifies its own occurrence at the Registration Layer.
-*   **The Reflexive Operator ($\hat{R}_{svasa}$):** This proposed Class D registration-layer operator acts strictly within the Class C registration-state framework. Once a measuring device (e.g., a camera) successfully completes its K-side registration operation, the measurement occurrence is self-certified as having occurred at the $K$-side. The device intrinsically registers that the measurement occurred, establishing an absolute stopping point. No secondary "meta-observer" (like a human consciousness) is required to actualize reality. This is not a canonical QM observable, not a physical collapse law, and not the E3 registration-lock operation.
+*   **The Reflexive Operator ($\hat{R}_{svasa}$):** This proposed Class D registration-layer operator acts strictly within the Class C registration-state framework. Once a measuring device (e.g., a camera) successfully completes its K-side registration operation, the measurement occurrence is self-certified as having occurred at the $K$-side. The device intrinsically registers that the measurement occurred, establishing an absolute stopping point. No secondary K-side “meta-observer” is required for the device’s registration event to be self-certified within VVV-QMRF. This is not a canonical QM observable, not a physical collapse law, and not the E3 registration-lock operation.
 
 ## 6. The Registration Boundary
 The introduction of the Registration Layer and the Self-Certification postulate establishes a strict **Registration Boundary**. It creates an architectural firewall between the physical side (what physically happens) and the registration side (what is recorded as known).
@@ -125,3 +126,5 @@ For this lesson, the RCA risk is the conflation of these two domains. VVV-QMRF k
 > 2. Nó không thay thế, không sửa, và không bác bỏ "Standard Quantum Mechanics".
 > 3. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
 > 4. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không dùng cho quyết định kỹ thuật hoặc ứng dụng thực tế.
+>
+> Full disclaimer: see [DISCLAIMER.md](../../DISCLAIMER.md) at repository root, incorporated by reference.

@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Legacy Name: Epistemic Commitment Postulate / Tiên đề Cam kết Nhận thức / VVV-EQM
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** framework
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-11  
@@ -26,37 +27,41 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ### English
 
-In standard QM, P3 does not distinguish a measurement from any other physical interaction. System-meter coupling is a unitary evolution — indistinguishable from any other interaction until someone declares it a "measurement." What makes a measurement a measurement?
+In standard QM, a system-meter interaction can be represented physically without specifying when it receives measurement-registration status. The physical interaction belongs to the ρ-side; E3 asks a K-side question: what turns a correlation into a determinate registered outcome for a registering system?
 
-E3 answers: measurement requires a registration-lock operation — the moment of propositional crystallization at which a registration becomes actionable and determinate. This is not a physical process but a structural transition from "correlated states" to "determinate registration status."
+E3 answers: measurement-registration requires a registration-lock operation — the K-side moment of propositional crystallization at which a registration becomes an actionable and determinate registered status for a specific registering system. This is not an additional physical collapse mechanism but a structural transition in K from "correlated but not yet locked" to "determinate registration status."
 
 This derives from the Buddhist concept of Vyavasaya (determinate judgment): the cognitive act of determining that x is the case. Vyavasaya follows perception and involves conceptual structure but is irreducible to mere perception. In VVV-QMRF it functions as the source analogue for registration lock.
 
-The immediate consequence: the Heisenberg cut — the arbitrary boundary between "quantum" and "classical" — is replaced by a formal registration boundary. The cut is not where the quantum world ends; it is where registration lock begins.
+At the registration layer, the immediate consequence is a formal registration boundary: the Heisenberg cut is not physically relocated or resolved on the ρ side, but is reused as the point where registration lock begins for K-side registered status.
 
 ### Vietnamese
 
-Trong QM tiêu chuẩn, P3 không phân biệt phép đo với bất kỳ tương tác vật lý nào khác. Tương tác hệ-máy đo là tiến hóa unitary — không phân biệt được với tương tác khác cho đến khi ai đó tuyên bố nó là "phép đo." Điều gì khiến phép đo là phép đo?
+Trong QM tiêu chuẩn, tương tác hệ-máy đo có thể được biểu diễn về mặt vật lý mà chưa nói rõ khi nào nó nhận trạng thái đo-ghi nhận. Tương tác vật lý thuộc phía ρ; E3 đặt câu hỏi phía K: điều gì biến một tương quan thành kết quả được ghi nhận xác định cho hệ ghi nhận?
 
-E3 trả lời: phép đo đòi hỏi thao tác khóa ghi nhận — khoảnh khắc kết tinh mệnh đề khi ghi nhận trở nên có thể hành động và xác định. Đây không phải quá trình vật lý mà là bước chuyển cấu trúc từ "trạng thái tương quan" sang "trạng thái ghi nhận xác định."
+E3 trả lời: đo-ghi nhận đòi hỏi thao tác khóa ghi nhận — khoảnh khắc kết tinh mệnh đề khi ghi nhận trở nên có thể hành động và xác định. Đây không phải cơ chế sụp đổ vật lý bổ sung, mà là bước chuyển cấu trúc trong K từ "có tương quan nhưng chưa khóa" sang "trạng thái ghi nhận xác định."
 
 Bắt nguồn từ khái niệm Vyavasaya (phán đoán xác quyết): hành động nhận thức xác định rằng x đúng. Vyavasaya theo sau tri giác, có cấu trúc khái niệm nhưng không thể quy giản về tri giác thuần túy. Trong VVV-QMRF, nó đóng vai trò tương tự nguồn cho thao tác khóa ghi nhận.
 
-Hệ quả: vết cắt Heisenberg — ranh giới tùy ý giữa "lượng tử" và "cổ điển" — được thay thế bởi ranh giới ghi nhận hình thức. Vết cắt không phải nơi thế giới lượng tử kết thúc; mà là nơi khóa ghi nhận bắt đầu.
+Hệ quả ở tầng ghi nhận: vết cắt Heisenberg không bị dời vị trí về mặt vật lý, mà được diễn đạt lại như điểm nơi khóa ghi nhận bắt đầu ở phía K.
 
 ---
 
 ## 3. Formal Sketch / Phác thảo Hình thức
 
-### 3a. Framework formalism — L(I) registration-lock function
+### 3a. Framework formalism — L_K(I) registration-lock function
 
 ```
 For physical interaction I between system S and apparatus A:
-  I becomes measurement M iff L(I) = 1
-  where L: {interactions} → {0,1} is the registration-lock function.
+  I receives measurement-registration status iff L_K(I) = 1
+  where L_K: {physical correlations read by K} → {0,1}
+  is the K-side registration-lock function.
   
-  L(I) = 1 iff the interaction produces an irreversible
+  L_K(I) = 1 iff the interaction is locked as an irreversible
   registration-state update in the registering system.
+
+Boundary: L_K classifies registration status; it does not add a
+physical collapse mechanism or alter the ρ-side interaction model.
 ```
 
 ### 3b. Category 08 formalism — V̂_yava operator
@@ -75,7 +80,7 @@ The Registration-Lock Operator V̂_yava acts on internal correlate M_i:
 
 | Formalism | Source | Status |
 |-----------|--------|--------|
-| L(I) ∈ {0,1} | Framework E3 | Class D |
+| L_K(I) ∈ {0,1} | Framework E3 | Class D |
 | V̂_yava | Category 08 | Class D |
 | Equivalence? | Unproven | Class C |
 
@@ -86,7 +91,7 @@ The Registration-Lock Operator V̂_yava acts on internal correlate M_i:
 | Symbol | Meaning EN | Ý nghĩa VN | Domain |
 |--------|-----------|-------------|--------|
 | I | Physical interaction | Tương tác vật lý | Unitary evolution |
-| L(I) | Registration-lock function | Hàm khóa ghi nhận | {0,1} |
+| L_K(I) | Registration-lock function | Hàm khóa ghi nhận | {0,1} |
 | V̂_yava | Registration-lock operator | Toán tử khóa ghi nhận | Category 08 |
 | Vyavasaya | Determinate judgment | Phán đoán xác quyết | Buddhist term |
 
@@ -116,7 +121,7 @@ The Registration-Lock Operator V̂_yava acts on internal correlate M_i:
 > "The cognitive act of determining that x is the case: the moment of propositional crystallization at which a cognition becomes an actionable epistemic commitment."
 
 **SOT T2.04 (L328):**
-> "QM merges the physical registration event with the epistemic commitment act. Buddhist Epistemology maintains the distinction formally."
+> "QM merges the detector-response event with the epistemic commitment act. Buddhist Epistemology maintains the distinction formally."
 
 ---
 
@@ -161,7 +166,7 @@ E1 (Self-Certifying Registration)
 | "Converts correlation to fact" | **M** | SOT T2.04 L326 |
 | "QM merges act/registration" | **M** | SOT T2.04 L327-328 |
 | "Resolves Heisenberg cut" | **D** | Applied consequence |
-| "C(I) formalism" | **D** | Proposed |
+| "L_K(I) formalism" | **D** | Proposed |
 | "V̂_yava operator" | **D** | Proposed |
 | "Node ID N_BE_00155" | **✔️ RESOLVED** | BIAN_index_SOT corrected 2026-05-11 |
 
@@ -176,3 +181,15 @@ E1 (Self-Certifying Registration)
 ---
 
 *Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, vvv_qmrf_category_08_e03_registration_lock_operation.md, QM_measurement_epistemic_postulates_framework.md*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `framework` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

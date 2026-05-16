@@ -1,24 +1,25 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# E16 â€” Pre-Measurement Registration Indeterminacy Postulate / TiÃªn Ä‘á» Báº¥t Ä‘á»‹nh Ghi nháº­n Tiá»n Ä‘o
-# Legacy Name: Structured Doubt State Postulate / TiÃªn Ä‘á» Tráº¡ng thÃ¡i Nghi ngá» CÃ³ Cáº¥u trÃºc / VVV-EQM
+# E16 — Pre-Measurement Registration Indeterminacy Postulate / Tiên đề Bất định Ghi nhận Tiền đo
+# Legacy Name: Structured Doubt State Postulate / Tiên đề Trạng thái Nghi ngờ Có Cấu trúc / VVV-EQM
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** framework
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **GitHub:** https://github.com/AIhugART/  
 **Date:** 2026-05-12  
-**Status:** Proposal â€” Registration class D  
-**Lineage:** gap/ (BIAN-11) â†’ category/ (Category 15) â†’ framework/ (E16)
+**Status:** Proposal — Registration class D  
+**Lineage:** gap/ (BIAN-11) → category/ (Category 15) → framework/ (E16)
 
 ---
 
 ## 1. Postulate Statement
 
 **English:**
-> The registering system's K-side state when facing a quantum system in superposition before measurement is a formally distinct registration category: Structured Registration-Doubt State (SDS). SDS is not ignorance (the registering system encodes the superposition structure including off-diagonal coherences), not certainty (no eigenvalue is determined), but a structurally bounded, coherent indeterminacy. SDS cannot be reduced to a classical probability distribution over hidden variables â€” it is a VVV-QMRF registration-layer description of the pre-measurement situation.
+> The registering system's K-side state when facing a quantum system in superposition before measurement is a formally distinct registration category: Structured Registration-Doubt State (SDS). SDS is not ignorance (the registering system encodes the superposition structure including off-diagonal coherences), not certainty (no eigenvalue is determined), but a structurally bounded, coherent indeterminacy. SDS cannot be reduced to a classical probability distribution over hidden variables — it is a VVV-QMRF registration-layer description of the pre-measurement situation.
 
 **Vietnamese:**
-> Tráº¡ng thÃ¡i táº§ng K cá»§a há»‡ ghi nháº­n khi Ä‘á»‘i máº·t vá»›i há»‡ lÆ°á»£ng tá»­ trong chá»“ng cháº­p trÆ°á»›c Ä‘o lÃ  pháº¡m trÃ¹ ghi nháº­n riÃªng biá»‡t: Tráº¡ng thÃ¡i Nghi ngá» Ghi nháº­n CÃ³ Cáº¥u trÃºc (SDS). SDS khÃ´ng pháº£i vÃ´ tri (há»‡ ghi nháº­n mÃ£ hÃ³a cáº¥u trÃºc chá»“ng cháº­p ká»ƒ cáº£ cÃ¡c sá»‘ háº¡ng ngoÃ i Ä‘Æ°á»ng chÃ©o), khÃ´ng pháº£i cháº¯c cháº¯n (chÆ°a cÃ³ eigenvalue), mÃ  lÃ  báº¥t Ä‘á»‹nh máº¡ch láº¡c cÃ³ ranh giá»›i. SDS khÃ´ng thá»ƒ rÃºt gá»n vá» phÃ¢n phá»‘i xÃ¡c suáº¥t cá»• Ä‘iá»ƒn â€” nÃ³ lÃ  mÃ´ táº£ táº§ng ghi nháº­n VVV-QMRF.
+> Trạng thái tầng K của hệ ghi nhận khi đối mặt với hệ lượng tử trong chồng chập trước đo là phạm trù ghi nhận riêng biệt: Trạng thái Nghi ngờ Ghi nhận Có Cấu trúc (SDS). SDS không phải vô tri (hệ ghi nhận mã hóa cấu trúc chồng chập kể cả các số hạng ngoài đường chéo), không phải chắc chắn (chưa có eigenvalue), mà là bất định mạch lạc có ranh giới. SDS không thể rút gọn về phân phối xác suất cổ điển — nó là mô tả tầng ghi nhận VVV-QMRF.
 
 ---
 
@@ -26,7 +27,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 QM has no formal registration category for "what is encoded on the registering side before measurement?" The superposition state $|\psi\rangle$ describes the system, but the registering system's K-side suspension is left implicit. This connects to the hidden-variable debate only as a boundary contrast: SDS is not classical ignorance about a pre-existing hidden value.
 
-*Saá¹ƒÅ›aya* (Doubt) in Buddhist Epistemology: an epistemic suspension that motivates inquiry toward certainty. In this framework, it is used only as a bounded source analogue for structured non-determination. It does not require a binary or equal-weight alternative set.
+*Saṃśaya* (Doubt) in Buddhist Epistemology: an epistemic suspension that motivates inquiry toward certainty. In this framework, it is used only as a bounded source analogue for structured non-determination. It does not require a binary or equal-weight alternative set.
 
 E16 establishes SDS as the VVV-QMRF registration-layer counterpart. The registering system facing $|\psi\rangle = \sum_i c_i |\lambda_i\rangle$ encodes the outcome alternatives $\{\lambda_i\}$, probability weights $\{p_i = |c_i|^2\}$, and coherence relations $\{c_i c_j^*\}_{i \ne j}$. This is richer than classical ignorance, but remains a derived registration-layer category rather than a canonical QM postulate.
 
@@ -35,28 +36,28 @@ E16 establishes SDS as the VVV-QMRF registration-layer counterpart. The register
 ## 3. Formal Sketch
 
 ```
-Classical ignorance: P(Î»áµ¢) = páµ¢ (probability over hidden-variable-style alternatives)
-  â†’ density matrix: Ï = Î£áµ¢ páµ¢ |Î»áµ¢âŸ©âŸ¨Î»áµ¢|  (diagonal only)
+Classical ignorance: P(λᵢ) = pᵢ (probability over hidden-variable-style alternatives)
+  → density matrix: ρ = Σᵢ pᵢ |λᵢ⟩⟨λᵢ|  (diagonal only)
 
 SDS (quantum coherent indeterminacy):
-  Ï = |ÏˆâŸ©âŸ¨Ïˆ| = Î£áµ¢â±¼ cáµ¢câ±¼* |Î»áµ¢âŸ©âŸ¨Î»â±¼|  (includes off-diagonal)
+  ρ = |ψ⟩⟨ψ| = Σᵢⱼ cᵢcⱼ* |λᵢ⟩⟨λⱼ|  (includes off-diagonal)
   
   Registering system encodes:
-    - Outcome alternatives {Î»áµ¢}       âœ…
-    - Probability weights {páµ¢ = |cáµ¢|Â²} âœ…  
-    - Coherences {cáµ¢câ±¼* for iâ‰ j}       âœ…  â† absent in classical ignorance
-    - Which Î» will actualize          âœ—  (structurally indeterminate)
+    - Outcome alternatives {λᵢ}       ✅
+    - Probability weights {pᵢ = |cᵢ|²} ✅  
+    - Coherences {cᵢcⱼ* for i≠j}       ✅  ← absent in classical ignorance
+    - Which λ will actualize          ✗  (structurally indeterminate)
 
 SDS vs. classical: interference experiments
   Double-slit: SDS produces interference (off-diagonal terms matter)
   Classical ignorance: no interference (diagonal only)
-  â†’ SDS is empirically distinguishable from classical ignorance âœ…
+  → SDS is empirically distinguishable from classical ignorance ✅
 
 Bell argument:
   Hidden variables claim: SDS = classical ignorance of HV
-  Bell theorem: this claim requires |âŸ¨CHSHâŸ©| â‰¤ 2
-  Experiment: |âŸ¨CHSHâŸ©| = 2âˆš2 > 2
-  â†’ Bell-type constraints block reducing SDS to local hidden-variable ignorance under standard assumptions âœ…
+  Bell theorem: this claim requires |⟨CHSH⟩| ≤ 2
+  Experiment: |⟨CHSH⟩| = 2√2 > 2
+  → Bell-type constraints block reducing SDS to local hidden-variable ignorance under standard assumptions ✅
 ```
 
 ---
@@ -64,8 +65,8 @@ Bell argument:
 ## 4. Architectural Position
 
 ```
-E15 (IRB) â€” entanglement as intrinsic relation (system structure)
- â””â†’ E16 (SDS) â† THIS POSTULATE
+E15 (IRB) — entanglement as intrinsic relation (system structure)
+ └→ E16 (SDS) ← THIS POSTULATE
        E16: the registering system's K-side structured suspension before measurement
        E6 (Registering-System-as-Process) + E16 (SDS) + E15 (IRB):
          registration-layer architecture for registering-system/system relation
@@ -87,8 +88,8 @@ E15 (IRB) â€” entanglement as intrinsic relation (system structure)
 
 | Buddhist concept | Value |
 |-----------------|-------|
-| Saá¹ƒÅ›aya | Doubt â€” epistemic suspension that motivates inquiry toward certainty; bounded source analogue only |
-| Contrasted with | Ignorance (avidyÄ), Certainty (niÅ›caya), Error (bhrÄnti) |
+| Saṃśaya | Doubt — epistemic suspension that motivates inquiry toward certainty; bounded source analogue only |
+| Contrasted with | Ignorance (avidyā), Certainty (niścaya), Error (bhrānti) |
 
 ---
 
@@ -98,10 +99,21 @@ E15 (IRB) â€” entanglement as intrinsic relation (system structure)
 |---|---|
 | "SDS contains off-diagonal coherences absent in classical" | **M** |
 | "Bell-type constraints block reducing SDS to local hidden-variable ignorance under standard assumptions" | **M / QM-only support** |
-| "Saá¹ƒÅ›aya is a bounded source analogue for SDS" | **M** |
+| "Saṃśaya is a bounded source analogue for SDS" | **M** |
 | "SDS is a VVV-QMRF registration-layer category" | **D** |
 
 ---
 
 *Source: category/vvv_qmrf_category_15_e16_pre_measurement_registration_indeterminacy.md, framework/vvv_qmrf_framework_e15_intrinsic_relational_binding_postulate.md, BIAN_index_SOT.md*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `framework` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

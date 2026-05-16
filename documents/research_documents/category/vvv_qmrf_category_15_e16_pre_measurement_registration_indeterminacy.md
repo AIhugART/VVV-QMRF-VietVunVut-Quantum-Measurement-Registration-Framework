@@ -268,6 +268,19 @@ Nếu thiếu điều kiện hợp lệ, claim phải bị hạ xuống Medium, 
 
 ## 9. Mermaid Diagram Map / Sơ đồ Mermaid
 
+### 9.1 Local Arrow Semantics / Quy ước mũi tên local
+
+This table explains only the arrows used in this diagram. It follows the broader Arrow Semantics rule in `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+Bảng này chỉ giải thích các mũi tên dùng trong sơ đồ này. Nó tuân theo quy tắc Arrow Semantics rộng hơn trong `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+| Diagram arrow label | Local meaning | Must not imply |
+|---|---|---|
+| `source-lineage / analogy` | The Buddhist Epistemology source supplies bounded source lineage or structural analogy for the VVV-QMRF registration category. | Direct identity between Buddhist ontology and Quantum Mechanics. |
+| `physical or operational support` | Standard Quantum Mechanics supplies the physical or operational substrate that the registration category analyzes. | Replacement or modification of Standard Quantum Mechanics probability or state-update rules. |
+| `formalizes` | The proposed VVV-QMRF notation formalizes the registration-layer category. | A canonical Quantum Mechanics operator or experimentally validated physical mechanism by itself. |
+| Unlabeled category-to-boundary arrow | The category must be read under its RCA boundary. | Boundary-free application outside the stated registration conditions. |
+
 ```mermaid
 flowchart TD
     subgraph BE["Buddhist Epistemology source layer"]

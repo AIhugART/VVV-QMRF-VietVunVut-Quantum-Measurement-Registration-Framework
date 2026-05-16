@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -112,7 +113,7 @@ E4  Tầng trước ký hiệu
 E5  Mã hóa nội bộ
 E6  Hệ ghi nhận như quá trình
 E7  Chứng nhận hai pha
-E8  Ghi đè hồi tố bản ghi sai
+E8  Ghi đè hồi tố bản ghi không hợp lệ
 E9  Sự kiện ghi nhận rỗng
 E10 Điều kiện hợp lệ ba phần
 E11 Bằng chứng tương phản
@@ -149,7 +150,7 @@ Nếu ví phép đo như một nhà ga, thì `ρ` là đoàn tàu vật lý, `M`
 
 Không nói:
 
-> VVV-QMRF chứng minh "Buddhist Epistemology" thay thế "Quantum Mechanics".
+> VVV-QMRF nói "Buddhist Epistemology" thay thế "Quantum Mechanics".
 
 Nói đúng hơn:
 

@@ -1,22 +1,23 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# Formal Registration Category: Intrinsic Relational Binding / Entanglement - registration Architecture
+# Formal Registration Category: Intrinsic Relational Binding / Non-Classical Correlation Architecture
 # Phạm trù Ghi nhận: Liên kết Quan hệ Nội tại / Kiến trúc Tương quan Phi cổ điển
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Date:** 2026-05-12
 **Status:** Proposal — Registration class D
 **Lineage:** gap/ (BIAN-10) → category/ (Category 14) → framework/ (E15)
 
-> **Context:** This document formally establishes a new VVV-QMRF registration category for QM to resolve structural gap **BIAN-10**. BIAN-10 highlights QM's lack of a formal registration framework for Entanglement - registration as a VVV-QMRF extension outside the scope of Dharmakīrti's two recognized *svabhāvapratibandha* types: *tadutpatti* and *tādātmya*.
+> **Context:** This document formally establishes a new VVV-QMRF registration category for QM to resolve structural gap **BIAN-10**. BIAN-10 highlights QM's lack of a formal VVV-QMRF relation category for non-classical correlation architecture outside the scope of Dharmakīrti's two recognized *svabhāvapratibandha* types: *tadutpatti* and *tādātmya*.
 
 ---
 
 ## 1. Category Identity
 
-* **English Name:** Intrinsic Relational Binding / Entanglement - registration Architecture (IRB)
+* **English Name:** Intrinsic Relational Binding / Non-Classical Correlation Architecture (IRB)
 * **Vietnamese Name:** Liên kết Quan hệ Nội tại / Kiến trúc Tương quan Phi cổ điển
 * **Buddhist Source Analogue:** *Svabhāvapratibandha* (Essential connection; source concept for analogy, not a claim that IRB is a classical Dharmakīrti subtype)
 * **Node:** N_BE_00021
@@ -57,19 +58,19 @@ Dharmakīrti's recognized svabhāvapratibandha types and VVV-QMRF extension:
 
 ## 4. Foundational Implications / Ý nghĩa Nền tảng
 
-BIAN-10 resolution: Intrinsic Relational Binding / Entanglement-registration Architecture supplies the missing registration-layer category for QM has the mathematics of entanglement but no VVV-QMRF registration relation category that names it as non-causal and non-identity intrinsic binding. Formalizing IRB has three bounded implications:
+BIAN-10 resolution: Intrinsic Relational Binding / Non-Classical Correlation Architecture supplies the missing registration-layer category for QM has the mathematics of entanglement but no VVV-QMRF registration relation category that names it as non-causal and non-identity intrinsic binding. Formalizing IRB has three bounded implications:
 
 1. It names entanglement as a registration relation category, not merely a physical curiosity.
 2. It preserves Dharmakīrti's two-type taxonomy by marking IRB as a VVV extension.
 3. It explains local-hidden-variable failure under standard Bell assumptions through Bell violation, not by saying all local theories are causal only.
 
-> **Conclusion:** Intrinsic Relational Binding / Entanglement-registration Architecture resolves BIAN-10 only as a VVV-QMRF registration-layer category. It preserves the standard QM substrate while adding the missing K-side classification and validity boundary.
+> **Conclusion:** Intrinsic Relational Binding / Non-Classical Correlation Architecture resolves BIAN-10 only as a VVV-QMRF registration-layer category. It preserves the standard QM substrate while adding the missing K-side classification and validity boundary.
 
 ---
 
 ## 5. RCA Concept Traceability Matrix / Bảng Truy vết RCA Khái niệm
 
-**Purpose / Mục đích:** This table records traceability for the main concepts used in this category. It separates direct SOT evidence, framework-derived proposals, QM-only support, and boundary-sensitive applications so that Intrinsic Relational Binding / Entanglement-registration Architecture is not confused with ordinary canonical QM or with an unrestricted Buddhist equivalence.
+**Purpose / Mục đích:** This table records traceability for the main concepts used in this category. It separates direct SOT evidence, framework-derived proposals, QM-only support, and boundary-sensitive applications so that Intrinsic Relational Binding / Non-Classical Correlation Architecture is not confused with ordinary canonical QM or with an unrestricted Buddhist equivalence.
 
 **RCA labels / Nhãn RCA:**
 - **Strong:** direct node/edge or SOT evidence exists.
@@ -83,18 +84,18 @@ BIAN-10 resolution: Intrinsic Relational Binding / Entanglement-registration Arc
 | Claim anchor | Concept | Evidence / Bằng chứng truy vết | Node code | Edge code | RCA label | Boundary / Fix note |
 |---|---|---|---|---|---|---|
 | §1-§2 | BIAN-10 / gap diagnosis | BIAN SOT resolves this gap through Category 14 + E15. | N_BE_00021; support: N_BE_00100 | ED_BE_00012 | Strong / No node | Gap diagnosis is not by itself an empirical proof; it identifies the missing registration category. |
-| §1-§2 | Intrinsic Relational Binding / Entanglement-registration Architecture | VVV-QM RCA assigns the category support in node_QM_VVV. | N_QM_VVV_00025 | — | Derived | Framework category; not a canonical QM postulate unless independently validated. |
+| §1-§2 | Intrinsic Relational Binding / Non-Classical Correlation Architecture | VVV-QM RCA assigns the category support in node_QM_VVV. | N_QM_VVV_00025 | — | Derived | Framework category; not a canonical QM postulate unless independently validated. |
 | §1 | BE source analogue | *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types | N_BE_00021; support: N_BE_00100 | ED_BE_00012 | Medium | Source lineage or analogy; do not collapse BE ontology into QM physics. |
 | §2-§3 | QM substrate | tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions | N_QM_00045; N_QM_00046; N_QM_00047; N_QM_00090; N_QM_00091 | ED_QM_00053; ED_QM_00054; ED_QM_00055; ED_QM_00103; ED_QM_00104 | QM-only | Canonical QM supports the physical substrate, not the whole VVV-QMRF category. |
 | §3 | Formal symbol / operator | Entanglement Relation Tensor `𝓔_svabh` | N_QM_VVV_00025 | — | Derived | Framework notation; do not cite as a source-system operator. |
-| §4 | Category implication | Classify entanglement-registration as IRB: an extension relation supported by Bell-nonlocal correlations but not reducible to Dharmakīrti's classical causal or identity types. | N_QM_VVV_00025 | — | Medium | Valid only within the stated registration-layer boundary. |
+| §4 | Category implication | Classify non-classical correlation architecture as IRB: an extension relation supported by entanglement and Bell-nonlocal correlations but not reducible to Dharmakīrti's classical causal or identity types. | N_QM_VVV_00025 | — | Medium | Valid only within the stated registration-layer boundary. |
 | §4 | Overclaim risk | not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation | — | — | Overclaim | Keep wording conditional and registration-layer specific. |
 
 ### 5.1. RCA Summary / Tóm tắt RCA
 
 1. **BIAN-10 is a structural gap, not a direct physical discovery.** The gap identifies missing registration architecture.
 2. **The BE source is bounded.** *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types anchors the analogy or source lineage, but does not automatically become a QM mechanism.
-3. **The QM substrate is real but insufficient.** tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions provides support, while Intrinsic Relational Binding / Entanglement-registration Architecture names the added K-side layer.
+3. **The QM substrate is real but insufficient.** tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions provides support, while Intrinsic Relational Binding / Non-Classical Correlation Architecture names the added K-side layer.
 4. **The VVV node(s) are derived.** N_QM_VVV_00025 belong to the framework proposal and should be labeled as derived unless later validated.
 5. **Boundary control is mandatory.** The main overclaim to avoid is: not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation.
 
@@ -102,7 +103,7 @@ BIAN-10 resolution: Intrinsic Relational Binding / Entanglement-registration Arc
 
 #### 5.2.1 Define — observed issue / Xác định vấn đề
 
-**Symptom:** The old formulation can make Intrinsic Relational Binding / Entanglement-registration Architecture look like either ordinary QM vocabulary or a direct Buddhist-QM equivalence.
+**Symptom:** The old formulation can make Intrinsic Relational Binding / Non-Classical Correlation Architecture look like either ordinary QM vocabulary or a direct Buddhist-QM equivalence.
 
 **Cause:** The category document did not fully separate BE source support, canonical QM substrate, VVV-QMRF derived formalism, and boundary-sensitive claims.
 
@@ -123,7 +124,7 @@ BIAN-10 resolution: Intrinsic Relational Binding / Entanglement-registration Arc
 Use this bounded formulation when precision is required:
 
 ```text
-Intrinsic Relational Binding / Entanglement-registration Architecture = a VVV-QMRF registration-layer category for BIAN-10.
+Intrinsic Relational Binding / Non-Classical Correlation Architecture = a VVV-QMRF registration-layer category for BIAN-10.
 BE source: *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types.
 QM substrate: tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions.
 VVV formalism: Entanglement Relation Tensor `𝓔_svabh` / N_QM_VVV_00025.
@@ -137,7 +138,7 @@ The ambiguity is removed if every use of Category 14 distinguishes:
 ```text
 BE source analogue = *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types.
 QM substrate = tensor product space, product-state contrast, entanglement, Bell correlations, hidden-variable exclusion under standard Bell assumptions.
-VVV-QMRF category = Intrinsic Relational Binding / Entanglement-registration Architecture.
+VVV-QMRF category = Intrinsic Relational Binding / Non-Classical Correlation Architecture.
 Formal symbol = Entanglement Relation Tensor `𝓔_svabh`.
 Boundary = not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation.
 ```
@@ -173,7 +174,7 @@ Prototype IRB instance:
 ```text
 gap/BIAN-10
   ↓ diagnoses missing registration structure
-category/Category 14 — Intrinsic Relational Binding / Entanglement-registration Architecture
+category/Category 14 — Intrinsic Relational Binding / Non-Classical Correlation Architecture
   ↓ specifies detailed category and boundary conditions
 framework/E15
   ↓ installs the rule into VVV-QMRF postulate architecture
@@ -193,11 +194,11 @@ VVV-QMRF registration-state update layer
 
 ## 6. Assertion Level / Mức Khẳng định
 
-| Component EN | Thành phần VN | Epistemic class | Evidence / Boundary |
+| Component EN | Thành phần VN | RCA assertion class | Evidence / Boundary |
 |---|---|---|---|
 | BE source supports the category lineage | Nguồn BE hỗ trợ dòng nguồn của phạm trù | **M** — source-supported | N_BE_00021; support: N_BE_00100; ED_BE_00012. |
 | QM provides the physical substrate | QM cung cấp nền vật lý | **M / QM-only** | N_QM_00045; N_QM_00046; N_QM_00047; N_QM_00090; N_QM_00091; ED_QM_00053; ED_QM_00054; ED_QM_00055; ED_QM_00103; ED_QM_00104. |
-| Intrinsic Relational Binding / Entanglement-registration Architecture is a VVV-QMRF category | Liên kết Quan hệ Nội tại / Kiến trúc Tương quan Phi cổ điển là phạm trù VVV-QMRF | **D** — framework-derived | N_QM_VVV_00025; E15. |
+| Intrinsic Relational Binding / Non-Classical Correlation Architecture is a VVV-QMRF category | Liên kết Quan hệ Nội tại / Kiến trúc Tương quan Phi cổ điển là phạm trù VVV-QMRF | **D** — framework-derived | N_QM_VVV_00025; E15. |
 | Entanglement Relation Tensor `𝓔_svabh` formalizes the category | Entanglement Relation Tensor `𝓔_svabh` hình thức hóa phạm trù | **D** — notation-derived | Framework notation, not a canonical source-system operator. |
 | The category resolves BIAN-10 | Phạm trù giải quyết BIAN-10 | **D / M** — bounded resolution | Resolution holds at registration-layer architecture level. |
 | Boundary-free reading of the category | Cách đọc không ranh giới về phạm trù | **O** — overclaim | not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation. |
@@ -208,7 +209,7 @@ VVV-QMRF registration-state update layer
 
 ## 7. What Category 14 / E15 Does NOT Claim / Những gì Category 14 / E15 KHÔNG tuyên bố
 
-1. **Not a canonical QM replacement** — Intrinsic Relational Binding / Entanglement-registration Architecture is a VVV-QMRF registration-layer proposal built beside standard QM support.
+1. **Not a canonical QM replacement** — Intrinsic Relational Binding / Non-Classical Correlation Architecture is a VVV-QMRF registration-layer proposal built beside standard QM support.
    *Không thay thế QM chuẩn; đây là tầng ghi nhận VVV-QMRF đặt bên cạnh nền vật lý QM.*
 
 2. **Not unrestricted equivalence with the BE source** — *Svabhāvapratibandha* source analogy, preserving Dharmakīrti's two classical types supplies source-lineage or analogy only within the stated boundary.
@@ -259,6 +260,19 @@ Nếu thiếu điều kiện hợp lệ, claim phải bị hạ xuống Medium, 
 
 ## 9. Mermaid Diagram Map / Sơ đồ Mermaid
 
+### 9.1 Local Arrow Semantics / Quy ước mũi tên local
+
+This table explains only the arrows used in this diagram. It follows the broader Arrow Semantics rule in `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+Bảng này chỉ giải thích các mũi tên dùng trong sơ đồ này. Nó tuân theo quy tắc Arrow Semantics rộng hơn trong `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+| Diagram arrow label | Local meaning | Must not imply |
+|---|---|---|
+| `source-lineage / analogy` | The Buddhist Epistemology source supplies bounded source lineage or structural analogy for the VVV-QMRF registration category. | Direct identity between Buddhist ontology and Quantum Mechanics. |
+| `physical or operational support` | Standard Quantum Mechanics supplies the physical or operational substrate that the registration category analyzes. | Replacement or modification of Standard Quantum Mechanics probability or state-update rules. |
+| `formalizes` | The proposed VVV-QMRF notation formalizes the registration-layer category. | A canonical Quantum Mechanics operator or experimentally validated physical mechanism by itself. |
+| Unlabeled category-to-boundary arrow | The category must be read under its RCA boundary. | Boundary-free application outside the stated registration conditions. |
+
 ```mermaid
 flowchart TD
     subgraph BE["Buddhist Epistemology source layer"]
@@ -270,7 +284,7 @@ flowchart TD
     end
 
     subgraph VVV["VVV-QMRF Registration Layer"]
-        CAT["Category 14 / E15<br/>Intrinsic Relational Binding / Entanglement-registration Architecture"]
+        CAT["Category 14 / E15<br/>Intrinsic Relational Binding / Non-Classical Correlation Architecture"]
         SYM["Entanglement Relation Tensor `𝓔_svabh`"]
         BOUND["RCA boundary<br/>not a third classical Dharmakīrti subtype, not a hidden signal, and not a causal explanation for Bell violation"]
     end
@@ -284,3 +298,15 @@ flowchart TD
 ---
 
 *Source: BIAN_index_SOT.md (BIAN-10), system_be_full.md (N_BE_00021), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00025), academic taxonomy note cited in the original file*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -5,6 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Current Filename: vvv_qmrf_meta_architecture_wigners_friend_registration_layer_mapping.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** meta_architecture
 **Phase:** Experimental Design Phase
 **Status:** Initial Draft (v0.1)
 
@@ -70,3 +71,15 @@ There is no contradiction at the registration layer.
 *   In $\mathcal{K}_W$, the result is registered at $t_2$ when $\sigma(I_W) = 1$.
 
 This is a K-side registration mapping, not a new physical collapse law. It reframes the location of registration validity and does not claim to solve the $\rho$-side physical superposition problem.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
+| Source traceability | Review required | Add an explicit source corpus before publication reuse. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -35,7 +36,7 @@ Sau bài này, các em có thể:
 
 ## 2. RCA Learning Problem
 
-**RCA focus:** RCA: lỗi gốc mà E10 xử lý
+**RCA focus:** RCA: vấn đề gốc mà E10 xử lý
 
 ### Define / Trace / Isolate / Fix / Verify
 
@@ -44,7 +45,7 @@ Sau bài này, các em có thể:
 **5 Whys ngắn:**
 
 1. Vì sao dễ nghĩ vậy? Vì màn hình thường cho ta cảm giác kết quả đã xong.
-2. Vì sao chưa đủ? Vì kết quả có thể sai bối cảnh, sai điều kiện hoặc bị mâu thuẫn.
+2. Vì sao chưa đủ? Vì kết quả có thể không khớp bối cảnh, không đúng điều kiện hoặc bị mâu thuẫn.
 3. Vì sao cần điều kiện hợp lệ? Vì khoa học cần bản ghi có thể kiểm tra và dùng được.
 4. Vì sao cần ba phần? Vì một bản ghi hợp lệ cần đúng nơi, đúng kiểu bằng chứng và không bị phản chứng phá vỡ.
 5. Gốc vấn đề là gì? Thiếu bộ điều kiện kiểm tra **registration validity**.
@@ -59,9 +60,9 @@ Một điểm số hợp lệ cần ít nhất:
 
 1. Đúng học sinh.
 2. Đúng bài kiểm tra.
-3. Không bị phát hiện lỗi chấm hoặc nhập nhầm.
+3. Không bị phát hiện lệch điều kiện chấm hoặc nhập nhầm.
 
-Nếu điểm 9 là của bạn khác, thì điểm đó không hợp lệ với em. Nếu điểm 9 là bài Toán nhưng nhập vào môn Văn, cũng không hợp lệ. Nếu sau đó phát hiện máy chấm lỗi, lại càng cần kiểm tra.
+Nếu điểm 9 là của bạn khác, thì điểm đó không hợp lệ với em. Nếu điểm 9 là bài Toán nhưng nhập vào môn Văn, cũng không hợp lệ. Nếu sau đó phát hiện máy chấm không khớp điều kiện, lại càng cần kiểm tra.
 
 E10 đưa ra một ma trận hợp lệ ba phần cho bản ghi đo lường.
 
@@ -152,7 +153,7 @@ D. Vì toán học không cần kiểm tra
 
 **Câu 4.** Ví dụ điểm kiểm tra giúp hiểu gì?
 
-A. Điểm phải đúng học sinh, đúng bài và không bị lỗi
+A. Điểm phải đúng học sinh, đúng bài và không lệch điều kiện
 B. Điểm số là detector
 C. Học sinh là hạt photon
 D. Bài kiểm tra sửa "Born rule"

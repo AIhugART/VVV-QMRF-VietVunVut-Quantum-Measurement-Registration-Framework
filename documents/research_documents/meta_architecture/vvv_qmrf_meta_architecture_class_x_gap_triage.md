@@ -8,6 +8,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Current Filename: vvv_qmrf_meta_architecture_class_x_gap_triage.md
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
+**Document type:** meta_architecture
 **Date:** 2026-05-11  
 **Author:** VietVunVut (Viet - Nguyen Xuan)  
 **Cite:** VVV-QMRF §GCS-X  
@@ -383,3 +384,15 @@ structured suspension that motivates inquiry, not a binary/equal-weight state.
 ---
 
 *Evidence chain: GCS §6 → 4 former Class X gaps → apply GCS Decision Test → 3 reclassified C, 1 reclassified A via Cat 12 + E13. Status: Class D (Derived).*
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

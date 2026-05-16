@@ -1,5 +1,9 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
+> **DISCLAIMER / CẢNH BÁO:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
+>
+> VVV-QMRF là nghiên cứu cá nhân độc lập ở Class D, không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế. Giao thức giới hạn đầy đủ: `DISCLAIMER.md`.
+
 # VVV-QMRF Schema Guide — LLM-Friendly Document Creation Contract
 # Hướng dẫn Schema VVV-QMRF — Khế ước Tạo Tài liệu Thân thiện cho LLM
 
@@ -9,6 +13,12 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** `documents/research_documents/`, `documents/course-highschool-vvv-qmrf/`, and future VVV-QMRF research or educational documents  
 **Primary purpose:** Create new VVV-QMRF documents and educational lessons that are structurally complete, traceable to SOT, and safe against overclaiming.  
 **Mục đích chính:** Tạo tài liệu VVV-QMRF và bài học giáo dục mới sao cho đủ cấu trúc, truy vết được về "SOT", và tránh khẳng định quá mức.
+
+## 0.0 Neutral Wording Protocol / Quy tắc Diễn đạt Trung tính
+
+**EN:** Do not use negatively evaluative wording such as "logical fallacy", "Classical analogy mistake", "mistake", "wrong", "false", or "error" when explaining Standard Quantum Mechanics, educational analogies, or VVV-QMRF boundaries. Use neutral boundary language such as "category boundary", "scope boundary", "interpretive boundary", "not implied by this analogy", or "registration-layer distinction". Standard Quantum Mechanics must not be framed as logically defective; VVV-QMRF may only identify registration-layer scope gaps unless a separate physical equation and external validation are supplied.
+
+**VN:** Không dùng các từ mang nghĩa đánh giá tiêu cực như "logical fallacy", "Classical analogy mistake", "mistake", "wrong", "false", hoặc "error" khi giải thích "Standard Quantum Mechanics", ví dụ giáo dục, hoặc ranh giới VVV-QMRF. Hãy dùng ngôn ngữ ranh giới trung tính như "category boundary", "scope boundary", "interpretive boundary", "not implied by this analogy", hoặc "registration-layer distinction". Không trình bày "Standard Quantum Mechanics" như có lỗi logic; VVV-QMRF chỉ được nêu khoảng trống phạm vi ở tầng ghi nhận, trừ khi có phương trình vật lý riêng và kiểm chứng bên ngoài.
 
 ---
 
@@ -880,6 +890,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; [active source path]
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
 **Formula boundary:** Symbols, if present, are teaching notation unless explicitly classified as formal VVV-QMRF notation.
+**Neutral wording boundary:** Standard Quantum Mechanics, analogies, and VVV-QMRF boundaries are described with neutral boundary language.
 
 ## 1. Learning Objectives / Mục tiêu bài học
 
@@ -913,7 +924,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 * Reader level is declared.
 * Source trace is listed.
-* Claim boundary and formula boundary are stated.
+* Claim boundary, formula boundary, and neutral wording boundary are stated.
+* Standard Quantum Mechanics is described with neutral boundary language.
 * Analogies are marked as analogies, not proofs.
 ```
 

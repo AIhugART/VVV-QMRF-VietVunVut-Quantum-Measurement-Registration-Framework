@@ -57,6 +57,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 - Use bilingual English/Vietnamese where appropriate across project documents; keep technical terminology, formal claims, and publication-facing text in technically precise English; communicate with the user in Vietnamese, keep English technical terms inside quotation marks, and explain concepts at a high-school level.
 - Before creating or editing project files outside `documents/published_documents/`, check whether the file already starts with author metadata; if it does not, add this author metadata at the top: Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet. Do not add author metadata or author names to files under `documents/published_documents/`.
 - When creating any new VVV-QMRF research or educational document, follow `documents/research_documents/vvv-qmrf/schema_guide.md` as the document-creation contract for source hierarchy, claim class, boundaries, traceability, and verification rules.
+- Avoid negatively evaluative wording such as "logical fallacy", "Classical analogy mistake", "mistake", "wrong", "false", or "error" when explaining Standard Quantum Mechanics, educational analogies, or VVV-QMRF boundaries. Prefer neutral boundary language such as "category boundary", "scope boundary", "interpretive boundary", "not implied by this analogy", or "registration-layer distinction"; especially do not frame Standard Quantum Mechanics as logically defective.
 
 ### Terminology rules
 

@@ -449,3 +449,15 @@ Bước tiếp theo để tiến tới lý thuyết vật lý là phải xác đ
 ```
 
 Cho đến khi độ lệch đó được định nghĩa hình thức và có thể kiểm chứng bằng thí nghiệm, khung này phải ở trong ranh giới của diễn giải, bản thể luận, và nhận thức luận.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `mathematical_formula` for schema alignment. |
+| Source traceability | Review required | Add an explicit source corpus before publication reuse. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

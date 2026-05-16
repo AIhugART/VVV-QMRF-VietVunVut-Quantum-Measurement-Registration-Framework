@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -35,7 +36,7 @@ Sau bài này, các em có thể:
 
 ## 2. RCA Learning Problem
 
-**RCA focus:** RCA: lỗi gốc mà E5 xử lý
+**RCA focus:** RCA: vấn đề gốc mà E5 xử lý
 
 ### Define / Trace / Isolate / Fix / Verify
 
@@ -46,7 +47,7 @@ Sau bài này, các em có thể:
 1. Vì sao dễ tưởng vậy? Vì trên màn hình ta chỉ thấy kết quả đã hiển thị.
 2. Vì sao tín hiệu không đi thẳng? Vì máy hoặc hệ ghi nhận cần biến tín hiệu thành định dạng nội bộ.
 3. Vì sao cần định dạng nội bộ? Vì hệ chỉ xử lý được dữ liệu theo cấu trúc của nó.
-4. Vì sao điều này quan trọng? Vì cùng một tín hiệu thô có thể bị mã hóa đúng hoặc sai.
+4. Vì sao điều này quan trọng? Vì cùng một tín hiệu thô có thể được mã hóa khớp hoặc không khớp điều kiện.
 5. Gốc vấn đề là gì? Thiếu bước nối giữa **detector response** và **internal representation**.
 
 ---

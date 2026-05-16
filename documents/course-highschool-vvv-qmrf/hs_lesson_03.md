@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -43,7 +44,7 @@ Sau bài này, các em có thể:
 
 **5 Whys ngắn:**
 
-1. Vì sao dễ hiểu sai? Vì chữ "postulate" nghe giống như đang xây một vật lý mới.
+1. Vì sao dễ hiểu quá mức? Vì chữ "postulate" nghe giống như đang xây một vật lý mới.
 2. Vì sao không được hiểu như vậy? Vì VVV-QMRF giữ nguyên lõi tính toán của "Quantum Mechanics".
 3. Vì sao cần nhắc bốn "postulates"? Để biết phần nào thuộc vật lý chuẩn.
 4. Vì sao cần tách tầng? Để không trộn xác suất vật lý với ghi nhận kết quả.

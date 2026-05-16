@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -39,7 +40,7 @@ Sau bài này, các em có thể:
 
 ## 2. RCA Learning Problem
 
-**RCA focus:** RCA: lỗi gốc thường gặp là gì?
+**RCA focus:** RCA: ranh giới gốc thường gặp là gì?
 
 ### Define / Trace / Isolate / Fix / Verify
 
@@ -50,7 +51,7 @@ Sau bài này, các em có thể:
 1. Vì sao dễ nhầm? Vì cả `ρ` và `K` đều thay đổi trong quá trình đo.
 2. Vì sao thay đổi giống nhau không có nghĩa là cùng loại? Vì một cái thuộc vật lý, một cái thuộc ghi nhận.
 3. Vì sao cần tách? Vì nếu trộn, ta sẽ tưởng VVV-QMRF sửa phương trình lượng tử.
-4. Vì sao điều này sai? Vì VVV-QMRF tự giới hạn ở tầng ghi nhận.
+4. Vì sao cách đọc đó vượt phạm vi? Vì VVV-QMRF tự giới hạn ở tầng ghi nhận.
 5. Gốc vấn đề là gì? Nhầm **state of the quantum system** với **state of registration**.
 
 ---

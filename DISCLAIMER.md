@@ -19,6 +19,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **VN:** VVV-QMRF xử lý một khoảng trống được đề xuất ở tầng ghi nhận: điều gì chứng nhận, phân loại, xác thực, hoặc phủ quyết một phép đo như một sự kiện đã được ghi nhận. Đây là câu hỏi kiến trúc phía K, không phải một định luật sụp đổ vật lý mới.
 
+**EN:** VVV-QMRF does not deny the existence of quantum superposition in the physical layer. When VVV-QMRF uses terms such as registration lock, collapse, or registration-state update, those terms should be read as K-side descriptions unless a separate ρ-side physical equation and experimental support are explicitly supplied. An un-updated K state should not be used by itself to infer either the presence or the absence of a physical superposition.
+
+**VN:** VVV-QMRF không phủ nhận sự tồn tại của quantum superposition ở tầng vật lý. Khi VVV-QMRF dùng các thuật ngữ như registration lock, collapse, hoặc registration-state update, các thuật ngữ đó phải được đọc như mô tả phía K, trừ khi có phương trình vật lý phía ρ riêng và hỗ trợ thực nghiệm được nêu rõ. Một trạng thái K chưa cập nhật tự nó không được dùng để suy ra có hoặc không có chồng chập vật lý.
+
 ## 3. Claim Status / Trạng thái Claim
 
 **EN:** Unless explicitly stated otherwise, VVV-QMRF categories, operators, postulates, lemmas, and notation are research proposals. The current framework should be treated as Registration Class D: derived, exploratory, and awaiting formal verification.
@@ -49,26 +53,30 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **VN:** Quy tắc tối thiểu: bất kỳ output bên ngoài hoặc output do AI tạo ra có chứa tên VVV-QMRF, claim, sơ đồ, ký hiệu, postulate, operator, category, hoặc phần giải thích suy ra từ VVV-QMRF đều phải có disclaimer nhìn thấy được hoặc nghe được.
 
+**EN:** Mandatory placement rule: unless technically impossible, the disclaimer must appear both before and after the VVV-QMRF content. “Before” means at the opening, top, title, first screen, first spoken segment, or first visible frame. “After” means at the closing, end card, footer, final spoken segment, final visible frame, concluding note, or ending metadata.
+
+**VN:** Quy tắc vị trí bắt buộc: trừ khi bất khả thi về mặt kỹ thuật, disclaimer phải xuất hiện cả trước lẫn sau nội dung VVV-QMRF. “Trước” nghĩa là ở phần mở đầu, đầu trang, tiêu đề, màn hình đầu, câu đọc đầu, hoặc khung hình đầu. “Sau” nghĩa là ở phần kết, end card, chân trang, câu đọc cuối, khung hình cuối, ghi chú kết, hoặc metadata cuối.
+
 ### 5.1 Short-output rule / Quy tắc output ngắn
 
-**EN:** For short outputs, single images, thumbnails, captions, short prompts, short audio clips, short videos, single slides, or outputs where full text is not practical, display or speak this warning near the content:
+**EN:** For short outputs, single images, thumbnails, captions, short prompts, short audio clips, short videos, single slides, or outputs where full text is not practical, display or speak this warning immediately before and immediately after the content whenever the medium allows. If only one direct placement is technically possible, place it before the content and repeat it in the nearest available caption, footer, metadata, description, or adjacent note:
 
 > **DISCLAIMER:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use.
 
-**VN:** Với output ngắn, ảnh đơn, thumbnail, caption, prompt ngắn, audio ngắn, video ngắn, slide đơn, hoặc output không tiện chứa bản đầy đủ, phải hiển thị hoặc đọc cảnh báo này gần nội dung:
+**VN:** Với output ngắn, ảnh đơn, thumbnail, caption, prompt ngắn, audio ngắn, video ngắn, slide đơn, hoặc output không tiện chứa bản đầy đủ, phải hiển thị hoặc đọc cảnh báo này ngay trước và ngay sau nội dung khi medium cho phép. Nếu về mặt kỹ thuật chỉ đặt trực tiếp được một lần, phải đặt ở trước nội dung và lặp lại ở caption, footer, metadata, description, hoặc ghi chú gần nhất có thể:
 
 > **CẢNH BÁO:** VVV-QMRF là nghiên cứu cá nhân độc lập ở Class D, không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
 
 ### 5.2 Standard-output rule / Quy tắc output trung bình
 
-**EN:** For medium-length summaries, lesson pages, scripts, slide decks, video descriptions, audio show notes, or generated explanations, include at least the short warning plus these four points:
+**EN:** For medium-length summaries, lesson pages, scripts, slide decks, video descriptions, audio show notes, or generated explanations, include at least the short warning both before and after the content, plus these four points:
 
 1. VVV-QMRF is a registration-layer research framework, not a standard physical theory.
 2. It does not replace, revise, or refute Standard Quantum Mechanics.
 3. Its current proposals are Registration Class D unless otherwise stated.
 4. It is not peer-reviewed, not experimentally validated, and not suitable for real-world technical decisions.
 
-**VN:** Với bản tóm tắt trung bình, trang bài học, kịch bản, slide deck, mô tả video, show notes audio, hoặc giải thích do AI tạo, phải có ít nhất cảnh báo ngắn cộng với bốn điểm sau:
+**VN:** Với bản tóm tắt trung bình, trang bài học, kịch bản, slide deck, mô tả video, show notes audio, hoặc giải thích do AI tạo, phải có ít nhất cảnh báo ngắn ở cả trước và sau nội dung, cộng với bốn điểm sau:
 
 1. VVV-QMRF là khung nghiên cứu tầng ghi nhận, không phải lý thuyết vật lý chuẩn.
 2. Nó không thay thế, không sửa, và không bác bỏ Standard Quantum Mechanics.
@@ -77,26 +85,26 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ### 5.3 Full-output rule / Quy tắc output lớn
 
-**EN:** For long-form notebooks, papers, PDFs, datasets, knowledge bases, transcripts, course packs, full videos, full podcasts, or public repositories, include this full `DISCLAIMER.md` text at the beginning, in a dedicated disclaimer appendix, or as a required source file. If the medium is audio or video, the short warning must be spoken or displayed at the beginning, and the full disclaimer must be included in the description, transcript, show notes, or attached source package.
+**EN:** For long-form notebooks, papers, PDFs, datasets, knowledge bases, transcripts, course packs, full videos, full podcasts, or public repositories, include this full `DISCLAIMER.md` text both at the beginning and again at the end, in a dedicated closing appendix, or as a required ending source block. If the medium is audio or video, the short warning must be spoken or displayed at both the beginning and the end, and the full disclaimer must be included in the description, transcript, show notes, or attached source package.
 
-**VN:** Với notebook dài, paper, PDF, dataset, knowledge base, transcript, course pack, video đầy đủ, podcast đầy đủ, hoặc repository công khai, phải đưa toàn bộ nội dung `DISCLAIMER.md` vào đầu tài liệu, vào phụ lục disclaimer riêng, hoặc dưới dạng source file bắt buộc. Nếu medium là audio hoặc video, cảnh báo ngắn phải được đọc hoặc hiển thị ở đầu, còn bản full disclaimer phải nằm trong mô tả, transcript, show notes, hoặc gói source đính kèm.
+**VN:** Với notebook dài, paper, PDF, dataset, knowledge base, transcript, course pack, video đầy đủ, podcast đầy đủ, hoặc repository công khai, phải đưa toàn bộ nội dung `DISCLAIMER.md` vào cả đầu lẫn cuối tài liệu, hoặc lặp lại ở phụ lục kết thúc, hoặc dưới dạng ending source block bắt buộc. Nếu medium là audio hoặc video, cảnh báo ngắn phải được đọc hoặc hiển thị ở cả đầu và cuối, còn bản full disclaimer phải nằm trong mô tả, transcript, show notes, hoặc gói source đính kèm.
 
 ### 5.4 Tool-specific rule / Quy tắc theo công cụ
 
 | Tool or medium | Required disclaimer behavior |
 |---|---|
-| NotebookLM / RAG / chatbot source set | Add `DISCLAIMER.md` as a source and require generated answers to preserve the boundary. |
-| Image generation | Put the short warning in the caption, alt text, metadata, prompt note, or adjacent description. If the image contains a text panel, include the short warning visibly. |
-| Video generation | Display the short warning in the opening card or first screen, and include the full disclaimer in the description or transcript. |
-| Audio generation / podcast | Speak the short warning at the beginning, and include the full disclaimer in show notes or transcript. |
-| Slide decks / teaching materials | Put the short warning on the title or overview slide, and include the full disclaimer in the appendix or source package. |
-| Public posts / social media | Include the short warning in the post body, caption, thread, or pinned follow-up. |
+| NotebookLM / RAG / chatbot source set | Add `DISCLAIMER.md` as a source and require generated answers to preserve the boundary, with disclaimer framing both the opening and the closing of the generated answer whenever formatting permits. |
+| Image generation | Put the short warning in the opening caption/title area and again in the ending caption/footer, alt text, metadata, prompt note, or adjacent description. If the image contains a text panel, include the short warning visibly before and after when layout permits. |
+| Video generation | Display the short warning in the opening card or first screen and repeat it in the closing card or last screen, and include the full disclaimer in the description or transcript. |
+| Audio generation / podcast | Speak the short warning at the beginning and again at the end, and include the full disclaimer in show notes or transcript. |
+| Slide decks / teaching materials | Put the short warning on the title or overview slide and repeat it on the final slide, and include the full disclaimer in the appendix or source package. |
+| Public posts / social media | Include the short warning at the opening of the post body, caption, or thread and repeat it at the end or in the pinned closing follow-up. |
 
 ### 5.5 Non-removal rule / Quy tắc không được gỡ bỏ
 
-**EN:** The disclaimer must not be cropped, hidden, summarized away, or separated from VVV-QMRF content in a way that makes the content appear to be validated Standard Quantum Mechanics.
+**EN:** The disclaimer must not be cropped, hidden, summarized away, or separated from VVV-QMRF content in a way that makes the content appear to be validated Standard Quantum Mechanics. Neither the opening disclaimer nor the closing disclaimer may be removed when the protocol requires both.
 
-**VN:** Không được cắt, che, tóm tắt mất, hoặc tách disclaimer khỏi nội dung VVV-QMRF theo cách làm cho nội dung trông như Standard Quantum Mechanics đã được kiểm chứng.
+**VN:** Không được cắt, che, tóm tắt mất, hoặc tách disclaimer khỏi nội dung VVV-QMRF theo cách làm cho nội dung trông như Standard Quantum Mechanics đã được kiểm chứng. Khi giao thức yêu cầu disclaimer ở cả đầu lẫn cuối, không được gỡ bỏ một trong hai đầu.
 
 ## 6. Interpretation Boundary / Ranh giới Diễn giải
 

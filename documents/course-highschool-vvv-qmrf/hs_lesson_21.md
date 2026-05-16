@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly VVV-QMRF course material.
 **Source trace:** `documents/research_documents/vvv-qmrf/schema_guide.md`; active VVV-QMRF course/research materials in this repository.
 **Claim boundary:** This lesson is an educational interpretation of VVV-QMRF terminology; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** Simplified concepts in this lesson mark registration-layer distinctions only; they must not be read as identity claims about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols, if present, are teaching notation for registration-layer explanation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -35,7 +36,7 @@ Sau bài này, các em có thể:
 
 ## 2. RCA Learning Problem
 
-**RCA focus:** RCA: lỗi gốc mà E13 xử lý
+**RCA focus:** RCA: vấn đề gốc mà E13 xử lý
 
 ### Define / Trace / Isolate / Fix / Verify
 
@@ -108,7 +109,7 @@ Video giống dòng biến đổi; ảnh chụp giống mốc ghi nhận.
 
 Không nói:
 
-> E13 phủ nhận tiến hóa liên tục của "Quantum Mechanics".
+> E13 thay thế tiến hóa liên tục của "Quantum Mechanics".
 
 Nói đúng hơn:
 
@@ -148,7 +149,7 @@ D. Mưa với nắng
 
 **Câu 5.** Cách nói đúng là gì?
 
-A. E13 không phủ nhận "Quantum Mechanics", mà tách mốc ghi nhận khỏi dòng vật lý
+A. E13 không thay thế "Quantum Mechanics", mà tách mốc ghi nhận khỏi dòng vật lý
 B. E13 xóa hết thời gian
 C. E13 làm detector biết nghĩ
 D. E13 là trò chơi chữ

@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly explanation of the double-slit experiment through VVV-QMRF registration-layer terminology.
 **Source trace:** `documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md`; `documents/research_documents/vvv-qmrf/schema_guide.md`.
 **Claim boundary:** This lesson offers a registration-layer reading of the which-path/interference contrast; it does not replace Standard Quantum Mechanics.
+**Concept boundary:** The double-slit example separates detector interaction, path information, and registration-state update; it must not be read as an identity claim about Standard Quantum Mechanics or Buddhist doctrine.
 **Formula boundary:** Symbols such as $K$ and $\rho$ are teaching notation for layer separation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.

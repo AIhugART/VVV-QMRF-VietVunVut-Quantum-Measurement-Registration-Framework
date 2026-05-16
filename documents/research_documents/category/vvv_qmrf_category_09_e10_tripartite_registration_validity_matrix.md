@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Phạm trù Ghi nhận: Ma trận Hợp lệ Ghi nhận Tam phân (Ba điều kiện của Logic)
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
+**Document type:** category
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
 **Facebook:** https://www.facebook.com/xuanviet
@@ -253,6 +254,19 @@ Nếu thiếu điều kiện hợp lệ, claim phải bị hạ xuống Medium, 
 
 ## 9. Mermaid Diagram Map / Sơ đồ Mermaid
 
+### 9.1 Local Arrow Semantics / Quy ước mũi tên local
+
+This table explains only the arrows used in this diagram. It follows the broader Arrow Semantics rule in `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+Bảng này chỉ giải thích các mũi tên dùng trong sơ đồ này. Nó tuân theo quy tắc Arrow Semantics rộng hơn trong `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+| Diagram arrow label | Local meaning | Must not imply |
+|---|---|---|
+| `source-lineage / analogy` | The Buddhist Epistemology source supplies bounded source lineage or structural analogy for the VVV-QMRF registration category. | Direct identity between Buddhist ontology and Quantum Mechanics. |
+| `physical or operational support` | Standard Quantum Mechanics supplies the physical or operational substrate that the registration category analyzes. | Replacement or modification of Standard Quantum Mechanics probability or state-update rules. |
+| `formalizes` | The proposed VVV-QMRF notation formalizes the registration-layer category. | A canonical Quantum Mechanics operator or experimentally validated physical mechanism by itself. |
+| Unlabeled category-to-boundary arrow | The category must be read under its RCA boundary. | Boundary-free application outside the stated registration conditions. |
+
 ```mermaid
 flowchart TD
     subgraph BE["Buddhist Epistemology source layer"]
@@ -279,3 +293,14 @@ flowchart TD
 
 *Source: BIAN_index_SOT.md (BIAN-14), system_be_full.md (N_BE_00018 and Trairūpya support nodes), SYSTEM_Quantum_Measurement/system_qm_full.md, node_QM_VVV.md (N_QM_VVV_00042-00043), framework/vvv_qmrf_framework_e10_tripartite_registration_validity_matrix_postulate.md*
 
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `category` for schema alignment. |
+| Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
+| Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

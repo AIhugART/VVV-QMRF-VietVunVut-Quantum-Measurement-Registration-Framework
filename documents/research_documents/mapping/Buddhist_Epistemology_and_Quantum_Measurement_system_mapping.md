@@ -5,6 +5,24 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Method: Tier-by-tier mapping with formal node/edge codes applied from [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md)
 ## Scope: Epistemology only. No metaphysics, soteriology, or cosmology.
 
+**Document type:** mapping
+
+---
+
+## Canonical Identification / Nhận diện Chuẩn
+
+| Field | Value |
+|---|---|
+| Document type | mapping |
+| System A / Ground system | Buddhist Epistemology / Pramāṇavāda |
+| System B / Target system | Quantum Measurement / VVV-QMRF registration layer |
+| Mapping status | Structural analogy, support, contrast, or gap mapping unless a local row states otherwise. |
+| Graph relation | Uses BE node/edge codes from `SYSTEM_Buddhist_Epistemology/system_be_full.md` when present. |
+| Identity boundary | Mapping is not identity; BE concepts do not become canonical QM mechanisms or physical laws. |
+| RCA boundary | Treat cross-domain links as structurally useful comparisons, not proof that Buddhist Epistemology solves Quantum Measurement. |
+| Terminology rule | Use `registration-state update` for the K-side update and `detector response` only for the apparatus physical signal. |
+
+
 ## Mapping Confidence Rules
 
 These rules define the confidence grammar for cross-domain correspondences in this system mapping. They are adapted from the auxiliary RCA mapping table but applied here as system-level interpretation rules, not as replacements for the node/edge structure.
@@ -771,8 +789,8 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 **Related edge:** ED_BE_00004: N_BE_00001 → pramāṇaphala — produces (Structural)
 
 - **Buddhist Epistemology:** Dharmakīrti's position: the result (phala) of a cognitive act is not a product separate from the act. Knowing is the knowing-of-the-result. No additional act is required to register that a cognition has occurred and produced a result. The act is self-completing: pramāṇa and phala are identified. This eliminates a potential regress: if phala were a separate product, one would need a further cognition to register the phala, and so on without end.
-- **Quantum Measurement:** BIAN-16 — Measurement Self-Completion. QM does not formally specify whether a measurement is self-completing or requires a subsequent act (physical registration, recording, consciousness interaction) to be complete. This is the meta-epistemological root of the measurement problem. Buddhist Epistemology resolves the analogous problem via pramāṇa-phala identity: the act certifies itself. QM has no equivalent resolution. Every proposed solution to the measurement problem (Copenhagen: observer consciousness collapses; Many-Worlds: branching completes; decoherence: environment registers) is attempting to supply a principle that Pramāṇavāda already has in pramāṇa-phala identity combined with svasaṃvedana.
-- **Structural gap:** This is the meta-epistemological core of the mapping. The absence of pramāṇa-phala identity in QM is the formal source of the measurement problem.
+- **Quantum Measurement:** BIAN-16 — Measurement Self-Completion. QM does not formally specify whether a measurement is self-completing or requires a subsequent act (physical registration, recording, consciousness interaction) to be complete. In this mapping, this marks a meta-epistemological pressure point in the measurement problem. Buddhist Epistemology contains a source-side regress-stopping analogue via pramāṇa-phala identity: the act certifies itself. This is not a QM resolution. Interpretation families such as Copenhagen, Many-Worlds, and decoherence can be compared here as different attempts to explain completion, registration, or branching without importing pramāṇa-phala identity into QM.
+- **Structural gap:** This is the meta-epistemological core of the mapping. In this mapping, the absence of a direct QM equivalent to pramāṇa-phala identity is treated as a pressure point in the measurement problem, not as a claim that QM has a single formal source of failure.
 
 ---
 
@@ -881,8 +899,8 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 
 ## Critical Asymmetries (highest structural significance)
 
-1. **BIAN-2 and BIAN-17** (N_BE_00011): QM has no self-referential epistemic layer and no formal regress-stopper. This is the root of the measurement problem.
-2. **BIAN-16** (N_BE_00001, ED_BE_00004): QM does not specify whether measurement is self-completing. Buddhist Epistemology resolves this via pramāṇa-phala identity.
+1. **BIAN-2 and BIAN-17** (N_BE_00011): QM has no self-referential epistemic layer and no formal regress-stopper. From this mapping's perspective, this is a central pressure point in the measurement problem.
+2. **BIAN-16** (N_BE_00001, ED_BE_00004): QM does not specify whether measurement is self-completing. Buddhist Epistemology offers a source-side regress-stopping analogue via pramāṇa-phala identity.
 3. **BIAN-19** (N_BE_00029, T6.04): QM implicitly assumes a substantive observer. Buddhist Epistemology explicitly theorizes the observer as a process. This inversion is foundational.
 4. **T3.05** (negative parallel): Bell's theorem and the denial of svabhāva are the strongest empirical-philosophical convergence point in the entire map.
 5. **T6.06** (N_BE_00022): Both systems are ultimately pragmatist in their validity criterion — this is the deepest meta-level convergence.
@@ -901,3 +919,24 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 - Node codes (N_BE_XX) sourced from [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md).
 - Edge codes (ED_BE_XX) sourced from [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md).
 - Exhaustive mapping baseline sourced from [Buddhist_Epistemology_and_Quantum_Measurement_mapping_exhaustive_map.md](Buddhist_Epistemology_and_Quantum_Measurement_mapping_exhaustive_map.md).
+
+---
+
+## What This Mapping Does NOT Claim / Những gì Mapping này KHÔNG tuyên bố
+
+1. This mapping does not claim identity between Buddhist Epistemology and Quantum Measurement.
+2. This mapping does not introduce new canonical QM laws, operators, or postulates unless a separate VVV-QMRF framework document explicitly proposes them.
+3. This mapping does not claim that Buddhist Epistemology proves or solves Quantum Measurement; it only identifies structural analogies, contrasts, supports, and gaps.
+4. `registration-state update` names the VVV-QMRF K-side update; `detector response` remains only the apparatus physical response.
+
+---
+
+## Schema Validation Checklist / Checklist Kiểm chứng Schema
+
+| Check | Status | RCA note |
+|---|---|---|
+| Document type declared | Pass | Declared as `mapping` for schema alignment. |
+| Source traceability | Review required | Add an explicit source corpus before publication reuse. |
+| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
+| Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |
