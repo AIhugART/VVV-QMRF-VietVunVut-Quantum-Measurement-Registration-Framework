@@ -19,6 +19,20 @@ Sơ đồ RCA hệ thống VVV-QMRF và hệ thống đo lượng tử chuẩn h
 - **Boundary:** This diagram preserves standard quantum probabilities and state-update rules. It does not claim to replace standard quantum mechanics.
 - **Notation contract:** Arrows follow the Arrow Semantics rule in `documents/research_documents/vvv-qmrf/schema_guide.md`; they mark declared relation types, not automatic physical causation.
 
+## Local Arrow Semantics / Quy ước mũi tên trong file này
+
+This local table summarizes the arrow meanings used in this diagram file. It does not replace the broader Arrow Semantics rule in `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+Bảng này tóm tắt ý nghĩa mũi tên ngay trong file sơ đồ này. Nó không thay thế quy tắc Arrow Semantics rộng hơn trong `documents/research_documents/vvv-qmrf/schema_guide.md`.
+
+| Mermaid form | Local meaning | Must not imply |
+|---|---|---|
+| `A --> B` | Declared process order, dependency, or registration-flow step inside the same layer. | Automatic physical causation unless explicitly labeled as physical. |
+| `physical node --> K-side node` | Boundary input from physical trace or outcome into registration-state modeling. | VVV-QMRF modifies the Born rule or physical state update. |
+| `A -. "preserved unchanged" .-> B` | Boundary guard: the referenced Standard QM structure is kept intact. | A new equation, replacement, or correction of Standard QM. |
+| `A -. "novel contribution" .-> B` | VVV-QMRF contribution is localized to the registration-state layer. | Experimentally validated new physics by itself. |
+| `G2 -. "fix: ..." .-> system` | RCA repair relation: the diagrammatic fix separates hidden layers. | Standard QM mathematics is defective. |
+
 ---
 
 # 1. RCA finding
@@ -295,7 +309,7 @@ This table connects each major diagram claim to its source role, claim type, bou
 | Two-layer separation | Pass | The diagrams separate the physical `ρ-side` from the registration `K-side`. |
 | Source traceability | Pass | Source files are listed in Source traceability and major claims cite source anchors in the Claim Traceability Matrix. |
 | Claim traceability | Pass | Claim IDs, claim types, source anchors, boundaries, and RCA verification rules are listed in the Claim Traceability Matrix. |
-| Arrow semantics / notation contract | Pass | The document declares that arrows follow the Arrow Semantics rule in `schema_guide.md`; arrows are relation markers, not automatic physical causation. |
+| Arrow semantics / notation contract | Pass | The document includes a local Arrow Semantics table and preserves the broader Arrow Semantics rule in `schema_guide.md`; arrows are relation markers, not automatic physical causation. |
 | Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming: no Born-rule modification, no replacement of Standard QM, no experimental validation claim without `δ(o) ≠ 0`. |
 | Symbol registry | Pass | Core diagram symbols are covered by `documents/research_documents/vvv-qmrf/VVV_QMRF_research_terminology.md`, including domain, notation type, claim class, status, usage rule, source trace, and boundary. |
 | Mermaid render preview | Review required | Mermaid fences and headings are structurally present; render the diagrams in a Mermaid preview/export tool before publication use. |
