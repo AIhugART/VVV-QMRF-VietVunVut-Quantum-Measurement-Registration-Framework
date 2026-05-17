@@ -97,10 +97,11 @@ For any registering system R and measurement-registration act M:
   within R's registration context.
 
 For two registering systems R1 and R2:
-  J(R1, R2, M) → {K_joint required, K_joint not required}
+  requires_K_joint(R1, R2, M) → {1, 0}
+  — also written J(R1, R2, M) as shorthand in formal derivations
 ```
 
-Status boundary: `σ_R(M)` is a Class D extension of the E1 formalism. The joint-registration predicate `J(R1, R2, M)` remains Class C until its validity conditions, failure conditions, and relation to E6/E7 are specified in a separate multi-registering-system analysis.
+Status boundary: `σ_R(M)` is a Class D extension of the E1 formalism. The joint-registration predicate `requires_K_joint(R1, R2, M)` remains Class C until its validity conditions, failure conditions, and relation to E6/E7 are specified in a separate multi-registering-system analysis. `J(R1, R2, M)` may be used only as shorthand in formal derivations.
 
 **Vietnamese:**
 Formalism lõi của E1 là formalism cho một sự kiện ghi nhận. Nó định nghĩa dấu hiệu xảy ra của một hành động đo-ghi nhận `M`, nhưng tự nó chưa định nghĩa trường hợp có hai hệ ghi nhận, ví dụ Friend `F` và Wigner `W`, mỗi bên có một ngữ cảnh ghi nhận riêng.
@@ -115,10 +116,11 @@ Với mỗi hệ ghi nhận R và hành động đo-ghi nhận M:
   trong ngữ cảnh ghi nhận của R.
 
 Với hai hệ ghi nhận R1 và R2:
-  J(R1, R2, M) → {cần K_joint, không cần K_joint}
+  requires_K_joint(R1, R2, M) → {1, 0}
+  — cũng viết là J(R1, R2, M) như cách viết tắt trong diễn dịch hình thức
 ```
 
-Ranh giới trạng thái: `σ_R(M)` là mở rộng Class D của formalism E1. Predicate ghi nhận chung `J(R1, R2, M)` vẫn là Class C cho tới khi điều kiện hợp lệ, điều kiện thất bại, và quan hệ với E6/E7 được đặc tả trong một phân tích riêng về nhiều hệ ghi nhận.
+Ranh giới trạng thái: `σ_R(M)` là mở rộng Class D của formalism E1. Predicate ghi nhận chung `requires_K_joint(R1, R2, M)` vẫn là Class C cho tới khi điều kiện hợp lệ, điều kiện thất bại, và quan hệ với E6/E7 được đặc tả trong một phân tích riêng về nhiều hệ ghi nhận. `J(R1, R2, M)` chỉ nên dùng như cách viết tắt trong diễn dịch hình thức.
 
 ---
 
@@ -133,7 +135,7 @@ Ranh giới trạng thái: `σ_R(M)` là mở rộng Class D của formalism E1.
 | `R̂_svasa` | Reflexive registration operator | Toán tử ghi nhận phản thân | Registration layer |
 | `R` | Registering system | Hệ ghi nhận | Registration context |
 | `σ_R(M)` | Observer-indexed registration marker | Dấu hiệu ghi nhận có chỉ số hệ ghi nhận | {0, 1} |
-| `J(R1, R2, M)` | Joint-registration predicate | Predicate ghi nhận chung | Registration-layer extension |
+| `requires_K_joint(R1, R2, M)` | Joint-registration predicate; also written `J(R1, R2, M)` as shorthand | Predicate ghi nhận chung; cũng viết tắt là `J(R1, R2, M)` | Registration-layer extension |
 | E_A | Apparatus event | Sự kiện của máy đo | Classical event |
 | svaprakāśa | Self-luminosity | Tính tự phát sáng | Buddhist technical term |
 
@@ -238,7 +240,7 @@ E6 (Registering-System-as-Process)
 | "Resolves von Neumann chain" | "Giải quyết chuỗi von Neumann" | **M** (Measured) | SOT T1.06 L228, T6.02 L785 |
 | "σ(M) formalism" | "Hình thức hóa σ(M)" | **D** (Derived) | Framework E1 — proposed, not proven |
 | "Observer-indexed registration σ_R(M)" | "Ghi nhận có chỉ số hệ ghi nhận σ_R(M)" | **D** (Derived) | RCA extension of E1; separates distinct registration contexts |
-| "Joint-registration predicate J(R1, R2, M)" | "Predicate ghi nhận chung J(R1, R2, M)" | **C** (Conjecture) | Requires separate multi-registering-system validity and failure-condition analysis |
+| "Joint-registration predicate `requires_K_joint(R1, R2, M)`" | "Predicate ghi nhận chung `requires_K_joint(R1, R2, M)`" | **C** (Conjecture) | Requires separate multi-registering-system validity and failure-condition analysis; `J(R1, R2, M)` is shorthand only |
 | "R̂_svasa operator" | "Toán tử R̂_svasa" | **D** (Derived) | Category 05 — proposed, not proven |
 | "Addresses K-side framing of Wigner's Friend" | "Xử lý khung ghi nhận phía K của Wigner's Friend" | **C** (Conjecture) | Category 05 L54 — K-side registration framing only; does not resolve the ρ-side physical superposition aspect |
 | "σ(M) ≡ R̂_svasa" | "Tương đương hai formalism" | **C** (Conjecture) | Not yet established |
