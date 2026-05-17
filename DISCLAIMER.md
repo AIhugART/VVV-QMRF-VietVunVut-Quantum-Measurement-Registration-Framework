@@ -23,6 +23,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **VN:** VVV-QMRF không phủ nhận sự tồn tại của quantum superposition ở tầng vật lý. Khi VVV-QMRF dùng các thuật ngữ như registration lock, collapse, hoặc registration-state update, các thuật ngữ đó phải được đọc như mô tả phía K, trừ khi có phương trình vật lý phía ρ riêng và hỗ trợ thực nghiệm được nêu rõ. Một trạng thái K chưa cập nhật tự nó không được dùng để suy ra có hoặc không có chồng chập vật lý.
 
+**EN:** VVV-QMRF does not make an in-scope claim explaining the physical nature, physical origin, or physical reality of quantum superposition. It treats quantum superposition as a Standard Quantum Mechanics physical-state description on the ρ-side and restricts its own analysis to K-side registration conditions.
+
+**VN:** VVV-QMRF không đưa ra tuyên bố trong phạm vi hiện tại để giải thích bản chất vật lý, nguồn gốc vật lý, hoặc thực tại vật lý của quantum superposition. Nó giữ quantum superposition như mô tả trạng thái vật lý của Standard Quantum Mechanics ở phía ρ và chỉ giới hạn phân tích của mình vào các điều kiện ghi nhận phía K.
+
 **EN:** VVV-QMRF does not explain quantum superposition as false; it explains why quantum superposition should not be confused with an observer's un-updated registration state.
 
 **VN:** VVV-QMRF không giải thích quantum superposition là sai; nó giải thích vì sao không được nhầm quantum superposition với trạng thái ghi nhận chưa cập nhật của người quan sát.

@@ -9,7 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly explanation of Schrödinger's Cat through VVV-QMRF registration-layer terminology.
 **Source trace:** `documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md`; `documents/research_documents/framework/vvv_qmrf_framework_e01_self_certifying_registration_postulate.md`; `documents/research_documents/framework/vvv_qmrf_framework_e05_internal_representation_encoding_postulate.md`; `documents/research_documents/framework/vvv_qmrf_framework_e06_registering_system_as_process_postulate.md`; `documents/research_documents/framework/vvv_qmrf_framework_e07_registration_validity_location_postulate.md`; `documents/research_documents/vvv-qmrf/schema_guide.md`; `DISCLAIMER.md`.
 **Claim boundary:** This lesson offers a registration-layer interpretation of the paradox; it does not replace Standard Quantum Mechanics.
-**Concept boundary:** The cat example separates physical-state description from registration-state update; it must not be read as an identity claim about physical collapse, Standard Quantum Mechanics, or Buddhist doctrine.
+**Concept boundary:** The cat example separates physical-state description from registration-state update; it must not be read as an identity claim about physical collapse, quantum superposition, Standard Quantum Mechanics, or Buddhist doctrine.
 **Formula boundary:** $\rho$ is Standard Quantum Mechanics physical-state notation, while $K$ is VVV-QMRF registration-layer notation; neither is used here to introduce a new physical law.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -49,7 +49,7 @@ $\rho$ keeps its Standard QM role as physical-state notation; $K$ is VVV-QMRF re
 
 ### Misconception Guard
 
-Do not use the cat example to claim that VVV-QMRF fully solves the measurement problem or replaces Standard Quantum Mechanics.
+Do not use the cat example to claim that VVV-QMRF fully solves the measurement problem or replaces Standard Quantum Mechanics. VVV-QMRF does not make an in-scope claim explaining the physical nature, origin, or reality of quantum superposition; it treats superposition as a Standard QM physical-state description on the $\rho$-side and restricts this lesson to K-side registration conditions.
 
 ### Exercise or Quiz
 
@@ -107,13 +107,6 @@ For this lesson, the RCA risk is conflating the external observer's Registration
 
 ---
 
-> **NHẮC LẠI / END DISCLAIMER:** Nội dung trên chỉ là tài liệu giáo dục và "registration-layer reading" của VVV-QMRF ở "Registration Class D".
->
-> Bốn điểm đọc đúng:
-> 1. VVV-QMRF là "registration-layer research framework", không phải lý thuyết vật lý chuẩn hay "Standard Quantum Mechanics".
-> 2. Nó không thay thế, không sửa, và không bác bỏ "Standard Quantum Mechanics".
-> 3. VVV-QMRF không giải thích "superposition" là sai; nó giải thích vì sao ta không được nhầm "superposition" với trạng thái chưa ghi nhận của người quan sát.
-> 4. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
-> 5. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không dùng cho quyết định kỹ thuật hoặc ứng dụng thực tế.
+> **NHẮC LẠI / END DISCLAIMER:** Nội dung trên chỉ là tài liệu giáo dục và "registration-layer reading" của VVV-QMRF ở "Registration Class D". VVV-QMRF không thay thế "Standard Quantum Mechanics" và không đưa ra tuyên bố trong phạm vi hiện tại để giải thích bản chất vật lý của "quantum superposition".
 >
 > Full disclaimer: see [DISCLAIMER.md](../../DISCLAIMER.md) at repository root, incorporated by reference.

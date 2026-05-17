@@ -9,7 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** High-school / LLM-friendly explanation of the VVV-QMRF registration layer.
 **Source trace:** `documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_registration_layer_formalization.md`; `documents/research_documents/framework/vvv_qmrf_framework_e01_self_certifying_registration_postulate.md`; `documents/research_documents/vvv-qmrf/schema_guide.md`; `DISCLAIMER.md`.
 **Claim boundary:** This lesson is an educational interpretation of the registration layer, not a replacement for Standard Quantum Mechanics.
-**Concept boundary:** The registration layer explains K-side registration distinctions only; it must not be read as an identity claim about Standard Quantum Mechanics, physical collapse, or Buddhist doctrine.
+**Concept boundary:** The registration layer explains K-side registration distinctions only; it must not be read as an identity claim about Standard Quantum Mechanics, physical collapse, quantum superposition, or Buddhist doctrine.
 **Formula boundary:** Symbols here are registration-layer teaching notation, not new physical laws.
 
 > **CẢNH BÁO / DISCLAIMER:** VVV-QMRF là nghiên cứu cá nhân độc lập ở "Registration Class D", không phải "Standard Quantum Mechanics", chưa "peer-reviewed" hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
@@ -49,7 +49,7 @@ Symbols in this document are teaching notation or bounded VVV-QMRF notation; the
 
 ### Misconception Guard
 
-Do not read Registration Layer as a new physical ontology or a new collapse mechanism.
+Do not read Registration Layer as a new physical ontology or a new collapse mechanism. VVV-QMRF does not make an in-scope claim explaining the physical nature, origin, or reality of quantum superposition; it treats superposition as a Standard QM physical-state description on the $\rho$-side and restricts this lesson to K-side registration conditions.
 
 ### Exercise or Quiz
 
@@ -120,13 +120,6 @@ For this lesson, the RCA risk is the conflation of these two domains. VVV-QMRF k
 
 ---
 
-> **NHẮC LẠI / END DISCLAIMER:** Nội dung trên chỉ là tài liệu giáo dục và "registration-layer reading" của VVV-QMRF ở "Registration Class D".
->
-> Bốn điểm đọc đúng:
-> 1. VVV-QMRF là "registration-layer research framework", không phải lý thuyết vật lý chuẩn hay "Standard Quantum Mechanics".
-> 2. Nó không thay thế, không sửa, và không bác bỏ "Standard Quantum Mechanics".
-> 3. VVV-QMRF không giải thích "superposition" là sai; nó giải thích vì sao ta không được nhầm "superposition" với trạng thái chưa ghi nhận của người quan sát.
-> 4. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
-> 5. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không dùng cho quyết định kỹ thuật hoặc ứng dụng thực tế.
+> **NHẮC LẠI / END DISCLAIMER:** Nội dung trên chỉ là tài liệu giáo dục và "registration-layer reading" của VVV-QMRF ở "Registration Class D". VVV-QMRF không thay thế "Standard Quantum Mechanics" và không đưa ra tuyên bố trong phạm vi hiện tại để giải thích bản chất vật lý của "quantum superposition".
 >
 > Full disclaimer: see [DISCLAIMER.md](../../DISCLAIMER.md) at repository root, incorporated by reference.
