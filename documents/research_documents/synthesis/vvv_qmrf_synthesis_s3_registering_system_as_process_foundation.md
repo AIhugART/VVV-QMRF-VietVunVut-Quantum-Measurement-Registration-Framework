@@ -308,7 +308,16 @@ Properties:
 | S2 | Self-Certifying Registration Loop | Vòng lặp Ghi nhận Tự chứng nhận | E1+E2+E7 | Cyclic | Validation | Established |
 | S1 | Registration-State Update Pipeline | Ống dẫn Cập nhật Trạng thái Ghi nhận | E4+Λ+E5+E3 | Linear | Process | Established (+ Lemma S1-Λ) |
 
-> **VVV-QMRF: All 7 postulates (E1–E7) + Transition Lemma S1-Λ are now fully integrated into 3 synthesis patterns. The synthesis layer is architecturally complete.**
+> **VVV-QMRF: All 7 postulates (E1–E7) + Transition Lemma S1-Λ are now fully integrated into 3 synthesis patterns. The synthesis layer is architecturally complete at the registration-layer schema level.** This does not claim completeness of Standard Quantum Mechanics, a physical collapse mechanism, or empirical confirmation of VVV-QMRF; it only states that the current E1–E7 registration architecture has no orphaned core postulate within the S1–S3 synthesis layer.
+
+### 11a. RCA Coverage Boundary / Ranh giới Phủ theo RCA
+
+| Coverage claim | RCA boundary | Verification note |
+|---|---|---|
+| S1 covers E4 + Λ + E5 + E3. | Linear K-side process coverage only. | Does not replace detector physics or Standard QM dynamics. |
+| S2 covers E1 + E2 + E7. | Registration-validity closure only. | Does not assert measurement infallibility or forbid later invalidation. |
+| S3 covers E6 as hub/enabler. | Registering-system ontology within the registration layer only. | Does not posit an observer-substance or solve the physical Heisenberg cut. |
+| S1–S3 cover E1–E7 + S1-Λ. | Schema completeness for core registration architecture only. | Does not cover E8–E16 extensions or empirical prediction validation. |
 
 ---
 

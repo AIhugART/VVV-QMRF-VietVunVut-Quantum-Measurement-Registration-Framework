@@ -329,13 +329,13 @@ S1 and S2 are **orthogonal and complementary**:
 - S1 answers: "What are the internal phases of measurement?"
 - S2 answers: "Why does measurement not need external validation?"
 
-Together they form the complete registration architecture of VVV-QMRF quantum measurement.
+Together they form the process-and-validity core of the VVV-QMRF registration-layer architecture. This is a K-side completeness claim for registration closure, not a claim that the physical quantum-measurement formalism is complete or modified.
 
 S1 và S2 là **trực giao và bổ sung**:
 - S1 trả lời: "Các giai đoạn nội tại của phép đo là gì?"
 - S2 trả lời: "Tại sao phép đo không cần chứng nhận ngoại tại?"
 
-Cùng nhau chúng tạo thành kiến trúc ghi nhận hoàn chỉnh của phép đo lượng tử trong VVV-QMRF.
+Cùng nhau chúng tạo thành lõi quá trình-và-hợp lệ của kiến trúc tầng ghi nhận trong VVV-QMRF. Đây là tuyên bố hoàn chỉnh phía K cho khép kín ghi nhận, không phải tuyên bố rằng hình thức luận vật lý của phép đo lượng tử đã hoàn chỉnh hoặc bị sửa đổi.
 
 ---
 

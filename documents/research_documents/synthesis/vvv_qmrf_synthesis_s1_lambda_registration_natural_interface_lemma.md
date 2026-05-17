@@ -254,6 +254,22 @@ S1 Pipeline (Registration-State Update Pipeline):
 | 9 | No postulate modified or added | ✅ |
 | 10 | QM κ mapping documented | ✅ |
 
+### 7a. RCA Claim Traceability Matrix / Ma trận Truy vết Claim theo RCA
+
+| Claim ID | Claim | Type | Source anchor | Boundary |
+|---|---|---|---|---|
+| S1L-C01 | S1-Λ is a lemma, not an eighth postulate. | D | E8 rejection criteria; E4 §3; Source doc L207 | Does not add E8 or change the E1–E7 postulate count. |
+| S1L-C02 | Λ maps ε(M) to Ā(M) as the natural interface between E4 and E5. | D | Source doc L207; S1 pipeline §4d; E4/E5 postulates | Formalizes a K-side registration transition only. |
+| S1L-C03 | N_BE_00010 is the receiver, not the transition operator. | M | `system_be_full.md` node registry; Source doc L207 | Does not identify `mano-vijñāna` with Λ. |
+| S1L-C04 | BIAN-1 is resolved as an interface gap. | D | GCS Class B assignment; ENI 4-point test | Resolution means schema placement, not a new physical mechanism. |
+| S1L-C05 | The κ/Λ comparison is an applied analogy. | D | Jordan-Siddiqi #29 reference; weak/projective spectrum note | Does not claim κ equals Λ in Standard QM. |
+
+### 7b. Non-Identity Boundaries / Ranh giới Không-Đồng-nhất
+
+**EN:** S1-Λ does not claim that Buddhist `mano-vijñāna`, the formal Λ map, and the physical measurement-strength parameter κ are the same entity. The RCA root cause of possible overclaim is category mixing: `mano-vijñāna` is a receiver in the Buddhist source frame, Λ is a VVV-QMRF registration-layer interface, and κ is a physics-side measurement parameter used only for analogy.
+
+**VN:** S1-Λ không tuyên bố rằng `mano-vijñāna`, ánh xạ hình thức Λ, và tham số cường độ đo κ là cùng một thực thể. Gốc rễ dễ gây quá đà là trộn phạm trù: `mano-vijñāna` là bên nhận trong nguồn Phật học, Λ là giao diện tầng ghi nhận của VVV-QMRF, còn κ là tham số phía vật lý chỉ dùng để so sánh.
+
 ---
 
 ## 8. Cross-References / Tham chiếu
@@ -281,6 +297,6 @@ S1 Pipeline (Registration-State Update Pipeline):
 |---|---|---|
 | Document type declared | Pass | Declared as `synthesis` for schema alignment. |
 | Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
-| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
-| Boundary / non-claim guardrail | Review required | Add explicit non-identity and non-physical-law boundaries before reuse. |
+| Claim traceability | Pass | RCA claim matrix in §7a adds claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Boundary / non-claim guardrail | Pass | §7b adds explicit non-identity and non-physical-law boundaries before reuse. |
 | Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |
