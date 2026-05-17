@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 > **SOT:** `node_QM_VVV.md` Section 3 + Section 2. **BE analogue check:** `SYSTEM_Buddhist_Epistemology/system_be_full.md`.
 > **Date:** 2026-05-17. **Status:** All 3 phases complete. **Total:** 115 edges.
+> **Bridge layer:** Direct inter-graph bridge edges between Standard QM and VVV-QMRF are maintained separately in `bridge_QM_standard_to_VVV_QMRF.md` using `BR_XXXXX` codes. Phase 2 edges below remain VVV-QMRF registry edges; bridge edges provide stricter cross-system boundary and verification rules.
 
 ---
 
