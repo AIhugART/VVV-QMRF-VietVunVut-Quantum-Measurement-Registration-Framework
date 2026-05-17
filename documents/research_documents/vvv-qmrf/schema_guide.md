@@ -10,7 +10,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)  
 **Document type:** Schema guide / Document creation contract  
 **Status:** Derived control guide — not a new postulate, not a new SOT  
-**Scope:** `documents/research_documents/`, `documents/course-highschool-vvv-qmrf/`, and future VVV-QMRF research or educational documents  
+**Scope:** `documents/research_documents/`, `publish/course-highschool-vvv-qmrf/`, and future VVV-QMRF research or educational documents  
 **Primary purpose:** Create new VVV-QMRF documents and educational lessons that are structurally complete, traceable to SOT, and safe against overclaiming.  
 **Mục đích chính:** Tạo tài liệu VVV-QMRF và bài học giáo dục mới sao cho đủ cấu trúc, truy vết được về "SOT", và tránh khẳng định quá mức.
 
