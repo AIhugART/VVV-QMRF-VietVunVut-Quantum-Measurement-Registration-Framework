@@ -82,6 +82,44 @@ the Born rule, or any probability-amplitude dynamics.
 | R̂_svasa | Category 05 (prior) | Class D — proposed |
 | σ(M) ≡ R̂_svasa ? | Unproven | Class C — conjecture |
 
+### 3d. RCA extension boundary — observer-indexed registration
+
+**English:**
+E1's core formalism is a single-registration formalism. It defines the occurrence marker for one measurement-registration act `M`, but it does not by itself define what happens when two registering systems, such as Friend `F` and Wigner `W`, each carry a distinct registration context.
+
+Root cause of the gap: `σ(M)` has no registering-system index. Without an index, the framework cannot distinguish `σ_F(M)` from `σ_W(M)`, and therefore cannot yet state when a shared or joint registration state `K_joint` is required.
+
+A minimal extension is:
+
+```text
+For any registering system R and measurement-registration act M:
+  ∃ σ_R(M) ∈ {0,1} such that σ_R(M) = 1 iff M is registered
+  within R's registration context.
+
+For two registering systems R1 and R2:
+  J(R1, R2, M) → {K_joint required, K_joint not required}
+```
+
+Status boundary: `σ_R(M)` is a Class D extension of the E1 formalism. The joint-registration predicate `J(R1, R2, M)` remains Class C until its validity conditions, failure conditions, and relation to E6/E7 are specified in a separate multi-registering-system analysis.
+
+**Vietnamese:**
+Formalism lõi của E1 là formalism cho một sự kiện ghi nhận. Nó định nghĩa dấu hiệu xảy ra của một hành động đo-ghi nhận `M`, nhưng tự nó chưa định nghĩa trường hợp có hai hệ ghi nhận, ví dụ Friend `F` và Wigner `W`, mỗi bên có một ngữ cảnh ghi nhận riêng.
+
+Nguyên nhân gốc của gap: `σ(M)` chưa có chỉ số hệ ghi nhận. Nếu không có chỉ số này, framework không phân biệt được `σ_F(M)` và `σ_W(M)`, nên cũng chưa thể nói chính xác khi nào cần trạng thái ghi nhận chung `K_joint`.
+
+Mở rộng tối thiểu là:
+
+```text
+Với mỗi hệ ghi nhận R và hành động đo-ghi nhận M:
+  ∃ σ_R(M) ∈ {0,1} sao cho σ_R(M) = 1 iff M được ghi nhận
+  trong ngữ cảnh ghi nhận của R.
+
+Với hai hệ ghi nhận R1 và R2:
+  J(R1, R2, M) → {cần K_joint, không cần K_joint}
+```
+
+Ranh giới trạng thái: `σ_R(M)` là mở rộng Class D của formalism E1. Predicate ghi nhận chung `J(R1, R2, M)` vẫn là Class C cho tới khi điều kiện hợp lệ, điều kiện thất bại, và quan hệ với E6/E7 được đặc tả trong một phân tích riêng về nhiều hệ ghi nhận.
+
 ---
 
 ## 4. Mathematical Notation / Ký hiệu Toán học
@@ -92,7 +130,10 @@ the Born rule, or any probability-amplitude dynamics.
 | M′ | Second-order measurement | Phép đo bậc hai | Epistemic event |
 | S | Quantum system being measured | Hệ lượng tử bị đo | Hilbert space ℋ |
 | σ(M) | Self-certification function | Hàm tự chứng nhận | {0, 1} |
-| R̂_svasa | Reflexive registration operator | Toán tử ghi nhận phản thân | Registration layer |
+| `R̂_svasa` | Reflexive registration operator | Toán tử ghi nhận phản thân | Registration layer |
+| `R` | Registering system | Hệ ghi nhận | Registration context |
+| `σ_R(M)` | Observer-indexed registration marker | Dấu hiệu ghi nhận có chỉ số hệ ghi nhận | {0, 1} |
+| `J(R1, R2, M)` | Joint-registration predicate | Predicate ghi nhận chung | Registration-layer extension |
 | E_A | Apparatus event | Sự kiện của máy đo | Classical event |
 | svaprakāśa | Self-luminosity | Tính tự phát sáng | Buddhist technical term |
 
@@ -196,6 +237,8 @@ E6 (Registering-System-as-Process)
 | "No second measurement required" | "Không cần phép đo thứ hai" | **M** (Measured) | SOT T1.06 L227: "not requiring a second-order act" |
 | "Resolves von Neumann chain" | "Giải quyết chuỗi von Neumann" | **M** (Measured) | SOT T1.06 L228, T6.02 L785 |
 | "σ(M) formalism" | "Hình thức hóa σ(M)" | **D** (Derived) | Framework E1 — proposed, not proven |
+| "Observer-indexed registration σ_R(M)" | "Ghi nhận có chỉ số hệ ghi nhận σ_R(M)" | **D** (Derived) | RCA extension of E1; separates distinct registration contexts |
+| "Joint-registration predicate J(R1, R2, M)" | "Predicate ghi nhận chung J(R1, R2, M)" | **C** (Conjecture) | Requires separate multi-registering-system validity and failure-condition analysis |
 | "R̂_svasa operator" | "Toán tử R̂_svasa" | **D** (Derived) | Category 05 — proposed, not proven |
 | "Addresses K-side framing of Wigner's Friend" | "Xử lý khung ghi nhận phía K của Wigner's Friend" | **C** (Conjecture) | Category 05 L54 — K-side registration framing only; does not resolve the ρ-side physical superposition aspect |
 | "σ(M) ≡ R̂_svasa" | "Tương đương hai formalism" | **C** (Conjecture) | Not yet established |
@@ -217,6 +260,9 @@ E6 (Registering-System-as-Process)
 
 4. **Not experimentally testable yet** — E1 is an architectural principle, not an empirical prediction.
    *Chưa kiểm chứng thực nghiệm — E1 là nguyên lý kiến trúc, không phải dự đoán thực nghiệm.*
+
+5. **Not a full Wigner's Friend solution** — E1 only marks the K-side self-certification of a registration event. It does not claim that two registering systems automatically share one `K`, and it does not resolve the `ρ`-side physical superposition description.
+   *Không phải lời giải đầy đủ cho Wigner's Friend — E1 chỉ đánh dấu tính tự chứng nhận phía K của một sự kiện ghi nhận. Nó không tuyên bố rằng hai hệ ghi nhận tự động chia sẻ một `K`, và không giải quyết mô tả chồng chập vật lý phía `ρ`.*
 
 ---
 
@@ -246,6 +292,191 @@ E6 (Registering-System-as-Process)
 ---
 
 *Source: BIAN_index_SOT.md, system_be_full.md, system_mapping_SOT.md, system_be_qm_framework_1to1_RCA_mapping.md, vvv_qmrf_category_05_e01_self_certifying_registration_operator.md, QM_measurement_epistemic_postulates_framework.md*
+
+---
+
+## 11. WF Extension: Observer-Indexed Self-Certification / Mo rong WF: Tu chung nhan co chi so Observer
+
+**Status:** Registration Class D — proposed extension of E1 for multi-observer scenarios.  
+**Scope:** This section extends `σ(M)` to `σ_R(M)` for use in Extended Wigner's Friend (EWF) scenarios. It does not modify Sections 1-10. It is an additive extension only.
+
+---
+
+### 11.1 Motivation
+
+E1 as stated in Sections 1-10 is defined for a single measurement act `M` and a single registering system. It does not address the case where two distinct observers `F` (Friend) and `W` (Wigner) each perform valid self-certifying registrations on overlapping or entangled systems.
+
+This extension adds the observer index `R` to `σ(M)`, enabling formal treatment of multi-observer EWF configurations and grounding the `requires_K_joint` predicate defined in Section 11.3.
+
+---
+
+### 11.2 Observer-Indexed Self-Certification Function
+
+**Definition (`σ_R`):**
+
+```text
+For any registering system R and measurement act M performed by R:
+  σ_R(M) ∈ {0,1}
+  σ_R(M) = 1 iff M occurred as a K-side registration event of R,
+  determined intrinsically within K_R, not by any M′ ≠ M
+  and not by any other registering system R′ ≠ R.
+
+Independence condition:
+  σ_F(M_F) is determined within K_F independently of K_W.
+  σ_W(M_W) is determined within K_W independently of K_F.
+  Neither σ_F nor σ_W requires the other to equal 1.
+```
+
+**Relation to original `σ(M)`:**
+
+The original `σ(M)` in Section 3a is the single-observer special case:
+
+```text
+σ(M) = σ_R(M) where R is the unique registering system in context.
+```
+
+`σ_R(M)` reduces to `σ(M)` when only one registering system is present. All properties of `σ(M)` in E1 Sections 1-10 are preserved.
+
+---
+
+### 11.3 The `requires_K_joint` Predicate
+
+**Definition:**
+
+```text
+requires_K_joint(F, W, M_F, M_W) = 1
+  iff a single joint registration space K_joint is structurally
+  required to contain both k_F = <M_F, o_F, cert_F, t_F, V_F>
+  and k_W = <M_W, o_W, cert_W, t_W, V_W> as jointly valid entries
+  satisfying E1 (σ_R = 1 for both) and E7 (V = 1 for both).
+
+requires_K_joint(F, W, M_F, M_W) = 0
+  iff K_F and K_W can remain independent K-side spaces without
+  any inference, comparison, or joint validity check between them.
+```
+
+**Sufficient conditions for `requires_K_joint = 1`:**
+
+```text
+Condition A (Wigner interference):
+  W performs an interference measurement on the lab containing F+S.
+  This measurement M_W registers a superposition description of F+S.
+  M_F registers a definite outcome o_F of the same system S.
+  Both M_F and M_W claim K-side validity on the same physical event.
+  -> requires_K_joint = 1
+
+Condition B (Direct comparison):
+  F and W directly compare their registration records
+  and a contradiction is detectable at the K-side validity layer.
+  -> requires_K_joint = 1
+```
+
+**Sufficient conditions for `requires_K_joint = 0`:**
+
+```text
+Condition C (No interference, no comparison):
+  W does not perform interference measurement on F's lab.
+  F and W do not compare registration records.
+  K_F and K_W remain causally isolated.
+  -> requires_K_joint = 0
+
+Condition D (Separable state, no entanglement):
+  The shared quantum state |ψ⟩ is separable.
+  M_F and M_W act on non-overlapping subsystems.
+  No joint validity check is structurally required.
+  -> requires_K_joint = 0
+```
+
+**Claim class:** D — proposed. Conditions A-D are stated as sufficient conditions, not necessary and sufficient. Full characterization is an open item (see Section 11.5).
+
+---
+
+### 11.4 `K_joint` Failure Theorem (Class D Proposed)
+
+**Statement:**
+
+```text
+Theorem (K_joint failure under E1 and E7):
+If requires_K_joint(F, W, M_F, M_W) = 1 via Condition A,
+then no K_joint exists such that:
+  (i)  σ_F(M_F) = 1 holds within K_joint  [E1 for F]
+  (ii) σ_W(M_W) = 1 holds within K_joint  [E1 for W]
+  (iii) V(M_F) = 1 and V(M_W) = 1 simultaneously  [E7]
+
+Proof sketch:
+Step 1: Apply E6. F and W are distinct registering processes
+        R_F = {M_F1, M_F2, ...} and R_W = {M_W1, M_W2, ...}
+        with distinct K-side time sequences.
+
+Step 2: Apply E1 (observer-indexed).
+        σ_F(M_F) = 1 is intrinsic to K_F.
+        σ_W(M_W) = 1 is intrinsic to K_W.
+        Both hold independently by Section 11.2.
+
+Step 3: Apply Condition A.
+        M_W registers F+S as a superposition state (no definite o_F).
+        M_F registers o_F as a definite outcome.
+        These are incompatible registrations:
+        M_W ⊥_K M_F — they assert incompatible K-side validity claims
+        about the same physical event at the same registration time.
+
+Step 4: Apply E7.
+        E7 Axiom 2 (invalidation): if M′ contradicts M,
+        then V(M) and V(M′) cannot both equal 1 in the same K-space.
+        M_W ⊥_K M_F implies V(M_F) = 1 and V(M_W) = 1
+        cannot simultaneously hold in any K_joint.
+        Therefore K_joint satisfying (i)-(iii) does not exist.
+```
+
+**Formal statement of incommensurability:**
+
+```text
+K_F ⊥_K K_W
+  iff requires_K_joint(F, W, M_F, M_W) = 1
+  AND no K_joint satisfying (i)-(iii) exists.
+
+⊥_K denotes K-side registration incommensurability.
+```
+
+**Claim class:** D — proposed. Step 4 depends on E7 Axiom 2, which is itself Class D. Full formal proof requires E7 to be independently verified first.
+
+---
+
+### 11.5 Open Items for This Extension
+
+| Item | Status | Required for |
+|------|--------|-------------|
+| Full necessary and sufficient characterization of `requires_K_joint` | Incomplete | Condition 1 full satisfaction |
+| Formal proof of Step 4 (E7 Axiom 2 application) | Incomplete | `K_joint` failure theorem |
+| Prove `σ_R(M) ≡ R̂_svasa` for observer-indexed case | Not started | Cross-formalism consistency |
+| Apply `requires_K_joint` to Proietti et al. (2019) configurations | Not done | Condition 3 |
+| Apply `requires_K_joint` to Bong et al. (2020) configurations | Not done | Condition 3 |
+| Verify Condition D (separable state -> `requires_K_joint = 0`) | Not verified | Asymmetric prediction |
+
+All open items must be disclosed in any paper using this extension.
+
+---
+
+### 11.6 VVV-QMRF Prediction Statement (EWF)
+
+This extension enables the following falsifiable prediction:
+
+> In Extended Wigner's Friend experiments, violations of Local Friendliness inequalities occur if and only if the experimental configuration satisfies `requires_K_joint = 1` as defined in Section 11.3. Configurations satisfying `requires_K_joint = 0` are predicted to produce no violation from the K-side registration perspective. This prediction is falsified if `K_joint` is empirically demonstrated to exist for a configuration where `requires_K_joint = 1`.
+
+**Claim class:** C — conjecture pending experimental operationalization and verification against Proietti et al. (2019) and Bong et al. (2020).
+
+---
+
+### 11.7 Assertion Table for This Extension
+
+| Component | Class | Evidence |
+|-----------|-------|---------|
+| `σ_R(M)` observer-indexed extension of `σ(M)` | D | Follows from E1 Section 3a by adding subscript R |
+| Independence condition (`σ_F` independent of `σ_W`) | D | Follows from E1 intrinsic property |
+| `requires_K_joint` predicate (Conditions A-D) | D | Proposed sufficient conditions, not yet necessary |
+| `K_joint` failure theorem proof sketch | D | Steps 1-3 follow from E6, E1, E7; Step 4 depends on E7 Axiom 2 (D) |
+| `K_F ⊥_K K_W` incommensurability | C | Conjecture — depends on `K_joint` failure theorem |
+| EWF violations ↔ `requires_K_joint = 1` | C | Conjecture — pending experimental operationalization |
 
 ---
 
