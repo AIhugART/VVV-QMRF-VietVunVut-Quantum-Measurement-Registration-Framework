@@ -642,7 +642,8 @@ buddhist-epistemology-quantum-measurement/
 ## Contact & Sponsorship / Liên hệ & Tài trợ
 
 **Contact / Liên hệ:** VietVunVut (Viet - Nguyen Xuan)<br/>
-**Phone / Số điện thoại:** +84 908 329 666 (VN)
+**Phone / Số điện thoại:** +84 908 329 666 (VN)<br/>
+**Nhóm Zalo:** https://zalo.me/g/dvety31smefrxyfm0vx6
 
 **Sponsorship / Tài trợ:**
 
