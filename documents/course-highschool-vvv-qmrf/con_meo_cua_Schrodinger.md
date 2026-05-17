@@ -17,8 +17,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 > Bốn điểm đọc đúng:
 > 1. VVV-QMRF là "registration-layer research framework", không phải lý thuyết vật lý chuẩn.
 > 2. Nó không thay thế, không sửa, và không bác bỏ "Standard Quantum Mechanics".
-> 3. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
-> 4. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không phù hợp cho quyết định kỹ thuật ngoài thực tế.
+> 3. VVV-QMRF không giải thích "superposition" là sai; nó giải thích vì sao ta không được nhầm "superposition" với trạng thái chưa ghi nhận của người quan sát.
+> 4. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
+> 5. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không phù hợp cho quyết định kỹ thuật ngoài thực tế.
 
 ## 0. Educational Schema Alignment
 
@@ -111,7 +112,8 @@ For this lesson, the RCA risk is conflating the external observer's Registration
 > Bốn điểm đọc đúng:
 > 1. VVV-QMRF là "registration-layer research framework", không phải lý thuyết vật lý chuẩn hay "Standard Quantum Mechanics".
 > 2. Nó không thay thế, không sửa, và không bác bỏ "Standard Quantum Mechanics".
-> 3. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
-> 4. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không dùng cho quyết định kỹ thuật hoặc ứng dụng thực tế.
+> 3. VVV-QMRF không giải thích "superposition" là sai; nó giải thích vì sao ta không được nhầm "superposition" với trạng thái chưa ghi nhận của người quan sát.
+> 4. Các đề xuất hiện tại thuộc "Registration Class D" trừ khi có ghi rõ khác.
+> 5. Nó chưa "peer-reviewed", chưa kiểm chứng thực nghiệm, và không dùng cho quyết định kỹ thuật hoặc ứng dụng thực tế.
 >
 > Full disclaimer: see [DISCLAIMER.md](../../DISCLAIMER.md) at repository root, incorporated by reference.

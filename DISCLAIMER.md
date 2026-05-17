@@ -23,6 +23,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **VN:** VVV-QMRF không phủ nhận sự tồn tại của quantum superposition ở tầng vật lý. Khi VVV-QMRF dùng các thuật ngữ như registration lock, collapse, hoặc registration-state update, các thuật ngữ đó phải được đọc như mô tả phía K, trừ khi có phương trình vật lý phía ρ riêng và hỗ trợ thực nghiệm được nêu rõ. Một trạng thái K chưa cập nhật tự nó không được dùng để suy ra có hoặc không có chồng chập vật lý.
 
+**EN:** VVV-QMRF does not explain quantum superposition as false; it explains why quantum superposition should not be confused with an observer's un-updated registration state.
+
+**VN:** VVV-QMRF không giải thích quantum superposition là sai; nó giải thích vì sao không được nhầm quantum superposition với trạng thái ghi nhận chưa cập nhật của người quan sát.
+
 ## 3. Claim Status / Trạng thái Claim
 
 **EN:** Unless explicitly stated otherwise, VVV-QMRF categories, operators, postulates, lemmas, and notation are research proposals. The current framework should be treated as Registration Class D: derived, exploratory, and awaiting formal verification.
