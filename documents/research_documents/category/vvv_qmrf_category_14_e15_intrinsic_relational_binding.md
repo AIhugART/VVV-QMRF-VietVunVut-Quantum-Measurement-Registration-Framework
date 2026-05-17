@@ -169,7 +169,23 @@ Prototype IRB instance:
 
 **RCA boundary:** The prototype is valid only when the stated source support, QM substrate, and registration-validity conditions are all kept distinct.
 
-### 5.5. Layer Architecture Position / Vị trí trong Kiến trúc Tầng
+### 5.5. RCA Boundary Cross-Reference — Entanglement, Bell Correlations, and IRB
+
+This category inherits the E15 boundary note on `entanglement`, Bell correlations, and `registration relation` terminology. The RCA separation is:
+
+```text
+Standard QM term = entanglement: a non-factorizable joint state, with Bell-type correlations as statistical support under standard Bell-test assumptions.
+BE source analogue = svabhāvapratibandha: source-lineage analogy only, preserving Dharmakīrti's two classical types.
+VVV-QMRF term = registration-layer relation category: the derived IRB/E15 classification at the K-side registration layer.
+```
+
+**Anthropomorphism guardrail:** IRB/E15 does not mean that particles know, recognize, intend, communicate, or certify each other. It only classifies the registration significance of entanglement-related non-separability within VVV-QMRF.
+
+**Publication-safe wording:** `IRB/E15 is a VVV-QMRF-defined registration-layer category for entanglement-related non-separability. It preserves Standard QM entanglement and Bell-correlation formalism while adding K-side classification, not a new physical force, signal, hidden variable, or conscious observer.`
+
+---
+
+### 5.6. Layer Architecture Position / Vị trí trong Kiến trúc Tầng
 
 ```text
 gap/BIAN-10

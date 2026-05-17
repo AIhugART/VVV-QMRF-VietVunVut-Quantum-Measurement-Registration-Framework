@@ -94,7 +94,23 @@ E7 (Validity Location) — intrinsic vs extrinsic validity
 
 ---
 
-## 6. Assertion Level
+## 6. RCA Boundary Note — Entanglement, Bell Correlations, and Registration-Layer Relation
+
+**RCA question:** Is `registration relation` a Standard QM term, a Buddhist Epistemology term, or a VVV-QMRF-defined term?
+
+**Answer:** `Registration relation` is VVV-QMRF-defined terminology in this document. Standard QM supplies `entanglement` and Bell-type correlation formalism; Buddhist Epistemology supplies the bounded source analogue through *svabhāvapratibandha*; VVV-QMRF adds the registration-layer classification named Intrinsic Relational Binding (IRB/E15).
+
+**Entanglement boundary:** `Entanglement` is a Standard QM concept for a non-factorizable joint state, not a claim that A knows B, signals to B, recognizes B, or acts with intention. The safe formulation is: the joint state of A and B cannot be fully represented as independent subsystem states within the shared-state context.
+
+**Bell correlations boundary:** Bell-violating correlations are statistical support under standard Bell-test assumptions. They support the rejection of ordinary local hidden-variable accounts under those assumptions; they do not by themselves prove a new VVV-QMRF physical mechanism.
+
+**IRB/E15 boundary:** IRB/E15 classifies the registration significance of entanglement-related non-separability at the K-side registration layer. It does not introduce a new physical force, signal, hidden variable, intention, consciousness, or anthropomorphic agency.
+
+**RCA verification rule:** A publication-facing use is valid only if it keeps these layers separate: Standard QM substrate (`entanglement` and Bell correlations), BE source analogue (*svabhāvapratibandha*), and VVV-QMRF-derived registration-layer category (IRB/E15).
+
+---
+
+## 7. Assertion Level
 
 | Component | Class |
 |---|---|
