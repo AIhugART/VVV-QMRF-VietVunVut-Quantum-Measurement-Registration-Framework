@@ -88,6 +88,15 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | General K-side update | Prefer `registration-state update` / cập nhật trạng thái ghi nhận. |
 | Apparatus physical signal | Use `detector response`, not `registration`. |
 | Human-only language | Avoid unless the context is explicitly human cognition; use `registering system` for the general case. |
+| `⊥_K` relation | Use only for K-side incommensurability between registration structures when a joint K-side space is required but cannot preserve both as jointly valid. |
+| `K_joint` | Use as an admissible joint K-side registration space for testing whether two registration structures can be jointly preserved as valid; do not treat it as a physical Hilbert space or a private observer K-space. |
+| `M′ ⊥ M` | Use as the E7 registered contradiction relation only when a later valid registration act and a prior act share an admissible comparison context and cannot both remain valid. |
+| Event-level null | Use `Null_K(e)` or `R_K(e) = ⊥`; do not use `⊥_K` for a single event's failure to enter valid K-registration. |
+| `D_joint` | Shared validity demand requiring two K-side structures to be assessed under one comparison architecture. Imposed only when the experimental or theoretical context requires cross-observer joint validity; not imposed by mere database co-location or independent bookkeeping. |
+| `requires_K_joint` | Predicate returning 1 when a `D_joint` is structurally imposed and cannot be evaluated while leaving the two K-side structures in fully independent spaces. Operational sufficient conditions A-E are provided; `requires_K_joint=0` does not guarantee `K_joint` exists — it only means the joint check is not structurally demanded. |
+| `AdmJoint` | Admissible joint K-side registration space predicate; true when a candidate `K_joint` embeds both structures while preserving act, outcome, certification, order, validity, Conditions 1-6, and non-invalidation constraints. |
+| `Bridge_EWF` | Bridge lemma linking `D_joint` to E7 registered contradiction in EWF/LF configurations. Class D as a proposed lemma; application to concrete experiments remains Class C. Do not apply outside EWF/LF comparison contexts. |
+| `ODC_K` | Operational data criterion connecting observed probabilities to `K_joint_exists` or `K_joint_fails`. Requires predeclared tolerance τ; the tolerance must be fixed before data evaluation. Class C proposed criterion; not a direct detector readout. |
 
 ---
 

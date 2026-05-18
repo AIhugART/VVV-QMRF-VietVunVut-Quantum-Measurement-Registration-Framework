@@ -69,7 +69,28 @@ For measurement M yielding result r:
              Invalidity requires M′.
 ```
 
-### 3b. Category 04 formalism — DPEC (Dual-Phase Registration Certification)
+### 3b. Framework formalism — Registered contradiction relation
+
+The phrase "M′ contradicts M" is a K-side validity relation, not physical orthogonality and not ordinary disagreement. It requires a later registration act with enough registration authority to challenge the prior act inside a shared comparison context.
+
+```
+M′ ⊥ M
+  iff  M′ is a later K-side registration act relative to M
+  AND  M′ and M are brought into the same admissible K-side comparison context
+  AND  M′ and M concern the same registration target, history, or validity claim
+  AND  their registered contents cannot both satisfy the relevant validity
+       conditions in that comparison context
+  AND  M′ itself satisfies the applicable registration-validity conditions.
+
+Invalidation rule:
+  V(M)=1 by default.
+  If M′ ⊥ M and M′ has valid registration authority in the comparison context,
+  then V(M) may be revised to 0.
+```
+
+Boundary: `M′ ⊥ M` does not mean that M did not physically occur, does not make M false inside its original K-side before comparison, and does not apply to merely different perspectives that are not forced into a shared K-side comparison context.
+
+### 3c. Category 04 formalism — DPEC (Dual-Phase Registration Certification)
 
 ```
 Phase 1 — Intrinsic Validity (Svataḥ):
@@ -82,7 +103,7 @@ Phase 2 — Extrinsic Certification (Parataḥ):
     If contradiction: invoke REO (Retroactive Registration Override)
 ```
 
-### 3c. Equivalence status
+### 3d. Equivalence status
 
 | Formalism | Source | Status |
 |-----------|--------|--------|
@@ -90,7 +111,7 @@ Phase 2 — Extrinsic Certification (Parataḥ):
 | DPEC (ρ̃ → ρ_certified) | Category 04 | Class D |
 | Equivalence? | Unproven | Class C |
 
-### 3d. Relationship to Category 01 (REO)
+### 3e. Relationship to Category 01 (REO)
 
 ```
 E7 (Validity Location)

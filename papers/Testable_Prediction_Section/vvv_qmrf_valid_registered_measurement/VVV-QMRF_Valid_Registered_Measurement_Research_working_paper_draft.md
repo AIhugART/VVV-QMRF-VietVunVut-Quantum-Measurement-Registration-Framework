@@ -127,7 +127,7 @@ No symbol in the central criterion should be read as stronger than its source st
 | `M_X ∈ R` | Registration act belongs to registering process `R`. | Class D | E6 domain membership, not physical causation. |
 | `σ(M_X)` | Occurrence self-certification marker. | Class D | Not consciousness or introspection. |
 | `V(M_X)` | K-side validity status. | Class D | Not a physical observable. |
-| `M′` | Later contradicting registration. | Class D / partial formalization | Requires a defined contradiction relation. |
+| `M′` | Later registered contradiction candidate. | Class D | Uses the E7 `M′ ⊥ M` relation; not a second certifier for original occurrence. |
 | `ValidReg(X, R)` | `X` counts as valid registered measurement for `R`. | Class D proposal | Registration-layer criterion only. |
 | `K_F`, `K_W` | Friend and Wigner K-side registration spaces. | Class D application | Not Hilbert spaces. |
 | `K_joint` | Hypothetical joint K-side registration space. | Class C | Not fully formalized. |
@@ -222,7 +222,7 @@ E7 also allows invalidation by later registered contradiction:
 No M′ invalidates M_X.
 ```
 
-This condition makes validity asymmetric. Validity is default at the K-side, while invalidity requires a later registered contradiction. The exact contradiction relation, written schematically as `M′ ⊥ M_X`, is not fully formalized in this paper. Therefore, all claims depending on that relation remain bounded.
+This condition makes validity asymmetric. Validity is default at the K-side, while invalidity requires a later registered contradiction. The contradiction relation is written `M′ ⊥ M_X`: a later valid registration act shares an admissible comparison context with `M_X`, concerns the same registration target, history, or validity claim, and cannot jointly satisfy the relevant validity conditions with `M_X`. Therefore, claims depending on this relation remain bounded by the Class D status of E7 and by the still-incomplete Step 4 proof.
 
 ### 4.8 Failure Cases
 
@@ -316,7 +316,7 @@ Step 4 — K_joint attempt:
 A joint K-side space would need to preserve both registrations as valid under the same validity architecture. If M_F and M_W are mutually contradicting registrations under the E7 contradiction relation, then a joint validity assignment may fail to satisfy E7.
 ```
 
-Steps 1-3 are registration-layer applications of active VVV-QMRF sources. Step 4 is the main conjectural step. The definitions of `K_joint`, `⊥_K`, and `M′ ⊥ M` must be sharpened before the conjecture can become a completed derivation.
+Steps 1-3 are registration-layer applications of active VVV-QMRF sources. Step 4 is the main conjectural step. Registry-level definitions of `K_joint`, `⊥_K`, and `M′ ⊥ M` are now specified, but the Step 4 derivation and operational mapping must still be completed before the conjecture can become a completed derivation.
 
 Therefore the status of this section is:
 
@@ -412,9 +412,9 @@ The main open formal tasks are:
 
 | Open item | Why it matters | Current status |
 |---|---|---|
-| Formal definition of `K_joint` | Needed to assess joint embedding. | Open / Class C. |
-| Formal definition of `⊥_K` | Needed to define K-side incommensurability. | Open / Class C. |
-| Formal definition of `M′ ⊥ M` | Needed to specify contradiction under E7. | Partial / requires sharpening. |
+| Formal definition of `K_joint` | Needed to assess joint embedding. | Defined as a Class D admissible joint K-side registration-space entry; necessary-and-sufficient use conditions remain open. |
+| Formal definition of `⊥_K` | Needed to define K-side incommensurability. | Defined as a Class D relation-level registry entry; full proof and operational mapping remain open. |
+| Formal definition of `M′ ⊥ M` | Needed to specify contradiction under E7. | Defined as a Class D E7 registered contradiction relation; application proof remains open. |
 | Proof or rejection of Step 4 | Needed before claiming completed derivation. | Class C unless proven. |
 | Operationalization to `P(o_F, o_W)` | Needed for empirical comparison. | Future work. |
 | Comparison with published EWF protocols | Needed for concrete experimental relevance. | Future work unless separately completed. |
@@ -430,7 +430,7 @@ This working paper isolates the transition from physical interaction to valid re
 
 The paper preserves Standard Quantum Mechanics at the physical `ρ`-side. It does not revise outcome probabilities, physical dynamics, or collapse mechanisms. Its contribution is not a new physical law, but a registration-layer validity criterion.
 
-Applied to Extended Wigner's Friend scenarios, the criterion motivates a bounded conjecture of K-side incommensurability: observer-specific valid registrations may fail to embed into a single joint K-side registration space while preserving the same validity conditions. That conjecture remains Class C until `K_joint`, `⊥_K`, and `M′ ⊥ M` are fully formalized and connected to operational comparison targets.
+Applied to Extended Wigner's Friend scenarios, the criterion motivates a bounded conjecture of K-side incommensurability: observer-specific valid registrations may fail to embed into a single joint K-side registration space while preserving the same validity conditions. That conjecture remains Class C until the Step 4 derivation and the operational comparison targets are fully formalized.
 
 The purpose of the paper is precision before persuasion. It defines, constrains, and makes challengeable the VVV-QMRF concept of valid registered measurement.
 
@@ -472,7 +472,7 @@ E6 supplies the registering process R; E1 supplies σ(M_X)=1; E7 supplies V(M_X)
 | C-006 | `ValidReg(X, R)` is a six-condition registration-validity criterion. | Class D derived proposal | E6 + E1 + E7. | Does not modify physical QM. |
 | C-007 | Friend and Wigner may each satisfy local valid registration conditions. | Class D application | Wigner's Friend registration-layer mapping. | Does not resolve full physical WF problem. |
 | C-008 | `K_F ⊥_K K_W` may hold in EWF scenarios. | Class C conjecture | Testable prediction plans; future formalization. | Not experimentally confirmed. |
-| C-009 | `K_joint`, `⊥_K`, and `M′ ⊥ M` require further formalization. | Limitation | Meta-architecture formalization; open task list. | Blocks stronger prediction claims. |
+| C-009 | The Step 4 proof and operational mapping require further formalization after registry-level definitions of `K_joint`, `⊥_K`, and `M′ ⊥ M`. | Limitation | Meta-architecture formalization; open task list. | Blocks stronger prediction claims. |
 
 ### A.3 Source Corpus
 

@@ -184,7 +184,7 @@ The sixth condition allows later registered contradiction to invalidate an earli
 ¬∃M′ invalidating M_X
 ```
 
-This condition is needed because a registration may be provisionally valid in its own process while later registration conditions alter its validity status. The exact contradiction relation `M′ ⊥ M_X` requires further formalization. Until that relation is fully defined, claims depending on it must remain bounded.
+This condition is needed because a registration may be provisionally valid in its own process while later registration conditions alter its validity status. The contradiction relation `M′ ⊥ M_X` is now defined at the E7 registry level: the later act and the prior act must share an admissible comparison context, concern the same target, history, or validity claim, and fail joint validity preservation there. Claims depending on it remain bounded by the Class D status of E7 and by the incomplete Step 4 proof.
 
 ### 4.7 Resulting Criterion
 
@@ -266,7 +266,7 @@ Step 4 — K_joint attempt:
 A joint K-side space would need to preserve both registrations as valid under the same validity architecture. If M_F and M_W are mutually contradicting registrations under the E7 contradiction relation, then a joint validity assignment may not satisfy E7.
 ```
 
-The first three steps are registration-layer applications of E6, E1, and E7 to observer-specific registrations. Step 4 remains the main conjectural step. The definitions of `K_joint`, `⊥_K`, and `M′ ⊥ M` must be sharpened before the conjecture can become a completed derivation.
+The first three steps are registration-layer applications of E6, E1, and E7 to observer-specific registrations. Step 4 remains the main conjectural step. Registry-level definitions of `K_joint`, `⊥_K`, and `M′ ⊥ M` are now specified, but the Step 4 derivation and operational mapping must still be completed before the conjecture can become a completed derivation.
 
 Therefore, the status of this section is:
 
@@ -348,9 +348,9 @@ The main open items are:
 
 | Open item | Why it matters | Current status |
 |---|---|---|
-| Formal definition of `K_joint` | Needed to assess joint embedding. | Open / Class C. |
-| Formal definition of `⊥_K` | Needed to define K-side incommensurability. | Open / Class C. |
-| Formal definition of `M′ ⊥ M` | Needed to specify contradiction under E7. | Partial / requires sharpening. |
+| Formal definition of `K_joint` | Needed to assess joint embedding. | Defined as a Class D admissible joint K-side registration-space entry; necessary-and-sufficient use conditions remain open. |
+| Formal definition of `⊥_K` | Needed to define K-side incommensurability. | Defined as a Class D relation-level registry entry; full proof and operational mapping remain open. |
+| Formal definition of `M′ ⊥ M` | Needed to specify contradiction under E7. | Defined as a Class D E7 registered contradiction relation; application proof remains open. |
 | Step 4 derivation | Needed before claiming a completed incommensurability proof. | Class C unless proven. |
 | Operationalization to `P(o_F, o_W)` | Needed for empirical comparison. | Future work. |
 | Comparison with EWF protocols | Needed for concrete experimental relevance. | Future work unless separately completed. |
@@ -367,7 +367,7 @@ This research note isolated the transition from physical interaction to valid re
 
 The note preserves Standard Quantum Mechanics at the physical `ρ`-side. It does not revise outcome probabilities, physical dynamics, or collapse mechanisms. Its contribution is not a new physical law, but a registration-layer validity test.
 
-Applied to Extended Wigner's Friend scenarios, the test motivates a bounded conjecture of K-side incommensurability: observer-specific valid registrations may fail to embed into a single joint K-side registration space while preserving the same validity conditions. That conjecture remains Class C until `K_joint`, `⊥_K`, and `M′ ⊥ M` are fully formalized and connected to operational comparison targets.
+Applied to Extended Wigner's Friend scenarios, the test motivates a bounded conjecture of K-side incommensurability: observer-specific valid registrations may fail to embed into a single joint K-side registration space while preserving the same validity conditions. That conjecture remains Class C until the Step 4 derivation and the operational comparison targets are fully formalized.
 
 The purpose of the paper is therefore precision before persuasion. It defines, constrains, and makes challengeable the VVV-QMRF concept of valid registered measurement.
 
