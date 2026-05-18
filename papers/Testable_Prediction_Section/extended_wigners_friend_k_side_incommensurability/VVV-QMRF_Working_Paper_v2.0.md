@@ -75,6 +75,24 @@ where:
 
 The K-side registration space K is the collection of such tuples produced by a registering system R over time.
 
+**Provisional and final validity (Class D proposed):**
+
+Because E7 permits a later registration act to revise the validity of an earlier act, every validity assignment in K-side is provisional until the registration process closes. Formally:
+
+```
+V_prov(M) = 1  iff  M satisfies Conditions 1-5 and no known later act
+  has contradicted M within its K-side up to the current registration time.
+
+V_prov(M) may be revised to 0 if a later act M' with valid cross-registration
+  authority contradicts M per E7.
+
+V_final(M) = 1  iff  V_prov(M) = 1 and no future registration act within K_R
+  will contradict M (a limit property).
+
+For the purposes of requires_K_joint and ⊥_K, provisional validity is the
+  operative notion unless stated otherwise.
+```
+
 ### 2.3 Source: Buddhist Pramāṇa Epistemology
 
 The registration-layer architecture is derived structurally from Buddhist Pramāṇa epistemology (Dignāga, 5th century; Dharmakīrti, 7th century), as systematized by Prasad (2023). Pramāṇa theory addresses the formal conditions under which a cognition constitutes a valid knowledge event. The Buddhist source relation is not used as empirical evidence for quantum mechanics. It functions as a structural source for the registration-layer postulates E1, E6, and E7; the move from Pramāṇa theory to K-side registration is a project-level formal extraction, not an established claim in Buddhist studies. The structural extraction used here concerns:
@@ -198,6 +216,11 @@ AdmJoint(K_joint; A, B) = 1
   such that:
        (i)   i_A and i_B preserve the registered act, outcome, certification,
              registration time/order, and validity status of A and B;
+             the embedding respects the internal time-order of each structure
+             (if e1 <_A e2 then i_A(e1) <_joint i_A(e2)), and the combined
+             order in K_joint is the transitive closure of the two embedded
+             orders plus any cross-structure temporal relations implied by
+             the shared laboratory history;
        (ii)  self-certification remains intrinsic to each embedded act;
        (iii) the Conditions 1-6 validity test remains satisfied for each
              embedded registration structure;
@@ -228,6 +251,14 @@ requires_K_joint(A, B) = 0
   iff no shared validity demand D_joint is imposed, or D_joint can be
       evaluated without embedding A and B into one candidate K_joint.
 ```
+
+Formally, `D_joint` is a predicate over pairs of K-side registration structures and a comparison architecture:
+
+```
+D_joint(A, B, Arch) ∈ {0, 1}
+```
+
+It evaluates to 1 when `Arch` demands that A and B support one shared registration-validity claim. The comparison architecture `Arch` is specified by the experimental design (EWF setup, LF inequality, direct comparison protocol, etc.). `D_joint` is not imposed by any single observer; it is a structural feature of the comparison architecture.
 
 For the EWF case:
 
@@ -284,14 +315,49 @@ K_A ⊥_K K_B
        as jointly valid registration spaces under Conditions 1-6.
 ```
 
-For individual registration acts inside a required joint comparison, use the E7 registered contradiction relation, not the space-level incommensurability symbol:
+For individual registration acts inside a required joint comparison, use the E7 registered contradiction relation, not the space-level incommensurability symbol. The contradiction relation depends on a comparison context defined as follows:
+
+**Definition (K-side comparison context, Class D proposed):**
+
+A K-side comparison context `C_K` is a minimal shared frame in which two registration acts can be evaluated for compatibility. `C_K` requires:
+
+```
+(a) both acts are admitted into the same comparison domain;
+(b) both acts are indexed to the same registration target or history;
+(c) the comparison does not presuppose that both acts are already jointly valid.
+```
+
+`C_K` is strictly weaker than `AdmJoint`: it enables the comparison without requiring that joint validity be preserved. `AdmJoint` requires `C_K` but adds preservation of Conditions 1-6 and validity for both sides.
+
+**Definition (cross-registration authority, Class D proposed):**
+
+In a comparison context `C_K` containing acts `M_earlier` and `M_later`:
+
+```
+M_later has valid cross-registration authority w.r.t. M_earlier iff:
+  (a) M_later is a valid registered measurement within its own K-side
+      (σ(M_later) = 1, V(M_later) = 1 per Conditions 1-6);
+  (b) M_later's registration content directly concerns the same
+      registration target or history as M_earlier;
+  (c) M_later was produced by a measurement act that, within the
+      comparison architecture, is structurally required to register the
+      state of the same laboratory or composite system that M_earlier
+      registered as a subsystem;
+  (d) the comparison architecture does not arbitrarily privilege one
+      observer's K-side over the other — it only identifies which act
+      is later in registration time and whether its content is
+      structurally incompatible with the earlier act's content.
+```
+
+**Definition (act-level registered contradiction, Class D proposed; grounded in E7):**
 
 ```
 M_A ⊥ M_B
-  iff  M_A and M_B share an admissible K-side comparison context,
+  iff  M_A and M_B share a K-side comparison context C_K,
        concern the same registration target, history, or validity claim,
        cannot both satisfy the relevant validity conditions there,
-       and the later act has valid registration authority.
+       and the later act has valid cross-registration authority
+       with respect to the earlier act.
 ```
 
 Act-level contradiction can support a conclusion that no admissible `K_joint` preserves the relevant K-side spaces, but it is not identical to the space-level relation `K_A ⊥_K K_B`.
@@ -302,6 +368,7 @@ Act-level contradiction can support a conclusion that no admissible `K_joint` pr
 - `⊥_K` does not mean that either observer's registered outcome is false within its own K-side.
 - `⊥_K` is not equivalent to an event-level registration-null value. If an event fails to enter a valid K-registration domain, that should be written separately as `Null_K(e)` or `R_K(e) = ⊥`, not conflated with `A ⊥_K B`.
 - `⊥_K` is a registration-layer relation proposed by VVV-QMRF; it is not a new postulate of Standard Quantum Mechanics.
+- `⊥_K` is defined only for K-side structures that are each valid or provisionally valid within their own K-side. If either structure fails admission or is already invalidated within its own K-side, `⊥_K` does not apply; the situation should be described using the relevant single-K-side invalidation language of E7.
 
 ### 4.5 K_joint Failure and K-side Incommensurability
 
@@ -327,9 +394,15 @@ Bridge_EWF(D_joint; M_F, M_W) = 1 -> M_W ⊥ M_F.
 
 This bridge is not triggered by mere difference of perspective. It is triggered only when the comparison architecture requires both registrations to support the same cross-observer validity claim.
 
+**Relativization defense and response (Class D proposed):**
+
+A possible objection: could `K_joint` host meta-level facts such as "within `K_F`, `M_F` registered `|h⟩`" and "within `K_W`, `M_W` registered `|Ψ+⟩`" without contradiction? Under this reading, both meta-descriptions are jointly true, and the original registration contents are never directly compared.
+
+This relativization defense is rejected here because `D_joint` demands joint validity of the original registration claims, not meta-descriptions of them. If `K_joint` only hosts relativized meta-descriptions indexed to different K-spaces, it does not satisfy `D_joint`: the LF/no-go constraint requires F's outcome and W's outcome to be assigned simultaneous cross-observer validity as facts about the same laboratory history, not as facts-about-facts whose validity is relativized to different K-side perspectives. Relativizing the contents abandons `D_joint` rather than satisfying it. The bridge is therefore not defeated by second-order redescription.
+
 **Conditional lemma (K_joint failure, Class D proposed; proof audit status: conditional):**
 
-If `requires_K_joint = 1` via `D_joint`, `Bridge_EWF(D_joint; M_F, M_W)=1`, and the later act has valid registration authority in the comparison context, then no admissible `K_joint` exists such that:
+If `requires_K_joint = 1` via `D_joint`, `Bridge_EWF(D_joint; M_F, M_W)=1`, and the later act has valid cross-registration authority with respect to the earlier act, then no admissible `K_joint` exists such that:
 - (i) `σ_F(M_F) = 1` holds within `K_joint` [Condition 4 for F]
 - (ii) `σ_W(M_W) = 1` holds within `K_joint` [Condition 4 for W]
 - (iii) `V(M_F) = 1` and `V(M_W) = 1` simultaneously remain preserved [Condition 5+6 for both]
@@ -351,7 +424,7 @@ Step 3 [D_joint + Bridge_EWF]: D_joint requires both M_F and M_W to support
   M_W ⊥ M_F inside the required comparison context.
 
 Step 4 [E7 + AdmJoint condition (iv)]: E7 says that if M′ ⊥ M and M′ has
-  valid registration authority in the comparison context, then V(M) may be
+  valid cross-registration authority in the comparison context, then V(M) may be
   revised to 0. Therefore, if Bridge_EWF makes M_W ⊥ M_F a necessary
   registration-state update inside K_joint, then K_joint cannot also satisfy
   AdmJoint condition (iv), which requires that no embedded side be invalidated
@@ -392,7 +465,11 @@ ODC_K(Data, Cfg) = K_joint_exists
   iff  there exists a joint registration model J_K such that:
        (i)   J_K assigns jointly valid entries to the relevant F-side and
              W-side registrations selected by Cfg;
-       (ii)  J_K preserves Conditions 1-6 for each embedded registration;
+       (ii)  J_K preserves Conditions 1-3, 5, and 6 for each embedded
+             registration; Condition 4 (self-certification) is treated as
+             a structural postulate satisfied by construction when the
+             registering system satisfies the architectural definition
+             of a K-side observer (Section 3.3);
        (iii) J_K preserves AdmJoint condition (iv): no required
              registration-state update invalidates either embedded side
              while both are still claimed as jointly valid;
@@ -409,6 +486,8 @@ ODC_K(Data, Cfg) = K_joint_fails
 Here `Cfg` is the experimental configuration, including measurement settings, observer roles, and the prior classification of `requires_K_joint`. The tolerance `τ` must be fixed before evaluating the data; otherwise the criterion becomes post hoc.
 
 **Interpretation:** `ODC_K = K_joint_fails` does not mean that Standard QM fails. It means the data do not support one registration-layer joint-validity model preserving both K-side claims under the VVV-QMRF constraints.
+
+**τ sensitivity:** The choice of statistical tolerance `τ` affects the sensitivity of `ODC_K`. A `τ` that is too large risks false-negative `K_joint_fails` conclusions (accepting poor models); a `τ` that is too small risks false-positive `K_joint_fails` conclusions (rejecting models due to experimental noise). Calibration of `τ` requires specification before data collection and should be guided by the experiment's statistical power and expected effect size. This paper does not fix `τ`; it is a parameter to be set by the experimental design.
 
 **Claim class:** C (conjecture). Pending experimental operationalization and verification.
 
@@ -633,7 +712,7 @@ The `⊥_K` formal definition chain is now complete at the proposed level (Class
 | Full formal proof for `⊥_K` as a mathematical relation | Requires axiomatized K-space (topology, order); paper currently uses registration-layer structural definition |
 | `AdmJoint` necessary-and-sufficient conditions | Currently sufficient conditions A-E; full characterization requires completed K-space axiomatization |
 | Equivalence of `σ(M)` and `R̂_svasa` formalisms | Separate research track (E01 §11.5) |
-| Axiomatize K as a full mathematical structure | Long-term architectural task; not needed for current Class C/D claims |
+| Axiomatize K as a full mathematical structure | ~~Long-term architectural task; not needed for current Class C/D claims~~ → Addressed 2026-05-19: K1-K5 core axioms + T1-T4 bridge theorems formalized in `documents/research_documents/meta_architecture/K_Space_Axiomatization.md` (VVV-QMRF §K-AXIOM). Layer 1 (K1-K5) frozen; Layer 2 (T1-T3) pending Level 4 freeze. |
 
 **Next-step operational items (required for confirmation):**
 
@@ -651,6 +730,27 @@ This paper's central conjecture is falsified if:
 > An Extended Wigner's Friend experiment produces results consistent with a single K_joint registration model satisfying Conditions 1–6 for both observers simultaneously, for a configuration independently classified as requires_K_joint = 1 via D_joint and Bridge_EWF.
 
 Operationally, this requires a predefined data criterion connecting observed probabilities to the existence of such a joint registration model. If `K_joint` exists empirically, E7 Axiom 2 or the Step 4 conditional bridge requires revision, and the `K_joint` failure proposition does not hold.
+
+### 7.4 Architectural Constraints of the K-side/ρ-side Separation
+
+The core architectural commitment of VVV-QMRF is `K ≠ H`: the registration layer is structurally distinct from the physical layer (Section 2.1). This separation is what enables the framework to address the registration layer gap. It also imposes two architectural constraints that are not fixable by refinement — they are inherent consequences of the layer separation, not oversights.
+
+**Constraint 1 — Self-certification is not a ρ-side observable.** Condition 4 requires `σ_R(M) = 1` to be determined intrinsically within `K_R`. This cannot be a ρ-side observable because any physical measurement of `σ` would itself require a second-order registration act, re-entering the von Neumann regress that E1 is designed to terminate. Making `σ` directly testable from ρ-side data would collapse the K-side back into the ρ-side and remove the framework's reason for existing. The operational compromise is stated in `ODC_K` condition (ii): self-certification is treated as a structural postulate satisfied by construction when the registering system meets the architectural definition of a K-side observer. What is tested is not whether `σ = 1`, but whether — given that assumption — the full joint registration model can reproduce the observed data.
+
+**Constraint 2 — `D_joint` is a framework-level classification, not a physical observable.** The predicate `D_joint(A, B, Arch)` classifies whether a comparison architecture demands joint validity. Experimental architectures are designed and described in the language of Standard QM plus assumptions (O, L, F, AOE, NSD); they do not carry intrinsic VVV-QMRF labels. The bridge from physical setup to K-side predicate is therefore interpretive. This does not make `D_joint` arbitrary: operational sufficient conditions A–E (Section 4.3) connect observable features of the setup (interference vs. readout, comparison vs. no comparison, separable vs. entangled state) to `D_joint` values in a reproducible way. But the mapping is a VVV-QMRF classification of the experimental architecture, not a measurement of a physical quantity.
+
+**These constraints are typical of the measurement problem, not unique to VVV-QMRF.** Every interpretation or extension of quantum mechanics that addresses measurement must introduce a primitive concept that is not directly observable within the formalism:
+
+| Framework | Central concept | Why not directly observable |
+|---|---|---|
+| Copenhagen | Classical apparatus / Heisenberg cut | No formal definition of what makes an apparatus classical |
+| Many-Worlds (Everett) | Branching of worlds | No physical observable distinguishes one branch from another |
+| QBism | Agent's degree of belief | Subjective probability is not a physical quantity |
+| Relational QM (Rovelli) | Facts relative to observer | Relata are only defined within the relation |
+| Objective Collapse (GRW) | Collapse mechanism | Collapse events are postulated, not yet detected |
+| **VVV-QMRF** | **Self-certification / `D_joint`** | **K-side properties are not ρ-side observables (`K ≠ H`)** |
+
+The presence of architectural constraints does not distinguish VVV-QMRF from existing frameworks. What distinguishes it is that the constraints are explicitly named, traced to a single architectural commitment, and given operational bridges (`ODC_K`, conditions A–E) that define what can and cannot be tested under the current formalism.
 
 ---
 
