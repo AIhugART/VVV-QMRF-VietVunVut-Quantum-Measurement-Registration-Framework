@@ -569,6 +569,7 @@ buddhist-epistemology-quantum-measurement/
 
 - **EN:** Parents — the first condition of all / **VN:** Cha mẹ — duyên đầu tiên của tất cả.
 - **EN:** Family — time, patience, and sacrifice / **VN:** Gia đình — thời gian, sự kiên nhẫn và hy sinh.
+- **EN:** Teacher Phước, in the Creative Methodology (PPLST) course at the University of Science, VNU-HCM, who inspired the thought that Buddhism holds answers for human beings / **VN:** Thầy Phước, trong môn Phương pháp luận sáng tạo (PPLST) tại Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM — người gợi cảm hứng rằng Phật giáo có mọi câu trả lời cho con người.
 - **EN:** Chương — the child of the author's friend Văn, who inspired the author to see that LLMs and AI tools could open unexpectedly wide creative possibilities / **VN:** Cháu Chương — con của người bạn tên Văn, người gợi cảm hứng rằng "LLM" và các công cụ AI có thể mở ra những khả năng sáng tạo rộng hơn dự kiến.
 - **EN:** 45 years of living, a small affinity with Buddhism and science, and one idle afternoon that began with a question / **VN:** 45 năm sống, một chút duyên với Phật giáo và khoa học, và một buổi rảnh rỗi bắt đầu bằng một câu hỏi.
 
