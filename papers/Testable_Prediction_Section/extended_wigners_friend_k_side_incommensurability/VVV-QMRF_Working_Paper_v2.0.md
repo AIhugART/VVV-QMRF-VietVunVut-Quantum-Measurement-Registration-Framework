@@ -750,6 +750,8 @@ The core architectural commitment of VVV-QMRF is `K ≠ H`: the registration lay
 | Objective Collapse (GRW) | Collapse mechanism | Collapse events are postulated, not yet detected |
 | **VVV-QMRF** | **Self-certification / `D_joint`** | **K-side properties are not ρ-side observables (`K ≠ H`)** |
 
+This is not a methodological coincidence. If the measurement problem could be resolved using only concepts that are directly observable within the standard physical formalism, it would not have remained open for nearly a century. The presence of an unobservable primitive in every listed framework reflects the depth of the problem, not a defect unique to any one proposal.
+
 The presence of architectural constraints does not distinguish VVV-QMRF from existing frameworks. What distinguishes it is that the constraints are explicitly named, traced to a single architectural commitment, and given operational bridges (`ODC_K`, conditions A–E) that define what can and cannot be tested under the current formalism.
 
 ---
