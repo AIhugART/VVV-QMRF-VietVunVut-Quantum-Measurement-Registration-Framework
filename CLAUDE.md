@@ -126,3 +126,8 @@ This environment operates based on simulated logic commands (functions). When th
   3. Search for the structurally equivalent concept (node) within `System_B`.
   4. Output the result using this exact strict format: 
      `[Node_A] <=> [Node_B] : [Brief_structural_reasoning]`
+
+---
+
+© 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
+To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/

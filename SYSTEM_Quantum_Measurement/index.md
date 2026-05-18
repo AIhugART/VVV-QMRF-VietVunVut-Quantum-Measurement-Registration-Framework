@@ -1,3 +1,5 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
 # SYSTEM: Quantum Measurement
 
 ## Published Documents
@@ -23,3 +25,8 @@
 | 15 | N_QM_15 | BIAN-5 — Cross-Basis State Identity | The unresolved issue of whether the entity measured in one basis is the same entity as that measured in a different basis. |
 | 16 | N_QM_16 | Schrodinger evolution | The deterministic, unitary time-evolution of the wave function between measurements. |
 | 17 | N_QM_17 | BIAN-6 — Null Measurement / Interaction-Free Measurement | Information obtained about a system without interacting with it. |
+
+---
+
+© 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
+To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/

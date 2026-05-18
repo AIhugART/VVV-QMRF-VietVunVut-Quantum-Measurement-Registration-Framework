@@ -36,3 +36,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | 28 | N_BE_00028 | Deductive reasoning | Parārthānumāna (Skt.) | Logic | "Inference for others" — syllogistic reasoning communicating new knowledge to another. Taken in a metaphorical sense (upacāra). |
 | 29 | N_BE_00029 | Momentariness | Kṣaṇabhaṅgavāda (Skt.) | Ontology–cognition | The Sautrāntika doctrine: "a moment disappears as soon as it appears without duration." Rooted in the Buddha's dynamic law of dependent arising (pratītyasamutpāda). |
 | 30 | N_BE_00030 | Buddha as epistemic authority | Pramāṇabhūta (Skt.) | Epistemic authority | The Buddha as possessor of valid method, arguments, meaning, practice, and purpose; his authority is tested like gold, not accepted by faith alone. |
+
+---
+
+© 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
+To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/

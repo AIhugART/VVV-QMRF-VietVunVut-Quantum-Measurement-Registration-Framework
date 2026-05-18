@@ -607,7 +607,7 @@ buddhist-epistemology-quantum-measurement/
   author  = {VietVunVut (Viet - Nguyen Xuan)},
   year    = {2026},
   note    = {VVV-QMRF v4 final documentation release: registration-layer formalization, E1--E16 stable registration postulates, E17 measurement-interface proposal},
-  url     = {https://github.com/AIhugART/buddhist-epistemology-quantum-measurement}
+  url     = {https://github.com/AIhugART/VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework}
 }
 ```
 
@@ -661,4 +661,5 @@ buddhist-epistemology-quantum-measurement/
 
 *VN: VietVunVut (2026). VVV-QMRF: Khung Ghi nhận Đo lường Lượng tử — Phân tích Cấu trúc dựa trên Nhận thức luận Phật giáo Pramāṇa.*
 
-© 2026 VietVunVut. All Rights Reserved.
+© 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
+To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/

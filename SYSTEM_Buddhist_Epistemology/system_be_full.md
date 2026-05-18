@@ -540,3 +540,7 @@ This table normalizes the 226 published Buddhist Epistemology edges (connecting 
 | 224 | ED_BE_00224 | Miscellaneous | Nominalism (N_BE_00043) | Exclusion (N_BE_00015) | is associated with | Philosophical position | Buddhist nominalism is intimately associated with the apoha (exclusion) theory, denying real universals in favor of conceptual exclusions. | Source doc L233-L241 | implied |
 | 225 | ED_BE_00225 | Miscellaneous | Valid cognition as presupposition (N_BE_00125) | Valid cognition (N_BE_00001) | grounds action in | Epistemic process | The necessity of valid cognition as a presupposition for any successful action grounds the entire pragmatic structure of the pramāṇa system. | Source doc L267-L271 | direct |
 | 226 | ED_BE_00226 | Miscellaneous | Dhamma sailing against current (N_BE_00109) | Buddha as epistemic authority (N_BE_00030) | describes path of | Soteriology | "Sailing against the current" describes the radical, counter-intuitive nature of the Buddha's Dhamma, necessitating a reliable epistemic authority to guide beings. | Source doc L75-L81 | direct |
+---
+
+© 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
+To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/

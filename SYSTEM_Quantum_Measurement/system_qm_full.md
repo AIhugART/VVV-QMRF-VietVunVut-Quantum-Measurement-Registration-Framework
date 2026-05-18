@@ -273,3 +273,8 @@ Edges below are not imported from a pre-existing source edge table. They are RCA
 ---
 
 Generated from `documents/published_documents/QM_Measurement_Unified_Concept_Table.md`. Total nodes: 105. Total RCA-derived edges: 120.
+
+---
+
+© 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
+To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
