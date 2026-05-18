@@ -334,5 +334,6 @@ These anchors refine the broader `Source anchor` column above into section-and-l
 | Arrow semantics / notation contract | Pass | The document includes a local Arrow Semantics table and preserves the broader Arrow Semantics rule in `schema_guide.md`; arrows are relation markers, not automatic physical causation. |
 | Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming: no Born-rule modification, no replacement of Standard QM, no experimental validation claim without `δ(o) ≠ 0`. |
 | Symbol registry | Pass | Core diagram symbols are covered by `documents/research_documents/vvv-qmrf/VVV_QMRF_research_terminology.md`, including domain, notation type, claim class, status, usage rule, source trace, and boundary. |
-| Mermaid render preview | Pass | Rendered all 5 Mermaid fences locally with `@mermaid-js/mermaid-cli` to SVG; outputs generated without parser/render errors. |
+| Mermaid render preview | Pass | Re-rendered all 5 Mermaid fences locally on 2026-05-18 with `@mermaid-js/mermaid-cli` v11.15.0; SVG outputs generated without parser/render errors in `_publication_check_mermaid/`. |
+| Section 8.1 line anchors | Pass | Publication-gate spot check revalidated the listed anchors against current source files on 2026-05-18; re-check again if any cited source file changes before release. |
 | Validation rule | Pass | Reuse only with source, claim type, arrow semantics, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |
