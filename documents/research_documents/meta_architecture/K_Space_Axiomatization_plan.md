@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Target:** `documents/research_documents/meta_architecture/K_Space_Axiomatization.md`
 **Audit version:** v1.4 (2026-05-19)
-**Plan version:** v23 (2026-05-19)
+**Plan version:** v25 (2026-05-19)
 **Method:** 3 rounds × 5-Why × scoring threshold (per `feedback_decision_rule.md`)
 **Scope:** K1-K8 core axioms (Layer 1) + T1-T4 bridge theorems (Layer 2) + audit matrices + concrete EWF model
 
@@ -32,6 +32,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | F8b | LOW / NON-BLOCKING | **DONE** | §3.2 E9 audit row | Clarified E9 independence from F2/K6. E9 `V=0` is definitional null status from K1 `o=∅` + K4 E9 exception, not K5/K6 invalidation; it requires no `⊥`, no `Auth`, and no shared `C_K`. |
 | F8c | MEDIUM / NON-BLOCKING | **DONE** | §3.2 E8 audit row | Clarified E8 `PARTIAL` verdict after F1/F7b/F8b. E8 now uses `V_prov→0` for K5 invalidation, notes K7 pre-closure re-assessment, adds T2 resolved-demand semantics for `C_K` cases, and distinguishes E8 invalidation from E9 definitional `V=0`. |
 | F8d | MEDIUM / NON-BLOCKING | **DONE** | §3.4 BE Source Lineage Audit | Completed BE lineage coverage for K1-K8. Added K6/Bādhaka pramāṇa, K7/Niścaya, and K8/Anugama rows; updated lineage verdict from `5/5 PASS` to `8/8 PASS`. |
+| F9a | MEDIUM / NON-BLOCKING | **DONE** | §7.5 Step 6 after F1 | Aligned the concrete T2 proof attempt with F1/F7b validity lifecycle notation. Step 6 now uses `V_prov(i_F(k_F)) → 0` for K5 pre-closure invalidation and explicitly states that `V_final` is not assigned until K7 closure after the pending `requires_K_joint` demand is resolved. |
 
 ---
 
@@ -43,8 +44,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | Phase 2 | Level 4 Dependency Isolation Claim | **COMPLETE** — All 6 issues fixed (P2-I01/F6a, P2-I02/F6a, P2-I03/F6a, P2-I04/F6b, P2-I05/F6b, P2-I06/F6c) |
 | Phase 3 | Bridge Theorem Derivations T1-T4 | **COMPLETE** — P3-C1 fixed (F7a); P3-C2 fixed (F7b); P3-C3 fixed (F7c); P3-C4 fixed (F7d). All Phase 3 checks resolved. |
 | Phase 4 | Audit Matrix Accuracy | **COMPLETE** — P4-C1 fixed (F8a); P4-C2 fixed (F8b); P4-C3 fixed (F8c); P4-C4 fixed (F8d). All Phase 4 checks resolved. |
-| Phase 5 | Concrete Model & Proof Attempt | PENDING |
-| Phase 6 | Open Items Alignment | PENDING |
+| Phase 5 | Concrete Model & Proof Attempt | **COMPLETE** — P5-C1 fixed (F9a); P5-C2 fixed (F9b); P5-C3 fixed (F9c); P5-C4 fixed (F9d). |
+| Phase 6 | Open Items Alignment | **COMPLETE** — P6-C1 fixed (F10a); P6-C2 fixed (F10b+F10c); P6-C3 fixed (F10d); P6-C4 fixed (F10e+F10f). Document upgraded to v1.5. |
 
 ---
 
@@ -103,7 +104,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-## Phase 4 — Audit Matrix Accuracy [IN PROGRESS]
+## Phase 4 — Audit Matrix Accuracy [COMPLETE]
 
 ### Issue Registry
 
@@ -122,14 +123,22 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-## Phase 5 — Concrete Model & Proof Attempt [PENDING]
+## Phase 5 — Concrete Model & Proof Attempt [IN PROGRESS]
+
+### Issue Registry
+
+| ID | Target | Severity | RCA Score | Status | Root cause | Fix |
+|----|--------|----------|-----------|--------|------------|-----|
+| P5-C1 | §7.5 Step 6 after F1 | MEDIUM / NON-BLOCKING | 4.72/5 | **FIXED (F9a)** | Step 6 had not cascaded the F1/F7b lifecycle split into the concrete proof: it still used generic `V` where pre-closure admissibility testing requires `V_prov`. | Replaced the Step 6 K5 firing notation with `V_prov(i_F(k_F)) → 0` and added a note that `V_final` is not assigned until K7 closure after the pending `requires_K_joint` demand is resolved. |
+| P5-C2 | §7.4 Gap table G4+ | NON-BLOCKING | 4.22/5 | **FIXED (F9b)** | Stale inline label `⚠ GAP G4` in §7.5 Step 4 was not updated during v1.4 gap renumbering (G4→G3). Dep-A/Dep-B are satisfied dependencies in EWF concrete model — not undocumented gaps. | Updated `⚠ GAP G4` → `⚠ GAP G3` in §7.5 Step 4. No new gap rows added to §7.4. Gap table G1–G3 confirmed complete and correct. |
+
+### Remaining Checks
 
 | Check ID | Target | Question |
 |----------|--------|----------|
-| P5-C1 | §7.5 Step 6 after F1 | Does Step 6 specify V_prov or V_final for the V → 0 invalidation? |
-| P5-C2 | §7.4 Gap table G4+ | Should a new gap document Dep-A + Dep-B (now named across K5/K6/K7 Dependency rows)? |
-| P5-C3 | §10.3 P4 after F1 | Does Freeze Check P4 proof remain valid under F1 change? |
-| P5-C4 | §7.2 K8 row | Does EWF model include K8 check: V_F(i(k_W)) = V_R(k_W) at embedding time? |
+| P5-C2 | §7.4 Gap table G4+ | ~~Should a new gap document Dep-A + Dep-B (now named across K5/K6/K7 Dependency rows)?~~ **FIXED (F9b)** Root cause: stale inline label `GAP G4` in §7.5 Step 4 (not updated during v1.4 G4→G3 renumbering). Dep-A/Dep-B are satisfied dependencies in EWF model — not concrete-model gaps. Fix: `⚠ GAP G4` → `⚠ GAP G3` in §7.5 Step 4 only. §7.4 Gap table G1–G3 is complete and correct. |
+| P5-C3 | §10.3 P4 after F1 | ~~Does Freeze Check P4 proof remain valid under F1 change?~~ **FIXED (F9c)** P4 CONFIRMED VALID. V_prov is K5+K7 internal pair (Layer 1, frozen) — no new external dependency. Two precision fixes: (F9c-a) P4 citation updated with V_prov internal note; (F9c-b) §7.5 Step 6 header stale "(modulo EP)" removed (EP promoted to K8 in v1.4). |
+| P5-C4 | §7.2 K8 row | ~~Does EWF model include K8 check: V_F(i(k_W)) = V_R(k_W) at embedding time?~~ **FIXED (F9d)** K8 check confirmed present at §7.3 L4-7. §7.2 K8 row is architecturally correct (intra-K-space section: vacuously satisfied; cross-space check deferred to §7.3). Fix: expanded §7.3 L4-7 K8 block from informal "V_original(k)" to canonical subscript notation: `V_joint(i_F(k_F)) = V_F(k_F) = 1` and `V_joint(i_W(k_W)) = V_W(k_W) = 1`. |
 
 ---
 
@@ -137,10 +146,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Check ID | Target | Question |
 |----------|--------|----------|
-| P6-C1 | Open Item #1 | Item #1 says "K7 pre-closure allows re-assessment" — needs update to reference K5 F1. |
-| P6-C2 | Open Items #14, #15 | Do #14 and #15 cover Dep-A (C_K existence) and Dep-B (T1/T2 ordering) now named across K5/K6/K7? |
-| P6-C3 | Action Items A6/A7/A8 | Still accurate after all Phase 1+2 fixes? Any new action items? |
-| P6-C4 | C-KAXIOM-010 + version note v1.5 | C-KAXIOM-010 now updated (F6c) — prepare v1.5 version note referencing all Phase 1+2 fixes after remaining phases confirmed. |
+| P6-C1 | Open Item #1 | ~~Item #1 says "K7 pre-closure allows re-assessment" — needs update to reference K5 F1.~~ **FIXED (F10a)** Root cause: wording predates F1 — attributed re-assessment to K7 instead of K5 V_prov. Fix: status updated to "K5 V_prov pre-closure mechanism allows re-assessment before K7 closure (F1: V_prov/V_final lifecycle)." |
+| P6-C2 | Open Items #14, #15 | ~~Do #14 and #15 cover Dep-A (C_K existence) and Dep-B (T1/T2 ordering) now named across K5/K6/K7?~~ **FIXED (F10b+F10c)** #14 updated with T2 Dep-B note (F6b+F7b: AdmJoint on V_prov, resolved-demand outcomes). #15 updated with Phase 2 note: Dep-A/Dep-B satisfied in concrete model (§7.5 Steps 3+6) — not gaps. |
+| P6-C3 | Action Items A6/A7/A8 | ~~Still accurate after all Phase 1+2 fixes? Any new action items?~~ **FIXED (F10d)** A1–A5 confirmed still accurate. A6 added: verify Dep-A/Dep-B conditional semantic dependencies post Level 4 freeze. A7/A8 not needed. |
+| P6-C4 | C-KAXIOM-010 + version note v1.5 | ~~C-KAXIOM-010 now updated (F6c) — prepare v1.5 version note referencing all Phase 1+2 fixes after remaining phases confirmed.~~ **FIXED (F10e+F10f)** C-KAXIOM-010 confirmed correct (F6c, no further change). Document upgraded to v1.5: header updated, v1.4→v1.5 RCA audit summary added covering all Phase 1–5 fixes (F1–F9d) + Phase 6 (F10a–F10f). |
 
 ---
 
@@ -170,7 +179,21 @@ Phase 4 fixes — COMPLETE
   F8b (E9 definitional null-status vs K6/Auth boundary clarification) → P4-C2 [RESOLVED]
   F8c (E8 V_prov/T2/E9 boundary clarification) → P4-C3 [RESOLVED]
   F8d (§3.4 BE lineage K6-K8 coverage + 8/8 verdict) → P4-C4 [RESOLVED]
-  Next → Phase 5 (Concrete Model & Proof Attempt)
+
+Phase 5 fixes — IN PROGRESS
+  F9a (§7.5 Step 6 V_prov notation + V_final closure guard) → P5-C1 [RESOLVED]
+  F9b (§7.5 Step 4 stale GAP G4 label → GAP G3; Dep-A/Dep-B confirmed not gaps) → P5-C2 [RESOLVED]
+  F9c-a (§10.3 P4 citation: V_prov internal note added) → P5-C3 [RESOLVED]
+  F9c-b (§7.5 Step 6 header: stale "modulo EP" removed) → P5-C3 [RESOLVED]
+  F9d (§7.3 L4-7 K8 block: "V_original" → canonical V_F/V_W subscript notation) → P5-C4 [RESOLVED]
+
+Phase 6 fixes — COMPLETE
+  F10a (Open Item #1: "K7 pre-assessment" → K5 V_prov pre-closure attribution) → P6-C1 [RESOLVED]
+  F10b (Open Item #14: T2 Dep-B note added — AdmJoint on V_prov + K7 resolved-demand) → P6-C2 [RESOLVED]
+  F10c (Open Item #15: Dep-A/Dep-B satisfied note — not gaps, documented in Dependency rows) → P6-C2 [RESOLVED]
+  F10d (Action Item A6 added: Dep-A/Dep-B post-freeze verification) → P6-C3 [RESOLVED]
+  F10e (Document header v1.4 → v1.5) → P6-C4 [RESOLVED]
+  F10f (Version history: v1.4→v1.5 RCA audit summary Phase 1–6 added) → P6-C4 [RESOLVED]
 ```
 
 ---
@@ -216,6 +239,24 @@ Phase 4 fixes — COMPLETE
 | P4-C3 | 4.53/5 | MEDIUM / NON-BLOCKING | **FIXED (F8c)** |
 | P4-C4 | 4.70/5 | MEDIUM / NON-BLOCKING | **FIXED (F8d)** |
 
+### Phase 5 — COMPLETE
+
+| ID | Score | Severity | Status |
+|----|-------|----------|--------|
+| P5-C1 | 4.72/5 | MEDIUM / NON-BLOCKING | **FIXED (F9a)** |
+| P5-C2 | 4.22/5 | NON-BLOCKING | **FIXED (F9b)** |
+| P5-C3 | 4.35/5 | NON-BLOCKING | **FIXED (F9c)** |
+| P5-C4 | 4.33/5 | NON-BLOCKING | **FIXED (F9d)** |
+
+### Phase 6 — COMPLETE
+
+| ID | Score | Severity | Status |
+|----|-------|----------|--------|
+| P6-C1 | 4.20/5 | NON-BLOCKING | **FIXED (F10a)** |
+| P6-C2 | 4.25/5 | NON-BLOCKING | **FIXED (F10b+F10c)** |
+| P6-C3 | 4.30/5 | NON-BLOCKING | **FIXED (F10d)** |
+| P6-C4 | 4.35/5 | NON-BLOCKING | **FIXED (F10e+F10f)** |
+
 ---
 
-*Plan v23 — 2026-05-19. Phase 1 COMPLETE (F1-F5c). Phase 2 COMPLETE (F6a-F6c). Phase 3 COMPLETE (F7a-F7d). Phase 4 COMPLETE (F8a-F8d). Next RCA target is Phase 5: Concrete Model & Proof Attempt.*
+*Plan v29 — 2026-05-19. ALL PHASES COMPLETE. Phase 1 (F1–F5c). Phase 2 (F6a–F6c). Phase 3 (F7a–F7d). Phase 4 (F8a–F8d). Phase 5 (F9a–F9d). Phase 6 (F10a–F10f). K_Space_Axiomatization.md upgraded to v1.5. Full RCA audit of K1-K8 + T1-T4 + concrete model + open items complete.*

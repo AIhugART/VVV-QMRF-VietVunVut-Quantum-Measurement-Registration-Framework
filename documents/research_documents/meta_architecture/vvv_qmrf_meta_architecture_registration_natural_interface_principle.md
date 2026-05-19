@@ -310,12 +310,28 @@ ENI:    φᵢ (natural interface)    → general principle covering Λ, κ, and 
 
 ---
 
+## 9. Claim Traceability Review / Rà soát Truy vết Claim
+
+| Claim ID | Claim Text | Claim Type | Source File | Source Anchor | Confidence | Allowed Usage | Forbidden Usage | Verification Rule |
+|---|---|---|---|---|---|---|---|---|
+| C-ENI-001 | BIAN-1 reveals a registration-layer natural interface insight beyond the direct S1-Λ resolution. | derived | This document; `BIAN1_resolution_verification.md`; `RCA_BIAN1_new_epistemic.md` | This document §§0-1 | medium | Use as the RCA basis for formalizing ENI as a meta-architecture principle. | Do not present the insight as a standard QM principle or peer-reviewed physical result. | Verify the BIAN-1 resolution chain and the distinction between direct lemma and meta-principle. |
+| C-ENI-002 | ENI states that consecutive registration stages may be connected by natural interfaces preserving causal content while adding symbolic structure. | formal_notation; derived | This document; S1 synthesis source | This document §§2b-2d | high | Use as the definition of ENI and as the test pattern for S1-Λ. | Do not treat every pipeline transition as an ENI instance without satisfying the four-point test. | Check the four conditions: causal preservation, symbolic addition, non-operation, and non-triviality. |
+| C-ENI-003 | S1-Λ is the first confirmed ENI instance. | derived | This document; `vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md` | This document §2d | high | Use S1-Λ as the prototype for ENI. | Do not promote S1-Λ into a separate postulate without separate RCA. | Confirm S1-Λ against the ENI four-point test and S1 source. |
+| C-ENI-004 | ENI supports GCS by distinguishing structural, interface, and implicit gaps. | derived | This document; `vvv_qmrf_meta_architecture_gap_classification_system.md` | This document §4a | medium | Use as the bridge from ENI to the gap classification system. | Do not collapse Class A, B, and C into one generic gap type. | Verify that GCS uses distinct resolution paths for postulate, lemma, and category. |
+| C-ENI-005 | ENI is a registration-layer meta-architecture principle, not a physical replacement for decoherence, quantum channels, or the Heisenberg cut. | boundary_application | This document | This document §§3a, 5 | high | Use as the non-overclaim guardrail for QM comparisons. | Do not frame ENI as a canonical QM formalism or replacement for physical dynamics. | Check each QM comparison for boundary language and non-identity wording. |
+
+### Claim Reuse Boundary / Ranh giới Tái sử dụng Claim
+
+These claims may be reused only with their source file, source anchor, claim type, confidence, allowed usage, forbidden usage, and verification rule preserved. Reuse that removes the boundary or converts a registration-layer claim into a Standard Quantum Mechanics law must be downgraded or marked `TODO(HOTFIX)`.
+
+---
+
 ## Schema Validation Checklist / Checklist Kiểm chứng Schema
 
 | Check | Status | RCA note |
 |---|---|---|
 | Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
 | Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
-| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Claim traceability | Pass | Major claims now include claim IDs, claim types, source files, source anchors, confidence, allowed usage, forbidden usage, and verification rules. |
 | Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
 | Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

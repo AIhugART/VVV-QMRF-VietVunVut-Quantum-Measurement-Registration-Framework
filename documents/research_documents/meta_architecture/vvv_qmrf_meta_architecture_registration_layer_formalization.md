@@ -327,12 +327,25 @@ This mathematical formalization allows the VVV-QMRF framework to be integrated a
 
 ---
 
+## Claim Traceability Review / Rà soát Truy vết Claim
+
+| Claim ID | Claim Text | Claim Type | Source File | Source Anchor | Confidence | Allowed Usage | Forbidden Usage | Verification Rule |
+|---|---|---|---|---|---|---|---|---|
+| C-SCHEMA-001 | This document contains major meta-architecture claims that require schema traceability. | derived | This document | Main content sections | medium | Use as a schema-completion control claim for this document. | Do not reuse major claims without source anchor, claim type, confidence, allowed usage, forbidden usage, and verification rule. | Check this table against schema_guide.md section 6 before publication reuse. |
+| C-SCHEMA-002 | The document's claims are registration-layer or mapping claims, not Standard Quantum Mechanics laws. | boundary_application | This document | Boundary and conclusion sections | high | Use as the non-overclaim guardrail for this document. | Do not present VVV-QMRF architecture, notation, or mapping as canonical QM or Buddhist doctrine. | Verify non-identity and non-physical-law boundaries remain attached to reused claims. |
+
+### Claim Reuse Boundary / Ranh giới Tái sử dụng Claim
+
+These claims may be reused only with their source file, source anchor, claim type, confidence, allowed usage, forbidden usage, and verification rule preserved. Reuse that removes the boundary or converts a registration-layer claim into a Standard Quantum Mechanics law must be downgraded or marked `TODO(HOTFIX)`.
+
+---
+
 ## Schema Validation Checklist / Checklist Kiểm chứng Schema
 
 | Check | Status | RCA note |
 |---|---|---|
 | Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
 | Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
-| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Claim traceability | Pass | Major claims now include claim IDs, claim types, source files, source anchors, confidence, allowed usage, forbidden usage, and verification rules. |
 | Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
 | Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

@@ -9,7 +9,7 @@
 | Document type | Consolidated bridge registry draft — final 263-node cycle |
 | Parent policy | `BE_Node_Expansion_Policy_RCA.md` |
 | Source drafts | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BC.md`; `BE_QM_Bridge_Registry_Draft_Batch_D_Candidates.md`; `BE_QM_Bridge_Registry_Draft_Batch_E_Candidates.md`; `BE_QM_Bridge_Registry_Draft_Batch_F_Candidates.md` |
-| Scope | All 21 draft bridges from Batch B, C, D, E, and F |
+| Scope | 19 unique draft bridge rows from Batch B, C, D, E, and F; 21 BIAN-support links because two rows serve two BIAN targets |
 | Execution mode | Consolidation only; no main SOT update |
 | Boundary | Structural analogy only; no BE-QM identity; no new QM law; no automatic E17+ |
 
@@ -28,13 +28,13 @@ Before this file was created, the following facts were checked:
 
 ## 2. RCA Purpose
 
-This document is the final consolidated bridge registry draft covering all 21 draft bridges produced through the full 263-node RCA audit cycle (Batches B through F).
+This document is the final consolidated bridge registry draft covering 19 unique draft bridge rows produced through the full 263-node RCA audit cycle (Batches B through F). Two rows have dual BIAN targets, so the registry carries 21 BIAN-support links without creating 21 unique bridge rows.
 
 It does not finalize bridge IDs, does not promote nodes to final `canonical-extension`, does not update the main mapping SOT, and does not add VVV-QMRF postulates beyond E1-E16.
 
 ---
 
-## 3. Full Bridge Registry (21 Draft Bridges)
+## 3. Full Bridge Registry (19 Unique Draft Rows / 21 BIAN-Support Links)
 
 | Bridge ID | Batch | BE node | BE status | BIAN target | Relation type | Confidence | Boundary summary | Decision status |
 |---|---|---|---|---|---|---|---|---|
@@ -45,7 +45,7 @@ It does not finalize bridge IDs, does not promote nodes to final `canonical-exte
 | BR_DRAFT_C_003 | C | N_BE_00118 | canonical-extension-candidate | BIAN-4 | gap-source | medium | Object-as-cognitive-appearance support. | draft |
 | BR_DRAFT_C_004 | C | N_BE_00127 | canonical-extension-candidate | BIAN-16 | support-evidence | medium | Pramana formula fourfold decomposition. | draft |
 | BR_DRAFT_D_001 | D | N_BE_00158 | canonical-extension-candidate | BIAN-14 | support-evidence | medium | Tri-rupa-hetu three-condition validity. | draft |
-| BR_DRAFT_D_002 | D | N_BE_00161 | canonical-extension-candidate | BIAN-15/18 | support-evidence | medium | Nonoccurrence condition for absence-side evidence. | draft |
+| BR_DRAFT_D_002 | D | N_BE_00161 | canonical-extension-candidate | BIAN-15/9 | support-evidence | medium | Nonoccurrence condition for contrastive and absence-side evidence. | draft |
 | BR_DRAFT_D_003 | D | N_BE_00164 | canonical-extension-candidate | BIAN-16 | support-evidence | medium | Object-known dependence on means of knowing. | draft |
 | BR_DRAFT_D_004 | D | N_BE_00165 | canonical-extension-candidate | BIAN-16 | support-evidence | medium | Reciprocal pramana-prameya dependence. | draft |
 | BR_DRAFT_D_005 | D | N_BE_00170 | canonical-extension-candidate | BIAN-16 | support-evidence | medium | Means/result non-distinction for self-completion. | draft |
@@ -56,7 +56,7 @@ It does not finalize bridge IDs, does not promote nodes to final `canonical-exte
 | BR_DRAFT_E_002 | E | N_BE_00193 | canonical-extension-candidate | BIAN-4 | gap-source | medium | Anti-realist ontology boundary for representation. | draft |
 | BR_DRAFT_E_003 | E | N_BE_00203 | canonical-extension-candidate | BIAN-16 | support-evidence | medium | Four-process registration sequence model. | draft |
 | BR_DRAFT_F_001 | F | N_BE_00240 | canonical-extension-candidate | BIAN-4 | gap-source | medium | Perceptual-conceptual gap as representation problem. | draft |
-| BR_DRAFT_F_002 | F | N_BE_00253 | canonical-extension-candidate | BIAN-18 | support-evidence | medium | Non-perception for absence-side evidence. | draft |
+| BR_DRAFT_F_002 | F | N_BE_00253 | canonical-extension-candidate | BIAN-9 | support-evidence | medium | Non-perception for formal absence cognition. | draft |
 
 ---
 
@@ -68,10 +68,11 @@ It does not finalize bridge IDs, does not promote nodes to final `canonical-exte
 | **BIAN-14** | **3** | C_001, C_002, D_001 | C (2) |
 | **BIAN-15** | **2** | C_002, D_002 | — |
 | **BIAN-16** | **6** | B_002, C_004, D_003, D_004, D_005, E_003 | D (3) |
-| **BIAN-18** | **2** | D_002, F_002 | — |
-| **Total** | **21** | | |
+| **BIAN-9** | **2** | D_002, F_002 | — |
+| **Unique bridge rows** | **19** | | |
+| **BIAN-support links** | **21** | | |
 
-Note: BR_DRAFT_C_002 and BR_DRAFT_D_002 each serve two BIANs (14/15 and 15/18 respectively).
+Note: BR_DRAFT_C_002 and BR_DRAFT_D_002 each serve two BIANs (14/15 and 15/9 respectively). This is why the registry has 19 unique bridge rows but 21 BIAN-support links.
 
 ---
 
@@ -91,15 +92,15 @@ RCA decision: keep all six as draft. This cluster provides strong evidence that 
 
 ### Finding 3 — Negative evidence needs boundary clarification
 
-Root cause: BIAN-14 (tripartite validity), BIAN-15 (contrastive evidence), and BIAN-18 (absence/null-event) all receive negative-evidence support but at different structural positions.
+Root cause: BIAN-14 (tripartite validity), BIAN-15 (contrastive evidence), and BIAN-9 (formal absence cognition) all receive negative-evidence support but at different structural positions. BIAN-18 is excluded from this cluster because the BIAN SOT reserves it for intrinsic/extrinsic validity location.
 
 RCA decision: preserve boundaries. Do not collapse negative concomitance, contrastive evidence, and non-perception into one bridge until a dedicated negative-evidence structural review is complete.
 
 ### Finding 4 — 263-node audit is complete with controlled expansion
 
-Root cause: 21 bridges from 233 RCA nodes (9% extraction rate) confirms the Evidence Layer First principle. Most RCA nodes are source context, not mapping structure.
+Root cause: 19 unique bridge rows from 233 RCA nodes (about 8% extraction rate), carrying 21 BIAN-support links, confirms the Evidence Layer First principle. Most RCA nodes are source context, not mapping structure.
 
-RCA decision: the 21 draft bridges represent the conservative upper-bound of what the 263-node SOT can support under current boundary controls.
+RCA decision: the 19 unique bridge rows, carrying 21 BIAN-support links, represent the conservative upper-bound of what the 263-node SOT can support under current boundary controls.
 
 ---
 
@@ -107,7 +108,7 @@ RCA decision: the 21 draft bridges represent the conservative upper-bound of wha
 
 | Control | Result | RCA note |
 |---|---|---|
-| No BE-QM identity | Pass | All 21 bridge rows use support/gap-source language. |
+| No BE-QM identity | Pass | All 19 unique bridge rows use support/gap-source language. |
 | No new QM law | Pass | No bridge row claims physical formalism expansion. |
 | No automatic E17+ | Pass | All evidence/support for existing BIAN analysis. |
 | No final canonical-extension | Pass | All node statuses remain `canonical-extension-candidate`. |
@@ -119,7 +120,7 @@ RCA decision: the 21 draft bridges represent the conservative upper-bound of wha
 
 ## 7. Decision Status
 
-All 21 bridges remain `draft only`. No bridge has been assigned a final `BR_XXXXX` ID.
+The 19 unique bridge rows remain `draft only`. No bridge has been assigned a final `BR_XXXXX` ID.
 
 Promotion to final status requires a separate RCA review confirming:
 1. Final ID format and numbering
@@ -135,7 +136,7 @@ Promotion to final status requires a separate RCA review confirming:
 
 The 263-node RCA audit cycle is complete. Recommended next steps:
 
-1. **Bridge finalization review** — audit the 21 draft bridges for uniqueness and merge where appropriate.
+1. **Bridge finalization review** — audit the 19 unique bridge rows for uniqueness and merge where appropriate.
 2. **BIAN support text updates** — for each supported BIAN, draft support-note updates.
 3. **Mapping SOT insertion** — determine which bridge rows should be referenced from the main mapping SOT.
 4. **Full RCA summary report** — produce a single summary artifact covering the entire cycle.

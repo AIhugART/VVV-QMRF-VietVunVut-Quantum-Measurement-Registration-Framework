@@ -331,12 +331,28 @@ All evidence traceable to SOT. All derivations Class D (awaiting verification). 
 
 ---
 
+## 8. Claim Traceability Review / Rà soát Truy vết Claim
+
+| Claim ID | Claim Text | Claim Type | Source File | Source Anchor | Confidence | Allowed Usage | Forbidden Usage | Verification Rule |
+|---|---|---|---|---|---|---|---|---|
+| C-META-001 | BIAN-1 generated a new meta-architecture layer for VVV-QMRF. | derived | This document; `BIAN_gap_analysis_ver_01.md`; S1 synthesis source | This document §§0, 4, 7 | medium | Use as a meta-architecture derivation claim for the BIAN-1 lineage. | Do not claim BIAN-1 proves a new physical law or replaces Standard QM measurement theory. | Verify the derivation chain from BIAN-1 to S1-Λ, ENI, GCS, MIP, and PCC. |
+| C-META-002 | S1-Λ is the direct resolution of BIAN-1. | derived | This document; `vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md` | This document §§1-2a; S1 §4d | high | Use as the named transition lemma for the E4-to-E5 registration-stage joint. | Do not promote S1-Λ to a postulate unless a separate RCA upgrades it. | Check that S1-Λ preserves causal content, adds symbolic structure, is non-operational, and is non-trivial. |
+| C-META-003 | ENI, GCS, MIP, and PCC are downstream meta-architecture components derived from BIAN-1 through S1-Λ. | derived | This document; ENI and GCS meta-architecture sources | This document §§1-4 | medium | Use to explain the component lineage inside VVV-QMRF architecture. | Do not treat every downstream component as equally source-level or experimentally validated. | Confirm each component's source row, derivation type, and layer position. |
+| C-META-004 | The meta-architecture layer describes rules about the framework rather than new physical operations inside the framework. | boundary_application | This document | This document §4 | high | Use as the layer boundary for meta-architecture documents. | Do not read meta-architecture rules as detector responses, Hamiltonian terms, or Born-rule modifications. | Confirm that generated components govern classification, interfaces, interiority, or completeness rather than physical dynamics. |
+| C-META-005 | All listed evidence is Class D derived research awaiting external verification. | derived | This document | This document §§6-7 | high | Use as the assertion-level guardrail for this document. | Do not present the component registry as peer-reviewed, canonical Buddhist doctrine, or standard QM. | Check the final evidence chain and component registry status labels before reuse. |
+
+### Claim Reuse Boundary / Ranh giới Tái sử dụng Claim
+
+These claims may be reused only with their source file, source anchor, claim type, confidence, allowed usage, forbidden usage, and verification rule preserved. Any reuse that converts a registration-layer derivation into a physical-law claim must be downgraded or marked `TODO(HOTFIX)`.
+
+---
+
 ## Schema Validation Checklist / Checklist Kiểm chứng Schema
 
 | Check | Status | RCA note |
 |---|---|---|
 | Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
 | Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
-| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Claim traceability | Pass | Major claims now include claim IDs, claim types, source files, source anchors, confidence, allowed usage, forbidden usage, and verification rules. |
 | Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
 | Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

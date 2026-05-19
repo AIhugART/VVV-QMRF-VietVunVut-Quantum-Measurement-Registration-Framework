@@ -387,12 +387,30 @@ structured suspension that motivates inquiry, not a binary/equal-weight state.
 
 ---
 
+## 7. Claim Traceability Review / Rà soát Truy vết Claim
+
+| Claim ID | Claim Text | Claim Type | Source File | Source Anchor | Confidence | Allowed Usage | Forbidden Usage | Verification Rule |
+|---|---|---|---|---|---|---|---|---|
+| C-GCS-X-001 | The four former Class X gaps are resolved by applying the GCS Decision Test. | derived | `documents/research_documents/meta_architecture/vvv_qmrf_meta_architecture_gap_classification_system.md`; this document | GCS §6; this document §§1-5 | high | Use as the current triage result for the four listed former Class X gaps. | Do not apply to every possible future research gap. | Re-run the three-part GCS Decision Test for BIAN-3, BIAN-8, BIAN-9, and BIAN-11. |
+| C-GCS-X-002 | BIAN-3 is reclassified from Class X to Class C as Limit-Faculty Registration. | derived; interpretive_mapping | This document; active Category 11 source when available | This document §1; Category 11 sketch | medium | Use as a registration-layer taxonomy proposal grounded in QM measurement-type diversity. | Do not treat QM weak/projective/continuous measurement diversity as identical to VVV-QMRF limit-faculty registration taxonomy. | Confirm that QM has weak/projective/continuous measurement diversity and that the VVV-QMRF category remains registration-layer only. |
+| C-GCS-X-003 | BIAN-8 is reclassified from Class X to Class A and resolved through Category 12 plus E13. | derived; boundary_application | This document; active Category 12 and E13 sources when available | This document §2; BIAN-8 Resolution Framework §6 | medium | Use as a registration-layer structural-gap classification around temporal discontinuity. | Do not say Standard Quantum Mechanics is logically defective or that E13 changes standard physical dynamics. | Verify BIAN-8's Class A rationale, node strength summary, Category 12 linkage, and E13 postulate linkage against active VVV-QMRF source documents. |
+| C-GCS-X-004 | BIAN-9 is reclassified from Class X to Class C as Validated Absence Registration. | derived; interpretive_mapping | This document; active Category 13 source when available | This document §3; Category 13 sketch | medium | Use null measurement, interaction-free measurement, and Renninger-style cases as supporting QM phenomena for a registration-layer category. | Do not identify these QM cases with Anupalabdhi or treat ordinary detector silence as validated absence. | Confirm that validated absence requires explicit validity conditions and is not treated as ordinary detector silence. |
+| C-GCS-X-005 | BIAN-11 is reclassified from Class X to Class C as Pre-Measurement Registration Indeterminacy. | derived; interpretive_mapping | This document; active Category 15 source when available | This document §4; Category 15 sketch | medium | Use as K-side structured suspension framing before eigenvalue registration. | Do not treat superposition, density matrices, QBism, Copenhagen, or Many-worlds examples as the VVV-QMRF taxonomy itself. | Confirm that the claim stays on the registering system's K-side and does not alter the physical ρ-side account. |
+| C-GCS-X-006 | The Class X remainder becomes zero after this triage. | derived | This document | This document §5 Summary Table and Updated GCS Distribution | high | Use only for the listed four former Class X gaps in the current triage table. | Do not claim that the entire project has no unresolved questions. | Compare the four input Class X rows with the four post-triage classifications in the summary table. |
+| C-GCS-X-007 | The category registry gains Categories 11, 12, 13, and 15 as triage outputs. | derived | This document; active category/framework sources when available | This document §5 Category Registry Update | medium | Use as a meta-architecture registry update requiring downstream source synchronization. | Do not treat category registry updates as new Standard QM laws or Buddhist canonical doctrine. | Check each new category row against its corresponding BIAN section and active category/framework source before publication use. |
+
+### Claim Reuse Boundary / Ranh giới Tái sử dụng Claim
+
+These claims may be reused only when the source anchor, claim type, and boundary are preserved. Any reuse that presents a registration-layer category as Standard Quantum Mechanics, treats a BE-QM mapping as identity, or extends `Class X remainder = 0` beyond the listed GCS triage set must be downgraded or marked `TODO(HOTFIX)`.
+
+---
+
 ## Schema Validation Checklist / Checklist Kiểm chứng Schema
 
 | Check | Status | RCA note |
 |---|---|---|
 | Document type declared | Pass | Declared as `meta_architecture` for schema alignment. |
 | Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
-| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Claim traceability | Pass | Major claims now include claim IDs, claim types, source files, source anchors, confidence, allowed usage, forbidden usage, and verification rules. |
 | Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
 | Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

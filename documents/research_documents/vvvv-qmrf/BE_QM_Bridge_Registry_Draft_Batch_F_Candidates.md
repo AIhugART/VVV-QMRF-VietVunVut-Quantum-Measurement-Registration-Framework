@@ -39,7 +39,7 @@ It does not update the main mapping SOT, does not finalize bridge IDs, does not 
 | Bridge ID | BE node | BE status | QM/VVV-QMRF target | Relation type | Confidence | Claim class | Boundary | Source basis | Decision status | RCA note |
 |---|---|---|---|---|---|---|---|---|---|---|
 | BR_DRAFT_F_001 | N_BE_00240 | canonical-extension-candidate | BIAN-4 — Measurement representation / perceptual-conceptual gap | gap-source | medium | structural | The perceptual-conceptual gap identifies a source-side structural problem only; it does not assert a QM equivalent or BE resolution. | `system_be_full.md` row 240; `BE_Node_Expansion_RCA_Promotion_Gate_Batch_F_Candidates.md` | draft | Supports BIAN-4 by explicitly identifying the representation gap problem space. |
-| BR_DRAFT_F_002 | N_BE_00253 | canonical-extension-candidate | BIAN-18 — Absence cognition and null-event analysis / non-perception | support-evidence | medium | structural | Anupalabdhi supports non-perception as absence-side evidence only; it does not define a QM non-detection mechanism. | `system_be_full.md` row 253; `BE_Node_Expansion_RCA_Promotion_Gate_Batch_F_Candidates.md` | draft | Supports BIAN-18 through perceptual/evidential approach to absence distinct from ontological Abhava. |
+| BR_DRAFT_F_002 | N_BE_00253 | canonical-extension-candidate | BIAN-9 — Formal cognition of absence / non-perception | support-evidence | medium | structural | Anupalabdhi supports non-perception as absence-side evidence only; it does not define a QM non-detection mechanism. | `system_be_full.md` row 253; `BE_Node_Expansion_RCA_Promotion_Gate_Batch_F_Candidates.md` | draft | Supports BIAN-9 through a perceptual/evidential approach to absence distinct from ontological Abhava. |
 
 ---
 
@@ -48,7 +48,7 @@ It does not update the main mapping SOT, does not finalize bridge IDs, does not 
 | BIAN | Draft bridges | RCA interpretation |
 |---|---|---|
 | BIAN-4 | BR_DRAFT_F_001 | Perceptual-conceptual gap directly names the representation problem Dinnaga leaves open — a distinct gap-source angle not covered by other BIAN-4 bridges. |
-| BIAN-18 | BR_DRAFT_F_002 | Non-perception gives BIAN-18 a second support (alongside BR_DRAFT_D_002 nonoccurrence condition). They are related but approach absence from different angles: ontological condition vs perceptual evidence. |
+| BIAN-9 | BR_DRAFT_F_002 | Non-perception gives BIAN-9 a support bridge. It complements BR_DRAFT_D_002 differently: BR_DRAFT_D_002 is a contrastive/nonoccurrence condition, while BR_DRAFT_F_002 is perceptual evidence for formal cognition of absence. |
 
 ---
 

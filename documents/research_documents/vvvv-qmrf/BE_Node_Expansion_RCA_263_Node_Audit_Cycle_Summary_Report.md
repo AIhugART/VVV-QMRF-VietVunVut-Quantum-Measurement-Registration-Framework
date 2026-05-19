@@ -42,7 +42,7 @@ After formal RCA (5 Whys + Decision Gate), the chosen path was:
 | No-map nodes | 24 |
 | Nodes marked `canonical-extension-candidate` | 32 |
 | Nodes passing 6-gate promotion | 19 |
-| Draft bridges created | 21 (some serve 2 BIANs) |
+| Draft bridge rows created | 19 unique rows / 21 BIAN-support links |
 | New E17+ postulates added | 0 |
 | Nodes promoted to final `canonical-extension` | 0 |
 | Main mapping SOT updates | 0 |
@@ -84,9 +84,9 @@ After formal RCA (5 Whys + Decision Gate), the chosen path was:
 | # | Artifact | Bridges | BIANs covered |
 |---|---|---|---|
 | R1 | `BE_QM_Bridge_Registry_Draft_Batch_B_Candidates.md` | 2 | BIAN-4, BIAN-16 |
-| R2 | `BE_QM_Bridge_Registry_Draft_Batch_D_Candidates.md` | 8 | BIAN-4, BIAN-14, BIAN-15, BIAN-16, BIAN-18 |
+| R2 | `BE_QM_Bridge_Registry_Draft_Batch_D_Candidates.md` | 8 | BIAN-4, BIAN-14, BIAN-15, BIAN-16, BIAN-9 |
 | R3 | `BE_QM_Bridge_Registry_Draft_Batch_E_Candidates.md` | 3 | BIAN-4, BIAN-16 |
-| R4 | `BE_QM_Bridge_Registry_Draft_Batch_F_Candidates.md` | 2 | BIAN-4, BIAN-18 |
+| R4 | `BE_QM_Bridge_Registry_Draft_Batch_F_Candidates.md` | 2 | BIAN-4, BIAN-9 |
 
 ### 2.5 Consolidated Registries
 
@@ -95,13 +95,13 @@ After formal RCA (5 Whys + Decision Gate), the chosen path was:
 | C1 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BC.md` | 6 | B, C |
 | C2 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCD.md` | 14 | B, C, D |
 | C3 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCDE.md` | 19 | B, C, D, E |
-| C4 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCDEF.md` | 21 | B, C, D, E, F |
+| C4 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCDEF.md` | 19 unique rows / 21 BIAN-support links | B, C, D, E, F |
 
 ### 2.6 Finalization
 
 | # | Artifact | Purpose |
 |---|---|---|
-| F1 | `BE_QM_Bridge_Finalization_Review_Uniqueness_Audit.md` | Uniqueness audit of 21 bridges; zero merges recommended |
+| F1 | `BE_QM_Bridge_Finalization_Review_Uniqueness_Audit.md` | Uniqueness audit of 19 unique bridge rows / 21 BIAN-support links; zero merges recommended |
 
 ---
 
@@ -152,7 +152,7 @@ After formal RCA (5 Whys + Decision Gate), the chosen path was:
 
 **RCA note:** The five structural levels (result, decomposition, dependence×2, relation, sequence) form a genuine multi-level support chain for BIAN-16. No E17+ is created by this chain alone — these are evidence supports for the existing E1-E7 self-completion structure.
 
-### 3.5 BIAN-18 — Absence Cognition / Null-Event Analysis (2 bridges)
+### 3.5 BIAN-9 — Formal Absence Cognition / Non-Perception Support (2 bridges)
 
 | Bridge | Batch | BE Node | Concept | Relation |
 |---|---|---|---|---|
@@ -165,12 +165,12 @@ After formal RCA (5 Whys + Decision Gate), the chosen path was:
 
 | Control | Status | Evidence |
 |---|---|---|
-| No BE-QM identity | **PASS** | All 21 bridges use support/gap-source language |
+| No BE-QM identity | **PASS** | All 19 unique bridge rows use support/gap-source language |
 | No new QM law | **PASS** | No bridge claims physical formalism expansion |
 | No automatic E17+ | **PASS** | All bridges are evidence/support for existing BIANs |
 | No final canonical-extension | **PASS** | All node statuses remain `canonical-extension-candidate` |
 | No main SOT update | **PASS** | All registries are standalone draft artifacts |
-| No forced merge | **PASS** | Uniqueness audit found 0 redundant bridges |
+| No forced merge | **PASS** | Uniqueness audit found 0 redundant unique bridge rows |
 | Full traceability | **PASS** | Every bridge references `system_be_full.md` row and promotion-gate source |
 
 ---
@@ -184,7 +184,7 @@ After formal RCA (5 Whys + Decision Gate), the chosen path was:
 | 3 | Mapping SOT insertion | Deferred | Reference selected bridges from main mapping SOT |
 | 4 | BIAN support text updates | Deferred | Update BIAN entries with bridge evidence references |
 | 5 | Node status promotion | Deferred | Promote 19 bridge-source nodes from `canonical-extension-candidate` to `canonical-extension` |
-| 6 | Negative evidence boundary review | Deferred | Clarify BIAN-14/15/18 boundary for negative evidence |
+| 6 | Negative evidence boundary review | Deferred | Clarify BIAN-14/15/9/13 boundary for negative evidence, formal absence, and null-event language |
 | 7 | Batch F nodes N_BE_00234, N_BE_00256, N_BE_00258 re-review | Deferred | These evidence-only nodes are close to the gate threshold and may deserve re-review |
 
 ---
@@ -207,6 +207,8 @@ Policy: BE_Node_Expansion_Policy_RCA.md (active)
 Batch audits: 6/6 complete
 Promotion gates: 5/5 complete
 Bridge registries: 12/12 complete
+Unique bridge rows: 19
+BIAN-support links: 21
 Uniqueness audit: 1/1 complete
 Open items: 7 (see Section 5)
 

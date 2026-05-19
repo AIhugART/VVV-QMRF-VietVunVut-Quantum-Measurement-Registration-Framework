@@ -40,8 +40,8 @@ The audit decides whether each candidate remains `evidence-only` or advances to 
 |---|---|---|---|---|---|---|---|---|---|---|
 | N_BE_00234 | Avisamvaditva | N_BE_00001 / N_BE_00018 | Pass | Partial | High | Pass | Pass | Pass | evidence-only | Non-deceptiveness is an important Dharmakirtian validity criterion but is already captured by core Pramana (valid cognition) and the trairupya framework. Keep as support evidence for BIAN-14. |
 | N_BE_00240 | Perceptual-conceptual gap | N_BE_00002 / N_BE_00003 / N_BE_00008 | Pass | Pass | High | Pass | Pass | Pass | canonical-extension-candidate | The gap Dinnaga leaves open — how to relate perceptual and conceptual realms — is a distinct structural problem directly relevant to BIAN-4 representation analysis. Not covered by any single core node. |
-| N_BE_00253 | Anupalabdhi | N_BE_00024 / N_BE_00151 | Pass | Pass | High | Pass | Pass | Pass | canonical-extension-candidate | Non-perception replaces realist absence with a perceptual/evidential concept — distinct from ontological Abhava and from the nonoccurrence condition. Relevant to BIAN-18 null-event and absence-side analysis. |
-| N_BE_00256 | Anupalabdhi-hetu | N_BE_00024 / N_BE_00253 | Pass | Partial | High | Pass | Pass | Pass | evidence-only | The non-perception reason is the formal subtype of Anupalabdhi; too granular for a separate bridge when Anupalabdhi itself is a candidate. Keep as paired source evidence for BIAN-18. |
+| N_BE_00253 | Anupalabdhi | N_BE_00024 / N_BE_00151 | Pass | Pass | High | Pass | Pass | Pass | canonical-extension-candidate | Non-perception replaces realist absence with a perceptual/evidential concept — distinct from ontological Abhava and from the nonoccurrence condition. Relevant to BIAN-9 formal cognition of absence. |
+| N_BE_00256 | Anupalabdhi-hetu | N_BE_00024 / N_BE_00253 | Pass | Partial | High | Pass | Pass | Pass | evidence-only | The non-perception reason is the formal subtype of Anupalabdhi; too granular for a separate bridge when Anupalabdhi itself is a candidate. Keep as paired source evidence for BIAN-9. |
 | N_BE_00258 | Adhyavasaya | N_BE_00008 / N_BE_00013 | Pass | Partial | High | Pass | Pass | Pass | evidence-only | Determination of real particulars through fictional conceptual thought is an important cognitive mechanism but is closely tied to Kalpana and the apoha/exclusion framework. Keep as support evidence for BIAN-4. |
 
 ---
@@ -53,7 +53,7 @@ Only nodes that pass all six gates receive bridge-row drafts. These drafts do no
 | Draft Bridge | BE node | BE status | QM/VVV-QMRF target | Relation type | Confidence | Claim class | Boundary | Source basis |
 |---|---|---|---|---|---|---|---|---|
 | BR_DRAFT_F_001 | N_BE_00240 | canonical-extension-candidate | BIAN-4 — Measurement representation / perceptual-conceptual gap | gap-source | medium | structural | The perceptual-conceptual gap supports source-side representation-gap analysis only; it does not assert that QM has an equivalent gap or that BE resolves it. | `system_be_full.md` row 240; Batch F audit |
-| BR_DRAFT_F_002 | N_BE_00253 | canonical-extension-candidate | BIAN-18 — Absence cognition and null-event analysis / non-perception | support-evidence | medium | structural | Anupalabdhi supports non-perception as absence-side evidence only; it does not define QM non-detection or null measurement. | `system_be_full.md` row 253; Batch F audit |
+| BR_DRAFT_F_002 | N_BE_00253 | canonical-extension-candidate | BIAN-9 — Formal cognition of absence / non-perception | support-evidence | medium | structural | Anupalabdhi supports non-perception as absence-side evidence only; it does not define QM non-detection or null measurement. | `system_be_full.md` row 253; Batch F audit |
 
 ---
 
@@ -62,7 +62,7 @@ Only nodes that pass all six gates receive bridge-row drafts. These drafts do no
 | Node | Status | Support target | Boundary note |
 |---|---|---|---|
 | N_BE_00234 | evidence-only | BIAN-14 / validity-criterion support | Do not split from core Pramana unless a later bridge needs a dedicated non-deceptiveness node. |
-| N_BE_00256 | evidence-only | BIAN-18 / non-perception reason support | Keep paired with Anupalabdhi as formal-reason subtype evidence. |
+| N_BE_00256 | evidence-only | BIAN-9 / non-perception reason support | Keep paired with Anupalabdhi as formal-reason subtype evidence. |
 | N_BE_00258 | evidence-only | BIAN-4 / determination-via-conceptual-thought | Do not split from Kalpana and Apoha unless a later bridge requires a dedicated determination node. |
 
 ---
@@ -108,7 +108,7 @@ No node is promoted to final `canonical-extension` status in this document.
 | Evidence Layer First preserved | Pass | Three of five candidates remain evidence-only. |
 | No full canonical replacement | Pass | Passing nodes are candidates only, not final canonical extensions. |
 | No automatic E17+ | Pass | No new registration-layer postulate is proposed. |
-| BIAN impact controlled | Pass | BIAN-4 and BIAN-18 receive two support drafts only. |
+| BIAN impact controlled | Pass | BIAN-4 and BIAN-9 receive two support drafts only. |
 | Bridge boundary explicit | Pass | Draft bridges include support-only / no identity boundaries. |
 | Overclaim risk controlled | Pass | Nodes with partial duplication remain evidence-only. |
 | 263-node audit cycle complete | Pass | All six audit batches and all five promotion-gate reviews are complete. |
@@ -121,7 +121,7 @@ Create the final bridge registry draft for the two passing Batch F candidates:
 
 ```text
 BR_DRAFT_F_001 -> N_BE_00240 -> BIAN-4
-BR_DRAFT_F_002 -> N_BE_00253 -> BIAN-18
+BR_DRAFT_F_002 -> N_BE_00253 -> BIAN-9
 ```
 
 Then create the final consolidated bridge registry draft for Batch B/C/D/E/F.

@@ -57,7 +57,7 @@ It does not finalize bridge IDs, does not promote nodes to final `canonical-exte
 | Bridge ID | Source batch | BE node | BE status | QM/VVV-QMRF target | Relation type | Confidence | Claim class | Boundary | Source basis | Decision status | RCA note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | BR_DRAFT_D_001 | D | N_BE_00158 | canonical-extension-candidate | BIAN-14 — Tripartite measurement validity conditions | support-evidence | medium | structural | Tri-rupa-hetu supports three-condition validity logic only; it is not a QM statistical rule. | `system_be_full.md` row 158 | draft | Valid-reason condition structure for BIAN-14. |
-| BR_DRAFT_D_002 | D | N_BE_00161 | canonical-extension-candidate | BIAN-15 / BIAN-18 — Negative evidence and null-event analysis | support-evidence | medium | structural | Nonoccurrence condition supports negative/absence-side evidence only; it does not define a QM null measurement mechanism. | `system_be_full.md` row 161 | draft | Contrastive and absence-side validity analysis. |
+| BR_DRAFT_D_002 | D | N_BE_00161 | canonical-extension-candidate | BIAN-15 / BIAN-9 — Negative evidence and formal absence support | support-evidence | medium | structural | Nonoccurrence condition supports negative/absence-side evidence only; it does not define a QM null measurement mechanism. | `system_be_full.md` row 161 | draft | Contrastive evidence and absence-side support; BIAN-18 remains reserved for intrinsic/extrinsic validity location. |
 | BR_DRAFT_D_003 | D | N_BE_00164 | canonical-extension-candidate | BIAN-16 — Measurement self-completion / object-known dependence | support-evidence | medium | structural | Pramanadhina prameyadhigama supports source-side dependence of object-known on means of knowing; it does not add a registration postulate. | `system_be_full.md` row 164 | draft | Object-known dependence on means of knowing for BIAN-16. |
 | BR_DRAFT_D_004 | D | N_BE_00165 | canonical-extension-candidate | BIAN-16 — Reciprocal registration dependence | support-evidence | medium | structural | Prameyadhina pramanasiddhi supports reciprocal means/object validation only; it is not a QM formal equivalence. | `system_be_full.md` row 165 | draft | Reciprocal pramana-prameya dependence for BIAN-16. |
 | BR_DRAFT_D_005 | D | N_BE_00170 | canonical-extension-candidate | BIAN-16 — Measurement self-completion / pramana-phala non-distinction | support-evidence | medium | structural | Means/result non-distinction supports self-completion analysis only; it does not prove QM measurement is self-completing. | `system_be_full.md` row 170 | draft | Complements Pramaphala and fourfold formula in BIAN-16. |
@@ -83,7 +83,7 @@ It does not finalize bridge IDs, does not promote nodes to final `canonical-exte
 | BIAN-14 | BR_DRAFT_C_001; BR_DRAFT_C_002; BR_DRAFT_D_001 | 3 | Validity-condition gap supported by positive concomitance, negative concomitance, and three-condition valid-reason structure. Triadic evidence. |
 | BIAN-15 | BR_DRAFT_C_002; BR_DRAFT_D_002 | 2 | Contrastive/negative evidence supported by negative concomitance and nonoccurrence condition. |
 | BIAN-16 | BR_DRAFT_B_002; BR_DRAFT_C_004; BR_DRAFT_D_003; BR_DRAFT_D_004; BR_DRAFT_D_005; BR_DRAFT_E_003 | 6 | Second-densest cluster. Covers result, decomposition, reciprocal dependence, non-distinction, and process sequence. Strong multi-level support; no E17+. |
-| BIAN-18 | BR_DRAFT_D_002 | 1 | Null-event / absence-side analysis from nonoccurrence condition. |
+| BIAN-9 | BR_DRAFT_D_002 | 1 | Formal absence support from nonoccurrence condition; routed to BIAN-9 rather than BIAN-18 because BIAN-18 is reserved for intrinsic/extrinsic validity location. |
 
 ---
 
@@ -101,9 +101,9 @@ Root cause: measurement self-completion can be analyzed at multiple structural l
 
 RCA decision: keep all six as draft supports. No new postulate without new registration-layer function proof.
 
-### Finding 3 — BIAN-14 / BIAN-15 / BIAN-18 negative-evidence overlap
+### Finding 3 — BIAN-14 / BIAN-15 / BIAN-9 negative-evidence overlap
 
-Root cause: negative evidence appears as validity condition, contrastive condition, and null/absence condition. Boundary among them is fuzzy at source-evidence level.
+Root cause: negative evidence appears as validity condition, contrastive condition, and formal absence support. Boundary among them is fuzzy at source-evidence level; BIAN-18 is not part of this absence cluster because the BIAN SOT reserves it for intrinsic/extrinsic validity location.
 
 RCA decision: defer boundary clarification to dedicated negative-evidence bridge review.
 

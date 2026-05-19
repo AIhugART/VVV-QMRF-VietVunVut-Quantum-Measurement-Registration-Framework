@@ -1030,8 +1030,10 @@ Check AdmJoint conditions (paper v2.0 §4.3):
         i_W(k_W) = ⟨M_W, |Ψ+⟩, 1, t_W, V_joint(k_W)⟩
         Act, outcome, cert preserved? YES.
         Order: t_F < t_W in lab history → i_F(k_F) <_joint i_W(k_W). YES.
-        V preservation by K8: V_joint(i(k)) = V_original(k) at embedding time.
-        K8 guarantees V(k_F)=1 and V(k_W)=1 carry into K_joint.          ✅ K8
+        V preservation by K8 [V_X(i(k)) = V_R(k) at t_embed]:
+          V_joint(i_F(k_F)) = V_F(k_F) = 1       [k_F native V preserved at embedding]
+          V_joint(i_W(k_W)) = V_W(k_W) = 1       [k_W native V preserved at embedding]
+        Both V=1 carry into K_joint.                                     ✅ K8
 
   (ii)  Self-certification intrinsic to each embedded act?
         σ_F(M_F) = 1 in K_joint? Must remain intrinsic → not redefined by K_joint. YES.
@@ -1122,7 +1124,7 @@ Step 4 — Registered contradiction (SOLID ✅ at K5 minimal level):
   These cannot both be valid K-side claims within one C_K.
   Source: K5 minimal definition.
   Confidence: HIGH for K5 minimal. MEDIUM for full Level 4 ⊥ (not frozen).
-  ⚠ GAP G4: Full Level 4 ⊥ boundary clauses not frozen. K5 minimal used here
+  ⚠ GAP G3: Full Level 4 ⊥ boundary clauses not frozen. K5 minimal used here
   is self-contained but may need revision if Level 4 changes ⊥ semantics.
 
 Step 5 — Bridge_EWF (MEDIUM ⚠ — semantic boundary):
@@ -1134,13 +1136,15 @@ Step 5 — Bridge_EWF (MEDIUM ⚠ — semantic boundary):
   If rejected, Bridge_EWF = 1 does not follow from K1-K8 alone.
   Confidence: MEDIUM — conditional on this semantic commitment.
 
-Step 6 — K5 fires in candidate K_joint (SOLID ✅, modulo EP):
+Step 6 — K5 fires in candidate K_joint (SOLID ✅):
   By K8: embeddings i_F, i_W preserve V values.         [K8: V_X(i(k)) = V_R(k)]
   In candidate K_joint:
     i_F(k_F) <_joint i_W(k_W)                          [K2: t_F < t_W]
     i_W(k_W) ⊥ i_F(k_F) within C_K                    [Step 4]
     Auth(i_W(k_W) → i_F(k_F), C_K) = 1                 [Step 3]
-    → K5: V(i_F(k_F)) → 0                              [K5 invalidation rule]
+    → K5: V_prov(i_F(k_F)) → 0                         [K5 pre-closure invalidation]
+  At this stage, V_final has not yet been assigned: K7 closure can occur only
+  after the pending requires_K_joint demand is resolved.
   This happens while D_joint claims both as jointly valid.
   → AdmJoint condition (iv) violated.
   Confidence: HIGH — direct K5 + K8 application. No gap.
@@ -1197,7 +1201,7 @@ Following the 5-step methodology:
 
 | # | Item | Status | Priority |
 |---|------|--------|:--------:|
-| 1 | Multi-step retroactive chain (E8 extension) | Deferred — K5 single-step; K7 pre-closure allows re-assessment of invalidating acts | Medium |
+| 1 | Multi-step retroactive chain (E8 extension) | Deferred — K5 single-step; K5 V_prov pre-closure mechanism allows re-assessment of invalidating acts before K7 closure (F1: V_prov/V_final lifecycle — V_prov→0 reversible pre-closure, V_final→0 irreversible post-closure). Multi-step chain requires additional axiom(s). | Medium |
 | 2 | Null K-state full formalization (E9 detailed operationalization) | Partial — K1 o=∅ + K4 E9 exception structurally accommodate null events. Detailed operationalization deferred. | Low-Medium |
 | 3 | Validated absence validity conditions (E14 extension) | Partial — K1 o=∅ + K4 default validity structurally accommodate. Specific absence validity conditions deferred. | Medium |
 | 4 | Inter-K-space relation structure (E15 extension) | Deferred — new axiom needed | Low-Medium |
@@ -1210,8 +1214,8 @@ Following the 5-step methodology:
 | 11 | RCA re-audit after community feedback | After Level 4 freeze and T1-T3 finalization | High |
 | 12 | K6 Auth non-transitivity edge cases (circular authority chains) | **Resolved v1.2** — counterexample provided in K6 formal block. Remaining: N≥3 exotic topologies. | Low |
 | 13 | Embedding Postulate (EP) promotion decision | **Resolved v1.4** — EP promoted to K8 (Cross-Space Embedding Preservation). K8 is now a frozen Layer 1 core axiom. T1-T3 no longer depend on an external postulate for V-preservation. | ~~High~~ → Resolved |
-| 14 | T2 circularity resolution — Level 4 ⊥ freeze | T2 derivation is conditional on Level 4 ⊥ formalization being consistent with K5 minimal definition. Circularity resolves when Level 4 freezes. **v1.3 update:** Circularity NOT present in concrete model (§7.5 Step 4) — K5 minimal ⊥ is directly verifiable by content inspection (|h⟩ vs |Ψ+⟩). Circularity remains only in general case. | **High** |
-| 15 | Concrete model gaps G1-G3 (§7.4) | G1 (Relativization): framework-level semantic commitment required by this formulation of D_joint. G2 (K7 closure): working as designed. G3 (Level 4 ⊥): see #14. All gaps are external dependencies, not internal contradictions. **v1.4:** Former EP gap resolved by K8. Renumbered G1-G4 → G1-G3. | Medium |
+| 14 | T2 circularity resolution — Level 4 ⊥ freeze | T2 derivation is conditional on Level 4 ⊥ formalization being consistent with K5 minimal definition. Circularity resolves when Level 4 freezes. **v1.3 update:** Circularity NOT present in concrete model (§7.5 Step 4) — K5 minimal ⊥ is directly verifiable by content inspection (|h⟩ vs |Ψ+⟩). Circularity remains only in general case. **v1.4/Phase 2 update:** T2 also documented as K7 Dep-B (F6b + F7b): T2's AdmJoint(iv) operates on V_prov during pre-closure admissibility testing; resolved-demand outcomes (AdmJoint=1 or AdmJoint=0 → ⊥_K) supply K7 closure semantics. This is a Layer 2 (updatable) dependency — K1-K8 unchanged. | **High** |
+| 15 | Concrete model gaps G1-G3 (§7.4) | G1 (Relativization): framework-level semantic commitment required by this formulation of D_joint. G2 (K7 closure): working as designed. G3 (Level 4 ⊥): see #14. All gaps are external dependencies, not internal contradictions. **v1.4:** Former EP gap resolved by K8. Renumbered G1-G4 → G1-G3. **Phase 2 note:** Dep-A (C_K existence precondition, Level 4 §4.3) and Dep-B (T1 `<_joint>` ordering from K2+K8) are satisfied dependencies in the concrete model (§7.5 Steps 3, 6 — both SOLID ✅ HIGH confidence) — not open gaps. Documented in K5/K6/K7 Dependency rows. | Medium |
 
 ---
 
@@ -1255,7 +1259,7 @@ Following the 5-step methodology:
 | P1 | K1-K8 are internally consistent (concrete model: 2 observers, 1 event each) | **PROVEN** (§7.2-7.4) | HIGH |
 | P2 | Level 4 definitions can be expressed in terms of K1-K8 primitives | **PROVEN** (§7.3) | HIGH |
 | P3 | The derivation chain requires_K_joint → D_joint → C_K → Auth → ⊥ → Bridge_EWF → K5 fires → AdmJoint fails → ⊥_K is well-defined (no circular reasoning) | **PROVEN** (§7.3, §7.5) | HIGH |
-| P4 | Step 6 (K5 fires in K_joint) does NOT depend on any external postulate | **PROVEN** (v1.4: K8 resolves former EP gap) | HIGH |
+| P4 | Step 6 (K5 fires in K_joint) does NOT depend on any external postulate | **PROVEN** (v1.4: K8 resolves former EP gap; F1: K5 fires on V_prov pre-closure — V_prov/V_final distinction is K5+K7 internal, no new external dependency) | HIGH |
 | P5 | K5 minimal ⊥ can be verified by content inspection without invoking Level 4 full ⊥ (circularity absent in concrete model) | **PROVEN** (§7.5 Step 4) | HIGH |
 | P6 | K_joint candidate existence is derivable from K1-K8 + Level 4 scope identifiers | **PROVEN** (T1, updated v1.4) | HIGH |
 
@@ -1286,12 +1290,14 @@ Following the 5-step methodology:
 | A3 | General case proof (structural induction on |K_R|, N observers) | Medium | T4, E8, E15 |
 | A4 | Edge case: E9 null events, E14 validated absence | Medium | E8-E16 audit phase |
 | A5 | Category-theoretic formalization of K_joint as colimit (N>2) | Low-Medium | T4 |
+| A6 | When Level 4 freezes, verify that conditional semantic dependencies — Dep-A (C_K existence precondition, Level 4 §4.3) and Dep-B (T1 `<_joint>` ordering via K2+K8+Level 4) documented in K5/K6/K7 Dependency rows — remain consistent with frozen Level 4 extensional definitions | Medium | Level 4 freeze (resolves Open Item #14) |
 
 ---
 
-*Document v1.4 — 2026-05-19 — VVV-QMRF §K-AXIOM*
+*Document v1.5 — 2026-05-19 — VVV-QMRF §K-AXIOM*
 *Status: Class D (proposed). All axioms and theorems are proposed registration-layer definitions.*
 *Layer 1 (K1-K8): Frozen. Layer 2 (T1-T4): Updatable pending Level 4 freeze.*
+*RCA audit (v1.4 → v1.5): Full Phase 1–5 RCA audit completed (plan v28). Phase 1 (F1–F5c): K5 V_prov/V_final lifecycle split (F1, BLOCKING resolved); K6 non-transitivity scoped to distinct C_K contexts (F2); §0.5 isolation paragraph 2-part split (F3); Layer 1 Summary C_K roles (F4); K5 K_R disambiguation + firing precondition + Dep-A/Dep-B documented (F5a–F5c). Phase 2 (F6a–F6c): K6/K7 Dep-A (C_K precondition) + I-03 pattern documented (F6a–F6b); C-KAXIOM-010 rewritten as 2-part syntactic/semantic isolation (F6c). Phase 3 (F7a–F7d): T1 non-circularity guard (F7a); T2 AdmJoint V_prov timing + K7 resolved-demand semantics (F7b); T3 framework-level semantic boundary wording (F7c); T4 global commutativity guard (F7d). Phase 4 (F8a–F8d): E2 K1 vs K4/K7 boundary; E9 definitional null-status boundary; E8 V_prov/T2/E9 precision; BE lineage expanded to 8/8 PASS (F8a–F8d). Phase 5 (F9a–F9d): §7.5 Step 6 V_prov notation (F9a); §7.5 Step 4 stale GAP G4 → G3 label (F9b); §10.3 P4 citation V_prov internal note + §7.5 Step 6 stale "modulo EP" removed (F9c); §7.3 L4-7 K8 canonical V_F/V_W subscript notation (F9d). Phase 6 (F10a–F10f): Open Item #1 K5 V_prov attribution (F10a); Open Item #14 T2 Dep-B note (F10b); Open Item #15 Dep-A/Dep-B satisfied note (F10c); Action Item A6 added — Dep-A/Dep-B post-freeze verification (F10d); document header and version history updated (F10e–F10f).*
 *RCA audit (v1.3 → v1.4): (1) EP promoted to K8 (Cross-Space Embedding Preservation) — Layer 1 now has 8 core axioms. K8 guarantees V-preservation through cross-space embeddings. (2) T1 derivation updated: V-preservation now from K8, not external postulate. Former EP gap (G1) RESOLVED. (3) T2 proof attempt gaps reduced from 3 to 2: only relativization defense (G1, framework-level semantic commitment) and Level 4 ⊥ freeze (G3, temporal) remain. (4) Concrete model §7 updated: K8 consistency walk, AdmJoint check (i) now derives from K8. (5) §10 Level 4 Freeze Check verdict added: internal consistency PROVEN for concrete model; relativization defense documented as framework-level semantic boundary. (6) Open Item #13 closed (EP → K8). Open Items #14, #15 updated.*
 *Previous (v1.2 → v1.3): (1) Concrete model §7 added: minimal EWF (2 observers, 1 event each). K1-K7 consistency walk completed — no contradictions. Level 4 definitions walk completed — derivation chain verified. (2) T2 proof attempt with 3 gaps. (3) Circularity shown absent in concrete model. (4) Open Items #14, #15 added.*
 *Previous (v1.1 → v1.2): K2 corrected to total order. T1 EP gap acknowledged. K6 non-transitivity counterexample. T2 circularity acknowledgment.*

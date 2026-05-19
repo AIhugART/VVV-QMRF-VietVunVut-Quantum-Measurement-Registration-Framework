@@ -712,7 +712,7 @@ The `⊥_K` formal definition chain is now complete at the proposed level (Class
 | Full formal proof for `⊥_K` as a mathematical relation | Requires axiomatized K-space (topology, order); paper currently uses registration-layer structural definition |
 | `AdmJoint` necessary-and-sufficient conditions | Currently sufficient conditions A-E; full characterization requires completed K-space axiomatization |
 | Equivalence of `σ(M)` and `R̂_svasa` formalisms | Separate research track (E01 §11.5) |
-| Axiomatize K as a full mathematical structure | ~~Long-term architectural task; not needed for current Class C/D claims~~ → Addressed 2026-05-19: K1-K5 core axioms + T1-T4 bridge theorems formalized in `documents/research_documents/meta_architecture/K_Space_Axiomatization.md` (VVV-QMRF §K-AXIOM). Layer 1 (K1-K5) frozen; Layer 2 (T1-T3) pending Level 4 freeze. |
+| Axiomatize K as a full mathematical structure | ~~Long-term architectural task; not needed for current Class C/D claims~~ → Addressed 2026-05-19: K1-K8 core axioms + T1-T4 bridge theorems formalized in `documents/research_documents/meta_architecture/K_Space_Axiomatization.md` (VVV-QMRF §K-AXIOM v1.5). Layer 1 (K1-K8) frozen; Layer 2 (T1-T4) pending Level 4 freeze. Concrete model (minimal EWF, 2 observers) completed: K1-K8 consistency verified, Level 4 derivation chain verified, T2 proof attempt done with 2 remaining gaps (relativization defense G1, Level 4 ⊥ freeze G3). Full Phase 1–6 RCA audit complete; all blocking issues resolved. |
 
 **Next-step operational items (required for confirmation):**
 
@@ -774,7 +774,7 @@ The presence of architectural constraints does not distinguish VVV-QMRF from exi
 ---
 
 *Working Paper v2.0 — VVV-QMRF*
-*Submitted to PhilSci Archive for community feedback*
+*Posted to Zenodo for community feedback*
 *All formal claims are Class D (proposed) or Class C (conjecture)*
 *Falsification condition stated in Section 4.6 and Section 7.3*
 *Experiment specification in Section 5.5; requires experimental collaboration for implementation*

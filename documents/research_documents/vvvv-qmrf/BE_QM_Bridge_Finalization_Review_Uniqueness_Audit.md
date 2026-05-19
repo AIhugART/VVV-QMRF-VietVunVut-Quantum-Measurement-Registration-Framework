@@ -9,7 +9,7 @@
 | Document type | Bridge finalization review / uniqueness audit |
 | Parent policy | `BE_Node_Expansion_Policy_RCA.md` |
 | Source registry | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCDEF.md` |
-| Scope | 21 draft bridges from Batches B–F |
+| Scope | 19 unique draft bridge rows from Batches B-F; 21 BIAN-support links because BR_DRAFT_C_002 and BR_DRAFT_D_002 each serve two BIAN targets |
 | Execution mode | Uniqueness audit only; no main SOT update; no final `BR_XXXXX` assignment |
 | Boundary | Structural analogy only; no BE-QM identity; no new QM law; no automatic E17+ |
 
@@ -28,7 +28,7 @@ Before this file was created, the following facts were checked:
 
 ## 2. RCA Purpose
 
-This document audits the 21 draft bridges for uniqueness, overlap, and merge-readiness before any final `BR_XXXXX` ID assignment.
+This document audits the 19 unique draft bridge rows for uniqueness, overlap, and merge-readiness before any final `BR_XXXXX` ID assignment. Two rows have dual BIAN targets, so the review tracks 21 BIAN-support links without treating them as 21 separate bridge rows.
 
 It does NOT assign final IDs, does NOT update the main mapping SOT, and does NOT promote nodes beyond `canonical-extension-candidate`.
 
@@ -83,14 +83,14 @@ It does NOT assign final IDs, does NOT update the main mapping SOT, and does NOT
 
 **BIAN-16 decision:** All 6 bridges survive. The five-level structure (result, decomposition, dependence×2, non-distinction, sequence) is genuinely multi-level and non-redundant.
 
-### 3.5 BIAN-18 — Absence/Null-Event (2 bridges)
+### 3.5 BIAN-9 — Formal Absence Cognition / Non-Perception (2 bridges)
 
 | Bridge | Batch | Sub-facet | Potential overlap | Merge recommendation | Uniqueness decision |
 |---|---|---|---|---|---|
 | BR_DRAFT_D_002 | D | Nonoccurrence condition | Functional overlap with F_002 | Keep separate — ontological/logical condition vs perceptual evidence approach. | **Retain** — distinct approach |
 | BR_DRAFT_F_002 | F | Anupalabdhi (non-perception) | Functional overlap with D_002 | Keep separate — perceptual evidence, not ontological condition. | **Retain** — distinct approach |
 
-**BIAN-18 decision:** Both survive. Nonoccurrence condition (ontological/logical) and non-perception (perceptual/evidential) approach absence from different angles.
+**BIAN-9 decision:** Both survive. Nonoccurrence condition (ontological/logical) and non-perception (perceptual/evidential) approach formal absence from different angles. BIAN-18 remains reserved for intrinsic/extrinsic validity location per the BIAN SOT.
 
 ---
 
@@ -102,8 +102,9 @@ It does NOT assign final IDs, does NOT update the main mapping SOT, and does NOT
 | BIAN-14 | 3 | 3* | 0* | All 3 conditionally survive; recommend fold C_001/C_002 under D_001 in BIAN-14 structural review. |
 | BIAN-15 | 2 | 2 | 0 | Both survive at different structural levels. |
 | BIAN-16 | 6 | 6 | 0 | All 6 survive across five structural levels. |
-| BIAN-18 | 2 | 2 | 0 | Both survive with different approaches. |
-| **Total** | **21** | **21** | **0** | |
+| BIAN-9 | 2 | 2 | 0 | Both survive with different approaches; BIAN-18 is not used for absence/null-event support. |
+| **Unique bridge rows** | **19** | **19** | 0 | |
+| **BIAN-support links** | **21** | **21** | 0 | |
 
 \* Conditionally retained pending BIAN-14 structural review.
 
@@ -113,9 +114,9 @@ It does NOT assign final IDs, does NOT update the main mapping SOT, and does NOT
 
 ### Finding 1 — No duplicate bridges detected
 
-Root cause: the 6-gate RCA promotion process already filtered out duplicate nodes at the gate stage. The surviving 21 bridges represent genuinely non-redundant structural supports.
+Root cause: the 6-gate RCA promotion process already filtered out duplicate nodes at the gate stage. The surviving 19 unique bridge rows represent genuinely non-redundant structural supports; two rows intentionally carry dual BIAN targets.
 
-RCA decision: zero merges recommended at this stage. All 21 bridges survive the uniqueness audit.
+RCA decision: zero merges recommended at this stage. All 19 unique bridge rows survive the uniqueness audit.
 
 ### Finding 2 — BIAN-14 needs a dedicated structural review
 
@@ -139,14 +140,15 @@ RCA decision: keep all 8. The density reflects genuine structural richness in BE
 | No new QM law | Pass | No formalism expansion. |
 | No automatic E17+ | Pass | No new postulate proposed. |
 | No final BR_XXXXX | Pass | Bridges remain draft; no final ID assigned. |
-| No retracted bridges | Pass | All 21 bridges survive uniqueness review. |
+| No retracted bridges | Pass | All 19 unique bridge rows survive uniqueness review. |
 
 ---
 
 ## 7. Decision Status
 
 ```text
-21 bridges = draft only
+19 unique bridge rows = draft only
+21 BIAN-support links = tracked across those rows
 0 bridges = merged (none found redundant)
 0 bridges = final BR_XXXXX (deferred to later review)
 0 bridges = retracted
@@ -156,4 +158,4 @@ RCA decision: keep all 8. The density reflects genuine structural richness in BE
 
 ## 8. Recommended Next RCA Step
 
-Produce the full RCA summary report covering the entire 263-node audit cycle: policy creation, 6 batch audits, 5 promotion gates, 4 bridge registries, 1 uniqueness audit, and 21 surviving draft bridges.
+Produce the full RCA summary report covering the entire 263-node audit cycle: policy creation, 6 batch audits, 5 promotion gates, 4 bridge registries, 1 uniqueness audit, 19 unique bridge rows, and 21 BIAN-support links.

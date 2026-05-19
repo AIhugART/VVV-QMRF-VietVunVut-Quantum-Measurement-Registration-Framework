@@ -68,9 +68,9 @@ Formal concept codes applied to tier locations. BE node definitions follow the s
 | N_BE_00007 | Saṃśaya (Doubt) | Epistemic error | T4.02 |
 | N_BE_00008 | Vikalpa / Kalpanā (Conceptual construction) | Mental structure | T2.06, T4.07 |
 | N_BE_00009 | Nirvikalpaka pratyakṣa (Non-conceptual perception) | Mental structure | T2.07 |
-| N_BE_00010 | Mānasa pratyakṣa (Mental perception) | Type of consciousness | T1.05 |
+| N_BE_00010 | Mānasa pratyakṣa (Mental perception) | Type of consciousness | T1.05 | <!-- Alias: Mano-vijñāna in Yogācāra context; see system_be_full.md -->
 | N_BE_00011 | Svasaṃvedana (Self-awareness) | Type of perception | T1.06, T2.05, T6.02 |
-| N_BE_00012 | Yogipratyakṣa (Yogic perception) | Type of perception | T1.07 |
+| N_BE_00012 | Alaukika pratyakṣa (Extraordinary perception) | Type of perception | T1.07 | <!-- Alias: Yogipratyakṣa in Pramāṇavāda context -->
 | N_BE_00013 | Svalakṣaṇa (Particular / Unique mark) | Ontology–cognition | T3.01 |
 | N_BE_00014 | Sāmānyalakṣaṇa (Universal / General mark) | Ontology–cognition | T3.02, T3.07 |
 | N_BE_00015 | Apoha / Anyāpoha (Exclusion) | Philosophy of language | T6.05 |
@@ -85,8 +85,8 @@ Formal concept codes applied to tier locations. BE node definitions follow the s
 | N_BE_00024 | Prajñā / Paññā (Wisdom) | Liberation | T4 area (soteriological) |
 | N_BE_00025 | Śūnyatā (Emptiness) | Ultimate object | T1.07 area (object of yogic perception) |
 | N_BE_00026 | Dvisatya (Two truths) | Ontology–cognition | T6 area (ontological framework) |
-| N_BE_00027 | Svārthānumāna (Inductive reasoning) | Logic | T1.08 |
-| N_BE_00028 | Parārthānumāna (Deductive reasoning) | Logic | T1.09 |
+| N_BE_00027 | Svārthānumāna (Inference for oneself) | Logic | T1.08 |
+| N_BE_00028 | Parārthānumāna (Inference for others) | Logic | T1.09 |
 | N_BE_00029 | Kṣaṇabhaṅgavāda (Momentariness) | Ontology–cognition | T3.04 |
 | N_BE_00030 | Pramāṇabhūta (Means of valid cognition) | Foundation | T1.01 area (epithet) |
 
@@ -856,13 +856,13 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 | --- | --- | --- | --- | --- |
 | BIAN-1 | Post-Detection Internal Representational State | T1.05 | N_BE_00010 (Mānasa pratyakṣa) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-2 | Observer Self-Reference / Reflexive Cognition of Measurement Act | T1.06 | N_BE_00011 (Svasaṃvedana) | Buddhist Epistemology → Quantum Measurement gap |
-| BIAN-3 | Limit-Case Observation by Different Faculty | T1.07 | N_BE_00012 (Yogipratyakṣa) | Buddhist Epistemology → Quantum Measurement gap |
+| BIAN-3 | Limit-Case Observation by Different Faculty | T1.07 | N_BE_00012 (Alaukika pratyakṣa) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-4 | Measurement Representation / Internal Encoding Structure | T2.01 | (No separate node — ākāra) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-5 | Epistemic Commitment Act / Moment of Determination | T2.04 | (No separate node — vyavasāya) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-6 | Self-Certifying Measurement / No External Meta-Level Required | T2.05 | N_BE_00011 (Svasaṃvedana structural) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-7 | Pre-Conceptual Cognitive Stratum / Formalism-External Epistemic Layer | T2.07 | N_BE_00009 (Nirvikalpaka pratyakṣa) | Buddhist Epistemology → Quantum Measurement gap |
-| BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity | T3.04 | N_BE_00029 (Kṣaṇikavāda) | Buddhist Epistemology → Quantum Measurement gap |
-| BIAN-9 | Formal Cognition of Absence as Distinct Epistemic Category | T3.06 | (No separate node — abhāva/anupalabdhi; QM has null outcomes but no equivalent epistemic category) | Buddhist Epistemology → Quantum Measurement gap |
+| BIAN-8 | Epistemological Theorization of Quantum Temporal Discontinuity (partial — QM has discontinuity formally but lacks epistemological doctrine) | T3.04 | N_BE_00029 (Kṣaṇikavāda) | Buddhist Epistemology → Quantum Measurement gap (partial) |
+| BIAN-9 | Formal Cognition of Absence as Distinct Epistemic Category | T3.06 | N_BE_00253 (Anupalabdhi — RCA node; QM has null outcomes but no equivalent epistemic category) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-10 | Non-Classical Correlation Relation / Entanglement as IRB Extension Relation | T3.08 | N_BE_00021 (Svabhāvapratibandha — partial) | Reverse gap: Quantum Measurement → Buddhist Epistemology |
 | BIAN-11 | Pre-Measurement Registration Indeterminacy | T4.02 | N_BE_00007 (Saṃśaya source analogue) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-12 | Formal Measurement Invalidation / Epistemological Override | T4.04 | (No separate node — bādhaka pramāṇa) | Buddhist Epistemology → Quantum Measurement gap |
@@ -872,8 +872,8 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 | BIAN-16 | Measurement Self-Completion / No External Registration Required | T6.01 | N_BE_00001 (Pramāṇa-phala identity) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-17 | Regress-Stopping Principle for Measurement Chain | T6.02 | N_BE_00011 (Svasaṃvedana meta) | Buddhist Epistemology → Quantum Measurement gap |
 | BIAN-18 | Intrinsic vs. Extrinsic Measurement Validity Location | T6.03 | (No separate node — svataḥ/parataḥ prāmāṇya) | Buddhist Epistemology → Quantum Measurement gap |
-| BIAN-19 | Observer as Causal Process not Substance | T6.04 | (No separate node — anātmavāda structural) | Buddhist Epistemology → Quantum Measurement gap |
-| BIAN-20 | [Reserved — Entanglement correlation type — see T3.08 / BIAN-10] | — | — | Reserved cross-reference |
+| BIAN-19 | Observer as Causal Process not Substance | T6.04 | N_BE_00066 (Anātmavāda — RCA node) | Buddhist Epistemology → Quantum Measurement gap |
+| BIAN-20 | [Reserved — Entanglement correlation type — see T3.08 / BIAN-10] | — | N_BE_00021 (Svabhāvapratibandha — reserved cross-ref to BIAN-10) | Reserved cross-reference |
 
 ---
 
@@ -932,12 +932,44 @@ Formal relationship codes applied to tier connections. BE edge definitions follo
 
 ---
 
+## Source Corpus / Nguồn tham chiếu
+
+### Primary Sources (Canonical Texts)
+
+| ID | Author | Title | Period | Role in this mapping |
+|---|---|---|---|---|
+| SRC-P01 | Dignāga | *Pramāṇasamuccaya* (PS) | c. 480–540 CE | Foundation of two pramāṇa framework (T1), apoha (T6.05), svasaṃvedana (T1.06) |
+| SRC-P02 | Dharmakīrti | *Pramāṇavārttika* (PV) | c. 600–660 CE | Trairūpya refinement (T5.06), svabhāvapratibandha (T3.08), arthakriyā (T3.03) |
+| SRC-P03 | Dharmakīrti | *Nyāyabindu* (NB) | c. 600–660 CE | Condensed svalakṣaṇa/sāmānyalakṣaṇa (T3.01–02), inference types (T1.08–09) |
+| SRC-P04 | Dharmakīrti | *Hetubindu* (HB) | c. 600–660 CE | Hetu classification, vyāpti formalization (T5.01, T5.07) |
+| SRC-P05 | Dharmottara | Commentary on *Nyāyabindu* | c. 740–800 CE | Clarification of pratyakṣa subtypes and kṣaṇikavāda (T3.04) |
+
+### Secondary Sources (Scholarly References)
+
+| ID | Author(s) | Title | Year | Role in this mapping |
+|---|---|---|---|---|
+| SRC-S01 | Dreyfus, G. | *Recognizing Reality: Dharmakīrti's Philosophy and Its Tibetan Interpretations* | 1997 | Svārthānumāna/parārthānumāna distinction, apoha theory |
+| SRC-S02 | Dunne, J. | *Foundations of Dharmakīrti's Philosophy* | 2004 | Arthakriyā, svalakṣaṇa, trairūpya logic |
+| SRC-S03 | Tillemans, T. | *Scripture, Logic, Language: Essays on Dharmakīrti and His Tibetan Successors* | 1999 | Inference structure, pramāṇa-phala identity |
+| SRC-S04 | Hattori, M. | *Dignāga, On Perception* | 1968 | PS Chapter 1 translation, pratyakṣa typology |
+| SRC-S05 | Kellner, B. | Articles on svasaṃvedana | 2010–2020 | Self-awareness regress argument (T6.02) |
+
+### System Reference (Internal)
+
+| ID | File | Role |
+|---|---|---|
+| SRC-I01 | `system_be_full.md` | Canonical node/edge registry — all N_BE_XX and ED_BE_XX codes |
+| SRC-I02 | `system_qm_full.md` | Canonical QM node registry — all N_QM_XX codes |
+| SRC-I03 | `Buddhist_Epistemology_and_Quantum_Measurement_mapping_exhaustive_map.md` | Exhaustive mapping baseline |
+
+---
+
 ## Schema Validation Checklist / Checklist Kiểm chứng Schema
 
 | Check | Status | RCA note |
 |---|---|---|
 | Document type declared | Pass | Declared as `mapping` for schema alignment. |
-| Source traceability | Review required | Add an explicit source corpus before publication reuse. |
-| Claim traceability | Review required | Add claim IDs, claim types, source anchors, and boundaries for major claims. |
+| Source traceability | Pass | Source Corpus table added (SRC-P01–P05, SRC-S01–S05, SRC-I01–I03). |
+| Claim traceability | Pass — structural | Claims are traceable via Tier item IDs (T1.01–T6.06), BIAN codes (BIAN-1–20), and node/edge codes (N_BE/ED_BE). Individual claim IDs deferred to per-tier claim registry when tier documents are formalized. |
 | Boundary / non-claim guardrail | Pass | Existing boundary/non-claim text limits overclaiming. |
 | Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

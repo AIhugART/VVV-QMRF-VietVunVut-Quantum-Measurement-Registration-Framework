@@ -61,10 +61,10 @@ Batch F contains soteriology, hermeneutics, Dharmakirti's three new hetu categor
 | N_BE_00250 | RCA | evidence-only | N_BE_00021 | high | causal-connection support | existing E support only | possible | Tadutpatti is causal-production type of essential connection; covered by Svabhavapratibandha. |
 | N_BE_00251 | RCA | evidence-only | N_BE_00021 | high | identity-connection support | existing E support only | possible | Tadatmya is identity-relation type of essential connection; covered by Svabhavapratibandha. |
 | N_BE_00252 | RCA | no-map | none | low | none | none | no | Anutpatti (non-production) is listed-only keyword; not elaborated in source body. |
-| N_BE_00253 | RCA | canonical-extension-candidate | N_BE_00024 / N_BE_00151 | high | BIAN-18 support | existing E support only | possible | Anupalabdhi (non-perception) replaces realist absence theory and is distinct from core Abhava; relevant to null-event/absence cognition analysis. |
+| N_BE_00253 | RCA | canonical-extension-candidate | N_BE_00024 / N_BE_00151 | high | BIAN-9 support | existing E support only | possible | Anupalabdhi (non-perception) replaces realist absence theory and is distinct from core Abhava; relevant to formal cognition of absence. |
 | N_BE_00254 | RCA | evidence-only | N_BE_00016 / N_BE_00021 | high | effect-reason support | existing E support only | possible | Karya-hetu is Dharmakirti's effect-reason; important logical refinement but covered by hetu and svabhavapratibandha. |
 | N_BE_00255 | RCA | evidence-only | N_BE_00016 / N_BE_00021 | high | essential-property reason support | existing E support only | possible | Svabhava-hetu is Dharmakirti's essential-property reason; covered by hetu and tadatmya. |
-| N_BE_00256 | RCA | canonical-extension-candidate | N_BE_00024 / N_BE_00253 | high | BIAN-18 support | existing E support only | possible | Anupalabdhi-hetu formalizes non-perception as a reason type; distinct from Anupalabdhi as concept and relevant to absence-side formal analysis. |
+| N_BE_00256 | RCA | canonical-extension-candidate | N_BE_00024 / N_BE_00253 | high | BIAN-9 support | existing E support only | possible | Anupalabdhi-hetu formalizes non-perception as a reason type; distinct from Anupalabdhi as concept and relevant to absence-side formal analysis. |
 | N_BE_00257 | RCA | evidence-only | N_BE_00006 | high | error-cognition duplicate | existing E support only | possible | Bhranti duplicates core erroneous cognition; source evidence only. |
 | N_BE_00258 | RCA | canonical-extension-candidate | N_BE_00008 / N_BE_00013 | high | BIAN-4 support | existing E support only | possible | Adhyavasaya as determination of real particulars through fictional conceptual thought is a distinct cognitive mechanism relevant to representation-layer analysis. |
 | N_BE_00259 | RCA | evidence-only | N_BE_00008 / N_BE_00013 | medium | conceptual-particular bridge | existing E support only | possible | Prapaka (reaching cognition toward real particulars) is closely tied to Adhyavasaya; keep as paired evidence. |
@@ -103,9 +103,9 @@ These are candidates only. None is promoted by this audit.
 | D | N_BE_00131–N_BE_00180 | 0 | 38 | 2 | 10→8 | 50 |
 | E | N_BE_00181–N_BE_00230 | 0 | 40 | 5 | 5→3 | 50 |
 | F | N_BE_00231–N_BE_00263 | 0 | 23 | 5 | 5 | 33 |
-| **Total** | | **30** | **177** | **24** | **22 (pass gate)** | **263** |
+| **Total** | | **30** | **177** | **24** | **19 after promotion-gate review** | **263** |
 
-Note: "Candidate → pass gate" numbers reflect nodes that passed promotion-gate review (B:2, C:4, D:8, E:3, F: TBD).
+Note: "Candidate -> pass gate" numbers reflect nodes that passed promotion-gate review (B:2, C:4, D:8, E:3, F:2 = 19 total).
 
 ---
 
