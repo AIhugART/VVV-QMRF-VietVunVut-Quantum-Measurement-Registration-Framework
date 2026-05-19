@@ -113,7 +113,7 @@ RCA decision: defer boundary clarification to dedicated negative-evidence bridge
 
 | Control | Result | RCA note |
 |---|---|---|
-| No BE-QM identity | Pass | All 19 bridge rows use support/gap-source boundary language. |
+| No BE-QM identity | Pass | All 17 unique bridge rows (19 BIAN-support links) use support/gap-source boundary language. |
 | No new QM law | Pass | No bridge row claims physical formalism expansion. |
 | No automatic E17+ | Pass | All rows are evidence/support for existing BIAN analysis. |
 | No final canonical-extension | Pass | All node statuses remain `canonical-extension-candidate`. |
@@ -125,7 +125,7 @@ RCA decision: defer boundary clarification to dedicated negative-evidence bridge
 
 ## 7. Decision Status
 
-All 19 bridges remain draft.
+All 17 unique bridge rows (19 BIAN-support links) remain draft.
 
 ```text
 BR_DRAFT_B_001 .. BR_DRAFT_B_002 = draft only

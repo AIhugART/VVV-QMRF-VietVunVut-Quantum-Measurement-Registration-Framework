@@ -94,7 +94,7 @@ After formal RCA (5 Whys + Decision Gate), the chosen path was:
 |---|---|---|---|
 | C1 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BC.md` | 6 | B, C |
 | C2 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCD.md` | 14 | B, C, D |
-| C3 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCDE.md` | 19 | B, C, D, E |
+| C3 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCDE.md` | 17 unique rows / 19 BIAN-support links | B, C, D, E |
 | C4 | `BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCDEF.md` | 19 unique rows / 21 BIAN-support links | B, C, D, E, F |
 
 ### 2.6 Finalization
