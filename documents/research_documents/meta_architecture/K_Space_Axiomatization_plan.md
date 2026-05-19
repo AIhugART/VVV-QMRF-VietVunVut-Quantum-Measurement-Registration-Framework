@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Target:** `documents/research_documents/meta_architecture/K_Space_Axiomatization.md`
 **Audit version:** v1.4 (2026-05-19)
-**Plan version:** v12 (2026-05-19)
+**Plan version:** v23 (2026-05-19)
 **Method:** 3 rounds × 5-Why × scoring threshold (per `feedback_decision_rule.md`)
 **Scope:** K1-K8 core axioms (Layer 1) + T1-T4 bridge theorems (Layer 2) + audit matrices + concrete EWF model
 
@@ -24,6 +24,14 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | F6a | NON-BLOCKING | **DONE** | K6 Dependency row | Removed "scope identification only"; added 3 C_K Auth roles (align F4); added Dep-A (C_K existence precondition); added conditional semantic dependency (I-03 pattern) for D_joint scope condition (c). |
 | F6b | NON-BLOCKING | **DONE** | K7 Dependency row | Removed "identification only"; added Dep-B (T2 AdmJoint = silent Layer 2 dep for "resolved demand" concept, analog K5 Dep-B); added conditional semantic dependency (I-03 pattern) for `requires_K_joint` extensional scope → t_close timing. |
 | F6c | NON-BLOCKING | **DONE** | C-KAXIOM-010 | Replaced "scope identification only" with 2-part distinction: (1) Syntactic isolation unconditional (K1-K8 text frozen); (2) Conditional semantic dependencies for K5/K6/K7 (I-03 pattern per F3/F6a/F6b). K1-K4/K8 scoped correctly as "scope identification only or not at all." Caveats cell updated. |
+| F7a | HIGH / NON-BLOCKING | **DONE** | K5 Dependency row + T1 section | Applied F7a non-circularity guard. K5 Dep-B now states that K5 condition (i) is natively defined by K2 `<_R`; T1 constructs `<_joint>` from K2 native orders + Level 4 cross-structure temporal relations + K8 preservation; K5 applies inside `K_joint` only after T1 supplies the candidate order. T1 section now states dependency direction: K2/K8 + Level 4 D_joint -> T1 candidate K_joint/<_joint -> K5 application. |
+| F7b | HIGH / NON-BLOCKING | **DONE** | T2 derivation block + T2 Important row | Applied F7b timing guard and K7 resolution semantics. T2 AdmJoint(iv) now explicitly operates on `V_prov` during pre-closure admissibility testing; `V_final` is assigned only after K7 closure. T2 now defines resolved demand outcomes for K7: successful `AdmJoint = 1` or failure `AdmJoint = 0` producing `⊥_K`. |
+| F7c | MEDIUM / NON-BLOCKING | **DONE** | T3 external assumption wording + cascade references | Applied F7c wording downgrade. T3 now frames `Relativization defense` as a framework-level semantic commitment / declared semantic boundary for this formulation of D_joint, not a universal claim about every framework. Cascade references replaced overstated phrases such as "unavoidable", "ANY axiom set", "Every framework", and "No framework" with scoped wording tied to K1-K8 and VVV-QMRF. |
+| F7d | HIGH / NON-BLOCKING | **DONE** | T4 N-observer colimit commutativity | Applied F7d global commutativity guard. T4 now states that pairwise `AdmJoint` is necessary but not sufficient for N-observer colimit existence; N-observer `K_joint` additionally requires global overlap/path-commutativity. K8 supplies field/V preservation along each embedding but does not by itself prove path-independence across multiple embeddings. |
+| F8a | MEDIUM / NON-BLOCKING | **DONE** | §3.1 E2 audit row | Clarified E2 `ENCODED` verdict. K1 is the primary structural encoder of `M ≡^K r` through tuple-level act-result co-instantiation; K4/K7 are now noted as validity lifecycle support, not as the source of act-result inseparability. |
+| F8b | LOW / NON-BLOCKING | **DONE** | §3.2 E9 audit row | Clarified E9 independence from F2/K6. E9 `V=0` is definitional null status from K1 `o=∅` + K4 E9 exception, not K5/K6 invalidation; it requires no `⊥`, no `Auth`, and no shared `C_K`. |
+| F8c | MEDIUM / NON-BLOCKING | **DONE** | §3.2 E8 audit row | Clarified E8 `PARTIAL` verdict after F1/F7b/F8b. E8 now uses `V_prov→0` for K5 invalidation, notes K7 pre-closure re-assessment, adds T2 resolved-demand semantics for `C_K` cases, and distinguishes E8 invalidation from E9 definitional `V=0`. |
+| F8d | MEDIUM / NON-BLOCKING | **DONE** | §3.4 BE Source Lineage Audit | Completed BE lineage coverage for K1-K8. Added K6/Bādhaka pramāṇa, K7/Niścaya, and K8/Anugama rows; updated lineage verdict from `5/5 PASS` to `8/8 PASS`. |
 
 ---
 
@@ -33,8 +41,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 |-------|-------|--------|
 | Phase 1 | Internal Consistency K1-K8 | **COMPLETE** — All 5 issues fixed (I-01/F1, I-02/F2, I-03/F3, S-01/F4, S-02/F5a+F5b+F5c) |
 | Phase 2 | Level 4 Dependency Isolation Claim | **COMPLETE** — All 6 issues fixed (P2-I01/F6a, P2-I02/F6a, P2-I03/F6a, P2-I04/F6b, P2-I05/F6b, P2-I06/F6c) |
-| Phase 3 | Bridge Theorem Derivations T1-T4 | **PENDING** |
-| Phase 4 | Audit Matrix Accuracy | PENDING |
+| Phase 3 | Bridge Theorem Derivations T1-T4 | **COMPLETE** — P3-C1 fixed (F7a); P3-C2 fixed (F7b); P3-C3 fixed (F7c); P3-C4 fixed (F7d). All Phase 3 checks resolved. |
+| Phase 4 | Audit Matrix Accuracy | **COMPLETE** — P4-C1 fixed (F8a); P4-C2 fixed (F8b); P4-C3 fixed (F8c); P4-C4 fixed (F8d). All Phase 4 checks resolved. |
 | Phase 5 | Concrete Model & Proof Attempt | PENDING |
 | Phase 6 | Open Items Alignment | PENDING |
 
@@ -76,25 +84,41 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-## Phase 3 — Bridge Theorem Derivations T1-T4 [PENDING]
+## Phase 3 — Bridge Theorem Derivations T1-T4 [COMPLETE]
 
-| Check ID | Target | Question |
-|----------|--------|----------|
-| P3-C1 | T1 + K5-T1 Dep-B circular risk | Does T1's `<_joint` derive from K1-K8 without circularity? Dep-B documents T1 as silent dependency in K5 condition (i) — is T1 derivable from K8 t-preservation alone, or is there a genuine circular dependency? |
-| P3-C2 | T2 AdmJoint(iv) after F1 + F6b | Does T2 remain valid after F1 (K5 V_prov/V_final)? AdmJoint(iv): "no invalidation while both claimed jointly valid" — V_prov or V_final? Also: T2 AdmJoint is K7 Dep-B (F6b) — verify T2 adequately defines "resolved demand" for K7 closure semantics. |
-| P3-C3 | T3 "unavoidable" claim | Is the "unavoidable" semantic boundary in T3 justified, or philosophical assertion needing separate grounding? |
-| P3-C4 | T4 colimit commutativity after K8 | Does T4 colimit commutativity hold after K8 added in v1.4? |
+### Issue Registry
+
+| ID | Target | Severity | RCA Score | Status | Root cause | Fix |
+|----|--------|----------|-----------|--------|------------|-----|
+| P3-C1 | T1 + K5-T1 Dep-B circular risk | HIGH / NON-BLOCKING | 4.55/5 | **FIXED (F7a)** | K5 Dep-B blurred axiom-level native `<_R` and joint-context `<_joint>` application, making T1 look like a prerequisite for K5 instead of a theorem that constructs the cross-space order used after candidate `K_joint` exists. | Added non-circularity guard in K5 Dependency row and T1 section: K5 native axiom uses K2 `<_R`; T1 constructs `<_joint>` from K2 native orders + Level 4 cross-temporal relations + K8 preservation; K5 applies inside `K_joint` only after T1 supplies the candidate order. |
+| P3-C2 | T2 AdmJoint(iv) after F1 + F6b | HIGH / NON-BLOCKING | 4.65/5 | **FIXED (F7b)** | T2 used undifferentiated `V` after F1 split validity into `V_prov` / `V_final`; T2 was documented as K7 Dep-B but did not fully define "resolved demand" outcomes for K7 closure. | Added T2 timing guard: AdmJoint(iv) is pre-closure and checks `V_prov`; `V_final` is assigned only after K7 closure. Added K7 resolution semantics: demand resolves either by admissible `AdmJoint = 1` success or by inadmissible `AdmJoint = 0` producing `⊥_K`. |
+| P3-C3 | T3 "unavoidable" claim | MEDIUM / NON-BLOCKING | 4.45/5 | **FIXED (F7c)** | `Relativization defense` was required for T3, but wording such as "unavoidable", "ANY axiom set", and "Every framework" overstated a VVV-QMRF Level 4 semantic assumption as a universal meta-claim. | Kept the assumption but downgraded wording to `framework-level semantic boundary` / `semantic commitment of this formulation`; added conditional theorem guard: T3 depends on the boundary but does not prove the boundary. |
+| P3-C4 | T4 colimit commutativity after K8 | HIGH / NON-BLOCKING | 4.67/5 | **FIXED (F7d)** | T4 conflated pairwise admissibility with global diagram coherence: pairwise `AdmJoint` + K8 local preservation does not guarantee path-independence or shared-overlap compatibility for N-observer colimits. | Added global commutativity guard: pairwise `AdmJoint` is necessary but not sufficient; N-observer `K_joint` requires global overlap/path-commutativity across shared K-state images and embedding paths. |
+
+### Remaining Checks
+
+| Check ID | Target | Question | Next action |
+|----------|--------|----------|-------------|
+| — | — | All Phase 3 checks resolved. | Proceed to Phase 4 |
 
 ---
 
-## Phase 4 — Audit Matrix Accuracy [PENDING]
+## Phase 4 — Audit Matrix Accuracy [IN PROGRESS]
 
-| Check ID | Target | Question |
-|----------|--------|----------|
-| P4-C1 | E2 "ENCODED" verdict | Is E2 correctly marked "ENCODED"? Which axiom(s) encode it? |
-| P4-C2 | E9 after F2 | Does E9 need re-review after F2 scoped K6 non-transitivity to multi-C_K? |
-| P4-C3 | §3.2 E8 verdict chain | E8 note now references K5 F1. Does PARTIAL verdict chain remain coherent? |
-| P4-C4 | §3.4 BE Lineage | Does §3.4 reference K6, K7, K8? |
+### Issue Registry
+
+| ID | Target | Severity | RCA Score | Status | Root cause | Fix |
+|----|--------|----------|-----------|--------|------------|-----|
+| P4-C1 | E2 "ENCODED" verdict | MEDIUM / NON-BLOCKING | 4.42/5 | **FIXED (F8a)** | E2 verdict was basically correct, but its explanation under-specified the boundary between K1 tuple-level act-result co-instantiation and K4/K7 validity lifecycle. | Kept `ENCODED`; clarified that K1 structurally encodes `M ≡^K r`, while K4/K7 govern validity lifecycle after instantiation and do not define act-result inseparability. |
+| P4-C2 | E9 after F2 | LOW / NON-BLOCKING | 4.50/5 | **FIXED (F8b)** | E9 coverage was correct, but the audit row did not explicitly separate definitional null-event `V=0` from K5/K6 cross-context invalidation after F2 refined K6 non-transitivity. | Kept `COVERED`; clarified that E9 is intra-`K_R`, uses K1 `o=∅` + K4 E9 exception, and does not depend on K6/Auth/C_K. |
+| P4-C3 | §3.2 E8 verdict chain | MEDIUM / NON-BLOCKING | 4.53/5 | **FIXED (F8c)** | E8 verdict remained correct, but the row predated the full cascade of F1/F7b/F8b: it did not explicitly distinguish `V_prov→0` invalidation from E9 `V=0`, and it did not state when T2 resolved-demand semantics matter for K7 closure. | Kept `PARTIAL`; refined E8 row to mention `V_prov`, K7 pre-closure reversibility, conditional T2 role in `requires_K_joint`/`C_K` contexts, and E9 boundary. |
+| P4-C4 | §3.4 BE Lineage | MEDIUM / NON-BLOCKING | 4.70/5 | **FIXED (F8d)** | §3.4 was a stale audit summary: it still covered only K1-K5 after K6-K8 had become core axioms with documented BE lineage. | Added K6, K7, and K8 lineage rows and changed the BE lineage audit verdict from `5/5 PASS` to `8/8 PASS`. |
+
+### Remaining Checks
+
+| Check ID | Target | Question | Next action |
+|----------|--------|----------|-------------|
+| — | — | All Phase 4 checks resolved. | Proceed to Phase 5 |
 
 ---
 
@@ -128,12 +152,25 @@ Phase 1 fixes — COMPLETE
   I-02 (F2) → P4-C2
   I-03 (F3) → C-KAXIOM-010 [RESOLVED F6c]
   S-01 (F4) → C-KAXIOM-010 [RESOLVED F6c]
-  S-02 (F5a+F5b+F5c) → P3-C1 (Dep-B T1 circularity)
+  S-02 (F5a+F5b+F5c) → P3-C1 [RESOLVED F7a]
 
 Phase 2 fixes — COMPLETE
   F6a (K6 Dep-A + I-03 D_joint) → C-KAXIOM-010 [RESOLVED F6c]
-  F6b (K7 Dep-B T2 + I-03 requires_K_joint) → P3-C2 (T2 K7 Dep-B verify)
+  F6b (K7 Dep-B T2 + I-03 requires_K_joint) → P3-C2 [RESOLVED F7b]
   F6c (C-KAXIOM-010) → P6-C4 (version note v1.5)
+
+Phase 3 fixes — COMPLETE
+  F7a (T1 non-circularity guard) → P3-C1 [RESOLVED]
+  F7b (T2 AdmJoint timing + K7 resolution semantics) → P3-C2 [RESOLVED]
+  F7c (T3 framework-level semantic boundary wording) → P3-C3 [RESOLVED]
+  F7d (T4 global overlap/path-commutativity guard) → P3-C4 [RESOLVED]
+
+Phase 4 fixes — COMPLETE
+  F8a (E2 K1 vs K4/K7 boundary clarification) → P4-C1 [RESOLVED]
+  F8b (E9 definitional null-status vs K6/Auth boundary clarification) → P4-C2 [RESOLVED]
+  F8c (E8 V_prov/T2/E9 boundary clarification) → P4-C3 [RESOLVED]
+  F8d (§3.4 BE lineage K6-K8 coverage + 8/8 verdict) → P4-C4 [RESOLVED]
+  Next → Phase 5 (Concrete Model & Proof Attempt)
 ```
 
 ---
@@ -161,6 +198,24 @@ Phase 2 fixes — COMPLETE
 | P2-I05 | 4.6/5 | NON-BLOCKING | **FIXED (F6b)** |
 | P2-I06 | 4.6/5 | NON-BLOCKING | **FIXED (F6c)** |
 
+### Phase 3 — COMPLETE
+
+| ID | Score | Severity | Status |
+|----|-------|----------|--------|
+| P3-C1 | 4.55/5 | HIGH / NON-BLOCKING | **FIXED (F7a)** |
+| P3-C2 | 4.65/5 | HIGH / NON-BLOCKING | **FIXED (F7b)** |
+| P3-C3 | 4.45/5 | MEDIUM / NON-BLOCKING | **FIXED (F7c)** |
+| P3-C4 | 4.67/5 | HIGH / NON-BLOCKING | **FIXED (F7d)** |
+
+### Phase 4 — COMPLETE
+
+| ID | Score | Severity | Status |
+|----|-------|----------|--------|
+| P4-C1 | 4.42/5 | MEDIUM / NON-BLOCKING | **FIXED (F8a)** |
+| P4-C2 | 4.50/5 | LOW / NON-BLOCKING | **FIXED (F8b)** |
+| P4-C3 | 4.53/5 | MEDIUM / NON-BLOCKING | **FIXED (F8c)** |
+| P4-C4 | 4.70/5 | MEDIUM / NON-BLOCKING | **FIXED (F8d)** |
+
 ---
 
-*Plan v12 — 2026-05-19. Phase 1 COMPLETE (F1-F5c). Phase 2 COMPLETE (F6a-F6c). Ready for Phase 3 (Bridge Theorem Derivations T1-T4).*
+*Plan v23 — 2026-05-19. Phase 1 COMPLETE (F1-F5c). Phase 2 COMPLETE (F6a-F6c). Phase 3 COMPLETE (F7a-F7d). Phase 4 COMPLETE (F8a-F8d). Next RCA target is Phase 5: Concrete Model & Proof Attempt.*

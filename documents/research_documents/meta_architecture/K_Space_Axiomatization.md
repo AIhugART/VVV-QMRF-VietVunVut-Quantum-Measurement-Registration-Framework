@@ -279,7 +279,7 @@ K_R disambiguation (cross-space context):
 | **Source** | Level 2: E7 Axioms 2-3 (Invalidation + Asymmetry) |
 | **BE lineage** | Parataḥ prāmāṇya — invalidity is detected extrinsically. Bādhaka pramāṇa — a contradicting cognition (bādhaka) retroactively voids the earlier cognition. |
 | **Claim class** | D (proposed) |
-| **Dependency** | Level 2 (E7 Axioms 2-3). Uses `⊥` and "cross-registration authority" as **primitive predicates** whose full formalization is in Level 4 (paper v2.0 §4.4). K5 asserts the structural rule; the precise conditions for `k2 ⊥ k1` and "valid cross-registration authority" are defined in the bridge theorems (T1-T3). **2nd-order Layer 2 dependencies — Dep-A:** C_K existence precondition requires Level 4 predicate `requires_K_joint = 1` (Level 4 §4.3); K5 does not fire when C_K is absent (also reflected in Layer 1 Summary K5 row Role 1, via F4). **Dep-B:** K5 condition (i) uses K2's `<_R` ordering; when K5 fires in K_joint (its only operative context), the ordering is T1's `<_joint` (Layer 2 bridge theorem); K8 t-field preservation guarantees `k1 <_R k2 ↔ i(k1) <_joint i(k2)` — no functional contradiction; Dep-B is a documentation dependency only. |
+| **Dependency** | Level 2 (E7 Axioms 2-3). Uses `⊥` and "cross-registration authority" as **primitive predicates** whose full formalization is in Level 4 (paper v2.0 §4.4). K5 asserts the structural rule; the precise conditions for `k2 ⊥ k1` and "valid cross-registration authority" are defined in the bridge theorems (T1-T3). **2nd-order Layer 2 dependencies — Dep-A:** C_K existence precondition requires Level 4 predicate `requires_K_joint = 1` (Level 4 §4.3); K5 does not fire when C_K is absent (also reflected in Layer 1 Summary K5 row Role 1, via F4). **Dep-B (F7a non-circularity guard):** K5 condition (i) is defined natively by K2's `<_R` ordering. In cross-space application, K5 can only be evaluated after a candidate `K_joint` has already been constructed. T1 constructs `<_joint>` from K2 native orders + Level 4 cross-structure temporal relations + K8 field preservation; K5 does not define or prove `<_joint>`. Therefore Dep-B is an application-order dependency only: K5 uses `<_joint>` inside `K_joint` after T1 supplies the candidate joint order, so no circular dependency is introduced. |
 | **Boundary** | K5 is a registration-layer invalidation rule. It does NOT claim that the physical outcome of M_1 is retroactively erased from ρ-side history. The physical interaction I_1 still occurred; only its K-side registration validity is revised. The `⊥` relation is NOT physical orthogonality in H. The irreversibility of V→0 is a K-side property, not a claim about physical time asymmetry. |
 | **Consistency** | K5 is consistent with E7 Axioms 2-3 and with the act-level contradiction definition in paper v2.0 §4.4. The primitive predicates (⊥, C_K, cross-registration authority) now have minimal operational definitions: ⊥ is defined above in K5, C_K is tied to requires_K_joint, and authority is formalized in K6 below. This removes the prior dependency inversion where frozen K5 relied on undefined Level 4 primitives. |
 
@@ -473,6 +473,14 @@ K_joint(A,B) exists as a candidate K-space:
 
 Note: existence of a candidate K_joint does NOT guarantee it is admissible.
 Admissibility requires AdmJoint conditions (i)-(v) to hold (Level 4, §4.3).
+
+F7a non-circularity guard:
+  T1 does not depend on K5 Dep-B. T1 constructs the candidate <_joint order
+  from K2 native orders, cross-structure temporal relations supplied by the
+  Level 4 D_joint context, and K8 field/V preservation under embedding.
+  K5 is evaluated only after the candidate K_joint exists. Thus the dependency
+  direction is:
+    K2/K8 + Level 4 D_joint -> T1 candidate K_joint/<_joint -> K5 application inside K_joint.
 ```
 
 | Property | Value |
@@ -498,9 +506,16 @@ T2 focuses on the case where AdmJoint fails via K5 conflict:
   Under candidate K_joint, ∃k_A ∈ i_A(K_A), k_B ∈ i_B(K_B) such that
   k_B ⊥ k_A within C_K (registered contradiction)            [K5 primitive, Level 4 §4.4]
   AND Auth(k_B → k_A, C_K) = 1 (cross-registration authority) [K6]
-  → K5 forces V(k_A) → 0  OR  V(k_B) → 0                     [K5 from Layer 1]
+  → K5 forces V_prov(k_A) → 0  OR  V_prov(k_B) → 0     [K5 pre-closure]
   → AdmJoint condition (iv) violated                         [Level 4, §4.3]
-    (no invalidation while both claimed as jointly valid)
+    (no V_prov invalidation while both are claimed jointly valid
+     during the candidate K_joint admissibility check)
+
+F7b timing guard:
+  T2's AdmJoint(iv) check is pre-closure. It operates on V_prov because
+  K7 assigns V_final only after pending requires_K_joint demands have
+  been resolved. Therefore T2 cannot use V_final as the admissibility
+  input without creating a timing inversion between T2 and K7.
 
 Note: K5 conflict is a SUFFICIENT condition for AdmJoint failure,
 NOT a necessary condition. AdmJoint may fail for other reasons
@@ -544,12 +559,30 @@ Boundary clauses (from paper v2.0 §4.4):
   ⊥_K applies only when both sides are valid/provisionally valid within their own K-side.
 ```
 
+F7b K7 resolution semantics:
+```
+  For K7 closure, a requires_K_joint demand is resolved when T2 yields
+  one of two admissibility outcomes:
+
+    (1) Success path:
+        ∃K_joint such that AdmJoint(K_joint; K_A, K_B) = 1.
+        The demand is resolved by successful joint registration.
+
+    (2) Failure path:
+        ¬∃K_joint such that AdmJoint(K_joint; K_A, K_B) = 1.
+        The demand is resolved as K_A ⊥_K K_B.
+
+  In both cases, the pending demand is no longer open. K7 may then
+  evaluate whether pending(K_R, K_X) = ∅. T2 supplies the resolution
+  semantics; K7 performs the closure transition from V_prov to V_final.
+```
+
 | Property | Value |
 |---|---|
 | **Level 4 dependency** | `AdmJoint` conditions (i)-(v), `⊥_K` boundary clauses, `D_joint` (paper v2.0 §4.3-4.4) |
 | **Layer 1 dependency** | K5 (invalidation rule) + K6 (authority condition) + K8 (V-preservation at embedding) — T2 derivation uses all three. **K8 resolves former EP gap (G1): V-preservation is now derived from a core axiom.** |
 | **Claim class** | D (proposed). Derivation trace is Class D; the ⊥_K conclusion matches paper v2.0 Class D definition. |
-| **Important** | K5 conflict is a SUFFICIENT condition for AdmJoint failure, not necessary. AdmJoint may fail for other reasons. |
+| **Important** | K5 conflict is a SUFFICIENT condition for AdmJoint failure, not necessary. AdmJoint may fail for other reasons. F7b: AdmJoint(iv) is checked against `V_prov` during pre-closure admissibility testing; `V_final` is assigned only after K7 closure. T2 also supplies K7's "resolved demand" semantics: a demand is resolved either by successful `AdmJoint = 1` or by failure `AdmJoint = 0` producing `⊥_K`. |
 | **Freeze status** | Pending Level 4 freeze |
 | **Update trigger** | If AdmJoint conditions (i)-(v) change, or ⊥_K boundary clauses are revised |
 
@@ -572,25 +605,26 @@ Bridge_EWF(D_joint; M_F, M_W) = 1
       → AdmJoint condition (iv) violated                             [Level 4, §4.3]
   → M_W ⊥ M_F (act-level registered contradiction)                   [Level 4, §4.4]
 
-External philosophical assumption — Relativization defense:
-  T3 depends on the following assumption (not derived from K1-K8):
+External semantic assumption — Relativization defense:
+  T3 depends on the following framework-level semantic boundary
+  (not derived from K1-K8):
   "If K_joint only hosts meta-descriptions ('within K_F, M_F registered |h⟩'),
    it does not satisfy D_joint (which demands joint validity of original claims).
    Relativizing contents abandons D_joint rather than satisfying it."
   (paper v2.0 §4.5)
 
-  This is an EXTERNAL PHILOSOPHICAL COMMITMENT, not a theorem derivable from
-  K1-K8. It defines what counts as "satisfying D_joint" — a semantic choice
-  about the nature of joint validity demands. If this assumption is rejected
-  (i.e., if meta-descriptions ARE accepted as satisfying D_joint), then
-  T3's conclusion (Bridge_EWF = 1) does not follow from K1-K8 alone.
+  This is a FRAMEWORK-LEVEL SEMANTIC COMMITMENT, not a theorem derivable from
+  K1-K8. It defines what counts as "satisfying D_joint" inside this formulation
+  of VVV-QMRF. If this assumption is rejected (i.e., if meta-descriptions ARE
+  accepted as satisfying D_joint), then T3's conclusion (Bridge_EWF = 1) does
+  not follow from K1-K8 alone.
 ```
 
 | Property | Value |
 |---|---|
 | **Level 4 dependency** | `Bridge_EWF` lemma, `D_joint`, cross-registration authority (paper v2.0 §4.5) |
 | **Layer 1 dependency** | K5 (invalidation) + K6 (authority) + K8 (V-preservation at embedding) — T3 derivation uses all three. |
-| **External assumption** | Relativization defense (paper v2.0 §4.5) — a philosophical commitment, not derivable from K1-K8. T3 depends on this assumption. This is NOT a gap — it is a semantic boundary present in every measurement framework. |
+| **External assumption** | Relativization defense (paper v2.0 §4.5) — a framework-level semantic commitment, not derivable from K1-K8. T3 is conditional on this assumption. This is not an internal contradiction; it is a declared semantic boundary for what counts as satisfying `D_joint` in this formulation. |
 | **Claim class** | D/C boundary (matches paper v2.0 §4.5 classification) |
 | **Freeze status** | Pending Level 4 freeze |
 | **Update trigger** | If `Bridge_EWF` sufficient conditions change, or cross-registration authority criteria are revised, or relativization defense is challenged |
@@ -598,7 +632,7 @@ External philosophical assumption — Relativization defense:
 ### T4 — N-Observer Generalization Theorem
 
 **Statement:**
-> For N ≥ 2 registering systems R_1, ..., R_N with K-side spaces K_1, ..., K_N: the joint K-space K_joint(R_1, ..., R_N) exists as the colimit of the embedding diagram iff for every pair (i, j) with requires_K_joint(K_i, K_j) = 1, pairwise AdmJoint is satisfied. K-side incommensurability ⊥_K is NOT necessarily transitive: K_A ⊥_K K_B ∧ K_B ⊥_K K_C does NOT entail K_A ⊥_K K_C. Each pair requires an independent D_joint and AdmJoint check.
+> For N ≥ 2 registering systems R_1, ..., R_N with K-side spaces K_1, ..., K_N: the joint K-space K_joint(R_1, ..., R_N) exists as the colimit of the embedding diagram only when (1) every pair (i, j) with requires_K_joint(K_i, K_j) = 1 satisfies pairwise AdmJoint, and (2) the N-observer embedding diagram satisfies global overlap compatibility: shared K-state images and all embedding paths commute in the candidate K_joint. K-side incommensurability ⊥_K is NOT necessarily transitive: K_A ⊥_K K_B ∧ K_B ⊥_K K_C does NOT entail K_A ⊥_K K_C. Each pair requires an independent D_joint and AdmJoint check, but pairwise admissibility alone does not prove N-way colimit commutativity.
 
 **Derivation from axioms:**
 ```
@@ -608,6 +642,17 @@ K_joint(R_1,...,R_N) = colimit of embedding diagram D where:
              and AdmJoint satisfied: embedding i_{ij}: K_i → K_j (or K_i → K_joint)
   colimit universal property: K_joint is the minimal K-space receiving
     embeddings from all K_i that commute with the diagram morphisms.
+
+F7d global commutativity guard:
+  Pairwise AdmJoint is necessary but not sufficient for N-observer colimit
+  existence. K8 preserves tuple fields and V values along each embedding,
+  but K8 does not by itself guarantee path-independence across multiple
+  embeddings. For N > 2, T4 requires an additional global compatibility
+  condition: whenever two embedding paths carry the same source K-state or
+  shared overlap into K_joint, their images must agree on M, o, cert, t,
+  and initial V at embedding time, and their post-embedding validity dynamics
+  must not force inconsistent identifications. Thus the diagram must commute
+  globally, not merely pairwise.
 
 Non-transitivity of ⊥_K:
   Counter-example possibility:
@@ -626,8 +671,9 @@ Number of pairwise checks for N observers:
 
 | Property | Value |
 |---|---|
-| **Level 4 dependency** | All Level 4 definitions, generalized to N observers |
+| **Level 4 dependency** | All Level 4 definitions, generalized to N observers; global overlap/path-commutativity condition for N-observer diagrams |
 | **Claim class** | D (proposed) — NEW. Not in paper v2.0 (which handles N=2 only). |
+| **Important** | Pairwise `AdmJoint` checks are necessary local conditions, not sufficient global conditions. N-observer `K_joint` requires pairwise admissibility plus global overlap/path-commutativity. K8 supplies field/V preservation along each embedding but does not by itself prove global commutativity. |
 | **Freeze status** | New theorem. Requires independent verification for N>2. |
 | **Update trigger** | When N>2 EWF scenarios are modeled; when paper v3.0 extends to multi-observer cases |
 
@@ -637,7 +683,7 @@ Number of pairwise checks for N observers:
 |---|---|---|---|---|
 | T1 | K_joint construction | `requires_K_joint`, `D_joint`, embeddings | Pending | Theorem statement updates; K1-K8 unchanged |
 | T2 | ⊥_K derivation | `AdmJoint` (i)-(v), `⊥_K` boundary clauses | Pending | Derivation chain updates; K1-K8 unchanged |
-| T3 | Bridge_EWF formalization | `Bridge_EWF` lemma, external assumption: relativization defense | Pending | Derivation chain + external assumption may need revision; K1-K8 unchanged |
+| T3 | Bridge_EWF formalization | `Bridge_EWF` lemma, framework-level semantic boundary: relativization defense | Pending | Derivation chain + semantic boundary may need revision; K1-K8 unchanged |
 | T4 | N-observer generalization | All Level 4, generalized to N | New — Class D | New theorem; independently updatable |
 
 ---
@@ -651,7 +697,7 @@ Number of pairwise checks for N observers:
 | Postulate | Content | K-space coverage | Verdict |
 |---|---|---|---|
 | **E1** | Self-Certifying Registration: σ(M)=1 intrinsic to M; no M' required | K3 directly instantiates σ_R(M) with intrinsic determination and observer-indexed independence | **COVERED — K3** |
-| **E2** | Registration Self-Completion: M ≡^K r (act-result inseparability) | Not directly axiomatized. K1 includes both M and o in the same tuple — the tuple structure itself encodes act-result co-occurrence without requiring a separate axiom. The ≡^K relation is implicit in the tuple's joint instantiation. | **ENCODED — K1 tuple structure** |
+| **E2** | Registration Self-Completion: M ≡^K r (act-result inseparability) | Not directly axiomatized as a separate equivalence relation. K1 encodes E2 structurally: each admitted K-state tuple `k = ⟨M,o,cert,t,V⟩` co-instantiates the registration act `M` with its registered result `o` (`r` on the E2 side) in one K-side event, so no separate result-producing act is required. K4/K7 govern the tuple's validity lifecycle (`V_prov` → `V_final`) after instantiation; they support completion status but do not define the act-result inseparability itself. | **ENCODED — K1 tuple structure; K4/K7 validity lifecycle noted** |
 | **E3** | Registration Lock: C: H→K, C(I)=k_locked | Not directly axiomatized. C is a bridge map (H→K), not an intra-K-space property. K1-K8 describe K-space structure; C belongs to the bridge layer (interface between ρ-side and K-side). | **OUT-OF-SCOPE — Bridge layer. No conflict.** |
 | **E4** | Pre-Symbolic Registration Stratum: ε(M) ∈ K_pre, Sym(ε)=∅ | Not directly axiomatized. K1 defines K-state tuples at the symbolic level (o is a symbolic outcome). The pre-symbolic stratum K_pre is a substructure not formalized in K1-K8. | **OUT-OF-SCOPE — Reserved for K-space stratification extension** |
 | **E5** | Internal Representation Encoding: f_enc maps apparatus state to outcome within K | Not directly axiomatized. f_enc is an encoding map that operates within K but is not a structural property of K-space itself. | **OUT-OF-SCOPE — Encoding operation. No conflict.** |
@@ -666,8 +712,8 @@ Number of pairwise checks for N observers:
 
 | Postulate | Content | K-space requirement | Verdict |
 |---|---|---|---|
-| **E8** | Retroactive Registration Override: M_2 retroactively voids M_1 | K5 covers single-step invalidation (k2 ⊥ k1 → V(k1)→0). Multi-step retroactive chains (k3 voids k2 which affects k1's re-assessment) are not covered. E8's orthogonality trigger condition (⟨λ_2\|λ_1⟩=0) is a ρ-side condition, not a K-space axiom. Note: K5 Pre-closure block (F1) formalizes this: V_prov(k1) → 0 is reversible if the contradicting act k2 is itself invalidated before t_close (K7). The PARTIAL verdict is for multi-step retroactive chains only — pre-closure re-assessment of single-step invalidation is now explicitly covered by K5 + K7. | **PARTIAL — K5 single-step + pre-closure re-assessment covered (K5 F1 + K7). Multi-step retroactive chain formalization deferred.** |
-| **E9** | Null Registering-System Event: interaction occurred but ΔI=0 | K1 reserves o=∅ slot. K4 now includes explicit E9 exception clause: null events have cert=1 (interaction occurred), V=0 (by definition, not K5). K4/K5 consistency with E9 is resolved. | **COVERED — K1 o=∅ + K4 E9 exception. Null events structurally accommodated.** |
+| **E8** | Retroactive Registration Override: M_2 retroactively voids M_1 | K5 covers single-step invalidation: a later contradictory registration `k2` can force `V_prov(k1) → 0` before closure. K7 makes this pre-closure transition revisable: if the contradicting act `k2` is itself invalidated before `t_close`, the K5 trigger for `k1` is removed and `V_prov(k1)` is no longer forced to 0. In cross-space cases where E8 is evaluated inside a `requires_K_joint` / `C_K` context, T2 supplies the resolved-demand semantics needed before K7 closure: the demand resolves either by successful `AdmJoint = 1` or by `AdmJoint = 0` producing `⊥_K`. This E8 invalidation path is distinct from E9 null status: E8 is `V_prov→0` by K5 contradiction/authority, not definitional `V=0` from `o=∅`. E8's orthogonality trigger condition (`⟨λ_2|λ_1⟩=0`) remains a ρ-side condition, not a K-space axiom. Multi-step retroactive chains (`k3` voids `k2`, which re-opens `k1`) are still not fully formalized. | **PARTIAL — K5 single-step `V_prov→0` + K7 pre-closure re-assessment covered; T2 supplies resolved-demand semantics when E8 occurs in `C_K`; multi-step retroactive chain formalization deferred.** |
+| **E9** | Null Registering-System Event: interaction occurred but ΔI=0 | K1 reserves `o=∅` slot. K4 includes explicit E9 exception clause: null events have `cert=1` (interaction occurred) and `V=0` by definition because zero outcome information is transferred. This `V=0` is definitional null status, not K5/K6 invalidation: it requires no `⊥`, no `Auth`, and no shared `C_K`. Therefore F2's K6 non-transitivity refinement across distinct `C_K` contexts does not affect E9. | **COVERED — K1 `o=∅` + K4 E9 exception; independent of K6/Auth/C_K.** |
 | **E10** | Tripartite Registration Validity Matrix: three validity criteria | Validity criteria operate on K-side predicates; K4-K5-K6-K7 provide the underlying validity structure. The tripartite matrix is a taxonomy layer on top of K4-K7. | **COVERED — K4-K7 as foundation. No new axiom needed.** |
 | **E11** | Contrapositive Quantum Evidence: evidence from absence | Evidence structure is outside K-space (bridge/evidence layer). Evidence ABOUT K-side states is not a property OF K-space. | **OUT-OF-SCOPE — Bridge/evidence layer. No conflict.** |
 | **E12** | Limit-Faculty Registration: different registering capacities | Different K_R types with different registration capacities are type-level distinctions, not new axioms. K1-K8 apply to all K_R regardless of capacity type. | **COVERED — Taxonomy layer. No new axiom needed.** |
@@ -705,8 +751,11 @@ Number of pairwise checks for N observers:
 | **K3** | Svasaṃvedana (self-awareness) | A cognition is self-aware; it illuminates both object and itself without a second cognition | σ_R(M) determined intrinsically within K_R; no M' required | **Consistent — intrinsic certification matches self-awareness** |
 | **K4** | Svataḥ prāmāṇya (intrinsic validity) | Validity is intrinsic to cognition; it is the default, not something added by verification | V(k)=1 upon instantiation; no external act required to establish validity | **Consistent — default validity matches intrinsic validity** |
 | **K5** | Parataḥ prāmāṇya + Bādhaka pramāṇa | Invalidity is detected extrinsically; a contradicting later cognition (bādhaka) voids the earlier one | V(k)→0 only by later k' with ⊥ and authority; asymmetry: no external function restores V=1 | **Consistent — extrinsic invalidation matches bādhaka structure; asymmetry matches parataḥ** |
+| **K6** | Bādhaka pramāṇa | A contradicting cognition must itself be valid to serve as a defeater; an invalid cognition cannot void another cognition | Cross-registration authority requires a valid later registration within the relevant shared C_K; invalid or out-of-scope registrations cannot invalidate k1 | **Consistent — authority condition preserves bādhaka validity requirement** |
+| **K7** | Niścaya (ascertainment/determination) | Cognition becomes determinate when the cognitive process reaches closure; before closure, doubt or revision remains possible | Closure converts V_prov to V_final only after pending requires_K_joint demands are resolved | **Consistent — closure formalizes ascertainment without denying provisional pre-closure status** |
+| **K8** | Anugama (continuity/attendant relation) | A cognition retains its epistemic status when taken up in a broader cognitive context | Embedding preserves M, o, cert, t, and initial V at embedding time, while still allowing later validity dynamics | **Consistent — embedding preserves epistemic continuity without claiming immunity from later invalidation** |
 
-**BE lineage audit verdict: 5/5 PASS. Zero inconsistencies between K-space axioms and BE structural sources. Each axiom preserves the "structural extraction, not identity" boundary.**
+**BE lineage audit verdict: 8/8 PASS. Zero inconsistencies between K-space axioms and BE structural sources. Each core axiom K1-K8 preserves the "structural extraction, not identity" boundary.**
 
 ---
 
@@ -959,14 +1008,14 @@ Relativization defense check (paper v2.0 §4.5):
   Could K_joint host meta-descriptions ("within K_F, M_F registered |h⟩")?
   Paper's answer: NO — D_joint demands joint validity of original claims,
   not meta-descriptions. Relativizing abandons D_joint rather than satisfying it.
-  This is an EXTERNAL PHILOSOPHICAL COMMITMENT (documented in T3).
+  This is a FRAMEWORK-LEVEL SEMANTIC COMMITMENT (documented in T3).
 
 → Bridge_EWF(D_joint; M_F, M_W) = 1    [assuming relativization defense holds]
 ```
 
 | Check | Status |
 |---|---|
-| Bridge_EWF = 1 | ✅ All conditions met (conditional on relativization defense — external assumption) |
+| Bridge_EWF = 1 | ✅ All conditions met (conditional on relativization defense — framework-level semantic commitment) |
 
 **Step L4-7: AdmJoint check**
 
@@ -1035,7 +1084,7 @@ K_F ⊥_K K_W?
 
 | # | Gap | Severity | Location |
 |---|-----|----------|----------|
-| G1 | Relativization defense is external philosophical commitment (unavoidable in any measurement framework) | Medium | L4-6, step (e). Documented in T3. |
+| G1 | Relativization defense is framework-level semantic commitment required by this formulation of D_joint | Medium | L4-6, step (e). Documented in T3. |
 | G2 | K7 closure conditional on D_joint resolution | Low | §7.2 K7 row. Working as designed. |
 | G3 | K5 minimal ⊥ definition used here; full Level 4 ⊥ formalization not frozen | Medium | L4-5. Documented in Open Item #14. |
 
@@ -1076,14 +1125,14 @@ Step 4 — Registered contradiction (SOLID ✅ at K5 minimal level):
   ⚠ GAP G4: Full Level 4 ⊥ boundary clauses not frozen. K5 minimal used here
   is self-contained but may need revision if Level 4 changes ⊥ semantics.
 
-Step 5 — Bridge_EWF (MEDIUM ⚠ — external assumption):
+Step 5 — Bridge_EWF (MEDIUM ⚠ — semantic boundary):
   Bridge_EWF(D_joint; M_F, M_W) = 1.
   Justification: All conditions (a)-(d) mechanically checked in L4-6.
   Condition (e) — "no reinterpretation preserves both" — depends on
   relativization defense (paper v2.0 §4.5).
-  ⚠ GAP G2: Relativization defense is an external philosophical commitment.
+  ⚠ GAP G1: Relativization defense is a framework-level semantic commitment.
   If rejected, Bridge_EWF = 1 does not follow from K1-K8 alone.
-  Confidence: MEDIUM — conditional on external assumption.
+  Confidence: MEDIUM — conditional on this semantic commitment.
 
 Step 6 — K5 fires in candidate K_joint (SOLID ✅, modulo EP):
   By K8: embeddings i_F, i_W preserve V values.         [K8: V_X(i(k)) = V_R(k)]
@@ -1118,7 +1167,7 @@ Step 7 — Conclusion (SOLID ✅):
 **Overall assessment:**
 > The proof attempt is **valid conditional on two remaining identified dependencies** (G1, G3). Neither is an internal contradiction — one is a philosophical boundary, one is a temporal dependency:
 >
-> - **G1 (Relativization defense)**: Unavoidable philosophical commitment — not derivable from ANY axiom set. Every measurement framework must take a stance on what counts as "satisfying a joint validity demand." Documented as a semantic boundary, not a mathematical gap.
+> - **G1 (Relativization defense)**: Framework-level semantic commitment — not derived within K1-K8. This formulation makes explicit what counts as "satisfying a joint validity demand." Documented as a semantic boundary, not a mathematical gap.
 > - **G3 (Level 4 ⊥ freeze)**: Temporal dependency — resolves when paper v2.0 Level 4 boundary clauses are frozen. K5 minimal ⊥ is sufficient for the concrete model.
 >
 > **Former EP gap (G1 in v1.3): RESOLVED.** EP promoted to K8 (v1.4) — V-preservation through cross-space embedding is now a core axiom. The proof chain no longer depends on an external postulate for Step 6.
@@ -1162,7 +1211,7 @@ Following the 5-step methodology:
 | 12 | K6 Auth non-transitivity edge cases (circular authority chains) | **Resolved v1.2** — counterexample provided in K6 formal block. Remaining: N≥3 exotic topologies. | Low |
 | 13 | Embedding Postulate (EP) promotion decision | **Resolved v1.4** — EP promoted to K8 (Cross-Space Embedding Preservation). K8 is now a frozen Layer 1 core axiom. T1-T3 no longer depend on an external postulate for V-preservation. | ~~High~~ → Resolved |
 | 14 | T2 circularity resolution — Level 4 ⊥ freeze | T2 derivation is conditional on Level 4 ⊥ formalization being consistent with K5 minimal definition. Circularity resolves when Level 4 freezes. **v1.3 update:** Circularity NOT present in concrete model (§7.5 Step 4) — K5 minimal ⊥ is directly verifiable by content inspection (|h⟩ vs |Ψ+⟩). Circularity remains only in general case. | **High** |
-| 15 | Concrete model gaps G1-G3 (§7.4) | G1 (Relativization): unavoidable philosophical commitment in any measurement framework. G2 (K7 closure): working as designed. G3 (Level 4 ⊥): see #14. All gaps are external dependencies, not internal contradictions. **v1.4:** Former EP gap resolved by K8. Renumbered G1-G4 → G1-G3. | Medium |
+| 15 | Concrete model gaps G1-G3 (§7.4) | G1 (Relativization): framework-level semantic commitment required by this formulation of D_joint. G2 (K7 closure): working as designed. G3 (Level 4 ⊥): see #14. All gaps are external dependencies, not internal contradictions. **v1.4:** Former EP gap resolved by K8. Renumbered G1-G4 → G1-G3. | Medium |
 
 ---
 
@@ -1194,8 +1243,8 @@ Following the 5-step methodology:
 | **Define** | What is the "Level 4 freeze check"? | A formal proof that all Level 4 definitions from paper v2.0 §4.3-4.5 are consistent with Layer 1 axioms K1-K8 — no contradiction arises when combining them. |
 | **Trace (Why 1)** | Why is this needed? | Level 4 is currently the least stable layer (in community review). Before freezing it, internal consistency must be established so that community feedback does not hit contradictions that could have been caught internally. |
 | **Trace (Why 2)** | Why is it hard? | Because Level 4 definitions were designed bottom-up (from EWF use case) while K1-K8 were designed top-down (from BE structural sources). The two directions may not converge. Plus, Level 4 uses complex primitives (⊥, Authority, C_K) whose full formalization is not yet frozen. |
-| **Trace (Why 3)** | Why can't it be purely internal? | Because one Level 4 dependency — the relativization defense (Bridge_EWF condition (e), paper v2.0 §4.5) — is a SEMANTIC choice about what counts as "satisfying D_joint." No measurement framework can derive this from its own axioms — it's a Gödel-like semantic boundary. Every framework (Copenhagen, Many-Worlds, QBism, VVV-QMRF) must take an irreducible philosophical stance on joint validity. |
-| **Isolate** | What are the blockers? | (1) Relativization defense = unavoidable philosophical commitment (not a mathematical gap). (2) Full Level 4 ⊥ boundary clauses = not yet frozen (temporal dependency). (3) General case proof (arbitrary |K_R| and N observers) = requires stronger mathematical foundations. |
+| **Trace (Why 3)** | Why can't it be purely internal? | Because one Level 4 dependency — the relativization defense (Bridge_EWF condition (e), paper v2.0 §4.5) — is a SEMANTIC choice about what counts as "satisfying D_joint." This document treats that boundary as external to K1-K8: VVV-QMRF makes the stance explicit through the relativization defense, rather than deriving it from the K-space axioms themselves. |
+| **Isolate** | What are the blockers? | (1) Relativization defense = framework-level semantic commitment required by this formulation of D_joint (not a mathematical gap). (2) Full Level 4 ⊥ boundary clauses = not yet frozen (temporal dependency). (3) General case proof (arbitrary |K_R| and N observers) = requires stronger mathematical foundations. |
 | **Fix cause** | What CAN be done internally? | Promote EP → K8 (DONE v1.4). Concrete model consistency proof (DONE v1.3). Edge case testing. General case proof sketch with explicit boundary documentation. |
 | **Verify** | How to verify? | Walk every Level 4 definition against K1-K8 in the concrete model (§7). Check no contradiction arises. Document what IS proven vs. what depends on external assumptions. |
 
@@ -1214,7 +1263,7 @@ Following the 5-step methodology:
 
 | # | Statement | Why not | Nature of boundary |
 |---|-----------|---------|-------------------|
-| E1 | Relativization defense: "meta-descriptions do not satisfy D_joint" | Semantic choice about the nature of joint validity — not derivable from ANY axiom set | **Philosophical commitment** (unavoidable in every measurement framework) |
+| E1 | Relativization defense: "meta-descriptions do not satisfy D_joint" | Semantic choice about the nature of joint validity — not derived within K1-K8 | **Framework-level semantic commitment** required by this formulation of D_joint |
 | E2 | Full Level 4 ⊥ boundary clauses are correct | Still in community review (paper v2.0). Internal consistency with K5 minimal ⊥ can be checked, but community may disagree with boundary clauses. | **Temporal dependency** (resolves when Level 4 freezes) |
 | E3 | General case proof (arbitrary N, arbitrary |K_R|) | Requires stronger mathematical foundations (structural induction proofs, category-theoretic colimit properties for N>2). | **Mathematical capacity boundary** (documented honestly) |
 
@@ -1222,11 +1271,11 @@ Following the 5-step methodology:
 
 > **Level 4 definitions ARE internally consistent with K1-K8 in the concrete model.**
 >
-> The proof chain has exactly **one irreducible external dependency**: the relativization defense (a philosophical commitment about what counts as satisfying D_joint). This is NOT a gap — it is a **semantic boundary** present in every measurement framework. Copenhagen chooses "Heisenberg cut," Many-Worlds chooses "decoherence branching," QBism chooses "agent belief update," VVV-QMRF chooses "relativization defense." No framework can derive its semantic boundary from its own axioms.
+> The proof chain has exactly **one declared external dependency**: the relativization defense (a framework-level semantic commitment about what counts as satisfying D_joint in this formulation). This is NOT an internal contradiction — it is a **semantic boundary** that VVV-QMRF declares explicitly rather than deriving from K1-K8. Copenhagen, Many-Worlds, QBism, and VVV-QMRF make different semantic choices about joint validity; this document only commits VVV-QMRF to the relativization defense.
 >
-> **Decision:** Level 4 can freeze with **one documented external philosophical commitment** (relativization defense). The former EP gap (G1 in v1.3) is resolved by promoting EP → K8. The ⊥ circularity concern (Open Item #14) is absent in the concrete model. The remaining temporal dependency (Level 4 ⊥ full boundary clauses) resolves when paper v2.0 exits community review.
+> **Decision:** Level 4 can freeze with **one documented framework-level semantic commitment** (relativization defense). The former EP gap (G1 in v1.3) is resolved by promoting EP → K8. The ⊥ circularity concern (Open Item #14) is absent in the concrete model. The remaining temporal dependency (Level 4 ⊥ full boundary clauses) resolves when paper v2.0 exits community review.
 >
-> **Confidence level for Level 4 freeze:** **MEDIUM-HIGH.** Internal consistency is proven for the relevant model class. The only blocker is the philosophical commitment that every measurement framework must make.
+> **Confidence level for Level 4 freeze:** **MEDIUM-HIGH.** Internal consistency is proven for the relevant model class. The remaining blocker is the framework-level semantic commitment about what counts as satisfying D_joint in this formulation.
 
 ### 10.6 Remaining Action Items After Freeze / Các Mục Hành động Sau Freeze
 
@@ -1243,7 +1292,7 @@ Following the 5-step methodology:
 *Document v1.4 — 2026-05-19 — VVV-QMRF §K-AXIOM*
 *Status: Class D (proposed). All axioms and theorems are proposed registration-layer definitions.*
 *Layer 1 (K1-K8): Frozen. Layer 2 (T1-T4): Updatable pending Level 4 freeze.*
-*RCA audit (v1.3 → v1.4): (1) EP promoted to K8 (Cross-Space Embedding Preservation) — Layer 1 now has 8 core axioms. K8 guarantees V-preservation through cross-space embeddings. (2) T1 derivation updated: V-preservation now from K8, not external postulate. Former EP gap (G1) RESOLVED. (3) T2 proof attempt gaps reduced from 3 to 2: only relativization defense (G1, philosophical) and Level 4 ⊥ freeze (G3, temporal) remain. (4) Concrete model §7 updated: K8 consistency walk, AdmJoint check (i) now derives from K8. (5) §10 Level 4 Freeze Check verdict added: internal consistency PROVEN for concrete model; relativization defense documented as unavoidable semantic boundary. (6) Open Item #13 closed (EP → K8). Open Items #14, #15 updated.*
+*RCA audit (v1.3 → v1.4): (1) EP promoted to K8 (Cross-Space Embedding Preservation) — Layer 1 now has 8 core axioms. K8 guarantees V-preservation through cross-space embeddings. (2) T1 derivation updated: V-preservation now from K8, not external postulate. Former EP gap (G1) RESOLVED. (3) T2 proof attempt gaps reduced from 3 to 2: only relativization defense (G1, framework-level semantic commitment) and Level 4 ⊥ freeze (G3, temporal) remain. (4) Concrete model §7 updated: K8 consistency walk, AdmJoint check (i) now derives from K8. (5) §10 Level 4 Freeze Check verdict added: internal consistency PROVEN for concrete model; relativization defense documented as framework-level semantic boundary. (6) Open Item #13 closed (EP → K8). Open Items #14, #15 updated.*
 *Previous (v1.2 → v1.3): (1) Concrete model §7 added: minimal EWF (2 observers, 1 event each). K1-K7 consistency walk completed — no contradictions. Level 4 definitions walk completed — derivation chain verified. (2) T2 proof attempt with 3 gaps. (3) Circularity shown absent in concrete model. (4) Open Items #14, #15 added.*
 *Previous (v1.1 → v1.2): K2 corrected to total order. T1 EP gap acknowledged. K6 non-transitivity counterexample. T2 circularity acknowledgment.*
 *Previous (v1.0 → v1.1): Added K6, K7, K4 E9 exception, K5 minimal ⊥ definition, K1 cert admission rule. Fixed T1 V-preservation (EP), T2 sufficient-vs-necessary, T3 external assumption.*
