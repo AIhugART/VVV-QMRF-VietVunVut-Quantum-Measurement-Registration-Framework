@@ -1,57 +1,67 @@
 node_id,system,concept,betweenness_centrality
-N_QM_VVV_00021,VVV,Registration Lock / Registration-Lock Operator,0.00411979
-N_QM_VVV_00013,VVV,Extrinsic Registration Certification Phase,0.00389249
-N_QM_VVV_00014,VVV,Extrinsic Registration-Certification Operator `Ĉ_ext`,0.00380725
-N_QM_VVV_00029,VVV,Retroactive Registration Override / Formal Measurement Invalidation,0.00340380
-N_QM_00095,QM,Decoherence & Environment as Measurement,0.00332708
-N_QM_VVV_00036,VVV,Null Registering-System Event / Registration Non-Engagement,0.00303159
-N_QM_VVV_00032,VVV,Registration Error / Bhrānti Status,0.00261677
-N_QM_00019,QM,Measurement (Physical Act),0.00259689
-N_QM_VVV_00011,VVV,Dual-Phase Registration Certification / Formal Validity Location,0.00250313
-N_QM_VVV_00018,VVV,Verification-Integrated Density Matrix Evolution,0.00237811
-N_BE_00001,BE,Valid cognition,0.00230992
-N_QM_00033,QM,No-Result Measurement (Null Measurement),0.00207410
-N_QM_VVV_00038,VVV,Measured-but-Unregistered K-State,0.00184112
-N_QM_00094,QM,Heisenberg Cut,0.00182975
-N_QM_VVV_00033,VVV,Self-Certifying Registration Operator / Registration Regress Stopper,0.00157404
-N_QM_VVV_00030,VVV,Invalidation Operator `Ô_bhranti` / Registration Override Operator,0.00130981
-N_BE_00006,BE,Erroneous cognition,0.00129560
-N_QM_VVV_00043,VVV,Trairūpya Apparatus Validity Conditions / Validity Tensor `𝕍_tri`,0.00125014
-N_QM_VVV_00023,VVV,Registration Lock `V̂_yava` / Irreversible Registration Locking,0.00111376
-N_QM_VVV_00020,VVV,Validated Absence Registration / Conditioned Null Registration,0.00084953
-N_QM_VVV_00042,VVV,Tripartite Registration Validity Matrix / Strict Apparatus Axiom,0.00084100
-N_QM_VVV_00015,VVV,Conditionally Updated State `ρ̃`,0.00081259
-N_QM_VVV_00034,VVV,Reflexive Registration Operator `R̂_svasa`,0.00079554
-N_QM_VVV_00027,VVV,Registration Self-Completion Matrix / Act-Result Registration Identity,0.00071599
-N_QM_00020,QM,von Neumann Measurement Model,0.00065917
-N_QM_00022,QM,Post-Measurement State Update,0.00061939
-N_QM_VVV_00012,VVV,Intrinsic Causal Triggering Phase,0.00058529
-N_QM_00021,QM,System–Meter Coupling,0.00056256
-N_QM_VVV_00045,VVV,Pre-Symbolic Event `ε(M)`,0.00046028
-N_QM_00025,QM,[SUY DIỄN] Density Matrix & Mixed States,0.00038073
-N_QM_VVV_00035,VVV,Primary Registration Closure / Regress-Terminating Closure,0.00035800
-N_QM_VVV_00001,VVV,Contrapositive Quantum Evidence / Purely Contrastive Quantum Evidence Structure,0.00029549
-N_QM_VVV_00031,VVV,Registration Weight / Hierarchical Registration Reliability,0.00025003
-N_QM_VVV_00046,VVV,Symbolization Operator `Λ`,0.00021593
-N_QM_VVV_00048,VVV,Limit-Faculty Registration / Transcendental Registration Mode,0.00020457
-N_QM_VVV_00054,VVV,Pre-Measurement Registration Indeterminacy / Structured Registration-Doubt State,0.00020457
-N_QM_VVV_00024,VVV,Registration-Locking Boundary in Delayed-Choice Erasure,0.00018752
-N_QM_VVV_00003,VVV,Projection Operator - registration / Null-Projection Operator `P_null`,0.00018184
-N_BE_00009,BE,Non-conceptual perception,0.00013638
-N_QM_VVV_00022,VVV,Internal Representation Encoding / Internal Encoding Phase `Â_kāra`,0.00013070
-N_QM_VVV_00016,VVV,Certified Registration State / Validated Registration State `ρ_certified`,0.00011933
-N_QM_VVV_00047,VVV,Degree of Symbolization / Partial-to-Complete Registration Mapping,0.00011933
-N_QM_VVV_00037,VVV,Null Registration Operator `Ê_empty`,0.00011365
-N_QM_VVV_00039,VVV,Registering-System-as-Process Framework / Momentary Registration Series,0.00010797
-N_QM_00005,QM,Superposition,0.00010797
-N_QM_00035,QM,Unselective Measurement & Quantum Channel,0.00006251
-N_QM_VVV_00050,VVV,Non-Ordinary Valid Registration Output / Weak-Value Registration Status,0.00004546
-N_QM_VVV_00028,VVV,Act-Result Tensor / Irreducible Event Tensor `𝒯_act-res`,0.00003978
-N_QM_VVV_00049,VVV,Limit-Faculty Registration Operator `M̂_trans`,0.00003978
-N_QM_VVV_00040,VVV,"Momentary Registering Moments `{o₁, o₂, ..., oₙ}`",0.00001705
-N_QM_VVV_00055,VVV,Indeterminacy Operator `Ŝ_saṃśaya`,0.00001705
-N_QM_VVV_00025,VVV,Intrinsic Relational Binding / Entanglement - registration Architecture,0.00001136
-N_QM_VVV_00053,VVV,Kṣaṇa Registration Event / Registration Seal,0.00000568
+N_QM_VVV_00021,VVV,Registration Lock / Registration-Lock Operator,0.00408811
+N_QM_VVV_00014,VVV,Extrinsic Registration-Certification Operator `Ĉ_ext`,0.00391111
+N_QM_VVV_00013,VVV,Extrinsic Registration Certification Phase,0.00375981
+N_QM_VVV_00029,VVV,Retroactive Registration Override / Formal Measurement Invalidation,0.00348289
+N_QM_00095,QM,Decoherence & Environment as Measurement,0.00318028
+N_QM_VVV_00036,VVV,Null Registering-System Event / Registration Non-Engagement,0.00298615
+N_QM_VVV_00032,VVV,Registration Error / Bhrānti Status,0.00264928
+N_QM_00019,QM,Measurement (Physical Act),0.00260931
+N_QM_VVV_00011,VVV,Dual-Phase Registration Certification / Formal Validity Location,0.00252367
+N_QM_VVV_00018,VVV,Verification-Integrated Density Matrix Evolution,0.00242089
+N_BE_00001,BE,Valid cognition,0.00235809
+N_QM_00033,QM,No-Result Measurement (Null Measurement),0.00192415
+N_QM_00094,QM,Heisenberg Cut,0.00178712
+N_QM_VVV_00038,VVV,Measured-but-Unregistered K-State,0.00176999
+N_QM_VVV_00033,VVV,Self-Certifying Registration Operator / Registration Regress Stopper,0.00152448
+N_QM_VVV_00030,VVV,Invalidation Operator `Ô_bhranti` / Registration Override Operator,0.00144169
+N_BE_00006,BE,Erroneous cognition,0.00139886
+N_QM_VVV_00043,VVV,Trairūpya Apparatus Validity Conditions / Validity Tensor `𝕍_tri`,0.00118190
+N_QM_VVV_00023,VVV,Registration Lock `V̂_yava` / Irreversible Registration Locking,0.00116477
+N_QM_VVV_00015,VVV,Conditionally Updated State `ρ̃`,0.00085359
+N_QM_VVV_00042,VVV,Tripartite Registration Validity Matrix / Strict Apparatus Axiom,0.00079650
+N_QM_VVV_00027,VVV,Registration Self-Completion Matrix / Act-Result Registration Identity,0.00071942
+N_QM_VVV_00020,VVV,Validated Absence Registration / Conditioned Null Registration,0.00068801
+N_QM_00022,QM,Post-Measurement State Update,0.00068516
+N_QM_VVV_00012,VVV,Intrinsic Causal Triggering Phase,0.00059380
+N_QM_00020,QM,von Neumann Measurement Model,0.00055384
+N_QM_00021,QM,System–Meter Coupling,0.00053956
+N_QM_VVV_00001,VVV,Contrapositive Quantum Evidence / Purely Contrastive Quantum Evidence Structure,0.00043964
+N_QM_VVV_00034,VVV,Reflexive Registration Operator `R̂_svasa`,0.00042822
+N_QM_00025,QM,[SUY DIỄN] Density Matrix & Mixed States,0.00039968
+N_QM_VVV_00045,VVV,Pre-Symbolic Event `ε(M)`,0.00038826
+N_QM_VVV_00035,VVV,Primary Registration Closure / Regress-Terminating Closure,0.00037113
+N_BE_00011,BE,Self-awareness,0.00035971
+N_QM_VVV_00054,VVV,Pre-Measurement Registration Indeterminacy / Structured Registration-Doubt State,0.00029405
+N_QM_VVV_00031,VVV,Registration Weight / Hierarchical Registration Reliability,0.00022268
+N_QM_VVV_00046,VVV,Symbolization Operator `Λ`,0.00021697
+N_QM_VVV_00048,VVV,Limit-Faculty Registration / Transcendental Registration Mode,0.00020555
+N_QM_00005,QM,Superposition,0.00020269
+N_QM_VVV_00024,VVV,Registration-Locking Boundary in Delayed-Choice Erasure,0.00019984
+N_QM_VVV_00003,VVV,Projection Operator - registration / Null-Projection Operator `P_null`,0.00019413
+N_BE_00015,BE,Exclusion,0.00017129
+N_QM_VVV_00016,VVV,Certified Registration State / Validated Registration State `ρ_certified`,0.00015416
+N_BE_00009,BE,Non-conceptual perception,0.00014845
+N_QM_VVV_00022,VVV,Internal Representation Encoding / Internal Encoding Phase `Â_kāra`,0.00013703
+N_BE_00029,BE,Momentariness,0.00013132
+N_QM_VVV_00037,VVV,Null Registration Operator `Ê_empty`,0.00011419
+N_QM_VVV_00051,VVV,Temporal Discontinuity Doctrine / Moment-to-Moment Quantum Transition,0.00010848
+N_QM_VVV_00039,VVV,Registering-System-as-Process Framework / Momentary Registration Series,0.00010277
+N_QM_VVV_00007,VVV,Counterfactual Evidential Branch,0.00009992
+N_QM_00035,QM,Unselective Measurement & Quantum Channel,0.00006852
+N_BE_00018,BE,Triple-condition syllogism,0.00004568
+N_QM_VVV_00028,VVV,Act-Result Tensor / Irreducible Event Tensor `𝒯_act-res`,0.00004568
+N_QM_VVV_00049,VVV,Limit-Faculty Registration Operator `M̂_trans`,0.00004568
+N_QM_VVV_00050,VVV,Non-Ordinary Valid Registration Output / Weak-Value Registration Status,0.00004568
+N_QM_VVV_00010,VVV,PVM-equivalent Registration Authority,0.00002855
+N_QM_VVV_00040,VVV,"Momentary Registering Moments `{o₁, o₂, ..., oₙ}`",0.00002855
+N_QM_VVV_00055,VVV,Indeterminacy Operator `Ŝ_saṃśaya`,0.00002569
+N_QM_VVV_00041,VVV,Causal Memory Projection `Π̂_causal` / Causal Memory Tensor,0.00001713
+N_QM_VVV_00008,VVV,Ideal Information Without Direct Disturbance,0.00001142
+N_QM_VVV_00025,VVV,Intrinsic Relational Binding / Entanglement - registration Architecture,0.00001142
+N_QM_VVV_00052,VVV,Discrete Transition Operator `T̂_kṣaṇa`,0.00001142
+N_QM_VVV_00047,VVV,Degree of Symbolization / Partial-to-Complete Registration Mapping,0.00000571
+N_QM_VVV_00053,VVV,Kṣaṇa Registration Event / Registration Seal,0.00000571
 N_BE_00002,BE,Direct perception,0.00000000
 N_BE_00003,BE,Inference,0.00000000
 N_BE_00004,BE,Testimony,0.00000000
@@ -59,14 +69,11 @@ N_BE_00005,BE,Object of cognition,0.00000000
 N_BE_00007,BE,Doubt,0.00000000
 N_BE_00008,BE,Conceptual construction,0.00000000
 N_BE_00010,BE,Mental consciousness,0.00000000
-N_BE_00011,BE,Self-awareness,0.00000000
 N_BE_00012,BE,Transcendental perception,0.00000000
 N_BE_00013,BE,Particular / Unique mark,0.00000000
 N_BE_00014,BE,Universal / General mark,0.00000000
-N_BE_00015,BE,Exclusion,0.00000000
 N_BE_00016,BE,Sign / Logical reason,0.00000000
 N_BE_00017,BE,Subject / locus,0.00000000
-N_BE_00018,BE,Triple-condition syllogism,0.00000000
 N_BE_00019,BE,Pervasion,0.00000000
 N_BE_00020,BE,Necessary relation,0.00000000
 N_BE_00021,BE,Essential relation,0.00000000
@@ -77,7 +84,6 @@ N_BE_00025,BE,Emptiness / Essencelessness,0.00000000
 N_BE_00026,BE,Two truths,0.00000000
 N_BE_00027,BE,Inference for oneself,0.00000000
 N_BE_00028,BE,Deductive reasoning,0.00000000
-N_BE_00029,BE,Momentariness,0.00000000
 N_BE_00030,BE,Buddha as epistemic authority,0.00000000
 N_BE_00031,BE,"Buddhist Pramāṇa-Epistemology, Logic, and Language",0.00000000
 N_BE_00032,BE,Pramāṇa-epistemology,0.00000000
@@ -316,14 +322,8 @@ N_QM_VVV_00002,VVV,Interaction-Free State Inference (IFSI),0.00000000
 N_QM_VVV_00004,VVV,Informative Silence - registration,0.00000000
 N_QM_VVV_00005,VVV,Non-Informative Null Event / Broken-Detector Null,0.00000000
 N_QM_VVV_00006,VVV,Exclusion-Based State Selection / Exclusion-Based Registration,0.00000000
-N_QM_VVV_00007,VVV,Counterfactual Evidential Branch,0.00000000
-N_QM_VVV_00008,VVV,Ideal Information Without Direct Disturbance,0.00000000
 N_QM_VVV_00009,VVV,Elitzur-Vaidman Interaction-Free Measurement as VVV Evidence Exemplar,0.00000000
-N_QM_VVV_00010,VVV,PVM-equivalent Registration Authority,0.00000000
-N_QM_VVV_00041,VVV,Causal Memory Projection `Π̂_causal` / Causal Memory Tensor,0.00000000
 N_QM_VVV_00044,VVV,Pre-Symbolic Stratum / Formalism-External Physical Event,0.00000000
-N_QM_VVV_00051,VVV,Temporal Discontinuity Doctrine / Moment-to-Moment Quantum Transition,0.00000000
-N_QM_VVV_00052,VVV,Discrete Transition Operator `T̂_kṣaṇa`,0.00000000
 N_QM_00001,QM,Qubit,0.00000000
 N_QM_00002,QM,Quantum State,0.00000000
 N_QM_00003,QM,Classical vs Quantum State,0.00000000
@@ -419,4 +419,3 @@ N_QM_00102,QM,Measurement Reversal,0.00000000
 N_QM_00103,QM,Quantum Feedback and Control,0.00000000
 N_QM_00104,QM,Canonical Phase Measurement,0.00000000
 N_QM_00105,QM,Continuous Quantum Error Correction,0.00000000
-,?,?,0.00000000

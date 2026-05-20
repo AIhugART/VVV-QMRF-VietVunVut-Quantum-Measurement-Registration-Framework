@@ -11,37 +11,14 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 > No `VVV_TO_BE` (outgoing) or `DRAFT_BRIDGE_BE_VVV` (incoming) edges.
 > **Bridge 1 expansion targets** for Phase 4.
 
-**Count:** 27 nodes
+**Count:** 4 nodes
 
 | VVV Node | Concept | Also rho-gap? | rho-side QM anchors |
 |---|---|---|---|
 | `N_QM_VVV_00002` | Interaction-Free State Inference (IFSI) | No | `N_QM_00033` |
-| `N_QM_VVV_00003` | Projection Operator - registration / Null-Projecti | No | `N_QM_00018` |
 | `N_QM_VVV_00005` | Non-Informative Null Event / Broken-Detector Null | No | `N_QM_00033` |
-| `N_QM_VVV_00007` | Counterfactual Evidential Branch | No | `N_QM_00005` |
-| `N_QM_VVV_00008` | Ideal Information Without Direct Disturbance | No | `N_QM_00027` |
 | `N_QM_VVV_00009` | Elitzur-Vaidman Interaction-Free Measurement as VV | Yes | — |
-| `N_QM_VVV_00010` | PVM-equivalent Registration Authority | No | `N_QM_00014` |
-| `N_QM_VVV_00012` | Intrinsic Causal Triggering Phase | No | `N_QM_00021` |
-| `N_QM_VVV_00013` | Extrinsic Registration Certification Phase | No | `N_QM_00095`, `N_QM_00103` |
-| `N_QM_VVV_00014` | Extrinsic Registration-Certification Operator `Ĉ_e | No | `N_QM_00105` |
 | `N_QM_VVV_00015` | Conditionally Updated State `ρ̃` | No | `N_QM_00022`, `N_QM_00025` |
-| `N_QM_VVV_00016` | Certified Registration State / Validated Registrat | No | `N_QM_00022` |
-| `N_QM_VVV_00022` | Internal Representation Encoding / Internal Encodi | No | `N_QM_00019` |
-| `N_QM_VVV_00023` | Registration Lock `V̂_yava` / Irreversible Registr | No | `N_QM_00022` |
-| `N_QM_VVV_00024` | Registration-Locking Boundary in Delayed-Choice Er | No | `N_QM_00102` |
-| `N_QM_VVV_00028` | Act-Result Tensor / Irreducible Event Tensor `𝒯_ac | No | `N_QM_00014` |
-| `N_QM_VVV_00030` | Invalidation Operator `Ô_bhranti` / Registration  | No | `N_QM_00103` |
-| `N_QM_VVV_00034` | Reflexive Registration Operator `R̂_svasa` | No | `N_QM_00022` |
-| `N_QM_VVV_00035` | Primary Registration Closure / Regress-Terminating | No | `N_QM_00015` |
-| `N_QM_VVV_00037` | Null Registration Operator `Ê_empty` | No | `N_QM_00035` |
-| `N_QM_VVV_00040` | Momentary Registering Moments `{o₁, o₂, ..., oₙ}` | No | `N_QM_00038` |
-| `N_QM_VVV_00041` | Causal Memory Projection `Π̂_causal` / Causal Memo | No | `N_QM_00103` |
-| `N_QM_VVV_00046` | Symbolization Operator `Λ` | No | `N_QM_00016` |
-| `N_QM_VVV_00049` | Limit-Faculty Registration Operator `M̂_trans` | No | `N_QM_00026` |
-| `N_QM_VVV_00052` | Discrete Transition Operator `T̂_kṣaṇa` | No | `N_QM_00042` |
-| `N_QM_VVV_00053` | Kṣaṇa Registration Event / Registration Seal | No | `N_QM_00037` |
-| `N_QM_VVV_00055` | Indeterminacy Operator `Ŝ_saṃśaya` | No | `N_QM_00025` |
 
 ---
 
@@ -74,10 +51,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Category | Count |
 |---|---|
-| K-side gaps (no BE anchor) | 27 |
+| K-side gaps (no BE anchor) | 4 |
 | rho-side gaps (no QM anchor) | 1 |
 | Both gaps (no BE and no QM) | 1 |
-| Intersection (both anchored) | 25 |
+| Intersection (both anchored) | 48 |
 | **Total VVV nodes** | **52** |
 
 > Phase 3 similarity search will produce similarity-scored gap candidates.

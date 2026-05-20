@@ -12,6 +12,7 @@ Steps:
   1.6 Validate: zero dangling edge refs (orphan nodes permitted per F3 RCA fix)
 """
 
+import os
 import re
 import json
 import sys
@@ -22,6 +23,8 @@ from networkx.readwrite import json_graph
 # Force UTF-8 output on Windows console
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+SUFFIX = os.environ.get("VVV_QMRF_EX_SUFFIX", "")
 
 # ── Paths ────────────────────────────────────────────────────────────────────
 BASE = Path("c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement")
@@ -375,7 +378,7 @@ if __name__ == "__main__":
     print(f"\n[OK] Graph saved:       {graph_path}")
 
     # Save validation report
-    report_path = OUT / "phase1_validation_report.json"
+    report_path = OUT / f"phase1_validation_report{SUFFIX}.json"
     saveable = {k: v for k, v in report.items()
                 if k not in ("dangling_edges", "orphan_nodes")}
     saveable["dangling_sample"]           = report["dangling_edges"][:5]

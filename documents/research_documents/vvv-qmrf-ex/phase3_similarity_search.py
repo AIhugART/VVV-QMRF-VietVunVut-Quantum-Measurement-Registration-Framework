@@ -26,6 +26,7 @@ Embedding text strategy:
 
 import csv
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -34,13 +35,15 @@ import numpy as np
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+SUFFIX = os.environ.get("VVV_QMRF_EX_SUFFIX", "")
+
 # ── Paths ─────────────────────────────────────────────────────────────────────
 BASE = Path("c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement")
 OUT  = BASE / "documents/research_documents/vvv-qmrf-ex"
 DATA = OUT / "data"
 
 GRAPH_JSON  = DATA / "vvv_qmrf_ex_graph.json"
-PHASE2_JSON = DATA / "phase2_intersection_report.json"
+PHASE2_JSON = DATA / f"phase2_intersection_report{SUFFIX}.json"
 
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 EMB_DIM    = 768
@@ -334,7 +337,7 @@ if __name__ == "__main__":
             "dim_recorded":        True,
         },
     }
-    report_path = DATA / "phase3_similarity_report.json"
+    report_path = DATA / f"phase3_similarity_report{SUFFIX}.json"
     with open(report_path, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
     print(f"  Saved report:  {report_path}")

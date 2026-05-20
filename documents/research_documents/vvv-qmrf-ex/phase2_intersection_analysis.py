@@ -27,6 +27,7 @@ Edge type definitions from Phase 1:
 
 import csv
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -35,6 +36,8 @@ from networkx.readwrite import json_graph
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
+SUFFIX = os.environ.get("VVV_QMRF_EX_SUFFIX", "")
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 BASE = Path("c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement")
@@ -49,7 +52,7 @@ AUTHOR = (
     "Facebook: https://www.facebook.com/xuanviet"
 )
 
-K_SIDE_TYPES   = {"VVV_TO_BE", "DRAFT_BRIDGE_BE_VVV", "BR_EX_BE", "BR_EX_BE_NEW"}
+K_SIDE_TYPES   = {"VVV_TO_BE", "DRAFT_BRIDGE_BE_VVV", "BR_EX_BE", "BR_EX_BE_NEW", "BR_EX_BE_STRETCH"}
 RHO_SIDE_TYPES = {"VVV_TO_QM", "BR_QM_VVV", "BR_EX_QM", "BR_EX_QM_NEW"}
 
 
@@ -528,7 +531,7 @@ if __name__ == "__main__":
         },
     }
 
-    report_path = DATA / "phase2_intersection_report.json"
+    report_path = DATA / f"phase2_intersection_report{SUFFIX}.json"
     with open(report_path, "w", encoding="utf-8") as f:
         json.dump(report, f, indent=2, ensure_ascii=False)
     print(f"\nSaved: {report_path}")

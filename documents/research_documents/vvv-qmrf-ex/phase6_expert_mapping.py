@@ -12,11 +12,13 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
+SUFFIX = os.environ.get("VVV_QMRF_EX_SUFFIX", "")
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 
 # Load Phase 3 similarity data
-with open(os.path.join(DATA_DIR, "phase3_similarity_report.json"), 'r', encoding='utf-8') as f:
+with open(os.path.join(DATA_DIR, f"phase3_similarity_report{SUFFIX}.json"), 'r', encoding='utf-8') as f:
     p3 = json.load(f)
 
 # The 9 KE-PM target VVV nodes
@@ -302,7 +304,7 @@ report = {
     "expert_mappings": expert_mappings
 }
 
-report_path = os.path.join(DATA_DIR, "phase6_expert_mapping_report.json")
+report_path = os.path.join(DATA_DIR, f"phase6_expert_mapping_report{SUFFIX}.json")
 with open(report_path, 'w', encoding='utf-8') as f:
     json.dump(report, f, indent=2, ensure_ascii=False)
 print(f"\nReport saved: {report_path}")
@@ -312,7 +314,13 @@ print("\n" + "=" * 70)
 print("PHASE 6 - STEP 5: Update graph with 9 new edges")
 print("=" * 70)
 
+edge_key = "links" if ("links" in graph_data and graph_data["links"]) else "edges"
+graph_data.setdefault(edge_key, [])
+existing_bridge_ids = {e.get("br_ex_id") or e.get("bridge_id") for e in graph_data[edge_key]}
+added_here = 0
 for entry in new_entries:
+    if entry['id'] in existing_bridge_ids:
+        continue
     new_edge = {
         "source": entry['source_node'],
         "target": entry['target_node'],
@@ -323,16 +331,18 @@ for entry in new_entries:
         "confidence": entry['confidence'],
         "phase": "6"
     }
-    graph_data['edges'].append(new_edge)
+    graph_data[edge_key].append(new_edge)
+    added_here += 1
 
 # Update graph metadata
-graph_data['graph']['edge_count'] = len(graph_data['edges'])
+graph_data.setdefault('graph', {})
+graph_data['graph']['edge_count'] = len(graph_data[edge_key])
 graph_data['graph']['version'] = '0.6-phase6-expert'
 
 graph_path = os.path.join(DATA_DIR, "vvv_qmrf_ex_graph.json")
 with open(graph_path, 'w', encoding='utf-8') as f:
     json.dump(graph_data, f, indent=2, ensure_ascii=False)
-print(f"Graph updated: {len(graph_data['edges'])} edges (was 151, added 9)")
+print(f"Graph updated: {len(graph_data[edge_key])} edges (added {added_here} new this run)")
 
 # Step 6: Recompute intersection
 print("\n" + "=" * 70)
@@ -341,10 +351,10 @@ print("=" * 70)
 
 import networkx as nx
 try:
-    G = nx.node_link_graph(graph_data, edges="edges")
+    G = nx.node_link_graph(graph_data, edges=edge_key)
 except TypeError:
-    if 'edges' in graph_data and 'links' not in graph_data:
-        gd = dict(graph_data)
+    gd = dict(graph_data)
+    if edge_key == "edges" and "links" not in gd:
         gd['links'] = gd.pop('edges')
     G = nx.node_link_graph(gd)
 
@@ -389,8 +399,8 @@ with open(ctx_path, 'r', encoding='utf-8') as f:
     context = json.load(f)
 
 context['version'] = '0.6-phase6-expert'
-context['edge_count'] = len(graph_data['edges'])
-context['graph']['edge_count'] = len(graph_data['edges'])  # F-RCA-02 fix: sync nested edge_count
+context['edge_count'] = len(graph_data[edge_key])
+context['graph']['edge_count'] = len(graph_data[edge_key])  # F-RCA-02 fix: sync nested edge_count
 if '6-expert-mapping' not in context['phases_complete']:
     context['phases_complete'].append('6-expert-mapping')
 context['phase6_results'] = {
@@ -399,7 +409,7 @@ context['phase6_results'] = {
     'intersection_before': 16,
     'intersection_after': intersection_new,
     'intersection_pct': round(pct, 1),
-    'total_edges': len(graph_data['edges']),
+    'total_edges': len(graph_data[edge_key]),
     'confidence_breakdown': {
         'high': sum(1 for e in expert_mappings if e['confidence'] == 'high'),
         'medium_high': sum(1 for e in expert_mappings if e['confidence'] == 'medium-high'),
@@ -417,7 +427,7 @@ print("PHASE 6 - COMPLETE")
 print("=" * 70)
 print(f"  KE-PM nodes resolved: 9/9 (100%)")
 print(f"  New BR_EX_BE entries: BR_EX_BE_00038 .. BR_EX_BE_00046")
-print(f"  Graph edges: 151 -> {len(graph_data['edges'])}")
+print(f"  Graph edges: 151 -> {len(graph_data[edge_key])}")
 print(f"  Intersection: 16 -> {intersection_new} ({pct:.1f}%)")
 print(f"  K-effective (no exceptions needed): {intersection_new + k_only}/52")
 print(f"  Confidence: {report['confidence_distribution']}")

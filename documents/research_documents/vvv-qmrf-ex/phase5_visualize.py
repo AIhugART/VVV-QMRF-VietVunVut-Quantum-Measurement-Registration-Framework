@@ -23,6 +23,8 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 # --- Configuration ---
+SUFFIX = os.environ.get("VVV_QMRF_EX_SUFFIX", "")
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 OUTPUT_DIR = os.path.join(DATA_DIR, "phase5_output")
@@ -30,7 +32,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 GRAPH_FILE = os.path.join(DATA_DIR, "vvv_qmrf_ex_graph.json")
 CONTEXT_FILE = os.path.join(DATA_DIR, "vvv_qmrf_ex_context.json")
-P4_REPORT = os.path.join(DATA_DIR, "phase4_registry_report.json")
+P4_REPORT = os.path.join(DATA_DIR, f"phase4_registry_report{SUFFIX}.json")
 
 # --- Load Data ---
 print("[Phase 5] Loading graph and context data...")
@@ -45,11 +47,11 @@ with open(P4_REPORT, 'r', encoding='utf-8') as f:
 with open(GRAPH_FILE, 'r', encoding='utf-8') as f:
     graph_data = json.load(f)
 
+edge_key = "edges" if ("edges" in graph_data and graph_data["edges"]) else "links"
 try:
-    G = nx.node_link_graph(graph_data, edges="edges")
+    G = nx.node_link_graph(graph_data, edges=edge_key)
 except TypeError:
-    # Older networkx: rename 'edges' to 'links' manually
-    if 'edges' in graph_data and 'links' not in graph_data:
+    if edge_key == "edges" and "links" not in graph_data:
         graph_data['links'] = graph_data.pop('edges')
     G = nx.node_link_graph(graph_data)
 print(f"[Phase 5] Graph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
@@ -208,7 +210,7 @@ ax.set_ylim(-6, 7)
 ax.axis('off')
 
 plt.tight_layout()
-diagram_path = os.path.join(OUTPUT_DIR, "step5_1_network_diagram.png")
+diagram_path = os.path.join(OUTPUT_DIR, f"step5_1_network_diagram{SUFFIX}.png")
 plt.savefig(diagram_path, dpi=200, bbox_inches='tight', facecolor='#0a0a1a')
 plt.close()
 print(f"[Step 5.1] ✅ Network diagram saved: {diagram_path}")
@@ -293,7 +295,7 @@ cbar.ax.yaxis.set_tick_params(color='white')
 plt.setp(plt.getp(cbar.ax, 'yticklabels'), color='white')
 
 plt.tight_layout()
-heatmap_path = os.path.join(OUTPUT_DIR, "step5_2_kp_heatmap.png")
+heatmap_path = os.path.join(OUTPUT_DIR, f"step5_2_kp_heatmap{SUFFIX}.png")
 plt.savefig(heatmap_path, dpi=200, bbox_inches='tight', facecolor='#0a0a1a')
 plt.close()
 print(f"[Step 5.2] ✅ K-ρ heatmap saved: {heatmap_path}")
@@ -390,12 +392,12 @@ report = {
     },
     "per_node_coverage": coverage_data,
     "visualizations": {
-        "network_diagram": "step5_1_network_diagram.png",
-        "kp_heatmap": "step5_2_kp_heatmap.png"
+        "network_diagram": f"step5_1_network_diagram{SUFFIX}.png",
+        "kp_heatmap": f"step5_2_kp_heatmap{SUFFIX}.png"
     }
 }
 
-report_path = os.path.join(DATA_DIR, "phase5_coverage_report.json")
+report_path = os.path.join(DATA_DIR, f"phase5_coverage_report{SUFFIX}.json")
 with open(report_path, 'w', encoding='utf-8') as f:
     json.dump(report, f, indent=2, ensure_ascii=False)
 print(f"[Step 5.3] ✅ Coverage report saved: {report_path}")
