@@ -7,7 +7,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Document type:** `meta_architecture`
 **Date:** 2026-05-19
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** Class D (proposed) — All axioms and theorems are proposed registration-layer definitions
+**Status:** Mixed — K1: Class C (formal definition); K2–K8, T1–T4: Class D (proposed registration-layer) *(K1 elevated to Class C as carrier-set formal definition; see §1 K1 Property table and §5 C-KAXIOM-001)*
 **Source:** Derived from VVV-QMRF Working Paper v2.0 Section 7.2 deferred item #5
 **Cite:** VVV-QMRF §K-AXIOM
 **Plan reference:** `papers/Testable_Prediction_Section/extended_wigners_friend_k_side_incommensurability/plan/VVV-QMRF_K_Space_Axiomatization_Plan.md`
@@ -30,6 +30,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ### 0.2 Trace — 5 Whys
 
+*(Note: The questions below trace the RCA Motivation — why axiomatization is needed now. This is a "Why is this the right fix?" trace, not a backward causal trace from symptom to deeper cause. The backward causal trace is: K extensional → no admission rule → axioms undefined → proofs blocked. The motivation trace and causal trace are complementary; both are valid RCA phases.)*
+
 1. **Why needed?** VVV-QMRF uses K as a "space" in formal claims without mathematical foundation.
 2. **Why now?** Three deferred proof items in paper v2.0 are blocked by this absence.
 3. **Why not before?** Paper achieved Class C/D claims with structural definitions; operational bridges sufficed.
@@ -39,25 +41,33 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ### 0.3 Isolate — The Gap
 
 K is currently a **collection** without structure. To be a **space**, it requires at minimum:
-- **Carrier set** — what elements belong to K
+- **Axiomatized membership rule** — an admission criterion determining which tuples belong to K_R (K already has an extensional collection of tuples per §0.1; what it lacks is a formal membership axiom with cert-based admission rule and structural guarantees)
 - **Order structure** — temporal ordering of registration events
 - **Validity structure** — how validity propagates through order
 - **Operations** — embedding (morphism between K-spaces), joint construction (for `K_joint`)
 
 ### 0.4 Fundamental Design Decision
 
-K-space is NOT a pure mathematical space. It is a **registration-logic structure**: a mathematical carrier (poset with morphisms) whose primitive predicates are epistemological (`cert`, `V`, `⊥`). This is not Hilbert space, not phase space, not probability space — these are all (math + math). K-space is (math + registration-logic). The mathematical structure is the **carrier**, not the **content**.
+K-space is NOT a pure mathematical space. It is a **registration-logic structure**: a mathematical carrier (chain within each K_R, partial order across K_R via embeddings, with morphisms preserving structure) whose primitive predicates are epistemological (`cert`, `V`, `⊥`). This is not Hilbert space, not phase space, not probability space — these are all (math + math). K-space is (math + registration-logic). The mathematical structure is the **carrier**, not the **content**.
 
 ### 0.5 2-Layer Architecture
 
 ```
-Layer 1 — CORE AXIOMS (K1-K8): Frozen
+Layer 1 — CORE AXIOMS (K1-K8): Frozen (syntactic)
   Based on dependency stack Level 0-3 (BE SOT, K≠H, E1-E7, K-state tuple).
-  These do NOT depend on Level 4 (⊥_K formal chain, which is in community review).
+  K1-K8 axiom TEXT does not depend on Level 4 — text is unconditionally frozen.
+  K5/K6/K7 have CONDITIONAL SEMANTIC DEPENDENCIES on Level 4:
+    - K5 firing narrows by Level 4 ⊥_K boundary clauses
+    - K6 Auth depends on D_joint extensional scope
+    - K7 t_close timing depends on requires_K_joint extensional scope
+  K1-K4 and K8 carry NO Level 4 semantic dependencies.
+  See §5 C-KAXIOM-010 for full 2-part syntactic/semantic isolation breakdown.
 
-Layer 2 — BRIDGE THEOREMS (T1-T4): Updatable
-  Connect core axioms to Level 4 structural definitions.
-  Marked "pending Level 4 freeze" — updatable without changing K1-K8.
+Layer 2 — BRIDGE THEOREMS (T1-T3 pending Level 4 freeze + T4 new Class D): Updatable
+  T1-T3: Connect core axioms to Level 4 structural definitions; updatable when Level 4 changes.
+  T4: New Class D theorem (N-observer generalization); independently updatable; requires
+      separate verification not tied to Level 4 freeze.
+  All bridge theorems updatable without changing K1-K8 text.
 ```
 
 ---
@@ -94,8 +104,17 @@ Cert admission rule:
   discriminating role of cert (filtering cert=0 events) is exercised at the K_R
   admission boundary, not inside K_R. Once k is inside K_R, cert(k)=1 is invariant.
 
+Injection constraint (t-injectivity):
+  t restricted to K_R is injective:
+    ∀k1, k2 ∈ K_R: t(k1) = t(k2) → k1 = k2.
+  Reason: registration events within K_R are identified by their timestamp;
+  two distinct k cannot share t within the same K_R. This is a definitional
+  property of the registration process: if two acts share a timestamp in K_R,
+  they are the same registration act. The constraint is required for K2
+  totality and RegistrationState well-definedness (see K2).
+
 K_R is produced by registering system R over time.
-K_R is finite or countably infinite (discrete sequence of registration events).
+K_R is finite or countably infinite (a consequence of K2 discreteness — see K2 S2-Δ lemma).
 ```
 
 | Property | Value |
@@ -104,7 +123,7 @@ K_R is finite or countably infinite (discrete sequence of registration events).
 | **BE lineage** | Pramāṇa — cognition as structured event: act (pramāṇa), object (prameya), self-awareness (svasaṃvedana), result (phala), validity |
 | **Claim class** | C (conjectural VVV-QMRF formal definition) |
 | **Dependency** | Level 3 (K-state tuple). No Level 4 dependency. |
-| **Boundary** | `K_R` is not a Hilbert space, not a set of physical density matrices, not a probability space. Elements `k` are registration states — they record what was registered, not what physically exists. The `o = ∅` slot is reserved for E9 (null event) and E14 (validated absence) but is not operationalized in this axiom set. |
+| **Boundary** | `K_R` is not a Hilbert space, not a set of physical density matrices, not a probability space. Elements `k` are registration states — they record what was registered, not what physically exists. The `o = ∅` slot is reserved for E9 (null event) and E14 (validated absence). K4 operationalizes E9 via the `isNull(k) := o(k) = ∅ ∧ ΔI(k) = 0` guard (cert=1 ∧ isNull(k) → V=0 by definition); E14 (validated absence) accommodation is structural only (see Open Item #3). |
 | **Consistency** | K1 is consistent with K ≠ H (Level 1). The carrier set contains registration tuples, not physical states. |
 
 ### AXIOM K2 — Temporal Order / Thứ tự Thời gian
@@ -124,17 +143,20 @@ For all k1, k2 ∈ K_R:
   (ii)   Transitive:    k1 <_R k2  ∧  k2 <_R k3  →  k1 <_R k3
   (iii)  Asymmetry:     k1 <_R k2  →  ¬(k2 <_R k1)     [follows from (i)+(ii)]
   (iv)   Totality:      ∀k1, k2 ∈ K_R, k1 ≠ k2  →  k1 <_R k2  ∨  k2 <_R k1
-                        [all elements comparable: t(k1) ≠ t(k2) for distinct events]
+                        [all elements comparable — follows from K1 t-injectivity]
 
-  Note: Totality (iv) holds because distinct registration events in the same K_R
-  have distinct timestamps. If two events were to share a timestamp, they would
-  be the same registration event (identity by timestamp within K_R).
+  Totality proof (from K1 injection constraint):
+    Take k1, k2 ∈ K_R with k1 ≠ k2.
+    By K1 t-injectivity: t(k1) ≠ t(k2).
+    By T_R strict total order: t(k1) < t(k2)  ∨  t(k2) < t(k1).
+    By <_R definition: k1 <_R k2  ∨  k2 <_R k1.  ∎
 
 Discreteness (S2-Δ lemma):
   Define: RegistrationState: T_R → (K_R ∪ {∅})
           RegistrationState(t) = k    if ∃k ∈ K_R with t(k) = t
           RegistrationState(t) = ∅    otherwise
-  (Well-defined: K2 strict total order ensures at most one k per distinct t in K_R.)
+  (Well-defined: K1 t-injectivity guarantees at most one k per distinct t in K_R;
+   K2 strict total order then ensures the map is well-defined.)
   For any consecutive pair k_i, k_{i+1} ∈ K_R with no k' such that k_i <_R k' <_R k_{i+1}:
     ∀t ∈ (t(k_i), t(k_{i+1})),  RegistrationState(t) = ∅
 ```
@@ -156,6 +178,12 @@ Discreteness (S2-Δ lemma):
 
 **Formal:**
 ```
+Act-token convention:
+  M_K is a set of measurement-registration act TOKENS (unique event identifiers).
+  Two registration events of the same act-type but different timestamps are
+  distinct M_K members: token(M_1) ≠ token(M_2) even if type(M_1) = type(M_2).
+  K5 and T1 apply token-level reasoning; act-type reasoning requires separate notation.
+
 σ_R: M_K → {0,1}
 
 σ_R(M) = 1  iff  M has occurred as a K-side registration event of R,
@@ -185,21 +213,31 @@ Reflexivity (E1 core property):
 ### AXIOM K4 — Default Validity / Tính hợp lệ Mặc định
 
 **Statement:**
-> For any k ∈ K_R with cert(k) = 1 and ¬isNull(k), the validity status V(k) = 1 upon instantiation of k in K_R. Validity is the default state of a self-certified non-null registration event; it does not require external confirmation.
+> For any k ∈ K_R with ¬isNull(k), the validity status V(k) = 1 upon instantiation of k in K_R. [cert(k) = 1 for all k ∈ K_R by K1 admission rule — not restated here.] Validity is the default state of a non-null registration event; it does not require external confirmation. For isNull(k), V(k) = 0 by K4(b). All k ∈ K_R are covered by one of the two clauses.
 
 **Formal:**
 ```
 isNull(k) :=  o(k) = ∅  ∧  ΔI(k) = 0
               (E9 null event: interaction occurred but zero information transfer)
 
-For all k ∈ K_R with ¬isNull(k):
-  cert(k) = 1  →  V(k) = 1  (upon instantiation of k in K_R)
+For all k ∈ K_R:
+  (a) ¬isNull(k)  →  V(k) = 1   (upon instantiation: non-null self-certified events
+                                  are valid by default)
+  (b)  isNull(k)  →  V(k) = 0   (E9 null events: o=∅ ∧ ΔI=0 → zero information
+                                  transfer → V=0 by K4 formal convention)
 
-E9 null registration event — covered by isNull guard:
+Joint exhaustiveness:
+  K1 admission rule (cert=1) + isNull dichotomy partition all k ∈ K_R.
+  K4 defines V for both branches: no k has V undetermined by K4.
+
+  [cert(k) = 1 for all k ∈ K_R is guaranteed by K1 admission rule — clause (a) need
+   not restate it; it is shown here for clarity and omitted from K5/K7 downstream proofs.]
+
+E9 null registration event — K4(b) explanatory note:
   For k_null ∈ K_R with isNull(k_null):
-    cert(k_null) = 1  (self-certified: interaction occurred)
-    V(k_null) = 0     (by definition: zero outcome information → V = 0)
-  The isNull guard excludes k_null from the rule above — no conflict, no override.
+    cert(k_null) = 1  (self-certified: interaction occurred, K1 admission rule)
+    V(k_null) = 0     (K4(b) formal clause — not external commentary)
+  The isNull guard excludes k_null from clause (a) — no conflict, no override.
 
 Default rule:
   For non-null k: V(k) starts at 1. No external act is required to establish V(k) = 1.
@@ -220,7 +258,7 @@ Provision: V(k) = 1 is provisional until the registration process closes
 ### AXIOM K5 — Invalidation / Vô hiệu hóa
 
 **Statement:**
-> V(k1) → 0 iff there exists k2 ∈ K_R with k1 <_R k2 such that k2 stands in registered contradiction (⊥) to k1 within a shared K-side comparison context C_K, and k2 has valid cross-registration authority with respect to k1. Validity cannot be externally confirmed (only contradicted). Pre-closure: V_prov(k1) → 0 is reversible in principle if the contradicting act is itself invalidated before process closure (K7). Post-closure: V_final(k1) → 0 is irreversible and absolute.
+> V(k1) → 0 iff there exists k2 ∈ K_R with k1 <_R k2 such that k2 stands in registered contradiction (⊥) to k1 within a shared K-side comparison context C_K, and k2 has valid cross-registration authority with respect to k1. Validity cannot be externally confirmed (only contradicted). Pre-closure: V_prov(k1) → 0 is reversible in principle if the contradicting act is itself invalidated before process closure (K7). Post-closure: V_final(k1) → 0 is irreversible and absolute. *(Note: "k2 ∈ K_R" has two readings — native intra-K_R and cross-space via K_joint. See K_R disambiguation in formal block below.)*
 
 **Primitive predicate definitions:**
 
@@ -255,9 +293,12 @@ V(k1) → 0  iff  ∃k2 ∈ K_R such that:
   (iii) k2 has valid cross-registration authority      [authority conditions from paper v2.0 §4.4]
         with respect to k1 in C_K
 
-Asymmetry (E7 Axiom 3):
-  ¬∃F such that F(k′) → {V(k) = 1}
-  (No external function can restore or confirm validity.)
+Asymmetry (E7 Axiom 3, post-closure):
+  Post-closure: ¬∃F such that F(k′) → V_final(k) = 1.
+  (No external function can restore V_final once K7 closes.)
+  Pre-closure: V_prov(k) can return to 1 if the K5 trigger k2 is itself invalidated
+  before closure — this is reversibility, not a violation of asymmetry.
+  The asymmetry guarantee is absolute only for V_final (post-closure K7).
 
 Validity stages (K7):
   V_prov(k)  — provisional validity, during open registration process (pre-closure)
@@ -274,6 +315,18 @@ Pre-closure (K7):
   invalidated (V(k2) → 0) before process closure (K7), the K5 trigger for k1 is
   removed and V_prov(k1) is no longer forced to 0. Governed by K7 — pre-closure
   K5 transitions are not final.
+
+Reversibility corollary (explicit revert path — corollary of biconditional iff):
+  Step 1: If ∃k2 satisfying (i)+(ii)+(iii) → V_prov(k1) = 0.   [K5 fires]
+  Step 2: If k2 itself later invalidated: V(k2) → 0 before K7 closure
+          → condition (iii) "k2 has valid cross-registration authority" fails for k2.
+  Step 3: If no other k2′ satisfies all of (i)+(ii)+(iii) for k1
+          → ¬∃k2 satisfying (i)+(ii)+(iii)
+          → K5 biconditional LHS: V_prov(k1) = 0 no longer holds
+          → V_prov(k1) reverts to K4 default: V_prov(k1) = 1.
+  Mechanism: V_prov(k1) is re-evaluated via biconditional, not "stuck at 0".
+  The notation "→ 0" describes a state assignment governed by iff, not a
+  one-way imperative transition. Sticky-at-0 reading is incorrect for V_prov.
 
 K_R disambiguation (cross-space context):
   When C_K exists (requires_K_joint = 1), the quantifier ∃k2 ∈ K_R operates over
@@ -310,6 +363,14 @@ Auth(k2 → k1, C_K) = 1  iff  all of:
     C_K-sphere(k) is the comparison context that k belongs to.
     scope(D_joint) is the set of registration acts whose claims D_joint demands
     joint validity evaluation for.
+
+Notation note:
+  Auth(k2 → k1, C_K) is an INSTANCE-LEVEL relation, not a global direction.
+  Auth(k1 → k2, C_K) may hold simultaneously when both k1, k2 are valid within
+  the same C_K — mutual authority is permitted. The arrow "k2 → k1" reads
+  "k2 has authority with respect to k1 in this instance", not "k2 always ranks
+  above k1". K5 applies Auth with temporal direction (k1 <_R k2) — directionality
+  is imposed by K5, not by K6 itself.
 
 Auth is NOT:
   - Observer hierarchy (no "Wigner over Friend" privilege)
@@ -366,7 +427,7 @@ Non-transitivity proof sketch (counterexample):
 ### AXIOM K7 — Registration Process Closure / Đóng Quá trình Ghi nhận
 
 **Statement:**
-> The registration process R of K_R closes at registration time t_close when no pending `requires_K_joint` demands remain for any pair of K-spaces involving K_R. At closure, for all k ∈ K_R: V(k) transitions from provisional status V_prov(k) to final status V_final(k). After closure: (a) no new k can be instantiated in K_R, (b) K5 irreversibility becomes absolute (V(k)→0 cannot be revised by any future event), and (c) no new D_joint involving K_R can be raised. Before closure, all V(k) are provisional and subject to K5 invalidation.
+> The registration process R of K_R closes at registration time t_close when no pending `requires_K_joint` demands remain for any pair of K-spaces involving K_R. At closure, for all k ∈ K_R: V(k) transitions from provisional status V_prov(k) to final status V_final(k). After closure: (a) no new k can be instantiated in K_R, (b) K5 irreversibility becomes absolute (V(k)→0 cannot be revised by any future event), (c) no new D_joint involving K_R can be raised, and (d) K_joint involving K_R becomes final (no reconfiguration of the joint space is permitted). Before closure, all V(k) are provisional and subject to K5 invalidation.
 
 **Formal:**
 ```
@@ -390,6 +451,18 @@ Post-closure properties:
 Pre-closure:
   All V(k) are V_prov(k). K5 invalidation transitions modify V_prov.
   The V_final value for each k is the limit of V_prov(k) as t → t_close.
+
+  Stabilization condition (V_final well-definedness):
+    Within any compact time interval [t_start, t_close], the number of K5
+    validity transitions for any k ∈ K_R is finite (finiteness of K_R and
+    of the set of K5 triggers ensures this). Therefore V_prov(k) stabilizes
+    before t_close, and V_final(k) = lim_{t → t_close^-} V_prov(k) is
+    well-defined.
+
+  Equivalent formulation:
+    V_final(k) := V_prov(k) at t = t_close (value at exact closure time).
+    This is consistent with the limit: the final value equals the stabilized
+    pre-closure value.
 ```
 
 | Property | Value |
@@ -420,6 +493,13 @@ or any cross-space structure):
         o_X(i(k)) = o_R(k)      [registered outcome preserved]
         cert_X(i(k)) = cert_R(k) [self-certification marker preserved]
         t_X(i(k)) = t_R(k)      [registration timestamp preserved]
+
+        ΔI auxiliary (E9 derivability):
+        ΔI(k) is determined by M(k) and o(k) per E9 definition — it is an
+        auxiliary quantity, not an additional tuple field. Because (ii) preserves
+        M and o exactly, ΔI is automatically preserved: ΔI(i(k)) = ΔI(k).
+        Consequence: isNull(k) = [o(k)=∅ ∧ ΔI(k)=0] is preservation-invariant
+        across embedding — null status cannot flip from K_R to K_X via K8.
 
   (iii) Post-embedding evolution:
         After t_embed, V_X(i(k)) evolves according to K4-K7 rules
@@ -487,33 +567,52 @@ or any cross-space structure):
 ### T1 — K_joint Construction Theorem
 
 **Statement:**
-> Given K-side spaces K_A and K_B of registering systems A, B: if requires_K_joint(A, B) = 1 via a shared validity demand D_joint, then a candidate joint K-space K_joint(A, B) exists as the minimal K-space containing order-preserving embeddings i_A: K_A → K_joint and i_B: K_B → K_joint that preserve cert and V values. The embedding respects the internal time-order of each structure, and the combined order in K_joint is the transitive closure of the two embedded orders plus cross-structure temporal relations from the shared laboratory history.
+> Given K-side spaces K_A and K_B of registering systems A, B: if requires_K_joint(A, B) = 1 via a shared validity demand D_joint, then a candidate joint K-space K_joint(A, B) exists as the categorical colimit of the embedding diagram (K_A, K_B with structure-preserving morphisms). Equivalently: K_joint is the smallest K-space (up to isomorphism) containing order-preserving embeddings i_A: K_A → K_joint and i_B: K_B → K_joint that preserve cert and V values — "smallest" meaning minimal w.r.t. inclusion of K1-K8 structure, not minimal in cardinality. The embedding respects the internal time-order of each structure, and the combined order in K_joint is the transitive closure of the two embedded orders plus cross-structure temporal relations from the shared laboratory history. See T4 for the N-observer colimit generalization.
 
-**Derivation from axioms:**
+**Derivation — Layer 1 inputs + Level 4 inputs (composition, not pure derivation):**
+
+> **Architectural note (F-RCA-P4-02):** T1 is a *composition theorem*, not a pure Layer 1 derivation. It combines Layer 1 axioms (K1-K8) with Level 4 inputs (D_joint context, cross-structure temporal relations). The cross-structure temporal relations encode physical laboratory history — a fact external to K-space axioms. T1 constructs `<_joint` from these two input streams; it does NOT derive cross-rel from K1-K8 alone.
+
 ```
-K_joint(A,B) exists as a candidate K-space:
-  ↔ K1: K_A, K_B are sets of tuples → K_joint carrier = i_A(K_A) ∪ i_B(K_B)
-  + K2: each has temporal order → combined order = (i_A(<_A) ∪ i_B(<_B) ∪ cross-rel)^+
-       where ^+ is transitive closure
-  + K3: embeddings i_A, i_B preserve cert values (σ_A(M) maps to same cert in K_joint)
-  + K8: embeddings i_A, i_B preserve V values at embedding time
-       (V_X(i(k)) = V_R(k) at t_embed — native validity carries into K_joint).
-       K8 replaces the former external Embedding Postulate (EP); the axiom set
-       is now self-contained for V-preservation.
-  + requires_K_joint = 1 via D_joint (Level 4, §4.3)
-  + K6: cross-registration authority between embedded elements is evaluated
-       within the C_K defined by D_joint.
+Layer 1 inputs (K1-K8):
+  - K1: K_A, K_B are sets of tuples → K_joint carrier = i_A(K_A) ∪ i_B(K_B)
+  - K2: each K-space has native temporal order <_A, <_B (chains)
+  - K3: embeddings i_A, i_B preserve cert values
+  - K6: cross-registration authority evaluated within C_K defined by D_joint
+  - K8: embeddings preserve V values at embedding time
+        (V_X(i(k)) = V_R(k) at t_embed — K8 replaces former external EP; axiom
+        set now self-contained for V-preservation)
 
-Note: existence of a candidate K_joint does NOT guarantee it is admissible.
+Level 4 inputs (D_joint context — external to K1-K8):
+  - requires_K_joint(A, B) = 1 via shared validity demand D_joint (§4.3)
+  - cross-structure temporal relations (cross-rel) from shared laboratory history:
+    e.g., t_F < t_W established by experimental protocol, not derivable from K1-K8
+  - C_K specification for authority context
+
+Composition:
+  <_joint = (i_A(<_A) ∪ i_B(<_B) ∪ cross-rel)^+   [transitive closure]
+
+Order type of <_joint:
+  (K_joint, <_joint) is a PARTIAL ORDER (not necessarily total).
+  Restricted to each image i_X(K_X): <_joint is a CHAIN (preserved from <_X by K2).
+  Across distinct images i_A(K_A) and i_B(K_B): <_joint is PARTIAL — elements are
+  comparable only through explicit cross-rel from Level 4 D_joint or transitive chain.
+  (See K2 dòng Order type note: partial-order structure emerges at cross-K-space level.)
+  T4 extends this to N-observer colimit: the colimit order is also partial in general.
+
+  K_joint(A,B) exists as a candidate K-space with this combined order,
+  preserving K1 carrier structure + K2 intra-order + K3 cert + K8 V.
+
+Note: existence of a candidate K_joint does NOT guarantee admissibility.
 Admissibility requires AdmJoint conditions (i)-(v) to hold (Level 4, §4.3).
 
 F7a non-circularity guard:
-  T1 does not depend on K5 Dep-B. T1 constructs the candidate <_joint order
-  from K2 native orders, cross-structure temporal relations supplied by the
-  Level 4 D_joint context, and K8 field/V preservation under embedding.
-  K5 is evaluated only after the candidate K_joint exists. Thus the dependency
-  direction is:
-    K2/K8 + Level 4 D_joint -> T1 candidate K_joint/<_joint -> K5 application inside K_joint.
+  T1 does not depend on K5 Dep-B. K5 is evaluated only AFTER a candidate
+  K_joint with <_joint exists. Dependency direction:
+    [K1/K2/K3/K6/K8] + [Level 4 cross-rel + D_joint]
+      → T1 candidate K_joint / <_joint
+        → K5 application inside K_joint.
+  No circularity: T1 supplies inputs K5 consumes; K5 does not supply inputs T1 needs.
 ```
 
 | Property | Value |
@@ -633,6 +732,15 @@ F7b K7 resolution semantics:
 Bridge_EWF(D_joint; M_F, M_W) = 1
   ↔ D_joint requires F-side and W-side registrations to be evaluated
     as jointly valid parts of one laboratory registration history     [Level 4, §4.3]
+
+Temporal precondition (EWF setup — explicit):
+  t_F < t_W in laboratory history:
+    F measures the particle/friend system first (inside lab, at t_F).
+    W performs the interference measurement afterward (on the lab, at t_W).
+  This satisfies K5 condition (i): k_F <_R k_W in K_joint via cross-rel
+  (K2 native orders + Level 4 cross-rel supply t_F < t_W → i_F(k_F) <_joint i_W(k_W)).
+  T3 derivation presupposes EWF temporal ordering; it is not valid for t_W < t_F.
+
   ∧ M_F: k_F = ⟨M_F, o_F, 1, t_F, 1⟩  (definite outcome, self-certified, valid)
   ∧ M_W: k_W = ⟨M_W, o_W, 1, t_W, 1⟩  (superposition registered, no definite o_F)
   ∧ Under candidate K_joint:
@@ -642,29 +750,69 @@ Bridge_EWF(D_joint; M_F, M_W) = 1
       → AdmJoint condition (iv) violated                             [Level 4, §4.3]
   → M_W ⊥ M_F (act-level registered contradiction)                   [Level 4, §4.4]
 
-External semantic assumption — Relativization defense:
-  T3 depends on the following framework-level semantic boundary
-  (not derived from K1-K8):
-  "If K_joint only hosts meta-descriptions ('within K_F, M_F registered |h⟩'),
-   it does not satisfy D_joint (which demands joint validity of original claims).
-   Relativizing contents abandons D_joint rather than satisfying it."
-  (paper v2.0 §4.5)
+Semantic Postulate dependency — AJVS:
+  T3 depends on AJVS (Axiom of Joint Validity Semantics — see AJVS section below T3):
+  "A K_joint satisfies D_joint iff it hosts original first-order K-side validity
+   claims of both K_A and K_B as jointly evaluable. Hosting only meta-descriptions
+   ('within K_F, M_F registered |h⟩') does NOT satisfy D_joint — relativizing
+   registration contents abandons D_joint rather than satisfying it."
 
-  This is a FRAMEWORK-LEVEL SEMANTIC COMMITMENT, not a theorem derivable from
-  K1-K8. It defines what counts as "satisfying D_joint" inside this formulation
-  of VVV-QMRF. If this assumption is rejected (i.e., if meta-descriptions ARE
-  accepted as satisfying D_joint), then T3's conclusion (Bridge_EWF = 1) does
-  not follow from K1-K8 alone.
+  AJVS is a named Semantic Layer postulate (Layer 0.5), separate from K1-K8.
+  It defines what counts as "satisfying D_joint" in VVV-QMRF.
+  If AJVS is rejected → T3's conclusion (Bridge_EWF = 1) does not follow from
+  K1-K8 alone. K1-K8 remain structurally valid; only D_joint semantic scope changes.
 ```
 
 | Property | Value |
 |---|---|
 | **Level 4 dependency** | `Bridge_EWF` lemma, `D_joint`, cross-registration authority (paper v2.0 §4.5) |
 | **Layer 1 dependency** | K5 (invalidation) + K6 (authority) + K8 (V-preservation at embedding) — T3 derivation uses all three. |
-| **External assumption** | Relativization defense (paper v2.0 §4.5) — a framework-level semantic commitment, not derivable from K1-K8. T3 is conditional on this assumption. This is not an internal contradiction; it is a declared semantic boundary for what counts as satisfying `D_joint` in this formulation. |
+| **Semantic postulate** | Relativization defense — formalized as **AJVS** (see below). T3 is conditional on AJVS. This is not an internal contradiction; AJVS is a declared Semantic Layer postulate defining what counts as satisfying `D_joint`. |
 | **Claim class** | D/C boundary (matches paper v2.0 §4.5 classification) |
 | **Freeze status** | Pending Level 4 freeze |
-| **Update trigger** | If `Bridge_EWF` sufficient conditions change, or cross-registration authority criteria are revised, or relativization defense is challenged |
+| **Update trigger** | If `Bridge_EWF` sufficient conditions change, or cross-registration authority criteria are revised, or AJVS is challenged |
+
+---
+
+### AJVS — Axiom of Joint Validity Semantics / Tiên đề Ngữ nghĩa Hiệu lực Chung
+
+> **Architectural note:** AJVS is a **Semantic Layer postulate** — it sits above Level 4 structural definitions but is separate from K1-K8 registration-logic axioms. K1-K8 govern K-space structure and operations; AJVS governs what "satisfying D_joint" means at the level of claim content. This is the formalization of F-RCA-P7-04 (Action Item A1).
+
+**Statement:**
+> A candidate K_joint satisfies D_joint(A, B) iff it hosts the **original** K-side validity claims of both K_A and K_B as **jointly evaluable first-order claims** in a shared comparison context C_K. Hosting only meta-descriptions of the form "within K_A, M_A registered o_A" does NOT satisfy D_joint. Relativizing registration contents to sub-context descriptions abandons D_joint rather than satisfying it.
+
+**Formal:**
+```
+Let D_joint(A, B) be raised: requires_K_joint(A, B) = 1.
+Let K_joint be a candidate with embeddings i_A: K_A → K_joint, i_B: K_B → K_joint.
+
+K_joint satisfies D_joint iff:
+  ∀k ∈ K_A ∪ K_B claimed as jointly valid:
+    i_X(k) carries o(k) as a FIRST-ORDER validity claim in K_joint
+    — directly evaluable, not wrapped in a meta-description predicate.
+
+Relativization escape (violates AJVS):
+  A K_joint that hosts only:
+    "within K_F, M_F registered |h⟩"   [meta-description of K_F-internal fact]
+  does NOT constitute joint evaluation of M_F's claim.
+  D_joint requires: i_F(k_F) evaluated directly as "o(k_F) = |h⟩ is valid in K_joint".
+
+AJVS boundary:
+  First-order:  o(k) directly evaluable in K_joint     → D_joint satisfied.
+  Second-order: "K_X says o(k) is valid within K_X"   → D_joint NOT satisfied.
+```
+
+| Property | Value |
+|---|---|
+| **Nature** | Semantic Postulate — Layer 0.5 (above Level 4 structural defs; separate from K1-K8 registration-logic) |
+| **BE lineage** | Dignāga–Dharmakīrti distinction: pratyakṣa (direct first-order perception/registration) vs anumāna (inferential / meta-cognition). Joint validity in VVV-QMRF requires pratyakṣa-level first-order registration, not anumāna-level meta-description |
+| **Claim class** | D (proposed semantic postulate) |
+| **Source** | VVV-QMRF architectural stance (paper v2.0 §4.5, now elevated to named postulate) |
+| **If AJVS holds** | T3 conclusion Bridge_EWF = 1 follows from K1-K8 + AJVS. Relativization escape route closed. |
+| **If AJVS rejected** | T3 conclusion does NOT follow from K1-K8 alone. Relativization escape open. K1-K8 remain structurally valid — only D_joint semantic scope changes. |
+| **Cascade** | T3 (cites AJVS instead of unnamed external assumption); §10.5 Final Verdict; §10.6 A1 (resolved); Layer 2 Summary T3 row |
+
+---
 
 ### T4 — N-Observer Generalization Theorem
 
@@ -690,6 +838,37 @@ F7d global commutativity guard:
   and initial V at embedding time, and their post-embedding validity dynamics
   must not force inconsistent identifications. Thus the diagram must commute
   globally, not merely pairwise.
+
+T4-H — Colimit Existence Hypothesis (explicit conditional — F-RCA-P4-06 Option A):
+  The category C_{K-space} — whose objects are K-spaces (K1-K8-structured
+  sets) and whose morphisms are K1-K8-preserving embeddings — is assumed
+  to have colimits for all finite embedding diagrams.
+
+  Formal statement of T4-H:
+    For any finite diagram D of K-spaces with K1-K8-preserving morphisms,
+    the colimit colim(D) exists in C_{K-space}.
+
+  Status: HYPOTHESIS, not a theorem derivable from K1-K8 alone.
+    K1-K8 define the structure of individual K-spaces; they do NOT by
+    themselves prove that C_{K-space} is cocomplete (has all colimits).
+    T4 conclusions hold CONDITIONAL on T4-H.
+
+  Plausibility argument (not a proof — see Open Item A5):
+    Each K_R is a finite totally-ordered set (K2 chain) of K1-structured
+    tuples with binary V (K4-K5) and intrinsic cert (K3). The category
+    of finite totally-ordered sets with order-preserving maps has finite
+    colimits (disjoint union + quotient by morphism-imposed equivalences).
+    K1-K8 morphisms preserve the five-field tuple structure; shared cross-rel
+    and global commutativity (F7d) impose the identification conditions.
+    A finite colimit of such sets is therefore structurally plausible, but
+    the rigorous category-theoretic proof is deferred to Open Item A5.
+
+  Conditional scope:
+    If T4-H holds  → T4 conclusions valid for all N ≥ 2.
+    If T4-H fails  → N-observer colimit may not exist in general; T1
+                     (N = 2, constructive) remains valid independently
+                     because T1 builds K_joint explicitly without invoking
+                     the colimit universal property.
 
 Non-transitivity of ⊥_K:
   Counter-example possibility:
@@ -720,8 +899,8 @@ Number of pairwise checks for N observers:
 |---|---|---|---|---|
 | T1 | K_joint construction | `requires_K_joint`, `D_joint`, embeddings | Pending | Theorem statement updates; K1-K8 unchanged |
 | T2 | ⊥_K derivation | `AdmJoint` (i)-(v), `⊥_K` boundary clauses | Pending | Derivation chain updates; K1-K8 unchanged |
-| T3 | Bridge_EWF formalization | `Bridge_EWF` lemma, framework-level semantic boundary: relativization defense | Pending | Derivation chain + semantic boundary may need revision; K1-K8 unchanged |
-| T4 | N-observer generalization | All Level 4, generalized to N | New — Class D | New theorem; independently updatable |
+| T3 | Bridge_EWF formalization | `Bridge_EWF` lemma, **AJVS** (Semantic Postulate Layer 0.5 — relativization defense, formalized) | Pending | Derivation chain may need revision if AJVS challenged; K1-K8 unchanged |
+| T4 | N-observer generalization | All Level 4, generalized to N; **T4-H** Colimit Existence Hypothesis (conditional) | New — Class D | Conditional on T4-H; independently updatable |
 
 ---
 
@@ -833,6 +1012,7 @@ Number of pairwise checks for N observers:
 | C-KAXIOM-009 | N-observer joint K-space is colimit; ⊥_K non-transitive (T4) | Class D proposed — NEW | This document §2, T4 | Low — new, unverified for N>2 | Generalization; requires independent verification |
 | C-KAXIOM-006a | K6: Auth(k2→k1, C_K)=1 iff shared C_K, V(k2)=1, k1∈scope(D_joint); non-hierarchical, non-transitive (K6) | Class D proposed | This document §1, K6; E7 Axiom 2; paper v2.0 §4.4 | Medium | Structural relation within C_K; not observer hierarchy |
 | C-KAXIOM-007a | K7: R closes at t_close when no pending requires_K_joint; V_prov→V_final; post-closure irreversibility absolute (K7) | Class D proposed | This document §1, K7; E7 V_prov/V_final; paper v2.0 §2.2 | Medium | K-side closure only; not physical process termination |
+| C-KAXIOM-008b | K8: V_X(i(k)) = V_R(k) at t_embed; fields M, o, cert, t preserved unchanged across embedding; non-redundant with K4 (K4 governs native instantiation, K8 governs cross-space transfer — see §1 K8 counter-model) | Class D proposed | This document §1, K8; T1 derivation dependency; Open Item #13 (EP→K8 promotion) closed | High | Snapshot preservation at embedding time, not permanent immunity; K5 can still fire in K_X after embedding |
 | C-KAXIOM-010 | 2-layer architecture isolates K1-K8 from Level 4 changes in two senses. **(1) Syntactic isolation (unconditional):** K1-K8 axiom text is frozen — Level 4 changes (AdmJoint criteria, D_joint definitions, requires_K_joint scope) do not alter K1-K8 text. **(2) Conditional semantic dependencies (K5/K6/K7):** K5 ⊥_K evaluation is narrowed by Level 4 boundary clauses (F3); K6 Auth evaluation depends on D_joint extensional scope (F6a); K7 t_close timing depends on requires_K_joint extensional scope (F6b). K1-K4 and K8 reference Level 4 for scope identification only or not at all. See §0.5 for full distinction. | Architectural claim | This document §0.5 | High — structural property | Architectural design, not mathematical theorem. Syntactic isolation is unconditional; semantic dependencies are conditional on Level 4 extensional content. |
 
 ---
@@ -849,7 +1029,13 @@ Number of pairwise checks for N observers:
 
 5. **Bridge theorems T1-T3 are pending Level 4 freeze.** They derive current paper v2.0 definitions from axioms. If community feedback changes those definitions, T1-T3 are updated — K1-K8 are not. T3 additionally depends on an external philosophical assumption (relativization defense, paper v2.0 §4.5) not derivable from K1-K8.
 
-6. **K1-K8 cover E1-E7, E9, E10, E11, E12, E13.** E8 (multi-step retroactive chain), E14 (validated absence beyond structural accommodation), E15, E16 require extensions deferred to future work. This is explicitly documented in §3.2.
+6. **K1-K8 coverage across E1-E16 uses four verdict states (per §3.1, §3.2):**
+   - **COVERED** (direct axiomatization): E1 (K3), E6 (K2), E7 (K4/K5/K7), E9 (K4 isNull), E10 (K5 scope), E12 (K5/K6), E13 (K2 discrete)
+   - **ENCODED** (structural implication without direct axiom): E2 (K1+K3 tuple structure)
+   - **PARTIAL** (single-step covered; multi-step deferred): E8 (K5 single-step covered; retroactive chain deferred), E14 (structural accommodation only)
+   - **OUT-OF-SCOPE** (other architectural layers — no conflict, no gap): E3, E4, E5, E11
+   - **GAP** (extensions deferred to future work): E15, E16
+   Full per-postulate verdicts in §3.2.
 
 7. **This document does NOT upgrade any paper v2.0 claim class.** All claims remain Class D/C as in the paper. Axiomatization provides the foundation for future upgrades but does not perform them.
 
@@ -866,6 +1052,8 @@ Number of pairwise checks for N observers:
 4. Presents a proof attempt for T2 with gaps explicitly marked
 
 ### 7.1 Concrete Model Definition / Định nghĩa Mô hình Cụ thể
+
+> **Notation convention (§7):** Outcome labels use Hilbert ket notation (`|h⟩`, `|Ψ+⟩`) symbolically. `o ∈ O` is a K-side registration label — it is NOT a Hilbert vector. The K_R ≠ H boundary (K1) is preserved. The ⊥ test in §7.3 L4-5 uses H-side content compatibility as bridge reasoning: "`|Ψ+⟩` does not preserve `|h⟩` as a valid claim" means W's registered superposition content is incompatible with F's registered definite outcome — this is a K-side comparison via H-side content semantics, not a claim that K_R contains H vectors.
 
 **Scenario:** Extended Wigner's Friend (EWF), minimal configuration.
 
@@ -980,13 +1168,18 @@ Check conditions (paper v2.0 §4.4):
 ```
 Auth(k_W → k_F, C_K) = ?
 
-Check conditions (paper v2.0 §4.4 + K6):
+K6 frozen conditions (CORE Auth criteria — Layer 1 syntactically frozen):
   (a) C_K-sphere(k_F) = C_K-sphere(k_W)?                YES — both in same C_K (L4-3)
   (b) V(k_W) = 1?                                        YES — K4 default, not invalidated
   (c) k_F ∈ scope(D_joint)?                               YES — D_joint demands F's claim
                                                                  be part of joint evaluation
 
-Paper v2.0 §4.4 additional conditions:
+→ K6 conditions (a)+(b)+(c) all satisfied: Auth = 1 under K6 alone. [K6 frozen Layer 1]
+
+Paper v2.0 §4.4 additional conditions (Level 4 strengthening — not required by K6):
+  Note: K6 frozen text is sufficient for Auth=1. Paper §4.4 conditions extend K6 scope
+  for the general case; they do not contradict K6 in this model. Auth=1 holds under
+  both K6 alone and K6 + paper extensions.
   (a') k_W is valid registered measurement?               YES — σ_W(M_W)=1, V(k_W)=1
   (b') k_W's content concerns same target as k_F?         YES — same laboratory F+S
   (c') k_W produced by measurement structurally required   YES — W's interference measurement
@@ -994,7 +1187,7 @@ Paper v2.0 §4.4 additional conditions:
   (d') No arbitrary privilege?                             YES — only temporal ordering
                                                                  and content incompatibility used
 
-→ Auth(k_W → k_F, C_K) = 1
+→ Auth(k_W → k_F, C_K) = 1   [K6 core sufficient; paper §4.4 extensions consistent]
 ```
 
 | Check | Status |
@@ -1084,7 +1277,15 @@ Check AdmJoint conditions (paper v2.0 §4.3):
   (iii) Conditions 1-6 satisfied for each embedded structure?
         For i_F(k_F): C1-C5 carry over. C6 (non-invalidation) → CHECK:
           Is there k' in K_joint with k' ⊥ i_F(k_F) and Auth?
-          → i_W(k_W) ⊥ i_F(k_F) within C_K (established in L4-5)
+
+          ⊥-preservation across embedding (corollary of K8 + K5 minimal ⊥):
+            K8 preserves o values at embedding: o(i_W(k_W)) = o(k_W) = |Ψ+⟩;
+            o(i_F(k_F)) = o(k_F) = |h⟩.
+            K5 minimal ⊥ depends on o content compatibility (per K5 dòng definition).
+            Since K8 preserves o, the K5 ⊥ test gives the same result in K_joint:
+            k_W ⊥ k_F (native C_K, L4-5) → i_W(k_W) ⊥ i_F(k_F) (K_joint C_K). ✓
+
+          → i_W(k_W) ⊥ i_F(k_F) within C_K (established in L4-5; preserved via K8)
           → Auth(i_W(k_W) → i_F(k_F), C_K) = 1 (established in L4-4)
           → K5 FIRES: V(i_F(k_F)) → 0                                    ⚠ CONFLICT
         For i_W(k_W): C1-C6 → no later event contradicts k_W in K_joint. OK.  ✅
@@ -1194,7 +1395,7 @@ Step 6 — K5 fires in candidate K_joint (SOLID ✅):
 Step 7 — Conclusion (SOLID ✅):
   requires_K_joint(F, W) = 1                            [Step 2]
   ¬∃ K_joint: AdmJoint(K_joint; K_F, K_W) = 1          [Step 6]
-  → K_F ⊥_K K_W                                         [Definition of ⊥_K, paper v2.0 §4.4]
+  → K_F ⊥_K K_W                                         [T2 ⊥_K Derivation Theorem; consistent with paper v2.0 §4.4 definition]
   ∎ (conditional)
 ```
 
@@ -1202,7 +1403,7 @@ Step 7 — Conclusion (SOLID ✅):
 
 | Step | Confidence | Depends on | Gap? |
 |------|-----------|------------|------|
-| 1 (Setup) | HIGH | K1, K3, K4, K8 | None |
+| 1 (Setup) | HIGH | K1, K3, K4 | None |
 | 2 (requires_K_joint) | HIGH | Level 4 §4.3 Condition A definition | Level 4 not frozen |
 | 3 (C_K, Auth) | HIGH | K6 + Level 4 §4.4 | Level 4 not frozen |
 | 4 (⊥ contradiction) | HIGH/MEDIUM | K5 minimal / Level 4 full ⊥ | **G3**: Level 4 ⊥ not frozen |
@@ -1257,10 +1458,10 @@ Following the 5-step methodology:
 | 12 | K6 Auth non-transitivity edge cases (circular authority chains) | **Resolved v1.2** — counterexample provided in K6 formal block. Remaining: N≥3 exotic topologies. | Low |
 | 13 | Embedding Postulate (EP) promotion decision | **Resolved v1.4** — EP promoted to K8 (Cross-Space Embedding Preservation). K8 is now a frozen Layer 1 core axiom. T1-T3 no longer depend on an external postulate for V-preservation. | ~~High~~ → Resolved |
 | 14 | T2 temporal dependency — Level 4 ⊥ freeze | T2 derivation is conditional on Level 4 ⊥ formalization being consistent with K5 minimal definition. This is a TEMPORAL DEPENDENCY (incompleteness), not a logical circularity — relabeled in v1.5 RCA. **v1.3 update:** Dependency NOT present in concrete model (§7.5 Step 4) — K5 minimal ⊥ is directly verifiable by content inspection (|h⟩ vs |Ψ+⟩). Dependency remains only in general case (arbitrary |K_R|, N observers). **v1.4/Phase 2 update:** T2 also documented as K7 Dep-B (F6b + F7b): T2's AdmJoint(iv) operates on V_prov during pre-closure admissibility testing; resolved-demand outcomes (AdmJoint=1 or AdmJoint=0 → ⊥_K) supply K7 closure semantics. This is a Layer 2 (updatable) dependency — K1-K8 unchanged. Resolves when Level 4 ⊥ boundary clauses are frozen. | **High** |
-| 15 | Concrete model gaps G1-G3 (§7.4) | G1 (Relativization): framework-level semantic commitment required by this formulation of D_joint. G2 (K7 closure): working as designed. G3 (Level 4 ⊥): see #14. All gaps are external dependencies, not internal contradictions. **v1.4:** Former EP gap resolved by K8. Renumbered G1-G4 → G1-G3. **Phase 2 note:** Dep-A (C_K existence precondition, Level 4 §4.3) and Dep-B (T1 `<_joint>` ordering from K2+K8) are satisfied dependencies in the concrete model (§7.5 Steps 3, 6 — both SOLID ✅ HIGH confidence) — not open gaps. Documented in K5/K6/K7 Dependency rows. | Medium |
+| 15 | Concrete model gaps G1-G3 (§7.4) | G1 (Relativization): framework-level semantic commitment required by this formulation of D_joint. G2 (K7 closure): working as designed. G3 (Level 4 ⊥): see #14. All gaps are external dependencies, not internal contradictions. **v1.4:** Former EP gap resolved by K8. Renumbered G1-G4 → G1-G3. **Phase 2 note:** Dep-A (C_K existence precondition, Level 4 §4.3) and Dep-B (T1 `<_joint>` ordering via K2+K8+Level 4 cross-rel) are satisfied dependencies in the concrete model (§7.5 Steps 3, 6 — both SOLID ✅ HIGH confidence; concrete model's cross-rel `t_F < t_W in lab history` supplies the Level 4 input) — not open gaps. Documented in K5/K6/K7 Dependency rows. | Medium |
 | 16 | `RegistrationState(t)` undefined primitive in K2 Discreteness | **Resolved v1.5 RCA (RC-02)** — `RegistrationState: T_R → (K_R ∪ {∅})` formally defined inline in K2 formal block. Well-definedness guaranteed by K2 strict total order (at most one k per distinct t). | ~~Medium~~ → Resolved |
 | 17 | K8 non-redundancy with K4 — no counter-model or proof sketch | **Resolved v1.5 RCA (PG-02)** — Counter-model added to K8 §(iv): K_F = {k_F, V_F=1}, embedding i assigns V_joint(i(k_F))=0 → K4 satisfied, K8 fails → K4 ⊬ K8. | ~~Medium~~ → Resolved |
-| 18 | §3.3 Operational Bridge semantic dependency on K4-K7 untracked | §3.3 lists 7 operational bridge mappings (σ, V, ⊥, Auth, D_joint, requires_K_joint, C_K) but does not annotate which K-axioms each bridge depends on semantically. If K4-K7 definitions change, §3.3 bridge semantics shift without visible traceability. Add dependency annotations to §3.3 bridge rows. | Medium |
+| 18 | §3.3 Operational Bridge semantic dependency on K4-K7 untracked | §3.3 lists 7 sufficient-condition bridges (Condition A, B, B2, C, D, E, ODC_K) for raising `requires_K_joint`. The verdict notes B, B2, and ODC_K have indirect semantic dependency on K4-K7 validity propagation, but the table does not annotate which K-axioms each Condition row depends on. Add K-axiom dependency annotations (e.g., K4, K5, K7) to each §3.3 Condition row. Note: the predicate-level mapping (σ, V, ⊥, Auth, D_joint, requires_K_joint, C_K → K-axioms) is a separate task belonging to Layer 4 §4.4, not to §3.3. | Medium |
 
 ---
 
@@ -1303,10 +1504,10 @@ Following the 5-step methodology:
 |---|-----------|--------|:----------:|
 | P1 | K1-K8 are internally consistent (concrete model: 2 observers, 1 event each) | **PROVEN** (§7.2-7.4) | HIGH |
 | P2 | Level 4 definitions can be expressed in terms of K1-K8 primitives | **PROVEN** (§7.3) | HIGH |
-| P3 | The derivation chain requires_K_joint → D_joint → C_K → Auth → ⊥ → Bridge_EWF → K5 fires → AdmJoint fails → ⊥_K is well-defined (no circular reasoning) | **PROVEN** (§7.3, §7.5) | HIGH |
+| P3 | Derivation graph (no circular reasoning, multiple parallel inputs): `requires_K_joint(F,W)=1` ⇒ `D_joint=1` (Condition A bridge); `D_joint=1` ⇒ `C_K exists`; `C_K + V(k_W)=1 + k_F ∈ scope(D_joint)` ⇒ `Auth(k_W→k_F, C_K)=1` [K6]; `o(k_F), o(k_W) + C_K` ⇒ `k_W ⊥ k_F` [K5 minimal ⊥ test]; `Bridge_EWF conditions (a-d) + relativization defense (e)` ⇒ `Bridge_EWF=1`; `k_F <_joint k_W + ⊥ + Auth` ⇒ `K5 fires → V_prov(k_F)→0`; K5 fires under D_joint joint validity claim ⇒ `AdmJoint(iv) violated` ⇒ `¬∃ admissible K_joint` ⇒ `⊥_K(K_F,K_W)`. Note: Auth and ⊥ are PARALLEL inputs to K5 firing, not sequential — ⊥ test (content-based) does not depend on Auth. | **PROVEN** (§7.3, §7.5) | HIGH |
 | P4 | Step 6 (K5 fires in K_joint) does NOT depend on any external postulate | **PROVEN** (v1.4: K8 resolves former EP gap; F1: K5 fires on V_prov pre-closure — V_prov/V_final distinction is K5+K7 internal, no new external dependency) | HIGH |
 | P5 | K5 minimal ⊥ can be verified by content inspection without invoking Level 4 full ⊥ (circularity absent in concrete model) | **PROVEN** (§7.5 Step 4) | HIGH |
-| P6 | K_joint candidate existence is derivable from K1-K8 + Level 4 scope identifiers | **PROVEN** (T1, updated v1.4) | HIGH |
+| P6 | K_joint candidate existence is constructible via T1 composition: K1-K8 (carrier + order + cert + V-preservation) + Level 4 inputs (requires_K_joint, D_joint, cross-structure temporal relations from laboratory history). T1 is a composition theorem, not a pure K1-K8 derivation — cross-rel is an external Level 4 input. | **PROVEN for composition** (T1, updated v1.4; F-RCA-P4-02 architectural note added) | HIGH |
 
 ### 10.4 What CANNOT Be Proven Internally / Không thể Chứng minh Nội tại
 
@@ -1320,7 +1521,7 @@ Following the 5-step methodology:
 
 > **Level 4 definitions ARE internally consistent with K1-K8 in the concrete model.**
 >
-> The proof chain has exactly **one declared external dependency**: the relativization defense (a framework-level semantic commitment about what counts as satisfying D_joint in this formulation). This is NOT an internal contradiction — it is a **semantic boundary** that VVV-QMRF declares explicitly rather than deriving from K1-K8. Copenhagen, Many-Worlds, QBism, and VVV-QMRF make different semantic choices about joint validity; this document only commits VVV-QMRF to the relativization defense.
+> The proof chain has exactly **one declared semantic postulate dependency**: **AJVS** (Axiom of Joint Validity Semantics — formalized in v1.5.6). AJVS defines what counts as satisfying D_joint in this formulation (first-order claim vs meta-description). This is NOT an internal contradiction — it is a named **Semantic Layer postulate** that VVV-QMRF declares explicitly rather than deriving from K1-K8. Copenhagen, Many-Worlds, QBism, and VVV-QMRF make different semantic choices about joint validity; this document only commits VVV-QMRF to the relativization defense.
 >
 > **Decision:** Level 4 can freeze with **one documented framework-level semantic commitment** (relativization defense). The former EP gap (G1 in v1.3) is resolved by promoting EP → K8. The ⊥ circularity concern (Open Item #14) is absent in the concrete model. The remaining temporal dependency (Level 4 ⊥ full boundary clauses) resolves when paper v2.0 exits community review.
 >
@@ -1330,18 +1531,24 @@ Following the 5-step methodology:
 
 | # | Item | Priority | Blocks |
 |---|------|:--------:|--------|
-| A1 | Document relativization defense as "Axiom of Joint Validity Semantics" (separate from K1-K8) | High | T3 completeness |
+| A1 | ~~Document relativization defense as "Axiom of Joint Validity Semantics"~~ | ~~High~~ | **Resolved v1.5.6** — AJVS formalized as named Semantic Postulate (Layer 0.5): first-order vs second-order claim distinction, BE lineage (pratyakṣa vs anumāna), conditional scope documented. T3 updated to cite AJVS. (F-RCA-P7-04) |
 | A2 | Freeze Level 4 ⊥ boundary clauses after community feedback resolves Open Item #14 | High | T2 non-circularity in general case |
-| A3 | General case proof (structural induction on |K_R|, N observers) | Medium | T4, E8, E15 |
+| A3 | General case proof (structural induction on \|K_R\|, N observers) | Medium | T4, E8, E15 |
 | A4 | Edge case: E9 null events, E14 validated absence | Medium | E8-E16 audit phase |
-| A5 | Category-theoretic formalization of K_joint as colimit (N>2) | Low-Medium | T4 |
+| A5 | Category-theoretic proof of K_joint colimit existence (N>2) | Low-Medium | T4 — **T4-H explicit hypothesis added v1.5.6**: T4 conclusions now formally conditional on T4-H; plausibility argument documented; rigorous proof deferred. (F-RCA-P4-06 Option A resolved) |
 | A6 | When Level 4 freezes, verify that conditional semantic dependencies — Dep-A (C_K existence precondition, Level 4 §4.3) and Dep-B (T1 `<_joint>` ordering via K2+K8+Level 4) documented in K5/K6/K7 Dependency rows — remain consistent with frozen Level 4 extensional definitions | Medium | Level 4 freeze (resolves Open Item #14) |
 
 ---
 
-*Document v1.5 — 2026-05-19 — VVV-QMRF §K-AXIOM*
-*Status: Class D (proposed). All axioms and theorems are proposed registration-layer definitions.*
-*Layer 1 (K1-K8): Frozen. Layer 2 (T1-T4): Updatable pending Level 4 freeze.*
+*Document v1.5.6 — 2026-05-20 — VVV-QMRF §K-AXIOM*
+*Status: Mixed — K1: Class C (formal definition); K2–K8, T1–T4: Class D (proposed registration-layer).*
+*Layer 1 (K1-K8): Frozen (syntactic; K5/K6/K7 have conditional semantic deps on Level 4). Layer 2 (T1-T3 pending Level 4 freeze + T4 new Class D): Updatable.*
+*RCA cascade-sync (v1.5 → v1.5.1): Sprint 1 P0 fixes from line-by-line audit 2026-05-20. (S1a) Header Status corrected: Mixed K1=Class C, K2–K8/T1–T4=Class D (F-RCA-P1-01). (S1b) §0.4 mathematical carrier: "poset" → "chain within K_R, partial across K_R via embeddings" to match K2 v1.2 correction (F-RCA-P1-04). (S1c) §0.5 Layer 1: absolute "do NOT depend on Level 4" → qualified syntactic/semantic isolation with K5/K6/K7 conditional deps; Layer 2: T4 status distinguished from T1-T3 "pending Level 4" (F-RCA-P1-05, F-RCA-P1-07). (S1d) K1 Boundary: "o=∅ not operationalized" → E9 operationalized via K4 isNull guard; E14 structural only (F-RCA-P2-02). (S1e) §5 Claim Traceability: added C-KAXIOM-008b for K8 V-preservation through cross-space embeddings (F-RCA-P5-03). Zero substantive axiom changes — all fixes are cascade-sync of previous revision outcomes.*
+*RCA polish (v1.5.1 → v1.5.2): Sprint 2 fixes 2026-05-20. (S2a) K5 Asymmetry clause: "¬∃F → V=1 (no restore)" → qualified V_final post-closure irreversible; V_prov pre-closure reversible if trigger removed — asymmetry absolute only post-K7 closure (F-RCA-P3-03). (S2b) K8 (ii) field preservation: added ΔI auxiliary derivability note — ΔI determined by M+o per E9, preserved auto via M+o preservation; isNull predicate therefore preservation-invariant across embedding; null status cannot flip in K_joint (F-RCA-P3-10). (S2c) Open Item #18: corrected §3.3 content description from "7 predicates (σ, V, ⊥, Auth, D_joint, requires_K_joint, C_K)" → "7 sufficient-condition bridges (Condition A, B, B2, C, D, E, ODC_K) for requires_K_joint"; predicate-level mapping is Layer 4 §4.4 task, not §3.3 (F-RCA-P5-02). Zero axiom text changes — S2b extends K8 formal block with auxiliary derivability note only.*
+*RCA substantive axiom fixes (v1.5.3 → v1.5.4): Sprint 4 fixes 2026-05-20. (S4a) K1 Formal block: added explicit t-injectivity injection constraint "∀k1,k2 ∈ K_R: t(k1)=t(k2)→k1=k2" with rationale; also corrected K1 countability claim to forward-ref K2 S2-Δ (F-RCA-P2-03). (S4b) K2 Totality (iv): replaced prose rationale with formal proof citing K1 t-injectivity; updated RegistrationState well-definedness to cite K1 injection explicitly (F-RCA-P2-03). (S4c) K7 Pre-closure: added Stabilization condition — finite K5 transitions guarantee V_prov stabilizes before t_close → V_final well-defined; added equivalent formulation V_final := V_prov(t_close) (F-RCA-P3-07). (S4d) T1 Derivation: restructured as composition theorem — explicit "Layer 1 inputs (K1/K2/K3/K6/K8)" + "Level 4 inputs (requires_K_joint, D_joint, cross-rel from lab history)" sections; architectural note that cross-rel is external Level 4 input not derivable from K1-K8; F7a guard updated with new dependency diagram (F-RCA-P4-02). (S4e) §10.3 P6: corrected "derivable from K1-K8 + scope identifiers" → "constructible via T1 composition: K1-K8 + Level 4 inputs including cross-rel" (F-RCA-P7-03, coupled with P4-02).*
+*RCA notation+sync (v1.5.2 → v1.5.3): Sprint 3 fixes 2026-05-20. (S3a) K5 Statement: added forward-reference note "K_R has two readings — native and cross-space via K_joint; see K_R disambiguation in formal block" (F-RCA-P3-01). (S3b) K6 Formal block: added "Notation note" block clarifying Auth(k2→k1) is instance-level, bidirectional within shared C_K permitted, directionality imposed by K5 not K6 (F-RCA-P3-04). (S3c) K7 Statement: added property (d) "K_joint involving K_R becomes final (no reconfiguration)" to match Formal block (F-RCA-P3-06). (S3d) Guardrail #6: rewrote binary "cover vs deferred" as 4-state verdict (COVERED/ENCODED/PARTIAL/OUT-OF-SCOPE/GAP) per §3.2 — E11 corrected from "covered" to OUT-OF-SCOPE; E8 corrected from "fully deferred" to PARTIAL (F-RCA-P5-05). (S3e) §7.1: added notation convention block — ket symbols are K-side labels not H vectors; K_R ≠ H preserved; ⊥ test uses H-side content compatibility as bridge reasoning (F-RCA-P6-01). (S3f) §8 Item #15: Dep-B wording corrected "K2+K8" → "K2+K8+Level 4 cross-rel" with note concrete model supplies cross-rel via lab history (F-RCA-P7-01). Zero axiom text changes — all notation and sync fixes.*
+*RCA doc+logic polish (v1.5.4 → v1.5.5): Sprint 5 fixes 2026-05-20. (S5a) §0.2: added parenthetical note distinguishing RCA Motivation trace vs backward Causal trace — both valid, complementary phases (F-RCA-P1-02). (S5b) §0.3: "Carrier set" → "Axiomatized membership rule" — K already has extensional collection; K1 adds formal admission rule, not a new carrier (F-RCA-P1-03). (S5c) K3 Formal block: added act-token convention — M_K is a set of unique event tokens; two events of same type but different timestamps are distinct members (F-RCA-P2-04). (S5d) K4 Statement: simplified — removed redundant cert=1 condition (guaranteed by K1 admission rule); K4(b) clause now covers isNull case explicitly (F-RCA-P2-05). (S5e) K4 Formal block: restructured as two formal clauses — (a) ¬isNull(k) → V=1 and (b) isNull(k) → V=0 — with Joint exhaustiveness note; V(k_null)=0 promoted from commentary to formal axiom clause (F-RCA-P2-06). (S5f) K5 Formal block: added Reversibility corollary with explicit revert path — iff biconditional means V_prov(k1) returns to K4 default=1 if trigger k2 is invalidated and no other k2′ satisfies all conditions (F-RCA-P3-02). (S5g) T1 Statement: "minimal K-space" → "categorical colimit of the embedding diagram" with formal colimit definition + T4 forward-ref (F-RCA-P4-03). (S5h) T1 Derivation: added Order type block — (K_joint,<_joint) is partial; restricted to each image i_X(K_X) it is a chain; across distinct images it is partial (F-RCA-P4-01). (S5i) T3 Derivation: added Temporal precondition block — t_F < t_W explicit; satisfies K5 condition (i) via cross-rel; derivation presupposes EWF ordering (F-RCA-P4-05). (S5j) §7.3 L4-4: clarified K6 frozen (a)+(b)+(c) are CORE Auth criteria sufficient alone; paper §4.4 (a′)–(d′) are Level 4 strengthening that K6 does not require but does not contradict (F-RCA-P6-03). (S5k) §7.3 L4-7: added ⊥-preservation derivation step — K8 preserves o → K5 ⊥ test same result in K_joint → k_W ⊥ k_F carries across embedding (F-RCA-P6-02). (S5l) §7.5 Step 7: citation changed from "Definition of ⊥_K, paper v2.0 §4.4" → "T2 ⊥_K Derivation Theorem; consistent with paper v2.0 §4.4 definition" — proof chain now self-contained (F-RCA-P6-05). (S5m) §7.6 table Step 1: removed K8 from deps list (Step 1 Setup does not use K8; K8 used in Step 6 only) (F-RCA-P6-04). (S5n) §10.3 P3: rewritten from linear chain notation to DAG description — Auth and ⊥ are parallel K5 inputs; ⊥ test (content-based) does not depend on Auth (F-RCA-P7-02). F-RCA-P4-06 (T4 colimit proof) and F-RCA-P7-04 (relativization defense as AJVS axiom) remain DEFERRED pending community feedback. Zero K1-K8 axiom text changes — all Sprint 5 fixes are doc/logic clarifications and formal-block completions.*
+*RCA MAJOR resolution (v1.5.5 → v1.5.6): Sprint 6 fixes 2026-05-20. (S6-1) T4 Derivation: added T4-H — Colimit Existence Hypothesis block after F7d guard — T4 conclusions now formally conditional on T4-H; status HYPOTHESIS (not theorem derivable from K1-K8); plausibility argument documented (finite totally-ordered sets with preserving maps have finite colimits); rigorous proof deferred to Open Item A5; if T4-H fails, T1 (constructive N=2) remains valid independently (F-RCA-P4-06 Option A resolved). (S6-2) Added AJVS — Axiom of Joint Validity Semantics as named Semantic Layer 0.5 postulate (separate from K1-K8), inserted between T3 and T4: formalizes first-order vs second-order claim distinction; K_joint satisfies D_joint iff it hosts ORIGINAL first-order K-side validity claims, not meta-descriptions; BE lineage pratyakṣa (first-order) vs anumāna (inferential meta) documented; conditional scope stated — if AJVS rejected, T3 conclusion does not follow but K1-K8 remain valid (F-RCA-P7-04 resolved). (S6-3) T3 Derivation: "External semantic assumption" block renamed "Semantic Postulate dependency — AJVS"; T3 property table row updated from "External assumption" to "Semantic postulate: AJVS (see below)". (S6-4) Layer 2 Summary T3 row: cites AJVS; T4 row: cites T4-H hypothesis; §10.6 A1 marked RESOLVED (AJVS formalized v1.5.6); §10.6 A5 updated noting T4-H hypothesis added v1.5.6; §10.5 Final Verdict updated from "external dependency" to "AJVS semantic postulate dependency". All 10/10 MAJOR findings now closed. Zero K1-K8 axiom text changes — Sprint 6 adds two named postulates (T4-H, AJVS) at Semantic Layer 0.5 and formally scopes T4 conclusions conditional on T4-H.*
 *RCA audit (v1.4 → v1.5): Full Phase 1–5 RCA audit completed (plan v28). Phase 1 (F1–F5c): K5 V_prov/V_final lifecycle split (F1, BLOCKING resolved); K6 non-transitivity scoped to distinct C_K contexts (F2); §0.5 isolation paragraph 2-part split (F3); Layer 1 Summary C_K roles (F4); K5 K_R disambiguation + firing precondition + Dep-A/Dep-B documented (F5a–F5c). Phase 2 (F6a–F6c): K6/K7 Dep-A (C_K precondition) + I-03 pattern documented (F6a–F6b); C-KAXIOM-010 rewritten as 2-part syntactic/semantic isolation (F6c). Phase 3 (F7a–F7d): T1 non-circularity guard (F7a); T2 AdmJoint V_prov timing + K7 resolved-demand semantics (F7b); T3 framework-level semantic boundary wording (F7c); T4 global commutativity guard (F7d). Phase 4 (F8a–F8d): E2 K1 vs K4/K7 boundary; E9 definitional null-status boundary; E8 V_prov/T2/E9 precision; BE lineage expanded to 8/8 PASS (F8a–F8d). Phase 5 (F9a–F9d): §7.5 Step 6 V_prov notation (F9a); §7.5 Step 4 stale GAP G4 → G3 label (F9b); §10.3 P4 citation V_prov internal note + §7.5 Step 6 stale "modulo EP" removed (F9c); §7.3 L4-7 K8 canonical V_F/V_W subscript notation (F9d). Phase 6 (F10a–F10f): Open Item #1 K5 V_prov attribution (F10a); Open Item #14 T2 Dep-B note (F10b); Open Item #15 Dep-A/Dep-B satisfied note (F10c); Action Item A6 added — Dep-A/Dep-B post-freeze verification (F10d); document header and version history updated (F10e–F10f).*
 *RCA audit (v1.3 → v1.4): (1) EP promoted to K8 (Cross-Space Embedding Preservation) — Layer 1 now has 8 core axioms. K8 guarantees V-preservation through cross-space embeddings. (2) T1 derivation updated: V-preservation now from K8, not external postulate. Former EP gap (G1) RESOLVED. (3) T2 proof attempt gaps reduced from 3 to 2: only relativization defense (G1, framework-level semantic commitment) and Level 4 ⊥ freeze (G3, temporal) remain. (4) Concrete model §7 updated: K8 consistency walk, AdmJoint check (i) now derives from K8. (5) §10 Level 4 Freeze Check verdict added: internal consistency PROVEN for concrete model; relativization defense documented as framework-level semantic boundary. (6) Open Item #13 closed (EP → K8). Open Items #14, #15 updated.*
 *Previous (v1.2 → v1.3): (1) Concrete model §7 added: minimal EWF (2 observers, 1 event each). K1-K7 consistency walk completed — no contradictions. Level 4 definitions walk completed — derivation chain verified. (2) T2 proof attempt with 3 gaps. (3) Circularity shown absent in concrete model. (4) Open Items #14, #15 added.*
