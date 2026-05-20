@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF-EX Expansion Plan
 
 > **Document type:** RCA expansion plan
-> **Status:** Plan v1.6 — Stretch Expansion in execution; Phases 0–6 ALL COMPLETE; Phase 7 ✅ COMPLETED; Phases 8–10 ⏳ PENDING; F1–F15 + F-RCA-01/02 applied; 9 KE-PM resolved; 23 KE-OF/KE-SC stretch bridges batch-approved and registered; dual-criterion success framework adopted
+> **Status:** Plan v1.6 — Stretch Expansion in execution; Phases 0–8 ALL COMPLETE; Phases 9–10 ⏳ PENDING; F1–F15 + F-RCA-01/02 + F-RCA-05/07/08/09/10/11 applied; 9 KE-PM resolved; 23 KE-OF/KE-SC stretch bridges batch-approved and registered; Phase 8 boundary audit PASS on 143 entries; dual-criterion success framework adopted
 > **Date:** 2026-05-20
 > **Scope:** Expand VVV-QMRF into VVV-QMRF-EX by identifying K-side ↔ ρ-side relationships via two bridge expansion directions
 > **Boundary:** Structural analogy only; no BE-QM identity; no new QM law; no automatic E17+; no replacement of Standard QM
@@ -673,10 +673,10 @@ documents/research_documents/vvv-qmrf-ex/
 
 ---
 
-## 14. v1.6 Stretch Expansion Plan — Phases 7–10 (PHASE 7 COMPLETED; PHASES 8–10 PENDING)
+## 14. v1.6 Stretch Expansion Plan — Phases 7–10 (PHASES 7–8 COMPLETED; PHASES 9–10 PENDING)
 
 > **Document type:** Forward-looking RCA expansion (not yet executed).
-> **Status gate:** Phase 7 is COMPLETED as of 2026-05-20. Evidence: `phase7_candidate_pool.md`, `phase7_ke_of_rca_log.md`, `phase7_ke_sc_rca_log.md`, `br_ex_be_registry.md` entries `BR_EX_BE_00047`–`BR_EX_BE_00069`, `k_gap_exception_list.md` `KE-RESOLVED-STRETCH` updates, and `ex_schema_addendum.md` v1.1 vocabulary update. Phases 8–10 remain pending.
+> **Status gate:** Phases 7–8 are COMPLETED as of 2026-05-20. Phase 7 evidence: `phase7_candidate_pool.md`, `phase7_ke_of_rca_log.md`, `phase7_ke_sc_rca_log.md`, `br_ex_be_registry.md` entries `BR_EX_BE_00047`–`BR_EX_BE_00069`, `k_gap_exception_list.md` `KE-RESOLVED-STRETCH` updates, and `ex_schema_addendum.md` v1.1 vocabulary update. Phase 8 evidence: `reviews/phase8_audit_closure_report.md` and `data/phase8_boundary_audit_report.json` (`entries_audited: 143`, `violations: 0`, `overall: PASS`). Phases 9–10 remain pending because no `_v1.6` immutable re-run snapshots or final completion audit are present yet.
 > **Authority:** This section EXTENDS Plan v1.5 — it does not overwrite §7, §10, or §13. Phase 7 execution evidence is recorded in-place per "extend, not overwrite" rule.
 
 ### 14.1 RCA Purpose (v1.6)
@@ -741,7 +741,7 @@ documents/research_documents/vvv-qmrf-ex/
 | Step | Script | Output (immutable, NEW filename) |
 |---|---|---|
 | 9.1 | `phase1_graph_construction.py` | `data/phase1_validation_report_v1.6.json` (`snapshot_phase: "v1.6-stretch"`) |
-| 9.2 | `phase2_intersection_analysis.py` (with `random_state=42`) | `data/phase2_intersection_report_v1.6.json` — expected intersection ≥26 (Stretch Tier 1) or ≥42 (Stretch Tier 2) depending on Phase 7 ACCEPT rate |
+| 9.2 | `phase2_intersection_analysis.py` (with deterministic post-detection community ordering; NetworkX 3.3 does not support `random_state` for `greedy_modularity_communities`) | `data/phase2_intersection_report_v1.6.json` — expected intersection ≥26 (Stretch Tier 1) or ≥42 (Stretch Tier 2) depending on Phase 7 ACCEPT rate |
 | 9.3 | `phase3_similarity_search.py` | `data/phase3_similarity_report_v1.6.json` — verify cosine ≥0.50 for all 23 new entries |
 | 9.4 | `phase4_bridge_registry.py` | `data/phase4_registry_report_v1.6.json` — ghost count = 0; total BR_EX_BE = 46 + N_accepted (N_accepted ∈ [0,23]) |
 | 9.5 | `phase5_visualize.py` | `data/phase5_coverage_report_v1.6.json` + `phase5_output/step5_1_network_diagram_v1.6.png` + `step5_2_kp_heatmap_v1.6.png` |
@@ -761,7 +761,7 @@ documents/research_documents/vvv-qmrf-ex/
 | 10.5 | `reviews/rca_checkpoint.md` | Bump v1.5 → v1.6; findings count 22 → 22 + new Phase 7–9 findings; add Section 3e |
 | 10.6 | `reviews/rca_inventory.md` + `reviews/vvv_qmrf_ex_effectiveness.md` | Re-validate effectiveness metrics with new raw % and total entries |
 | 10.7 | `reviews/rca_plan_v1.6_completion_audit.md` | New file — read-only audit verifying Phase 7–9 outputs match Section 14 claims; cross-check JSON ↔ MD ↔ git |
-| 10.8 | `data/vvv_qmrf_ex_context.json` | Bump version 0.4 → 0.5; update `edge_count`, `node_count`, add `random_state: 42`, `snapshot_phase: "post-stretch-v1.6"` |
+| 10.8 | `data/vvv_qmrf_ex_context.json` | Bump version 0.4 → 0.5; update `edge_count`, `node_count`, add `greedy_modularity_random_state_supported: false`, `replacement_control: "stable_post_detection_sort"`, `snapshot_phase: "post-stretch-v1.6"` |
 | 10.9 | `ex_schema_addendum.md` | If Phase 7 introduces `operator_decomposition` or `sub_concept_direct_anchor` to Bridge Relation whitelist, document additions |
 
 ### 14.7 Risks
