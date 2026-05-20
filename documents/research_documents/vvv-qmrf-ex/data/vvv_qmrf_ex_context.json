@@ -1,0 +1,48 @@
+{
+  "project_name": "VVV-QMRF-EX",
+  "version": "0.3-phase3",
+  "date": "2026-05-20",
+  "phases_complete": [
+    "0-environment",
+    "1-graph-construction",
+    "2-intersection-analysis",
+    "3-similarity-search"
+  ],
+  "graph": {
+    "total_nodes": 420,
+    "be_count": 263,
+    "vvv_count": 52,
+    "qm_count": 105,
+    "edge_count": 0
+  },
+  "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+  "embedding_dim": 768,
+  "embedding_normalize": true,
+  "similarity_metric": "cosine (dot product of L2-normalized vectors)",
+  "matrix_shapes": {
+    "be_vvv": [
+      263,
+      52
+    ],
+    "vvv_qm": [
+      52,
+      105
+    ]
+  },
+  "thresholds": {
+    "tier1": 0.75,
+    "tier2_min": 0.5,
+    "manual_min": 0.3
+  },
+  "phase2_summary": {
+    "intersection_count": 16,
+    "k_gap_count": 36,
+    "rho_gap_count": 1
+  },
+  "phase3_summary": {
+    "be_vvv_new_tier1": 0,
+    "be_vvv_new_tier2": 2,
+    "vvv_qm_new_tier1": 0,
+    "vvv_qm_new_tier2": 13
+  }
+}
