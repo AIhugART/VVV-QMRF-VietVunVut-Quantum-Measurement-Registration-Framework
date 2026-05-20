@@ -1,6 +1,6 @@
 {
   "project_name": "VVV-QMRF-EX",
-  "version": "0.6-phase6-expert",
+  "version": "0.7-phase8-audit-closure",
   "date": "2026-05-20",
   "phases_complete": [
     "0-environment",
@@ -16,7 +16,7 @@
     "be_count": 263,
     "vvv_count": 52,
     "qm_count": 105,
-    "edge_count": 151
+    "edge_count": 160
   },
   "embedding_model": "sentence-transformers/all-mpnet-base-v2",
   "embedding_dim": 768,
@@ -49,8 +49,8 @@
     "vvv_qm_new_tier2": 13
   },
   "phase5_results": {
-    "intersection_pct": 30.8,
-    "k_effective_coverage_pct": 82.7,
+    "intersection_pct": 48.1,
+    "k_effective_coverage_pct": 100.0,
     "rho_effective_coverage_pct": 100.0,
     "boundary_audit": "PASS",
     "ghost_entries": 0,
@@ -68,6 +68,19 @@
       "high": 3,
       "medium_high": 2,
       "medium": 4
+    }
+  },
+  "phase8_audit_closure": {
+    "snapshot_phase": "v1.6-phase8-closure",
+    "date": "2026-05-20",
+    "boundary_audit_report": "data/phase8_boundary_audit_report.json",
+    "entries_audited": 143,
+    "boundary_violations": 0,
+    "community_detection_reproducibility": {
+      "networkx_version_observed": "3.3",
+      "greedy_modularity_random_state_supported": false,
+      "decision": "No unsupported random_state argument added; community output ordering is sorted deterministically after detection.",
+      "replacement_control": "stable_post_detection_sort"
     }
   }
 }

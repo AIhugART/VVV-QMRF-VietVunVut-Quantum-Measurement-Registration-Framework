@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_BE Registry — K-side Bridge: BE ↔ VVV-QMRF
 
-**Version:** 2.0 (Phase 6)
+**Version:** 2.1 (Phase 7 draft — batch-approved)
 **Date:** 2026-05-20
-**Total Entries:** 46 (36 reference-copy + 1 similarity candidate + 9 expert manual)
-**Namespace:** BR_EX_BE_00001–BR_EX_BE_00046
+**Total Entries:** 69 (36 reference-copy + 1 similarity candidate + 9 expert manual + 23 Phase 7 stretch mappings)
+**Namespace:** BR_EX_BE_00001–BR_EX_BE_00069
 
 ---
 
@@ -18,7 +18,8 @@ This registry maps Buddhist Epistemology (BE) nodes to VVV-QMRF nodes on the K-s
 | `reference_copy` | 36 | Phase 1 graph edges (VVV_TO_BE + DRAFT_BRIDGE_BE_VVV) |
 | `new_similarity_candidate` | 1 | Phase 3 cosine similarity (Tier2, cosine >= 0.50) |
 | `expert_manual_mapping` | 9 | Phase 6 domain expert mapping (KE-PM resolution) |
-| **Total** | **46** | |
+| `stretch_expert_mapping` | 23 | Phase 7 KE-OF/KE-SC stretch mapping (batch-approved) |
+| **Total** | **69** | |
 
 **Direction convention:** Entries normalize to BE_node → VVV_node (K-side: BE anchors VVV).
 See `ex_schema_addendum.md §5` for F2 non-reversal policy.
@@ -946,3 +947,466 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Boundary Note** | Functional analogy: samādhi is the epistemic precondition enabling yogipratyakṣa; non-ordinary registration output is the formal result of yogipratyakṣa-class registration. |
 | **Rationale** | Non-ordinary valid registration = yogipratyakṣa output. Samādhi is the necessary condition per Dharmakīrti PV III.281-286. Parent N_QM_VVV_00048 already mapped. |
 | **Origin** | Phase 6 expert mapping (KE-PM resolution) |
+---
+
+## Phase 7 Stretch Mapping Entries (v1.6 batch-approved)
+
+### BR_EX_BE_00047 — Entry 47
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00047` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00015` |
+| **BE Concept** | Apoha / Exclusion |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00003` |
+| **VVV Concept** | Projection Operator / Null-Projection Op |
+| **Direction** | N_BE_00015 → N_QM_VVV_00003 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.46 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps projection selection to K-side exclusion by alternatives; not a Hilbert-space identity. |
+| **Rationale** | Projection operator semantics are decomposed as selection-by-exclusion. Apoha supplies the K-side exclusion structure. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.6/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00048 — Entry 48
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00048` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00018` |
+| **BE Concept** | Triple-condition syllogism (trairupya) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00010` |
+| **VVV Concept** | PVM-equivalent Registration Authority |
+| **Direction** | N_BE_00018 → N_QM_VVV_00010 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.45 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Trairupya is a K-side validity analogue, not a projector-valued measure. |
+| **Rationale** | PVM authority is decomposed as validity-constraint semantics; trairupya supplies the three-condition validity structure. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.5/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00049 — Entry 49
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00049` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00234` |
+| **BE Concept** | Avisamvaditva / Reliability |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00014` |
+| **VVV Concept** | Extrinsic Registration-Certification Operator C_ext |
+| **Direction** | N_BE_00234 → N_QM_VVV_00014 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.46 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps certification reliability, not physical detector response. |
+| **Rationale** | Extrinsic certification is decomposed as non-deceptive registration validity; avisamvaditva supplies reliability semantics. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.6/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00050 — Entry 50
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00050` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00029` |
+| **BE Concept** | Momentariness |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00023` |
+| **VVV Concept** | Registration Lock V_yava / Irreversible Registration Lock |
+| **Direction** | N_BE_00029 → N_QM_VVV_00023 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.45 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps temporal boundary/non-return structure, not physical irreversibility. |
+| **Rationale** | Registration lock is decomposed as a boundary after which the event is no longer the same registration moment. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.5/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00051 — Entry 51
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00051` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00022` |
+| **BE Concept** | Arthakriya / Causal efficacy |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00028` |
+| **VVV Concept** | Act-Result Tensor T_act-res |
+| **Direction** | N_BE_00022 → N_QM_VVV_00028 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.47 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps act-result function, not tensor algebra. |
+| **Rationale** | Act-result tensor semantics are decomposed as successful function/effect; arthakriya supplies act-result efficacy. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.7/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00052 — Entry 52
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00052` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00006` |
+| **BE Concept** | Bhranti / Erroneous cognition |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00030` |
+| **VVV Concept** | Invalidation Operator O_bhranti |
+| **Direction** | N_BE_00006 → N_QM_VVV_00030 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.48 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps epistemic invalidity, not quantum state invalidation. |
+| **Rationale** | Invalidation operator semantics are decomposed as recognition of erroneous registration. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.8/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00053 — Entry 53
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00053` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00011` |
+| **BE Concept** | Svasaṃvedana / Self-awareness |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00034` |
+| **VVV Concept** | Reflexive Registration Operator R_svasa |
+| **Direction** | N_BE_00011 → N_QM_VVV_00034 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.48 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps reflexive certification, not physical self-awareness. |
+| **Rationale** | Reflexive operator semantics are decomposed as self-certifying registration structure. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.8/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00054 — Entry 54
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00054` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00253` |
+| **BE Concept** | Anupalabdhi / Non-perception |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00037` |
+| **VVV Concept** | Null Registration Operator E_empty |
+| **Direction** | N_BE_00253 → N_QM_VVV_00037 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.46 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps non-registration as non-apprehension, not a null projection identity. |
+| **Rationale** | Null operator semantics are decomposed as K-side non-apprehension/non-registration. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.6/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00055 — Entry 55
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00055` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00250` |
+| **BE Concept** | Tadutpatti / Causal production |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00041` |
+| **VVV Concept** | Causal Memory Projection Pi_causal |
+| **Direction** | N_BE_00250 → N_QM_VVV_00041 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.45 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps causal linkage only, not a memory projection operator. |
+| **Rationale** | Causal memory projection is decomposed as causal-production linkage in the registration chain. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.5/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00056 — Entry 56
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00056` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00008` |
+| **BE Concept** | Kalpana / Conceptual construction |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00046` |
+| **VVV Concept** | Symbolization Operator Lambda |
+| **Direction** | N_BE_00008 → N_QM_VVV_00046 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.48 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps symbolization/conceptualization, not a physical symbol operator. |
+| **Rationale** | Symbolization operator semantics are decomposed as conceptual construction. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.8/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00057 — Entry 57
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00057` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00012` |
+| **BE Concept** | Alaukika perception |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00049` |
+| **VVV Concept** | Limit-Faculty Registration Operator M_trans |
+| **Direction** | N_BE_00012 → N_QM_VVV_00049 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.47 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps non-ordinary registration-function, not quantum measurement by yogic perception. |
+| **Rationale** | Limit-faculty operator is decomposed as non-ordinary perception/registration capacity. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.7/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00058 — Entry 58
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00058` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00029` |
+| **BE Concept** | Momentariness |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00052` |
+| **VVV Concept** | Discrete Transition Operator T_ksana |
+| **Direction** | N_BE_00029 → N_QM_VVV_00052 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.47 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps discrete transition structurally, not quantum dynamics. |
+| **Rationale** | Discrete transition operator is decomposed as moment-to-moment discontinuity. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.7/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00059 — Entry 59
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00059` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00007` |
+| **BE Concept** | Samsaya / Doubt |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00055` |
+| **VVV Concept** | Indeterminacy Operator S_samsaya |
+| **Direction** | N_BE_00007 → N_QM_VVV_00055 |
+| **Relation Type** | operator_decomposition |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.48 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps epistemic indeterminacy, not quantum indeterminacy as physical law. |
+| **Rationale** | Indeterminacy operator semantics are decomposed as undecided K-side status. |
+| **Origin** | Phase 7 KE-OF stretch mapping; score 4.8/5; see `phase7_ke_of_rca_log.md` |
+
+### BR_EX_BE_00060 — Entry 60
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00060` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00097` |
+| **BE Concept** | Vyatireka / Negative concomitance |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00007` |
+| **VVV Concept** | Counterfactual Evidential Branch |
+| **Direction** | N_BE_00097 → N_QM_VVV_00007 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.38 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps absence-side evidence, not quantum counterfactual physics. |
+| **Rationale** | Counterfactual evidential branch receives a direct K-side anchor in negative concomitance. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 3.8/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00061 — Entry 61
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00061` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00009` |
+| **BE Concept** | Nirvikalpaka / Non-conceptual perception |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00008` |
+| **VVV Concept** | Ideal Information Without Direct Disturbance |
+| **Direction** | N_BE_00009 → N_QM_VVV_00008 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.37 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps unelaborated registration, not interaction-free measurement. |
+| **Rationale** | Information without direct disturbance is anchored to a non-conceptual registration mode. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 3.7/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00062 — Entry 62
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00062` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00250` |
+| **BE Concept** | Tadutpatti / Causal production |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00012` |
+| **VVV Concept** | Intrinsic Causal Triggering Phase |
+| **Direction** | N_BE_00250 → N_QM_VVV_00012 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.40 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps causal-production structure only. |
+| **Rationale** | Intrinsic triggering phase receives a direct K-side causal-production anchor. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 4.0/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00063 — Entry 63
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00063` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00234` |
+| **BE Concept** | Avisamvaditva / Reliability |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00013` |
+| **VVV Concept** | Extrinsic Registration Certification Phase |
+| **Direction** | N_BE_00234 → N_QM_VVV_00013 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.40 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps registration validity, not apparatus response. |
+| **Rationale** | Extrinsic certification phase receives a direct K-side non-deceptiveness anchor. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 4.0/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00064 — Entry 64
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00064` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00052` |
+| **BE Concept** | Prama / Valid cognition |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00016` |
+| **VVV Concept** | Certified Registration State |
+| **Direction** | N_BE_00052 → N_QM_VVV_00016 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.41 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps valid outcome analogue, not Buddhist cognition identity. |
+| **Rationale** | Certified registration state receives a direct K-side valid-outcome anchor. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 4.1/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00065 — Entry 65
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00065` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00179` |
+| **BE Concept** | Representative perception |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00022` |
+| **VVV Concept** | Internal Representation Encoding |
+| **Direction** | N_BE_00179 → N_QM_VVV_00022 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.38 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps representational encoding, not physical storage. |
+| **Rationale** | Internal encoding receives a direct K-side anchor in representative perception. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 3.8/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00066 — Entry 66
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00066` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00029` |
+| **BE Concept** | Momentariness |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00024` |
+| **VVV Concept** | Registration-Locking Boundary in Delayed-Choice Erasure |
+| **Direction** | N_BE_00029 → N_QM_VVV_00024 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.37 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps temporal boundary only, not delayed-choice erasure. |
+| **Rationale** | Delayed-choice locking boundary receives a direct moment-boundary anchor. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 3.7/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00067 — Entry 67
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00067` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00011` |
+| **BE Concept** | Svasaṃvedana / Self-awareness |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00035` |
+| **VVV Concept** | Primary Registration Closure / Regress-Terminating |
+| **Direction** | N_BE_00011 → N_QM_VVV_00035 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.40 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps reflexive closure, not physical consciousness. |
+| **Rationale** | Regress-terminating closure receives a direct reflexive-registration anchor. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 4.0/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00068 — Entry 68
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00068` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00086` |
+| **BE Concept** | Momentariness |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00040` |
+| **VVV Concept** | Momentary Registering Moments {o1,o2,...,on} |
+| **Direction** | N_BE_00086 → N_QM_VVV_00040 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.40 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps moment enumeration, not quantum time evolution. |
+| **Rationale** | Momentary registering moments receive a direct fluxional momentariness anchor. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 4.0/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00069 — Entry 69
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00069` |
+| **Type** | stretch_expert_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00087` |
+| **BE Concept** | Ksanabhangavada |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00053` |
+| **VVV Concept** | Ksana Registration Event / Registration Seal |
+| **Direction** | N_BE_00087 → N_QM_VVV_00053 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.41 (RCA score; Phase 7 batch-approved) |
+| **Boundary Note** | Maps ksana registration boundary, not physical collapse. |
+| **Rationale** | Ksana event/seal receives a direct Ksanabhangavada anchor. |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 4.1/5; see `phase7_ke_sc_rca_log.md` |

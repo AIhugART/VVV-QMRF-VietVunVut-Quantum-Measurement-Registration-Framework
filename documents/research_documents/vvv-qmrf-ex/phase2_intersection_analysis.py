@@ -49,15 +49,21 @@ AUTHOR = (
     "Facebook: https://www.facebook.com/xuanviet"
 )
 
-K_SIDE_TYPES   = {"VVV_TO_BE", "DRAFT_BRIDGE_BE_VVV"}
-RHO_SIDE_TYPES = {"VVV_TO_QM", "BR_QM_VVV"}
+K_SIDE_TYPES   = {"VVV_TO_BE", "DRAFT_BRIDGE_BE_VVV", "BR_EX_BE", "BR_EX_BE_NEW"}
+RHO_SIDE_TYPES = {"VVV_TO_QM", "BR_QM_VVV", "BR_EX_QM", "BR_EX_QM_NEW"}
 
 
 # ── Graph loading ─────────────────────────────────────────────────────────────
 def load_graph(path: Path) -> nx.MultiDiGraph:
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
-    return json_graph.node_link_graph(data)
+    try:
+        return json_graph.node_link_graph(data, edges="edges")
+    except TypeError:
+        # Older networkx: rename 'edges' to 'links' manually
+        if 'edges' in data and 'links' not in data:
+            data['links'] = data.pop('edges')
+        return json_graph.node_link_graph(data)
 
 
 # ── Node layer helpers ────────────────────────────────────────────────────────
@@ -121,10 +127,12 @@ def compute_centrality(G: nx.MultiDiGraph):
 def detect_communities(G: nx.MultiDiGraph):
     """
     Greedy modularity communities on undirected simple projection.
-    Returns list of frozensets.
+    NetworkX 3.3 exposes no random_state parameter for this function, so
+    output ordering is stabilized after detection for reproducible reports.
     """
     G_simple = nx.Graph(G.to_undirected())
-    return list(nx.community.greedy_modularity_communities(G_simple))
+    communities = nx.community.greedy_modularity_communities(G_simple)
+    return sorted(communities, key=lambda c: (-len(c), sorted(c)))
 
 
 # ── 2.4  Sample shortest paths BE -> QM ──────────────────────────────────────

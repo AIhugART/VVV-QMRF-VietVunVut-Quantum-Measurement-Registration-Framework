@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF-EX Expansion Plan
 
 > **Document type:** RCA expansion plan
-> **Status:** Plan v1.6 — Stretch Expansion proposed; Phases 0–6 ALL COMPLETE; Phases 7–10 ⏳ AWAITING USER EXECUTION APPROVAL; F1–F15 + F-RCA-01/02 applied; 9 KE-PM resolved; dual-criterion success framework adopted
+> **Status:** Plan v1.6 — Stretch Expansion in execution; Phases 0–6 ALL COMPLETE; Phase 7 ✅ COMPLETED; Phases 8–10 ⏳ PENDING; F1–F15 + F-RCA-01/02 applied; 9 KE-PM resolved; 23 KE-OF/KE-SC stretch bridges batch-approved and registered; dual-criterion success framework adopted
 > **Date:** 2026-05-20
 > **Scope:** Expand VVV-QMRF into VVV-QMRF-EX by identifying K-side ↔ ρ-side relationships via two bridge expansion directions
 > **Boundary:** Structural analogy only; no BE-QM identity; no new QM law; no automatic E17+; no replacement of Standard QM
@@ -290,7 +290,10 @@ top_mediators = sorted(
 
 # Community detection — are there natural clusters?
 from networkx.algorithms import community
-communities = community.greedy_modularity_communities(G.to_undirected())
+communities = sorted(
+    community.greedy_modularity_communities(G.to_undirected()),
+    key=lambda c: (-len(c), sorted(c))
+)
 
 # Shortest paths BE → VVV → QM — what are the most direct K-ρ chains?
 for be_node in BE_BRIDGE_SOURCES:
@@ -435,7 +438,7 @@ Using the **Context Management** skill, VVV-QMRF-EX will maintain:
 |---|---|---|---|---|
 | 2.1 | Compute intersection nodes | Unified graph | List of VVV nodes with dual K-ρ anchoring | ≥15 intersection nodes expected |
 | 2.2 | Compute betweenness centrality | Unified graph | Ranked mediator list | Top mediators align with E1-E16 core postulates |
-| 2.3 | Detect community structure | Unified graph (undirected) | BIAN-cluster alignment | Communities should roughly map to BIAN groups |
+| 2.3 | Detect community structure | Unified graph (undirected) | BIAN-cluster alignment | Top-N non-singleton communities should roughly map to BIAN groups; total community count is dominated by orphan BE nodes and is not a quality metric |
 | 2.4 | Compute shortest paths BE→QM | Unified graph | Path catalog through VVV layer | All paths route through VVV (no direct BE→QM) |
 | 2.5 | Identify K-side gaps | Intersection analysis | VVV nodes without BE anchoring | Gap list for Bridge 1 expansion |
 | 2.6 | Identify ρ-side gaps | Intersection analysis | VVV nodes without QM anchoring | Gap list for Bridge 2 expansion |
@@ -661,7 +664,7 @@ documents/research_documents/vvv-qmrf-ex/
 3. ~~**Execute Phase 1** — construct unified multigraph~~ ✅ Done (420 nodes, 149 edges)
 4. ~~**Execute Phase 2** — run intersection analysis~~ ✅ Done (16 intersection nodes)
 5. ~~**Execute Phase 3** — generate embeddings and similarity search~~ ✅ Done (0 Tier1, 15 Tier2)
-6. ~~**Execute Phase 4** — formalize BR_EX_BE / BR_EX_QM registries~~ ✅ Done (37 BE + 74 QM = 111 registry entries; 151 graph edges)
+6. ~~**Execute Phase 4** — formalize BR_EX_BE / BR_EX_QM registries~~ ✅ Done (Phase-4-baseline: 37 BE + 74 QM = 111 registry entries; 151 graph edges. Post-Phase 6: 46 + 74 = 120 entries; post-Phase 7: 69 + 74 = 143 entries)
 7. ~~**Apply F8–F15 RCA fixes** — ghost entries, edge accounting, success criteria, context.json~~ ✅ Done (plan v1.3)
 8. ~~**Execute Phase 5** — visualization + validation~~ ✅ Done — at time of Phase 5 (pre-Phase 6): boundary audit PASS 0/111 violations; K-effective 82.7% (43/52 = 16 covered + 27 structural exceptions; 9 KE-PM still pending); ρ-effective 100% (51 covered + 1 RE-BI); raw dual-anchored 30.8% (16/52); network diagram + heatmap + coverage report generated. *Note: numbers later updated to post-Phase 6 state in `phase5_coverage_report.json` — see RCA Audit F-RCA-05 / F-RCA-08; historical baseline preserved here.*
 9. ~~**Execute Phase 6** — domain expert mapping of 9 KE-PM nodes~~ ✅ Done (9/9 KE-PM resolved → KE-RESOLVED; raw dual-anchored rose to 25/52 = **48.1%**; K-effective 100% (25 covered + 27 structural exceptions); BR_EX_BE_00038–00046 created; 160 graph edges)
@@ -670,11 +673,11 @@ documents/research_documents/vvv-qmrf-ex/
 
 ---
 
-## 14. v1.6 Stretch Expansion Plan — Phases 7–10 (PROPOSED, AWAITING EXECUTION)
+## 14. v1.6 Stretch Expansion Plan — Phases 7–10 (PHASE 7 COMPLETED; PHASES 8–10 PENDING)
 
 > **Document type:** Forward-looking RCA expansion (not yet executed).
-> **Status gate:** Section 14 is PROPOSED. No artifacts in `data/` carry the suffix `_v1.6.json` yet. Execution requires explicit user "proceed" signal.
-> **Authority:** This section EXTENDS Plan v1.5 — it does not overwrite §7, §10, or §13. Once Phase 7 begins, this section will be amended in-place with execution evidence (per "extend, not overwrite" rule).
+> **Status gate:** Phase 7 is COMPLETED as of 2026-05-20. Evidence: `phase7_candidate_pool.md`, `phase7_ke_of_rca_log.md`, `phase7_ke_sc_rca_log.md`, `br_ex_be_registry.md` entries `BR_EX_BE_00047`–`BR_EX_BE_00069`, `k_gap_exception_list.md` `KE-RESOLVED-STRETCH` updates, and `ex_schema_addendum.md` v1.1 vocabulary update. Phases 8–10 remain pending.
+> **Authority:** This section EXTENDS Plan v1.5 — it does not overwrite §7, §10, or §13. Phase 7 execution evidence is recorded in-place per "extend, not overwrite" rule.
 
 ### 14.1 RCA Purpose (v1.6)
 
@@ -704,27 +707,34 @@ documents/research_documents/vvv-qmrf-ex/
 - Accept if score ≥ threshold (4.5 for KE-OF, 3.5 for KE-SC) at any round
 - After 3 unsuccessful rounds → node tagged `KE-{OF,SC}-RCA-REJECTED-3R`, remains in exception list with full 3-round log appended
 
-### 14.3 Phase 7 — Stretch Expert Mapping (KE-OF + KE-SC promotion)
+### 14.3 Phase 7 — Stretch Expert Mapping (KE-OF + KE-SC promotion) ✅ COMPLETED
 
+**Completion date:** 2026-05-20
+
+**Execution result:** 23/23 target nodes accepted and registered. KE-OF accepted 13/13 at threshold 4.5/5; KE-SC accepted 10/10 at threshold 3.5/5. No `REJECTED-NO-POOL`, `KE-OF-RCA-REJECTED-3R`, or `KE-SC-RCA-REJECTED-3R` nodes were created.
 | Step | Description | Output artifact |
 |---|---|---|
-| 7.0 | Pre-flight: build candidate pool ≥3 per node from `SYSTEM_Buddhist_Epistemology/system_be_full.md` (BE SOT). Nodes without 3 candidates auto-tagged `REJECTED-NO-POOL` | `phase7_candidate_pool.md` |
-| 7.1 | RCA gate per KE-OF node (13 nodes, threshold 4.5/5, 3-round protocol). Rubric: BE-SOT match, semantic fidelity, boundary safety, K-side function clarity, citation traceability — each /1 = total /5 | `phase7_ke_of_rca_log.md` |
-| 7.2 | RCA gate per KE-SC node (10 nodes, threshold 3.5/5, 3-round protocol). Same rubric | `phase7_ke_sc_rca_log.md` |
-| 7.3 | Boundary-guard pre-check: C1–C7 on every ACCEPTED entry. Reject if claim class = `identity` | inline in 7.1/7.2 logs |
-| 7.4 | Apply F1/F4/F11/F12 schemas: BE Anchor, VVV Anchor, Bridge Relation (whitelist; may need `operator_decomposition` and `sub_concept_direct_anchor` added to `ex_schema_addendum.md` controlled vocabulary), K-side Function, Claim Type, Boundary Guard, BIAN Target, Source Evidence, NetworkX Weight, Status | append to `br_ex_be_registry.md` (range `BR_EX_BE_00047`–`BR_EX_BE_00069`) |
-| 7.5 | Batch-approve gate per category: present batch of all ACCEPTED entries for KE-OF, then KE-SC, to user for single batch sign-off | user response (≥1 per batch) |
-| 7.6 | Update `k_gap_exception_list.md`: move ACCEPTED nodes from `KE-OF`/`KE-SC` → new `KE-RESOLVED-STRETCH` section; preserve REJECTED nodes with `KE-{OF,SC}-RCA-REJECTED-3R` annotation | edited `k_gap_exception_list.md` |
+| 7.0 | ✅ DONE — Built candidate pool ≥3 per node from `SYSTEM_Buddhist_Epistemology/system_be_full.md` (BE SOT). No node tagged `REJECTED-NO-POOL` | `phase7_candidate_pool.md` |
+| 7.1 | ✅ DONE — RCA gate per KE-OF node (13 nodes, threshold 4.5/5, 3-round protocol). Result: 13/13 accepted, all Round 1 | `phase7_ke_of_rca_log.md` |
+| 7.2 | ✅ DONE — RCA gate per KE-SC node (10 nodes, threshold 3.5/5, 3-round protocol). Result: 10/10 accepted; 6 Round 1, 4 Round 2 | `phase7_ke_sc_rca_log.md` |
+| 7.3 | ✅ DONE — Boundary-guard pre-check applied to every accepted entry. Claim class remains `interpretive_mapping`; no identity claim accepted | inline in 7.1/7.2 logs |
+| 7.4 | ✅ DONE — Applied F1/F4/F11/F12 schemas and appended `BR_EX_BE_00047`–`BR_EX_BE_00069`; added `stretch_expert_mapping` overview row | edited `br_ex_be_registry.md` |
+| 7.5 | ✅ DONE — Batch approval completed per category: KE-OF and KE-SC approved as category batches | user batch approval |
+| 7.6 | ✅ DONE — Updated `k_gap_exception_list.md`: accepted KE-OF/KE-SC nodes moved to `KE-RESOLVED-STRETCH`; coverage updated to 48/52 = 92.3% direct K-side bridge coverage | edited `k_gap_exception_list.md` |
 
-### 14.4 Phase 8 — Audit Closure (F-RCA-05/07/08/09/10/11)
+### 14.4 Phase 8 — Audit Closure (F-RCA-05/07/08/09/10/11) ✅ COMPLETED
+
+**Completion date:** 2026-05-20
+
+**Decision protocol:** Each finding was evaluated with 3 rounds max using RCA × 5-Why × scoring threshold 4/5. All six findings reached closure threshold; no finding required Round 3.
 
 | Step | Finding | Fix | Output |
 |---|---|---|---|
-| 8.1 | F-RCA-11 | Add `random_state=42` to `community.greedy_modularity_communities` call in `phase2_intersection_analysis.py`; document in `vvv_qmrf_ex_context.json` field `random_state: 42` | edited script + context.json |
-| 8.2 | F-RCA-05 + F-RCA-07 | Run full boundary audit on 120 v1.5 entries + 23 v1.6 stretch entries (max 143 entries). Write `data/phase8_boundary_audit_report.json` with `entries_audited: 143`, `violations: 0` (target) | new `phase8_boundary_audit_report.json` |
-| 8.3 | F-RCA-08 | Edit §13 line 631 to add historical snapshot qualifier: "K-effective 82.7% [43/52] at time of Phase 5; updated post-Phase 6 in phase5_coverage_report.json" | edited §13 |
-| 8.4 | F-RCA-10 | Edit §13 line 629 to add baseline qualifier: "Phase-4-baseline: 111 entries; Post-Phase 6: 120 entries" | edited §13 |
-| 8.5 | F-RCA-09 | Edit §5.2 expectation: "Top-N non-singleton communities map to BIAN; total count dominated by orphan BE nodes — not a quality metric" | edited §5.2 |
+| 8.1 | F-RCA-11 | ✅ DONE — NetworkX 3.3 has no supported `random_state` parameter for `greedy_modularity_communities`; fixed reproducibility by deterministic post-detection community ordering and recorded API boundary in context | edited `phase2_intersection_analysis.py` + `vvv_qmrf_ex_context.json` |
+| 8.2 | F-RCA-05 + F-RCA-07 | ✅ DONE — Full boundary audit report created for 143 entries (69 BR_EX_BE + 74 BR_EX_QM); result `entries_audited: 143`, `violations: 0`, `overall: PASS` | `data/phase8_boundary_audit_report.json` |
+| 8.3 | F-RCA-08 | ✅ DONE — Historical Phase 5 qualifier preserved in §13: K-effective 82.7% (43/52) at time of Phase 5; later JSON reflects post-Phase 6 state | edited §13 |
+| 8.4 | F-RCA-10 | ✅ DONE — Added baseline/current qualifier: Phase-4 baseline 111 entries; post-Phase 6 120 entries; post-Phase 7 143 entries | edited §13 |
+| 8.5 | F-RCA-09 | ✅ DONE — Updated §5.2 expectation: Top-N non-singleton communities map to BIAN; total count dominated by orphan BE nodes is not a quality metric | edited §5.2 |
 
 ### 14.5 Phase 9 — Full Re-run (immutable `_v1.6` snapshots)
 
