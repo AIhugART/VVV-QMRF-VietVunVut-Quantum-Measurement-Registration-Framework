@@ -8,7 +8,9 @@
     "phase4_date": "2026-05-20",
     "total_edges_phase4": 151,
     "br_ex_be_count": 37,
-    "br_ex_qm_count": 74
+    "br_ex_qm_count": 74,
+    "edge_count": 160,
+    "version": "0.6-phase6-expert"
   },
   "nodes": [
     {
@@ -4232,6 +4234,96 @@
       "br_ex_id": "BR_EX_QM_00074",
       "similarity": 0.0,
       "phase": "phase4"
+    },
+    {
+      "source": "N_BE_00013",
+      "target": "N_QM_VVV_00011",
+      "edge_type": "BR_EX_BE_NEW",
+      "bridge_id": "BR_EX_BE_00038",
+      "discovery_method": "phase6_expert_manual",
+      "similarity_score": 0.317,
+      "confidence": "medium",
+      "phase": "6"
+    },
+    {
+      "source": "N_BE_00001",
+      "target": "N_QM_VVV_00018",
+      "edge_type": "BR_EX_BE_NEW",
+      "bridge_id": "BR_EX_BE_00039",
+      "discovery_method": "phase6_expert_manual",
+      "similarity_score": 0.298,
+      "confidence": "medium",
+      "phase": "6"
+    },
+    {
+      "source": "N_BE_00052",
+      "target": "N_QM_VVV_00031",
+      "edge_type": "BR_EX_BE_NEW",
+      "bridge_id": "BR_EX_BE_00040",
+      "discovery_method": "phase6_expert_manual",
+      "similarity_score": 0.289,
+      "confidence": "medium-high",
+      "phase": "6"
+    },
+    {
+      "source": "N_BE_00006",
+      "target": "N_QM_VVV_00036",
+      "edge_type": "BR_EX_BE_NEW",
+      "bridge_id": "BR_EX_BE_00041",
+      "discovery_method": "phase6_expert_manual",
+      "similarity_score": 0.272,
+      "confidence": "medium",
+      "phase": "6"
+    },
+    {
+      "source": "N_BE_00009",
+      "target": "N_QM_VVV_00038",
+      "edge_type": "BR_EX_BE_NEW",
+      "bridge_id": "BR_EX_BE_00042",
+      "discovery_method": "phase6_expert_manual",
+      "similarity_score": 0.308,
+      "confidence": "high",
+      "phase": "6"
+    },
+    {
+      "source": "N_BE_00018",
+      "target": "N_QM_VVV_00043",
+      "edge_type": "BR_EX_BE_NEW",
+      "bridge_id": "BR_EX_BE_00043",
+      "discovery_method": "phase6_expert_manual",
+      "similarity_score": 0.348,
+      "confidence": "high",
+      "phase": "6"
+    },
+    {
+      "source": "N_BE_00086",
+      "target": "N_QM_VVV_00045",
+      "edge_type": "BR_EX_BE_NEW",
+      "bridge_id": "BR_EX_BE_00044",
+      "discovery_method": "phase6_expert_manual",
+      "similarity_score": 0.35,
+      "confidence": "medium-high",
+      "phase": "6"
+    },
+    {
+      "source": "N_BE_00008",
+      "target": "N_QM_VVV_00047",
+      "edge_type": "BR_EX_BE_NEW",
+      "bridge_id": "BR_EX_BE_00045",
+      "discovery_method": "phase6_expert_manual",
+      "similarity_score": 0.32,
+      "confidence": "high",
+      "phase": "6"
+    },
+    {
+      "source": "N_BE_00083",
+      "target": "N_QM_VVV_00050",
+      "edge_type": "BR_EX_BE_NEW",
+      "bridge_id": "BR_EX_BE_00046",
+      "discovery_method": "phase6_expert_manual",
+      "similarity_score": 0.285,
+      "confidence": "medium",
+      "phase": "6"
     }
   ]
 }

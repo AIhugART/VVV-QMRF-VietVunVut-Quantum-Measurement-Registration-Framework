@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_BE Registry — K-side Bridge: BE ↔ VVV-QMRF
 
-**Version:** 1.0 (Phase 4)
+**Version:** 2.0 (Phase 6)
 **Date:** 2026-05-20
-**Total Entries:** 37 (36 reference-copy + 1 new similarity candidates)
-**Namespace:** BR_EX_BE_00001–BR_EX_BE_00037
+**Total Entries:** 46 (36 reference-copy + 1 similarity candidate + 9 expert manual)
+**Namespace:** BR_EX_BE_00001–BR_EX_BE_00046
 
 ---
 
@@ -16,8 +16,9 @@ This registry maps Buddhist Epistemology (BE) nodes to VVV-QMRF nodes on the K-s
 | Entry Type | Count | Source |
 |-----------|-------|--------|
 | `reference_copy` | 36 | Phase 1 graph edges (VVV_TO_BE + DRAFT_BRIDGE_BE_VVV) |
-| `new_similarity_candidate` | 1 | Phase 3 cosine similarity (Tier2, cosine ≥ 0.50) |
-| **Total** | **37** | |
+| `new_similarity_candidate` | 1 | Phase 3 cosine similarity (Tier2, cosine >= 0.50) |
+| `expert_manual_mapping` | 9 | Phase 6 domain expert mapping (KE-PM resolution) |
+| **Total** | **46** | |
 
 **Direction convention:** Entries normalize to BE_node → VVV_node (K-side: BE anchors VVV).
 See `ex_schema_addendum.md §5` for F2 non-reversal policy.
@@ -753,16 +754,195 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **BR_EX_ID** | `BR_EX_BE_00037` |
 | **Type** | new_similarity_candidate |
 | **Source Edge Type** | `BR_EX_BE_NEW` |
-| **BE Node** | `` |
-| **BE Concept** |  |
-| **BE Layer** |  |
-| **VVV Node** | `` |
-| **VVV Concept** |  |
-| **Direction** |  →  |
+| **BE Node** | `N_BE_00086` |
+| **BE Concept** | Momentariness |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00051` |
+| **VVV Concept** | Temporal Discontinuity Doctrine / Moment-to-Moment Quantum Transition |
+| **Direction** | N_BE_00086 → N_QM_VVV_00051 |
 | **Relation Type** | conceptual_parallel |
 | **Claim Class** | interpretive_mapping |
-| **Confidence** | TBD (cosine=0.0000) |
-| **Boundary Note** | Similarity-based only (cosine ≥ 0.50); requires domain expert review before promotion. |
-| **Rationale** | BE concept has semantic structural parallel with VVV registration concept identified via Phase 3 embedding similarity |
-| **Origin** | Phase 3 similarity (Tier2) |
+| **Confidence** | 0.56 (cosine=0.564452) |
+| **Boundary Note** | Similarity-based only (cosine ≥ 0.50); requires domain expert review before promotion. N_BE_00086 is evidence-layer duplicate of core N_BE_00029 (already source_analogue via BR_EX_BE_00035). |
+| **Rationale** | BE evidence-layer Momentariness node has semantic structural parallel with VVV Temporal Discontinuity concept identified via Phase 3 embedding similarity (all-mpnet-base-v2, dim=768) |
+| **Origin** | Phase 3 similarity (Tier2) — F11 RCA fix (was ghost entry with empty fields) |
 
+### BR_EX_BE_00038 — Entry 38
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00038` |
+| **Type** | expert_manual_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00013` |
+| **BE Concept** | Particular / Unique mark (svalakṣaṇa) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00011` |
+| **VVV Concept** | Dual-Phase Registration Certification |
+| **Direction** | N_BE_00013 → N_QM_VVV_00011 |
+| **Relation Type** | structural_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.32 (cosine=0.317, expert-validated) |
+| **Boundary Note** | Structural analogy only. Svalakṣaṇa grounds the intrinsic triggering phase of dual-phase registration. Not identity claim. |
+| **Rationale** | Dual-phase registration formalizes the two-step epistemic act: (1) causal contact with svalakṣaṇa, (2) conceptual certification via sāmānyalakṣaṇa. Cross-validated via Dignāga PS I.3-4. |
+| **Origin** | Phase 6 expert mapping (KE-PM resolution) |
+
+### BR_EX_BE_00039 — Entry 39
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00039` |
+| **Type** | expert_manual_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00001` |
+| **BE Concept** | Valid cognition (pramāṇa) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00018` |
+| **VVV Concept** | Verification-Integrated Density Matrix Evolution |
+| **Direction** | N_BE_00001 → N_QM_VVV_00018 |
+| **Relation Type** | functional_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.30 (cosine=0.298, expert-validated) |
+| **Boundary Note** | Functional analogy: pramāṇa as self-verifying cognition (svataḥ-prāmāṇya) parallels verification-integrated evolution. |
+| **Rationale** | Verification-integrated density matrix evolution models simultaneous evolution and validation; maps to pramāṇa as non-deceptive cognition (avisamvādi) in Dharmakīrti PV I. |
+| **Origin** | Phase 6 expert mapping (KE-PM resolution) |
+
+### BR_EX_BE_00040 — Entry 40
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00040` |
+| **Type** | expert_manual_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00052` |
+| **BE Concept** | Pramā (veridical cognition) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00031` |
+| **VVV Concept** | Registration Weight / Hierarchical Reliability |
+| **Direction** | N_BE_00052 → N_QM_VVV_00031 |
+| **Relation Type** | structural_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.29 (cosine=0.289, expert-validated medium-high) |
+| **Boundary Note** | Structural analogy: registration weight formalizes the graded epistemic authority (prāmāṇya) hierarchy: pratyakṣa > anumāna > śabda. |
+| **Rationale** | Registration weight quantifies epistemic reliability; directly maps to pramā as the graded outcome of pramāṇa with degrees of epistemic authority. |
+| **Origin** | Phase 6 expert mapping (KE-PM resolution) |
+
+### BR_EX_BE_00041 — Entry 41
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00041` |
+| **Type** | expert_manual_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00006` |
+| **BE Concept** | Erroneous cognition (viparyaya) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00036` |
+| **VVV Concept** | Null Registering-System Event |
+| **Direction** | N_BE_00006 → N_QM_VVV_00036 |
+| **Relation Type** | functional_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.27 (cosine=0.272, expert-validated) |
+| **Boundary Note** | Functional analogy: null registration = system present but no valid output. Maps to viparyaya as cognitive failure mode per Dharmakīrti PV III. |
+| **Rationale** | Null registering-system event = apparatus present but producing no valid output; maps to viparyaya as the failure mode of the pramāṇa instrument. |
+| **Origin** | Phase 6 expert mapping (KE-PM resolution) |
+
+### BR_EX_BE_00042 — Entry 42
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00042` |
+| **Type** | expert_manual_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00009` |
+| **BE Concept** | Non-conceptual perception (nirvikalpaka pratyakṣa) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00038` |
+| **VVV Concept** | Measured-but-Unregistered K-State |
+| **Direction** | N_BE_00009 → N_QM_VVV_00038 |
+| **Relation Type** | structural_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.31 (cosine=0.308, expert-validated high) |
+| **Boundary Note** | Structural analogy: measured-but-unregistered = causal contact without conceptual registration. Maps to nirvikalpaka pratyakṣa (bare perception before kalpanā overlay). |
+| **Rationale** | Physical interaction occurred but no epistemic registration resulted; maps to nirvikalpaka pratyakṣa: sensory contact (kalpanā-apoḍha) not yet conceptualized. Phase 3 also found ρ-match (N_QM_00022, 0.530). |
+| **Origin** | Phase 6 expert mapping (KE-PM resolution) |
+
+### BR_EX_BE_00043 — Entry 43
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00043` |
+| **Type** | expert_manual_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00018` |
+| **BE Concept** | Triple-condition syllogism (trairūpya) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00043` |
+| **VVV Concept** | Trairūpya Apparatus Validity Conditions |
+| **Direction** | N_BE_00018 → N_QM_VVV_00043 |
+| **Relation Type** | terminological_identity |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.35 (cosine=0.348, expert-validated high — terminological match) |
+| **Boundary Note** | Direct terminological identity: VVV trairūpya re-interprets Dignāga's Hetucakra triple-condition (pakṣa-dharmatva, anvaya, vyatireka) as apparatus validity conditions. |
+| **Rationale** | Trairūpya in VVV formalizes the same triple-condition from Dignāga's PS. VVV re-interprets as apparatus validity for quantum registration. Strongest conceptual link among Phase 6 mappings. |
+| **Origin** | Phase 6 expert mapping (KE-PM resolution) |
+
+### BR_EX_BE_00044 — Entry 44
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00044` |
+| **Type** | expert_manual_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00086` |
+| **BE Concept** | Momentariness (kṣaṇabhaṅga) |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00045` |
+| **VVV Concept** | Pre-Symbolic Event ε(M) |
+| **Direction** | N_BE_00086 → N_QM_VVV_00045 |
+| **Relation Type** | structural_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.35 (cosine=0.350, expert-validated medium-high) |
+| **Boundary Note** | Structural analogy: ε(M) = raw pre-symbolic event before mathematical registration; kṣaṇabhaṅga = momentary particular before conceptualization. Both share pre-conceptual + fleeting structure. |
+| **Rationale** | Pre-symbolic event ε(M) maps to kṣaṇabhaṅga: the momentary svalakṣaṇa that exists for exactly one kṣaṇa before conceptual overlay. |
+| **Origin** | Phase 6 expert mapping (KE-PM resolution) |
+
+### BR_EX_BE_00045 — Entry 45
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00045` |
+| **Type** | expert_manual_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00008` |
+| **BE Concept** | Conceptual construction (kalpanā/vikalpa) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00047` |
+| **VVV Concept** | Degree of Symbolization |
+| **Direction** | N_BE_00008 → N_QM_VVV_00047 |
+| **Relation Type** | functional_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.32 (cosine=0.320, expert-validated high) |
+| **Boundary Note** | Functional analogy: symbolization degree quantifies the nirvikalpaka→savikalpaka spectrum. Dignāga's binary is generalized to continuous [0,1] measure. |
+| **Rationale** | Degree of symbolization = amount of conceptual overlay on a registration event. Directly maps to kalpanā/vikalpa as conceptual construction. Degree 0 = nirvikalpaka, degree 1 = full savikalpaka. |
+| **Origin** | Phase 6 expert mapping (KE-PM resolution) |
+
+### BR_EX_BE_00046 — Entry 46
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00046` |
+| **Type** | expert_manual_mapping |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00083` |
+| **BE Concept** | Samādhi (meditative concentration) |
+| **BE Layer** | evidence |
+| **VVV Node** | `N_QM_VVV_00050` |
+| **VVV Concept** | Non-Ordinary Valid Registration Output |
+| **Direction** | N_BE_00083 → N_QM_VVV_00050 |
+| **Relation Type** | functional_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.29 (cosine=0.285, expert-validated) |
+| **Boundary Note** | Functional analogy: samādhi is the epistemic precondition enabling yogipratyakṣa; non-ordinary registration output is the formal result of yogipratyakṣa-class registration. |
+| **Rationale** | Non-ordinary valid registration = yogipratyakṣa output. Samādhi is the necessary condition per Dharmakīrti PV III.281-286. Parent N_QM_VVV_00048 already mapped. |
+| **Origin** | Phase 6 expert mapping (KE-PM resolution) |

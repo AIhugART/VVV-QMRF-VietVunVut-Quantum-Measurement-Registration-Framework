@@ -1492,16 +1492,17 @@ This registry maps VVV-QMRF nodes to Quantum Measurement (QM) nodes on the ρ-si
 | **BR_EX_ID** | `BR_EX_QM_00074` |
 | **Type** | new_similarity_candidate |
 | **Source Edge Type** | `BR_EX_QM_NEW` |
-| **VVV Node** | `` |
-| **VVV Concept** |  |
-| **QM Node** | `` |
-| **QM Concept** |  |
-| **QM Layer** |  |
-| **Direction** |  →  |
+| **VVV Node** | `N_QM_VVV_00051` |
+| **VVV Concept** | Temporal Discontinuity Doctrine / Moment-to-Moment Quantum Transition |
+| **QM Node** | `N_QM_00037` |
+| **QM Concept** | Continuous Measurement: Quantum Jump Case |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00051 → N_QM_00037 |
 | **Relation Type** | physical_substrate_for |
 | **Claim Class** | interpretive_mapping |
-| **Confidence** | TBD (cosine=0.0000) |
-| **Boundary Note** | Similarity-based only (cosine ≥ 0.50); not verified against QM formalism. |
-| **Rationale** | QM concept identified as potential physical substrate via Phase 3 cosine similarity (candidate — requires expert validation) |
-| **Origin** | Phase 3 similarity (Tier2) |
+| **Confidence** | 0.61 (cosine=0.613741) |
+| **Boundary Note** | Similarity-based only (cosine ≥ 0.50); not verified against QM formalism. N_QM_VVV_00051 already anchored to N_QM_00042 (Quantum Jump Operator) — this adds secondary ρ-side substrate. |
+| **Rationale** | QM concept identified as potential physical substrate via Phase 3 cosine similarity — Continuous Measurement quantum jump formalism provides secondary ρ-side grounding for VVV temporal discontinuity concept (all-mpnet-base-v2, dim=768) |
+| **Origin** | Phase 3 similarity (Tier2) — F12 RCA fix (was ghost entry with empty fields) |
+
 
