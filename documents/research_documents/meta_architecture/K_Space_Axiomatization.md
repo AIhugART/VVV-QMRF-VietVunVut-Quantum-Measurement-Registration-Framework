@@ -87,6 +87,13 @@ Cert admission rule:
   The cert ∈ {0,1} range is retained for the admission-filtering boundary:
   events with cert = 0 are NOT admitted into K_R (admission failure outside K_R scope).
 
+  ⚠ Structural-constant clarification (PG-01):
+  Within K_R, cert is effectively a structural constant: cert(k) = 1 for ALL k ∈ K_R
+  by the admission rule above. The declaration cert ∈ {0,1} does NOT imply cert can
+  take value 0 inside K_R — it records the type of the field at the boundary. The
+  discriminating role of cert (filtering cert=0 events) is exercised at the K_R
+  admission boundary, not inside K_R. Once k is inside K_R, cert(k)=1 is invariant.
+
 K_R is produced by registering system R over time.
 K_R is finite or countably infinite (discrete sequence of registration events).
 ```
@@ -331,6 +338,16 @@ Non-transitivity proof sketch (counterexample):
   Scope: this counterexample proves non-transitivity across distinct C_K contexts
   (C_K ≠ C_K'). It does not claim non-transitivity within a single shared C_K.
 
+  ⚠ Intra-C_K transitivity and K5 invalidation chains (PG-07):
+  Even if Auth is transitive within a single shared C_K — i.e., Auth(k2→k1, C_K)=1
+  and Auth(k3→k2, C_K)=1 could in principle yield Auth(k3→k1, C_K)=1 — this does
+  NOT enable transitive K5 invalidation chains. K5 requires an INDEPENDENT ⊥_K
+  relation for each pair: V(k1)→0 requires Auth(k2→k1, C_K)=1 checked atomically
+  at the moment of invalidation. The transitivity of Auth within C_K provides no
+  shortcut: k3 cannot void k1 merely because k3 has authority over k2 and k2 has
+  authority over k1. Each K5 invalidation step is an independent check; no chain
+  propagation is implied by Auth transitivity alone.
+
   Physical intuition: Authority is context-bound. Two different D_joint demands
   create two different comparison scopes. Transitivity would require a single
   C_K containing all three events with overlapping scope — which is not
@@ -418,6 +435,17 @@ or any cross-space structure):
         of V under the embedding operation. A framework without K8
         (or an equivalent postulate) cannot guarantee that embedded
         registration acts retain their validity status.
+
+        Counter-model (K4 holds, K8 fails):
+          Let K_F = { k_F } with V_F(k_F) = 1 (K4 satisfied at
+          native instantiation in K_F).
+          Define embedding i: K_F → K_joint where the embedding
+          operation assigns V_joint(i(k_F)) = 0 (validity dropped
+          on transfer).
+          K4 is satisfied in K_F: cert(k_F) = 1 ∧ ¬isNull(k_F)
+          → V_F(k_F) = 1.  ✓
+          K8 fails: V_joint(i(k_F)) ≠ V_F(k_F).  ✗
+          Therefore K4 ⊬ K8. K8 is an independent postulate. □
 ```
 
 | Property | Value |
@@ -523,37 +551,41 @@ F7b timing guard:
   input without creating a timing inversion between T2 and K7.
 
 Note: K5 conflict is a SUFFICIENT condition for AdmJoint failure,
-NOT a necessary condition. AdmJoint may fail for other reasons
-(e.g., embedding structure fails conditions (i)-(iii) or (v);
- D_joint is ill-posed for the given K-spaces; K7 closure has
- already locked one K-space preventing reconfiguration).
+NOT a necessary condition. AdmJoint may fail for other reasons.
+
+Non-K5 failure example (K7 lock path):
+  Suppose K_A has already closed at t_close(K_A) before D_joint is raised.
+  A new D_joint(K_A, K_B) demands joint registration involving K_A.
+  K7 post-closure property (a): no new k can be instantiated in K_A after t_close.
+  → Embedding i_A: K_A → K_joint cannot satisfy AdmJoint condition (i) for the
+    new acts demanded by D_joint (they cannot exist in closed K_A).
+  → AdmJoint = 0 via K7 lock, with NO K5 contradiction required.
+  → ⊥_K(K_A, K_B) holds via T2 (⊥_K iff requires_K_joint=1 ∧ ¬∃admissible K_joint),
+    but the failure path is K7 closure, not K5 registered contradiction.
 In such cases, ⊥_K may still hold, but the derivation trace
 differs from the T2 K5-conflict path shown above.
 
-⚠ CIRCULARITY ACKNOWLEDGMENT:
+⚠ TEMPORAL DEPENDENCY ACKNOWLEDGMENT:
   T2 derives ⊥_K (incommensurability) from K5 conflict.
   K5 uses ⊥ (registered contradiction) as a primitive predicate.
   The MINIMAL operational definition of ⊥ is given in K5 (Layer 1).
   The FULL formalization of ⊥ conditions is in Level 4 (paper v2.0 §4.4),
-  which is itself defined in terms of "registered contradiction" —
-  a concept whose precise boundary clauses are NOT yet frozen.
+  whose precise boundary clauses are NOT yet frozen.
 
-  Status of the circularity:
-    - K5's minimal ⊥ definition (Layer 1) is self-contained:
-      it defines ⊥ as "registration contents cannot both be treated
-      as valid K-side claims within the same C_K." This is NOT circular.
-    - v1.3 CONCRETE MODEL FINDING: Circularity does NOT arise in the
+  This is a TEMPORAL DEPENDENCY, not a logical circularity:
+    - K5's minimal ⊥ definition (Layer 1) is self-contained and NOT circular.
+    - T2 needs Level 4 full ⊥ boundary clauses to complete its derivation in
+      the general case. Level 4 is not yet frozen — this is an incompleteness,
+      not a self-referential loop.
+    - v1.3 CONCRETE MODEL FINDING: The dependency does NOT arise in the
       concrete model (§7.5 Step 4) — K5 minimal ⊥ is directly verifiable
       by content inspection (|h⟩ vs |Ψ+⟩) without invoking Level 4 full ⊥.
-    - The circularity only appears in the GENERAL case where T2 needs
-      AdmJoint conditions that reference full ⊥ — and even there it is
-      a dependency-ordering issue (Level 4 not frozen), not a logical circle.
+    - In the general case: T2 derivation is CONDITIONAL on Level 4 ⊥
+      boundary clauses being a conservative extension of K5 minimal ⊥
+      (adding scope, not contradicting it). This is a temporal dependency
+      that resolves when Level 4 freezes — it is not a logical circle.
     - Resolution path: freeze Level 4 ⊥ boundary clauses independently
-      of T2, then T2's derivation becomes non-circular.
-    - Until Level 4 freeze: T2 is CONDITIONAL on Level 4 ⊥ definition.
-      T2's conclusion (⊥_K) is valid IF the Level 4 ⊥ formalization
-      is consistent with K5's minimal definition. This is a reasonable
-      assumption but NOT a proven fact.
+      of T2. T2's derivation is then complete without any circularity.
 ```
 
 Boundary clauses (from paper v2.0 §4.4):
@@ -875,7 +907,7 @@ K_W = { k_W }     where k_W = ⟨M_W, |Ψ+⟩, 1, t_W, 1⟩
 | **K4** (Default V) | cert(k_F) = 1 → V(k_F) = 1 upon instantiation. k_F is non-null (o_F = \|h⟩ ≠ ∅). No E9 exception applies. | cert(k_W) = 1 → V(k_W) = 1 upon instantiation. k_W is non-null (o_W = \|Ψ+⟩ ≠ ∅). No E9 exception applies. | ✅ Both satisfy K4 |
 | **K5** (Invalidation) | No k' ∈ K_F with k_F <_F k'. K_F has only one element. No invalidation possible within K_F. V(k_F) remains 1. | No k' ∈ K_W with k_W <_W k'. K_W has only one element. No invalidation possible within K_W. V(k_W) remains 1. | ✅ K5 vacuously satisfied (no later event exists in either K-space) |
 | **K6** (Authority) | No pair within K_F to check authority. Vacuously satisfied. | No pair within K_W to check authority. Vacuously satisfied. | ✅ Vacuously satisfied |
-| **K7** (Closure) | No pending requires_K_joint involving K_F → K_F closes at t_close = t_F. V_prov(k_F) = 1 → V_final(k_F) = 1. | No pending requires_K_joint involving K_W → K_W closes at t_close = t_W. V_prov(k_W) = 1 → V_final(k_W) = 1. **BUT: see §7.3 — requires_K_joint may be pending, preventing closure.** | ⚠ Conditional — depends on D_joint status (Level 4) |
+| **K7** (Closure) | ⚠ Closure BLOCKED: requires_K_joint(F,W) = 1 is established in §7.3 (Condition A). K7 precondition `pending(K_F, K_W) = ∅` is NOT met until D_joint is resolved. V_prov(k_F) = 1 (provisional only). V_final NOT yet assigned. | ⚠ Same as K_F: closure BLOCKED pending D_joint resolution. V_prov(k_W) = 1 (provisional only). V_final NOT yet assigned. | ⚠ Closure blocked for both K_F and K_W until §7.3 D_joint resolves — K7 working as designed. |
 | **K8** (Embedding) | Intra-K-space: k_F has no embedding to check (K_F is native). Vacuously satisfied. | Intra-K-space: k_W has no embedding to check (K_W is native). Vacuously satisfied. **Tested in K_joint context at L4-7 below.** | ✅ Vacuously satisfied intra-K-space; tested cross-space in §7.3 |
 
 **K1-K8 intra-K-space consistency verdict:**
@@ -1224,8 +1256,11 @@ Following the 5-step methodology:
 | 11 | RCA re-audit after community feedback | After Level 4 freeze and T1-T3 finalization | High |
 | 12 | K6 Auth non-transitivity edge cases (circular authority chains) | **Resolved v1.2** — counterexample provided in K6 formal block. Remaining: N≥3 exotic topologies. | Low |
 | 13 | Embedding Postulate (EP) promotion decision | **Resolved v1.4** — EP promoted to K8 (Cross-Space Embedding Preservation). K8 is now a frozen Layer 1 core axiom. T1-T3 no longer depend on an external postulate for V-preservation. | ~~High~~ → Resolved |
-| 14 | T2 circularity resolution — Level 4 ⊥ freeze | T2 derivation is conditional on Level 4 ⊥ formalization being consistent with K5 minimal definition. Circularity resolves when Level 4 freezes. **v1.3 update:** Circularity NOT present in concrete model (§7.5 Step 4) — K5 minimal ⊥ is directly verifiable by content inspection (|h⟩ vs |Ψ+⟩). Circularity remains only in general case. **v1.4/Phase 2 update:** T2 also documented as K7 Dep-B (F6b + F7b): T2's AdmJoint(iv) operates on V_prov during pre-closure admissibility testing; resolved-demand outcomes (AdmJoint=1 or AdmJoint=0 → ⊥_K) supply K7 closure semantics. This is a Layer 2 (updatable) dependency — K1-K8 unchanged. | **High** |
+| 14 | T2 temporal dependency — Level 4 ⊥ freeze | T2 derivation is conditional on Level 4 ⊥ formalization being consistent with K5 minimal definition. This is a TEMPORAL DEPENDENCY (incompleteness), not a logical circularity — relabeled in v1.5 RCA. **v1.3 update:** Dependency NOT present in concrete model (§7.5 Step 4) — K5 minimal ⊥ is directly verifiable by content inspection (|h⟩ vs |Ψ+⟩). Dependency remains only in general case (arbitrary |K_R|, N observers). **v1.4/Phase 2 update:** T2 also documented as K7 Dep-B (F6b + F7b): T2's AdmJoint(iv) operates on V_prov during pre-closure admissibility testing; resolved-demand outcomes (AdmJoint=1 or AdmJoint=0 → ⊥_K) supply K7 closure semantics. This is a Layer 2 (updatable) dependency — K1-K8 unchanged. Resolves when Level 4 ⊥ boundary clauses are frozen. | **High** |
 | 15 | Concrete model gaps G1-G3 (§7.4) | G1 (Relativization): framework-level semantic commitment required by this formulation of D_joint. G2 (K7 closure): working as designed. G3 (Level 4 ⊥): see #14. All gaps are external dependencies, not internal contradictions. **v1.4:** Former EP gap resolved by K8. Renumbered G1-G4 → G1-G3. **Phase 2 note:** Dep-A (C_K existence precondition, Level 4 §4.3) and Dep-B (T1 `<_joint>` ordering from K2+K8) are satisfied dependencies in the concrete model (§7.5 Steps 3, 6 — both SOLID ✅ HIGH confidence) — not open gaps. Documented in K5/K6/K7 Dependency rows. | Medium |
+| 16 | `RegistrationState(t)` undefined primitive in K2 Discreteness | **Resolved v1.5 RCA (RC-02)** — `RegistrationState: T_R → (K_R ∪ {∅})` formally defined inline in K2 formal block. Well-definedness guaranteed by K2 strict total order (at most one k per distinct t). | ~~Medium~~ → Resolved |
+| 17 | K8 non-redundancy with K4 — no counter-model or proof sketch | **Resolved v1.5 RCA (PG-02)** — Counter-model added to K8 §(iv): K_F = {k_F, V_F=1}, embedding i assigns V_joint(i(k_F))=0 → K4 satisfied, K8 fails → K4 ⊬ K8. | ~~Medium~~ → Resolved |
+| 18 | §3.3 Operational Bridge semantic dependency on K4-K7 untracked | §3.3 lists 7 operational bridge mappings (σ, V, ⊥, Auth, D_joint, requires_K_joint, C_K) but does not annotate which K-axioms each bridge depends on semantically. If K4-K7 definitions change, §3.3 bridge semantics shift without visible traceability. Add dependency annotations to §3.3 bridge rows. | Medium |
 
 ---
 
