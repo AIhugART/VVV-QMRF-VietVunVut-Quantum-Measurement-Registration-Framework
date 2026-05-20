@@ -1,5 +1,6 @@
 {
   "phase": "6-expert-mapping",
+  "snapshot_phase": "phase6_frozen",
   "date": "2026-05-20",
   "method": "domain_expert_manual_mapping",
   "input_nodes": 9,

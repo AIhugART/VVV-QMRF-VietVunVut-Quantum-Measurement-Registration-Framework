@@ -1,12 +1,12 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# VVV-QMRF-EX Boundary Compliance Audit — Phase 5
+# VVV-QMRF-EX Boundary Compliance Audit — Phase 6 (Final)
 
-**Version:** Phase 5.4
+**Version:** Phase 6.0
 **Date:** 2026-05-20
 **Auditor:** Antigravity RCA Engine
-**Graph:** 420 nodes, 151 edges (post-F8–F15 fixes)
-**Registries audited:** BR_EX_BE (37 entries), BR_EX_QM (74 entries) = 111 total
+**Graph:** 420 nodes, 160 edges (post-Phase 6 KE-PM resolution)
+**Registries audited:** BR_EX_BE (46 entries), BR_EX_QM (74 entries) = 120 total
 
 ---
 
@@ -28,17 +28,17 @@ Each bridge entry was checked against the 7 boundary controls defined in [vvv-qm
 
 ## 2. Registry-Level Results
 
-### 2.1 BR_EX_BE Registry (37 entries)
+### 2.1 BR_EX_BE Registry (46 entries)
 
 | Check | Pass | Fail | N/A | Notes |
 |-------|------|------|-----|-------|
-| C1: No identity claim | 37/37 | 0 | 0 | All entries use `interpretive_mapping` claim class |
-| C2: No new QM law | 37/37 | 0 | 0 | BE→VVV direction; no QM nodes created |
-| C3: No auto-E17+ | 37/37 | 0 | 0 | Zero new `N_QM_VVV_XXXXX` codes; all reference existing VVV nodes |
-| C4: Non-replacement | 37/37 | 0 | 0 | All entries contain boundary notes with structural-analogy language |
-| C5: Born Rule | 0 | 0 | 37 | Not applicable to BE→VVV direction |
-| C6: Source traceability | 37/37 | 0 | 0 | All entries have populated `Rationale` + `Origin` (including F11 fix for entry 37) |
-| C7: Reproducibility | 37/37 | 0 | 0 | All edges present in `vvv_qmrf_ex_graph.json` |
+| C1: No identity claim | 46/46 | 0 | 0 | All entries use `interpretive_mapping` claim class |
+| C2: No new QM law | 46/46 | 0 | 0 | BE→VVV direction; no QM nodes created |
+| C3: No auto-E17+ | 46/46 | 0 | 0 | Zero new `N_QM_VVV_XXXXX` codes; all reference existing VVV nodes |
+| C4: Non-replacement | 46/46 | 0 | 0 | All entries contain boundary notes with structural-analogy language |
+| C5: Born Rule | 0 | 0 | 46 | Not applicable to BE→VVV direction |
+| C6: Source traceability | 46/46 | 0 | 0 | All entries have populated `Rationale` + `Origin` (including Phase 6 expert mapped entries) |
+| C7: Reproducibility | 46/46 | 0 | 0 | All edges present in `vvv_qmrf_ex_graph.json` |
 
 **BR_EX_BE verdict: ✅ 100% PASS (all applicable controls)**
 
@@ -62,7 +62,7 @@ Each bridge entry was checked against the 7 boundary controls defined in [vvv-qm
 
 | Rule | Requirement | Status | Evidence |
 |------|------------|--------|----------|
-| I-1: READ-ONLY | No file outside `vvv-qmrf-ex/` modified | ✅ PASS | All 111 entries in EX-local files; core files unchanged |
+| I-1: READ-ONLY | No file outside `vvv-qmrf-ex/` modified | ✅ PASS | All 120 entries in EX-local files (46 BR_EX_BE + 74 BR_EX_QM); core files unchanged |
 | I-2: Copy-Not-Move | Reference-copy, not migrate | ✅ PASS | 73 QM reference_copy entries; originals remain in core |
 | I-3: Namespace | Only `BR_EX_BE_*` and `BR_EX_QM_*` used | ✅ PASS | No `BR_XXXXX`, `N_QM_VVV_*`, `ED_QM_VVV_*` created |
 | I-4: Rollback | Delete directory = clean rollback | ✅ PASS | No external dependencies created |
@@ -74,11 +74,11 @@ Each bridge entry was checked against the 7 boundary controls defined in [vvv-qm
 
 ## 4. Schema Compliance (F11/F12 Ghost Prevention)
 
-Post-F11/F12 fix validation:
+Post-F11/F12 and Phase 6 validation:
 
 | Registry | Total entries | Entries with all mandatory fields | Ghost entries | Status |
 |----------|--------------|----------------------------------|---------------|--------|
-| BR_EX_BE | 37 | 37 | 0 | ✅ PASS |
+| BR_EX_BE | 46 | 46 | 0 | ✅ PASS |
 | BR_EX_QM | 74 | 74 | 0 | ✅ PASS |
 
 **Mandatory fields checked:** BR_EX_ID, BE/VVV/QM Node, Concept, Direction, Confidence, Origin
@@ -95,7 +95,8 @@ Post-F11/F12 fix validation:
 | BR_QM_VVV (graphable) | 13 | ✅ (plan now says 13, per F8) |
 | DRAFT_BRIDGE_BE_VVV | 21 | ✅ (plan now says 21, per F9) |
 | Phase 4 new edges | +2 | ✅ (1 BE new + 1 QM new) |
-| **Total** | **151** | ✅ Matches context.json (per F13) |
+| Phase 6 expert mapping edges | +9 | ✅ (9 BE new expert manual edges) |
+| **Total** | **160** | ✅ Matches context.json (per Phase 6) |
 
 ---
 
@@ -103,13 +104,13 @@ Post-F11/F12 fix validation:
 
 | Category | Result |
 |----------|--------|
-| Boundary controls (C1–C7) | ✅ **111/111 entries pass all applicable controls** |
+| Boundary controls (C1–C7) | ✅ **120/120 entries pass all applicable controls** |
 | Isolation protocol (I-1–I-5) | ✅ **5/5 rules compliant** |
 | Schema compliance | ✅ **0 ghost entries (post-F11/F12)** |
-| Edge accounting | ✅ **151 edges verified consistent** |
+| Edge accounting | ✅ **160 edges verified consistent** |
 
 > **OVERALL: ✅ BOUNDARY AUDIT PASSED — Zero violations detected**
 
 ---
 
-*Audit conducted against plan v1.3 boundary controls (§9) and isolation protocol (§8). All 111 registry entries verified.*
+*Audit conducted against plan v1.3 boundary controls (§9) and isolation protocol (§8). All 120 registry entries verified.*

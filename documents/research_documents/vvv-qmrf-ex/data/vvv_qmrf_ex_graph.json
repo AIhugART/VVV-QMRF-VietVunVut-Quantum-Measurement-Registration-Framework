@@ -4216,23 +4216,23 @@
       "key": 0
     },
     {
-      "source": "",
-      "target": "",
+      "source": "N_BE_00086",
+      "target": "N_QM_VVV_00051",
       "edge_type": "BR_EX_BE",
       "relation": "conceptual_parallel",
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_BE_00037",
-      "similarity": 0.0,
+      "similarity": 0.5645,
       "phase": "phase4"
     },
     {
-      "source": "",
-      "target": "",
+      "source": "N_QM_VVV_00051",
+      "target": "N_QM_00037",
       "edge_type": "BR_EX_QM",
       "relation": "physical_substrate_for",
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_QM_00074",
-      "similarity": 0.0,
+      "similarity": 0.6137,
       "phase": "phase4"
     },
     {

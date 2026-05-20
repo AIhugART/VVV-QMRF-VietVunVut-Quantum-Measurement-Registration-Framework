@@ -218,13 +218,13 @@ existing_be_vvv_set = {(p["be_node"], p["vvv_node"]) for p in be_vvv_pairs}
 new_br_ex_be_graph_edges = []
 
 for cand in be_vvv_candidates:
-    be_node  = cand.get("be_node", "")
-    vvv_node = cand.get("vvv_node", "")
+    be_node  = cand.get("row_node", "")
+    vvv_node = cand.get("col_node", "")
     if (be_node, vvv_node) in existing_be_vvv_set:
         continue
     meta = BE_VVV_META["BR_EX_BE_NEW"]
     relation_type, claim_class, boundary, rationale, _ = meta
-    sim = cand.get("similarity", 0.0)
+    sim = cand.get("score", 0.0)
     br_id = f"BR_EX_BE_{br_ex_be_counter:05d}"
 
     be_concept  = concept_map.get(be_node, be_node)
@@ -309,13 +309,13 @@ existing_vvv_qm_set = {(p["vvv_node"], p["qm_node"]) for p in vvv_qm_pairs}
 new_br_ex_qm_graph_edges = []
 
 for cand in vvv_qm_candidates:
-    vvv_node = cand.get("vvv_node", "")
-    qm_node  = cand.get("qm_node", "")
+    vvv_node = cand.get("row_node", "")
+    qm_node  = cand.get("col_node", "")
     if (vvv_node, qm_node) in existing_vvv_qm_set:
         continue
     meta = VVV_QM_META["BR_EX_QM_NEW"]
     relation_type, claim_class, boundary, rationale, _ = meta
-    sim = cand.get("similarity", 0.0)
+    sim = cand.get("score", 0.0)
     br_id = f"BR_EX_QM_{br_ex_qm_counter:05d}"
 
     vvv_concept = concept_map.get(vvv_node, vvv_node)

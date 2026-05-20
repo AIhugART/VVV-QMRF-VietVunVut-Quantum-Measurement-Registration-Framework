@@ -390,6 +390,7 @@ with open(ctx_path, 'r', encoding='utf-8') as f:
 
 context['version'] = '0.6-phase6-expert'
 context['edge_count'] = len(graph_data['edges'])
+context['graph']['edge_count'] = len(graph_data['edges'])  # F-RCA-02 fix: sync nested edge_count
 if '6-expert-mapping' not in context['phases_complete']:
     context['phases_complete'].append('6-expert-mapping')
 context['phase6_results'] = {

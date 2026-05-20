@@ -1,5 +1,6 @@
 {
   "phase": "3-similarity-search",
+  "snapshot_phase": "phase3_frozen",
   "date": "2026-05-20",
   "model": "sentence-transformers/all-mpnet-base-v2",
   "embedding_dim": 768,

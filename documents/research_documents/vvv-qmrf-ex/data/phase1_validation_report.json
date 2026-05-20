@@ -1,4 +1,7 @@
 {
+  "phase": "1-graph-construction",
+  "snapshot_phase": "phase1_frozen",
+  "date": "2026-05-20",
   "total_nodes": 420,
   "be_nodes": 263,
   "vvv_nodes": 52,

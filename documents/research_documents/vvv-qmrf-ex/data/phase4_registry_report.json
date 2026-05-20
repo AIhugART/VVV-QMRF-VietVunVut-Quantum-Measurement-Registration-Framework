@@ -1,5 +1,6 @@
 {
   "phase": "phase4_bridge_registry",
+  "snapshot_phase": "phase4_frozen",
   "date": "2026-05-20",
   "graph_nodes": 420,
   "graph_edges_pre_p4": 149,

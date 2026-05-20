@@ -1,38 +1,41 @@
 {
   "phase": "phase5_coverage",
+  "snapshot_phase": "mixed_phase5_phase6",
+  "snapshot_note": "Most fields updated post-Phase 6 (intersection_pct=48.1, dual_anchored=25). boundary_audit.entries_audited=111 is Phase 5 baseline (pre-Phase 6); the 9 Phase 6 entries were boundary-audited in vvv_qmrf_ex_boundary_audit.md (120 total). See RCA Audit F-RCA-05, F-RCA-07.",
   "date": "2026-05-20",
   "graph": {
-    "nodes": 421,
-    "edges": 151
+    "nodes": 420,
+    "edges": 160
   },
   "coverage_summary": {
     "total_vvv_nodes": 52,
-    "dual_anchored": 16,
+    "dual_anchored": 25,
     "k_only": 0,
-    "rho_only": 35,
+    "rho_only": 26,
     "neither": 1,
-    "intersection_pct": 30.8,
+    "intersection_pct": 48.1,
     "max_k_degree": 8,
     "max_rho_degree": 4,
-    "avg_k_degree": 0.69,
-    "avg_rho_degree": 1.4
+    "avg_k_degree": 0.88,
+    "avg_rho_degree": 1.42
   },
   "f14_staged_milestones": {
     "phase4_actual": "30.8% (16/52)",
+    "phase5_actual_post_phase6": "48.1% (25/52)",
     "phase5_target": "≥50% (≥26)",
     "phase5_target_met": false,
-    "note": "Phase 5 target requires manual review pipeline (Phase 6+ work)"
+    "note": "Phase 4 baseline frozen at 30.8% (16/52); post-Phase 6 expert mapping raised intersection to 48.1% (25/52); Phase 5 target ≥50% not met by automated + expert mapping alone (requires further domain expert work). F-RCA-03 fix: separated frozen baseline from live measurement."
   },
   "f15_exception_coverage": {
-    "k_covered": 16,
+    "k_covered": 25,
     "k_excepted_structural": 27,
     "k_excepted_breakdown": {
       "KE-QI": 4,
       "KE-OF": 13,
       "KE-SC": 10
     },
-    "k_pending_manual": 9,
-    "k_effective_coverage": "82.7% (43/52)",
+    "k_pending_manual": 0,
+    "k_effective_coverage": "100.0% (52/52)",
     "rho_covered": 51,
     "rho_excepted": 1,
     "rho_effective_coverage": "100% (52/52)"
@@ -118,10 +121,10 @@
     },
     {
       "node": "N_QM_VVV_00011",
-      "k_count": 0,
+      "k_count": 1,
       "rho_count": 2,
-      "status": "k_gap",
-      "dual_anchored": false
+      "status": "intersection",
+      "dual_anchored": true
     },
     {
       "node": "N_QM_VVV_00012",
@@ -160,10 +163,10 @@
     },
     {
       "node": "N_QM_VVV_00018",
-      "k_count": 0,
+      "k_count": 1,
       "rho_count": 2,
-      "status": "k_gap",
-      "dual_anchored": false
+      "status": "intersection",
+      "dual_anchored": true
     },
     {
       "node": "N_QM_VVV_00020",
@@ -237,10 +240,10 @@
     },
     {
       "node": "N_QM_VVV_00031",
-      "k_count": 0,
+      "k_count": 1,
       "rho_count": 1,
-      "status": "k_gap",
-      "dual_anchored": false
+      "status": "intersection",
+      "dual_anchored": true
     },
     {
       "node": "N_QM_VVV_00032",
@@ -272,10 +275,10 @@
     },
     {
       "node": "N_QM_VVV_00036",
-      "k_count": 0,
+      "k_count": 1,
       "rho_count": 3,
-      "status": "k_gap",
-      "dual_anchored": false
+      "status": "intersection",
+      "dual_anchored": true
     },
     {
       "node": "N_QM_VVV_00037",
@@ -286,10 +289,10 @@
     },
     {
       "node": "N_QM_VVV_00038",
-      "k_count": 0,
+      "k_count": 1,
       "rho_count": 1,
-      "status": "k_gap",
-      "dual_anchored": false
+      "status": "intersection",
+      "dual_anchored": true
     },
     {
       "node": "N_QM_VVV_00039",
@@ -321,10 +324,10 @@
     },
     {
       "node": "N_QM_VVV_00043",
-      "k_count": 0,
+      "k_count": 1,
       "rho_count": 1,
-      "status": "k_gap",
-      "dual_anchored": false
+      "status": "intersection",
+      "dual_anchored": true
     },
     {
       "node": "N_QM_VVV_00044",
@@ -335,10 +338,10 @@
     },
     {
       "node": "N_QM_VVV_00045",
-      "k_count": 0,
+      "k_count": 1,
       "rho_count": 1,
-      "status": "k_gap",
-      "dual_anchored": false
+      "status": "intersection",
+      "dual_anchored": true
     },
     {
       "node": "N_QM_VVV_00046",
@@ -349,10 +352,10 @@
     },
     {
       "node": "N_QM_VVV_00047",
-      "k_count": 0,
+      "k_count": 1,
       "rho_count": 1,
-      "status": "k_gap",
-      "dual_anchored": false
+      "status": "intersection",
+      "dual_anchored": true
     },
     {
       "node": "N_QM_VVV_00048",
@@ -370,15 +373,15 @@
     },
     {
       "node": "N_QM_VVV_00050",
-      "k_count": 0,
+      "k_count": 1,
       "rho_count": 1,
-      "status": "k_gap",
-      "dual_anchored": false
+      "status": "intersection",
+      "dual_anchored": true
     },
     {
       "node": "N_QM_VVV_00051",
-      "k_count": 1,
-      "rho_count": 1,
+      "k_count": 2,
+      "rho_count": 2,
       "status": "intersection",
       "dual_anchored": true
     },

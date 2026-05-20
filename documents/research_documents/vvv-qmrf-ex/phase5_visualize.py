@@ -9,6 +9,7 @@ Requirements: networkx, matplotlib, numpy, pandas
 
 import json
 import os
+import sys
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')  # Non-interactive backend
@@ -16,6 +17,10 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from matplotlib.gridspec import GridSpec
 import networkx as nx
+
+# Force UTF-8 console output on Windows
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 # --- Configuration ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -54,10 +59,36 @@ be_nodes = [n for n in G.nodes() if n.startswith('N_BE_')]
 vvv_nodes = [n for n in G.nodes() if n.startswith('N_QM_VVV_')]
 qm_nodes = [n for n in G.nodes() if n.startswith('N_QM_') and not n.startswith('N_QM_VVV_')]
 
-intersection_nodes = set(p4_report['intersection_p4']['intersection_nodes'])
-k_gap_nodes = set(p4_report['intersection_p4']['k_gap_nodes'])
-rho_gap_nodes = set(p4_report['intersection_p4']['rho_gap_nodes'])
-both_gap_nodes = set(p4_report['intersection_p4']['both_gap_nodes'])
+# Dynamically compute intersection and gap nodes from G
+K_SIDE_P4   = {"VVV_TO_BE", "DRAFT_BRIDGE_BE_VVV", "BR_EX_BE", "BR_EX_BE_NEW"}
+RHO_SIDE_P4 = {"VVV_TO_QM", "BR_QM_VVV", "BR_EX_QM", "BR_EX_QM_NEW"}
+
+intersection_nodes = set()
+k_gap_nodes = set()
+rho_gap_nodes = set()
+both_gap_nodes = set()
+
+for node in vvv_nodes:
+    k = 0
+    rho = 0
+    for u, v, data in G.edges(data=True):
+        if u == node or v == node:
+            target = v if u == node else u
+            etype = data.get('edge_type', '')
+            if etype in K_SIDE_P4:
+                k += 1
+            elif etype in RHO_SIDE_P4:
+                rho += 1
+
+    if k > 0 and rho > 0:
+        intersection_nodes.add(node)
+    else:
+        if k == 0:
+            k_gap_nodes.add(node)
+        if rho == 0:
+            rho_gap_nodes.add(node)
+        if k == 0 and rho == 0:
+            both_gap_nodes.add(node)
 
 print(f"[Phase 5] BE: {len(be_nodes)}, VVV: {len(vvv_nodes)}, QM: {len(qm_nodes)}")
 print(f"[Phase 5] Intersection: {len(intersection_nodes)}, K-gaps: {len(k_gap_nodes)}, rho-gaps: {len(rho_gap_nodes)}")
@@ -156,7 +187,7 @@ ax.text(4, 5.8, 'QM Standard Layer\n(105 nodes)', fontsize=14, fontweight='bold'
         color='#ff6b6b', ha='center', va='bottom', fontfamily='monospace')
 
 # Title
-ax.set_title('VVV-QMRF-EX Tripartite Graph — K-side ↔ VVV ↔ ρ-side\n420 nodes · 151 edges · 16 intersection nodes',
+ax.set_title(f'VVV-QMRF-EX Tripartite Graph — K-side ↔ VVV ↔ ρ-side\n{G.number_of_nodes()} nodes · {G.number_of_edges()} edges · {len(intersection_nodes)} intersection nodes',
              fontsize=18, fontweight='bold', color='white', pad=20, fontfamily='monospace')
 
 # Legend
@@ -306,7 +337,7 @@ p5_target_met = total_dual >= 26  # ≥50% = ≥26 nodes
 
 # F15 exception check
 k_excepted = 27  # KE-QI(4) + KE-OF(13) + KE-SC(10)
-k_pending = 9   # KE-PM
+k_pending = max(0, 52 - total_dual - k_excepted)   # KE-PM (initially 9, resolved to 0 post-Phase 6)
 k_effective = total_dual + k_excepted
 k_effective_pct = k_effective / 52 * 100
 
@@ -375,8 +406,11 @@ print(f"[Step 5.3] ✅ Coverage report saved: {report_path}")
 # =============================================================================
 print("\n[Step 5.5] Updating context with Phase 5 data...")
 
-context['version'] = '0.5-phase5-final'
-context['phases_complete'].append('5-visualization-validation')
+# Keep current version if it's already higher or phase6
+if 'version' not in context or not context['version'].startswith('0.6'):
+    context['version'] = '0.5-phase5-final'
+if '5-visualization-validation' not in context.get('phases_complete', []):
+    context['phases_complete'].append('5-visualization-validation')
 context['phase5_results'] = {
     'intersection_pct': round(p4_pct, 1),
     'k_effective_coverage_pct': round(k_effective_pct, 1),
