@@ -124,6 +124,10 @@ For all k1, k2 ∈ K_R:
   be the same registration event (identity by timestamp within K_R).
 
 Discreteness (S2-Δ lemma):
+  Define: RegistrationState: T_R → (K_R ∪ {∅})
+          RegistrationState(t) = k    if ∃k ∈ K_R with t(k) = t
+          RegistrationState(t) = ∅    otherwise
+  (Well-defined: K2 strict total order ensures at most one k per distinct t in K_R.)
   For any consecutive pair k_i, k_{i+1} ∈ K_R with no k' such that k_i <_R k' <_R k_{i+1}:
     ∀t ∈ (t(k_i), t(k_{i+1})),  RegistrationState(t) = ∅
 ```
@@ -174,22 +178,21 @@ Reflexivity (E1 core property):
 ### AXIOM K4 — Default Validity / Tính hợp lệ Mặc định
 
 **Statement:**
-> For any k ∈ K_R with cert(k) = 1, the validity status V(k) = 1 upon instantiation of k in K_R. Validity is the default state of a self-certified registration event; it does not require external confirmation.
+> For any k ∈ K_R with cert(k) = 1 and ¬isNull(k), the validity status V(k) = 1 upon instantiation of k in K_R. Validity is the default state of a self-certified non-null registration event; it does not require external confirmation.
 
 **Formal:**
 ```
-For all k ∈ K_R:
+isNull(k) :=  o(k) = ∅  ∧  ΔI(k) = 0
+              (E9 null event: interaction occurred but zero information transfer)
+
+For all k ∈ K_R with ¬isNull(k):
   cert(k) = 1  →  V(k) = 1  (upon instantiation of k in K_R)
 
-Exception — E9 null registration event:
-  For k_null ∈ K_R where:
-    o(k_null) = ∅  (no registered outcome)
-    ΔI(k_null) = 0 (null interaction — interaction occurred but zero information transfer)
-  cert(k_null) = 1  (self-certified: interaction occurred)
-  V(k_null) = 0     (by definition of null event, not by K5 invalidation)
-
-  This overrides the default rule K4. Null events are self-certified
-  (interaction occurred) but carry zero outcome information → V = 0.
+E9 null registration event — covered by isNull guard:
+  For k_null ∈ K_R with isNull(k_null):
+    cert(k_null) = 1  (self-certified: interaction occurred)
+    V(k_null) = 0     (by definition: zero outcome information → V = 0)
+  The isNull guard excludes k_null from the rule above — no conflict, no override.
 
 Default rule:
   For non-null k: V(k) starts at 1. No external act is required to establish V(k) = 1.
@@ -204,8 +207,8 @@ Provision: V(k) = 1 is provisional until the registration process closes
 | **BE lineage** | Svataḥ prāmāṇya — intrinsic validity: a cognition is valid by default in virtue of its occurrence (arthakriyā — causal efficacy) |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E7 Axiom 1). No Level 4 dependency. |
-| **Boundary** | V(k) = 1 is default K-side registration validity for non-null events. It does NOT mean the physical outcome is correct, does NOT mean the Born-rule probability was calculated correctly, and is NOT absolute metaphysical truth. It only means: within K_R, this registration event is treated as valid until contradicted. The E9 exception (null events: cert=1, V=0) is consistent with self-certification logic: σ_R(M) certifies occurrence, not outcome validity. A null event certifies "interaction occurred" but its outcome is ∅ (zero information) → V=0 by definition, not by K5 contradiction. The provisional/final distinction is formalized in K7 (Closure Axiom). |
-| **Consistency** | K4 is consistent with E7 Axiom 1. K4 works with K3: only self-certified events (cert=1) get default validity. Events that fail admission (cert=0) have no validity status defined by this axiom. K4 + exception clause is compatible with E9: null events are self-certified (interaction occurred) but carry V=0 because outcome information is ∅/zero — the exception does not break the default rule for non-null events. |
+| **Boundary** | V(k) = 1 is default K-side registration validity for non-null events. It does NOT mean the physical outcome is correct, does NOT mean the Born-rule probability was calculated correctly, and is NOT absolute metaphysical truth. It only means: within K_R, this registration event is treated as valid until contradicted. The isNull guard (o=∅ ∧ ΔI=0) excludes E9 null events from the `cert=1 → V=1` rule — no override is needed. A null event certifies "interaction occurred" but its outcome is ∅ (zero information) → V=0 by definition, not by K5 contradiction. The provisional/final distinction is formalized in K7 (Closure Axiom). |
+| **Consistency** | K4 is consistent with E7 Axiom 1. K4 works with K3: only self-certified events (cert=1) get default validity. Events that fail admission (cert=0) have no validity status defined by this axiom. K4 + isNull guard is compatible with E9: null events are self-certified (interaction occurred) but carry V=0 because outcome information is ∅/zero — the isNull guard excludes them from the `cert=1 → V=1` rule without contradiction. K4 + K3 together: cert=1 (K3 intrinsic) ∧ ¬isNull(k) → V=1 (K4 default). |
 
 ### AXIOM K5 — Invalidation / Vô hiệu hóa
 
@@ -428,20 +431,22 @@ or any cross-space structure):
 
 ### Layer 1 Summary / Tổng kết Tầng 1
 
-| Axiom | Content | Fields covered | Source level | Freeze status | Level 4 dependency |
-|---|---|---|---|---|---|
-| K1 | Carrier set — K_R is a set of 5-field tuples | M, o, cert, t, V | Level 3 | Frozen | None |
-| K2 | Temporal order — strict total order (chain) within K_R, discrete | t (ordering) | Level 2 | Frozen | None |
-| K3 | Self-certification — σ_R(M) intrinsic to R | cert | Level 2 | Frozen | None |
-| K4 | Default validity — V=1 on instantiation (with E9 exception) | V (default) | Level 2 | Frozen | None |
-| K5 | Invalidation — V→0 by later ⊥ with authority; minimal ⊥ definition included | V (transition) | Level 2 | Frozen | C_K roles: (1) existential precondition — K5 fires only when C_K exists (requires_K_joint = 1); (2) ⊥ evaluation parameter (condition ii); (3) Auth evaluation parameter (condition iii) |
-| K6 | Cross-registration authority — structural relation within C_K, non-hierarchical | V (authority condition) | Level 2 | Frozen | C_K roles: (1) existential precondition for all Auth checks; (2) C_K-sphere membership parameter (condition a); (3) D_joint scope parameter (condition c) |
-| K7 | Registration process closure — V_prov → V_final, absolute irreversibility | V (closure) | Level 2 | Frozen | Uses requires_K_joint for pending check only |
-| K8 | Cross-space embedding preservation — V preserved at embedding time; fields preserved | V (embedding) + M, o, cert, t | Level 3 | Frozen | None |
+| Axiom | Content | Fields covered | Source level | Freeze status | Level 4 dependency | Layer 2 theorem dep. (semantic) |
+|---|---|---|---|---|---|---|
+| K1 | Carrier set — K_R is a set of 5-field tuples | M, o, cert, t, V | Level 3 | Frozen | None | None |
+| K2 | Temporal order — strict total order (chain) within K_R, discrete; RegistrationState defined | t (ordering) | Level 2 | Frozen | None | None |
+| K3 | Self-certification — σ_R(M) intrinsic to R | cert | Level 2 | Frozen | None | None |
+| K4 | Default validity — V=1 on instantiation for ¬isNull(k); E9 covered by isNull guard (no override) | V (default) | Level 2 | Frozen | None | None |
+| K5 | Invalidation — V→0 by later ⊥ with authority; minimal ⊥ definition included | V (transition) | Level 2 | Frozen (syntactic) | C_K roles: (1) existential precondition — K5 fires only when C_K exists (requires_K_joint = 1); (2) ⊥ evaluation parameter (condition ii); (3) Auth evaluation parameter (condition iii) | **T1** (Dep-B): `<_joint` ordering used by K5 inside K_joint is constructed by T1; K5 applied only after T1 candidate K_joint exists |
+| K6 | Cross-registration authority — structural relation within C_K, non-hierarchical | V (authority condition) | Level 2 | Frozen (syntactic) | C_K roles: (1) existential precondition for all Auth checks; (2) C_K-sphere membership parameter (condition a); (3) D_joint scope parameter (condition c) | None direct |
+| K7 | Registration process closure — V_prov → V_final, absolute irreversibility | V (closure) | Level 2 | Frozen (syntactic) | Uses requires_K_joint for pending check only | **T2** (Dep-B): "resolved demand" semantics (when pending = ∅) requires T2 AdmJoint resolution definition; K7 closure timing depends on T2 |
+| K8 | Cross-space embedding preservation — V preserved at embedding time; fields preserved | V (embedding) + M, o, cert, t | Level 3 | Frozen | None | None |
 
 **Dependency isolation:** K1-K8 depend ONLY on Level 0-3 (BE SOT, K≠H, E1-E7, K-state tuple). Where K5-K7 reference Level 4 concepts (C_K, D_joint, requires_K_joint), they reference them for **scope identification only** (e.g., "is k1 in the same C_K as k2?"), not for their internal structure or definition.
 
 **Syntactic freeze (unconditional):** K1-K8 text is frozen. If paper v2.0 community feedback changes the internal structure of AdmJoint, K1-K8 do not change — AdmJoint appears only in bridge theorems T1-T4, not in any K1-K8 axiom text.
+
+**Layer 2 semantic dependencies (K5, K7):** "Frozen (syntactic)" means the axiom TEXT is frozen. The SEMANTIC BEHAVIOR of K5 (when it fires via `<_joint`) and K7 (when closure occurs via "resolved demand") depends on Layer 2 theorems T1 and T2 respectively. If T1 or T2 are updated (pending Level 4 freeze), K5/K7 semantics may shift even though K5/K7 text does not change. This is an application-order dependency (T1/T2 supply inputs K5/K7 consume), not a logical circularity. K1-K4 and K8 carry no Layer 2 semantic dependencies.
 
 **Semantic dependency for ⊥_K (conditional):** K5 minimal ⊥ definition provides K5-local operational closure. However, Level 4 §4.4 boundary clauses ("not null event", "not invalid when both sides independently valid") narrow K5 minimal ⊥ and constitute a real semantic dependency: if these boundary clauses change, K5 fires in a different set of cases even though K5 text is unchanged. The syntactic freeze guarantee holds unconditionally; the semantic behavior guarantee for K5 is conditional on Level 4 ⊥ boundary clauses remaining a conservative extension of K5 minimal ⊥ (adding scope, not contradicting it). Only bridge theorems T1-T3 need updating for structural Level 4 changes.
 
@@ -744,18 +749,23 @@ Number of pairwise checks for N observers:
 
 **Question for each axiom:** Is the axiom consistent with its BE structural source?
 
-| Axiom | BE source | BE claim | K-space instantiation | Consistency |
-|---|---|---|---|---|
-| **K1** | Pramāṇa (cognition as structured event) | A cognition (pramāṇa) has: act, object (prameya), self-awareness (svasaṃvedana), result (phala) | K-state tuple has: M (act), o (object/outcome), cert (self-awareness marker), t (temporal index), V (validity/result status) | **Consistent — 5-field tuple maps onto pramāṇa structure** |
-| **K2** | Kṣaṇabhaṅgavāda (momentariness) | Cognition is momentary; no enduring cognitive substance between moments | Registration time is discrete; no K-side identity between consecutive events (Δ lemma) | **Consistent — discrete order matches momentariness without claiming physical time is discrete** |
-| **K3** | Svasaṃvedana (self-awareness) | A cognition is self-aware; it illuminates both object and itself without a second cognition | σ_R(M) determined intrinsically within K_R; no M' required | **Consistent — intrinsic certification matches self-awareness** |
-| **K4** | Svataḥ prāmāṇya (intrinsic validity) | Validity is intrinsic to cognition; it is the default, not something added by verification | V(k)=1 upon instantiation; no external act required to establish validity | **Consistent — default validity matches intrinsic validity** |
-| **K5** | Parataḥ prāmāṇya + Bādhaka pramāṇa | Invalidity is detected extrinsically; a contradicting later cognition (bādhaka) voids the earlier one | V(k)→0 only by later k' with ⊥ and authority; asymmetry: no external function restores V=1 | **Consistent — extrinsic invalidation matches bādhaka structure; asymmetry matches parataḥ** |
-| **K6** | Bādhaka pramāṇa | A contradicting cognition must itself be valid to serve as a defeater; an invalid cognition cannot void another cognition | Cross-registration authority requires a valid later registration within the relevant shared C_K; invalid or out-of-scope registrations cannot invalidate k1 | **Consistent — authority condition preserves bādhaka validity requirement** |
-| **K7** | Niścaya (ascertainment/determination) | Cognition becomes determinate when the cognitive process reaches closure; before closure, doubt or revision remains possible | Closure converts V_prov to V_final only after pending requires_K_joint demands are resolved | **Consistent — closure formalizes ascertainment without denying provisional pre-closure status** |
-| **K8** | Anugama (continuity/attendant relation) | A cognition retains its epistemic status when taken up in a broader cognitive context | Embedding preserves M, o, cert, t, and initial V at embedding time, while still allowing later validity dynamics | **Consistent — embedding preserves epistemic continuity without claiming immunity from later invalidation** |
+**SOT verification scope:** K1–K3 BE concepts are directly traceable to `system_be_full.md` (N_BE_00001, N_BE_00029/N_BE_00087, N_BE_00011). K4–K8 BE concepts (Svataḥ prāmāṇya, Parataḥ prāmāṇya, Bādhaka pramāṇa, Niścaya, Anugama) are authentic Dharmakīrti-tradition vocabulary but do **not** appear in `system_be_full.md`. Consistency for K4–K8 is assessed as scholarly structural analogy, not SOT-derived verification. Per §6 Non-Overclaim Guardrail #8: "BE sources are structural lineage, NOT proof."
 
-**BE lineage audit verdict: 8/8 PASS. Zero inconsistencies between K-space axioms and BE structural sources. Each core axiom K1-K8 preserves the "structural extraction, not identity" boundary.**
+| Axiom | BE source | BE claim | K-space instantiation | Consistency | SOT status |
+|---|---|---|---|---|---|
+| **K1** | Pramāṇa (cognition as structured event) | A cognition (pramāṇa) has: act, object (prameya), self-awareness (svasaṃvedana), result (phala) | K-state tuple has: M (act), o (object/outcome), cert (self-awareness marker), t (temporal index), V (validity/result status) | **Consistent — 5-field tuple maps onto pramāṇa structure** | ✅ SOT-verifiable: N_BE_00001 |
+| **K2** | Kṣaṇabhaṅgavāda (momentariness) | Cognition is momentary; no enduring cognitive substance between moments | Registration time is discrete; no K-side identity between consecutive events (Δ lemma) | **Consistent — discrete order matches momentariness without claiming physical time is discrete** | ✅ SOT-verifiable: N_BE_00029, N_BE_00087 |
+| **K3** | Svasaṃvedana (self-awareness) | A cognition is self-aware; it illuminates both object and itself without a second cognition | σ_R(M) determined intrinsically within K_R; no M' required | **Consistent — intrinsic certification matches self-awareness** | ✅ SOT-verifiable: N_BE_00011 (Sva-saṃvitti) |
+| **K4** | Svataḥ prāmāṇya (intrinsic validity) | Validity is intrinsic to cognition; it is the default, not something added by verification | V(k)=1 upon instantiation for ¬isNull(k); no external act required | **Structurally consistent — default validity matches intrinsic validity** | ⚠ Not in SOT; Prāmāṇyavāda category (N_BE_00134) is closest; scholarly annotation |
+| **K5** | Parataḥ prāmāṇya + Bādhaka pramāṇa | Invalidity is detected extrinsically; a contradicting later cognition (bādhaka) voids the earlier one | V(k)→0 only by later k' with ⊥ and authority; asymmetry: no external function restores V=1 | **Structurally consistent — extrinsic invalidation matches bādhaka structure; asymmetry matches parataḥ** | ⚠ Not in SOT; scholarly annotation from Dharmakīrti tradition |
+| **K6** | Bādhaka pramāṇa | A contradicting cognition must itself be valid to serve as a defeater; an invalid cognition cannot void another cognition | Cross-registration authority requires a valid later registration within the relevant shared C_K; invalid or out-of-scope registrations cannot invalidate k1 | **Structurally consistent — authority condition preserves bādhaka validity requirement** | ⚠ Not in SOT; scholarly annotation from Dharmakīrti tradition |
+| **K7** | Niścaya (ascertainment/determination) | Cognition becomes determinate when the cognitive process reaches closure; before closure, doubt or revision remains possible | Closure converts V_prov to V_final only after pending requires_K_joint demands are resolved | **Structurally consistent — closure formalizes ascertainment without denying provisional pre-closure status** | ⚠ Not in SOT; scholarly annotation from Dharmakīrti tradition |
+| **K8** | Anugama (continuity/attendant relation) | A cognition retains its epistemic status when taken up in a broader cognitive context | Embedding preserves M, o, cert, t, and initial V at embedding time, while still allowing later validity dynamics | **Structurally consistent — embedding preserves epistemic continuity without claiming immunity from later invalidation** | ⚠ Not in SOT; scholarly annotation (broader Sanskrit philosophical vocabulary) |
+
+**BE lineage audit verdict (revised):**
+- **K1, K2, K3: SOT-VERIFIED** — BE structural sources directly traceable to `system_be_full.md`. Zero inconsistencies.
+- **K4–K8: STRUCTURALLY CONSISTENT (UNVERIFIABLE FROM SOT)** — BE concepts (Svataḥ prāmāṇya, Parataḥ prāmāṇya, Bādhaka pramāṇa, Niścaya, Anugama) are not present in `system_be_full.md`. Structural analogy is well-motivated by Dharmakīrti scholarship, but cannot be confirmed against the declared single source of truth. No inconsistency is found, but SOT-based verification is not possible for K4–K8.
+- **Overall:** 3/8 SOT-verifiable; 5/8 scholarly annotation. Zero inconsistencies found. "Structural extraction, not identity" boundary preserved throughout.
 
 ---
 
@@ -769,7 +779,7 @@ Number of pairwise checks for N observers:
 | **C2 (Admission)** | X admitted into K-side as M_X for R | k ∈ K_R with M = M_X. Admission = instantiation of k in K_R. By K1 cert admission rule: cert(k)=1 for all k ∈ K_R. | **K1: k ∈ K_R, cert(k)=1** |
 | **C3 (Process membership)** | M_X ∈ R where R = {M_R1, M_R2, ...} | k ∈ K_R, t(k) in the temporal order of K_R. | **K1 + K2: k ∈ K_R with t(k) ordered** |
 | **C4 (Self-certification)** | σ_R(M_X) = 1, determined intrinsically | cert(k) = σ_R(M_X) = 1, determined within K_R. | **K3: cert(k) = σ_R(M)** |
-| **C5 (Default validity)** | V(M_X) = 1 by default | V(k) = 1 upon instantiation (unless k is null event — K4 exception). | **K4: cert=1 → V=1 (with E9 exception)** |
+| **C5 (Default validity)** | V(M_X) = 1 by default | V(k) = 1 upon instantiation for ¬isNull(k) (K4 isNull guard excludes E9 null events; no override). | **K4: cert=1 ∧ ¬isNull(k) → V=1** |
 | **C6 (Non-invalidation)** | No later M' contradicts M_X with authority | No k' > k with k' ⊥ k and Auth(k'→k, C_K)=1 → V(k) stays 1. Pre-closure: provisional. Post-closure (K7): final. | **K5 + K6 + K7** |
 
 **Six-condition test verdict: 5/5 K-side conditions derivable from K1-K8. C1 is ρ-side — correctly outside K-space scope.**
@@ -783,7 +793,7 @@ Number of pairwise checks for N observers:
 | C-KAXIOM-001 | K_R is a set of 5-field K-state tuples (K1) | Class C formal definition | This document §1, K1 | High | Not a Hilbert space; not a physical state space |
 | C-KAXIOM-002 | (K_R, <_R) is a strict total order (chain) with discrete registration-time (K2) | Class D proposed | This document §1, K2; E6; S2-Δ | High | Registration-time only; not physical time. Total within K_R; partial only in cross-K-space (K_joint). |
 | C-KAXIOM-003 | σ_R(M) is determined intrinsically within K_R (K3) | Class D proposed | This document §1, K3; E1 | High | Certifies occurrence, not truth of outcome |
-| C-KAXIOM-004 | V(k)=1 by default for self-certified events (K4) | Class D proposed | This document §1, K4; E7 Axiom 1 | High | Default K-side validity, not absolute truth |
+| C-KAXIOM-004 | V(k)=1 by default for self-certified non-null events; isNull(k) guard covers E9 null events (K4) | Class D proposed | This document §1, K4; E7 Axiom 1 | High | Default K-side validity for ¬isNull(k); not absolute truth |
 | C-KAXIOM-005 | V(k)→0 iff later contradicting act with authority (K5) | Class D proposed | This document §1, K5; E7 Axioms 2-3 | High | Registration-layer only; not physical erasure |
 | C-KAXIOM-006 | K_joint exists as colimit of embedding diagram (T1) | Class D proposed | This document §2, T1; paper v2.0 §4.3 | Medium — pending Level 4 freeze | Candidate K_joint, not guaranteed admissible |
 | C-KAXIOM-007 | ⊥_K derivable from K1-K5 + AdmJoint failure (T2) | Class D proposed | This document §2, T2; paper v2.0 §4.4 | Medium — pending Level 4 freeze | Registration-layer incommensurability only |
