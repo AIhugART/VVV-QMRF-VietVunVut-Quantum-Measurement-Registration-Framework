@@ -872,7 +872,7 @@ Step 7.0 (candidate pool)         ─┘                  │
 | 11.5 | Patch `phase4_graph_sync.py` with reclassified-entry filter list | edited helper |
 | 11.6 | Re-run Phase 9 chain with `VVV_QMRF_EX_SUFFIX="_v1.7"` — produces `_v1.7.json` immutable snapshots without overwriting `_v1.6` baselines | 6 new JSONs + 2 PNGs |
 | 11.7 | Generate `phase4_registry_report_v1.7.json` manually (per F-RCA-12 A.1+ workaround) | manual JSON |
-| 11.8 | Re-audit boundary on 140 entries → `phase8_boundary_audit_report_v1.7.json` | new audit JSON |
+| 11.8 | Re-audit boundary on 140 entries → `phase8_boundary_audit_report_v1.7.json` | `data/phase8_boundary_audit_report_v1.7.json` — ✅ DONE (2026-05-21) |
 | 11.9 | Write `reviews/rca_plan_v1.7_completion_audit.md` | new audit doc |
 | 11.10 | Doc sync (header bumps, changelog appends) across plan/intersection/gaps/boundary_audit/rca_checkpoint/inventory/effectiveness/context | edited 8 files |
 
