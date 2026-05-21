@@ -59,6 +59,10 @@ def parse_registry(md_path, kind):
         etype = type_m.group(1).strip() if type_m else "unknown"
         if etype == "reference_copy":
             continue
+        # v1.7: skip reclassified entries (no longer active in current graph)
+        if "RECLASSIFIED" in etype:
+            print(f"[SKIP-v1.7] {eid} — type={etype}")
+            continue
         if kind == "BE":
             src = re.search(r"\*\*BE Node\*\*\s*\|\s*`(N_BE_\d+)`", section)
             tgt = re.search(r"\*\*VVV Node\*\*\s*\|\s*`(N_QM_VVV_\d+)`", section)

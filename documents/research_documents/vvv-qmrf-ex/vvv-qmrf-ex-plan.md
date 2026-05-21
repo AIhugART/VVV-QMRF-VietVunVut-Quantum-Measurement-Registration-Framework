@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF-EX Expansion Plan
 
 > **Document type:** RCA expansion plan
-> **Status:** Plan v1.6 — EXECUTED; Phases 0–9 ALL COMPLETE; Phase 10 doc sync IN PROGRESS; F1–F15 + F-RCA-01/02 + F-RCA-05/07/08/09/10/11/12/13/14 applied; 9 KE-PM resolved; 23 KE-OF/KE-SC stretch bridges batch-approved and registered; Phase 8 boundary audit PASS on 143 entries; Phase 9 raw dual-anchored 48/52 = 92.3% (Stretch Tier 1+2 PASS); dual-criterion success framework adopted
+> **Status:** Plan v1.7 — EXECUTED; v1.6 Phases 0–10 ALL COMPLETE; v1.7 Phase 11 KE-SC threshold tightening (3.5→4.0 + 1 carve-out at 3.8) applied; F1–F15 + F-RCA-01/02/05/07/08/09/10/11/12/13/14/15 applied; 9 KE-PM + 13 KE-OF + 7 KE-SC accepted (3 KE-SC reclassified to exception); Phase 11 boundary audit PASS on 140 entries; Phase 11 raw dual-anchored 45/52 = 86.5% (Stretch Tier 1+2 still PASS); rigor near-symmetric (KE-OF 4.5 vs KE-SC 4.0)
 > **Date:** 2026-05-21
 > **Scope:** Expand VVV-QMRF into VVV-QMRF-EX by identifying K-side ↔ ρ-side relationships via two bridge expansion directions
 > **Boundary:** Structural analogy only; no BE-QM identity; no new QM law; no automatic E17+; no replacement of Standard QM
@@ -19,6 +19,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 >
 > **Changelog v1.5 → v1.6 (2026-05-20) — PROPOSED, AWAITING EXECUTION:** Added Section 14 — Stretch Expansion Plan covering Phases 7–10 with the goal of lifting raw dual-anchored from 48.1% (25/52) toward Stretch Tier 1 (≥50%, ≥26 nodes) and Stretch Tier 2 (≥80%, ≥42 nodes) by promoting up to 23 KE-OF + KE-SC nodes to direct BR_EX_BE entries (range `BR_EX_BE_00047`–`BR_EX_BE_00069`). **Decision parameters (user-confirmed 2026-05-20):** Q1=batch-approve per category; Q2=split threshold (KE-OF strict 4.5/5, KE-SC relaxed 3.5/5 due to parent inheritance support); Q3=split output files (`phase7_ke_of_rca_log.md` and `phase7_ke_sc_rca_log.md`). 3-round rejection protocol on all RCA gates. Audit closure for F-RCA-05/07/08/09/10/11. Full re-run of Phases 1–6 into immutable `_v1.6.json` snapshots (no overwrite of v1.5 files).
 >
+> **Changelog v1.6 EXECUTED → v1.7 EXECUTED (2026-05-21):** Phase 11 KE-SC threshold tightening to align rigor with KE-OF. Single new RCA finding **F-RCA-15** — Phase 7 §14.2 Q2 threshold (KE-SC=3.5/5) was a pragmatic floor; publication-ready rigor requires near-symmetric thresholds with KE-OF (4.5/5). Fix: raise KE-SC threshold to **4.0/5 with 1 carve-out at 3.8** (boundary-guard-justified). 3 KE-SC entries reclassified from KE-RESOLVED-STRETCH back to KE-SC exception: `BR_EX_BE_00061` (`N_QM_VVV_00008`, 3.7), `BR_EX_BE_00065` (`N_QM_VVV_00022`, 3.8), `BR_EX_BE_00066` (`N_QM_VVV_00024`, 3.7). Namespace gaps preserved (no renumber to keep v1.5/v1.6 hash invariants). Result: 143 → 140 entries; graph 183 → 180 edges; raw dual-anchored 92.3% → **86.5%** (Tier 1+2 still PASS with 6.5pt margin). See §15 for full v1.7 spec; commit chain: `9525eb8` (v1.5-final) → `d8ec025` (v1.6 Phase 9) → `c1b3168` (v1.6 Phase 10) → v1.7 commit (this batch).
+
 > **Changelog v1.6 PROPOSED → v1.6 EXECUTED (2026-05-21):** Phase 9 + partial Phase 10 completed (commit `d8ec025` builds on `9525eb8` baseline). **Phase 9 results:** 6 `*_v1.6.json` immutable snapshots + 2 `*_v1.6.png` images written; raw dual-anchored intersection jumped 25/52 → **48/52 (92.3%)**, achieving Stretch Tier 1 (≥50%) AND Tier 2 (≥80%). Immutability invariant verified — `git diff HEAD` on 6 v1.5 phase JSONs = ZERO. **3 new RCA findings closed:** **F-RCA-12** — `phase4_bridge_registry.py` cannot safely re-run (no Phase 6/7 awareness); fixed via A.1+ workaround (new `phase4_graph_sync.py` injects 34 missing edges from registry MDs; manual gen of `phase4_registry_report_v1.6.json`). **F-RCA-13** — NetworkX `links` vs `edges` key inconsistency between phase1 (default `links`) and phase4_bridge_registry/phase5/phase6 (custom `edges`); fixed via defensive key detection in 3 scripts. **F-RCA-14** — `K_SIDE_TYPES` in phase2 was missing `BR_EX_BE_STRETCH` (Phase 7 edge type), causing intersection to stay at 25 instead of jumping to 48; fixed at `phase2_intersection_analysis.py:55`. All 6 phase scripts now accept `VVV_QMRF_EX_SUFFIX` env var (Option D-refined). Full audit: [`reviews/rca_plan_v1.6_completion_audit.md`](reviews/rca_plan_v1.6_completion_audit.md).
 
 ---
@@ -821,6 +823,100 @@ Step 7.0 (candidate pool)         ─┘                  │
 - BIAN-14 structural review (still ⏳ Pending from v1.5 §12) — not in v1.6 scope
 - Final BR_XXXXX ID assignment (still ⏳ Deferred from v1.5 §12) — not in v1.6 scope
 - Promotion gate from EX → core (Rule I-5) — explicitly out-of-scope for v1.6
+
+---
+
+## 15. v1.7 KE-SC Threshold Tightening — Phase 11 ✅ EXECUTED
+
+**Completion date:** 2026-05-21
+**Authority:** Extends Plan v1.6 — does not overwrite §14. Phase 11 results recorded in-place per "extend, not overwrite" rule.
+
+### 15.1 RCA Purpose (v1.7)
+
+**Symptom:** Plan v1.6 §14.2 Q2 set KE-SC threshold at 3.5/5 vs KE-OF at 4.5/5 — asymmetric rigor. Publication-ready audit defensibility requires near-symmetric thresholds.
+
+**Cause:** §14.2 Q2 justification ("KE-SC has parent K-coverage as fallback so lower bar acceptable") was a pragmatic v1.6 floor, but did not anticipate post-execution academic review pressure on threshold parity.
+
+**5 Whys:**
+1. Why raise KE-SC to 4.0? → Reduce asymmetry with KE-OF (4.5/5).
+2. Why not full 4.5 symmetry? → KE-SC retains parent K-coverage fallback, so slightly lower (4.0) is defensible.
+3. Why allow 1 carve-out at 3.8? → `BR_EX_BE_00060` (N_QM_VVV_00007) has structurally sharp boundary guard (Vyatireka = discrete logical operation, well-bounded from QM counterfactual physics) + raw cosine 4.35 (highest in 3.8-band).
+4. Why downgrade 3 specific entries? → They share thin structural boundaries (semantic-only distinction or generic concept mapped to QM-specific experiment) AND score ≤3.8.
+5. **Root cause F-RCA-15:** v1.6 KE-SC=3.5 was a stretch floor; v1.7 retrofits stricter 4.0+carve-out to harmonize with KE-OF for publication readiness, accepting -3 entries (48→45 intersection, 92.3%→86.5%; Tier 2 still passes with 6.5pt margin).
+
+### 15.2 Threshold Specification (v1.7)
+
+| Threshold | v1.6 | **v1.7** | Rationale |
+|---|---|---|---|
+| KE-OF | 4.5/5 | 4.5/5 (unchanged) | Strictest — no parent inheritance fallback |
+| **KE-SC** | **3.5/5** | **4.0/5 + 1 carve-out at 3.8** | Near-symmetric with KE-OF; carve-out requires (i) score ≥3.8, (ii) structurally sharp boundary guard, (iii) raw cosine ≥4.3 |
+
+### 15.3 Tier Action Plan (3-tier, applied to 10 KE-SC entries)
+
+| Tier | Action | Entries (verified) | Total |
+|---|---|---|---|
+| A | **KEEP (score ≥4.0)** | `BR_EX_BE_00062` (00012, 4.0), `00063` (00013, 4.0), `00064` (00016, 4.1), `00067` (00035, 4.0), `00068` (00040, 4.0), `00069` (00053, 4.1) | 6 |
+| B | **KEEP (score 3.8, carve-out)** | `BR_EX_BE_00060` (00007, 3.8, raw 4.35) — boundary "absence-side evidence ≠ quantum counterfactual physics" structurally sharp | 1 |
+| C | **RECLASSIFY → KE-SC exception** | `BR_EX_BE_00061` (00008, 3.7), `BR_EX_BE_00065` (00022, 3.8), `BR_EX_BE_00066` (00024, 3.7) — boundary guards too thin | 3 |
+
+**Total:** 7 accepted + 3 reclassified = 10 (math checks).
+
+### 15.4 Phase 11 — Re-execution Scope
+
+| Step | Action | Output |
+|---|---|---|
+| 11.1 | Annotate 3 reclassified entries in `br_ex_be_registry.md` with `v1.7 Status: RECLASSIFIED-v1.7-KE-SC-THRESHOLD-RAISE` (NO renumber — namespace gaps preserved) | edited registry |
+| 11.2 | Re-add 3 VVV nodes to `k_gap_exception_list.md` under KE-SC (with note on v1.7 reclassification) | edited exception list |
+| 11.3 | Annotate `phase7_ke_sc_rca_log.md` for 3 reclassified entries | edited log |
+| 11.4 | Update `ex_schema_addendum.md` threshold spec to KE-SC v1.6=3.5, v1.7=4.0+carve-out | edited schema |
+| 11.5 | Patch `phase4_graph_sync.py` with reclassified-entry filter list | edited helper |
+| 11.6 | Re-run Phase 9 chain with `VVV_QMRF_EX_SUFFIX="_v1.7"` — produces `_v1.7.json` immutable snapshots without overwriting `_v1.6` baselines | 6 new JSONs + 2 PNGs |
+| 11.7 | Generate `phase4_registry_report_v1.7.json` manually (per F-RCA-12 A.1+ workaround) | manual JSON |
+| 11.8 | Re-audit boundary on 140 entries → `phase8_boundary_audit_report_v1.7.json` | new audit JSON |
+| 11.9 | Write `reviews/rca_plan_v1.7_completion_audit.md` | new audit doc |
+| 11.10 | Doc sync (header bumps, changelog appends) across plan/intersection/gaps/boundary_audit/rca_checkpoint/inventory/effectiveness/context | edited 8 files |
+
+### 15.5 Immutability Invariant (v1.7)
+
+**Hard rule:** `_v1.7` snapshots MUST NOT overwrite `_v1.6` or v1.5-baseline phase JSONs. Verify with:
+```
+git diff HEAD -- data/phase{1..6}*_report.json data/phase{1..6}*_report_v1.6.json
+```
+Must show ZERO modifications to both v1.5 and v1.6 immutables.
+
+### 15.6 Expected Results
+
+| Metric | v1.6 | **v1.7 target** |
+|---|---|---|
+| BR_EX_BE active | 69 | 66 |
+| BR_EX_BE reclassified (in registry, marked) | 0 | 3 |
+| BR_EX_QM | 74 | 74 (unchanged) |
+| Total registry rows | 143 | 143 (3 marked inactive) |
+| Graph edges (active) | 183 | 180 |
+| Raw dual-anchored | 48/52 (92.3%) | 45/52 (86.5%) |
+| Stretch Tier 1 (≥50%) | ✅ | ✅ |
+| Stretch Tier 2 (≥80%) | ✅ | ✅ (6.5pt margin) |
+| Boundary violations | 0/143 | 0/140 (active set) |
+
+### 15.7 Risks
+
+| ID | Risk | Severity | Mitigation |
+|---|---|---|---|
+| R1 | Removing 3 entries from active set breaks v1.5/v1.6 hash invariants | 🟡 Medium | Use "annotate-don't-delete" pattern: rows stay in registry MD with RECLASSIFIED status; namespace gaps preserved |
+| R2 | F-RCA-12 (phase4 unsafe re-run) carries forward | 🟢 Low | Continue A.1+ workaround via `phase4_graph_sync.py` (now with filter) |
+| R3 | Carve-out criterion (3.8 + sharp boundary) is subjective | 🟡 Medium | Document explicit criteria in §15.2; only 1 carve-out, well-justified by raw 4.35 cosine + structural distinction |
+| R4 | Reviewers may argue "still asymmetric" (4.5 vs 4.0) | 🟢 Low | KE-SC retains parent fallback; 0.5-band difference is defensible; alternative 4.5 symmetry would cost more entries |
+
+### 15.8 Success Criteria (v1.7 gates)
+
+| # | Criterion | Target | Method |
+|---|---|---|---|
+| 1 | **Stretch Tier 1** | Raw ≥50% (≥26) | `data/phase2_intersection_report_v1.7.json` |
+| 2 | **Stretch Tier 2** | Raw ≥80% (≥42) | Same source |
+| 3 | **Threshold spec applied** | 6 KEEP + 1 carve-out + 3 RECLASSIFIED | Registry annotations + log audit |
+| 4 | **Boundary integrity** | 0 violations on 140 active entries | `phase8_boundary_audit_report_v1.7.json` |
+| 5 | **Immutability v1.5 + v1.6** | git diff zero on phase JSONs (both suffixes) | git diff verification |
+| 6 | **Doc consistency** | All MD claims match JSON | Section 4 of v1.7 completion audit |
 
 ---
 

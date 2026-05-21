@@ -1,13 +1,13 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# Phase 7 KE-SC RCA Log — VVV-QMRF-EX v1.6
+# Phase 7 KE-SC RCA Log — VVV-QMRF-EX v1.6 / v1.7 reclassification annotated
 
 > **Document type:** RCA scoring log
-> **Status:** Draft batch for user approval; no registry entries created yet
-> **Date:** 2026-05-20
-> **Plan reference:** `vvv-qmrf-ex-plan.md` §14.3 Step 7.2
-> **Threshold:** 3.5/5 for KE-SC
-> **Protocol:** 3 rounds max; accept first candidate scoring >=3.5/5; otherwise reject after Round 3
+> **Status:** Phase 7 batch ACCEPTED 10/10 at v1.6 threshold 3.5/5. **Phase 11 v1.7 raises KE-SC threshold to 4.0/5 (+ 1 carve-out at 3.8); 3 entries reclassified — see annotations below.**
+> **Date:** 2026-05-20 (original) / 2026-05-21 (v1.7 annotations)
+> **Plan reference:** `vvv-qmrf-ex-plan.md` §14.3 Step 7.2 + §15 (v1.7 reclassification)
+> **Threshold:** v1.6: 3.5/5 for KE-SC; **v1.7: 4.0/5 + 1 carve-out at 3.8 (structurally sharp boundary)**
+> **Protocol:** 3 rounds max; accept first candidate scoring >=threshold; otherwise reject after Round 3
 > **SOT:** `SYSTEM_Buddhist_Epistemology/system_be_full.md` only
 
 ---
@@ -30,13 +30,13 @@ KE-SC threshold is lower than KE-OF because each node already inherits K-side co
 
 | VVV Node | Accepted BE candidate | Round | Score | Proposed Bridge ID | Status |
 |---|---|---:|---:|---|---|
-| `N_QM_VVV_00007` | `N_BE_00097` Vyatireka | 2 | 3.8/5 | `BR_EX_BE_00060` | ACCEPTED |
-| `N_QM_VVV_00008` | `N_BE_00009` Nirvikalpaka | 2 | 3.7/5 | `BR_EX_BE_00061` | ACCEPTED |
+| `N_QM_VVV_00007` | `N_BE_00097` Vyatireka | 2 | 3.8/5 | `BR_EX_BE_00060` | ACCEPTED (v1.7: **KEEP** — carve-out, raw 4.35, sharp boundary) |
+| `N_QM_VVV_00008` | `N_BE_00009` Nirvikalpaka | 2 | 3.7/5 | `BR_EX_BE_00061` | ACCEPTED at v1.6 / **RECLASSIFIED-v1.7** (below 4.0 threshold; thin boundary) |
 | `N_QM_VVV_00012` | `N_BE_00250` Tadutpatti | 1 | 4.0/5 | `BR_EX_BE_00062` | ACCEPTED |
 | `N_QM_VVV_00013` | `N_BE_00234` Avisamvaditva | 1 | 4.0/5 | `BR_EX_BE_00063` | ACCEPTED |
 | `N_QM_VVV_00016` | `N_BE_00052` Prama | 1 | 4.1/5 | `BR_EX_BE_00064` | ACCEPTED |
-| `N_QM_VVV_00022` | `N_BE_00179` Representative perception | 2 | 3.8/5 | `BR_EX_BE_00065` | ACCEPTED |
-| `N_QM_VVV_00024` | `N_BE_00029` Momentariness | 1 | 3.7/5 | `BR_EX_BE_00066` | ACCEPTED |
+| `N_QM_VVV_00022` | `N_BE_00179` Representative perception | 2 | 3.8/5 | `BR_EX_BE_00065` | ACCEPTED at v1.6 / **RECLASSIFIED-v1.7** (below 4.0 threshold; thin boundary — both concepts share "representation") |
+| `N_QM_VVV_00024` | `N_BE_00029` Momentariness | 1 | 3.7/5 | `BR_EX_BE_00066` | ACCEPTED at v1.6 / **RECLASSIFIED-v1.7** (below 4.0 threshold; thin boundary — generic concept ↔ specific experiment) |
 | `N_QM_VVV_00035` | `N_BE_00011` Svasaṃvedana | 1 | 4.0/5 | `BR_EX_BE_00067` | ACCEPTED |
 | `N_QM_VVV_00040` | `N_BE_00086` Momentariness | 2 | 4.0/5 | `BR_EX_BE_00068` | ACCEPTED |
 | `N_QM_VVV_00053` | `N_BE_00087` Ksanabhangavada | 1 | 4.1/5 | `BR_EX_BE_00069` | ACCEPTED |

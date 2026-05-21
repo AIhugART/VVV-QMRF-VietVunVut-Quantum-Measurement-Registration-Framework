@@ -3,10 +3,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF-EX Plan — RCA Checkpoint
 
 > **Purpose:** Single-source checkpoint for all RCA findings applied to `vvv-qmrf-ex-plan.md`. Tracks which fixes are applied at which plan version, and which findings remain open.
-> **Last updated:** 2026-05-21 (Phase 9/10 catch-up — added F-RCA-12/13/14 from Phase 9 v1.6 execution)
-> **Plan current version:** v1.6 EXECUTED
-> **Total findings to date:** 25 (3 v0→v1.0 isolation + 6 v1.0→v1.1 RCA review + 1 Phase 1 execution + 8 post-execution audit v1.2→v1.3 + 4 plan-implementation audit v1.4→v1.5 + 3 Phase 9 execution v1.5→v1.6)
-> **Status:** Phases 0–9 ✅ ALL COMPLETE; Phase 10 doc sync IN PROGRESS. Closed findings: Fix 1-3, F1-F7 (10 original) + F8-F15 (8 post-execution) + F-RCA-01/02/03/06 (4 plan-implementation) + F-RCA-05/07/08/09/10/11 (6 closed in Phase 8 audit) + F-RCA-12/13/14 (3 Phase 9 execution) = **25 closed**. **0 open findings.**
+> **Last updated:** 2026-05-21 (Phase 11 v1.7 catch-up — added F-RCA-15 from KE-SC threshold tightening)
+> **Plan current version:** v1.7 EXECUTED
+> **Total findings to date:** 26 (3 v0→v1.0 isolation + 6 v1.0→v1.1 RCA review + 1 Phase 1 execution + 8 post-execution audit v1.2→v1.3 + 4 plan-implementation audit v1.4→v1.5 + 3 Phase 9 execution v1.5→v1.6 + 1 Phase 11 threshold tightening v1.6→v1.7)
+> **Status:** Phases 0–11 ✅ ALL COMPLETE. Closed findings: 25 (v1.6 prior) + F-RCA-15 (1 Phase 11 v1.7) = **26 closed**. **0 open findings.**
 
 ---
 
@@ -172,6 +172,16 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | F-RCA-12 | 🔴 BLOCKING | Plan §14.5 Step 9.4 design gap — `phase4_bridge_registry.py` cannot safely re-run | 4-option RCA × scoring | A.1+ workaround (4.5/5) — skip phase4 + new helper + manual JSON gen | (a) SKIPPED phase4 re-run in Phase 9.4; (b) Created `phase4_graph_sync.py` parsing both registries to inject 34 non-`reference_copy` edges (33 BE + 1 QM) into `vvv_qmrf_ex_graph.json` (149 → 183); (c) Manually generated `data/phase4_registry_report_v1.6.json` from registry MD counts + Phase 8 audit | Registry MDs unchanged (69 BE + 74 QM = 143 entries preserved); graph at 183 edges; `phase4_registry_report_v1.6.json` matches Phase 8 audit `entries_audited: 143, violations: 0` ✅ |
 | F-RCA-13 | 🟡 MAJOR | NetworkX `links` vs `edges` key inconsistency between phase scripts | Direct fix | Defensive key detection | (a) `phase4_graph_sync.py`: detect `links` if present + non-empty else `edges`; (b) `phase5_visualize.py`: detect key before `node_link_graph(graph_data, edges=KEY)`; (c) `phase6_expert_mapping.py`: same defensive detection + edge_key in all access sites | All 3 patched scripts read 183-edge graph correctly post-sync ✅ |
 | F-RCA-14 | 🟡 MAJOR | `K_SIDE_TYPES` in phase2 missing `BR_EX_BE_STRETCH` (Phase 7 edge type) | Trivial 1-line edit | Add to set membership | Edit `phase2_intersection_analysis.py:55`: `K_SIDE_TYPES = {"VVV_TO_BE", "DRAFT_BRIDGE_BE_VVV", "BR_EX_BE", "BR_EX_BE_NEW", "BR_EX_BE_STRETCH"}` | Re-run intersection: 25 → 48/52 (92.3%); Stretch Tier 1 + Tier 2 both PASS ✅ |
+
+---
+
+## 3f. v1.6 → v1.7 Fixes (1 finding — KE-SC threshold tightening for publication rigor)
+
+> **Context:** Plan v1.6 §14.2 Q2 set KE-SC threshold at 3.5/5 vs KE-OF at 4.5/5 — asymmetric rigor. Phase 11 v1.7 retrofits stricter threshold for publication readiness.
+
+| ID | Severity | Subject | Decision method | Decision (score) | Fix applied | Verify |
+|---|---|---|---|---|---|---|
+| F-RCA-15 | 🟢 MINOR | Asymmetric KE-OF (4.5) vs KE-SC (3.5) thresholds — publication audit risk | 4-option RCA × scoring (verify-first then batch) | Tighten to 4.0/5 + 1 carve-out at 3.8 (4.2/5) | (a) Verify actual scores match user data (10/10 entries verified); (b) Annotate 3 entries (`BR_EX_BE_00061/00065/00066`) in registry MD with `RECLASSIFIED-v1.7-KE-SC-THRESHOLD-RAISE` (Type field + v1.7 Status row); (c) Move 3 VVV nodes back to KE-SC exception in `k_gap_exception_list.md`; (d) Patch `phase4_graph_sync.py` with `RECLASSIFIED` skip filter; (e) Update `ex_schema_addendum.md` threshold spec; (f) Re-run Phase 11 chain with `_v1.7` suffix → 8 immutable snapshots | `phase2_intersection_report_v1.7.json` shows intersection=45 (86.5%); Stretch Tier 1+2 still PASS with 6.5pt margin; v1.5 + v1.6 immutability invariant preserved (git diff = ZERO on 12 baseline JSONs) ✅ |
 
 ---
 

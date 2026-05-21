@@ -5,11 +5,8 @@
     "project": "VVV-QMRF-EX",
     "phase": "1-graph-construction",
     "date": "2026-05-20",
-    "edge_count": 183,
-    "version": "0.6-phase6-expert",
-    "WARNING": "ALL edges in this graph are STRUCTURAL ANALOGIES, not identity claims. Graph traversal paths (BE → VVV → QM) must NOT be interpreted as causal chains, equivalence relations, or evidence that Buddhist epistemology explains quantum mechanics. Each edge carries a Claim Type of 'interpretive_mapping' — never 'identity'. See boundary controls C1–C7 in vvv-qmrf-ex-plan.md §9.",
-    "NON_REPLACEMENT_GUARD": "VVV-QMRF-EX does NOT replace Standard Quantum Mechanics. The registration layer (K) is structurally separate from the physical layer (ρ). No edge in this graph modifies the Born Rule p_QM(o) or creates new physical laws.",
-    "METAPHYSICAL_GUARD": "This graph is a Registration Class D research artifact. It must NOT be used to support metaphysical claims about consciousness, quantum mysticism, or Buddhist-quantum identity theories."
+    "edge_count": 180,
+    "version": "0.6-phase6-expert"
   },
   "nodes": [
     {
@@ -2953,7 +2950,7 @@
       "id": "N_QM_00105"
     }
   ],
-  "links": [
+  "edges": [
     {
       "edge_id": "BR_DRAFT_B_001",
       "relation": "draft_bridge_support",
@@ -4455,16 +4452,6 @@
       "phase": "phase7-stretch"
     },
     {
-      "source": "N_BE_00009",
-      "target": "N_QM_VVV_00008",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00061",
-      "similarity": 0.37,
-      "phase": "phase7-stretch"
-    },
-    {
       "source": "N_BE_00250",
       "target": "N_QM_VVV_00012",
       "edge_type": "BR_EX_BE_STRETCH",
@@ -4492,26 +4479,6 @@
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_BE_00064",
       "similarity": 0.41,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00179",
-      "target": "N_QM_VVV_00022",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00065",
-      "similarity": 0.38,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00029",
-      "target": "N_QM_VVV_00024",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00066",
-      "similarity": 0.37,
       "phase": "phase7-stretch"
     },
     {

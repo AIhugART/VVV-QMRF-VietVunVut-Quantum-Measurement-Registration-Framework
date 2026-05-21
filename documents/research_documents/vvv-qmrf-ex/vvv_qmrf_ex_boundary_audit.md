@@ -2,19 +2,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # VVV-QMRF-EX Boundary Compliance Audit
 
-**Current version:** Phase 8 Closure (post-stretch v1.6)
+**Current version:** Phase 11 Closure (post-v1.7 KE-SC threshold raise)
 **Last updated:** 2026-05-21
 **Auditor:** Antigravity RCA Engine
-**Graph (current, post-Phase 9):** 420 nodes, 183 edges (149 SOT + 34 BR_EX injected via `phase4_graph_sync.py`)
-**Registries audited (current):** BR_EX_BE (69 entries), BR_EX_QM (74 entries) = **143 total**
+**Graph (current, post-Phase 11):** 420 nodes, **180 edges** (149 SOT + 31 v1.7-active BR_EX injected via `phase4_graph_sync.py`; 3 v1.7-reclassified rows preserved in registry but excluded from graph)
+**Registries audited (current):** BR_EX_BE (66 active + 3 reclassified = 69 rows), BR_EX_QM (74 entries) = **140 active** / 143 total rows
 
-> **Phase 9 / v1.6 update:** Phase 8 (2026-05-20) re-audited all 143 entries (69 BR_EX_BE post-Phase 7 stretch + 74 BR_EX_QM) — **0 violations, overall PASS**. See [`data/phase8_boundary_audit_report.json`](data/phase8_boundary_audit_report.json) for the canonical audit JSON. The Phase 6 audit body below is preserved as historical record (the 7-control methodology and findings remain unchanged; only the entry count grew from 120 → 143 via Phase 7 stretch + Phase 8 re-audit confirmed all controls hold).
+> **Phase 11 / v1.7 update:** v1.7 raises KE-SC threshold from 3.5/5 to 4.0/5 (+ 1 carve-out at 3.8); 3 entries reclassified (`BR_EX_BE_00061/00065/00066`). Boundary controls **carry forward unchanged** because reclassified entries retain the same `claim_class: interpretive_mapping` + boundary guard text; they are merely **inactivated** in the v1.7 graph. The Phase 8 audit verified ALL 143 rows incl. these 3 entries — so the v1.7 active subset (140) inherits 0 violations.
 
 > **Changelog:**
-> - Phase 6 audit (2026-05-20): 120 entries (46 BE + 74 QM), 160 edges → 0 violations
-> - Phase 7 stretch (2026-05-20): +23 BR_EX_BE entries (BR_EX_BE_00047–00069) added via KE-OF/KE-SC batch RCA gates
-> - Phase 8 closure (2026-05-20): re-audited 143 entries (69 BE + 74 QM) → 0 violations confirmed
-> - Phase 9 final (2026-05-21): graph synced to 183 edges; entry counts unchanged; boundary audit status carries forward unchanged
+> - Phase 6 audit (2026-05-20): 120 entries, 160 edges → 0 violations
+> - Phase 7 stretch (2026-05-20): +23 BR_EX_BE entries via KE-OF/KE-SC batch RCA
+> - Phase 8 closure (2026-05-20): re-audited 143 entries → 0 violations
+> - Phase 9 final (2026-05-21): graph synced to 183 edges; entry counts unchanged
+> - **Phase 11 v1.7 (2026-05-21):** 3 entries reclassified (RECLASSIFIED-v1.7-KE-SC-THRESHOLD-RAISE); active set = 140; graph 183 → 180 edges; boundary integrity inherited from Phase 8 audit (subset property)
 
 ---
 

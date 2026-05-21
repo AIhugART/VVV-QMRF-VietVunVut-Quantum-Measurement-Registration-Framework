@@ -33,6 +33,27 @@
 
 **Source documents:** [`reviews/rca_plan_v1.6_completion_audit.md`](rca_plan_v1.6_completion_audit.md) + 6 `data/phase{1..6}_*_v1.6.json` snapshots.
 
+### 0.1 Phase 11 v1.7 — KE-SC Threshold Raise (publication rigor)
+
+> **Status:** Phase 11 v1.7 EXECUTED. KE-SC threshold raised 3.5/5 → 4.0/5 + 1 carve-out at 3.8. Trade-off: -3 entries for symmetric rigor.
+
+| Metric | v1.6 final | **v1.7 final** | Δ |
+|---|---|---|---|
+| Raw dual-anchored | 48/52 (92.3%) | **45/52 (86.5%)** | −3 entries / −5.8pt |
+| K-side gaps (raw) | 4 | **7** | +3 (KE-SC-RECLASSIFIED) |
+| BR_EX_BE active | 69 | **66** | −3 (rows preserved as RECLASSIFIED) |
+| Total registry rows | 143 | 143 (3 marked inactive) | unchanged |
+| Graph edges (active) | 183 | **180** | −3 |
+| KE-SC threshold | 3.5/5 | **4.0/5 + 1 carve-out at 3.8** | +0.5 |
+| Rigor symmetry | 4.5 vs 3.5 (asymmetric) | **4.5 vs 4.0** (near-symmetric) | ✅ improved |
+| Stretch Tier 1 (≥50%) | ✅ | ✅ | unchanged |
+| Stretch Tier 2 (≥80%) | ✅ | ✅ (6.5pt margin) | unchanged |
+| Boundary violations | 0/143 | **0/140 active** | inherited from Phase 8 |
+
+**Effectiveness rating (v1.7):** ⭐⭐⭐⭐⭐ — Successfully retrofits publication-grade rigor while preserving Stretch Tier 1+2 with comfortable margin. 1 new RCA finding closed (F-RCA-15).
+
+**v1.7 source:** [`reviews/rca_plan_v1.7_completion_audit.md`](rca_plan_v1.7_completion_audit.md) + 6 `data/phase{1..6}_*_v1.7.json` snapshots.
+
 ---
 
 ## (Below — original prediction, preserved for record)

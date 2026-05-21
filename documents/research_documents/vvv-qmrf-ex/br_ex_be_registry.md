@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_BE Registry — K-side Bridge: BE ↔ VVV-QMRF
 
-**Version:** 2.1 (Phase 7 draft — batch-approved)
-**Date:** 2026-05-20
-**Total Entries:** 69 (36 reference-copy + 1 similarity candidate + 9 expert manual + 23 Phase 7 stretch mappings)
-**Namespace:** BR_EX_BE_00001–BR_EX_BE_00069
+**Version:** 2.2 (Phase 11 v1.7 — KE-SC threshold raised to 4.0/5 + 1 carve-out)
+**Date:** 2026-05-21
+**Total Entries:** 69 row entries / **66 active** (36 reference-copy + 1 similarity candidate + 9 expert manual + 20 active Phase 7 stretch [13 KE-OF + 7 KE-SC]) + **3 RECLASSIFIED-v1.7** (BR_EX_BE_00061, 00065, 00066 — moved back to KE-SC exception in v1.7 due to threshold raise from 3.5 → 4.0)
+**Namespace:** BR_EX_BE_00001–BR_EX_BE_00069 (no renumber; 3 reclassified rows preserved in-place with v1.7 Status field)
 
 ---
 
@@ -1231,12 +1231,14 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Rationale** | Counterfactual evidential branch receives a direct K-side anchor in negative concomitance. |
 | **Origin** | Phase 7 KE-SC stretch mapping; score 3.8/5; see `phase7_ke_sc_rca_log.md` |
 
-### BR_EX_BE_00061 — Entry 61
+### BR_EX_BE_00061 — Entry 61 ⚠️ RECLASSIFIED-v1.7
 
 | Field | Value |
 |-------|-------|
 | **BR_EX_ID** | `BR_EX_BE_00061` |
-| **Type** | stretch_expert_mapping |
+| **Type** | stretch_expert_mapping_RECLASSIFIED_v1_7 |
+| **v1.7 Status** | **RECLASSIFIED-v1.7-KE-SC-THRESHOLD-RAISE** (no longer active in v1.7 graph) |
+| **v1.7 Reason** | Score 3.7/5 below v1.7 KE-SC threshold 4.0/5; boundary guard "unelaborated registration ≠ IFM" too thin (Nirvikalpaka is broad concept; IFM is QM-specific experiment) |
 | **Source Edge Type** | `BR_EX_BE_NEW` |
 | **BE Node** | `N_BE_00009` |
 | **BE Concept** | Nirvikalpaka / Non-conceptual perception |
@@ -1246,10 +1248,10 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Direction** | N_BE_00009 → N_QM_VVV_00008 |
 | **Relation Type** | sub_concept_direct_anchor |
 | **Claim Class** | interpretive_mapping |
-| **Confidence** | 0.37 (RCA score; Phase 7 batch-approved) |
+| **Confidence** | 0.37 (RCA score; Phase 7 batch-approved at 3.5/5 threshold; v1.7 reclassified) |
 | **Boundary Note** | Maps unelaborated registration, not interaction-free measurement. |
 | **Rationale** | Information without direct disturbance is anchored to a non-conceptual registration mode. |
-| **Origin** | Phase 7 KE-SC stretch mapping; score 3.7/5; see `phase7_ke_sc_rca_log.md` |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 3.7/5; see `phase7_ke_sc_rca_log.md` and `phase7_ke_sc_rca_log.md` v1.7 annotations |
 
 ### BR_EX_BE_00062 — Entry 62
 
@@ -1311,12 +1313,14 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Rationale** | Certified registration state receives a direct K-side valid-outcome anchor. |
 | **Origin** | Phase 7 KE-SC stretch mapping; score 4.1/5; see `phase7_ke_sc_rca_log.md` |
 
-### BR_EX_BE_00065 — Entry 65
+### BR_EX_BE_00065 — Entry 65 ⚠️ RECLASSIFIED-v1.7
 
 | Field | Value |
 |-------|-------|
 | **BR_EX_ID** | `BR_EX_BE_00065` |
-| **Type** | stretch_expert_mapping |
+| **Type** | stretch_expert_mapping_RECLASSIFIED_v1_7 |
+| **v1.7 Status** | **RECLASSIFIED-v1.7-KE-SC-THRESHOLD-RAISE** (no longer active in v1.7 graph) |
+| **v1.7 Reason** | Score 3.8/5 below v1.7 KE-SC threshold 4.0/5; boundary guard "representational encoding ≠ physical storage" too thin (both concepts share "representation" semantic; distinction is more semantic than structural) |
 | **Source Edge Type** | `BR_EX_BE_NEW` |
 | **BE Node** | `N_BE_00179` |
 | **BE Concept** | Representative perception |
@@ -1326,17 +1330,19 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Direction** | N_BE_00179 → N_QM_VVV_00022 |
 | **Relation Type** | sub_concept_direct_anchor |
 | **Claim Class** | interpretive_mapping |
-| **Confidence** | 0.38 (RCA score; Phase 7 batch-approved) |
+| **Confidence** | 0.38 (RCA score; Phase 7 batch-approved at 3.5/5 threshold; v1.7 reclassified) |
 | **Boundary Note** | Maps representational encoding, not physical storage. |
 | **Rationale** | Internal encoding receives a direct K-side anchor in representative perception. |
-| **Origin** | Phase 7 KE-SC stretch mapping; score 3.8/5; see `phase7_ke_sc_rca_log.md` |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 3.8/5; see `phase7_ke_sc_rca_log.md` and v1.7 annotations |
 
-### BR_EX_BE_00066 — Entry 66
+### BR_EX_BE_00066 — Entry 66 ⚠️ RECLASSIFIED-v1.7
 
 | Field | Value |
 |-------|-------|
 | **BR_EX_ID** | `BR_EX_BE_00066` |
-| **Type** | stretch_expert_mapping |
+| **Type** | stretch_expert_mapping_RECLASSIFIED_v1_7 |
+| **v1.7 Status** | **RECLASSIFIED-v1.7-KE-SC-THRESHOLD-RAISE** (no longer active in v1.7 graph) |
+| **v1.7 Reason** | Score 3.7/5 below v1.7 KE-SC threshold 4.0/5; boundary guard "temporal boundary ≠ delayed-choice erasure" too thin (Momentariness is generic Buddhist concept; delayed-choice erasure is QM-specific experiment) |
 | **Source Edge Type** | `BR_EX_BE_NEW` |
 | **BE Node** | `N_BE_00029` |
 | **BE Concept** | Momentariness |
@@ -1346,10 +1352,10 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Direction** | N_BE_00029 → N_QM_VVV_00024 |
 | **Relation Type** | sub_concept_direct_anchor |
 | **Claim Class** | interpretive_mapping |
-| **Confidence** | 0.37 (RCA score; Phase 7 batch-approved) |
+| **Confidence** | 0.37 (RCA score; Phase 7 batch-approved at 3.5/5 threshold; v1.7 reclassified) |
 | **Boundary Note** | Maps temporal boundary only, not delayed-choice erasure. |
 | **Rationale** | Delayed-choice locking boundary receives a direct moment-boundary anchor. |
-| **Origin** | Phase 7 KE-SC stretch mapping; score 3.7/5; see `phase7_ke_sc_rca_log.md` |
+| **Origin** | Phase 7 KE-SC stretch mapping; score 3.7/5; see `phase7_ke_sc_rca_log.md` and v1.7 annotations |
 
 ### BR_EX_BE_00067 — Entry 67
 

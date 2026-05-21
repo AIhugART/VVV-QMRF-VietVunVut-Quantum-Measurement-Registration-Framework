@@ -1,15 +1,16 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
 # VVV-QMRF-EX — Intersection Analysis
-> **Phase:** 9 final — post-stretch (v1.6)
+> **Phase:** 11 final — post-v1.7 KE-SC threshold raise
 > **Date:** 2026-05-21
-> **Source graph:** `data/vvv_qmrf_ex_graph.json` (420 nodes, 183 edges = 149 SOT + 34 BR_EX injected)
-> **Full data:** `data/phase2_intersection_report_v1.6.json` (immutable v1.6 snapshot); `data/phase2_intersection_report.json` (v1.4 baseline immutable); `data/phase2_intersection_report_post_phase6.json` (Phase 6 mid-state)
+> **Source graph:** `data/vvv_qmrf_ex_graph.json` (420 nodes, 180 edges = 149 SOT + 31 BR_EX active; 3 v1.7-reclassified BR_EX_BE rows preserved in registry but inactive in graph)
+> **Full data:** `data/phase2_intersection_report_v1.7.json` (immutable v1.7 snapshot); `data/phase2_intersection_report_v1.6.json` (v1.6 final immutable); `data/phase2_intersection_report.json` (v1.4 baseline immutable)
 >
 > **Changelog:**
-> - Phase 4 baseline: 16/52 intersection (30.8%)
-> - Phase 6 (KE-PM resolution): 25/52 (48.1%) — +9 KE-PM nodes resolved
-> - **Phase 9 final (v1.6 stretch, this report):** **48/52 (92.3%)** — +23 KE-OF/KE-SC Phase 7 stretch entries promoted to direct BR_EX_BE bridges; Stretch Tier 1 (≥50%) + Tier 2 (≥80%) both PASS
+> - Phase 4 baseline: 16/52 (30.8%)
+> - Phase 6 (KE-PM): 25/52 (48.1%)
+> - Phase 9 v1.6 (stretch all 23 KE-OF/KE-SC accepted): 48/52 (92.3%)
+> - **Phase 11 v1.7 (KE-SC threshold 3.5→4.0/5 + 1 carve-out; 3 reclassified):** **45/52 (86.5%)** — Stretch Tier 1+2 still PASS with 6.5pt margin
 
 ---
 
@@ -17,7 +18,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 > VVV node is in intersection if it has >= 1 K-side BE anchor (via `VVV_TO_BE` or `DRAFT_BRIDGE_BE_VVV`) AND >= 1 rho-side QM anchor (via `VVV_TO_QM` or `BR_QM_VVV`).
 
-**Count:** 48 / 52 VVV nodes (92.3%)
+**Count:** 45 / 52 VVV nodes (86.5%)
 
 | VVV Node | Concept | K-side BE anchors | rho-side QM anchors |
 |---|---|---|---|
@@ -26,7 +27,6 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | `N_QM_VVV_00004` | Informative Silence - registration | `N_BE_00015` (Exclusion) | `N_QM_00033` (No-Result Measurement (Null Me) |
 | `N_QM_VVV_00006` | Exclusion-Based State Selection / Exclusion-B | `N_BE_00015` (Exclusion) | `N_QM_00022` (Post-Measurement State Update) |
 | `N_QM_VVV_00007` | Counterfactual Evidential Branch | `N_BE_00097` (Vyatireka) | `N_QM_00005` (Superposition) |
-| `N_QM_VVV_00008` | Ideal Information Without Direct Disturbance | `N_BE_00009` (Non-conceptual perception) | `N_QM_00027` (Information–Disturbance Trade-) |
 | `N_QM_VVV_00010` | PVM-equivalent Registration Authority | `N_BE_00018` (Triple-condition syllogism) | `N_QM_00014` (Projective Measurement (PVM)) |
 | `N_QM_VVV_00011` | Dual-Phase Registration Certification / Forma | `N_BE_00013` (Particular / Unique mark) | `N_QM_00019` (Measurement (Physical Act)), `N_QM_00095` (Decoherence & Environment as M) |
 | `N_QM_VVV_00012` | Intrinsic Causal Triggering Phase | `N_BE_00250` (Tadutpatti) | `N_QM_00021` (System–Meter Coupling) |
@@ -36,9 +36,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | `N_QM_VVV_00018` | Verification-Integrated Density Matrix Evolut | `N_BE_00001` (Valid cognition) | `N_QM_00025` ([SUY DIỄN] Density Matrix & Mi), `N_QM_00035` (Unselective Measurement & Quan) |
 | `N_QM_VVV_00020` | Validated Absence Registration / Conditioned  | `N_BE_00015` (Exclusion), `N_BE_00161` (Nonoccurrence condition), `N_BE_00253` (Anupalabdhi) | `N_QM_00033` (No-Result Measurement (Null Me) |
 | `N_QM_VVV_00021` | Registration Lock / Registration-Lock Operato | `N_BE_00046` (Representationalism), `N_BE_00118` (Ālambanaparīkṣā), `N_BE_00173` (Bāhyārtha), `N_BE_00175` (Sārūpya), `N_BE_00179` (Representative perception), `N_BE_00185` (Yojanā), `N_BE_00193` (Dharmakīrti's anti-realism), `N_BE_00240` (Perceptual-conceptual gap) | `N_QM_00019` (Measurement (Physical Act)), `N_QM_00020` (von Neumann Measurement Model), `N_QM_00094` (Heisenberg Cut) |
-| `N_QM_VVV_00022` | Internal Representation Encoding / Internal E | `N_BE_00179` (Representative perception) | `N_QM_00019` (Measurement (Physical Act)) |
 | `N_QM_VVV_00023` | Registration Lock `V̂_yava` / Irreversible Re | `N_BE_00029` (Momentariness) | `N_QM_00022` (Post-Measurement State Update) |
-| `N_QM_VVV_00024` | Registration-Locking Boundary in Delayed-Choi | `N_BE_00029` (Momentariness) | `N_QM_00102` (Measurement Reversal) |
 | `N_QM_VVV_00025` | Intrinsic Relational Binding / Entanglement - | `N_BE_00021` (Essential relation) | `N_QM_00047` (Entanglement), `N_QM_00090` (Bell's Inequality & Bell Corre) |
 | `N_QM_VVV_00027` | Registration Self-Completion Matrix / Act-Res | `N_BE_00022` (Causal efficacy), `N_BE_00055` (Pramāphala), `N_BE_00127` (Pramāṇa formula), `N_BE_00164` (Pramāṇādhīna prameyādhigama), `N_BE_00165` (Prameyādhīna pramāṇasiddhi), `N_BE_00170` (Non-distinction of means and r), `N_BE_00203` (Four process mechanisms) | `N_QM_00016` (Born Rule), `N_QM_00019` (Measurement (Physical Act)) |
 | `N_QM_VVV_00028` | Act-Result Tensor / Irreducible Event Tensor  | `N_BE_00022` (Causal efficacy) | `N_QM_00014` (Projective Measurement (PVM)) |
@@ -76,7 +74,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Rank | VVV Node | Concept | Betweenness | In Intersection |
 |---|---|---|---|---|
-| 1 | `N_QM_VVV_00021` | Registration Lock / Registration-Lock Operato | 0.004088 | Yes |
+| 1 | `N_QM_VVV_00021` | Registration Lock / Registration-Lock Operato | 0.004100 | Yes |
 | 2 | `N_QM_VVV_00014` | Extrinsic Registration-Certification Operator | 0.003911 | Yes |
 | 3 | `N_QM_VVV_00013` | Extrinsic Registration Certification Phase | 0.003760 | Yes |
 | 4 | `N_QM_VVV_00029` | Retroactive Registration Override / Formal Me | 0.003483 | Yes |
@@ -87,8 +85,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | 9 | `N_QM_VVV_00038` | Measured-but-Unregistered K-State | 0.001770 | Yes |
 | 10 | `N_QM_VVV_00033` | Self-Certifying Registration Operator / Regis | 0.001524 | Yes |
 | 11 | `N_QM_VVV_00030` | Invalidation Operator `Ô_bhranti` / Registra | 0.001442 | Yes |
-| 12 | `N_QM_VVV_00043` | Trairūpya Apparatus Validity Conditions / Val | 0.001182 | Yes |
-| 13 | `N_QM_VVV_00023` | Registration Lock `V̂_yava` / Irreversible Re | 0.001165 | Yes |
+| 12 | `N_QM_VVV_00023` | Registration Lock `V̂_yava` / Irreversible Re | 0.001210 | Yes |
+| 13 | `N_QM_VVV_00043` | Trairūpya Apparatus Validity Conditions / Val | 0.001182 | Yes |
 | 14 | `N_QM_VVV_00015` | Conditionally Updated State `ρ̃` | 0.000854 | No |
 | 15 | `N_QM_VVV_00042` | Tripartite Registration Validity Matrix / Str | 0.000797 | Yes |
 
@@ -96,22 +94,22 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## 3. Community Structure
 
-Greedy modularity communities: **316**
+Greedy modularity communities: **315**
 
 | Community | Size | BE | VVV | QM | VVV members |
 |---|---|---|---|---|---|
-| 1 | 19 | 4 | 10 | 5 | `N_QM_VVV_00011`, `N_QM_VVV_00012`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00015`, `N_QM_VVV_00016` +4 more |
+| 1 | 18 | 4 | 9 | 5 | `N_QM_VVV_00011`, `N_QM_VVV_00012`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00015`, `N_QM_VVV_00018` +3 more |
 | 2 | 15 | 5 | 7 | 3 | `N_QM_VVV_00007`, `N_QM_VVV_00010`, `N_QM_VVV_00030`, `N_QM_VVV_00031`, `N_QM_VVV_00032`, `N_QM_VVV_00042` +1 more |
 | 3 | 14 | 9 | 4 | 1 | `N_QM_VVV_00021`, `N_QM_VVV_00022`, `N_QM_VVV_00054`, `N_QM_VVV_00055` |
 | 4 | 14 | 3 | 9 | 2 | `N_QM_VVV_00001`, `N_QM_VVV_00002`, `N_QM_VVV_00003`, `N_QM_VVV_00004`, `N_QM_VVV_00005`, `N_QM_VVV_00006` +3 more |
-| 5 | 9 | 2 | 4 | 3 | `N_QM_VVV_00044`, `N_QM_VVV_00045`, `N_QM_VVV_00046`, `N_QM_VVV_00047` |
-| 6 | 9 | 7 | 2 | 0 | `N_QM_VVV_00027`, `N_QM_VVV_00028` |
-| 7 | 8 | 2 | 3 | 3 | `N_QM_VVV_00048`, `N_QM_VVV_00049`, `N_QM_VVV_00050` |
-| 8 | 8 | 2 | 4 | 2 | `N_QM_VVV_00039`, `N_QM_VVV_00051`, `N_QM_VVV_00052`, `N_QM_VVV_00053` |
-| 9 | 6 | 1 | 3 | 2 | `N_QM_VVV_00033`, `N_QM_VVV_00034`, `N_QM_VVV_00035` |
-| 10 | 5 | 1 | 2 | 2 | `N_QM_VVV_00008`, `N_QM_VVV_00038` |
-| 11 | 5 | 1 | 2 | 2 | `N_QM_VVV_00040`, `N_QM_VVV_00041` |
-| 12 | 4 | 1 | 1 | 2 | `N_QM_VVV_00025` |
+| 5 | 12 | 3 | 5 | 4 | `N_QM_VVV_00040`, `N_QM_VVV_00041`, `N_QM_VVV_00045`, `N_QM_VVV_00046`, `N_QM_VVV_00047` |
+| 6 | 12 | 2 | 6 | 4 | `N_QM_VVV_00016`, `N_QM_VVV_00023`, `N_QM_VVV_00024`, `N_QM_VVV_00033`, `N_QM_VVV_00034`, `N_QM_VVV_00035` |
+| 7 | 9 | 7 | 2 | 0 | `N_QM_VVV_00027`, `N_QM_VVV_00028` |
+| 8 | 8 | 2 | 3 | 3 | `N_QM_VVV_00048`, `N_QM_VVV_00049`, `N_QM_VVV_00050` |
+| 9 | 8 | 2 | 4 | 2 | `N_QM_VVV_00039`, `N_QM_VVV_00051`, `N_QM_VVV_00052`, `N_QM_VVV_00053` |
+| 10 | 4 | 1 | 1 | 2 | `N_QM_VVV_00025` |
+| 11 | 2 | 0 | 1 | 1 | `N_QM_VVV_00008` |
+| 12 | 1 | 1 | 0 | 0 |  |
 | 13 | 1 | 1 | 0 | 0 |  |
 | 14 | 1 | 1 | 0 | 0 |  |
 | 15 | 1 | 1 | 0 | 0 |  |
@@ -336,7 +334,7 @@ Greedy modularity communities: **316**
 | 234 | 1 | 1 | 0 | 0 |  |
 | 235 | 1 | 1 | 0 | 0 |  |
 | 236 | 1 | 1 | 0 | 0 |  |
-| 237 | 1 | 1 | 0 | 0 |  |
+| 237 | 1 | 0 | 0 | 1 |  |
 | 238 | 1 | 0 | 0 | 1 |  |
 | 239 | 1 | 0 | 0 | 1 |  |
 | 240 | 1 | 0 | 0 | 1 |  |
@@ -414,8 +412,7 @@ Greedy modularity communities: **316**
 | 312 | 1 | 0 | 0 | 1 |  |
 | 313 | 1 | 0 | 0 | 1 |  |
 | 314 | 1 | 0 | 0 | 1 |  |
-| 315 | 1 | 0 | 0 | 1 |  |
-| 316 | 1 | 0 | 1 | 0 | `N_QM_VVV_00009` |
+| 315 | 1 | 0 | 1 | 0 | `N_QM_VVV_00009` |
 
 ---
 
@@ -453,8 +450,8 @@ Direct BE->QM edges (must be 0): **0**
 
 | Category | Count | % of 52 VVV |
 |---|---|---|
-| Intersection (dual K-rho anchored) | 48 | 92.3% |
-| K-side gap only (no BE, has QM) | 3 | 5.8% |
+| Intersection (dual K-rho anchored) | 45 | 86.5% |
+| K-side gap only (no BE, has QM) | 6 | 11.5% |
 | rho-side gap only (has BE, no QM) | 0 | 0.0% |
 | Both gaps (no BE and no QM) | 1 | 1.9% |
 
@@ -467,7 +464,7 @@ Direct BE->QM edges (must be 0): **0**
 
 | Check | Result |
 |---|---|
-| Intersection >= 15 nodes | [OK] (48 nodes) |
+| Intersection >= 15 nodes | [OK] (45 nodes) |
 | No direct BE->QM edges | [OK] (count = 0) |
 
 ---
