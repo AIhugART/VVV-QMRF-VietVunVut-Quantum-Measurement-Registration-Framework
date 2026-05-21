@@ -36,7 +36,8 @@ It is an extension of the VVV-QMRF schema (`vvv-qmrf/schema_guide.md`) and does 
 | `VVV_TO_BE` | Phase 1 | VVV concept draws K-side semantics from BE source-analogue |
 | `DRAFT_BRIDGE_BE_VVV` | Phase 1 | BE concept provides K-side support (263-node audit cycle, draft) |
 | `BR_EX_BE` | Phase 4 | New BE↔VVV bridge from Phase 3 similarity (Tier2 candidate) |
-| `BR_EX_BE_NEW` | Phase 7 | New batch-approved BE↔VVV stretch bridge created after RCA threshold review |
+| `BR_EX_BE_NEW` | Phase 6 | Expert-manual BE↔VVV bridge resolving a KE-PM K-gap node |
+| `BR_EX_BE_STRETCH` | Phase 7 | Batch-approved BE↔VVV stretch bridge (KE-OF strict 4.5/5 or KE-SC relaxed 3.5/5 RCA threshold) — phase2 `K_SIDE_TYPES` must include this type to count it in K-side anchoring (see F-RCA-14) |
 
 ### K-side relation vocabulary
 | Relation Type | Origin | Description |

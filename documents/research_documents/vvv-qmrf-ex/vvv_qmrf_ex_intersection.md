@@ -1,10 +1,15 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
 # VVV-QMRF-EX — Intersection Analysis
-> **Phase:** 2 preliminary — will be enriched in Phase 4 after similarity search
-> **Date:** 2026-05-20
-> **Source graph:** `data/vvv_qmrf_ex_graph.json`
-> **Full data:** `data/phase2_intersection_report.json`
+> **Phase:** 9 final — post-stretch (v1.6)
+> **Date:** 2026-05-21
+> **Source graph:** `data/vvv_qmrf_ex_graph.json` (420 nodes, 183 edges = 149 SOT + 34 BR_EX injected)
+> **Full data:** `data/phase2_intersection_report_v1.6.json` (immutable v1.6 snapshot); `data/phase2_intersection_report.json` (v1.4 baseline immutable); `data/phase2_intersection_report_post_phase6.json` (Phase 6 mid-state)
+>
+> **Changelog:**
+> - Phase 4 baseline: 16/52 intersection (30.8%)
+> - Phase 6 (KE-PM resolution): 25/52 (48.1%) — +9 KE-PM nodes resolved
+> - **Phase 9 final (v1.6 stretch, this report):** **48/52 (92.3%)** — +23 KE-OF/KE-SC Phase 7 stretch entries promoted to direct BR_EX_BE bridges; Stretch Tier 1 (≥50%) + Tier 2 (≥80%) both PASS
 
 ---
 

@@ -206,8 +206,19 @@ ax.legend(handles=legend_elements, loc='lower right', fontsize=10,
           framealpha=0.9)
 
 ax.set_xlim(-6, 6)
-ax.set_ylim(-6, 7)
+ax.set_ylim(-6.8, 7)
 ax.axis('off')
+
+# M2 Boundary Disclaimer Watermark
+disclaimer_text = (
+    "⚠ STRUCTURAL ANALOGY ONLY — All edges are interpretive mappings, NOT identity claims. "
+    "Graph traversal paths (BE→VVV→QM) must NOT be read as causal or equivalence chains. "
+    "VVV-QMRF-EX does NOT replace Standard QM. See plan §9 boundary controls C1–C7."
+)
+ax.text(0, -6.5, disclaimer_text, fontsize=7, color='#ff6b6b',
+        ha='center', va='top', fontfamily='monospace', alpha=0.85,
+        bbox=dict(boxstyle='round,pad=0.4', facecolor='#1a0a0a', edgecolor='#ff6b6b40', alpha=0.9),
+        wrap=True)
 
 plt.tight_layout()
 diagram_path = os.path.join(OUTPUT_DIR, f"step5_1_network_diagram{SUFFIX}.png")
@@ -293,6 +304,15 @@ cbar = plt.colorbar(im, ax=ax, orientation='vertical', fraction=0.02, pad=0.02)
 cbar.set_label('Edge count', color='white', fontsize=10)
 cbar.ax.yaxis.set_tick_params(color='white')
 plt.setp(plt.getp(cbar.ax, 'yticklabels'), color='white')
+
+# M2 Boundary Disclaimer Watermark
+heatmap_disclaimer = (
+    "⚠ STRUCTURAL ANALOGY ONLY — Edge counts show mapping density, NOT equivalence strength. "
+    "All bridges are interpretive_mapping claim type. See plan §9."
+)
+fig.text(0.5, -0.08, heatmap_disclaimer, fontsize=6, color='#ff6b6b',
+         ha='center', va='top', fontfamily='monospace', alpha=0.85,
+         bbox=dict(boxstyle='round,pad=0.3', facecolor='#1a0a0a', edgecolor='#ff6b6b40', alpha=0.9))
 
 plt.tight_layout()
 heatmap_path = os.path.join(OUTPUT_DIR, f"step5_2_kp_heatmap{SUFFIX}.png")

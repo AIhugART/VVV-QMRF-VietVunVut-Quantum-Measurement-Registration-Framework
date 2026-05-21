@@ -1,12 +1,29 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# VVV-QMRF-EX Boundary Compliance Audit — Phase 6 (Final)
+# VVV-QMRF-EX Boundary Compliance Audit
 
-**Version:** Phase 6.0
-**Date:** 2026-05-20
+**Current version:** Phase 8 Closure (post-stretch v1.6)
+**Last updated:** 2026-05-21
 **Auditor:** Antigravity RCA Engine
-**Graph:** 420 nodes, 160 edges (post-Phase 6 KE-PM resolution)
-**Registries audited:** BR_EX_BE (46 entries), BR_EX_QM (74 entries) = 120 total
+**Graph (current, post-Phase 9):** 420 nodes, 183 edges (149 SOT + 34 BR_EX injected via `phase4_graph_sync.py`)
+**Registries audited (current):** BR_EX_BE (69 entries), BR_EX_QM (74 entries) = **143 total**
+
+> **Phase 9 / v1.6 update:** Phase 8 (2026-05-20) re-audited all 143 entries (69 BR_EX_BE post-Phase 7 stretch + 74 BR_EX_QM) — **0 violations, overall PASS**. See [`data/phase8_boundary_audit_report.json`](data/phase8_boundary_audit_report.json) for the canonical audit JSON. The Phase 6 audit body below is preserved as historical record (the 7-control methodology and findings remain unchanged; only the entry count grew from 120 → 143 via Phase 7 stretch + Phase 8 re-audit confirmed all controls hold).
+
+> **Changelog:**
+> - Phase 6 audit (2026-05-20): 120 entries (46 BE + 74 QM), 160 edges → 0 violations
+> - Phase 7 stretch (2026-05-20): +23 BR_EX_BE entries (BR_EX_BE_00047–00069) added via KE-OF/KE-SC batch RCA gates
+> - Phase 8 closure (2026-05-20): re-audited 143 entries (69 BE + 74 QM) → 0 violations confirmed
+> - Phase 9 final (2026-05-21): graph synced to 183 edges; entry counts unchanged; boundary audit status carries forward unchanged
+
+---
+
+## 0. Historical Snapshot — Phase 6 (Final, preserved for record)
+
+**Phase 6 version:** 6.0
+**Phase 6 date:** 2026-05-20
+**Phase 6 graph:** 420 nodes, 160 edges (post-Phase 6 KE-PM resolution)
+**Phase 6 registries:** BR_EX_BE (46 entries), BR_EX_QM (74 entries) = 120 total
 
 ---
 

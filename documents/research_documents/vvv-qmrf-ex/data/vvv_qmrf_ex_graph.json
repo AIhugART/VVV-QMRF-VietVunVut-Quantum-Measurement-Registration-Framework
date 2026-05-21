@@ -6,7 +6,10 @@
     "phase": "1-graph-construction",
     "date": "2026-05-20",
     "edge_count": 183,
-    "version": "0.6-phase6-expert"
+    "version": "0.6-phase6-expert",
+    "WARNING": "ALL edges in this graph are STRUCTURAL ANALOGIES, not identity claims. Graph traversal paths (BE → VVV → QM) must NOT be interpreted as causal chains, equivalence relations, or evidence that Buddhist epistemology explains quantum mechanics. Each edge carries a Claim Type of 'interpretive_mapping' — never 'identity'. See boundary controls C1–C7 in vvv-qmrf-ex-plan.md §9.",
+    "NON_REPLACEMENT_GUARD": "VVV-QMRF-EX does NOT replace Standard Quantum Mechanics. The registration layer (K) is structurally separate from the physical layer (ρ). No edge in this graph modifies the Born Rule p_QM(o) or creates new physical laws.",
+    "METAPHYSICAL_GUARD": "This graph is a Registration Class D research artifact. It must NOT be used to support metaphysical claims about consciousness, quantum mysticism, or Buddhist-quantum identity theories."
   },
   "nodes": [
     {

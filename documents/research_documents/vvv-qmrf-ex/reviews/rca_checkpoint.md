@@ -3,10 +3,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF-EX Plan — RCA Checkpoint
 
 > **Purpose:** Single-source checkpoint for all RCA findings applied to `vvv-qmrf-ex-plan.md`. Tracks which fixes are applied at which plan version, and which findings remain open.
-> **Last updated:** 2026-05-20 (catch-up via F-RCA-04 — was previously stuck at v1.2; now reflects v1.5 state)
-> **Plan current version:** v1.5
-> **Total findings to date:** 22 (3 from v0→v1.0 isolation review + 6 from v1.0→v1.1 RCA review + 1 from Phase 1 execution + 8 from post-execution audit v1.2→v1.3 + 4 BLOCKING/MAJOR/MINOR from plan-implementation audit v1.4→v1.5)
-> **Status:** Phases 0–6 ✅ ALL COMPLETE under dual-criterion success framework (§10.1, v1.5). Closed findings: Fix 1-3, F1-F7 (10 original) + F8-F15 (8 post-execution) + F-RCA-01/02/03/06 (4 from plan-implementation audit) = **22 closed**. Forward-looking items (deferred, NOT blocking): F-RCA-05, F-RCA-07, F-RCA-09, F-RCA-11 — see §10 below.
+> **Last updated:** 2026-05-21 (Phase 9/10 catch-up — added F-RCA-12/13/14 from Phase 9 v1.6 execution)
+> **Plan current version:** v1.6 EXECUTED
+> **Total findings to date:** 25 (3 v0→v1.0 isolation + 6 v1.0→v1.1 RCA review + 1 Phase 1 execution + 8 post-execution audit v1.2→v1.3 + 4 plan-implementation audit v1.4→v1.5 + 3 Phase 9 execution v1.5→v1.6)
+> **Status:** Phases 0–9 ✅ ALL COMPLETE; Phase 10 doc sync IN PROGRESS. Closed findings: Fix 1-3, F1-F7 (10 original) + F8-F15 (8 post-execution) + F-RCA-01/02/03/06 (4 plan-implementation) + F-RCA-05/07/08/09/10/11 (6 closed in Phase 8 audit) + F-RCA-12/13/14 (3 Phase 9 execution) = **25 closed**. **0 open findings.**
 
 ---
 
@@ -160,6 +160,18 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | F-RCA-03 | 🔴 MAJOR | intersection.md header stale "Phase 2 preliminary" | Auto-bundled in F-RCA-01 fix | Direct header rewrite | Header changed to "Phase 6 final — post-expert-mapping (9 KE-PM resolved → KE-RESOLVED)" + intersection progression added | `vvv_qmrf_ex_intersection.md` line 2 reads "Phase: 6 final" ✅ |
 | F-RCA-06 | 🟡 MAJOR | boundary_audit.md line 65 stale "111" | Trivial 1-line edit | Direct fix | Line 65: "All 111 entries" → "All 120 entries (46 BR_EX_BE + 74 BR_EX_QM)" | `vvv_qmrf_ex_boundary_audit.md` line 65 reads "All 120 entries" ✅ |
 | F-RCA-04 | 🔴 MAJOR | This checkpoint stale (stuck at v1.2) | Direct catch-up | Bulk update | (a) Header v1.2 → v1.5; (b) findings count 10 → 22; (c) Added sections 3c and 3d (this section + previous); (d) §7 + §8 execution tables to be updated; (e) §9 Next Action to be retired | This document reads v1.5 with sections 3c/3d ✅ (you are reading them now) |
+
+---
+
+## 3e. v1.5 → v1.6 Fixes (3 findings — Phase 9 v1.6 execution discoveries)
+
+> **Context:** Discovered during Phase 9 full re-run (plan §14.5). All 3 findings closed in same session via RCA × 5-Why × scoring ≥4/5 in `reviews/rca_plan_v1.6_completion_audit.md`. None required separate session.
+
+| ID | Severity | Subject | Decision method | Decision (score) | Fix applied | Verify |
+|---|---|---|---|---|---|---|
+| F-RCA-12 | 🔴 BLOCKING | Plan §14.5 Step 9.4 design gap — `phase4_bridge_registry.py` cannot safely re-run | 4-option RCA × scoring | A.1+ workaround (4.5/5) — skip phase4 + new helper + manual JSON gen | (a) SKIPPED phase4 re-run in Phase 9.4; (b) Created `phase4_graph_sync.py` parsing both registries to inject 34 non-`reference_copy` edges (33 BE + 1 QM) into `vvv_qmrf_ex_graph.json` (149 → 183); (c) Manually generated `data/phase4_registry_report_v1.6.json` from registry MD counts + Phase 8 audit | Registry MDs unchanged (69 BE + 74 QM = 143 entries preserved); graph at 183 edges; `phase4_registry_report_v1.6.json` matches Phase 8 audit `entries_audited: 143, violations: 0` ✅ |
+| F-RCA-13 | 🟡 MAJOR | NetworkX `links` vs `edges` key inconsistency between phase scripts | Direct fix | Defensive key detection | (a) `phase4_graph_sync.py`: detect `links` if present + non-empty else `edges`; (b) `phase5_visualize.py`: detect key before `node_link_graph(graph_data, edges=KEY)`; (c) `phase6_expert_mapping.py`: same defensive detection + edge_key in all access sites | All 3 patched scripts read 183-edge graph correctly post-sync ✅ |
+| F-RCA-14 | 🟡 MAJOR | `K_SIDE_TYPES` in phase2 missing `BR_EX_BE_STRETCH` (Phase 7 edge type) | Trivial 1-line edit | Add to set membership | Edit `phase2_intersection_analysis.py:55`: `K_SIDE_TYPES = {"VVV_TO_BE", "DRAFT_BRIDGE_BE_VVV", "BR_EX_BE", "BR_EX_BE_NEW", "BR_EX_BE_STRETCH"}` | Re-run intersection: 25 → 48/52 (92.3%); Stretch Tier 1 + Tier 2 both PASS ✅ |
 
 ---
 

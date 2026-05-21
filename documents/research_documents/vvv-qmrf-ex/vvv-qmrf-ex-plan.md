@@ -3,8 +3,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF-EX Expansion Plan
 
 > **Document type:** RCA expansion plan
-> **Status:** Plan v1.6 — Stretch Expansion in execution; Phases 0–8 ALL COMPLETE; Phases 9–10 ⏳ PENDING; F1–F15 + F-RCA-01/02 + F-RCA-05/07/08/09/10/11 applied; 9 KE-PM resolved; 23 KE-OF/KE-SC stretch bridges batch-approved and registered; Phase 8 boundary audit PASS on 143 entries; dual-criterion success framework adopted
-> **Date:** 2026-05-20
+> **Status:** Plan v1.6 — EXECUTED; Phases 0–9 ALL COMPLETE; Phase 10 doc sync IN PROGRESS; F1–F15 + F-RCA-01/02 + F-RCA-05/07/08/09/10/11/12/13/14 applied; 9 KE-PM resolved; 23 KE-OF/KE-SC stretch bridges batch-approved and registered; Phase 8 boundary audit PASS on 143 entries; Phase 9 raw dual-anchored 48/52 = 92.3% (Stretch Tier 1+2 PASS); dual-criterion success framework adopted
+> **Date:** 2026-05-21
 > **Scope:** Expand VVV-QMRF into VVV-QMRF-EX by identifying K-side ↔ ρ-side relationships via two bridge expansion directions
 > **Boundary:** Structural analogy only; no BE-QM identity; no new QM law; no automatic E17+; no replacement of Standard QM
 > **Tools:** NetworkX (graph analysis), Similarity Search Patterns (semantic similarity), Context Management (knowledge graph construction)
@@ -18,6 +18,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 > **Changelog v1.4 → v1.5 (2026-05-20):** Applied 2 BLOCKING fixes from `reviews/rca_plan_implementation_audit.md` (decided via 3-round RCA × 5-Why × scoring ≥4/5). **F-RCA-01:** Phase 2 baseline restored — `data/phase2_intersection_report.json` restored from git commit `2bffc3f` (Phase 4-era state: 16 intersection, 149 edges); post-Phase 6 state preserved in new file `data/phase2_intersection_report_post_phase6.json` (25 intersection, 160 edges). Added `snapshot_phase` field to all 7 phase JSONs to prevent future baseline loss. New rule added to §7: phase reports are immutable. **F-RCA-02:** Phase 5/6 success criterion replaced with dual-criterion framework — **Primary (Completeness):** effective ≥80% coverage (covered + structural exceptions); **Secondary (Discovery quality):** raw dual-anchored ≥30%. Both met → Phase 5/6 ✅ PASS honestly. Raw ≥50% / ≥80% retained as stretch goals (future expert mapping). §10.1 and §13 lines 631-632 updated.
 >
 > **Changelog v1.5 → v1.6 (2026-05-20) — PROPOSED, AWAITING EXECUTION:** Added Section 14 — Stretch Expansion Plan covering Phases 7–10 with the goal of lifting raw dual-anchored from 48.1% (25/52) toward Stretch Tier 1 (≥50%, ≥26 nodes) and Stretch Tier 2 (≥80%, ≥42 nodes) by promoting up to 23 KE-OF + KE-SC nodes to direct BR_EX_BE entries (range `BR_EX_BE_00047`–`BR_EX_BE_00069`). **Decision parameters (user-confirmed 2026-05-20):** Q1=batch-approve per category; Q2=split threshold (KE-OF strict 4.5/5, KE-SC relaxed 3.5/5 due to parent inheritance support); Q3=split output files (`phase7_ke_of_rca_log.md` and `phase7_ke_sc_rca_log.md`). 3-round rejection protocol on all RCA gates. Audit closure for F-RCA-05/07/08/09/10/11. Full re-run of Phases 1–6 into immutable `_v1.6.json` snapshots (no overwrite of v1.5 files).
+>
+> **Changelog v1.6 PROPOSED → v1.6 EXECUTED (2026-05-21):** Phase 9 + partial Phase 10 completed (commit `d8ec025` builds on `9525eb8` baseline). **Phase 9 results:** 6 `*_v1.6.json` immutable snapshots + 2 `*_v1.6.png` images written; raw dual-anchored intersection jumped 25/52 → **48/52 (92.3%)**, achieving Stretch Tier 1 (≥50%) AND Tier 2 (≥80%). Immutability invariant verified — `git diff HEAD` on 6 v1.5 phase JSONs = ZERO. **3 new RCA findings closed:** **F-RCA-12** — `phase4_bridge_registry.py` cannot safely re-run (no Phase 6/7 awareness); fixed via A.1+ workaround (new `phase4_graph_sync.py` injects 34 missing edges from registry MDs; manual gen of `phase4_registry_report_v1.6.json`). **F-RCA-13** — NetworkX `links` vs `edges` key inconsistency between phase1 (default `links`) and phase4_bridge_registry/phase5/phase6 (custom `edges`); fixed via defensive key detection in 3 scripts. **F-RCA-14** — `K_SIDE_TYPES` in phase2 was missing `BR_EX_BE_STRETCH` (Phase 7 edge type), causing intersection to stay at 25 instead of jumping to 48; fixed at `phase2_intersection_analysis.py:55`. All 6 phase scripts now accept `VVV_QMRF_EX_SUFFIX` env var (Option D-refined). Full audit: [`reviews/rca_plan_v1.6_completion_audit.md`](reviews/rca_plan_v1.6_completion_audit.md).
 
 ---
 
@@ -736,33 +738,38 @@ documents/research_documents/vvv-qmrf-ex/
 | 8.4 | F-RCA-10 | ✅ DONE — Added baseline/current qualifier: Phase-4 baseline 111 entries; post-Phase 6 120 entries; post-Phase 7 143 entries | edited §13 |
 | 8.5 | F-RCA-09 | ✅ DONE — Updated §5.2 expectation: Top-N non-singleton communities map to BIAN; total count dominated by orphan BE nodes is not a quality metric | edited §5.2 |
 
-### 14.5 Phase 9 — Full Re-run (immutable `_v1.6` snapshots)
+### 14.5 Phase 9 — Full Re-run (immutable `_v1.6` snapshots) ✅ EXECUTED
 
-| Step | Script | Output (immutable, NEW filename) |
-|---|---|---|
-| 9.1 | `phase1_graph_construction.py` | `data/phase1_validation_report_v1.6.json` (`snapshot_phase: "v1.6-stretch"`) |
-| 9.2 | `phase2_intersection_analysis.py` (with deterministic post-detection community ordering; NetworkX 3.3 does not support `random_state` for `greedy_modularity_communities`) | `data/phase2_intersection_report_v1.6.json` — expected intersection ≥26 (Stretch Tier 1) or ≥42 (Stretch Tier 2) depending on Phase 7 ACCEPT rate |
-| 9.3 | `phase3_similarity_search.py` | `data/phase3_similarity_report_v1.6.json` — verify cosine ≥0.50 for all 23 new entries |
-| 9.4 | `phase4_bridge_registry.py` | `data/phase4_registry_report_v1.6.json` — ghost count = 0; total BR_EX_BE = 46 + N_accepted (N_accepted ∈ [0,23]) |
-| 9.5 | `phase5_visualize.py` | `data/phase5_coverage_report_v1.6.json` + `phase5_output/step5_1_network_diagram_v1.6.png` + `step5_2_kp_heatmap_v1.6.png` |
-| 9.6 | `phase6_expert_mapping.py` | `data/phase6_expert_mapping_report_v1.6.json` — verify 9 KE-PM resolutions intact |
-| 9.7 | Numerical consistency sanity check | append section to `reviews/rca_plan_v1.6_completion_audit.md` |
+**Completion date:** 2026-05-21 (commit `d8ec025`)
 
-**Immutability invariant:** `git diff HEAD -- data/phase{1,2,3,4,5,6}*_report.json` (excluding `_v1.6` and `_post_phase6` suffixes) must show ZERO modifications after Phase 9 completes.
+**Execution result:** All 6 phase scripts patched with `SUFFIX` env var (Option D-refined); 6 immutable `*_v1.6.json` reports + 2 `*_v1.6.png` images produced; raw dual-anchored intersection **48/52 (92.3%)** — Stretch Tier 1 (≥50%) AND Tier 2 (≥80%) both PASS. Three new RCA findings discovered + closed: **F-RCA-12** (phase4 unsafe re-run → A.1+ workaround via new `phase4_graph_sync.py`), **F-RCA-13** (NetworkX `links`/`edges` key inconsistency), **F-RCA-14** (`K_SIDE_TYPES` missing `BR_EX_BE_STRETCH`).
+
+| Step | Script | Output (immutable, NEW filename) | Status |
+|---|---|---|---|
+| 9.1 | `phase1_graph_construction.py` | `data/phase1_validation_report_v1.6.json` (`snapshot_phase: "v1.6-stretch"`) | ✅ DONE |
+| 9.1.5 | `phase4_graph_sync.py` (new helper, A.1+ fix for F-RCA-12) | Injected 34 missing edges (33 BE + 1 QM) into `vvv_qmrf_ex_graph.json` (149 → 183) | ✅ DONE |
+| 9.2 | `phase2_intersection_analysis.py` (with deterministic post-detection community ordering; NetworkX 3.3 does not support `random_state` for `greedy_modularity_communities`) | `data/phase2_intersection_report_v1.6.json` — intersection **48/52 = 92.3%**, exceeds both Tier 1 (≥26) and Tier 2 (≥42) | ✅ DONE |
+| 9.3 | `phase3_similarity_search.py` | `data/phase3_similarity_report_v1.6.json` — Tier2 BE=2 / QM=13 | ✅ DONE |
+| 9.4 | ~~`phase4_bridge_registry.py`~~ — **SKIPPED per F-RCA-12 A.1+ fix.** Manual generation from registry MDs + Phase 8 audit data. | `data/phase4_registry_report_v1.6.json` — ghost count = 0; total BR_EX_BE = 69 (= 46 + 23 accepted); total BR_EX_QM = 74 | ✅ DONE |
+| 9.5 | `phase5_visualize.py` | `data/phase5_coverage_report_v1.6.json` + `phase5_output/step5_1_network_diagram_v1.6.png` + `step5_2_kp_heatmap_v1.6.png` | ✅ DONE |
+| 9.6 | `phase6_expert_mapping.py` | `data/phase6_expert_mapping_report_v1.6.json` — 9 KE-PM resolutions intact | ✅ DONE |
+| 9.7 | Numerical consistency sanity check | [`reviews/rca_plan_v1.6_completion_audit.md`](reviews/rca_plan_v1.6_completion_audit.md) | ✅ DONE |
+
+**Immutability invariant:** `git diff HEAD -- data/phase{1,2,3,4,5,6}*_report.json` (excluding `_v1.6` and `_post_phase6` suffixes) shows **ZERO modifications** ✅ PASSED.
 
 ### 14.6 Phase 10 — Documentation Synchronization
 
-| Step | File | Update |
-|---|---|---|
-| 10.1 | `vvv-qmrf-ex-plan.md` | Bump status v1.6 PROPOSED → v1.6 EXECUTED; mark Section 14 phases ✅ Done; append new changelog row to header |
-| 10.2 | `vvv_qmrf_ex_intersection.md` | Header → "Phase 9 final — post-stretch (v1.6)"; add changelog row: Phase 6 (25) → Phase 9 stretch (final raw count) |
-| 10.3 | `vvv_qmrf_ex_boundary_audit.md` | Update line 9 / 65 / 81 / 116 to final entry count (≥120, ≤143); add Phase 7–9 changelog block |
-| 10.4 | `vvv_qmrf_ex_gaps.md` | Recompute K-gap to retain only `KE-QI` (4 nodes) + `KE-{OF,SC}-RCA-REJECTED-3R` as true gaps |
-| 10.5 | `reviews/rca_checkpoint.md` | Bump v1.5 → v1.6; findings count 22 → 22 + new Phase 7–9 findings; add Section 3e |
-| 10.6 | `reviews/rca_inventory.md` + `reviews/vvv_qmrf_ex_effectiveness.md` | Re-validate effectiveness metrics with new raw % and total entries |
-| 10.7 | `reviews/rca_plan_v1.6_completion_audit.md` | New file — read-only audit verifying Phase 7–9 outputs match Section 14 claims; cross-check JSON ↔ MD ↔ git |
-| 10.8 | `data/vvv_qmrf_ex_context.json` | Bump version 0.4 → 0.5; update `edge_count`, `node_count`, add `greedy_modularity_random_state_supported: false`, `replacement_control: "stable_post_detection_sort"`, `snapshot_phase: "post-stretch-v1.6"` |
-| 10.9 | `ex_schema_addendum.md` | If Phase 7 introduces `operator_decomposition` or `sub_concept_direct_anchor` to Bridge Relation whitelist, document additions |
+| Step | File | Update | Status |
+|---|---|---|---|
+| 10.1 | `vvv-qmrf-ex-plan.md` | Bump status v1.6 PROPOSED → v1.6 EXECUTED; mark Section 14 phases ✅ Done; append new changelog row to header | ✅ DONE (this edit) |
+| 10.2 | `vvv_qmrf_ex_intersection.md` | Header → "Phase 9 final — post-stretch (v1.6)"; add changelog row: Phase 6 (25) → Phase 9 stretch (48 final raw count) | ✅ DONE (Phase 9.2 auto-regen + header bump) |
+| 10.3 | `vvv_qmrf_ex_boundary_audit.md` | Update line 9 / 65 / 81 / 116 to final entry count (143); add Phase 7–9 changelog block | ✅ DONE |
+| 10.4 | `vvv_qmrf_ex_gaps.md` | Recompute K-gap to retain only `KE-QI` (4 nodes) + `KE-{OF,SC}-RCA-REJECTED-3R` as true gaps | ✅ DONE (Phase 9.2 auto-regen reflects 4 K-gaps) |
+| 10.5 | `reviews/rca_checkpoint.md` | Bump v1.5 → v1.6; findings count 22 → 22 + new Phase 7–9 findings (F-RCA-12/13/14); add Section 3e | ✅ DONE |
+| 10.6 | `reviews/rca_inventory.md` + `reviews/vvv_qmrf_ex_effectiveness.md` | Re-validate effectiveness metrics with new raw 92.3% and total 143 entries | ✅ DONE |
+| 10.7 | `reviews/rca_plan_v1.6_completion_audit.md` | New file — read-only audit verifying Phase 7–9 outputs match Section 14 claims; cross-check JSON ↔ MD ↔ git | ✅ DONE (committed `d8ec025`) |
+| 10.8 | `data/vvv_qmrf_ex_context.json` | Bump version 0.4 → 0.7; update `edge_count: 183`, `node_count: 420`, add `greedy_modularity_random_state_supported: false`, `replacement_control: "stable_post_detection_sort"`, `snapshot_phase: "post-stretch-v1.6"` | ✅ DONE |
+| 10.9 | `ex_schema_addendum.md` | Document Phase 7 stretch Bridge Relation additions: `operator_decomposition` + `sub_concept_direct_anchor` | ✅ DONE |
 
 ### 14.7 Risks
 

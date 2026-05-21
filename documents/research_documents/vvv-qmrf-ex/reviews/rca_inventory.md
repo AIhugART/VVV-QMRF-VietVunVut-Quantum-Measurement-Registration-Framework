@@ -1,7 +1,42 @@
 # RCA Inventory — Tài sản hiện có cho VVV-QMRF-EX
 
-> **Ngày kiểm kê:** 2026-05-20
+> **Ngày kiểm kê gốc:** 2026-05-20
+> **Cập nhật Phase 9:** 2026-05-21 (Section 0 mới)
 > **Mục đích:** Trả lời "RCA hiện nay đã có sẵn gì?" — liệt kê tất cả artifacts mà VVV-QMRF-EX có thể consume trực tiếp
+
+---
+
+## 0. Phase 9 v1.6 — Artefacts mới được tạo (2026-05-21)
+
+> Phase 9 EXECUTED hoàn tất (commit `d8ec025`). 8 file v1.6 immutable + 2 file helper mới được thêm vào inventory:
+
+### 0.1 Immutable v1.6 phase snapshots (`data/`)
+
+| # | File | Schema field highlight |
+|---|---|---|
+| 1 | `phase1_validation_report_v1.6.json` | `snapshot_phase: "v1.6-stretch"`; 420 nodes, 149 edges (SOT-only baseline) |
+| 2 | `phase2_intersection_report_v1.6.json` | intersection_count=48, k_gaps=4, rho_gaps=1, raw_dual_anchored_percent=92.3 |
+| 3 | `phase3_similarity_report_v1.6.json` | Tier1=0 / Tier2_BE=2 / Tier2_QM=13; embedding model `all-mpnet-base-v2` dim=768 |
+| 4 | `phase4_registry_report_v1.6.json` | Manual gen per F-RCA-12 A.1+ fix; BR_EX_BE=69, BR_EX_QM=74 |
+| 5 | `phase5_coverage_report_v1.6.json` | K-effective 100%, ρ-effective 100% |
+| 6 | `phase6_expert_mapping_report_v1.6.json` | 9 KE-PM resolutions intact |
+| 7 | `phase5_output/step5_1_network_diagram_v1.6.png` | Publication-quality network diagram, 3 layers visually distinct |
+| 8 | `phase5_output/step5_2_kp_heatmap_v1.6.png` | BIAN-grouped K-ρ strength heatmap |
+
+### 0.2 New helper script + audit (project root + `reviews/`)
+
+| # | File | Role |
+|---|---|---|
+| 9 | [`phase4_graph_sync.py`](../phase4_graph_sync.py) | A.1+ helper for F-RCA-12 — parses both registry MDs, injects 34 non-`reference_copy` edges into graph; idempotent |
+| 10 | [`reviews/rca_plan_v1.6_completion_audit.md`](rca_plan_v1.6_completion_audit.md) | Full Phase 9/10 closure audit with F-RCA-12/13/14 findings + Success Criteria final status |
+
+### 0.3 Final state metrics
+
+- **Graph:** 420 nodes, **183 edges** (149 SOT + 34 BR_EX injected via graph_sync)
+- **Registry total:** **143 entries** (69 BR_EX_BE + 74 BR_EX_QM)
+- **Raw dual-anchored intersection:** **48/52 = 92.3%** — Stretch Tier 1 + Tier 2 both PASS
+- **Boundary violations:** 0 (Phase 8 audit on 143 entries)
+- **Immutability invariant:** preserved — git diff on 6 v1.5 phase JSONs = ZERO
 
 ---
 

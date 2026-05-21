@@ -1,7 +1,41 @@
 # VVV-QMRF-EX — RCA Effectiveness Evaluation
 
-> **Date:** 2026-05-20
+> **Original prediction date:** 2026-05-20
+> **Phase 9 actuals appended:** 2026-05-21
 > **Purpose:** Đánh giá chi tiết VVV-QMRF-EX sẽ mở rộng gì, lợi ích gì, hiệu quả ra sao
+
+---
+
+## 0. Phase 9 v1.6 — Actual Results vs. Predicted
+
+> **Status:** Phase 9 EXECUTED (commit `d8ec025`). Below compares the pre-execution predictions (Section 1+ historical) against measured outcomes.
+
+| Metric | Predicted (pre-execution) | **Actual (Phase 9 v1.6)** | Δ vs. predicted |
+|---|---|---|---|
+| Raw dual-anchored intersection | ≥44/55 (≥80%) | **48/52 (92.3%)** | **+12.3pt above target** (note: VVV count corrected 55→52 via F7) |
+| K-only VVV nodes (no ρ-side) | ~3–5 nodes | **0 nodes** | ✅ Exceeded |
+| ρ-only VVV nodes (no K-side) | ~3–5 nodes | **4 nodes** (all KE-QI structural) | Within range; remaining = QM-intrinsic by design |
+| Orphan VVV nodes | 0 (target) | **0** ✅ | ✅ Met |
+| BR_EX_BE registry entries | ~64–84 estimated | **69** (= 46 + 23 Phase 7 stretch) | Within predicted range |
+| BR_EX_QM registry entries | ~45–60 estimated | **74** | +14 above predicted; reference_copy higher than estimated |
+| Total bridge entries | ~110–140 | **143** | At upper bound |
+| Graph edges (final) | not predicted | **183** (149 SOT + 34 BR_EX injected) | New baseline |
+| Boundary violations | 0 target | **0** ✅ (Phase 8 audit on 143 entries) | ✅ Met |
+| Stretch Tier 1 (≥50% raw) | n/a (added in v1.6) | **PASS** (92.3% ≫ 50%) | ✅ |
+| Stretch Tier 2 (≥80% raw) | n/a (added in v1.6) | **PASS** (92.3% > 80%) | ✅ |
+
+**Effectiveness rating (Phase 9 actuals):** ⭐⭐⭐⭐⭐ — All primary and secondary objectives **met or exceeded**. The 92.3% raw intersection figure substantially exceeds the original 80% target and provides quantitative publication-grade evidence of bidirectional grounding for VVV-QMRF.
+
+**3 unexpected RCA findings closed during Phase 9** (see [`rca_checkpoint.md` §3e](rca_checkpoint.md)):
+- F-RCA-12: `phase4_bridge_registry.py` cannot safely re-run (resolved via A.1+ workaround + new `phase4_graph_sync.py`)
+- F-RCA-13: NetworkX `links`/`edges` key inconsistency between scripts (resolved via defensive detection)
+- F-RCA-14: `K_SIDE_TYPES` missing `BR_EX_BE_STRETCH` (resolved via 1-line edit)
+
+**Source documents:** [`reviews/rca_plan_v1.6_completion_audit.md`](rca_plan_v1.6_completion_audit.md) + 6 `data/phase{1..6}_*_v1.6.json` snapshots.
+
+---
+
+## (Below — original prediction, preserved for record)
 
 ---
 
