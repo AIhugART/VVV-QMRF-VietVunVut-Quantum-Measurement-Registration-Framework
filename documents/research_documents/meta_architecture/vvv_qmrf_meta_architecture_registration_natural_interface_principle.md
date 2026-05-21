@@ -297,8 +297,8 @@ ENI:    φᵢ (natural interface)    → general principle covering Λ, κ, and 
 
 | Document | Section | Role |
 |----------|---------|------|
-| [BIAN1_resolution_verification.md](../achives/gap/BIAN1_resolution_verification.md) | Full BIAN-1 RCA | Source evidence |
-| [RCA_BIAN1_E8_vs_Lemma.md](../achives/review/RCA_BIAN1_E8_vs_Lemma.md) | E8 vs Lemma decision | Resolution path |
+| [BIAN1_resolution_verification.md](../archives/gap/BIAN1_resolution_verification.md) | Full BIAN-1 RCA | Source evidence |
+| [RCA_BIAN1_E8_vs_Lemma.md](../archives/review/RCA_BIAN1_E8_vs_Lemma.md) | E8 vs Lemma decision | Resolution path |
 | [vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md](../synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) | §4d: S1-Λ (Registration-State Update Pipeline) | First ENI instance |
 | [vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md](../framework/vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md) | §3: Λ operator | Operator origin |
 | [Jordan_Siddiqi_QM_Measurement_concept_table.md](../../published_documents/Jordan_Siddiqi_QM_Measurement_concept_table.md) | #12, #17, #29, #51, #57 | QM-side mapping |

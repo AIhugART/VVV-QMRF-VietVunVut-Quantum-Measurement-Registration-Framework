@@ -279,9 +279,9 @@ S1 Pipeline (Registration-State Update Pipeline):
 | E4 Postulate | Λ operator origin | [E4](../framework/vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md) §3 |
 | E5 Postulate | Ā(M) output domain | [E5](../framework/vvv_qmrf_framework_e05_internal_representation_encoding_postulate.md) §3 |
 | S1 Pipeline | Integration site | [S1](vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) §4d |
-| E8 vs Lemma | Architecture decision | [Decision](../achives/review/RCA_BIAN1_E8_vs_Lemma.md) |
-| BIAN-1 Verification | Complete resolution | [Verification](../achives/gap/BIAN1_resolution_verification.md) |
-| ENI Principle | Generalization | [ENI](../achives/review/RCA_BIAN1_new_epistemic.md) |
+| E8 vs Lemma | Architecture decision | [Decision](../archives/review/RCA_BIAN1_E8_vs_Lemma.md) |
+| BIAN-1 Verification | Complete resolution | [Verification](../archives/gap/BIAN1_resolution_verification.md) |
+| ENI Principle | Generalization | [ENI](../archives/review/RCA_BIAN1_new_epistemic.md) |
 | GCS | Classification | [GCS](../meta_architecture/vvv_qmrf_meta_architecture_gap_classification_system.md) |
 | Capstone | Full yield | [Capstone](../meta_architecture/vvv_qmrf_meta_architecture_bian_01_registration_establishment.md) |
 

@@ -363,8 +363,8 @@ Categories 02, 04, 05, 07, 08, 10, and 12 are **not Class C** — they are Class
 
 | Document | Role |
 |----------|------|
-| [RCA_BIAN1_new_epistemic.md](../achives/review/RCA_BIAN1_new_epistemic.md) | Registration Natural Interface derivation — legacy filename retained |
-| [BIAN_gap_analysis_ver_01.md](../achives/gap/BIAN_gap_analysis_ver_01.md) | 20 BIAN gap definitions |
+| [RCA_BIAN1_new_epistemic.md](../archives/review/RCA_BIAN1_new_epistemic.md) | Registration Natural Interface derivation — legacy filename retained |
+| [BIAN_gap_analysis_ver_01.md](../archives/gap/BIAN_gap_analysis_ver_01.md) | 20 BIAN gap definitions |
 | [BIAN_index_SOT.md](../gap/BIAN_index_SOT.md) | Node/edge registry |
 | [vvv_qmrf_registration_categories_index.md](../category/vvv_qmrf_registration_categories_index.md) | Category resolution registry |
 | [vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md](../synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md) | S1 + S1-Λ — Registration-State Update Pipeline |

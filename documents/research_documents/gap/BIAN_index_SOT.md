@@ -270,13 +270,13 @@ No separate node exists in the 263-node BE system. These concepts are structural
 | 2026-05-12 | BIAN-2,4,5,6,7,16,17,18,19 | Resolution status | 🔓 Open | ✅ Resolved | De facto pipeline (Category + Framework) confirmed by RCA audit |
 | 2026-05-12 | BIAN-12,13,14,15 | Resolution status | ⚠️ Partial | ✅ Resolved | E8–E11 postulates created, completing gap→category→framework pipeline |
 | 2026-05-12 | BIAN-3,8,9,10,11 | Resolution status | 🔓 Open | ✅ Resolved | Category 11–15 + E12–16 postulates created; all 19 active BIANs now resolved |
-| 2026-05-12 | BIAN-1 | SOT consolidation | External files (BIAN1_E8_vs_lemma_decision.md, BIAN1_resolution_verification.md) | Inline Part 6 | Decision dossier merged into SOT §6.1–6.6; source files archived to achives/gap/ |
+| 2026-05-12 | BIAN-1 | SOT consolidation | External files (BIAN1_E8_vs_lemma_decision.md, BIAN1_resolution_verification.md) | Inline Part 6 | Decision dossier merged into SOT §6.1–6.6; source files archived to archives/gap/ |
 
 ---
 
 ## Part 6 — BIAN-1 Resolution Dossier
 
-> Consolidated from `BIAN1_E8_vs_lemma_decision.md` (§2–9) and `BIAN1_resolution_verification.md` (§0–10). Both originals archived to `achives/gap/`. This Part is the **inline SOT** for the BIAN-1 decision record.
+> Consolidated from `BIAN1_E8_vs_lemma_decision.md` (§2–9) and `BIAN1_resolution_verification.md` (§0–10). Both originals archived to `archives/gap/`. This Part is the **inline SOT** for the BIAN-1 decision record.
 
 ---
 

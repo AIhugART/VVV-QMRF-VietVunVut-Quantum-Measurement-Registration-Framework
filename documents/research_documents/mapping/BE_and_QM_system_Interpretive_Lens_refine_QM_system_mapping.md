@@ -5,7 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Method: Tier-by-tier mapping (system) augmented with four interpretive lenses as a secondary heuristic layer. The six-tier Pramāṇavāda structure remains the primary backbone.
 ## Scope: Epistemology only. No metaphysics, soteriology, or cosmology.
 ## Node/Edge Codes: BE node and edge definitions follow the single RCA SOT: [system_be_full.md](../../../SYSTEM_Buddhist_Epistemology/system_be_full.md)
-## Interpretive lens source: [bei_framework_4_axioms.md](../achives/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
+## Interpretive lens source: [bei_framework_4_axioms.md](../archives/Framework_Buddhist_Epistemology_Interpretation_of_Quantum_Measurement/bei_framework_4_axioms.md)
 
 **Document type:** mapping
 
@@ -59,7 +59,7 @@ Evidence and provenance from auxiliary RCA tables may support retrieval and audi
 
 # Line-by-Line RCA Integration Log — System-Mapping Repairs
 
-This file is derived from [BE_and_QM_system_Interpretive_Lens_refine_QM_mapping.md](../achives/BE_and_QM_system_Interpretive_Lens_refine_QM_mapping.md) and applies targeted line-level repairs for system-mapping consistency.
+This file is derived from [BE_and_QM_system_Interpretive_Lens_refine_QM_mapping.md](../archives/BE_and_QM_system_Interpretive_Lens_refine_QM_mapping.md) and applies targeted line-level repairs for system-mapping consistency.
 
 | No. | Source area | Root cause | Repair | Result | Evaluation |
 | --- | --- | --- | --- | --- | --- |

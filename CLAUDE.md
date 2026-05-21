@@ -87,7 +87,7 @@ This project maps relationships between Buddhist epistemology (Pramāṇavāda �
 | `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_refine_mapping.md` | Primary deep-analysis BE-QM mapping that applies the BE SOT. |
 | `documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_system_mapping.md` | Formal BE-QM system mapping that applies BE node/edge codes from the BE SOT. |
 
-Archived (superseded): `documents/research_documents/achives/`
+Archived (superseded): `documents/research_documents/archives/`
 
 ## Working guidelines
 

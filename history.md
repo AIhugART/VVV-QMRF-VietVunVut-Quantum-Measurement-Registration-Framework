@@ -207,7 +207,7 @@ This history is derived from these active project files:
 ### 2026-05-15T09:00+07:00 — Framework Folder RCA Audit (Opus 4.6 Thinking)
 
 **Auditor:** Google Gemini — Opus 4.6 Thinking (Antigravity agent)  
-**Method:** Line-by-line logic verification of all 19 files in `documents/research_documents/framework/` (excluding `achives/`), cross-checked against standard QM physics, Buddhist Epistemology source fidelity, internal cross-file consistency, and CLAUDE.md boundary rules.  
+**Method:** Line-by-line logic verification of all 19 files in `documents/research_documents/framework/` (excluding `archives/`), cross-checked against standard QM physics, Buddhist Epistemology source fidelity, internal cross-file consistency, and CLAUDE.md boundary rules.  
 **Files audited:** index.md, formal_registration_state_measurement_model.md, E01–E17 postulate files.
 
 **Discovered 22 issues (C1–C3 critical, M1–M11 moderate, m1–m8 minor):**
@@ -255,7 +255,7 @@ This history is derived from these active project files:
 ### 2026-05-15T17:00+07:00 — Meta-Architecture Folder RCA Audit (Opus 4.6 Thinking)
 
 **Auditor:** Google Gemini — Opus 4.6 Thinking (Antigravity agent)  
-**Method:** Line-by-line logic verification of all 7 files in `documents/research_documents/meta_architecture/` (excluding `achives/`), cross-checked against framework/ postulate files (E1–E17), category/ files (Cat 01–15), standard QM physics, Buddhist Epistemology source fidelity, and internal cross-file consistency.  
+**Method:** Line-by-line logic verification of all 7 files in `documents/research_documents/meta_architecture/` (excluding `archives/`), cross-checked against framework/ postulate files (E1–E17), category/ files (Cat 01–15), standard QM physics, Buddhist Epistemology source fidelity, and internal cross-file consistency.  
 **Files audited:**
 - F1: `bian_01_registration_establishment.md` (330 lines)
 - F2: `class_x_gap_triage.md` (386 lines)
@@ -307,7 +307,7 @@ This history is derived from these active project files:
 3. F1/F3/F5: Sync all postulate/category counts to E1–E17 / Cat 01–15
 
 **Remediation status:** ⏳ Pending — audit report generated, no patches applied yet.  
-**Report:** [rca_audit_meta_architecture.md](documents/research_documents/achives/review/rca_audit_meta_architecture.md)
+**Report:** [rca_audit_meta_architecture.md](documents/research_documents/archives/review/rca_audit_meta_architecture.md)
 
 ### 2026-05-16 — Registration-Layer Formula Formalization
 

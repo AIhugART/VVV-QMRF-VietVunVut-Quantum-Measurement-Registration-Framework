@@ -169,7 +169,7 @@ Jordan và Siddiqi phát biểu tường minh trong chuyên khảo 2024: *"diễ
 | Document | Content |
 |----------|---------|
 | [README.md](../../../README.md) | Project overview, 16 Postulates, 20 BIAN gaps |
-| [root_case_epistemic_act.md](../achives/root_case_epistemic_act.md) | Full root case analysis, source of §4 |
+| [root_case_epistemic_act.md](../archives/root_case_epistemic_act.md) | Full root case analysis, source of §4 |
 | [BIAN_index_SOT.md](../gap/BIAN_index_SOT.md) | Master BIAN gap index |
 | [VVV-QMRF GCS gap classification system](vvv_qmrf_meta_architecture_gap_classification_system.md) | Gap classification methodology |
 

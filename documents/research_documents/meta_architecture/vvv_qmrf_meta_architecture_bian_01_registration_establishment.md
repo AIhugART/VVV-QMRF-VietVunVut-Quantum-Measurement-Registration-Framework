@@ -69,7 +69,7 @@ BIAN-1 (gap)
 | **Status** | Integrated into `synthesis/vvv_qmrf_synthesis_s1_registration_state_update_pipeline.md §4d` (Registration-State Update Pipeline) |
 | **Cite** | VVV-QMRF §S1-Λ |
 
-**Artifact:** [BIAN1_resolution_verification.md](../achives/gap/BIAN1_resolution_verification.md)
+**Artifact:** [BIAN1_resolution_verification.md](../archives/gap/BIAN1_resolution_verification.md)
 
 ### 2b. ENI — Registration Natural Interface (legacy code: Epistemic Natural Interface) / Giao diện Ghi nhận Tự nhiên
 
@@ -82,7 +82,7 @@ BIAN-1 (gap)
 | **Instance** | S1-Λ is the first (and currently only) confirmed ENI instance |
 | **Cite** | VVV-QMRF §ENI |
 
-**Artifact:** [RCA_BIAN1_new_epistemic.md](../achives/review/RCA_BIAN1_new_epistemic.md)
+**Artifact:** [RCA_BIAN1_new_epistemic.md](../archives/review/RCA_BIAN1_new_epistemic.md)
 
 ### 2c. GCS — Gap Classification System / Hệ thống Phân loại Khoảng trống
 
@@ -301,9 +301,9 @@ AFTER BIAN-1:
 
 | Artifact | Content | Status |
 |----------|---------|:------:|
-| [RCA_BIAN1_E8_vs_Lemma.md](../achives/review/RCA_BIAN1_E8_vs_Lemma.md) | E8 rejection decision | ✅ Final |
-| [BIAN1_resolution_verification.md](../achives/gap/BIAN1_resolution_verification.md) | Complete BIAN-1 resolution evidence | ✅ Final |
-| [RCA_BIAN1_new_epistemic.md](../achives/review/RCA_BIAN1_new_epistemic.md) | ENI principle derivation | ✅ Final |
+| [RCA_BIAN1_E8_vs_Lemma.md](../archives/review/RCA_BIAN1_E8_vs_Lemma.md) | E8 rejection decision | ✅ Final |
+| [BIAN1_resolution_verification.md](../archives/gap/BIAN1_resolution_verification.md) | Complete BIAN-1 resolution evidence | ✅ Final |
+| [RCA_BIAN1_new_epistemic.md](../archives/review/RCA_BIAN1_new_epistemic.md) | ENI principle derivation | ✅ Final |
 | [vvv_qmrf_meta_architecture_gap_classification_system.md](vvv_qmrf_meta_architecture_gap_classification_system.md) | GCS full audit of 20 BIAN | ✅ Final |
 | **This document** | Capstone synthesis — all 5 components | ✅ Final |
 
