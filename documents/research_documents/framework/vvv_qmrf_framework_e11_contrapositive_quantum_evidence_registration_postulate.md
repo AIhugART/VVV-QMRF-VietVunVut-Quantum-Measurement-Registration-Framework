@@ -187,6 +187,9 @@ E11 (no direct target absorption/coupling in the ideal branch, yes K-side inform
 1. Not claiming all null events are informative — only those in properly structured superposition experiments (E10 Condition 1 must hold).
 2. Not claiming physical causality is violated — the particle's wave function was always in superposition; the null result updates the registration state, not physical history.
 3. Not claiming this replaces direct measurement — E11 and PVM are complementary registration instruments.
+4. Not claiming "absence of disturbance" is automatically an independent postulate. If the registered object is the target path/state inferred through a structured null branch, the case remains E11. A separate E17 would require a distinct K-side object: registration of the measurement-channel condition itself, not merely the target inference.
+
+VN boundary note: E11 không tự động biến "vắng mặt disturbance" thành một postulate riêng. Nếu đối tượng ghi nhận là đường đi/trạng thái mục tiêu được suy ra qua nhánh null có cấu trúc, trường hợp đó vẫn thuộc E11. E17 chỉ cần RCA riêng nếu đối tượng ghi nhận là chính điều kiện của measurement-channel.
 
 ---
 

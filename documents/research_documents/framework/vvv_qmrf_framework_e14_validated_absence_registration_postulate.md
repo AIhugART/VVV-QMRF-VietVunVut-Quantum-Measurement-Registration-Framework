@@ -104,6 +104,14 @@ E10 (Validity gate) — conditions for valid registration
 | "Π̂_absent^(ℋ_M) operator definition" | **D** |
 | "EAC ≠ NRE ≠ IFSI" | **M** (structural analysis) |
 
+## 7. What E14 Does NOT Claim
+
+1. Not claiming every null result is valid absence registration — only null results inside an E10-valid measurement context have this authority.
+2. Not claiming absence outside the tested subspace — E14 registers absence only within the measurement-accessible domain defined by the setup.
+3. Not claiming "absence of disturbance" is automatically a separate postulate. If disturbance is operationalized as the tested back-action property, its absence is an E14 specialization. A separate E17 would require a distinct K-side object: registration of the measurement-channel condition itself, not merely absence of a measured property.
+
+VN boundary note: E14 không nói mọi kết quả rỗng đều là ghi nhận vắng mặt hợp lệ. Nếu "disturbance" được đặt thành thuộc tính back-action đang được kiểm tra, thì "absence of disturbance" là trường hợp chuyên biệt của E14. E17 chỉ cần RCA riêng nếu đối tượng ghi nhận là chính điều kiện của measurement-channel.
+
 ---
 
 *Source: category/vvv_qmrf_category_13_e14_validated_absence_registration.md, framework/vvv_qmrf_framework_e10_tripartite_registration_validity_matrix_postulate.md, framework/vvv_qmrf_framework_e09_null_registering_system_event_postulate.md, BIAN_index_SOT.md*
