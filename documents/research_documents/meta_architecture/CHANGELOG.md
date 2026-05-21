@@ -54,15 +54,15 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Question for each bridge:** Do K1-K8 invalidate or alter any operational bridge defined in paper v2.0?
 
-| Bridge | Paper § | What it does | Preservation check | Verdict |
-|---|---|---|---|---|
-| **Condition A** | §4.3 | Wigner interference → requires_K_joint=1 | K1-K8 do not reference `requires_K_joint` directly. Bridge operates at Level 4 (D_joint). K-space axioms do not force or prevent requires_K_joint=1. | **PASS — Bridge unchanged.** |
-| **Condition B** | §4.3 | Direct comparison → requires_K_joint=1 | Same as above. K1-K5 are silent on comparison architecture. | **PASS — Bridge unchanged.** |
-| **Condition B2** | §4.3 | LF constraint → requires_K_joint=1 | Same as above. | **PASS — Bridge unchanged.** |
-| **Condition C** | §4.3 | No interference → requires_K_joint=0 | K1-K8 do not force K_joint construction. K_R remains isolated unless D_joint demands otherwise. | **PASS — Bridge unchanged.** |
-| **Condition D** | §4.3 | Separable state → requires_K_joint=0 | K1-K8 do not reference entanglement or separability (ρ-side properties). | **PASS — Bridge unchanged.** |
-| **Condition E** | §4.3 | Independent bookkeeping → requires_K_joint=0 | K1-K8 do not conflate K_R set membership with joint validity demands. | **PASS — Bridge unchanged.** |
-| **ODC_K** | §4.6 | Model-fit test for K_joint existence | K1-K8 define K-space structure but do not pre-determine ODC_K outcome. τ remains a free parameter. K4-K7 define validity propagation — ODC_K tests whether a joint model preserving K4-K7 fits data. | **PASS — ODC_K unchanged. K4-K7 provide the validity constraints ODC_K checks.** |
+| Bridge | Paper § | What it does | K-axiom dependency | Preservation check | Verdict |
+|---|---|---|---|---|---|
+| **Condition A** | §4.3 | Wigner interference → requires_K_joint=1 | **K4, K5, K6, K7** — K4 supplies baseline validity; K5/K6 govern joint-context conflict and authority; K7 blocks closure until D_joint is resolved. | K1-K8 do not reference `requires_K_joint` directly. Bridge operates at Level 4 (D_joint). K-space axioms do not force or prevent requires_K_joint=1. | **PASS — Bridge unchanged.** |
+| **Condition B** | §4.3 | Direct comparison → requires_K_joint=1 | **K4, K5, K6, K7** — direct comparison requires a shared C_K where default validity, invalidation, authority, and closure constraints can be evaluated. | Same as above. K1-K5 are silent on comparison architecture. | **PASS — Bridge unchanged.** |
+| **Condition B2** | §4.3 | LF constraint → requires_K_joint=1 | **K4, K5, K6, K7** — LF-constrained joint validity requires preservation of default validity, conflict handling, authority, and unresolved-demand closure. | Same as above. | **PASS — Bridge unchanged.** |
+| **Condition C** | §4.3 | No interference → requires_K_joint=0 | **K4, K7** — K4 preserves isolated default validity; K7 allows closure because no pending D_joint demand exists. K5/K6 do not fire without C_K. | K1-K8 do not force K_joint construction. K_R remains isolated unless D_joint demands otherwise. | **PASS — Bridge unchanged.** |
+| **Condition D** | §4.3 | Separable state → requires_K_joint=0 | **K4, K7** — separability keeps baseline validity within each K_R and permits closure absent a joint demand. K5/K6 remain inactive unless another bridge creates C_K. | K1-K8 do not reference entanglement or separability (ρ-side properties). | **PASS — Bridge unchanged.** |
+| **Condition E** | §4.3 | Independent bookkeeping → requires_K_joint=0 | **K4, K7** — independent bookkeeping preserves per-K_R default validity and closes once no pending joint requirement remains. | K1-K8 do not conflate K_R set membership with joint validity demands. | **PASS — Bridge unchanged.** |
+| **ODC_K** | §4.6 | Model-fit test for K_joint existence | **K4, K5, K6, K7** — ODC_K tests whether a candidate joint model can preserve default validity, invalidation constraints, authority, and closure timing. | K1-K8 define K-space structure but do not pre-determine ODC_K outcome. τ remains a free parameter. K4-K7 define validity propagation — ODC_K tests whether a joint model preserving K4-K7 fits data. | **PASS — ODC_K unchanged. K4-K7 provide the validity constraints ODC_K checks.** |
 
 **Operational bridge audit verdict: 7/7 bridges preserved (no bridge broken by K1-K7). However: bridges B, B2, and ODC_K have an indirect semantic dependency on K4-K7 validity structure. K4-K7 define the validity propagation rules that these bridges operationalize. If K4-K7 were to change significantly, the semantic content of these bridges would shift even though their formal predicates (requires_K_joint, D_joint, AdmJoint) remain syntactically unchanged. This is a semantic dependency, not a syntactic break.**
 
