@@ -14,6 +14,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Plan reference:** `papers/Testable_Prediction_Section/extended_wigners_friend_k_side_incommensurability/plan/VVV-QMRF_K_Space_Axiomatization_Plan.md`
 
 **Scope:** Formal registration-logic axioms, bridge theorems, and current open items only. Historical sprint, audit, proof-attempt, and freeze-check records are kept in `CHANGELOG.md`.
+**Level 4 revision governance:** Semantic changes to Level 4 predicates (`D_joint`, `requires_K_joint`, `AdmJoint`, `⊥_K`, `Bridge_EWF`, `ODC_K`) are controlled by `vvv_qmrf_meta_architecture_level_4_unfreeze_gate.md`. Non-semantic clarifications do not unfreeze Level 4.
 **Out of scope:** This document does not modify Standard Quantum Mechanics, does not change any VVV-QMRF postulate (E1-E16), does not upgrade claim classes of paper v2.0, and does not claim K-space is a canonical QM object.
 
 > **DISCLAIMER / CẢNH BÁO:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.

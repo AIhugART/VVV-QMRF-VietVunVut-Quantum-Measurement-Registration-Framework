@@ -14,6 +14,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Fix:** Keep the current formal axioms, bridge theorems, and open items in `K_Space_Axiomatization.md`; preserve historical records here.
 
+## 0.1 Level 4 Unfreeze Gate Record / Bản ghi Cổng Unfreeze Level 4
+
+**RCA result:** Level 4 revision policy is separated into `vvv_qmrf_meta_architecture_level_4_unfreeze_gate.md`. `K_Space_Axiomatization.md` remains the canonical axiom/theorem reference; this changelog preserves only the historical record.
+
 ## 3. Audit Matrices / Ma trận Kiểm toán
 
 ### 3.1 E1-E7 Core Postulate Audit

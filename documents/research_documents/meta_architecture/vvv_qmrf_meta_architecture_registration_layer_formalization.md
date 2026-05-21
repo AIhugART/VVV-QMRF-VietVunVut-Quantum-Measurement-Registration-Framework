@@ -9,6 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Phase:** Formalization Phase
 **Status:** RCA refreshed (v0.2) — formula registry source; K-space axiomatization is controlled by `K_Space_Axiomatization.md`.
 **Downstream canonicalization:** `K_Space_Axiomatization.md` upgrades the minimal K-state tuple into the K1–K8 registration-logic axiom set and T1–T4 bridge theorem layer.
+**Level 4 governance note:** This file remains a formula registry. Semantic revision of Level 4 predicates is governed by `vvv_qmrf_meta_architecture_level_4_unfreeze_gate.md`, not by local formula wording changes.
 
 ## Legacy terminology cross-reference / Bảng đối chiếu thuật ngữ cũ
 
