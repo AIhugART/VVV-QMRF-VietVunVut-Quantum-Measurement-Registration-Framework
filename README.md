@@ -13,9 +13,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework / Khung lý thuyết:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)<br/>
 **Legacy name / Tên cũ:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)<br/>
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)<br/>
-**Version / Phiên bản:** v4 Final — Registration-Layer Formalization Release / Bản hoàn tất v4 — phát hành hình thức hóa tầng ghi nhận<br/>
-**Status / Trạng thái:** v4 final documentation release — 16 stable registration postulates (E1–E16), E17 measurement-interface proposal, 2 lemmas, and formalized K-side registration formula registry; 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Bản hoàn tất tài liệu v4 — 16 tiên đề ghi nhận ổn định (E1–E16), đề xuất giao diện phép đo E17, 2 bổ đề, và bảng công thức ghi nhận phía K đã được hình thức hóa; đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ<br/>
-**Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF v4 final documentation release — registration-layer formalization / bản hoàn tất tài liệu v4 — hình thức hóa tầng ghi nhận<br/>
+**Version / Phiên bản:** v4.1 Final — Registration-Layer Formalization + Cross-Category Edge Completion / Bản hoàn tất v4.1 — hình thức hóa tầng ghi nhận + hoàn thiện liên kết xuyên danh mục<br/>
+**Status / Trạng thái:** v4.1 final documentation release — 16 stable registration postulates (E1–E16), E17 measurement-interface proposal, 2 lemmas, formalized K-side registration formula registry, 55 VVV-QMRF extension nodes, 131 edges (4 phases), 15 core bridges; 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Bản hoàn tất tài liệu v4.1 — 16 tiên đề ghi nhận ổn định (E1–E16), đề xuất giao diện phép đo E17, 2 bổ đề, bảng công thức ghi nhận phía K đã được hình thức hóa, 55 node mở rộng VVV-QMRF, 131 cạnh (4 pha), 15 cầu nối lõi; đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ<br/>
+**Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF v4.1 final documentation release — registration-layer formalization + cross-category edge completion / bản hoàn tất tài liệu v4.1 — hình thức hóa tầng ghi nhận + hoàn thiện liên kết xuyên danh mục<br/>
 **Disclaimer / Tuyên bố giới hạn:** [VVV-QMRF Research Status & Disclaimer](DISCLAIMER.md)<br/>
 
 ---
@@ -167,7 +167,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│              VVV-QMRF ACTIVE ARCHITECTURE (v4 Final)                │
+│            VVV-QMRF ACTIVE ARCHITECTURE (v4.1 Final)                │
 │                                                                     │
 │  STABLE CORE: E1–E16 (16)    — registration-layer postulates        │
 │    Core:      E1–E7 (7)      — core registration operations         │
@@ -177,7 +177,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 │  CATEGORIES:  Cat 01–15 (15) — registration categories              │
 │  SYNTHESIS:   S1, S2, S3 (3) — integration patterns                 │
 │  META:        ENI, GCS, MIP, PCC + registration-layer formalization │
-│  NODES:       N_QM_VVV_00001–00055 — VVV-QMRF extension nodes       │
+│  NODES:       N_QM_VVV_00001–00055 (55) — VVV-QMRF extension nodes  │
+│  EDGES:       ED_QM_VVV_00001–00131 (131) — 4-phase edge registry   │
+│  BRIDGES:     BR_00001–BR_00015 (15) — QM↔VVV core bridges          │
 │  20 labels accounted for: 19 active gaps resolved + 1 reserved label │
 │                                                                     │
 │  QM preserved: P1–P4 physical formalism and Born rule               │

@@ -10,3 +10,10 @@ desktop.ini
 mcp/markdown-pdf/node_modules/
 mcp/markdown-pdf/test-output/
 build/mermaid-preview/
+
+# Video files (large binaries — use external hosting)
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
