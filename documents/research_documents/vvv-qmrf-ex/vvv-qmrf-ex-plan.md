@@ -956,5 +956,11 @@ Must show ZERO modifications to both v1.5 and v1.6 immutables.
 
 ---
 
+## 19. Core ED_QM_VVV_00123 Reformulation (2026-05-21)
+
+**Trigger:** RCA A (3-round × 5-Why × 4/5 scoring gate, average 4.70/5) identified that `ED_QM_VVV_00123` (Tier B, Phase 4) used the generic relation name `shares_structural_principle_with` without naming the underlying meta-principle, leaving the structural coherence rationale anonymous. Root cause: Phase 4 authoring described the shared property in plain prose but did not elevate it to a named, referenceable concept. **Fix:** relation renamed to `co-instantiates_non_factorization_principle_with`; meta-principle **Registration-Layer Non-Factorization** introduced explicitly — the principle that certain registration structures cannot be decomposed into independent component states. IRB (Cat 14) instantiates this in the spatial/relational domain; Self-Completion (Cat 02) instantiates this in the act-result domain. **Impact on EX:** none — `data/*.json` files unmodified; no bridge registry, no baseline metric change. The 86.5% raw dual-anchored v1.7 result is unaffected. Phase 4 gating @L378 ("parallel structural principle") still satisfied — new relation is a named specialization. **Outcome:** 00123 is now precisely typed; the meta-principle is explicitly named and referenceable. If a future dedicated node for Registration-Layer Non-Factorization is created (BIAN-XX or N_QM_VVV_XXXXX), 00123 can be upgraded to reference its node code.
+
+---
+
 © 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
 To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/

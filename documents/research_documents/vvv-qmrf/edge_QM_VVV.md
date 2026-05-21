@@ -408,7 +408,7 @@ ED_QM_VVV_00122: N_QM_VVV_00053 (Kṣaṇa Event) → N_QM_VVV_00023 (V̂_yava)
 ### Tier B — Structural Coherence (6 edges)
 
 ED_QM_VVV_00123: N_QM_VVV_00025 (IRB / Entanglement-Registration Architecture) → N_QM_VVV_00027 (Self-Completion Matrix)
-- **Relation:** shares_structural_principle_with — Both IRB (Cat 14) and Self-Completion (Cat 02) assert non-factorizability at the registration layer: IRB says entangled subsystems cannot have independent registration states; Self-Completion says registration act and result cannot be factored apart. Same structural principle, different domains.
+- **Relation:** co-instantiates_non_factorization_principle_with — IRB (Cat 14) and Self-Completion (Cat 02) are two distinct instantiations of the same registration-layer meta-principle: **Registration-Layer Non-Factorization**. The principle states that certain registration structures cannot be decomposed into independent component states. IRB instantiates this in the spatial/relational domain (entangled subsystems lack independent registration states); Self-Completion instantiates this in the act-result domain (registration act and registered result cannot be factored apart). Same meta-principle, two domain instantiations.
 - **Cross-category:** Cat 14 (E15) → Cat 02 (E02)
 
 ED_QM_VVV_00124: N_QM_VVV_00029 (REO / Retroactive Registration Override) → N_QM_VVV_00021 (Registration Lock)
