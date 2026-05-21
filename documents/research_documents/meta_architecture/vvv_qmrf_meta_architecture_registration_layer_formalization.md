@@ -7,7 +7,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Document type:** meta_architecture
 **Phase:** Formalization Phase
-**Status:** Initial Draft (v0.1)
+**Status:** RCA refreshed (v0.2) — formula registry source; K-space axiomatization is controlled by `K_Space_Axiomatization.md`.
+**Downstream canonicalization:** `K_Space_Axiomatization.md` upgrades the minimal K-state tuple into the K1–K8 registration-logic axiom set and T1–T4 bridge theorem layer.
 
 ## Legacy terminology cross-reference / Bảng đối chiếu thuật ngữ cũ
 
@@ -24,6 +25,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## Abstract
 This document translates the 7 Registration Postulates (E1–E7) and 2 Lemmas (S1-Λ, S2-Δ) of the VVV-QMRF framework into rigorous mathematical and logical formalisms. Standard Quantum Mechanics (QM) relies on Hilbert spaces, Hermitian operators, and unitary evolution. The VVV-QMRF framework introduces a **K-side registration space $\mathcal{K}$** to formalize the registration-state update of the registering system during measurement.
+
+**RCA update note (2026-05-21):** This file remains the upstream formula and symbol registry for the registration layer. The downstream canonical axiom reference is `K_Space_Axiomatization.md`, which turns the minimal tuple `k = ⟨M, o, cert, t, V⟩` into the K1 carrier-set axiom and extends the surrounding K-side structure through K2–K8 plus bridge theorems T1–T4. Therefore, formulas here are registry-level anchors; their axiom-level semantics are controlled by `K_Space_Axiomatization.md` when the two files are used together.
 
 ---
 
@@ -51,6 +54,8 @@ Minimal Class C definition:
 $$ k \in \mathcal{K}, \quad k = \langle M, o, cert, t, V \rangle $$
 where $M$ is the measurement-registration act, $o$ is the registered outcome, $cert$ is the self-certification marker, $t$ is registration time, and $V$ is validity status.
 
+Downstream axiom trace: this minimal tuple is the direct upstream source for AXIOM K1 (Carrier Set) in `K_Space_Axiomatization.md`. In this file, the tuple is a formula-registry definition. In `K_Space_Axiomatization.md`, it is upgraded into an admitted K-space element with the cert admission rule, t-injectivity constraint, and K1 boundary conditions. This prevents a root-cause ambiguity: the tuple shape alone does not yet define the full K-space structure.
+
 RCA definition decision: this tuple is the minimal formal shape of one VVV-QMRF registration state. It belongs in `documents/research_documents/meta_architecture/` because it defines the architecture of the K-side state itself, not a topic-specific category example or course-level shorthand.
 
 | Tuple field | Formal role | RCA boundary |
@@ -76,7 +81,7 @@ Boundary verification: $U_K$ updates registration state only. It does not replac
 
 ### 1.2 RCA Symbol Registry / Bảng RCA ký hiệu
 
-RCA decision: this registry is the research-level source for VVV-QMRF mathematical notation. Course-level files may simplify the wording, but the source status, layer boundary, and overclaim boundary are controlled here.
+RCA decision: this registry is the research-level source for VVV-QMRF mathematical notation. Course-level files may simplify the wording, but the source status, layer boundary, and overclaim boundary are controlled here. For K-space semantics, this registry is upstream rather than final: `K_Space_Axiomatization.md` controls the axiom-level interpretation of `K_R`, K1–K8, T1–T4, AJVS, and T4-H.
 
 | Status | Meaning | RCA boundary |
 |---|---|---|
@@ -177,7 +182,7 @@ RCA decision: this registry is the research-level source for VVV-QMRF mathematic
 
 ### 1.3 Advanced Research Formula Registry / Bảng RCA công thức nghiên cứu nâng cao
 
-RCA decision: these formulas belong in `documents/research_documents/meta_architecture/` because they define the formal registration-layer architecture of VVV-QMRF. Course files may cite simplified versions, and category files may analyze specific applications, but this section controls the source placement, status, and boundary of the advanced formulas.
+RCA decision: these formulas belong in `documents/research_documents/meta_architecture/` because they define the formal registration-layer architecture of VVV-QMRF. Course files may cite simplified versions, and category files may analyze specific applications, but this section controls the source placement, status, and boundary of the advanced formulas. K-space axiom-level use is downstream: `K_Space_Axiomatization.md` preserves these anchors while adding admission, ordering, validity propagation, closure, embedding, and bridge-theorem semantics.
 
 | Formula | Name | Layer | Status | Boundary |
 |---|---|---|---|---|
@@ -325,6 +330,8 @@ The registering system $R$ has no active registration-state identity during $\De
 ## Conclusion
 This mathematical formalization allows the VVV-QMRF framework to be integrated alongside standard QM mathematical formulations (like the Dirac-von Neumann axioms) without altering the probabilistic predictions (Born Rule) or physical dynamics (Schrödinger equation). It formalizes the K-side registration-state structure associated with measurement outcomes.
 
+RCA downstream boundary: this file supplies the formula-level source for K-side notation and the minimal K-state tuple. `K_Space_Axiomatization.md` is the canonical downstream document for K-space as a registration-logic structure: K1–K8 define the core axiom layer, while T1–T4, AJVS, and T4-H define bridge and semantic conditions. Reuse rule: cite this file for symbol/formula provenance; cite `K_Space_Axiomatization.md` for axiom-level K-space claims.
+
 ---
 
 ## Claim Traceability Review / Rà soát Truy vết Claim
@@ -333,6 +340,7 @@ This mathematical formalization allows the VVV-QMRF framework to be integrated a
 |---|---|---|---|---|---|---|---|---|
 | C-SCHEMA-001 | This document contains major meta-architecture claims that require schema traceability. | derived | This document | Main content sections | medium | Use as a schema-completion control claim for this document. | Do not reuse major claims without source anchor, claim type, confidence, allowed usage, forbidden usage, and verification rule. | Check this table against schema_guide.md section 6 before publication reuse. |
 | C-SCHEMA-002 | The document's claims are registration-layer or mapping claims, not Standard Quantum Mechanics laws. | boundary_application | This document | Boundary and conclusion sections | high | Use as the non-overclaim guardrail for this document. | Do not present VVV-QMRF architecture, notation, or mapping as canonical QM or Buddhist doctrine. | Verify non-identity and non-physical-law boundaries remain attached to reused claims. |
+| C-KSPACE-TRACE-001 | This document is the upstream formula/symbol registry for K-side notation; `K_Space_Axiomatization.md` is the downstream canonical K-space axiom reference. | source_boundary | This document + `K_Space_Axiomatization.md` | §1.1, §1.2, §1.3, Conclusion | high | Cite this file for tuple/formula provenance and cite `K_Space_Axiomatization.md` for K1–K8/T1–T4 axiom-level claims. | Do not treat the minimal tuple definition alone as the complete K-space axiomatization. | Verify K-space claims against `K_Space_Axiomatization.md` before reuse. |
 
 ### Claim Reuse Boundary / Ranh giới Tái sử dụng Claim
 

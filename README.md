@@ -13,9 +13,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework / Khung lý thuyết:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)<br/>
 **Legacy name / Tên cũ:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)<br/>
 **Author / Tác giả:** VietVunVut (Viet - Nguyen Xuan)<br/>
-**Version / Phiên bản:** v4.1 Final — Registration-Layer Formalization + Cross-Category Edge Completion / Bản hoàn tất v4.1 — hình thức hóa tầng ghi nhận + hoàn thiện liên kết xuyên danh mục<br/>
-**Status / Trạng thái:** v4.1 final documentation release — 16 stable registration postulates (E1–E16), E17 measurement-interface proposal, 2 lemmas, formalized K-side registration formula registry, 55 VVV-QMRF extension nodes, 131 edges (4 phases), 15 core bridges; 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Bản hoàn tất tài liệu v4.1 — 16 tiên đề ghi nhận ổn định (E1–E16), đề xuất giao diện phép đo E17, 2 bổ đề, bảng công thức ghi nhận phía K đã được hình thức hóa, 55 node mở rộng VVV-QMRF, 131 cạnh (4 pha), 15 cầu nối lõi; đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ<br/>
-**Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF v4.1 final documentation release — registration-layer formalization + cross-category edge completion / bản hoàn tất tài liệu v4.1 — hình thức hóa tầng ghi nhận + hoàn thiện liên kết xuyên danh mục<br/>
+**Version / Phiên bản:** v4.2 RCA Refresh — Registration-Layer Formalization + K-Space Axiomatization + Cross-Category Edge Completion / Bản làm mới RCA v4.2 — hình thức hóa tầng ghi nhận + tiên đề hóa K-space + hoàn thiện liên kết xuyên danh mục<br/>
+**Status / Trạng thái:** v4.2 RCA refresh — 16 stable registration postulates (E1–E16), E17 measurement-interface proposal, 2 lemmas, formalized K-side registration formula registry, canonical K-space axiomatization (K1–K8 + T1–T4 bridge theorems), 55 VVV-QMRF extension nodes, 131 edges (4 phases), 15 core bridges; 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Bản làm mới RCA v4.2 — 16 tiên đề ghi nhận ổn định (E1–E16), đề xuất giao diện phép đo E17, 2 bổ đề, bảng công thức ghi nhận phía K đã được hình thức hóa, tiên đề hóa K-space chuẩn tham chiếu (K1–K8 + các định lý cầu nối T1–T4), 55 node mở rộng VVV-QMRF, 131 cạnh (4 pha), 15 cầu nối lõi; đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ<br/>
+**Cite / Trích dẫn:** VietVunVut (2026), VVV-QMRF v4.2 RCA refresh — registration-layer formalization + K-space axiomatization + cross-category edge completion / bản làm mới RCA v4.2 — hình thức hóa tầng ghi nhận + tiên đề hóa K-space + hoàn thiện liên kết xuyên danh mục<br/>
 **Disclaimer / Tuyên bố giới hạn:** [VVV-QMRF Research Status & Disclaimer](DISCLAIMER.md)<br/>
 
 ---
@@ -177,6 +177,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 │  CATEGORIES:  Cat 01–15 (15) — registration categories              │
 │  SYNTHESIS:   S1, S2, S3 (3) — integration patterns                 │
 │  META:        ENI, GCS, MIP, PCC + registration-layer formalization │
+│               + K-space axiomatization (K1-K8, T1-T4)              │
 │  NODES:       N_QM_VVV_00001–00055 (55) — VVV-QMRF extension nodes  │
 │  EDGES:       ED_QM_VVV_00001–00131 (131) — 4-phase edge registry   │
 │  BRIDGES:     BR_00001–BR_00015 (15) — QM↔VVV core bridges          │
@@ -542,7 +543,7 @@ buddhist-epistemology-quantum-measurement/
 │       ├── category/                  ← 15 registration category files / 15 file phạm trù ghi nhận
 │       ├── bridge/                    ← Bridge documents between category and framework layers / Tài liệu cầu nối giữa tầng category và framework
 │       ├── mapping/                   ← BE↔QM mapping documents and archives / Tài liệu ánh xạ BE↔QM và archive
-│       ├── meta_architecture/         ← ENI, GCS, MIP, PCC, and registration-layer formalization / ENI, GCS, MIP, PCC và hình thức hóa tầng ghi nhận
+│       ├── meta_architecture/         ← ENI, GCS, MIP, PCC, registration-layer formalization, and K-space axiomatization / ENI, GCS, MIP, PCC, hình thức hóa tầng ghi nhận, và tiên đề hóa K-space
 │       ├── vvv-qmrf/                  ← VVV-QMRF node table, dictionary, and system diagrams / Bảng node, từ điển, và sơ đồ hệ thống VVV-QMRF
 │       └── review/                    ← RCA audit reports / Báo cáo audit RCA
 └── papers/                            ← Paper-specific working material / Tư liệu làm việc riêng cho bài viết
@@ -625,6 +626,7 @@ buddhist-epistemology-quantum-measurement/
 | **v2** | after / sau 05:00:00 2026-05-12 | Extended framework — 16 Postulates (E1–E16), 15 Categories (Cat 01–15), 20 labels accounted for: 19 active gaps resolved + 1 reserved label / Khung mở rộng — 16 tiên đề (E1–E16), 15 phạm trù (Cat 01–15), đã ghi nhận 20 nhãn: 19 khoảng trống đang hoạt động đã giải quyết + 1 nhãn dự trữ |
 | **v3** | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. / Đổi tên dự án chính thức từ tên cũ `VVV-EQM` sang tên công khai mới `VVV-QMRF`. Lý do RCA: dùng `registration-state update` / `cập nhật trạng thái ghi nhận` cho cập nhật phía `K` vượt khỏi nhận thức con người; chỉ dùng `detector response` cho phản ứng vật lý của máy đo. |
 | **v4 final** | 2026-05-16 | Registration-layer formalization release — E1–E16 remain stable registration postulates; E17 remains a measurement-interface proposal separating physical `ρ` transition from `K`-side registration-state update; the K-side formula registry is centralized and boundary-checked against Standard QM replacement. / Bản hoàn tất hình thức hóa tầng ghi nhận — E1–E16 vẫn là các tiên đề ghi nhận ổn định; E17 vẫn là đề xuất giao diện phép đo tách chuyển đổi vật lý `ρ` khỏi `registration-state update` phía `K`; bảng công thức phía K được tập trung hóa và kiểm tra ranh giới để không thay thế QM chuẩn. |
+| **v4.2 RCA refresh** | 2026-05-21 | K-space axiomatization README update — README now points to the canonical K-space foundation: K1–K8 core axioms, T1–T4 bridge theorems, AJVS semantic postulate, and T4-H conditional hypothesis. / Cập nhật README theo RCA cho tiên đề hóa K-space — README nay chỉ rõ nền tảng K-space chuẩn tham chiếu: các tiên đề lõi K1–K8, định lý cầu nối T1–T4, tiên đề ngữ nghĩa AJVS, và giả thuyết điều kiện T4-H. |
 
 ---
 
@@ -639,6 +641,7 @@ buddhist-epistemology-quantum-measurement/
 | v3 rename update / Cập nhật đổi tên v3 | 10:00:00 2026-05-14 | Official project rename from legacy `VVV-EQM` to new public name `VVV-QMRF`. RCA reason: use `registration-state update` / `cập nhật trạng thái ghi nhận` for the general K-side update beyond human cognition; use `detector response` only for the apparatus' physical response. / Đổi tên dự án chính thức từ tên cũ `VVV-EQM` sang tên công khai mới `VVV-QMRF`. Lý do RCA: dùng `registration-state update` / `cập nhật trạng thái ghi nhận` cho cập nhật phía `K` vượt khỏi nhận thức con người; chỉ dùng `detector response` cho phản ứng vật lý của máy đo. |
 | README RCA refresh / Cập nhật README theo RCA | 2026-05-16 | README aligned with active codebase: E17 proposal, ρ/K measurement-interface boundary, active VVV-QMRF node table, and high-school course directory. / README được căn chỉnh với codebase đang hoạt động: đề xuất E17, ranh giới giao diện phép đo ρ/K, bảng node VVV-QMRF đang hoạt động, và thư mục khóa học phổ thông. |
 | v4 final update / Cập nhật v4 final | 2026-05-16 | Completed VVV-QMRF v4 final documentation update: README version metadata, architecture label, citation note, Version History, and Research Timeline now identify v4 as the registration-layer formalization release. / Hoàn thành cập nhật tài liệu VVV-QMRF v4 final: metadata phiên bản, nhãn kiến trúc, ghi chú trích dẫn, Lịch sử Phiên bản, và Dòng thời gian nghiên cứu nay xác định v4 là bản phát hành hình thức hóa tầng ghi nhận. |
+| K-space README RCA refresh / Cập nhật README theo RCA cho K-space | 2026-05-21 | README extended to include `K_Space_Axiomatization.md` as the canonical registration-logic foundation for K-space: K1–K8, T1–T4, AJVS, and T4-H. / README được mở rộng để ghi nhận `K_Space_Axiomatization.md` là nền tảng registration-logic chuẩn tham chiếu cho K-space: K1–K8, T1–T4, AJVS, và T4-H. |
 
 ---
 
