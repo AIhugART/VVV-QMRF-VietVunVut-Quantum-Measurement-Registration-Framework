@@ -226,8 +226,8 @@ Phase 1 execution finding ───── F7 ──▶ plan §1.1, §2.2, §4.2,
 | Item | Owner | Trigger |
 |---|---|---|
 | Create `ex_schema_addendum.md` | Plan executor | Start of Phase 4 (Bridge Registry Construction) |
-| BIAN-14 structural review (open item #1 from §12) | Separate RCA gate | Before final paper submission |
-| Final BR_XXXXX ID assignment (open item #2 from §12) | Separate RCA gate | When VVV-QMRF v1.0 freeze decided |
+| ~~BIAN-14 structural review (open item #1 from §12)~~ | ✅ Resolved — FOLD (2026-05-21) | C_001/C_002 folded under D_001. See `reviews/bian14_structural_review.md`. |
+| Final BR_XXXXX ID assignment (open item #2 from §12) | Separate RCA gate | When VVV-QMRF v1.0 freeze decided — simplified by BIAN-14 fold (1 structural bridge instead of 3) |
 | EX → Core promotion (Rule I-5) | Separate RCA gate | After VVV-QMRF-EX results validated |
 
 ---

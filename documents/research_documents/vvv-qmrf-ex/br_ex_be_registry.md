@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_BE Registry — K-side Bridge: BE ↔ VVV-QMRF
 
-**Version:** 2.2 (Phase 11 v1.7 — KE-SC threshold raised to 4.0/5 + 1 carve-out)
+**Version:** 2.3 (Phase 11 v1.7 — BIAN-14 structural review FOLD applied)
 **Date:** 2026-05-21
-**Total Entries:** 69 row entries / **66 active** (36 reference-copy + 1 similarity candidate + 9 expert manual + 20 active Phase 7 stretch [13 KE-OF + 7 KE-SC]) + **3 RECLASSIFIED-v1.7** (BR_EX_BE_00061, 00065, 00066 — moved back to KE-SC exception in v1.7 due to threshold raise from 3.5 → 4.0)
-**Namespace:** BR_EX_BE_00001–BR_EX_BE_00069 (no renumber; 3 reclassified rows preserved in-place with v1.7 Status field)
+**Total Entries:** 69 row entries / **64 active** (34 reference-copy + 1 similarity candidate + 9 expert manual + 20 active Phase 7 stretch [13 KE-OF + 7 KE-SC]) + **3 RECLASSIFIED-v1.7** (BR_EX_BE_00061, 00065, 00066) + **2 FOLDED-structural-review** (BR_EX_BE_00003, 00004 — Anvaya/Vyatireka folded under BR_EX_BE_00008 per BIAN-14 structural review)
+**Namespace:** BR_EX_BE_00001–BR_EX_BE_00069 (no renumber; 3 reclassified + 2 folded rows preserved in-place with Status field)
 
 ---
 
@@ -87,6 +87,9 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Boundary Note** | Draft only; gate-passed through 263-node audit cycle but not yet formally verified. |
 | **Rationale** | BE concept provides K-side support via 263-node audit cycle (draft — pending formal verification) |
 | **Origin** | Phase 1 graph |
+| **Status** | FOLDED-structural-review |
+| **Fold-parent** | BR_EX_BE_00008 (Tri-rūpa-hetu → N_QM_VVV_00042) |
+| **Fold-decision** | BIAN-14 structural review (2026-05-21): Anvaya is 2nd condition of Trairūpya, fully captured by D_001 + ED_BE_00111. See `reviews/bian14_structural_review.md`. |
 
 ### BR_EX_BE_00004 — Entry 4
 
@@ -107,6 +110,9 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Boundary Note** | Draft only; gate-passed through 263-node audit cycle but not yet formally verified. |
 | **Rationale** | BE concept provides K-side support via 263-node audit cycle (draft — pending formal verification) |
 | **Origin** | Phase 1 graph |
+| **Status** | FOLDED-structural-review |
+| **Fold-parent** | BR_EX_BE_00008 (Tri-rūpa-hetu → N_QM_VVV_00042) |
+| **Fold-decision** | BIAN-14 structural review (2026-05-21): Vyatireka is 3rd condition of Trairūpya, fully captured by D_001 + ED_BE_00112. BIAN-15 link (BR_EX_BE_00005) remains active. See `reviews/bian14_structural_review.md`. |
 
 ### BR_EX_BE_00005 — Entry 5
 
@@ -187,6 +193,7 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Boundary Note** | Draft only; gate-passed through 263-node audit cycle but not yet formally verified. |
 | **Rationale** | BE concept provides K-side support via 263-node audit cycle (draft — pending formal verification) |
 | **Origin** | Phase 1 graph |
+| **Sub-evidence** | BR_EX_BE_00003 (Anvaya / N_BE_00096), BR_EX_BE_00004 (Vyatireka / N_BE_00097) — folded under this bridge per BIAN-14 structural review (2026-05-21). See `reviews/bian14_structural_review.md`. |
 
 ### BR_EX_BE_00009 — Entry 9
 

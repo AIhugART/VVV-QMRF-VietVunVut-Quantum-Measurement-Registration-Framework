@@ -944,5 +944,11 @@ Must show ZERO modifications to both v1.5 and v1.6 immutables.
 
 ---
 
+## 17. Core Phase 4 Impact on EX Baseline (2026-05-21)
+
+**Trigger:** After v1.7 was frozen, VVV-QMRF Core received an authorized edit adding 16 cross-category internal edges to `vvv-qmrf/edge_QM_VVV.md` (Phase 4: `ED_QM_VVV_00116` → `ED_QM_VVV_00131`; total 115 → 131 edges). This is **not** an EX isolation violation — Rule I-1 (§8) restricts EX scope, not Core authority over its own files. **Impact on EX:** all `data/*_v1.7.json` snapshots remain immutable and continue to reference the 115-edge baseline used for the 86.5% raw dual-anchored result; any future re-run of `phase1_graph_construction.py` will load the new 131-edge state and produce different centrality/density metrics. **Recommendation:** any future EX phase work should snapshot to a new version suffix (e.g. `_v1.8.json`) before re-running scripts, preserving the v1.5/v1.6/v1.7 baseline invariants required by F-RCA-01.
+
+---
+
 © 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
 To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
