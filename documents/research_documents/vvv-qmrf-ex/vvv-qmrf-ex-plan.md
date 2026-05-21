@@ -950,5 +950,11 @@ Must show ZERO modifications to both v1.5 and v1.6 immutables.
 
 ---
 
+## 18. Core/EX Classification Alignment for N_QM_VVV_00009 (2026-05-21)
+
+**Trigger:** RCA Option C (3-round × 5-Why × 4/5 scoring gate, average 4.8/5) closed the Core ↔ EX vocabulary disconnect for `N_QM_VVV_00009` (Elitzur-Vaidman Interaction-Free Measurement Evidence Exemplar). Core file `vvv-qmrf/node_QM_VVV.md` row 9 (and mirror in `vvv-qmrf/dictionary.md` row 9) previously used the ad-hoc tag "Class M external evidence; not a core framework-concept node" while EX exception lists had formally classified the node as `KE-QI` (K-side QM-intrinsic exception, [k_gap_exception_list.md](k_gap_exception_list.md)) + `RE-BI` (ρ-side both-isolated exemplar, [rho_gap_exception_list.md](rho_gap_exception_list.md)) since Phase 5. **Impact on EX:** none — no `data/*.json` files modified, no `br_ex_be_registry.md` edits, no bridge registry change, no baseline metric change. The 86.5% raw dual-anchored v1.7 result is unaffected. **Outcome:** all 52 VVV nodes now carry formal classification in the Core files matching their EX exception/coverage status (45 covered + 4 KE-QI + 3 KE-SC-RECLASSIFIED-v1.7 = 52/52). The CLAUDE.md BIAN definition ("BE concept with no QM equivalent") is preserved unchanged — `N_QM_VVV_00009` is not classified as BIAN because it is a QM-side experimental exemplar, not a BE-side insight. **Recommendation:** future exception nodes added to EX should sync back to Core row status field at creation time to prevent recurrence of Core/EX vocabulary drift; consider adding a sync checklist item to the EX phase template.
+
+---
+
 © 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
 To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
