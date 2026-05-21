@@ -1,17 +1,14 @@
 {
-  "phase": "1-graph-construction",
-  "snapshot_phase": "phase1_frozen",
-  "date": "2026-05-20",
   "total_nodes": 420,
   "be_nodes": 263,
   "vvv_nodes": 52,
   "qm_nodes": 105,
-  "total_edges": 149,
+  "total_edges": 165,
   "edge_type_counts": {
     "DRAFT_BRIDGE_BE_VVV": 21,
     "VVV_TO_QM": 60,
     "VVV_TO_BE": 15,
-    "VVV_INTERNAL": 40,
+    "VVV_INTERNAL": 56,
     "BR_QM_VVV": 13
   },
   "dangling_count": 0,

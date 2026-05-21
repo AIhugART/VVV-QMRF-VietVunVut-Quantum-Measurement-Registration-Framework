@@ -2948,7 +2948,7 @@
       "id": "N_QM_00105"
     }
   ],
-  "edges": [
+  "links": [
     {
       "edge_id": "BR_DRAFT_B_001",
       "relation": "draft_bridge_support",

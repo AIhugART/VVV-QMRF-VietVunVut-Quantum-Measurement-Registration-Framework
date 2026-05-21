@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF-EX Expansion Plan
 
 > **Document type:** RCA expansion plan
-> **Status:** Plan v1.8 — FINALIZED; v1.6 Phases 0–10 ALL COMPLETE; v1.7 Phase 11 KE-SC threshold tightening applied; Phase 12 targeted K-gap RCA applied (`BR_EX_BE_00065` reactivated only under narrowed representational-form claim); F1–F15 + F-RCA-01/02/05/07/08/09/10/11/12/13/14/15 applied; 9 KE-PM + 13 KE-OF + 8 KE-SC accepted (2 KE-SC remain reclassified exceptions); Phase 12 boundary audit PASS on 141 active entries; Phase 12 raw dual-anchored 46/52 = 88.5% (Stretch Tier 1+2 PASS); rigor preserved by narrowed claim boundary
+> **Status:** Plan v1.8 — FINALIZED; v1.6 Phases 0–10 ALL COMPLETE; v1.7 Phase 11 KE-SC threshold tightening applied; Phase 12 targeted K-gap RCA applied (`BR_EX_BE_00065` reactivated only under narrowed representational-form claim); F1–F15 + F-RCA-01/02/05/07/08/09/10/11/12/13/14/15/16 applied; 9 KE-PM + 13 KE-OF + 8 KE-SC accepted (2 KE-SC remain reclassified exceptions); Phase 12 boundary audit PASS on 141 active entries; Phase 12 raw dual-anchored 46/52 = 88.5% (Stretch Tier 1+2 PASS); rigor preserved by narrowed claim boundary; Phase 1/2 RCA re-run records current Core-edge drift (131 VVV edges, 165 EX baseline edges) without mutating v1.7 immutable snapshots
 > **Date:** 2026-05-21
 > **Scope:** Expand VVV-QMRF into VVV-QMRF-EX by identifying K-side ↔ ρ-side relationships via two bridge expansion directions
 > **Boundary:** Structural analogy only; no BE-QM identity; no new QM law; no automatic E17+; no replacement of Standard QM
@@ -961,6 +961,72 @@ Must show ZERO modifications to both v1.5 and v1.6 immutables.
 ## 19. Core ED_QM_VVV_00123 Reformulation (2026-05-21)
 
 **Trigger:** RCA A (3-round × 5-Why × 4/5 scoring gate, average 4.70/5) identified that `ED_QM_VVV_00123` (Tier B, Phase 4) used the generic relation name `shares_structural_principle_with` without naming the underlying meta-principle, leaving the structural coherence rationale anonymous. Root cause: Phase 4 authoring described the shared property in plain prose but did not elevate it to a named, referenceable concept. **Fix:** relation renamed to `co-instantiates_non_factorization_principle_with`; meta-principle **Registration-Layer Non-Factorization** introduced explicitly — the principle that certain registration structures cannot be decomposed into independent component states. IRB (Cat 14) instantiates this in the spatial/relational domain; Self-Completion (Cat 02) instantiates this in the act-result domain. **Impact on EX:** none — `data/*.json` files unmodified; no bridge registry, no baseline metric change. The 86.5% raw dual-anchored v1.7 result is unaffected. Phase 4 gating @L378 ("parallel structural principle") still satisfied — new relation is a named specialization. **Outcome:** 00123 is now precisely typed; the meta-principle is explicitly named and referenceable. If a future dedicated node for Registration-Layer Non-Factorization is created (BIAN-XX or N_QM_VVV_XXXXX), 00123 can be upgraded to reference its node code.
+
+---
+
+## 20. Phase 1/2 RCA Re-run Against Current Core State (2026-05-21)
+
+**Trigger:** User requested RCA re-run of Phase 1 and Phase 2 to update this plan after Core-side Phase 4 edits had already added 16 internal cross-category edges (`ED_QM_VVV_00116`–`ED_QM_VVV_00131`) to `vvv-qmrf/edge_QM_VVV.md`.
+
+### 20.1 Define — Symptom vs Cause
+
+**Symptom:** Re-running `phase1_graph_construction.py` no longer reproduces the old Phase 1 baseline of 115 VVV edges / 149 total graph edges. The current script output reports 131 VVV edges and 165 total graph edges.
+
+**Cause:** The EX scripts read the live Core file `documents/research_documents/vvv-qmrf/edge_QM_VVV.md`. After the Core file was extended from 115 to 131 edges, a current Phase 1 run correctly loads the new Core state. This is not an EX metric regression and not an isolation violation; it is a baseline-version boundary issue.
+
+### 20.2 Trace — 5 Whys
+
+1. Why did Phase 1 output change? -> It parsed 131 VVV edges instead of the earlier 115.
+2. Why did it parse 131? -> `edge_QM_VVV.md` now contains the 16 Core Phase 4 cross-category edges.
+3. Why does EX see Core changes? -> Phase 1 is designed to read Core files as inputs, not from a frozen source snapshot by default.
+4. Why is this important? -> Phase 1/2 current-state runs can diverge from immutable v1.5/v1.6/v1.7 baselines.
+5. **Root cause F-RCA-16:** The plan documented immutable output snapshots but did not explicitly separate **live Core re-run metrics** from **frozen EX baseline metrics** when Core source files change after EX finalization.
+
+### 20.3 Isolate — Starting Point of Failure
+
+The failure starts at the input contract boundary: `phase1_graph_construction.py` reads live Core files and writes unsuffixed reports (`phase1_validation_report.json`, `phase2_intersection_report.json`) unless a version suffix is supplied. This is useful for current-state diagnostics but should not be interpreted as a mutation of v1.7 frozen evidence.
+
+### 20.4 Fix — Current-State Metrics Recorded, Baselines Preserved
+
+**Phase 1 current-state re-run result:**
+
+| Metric | Current result | Boundary interpretation |
+|---|---:|---|
+| BE nodes | 263 | unchanged |
+| VVV nodes | 52 | unchanged; code range still spans `00001–00055` with folded gaps |
+| QM nodes | 105 | unchanged |
+| Total nodes | 420 | unchanged |
+| VVV internal edges | 56 | changed from 40 because Core Phase 4 added 16 internal edges |
+| VVV -> QM edges | 60 | unchanged |
+| VVV -> BE edges | 15 | unchanged |
+| BR graphable bridges | 13 | unchanged; 2 boundary guards skipped |
+| Draft BE -> VVV links | 21 | unchanged |
+| Total graph edges | 165 | changed from old 149 current baseline due to +16 Core internal edges |
+| Dangling edges | 0 | integrity PASS |
+| Orphan nodes | 312 | permitted at Phase 1 |
+
+**Phase 2 current-state re-run result:**
+
+| Metric | Current result | Boundary interpretation |
+|---|---:|---|
+| Dual K-rho intersection | 16/52 | PASS; still >=15 expected floor |
+| K-side gaps | 36 | current pre-expansion baseline gap count |
+| rho-side gaps | 1 | unchanged as a structural diagnostic |
+| Both-gap nodes | 1 | unchanged as a structural diagnostic |
+| Direct BE -> QM edges | 0 | boundary PASS |
+| Communities | 322 | descriptive only; count remains dominated by orphan BE nodes |
+| Sample BE -> VVV -> QM paths | 30 | PASS; all sampled paths route through VVV |
+
+### 20.5 Verify — Root Cause Removed
+
+Verification confirms the visible discrepancy is caused by live Core input drift, not by broken EX parsing:
+
+- Phase 1 integrity check passes with zero dangling edge references.
+- Phase 2 integrity checks pass: intersection >=15 and direct BE -> QM edges = 0.
+- v1.5/v1.6/v1.7 immutable snapshots remain conceptually frozen; the current unsuffixed reports are **current-state diagnostics**, not replacements for those baselines.
+- §17 already records the Core Phase 4 impact; this §20 completes the RCA by attaching concrete Phase 1/2 re-run numbers and the F-RCA-16 boundary rule.
+
+**Forward rule:** Any future publication-facing EX re-run after Core changes should use a new suffix such as `_v1.8` and explicitly label it as `current-core-post-phase4`, rather than comparing it directly against v1.7 frozen metrics.
 
 ---
 
