@@ -54,6 +54,23 @@
 
 **v1.7 source:** [`reviews/rca_plan_v1.7_completion_audit.md`](rca_plan_v1.7_completion_audit.md) + 6 `data/phase{1..6}_*_v1.7.json` snapshots.
 
+### 0.2 Phase 12 finalization — Targeted K-gap RCA closure
+
+> **Status:** Phase 12 finalized. One K-side-only gap (`N_QM_VVV_00022`) was closed by reactivating `BR_EX_BE_00065` under the narrowed claim class `source_analogue_for_internal_representational_form`. Two KE-SC rows remain reclassified.
+
+| Metric | v1.7 final | **Phase 12 final** | Delta |
+|---|---|---|---|
+| Raw dual-anchored | 45/52 (86.5%) | **46/52 (88.5%)** | +1 entry / +2.0pt |
+| K-side gaps (raw) | 7 | **6** | -1 |
+| BR_EX_BE active | 66 | **67** | +1 (`BR_EX_BE_00065`) |
+| Total registry rows | 143 | 143 (2 marked inactive) | unchanged |
+| Graph edges (active) | 180 | **181** | +1 |
+| Boundary violations | 0/140 active | **0/141 active** | boundary preserved |
+
+**Effectiveness rating (Phase 12):** Strong targeted improvement — closes the only realistic KE-SC candidate without broadening BE-QM equivalence. The remaining five K-only targets stay boundary-governed by RCA.
+
+**Phase 12 source:** [`reviews/k_gap_rca_phase11_v1_7.md`](k_gap_rca_phase11_v1_7.md) + regenerated `vvv_qmrf_ex_gaps.md` / `vvv_qmrf_ex_intersection.md`.
+
 ---
 
 ## (Below — original prediction, preserved for record)

@@ -52,13 +52,15 @@ These VVV nodes were previously operator-formalism exceptions. Phase 7 decompose
 | 16 | `N_QM_VVV_00052` | Discrete Transition Operator `T̂_kṣaṇa` | `KE-RESOLVED-STRETCH` | N_BE_00029 (momentariness) | `BR_EX_BE_00058` |
 | 17 | `N_QM_VVV_00055` | Indeterminacy Operator `Ŝ_saṃśaya` | `KE-RESOLVED-STRETCH` | N_BE_00007 (samsaya) | `BR_EX_BE_00059` |
 
-### 2.3 ~~Sub-concept Exceptions (`KE-SC`)~~ -> 7 RESOLVED in Phase 7 + 3 RECLASSIFIED-v1.7
+### 2.3 ~~Sub-concept Exceptions (`KE-SC`)~~ -> 8 RESOLVED in Phase 7/12 + 2 RECLASSIFIED-v1.7
 
-> **Phase 11 v1.7 update (2026-05-21):** Of the 10 KE-SC entries originally accepted at threshold 3.5/5, v1.7 raises the threshold to **4.0/5 with 1 carve-out at 3.8** (boundary-guard-justified):
+> **Phase 11 v1.7 update (2026-05-21):** Of the 10 KE-SC entries originally accepted at threshold 3.5/5, v1.7 raised the threshold to **4.0/5 with 1 carve-out at 3.8** (boundary-guard-justified):
 > - **7 retained** (rows 18, 20, 21, 22, 25, 26, 27 — scores ≥4.0 except row 18 at 3.8 with sharp boundary)
 > - **3 reclassified** back to `KE-SC` exception (rows 19, 23, 24 — scores 3.7–3.8 with thin structural boundary)
+>
+> **Phase 12 targeted RCA update (2026-05-21):** row 23 (`N_QM_VVV_00022` / `BR_EX_BE_00065`) is reactivated at **4.0/5** only after narrowing the claim to `source_analogue_for_internal_representational_form`; physical detector storage and apparatus-level encoding remain outside the BE anchor.
 
-These VVV nodes were previously sub-concept exceptions inheriting K-side coverage from parent VVV nodes. Phase 7 added direct-but-cautious K-side anchors after RCA scoring at threshold 3.5/5.
+These VVV nodes were previously sub-concept exceptions inheriting K-side coverage from parent VVV nodes. Phase 7 added direct-but-cautious K-side anchors after RCA scoring at threshold 3.5/5; Phase 12 reactivated one reclassified row by fixing the root cause through claim narrowing rather than by treating broad encoding as equivalent to BE representative perception.
 
 | # | VVV Node | Concept | Status | Mapped BE concept | BR_EX_BE ID |
 |---|----------|---------|--------|-------------------|-------------|
@@ -67,7 +69,7 @@ These VVV nodes were previously sub-concept exceptions inheriting K-side coverag
 | 20 | `N_QM_VVV_00012` | Intrinsic Causal Triggering Phase | `KE-RESOLVED-STRETCH` | N_BE_00250 (tadutpatti) | `BR_EX_BE_00062` |
 | 21 | `N_QM_VVV_00013` | Extrinsic Registration Certification Phase | `KE-RESOLVED-STRETCH` | N_BE_00234 (avisamvaditva) | `BR_EX_BE_00063` |
 | 22 | `N_QM_VVV_00016` | Certified Registration State | `KE-RESOLVED-STRETCH` | N_BE_00052 (prama) | `BR_EX_BE_00064` |
-| 23 | `N_QM_VVV_00022` | Internal Representation Encoding | **`KE-SC-RECLASSIFIED-v1.7`** (was `KE-RESOLVED-STRETCH` at v1.6; score 3.8/5 below v1.7 threshold 4.0/5; boundary too thin) | N_BE_00179 (representative perception) | `BR_EX_BE_00065` (inactive in v1.7) |
+| 23 | `N_QM_VVV_00022` | Internal Representation Encoding | **`KE-RESOLVED-STRETCH-PHASE12-NARROWED`** (reactivated at score 4.0/5 only as representational-form support; not physical storage or apparatus-encoding equivalence) | N_BE_00179 (representative perception) | `BR_EX_BE_00065` |
 | 24 | `N_QM_VVV_00024` | Registration-Locking Boundary in Delayed-Choice Erasure | **`KE-SC-RECLASSIFIED-v1.7`** (was `KE-RESOLVED-STRETCH` at v1.6; score 3.7/5 below v1.7 threshold 4.0/5) | N_BE_00029 (momentariness) | `BR_EX_BE_00066` (inactive in v1.7) |
 | 25 | `N_QM_VVV_00035` | Primary Registration Closure / Regress-Terminating | `KE-RESOLVED-STRETCH` | N_BE_00011 (svasaṃvedana) | `BR_EX_BE_00067` |
 | 26 | `N_QM_VVV_00040` | Momentary Registering Moments `{o₁, o₂, …, oₙ}` | `KE-RESOLVED-STRETCH` | N_BE_00086 (momentariness) | `BR_EX_BE_00068` |
@@ -91,25 +93,25 @@ All 9 nodes have been mapped to BE analogues via domain expert analysis. Categor
 
 ---
 
-## 3. Coverage Summary (Phase 11 v1.7 update)
+## 3. Coverage Summary (Phase 12 targeted RCA update)
 
 | Status | Count | Percentage |
 |--------|-------|-----------|
-| K-side covered (active BR_EX_BE) | **45** | **86.5%** |
+| K-side covered (active BR_EX_BE) | **46** | **88.5%** |
 | K-side excepted (KE-QI) | 4 | 7.7% |
-| K-side excepted (KE-SC-RECLASSIFIED-v1.7) | **3** | **5.8%** |
+| K-side excepted (KE-SC-RECLASSIFIED-v1.7) | **2** | **3.8%** |
 | ~~K-side excepted (KE-OF)~~ | ~~0~~ | ~~0%~~ |
 | ~~K-side pending (KE-PM)~~ | ~~0~~ | ~~0%~~ |
 | **Total** | **52** | **100%** |
 
 **Effective K-side coverage (covered + structurally excepted):**
-- Covered + KE-QI + KE-SC-RECLASSIFIED-v1.7 = 45 + 4 + 3 = **52/52 = 100%**
-- Raw K-side direct bridge coverage: **45/52 = 86.5%** after v1.7 threshold raise (was 92.3% at v1.6)
-- Remaining structurally excepted nodes: **7/52 = 13.5%** (4 `KE-QI` + 3 `KE-SC-RECLASSIFIED-v1.7`)
+- Covered + KE-QI + KE-SC-RECLASSIFIED-v1.7 = 46 + 4 + 2 = **52/52 = 100%**
+- Raw K-side direct bridge coverage: **46/52 = 88.5%** after Phase 12 targeted reactivation of `BR_EX_BE_00065`
+- Remaining structurally excepted nodes: **6/52 = 11.5%** (4 `KE-QI` + 2 `KE-SC-RECLASSIFIED-v1.7`)
 - Zero pending manual review, KE-OF, or unresolved KE-SC nodes
 
-**v1.6 → v1.7 delta:** -3 active bridges (`BR_EX_BE_00061/00065/00066` marked inactive); intersection drop 48 → 45 (still ≥ Stretch Tier 2 threshold 42).
+**v1.6 → v1.7 → Phase 12 delta:** v1.7 marked 3 bridges inactive (`BR_EX_BE_00061/00065/00066`) and dropped intersection 48 → 45; Phase 12 reactivated `BR_EX_BE_00065` under a narrowed representational-form claim, raising active K-side bridge coverage 45 → 46.
 
 ---
 
-*Exception list updated after Phase 11 v1.7 KE-SC threshold raise. KE-PM, KE-OF, and 7 KE-SC nodes have direct BR_EX_BE entries where RCA thresholds were met; 3 KE-SC entries reclassified back to exception at the new 4.0/5 threshold; 4 KE-QI remain structurally excepted by design.*
+*Exception list updated after Phase 12 targeted K-gap RCA. KE-PM, KE-OF, 7 original KE-SC retained nodes, and 1 narrowed Phase 12 KE-SC node have direct BR_EX_BE entries where RCA thresholds were met; 2 KE-SC entries remain reclassified exceptions at the 4.0/5 threshold; 4 KE-QI remain structurally excepted by design.*

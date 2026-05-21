@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_BE Registry — K-side Bridge: BE ↔ VVV-QMRF
 
-**Version:** 2.3 (Phase 11 v1.7 — BIAN-14 structural review FOLD applied)
+**Version:** 2.4 (Phase 12 targeted K-gap RCA — BR_EX_BE_00065 reactivated with narrowed boundary)
 **Date:** 2026-05-21
-**Total Entries:** 69 row entries / **64 active** (34 reference-copy + 1 similarity candidate + 9 expert manual + 20 active Phase 7 stretch [13 KE-OF + 7 KE-SC]) + **3 RECLASSIFIED-v1.7** (BR_EX_BE_00061, 00065, 00066) + **2 FOLDED-structural-review** (BR_EX_BE_00003, 00004 — Anvaya/Vyatireka folded under BR_EX_BE_00008 per BIAN-14 structural review)
-**Namespace:** BR_EX_BE_00001–BR_EX_BE_00069 (no renumber; 3 reclassified + 2 folded rows preserved in-place with Status field)
+**Total Entries:** 69 row entries / **65 active** (34 reference-copy + 1 similarity candidate + 9 expert manual + 21 active Phase 7/12 stretch [13 KE-OF + 8 KE-SC]) + **2 RECLASSIFIED-v1.7 retained** (BR_EX_BE_00061, 00066) + **2 FOLDED-structural-review** (BR_EX_BE_00003, 00004 — Anvaya/Vyatireka folded under BR_EX_BE_00008 per BIAN-14 structural review)
+**Namespace:** BR_EX_BE_00001–BR_EX_BE_00069 (no renumber; 2 reclassified + 2 folded rows preserved in-place with Status field)
 
 ---
 
@@ -1320,14 +1320,14 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Rationale** | Certified registration state receives a direct K-side valid-outcome anchor. |
 | **Origin** | Phase 7 KE-SC stretch mapping; score 4.1/5; see `phase7_ke_sc_rca_log.md` |
 
-### BR_EX_BE_00065 — Entry 65 ⚠️ RECLASSIFIED-v1.7
+### BR_EX_BE_00065 — Entry 65 (Phase 12 targeted reactivation)
 
 | Field | Value |
 |-------|-------|
 | **BR_EX_ID** | `BR_EX_BE_00065` |
-| **Type** | stretch_expert_mapping_RECLASSIFIED_v1_7 |
-| **v1.7 Status** | **RECLASSIFIED-v1.7-KE-SC-THRESHOLD-RAISE** (no longer active in v1.7 graph) |
-| **v1.7 Reason** | Score 3.8/5 below v1.7 KE-SC threshold 4.0/5; boundary guard "representational encoding ≠ physical storage" too thin (both concepts share "representation" semantic; distinction is more semantic than structural) |
+| **Type** | stretch_expert_mapping |
+| **Phase 12 Status** | **REACTIVATED-TARGETED-RCA** (active only as a narrowed source analogue for internal representational form) |
+| **Phase 12 Reason** | RCA narrowed the claim from broad internal encoding equivalence to representational-form support. `N_BE_00179` plus `ED_BE_00130` supports mediated representative apprehension, while physical detector storage and apparatus encoding remain outside the BE anchor. |
 | **Source Edge Type** | `BR_EX_BE_NEW` |
 | **BE Node** | `N_BE_00179` |
 | **BE Concept** | Representative perception |
@@ -1336,11 +1336,11 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **VVV Concept** | Internal Representation Encoding |
 | **Direction** | N_BE_00179 → N_QM_VVV_00022 |
 | **Relation Type** | sub_concept_direct_anchor |
-| **Claim Class** | interpretive_mapping |
-| **Confidence** | 0.38 (RCA score; Phase 7 batch-approved at 3.5/5 threshold; v1.7 reclassified) |
-| **Boundary Note** | Maps representational encoding, not physical storage. |
-| **Rationale** | Internal encoding receives a direct K-side anchor in representative perception. |
-| **Origin** | Phase 7 KE-SC stretch mapping; score 3.8/5; see `phase7_ke_sc_rca_log.md` and v1.7 annotations |
+| **Claim Class** | source_analogue_for_internal_representational_form |
+| **Confidence** | 0.40 (RCA score; Phase 12 narrowed re-score at v1.7 KE-SC threshold) |
+| **Boundary Note** | Maps mediated representational form only; does not map physical detector storage, apparatus memory, or engineering-level encoding equivalence. |
+| **Rationale** | Internal representation receives a narrow K-side anchor in representative perception only at the level of mediated representational form, not physical storage or detector-trace engineering. |
+| **Origin** | Phase 7 KE-SC stretch mapping; reclassified in v1.7; Phase 12 targeted K-gap RCA reactivated with narrowed boundary; see `reviews/k_gap_rca_phase11_v1_7.md` |
 
 ### BR_EX_BE_00066 — Entry 66 ⚠️ RECLASSIFIED-v1.7
 

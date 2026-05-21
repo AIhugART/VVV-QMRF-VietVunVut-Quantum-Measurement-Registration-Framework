@@ -4520,6 +4520,16 @@
       "br_ex_id": "BR_EX_QM_00074",
       "similarity": 0.61,
       "phase": "phase4-sim"
+    },
+    {
+      "source": "N_BE_00179",
+      "target": "N_QM_VVV_00022",
+      "edge_type": "BR_EX_BE_STRETCH",
+      "relation": "sub_concept_direct_anchor",
+      "claim_class": "source_analogue_for_internal_representational_form",
+      "br_ex_id": "BR_EX_BE_00065",
+      "similarity": 0.4,
+      "phase": "phase7-stretch"
     }
   ]
 }
