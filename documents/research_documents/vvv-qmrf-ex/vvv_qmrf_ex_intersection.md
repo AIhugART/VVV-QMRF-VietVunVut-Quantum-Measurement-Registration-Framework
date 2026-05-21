@@ -1,9 +1,9 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
 # VVV-QMRF-EX — Intersection Analysis
-> **Phase:** 12 targeted K-gap RCA finalization — post-BR_EX_BE_00065 narrowed reactivation
-> **Date:** 2026-05-21
-> **Source graph:** `data/vvv_qmrf_ex_graph.json` (181 edges)
+> **Phase:** 2 preliminary — will be enriched in Phase 4 after similarity search
+> **Date:** 2026-05-20
+> **Source graph:** `data/vvv_qmrf_ex_graph.json`
 > **Full data:** `data/phase2_intersection_report.json`
 
 ---
@@ -12,56 +12,26 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 > VVV node is in intersection if it has >= 1 K-side BE anchor (via `VVV_TO_BE` or `DRAFT_BRIDGE_BE_VVV`) AND >= 1 rho-side QM anchor (via `VVV_TO_QM` or `BR_QM_VVV`).
 
-**Count:** 46 / 52 VVV nodes (88.5%)
+**Count:** 16 / 52 VVV nodes (30.8%)
 
 | VVV Node | Concept | K-side BE anchors | rho-side QM anchors |
 |---|---|---|---|
 | `N_QM_VVV_00001` | Contrapositive Quantum Evidence / Purely Cont | `N_BE_00015` (Exclusion), `N_BE_00097` (Vyatireka), `N_BE_00161` (Nonoccurrence condition) | `N_QM_00033` (No-Result Measurement (Null Me) |
-| `N_QM_VVV_00003` | Projection Operator - registration / Null-Pro | `N_BE_00015` (Exclusion) | `N_QM_00018` (Projection Operator P̂_j) |
 | `N_QM_VVV_00004` | Informative Silence - registration | `N_BE_00015` (Exclusion) | `N_QM_00033` (No-Result Measurement (Null Me) |
 | `N_QM_VVV_00006` | Exclusion-Based State Selection / Exclusion-B | `N_BE_00015` (Exclusion) | `N_QM_00022` (Post-Measurement State Update) |
-| `N_QM_VVV_00007` | Counterfactual Evidential Branch | `N_BE_00097` (Vyatireka) | `N_QM_00005` (Superposition) |
-| `N_QM_VVV_00010` | PVM-equivalent Registration Authority | `N_BE_00018` (Triple-condition syllogism) | `N_QM_00014` (Projective Measurement (PVM)) |
-| `N_QM_VVV_00011` | Dual-Phase Registration Certification / Forma | `N_BE_00013` (Particular / Unique mark) | `N_QM_00019` (Measurement (Physical Act)), `N_QM_00095` (Decoherence & Environment as M) |
-| `N_QM_VVV_00012` | Intrinsic Causal Triggering Phase | `N_BE_00250` (Tadutpatti) | `N_QM_00021` (System–Meter Coupling) |
-| `N_QM_VVV_00013` | Extrinsic Registration Certification Phase | `N_BE_00234` (Aviṣaṃvāditva) | `N_QM_00095` (Decoherence & Environment as M), `N_QM_00103` (Quantum Feedback and Control) |
-| `N_QM_VVV_00014` | Extrinsic Registration-Certification Operator | `N_BE_00234` (Aviṣaṃvāditva) | `N_QM_00105` (Continuous Quantum Error Corre) |
-| `N_QM_VVV_00016` | Certified Registration State / Validated Regi | `N_BE_00052` (Pramā) | `N_QM_00022` (Post-Measurement State Update) |
-| `N_QM_VVV_00018` | Verification-Integrated Density Matrix Evolut | `N_BE_00001` (Valid cognition) | `N_QM_00025` ([SUY DIỄN] Density Matrix & Mi), `N_QM_00035` (Unselective Measurement & Quan) |
 | `N_QM_VVV_00020` | Validated Absence Registration / Conditioned  | `N_BE_00015` (Exclusion), `N_BE_00161` (Nonoccurrence condition), `N_BE_00253` (Anupalabdhi) | `N_QM_00033` (No-Result Measurement (Null Me) |
 | `N_QM_VVV_00021` | Registration Lock / Registration-Lock Operato | `N_BE_00046` (Representationalism), `N_BE_00118` (Ālambanaparīkṣā), `N_BE_00173` (Bāhyārtha), `N_BE_00175` (Sārūpya), `N_BE_00179` (Representative perception), `N_BE_00185` (Yojanā), `N_BE_00193` (Dharmakīrti's anti-realism), `N_BE_00240` (Perceptual-conceptual gap) | `N_QM_00019` (Measurement (Physical Act)), `N_QM_00020` (von Neumann Measurement Model), `N_QM_00094` (Heisenberg Cut) |
-| `N_QM_VVV_00022` | Internal Representation Encoding / Internal E | `N_BE_00179` (Representative perception) | `N_QM_00019` (Measurement (Physical Act)) |
-| `N_QM_VVV_00023` | Registration Lock `V̂_yava` / Irreversible Re | `N_BE_00029` (Momentariness) | `N_QM_00022` (Post-Measurement State Update) |
 | `N_QM_VVV_00025` | Intrinsic Relational Binding / Entanglement - | `N_BE_00021` (Essential relation) | `N_QM_00047` (Entanglement), `N_QM_00090` (Bell's Inequality & Bell Corre) |
 | `N_QM_VVV_00027` | Registration Self-Completion Matrix / Act-Res | `N_BE_00022` (Causal efficacy), `N_BE_00055` (Pramāphala), `N_BE_00127` (Pramāṇa formula), `N_BE_00164` (Pramāṇādhīna prameyādhigama), `N_BE_00165` (Prameyādhīna pramāṇasiddhi), `N_BE_00170` (Non-distinction of means and r), `N_BE_00203` (Four process mechanisms) | `N_QM_00016` (Born Rule), `N_QM_00019` (Measurement (Physical Act)) |
-| `N_QM_VVV_00028` | Act-Result Tensor / Irreducible Event Tensor  | `N_BE_00022` (Causal efficacy) | `N_QM_00014` (Projective Measurement (PVM)) |
 | `N_QM_VVV_00029` | Retroactive Registration Override / Formal Me | `N_BE_00001` (Valid cognition) | `N_QM_00102` (Measurement Reversal) |
-| `N_QM_VVV_00030` | Invalidation Operator `Ô_bhranti` / Registra | `N_BE_00006` (Erroneous cognition) | `N_QM_00103` (Quantum Feedback and Control) |
-| `N_QM_VVV_00031` | Registration Weight / Hierarchical Registrati | `N_BE_00052` (Pramā) | `N_QM_00068` (Signal-to-Noise Ratio in Quant) |
 | `N_QM_VVV_00032` | Registration Error / Bhrānti Status | `N_BE_00006` (Erroneous cognition) | `N_QM_00095` (Decoherence & Environment as M) |
 | `N_QM_VVV_00033` | Self-Certifying Registration Operator / Regis | `N_BE_00011` (Self-awareness) | `N_QM_00020` (von Neumann Measurement Model), `N_QM_00094` (Heisenberg Cut) |
-| `N_QM_VVV_00034` | Reflexive Registration Operator `R̂_svasa` | `N_BE_00011` (Self-awareness) | `N_QM_00022` (Post-Measurement State Update) |
-| `N_QM_VVV_00035` | Primary Registration Closure / Regress-Termin | `N_BE_00011` (Self-awareness) | `N_QM_00015` (Three Cardinal Properties of T) |
-| `N_QM_VVV_00036` | Null Registering-System Event / Registration  | `N_BE_00006` (Erroneous cognition) | `N_QM_00021` (System–Meter Coupling), `N_QM_00033` (No-Result Measurement (Null Me) |
-| `N_QM_VVV_00037` | Null Registration Operator `Ê_empty` | `N_BE_00253` (Anupalabdhi) | `N_QM_00035` (Unselective Measurement & Quan) |
-| `N_QM_VVV_00038` | Measured-but-Unregistered K-State | `N_BE_00009` (Non-conceptual perception) | `N_QM_00095` (Decoherence & Environment as M) |
 | `N_QM_VVV_00039` | Registering-System-as-Process Framework / Mom | `N_BE_00029` (Momentariness) | `N_QM_00094` (Heisenberg Cut) |
-| `N_QM_VVV_00040` | Momentary Registering Moments `{o₁, o₂, ...,  | `N_BE_00086` (Momentariness) | `N_QM_00038` (Quantum Trajectory) |
-| `N_QM_VVV_00041` | Causal Memory Projection `Π̂_causal` / Causal | `N_BE_00250` (Tadutpatti) | `N_QM_00103` (Quantum Feedback and Control) |
 | `N_QM_VVV_00042` | Tripartite Registration Validity Matrix / Str | `N_BE_00018` (Triple-condition syllogism), `N_BE_00096` (Anvaya), `N_BE_00097` (Vyatireka), `N_BE_00158` (Tri-rūpa-hetu) | `N_QM_00021` (System–Meter Coupling) |
-| `N_QM_VVV_00043` | Trairūpya Apparatus Validity Conditions / Val | `N_BE_00018` (Triple-condition syllogism) | `N_QM_00068` (Signal-to-Noise Ratio in Quant) |
 | `N_QM_VVV_00044` | Pre-Symbolic Stratum / Formalism-External Phy | `N_BE_00009` (Non-conceptual perception) | `N_QM_00021` (System–Meter Coupling) |
-| `N_QM_VVV_00045` | Pre-Symbolic Event `ε(M)` | `N_BE_00086` (Momentariness) | `N_QM_00020` (von Neumann Measurement Model) |
-| `N_QM_VVV_00046` | Symbolization Operator `Λ` | `N_BE_00008` (Conceptual construction) | `N_QM_00016` (Born Rule) |
-| `N_QM_VVV_00047` | Degree of Symbolization / Partial-to-Complete | `N_BE_00008` (Conceptual construction) | `N_QM_00028` (Weak Measurement) |
 | `N_QM_VVV_00048` | Limit-Faculty Registration / Transcendental R | `N_BE_00012` (Transcendental perception) | `N_QM_00028` (Weak Measurement) |
-| `N_QM_VVV_00049` | Limit-Faculty Registration Operator `M̂_trans | `N_BE_00012` (Transcendental perception) | `N_QM_00026` (Generalized Measurement (Kraus) |
-| `N_QM_VVV_00050` | Non-Ordinary Valid Registration Output / Weak | `N_BE_00083` (Samādhi) | `N_QM_00029` (Weak Value) |
-| `N_QM_VVV_00051` | Temporal Discontinuity Doctrine / Moment-to-M | `N_BE_00029` (Momentariness), `N_BE_00086` (Momentariness) | `N_QM_00037` (Continuous Measurement: Quantu), `N_QM_00042` (Quantum Jump Operator) |
-| `N_QM_VVV_00052` | Discrete Transition Operator `T̂_kṣaṇa` | `N_BE_00029` (Momentariness) | `N_QM_00042` (Quantum Jump Operator) |
-| `N_QM_VVV_00053` | Kṣaṇa Registration Event / Registration Seal | `N_BE_00087` (Kṣaṇabhaṅgavāda) | `N_QM_00037` (Continuous Measurement: Quantu) |
+| `N_QM_VVV_00051` | Temporal Discontinuity Doctrine / Moment-to-M | `N_BE_00029` (Momentariness) | `N_QM_00042` (Quantum Jump Operator) |
 | `N_QM_VVV_00054` | Pre-Measurement Registration Indeterminacy /  | `N_BE_00007` (Doubt) | `N_QM_00005` (Superposition) |
-| `N_QM_VVV_00055` | Indeterminacy Operator `Ŝ_saṃśaya` | `N_BE_00007` (Doubt) | `N_QM_00025` ([SUY DIỄN] Density Matrix & Mi) |
 
 ---
 
@@ -69,39 +39,39 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Rank | VVV Node | Concept | Betweenness | In Intersection |
 |---|---|---|---|---|
-| 1 | `N_QM_VVV_00021` | Registration Lock / Registration-Lock Operato | 0.004088 | Yes |
-| 2 | `N_QM_VVV_00014` | Extrinsic Registration-Certification Operator | 0.003911 | Yes |
-| 3 | `N_QM_VVV_00013` | Extrinsic Registration Certification Phase | 0.003760 | Yes |
-| 4 | `N_QM_VVV_00029` | Retroactive Registration Override / Formal Me | 0.003483 | Yes |
-| 5 | `N_QM_VVV_00036` | Null Registering-System Event / Registration  | 0.002986 | Yes |
-| 6 | `N_QM_VVV_00032` | Registration Error / Bhrānti Status | 0.002649 | Yes |
-| 7 | `N_QM_VVV_00011` | Dual-Phase Registration Certification / Forma | 0.002524 | Yes |
-| 8 | `N_QM_VVV_00018` | Verification-Integrated Density Matrix Evolut | 0.002421 | Yes |
-| 9 | `N_QM_VVV_00038` | Measured-but-Unregistered K-State | 0.001770 | Yes |
-| 10 | `N_QM_VVV_00033` | Self-Certifying Registration Operator / Regis | 0.001524 | Yes |
-| 11 | `N_QM_VVV_00030` | Invalidation Operator `Ô_bhranti` / Registra | 0.001442 | Yes |
-| 12 | `N_QM_VVV_00023` | Registration Lock `V̂_yava` / Irreversible Re | 0.001210 | Yes |
-| 13 | `N_QM_VVV_00043` | Trairūpya Apparatus Validity Conditions / Val | 0.001182 | Yes |
-| 14 | `N_QM_VVV_00015` | Conditionally Updated State `ρ̃` | 0.000854 | No |
-| 15 | `N_QM_VVV_00042` | Tripartite Registration Validity Matrix / Str | 0.000797 | Yes |
+| 1 | `N_QM_VVV_00021` | Registration Lock / Registration-Lock Operato | 0.004690 | Yes |
+| 2 | `N_QM_VVV_00027` | Registration Self-Completion Matrix / Act-Res | 0.002654 | Yes |
+| 3 | `N_QM_VVV_00013` | Extrinsic Registration Certification Phase | 0.001524 | No |
+| 4 | `N_QM_VVV_00014` | Extrinsic Registration-Certification Operator | 0.001456 | No |
+| 5 | `N_QM_VVV_00036` | Null Registering-System Event / Registration  | 0.001379 | No |
+| 6 | `N_QM_VVV_00023` | Registration Lock `V̂_yava` / Irreversible Re | 0.001281 | No |
+| 7 | `N_QM_VVV_00033` | Self-Certifying Registration Operator / Regis | 0.001259 | Yes |
+| 8 | `N_QM_VVV_00029` | Retroactive Registration Override / Formal Me | 0.001096 | Yes |
+| 9 | `N_QM_VVV_00054` | Pre-Measurement Registration Indeterminacy /  | 0.001081 | Yes |
+| 10 | `N_QM_VVV_00044` | Pre-Symbolic Stratum / Formalism-External Phy | 0.001070 | Yes |
+| 11 | `N_QM_VVV_00042` | Tripartite Registration Validity Matrix / Str | 0.001008 | Yes |
+| 12 | `N_QM_VVV_00011` | Dual-Phase Registration Certification / Forma | 0.000965 | No |
+| 13 | `N_QM_VVV_00001` | Contrapositive Quantum Evidence / Purely Cont | 0.000729 | Yes |
+| 14 | `N_QM_VVV_00015` | Conditionally Updated State `ρ̃` | 0.000641 | No |
+| 15 | `N_QM_VVV_00020` | Validated Absence Registration / Conditioned  | 0.000594 | Yes |
 
 ---
 
 ## 3. Community Structure
 
-Greedy modularity communities: **314**
+Greedy modularity communities: **322**
 
 | Community | Size | BE | VVV | QM | VVV members |
 |---|---|---|---|---|---|
-| 1 | 18 | 4 | 9 | 5 | `N_QM_VVV_00011`, `N_QM_VVV_00012`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00015`, `N_QM_VVV_00018` +3 more |
-| 2 | 16 | 4 | 7 | 5 | `N_QM_VVV_00039`, `N_QM_VVV_00040`, `N_QM_VVV_00041`, `N_QM_VVV_00045`, `N_QM_VVV_00051`, `N_QM_VVV_00052` +1 more |
-| 3 | 15 | 5 | 7 | 3 | `N_QM_VVV_00007`, `N_QM_VVV_00010`, `N_QM_VVV_00030`, `N_QM_VVV_00031`, `N_QM_VVV_00032`, `N_QM_VVV_00042` +1 more |
-| 4 | 14 | 9 | 4 | 1 | `N_QM_VVV_00021`, `N_QM_VVV_00022`, `N_QM_VVV_00054`, `N_QM_VVV_00055` |
-| 5 | 14 | 3 | 9 | 2 | `N_QM_VVV_00001`, `N_QM_VVV_00002`, `N_QM_VVV_00003`, `N_QM_VVV_00004`, `N_QM_VVV_00005`, `N_QM_VVV_00006` +3 more |
-| 6 | 12 | 3 | 5 | 4 | `N_QM_VVV_00046`, `N_QM_VVV_00047`, `N_QM_VVV_00048`, `N_QM_VVV_00049`, `N_QM_VVV_00050` |
-| 7 | 12 | 2 | 6 | 4 | `N_QM_VVV_00016`, `N_QM_VVV_00023`, `N_QM_VVV_00024`, `N_QM_VVV_00033`, `N_QM_VVV_00034`, `N_QM_VVV_00035` |
-| 8 | 9 | 7 | 2 | 0 | `N_QM_VVV_00027`, `N_QM_VVV_00028` |
-| 9 | 4 | 1 | 1 | 2 | `N_QM_VVV_00025` |
+| 1 | 15 | 8 | 4 | 3 | `N_QM_VVV_00010`, `N_QM_VVV_00025`, `N_QM_VVV_00027`, `N_QM_VVV_00028` |
+| 2 | 14 | 2 | 7 | 5 | `N_QM_VVV_00044`, `N_QM_VVV_00045`, `N_QM_VVV_00046`, `N_QM_VVV_00047`, `N_QM_VVV_00048`, `N_QM_VVV_00049` +1 more |
+| 3 | 14 | 0 | 9 | 5 | `N_QM_VVV_00011`, `N_QM_VVV_00012`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00015`, `N_QM_VVV_00018` +3 more |
+| 4 | 13 | 3 | 8 | 2 | `N_QM_VVV_00001`, `N_QM_VVV_00002`, `N_QM_VVV_00003`, `N_QM_VVV_00004`, `N_QM_VVV_00005`, `N_QM_VVV_00006` +2 more |
+| 5 | 12 | 1 | 7 | 4 | `N_QM_VVV_00016`, `N_QM_VVV_00023`, `N_QM_VVV_00024`, `N_QM_VVV_00029`, `N_QM_VVV_00034`, `N_QM_VVV_00035` +1 more |
+| 6 | 12 | 2 | 6 | 4 | `N_QM_VVV_00033`, `N_QM_VVV_00039`, `N_QM_VVV_00040`, `N_QM_VVV_00041`, `N_QM_VVV_00051`, `N_QM_VVV_00052` |
+| 7 | 11 | 5 | 5 | 1 | `N_QM_VVV_00030`, `N_QM_VVV_00031`, `N_QM_VVV_00032`, `N_QM_VVV_00042`, `N_QM_VVV_00043` |
+| 8 | 11 | 8 | 2 | 1 | `N_QM_VVV_00021`, `N_QM_VVV_00022` |
+| 9 | 4 | 1 | 2 | 1 | `N_QM_VVV_00007`, `N_QM_VVV_00054` |
 | 10 | 2 | 0 | 1 | 1 | `N_QM_VVV_00008` |
 | 11 | 1 | 1 | 0 | 0 |  |
 | 12 | 1 | 1 | 0 | 0 |  |
@@ -328,14 +298,14 @@ Greedy modularity communities: **314**
 | 233 | 1 | 1 | 0 | 0 |  |
 | 234 | 1 | 1 | 0 | 0 |  |
 | 235 | 1 | 1 | 0 | 0 |  |
-| 236 | 1 | 0 | 0 | 1 |  |
-| 237 | 1 | 0 | 0 | 1 |  |
-| 238 | 1 | 0 | 0 | 1 |  |
-| 239 | 1 | 0 | 0 | 1 |  |
-| 240 | 1 | 0 | 0 | 1 |  |
-| 241 | 1 | 0 | 0 | 1 |  |
-| 242 | 1 | 0 | 0 | 1 |  |
-| 243 | 1 | 0 | 0 | 1 |  |
+| 236 | 1 | 1 | 0 | 0 |  |
+| 237 | 1 | 1 | 0 | 0 |  |
+| 238 | 1 | 1 | 0 | 0 |  |
+| 239 | 1 | 1 | 0 | 0 |  |
+| 240 | 1 | 1 | 0 | 0 |  |
+| 241 | 1 | 1 | 0 | 0 |  |
+| 242 | 1 | 1 | 0 | 0 |  |
+| 243 | 1 | 1 | 0 | 0 |  |
 | 244 | 1 | 0 | 0 | 1 |  |
 | 245 | 1 | 0 | 0 | 1 |  |
 | 246 | 1 | 0 | 0 | 1 |  |
@@ -406,7 +376,15 @@ Greedy modularity communities: **314**
 | 311 | 1 | 0 | 0 | 1 |  |
 | 312 | 1 | 0 | 0 | 1 |  |
 | 313 | 1 | 0 | 0 | 1 |  |
-| 314 | 1 | 0 | 1 | 0 | `N_QM_VVV_00009` |
+| 314 | 1 | 0 | 0 | 1 |  |
+| 315 | 1 | 0 | 0 | 1 |  |
+| 316 | 1 | 0 | 0 | 1 |  |
+| 317 | 1 | 0 | 0 | 1 |  |
+| 318 | 1 | 0 | 0 | 1 |  |
+| 319 | 1 | 0 | 0 | 1 |  |
+| 320 | 1 | 0 | 0 | 1 |  |
+| 321 | 1 | 0 | 0 | 1 |  |
+| 322 | 1 | 0 | 1 | 0 | `N_QM_VVV_00009` |
 
 ---
 
@@ -417,26 +395,26 @@ Direct BE->QM edges (must be 0): **0**
 
 | Source (BE) | Via VVV | Target (QM) | Length |
 |---|---|---|---|
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00021`, `N_QM_VVV_00033`, `N_QM_VVV_00034`, `N_QM_VVV_00035` | `N_QM_00015` (Three Cardinal Properties of) | 9 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00029`, `N_QM_VVV_00030`, `N_QM_VVV_00032`, `N_QM_VVV_00036`, `N_QM_VVV_00020`, `N_QM_VVV_00003` | `N_QM_00018` (Projection Operator P̂_j) | 13 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011` | `N_QM_00019` (Measurement (Physical Act)) | 3 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00021` | `N_QM_00020` (von Neumann Measurement Mode) | 5 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00012` | `N_QM_00021` (System–Meter Coupling) | 4 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00012`, `N_QM_VVV_00015` | `N_QM_00022` (Post-Measurement State Updat) | 5 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018` | `N_QM_00025` ([SUY DIỄN] Density Matrix & ) | 2 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00029`, `N_QM_VVV_00030`, `N_QM_VVV_00032`, `N_QM_VVV_00036` | `N_QM_00033` (No-Result Measurement (Null ) | 10 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018` | `N_QM_00035` (Unselective Measurement & Qu) | 2 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00021` | `N_QM_00094` (Heisenberg Cut) | 5 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011` | `N_QM_00095` (Decoherence & Environment as) | 3 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00029` | `N_QM_00102` (Measurement Reversal) | 6 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00013` | `N_QM_00103` (Quantum Feedback and Control) | 4 |
-| `N_BE_00001` (Valid cognition) | `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00013`, `N_QM_VVV_00014` | `N_QM_00105` (Continuous Quantum Error Cor) | 5 |
-| `N_BE_00006` (Erroneous cognition) | `N_QM_VVV_00036`, `N_QM_VVV_00038`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00029`, `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00021`, `N_QM_VVV_00033`, `N_QM_VVV_00034`, `N_QM_VVV_00035` | `N_QM_00015` (Three Cardinal Properties of) | 16 |
-| `N_BE_00006` (Erroneous cognition) | `N_QM_VVV_00036`, `N_QM_VVV_00020`, `N_QM_VVV_00003` | `N_QM_00018` (Projection Operator P̂_j) | 5 |
-| `N_BE_00006` (Erroneous cognition) | `N_QM_VVV_00036`, `N_QM_VVV_00038`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00029`, `N_QM_VVV_00018`, `N_QM_VVV_00011` | `N_QM_00019` (Measurement (Physical Act)) | 10 |
-| `N_BE_00006` (Erroneous cognition) | `N_QM_VVV_00036`, `N_QM_VVV_00038`, `N_QM_VVV_00013`, `N_QM_VVV_00014`, `N_QM_VVV_00029`, `N_QM_VVV_00018`, `N_QM_VVV_00011`, `N_QM_VVV_00021` | `N_QM_00020` (von Neumann Measurement Mode) | 12 |
-| `N_BE_00006` (Erroneous cognition) | `N_QM_VVV_00036` | `N_QM_00021` (System–Meter Coupling) | 2 |
-| `N_BE_00006` (Erroneous cognition) | `N_QM_VVV_00036`, `N_QM_VVV_00012`, `N_QM_VVV_00015` | `N_QM_00022` (Post-Measurement State Updat) | 5 |
+| `N_BE_00046` (Representationalism) | `N_QM_VVV_00021`, `N_QM_VVV_00027`, `N_QM_VVV_00028` | `N_QM_00014` (Projective Measurement (PVM)) | 4 |
+| `N_BE_00046` (Representationalism) | `N_QM_VVV_00021`, `N_QM_VVV_00027`, `N_QM_VVV_00035` | `N_QM_00015` (Three Cardinal Properties of) | 4 |
+| `N_BE_00046` (Representationalism) | `N_QM_VVV_00021`, `N_QM_VVV_00027` | `N_QM_00016` (Born Rule) | 3 |
+| `N_BE_00046` (Representationalism) | `N_QM_VVV_00021`, `N_QM_VVV_00022` | `N_QM_00019` (Measurement (Physical Act)) | 3 |
+| `N_BE_00046` (Representationalism) | `N_QM_VVV_00021` | `N_QM_00020` (von Neumann Measurement Mode) | 2 |
+| `N_BE_00046` (Representationalism) | `N_QM_VVV_00021`, `N_QM_VVV_00023` | `N_QM_00022` (Post-Measurement State Updat) | 3 |
+| `N_BE_00046` (Representationalism) | `N_QM_VVV_00021`, `N_QM_VVV_00023`, `N_QM_VVV_00015` | `N_QM_00025` ([SUY DIỄN] Density Matrix & ) | 5 |
+| `N_BE_00046` (Representationalism) | `N_QM_VVV_00021` | `N_QM_00094` (Heisenberg Cut) | 2 |
+| `N_BE_00046` (Representationalism) | `N_QM_VVV_00021`, `N_QM_VVV_00023`, `N_QM_VVV_00024` | `N_QM_00102` (Measurement Reversal) | 4 |
+| `N_BE_00055` (Pramāphala) | `N_QM_VVV_00027`, `N_QM_VVV_00028` | `N_QM_00014` (Projective Measurement (PVM)) | 3 |
+| `N_BE_00055` (Pramāphala) | `N_QM_VVV_00027`, `N_QM_VVV_00035` | `N_QM_00015` (Three Cardinal Properties of) | 3 |
+| `N_BE_00055` (Pramāphala) | `N_QM_VVV_00027` | `N_QM_00016` (Born Rule) | 2 |
+| `N_BE_00055` (Pramāphala) | `N_QM_VVV_00027` | `N_QM_00019` (Measurement (Physical Act)) | 2 |
+| `N_BE_00055` (Pramāphala) | `N_QM_VVV_00027`, `N_QM_VVV_00021` | `N_QM_00020` (von Neumann Measurement Mode) | 4 |
+| `N_BE_00055` (Pramāphala) | `N_QM_VVV_00027`, `N_QM_VVV_00021`, `N_QM_VVV_00023` | `N_QM_00022` (Post-Measurement State Updat) | 5 |
+| `N_BE_00055` (Pramāphala) | `N_QM_VVV_00027`, `N_QM_VVV_00021`, `N_QM_VVV_00023`, `N_QM_VVV_00015` | `N_QM_00025` ([SUY DIỄN] Density Matrix & ) | 7 |
+| `N_BE_00055` (Pramāphala) | `N_QM_VVV_00027`, `N_QM_VVV_00021` | `N_QM_00094` (Heisenberg Cut) | 4 |
+| `N_BE_00055` (Pramāphala) | `N_QM_VVV_00027`, `N_QM_VVV_00021`, `N_QM_VVV_00023`, `N_QM_VVV_00024` | `N_QM_00102` (Measurement Reversal) | 6 |
+| `N_BE_00096` (Anvaya) | `N_QM_VVV_00042`, `N_QM_VVV_00011`, `N_QM_VVV_00033`, `N_QM_VVV_00027`, `N_QM_VVV_00028` | `N_QM_00014` (Projective Measurement (PVM)) | 6 |
+| `N_BE_00096` (Anvaya) | `N_QM_VVV_00042`, `N_QM_VVV_00011`, `N_QM_VVV_00033`, `N_QM_VVV_00027`, `N_QM_VVV_00035` | `N_QM_00015` (Three Cardinal Properties of) | 6 |
 
 ---
 
@@ -444,8 +422,8 @@ Direct BE->QM edges (must be 0): **0**
 
 | Category | Count | % of 52 VVV |
 |---|---|---|
-| Intersection (dual K-rho anchored) | 46 | 88.5% |
-| K-side gap only (no BE, has QM) | 5 | 9.6% |
+| Intersection (dual K-rho anchored) | 16 | 30.8% |
+| K-side gap only (no BE, has QM) | 35 | 67.3% |
 | rho-side gap only (has BE, no QM) | 0 | 0.0% |
 | Both gaps (no BE and no QM) | 1 | 1.9% |
 
@@ -458,7 +436,7 @@ Direct BE->QM edges (must be 0): **0**
 
 | Check | Result |
 |---|---|
-| Intersection >= 15 nodes | [OK] (46 nodes) |
+| Intersection >= 15 nodes | [OK] (16 nodes) |
 | No direct BE->QM edges | [OK] (count = 0) |
 
 ---

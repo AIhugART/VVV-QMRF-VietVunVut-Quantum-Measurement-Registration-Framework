@@ -4,9 +4,7 @@
   "graph": {
     "project": "VVV-QMRF-EX",
     "phase": "1-graph-construction",
-    "date": "2026-05-20",
-    "edge_count": 180,
-    "version": "0.6-phase6-expert"
+    "date": "2026-05-20"
   },
   "nodes": [
     {
@@ -3178,6 +3176,14 @@
       "key": 0
     },
     {
+      "edge_id": "ED_QM_VVV_00131",
+      "relation": "resolves",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00001",
+      "target": "N_QM_VVV_00054",
+      "key": 0
+    },
+    {
       "edge_id": "ED_QM_VVV_00001",
       "relation": "operationalizes",
       "edge_type": "VVV_INTERNAL",
@@ -3311,6 +3317,14 @@
       "edge_type": "VVV_TO_QM",
       "source": "N_QM_VVV_00011",
       "target": "N_QM_00095",
+      "key": 0
+    },
+    {
+      "edge_id": "ED_QM_VVV_00129",
+      "relation": "requires_closure_from",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00011",
+      "target": "N_QM_VVV_00033",
       "key": 0
     },
     {
@@ -3466,6 +3480,14 @@
       "key": 0
     },
     {
+      "edge_id": "ED_QM_VVV_00120",
+      "relation": "contrasts_with",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00020",
+      "target": "N_QM_VVV_00036",
+      "key": 0
+    },
+    {
       "edge_id": "ED_QM_VVV_00014",
       "relation": "contains_phase",
       "edge_type": "VVV_INTERNAL",
@@ -3495,6 +3517,14 @@
       "edge_type": "VVV_TO_QM",
       "source": "N_QM_VVV_00021",
       "target": "N_QM_00094",
+      "key": 0
+    },
+    {
+      "edge_id": "ED_QM_VVV_00118",
+      "relation": "enables",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00021",
+      "target": "N_QM_VVV_00027",
       "key": 0
     },
     {
@@ -3554,6 +3584,14 @@
       "key": 0
     },
     {
+      "edge_id": "ED_QM_VVV_00123",
+      "relation": "co",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00025",
+      "target": "N_QM_VVV_00027",
+      "key": 0
+    },
+    {
       "edge_id": "ED_QM_VVV_00017",
       "relation": "is_formalized_by",
       "edge_type": "VVV_INTERNAL",
@@ -3583,6 +3621,14 @@
       "edge_type": "VVV_TO_BE",
       "source": "N_QM_VVV_00027",
       "target": "N_BE_00022",
+      "key": 0
+    },
+    {
+      "edge_id": "ED_QM_VVV_00121",
+      "relation": "is_instance_of",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00027",
+      "target": "N_QM_VVV_00035",
       "key": 0
     },
     {
@@ -3618,6 +3664,14 @@
       "key": 0
     },
     {
+      "edge_id": "ED_QM_VVV_00124",
+      "relation": "can_defeat",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00029",
+      "target": "N_QM_VVV_00021",
+      "key": 0
+    },
+    {
       "edge_id": "ED_QM_VVV_00020",
       "relation": "assigns_status",
       "edge_type": "VVV_INTERNAL",
@@ -3647,6 +3701,14 @@
       "edge_type": "VVV_TO_QM",
       "source": "N_QM_VVV_00031",
       "target": "N_QM_00068",
+      "key": 0
+    },
+    {
+      "edge_id": "ED_QM_VVV_00127",
+      "relation": "grades_authority_assessed_by",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00031",
+      "target": "N_QM_VVV_00042",
       "key": 0
     },
     {
@@ -3695,6 +3757,14 @@
       "edge_type": "VVV_TO_BE",
       "source": "N_QM_VVV_00033",
       "target": "N_BE_00011",
+      "key": 0
+    },
+    {
+      "edge_id": "ED_QM_VVV_00119",
+      "relation": "complements",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00033",
+      "target": "N_QM_VVV_00027",
       "key": 0
     },
     {
@@ -3762,6 +3832,14 @@
       "key": 0
     },
     {
+      "edge_id": "ED_QM_VVV_00130",
+      "relation": "detects_failure_at",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00036",
+      "target": "N_QM_VVV_00044",
+      "key": 0
+    },
+    {
       "edge_id": "ED_QM_VVV_00082",
       "relation": "grounded_by",
       "edge_type": "VVV_TO_QM",
@@ -3799,6 +3877,14 @@
       "edge_type": "VVV_TO_BE",
       "source": "N_QM_VVV_00039",
       "target": "N_BE_00029",
+      "key": 0
+    },
+    {
+      "edge_id": "ED_QM_VVV_00125",
+      "relation": "requires_at_each_moment",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00039",
+      "target": "N_QM_VVV_00033",
       "key": 0
     },
     {
@@ -3850,6 +3936,14 @@
       "key": 0
     },
     {
+      "edge_id": "ED_QM_VVV_00116",
+      "relation": "gates_entry_to",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00042",
+      "target": "N_QM_VVV_00011",
+      "key": 0
+    },
+    {
       "edge_id": "ED_QM_VVV_00029",
       "relation": "downgrades_failures_to",
       "edge_type": "VVV_INTERNAL",
@@ -3895,6 +3989,14 @@
       "edge_type": "VVV_TO_BE",
       "source": "N_QM_VVV_00044",
       "target": "N_BE_00009",
+      "key": 0
+    },
+    {
+      "edge_id": "ED_QM_VVV_00117",
+      "relation": "provides_input_to",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00044",
+      "target": "N_QM_VVV_00021",
       "key": 0
     },
     {
@@ -3970,6 +4072,14 @@
       "key": 0
     },
     {
+      "edge_id": "ED_QM_VVV_00126",
+      "relation": "operates_within",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00048",
+      "target": "N_QM_VVV_00044",
+      "key": 0
+    },
+    {
       "edge_id": "ED_QM_VVV_00094",
       "relation": "grounded_by",
       "edge_type": "VVV_TO_QM",
@@ -4042,6 +4152,14 @@
       "key": 0
     },
     {
+      "edge_id": "ED_QM_VVV_00122",
+      "relation": "provides_temporal_framework_for",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00053",
+      "target": "N_QM_VVV_00023",
+      "key": 0
+    },
+    {
       "edge_id": "ED_QM_VVV_00039",
       "relation": "is_formalized_by",
       "edge_type": "VVV_INTERNAL",
@@ -4071,6 +4189,14 @@
       "edge_type": "VVV_TO_BE",
       "source": "N_QM_VVV_00054",
       "target": "N_BE_00007",
+      "key": 0
+    },
+    {
+      "edge_id": "ED_QM_VVV_00128",
+      "relation": "shares_temporal_location_with",
+      "edge_type": "VVV_INTERNAL",
+      "source": "N_QM_VVV_00054",
+      "target": "N_QM_VVV_00044",
       "key": 0
     },
     {
@@ -4210,326 +4336,6 @@
       "source": "N_QM_00095",
       "target": "N_QM_VVV_00013",
       "key": 0
-    },
-    {
-      "source": "N_BE_00086",
-      "target": "N_QM_VVV_00051",
-      "edge_type": "BR_EX_BE",
-      "relation": "conceptual_parallel",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00037",
-      "similarity": 0.56,
-      "phase": "phase4-sim"
-    },
-    {
-      "source": "N_BE_00013",
-      "target": "N_QM_VVV_00011",
-      "edge_type": "BR_EX_BE_NEW",
-      "relation": "structural_analogy",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00038",
-      "similarity": 0.32,
-      "phase": "phase6-expert"
-    },
-    {
-      "source": "N_BE_00001",
-      "target": "N_QM_VVV_00018",
-      "edge_type": "BR_EX_BE_NEW",
-      "relation": "functional_analogy",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00039",
-      "similarity": 0.3,
-      "phase": "phase6-expert"
-    },
-    {
-      "source": "N_BE_00052",
-      "target": "N_QM_VVV_00031",
-      "edge_type": "BR_EX_BE_NEW",
-      "relation": "structural_analogy",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00040",
-      "similarity": 0.29,
-      "phase": "phase6-expert"
-    },
-    {
-      "source": "N_BE_00006",
-      "target": "N_QM_VVV_00036",
-      "edge_type": "BR_EX_BE_NEW",
-      "relation": "functional_analogy",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00041",
-      "similarity": 0.27,
-      "phase": "phase6-expert"
-    },
-    {
-      "source": "N_BE_00009",
-      "target": "N_QM_VVV_00038",
-      "edge_type": "BR_EX_BE_NEW",
-      "relation": "structural_analogy",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00042",
-      "similarity": 0.31,
-      "phase": "phase6-expert"
-    },
-    {
-      "source": "N_BE_00018",
-      "target": "N_QM_VVV_00043",
-      "edge_type": "BR_EX_BE_NEW",
-      "relation": "terminological_identity",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00043",
-      "similarity": 0.35,
-      "phase": "phase6-expert"
-    },
-    {
-      "source": "N_BE_00086",
-      "target": "N_QM_VVV_00045",
-      "edge_type": "BR_EX_BE_NEW",
-      "relation": "structural_analogy",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00044",
-      "similarity": 0.35,
-      "phase": "phase6-expert"
-    },
-    {
-      "source": "N_BE_00008",
-      "target": "N_QM_VVV_00047",
-      "edge_type": "BR_EX_BE_NEW",
-      "relation": "functional_analogy",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00045",
-      "similarity": 0.32,
-      "phase": "phase6-expert"
-    },
-    {
-      "source": "N_BE_00083",
-      "target": "N_QM_VVV_00050",
-      "edge_type": "BR_EX_BE_NEW",
-      "relation": "functional_analogy",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00046",
-      "similarity": 0.29,
-      "phase": "phase6-expert"
-    },
-    {
-      "source": "N_BE_00015",
-      "target": "N_QM_VVV_00003",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00047",
-      "similarity": 0.46,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00018",
-      "target": "N_QM_VVV_00010",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00048",
-      "similarity": 0.45,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00234",
-      "target": "N_QM_VVV_00014",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00049",
-      "similarity": 0.46,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00029",
-      "target": "N_QM_VVV_00023",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00050",
-      "similarity": 0.45,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00022",
-      "target": "N_QM_VVV_00028",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00051",
-      "similarity": 0.47,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00006",
-      "target": "N_QM_VVV_00030",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00052",
-      "similarity": 0.48,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00011",
-      "target": "N_QM_VVV_00034",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00053",
-      "similarity": 0.48,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00253",
-      "target": "N_QM_VVV_00037",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00054",
-      "similarity": 0.46,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00250",
-      "target": "N_QM_VVV_00041",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00055",
-      "similarity": 0.45,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00008",
-      "target": "N_QM_VVV_00046",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00056",
-      "similarity": 0.48,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00012",
-      "target": "N_QM_VVV_00049",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00057",
-      "similarity": 0.47,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00029",
-      "target": "N_QM_VVV_00052",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00058",
-      "similarity": 0.47,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00007",
-      "target": "N_QM_VVV_00055",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "operator_decomposition",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00059",
-      "similarity": 0.48,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00097",
-      "target": "N_QM_VVV_00007",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00060",
-      "similarity": 0.38,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00250",
-      "target": "N_QM_VVV_00012",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00062",
-      "similarity": 0.4,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00234",
-      "target": "N_QM_VVV_00013",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00063",
-      "similarity": 0.4,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00052",
-      "target": "N_QM_VVV_00016",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00064",
-      "similarity": 0.41,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00011",
-      "target": "N_QM_VVV_00035",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00067",
-      "similarity": 0.4,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00086",
-      "target": "N_QM_VVV_00040",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00068",
-      "similarity": 0.4,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_BE_00087",
-      "target": "N_QM_VVV_00053",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_BE_00069",
-      "similarity": 0.41,
-      "phase": "phase7-stretch"
-    },
-    {
-      "source": "N_QM_VVV_00051",
-      "target": "N_QM_00037",
-      "edge_type": "BR_EX_QM",
-      "relation": "physical_substrate_for",
-      "claim_class": "interpretive_mapping",
-      "br_ex_id": "BR_EX_QM_00074",
-      "similarity": 0.61,
-      "phase": "phase4-sim"
-    },
-    {
-      "source": "N_BE_00179",
-      "target": "N_QM_VVV_00022",
-      "edge_type": "BR_EX_BE_STRETCH",
-      "relation": "sub_concept_direct_anchor",
-      "claim_class": "source_analogue_for_internal_representational_form",
-      "br_ex_id": "BR_EX_BE_00065",
-      "similarity": 0.4,
-      "phase": "phase7-stretch"
     }
   ]
 }

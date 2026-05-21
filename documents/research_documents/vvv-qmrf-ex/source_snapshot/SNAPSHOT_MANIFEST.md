@@ -3,6 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF-EX Source Snapshot Manifest
 
 > **Snapshot date:** 2026-05-20T14:22:00+07:00
+> **Partial re-snapshot:** 2026-05-21T19:57:00+07:00 — `edge_QM_VVV.md` updated (115→131 edges; +16 Phase 4 cross-category edges from commit `73103df`). Phase 1 + Phase 2 rebuilt as v1.8.
 > **Purpose:** Read-only copies of all input files required by VVV-QMRF-EX plan.
 > **Rule:** VVV-QMRF-EX reads ONLY from this snapshot. Originals are 🔒 FROZEN (Isolation Protocol Rule I-1).
 > **Warning:** These are POINT-IN-TIME copies. If originals are updated, re-snapshot is required.

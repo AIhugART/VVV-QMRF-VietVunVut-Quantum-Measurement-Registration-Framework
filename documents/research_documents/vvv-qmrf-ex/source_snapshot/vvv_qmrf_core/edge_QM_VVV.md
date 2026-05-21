@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Edge Registry
 
 > **SOT:** `node_QM_VVV.md` Section 3 + Section 2. **BE analogue check:** `SYSTEM_Buddhist_Epistemology/system_be_full.md`.
-> **Date:** 2026-05-17. **Status:** All 3 phases complete. **Total:** 115 edges.
+> **Date:** 2026-05-21. **Status:** All 4 phases complete. **Total:** 131 edges.
 > **Bridge layer:** Direct inter-graph bridge edges between Standard QM and VVV-QMRF are maintained separately in `bridge_QM_standard_to_VVV_QMRF.md` using `BR_XXXXX` codes. Phase 2 edges below remain VVV-QMRF registry edges; bridge edges provide stricter cross-system boundary and verification rules.
 
 ---
@@ -371,11 +371,88 @@ ED_QM_VVV_00115: N_QM_VVV_00054 (Pre-Measurement Indeterminacy) → N_BE_00007 (
 
 ---
 
+## Phase 4 — Cross-Category Internal VVV↔VVV Edges (16 edges)
+
+> **Source:** Gap analysis of Phase 1 internal edges. Phase 1 has 40 edges but most connect nodes within the same category cluster. Phase 4 adds cross-category edges where lifecycle/pipeline dependencies exist but were not explicitly encoded.
+> **Date:** 2026-05-21. **Authorization:** Core edit authorized by VietVunVut (not through EX scope).
+> **Gating:** Each edge must connect nodes from different category clusters AND represent a **structural relation** — lifecycle dependency, contrast, complementarity, co-location, taxonomy, parallel structural principle, or diagnostic — not arbitrary conceptual similarity or term overlap.
+
+ED_QM_VVV_00116: N_QM_VVV_00042 (Tripartite Validity) → N_QM_VVV_00011 (DPEC)
+- **Relation:** gates_entry_to — Tripartite validity conditions (Cat 09) must be satisfied before a detector response enters the dual-phase certification pipeline (Cat 04). A response failing 𝕍_tri never reaches extrinsic certification.
+- **Cross-category:** Cat 09 (E10) → Cat 04 (E07)
+
+ED_QM_VVV_00117: N_QM_VVV_00044 (Pre-Symbolic Stratum) → N_QM_VVV_00021 (Registration Lock)
+- **Relation:** provides_input_to — The pre-symbolic event ε(M) (Cat 10) is the causal content that the registration-lock operation (Cat 08) converts from unencoded physical trace into registered status via Â_kāra encoding and V̂_yava locking.
+- **Cross-category:** Cat 10 (E04) → Cat 08 (E03)
+
+ED_QM_VVV_00118: N_QM_VVV_00021 (Registration Lock) → N_QM_VVV_00027 (Self-Completion Matrix)
+- **Relation:** enables — Registration lock (Cat 08) provides the irreversible locking mechanism that makes act-result registration closure (Cat 02) possible. Without lock, act-result identity cannot be sealed.
+- **Cross-category:** Cat 08 (E03) → Cat 02 (E02)
+
+ED_QM_VVV_00119: N_QM_VVV_00033 (Self-Certifying Registration) → N_QM_VVV_00027 (Self-Completion Matrix)
+- **Relation:** complements — Self-certification (Cat 05) stops the regress of who registers the registerer; self-completion (Cat 02) binds registration act and result as inseparable. Together they close the registration system: no infinite chain (00033) and no act-result gap (00027).
+- **Cross-category:** Cat 05 (E01) → Cat 02 (E02)
+
+ED_QM_VVV_00120: N_QM_VVV_00020 (Validated Absence) → N_QM_VVV_00036 (NRE)
+- **Relation:** contrasts_with — Validated absence (Cat 13) achieves valid registration without target interaction; null registering-system event (Cat 06) has target interaction without achieving registration. They are symmetric opposites on the registration/interaction matrix.
+- **Cross-category:** Cat 13 (E14) → Cat 06 (E09)
+
+ED_QM_VVV_00121: N_QM_VVV_00027 (Self-Completion Matrix) → N_QM_VVV_00035 (Primary Closure)
+- **Relation:** is_instance_of — Act-result registration closure (Cat 02) is a specific instance of primary registration closure (Cat 05). Self-completion tells you what closes; primary closure tells you that closure stops the regress.
+- **Cross-category:** Cat 02 (E02) → Cat 05 (E01)
+
+ED_QM_VVV_00122: N_QM_VVV_00053 (Kṣaṇa Event) → N_QM_VVV_00023 (V̂_yava)
+- **Relation:** provides_temporal_framework_for — The kṣaṇa registration event (Cat 12) supplies the temporal unit within which registration lock V̂_yava (Cat 08) must complete. Lock is the operation; kṣaṇa is the bounded temporal moment that contains it.
+- **Cross-category:** Cat 12 (E13) → Cat 08 (E03)
+
+### Tier B — Structural Coherence (6 edges)
+
+ED_QM_VVV_00123: N_QM_VVV_00025 (IRB / Entanglement-Registration Architecture) → N_QM_VVV_00027 (Self-Completion Matrix)
+- **Relation:** co-instantiates_non_factorization_principle_with — IRB (Cat 14) and Self-Completion (Cat 02) are two distinct instantiations of the same registration-layer meta-principle: **Registration-Layer Non-Factorization**. The principle states that certain registration structures cannot be decomposed into independent component states. IRB instantiates this in the spatial/relational domain (entangled subsystems lack independent registration states); Self-Completion instantiates this in the act-result domain (registration act and registered result cannot be factored apart). Same meta-principle, two domain instantiations.
+- **Cross-category:** Cat 14 (E15) → Cat 02 (E02)
+
+ED_QM_VVV_00124: N_QM_VVV_00029 (REO / Retroactive Registration Override) → N_QM_VVV_00021 (Registration Lock)
+- **Relation:** can_defeat — Retroactive override (Cat 03) can invalidate a registration that was locked by V̂_yava (Cat 08). This creates a fundamental tension: registration lock claims irreversibility, but REO asserts that later evidence can override. The resolution is that override does not unlock — it downgrades the locked registration to bhrānti status.
+- **Cross-category:** Cat 03 (E08) → Cat 08 (E03)
+
+ED_QM_VVV_00125: N_QM_VVV_00039 (Process Framework) → N_QM_VVV_00033 (Self-Certifying Registration)
+- **Relation:** requires_at_each_moment — Each momentary registering event in the process framework (Cat 07) needs self-certification (Cat 05) to avoid infinite regress at every moment in the sequence. Without self-certification, the process model generates a new regress problem at each kṣaṇa.
+- **Cross-category:** Cat 07 (E06) → Cat 05 (E01)
+
+ED_QM_VVV_00126: N_QM_VVV_00048 (TOM / Limit-Faculty Registration) → N_QM_VVV_00044 (Pre-Symbolic Stratum)
+- **Relation:** operates_within — Limit-faculty registration (Cat 11) operates within the pre-symbolic stratum (Cat 10), because non-ordinary registration outputs (weak values, partial measurements) emerge before complete eigenvalue symbolization. TOM's M̂_trans processes pre-symbolic content ε(M) that has not yet been fully symbolized by Λ.
+- **Cross-category:** Cat 11 (E12) → Cat 10 (E04)
+
+ED_QM_VVV_00127: N_QM_VVV_00031 (Registration Weight) → N_QM_VVV_00042 (Tripartite Validity)
+- **Relation:** grades_authority_assessed_by — Registration Weight (Cat 03) grades the hierarchical reliability of a registration after it passes initial validity gating. Tripartite Validity (Cat 09) gates whether a registration is valid at all. Together they form a two-level authority framework: validity first (𝕍_tri), then reliability grading (weight hierarchy).
+- **Cross-category:** Cat 03 (E08) → Cat 09 (E10)
+
+ED_QM_VVV_00128: N_QM_VVV_00054 (Pre-Measurement Indeterminacy) → N_QM_VVV_00044 (Pre-Symbolic Stratum)
+- **Relation:** shares_temporal_location_with — Pre-measurement indeterminacy (Cat 15) and pre-symbolic stratum (Cat 10) both describe registration states before full measurement determination. Indeterminacy (Ŝ_saṃśaya) is the epistemic doubt; pre-symbolic (ε(M)) is the causal content. They co-locate temporally in the registration pipeline: both precede the lock operation.
+- **Cross-category:** Cat 15 (E16) → Cat 10 (E04)
+
+### Tier C — Graph Centrality Polish (3 edges)
+
+ED_QM_VVV_00129: N_QM_VVV_00011 (DPEC) → N_QM_VVV_00033 (Self-Certifying Registration)
+- **Relation:** requires_closure_from — The dual-phase certification pipeline (Cat 04) certifies registration events, but generates a second-order question: who certifies the certifier? Self-certifying registration (Cat 05) stops this regress. DPEC without self-certification is an open-ended chain.
+- **Cross-category:** Cat 04 (E07) → Cat 05 (E01)
+
+ED_QM_VVV_00130: N_QM_VVV_00036 (NRE) → N_QM_VVV_00044 (Pre-Symbolic Stratum)
+- **Relation:** detects_failure_at — Null registering-system event (Cat 06) is the outcome when the pre-symbolic event ε(M) (Cat 10) fails to trigger the symbolization operator Λ. Physical interaction occurs but the causal content never crosses the pre-symbolic → symbolic boundary. NRE localizes the failure point in the registration pipeline.
+- **Cross-category:** Cat 06 (E09) → Cat 10 (E04)
+
+ED_QM_VVV_00131: N_QM_VVV_00001 (Contrapositive Evidence) → N_QM_VVV_00054 (Pre-Measurement Indeterminacy)
+- **Relation:** resolves — Contrapositive evidence (Cat 01) is one path by which pre-measurement indeterminacy (Cat 15) gets resolved: exclude alternatives via null results, infer the remaining state without direct interaction. The indeterminacy (Ŝ_saṃśaya) is lifted not by positive measurement but by contrastive elimination.
+- **Cross-category:** Cat 01 (E11) → Cat 15 (E16)
+
+---
+
 ## Summary
 
 | Phase | Type | Edges | Status |
 |:---:|---|:---:|---|
-| 1 | VVV ↔ VVV internal | 40 | ✅ Complete |
+| 1 | VVV ↔ VVV internal (within-category) | 40 | ✅ Complete |
 | 2 | VVV → QM cross-system | 60 | ✅ Complete |
 | 3 | VVV → BE source analogue | 15 | ✅ Complete |
-| **Total** | | **115** | ✅ **All phases complete** |
+| 4 | VVV ↔ VVV internal (cross-category) | 16 | ✅ Complete (Tier A: 7, Tier B: 6, Tier C: 3) |
+| **Total** | | **131** | ✅ **All phases complete** |
