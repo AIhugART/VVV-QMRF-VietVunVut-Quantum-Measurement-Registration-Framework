@@ -6,9 +6,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Document type:** `meta_architecture`
 **Date:** 2026-05-19
-**Version:** 2.0
+**Version:** 2.1
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** v2.0 canonical axiom/theorem reference. Layer 1 is frozen; Layer 2 remains updatable under RCA. Claim boundary: K1 is Class C as carrier-set formal definition; K2-K8 and T1-T4 remain Class D proposed registration-layer structures unless separately upgraded.
+**Status:** v2.1 — algebraic layer extension. Layer 1 (K1-K8) is frozen; Layer 2 extended with T5 (K_joint composition), T6 (decoherence-induced registration update), T7 (IRB registration-scope propagation). Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D proposed registration-layer structures unless separately upgraded.
 **Source:** Derived from VVV-QMRF Working Paper v2.0 Section 7.2 deferred item #5
 **Cite:** VVV-QMRF §K-AXIOM
 **Plan reference:** `papers/Testable_Prediction_Section/extended_wigners_friend_k_side_incommensurability/plan/VVV-QMRF_K_Space_Axiomatization_Plan.md`
@@ -895,6 +895,212 @@ Number of pairwise checks for N observers:
 | **Freeze status** | New theorem. Requires independent verification for N>2. |
 | **Update trigger** | When N>2 EWF scenarios are modeled; when paper v3.0 extends to multi-observer cases |
 
+---
+
+### T5 — K_joint Composition / Associativity Theorem
+
+**Statement:**
+> Given admissible K-side spaces K_A, K_B, K_C and successive K_joint constructions K_joint(A,B) (via T1) and K_joint(K_joint(A,B), C) (via T1 applied again), the resulting space is isomorphic — as a K1-K8-structured set — to the N=3 colimit K_joint(A,B,C) as defined by T4. K_joint construction is therefore associative up to K1-K8-preserving isomorphism. This theorem is conditional on T4-H (Colimit Existence Hypothesis). T5 does not claim ρ-side associativity or physical composition of measurement outcomes.
+
+**Derivation from axioms:**
+```
+Inputs (Layer 1 + Layer 2):
+  Layer 1 (K1-K8):
+    K1: carrier sets — K_A, K_B, K_C are K_R sets of tuples
+    K2: intra-K_R chains preserved under each T1 embedding
+    K4+K5+K7: V-propagation follows K-axiom rules uniformly in both composition paths
+    K8: V-preservation at each embedding step (per T1)
+
+  Layer 2 (T1, T4):
+    T1: K_joint(A,B) is the colimit of the 2-object diagram (K_A, K_B)
+        when requires_K_joint(A,B) = 1 and AdmJoint conditions satisfied
+    T4 + T4-H: K_joint(A,B,C) is the colimit of the 3-object diagram
+        when pairwise + global commutativity conditions satisfied
+
+Composition argument:
+  Path 1 (incremental): K_joint(A,B) first, then K_joint(K_joint(A,B), C)
+  Path 2 (one-shot):    K_joint(A,B,C) directly (T4)
+
+  By the universal property of colimits (T4-H):
+    The colimit of a diagram is unique up to canonical isomorphism.
+    Both Path 1 and Path 2 are colimits of the same underlying diagram
+    D = {K_A, K_B, K_C, morphisms} — provided K8 V-preservation ensures
+    the same K1-K8-preserving embedding conditions hold along each path.
+    Therefore Path 1 ≅ Path 2 as K1-K8-structured sets.
+
+F-T5-01 (commutativity guard):
+  This isomorphism holds only when Path 1's incremental embeddings preserve
+  the same global commutativity condition required by T4 (F7d guard).
+  If the intermediate K_joint(A,B) introduces path-dependent V-transitions
+  (K5 invalidations that differ between paths), the paths may produce
+  distinct but non-isomorphic candidate K_joints. T5 asserts isomorphism
+  ONLY when the global F7d commutativity is confirmed for the full diagram.
+
+Conditional scope:
+  If T4-H holds  → T5 associativity holds for all K_A, K_B, K_C.
+  If T4-H fails  → T5 does not follow in general; T1 N=2 case remains valid
+                   independently of T5.
+```
+
+| Property | Value |
+|---|---|
+| **Bridges axioms to** | K_joint composition (algebraic associativity of colimit construction) |
+| **Layer 1 dependency** | K1 (carrier), K2 (chain order), K4+K5+K7 (V lifecycle), K8 (V-preservation at embedding) |
+| **Layer 2 dependency** | T1 (K_joint construction), T4 + T4-H (N-observer colimit, colimit existence hypothesis) |
+| **Level 4 dependency** | `requires_K_joint`, `D_joint`, `AdmJoint` (for admissibility of each K_joint step) |
+| **EX anchor** | No direct EX intersection node — internal algebraic theorem; EX compass used as sanity check (no K_joint composition tension in EX graph) |
+| **BE lineage** | Continuity of K-side registration structure across sequential joint contexts — structural extension of K2 chain property to multi-K_R scope |
+| **Claim class** | D (proposed) — conditional on T4-H which is itself a hypothesis |
+| **Freeze status** | Conditional on T4-H + Level 4 freeze |
+| **Update trigger** | If T4-H is established or refuted; if K_joint compatibility conditions change; if global commutativity (F7d) conditions are revised |
+
+---
+
+### T6 — Decoherence-Induced Registration Update Theorem
+
+**Statement:**
+> When a ρ-side decoherence event occurs at registration time t_decohere, the K-side responds through one of two mutually exclusive registration-layer paths. **Path A (K5 invalidation):** if a comparison context C_K exists (requires_K_joint = 1) and k_coherent satisfies K5 conditions (⊥ within C_K + Auth(k_decohere → k_coherent, C_K) = 1), then V_prov(k_coherent) → 0 via K5. **Path B (k_new instantiation):** if C_K is absent or K5 conditions are not met, a new tuple k_new = ⟨M_new, o_new, cert=1, t_decohere, V=1⟩ is instantiated with cert intrinsic per K3 and default validity per K4. In neither path does T6 modify the ρ-side decoherence process. Certification is always intrinsic (K3); "extrinsic re-certification" is NOT a K-side concept.
+
+**Derivation from axioms:**
+```
+Boundary setup — ρ-side vs K-side split (mandatory):
+  ρ-side: decoherence occurs via environment coupling |ψ_S⟩ → ρ_mixed
+          This is Standard QM; T6 does not touch this mechanism.
+  K-side: registering system R is coupled to the decoherence event.
+          T6 characterizes what happens in K_R as a result.
+
+Path A — K5 Invalidation Path:
+  Precondition: C_K exists (requires_K_joint = 1, Level 4 §4.3)
+
+  k_coherent ∈ K_R: the prior registration of coherent state o_coherent
+  k_decohere ∈ K_R at t_decohere: the decoherence registration
+    cert(k_decohere) = σ_R(M_decohere) = 1   [K3 intrinsic — NOT extrinsic]
+    k_coherent <_R k_decohere                 [K2 temporal order]
+    k_decohere ⊥ k_coherent within C_K        [K5 primitive — decoherence content
+                                               is incompatible with coherent state
+                                               registration content within shared C_K]
+    Auth(k_decohere → k_coherent, C_K) = 1   [K6 cross-registration authority]
+  → K5 fires: V_prov(k_coherent) → 0
+
+  Bhrānti channel (EX anchor):
+    The K5 invalidation corresponds to bhrānti (erroneous cognition) in BE:
+    k_coherent is revealed as having recorded a superposed state that —
+    in the new C_K — cannot be jointly valid with k_decohere.
+    EX anchor: N_QM_VVV_00032 (Registration Error / Bhrānti Status)
+    BE anchor: N_BE_00006 (Erroneous cognition)
+    QM anchor: N_QM_00095 (Decoherence & Environment as Measurement)
+
+Path B — k_new Instantiation Path:
+  Precondition: C_K absent (requires_K_joint = 0) OR K5 conditions unmet
+
+  k_new = ⟨M_new, o_new, cert=1, t_decohere, V=1⟩   [K1 carrier set]
+  cert(k_new) = σ_R(M_new) = 1                        [K3 intrinsic]
+  ¬isNull(k_new) → V(k_new) = 1                       [K4 default validity]
+
+  k_coherent remains in K_R with V(k_coherent) unchanged by T6 alone.
+  K7 governs finalization at process closure.
+
+Disambiguation from E9/E14 (mandatory):
+  E9 (null event): o=∅ ∧ ΔI=0 → V=0 — decoherence registration has o ≠ ∅;
+                   T6 is NOT E9.
+  E14 (validated absence): registers the absence of a result — T6 registers
+    a positive decoherence-induced update, not an absence. T6 is NOT E14.
+
+K3 preservation note (mandatory):
+  T6 uses "cert = σ_R(M) = 1" throughout — cert is always intrinsic.
+  "Extrinsic certification" is not a K-side concept; T6 does not
+  introduce extrinsic cert in any path.
+```
+
+| Property | Value |
+|---|---|
+| **Bridges axioms to** | K-side registration response to ρ-side decoherence — algebraic characterization of two response paths (K5 invalidation or k_new instantiation) |
+| **Layer 1 dependency** | K1 (carrier set), K2 (temporal order), K3 (intrinsic cert), K4 (default validity), K5 (invalidation), K6 (authority), K7 (closure) |
+| **Level 4 dependency** | `requires_K_joint`, C_K existence (Path A); `⊥_K` boundary clauses (for K5 condition in Path A) |
+| **EX anchor** | `N_QM_VVV_00032` (Registration Error / Bhrānti Status) — intersection node; BE anchor: `N_BE_00006` (Erroneous cognition); QM anchor: `N_QM_00095` (Decoherence & Environment as Measurement) |
+| **BE lineage** | Bhrānti (erroneous cognition) via N_BE_00006 — Path A maps decoherence-induced K5 invalidation to the K-side analogue of a cognition revealed as erroneous; Path B maps to fresh k instantiation (svataḥ prāmāṇya — K4 default validity on new registration) |
+| **Claim class** | D (proposed) |
+| **Freeze status** | Pending Level 4 freeze (Path A uses `requires_K_joint` + `⊥_K` boundary clauses) |
+| **Update trigger** | If Level 4 `⊥_K` boundary clauses change (affects Path A K5 firing condition); if `requires_K_joint` scope changes; if E9 or E14 definitions are revised (disambiguation section may need update) |
+
+---
+
+### T7 — IRB Registration-Scope Propagation Theorem
+
+**Statement:**
+> When IRB(A,B) and IRB(B,C) both hold (E15 — Intrinsic Relational Binding), a shared comparison context C_K can be instantiated over K_joint(A,B,C) (T4 N=3 colimit), provided T4's admissibility conditions are satisfied. This is a K-side registration-scope extension subject to three mandatory boundary clauses: **(BC-1) no physical transitivity claim** — T7 does not assert that physical entanglement is transitive; monogamy of entanglement is a Standard QM result and T7 makes no ρ-side claim; **(BC-2) no ⊥_K transitivity** — K_A ⊥_K K_B ∧ K_B ⊥_K K_C does NOT entail K_A ⊥_K K_C (T4 non-transitivity of ⊥_K is preserved); **(BC-3) K-side scope only** — "scope propagation" means C_K can cover A-B-C jointly as a registration admission question; it does not add a new physical correlation between A and C.
+
+**Derivation from axioms:**
+```
+Inputs (E15 + Layer 1 + Layer 2):
+  E15 (framework postulate):
+    IRB(A,B): |ψ_AB⟩ ≠ |ψ_A⟩ ⊗ |ψ_B⟩ — entangled state → K-side
+              registration non-separability; K_A and K_B cannot be
+              fully specified independently within the shared-state context
+    IRB(B,C): analogously for B, C
+
+  Layer 1 (K1-K8):
+    K1: K_A, K_B, K_C are K_R sets of tuples
+    K8: V-preservation at embedding across each K_joint step
+
+  Layer 2 (T1, T4, T5):
+    T1: K_joint(A,B) constructable when requires_K_joint(A,B) = 1 + AdmJoint
+    T4: K_joint(A,B,C) constructable when pairwise + global commutativity
+    T5: K_joint(K_joint(A,B), C) ≅ K_joint(A,B,C)    [conditional on T4-H]
+
+  Level 4 (external inputs):
+    IRB-induced D_joint: the IRB non-separability of A-B and B-C implies
+    that joint validity demands may be raised for A-B-C under appropriate
+    experimental conditions (Level 4 §4.3 scope for requires_K_joint).
+    D_joint(A,B,C) is raised when the experimental context demands joint
+    validity evaluation across all three.
+
+Scope propagation chain:
+  IRB(A,B) ∧ IRB(B,C)
+  → D_joint(A,B) ∧ D_joint(B,C) potentially raised     [Level 4 §4.3]
+  → requires_K_joint(A,B) = 1 ∧ requires_K_joint(B,C) = 1
+  → K_joint(A,B) admissible (T1)
+  → K_joint(K_joint(A,B), C) admissible (T1 applied again)
+  → K_joint(A,B,C) ≅ K_joint(K_joint(A,B), C)          [T5 — conditional T4-H]
+  → Extended C_K over A-B-C instantiated in K_joint(A,B,C)
+
+Boundary clause BC-1 — no physical transitivity (MANDATORY):
+  T7 asserts nothing about whether A and C are physically entangled.
+  Monogamy of entanglement: Standard QM result — T7 does not touch it.
+  If the physical experiment involves an A-C interaction, that is a
+  separate E15 instance IRB(A,C), not derivable from T7 alone.
+
+Boundary clause BC-2 — ⊥_K non-transitivity preserved (MANDATORY):
+  K_A ⊥_K K_B  ∧  K_B ⊥_K K_C  ⇏  K_A ⊥_K K_C         [T4, preserved]
+  T7 does not assert K_A ⊥_K K_C. The extended C_K over A-B-C may or may
+  not lead to ⊥_K(A,C) — that depends on an independent T2 + T4 check.
+  T7 only asserts that a shared C_K CAN be instantiated; not that it will
+  produce incommensurability.
+
+Boundary clause BC-3 — K-side scope only (MANDATORY):
+  "IRB scope propagation" = C_K can cover A-B-C jointly as a registration
+  admission question. The extended C_K is a structural consequence of
+  admissibility conditions (T1+T4+T5), not a new physical relation.
+  No new ρ-side correlation is asserted between A and C.
+
+F-T7-01 (T5 dependency):
+  T7 uses T5 (associativity) which is conditional on T4-H.
+  If T4-H fails, T7 does not follow in the general N=3 case;
+  T1 pairwise constructions remain valid independently.
+```
+
+| Property | Value |
+|---|---|
+| **Bridges axioms to** | E15 IRB → K-side registration-scope propagation for multi-body entangled systems |
+| **Layer 1 dependency** | K1 (carrier sets), K8 (V-preservation at embedding) |
+| **Layer 2 dependency** | T1 (K_joint construction), T4 + T4-H (N=3 colimit), T5 (composition associativity — T7 depends on T5) |
+| **Level 4 dependency** | `requires_K_joint`, `D_joint`, `AdmJoint` (for all pairwise + N=3 admissibility checks); IRB-induced D_joint scope |
+| **EX anchor** | `N_QM_VVV_00025` (IRB / Entanglement) — intersection node; BE anchor: `N_BE_00021` (Essential relation / svabhāvapratibandha); QM anchors: `N_QM_00047` (Entanglement), `N_QM_00090` (Bell correlations) |
+| **BE lineage** | Svabhāvapratibandha extended via E15 IRB — registration non-separability as the K-side analogue of intrinsic-nature relational binding in Dharmakīrti; extended to multi-body scope |
+| **Claim class** | D (proposed) — conditional on T4-H, E15 wording stability, and Level 4 freeze |
+| **Freeze status** | Conditional on T4-H + Level 4 freeze + E15 wording |
+| **Update trigger** | If E15 IRB definition is revised; if T4-H is established or refuted; if T5 is revised; if Level 4 `requires_K_joint` scope changes for IRB-induced D_joint demands |
+
 ### Layer 2 Summary / Tổng kết Tầng 2
 
 | Theorem | Bridges axioms to | Level 4 dependency | Freeze status | Risk if Level 4 changes |
@@ -903,6 +1109,9 @@ Number of pairwise checks for N observers:
 | T2 | ⊥_K derivation | `AdmJoint` (i)-(v), `⊥_K` boundary clauses | Pending | Derivation chain updates; K1-K8 unchanged |
 | T3 | Bridge_EWF formalization | `Bridge_EWF` lemma, **AJVS** (Semantic Postulate Layer 0.5 — relativization defense, formalized) | Pending | Derivation chain may need revision if AJVS challenged; K1-K8 unchanged |
 | T4 | N-observer generalization | All Level 4, generalized to N; **T4-H** Colimit Existence Hypothesis (conditional) | New — Class D | Conditional on T4-H; independently updatable |
+| T5 | K_joint composition (algebraic associativity) | `requires_K_joint`, `D_joint`, `AdmJoint` (per T1+T4) | Conditional on T4-H | K_joint composition structure updates; K1-K8 unchanged |
+| T6 | Decoherence-induced registration update (Path A: K5 invalidation; Path B: k_new instantiation) | `requires_K_joint`, C_K, `⊥_K` boundary clauses (Path A only) | Pending Level 4 freeze | Path A K5 conditions update; K3 intrinsic cert unchanged |
+| T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | Conditional on T4-H + Level 4 + E15 | If E15 IRB changes or T4-H fails; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
 
 ---
 
@@ -914,7 +1123,7 @@ Number of pairwise checks for N observers:
 | 1 | Multi-step retroactive chain (E8 extension) | Deferred — K5 single-step; K5 V_prov pre-closure mechanism allows re-assessment of invalidating acts before K7 closure (F1: V_prov/V_final lifecycle — V_prov→0 reversible pre-closure, V_final→0 irreversible post-closure). Multi-step chain requires additional axiom(s). | Medium |
 | 2 | Null K-state full formalization (E9 detailed operationalization) | Partial — K1 o=∅ + K4 E9 exception structurally accommodate null events. Detailed operationalization deferred. | Low-Medium |
 | 3 | Validated absence validity conditions (E14 extension) | Partial — K1 o=∅ + K4 default validity structurally accommodate. Specific absence validity conditions deferred. | Medium |
-| 4 | Inter-K-space relation structure (E15 extension) | Deferred — new axiom needed | Low-Medium |
+| 4 | Inter-K-space relation structure (E15 extension) | Partially addressed by T7 (IRB Registration-Scope Propagation, Layer 2 bridge theorem) — T7 provides C_K extension and multi-body scope propagation derived from E15 IRB. Full axiomatization of inter-K-space IRB relations as a Layer 1 axiom remains deferred. | Low-Medium |
 | 5 | Pre-registration K-state (E16 extension / K0) | Deferred — new axiom needed | Low-Medium |
 | 6 | Pre-symbolic registration stratum (E4 formalization) | Deferred — K-space stratification | Low |
 | 7 | Equivalence of σ(M) and R̂_svasa formalisms | Deferred — separate research track (paper v2.0 §7.2 item #4) | Low |
