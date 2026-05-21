@@ -70,6 +70,13 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 - Use the project skill `/rca-scientific-paper` only for scientific paper documents (`scientific paper`) when planning, reviewing, or revising scientific paper claims.
 
+### VVV-QMRF core / EX integration rule
+
+- Develop the VVV-QMRF / VVV-QMRC core by the rule: "Internal-first, VVV-QMRF-EX-verified, selectively imported."
+- VVV-QMRC core may be extended from VVV-QMRF-EX only when the EX element reveals a structural necessity already implicit in the core registration problem.
+- Treat VVV-QMRF-EX as having completed its main role of providing a quantitative map of K-rho relationships; its current highest value is intelligence about important nodes, structural gaps, and stress points, not direct data import or merging EX edges into the core.
+- Use VVV-QMRF-EX as a compass, not as cargo: let EX guide RCA, prioritization, and verification, but do not import EX structures into the core unless the RCA isolates a core-level necessity.
+
 This file provides guidance to Claude Code when working in this project.
 
 ## Project context
