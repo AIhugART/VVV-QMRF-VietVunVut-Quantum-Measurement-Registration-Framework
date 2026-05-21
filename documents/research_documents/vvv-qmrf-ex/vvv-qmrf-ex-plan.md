@@ -680,7 +680,7 @@ documents/research_documents/vvv-qmrf-ex/
 ## 14. v1.6 Stretch Expansion Plan — Phases 7–10 (PHASES 7–8 COMPLETED; PHASES 9–10 PENDING)
 
 > **Document type:** Forward-looking RCA expansion (not yet executed).
-> **Status gate:** Phases 7–8 are COMPLETED as of 2026-05-20. Phase 7 evidence: `phase7_candidate_pool.md`, `phase7_ke_of_rca_log.md`, `phase7_ke_sc_rca_log.md`, `br_ex_be_registry.md` entries `BR_EX_BE_00047`–`BR_EX_BE_00069`, `k_gap_exception_list.md` `KE-RESOLVED-STRETCH` updates, and `ex_schema_addendum.md` v1.1 vocabulary update. Phase 8 evidence: `reviews/phase8_audit_closure_report.md` and `data/phase8_boundary_audit_report.json` (`entries_audited: 143`, `violations: 0`, `overall: PASS`). Phases 9–10 remain pending because no `_v1.6` immutable re-run snapshots or final completion audit are present yet.
+> **Status gate:** Phases 7–8 are COMPLETED as of 2026-05-20. Phase 7 evidence: `archives/phase7_logs/phase7_candidate_pool.md`, `archives/phase7_logs/phase7_ke_of_rca_log.md`, `archives/phase7_logs/phase7_ke_sc_rca_log.md`, `br_ex_be_registry.md` entries `BR_EX_BE_00047`–`BR_EX_BE_00069`, `k_gap_exception_list.md` `KE-RESOLVED-STRETCH` updates, and `ex_schema_addendum.md` v1.1 vocabulary update. Phase 8 evidence: `reviews/phase8_audit_closure_report.md` and `data/phase8_boundary_audit_report.json` (`entries_audited: 143`, `violations: 0`, `overall: PASS`). Phases 9–10 remain pending because no `_v1.6` immutable re-run snapshots or final completion audit are present yet.
 > **Authority:** This section EXTENDS Plan v1.5 — it does not overwrite §7, §10, or §13. Phase 7 execution evidence is recorded in-place per "extend, not overwrite" rule.
 
 ### 14.1 RCA Purpose (v1.6)
@@ -718,9 +718,9 @@ documents/research_documents/vvv-qmrf-ex/
 **Execution result:** 23/23 target nodes accepted and registered. KE-OF accepted 13/13 at threshold 4.5/5; KE-SC accepted 10/10 at threshold 3.5/5. No `REJECTED-NO-POOL`, `KE-OF-RCA-REJECTED-3R`, or `KE-SC-RCA-REJECTED-3R` nodes were created.
 | Step | Description | Output artifact |
 |---|---|---|
-| 7.0 | ✅ DONE — Built candidate pool ≥3 per node from `SYSTEM_Buddhist_Epistemology/system_be_full.md` (BE SOT). No node tagged `REJECTED-NO-POOL` | `phase7_candidate_pool.md` |
-| 7.1 | ✅ DONE — RCA gate per KE-OF node (13 nodes, threshold 4.5/5, 3-round protocol). Result: 13/13 accepted, all Round 1 | `phase7_ke_of_rca_log.md` |
-| 7.2 | ✅ DONE — RCA gate per KE-SC node (10 nodes, threshold 3.5/5, 3-round protocol). Result: 10/10 accepted; 6 Round 1, 4 Round 2 | `phase7_ke_sc_rca_log.md` |
+| 7.0 | ✅ DONE — Built candidate pool ≥3 per node from `SYSTEM_Buddhist_Epistemology/system_be_full.md` (BE SOT). No node tagged `REJECTED-NO-POOL` | `archives/phase7_logs/phase7_candidate_pool.md` |
+| 7.1 | ✅ DONE — RCA gate per KE-OF node (13 nodes, threshold 4.5/5, 3-round protocol). Result: 13/13 accepted, all Round 1 | `archives/phase7_logs/phase7_ke_of_rca_log.md` |
+| 7.2 | ✅ DONE — RCA gate per KE-SC node (10 nodes, threshold 3.5/5, 3-round protocol). Result: 10/10 accepted; 6 Round 1, 4 Round 2 | `archives/phase7_logs/phase7_ke_sc_rca_log.md` |
 | 7.3 | ✅ DONE — Boundary-guard pre-check applied to every accepted entry. Claim class remains `interpretive_mapping`; no identity claim accepted | inline in 7.1/7.2 logs |
 | 7.4 | ✅ DONE — Applied F1/F4/F11/F12 schemas and appended `BR_EX_BE_00047`–`BR_EX_BE_00069`; added `stretch_expert_mapping` overview row | edited `br_ex_be_registry.md` |
 | 7.5 | ✅ DONE — Batch approval completed per category: KE-OF and KE-SC approved as category batches | user batch approval |
@@ -795,7 +795,7 @@ documents/research_documents/vvv-qmrf-ex/
 | 4 | **Boundary integrity** | C1–C7 100% pass on final entries (≤143) | `data/phase8_boundary_audit_report.json` |
 | 5 | **Immutability** | Zero git modification to v1.5 phase JSONs (original 7 files) | `git diff HEAD -- data/phase{1..6}_*.json` (exclude `_v1.6` / `_post_phase6`) |
 | 6 | **Reproducibility** | `random_state=42` recorded; re-run reproduces identical results | `vvv_qmrf_ex_context.json["random_state"]` |
-| 7 | **RCA rigor** | 100% ACCEPTED entries pass their category threshold (4.5 or 3.5); 100% REJECTED entries have full 3-round audit trail | `phase7_ke_of_rca_log.md` + `phase7_ke_sc_rca_log.md` |
+| 7 | **RCA rigor** | 100% ACCEPTED entries pass their category threshold (4.5 or 3.5); 100% REJECTED entries have full 3-round audit trail | `archives/phase7_logs/phase7_ke_of_rca_log.md` + `archives/phase7_logs/phase7_ke_sc_rca_log.md` |
 | 8 | **Doc synchronization** | All MD numerical claims match JSON sources | Audit Section 4 of `rca_plan_v1.6_completion_audit.md` |
 
 ### 14.9 Sequence and Dependencies
@@ -867,7 +867,7 @@ Step 7.0 (candidate pool)         ─┘                  │
 |---|---|---|
 | 11.1 | Annotate 3 reclassified entries in `br_ex_be_registry.md` with `v1.7 Status: RECLASSIFIED-v1.7-KE-SC-THRESHOLD-RAISE` (NO renumber — namespace gaps preserved) | edited registry |
 | 11.2 | Re-add 3 VVV nodes to `k_gap_exception_list.md` under KE-SC (with note on v1.7 reclassification) | edited exception list |
-| 11.3 | Annotate `phase7_ke_sc_rca_log.md` for 3 reclassified entries | edited log |
+| 11.3 | Annotate `archives/phase7_logs/phase7_ke_sc_rca_log.md` for 3 reclassified entries | edited log |
 | 11.4 | Update `ex_schema_addendum.md` threshold spec to KE-SC v1.6=3.5, v1.7=4.0+carve-out | edited schema |
 | 11.5 | Patch `phase4_graph_sync.py` with reclassified-entry filter list | edited helper |
 | 11.6 | Re-run Phase 9 chain with `VVV_QMRF_EX_SUFFIX="_v1.7"` — produces `_v1.7.json` immutable snapshots without overwriting `_v1.6` baselines | 6 new JSONs + 2 PNGs |
@@ -917,6 +917,30 @@ Must show ZERO modifications to both v1.5 and v1.6 immutables.
 | 4 | **Boundary integrity** | 0 violations on 140 active entries | `phase8_boundary_audit_report_v1.7.json` |
 | 5 | **Immutability v1.5 + v1.6** | git diff zero on phase JSONs (both suffixes) | git diff verification |
 | 6 | **Doc consistency** | All MD claims match JSON | Section 4 of v1.7 completion audit |
+
+---
+
+## 16. Post-v1.7 Archival (2026-05-21)
+
+**Trigger:** v1.7 fully executed (commit `7fdd681` closes Step 11.8). No more phases planned. Process artefacts archived to `archives/phase7_logs/`.
+
+**Archived (process artefacts — moved, not deleted):**
+
+| File | Archive location | What it contained |
+|---|---|---|
+| `phase7_candidate_pool.md` | `archives/phase7_logs/` | Working BE candidate pool (≥3 per VVV node) |
+| `phase7_ke_of_rca_log.md` | `archives/phase7_logs/` | Per-entry RCA log, 13 KE-OF nodes, threshold 4.5/5 |
+| `phase7_ke_sc_rca_log.md` | `archives/phase7_logs/` | Per-entry RCA log, 10 KE-SC nodes; v1.7 annotations in-file |
+
+**Not archived (results + tooling kept visible):**
+- All registries, audits, analyses, exception lists, schema docs — results
+- All `.py` scripts (`phase1–6`, `phase4_graph_sync`) — reproducibility tooling (C7)
+- All `data/` outputs — immutable baselines
+- `source_snapshot/` — locked external references
+
+**Reference updates applied:** `vvv-qmrf-ex-plan.md` §14 + §15.4, `ex_schema_addendum.md`, `reviews/rca_plan_v1.7_completion_audit.md` — paths updated to `archives/phase7_logs/` prefix.
+
+**`br_ex_be_registry.md` Origin fields** (23 text citations) left intact — these are human-readable traceability notes, not path dependencies. `archives/README.md` maps old filenames to new paths.
 
 ---
 

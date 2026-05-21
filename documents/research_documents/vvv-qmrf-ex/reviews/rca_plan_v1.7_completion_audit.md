@@ -78,7 +78,7 @@ Total: 7 accepted + 3 reclassified = 10 KE-SC entries reviewed.
 5. **Root cause:** v1.6 KE-SC=3.5 was a pragmatic stretch floor; v1.7 retrofits 4.0+carve-out to harmonize with KE-OF, accepting -3 entries (48→45, 92.3%→86.5%, Tier 2 still passes).
 
 **Fix applied (4-tier scoring 4.2/5):**
-1. Verify all 10 KE-SC scores via `phase7_ke_sc_rca_log.md` — 10/10 match user data
+1. Verify all 10 KE-SC scores via `archives/phase7_logs/phase7_ke_sc_rca_log.md` — 10/10 match user data
 2. Annotate 3 reclassified entries in `br_ex_be_registry.md` with `Type: stretch_expert_mapping_RECLASSIFIED_v1_7` + v1.7 Status + v1.7 Reason rows (annotate-don't-delete pattern; namespace gaps preserved)
 3. Move 3 VVV nodes back to KE-SC exception in `k_gap_exception_list.md`
 4. Patch `phase4_graph_sync.py` with `RECLASSIFIED` skip filter
