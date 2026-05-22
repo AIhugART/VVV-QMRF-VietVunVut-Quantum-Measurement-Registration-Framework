@@ -150,13 +150,13 @@ After C1–C4 all ≥ 8/10, replace Track A central claim with Track B target cl
 
 ### 5.2 Promotion checklist
 
-- [ ] Re-run readiness assessment ([readiness_assessment_phi_claim.md](../../archives/review/readiness_assessment_phi_claim.md)) — verify all four components ≥ 8/10.
-- [ ] Internal consistency check: K-Axiom + φ definition + necessary conditions + §6.X all mutually compatible.
-- [ ] RCA review by re-applying Rule Zero 5-step to the new central claim wording.
-- [ ] CLAUDE.md "Identity and scope rules" paragraph updated to Track B target claim while preserving E1–E16 list (extend-not-overwrite).
-- [ ] Working Paper v3.0 draft (or v2.1 erratum, depending on Zenodo DOI status).
-- [ ] Decision document [central_claim_change_RCA.md](central_claim_change_RCA.md) appended with version 2.0 change-log entry.
-- [ ] `public_documents/` and `published_documents/` updated (without author metadata, per CLAUDE.md rule).
+- [x] Re-run readiness assessment — C1: 8.5, C2: 8.0, C3: 8.0, C4: 8.0; all ≥ 8/10 ✅ (2026-05-22)
+- [x] Internal consistency check: K-Axiom + φ definition + N_1–N_T + §6.1 mutually compatible; K ≠ H preserved ✅ (2026-05-22)
+- [x] RCA review by Rule Zero 5-step: root cause isolated, fix verified, no new overclaim ✅ (2026-05-22)
+- [x] CLAUDE.md "Identity and scope rules" updated to active φ conjecture; E1–E16 list preserved ✅ (2026-05-22)
+- [ ] Working Paper v3.0 draft — **deferred**: Zenodo DOI pre-assigned for v2.0; WP v2.0 §6.1 already carries Phase 3 content; v3.0 requires separate decision when DOI publish status is resolved.
+- [x] Decision document [central_claim_change_RCA.md](central_claim_change_RCA.md) appended with version 2.0 change-log entry ✅ (2026-05-22)
+- [ ] `public_documents/` and `published_documents/` — **deferred**: no central-claim language found in those folders requiring update at Phase 4; revisit when WP v3.0 is drafted.
 
 ### 5.3 Rollback condition
 
@@ -215,7 +215,8 @@ Estimates are for **research effort**, not calendar elapsed. Project pace is gov
 | Date | Version | Change |
 |------|---------|--------|
 | 2026-05-22 | 1.0 | Initial roadmap. Phase 1–4 defined. Phase 1 not yet started. |
+| 2026-05-22 | 2.0 | All phases complete. Phase 1: φ defined, C2 → 5.5–6.0/10. Phase 2: N_1–N_T derived, C2 → 8.0/10, C3 → 8.0/10. Phase 3: §6.1 φ-conditional analysis in WP v2.0, C4 → 8.0/10. Phase 4: CLAUDE.md promoted to Track B target claim. WP v3.0 and public_documents update deferred. |
 
 ---
 
-*End of Track B roadmap. See [central_claim_change_RCA.md](central_claim_change_RCA.md) for the Track A adoption decision.*
+*Track B Phases 1–4 complete as of 2026-05-22. Central claim promoted. Open items: φ-O2 sufficiency, φ-O5 (N-observer), φ-O6 (codomain), WP v3.0 draft. See [central_claim_change_RCA.md](central_claim_change_RCA.md) for full decision record.*

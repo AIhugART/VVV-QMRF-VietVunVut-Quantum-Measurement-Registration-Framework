@@ -154,7 +154,8 @@ VVV-QMRF-EX (v1.6 + v1.7 complete) maps K ↔ ρ (registration ↔ density opera
 | Date | Version | Change |
 |------|---------|--------|
 | 2026-05-22 | 1.0 | Initial decision document. Track A adopted. CLAUDE.md updated. Track B roadmap created. |
+| 2026-05-22 | 2.0 | Track B Phase 4 complete. All C1–C4 ≥ 8/10 (C1: 8.5, C2: 8.0, C3: 8.0, C4: 8.0). CLAUDE.md central claim updated to active φ conjecture (Track B target claim). K_to_BH_Structure_Preserving_Map_v0_1.md v0.2 contains φ definition, N_1–N_T, and EWF consistency check. WP v2.0 §6.1 contains φ-conditional interpretation analysis. Track A wording preserved within the paragraph; E1–E16 list unchanged. |
 
 ---
 
-*End of decision document. See [phi_map_track_b_roadmap.md](phi_map_track_b_roadmap.md) for Track B execution plan.*
+*Track B Phases 1–4 complete as of 2026-05-22. Central claim promoted to Track B target. See [phi_map_track_b_roadmap.md](phi_map_track_b_roadmap.md) for residual open items (φ-O2, φ-O5, φ-O6).*
