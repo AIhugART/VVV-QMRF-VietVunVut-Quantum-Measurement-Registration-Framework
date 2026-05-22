@@ -676,6 +676,36 @@ Both Proietti et al. (2019) and Bong et al. (2020) are compatible with the VVV-Q
 
 **Relation to Relational Quantum Mechanics:** Rovelli (1996) argues that quantum states are relative to observers. VVV-QMRF adds the formal registration-layer structure that explains why they are relative: σ_R(M) operates intrinsically within K_R, independently of K_{R′}. K_F ⊥_K K_W is the registration-layer account of Rovelli's observer-relativity. This is a genuine extension, not a restatement: VVV-QMRF supplies the formal conditions (E1, E6, E7) and the requires_K_joint predicate that Relational QM does not.
 
+### 6.1 φ-Conditional Analysis (Track B Phase 3)
+
+The architectural comparison above identifies where existing interpretations lack structural machinery relative to VVV-QMRF's registration layer. Phase 2 of the Track B research program (see `documents/research_documents/meta_architecture/K_to_BH_Structure_Preserving_Map_v0_1.md` §6) derives nine necessary conditions N_1–N_T for any structure-preserving map φ: K → B(H). This section re-frames each §6 architectural gap as a **φ-conditional scope boundary**: the specific necessary condition N_i that the interpretation lacks the structural machinery to satisfy.
+
+**Scope boundary convention:** "Lacks the structural machinery for N_i" means the interpretation does not supply the formal element required by N_i — not that the interpretation is incorrect within its own domain. This is a registration-layer scope boundary, not an evaluation of empirical validity.
+
+| Interpretation | Architectural gap (§6) | φ-conditional scope boundary | N_i lacking |
+|---|---|---|---|
+| Copenhagen | No formal definition of classical apparatus | Lacks formal σ_R(M): cannot construct φ-domain element k = ⟨M, o, cert, t, V⟩ with cert field → φ has no defined domain | **N_3** (cert-reflection): cert = σ_R(M) = 1 is structurally required to admit k into K_R |
+| Many-Worlds | No physical observable distinguishes branches | No singular registration admission per branch → K_R carrier set underspecified → φ (total function per N_1) has no well-defined domain | **N_1** (totality): φ total requires K_R well-defined; branching without a singular admission act leaves the carrier set underspecified |
+| QBism | Subjective probability is not a physical quantity | No structural V(k) field: agent-relative belief is not a binary validity predicate → φ cannot satisfy validity-positivity | **N_4** (validity-positivity): V(k) = 1 → P_o ≥ 0, P_o ≠ 0 requires V(k) to be a structural field, not an agent's degree of belief |
+| Relational QM | VVV-QMRF supplies formal conditions RQM does not | RQM has relational facts but no temporal closure event t_close → φ_final cannot be fixed | **N_7** (closure-finalization): φ = φ_final fixed at t_close requires a temporal closure boundary absent from RQM's formalism |
+| Objective Collapse (GRW) | Collapse mechanism is postulated, not yet detected | Collapse operates on ρ-side state space, not K-side validity field → K-side V: 1→0 irreversible transition is not formally supplied | **N_5** (invalidation-absorption): K-side V-update and its post-closure irreversibility are not entailed by a ρ-side physical collapse event |
+
+**Notes on the φ-conditional scope boundaries:**
+
+- **Copenhagen / N_3:** The Heisenberg cut marks when apparatus becomes classical, but without formal σ_R(M), the K_R admission invariant (cert = 1) cannot be constructed. Without a cert field, the 5-tuple k = ⟨M, o, cert, t, V⟩ is undefined, and φ has no domain to map from.
+
+- **Many-Worlds / N_1:** MWI generates all outcomes in a universal branching structure. K_R requires a singular admission act per observer (K1 cert = 1 invariant). The "all branches" structure lacks a mechanism to designate which branch's interaction constitutes the unique admitted registration; the K_R carrier set is therefore underspecified as a domain for φ.
+
+- **QBism / N_4:** QBism locates measurement outcomes in the agent's belief update (Dutch book coherence), not in a structural field V(k) ∈ {0, 1}. N_4 requires φ(k) to be a non-zero projection whenever V(k) = 1. Without a structural V, this condition cannot be applied.
+
+- **Relational QM / N_7:** RQM formalizes observer-relative facts (Rovelli 1996) but does not define a temporal closure event. K7's t_close is the point after which V(k) is committed and cannot change. Without t_close, φ_final is not specifiable and N_7 cannot be satisfied.
+
+- **Objective Collapse / N_5:** GRW collapse operates on ρ via a stochastic collapse term (ρ-side). K5 requires a K-side irreversible V: 1→0 transition at or before t_close. A ρ-side collapse does not automatically supply this K-side transition; the formal connection would require separate specification under the K ≠ H architectural constraint.
+
+**Relation to §7.4 Architectural Constraints:** Section §7.4 identifies the unobservable primitive each framework introduces. This §6.1 adds a φ-conditional layer: it identifies which specific necessary condition N_i each framework lacks the structural machinery to satisfy. Both framings are complementary; §6.1 does not replace the §7.4 analysis.
+
+**Status — Class D:** The necessary conditions N_1–N_T are derived under the assumption that φ: K → B(H) exists (Track B research program, Phase 2). This §6.1 analysis means: *if φ were to exist as a structure-preserving map, these are the structural elements existing interpretations would need to supply.* Neither the existence of φ nor the empirical correctness of these scope boundaries is asserted.
+
 ---
 
 ## 7. Scope, Limitations, and Open Items
