@@ -1,20 +1,20 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-> **DISCLAIMER / CẢNH BÁO:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. This document is a **narrow framework proposal draft**, not a frozen postulate and not a physical theory.
+> **DISCLAIMER / CẢNH BÁO:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. This document is a **frozen extension postulate** in the VVV-QMRF framework; it is not a physical theory and adds no Standard QM claim.
 >
-> VVV-QMRF là nghiên cứu cá nhân độc lập ở Class D, không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế. Tài liệu này là **bản nháp đề xuất khung hẹp** (narrow framework proposal draft), không phải tiền đề đã đóng băng và không phải lý thuyết vật lý.
+> VVV-QMRF là nghiên cứu cá nhân độc lập ở Class D, không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế. Tài liệu này là **tiên đề mở rộng đã đóng băng** trong khung VVV-QMRF; không phải lý thuyết vật lý và không thêm bất kỳ tuyên bố Standard QM nào.
 
-# E18 Narrow Draft — Delayed-Choice Registration Boundary
-# Bản nháp hẹp E18 — Ranh giới Ghi nhận trong Delayed-Choice
+# E18 — Delayed-Choice Registration Boundary Postulate
+# Tiên đề E18 — Ranh giới Ghi nhận trong Delayed-Choice
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
-**Document type:** framework draft (narrow proposal, not yet promoted)
-**Holding state:** `framework/drafts/` — passed RCA, NOT yet inserted into framework index
+**Document type:** framework postulate (frozen extension postulate, promoted from narrow draft)
+**Holding state:** `framework/` — promoted to frozen extension postulate via G7 user authorization on 2026-05-22; listed in `framework/index.md` Section 4.3 alongside E8–E16
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **GitHub:** https://github.com/AIhugART/
-**Date:** 2026-05-22
-**Status:** Narrow Draft — Registration class D — Tier 1 priority per `rca_core_extensibility_analysis.md:424`
-**Lineage:** RCA-supported candidate → narrow draft (this document) → framework postulate (future, conditional)
+**Date:** 2026-05-22 (promoted)
+**Status:** Frozen extension postulate — Registration class D — Promoted from Tier 1 narrow draft per `rca_core_extensibility_analysis.md` Appendix C
+**Lineage:** RCA-supported candidate → narrow draft → **framework postulate (this document, G7 DONE 2026-05-22)**
 **Scope rule:** VVV-QMRF core scope; VVV-QMRF-EX used as compass only, no edge import
 
 ---
@@ -215,9 +215,9 @@ E18 narrow draft → frozen framework postulate requires ALL of the following co
 | G4 | Third independent case validation | **DONE** | [rca/cases/e18_case_kim_1999.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/cases/e18_case_kim_1999.md) — Kim et al. 1999 4-branch lock, 20/20 condition cells PASS |
 | G5 | BE anchor decision | **DONE** | Parent RCA Section 13 accepts BE anchor as analogical-only permanent boundary; no physical-equivalence claim |
 | G6 | EX recoverability check (does EX `N_QM_VVV_00024` cross 4.0 threshold after evidence?) | **DONE** | EX registry sync completed via [br_ex_be_registry.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/vvv-qmrf-ex/br_ex_be_registry.md) entries `BR_EX_BE_00070`-`BR_EX_BE_00072`. Path C valid-sign package scored 4.2/5; old `BR_EX_BE_00066` remains `RECLASSIFIED-v1.7` and inactive with supersession note. |
-| G7 | User-authorized index insertion | **PENDING** | Explicit user authorization required |
+| G7 | User-authorized index insertion | **DONE** | User authorized G7 with Full scope on 2026-05-22; see [rca_core_extensibility_analysis.md Appendix C](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_core_extensibility_analysis.md) — 3-round RCA decision (R1=4.4, R2=4.8, R3=4.3, all PASS); file renamed from `..._narrow_draft.md` to `..._postulate.md` and moved into `framework/` root |
 
-**Until G7 is PASS, E18 remains in `framework/drafts/`. The framework index MUST NOT list E18 as a frozen postulate.** (G4 was advanced to DONE on 2026-05-22 via `rca/cases/e18_case_kim_1999.md`; G5 was advanced to DONE by parent RCA Section 13 analogical-only BE anchor decision; G6 is DONE after EX registry sync via Path C; G7 remains PENDING.)
+**All gates G1–G7 are PASS as of 2026-05-22. E18 is now a frozen extension postulate in `framework/` listed in `framework/index.md` Section 4.3 alongside E8–E16.** (G4 was advanced to DONE via `rca/cases/e18_case_kim_1999.md`; G5 was advanced to DONE by parent RCA Section 13 analogical-only BE anchor decision; G6 was advanced to DONE after EX registry sync via Path C; G7 was advanced to DONE via user authorization recorded in `rca_core_extensibility_analysis.md` Appendix C.)
 
 ---
 
@@ -270,7 +270,7 @@ All three rounds cleared the 4.0/5 gate per the project decision rule.
 1. **G4 closed by Kim 1999:** The third independent case validation is no longer open. Kim et al. (1999) delayed-choice quantum eraser closed G4 with a 4-branch lock and 20/20 condition cells PASS via `rca/cases/e18_case_kim_1999.md`.
 2. **G5 closed by analogical-only BE anchor:** The BE anchor decision is no longer open. Parent RCA Section 13 accepts the Anumāna–Vyāpti–Svabhāvapratibandha chain as a permanent structural analogue only, not as physical equivalence.
 3. **G6 EX recoverability check is DONE:** RCA `rca_e18_ex_vnext_bridge_audit.md` selected Path C at 4.2/5, and EX registry sync has now added active valid-sign package entries `BR_EX_BE_00070`-`BR_EX_BE_00072`. Old `BR_EX_BE_00066` remains `RECLASSIFIED-v1.7`, inactive, and preserved with a supersession note.
-4. **G7 requires explicit user authorization:** E18 must remain in `framework/drafts/` unless and until the user explicitly authorizes insertion into `documents/research_documents/framework/index.md`.
+4. **G7 closed by user authorization on 2026-05-22:** User authorized G7 with Full scope via the 3-round RCA decision recorded in `rca_core_extensibility_analysis.md` Appendix C (R1=4.4, R2=4.8, R3=4.3, all PASS). E18 file renamed from `..._narrow_draft.md` to `..._postulate.md` and moved from `framework/drafts/` to `framework/`; `framework/index.md` Section 4.3 updated with the E18 row.
 
 ---
 

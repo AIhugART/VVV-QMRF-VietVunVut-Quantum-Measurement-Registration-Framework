@@ -213,7 +213,7 @@ VN: Quyet dinh goc cua G6 RCA la **HOLD**. Audit tiep theo da chon Path C la **P
 
 ## Section 10 — Document Provenance
 
-- **E18 Narrow Draft:** [vvv_qmrf_framework_e18_delayed_choice_registration_boundary_narrow_draft.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/drafts/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_narrow_draft.md)
+- **E18 Postulate (promoted from narrow draft via G7 user authorization on 2026-05-22):** [vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/framework/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md)
 - **Parent E18 RCA:** [rca_e18_delayed_choice_registration_boundary.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md)
 - **Kim 1999 case file:** [rca/cases/e18_case_kim_1999.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/cases/e18_case_kim_1999.md)
 - **EX K-gap exceptions:** [k_gap_exception_list.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/vvv-qmrf-ex/k_gap_exception_list.md)

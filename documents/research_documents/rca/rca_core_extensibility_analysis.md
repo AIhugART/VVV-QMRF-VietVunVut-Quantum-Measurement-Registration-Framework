@@ -493,9 +493,9 @@ This appendix documents the G6 chain specifically, as it directly interacts with
 | G4 | Third independent case validation | **DONE** | Kim et al. 1999 — 4-branch lock, 20/20 condition cells PASS (`rca/cases/e18_case_kim_1999.md`) |
 | G5 | BE anchor decision | **DONE** | Analogical-only permanent boundary accepted (`rca_e18.md` Section 13) |
 | **G6** | **EX recoverability check** | **DONE** | EX registry sync via Path C — `BR_EX_BE_00070`–`BR_EX_BE_00072` active (see B.2 below) |
-| G7 | User-authorized index insertion | **PENDING** | Explicit user authorization required before `framework/index.md` is touched |
+| G7 | User-authorized index insertion | **DONE** | User authorized G7 with Full scope on 2026-05-22; see [Appendix C](#appendix-c--g7-authorization-analysis-e18-index-insertion-2026-05-22) for the 3-round RCA decision (R1=4.4, R2=4.8, R3=4.3, all PASS) and execution record |
 
-**Gate progress: 6/7 DONE (86%).** E18 remains in `framework/drafts/` until G7.
+**Gate progress: 7/7 DONE (100%).** E18 promoted from `framework/drafts/` to `framework/` as a frozen extension postulate alongside E1–E16 (file: `vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md`).
 
 ## B.2 — G6 Key RCA Chain / Chuỗi RCA G6
 
@@ -573,3 +573,189 @@ The 6-dimension verdict from Appendix A.3 is not changed by G6 completion:
 ---
 
 **Appendix B end. Appendices A and B together cover: (A) 6-dimension extensibility audit + roadmap, and (B) E18 G6 EX recoverability chain and promotion gate progress. Both are extensions of the original Sections 0-5 + Summary Table, which remain authoritative.**
+
+---
+
+# Appendix C — G7 Authorization Analysis: E18 Index Insertion (2026-05-22)
+
+> **Scope:** VVV-QMRF core (E18 promotion path G7); VVV-QMRF-EX as compass only, no edge import.
+>
+> **Trigger:** Appendix B closed G6 (EX recoverability check PASS via Path C, 4.2/5). G7 remained the only PENDING gate, explicitly requiring user authorization before `framework/index.md` is modified. User invoked `/everything-claude-code:plan` requesting a 3-round RCA × 5-Why × scoring 4.0/5 decision analysis for the G7 authorization issues. This appendix records that analysis, the user's authorization, and the executed actions.
+>
+> **Extend, not overwrite:** Sections 0-5, Summary Table, Appendix A, and Appendix B remain authoritative and are not modified. Appendix C documents the G7 decision and its execution scope (Full G7).
+
+## C.0 — Context / Bối cảnh
+
+Before this analysis, gate progress was 6/7 DONE (G1–G6 closed; see Appendix B.1). The narrow draft at `framework/drafts/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_narrow_draft.md` carried three independent case validations (Wheeler, Scully-Drühl, Kim 1999), a refined formula `Lock(C_f, S, {W_i}) → W_valid`, an analogical-only BE anchor (G5), and an EX-side valid-sign package via `BR_EX_BE_00070`-`BR_EX_BE_00072` (G6). The remaining gate G7 is **governance**, not technical — it asks whether the project author commits the postulate to the framework index as a frozen extension postulate, alongside E1–E16.
+
+This appendix runs three RCA rounds to isolate whether G7 authorization is justified, whether the insertion violates any framework invariant, and what the concrete change set must be. Each round uses 5-Why tracing and a 5-criteria scoring matrix with gate 4.0/5 per the project decision rule.
+
+## C.1 — Phase 1 Pre-step: Question Selection via RCA
+
+Before asking the user, a sub-RCA selected which questions are genuinely necessary. Five candidate questions were scored:
+
+| Candidate question | Score | Decision |
+|---|---:|---|
+| Q1: G7 Authorization (yes/no/wait) | **5.0/5** | MUST ask — Q1 itself is the action that satisfies G7 |
+| Q2: G7 Scope (Full vs Narrow) | **4.0/5** | Should ask — convention choice, two valid answers |
+| Q3: Write Appendix C even if G7 not authorized | 3.0/5 | FAIL — default to always write (analysis has standalone value) |
+| Q4: Update downstream files separately | 2.5/5 | FAIL — subsumed by Q2 (Full/Narrow scope decides it) |
+| Q5: Re-verify G1–G6 before writing Appendix C | 2.0/5 | FAIL — automatic; Phase 1 Round 2 includes invariant re-check |
+
+Only Q1 and Q2 cleared the 4.0/5 gate. User answered: **Q1 = "Có — authorize G7"**, **Q2 = "Full G7 (Recommended)"**.
+
+## C.2 — Round 1: Structural Gap Justification — **PASS 4.4/5**
+
+**1-sentence object:** "Is the K-side classification gap covered by E18 well-isolated and supported by enough independent evidence to justify promotion from `framework/drafts/` to `framework/`?"
+
+**5-Why trace:**
+
+1. Why is insertion justified now? → All technical gates G1–G6 closed; G6 EX recoverability passed via Path C at 4.2/5 (Appendix B.2 Step 2). The remaining barrier is governance, not evidence.
+2. Why are 3 case validations sufficient? → Wheeler (context-only locking), Scully-Drühl 1982 (sorting-relation `S` needed), and Kim et al. 1999 (4-branch lock, 20/20 condition cells PASS) cover three distinct delayed-choice topologies. No further case is currently identified as missing.
+3. Why is the formula `Lock(C_f, S, {W_i}) → W_valid` stable? → It survived three internal rounds during drafting (R1, R2, R3 in narrow_draft Section 10.1, all ≥ 4.3/5), and the parent RCA Section 11.8 records the refinement that introduced `S` after the eraser case. No further refinement is currently flagged.
+4. Why do E8, E13, and legacy E17 not cover this gap? → E8 governs *invalidation of a prior valid registration* by a stronger incompatible one; E13 governs *temporal-momentary bounds*; E17 governs the *interface between physical transition and registration update*. None names the locking rule by which a final context plus optional sorting relation classifies a prior candidate window as the operative valid window (parent RCA `rca_e18.md` Section 2).
+5. **Root cause:** The structural gap is cleanly isolated as a K-side classification rule that is not redundant with any existing postulate and is supported by three independent case validations. Promotion is supported by evidence, not by analogy alone.
+
+**5-criteria scoring:**
+
+| Criterion | Score | Justification |
+|---|---:|---|
+| Root clarity | 5/5 | One-sentence object stated cleanly; isolation from E8/E13/E17 explicit. |
+| Evidence | 4/5 | Three independent case tests PASS; cases are classic delayed-choice experiments, not new empirical data — sufficient for K-side classification claim but not for any physical claim. |
+| Boundary safety | 5/5 | E18 statement explicitly disclaims retrocausation, Born-rule modification, and Standard QM replacement (narrow_draft Section 0). |
+| Citation traceability | 4/5 | All G1–G6 evidence links are active and resolvable; Appendix B confirms current state. One minor friction: file path references will shift after rename, requiring link update in Phase 3. |
+| Actionability | 4/5 | Index edit is a one-row addition; renamed file path is well-defined; reversible by reverting the same edits. |
+
+**Total: 4.4/5 PASS.** Structural gap justification is sound.
+
+## C.3 — Round 2: Framework Invariant Check — **PASS 4.8/5**
+
+**1-sentence object:** "Does inserting E18 into the framework index violate any framework-level invariant established by CLAUDE.md, the BE SOT, or the prior extensibility verdicts?"
+
+**5-Why trace:**
+
+1. Why might insertion break framework structure? → E18 has remained in `framework/drafts/` specifically because G7 is unsigned. The drafts/ location is itself the safety mechanism; promotion changes that.
+2. Why is G7 a governance gate and not a technical gate? → Framework index is a commitment layer; entries listed in `framework/index.md` are treated as frozen postulates with stable commitment, not as provisional artifacts. The drafts/ location signals "passed RCA, awaiting governance acceptance."
+3. Why does user authorization specifically suffice to close G7? → Per CLAUDE.md "Conditional actions require user authorization" and Section 4 Tier 1 Action 1 of this RCA file, the framework index belongs to the author; only the author can promote drafts into it.
+4. Why is the governance gate still required after all technical gates closed? → Technical gates (G1–G6) verify that the candidate would be safe to promote; the governance gate verifies that the author elects to promote it. The two domains are independent.
+5. **Root cause:** G7 is the final governance gate. With explicit user authorization (Q1 answered "Có — authorize G7"), it is satisfied. The technical and structural invariants are unchanged by the act of insertion.
+
+**Invariant re-check (full table):**
+
+| Invariant | Status | Note |
+|---|---|---|
+| "Extend, not overwrite" (CLAUDE.md) | PASS | Adding a row to Section 4.3 does not modify existing E1–E16 rows; renamed file preserves all content. |
+| EX compass-only (CLAUDE.md) | PASS | No EX edge imported into core; index addition is purely core-side navigation. |
+| Boundary guard (no Born rule modification) | PASS | E18 statement explicitly bounded; narrow_draft Section 0 disclaimer carried into renamed file. |
+| Neutral wording on Standard QM | PASS | E18 uses "K-side classification rule" and "registration-layer" language; no "error/wrong/fallacy" framing of Standard QM. |
+| BE anchor analogical-only (G5 DONE) | PASS | Parent RCA Section 13 accepts Anumāna–Vyāpti–Svabhāvapratibandha chain as permanent structural analogue only. |
+| BE SOT consistency (`system_be_full.md` as single source) | PASS | BE anchors reused from existing core nodes (N_BE_00003/00019/00021); no new BE node created. |
+| Author metadata rule (CLAUDE.md) | PASS | Renamed file remains outside `public_documents`/`published_documents` folders; existing VVV-QMRF metadata preserved. |
+
+**5-criteria scoring:**
+
+| Criterion | Score | Justification |
+|---|---:|---|
+| Root clarity | 5/5 | Governance vs technical gate distinction is clean; G7 closure is the precise act of authorization. |
+| Evidence | 5/5 | All 7 framework invariants re-checked; none violated. |
+| Boundary safety | 5/5 | Insertion is reversible; rename is reversible by reverse `git mv`; no destructive operation. |
+| Citation traceability | 4/5 | Appendix B records G6 DONE; this appendix records G7 DONE; downstream references will be updated in Phase 3. |
+| Actionability | 5/5 | Concrete file operations specified (rename, index row addition, status update). |
+
+**Total: 4.8/5 PASS.** No framework invariant is broken by the Full G7 scope.
+
+## C.4 — Round 3: Concrete Change Specification — **PASS 4.3/5**
+
+**1-sentence object:** "What exactly changes under Full G7, and is the change set minimal-but-complete relative to the convention established by E1–E16?"
+
+**5-Why trace:**
+
+1. Why specify the change set explicitly? → Rule Zero Step 4 "Fix the cause, not the symptom" requires a concrete action that addresses the root cause, not a vague edit.
+2. Why is Section 4.3 the correct insertion point in `framework/index.md`? → E18 is an extension postulate, the same category as E8–E16; Section 4.2 holds core postulates E1–E7, and Section 4.1 holds the formal model + interface principle.
+3. Why is renaming `..._narrow_draft.md → ..._postulate.md` part of Full G7? → All E1–E16 files follow the `vvv_qmrf_framework_e##_..._postulate.md` pattern. Keeping a `_narrow_draft` suffix in `framework/` root would create a naming-class mismatch with no corresponding semantic difference.
+4. Why is moving from `framework/drafts/` to `framework/` required, not just renaming? → The `drafts/` folder is itself the governance-gate signal. Renaming inside `drafts/` would still signal "not promoted." The folder change is part of the promotion semantics.
+5. **Root cause:** Full G7 = (a) move + rename file, (b) add index row, (c) update G7 status header inside the file, (d) update Appendix B table to reflect G7 DONE, (e) update external references to the old path. This is the minimal-but-complete set; nothing smaller closes G7 fully, and nothing larger is required.
+
+**Concrete change set (Full G7):**
+
+| # | Action | File | Note |
+|---|---|---|---|
+| 1 | Append Appendix C | `rca_core_extensibility_analysis.md` | This appendix |
+| 2 | Update Appendix B.1 table: G7 PENDING → DONE | `rca_core_extensibility_analysis.md` | Inline edit in existing Appendix B |
+| 3 | Move + rename file | `framework/drafts/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_narrow_draft.md` → `framework/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md` | Use `git mv` to preserve history |
+| 4 | Update file header: "Holding state" line, document type, file name reference | renamed file | Reflect frozen-extension-postulate status |
+| 5 | Update G7 row in Section 8 of the renamed file: PENDING → DONE | renamed file | Cite this appendix and date |
+| 6 | Add E18 row to Section 4.3 of `framework/index.md` | `framework/index.md` | Single new row after E16 |
+| 7 | Update external references to old path | 6 files: `rca_e18_delayed_choice_registration_boundary.md`, `rca_e18_g6_ex_recoverability_check.md`, `cases/e18_case_kim_1999.md`, `archives/review/rca_progress_report_g6_e18.md`, `archives/review/rca_progress_report_v2.md`, plus this RCA file | Verify each with `grep` post-edit |
+
+**5-criteria scoring:**
+
+| Criterion | Score | Justification |
+|---|---:|---|
+| Root clarity | 4/5 | Change set is minimal-but-complete; rationale per item explicit. |
+| Evidence | 4/5 | Convention established by E1–E16 naming pattern is the precedent; archive files exist but are correctly identified as archived. |
+| Boundary safety | 5/5 | Each action is reversible; rename uses `git mv` preserving history. |
+| Citation traceability | 4/5 | 6 external references enumerated; will be re-grepped after edits. |
+| Actionability | 5/5 | Each action is a single concrete edit; no ambiguity about target file or content. |
+
+**Total: 4.3/5 PASS.** Full G7 change set is correctly specified.
+
+## C.5 — Verdict / Phán quyết
+
+All three rounds cleared the 4.0/5 gate:
+
+| Round | Object | Score | Status |
+|---|---|---:|---|
+| R1 | Structural gap justification | **4.4/5** | PASS |
+| R2 | Framework invariant check | **4.8/5** | PASS |
+| R3 | Concrete change specification | **4.3/5** | PASS |
+
+**G7 Authorization recorded:** User authorized G7 with Full scope on 2026-05-22. E18 is promoted from `framework/drafts/` to `framework/` as a frozen extension postulate alongside E1–E16.
+
+**Impact on the 6-dimension verdict (Appendix A.3):**
+
+| Dimension | Before | After G7 | Note |
+|---|---|---|---|
+| 1 — BE source exhaustion | Gần đóng (4.6/5) | **Unchanged** | E18 reuses existing BE nodes (N_BE_00003/00019/00021); no new BE source opened. |
+| 2 — Structural gap (nội tại) | Có điều kiện mở (4.1/5) | **Now: one candidate frozen** (4.1/5 verdict unchanged) | E18 is the first realized extension under Dimension 2; the dimension remains conditionally open for future candidates (R2 path of E17, multi-RS, etc.). |
+| 3 — Nodes/edges trong postulate hiện có | Mở (4.5/5) | **Unchanged** | G7 is a postulate promotion, not a sub-node addition. |
+| 4 — Import EX vào core | Đóng by design (4.9/5) | **Unchanged** | G7 imports zero EX edges; Path C bridges remain EX-local. |
+| 5 — Algebraic-layer theorems | Có điều kiện mở (4.1/5) | **Unchanged** | Outside G7 scope. |
+| 6 — Inter-RS coordination | Open frontier (4.1/5) | **Unchanged** | Outside G7 scope. |
+
+The verdict matrix is preserved in shape; Dimension 2 now has one frozen candidate (E18) while remaining conditionally open for additional structural-gap candidates.
+
+## C.6 — Verify / Kiểm chứng
+
+| Check | Result | Evidence |
+|---|---|---|
+| RCA Rule Zero 5-step applied | PASS | Define (C.0) → Trace (C.2–C.4 5-Why chains) → Isolate (per-round root cause statements) → Fix the cause (Full G7 change set) → Verify (this row + below) |
+| 3 rounds × 5-Why × gate 4.0/5 | PASS | R1=4.4, R2=4.8, R3=4.3 — all clear gate |
+| Question selection sub-RCA | PASS | C.1 records 5 candidate questions; only 2 cleared 4.0/5 gate; user answered both |
+| User authorization explicit | PASS | C.1 records user answer "Có — authorize G7" + "Full G7 (Recommended)" |
+| "Extend, not overwrite" | PASS | Sections 0-5, Summary Table, Appendix A, Appendix B untouched by Appendix C creation |
+| EX compass-only respected | PASS | Zero EX edges added; EX state unchanged |
+| BE SOT consistency | PASS | E18 BE anchor reuses N_BE_00003/00019/00021 already in `system_be_full.md` |
+| Boundary safety | PASS | E18 statement bounded; no Born-rule, retrocausation, or Standard-QM-replacement claim |
+| Neutral wording on Standard QM | PASS | "K-side classification rule" / "registration-layer distinction" language preserved |
+| Reversibility | PASS | Each Phase 3 action is reversible by `git revert` or reverse `git mv` |
+
+## C.7 — Roadmap Update / Cập nhật Roadmap
+
+**Appendix A.4 Tier 1 status update:**
+
+1. ✅ **Draft E18 narrow framework proposal** — DONE (narrow draft created earlier).
+2. ✅ **G7 user-authorized index insertion** — DONE (this appendix records authorization).
+3. ⏳ **Boundary notes for E11/E14 (downstream from E17 RCA-1)** — Unchanged; still recommended.
+
+**Appendix A.4 Tier 2 (unchanged):**
+
+- T8/T9 algebraic-layer theorem enumeration.
+- New RCA for inter-RS coordination dimension.
+- Hetuvābhāsa-based error-taxonomy if BE-source dimension is ever reopened.
+
+**Appendix A.4 Tier 3 (unchanged):** No EX import; no postulate from BE source alone; no E17 force-promotion without isolating channel-self-registration.
+
+---
+
+**Appendix C end. Appendices A, B, and C together cover: (A) 6-dimension extensibility audit + roadmap, (B) E18 G6 EX recoverability chain, and (C) G7 authorization analysis + Full G7 execution. All three are extensions of the original Sections 0-5 + Summary Table, which remain authoritative.**

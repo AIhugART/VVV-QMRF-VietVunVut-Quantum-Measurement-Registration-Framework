@@ -37,8 +37,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 3. **Read the core registration postulates:** E1-E7  
    These define the basic registration operations and the role of the registering process.
 
-4. **Read the extension postulates:** E8-E16  
-   These extend the framework to special or boundary cases such as override, null event, validity, absence, relation, and structured doubt.
+4. **Read the extension postulates:** E8-E16, then E18  
+   These extend the framework to special or boundary cases such as override, null event, validity, absence, relation, structured doubt, and context-conditioned locking of prior candidate registration windows in delayed-choice scenarios.
 
 ---
 
@@ -92,6 +92,7 @@ The framework contribution is on the `K` side: the structure of registration-sta
 | E14 | [vvv_qmrf_framework_e14_validated_absence_registration_postulate.md](vvv_qmrf_framework_e14_validated_absence_registration_postulate.md) | Validated Absence Registration Postulate / Tiên đề Ghi nhận Vắng mặt Hợp lệ | Covers absence as a registration-relevant condition. |
 | E15 | [vvv_qmrf_framework_e15_intrinsic_relational_binding_postulate.md](vvv_qmrf_framework_e15_intrinsic_relational_binding_postulate.md) | Intrinsic Relational Binding Postulate / Tiên đề Liên kết Quan hệ Nội tại | Covers intrinsic relation or binding within the registration framework. |
 | E16 | [vvv_qmrf_framework_e16_pre_measurement_registration_indeterminacy_postulate.md](vvv_qmrf_framework_e16_pre_measurement_registration_indeterminacy_postulate.md) | Pre-Measurement Registration Indeterminacy Postulate / Tiên đề Bất định Ghi nhận Tiền đo | Covers structured doubt as a registration-state condition. |
+| E18 | [vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md](vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md) | Delayed-Choice Registration Boundary Postulate / Tiên đề Ranh giới Ghi nhận trong Delayed-Choice | Covers K-side context-conditioned locking of a prior candidate registration window as the operative valid window, with an optional sorting relation when post-selection or coincidence partitioning is needed. |
 
 ---
 
