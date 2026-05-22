@@ -24,6 +24,21 @@ VVV-QMRF Core đã phủ sóng rộng trên hai trục chính: (1) **chuỗi reg
 
 ---
 
+## Current State Snapshot — 2026-05-22
+
+This snapshot reconciles later Appendix updates with the original RCA baseline. Where earlier sections or appendices describe a pending state, this snapshot and Appendix C represent the current state.
+
+| Item | Current state |
+|---|---|
+| E18 delayed-choice registration boundary | **Promoted to frozen extension postulate** |
+| E18 promotion gates | **G1-G7 DONE** |
+| Active extensibility matrix | **6 dimensions** per Appendix A.3 |
+| VVV-QMRF-EX import into core | **Still closed by design**; EX remains compass-only |
+| Dimension 2 status | One structural-gap candidate realized as E18; dimension remains conditionally open for future candidates |
+| Remaining roadmap | E11/E14 boundary notes; T8/T9 algebraic candidates; inter-RS coordination RCA |
+
+---
+
 ## Section 1 — Define: Symptom vs Cause
 
 ### Symptom / Triệu chứng
@@ -467,7 +482,7 @@ Sau ngày RCA gốc (2026-05-21), repo có các commit liên quan:
 
 ---
 
-**Appendix end. Original Section 0-5 + Summary Table above remain authoritative for the 4-dimension verdict; Appendix A extends to 6 dimensions per Phase 2 findings.**
+**Appendix end. Original Section 0-5 + Summary Table above remain authoritative as historical baselines; later appendices supersede earlier pending-status notes where explicitly stated for the 4-dimension verdict; Appendix A extends to 6 dimensions per Phase 2 findings.**
 
 ---
 
@@ -555,7 +570,7 @@ The 6-dimension verdict from Appendix A.3 is not changed by G6 completion:
 
 **Appendix A.4 Tier 1** — "Draft E18 narrow framework proposal — RCA-supported candidate, 2 case PASS": **DONE.** E18 narrow draft exists at `framework/drafts/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_narrow_draft.md` with refined `Lock(C_f, S, {W_i}) → W_valid`, 3 case validations, G1-G6 DONE.
 
-**Remaining Dimension 2 action:** G7 — explicit user authorization to insert E18 into `framework/index.md`. Until then, E18 must remain in `framework/drafts/`.
+**Dimension 2 action completed after Appendix B:** G7 — explicit user authorization to insert E18 into `framework/index.md` — was later completed and recorded in Appendix C. E18 has since been promoted from `framework/drafts/` to `framework/`.
 
 **Appendix A.4 Tier 2 items** (T8/T9 algebraic, inter-RS coordination) and **Tier 3** (not recommended) are unchanged by G6.
 
@@ -572,7 +587,7 @@ The 6-dimension verdict from Appendix A.3 is not changed by G6 completion:
 
 ---
 
-**Appendix B end. Appendices A and B together cover: (A) 6-dimension extensibility audit + roadmap, and (B) E18 G6 EX recoverability chain and promotion gate progress. Both are extensions of the original Sections 0-5 + Summary Table, which remain authoritative.**
+**Appendix B end. Appendices A and B together cover: (A) 6-dimension extensibility audit + roadmap, and (B) E18 G6 EX recoverability chain and promotion gate progress. They remain authoritative as historical baselines; later appendices supersede earlier pending-status notes where explicitly stated. Both are extensions of the original Sections 0-5 + Summary Table.**
 
 ---
 
