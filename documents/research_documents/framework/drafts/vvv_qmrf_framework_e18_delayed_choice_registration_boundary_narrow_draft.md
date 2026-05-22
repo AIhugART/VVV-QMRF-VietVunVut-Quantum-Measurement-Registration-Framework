@@ -212,12 +212,12 @@ E18 narrow draft → frozen framework postulate requires ALL of the following co
 | G1 | Two case validations PASS | **DONE** | `rca_e18.md:544-564` (Wheeler) + `rca_e18.md:744-759` (quantum eraser) |
 | G2 | Formal locking rule with explicit `S` | **DONE** | Section 3 above + `rca_e18.md:709-731` |
 | G3 | Boundary safety ≥ 4.0/5 | **DONE** | Boundary safety 4.3/5 per `rca_e18.md:756` |
-| G4 | Third independent case validation | **PENDING** | Not yet executed |
+| G4 | Third independent case validation | **DONE** | [rca/cases/e18_case_kim_1999.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/cases/e18_case_kim_1999.md) — Kim et al. 1999 4-branch lock, 20/20 condition cells PASS |
 | G5 | BE anchor strength upgrade ≥ 4.0/5 (currently 3.8) | **PENDING** | Either deepened BE traceability OR explicit acceptance of analogical-only status |
 | G6 | EX recoverability check (does EX `N_QM_VVV_00024` cross 4.0 threshold after evidence?) | **PENDING** | Awaiting EX vNext re-classification |
 | G7 | User-authorized index insertion | **PENDING** | Explicit user authorization required |
 
-**Until G4–G7 are PASS, E18 remains in `framework/drafts/`. The framework index MUST NOT list E18 as a frozen postulate.**
+**Until G5–G7 are PASS, E18 remains in `framework/drafts/`. The framework index MUST NOT list E18 as a frozen postulate.** (G4 was advanced to DONE on 2026-05-22 via `rca/cases/e18_case_kim_1999.md`; G5/G6/G7 remain PENDING.)
 
 ---
 

@@ -779,4 +779,83 @@ Mot cua so do hoac subset du lieu truoc do chi tro thanh registration-valid khi 
 VN: Canh bao nang cap: Du da co hai case validation, E18 nen duoc draft thanh candidate postulate hep truoc, chua chen ngay vao framework index nhu postulate dong bang. Draft phai giu cong thuc tinh chinh `Lock(C_f, S, {W_i}) -> W_valid` va boundary guard khong-retrocausal bat buoc.
 
 
+---
+
+## Section 12 — Case Test 3: Kim et al. 1999 Delayed-Choice Quantum Eraser (Extension)
+
+### 12.1 Purpose / Muc dich
+
+This section is added as a downstream **extension** to Sections 9-11. It references the third independent case validation required by E18 promotion gate G4, executed in a dedicated case file. Sections 9-11 above remain authoritative for the formal locking rule and the first two case validations (Wheeler + Scully-Drühl); Section 12 only links the third case and records its decision impact.
+
+VN: Section nay duoc them nhu **mo rong** xuoi dong tu Sections 9-11. No tham chieu case validation doc lap thu ba ma promotion gate G4 cua E18 yeu cau, duoc thuc thi trong mot file case rieng. Sections 9-11 o tren van la nguon chinh thuc cho quy tac khoa hinh thuc va hai case validation dau tien (Wheeler + Scully-Drühl); Section 12 chi link case thu ba va ghi nhan tac dong quyet dinh cua no.
+
+### 12.2 Case file reference / Tham chieu file case
+
+| Field | Value |
+|---|---|
+| Case file path | [rca/cases/e18_case_kim_1999.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/cases/e18_case_kim_1999.md) |
+| Experimental source | Kim, Y.-H., Yu, R., Kulik, S. P., Shih, Y., & Scully, M. O. (2000). "Delayed 'Choice' Quantum Eraser." *Phys. Rev. Lett.* 84, 1-5. |
+| Branch structure | 4-branch lock (D1 erased +fringe, D2 erased -fringe, D3 preserved path-A, D4 preserved path-B) |
+| Symmetric pairs | Erased pair D1/D2 (out-of-phase) + preserved pair D3/D4 (path A/B) |
+| Five-condition cells | 20 cells (4 branches × 5 conditions) |
+
+### 12.3 Case result / Ket qua case
+
+**Case result:** Kim et al. 1999 passes the third E18 case test with all twenty condition cells PASS, **only if** each branch uses its specific coincidence relation `R_{0i}` as the sorting relation `S` in the refined formula `Lock(C_f, S, {W_i}) -> W_valid`.
+
+VN: Ket qua case: Kim et al. 1999 pass case test thu ba cho E18 voi toan bo 20 o dieu kien PASS, **chi khi** moi nhanh dung quan he trung phung `R_{0i}` dac thu lam sorting relation `S` trong cong thuc tinh chinh.
+
+| Branch | C_f | Expected W_valid | Result |
+|---|---|---|:---:|
+| Branch 1 | D1 (erased, +fringe) | W_D1 | 5/5 PASS |
+| Branch 2 | D2 (erased, -fringe) | W_D2 | 5/5 PASS |
+| Branch 3 | D3 (preserved, path A) | W_D3 | 5/5 PASS |
+| Branch 4 | D4 (preserved, path B) | W_D4 | 5/5 PASS |
+| Total | — | — | **20/20 PASS** |
+
+### 12.4 Structural novelty / Diem moi cau truc
+
+Kim 1999 contributes a structural dimension not exercised by Wheeler (binary lock) or Scully-Drühl (ternary lock): **multi-branch lock with symmetric pairs**. The 4-branch setup with two symmetric pairs (erased D1/D2 with out-of-phase fringes + preserved D3/D4 with path A/B) confirms the refined formula `Lock(C_f, S, {W_i}) -> W_valid` natively handles arbitrary `{W_i}` cardinality without requiring formula modification.
+
+VN: Kim 1999 dong gop chieu cau truc ma Wheeler (binary lock) va Scully-Drühl (ternary lock) chua test: **multi-branch lock voi cap doi xung**. Cau hinh 4-nhanh voi hai cap doi xung (erased D1/D2 lech pha + preserved D3/D4 path A/B) xac nhan cong thuc tinh chinh xu ly duoc luc luong tuy y cua `{W_i}` ma khong can sua cong thuc.
+
+### 12.5 RCA decision impact / Tac dong RCA
+
+| Criterion | After Scully-Drühl test | After Kim 1999 test | RCA note |
+|---|---:|---:|---|
+| Internal necessity | 4.4 | **4.5** | Kim 1999 confirms multi-branch generality of the gap. |
+| BE anchor strength | 3.8 | **3.8** | Unchanged — case test does not strengthen BE anchor; G5 remains the dedicated upgrade gate. |
+| EX support | 3.7 | **3.7** | Unchanged — EX remains compass-only. |
+| Boundary safety | 4.3 | **4.3** | Unchanged — Kim 1999 has same retrocausal overclaim risk as Scully-Drühl, contained by non-claims. |
+| Postulate readiness | 4.3 | **4.4** | Three case validations now support drafting; only G5/G6/G7 remain pending. |
+
+### 12.6 Promotion gate impact / Tac dong promotion gate
+
+| Gate | Status before Section 12 | Status after Section 12 |
+|---|---|---|
+| G1 (two case validations PASS) | DONE | DONE |
+| G2 (formal locking rule with explicit S) | DONE | DONE |
+| G3 (boundary safety ≥ 4.0/5) | DONE | DONE |
+| **G4 (third independent case validation)** | **PENDING** | **DONE — via case file** |
+| G5 (BE anchor strength ≥ 4.0/5) | PENDING | PENDING (unchanged) |
+| G6 (EX recoverability check) | PENDING | PENDING (unchanged) |
+| G7 (user-authorized index insertion) | PENDING | PENDING (unchanged) |
+
+**Gate progress: 3/7 -> 4/7 (57%)**
+
+### 12.7 Updated RCA status / Trang thai RCA cap nhat
+
+**Updated status:** E18 is now **RCA-supported candidate with THREE case validations and refined formula** (Wheeler + Scully-Drühl + Kim 1999).
+
+The candidate statement remains:
+
+```text
+A prior measurement window or data subset becomes registration-valid only when the final context C_f, and where needed the sorting relation S, supplies the condition that locks which observable, basis, window, or subset is being registered. This locking is a K-side classification rule, not a physical claim that the past quantum process is changed.
+```
+
+VN: Trang thai cap nhat: E18 hien la **RCA-supported candidate voi BA case validation va cong thuc tinh chinh** (Wheeler + Scully-Drühl + Kim 1999). Phat bieu candidate giu nguyen.
+
+**Promotion caution (unchanged):** Even after three case validations, E18 remains in `framework/drafts/` until all 7 promotion gates pass. The framework `index.md` MUST NOT list E18 as a frozen postulate until G7 (user-authorized index insertion) is also satisfied.
+
+VN: Canh bao nang cap (giu nguyen): Du da co ba case validation, E18 van o `framework/drafts/` cho den khi tat ca 7 promotion gate pass. Framework `index.md` KHONG duoc liet ke E18 nhu postulate dong bang cho den khi G7 cung thoa.
 
