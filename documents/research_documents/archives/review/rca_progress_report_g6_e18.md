@@ -10,7 +10,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Date:** 2026-05-22  
 **Scope:** E18 promotion gates, G6 EX Recoverability Check  
 **Core rule:** VVV-QMRF-EX is compass-only, not cargo  
-**Current status:** G1-G5 DONE, G6 HOLD, G7 PENDING
+**Current status:** G1-G5 DONE, G6 PASS-CANDIDATE / EX registry sync pending, G7 PENDING
 
 ---
 
@@ -18,7 +18,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 E18 has advanced from an RCA-supported candidate into a narrow framework draft with strong case support, but it is still not a frozen framework postulate. The latest RCA work examined G6, the EX recoverability gate for `N_QM_VVV_00024`.
 
-**Decision:** G6 is **HOLD**, not PASS and not FAIL.
+**Decision:** Initial G6 RCA was **HOLD**, not PASS and not FAIL. Follow-up EX vNext bridge audit now records **PASS-CANDIDATE / EX registry sync pending** via Path C at 4.2/5.
 
 **Reason:** New E18 evidence is strong enough to justify an EX vNext re-audit, but it does not reactivate the old bridge `BR_EX_BE_00066` as-is. The old bridge anchors E18 mainly to `N_BE_00029` Momentariness, which only supports a broad temporal-boundary component. The refined E18 object is now better described as valid-sign locking:
 
@@ -26,7 +26,7 @@ E18 has advanced from an RCA-supported candidate into a narrow framework draft w
 Lock(C_f, S, {W_i}) -> W_valid
 ```
 
-VN: E18 da manh hon nhieu, nhung chua thanh postulate dong bang. G6 hien la HOLD vi evidence moi dang de re-audit EX, nhung chua du de kich hoat lai bridge cu `BR_EX_BE_00066` y nguyen.
+VN: E18 da manh hon nhieu, nhung chua thanh postulate dong bang. G6 ban dau la HOLD vi evidence moi dang de re-audit EX, nhung chua du de kich hoat lai bridge cu `BR_EX_BE_00066` y nguyen. Audit tiep theo `rca_e18_ex_vnext_bridge_audit.md` chon Path C la PASS-CANDIDATE / EX registry sync pending; can user authorization rieng truoc khi sync registry EX.
 
 ---
 
@@ -35,8 +35,9 @@ VN: E18 da manh hon nhieu, nhung chua thanh postulate dong bang. G6 hien la HOLD
 | File | Change |
 |---|---|
 | `documents/research_documents/rca/rca_e18_g6_ex_recoverability_check.md` | New dedicated RCA for G6; concludes HOLD and defines EX vNext re-audit path. |
-| `documents/research_documents/framework/drafts/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_narrow_draft.md` | Updated Section 8 and Section 11: G6 is HOLD; G7 still needs explicit user authorization. |
-| `documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md` | Synced parent RCA gate status: G6 HOLD, G7 PENDING, EX vNext re-audit required. |
+| `documents/research_documents/rca/rca_e18_ex_vnext_bridge_audit.md` | Follow-up EX vNext bridge audit; selects Path C PASS-CANDIDATE at 4.2/5 and isolates user decisions before registry sync. |
+| `documents/research_documents/framework/drafts/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_narrow_draft.md` | Updated Section 8 and Section 11: G6 is PASS-CANDIDATE / EX registry sync pending; G7 still needs explicit user authorization. |
+| `documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md` | Synced parent RCA gate status: G6 PASS-CANDIDATE / EX registry sync pending, G7 PENDING. |
 | `documents/research_documents/archives/review/rca_progress_report_g6_e18.md` | This summary report. |
 
 ---
@@ -69,7 +70,7 @@ The blocker is not lack of E18 core evidence. The blocker is a mismatch between 
 |---|---|
 | G6 PASS now | Rejected — would blur core readiness with EX bridge recovery. |
 | G6 FAIL | Rejected — would ignore new E18 evidence. |
-| **G6 HOLD** | **Selected — evidence-positive, but EX vNext re-audit required.** |
+| **G6 PASS-CANDIDATE** | **Selected after follow-up audit — Path C valid-sign bridge package scored 4.2/5; EX registry sync still pending.** |
 
 ---
 
@@ -82,7 +83,7 @@ The blocker is not lack of E18 core evidence. The blocker is a mismatch between 
 | G3 | DONE | Boundary safety remains above threshold. |
 | G4 | DONE | Kim et al. 1999 case, 20/20 condition cells PASS. |
 | G5 | DONE | BE anchor accepted as analogical-only permanent boundary. |
-| **G6** | **HOLD** | EX vNext re-audit required; do not reactivate `BR_EX_BE_00066` as-is. |
+| **G6** | **PASS-CANDIDATE / EX registry sync pending** | Path C valid-sign bridge package scored 4.2/5 in `rca_e18_ex_vnext_bridge_audit.md`; do not reactivate `BR_EX_BE_00066` as-is. |
 | G7 | PENDING | Requires explicit user authorization; `framework/index.md` remains untouched. |
 
 ---
@@ -105,13 +106,14 @@ The blocker is not lack of E18 core evidence. The blocker is a mismatch between 
 Next recommended RCA task:
 
 ```text
-EX vNext bridge audit for N_QM_VVV_00024:
-- keep BR_EX_BE_00066 inactive as currently framed;
-- test a narrowed temporal-boundary-only revision; or
-- test a new valid-sign bridge package using N_BE_00003 + N_BE_00019 + N_BE_00021, with N_BE_00029 as secondary temporal support.
+EX vNext registry sync decision for N_QM_VVV_00024:
+- authorize or reject Path C registry sync;
+- preserve BR_EX_BE_00066 as RECLASSIFIED-v1.7 with a supersession note;
+- assign final EX-local bridge ID(s) for the valid-sign package if authorized;
+- keep G7 pending until registry sync closes.
 ```
 
-Until that audit closes G6, E18 should remain in `framework/drafts/`.
+Until registry sync closes G6 and the user explicitly authorizes G7, E18 should remain in `framework/drafts/`.
 
 ---
 

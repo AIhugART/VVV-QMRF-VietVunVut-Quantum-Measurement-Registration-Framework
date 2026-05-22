@@ -214,10 +214,10 @@ E18 narrow draft → frozen framework postulate requires ALL of the following co
 | G3 | Boundary safety ≥ 4.0/5 | **DONE** | Boundary safety 4.3/5 per `rca_e18.md:756` |
 | G4 | Third independent case validation | **DONE** | [rca/cases/e18_case_kim_1999.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/cases/e18_case_kim_1999.md) — Kim et al. 1999 4-branch lock, 20/20 condition cells PASS |
 | G5 | BE anchor decision | **DONE** | Parent RCA Section 13 accepts BE anchor as analogical-only permanent boundary; no physical-equivalence claim |
-| G6 | EX recoverability check (does EX `N_QM_VVV_00024` cross 4.0 threshold after evidence?) | **HOLD** | [rca_e18_g6_ex_recoverability_check.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_g6_ex_recoverability_check.md) concludes that new E18 evidence justifies EX vNext re-audit, but does not reactivate `BR_EX_BE_00066` as-is. |
+| G6 | EX recoverability check (does EX `N_QM_VVV_00024` cross 4.0 threshold after evidence?) | **PASS-CANDIDATE / EX registry sync pending** | [rca_e18_ex_vnext_bridge_audit.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_ex_vnext_bridge_audit.md) selects Path C at 4.2/5: a new valid-sign bridge package using `N_BE_00003` + `N_BE_00019` + `N_BE_00021`, with `N_BE_00029` as secondary temporal-boundary support. Not DONE until EX registry sync is authorized and completed. |
 | G7 | User-authorized index insertion | **PENDING** | Explicit user authorization required |
 
-**Until G6 is closed and G7 is PASS, E18 remains in `framework/drafts/`. The framework index MUST NOT list E18 as a frozen postulate.** (G4 was advanced to DONE on 2026-05-22 via `rca/cases/e18_case_kim_1999.md`; G5 was advanced to DONE by parent RCA Section 13 analogical-only BE anchor decision; G6 is HOLD pending EX vNext re-audit; G7 remains PENDING.)
+**Until G6 registry sync is completed and G7 is PASS, E18 remains in `framework/drafts/`. The framework index MUST NOT list E18 as a frozen postulate.** (G4 was advanced to DONE on 2026-05-22 via `rca/cases/e18_case_kim_1999.md`; G5 was advanced to DONE by parent RCA Section 13 analogical-only BE anchor decision; G6 is PASS-CANDIDATE / EX registry sync pending after EX vNext bridge audit; G7 remains PENDING.)
 
 ---
 
@@ -269,8 +269,8 @@ All three rounds cleared the 4.0/5 gate per the project decision rule.
 
 1. **G4 closed by Kim 1999:** The third independent case validation is no longer open. Kim et al. (1999) delayed-choice quantum eraser closed G4 with a 4-branch lock and 20/20 condition cells PASS via `rca/cases/e18_case_kim_1999.md`.
 2. **G5 closed by analogical-only BE anchor:** The BE anchor decision is no longer open. Parent RCA Section 13 accepts the Anumāna–Vyāpti–Svabhāvapratibandha chain as a permanent structural analogue only, not as physical equivalence.
-3. **G6 EX recoverability check is on HOLD:** RCA `rca_e18_g6_ex_recoverability_check.md` concludes that the new E18 evidence is strong enough to justify EX vNext re-audit, but not enough to reactivate `BR_EX_BE_00066` as-is. G6 remains the active blocker before G7.
-4. **G7 requires explicit user authorization:** E18 must remain in `framework/drafts/` unless and until G6 is closed and the user explicitly authorizes insertion into `documents/research_documents/framework/index.md`.
+3. **G6 EX recoverability check is PASS-CANDIDATE / EX registry sync pending:** RCA `rca_e18_ex_vnext_bridge_audit.md` applies 3 rounds of RCA x 5-Why x scoring gate >= 4.0/5 and selects Path C at 4.2/5. The candidate route is a new valid-sign bridge package, not reactivation of `BR_EX_BE_00066` as-is. G6 is not DONE until EX registry sync is explicitly authorized and completed.
+4. **G7 requires explicit user authorization:** E18 must remain in `framework/drafts/` unless and until G6 registry sync is closed and the user explicitly authorizes insertion into `documents/research_documents/framework/index.md`.
 
 ---
 

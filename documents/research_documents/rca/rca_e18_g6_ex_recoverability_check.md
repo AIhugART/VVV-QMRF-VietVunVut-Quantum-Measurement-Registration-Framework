@@ -201,11 +201,13 @@ G6 | EX recoverability check | HOLD | RCA `rca_e18_g6_ex_recoverability_check.md
 
 **G6 decision:** **HOLD — EX vNext re-audit required.**
 
+**Follow-up status note (2026-05-22):** The requested follow-up audit was completed in `rca_e18_ex_vnext_bridge_audit.md`. That audit selects Path C at 4.2/5 as **PASS-CANDIDATE / EX registry sync pending**: a new valid-sign bridge package using `N_BE_00003` + `N_BE_00019` + `N_BE_00021`, with `N_BE_00029` as secondary temporal-boundary support. This note does not overwrite the original G6 RCA decision; it records the next RCA layer.
+
 **Reason:** E18's new evidence package is strong enough to justify a fresh EX recoverability audit, but it does not directly reactivate the old `BR_EX_BE_00066` because the old bridge uses generic momentariness as the main anchor. The refined E18 object is better characterized by valid-sign locking (`C_f + S -> W_valid`) with momentariness as secondary temporal-boundary support.
 
-**Next step:** Update the E18 Narrow Draft to mark G6 as HOLD, not PENDING. Then run a future EX vNext bridge audit if the user wants to try closing G6.
+**Next step:** Decide whether to authorize EX vNext registry sync for Path C. Until registry sync is authorized and completed, G6 remains PASS-CANDIDATE / EX registry sync pending rather than DONE.
 
-VN: Quyet dinh cuoi: G6 la **HOLD**. Evidence moi du manh de dang re-audit EX vNext, nhung chua du de kich hoat lai bridge cu. Buoc tiep theo la update Narrow Draft: G6 khong con "chua xem", ma la "da RCA va HOLD".
+VN: Quyet dinh goc cua G6 RCA la **HOLD**. Audit tiep theo da chon Path C la **PASS-CANDIDATE / EX registry sync pending** o muc 4.2/5. Buoc tiep theo la user quyet dinh co authorize sync registry EX hay khong; G6 chua DONE va E18 chua duoc vao index.
 
 ---
 
