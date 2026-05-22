@@ -16,6 +16,8 @@ This paper proposes VVV-QMRF (VietVunVut Quantum Measurement Registration Framew
 
 This conjecture is not trivially true for all frameworks. It separates ordinary Bell-type nonclassicality from LF-level Wigner-friend inconsistency, as illustrated by data from Bong et al. (2020) at μ = 0.80, 0.81 where Bell non-LF violation is reported while Local Friendliness inequalities remain unviolated. Existing data from Proietti et al. (2019) and Bong et al. (2020) are compatible with the proposed structural reading. The framework does not replace Standard Quantum Mechanics, revise the Born rule, or invoke consciousness. All formal claims are classified by evidence level. A purpose-designed experiment with a predefined operational criterion is required for confirmation.
 
+*Track B addendum (§6.1):* A subsequent analysis conjectures the existence of a structure-preserving map φ: K → B(H), where B(H) is the algebra of bounded operators on Hilbert space, and derives necessary conditions N_1–N_T from K1–K8 and T1–T7. Section §6.1 re-frames the interpretation comparison as φ-conditional scope boundaries: each interpretation's structural gap corresponds to the specific condition N_i it lacks the machinery to satisfy. This conjecture is Class D; the necessary conditions are derived but the existence of φ is not proven.
+
 ---
 
 ## 1. The Registration Layer Gap
