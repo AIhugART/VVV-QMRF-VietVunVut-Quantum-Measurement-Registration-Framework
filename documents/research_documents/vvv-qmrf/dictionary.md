@@ -98,6 +98,17 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | `Bridge_EWF` | Bridge lemma linking `D_joint` to E7 registered contradiction in EWF/LF configurations. Class D as a proposed lemma; application to concrete experiments remains Class C. Do not apply outside EWF/LF comparison contexts. |
 | `ODC_K` | Operational data criterion connecting observed probabilities to `K_joint_exists` or `K_joint_fails`. Requires predeclared tolerance τ; the tolerance must be fixed before data evaluation. Class C proposed criterion; not a direct detector readout. |
 
+### 2.0 K-Space Tuple Field Rule
+
+**RCA finding:** `cert` and `V` in `k = <M, o, cert, t, V>` are formal K-space tuple fields, not new `N_QM_VVV_XXXXX` concept nodes.
+
+| Tuple field | K-side function | Node-registry decision |
+|---|---|---|
+| `cert` | Self-certification / admission marker. It answers whether the registering system has registered that measurement-registration act `M` occurred. Inside `K_R`, K1 gives `k ∈ K_R ⇒ cert(k) = 1`; `cert=0` marks an admission-boundary condition outside admitted K-registration. | Do not add a new node. This is a formal field / primitive predicate already covered conceptually by the self-certifying registration family, especially `N_QM_VVV_00033`-`N_QM_VVV_00035`. |
+| `V` | Validity-status field. It answers whether an admitted registration tuple `k` remains valid as a registration claim, including provisional, defeated, or final-valid lifecycle interpretations in the K-space axiomatization. | Do not add a new node. This is a formal field / primitive predicate already covered conceptually by validity, certification, invalidation, and error-status nodes such as `N_QM_VVV_00011`, `N_QM_VVV_00029`, `N_QM_VVV_00032`, `N_QM_VVV_00042`, and `N_QM_VVV_00043`. |
+
+**Boundary:** `cert` marks occurrence/admission of registration; `V` marks validity status after admission. They should be documented as formal vocabulary, not promoted into standalone registry nodes unless a later RCA isolates a new concept that cannot be expressed by existing node families.
+
 ---
 
 ## 2.1 VVV-QMRF vs Standard QM Concept Comparison
