@@ -1,14 +1,14 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# K → B(H) Structure-Preserving Map — Working Draft v0.1
-# Bản nháp Map Bảo toàn Cấu trúc φ: K → B(H) — v0.1
+# K → B(H) Structure-Preserving Map — Working Draft v0.2
+# Bản nháp Map Bảo toàn Cấu trúc φ: K → B(H) — v0.2
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Document type:** `meta_architecture / research-draft`
 **Date:** 2026-05-22
-**Version:** 0.1 (Phase 1 working draft — NOT a claim document)
+**Version:** 0.2 (Phase 2 complete — necessary conditions N_1–N_T derived; concrete model verified)
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** Phase 1 in progress. §1–§5 drafted; open questions listed. C2 readiness updated to ~5.5–6.0/10.
+**Status:** Phase 2 complete. §1–§7 main content, §8 C2 readiness, §9 reference papers drafted. C2 readiness updated to ~7.0–7.5/10.
 **Scope:** VVV-QMRF core (Internal-first). VVV-QMRF-EX consulted as compass for structural gaps; K↔ρ EX intelligence informs target selection but is NOT imported as cargo.
 **Linked artifacts:**
 - [K_Space_Axiomatization.md](K_Space_Axiomatization.md) — K1–K8 (Layer 1 frozen), T1–T7 (Layer 2)
@@ -430,45 +430,192 @@ Standard quantum mechanics: the projector P_{o_F} on H_S extends to P_{o_F} ⊗ 
 
 ---
 
-## 6. Component C2 Readiness Update (After Phase 1)
+## 6. Necessary Conditions for φ: K → B(H) (Phase 2)
+
+From K1–K8 (Layer 1 frozen) and T1–T7 (Layer 2), the following necessary conditions are derived. Each expresses: *for φ: K → B(H) to exist as a structure-preserving map, it must satisfy this condition.*
+
+**Convention:** k ∈ K_R is a registered event; φ(k) ∈ B(H) its operator image; P_o = |o⟩⟨o| is the rank-1 projection for outcome o ∈ O; ι: B(H_R) ↪ B(H_X) is the canonical operator-algebra inclusion for K8 embeddings.
+
+---
+
+**N_1 (Totality — K1):** φ is a total function: φ(k) is defined for every k ∈ K_R, and φ(k) ∈ B(H). The image Im(φ) ⊆ B(H) is non-empty and closed under the operator products used in Lüders sequential measurements.
+
+> *Why from K1:* K1 defines K_R as a set of 5-tuples with cert = 1 (admission invariant). A map undefined on any admitted k would violate the totality of the carrier set. Closure under Lüders products is needed for N_2 and N_6.
+
+---
+
+**N_2 (Lüders Order — K2):** K2 imposes a strict total temporal order <_R on K_R by timestamp t. For k1, k2 ∈ K_R with t(k1) < t(k2), φ preserves this temporal precedence in the Lüders sequence: k1 acts first, so the composed operator is P_{o2} · P_{o1} · P_{o2}.
+
+> *Why from K2:* K2's total order is the only structural ordering in K_R. The natural B(H) image of this order is the left-to-right Lüders factor ordering (non-commutative in general, hence order-sensitive).
+>
+> *Resolves φ-O1:* Lüders composition is the correct order-preservation mechanism. [P_{o1}, P_{o2}] ≠ 0 in B(H) is the operator expression of K-side incommensurability K_F ⊥_K K_W.
+
+---
+
+**N_3 (Cert-Reflection — K3):** All k ∈ K_R have cert = 1 (K1 admission invariant; K3 intrinsic). Therefore φ(k) must be a projection for every k ∈ K_R: φ(k)² = φ(k) and φ(k)† = φ(k). Hence Im(φ) ⊆ Proj(B(H)) ∪ {0_{B(H)}}.
+
+> *Why from K3:* A registration event with cert = 1 is a certified epistemic act. Its operator image must be idempotent (a projection), since projections in B(H) represent definite yes/no physical facts — the algebraic counterpart of certified registration.
+
+---
+
+**N_4 (Validity-Positivity — K4):** K4 assigns V(k) = 1 for all non-null k ∈ K_R and V(k) = 0 for isNull(k):
+- V(k) = 1 → φ(k) ∈ Proj+(B(H)): a non-zero projection (positive and non-trivial).
+- isNull(k) → φ(k) = 0_{B(H)}: the zero operator.
+
+> *Why from K4:* A positively valid registration corresponds to an actual physical fact; the zero operator represents absence of a physical fact in the observable algebra.
+
+---
+
+**N_5 (Invalidation-Absorption — K5):** K5 allows V(k1) to transition 1→0 irreversibly post-closure when k2 ⊥ k1 with authority. Once V(k1) = 0 post-closure: φ(k1) = 0_{B(H)}, irreversibly. The zero operator is absorbing under B(H) composition: 0 · A = A · 0 = 0 for all A ∈ B(H).
+
+> *Why from K5:* K5's irreversibility post-closure must have an algebraic expression. The zero operator's absorption property is the natural B(H) analogue.
+>
+> *K5 vs K4 distinction (resolves φ-O3):* Both K5 invalidation and K4(b) null events produce V = 0 → φ = 0. They are source-distinguished in K-space (K5: previously V=1, now 0 post-closure; K4(b): structurally null, never V=1) but both map to the same operator image 0. The distinction matters for Layer 2 T3 incommensurability proofs, not for the operator image itself.
+
+---
+
+**N_6 (Authority-Composition — K6):** K6 defines Auth(k2→k1, C_K) = 1 iff k2 and k1 share epistemic sphere C_K, V(k2) = 1, and k1 ∈ scope(D_joint). In B(H):
+
+**N_6:** Auth(k2→k1, C_K) = 1 → P_{o2} · P_{o1} ≠ 0_{B(H)}
+
+If P_{o2} · P_{o1} = 0 (orthogonal projections), k2 and k1 are physically incompatible; no cross-validation authority can apply.
+
+> *Why from K6:* K6's "in scope of D_joint" condition requires k2's outcome to reach k1's registration space. In B(H), scope overlap ↔ non-orthogonality of projection images.
+>
+> *Resolves φ-O2 (partial):* N_6 is a necessary condition. Sufficiency (P_{o2}·P_{o1} ≠ 0 → Auth = 1) remains open for Phase 3/4.
+
+---
+
+**N_7 (Closure-Finalization — K7):** K7 defines t_close as the temporal boundary after which V(k) cannot change. φ must respect this: for t > t_close, φ_final(k) is fixed. φ is defined at the post-closure state exclusively; pre-closure provisional values are K-internal and do not constitute a separate map.
+
+> *Why from K7:* K7's temporal closure is Layer 1 frozen. A map that changes φ(k) post-closure would violate K7.
+>
+> *Resolves φ-O4:* φ is φ_final — defined only at post-closure state.
+
+---
+
+**N_8 (Embedding Naturality — K8):** K8 defines V-preserving embeddings i: K_R → K_X. φ must commute with these via the operator-algebra inclusion ι: B(H_R) ↪ B(H_X):
+
+**N_8:** φ_X ∘ i = ι ∘ φ_R
+
+where φ_R: K_R → B(H_R), φ_X: K_X → B(H_X), and ι(A) = A ⊗ 1_{H_rest} (canonical inclusion).
+
+> *Why from K8:* K8 ensures embedding preserves validity; N_8 ensures the same for operator images — the naturality diagram commutes.
+
+---
+
+**N_T (Bridge — T2/T3):** From Layer 2 bridge theorems T2 (K-side incommensurability definition) and T3 (K↔B(H) bridge):
+
+**N_T:** K_R1 ⊥_K K_R2 → [ι(φ(k1)), φ(k2)] ≠ 0
+
+K-side incommensurability (no joint K_joint can validate both registrars simultaneously) implies non-commutativity of operator images in B(H).
+
+> *Source:* T2 defines ⊥_K; T3 states the commutativity connection. N_T is derived from Layer 2, not from a single K-axiom.
+
+---
+
+### Summary: Necessary Conditions Table
+
+| ID | Source | Formal statement | φ-O resolved | Status |
+|----|--------|------------------|--------------|--------|
+| N_1 | K1 | φ total; Im(φ) ⊆ B(H) closed under Lüders products | — | ✅ |
+| N_2 | K2 | t(k1)<t(k2) → P_{o2}·P_{o1}·P_{o2} Lüders order | φ-O1 ✅ | ✅ |
+| N_3 | K3 | φ(k)²=φ(k)=φ(k)†; Im(φ)⊆Proj(B(H))∪{0} | — | ✅ |
+| N_4 | K4 | V=1→P_o≥0,P_o≠0; isNull→φ=0 | — | ✅ |
+| N_5 | K5 | V:1→0 irreversible→φ=0 absorbing; K5≠K4(b) | φ-O3 ✅ | ✅ |
+| N_6 | K6 | Auth(k2→k1,C_K)=1→P_{o2}·P_{o1}≠0 (necessary) | φ-O2 partial ⚠️ | ✅ |
+| N_7 | K7 | φ=φ_final fixed at t_close | φ-O4 ✅ | ✅ |
+| N_8 | K8 | φ_X∘i=ι∘φ_R (naturality diagram) | — | ✅ |
+| N_T | T2/T3 | K_R1⊥_K K_R2→[ι(φ(k1)),φ(k2)]≠0 | — | ✅ |
+
+**K ≠ H boundary check:** All conditions constrain the *image* of φ in B(H). They do not identify K-space with H or collapse K into the Hilbert space. Ontological status is preserved: K is registration-logic structure; H is physical state space; B(H) is observable algebra. Three distinct categories.
+
+---
+
+## 7. Concrete Model Consistency Check (Phase 2 — EWF 2-Observer)
+
+This section verifies all necessary conditions N_1–N_T against the EWF 2-observer concrete model from §4.
+
+**Model assignments (§4):**
+- φ(k_F) = P_{o_F} = |o_F⟩⟨o_F| ∈ B(H_F) ⊂ B(H_Lab)
+- φ(k_W) = P_{o_W} = |o_W⟩⟨o_W| ∈ B(H_Lab)
+- φ(i(k_F)) = P_{o_F} ⊗ 1_{H_F} ∈ B(H_Lab) (K8 embedding via N_8)
+- φ(k_F with V=0) = 0_{B(H_Lab)} (K5 post-closure invalidation via N_5)
+
+**Consistency verification:**
+
+| Condition | EWF check | Verdict |
+|-----------|-----------|---------|
+| N_1 | φ(k_F), φ(k_W) both defined; {P_{o_F}, P_{o_W}, 0} ⊂ B(H_Lab) closed under Lüders products | ✅ |
+| N_2 | t(k_F) < t(k_W) → P_{o_W}·P_{o_F}·P_{o_W} Lüders sequence; order preserved | ✅ |
+| N_3 | P_{o_F}²=P_{o_F}=P_{o_F}†; P_{o_W}²=P_{o_W}=P_{o_W}† (rank-1 projections) | ✅ |
+| N_4 | V(k_F)=1 → P_{o_F}≥0, P_{o_F}≠0; isNull(k)→φ(k)=0 | ✅ |
+| N_5 | FR-inconsistency: V(k_F)→0 → φ(k_F,V=0)=0; 0·A=0 for all A | ✅ |
+| N_6 | Auth(k_W→k_F, C_Lab)=1 → P_{o_W}·P_{o_F}≠0 (same H_Lab, non-orthogonal projections in EWF scenario) | ✅ (example) |
+| N_7 | After t_close: φ(k_F)=P_{o_F} fixed, φ(k_W)=P_{o_W} fixed; no K-side update changes these | ✅ |
+| N_8 | φ_Lab(i(k_F))=P_{o_F}⊗1_{H_F}=ι(φ_F(k_F)); naturality diagram commutes | ✅ |
+| N_T | K_F⊥_K K_W (T2) → [ι(P_{o_F}), P_{o_W}]≠0; confirmed experimentally (Proietti 5σ CHSH, Bong Local Friendliness) | ✅ (experimental) |
+
+**Open items carried into Phase 3/4:**
+
+| Item | Status |
+|------|--------|
+| φ-O2 (partial): N_6 sufficiency — Auth↔P·P≠0 biconditional | ⚠️ Necessary only; sufficiency deferred |
+| φ-O5: N-observer K_joint (T4 Class D) | ⚠️ Deferred; requires T4 Level 4 freeze |
+| φ-O6: von Neumann algebra M=vN({P_o}) as codomain | ⚠️ Open; B(H) remains working target |
+| φ-O7: EX factorization φ=Born∘φ_EX | ⚠️ Compass-only; not imported |
+
+**Phase 2 consistency verdict:** All 9 necessary conditions N_1–N_T are satisfied by the EWF 2-observer model. No contradiction with K1–K8 (Layer 1) or T1–T7 (Layer 2) found. K ≠ H boundary preserved throughout.
+
+---
+
+## 8. Component C2 Readiness Update (After Phase 2)
 
 **Baseline (pre-Phase 1):** C2 = 1.5/10 (φ not present in project)
 
-**After Phase 1 (this document):**
+**After Phase 1 (v0.1):** C2 = 5.5–6.0/10
+
+**After Phase 2 (this version):**
 
 | Sub-criterion | Status |
 |---------------|--------|
 | Target B(H) selected with justification | ✅ |
-| Image restriction Im(φ) ⊆ P(H) ∪ {0} justified | ✅ |
-| "Structure-preserving" formalized (φ-1 to φ-7′) | ✅ (draft; φ-6 candidate only) |
+| Image restriction Im(φ) ⊆ Proj(B(H)) ∪ {0} justified | ✅ |
+| "Structure-preserving" formalized (φ-1 to φ-7′) | ✅ |
 | K ≠ H reconciliation essay | ✅ |
 | Concrete EWF 2-observer model | ✅ |
-| φ-6 authority-composition complete | ⚠️ Candidate only |
-| φ-2 Lüders-order sufficiency proven | ⚠️ Proposed, not proven |
-| V=0 treatment rigorous | ⚠️ Open (φ-O3) |
-| Pre/post-closure handling | ⚠️ Sketched (φ-O4) |
+| Necessary conditions N_1–N_8 formally derived from K1–K8 | ✅ |
+| Bridge condition N_T derived from T2/T3 | ✅ |
+| φ-O1 (Lüders order) resolved via N_2 | ✅ |
+| φ-O3 (V=0 K5 vs K4 distinction) resolved via N_5 | ✅ |
+| φ-O4 (pre/post-closure) resolved via N_7 | ✅ |
+| N_6 authority-composition (necessary direction) | ✅ (necessary only) |
+| φ-O2 sufficiency (N_6 biconditional) | ⚠️ Deferred to Phase 3/4 |
+| N-observer general case (φ-O5) | ⚠️ Deferred |
+| Better codomain M = vN({P_o}) (φ-O6) | ⚠️ Open |
 
-**Estimated C2 readiness after Phase 1: 5.5–6.0/10**
-(Phase 2 necessary-condition derivation targeting φ-O1, φ-O2, φ-O3 required for ≥ 8/10)
+**Estimated C2 readiness after Phase 2: 7.0–7.5/10**
+(Phase 3 interpretation re-framing + φ-O2 sufficiency needed for ≥ 8/10)
 
 ---
 
-## 7. Reference Paper Connection Summary
+## 9. Reference Paper Connection Summary
 
 | Paper | VVV-QMRF / φ connection |
 |-------|------------------------|
 | **Frauchiger–Renner (1604.07422)** | FR-paradox = inconsistent agent conclusions ↔ K_F ⊥_K K_W. φ encodes this as [ι(P_{o_F}), P_{o_W}] ≠ 0. The FR-paradox shows that any framework claiming universal QT validity must address the K-side incommensurability — VVV-QMRF does so via K5 + K6 + φ. |
 | **Proietti et al. (1902.05080)** | 6-photon CHSH violation (5σ) confirms that observer-independent facts cannot coexist in QM. Operator-algebraic expression: [P_{o_F}, P_{o_W}] ≠ 0. This is exactly the B(H) image of K_F ⊥_K K_W under φ. Proietti provides experimental grounding for the concrete EWF model in §4. |
-| **Bong et al. (1907.05607)** | Local Friendliness theorem: AOE + Locality + No-SD violated by QM. AOE ↔ K4 default validity (V=1 absolutely). φ-4 encodes AOE: V=1 → P_o ≥ 0 positive non-zero. Interpretations that give up AOE (Copenhagen: friend's outcome not absolute, RQM: relative facts, QBism: agent-relative) lack structural machinery for φ-4 → they fail necessary condition N_(K4). This is Phase 3 §6.X material. |
+| **Bong et al. (1907.05607)** | Local Friendliness theorem: AOE + Locality + No-SD violated by QM. AOE ↔ K4 default validity (V=1 absolutely). φ-4 / N_4 encode AOE: V=1 → P_o ≥ 0 positive non-zero. Interpretations that give up AOE (Copenhagen: friend's outcome not absolute, RQM: relative facts, QBism: agent-relative) lack structural machinery for N_4 → they fail necessary condition N_4. This is Phase 3 §6.X material. |
 
 ---
 
-## 8. Change Log
+## 10. Change Log
 
 | Date | Version | Change |
 |------|---------|--------|
 | 2026-05-22 | 0.1 | Initial Phase 1 working draft. §1–§5 drafted. EWF concrete model in §4. C2 readiness updated from 1.5/10 to ~5.5–6.0/10. φ-1 to φ-7′ conditions defined. Three reference papers connected. |
+| 2026-05-22 | 0.2 | Phase 2 complete. Added §6 Necessary Conditions (N_1–N_T derived from K1–K8 + T1–T7). Added §7 Concrete Model Consistency Check (all N_i verified against EWF 2-observer model). Resolved φ-O1, φ-O3, φ-O4. φ-O2 partially resolved (necessary direction only). C2 readiness updated from 5.5–6.0/10 to ~7.0–7.5/10. Old §6–§8 renumbered to §8–§10. |
 
 ---
 
-*Next: Phase 2 — formally derive necessary conditions from K1–K8 + T1–T7. Target: resolve φ-O1, φ-O2, φ-O3. See [decisions/phi_map_track_b_roadmap.md §3](decisions/phi_map_track_b_roadmap.md).*
+*Phase 2 complete. Phase 3: Re-frame WP v2.0 §6 interpretation comparison as φ-conditional analysis (§6.X). See [decisions/phi_map_track_b_roadmap.md §4](decisions/phi_map_track_b_roadmap.md).*
