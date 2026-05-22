@@ -225,6 +225,10 @@ VVV-QMRF-EX flags `N_QM_VVV_00024` as "Registration-Locking Boundary in Delayed-
 
 **Score:** 3.8/5
 
+**Confidence lifecycle note (RCA Step 5):** This 3.8/5 is the original overall decision confidence for candidate retention at RCA creation time. It is not the later Section 11.10 sub-metric "Postulate readiness: 4.3/5" after Wheeler and quantum eraser case validation. The two numbers measure different objects: overall decision-state vs post-test postulate-readiness. This distinction is reconciled in the E18 narrow draft Confidence Reconciliation Box (`vvv_qmrf_framework_e18_delayed_choice_registration_boundary_narrow_draft.md:28-51`).
+
+**VN:** Diem 3.8/5 nay la confidence tong the luc tao RCA va quyet dinh giu E18 o muc candidate. No khong phai sub-metric "Postulate readiness: 4.3/5" o Section 11.10 sau hai case test. Hai so do hai object khac nhau: trang thai quyet dinh tong the va muc san sang cua postulate sau test.
+
 | Criterion | Score | Note |
 |---|---:|---|
 | Internal necessity | 4.0 | E8/E13/E17 do not directly name context-conditioned locking. |

@@ -30,16 +30,16 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Background:** [rca_core_extensibility_analysis.md:348](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_core_extensibility_analysis.md#L348) (Section A.1.1) flagged a confidence ambiguity between two numbers used in the parent RCA file:
 
 - **Headline in `rca_e18.md` Section 0** ([line 25](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L25)): "Decision confidence: **3.8/5**" — overall decision-state at file creation, before case testing.
-- **Sub-metric in Section 11.10** ([line 753](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L753)): "Postulate readiness: **4.3/5**" — single criterion in the 5-criteria scoring matrix, after two case validations.
+- **Sub-metric in Section 11.10** ([line 757](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L757)): "Postulate readiness: **4.3/5**" — single criterion in the 5-criteria scoring matrix, after two case validations.
 
 **Root-cause resolution (RCA Step 5 — verify root cause removed, not just patched):** The two numbers are NOT in conflict. They measure two different objects across two different lifecycle states. The narrow draft headline below is **scoped explicitly** to the post-2-case readiness state, with the lifecycle table making the trajectory explicit.
 
 | Lifecycle state | Source line | "Postulate readiness" sub-metric | Note |
 |---|---|---:|---|
-| At RCA file creation (pre-test) | [rca_e18:226](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L226) | 3.5 | Decision: candidate, not framework |
-| After Section 9 formal conditions added | [rca_e18:410](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L410) | 3.9 | Stronger candidate, no case yet |
-| After Wheeler case PASS | [rca_e18:560](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L560) | 4.1 | First case validation |
-| After quantum eraser case PASS | [rca_e18:753](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L753) | **4.3** | Two case validations, formula refined with `S` |
+| At RCA file creation (pre-test) | [rca_e18:238](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L238) | 3.5 | Decision: candidate, not framework |
+| After Section 9 formal conditions added | [rca_e18:414](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L414) | 3.9 | Stronger candidate, no case yet |
+| After Wheeler case PASS | [rca_e18:564](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L564) | 4.1 | First case validation |
+| After quantum eraser case PASS | [rca_e18:757](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L757) | **4.3** | Two case validations, formula refined with `S` |
 
 **Narrow Draft Readiness (scoped headline):** **4.3/5** (post-2-case postulate readiness).
 
@@ -47,7 +47,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **VN — Hộp đồng bộ confidence:**
 - `rca_e18.md:25` headline "Decision confidence 3.8/5" = trạng thái pre-test, đo overall decision state tại thời điểm tạo file RCA.
-- `rca_e18.md:753` sub-metric "Postulate readiness 4.3/5" = một trong 5 tiêu chí scoring, đo sau hai case test PASS.
+- `rca_e18.md:757` sub-metric "Postulate readiness 4.3/5" = một trong 5 tiêu chí scoring, đo sau hai case test PASS.
 - Hai số KHÔNG mâu thuẫn — đo hai object khác nhau ở hai trạng thái lifecycle khác nhau. Narrow draft này dùng headline scoped 4.3/5 (chỉ readiness của bản nháp), KHÔNG promote thành "overall confidence" mới.
 
 ---
@@ -153,8 +153,8 @@ All BE anchors are used as **structural analogues**, not identity claims. Per `m
 
 | Case | Reference | Role for E18 |
 |---|---|---|
-| Wheeler delayed-choice (1978) | Used as case validation in [rca_e18 Section 10](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md) | First case PASS — context-only locking sufficient |
-| Scully–Drühl quantum eraser (1982) | Used as case validation in [rca_e18 Section 11](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md) | Second case PASS — requires sorting `S` |
+| Wheeler delayed-choice (1978) | Used as case validation in [rca_e18 Section 10](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L422) | First case PASS — context-only locking sufficient |
+| Scully–Drühl quantum eraser (1982) | Used as case validation in [rca_e18 Section 11](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L576) | Second case PASS — requires sorting `S` |
 
 ### 5.3 VVV-QMRF-EX compass note (no import)
 
@@ -209,9 +209,9 @@ E18 narrow draft → frozen framework postulate requires ALL of the following co
 
 | Gate | Condition | Status | Evidence required |
 |---|---|---|---|
-| G1 | Two case validations PASS | **DONE** | `rca_e18.md:540-560` (Wheeler) + `rca_e18.md:740-755` (quantum eraser) |
-| G2 | Formal locking rule with explicit `S` | **DONE** | Section 3 above + `rca_e18.md:705-727` |
-| G3 | Boundary safety ≥ 4.0/5 | **DONE** | Boundary safety 4.3/5 per `rca_e18.md:752` |
+| G1 | Two case validations PASS | **DONE** | `rca_e18.md:544-564` (Wheeler) + `rca_e18.md:744-759` (quantum eraser) |
+| G2 | Formal locking rule with explicit `S` | **DONE** | Section 3 above + `rca_e18.md:709-731` |
+| G3 | Boundary safety ≥ 4.0/5 | **DONE** | Boundary safety 4.3/5 per `rca_e18.md:756` |
 | G4 | Third independent case validation | **PENDING** | Not yet executed |
 | G5 | BE anchor strength upgrade ≥ 4.0/5 (currently 3.8) | **PENDING** | Either deepened BE traceability OR explicit acceptance of analogical-only status |
 | G6 | EX recoverability check (does EX `N_QM_VVV_00024` cross 4.0 threshold after evidence?) | **PENDING** | Awaiting EX vNext re-classification |
@@ -229,7 +229,7 @@ Per RULE ZERO Step 5 — verify root cause is removed, not just patched:
 |---|---|---|
 | Confidence ambiguity root cause removed via lifecycle table | **PASS** | Section 0.1 lifecycle table makes 3.5 → 3.9 → 4.1 → 4.3 trajectory explicit |
 | Headline scoped, not promoted to overall confidence | **PASS** | Section 0.1 explicitly labels 4.3/5 as "Narrow Draft Readiness," not "overall decision confidence" |
-| File NOT in `framework/` root (per `rca_e18.md:239`) | **PASS** | Path = `framework/drafts/` |
+| File NOT in `framework/` root (per `rca_e18.md:243`) | **PASS** | Path = `framework/drafts/` |
 | File NOT in framework index | **PASS** | `framework/index.md` untouched |
 | Formula uses refined `Lock(C_f, S, {W_i})` not legacy `Lock(C_f, {W_i})` | **PASS** | Section 3 uses refined form; legacy noted only as reduction case |
 | K-side scope only, no physical claim | **PASS** | Section 7.2 items 1–3 explicit |
@@ -239,7 +239,7 @@ Per RULE ZERO Step 5 — verify root cause is removed, not just patched:
 | Bilingual EN/VN per CLAUDE.md | **PASS** | Hybrid coverage per Q3 verdict (narrative/boundary bilingual; formal/citation EN-only) |
 | Author metadata at top (file outside `published_documents`) | **PASS** | Line 1 |
 | Disclaimer Class D at top | **PASS** | Lines 3-5 |
-| Citations have line anchors | **PASS** | All cited sources use `:line` anchor format |
+| Citations have line anchors | **PASS** | Parent-RCA line anchors refreshed after Section 7 lifecycle-note insertion |
 
 ---
 

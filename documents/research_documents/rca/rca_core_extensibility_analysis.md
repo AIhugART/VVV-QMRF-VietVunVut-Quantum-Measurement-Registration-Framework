@@ -345,7 +345,7 @@ Sau ngày RCA gốc (2026-05-21), repo có các commit liên quan:
 | Claim trong RCA gốc | Current state | Status |
 |---|---|---|
 | K-Space K1–K8 + T1–T4 (implicit) | K1–K8 + T1–T4 + **T5/T6/T7** ([K_Space_Axiomatization.md:11](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/K_Space_Axiomatization.md#L11)) | **DRIFT — algebraic dimension không được xét** |
-| E18 score "4.3/5 postulate readiness" | E18 file: "Decision confidence: **3.8/5**" ([rca_e18:25](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L25)) | **AMBIGUITY** — RCA gốc dùng sub-metric thay vì headline confidence |
+| E18 score "4.3/5 postulate readiness" | E18 file: "Decision confidence: **3.8/5**" ([rca_e18:25](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/rca_e18_delayed_choice_registration_boundary.md#L25)); parent RCA Section 7 now adds a lifecycle note distinguishing overall decision confidence from post-test postulate readiness; E18 narrow draft parent-RCA anchors refreshed after the lifecycle-note insertion | **RESOLVED** — upstream cross-link gap fixed; 3.8/5 and 4.3/5 measure different objects; downstream traceability refreshed |
 | EX boundary audit 100% PASS, 141 active | 100% PASS, 141 active ([boundary_audit:9](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/vvv-qmrf-ex/vvv_qmrf_ex_boundary_audit.md#L9)) | OK |
 | VVV graph: 52 nodes, 131 edges | 52 nodes, 131 edges (commit `73103df`) | OK |
 | BE source usage: 11/30 nodes | matches `system_be_full.md` | OK |
