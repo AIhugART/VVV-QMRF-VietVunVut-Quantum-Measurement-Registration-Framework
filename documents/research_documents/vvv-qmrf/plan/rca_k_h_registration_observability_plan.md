@@ -33,6 +33,19 @@ The current VVV-QMRF model can state:
 K_after = U_K(K_before, o)
 ```
 
+RCA extension note (fix B3):
+
+```text
+The signature U_K(K_before, o) is the existing VVV-QMRF core form
+(node N_QM_VVV_00023). This plan proposes extending it to
+U_K(K_before, o | H) by adding the registration horizon H as a
+conditioning parameter. The extension does not replace the core
+signature; it adds H as a structured context. The core node table
+should be updated to record this extension when (and only when)
+HDEF-01 is promoted from candidate lemma to accepted framework
+definition.
+```
+
 but this does not yet define:
 
 1. what contextual domain constrains the update,
@@ -95,11 +108,31 @@ H = (C, R, Q, V)
 | `Q` | Question or hypothesis frame | The question that `o` is answering |
 | `V` | Validity constraints | The conditions for registration lock |
 
+Explicit decomposition mapping (fix B1):
+
+When used with the two-gate registration condition (§6.2), the full horizon `H` decomposes as:
+
+```text
+H = (H_physics, H_register)
+```
+
+where:
+
+```text
+H_register = (C, R, Q, V)    ← defined here in HDEF-01
+H_physics  = (rho_SA, M, Pi_o, H_A, epsilon_dec, theta_amp,
+              N_threshold, tau_stab, epsilon_stab)    ← defined in §13 Gate 1
+```
+
+HDEF-01 therefore defines `H_register`. `H_physics` is defined separately in §13 Gate 1 because physical admissibility conditions belong to Standard QM and operational detector criteria, not to VVV-QMRF novelty.
+
 Boundary:
 
 ```text
 H is not Hilbert space, not Hamiltonian, and not a hidden physical variable.
 H belongs to the registration layer unless a separate physical model is supplied.
+H_register is VVV-QMRF registration-layer content.
+H_physics is Standard QM + operational detector content.
 ```
 
 ---
@@ -233,28 +266,34 @@ modify Standard QM probabilities.
 
 ## 7. TIM-01: Registration Latency `tau_reg(H)`
 
-Definition:
-
-```text
-tau_reg(H) = t_lock(H) - t_detect
-```
-
-where:
-
-```text
-t_detect := t[D_o = 1]
-t_lock(H) := t[V_yava(K_after,H) = 1]
-```
-
-Full form, using the two-gate registration condition:
+Definition (preferred two-gate form):
 
 ```text
 tau_reg(H) = t[Lock_K(o | K_before,H_register)=1] - t[Phys(o|H_physics)=1]
 ```
 
-Earlier compact form:
+where:
 
 ```text
+t_phys     := t[Phys(o | H_physics) = 1]
+t_lock_val := t[V_yava(K_after, H_register) = 1]
+```
+
+Deprecated compact form (fix B2):
+
+```text
+[DEPRECATED — retained for traceability only]
+tau_reg(H) = t_lock(H) - t_detect
+t_detect := t[D_o = 1]
+t_lock(H) := t[V_yava(K_after,H) = 1]
+```
+
+Deprecation reason: `D_o=1` (detector click) is not equivalent to `Phys(o|H_physics)=1` (physical admissibility). See §13 Gate 1. The compact form is retained for historical traceability but should not be used in new derivations.
+
+Deprecated earlier compact form:
+
+```text
+[DEPRECATED — retained for traceability only]
 tau_reg(H) = t[V_yava(U_K(K_before,o|H),H)=1] - t[D_o=1]
 ```
 
@@ -334,9 +373,19 @@ N_null(H) = N_no-update(H) + N_no-lock(H) + N_invalidated(H)
 
 | Subtype | Meaning |
 |---|---|
-| `N_no-update` | `D_o=1` but no `U_K` update occurs |
-| `N_no-lock` | update occurs but `V_yava=0` |
-| `N_invalidated` | registration is later invalidated or overridden |
+| `N_no-update` | `Phys(o|H_physics)=1` but no `U_K` update occurs |
+| `N_no-lock` | update occurs but `V_yava=0` at initial evaluation |
+| `N_invalidated` | registration initially locked (`V_yava=1`) but later invalidated or overridden by E8-style retroactive registration override (`N_QM_VVV_00029`) |
+
+Temporal scope clarification (fix D2):
+
+```text
+N_null(H) measures the final registration status after all E8-style
+overrides have been applied. N_invalidated counts events that initially
+passed Lock_K but were later demoted to Reg(o,H)=0 by retroactive
+registration override. The three subtypes are mutually exclusive at
+final-status evaluation time and sum to N_null(H).
+```
 
 Prediction candidate:
 
@@ -458,20 +507,33 @@ and with a clear experimental protocol, numerical prediction, and falsification 
 
 ## 11. Proposed Missing Lemmas and Postulate Candidates
 
-| Code | Name | Type | Purpose |
-|---|---|---|---|
-| `HDEF-01` | Registration Horizon Definition | Definition | Defines `H = (C,R,Q,V)` |
-| `KHI-01` | K-H Interface Lemma | Lemma | Defines `phi_H(o,K_before)=K_after` |
-| `DRC-02` | Contextual Registration Completion Lemma | Lemma | Defines `Reg(o,H)` |
-| `TIM-01` | Registration Latency Definition | Operational metric | Defines `tau_reg(H)` |
-| `NUL-01` | Null Registration Rate Definition | Operational metric | Defines `N_null(H)` |
-| `COR-01` | Conditional K-H Information Criterion | Statistical metric | Defines `I(K_after;H|o,K_before)` |
-| `DEV-01` | K-H Deviation Criterion | Physical-candidate gate | Defines `delta_X_KH` |
-| `FAL-01` | Falsification Rule | Scientific boundary | Defines what would make each claim unsupported |
+| Code | Name | Type | Purpose | Node traceability (fix F1) |
+|---|---|---|---|---|
+| `HDEF-01` | Registration Horizon Definition | Definition | Defines `H = (C,R,Q,V)` i.e. `H_register` | Candidate placeholder: extends `N_QM_VVV_00021` (Registration Lock) scope |
+| `KHI-01` | K-H Interface Lemma | Lemma | Defines `phi_H(o,K_before)=K_after` | Candidate placeholder: extends `N_QM_VVV_00023` (`V̂_yava`) signature |
+| `DRC-02` | Contextual Registration Completion Lemma | Lemma | Defines `Reg(o,H)` | Candidate placeholder: new two-gate condition combining `Phys` + `Lock_K` |
+| `TIM-01` | Registration Latency Definition | Operational metric | Defines `tau_reg(H)` | Candidate placeholder: operational metric, no existing VVV node |
+| `NUL-01` | Null Registration Rate Definition | Operational metric | Defines `N_null(H)` | Candidate placeholder: operational metric, links to `N_QM_VVV_00036`–`00038` (null registering events) |
+| `COR-01` | Conditional K-H Information Criterion | Statistical metric | Defines `I(K_after;H|o,K_before)` | Candidate placeholder: statistical metric, no existing VVV node |
+| `DEV-01` | K-H Deviation Criterion | Physical-candidate gate | Defines `delta_X_KH` | Candidate placeholder: physical-candidate gate, no existing VVV node |
+| `FAL-01` | Falsification Rule | Scientific boundary | Defines what would make each claim unsupported | Candidate placeholder: scientific boundary, no existing VVV node |
 
 Recommendation:
 
 Do not immediately promote these to E17+ postulates. First define them as derived conditions, lemmas, and operational metrics. Promote only if RCA shows structural necessity inside the core framework.
+
+Node-table integration note (fix F1):
+
+```text
+When any of the above items is promoted from candidate lemma to
+accepted framework definition, a corresponding placeholder entry
+should be created in node_QM_VVV.md with:
+  - Node type: "Candidate lemma" or "Operational metric"
+  - RCA strength: "Class D planning / not yet structural"
+  - Source: this document (rca_k_h_registration_observability_plan.md)
+This follows VVV-QMRF-EX boundary control C3: no automatic E17+
+postulate creation. Promotion requires explicit RCA gate.
+```
 
 ---
 
@@ -482,7 +544,9 @@ Do not immediately promote these to E17+ postulates. First define them as derive
 ```text
 If E[tau_reg | H_1] - E[tau_reg | H_0] = 0 within measurement uncertainty,
 after controlling detector latency, software latency, human response delay,
-post-selection, and noise, then the K-H latency hypothesis is not supported.
+post-selection, noise, and learning effect (observer familiarity bias
+between sequential trials), then the K-H latency hypothesis is not
+supported.
 ```
 
 ### NUL-F1
@@ -497,8 +561,10 @@ and H pre-registration, then the K-H null-registration hypothesis is not support
 
 ```text
 If I(K_after;H | o,K_before) = 0 within statistical uncertainty,
-after controlling confounders and sampling bias, then H does not provide
-independent information about K_after in that regime.
+after controlling confounders, sampling bias, and finite-sample mutual
+information estimation bias (which scales as O(1/N) and can produce
+spurious positive I values at small sample sizes), then H does not
+provide independent information about K_after in that regime.
 ```
 
 ---
@@ -833,7 +899,47 @@ t_phys = time when Phys(o|H_physics)=1 is operationally marked
 
 If the experiment cannot directly mark `t_phys`, use the earliest defensible physical-event timestamp and explicitly label it as a proxy.
 
-### 14.6 Prediction
+### 14.6 Gate Resolution Prerequisites (fix D1)
+
+The following prediction (§14.7) is valid only after the three §13 gate questions are resolved for this specific testbed. The required resolutions are:
+
+```text
+Gate 1 resolution for this testbed:
+  Phys(o | H_physics)=1  :=  a photon pair is detected in coincidence
+  within the timing window, with decoherence, amplification, and
+  stability criteria met by the BBO source + detector hardware.
+  This is NOT merely D_o=1; it includes the physical admissibility
+  criteria from §13 Gate 1.
+
+Gate 2 resolution for this testbed:
+  Phys=1, Lock_K=0 cases include:
+  - C2 (ambiguous classification): photon detected but sorting
+    relation unavailable or ambiguous.
+  - C3 (time-window mismatch): photon detected outside the
+    coincidence window for the chosen H_register.
+  - C9 (context mismatch): photon is physically admissible but
+    does not match the Q frame of the chosen H_register.
+  These cases demonstrate a nontrivial registration gap.
+
+Gate 3 resolution for this testbed:
+  t_lock := t_lock^val (validation lock time)
+  = time when the event is committed as valid by the coincidence-
+    counting electronics and sorting algorithm for the chosen
+    H_register context.
+  t_phys := earliest defensible physical-event timestamp
+  = time of the first detector click in the coincidence pair.
+```
+
+RCA status:
+
+```text
+The gate resolutions above are preliminary and testbed-specific.
+They must be refined when a concrete experimental setup is chosen.
+Prediction §14.7 is conditional on these gate resolutions being
+operationally instantiated.
+```
+
+### 14.7 Prediction
 
 Primary prediction:
 
@@ -858,7 +964,7 @@ RCA status:
 This is a registration-latency prediction, not a quantum-probability prediction.
 ```
 
-### 14.7 Required controls
+### 14.8 Required controls
 
 | Control | Purpose |
 |---|---|
@@ -870,7 +976,58 @@ This is a registration-latency prediction, not a quantum-probability prediction.
 | Noise threshold | Prevents detector artifacts from entering `Phys=1` |
 | Pre-registration of `H_register` | Prevents choosing the registration context after seeing data |
 
-### 14.8 Falsification
+### 14.9 Null Model Definition (fix E1)
+
+To make `delta_tau_KH != 0` meaningful, a null model N0 must be defined against which the VVV-QMRF registration-layer prediction is compared.
+
+```text
+Null Model N0 (classical registration-latency model):
+
+tau_reg^N0(H_register) = tau_hardware + tau_software(H_register) + tau_noise
+
+where:
+  tau_hardware = fixed detector + electronics latency (same for both contexts)
+  tau_software(H_register) = processing latency specific to the sorting
+    algorithm used for H_register_0 vs H_register_1
+  tau_noise = random noise floor from timestamp jitter
+```
+
+N0 predicts:
+
+```text
+E[tau_reg^N0 | H_register_1] - E[tau_reg^N0 | H_register_0]
+= tau_software(H_register_1) - tau_software(H_register_0)
+```
+
+This difference is purely classical: it reflects only the computational cost difference between which-path sorting and erasure/interference sorting.
+
+VVV-QMRF deviation criterion:
+
+```text
+delta_tau_KH is meaningful only if:
+  |delta_tau_KH_measured - delta_tau_KH_N0| > threshold
+where threshold accounts for measurement uncertainty, timestamp
+jitter, and finite-sample effects.
+```
+
+Falsification integration:
+
+```text
+If delta_tau_KH_measured = delta_tau_KH_N0 within uncertainty,
+then the registration-layer Lock_K hypothesis adds no observable
+consequence beyond classical processing differences in this testbed.
+```
+
+Boundary (VVV-QMRF-EX compass C5):
+
+```text
+N0 does not modify p_QM(o) = Tr(E_o rho). N0 is a classical
+registration-processing model. The comparison tests whether
+Lock_K has consequences beyond what classical processing explains,
+not whether Born-rule probabilities are changed.
+```
+
+### 14.10 Falsification
 
 ```text
 If
@@ -896,7 +1053,7 @@ Lock_K modifies the Born rule.
 VVV-QMRF is now a validated physical law.
 ```
 
-### 14.9 RCA next action
+### 14.11 RCA next action
 
 The next document should not add more general definitions. It should instantiate the testbed:
 
