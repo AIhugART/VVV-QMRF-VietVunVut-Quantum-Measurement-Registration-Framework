@@ -841,7 +841,7 @@ VN: Kim 1999 dong gop chieu cau truc ma Wheeler (binary lock) va Scully-Drühl (
 | G6 (EX recoverability check) | PENDING | PENDING (unchanged) |
 | G7 (user-authorized index insertion) | PENDING | PENDING (unchanged) |
 
-**Gate progress: 3/7 -> 4/7 (57%)**
+**Gate progress: 3/7 -> 4/7 (57%) at Section 12; Section 13 below later advances G5, so current progress is 5/7 (71%).**
 
 ### 12.7 Updated RCA status / Trang thai RCA cap nhat
 
@@ -858,4 +858,73 @@ VN: Trang thai cap nhat: E18 hien la **RCA-supported candidate voi BA case valid
 **Promotion caution (unchanged):** Even after three case validations, E18 remains in `framework/drafts/` until all 7 promotion gates pass. The framework `index.md` MUST NOT list E18 as a frozen postulate until G7 (user-authorized index insertion) is also satisfied.
 
 VN: Canh bao nang cap (giu nguyen): Du da co ba case validation, E18 van o `framework/drafts/` cho den khi tat ca 7 promotion gate pass. Framework `index.md` KHONG duoc liet ke E18 nhu postulate dong bang cho den khi G7 cung thoa.
+
+---
+
+## 13. G5 BE anchor decision: analogical-only acceptance / Quyet dinh neo BE G5
+
+### 13.1 Observed issue / Van de quan sat
+
+After G4, E18 has three independent case validations and a refined locking formula, but G5 remains open because the Buddhist Epistemology anchor score is still 3.8/5. The issue is not lack of prose support; the issue is that a stronger score could only be obtained by treating the BE relation as more than a structural analogy.
+
+VN: Sau G4, E18 da co ba case validation va cong thuc `Lock(C_f, S, {W_i}) -> W_valid` ro hon, nhung G5 van mo vi neo BE chi o 3.8/5. Van de goc khong phai thieu cau van, ma la neu co nang diem bang cach ep neo BE thanh tuong duong vat ly thi se vuot scope.
+
+### 13.2 Five-Why trace / Truy vet 5-Why
+
+| Why step | RCA answer |
+|---|---|
+| 1. Why is G5 still PENDING? | BE anchor strength is below the 4.0/5 gate if scored as a deep BE-QM grounding. |
+| 2. Why is the score below 4.0? | `N_BE_00003`, `N_BE_00019`, and `N_BE_00021` support valid-sign structure only analogically. |
+| 3. Why not deepen the anchor? | Deepening would risk turning a structural guide into a physical-equivalence claim. |
+| 4. Why is that risk material? | E18 is a K-side registration rule, while Buddhist Epistemology is the ontological/epistemic source frame, not a physical measurement theory. |
+| 5. Why choose acceptance instead of upgrade? | The root cause is boundary ambiguity, so the correct fix is an explicit analogical-only boundary, not forced strengthening. |
+
+### 13.3 Decision / Quyet dinh
+
+**G5 decision:** Accept the Buddhist Epistemology anchor for E18 as **permanently analogical-only**.
+
+This decision satisfies G5 by resolving the boundary condition directly: E18 may use BE as a structural source for registration-layer interpretation, but it does not claim BE predicts, explains, replaces, or physically grounds Standard Quantum Mechanics.
+
+VN: Quyet dinh G5: chap nhan neo BE cua E18 la **analogical-only** lau dai. Nghia la BE giup minh thay cau truc ghi nhan, nhung khong duoc noi BE du doan, giai thich vat ly, thay the, hay lam nen tang vat ly cho Standard Quantum Mechanics.
+
+### 13.4 BE anchor chain and identity boundary
+
+| BE code | BE anchor | E18 use | Boundary |
+|---|---|---|---|
+| `N_BE_00003` | Anumana / inference | Structural analogue for valid-sign based registration: `C_f` only matters when it functions as an admissible sign within `S`. | `C_f` is not a Buddhist `hetu`; it is a measurement-context variable. |
+| `N_BE_00019` | Vyapti / pervasion | Structural analogue for non-arbitrary linkage between final context and valid registration window. | E18 does not assert universal logical pervasion inside quantum physics. |
+| `N_BE_00021` | Svabhavapratibandha / essential relation | Structural analogue for rejecting arbitrary context-window locking. | E18 does not identify delayed-choice sorting with `tadutpatti` or `tadatmya`. |
+
+### 13.5 Scoring impact / Tac dong diem so
+
+| Criterion | Before G5 decision | After G5 decision | RCA note |
+|---|---:|---:|---|
+| BE anchor strength as equivalence | 3.8 | 3.8 | No forced strengthening is introduced. |
+| BE boundary safety | 3.8 | **4.4** | Boundary is now explicit and non-equivalence is locked. |
+| G5 gate satisfaction | PENDING | **DONE** | G5 is satisfied by explicit analogical-only acceptance, the second allowed path in the promotion table. |
+| Postulate readiness | 4.4 | **4.4** | Case support unchanged; boundary risk reduced. |
+
+### 13.6 Promotion gate impact / Tac dong promotion gate
+
+| Gate | Status before Section 13 | Status after Section 13 |
+|---|---|---|
+| G1 (two case validations PASS) | DONE | DONE |
+| G2 (formal locking rule with explicit S) | DONE | DONE |
+| G3 (boundary safety >= 4.0/5) | DONE | DONE |
+| G4 (third independent case validation) | DONE | DONE |
+| **G5 (BE anchor decision)** | **PENDING** | **DONE — analogical-only accepted as permanent boundary** |
+| G6 (EX recoverability check) | PENDING | PENDING |
+| G7 (user-authorized index insertion) | PENDING | PENDING |
+
+**Gate progress: 4/7 -> 5/7 (71%)**
+
+### 13.7 Verification / Kiem chung
+
+- E18 remains in `framework/drafts/`; no insertion into `framework/index.md` is authorized by this section.
+- No EX structure is imported into the core; EX remains compass-only.
+- BE is used as a structural analogue, not as empirical support for a physics claim.
+- The fix removes the root cause: boundary ambiguity around G5.
+- G6 is now the next blocking gate.
+
+VN: Kiem chung: E18 van o `framework/drafts/`; chua duoc vao `framework/index.md`. EX khong bi import. BE chi la neo cau truc, khong phai bang chung vat ly. Root cause cua G5 — mo ho ranh gioi analogy/equivalence — da duoc dong lai.
 

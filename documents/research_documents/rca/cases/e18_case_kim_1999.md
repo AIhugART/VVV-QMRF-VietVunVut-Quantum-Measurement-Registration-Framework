@@ -291,7 +291,9 @@ Lock(D4, R_{04}, {W_D1, W_D2, W_D3, W_D4, W_signal_raw}) -> W_D4
 | BE anchor strength | 3.8 | **3.8** | Unchanged — case test does not strengthen or weaken BE anchor; G5 remains the dedicated upgrade gate. |
 | EX support | 3.7 | **3.7** | Unchanged — EX remains compass-only. |
 | Boundary safety | 4.3 | **4.3** | Unchanged — Kim 1999 same retrocausal overclaim risk as Scully-Drühl, contained by Section 9. |
-| Postulate readiness | 4.3 | **4.4** | Three case validations now support drafting; only G5/G6/G7 remain pending. |
+| Postulate readiness | 4.3 | **4.4** | Three case validations now support drafting; G5/G6/G7 remained pending at the time of this case file. |
+
+> **Post-G5 status note (2026-05-22):** Parent RCA Section 13 later closed G5 by accepting the BE anchor as analogical-only permanent boundary. Current promotion status is therefore G1-G5 DONE, G6-G7 PENDING; this case file remains the G4 evidence record.
 
 ### 8.2 Promotion gate status update
 
@@ -301,11 +303,11 @@ Lock(D4, R_{04}, {W_D1, W_D2, W_D3, W_D4, W_signal_raw}) -> W_D4
 | G2 | Formal locking rule with explicit `S` | DONE | DONE |
 | G3 | Boundary safety ≥ 4.0/5 | DONE | DONE |
 | **G4** | **Third independent case validation** | **PENDING** | **DONE — this document** |
-| G5 | BE anchor strength ≥ 4.0/5 | PENDING | PENDING (unchanged) |
+| G5 | BE anchor decision | PENDING | DONE in parent RCA Section 13 — analogical-only permanent boundary accepted |
 | G6 | EX recoverability check | PENDING | PENDING (unchanged) |
 | G7 | User-authorized index insertion | PENDING | PENDING (unchanged) |
 
-**Gate progress: 3/7 → 4/7 (57%)**
+**Gate progress: 3/7 -> 4/7 (57%) by this G4 case; current status after parent RCA Section 13 is 5/7 (71%).**
 
 ---
 

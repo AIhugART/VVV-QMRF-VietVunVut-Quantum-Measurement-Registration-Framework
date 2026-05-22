@@ -213,11 +213,11 @@ E18 narrow draft → frozen framework postulate requires ALL of the following co
 | G2 | Formal locking rule with explicit `S` | **DONE** | Section 3 above + `rca_e18.md:709-731` |
 | G3 | Boundary safety ≥ 4.0/5 | **DONE** | Boundary safety 4.3/5 per `rca_e18.md:756` |
 | G4 | Third independent case validation | **DONE** | [rca/cases/e18_case_kim_1999.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/rca/cases/e18_case_kim_1999.md) — Kim et al. 1999 4-branch lock, 20/20 condition cells PASS |
-| G5 | BE anchor strength upgrade ≥ 4.0/5 (currently 3.8) | **PENDING** | Either deepened BE traceability OR explicit acceptance of analogical-only status |
+| G5 | BE anchor decision | **DONE** | Parent RCA Section 13 accepts BE anchor as analogical-only permanent boundary; no physical-equivalence claim |
 | G6 | EX recoverability check (does EX `N_QM_VVV_00024` cross 4.0 threshold after evidence?) | **PENDING** | Awaiting EX vNext re-classification |
 | G7 | User-authorized index insertion | **PENDING** | Explicit user authorization required |
 
-**Until G5–G7 are PASS, E18 remains in `framework/drafts/`. The framework index MUST NOT list E18 as a frozen postulate.** (G4 was advanced to DONE on 2026-05-22 via `rca/cases/e18_case_kim_1999.md`; G5/G6/G7 remain PENDING.)
+**Until G6–G7 are PASS, E18 remains in `framework/drafts/`. The framework index MUST NOT list E18 as a frozen postulate.** (G4 was advanced to DONE on 2026-05-22 via `rca/cases/e18_case_kim_1999.md`; G5 was advanced to DONE by parent RCA Section 13 analogical-only BE anchor decision; G6/G7 remain PENDING.)
 
 ---
 
@@ -268,7 +268,7 @@ All three rounds cleared the 4.0/5 gate per the project decision rule.
 ## Section 11 — Open Questions for Future Sessions / Câu hỏi mở
 
 1. **Third independent case validation:** Candidate cases include Kim et al. (1999) delayed-choice quantum eraser, Ma et al. (2013) entanglement-swapping delayed-choice, and Manning et al. (2015) atomic Wheeler. Selection criterion: minimal additional complexity beyond Wheeler + Scully–Drühl already validated.
-2. **BE anchor strength upgrade path:** Either (a) deepen Anumāna–Vyāpti–Svabhāvapratibandha citation chain to push anchor strength above 4.0, OR (b) explicitly accept analogical-only status as a permanent boundary and document the acceptance.
+2. **BE anchor decision:** G5 was closed by accepting the Anumāna–Vyāpti–Svabhāvapratibandha chain as analogical-only permanent boundary, not as physical equivalence.
 3. **Inter-relation with future T8/T9 algebraic theorems:** Per `rca_core_extensibility_analysis.md:429`, T8 (K8∘T5 embedding composition) and T9 (multi-time validity propagation) candidates may interact with E18's `Lock` operator. Defer until T8/T9 are enumerated.
 4. **EX vNext re-classification trigger:** When EX re-evaluates `N_QM_VVV_00024`, does the new evidence (this narrow draft + two case PASS) push it above the 4.0 threshold? Compass-only, no commitment.
 
