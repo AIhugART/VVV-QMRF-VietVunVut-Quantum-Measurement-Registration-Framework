@@ -2,11 +2,13 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # VVV-QMRF-EX Boundary Compliance Audit
 
-**Current version:** Phase 12 Finalization (post-targeted K-gap RCA)
-**Last updated:** 2026-05-21
+**Current version:** E18 Path C EX vNext sync
+**Last updated:** 2026-05-22
 **Auditor:** Antigravity RCA Engine
-**Graph (current, post-Phase 12):** 420 nodes, **181 edges** (149 SOT + 32 active BR_EX injected via `phase4_graph_sync.py`; 2 v1.7-reclassified rows preserved in registry but excluded from graph)
-**Registries audited (current):** BR_EX_BE (67 active + 2 reclassified = 69 rows), BR_EX_QM (74 entries) = **141 active** / 143 total rows
+**Graph (current, post-E18 Path C):** 420 nodes, **184 edges** (149 SOT + 35 active BR_EX injected via `phase4_graph_sync.py` or targeted registry sync; 2 v1.7-reclassified rows preserved in registry but excluded from graph)
+**Registries audited (current):** BR_EX_BE (70 active + 2 reclassified = 72 rows), BR_EX_QM (74 entries) = **144 active** / 146 total rows
+
+> **E18 Path C EX vNext sync:** `BR_EX_BE_00070`–`BR_EX_BE_00072` add active valid-sign bridge support for `N_QM_VVV_00024`; `BR_EX_BE_00066` remains inactive/reclassified and is superseded only for full-node recoverability. Boundary controls carry forward because the new package is EX-local, analogical-only, and explicitly excludes BE-QM identity, physical retrocausation, Standard QM modification, and core import.
 
 > **Phase 12 finalization update:** `BR_EX_BE_00065` is reactivated only under the narrowed claim class `source_analogue_for_internal_representational_form`; `BR_EX_BE_00061` and `BR_EX_BE_00066` remain inactive/reclassified. Boundary controls carry forward because the reactivated claim explicitly excludes physical detector storage, apparatus memory, and engineering-level encoding equivalence.
 
@@ -17,6 +19,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 > - Phase 9 final (2026-05-21): graph synced to 183 edges; entry counts unchanged
 > - **Phase 11 v1.7 (2026-05-21):** 3 entries reclassified (RECLASSIFIED-v1.7-KE-SC-THRESHOLD-RAISE); active set = 140; graph 183 -> 180 edges; boundary integrity inherited from Phase 8 audit (subset property)
 > - **Phase 12 finalization (2026-05-21):** `BR_EX_BE_00065` reactivated with narrowed representational-form claim; active set = 141; graph 180 -> 181 edges; `BR_EX_BE_00061` and `BR_EX_BE_00066` remain inactive/reclassified
+> - **E18 Path C EX vNext sync (2026-05-22):** `BR_EX_BE_00070`–`BR_EX_BE_00072` added as active valid-sign package for `N_QM_VVV_00024`; active set = 144; graph 181 -> 184 edges; `BR_EX_BE_00066` remains inactive/reclassified with supersession note
 
 ---
 

@@ -913,10 +913,10 @@ VN: Quyet dinh G5: chap nhan neo BE cua E18 la **analogical-only** lau dai. Nghi
 | G3 (boundary safety >= 4.0/5) | DONE | DONE |
 | G4 (third independent case validation) | DONE | DONE |
 | **G5 (BE anchor decision)** | **PENDING** | **DONE — analogical-only accepted as permanent boundary** |
-| G6 (EX recoverability check) | PENDING | PASS-CANDIDATE / EX registry sync pending |
+| **G6 (EX recoverability check)** | PENDING | **DONE — EX registry sync completed via Path C; `BR_EX_BE_00070`–`BR_EX_BE_00072` active; `BR_EX_BE_00066` remains `RECLASSIFIED-v1.7` inactive** |
 | G7 (user-authorized index insertion) | PENDING | PENDING |
 
-**Gate progress: 5/7 DONE; G6 PASS-CANDIDATE / EX registry sync pending; G7 PENDING.** G6 first received HOLD in `rca_e18_g6_ex_recoverability_check.md`; follow-up audit `rca_e18_ex_vnext_bridge_audit.md` selects Path C at 4.2/5 as a valid-sign bridge package candidate. G6 is not fully DONE until EX registry sync is explicitly authorized and completed.
+**Gate progress: 6/7 DONE; G7 PENDING.** G6 chain: PENDING → HOLD (`rca_e18_g6_ex_recoverability_check.md`) → Path C PASS-CANDIDATE 4.2/5 (`rca_e18_ex_vnext_bridge_audit.md`) → DONE after EX registry sync (`br_ex_be_registry.md` entries `BR_EX_BE_00070`–`BR_EX_BE_00072`). EX K-side direct coverage: 47/52 = 90.4%. See also `rca_core_extensibility_analysis.md` Appendix B for extensibility verdict impact.
 
 ### 13.7 Verification / Kiem chung
 
@@ -924,7 +924,7 @@ VN: Quyet dinh G5: chap nhan neo BE cua E18 la **analogical-only** lau dai. Nghi
 - No EX structure is imported into the core; EX remains compass-only.
 - BE is used as a structural analogue, not as empirical support for a physics claim.
 - The fix removes the root cause: boundary ambiguity around G5.
-- G6 is now PASS-CANDIDATE / EX registry sync pending after dedicated bridge audit; EX registry synchronization is required before G6 can close.
+- G6 is DONE: EX registry sync completed; `BR_EX_BE_00070`–`BR_EX_BE_00072` active as valid-sign package for `N_QM_VVV_00024`; old `BR_EX_BE_00066` preserved as `RECLASSIFIED-v1.7` historical record.
 
-VN: Kiem chung: E18 van o `framework/drafts/`; chua duoc vao `framework/index.md`. EX khong bi import. BE chi la neo cau truc, khong phai bang chung vat ly. Root cause cua G5 — mo ho ranh gioi analogy/equivalence — da duoc dong lai. G6 hien la PASS-CANDIDATE / EX registry sync pending sau bridge audit rieng; can sync registry EX truoc khi co the dong G6.
+VN: Kiem chung: E18 van o `framework/drafts/`; chua duoc vao `framework/index.md`. EX khong bi import. BE chi la neo cau truc, khong phai bang chung vat ly. Root cause cua G5 da duoc dong lai. G6 DONE sau khi sync registry EX voi Path C valid-sign package (`BR_EX_BE_00070`–`BR_EX_BE_00072` active); bridge cu `BR_EX_BE_00066` giu nguyen la lich su RECLASSIFIED-v1.7.
 

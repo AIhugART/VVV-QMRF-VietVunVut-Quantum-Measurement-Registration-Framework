@@ -3,8 +3,8 @@
   "multigraph": true,
   "graph": {
     "project": "VVV-QMRF-EX",
-    "phase": "1-graph-construction",
-    "date": "2026-05-20"
+    "phase": "E18-Path-C-EX-vNext-sync",
+    "date": "2026-05-22"
   },
   "nodes": [
     {
@@ -4335,6 +4335,39 @@
       "status": "checked",
       "source": "N_QM_00095",
       "target": "N_QM_VVV_00013",
+      "key": 0
+    },
+    {
+      "edge_id": "BR_EX_BE_00070",
+      "relation": "sub_concept_direct_anchor",
+      "edge_type": "BR_EX_BE_NEW",
+      "status": "active",
+      "claim_class": "interpretive_mapping_valid_sign_support",
+      "confidence": 0.42,
+      "source": "N_BE_00003",
+      "target": "N_QM_VVV_00024",
+      "key": 0
+    },
+    {
+      "edge_id": "BR_EX_BE_00071",
+      "relation": "sub_concept_direct_anchor",
+      "edge_type": "BR_EX_BE_NEW",
+      "status": "active",
+      "claim_class": "interpretive_mapping_valid_relation_support",
+      "confidence": 0.42,
+      "source": "N_BE_00019",
+      "target": "N_QM_VVV_00024",
+      "key": 0
+    },
+    {
+      "edge_id": "BR_EX_BE_00072",
+      "relation": "sub_concept_direct_anchor",
+      "edge_type": "BR_EX_BE_NEW",
+      "status": "active",
+      "claim_class": "interpretive_mapping_valid_connection_support",
+      "confidence": 0.42,
+      "source": "N_BE_00021",
+      "target": "N_QM_VVV_00024",
       "key": 0
     }
   ]

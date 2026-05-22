@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_BE Registry — K-side Bridge: BE ↔ VVV-QMRF
 
-**Version:** 2.4 (Phase 12 targeted K-gap RCA — BR_EX_BE_00065 reactivated with narrowed boundary)
-**Date:** 2026-05-21
-**Total Entries:** 69 row entries / **65 active** (34 reference-copy + 1 similarity candidate + 9 expert manual + 21 active Phase 7/12 stretch [13 KE-OF + 8 KE-SC]) + **2 RECLASSIFIED-v1.7 retained** (BR_EX_BE_00061, 00066) + **2 FOLDED-structural-review** (BR_EX_BE_00003, 00004 — Anvaya/Vyatireka folded under BR_EX_BE_00008 per BIAN-14 structural review)
-**Namespace:** BR_EX_BE_00001–BR_EX_BE_00069 (no renumber; 2 reclassified + 2 folded rows preserved in-place with Status field)
+**Version:** 2.5 (E18 Path C EX vNext registry sync — valid-sign bridge package for N_QM_VVV_00024)
+**Date:** 2026-05-22
+**Total Entries:** 72 row entries / **68 active** (34 reference-copy + 1 similarity candidate + 9 expert manual + 24 active Phase 7/12/vNext stretch [13 KE-OF + 8 KE-SC + 3 E18 Path C]) + **2 RECLASSIFIED-v1.7 retained** (BR_EX_BE_00061, 00066) + **2 FOLDED-structural-review** (BR_EX_BE_00003, 00004 — Anvaya/Vyatireka folded under BR_EX_BE_00008 per BIAN-14 structural review)
+**Namespace:** BR_EX_BE_00001–BR_EX_BE_00072 (no renumber; 2 reclassified + 2 folded rows preserved in-place with Status field)
 
 ---
 
@@ -1361,6 +1361,7 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Claim Class** | interpretive_mapping |
 | **Confidence** | 0.37 (RCA score; Phase 7 batch-approved at 3.5/5 threshold; v1.7 reclassified) |
 | **Boundary Note** | Maps temporal boundary only, not delayed-choice erasure. |
+| **Supersession Note** | Preserved as `RECLASSIFIED-v1.7`; not deleted, overwritten, or reactivated. E18 Path C bridge package (`BR_EX_BE_00070`–`BR_EX_BE_00072`) supersedes this old bridge for full-node recoverability of `N_QM_VVV_00024`; this row remains historical temporal-boundary support only. |
 | **Rationale** | Delayed-choice locking boundary receives a direct moment-boundary anchor. |
 | **Origin** | Phase 7 KE-SC stretch mapping; score 3.7/5; see `phase7_ke_sc_rca_log.md` and v1.7 annotations |
 
@@ -1423,3 +1424,69 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Boundary Note** | Maps ksana registration boundary, not physical collapse. |
 | **Rationale** | Ksana event/seal receives a direct Ksanabhangavada anchor. |
 | **Origin** | Phase 7 KE-SC stretch mapping; score 4.1/5; see `phase7_ke_sc_rca_log.md` |
+
+### BR_EX_BE_00070 — Entry 70 (E18 Path C EX vNext sync)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00070` |
+| **Type** | stretch_expert_mapping_E18_Path_C |
+| **EX vNext Status** | **RECOVERED-vNext-PATH-C** (active valid-sign bridge package for `N_QM_VVV_00024`) |
+| **EX vNext Reason** | RCA `rca_e18_ex_vnext_bridge_audit.md` selected Path C at 4.2/5. `N_BE_00003` supports the sign/inference component of E18 valid registration locking; `BR_EX_BE_00066` remains reclassified and is not reactivated. |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00003` |
+| **BE Concept** | Inference / Anumana |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00024` |
+| **VVV Concept** | Registration-Locking Boundary in Delayed-Choice Erasure |
+| **Direction** | N_BE_00003 -> N_QM_VVV_00024 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping_valid_sign_support |
+| **Confidence** | 0.42 (RCA score; E18 Path C EX vNext bridge audit) |
+| **Boundary Note** | Analogical-only support for the sign/inference component of registration locking; no BE-QM identity, no physical retrocausation, no Standard QM modification, and no core import. |
+| **Rationale** | E18 locking uses final context plus sorting relation as a sign-like basis for valid branch registration; Anumana anchors the inferential valid-sign aspect only. |
+| **Origin** | E18 G6 follow-up; `rca_e18_ex_vnext_bridge_audit.md`; Path C authorized by user on 2026-05-22 |
+
+### BR_EX_BE_00071 — Entry 71 (E18 Path C EX vNext sync)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00071` |
+| **Type** | stretch_expert_mapping_E18_Path_C |
+| **EX vNext Status** | **RECOVERED-vNext-PATH-C** (active valid-sign bridge package for `N_QM_VVV_00024`) |
+| **EX vNext Reason** | RCA `rca_e18_ex_vnext_bridge_audit.md` selected Path C at 4.2/5. `N_BE_00019` supports the stable relation/pervasion component of E18 valid registration locking. |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00019` |
+| **BE Concept** | Pervasion / Vyapti |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00024` |
+| **VVV Concept** | Registration-Locking Boundary in Delayed-Choice Erasure |
+| **Direction** | N_BE_00019 -> N_QM_VVV_00024 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping_valid_relation_support |
+| **Confidence** | 0.42 (RCA score; E18 Path C EX vNext bridge audit) |
+| **Boundary Note** | Analogical-only support for the sorting-relation constraint in E18; no BE-QM identity, no physical retrocausation, no Standard QM modification, and no core import. |
+| **Rationale** | E18 requires a sorting relation `S` that links final context to a valid branch window; Vyapti anchors the relation-constraint aspect only. |
+| **Origin** | E18 G6 follow-up; `rca_e18_ex_vnext_bridge_audit.md`; Path C authorized by user on 2026-05-22 |
+
+### BR_EX_BE_00072 — Entry 72 (E18 Path C EX vNext sync)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00072` |
+| **Type** | stretch_expert_mapping_E18_Path_C |
+| **EX vNext Status** | **RECOVERED-vNext-PATH-C** (active valid-sign bridge package for `N_QM_VVV_00024`) |
+| **EX vNext Reason** | RCA `rca_e18_ex_vnext_bridge_audit.md` selected Path C at 4.2/5. `N_BE_00021` supports the essential-connection component of E18 valid registration locking. |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00021` |
+| **BE Concept** | Essential relation / Svabhavapratibandha |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00024` |
+| **VVV Concept** | Registration-Locking Boundary in Delayed-Choice Erasure |
+| **Direction** | N_BE_00021 -> N_QM_VVV_00024 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping_valid_connection_support |
+| **Confidence** | 0.42 (RCA score; E18 Path C EX vNext bridge audit) |
+| **Boundary Note** | Analogical-only support for the stable valid-connection component of E18; no BE-QM identity, no physical retrocausation, no Standard QM modification, and no core import. |
+| **Rationale** | E18 valid registration depends on a stable connection between final context, sorting rule, and valid window; Svabhavapratibandha anchors the connection aspect only. |
+| **Origin** | E18 G6 follow-up; `rca_e18_ex_vnext_bridge_audit.md`; Path C authorized by user on 2026-05-22 |

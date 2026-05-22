@@ -10,7 +10,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Date:** 2026-05-22  
 **Scope:** E18 promotion gates, G6 EX Recoverability Check  
 **Core rule:** VVV-QMRF-EX is compass-only, not cargo  
-**Current status:** G1-G5 DONE, G6 PASS-CANDIDATE / EX registry sync pending, G7 PENDING
+**Current status:** G1-G6 DONE, G7 PENDING
 
 ---
 
@@ -83,7 +83,7 @@ The blocker is not lack of E18 core evidence. The blocker is a mismatch between 
 | G3 | DONE | Boundary safety remains above threshold. |
 | G4 | DONE | Kim et al. 1999 case, 20/20 condition cells PASS. |
 | G5 | DONE | BE anchor accepted as analogical-only permanent boundary. |
-| **G6** | **PASS-CANDIDATE / EX registry sync pending** | Path C valid-sign bridge package scored 4.2/5 in `rca_e18_ex_vnext_bridge_audit.md`; do not reactivate `BR_EX_BE_00066` as-is. |
+| **G6** | **DONE** | EX registry sync completed: `BR_EX_BE_00070`–`BR_EX_BE_00072` active as valid-sign package for `N_QM_VVV_00024`; `BR_EX_BE_00066` preserved as `RECLASSIFIED-v1.7` historical. EX coverage: 47/52 = 90.4%. |
 | G7 | PENDING | Requires explicit user authorization; `framework/index.md` remains untouched. |
 
 ---
@@ -103,17 +103,15 @@ The blocker is not lack of E18 core evidence. The blocker is a mismatch between 
 
 ## 6. Recommended Next Step / Buoc tiep theo
 
-Next recommended RCA task:
+G6 is DONE. EX registry sync completed with active entries `BR_EX_BE_00070`–`BR_EX_BE_00072`. The only remaining gate is:
 
 ```text
-EX vNext registry sync decision for N_QM_VVV_00024:
-- authorize or reject Path C registry sync;
-- preserve BR_EX_BE_00066 as RECLASSIFIED-v1.7 with a supersession note;
-- assign final EX-local bridge ID(s) for the valid-sign package if authorized;
-- keep G7 pending until registry sync closes.
+G7 — User-authorized index insertion:
+- Explicitly authorize insertion of E18 into framework/index.md.
+- Until G7 is authorized, E18 remains in framework/drafts/ as a narrow framework proposal.
 ```
 
-Until registry sync closes G6 and the user explicitly authorizes G7, E18 should remain in `framework/drafts/`.
+**E18 remains in `framework/drafts/`.** No insertion into `framework/index.md` without explicit G7 authorization.
 
 ---
 

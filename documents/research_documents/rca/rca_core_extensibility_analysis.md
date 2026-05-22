@@ -468,3 +468,108 @@ Sau ngày RCA gốc (2026-05-21), repo có các commit liên quan:
 ---
 
 **Appendix end. Original Section 0-5 + Summary Table above remain authoritative for the 4-dimension verdict; Appendix A extends to 6 dimensions per Phase 2 findings.**
+
+---
+
+# Appendix B — E18 Promotion Progress: G6 EX Recoverability Check (2026-05-22)
+
+> **Scope:** VVV-QMRF core (E18 promotion path); VVV-QMRF-EX as compass only.
+>
+> **Trigger:** Appendix A.4 Tier 1 listed "Draft E18 narrow framework proposal — RCA-supported candidate, 2 case PASS" as the top priority action. This appendix records the downstream progress through G6 and its impact on the extensibility verdict. **Extend, not overwrite:** Sections 0-5, Summary Table, and Appendix A remain authoritative and are not modified.
+
+## B.0 — Context / Bối cảnh
+
+Appendix A (commit `b779117`, 2026-05-22) was written when E18 had two case validations (Wheeler + Scully-Drühl) and the narrow draft had just been recommended. Since then, E18 has advanced through G4 (Kim 1999 third case), G5 (analogical-only BE anchor), and G6 (EX recoverability check + EX registry sync), bringing the gate progress to **6/7 DONE**. Only G7 (user-authorized index insertion) remains pending.
+
+This appendix documents the G6 chain specifically, as it directly interacts with the extensibility verdict: G6 was the gate where VVV-QMRF-EX (used as compass) informed whether the EX-side `N_QM_VVV_00024` node recovers above the 4.0 threshold after the refined E18 structure was established.
+
+## B.1 — E18 Promotion Gate Progress (state at 2026-05-22)
+
+| Gate | Condition | Status | Evidence |
+|---|---|---|---|
+| G1 | Two case validations PASS | **DONE** | Wheeler + Scully-Drühl (`rca_e18.md` Sections 10-11) |
+| G2 | Formal locking rule with explicit `S` | **DONE** | `Lock(C_f, S, {W_i}) -> W_valid` (`rca_e18.md` Section 11.8) |
+| G3 | Boundary safety ≥ 4.0/5 | **DONE** | 4.3/5 per `rca_e18.md:756` |
+| G4 | Third independent case validation | **DONE** | Kim et al. 1999 — 4-branch lock, 20/20 condition cells PASS (`rca/cases/e18_case_kim_1999.md`) |
+| G5 | BE anchor decision | **DONE** | Analogical-only permanent boundary accepted (`rca_e18.md` Section 13) |
+| **G6** | **EX recoverability check** | **DONE** | EX registry sync via Path C — `BR_EX_BE_00070`–`BR_EX_BE_00072` active (see B.2 below) |
+| G7 | User-authorized index insertion | **PENDING** | Explicit user authorization required before `framework/index.md` is touched |
+
+**Gate progress: 6/7 DONE (86%).** E18 remains in `framework/drafts/` until G7.
+
+## B.2 — G6 Key RCA Chain / Chuỗi RCA G6
+
+G6 asked: does EX `N_QM_VVV_00024` recover above the 4.0 threshold after E18 gained three case validations and a closed G5 boundary?
+
+**Step 1 — G6 HOLD** (`rca_e18_g6_ex_recoverability_check.md`, 2026-05-22):
+
+Root cause isolated: old `BR_EX_BE_00066` anchors delayed-choice erasure to `N_BE_00029` Momentariness only, while the refined E18 object depends on valid-sign locking (`C_f + S → W_valid`). The old bridge object and the refined E18 object are not the same object. Therefore G6 was marked **HOLD — EX vNext re-audit required**, not a direct PASS or FAIL.
+
+**Step 2 — Bridge audit: three paths** (`rca_e18_ex_vnext_bridge_audit.md`, 2026-05-22):
+
+3 RCA rounds × 5-Why × gate 4.0/5:
+
+| Path | Candidate | Score | Decision |
+|---|---|---:|---|
+| A | Old `BR_EX_BE_00066` reactivated as-is | 3.4/5 | FAIL — temporal anchor too broad for valid-sign structure |
+| B | Narrowed temporal-boundary-only revision | 3.8/5 full-node; 4.1/5 component-only | HOLD — useful secondary support, not full-node recovery |
+| **C** | **New valid-sign package: `N_BE_00003` + `N_BE_00019` + `N_BE_00021` (primary); `N_BE_00029` (secondary boundary support)** | **4.2/5** | **PASS-CANDIDATE** |
+
+Root cause fixed by Path C: the old bridge failed because it mapped generic momentariness to a more specific valid-sign locking structure; the Anumāna–Vyāpti–Svabhāvapratibandha chain directly addresses the `I(C_f, S, W_j)` inferential validity condition.
+
+**Step 3 — EX registry sync (2026-05-22):**
+
+EX vNext registry sync added three new active bridges under the valid-sign package:
+
+| Bridge ID | BE Anchor | VVV Node | Status |
+|---|---|---|---|
+| `BR_EX_BE_00070` | `N_BE_00003` Anumāna | `N_QM_VVV_00024` | Active |
+| `BR_EX_BE_00071` | `N_BE_00019` Vyāpti | `N_QM_VVV_00024` | Active |
+| `BR_EX_BE_00072` | `N_BE_00021` Svabhāvapratibandha | `N_QM_VVV_00024` | Active |
+
+`BR_EX_BE_00066` (old) remains `RECLASSIFIED-v1.7`, inactive, with a supersession note. `N_BE_00029` is retained as secondary temporal-boundary support. Row 24 in `k_gap_exception_list.md` updated to `KE-RESOLVED-STRETCH-vNext-PATH-C` at 4.2/5. EX active registry: 144 entries. Graph: 184 edges.
+
+**Step 4 — G6 DONE:**
+
+With EX registry sync completed and `vvv_qmrf_ex_boundary_audit.md` "E18 Path C EX vNext sync" entry confirming 0 violations, G6 moves to **DONE**. E18 narrow draft Section 8 records G6 DONE, G7 PENDING.
+
+## B.3 — Impact on 6-Dimension Verdict / Tác động lên Verdict Matrix
+
+The 6-dimension verdict from Appendix A.3 is not changed by G6 completion:
+
+| Dimension | A.3 Verdict | After G6 | Confidence | Reason |
+|---|---|---|---:|---|
+| 1 — BE source exhaustion | Gần đóng | **Unchanged** | 4.6/5 | G6 reuses BE nodes already in core (N_BE_00003/00019/00021); no new BE source opened |
+| **2 — Structural gap (nội tại)** | Có điều kiện mở | **Unchanged** | 4.1/5 | G6 DONE advances gate progress to 6/7 but E18 stays in `drafts/` until G7; Dimension 2 remains conditionally open |
+| 3 — Nodes/edges trong postulate hiện có | Mở | **Unchanged** | 4.5/5 | G6 is a promotion-path step, not a node/edge addition |
+| **4 — Import EX vào core** | Đóng (by design) | **Unchanged** | 4.9/5 | Path C bridges are EX-local; zero core edges added; boundary audit 0 violations |
+| 5 — Algebraic-layer theorems | Có điều kiện mở | **Unchanged** | 4.1/5 | Outside G6 scope |
+| 6 — Inter-RS coordination | Open frontier | **Unchanged** | 4.1/5 | Outside G6 scope |
+
+**EX coverage delta (Dimension 4 note):** Section 2 (original, 2026-05-21) cited 88.5% K-side direct bridge. EX vNext sync brings this to **47/52 = 90.4%** direct coverage (+ 4 KE-QI + 1 KE-SC-RECLASSIFIED-v1.7 = 52/52 = 100% effective coverage). This is an EX-internal metric improvement, not a change to the core extensibility verdict.
+
+> [!NOTE]
+> **Why Dimension 2 remains "Có điều kiện mở" (not upgraded):** G6 DONE closes a promotion gate for E18, but does not add a new structural gap or open a new extension dimension. The verdict label reflects how many extension candidates exist and their readiness level, not whether a given candidate has passed all gates. E18 becomes a frozen postulate only when G7 is satisfied.
+
+## B.4 — Roadmap Impact / Tác động Roadmap
+
+**Appendix A.4 Tier 1** — "Draft E18 narrow framework proposal — RCA-supported candidate, 2 case PASS": **DONE.** E18 narrow draft exists at `framework/drafts/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_narrow_draft.md` with refined `Lock(C_f, S, {W_i}) → W_valid`, 3 case validations, G1-G6 DONE.
+
+**Remaining Dimension 2 action:** G7 — explicit user authorization to insert E18 into `framework/index.md`. Until then, E18 must remain in `framework/drafts/`.
+
+**Appendix A.4 Tier 2 items** (T8/T9 algebraic, inter-RS coordination) and **Tier 3** (not recommended) are unchanged by G6.
+
+## B.5 — Verify / Kiểm chứng
+
+| Check | Result | Evidence |
+|---|---|---|
+| G6 root cause isolated (not symptom patched) | PASS | Old bridge object vs refined E18 object mismatch identified; Path C fixes the object |
+| EX compass-only rule respected | PASS | `BR_EX_BE_00070-00072` are EX-local; zero core edges added; boundary audit 0 violations |
+| "Extend, not overwrite" respected | PASS | Sections 0-5, Summary Table, Appendix A untouched |
+| 6-Dimension verdict accuracy | PASS | All 6 verdicts unchanged; EX coverage delta documented as EX-internal metric |
+| G7 separation preserved | PASS | No index insertion authorized or performed; E18 stays in `framework/drafts/` |
+| Neutral wording respected | PASS | No "error/wrong/fallacy" about Standard QM; uses "scope boundary", "registration-layer distinction" language |
+
+---
+
+**Appendix B end. Appendices A and B together cover: (A) 6-dimension extensibility audit + roadmap, and (B) E18 G6 EX recoverability chain and promotion gate progress. Both are extensions of the original Sections 0-5 + Summary Table, which remain authoritative.**
