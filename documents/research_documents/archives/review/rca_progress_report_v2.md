@@ -245,7 +245,7 @@ graph TD
 
 | Step | Action | Dependency | Effort |
 |---:|---|---|---|
-| 5 | **Boundary notes E11/E14** — add `what_it_does_not_claim` | E17 RCA downstream | Low |
+| 5 | **Boundary notes E11/E14** — DONE in `rca_core_extensibility_analysis.md` Appendix D (4.4/5 PASS) | E17 RCA downstream | Done |
 | 6 | **T8 candidate 1-sentence statement** — K8∘T5 embedding composition | [K_Space_Axiomatization.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/K_Space_Axiomatization.md) | Low–Medium |
 | 7 | **T9 candidate 1-sentence statement** — multi-time validity propagation | K-Space §3 Open Items | Low–Medium |
 
@@ -293,7 +293,7 @@ graph TD
 > [!TIP]
 > **Khuyến nghị ưu tiên cao nhất:** Chọn 1 trong 3 case candidates (Kim 1999 / Ma 2013 / Manning 2015) cho **G4 — third case validation**. Đây là gate có effort thấp nhất mà unlock được phần lớn promotion path. Song song đó, quyết định G5 (BE anchor: deepen or accept) có thể làm cùng lúc.
 >
-> **Tier 2 actions (boundary notes E11/E14 + T8/T9 statements)** có thể chạy song song không phụ thuộc E18 promotion.
+> **Tier 2 status:** boundary notes E11/E14 are DONE in `rca_core_extensibility_analysis.md` Appendix D; T8/T9 statements remain parallel work independent of E18 promotion.
 
 ---
 
@@ -333,7 +333,7 @@ graph TD
 
 **Tier 2 (parallel, unblocked):**
 
-4. Boundary notes for E11/E14 (`what_it_does_not_claim` sections)
+4. DONE — Boundary notes for E11/E14 (`what_it_does_not_claim` sections), recorded in `rca_core_extensibility_analysis.md` Appendix D.
 5. T8 candidate 1-sentence statement (K8 ∘ T5 embedding composition)
 6. T9 candidate 1-sentence statement (multi-time validity propagation)
 

@@ -20,11 +20,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 The E17 candidate appears because "absence of disturbance" sounds like a new K-side registration object. RCA shows that the currently active framework already separates the relevant cells through E9, E11, and E14. E11 covers valid K-side registration through a structured null result without direct target absorption; E14 covers validated absence of a measured property under E10 conditions; E9 covers physical coupling with no valid K-side registration output.
 
-**Recommendation:** Do not create a formal E17 postulate in this round. Keep the output as an RCA report only. Queue a downstream boundary-clarification note for E11 and E14 if the user later wants framework edits.
+**Recommendation:** Do not create a formal E17 postulate in this round. Keep the output as an RCA report only. The downstream E11/E14 boundary-clarification note has since been executed in `rca_core_extensibility_analysis.md` Appendix D (2026-05-22) after a 4.0/5 decision gate, without promoting E17.
 
 **Decision confidence:** 4.0/5. The evidence is strong enough to reject a formal E17 in this round, but not strong enough to close the R2 path permanently. A future E17 remains possible only if a distinct object of K-side registration is isolated: the measurement-channel condition itself.
 
-**Tóm tắt VN:** Nguyên nhân gốc không phải thiếu tiên đề mới, mà là ranh giới E9/E11/E14 chưa đủ dễ thấy khi đọc từ hướng "absence of disturbance". Vì vậy vòng này không viết E17; chỉ ghi RCA và xếp hàng bước sau để làm rõ ranh giới nếu cần.
+**Tóm tắt VN:** Nguyên nhân gốc không phải thiếu tiên đề mới, mà là ranh giới E9/E11/E14 chưa đủ dễ thấy khi đọc từ hướng "absence of disturbance". Vì vậy vòng này không viết E17; chỉ ghi RCA. Bước làm rõ ranh giới sau đó đã được thực thi trong `rca_core_extensibility_analysis.md` Appendix D (2026-05-22), với gate 4.0/5.
 
 **Độ tin cậy quyết định:** 4.0/5. Bằng chứng đủ mạnh để chưa viết E17 ở vòng này, nhưng chưa đủ để đóng vĩnh viễn hướng R2. E17 chỉ còn có thể cần nếu cô lập được một đối tượng ghi nhận riêng: điều kiện của chính kênh đo.
 
@@ -136,11 +136,11 @@ Do **not** write E17 as a formal postulate in this round. Instead, record the fo
 VN:
 > **Mệnh đề ranh giới — cách đọc "absence of disturbance":** Trong VVV-QMRF, "vắng mặt disturbance" chưa tự động tạo postulate mới. Nếu đối tượng ghi nhận là trạng thái/đường đi mục tiêu được suy ra qua nhánh null có cấu trúc, đó là E11. Nếu đối tượng ghi nhận là sự vắng mặt của một thuộc tính back-action được đo trong điều kiện E10, đó là E14. Nếu có tương tác vật lý nhưng không có cập nhật trạng thái ghi nhận hợp lệ, đó là E9. E17 chỉ cần thiết nếu cô lập được một đối tượng riêng: ghi nhận phía K về chính điều kiện của kênh đo, kèm phụ thuộc K-axiom và anchor nguồn chưa bị E11/E14 dùng hết.
 
-### Downstream action queue (not executed here)
+### Downstream action queue (status updated 2026-05-22)
 
-1. Add a short `what_it_does_not_claim` note to E11: E11 registers target/path/state by contrapositive null evidence; it does not separately classify absence-of-disturbance as an independent postulate unless channel-self-registration is isolated.
-2. Add a short `what_it_does_not_claim` note to E14: E14 covers absence of a measured property inside the valid test domain; if disturbance is operationalized as the tested property, absence-of-disturbance is an E14 specialization, not a separate postulate by default.
-3. If future RCA selects R2, draft E17 only after specifying: object of registration, K-axiom dependency, assertion class, BE source anchor, EX-compass status, and what it does not claim.
+1. DONE — E11 boundary note recorded in `rca_core_extensibility_analysis.md` Appendix D: E11 registers target/path/state by contrapositive null evidence; it does not separately classify absence-of-disturbance as an independent postulate unless channel-self-registration is isolated.
+2. DONE — E14 boundary note recorded in `rca_core_extensibility_analysis.md` Appendix D: E14 covers absence of a measured property inside the valid test domain; if disturbance is operationalized as the tested property, absence-of-disturbance is an E14 specialization, not a separate postulate by default.
+3. STILL DEFERRED — If future RCA selects R2, draft E17 only after specifying: object of registration, K-axiom dependency, assertion class, BE source anchor, EX-compass status, and what it does not claim.
 
 ---
 
@@ -151,7 +151,7 @@ VN:
 | Root cause removed, not merely wording patched | PASS | The report identifies the underlying matrix-boundary confusion and gives a routing lemma. |
 | BE citations trace to `system_be_full.md` | PASS | Apoha, Anyapoha, Anupalabdhi, Anupalabdhi-hetu, Abhava, and key edges are cited by line. |
 | VVV-QMRF citations trace to framework files | PASS | E9/E11/E14 statements and matrices are cited by line. |
-| "Extend, not overwrite" respected | PASS | No framework file is edited; downstream changes are queued only. |
+| "Extend, not overwrite" respected | PASS | This RCA remains an RCA report; downstream boundary clarification is now completed in `rca_core_extensibility_analysis.md` Appendix D without promoting E17. |
 | "EX compass, not cargo" respected | PASS | EX node codes appear only as EX-compass-only intelligence flags, not as imported core evidence. |
 | Neutral wording respected | PASS | Uses "category boundary," "scope boundary," and "registration-layer distinction" language. |
 | E17 needed? guardrail | PASS | E17 is not recommended unless a distinct channel-self-registration object is isolated later. |
@@ -236,8 +236,8 @@ Source: `vvv_qmrf_framework_e14_validated_absence_registration_postulate.md:32`-
 
 ## Appendix D — Downstream Action Queue
 
-These actions are **not executed in this RCA report**:
+These actions now have the following status:
 
-1. If user wants documentation refinement, add a boundary note to E11 and E14 using the Boundary Lemma above.
+1. DONE (2026-05-22) — Boundary notes for E11 and E14 were recorded in `rca_core_extensibility_analysis.md` Appendix D using the Boundary Lemma above and a 4.0/5 decision gate.
 2. If user still wants E17, run a second RCA focused only on R2: channel-self-registration as a possible distinct object.
 3. If R2 passes, draft `framework/vvv_qmrf_framework_e17_interaction_free_registration_postulate.md` under `schema_guide.md` with explicit `what_it_does_not_claim` and Class D boundaries.

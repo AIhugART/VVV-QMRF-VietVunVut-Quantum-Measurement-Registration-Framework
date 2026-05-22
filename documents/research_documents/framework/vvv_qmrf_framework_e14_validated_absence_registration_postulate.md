@@ -125,5 +125,5 @@ VN boundary note: E14 không nói mọi kết quả rỗng đều là ghi nhận
 | Document type declared | Pass | Declared as `framework` for schema alignment. |
 | Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
 | Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
-| Boundary / non-claim guardrail | Review required | Add explicit non-identity and non-physical-law boundaries before reuse. |
+| Boundary / non-claim guardrail | Pass | Section 7 plus `rca_core_extensibility_analysis.md` Appendix D define non-identity and non-physical-law boundaries before reuse. |
 | Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

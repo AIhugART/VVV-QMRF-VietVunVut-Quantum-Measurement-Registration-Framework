@@ -69,7 +69,7 @@ flowchart TD
 | **Nguyên nhân gốc** | R4: Documentation gap — E9/E11/E14 đã đủ nhưng ranh giới chưa rõ từ góc đọc "absence of disturbance" | R2 FAIL: "channel condition itself" chưa cô lập được K-state object riêng | ✅ Bổ trợ, không mâu thuẫn |
 | **Đánh giá R2** | "Not selected" nhưng "keep as future RCA path" | 3/3 rounds FAIL, avg 3.87/5 < 4.5/5 | ✅ RCA-2 đã test cái RCA-1 để ngỏ |
 | **Confidence** | 4.0/5 | 3.87/5 (avg score) | ✅ Cùng hướng, cùng mức |
-| **Downstream actions** | Queue boundary notes cho E11/E14 | Giữ boundary notes, không tạo E17 | ✅ Nhất quán |
+| **Downstream actions** | Boundary notes cho E11/E14 đã được thực thi ở `rca_core_extensibility_analysis.md` Appendix D (2026-05-22) | Giữ boundary notes, không tạo E17 | ✅ Nhất quán |
 | **Điều kiện mở lại** | "Run second RCA focused on R2: channel-self-registration" | 6 điều kiện minimum nếu reopen | ✅ RCA-2 đã thực hiện + chi tiết hóa |
 
 > [!NOTE]
@@ -167,7 +167,7 @@ flowchart TD
 | # | Rủi ro | Xác suất | Tác động |
 |---|---|---|---|
 | 1 | **False negative:** E17 thực sự cần nhưng bị reject, dẫn đến framework thiếu coverage cho channel-self-registration | Thấp–Trung bình | Vừa — có thể sửa sau vì reopening conditions đã được định nghĩa |
-| 2 | **Boundary notes chưa được thực thi:** RCA-1 queue downstream notes cho E11/E14, nhưng nếu không ai thực hiện, documentation gap vẫn tồn tại | Trung bình | Thấp — gap chỉ ảnh hưởng reader comprehension, không ảnh hưởng framework integrity |
+| 2 | **Boundary notes đã được thực thi:** RCA-1 downstream notes cho E11/E14 đã được đóng ở `rca_core_extensibility_analysis.md` Appendix D (4.4/5 PASS, gate 4.0/5) | Thấp | Thấp — residual risk chỉ còn reader cần theo link Appendix D |
 | 3 | **Anchor exhaustion argument có thể quá mạnh:** Nói BE anchors "đã bị allocate" cho E11/E14 implies 1-to-1 mapping giữa BE concept và postulate, nhưng BE concepts có thể support nhiều postulates theo các facets khác nhau | Thấp | Thấp — RCA-2 Round 3 đã ghi nhận risk này (0.65 cho "No double-claiming") |
 
 ---
@@ -229,6 +229,6 @@ Nếu tương lai muốn mở lại E17, cần đáp ứng **tất cả** các �
 
 > [!TIP]
 > **Khuyến nghị tiếp theo:**
-> 1. Thực thi boundary notes cho E11/E14 (downstream action từ RCA-1, Section 4)
+> 1. DONE — Boundary notes cho E11/E14 đã được thực thi trong `rca_core_extensibility_analysis.md` Appendix D (2026-05-22)
 > 2. Lưu trữ cả hai RCA làm tài liệu tham chiếu nếu E17 được đề xuất lại trong tương lai
 > 3. Nếu muốn đóng E17 vĩnh viễn, cần thêm risk-of-false-negative analysis (hiện thiếu)

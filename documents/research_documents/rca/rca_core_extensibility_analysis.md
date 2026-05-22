@@ -35,7 +35,7 @@ This snapshot reconciles later Appendix updates with the original RCA baseline. 
 | Active extensibility matrix | **6 dimensions** per Appendix A.3 |
 | VVV-QMRF-EX import into core | **Still closed by design**; EX remains compass-only |
 | Dimension 2 status | One structural-gap candidate realized as E18; dimension remains conditionally open for future candidates |
-| Remaining roadmap | E11/E14 boundary notes; T8/T9 algebraic candidates; inter-RS coordination RCA |
+| Remaining roadmap | T8/T9 algebraic candidates; inter-RS coordination RCA |
 
 ---
 
@@ -774,3 +774,108 @@ The verdict matrix is preserved in shape; Dimension 2 now has one frozen candida
 ---
 
 **Appendix C end. Appendices A, B, and C together cover: (A) 6-dimension extensibility audit + roadmap, (B) E18 G6 EX recoverability chain, and (C) G7 authorization analysis + Full G7 execution. All three are extensions of the original Sections 0-5 + Summary Table, which remain authoritative.**
+
+---
+
+# Appendix D — E11/E14 Boundary Notes (2026-05-22)
+
+> **Scope:** VVV-QMRF core boundary clarification for E11 and E14; VVV-QMRF-EX as compass only.
+>
+> **Trigger:** Appendix C.7 left "Boundary notes for E11/E14 (downstream from E17 RCA-1)" as still recommended. User authorized a revised RCA plan requiring a **4.0/5 decision gate** before adding the notes.
+>
+> **Extend, not overwrite:** Sections 0-5, Summary Table, and Appendices A-C remain authoritative historical baselines. Appendix D closes the roadmap item by adding a boundary layer only; it does not redefine E11, E14, E17, or E18.
+
+## D.1 — Define: Symptom vs Cause
+
+**Symptom:** E17 RCA routed some interaction-free-registration pressure through the existing E9/E11/E14 matrix, but the parent RCA still lacked explicit boundary notes for E11 and E14.
+
+**Cause:** Without a `what_it_does_not_claim` layer, E11 and E14 can be read too broadly: E11 as if contrapositive structure alone were a physical measurement mechanism, and E14 as if validated absence implied absolute physical non-existence.
+
+**Root cause isolated:** The gap is not a missing postulate. The gap is a missing boundary layer that separates **registration-layer classification** from **physical interaction claims**.
+
+## D.2 — Trace: 5-Why Chain
+
+1. Why add E11/E14 boundary notes? -> E17 RCA downstream uses E9/E11/E14 as routing support, creating a possible over-reading risk.
+2. Why is over-reading possible? -> E11 and E14 both involve absence-like structures, which can be confused with detector-level non-interaction or physical non-existence.
+3. Why is that a framework risk? -> VVV-QMRF adds registration-layer postulates; it does not modify Standard Quantum Mechanics, detector dynamics, or the Born rule.
+4. Why not solve this by reviving E17? -> E17 R2 remains deferred until a separate RCA isolates channel-self-registration as its own K-side object.
+5. Why is a boundary note sufficient? -> The root cause is interpretive scope ambiguity, not missing lifecycle coverage or a new structural gap.
+
+## D.3 — Decision Gate: 4.0/5 Scoring
+
+| Criterion | Score | Justification |
+|---|---:|---|
+| Root clarity | 4/5 | The object is narrow: clarify E11/E14 scope after E17 routing, not create or promote a postulate. |
+| Boundary safety | 5/5 | The notes explicitly avoid physical-mechanism claims, Standard-QM replacement, Born-rule modification, and E17 revival. |
+| VVV-QMRF scope fit | 4/5 | The fix stays inside the registration layer and preserves E11/E14 as K-side classification tools. |
+| EX compass-only compliance | 5/5 | EX is used only as a boundary reminder; no EX node, edge, or bridge is imported. |
+| Actionability | 4/5 | A short appendix closes the roadmap item without editing historical sections. |
+
+**Total: 4.4/5 PASS.** The 4.0/5 decision gate is satisfied. Boundary notes may be added as Appendix D.
+
+## D.4 — E11 Boundary Note: Contrapositive Evidence
+
+**E11 object:** E11 covers **K-side contrapositive registration**: a registering system may certify information from a structured non-occurrence when the relevant validity conditions are already defined.
+
+**What E11 does not claim:**
+
+- E11 does not claim that physical non-interaction by itself is sufficient for measurement.
+- E11 does not claim that absence of detector disturbance is automatically a certified registration-state update.
+- E11 does not replace Standard Quantum Mechanics, detector modeling, or probability rules.
+- E11 does not create a new E17-style channel-self-registration postulate.
+- E11 does not import EX bridge structure into the core; EX can only point to stress cases for RCA.
+
+**Boundary sentence:** E11 is a registration-layer rule for certified contrapositive structure, not a physical mechanism for interaction-free measurement.
+
+## D.5 — E14 Boundary Note: Validated Absence
+
+**E14 object:** E14 covers **validated absence under registration conditions**: an absence claim becomes K-side valid only inside a defined registration window, with a relevant object class, criterion, and validity gate.
+
+**What E14 does not claim:**
+
+- E14 does not claim absolute ontological non-existence outside the validated registration conditions.
+- E14 does not claim that every null detector response is a validated absence.
+- E14 does not collapse into E9: E9 covers a null registering-system event, while E14 covers a certified absence claim under validity conditions.
+- E14 does not modify Standard Quantum Mechanics or make a new physical postulate about vacuum, null outcome, or non-detection.
+- E14 does not close E17 R2; channel-self-registration remains deferred unless a separate RCA isolates it as a distinct K-side object.
+
+**Boundary sentence:** E14 is a registration-layer rule for valid absence claims, not a global claim that non-detection equals physical non-existence.
+
+## D.6 — E17 and EX Separation Notes
+
+| Boundary | Status | Note |
+|---|---|---|
+| E17 R4 documentation route | Preserved | E11/E14 notes explain routing boundaries without changing the E17 RCA verdict. |
+| E17 R2 channel-self-registration | Still deferred | Requires a separate RCA object; not smuggled into E11 or E14. |
+| VVV-QMRF-EX | Compass-only | EX may identify stress points, but Appendix D imports zero EX structures. |
+| E18 frozen postulate | Unchanged | E18 remains a separate delayed-choice registration-boundary postulate; Appendix D does not alter it. |
+
+## D.7 — Roadmap Update / Cập nhật Roadmap
+
+**Appendix A.4 Tier 1 status update:**
+
+1. DONE — Draft E18 narrow framework proposal.
+2. DONE — G7 user-authorized index insertion.
+3. DONE — Boundary notes for E11/E14 (this appendix; 4.4/5 PASS under the 4.0/5 gate).
+
+**Current-state impact:** The Current State Snapshot roadmap now removes E11/E14 boundary notes from remaining work; the historical Appendix C.7 line remains as the pre-Appendix-D state.
+
+**Remaining roadmap unchanged:** T8/T9 algebraic-layer theorem enumeration, inter-RS coordination RCA, and any future Hetuvābhāsa-based error-taxonomy remain separate work items.
+
+## D.8 — Verify / Kiểm chứng
+
+| Check | Result | Evidence |
+|---|---|---|
+| RCA Rule Zero applied | PASS | Define (D.1), Trace (D.2), Isolate (D.1 root cause), Fix (D.4-D.6), Verify (D.8). |
+| 4.0/5 decision gate respected | PASS | D.3 score = 4.4/5. |
+| E11 scope boundary clear | PASS | E11 is contrapositive K-side registration, not physical non-interaction as measurement. |
+| E14 scope boundary clear | PASS | E14 is validated absence under conditions, not absolute non-existence. |
+| E17 R2 not promoted | PASS | D.5 and D.6 keep channel-self-registration deferred. |
+| EX compass-only respected | PASS | Zero EX nodes, edges, or bridges imported. |
+| "Extend, not overwrite" respected | PASS | Appendix D adds boundary notes without modifying Sections 0-5 or Appendices A-C. |
+| Neutral wording preserved | PASS | Uses "scope boundary" and "registration-layer" language; no negative evaluation of Standard QM. |
+
+---
+
+**Appendix D end. Appendices A-D together now cover: (A) 6-dimension extensibility audit + roadmap, (B) E18 G6 EX recoverability chain, (C) G7 authorization analysis + Full G7 execution, and (D) E11/E14 boundary notes with a 4.0/5 gate.**
+
