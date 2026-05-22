@@ -4,6 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 > **Snapshot date:** 2026-05-20T14:22:00+07:00
 > **Partial re-snapshot:** 2026-05-21T19:57:00+07:00 — `edge_QM_VVV.md` updated (115→131 edges; +16 Phase 4 cross-category edges from commit `73103df`). Phase 1 + Phase 2 rebuilt as v1.8.
+> **Partial re-snapshot:** 2026-05-22 — `node_QM_VVV.md` updated (55→58 active VVV-QMRF nodes; +E18 `N_QM_VVV_00056`/`00057`, +T6 `N_QM_VVV_00059`; `00058` deferred by RCA gate).
 > **Purpose:** Read-only copies of all input files required by VVV-QMRF-EX plan.
 > **Rule:** VVV-QMRF-EX reads ONLY from this snapshot. Originals are 🔒 FROZEN (Isolation Protocol Rule I-1).
 > **Warning:** These are POINT-IN-TIME copies. If originals are updated, re-snapshot is required.
@@ -29,7 +30,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | File | Original path | Size | Content |
 |---|---|---|---|
-| `node_QM_VVV.md` | `vvv-qmrf/node_QM_VVV.md` | 116.1 KB | 55 VVV-QMRF nodes |
+| `node_QM_VVV.md` | `vvv-qmrf/node_QM_VVV.md` | 121.2 KB | 58 active VVV-QMRF nodes (`00058` deferred) |
 | `edge_QM_VVV.md` | `vvv-qmrf/edge_QM_VVV.md` | 22.1 KB | 115 edges (Phase 1/2/3) |
 | `bridge_QM_standard_to_VVV_QMRF.md` | `vvv-qmrf/bridge_QM_standard_to_VVV_QMRF.md` | 15.9 KB | 15 BR_XXXXX bridges (v0.1) |
 | `schema_guide.md` | `vvv-qmrf/schema_guide.md` | 44.3 KB | Document schema definition |

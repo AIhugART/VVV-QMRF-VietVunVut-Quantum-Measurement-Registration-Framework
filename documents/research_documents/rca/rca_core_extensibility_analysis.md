@@ -879,3 +879,55 @@ The verdict matrix is preserved in shape; Dimension 2 now has one frozen candida
 
 **Appendix D end. Appendices A-D together now cover: (A) 6-dimension extensibility audit + roadmap, (B) E18 G6 EX recoverability chain, (C) G7 authorization analysis + Full G7 execution, and (D) E11/E14 boundary notes with a 4.0/5 gate.**
 
+---
+
+# Appendix E — Node Registry Sync After E18/T6 RCA (2026-05-22)
+
+> **Scope:** VVV-QMRF node registry and VVV-QMRF-EX source snapshot; VVV-QMRF-EX as compass only, no edge import.
+>
+> **Trigger:** After E18 promotion and K-Space v2.1 T6, the core node table still ended at `N_QM_VVV_00055`. User requested RCA-based selection, related-file updates, EX source snapshot sync, and commit.
+>
+> **Extend, not overwrite:** Sections 0-5 and Appendices A-D remain authoritative. Appendix E records the downstream registry-sync decision and execution only.
+
+## E.1 — Define: Symptom vs Cause
+
+**Symptom:** `documents/research_documents/vvv-qmrf/node_QM_VVV.md` did not yet contain active nodes for E18's generalized delayed-choice registration boundary or T6's decoherence-induced registration update.
+
+**Cause:** The node table was originally category-derived from E1-E16 category files, while E18 and T6 were later framework/meta-architecture developments.
+
+**Root cause isolated:** The gap is a registry-sync gap between post-E16 framework/meta-architecture developments and the VVV-QMRF node registry, not a need to import EX edges or promote all meta-architecture theorems into nodes.
+
+## E.2 — Three RCA Rounds and Decision Gate
+
+| Round | Candidate object | Score | Decision | RCA result |
+|---|---|---:|---|---|
+| R1 | E18 node insertion (`N_QM_VVV_00056`, `N_QM_VVV_00057`) | **4.55/5** | PASS | E18 is frozen; `N_QM_VVV_00024` is only the narrower delayed-choice erasure case. |
+| R2 | T5/T7 node insertion (`N_QM_VVV_00058`, `N_QM_VVV_00060`) | 3.60/5 and 3.80/5 | FAIL/HOLD | Theorem-layer objects remain conditional on T4-H/Level 4 and should not be forced into the node table now. |
+| R3 | T6 node insertion (`N_QM_VVV_00059`) | **4.20/5** | PASS | T6 names a real K-side registration-update pattern while preserving Standard QM decoherence. |
+
+**Decision:** Add `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059`; defer `N_QM_VVV_00058` and `N_QM_VVV_00060`; do not add AJVS, T4-H, or E17 as active node-table entries.
+
+## E.3 — Executed File Updates
+
+| File | Update |
+|---|---|
+| `documents/research_documents/vvv-qmrf/node_QM_VVV.md` | Added RCA summary paragraphs, three active nodes (`00056`, `00057`, `00059`), five internal relations, and a note deferring `00058`. |
+| `documents/research_documents/vvv-qmrf-ex/source_snapshot/vvv_qmrf_core/node_QM_VVV.md` | Synced from the updated core node table so VVV-QMRF-EX reads the current point-in-time source. |
+| `documents/research_documents/vvv-qmrf-ex/source_snapshot/SNAPSHOT_MANIFEST.md` | Updated partial re-snapshot note and node inventory from 55 to 58 active VVV-QMRF nodes, with `00058` explicitly deferred. |
+
+## E.4 — Verify / Kiểm chứng
+
+| Check | Result | Evidence |
+|---|---|---|
+| RCA Rule Zero applied | PASS | Define (E.1), Trace/score (E.2), Fix (E.3), Verify (E.4). |
+| 4.0/5 gate respected | PASS | R1 and R3 pass; R2 fails and is deferred. |
+| No duplicate overwrite | PASS | `N_QM_VVV_00056` generalizes `00024`; `00024` remains the narrow erasure-boundary node. |
+| EX compass-only respected | PASS | Source snapshot synced; no EX edge/weight imported into core. |
+| Standard QM boundary preserved | PASS | New nodes are K-side registration categories, not Born-rule, collapse, or decoherence-law modifications. |
+| Snapshot consistency | PASS | Core node table and EX source snapshot now share the same updated content. |
+
+---
+
+**Appendix E end. Appendices A-E together now cover: (A) 6-dimension extensibility audit + roadmap, (B) E18 G6 EX recoverability chain, (C) G7 authorization + Full G7 execution, (D) E11/E14 boundary notes, and (E) node registry/source-snapshot sync after E18/T6 RCA.**
+
+
