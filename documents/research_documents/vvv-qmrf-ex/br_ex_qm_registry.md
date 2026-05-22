@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_QM Registry — ρ-side Bridge: VVV-QMRF ↔ QM
 
-**Version:** 1.0 (Phase 4)
-**Date:** 2026-05-20
-**Total Entries:** 74 (73 reference-copy + 1 new similarity candidates)
-**Namespace:** BR_EX_QM_00001–BR_EX_QM_00074
+**Version:** 1.1 (Phase 4 + C2 current-Core draft rho-side candidates)
+**Date:** 2026-05-22
+**Total Entries:** 74 active (73 reference-copy + 1 new similarity candidate) + 3 draft-only C2 candidates
+**Namespace:** BR_EX_QM_00001–BR_EX_QM_00074 active; BR_EX_QM_DRAFT_00075–BR_EX_QM_DRAFT_00077 draft-only
 
 ---
 
@@ -1504,5 +1504,74 @@ This registry maps VVV-QMRF nodes to Quantum Measurement (QM) nodes on the ρ-si
 | **Boundary Note** | Similarity-based only (cosine ≥ 0.50); not verified against QM formalism. N_QM_VVV_00051 already anchored to N_QM_00042 (Quantum Jump Operator) — this adds secondary ρ-side substrate. |
 | **Rationale** | QM concept identified as potential physical substrate via Phase 3 cosine similarity — Continuous Measurement quantum jump formalism provides secondary ρ-side grounding for VVV temporal discontinuity concept (all-mpnet-base-v2, dim=768) |
 | **Origin** | Phase 3 similarity (Tier2) — F12 RCA fix (was ghost entry with empty fields) |
+
+---
+
+## C2 Current-Core Draft Rho-Side Candidates (Planning Execution, 2026-05-22)
+
+> **Status boundary:** These entries are draft-only candidate rows for the current 55-node Core snapshot. They do not count as active `BR_EX_QM` coverage, do not change the 74 active-entry baseline, and must pass a later boundary audit before any active registry promotion.
+
+### BR_EX_QM_DRAFT_00075 — C2 Draft Candidate
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_DRAFT_00075` |
+| **Type** | draft_c2_rho_candidate |
+| **Source Edge Type** | `CURRENT_CORE_NODE_ALIGNED_DRAFT` |
+| **VVV Node** | `N_QM_VVV_00056` |
+| **VVV Concept** | Delayed-Choice Registration Boundary / Context-Conditioned Registration Window Locking |
+| **QM Node** | `N_QM_00102` |
+| **QM Concept** | Measurement Reversal |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00056 -> N_QM_00102 |
+| **Relation Type** | physical_substrate_for OR registration_layer_extension_of (pending audit) |
+| **Claim Class** | interpretive_mapping_draft |
+| **Confidence** | draft-only; boundary-audited 4.4/5 |
+| **Audit Status** | `AUDIT-PASS-DRAFT` (C2 boundary audit; not active coverage) |
+| **Boundary Note** | Delayed-choice registration boundary is a K-side window-locking rule, not retrocausal physical reversal and not a modification of Standard QM. |
+| **Rationale** | Current-Core node `N_QM_VVV_00056` generalizes the older delayed-choice erasure boundary; `N_QM_VVV_00024` already uses `N_QM_00102` as rho-side substrate, making `N_QM_00102` the first audit candidate. |
+| **Origin** | C2 current-Core node-aligned planning; not active coverage |
+
+### BR_EX_QM_DRAFT_00076 — C2 Draft Candidate
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_DRAFT_00076` |
+| **Type** | draft_c2_rho_candidate |
+| **Source Edge Type** | `CURRENT_CORE_NODE_ALIGNED_DRAFT` |
+| **VVV Node** | `N_QM_VVV_00057` |
+| **VVV Concept** | Sorting-Conditioned Registration Subset / Coincidence-Sorted Valid Window |
+| **QM Node** | `N_QM_00029` primary; `N_QM_00051` secondary; `N_QM_00033` retained support |
+| **QM Concept** | Weak Value (post-selection structure) + Composite Observables (paired-record comparison) + No-Result Measurement (null/no-click support) |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00057 -> N_QM_00029 / N_QM_00051 / N_QM_00033 |
+| **Relation Type** | post_selection_and_coincidence_support_for (refined draft; pending promotion audit) |
+| **Claim Class** | interpretive_mapping_draft |
+| **Confidence** | draft-only; anchor-refined 4.3/5 |
+| **Audit Status** | `AUDIT-PASS-DRAFT-REFINED` (C2 anchor refinement; not active coverage) |
+| **Boundary Note** | Sorting/coincidence is a condition for valid registration subset, not a new Standard QM law or a physical replacement for post-selection practice. |
+| **Rationale** | Current-Core node `N_QM_VVV_00057` refines E18 where raw detection records must be partitioned into the valid prior registration window. RCA anchor refinement keeps `N_QM_00033` as null/no-result support but adds `N_QM_00029` as the primary post-selection anchor and `N_QM_00051` as paired-record/composite-comparison support for coincidence-style sorting. |
+| **Origin** | C2 current-Core node-aligned planning; not active coverage |
+
+### BR_EX_QM_DRAFT_00077 — C2 Draft Candidate
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_DRAFT_00077` |
+| **Type** | draft_c2_rho_candidate |
+| **Source Edge Type** | `CURRENT_CORE_NODE_ALIGNED_DRAFT` |
+| **VVV Node** | `N_QM_VVV_00059` |
+| **VVV Concept** | Decoherence-Induced Registration Update |
+| **QM Node** | `N_QM_00095` |
+| **QM Concept** | Decoherence & Environment as Measurement |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00059 -> N_QM_00095 |
+| **Relation Type** | registration_layer_extension_of |
+| **Claim Class** | interpretive_mapping_draft |
+| **Confidence** | draft-only; boundary-audited 4.6/5 |
+| **Audit Status** | `AUDIT-PASS-DRAFT` (C2 boundary audit; not active coverage) |
+| **Boundary Note** | Decoherence remains Standard QM support; VVV-QMRF adds only registration-state update semantics and does not replace decoherence physics. |
+| **Rationale** | Current-Core node `N_QM_VVV_00059` explicitly names a registration-update category induced by decoherence support; `N_QM_00095` is therefore the first rho-side audit candidate. |
+| **Origin** | C2 current-Core node-aligned planning; not active coverage |
 
 

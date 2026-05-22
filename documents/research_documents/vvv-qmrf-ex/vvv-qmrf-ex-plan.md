@@ -19,6 +19,16 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 >
 > **Changelog v1.5 → v1.6 (2026-05-20) — PROPOSED, AWAITING EXECUTION:** Added Section 14 — Stretch Expansion Plan covering Phases 7–10 with the goal of lifting raw dual-anchored from 48.1% (25/52) toward Stretch Tier 1 (≥50%, ≥26 nodes) and Stretch Tier 2 (≥80%, ≥42 nodes) by promoting up to 23 KE-OF + KE-SC nodes to direct BR_EX_BE entries (range `BR_EX_BE_00047`–`BR_EX_BE_00069`). **Decision parameters (user-confirmed 2026-05-20):** Q1=batch-approve per category; Q2=split threshold (KE-OF strict 4.5/5, KE-SC relaxed 3.5/5 due to parent inheritance support); Q3=split output files (`phase7_ke_of_rca_log.md` and `phase7_ke_sc_rca_log.md`). 3-round rejection protocol on all RCA gates. Audit closure for F-RCA-05/07/08/09/10/11. Full re-run of Phases 1–6 into immutable `_v1.6.json` snapshots (no overwrite of v1.5 files).
 >
+> **Changelog C2 hybrid gate plan (2026-05-22):** Added §25 selecting gate `C2` as the next planning-only step: prepare rho-side BR_EX_QM candidate rows for the three current-Core nodes and plan K-side gap annotations as `K-PENDING-RCA`, without activating coverage, mutating registries, or changing historical `/52` metrics.
+>
+> **Changelog current-Core hybrid execution plan (2026-05-22):** Added §24 selecting RCA Option C (Hybrid) as the next safe execution path for current-Core nodes. The plan separates likely rho-side bridge proposals from K-side RCA-pending decisions to avoid BE-QM overclaim; no registry, gap-list, or data artifact is mutated by this planning step.
+>
+> **Changelog current-Core new-node RCA triage (2026-05-22):** Added §23 as planning-only RCA triage for `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059`. Existing EX registries and gap lists remain 52-node baseline artifacts; the three current-Core nodes are classified as triaged-but-not-covered until a separate execution decision creates bridge rows, gap entries, or structural exceptions.
+>
+> **Changelog current-Core node-aligned re-run plan (2026-05-22):** Added §22 as the RCA execution plan for a future EX re-run against the current 55-node Core snapshot. This is planning-only: no `data/*.json`, registry, or exception-list artifact is mutated. The plan requires a new suffix such as `_v1.8_node_aligned`, recomputes denominators from the active VVV node list, and treats `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059` as current-Core inputs requiring coverage or approved structural exceptions before any new raw dual-anchored metric is claimed.
+>
+> **Changelog current-Core node snapshot alignment (2026-05-22):** RCA re-check against `source_snapshot/vvv_qmrf_core/node_QM_VVV.md` records current Core node-count drift from the frozen 52-node EX baseline to **55 active VVV node rows** (codes through `N_QM_VVV_00059`, with `N_QM_VVV_00058` deferred). New Core-current nodes: `N_QM_VVV_00056` Delayed-Choice Registration Boundary, `N_QM_VVV_00057` Sorting-Conditioned Registration Subset, and `N_QM_VVV_00059` Decoherence-Induced Registration Update. No immutable EX baseline or metric is mutated; any publication-facing EX re-run must use a new suffix such as `_v1.8` and label the run as current-Core-node-aligned.
+
 > **Changelog v1.7 EXECUTED → v1.8 FINALIZED (2026-05-21):** Phase 12 targeted K-gap RCA finalized the six K-side-only gap review. `BR_EX_BE_00065` (`N_BE_00179 -> N_QM_VVV_00022`) was reactivated only after narrowing the claim class to `source_analogue_for_internal_representational_form`; physical detector storage, apparatus memory, and engineering-level encoding equivalence remain excluded. Result: graph 180 -> 181 edges; active registry set 140 -> 141; raw dual-anchored 45/52 (86.5%) -> **46/52 (88.5%)**; K-side gaps 7 -> 6; `BR_EX_BE_00061` and `BR_EX_BE_00066` remain reclassified exceptions.
 
 > **Changelog v1.6 EXECUTED -> v1.7 EXECUTED (2026-05-21):** Phase 11 KE-SC threshold tightening to align rigor with KE-OF. Single new RCA finding **F-RCA-15** — Phase 7 §14.2 Q2 threshold (KE-SC=3.5/5) was a pragmatic floor; publication-ready rigor requires near-symmetric thresholds with KE-OF (4.5/5). Fix: raise KE-SC threshold to **4.0/5 with 1 carve-out at 3.8** (boundary-guard-justified). 3 KE-SC entries reclassified from KE-RESOLVED-STRETCH back to KE-SC exception: `BR_EX_BE_00061` (`N_QM_VVV_00008`, 3.7), `BR_EX_BE_00065` (`N_QM_VVV_00022`, 3.8), `BR_EX_BE_00066` (`N_QM_VVV_00024`, 3.7). Namespace gaps preserved (no renumber to keep v1.5/v1.6 hash invariants). Result: 143 -> 140 entries; graph 183 -> 180 edges; raw dual-anchored 92.3% -> **86.5%** (Tier 1+2 still PASS with 6.5pt margin). See §15 for full v1.7 spec; commit chain: `9525eb8` (v1.5-final) -> `d8ec025` (v1.6 Phase 9) -> `c1b3168` (v1.6 Phase 10) -> v1.7 commit (this batch).
@@ -1027,6 +1037,493 @@ Verification confirms the visible discrepancy is caused by live Core input drift
 - §17 already records the Core Phase 4 impact; this §20 completes the RCA by attaching concrete Phase 1/2 re-run numbers and the F-RCA-16 boundary rule.
 
 **Forward rule:** Any future publication-facing EX re-run after Core changes should use a new suffix such as `_v1.8` and explicitly label it as `current-core-post-phase4`, rather than comparing it directly against v1.7 frozen metrics.
+
+---
+
+## 21. Core Node Snapshot Alignment Against Current Source Snapshot (2026-05-22)
+
+**Trigger:** User requested RCA-based alignment of this EX plan against the updated Core snapshot `source_snapshot/vvv_qmrf_core/node_QM_VVV.md` after Core-side node expansion added current-node rows beyond the frozen 52-node EX baseline.
+
+### 21.1 Define — Symptom vs Cause
+
+**Symptom:** Earlier EX sections still describe the VVV-QMRF Core input as 52 nodes with codes spanning `N_QM_VVV_00001` through `N_QM_VVV_00055` and folded gaps at `00017`, `00019`, and `00026`. The current source snapshot now contains 55 active VVV node rows and codes through `N_QM_VVV_00059`.
+
+**Cause:** The EX v1.5/v1.6/v1.7/v1.8 metrics were computed against a frozen 52-node baseline. The current Core snapshot was extended later with new Core-current nodes, so the source snapshot now represents a newer Core input state than the immutable EX baseline evidence.
+
+### 21.2 Trace — 5 Whys
+
+1. Why does the plan still say 52 VVV nodes? -> The frozen EX graph baseline used 52 VVV node rows.
+2. Why does the current snapshot show 55 rows? -> Core added `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059` after the frozen EX baseline.
+3. Why is `N_QM_VVV_00058` not counted as active? -> The snapshot records candidate `00058` as deferred because the RCA gate scored it below the immediate node-insertion threshold.
+4. Why not update all old 52-node claims to 55? -> Many old claims are historical baseline claims tied to immutable data snapshots and must not be retroactively rewritten.
+5. **Root cause F-RCA-17:** The plan had a clear rule for Core-edge drift (§17, §20) but lacked the parallel rule for **Core-node drift** when the source snapshot gains new node rows after EX finalization.
+
+### 21.3 Isolate — Starting Point of Failure
+
+The boundary issue starts at the input-contract layer: EX documentation uses `node_QM_VVV.md` both as (a) historical baseline input for frozen metrics and (b) current Core source snapshot for future diagnostics. Without an explicit label, readers may treat the current 55-node snapshot as if the old 46/52 or 45/52 metrics had already been recomputed over 55 nodes.
+
+### 21.4 Fix — Current Node State Recorded, Baselines Preserved
+
+**Current Core node snapshot result:**
+
+| Metric | Frozen EX baseline | Current source snapshot | Boundary interpretation |
+|---|---:|---:|---|
+| Active VVV node rows | 52 | 55 | Current Core has grown by 3 active rows |
+| Highest active VVV code | `N_QM_VVV_00055` | `N_QM_VVV_00059` | Code span changed; count is not max-code-derived |
+| Folded / deferred codes | `00017`, `00019`, `00026` | `00017`, `00019`, `00026`, `00058` deferred | `00058` is deferred, not active |
+| New current-Core nodes | none in baseline | `00056`, `00057`, `00059` | Core-current additions, not EX registry imports |
+| Immutable EX metrics | 45/52, 46/52 depending phase | not recomputed | Must not be silently converted to /55 |
+
+**New Core-current nodes recorded by the snapshot:**
+
+| Node | Concept | RCA boundary |
+|---|---|---|
+| `N_QM_VVV_00056` | Delayed-Choice Registration Boundary / Context-Conditioned Registration Window Locking | Generalizes `N_QM_VVV_00024`; no retrocausal physical claim |
+| `N_QM_VVV_00057` | Sorting-Conditioned Registration Subset / Coincidence-Sorted Valid Window | Refines E18 where raw detection records need sorting/coincidence partitioning |
+| `N_QM_VVV_00059` | Decoherence-Induced Registration Update | K-side registration-state update category derived from K-Space T6; does not replace Standard QM decoherence |
+
+### 21.5 Verify — Root Cause Removed
+
+- The plan now explicitly separates frozen EX baseline metrics from the current Core node snapshot.
+- The 52-node historical claims remain valid where they describe v1.5/v1.6/v1.7/v1.8 immutable runs.
+- The current source snapshot is recorded as 55 active rows without pretending that EX metrics have been recomputed.
+- No `data/*.json`, registry, or exception-list file is mutated by this alignment step.
+
+**Forward rule:** Any future publication-facing EX re-run using the 55-node Core snapshot must write to a new suffix such as `_v1.8` or later and label the run as `current-core-node-aligned`. The denominator for raw dual-anchored metrics must then be recomputed from the active VVV node list rather than inherited from the frozen 52-node baseline.
+
+---
+
+## 22. Current-Core Node-Aligned EX Re-run Plan (Planning-Only, 2026-05-22)
+
+**Trigger:** User decided to proceed by RCA after §21 recorded Core node-count drift. This section converts the boundary note into a concrete EX-scope re-run plan without executing scripts or mutating immutable baseline artifacts.
+
+### 22.1 Define — Re-run Problem Statement
+
+**Symptom:** §21 correctly records the current Core snapshot as 55 active VVV node rows, but the executable EX workflow still has historical expectations, metrics, and denominators rooted in the frozen 52-node baseline.
+
+**Cause:** EX was finalized before Core added `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059`. The plan has not yet defined how to recompute EX coverage, gaps, and raw dual-anchored metrics when the active VVV node denominator changes from 52 to 55.
+
+**Goal:** Define a future EX re-run protocol that uses the current 55-node Core snapshot while preserving all v1.5/v1.6/v1.7/v1.8 immutable evidence.
+
+### 22.2 Trace — 5 Whys
+
+1. Why is a re-run plan needed? -> A boundary note alone does not define how future scripts, reports, and metrics should handle the 55-node denominator.
+2. Why does the denominator matter? -> Raw dual-anchored percentages are node-count dependent; `46/52` cannot be compared directly to a future `/55` metric.
+3. Why not simply inherit coverage for the new nodes? -> New Core nodes need explicit K-side and rho-side classification, not assumed coverage from parent concepts.
+4. Why not overwrite old reports? -> F-RCA-01 makes completed phase JSONs immutable; overwriting would destroy historical evidence.
+5. **Root cause F-RCA-18:** EX lacks a current-Core-node-aligned execution protocol that converts Core node drift into a safe, suffix-isolated re-run with refreshed denominator, coverage checks, and boundary audit.
+
+### 22.3 Isolate — Execution Boundary
+
+The re-run boundary is limited to `documents/research_documents/vvv-qmrf-ex/`. Core source files and source snapshots are read-only inputs for EX. A current-Core-node-aligned EX run may create new suffixed outputs, but it must not edit Core files, mutate old immutable JSON files, or silently reinterpret historical `/52` results.
+
+### 22.4 Phase 13 — Current-Core Node-Aligned Re-run Protocol
+
+| Step | Action | Input | Output | Verification |
+|---|---|---|---|---|
+| 13.1 | Extract active VVV node list from current Core snapshot | `source_snapshot/vvv_qmrf_core/node_QM_VVV.md` | Active list of 55 nodes; deferred list containing `N_QM_VVV_00058` | Count = 55 active; `00058` excluded |
+| 13.2 | Define run suffix | User-approved suffix, recommended `_v1.8_node_aligned` | Suffix contract for every new output | No unsuffixed or old-suffix overwrite |
+| 13.3 | Patch parser expectations only if needed | Phase scripts + active node list | Parser accepts 55 active nodes | Existing `_v1.5`, `_v1.6`, `_v1.7` outputs unchanged |
+| 13.4 | Classify new-node K-side coverage | `N_QM_VVV_00056`, `00057`, `00059`; BE SOT; existing BR_EX_BE registry | Direct BR_EX_BE candidate, inherited parent rationale, or approved K-gap exception | No K-side coverage assumed without RCA |
+| 13.5 | Classify new-node rho-side coverage | New nodes; QM SOT; existing BR_EX_QM registry | Direct BR_EX_QM candidate, inherited substrate rationale, or approved rho-gap exception | No rho-side coverage assumed without RCA |
+| 13.6 | Re-run graph/intersection scripts with suffix | Current Core snapshot + existing EX registries | `data/*_v1.8_node_aligned.json` and derived images/reports | Node denominator = 55; direct BE -> QM edges = 0 |
+| 13.7 | Re-run boundary audit on active entries | All active BR_EX entries after any approved additions | `phase8_boundary_audit_report_v1.8_node_aligned.json` | Violations = 0 before PASS |
+| 13.8 | Doc synchronization | New suffixed JSON reports + audit | Plan/intersection/gaps/context docs updated with current-Core-node-aligned labels | Frozen `/52` metrics preserved as historical |
+
+### 22.5 New-Node Triage Targets
+
+| Node | Initial EX triage question | Likely first classification path | Boundary guard |
+|---|---|---|---|
+| `N_QM_VVV_00056` | Does delayed-choice registration boundary require direct BE analogue, or is it a Core-current boundary extension of `N_QM_VVV_00024`? | K-side RCA required; rho-side likely through delayed-choice / measurement-reversal substrate | No retrocausal physical claim |
+| `N_QM_VVV_00057` | Is sorting/coincidence selection a new mediator or a refinement under `N_QM_VVV_00056`? | K-side RCA required; rho-side likely through post-selection / no-result / coincidence-sorting support | Sorting relation is a registration condition, not a new QM law |
+| `N_QM_VVV_00059` | Does decoherence-induced registration update need a new BE bridge or remain a K-Space theorem-derived update category? | rho-side likely anchored to decoherence; K-side RCA required via K5 invalidation / K-state update logic | Decoherence remains Standard QM support, not replaced by VVV-QMRF |
+
+### 22.6 Success Criteria for a Future Re-run
+
+| Criterion | Target | Measurement |
+|---|---|---|
+| Denominator correctness | 55 active VVV nodes | Active-node extraction report |
+| Deferred-node handling | `N_QM_VVV_00058` excluded from denominator | Deferred list recorded |
+| New-node coverage | Each of `00056`, `00057`, `00059` has direct coverage OR approved structural exception on both K-side and rho-side | Updated gap reports / registries |
+| Metric honesty | No `/52` metric is rewritten as `/55`; new raw metric reports its own numerator/55 | Suffixed intersection report |
+| Boundary compliance | 0 overclaim violations | Boundary audit report |
+| Immutability | No old v1.5/v1.6/v1.7/v1.8 JSON output changed | Git diff check on historical data files |
+
+### 22.7 Risks and Mitigations
+
+| Risk | Severity | Mitigation |
+|---|---|---|
+| Raw percentage drops when denominator changes from 52 to 55 | High | Report honestly; do not compare directly without denominator note |
+| New nodes inherit coverage too quickly from parent nodes | High | Require per-node RCA classification before coverage claim |
+| New suffix conflicts with already finalized v1.8 language | Medium | Use explicit suffix `_v1.8_node_aligned` or later, not plain `_v1.8` if ambiguity remains |
+| Script re-run overwrites unsuffixed reports | Medium | Enforce suffix contract before execution |
+| BE-QM identity overclaim appears during new bridge creation | Medium | Boundary audit C1-C7 remains mandatory |
+
+### 22.8 Decision Gate
+
+This section is a plan, not execution. Proceed to script/data re-run only after a separate user decision that explicitly approves the current-Core-node-aligned EX execution suffix and whether new BR_EX entries may be proposed or only gap-classified.
+
+---
+
+## 23. Current-Core New-Node RCA Triage Results (Planning-Only, 2026-05-22)
+
+**Trigger:** User approved RCA triage for the three Core-current nodes introduced after the frozen 52-node EX baseline: `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059`.
+
+### 23.1 Define — Triage Problem
+
+**Symptom:** §22 defines how a future 55-node re-run should proceed, but the three new Core-current nodes do not yet have EX-side coverage decisions in the current registries or gap exception lists.
+
+**Cause:** Existing EX registries and exception lists were built for the 52-node baseline. They include `N_QM_VVV_00024` recovery via the E18 valid-sign bridge package, but they do not contain current-Core rows for `00056`, `00057`, or `00059`.
+
+**Goal:** Classify each new node as a candidate for direct bridge coverage, inherited/refinement coverage, or structural exception before any `/55` raw dual-anchored metric is claimed.
+
+### 23.2 Trace — 5 Whys
+
+1. Why are the three nodes unresolved in EX? -> They were added to Core after the frozen EX baseline.
+2. Why not count them as covered automatically? -> Coverage must be per-node; F5/F15 require direct bridge or approved exception.
+3. Why not inherit directly from `N_QM_VVV_00024` or `N_QM_VVV_00013`? -> Inheritance can guide RCA but cannot replace a node-specific boundary decision.
+4. Why not create BR_EX entries immediately? -> Bridge creation requires separate registry edits, source evidence, boundary fields, and audit.
+5. **Root cause F-RCA-19:** The 55-node current-Core state requires a new-node triage layer between §22 planning and any future registry/script execution.
+
+### 23.3 Isolate — Registry and Exception Coverage Check
+
+Current EX coverage sources show:
+
+- `br_ex_be_registry.md` contains active E18 Path C valid-sign support for `N_QM_VVV_00024` via `BR_EX_BE_00070`-`BR_EX_BE_00072`, but no direct rows for `N_QM_VVV_00056`, `00057`, or `00059`.
+- `br_ex_qm_registry.md` contains `N_QM_VVV_00024 -> N_QM_00102` and decoherence support for existing nodes such as `N_QM_VVV_00013 -> N_QM_00095`, but no direct rows for `00056`, `00057`, or `00059`.
+- `k_gap_exception_list.md` and `rho_gap_exception_list.md` remain 52-node baseline artifacts and do not yet classify the three current-Core nodes.
+
+### 23.4 RCA Triage Table
+
+| Node | K-side triage | rho-side triage | Planning-only decision | Boundary guard |
+|---|---|---|---|---|
+| `N_QM_VVV_00056` | Candidate for inherited/refinement K-side support from E18 Path C valid-sign package for `N_QM_VVV_00024`; requires node-specific RCA because it generalizes the older delayed-choice erasure boundary | Candidate direct rho-side support through `N_QM_00102` Measurement Reversal and delayed-choice/erasure substrate already used by `00024`; direct BR_EX_QM still not yet registered | **PENDING-BRIDGE-PACKAGE** — likely recoverable, but must not be counted covered until explicit BR_EX rows or exception entry exist | Context-conditioned registration window is a K-side locking rule, not retrocausal physics |
+| `N_QM_VVV_00057` | Candidate K-side support through valid-sign relation constraints (`anumana`, `vyapti`, `svabhavapratibandha`) because sorting/coincidence acts as a condition for valid branch registration | Candidate rho-side support through post-selection, coincidence sorting, no-result / null-measurement support; direct QM anchor must be selected before registry insertion | **PENDING-SUBNODE-OR-BRIDGE** — may be a refinement under `00056`, but denominator handling still requires direct coverage or approved exception | Sorting/coincidence relation is a registration condition, not a new Standard QM law |
+| `N_QM_VVV_00059` | Candidate K-side support through K5 invalidation / K-state update logic; BE analogue not yet established and must not be assumed from decoherence alone | Strong rho-side candidate through `N_QM_00095` Decoherence & Environment as Measurement; possible relation to existing `N_QM_VVV_00013` certification support | **PENDING-K-SIDE-RCA** — rho-side likely direct; K-side requires separate RCA or structural exception | Decoherence remains Standard QM support; VVV adds only registration-state update semantics |
+
+### 23.5 Resulting Coverage Status for Future `/55` Run
+
+| Status item | Count | Interpretation |
+|---|---:|---|
+| Frozen baseline active nodes | 52 | Historical denominator for v1.5-v1.8 metrics |
+| Current-Core additional active nodes | 3 | `00056`, `00057`, `00059` |
+| New nodes currently direct-covered in EX registries | 0/3 | No `/55` numerator may be claimed yet |
+| New nodes with likely rho-side path | 3/3 | All require explicit BR_EX_QM or exception action before execution claim |
+| New nodes with K-side path requiring RCA | 3/3 | No K-side auto-inheritance permitted |
+| Current planning denominator | 55 | For future execution only; historical `/52` metrics remain unchanged |
+
+### 23.6 Next Execution Options
+
+| Option | Action | When to choose |
+|---|---|---|
+| A — Gap-only classification | Add the three nodes to current-Core gap status without creating bridges | Best if user wants a conservative diagnostic run first |
+| B — Bridge-package proposal | Draft BR_EX_BE / BR_EX_QM rows for the three nodes, then audit | Best if user wants a publication-facing `/55` re-run |
+| C — Hybrid | Directly bridge rho-side where obvious, keep K-side as RCA-pending or structural exception | Best if user wants denominator-correct metrics without overclaiming K-side analogues |
+
+### 23.7 Verification Rule
+
+Until Option A, B, or C is explicitly approved and executed, the plan must report the new nodes as **triaged but not covered**. The frozen `46/52 = 88.5%` result remains a historical EX baseline metric, not a current 55-node metric.
+
+---
+
+## 24. Hybrid Execution Plan for Current-Core Nodes (Option C, Planning-Only, 2026-05-22)
+
+**Decision:** RCA selects **Option C — Hybrid** as the safest next execution path. The hybrid route allows rho-side candidates to be prepared where the QM substrate is structurally clear, while keeping K-side Buddhist-epistemology analogues under separate RCA until source-analogue strength is proven.
+
+### 24.1 RCA Rationale
+
+**Symptom:** §23 leaves all three new current-Core nodes triaged but not covered, so a future `/55` run still has no defensible numerator update.
+
+**Cause:** The nodes have asymmetric evidence: rho-side anchors are more visible from QM substrate relations, while K-side BE analogues require more careful source-level RCA.
+
+**5 Whys:**
+
+1. Why not use gap-only? -> It is safe but does not prepare denominator-correct EX execution.
+2. Why not full bridge-package? -> It risks overclaiming K-side BE analogues before RCA isolates source necessity.
+3. Why is rho-side easier? -> `00056` and `00057` extend delayed-choice/sorting measurement contexts; `00059` explicitly names decoherence-induced update.
+4. Why is K-side harder? -> BE source analogues must be grounded in `system_be_full.md`, not inferred from Core wording alone.
+5. **Root cause F-RCA-20:** Current-Core nodes require asymmetric handling: rho-side can be staged as candidate bridge proposals sooner, while K-side must remain RCA-pending or structurally excepted until direct source support is isolated.
+
+### 24.2 Hybrid Work Plan
+
+| Step | Action | Output | Boundary |
+|---|---|---|---|
+| 24.1 | Prepare rho-side candidate package for `N_QM_VVV_00056` | Candidate BR_EX_QM row targeting delayed-choice / measurement-reversal substrate, likely `N_QM_00102` pending source check | Candidate only; not active coverage |
+| 24.2 | Prepare rho-side candidate package for `N_QM_VVV_00057` | Candidate BR_EX_QM row targeting post-selection, no-result, or coincidence-sorting support after QM SOT check | Sorting is registration condition, not new QM law |
+| 24.3 | Prepare rho-side candidate package for `N_QM_VVV_00059` | Candidate BR_EX_QM row targeting `N_QM_00095` Decoherence & Environment as Measurement | Decoherence remains Standard QM support |
+| 24.4 | Keep all three K-side statuses RCA-pending | `K-PENDING-RCA` status rows or gap annotations in a future current-Core gap artifact | No BE analogue auto-inheritance |
+| 24.5 | Run boundary pre-audit before any registry insertion | Draft rows checked against C1-C7 controls | Zero BE-QM identity claims |
+| 24.6 | Only after user approval, write registry/gap artifacts | New suffixed or clearly current-Core-labelled artifacts | No mutation of historical 52-node baseline semantics |
+
+### 24.3 Planned Node-Level Outcomes
+
+| Node | rho-side candidate | K-side status | Planned outcome before script re-run |
+|---|---|---|---|
+| `N_QM_VVV_00056` | Delayed-choice / measurement-reversal substrate; `N_QM_00102` is the first candidate because `N_QM_VVV_00024` already uses it | `K-PENDING-RCA` with possible E18 valid-sign package inheritance to be tested, not assumed | Rho candidate prepared; K-side not counted covered |
+| `N_QM_VVV_00057` | Post-selection / coincidence sorting / no-result support; exact QM anchor must be selected from QM SOT | `K-PENDING-RCA` with valid-sign relation candidates to be tested | Rho candidate prepared only after QM anchor selection; K-side not counted covered |
+| `N_QM_VVV_00059` | `N_QM_00095` Decoherence & Environment as Measurement is the first rho-side candidate | `K-PENDING-RCA` through K5 invalidation / K-state update logic; BE analogue not yet proven | Strong rho candidate prepared; K-side not counted covered |
+
+### 24.4 Success Criteria for Option C
+
+| Criterion | Target |
+|---|---|
+| Rho-side candidate readiness | 3/3 nodes have a named candidate or explicit reason for no candidate |
+| K-side caution | 0/3 nodes are counted K-covered without source-level RCA |
+| Metric honesty | No current `/55` raw dual-anchored percentage is claimed in this planning step |
+| Registry safety | No BR_EX row becomes active until boundary-audited and user-approved |
+| Baseline preservation | Historical `46/52 = 88.5%` remains unchanged |
+
+### 24.5 Next Approval Gate
+
+To move from planning to artifact edits, user must explicitly approve one of these follow-up actions:
+
+| Gate | Meaning |
+|---|---|
+| `C1` | Draft rho-side BR_EX_QM candidate rows only; keep K-side pending |
+| `C2` | Draft rho-side rows plus current-Core gap annotations for K-side |
+| `C3` | Begin full K-side RCA candidate search against BE SOT for the three nodes |
+
+Until one gate is approved, §24 remains planning-only and does not change EX coverage counts.
+
+---
+
+## 25. C2 Execution Plan — Rho-Side Candidates + K-Side Gap Annotations (Executed, 2026-05-22)
+
+**Decision:** RCA selected gate **C2** as the safe execution step after §24. C2 has now been executed at artifact level: draft-only rho-side candidates were added to `br_ex_qm_registry.md`, and current-Core K-side pending annotations were added to `k_gap_exception_list.md`. All three new nodes remain outside active coverage counts until later audit/RCA approval.
+
+### 25.1 Define — C2 Problem Statement
+
+**Symptom:** §24 identifies likely rho-side substrates for `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059`, but no concrete gate-level plan yet states which draft rho-side rows and K-side gap annotations should be prepared.
+
+**Cause:** Hybrid execution separated rho-side from K-side, but stopped before assigning node-level candidate anchors and annotation statuses.
+
+**Goal:** Record the approved C2 artifact execution for rho-side draft candidates plus K-side `K-PENDING-RCA` annotations while preserving all frozen EX baseline metrics and avoiding any `data/*.json` mutation.
+
+### 25.2 Trace — 5 Whys
+
+1. Why choose C2 instead of C1? -> C1 prepares rho-side only and leaves K-side denominator status under-described.
+2. Why choose C2 instead of C3? -> C3 begins BE SOT candidate search and risks premature BE analogue claims before rho-side scaffolding is clear.
+3. Why prepare rho-side first? -> The three new nodes have clearer QM substrates than BE analogues.
+4. Why keep K-side pending? -> K-side analogues must be isolated from `system_be_full.md`; parent inheritance is not enough.
+5. **Root cause F-RCA-21:** The next execution artifact needs asymmetric bookkeeping: rho-side draft candidates can be specified now, while K-side must be explicitly annotated as pending RCA to prevent silent coverage inheritance.
+
+### 25.3 Draft Rho-Side Candidate Blueprint
+
+| Planned draft ID | VVV node | Candidate QM anchor | Relation type | Status | Boundary guard |
+|---|---|---|---|---|---|
+| `BR_EX_QM_DRAFT_00075` | `N_QM_VVV_00056` | `N_QM_00102` Measurement Reversal | `physical_substrate_for` or `registration_layer_extension_of` pending audit | `DRAFT-C2-RHO` | Delayed-choice registration boundary is a K-side window-locking rule, not retrocausal physical reversal |
+| `BR_EX_QM_DRAFT_00076` | `N_QM_VVV_00057` | `N_QM_00033` No-Result Measurement as first candidate; post-selection/coincidence anchor remains to be checked against QM SOT | `boundary_input_to` pending audit | `DRAFT-C2-RHO` | Sorting/coincidence is a condition for valid registration subset, not a new QM law |
+| `BR_EX_QM_DRAFT_00077` | `N_QM_VVV_00059` | `N_QM_00095` Decoherence & Environment as Measurement | `registration_layer_extension_of` | `DRAFT-C2-RHO` | Decoherence remains Standard QM support; VVV adds registration-state update semantics only |
+
+### 25.4 Planned K-Side Gap Annotation Blueprint
+
+| Planned annotation | VVV node | K-side status | Required future RCA |
+|---|---|---|---|
+| `K_PENDING_RCA_00056` | `N_QM_VVV_00056` | `K-PENDING-RCA` | Test whether E18 valid-sign package (`N_BE_00003`, `N_BE_00019`, `N_BE_00021`) applies to the generalized node rather than only `N_QM_VVV_00024` |
+| `K_PENDING_RCA_00057` | `N_QM_VVV_00057` | `K-PENDING-RCA` | Test whether sorting/coincidence relation is better mapped to valid-sign structure, relation constraint, or kept as Core-current structural exception |
+| `K_PENDING_RCA_00059` | `N_QM_VVV_00059` | `K-PENDING-RCA` | Test whether K5 invalidation / K-state update has a defensible BE analogue, or should remain a K-Space theorem-derived structural exception |
+
+### 25.5 Artifact Edits Executed Under C2 Approval
+
+| Edit target | Executed change | Boundary preserved |
+|---|---|---|
+| `br_ex_qm_registry.md` | Added draft-only C2 rho-side rows `BR_EX_QM_DRAFT_00075`, `BR_EX_QM_DRAFT_00076`, and `BR_EX_QM_DRAFT_00077` for current-Core nodes `00056`, `00057`, and `00059` | Rows are draft-only, not verified, and not active rho-side coverage |
+| `k_gap_exception_list.md` | Added current-Core-node-aligned `K-PENDING-RCA` annotations `K_PENDING_RCA_00056`, `K_PENDING_RCA_00057`, and `K_PENDING_RCA_00059` | Rows are not `KE-RESOLVED`, not exceptions, and not K-side covered |
+| `rho_gap_exception_list.md` | No edit | Rho exceptions are not added while draft candidates remain viable |
+| `vvv-qmrf-ex-plan.md` | Marked §25 as executed and recorded C2 artifact boundary | Frozen `46/52 = 88.5%` and `47/52 = 90.4%` historical summaries remain unchanged |
+| `data/*.json` | No edit | No report regeneration or immutable data mutation in C2 |
+
+### 25.6 C2 Success Criteria
+
+| Criterion | Target |
+|---|---|
+| Rho candidates specified | 3/3 draft candidates named |
+| K-side caution preserved | 3/3 nodes remain `K-PENDING-RCA` |
+| Coverage honesty | 0/3 new nodes counted as active covered after C2 execution |
+| Boundary clarity | Each draft candidate has a non-overclaim boundary guard |
+| Artifact safety | `br_ex_qm_registry.md` and `k_gap_exception_list.md` updated only with draft/pending C2 records; `rho_gap_exception_list.md` and `data/*.json` unchanged |
+
+### 25.7 Next Gate After C2 Execution
+
+C2 is complete. The next gates remain separate and require explicit approval:
+
+| Gate | Meaning | Status |
+|---|---|---|
+| Boundary audit | Audit `BR_EX_QM_DRAFT_00075`-`00077` before any rho-side activation | Completed 2026-05-22: `00075` and `00077` `AUDIT-PASS-DRAFT`; `00076` anchor-refined to `AUDIT-PASS-DRAFT-REFINED` at 4.3/5; no activation |
+| `C3` | Full K-side RCA against BE SOT for `K_PENDING_RCA_00056`, `K_PENDING_RCA_00057`, and `K_PENDING_RCA_00059` | Completed 2026-05-22: `00056` and `00057` `K-DRAFT-ANCHOR-PASS`; `00059` `K-DRAFT-CAVEATED`; no active `BR_EX_BE`, no `/52` denominator change |
+| `C4` | Formalize C3 pass-level K-side results as draft-only `BR_EX_BE_DRAFT` registry rows | Completed 2026-05-22: added `BR_EX_BE_DRAFT_00073A` for `00056` and `BR_EX_BE_DRAFT_00073B` for `00057`; `00059` deferred to C5; no active coverage, no graph edge, no `/52` denominator change |
+| `C5` | Dedicated K-side RCA for `N_QM_VVV_00059` without script run or promotion | Completed 2026-05-22: upgraded `00059` to `K-DRAFT-ANCHOR-PASS-C5` and added draft-only `BR_EX_BE_DRAFT_00073C`; no active coverage, no graph edge, no script run, no `/52` denominator change |
+| `C6` | Boundary audit for `BR_EX_BE_DRAFT_00073A`-`00073C` while keeping draft-only status | Completed 2026-05-22: `00073A` and `00073B` `AUDIT-PASS-DRAFT`; `00073C` `AUDIT-PASS-DRAFT-WITH-BOUNDARY-GUARD`; no graph sync, script run, active coverage, or `/52` denominator change |
+| `C7` | Parser / graph-sync safety audit for `BR_EX_BE_DRAFT_*` rows | Completed 2026-05-22: current `phase4_graph_sync.py` numbered-heading regex excludes `BR_EX_BE_DRAFT_*`; registry now records automation ignore rule; no script run, graph sync, data mutation, active coverage, or `/52` denominator change |
+| `C8` | Promotion-readiness decision matrix for `BR_EX_BE_DRAFT_00073A`-`00073C` | Completed 2026-05-22: `00073A` later promotion candidate; `00073B` candidate with sorting/relation guard; `00073C` held for guarded promotion review; no promotion, script run, graph sync, data mutation, active coverage, or `/52` denominator change |
+| `C9` | Node-aligned dry-run plan for current-Core 55-node reporting while preserving frozen `/52` baseline | Completed 2026-05-22 as plan-only: report layer separates frozen `/52` active coverage from current-Core `/55` draft-supported status; `BR_EX_QM_DRAFT_00075`-`00077` and `BR_EX_BE_DRAFT_00073A`-`00073C` may be reported only as draft-supported, not active-covered; no script run, graph sync, data mutation, promotion, or `/52` denominator change |
+| `C10` | Execution-readiness audit for `_v1.8_node_aligned` 55-node reporting | Completed 2026-05-22 as readiness audit only: future execution requires explicit C11 approval, suffix-locked outputs, script order review, metric policy, draft-row exclusion from active coverage, and data/graph mutation approval; no script run, graph sync, data mutation, draft promotion, or `/52` denominator change |
+| `C11A` | Manual/document-only `_v1.8_node_aligned` dry-run report | Completed 2026-05-22 as documentation-only report: 55-node current-Core layer lists `00056`, `00057`, and `00059` as draft-supported separately; active `/55` numerator is not claimed; no script run, graph sync, data mutation, draft promotion, or `/52` denominator change |
+| `C12` | Sync C11A manual dry-run report status into `k_gap_exception_list.md` | Completed 2026-05-22 as document-only status sync: C11A labels are visible in K-gap/status artifact as report-status labels only, not exception resolutions, active coverage, or `/55` metric claims; no script run, graph sync, data mutation, draft promotion, or `/52` denominator change |
+| Node-aligned script run | Generate `_v1.8_node_aligned` reports from current-Core 55-node list | Not started |
+
+### 25.8 C9 Node-Aligned Dry-Run Reporting Contract (Plan-only, 2026-05-22)
+
+**Scope:** C9 defines how a future current-Core 55-node report may describe the three current-Core additions without changing the frozen EX baseline. It is a dry-run reporting contract only: no script run, no graph sync, no promotion, no active coverage, and no `data/*.json` mutation.
+
+**RCA root cause:** The project now has audited draft evidence for `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059`, but the historical EX metric layer still uses the frozen 52-node baseline. Without a report-layer distinction, a reader could mistake draft support for active `/52` coverage or treat a future `/55` denominator as already executed.
+
+| Reporting layer | Denominator / status | What may be claimed | What must not be claimed |
+|---|---|---|---|
+| Frozen EX baseline | 52 active VVV nodes | Historical active coverage remains `46/52 = 88.5%` or `47/52 = 90.4%` where those phase-specific figures are already documented | Do not rewrite historical `/52` figures as `/55` |
+| Current-Core dry-run | 55 active Core nodes as planning denominator | The three added nodes are present in current Core and have draft-side EX evidence | Do not publish a new active raw percentage without a separate script run and metric policy |
+| Rho-side draft support | `BR_EX_QM_DRAFT_00075`-`00077` | May be listed as `rho-draft-supported` after C2 boundary audit and anchor refinement | Do not count as active `BR_EX_QM` coverage |
+| K-side draft support | `BR_EX_BE_DRAFT_00073A`-`00073C` | May be listed as `k-draft-supported` after C3-C8 RCA/audit/readiness gates | Do not count as active `BR_EX_BE` coverage or graphable edge |
+| Active graph/report layer | Existing synced graph only | Active graph remains unchanged until explicit graph-sync approval | Do not mutate `vvv_qmrf_ex_graph.json` or generated `data/*.json` artifacts under C9 |
+
+**Node-level dry-run labels:**
+
+| Current-Core node | Rho-side report label | K-side report label | Combined dry-run label | Boundary guard |
+|---|---|---|---|---|
+| `N_QM_VVV_00056` | `rho-draft-supported` via `BR_EX_QM_DRAFT_00075` | `k-draft-supported` via `BR_EX_BE_DRAFT_00073A` | `draft-supported-both-sides-not-active` | Window-lock support only; no retrocausal physical reversal claim |
+| `N_QM_VVV_00057` | `rho-draft-supported-refined` via `BR_EX_QM_DRAFT_00076` | `k-draft-supported-with-relation-guard` via `BR_EX_BE_DRAFT_00073B` | `draft-supported-both-sides-not-active-with-sorting-guard` | Sorting/coincidence is a registration condition, not identity with Buddhist inference or a new QM law |
+| `N_QM_VVV_00059` | `rho-draft-supported` via `BR_EX_QM_DRAFT_00077` | `k-draft-supported-with-decoherence-boundary-guard` via `BR_EX_BE_DRAFT_00073C` | `draft-supported-both-sides-not-active-with-rho-k-guard` | Standard QM decoherence remains physical substrate; BE supports only validity/error-status registration semantics |
+
+**C9 dry-run output rule:** Any future human-readable 55-node report may include a separate draft-support appendix, but the main active metric must either remain the frozen `/52` result or be explicitly labelled as a later `_v1.8_node_aligned` recomputation after user approval, script review, and data generation.
+
+**C9 verification rule:** C9 authorizes no command execution beyond documentation checks. `Node-aligned script run` remains `Not started`, and draft rows remain outside active coverage, graph sync, and JSON mutation.
+
+### 25.9 C10 Execution-Readiness Audit for `_v1.8_node_aligned` (No execution, 2026-05-22)
+
+**Scope:** C10 checks whether the project has a safe contract for a future `_v1.8_node_aligned` 55-node reporting run. It is not the run itself. C10 authorizes no script run, no graph sync, no `data/*.json` mutation, no draft-row promotion, and no `/52` denominator change.
+
+**RCA root cause:** After C9, the reporting semantics are safe, but the execution boundary is still implicit. Without an explicit readiness audit, a future operator could run graph/report scripts before suffix policy, metric policy, draft-row exclusion, and output isolation are locked.
+
+**5 Whys:**
+
+1. Why is C10 needed after C9? -> C9 defines what a report may say, but not when execution is safe.
+2. Why is execution safety separate from reporting safety? -> Scripts can mutate graph/report artifacts, while C9 was documentation-only.
+3. Why is suffix locking required? -> Unsuffixed outputs could overwrite or blur immutable `/52` evidence.
+4. Why must draft rows be excluded from active coverage? -> C2/C6/C8/C9 only authorize draft-supported labels, not active bridge counts.
+5. **Root cause F-RCA-22:** `_v1.8_node_aligned` needs an explicit execution gate that separates readiness from execution and prevents draft evidence from being converted into active graph or metric data by accident.
+
+| Readiness dimension | Required condition before any C11 execution | C10 status |
+|---|---|---|
+| User authorization | A later request must explicitly approve C11 execution and state whether it is document-only or script-backed | `NOT-AUTHORIZED-YET` |
+| Suffix policy | Every new generated artifact must use `_v1.8_node_aligned` or a later explicit suffix; no unsuffixed overwrite | `READY-AS-CONTRACT` |
+| Baseline preservation | Historical `/52` metrics remain frozen and cited as phase-specific results | `READY` |
+| Metric policy | `/55` metric must be labelled as current-Core recomputation, not inherited baseline | `READY-AS-CONTRACT` |
+| Draft-row treatment | Six draft rows may be read as draft support only; none can be counted active unless separately promoted | `READY` |
+| Graph sync | `phase4_graph_sync.py` cannot be run unless C11 explicitly authorizes graph mutation and reviews draft exclusion | `BLOCKED-BY-C10` |
+| Registry generation | `phase4_bridge_registry.py` cannot be run because it may overwrite registry files | `BLOCKED-BY-C10` |
+| Data output | `data/*.json` remains untouched until C11 specifies exact output files and write policy | `BLOCKED-BY-C10` |
+
+**Candidate future execution inventory (not run in C10):**
+
+| Script / artifact class | Future role if C11 approves | C10 readiness decision |
+|---|---|---|
+| `phase1_graph_construction.py` | Rebuild graph from source snapshots for node-aligned run | Review required before execution |
+| `phase2_intersection_analysis.py` | Recompute VVV-QM-BE intersections over current 55-node denominator | Review required before execution |
+| `phase3_similarity_search.py` | Recompute similarity candidates if included in C11 scope | Optional; requires explicit scope |
+| `phase4_bridge_registry.py` | Regenerate registry artifacts | Not ready by default because overwrite risk is high |
+| `phase4_graph_sync.py` | Inject active registry edges into graph | Not ready until draft-row exclusion and promotion policy are explicitly approved |
+| `phase5_visualize.py` | Generate derived visuals from approved node-aligned graph | Only after approved graph/data outputs exist |
+| `phase6_expert_mapping.py` | Expert mapping expansion | Out of C11 default scope unless user explicitly requests new candidate generation |
+
+**C10 go/no-go result:**
+
+| Gate item | Result | Reason |
+|---|---|---|
+| Documentation-only readiness | `GO-FOR-C11A-IF-REQUESTED` | C9/C10 define safe dry-run labels and frozen-baseline boundaries |
+| Script-backed execution readiness | `NO-GO-UNTIL-C11B-APPROVAL` | Script order, exact output file list, and mutation policy still require explicit user approval |
+| Draft promotion readiness | `NO-GO` | C8 readiness matrix is not promotion authorization |
+| Graph sync readiness | `NO-GO` | C7 only proves current draft exclusion; promotion/sync would require a new gate |
+| Data mutation readiness | `NO-GO` | C10 does not authorize `data/*.json` writes |
+
+**Allowed next gates:**
+
+| Gate | Meaning | Required boundary |
+|---|---|---|
+| `C11A` | Manual/document-only `_v1.8_node_aligned` dry-run report | No script, no graph sync, no data mutation; draft-supported labels only |
+| `C11B` | Script-backed `_v1.8_node_aligned` execution plan | Must list exact scripts, output paths, suffixes, metric formula, and rollback policy before running anything |
+| `C11C` | Separate draft-promotion planning gate | Must handle renumbering, active-count policy, graph-sync parser review, and boundary locks |
+
+**C10 verdict:** Execution readiness is partially established at contract level but not authorized at data/script level. The safe next step is `C11A` if the user wants a human-readable dry-run report, or `C11B` only after explicit script-backed execution approval.
+
+### 25.10 C11A Manual `_v1.8_node_aligned` Dry-Run Report (Document-only, 2026-05-22)
+
+**Scope:** C11A is a human-readable dry-run report only. It simulates the reporting shape of a future `_v1.8_node_aligned` current-Core report without running scripts, syncing graph edges, mutating `data/*.json`, promoting draft rows, or changing frozen `/52` metrics.
+
+**RCA root cause:** C10 established execution-readiness boundaries, but the project still needed a readable report layer showing how the current 55-node Core state should be described without creating generated data or active `/55` coverage claims.
+
+| Report layer | C11A value | Interpretation | Boundary |
+|---|---|---|---|
+| Historical EX baseline | Frozen 52-node denominator | Existing phase-specific `/52` metrics remain historical evidence | Do not recompute or rewrite as `/55` |
+| Current-Core denominator | 55 active Core nodes | Planning/reporting denominator only | No active raw percentage claimed |
+| Active `/55` numerator | `NOT-CLAIMED-IN-C11A` | C11A does not run scripts or recalculate active coverage | No generated report or JSON output |
+| Draft-supported nodes | 3/55 current-Core additions | `00056`, `00057`, `00059` have draft rho/K support | Listed separately from active coverage |
+| Active graph state | Existing synced graph only | No new graph edge is added | No `phase4_graph_sync.py` run |
+
+**Manual node-aligned dry-run table:**
+
+| Current-Core node | New relative to frozen 52-node baseline? | Rho-side draft support | K-side draft support | C11A report status | Active coverage status |
+|---|---|---|---|---|---|
+| `N_QM_VVV_00056` | Yes | `BR_EX_QM_DRAFT_00075` (`rho-draft-supported`) | `BR_EX_BE_DRAFT_00073A` (`k-draft-supported`) | `draft-supported-both-sides-not-active` | Not active-covered |
+| `N_QM_VVV_00057` | Yes | `BR_EX_QM_DRAFT_00076` (`rho-draft-supported-refined`) | `BR_EX_BE_DRAFT_00073B` (`k-draft-supported-with-relation-guard`) | `draft-supported-both-sides-not-active-with-sorting-guard` | Not active-covered |
+| `N_QM_VVV_00059` | Yes | `BR_EX_QM_DRAFT_00077` (`rho-draft-supported`) | `BR_EX_BE_DRAFT_00073C` (`k-draft-supported-with-decoherence-boundary-guard`) | `draft-supported-both-sides-not-active-with-rho-k-guard` | Not active-covered |
+
+**C11A report summary:**
+
+| Category | Manual dry-run result |
+|---|---|
+| Frozen active baseline | Preserved as historical `/52` layer |
+| Current-Core report denominator | 55 nodes |
+| New current-Core nodes with draft evidence | 3 nodes |
+| New current-Core nodes counted active-covered | 0 nodes |
+| Active `/55` metric | Not claimed |
+| Draft appendix | Allowed and supplied by this section |
+| Script/data outputs | None |
+
+**Boundary locks:**
+
+| Node | Required lock |
+|---|---|
+| `N_QM_VVV_00056` | No retrocausal physical reversal claim; window-lock support only |
+| `N_QM_VVV_00057` | Sorting/coincidence is a registration condition, not identity with Buddhist inference or a new QM law |
+| `N_QM_VVV_00059` | Standard QM decoherence remains rho-side physical substrate; BE supports only validity/error-status registration semantics |
+
+**C11A verdict:** The manual `_v1.8_node_aligned` dry-run report is complete as a documentation-only layer. It preserves `/52`, introduces no active `/55` metric, lists draft-supported rows separately, and authorizes no script run, graph sync, data mutation, or draft promotion.
+
+### 25.11 C12 K-Gap Status Sync for C11A Labels (Document-only, 2026-05-22)
+
+**Scope:** C12 synchronizes C11A manual dry-run report labels into `k_gap_exception_list.md` so the K-side status artifact shows the same current-Core report-status layer. C12 does not change exception classification, active K-side coverage, graph edges, generated data, or frozen `/52` metrics.
+
+| Synced node | C11A label added to K-gap/status artifact | Meaning |
+|---|---|---|
+| `N_QM_VVV_00056` | `draft-supported-both-sides-not-active` | Visible in manual 55-node dry-run only as draft support. |
+| `N_QM_VVV_00057` | `draft-supported-both-sides-not-active-with-sorting-guard` | Visible in manual 55-node dry-run with sorting/relation guard. |
+| `N_QM_VVV_00059` | `draft-supported-both-sides-not-active-with-rho-k-guard` | Visible in manual 55-node dry-run with rho/K decoherence boundary guard. |
+
+**C12 verdict:** K-gap/status discoverability is synchronized with C11A. The labels are report-status labels only, not active bridge coverage, exception resolution, graph evidence, or active `/55` metric claims.
+
+### 25.12 RCA Final Summary — Current-Core Draft Support Closure (C2-C12, 2026-05-22)
+
+**Scope:** This final summary closes the document-only RCA chain from C2 through C12 for current-Core nodes `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059`. It records what was achieved and what remains blocked. It does not authorize script execution, graph sync, `data/*.json` mutation, draft promotion, or any frozen `/52` metric change.
+
+**Root-cause summary:** The original issue was not missing graph data but denominator drift: the EX baseline remained frozen at 52 active VVV nodes while the current Core snapshot contained 55 active nodes. RCA isolated that the correct fix was not to silently recompute `/52` metrics or promote draft rows, but to create a separate current-Core report-status layer where the three new nodes can be tracked as draft-supported only.
+
+| RCA gate range | Root cause addressed | Closure result | Boundary preserved |
+|---|---|---|---|
+| C2 | Rho-side candidates existed conceptually but were not recorded | Added `BR_EX_QM_DRAFT_00075`-`00077` as draft-only rho-side rows | No active `BR_EX_QM` coverage |
+| C3-C5 | K-side support needed BE SOT RCA rather than parent inheritance | Isolated draft K-side support for `00056`, `00057`, and `00059` | No active `BR_EX_BE` coverage |
+| C6-C8 | Draft K-side rows needed boundary, parser, and promotion-readiness controls | Audited `BR_EX_BE_DRAFT_00073A`-`00073C`; kept promotion blocked | No graph sync or renumbering |
+| C9-C11A | 55-node reporting needed a dry-run layer without generated data | Created manual `_v1.8_node_aligned` dry-run report | Active `/55` metric not claimed |
+| C12 | C11A labels needed visibility in K-gap/status artifact | Synced C11A labels into `k_gap_exception_list.md` as report-status only | `47/52` K-side baseline unchanged |
+
+| Current-Core node | Final document-only status | Rho-side draft evidence | K-side draft evidence | Active coverage status |
+|---|---|---|---|---|
+| `N_QM_VVV_00056` | `draft-supported-both-sides-not-active` | `BR_EX_QM_DRAFT_00075` | `BR_EX_BE_DRAFT_00073A` | Not active-covered |
+| `N_QM_VVV_00057` | `draft-supported-both-sides-not-active-with-sorting-guard` | `BR_EX_QM_DRAFT_00076` | `BR_EX_BE_DRAFT_00073B` | Not active-covered |
+| `N_QM_VVV_00059` | `draft-supported-both-sides-not-active-with-rho-k-guard` | `BR_EX_QM_DRAFT_00077` | `BR_EX_BE_DRAFT_00073C` | Not active-covered |
+
+**Final closure rule:** C2-C12 close the document-only RCA/reporting loop for the three current-Core nodes. The next move, if any, must be a new explicit gate: `C13` for rho-gap status sync, `C11B` for script-backed execution planning, or a separate promotion gate. Until then, `Node-aligned script run` remains `Not started` and frozen `/52` metrics remain historical.
+
+No C2 artifact is promoted to active coverage without one of these later approvals.
 
 ---
 

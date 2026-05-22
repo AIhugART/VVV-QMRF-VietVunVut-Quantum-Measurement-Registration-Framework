@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_BE Registry — K-side Bridge: BE ↔ VVV-QMRF
 
-**Version:** 2.5 (E18 Path C EX vNext registry sync — valid-sign bridge package for N_QM_VVV_00024)
+**Version:** 2.7 (E18 Path C EX vNext registry sync + C4/C5 current-Core draft K-side rows)
 **Date:** 2026-05-22
-**Total Entries:** 72 row entries / **68 active** (34 reference-copy + 1 similarity candidate + 9 expert manual + 24 active Phase 7/12/vNext stretch [13 KE-OF + 8 KE-SC + 3 E18 Path C]) + **2 RECLASSIFIED-v1.7 retained** (BR_EX_BE_00061, 00066) + **2 FOLDED-structural-review** (BR_EX_BE_00003, 00004 — Anvaya/Vyatireka folded under BR_EX_BE_00008 per BIAN-14 structural review)
-**Namespace:** BR_EX_BE_00001–BR_EX_BE_00072 (no renumber; 2 reclassified + 2 folded rows preserved in-place with Status field)
+**Total Entries:** 72 numbered row entries / **68 active** (34 reference-copy + 1 similarity candidate + 9 expert manual + 24 active Phase 7/12/vNext stretch [13 KE-OF + 8 KE-SC + 3 E18 Path C]) + **2 RECLASSIFIED-v1.7 retained** (BR_EX_BE_00061, 00066) + **2 FOLDED-structural-review** (BR_EX_BE_00003, 00004 — Anvaya/Vyatireka folded under BR_EX_BE_00008 per BIAN-14 structural review) + **3 draft-only current-Core K-side rows**
+**Namespace:** BR_EX_BE_00001–BR_EX_BE_00072 active/historical numbered rows; BR_EX_BE_DRAFT_00073A–BR_EX_BE_DRAFT_00073C draft-only current-Core rows (not active, not graphable, no renumber)
 
 ---
 
@@ -19,7 +19,8 @@ This registry maps Buddhist Epistemology (BE) nodes to VVV-QMRF nodes on the K-s
 | `new_similarity_candidate` | 1 | Phase 3 cosine similarity (Tier2, cosine >= 0.50) |
 | `expert_manual_mapping` | 9 | Phase 6 domain expert mapping (KE-PM resolution) |
 | `stretch_expert_mapping` | 23 | Phase 7 KE-OF/KE-SC stretch mapping (batch-approved) |
-| **Total** | **69** | |
+| `draft_current_core_C4_C5` | 3 | C4/C5 draft-only K-side rows for current-Core nodes outside frozen 52-node EX baseline |
+| **Total numbered active/historical rows** | **72** | Excludes draft-only `BR_EX_BE_DRAFT_*` rows from active count and graph sync |
 
 **Direction convention:** Entries normalize to BE_node → VVV_node (K-side: BE anchors VVV).
 See `ex_schema_addendum.md §5` for F2 non-reversal policy.
@@ -1490,3 +1491,82 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 | **Boundary Note** | Analogical-only support for the stable valid-connection component of E18; no BE-QM identity, no physical retrocausation, no Standard QM modification, and no core import. |
 | **Rationale** | E18 valid registration depends on a stable connection between final context, sorting rule, and valid window; Svabhavapratibandha anchors the connection aspect only. |
 | **Origin** | E18 G6 follow-up; `rca_e18_ex_vnext_bridge_audit.md`; Path C authorized by user on 2026-05-22 |
+
+---
+
+## C4 Current-Core Draft K-Side Rows (Draft-only, 2026-05-22)
+
+These rows formalize C3 K-side RCA results for current-Core nodes outside the frozen 52-node EX baseline. They are **draft-only**: not active `BR_EX_BE`, not graphable, not counted in `47/52`, and not authorized for `data/*.json` mutation.
+
+**C7 automation safety note:** graph-sync automation must ignore every `BR_EX_BE_DRAFT_*` row. `phase4_graph_sync.py` currently parses only numbered headings matching `BR_EX_[A-Z]+_\d+`, so `BR_EX_BE_DRAFT_00073A`-`BR_EX_BE_DRAFT_00073C` are intentionally outside the graphable parser shape. Do not rename these rows into `BR_EX_BE_00073*` without explicit promotion and graph-sync approval.
+
+### BR_EX_BE_DRAFT_00073A — Draft Row A (C4 current-Core K-side)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_DRAFT_00073A` |
+| **Type** | draft_current_core_C4 |
+| **C4 Status** | `DRAFT-C4-K-SIDE` (not active; not graphable) |
+| **C6 Audit Status** | `AUDIT-PASS-DRAFT` |
+| **C8 Promotion Readiness** | `PROMOTION-CANDIDATE-LATER` (requires explicit renumber policy, graph-sync dry review, and active metric policy) |
+| **Source Edge Type** | `BR_EX_BE_DRAFT_ONLY` |
+| **BE Node** | `N_BE_00003` primary support; `N_BE_00019` relation support; `N_BE_00021` connection support |
+| **BE Concept** | Inference / Anumana + Pervasion / Vyapti + Essential relation / Svabhavapratibandha |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00056` |
+| **VVV Concept** | Delayed-Choice Registration Boundary / Context-Conditioned Registration Window Locking |
+| **Direction** | N_BE_00003 / N_BE_00019 / N_BE_00021 -> N_QM_VVV_00056 |
+| **Relation Type** | draft_valid_sign_window_lock_support |
+| **Claim Class** | interpretive_mapping_draft_valid_sign_support |
+| **Confidence** | draft-only; C3 RCA score 4.4/5 |
+| **Boundary Note** | Analogical-only K-side support for generalized E18 valid-window locking; no BE-QM identity, no physical retrocausation, no Standard QM modification, no active EX coverage, and no core import. |
+| **Rationale** | C3 RCA isolates `N_QM_VVV_00056` as generalized E18 `Lock(C_f, S, {W_i}) -> W_valid`. The BE package supports the sign, relation, and stable-connection aspects only; it does not turn delayed-choice registration into a Buddhist-physics identity claim. |
+| **Origin** | C3 K-side RCA recorded in `k_gap_exception_list.md` §4.1; C4 draft-only registry formalization authorized by user on 2026-05-22 |
+
+### BR_EX_BE_DRAFT_00073B — Draft Row B (C4 current-Core K-side)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_DRAFT_00073B` |
+| **Type** | draft_current_core_C4 |
+| **C4 Status** | `DRAFT-C4-K-SIDE` (not active; not graphable) |
+| **C6 Audit Status** | `AUDIT-PASS-DRAFT` |
+| **C8 Promotion Readiness** | `PROMOTION-CANDIDATE-WITH-GUARD-LATER` (requires sorting/relation wording guard and graph-sync dry review) |
+| **Source Edge Type** | `BR_EX_BE_DRAFT_ONLY` |
+| **BE Node** | `N_BE_00019` primary relation support; `N_BE_00021` connection support; `N_BE_00003` inference support |
+| **BE Concept** | Pervasion / Vyapti + Essential relation / Svabhavapratibandha + Inference / Anumana |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00057` |
+| **VVV Concept** | Sorting-Conditioned Registration Subset / Coincidence-Sorted Valid Window |
+| **Direction** | N_BE_00019 / N_BE_00021 / N_BE_00003 -> N_QM_VVV_00057 |
+| **Relation Type** | draft_sorting_relation_constraint_support |
+| **Claim Class** | interpretive_mapping_draft_relation_support |
+| **Confidence** | draft-only; C3 RCA score 4.2/5 |
+| **Boundary Note** | Analogical-only K-side support for the sorting/coincidence relation constraint; sorting is not identical to Buddhist inference, not an active bridge, not a new Standard QM law, and not a graph edge. |
+| **Rationale** | C3 RCA isolates `N_QM_VVV_00057` as the explicit sorting relation `S` that partitions raw records into the valid prior registration window. Vyapti and Svabhavapratibandha support the relation-constraint structure; Anumana remains secondary support for sign-like valid subset selection. |
+| **Origin** | C3 K-side RCA recorded in `k_gap_exception_list.md` §4.1; C4 draft-only registry formalization authorized by user on 2026-05-22 |
+
+### BR_EX_BE_DRAFT_00073C — Draft Row C (C5 current-Core K-side)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_DRAFT_00073C` |
+| **Type** | draft_current_core_C5 |
+| **C5 Status** | `DRAFT-C5-K-SIDE` (not active; not graphable) |
+| **C6 Audit Status** | `AUDIT-PASS-DRAFT-WITH-BOUNDARY-GUARD` |
+| **C8 Promotion Readiness** | `HOLD-FOR-GUARDED-PROMOTION-REVIEW` (requires rho/K boundary wording lock before any promotion review) |
+| **Source Edge Type** | `BR_EX_BE_DRAFT_ONLY` |
+| **BE Node** | `N_BE_00006` error-status support; `N_BE_00234` reliability criterion; `N_BE_00052` valid-knowledge endpoint |
+| **BE Concept** | Erroneous cognition / Bhranti + Avisamvaditva + Prama |
+| **BE Layer** | core + RCA |
+| **VVV Node** | `N_QM_VVV_00059` |
+| **VVV Concept** | Decoherence-Induced Registration Update |
+| **Direction** | N_BE_00006 / N_BE_00234 / N_BE_00052 -> N_QM_VVV_00059 |
+| **Relation Type** | draft_validity_error_status_update_support |
+| **Claim Class** | interpretive_mapping_draft_registration_state_update_support |
+| **Confidence** | draft-only; C5 RCA score 4.2/5 |
+| **Boundary Note** | Analogical-only K-side support for registration-state update and validity/error-status reclassification; not a BE analogue of decoherence physics, not active coverage, not a Standard QM modification, and not a graph edge. |
+| **Rationale** | C5 RCA isolates the root of `N_QM_VVV_00059` as a K-side routing problem: decoherence support can participate in a registration-state update path that either instantiates a new K-state or routes a defeated prior response toward registration-error status. Bhranti supports error-status reclassification, Avisamvaditva supports the reliability/non-deceptiveness criterion, and Prama supports the valid-knowledge endpoint; none of these claims identifies BE with physical decoherence. |
+| **Origin** | C5 dedicated RCA for `N_QM_VVV_00059`; draft-only registry formalization authorized by user on 2026-05-22 |
+
+> C5 note: `BR_EX_BE_DRAFT_00073C` resolves the C3 caveat only at draft level. It does not promote `N_QM_VVV_00059` to active K-side coverage and does not authorize graph sync, script execution, or frozen denominator changes.

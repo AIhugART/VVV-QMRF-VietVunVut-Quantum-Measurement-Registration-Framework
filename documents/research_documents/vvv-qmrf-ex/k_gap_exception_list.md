@@ -116,4 +116,54 @@ All 9 nodes have been mapped to BE analogues via domain expert analysis. Categor
 
 ---
 
-*Exception list updated after E18 Path C EX vNext sync. KE-PM, KE-OF, 7 original KE-SC retained nodes, 1 narrowed Phase 12 KE-SC node, and 1 E18 Path C valid-sign package node have direct BR_EX_BE entries where RCA thresholds were met; 1 KE-SC entry remains reclassified exception at the 4.0/5 threshold; 4 KE-QI remain structurally excepted by design.*
+## 4. Current-Core Node-Aligned Pending K-Side Annotations (C2 + C3 RCA, 2026-05-22)
+
+These annotations track current Core nodes that are outside the frozen 52-node EX baseline. They are **current-Core bookkeeping only**: they do not count as `KE-RESOLVED`, do not count as K-side covered, do not alter the `47/52` active K-side bridge coverage summary above, and do not change any frozen v1.5/v1.6/v1.7/v1.8 denominator.
+
+| Pending ID | VVV Node | Concept | Status | RCA root cause | Required next gate |
+|------------|----------|---------|--------|----------------|--------------------|
+| `K_PENDING_RCA_00056` | `N_QM_VVV_00056` | Delayed-Choice Registration Boundary / Context-Conditioned Registration Window Locking | `K-DRAFT-ANCHOR-PASS` | C3 isolates the root as generalized E18 valid-window locking. The existing E18 Path C valid-sign package (`N_BE_00003`, `N_BE_00019`, `N_BE_00021`) fits the K-side sign/relation/connection structure at 4.4/5, but this is current-Core draft support only because `00056` sits outside the frozen 52-node EX baseline. | C4/C6 formalized draft-only row `BR_EX_BE_DRAFT_00073A` with `AUDIT-PASS-DRAFT`; no active coverage change |
+| `K_PENDING_RCA_00057` | `N_QM_VVV_00057` | Sorting-Conditioned Registration Subset / Coincidence-Sorted Valid Window | `K-DRAFT-ANCHOR-PASS` | C3 isolates the root as sorting/coincidence-conditioned valid subset selection. `N_BE_00019` pervasion and `N_BE_00021` essential relation are the strongest anchors for the relation constraint, with `N_BE_00003` inference as support; score 4.2/5. | C4/C6 formalized draft-only row `BR_EX_BE_DRAFT_00073B` with `AUDIT-PASS-DRAFT`; do not treat sorting as identical to Buddhist inference or as active coverage |
+| `K_PENDING_RCA_00059` | `N_QM_VVV_00059` | Decoherence-Induced Registration Update | `K-DRAFT-ANCHOR-PASS-C5` | C5 isolates the root as K-side registration-state update/reclassification under decoherence support, not decoherence itself. `N_BE_00006` Bhranti, `N_BE_00234` Avisamvaditva, and `N_BE_00052` Prama provide a bounded validity/error-status analogue at 4.2/5 when explicitly separated from Standard QM decoherence physics. | C5/C6 formalized draft-only row `BR_EX_BE_DRAFT_00073C` with `AUDIT-PASS-DRAFT-WITH-BOUNDARY-GUARD`; no active coverage, script run, or graph sync |
+
+Boundary rule: these rows are not exceptions and not active bridges. C4 creates draft-only `BR_EX_BE_DRAFT_00073A` and `BR_EX_BE_DRAFT_00073B` for the first two pass-level anchors, while C5 creates draft-only `BR_EX_BE_DRAFT_00073C` for `N_QM_VVV_00059` after isolating the validity/error-status root. C7 verifies `BR_EX_BE_DRAFT_*` rows are excluded by the current graph-sync numbered-heading parser shape. C8 records promotion-readiness only: `00073A` is a later candidate, `00073B` is a guarded later candidate, and `00073C` is held for guarded promotion review. C11A lists all three rows in the manual `_v1.8_node_aligned` 55-node dry-run report only as draft-supported, not active-covered. No C4/C5/C6/C7/C8/C11A row changes active coverage, graph edges, script outputs, data files, or frozen denominators.
+
+### 4.1 C12 C11A Manual Dry-Run Status Sync (2026-05-22)
+
+**Scope:** C12 synchronizes the C11A manual `_v1.8_node_aligned` dry-run report status into this K-gap/status artifact. This is document-only: no script run, no graph sync, no `data/*.json` mutation, no draft promotion, and no frozen `/52` denominator change.
+
+| VVV node | K-side draft row | C11A manual dry-run label | K-gap interpretation | Active coverage impact |
+|---|---|---|---|---|
+| `N_QM_VVV_00056` | `BR_EX_BE_DRAFT_00073A` | `draft-supported-both-sides-not-active` | K-side valid-sign/relation support is visible in the 55-node dry-run report only as draft support. | None |
+| `N_QM_VVV_00057` | `BR_EX_BE_DRAFT_00073B` | `draft-supported-both-sides-not-active-with-sorting-guard` | K-side relation support remains guarded; sorting/coincidence is not identical to Buddhist inference. | None |
+| `N_QM_VVV_00059` | `BR_EX_BE_DRAFT_00073C` | `draft-supported-both-sides-not-active-with-rho-k-guard` | K-side validity/error-status support remains bounded away from physical decoherence explanation. | None |
+
+**C12 status rule:** The C11A labels are report-status labels, not exception resolutions, not active bridge coverage, and not `/55` metric claims. The active K-side summary remains frozen-baseline-aware at `47/52`; C11A/C12 add only a current-Core draft-support visibility layer.
+
+### 4.2 C3 K-Side RCA Scoring Summary (2026-05-22)
+
+| VVV node | Candidate BE package | 5-Why root cause isolated | Score | C3 decision |
+|---|---|---|---:|---|
+| `N_QM_VVV_00056` | `N_BE_00003` Inference + `N_BE_00019` Pervasion + `N_BE_00021` Essential relation | E18 generalized the narrower delayed-choice erasure boundary into `Lock(C_f, S, {W_i}) -> W_valid`; the K-side analogue is valid-sign/relation support, not physical retrocausation. | **4.4/5** | `K-DRAFT-ANCHOR-PASS` |
+| `N_QM_VVV_00057` | `N_BE_00019` Pervasion + `N_BE_00021` Essential relation; `N_BE_00003` support | Sorting/coincidence exists because E18 needs a relation `S` that partitions raw records into a valid prior window; the analogue is relation constraint, not identity with post-selection or inference. | **4.2/5** | `K-DRAFT-ANCHOR-PASS` |
+| `N_QM_VVV_00059` | `N_BE_00006` Erroneous cognition + `N_BE_00234` Reliability/non-deceptiveness + `N_BE_00052` Valid knowledge | T6 needs a K-side path where decoherence support can route a prior response toward registration-error status or new K-state instantiation; BE supports the validity/error-status layer only, not decoherence physics. | **4.0/5** | `K-DRAFT-CAVEATED` |
+
+**C3 verdict:** 2/3 current-Core K-side candidates pass as draft anchors; 1/3 passes only with caveat. No row becomes active `BR_EX_BE`, no frozen `/52` denominator changes, and no `data/*.json` mutation is authorized by C3.
+
+### 4.3 C5 Dedicated RCA for `N_QM_VVV_00059` (2026-05-22)
+
+**C5 problem:** `N_QM_VVV_00059` was caveated after C3 because the candidate could be misread as a BE analogue of decoherence. C5 tests whether the root is instead a K-side validity/error-status update problem.
+
+| Candidate package | What it tests | Boundary risk | Score | C5 decision |
+|---|---|---|---:|---|
+| `N_BE_00006` Bhranti + `N_BE_00234` Avisamvaditva + `N_BE_00052` Prama | Whether `00059` can map to registration-state update through error-status reclassification, reliability testing, and valid-knowledge endpoint. | Low if explicitly bounded away from decoherence physics. | **4.2/5** | Create draft-only row `BR_EX_BE_DRAFT_00073C` |
+| `N_BE_00234` Avisamvaditva + `N_BE_00001` Valid cognition | Whether reliability/non-deceptiveness alone is enough. | Too narrow; does not capture registration-error routing. | **3.8/5** | Secondary support only |
+| `N_BE_00250` Tadutpatti + `N_BE_00021` Essential relation | Whether causal production can ground decoherence-induced update. | Higher risk of over-mapping physical decoherence into BE causality. | **3.5/5** | Reject for C5 row |
+
+**C5 5-Why root:** Decoherence-induced registration update needs K-side support not because decoherence needs a BE analogue, but because VVV-QMRF needs a validity route for when decoherence-supported information becomes a new K-state or defeats a prior response into registration-error status.
+
+**C5 verdict:** `N_QM_VVV_00059` is upgraded from `K-DRAFT-CAVEATED` to `K-DRAFT-ANCHOR-PASS-C5` only under a strict boundary: BE supports the K-side validity/error-status layer, while Standard QM decoherence remains the rho-side physical substrate. No script run, no promotion, no active `BR_EX_BE`, no graph edge, and no frozen `/52` denominator change are authorized.
+
+---
+
+*Exception list updated after E18 Path C EX vNext sync, C2 current-Core pending K-side annotation, C3 K-side RCA, C4 draft-only K-side registry formalization, C5 dedicated RCA for `N_QM_VVV_00059`, and C12 C11A manual dry-run status sync. KE-PM, KE-OF, 7 original KE-SC retained nodes, 1 narrowed Phase 12 KE-SC node, and 1 E18 Path C valid-sign package node have direct active BR_EX_BE entries where RCA thresholds were met; 1 KE-SC entry remains reclassified exception at the 4.0/5 threshold; 4 KE-QI remain structurally excepted by design. Current-Core nodes `N_QM_VVV_00056`, `N_QM_VVV_00057`, and `N_QM_VVV_00059` are tracked separately outside the frozen 52-node EX baseline, have draft-only `BR_EX_BE_DRAFT_*` rows only, and are visible in C11A only as draft-supported report-status rows.*
