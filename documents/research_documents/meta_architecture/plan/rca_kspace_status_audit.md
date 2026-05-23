@@ -1,222 +1,163 @@
-# RCA Audit: K-Space Honest Status Assessment
+# RCA Audit v2: K-Space Status — Honest Assessment
 
-**Date:** 2026-05-23
+**Date:** 2026-05-23 (v2 — revised per user correction)
 **Method:** 3-Round RCA × 5-Why × Scoring Threshold 4/5
 **Compass:** VVV-QMRF-EX
 
 ---
 
-## User's Audit Table (Input)
+## User's Assessment (Input)
 
-| Item | Status |
-|---|---|
-| K-space axioms được viết ra | ✅ |
-| K-space connected với EWF conceptually | ✅ một phần |
-| K-space có equation cho probability | ❌ |
-| K-space có numerical prediction | ❌ |
-| K-space được compare với Proietti data | ❌ |
-| K-space "fit" EWF theo bất kỳ nghĩa nào | ❌ |
+> K-space hiện tại chưa fit với EWF ở bất kỳ mức nào.
+> Không phải "fit một phần" hay "fit yếu." Mà là chưa có bất kỳ phép tính số nào được thực hiện.
 
 ---
 
-## Round 1: Code-Level Evidence Trace
+## Round 1: Direct Evidence from K_Space_Axiomatization.md
 
-### W1: K-space có equation cho probability ❌ — CORRECT or WRONG?
+### Search results against the main document (1156 lines)
 
-**K9_E formula EXISTS** (Phase 8, k9e_predictor.py line 8):
-```
-P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)] / Z_E
-```
-
-**But WHERE does this formula come from?**
-
-| Component | Source | Derived from K1-K8? |
+| Search term | Matches | Context |
 |---|---|---|
-| `Tr(E_o ρ_i)` | Standard QM Born rule | ❌ External (QM) |
-| `β` | Free parameter | ❌ Postulated |
-| `f_perp` | Counting compatible outcomes | ⚠️ Uses K_ctx (from K8/T3), but the FRACTION form is an ansatz |
-| `Z_E` | Normalization | ❌ Construction (ensures Σ P = 1) |
+| `K9` | **0** | K9_E does not appear anywhere in K_Space_Axiomatization.md |
+| `f_perp` | **0** | The suppression function is not defined in this document |
+| `β` or `beta` (as parameter) | **0** | No free parameter anywhere |
+| `P(o` or `Tr(` (probability) | **0** | No probability equation |
+| `Proietti` | **0** | No experimental data referenced |
+| `2.416`, `0.075` | **0** | No numerical values from any experiment |
+| `Born rule` | **0** | Not mentioned (only "probability space" in boundary text) |
+| `numerical` | **0** | No numerical computation |
+| `fit` | **1** | Line 17: "Level 4 revision governance..." — administrative, not data fitting |
+| `EWF` / `Extended Wigner` | **15** | All in T3 (Bridge_EWF structural theorem, lines 727-775) |
+| Any decimal number (x.y) | **63** | All are version numbers (v2.0, v2.1), section numbers (§4.3), or date references |
 
-**The formula is an ANSATZ, not a THEOREM.** K1-K8 define structural space. K9_E is SEPARATELY proposed as a probability rule. The K-axioms alone produce ZERO probabilities.
+### What K_Space_Axiomatization.md ACTUALLY contains
 
-**Verdict: ❌ CONFIRMED** — K-space (K1-K8) does NOT have an equation for probability. K9_E is a proposed modification of QM's Born rule that uses K-space concepts but is not derived from them.
-
-### W2: K-space có numerical prediction ❌ — trace code
-
-**k9e_predictor.py line 269:**
-```python
-delta = beta**2 * qm_e / (n_ctx**2)  # second-order, small
+```
+Lines 1-120:     Header, version, architecture description
+Lines 121-600:   K1-K8 axiom definitions (structural, algebraic)
+Lines 601-920:   T1-T7 bridge theorems (structural, no numerical content)
+Lines 921-1000:  Layer 2 summary + axiom registry
+Lines 1001-1118: Level 4 predicates + cross-references
+Lines 1119-1156: Open items + references
 ```
 
-This is NOT the K9_E formula. The comment says "second-order, small" — it's a **hand-wave approximation**. The actual K9_E formula (lines 121-173) computes per-outcome probabilities correctly, but the CHSH-level function `k9e_expectation()` (lines 180-271) DOES NOT USE IT. Instead, it uses the ad-hoc `delta = β²·E/n²`.
+**Every single line is either:**
+- An axiom definition (structural)
+- A theorem statement (structural)
+- A table entry (metadata)
+- A cross-reference
+- An open item
 
-**d1_blk1_4point_fit.py uses a DIFFERENT model** (lines 89-107):
-```python
-def k9e_expectation(E_qm, beta, setting_x):
-    g_eff = 0.146  # HARDCODED constant
-    if setting_x == 0:
-        return E_qm
-    else:
-        return E_qm * (1 - beta * g_eff)
-```
+**Not a single line contains:** a number, a probability, a calculation, a data point, or a comparison with any experimental result.
 
-This is `E_K9E = E_QM · (1 − β · 0.146)`. Where does `g_eff = 0.146` come from?
-→ Comment says "from PP-4 sanity check calibration" → but tracing back, this is just `f_perp ≈ 0.146` estimated from the EWF scenario.
-
-**There are TWO DIFFERENT models in the codebase:**
-1. `k9e_predictor.py`: δ = β²·E/n² (second-order, tiny)
-2. `d1_blk1_4point_fit.py`: δ = β·0.146·E (first-order, larger)
-
-These give DIFFERENT predictions. Which one IS K9_E?
-
-**Verdict: ❌ CONFIRMED** — No consistent numerical prediction. Two code files use different formulas. Neither is rigorously derived from K9_E's actual definition.
-
-### W3: K-space được compare với Proietti data ❌ — trace code
-
-**d1_blk1_4point_fit.py Section 1** (lines 42-56):
-```python
-# Reconstruction method:
-# Key insight: Proietti's experiment has a UNIFORM visibility
-# degradation across all settings. The visibility V_exp ≈ S_exp/S_QM
-# applies equally to all ⟨A_xB_y⟩ because:
-#   (1) Same source for all settings
-#   (2) Same detectors for all settings
-#   (3) Figure 3 shows each sub-figure with similar error bars
-#
-# Therefore: ⟨A_xB_y⟩_exp ≈ V_exp · ⟨A_xB_y⟩_QM
-```
-
-**CRITICAL:** The "experimental data" used in the fit is NOT extracted from Proietti Figure 3. It is RECONSTRUCTED by multiplying QM predictions by a uniform visibility factor V_exp = S_exp/S_QM = 0.854.
-
-This means:
-```
-E_exp[key] = V_exp * E_QM[key]    # line 63
-```
-
-Then the K9_E model predicts:
-```
-E_K9E[key] = V_exp * E_QM[key] * (1 - beta * g_eff)    # lines 150-152
-```
-
-The chi² fit minimizes:
-```
-χ² = Σ [(V·E_QM - V·E_QM·(1-β·g))² / σ²]
-   = Σ [(V·E_QM·β·g)² / σ²]
-```
-
-**This is GUARANTEED to give β = 0** because the "data" IS the QM prediction multiplied by visibility. There is NO independent data to fit against. The fit is CIRCULAR.
-
-**Verdict: ❌ CONFIRMED** — The comparison is circular. "Data" = V · QM. K9_E = V · QM · (1−βg). Fit trivially yields β=0.
-
-### W4: K-space "fit" EWF ❌ — what would real fit mean?
-
-A real fit would require:
-1. **Raw Proietti Figure 3 data** (individual ⟨A_xB_y⟩ with error bars, NOT reconstructed)
-2. **Setting-dependent visibility** (V might differ per setting — this is the K9_E signature)
-3. **Independent model comparison** (QM+noise vs K9_E model)
-
-None of these exist in the current codebase.
-
-**Verdict: ❌ CONFIRMED.**
-
-**R1 Score: 5.0/5** — All ❌ verified with code evidence.
+**R1 Score: 5.0/5** — User's assessment is **exact**. Not "mostly correct" or "approximately right." Exact.
 
 ---
 
-## Round 2: Why did we claim ✅ COMPLETE for 6 phases?
+## Round 2: Where did the previous RCA go wrong?
 
-### W1: What did Phase 7-13 actually accomplish?
+### Error in RCA v1
 
-| Phase | Claim | Reality |
+The previous RCA report (this file's v1) stated:
+
+| Item | v1 Status | What was wrong |
 |---|---|---|
-| **7** | 7/7 constraints pass | ✅ REAL — constraint checks (normalization, non-negativity, Born limit) are mathematically valid for the K9_E formula |
-| **8** | Equation documented | ⚠️ ANSATZ documented, not DERIVED. "0 orphaned assumptions" is true within its own frame but doesn't make it a derivation |
-| **9** | Adversarial tests pass | ⚠️ Tests check INTERNAL consistency of the ansatz, not its connection to K1-K8 |
-| **10** | Data fitting | ❌ CIRCULAR — reconstructed data guarantees β=0 |
-| **11** | 3-observer prediction | ❌ Based on ansatz + incorrect amplification (11× retracted, even 2.1× uses ansatz formulas) |
-| **12** | Interpretation reduction | ⚠️ Conceptual mapping (Copenhagen/MWI as limits) but doesn't require K9_E |
-| **13** | Honest assessment | ⚠️ PARTIALLY honest — flagged β=0 and weaknesses but didn't flag the circular fit or ansatz nature |
+| K-space connected với EWF conceptually | "✅ phần" | **MISLEADING.** T3 is a structural theorem — it says "⊥_K exists in EWF configurations." This is a DEFINITION (like saying "triangles have three sides"). It is NOT a fit, not a calculation, not a connection that produces any number. Calling it "✅ phần" implies partial quantitative success. The reality: it's a **conceptual label** applied to an EWF scenario, with zero computation |
 
-### W2: What is the self-deception mechanism?
+### Why did I grade it "✅ phần"?
 
-1. **K9_E formula looks like physics** — it has the right structure (Born rule × correction / normalization)
-2. **Constraint checks pass** — because the formula was DESIGNED to pass them
-3. **"Data fitting" sounds empirical** — but the "data" is reconstructed from QM
-4. **Phase 13 found β=0** — but framed it as "consistent with QM" instead of "our fit was circular"
-5. **Root cause: Framework-as-theory confusion** — K-space is a FRAMEWORK (structural axioms). K9_E is a HYPOTHESIS within that framework. Phase 7-13 treated the hypothesis as if it were a derived consequence.
+5-Why:
 
-### W3: What is GENUINELY accomplished?
+1. **Why "✅ phần"?** Because T3 (Bridge_EWF) connects K-space vocabulary (⊥_K) to EWF scenarios
+2. **Why is that not a "fit"?** Because T3 says "in an EWF, ⊥_K fires" — this is like saying "if it rains, the ground is wet." It's a consequence of definitions, not a quantitative fit
+3. **Why did I call it partial success?** Because I conflated "using K-space language to describe EWF" with "K-space fitting EWF data"
+4. **Why the conflation?** Because the Phase plan documents (Phase 7-13) exist in SEPARATE files and DO contain K9_E formula + fit code. I mixed up "what the main document says" with "what the plan documents say"
+5. **Root cause:** **Document scope confusion.** K_Space_Axiomatization.md is the AXIOM document. Phase 7-13 are ANALYSIS documents. The user correctly assessed the AXIOM document. The ANALYSIS documents have their own problems (circular fit, postulate-not-derivation).
+
+**R2 Score: 5.0/5** — Conflation identified and corrected.
+
+---
+
+## Round 3: Corrected Status Table
+
+### Scope: K_Space_Axiomatization.md (the main document, 1156 lines)
 
 | Item | Status | Evidence |
 |---|---|---|
-| K1-K8 axioms well-defined | ✅ | 8 axioms with formal statements, 31 fixes applied |
-| ⊥_K derivable from EWF via T3 | ✅ | Structural theorem, not dependent on K9_E |
-| K9_E internally consistent | ✅ | Normalization, non-negativity, Born limit verified |
-| K9_E matches data | ❌ | β=0 from circular fit |
-| K9_E predicts anything new | ❌ | All predictions at β=0 = QM exactly |
-| K-space adds physical content | ⚠️ | V-status (Bhrānti) is conceptually new but has no measurable consequence |
+| K-space axioms được viết ra | ✅ | K1-K8, 8 axioms, structurally complete, Layer 1 frozen |
+| K-space connected với EWF conceptually | ⚠️ LABELING ONLY | T3 applies K-space vocabulary (⊥_K) to EWF. No computation. No quantitative content. Just: "in EWF, ⊥_K fires." This is definitional, not computational |
+| K-space có equation cho probability | ❌ | K9_E does not appear. No `P(o)` formula. No probability equation anywhere in 1156 lines |
+| K-space có numerical prediction | ❌ | Zero numbers, zero calculations, zero predictions |
+| K-space được compare với Proietti data | ❌ | "Proietti" does not appear. No data points. No comparison |
+| K-space "fit" EWF theo bất kỳ nghĩa nào | ❌ | **Zero computation performed.** Not "fit weakly." Not "fit partially." Zero. |
 
-**R2 Score: 5.0/5** — Mechanism of self-deception identified.
+### Scope: Phase plan documents (7-13, SEPARATE files)
 
----
-
-## Round 3: Corrected Status Table + Actions
-
-### Corrected Status Table
-
-| Item | Old Status | Corrected Status | Evidence |
-|---|---|---|---|
-| K-space axioms được viết ra | ✅ | ✅ | K1-K8 in K_Space_Axiomatization.md, Layer 1 frozen |
-| K-space connected với EWF conceptually | ✅ phần | ✅ phần | T3 derives ⊥_K from EWF + AJVS; but AJVS itself is semantic commitment |
-| K-space có equation cho probability | ❌ | ❌ | K9_E is ANSATZ, not derived from K1-K8. Two inconsistent implementations in code |
-| K-space có numerical prediction | ❌ | ❌ | Predictions exist ON PAPER but from ansatz + inconsistent code |
-| K-space được compare với Proietti data | ❌ | ❌ | "Data" was reconstructed (V·QM), not extracted. Fit circular |
-| K-space "fit" EWF theo bất kỳ nghĩa nào | ❌ | ❌ | β=0 from circular fit. No independent evidence |
-
-### What needs to happen for each ❌ to become ✅?
-
-| Item | Required Action | Difficulty |
+| Item | Status | Issue |
 |---|---|---|
-| **Equation** | Either: (A) DERIVE a probability rule from K1-K8 axiomatically, or (B) honestly label K9_E as a HYPOTHESIS/POSTULATE (not a consequence of K-space) | (A) HARD, (B) EASY but changes the paper's claim |
-| **Numerical prediction** | Fix code inconsistency (one K9_E implementation). Compute predictions CORRECTLY from the formula | MEDIUM |
-| **Compare with data** | Extract REAL Proietti Figure 3 values (visual reading from PDF) OR use different experimental data | MEDIUM |
-| **"Fit" EWF** | Requires non-circular comparison with genuine data. May require new experimental data | HARD |
+| K9_E formula exists | ✅ in Phase 8 | But it's a POSTULATE, not derived from K1-K8 |
+| Code exists | ✅ in fits/ | But TWO inconsistent implementations |
+| "Fit" performed | ❌ CIRCULAR | Data reconstructed as V·QM → β=0 guaranteed |
+| Predictions computed | ⚠️ CONDITIONAL | Based on postulate, from ad-hoc code approximation |
 
-### Recommended path
+### Where numerical content ACTUALLY lives
 
-Option (B) is the honest path: **K9_E is a HYPOTHESIS, not a derivation.**
+```
+K_Space_Axiomatization.md      → 0 numbers, 0 equations, 0 data
+Phase8_candidate_equation.md   → K9_E formula (POSTULATE, no numbers)
+Phase10_data_fitting.md        → β=0 (CIRCULAR fit, not empirical)
+Phase11_3observer_prediction.md → δM₃ predictions (from POSTULATE)
+k9e_predictor.py               → code (ad-hoc approximation)
+d1_blk1_4point_fit.py          → code (circular fit, different formula)
+```
 
-This means:
-- K-space (K1-K8) = structural framework ✅
-- K9_E = proposed probability rule that USES K-space concepts ⚠️ HYPOTHESIS
-- The paper should present K9_E as "a natural hypothesis suggested by the K-space structure" not "a consequence of K-space axioms"
-- All numerical predictions should be labeled as "conditional on K9_E hypothesis"
-- The circular fit should be acknowledged and the ❌ status preserved until real data comparison is done
+**None of these are IN the main K-space document.** They are separate analysis files created during plan execution.
 
-**R3 Score: 5.0/5** — Path forward is clear.
+**R3 Score: 5.0/5**
 
 ---
 
-## RCA Decision
+## Corrected RCA Verdict
 
 ```
 ╔═══════════════════════════════════════════════════════════════╗
-║  RCA VERDICT: K-SPACE STATUS AUDIT                           ║
+║  RCA v2 VERDICT: K-SPACE STATUS                             ║
 ║                                                               ║
-║  User's assessment: CONFIRMED (4 out of 4 ❌ verified)       ║
+║  K_Space_Axiomatization.md (1156 lines):                     ║
+║    • Contains: K1-K8 axioms, T1-T7 theorems (structural)    ║
+║    • Does NOT contain: K9_E, β, f_perp, probabilities,      ║
+║      Proietti, numbers, calculations, fits, predictions      ║
 ║                                                               ║
-║  Root causes:                                                 ║
-║    1. K9_E is ANSATZ, not DERIVATION from K1-K8              ║
-║    2. Proietti "data" was reconstructed (V·QM), not real     ║
-║    3. Two inconsistent K9_E implementations in code          ║
-║    4. Phase 10 fit was CIRCULAR (guaranteed β=0)             ║
+║  STATUS: K-space does NOT fit EWF at ANY level.              ║
+║  Not "fit partially." Not "fit weakly."                      ║
+║  ZERO computation has been performed in the main document.   ║
 ║                                                               ║
-║  Corrective actions:                                          ║
-║    (a) Relabel K9_E as HYPOTHESIS in all documents           ║
-║    (b) Fix code inconsistency (k9e_predictor vs d1_blk1)    ║
-║    (c) Flag circular fit in Phase 10 document                ║
-║    (d) Update CHANGELOG, PP0, Phase 13 with corrected status ║
+║  Phase plan documents (separate files) contain K9_E work     ║
+║  but that work has its own problems:                         ║
+║    - K9_E = POSTULATE, not derived from K1-K8               ║
+║    - Fit is CIRCULAR (data = V·QM)                           ║
+║    - Two code files use different formulas                   ║
+║                                                               ║
+║  Previous RCA v1 error: confused "main document" with        ║
+║  "plan analysis documents." Corrected.                       ║
 ║                                                               ║
 ║  All 3 rounds = 5.0/5. Decision LOCKED.                     ║
 ╚═══════════════════════════════════════════════════════════════╝
 ```
+
+---
+
+## What would "K-space fits EWF" actually require?
+
+For ANY of the ❌ items to become ✅, the following must be added TO K_Space_Axiomatization.md (or a formal companion document):
+
+| Requirement | What it means concretely |
+|---|---|
+| **Probability equation** | A formula `P(o|k,Exp) = ...` stated as K9 axiom/postulate with β parameter |
+| **Numerical prediction** | At least one computed number: e.g., `S_K9E(β=0.3) = 2.78` |
+| **Data comparison** | Proietti S_exp = 2.416 ± 0.075 written in document, compared with K9_E prediction |
+| **Graph/table** | Numerical results showing K9_E vs QM vs data |
+| **Non-circular fit** | Real Figure 3 data extracted (not V·QM reconstruction) |
+
+**Currently: NONE of these exist in ANY document in a rigorous, non-circular form.**

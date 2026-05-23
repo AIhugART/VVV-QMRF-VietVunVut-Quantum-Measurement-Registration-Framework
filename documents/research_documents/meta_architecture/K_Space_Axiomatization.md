@@ -8,7 +8,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Date:** 2026-05-19
 **Version:** 2.1
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** v2.1 — algebraic layer extension. Layer 1 (K1-K8) is frozen; Layer 2 extended with T5 (K_joint composition), T6 (decoherence-induced registration update), T7 (IRB registration-scope propagation). Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D proposed registration-layer structures unless separately upgraded.
+**Status:** v2.1 — algebraic layer extension. Layer 1 (K1-K8) is frozen; Layer 2 extended with T5-T7. **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D proposed registration-layer structures unless separately upgraded.
 **Source:** Derived from VVV-QMRF Working Paper v2.0 Section 7.2 deferred item #5
 **Cite:** VVV-QMRF §K-AXIOM
 **Plan reference:** `papers/Testable_Prediction_Section/extended_wigners_friend_k_side_incommensurability/plan/VVV-QMRF_K_Space_Axiomatization_Plan.md`
@@ -18,6 +18,44 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Out of scope:** This document does not modify Standard Quantum Mechanics, does not change any VVV-QMRF postulate (E1-E16), does not upgrade claim classes of paper v2.0, and does not claim K-space is a canonical QM object.
 
 > **DISCLAIMER / CẢNH BÁO:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
+
+---
+
+### 0.6 Status Audit — What This Document Contains and Does NOT Contain
+
+*Added 2026-05-23 — RCA Status Audit v2*
+
+> [!CAUTION]
+> **This document is PURELY STRUCTURAL.** It contains axioms (K1-K8), bridge theorems (T1-T7), and open items. It does NOT contain any of the following:
+>
+> - ❌ **No probability equation.** No `P(o|k,Exp) = ...` formula. No K9 postulate.
+> - ❌ **No numerical values.** No 0.73, 0.5, π, ℏ, or any computed number.
+> - ❌ **No experimental data.** "Proietti" does not appear. No S_exp, no error bars.
+> - ❌ **No data comparison.** No fit, no χ², no graph, no table of results.
+> - ❌ **No numerical prediction.** No computed observable for any experiment.
+> - ❌ **No β parameter.** No free parameter. No suppression strength.
+>
+> **K-space (as axiomatized in this document) does NOT fit EWF at any level.**
+> Not "fit partially." Not "fit weakly." Zero computation has been performed.
+>
+> T3 (Bridge_EWF, §Layer 2) connects K-space vocabulary (⊥_K) to EWF scenarios, but this is a **definitional labeling** — it says "in EWF, ⊥_K fires" — not a quantitative fit.
+>
+> Separate analysis documents (`plan/Phase7-13`, `fits/`) contain K9_E work, but:
+> - K9_E is a POSTULATE, not derived from K1-K8
+> - Data fitting in those documents is CIRCULAR (reconstructed data, not extracted)
+> - Two code implementations use different formulas
+>
+> See `CHANGELOG.md` §17 for full audit record.
+
+| Content type | Present in this document? | Where it exists (if anywhere) |
+|---|---|---|
+| Axioms (K1-K8) | ✅ 8 axioms, Layer 1 frozen | This document §1 |
+| Bridge theorems (T1-T7) | ✅ 7 theorems, Layer 2 | This document §2 |
+| Probability equation (K9) | ❌ | `plan/Phase8_candidate_equation.md` (POSTULATE) |
+| Numerical values | ❌ | `fits/k9e_predictor.py` (ad-hoc approximation) |
+| Experimental data | ❌ | `fits/d1_blk1_4point_fit.py` (CIRCULAR reconstruction) |
+| Data comparison / fit | ❌ | `plan/Phase10_data_fitting.md` (CIRCULAR) |
+| Numerical predictions | ❌ | `plan/Phase11_3observer_prediction.md` (conditional on postulate) |
 
 ---
 
@@ -1132,6 +1170,10 @@ F-T7-01 (T5 dependency):
 | 10 | Update paper v2.0 Section 7.2 deferred item #5 status | After community feedback on this document | Low |
 | 11 | RCA re-audit after community feedback | After Level 4 freeze and T1-T3 finalization | High |
 | 12 | `CHANGELOG.md` §3.3 Operational Bridge semantic dependency on K4-K7 untracked | `CHANGELOG.md` §3.3 lists 7 sufficient-condition bridges (Condition A, B, B2, C, D, E, ODC_K) for raising `requires_K_joint`. The verdict notes B, B2, and ODC_K have indirect semantic dependency on K4-K7 validity propagation, but the table does not annotate which K-axioms each Condition row depends on. Add K-axiom dependency annotations (e.g., K4, K5, K7) to each §3.3 Condition row. Note: the predicate-level mapping (σ, V, ⊥, Auth, D_joint, requires_K_joint, C_K → K-axioms) is a separate task belonging to Layer 4 §4.4, not to §3.3. | Medium |
+| 13 | **Probability postulate (K9/P9)** | K-space axioms K1-K8 are purely structural — they define no probability rule. A probability assignment postulate (K9 or P9) is required to connect K-space to measurable predictions. K9_E exists in `plan/Phase8` as a POSTULATE but is not part of this axiomatization. Must be formally stated as a Layer 1 postulate or Layer 2 bridge theorem if K-space is to make quantitative predictions. | **Critical** |
+| 14 | **Non-circular data comparison** | Phase 10 data fitting used reconstructed data (`E_exp = V_exp · E_QM`, not extracted from Proietti Figure 3). This guarantees β=0 by construction. A genuine comparison requires extracting individual ⟨A_xB_y⟩ values from experimental figures or supplementary data tables. | **Critical** |
+| 15 | **Code consistency** | Two Python implementations of K9_E use different approximation formulas: `k9e_predictor.py` (δ = β²·E/n²) vs `d1_blk1_4point_fit.py` (δ = β·0.146·E). Neither rigorously computes the full K9_E probability rule for CHSH correlators. Must resolve to one correct implementation. | High |
+| 16 | **Numerical predictions in main document** | This document contains zero numerical values, zero computed predictions, zero graphs or result tables. If K-space is to be a testable framework, at minimum one numerical prediction must be stated in the axiomatization (or a formal companion document) with explicit comparison to experiment. | **Critical** |
 
 ---
 
