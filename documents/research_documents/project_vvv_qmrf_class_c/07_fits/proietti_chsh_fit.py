@@ -104,18 +104,18 @@ def fit_k9e_beta_from_S(verbose: bool = True) -> dict:
     }
 
     if verbose:
-        print("\n  K9_E β fit (PATH B — S_exp only):")
-        print(f"    β_fit     = {beta_fit:.4f}")
-        print(f"    S_K9E(β)  = {S_predicted:.4f}")
-        print(f"    S_exp     = {S_EXP:.3f} ± {S_ERR:.3f}")
+        print("\n  K9_E beta fit (PATH B -- S_exp only):")
+        print(f"    beta_fit  = {beta_fit:.4f}")
+        print(f"    S_K9E(b)  = {S_predicted:.4f}")
+        print(f"    S_exp     = {S_EXP:.3f} +/- {S_ERR:.3f}")
         print(f"    S_QM      = {S_qm:.4f}")
         print(f"    Residual  = {output['residual']:.6f}")
-        print(f"    DOF       = 0 (no χ² test)")
+        print(f"    DOF       = 0 (no chi2 test)")
         print()
-        print("    ⚠️  β is confounded with experimental noise.")
+        print("    WARNING: beta is confounded with experimental noise.")
         print("    S_exp < S_QM due to imperfections + possibly K9_E suppression.")
         print("    Cannot separate the two with S_exp alone.")
-        print("    Individual ⟨A_xB_y⟩ data (D1-BLK-1) would enable DOF≥2 fit.")
+        print("    Individual <A_xB_y> data (D1-BLK-1) would enable DOF>=2 fit.")
 
     return output
 
@@ -181,41 +181,41 @@ def comparison_report() -> None:
         PROIETTI_ANGLES_B[0], PROIETTI_ANGLES_B[1],
     )
     print(f"\n  Standard QM:  S_QM = {S_qm:.4f}")
-    print(f"  Experimental: S_exp = {S_EXP:.3f} ± {S_ERR:.3f}")
-    print(f"  Gap:          S_QM − S_exp = {S_qm - S_EXP:.3f}")
-    print(f"  Significance: {(S_qm - S_EXP) / S_ERR:.1f}σ from ideal QM")
+    print(f"  Experimental: S_exp = {S_EXP:.3f} +/- {S_ERR:.3f}")
+    print(f"  Gap:          S_QM - S_exp = {S_qm - S_EXP:.3f}")
+    print(f"  Significance: {(S_qm - S_EXP) / S_ERR:.1f}sigma from ideal QM")
 
     # K9_A (Class D)
-    print("\n  K9_A (V-Filter, Class D — FALLBACK):")
+    print("\n  K9_A (V-Filter, Class D -- FALLBACK):")
     S_k9a = k9a_chsh_S(
         PROIETTI_ANGLES_A[0], PROIETTI_ANGLES_A[1],
         PROIETTI_ANGLES_B[0], PROIETTI_ANGLES_B[1],
         v_rate=1.0,
     )
     print(f"    S_K9A(v_rate=1.0) = {S_k9a:.4f}")
-    print(f"    δS = S_K9A − S_QM = {S_k9a - S_qm:.6f}")
-    print(f"    K9_A = QM at probability level (δP = 0 always)")
+    print(f"    dS = S_K9A - S_QM = {S_k9a - S_qm:.6f}")
+    print(f"    K9_A = QM at probability level (dP = 0 always)")
 
     # K9_E (Class C)
     fit_result = fit_k9e_beta_from_S(verbose=True)
 
     # β upper bounds
-    print("\n  K9_E β upper bounds:")
+    print("\n  K9_E beta upper bounds:")
     for sig in [1.0, 2.0, 3.0]:
         b_max = beta_upper_bound(sigma=sig)
-        print(f"    β_max ({sig:.0f}σ) = {b_max:.4f}")
+        print(f"    beta_max ({sig:.0f}sigma) = {b_max:.4f}")
 
     # δS scan
-    print("\n  K9_E δS scan (deviation from QM):")
-    print(f"    {'β':>6s}  {'S_K9E':>10s}  {'δS':>10s}  {'δS/σ_S':>8s}")
+    print("\n  K9_E dS scan (deviation from QM):")
+    print(f"    {'beta':>6s}  {'S_K9E':>10s}  {'dS':>10s}  {'dS/s_S':>8s}")
     for beta in [0.0, 0.1, 0.2, 0.3, 0.5, 0.7, 0.9, 0.95]:
         ds = k9e_delta_S(beta)
         S_val = S_qm + ds
         sig = ds / S_ERR if S_ERR > 0 else 0
-        print(f"    {beta:6.2f}  {S_val:10.4f}  {ds:+10.6f}  {sig:+8.2f}σ")
+        print(f"    {beta:6.2f}  {S_val:10.4f}  {ds:+10.6f}  {sig:+8.2f}sigma")
 
     if not data_available():
-        print("\n  ⚠️  Individual ⟨A_xB_y⟩ data NOT YET EXTRACTED (D1-BLK-1)")
+        print("\n  WARNING: Individual <A_xB_y> data NOT YET EXTRACTED (D1-BLK-1)")
         print("     Cannot perform PATH A fit (individual correlators).")
         print("     Running in PLACEHOLDER MODE.")
 

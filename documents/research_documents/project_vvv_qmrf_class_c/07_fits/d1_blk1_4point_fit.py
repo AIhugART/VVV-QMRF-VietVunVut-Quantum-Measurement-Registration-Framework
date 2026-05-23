@@ -6,7 +6,7 @@ D1-BLK-1 Resolution: Reconstruct individual ⟨A_xB_y⟩ from Proietti data
 VVV-QMRF-EX as Compass
 
 WARNING (Status Audit 2026-05-23):
-  CIRCULAR FIT: E_exp is RECONSTRUCTED as V_exp * E_QM (line 63),
+  CIRCULAR FIT: E_exp is RECONSTRUCTED as V_exp * E_QM (lines 69-76),
   NOT extracted from Proietti Figure 3. The K9_E model predicts
   E_K9E = V_exp * E_QM * (1 - beta*g_eff). Chi-squared minimization
   of (V*E - V*E*(1-bg))^2 is GUARANTEED to yield beta=0.

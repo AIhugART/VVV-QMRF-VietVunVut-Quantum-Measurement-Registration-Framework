@@ -7,6 +7,8 @@
 **Primary candidate:** K9_E (⊥_K Suppression)
 **Input:** K9-S3 ranking decision
 
+> **ERRATUM (2026-05-23 RCA Status Audit):** This document originally used the label "AXIOM K9" for K9_E. K9_E is **NOT an axiom** — it is a **POSTULATE (P9)**, a probability assignment rule motivated by K-space structure (⊥_K, K_ctx) but not uniquely determined by the K1–K8 axioms. K1–K8 define structural properties only; probability requires an additional postulate. Occurrences of "AXIOM K9" have been corrected to "K9_E POSTULATE (P9)" in this document. See CHANGELOG §17 and Phase 8 ERRATUM.
+
 ---
 
 ## FORMALIZED K9_E DEFINITION
@@ -247,7 +249,7 @@ For β = 1.0 (maximum): δP ~ 3× larger → δS/σ ≈ 3.0σ → DETECTABLE.
 ## FORMALIZED STATEMENT
 
 ```
-AXIOM K9 (⊥_K SUPPRESSION — FORMALIZED):
+K9_E POSTULATE (P9) — ⊥_K SUPPRESSION (FORMALIZED):
 
   Let Exp = {R_1, ..., R_N} be observers with K-spaces K_{R_i}.
   Let k_i ∈ K_{R_i} with V(k_i) = 1 and ¬isNull(k_i).
@@ -290,6 +292,6 @@ AXIOM K9 (⊥_K SUPPRESSION — FORMALIZED):
 |---|---|---|
 | **R1: Formalization** | K_ctx defined via T3, f_perp formalized, ⊥_K extended inter-K-space. 4 assumptions with EX anchors. | **5.0/5** ✅ |
 | **R2: Proietti Predictions** | δP ≈ 2.6% for β=0.3. Detectable at ≥2σ for β≥0.5, ≥3σ for β≥0.8. f_perp genuinely outcome-dependent for fixed Alice outcome. | **4.5/5** ✅ |
-| **R3: Formalized Statement** | Complete K9 axiom with boundary conditions, assumptions, EX anchoring. Production-ready for K9-S5 adversarial. | **5.0/5** ✅ |
+| **R3: Formalized Statement** | Complete K9_E postulate with boundary conditions, assumptions, EX anchoring. Production-ready for K9-S5 adversarial. | **5.0/5** ✅ |
 
 **All 3 rounds ≥ 4/5. K9-S4 COMPLETE.**

@@ -11,7 +11,7 @@
 > [!CAUTION]
 > **ERRATUM (2026-05-23 Status Audit):** This Phase contains a **CIRCULAR FIT**.
 >
-> - "Data" used in d1_blk1_4point_fit.py was **RECONSTRUCTED** as `E_exp = V_exp · E_QM` (line 63), NOT extracted from Proietti Figure 3.
+> - "Data" used in d1_blk1_4point_fit.py was **RECONSTRUCTED** as `E_exp = V_exp · E_QM` (lines 69-76), NOT extracted from Proietti Figure 3.
 > - The K9_E model predicts `E_K9E = V_exp · E_QM · (1 − β·g)` (line 152).
 > - χ² minimization of `(V·E − V·E·(1−βg))² / σ²` is **GUARANTEED** to yield β=0.
 > - The "best-fit β=0" finding is a TAUTOLOGY, not an empirical result.

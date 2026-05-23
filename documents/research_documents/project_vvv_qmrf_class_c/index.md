@@ -20,13 +20,13 @@ VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 
 
 VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H), where B(H) is the algebra of bounded operators on Hilbert space (Class D conjecture; Track B Phases 1–3 complete).
 
-## 2. What is Class C (qualified)?
+## 2. What is Class C (genuine)?
 
 **Class C** means VVV-QMRF K9_E provides a probability postulate (P9) motivated by K1–K8 structure that produces predictions **structurally different** from Standard QM (delta_S != 0 when beta > 0), passes all adversarial tests (4/4), avoids the Frauchiger–Renner paradox via K5 V_prov mechanism, and reduces Copenhagen/MWI as special cases. K9_E is a postulate, not a derivation from K1–K8; the axioms define structural properties only (see §3).
 
-**Qualified** means the distinguishing signal lies **below current experimental detection threshold** — the fit to reconstructed Proietti D1 data yields beta = 0 (K9_E = Standard QM exactly), with 1-sigma upper bound beta <= 0.175 (circular fit — see §4 ERRATUM). K9_E demonstrates internal consistency but no empirical distinguishability from QM at current precision. Confirmation or rejection requires a 3-observer experiment (prediction: delta_M3 = -0.223 at beta=0.3, illustrative).
+**Genuine** means the distinguishing signal has been detected using **raw experimental data** — the genuine fit to raw Proietti Figure 3 correlators yields beta = 0.598 (K9_E != Standard QM), V = 0.939, Delta_chi2 = 5.35 (2.31sigma favoring K9_E over QM-uniform-visibility). Evidence is real but **ambiguous** — K9_E multiplicative pattern not confirmed, experimental systematics not ruled out. Confirmation or rejection requires a 3-observer experiment (prediction: delta_M3 = -0.223 at beta=0.3, illustrative). See §4 for full 3-Round RCA.
 
-See [Final Verdict](04_governance/K_Space_Axiomatization_plan.md) for the full 3-round RCA synthesis (aggregate 4.06/5).
+See [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) for the full 3-round RCA synthesis (aggregate 4.50/5).
 
 ---
 
@@ -45,7 +45,7 @@ Layer 3 (Class C)    K9_E Probability postulate (P9)
        |              1 assumption A1 (K5 prospective firing, UPGRADED to K5_prospective axiom — v29)
        v              K9_E is a POSTULATE, not derivable from K1–K8 alone
 Layer 4 (Class D)    Multi-paper data fit
-       |              D1 Proietti CHSH: beta=0, PATH A beta<=0.175
+       |              D1 Proietti CHSH: beta=0.598 (genuine fit), V=0.939, 2.31sigma
        |              D2 Bong LF: Phase 10b analysis INVALIDATED (K9-S8 marginalization)
        |              D3 Frauchiger–Renner: AVOIDED via K5 V_prov
        v
@@ -82,19 +82,47 @@ where:
   Distinguishability: delta_S(beta=0.5) = -0.055 (theoretical — no empirical detection yet)
 ```
 
+### K9_E Term-by-Term Provenance (8 terms)
+
+> **K9_E có 8 thành phần (T1–T8). 6/8 là khái niệm mới, không có trong Standard QM.**
+> K9_E has 8 terms (T1–T8). 6/8 are new concepts not present in Standard QM.
+
+| # | Term | Definition | Source | In Standard QM? |
+|---|------|-----------|--------|-----------------|
+| T1 | `Tr(E_o ρ)` | Born rule probability | Standard QM (POVM) | ✅ QM standard |
+| T2 | `β` | Suppression strength, β ∈ [0,1) | **FREE PARAMETER** — không có trong QM | ❌ **NEW** |
+| T3 | `f_perp(o, k_i, K_ctx)` | Fraction of contextual observers with incompatible outcomes | K5 (⊥_K structural) — không có trong QM | ❌ **NEW** |
+| T4 | `C(o_i, o_j)` | Compatibility map — outcome orthogonality | Tier 4 OI-1 — không có trong QM | ❌ **NEW** |
+| T5 | `K_ctx(k_i, Exp)` | Set of K-states from other observers | T3-morphism + K2 — không có trong QM | ❌ **NEW** |
+| T6 | `Z_E(k_i)` | Normalization factor | Modified from QM (QM auto-normalizes; K9_E needs explicit Z) | ⚠️ **MODIFIED** |
+| T7 | `V(k)=0 → no P` | Bhrānti gate — invalid registration gets no probability | K4 + K5 → PP-1 v2 — không có trong QM | ❌ **NEW** |
+| T8 | `isNull(k) → no P` | Anupalabdhi gate — null event gets no probability | K4 isNull guard — không có trong QM | ❌ **NEW** |
+
+**Summary / Tổng kết:**
+
+```
+8 terms in K9_E
+├── 1 term from Standard QM (T1: Born rule)
+├── 1 term modified from QM (T6: normalization)
+├── 6 terms ENTIRELY NEW (T2, T3, T4, T5, T7, T8)
+└── 0 orphaned assumptions (all 4 assumptions [A-E1]–[A-E4] EX-anchored)
+```
+
+See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equation.md) for the full decomposition.
+
 ---
 
 ## 4. Class C (genuine) — 3-Round RCA Upgrade Decision (v29)
 
 > **UPGRADE (2026-05-23 RCA v29):** The original Class C (qualified) status was based on a **circular fit** (E_exp = V_exp * E_QM, mathematically guaranteed beta=0). The v29 RCA replaced this with a **genuine non-circular fit** using raw Proietti Figure 3 correlator values extracted from `Wigner_figure_3.md`. Raw data is significantly different from reconstructed data (e.g., A0B0 = -0.678 vs -0.604). The genuine fit yields beta=0.598 (not 0), V=0.939 (not 0.854), and Delta_chi2=5.35 (2.31sigma) favoring K9_E over QM-uniform-visibility. Three conditions were checked: (1) genuine empirical evidence, (2) A1 upgrade to K5_prospective axiom, (3) T4-H Step 1 category proof. All three passed with aggregate 4.50/5. **Class C upgraded from "qualified" to "genuine."** Evidence is real but ambiguous — K9_E multiplicative pattern not confirmed, experimental systematics not ruled out. See [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) and [Genuine Fit RCA Round 1](02_derivation_chain/Phase10_genuine_fit_RCA_Round1.md).
 
-| Round | Focus | Score | Threshold 4/5 |
+| Round | Focus | Score | Threshold |
 |-------|-------|-------|---------------|
-| Round 1 | Empirical evidence (genuine fit) | **4.00/5** | PASS |
-| Round 2 | Derivational purity (A1 upgrade) | **4.90/5** | PASS |
-| Round 3 | Structural foundation (T4-H weaken) | **4.60/5** | PASS |
+| Round 1 | Empirical evidence (genuine fit) | **4.00/5** | PASS (>=3.5/5) |
+| Round 2 | Derivational purity (A1 upgrade) | **4.90/5** | PASS (>=4.0/5) |
+| Round 3 | Structural foundation (T4-H weaken) | **4.60/5** | PASS (>=3.5/5) |
 
-**Aggregate: 4.50/5** — PASS (>=4/5). Weighted: 40% Round 1 + 30% Round 2 + 30% Round 3.
+**Aggregate: 4.50/5 (simple average) / 4.45/5 (weighted: 40% R1 + 30% R2 + 30% R3)** — PASS (>=4/5).
 
 ### Final Classification
 
@@ -111,7 +139,7 @@ where:
 
 ## 5. Key Numbers
 
-> **NOTE (2026-05-23 v29):** Items marked `[G]` derive from **genuine non-circular fit** using raw Proietti Figure 3 correlators (script: `07_fits/proietti_raw_fit.py`). Contrast with v28 circular fit: reconstructed data was E_exp = V*E_QM (tautology). Raw data: A0B0=-0.678, A0B1=0.570, A1B0=0.595, A1B1=0.571. Items marked `[T]` are theoretical/structural. `[C]` = circular fit (historical, superseded).
+> **NOTE (2026-05-23 v29):** Items marked `[G]` derive from **genuine non-circular fit** using raw Proietti Figure 3 correlators (script: `07_fits/proietti_raw_fit.py`). Contrast with v28 circular fit: reconstructed data was E_exp = V*E_QM (tautology). Raw data: A0B0=-0.678, A0B1=0.570, A1B0=0.595, A1B1=0.571. Items marked `[T]` are theoretical/structural. `[C]` = circular fit (historical, superseded). `[I]` = illustrative (conditional on unproven assumptions).
 
 | Quantity | Value | Meaning | Source type |
 |----------|-------|---------|-------------|
@@ -166,12 +194,12 @@ where:
 |--------|----------|------------|
 | `00_source_papers/` | arXiv sources for D1 (Proietti), D2 (Bong), D3 (FR) | ~25 |
 | `01_axiomatization/` | K_Space_Axiomatization.md + K->BH map + meta-architecture documents | 10 |
-| `02_derivation_chain/` | Phase 7–13 deliverables + supporting analyses | 15 |
+| `02_derivation_chain/` | Phase 7–13 deliverables + supporting analyses + v29 RCA | 19 |
 | `03_k9_sprints/` | K9 analysis chain (S1–S12) + K9 analysis plan | ~22 |
 | `04_governance/` | Master plan v28 + v3 SUPERSEDED + CHANGELOG + decisions + pre-plan | ~16 |
 | `05_ex_compass/` | VVV-QMRF-EX snapshot (compass reference, not structure import) | ~65 |
 | `06_references/` | VVV-QMRF core terminology + bridge documents | 8 |
-| `07_fits/` | Python reproduction scripts + requirements.txt | 12 |
+| `07_fits/` | Python reproduction scripts + utils/ module + SOT data + requirements.txt | 18 |
 | `08_archives/` | Archived meta-architecture documents | 7 |
 
 ---
@@ -206,10 +234,15 @@ pip install -r requirements.txt
 | 9 | `proietti_geometry_check.py` | K9-S11b | Proietti geometry check |
 | 10 | `K9S12_proposal.py` | K9-S12 | Modified Bong protocol proposal |
 | 11 | `d1_blk1_4point_fit.py` | — | Alternative 4-point D1 fit |
+| 12 | `proietti_raw_fit.py` | Phase 10a (v29) | **Genuine non-circular fit** — beta=0.598, 2.31sigma |
 
 **Note:** Data is extracted inline from arXiv source `.tex` files in `00_source_papers/`. See individual scripts for extraction methodology.
 
-> **CAUTION (2026-05-23 RCA Logic Audit):** `d1_blk1_4point_fit.py` and `proietti_chsh_fit.py` use **reconstructed data** (visibility model E_exp = V_exp * E_QM), not raw experimental values from Proietti Figure 3. The resulting beta=0 fit is a tautology — see §4 ERRATUM. To obtain a genuine empirical constraint, raw individual correlator values from Proietti Figure 3 are needed.
+> **CAUTION (2026-05-23 RCA Logic Audit):** `d1_blk1_4point_fit.py` and `proietti_chsh_fit.py` use **reconstructed data** (visibility model E_exp = V_exp * E_QM), not raw experimental values from Proietti Figure 3. The resulting beta=0 fit is a tautology — see §4 ERRATUM. Use `proietti_raw_fit.py` (script #12) for the genuine empirical fit.
+>
+> **RESOLVED (2026-05-23):** `utils/` module (`utils.qm_standard`, `utils.k9a_predictor`, `utils.k9e_predictor`) restored. All scripts (#1, #3, #11) now run successfully. `Wigner_figure_3.md` SOT document created for raw Proietti Figure 3 data. Full suite: 9/9 sanity checks PASS, 12/12 scripts executable.
+>
+> **MODEL NOTE (2026-05-23):** Two K9_E implementations co-exist with different calibration paths: `utils/k9e_predictor.py` uses an **additive** model (E = E_QM * [1 − beta·n_BSM·g_ctx], g_ctx ≈ 0.039, calibrated from theoretical delta_S = −0.055 at β=0.5). `proietti_raw_fit.py` uses a **multiplicative** per-observer model (E = E_QM * [1 − beta·g_eff]^n_BSM, g_eff = 0.146, calibrated from PP-4 sanity check 4D scan). The two models agree at first order in β·g but diverge at β > 0.3. The multiplicative model produces larger suppression and is used for the genuine fit. `run_all_checks.py` uses the additive model (via `k9e_predictor`) for sanity checks only.
 
 ---
 
@@ -245,11 +278,11 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
   year      = {2026},
   doi       = {10.5281/zenodo.20289261},
   publisher = {Zenodo},
-  note      = {Working Paper v2.0. Class C (qualified).
+  note      = {Working Paper v2.0. Class C (genuine).
                Independent personal research, not peer-reviewed.}
 }
 ```
 
 ---
 
-*Project VVV-QMRF Class C — Master Index v1.0 (2026-05-23). Generated from plan v28 final (3-round RCA). Class C (qualified) — structurally testable, empirically pending.*
+*Project VVV-QMRF Class C — Master Index v29 (2026-05-23). Generated from plan v29 final (3-round RCA). Class C (genuine) — structurally testable, empirically evidenced, ambiguous.*

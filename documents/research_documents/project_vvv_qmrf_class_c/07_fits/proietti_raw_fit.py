@@ -154,11 +154,15 @@ print(f"  Significance = {np.sqrt(max(0, delta_chi2)):.2f} sigma")
 print()
 
 # ============================================================
-# SECTION 6: BETA UPPER BOUNDS (from raw data)
+# SECTION 6: BETA CONFIDENCE INTERVALS (from raw data)
 # ============================================================
+# NOTE: The profile chi^2(beta) is NON-MONOTONIC — it is high at beta=0
+# (chi2=6.687), decreases to chi2_min=1.340 at beta=0.598, then increases.
+# Beta=0 is excluded at >2sigma (Delta_chi2=5.35). Confidence intervals
+# are computed by scanning outward from the minimum in both directions.
 
 print("=" * 60)
-print("BETA UPPER BOUNDS (from raw Figure 3 data)")
+print("BETA CONFIDENCE INTERVALS (from raw Figure 3 data)")
 print("=" * 60)
 
 def profile_chi2_beta(beta_val):
@@ -166,17 +170,19 @@ def profile_chi2_beta(beta_val):
     res = minimize_scalar(lambda v: chi2([v, beta_val]), bounds=(0.8, 1.0), method='bounded')
     return res.fun
 
+# Scan beta grid for profile chi^2
+beta_grid = np.linspace(0, 0.99, 5000)
+beta_scan = np.array([profile_chi2_beta(b) for b in beta_grid])
+
 for nsigma, dchi2 in [(1, 1.0), (2, 4.0), (3, 9.0)]:
     chi2_target = chi2_min + dchi2
-    beta_upper = None
-    for b in np.linspace(0, 0.99, 5000):
-        if profile_chi2_beta(b) > chi2_target:
-            beta_upper = b
-            break
-    if beta_upper is not None:
-        print(f"  {nsigma}sigma upper bound: beta <= {beta_upper:.4f}")
+    inside = beta_grid[beta_scan <= chi2_target]
+    if len(inside) > 0:
+        beta_low = inside[0]
+        beta_high = inside[-1]
+        print(f"  {nsigma}sigma CI: beta in [{beta_low:.4f}, {beta_high:.4f}]")
     else:
-        print(f"  {nsigma}sigma upper bound: beta > 0.99 (unconstrained)")
+        print(f"  {nsigma}sigma CI: no beta values within threshold (unconstrained)")
 
 print()
 
