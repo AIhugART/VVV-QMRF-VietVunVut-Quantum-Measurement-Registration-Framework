@@ -2,7 +2,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # K-Space Axiomatization CHANGELOG
 
-**Version:** 2.0 historical record split
+**Version:** 2.1 — T4-H Step 2 complete (2026-05-23)
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
@@ -13,6 +13,30 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Root cause:** The same file was serving two roles: canonical axiom/theorem reference and research-development log.
 
 **Fix:** Keep the current formal axioms, bridge theorems, and open items in `K_Space_Axiomatization.md`; preserve historical records here.
+
+## 0.0 — T4-H Step 2 Completion Record / Ban ghi Hoan thanh T4-H Step 2
+
+**Date:** 2026-05-23
+**Method:** 3-Round RCA × 5-Why × Scoring Threshold 4/5
+**Scope:** VVV-QMRF scope, VVV-QMRF-EX as compass
+**Aggregate Score:** 4.73/5 (PASS >= 4/5)
+
+**What was done:** Constructed K_colim = colim(D) = (∐_i K_i)/~ explicitly for any finite commutative diagram D in C_{K-space}.
+
+**Key decisions:**
+- D1: Canonical t via lexicographic minimum — unique, deterministic, injective, no global clock
+- D2: V_colim at embedding time (K8 snapshot) — avoids hidden K7 timing dependency
+- D3: Construct <_colim; defer cycle check — follows T1 pattern (candidate → verify)
+- D4: Assume commutative D — T4 F7d guard; non-commutative case is Step 3 rejection
+- D5: t-preservation as set membership — honest about quotient effect on timestamps
+
+**Verification gates:** 5/5 PASS (G1: M/o/cert well-defined, G2: t_colim injective, G3: V_colim K8-consistent, G4: <_colim deterministic, G5: ι_i valid morphism)
+
+**Resolved sub-problems:** SP1 (t-field, lexicographic minimum), SP2 (V-field, embedding-time snapshot), SP3 (order, candidate constructed, cycle check → Step 3)
+
+**T4-H upgrade:** CONDITIONAL THEOREM (1/4 → 2/4). Steps 3-4 remain deferred.
+**Proof document:** project_vvv_qmrf_class_c/02_derivation_chain/T4_H_step2_colimit_construction.md
+**Affected files:** K_Space_Axiomatization.md §2 T4-H (status updated), K_Space_Axiomatization.md project copy (synced)
 
 ## 0.1 Level 4 Unfreeze Gate Record / Bản ghi Cổng Unfreeze Level 4
 

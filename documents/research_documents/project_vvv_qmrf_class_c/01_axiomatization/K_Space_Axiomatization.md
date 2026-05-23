@@ -935,27 +935,32 @@ T4-H — Colimit Existence Hypothesis (explicit conditional — F-RCA-P4-06 Opti
     For any finite diagram D of K-spaces with K1-K8-preserving morphisms,
     the colimit colim(D) exists in C_{K-space}.
 
-  Status: HYPOTHESIS, not a theorem derivable from K1-K8 alone.
-    K1-K8 define the structure of individual K-spaces; they do NOT by
-    themselves prove that C_{K-space} is cocomplete (has all colimits).
-    T4 conclusions hold CONDITIONAL on T4-H.
+  Status: CONDITIONAL THEOREM (2/4 steps verified — 2026-05-23 RCA).
 
-  Plausibility argument (not a proof — see Open Item A5):
-    Each K_R is a finite totally-ordered set (K2 chain) of K1-structured
-    tuples with binary V (K4-K5) and intrinsic cert (K3). The category
-    of finite totally-ordered sets with order-preserving maps has finite
-    colimits (disjoint union + quotient by morphism-imposed equivalences).
-    K1-K8 morphisms preserve the five-field tuple structure; shared cross-rel
-    and global commutativity (F7d) impose the identification conditions.
-    A finite colimit of such sets is therefore structurally plausible, but
-    the rigorous category-theoretic proof is deferred to Open Item A5.
+    Step 1 (C_{K-space} category): VERIFIED — identity, composition, associativity.
+    Step 2 (colimit construction): VERIFIED — K_colim = (∐_i K_i)/~ constructed;
+      all 5 tuple fields well-defined via lexicographic t-assignment (SP1 resolved)
+      and embedding-time V snapshot (SP2 resolved); <_colim constructed via
+      T1-generalized transitive closure (SP3 constructed, cycle detection deferred
+      to Step 3); 5/5 verification gates PASS.
+      Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_step2_colimit_construction.md
+      (3-Round RCA, aggregate 4.73/5).
+    Step 3 (K1-K8 preservation through quotient): DEFERRED — K5 cross-K_R ⊥ paths,
+      V dynamics, cycle detection in <_colim.
+    Step 4 (universal property): DEFERRED — existence + uniqueness of mediating
+      morphism.
+    K1-K8 define the structure of individual K-spaces; they do NOT by themselves
+    prove that C_{K-space} is cocomplete. T4 conclusions hold CONDITIONAL on
+    T4-H Steps 1-4.
 
   Conditional scope:
-    If T4-H holds  → T4 conclusions valid for all N ≥ 2.
+    If T4-H Steps 1-4 hold  → T4 conclusions valid for all N ≥ 2.
     If T4-H fails  → N-observer colimit may not exist in general; T1
                      (N = 2, constructive) remains valid independently
                      because T1 builds K_joint explicitly without invoking
                      the colimit universal property.
+    Current (2/4): K_colim EXISTS as a well-defined set with well-defined K1
+    tuple fields. Steps 3-4 remain deferred but the construction is explicit.
 
 Non-transitivity of ⊥_K:
   Counter-example possibility:

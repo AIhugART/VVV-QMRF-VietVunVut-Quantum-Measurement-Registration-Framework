@@ -187,6 +187,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | What is the genuine non-circular fit? | [Genuine Fit RCA Round 1](02_derivation_chain/Phase10_genuine_fit_RCA_Round1.md) |
 | How was A1 upgraded? | [K_Space_Axiomatization.md §K5_prospective](01_axiomatization/K_Space_Axiomatization.md) |
 | How was T4-H Step 1 proven? | [T4-H Step 1 Category Proof](02_derivation_chain/T4_H_step1_category_proof.md) |
+| How was T4-H Step 2 colimit constructed? | [T4-H Step 2 Colimit Construction](02_derivation_chain/T4_H_step2_colimit_construction.md) |
 
 ### Folder Index
 
