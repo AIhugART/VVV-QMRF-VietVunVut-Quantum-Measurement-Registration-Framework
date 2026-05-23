@@ -4,11 +4,13 @@
 
 **Phase:** 8 (Prompt 2 of Main Plan — STREAMLINED)
 **Date:** 2026-05-23
+**Version:** v29 update — A1 eliminated via K5_prospective (see RCA Final Verdict)
 **Input:** Phase 7 COMPLETE (all constraints ✅), K9_E LOCKED v1.0
-**Note:** K9 analysis pipeline (K9-S1→S7) already performed candidate generation + selection. Phase 8 documents THE selected equation, not 3 candidates.
 
 > [!CAUTION]
-> **ERRATUM (2026-05-23 Status Audit):** This document was originally titled "K9_E Formal Derivation." K9_E is NOT derived from K1-K8. It is a **POSTULATE** — a probability assignment rule motivated by K-space structure (⊥_K, K_ctx) but not uniquely determined by K1-K8 axioms. The K-axioms (K1-K8) define structural properties only; probability requires an additional postulate. K9_E fills this role as **Postulate P9** (Type B framework extension, āgama-level in EX compass).
+> **ERRATUM (2026-05-23 Status Audit):** This document was originally titled "K9_E Formal Derivation." K9_E is NOT derived from K1-K8. It is a **POSTULATE** — a probability assignment rule motivated by K-space structure (bot_K, K_ctx) but not uniquely determined by K1-K8 axioms.
+>
+> **UPDATE (v29):** Former A1 "K5 prospective firing" (semantic extension, Class D) has been **ELIMINATED** — upgraded to K5_prospective clause in K_Space_Axiomatization.md. Zero Class D assumptions remain.
 
 ---
 

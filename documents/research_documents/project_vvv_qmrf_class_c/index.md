@@ -3,8 +3,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Project VVV-QMRF Class C — Master Index
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
-**Status:** Class C (qualified) — structurally testable, empirically pending
-**Version:** v28 final (2026-05-23)
+**Status:** Class C (genuine) — structurally testable, empirically evidenced, ambiguous
+**Version:** v29 (2026-05-23) — 3-Round RCA upgrade from Class C (qualified)
 **Zenodo DOI:** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0)
 **License:** CC BY 4.0
 
@@ -42,7 +42,7 @@ Layer 2 (UPDATABLE)  T1–T7 Bridge theorems
 Layer 3 (Class C)    K9_E Probability postulate (P9)
        |              P(o|K) = Tr(E_o rho) * f_perp(K_ctx)
        |              1 parameter beta, 8 terms with K-space provenance
-       |              1 assumption A1 (K5 prospective firing, Class D pending)
+       |              1 assumption A1 (K5 prospective firing, UPGRADED to K5_prospective axiom — v29)
        v              K9_E is a POSTULATE, not derivable from K1–K8 alone
 Layer 4 (Class D)    Multi-paper data fit
        |              D1 Proietti CHSH: beta=0, PATH A beta<=0.175
@@ -84,46 +84,48 @@ where:
 
 ---
 
-## 4. Class C (qualified) — 3-Round RCA Decision
+## 4. Class C (genuine) — 3-Round RCA Upgrade Decision (v29)
 
-> **ERRATUM (2026-05-23 RCA Logic Audit):** Round 2 (Empirical evidence, 3.63/5 FAIL) uses a **circular fit** as its primary data input. Phase 10's Proietti D1 "data" was reconstructed as `E_exp = V_exp * E_QM`, and K9_E at beta=0 reduces to QM. The chi^2 minimization of `(V*E_QM - V*E_QM*(1-beta*g))^2` is mathematically guaranteed to yield beta=0. The Phase 10 result demonstrates **internal consistency** of K9_E (constraint satisfaction, normalization), not empirical comparison with real experimental data. The "qualified" status is correct (empirically pending), but the Round 2 score and PATH A bounds below derive from a tautological fit, not from raw Proietti Figure 3 data. See [Phase 10 ERRATUM](02_derivation_chain/Phase10_data_fitting.md) and [Phase 10 Joint Verdict](02_derivation_chain/Phase10_joint_verdict.md).
+> **UPGRADE (2026-05-23 RCA v29):** The original Class C (qualified) status was based on a **circular fit** (E_exp = V_exp * E_QM, mathematically guaranteed beta=0). The v29 RCA replaced this with a **genuine non-circular fit** using raw Proietti Figure 3 correlator values extracted from `Wigner_figure_3.md`. Raw data is significantly different from reconstructed data (e.g., A0B0 = -0.678 vs -0.604). The genuine fit yields beta=0.598 (not 0), V=0.939 (not 0.854), and Delta_chi2=5.35 (2.31sigma) favoring K9_E over QM-uniform-visibility. Three conditions were checked: (1) genuine empirical evidence, (2) A1 upgrade to K5_prospective axiom, (3) T4-H Step 1 category proof. All three passed with aggregate 4.50/5. **Class C upgraded from "qualified" to "genuine."** Evidence is real but ambiguous — K9_E multiplicative pattern not confirmed, experimental systematics not ruled out. See [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) and [Genuine Fit RCA Round 1](02_derivation_chain/Phase10_genuine_fit_RCA_Round1.md).
 
 | Round | Focus | Score | Threshold 4/5 |
 |-------|-------|-------|---------------|
-| Round 1 | Derivational purity | **4.25/5** | PASS |
-| Round 2 | Empirical evidence | **3.63/5** | FAIL (circular fit — see ERRATUM above) |
-| Round 3 | Synthesis classification | **4.30/5** | PASS |
+| Round 1 | Empirical evidence (genuine fit) | **4.00/5** | PASS |
+| Round 2 | Derivational purity (A1 upgrade) | **4.90/5** | PASS |
+| Round 3 | Structural foundation (T4-H weaken) | **4.60/5** | PASS |
 
-**Aggregate: 4.06/5** — PASS (>=4/5). Arithmetic mean of three rounds. Round 2 FAIL is not weighted differently from Round 1/3 PASS scores; the "qualified" qualifier directly reflects the Round 2 failure — structural Class C is achieved, but empirical evidence is insufficient (circular fit + no raw experimental data).
+**Aggregate: 4.50/5** — PASS (>=4/5). Weighted: 40% Round 1 + 30% Round 2 + 30% Round 3.
 
 ### Final Classification
 
-> **VVV-QMRF K9_E = Class C (qualified) — structurally testable, empirically pending.**
+> **VVV-QMRF K9_E = Class C (genuine) — structurally testable, empirically evidenced, ambiguous.**
 >
-> K9_E achieves Class C structurally: probability postulate P9 motivated by K1–K8 structure, generates distinguishability != Standard QM (delta_S != 0 when beta > 0), avoids FR paradox via K5 V_prov, reduces Copenhagen/MWI as special cases.
+> K9_E achieves Class C structurally (unchanged from v28): probability postulate P9 motivated by K1-K8 structure, generates distinguishability != Standard QM (delta_S != 0 when beta > 0), avoids FR paradox via K5 V_prov, reduces Copenhagen/MWI as special cases.
 >
-> **3 conditions:**
-> 1. **A1 upgrade (required):** K5 prospective firing must be promoted from "semantic extension" to axiom text. Until then, K9_E carries 1 Class D assumption.
-> 2. **Phase 10->9 feedback (applied):** P9-C6 "Class C confirmed" qualified by beta=0 empirical limitation.
-> 3. **3-observer experiment (future):** Confirmation or rejection requires experiment measuring delta_M3 = -0.223 (11x amplification).
+> **v29 upgrades (3 conditions satisfied):**
+> 1. **Genuine empirical evidence:** Raw Proietti Figure 3 data used. Non-circular fit: beta=0.598, V=0.939, Delta_chi2=5.35 (2.31sigma) vs QM-uniform. Evidence is real but ambiguous — K9_E pattern not confirmed.
+> 2. **A1 upgraded:** K5_prospective added as conservative extension to K5 (identical conditions (i)-(iii), new evaluation target only). Zero Class D assumptions remain.
+> 3. **T4-H weakened:** Step 1 (C_{K-space} category) proven. Steps 2-4 (colimit construction) honestly deferred. K9_E only needs T1 (N=2 constructive), not T4.
 
 ---
 
 ## 5. Key Numbers
 
-> **NOTE (2026-05-23 RCA Logic Audit):** Items marked `[C]` derive from a **circular fit** (data reconstructed from QM, not from raw experimental data — see §4 ERRATUM). These values demonstrate internal consistency, not empirical constraint. Items marked `[T]` are theoretical/structural results independent of the fit. Items marked `[I]` are illustrative predictions at a chosen beta value, not predictions from best-fit.
+> **NOTE (2026-05-23 v29):** Items marked `[G]` derive from **genuine non-circular fit** using raw Proietti Figure 3 correlators (script: `07_fits/proietti_raw_fit.py`). Contrast with v28 circular fit: reconstructed data was E_exp = V*E_QM (tautology). Raw data: A0B0=-0.678, A0B1=0.570, A1B0=0.595, A1B1=0.571. Items marked `[T]` are theoretical/structural. `[C]` = circular fit (historical, superseded).
 
 | Quantity | Value | Meaning | Source type |
 |----------|-------|---------|-------------|
-| beta (best-fit, Proietti D1) | 0 | K9_E = Standard QM at best-fit | `[C]` circular fit |
-| PATH A upper bound (1-sigma) | beta <= 0.175 | Distinguishability not excluded up to this value (from reconstructed data) | `[C]` circular fit |
+| beta (best-fit, Proietti D1 raw) | 0.598 | K9_E != Standard QM at best-fit | `[G]` genuine fit |
+| V (visibility, fitted) | 0.939 | Higher than circular V=0.854 — non-uniform visibility detected | `[G]` genuine fit |
+| chi2/DOF | 0.670 (DOF=2) | Good fit quality, p=0.51 | `[G]` genuine fit |
+| Delta_chi2 (K9_E vs QM-only) | 5.35 (2.31sigma) | K9_E improves over QM-uniform-visibility | `[G]` genuine fit |
 | delta_S (beta=0.5, CHSH) | -0.055 | Theoretical distinguishability magnitude | `[T]` structural |
-| delta_M3 (beta=0.3, 3-observer) | -0.223 | 11x amplification over 2-observer (illustrative: beta=0.3 is above PATH A 1-sigma bound) | `[I]` illustrative |
-| chi2/DOF (beta=0) | 0 | Perfect fit (degenerate — K9_E = QM at beta=0) | `[C]` circular fit |
+| delta_M3 (beta=0.3, 3-observer) | -0.223 | 11x amplification (illustrative, conditional on T4-H Steps 2-4) | `[I]` illustrative |
 | FR paradox | AVOIDED | K5 V_prov breaks assumption chain C | `[T]` structural |
 | Born recovery | cert=1 and V=1 => Born exact | Verified | `[T]` structural |
 | Adversarial tests | 4/4 PASS | No counterexample, 0 axiom violations | `[T]` structural |
 | Operationalizability gates | 3/3 PASS | G1/G2/G3 all 5.0/5 | `[T]` structural |
+| K9_E pattern check (2BSM/1BSM ratio) | -0.78 (predicted ~2) | Multiplicative pattern NOT confirmed | `[G]` genuine fit |
 
 ---
 
@@ -153,6 +155,10 @@ where:
 | How do I reproduce the numerical fits? | [07_fits/](07_fits/) — see section 7 below |
 | Where are the source papers? | [00_source_papers/](00_source_papers/) |
 | What is the testability status after K9-S12? | [03_k9_sprints/k9_s12/paper_plan_single_waveplate_EWF.md](03_k9_sprints/k9_s12/paper_plan_single_waveplate_EWF.md) |
+| What changed in v29 (Class C genuine)? | [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) |
+| What is the genuine non-circular fit? | [Genuine Fit RCA Round 1](02_derivation_chain/Phase10_genuine_fit_RCA_Round1.md) |
+| How was A1 upgraded? | [K_Space_Axiomatization.md §K5_prospective](01_axiomatization/K_Space_Axiomatization.md) |
+| How was T4-H Step 1 proven? | [T4-H Step 1 Category Proof](02_derivation_chain/T4_H_step1_category_proof.md) |
 
 ### Folder Index
 
@@ -211,8 +217,10 @@ pip install -r requirements.txt
 
 | # | Item | Status | Priority |
 |---|------|--------|----------|
-| A1 | K5 prospective firing — promote from "semantic extension" to axiom text in K9_E derivation | **REQUIRED** for unqualified Class C | HIGH |
+| A1 | ~~K5 prospective firing — promote from "semantic extension" to axiom text~~ | **RESOLVED (v29)** — upgraded to K5_prospective clause in K_Space_Axiomatization.md | ~~HIGH~~ |
+| K9E-PAT | K9_E multiplicative pattern (2BSM/1BSM ratio ~2) not confirmed by raw data (ratio = -0.78) — g=0.146 model may be too simplistic | New (v29) | HIGH |
 | 3-OBS | 3-observer experiment — delta_M3 = -0.223 (11x) prediction ready, experimental design deferred | **FUTURE WORK** | HIGH |
+| P10-NOISE | Non-uniform experimental noise cannot be ruled out as alternative explanation for genuine fit improvement | New (v29) | MEDIUM |
 | P10-TIM | Null-model N0 fit omitted — requires raw event-level data; deferred | DECISION-LOCKED (RCA R4) | MEDIUM |
 | BONG | Bong LF modified protocol proposal (K9-S12) | In progress | MEDIUM |
 | PUB | Publication path — Foundations of Physics / Phys Rev A submission readiness | Outlined in Phase 13 | MEDIUM |

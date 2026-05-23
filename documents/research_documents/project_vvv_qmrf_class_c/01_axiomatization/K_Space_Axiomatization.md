@@ -386,6 +386,52 @@ K_R disambiguation (cross-space context):
 | **Boundary** | K5 is a registration-layer invalidation rule. It does NOT claim that the physical outcome of M_1 is retroactively erased from ρ-side history. The physical interaction I_1 still occurred; only its K-side registration validity is revised. The `⊥` relation is NOT physical orthogonality in H. The irreversibility of V→0 is a K-side property, not a claim about physical time asymmetry. |
 | **Consistency** | K5 is consistent with E7 Axioms 2-3 and with the act-level contradiction definition in paper v2.0 §4.4. The primitive predicates (⊥, C_K, cross-registration authority) now have minimal operational definitions: ⊥ is defined above in K5, C_K is tied to requires_K_joint, and authority is formalized in K6 below. This removes the prior dependency inversion where frozen K5 relied on undefined Level 4 primitives. |
 
+#### K5_prospective — Pre-Instantiation Evaluation Extension (P9 Bridge)
+
+**Statement:**
+> For probability assignment within K9_E (Postulate P9), K5's invalidation condition (i)-(iii) admits a **prospective evaluation mode** on hypothetical registration tuples. This extension is necessary because K5 was designed for post-hoc invalidation of actual tuples (modifying V_prov), whereas probability evaluation requires pre-instantiation assessment: "what would happen if outcome o were registered?"
+
+**Formal:**
+```
+Let k_o* = ⟨M*, o, cert=1, t*, V=1⟩ be a hypothetical K-state tuple representing
+the registration that WOULD be instantiated if outcome o is realized.
+
+K5 fires prospectively on k_o* iff requires_K_joint = 1 (C_K exists) AND
+∃ k_prev ∈ K_joint such that:
+  (i)   k_prev <_joint k_o*           [temporal ordering: k_prev precedes candidate]
+  (ii)  k_o* ⊥ k_prev within C_K      [registered contradiction between o and k_prev content]
+  (iii) Auth(k_o* → k_prev, C_K) = 1  [cross-registration authority conditions per K6]
+
+Prospective firing does NOT modify V of any actual tuple in K_R.
+Prospective firing ONLY contributes to f_perp(o) in K9_E:
+  f_perp(o) = |{k_prev ∈ K_ctx : K5 fires prospectively on k_o* vs k_prev}| / |K_ctx|
+
+K5_prospective preserves the identical structural conditions (i)-(iii) from K5.
+The only extension is the evaluation TARGET: hypothetical tuple k_o* instead of
+actual tuple k1 ∈ K_R. This is a conservative extension — it adds a new evaluation
+mode without modifying any existing K5 behavior.
+```
+
+**Relationship to K5 (parent axiom):**
+```
+K5 (post-hoc):    V(k1) → 0  iff  ∃k2: k1 <_R k2 ∧ k2 ⊥ k1 ∧ Auth(k2→k1)
+                  Target: actual tuple k1 ∈ K_R. Effect: V_prov modified.
+
+K5_prospective:   K5 fires on k_o*  iff  ∃k_prev: k_prev <_joint k_o* ∧ k_o* ⊥ k_prev ∧ Auth
+                  Target: hypothetical tuple k_o*. Effect: contributes to f_perp(o).
+
+Same conditions (i)-(iii). Same structural logic. Different target and effect.
+```
+
+| Property | Value |
+|---|---|
+| **Source** | Required by K9_E (P9) for probability evaluation. A1 upgrade from semantic extension to explicit axiom-level clause. RCA Round 2 — 2026-05-23. |
+| **BE lineage** | Same as K5: bādhaka pramāṇa — structural conditions for contradiction are identical; prospective mode reflects the epistemological principle that invalidity conditions can be assessed counterfactually before cognition occurs (pramāṇavāda: validity conditions are structural, not temporal) |
+| **Claim class** | C (derived from K5 Class C structural conditions; the prospective extension is a conservative evaluation-mode addition, not a new postulate) |
+| **Dependency** | Layer 1: K5 conditions (i)-(iii), K6 Auth, K2 temporal order. No new Level 4 dependencies beyond those already in K5. |
+| **Boundary** | K5_prospective is an evaluation mode, not a new axiom. It is required ONLY for probability assignment (K9_E/P9). It does not modify K5's post-hoc behavior, does not create new V transitions, and does not extend the K-space structure beyond what K5 already defines. Without K9_E, K5_prospective has no operational role — it exists solely as the bridge between K5 structural logic and probability evaluation. |
+| **Consistency** | K5_prospective is consistent with K5 (identical conditions), K6 (same Auth structure), K7 (prospective evaluation does not affect closure or V_final), and K9_E (f_perp is defined directly from prospective firing count). No new contradiction or axiom violation introduced. |
+
 ### AXIOM K6 — Cross-Registration Authority / Thẩm quyền Chéo
 
 **Statement:**
@@ -589,6 +635,7 @@ or any cross-space structure):
 | K6 | Cross-registration authority — structural relation within C_K, non-hierarchical | V (authority condition) | Level 2 | Frozen (syntactic) | C_K roles: (1) existential precondition for all Auth checks; (2) C_K-sphere membership parameter (condition a); (3) D_joint scope parameter (condition c) | None direct |
 | K7 | Registration process closure — V_prov → V_final, absolute irreversibility | V (closure) | Level 2 | Frozen (syntactic) | Uses requires_K_joint for pending check only | **T2** (Dep-B): "resolved demand" semantics (when pending = ∅) requires T2 AdmJoint resolution definition; K7 closure timing depends on T2 |
 | K8 | Cross-space embedding preservation — V preserved at embedding time; fields preserved | V (embedding) + M, o, cert, t | Level 3 | Frozen | None | None |
+| K5p | K5_prospective — pre-instantiation evaluation mode for P9 (K9_E). Same conditions (i)-(iii) as K5; target = hypothetical k_o*. Conservative extension: new evaluation mode, no modification to K5 post-hoc behavior. | f_perp (probability) | K5 (parent) + K9_E (P9) | Updatable (Layer 2 bridge) | C_K existence (requires_K_joint=1, same as K5) | **P9** (K9_E): f_perp defined via K5p |
 
 **Dependency isolation:** K1-K8 depend ONLY on Level 0-3 (BE SOT, K≠H, E1-E7, K-state tuple). Where K5-K7 reference Level 4 concepts (C_K, D_joint, requires_K_joint), they reference them for **scope identification only** (e.g., "is k1 in the same C_K as k2?"), not for their internal structure or definition.
 

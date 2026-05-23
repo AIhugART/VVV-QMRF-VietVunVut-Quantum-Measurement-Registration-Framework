@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Target:** `documents/research_documents/meta_architecture/K_Space_Axiomatization.md`
 **Audit version:** v1.4 (2026-05-19)
-**Plan version:** v28 (final) (2026-05-23)
+**Plan version:** v28 (final) → v29 upgrade (2026-05-23). See [RCA Final Verdict v29](../02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) for Class C (genuine) decision.
 **Method:** 3 rounds × 5-Why × scoring threshold (per `feedback_decision_rule.md`)
 **Scope:** K1-K8 core axioms (Layer 1) + T1-T4 bridge theorems (Layer 2) + audit matrices + concrete EWF model
 

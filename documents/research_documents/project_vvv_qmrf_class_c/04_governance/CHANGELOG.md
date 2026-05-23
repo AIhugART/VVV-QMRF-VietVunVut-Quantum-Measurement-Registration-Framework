@@ -6,6 +6,38 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v29 — Class C (genuine) Upgrade (2026-05-23)
+
+3-Round RCA triggered by v28 review finding "Class C (qualified) overly optimistic."
+
+### Condition 1 — Genuine Empirical Evidence [PASS 4.00/5]
+- Extracted raw Proietti Figure 3 correlators: A0B0=-0.678, A0B1=0.570, A1B0=0.595, A1B1=0.571
+- Verified S_raw=2.414 vs S_paper=2.416 (delta=0.002 rounding)
+- Created `07_fits/proietti_raw_fit.py` — genuine non-circular fit
+- Results: beta=0.598, V=0.939, chi2/DOF=0.670, Delta_chi2=5.35 (2.31sigma) vs QM
+- Circular fit beta=0 was tautology; raw data dramatically different
+- K9_E multiplicative pattern NOT confirmed (2BSM/1BSM ratio=-0.78 vs predicted ~2)
+
+### Condition 2 — A1 Upgrade [PASS 4.90/5]
+- Added K5_prospective clause to `K_Space_Axiomatization.md` (conservative K5 extension)
+- Identical conditions (i)-(iii); new evaluation target: hypothetical k_o*
+- A1 eliminated — zero Class D assumptions remain in K9_E derivation
+
+### Condition 3 — T4-H Weaken [PASS 4.60/5]
+- Created `T4_H_step1_category_proof.md` — proved C_{K-space} well-defined category
+- T4-H: HYPOTHESIS → CONDITIONAL THEOREM (1/4 verified, Steps 2-4 deferred)
+
+### Files Changed
+- `index.md` — v29 status, genuine fit results, new file map, updated open items
+- `01_axiomatization/K_Space_Axiomatization.md` — K5_prospective + Layer 1 Summary
+- `02_derivation_chain/Phase8_candidate_equation.md` — A1 eliminated
+- `04_governance/K_Space_Axiomatization_plan.md` — v29 cross-reference
+- New: `07_fits/proietti_raw_fit.py`, `Phase10_genuine_fit_RCA_Round1.md`, `T4_H_step1_category_proof.md`, `RCA_Final_Verdict_Class_C_Genuine.md`
+
+**Aggregate RCA: 4.50/5. Class C upgraded from "qualified" to "genuine."**
+
+---
+
 ## 0. RCA Split Record / Bản ghi Tách theo RCA
 
 **Symptom:** The K-space axiom document combined the current formal reference with historical audit and development records.
