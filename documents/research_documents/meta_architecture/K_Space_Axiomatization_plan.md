@@ -471,15 +471,19 @@ Phase 10 → Phase 11 Gate
 | P10a-C4 | 5.0/5 | HIGH | **COMPLETE** — Delta_chi2=0 (K9_E=QM at beta=0) |
 | P10a-C5 | 4.5/5 | MEDIUM | **COMPLETE** — beta=0 means suppression below detection |
 
-### Phase 10b — Bong LF (COMPLETE — theoretical analysis, no raw D2 data)
+### Phase 10b -- Bong LF (INVALIDATED by K9-S8/K9-S10)
+
+> Phase 10b applied f_perp to marginal probabilities BEFORE K9-S8 proved
+> Marginalization Cancellation. All claims of "reduced LF violation" were WRONG.
+> See K9-S10 for corrected testability analysis.
 
 | ID | Score | Severity | Status |
 |----|---|----------|--------|
-| P10b-C1 | 4.0/5 | HIGH | **PARTIAL** — theoretical bounds only, no raw data |
-| P10b-C2 | 5.0/5 | HIGH | **COMPLETE** — LF extension via perpK mechanism |
-| P10b-C3 | N/A | HIGH | **DEFERRED** — no raw data for numerical fit |
-| P10b-C4 | 4.5/5 | HIGH | **COMPLETE** — K9_E reduces LF violation, still violates |
-| P10b-C5 | 4.0/5 | HIGH | **PARTIAL PASS** — structural consistent, numerical deferred |
+| P10b-C1 | 4.0/5 | HIGH | **PARTIAL** -- theoretical bounds only, no raw data |
+| P10b-C2 | ~~5.0/5~~ | HIGH | **INVALIDATED** -- naive f_perp on marginals was wrong (K9-S8) |
+| P10b-C3 | N/A | HIGH | **DEFERRED** -- no raw data for numerical fit |
+| P10b-C4 | ~~4.5/5~~ | HIGH | **INVALIDATED** -- marginals = QM exactly (K9-S8) |
+| P10b-C5 | ~~4.0/5~~ | HIGH | **INVALIDATED** -- moot when marginals are QM |
 
 ### Phase 10c — Frauchiger–Renner (COMPLETE — contradiction AVOIDED)
 

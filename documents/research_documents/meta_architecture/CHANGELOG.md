@@ -892,13 +892,17 @@ QM-with-noise: all settings equally suppressed. K9_E: BSM settings selectively s
 
 **Quantitative prediction:** P(halt) suppressed by factor (1−β·f)² ≈ 28% at β=0.3.
 
-### 15.2 Phase 10b — Bong LF (D2) — Extension Validated
+### 15.2 Phase 10b -- Bong LF (D2) -- ~~Extension Validated~~ INVALIDATED (see Section 19)
 
-**Result:** K9_E extends to LF inequalities via perpK mechanism.
+> **ERRATUM (Section 19):** This analysis was computed BEFORE K9-S8 Marginalization
+> Cancellation Theorem. The claim "S_LF_K9E < S_LF_QM" is WRONG -- marginal
+> probabilities are exactly QM. See K9-S10 for corrected analysis.
 
-- S_LF_K9E < S_LF_QM for all beta > 0
-- LF inequality STILL VIOLATED (K9_E is NOT a LF theory)
-- Cross-consistency with D1: PASS (structural + directional)
+**Original (incorrect) result:** K9_E extends to LF inequalities via perpK mechanism.
+
+- ~~S_LF_K9E < S_LF_QM for all beta > 0~~ WRONG (marginalization cancellation)
+- ~~LF inequality STILL VIOLATED (K9_E is NOT a LF theory)~~ Correct conclusion, wrong reasoning
+- Cross-consistency with D1: ~~PASS~~ MOOT (marginals all equal QM)
 - Numerical fit: DEFERRED (no raw D2 data in LaTeX source)
 
 ### 15.3 Phase 10 Joint — 3-Way Consistency PASS
