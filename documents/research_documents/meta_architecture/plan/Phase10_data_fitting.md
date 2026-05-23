@@ -8,6 +8,18 @@
 **Data source:** D1 (Proietti et al. 2019, arXiv:1902.05080)
 **Data path:** PATH B (S_exp only, DOF=0)
 
+> [!CAUTION]
+> **ERRATUM (2026-05-23 Status Audit):** This Phase contains a **CIRCULAR FIT**.
+>
+> - "Data" used in d1_blk1_4point_fit.py was **RECONSTRUCTED** as `E_exp = V_exp · E_QM` (line 63), NOT extracted from Proietti Figure 3.
+> - The K9_E model predicts `E_K9E = V_exp · E_QM · (1 − β·g)` (line 152).
+> - χ² minimization of `(V·E − V·E·(1−βg))² / σ²` is **GUARANTEED** to yield β=0.
+> - The "best-fit β=0" finding is a TAUTOLOGY, not an empirical result.
+> - K9_E is a POSTULATE (see Phase 8 erratum), not a derived equation.
+> - Two code files implement K9_E differently (`k9e_predictor.py` vs `d1_blk1_4point_fit.py`).
+>
+> The Phase 10 analysis demonstrates INTERNAL CONSISTENCY of K9_E (constraint satisfaction, normalization), but does NOT constitute empirical comparison with data.
+
 ---
 
 ## STEP 1 — Free Parameter Identification

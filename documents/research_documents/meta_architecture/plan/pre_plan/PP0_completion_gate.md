@@ -87,13 +87,13 @@ FULL APPROVAL for Main Plan Phase 7-12.
 | Phase | Prompt | File | Status | Key Result |
 |---|---|---|---|---|
 | **7** | P1: Constraints | [Phase7](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase7_constraint_evaluation.md) | ✅ COMPLETE | A:7/7, B:5/5, C:Class C |
-| **8** | P2: Equation | [Phase8](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase8_candidate_equation.md) | ✅ COMPLETE | K9_E documented, 0 orphaned assumptions |
+| **8** | P2: Equation | [Phase8](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase8_candidate_equation.md) | ✅ COMPLETE | K9_E POSTULATE documented (not derived from K1-K8). 0 orphaned assumptions |
 | **9** | P3: Adversarial | [Phase9](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase9_adversarial_testing.md) | ✅ COMPLETE | 4/4 tests PASS, G1/G2/G3 PASS |
-| **10a** | P4: Data Fit (Proietti) | [Phase10](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10_data_fitting.md) | ✅ COMPLETE | β=0, PATH A: β≤0.175 (1σ) |
+| **10a** | P4: Data Fit (Proietti) | [Phase10](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10_data_fitting.md) | ⚠️ CIRCULAR | β=0 from reconstructed data (V·QM). Not genuine empirical comparison |
 | **10b** | Bong LF Extension | [Phase10b](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10b_bong_lf.md) | ✅ COMPLETE | LF reduced, structural consistent |
 | **10c** | FR Consistency | [Phase10c](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10c_fr_consistency.md) | ✅ COMPLETE | Contradiction AVOIDED via K5 |
 | **10J** | Joint Verdict | [Phase10J](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10_joint_verdict.md) | ✅ COMPLETE | 3-way consistent, 0 contradictions |
-| **11** | P5: 3-Observer | [Phase11](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase11_3observer_prediction.md) | ✅ COMPLETE | δM₃=−0.223 (β=0.3), ~2.1× amplification |
+| **11** | P5: 3-Observer | [Phase11](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase11_3observer_prediction.md) | ⚠️ CONDITIONAL | δM₃=−0.223 (β=0.3), ~2.1× amplif. Based on POSTULATE, not derivation |
 | **12** | P6: Reduction | [Phase12](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase12_structural_reduction.md) | ✅ COMPLETE | Copenhagen/MWI = special cases |
 | **13** | P7: Assessment | [Phase13](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase13_honest_assessment.md) | ✅ COMPLETE | Publication path: 2-4wk FoP, 3-6mo PRA |
 

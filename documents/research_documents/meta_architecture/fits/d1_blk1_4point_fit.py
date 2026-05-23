@@ -4,6 +4,18 @@ D1-BLK-1 Resolution: Reconstruct individual ⟨A_xB_y⟩ from Proietti data
 
 3-Round RCA × 5-Why × Scoring Threshold 4/5
 VVV-QMRF-EX as Compass
+
+WARNING (Status Audit 2026-05-23):
+  CIRCULAR FIT: E_exp is RECONSTRUCTED as V_exp * E_QM (line 63),
+  NOT extracted from Proietti Figure 3. The K9_E model predicts
+  E_K9E = V_exp * E_QM * (1 - beta*g_eff). Chi-squared minimization
+  of (V*E - V*E*(1-bg))^2 is GUARANTEED to yield beta=0.
+  The "best-fit beta=0" is a TAUTOLOGY, not an empirical result.
+
+  K9_E is a POSTULATE (P9), NOT derived from K1-K8.
+  This file uses g_eff = 0.146 (hardcoded), which differs from
+  k9e_predictor.py's second-order approximation. The two implementations
+  are INCONSISTENT.
 """
 
 import numpy as np

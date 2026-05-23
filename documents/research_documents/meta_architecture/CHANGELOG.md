@@ -995,6 +995,64 @@ f_perp ratio:     0.255 / 0.146 ≈ 1.75×
 
 ---
 
+## 17. K-Space Status Audit — K9_E Reclassified as POSTULATE
+
+*2026-05-23 — VVV-QMRF §K9-AUDIT*
+
+### 17.1 Corrected Status Table
+
+| Item | Old Status | Corrected Status | Evidence |
+|---|---|---|---|
+| K-space axioms (K1-K8) | ✅ | ✅ | K_Space_Axiomatization.md, Layer 1 frozen |
+| K-space ↔ EWF connection | ✅ phần | ✅ phần | T3 derives ⊥_K from EWF + AJVS |
+| K-space equation cho probability | ✅ (implied) | ❌ | K9_E is POSTULATE, not derived from K1-K8 |
+| Numerical prediction | ✅ (Phase 11) | ❌ | Two inconsistent code implementations |
+| Compare với Proietti data | ✅ (Phase 10) | ❌ | CIRCULAR FIT: data reconstructed as V·QM |
+| "Fit" EWF | ✅ (β=0) | ❌ | β=0 is tautology from circular construction |
+
+### 17.2 Root Causes Identified
+
+1. **K9_E = ANSATZ (now POSTULATE P9):** K1-K8 define structural properties. Probability requires additional postulate. K9_E was incorrectly labeled "Formal Derivation" in Phase 8.
+
+2. **Circular fit in Phase 10:** `d1_blk1_4point_fit.py` line 63 reconstructs "data" as `E_exp = V_exp · E_QM`. K9_E predicts `E_K9E = V_exp · E_QM · (1−β·g)`. χ² minimization guaranteed β=0.
+
+3. **Code inconsistency:** `k9e_predictor.py` uses δ = β²·E/n² (second-order). `d1_blk1_4point_fit.py` uses δ = β·0.146·E (first-order). Neither is rigorous derivation from K9_E formula.
+
+### 17.3 Files Corrected
+
+| File | Change |
+|---|---|
+| Phase8_candidate_equation.md | Title: "Derivation" → "Postulate Statement" + erratum block |
+| Phase10_data_fitting.md | Added CIRCULAR FIT erratum block |
+| k9e_predictor.py | Added WARNING about postulate status + ad-hoc approximation |
+| d1_blk1_4point_fit.py | Added WARNING about circular fit + code inconsistency |
+| PP0_completion_gate.md | Phase 8/10a/11 status corrected |
+
+### 17.4 What Remains VALID
+
+| Item | Status | Reason |
+|---|---|---|
+| K1-K8 axiom structure | ✅ | Purely structural, independent of K9_E |
+| T1-T4 bridge theorems | ✅ | Structural, do not use K9_E |
+| K9_E internal consistency | ✅ | Normalization, non-negativity, Born limit — valid for the postulate |
+| Phase 9 adversarial tests | ✅ | Test internal consistency of postulate |
+| Phase 10b/10c/10J | ✅ | Structural analysis (FR avoidance, LF reduction) |
+| Phase 12 interpretation map | ✅ | Conceptual mapping, not dependent on K9_E derivation |
+| Phase 13 honest assessment | ⚠️ | Partially honest; now fully honest with audit |
+
+### 17.5 K9_E Epistemic Status (Final)
+
+```
+K9_E = Postulate P9 (Type B framework extension)
+  - NOT derived from K1-K8
+  - MOTIVATED by K-space structure (⊥_K, K_ctx)
+  - TESTABLE in principle (β > 0 ⇔ deviation from Born rule)
+  - UNTESTED against real data (circular fit does not count)
+  - EX compass: āgama-level (provisional, awaiting yukti + anubhava)
+```
+
+---
+
 ## Resolved Historical Open Items Moved from v2.0 Main Document
 
 

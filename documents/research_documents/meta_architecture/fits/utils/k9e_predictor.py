@@ -1,6 +1,17 @@
 """
 k9e_predictor.py — K9_E (⊥_K Suppression) predictions.
 
+WARNING (Status Audit 2026-05-23):
+  K9_E is a POSTULATE (P9), NOT derived from K1-K8.
+  The k9e_probability() function (lines 121-173) correctly implements the
+  K9_E formula per-outcome. However, the k9e_expectation() function
+  (lines 180+) uses an AD-HOC second-order approximation
+  (delta = beta**2 * E / n_ctx**2) that does NOT match the K9_E formula.
+  This approximation was used because the full formula requires marginalizing
+  over Friend's outcomes, which was left as "marginalized δP ≈ 0".
+  The d1_blk1_4point_fit.py uses a DIFFERENT approximation (first-order).
+  These two code files are INCONSISTENT.
+
 PRIMARY candidate (Class C). Locked v1.0 from K9-S7.
 
 K9_E Definition (Post-S5 Revision, Formalized):

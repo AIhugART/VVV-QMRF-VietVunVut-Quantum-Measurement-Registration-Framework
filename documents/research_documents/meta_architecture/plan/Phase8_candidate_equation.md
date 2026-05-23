@@ -1,4 +1,4 @@
-# Phase 8: Candidate Equation — K9_E Formal Derivation
+# Phase 8: Candidate Equation — K9_E Postulate Statement
 # 3-Round RCA × 5-Why × Scoring Threshold 4/5
 # With VVV-QMRF-EX as Compass
 
@@ -6,6 +6,9 @@
 **Date:** 2026-05-23
 **Input:** Phase 7 COMPLETE (all constraints ✅), K9_E LOCKED v1.0
 **Note:** K9 analysis pipeline (K9-S1→S7) already performed candidate generation + selection. Phase 8 documents THE selected equation, not 3 candidates.
+
+> [!CAUTION]
+> **ERRATUM (2026-05-23 Status Audit):** This document was originally titled "K9_E Formal Derivation." K9_E is NOT derived from K1-K8. It is a **POSTULATE** — a probability assignment rule motivated by K-space structure (⊥_K, K_ctx) but not uniquely determined by K1-K8 axioms. The K-axioms (K1-K8) define structural properties only; probability requires an additional postulate. K9_E fills this role as **Postulate P9** (Type B framework extension, āgama-level in EX compass).
 
 ---
 
@@ -19,7 +22,10 @@ P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)]
                                      Z_E(k_i)
 ```
 
-### Term-by-Term Derivation
+### Term-by-Term Decomposition
+
+> [!NOTE]
+> The term-by-term table below traces each component of K9_E to its K-space or external source. This is a PROVENANCE trace, not a derivation proof. K9_E as a whole is a POSTULATE that assembles these components into a probability rule.
 
 | # | Term | Definition | Source | EX Anchor |
 |---|---|---|---|---|
@@ -168,7 +174,7 @@ V appears in K9_E via THREE roles:
 
 | Round | Finding | Score |
 |---|---|---|
-| **R1: Term-by-Term Derivation** | 8 terms all traced to K1-K8 or flagged as [A-E1]–[A-E4]. 0 orphaned assumptions. | **5.0/5** ✅ |
+| **R1: Term-by-Term Provenance** | 8 terms traced to K1-K8 or flagged as [A-E1]–[A-E4]. 0 orphaned assumptions. **NOTE: Provenance trace, not derivation proof. K9_E is a POSTULATE.** | **4.0/5** ⚠️ |
 | **R2: Born Rule + Distinguishability** | 4 recovery conditions proven. Distinguishability via outcome-dependent f_perp (Class C). PP-2 cancellation insight as critical gate. | **5.0/5** ✅ |
 | **R3: cert/V Physical Content** | V adds gate + context filter + K5 priority. cert adds admission filter. Both create new physical categories (Bhrānti, Anupalabdhi) absent in Standard QM. | **4.5/5** ✅ |
 
