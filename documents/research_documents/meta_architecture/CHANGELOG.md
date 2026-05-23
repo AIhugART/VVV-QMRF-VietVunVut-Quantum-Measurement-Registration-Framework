@@ -766,7 +766,7 @@ Created `fits/` package (8 files, 13/13 sanity checks PASS). PP-0 elevated to FU
 | **8** | P2: Equation | Phase8_candidate_equation.md | ✅ | 8 terms, 0 orphaned assumptions |
 | **9** | P3: Adversarial | Phase9_adversarial_testing.md | ✅ | 4/4 tests PASS, G1/G2/G3 PASS |
 | **10** | P4: Data Fit | Phase10_data_fitting.md | ✅ | β_fit=0, β_max≤0.21 (1σ) |
-| **11** | P5: 3-Observer | Phase11_3observer_prediction.md | ✅ | δM₃=−0.223 (β=0.3), 11× amplification |
+| **11** | P5: 3-Observer | Phase11_3observer_prediction.md | ✅ | δM₃=−0.223 (β=0.3), ~2.1× amplification |
 | **12** | P6: Reduction | Phase12_structural_reduction.md | ✅ | Copenhagen/MWI = special cases |
 | **13** | P7: Assessment | Phase13_honest_assessment.md | ✅ | 8 assumptions audited, publication path outlined |
 
@@ -780,7 +780,7 @@ Single free parameter β ∈ [0,1). Best-fit β=0 (suppression below Proietti pr
 
 **(P7-2) Born Rule Recovery:** 4 conditions — β=0 OR K_ctx=∅ OR f_perp=0 ∀o OR N=1.
 
-**(P7-3) Distinguishability (Class C):** δS(β=0.5) = −0.055 for 2-observer CHSH. Direction: always |S_K9E| < |S_QM| (suppression). 3-observer Mermin: 11× amplification → δM₃ = −0.223 (β=0.3).
+**(P7-3) Distinguishability (Class C):** δS(β=0.5) = −0.055 for 2-observer CHSH. Direction: always |S_K9E| < |S_QM| (suppression). 3-observer Mermin: ~2.1× inequality amplification (g₃/g₂ ≈ 1.75×) → δM₃ = −0.223 (β=0.3). [Corrected from 11× — see CHANGELOG §16.1 erratum.]
 
 **(P7-4) Interpretation Reduction:**
 - Copenhagen, Many-Worlds: ✅ special cases (K_ctx = ∅)
@@ -945,6 +945,53 @@ QM-with-noise: all settings equally suppressed. K9_E: BSM settings selectively s
 | Raw Figure 3 values | NEW | DEFERRED (setting-dependent visibility test) |
 | T4-H resolution | NOT STARTED | NOT STARTED |
 | LaTeX write-up | NOT STARTED | NOT STARTED |
+
+---
+
+## 16. Erratum: 11× Amplification Claim Corrected
+
+*2026-05-23 — VVV-QMRF §K9-ERRATUM*
+
+### 16.1 Error Description
+
+**Phase 11** (line 203-206, original) claimed "11× increase in signal" for 3-observer vs 2-observer K9_E effect.
+
+**Root cause:** Compared per-correlator deviation δ⟨A_xB_y⟩ ≈ 0.020 (2-obs) with full-inequality deviation δM₃ = 0.223 (3-obs). This is an apples-to-oranges comparison.
+
+### 16.2 Corrected Values
+
+| Metric | Value | Type |
+|---|---|---|
+| g₃/g₂ | **~1.75×** | f_perp amplification (intrinsic mechanism growth) |
+| δM₃/δS | **~2.1×** | Inequality-level amplification (includes baseline structure) |
+| ~~11×~~ | **RETRACTED** | Mixed per-correlator/inequality comparison |
+
+### 16.3 Computation
+
+```
+δS(β=0.3)  = g₂ · β · S_exp  = 0.146 · 0.3 · 2.416 = 0.106
+δM₃(β=0.3) = g₃ · β · M₃_exp = 0.255 · 0.3 · 2.916 = 0.223
+
+Inequality ratio: 0.223 / 0.106 ≈ 2.1×
+f_perp ratio:     0.255 / 0.146 ≈ 1.75×
+```
+
+### 16.4 Files Corrected
+
+| File | Change |
+|---|---|
+| Phase11_3observer_prediction.md | Lines 200-207: δS corrected + erratum note |
+| Phase11_3observer_prediction.md | Lines 312, 326: "11×" → "~2.1×" |
+| PP0_completion_gate.md | Line 96: "11×" → "~2.1×" |
+| CHANGELOG.md §13.1 | Line 769: "11×" → "~2.1×" |
+| CHANGELOG.md §13.2 | Line 783: "11×" → "~2.1×" + erratum reference |
+
+### 16.5 Impact Assessment
+
+- **δM₃ = −0.223 at β=0.3:** UNCHANGED (correct value)
+- **Detection feasibility at β=0.5:** UNCHANGED (~21 days)
+- **K9_E falsifiability statement:** UNCHANGED (direction: suppression only)
+- **Amplification claim:** REDUCED from 11× to ~2.1× (still meaningful amplification)
 
 ---
 

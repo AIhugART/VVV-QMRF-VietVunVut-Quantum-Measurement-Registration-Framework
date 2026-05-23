@@ -200,10 +200,15 @@ For β = 0.5:
 ### Key amplification result
 
 ```
-2-observer (Proietti):  δS(β=0.3)  = −0.020 → 0.27σ (UNDETECTABLE)
-3-observer (predicted): δM₃(β=0.3) = −0.223 → 1.5σ  (MARGINAL)
+2-observer (Proietti):  δS(β=0.3)  = −0.106 (inequality-level)
+3-observer (predicted): δM₃(β=0.3) = −0.223 (inequality-level)
 
-AMPLIFICATION: 11× increase in signal for same β!
+INEQUALITY-LEVEL AMPLIFICATION: δM₃/δS ≈ 2.1×
+f_perp AMPLIFICATION: g₃/g₂ ≈ 1.75×
+
+[ERRATUM: Previously stated "11× amplification" by comparing per-correlator
+δ⟨AB⟩ ≈ 0.020 (2-obs) with full-inequality δM₃ = 0.223 (3-obs).
+This was an apples-to-oranges comparison. Corrected 2026-05-23.]
 ```
 
 This amplification comes from:
@@ -309,7 +314,7 @@ For β = 0.5:
 | Round | Finding | Score |
 |---|---|---|
 | **R1: 3-observer extension** | K_ctx doubles (1→2). f_perp values {0, 0.5, 1.0}. 4 additional assumptions ([A-3O-1]–[A-3O-4]), all conditional on T4-H/T5. | **4.5/5** ✅ |
-| **R2: Numerical predictions** | δM₃ = −0.223 (β=0.3), 11× amplification over 2-obs. Detection at 2.5σ for β=0.5. Feasible with ~21 days continuous measurement. | **4.5/5** ✅ |
+| **R2: Numerical predictions** | δM₃ = −0.223 (β=0.3), ~2.1× inequality amplification over 2-obs (g₃/g₂ ≈ 1.75×). Detection at 2.5σ for β=0.5. Feasible with ~21 days continuous measurement. | **4.5/5** ✅ |
 | **R3: Falsifiability** | Clear statement: |M₃_K9E| < |M₃_QM|. Direction: suppression only. Discrimination from noise: setting-dependent residuals. | **5.0/5** ✅ |
 
 **All 3 rounds ≥ 4/5. Phase 11 COMPLETE.**
@@ -323,7 +328,7 @@ Phase  7: Constraint Identification       ✅ COMPLETE (A: 7/7, B: 5/5, C: Class
 Phase  8: Candidate Equation              ✅ COMPLETE (K9_E documented, 0 orphaned assumptions)
 Phase  9: Adversarial Testing             ✅ COMPLETE (4/4 tests PASS, G1/G2/G3 PASS)
 Phase 10: Data Fitting                    ✅ COMPLETE (β_fit=0, β_max≤0.21 at 1σ)
-Phase 11: 3-Observer Prediction           ✅ COMPLETE (δM₃ = −0.223 at β=0.3, 11× amplification)
+Phase 11: 3-Observer Prediction           ✅ COMPLETE (δM₃ = −0.223 at β=0.3, ~2.1× inequality amplification)
 Phase 12: Structural Reduction Check      ⬜ NEXT (Prompt 6: Copenhagen/MWI/RQM/QBism reduction)
 Phase 13: Honest Assessment               ⬜ (Prompt 7: adversarial meta-assessment)
 ```
