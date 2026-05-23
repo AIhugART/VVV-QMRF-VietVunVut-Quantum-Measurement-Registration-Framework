@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_QM Registry — ρ-side Bridge: VVV-QMRF ↔ QM
 
-**Version:** 1.2 (2026-05-23 promote_new_bridge: K9_E rho-side + DRAFT→ACTIVE)
+**Version:** 1.3 (2026-05-23 promote_new_bridge: full-run batch +1 rho-side)
 **Date:** 2026-05-23
-**Total Entries:** 84 active (73 ref-copy + 1 sim + 10 promote_new_bridge) + 3 draft C2 (superseded)
-**Namespace:** BR_EX_QM_00001–BR_EX_QM_00084 active; BR_EX_QM_DRAFT_00075–00077 retained
+**Total Entries:** 85 active (73 ref-copy + 1 sim + 11 promote_new_bridge) + 3 draft C2 (superseded)
+**Namespace:** BR_EX_QM_00001–BR_EX_QM_00085 active; BR_EX_QM_DRAFT_00075–00077 retained
 
 ---
 
@@ -1781,4 +1781,26 @@ This registry maps VVV-QMRF nodes to Quantum Measurement (QM) nodes on the ρ-si
 | **Rationale** | Current-Core node `N_QM_VVV_00059` explicitly names a registration-update category induced by decoherence support; `N_QM_00095` is therefore the first rho-side audit candidate. |
 | **Origin** | C2 current-Core node-aligned planning; not active coverage |
 
+---
 
+## Full-Run Batch (2026-05-23) — 1 rho-side entry
+
+### BR_EX_QM_00085 — Entry 85
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00085` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00009` |
+| **VVV Concept** | Elitzur-Vaidman Interaction-Free Measurement as VVV Evidence Exemplar |
+| **QM Node** | `N_QM_00033` |
+| **QM Concept** | No-Result Measurement (Null Measurement) |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00009 → N_QM_00033 |
+| **Relation Type** | physical_substrate_for |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.90 (RCA score 4.5/5) |
+| **Boundary Note** | This is an external experimental exemplar (KE-QI/RE-BI classified), not a canonical QM node. QM substrate (N_QM_00033) inherited through N_QM_VVV_00001/N_QM_VVV_00004. Elitzur-Vaidman IFM is not in system_qm_full.md as a canonical node. Not physical explanation; not new QM law. |
+| **Rationale** | N_QM_VVV_00009 is classified KE-QI (K-side QM-intrinsic exception) + RE-BI (rho-side both-isolated exemplar). BR_EX_QM entry formalizes the RE-BI side: the node's QM substrate is No-Result Measurement inherited through the parent chain 00001/00004. This entry does not claim Elitzur-Vaidman as a canonical QM formalism node. |
+| **Origin** | promote_new_bridge RCA gate (full-run batch); 2026-05-23 |

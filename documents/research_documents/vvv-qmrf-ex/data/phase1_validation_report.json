@@ -1,7 +1,7 @@
 {
-  "total_nodes": 420,
+  "total_nodes": 430,
   "be_nodes": 263,
-  "vvv_nodes": 52,
+  "vvv_nodes": 62,
   "qm_nodes": 105,
   "total_edges": 165,
   "edge_type_counts": {
@@ -12,7 +12,7 @@
     "BR_QM_VVV": 13
   },
   "dangling_count": 0,
-  "orphan_count": 312,
+  "orphan_count": 322,
   "integrity_pass": true,
   "dangling_sample": [],
   "orphan_sample": [

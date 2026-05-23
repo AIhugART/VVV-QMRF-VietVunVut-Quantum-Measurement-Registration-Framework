@@ -41,9 +41,11 @@ EDGE_TYPE_BY_KIND = {
         "new_similarity_candidate": "BR_EX_BE",
         "expert_manual_mapping": "BR_EX_BE_NEW",
         "stretch_expert_mapping": "BR_EX_BE_STRETCH",
+        "new_bridge_promotion": "BR_EX_BE_NEW",
     },
     "QM": {
         "new_similarity_candidate": "BR_EX_QM",
+        "new_bridge_promotion": "BR_EX_QM_NEW",
     },
 }
 

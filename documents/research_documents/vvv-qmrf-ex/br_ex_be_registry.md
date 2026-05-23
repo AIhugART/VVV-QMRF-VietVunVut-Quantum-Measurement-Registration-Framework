@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_BE Registry — K-side Bridge: BE ↔ VVV-QMRF
 
-**Version:** 2.8 (2026-05-23 promote_new_bridge: K9_E K-side + DRAFT→ACTIVE)
+**Version:** 2.9 (2026-05-23 promote_new_bridge: full-run batch +3 K-side)
 **Date:** 2026-05-23
-**Total Entries:** 77 / **74 active** (+6 promote_new_bridge: 2 K9_E + 3 DRAFT→ACTIVE + 1 K_PENDING-RCA) + 2 RECLASSIFIED + 2 FOLDED + 3 draft (superseded)
-**Namespace:** BR_EX_BE_00001–BR_EX_BE_00077 active; BR_EX_BE_DRAFT_00073A–00073C retained provenance
+**Total Entries:** 80 / **77 active** (+9 promote_new_bridge total: 2 K9_E K-side + 3 DRAFT→ACTIVE + 1 K_PENDING-RCA + 3 full-run K-side) + 2 RECLASSIFIED + 2 FOLDED + 3 draft (superseded)
+**Namespace:** BR_EX_BE_00001–BR_EX_BE_00080 active; BR_EX_BE_DRAFT_00073A–00073C retained provenance
 
 ---
 
@@ -1677,3 +1677,67 @@ These rows formalize C3 K-side RCA results for current-Core nodes outside the fr
 | **Origin** | C5 dedicated RCA for `N_QM_VVV_00059`; draft-only registry formalization authorized by user on 2026-05-22 |
 
 > C5 note: `BR_EX_BE_DRAFT_00073C` resolves the C3 caveat only at draft level. It does not promote `N_QM_VVV_00059` to active K-side coverage and does not authorize graph sync, script execution, or frozen denominator changes.
+
+---
+
+## Full-Run Batch (2026-05-23) — 3 K-side entries
+
+### BR_EX_BE_00078 — Entry 78
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00078` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00015` |
+| **BE Concept** | Anupalabdhi (Valid Non-Perception / Valid Absence Registration) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00002` |
+| **VVV Concept** | Interaction-Free State Inference (IFSI) |
+| **Direction** | N_BE_00015 → N_QM_VVV_00002 |
+| **Relation Type** | structural_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 1.00 (RCA score 5.0/5) |
+| **Boundary Note** | IFSI operationalizes Anupalabdhi logic in QM measurement context: no-click → state inference under complete-alternative conditions. Inherits through parent N_QM_VVV_00001 (Contrapositive Evidence). Not a BE-QM identity claim. |
+| **Rationale** | IFSI is the procedural inference mechanism of N_QM_VVV_00001's Contrapositive Evidence category. BE anchor is Anupalabdhi — the valid-absence registration standard that IFSI implements procedurally in QM. Inheritance chain: Anupalabdhi → Contrapositive Evidence (00001) → IFSI (00002). |
+| **Origin** | promote_new_bridge RCA gate (full-run batch); 2026-05-23 |
+
+### BR_EX_BE_00079 — Entry 79
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00079` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00015` |
+| **BE Concept** | Anupalabdhi (Valid Non-Perception / Valid Absence Registration) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00005` |
+| **VVV Concept** | Non-Informative Null Event / Broken-Detector Null |
+| **Direction** | N_BE_00015 → N_QM_VVV_00005 |
+| **Relation Type** | structural_analogy (contrastive) |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.80 (RCA score 4.0/5) |
+| **Boundary Note** | INDIRECT-1-LEVEL (via contrast with N_QM_VVV_00004 Informative Silence). This is the NEGATIVE contrast to Anupalabdhi — what valid absence is NOT. Anupalabdhi provides the positive standard for valid non-perception; 00005 isolates the failure mode where null events are caused by detector failure or invalid setup. Not a direct BE source-analogue. |
+| **Rationale** | Without BE contrast bridge, 00005 floats as pure QM diagnostic without K-side grounding. BE Anupalabdhi implicitly requires distinguishing valid absence from detector failure — 00005 makes this distinction explicit at the registration layer. Spot-check upgrade (CONFIRMATORY→EXPLORATORY) detected INDIRECT-1-LEVEL that would have been missed under CONFIRMATORY-only review. |
+| **Origin** | promote_new_bridge RCA gate (full-run batch, spot-check upgraded); 2026-05-23 |
+
+### BR_EX_BE_00080 — Entry 80
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00080` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00013` |
+| **BE Concept** | Dual-Phase Registration (DPEC Root) |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00015` |
+| **VVV Concept** | Conditionally Updated State ρ̃ |
+| **Direction** | N_BE_00013 → N_QM_VVV_00015 |
+| **Relation Type** | structural_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 1.00 (RCA score 5.0/5) |
+| **Boundary Note** | ρ̃ inherits DPEC K-side grounding through N_QM_VVV_00011 chain. It is a registration-status notation (intermediate state between physical update and certified registration), not a new density-matrix law. BE grounding via parent chain: BE_00013 → VVV_00011 (DPEC) → VVV_00012 (Intrinsic Phase) → VVV_00015 (ρ̃). |
+| **Rationale** | ρ̃ is the state notation for DPEC's provisional validity — it needs BE grounding but inherits it through the DPEC chain. Parent 00011 already bridged (BR_EX_BE_00041). Bridge provides direct K-side trace for the intermediate registration state. |
+| **Origin** | promote_new_bridge RCA gate (full-run batch); 2026-05-23 |

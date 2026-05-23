@@ -3,8 +3,8 @@
   "multigraph": true,
   "graph": {
     "project": "VVV-QMRF-EX",
-    "phase": "E18-Path-C-EX-vNext-sync",
-    "date": "2026-05-22"
+    "phase": "1-graph-construction",
+    "date": "2026-05-20"
   },
   "nodes": [
     {
@@ -2213,6 +2213,76 @@
       "id": "N_QM_VVV_00055"
     },
     {
+      "code": "N_QM_VVV_00056",
+      "concept": "Delayed-Choice Registration Boundary / Context-Conditioned Registration Window Locking",
+      "layer": "Registration-boundary category",
+      "system": "VVV",
+      "id": "N_QM_VVV_00056"
+    },
+    {
+      "code": "N_QM_VVV_00057",
+      "concept": "Sorting-Conditioned Registration Subset / Coincidence-Sorted Valid Window",
+      "layer": "Sorting / post-selection relation",
+      "system": "VVV",
+      "id": "N_QM_VVV_00057"
+    },
+    {
+      "code": "N_QM_VVV_00059",
+      "concept": "Decoherence-Induced Registration Update",
+      "layer": "Registration-update category",
+      "system": "VVV",
+      "id": "N_QM_VVV_00059"
+    },
+    {
+      "code": "N_QM_VVV_00060",
+      "concept": "K9_E Probability Postulate (P9) / K-Space Conditioned Probability Rule",
+      "layer": "Probability postulate / registration category",
+      "system": "VVV",
+      "id": "N_QM_VVV_00060"
+    },
+    {
+      "code": "N_QM_VVV_00061",
+      "concept": "beta (β) — K9_E Free Suppression Parameter / Registration Suppression Strength",
+      "layer": "Free parameter",
+      "system": "VVV",
+      "id": "N_QM_VVV_00061"
+    },
+    {
+      "code": "N_QM_VVV_00062",
+      "concept": "f_perp(K_ctx) — Contextual Suppression Function / Registration-Layer Probability Modifier",
+      "layer": "Probability modification function",
+      "system": "VVV",
+      "id": "N_QM_VVV_00062"
+    },
+    {
+      "code": "N_QM_VVV_00063",
+      "concept": "K_ctx(k_i, Exp) — Contextual Incommensurability Aggregate / Cross-Observer Incommensurability Density",
+      "layer": "Aggregate metric / contextual set",
+      "system": "VVV",
+      "id": "N_QM_VVV_00063"
+    },
+    {
+      "code": "N_QM_VVV_00064",
+      "concept": "Genuine Non-Circular Fit — K9_E Empirical Evidence from Raw Proietti Figure 3 Data",
+      "layer": "Empirical evidence / measurement result",
+      "system": "VVV",
+      "id": "N_QM_VVV_00064"
+    },
+    {
+      "code": "N_QM_VVV_00065",
+      "concept": "K9_E Multiplicative Pattern (2BSM/1BSM Ratio) / Observer-Count Scaling Prediction",
+      "layer": "Falsifiable prediction / structural signature",
+      "system": "VVV",
+      "id": "N_QM_VVV_00065"
+    },
+    {
+      "code": "N_QM_VVV_00066",
+      "concept": "delta_S — Theoretical Distinguishability / K9_E Structural Deviation from Standard QM",
+      "layer": "Theoretical prediction / distinguishability metric",
+      "system": "VVV",
+      "id": "N_QM_VVV_00066"
+    },
+    {
       "code": "N_QM_00001",
       "concept": "Qubit",
       "layer": "RCA",
@@ -4338,39 +4408,6 @@
       "key": 0
     },
     {
-      "edge_id": "BR_EX_BE_00070",
-      "relation": "sub_concept_direct_anchor",
-      "edge_type": "BR_EX_BE_NEW",
-      "status": "active",
-      "claim_class": "interpretive_mapping_valid_sign_support",
-      "confidence": 0.42,
-      "source": "N_BE_00003",
-      "target": "N_QM_VVV_00024",
-      "key": 0
-    },
-    {
-      "edge_id": "BR_EX_BE_00071",
-      "relation": "sub_concept_direct_anchor",
-      "edge_type": "BR_EX_BE_NEW",
-      "status": "active",
-      "claim_class": "interpretive_mapping_valid_relation_support",
-      "confidence": 0.42,
-      "source": "N_BE_00019",
-      "target": "N_QM_VVV_00024",
-      "key": 0
-    },
-    {
-      "edge_id": "BR_EX_BE_00072",
-      "relation": "sub_concept_direct_anchor",
-      "edge_type": "BR_EX_BE_NEW",
-      "status": "active",
-      "claim_class": "interpretive_mapping_valid_connection_support",
-      "confidence": 0.42,
-      "source": "N_BE_00021",
-      "target": "N_QM_VVV_00024",
-      "key": 0
-    },
-    {
       "source": "N_BE_00086",
       "target": "N_QM_VVV_00051",
       "edge_type": "BR_EX_BE",
@@ -4713,52 +4750,82 @@
     {
       "source": "N_BE_00018",
       "target": "N_QM_VVV_00062",
-      "edge_type": "BR_EX_BE",
+      "edge_type": "BR_EX_BE_NEW",
       "relation": "structural_analogy",
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_BE_00073",
       "similarity": 0.9,
-      "phase": "phase4-sim"
+      "phase": "phase6-expert"
     },
     {
       "source": "N_BE_00015",
       "target": "N_QM_VVV_00063",
-      "edge_type": "BR_EX_BE",
+      "edge_type": "BR_EX_BE_NEW",
       "relation": "structural_analogy",
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_BE_00074",
       "similarity": 0.9,
-      "phase": "phase4-sim"
+      "phase": "phase6-expert"
     },
     {
       "source": "N_BE_00003",
       "target": "N_QM_VVV_00056",
-      "edge_type": "BR_EX_BE",
+      "edge_type": "BR_EX_BE_NEW",
       "relation": "sub_concept_direct_anchor",
       "claim_class": "interpretive_mapping_valid_sign_support",
       "br_ex_id": "BR_EX_BE_00075",
       "similarity": 0.88,
-      "phase": "phase4-sim"
+      "phase": "phase6-expert"
     },
     {
       "source": "N_BE_00019",
       "target": "N_QM_VVV_00057",
-      "edge_type": "BR_EX_BE",
+      "edge_type": "BR_EX_BE_NEW",
       "relation": "sub_concept_direct_anchor",
       "claim_class": "interpretive_mapping_draft_relation_support",
       "br_ex_id": "BR_EX_BE_00076",
       "similarity": 0.84,
-      "phase": "phase4-sim"
+      "phase": "phase6-expert"
     },
     {
       "source": "N_BE_00006",
       "target": "N_QM_VVV_00059",
-      "edge_type": "BR_EX_BE",
+      "edge_type": "BR_EX_BE_NEW",
       "relation": "sub_concept_direct_anchor",
       "claim_class": "interpretive_mapping_draft_registration_state_update_support",
       "br_ex_id": "BR_EX_BE_00077",
       "similarity": 0.84,
-      "phase": "phase4-sim"
+      "phase": "phase6-expert"
+    },
+    {
+      "source": "N_BE_00015",
+      "target": "N_QM_VVV_00002",
+      "edge_type": "BR_EX_BE_NEW",
+      "relation": "structural_analogy",
+      "claim_class": "interpretive_mapping",
+      "br_ex_id": "BR_EX_BE_00078",
+      "similarity": 1.0,
+      "phase": "phase6-expert"
+    },
+    {
+      "source": "N_BE_00015",
+      "target": "N_QM_VVV_00005",
+      "edge_type": "BR_EX_BE_NEW",
+      "relation": "structural_analogy (contrastive)",
+      "claim_class": "interpretive_mapping",
+      "br_ex_id": "BR_EX_BE_00079",
+      "similarity": 0.8,
+      "phase": "phase6-expert"
+    },
+    {
+      "source": "N_BE_00013",
+      "target": "N_QM_VVV_00015",
+      "edge_type": "BR_EX_BE_NEW",
+      "relation": "structural_analogy",
+      "claim_class": "interpretive_mapping",
+      "br_ex_id": "BR_EX_BE_00080",
+      "similarity": 1.0,
+      "phase": "phase6-expert"
     },
     {
       "source": "N_QM_VVV_00051",
@@ -4773,62 +4840,72 @@
     {
       "source": "N_QM_VVV_00060",
       "target": "N_QM_00016",
-      "edge_type": "BR_EX_QM",
+      "edge_type": "BR_EX_QM_NEW",
       "relation": "registration_layer_extension_of",
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_QM_00075",
       "similarity": 1.0,
-      "phase": "phase4-sim"
+      "phase": "phase4-sync"
     },
     {
       "source": "N_QM_VVV_00062",
       "target": "N_QM_00016",
-      "edge_type": "BR_EX_QM",
+      "edge_type": "BR_EX_QM_NEW",
       "relation": "registration_layer_extension_of",
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_QM_00077",
       "similarity": 0.9,
-      "phase": "phase4-sim"
+      "phase": "phase4-sync"
     },
     {
       "source": "N_QM_VVV_00064",
       "target": "N_QM_00090",
-      "edge_type": "BR_EX_QM",
+      "edge_type": "BR_EX_QM_NEW",
       "relation": "physical_substrate_for",
       "claim_class": "evidence_support",
       "br_ex_id": "BR_EX_QM_00079",
       "similarity": 1.0,
-      "phase": "phase4-sim"
+      "phase": "phase4-sync"
     },
     {
       "source": "N_QM_VVV_00056",
       "target": "N_QM_00102",
-      "edge_type": "BR_EX_QM",
+      "edge_type": "BR_EX_QM_NEW",
       "relation": "physical_substrate_for",
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_QM_00082",
       "similarity": 0.88,
-      "phase": "phase4-sim"
+      "phase": "phase4-sync"
     },
     {
       "source": "N_QM_VVV_00057",
       "target": "N_QM_00029",
-      "edge_type": "BR_EX_QM",
+      "edge_type": "BR_EX_QM_NEW",
       "relation": "physical_substrate_for",
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_QM_00083",
       "similarity": 0.86,
-      "phase": "phase4-sim"
+      "phase": "phase4-sync"
     },
     {
       "source": "N_QM_VVV_00059",
       "target": "N_QM_00095",
-      "edge_type": "BR_EX_QM",
+      "edge_type": "BR_EX_QM_NEW",
       "relation": "registration_layer_extension_of",
       "claim_class": "interpretive_mapping",
       "br_ex_id": "BR_EX_QM_00084",
       "similarity": 0.92,
-      "phase": "phase4-sim"
+      "phase": "phase4-sync"
+    },
+    {
+      "source": "N_QM_VVV_00009",
+      "target": "N_QM_00033",
+      "edge_type": "BR_EX_QM_NEW",
+      "relation": "physical_substrate_for",
+      "claim_class": "interpretive_mapping",
+      "br_ex_id": "BR_EX_QM_00085",
+      "similarity": 0.9,
+      "phase": "phase4-sync"
     }
   ]
 }

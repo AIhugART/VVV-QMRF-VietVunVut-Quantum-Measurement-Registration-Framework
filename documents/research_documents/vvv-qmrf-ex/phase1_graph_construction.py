@@ -31,7 +31,7 @@ BASE = Path("c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement")
 OUT  = BASE / "documents/research_documents/vvv-qmrf-ex/data"
 
 BE_SOT       = BASE / "SYSTEM_Buddhist_Epistemology/system_be_full.md"
-VVV_NODES    = BASE / "documents/research_documents/vvv-qmrf/node_QM_VVV.md"
+VVV_NODES    = BASE / "documents/research_documents/vvv-qmrf-ex/source_snapshot/vvv_qmrf_core/node_QM_VVV.md"
 QM_SOT       = BASE / "SYSTEM_Quantum_Measurement/system_qm_full.md"
 VVV_EDGES    = BASE / "documents/research_documents/vvv-qmrf/edge_QM_VVV.md"
 BRIDGE_FILE  = BASE / "documents/research_documents/vvv-qmrf/bridge_QM_standard_to_VVV_QMRF.md"
@@ -313,7 +313,7 @@ if __name__ == "__main__":
 
     # Step 1.2
     vvv_nodes = parse_vvv_nodes(VVV_NODES)
-    print(f"Step 1.2  VVV nodes: {len(vvv_nodes):>4}  (expected 55)")
+    print(f"Step 1.2  VVV nodes: {len(vvv_nodes):>4}  (expected 62)")
 
     # Step 1.3
     qm_nodes = parse_qm_nodes(QM_SOT)
@@ -347,7 +347,7 @@ if __name__ == "__main__":
     report = validate_graph(G, be_nodes, vvv_nodes, qm_nodes)
     print(f"\nStep 1.6  Validation:")
     print(f"  BE nodes:  {report['be_nodes']:>4}  (expected 263)")
-    print(f"  VVV nodes: {report['vvv_nodes']:>4}  (expected 55)")
+    print(f"  VVV nodes: {report['vvv_nodes']:>4}  (expected 62)")
     print(f"  QM nodes:  {report['qm_nodes']:>4}  (expected 105)")
     print(f"  Total:     {report['total_nodes']}  (expected 423)")
     print(f"  Edges:     {report['total_edges']}  (expected ~149)")
