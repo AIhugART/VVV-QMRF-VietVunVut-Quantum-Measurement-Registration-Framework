@@ -1137,6 +1137,57 @@ K9_E modification of S_LF is PARTIAL (only through these mixed-setting terms).
 
 ---
 
+## 20. K9-S11 — Bong Geometry Cancellation (Self-Correction of K9-S10) — 2026-05-23
+
+### 20.1 Critical Self-Correction
+
+K9-S10 claimed 4 of 9 Bong correlators ($\langle A_1 B_2 \rangle, \langle A_1 B_3 \rangle, \langle A_2 B_1 \rangle, \langle A_3 B_1 \rangle$) were testable because "non-uniform $P(d|c)$ breaks marginalization cancellation."
+
+**K9-S11 DISPROVES this for the standard Bong geometry.**
+
+### 20.2 The Bong Geometry Cancellation Theorem
+
+For the Bong protocol:
+- Friend measures in z-basis ($\{|H\rangle, |V\rangle\}$, Bloch z-pole)
+- Superobserver measures in XY-plane (Bloch equator)
+
+Every z-eigenstate has 50/50 overlap with every XY-plane eigenstate:
+$$|\langle b(\theta) | d_z \rangle|^2 = \frac{1}{2} \quad \text{for ALL } (b, d, \theta)$$
+
+Therefore $f_\perp(b, d) = 1/2$ for ALL outcome pairs — it is **outcome-INDEPENDENT**.
+
+Consequence: $\sum_d f_\perp \cdot P(d|c) = \frac{1}{2} \sum_d P(d|c) = \frac{1}{2}$ regardless of $c$.
+Marginalization cancellation applies EVEN for mixed settings.
+
+**Result: 0 of 9 standard Bong correlators are testable. K9\_E = QM for ALL Bong settings.**
+
+### 20.3 When K9_E IS Testable
+
+K9_E is testable in a **MODIFIED** Bong protocol where the superobserver's measurement axis is **tilted** at angle $\alpha$ from the z-axis ($0 < \alpha < 90°$):
+
+| $\alpha$ (deg) | $\beta_{K9}$ | $\delta(\%)$ | Testable? |
+|---|---|---|---|
+| 90 (standard Bong) | any | 0.0% | **NO** |
+| 60 | 0.3 | -12.7% | **YES** |
+| 45 | 0.3 | -8.1% | **YES** |
+| 45 | 0.5 | -14.3% | **YES** |
+| 60 | 0.5 | -23.1% | **YES** |
+
+### 20.4 K9-S10 Errata
+
+- Section 3.1 Theorem: CORRECT in principle, WRONG in application to Bong.
+  Missing condition: $f_\perp$ must be outcome-dependent (not constant).
+- Section 3.2 Table: "4 of 9 testable" → "0 of 9 testable" (standard Bong).
+- Erratum header added to K9S10_testability_analysis.md.
+
+### 20.5 Files Created/Modified
+- [K9S11_bong_predictions.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S11_bong_predictions.md) — Full analysis document.
+- [K9S11_bong_predictions.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/K9S11_bong_predictions.py) — Numerical engine.
+- [K9S10_testability_analysis.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S10_testability_analysis.md) — Erratum added.
+- [VVV_QMRF_K9_Analysis_Plan.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/VVV_QMRF_K9_Analysis_Plan.md) — K9-S11 COMPLETE, K9-S12 added.
+
+---
+
 ## Resolved Historical Open Items Moved from v2.0 Main Document
 
 

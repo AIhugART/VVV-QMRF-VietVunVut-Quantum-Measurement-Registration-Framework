@@ -9,6 +9,22 @@
 
 ---
 
+> **ERRATUM (K9-S11, 2026-05-23):** This document's Section 3.1 Theorem and
+> Section 3.2 table are INCORRECT for the standard Bong protocol geometry.
+> 
+> K9-S10 correctly proved that partial marginalization non-cancellation
+> requires outcome-dependent f_perp. But K9-S10 did NOT verify this for
+> the specific Bong geometry (z-basis Friend vs XY-plane Superobserver).
+> 
+> K9-S11 computed: for z-basis vs XY-plane, f_perp = 1/2 for ALL (b,d)
+> outcome pairs. f_perp is outcome-INDEPENDENT. Cancellation STILL applies.
+> 
+> CORRECTED: 0 of 9 standard Bong correlators are testable.
+> K9_E IS testable in a MODIFIED Bong protocol (tilted superobserver basis).
+> See [K9S11_bong_predictions.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S11_bong_predictions.md)
+
+---
+
 ## 0. CRITICAL CORRECTION: Phase 10b IS INVALIDATED
 
 > **Phase10b_bong_lf.md is WRONG.**

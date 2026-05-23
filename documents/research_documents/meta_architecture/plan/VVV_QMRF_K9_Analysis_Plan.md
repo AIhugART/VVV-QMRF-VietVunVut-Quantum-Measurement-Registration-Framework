@@ -1003,15 +1003,53 @@ Marginalization Cancellation Theorem (K9-S8).
 
 ---
 
-## K9-S11: Numerical Bong Predictions (PENDING)
+## K9-S11: Numerical Bong Predictions (COMPLETE -- 2026-05-23)
 
 **Goal:** Compute K9_E predictions for the 4 testable Bong correlators.
 Compare with Bong experimental data (Fig. 4, results.pdf).
 
-**Prerequisite:** K9-S10 COMPLETE. Need to:
-1. Compute P_K9E(c, b | y=j) for each testable setting
-2. Extract Bong experimental values from Figure 4
-3. Compare K9_E predictions with data
+**RESULT: K9-S10 WAS PARTIALLY WRONG.**
 
-**Output:** `k9_analysis/K9S11_bong_predictions.md` + Python code.
+K9-S10's Partial Marginalization Non-Cancellation Theorem was correct in
+principle but MISAPPLIED to the Bong geometry:
 
+```
+CRITICAL FINDING (K9-S11):
+  For the standard Bong protocol:
+    Friend measures: z-basis ({|H>, |V>}, Bloch z-pole)
+    Superobserver measures: XY-plane (Bloch equator)
+    
+  |<b|d>|^2 = 1/2 for ALL (b,d) pairs.
+  f_perp is outcome-INDEPENDENT => marginalization cancellation applies.
+  
+  RESULT: 0 of 9 standard Bong correlators are testable by K9_E.
+  K9_E = QM for ALL Bong settings, ALL beta.
+```
+
+K9-S10 assumed f_perp would be outcome-dependent for Bong settings.
+K9-S11 computed the actual overlaps and found f_perp = constant = 1/2.
+This is because z-axis and XY-equator are maximally incompatible:
+every z-eigenstate decomposes 50/50 into any equatorial basis.
+
+**WHEN IS K9_E TESTABLE?**
+
+K9_E IS testable in a MODIFIED Bong protocol where the superobserver
+measures at a TILTED angle (0 < alpha < 90 deg from z-axis):
+
+| alpha | beta_k9 | delta(%) | Testable? |
+|---|---|---|---|
+| 90 (standard) | any | 0.0% | NO |
+| 60 | 0.3 | -12.7% | YES |
+| 45 | 0.3 | -8.1% | YES |
+| 45 | 0.5 | -14.3% | YES |
+
+**Output:** `k9_analysis/K9S11_bong_predictions.md` + `fits/K9S11_bong_predictions.py`
+
+---
+
+## K9-S12: Modified Bong Protocol Proposal (PENDING)
+
+**Goal:** Design an experimental proposal for testing K9_E using a modified
+Bong protocol with tilted superobserver measurement basis.
+
+**Prerequisite:** K9-S11 COMPLETE
