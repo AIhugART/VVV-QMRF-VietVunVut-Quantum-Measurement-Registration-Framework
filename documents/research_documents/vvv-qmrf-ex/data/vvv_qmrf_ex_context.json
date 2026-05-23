@@ -15,7 +15,7 @@
     "be_count": 263,
     "vvv_count": 52,
     "qm_count": 105,
-    "edge_count": 214
+    "edge_count": 215
   },
   "embedding_model": "sentence-transformers/all-mpnet-base-v2",
   "embedding_dim": 768,
@@ -55,7 +55,7 @@
     "ghost_entries": 0,
     "visualizations_generated": 2
   },
-  "edge_count": 214,
+  "edge_count": 215,
   "phase6_results": {
     "km_pm_nodes_resolved": 9,
     "new_br_ex_be_entries": 9,
@@ -93,11 +93,11 @@
   },
   "graph_sync_v1_6": {
     "applied": true,
-    "injected_be": 39,
-    "injected_qm": 7,
+    "injected_be": 42,
+    "injected_qm": 8,
     "skipped_be": 0,
     "skipped_qm": 0,
-    "edges_before": 168,
-    "edges_after": 214
+    "edges_before": 165,
+    "edges_after": 215
   }
 }
