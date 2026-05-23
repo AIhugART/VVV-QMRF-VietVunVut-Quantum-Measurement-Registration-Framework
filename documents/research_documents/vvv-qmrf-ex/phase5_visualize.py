@@ -145,15 +145,25 @@ for u, v, data in G.edges(data=True):
                 color=color, linewidth=lw, alpha=0.6, zorder=1)
 
 # Draw nodes
-# BE nodes: small, green
+# BE nodes: small, green — with labels
 be_x = [pos[n][0] for n in be_nodes]
 be_y = [pos[n][1] for n in be_nodes]
 ax.scatter(be_x, be_y, s=8, c='#50fa7b', alpha=0.4, zorder=2, edgecolors='none')
+for node in sorted(be_nodes):
+    x, y = pos[node]
+    short_be = node.replace('N_BE_', '')
+    ax.text(x, y + 0.18, short_be, fontsize=7, color='#50fa7b', alpha=0.55,
+            ha='center', va='bottom', fontfamily='monospace', zorder=4)
 
-# QM nodes: small, red
+# QM nodes: small, red — with labels
 qm_x = [pos[n][0] for n in qm_nodes]
 qm_y = [pos[n][1] for n in qm_nodes]
 ax.scatter(qm_x, qm_y, s=8, c='#ff6b6b', alpha=0.4, zorder=2, edgecolors='none')
+for node in sorted(qm_nodes):
+    x, y = pos[node]
+    short_qm = node.replace('N_QM_', '')
+    ax.text(x, y + 0.18, short_qm, fontsize=7, color='#ff6b6b', alpha=0.55,
+            ha='center', va='bottom', fontfamily='monospace', zorder=4)
 
 # VVV nodes: larger, color-coded by intersection status
 for node in sorted(vvv_nodes):
@@ -179,11 +189,15 @@ for node in sorted(vvv_nodes):
         size = 30
         alpha = 0.5
     ax.scatter(x, y, s=size, c=color, alpha=alpha, zorder=3, edgecolors='white', linewidths=0.3)
+    short_label = node.replace('N_QM_VVV_', '')
+    ax.text(x, y + 0.15, short_label, fontsize=7, color='white', alpha=0.85,
+            ha='center', va='bottom', fontfamily='monospace', zorder=4)
 
+vvv_label_count = len(vvv_nodes)
 # Layer labels
 ax.text(-4, 5.8, 'BE Layer\n(263 nodes)', fontsize=14, fontweight='bold',
         color='#50fa7b', ha='center', va='bottom', fontfamily='monospace')
-ax.text(0, 4.8, 'VVV-QMRF Layer\n(52 nodes)', fontsize=14, fontweight='bold',
+ax.text(0, 4.8, f'VVV-QMRF Layer\n({vvv_label_count} nodes)', fontsize=14, fontweight='bold',
         color='#ffd93d', ha='center', va='bottom', fontfamily='monospace')
 ax.text(4, 5.8, 'QM Standard Layer\n(105 nodes)', fontsize=14, fontweight='bold',
         color='#ff6b6b', ha='center', va='bottom', fontfamily='monospace')
@@ -294,10 +308,11 @@ for j, node in enumerate(vvv_sorted):
                             edgecolor='#ffd93d', facecolor='none', linestyle='--')
         ax.add_patch(rect)
 
+n_vvv = len(vvv_sorted)
 ax.set_title('K-ρ Coverage Heatmap — Per VVV Node (gold dashed = intersection)\n'
-             f'K-side: {sum(1 for c in k_counts if c > 0)}/52 covered | '
-             f'ρ-side: {sum(1 for c in rho_counts if c > 0)}/52 covered | '
-             f'Intersection: {len(intersection_nodes)}/52',
+             f'K-side: {sum(1 for c in k_counts if c > 0)}/{n_vvv} covered | '
+             f'ρ-side: {sum(1 for c in rho_counts if c > 0)}/{n_vvv} covered | '
+             f'Intersection: {len(intersection_nodes)}/{n_vvv}',
              fontsize=12, fontweight='bold', color='white', pad=15, fontfamily='monospace')
 
 cbar = plt.colorbar(im, ax=ax, orientation='vertical', fraction=0.02, pad=0.02)
@@ -344,6 +359,7 @@ for i, node in enumerate(vvv_sorted):
     })
 
 # Summary statistics
+n_vvv_total = len(vvv_sorted)
 total_dual = sum(1 for d in coverage_data if d['dual_anchored'])
 total_k_only = sum(1 for d in coverage_data if d['k_count'] > 0 and d['rho_count'] == 0)
 total_rho_only = sum(1 for d in coverage_data if d['k_count'] == 0 and d['rho_count'] > 0)
@@ -354,14 +370,14 @@ avg_k = np.mean([d['k_count'] for d in coverage_data])
 avg_rho = np.mean([d['rho_count'] for d in coverage_data])
 
 # F14 staged milestone check
-p4_pct = total_dual / 52 * 100
-p5_target_met = total_dual >= 26  # ≥50% = ≥26 nodes
+p4_pct = total_dual / n_vvv_total * 100
+p5_target_met = total_dual >= n_vvv_total / 2  # >=50%
 
 # F15 exception check
-k_excepted = 27  # KE-QI(4) + KE-OF(13) + KE-SC(10)
-k_pending = max(0, 52 - total_dual - k_excepted)   # KE-PM (initially 9, resolved to 0 post-Phase 6)
+k_excepted = 27  # KE-QI(4) + KE-OF(13) + KE-SC(10) — structural, independent of node count
+k_pending = max(0, n_vvv_total - total_dual - k_excepted)
 k_effective = total_dual + k_excepted
-k_effective_pct = k_effective / 52 * 100
+k_effective_pct = k_effective / n_vvv_total * 100
 
 report = {
     "phase": "phase5_coverage",
@@ -371,7 +387,7 @@ report = {
         "edges": G.number_of_edges()
     },
     "coverage_summary": {
-        "total_vvv_nodes": 52,
+        "total_vvv_nodes": n_vvv_total,
         "dual_anchored": total_dual,
         "k_only": total_k_only,
         "rho_only": total_rho_only,
@@ -383,8 +399,8 @@ report = {
         "avg_rho_degree": round(avg_rho, 2)
     },
     "f14_staged_milestones": {
-        "phase4_actual": f"{p4_pct:.1f}% ({total_dual}/52)",
-        "phase5_target": "≥50% (≥26)",
+        "phase4_actual": f"{p4_pct:.1f}% ({total_dual}/{n_vvv_total})",
+        "phase5_target": "≥50%",
         "phase5_target_met": p5_target_met,
         "note": "Phase 5 target requires manual review pipeline (Phase 6+ work)"
     },
@@ -397,10 +413,10 @@ report = {
             "KE-SC": 10
         },
         "k_pending_manual": k_pending,
-        "k_effective_coverage": f"{k_effective_pct:.1f}% ({k_effective}/52)",
-        "rho_covered": 51,
+        "k_effective_coverage": f"{k_effective_pct:.1f}% ({k_effective}/{n_vvv_total})",
+        "rho_covered": total_dual + total_rho_only,
         "rho_excepted": 1,
-        "rho_effective_coverage": "100% (52/52)"
+        "rho_effective_coverage": f"{(total_dual + total_rho_only + 1) / n_vvv_total * 100:.1f}% ({total_dual + total_rho_only + 1}/{n_vvv_total})"
     },
     "boundary_audit": {
         "controls_checked": 7,
@@ -461,9 +477,11 @@ print(f"  Step 5.5: Context save        → {CONTEXT_FILE}")
 print(f"  F15:      K-gap exceptions    → k_gap_exception_list.md")
 print(f"  F15:      ρ-gap exceptions    → rho_gap_exception_list.md")
 print()
-print(f"  Intersection: {total_dual}/52 ({p4_pct:.1f}%)")
-print(f"  K-effective:  {k_effective}/52 ({k_effective_pct:.1f}%) [with structural exceptions]")
-print(f"  rho-effective:  52/52 (100%)")
+rho_covered = total_dual + total_rho_only
+rho_effective_total = rho_covered + 1  # +1 rho_excepted
+print(f"  Intersection: {total_dual}/{n_vvv_total} ({p4_pct:.1f}%)")
+print(f"  K-effective:  {k_effective}/{n_vvv_total} ({k_effective_pct:.1f}%) [with structural exceptions]")
+print(f"  rho-effective:  {rho_effective_total}/{n_vvv_total} ({rho_effective_total / n_vvv_total * 100:.1f}%)")
 print(f"  Boundary:     PASS (0 violations / 111 entries)")
 print(f"  Ghost entries: 0 (post-F11/F12)")
 print("="*60)

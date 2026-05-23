@@ -48,8 +48,8 @@
     "vvv_qm_new_tier2": 13
   },
   "phase5_results": {
-    "intersection_pct": 98.1,
-    "k_effective_coverage_pct": 150.0,
+    "intersection_pct": 87.1,
+    "k_effective_coverage_pct": 130.6,
     "rho_effective_coverage_pct": 100.0,
     "boundary_audit": "PASS",
     "ghost_entries": 0,
