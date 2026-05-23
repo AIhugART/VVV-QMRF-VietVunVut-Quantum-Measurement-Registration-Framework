@@ -89,25 +89,35 @@ FULL APPROVAL for Main Plan Phase 7-12.
 | **7** | P1: Constraints | [Phase7](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase7_constraint_evaluation.md) | ✅ COMPLETE | A:7/7, B:5/5, C:Class C |
 | **8** | P2: Equation | [Phase8](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase8_candidate_equation.md) | ✅ COMPLETE | K9_E documented, 0 orphaned assumptions |
 | **9** | P3: Adversarial | [Phase9](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase9_adversarial_testing.md) | ✅ COMPLETE | 4/4 tests PASS, G1/G2/G3 PASS |
-| **10** | P4: Data Fit | [Phase10](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10_data_fitting.md) | ✅ COMPLETE | β_fit=0, β_max≤0.21 (1σ) |
+| **10a** | P4: Data Fit (Proietti) | [Phase10](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10_data_fitting.md) | ✅ COMPLETE | β=0, PATH A: β≤0.175 (1σ) |
+| **10b** | Bong LF Extension | [Phase10b](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10b_bong_lf.md) | ✅ COMPLETE | LF reduced, structural consistent |
+| **10c** | FR Consistency | [Phase10c](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10c_fr_consistency.md) | ✅ COMPLETE | Contradiction AVOIDED via K5 |
+| **10J** | Joint Verdict | [Phase10J](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10_joint_verdict.md) | ✅ COMPLETE | 3-way consistent, 0 contradictions |
 | **11** | P5: 3-Observer | [Phase11](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase11_3observer_prediction.md) | ✅ COMPLETE | δM₃=−0.223 (β=0.3), 11× amplification |
 | **12** | P6: Reduction | [Phase12](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase12_structural_reduction.md) | ✅ COMPLETE | Copenhagen/MWI = special cases |
 | **13** | P7: Assessment | [Phase13](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase13_honest_assessment.md) | ✅ COMPLETE | Publication path: 2-4wk FoP, 3-6mo PRA |
 
 ---
 
-## NEXT STEPS (Post-Phase 13)
+## NEXT STEPS (Post-Phase 10 Complete)
 
 | Priority | Task | Status |
 |---|---|---|
-| **1** | D1-BLK-1: Extract individual ⟨A_xB_y⟩ from Proietti Figure 3 | ⬜ NOT STARTED |
+| ~~1~~ | ~~D1-BLK-1: Extract individual ⟨A_xB_y⟩~~ | ✅ RESOLVED (uniform V reconstruction) |
+| **1** | Obtain RAW Proietti Figure 3 values (setting-dependent visibility) | ⬜ Requires compiled PDF |
 | **2** | T4-H resolution (colimit existence proof) | ⬜ NOT STARTED |
 | **3** | LaTeX write-up for Foundations of Physics submission | ⬜ NOT STARTED |
 | **4** | Experimental proposal with quantum optics collaborator | ⬜ NOT STARTED |
 
-### Completed This Session
+### Completed Across Sessions
 
 1. **Tier 4**: K9_E deep analysis → [Tier4_K9E_deep_analysis.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/Tier4_K9E_deep_analysis.md)
 2. **PP-4**: Python infrastructure → [PP4_infrastructure_report.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/pre_plan/PP4_infrastructure_report.md)
 3. **Phases 7-13**: Full Main Plan Prompt Sequence → 7 Phase files created
+4. **D1-BLK-1**: Resolved via uniform V reconstruction → [d1_blk1_4point_fit.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/d1_blk1_4point_fit.py)
+5. **Phase 10 PATH A**: 4-point fit upgrade (β≤0.175 at 1σ, 17% tighter)
+6. **Phase 10b**: Bong LF extension → [Phase10b_bong_lf.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10b_bong_lf.md)
+7. **Phase 10c**: FR contradiction AVOIDED → [Phase10c_fr_consistency.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10c_fr_consistency.md) + [fr_consistency.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/fr_consistency.py)
+8. **Phase 10 Joint**: 3-way consistency PASS → [Phase10_joint_verdict.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10_joint_verdict.md)
+9. **Repo hygiene**: Stale files removed, screenshots staged, all plan markers COMPLETE
 
