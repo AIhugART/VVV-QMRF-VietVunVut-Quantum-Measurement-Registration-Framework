@@ -33,15 +33,37 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ## 3. Claim Status / Trạng thái Claim
 
-**EN:** Unless explicitly stated otherwise, VVV-QMRF categories, operators, postulates, lemmas, and notation are research proposals. The current framework should be treated as Registration Class D: derived, exploratory, and awaiting formal verification.
+**EN:** VVV-QMRF categories, operators, postulates, lemmas, and notation are research proposals organized in five architectural layers with differentiated classification:
 
-**VN:** Trừ khi có ghi rõ khác, các category, operator, postulate, lemma, và notation của VVV-QMRF đều là đề xuất nghiên cứu. Khung hiện tại nên được xem là Registration Class D: được suy dẫn, đang thăm dò, và chờ kiểm chứng hình thức.
+| Layer | Content | Classification |
+|-------|---------|----------------|
+| Layer 1 | K1–K8 Registration-logic axioms | **FROZEN** — structural foundation, stable |
+| Layer 2 | T1–T7 Bridge theorems | **UPDATABLE** — T1 N=2 constructive proven; T4-H Step 1 proven, Steps 2–4 deferred |
+| Layer 3 | K9_E Probability postulate (P9) | **Class C (genuine)** — structurally testable, empirically evidenced, ambiguous |
+| Layer 4 | Multi-paper data fit (D1–D3) | **Class D** — derived, exploratory |
+| Layer 5 | Prediction + Reduction + Assessment | **Class D** — derived, exploratory, conditional on T4-H Steps 2–4 |
+
+**EN:** K9_E empirical status (Class C genuine, v29, 2026-05-23): genuine non-circular fit to raw Proietti Figure 3 data yields β = 0.598, V = 0.939, Δχ² = 5.35 (2.31σ) favoring K9_E over QM-uniform-visibility. Adversarial tests 4/4 PASS. K9_E multiplicative pattern (2BSM/1BSM ratio ~2) NOT confirmed by raw data (ratio = -0.78) — evidence is real but ambiguous, experimental systematics not ruled out. Distinguishing signal below current experimental detection threshold (β ≤ 0.175 at 1-sigma); confirmation or rejection requires a 3-observer experiment.
 
 **EN:** VVV-QMRF is not yet peer-reviewed, not yet experimentally validated, and not accepted as a standard physical theory.
 
-**VN:** VVV-QMRF chưa được peer-reviewed, chưa được kiểm chứng thực nghiệm, và chưa được công nhận như một lý thuyết vật lý chuẩn.
-
 **EN:** VVV-QMRF should not be presented as a complete measurement theory; it is a proposed registration-layer framework.
+
+---
+
+**VN:** Các category, operator, postulate, lemma, và notation của VVV-QMRF đều là đề xuất nghiên cứu được tổ chức trong năm tầng kiến trúc với phân loại khác biệt:
+
+| Tầng | Nội dung | Phân loại |
+|-------|---------|----------------|
+| Tầng 1 | K1–K8 Registration-logic axioms | **FROZEN** — nền tảng cấu trúc, ổn định |
+| Tầng 2 | T1–T7 Bridge theorems | **UPDATABLE** — T1 N=2 constructive đã chứng minh; T4-H Step 1 đã chứng minh, Steps 2–4 hoãn lại |
+| Tầng 3 | K9_E Probability postulate (P9) | **Class C (genuine)** — có thể kiểm tra cấu trúc, có bằng chứng thực nghiệm, còn mơ hồ |
+| Tầng 4 | Multi-paper data fit (D1–D3) | **Class D** — được suy dẫn, đang thăm dò |
+| Tầng 5 | Prediction + Reduction + Assessment | **Class D** — được suy dẫn, đang thăm dò, phụ thuộc vào T4-H Steps 2–4 |
+
+**VN:** Trạng thái thực nghiệm của K9_E (Class C genuine, v29, 2026-05-23): fit không vòng vo vào dữ liệu thô Proietti Figure 3 cho β = 0.598, V = 0.939, Δχ² = 5.35 (2.31σ) ủng hộ K9_E so với QM-uniform-visibility. Adversarial tests 4/4 PASS. Mẫu nhân của K9_E (tỉ lệ 2BSM/1BSM ~2) KHÔNG được xác nhận bởi dữ liệu thô (tỉ lệ = -0.78) — bằng chứng là thật nhưng còn mơ hồ, chưa loại trừ được systematics thực nghiệm. Tín hiệu phân biệt nằm dưới ngưỡng phát hiện thực nghiệm hiện tại (β ≤ 0.175 ở 1-sigma); cần thí nghiệm 3-observer để xác nhận hoặc bác bỏ.
+
+**VN:** VVV-QMRF chưa được peer-reviewed, chưa được kiểm chứng thực nghiệm, và chưa được công nhận như một lý thuyết vật lý chuẩn.
 
 **VN:** Không nên trình bày VVV-QMRF như một lý thuyết đo lường hoàn chỉnh; nó là một khung đề xuất ở tầng ghi nhận.
 
@@ -73,11 +95,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **EN:** For short outputs, single images, thumbnails, captions, short prompts, short audio clips, short videos, single slides, or outputs where full text is not practical, display or speak this warning immediately before and immediately after the content whenever the medium allows. If only one direct placement is technically possible, place it before the content and repeat it in the nearest available caption, footer, metadata, description, or adjacent note:
 
-> **DISCLAIMER:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use.
+> **DISCLAIMER:** VVV-QMRF is independent personal research (K9_E = Class C genuine; other layers = Class D), not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use.
 
 **VN:** Với output ngắn, ảnh đơn, thumbnail, caption, prompt ngắn, audio ngắn, video ngắn, slide đơn, hoặc output không tiện chứa bản đầy đủ, phải hiển thị hoặc đọc cảnh báo này ngay trước và ngay sau nội dung khi medium cho phép. Nếu về mặt kỹ thuật chỉ đặt trực tiếp được một lần, phải đặt ở trước nội dung và lặp lại ở caption, footer, metadata, description, hoặc ghi chú gần nhất có thể:
 
-> **CẢNH BÁO:** VVV-QMRF là nghiên cứu cá nhân độc lập ở Class D, không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
+> **CẢNH BÁO:** VVV-QMRF là nghiên cứu cá nhân độc lập (K9_E = Class C genuine; các tầng khác = Class D), không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế.
 
 ### 5.2 Standard-output rule / Quy tắc output trung bình
 
@@ -85,14 +107,14 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 1. VVV-QMRF is a registration-layer research framework, not a standard physical theory.
 2. It does not replace, revise, or refute Standard Quantum Mechanics.
-3. Its current proposals are Registration Class D unless otherwise stated.
+3. K9_E is Registration Class C (genuine) — structurally testable, empirically evidenced, ambiguous; other layers remain Class D unless otherwise stated.
 4. It is not peer-reviewed, not experimentally validated, and not suitable for real-world technical decisions.
 
 **VN:** Với bản tóm tắt trung bình, trang bài học, kịch bản, slide deck, mô tả video, show notes audio, hoặc giải thích do AI tạo, phải có ít nhất cảnh báo ngắn ở cả trước và sau nội dung, cộng với bốn điểm sau:
 
 1. VVV-QMRF là khung nghiên cứu tầng ghi nhận, không phải lý thuyết vật lý chuẩn.
 2. Nó không thay thế, không sửa, và không bác bỏ Standard Quantum Mechanics.
-3. Các đề xuất hiện tại thuộc Registration Class D trừ khi có ghi rõ khác.
+3. K9_E thuộc Registration Class C (genuine) — có thể kiểm tra cấu trúc, có bằng chứng thực nghiệm, còn mơ hồ; các tầng khác vẫn là Class D trừ khi có ghi rõ khác.
 4. Nó chưa peer-reviewed, chưa kiểm chứng thực nghiệm, và không phù hợp cho quyết định kỹ thuật ngoài thực tế.
 
 ### 5.3 Full-output rule / Quy tắc output lớn
