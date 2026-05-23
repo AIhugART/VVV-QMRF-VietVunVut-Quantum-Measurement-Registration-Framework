@@ -33,6 +33,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 - `02_derivation_chain/Phase8_candidate_equation.md` — A1 eliminated
 - `04_governance/K_Space_Axiomatization_plan.md` — v29 cross-reference
 - New: `07_fits/proietti_raw_fit.py`, `Phase10_genuine_fit_RCA_Round1.md`, `T4_H_step1_category_proof.md`, `RCA_Final_Verdict_Class_C_Genuine.md`
+- `documents/research_documents/vvv-qmrf/node_QM_VVV.md` — **post-v29 (2026-05-23):** 7 K9_E Layer 3 nodes (N_QM_VVV_00060–00066) extracted via 2-pass 3-round RCA (5-Why x 4/5 threshold) from index.md v29. Added K9_E Term-by-Term Mapping (T1-T8 to node codes), 21 internal relations, 10 line-by-line RCA entries, RCA Root Cause 6.16-6.17. DISCLAIMER updated Class D to Class C (genuine) for Layer 3. 62 nodes total (55 + 7 K9_E). See history.md 2026-05-23 entry for full extraction summary.
 
 **Aggregate RCA: 4.50/5. Class C upgraded from "qualified" to "genuine."**
 

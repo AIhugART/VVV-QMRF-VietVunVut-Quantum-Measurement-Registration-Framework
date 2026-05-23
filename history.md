@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Work History
 # Lịch sử làm việc hệ thống VVV-QMRF
 
-**Last updated:** 2026-05-16<br/>
+**Last updated:** 2026-05-23<br/>
 **Scope:** Historical record of work completed, system milestones, and VVV-QMRF concept nodes created.<br/>
 **Status:** Historical summary only; not a source of truth for node definitions.
 
@@ -315,6 +315,17 @@ This history is derived from these active project files:
 - Centralized the RCA formula registry for the minimal K-state tuple, `U_K`, self-certification `sigma(M)`, `M equiv^K r`, validity `V`, registration lock `C`, pre-symbolic registration `epsilon(M)`, symbolization `Lambda`, internal encoding `f_enc`, registering-system-as-process `R`, and temporal registration gap `Delta`.
 - Preserved the boundary that VVV-QMRF is a K-side registration-layer framework, not a replacement for Standard Quantum Mechanics, Born-rule probability, Schrödinger evolution, physical collapse, detector physics, or Hilbert-space dynamics.
 - Commit pushed to `origin/main`: `93b75ff docs: formalize VVV-QMRF registration formulas`.
+
+### 2026-05-23 — K9_E Layer 3 Node Extraction (2-Pass RCA)
+
+- Extracted 7 new K9_E Layer 3 nodes from [project_vvv_qmrf_class_c/index.md](documents/research_documents/project_vvv_qmrf_class_c/index.md) v29 into [node_QM_VVV.md](documents/research_documents/vvv-qmrf/node_QM_VVV.md).
+- **Pass 1 (5 nodes, ≥4/5 threshold):** N_QM_VVV_00060 K9_E Postulate (P9) root, N_QM_VVV_00061 beta free parameter, N_QM_VVV_00062 f_perp suppression function, N_QM_VVV_00063 K_ctx aggregate metric, N_QM_VVV_00064 Genuine Non-Circular Fit evidence.
+- **Pass 2 (2 nodes, second RCA on unevaluated concepts):** N_QM_VVV_00065 K9_E Multiplicative Pattern (falsifiable prediction, NOT CONFIRMED, 2BSM/1BSM ratio=−0.78 vs predicted ~2), N_QM_VVV_00066 delta_S Theoretical Distinguishability (operational bridge from beta to experimental signature).
+- **Folded/Referenced (11 concepts):** T1 Born rule (canonical QM), T4 C(o_i,o_j) (→f_perp), T6 Z_E (→K9_E), T7 Bhrānti gate (→N_QM_VVV_00032), T8 Anupalabdhi gate (→N_QM_VVV_00036+00020), K5_prospective, delta_M3, FR avoidance, Copenhagen/MWI reduction, adversarial tests, operationalizability gates.
+- **Added:** K9_E Term-by-Term Mapping (Section 2.1), 21 internal relations (Section 3), 10 line-by-line RCA entries (Section 5), RCA Root Cause 6.16–6.17 (Section 6), DISCLAIMER updated from Class D to Class C (genuine) for Layer 3.
+- **Method:** 3-round RCA (5-Why × 4/5 threshold) with VVV-QMRF scope + EX compass (KE-SC 4.0). 16 initial candidates → 5 nodes + 11 folded; 7 second-pass candidates → 2 nodes + 5 deferred.
+- **Result:** node_QM_VVV.md now has 62 nodes (55 original Layer 1–2 + 7 K9_E Layer 3). All K9_E terms (T1–T8) fully traceable to VVV/QM node codes.
+- Commit: `0b601d4` — node_QM_VVV.md v29 update.
 
 ---
 
