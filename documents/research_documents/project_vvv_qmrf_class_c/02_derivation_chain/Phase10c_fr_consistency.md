@@ -9,6 +9,11 @@
 **Data source:** D3 (Frauchiger & Renner 2018, arXiv:1604.07422v2)
 **Type:** Theoretical consistency check (no numerical fitting)
 
+> **ERRATUM (2026-05-23 RCA Logic Audit - F3 cascade):**
+> **F3 - T4-H Proof Gap:** The FR scenario involves N=4 agents. The full formal N=4 K_joint analysis depends on T4 (N-Observer Generalization), which is a HYPOTHESIS, not a proven theorem (see T4_H_proof_gap_analysis.md). [A-FR-3] below flags this as "CONDITIONAL (T4-H)." If T4-H fails, the N=4 structural argument is incomplete. The K5 V_prov mechanism itself (Layer 1, frozen) is not affected; only the formal colimit construction for N=4 is conditional.
+>
+> See [T4-H Proof Gap Analysis](T4_H_proof_gap_analysis.md) and [T4 Bypass Decision](../04_governance/decisions/t4_bypass_decision.md).
+
 ---
 
 ## STEP 1 — FR Paradox Statement Extraction

@@ -7,6 +7,12 @@
 **Input:** Full outputs from Phases 7-12
 **Stance:** Most skeptical reviewer at a top physics journal
 
+> **ERRATUM (2026-05-23 RCA Logic Audit — F1+F2 cascade):**
+> 1. **F1 — Circular Fit:** The "empirical evidence" assessed below (Phase 10 beta=0, PATH A bounds) is from a circular fit (data = V*QM). Phase 10 ERRATUM documents this. The 8 assumptions audited below remain structurally valid; only the empirical weight of Phase 10 results is qualified.
+> 2. **F2 — K9_E is a POSTULATE (P9), not derived from K1-K8:** See Phase 8 ERRATUM. Assessment 1 below correctly identifies 8 assumptions not derivable from K1-K8. K9_E's postulate status reinforces this finding.
+>
+> See [Phase 8 ERRATUM](Phase8_candidate_equation.md), [Phase 10 ERRATUM](Phase10_data_fitting.md), and [index.md §4 ERRATUM](../index.md).
+
 ---
 
 ## ASSESSMENT 1 — Assumption Audit

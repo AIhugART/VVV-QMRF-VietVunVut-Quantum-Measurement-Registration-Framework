@@ -22,9 +22,9 @@ VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H)
 
 ## 2. What is Class C (qualified)?
 
-**Class C** means VVV-QMRF K9_E generates a probability equation derivable from K1–K8 that produces predictions **structurally different** from Standard QM (delta_S != 0 when beta > 0), passes all adversarial tests (4/4), avoids the Frauchiger–Renner paradox via K5 V_prov mechanism, and reduces Copenhagen/MWI as special cases.
+**Class C** means VVV-QMRF K9_E provides a probability postulate (P9) motivated by K1–K8 structure that produces predictions **structurally different** from Standard QM (delta_S != 0 when beta > 0), passes all adversarial tests (4/4), avoids the Frauchiger–Renner paradox via K5 V_prov mechanism, and reduces Copenhagen/MWI as special cases. K9_E is a postulate, not a derivation from K1–K8; the axioms define structural properties only (see §3).
 
-**Qualified** means the distinguishing signal lies **below current experimental detection threshold** — the best empirical fit to Proietti D1 yields beta = 0 (K9_E = Standard QM exactly), with 1-sigma upper bound beta <= 0.175. Confirmation or rejection requires a 3-observer experiment (prediction: delta_M3 = -0.223, 11x amplification over 2-observer).
+**Qualified** means the distinguishing signal lies **below current experimental detection threshold** — the fit to reconstructed Proietti D1 data yields beta = 0 (K9_E = Standard QM exactly), with 1-sigma upper bound beta <= 0.175 (circular fit — see §4 ERRATUM). K9_E demonstrates internal consistency but no empirical distinguishability from QM at current precision. Confirmation or rejection requires a 3-observer experiment (prediction: delta_M3 = -0.223 at beta=0.3, illustrative).
 
 See [Final Verdict](04_governance/K_Space_Axiomatization_plan.md) for the full 3-round RCA synthesis (aggregate 4.06/5).
 
@@ -36,20 +36,21 @@ See [Final Verdict](04_governance/K_Space_Axiomatization_plan.md) for the full 3
 Layer 1 (FROZEN)     K1–K8 Registration-logic axioms
        |              binary cert/V in {0,1}, bot_K, AdmJoint
        v
-Layer 2 (FROZEN)     T1–T7 Bridge theorems
+Layer 2 (UPDATABLE)  T1–T7 Bridge theorems
        |              K_joint construction, colimit, relativization
        v
-Layer 3 (Class C)    K9_E Probability bridge
+Layer 3 (Class C)    K9_E Probability postulate (P9)
        |              P(o|K) = Tr(E_o rho) * f_perp(K_ctx)
-       |              1 parameter beta, 8 terms traced to K1–K8
-       v              1 assumption A1 (K5 prospective firing)
+       |              1 parameter beta, 8 terms with K-space provenance
+       |              1 assumption A1 (K5 prospective firing, Class D pending)
+       v              K9_E is a POSTULATE, not derivable from K1–K8 alone
 Layer 4 (Class D)    Multi-paper data fit
        |              D1 Proietti CHSH: beta=0, PATH A beta<=0.175
-       |              D2 Bong LF: INVALIDATED (K9-S8 marginalization)
+       |              D2 Bong LF: Phase 10b analysis INVALIDATED (K9-S8 marginalization)
        |              D3 Frauchiger–Renner: AVOIDED via K5 V_prov
        v
 Layer 5 (Class D)    Prediction + Reduction + Assessment
-                     3-observer: delta_M3=-0.223 (11x)
+                     3-observer: delta_M3=-0.223 at beta=0.3 (11x; illustrative)
                      Copenhagen/MWI = special cases
 ```
 
@@ -66,7 +67,9 @@ Layer 5 (Class D)    Prediction + Reduction + Assessment
 | K7 | Closure | t_close — irreversible closure; V_final assigned |
 | K8 | Cross-Space Preservation | V_joint(i(k)) = V(k) — validity preserved under embedding |
 
-### K9_E Bridge Equation
+### K9_E Postulate (P9)
+
+K9_E is a **postulate** (probability assignment rule), not a theorem derived from K1–K8. K1–K8 define structural properties (registration, validity, incommensurability) but do not uniquely determine a probability rule. K9_E fills this gap as Postulate P9 — a Type B framework extension motivated by K-space structure (bot_K, K_ctx) but carrying its own assumption (A1: K5 prospective firing). See [Phase 8 ERRATUM](02_derivation_chain/Phase8_candidate_equation.md).
 
 ```
 P(o | K) = Tr(E_o rho) * f_perp(K_ctx)
@@ -75,27 +78,29 @@ where:
   f_perp(K_ctx) = 1 - beta * K_ctx
   K_ctx = sum_{i != j} I(k_i bot k_j) / N_pairs
   beta in [0, 1] — single free parameter
-  Born limit: beta = 0 => P(o|K) = Tr(E_o rho) [check]
-  Distinguishability: delta_S(beta=0.5) = -0.055
+  Born limit: beta = 0 => P(o|K) = Tr(E_o rho) (exact — K9_E reduces to QM)
+  Distinguishability: delta_S(beta=0.5) = -0.055 (theoretical — no empirical detection yet)
 ```
 
 ---
 
 ## 4. Class C (qualified) — 3-Round RCA Decision
 
+> **ERRATUM (2026-05-23 RCA Logic Audit):** Round 2 (Empirical evidence, 3.63/5 FAIL) uses a **circular fit** as its primary data input. Phase 10's Proietti D1 "data" was reconstructed as `E_exp = V_exp * E_QM`, and K9_E at beta=0 reduces to QM. The chi^2 minimization of `(V*E_QM - V*E_QM*(1-beta*g))^2` is mathematically guaranteed to yield beta=0. The Phase 10 result demonstrates **internal consistency** of K9_E (constraint satisfaction, normalization), not empirical comparison with real experimental data. The "qualified" status is correct (empirically pending), but the Round 2 score and PATH A bounds below derive from a tautological fit, not from raw Proietti Figure 3 data. See [Phase 10 ERRATUM](02_derivation_chain/Phase10_data_fitting.md) and [Phase 10 Joint Verdict](02_derivation_chain/Phase10_joint_verdict.md).
+
 | Round | Focus | Score | Threshold 4/5 |
 |-------|-------|-------|---------------|
 | Round 1 | Derivational purity | **4.25/5** | PASS |
-| Round 2 | Empirical evidence | **3.63/5** | FAIL |
+| Round 2 | Empirical evidence | **3.63/5** | FAIL (circular fit — see ERRATUM above) |
 | Round 3 | Synthesis classification | **4.30/5** | PASS |
 
-**Aggregate: 4.06/5** — PASS (>=4/5)
+**Aggregate: 4.06/5** — PASS (>=4/5). Arithmetic mean of three rounds. Round 2 FAIL is not weighted differently from Round 1/3 PASS scores; the "qualified" qualifier directly reflects the Round 2 failure — structural Class C is achieved, but empirical evidence is insufficient (circular fit + no raw experimental data).
 
 ### Final Classification
 
 > **VVV-QMRF K9_E = Class C (qualified) — structurally testable, empirically pending.**
 >
-> K9_E achieves Class C structurally: equation derivable from K1–K8, generates distinguishability != Standard QM (delta_S != 0 when beta > 0), avoids FR paradox via K5 V_prov, reduces Copenhagen/MWI as special cases.
+> K9_E achieves Class C structurally: probability postulate P9 motivated by K1–K8 structure, generates distinguishability != Standard QM (delta_S != 0 when beta > 0), avoids FR paradox via K5 V_prov, reduces Copenhagen/MWI as special cases.
 >
 > **3 conditions:**
 > 1. **A1 upgrade (required):** K5 prospective firing must be promoted from "semantic extension" to axiom text. Until then, K9_E carries 1 Class D assumption.
@@ -106,17 +111,19 @@ where:
 
 ## 5. Key Numbers
 
-| Quantity | Value | Meaning |
-|----------|-------|---------|
-| beta (best-fit, Proietti D1) | 0 | K9_E = Standard QM at best-fit |
-| PATH A upper bound (1-sigma) | beta <= 0.175 | Distinguishability not excluded up to this value |
-| delta_S (beta=0.5, CHSH) | -0.055 | Theoretical distinguishability magnitude |
-| delta_M3 (beta=0.3, 3-observer) | -0.223 | 11x amplification over 2-observer |
-| chi2/DOF (beta=0) | 0 | Perfect fit (degenerate — K9_E = QM at beta=0) |
-| FR paradox | AVOIDED | K5 V_prov breaks assumption chain C |
-| Born recovery | cert=1 and V=1 => Born exact | Verified |
-| Adversarial tests | 4/4 PASS | No counterexample, 0 axiom violations |
-| Operationalizability gates | 3/3 PASS | G1/G2/G3 all 5.0/5 |
+> **NOTE (2026-05-23 RCA Logic Audit):** Items marked `[C]` derive from a **circular fit** (data reconstructed from QM, not from raw experimental data — see §4 ERRATUM). These values demonstrate internal consistency, not empirical constraint. Items marked `[T]` are theoretical/structural results independent of the fit. Items marked `[I]` are illustrative predictions at a chosen beta value, not predictions from best-fit.
+
+| Quantity | Value | Meaning | Source type |
+|----------|-------|---------|-------------|
+| beta (best-fit, Proietti D1) | 0 | K9_E = Standard QM at best-fit | `[C]` circular fit |
+| PATH A upper bound (1-sigma) | beta <= 0.175 | Distinguishability not excluded up to this value (from reconstructed data) | `[C]` circular fit |
+| delta_S (beta=0.5, CHSH) | -0.055 | Theoretical distinguishability magnitude | `[T]` structural |
+| delta_M3 (beta=0.3, 3-observer) | -0.223 | 11x amplification over 2-observer (illustrative: beta=0.3 is above PATH A 1-sigma bound) | `[I]` illustrative |
+| chi2/DOF (beta=0) | 0 | Perfect fit (degenerate — K9_E = QM at beta=0) | `[C]` circular fit |
+| FR paradox | AVOIDED | K5 V_prov breaks assumption chain C | `[T]` structural |
+| Born recovery | cert=1 and V=1 => Born exact | Verified | `[T]` structural |
+| Adversarial tests | 4/4 PASS | No counterexample, 0 axiom violations | `[T]` structural |
+| Operationalizability gates | 3/3 PASS | G1/G2/G3 all 5.0/5 | `[T]` structural |
 
 ---
 
@@ -195,6 +202,8 @@ pip install -r requirements.txt
 | 11 | `d1_blk1_4point_fit.py` | — | Alternative 4-point D1 fit |
 
 **Note:** Data is extracted inline from arXiv source `.tex` files in `00_source_papers/`. See individual scripts for extraction methodology.
+
+> **CAUTION (2026-05-23 RCA Logic Audit):** `d1_blk1_4point_fit.py` and `proietti_chsh_fit.py` use **reconstructed data** (visibility model E_exp = V_exp * E_QM), not raw experimental values from Proietti Figure 3. The resulting beta=0 fit is a tautology — see §4 ERRATUM. To obtain a genuine empirical constraint, raw individual correlator values from Proietti Figure 3 are needed.
 
 ---
 

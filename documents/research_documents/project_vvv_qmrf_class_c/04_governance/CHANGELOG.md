@@ -1332,3 +1332,62 @@ The following items were removed from `K_Space_Axiomatization.md` current open i
 | 15 | Concrete model gaps G1-G3 (§7.4) | G1 (Relativization): framework-level semantic commitment required by this formulation of D_joint. G2 (K7 closure): working as designed. G3 (Level 4 ⊥): see #14. All gaps are external dependencies, not internal contradictions. **v1.4:** Former EP gap resolved by K8. Renumbered G1-G4 → G1-G3. **Phase 2 note:** Dep-A (C_K existence precondition, Level 4 §4.3) and Dep-B (T1 `<_joint>` ordering via K2+K8+Level 4 cross-rel) are satisfied dependencies in the concrete model (§7.5 Steps 3, 6 — both SOLID ✅ HIGH confidence; concrete model's cross-rel `t_F < t_W in lab history` supplies the Level 4 input) — not open gaps. Documented in K5/K6/K7 Dependency rows. | Medium |
 | 16 | `RegistrationState(t)` undefined primitive in K2 Discreteness | **Resolved v1.5 RCA (RC-02)** — `RegistrationState: T_R → (K_R ∪ {∅})` formally defined inline in K2 formal block. Well-definedness guaranteed by K2 strict total order (at most one k per distinct t). | ~~Medium~~ → Resolved |
 | 17 | K8 non-redundancy with K4 — no counter-model or proof sketch | **Resolved v1.5 RCA (PG-02)** — Counter-model added to K8 §(iv): K_F = {k_F, V_F=1}, embedding i assigns V_joint(i(k_F))=0 → K4 satisfied, K8 fails → K4 ⊬ K8. | ~~Medium~~ → Resolved |
+
+---
+
+## 25. RCA Logic Audit — F1+F2+F3 Errata Cascade (2026-05-23)
+
+**Trigger:** Full-project RCA review (3-Round RCA x 5-Why x scoring 4/5) of ~100 files in VVV-QMRF Class C.
+
+**Method:** Read-only audit → 3 critical findings → errata cascade to 7 Phase documents + index.md.
+
+### F1 — Circular Fit Transparency (CRITICAL)
+
+**Finding:** Phase 10's Proietti D1 "data" was reconstructed as E_exp = V_exp * E_QM. K9_E at beta=0 reduces to QM. chi^2 minimization of (V*E_QM - V*E_QM*(1-beta*g))^2 is mathematically guaranteed to yield beta=0. The "best-fit beta=0" and "PATH A beta<=0.175" are tautologies, not empirical constraints.
+
+**RCA Score:** 4.5/5 (3 rounds). Root cause: Phase pipeline treats "fit to reconstructed data" as equivalent to "fit to experimental data."
+
+**Fix:** ERRATUM blocks added to index.md (§4, §5, §7), Phase7, Phase9, Phase11, Phase12, Phase13, Phase10_joint_verdict. [C]/[T]/[I] source-type labels added to index.md Key Numbers table. Phase10 already had ERRATUM.
+
+### F2 — K9_E Postulate vs Derivation (CRITICAL)
+
+**Finding:** Phase 8 ERRATUM reclassified K9_E from "derivation" to "postulate" (P9). K1-K8 define structural properties only; probability requires an additional postulate. Phase 7, 9, 11, 12, 13 still used "derivable from K1-K8" or "8 terms traced to K1-K8" language implying derivation rather than provenance.
+
+**RCA Score:** 4.5/5 (3 rounds). Root cause: Architecture diagram (Layer 1->2->3 flow) visually implies deduction; "probability bridge" blurred structural motivation with deductive necessity.
+
+**Fix:** ERRATUM blocks added to Phase7, Phase9, Phase11, Phase12, Phase13 clarifying K9_E = postulate (P9). index.md §3 architecture diagram updated: "Probability bridge" -> "Probability postulate (P9)", "8 terms traced" -> "8 terms with K-space provenance". K9_E Postulate (P9) section added below diagram.
+
+### F3 — T4-H Proof Gap (CRITICAL)
+
+**Finding:** T4 (N-Observer Generalization) is a HYPOTHESIS, not a theorem. Three blocking items: T4-H colimit existence (unproven), F7d global commutativity (unproven), N>2 concrete model (missing). Phase 11 (3-observer), Phase 10c (FR N=4), K9_F, T5, T7 all conditional on T4-H.
+
+**RCA Score:** 4.5/5 (3 rounds). Root cause: T4 bypass decision traded mathematical rigor for pipeline velocity; conditionality documented in fine print but not reflected in headline claims.
+
+**Fix:** ERRATUM blocks added to Phase11 (F1+F2+F3) and Phase10c (F3). F3 section in Phase11 ERRATUM explicitly states: "If T4-H fails, the 3-observer K_joint construction is invalid and all delta_M3 predictions below are unsupported."
+
+### Additional Fixes
+
+- **index.md §4:** Aggregation logic explained (arithmetic mean, Round 2 FAIL -> "qualified" qualifier)
+- **index.md §3 Architecture:** Layer 2 status corrected: (FROZEN) -> (UPDATABLE) per project memory
+- **index.md §3 Architecture:** D2 Bong LF: "INVALIDATED" -> "Phase 10b analysis INVALIDATED" (clarify referent)
+- **index.md §3 Architecture:** 3-observer: "delta_M3=-0.223 (11x)" -> "delta_M3=-0.223 at beta=0.3 (11x; illustrative)"
+- **index.md §2:** "derivable from K1-K8" -> "probability postulate (P9) motivated by K1-K8 structure"
+- **index.md §2:** "best empirical fit" -> "fit to reconstructed data" + circular fit caveat
+- **index.md §7:** CAUTION note added for circular fit in reproduction scripts
+
+### Files Modified
+
+| File | F1 | F2 | F3 |
+|------|:--:|:--:|:--:|
+| index.md | x | x | - |
+| Phase7_constraint_evaluation.md | x | x | - |
+| Phase9_adversarial_testing.md | x | x | - |
+| Phase11_3observer_prediction.md | x | x | x |
+| Phase12_structural_reduction.md | x | x | - |
+| Phase13_honest_assessment.md | x | x | - |
+| Phase10c_fr_consistency.md | - | - | x |
+| Phase10_joint_verdict.md | x | - | - |
+
+**Principle:** "Extend, not overwrite" — ERRATUM blocks added at top of each file preserving all existing content. No conclusions changed; transparency added.
+
+**Verification:** All edits verified by re-reading modified files. Cross-file consistency: Phase 8/10 errata now cascaded to all downstream Phase documents.

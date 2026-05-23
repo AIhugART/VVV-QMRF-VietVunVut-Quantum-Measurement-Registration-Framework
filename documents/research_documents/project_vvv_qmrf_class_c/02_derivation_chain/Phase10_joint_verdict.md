@@ -8,6 +8,11 @@
 **Input:** Phase 10a COMPLETE, Phase 10b ~~COMPLETE~~ INVALIDATED (K9-S10), Phase 10c COMPLETE
 **Verdict type:** Aggregate consistency + timing-data constraint
 
+> **ERRATUM (2026-05-23 RCA Logic Audit - F1 cascade):**
+> **F1 - Circular Fit:** Phase 10a's "data" was reconstructed as E_exp = V_exp * E_QM (see Phase 10 ERRATUM). The beta=0 best-fit and PATH A beta<=0.175 are mathematically guaranteed by the circular construction, not empirically constrained. The 3-way consistency below demonstrates INTERNAL consistency of K9_E across three structural scenarios (CHSH, LF, FR). It does not constitute empirical cross-validation. The "ALL 3 DATASETS CONSISTENT" verdict means structural mechanism consistency, not empirical agreement.
+>
+> See [Phase 10 ERRATUM](Phase10_data_fitting.md) and [index.md]( ../index.md).
+
 > **ERRATUM (K9-S10, 2026-05-23):** Phase 10b's "reduced LF violation" claim
 > was computed BEFORE K9-S8 Marginalization Cancellation Theorem. Marginal
 > correlators are ALL equal to QM. D2 entries below are corrected where needed.

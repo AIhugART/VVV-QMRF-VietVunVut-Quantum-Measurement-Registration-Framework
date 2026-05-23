@@ -7,6 +7,12 @@
 **Input:** Phases 7-11 COMPLETE
 **Goal:** Determine which QM interpretations are special cases of VVV-QMRF
 
+> **ERRATUM (2026-05-23 RCA Logic Audit - F1+F2 cascade):**
+> 1. **F1 - Circular Fit:** Phase 10's best-fit and Phase 11's delta_M3 are from circular fit and illustrative beta=0.3 respectively (see Phase 10/11 ERRATA). The reduction analysis below uses K9_E's STRUCTURAL behavior and does not depend on empirical beta values.
+> 2. **F2 - K9_E is a POSTULATE (P9), not derived from K1-K8:** See Phase 8 ERRATUM. Reductions are one-directional: VVV-QMRF conditions imply QM-like predictions, but standard interpretations make additional ontological claims.
+>
+> See [Phase 8 ERRATUM](Phase8_candidate_equation.md), [Phase 10 ERRATUM](Phase10_data_fitting.md), and [index.md]( ../index.md).
+
 ---
 
 ## INTERPRETATION 1 — Copenhagen

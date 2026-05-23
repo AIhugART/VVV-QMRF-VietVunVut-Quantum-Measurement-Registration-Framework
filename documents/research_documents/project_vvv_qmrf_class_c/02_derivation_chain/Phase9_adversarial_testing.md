@@ -7,6 +7,12 @@
 **Input:** Phase 8 COMPLETE, K9-S5 adversarial results, Tier 4 OI resolutions
 **Prior art:** K9-S5 performed 5 attacks; Phase 9 uses the Main Plan's 4 SPECIFIC tests.
 
+> **ERRATUM (2026-05-23 RCA Logic Audit — F1+F2 cascade):**
+> 1. **F1 — Circular Fit:** The numerical delta_S values and detection thresholds below use K9_E predictions compared to QM theory, not to experimental data. Phase 10's "beta=0 best-fit" was later found to be a circular fit (data = V*QM; see Phase 10 ERRATUM). The adversarial tests below validate K9_E's STRUCTURAL behavior (P in [0,1], normalization, no-signaling, axiom consistency, distinguishability mechanism). They do not constitute empirical validation.
+> 2. **F2 — K9_E is a POSTULATE (P9), not derived from K1-K8:** Phase 8 ERRATUM reclassified K9_E. Test 2 below traces K9_E terms to K1-K8 for CONSISTENCY verification (provenance), not for derivation. K1-K8 do not uniquely determine K9_E.
+>
+> See [Phase 8 ERRATUM](Phase8_candidate_equation.md), [Phase 10 ERRATUM](Phase10_data_fitting.md), and [index.md §4 ERRATUM](../index.md).
+
 ---
 
 ## TEST 1 — Physical Counterexample Search

@@ -7,6 +7,12 @@
 **Input:** K9_E LOCKED v1.0 (K9-S7), K9-S1 constraints, Tier 4 OI resolutions
 **Prerequisite:** PP-0 FULL PASS ✅
 
+> **ERRATUM (2026-05-23 RCA Logic Audit — F1+F2 cascade):**
+> 1. **F1 — Circular Fit:** Phase 10's "beta=0 best-fit" and "PATH A beta<=0.175" derive from a circular fit (data reconstructed as E_exp = V_exp * E_QM, guaranteeing beta=0). Phase 10 ERRATUM and Phase 10 Joint Verdict document this. References below to "Phase 10 COMPLETE (beta_fit=0)" should be read as "Phase 10 COMPLETE (internal consistency verified; circular fit — see Phase 10 ERRATUM)."
+> 2. **F2 — K9_E is a POSTULATE (P9), not derived from K1-K8:** Phase 8 ERRATUM reclassified K9_E from "derivation" to "postulate." K1-K8 define structural properties only; probability requires an additional postulate. The constraint evaluation below verifies K9_E is CONSISTENT with K1-K8, not that K9_E is logically FORCED by K1-K8. "8 terms traced to K1-K8" = K-space provenance, not deductive derivation.
+>
+> These errata do not invalidate Phase 7's constraint evaluation (which remains valid for consistency checking). They qualify the epistemic status of the downstream data fitting and the K9_E equation itself. See [Phase 8 ERRATUM](Phase8_candidate_equation.md), [Phase 10 ERRATUM](Phase10_data_fitting.md), and [index.md §4 ERRATUM](../index.md).
+
 ---
 
 ## CONTEXT
