@@ -955,12 +955,63 @@ K9_E is distinguishable from QM ONLY in:
 
 ---
 
-## K9-S9: Conditional Correlator Computation (PENDING)
+## K9-S9: Conditional Correlator Computation (COMPLETE)
 
-**Goal:** Compute numerical predictions from P9-JC for Proietti conditional
-correlators ⟨A_xB_y | o_FA⟩ and compare with Figure 3 data.
+**Goal:** Compute numerical predictions from P9-JC for conditional
+correlators ⟨A_xB_y | o_FA⟩.
 
-**Prerequisite:** K9-S8 COMPLETE. Proietti Figure 3 data extraction (PP-3 D1-BLK-1 must be resolved with REAL data, not V·QM reconstruction).
+**Status:** COMPLETE — see `K9S9_conditional_predictions.md`
 
-**Output:** `k9_analysis/K9S9_conditional_predictions.md` + updated Python code.
+**KEY FINDING:** 11% deviation from QM at beta=0.3 for conditional correlators
+in BSM settings (x=1). x=0 (projective) gives delta=0 (correct Born limit).
+
+**Output:** `k9_analysis/K9S9_conditional_predictions.md` + `fits/K9S9_conditional_predictions.py`
+
+---
+
+## K9-S10: Testability Analysis + Bong Protocol Check (COMPLETE)
+
+**Goal:** Determine which experiments can actually test K9_E, given the
+Marginalization Cancellation Theorem (K9-S8).
+
+**Status:** COMPLETE — see `K9S10_testability_analysis.md`
+
+**KEY FINDINGS:**
+```
+1. PROIETTI CANNOT TEST K9_E
+   All marginal correlators = QM exactly (Marginalization Cancellation).
+   S_exp, individual <A_xB_y> are all uninformative.
+
+2. PHASE 10b IS INVALIDATED
+   Phase10b_bong_lf.md applied f_perp to marginal probabilities BEFORE
+   K9-S8 was proven. Its "reduced LF violation" was a computational error.
+   
+3. BONG PROTOCOL CAN TEST K9_E (partially)
+   Settings (x=1, y!=1) and (x!=1, y=1) are testable because:
+   - x=1 means a=c (Friend's outcome known, not marginalized)
+   - y!=1 means Bob does BSM (d marginalized, but P(d|c) non-uniform)
+   - Non-uniform P(d|c) breaks the marginalization symmetry
+   
+4. 4 OF 9 BONG CORRELATORS ARE TESTABLE:
+   <A_1 B_2>, <A_1 B_3>, <A_2 B_1>, <A_3 B_1>
+   
+5. GENUINE LF FACET 1 contains testable terms:
+   <A_1 B_2> (coefficient -2) and <A_2 B_1> (coefficient -2)
+```
+
+**Output:** `k9_analysis/K9S10_testability_analysis.md`
+
+---
+
+## K9-S11: Numerical Bong Predictions (PENDING)
+
+**Goal:** Compute K9_E predictions for the 4 testable Bong correlators.
+Compare with Bong experimental data (Fig. 4, results.pdf).
+
+**Prerequisite:** K9-S10 COMPLETE. Need to:
+1. Compute P_K9E(c, b | y=j) for each testable setting
+2. Extract Bong experimental values from Figure 4
+3. Compare K9_E predictions with data
+
+**Output:** `k9_analysis/K9S11_bong_predictions.md` + Python code.
 

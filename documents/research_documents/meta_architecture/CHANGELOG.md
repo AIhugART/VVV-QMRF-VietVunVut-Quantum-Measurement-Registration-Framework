@@ -1087,7 +1087,54 @@ Using the newly defined conditional correlators, we ran the first genuine numeri
 
 ---
 
+## 19. Testability Analysis: Proietti INFEASIBLE, Phase 10b INVALIDATED, Bong Protocol Testable (K9-S10)
+
+*2026-05-23 -- VVV-QMRF K9-S10*
+
+### 19.1 Proietti Testability Gap
+K9-S10 formally analyzed whether any published experimental data can test K9_E.
+- **Proietti 2019:** All measured quantities are MARGINAL correlators.
+  K9-S8 Marginalization Cancellation Theorem proves P_K9E = P_QM for all marginal observables.
+  **Verdict: Proietti CANNOT test K9_E.** Not a data extraction problem --- a fundamental experimental design limitation.
+  The previously-planned "Extract Proietti Figure 3 conditional correlators" task is INFEASIBLE because BSM settings erase Friend's outcome o_FA.
+
+### 19.2 Phase 10b INVALIDATED
+Phase 10b (Phase10b_bong_lf.md) was written BEFORE K9-S8. Its core computation:
+$$S_{LF}^{K9E} \approx S_{LF}^{QM} \cdot [1 - \beta/3]$$
+was WRONG. It naively applied $f_\perp$ to marginal probabilities $P(a,b|x,y)$.
+K9-S8 proves these are ALL equal to QM. Phase 10b's "reduced LF violation" was a computational error.
+**Phase10b_bong_lf.md has been annotated as INVALIDATED.**
+
+### 19.3 Bong Protocol Discovery: 4 of 9 Correlators ARE Testable
+Critical analysis of Bong et al. 2020 protocol reveals:
+- **Setting x=1:** Alice directly asks Friend for outcome c, sets a=c. Therefore a IS Friend's outcome (NOT marginalized).
+- **Settings x=2,3:** Alice reverses Friend's measurement (BSM analog), then measures directly. c is ERASED.
+- **Key insight:** For mixed settings (x=1, y!=1) or (x!=1, y=1), ONE Friend's outcome is known while the OTHER is marginalized.
+  Because $P(d|c)$ is non-uniform for entangled states, the marginalization does NOT cancel.
+  This is the **Partial Marginalization Non-Cancellation Theorem.**
+
+Testable correlators:
+- $\langle A_1 B_2 \rangle$, $\langle A_1 B_3 \rangle$, $\langle A_2 B_1 \rangle$, $\langle A_3 B_1 \rangle$
+
+Non-testable (full marginalization cancels):
+- $\langle A_1 B_1 \rangle$ (both projective, no BSM)
+- $\langle A_i B_j \rangle$ for $i,j \geq 2$ (both Friends' outcomes marginalized)
+
+### 19.4 Implications for LF Inequalities
+Genuine LF Facet 1 (Eq. 11 in Bong paper) contains testable terms $\langle A_1 B_2 \rangle$ (coefficient -2) and $\langle A_2 B_1 \rangle$ (coefficient -2).
+Semi-Brukner inequality contains $\langle A_1 B_2 \rangle$ and $\langle A_1 B_3 \rangle$ --- both testable.
+K9_E modification of S_LF is PARTIAL (only through these mixed-setting terms).
+
+### 19.5 Files Created/Modified
+- [K9S10_testability_analysis.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S10_testability_analysis.md) --- Full testability analysis document.
+- [Phase10b_bong_lf.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10b_bong_lf.md) --- Annotated as INVALIDATED.
+- [PP0_completion_gate.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/pre_plan/PP0_completion_gate.md) --- Next steps revised (Proietti dropped, Bong K9-S11 as Priority 1).
+- [VVV_QMRF_K9_Analysis_Plan.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/VVV_QMRF_K9_Analysis_Plan.md) --- K9-S10 and K9-S11 entries added.
+
+---
+
 ## Resolved Historical Open Items Moved from v2.0 Main Document
+
 
 
 The following items were removed from `K_Space_Axiomatization.md` current open items because they are historical/resolved records, not current open work.

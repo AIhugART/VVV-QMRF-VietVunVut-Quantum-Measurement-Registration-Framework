@@ -3,6 +3,19 @@
 # 3-Round RCA x 5-Why x Scoring Threshold 4/5
 # With VVV-QMRF-EX as Compass
 
+> **⚠️ INVALIDATED BY K9-S8/K9-S10 (2026-05-23)**
+>
+> This document was written BEFORE K9-S8 (Marginalization Cancellation Theorem).
+> Its core computation (S_LF_K9E ~ S_LF_QM * [1 - beta/3]) is **WRONG**.
+> K9-S8 proved that marginal P_K9E(a,b|x,y) = P_QM(a,b|x,y) for ALL beta.
+> Therefore, ALL correlators involving only BSM settings are unchanged.
+>
+> **CORRECTED ANALYSIS:** See [K9S10_testability_analysis.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S10_testability_analysis.md)
+>
+> K9-S10 shows that ONLY mixed-setting correlators (x=1,y≠1) and (x≠1,y=1)
+> are testable by K9_E in the Bong protocol. The conclusions below about
+> reduced S_LF violation are incorrect.
+
 **Phase:** 10b (from K_Space_Axiomatization_plan.md)
 **Date:** 2026-05-23
 **Input:** Phase 10a COMPLETE (Proietti D1), Phase 10c COMPLETE (FR D3)

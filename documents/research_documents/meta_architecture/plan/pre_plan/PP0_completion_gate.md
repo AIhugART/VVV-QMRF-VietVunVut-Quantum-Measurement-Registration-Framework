@@ -101,15 +101,17 @@ FULL APPROVAL for Main Plan Phase 7-12.
 
 ---
 
-## NEXT STEPS (Post-Phase 10 Complete)
+## NEXT STEPS (Post-K9-S10 Testability Analysis)
 
 | Priority | Task | Status |
 |---|---|---|
 | ~~1~~ | ~~D1-BLK-1: Extract individual ⟨A_xB_y⟩~~ | ✅ RESOLVED (uniform V reconstruction) |
-| **1** | Extract Proietti Figure 3 CONDITIONAL correlators (marginal S test is uninformative due to Marginalization Cancellation Theorem) | ⬜ Requires raw data or individual histograms |
-| **2** | T4-H resolution (colimit existence proof) | ⬜ NOT STARTED |
-| **3** | LaTeX write-up for Foundations of Physics submission | ⬜ NOT STARTED |
-| **4** | Experimental proposal with quantum optics collaborator | ⬜ NOT STARTED |
+| ~~1~~ | ~~Extract Proietti Figure 3 CONDITIONAL correlators~~ | ❌ INFEASIBLE (BSM erases o_FA — K9-S10) |
+| **1** | K9-S11: Compute K9_E predictions for 4 testable Bong correlators (⟨A_1B_2⟩, ⟨A_1B_3⟩, ⟨A_2B_1⟩, ⟨A_3B_1⟩) | ⬜ NEXT |
+| **2** | Compare K9_E Bong predictions with Bong experimental data (Fig. 4) | ⬜ AFTER S11 |
+| **3** | T4-H resolution (colimit existence proof) | ⬜ NOT STARTED |
+| **4** | LaTeX write-up for Foundations of Physics submission | ⬜ NOT STARTED |
+| **5** | Experimental proposal with quantum optics collaborator | ⬜ NOT STARTED |
 
 ### Completed Across Sessions
 
@@ -117,11 +119,12 @@ FULL APPROVAL for Main Plan Phase 7-12.
 2. **PP-4**: Python infrastructure → [PP4_infrastructure_report.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/pre_plan/PP4_infrastructure_report.md)
 3. **Phases 7-13**: Full Main Plan Prompt Sequence → 7 Phase files created
 4. **D1-BLK-1**: Resolved via uniform V reconstruction → [d1_blk1_4point_fit.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/d1_blk1_4point_fit.py)
-5. **Phase 10 PATH A**: 4-point fit upgrade (β≤0.175 at 1σ, 17% tighter)
-6. **Phase 10b**: Bong LF extension → [Phase10b_bong_lf.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10b_bong_lf.md)
+5. **Phase 10 PATH A**: 4-point fit upgrade (beta<=0.175 at 1-sigma, 17% tighter)
+6. ~~**Phase 10b**: Bong LF extension~~ → INVALIDATED by K9-S8/K9-S10 (marginalization cancellation)
 7. **Phase 10c**: FR contradiction AVOIDED → [Phase10c_fr_consistency.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10c_fr_consistency.md) + [fr_consistency.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/fr_consistency.py)
 8. **Phase 10 Joint**: 3-way consistency PASS → [Phase10_joint_verdict.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/Phase10_joint_verdict.md)
 9. **K9-S8**: Joint probability composition law candidate (P9-JC) + Marginalization Cancellation Theorem → [K9S8_composition_law.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S8_composition_law.md)
 10. **K9-S9**: First genuine numerical predictions (conditional correlators) → [K9S9_conditional_predictions.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S9_conditional_predictions.md) + [K9S9_conditional_predictions.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/K9S9_conditional_predictions.py)
 11. **Repo hygiene**: Stale files removed, screenshots staged, all plan markers COMPLETE
+12. **K9-S10**: Testability analysis — Proietti INFEASIBLE, Phase10b INVALIDATED, Bong protocol 4/9 correlators testable → [K9S10_testability_analysis.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S10_testability_analysis.md)
 
