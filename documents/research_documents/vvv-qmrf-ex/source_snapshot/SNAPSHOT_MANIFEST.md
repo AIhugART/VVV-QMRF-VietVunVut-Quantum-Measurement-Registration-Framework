@@ -5,6 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 > **Snapshot date:** 2026-05-20T14:22:00+07:00
 > **Partial re-snapshot:** 2026-05-21T19:57:00+07:00 — `edge_QM_VVV.md` updated (115→131 edges; +16 Phase 4 cross-category edges from commit `73103df`). Phase 1 + Phase 2 rebuilt as v1.8.
 > **Partial re-snapshot:** 2026-05-22 — `node_QM_VVV.md` updated (55→58 active VVV-QMRF nodes; +E18 `N_QM_VVV_00056`/`00057`, +T6 `N_QM_VVV_00059`; `00058` deferred by RCA gate).
+> **Partial re-snapshot:** 2026-05-23 — v29 Class C (genuine) sync: `node_QM_VVV.md` updated (58→63 nodes: +5 K9_E Layer 3 nodes `N_QM_VVV_00060`–`00064`), `DISCLAIMER.md` added (boundary protocol, 153 lines), `K_Space_Axiomatization.md` updated v1.5→v2.1 (T1-T4→T1-T7 + K5_prospective clause; provenance: EX v1.7 phase reports used v1.5).
 > **Purpose:** Read-only copies of all input files required by VVV-QMRF-EX plan.
 > **Rule:** VVV-QMRF-EX reads ONLY from this snapshot. Originals are 🔒 FROZEN (Isolation Protocol Rule I-1).
 > **Warning:** These are POINT-IN-TIME copies. If originals are updated, re-snapshot is required.
@@ -30,8 +31,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | File | Original path | Size | Content |
 |---|---|---|---|
-| `node_QM_VVV.md` | `vvv-qmrf/node_QM_VVV.md` | 121.2 KB | 58 active VVV-QMRF nodes (`00058` deferred) |
-| `edge_QM_VVV.md` | `vvv-qmrf/edge_QM_VVV.md` | 22.1 KB | 115 edges (Phase 1/2/3) |
+| `node_QM_VVV.md` | `vvv-qmrf/node_QM_VVV.md` | ~131 KB | 63 nodes (58 active + 5 K9_E Layer 3 `N_QM_VVV_00060`–`00064`). Class C (genuine) disclaimer. |
+| `edge_QM_VVV.md` | `vvv-qmrf/edge_QM_VVV.md` | 22.1 KB | 131 edges (Phase 1/2/3/4). Note: K9_E edges defined in node file §3 but not yet registered here. |
 | `bridge_QM_standard_to_VVV_QMRF.md` | `vvv-qmrf/bridge_QM_standard_to_VVV_QMRF.md` | 15.9 KB | 15 BR_XXXXX bridges (v0.1) |
 | `schema_guide.md` | `vvv-qmrf/schema_guide.md` | 44.3 KB | Document schema definition |
 
@@ -99,7 +100,13 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | File | Original path | Size | Content |
 |---|---|---|---|
-| `K_Space_Axiomatization.md` | `meta_architecture/K_Space_Axiomatization.md` | 134.6 KB | Complete K-Space axiomatic foundation |
+| `K_Space_Axiomatization.md` | `project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md` | ~135 KB | v2.1 — K1-K8 (Layer 1 frozen) + T1-T7 (Layer 2 updatable) + K5_prospective + §0.6 Status Audit. Provenance: EX v1.7 used v1.5 (T1-T4 only); updated 2026-05-23. |
+
+### root/ — Boundary Protocol
+
+| File | Original path | Size | Content |
+|---|---|---|---|
+| `DISCLAIMER.md` | `DISCLAIMER.md` | ~4 KB | Research status, Class C boundary, Standard QM boundary, bilingual EN/VN. Synced with v29 Class C (genuine). |
 
 ---
 
@@ -107,9 +114,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Metric | Value |
 |---|---|
-| Files | 49 |
-| Total size | ~1,225 KB |
-| Snapshot date | 2026-05-20 |
+| Files | 51 (+DISCLAIMER.md) |
+| Total size | ~1,370 KB |
+| Snapshot date | 2026-05-20 (bulk), partial resync 2026-05-21, 2026-05-22, 2026-05-23 |
+| v29 Class C sync | 2026-05-23 — node +63 nodes (K9_E), K_Space v1.5→v2.1, DISCLAIMER added |
 
 ---
 
