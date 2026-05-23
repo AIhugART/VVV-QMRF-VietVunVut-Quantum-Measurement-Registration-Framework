@@ -925,3 +925,42 @@ everything.
 For K9-S5 (adversarial), explicitly instruct the model: "Do not be
 constructive. Find problems." This framing produces better adversarial
 analysis than asking for "balanced evaluation."
+
+---
+
+## K9-S8: Composition Law — Joint Probability Extension (ADDED 2026-05-23)
+
+**Goal:** Define P(o_F, o_W | K-space parameters) — the MISSING PIECE.
+
+**Motivation:** K9-S1 through K9-S7 defined P(o | k_i) for single observer.
+The joint probability P(o_F, o_W) was never defined. K9_Analysis_Plan §K9-S4
+Section 7 (line 543) left a placeholder `P(o_F, o_W | K_F, K_W) = [formula]`
+that was never filled. This step fills it.
+
+**Status:** COMPLETE — see `K9S8_composition_law.md`
+
+**KEY FINDING (Marginalization Cancellation Theorem):**
+```
+2-observer MARGINAL P(o_F, o_W) = QM exactly for all β.
+K9_E is distinguishable from QM ONLY in:
+  (a) Conditional correlators P(o_F, o_W | o_FA)
+  (b) 3+ observer joint probabilities P(o_FA, o_F, o_W)
+```
+
+**Two formulations defined:**
+- P9-JC (conditional): testable with Proietti Figure 3
+- P9-3O (3-observer): testable with future experiments
+
+**Output:** `k9_analysis/K9S8_composition_law.md`
+
+---
+
+## K9-S9: Conditional Correlator Computation (PENDING)
+
+**Goal:** Compute numerical predictions from P9-JC for Proietti conditional
+correlators ⟨A_xB_y | o_FA⟩ and compare with Figure 3 data.
+
+**Prerequisite:** K9-S8 COMPLETE. Proietti Figure 3 data extraction (PP-3 D1-BLK-1 must be resolved with REAL data, not V·QM reconstruction).
+
+**Output:** `k9_analysis/K9S9_conditional_predictions.md` + updated Python code.
+
