@@ -1318,6 +1318,50 @@ Re-optimization: coarse scan (13,824 configs) + fine-tuning → FOM = **8.6** (u
 
 ---
 
+## 25. CLAUDE.md Identity and Scope Rules — 5-Layer Architecture Sync (RCA)
+
+*2026-05-23 — VVV-QMRF §GOVERNANCE*
+*RCA: CLAUDE.md Identity section stale (v28-era) — synced to v29 5-layer architecture from Class C master index.*
+
+### 25.1 RCA Summary
+
+| Step | Finding |
+|------|---------|
+| **Symptom** | CLAUDE.md Identity and scope rules described VVV-QMRF at v28 level (K1–K8 + T1–T7 + φ conjecture). Missing: K9_E = P9 postulate, 5-layer architecture, Class C (genuine) status, empirical evidence (beta=0.598, 2.31sigma). |
+| **Root cause** | No mechanism to propagate architectural milestones from research documents to CLAUDE.md Identity rules. Identity section was designed as static definition, not version-tracked. |
+| **Fix** | Restructured single paragraph into architectural layer bullets (Layers 1–5) mirroring Class C master index. Extended, not overwrote — all existing content preserved. Added explicit reference to `project_vvv_qmrf_class_c/index.md` as living source. |
+
+### 25.2 Changes
+
+| # | Change | Location |
+|---|--------|----------|
+| 1 | Layer 1 (FROZEN) — K1–K8 with K5_prospective clause | CLAUDE.md line 53 |
+| 2 | Layer 2 (UPDATABLE) — T1–T7 with T4-H Step 1 status | CLAUDE.md line 55 |
+| 3 | Layer 3 (Class C genuine) — K9_E = P9 postulate with formula + evidence | CLAUDE.md line 57 |
+| 4 | Layer 4 (Class D) — Multi-paper data fit (D1/D2/D3) | CLAUDE.md line 59 |
+| 5 | Layer 5 (Class D) — Prediction + Reduction + Assessment | CLAUDE.md line 61 |
+| 6 | Classification summary (v29, 3-round RCA 4.50/5) | CLAUDE.md line 67 |
+| 7 | Reference to Class C master index + RCA synthesis | CLAUDE.md line 69 |
+
+### 25.3 Invariants Preserved
+
+- E1–E16 postulates description (unchanged)
+- φ: K → B(H) conjecture with Track B status (unchanged)
+- All meta_architecture reference paths (unchanged, verified existent)
+- BE SOT rule, BE ontological frame rule (unchanged)
+- All other CLAUDE.md sections: Document contract, Terminology, Specialized execution, EX integration (untouched)
+- Zero K1-K8 axiom text changes
+
+### 25.4 Files
+
+| File | Change |
+|------|--------|
+| `CLAUDE.md` §Identity and scope rules | 1 paragraph → 5-layer architecture bullets |
+| `meta_architecture/decisions/identity_scope_5layer_sync_RCA.md` | NEW — full RCA report |
+| `meta_architecture/CHANGELOG.md` | This entry |
+
+---
+
 ## Resolved Historical Open Items Moved from v2.0 Main Document
 
 
