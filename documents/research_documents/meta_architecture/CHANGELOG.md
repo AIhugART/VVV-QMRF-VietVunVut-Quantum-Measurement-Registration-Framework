@@ -627,6 +627,56 @@ Following the 5-step methodology:
 
 ---
 
+## 12. K9 Tier 4 Deep Analysis + PP-4 Python Infrastructure Sprint
+
+*Document v2.1.1 — 2026-05-23 — VVV-QMRF §K9-ANALYSIS + §PP-4*
+*Sprint: Tier 4 K9_E Open Items resolution + PP-4 Python fit infrastructure. Methodology: 3-round RCA × 5-Why × scoring threshold 4/5. VVV-QMRF-EX used as compass.*
+
+### 12.1 Tier 4 — K9_E Deep Analysis (5 Open Items resolved)
+
+| OI | Issue | Resolution | New Concept |
+|---|---|---|---|
+| **OI-1** | f_perp uses ρ (forbidden K-side) | Option C: Hybrid compatibility map C(o_i,o_j) — computed once from ρ_joint at initialization, used as K-side lookup at event level | Setup/event separation |
+| **OI-2** | β fitting — insufficient data | PATH B (S_exp only) for now; D1-BLK-1 extraction enhances to PATH A | β upper-bound from S_exp |
+| **OI-3** | K9_E detectability | Class C confirmed: consistent with data, not yet distinguishable (expected at current precision) | — |
+| **OI-4** | K5 vs K9_E ⊥_K collision | **⊥_K^dyn** (K5, niścaya-bādhaka) vs **⊥_K^str** (K9_E, saṃśaya-bādhaka) formally distinguished | Dual ⊥_K mode distinction |
+| **OI-5** | K9_F activation trigger | Revised: mathematical impossibility of K9_E constraint satisfaction, not empirical non-detection | Revised trigger criterion |
+
+File: `plan/k9_analysis/Tier4_K9E_deep_analysis.md`
+
+### 12.2 PP-4 — Python Infrastructure (13/13 sanity checks PASS)
+
+| File | Module | Sanity Checks |
+|---|---|---|
+| `fits/utils/qm_standard.py` | Born rule + CHSH baseline | 2A (|S|=2√2) ✅ |
+| `fits/utils/k9a_predictor.py` | K9_A V-filter (Class D fallback) | 3A, 3B, 3C ✅ |
+| `fits/utils/k9e_predictor.py` | K9_E ⊥_K suppression (Class C primary) | 4A-4G ✅ |
+| `fits/proietti_chsh_fit.py` | Proietti CHSH fit (placeholder) | 5A ✅ |
+| `fits/fr_consistency.py` | FR consistency check | 6A ✅ |
+| `fits/run_all_checks.py` | Master sanity runner | — |
+| `fits/requirements.txt` | Dependencies | — |
+
+CHSH formula convention fixed during sprint: S = E(a,b) + E(a,b') + E(a',b) − E(a',b'). Optimal angles: a₁=0, a₂=π/2, b₁=π/4, b₂=−π/4. |S| = 2√2 verified.
+
+File: `plan/pre_plan/PP4_infrastructure_report.md`
+
+### 12.3 PP-0 Gate Update
+
+**PP-0 elevated: CONDITIONAL PASS → FULL PASS.**
+- All 5 PrePlan tasks COMPLETE (PP-1 through PP-5).
+- K9 Analysis Pipeline COMPLETE (S1-S7, K9 LOCKED: K9_E primary, K9_A fallback).
+- Tier 4 Deep Analysis COMPLETE (OI-1 through OI-5 resolved).
+- Blockers resolved: 11/12 (1 deferred: K9_F/T4).
+
+### 12.4 Invariants Preserved
+
+- K1-K8 text NOT MODIFIED (Layer 1 frozen guarantee holds).
+- K_Space_Axiomatization.md NOT MODIFIED.
+- Level 4 predicates NOT MODIFIED.
+- EX import discipline: intersection node IDs cited only.
+
+---
+
 ## 11. v2.1 Sprint — Algebraic Layer Extension T5-T7 / Mở rộng Tầng Đại số T5-T7
 
 *Document v2.1 — 2026-05-21 — VVV-QMRF §K-AXIOM*
