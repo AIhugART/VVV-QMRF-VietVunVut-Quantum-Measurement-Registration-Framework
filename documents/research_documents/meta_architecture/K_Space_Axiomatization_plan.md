@@ -46,6 +46,13 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | Phase 4 | Audit Matrix Accuracy | **COMPLETE** — P4-C1 fixed (F8a); P4-C2 fixed (F8b); P4-C3 fixed (F8c); P4-C4 fixed (F8d). All Phase 4 checks resolved. |
 | Phase 5 | Concrete Model & Proof Attempt | **COMPLETE** — P5-C1 fixed (F9a); P5-C2 fixed (F9b); P5-C3 fixed (F9c); P5-C4 fixed (F9d). |
 | Phase 6 | Open Items Alignment | **COMPLETE** — P6-C1 fixed (F10a); P6-C2 fixed (F10b+F10c); P6-C3 fixed (F10d); P6-C4 fixed (F10e+F10f). Document upgraded to v1.5. |
+| Phase 7 | K9_E Constraint Evaluation | **COMPLETE** — A:7/7, B:5/5, C:Class C. See Phase7_constraint_evaluation.md |
+| Phase 8 | K9_E Equation Documentation | **COMPLETE** — 8 terms, 0 orphaned assumptions. See Phase8_candidate_equation.md |
+| Phase 9 | Adversarial Testing + G1/G2/G3 | **COMPLETE** — 4/4 tests PASS, G1/G2/G3 PASS. See Phase9_adversarial_testing.md |
+| Phase 10 | Data Fitting (Proietti D1) | **COMPLETE** — beta_fit=0, PATH A: beta<=0.175 (1sigma). See Phase10_data_fitting.md |
+| Phase 11 | 3-Observer Prediction | **COMPLETE** — delta_M3=-0.223 (beta=0.3), 11x amplification. See Phase11_3observer_prediction.md |
+| Phase 12 | Structural Reduction | **COMPLETE** — Copenhagen/MWI=special cases. See Phase12_structural_reduction.md |
+| Phase 13 | Honest Assessment | **COMPLETE** — 8 assumptions audited, publication path outlined. See Phase13_honest_assessment.md |
 
 ---
 
@@ -420,49 +427,49 @@ Phase 10 → Phase 11 Gate
 
 ---
 
-## Verdicts Summary — Phase 7–8 (PENDING)
+## Verdicts Summary — Phase 7–13 (COMPLETE)
 
-### Phase 7 — PENDING
+### Phase 7 — COMPLETE
 
-| ID | Score (forecast) | Severity | Status |
+| ID | Score | Severity | Status |
 |----|---|----------|--------|
-| P7-G1 | 4.5/5 | BLOCKING | PENDING |
-| P7-G2 | 4.5/5 | BLOCKING | PENDING |
-| P7-G3 | 4.5/5 | BLOCKING | PENDING |
-| P7-C1 | 4.4/5 | HIGH | PENDING |
-| P7-C2 | 4.5/5 | HIGH | PENDING |
-| P7-C3 | 3.8/5 | **BLOCKING** | PENDING |
+| P7-G1 | 5.0/5 | BLOCKING | **PASS** |
+| P7-G2 | 5.0/5 | BLOCKING | **PASS** |
+| P7-G3 | 5.0/5 | BLOCKING | **PASS** |
+| P7-C1 | 4.5/5 | HIGH | **COMPLETE** — A:7/7 |
+| P7-C2 | 5.0/5 | HIGH | **COMPLETE** — B:5/5 |
+| P7-C3 | 4.5/5 | **BLOCKING** | **COMPLETE** — C:Class C |
 
-### Phase 8 — PENDING
+### Phase 8 — COMPLETE
 
-| ID | Score (forecast) | Severity | Status |
+| ID | Score | Severity | Status |
 |----|---|----------|--------|
-| P8-C1 | 4.5/5 | HIGH | PENDING |
-| P8-C2 | 4.6/5 | HIGH | PENDING |
-| P8-C3 | 4.5/5 | HIGH | PENDING |
-| P8-C4 | 4.4/5 | MEDIUM | PENDING |
-| P8-C5 | 4.65/5 | HIGH | PENDING |
+| P8-C1 | 5.0/5 | HIGH | **COMPLETE** — 8 terms fully traced |
+| P8-C2 | 5.0/5 | HIGH | **COMPLETE** — 4 Born recovery conditions |
+| P8-C3 | 4.5/5 | HIGH | **COMPLETE** — delta_S(beta=0.5)=-0.055 |
+| P8-C4 | 5.0/5 | MEDIUM | **COMPLETE** — K_ctx, f_perp non-trivial |
+| P8-C5 | 5.0/5 | HIGH | **COMPLETE** — Stage 1 PASS |
 
-### Phase 9 — PENDING
+### Phase 9 — COMPLETE
 
-| ID | Score (forecast) | Severity | Status |
+| ID | Score | Severity | Status |
 |----|---|----------|--------|
-| P9-C1 | 4.5/5 | HIGH | PENDING |
-| P9-C2 | 4.6/5 | HIGH | PENDING |
-| P9-C3 | 4.5/5 | HIGH | PENDING |
-| P9-C4 | 4.4/5 | MEDIUM | PENDING |
-| P9-C5 | 4.3/5 | MEDIUM | PENDING |
-| P9-C6 | 4.7/5 | HIGH | PENDING |
+| P9-C1 | 5.0/5 | HIGH | **PASS** — no counterexample |
+| P9-C2 | 4.5/5 | HIGH | **PASS** — 0 violations |
+| P9-C3 | 4.5/5 | HIGH | **PASS** — delta_S != 0 (Class C) |
+| P9-C4 | 5.0/5 | MEDIUM | **PASS** — Born recovery confirmed |
+| P9-C5 | 5.0/5 | MEDIUM | **COMPLETE** — K9_E Rank 1 |
+| P9-C6 | 5.0/5 | HIGH | **PASS** — Class C confirmed |
 
-### Phase 10a — Proietti CHSH (PENDING)
+### Phase 10a — Proietti CHSH (COMPLETE — PATH A upgraded)
 
-| ID | Score (forecast) | Severity | Status |
+| ID | Score | Severity | Status |
 |----|---|----------|--------|
-| P10a-C1 | 4.5/5 | HIGH | PENDING |
-| P10a-C2 | 4.6/5 | HIGH | PENDING |
-| P10a-C3 | 4.5/5 | HIGH | PENDING |
-| P10a-C4 | 4.5/5 | HIGH | PENDING |
-| P10a-C5 | 4.4/5 | MEDIUM | PENDING |
+| P10a-C1 | 4.5/5 | HIGH | **COMPLETE** — uniform V reconstruction + PATH A 4-point |
+| P10a-C2 | 5.0/5 | HIGH | **COMPLETE** — 1 param (beta), budget OK |
+| P10a-C3 | 5.0/5 | HIGH | **COMPLETE** — chi2/DOF=0 at beta=0 |
+| P10a-C4 | 5.0/5 | HIGH | **COMPLETE** — Delta_chi2=0 (K9_E=QM at beta=0) |
+| P10a-C5 | 4.5/5 | MEDIUM | **COMPLETE** — beta=0 means suppression below detection |
 
 ### Phase 10b — Bong LF (PENDING)
 
