@@ -727,7 +727,102 @@ File: `plan/pre_plan/PP4_infrastructure_report.md`
 *Previous (v1.0 → v1.1): Added K6, K7, K4 E9 exception, K5 minimal ⊥ definition, K1 cert admission rule. Fixed T1 V-preservation (EP), T2 sufficient-vs-necessary, T3 external assumption.*
 *Next: PhilSci submission → Community feedback → Level 4 ⊥ boundary clauses freeze (resolves #14) → T1-T3 finalization → N>2 generalization (T4, #9) → E8-E16 extension audit phase.*
 
+## 12. Tier 4 + PP-4 Sprint — K9_E Deep Analysis & Python Infrastructure
+
+*2026-05-23 — VVV-QMRF §K9-AXIOM*
+*Sprint: K9_E operationalization + fit infrastructure. Methodology: 3-round RCA × 5-Why × scoring ≥4/5 (VVV-QMRF-EX compass).*
+
+### 12.1 K9_E Tier 4 Deep Analysis
+
+Created [Tier4_K9E_deep_analysis.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/Tier4_K9E_deep_analysis.md). Resolved 5 open issues:
+
+| OI | Resolution |
+|---|---|
+| OI-1 (f_perp ρ-dependency) | Option C: hybrid compatibility map C(o_i,o_j) — setup/event separation |
+| OI-2 (β fitting data) | PATH B (S_exp only); D1-BLK-1 enhancement pending |
+| OI-3 (detectability) | Class C confirmed |
+| OI-4 (K5 vs K9_E ⊥_K) | ⊥_K^dyn (K5) vs ⊥_K^str (K9_E) — dual mode distinction |
+| OI-5 (K9_F trigger) | Mathematical impossibility, not data non-detection |
+
+### 12.2 PP-4 Python Infrastructure
+
+Created `fits/` package (8 files, 13/13 sanity checks PASS). PP-0 elevated to FULL PASS.
+
+### 12.3 Invariants Preserved
+
+- K1-K8 text NOT MODIFIED (Layer 1 frozen guarantee holds).
+- T1-T7 NOT MODIFIED.
+
+## 13. Main Plan Prompt Sequence P1-P7 (Phases 7-13) — K9_E Full Evaluation
+
+*2026-05-23 — VVV-QMRF §K9-AXIOM*
+*Sprint: Complete 7-prompt Main Plan evaluation of K9_E. Methodology: 3-round RCA × 5-Why × scoring ≥4/5 per phase (VVV-QMRF-EX compass).*
+
+### 13.1 Phase Summary
+
+| Phase | Prompt | File | Status | Key Result |
+|---|---|---|---|---|
+| **7** | P1: Constraints | Phase7_constraint_evaluation.md | ✅ | A:7/7, B:5/5, C:Class C |
+| **8** | P2: Equation | Phase8_candidate_equation.md | ✅ | 8 terms, 0 orphaned assumptions |
+| **9** | P3: Adversarial | Phase9_adversarial_testing.md | ✅ | 4/4 tests PASS, G1/G2/G3 PASS |
+| **10** | P4: Data Fit | Phase10_data_fitting.md | ✅ | β_fit=0, β_max≤0.21 (1σ) |
+| **11** | P5: 3-Observer | Phase11_3observer_prediction.md | ✅ | δM₃=−0.223 (β=0.3), 11× amplification |
+| **12** | P6: Reduction | Phase12_structural_reduction.md | ✅ | Copenhagen/MWI = special cases |
+| **13** | P7: Assessment | Phase13_honest_assessment.md | ✅ | 8 assumptions audited, publication path outlined |
+
+### 13.2 Key Findings
+
+**(P7-1) K9_E Formula (LOCKED v1.0):**
+```
+P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)] / Z_E(k_i)
+```
+Single free parameter β ∈ [0,1). Best-fit β=0 (suppression below Proietti precision).
+
+**(P7-2) Born Rule Recovery:** 4 conditions — β=0 OR K_ctx=∅ OR f_perp=0 ∀o OR N=1.
+
+**(P7-3) Distinguishability (Class C):** δS(β=0.5) = −0.055 for 2-observer CHSH. Direction: always |S_K9E| < |S_QM| (suppression). 3-observer Mermin: 11× amplification → δM₃ = −0.223 (β=0.3).
+
+**(P7-4) Interpretation Reduction:**
+- Copenhagen, Many-Worlds: ✅ special cases (K_ctx = ∅)
+- Relational QM, QBism: ⚠️ partial overlap (single-observer identical; multi-observer differs)
+- VVV-QMRF unique region: β > 0 ∧ K_ctx ≠ ∅ ∧ ⊥_K^str active
+
+**(P7-5) Falsifiability Statement:** In 3-observer EWF Mermin experiment, |M₃_K9E| < |M₃_QM| for any β > 0. Detection feasible at β ≥ 0.5 with ~21 days continuous measurement.
+
+**(P7-6) Publication Readiness:** Foundations of Physics: 2-4 weeks. Physical Review A: 3-6 months (needs experimental proposal + collaborator).
+
+### 13.3 Assumption Registry (Final)
+
+| ID | Assumption | Justified? |
+|---|---|---|
+| [A-E1] | K_ctx via T3-morphism (Layer 2) | ✅ JUSTIFIED |
+| [A-E2] | f_perp fraction form with compatibility map | ✅ JUSTIFIED |
+| [A-E3] | β universal across measurements | ⚠️ WEAKLY JUSTIFIED |
+| [A-E4] | ⊥_K^str ≠ ⊥_K^dyn | ✅ JUSTIFIED |
+| [A-NS] | No-signaling for N > 2 | ⚠️ WEAKLY JUSTIFIED |
+| [A-3O-1] | T4 colimit for N=3 | ⚠️ CONDITIONAL (T4-H) |
+| [A-3O-2] | T5 K_joint composition | ⚠️ CONDITIONAL (T4-H) |
+| [A-3O-3] | β same for 3-obs as 2-obs | ⚠️ WEAKLY JUSTIFIED |
+
+### 13.4 Invariants Preserved
+
+- K1-K8 text NOT MODIFIED (Layer 1 frozen guarantee holds).
+- T1-T7 NOT MODIFIED (Layer 2 frozen).
+- Level 4 predicates NOT MODIFIED.
+- EX import discipline maintained (intersection node IDs only).
+
+### 13.5 Deferred Items
+
+| Item | Reason | Recommended next |
+|---|---|---|
+| D1-BLK-1 (individual ⟨A_xB_y⟩) | Visual extraction from Proietti Figure 3 PDF | Data extraction sprint |
+| T4-H resolution | Category-theoretic colimit proof | Proof-strengthening sprint |
+| LaTeX write-up | Journal formatting | Publication sprint |
+| Experimental proposal | Requires quantum optics collaborator | External collaboration |
+| Setting-dependent residual analysis | Requires D1-BLK-1 + statistical methodology | Post-data-extraction |
+
 ## Resolved Historical Open Items Moved from v2.0 Main Document
+
 
 The following items were removed from `K_Space_Axiomatization.md` current open items because they are historical/resolved records, not current open work.
 

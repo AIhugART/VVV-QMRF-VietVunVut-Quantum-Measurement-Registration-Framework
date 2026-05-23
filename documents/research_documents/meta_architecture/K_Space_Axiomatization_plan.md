@@ -142,7 +142,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-## Phase 6 — Open Items Alignment [PENDING]
+## Phase 6 — Open Items Alignment [COMPLETE]
 
 | Check ID | Target | Question |
 |----------|--------|----------|
@@ -150,6 +150,346 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | P6-C2 | Open Items #14, #15 | ~~Do #14 and #15 cover Dep-A (C_K existence) and Dep-B (T1/T2 ordering) now named across K5/K6/K7?~~ **FIXED (F10b+F10c)** #14 updated with T2 Dep-B note (F6b+F7b: AdmJoint on V_prov, resolved-demand outcomes). #15 updated with Phase 2 note: Dep-A/Dep-B satisfied in concrete model (§7.5 Steps 3+6) — not gaps. |
 | P6-C3 | Action Items A6/A7/A8 | ~~Still accurate after all Phase 1+2 fixes? Any new action items?~~ **FIXED (F10d)** A1–A5 confirmed still accurate. A6 added: verify Dep-A/Dep-B conditional semantic dependencies post Level 4 freeze. A7/A8 not needed. |
 | P6-C4 | C-KAXIOM-010 + version note v1.5 | ~~C-KAXIOM-010 now updated (F6c) — prepare v1.5 version note referencing all Phase 1+2 fixes after remaining phases confirmed.~~ **FIXED (F10e+F10f)** C-KAXIOM-010 confirmed correct (F6c, no further change). Document upgraded to v1.5: header updated, v1.4→v1.5 RCA audit summary added covering all Phase 1–5 fixes (F1–F9d) + Phase 6 (F10a–F10f). |
+
+---
+
+## Phase 7 — Physics Constraints Identification + RCA Gates (K9_A/B/C Pre-Analysis) [PENDING]
+
+**Scope:** Evaluate K1–K8 + three pre-proposed K9 candidate bridge axioms (K9_A/B/C) for hard constraints. Three RCA gates (P7-G1/G2/G3) + three constraint categories (P7-C1/C2/C3).
+
+**Context (RCA R5 4.9/5):** K1–K8 alone cannot generate distinguishability from Standard QM. Pre-proposed K9 candidates: K9_A (V-weighted Born, ready), K9_B (registration-conditioned, conditional on f-spec), K9_C (colimit via T4, deferred). Phase 7 evaluates "K1–K8 + K9_i → distinguishability?" to inform Phase 8 selection.
+
+### Issue Registry — Phase 7
+
+| ID | Target | Severity | RCA Forecast | Status | Issue |
+|----|--------|----------|---|--------|-------|
+| P7-G1 | Gate 1 — Phys operationalization | **BLOCKING** | 4.5/5 | PENDING | Reference file §13 Gate 1: Does K9_candidate operationalize `Phys(o\|H_physics)` beyond detector language? K9_A: V-gating only (weak); K9_B: depends on f-spec; K9_C: requires T4. RCA verdict: at least one candidate must pass. |
+| P7-G2 | Gate 2 — Nontrivial registration gap | **BLOCKING** | 4.5/5 | PENDING | Reference file §13 Gate 2: Can equation admit `Phys=1, Lock_K=0` scenarios? K9_A forces Lock_K=1 if V=1 (gap may collapse). K9_B/C allow gap. RCA verdict: at least one candidate must support nontrivial gap. |
+| P7-G3 | Gate 3 — Operational lock-time definition | **BLOCKING** | 4.5/5 | PENDING | Reference file §13 Gate 3: Does candidate use operational `t_lock` (prefer `t_lock^val`)? All K9_A/B/C inherit from K7; compatibility depends on K7 t_close formalization. RCA verdict: all candidates must specify lock-time model. |
+| P7-C1 | Category A — K1–K8 internal constraints | HIGH | 4.4/5 | PENDING | Liệt kê hard constraint từng K1–K8 axiom. Does K9 candidate inherit K1–K4/K8 requirements? Does K9 interact with K5 (firing), K6 (auth), K7 (closure) in bounded way? |
+| P7-C2 | Category B — Born rule recovery | HIGH | 4.5/5 | PENDING | Each K9 candidate must reduce to `P(o)=\|⟨o\|ψ⟩\|²` under specific limit condition. K9_A: cert=1 ∧ V=1 ∀k. K9_B: f(1,1,no-fire)=1. K9_C: single-observer colimit. RCA verdict: clear limit condition required. |
+| P7-C3 | Category C — Distinguishability of K9_i | **BLOCKING** | 3.8/5 | PENDING | **CRITICAL:** Does K1–K8 + K9_candidate_i generate prediction ≠ Standard QM? K9_A: marginal (V-fluctuation only). K9_B: promising (if f ≠ 1). K9_C: ambitious (EWF scenarios). Forecast: K9_B most likely to pass; K9_A marginal; K9_C deferred. If all fail: "Axiom redesign required; return to K1–K8 or propose K9_D+." |
+
+**Verdict gate:** P7-C3 ≥ 3.5/5; if zero candidates pass C3, escalate before Phase 8.
+
+### Fix Allocations — Phase 7
+
+| Fix ID | Target | Severity | Action |
+|--------|--------|----------|--------|
+| F11a | P7-G1 analysis | HIGH | Evaluate K9_A/B/C operationalization of `Phys` vs detector language; document operationalizability score per candidate |
+| F11b | P7-G2 analysis | HIGH | Evaluate which K9 candidates allow nontrivial `Phys=1, Lock_K=0` region; map to gate cases C1–C10 from reference file |
+| F11c | P7-G3 analysis | HIGH | Verify all K9 candidates specify operational `t_lock`; document lock-time model (prefer `t_lock^val` from reference file §13 Gate 3) |
+| F11d | P7-C1 analysis | HIGH | List K1–K8 constraints that K9 candidates must satisfy; verify each candidate derivable from K1–K8 + minimal assumption |
+| F11e | P7-C2 analysis | HIGH | For each K9, specify exact limit condition reducing to Born rule; verify mathematical correctness |
+| F11f | P7-C3 analysis | **BLOCKING** | Distinguish K9_A (marginal signal if V-fluctuation), K9_B (promising if f-spec), K9_C (ambitious deferred); compute δP(o) magnitude vs Standard QM for each; RCA verdict ≥3.5/5 required to proceed to Phase 8 |
+
+---
+
+## Phase 8 — Candidate Equation Generation + Class C Audit [PENDING]
+
+**Scope:** Develop detailed forms of K9 candidate(s) passing Phase 7 C3. Full term-by-term derivation, Born rule limit verification, Class C eligibility audit (P8-C5 Stage 1 of 2).
+
+**Context (RCA R6 4.9/5):** K9 candidates have ≤2 free parameters to fit Proietti D1 (4 data points). K9_A: 1 param. K9_B: 1–2 params conditional. K9_C: 2–3 params deferred.
+
+### Issue Registry — Phase 8
+
+| ID | Target | Severity | RCA Score | Status | Issue |
+|----|--------|----------|-----------|--------|-------|
+| P8-C1 | Term-by-term derivation traceability | HIGH | 4.5/5 | PENDING | Each term in P(o\|K) must cite K1–K8 axiom or be flagged ASSUMPTION. No hand-waving. K9_A: V from K4, normalization from standard QM. K9_B: depends on f-spec. K9_C: depends on T4 construction. |
+| P8-C2 | Born rule limit verifiable | HIGH | 4.6/5 | PENDING | Explicit condition (cert/V/context values) where each K9 reduces exactly to Born. K9_A: cert=1 ∧ V=1. K9_B: f=1. K9_C: N=1 single-observer. Mathematically rigorous verification required. |
+| P8-C3 | Distinguishability magnitude computable | HIGH | 4.5/5 | PENDING | Compute δP(o) = P_K9 - P_QM for Phase 7 C3 scenario. Magnitude > 0 required. If δP ≈ 0 empirically: candidate may still be theoretically valid; document honestly. |
+| P8-C4 | cert + V appear non-trivially | MEDIUM | 4.4/5 | PENDING | cert and V must appear in equation in non-rescalable way. If cert/V absent: "K-space adds no content beyond Standard QM"; candidate REJECTED. |
+| P8-C5 | Class C eligibility audit (Stage 1) | HIGH | 4.65/5 | PENDING | **RCA R3+R7:** Zero unjustified assumptions beyond K1–K8? Derivation rigorous? Pass P8-C5 → eligible for Phase 9 (P9-C6 Stage 2). Fail → Class D default, no Phase 9. |
+
+**Parameter Budget Check (RCA R6 4.9/5):** Each K9 candidate ≤2 free parameters (fits Proietti D1 4-point constraint).
+
+### Fix Allocations — Phase 8
+
+| Fix ID | Target | Severity | Action |
+|--------|--------|----------|--------|
+| F12a | P8-C1 derivation audit | HIGH | For each K9: write term-by-term proof tracing to K1–K8 or flagged ASSUMPTION. Reject if ASSUMPTION unjustified. |
+| F12b | P8-C2 Born limit | HIGH | For each K9: derive exact condition where equation = Born rule. Verify algebraically and state clearly. |
+| F12c | P8-C3 distinguishability magnitude | HIGH | Compute numerical δP(o_specific) for Phase 7 C3 scenario. If δP = 0: document as "empirically equivalent" (not FAILURE; Class D valid). |
+| F12d | P8-C4 cert/V non-triviality | MEDIUM | Verify cert and V not eliminable by algebraic cancellation. If eliminable: candidate REJECTED, no Class C eligibility (F12e). |
+| F12e | P8-C5 Class C audit Stage 1 | HIGH | RCA verdict: zero unjustified assumptions? Scoring ≥4/5 (rigorous) → Pass Phase 9 eligible. <4/5 → Fail, Class D default. |
+
+---
+
+## Dependency Map (Phase 7–8)
+
+```
+Phase 7 (Constraints + RCA Gates)
+  P7-G1/G2/G3 (Gates 1/2/3)
+    → ALL gates must pass or candidate REJECTED before Phase 8
+    → P7-G1 result (Phys operationalization) → P8-C1 term-by-term traceability
+    → P7-G2 result (registration gap) → P8-C4 cert/V non-triviality
+    → P7-G3 result (lock-time definition) → P8-C3 magnitude computation
+
+  P7-C1 (K1–K8 internal constraints)   → P8-C1 derivation traceability
+  P7-C2 (Born rule recovery)           → P8-C2 Born limit verification
+  P7-C3 (Distinguishability of K9_i)   → P8-C3 magnitude; if all K9 fail C3, escalate
+
+Phase 8 (Equation Development)
+  P8-C1..C4 (derivation/limit/magnitude/cert-V)  → P9-C1..C4 adversarial tests (Phase 9)
+  P8-C5 (Class C Stage 1 audit)                  → P9-C6 (Stage 2: adversarial + gates, Phase 9)
+
+Phase 7–8 → Phase 9 Gate
+  If ANY K9 candidate passes: Phase 8 P8-C5 PASS (Class C eligible)
+    → Advances to Phase 9 (adversarial testing + P9-C6 Stage 2 Class C confirmation)
+  If ALL K9 candidates FAIL: Phase 8 P8-C5 FAIL or Phase 7 G1/G2/G3 BLOCK
+    → STOP; escalate for axiom redesign or propose K9_D+
+```
+
+---
+
+## Phase 9 — Adversarial Falsification + Class C Confirmation (Stage 2) [PENDING]
+
+**Scope:** Falsify each K9 candidate that passed Phase 8 P8-C5 (Class C eligible). 4 adversarial tests + ranking + Stage 2 Class C confirmation (compound gate per RCA R3 4.7/5).
+
+**Context (RCA R3 4.7/5 + R2 4.9/5):** Class C requires both P8-C5 (Stage 1: derivational rigor) AND P9-C6 (Stage 2: adversarial pass + RCA gates 1/2/3 verification). Failure of any test → demote to Class D with documented reason.
+
+### Issue Registry — Phase 9
+
+| ID | Target | Severity | RCA Score | Status | Issue |
+|----|--------|----------|-----------|--------|-------|
+| P9-C1 | Test 1 — Physical counterexample | HIGH | 4.5/5 | PENDING | Construct concrete scenario where K9 equation produces: (a) P ∉ [0,1], (b) Σ_o P ≠ 1, (c) violates no-signaling. If no counterexample exists, confirm test passes. |
+| P9-C2 | Test 2 — Axiom consistency | HIGH | 4.6/5 | PENDING | Identify any term in K9 contradicting or undefined by K1–K8. Special focus: how ⊥_K is operationalized numerically (K5 boolean → continuous?); binary V → continuous P gap closed?; any assumption beyond K1–K8? |
+| P9-C3 | Test 3 — Distinguishability verification | HIGH | 4.5/5 | PENDING | Take Phase 7 C3 scenario where K9 differs from Standard QM. Compute numerical prediction of both. State difference as explicit number. If zero in all computable scenarios → K9 not distinguishable, FAIL. |
+| P9-C4 | Test 4 — cert/V sensitivity | MEDIUM | 4.4/5 | PENDING | Set cert=1 ∧ V=1 ∀k (trivial case). Does K9 reduce to Standard QM exactly? If YES: correct Born limit confirmed. If NO: explain what breaks. Boundary check for K9_A: V-suppression may make K9_A "trivially reduce" without adding content. |
+| P9-C5 | Rank surviving candidates | MEDIUM | 4.3/5 | PENDING | Among K9 candidates surviving Tests 1–4: rank by (physical consistency + distinguishability magnitude). Rank 1 → Phase 10 selected K9. Rank 2/3 → archive for backup. |
+| P9-C6 | Class C confirmation (Stage 2) | HIGH | 4.7/5 | PENDING | **RCA R3 4.7/5 + R2 4.9/5:** P9-C6 = PASS iff: (a) P8-C5 already PASS (Stage 1), AND (b) all 4 Phase 9 tests PASS, AND (c) all 3 RCA gates (P7-G1/G2/G3) PASS. Any FAIL → demote to Class D with reason. PASS → promote to Class C. |
+
+**RCA gate:** Zero candidate passes all 4 tests → document failure mode, identify structural gap, STOP Phase 10. Honest finding more important than forced fit.
+
+### Fix Allocations — Phase 9
+
+| Fix ID | Target | Severity | Action |
+|--------|--------|----------|--------|
+| F13a | P9-C1 counterexample search | HIGH | For each K9 candidate: try to construct (a) P ∉ [0,1] scenario, (b) Σ_o P ≠ 1 scenario, (c) no-signaling violation. Document attempts. Confirm pass if none found. |
+| F13b | P9-C2 axiom consistency check | HIGH | Audit each K9 term for K1–K8 derivability. Flag any term: undefined, contradicting axiom, or requiring assumption beyond K1–K8. Confirm pass if zero unjustified terms. |
+| F13c | P9-C3 distinguishability numeric | HIGH | Phase 7 C3 scenario: compute exact δP(o) for K9 vs Standard QM. If δP > experimental error: PASS. If δP = 0: K9 not distinguishable, FAIL → Class D. |
+| F13d | P9-C4 cert/V sensitivity boundary | MEDIUM | Set cert=1 ∧ V=1: verify K9 → Standard QM Born rule. If reduction fails: explain mechanism. If reduction succeeds but K9 trivially equals Born when cert/V always 1: candidate has no testable content beyond Born; demote. |
+| F13e | P9-C5 ranking + selection | MEDIUM | Multi-criterion rank (physical consistency × distinguishability × parameter efficiency). Top-ranked K9 → Phase 10 fit. Reject Rank 1 if fails F13a–F13d. |
+| F13f | P9-C6 Class C compound gate | HIGH | RCA verdict: P8-C5 ∧ all Phase 9 tests ∧ P7-G1/G2/G3 → Class C promotion. Any FAIL → Class D default. Document each fail reason explicitly. |
+
+---
+
+## Phase 10 — Multi-paper Data Fit (M5 — D1/D2/D3 Equally Binding) [PENDING]
+
+**Scope:** Numerical fit of selected K9 (Phase 9 Rank 1) against three primary data sources. Python venv + scipy least-squares + χ². RCA R4 4.7/5: omit N0 null model (timing data unavailable); two-way (VVV vs QM) comparison only.
+
+**Context:** D1 Proietti CHSH (4 expectation values, 5σ violation); D2 Bong LF inequality (multi-setting); D3 Frauchiger–Renner (theoretical consistency, not numerical fit).
+
+### Phase 10a — Proietti CHSH Numerical Fit (D1)
+
+#### Issue Registry — Phase 10a
+
+| ID | Target | Severity | RCA Score | Status | Issue |
+|----|--------|----------|-----------|--------|-------|
+| P10a-C1 | Numerical data extraction | HIGH | 4.5/5 | PENDING | Extract ⟨A_0B_0⟩, ⟨A_0B_1⟩, ⟨A_1B_0⟩, ⟨A_1B_1⟩ + Poisson 1σ errors from arXiv 1902.05080 Fig.3 (main + Sup-Mat). Document extraction methodology. |
+| P10a-C2 | Free parameter identification | HIGH | 4.6/5 | PENDING | Identify free parameters in selected K9 candidate. Parameter budget ≤2 per RCA R6 4.9/5. Bounds derived from K1–K8 constraints. |
+| P10a-C3 | Python least-squares fit | HIGH | 4.5/5 | PENDING | Script `fits/proietti_chsh_fit.py`: scipy.optimize.least_squares + χ² + residuals + 1σ parameter uncertainty. Multi-seed to verify convergence. |
+| P10a-C4 | Standard QM Born rule comparison fit | HIGH | 4.5/5 | PENDING | Fit Standard QM Born rule to same dataset using same procedure. Report Δχ² and Δ residual sum. Two-way comparison per RCA R4. |
+| P10a-C5 | Parameter interpretation | MEDIUM | 4.4/5 | PENDING | Physical meaning of best-fit parameters in K-space. Boundary check: any parameter at 0 or 1? If so, K-space reduces to limiting case — explain implication. |
+
+#### Fix Allocations — Phase 10a
+
+| Fix ID | Target | Severity | Action |
+|--------|--------|----------|--------|
+| F14a | P10a-C1 data extraction | HIGH | Extract 4 expectation values + errors from arXiv 1902.05080; verify against published S_exp = 2.416 ± 0.075; document in `fits/data/proietti_2019_chsh.csv` |
+| F14b | P10a-C2 parameter identification | HIGH | List K9 free parameters + bounds. If >2 parameters: violate R6 4.9/5 budget; reject K9 or fix parameter(s) to derived constants. |
+| F14c | P10a-C3 fit execution | HIGH | Write + execute `fits/proietti_chsh_fit.py`. Output: `outputs/proietti_fit_params.json` + `outputs/proietti_residual_plot.png`. Report DOF = 4 − #params. |
+| F14d | P10a-C4 Standard QM comparison | HIGH | Fit Standard QM Born rule. Compute Δχ² = χ²_K9 − χ²_QM. If Δχ² < 0: K9 fits better. If Δχ² > 0: K9 fits worse, Class C downgrade. |
+| F14e | P10a-C5 parameter physics | MEDIUM | Interpret best-fit K-space parameters. Identify boundary cases (0/1). Document implications honestly. |
+
+### Phase 10b — Bong LF Inequality Numerical Fit (D2)
+
+#### Issue Registry — Phase 10b
+
+| ID | Target | Severity | RCA Score | Status | Issue |
+|----|--------|----------|-----------|--------|-------|
+| P10b-C1 | Numerical data extraction | HIGH | 4.5/5 | PENDING | Extract from arXiv 1907.05607: LF inequality values (3 settings/observer, 6 outcomes); violation magnitude + error bars. |
+| P10b-C2 | LF observable extension | HIGH | 4.4/5 | PENDING | LF observable set differs from CHSH → extend K9 candidate for LF observable space. If extension impossible: document scope boundary; K9 may not generalize beyond CHSH. |
+| P10b-C3 | Python fit execution | HIGH | 4.5/5 | PENDING | Script `fits/bong_lf_fit.py`: same scipy pipeline as Phase 10a. Account for higher dimensionality (more data points if available). |
+| P10b-C4 | Standard QM LF comparison | HIGH | 4.5/5 | PENDING | Compare K9 LF fit vs Standard QM LF prediction. Report Δχ² for Bong dataset. |
+| P10b-C5 | Cross-consistency check | HIGH | 4.6/5 | PENDING | **CRITICAL:** Best-fit parameters from D1 vs from D2: same value within 1σ? If different → K9 has internal inconsistency (different scenarios produce different best-fit parameters). |
+
+#### Fix Allocations — Phase 10b
+
+| Fix ID | Target | Severity | Action |
+|--------|--------|----------|--------|
+| F15a | P10b-C1 data extraction | HIGH | Extract LF data from arXiv 1907.05607; document in `fits/data/bong_2020_lf.csv` |
+| F15b | P10b-C2 LF observable extension | HIGH | Derive K9_LF form from K9_CHSH; document any new assumption. If K9 cannot extend: state explicit scope boundary "K9 valid for CHSH only." |
+| F15c | P10b-C3 fit execution | HIGH | Execute `fits/bong_lf_fit.py`. Output: `outputs/bong_fit_params.json` + plot. |
+| F15d | P10b-C4 Standard QM comparison | HIGH | Compare K9 LF vs QM LF; report Δχ². |
+| F15e | P10b-C5 cross-consistency | HIGH | Compare D1 best-fit params vs D2 best-fit params. Document agreement (within 1σ) or disagreement (RCA mismatch root cause). |
+
+### Phase 10c — Frauchiger–Renner Consistency Check (D3, Theoretical) [PENDING]
+
+#### Issue Registry — Phase 10c
+
+| ID | Target | Severity | RCA Score | Status | Issue |
+|----|--------|----------|-----------|--------|-------|
+| P10c-C1 | FR data extraction | HIGH | 4.5/5 | PENDING | Extract 4 statements F/F̄/W/W̄ + halting probability per round from arXiv 1604.07422 Table 4. No fitting; theoretical statements. |
+| P10c-C2 | K9 prediction for FR statements | HIGH | 4.6/5 | PENDING | Compute K9_candidate prediction for each FR statement. Statement-by-statement. |
+| P10c-C3 | Python consistency check | HIGH | 4.4/5 | PENDING | Script `fits/fr_consistency.py`: numerically verify K9's structural response to FR statements. |
+| P10c-C4 | FR paradox response | HIGH | 4.5/5 | PENDING | Does K9 avoid FR contradiction? If yes: which axiom blocks the paradox (K5 V_prov pre-closure / K7 t_close / K8 cross-space)? Document mechanism as Class C lemma. |
+| P10c-C5 | Reproduce vs avoid verdict | HIGH | 4.6/5 | PENDING | If K9 **reproduces** FR contradiction → K-space shares same problem with quantum theory (important finding). If K9 **structurally avoids** FR → identify exact mechanism. |
+
+#### Fix Allocations — Phase 10c
+
+| Fix ID | Target | Severity | Action |
+|--------|--------|----------|--------|
+| F16a | P10c-C1 FR statement extraction | HIGH | Extract Table 4 from arXiv 1604.07422; document in `fits/data/frauchiger_renner_2018.csv` |
+| F16b | P10c-C2 K9 prediction per statement | HIGH | Compute K9 statement-by-statement. Output: `outputs/fr_predictions.json` |
+| F16c | P10c-C3 consistency verification | HIGH | Execute `fits/fr_consistency.py`. Verify no internal contradiction in K9 across FR scenarios. |
+| F16d | P10c-C4 mechanism identification | HIGH | Identify which K1–K8 axiom (if any) blocks FR contradiction. Document as candidate Class C lemma. |
+| F16e | P10c-C5 reproduce/avoid verdict | HIGH | Output: `outputs/fr_verdict.json` with explicit "K9 reproduces FR" or "K9 avoids FR via [mechanism]" statement. |
+
+### Phase 10 — Joint Verdict + Timing-Data Constraint (P10-C6 + P10-TIM)
+
+#### Issue Registry — Phase 10 Joint
+
+| ID | Target | Severity | RCA Score | Status | Issue |
+|----|--------|----------|-----------|--------|-------|
+| P10-C6 | 3-way consistency check | HIGH | 4.5/5 | PENDING | D1 fit + D2 fit + D3 consistency: all OK → strong evidence for K9. Split outcomes → RCA mismatch root cause; document, do NOT force consensus. |
+| P10-TIM | Timing data constraint (RCA R4 4.7/5) | MEDIUM | 4.7/5 | DECISION-LOCKED | **Omit null-model N0 fit.** Arxiv papers publish summary statistics, not event-level timestamps. Two-way comparison (VVV vs QM) only. Phase 12 documents data-availability gap. |
+
+#### Fix Allocations — Phase 10 Joint
+
+| Fix ID | Target | Severity | Action |
+|--------|--------|----------|--------|
+| F17a | P10-C6 joint consistency | HIGH | Execute `fits/joint_consistency.py`. Aggregate D1/D2/D3 results. Output: `outputs/joint_verdict.json`. Honest 3-way analysis: agreement strengthens K9; disagreement identifies root cause. |
+| F17b | P10-TIM constraint enforcement | MEDIUM | Confirm Phase 10 outputs do NOT include N0 fit. Document in Phase 12 future-work: "K-H operational metrics (τ_reg, N_null) require raw event-level data, deferred to future experimental access." |
+
+---
+
+## Dependency Map (Phase 9–10)
+
+```
+Phase 9 (Adversarial Falsification)
+  P9-C1 (counterexample)      → if FAIL: K9 rejected; Class D demote
+  P9-C2 (axiom consistency)   → if FAIL: identify violated axiom; K9 rejected
+  P9-C3 (distinguishability)  → if δP = 0: K9 empirically equivalent; Class D
+  P9-C4 (cert/V sensitivity)  → if FAIL: Born limit broken; identify cause
+  P9-C5 (ranking)             → Top-1 K9 → Phase 10 selected
+  P9-C6 (Class C Stage 2)     → compound gate: P8-C5 ∧ P9-C1..C4 ∧ P7-G1..G3
+                                Pass → Class C; Fail → Class D default
+
+Phase 9 → Phase 10 Gate
+  P9-C5 Rank-1 K9 → Phase 10 selected candidate
+  P9-C6 Class status → Phase 12 honest assessment
+
+Phase 10 (Multi-paper Data Fit)
+  P10a (Proietti D1):
+    P10a-C1 (data extraction)    → fits/data/proietti_2019_chsh.csv
+    P10a-C2 (params + budget ≤2) → R6 enforcement
+    P10a-C3 (fit)                → outputs/proietti_fit_params.json
+    P10a-C4 (QM comparison)      → Δχ² result
+    P10a-C5 (interpretation)     → physical meaning
+
+  P10b (Bong D2):
+    P10b-C1 (extraction)         → fits/data/bong_2020_lf.csv
+    P10b-C2 (LF extension)       → K9_LF derivation (may fail; scope boundary)
+    P10b-C3 (fit)                → outputs/bong_fit_params.json
+    P10b-C4 (QM comparison)      → Δχ² result
+    P10b-C5 (cross-consistency)  → D1 params vs D2 params (CRITICAL check)
+
+  P10c (FR D3, theoretical):
+    P10c-C1 (statement extraction) → fits/data/frauchiger_renner_2018.csv
+    P10c-C2 (K9 prediction/stmt)   → outputs/fr_predictions.json
+    P10c-C3 (consistency)          → no internal K9 contradiction
+    P10c-C4 (FR paradox response)  → K9 reproduces OR avoids; identify mechanism
+    P10c-C5 (verdict)              → outputs/fr_verdict.json
+
+  P10 Joint:
+    P10-C6 (3-way verdict)      → outputs/joint_verdict.json
+                                   D1+D2+D3 all OK → strong K9 evidence
+                                   Mixed outcomes → RCA root cause
+    P10-TIM (DECISION-LOCKED)   → N0 fit OMITTED per R4 4.7/5
+                                  → Phase 12 documents data-availability gap
+
+Phase 10 → Phase 11 Gate
+  If Δχ² (K9 - QM) ≤ 0 across D1+D2 AND FR mechanism identified
+    → Phase 11 (3-observer prediction + interpretation reduction)
+  If K9 fits worse than QM across D1+D2
+    → Class C downgrade; Phase 11 proceeds but with Class D claim
+  If FR reproduces contradiction
+    → important finding; document; Phase 11 proceeds with caveat
+```
+
+---
+
+## Verdicts Summary — Phase 7–8 (PENDING)
+
+### Phase 7 — PENDING
+
+| ID | Score (forecast) | Severity | Status |
+|----|---|----------|--------|
+| P7-G1 | 4.5/5 | BLOCKING | PENDING |
+| P7-G2 | 4.5/5 | BLOCKING | PENDING |
+| P7-G3 | 4.5/5 | BLOCKING | PENDING |
+| P7-C1 | 4.4/5 | HIGH | PENDING |
+| P7-C2 | 4.5/5 | HIGH | PENDING |
+| P7-C3 | 3.8/5 | **BLOCKING** | PENDING |
+
+### Phase 8 — PENDING
+
+| ID | Score (forecast) | Severity | Status |
+|----|---|----------|--------|
+| P8-C1 | 4.5/5 | HIGH | PENDING |
+| P8-C2 | 4.6/5 | HIGH | PENDING |
+| P8-C3 | 4.5/5 | HIGH | PENDING |
+| P8-C4 | 4.4/5 | MEDIUM | PENDING |
+| P8-C5 | 4.65/5 | HIGH | PENDING |
+
+### Phase 9 — PENDING
+
+| ID | Score (forecast) | Severity | Status |
+|----|---|----------|--------|
+| P9-C1 | 4.5/5 | HIGH | PENDING |
+| P9-C2 | 4.6/5 | HIGH | PENDING |
+| P9-C3 | 4.5/5 | HIGH | PENDING |
+| P9-C4 | 4.4/5 | MEDIUM | PENDING |
+| P9-C5 | 4.3/5 | MEDIUM | PENDING |
+| P9-C6 | 4.7/5 | HIGH | PENDING |
+
+### Phase 10a — Proietti CHSH (PENDING)
+
+| ID | Score (forecast) | Severity | Status |
+|----|---|----------|--------|
+| P10a-C1 | 4.5/5 | HIGH | PENDING |
+| P10a-C2 | 4.6/5 | HIGH | PENDING |
+| P10a-C3 | 4.5/5 | HIGH | PENDING |
+| P10a-C4 | 4.5/5 | HIGH | PENDING |
+| P10a-C5 | 4.4/5 | MEDIUM | PENDING |
+
+### Phase 10b — Bong LF (PENDING)
+
+| ID | Score (forecast) | Severity | Status |
+|----|---|----------|--------|
+| P10b-C1 | 4.5/5 | HIGH | PENDING |
+| P10b-C2 | 4.4/5 | HIGH | PENDING |
+| P10b-C3 | 4.5/5 | HIGH | PENDING |
+| P10b-C4 | 4.5/5 | HIGH | PENDING |
+| P10b-C5 | 4.6/5 | HIGH | PENDING |
+
+### Phase 10c — Frauchiger–Renner (PENDING)
+
+| ID | Score (forecast) | Severity | Status |
+|----|---|----------|--------|
+| P10c-C1 | 4.5/5 | HIGH | PENDING |
+| P10c-C2 | 4.6/5 | HIGH | PENDING |
+| P10c-C3 | 4.4/5 | HIGH | PENDING |
+| P10c-C4 | 4.5/5 | HIGH | PENDING |
+| P10c-C5 | 4.6/5 | HIGH | PENDING |
+
+### Phase 10 Joint — PENDING
+
+| ID | Score (forecast) | Severity | Status |
+|----|---|----------|--------|
+| P10-C6 | 4.5/5 | HIGH | PENDING |
+| P10-TIM | 4.7/5 | MEDIUM | DECISION-LOCKED (RCA R4) |
 
 ---
 
@@ -259,4 +599,17 @@ Phase 6 fixes — COMPLETE
 
 ---
 
-*Plan v29 — 2026-05-19. ALL PHASES COMPLETE. Phase 1 (F1–F5c). Phase 2 (F6a–F6c). Phase 3 (F7a–F7d). Phase 4 (F8a–F8d). Phase 5 (F9a–F9d). Phase 6 (F10a–F10f). K_Space_Axiomatization.md upgraded to v1.5. Full RCA audit of K1-K8 + T1-T4 + concrete model + open items complete.*
+*Plan v27 (extended) — 2026-05-23. PHASES 1–6 COMPLETE (v25); PHASES 7–10 ADDED (S1+S2 derivation-chain extension).*
+*Phase 1 (F1–F5c/I-01–S-02): K1–K8 internal consistency audit — COMPLETE.*
+*Phase 2 (F6a–F6c/P2-I01–I06): Level 4 dependency isolation — COMPLETE.*
+*Phase 3 (F7a–F7d/P3-C1–C4): Bridge theorems T1–T4 derivation rigor — COMPLETE.*
+*Phase 4 (F8a–F8d/P4-C1–C4): Registration postulate audit (E1–E16) — COMPLETE.*
+*Phase 5 (F9a–F9d/P5-C1–C4): Concrete EWF model + proof attempt — COMPLETE.*
+*Phase 6 (F10a–F10f/P6-C1–C4): Open items + version v1.5 — COMPLETE.*
+*Phase 7 (F11a–F11f/P7-G1–G3, P7-C1–C3): K9_A/B/C pre-analysis + RCA gates — PENDING (S1 registry added).*
+*Phase 8 (F12a–F12e/P8-C1–C5): K9 equation development + Class C Stage 1 audit — PENDING (S1 registry added).*
+*Phase 9 (F13a–F13f/P9-C1–C6): Adversarial falsification + Class C Stage 2 confirmation — PENDING (S2 registry added).*
+*Phase 10a (F14a–F14e/P10a-C1–C5): Proietti CHSH numerical fit (D1) — PENDING (S2 registry added).*
+*Phase 10b (F15a–F15e/P10b-C1–C5): Bong LF numerical fit (D2) — PENDING (S2 registry added).*
+*Phase 10c (F16a–F16e/P10c-C1–C5): Frauchiger–Renner consistency check (D3) — PENDING (S2 registry added).*
+*Phase 10 Joint (F17a–F17b/P10-C6, P10-TIM): 3-way verdict + timing-data constraint enforcement — PENDING (S2 registry added).*
