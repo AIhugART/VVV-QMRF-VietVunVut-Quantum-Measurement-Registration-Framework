@@ -1228,6 +1228,58 @@ K9-S12 should propose modified Bong at **α=45°** that simultaneously:
 
 ---
 
+## 22. K9-S11b — Proietti Geometry Check — 2026-05-23
+
+**Binary answer:** f_perp = 1/2 (constant) for ALL Proietti settings.
+
+Proietti's CHSH-optimal angles are ALL equatorial ($\theta_\text{Bloch} = \pi/2$). BSM projected onto Bell states also gives constant overlap (50/50 $\Phi^\pm$ for any Friend outcome $c$). ANY binary grouping of Bell states gives $P(a|c) = 1/2$.
+
+**Universal scope:** ANY EWF experiment with z-Friend + equatorial-Superobserver has $f_\perp = 1/2$ constant. Covers Proietti 2019, Bong 2020, and all standard implementations.
+
+**Decision:** GO TO K9-S12 (no need to revisit Phase 10a).
+
+**Files:** [proietti_geometry_check.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/proietti_geometry_check.py)
+
+---
+
+## 23. K9-S11d — Statistical Significance Self-Correction — 2026-05-23
+
+### 23.1 Self-Correction of K9-S11c
+
+K9-S11c's "sweet spot" at $\alpha = 45°$ was **WRONG**:
+- Gen LF 1 = +0.022, $\sigma = 0.012$ → **1.9σ** (not significant)
+- "K9\_E signal = 0.707" was $|\cos\alpha|$ — not a measurable quantity
+
+### 23.2 Proper Optimization
+
+**Criterion:** $\text{FOM} = \min(n_{\sigma,\text{LF}}, n_{\sigma,\text{K9E}})$
+
+| $\alpha$ | $n_{\sigma,\text{LF}}$ | $n_{\sigma,\text{K9E}}$ | FOM |
+|---|---|---|---|
+| 31° | **6.0** | **20.8** | **6.0 (optimal)** |
+| 35° | 5.7 | 22.4 | 5.7 |
+| 45° | 1.9 | 24.5 | 1.9 ❌ |
+
+### 23.3 Actual Measurables
+
+At $\alpha = 31°$, $\mu = 0.95$, $\beta_{K9} = 0.3$, $N = 91{,}000$:
+
+| Quantity | Value | Significance |
+|---|---|---|
+| Gen LF 1 | +0.062 | **6.0σ** ✅ |
+| $\delta\langle A_1 B_2 \rangle$ | −0.036 (4.2% shift) | **20.8σ** ✅ |
+| Bottleneck | LF (always) | K9\_E is easy |
+
+### 23.4 K9-S12 Foundation (Corrected)
+
+Modified Bong at **α = 31°**: same azimuthal angles, same μ, same N. Only change polar tilt from 90° to 31°.
+
+### 23.5 Files Created
+- [K9S11d_statistical_significance.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S11d_statistical_significance.md) — Full analysis.
+- [statistical_significance.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/statistical_significance.py) — Statistical computation.
+
+---
+
 ## Resolved Historical Open Items Moved from v2.0 Main Document
 
 

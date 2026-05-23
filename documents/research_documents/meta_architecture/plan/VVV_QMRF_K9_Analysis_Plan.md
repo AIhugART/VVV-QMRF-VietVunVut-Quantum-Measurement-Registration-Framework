@@ -1045,11 +1045,71 @@ measures at a TILTED angle (0 < alpha < 90 deg from z-axis):
 
 **Output:** `k9_analysis/K9S11_bong_predictions.md` + `fits/K9S11_bong_predictions.py`
 
+### K9-S11b: Proietti Geometry Check (COMPLETE -- 2026-05-23)
+
+Binary answer: f_perp = 1/2 (constant) for ALL Proietti settings.
+CHSH-optimal angles are ALL equatorial. BSM groupings also constant.
+**Decision: GO TO K9-S12** (no need to revisit Phase 10a).
+
+**Output:** `fits/proietti_geometry_check.py`
+
+### K9-S11c: Universal Theorem + LF Compatibility (COMPLETE -- 2026-05-23)
+
+**Universal Equatorial Cancellation Theorem** — PROVEN algebraically:
+```
+f_perp(+1,H) - f_perp(-1,H) = -cos(theta)
+Vanishes IFF theta = pi/2 (equatorial). QED.
+Azimuthal phi is IRRELEVANT.
+```
+
+LF Compatibility: Gen LF 1 IS violated at alpha=45° (mu>=0.95).
+
+> **ERRATUM (K9-S11d):** alpha=45° is NOT the sweet spot.
+> Gen LF 1 = +0.022 at alpha=45° is only 1.9sigma (not significant).
+> See K9-S11d for corrected optimal alpha.
+
+**Output:** `k9_analysis/K9S11c_universal_theorem_lf_check.md` + `fits/universal_theorem_lf_check.py`
+
+### K9-S11d: Statistical Significance (COMPLETE -- 2026-05-23)
+
+**Self-correction of K9-S11c.** Proper statistical analysis with N=91,000:
+
+```
+OPTIMAL ALPHA = 31 deg (FOM = 6.0)
+  Gen LF 1:     +0.062 at 6.0sigma  (SIGNIFICANT)
+  delta<A1B2>:  -0.036 at 20.8sigma (SIGNIFICANT)
+  BOTH detectable with Bong-level statistics.
+  
+K9_E measurable: delta<A1B2> = -0.036 (4.2% shift at beta_k9=0.3)
+Bottleneck is ALWAYS the LF significance, not K9_E.
+```
+
+**Output:** `k9_analysis/K9S11d_statistical_significance.md` + `fits/statistical_significance.py`
+
 ---
 
 ## K9-S12: Modified Bong Protocol Proposal (PENDING)
 
-**Goal:** Design an experimental proposal for testing K9_E using a modified
-Bong protocol with tilted superobserver measurement basis.
+**Goal:** Design a complete experimental proposal for testing K9_E using a
+modified Bong protocol with tilted superobserver measurement basis.
 
-**Prerequisite:** K9-S11 COMPLETE
+**Foundation (from K9-S11 chain):**
+```
+EXPERIMENT PARAMETERS:
+  Superobserver polar angle:  alpha = 31 deg (NOT 45 or 60)
+  Azimuthal angles:           phi_1=168, phi_2=0, phi_3=118, beta=175 (unchanged)
+  State:                      rho_mu with mu >= 0.95
+  Coincidences:               N = 91,000 (Bong-level, sufficient)
+
+EXPECTED RESULTS (mu=0.95, beta_k9=0.3):
+  Gen LF 1 = +0.062 (6.0sigma) -> Genuine LF VIOLATED
+  delta<A1B2> = -0.036 (20.8sigma) -> K9_E DETECTABLE
+  BOTH with Bong-level statistics.
+  
+UNIVERSAL THEOREM (why standard Bong cannot test K9_E):
+  z-Friend + equatorial-Superobserver -> f_perp = 1/2 constant
+  -> marginalization cancellation -> K9_E = QM
+  Proven algebraically: f_perp diff = -cos(theta), vanishes at theta=pi/2.
+```
+
+**Prerequisite:** K9-S11d COMPLETE ✅
