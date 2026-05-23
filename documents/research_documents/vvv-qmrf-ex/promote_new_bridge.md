@@ -142,6 +142,188 @@ DUAL_GAP = K_GAP giao voi RHO_GAP                    (thieu ca hai)
 
 ---
 
+## 2.5 RCA Freshness Gate
+
+**Purpose:** Phan loai do "tuoi" cua RCA truoc khi vao 5-Step RCA Gate. Tranh confirmatory RCA bi treat nhu exploratory — dam bao assumptions duoc cross-check doc lap.
+
+**Pipeline position:**
+
+```
+Detect (Section 1) → Classify (Section 2) → [RCA Freshness Gate (Section 2.5)] → RCA Gate (Section 3) → Promote (Section 4)
+```
+
+### 2.5.1 Freshness classification
+
+Moi bridge proposal duoc gan mot trong ba freshness levels:
+
+| Freshness | Trigger | Meaning |
+|-----------|---------|---------|
+| `EXPLORATORY` | Node hoan toan moi, chua co pre-classification, chua co RCA truoc do | Map la **kham pha** — can independent SOT verification |
+| `CONFIRMATORY` | Node da duoc pre-classify (e.g., Section 7 Immediate Application) | Map la **xac nhan** — assumptions can cross-check doc lap |
+| `RE-VERIFY` | Node co DRAFT RCA tu batch truoc (C3/C4/C5) | Map la **xac minh lai** — SOT khong thay doi ke tu RCA goc |
+
+### 2.5.2 Cross-check requirements per freshness level
+
+| Freshness | Required cross-check | Minimum SOT sources |
+|-----------|---------------------|---------------------|
+| `EXPLORATORY` | Full 5-step RCA + independent SOT verification | >= 2 source files doc lap |
+| `CONFIRMATORY` | Cross-check pre-classification assumptions: (a) QM substrate co thuc su la nearest node? (b) BE analogue co direct hay indirect? (c) Co alternative map nao bi bo qua? | >= 1 SOT file ngoai pre-classification source |
+| `RE-VERIFY` | (a) SOT khong thay doi ke tu RCA goc; (b) DRAFT fields day du; (c) Neu SOT thay doi → escalate len `EXPLORATORY` | SOT goc + current SOT (diff) |
+
+### 2.5.3 Indirect map detection
+
+**Rule:** Neu BE bridge di qua >= 2 lop trung gian, gan co `INDIRECT-N-LEVEL` va ghi ro mediation path trong boundary note.
+
+**Detection test:**
+1. BE node → VVV node: co direct source-analogue trong RCA root cause?
+2. Neu khong: VVV node co `contains` / `inherits from` relation den mot VVV node khac?
+3. Neu co: quan he do la `structural_analogy` (1 level), `functional_analogy` (1 level), hay `transitive` (>= 2 levels)?
+
+**Example (from 2026-05-23 batch):**
+```
+f_perp (00062) → N_QM_VVV_00042 → N_BE_00018 (Trairupya)
+→ 2 levels indirect → flag: INDIRECT-2-LEVEL
+```
+
+### 2.5.4 Internal map audit
+
+**Rule:** Khi QM node = "Internal", map khong tao graph edge nhung van can RCA gate. Phai kiem tra:
+
+1. That su khong co canonical QM node nao tuong duong?
+2. Co QM node nao gan dung (partial match) bi bo qua?
+3. Neu co QM experimental foundation gan nhat → ghi ro trong rationale (e.g., "No direct QM analogue; nearest experimental foundation is N_QM_XXXXX")
+
+**Internal Audit Schedule:** Moi 6 thang, re-check danh sach "Internal" maps xem co canonical QM node moi nao xuat hien khong.
+
+### 2.5.5 Extended classification output format
+
+Mo rong Section 2.3 output format voi cot freshness:
+
+| Node | K-side | rho-side | Claim Class | RCA Freshness | Priority |
+|---|---|---|---|---|---|
+| N_QM_VVV_00060 | K_PENDING-RCA | RHO_CANDIDATE (N_QM_00016) | CLASS_C | CONFIRMATORY | HIGH |
+| N_QM_VVV_00061 | K_NOT_APPLICABLE | RHO_CANDIDATE (internal) | CLASS_C | CONFIRMATORY | HIGH |
+| N_QM_VVV_00062 | K_CANDIDATE (Trairupya) | RHO_CANDIDATE (N_QM_00016) | CLASS_C | CONFIRMATORY | HIGH |
+| N_QM_VVV_00063 | K_CANDIDATE (K5 bot_K) | RHO_CANDIDATE (independent) | CLASS_C | CONFIRMATORY | HIGH |
+| N_QM_VVV_00064 | K_NOT_APPLICABLE | RHO_CANDIDATE (N_QM_00090) | CLASS_C | CONFIRMATORY | MEDIUM |
+| N_QM_VVV_00065 | K_NOT_APPLICABLE | RHO_CANDIDATE (internal) | CLASS_C | CONFIRMATORY | MEDIUM |
+| N_QM_VVV_00066 | K_NOT_APPLICABLE | RHO_CANDIDATE (internal) | CLASS_C | CONFIRMATORY | MEDIUM |
+
+### 2.5.6 Freshness Gate decision tree
+
+```
+Freshness = EXPLORATORY?
+  YES → Full 5-step RCA (Section 3) + >= 2 SOT sources
+  NO  → Freshness = CONFIRMATORY?
+          YES → Cross-check assumptions + >= 1 independent SOT
+                 → Assumptions PASS? → RCA Gate (Section 3)
+                 → Assumptions FAIL? → Escalate to EXPLORATORY
+          NO  → Freshness = RE-VERIFY?
+                  YES → Diff SOT (current vs original RCA)
+                         → SOT unchanged + DRAFT complete? → RCA Gate (Section 3)
+                         → SOT changed? → Escalate to EXPLORATORY
+                  NO  → ERROR: unclassified freshness — escalate
+```
+
+### 2.5.7 Edge case: mixed freshness trong cung 1 batch
+
+Neu batch chua ca EXPLORATORY + CONFIRMATORY nodes:
+- EXPLORATORY nodes duoc uu tien xu ly truoc (kham pha map moi)
+- CONFIRMATORY nodes xu ly sau (xac nhan pre-classification)
+- RE-VERIFY nodes xu ly cuoi cung (xac minh lai)
+
+### 2.5.8 RCA gate log: them freshness field
+
+Mo rong Section 3.4 RCA gate log format voi freshness:
+
+```markdown
+### RCA Gate Log -- BR_EX_BE_00XXX
+
+| Field | Value |
+|---|---|
+| **Freshness** | CONFIRMATORY |
+| **Pre-classification source** | promote_new_bridge.md Section 7.2 |
+| **Cross-check SOT** | system_be_full.md (verified N_BE_XXXXX) |
+| **Cross-check result** | PASS / PASS-WITH-FLAGS / FAIL-ESCALATED |
+
+| Step | Score | Finding |
+|---|---|---|...
+```
+
+### 2.5.9 CONFIRMATORY Spot-Check Anti-Drift Mechanism
+
+**RCA root cause (2026-05-23 batch review):** Khi tat ca node trong batch deu duoc pre-classify la CONFIRMATORY, pipeline co xu huong xac nhan (verify) thay vi thach thuc (falsify) — goi la **confirmatory drift**. Cross-check requirements (§2.5.2) giup giam nhung khong loai bo hoan toan structural bias nay. Root cause: pipeline design chua co co che ngau nhien nang cap freshness de chong confirmatory drift.
+
+**Fix:** Moi batch, chon ngau nhien (random) **it nhat 1 CONFIRMATORY node** upgrade len `EXPLORATORY`. Node duoc chon phai qua full 5-step RCA + independent SOT verification (>= 2 SOT sources doc lap), pha vo structural bias ma khong can thay doi toan bo pipeline.
+
+#### 2.5.9.1 Selection rule
+
+| Batch size (CONFIRMATORY nodes) | Minimum spot-check count |
+|---|---|
+| 1–3 | 1 |
+| 4–7 | 2 |
+| 8+ | ceil(N/4) |
+
+**Selection criteria:**
+- Uu tien node co **BE bridge INDIRECT** (>= 2 cap) — day la noi confirmatory drift de xuat hien nhat
+- Uu tien node co **QM bridge "Internal"** — de independent re-evaluate xem co QM analogue nao bi bo qua khong
+- Khong chon node da qua EXPLORATORY trong batch truoc do (tranh lap)
+
+#### 2.5.9.2 Spot-check execution
+
+```
+1. Chon ngau nhien N node tu CONFIRMATORY pool
+2. Upgrade freshness: CONFIRMATORY → EXPLORATORY
+3. Chay full 5-step RCA + >= 2 SOT sources doc lap (theo §2.5.2 dong EXPLORATORY)
+4. So sanh ket qua EXPLORATORY vs CONFIRMATORY goc:
+   a. Cung PASS → confirmatory bias LOW — tiep tuc
+   b. Cung PASS nhung score giam >= 0.5 → confirmatory drift detected — ghi log, escalate review
+   c. FAIL → confirmatory drift CONFIRMED — escalate toan bo batch len EXPLORATORY
+```
+
+#### 2.5.9.3 Decision tree update
+
+Chen buoc spot-check vao truoc CONFIRMATORY path:
+
+```
+Freshness = EXPLORATORY?
+  YES → Full 5-step RCA (Section 3) + >= 2 SOT sources
+  NO  → Freshness = CONFIRMATORY?
+          YES → [SPOT-CHECK] Random selected for EXPLORATORY upgrade?
+                  YES → Upgrade to EXPLORATORY → Full 5-step RCA + >= 2 SOT sources
+                  NO  → Cross-check assumptions + >= 1 independent SOT
+                         → Assumptions PASS? → RCA Gate (Section 3)
+                         → Assumptions FAIL? → Escalate to EXPLORATORY
+          NO  → Freshness = RE-VERIFY?
+                  YES → Diff SOT (current vs original RCA)
+                         → SOT unchanged + DRAFT complete? → RCA Gate (Section 3)
+                         → SOT changed? → Escalate to EXPLORATORY
+                  NO  → ERROR: unclassified freshness — escalate
+```
+
+#### 2.5.9.4 Spot-check log format
+
+Mo rong Section 3.4 RCA gate log format voi spot-check field:
+
+```markdown
+### RCA Gate Log -- BR_EX_BE_00XXX
+
+| Field | Value |
+|---|---|
+| **Freshness (original)** | CONFIRMATORY |
+| **Spot-Check Upgraded?** | YES → EXPLORATORY |
+| **Spot-Check Reason** | Random selection (batch YYYY-MM-DD, N of M) |
+| **Pre-classification source** | promote_new_bridge.md Section 7.2 |
+| **Cross-check SOT** | system_be_full.md + system_qm_full.md (2 sources, EXPLORATORY) |
+| **Cross-check result** | PASS / PASS-WITH-FLAGS / FAIL-ESCALATED |
+| **Delta vs CONFIRMATORY** | Score change: X.X → Y.Y (delta = Z.Z) |
+
+| Step | Score | Finding |
+|---|---|---|...
+```
+
+---
+
 ## 3. 5-Step RCA Gate
 
 Moi bridge proposal phai qua 5 buoc. Moi buoc 1.0 diem, tong 5.0.
@@ -306,16 +488,20 @@ Sau khi promote, cap nhat header:
 1. Trigger: node_QM_VVV.md duoc update
 2. Detect: Gap detection (Section 1) -> gap list
 3. Classify: Classification matrix (Section 2) -> phan loai
-4. RCA Gate: Moi node qua 5-step RCA (Section 3)
+4. RCA Freshness Gate (Section 2.5): Phan loai freshness
+   a. EXPLORATORY: full RCA + >= 2 SOT sources
+   b. CONFIRMATORY: cross-check assumptions + >= 1 independent SOT
+   c. RE-VERIFY: diff SOT, DRAFT field check
+5. RCA Gate: Moi node qua 5-step RCA (Section 3)
    a. DUAL_GAP: 2 RCA gates doc lap
    b. K_GAP only: chi K-side RCA
    c. RHO_GAP only: chi rho-side RCA
-5. Promote: Ghi vao registry (Section 4)
+6. Promote: Ghi vao registry (Section 4)
    a. >= 4.0: ACTIVE
    b. 3.5-3.9: DRAFT
    c. < 3.5: REJECTED + log
-6. Sync: Cap nhat registry header
-7. Verify: Verification checklist (Section 6)
+7. Sync: Cap nhat registry header
+8. Verify: Verification checklist (Section 6)
 ```
 
 ---

@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_BE Registry — K-side Bridge: BE ↔ VVV-QMRF
 
-**Version:** 2.7 (E18 Path C EX vNext registry sync + C4/C5 current-Core draft K-side rows)
-**Date:** 2026-05-22
-**Total Entries:** 72 numbered row entries / **68 active** (34 reference-copy + 1 similarity candidate + 9 expert manual + 24 active Phase 7/12/vNext stretch [13 KE-OF + 8 KE-SC + 3 E18 Path C]) + **2 RECLASSIFIED-v1.7 retained** (BR_EX_BE_00061, 00066) + **2 FOLDED-structural-review** (BR_EX_BE_00003, 00004 — Anvaya/Vyatireka folded under BR_EX_BE_00008 per BIAN-14 structural review) + **3 draft-only current-Core K-side rows**
-**Namespace:** BR_EX_BE_00001–BR_EX_BE_00072 active/historical numbered rows; BR_EX_BE_DRAFT_00073A–BR_EX_BE_DRAFT_00073C draft-only current-Core rows (not active, not graphable, no renumber)
+**Version:** 2.8 (2026-05-23 promote_new_bridge: K9_E K-side + DRAFT→ACTIVE)
+**Date:** 2026-05-23
+**Total Entries:** 77 / **74 active** (+6 promote_new_bridge: 2 K9_E + 3 DRAFT→ACTIVE + 1 K_PENDING-RCA) + 2 RECLASSIFIED + 2 FOLDED + 3 draft (superseded)
+**Namespace:** BR_EX_BE_00001–BR_EX_BE_00077 active; BR_EX_BE_DRAFT_00073A–00073C retained provenance
 
 ---
 
@@ -1494,7 +1494,114 @@ See `ex_schema_addendum.md §5` for F2 non-reversal policy.
 
 ---
 
-## C4 Current-Core Draft K-Side Rows (Draft-only, 2026-05-22)
+## promote_new_bridge Batch (2026-05-23) — K9_E K-side + DRAFT→ACTIVE
+
+### BR_EX_BE_00073 — Entry 73 (K9_E f_perp K-side)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00073` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00018` |
+| **BE Concept** | Triple-condition syllogism / Trairūpya |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00062` |
+| **VVV Concept** | f_perp(K_ctx) — Contextual Suppression Function |
+| **Direction** | N_BE_00018 → N_QM_VVV_00062 |
+| **Relation Type** | structural_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.90 (RCA 4.5/5) |
+| **Boundary Note** | Trairūpya supplies K-side structural analogy for three-condition validity filtering; f_perp is mathematical implementation on probability side. No BE-QM identity. Not a Hilbert-space derivation. Mediated through parent N_QM_VVV_00042. |
+| **Rationale** | f_perp inherits validity-gating from Trairūpya through N_QM_VVV_00042. Three-condition structure parallels f_perp's suppression when K_ctx high. |
+| **Origin** | promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_BE_00074 — Entry 74 (K9_E K_ctx K-side)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00074` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00015` |
+| **BE Concept** | Exclusion / Apoha |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00063` |
+| **VVV Concept** | K_ctx(k_i, Exp) — Contextual Incommensurability Aggregate |
+| **Direction** | N_BE_00015 → N_QM_VVV_00063 |
+| **Relation Type** | structural_analogy |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.90 (RCA 4.5/5) |
+| **Boundary Note** | Apoha provides K-side structural analogy for binary incommensurability (K5 ⊥_K). K_ctx is the aggregate. No BE-QM identity. K5 is a VVV axiom, not a BE derivation. |
+| **Rationale** | K_ctx aggregates binary exclusion relations whose primitive (K5 ⊥_K) has structural affinity with Buddhist exclusion logic (Apoha). Analogy only, not conceptual identity. |
+| **Origin** | promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_BE_00075 — Entry 75 (00056 DRAFT→ACTIVE)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00075` |
+| **Type** | new_bridge_promotion |
+| **Promotion** | DRAFT→ACTIVE (supersedes BR_EX_BE_DRAFT_00073A) |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00003` primary; `N_BE_00019`; `N_BE_00021` |
+| **BE Concept** | Inference / Anumana + Pervasion / Vyapti + Essential relation / Svabhavapratibandha |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00056` |
+| **VVV Concept** | Delayed-Choice Registration Boundary |
+| **Direction** | N_BE_00003 / N_BE_00019 / N_BE_00021 → N_QM_VVV_00056 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping_valid_sign_support |
+| **Confidence** | 0.88 (C3 RCA 4.4/5; re-verified 5.0/5) |
+| **Boundary Note** | Analogical-only K-side support for generalized E18 valid-window locking; no BE-QM identity, no physical retrocausation. |
+| **Rationale** | E18 Lock(C_f, S, {W_i}) → W_valid. BE package supports sign, relation, and stable-connection aspects only. Promoted from BR_EX_BE_DRAFT_00073A. |
+| **Origin** | C3 K-side RCA → C4 draft → promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_BE_00076 — Entry 76 (00057 DRAFT→ACTIVE)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00076` |
+| **Type** | new_bridge_promotion |
+| **Promotion** | DRAFT→ACTIVE (supersedes BR_EX_BE_DRAFT_00073B) |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00019` primary; `N_BE_00021`; `N_BE_00003` |
+| **BE Concept** | Pervasion / Vyapti + Essential relation / Svabhavapratibandha + Inference / Anumana |
+| **BE Layer** | core |
+| **VVV Node** | `N_QM_VVV_00057` |
+| **VVV Concept** | Sorting-Conditioned Registration Subset |
+| **Direction** | N_BE_00019 / N_BE_00021 / N_BE_00003 → N_QM_VVV_00057 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping_draft_relation_support |
+| **Confidence** | 0.84 (C3 RCA 4.2/5; re-verified 5.0/5) |
+| **Boundary Note** | Analogical-only K-side support for sorting/coincidence constraint; sorting is not Buddhist inference identity, not a new Standard QM law. |
+| **Rationale** | Sorting relation S partitions raw records into valid window. Vyapti + Svabhavapratibandha support relation-constraint; Anumana supports sign-like subset selection. Promoted from BR_EX_BE_DRAFT_00073B. |
+| **Origin** | C3 K-side RCA → C4 draft → promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_BE_00077 — Entry 77 (00059 DRAFT→ACTIVE)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_BE_00077` |
+| **Type** | new_bridge_promotion |
+| **Promotion** | DRAFT→ACTIVE (supersedes BR_EX_BE_DRAFT_00073C) |
+| **Source Edge Type** | `BR_EX_BE_NEW` |
+| **BE Node** | `N_BE_00006`; `N_BE_00234`; `N_BE_00052` |
+| **BE Concept** | Erroneous cognition / Bhranti + Avisamvaditva + Prama |
+| **BE Layer** | core + evidence |
+| **VVV Node** | `N_QM_VVV_00059` |
+| **VVV Concept** | Decoherence-Induced Registration Update |
+| **Direction** | N_BE_00006 / N_BE_00234 / N_BE_00052 → N_QM_VVV_00059 |
+| **Relation Type** | sub_concept_direct_anchor |
+| **Claim Class** | interpretive_mapping_draft_registration_state_update_support |
+| **Confidence** | 0.84 (C5 RCA 4.2/5; re-verified 5.0/5) |
+| **Boundary Note** | Analogical-only K-side support for registration-state update and validity/error reclassification; not BE analogue of decoherence physics. Bhranti/error, Avisamvaditva/reliability, Prama/valid-knowledge classification only. |
+| **Rationale** | K-side routing: decoherence can route defeated response to error or instantiate new K-state. BE concepts supply classification framework. Promoted from BR_EX_BE_DRAFT_00073C. |
+| **Origin** | C5 RCA → C4 draft → promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+---
+
+## C4 Current-Core Draft K-Side Rows (2026-05-22; superseded by active 00075–00077)
 
 These rows formalize C3 K-side RCA results for current-Core nodes outside the frozen 52-node EX baseline. They are **draft-only**: not active `BR_EX_BE`, not graphable, not counted in `47/52`, and not authorized for `data/*.json` mutation.
 

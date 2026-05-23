@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # EX Schema Addendum — VVV-QMRF-EX Local Namespace Declaration
 
-**Version:** 1.1
-**Date:** 2026-05-20
+**Version:** 1.0
+**Date:** 2026-05-23
 **Status:** Active
-**RCA Fix:** F1 (v1.0→v1.1) — declares EX-local namespace to prevent ID collision with VVV-QMRF core; Phase 7 adds stretch relation vocabulary
+**RCA Fix:** F1 (v1.0→v1.1) — declares EX-local namespace to prevent ID collision with VVV-QMRF core
 
 ---
 
@@ -36,14 +36,6 @@ It is an extension of the VVV-QMRF schema (`vvv-qmrf/schema_guide.md`) and does 
 | `VVV_TO_BE` | Phase 1 | VVV concept draws K-side semantics from BE source-analogue |
 | `DRAFT_BRIDGE_BE_VVV` | Phase 1 | BE concept provides K-side support (263-node audit cycle, draft) |
 | `BR_EX_BE` | Phase 4 | New BE↔VVV bridge from Phase 3 similarity (Tier2 candidate) |
-| `BR_EX_BE_NEW` | Phase 6 | Expert-manual BE↔VVV bridge resolving a KE-PM K-gap node |
-| `BR_EX_BE_STRETCH` | Phase 7 / v1.7 | Batch-approved BE↔VVV stretch bridge. **KE-OF threshold (unchanged):** 4.5/5. **KE-SC threshold:** v1.6 = 3.5/5 (pragmatic floor); **v1.7 = 4.0/5 + 1 carve-out at 3.8** (requires structurally sharp boundary guard + raw cosine ≥4.3). 3 v1.6 KE-SC entries reclassified back to exception in v1.7 (see plan §15 and `archives/phase7_logs/phase7_ke_sc_rca_log.md` v1.7 annotations). phase2 `K_SIDE_TYPES` must include this type to count it in K-side anchoring (F-RCA-14). |
-
-### K-side relation vocabulary
-| Relation Type | Origin | Description |
-|---------------|--------|-------------|
-| `operator_decomposition` | Phase 7 KE-OF | Maps a VVV operator-formalism node to a BE concept by decomposing the operator's registration-side semantic function; NOT a claim that BE contains an equivalent mathematical operator |
-| `sub_concept_direct_anchor` | Phase 7 KE-SC | Maps a VVV sub-concept to a direct BE anchor after parent-inherited K-side coverage is replaced by cautious direct anchoring; NOT a BE-QM identity claim |
 
 ### ρ-side (VVV ↔ QM) edge types
 | Edge Type | Origin | Description |

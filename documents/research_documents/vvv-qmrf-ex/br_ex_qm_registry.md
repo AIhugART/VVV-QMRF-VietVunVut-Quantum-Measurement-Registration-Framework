@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_QM Registry — ρ-side Bridge: VVV-QMRF ↔ QM
 
-**Version:** 1.1 (Phase 4 + C2 current-Core draft rho-side candidates)
-**Date:** 2026-05-22
-**Total Entries:** 74 active (73 reference-copy + 1 new similarity candidate) + 3 draft-only C2 candidates
-**Namespace:** BR_EX_QM_00001–BR_EX_QM_00074 active; BR_EX_QM_DRAFT_00075–BR_EX_QM_DRAFT_00077 draft-only
+**Version:** 1.2 (2026-05-23 promote_new_bridge: K9_E rho-side + DRAFT→ACTIVE)
+**Date:** 2026-05-23
+**Total Entries:** 84 active (73 ref-copy + 1 sim + 10 promote_new_bridge) + 3 draft C2 (superseded)
+**Namespace:** BR_EX_QM_00001–BR_EX_QM_00084 active; BR_EX_QM_DRAFT_00075–00077 retained
 
 ---
 
@@ -1507,7 +1507,214 @@ This registry maps VVV-QMRF nodes to Quantum Measurement (QM) nodes on the ρ-si
 
 ---
 
-## C2 Current-Core Draft Rho-Side Candidates (Planning Execution, 2026-05-22)
+## promote_new_bridge Batch (2026-05-23) — K9_E rho-side + DRAFT→ACTIVE
+
+### BR_EX_QM_00075 — Entry 75 (K9_E Postulate P9)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00075` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00060` |
+| **VVV Concept** | K9_E Probability Postulate (P9) / K-Space Conditioned Probability Rule |
+| **QM Node** | `N_QM_00016` |
+| **QM Concept** | Born Rule |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00060 → N_QM_00016 |
+| **Relation Type** | registration_layer_extension_of |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 1.00 (RCA 5.0/5) |
+| **Boundary Note** | K9_E is a POSTULATE (P9), not derivable from K1-K8. beta is phenomenological. Reduces to Born Rule at beta=0. Evidence real but ambiguous (2.31sigma). Confirmation requires 3-observer experiment. 8 structural consequences folded into this root node. |
+| **Rationale** | Standard QM has Born Rule (P4) without registration-conditioned probability. K9_E fills this gap as P9: P(o|K) = Tr(E_o rho) * f_perp(K_ctx). |
+| **Origin** | promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_QM_00076 — Entry 76 (beta)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00076` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00061` |
+| **VVV Concept** | beta — K9_E Free Suppression Parameter |
+| **QM Node** | Internal |
+| **QM Concept** | VVV-QMRF internal construct — no Standard QM analogue |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00061 → VVV internal formalism |
+| **Relation Type** | registration_layer_extension_of |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.90 (RCA 4.5/5) |
+| **Boundary Note** | beta is PHENOMENOLOGICAL — not derivable from K1-K8; must be measured experimentally. beta=0 recovers Born Rule. Best-fit beta=0.598 (2.31sigma). VVV-QMRF internal construct with no Standard QM counterpart. |
+| **Rationale** | K9_E introduces one free parameter not present in QM. beta is the phenomenological interface between K9_E theory and experiment. |
+| **Origin** | promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_QM_00077 — Entry 77 (f_perp)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00077` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00062` |
+| **VVV Concept** | f_perp(K_ctx) — Contextual Suppression Function |
+| **QM Node** | `N_QM_00016` |
+| **QM Concept** | Born Rule |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00062 → N_QM_00016 |
+| **Relation Type** | registration_layer_extension_of |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.90 (RCA 4.5/5) |
+| **Boundary Note** | f_perp = 1 − β·K_ctx assumes LINEAR suppression; nonlinear forms not excluded. VVV-QMRF internal construct modifying Born-rule probability by K-space contextual factor. Functional form is an assumption pending experimental discrimination. |
+| **Rationale** | K9_E needs mathematical locus where K-space incommensurability enters probability. f_perp bridges K5 ⊥_K to Born probability. T4 C(o_i,o_j) folded here. |
+| **Origin** | promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_QM_00078 — Entry 78 (K_ctx)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00078` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00063` |
+| **VVV Concept** | K_ctx(k_i, Exp) — Contextual Incommensurability Aggregate |
+| **QM Node** | Internal |
+| **QM Concept** | VVV-QMRF internal construct — no Standard QM analogue |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00063 → VVV internal formalism |
+| **Relation Type** | registration_layer_extension_of |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.90 (RCA 4.5/5) |
+| **Boundary Note** | K_ctx is VVV-QMRF internal aggregate metric with no Standard QM analogue. Independently measurable given observer set. Step from binary ⊥_K (K5) to aggregate requires T3-morphism + K2. |
+| **Rationale** | K9_E requires aggregate incommensurability as input to f_perp. K5 only provides binary ⊥_K; K_ctx bridges binary to aggregate. |
+| **Origin** | promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_QM_00079 — Entry 79 (Genuine Fit — EVIDENCE NODE)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00079` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00064` |
+| **VVV Concept** | Genuine Non-Circular Fit — K9_E Empirical Evidence |
+| **QM Node** | `N_QM_00090` |
+| **QM Concept** | Bell's Inequality & Bell Correlations |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00064 → N_QM_00090 |
+| **Relation Type** | physical_substrate_for |
+| **Claim Class** | evidence_support |
+| **Confidence** | 1.00 (RCA 5.0/5) |
+| **Boundary Note** | EVIDENCE NODE. This is an empirical measurement result, not a conceptual bridge. Genuine non-circular fit yields beta=0.598 at 2.31sigma. Evidence REAL but AMBIGUOUS: multiplicative pattern NOT confirmed (ratio=-0.78), systematics not ruled out. Confirmation requires 3-observer experiment. |
+| **Rationale** | v29 genuine fit uses raw Proietti Figure 3 correlators, removing v28 circularity. Separating evidence from postulate prevents recurrence of circularity error. |
+| **Origin** | promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_QM_00080 — Entry 80 (2BSM/1BSM — PREDICTION NODE)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00080` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00065` |
+| **VVV Concept** | K9_E Multiplicative Pattern (2BSM/1BSM Ratio) |
+| **QM Node** | Internal |
+| **QM Concept** | VVV-QMRF internal — Standard QM has no observer-count scaling |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00065 → VVV internal formalism |
+| **Relation Type** | registration_layer_extension_of |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.90 (RCA 4.5/5) |
+| **Boundary Note** | PREDICTION NODE. This is a falsifiable prediction, not a conceptual bridge. K9_E multiplicative pattern (2BSM/1BSM ≈ 2) NOT CONFIRMED (ratio=-0.78). Recording negative results is structural antidote to v28 circularity. Failure constrains model refinement. |
+| **Rationale** | Multiplicative model's structural signature failure is more scientifically valuable than a pass. Pattern failure reveals where model needs refinement. |
+| **Origin** | promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_QM_00081 — Entry 81 (delta_S)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00081` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00066` |
+| **VVV Concept** | delta_S — Theoretical Distinguishability |
+| **QM Node** | Internal |
+| **QM Concept** | VVV-QMRF internal — QM has no "deviation from itself" metric |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00066 → VVV internal formalism |
+| **Relation Type** | registration_layer_extension_of |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.90 (RCA 4.5/5) |
+| **Boundary Note** | delta_S is VVV-QMRF internal theoretical metric with no Standard QM analogue. Computable for any setup without data. Defines maximum possible signal — if below detection threshold, K9_E is unfalsifiable. delta_M3 = -0.223 at beta=0.3 (11× amplification). |
+| **Rationale** | beta alone has no experimental meaning without mapping to observable signature. delta_S provides that operational bridge. |
+| **Origin** | promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_QM_00082 — Entry 82 (00056 DRAFT→ACTIVE)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00082` |
+| **Type** | new_bridge_promotion |
+| **Promotion** | DRAFT→ACTIVE (supersedes BR_EX_QM_DRAFT_00075) |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00056` |
+| **VVV Concept** | Delayed-Choice Registration Boundary |
+| **QM Node** | `N_QM_00102` |
+| **QM Concept** | Measurement Reversal |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00056 → N_QM_00102 |
+| **Relation Type** | physical_substrate_for |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.88 (C2 audit 4.4/5; re-verified 5.0/5) |
+| **Boundary Note** | K-side window-locking rule, not retrocausal physical reversal. Generalizes N_QM_VVV_00024 to full E18 postulate Lock(C_f, S, {W_i}) → W_valid. |
+| **Rationale** | Generalized E18 Lock rule inherits N_QM_00102 from N_QM_VVV_00024 (BR_EX_QM_00026). Promoted from BR_EX_QM_DRAFT_00075. |
+| **Origin** | C2 draft → promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_QM_00083 — Entry 83 (00057 DRAFT→ACTIVE)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00083` |
+| **Type** | new_bridge_promotion |
+| **Promotion** | DRAFT→ACTIVE (supersedes BR_EX_QM_DRAFT_00076) |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00057` |
+| **VVV Concept** | Sorting-Conditioned Registration Subset |
+| **QM Node** | `N_QM_00029` primary; `N_QM_00051`; `N_QM_00033` |
+| **QM Concept** | Weak Value (post-selection) + Composite Observables + No-Result Measurement |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00057 → N_QM_00029 / N_QM_00051 / N_QM_00033 |
+| **Relation Type** | physical_substrate_for |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.86 (C2 refined 4.3/5; re-verified 5.0/5) |
+| **Boundary Note** | Sorting/coincidence is a condition for valid registration subset, not new QM law. Multi-anchor: N_QM_00029 (post-selection), N_QM_00051 (composite), N_QM_00033 (null exclusion). |
+| **Rationale** | Scully-Drühl branch requires explicit sorting S. Weak measurement post-selection provides physical analogue. Promoted from BR_EX_QM_DRAFT_00076. |
+| **Origin** | C2 draft → promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+### BR_EX_QM_00084 — Entry 84 (00059 DRAFT→ACTIVE)
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00084` |
+| **Type** | new_bridge_promotion |
+| **Promotion** | DRAFT→ACTIVE (supersedes BR_EX_QM_DRAFT_00077) |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00059` |
+| **VVV Concept** | Decoherence-Induced Registration Update |
+| **QM Node** | `N_QM_00095` |
+| **QM Concept** | Decoherence & Environment as Measurement |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00059 → N_QM_00095 |
+| **Relation Type** | registration_layer_extension_of |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.92 (C2 audit 4.6/5; re-verified 5.0/5) |
+| **Boundary Note** | Decoherence remains Standard QM support; VVV adds only registration-state update semantics. T6 preserves K3 intrinsic certification while adding decoherence-induced update pathways. |
+| **Rationale** | T6 isolates registration-layer update caused by decoherence support. N_QM_00095 is the canonical QM substrate. Promoted from BR_EX_QM_DRAFT_00077. |
+| **Origin** | C2 draft → promote_new_bridge RCA gate 2026-05-23; `reviews/rca_promote_new_bridge_batch_2026_05_23.md` |
+
+---
+
+## C2 Current-Core Draft Rho-Side Candidates (2026-05-22; superseded by active 00082–00084)
 
 > **Status boundary:** These entries are draft-only candidate rows for the current 55-node Core snapshot. They do not count as active `BR_EX_QM` coverage, do not change the 74 active-entry baseline, and must pass a later boundary audit before any active registry promotion.
 
