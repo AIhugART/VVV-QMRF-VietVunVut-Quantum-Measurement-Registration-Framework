@@ -1280,6 +1280,44 @@ Modified Bong at **α = 31°**: same azimuthal angles, same μ, same N. Only cha
 
 ---
 
+## 24. K9-S12 — Modified Bong Protocol Proposal — 2026-05-23
+
+### 24.1 Proposal Summary
+
+A **single waveplate change** (re-insert QWP) to the Bong apparatus enables simultaneous testing of K9\_E and Genuine LF violation.
+
+### 24.2 Optimal Parameters (re-optimized for α=31°)
+
+| Parameter | Standard Bong | Modified Bong |
+|---|---|---|
+| Superobserver θ | 90° (equatorial) | **31° (tilted)** |
+| φ₂ | 0° | **112°** |
+| φ₃ | 118° | **217°** |
+| β | 175° | **20°** |
+
+Re-optimization: coarse scan (13,824 configs) + fine-tuning → FOM = **8.6** (up from 6.0).
+
+### 24.3 Predicted Results (μ=0.95, β\_K9=0.3)
+
+| Metric | Value | Significance |
+|---|---|---|
+| Gen LF 1 | +0.089 | **8.6σ** ✅ |
+| δ⟨A₁B₂⟩ | −0.036 (4.1% shift) | **20.8σ** ✅ |
+| N required | 91,000/setting | Same as Bong ✅ |
+
+### 24.4 Key Features
+
+- **Physical change:** Re-insert QWP after BD2. No new hardware.
+- **Sensitivity:** Even β\_K9 = 0.1 detectable at 6.6σ.
+- **Decision table:** 4 outcomes (QM confirmed, K9\_E constrained, K9\_E supported, systematic error).
+- **Null check:** Non-mixed settings (2,2), (2,3), (3,2), (3,3) should match QM exactly.
+
+### 24.5 Files
+- [K9S12_modified_bong_proposal.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S12_modified_bong_proposal.md) — Full proposal.
+- [K9S12_proposal.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/K9S12_proposal.py) — Optimization + prediction script.
+
+---
+
 ## Resolved Historical Open Items Moved from v2.0 Main Document
 
 

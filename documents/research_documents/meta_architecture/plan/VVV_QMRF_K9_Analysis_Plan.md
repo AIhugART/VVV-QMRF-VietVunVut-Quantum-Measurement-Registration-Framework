@@ -1088,28 +1088,35 @@ Bottleneck is ALWAYS the LF significance, not K9_E.
 
 ---
 
-## K9-S12: Modified Bong Protocol Proposal (PENDING)
+## K9-S12: Modified Bong Protocol Proposal (COMPLETE -- 2026-05-23)
 
 **Goal:** Design a complete experimental proposal for testing K9_E using a
 modified Bong protocol with tilted superobserver measurement basis.
 
-**Foundation (from K9-S11 chain):**
+**RESULT: PROPOSAL COMPLETE. Single waveplate change from standard Bong.**
+
 ```
-EXPERIMENT PARAMETERS:
-  Superobserver polar angle:  alpha = 31 deg (NOT 45 or 60)
-  Azimuthal angles:           phi_1=168, phi_2=0, phi_3=118, beta=175 (unchanged)
+OPTIMAL PARAMETERS (re-optimized for alpha=31):
+  Superobserver polar angle:  alpha = 31 deg
+  Azimuthal angles:           phi_2=112, phi_3=217, beta=20 (RE-OPTIMIZED)
   State:                      rho_mu with mu >= 0.95
   Coincidences:               N = 91,000 (Bong-level, sufficient)
 
-EXPECTED RESULTS (mu=0.95, beta_k9=0.3):
-  Gen LF 1 = +0.062 (6.0sigma) -> Genuine LF VIOLATED
+PREDICTED RESULTS (mu=0.95, beta_k9=0.3):
+  Gen LF 1 = +0.089 (8.6sigma) -> Genuine LF VIOLATED
   delta<A1B2> = -0.036 (20.8sigma) -> K9_E DETECTABLE
   BOTH with Bong-level statistics.
+  FOM = min(8.6, 20.8) = 8.6 (vs 6.0 with Bong angles)
+
+PHYSICAL CHANGE:
+  Re-insert QWP after BD2 for settings 2/3 (currently removed).
+  Same source, same state, same statistics. No new hardware.
   
-UNIVERSAL THEOREM (why standard Bong cannot test K9_E):
-  z-Friend + equatorial-Superobserver -> f_perp = 1/2 constant
-  -> marginalization cancellation -> K9_E = QM
-  Proven algebraically: f_perp diff = -cos(theta), vanishes at theta=pi/2.
+SENSITIVITY:
+  beta_k9=0.1 -> 6.6sigma (detectable)
+  beta_k9=0.3 -> 20.8sigma (strong)
+  beta_k9=0.5 -> 34.9sigma (very strong)
 ```
 
-**Prerequisite:** K9-S11d COMPLETE ✅
+**Output:** `k9_analysis/K9S12_modified_bong_proposal.md` + `fits/K9S12_proposal.py`
+
