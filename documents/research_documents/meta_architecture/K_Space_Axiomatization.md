@@ -45,7 +45,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 > - Data fitting in those documents is CIRCULAR (reconstructed data, not extracted)
 > - Two code implementations use different formulas
 >
-> See `CHANGELOG.md` §17 for full audit record.
+> See `CHANGELOG.md` §17 and §18 for full audit and prediction records.
 
 | Content type | Present in this document? | Where it exists (if anywhere) |
 |---|---|---|
@@ -1170,10 +1170,10 @@ F-T7-01 (T5 dependency):
 | 10 | Update paper v2.0 Section 7.2 deferred item #5 status | After community feedback on this document | Low |
 | 11 | RCA re-audit after community feedback | After Level 4 freeze and T1-T3 finalization | High |
 | 12 | `CHANGELOG.md` §3.3 Operational Bridge semantic dependency on K4-K7 untracked | `CHANGELOG.md` §3.3 lists 7 sufficient-condition bridges (Condition A, B, B2, C, D, E, ODC_K) for raising `requires_K_joint`. The verdict notes B, B2, and ODC_K have indirect semantic dependency on K4-K7 validity propagation, but the table does not annotate which K-axioms each Condition row depends on. Add K-axiom dependency annotations (e.g., K4, K5, K7) to each §3.3 Condition row. Note: the predicate-level mapping (σ, V, ⊥, Auth, D_joint, requires_K_joint, C_K → K-axioms) is a separate task belonging to Layer 4 §4.4, not to §3.3. | Medium |
-| 13 | **Probability postulate (K9/P9)** | K-space axioms K1-K8 are purely structural — they define no probability rule. A probability assignment postulate (K9 or P9) is required to connect K-space to measurable predictions. K9_E exists in `plan/Phase8` as a POSTULATE but is not part of this axiomatization. Must be formally stated as a Layer 1 postulate or Layer 2 bridge theorem if K-space is to make quantitative predictions. | **Critical** |
-| 14 | **Non-circular data comparison** | Phase 10 data fitting used reconstructed data (`E_exp = V_exp · E_QM`, not extracted from Proietti Figure 3). This guarantees β=0 by construction. A genuine comparison requires extracting individual ⟨A_xB_y⟩ values from experimental figures or supplementary data tables. | **Critical** |
-| 15 | **Code consistency** | Two Python implementations of K9_E use different approximation formulas: `k9e_predictor.py` (δ = β²·E/n²) vs `d1_blk1_4point_fit.py` (δ = β·0.146·E). Neither rigorously computes the full K9_E probability rule for CHSH correlators. Must resolve to one correct implementation. | High |
-| 16 | **Numerical predictions in main document** | This document contains zero numerical values, zero computed predictions, zero graphs or result tables. If K-space is to be a testable framework, at minimum one numerical prediction must be stated in the axiomatization (or a formal companion document) with explicit comparison to experiment. | **Critical** |
+| 13 | **Probability postulate (K9/P9)** | **Partially Addressed** — K9-S8 defines joint probability composition law ($P9-JC$) for two observers, proving Marginalization Cancellation. However, it remains a postulate rather than derived from K1-K8. Full Layer 1 or Layer 2 formal integration in this document is still pending. | **Critical** |
+| 14 | **Non-circular data comparison** | **Ongoing** — Known that marginal CHSH correlators cannot test the deviation due to Marginalization Cancellation. A genuine non-circular comparison requires extracting individual conditional correlators or joint outcome histograms from Proietti Figure 3 raw data. | **Critical** |
+| 15 | **Code consistency** | **Addressed (fits/K9S9)** — Formalized and implemented the exact P9-JC conditional prediction engine (`K9S9_conditional_predictions.py`), achieving 11% deviation at beta=0.3. Approximations in `k9e_predictor.py` and `d1_blk1_4point_fit.py` are deprecated. | High |
+| 16 | **Numerical predictions in main document** | **Ongoing** — First genuine numerical predictions generated in `plan/k9_analysis/K9S9_conditional_predictions.md`. Stating them formally in this main document is pending community review. | **Critical** |
 
 ---
 

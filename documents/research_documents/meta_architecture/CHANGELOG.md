@@ -1053,6 +1053,40 @@ K9_E = Postulate P9 (Type B framework extension)
 
 ---
 
+## 18. Joint Probability Composition Law & First Numerical Predictions (K9-S8 & K9-S9)
+
+*2026-05-23 — VVV-QMRF §K9-S8-S9*
+
+### 18.1 Composition Law Candidate (K9-S8)
+We formalized a composition law candidate for two observers ($o_F$, $o_W$) without requiring a general category-theoretic colimit proof ($T4-H$ proof):
+- **Conditional probability formulation ($P9-JC$):**
+  $$P(o_F = x, o_W = y \mid K_F, K_W) = \frac{\operatorname{Tr}(E_{o_F} \otimes E_{o_W} \cdot \rho) \cdot [1 - \beta \cdot f_\perp(o_F, o_W, K_{\text{ctx}})]}{Z}$$
+  if $K_{\text{joint}}$ is defined (i.e. $\perp_K$ does not fire).
+  If $K_{\text{joint}}$ is undefined ($\perp_K$ fires between $K_F$ and $K_W$), the joint probability is **UNDEFINED** (registration incommensurability).
+
+### 18.2 Marginalization Cancellation Theorem
+We mathematically proved the **Marginalization Cancellation Theorem** under $P9-JC$:
+- When summing over one observer's outcomes, the first-order perturbation term $f_\perp$ cancels out exactly due to symmetric alignment under uniform $V$-reconstruction.
+- **Consequence:** The 2-observer marginal joint probability $P(o_F, o_W)$ matches standard Quantum Mechanics exactly for **ALL** values of $\beta$.
+- **Critical conclusion:** The standard marginal Bell/CHSH inequality tests (like Proietti 2019's marginal correlators) **CANNOT** distinguish $K9_E$ from standard QM. Only **conditional correlators** (e.g. $\langle B \mid o_{FA} = +1 \rangle_{K9E}$) can test the suppression.
+
+### 18.3 First Genuine Numerical Predictions (K9-S9)
+Using the newly defined conditional correlators, we ran the first genuine numerical predictions:
+- **Baseline ($\beta=0.3$, $x=1$ BSM case):**
+  - $\langle B \mid o_{FA} = +1 \rangle_{K9E} = -0.7856$
+  - Standard QM = $-0.7071$
+  - Absolute deviation $\delta = -0.0784$ (an **11.09% deviation** from standard QM).
+- **Control ($\beta=0.3$, $x=0$ projective case):**
+  - $\delta = 0$ exactly (as expected, no suppression occurs when no incommensurability is triggered).
+- **Normalization:** $\sum P = 1.0$ holds perfectly across all scenarios.
+
+### 18.4 Files Created/Modified
+- [K9S8_composition_law.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S8_composition_law.md) — Mathematical formalization of the composition law and Marginalization Cancellation proof.
+- [K9S9_conditional_predictions.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/plan/k9_analysis/K9S9_conditional_predictions.md) — Numerical predictions and verification results.
+- [K9S9_conditional_predictions.py](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/fits/K9S9_conditional_predictions.py) — Prediction engine executing the exact formulas (ASCII only).
+
+---
+
 ## Resolved Historical Open Items Moved from v2.0 Main Document
 
 

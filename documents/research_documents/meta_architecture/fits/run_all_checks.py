@@ -21,7 +21,10 @@ for cid in sorted(all_results.keys()):
     status = info["status"]
     if status != "PASS":
         all_pass = False
-    print(f"  CHECK {cid}: {status:4s}  {info['description']}")
+    desc = info["description"]
+    desc = desc.replace("→", "->").replace("√", "sqrt").replace("β", "beta").replace("≠", "!=").replace("Σ", "Sum").replace("δ", "delta")
+    desc = desc.encode("ascii", errors="replace").decode("ascii")
+    print(f"  CHECK {cid}: {status:4s}  {desc}")
     if status == "FAIL":
         print(f"           Expected: {info['expected']}")
         print(f"           Computed: {info['computed']}")
