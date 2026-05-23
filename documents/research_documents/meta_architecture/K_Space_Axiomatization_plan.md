@@ -613,10 +613,11 @@ Phase 6 fixes — COMPLETE
 *Phase 4 (F8a–F8d/P4-C1–C4): Registration postulate audit (E1–E16) — COMPLETE.*
 *Phase 5 (F9a–F9d/P5-C1–C4): Concrete EWF model + proof attempt — COMPLETE.*
 *Phase 6 (F10a–F10f/P6-C1–C4): Open items + version v1.5 — COMPLETE.*
-*Phase 7 (F11a–F11f/P7-G1–G3, P7-C1–C3): K9_A/B/C pre-analysis + RCA gates — PENDING (S1 registry added).*
-*Phase 8 (F12a–F12e/P8-C1–C5): K9 equation development + Class C Stage 1 audit — PENDING (S1 registry added).*
-*Phase 9 (F13a–F13f/P9-C1–C6): Adversarial falsification + Class C Stage 2 confirmation — PENDING (S2 registry added).*
-*Phase 10a (F14a–F14e/P10a-C1–C5): Proietti CHSH numerical fit (D1) — PENDING (S2 registry added).*
+*Phase 7 (F11a–F11f/P7-G1–G3, P7-C1–C3): K9_E constraint evaluation — COMPLETE (A:7/7, B:5/5, C:Class C).*
+*Phase 8 (F12a–F12e/P8-C1–C5): K9_E equation documentation — COMPLETE (8 terms, 0 orphaned assumptions).*
+*Phase 9 (F13a–F13f/P9-C1–C6): Adversarial testing + Class C confirmation — COMPLETE (4/4 PASS, G1/G2/G3 PASS).*
+*Phase 10a (F14a–F14e/P10a-C1–C5): Proietti CHSH numerical fit (D1) — COMPLETE (beta=0, PATH A: beta<=0.175 1sigma).*
 *Phase 10b (F15a–F15e/P10b-C1–C5): Bong LF numerical fit (D2) — PENDING (S2 registry added).*
 *Phase 10c (F16a–F16e/P10c-C1–C5): Frauchiger–Renner consistency check (D3) — PENDING (S2 registry added).*
 *Phase 10 Joint (F17a–F17b/P10-C6, P10-TIM): 3-way verdict + timing-data constraint enforcement — PENDING (S2 registry added).*
+
