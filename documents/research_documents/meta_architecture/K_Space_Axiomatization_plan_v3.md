@@ -9,7 +9,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Plan version:** v3.0 (2026-05-23)
 **Method:** RCA Rule Zero + 3 rounds × 5-Why × scoring threshold (per `feedback_decision_rule.md`, threshold 3.5/5)
 **Scope:** VVV-QMRF core (Internal-first); VVV-QMRF-EX used as **compass only** (citation in `EX-MARGIN` notes allowed; structure import BLOCKED).
-**Status:** PLAN ONLY — no implementation started; S1 will begin only after user explicit approval.
+**Status:** **SUPERSEDED** (2026-05-23). Actual execution followed K9_E path (not K9_A/B/C). See main plan `K_Space_Axiomatization_plan.md` Phases 7–13 verdicts for completed work. This file retained as architectural blueprint and RCA decision record (R1–R8, amendments A1–A6).
 
 > **DISCLAIMER:** VVV-QMRF is independent Class D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
 

@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Target:** `documents/research_documents/meta_architecture/K_Space_Axiomatization.md`
 **Audit version:** v1.4 (2026-05-19)
-**Plan version:** v25 (2026-05-19)
+**Plan version:** v28 (final) (2026-05-23)
 **Method:** 3 rounds × 5-Why × scoring threshold (per `feedback_decision_rule.md`)
 **Scope:** K1-K8 core axioms (Layer 1) + T1-T4 bridge theorems (Layer 2) + audit matrices + concrete EWF model
 
@@ -130,7 +130,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-## Phase 5 — Concrete Model & Proof Attempt [IN PROGRESS]
+## Phase 5 — Concrete Model & Proof Attempt [COMPLETE]
 
 ### Issue Registry
 
@@ -160,7 +160,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-## Phase 7 — Physics Constraints Identification + RCA Gates (K9_A/B/C Pre-Analysis) [PENDING]
+## Phase 7 — Physics Constraints Identification + RCA Gates (K9_E Evaluation) [COMPLETE]
 
 **Scope:** Evaluate K1–K8 + three pre-proposed K9 candidate bridge axioms (K9_A/B/C) for hard constraints. Three RCA gates (P7-G1/G2/G3) + three constraint categories (P7-C1/C2/C3).
 
@@ -192,7 +192,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ---
 
-## Phase 8 — Candidate Equation Generation + Class C Audit [PENDING]
+## Phase 8 — Candidate Equation Generation + Class C Audit [COMPLETE]
 
 **Scope:** Develop detailed forms of K9 candidate(s) passing Phase 7 C3. Full term-by-term derivation, Born rule limit verification, Class C eligibility audit (P8-C5 Stage 1 of 2).
 
@@ -249,7 +249,7 @@ Phase 7–8 → Phase 9 Gate
 
 ---
 
-## Phase 9 — Adversarial Falsification + Class C Confirmation (Stage 2) [PENDING]
+## Phase 9 — Adversarial Falsification + Class C Confirmation (Stage 2) [COMPLETE]
 
 **Scope:** Falsify each K9 candidate that passed Phase 8 P8-C5 (Class C eligible). 4 adversarial tests + ranking + Stage 2 Class C confirmation (compound gate per RCA R3 4.7/5).
 
@@ -281,7 +281,7 @@ Phase 7–8 → Phase 9 Gate
 
 ---
 
-## Phase 10 — Multi-paper Data Fit (M5 — D1/D2/D3 Equally Binding) [PENDING]
+## Phase 10 — Multi-paper Data Fit (M5 — D1/D2/D3 Equally Binding) [COMPLETE]
 
 **Scope:** Numerical fit of selected K9 (Phase 9 Rank 1) against three primary data sources. Python venv + scipy least-squares + χ². RCA R4 4.7/5: omit N0 null model (timing data unavailable); two-way (VVV vs QM) comparison only.
 
@@ -331,7 +331,7 @@ Phase 7–8 → Phase 9 Gate
 | F15d | P10b-C4 Standard QM comparison | HIGH | Compare K9 LF vs QM LF; report Δχ². |
 | F15e | P10b-C5 cross-consistency | HIGH | Compare D1 best-fit params vs D2 best-fit params. Document agreement (within 1σ) or disagreement (RCA mismatch root cause). |
 
-### Phase 10c — Frauchiger–Renner Consistency Check (D3, Theoretical) [PENDING]
+### Phase 10c — Frauchiger–Renner Consistency Check (D3, Theoretical) [COMPLETE]
 
 #### Issue Registry — Phase 10c
 
@@ -459,7 +459,9 @@ Phase 10 → Phase 11 Gate
 | P9-C3 | 4.5/5 | HIGH | **PASS** — delta_S != 0 (Class C) |
 | P9-C4 | 5.0/5 | MEDIUM | **PASS** — Born recovery confirmed |
 | P9-C5 | 5.0/5 | MEDIUM | **COMPLETE** — K9_E Rank 1 |
-| P9-C6 | 5.0/5 | HIGH | **PASS** — Class C confirmed |
+| P9-C6 | 5.0/5 | HIGH | **PASS** — Class C confirmed (structural). See §Final Verdict for Phase 10→9 empirical feedback: beta=0 best-fit qualifies this verdict. |
+
+> **Phase 10→9 Feedback (2026-05-23 RCA Round 2):** P9-C6 "Class C confirmed" reflects derivational + operationalizability + adversarial criteria only. Phase 10a empirical result (beta=0 best-fit, PATH A: beta ≤ 0.175 at 1σ) means K9_E is **structurally Class C but empirically indistinguishable from Standard QM at current experimental precision**. Class C status is therefore **qualified** — confirmed in theoretical structure, pending experimental confirmation via 3-observer prediction (delta_M3 = -0.223, 11x amplification). See §Final Verdict for full synthesis.
 
 ### Phase 10a — Proietti CHSH (COMPLETE — PATH A upgraded)
 
@@ -625,3 +627,69 @@ Phase 6 fixes — COMPLETE
 *Phase 10c (F16a–F16e/P10c-C1–C5): Frauchiger–Renner consistency check (D3) — COMPLETE (contradiction AVOIDED via K5).*
 *Phase 10 Joint (F17a–F17b/P10-C6, P10-TIM): 3-way verdict — COMPLETE (all consistent, N0 omitted per R4).*
 
+---
+
+## §Final Verdict — Class C vs Class D (3-Round RCA, 2026-05-23)
+
+**Method:** 3 rounds × 5-Why × scoring threshold 4/5. VVV-QMRF scope, VVV-QMRF-EX as compass only.
+
+### Round 1 — Derivational Purity: K9_E có thực sự derive từ K1–K8 không?
+
+| Tiêu chí | Điểm | Nhận xét |
+|----------|------|----------|
+| Term traceability | 5.0/5 | 8/8 terms traced to K1–K8 |
+| Zero orphaned assumptions | 3.0/5 | **ASSUMPTION A1 (Class D):** K5 prospective firing on hypothetical `k_o^*` — semantic jump from K5 post-hoc definition. Requires upgrade to axiom text in K9_E. |
+| K1–K8 consistency | 4.5/5 | No contradiction, prospective K5 not yet justified |
+| Mathematical rigor | 4.5/5 | Equation well-formed, Born limit exact |
+
+**Round 1 Score: 4.25/5** — PASS (≥4/5). Derivational rigor high; A1 is known and documented gap.
+
+**Required action — A1 upgrade:** K5 was designed for post-hoc invalidation (actual tuples). Probability equation needs prospective evaluation (hypothetical `k_o^*`). A1 must be promoted from "semantic extension" footnote to explicit axiom text in K9_E derivation: `K5_prospective: K5 fires on hypothetical tuple k_o^* iff requires_K_joint=1 ∧ ∃ k_prev ∈ K_joint such that k_o^* ⊥ k_prev within C_K.` Until A1 is upgraded to axiom text, K9_E carries one Class D assumption.
+
+### Round 2 — Empirical Evidence: Dữ liệu có phân biệt K9_E với Standard QM không?
+
+| Tiêu chí | Điểm | Nhận xét |
+|----------|------|----------|
+| D1 Proietti CHSH | 3.5/5 | beta=0 best-fit, PATH A upper bound 0.175 (1σ) — không loại trừ K9_E nhưng không xác nhận |
+| D2 Bong LF | 2.0/5 | INVALIDATED (K9-S8 Marginalization Cancellation) — LF marginals = QM exactly, D2 không phải test phù hợp |
+| D3 FR consistency | 5.0/5 | K9_E structurally AVOIDS FR paradox — real non-QM structural feature |
+| 3-observer prediction | 4.0/5 | delta_M3 = -0.223 at beta=0.3 (11x amplification) — distinguishability có thực, chưa có experiment |
+
+**Round 2 Score: 3.63/5** — FAIL (<4/5). Dữ liệu hiện tại không phân biệt được K9_E với Standard QM. Nhưng prediction 3-observer tồn tại và testable.
+
+### Round 3 — Synthesis: Class C hay Class D?
+
+| Tiêu chí | Điểm | Nhận xét |
+|----------|------|----------|
+| Structural distinguishability | 4.5/5 | δS ≠ 0, FR avoided, Copenhagen/MWI = special cases |
+| Operationalizability | 5.0/5 | Gates G1/G2/G3 PASS |
+| Adversarial survival | 5.0/5 | 4/4 tests PASS |
+| Empirical confirmation | 3.0/5 | beta=0 best-fit, signal below detection |
+| Testability roadmap | 4.0/5 | 3-observer experiment defined, 11x amplification predicted |
+
+**Round 3 Score: 4.30/5** — PASS (≥4/5).
+
+### Aggregate: 4.06/5 — PASS
+
+### Final Classification
+
+**VVV-QMRF K9_E = Class C (qualified) — structurally testable, empirically pending.**
+
+> K9_E đạt Class C về mặt cấu trúc: equation derivable từ K1–K8, tạo distinguishability ≠ Standard QM (δS ≠ 0 khi β > 0), tránh FR paradox qua K5 V_prov, reduce Copenhagen/MWI thành special case. Điều kiện kèm theo:
+>
+> 1. **A1 upgrade (required):** K5 prospective firing phải được promote từ "semantic extension" → axiom text trong K9_E derivation. Đến khi upgrade hoàn tất, K9_E mang 1 Class D assumption.
+> 2. **Phase 10→9 feedback (applied):** P9-C6 "Class C confirmed" đã được bổ sung cross-reference ghi nhận beta=0 empirical limitation (see Phase 9 verdict note).
+> 3. **3-observer experiment (future):** Xác nhận hoặc bác bỏ empirical distinguishability đòi hỏi experiment đo delta_M3 = -0.223 (11x amplification). Cho đến khi có, Class C là **structural claim, empirically pending**.
+
+### Decision Record
+
+| # | Decision | Rationale |
+|---|----------|-----------|
+| D1 | Class C (qualified), not unqualified Class C, not Class D | Structural distinguishability confirmed (Round 1 + 3 ≥ 4/5); empirical distinguishability pending (Round 2 < 4/5) |
+| D2 | Binary Class C/D insufficient | VVV-QMRF occupies genuine intermediate position — like many beyond-Standard-Model theories that reduce to SM in currently-accessible regimes |
+| D3 | A1 upgrade is prerequisite for unqualified Class C | Post-hoc → prospective K5 firing is semantic gap, not derivable from K1–K8 alone |
+| D4 | 3-observer experiment is next-goal empirical test | 11x amplification over 2-observer; prediction ready; experimental design deferred to future work |
+
+---
+
+*Plan v28 (final) — 2026-05-23. 3-Round RCA Final Verdict applied. Phase 1–13 COMPLETE. §Final Verdict added with Class C (qualified) determination. A1 upgrade + 3-observer experiment = remaining gates for unqualified Class C.*
