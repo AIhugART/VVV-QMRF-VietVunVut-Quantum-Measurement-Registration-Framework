@@ -200,6 +200,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | How does T8 bridge K5_prospective → K9_E? | [T8 + H1–H4 in K_Space_Axiomatization.md](01_axiomatization/K_Space_Axiomatization.md) (Layer 2) |
 | Where is the K9_E origin investigation? | [RCA K9_E Origin Investigation](04_governance/rca_k9e_origin_investigation.md) |
 | How is P10-NOISE noise sensitivity analyzed? | [RCA Methodology Decision](04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md) + [Spec](07_fits/noise_sensitivity_analysis_spec.md) |
+| How was phi-map K→B(H) resolved (RCA)? | [RCA Phi-Map Round 1](04_governance/RCA_phi_map_round1_structural_audit.md) → [Round 2](04_governance/RCA_phi_map_round2_structural_resolution.md) → [Round 3 Decision](04_governance/RCA_phi_map_round3_final_decision.md) |
 
 ### Folder Index
 
@@ -209,7 +210,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | `01_axiomatization/` | K_Space_Axiomatization.md + K->BH map + meta-architecture documents | 10 |
 | `02_derivation_chain/` | Phase 7–13 deliverables + supporting analyses + v29 RCA | 19 |
 | `03_k9_sprints/` | K9 analysis chain (S1–S12) + K9 analysis plan | ~22 |
-| `04_governance/` | Master plan v28 + v3 SUPERSEDED + CHANGELOG + decisions + pre-plan | ~16 |
+| `04_governance/` | Master plan v28 + v3 SUPERSEDED + CHANGELOG + decisions + pre-plan + RCA reports | ~19 |
 | `05_ex_compass/` | VVV-QMRF-EX snapshot (compass reference, not structure import) | ~65 |
 | `06_references/` | VVV-QMRF core terminology + bridge documents | 8 |
 | `07_fits/` | Python reproduction scripts + utils/ module + SOT data + requirements.txt | 18 |

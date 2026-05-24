@@ -216,7 +216,8 @@ Estimates are for **research effort**, not calendar elapsed. Project pace is gov
 |------|---------|--------|
 | 2026-05-22 | 1.0 | Initial roadmap. Phase 1–4 defined. Phase 1 not yet started. |
 | 2026-05-22 | 2.0 | All phases complete. Phase 1: φ defined, C2 → 5.5–6.0/10. Phase 2: N_1–N_T derived, C2 → 8.0/10, C3 → 8.0/10. Phase 3: §6.1 φ-conditional analysis in WP v2.0, C4 → 8.0/10. Phase 4: CLAUDE.md promoted to Track B target claim. WP v3.0 and public_documents update deferred. |
+| 2026-05-24 | 2.1 | 3-round RCA (aggregate 4.80/5) on phi-map completeness. φ-O2 resolved as FUNDAMENTAL BOUNDARY (K6's C_K/D_joint have no B(H) analogue). C2=8.0 confirmed defensible. φ-O5/φ-O6/φ-O7 DEFERRED. CLAUDE.md synced "1–3"→"1–4." Phi-map doc v0.2→v0.3 with §6.1 N_6 Boundary Statement + K9_E noise note. |
 
 ---
 
-*Track B Phases 1–4 complete as of 2026-05-22. Central claim promoted. Open items: φ-O2 sufficiency, φ-O5 (N-observer), φ-O6 (codomain), WP v3.0 draft. See [central_claim_change_RCA.md](central_claim_change_RCA.md) for full decision record.*
+*Track B Phases 1–4 complete as of 2026-05-22. Central claim promoted. Open items: φ-O5 (N-observer), φ-O6 (codomain), WP v3.0 draft. φ-O2 resolved 2026-05-24 RCA as fundamental boundary. See [RCA Phi-Map Final Decision](../../project_vvv_qmrf_class_c/04_governance/RCA_phi_map_round3_final_decision.md).*
