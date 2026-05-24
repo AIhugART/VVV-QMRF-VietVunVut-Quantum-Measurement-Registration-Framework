@@ -3,7 +3,7 @@
 # Anti-Hallucination System â€” VVV-QMRF
 
 **System name:** VVV-QMRF Anti-Hallucination Pipeline (AHP)
-**Version:** v1.5 (2026-05-24)
+**Version:** v1.6 (2026-05-24 16:22 UTC+7)
 **Scope:** VVV-QMRF (toan bo cac layer: K1-K8 axioms, T1-T8 bridge theorems, K9_E postulate, E1-E16 postulates, BE-QM mapping, Class C/D data analysis)
 **Compass:** VVV-QMRF-EX (intelligence only, no structure import)
 **Method:** 3-Round RCA x 5-Why x scoring threshold 4/5
@@ -83,7 +83,7 @@ Claim / Component / Term moi            |
 
 | File | Role | Khi nao dung | Input | Output |
 |------|------|-------------|-------|--------|
-| `00_top_10_hallucinations_record.md` | Danh sach uu tien cao nhat | Moi tuan (re-audit) + khi co component moi | Toan bo VVV-QMRF components | Top 10 risk ranking (Risk Score) |
+| `00_top_10_hallucinations_record.md` | Danh sach uu tien cao nhat (Dual-Table: Class C + Full Scope) | Moi tuan (re-audit) + khi co component moi | Toan bo VVV-QMRF components | Top 10 risk ranking (Risk Score), 2 tables, Shared Component Rule |
 | `01_early_warning.md` | Canh bao som | Moi khi co claim/term moi, hoac review dinh ky | Claim text, component description | Signal match (Y/N) + severity |
 | `02_detection.md` | Phat hien & truy vet | Khi co trigger tu early warning | Component list | Inventory table + phan loai nguon goc |
 | `03_sot_traceability.md` | Truy vet SOT | Sau khi inventory (tra cuu anchor) | Component ID | Trace score + SOT links |
@@ -157,7 +157,8 @@ CLAUDE.md (Rule Zero)
 |---------|------|---------|
 | v1.0 | 2026-05-24 | Initial release â€” 9-file pipeline, 3-round RCA verified |
 | v1.5 | 2026-05-24 | Added 4 RCA detail reports: P10-NOISE (4.67/5, BLOCKING GATE), K9E-PAT (4.50/5, UNTESTABLE), phi-map detailed status (4.67/5), why phi-map #1 (5-Whys). Top 10 record updated with RCA links and refined assessments. |
+| v1.6 | 2026-05-24 16:22 UTC+7 | Top 10 v1.3 Dual-Table restructure: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 3-Round RCA Classification Decision (4.83/5): 4 Class C exclusive + 4 Full exclusive + 2 Shared. Project field added. label_system.md synced. |
 
 ---
 
-*Anti-Hallucination Pipeline v1.5 â€” VVV-QMRF scope, VVV-QMRF-EX as compass. 3-Round RCA aggregate: 4.83/5 PASS (>= 4/5).*
+*Anti-Hallucination Pipeline v1.6 â€” VVV-QMRF scope, VVV-QMRF-EX as compass. 3-Round RCA aggregate: 4.83/5 PASS (>= 4/5).*

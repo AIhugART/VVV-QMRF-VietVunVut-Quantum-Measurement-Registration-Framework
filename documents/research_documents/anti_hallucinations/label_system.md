@@ -168,20 +168,37 @@ Nhan hien tai cho cac component chinh trong VVV-QMRF (2026-05-24):
 | C6 — T3-morphism | `[AH-LOW]` | — | — | `[AH-LOW]` |
 | C7 — T8 bridge | `[AH-OK]` | — | `[AH-DERIVED]` | `[AH-OK] [AH-DERIVED]` |
 
-### 4.2 Top 10 Risk Components
+### 4.2 Top 10 Risk Components (v1.3 — Dual-Table)
 
-| Rank | Component | Full Label |
-|------|-----------|------------|
-| **1** | [A-E3] beta universal | `[AH-WARN] [RS-CRIT] [AH-EX] [AH-WEAK]` |
-| **2** | T5 K_ctx | `[AH-WARN] [RS-CRIT] [AH-EX]` |
-| **3** | T4-H Steps 3-4 | `[AH-LOW] [RS-HIGH] [AH-DEFER]` |
-| **4** | P10-NOISE | `[AH-WARN] [RS-HIGH] [AH-NOISE] [AH-EX]` |
-| **5** | K9E-PAT | `[AH-WARN] [RS-MED]` |
-| **6** | phi-map K→B(H) | `[AH-WARN] [RS-HIGH] [AH-WEAK]` |
-| **7** | E1-E16 postulates | `[AH-LOW] [RS-LOW]` |
-| **8** | K9_E 2 implementations | `[AH-LOW] [RS-MED] [AH-DIVERGE]` |
-| **9** | K5_prospective | `[AH-WARN] [RS-MED]` |
-| **10** | P10-TIM N0 omitted | `[AH-LOW] [RS-LOW] [AH-LOCK]` |
+**Source:** `00_top_10_hallucinations_record.md` v1.3 (2026-05-24 16:22 UTC+7)
+
+**Table 1: VVV-QMRF Class C**
+
+| Rank | Component | Project | Full Label |
+|------|-----------|---------|------------|
+| **1** | phi-map K→B(H) | VVV-QMRF (Track B) | `[AH-WARN] [RS-HIGH] [AH-WEAK]` |
+| **2** | P10-NOISE | VVV-QMRF Class C | `[AH-WARN] [RS-HIGH] [AH-NOISE] [AH-EX]` |
+| **3** | T5 K_ctx | VVV-QMRF Full (feeds Class C) | `[AH-WARN] [RS-HIGH] [AH-EX]` |
+| **4** | T4-H Steps 3-4 | VVV-QMRF (Layer 2) | `[AH-LOW] [RS-HIGH] [AH-DEFER]` |
+| **5** | K9E-PAT | VVV-QMRF Class C | `[AH-WARN] [RS-MED]` |
+| **6** | K9_E 2 implementations | VVV-QMRF Class C | `[AH-LOW] [RS-MED] [AH-DIVERGE]` |
+| **7** | K5_prospective | VVV-QMRF Full (feeds Class C) | `[AH-WARN] [RS-MED]` |
+| **8** | E1-E16 postulates | VVV-QMRF (BE Layer) | `[AH-LOW] [RS-LOW]` |
+| **9** | P10-TIM N0 omitted | VVV-QMRF Class C | `[AH-LOW] [RS-LOW] [AH-LOCK]` |
+| **10** | BE↔QM cross-domain mapping | VVV-QMRF (BE-QM bridge) | `[AH-LOW] [RS-LOW]` |
+
+**Table 2: VVV-QMRF Full Scope**
+
+| Rank | Component | Project | Full Label |
+|------|-----------|---------|------------|
+| **1** | phi-map K→B(H) | VVV-QMRF (Track B) | `[AH-WARN] [RS-HIGH] [AH-WEAK]` |
+| **2** | T4-H Steps 3-4 | VVV-QMRF (Layer 2) | `[AH-LOW] [RS-HIGH] [AH-DEFER]` |
+| **3** | T5 K_ctx ◀ | VVV-QMRF Full (feeds Class C) | `[AH-WARN] [RS-HIGH] [AH-EX]` |
+| **4** | K5_prospective ◀ | VVV-QMRF Full (feeds Class C) | `[AH-WARN] [RS-MED]` |
+| **5** | E1-E16 postulates | VVV-QMRF (BE Layer) | `[AH-LOW] [RS-LOW]` |
+| **6** | BE↔QM cross-domain mapping | VVV-QMRF (BE-QM bridge) | `[AH-LOW] [RS-LOW]` |
+
+> ◀ = Shared component — appears in both tables with identical scores (Shared Component Rule).
 
 ### 4.3 Technical Debt Components (non-K9_E)
 
