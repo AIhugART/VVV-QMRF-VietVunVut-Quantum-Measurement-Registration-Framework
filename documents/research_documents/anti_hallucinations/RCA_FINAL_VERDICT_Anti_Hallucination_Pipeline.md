@@ -1,6 +1,6 @@
 ﻿Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# RCA Final Verdict — Anti-Hallucination Pipeline v1.2
+# RCA Final Verdict — Anti-Hallucination Pipeline v1.2 (Top 10 v1.1)
 
 **Date:** 2026-05-24
 **Method:** 3-Round RCA x 5-Why x scoring threshold 4/5
@@ -125,19 +125,19 @@ CLAUDE.md (Rule Zero)
 
 ---
 
-## 4. Top 10 Hallucination Risks — Final Verdict
+## 4. Top 10 Hallucination Risks — Final Verdict (updated v1.1)
 
 | Rank | Component | Risk Score | Label | Status |
 |------|-----------|------------|-------|--------|
 | 1 | [A-E3] beta universal | 22.5 | `[AH-WARN] [RS-CRIT] [AH-EX] [AH-WEAK]` | OPEN |
-| 2 | T5 K_ctx | 21.6 | `[AH-WARN] [RS-CRIT] [AH-EX]` | MONITORING |
-| 3 | T4-H Steps 3-4 | 18.0 | `[AH-LOW] [RS-HIGH] [AH-DEFER]` | DEFERRED |
-| 4 | P10-NOISE | 18.0 | `[AH-WARN] [RS-HIGH] [AH-NOISE] [AH-EX]` | OPEN |
-| 5 | K9E-PAT | 12.0 | `[AH-WARN] [RS-MED]` | OPEN |
-| 6 | phi-map K->B(H) | 18.0 | `[AH-WARN] [RS-HIGH] [AH-WEAK]` | OPEN |
-| 7 | E1-E16 | 9.6 | `[AH-LOW] [RS-LOW]` | MONITORING |
-| 8 | K9_E 2 implementations | 12.0 | `[AH-LOW] [RS-MED] [AH-DIVERGE]` | OPEN |
-| 9 | K5_prospective | 12.0 | `[AH-WARN] [RS-MED]` | MONITORING |
+| 2 | phi-map K->B(H) | 18.0 | `[AH-WARN] [RS-HIGH] [AH-WEAK]` | OPEN |
+| 3 | P10-NOISE | 18.0 | `[AH-WARN] [RS-HIGH] [AH-NOISE] [AH-EX]` | OPEN |
+| 4 | T5 K_ctx | 18.0 | `[AH-WARN] [RS-HIGH] [AH-EX]` | MONITORING |
+| 5 | T4-H Steps 3-4 | 18.0 | `[AH-LOW] [RS-HIGH] [AH-DEFER]` | DEFERRED |
+| 6 | K9E-PAT | 12.0 | `[AH-WARN] [RS-MED]` | OPEN |
+| 7 | K9_E 2 implementations | 12.0 | `[AH-LOW] [RS-MED] [AH-DIVERGE]` | OPEN |
+| 8 | K5_prospective | 12.0 | `[AH-WARN] [RS-MED]` | MONITORING |
+| 9 | E1-E16 | 9.6 | `[AH-LOW] [RS-LOW]` | MONITORING |
 | 10 | P10-TIM | 9.0 | `[AH-LOW] [RS-LOW] [AH-LOCK]` | DECISION-LOCKED |
 
 **0/10 components dat hallucination thuc su (9-10 diem).** 5/10 o Vang (speculative duoc flag). 5/10 o Xanh duong (conceptual extension).
@@ -216,4 +216,4 @@ CLAUDE.md (Rule Zero)
 
 ---
 
-*RCA Final Verdict — Anti-Hallucination Pipeline v1.2. 2026-05-24. 9 files, 87KB, 4.88/5 PASS.*
+*RCA Final Verdict — Anti-Hallucination Pipeline v1.2 (Top 10 v1.1). 2026-05-24. 9 files, 87KB, 4.88/5 PASS.*
