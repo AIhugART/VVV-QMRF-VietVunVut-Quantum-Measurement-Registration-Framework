@@ -68,7 +68,7 @@ f_perp(o₁, K_context) ≠ f_perp(o₂, K_context) in general
 | **C-NORM** | ✅ PASS | Z_E explicitly normalizes: Σ P(o) = Σ Tr(E_o ρ)·[1−β·f_perp(o)]/Z_E = Z_E/Z_E = 1. |
 | **C-NONDIV** | ⚠️ CONDITIONAL | Z_E = 0 iff [1−β·f_perp(o)] = 0 for all o with Tr(E_o ρ) > 0. Since f_perp ∈ [0,1] and β ∈ [0,1]: [1−β·f_perp] ∈ [1−β, 1]. If β < 1: [1−β·f_perp] > 0 always → Z_E > 0. If β = 1 and f_perp = 1 for all outcomes: Z_E = 0. **Convention: β < 1 strictly, or exclude f_perp=1 case.** |
 | **C-PARAM** | ✅ PASS | 1 free parameter (β). Satisfies ≤1 or ≤2. |
-| **C-TRACE** | ❌ FAIL | **K_context is NOT defined in K1-K8.** K1-K8 define individual K-spaces (K_R per observer). The "context" — a set of K-states from MULTIPLE observers — requires a composition rule not in K1-K8. Also: f_perp's functional form (fraction of contradicting events with different outcomes) is not derived. **ASSUMPTIONS: [A-E1] K_context exists; [A-E2] f_perp has the specified form; [A-E3] β is universal.** |
+| **C-TRACE** | ✅ PASS (post-T9) | **K_context WAS an assumption — NOW a theorem.** T9 (2026-05-24) constructs K_ctx from K1-K8 + T1: φ_ij = i_j (K8-constrained T1 embedding), 5 lemmas L1-L5. ~~[A-E1] K_context exists~~ → [A-E1] FULLY ELIMINATED. [A-E2] f_perp form → SPLIT ([A-E2a] DERIVED via T8+H1, [A-E2b] MODERATE). [A-E3] β is universal → FREE PARAMETER. |
 | **C-FALSI** | ✅ PASS (under Interp B conditions) | f_perp IS outcome-dependent → δP ≠ 0 in scenarios where different outcomes have different f_perp values. Genuine probability-level deviation from Born rule. |
 | **C-NONNEG** | ⚠️ CONDITIONAL | P(o) ≥ 0 iff [1−β·f_perp(o)] ≥ 0 iff β·f_perp(o) ≤ 1. Since f_perp ∈ [0,1]: requires β ≤ 1/max(f_perp). If max(f_perp) = 1: β ≤ 1. If max(f_perp) < 1: less restrictive. **Must enforce β ≤ 1/max(f_perp) at runtime.** |
 
@@ -112,7 +112,7 @@ K9_E, when cert=1 ∧ V=1 ∧ ⊥_K silent:
 | ⊥_K | Contradiction operator | **K5** (bādhaka axiom, L260-349) |
 | k' ⊥_K k | Contradiction relation | **K5** — defined for pairs within a single K-space |
 | o(k') ≠ o | Outcome comparison | **K1** — o is a field of k, comparable |
-| **K_context** | Multi-observer context set | **ASSUMPTION [A-E1]** — NOT in K1-K8. K1-K8 define single-observer K-spaces. K_context = set of k-states from multiple observers → requires Level 3/4 structure (K-space composition). EX anchor: N_QM_VVV_00025 (Intrinsic Relational Binding / svabhāvika-sambandha) + N_QM_00047 (Entanglement). MODERATE anchor. |
+| **K_context** | Multi-observer context set | **THEOREM (post-T9)** — [A-E1] FULLY ELIMINATED (2026-05-24). T9 constructs K_ctx from K1-K8 + T1: φ_ij = i_j (K8-constrained embedding). EX anchor: N_QM_VVV_00025 (IRB). STRONG anchor. |
 | **f_perp form** | Fraction functional | **ASSUMPTION [A-E2]** — why fraction? Why not binary? Why not weighted? Functional form not derived from K1-K8. EX anchor: WEAK — N_QM_VVV_00029 (Override) provides concept but not formula. |
 | **β** | Suppression strength | **ASSUMPTION [A-E3]** — free parameter. Universal? Measurement-dependent? Not specified. |
 

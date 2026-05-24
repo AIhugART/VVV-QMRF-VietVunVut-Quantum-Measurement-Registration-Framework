@@ -21,8 +21,8 @@
 
 | # | Assumption | What breaks if false | Justification |
 |---|---|---|---|
-| [A-E1] | K_ctx via T3-morphism (Level 2) | K_ctx undefined → f_perp undefined → K9_E undefined | **JUSTIFIED** — T3 derived from K1-K8; Level 2 dependency, not circular |
-| [A-E2] | f_perp fraction form with compatibility map C | f_perp has different functional form → different predictions | **JUSTIFIED** — simplest counting construction; Tier 4 OI-1 resolved ρ-dependence |
+| [A-E1] | ~~K_ctx via T3-morphism~~ | **FULLY ELIMINATED (2026-05-24)** — φ_ij = i_j (K8-constrained T1 embedding), T9 L1-L5, 5 lemmas. K_ctx now a theorem. | **ELIMINATED** |
+| [A-E2] | ~~f_perp fraction form~~ | **SPLIT (2026-05-24):** [A-E2a] DERIVED via T8+H1 (fraction counting). [A-E2b] MODERATE (outcome filter, BE-anchored) | **PARTIALLY ELIMINATED** |
 | [A-E3] | β universal across measurements/observers | Different β for different settings → richer but less predictive model | **WEAKLY JUSTIFIED** — simplifying assumption; could be relaxed later |
 | [A-E4] | ⊥_K^str (K9_E) distinct from ⊥_K^dyn (K5) | If same mechanism → K5 fires first → V=0 → K9_E moot → only K9_A | **JUSTIFIED** — Tier 4 OI-4; BE lineage supports dual modes |
 | [A-NS] | No-signaling for N > 2 | If violated → K9_E creates faster-than-light communication → physically impossible | **WEAKLY JUSTIFIED** — proven for N=2, assumed for N>2; needs formal proof |
@@ -30,7 +30,7 @@
 | [A-3O-2] | T5 K_joint composition | 3-observer K_joint construction may fail | **CONDITIONAL** — depends on T4-H |
 | [A-3O-3] | β same for 3-obs as 2-obs | If β depends on N → Phase 11 predictions wrong | **WEAKLY JUSTIFIED** — untested |
 
-**Total: 8 assumptions. 3 JUSTIFIED, 3 WEAKLY JUSTIFIED, 2 CONDITIONAL.**
+**Total: 8 items. 2 ELIMINATED, 1 DERIVED, 2 JUSTIFIED, 1 WEAKLY JUSTIFIED, 2 CONDITIONAL. [A-E1] FULLY ELIMINATED (T9); [A-E2] SPLIT ([A-E2a] DERIVED).**
 
 **The conditional assumptions (T4-H) are the weakest point.** If T4-H fails, the 3-observer prediction (Phase 11) is invalidated, but the 2-observer results (Phases 7-10) remain valid.
 

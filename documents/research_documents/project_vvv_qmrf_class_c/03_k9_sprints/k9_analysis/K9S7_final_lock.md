@@ -59,12 +59,11 @@ AXIOM K9 — ⊥_K SUPPRESSION (LOCKED v1.0):
     (e) V(k_i) = 0 ⟹ no P assignment                 [Bhrānti, PP-1 v2]
     (f) isNull(k_i) ⟹ no P assignment                 [Anupalabdhi, PP-1 v2]
 
-  ASSUMPTIONS:
-    [A-E1] K_ctx defined via T3-morphism (Level 2/3)
-    [A-E2] f_perp = fraction form with quantum inconsistency criterion
-    [A-E3] β universal across measurements and observers
-    [A-E4] ⊥_K extends inter-K-space as STRUCTURAL relation (potential 
-           contradiction), distinct from K5 DYNAMIC bādhaka (actualized)
+  ASSUMPTIONS (updated 2026-05-24):
+    ~~[A-E1] K_ctx defined via T3-morphism~~ → FULLY ELIMINATED (T9, L1-L5)
+    ~~[A-E2] f_perp = fraction form~~ → SPLIT: [A-E2a] DERIVED (T8+H1)
+    [A-E3] β universal → FREE PARAMETER
+    [A-E4] ⊥_K structural → STRONG (BE-anchored)
 ```
 
 ---

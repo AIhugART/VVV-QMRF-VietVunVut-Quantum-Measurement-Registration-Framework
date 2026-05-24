@@ -271,11 +271,11 @@ K9_E POSTULATE (P9) — ⊥_K SUPPRESSION (FORMALIZED):
     (c) V(k_i) = 0 ⟹ no P assignment                   [PP-1 v2 Case 2]
     (d) isNull(k_i) ⟹ no P assignment                   [PP-1 v2 Case 3]
     
-  ASSUMPTIONS:
-    [A-E1] K_ctx defined via T3-morphism
-    [A-E2] f_perp = fraction form
-    [A-E3] β universal
-    [A-E4] ⊥_K extends inter-K-space via T3
+  ASSUMPTIONS (updated 2026-05-24):
+    ~~[A-E1] K_ctx defined via T3-morphism~~ → FULLY ELIMINATED (T9, L1-L5)
+    ~~[A-E2] f_perp = fraction form~~ → SPLIT: [A-E2a] DERIVED (T8+H1), [A-E2b] MODERATE
+    [A-E3] β universal → FREE PARAMETER
+    [A-E4] ⊥_K extends inter-K-space via T3 → STRONG (BE-anchored)
     
   EX COMPASS:
     f_perp ← bādhaka (N_QM_VVV_00029) × outcome filter
