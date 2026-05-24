@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v30 (2026-05-24) — Noise sensitivity analysis FAIL: downgrade genuine→qualified
+**Version:** v31 (2026-05-24) — K9E-PAT CLOSED (UNRESOLVABLE) + Post-v30 Execution Plan created; IBM Quantum track rejected (double category error)
 **Zenodo DOI:** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0)
 **License:** CC BY 4.0
 
@@ -201,6 +201,9 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | Where is the K9_E origin investigation? | [RCA K9_E Origin Investigation](04_governance/rca_k9e_origin_investigation.md) |
 | How is P10-NOISE noise sensitivity analyzed? | [RCA Methodology Decision](04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md) + [Spec](07_fits/noise_sensitivity_analysis_spec.md) |
 | How was phi-map K→B(H) resolved (RCA)? | [RCA Phi-Map Round 1](04_governance/RCA_phi_map_round1_structural_audit.md) → [Round 2](04_governance/RCA_phi_map_round2_structural_resolution.md) → [Round 3 Decision](04_governance/RCA_phi_map_round3_final_decision.md) |
+| How was K9E-PAT resolved (RCA)? | [T1B Model Comparison RCA](04_governance/T1B_model_comparison_RCA.md) → [T1C Resolution](04_governance/T1C_k9e_pat_resolution.md) |
+| What is the Post-v30 execution plan? | [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) |
+| What happened in the v31 RCA session? | [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) |
 
 ### Folder Index
 
@@ -210,7 +213,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | `01_axiomatization/` | K_Space_Axiomatization.md + K->BH map + meta-architecture documents | 10 |
 | `02_derivation_chain/` | Phase 7–13 deliverables + supporting analyses + v29 RCA | 19 |
 | `03_k9_sprints/` | K9 analysis chain (S1–S12) + K9 analysis plan | ~22 |
-| `04_governance/` | Master plan v28 + v3 SUPERSEDED + CHANGELOG + decisions + pre-plan + RCA reports | ~19 |
+| `04_governance/` | Master plan + Post-v30 plan + Track 1 reports + CHANGELOG + decisions + RCA reports | ~24 |
 | `05_ex_compass/` | VVV-QMRF-EX snapshot (compass reference, not structure import) | ~65 |
 | `06_references/` | VVV-QMRF core terminology + bridge documents | 8 |
 | `07_fits/` | Python reproduction scripts + utils/ module + SOT data + requirements.txt | 18 |
@@ -266,7 +269,9 @@ pip install -r requirements.txt
 | # | Item | Status | Priority |
 |---|------|--------|----------|
 | A1 | ~~K5 prospective firing — promote from "semantic extension" to axiom text~~ | **RESOLVED (v29)** — upgraded to K5_prospective clause in K_Space_Axiomatization.md | ~~HIGH~~ |
-| K9E-PAT | K9_E multiplicative pattern (2BSM/1BSM ratio ~2) not confirmed by raw data (ratio = -0.78) — g=0.146 model may be too simplistic | New (v29) | HIGH |
+| K9E-PAT | ~~K9_E multiplicative pattern (2BSM/1BSM ratio ~2) not confirmed by raw data (ratio = -0.78)~~ | **CLOSED (UNRESOLVABLE, v31)** — empirical ratio = two sub-σ residuals divided → red herring. Both models predict ratio ~2. 4 data points insufficient. Deferred to K9-S12 experiment. See [T1C Resolution](04_governance/T1C_k9e_pat_resolution.md) | ~~HIGH~~ |
+| IBM-Q | ~~IBM Quantum execution plan for K9_E testing~~ | **REJECTED (v31)** — double category error (K9_E requires K-space structure; IBM QPU has none). See [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) | ~~HIGH~~ |
+| POST-v30 | Post-v30 execution plan (K9E-PAT → K9-S12 paper → experiment) | New (v31) — [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) | HIGH |
 | 3-OBS | 3-observer experiment — delta_M3 = -0.223 (11x) prediction ready, experimental design deferred | **FUTURE WORK** | HIGH |
 | P10-NOISE | Non-uniform experimental noise cannot be ruled out as alternative explanation for genuine fit improvement | New (v29) | MEDIUM |
 | P10-TIM | Null-model N0 fit omitted — requires raw event-level data; deferred | DECISION-LOCKED (RCA R4) | MEDIUM |
@@ -300,4 +305,4 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
 
 ---
 
-*Project VVV-QMRF Class C — Master Index v29 (2026-05-23). Generated from plan v29 final (3-round RCA). Class C (genuine) — structurally testable, empirically evidenced, ambiguous.*
+*Project VVV-QMRF Class C — Master Index v31 (2026-05-24). Post-v30 RCA session: IBM Quantum plan rejected, K9E-PAT CLOSED (UNRESOLVABLE). Post-v30 Execution Plan created. Class C (qualified) — structurally testable, empirically UNCONFIRMED.*

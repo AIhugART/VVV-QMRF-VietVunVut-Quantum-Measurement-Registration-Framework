@@ -14,8 +14,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Shared component rule:** Components appearing in both tables (T5 K_ctx, K5_prospective) MUST have identical H/W/A/Risk scores. Any score change to a shared component MUST be applied to both tables.
 
 **Ngay:** 2026-05-24 16:22 UTC+7
-**Version:** v1.3 — Dual-table split: Table 1 (VVV-QMRF Class C) + Table 2 (VVV-QMRF Full Scope)
-**Previous:** v1.2 (2026-05-24) — [A-E3] REMOVED (reclassified: FREE PARAMETER per RCA verdict `897028b`)
+**Version:** v1.4 — K9E-PAT CLOSED (UNRESOLVABLE) + K9_E impl DOCUMENTED (Post-v30 RCA session, 2x 4.92/5)
+**Previous:** v1.3 (2026-05-24) — Dual-table split: Table 1 + Table 2
 **Next audit:** 2026-05-31
 
 ---
@@ -258,9 +258,9 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Risk Score** | 5 x 2 x 1.2 = **12.0** |
 | **Risk Score band** | **MEDIUM** (10-14.9) |
 | **Root cause type** | Type 3 — Broken Trace (data precision gap: 4 data points, sigma~0.04 → ratio error ±1.72) |
-| **Status** | **OPEN** — D4. RCA chi tiet: `RCA_K9E_PAT_status_report_2026_05_24.md` (3-Round RCA: 4.50/5). KHONG BLOCKING. "Not confirmed", khong phai "failed". |
-| **Full Label** | `[AH-WARN] [RS-MED]` |
-| **Deadline** | HIGH (P1) — truoc khi public. Hanh dong: (1) compute formal CI cho ratio, (2) document g=0.146 = modeling choice. |
+| **Status** | **CLOSED (v31)** — VERDICT C: UNRESOLVABLE with current data. "Ratio = -0.78" la red herring: ratio cua hai sub-sigma residuals. Ca hai model deu predict ratio ~2 (additive: 2.000, multiplicative: 1.913). 4 data points khong du de test pattern. P10-NOISE confirms. Deferred to K9-S12 optical experiment. RCA 4.92/5. See `04_governance/T1C_k9e_pat_resolution.md`. |
+| **Full Label** | `[AH-LOW] [RS-LOW] [CLOSED-UNRESOLVABLE]` |
+| **Deadline** | RESOLVED — deferred to K9-S12 experiment |
 
 ### Rank 6: K9_E two implementations — Additive vs Multiplicative divergence
 
@@ -275,9 +275,9 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Risk Score** | 4 x 2 x 1.5 = **12.0** |
 | **Risk Score band** | **MEDIUM** (10-14.9) |
 | **Root cause type** | Type 2 — Missing Definition |
-| **Status** | **OPEN** — D6 |
-| **Full Label** | `[AH-LOW] [RS-MED] [AH-DIVERGE]` |
-| **Deadline** | MEDIUM (P2) |
+| **Status** | **DOCUMENTED (v31)** — Additive vs multiplicative divergence phan tich xong. Additive (g_ctx=0.039): delta_1BSM=-0.0164, ratio=2.000. Multiplicative (g_eff=0.146): delta_1BSM=-0.0580, ratio=1.913. Hai model agree ve PATTERN (ratio~2) nhung khac ve MAGNITUDE (~3.5x). Khong the phan biet voi 4 data points. See `04_governance/T1B_model_comparison_RCA.md`. |
+| **Full Label** | `[AH-LOW] [RS-MED] [AH-DOCUMENTED]` |
+| **Deadline** | P2 — duoc giam nhe. Van con 2 implementations, nhung divergence da duoc characterize. |
 
 ### Rank 7: K5_prospective — v29 axiom extension
 
@@ -367,7 +367,7 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 
 | Status | Count | Components |
 |--------|-------|------------|
-| **OPEN** | 4 | phi-map, P10-NOISE, K9E-PAT, K9_E implementations |
+| **OPEN** | 2 | phi-map, K9_E implementations |
 | **MONITORING** | 4 | T5 K_ctx, K5_prospective, E1-E16, BE↔QM |
 | **DEFERRED** | 1 | T4-H Steps 3-4 |
 | **DECISION-LOCKED** | 1 | P10-TIM |
@@ -530,7 +530,7 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | P10-NOISE | 18.0 (#4) | 18.0 (#3) | **18.0 (#2)** | Table 1 | — |
 | T5 K_ctx | 21.6 (#2) | 18.0 (#4) | **18.0 (#3)** | Table 1 + Table 2 (Shared) | — |
 | T4-H Steps 3-4 | 18.0 (#3) | 18.0 (#5) | **18.0 (#4)** | Table 1 + Table 2 | — |
-| K9E-PAT | 12.0 (#5) | 12.0 (#6) | **12.0 (#5)** | Table 1 | — |
+| K9E-PAT | 12.0 (#5) | **CLOSED (v1.4)** | Table 1 | — |
 | K9_E implementations | 12.0 (#8) | 12.0 (#7) | **12.0 (#6)** | Table 1 | — |
 | K5_prospective | 12.0 (#9) | 12.0 (#8) | **12.0 (#7)** | Table 1 + Table 2 (Shared) | — |
 | E1-E16 | 9.6 (#7) | 9.6 (#9) | **9.6 (#8)** | Table 1 + Table 2 | — |
