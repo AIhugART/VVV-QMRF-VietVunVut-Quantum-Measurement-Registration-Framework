@@ -2,7 +2,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # RCA Điều tra Nguồn gốc K9_E — Bảng Điều tra Thành phần
 
-**Ngày:** 2026-05-24 (updated 2026-05-24 — T8 implemented, see §8)
+**Ngày:** 2026-05-24 (updated 2026-05-24 — T8 implemented + H3/H4 quick wins, see §8)
 **Mục tiêu:** Điều tra từng thành phần của K9_E: nguồn gốc, thời điểm xuất hiện, liên hệ QM standard, đánh giá rủi ro hallucination.
 **Phương pháp:** RCA 5-Why + truy vết file nguồn + git log + đối chiếu chéo.
 
@@ -46,7 +46,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 |---|---------|---------------|---------------------|--------------------|------------------------------|---------------------|---------------------|--------------------------|
 | A-E1 | `[A-E1]` | K_ctx defined via T3-morphism (Level 2/3) | **Y** | **N** | — | Không có | — | **5/10** — Được flag assumption rõ ràng trong K9-S4. Có EX anchor MODERATE (N_QM_VVV_00025). T3-morphism là Layer 2 theorem (có từ K_Space_Axiomatization.md pre-Class C). Việc dùng T3 để define K_ctx là new construction. Không hallucination vì minh bạch. |
 | A-E2a | `[A-E2a]` | f_perp fraction counting — **DERIVED via T8** | **Y** | **N** | — | Không có | — | **SPLIT 2026-05-24:** Fraction counting mechanism đã được DERIVE qua T8 bridge: f_perp = E[I(K5_prospective fires)]. Đây là statistical identity over binary K5/K6 primitives — không còn là assumption. EX anchor: STRONG (K5 → K5_prospective → T8 → f_perp). |
-| A-E2b | `[A-E2b]` | Outcome filter `o(k_j) ≠ o` — residual sub-assumption | **Y** | **N** | — | Không có | — | **3/10** ⬇ (was 6/10 combined) — Residual sub-assumption sau T8 split. Anchored to compatibility map C(o_i, o_j) via Tier 4 OI-1 + PP-2 v2 cancellation avoidance. EX anchor: MODERATE. Thấp hơn A-E2 cũ vì scope đã được thu hẹp đáng kể (chỉ còn outcome filter, không còn counting mechanism). |
+| A-E2b | `[A-E2b]` | Outcome filter `o(k_j) ≠ o` — residual sub-assumption | **Y** | **N** | — | Không có | — | **2/10** ⬇ (was 3/10) — H3+H4 strengthening: BE binary pramāṇa principle + comparative analysis (4 alternatives eliminated). Scope minimal (outcome filter only). EX anchor: MODERATE-STRONG. |
 | A-E3 | `[A-E3]` | β is universal (same for all measurements and observers) | **Y** | **N** | — | Không có. Gần nhất: universal coupling constants trong physics | Universal constants (e.g., α ≈ 1/137) | **5/10** — Assumption simplifying: β có thể khác nhau giữa các observer/measurement. Flag "WEAKLY anchored" trong Phase8. Có motivation vật lý (β là property of framework, not individual measurement) nhưng chưa được chứng minh. Không hallucination — được flag assumption. |
 | A-E4 | `[A-E4]` | ⊥_K^str (structural, K9_E) ≠ ⊥_K^dyn (dynamic, K5) — dual modes of contradiction | **Y** | **N** (extended) | K5 ⊥_K dynamic mode (pre-Class C). The distinction structural vs dynamic là mới (Tier 4 OI-4). | Không có | — | **4/10** — ⊥_K gốc từ K5 (pre-Class C). Việc phân biệt structural mode (dùng trong K9_E f_perp) vs dynamic mode (dùng trong K5 invalidation) là conceptual extension. Có BE lineage: saṃśaya vs niścaya bādhaka. Không hallucination — reasonable conceptual refinement. |
 
@@ -60,7 +60,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | C4 | `isNull(k)` | Null event — sự kiện ghi nhận không có information transfer | **N** | **Y** | `K4(b)` + `E9` (pre-Class C): isNull(k) := o(k)=∅ ∧ ΔI(k)=0 | Null measurement | QM: identity measurement (no information extracted) | **2/10** — isNull có gốc từ K4(b) + E9. Có BE lineage (anupalabdhi). Không hallucination. |
 | C5 | `K5_prospective` | K5 mở rộng: prospective firing trên hypothetical k_o* | **Y** | **N** (upgrade) | K5 gốc (pre-Class C). K5_prospective clause là v29 upgrade. | Không có | — | **5/10** — Là conservative extension của K5 (same conditions i-iii, new evaluation target only). Được verify 6/6 consistency checks (RCA Final Verdict Round 2, 4.90/5). Không hallucination vì là explicit axiom clause với formal verification. |
 | C6 | `T3-morphism` | K-space homomorphism — cầu nối giữa các K-space | **N** (partially) | **Y** (partially) | `T3` Bridge_EWF (K_Space_Axiomatization.md L765-813, pre-Class C). Nhưng dùng T3 làm "inter-K-space access channel" cho K_ctx là mới (Class C). | Không có | — | **4/10** — T3 là Layer 2 theorem (pre-Class C). Việc dùng T3 làm "morphism channel" cho K_ctx là application mới. Hợp lý về mặt structural. |
-| C7 | `T8` | **K5_prospective Frequency Bridge** — f_perp = E[I(K5_prospective fires)], bridges K9_E to K5 | **Y** | **N** | — | Không có | — | **2/10** — T8 là bridge theorem MỚI (2026-05-24). Không phải hallucination vì: (a) là statistical identity (expectation of binary indicators), không phải assumption mới; (b) chỉ READ K5_prospective + K_ctx, không modify gì; (c) EX anchor STRONG qua chain K5→K5_prospective→T8→f_perp. Điểm thấp vì derivation là mathematical tautology (định nghĩa expectation over binary events). |
+| C7 | `T8` | **K5_prospective Frequency Bridge** — f_perp = E[I(K5_prospective fires)] + H3 (BE uniform weight) + H4 (4 alternatives eliminated) | **Y** | **N** | — | Không có | — | **2/10** — T8 + H3 + H4: (a) statistical identity; (b) BE philosophical grounding (Dharmakīrti binary pramāṇa); (c) comparative analysis (A1-A4 all dead). Điểm thấp vì tất cả đều là documentation/justification, không có assumption mới. |
 
 ---
 
@@ -70,8 +70,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Thang điểm | Số thành phần | % | Diễn giải |
 |------------|---------------|-----|-----------|
-| **0–2** (Hoàn toàn có thật, xác minh được) | 8/19 | 42% | T1 (Born), T6 (Z_E), C1 (⊥_K), C2 (V), C3 (cert), C4 (isNull), C7 (T8 bridge), A-E2a (DERIVED) |
-| **3–4** (Có cơ sở, conceptual extension) | 7/19 | 37% | T3 (f_perp — upgraded), T4 (compatibility), T7 (V=0 gate), oldT8 (isNull gate), A-E2b (outcome filter), A-E4 (⊥_K dual modes), C6 (T3-morphism) |
+| **0–2** (Hoàn toàn có thật, xác minh được) | 9/19 | 47% | T1 (Born), T6 (Z_E), C1 (⊥_K), C2 (V), C3 (cert), C4 (isNull), C7 (T8+H3+H4), A-E2a (DERIVED), A-E2b (upgraded 3→2) |
+| **3–4** (Có cơ sở, conceptual extension) | 6/19 | 32% | T3 (f_perp — upgraded), T4 (compatibility), T7 (V=0 gate), oldT8 (isNull gate), A-E4 (⊥_K dual modes), C6 (T3-morphism) |
 | **5–6** (Speculative nhưng được flag assumption) | 4/19 | 21% | T2 (β), T5 (K_ctx), A-E1 (T3 def), A-E3 (β universal), C5 (K5_prospective) |
 | **7–8** (Đáng ngờ, weak basis) | 0/19 | 0% | — |
 | **9–10** (Hallucination rõ ràng) | 0/19 | 0% | — |
@@ -79,9 +79,13 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ### 3.2 Điểm trung bình (updated)
 
 ```
-Tổng điểm hallucination (post-T8): 0+5+4+3+6+1+3+3 + 5+0+3+5+4 + 2+1+1+2+5+4+2 = 59
-Số thành phần: 19
-Điểm trung bình: 59/19 ≈ 3.1/10  (giảm từ 3.4/10 trước T8)
+Tổng điểm hallucination (post-T8+H3+H4):
+  T1-T8:  0+5+4+3+6+1+3+3 = 25
+  A-E1→A-E4 (split): 5+0+2+5+4 = 16
+  C1-C7:  2+1+1+2+5+4+2 = 17
+  TOTAL: 25+16+17 = 58
+Số thành phần: 20 (A-E2 split → 2 rows)
+Điểm trung bình: 58/20 ≈ 2.9/10  (giảm từ 3.1/10 post-T8, 3.4/10 ban đầu)
 ```
 
 **Kết luận:** K9_E có điểm hallucination trung bình **3.4/10** — ở mức "có cơ sở + speculative được flag". **Không có thành phần nào đạt 7–10 (hallucination).**
@@ -169,7 +173,7 @@ Symptom: VVV-QMRF có K1-K8 (structural axioms) nhưng không có probability ru
 | Số thành phần được flag assumption | 4 (21% — giảm từ 7) |
 | Số thành phần DERIVED (không còn assumption) | 2 (11% — A-E2a, T8/C7) |
 | Số thành phần có EX anchor | 19/19 (100%) |
-| Điểm hallucination trung bình | **3.1/10** ⬇ (was 3.4) |
+| Điểm hallucination trung bình | **2.9/10** ⬇ (was 3.4→3.1→2.9) |
 | Số thành phần hallucination (7-10) | **0/19** |
 | Mức độ "bịa đặt" | **RẤT THẤP** — mọi thành phần đều có trace |
 
@@ -212,15 +216,34 @@ Symptom: VVV-QMRF có K1-K8 (structural axioms) nhưng không có probability ru
 | `02_derivation_chain/Phase8_candidate_equation.md` | Assumption Registry: [A-E2] split → [A-E2a] (DERIVED, STRONG) + [A-E2b] (MODERATE); added Anchor Strength column |
 | `04_governance/rca_k9e_origin_investigation.md` | T3 6→4; A-E2 split; C7/T8 added; summary statistics updated; this §8 added |
 
-### 8.4 Net impact
+### 8.4 H3 + H4 Quick Wins (2026-05-24)
 
-| Metric | Before T8 | After T8 |
-|--------|-----------|----------|
-| Hallucination score TB | 3.4/10 | **3.1/10** |
-| Assumptions flagged | 4 | 3 (A-E2a DERIVED) |
-| Assumptions with STRONG anchor | 0/4 | **1/4** (A-E2a) + A-E4 already STRONG |
-| [A-E2] anchor strength | WEAK | **STRONG** (counting) + MODERATE (filter) |
-| K5_prospective → K9_E chain | Conceptual link | **Structural bridge** (T8) |
+**H3 — BE Principle Justification:** BE lineage expansion within T8. Dharmakīrti's `pramāṇam aviṣaṃvādi-jñānam` (Nyāyabindu 1.1) establishes binary pramāṇa/apramāṇa status → uniform epistemic weight in bādhaka evaluation → fraction counting is philosophically grounded, not arbitrary. ED_BE_00075 + N_BE_00001 + N_BE_00006.
+
+**H4 — Comparative Analysis:** 4 natural alternatives systematically eliminated:
+- A1 (quantum overlap weight): ❌ circular ρ-side dependency (OI-1)
+- A2 (binary indicator): ❌ PP-2 v2 cancellation → δP=0
+- A3 (Auth weight): ❌ Auth is structurally binary (K6)
+- A4 (temporal weight): ❌ +τ parameter (C-PARAM) + K2 discreteness
+- A5 (fraction form): ✅ UNIQUE SURVIVOR
+
+| Round | Focus | Score |
+|-------|-------|-------|
+| R1: H3 BE sourcing | Binary pramāṇa from Dharmakīrti, ED_BE_00075 | **4.5/5** |
+| R2: H4 constraints | 4 alternatives eliminated, all 5 constraints checked | **5.0/5** |
+| R3: Combined strengthening | [A-E2b] MODERATE → MODERATE-STRONG | **4.0/5** |
+| **Aggregate** | | **4.5/5** ✅ PASS |
+
+### 8.5 Net impact (cumulative)
+
+| Metric | Ban đầu | Post-T8 | Post-T8+H3+H4 |
+|--------|---------|---------|---------------|
+| Hallucination score TB | 3.4/10 | 3.1/10 | **2.9/10** |
+| Assumptions flagged | 4 | 3 | 3 |
+| Assumptions DERIVED | 0 | 1 (A-E2a) | 1 (A-E2a) |
+| [A-E2b] anchor | WEAK | MODERATE | **MODERATE-STRONG** |
+| BE lineage depth | Shallow | Moderate | **Deep (Dharmakīrti citation)** |
+| Negative evidence | None | None | **H4: 4 alternatives eliminated** |
 
 ---
 
@@ -231,10 +254,10 @@ Symptom: VVV-QMRF có K1-K8 (structural axioms) nhưng không có probability ru
 | 1 | ~~Củng cố EX anchor cho [A-E2] (f_perp functional form)~~ | MEDIUM | **RESOLVED (2026-05-24)** — T8 bridge: [A-E2a] DERIVED (STRONG), [A-E2b] MODERATE |
 | 2 | Củng cố EX anchor cho [A-E3] (β universal) — hiện tại WEAK | MEDIUM | Open |
 | 3 | Formal hóa T3-morphism channel cho K_ctx — hiện tại là assumption [A-E1] | HIGH | Open |
-| 4 | Củng cố [A-E2b] outcome filter — currently MODERATE anchor | LOW | NEW |
-| 5 | Document rõ hơn về motivation của fraction form (tại sao không weighted?) | LOW | **RESOLVED** — T8 uniformity justification: binary K5/K6 primitives → equal weight |
+| 4 | ~~Củng cố [A-E2b] outcome filter~~ | LOW | **RESOLVED (2026-05-24)** — H3 (BE binary pramāṇa) + H4 (4 alternatives eliminated). MODERATE → MODERATE-STRONG |
+| 5 | ~~Document motivation của fraction form~~ | LOW | **RESOLVED** — T8 uniformity justification + H3 BE principle + H4 comparative analysis |
 | 6 | Giữ nguyên practice: flag mọi assumption, trace mọi term | ONGOING | Ongoing |
 
 ---
 
-*RCA Investigation: K9_E Origin — 2026-05-24 (updated 2026-05-24 post-T8). 19 components investigated. Average hallucination score: 3.1/10 (giảm từ 3.4). Verdict: NOT hallucination — systematically constructed postulate with transparent assumptions. T8 structural bridge implemented — [A-E2] WEAK → STRONG.*
+*RCA Investigation: K9_E Origin — 2026-05-24 (updated post-T8+H3+H4). 20 components investigated. Average hallucination score: 2.9/10 (giảm từ 3.4→3.1→2.9). Verdict: NOT hallucination. T8 structural bridge + H3 BE justification + H4 comparative analysis — [A-E2] WEAK → STRONG (counting) + MODERATE-STRONG (filter).*

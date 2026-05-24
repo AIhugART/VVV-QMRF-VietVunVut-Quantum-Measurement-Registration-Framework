@@ -1332,6 +1332,211 @@ Evaluate f_perp(o=+1, k_FA, K_ctx) via T8:
 | **Update trigger** | If K5_prospective is revised; if K_ctx definition changes (e.g., weighting introduced → T8 weighted generalization applies); if a new axiom provides continuous contradiction strength metric |
 | **[A-E2] impact** | **SPLIT:** [A-E2a] fraction counting → DERIVED (no longer an assumption). [A-E2b] outcome filter → assumed but upgraded MODERATE (was WEAK). Net: WEAK → STRONG for the core counting mechanism |
 
+#### T8-H3 — BE Principle Justification: Uniform Epistemic Weight
+
+**Statement:**
+> The uniform weight `w_j = 1` assigned to each `k_j ∈ K_ctx` in T8's frequency interpretation is not an arbitrary modeling choice — it reflects a structural principle from Buddhist Pramāṇavāda epistemology: **every pramāṇa (valid cognition) carries equal epistemic standing in a bādhaka (contradiction) evaluation.** This principle — termed *samāna-pramāṇatā* (equal epistemic standing) — eliminates the need for a continuous contradiction-strength metric and provides philosophical justification for why K5/K6 primitives are binary.
+
+**BE Source Analysis:**
+```
+Dharmakīrti's definition of pramāṇa (Nyāyabindu 1.1, PV 2.1):
+  pramāṇam aviṣaṃvādi-jñānam
+  "A pramāṇa is non-deceptive knowledge."
+  → ED_BE_00075: Dharmakīrti (N_BE_00040) → aviṣaṃvāditva (N_BE_00234)
+
+Key insight — binary nature of validity:
+  Aviṣaṃvāditva is a BINARY property: knowledge is either non-deceptive
+  (pramāṇa) or deceptive (apramāṇa/bhrānti). There is no "partially
+  non-deceptive" cognition. A cognition that is 70% reliable but 30%
+  misleading is bhrānti (erroneous) — it fails the aviṣaṃvāditva criterion
+  categorically.
+
+Application to bādhaka (contradicting cognition):
+  For a later cognition to serve as bādhaka (contradictor) of an earlier
+  cognition, it must itself be a pramāṇa (K6 Auth condition (b): V(k2)=1).
+  Since pramāṇa status is binary, EVERY bādhaka carries the same
+  epistemic weight — there is no "stronger" or "weaker" contradictor.
+
+  Dharmakīrti's PV 2.47-48 (bādhakapramāṇa discussion):
+    A contradicting cognition voids the contradicted cognition not by
+    DEGREE of contradiction, but by the mere FACT of valid contradiction.
+    Multiple contradictors each carry full bādhaka force independently.
+
+Therefore in T8:
+  f_perp = (1/|K_ctx|) * Σ I_j(o)  with uniform weight w_j = 1
+
+  This is NOT an assumption that contradictions have "equal strength."
+  It is the RECOGNITION that binary pramāṇa/apramāṇa status provides
+  no gradation that could justify differential weighting.
+
+  If a future VVV-QMRF extension (e.g., K10) introduces a continuous
+  contradiction-strength metric grounded in arthakriyā (pragmatic
+  efficacy), then T8 generalizes naturally to weighted form:
+    f_perp_weighted = Σ w_j · I_j / Σ w_j
+  This is T8's built-in generalization path — see Update trigger.
+```
+
+**BE lineage mapping (3-node chain):**
+```
+N_BE_00040 (Dharmakīrti)
+  └─ED_BE_00075→ N_BE_00234 (aviṣaṃvāditva — non-deceptive cognition)
+                   └─→ Binary pramāṇa/apramāṇa distinction
+                        └─→ Uniform bādhaka weight → T8 w_j = 1
+
+N_BE_00001 (Pramāṇa / Valid cognition)
+  └─→ Every valid cognition satisfies aviṣaṃvāditva → equal standing
+
+N_BE_00006 (Bhrānti / Erroneous cognition)
+  └─→ Fails aviṣaṃvāditva → not a bādhaka → excluded from K_ctx by K6(b)
+```
+
+**Boundary clause:**
+This is an EPISTEMOLOGICAL interpretation, not a logical derivation. BE provides the philosophical framework for WHY binary primitives are appropriate; T8 provides the structural proof that binary primitives → uniform counting. The BE lineage does not independently prove the fraction form — it explains why no alternative weighting is philosophically motivated within the VVV-QMRF framework.
+
+| Property | Value |
+|---|---|
+| **BE source** | Dharmakīrti: `pramāṇam aviṣaṃvādi-jñānam` (Nyāyabindu 1.1). ED_BE_00075. PV 2.47-48 (bādhaka discussion). SYSTEM_Buddhist_Epistemology/system_be_full.md N_BE_00001, N_BE_00006, ED_BE_00075 |
+| **Role in T8** | Philosophical justification for uniform weight w_j = 1. Eliminates the question "why not weighted?" — because pramāṇa status is binary, no gradation exists to weight by |
+| **Strength** | MODERATE — this is interpretation, not direct textual citation of a "samāna-pramāṇatā" doctrine. The binary nature of pramāṇa is well-established; the application to f_perp counting is VVV-QMRF interpretation |
+| **Risk** | If Buddhist epistemology scholarship challenges the binary interpretation (e.g., if some traditions recognize degrees of pramāṇa), T8's uniformity remains justified on STRUCTURAL grounds (binary K5/K6 primitives) — the BE lineage is supplementary, not load-bearing |
+
+#### T8-H4 — Comparative Analysis: Why Fraction Form is the Unique Survivor
+
+**Statement:**
+> The fraction form `f_perp = |{k_j: ...}| / |K_ctx|` is not an arbitrary choice among equally viable alternatives. A systematic comparative analysis of four alternative functional forms shows that each alternative is independently eliminated by structural constraints from K1-K8, PP-2 v2 cancellation, or parameter economy. Fraction form is the UNIQUE survivor — the only functional form satisfying all five design constraints simultaneously.
+
+**Design Constraints (from K9-S1):**
+```
+(D1) OUTCOME-DEPENDENCE:  f_perp must vary with o to produce δP ≠ 0
+     (PP-2 v2: per-tuple multiplicative modulation cancels if f_perp is
+      outcome-independent → δP = 0 → K9_E = Born rule)
+
+(D2) K-SIDE PURITY:       f_perp must use only K-side primitives (⊥, Auth, V, cert)
+     (OI-1 flag: ρ-side inputs like quantum overlap are circular — they
+      use the very Born-rule probabilities K9_E is trying to modify)
+
+(D3) PARAMETER ECONOMY:   f_perp must not introduce new free parameters beyond β
+     (C-PARAM: ≤2 total parameters. β already counts as 1)
+
+(D4) BOUNDEDNESS:         f_perp ∈ [0, 1] for all possible K_ctx configurations
+     (C-NONNEG requires β·f_perp ≤ 1. f_perp ∈ [0,1] is sufficient)
+
+(D5) STRUCTURAL GROUNDING: Every component of f_perp must trace to K1-K8 or
+     flagged assumption (C-TRACE)
+```
+
+**Alternative Analysis:**
+```
+ALTERNATIVE A1 — Weighted by Quantum Overlap:
+  f_perp = Σ_j |⟨o|o_j⟩|² · I_j / Σ_j |⟨o|o_j⟩|²
+
+  VIOLATES (D2) — K-SIDE PURITY.
+  |⟨o|o_j⟩|² IS the Born-rule probability that K9_E is trying to modify.
+  Using it as a weight creates a CIRCULAR dependency:
+    f_perp depends on quantum overlap → which depends on Born rule →
+    which K9_E modifies → which depends on f_perp.
+  This is the Tier 4 OI-1 circularity flag exactly.
+  ELIMINATED by OI-1 boundary clause.
+
+  VERDICT: ❌ DEAD (circular ρ-side dependency)
+
+
+ALTERNATIVE A2 — Binary Contradiction Indicator:
+  f_perp = 1 if ∃k_j: k_j ⊥_K k_i ∧ o(k_j) ≠ o, else 0
+
+  VIOLATES (D1) — OUTCOME-DEPENDENCE.
+  f_perp ∈ {0, 1} for ALL outcomes simultaneously.
+  For a given K_ctx configuration:
+    If ANY k_j contradicts → f_perp = 1 for ALL outcomes o
+    → [1 − β·f_perp] = constant across o
+    → PP-2 v2 cancellation: constant multiplier cancels in Z_E
+    → δP = 0 → K9_E = Born rule identically.
+
+  PP-2 v2 proof: P(o) = Tr(E_o ρ) · (1-β) / Σ_o' Tr(E_o' ρ) · (1-β)
+                      = Tr(E_o ρ) · (1-β) / (1-β)
+                      = Tr(E_o ρ).  ∎
+
+  VERDICT: ❌ DEAD (PP-2 v2 cancellation — δP = 0)
+
+
+ALTERNATIVE A3 — Weighted by Auth "Strength":
+  f_perp = Σ_j Auth(k_j → k_i, C_K) · I_j / Σ_j Auth(k_j → k_i, C_K)
+
+  VIOLATES (D5) — STRUCTURAL GROUNDING.
+  Auth ∈ {0, 1} per K6 definition. There is NO continuous Auth strength
+  in K1-K8. K6 defines Auth as a binary relation satisfying three
+  binary conditions (a)-(c). Weighting by Auth would require:
+    (a) Either redefining Auth as continuous → modifies Layer 1 (frozen)
+    (b) Or inventing a new "Auth strength" metric → adds assumption
+
+  Even if Auth weight = Auth binary value:
+    Auth(k_j → k_i) = 1 for all k_j with V=1 in same C_K (K6 conditions)
+    → Uniform weight = 1 for all valid contradictors
+    → Reduces to fraction form identically.
+
+  VERDICT: ❌ DEAD (Auth is structurally binary — K6)
+
+
+ALTERNATIVE A4 — Weighted by Temporal Distance:
+  f_perp = Σ_j exp(−|t_j − t_i|/τ) · I_j / Σ_j exp(−|t_j − t_i|/τ)
+
+  VIOLATES (D3) — PARAMETER ECONOMY.
+  Introduces new free parameter τ (temporal decay constant).
+  C-PARAM limit: ≤2 total parameters. β + τ = 2 → saturation.
+  No room for future parameters (e.g., measurement-specific β).
+  Also: K2 discreteness (S2-Δ lemma) makes temporal distance between
+  registration events undefined at K-side level between consecutive
+  events — there is no continuous time between k_i and k_{i+1}.
+
+  VERDICT: ❌ DEAD (parameter budget + K2 discreteness)
+
+
+ALTERNATIVE A5 — Fraction Form (T8 baseline):
+  f_perp = (1/|K_ctx|) · Σ_j I_j(o)
+
+  SATISFIES ALL FIVE CONSTRAINTS:
+    (D1) ✓ Outcome-dependent via I_j(o) filter
+    (D2) ✓ Pure K-side: ⊥ (K5), Auth (K6), temporal order (K2)
+    (D3) ✓ Zero new parameters (β is separate)
+    (D4) ✓ f_perp ∈ [0,1] by construction (average of indicators)
+    (D5) ✓ Every component traced: I_j ← K5_prospective ← K5/K6/K2
+
+  UNIQUE SURVIVOR: A1-A4 all independently eliminated by structural
+  constraints. A5 is the ONLY functional form satisfying all five.
+
+  VERDICT: ✅ UNIQUE VIABLE FORM
+```
+
+**Summary matrix:**
+
+| Alternative | (D1) Outcome-dep | (D2) K-purity | (D3) Param econ | (D4) Bounded | (D5) Grounded | Verdict |
+|-------------|:---:|:---:|:---:|:---:|:---:|---------|
+| A1: Quantum overlap weight | ✓ | ❌ CIRC | ✓ | ✓ | ❌ | DEAD |
+| A2: Binary indicator | ❌ CANCEL | ✓ | ✓ | ✓ | ✓ | DEAD |
+| A3: Auth-weighted | ✓ | ✓ | ✓ | ✓ | ❌ | DEAD |
+| A4: Temporal-weighted | ✓ | ✓ | ❌ +τ | ✓ | ❌ | DEAD |
+| **A5: Fraction (uniform)** | **✓** | **✓** | **✓** | **✓** | **✓** | **PASS** |
+
+**Negative evidence strength:**
+The elimination of A1-A4 is NOT a proof of uniqueness in the mathematical sense (there could exist A6, A7, ... not yet considered). However, the four alternatives span the NATURAL design space:
+- A1: Continuous weight from ρ-side (most "physical" alternative)
+- A2: Simplest possible binary form
+- A3: Weight from existing K-side primitive (Auth)
+- A4: Weight from temporal structure
+
+That all four natural alternatives fail independently suggests the fraction form is not merely "chosen" — it is the ONLY form that survives the constraint gauntlet. This constitutes strong NEGATIVE EVIDENCE for uniqueness.
+
+**K9-S6 skip justification (reinforced):**
+K9-S6 (New Candidate Generation) was skipped because the candidate pool was deemed sufficient. H4 strengthens this justification: the natural design space around fraction form has been searched, and alternatives fail systematically. Unless a new structural primitive is added to K1-K8 (e.g., continuous contradiction strength), no qualitatively different candidate is expected to emerge.
+
+| Property | Value |
+|---|---|
+| **Method** | Constraint-based elimination — NOT exhaustive search. Four natural alternatives covering the design space (continuous ρ-weight, binary, Auth-weight, temporal-weight) independently eliminated |
+| **Strength** | MODERATE — negative evidence, not mathematical uniqueness proof. The fraction form is the ONLY KNOWN SURVIVOR, not the ONLY POSSIBLE form. Future alternatives (A6+) not ruled out |
+| **Relationship to T8** | T8 provides positive derivation (f_perp = E[I(K5_prospective)]). H4 provides negative evidence (why NOT the alternatives). Together: positive + negative → strong justification |
+| **Relationship to H3** | H3 explains WHY the design space is constrained to binary primitives (BE: binary pramāṇa status). H4 confirms that binary primitives → fraction form uniquely |
+| **Limitation** | If a future axiom introduces continuous contradiction strength, A1/A3/A4 become viable and the fraction form may be superseded. T8's generalization path handles this — the baseline w_j=1 is the uniform special case |
+
 ### Layer 2 Summary / Tổng kết Tầng 2
 
 | Theorem | Bridges axioms to | Level 4 dependency | Freeze status | Risk if Level 4 changes |
