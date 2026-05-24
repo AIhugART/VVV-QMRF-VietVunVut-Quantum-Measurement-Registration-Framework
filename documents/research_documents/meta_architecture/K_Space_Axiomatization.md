@@ -3,8 +3,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # K-Space Axiomatization — Registration-Logic Foundation for VVV-QMRF
 # Tiên đề hóa Không gian K — Nền tảng Registration-Logic cho VVV-QMRF
 
+> **PEER-SYNC (2026-05-24):** This file has a PEER copy at `documents/research_documents/project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md`. The two files are **peer-level equals** — any structural change (axiom, theorem, definition, open item) made to one MUST be mirrored to the other. Header metadata (version, date, status) must be kept consistent. Rule enforced by `CLAUDE.md` §PEER-SYNC and verifiable via `scripts/sync_check_k_space.sh`.
+
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
-**Document type:** `meta_architecture`
+**Document type:** `meta_architecture` (canonical source copy)
 **Date:** 2026-05-19 (updated 2026-05-24)
 **Version:** 2.2
 **Author:** VietVunVut (Viet - Nguyen Xuan)

@@ -95,6 +95,17 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 - Treat VVV-QMRF-EX as having completed its main role of providing a quantitative map of K-rho relationships; its current highest value is intelligence about important nodes, structural gaps, and stress points, not direct data import or merging EX edges into the core.
 - Use VVV-QMRF-EX as a compass, not as cargo: let EX guide RCA, prioritization, and verification, but do not import EX structures into the core unless the RCA isolates a core-level necessity.
 
+### PEER-SYNC — K_Space_Axiomatization.md dual-copy rule
+
+- Two peer-level copies of `K_Space_Axiomatization.md` exist and MUST be kept in sync:
+  - **Canonical copy:** `documents/research_documents/meta_architecture/K_Space_Axiomatization.md`
+  - **Class C working copy:** `documents/research_documents/project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md`
+- When editing EITHER file's structural content (axioms K1-K8, K5_prospective, bridge theorems T1-T8, open items, Layer 1/2 Summary tables), the SAME change MUST be applied to the peer file.
+- Header metadata (version, date, status) must stay consistent between both copies.
+- Before committing changes to one, verify the other is in sync via: `bash scripts/sync_check_k_space.sh`
+- If only one file is modified in a commit, the commit message MUST explain why (e.g., "header-only fix, no structural delta").
+- This rule exists because a prior session (2026-05-24) discovered a 3-commit drift: the Class C copy had T8+H1-H4 while the canonical copy had none. The sync was manually repaired (commit `bc6f2fc`). Do not repeat this drift.
+
 This file provides guidance to Claude Code when working in this project.
 
 ## Project context

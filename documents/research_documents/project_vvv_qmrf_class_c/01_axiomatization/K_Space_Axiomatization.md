@@ -3,12 +3,14 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # K-Space Axiomatization — Registration-Logic Foundation for VVV-QMRF
 # Tiên đề hóa Không gian K — Nền tảng Registration-Logic cho VVV-QMRF
 
+> **PEER-SYNC (2026-05-24):** This file has a PEER copy at `documents/research_documents/meta_architecture/K_Space_Axiomatization.md`. The two files are **peer-level equals** — any structural change (axiom, theorem, definition, open item) made to one MUST be mirrored to the other. Header metadata (version, date, status) must be kept consistent. Rule enforced by `CLAUDE.md` §PEER-SYNC and verifiable via `scripts/sync_check_k_space.sh`.
+
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
-**Document type:** `meta_architecture`
-**Date:** 2026-05-19
-**Version:** 2.1
+**Document type:** `meta_architecture` (Class C working copy)
+**Date:** 2026-05-19 (updated 2026-05-24)
+**Version:** 2.2
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** v2.1 — algebraic layer extension. Layer 1 (K1-K8) is frozen; Layer 2 extended with T5-T7. **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D proposed registration-layer structures unless separately upgraded.
+**Status:** v2.2 — Layer 1 extended with K5_prospective (P9 bridge, v29). Layer 2 extended with T8 (K5_prospective Frequency Bridge + H1-H4). **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. **UPDATE (2026-05-24):** T8 bridges K5_prospective ↔ K9_E f_perp; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas). Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D; T8 is Class C (structural derivation from K5_prospective).
 **Source:** Derived from VVV-QMRF Working Paper v2.0 Section 7.2 deferred item #5
 **Cite:** VVV-QMRF §K-AXIOM
 **Plan reference:** `papers/Testable_Prediction_Section/extended_wigners_friend_k_side_incommensurability/plan/VVV-QMRF_K_Space_Axiomatization_Plan.md`
