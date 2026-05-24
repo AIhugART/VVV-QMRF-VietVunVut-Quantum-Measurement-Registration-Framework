@@ -4,11 +4,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v31 (2026-05-24) — K9E-PAT CLOSED (UNRESOLVABLE) + Post-v30 Execution Plan created; IBM Quantum track rejected (double category error)
+**Version:** v32 (2026-05-24) — Formal definitions + SOT clarified + 3-project boundary + mapping-as-analogy + framework disclaimer
 **Zenodo DOI:** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0)
 **License:** CC BY 4.0
 
-> **DISCLAIMER:** VVV-QMRF is independent Class C personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
+> **DISCLAIMER:** VVV-QMRF is independent Class C personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. VVV-QMRF is a **conceptual framework**, not a physical theory — it provides formal language for analyzing measurement registration but does not modify quantum dynamics. Full boundary protocol: `DISCLAIMER.md`. Formal definitions: [`06_references/VVV_QMRF_Definitions.md`](06_references/VVV_QMRF_Definitions.md).
 
 ---
 
@@ -16,7 +16,22 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 Standard Quantum Mechanics has four physical postulates (P1–P4) describing state space, observables, measurement, and dynamics. These postulates are silent on the **registration architecture** of measurement — they do not specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the registering system.
 
-VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 (Layer 1, frozen) with bridge theorems T1–T7 (Layer 2). The framework identifies where standard QM interpretations lack the structural machinery to formalize registration-layer conditions. The K-space carrier supports 16 registration-layer postulates (E1–E16) derived from structural analysis of Buddhist Pramana epistemology (Dignaga–Dharmakirti tradition).
+VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 (Layer 1, frozen) with bridge theorems T1–T8 (Layer 2). The framework identifies where standard QM interpretations lack the structural machinery to formalize registration-layer conditions.
+
+**IMPORTANT:** VVV-QMRF is a **conceptual framework**, not a physical theory. It provides language and structure for analyzing measurement registration but does not propose new physical dynamics. The framework itself is not directly falsifiable. The **testable hypothesis** emerging from this framework is K9_E (P9) — see §2 and [Formal Definitions](06_references/VVV_QMRF_Definitions.md).
+
+### This Repository Contains Three Logically Independent Projects
+
+| # | Project | Type | Status |
+|---|---------|------|--------|
+| **A** | BE↔QM Comparative Mapping | Interpretive framework (comparative philosophy) | 30 nodes, 39 edges |
+| **B** | VVV-QMRF Conceptual Framework | Conceptual architecture (K1-K8, T1-T8, E1-E16) | Frozen (Layer 1) |
+| **C** | K9_E Testable Hypothesis | Falsifiable hypothesis + experimental proposal | Paper draft v2 |
+
+> **MOTIVATION CHAIN (one-way, not derivational):**
+> Project A → (motivates) → Project B → (motivates) → Project C.
+>
+> K9_E (Project C) can be tested independently of Projects A and B. A null result falsifies K9_E but does not invalidate the framework. A positive result confirms the hypothesis but does not prove the framework. Each project stands or falls on its own. See [Formal Definitions §4](06_references/VVV_QMRF_Definitions.md).
 
 VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H), where B(H) is the algebra of bounded operators on Hilbert space (Class D conjecture; Track B Phases 1–3 complete).
 

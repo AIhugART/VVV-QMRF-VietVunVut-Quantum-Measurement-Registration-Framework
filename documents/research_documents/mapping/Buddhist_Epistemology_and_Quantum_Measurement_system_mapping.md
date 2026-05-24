@@ -7,6 +7,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Document type:** mapping
 
+> **BOUNDARY — All BE↔QM correspondences are structural ANALOGIES at the conceptual level.
+> They do NOT constitute formal mathematical identities or logical derivations. Their
+> value is heuristic: identifying similar patterns that may motivate new hypotheses.
+> See `VVV_QMRF_Definitions.md` for full project boundaries.
+
 ---
 
 ## Canonical Identification / Nhận diện Chuẩn
