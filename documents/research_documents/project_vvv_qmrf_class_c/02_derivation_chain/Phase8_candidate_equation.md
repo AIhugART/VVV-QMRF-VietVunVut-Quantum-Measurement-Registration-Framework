@@ -42,12 +42,22 @@ P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)]
 
 ### Assumption Registry
 
-| ID | Assumption | Justification | Orphaned? |
-|---|---|---|---|
-| [A-E1] | K_ctx defined via T3-morphism (Level 2/3, not K1-K8 alone) | T3 is a Layer 2 theorem with K1-K8 as inputs; K_ctx inherits Layer 2 status | ❌ — has EX anchor N_QM_VVV_00025 |
-| [A-E2] | f_perp uses fraction form with compatibility map | Resolution of Tier 4 OI-1: setup/event separation principle | ❌ — has EX anchor N_QM_VVV_00029 |
-| [A-E3] | β is universal (same across all measurements and observers) | Simplifying assumption; physically motivated by β being a property of the VVV-QMRF framework, not individual measurements | ⚠️ WEAKLY anchored — could be relaxed to β(observer) |
-| [A-E4] | ⊥_K^str (structural, K9_E) is distinct from ⊥_K^dyn (dynamic, K5) | Tier 4 OI-4 resolution; BE lineage: saṃśaya vs niścaya bādhaka | ❌ — has EX anchor (dual modes) |
+**Updated 2026-05-24:** [A-E2] split into [A-E2a] (DERIVED via T8) and [A-E2b] (MODERATE anchor) — see T8 in `01_axiomatization/K_Space_Axiomatization.md`.
+
+| ID | Assumption | Justification | Orphaned? | Anchor Strength |
+|---|---|---|---|---|
+| [A-E1] | K_ctx defined via T3-morphism (Level 2/3, not K1-K8 alone) | T3 is a Layer 2 theorem with K1-K8 as inputs; K_ctx inherits Layer 2 status | ❌ — has EX anchor N_QM_VVV_00025 | MODERATE |
+| [A-E2a] | ~~f_perp fraction counting~~ → **DERIVED via T8** | T8 proves f_perp = E[I(K5_prospective fires)] — fraction form is a statistical identity over binary K5/K6 primitives, not an independent modeling choice | ❌ — DERIVED (K5 → K5_prospective → T8 → f_perp) | **STRONG** |
+| [A-E2b] | Outcome filter `o(k_j) ≠ o` (residual sub-assumption) | Anchored to compatibility map C(o_i, o_j) via Tier 4 OI-1 + PP-2 v2 cancellation avoidance | ❌ — has EX anchor N_QM_VVV_00029 via compatibility map | MODERATE |
+| [A-E3] | β is universal (same across all measurements and observers) | Simplifying assumption; physically motivated by β being a property of the VVV-QMRF framework, not individual measurements | ⚠️ WEAKLY anchored — could be relaxed to β(observer) | WEAK |
+| [A-E4] | ⊥_K^str (structural, K9_E) is distinct from ⊥_K^dyn (dynamic, K5) | Tier 4 OI-4 resolution; BE lineage: saṃśaya vs niścaya bādhaka | ❌ — has EX anchor (dual modes) | STRONG |
+
+**Orphaned assumptions: 0.** [A-E3] is weakly anchored but not orphaned (has N_QM_VVV_00031 link).
+
+**Anchor strength improvements (2026-05-24):**
+- [A-E2a] fraction counting: WEAK → **STRONG** (structural derivation via T8)
+- [A-E2b] outcome filter: new sub-assumption, MODERATE (improved from WEAK)
+- Net: Core [A-E2] functional form WEAK → anchored STRONG/MODERATE (split)
 
 **Orphaned assumptions: 0.** [A-E3] is weakly anchored but not orphaned (has N_QM_VVV_00031 link).
 

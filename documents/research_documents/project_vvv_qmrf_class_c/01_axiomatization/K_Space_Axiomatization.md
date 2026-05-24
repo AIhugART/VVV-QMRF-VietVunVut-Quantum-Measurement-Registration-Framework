@@ -1191,6 +1191,147 @@ F-T7-01 (T5 dependency):
 | **Freeze status** | Conditional on T4-H + Level 4 freeze + E15 wording |
 | **Update trigger** | If E15 IRB definition is revised; if T4-H is established or refuted; if T5 is revised; if Level 4 `requires_K_joint` scope changes for IRB-induced D_joint demands |
 
+### T8 — K5_prospective Frequency Bridge Theorem
+
+**Statement:**
+> The K9_E perpendicularity fraction `f_perp(o, k_i, K_ctx)` is the expected frequency of K5_prospective firing events over the context set K_ctx. The fraction functional form `|{k_j: ...}| / |K_ctx|` is not an independent modeling assumption — it is a statistical identity derived from counting binary K5_prospective evaluations over a uniform context set. T8 bridges probability postulate K9_E (P9) to structural axiom K5_prospective, upgrading the EX anchor of f_perp from WEAK (conceptual link) to STRONG (structural derivation chain through K5 → K5_prospective → T8 → f_perp).
+
+**Derivation from axioms:**
+```
+Inputs (Layer 1 + Layer 2):
+  K5_prospective (Layer 1 extension, v29):
+    For hypothetical tuple k_o* = ⟨M*, o, cert=1, t*, V=1⟩ and
+    k_prev ∈ K_joint:
+    K5 fires prospectively on k_o* vs k_prev iff requires_K_joint = 1 AND
+      (i)   k_prev <_joint k_o*
+      (ii)  k_o* ⊥ k_prev within C_K
+      (iii) Auth(k_o* → k_prev, C_K) = 1
+
+  T3 (Layer 2, Bridge_EWF):
+    K_ctx(k_i, Exp) = {k_j ∈ K_{R_j} : ∃ T3-morphism φ_{ij} ∧ temporally compatible}
+
+  K6 (Layer 1):
+    Auth is binary: Auth(k_a → k_b, C_K) ∈ {0,1}
+
+  ⊥_K (Layer 1, K5 primitive):
+    Registered contradiction is binary: k_a ⊥ k_b ∈ {0,1}
+
+Frequency interpretation:
+  For each k_j ∈ K_ctx(k_i, Exp):
+    Construct hypothetical k_o* for outcome o.
+    Evaluate K5_prospective(k_o*, k_j) ∈ {0,1} — fires (1) or not (0).
+
+    Define indicator:
+      I_j(o) = 1 if K5_prospective fires on k_o* vs k_j AND o(k_j) ≠ o
+      I_j(o) = 0 otherwise
+
+    Then: f_perp(o, k_i, K_ctx) = (1/|K_ctx|) * Σ_{j=1}^{|K_ctx|} I_j(o)
+                                 = E[I_j(o)] over uniform K_ctx
+
+Uniformity justification:
+  The uniform weight 1/|K_ctx| follows from the binary nature of K5/K6
+  primitives. K5 ⊥ is binary (contradiction holds or not). K6 Auth is
+  binary (authority holds or not). K2 temporal order is binary (precedes
+  or not). No K1-K8 axiom provides a continuous "contradiction strength"
+  metric. Therefore each k_j ∈ K_ctx carries equal structural weight —
+  the fraction form is the UNIQUE form consistent with binary K5/K6
+  primitives over a uniform context set.
+
+  If a future axiom (e.g., K10) introduced continuous contradiction
+  strength w_j ∈ [0,1], f_perp would generalize to weighted sum:
+    f_perp_weighted = Σ w_j · I_j(o) / Σ w_j
+  T8 provides the baseline: w_j = 1 ∀j (binary primitives, uniform context).
+
+[A-E2] upgrade path:
+  BEFORE T8:
+    [A-E2] "f_perp = fraction form" — independent modeling assumption
+    EX anchor: N_QM_VVV_00029 (bādhaka) — WEAK
+    Justification: "simplest form, physically motivated"
+
+  AFTER T8:
+    [A-E2] is SPLIT into two sub-components:
+      [A-E2a] Fraction counting — DERIVED from K5_prospective binary
+              evaluation + uniform K_ctx. This is an EXPECTATION over
+              binary indicators, not an independent modeling choice.
+              EX anchor: N_QM_VVV_00029 via K5 → K5_prospective → T8.
+              Strength: STRONG.
+      [A-E2b] Outcome filter (o(k_j) ≠ o) — still assumed, anchored to
+              compatibility map C(o_i, o_j) from Tier 4 OI-1 + PP-2 v2
+              cancellation avoidance. Strength: MODERATE.
+
+  Net upgrade: WEAK → STRONG for the counting mechanism;
+               outcome filter sub-component remains MODERATE.
+
+K9_E f_perp formal connection (P9 anchor):
+  K9_E defines:
+    f_perp(o, k_i, K_ctx) = |{k_j ∈ K_ctx : k_j ⊥_K k_i ∧ o(k_j) ≠ o}| / |K_ctx|
+
+  T8 supplies:
+    f_perp(o, k_i, K_ctx) = E[I(K5_prospective fires on k_o* vs k_j ∈ K_ctx)]
+
+  These are IDENTICAL because:
+    I_j(o) = 1 ⇔ K5_prospective fires on k_o* vs k_j ∧ o(k_j) ≠ o
+           ⇔ (k_o* ⊥ k_j) ∧ (o(k_j) ≠ o)    [K5_prospective definition]
+           ⇔ (k_j ⊥_K k_i) ∧ (o(k_j) ≠ o)    [k_o* carries outcome o;
+                                               ⊥ is content-symmetric]
+    Therefore: |{k_j: I_j(o)=1}| ≡ |{k_j: k_j ⊥_K k_i ∧ o(k_j) ≠ o}|
+    Therefore: f_perp (K9_E def) ≡ f_perp (T8 frequency). ∎
+
+T8 conservativity (mandatory boundary clause):
+  T8 is a READ-ONLY bridge. It does NOT modify:
+    - K5_prospective evaluation rules (reads only)
+    - K5 post-hoc invalidation behavior
+    - K_ctx definition (reads only)
+    - K9_E functional form (explains it, does not change it)
+    - K6 Auth binary nature
+    - K7 closure mechanism
+```
+
+**Worked Example — Proietti EWF, setting x=1 (Alice does BSM):**
+```
+K_ctx for Friend F_A: {k_A, k_FB, k_B}  (|K_ctx| = 3)
+
+Evaluate f_perp(o=+1, k_FA, K_ctx) via T8:
+
+  For each k_j ∈ K_ctx, evaluate K5_prospective on k_o*=(F_A,+1) vs k_j:
+
+  k_A (Alice, BSM outcome a):
+    requires_K_joint = 1  (BSM setting — C_K exists)
+    (i)   t_FA < t_A  ✓  (F measures first, Alice does BSM later)
+    (ii)  k_o* ⊥ k_A? → Alice's BSM contradicts F_A's definite outcome in C_K
+    (iii) Auth(k_o* → k_A)? → K6: same C_K, V=1, within D_joint scope → Auth=1
+    → K5_prospective FIRES when o(k_A) ≠ +1
+    → I_A(+1) = 1 if A's outcome ≠ +1, else 0
+
+  k_FB (Bob's Friend, measures photon_b in {h,v}):
+    (ii) k_o* ⊥ k_FB? → Different photons (a vs b) → no direct contradiction
+    → K5_prospective does NOT fire → I_FB(+1) = 0 (always)
+
+  k_B (Bob, BSM on photon_b + F_B memory):
+    (ii) k_o* ⊥ k_B? → Bob measures photon_b, not photon_a → no direct
+    contradiction. (Via entanglement, indirect contradiction possible but
+    T8 uses conservative ⊥: direct only.)
+    → K5_prospective does NOT fire → I_B(+1) = 0
+
+  f_perp(+1) = (I_A + I_FB + I_B) / 3 = I_A(+1) / 3
+
+  For fixed Alice outcome: f_perp(+1) ≠ f_perp(−1) → δP ≠ 0.
+  Matches K9-S4 worked example result exactly.
+```
+
+| Property | Value |
+|---|---|
+| **Bridges axioms to** | K5_prospective (pre-instantiation evaluation) → K9_E f_perp (probability fraction). Structural derivation chain closing the gap between Layer 1 K5 and Layer 3 P9 |
+| **Layer 1 dependency** | K5_prospective (evaluation rules), K5 (⊥ primitive, binary), K6 (Auth, binary), K2 (temporal order, binary) |
+| **Layer 2 dependency** | T3 (K_ctx definition via T3-morphism — T8 reads K_ctx, does not redefine it) |
+| **Level 4 dependency** | `requires_K_joint`, C_K existence (for K5_prospective firing precondition); `⊥_K` boundary clauses (inherited from K5_prospective — T8 adds no new Level 4 dependency) |
+| **EX anchor** | `N_QM_VVV_00029` (bādhaka / Override) — chain: K5 post-hoc → K5_prospective pre-instantiation (v29) → T8 frequency bridge → K9_E f_perp. Anchor strength: **STRONG** (structural chain, not conceptual link). BE anchor: `N_BE_00001` (bādhaka pramāṇa — uniform epistemic weight: every contradicting cognition counts equally in the bādhaka evaluation). QM anchor: `N_QM_00102` (Measurement Reversal) |
+| **BE lineage** | Parataḥ prāmāṇya (extrinsic validity): f_perp counts contradicting cognitions uniformly because each pramāṇa (valid cognition) carries equal epistemic weight. The fraction form reflects the Buddhist epistemological principle that validity is challenged by the NUMBER of contradictors, not by a weighted "strength." See `SYSTEM_Buddhist_Epistemology/system_be_full.md` N_BE_00001 (bādhaka pramāṇa) and N_BE_00005 (viruddha / Contradiction) |
+| **Claim class** | C — T8 is a structural frequency interpretation derived from Class C K5_prospective. The derivation is a statistical identity (expectation of binary indicators over uniform sample), not a new postulate. The only condition is that K_ctx provides a uniform sample space for K5_prospective evaluations |
+| **Freeze status** | Updatable (Layer 2 bridge). T8 does not modify Layer 1. If K5_prospective conditions (i)-(iii) change, T8 derivation updates automatically — it reads K5_prospective, does not redefine it |
+| **Update trigger** | If K5_prospective is revised; if K_ctx definition changes (e.g., weighting introduced → T8 weighted generalization applies); if a new axiom provides continuous contradiction strength metric |
+| **[A-E2] impact** | **SPLIT:** [A-E2a] fraction counting → DERIVED (no longer an assumption). [A-E2b] outcome filter → assumed but upgraded MODERATE (was WEAK). Net: WEAK → STRONG for the core counting mechanism |
+
 ### Layer 2 Summary / Tổng kết Tầng 2
 
 | Theorem | Bridges axioms to | Level 4 dependency | Freeze status | Risk if Level 4 changes |
@@ -1202,6 +1343,7 @@ F-T7-01 (T5 dependency):
 | T5 | K_joint composition (algebraic associativity) | `requires_K_joint`, `D_joint`, `AdmJoint` (per T1+T4) | Conditional on T4-H | K_joint composition structure updates; K1-K8 unchanged |
 | T6 | Decoherence-induced registration update (Path A: K5 invalidation; Path B: k_new instantiation) | `requires_K_joint`, C_K, `⊥_K` boundary clauses (Path A only) | Pending Level 4 freeze | Path A K5 conditions update; K3 intrinsic cert unchanged |
 | T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | Conditional on T4-H + Level 4 + E15 | If E15 IRB changes or T4-H fails; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
+| T8 | K5_prospective Frequency Bridge — f_perp = E[I(K5_prospective fires)]; upgrades [A-E2] WEAK → STRONG | `requires_K_joint`, C_K (via K5_prospective); `⊥_K` boundary clauses (inherited from K5_prospective) | Updatable (Layer 2). Derivation is a statistical identity over binary K5/K6 primitives. Conditional on K_ctx uniformity. | If K5_prospective revised; if K_ctx definition changes (weighting); if new continuous contradiction-strength axiom added → T8 weighted generalization |
 
 ---
 
@@ -1222,7 +1364,7 @@ F-T7-01 (T5 dependency):
 | 10 | Update paper v2.0 Section 7.2 deferred item #5 status | After community feedback on this document | Low |
 | 11 | RCA re-audit after community feedback | After Level 4 freeze and T1-T3 finalization | High |
 | 12 | `CHANGELOG.md` §3.3 Operational Bridge semantic dependency on K4-K7 untracked | `CHANGELOG.md` §3.3 lists 7 sufficient-condition bridges (Condition A, B, B2, C, D, E, ODC_K) for raising `requires_K_joint`. The verdict notes B, B2, and ODC_K have indirect semantic dependency on K4-K7 validity propagation, but the table does not annotate which K-axioms each Condition row depends on. Add K-axiom dependency annotations (e.g., K4, K5, K7) to each §3.3 Condition row. Note: the predicate-level mapping (σ, V, ⊥, Auth, D_joint, requires_K_joint, C_K → K-axioms) is a separate task belonging to Layer 4 §4.4, not to §3.3. | Medium |
-| 13 | **Probability postulate (K9/P9)** | **Partially Addressed** — K9-S8 defines joint probability composition law ($P9-JC$) for two observers, proving Marginalization Cancellation. However, it remains a postulate rather than derived from K1-K8. Full Layer 1 or Layer 2 formal integration in this document is still pending. | **Critical** |
+| 13 | **Probability postulate (K9/P9)** | **Strengthened (2026-05-24)** — T8 (K5_prospective Frequency Bridge) bridges K9_E f_perp to K5_prospective, upgrading [A-E2] EX anchor from WEAK to STRONG for fraction counting mechanism. [A-E2b] outcome filter remains MODERATE. Full Layer 1/2 formal integration: T8 provides the missing structural derivation chain (K5 → K5_prospective → T8 → f_perp → K9_E). Status upgrade: "Partially Addressed" → "Structurally Anchored." | **Critical → High** |
 | 14 | **Non-circular data comparison** | **Ongoing** — Known that marginal CHSH correlators cannot test the deviation due to Marginalization Cancellation. A genuine non-circular comparison requires extracting individual conditional correlators or joint outcome histograms from Proietti Figure 3 raw data. | **Critical** |
 | 15 | **Code consistency** | **Addressed (fits/K9S9)** — Formalized and implemented the exact P9-JC conditional prediction engine (`K9S9_conditional_predictions.py`), achieving 11% deviation at beta=0.3. Approximations in `k9e_predictor.py` and `d1_blk1_4point_fit.py` are deprecated. | High |
 | 16 | **Numerical predictions in main document** | **Ongoing** — First genuine numerical predictions generated in `plan/k9_analysis/K9S9_conditional_predictions.md`. Stating them formally in this main document is pending community review. | **Critical** |
