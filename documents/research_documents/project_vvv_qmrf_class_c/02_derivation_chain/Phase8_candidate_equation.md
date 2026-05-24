@@ -48,7 +48,7 @@ P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)]
 |---|---|---|---|---|
 | [A-E1] | K_ctx defined via T3-morphism (Level 2/3, not K1-K8 alone) | T3 is a Layer 2 theorem with K1-K8 as inputs; K_ctx inherits Layer 2 status | ❌ — has EX anchor N_QM_VVV_00025 | MODERATE |
 | [A-E2a] | ~~f_perp fraction counting~~ → **DERIVED via T8** | T8 proves f_perp = E[I(K5_prospective fires)] — fraction form is a statistical identity over binary K5/K6 primitives, not an independent modeling choice | ❌ — DERIVED (K5 → K5_prospective → T8 → f_perp) | **STRONG** |
-| [A-E2b] | Outcome filter `o(k_j) ≠ o` (residual sub-assumption) | Anchored to compatibility map C(o_i, o_j) via Tier 4 OI-1 + PP-2 v2 cancellation avoidance. Strengthened by H3 (BE: binary pramāṇa → uniform weight) + H4 (comparative analysis — fraction form is unique survivor among 5 alternatives) | ❌ — has EX anchor N_QM_VVV_00029 via compatibility map + BE anchor N_BE_00001/N_BE_00006 via H3 | MODERATE-STRONG (was MODERATE) |
+| [A-E2b] | ~~Outcome filter `o(k_j) ≠ o`~~ → **STRUCTURALLY DETERMINED via T8-H1** | T8-H1 (structural uniqueness): binary K1-K8 primitives → uniform weight → fraction form uniquely. Outcome filter `≠` forced by PP-2 v2 (`=` → outcome-independent → cancellation → δP=0). No residual assumption — both counting AND filter are now structurally determined | ❌ — DERIVED: K1-K8 binary type system + K6 non-hierarchy + PP-2 v2 → fraction form with `≠` filter is UNIQUE admissible form | **STRONG** (was MODERATE-STRONG) |
 | [A-E3] | β is universal (same across all measurements and observers) | Simplifying assumption; physically motivated by β being a property of the VVV-QMRF framework, not individual measurements | ⚠️ WEAKLY anchored — could be relaxed to β(observer) | WEAK |
 | [A-E4] | ⊥_K^str (structural, K9_E) is distinct from ⊥_K^dyn (dynamic, K5) | Tier 4 OI-4 resolution; BE lineage: saṃśaya vs niścaya bādhaka | ❌ — has EX anchor (dual modes) | STRONG |
 
@@ -56,10 +56,12 @@ P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)]
 
 **Anchor strength improvements (2026-05-24):**
 - [A-E2a] fraction counting: WEAK → **STRONG** (structural derivation via T8)
-- [A-E2b] outcome filter: WEAK → **MODERATE-STRONG** (improved from MODERATE via H3 BE justification + H4 comparative analysis)
-- H3: BE principle (Dharmakīrti: binary pramāṇa/apramāṇa → uniform epistemic weight) — supplementary philosophical justification
-- H4: Comparative analysis — 4 natural alternatives (A1 quantum-overlap, A2 binary, A3 Auth-weight, A4 temporal-weight) all independently eliminated; fraction form is unique survivor
-- Net: Core [A-E2] functional form WEAK → anchored STRONG (counting) + MODERATE-STRONG (filter)
+- [A-E2b] outcome filter: WEAK → MODERATE (T8 split) → MODERATE-STRONG (H3+H4) → **STRONG** (T8-H1 structural uniqueness)
+- T8: K5_prospective → f_perp = E[I_j] (positive derivation)
+- H3: BE principle (Dharmakīrti: binary pramāṇa/apramāṇa → uniform epistemic weight)
+- H4: Comparative analysis — 4 natural alternatives independently eliminated
+- **T8-H1: Structural uniqueness — binary K1-K8 type system + K6 non-hierarchy → uniform weight is FORCED, not chosen. Fraction form is the UNIQUE admissible form.**
+- **[A-E2] FULLY ELIMINATED as an assumption.** Both counting mechanism AND outcome filter are structurally determined by K1-K8 primitives. What was WEAK is now a structural theorem chain: T8 + T8-H1 + H3 + H4.
 
 **Orphaned assumptions: 0.** [A-E3] is weakly anchored but not orphaned (has N_QM_VVV_00031 link).
 

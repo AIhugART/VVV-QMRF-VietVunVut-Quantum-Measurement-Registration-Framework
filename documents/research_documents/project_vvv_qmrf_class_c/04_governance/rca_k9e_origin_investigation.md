@@ -46,7 +46,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 |---|---------|---------------|---------------------|--------------------|------------------------------|---------------------|---------------------|--------------------------|
 | A-E1 | `[A-E1]` | K_ctx defined via T3-morphism (Level 2/3) | **Y** | **N** | — | Không có | — | **5/10** — Được flag assumption rõ ràng trong K9-S4. Có EX anchor MODERATE (N_QM_VVV_00025). T3-morphism là Layer 2 theorem (có từ K_Space_Axiomatization.md pre-Class C). Việc dùng T3 để define K_ctx là new construction. Không hallucination vì minh bạch. |
 | A-E2a | `[A-E2a]` | f_perp fraction counting — **DERIVED via T8** | **Y** | **N** | — | Không có | — | **SPLIT 2026-05-24:** Fraction counting mechanism đã được DERIVE qua T8 bridge: f_perp = E[I(K5_prospective fires)]. Đây là statistical identity over binary K5/K6 primitives — không còn là assumption. EX anchor: STRONG (K5 → K5_prospective → T8 → f_perp). |
-| A-E2b | `[A-E2b]` | Outcome filter `o(k_j) ≠ o` — residual sub-assumption | **Y** | **N** | — | Không có | — | **2/10** ⬇ (was 3/10) — H3+H4 strengthening: BE binary pramāṇa principle + comparative analysis (4 alternatives eliminated). Scope minimal (outcome filter only). EX anchor: MODERATE-STRONG. |
+| A-E2b | `[A-E2b]` | ~~Outcome filter~~ → **STRUCTURALLY DETERMINED via T8-H1** | **Y** | **N** | — | Không có | — | **1/10** ⬇ (was 2/10) — T8-H1 structural uniqueness: binary K1-K8 + K6 non-hierarchy → uniform weight + `≠` forced by PP-2 v2. [A-E2] FULLY ELIMINATED. |
 | A-E3 | `[A-E3]` | β is universal (same for all measurements and observers) | **Y** | **N** | — | Không có. Gần nhất: universal coupling constants trong physics | Universal constants (e.g., α ≈ 1/137) | **5/10** — Assumption simplifying: β có thể khác nhau giữa các observer/measurement. Flag "WEAKLY anchored" trong Phase8. Có motivation vật lý (β là property of framework, not individual measurement) nhưng chưa được chứng minh. Không hallucination — được flag assumption. |
 | A-E4 | `[A-E4]` | ⊥_K^str (structural, K9_E) ≠ ⊥_K^dyn (dynamic, K5) — dual modes of contradiction | **Y** | **N** (extended) | K5 ⊥_K dynamic mode (pre-Class C). The distinction structural vs dynamic là mới (Tier 4 OI-4). | Không có | — | **4/10** — ⊥_K gốc từ K5 (pre-Class C). Việc phân biệt structural mode (dùng trong K9_E f_perp) vs dynamic mode (dùng trong K5 invalidation) là conceptual extension. Có BE lineage: saṃśaya vs niścaya bādhaka. Không hallucination — reasonable conceptual refinement. |
 
@@ -79,13 +79,13 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ### 3.2 Điểm trung bình (updated)
 
 ```
-Tổng điểm hallucination (post-T8+H3+H4):
+Tổng điểm hallucination (post-T8+H3+H4+H1):
   T1-T8:  0+5+4+3+6+1+3+3 = 25
-  A-E1→A-E4 (split): 5+0+2+5+4 = 16
+  A-E1→A-E4 (split): 5+0+1+5+4 = 15
   C1-C7:  2+1+1+2+5+4+2 = 17
-  TOTAL: 25+16+17 = 58
+  TOTAL: 25+15+17 = 57
 Số thành phần: 20 (A-E2 split → 2 rows)
-Điểm trung bình: 58/20 ≈ 2.9/10  (giảm từ 3.1/10 post-T8, 3.4/10 ban đầu)
+Điểm trung bình: 57/20 ≈ 2.85/10  (giảm từ 3.4→3.1→2.9→2.85)
 ```
 
 **Kết luận:** K9_E có điểm hallucination trung bình **3.4/10** — ở mức "có cơ sở + speculative được flag". **Không có thành phần nào đạt 7–10 (hallucination).**
@@ -173,7 +173,7 @@ Symptom: VVV-QMRF có K1-K8 (structural axioms) nhưng không có probability ru
 | Số thành phần được flag assumption | 4 (21% — giảm từ 7) |
 | Số thành phần DERIVED (không còn assumption) | 2 (11% — A-E2a, T8/C7) |
 | Số thành phần có EX anchor | 19/19 (100%) |
-| Điểm hallucination trung bình | **2.9/10** ⬇ (was 3.4→3.1→2.9) |
+| Điểm hallucination trung bình | **2.85/10** ⬇ (was 3.4→3.1→2.9→2.85) |
 | Số thành phần hallucination (7-10) | **0/19** |
 | Mức độ "bịa đặt" | **RẤT THẤP** — mọi thành phần đều có trace |
 
@@ -234,16 +234,33 @@ Symptom: VVV-QMRF có K1-K8 (structural axioms) nhưng không có probability ru
 | R3: Combined strengthening | [A-E2b] MODERATE → MODERATE-STRONG | **4.0/5** |
 | **Aggregate** | | **4.5/5** ✅ PASS |
 
-### 8.5 Net impact (cumulative)
+### 8.5 H1 — Structural Uniqueness Proof (2026-05-24)
 
-| Metric | Ban đầu | Post-T8 | Post-T8+H3+H4 |
-|--------|---------|---------|---------------|
-| Hallucination score TB | 3.4/10 | 3.1/10 | **2.9/10** |
-| Assumptions flagged | 4 | 3 | 3 |
-| Assumptions DERIVED | 0 | 1 (A-E2a) | 1 (A-E2a) |
-| [A-E2b] anchor | WEAK | MODERATE | **MODERATE-STRONG** |
-| BE lineage depth | Shallow | Moderate | **Deep (Dharmakīrti citation)** |
-| Negative evidence | None | None | **H4: 4 alternatives eliminated** |
+**T8-H1:** 5 lemmas proving uniform weight is FORCED, not chosen:
+- Lemma 1: Weight source must be K1-K8 primitives (ρ-side + new params blocked)
+- Lemma 2: All K1-K8 primitives are binary (type inventory — no continuous values)
+- Lemma 3: Temporal information cannot supply continuous weights (K2 discreteness)
+- Lemma 4: K6 non-hierarchy → permutation invariance of K_ctx
+- Lemma 5: Permutation invariance → w_j = const → fraction form uniquely
+
+Plus additivity supplement excluding non-linear alternatives (c²/n², etc.).
+
+| Round | Focus | Score |
+|-------|-------|-------|
+| R1: Correctness | 5 lemmas, all grounded in K1-K8 text | **5.0/5** |
+| R2: K6 load-bearing audit | Non-hierarchy clause elevated to critical role — justified | **4.5/5** |
+| R3: Impact | [A-E2b] MODERATE-STRONG → STRONG. [A-E2] FULLY ELIMINATED | **5.0/5** |
+| **Aggregate** | | **4.83/5** ✅ |
+
+### 8.6 Net impact (cumulative)
+
+| Metric | Ban đầu | Post-T8 | +H3+H4 | +H1 |
+|--------|---------|---------|--------|------|
+| Hallucination score TB | 3.4 | 3.1 | 2.9 | **2.85** |
+| Assumptions flagged | 4 | 3 | 3 | **2** (A-E2 fully gone) |
+| Assumptions DERIVED | 0 | 1 | 1 | **2** (A-E2a + A-E2b) |
+| [A-E2] overall anchor | WEAK | STRONG/MOD | STRONG/MOD-STR | **STRONG/STRONG** |
+| Proof type | None | Positive | +Negative | **+Uniqueness** |
 
 ---
 
@@ -254,10 +271,11 @@ Symptom: VVV-QMRF có K1-K8 (structural axioms) nhưng không có probability ru
 | 1 | ~~Củng cố EX anchor cho [A-E2] (f_perp functional form)~~ | MEDIUM | **RESOLVED (2026-05-24)** — T8 bridge: [A-E2a] DERIVED (STRONG), [A-E2b] MODERATE |
 | 2 | Củng cố EX anchor cho [A-E3] (β universal) — hiện tại WEAK | MEDIUM | Open |
 | 3 | Formal hóa T3-morphism channel cho K_ctx — hiện tại là assumption [A-E1] | HIGH | Open |
-| 4 | ~~Củng cố [A-E2b] outcome filter~~ | LOW | **RESOLVED (2026-05-24)** — H3 (BE binary pramāṇa) + H4 (4 alternatives eliminated). MODERATE → MODERATE-STRONG |
-| 5 | ~~Document motivation của fraction form~~ | LOW | **RESOLVED** — T8 uniformity justification + H3 BE principle + H4 comparative analysis |
+| 4 | ~~Củng cố [A-E2b] outcome filter~~ | LOW | **RESOLVED (2026-05-24)** — T8-H1 structural uniqueness: [A-E2] FULLY ELIMINATED. Both counting + filter are structurally determined |
+| 5 | ~~Document motivation của fraction form~~ | LOW | **RESOLVED** — T8 + H3 + H4 + T8-H1: complete proof chain |
 | 6 | Giữ nguyên practice: flag mọi assumption, trace mọi term | ONGOING | Ongoing |
+| 7 | ~~Triển khai H1 uniqueness proof~~ | HIGH | **RESOLVED (2026-05-24)** — T8-H1: 5 lemmas, 3-RCA 4.83/5 |
 
 ---
 
-*RCA Investigation: K9_E Origin — 2026-05-24 (updated post-T8+H3+H4). 20 components investigated. Average hallucination score: 2.9/10 (giảm từ 3.4→3.1→2.9). Verdict: NOT hallucination. T8 structural bridge + H3 BE justification + H4 comparative analysis — [A-E2] WEAK → STRONG (counting) + MODERATE-STRONG (filter).*
+*RCA Investigation: K9_E Origin — 2026-05-24 (final: T8+H3+H4+H1 complete). 20 components, avg hallucination 2.85/10 (3.4→3.1→2.9→2.85). [A-E2] FULLY ELIMINATED. Chain: K5→K5_prospective→T8→T8-H1→f_perp closed. Verdict: NOT hallucination — systematically constructed, structurally proven.*
