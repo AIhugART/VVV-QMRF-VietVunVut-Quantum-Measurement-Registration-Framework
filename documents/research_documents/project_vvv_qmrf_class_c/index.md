@@ -105,7 +105,7 @@ where:
 ├── 1 term from Standard QM (T1: Born rule)
 ├── 1 term modified from QM (T6: normalization)
 ├── 6 terms ENTIRELY NEW (T2, T3, T4, T5, T7, T8)
-└── 0 orphaned assumptions. Originally 4 assumptions [A-E1]–[A-E4]. [A-E2] FULLY ELIMINATED (T8-H1). [A-E1] FULLY ELIMINATED (T9, L1-L5). [A-E4] BE-anchored. Only [A-E3] remains (β universal, 1/4).
+└── 0 orphaned assumptions. Originally 4 assumptions [A-E1]–[A-E4]. [A-E1] FULLY ELIMINATED (T9, L1-L5). [A-E2] FULLY ELIMINATED (T8-H1). [A-E3] RECLASSIFIED: FREE PARAMETER (β — measurement target, not assumption). [A-E4] BE-anchored. Net: 0 assumptions, 1 free parameter (β). See [RCA A-E3 Final Verdict](04_governance/RCA_A_E3_beta_universal_final_verdict.md).
 ```
 
 See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equation.md) for the full decomposition.

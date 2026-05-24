@@ -92,7 +92,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Fix:** Update Phase9 lines 154-157 and 104-106 to reflect [A-E1] ELIMINATED, [A-E2] SPLIT into [A-E2a] DERIVED, [A-E2b] MODERATE. Add ERRATUM note referencing T8/T9.
 
-### D3: [A-E3] beta universal — last remaining assumption (HIGH — 4.2/5)
+### D3: [A-E3] beta universal — RESOLVED (2026-05-24 3-Round RCA)
+
+**Status: RESOLVED.** See [RCA A-E3 Final Verdict](RCA_A_E3_beta_universal_final_verdict.md). Verdict: [A-E3] RECLASSIFIED as FREE PARAMETER (MEASUREMENT TARGET). β universality = MODELING CHOICE (Occam's razor). 0 assumptions remain.
 
 | Why | Answer |
 |-----|--------|
@@ -167,7 +169,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | # | Item | Score | Fix | Effort |
 |---|------|-------|-----|--------|
-| D3 | [A-E3] beta universal reclassification | 4.2/5 | Reclassify from WEAKLY JUSTIFIED to FREE PARAMETER (MEASUREMENT TARGET). Update Phase8, Phase9, Phase13. | 30 min |
+| D3 | [A-E3] beta universal — RESOLVED | 4.2/5 | **RESOLVED (2026-05-24).** Reclassified as FREE PARAMETER. See RCA_A_E3_beta_universal_final_verdict.md. | Done |
 | D4 | K9E-PAT multiplicative pattern not confirmed | 4.0/5 | Add explicit caveat in index.md Section 5 Key Numbers. Document g=0.146 as calibration (not prediction). | 15 min |
 | D5 | T4-H Steps 3-4 DEFERRED | 3.8/5 | Accept as documented gap. Update status to "DEFERRED per D-T4-BYPASS-01, not blocking." | 5 min (no change needed) |
 | D6 | Two divergent K9_E implementations | 3.7/5 | Document model comparison in index.md Section 7. Add recommendation: prefer multiplicative for genuine fit, additive for sanity checks. | 20 min |
@@ -216,10 +218,10 @@ EX compass confirms: the highest-stress debt is T4-H completion (D5) and beta pa
 |-----------|----------------------|-------------------------------|----------------|
 | [A-E1] K_ctx via T3-morphism | MODERATE | **FULLY ELIMINATED** (T9, L1-L5) | Sync canonical copy (D1) |
 | [A-E2] f_perp fraction form | WEAK | **SPLIT:** [A-E2a] DERIVED (T8, H1, H3, H4) + [A-E2b] MODERATE (outcome filter) | Update Phase9 (D2), Phase8 (D7) |
-| [A-E3] beta universal | WEAKLY JUSTIFIED | **MODERATE-STRONG** (reclassified: FREE PARAMETER) | Reclassify documentation (D3) |
+| [A-E3] beta universal | WEAKLY JUSTIFIED | **RECLASSIFIED: FREE PARAMETER** (2026-05-24 RCA) | See RCA_A_E3_beta_universal_final_verdict.md |
 | [A-E4] bot_K^str != bot_K^dyn | STRONG | **STRONG** (unchanged) | None |
 
-**Original: 4 assumptions. Current: 1 assumption ([A-E3]) + 1 modeling choice ([A-E2b]). Net reduction: 4→2 (or 4→1 if [A-E2b] is accepted as structural derivation).**
+**Original: 4 assumptions. Current: 0 assumptions + 1 free parameter (β) + 1 modeling choice (β_universal). [A-E1] ELIMINATED (T9). [A-E2] ELIMINATED (T8-H1). [A-E3] RECLASSIFIED: FREE PARAMETER. [A-E4] BE-anchored.**
 
 ---
 
@@ -230,7 +232,7 @@ EX compass confirms: the highest-stress debt is T4-H completion (D5) and beta pa
 2. **Fix D2:** Update Phase9 assumption table
 
 ### Next session (2-3 hours)
-3. **Fix D3:** Reclassify [A-E3] across Phase8, Phase9, Phase13
+3. **Fix D3:** ~~Reclassify [A-E3]~~ → **DONE (2026-05-24).** 3-Round RCA complete. See RCA_A_E3_beta_universal_final_verdict.md.
 4. **Fix D7:** Reconcile Phase8 assumption table
 5. **Fix D6:** Document model comparison
 6. **Fix D4:** Add explicit caveat for K9E-PAT

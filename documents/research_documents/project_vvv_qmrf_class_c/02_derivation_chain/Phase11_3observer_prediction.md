@@ -62,7 +62,7 @@ For N=3: K_ctx has |K_ctx| = 2 elements (vs 1 for N=2). This means:
 |---|---|---|---|
 | [A-3O-1] | T4 colimit exists for N=3 | **CONDITIONAL on T4-H** (T4 colimit hypothesis). Plausible for finite totally-ordered sets. | N_QM_VVV_00025 (IRB) |
 | [A-3O-2] | T5 K_joint composition: K_joint(K_joint(F,W), SW) ≅ K_joint(F,W,SW) | **CONDITIONAL on T5** (K_joint associativity). Proven structurally but conditional on T4-H. | — |
-| [A-3O-3] | β is the SAME for 3-observer as for 2-observer | From [A-E3] (β universal). If β is experiment-dependent, this fails. | N_QM_VVV_00031 |
+| [A-3O-3] | β is the SAME for 3-observer as for 2-observer | Inherited from β FREE PARAMETER modeling choice (β_universal). Cross-experiment verification pending. If β varies with N, 3-observer prediction invalid. See [RCA A-E3 Final Verdict](../04_governance/RCA_A_E3_beta_universal_final_verdict.md). | N_QM_VVV_00031 |
 | [A-3O-4] | f_perp extends to |K_ctx| = 2 trivially | By K9_E definition (fraction form is general). No new assumption. | — |
 
 ---

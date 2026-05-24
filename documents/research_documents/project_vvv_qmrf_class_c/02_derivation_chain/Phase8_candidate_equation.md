@@ -49,10 +49,10 @@ P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)]
 | [A-E1] | ~~K_ctx defined via T3-morphism~~ → **FULLY ELIMINATED via T9** | T9 constructs phi_ij = i_j (K8-constrained T1 embedding), 5 lemmas L1-L5. K_ctx is a THEOREM, not an assumption. | ❌ — ELIMINATED (2026-05-24) | **ELIMINATED** |
 | [A-E2a] | ~~f_perp fraction counting~~ → **DERIVED via T8** | T8 proves f_perp = E[I(K5_prospective fires)] — fraction form is a statistical identity over binary K5/K6 primitives, not an independent modeling choice | ❌ — DERIVED (K5 → K5_prospective → T8 → f_perp) | **STRONG** |
 | [A-E2b] | ~~Outcome filter `o(k_j) ≠ o`~~ → **STRUCTURALLY DETERMINED via T8-H1** | T8-H1 (structural uniqueness): binary K1-K8 primitives → uniform weight → fraction form uniquely. Outcome filter `≠` forced by PP-2 v2 (`=` → outcome-independent → cancellation → δP=0). No residual assumption — both counting AND filter are now structurally determined | ❌ — DERIVED: K1-K8 binary type system + K6 non-hierarchy + PP-2 v2 → fraction form with `≠` filter is UNIQUE admissible form | **STRONG** (was MODERATE-STRONG) |
-| [A-E3] | beta is universal (same across all measurements and observers) | **FREE PARAMETER (MEASUREMENT TARGET)** — like coupling constants in physics, beta is measured not derived. Only remaining of original 4 K9_E assumptions. | ⚠️ WEAKLY anchored — could be relaxed to beta(observer). Anchored to N_QM_VVV_00031 | **FREE PARAMETER** (was WEAK) |
+| [A-E3] | ~~beta is universal~~ → **FREE PARAMETER (MEASUREMENT TARGET)** | β is a FREE PARAMETER measured from experiment (currently Proietti D1: β=0.598). Universality across observers is a MODELING CHOICE (Occam's razor), not a proven fact. Cross-experiment verification pending. See [RCA A-E3 Final Verdict](../04_governance/RCA_A_E3_beta_universal_final_verdict.md). | ❌ — RECLASSIFIED: FREE PARAMETER. Not an assumption — analogous to coupling constants in physics (α, G, g). 0 assumptions remain. | **FREE PARAMETER** (RECLASSIFIED 2026-05-24) |
 | [A-E4] | ⊥_K^str (structural, K9_E) is distinct from ⊥_K^dyn (dynamic, K5) | Tier 4 OI-4 resolution; BE lineage: saṃśaya vs niścaya bādhaka | ❌ — has EX anchor (dual modes) | STRONG |
 
-**Orphaned assumptions: 0.** [A-E3] is a free parameter anchored to N_QM_VVV_00031 — parameters are measured, not derived.
+**Orphaned assumptions: 0.** [A-E3] is a FREE PARAMETER anchored to N_QM_VVV_00031 — parameters are measured, not derived. β universality is a MODELING CHOICE (Occam's razor), cross-experiment verification pending. See [RCA A-E3 Final Verdict](../04_governance/RCA_A_E3_beta_universal_final_verdict.md).
 
 **Anchor strength improvements (2026-05-24):**
 - [A-E1] K_ctx via T3: MODERATE → **FULLY ELIMINATED** (T9, 5 lemmas L1-L5)
@@ -66,7 +66,7 @@ P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)]
 - **T8-H1: Structural uniqueness — binary K1-K8 type system + K6 non-hierarchy → uniform weight is FORCED, not chosen. Fraction form is the UNIQUE admissible form.**
 - **[A-E1] FULLY ELIMINATED.** K_ctx no longer requires an assumed T3-morphism.
 - **[A-E2] FULLY ELIMINATED as an assumption.** Both counting mechanism AND outcome filter are structurally determined by K1-K8 primitives.
-- **Net: original 4 assumptions → 1 free parameter ([A-E3]) + 0 assumptions + 0 orphaned.**
+- **Net: original 4 assumptions → 0 assumptions + 1 free parameter (β) + 0 orphaned. [A-E1] ELIMINATED (T9). [A-E2] ELIMINATED (T8-H1). [A-E3] RECLASSIFIED: FREE PARAMETER. [A-E4] BE-anchored.**
 
 ---
 

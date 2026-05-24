@@ -153,12 +153,12 @@ The binary condition (T > 0?) gates a continuous phenomenon (flow rate).
 |---|---|---|
 | [A-E1] K_ctx via T3 | YES (Layer 2) | ✅ **FULLY ELIMINATED** (2026-05-24) — T9 constructs phi_ij = i_j (K8-constrained T1 embedding), 5 lemmas L1-L5 |
 | [A-E2] f_perp fraction form | YES (construction) | ✅ **SPLIT:** [A-E2a] counting → DERIVED (T8 + T8-H1, 5 lemmas: uniform weight forced by binary K1-K8 + K6 non-hierarchy). [A-E2b] outcome filter → MODERATE (structurally determined, not assumed) |
-| [A-E3] beta universal | YES (simplifying) | ⚠️ FREE PARAMETER (MEASUREMENT TARGET) — beta is a measurement target like coupling constants in physics. Only remaining of 4 original K9_E assumptions (1/4). |
+| [A-E3] beta universal | YES (simplifying) | ✅ **RECLASSIFIED: FREE PARAMETER (MEASUREMENT TARGET)** — β is a measurement target like coupling constants in physics. Universality is a MODELING CHOICE (Occam's razor). 0 assumptions remain. See [RCA A-E3 Final Verdict](../04_governance/RCA_A_E3_beta_universal_final_verdict.md). |
 | [A-E4] bot_K^str != bot_K^dyn | YES (Tier 4 OI-4) | ✅ STRONG — formally distinguished, dual modes confirmed |
 
-> **ERRATUM (2026-05-24 — T8/T9 update):** This table has been updated to reflect T8 (K5_prospective Frequency Bridge) and T9 (K_ctx Construction Theorem) added to `K_Space_Axiomatization.md` v2.3. [A-E1] is now FULLY ELIMINATED (not merely justified). [A-E2] is SPLIT (not merely justified). [A-E3] reclassified as FREE PARAMETER (was WEAKLY JUSTIFIED). Net: original 4 assumptions → 1 free parameter + 1 modeling choice + 0 eliminated + 0 orphaned.
+> **ERRATUM (2026-05-24 — T8/T9 + RCA A-E3 update):** This table has been updated to reflect T8 (K5_prospective Frequency Bridge) and T9 (K_ctx Construction Theorem) added to `K_Space_Axiomatization.md` v2.3. [A-E1] FULLY ELIMINATED. [A-E2] FULLY ELIMINATED (T8-H1). [A-E3] RECLASSIFIED as FREE PARAMETER (was WEAKLY JUSTIFIED) via 3-Round RCA (aggregate 3.75/5). Net: original 4 assumptions → 0 assumptions + 1 free parameter (β) + 0 orphaned. See [RCA A-E3 Final Verdict](../04_governance/RCA_A_E3_beta_universal_final_verdict.md).
 
-**RESULT: ✅ PASS. All terms traceable. 0 orphaned assumptions. 1 free parameter ([A-E3] beta). 1 modeling choice ([A-E2b] outcome filter). 2 fully eliminated ([A-E1], [A-E2a]).**
+**RESULT: ✅ PASS. All terms traceable. 0 orphaned assumptions. 0 assumptions. 1 free parameter (β). 3 eliminated/reclassified ([A-E1] ELIMINATED, [A-E2] ELIMINATED, [A-E3] RECLASSIFIED).**
 
 ---
 

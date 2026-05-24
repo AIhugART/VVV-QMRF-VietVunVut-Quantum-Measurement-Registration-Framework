@@ -23,7 +23,7 @@
 |---|---|---|---|
 | [A-E1] | ~~K_ctx via T3-morphism~~ | **FULLY ELIMINATED (2026-05-24)** — φ_ij = i_j (K8-constrained T1 embedding), T9 L1-L5, 5 lemmas. K_ctx now a theorem. | **ELIMINATED** |
 | [A-E2] | ~~f_perp fraction form~~ | **SPLIT (2026-05-24):** [A-E2a] DERIVED via T8+H1 (fraction counting). [A-E2b] MODERATE (outcome filter, BE-anchored) | **PARTIALLY ELIMINATED** |
-| [A-E3] | β universal across measurements/observers | Different β for different settings → richer but less predictive model | **WEAKLY JUSTIFIED** — simplifying assumption; could be relaxed later |
+| [A-E3] | ~~β universal~~ → **FREE PARAMETER (MEASUREMENT TARGET)** | β is a free parameter measured from experiment (β=0.598, Proietti D1). Universality is a MODELING CHOICE (Occam's razor), cross-experiment verification pending. See [RCA A-E3 Final Verdict](../04_governance/RCA_A_E3_beta_universal_final_verdict.md). | **RECLASSIFIED** — 0 assumptions remain |
 | [A-E4] | ⊥_K^str (K9_E) distinct from ⊥_K^dyn (K5) | If same mechanism → K5 fires first → V=0 → K9_E moot → only K9_A | **JUSTIFIED** — Tier 4 OI-4; BE lineage supports dual modes |
 | [A-NS] | No-signaling for N > 2 | If violated → K9_E creates faster-than-light communication → physically impossible | **WEAKLY JUSTIFIED** — proven for N=2, assumed for N>2; needs formal proof |
 | [A-3O-1] | T4 colimit for N=3 | 3-observer predictions (Phase 11) may be invalid | **CONDITIONAL** — T4-H hypothesis; plausibility argument only |

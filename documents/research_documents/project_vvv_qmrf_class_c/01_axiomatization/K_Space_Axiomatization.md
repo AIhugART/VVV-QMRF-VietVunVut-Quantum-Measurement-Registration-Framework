@@ -905,7 +905,7 @@ AJVS boundary:
 
 ### T9 — K_ctx Construction Theorem (T3-Morphism Channel Formalization)
 
-> **[A-E1] ELIMINATION (2026-05-24):** T9 formally constructs the morphism channel φ_ij from K1-K8 primitives + T1 (K_joint construction). K_ctx is no longer defined via an assumed "T3-morphism" — the morphism IS the K8-constrained embedding i_j: K_{R_j} → K_joint supplied by T1. [A-E1] FULLY ELIMINATED via 5 lemmas (L1-L5) with 3-Round RCA. Assumptions remaining: [A-E3] only (1/4 original).
+> **[A-E1] ELIMINATION (2026-05-24):** T9 formally constructs the morphism channel φ_ij from K1-K8 primitives + T1 (K_joint construction). K_ctx is no longer defined via an assumed "T3-morphism" — the morphism IS the K8-constrained embedding i_j: K_{R_j} → K_joint supplied by T1. [A-E1] FULLY ELIMINATED via 5 lemmas (L1-L5) with 3-Round RCA. Assumptions remaining: 0. [A-E3] RECLASSIFIED as FREE PARAMETER (measurement target). See [RCA A-E3 Final Verdict](../04_governance/RCA_A_E3_beta_universal_final_verdict.md).
 
 **Statement:**
 > For any two registering systems R_i, R_j with requires_K_joint(K_{R_i}, K_{R_j}) = 1, the morphism φ_{ij}: K_{R_j} → K_joint is defined as φ_{ij}(k_j) = i_j(k_j), where i_j: K_{R_j} → K_joint is the canonical K8-constrained embedding supplied by T1 (K_joint construction, N=2). φ_{ij} preserves all five K-state tuple fields (M, o, cert, t, V). Consequently, K_ctx is a THEOREM construction, not an assumption: K_ctx(k_i, Exp) = {φ_{ij}(k_j) : k_j ∈ K_{R_j}, requires_K_joint(R_i, R_j) = 1, k_j temporally compatible with k_i}.

@@ -113,10 +113,10 @@ phi_ij IS the T1 embedding — structural identity, not conceptual link. EX anch
 |------------|----------|--------|---------------|
 | [A-E1] | K_ctx via T3-morphism | **FULLY ELIMINATED** | T9, L1-L5 |
 | [A-E2] | f_perp fraction form | **SPLIT:** [A-E2a] DERIVED (T8+H1), [A-E2b] MODERATE | T8-H1 |
-| [A-E3] | beta universal | **FREE PARAMETER** | — (1/4 remaining) |
+| [A-E3] | beta universal | **RECLASSIFIED: FREE PARAMETER** | See [RCA A-E3 Final Verdict](RCA_A_E3_beta_universal_final_verdict.md) |
 | [A-E4] | bot_K^str vs bot_K^dyn | **STRONG** (BE-anchored) | — |
 
-**4 original assumptions -> 1 free parameter + 1 modeling choice + 2 fully eliminated.**
+**4 original assumptions → 0 assumptions + 1 free parameter (β) + 3 eliminated/reclassified. [A-E1] ELIMINATED (T9). [A-E2] ELIMINATED (T8-H1). [A-E3] RECLASSIFIED: FREE PARAMETER. [A-E4] BE-anchored.**
 
 ## 7. K9_E Structural Architecture (Complete)
 
@@ -137,7 +137,7 @@ T8 (Layer 2): f_perp = E[I(K5_prospective fires on K_ctx)]
   Uniform weight forced by binary K5/K6 primitives   [A-E2a] DERIVED
        |
 K9_E (Layer 3): P(o|K) = Tr(E_o rho) . [1 - beta . f_perp]
-  Only [A-E3] (beta universal) remains as free parameter
+  [A-E3] RECLASSIFIED: FREE PARAMETER (2026-05-24 RCA). 0 assumptions remain.
 ```
 
 ## 8. Files Modified
@@ -155,7 +155,7 @@ K9_E (Layer 3): P(o|K) = Tr(E_o rho) . [1 - beta . f_perp]
 
 ## 9. Next Steps
 
-1. **[A-E3]** is the last remaining assumption — beta universal. Priority: MEDIUM.
+1. **[A-E3]** đã được giải quyết qua 3-Round RCA: RECLASSIFIED thành FREE PARAMETER (measurement target, không phải assumption). Xem [RCA A-E3 Final Verdict](RCA_A_E3_beta_universal_final_verdict.md). Priority: RESOLVED.
 2. T4-H (colimit for N>2) remains conditional — not required for K9_E (N=2 sufficient).
 3. T9 freeze status: Updatable (Layer 2). Depends on T1 (pending Level 4 freeze).
 
