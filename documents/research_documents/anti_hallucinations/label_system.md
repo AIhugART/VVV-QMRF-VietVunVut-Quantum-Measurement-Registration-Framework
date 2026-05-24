@@ -152,7 +152,7 @@ Nhan hien tai cho cac component chinh trong VVV-QMRF (2026-05-24):
 | **T2 — `beta` suppression** | `[AH-WARN]` | `[RS-CRIT]` | `[AH-WEAK]` | `[AH-WARN] [RS-CRIT] [AH-WEAK]` |
 | T3 — `f_perp` fraction | `[AH-LOW]` | `[RS-MED]` | `[AH-DERIVED]` | `[AH-LOW] [RS-MED] [AH-DERIVED]` |
 | T4 — `C(o_i, o_j)` compatibility | `[AH-LOW]` | — | — | `[AH-LOW]` |
-| **T5 — `K_ctx` context set** | `[AH-WARN]` | `[RS-CRIT]` | `[AH-EX]` | `[AH-WARN] [RS-CRIT] [AH-EX]` |
+| **T5 — `K_ctx` context set** | `[AH-WARN]` | `[RS-HIGH]` | `[AH-EX]` | `[AH-WARN] [RS-HIGH] [AH-EX]` |
 | T6 — `Z_E` normalization | `[AH-OK]` | — | — | `[AH-OK]` |
 | T7 — V(k)=0 gate | `[AH-LOW]` | — | — | `[AH-LOW]` |
 | T8 — isNull gate | `[AH-LOW]` | — | — | `[AH-LOW]` |
