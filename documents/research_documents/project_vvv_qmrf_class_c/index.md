@@ -188,6 +188,8 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | How was A1 upgraded? | [K_Space_Axiomatization.md §K5_prospective](01_axiomatization/K_Space_Axiomatization.md) |
 | How was T4-H Step 1 proven? | [T4-H Step 1 Category Proof](02_derivation_chain/T4_H_step1_category_proof.md) |
 | How was T4-H Step 2 colimit constructed? | [T4-H Step 2 Colimit Construction](02_derivation_chain/T4_H_step2_colimit_construction.md) |
+| How does T8 bridge K5_prospective → K9_E? | [T8 + H1–H4 in K_Space_Axiomatization.md](01_axiomatization/K_Space_Axiomatization.md) (Layer 2) |
+| Where is the K9_E origin investigation? | [RCA K9_E Origin Investigation](04_governance/rca_k9e_origin_investigation.md) |
 
 ### Folder Index
 

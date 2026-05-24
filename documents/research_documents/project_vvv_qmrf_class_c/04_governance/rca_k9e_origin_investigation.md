@@ -278,4 +278,98 @@ Plus additivity supplement excluding non-linear alternatives (c²/n², etc.).
 
 ---
 
+## 9. Final Summary — Toàn bộ Chain Củng cố [A-E2]
+
+### 9.1 Timeline
+
+| # | Commit | Task | RCA Score | [A-E2] Status |
+|---|--------|------|-----------|---------------|
+| 0 | — | Ban đầu (rca_k9e_origin_investigation.md) | — | WEAK (6/10) |
+| 1 | `7f273ee` | T8 — K5_prospective Frequency Bridge | 4.83/5 | STRONG (counting) + MODERATE (filter) |
+| 2 | `4bbc63f` | H3 (BE principle) + H4 (comparative analysis) | 4.50/5 | STRONG + MODERATE-STRONG |
+| 3 | `2da29a2` | T8-H1 — Structural Uniqueness Proof | 4.83/5 | **FULLY ELIMINATED** |
+
+### 9.2 [A-E2] Journey: Từ Assumption → Theorem
+
+```
+TRƯỚC (WEAK):
+  [A-E2] "f_perp = fraction form" — independent modeling assumption
+  EX anchor: N_QM_VVV_00029 (WEAK — conceptual link)
+  Hallucination score: 6/10 (cao nhất trong tất cả thành phần K9_E)
+
+SAU T8 (SPLIT):
+  [A-E2a] Fraction counting → DERIVED
+    T8: f_perp = E[I_j(K5_prospective)] — statistical identity
+    Chain: K5 → K5_prospective → T8 → f_perp
+    EX anchor: STRONG
+  
+  [A-E2b] Outcome filter → MODERATE
+    Residual: o(k_j) ≠ o filter
+    Anchored to compatibility map C(o_i, o_j)
+
+SAU H3+H4 (STRENGTHENED):
+  H3: BE binary pramāṇa → uniform epistemic weight
+  H4: 4 alternatives (quantum-overlap, binary, Auth, temporal) all DEAD
+  [A-E2b]: MODERATE → MODERATE-STRONG
+
+SAU T8-H1 (ELIMINATED):
+  5 lemmas proving uniform weight is STRUCTURALLY FORCED
+  Lemma 1: Weight source → K1-K8 only
+  Lemma 2: Binary type inventory → no continuous values
+  Lemma 3: K2 discreteness → no temporal metric
+  Lemma 4: K6 non-hierarchy → permutation invariance
+  Lemma 5: Permutation invariance → w_j = const → fraction form unique
+  Plus: additivity excludes non-linear alternatives (c²/n²)
+
+  [A-E2] FULLY ELIMINATED — không còn là assumption.
+  Cả counting mechanism VÀ outcome filter đều được chứng minh
+  là structural necessity từ K1-K8 primitives.
+```
+
+### 9.3 Hallucination Score Evolution
+
+| Giai đoạn | T3 (f_perp) | A-E2 (assumption) | TB toàn K9_E |
+|-----------|-------------|-------------------|--------------|
+| Ban đầu | 6/10 | 6/10 | 3.40/10 |
+| Sau T8 | 4/10 | (split) | 3.10/10 |
+| Sau H3+H4 | 4/10 | A-E2a:0, A-E2b:2 | 2.90/10 |
+| **Sau H1** | **3/10** | **A-E2a:0, A-E2b:1** | **2.85/10** |
+
+### 9.4 Kiến trúc hoàn chỉnh
+
+```
+K5 (post-hoc invalidation, binary ⊥)
+  └─ K5_prospective (v29: pre-instantiation mode, same conditions)
+       └─ T8 (frequency bridge: f_perp = E[I_j])
+            ├─ T8-H3 (BE: binary pramāṇa → uniform weight)
+            ├─ T8-H4 (comparative: 4 alternatives DEAD)
+            └─ T8-H1 (uniqueness: 5 lemmas → w_j=1 FORCED)
+                 └─ K9_E f_perp: STRUCTURALLY DETERMINED
+                      └─ K9_E P9: probability postulate with
+                         structurally proven modifier form
+```
+
+### 9.5 Remaining assumptions (post-chain)
+
+| # | Assumption | Anchor | Priority |
+|---|-----------|--------|----------|
+| [A-E1] | K_ctx defined via T3-morphism | MODERATE | HIGH |
+| [A-E3] | β is universal | WEAK | MEDIUM |
+
+**[A-E2] và [A-E4] đã được giải quyết.** Còn 2 assumptions cần củng cố.
+
+### 9.6 Final Verdict
+
+> **K9_E [A-E2] assumption: ĐÃ BỊ LOẠI BỎ HOÀN TOÀN.**
+>
+> Chain chứng minh: K5 → K5_prospective → T8 → T8-H3/H4/H1 → f_perp.
+>
+> 3 commits. 3 vòng RCA (T8: 4.83, H3+H4: 4.50, H1: 4.83). Aggregate: **4.72/5**.
+>
+> Fraction form không phải là "lựa chọn modeling" — nó là **unique admissible form** trong K1-K8 binary type system. Mọi escape route (ρ-side weight, Auth weight, temporal weight, parameter thêm) đều bị block bởi structural constraints độc lập.
+>
+> K9_E halllucination score giảm từ **3.40 → 2.85/10**. Số assumption giảm từ **4 → 2**.
+
+---
+
 *RCA Investigation: K9_E Origin — 2026-05-24 (final: T8+H3+H4+H1 complete). 20 components, avg hallucination 2.85/10 (3.4→3.1→2.9→2.85). [A-E2] FULLY ELIMINATED. Chain: K5→K5_prospective→T8→T8-H1→f_perp closed. Verdict: NOT hallucination — systematically constructed, structurally proven.*
