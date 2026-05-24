@@ -2,7 +2,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # A Single-Waveplate Test of Outcome-Dependent Quantum Registration in Extended Wigner's Friend Scenarios
 
-**Status:** Draft v3 -- ALL sections + 3/5 figures + QC checklist
+**Status:** Draft v4 — COMPLETE: ALL 10 sections + Abstract + 5/5 figures + 3/3 supplemental + QC 15/15 PASS
 **Date:** 2026-05-24
 **Framework:** VVV-QMRF Class C (qualified, v31)
 **Target:** arXiv quant-ph -> Physical Review Letters
@@ -48,7 +48,7 @@ combined Friend+photon system. Superobserver settings: Setting 1 reads the Frien
 directly (z-basis); Settings 2 and 3 measure at azimuthal angles on the Bloch sphere
 equator (theta = pi/2). Outcomes are binary: a, b in {+1, -1}.
 
-[FIGURE 1: EWF setup schematic -- two labs, entangled source, measurements]
+![Figure 1: EWF schematic](figures/fig1_ewf_schematic.png)
 
 ### 2.2 -- Genuine Local Friendliness Inequality
 
@@ -124,7 +124,7 @@ Re-insert ONE QWP into Superobserver Alice's path (REMOVED in standard Bong for
 settings 2/3). Position: before PBS, after BD2. Fast axis adjusted for theta = 31 deg.
 Retardance tolerance: <= +-2 nm (theta within +-0.5 deg).
 
-[FIGURE 2: Modified optical path with QWP insertion marked]
+![Figure 2: Optical path with QWP insertion](figures/fig2_optical_path.png)
 
 ### 4.3 -- Measurement Settings
 
@@ -432,6 +432,4 @@ in an EWF scenario.
 
 ---
 
-*Draft v3 -- 2026-05-24. ALL 10 sections + Abstract + References. ~5,000 words.
-3/5 figures (Figs 1-2 pending: schematics). Supplemental S1-S3 complete.
-QC: 15/15 PASS. Numerical values from K9S12_proposal.py + sensitivity computations.*
+*Draft v4 -- 2026-05-24. COMPLETE: 10 sections + Abstract + 5/5 figures + 3/3 supplemental. QC: 15/15 PASS. ~5,000 words. Ready for LaTeX conversion + arXiv submission.*
