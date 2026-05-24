@@ -99,11 +99,11 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Risk Score** | 5 x 3 x 1.2 = **18.0** |
 | **Risk Score band** | **HIGH** (15-19.9) |
 | **Root cause type** | Type 3 — Broken Trace (chua co analysis noise day du) |
-| **Status** | **OPEN** — identified trong technical debt inventory (D8) |
+| **Status** | **OPEN** — BLOCKING GATE cho public claim. RCA chi tiet: `RCA_P10_NOISE_status_report_2026_05_24.md` (3-Round RCA: 4.67/5). Data-availability gap: 4 data points khong du de phan biet K9_E suppression voi non-uniform noise. |
 | **Full Label** | `[AH-WARN] [RS-HIGH] [AH-NOISE] [AH-EX]` |
-| **EX compass** | Flag: EX co K-PENDING-RCA ve noise model |
-| **Giai phap uu tien** | ANCHOR (thuc hien noise analysis tren raw Proietti data) |
-| **Neu hallucination that:** | Genuine fit K9_E -> artifact; Class C (genuine) downgrade -> Class C (qualified) |
+| **EX compass** | Flag: EX co K-PENDING-RCA ve noise model. N_QM_VVV_00032 (Bhranti ↔ Decoherence) — structural analogue cho noise/registration error. |
+| **Giai phap uu tien** | ANCHOR: (1) Noise sensitivity analysis — tinh upper bound cua noise contribution vao Delta_chi2=5.35. (2) Boundary statement trong index.md. Fallback: downgrade Class C neu khong the lam (1). |
+| **Neu hallucination that:** | Genuine fit K9_E -> artifact; Class C (genuine) downgrade -> Class C (qualified). K9_E mat empirical leg duy nhat. |
 | **Deadline** | HIGH (P1) — truoc khi public claim "genuine" |
 
 ### Rank 3: T5 — K_ctx context set definition
@@ -148,17 +148,17 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 
 | Thuoc tinh | Gia tri |
 |------------|---------|
-| **Component** | K9_E multiplicative pattern (2BSM/1BSM ratio ~2) — NOT confirmed (ratio = -0.78) |
-| **Hallucination score (H)** | **5/10** (Vang — discrepancy giua prediction va data) |
-| **Structural weight (W)** | **2** (MEDIUM — pattern la test cua internal consistency) |
-| **Anchor penalty (A)** | **0.2** (MODERATE) |
+| **Component** | K9_E multiplicative pattern (2BSM/1BSM ratio ~2) — NOT confirmed (ratio = -0.78 ± 1.72). Pattern UNTESTABLE voi data hien tai: sigma_ratio > ratio value. |
+| **Hallucination score (H)** | **5/10** (Vang — pattern predicted but UNTESTABLE; direction confirmed, magnitude unconstrained) |
+| **Structural weight (W)** | **2** (MEDIUM — internal consistency test; postulate P=Tr*f_perp survives regardless of functional form) |
+| **Anchor penalty (A)** | **0.2** (MODERATE — g=0.146 la PP-4 theoretical calibration, khong measured tu experimental data) |
 | **Trace score (SOT)** | 2/6 |
 | **Risk Score** | 5 x 2 x 1.2 = **12.0** |
 | **Risk Score band** | **MEDIUM** (10-14.9) |
-| **Root cause type** | Type 3 — Broken Trace (data khong support) |
-| **Status** | **OPEN** — D4 |
+| **Root cause type** | Type 3 — Broken Trace (data precision gap: 4 data points, sigma~0.04 → ratio error ±1.72) |
+| **Status** | **OPEN** — D4. RCA chi tiet: `RCA_K9E_PAT_status_report_2026_05_24.md` (3-Round RCA: 4.50/5). KHONG BLOCKING. "Not confirmed", khong phai "failed". |
 | **Full Label** | `[AH-WARN] [RS-MED]` |
-| **Deadline** | HIGH (P1) — truoc khi public |
+| **Deadline** | HIGH (P1) — truoc khi public. Hanh dong: (1) compute formal CI cho ratio, (2) document g=0.146 = modeling choice. |
 
 ### Rank 6: K9_E two implementations — Additive vs Multiplicative divergence
 

@@ -116,7 +116,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | 4. Why not use experimental data for calibration? | Only 4 data points (D1); insufficient to independently calibrate g and beta |
 | 5. Root cause | **Model too simplistic for 2-BSM vs 1-BSM discrimination.** The per-observer multiplicative model assumes identical suppression per BSM observer — real experimental geometry may produce different suppression per observer. |
 
-**RCA Score: 4.0/5** — HIGH. Evidence quality depends on this pattern. Currently: "data qualitatively consistent, quantitatively unconfirmed."
+**RCA Score: 4.0/5** — HIGH. Evidence quality depends on this pattern. Currently: "data qualitatively consistent, quantitatively unconfirmed." RCA chi tiet: `RCA_K9E_PAT_status_report_2026_05_24.md` (3-Round RCA: 4.50/5). Key finding: ratio = -0.78 +/- 1.72 — pattern UNTESTABLE (sigma_ratio > ratio value), not "failed." Postulate survives. g=0.146 = modeling choice.
 
 ### D5: T4-H Steps 3-4 DEFERRED (HIGH — 3.8/5)
 
@@ -179,7 +179,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | # | Item | Score | Fix | Effort |
 |---|------|-------|-----|--------|
-| D8 | P10-NOISE: Non-uniform noise not ruled out | 3.5/5 | Already in Open Items. Add explicit sensitivity analysis placeholder to `07_fits/`. | 30 min |
+| D8 | P10-NOISE: Non-uniform noise not ruled out | 3.5/5 | Already in Open Items. RCA chi tiet: `RCA_P10_NOISE_status_report_2026_05_24.md` (3-Round RCA: 4.67/5). BLOCKING GATE cho public claim. Add noise sensitivity analysis placeholder to `07_fits/`. | 30 min |
 | D9 | P10-TIM: Null-model N0 omitted | 3.4/5 | DECISION-LOCKED. Requires raw event-level data from Proietti. Keep as Open Item. | 0 (blocked) |
 | D10 | Phase 10b INVALIDATED file | 3.3/5 | Archive `Phase10b_bong_lf.md` to `08_archives/` or add prominent INVALIDATED header. | 5 min |
 | D11 | EX compass: 3 nodes K-PENDING-RCA | 3.2/5 | Document as EX compass intelligence only — not core debt. C3 gate per vv-qmrf-ex-plan.md. | 0 (delegated) |

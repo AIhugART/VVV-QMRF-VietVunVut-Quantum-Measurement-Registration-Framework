@@ -3,7 +3,7 @@
 # Anti-Hallucination System â€” VVV-QMRF
 
 **System name:** VVV-QMRF Anti-Hallucination Pipeline (AHP)
-**Version:** v1.4 (2026-05-24)
+**Version:** v1.5 (2026-05-24)
 **Scope:** VVV-QMRF (toan bo cac layer: K1-K8 axioms, T1-T8 bridge theorems, K9_E postulate, E1-E16 postulates, BE-QM mapping, Class C/D data analysis)
 **Compass:** VVV-QMRF-EX (intelligence only, no structure import)
 **Method:** 3-Round RCA x 5-Why x scoring threshold 4/5
@@ -91,6 +91,10 @@ Claim / Component / Term moi            |
 | `05_scoring.md` | Cham diem | Moi component moi hoac khi SOT thay doi | Component + RCA result | Hallucination score 0-10 |
 | `label_system.md` | Co che dan nhan canh bao | Sau khi cham diem + xac dinh Risk Score | H score + Risk Score + Trace + Anchor | Label chinh + label phu + label registry |
 | `06_solution.md` | Giai phap | Khi co score >= 5 | Score + root cause | Solution type + priority + action |
+| `RCA_P10_NOISE_status_report_2026_05_24.md` | RCA chi tiet — P10-NOISE | Khi can hieu ro noise threat | Top 10 #2, D8 | 3-Round RCA: 4.67/5. BLOCKING GATE cho public claim. |
+| `RCA_K9E_PAT_status_report_2026_05_24.md` | RCA chi tiet — K9E-PAT | Khi can hieu ro pattern discrepancy | Top 10 #5, D4 | 3-Round RCA: 4.50/5. Pattern UNTESTABLE, khong blocking. |
+| `RCA_phi_map_detailed_status_2026_05_24.md` | RCA chi tiet — phi-map | Khi can hieu ro Track B status | Top 10 #1 | 3-Round RCA: 4.67/5. C2=7.0-7.5/10. |
+| `RCA_why_phi_map_is_top1_2026_05_24.md` | RCA — tai sao phi-map #1 | Khi can hieu ro ranking logic | Top 10 #1 vs #2 | 5-Whys: H=6 cao nhat toan VVV-QMRF. |
 
 ---
 
@@ -149,7 +153,8 @@ CLAUDE.md (Rule Zero)
 | Version | Date | Changes |
 |---------|------|---------|
 | v1.0 | 2026-05-24 | Initial release â€” 9-file pipeline, 3-round RCA verified |
+| v1.5 | 2026-05-24 | Added 4 RCA detail reports: P10-NOISE (4.67/5, BLOCKING GATE), K9E-PAT (4.50/5, UNTESTABLE), phi-map detailed status (4.67/5), why phi-map #1 (5-Whys). Top 10 record updated with RCA links and refined assessments. |
 
 ---
 
-*Anti-Hallucination Pipeline v1.0 â€” VVV-QMRF scope, VVV-QMRF-EX as compass. 3-Round RCA aggregate: 4.83/5 PASS (>= 4/5).*
+*Anti-Hallucination Pipeline v1.5 â€” VVV-QMRF scope, VVV-QMRF-EX as compass. 3-Round RCA aggregate: 4.83/5 PASS (>= 4/5).*
