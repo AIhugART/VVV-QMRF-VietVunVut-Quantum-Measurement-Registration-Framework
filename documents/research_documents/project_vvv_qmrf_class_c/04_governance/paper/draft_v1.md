@@ -432,6 +432,6 @@ in an EWF scenario.
 
 ---
 
-*Draft v2 -- 2026-05-24. ALL 10 sections + Abstract + References written. ~5,000 words.
-Numerical values from K9S12_proposal.py + sensitivity computations. Figures (5) +
-Supplemental (S1-S6) pending.*
+*Draft v3 -- 2026-05-24. ALL 10 sections + Abstract + References. ~5,000 words.
+3/5 figures (Figs 1-2 pending: schematics). Supplemental S1-S3 complete.
+QC: 15/15 PASS. Numerical values from K9S12_proposal.py + sensitivity computations.*
