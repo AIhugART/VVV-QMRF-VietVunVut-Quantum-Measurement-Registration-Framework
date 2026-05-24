@@ -179,7 +179,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | # | Item | Score | Fix | Effort |
 |---|------|-------|-----|--------|
-| D8 | P10-NOISE: Non-uniform noise not ruled out | 3.5/5 | Already in Open Items. RCA chi tiet: `RCA_P10_NOISE_status_report_2026_05_24.md` (3-Round RCA: 4.67/5). BLOCKING GATE cho public claim. Add noise sensitivity analysis placeholder to `07_fits/`. | 30 min |
+| D8 | P10-NOISE: Non-uniform noise not ruled out | 3.5/5 | ANALYZED (noise_threshold=0.10 sigma — FAIL). Script: `07_fits/noise_sensitivity_analysis.py`. Class C downgraded genuine→qualified. P10-NOISE remains OPEN — cannot close without 3-observer experiment or raw event data. Structural limitation, not fixable with current data. | ∞ (blocked by data) |
 | D9 | P10-TIM: Null-model N0 omitted | 3.4/5 | DECISION-LOCKED. Requires raw event-level data from Proietti. Keep as Open Item. | 0 (blocked) |
 | D10 | Phase 10b INVALIDATED file | 3.3/5 | Archive `Phase10b_bong_lf.md` to `08_archives/` or add prominent INVALIDATED header. | 5 min |
 | D11 | EX compass: 3 nodes K-PENDING-RCA | 3.2/5 | Document as EX compass intelligence only — not core debt. C3 gate per vv-qmrf-ex-plan.md. | 0 (delegated) |
@@ -240,7 +240,7 @@ EX compass confirms: the highest-stress debt is T4-H completion (D5) and beta pa
 
 ### Deferred / accepted
 8. **D5 (T4-H Steps 3-4):** Accepted gap — explicit bypass decision exists
-9. **D8 (P10-NOISE):** Tracked in Open Items
+9. **D8 (P10-NOISE):** ANALYZED — noise_threshold=0.10 sigma (FAIL). Class C downgraded genuine→qualified. Cannot close without 3-observer experiment.
 10. **D9 (P10-TIM):** DECISION-LOCKED — waiting on raw data
 11. **D10 (Phase 10b archive):** Low priority cleanup
 12. **D11 (EX K-PENDING-RCA):** EX compass domain, not core

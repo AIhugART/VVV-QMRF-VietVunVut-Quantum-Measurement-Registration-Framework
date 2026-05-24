@@ -98,13 +98,13 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Trace score (SOT)** | 1/6 |
 | **Risk Score** | 5 x 3 x 1.2 = **18.0** |
 | **Risk Score band** | **HIGH** (15-19.9) |
-| **Root cause type** | Type 3 — Broken Trace (chua co analysis noise day du) |
-| **Status** | **OPEN** — BLOCKING GATE cho public claim. RCA chi tiet: `RCA_P10_NOISE_status_report_2026_05_24.md` (3-Round RCA: 4.67/5). Data-availability gap: 4 data points khong du de phan biet K9_E suppression voi non-uniform noise. |
+| **Root cause type** | Type 3 — Broken Trace → Type 4 (Structural Limitation). Noise analysis complete: random noise at ANY magnitude produces Delta_chi2 >= 5.35 in ~50% of realizations (directional sensitivity + 4 data points). Cannot be resolved with published data. |
+| **Status** | **ANALYZED — FAIL** (noise_threshold = 0.10 sigma RMS << 1.0 FAIL threshold). RCA status: `RCA_P10_NOISE_status_report_2026_05_24.md` (4.67/5). RCA methodology: `project_vvv_qmrf_class_c/04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md` (4.77/5). Script: `project_vvv_qmrf_class_c/07_fits/noise_sensitivity_analysis.py`. Noise at ANY magnitude produces Delta_chi2 >= 5.35 in ~50% of realizations. Class C downgraded genuine→qualified. P10-NOISE remains OPEN as structural limitation — cannot be closed without 3-observer experiment or raw event data. |
 | **Full Label** | `[AH-WARN] [RS-HIGH] [AH-NOISE] [AH-EX]` |
 | **EX compass** | Flag: EX co K-PENDING-RCA ve noise model. N_QM_VVV_00032 (Bhranti ↔ Decoherence) — structural analogue cho noise/registration error. |
-| **Giai phap uu tien** | ANCHOR: (1) Noise sensitivity analysis — tinh upper bound cua noise contribution vao Delta_chi2=5.35. (2) Boundary statement trong index.md. Fallback: downgrade Class C neu khong the lam (1). |
-| **Neu hallucination that:** | Genuine fit K9_E -> artifact; Class C (genuine) downgrade -> Class C (qualified). K9_E mat empirical leg duy nhat. |
-| **Deadline** | HIGH (P1) — truoc khi public claim "genuine" |
+| **Giai phap uu tien** | DONE: (1) Noise sensitivity analysis DA THUC HIEN — FAIL (noise_threshold=0.10 sigma). (2) Boundary statement DA THEM vao index.md. (3) Class C DA DOWNGRADE genuine→qualified. NEXT: 3-observer experiment hoac raw event data — chi 2 con duong dong P10-NOISE. |
+| **Neu hallucination that:** | **DA XAC NHAN:** Noise CO THE giai thich Delta_chi2=5.35. K9_E directional sensitivity + 4 data points → ~50% random noise realizations produce "signal." 2.31sigma KHONG PHAI evidence cho K9_E suppression. Class C da downgrade. K9_E empirical leg KHONG CON — chi con structural leg. |
+| **Deadline** | BLOCKED (khong co data) — chi co the dong qua 3-observer experiment hoac raw event data |
 
 ### Rank 3: T5 — K_ctx context set definition
 

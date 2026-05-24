@@ -3,8 +3,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Project VVV-QMRF Class C — Master Index
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
-**Status:** Class C (genuine) — structurally testable, empirically evidenced, ambiguous
-**Version:** v29 (2026-05-23) — 3-Round RCA upgrade from Class C (qualified)
+**Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
+**Version:** v30 (2026-05-24) — Noise sensitivity analysis FAIL: downgrade genuine→qualified
 **Zenodo DOI:** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0)
 **License:** CC BY 4.0
 
@@ -24,9 +24,13 @@ VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H)
 
 **Class C** means VVV-QMRF K9_E provides a probability postulate (P9) motivated by K1–K8 structure that produces predictions **structurally different** from Standard QM (delta_S != 0 when beta > 0), passes all adversarial tests (4/4), avoids the Frauchiger–Renner paradox via K5 V_prov mechanism, and reduces Copenhagen/MWI as special cases. K9_E is a postulate, not a derivation from K1–K8; the axioms define structural properties only (see §3).
 
-**Genuine** means the distinguishing signal has been detected using **raw experimental data** — the genuine fit to raw Proietti Figure 3 correlators yields beta = 0.598 (K9_E != Standard QM), V = 0.939, Delta_chi2 = 5.35 (2.31sigma favoring K9_E over QM-uniform-visibility). Evidence is real but **ambiguous** — K9_E multiplicative pattern not confirmed, experimental systematics not ruled out. Confirmation or rejection requires a 3-observer experiment (prediction: delta_M3 = -0.223 at beta=0.3, illustrative). See §4 for full 3-Round RCA.
+**Qualified** means K9_E is structurally motivated by K1-K8 and produces distinguishing predictions (delta_S != 0 when beta > 0), but the empirical evidence is **not confirmed** — non-uniform noise cannot be ruled out as an alternative explanation for the non-uniform visibility pattern in Proietti Figure 3.
 
-See [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) for the full 3-round RCA synthesis (aggregate 4.50/5).
+**Downgrade reason (v30, 2026-05-24):** Noise sensitivity analysis (Delta_chi2 Decomposition + Noise Budget Analysis, RCA 4.77/5) returned **FAIL**: noise_threshold = 0.10 sigma RMS (threshold for PASS: > 3.0 sigma). With only 4 data points and K9_E's directional sensitivity, random noise at ANY magnitude produces Delta_chi2 >= 5.35 in ~50% of realizations. The 2.31sigma "signal" is a noise-detection threshold, not evidence for K9_E suppression. See `07_fits/noise_sensitivity_analysis.py` and `04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md`.
+
+**Remaining empirical path:** Confirmation or rejection requires a 3-observer experiment with dedicated noise characterization (prediction: delta_M3 = -0.223 at beta=0.3, illustrative, conditional on T4-H Steps 2-4). See §4 for full 3-Round RCA.
+
+See [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) for the v29 upgrade RCA (aggregate 4.50/5) and [P10-NOISE Methodology Decision](04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md) for the v30 downgrade RCA (aggregate 4.77/5).
 
 ---
 
@@ -126,20 +130,22 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 
 ### Final Classification
 
-> **VVV-QMRF K9_E = Class C (genuine) — structurally testable, empirically evidenced, ambiguous.**
+> **VVV-QMRF K9_E = Class C (qualified) — structurally testable, empirically UNCONFIRMED.**
 >
-> K9_E achieves Class C structurally (unchanged from v28): probability postulate P9 motivated by K1-K8 structure, generates distinguishability != Standard QM (delta_S != 0 when beta > 0), avoids FR paradox via K5 V_prov, reduces Copenhagen/MWI as special cases.
+> K9_E achieves Class C structurally (unchanged): probability postulate P9 motivated by K1-K8 structure, generates distinguishability != Standard QM (delta_S != 0 when beta > 0), avoids FR paradox via K5 V_prov, reduces Copenhagen/MWI as special cases.
 >
-> **v29 upgrades (3 conditions satisfied):**
-> 1. **Genuine empirical evidence:** Raw Proietti Figure 3 data used. Non-circular fit: beta=0.598, V=0.939, Delta_chi2=5.35 (2.31sigma) vs QM-uniform. Evidence is real but ambiguous — K9_E pattern not confirmed.
-> 2. **A1 upgraded:** K5_prospective added as conservative extension to K5 (identical conditions (i)-(iii), new evaluation target only). Zero Class D assumptions remain.
-> 3. **T4-H weakened:** Step 1 (C_{K-space} category) proven. Steps 2-4 (colimit construction) honestly deferred. K9_E only needs T1 (N=2 constructive), not T4.
+> **v30 downgrade (2026-05-24):** Noise sensitivity analysis returned FAIL (noise_threshold = 0.10 sigma RMS << 1.0 threshold). K9_E's directional sensitivity + only 4 data points means random noise produces Delta_chi2 >= 5.35 in ~50% of realizations at any RMS magnitude. The 2.31sigma "signal" is NOT evidence for K9_E — it reflects model flexibility, not physical suppression. Class C downgraded from (genuine) to (qualified). Confirmation requires 3-observer experiment with dedicated noise characterization.
+>
+> **v29 upgrades (3 conditions — structural foundation remains valid):**
+> 1. **Genuine empirical evidence:** Raw Proietti Figure 3 data used for non-circular fit. However, noise sensitivity analysis (v30) shows this evidence is NOT robust — single-setting perturbation of 1.85 sigma at A0B0 eliminates the K9_E advantage. A0B0 alone drives 80% of Delta_chi2.
+> 2. **A1 upgraded:** K5_prospective added as conservative extension to K5. Zero Class D assumptions remain.
+> 3. **T4-H weakened:** Step 1 proven. Steps 2-4 deferred. K9_E only needs T1.
 
 ---
 
 ## 5. Key Numbers
 
-> **NOTE (2026-05-23 v29):** Items marked `[G]` derive from **genuine non-circular fit** using raw Proietti Figure 3 correlators (script: `07_fits/proietti_raw_fit.py`). Contrast with v28 circular fit: reconstructed data was E_exp = V*E_QM (tautology). Raw data: A0B0=-0.678, A0B1=0.570, A1B0=0.595, A1B1=0.571. Items marked `[T]` are theoretical/structural. `[C]` = circular fit (historical, superseded). `[I]` = illustrative (conditional on unproven assumptions).
+> **NOTE (2026-05-24 v30):** Items marked `[G]` derive from genuine fit but are **qualified by noise sensitivity analysis** (FAIL: noise_threshold = 0.10 sigma RMS, `07_fits/noise_sensitivity_analysis.py`). The 2.31sigma "signal" is NOT robust — random noise at ANY magnitude produces Delta_chi2 >= 5.35 in ~50% of realizations. `[T]` = theoretical/structural (unaffected by noise). `[C]` = circular fit (historical, superseded). `[I]` = illustrative (conditional on unproven assumptions). `[N]` = noise sensitivity result (new in v30).
 
 | Quantity | Value | Meaning | Source type |
 |----------|-------|---------|-------------|
@@ -154,6 +160,9 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | Adversarial tests | 4/4 PASS | No counterexample, 0 axiom violations | `[T]` structural |
 | Operationalizability gates | 3/3 PASS | G1/G2/G3 all 5.0/5 | `[T]` structural |
 | K9_E pattern check (2BSM/1BSM ratio) | -0.78 (predicted ~2) | Multiplicative pattern NOT confirmed | `[G]` genuine fit |
+| Noise threshold (2-sigma, B4 Monte Carlo) | 0.10 sigma RMS | Noise at ANY magnitude produces Delta_chi2 >= 5.35 in ~50% of realizations | `[N]` noise analysis |
+| Single-setting fragility (B2) | A0B0: 1.85 sigma | Only 1.85 sigma shift at A0B0 eliminates K9_E advantage | `[N]` noise analysis |
+| A0B0 share of Delta_chi2 (B1) | 80% | Nearly entire K9_E "signal" driven by one data point | `[N]` noise analysis |
 
 ---
 
@@ -190,6 +199,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | How was T4-H Step 2 colimit constructed? | [T4-H Step 2 Colimit Construction](02_derivation_chain/T4_H_step2_colimit_construction.md) |
 | How does T8 bridge K5_prospective → K9_E? | [T8 + H1–H4 in K_Space_Axiomatization.md](01_axiomatization/K_Space_Axiomatization.md) (Layer 2) |
 | Where is the K9_E origin investigation? | [RCA K9_E Origin Investigation](04_governance/rca_k9e_origin_investigation.md) |
+| How is P10-NOISE noise sensitivity analyzed? | [RCA Methodology Decision](04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md) + [Spec](07_fits/noise_sensitivity_analysis_spec.md) |
 
 ### Folder Index
 
@@ -238,10 +248,11 @@ pip install -r requirements.txt
 | 10 | `K9S12_proposal.py` | K9-S12 | Modified Bong protocol proposal |
 | 11 | `d1_blk1_4point_fit.py` | — | Alternative 4-point D1 fit |
 | 12 | `proietti_raw_fit.py` | Phase 10a (v29) | **Genuine non-circular fit** — beta=0.598, 2.31sigma |
+| **13** | **`noise_sensitivity_analysis.py`** | **P10-NOISE (v30)** | **Noise budget analysis: FAIL — noise_threshold=0.10 sigma RMS, downgrade genuine→qualified** |
 
 **Note:** Data is extracted inline from arXiv source `.tex` files in `00_source_papers/`. See individual scripts for extraction methodology.
 
-> **CAUTION (2026-05-23 RCA Logic Audit):** `d1_blk1_4point_fit.py` and `proietti_chsh_fit.py` use **reconstructed data** (visibility model E_exp = V_exp * E_QM), not raw experimental values from Proietti Figure 3. The resulting beta=0 fit is a tautology — see §4 ERRATUM. Use `proietti_raw_fit.py` (script #12) for the genuine empirical fit.
+> **CAUTION (2026-05-24 v30):** The genuine fit (script #12, beta=0.598, 2.31sigma) is **NOT robust to noise**. Script #13 (`noise_sensitivity_analysis.py`) demonstrates that random noise at ANY magnitude produces Delta_chi2 >= 5.35 in ~50% of realizations due to K9_E's directional sensitivity with only 4 data points. Class C downgraded from (genuine) to (qualified). The 2.31sigma "signal" reflects model flexibility, not physical K9_E suppression.
 >
 > **RESOLVED (2026-05-23):** `utils/` module (`utils.qm_standard`, `utils.k9a_predictor`, `utils.k9e_predictor`) restored. All scripts (#1, #3, #11) now run successfully. `Wigner_figure_3.md` SOT document created for raw Proietti Figure 3 data. Full suite: 9/9 sanity checks PASS, 12/12 scripts executable.
 >

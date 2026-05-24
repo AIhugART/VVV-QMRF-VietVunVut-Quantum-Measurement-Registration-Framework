@@ -95,6 +95,9 @@ Claim / Component / Term moi            |
 | `RCA_K9E_PAT_status_report_2026_05_24.md` | RCA chi tiet — K9E-PAT | Khi can hieu ro pattern discrepancy | Top 10 #5, D4 | 3-Round RCA: 4.50/5. Pattern UNTESTABLE, khong blocking. |
 | `RCA_phi_map_detailed_status_2026_05_24.md` | RCA chi tiet — phi-map | Khi can hieu ro Track B status | Top 10 #1 | 3-Round RCA: 4.67/5. C2=7.0-7.5/10. |
 | `RCA_why_phi_map_is_top1_2026_05_24.md` | RCA — tai sao phi-map #1 | Khi can hieu ro ranking logic | Top 10 #1 vs #2 | 5-Whys: H=6 cao nhat toan VVV-QMRF. |
+| `RCA_P10_NOISE_methodology_decision_2026_05_24.md` | RCA — P10-NOISE methodology (Class C) | Khi can hieu ro noise analysis approach | Top 10 #2, D8 | 3-Round RCA: 4.77/5. Delta_chi2 Decomposition + Noise Budget Analysis. |
+| `noise_sensitivity_analysis_spec.md` | Spec — P10-NOISE implementation (Class C) | Khi can implement noise analysis | RCA methodology | 4-step spec (B1-B4), PASS/AMBIGUOUS/FAIL criteria. |
+| `noise_sensitivity_analysis.py` | Script — P10-NOISE execution (Class C) | Khi can chay/reproduce noise analysis | Spec + raw data | noise_threshold=0.10 sigma → FAIL → downgrade. |
 
 ---
 
