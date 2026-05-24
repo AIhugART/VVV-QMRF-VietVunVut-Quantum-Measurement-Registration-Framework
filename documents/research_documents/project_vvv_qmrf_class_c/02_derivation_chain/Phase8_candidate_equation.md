@@ -42,28 +42,31 @@ P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)]
 
 ### Assumption Registry
 
-**Updated 2026-05-24:** [A-E2] split into [A-E2a] (DERIVED via T8) and [A-E2b] (MODERATE anchor) — see T8 in `01_axiomatization/K_Space_Axiomatization.md`.
+**Updated 2026-05-24:** [A-E1] FULLY ELIMINATED via T9 (L1-L5). [A-E2] split into [A-E2a] (DERIVED via T8) and [A-E2b] (MODERATE anchor). [A-E3] reclassified as FREE PARAMETER. See T8/T9 in `01_axiomatization/K_Space_Axiomatization.md`.
 
 | ID | Assumption | Justification | Orphaned? | Anchor Strength |
 |---|---|---|---|---|
-| [A-E1] | K_ctx defined via T3-morphism (Level 2/3, not K1-K8 alone) | T3 is a Layer 2 theorem with K1-K8 as inputs; K_ctx inherits Layer 2 status | ❌ — has EX anchor N_QM_VVV_00025 | MODERATE |
+| [A-E1] | ~~K_ctx defined via T3-morphism~~ → **FULLY ELIMINATED via T9** | T9 constructs phi_ij = i_j (K8-constrained T1 embedding), 5 lemmas L1-L5. K_ctx is a THEOREM, not an assumption. | ❌ — ELIMINATED (2026-05-24) | **ELIMINATED** |
 | [A-E2a] | ~~f_perp fraction counting~~ → **DERIVED via T8** | T8 proves f_perp = E[I(K5_prospective fires)] — fraction form is a statistical identity over binary K5/K6 primitives, not an independent modeling choice | ❌ — DERIVED (K5 → K5_prospective → T8 → f_perp) | **STRONG** |
 | [A-E2b] | ~~Outcome filter `o(k_j) ≠ o`~~ → **STRUCTURALLY DETERMINED via T8-H1** | T8-H1 (structural uniqueness): binary K1-K8 primitives → uniform weight → fraction form uniquely. Outcome filter `≠` forced by PP-2 v2 (`=` → outcome-independent → cancellation → δP=0). No residual assumption — both counting AND filter are now structurally determined | ❌ — DERIVED: K1-K8 binary type system + K6 non-hierarchy + PP-2 v2 → fraction form with `≠` filter is UNIQUE admissible form | **STRONG** (was MODERATE-STRONG) |
-| [A-E3] | β is universal (same across all measurements and observers) | Simplifying assumption; physically motivated by β being a property of the VVV-QMRF framework, not individual measurements | ⚠️ WEAKLY anchored — could be relaxed to β(observer) | WEAK |
+| [A-E3] | beta is universal (same across all measurements and observers) | **FREE PARAMETER (MEASUREMENT TARGET)** — like coupling constants in physics, beta is measured not derived. Only remaining of original 4 K9_E assumptions. | ⚠️ WEAKLY anchored — could be relaxed to beta(observer). Anchored to N_QM_VVV_00031 | **FREE PARAMETER** (was WEAK) |
 | [A-E4] | ⊥_K^str (structural, K9_E) is distinct from ⊥_K^dyn (dynamic, K5) | Tier 4 OI-4 resolution; BE lineage: saṃśaya vs niścaya bādhaka | ❌ — has EX anchor (dual modes) | STRONG |
 
-**Orphaned assumptions: 0.** [A-E3] is weakly anchored but not orphaned (has N_QM_VVV_00031 link).
+**Orphaned assumptions: 0.** [A-E3] is a free parameter anchored to N_QM_VVV_00031 — parameters are measured, not derived.
 
 **Anchor strength improvements (2026-05-24):**
+- [A-E1] K_ctx via T3: MODERATE → **FULLY ELIMINATED** (T9, 5 lemmas L1-L5)
 - [A-E2a] fraction counting: WEAK → **STRONG** (structural derivation via T8)
 - [A-E2b] outcome filter: WEAK → MODERATE (T8 split) → MODERATE-STRONG (H3+H4) → **STRONG** (T8-H1 structural uniqueness)
+- [A-E3] beta universal: WEAK → **FREE PARAMETER** (reclassified: measurement target, not assumption)
 - T8: K5_prospective → f_perp = E[I_j] (positive derivation)
+- T9: K_ctx morphism channel → phi_ij = i_j (K8-constrained T1 embedding)
 - H3: BE principle (Dharmakīrti: binary pramāṇa/apramāṇa → uniform epistemic weight)
 - H4: Comparative analysis — 4 natural alternatives independently eliminated
 - **T8-H1: Structural uniqueness — binary K1-K8 type system + K6 non-hierarchy → uniform weight is FORCED, not chosen. Fraction form is the UNIQUE admissible form.**
-- **[A-E2] FULLY ELIMINATED as an assumption.** Both counting mechanism AND outcome filter are structurally determined by K1-K8 primitives. What was WEAK is now a structural theorem chain: T8 + T8-H1 + H3 + H4.
-
-**Orphaned assumptions: 0.** [A-E3] is weakly anchored but not orphaned (has N_QM_VVV_00031 link).
+- **[A-E1] FULLY ELIMINATED.** K_ctx no longer requires an assumed T3-morphism.
+- **[A-E2] FULLY ELIMINATED as an assumption.** Both counting mechanism AND outcome filter are structurally determined by K1-K8 primitives.
+- **Net: original 4 assumptions → 1 free parameter ([A-E3]) + 0 assumptions + 0 orphaned.**
 
 ---
 

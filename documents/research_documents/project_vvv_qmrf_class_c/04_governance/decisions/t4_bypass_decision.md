@@ -2,7 +2,7 @@
 
 **Decision ID:** D-T4-BYPASS-01
 **Date:** 2026-05-23
-**Status:** PROPOSED
+**Status:** APPLIED
 **Affects:** K_Space_Axiomatization_plan_v3.md Phase 7-12, VVV_QMRF_K9_Analysis_Plan.md K9-S1→S7
 
 ---

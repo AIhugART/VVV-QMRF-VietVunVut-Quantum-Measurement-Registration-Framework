@@ -7,6 +7,10 @@ Re-scoped from original PP-4 spec: K9_B replaced by K9_E.
 Usage:
   python proietti_chsh_fit.py
 
+DEPRECATED (2026-05-23): This script uses RECONSTRUCTED data (E_exp = V_exp * E_QM),
+NOT raw Proietti Figure 3 correlators. The resulting beta=0 fit is a tautology.
+Use proietti_raw_fit.py for genuine empirical fit. Retained for historical reference only.
+
 Data source: Proietti et al., arXiv:1902.05080v2
   S_exp = 2.416 ± 0.075 (1794 coincidences)
   Individual ⟨A_xB_y⟩: D1-BLK-1 (pending extraction from Figure 3)

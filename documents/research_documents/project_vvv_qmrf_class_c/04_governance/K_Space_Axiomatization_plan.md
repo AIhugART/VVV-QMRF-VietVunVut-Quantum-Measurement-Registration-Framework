@@ -533,7 +533,7 @@ Phase 4 fixes — COMPLETE
   F8c (E8 V_prov/T2/E9 boundary clarification) → P4-C3 [RESOLVED]
   F8d (§3.4 BE lineage K6-K8 coverage + 8/8 verdict) → P4-C4 [RESOLVED]
 
-Phase 5 fixes — IN PROGRESS
+Phase 5 fixes — COMPLETE
   F9a (§7.5 Step 6 V_prov notation + V_final closure guard) → P5-C1 [RESOLVED]
   F9b (§7.5 Step 4 stale GAP G4 label → GAP G3; Dep-A/Dep-B confirmed not gaps) → P5-C2 [RESOLVED]
   F9c-a (§10.3 P4 citation: V_prov internal note added) → P5-C3 [RESOLVED]

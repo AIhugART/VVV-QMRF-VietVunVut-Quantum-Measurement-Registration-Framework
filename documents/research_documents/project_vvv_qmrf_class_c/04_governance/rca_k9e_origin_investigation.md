@@ -270,7 +270,7 @@ Plus additivity supplement excluding non-linear alternatives (c²/n², etc.).
 |---|-------------|---------|--------|
 | 1 | ~~Củng cố EX anchor cho [A-E2] (f_perp functional form)~~ | MEDIUM | **RESOLVED (2026-05-24)** — T8 bridge: [A-E2a] DERIVED (STRONG), [A-E2b] MODERATE |
 | 2 | Củng cố EX anchor cho [A-E3] (β universal) — hiện tại WEAK | MEDIUM | Open |
-| 3 | Formal hóa T3-morphism channel cho K_ctx — hiện tại là assumption [A-E1] | HIGH | Open |
+| 3 | ~~Formal hóa T3-morphism channel cho K_ctx — hiện tại là assumption [A-E1]~~ | HIGH | **RESOLVED (2026-05-24)** — T9 K_ctx Construction Theorem: φ_ij = i_j (K8-constrained T1 embedding), 5 lemmas (L1-L5), 3-Round RCA. [A-E1] FULLY ELIMINATED. |
 | 4 | ~~Củng cố [A-E2b] outcome filter~~ | LOW | **RESOLVED (2026-05-24)** — T8-H1 structural uniqueness: [A-E2] FULLY ELIMINATED. Both counting + filter are structurally determined |
 | 5 | ~~Document motivation của fraction form~~ | LOW | **RESOLVED** — T8 + H3 + H4 + T8-H1: complete proof chain |
 | 6 | Giữ nguyên practice: flag mọi assumption, trace mọi term | ONGOING | Ongoing |
@@ -353,16 +353,17 @@ K5 (post-hoc invalidation, binary ⊥)
 
 | # | Assumption | Anchor | Priority |
 |---|-----------|--------|----------|
-| [A-E1] | K_ctx defined via T3-morphism | MODERATE | HIGH |
+| [A-E1] | ~~K_ctx defined via T3-morphism~~ | ~~MODERATE~~ | ~~HIGH~~ → **ELIMINATED (2026-05-24)** |
 | [A-E3] | β is universal | WEAK | MEDIUM |
 
-**[A-E2] và [A-E4] đã được giải quyết.** Còn 2 assumptions cần củng cố.
+**[A-E1], [A-E2], và [A-E4] đã được giải quyết.** Chỉ còn 1 assumption: [A-E3] (β universal).
 
 ### 9.6 Final Verdict
 
-> **K9_E [A-E2] assumption: ĐÃ BỊ LOẠI BỎ HOÀN TOÀN.**
+> **K9_E assumptions: 3/4 ĐÃ BỊ LOẠI BỎ HOÀN TOÀN.**
 >
-> Chain chứng minh: K5 → K5_prospective → T8 → T8-H3/H4/H1 → f_perp.
+> [A-E2] chain: K5 → K5_prospective → T8 → T8-H3/H4/H1 → f_perp.
+> [A-E1] chain: K8 + T1 → T9 (L1-L5) → φ_ij = K8-constrained embedding → K_ctx theorem.
 >
 > 3 commits. 3 vòng RCA (T8: 4.83, H3+H4: 4.50, H1: 4.83). Aggregate: **4.72/5**.
 >

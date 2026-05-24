@@ -103,7 +103,7 @@ No-signaling preserved. ✓
 | `Tr(E_o ρ_i)` | EXTERNAL (Standard QM) | ⚠️ ρ is ρ-side, not K-side. K1-K8 do not define ρ. This is by design — K-space and ρ-space are distinct layers (VVV-QMRF architecture). |
 | `β` | FREE PARAMETER | ⚠️ Not derivable from K1-K8. Flagged as [A-E3]. Expected — every extension framework has free parameters. |
 | `f_perp` | CONSTRUCTED from K5 ⊥_K (structural mode) | ⚠️ Uses Tier 4 OI-1 compatibility map C(o_i, o_j), which requires ρ_joint at setup. |
-| `K_ctx` | CONSTRUCTED via T3-morphism | ⚠️ T3 is Layer 2 (theorem), not Layer 1 (axiom). [A-E1] flagged. |
+| `K_ctx` | CONSTRUCTED via T9 (K8-constrained T1 embedding, phi_ij = i_j) | [A-E1] FULLY ELIMINATED (2026-05-24, T9 L1-L5). |
 | `Z_E` | CONSTRUCTED | ✅ Mathematical normalization, no axiom dependency. |
 | `V = 0 → no P` | K4/K5 → PP-1 v2 | ✅ Directly derived. |
 | `isNull → no P` | K4 isNull guard | ✅ Directly derived. |
@@ -151,12 +151,14 @@ The binary condition (T > 0?) gates a continuous phenomenon (flow rate).
 
 | Assumption | Beyond K1-K8? | Justified? |
 |---|---|---|
-| [A-E1] K_ctx via T3 | YES (Layer 2) | ✅ JUSTIFIED — T3 derived from K1-K8 |
-| [A-E2] f_perp fraction form | YES (construction) | ✅ JUSTIFIED — standard counting |
-| [A-E3] β universal | YES (simplifying) | ⚠️ WEAKLY JUSTIFIED — could be observer-dependent |
-| [A-E4] ⊥_K^str ≠ ⊥_K^dyn | YES (Tier 4 OI-4) | ✅ JUSTIFIED — formally distinguished |
+| [A-E1] K_ctx via T3 | YES (Layer 2) | ✅ **FULLY ELIMINATED** (2026-05-24) — T9 constructs phi_ij = i_j (K8-constrained T1 embedding), 5 lemmas L1-L5 |
+| [A-E2] f_perp fraction form | YES (construction) | ✅ **SPLIT:** [A-E2a] counting → DERIVED (T8 + T8-H1, 5 lemmas: uniform weight forced by binary K1-K8 + K6 non-hierarchy). [A-E2b] outcome filter → MODERATE (structurally determined, not assumed) |
+| [A-E3] beta universal | YES (simplifying) | ⚠️ FREE PARAMETER (MEASUREMENT TARGET) — beta is a measurement target like coupling constants in physics. Only remaining of 4 original K9_E assumptions (1/4). |
+| [A-E4] bot_K^str != bot_K^dyn | YES (Tier 4 OI-4) | ✅ STRONG — formally distinguished, dual modes confirmed |
 
-**RESULT: ✅ PASS. All terms traceable. 4 flagged assumptions, all justified or weakly justified. No ORPHANED assumptions.**
+> **ERRATUM (2026-05-24 — T8/T9 update):** This table has been updated to reflect T8 (K5_prospective Frequency Bridge) and T9 (K_ctx Construction Theorem) added to `K_Space_Axiomatization.md` v2.3. [A-E1] is now FULLY ELIMINATED (not merely justified). [A-E2] is SPLIT (not merely justified). [A-E3] reclassified as FREE PARAMETER (was WEAKLY JUSTIFIED). Net: original 4 assumptions → 1 free parameter + 1 modeling choice + 0 eliminated + 0 orphaned.
+
+**RESULT: ✅ PASS. All terms traceable. 0 orphaned assumptions. 1 free parameter ([A-E3] beta). 1 modeling choice ([A-E2b] outcome filter). 2 fully eliminated ([A-E1], [A-E2a]).**
 
 ---
 

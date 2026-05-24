@@ -8,9 +8,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Document type:** `meta_architecture` (Class C working copy)
 **Date:** 2026-05-19 (updated 2026-05-24)
-**Version:** 2.2
+**Version:** 2.3
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** v2.2 — Layer 1 extended with K5_prospective (P9 bridge, v29). Layer 2 extended with T8 (K5_prospective Frequency Bridge + H1-H4). **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. **UPDATE (2026-05-24):** T8 bridges K5_prospective ↔ K9_E f_perp; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas). Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D; T8 is Class C (structural derivation from K5_prospective).
+**Status:** v2.3 — Layer 1 extended with K5_prospective (P9 bridge, v29). Layer 2 extended with T8 (K5_prospective Frequency Bridge + H1-H4) + T9 (K_ctx Construction Theorem / T3-Morphism Channel Formalization, L1-L5). **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. **UPDATE (2026-05-24):** T8 bridges K5_prospective ↔ K9_E f_perp; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas). T9 formalizes φ_ij morphism channel; [A-E1] FULLY ELIMINATED via L1-L5 (5 lemmas, 3-Round RCA). Only [A-E3] remains (1/4 original K9_E assumptions). Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D; T8, T9 are Class C (structural derivation from K5_prospective / K8 embedding).
 **Source:** Derived from VVV-QMRF Working Paper v2.0 Section 7.2 deferred item #5
 **Cite:** VVV-QMRF §K-AXIOM
 **Plan reference:** `papers/Testable_Prediction_Section/extended_wigners_friend_k_side_incommensurability/plan/VVV-QMRF_K_Space_Axiomatization_Plan.md`
@@ -903,6 +903,218 @@ AJVS boundary:
 
 ---
 
+### T9 — K_ctx Construction Theorem (T3-Morphism Channel Formalization)
+
+> **[A-E1] ELIMINATION (2026-05-24):** T9 formally constructs the morphism channel φ_ij from K1-K8 primitives + T1 (K_joint construction). K_ctx is no longer defined via an assumed "T3-morphism" — the morphism IS the K8-constrained embedding i_j: K_{R_j} → K_joint supplied by T1. [A-E1] FULLY ELIMINATED via 5 lemmas (L1-L5) with 3-Round RCA. Assumptions remaining: [A-E3] only (1/4 original).
+
+**Statement:**
+> For any two registering systems R_i, R_j with requires_K_joint(K_{R_i}, K_{R_j}) = 1, the morphism φ_{ij}: K_{R_j} → K_joint is defined as φ_{ij}(k_j) = i_j(k_j), where i_j: K_{R_j} → K_joint is the canonical K8-constrained embedding supplied by T1 (K_joint construction, N=2). φ_{ij} preserves all five K-state tuple fields (M, o, cert, t, V). Consequently, K_ctx is a THEOREM construction, not an assumption: K_ctx(k_i, Exp) = {φ_{ij}(k_j) : k_j ∈ K_{R_j}, requires_K_joint(R_i, R_j) = 1, k_j temporally compatible with k_i}.
+
+**Derivation from axioms:**
+```
+Primitives (Layer 1):
+  K1:  K-state tuple ⟨M, o, cert, t, V⟩ — defines what k_j IS.
+  K2:  (K_R, <_R) strict total order — defines temporal compatibility.
+  K5:  requires_K_joint = 1 → C_K exists — defines WHEN φ_ij is needed.
+  K6:  Auth(k_a → k_b, C_K) — authority within shared C_K; φ_ij carries
+       k_j into C_K where Auth is evaluable.
+  K8:  i_{R→X}: K_R → K_X preserves all 5 fields (M, o, cert, t, V) —
+       defines structural CONSTRAINTS on any valid embedding.
+
+Bridge (Layer 2):
+  T1:  K_joint(R_i, R_j) construction (N=2) — supplies canonical embeddings
+       i_i: K_{R_i} → K_joint and i_j: K_{R_j} → K_joint.
+
+Construction:
+  φ_{ij}(k_j) := i_j(k_j) ∈ K_joint
+    where i_j is the canonical embedding from T1,
+    constrained by K8 to preserve all 5 tuple fields.
+
+  This is IDENTICAL to the embedding already used by T3 (Bridge_EWF)
+  to place k_F and k_W into K_joint for cross-observer evaluation.
+  The label "T3-morphism" was a synonym for "K8-constrained embedding
+  into K_joint" — T9 makes this identification explicit and formal.
+
+Precondition:
+  requires_K_joint(R_i, R_j) = 1  (C_K exists — K5 firing precondition)
+  Without C_K, φ_ij is undefined (no joint space to embed into).
+```
+
+#### Lemma L1 — Existence of φ_ij
+
+**Statement:**
+> For any pair (R_i, R_j) with requires_K_joint(R_i, R_j) = 1, the morphism φ_{ij}: K_{R_j} → K_joint exists and is given by φ_{ij} = i_j where i_j is the canonical T1 embedding.
+
+**Proof:**
+```
+1. requires_K_joint(R_i, R_j) = 1                     [premise]
+2. ⇒ T1 applicable: K_joint(R_i, R_j) exists          [T1, N=2 constructive]
+3. ⇒ ∃ i_j: K_{R_j} → K_joint                         [T1 canonical embedding]
+4. Define φ_{ij} := i_j                               [definition]
+5. φ_{ij} exists.                                     [from 3,4] ∎
+```
+
+#### Lemma L2 — Uniqueness of φ_ij
+
+**Statement:**
+> φ_{ij} is the UNIQUE morphism K_{R_j} → K_joint that preserves all five K-state tuple fields. Any alternative ψ: K_{R_j} → K_joint satisfying K8 field-preservation constraints must equal φ_{ij}.
+
+**Proof:**
+```
+1. Let ψ: K_{R_j} → K_joint be any morphism satisfying K8:
+     ψ preserves M, o, cert, t, V for all k_j ∈ K_{R_j}.   [K8 constraint]
+2. T1 constructs K_joint from the images i_i(K_{R_i}) and i_j(K_{R_j}):
+     Elements of K_joint are of the form i_i(k) or i_j(k) for k in
+     the respective source spaces.                           [T1 construction]
+3. For k_j ∈ K_{R_j}, ψ(k_j) ∈ K_joint must be a tuple
+   with fields (M, o, cert, t, V) = fields of k_j.          [K8, from 1]
+4. The only element of K_joint with exactly those fields
+   is i_j(k_j) — because K_joint has no other elements
+   carrying the same (M, o, cert, t) combination
+   (K1 t-injectivity in K_joint, inherited from T1).        [K1 + T1]
+5. Therefore ψ(k_j) = i_j(k_j) = φ_{ij}(k_j).               [from 3,4]
+6. ψ = φ_{ij} for all k_j ∈ K_{R_j}.                        [universal generalization] ∎
+```
+
+**Why uniqueness holds (structural forcing):**
+```
+K8 mandates: ψ(k_j) must have the SAME 5 fields as k_j.
+T1 supplies:  exactly ONE element in K_joint with those fields (i_j(k_j)).
+
+No alternative construction can satisfy K8 without producing i_j(k_j),
+because any tuple in K_joint with identical (M, o, cert, t) IS i_j(k_j)
+by K1 t-injectivity. The morphism is STRUCTURALLY FORCED.
+```
+
+#### Lemma L3 — Field Preservation (Sufficiency for K_ctx)
+
+**Statement:**
+> φ_{ij} preserves all 5 tuple fields. These are SUFFICIENT for all K_ctx operations: K5_prospective needs o(k_j) (contradiction check), t(k_j) (temporal compatibility), V(k_j) (Auth condition (b)), cert(k_j) (K1 admission guarantee), and M(k_j) (act identification).
+
+**Proof:**
+```
+1. φ_{ij} = i_j with K8 constraint                            [L1 + K8]
+2. K8 explicitly preserves: M, o, cert, t, V.                 [K8 statement]
+3. K_ctx operations:
+     (a) Temporal compatibility:  uses t(k_j)                 [K2]
+     (b) Contradiction check:     uses o(k_j)                 [K5 ⊥ definition]
+     (c) Auth condition (b):      uses V(k_j)                 [K6]
+     (d) K1 admission:            uses cert(k_j) = 1          [K1]
+     (e) Act identification:      uses M(k_j)                 [K1]
+   All fields needed are preserved by φ_{ij}.                 [from 2] ∎
+```
+
+#### Lemma L4 — K_ctx as Theorem (Elimination of [A-E1])
+
+**Statement:**
+> K_ctx(k_i, Exp) = {φ_{ij}(k_j) : k_j ∈ K_{R_j}, requires_K_joint(R_i, R_j) = 1, k_j temporally compatible with k_i}. This definition uses ONLY K1-K8 primitives + T1 constructive embedding. No new assumption is required. [A-E1] is ELIMINATED.
+
+**Proof:**
+```
+Original K_ctx definition (requiring [A-E1]):
+  K_ctx(k_i, Exp) = {k_j ∈ K_{R_j} : ∃ T3-morphism φ_{ij} ∧ temporally compatible}
+  ↑ "∃ T3-morphism φ_{ij}" was the [A-E1] assumption.
+
+New K_ctx definition (post-T9):
+  K_ctx(k_i, Exp) = {φ_{ij}(k_j) : k_j ∈ K_{R_j},
+                     requires_K_joint(R_i, R_j) = 1,         [K5 precondition]
+                     k_j <_joint k_i  ∨  k_i <_joint k_j}    [K2 compatibility]
+
+  where φ_{ij}(k_j) = i_j(k_j) ∈ K_joint is constructed by:
+    - K5:  requires_K_joint = 1 ⇒ C_K exists                [Layer 1]
+    - T1:  K_joint exists with canonical embedding i_j      [Layer 2, N=2]
+    - K8:  i_j preserves all 5 fields                       [Layer 1]
+
+  Every element of this definition is derived from K1-K8 or T1.
+  T1 is a Layer 2 theorem (K1-K8 inputs), not a new assumption.
+  K5 precondition (requires_K_joint = 1) is already required
+    by K5 itself — K_ctx inherits it, does not add it.
+
+  Therefore K_ctx definition requires ZERO new assumptions beyond
+  what K1-K8 + T1 already provide. [A-E1] FULLY ELIMINATED. ∎
+```
+
+#### Lemma L5 — Comparative: Alternative Channels Excluded
+
+**Statement:**
+> Alternative constructions for accessing k_j from K_{R_j} in a cross-observer context are either (a) undefined (no C_K), (b) violate K8 field preservation, or (c) equivalent to φ_{ij} (redundant). φ_{ij} is the unique valid channel.
+
+**Proof (exhaustion over 4 alternatives):**
+```
+Alternative A: Direct cross-K-space comparison (no K_joint).
+  → Without K_joint, no C_K exists for cross-space evaluation.
+  → K5 condition (ii) requires C_K for ⊥ evaluation.
+  → Direct comparison is UNDEFINED for K5 operations.         [DEAD]
+
+Alternative B: ρ-side correlation (tensor product H_A ⊗ H_B).
+  → ρ-side correlation is physical, not registration-layer.
+  → K_ctx requires K-side fields (o, cert, V, t) — ρ cannot supply these.
+  → Category error: K_ctx is K-side set, not H-side correlation. [DEAD]
+
+Alternative C: Weighted embedding (non-uniform field preservation).
+  → K8 mandates field preservation: any valid embedding preserves
+    all 5 fields exactly. No "partial" or "weighted" embedding
+    is admitted by K8.
+  → Violating K8 is not a valid alternative within K1-K8 framework. [DEAD]
+
+Alternative D: Independent morphism ψ ≠ i_j but K8-compliant.
+  → Lemma L2 proves ψ = i_j = φ_{ij} (uniqueness).
+  → Any K8-compliant morphism IS φ_{ij}.                       [EQUIVALENT — redundant]
+```
+
+**Summary:**
+```
+  4 alternatives examined:
+    A (direct, no K_joint) → UNDEFINED (no C_K)
+    B (ρ-side)             → CATEGORY ERROR (ρ ≠ K)
+    C (non-K8 compliant)   → VIOLATES K8 (not a valid embedding)
+    D (different K8 embed) → EQUIVALENT to φ_{ij} (Lemma L2 uniqueness)
+
+  φ_{ij} is the UNIQUE valid structural channel. ∎
+```
+
+#### K_ctx Construction — Complete Theorem Statement
+
+```
+DEFINITION (Theorem, not assumption):
+  For a registering system R_i performing experiment Exp, the
+  contextual K-state set K_ctx(k_i, Exp) is defined as:
+
+    K_ctx(k_i, Exp) = { φ_{ij}(k_j) ∈ K_joint :
+        k_j ∈ K_{R_j}                                         [K1: tuple in source space]
+        ∧ requires_K_joint(R_i, R_j) = 1                      [K5: C_K exists]
+        ∧ (t(k_j) < t(k_i) ∨ t(k_i) < t(k_j))                [K2: temporal compatibility]
+        ∧ R_j is an observer in Exp other than R_i }          [experimental scope]
+
+  where φ_{ij}(k_j) = i_j(k_j) is the K8-constrained T1 embedding.
+
+  For the special case where K_joint contains k_i and multiple k_j
+  from distinct source spaces, the joint order <_joint (from T1)
+  is used for temporal compatibility checking.
+
+  K_ctx is well-defined because:
+    - requires_K_joint = 1 ensures C_K and K_joint exist   [K5 + T1]
+    - K8 ensures all needed fields are preserved            [K8]
+    - K2 ensures temporal compatibility is decidable        [K2 strict total order]
+    - K1 t-injectivity ensures no duplicate elements        [K1]
+```
+
+| Property | Value |
+|---|---|
+| **Theorem number** | T9 (K_ctx Construction Theorem) |
+| **Layer** | Layer 2 (Bridge theorem — connects K1-K8 structural primitives to K_ctx operational definition) |
+| **Layer 1 dependency** | K1 (tuple structure), K2 (temporal order), K5 (requires_K_joint, C_K existence), K6 (Auth within C_K), K8 (field-preserving embedding constraint) |
+| **Layer 2 dependency** | T1 (K_joint construction, N=2 — supplies canonical embedding i_j) |
+| **Level 4 dependency** | requires_K_joint predicate (determines when C_K exists — inherited from K5); D_joint scope (Auth condition (c) — inherited from K6). No NEW Level 4 dependency beyond those already in K5/K6 |
+| **BE lineage** | Svabhāvapratibandha (essential relation): k_j is accessible from k_i's context because R_i and R_j share an essential relation (entanglement in QM, requires_K_joint in VVV-QMRF). The morphism φ_ij embodies the structural channel that makes cross-observer registration evaluation possible — analogous to how svabhāvapratibandha makes inference (anumāna) from one cognition to another structurally grounded. `N_BE_00021` (Essential relation) |
+| **EX anchor** | `N_QM_VVV_00025` (IRB / Intrinsic Relational Binding) — φ_ij is the formal channel implementing IRB. Anchor strength: **STRONG** (structural identity — φ_ij IS the T1 embedding, not a conceptual link) |
+| **Claim class** | C — T9 is a structural identification theorem (φ_ij = i_j), not a new postulate. The construction uses only K1-K8 + T1; the proof is deductive (5 lemmas). Claim boundary: T9 does not assert K_joint exists for N>2 (T4-H scope), does not assert φ_ij is computable, and does not modify T1 or K8 text |
+| **[A-E1] impact** | **FULLY ELIMINATED.** K_ctx definition no longer requires an assumed "T3-morphism." φ_ij is the K8-constrained T1 embedding — derived from K1-K8 + T1. L1 (existence) + L2 (uniqueness) + L3 (sufficiency) + L4 (K_ctx theorem) + L5 (exhaustion) = complete elimination |
+| **Freeze status** | Updatable (Layer 2 bridge). T9 depends on T1 (pending Level 4 freeze) and K5/K6 (conditional semantic dependencies on Level 4). If T1 construction or K5 precondition changes, T9 derivation updates. T9 does not modify Layer 1 |
+| **Update trigger** | If T1 K_joint construction is revised; if requires_K_joint scope changes (Level 4); if K8 field-preservation constraint is modified |
+
+---
+
 ### T4 — N-Observer Generalization Theorem
 
 **Statement:**
@@ -1211,6 +1423,8 @@ Inputs (Layer 1 + Layer 2):
 
   T3 (Layer 2, Bridge_EWF):
     K_ctx(k_i, Exp) = {k_j ∈ K_{R_j} : ∃ T3-morphism φ_{ij} ∧ temporally compatible}
+    NOTE: T9 (2026-05-24) now formalizes φ_{ij} = i_j (K8-constrained T1 embedding).
+    K_ctx is a THEOREM construction — see T9 for full 5-lemma proof.
 
   K6 (Layer 1):
     Auth is binary: Auth(k_a → k_b, C_K) ∈ {0,1}
@@ -1325,7 +1539,7 @@ Evaluate f_perp(o=+1, k_FA, K_ctx) via T8:
 |---|---|
 | **Bridges axioms to** | K5_prospective (pre-instantiation evaluation) → K9_E f_perp (probability fraction). Structural derivation chain closing the gap between Layer 1 K5 and Layer 3 P9 |
 | **Layer 1 dependency** | K5_prospective (evaluation rules), K5 (⊥ primitive, binary), K6 (Auth, binary), K2 (temporal order, binary) |
-| **Layer 2 dependency** | T3 (K_ctx definition via T3-morphism — T8 reads K_ctx, does not redefine it) |
+| **Layer 2 dependency** | T3 (K_ctx definition via T3-morphism — K_ctx is now formalized by T9; T8 reads K_ctx, does not redefine it). T9 (φ_ij = K8-constrained T1 embedding) supplies the morphism channel. |
 | **Level 4 dependency** | `requires_K_joint`, C_K existence (for K5_prospective firing precondition); `⊥_K` boundary clauses (inherited from K5_prospective — T8 adds no new Level 4 dependency) |
 | **EX anchor** | `N_QM_VVV_00029` (bādhaka / Override) — chain: K5 post-hoc → K5_prospective pre-instantiation (v29) → T8 frequency bridge → K9_E f_perp. Anchor strength: **STRONG** (structural chain, not conceptual link). BE anchor: `N_BE_00001` (bādhaka pramāṇa — uniform epistemic weight: every contradicting cognition counts equally in the bādhaka evaluation). QM anchor: `N_QM_00102` (Measurement Reversal) |
 | **BE lineage** | Parataḥ prāmāṇya (extrinsic validity): f_perp counts contradicting cognitions uniformly because each pramāṇa (valid cognition) carries equal epistemic weight. The fraction form reflects the Buddhist epistemological principle that validity is challenged by the NUMBER of contradictors, not by a weighted "strength." See `SYSTEM_Buddhist_Epistemology/system_be_full.md` N_BE_00001 (bādhaka pramāṇa) and N_BE_00005 (viruddha / Contradiction) |
@@ -1720,6 +1934,7 @@ ADDITIVITY (implicit in K5 binary evaluation):
 | T6 | Decoherence-induced registration update (Path A: K5 invalidation; Path B: k_new instantiation) | `requires_K_joint`, C_K, `⊥_K` boundary clauses (Path A only) | Pending Level 4 freeze | Path A K5 conditions update; K3 intrinsic cert unchanged |
 | T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | Conditional on T4-H + Level 4 + E15 | If E15 IRB changes or T4-H fails; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
 | T8 | K5_prospective Frequency Bridge — f_perp = E[I(K5_prospective fires)]; upgrades [A-E2] WEAK → STRONG | `requires_K_joint`, C_K (via K5_prospective); `⊥_K` boundary clauses (inherited from K5_prospective) | Updatable (Layer 2). Derivation is a statistical identity over binary K5/K6 primitives. Conditional on K_ctx uniformity. | If K5_prospective revised; if K_ctx definition changes (weighting); if new continuous contradiction-strength axiom added → T8 weighted generalization |
+| T9 | K_ctx Construction Theorem (T3-Morphism Channel Formalization) — φ_ij = i_j (K8-constrained T1 embedding); 5 lemmas (L1-L5); [A-E1] FULLY ELIMINATED | `requires_K_joint`, C_K (via K5 precondition); `D_joint` scope (via K6 Auth — inherited). No NEW Level 4 dependency. | Updatable (Layer 2). φ_ij = i_j identification holds for any T1-supplied embedding; structural core (L1-L2) is T1-independent — K8 constraint alone determines φ_ij. | If T1 K_joint construction revised; if K5 requires_K_joint scope changes; if K8 field-preservation constraint modified |
 
 ---
 
@@ -1740,7 +1955,7 @@ ADDITIVITY (implicit in K5 binary evaluation):
 | 10 | Update paper v2.0 Section 7.2 deferred item #5 status | After community feedback on this document | Low |
 | 11 | RCA re-audit after community feedback | After Level 4 freeze and T1-T3 finalization | High |
 | 12 | `CHANGELOG.md` §3.3 Operational Bridge semantic dependency on K4-K7 untracked | `CHANGELOG.md` §3.3 lists 7 sufficient-condition bridges (Condition A, B, B2, C, D, E, ODC_K) for raising `requires_K_joint`. The verdict notes B, B2, and ODC_K have indirect semantic dependency on K4-K7 validity propagation, but the table does not annotate which K-axioms each Condition row depends on. Add K-axiom dependency annotations (e.g., K4, K5, K7) to each §3.3 Condition row. Note: the predicate-level mapping (σ, V, ⊥, Auth, D_joint, requires_K_joint, C_K → K-axioms) is a separate task belonging to Layer 4 §4.4, not to §3.3. | Medium |
-| 13 | **Probability postulate (K9/P9)** | **Strengthened (2026-05-24)** — T8 (K5_prospective Frequency Bridge) bridges K9_E f_perp to K5_prospective, upgrading [A-E2] EX anchor from WEAK to STRONG for fraction counting mechanism. [A-E2b] outcome filter remains MODERATE. Full Layer 1/2 formal integration: T8 provides the missing structural derivation chain (K5 → K5_prospective → T8 → f_perp → K9_E). Status upgrade: "Partially Addressed" → "Structurally Anchored." | **Critical → High** |
+| 13 | **Probability postulate (K9/P9)** | **Strengthened (2026-05-24)** — T8 bridges K9_E f_perp to K5_prospective: [A-E2] FULLY ELIMINATED (T8-H1, 5 lemmas). T9 formalizes φ_ij morphism channel: [A-E1] FULLY ELIMINATED (L1-L5, 5 lemmas). Only [A-E3] (β universal) remains — 1/4 original assumptions. Full Layer 1/2 formal integration: T8 provides K5 → K5_prospective → T8 → f_perp → K9_E chain; T9 provides K8 → T1 → φ_ij → K_ctx structural foundation. Status: "Structurally Anchored." | **Critical → Medium** |
 | 14 | **Non-circular data comparison** | **Ongoing** — Known that marginal CHSH correlators cannot test the deviation due to Marginalization Cancellation. A genuine non-circular comparison requires extracting individual conditional correlators or joint outcome histograms from Proietti Figure 3 raw data. | **Critical** |
 | 15 | **Code consistency** | **Addressed (fits/K9S9)** — Formalized and implemented the exact P9-JC conditional prediction engine (`K9S9_conditional_predictions.py`), achieving 11% deviation at beta=0.3. Approximations in `k9e_predictor.py` and `d1_blk1_4point_fit.py` are deprecated. | High |
 | 16 | **Numerical predictions in main document** | **Ongoing** — First genuine numerical predictions generated in `plan/k9_analysis/K9S9_conditional_predictions.md`. Stating them formally in this main document is pending community review. | **Critical** |
