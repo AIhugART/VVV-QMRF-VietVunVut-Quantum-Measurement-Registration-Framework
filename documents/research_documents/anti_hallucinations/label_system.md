@@ -156,7 +156,7 @@ Nhan hien tai cho cac component chinh trong VVV-QMRF (2026-05-24):
 | T6 — `Z_E` normalization | `[AH-OK]` | — | — | `[AH-OK]` |
 | T7 — V(k)=0 gate | `[AH-LOW]` | — | — | `[AH-LOW]` |
 | T8 — isNull gate | `[AH-LOW]` | — | — | `[AH-LOW]` |
-| **[A-E3] beta universal** | `[AH-WARN]` | `[RS-CRIT]` | `[AH-WEAK] [AH-EX]` | `[AH-WARN] [RS-CRIT] [AH-EX] [AH-WEAK]` |
+| **[A-E3] beta universal** | `[AH-OK]` | `[RS-LOW]` | `[AH-EX]` (RECLASSIFIED: FREE PARAMETER) | `[AH-OK] [RS-LOW] [AH-EX]` |
 | [A-E1] K_ctx via T3 | `[AH-OK]` | — | `[AH-ELIM]` | `[AH-OK] [AH-ELIM]` |
 | [A-E2] f_perp form | `[AH-OK]` | — | `[AH-ELIM]` | `[AH-OK] [AH-ELIM]` |
 | [A-E4] dual ⊥_K modes | `[AH-LOW]` | — | — | `[AH-LOW]` |

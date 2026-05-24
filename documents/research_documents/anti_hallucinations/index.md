@@ -3,7 +3,7 @@
 # Anti-Hallucination System â€” VVV-QMRF
 
 **System name:** VVV-QMRF Anti-Hallucination Pipeline (AHP)
-**Version:** v1.3 (2026-05-24)
+**Version:** v1.4 (2026-05-24)
 **Scope:** VVV-QMRF (toan bo cac layer: K1-K8 axioms, T1-T8 bridge theorems, K9_E postulate, E1-E16 postulates, BE-QM mapping, Class C/D data analysis)
 **Compass:** VVV-QMRF-EX (intelligence only, no structure import)
 **Method:** 3-Round RCA x 5-Why x scoring threshold 4/5

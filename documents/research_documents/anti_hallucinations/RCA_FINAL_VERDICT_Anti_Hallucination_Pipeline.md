@@ -125,7 +125,7 @@ CLAUDE.md (Rule Zero)
 
 ---
 
-## 4. Top 10 Hallucination Risks — Final Verdict (updated v1.1)
+## 4. Top 10 Hallucination Risks — Final Verdict (v1.2 — [A-E3] removed)
 
 | Rank | Component | Risk Score | Label | Status |
 |------|-----------|------------|-------|--------|
@@ -140,7 +140,7 @@ CLAUDE.md (Rule Zero)
 | 9 | E1-E16 | 9.6 | `[AH-LOW] [RS-LOW]` | MONITORING |
 | 10 | P10-TIM | 9.0 | `[AH-LOW] [RS-LOW] [AH-LOCK]` | DECISION-LOCKED |
 
-**0/10 components dat hallucination thuc su (9-10 diem).** 5/10 o Vang (speculative duoc flag). 5/10 o Xanh duong (conceptual extension).
+**0/10 components dat hallucination thuc su (9-10 diem). [A-E3] da RECLASSIFIED thanh FREE PARAMETER — khong con trong Top 10.
 
 ---
 
