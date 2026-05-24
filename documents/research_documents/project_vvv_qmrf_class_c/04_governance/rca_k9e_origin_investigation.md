@@ -372,4 +372,67 @@ K5 (post-hoc invalidation, binary ⊥)
 
 ---
 
-*RCA Investigation: K9_E Origin — 2026-05-24 (final: T8+H3+H4+H1 complete). 20 components, avg hallucination 2.85/10 (3.4→3.1→2.9→2.85). [A-E2] FULLY ELIMINATED. Chain: K5→K5_prospective→T8→T8-H1→f_perp closed. Verdict: NOT hallucination — systematically constructed, structurally proven.*
+---
+
+## 10. Session Summary — 2026-05-24
+
+### 10.1 Full commit chain
+
+| # | Commit | Task | RCA Score |
+|---|--------|------|-----------|
+| 1 | `7f273ee` | K9_E origin investigation (19 components) + T8 theorem | 4.83/5 |
+| 2 | `4bbc63f` | H3 (BE principle) + H4 (comparative analysis) | 4.50/5 |
+| 3 | `2da29a2` | H1 (structural uniqueness, 5 lemmas) | 4.83/5 |
+| 4 | `a93c041` | Final summary + index.md updated | — |
+| 5 | `bc6f2fc` | Sync meta_architecture v2.1→v2.2 | — |
+| 6 | `396ca3c` | Peer-sync mechanism (3-layer protection) | — |
+
+### 10.2 Files changed (7 files, 1500+ lines)
+
+| File | Lines | Role |
+|------|-------|------|
+| `01_axiomatization/K_Space_Axiomatization.md` | +518 | T8 + H1-H4 + K5p + PEER-SYNC |
+| `meta_architecture/K_Space_Axiomatization.md` | +346 | Sync from Class C + PEER-SYNC |
+| `04_governance/rca_k9e_origin_investigation.md` | +397 | 20-component table + §8-§10 |
+| `02_derivation_chain/Phase8_candidate_equation.md` | +42 | Assumption registry upgraded |
+| `index.md` | +2 | T8 + investigation file map |
+| `CLAUDE.md` | +11 | PEER-SYNC rule |
+| `scripts/sync_check_k_space.sh` | +123 | Sync verification script |
+
+### 10.3 Key outcomes
+
+| Outcome | Before | After |
+|---------|--------|-------|
+| [A-E2] assumption status | WEAK, 6/10 hallucination | **FULLY ELIMINATED** |
+| K9_E assumptions | 4 | **2** ([A-E1], [A-E3]) |
+| Hallucination score avg | 3.40/10 | **2.85/10** |
+| K5 → K9_E chain | Conceptual link | **Structural proof (T8 + T8-H1)** |
+| K_Space_Axiomatization.md | 1 copy, 1 version | **2 peer copies, sync mechanism** |
+| meta_architecture version | v2.1 (no K5p, no T8) | **v2.2 (fully synced)** |
+
+### 10.4 Architecture: Before vs After
+
+```
+BEFORE (2026-05-24 morning):
+  K1-K8 (frozen) → K9_E (P9 postulate)
+  [A-E2] "f_perp = fraction form" — WEAK assumption (6/10)
+  meta_architecture & Class C out of sync
+  No sync mechanism
+
+AFTER (2026-05-24 evening):
+  K1-K8 (frozen)
+    └─ K5_prospective (v29)
+         └─ T8 (frequency bridge: f_perp = E[I_j])
+              ├─ T8-H3 (BE: binary pramāṇa → uniform weight)
+              ├─ T8-H4 (comparative: 4 alternatives DEAD)
+              └─ T8-H1 (uniqueness: 5 lemmas → w_j=1 FORCED)
+                   └─ K9_E f_perp: STRUCTURALLY DETERMINED
+                        └─ [A-E2] FULLY ELIMINATED
+
+  PEER-SYNC: meta_architecture ⇄ Class C (3-layer mechanism)
+  sync_check_k_space.sh: PASS
+```
+
+---
+
+*RCA Investigation: K9_E Origin — 2026-05-24 (final: T8+H3+H4+H1 complete + peer-sync). 20 components, avg hallucination 2.85/10. [A-E2] FULLY ELIMINATED. 6 commits. 7 files. 1500+ lines. Chain closed.*
