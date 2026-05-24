@@ -1,4 +1,4 @@
-Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+﻿Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
 # CLAUDE.md
 
@@ -105,6 +105,15 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 - Before committing changes to one, verify the other is in sync via: `bash scripts/sync_check_k_space.sh`
 - If only one file is modified in a commit, the commit message MUST explain why (e.g., "header-only fix, no structural delta").
 - This rule exists because a prior session (2026-05-24) discovered a 3-commit drift: the Class C copy had T8+H1-H4 while the canonical copy had none. The sync was manually repaired (commit `bc6f2fc`). Do not repeat this drift.
+
+### ANTI-HALLUCINATION — Pipeline rule
+
+- Every claim, term, component, and assumption in VVV-QMRF MUST be auditable through the Anti-Hallucination Pipeline (AHP) at `documents/research_documents/anti_hallucinations/`.
+- When creating a new concept or revising an existing claim, apply the AHP: (1) check early warning signals (`01_early_warning.md`), (2) inventory and trace components (`02_detection.md`), (3) cross-reference SOT (`03_sot_traceability.md`), (4) apply 5-Whys RCA (`04_analysis.md`), (5) score on 0-10 rubric (`05_scoring.md`), (6) assign warning label via `label_system.md`, (7) prioritize and track solution (`06_solution.md`).
+- The top 10 highest-risk components are tracked in `00_top_10_hallucinations_record.md` — re-audit these weekly.
+- A component with trace score = 0 (orphaned) is BLOCKING — it must be anchored to at least one SOT or removed.
+- A component scoring 9-10 (Red / `[AH-CRIT]`) is BLOCKING — it must be fixed before the next commit.
+- This rule exists because hallucination is the single largest risk to VVV-QMRF credibility; the AHP provides a standardized, auditable defense.
 
 This file provides guidance to Claude Code when working in this project.
 
