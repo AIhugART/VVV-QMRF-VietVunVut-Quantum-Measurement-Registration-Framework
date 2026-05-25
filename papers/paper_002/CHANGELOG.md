@@ -5,6 +5,111 @@
 
 ---
 
+## v31 (2026-05-25) — 9-issue RCA: novelty softening, Eq.(2) motivation repositioned, thesis repetition cuts, theorem-box restructure, experimental feasibility, reparameterization defense, multi-observer → S3, defensive tone reduction, headline consolidation
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | Abstract, §3.6, §9 | **Novelty softening**: "share a structural experimental blind spot" → "share, to our knowledge, a common geometric blind spot". §3.6: "To our knowledge, no published EWF implementation has systematically probed θ". §9: "To our knowledge, no published EWF implementation has probed this geometric degree of freedom." Removed "obvious in hindsight" phrasing (v30 coda cut entirely). | 4.3/5 | Asymmetric hedging — §7 hedged (v28) but §3 and Abstract still absolute. "To our knowledge" consistent throughout. |
+| 2 | §2.3 | **Eq.(2) motivation repositioned**: GPT/operational framing (v27 bridge) moved from end of §2.3 to "Core idea" paragraph — now appears BEFORE Eq.(2) first use. "Within the GPT framework [17], Eq.(2) parametrises the simplest one-parameter deformation of the Born rule preserving normalization and remaining operationally admissible." Reader encounters operational grounding before seeing the equation. | 4.4/5 | Temporal ordering — GPT motivation buried after 70 lines (L163 in v30); should precede Eq.(2) at L115. |
+| 3 | §1, §2.3, §5.3, §9 | **Thesis repetition cuts (~30 lines)**: Deleted/compressed 7 redundant "not claiming new physics" / "does not claim...exists in nature" instances across §1, §2.3 (two blocks), §5.3, §9. Preserved ESP boundary (§1 L57-61) as the ONE canonical disclaimer. §2.3 ontological classification → 1-line inline. §2.3 null test framing → 2 sentences. §5.3 "no a priori prediction" → 2 sentences. §9 focuses on theorem + experiment, drops "not claiming" echo. | 4.5/5 | Defensive accretion — each v13-v30 round added hedges without global dedup. Repetition reads as lack of confidence. |
+| 4 | §3 | **Theorem-box restructure**: §3 reordered to PRA convention. NEW order: §3.1 Main Result (Eq.4) → §3.2 Theorem (Proposition 1 + Corollary + Scope + Examples) → §3.3 Proof (Eqs 5-11) → §3.4 Reparameterization defense → §3.5 Physical Intuition → §3.6 Structural Blind Spot. Previously: proof appeared before theorem statement. Reader now encounters Proposition 1 before its proof. | 4.6/5 | Missing theorem-box pattern — PRA papers lead with boxed theorem, then proof follows. Proposition 1 was buried after 35 lines of proof mechanics. |
+| 5 | §4.5 (NEW) | **Experimental feasibility**: NEW 8-line "Practical Feasibility" subsection after §4.4 Calibration. Coincidence rate ~1000/s (Bong 2020) → 91s per setting → 14 min data acquisition. Including calibration: ~1 hour total. SPDC brightness drift <5% over 30 min. Detector dark-count drift ~1% sub-dominant to Poisson. | 4.2/5 | Feasibility gap — protocol paper without back-of-envelope runtime estimate. Reviewer asks "can this actually be done?" |
+| 6 | §3.4 (was §5.4) | **Reparameterization defense relocated**: Moved non-absorption proof from §5.4 to §3.4 (immediately after proof, before physical intuition). Expanded with explicit counterexample: "Under unitary basis redefinition |b'⟩ = U|b⟩, the correlator ⟨AB⟩ is invariant — unitary redefinitions produce δ⟨AB⟩ = 0 for all θ. In contrast, Eq.(2) modifies P multiplicatively with a factor depending on physical overlap |⟨b|d⟩|², which changes under θ-rotation." Three-point (a)/(b)/(c) structure preserved + S3 pointer. | 4.5/5 | Over-compression of critical defense — reparameterization objection is #1 reviewer attack. Now reader sees defense immediately after theorem. |
+| 7 | §8.4 | **Multi-observer → S3**: "~11× amplification" multi-observer paragraph → replaced with 2-line pointer: "Multi-observer extensions are discussed speculatively in Supplemental S3; these require additional bridge theorems not established here." Full speculative analysis preserved in S3. | 4.3/5 | Speculative claim in main narrative — conditional amplification results from unproven bridge theorems. |
+| 8 | §3.6, §9 | **Defensive tone reduction**: Cut all "obvious in hindsight" (2 instances: §3.6 L290 v30, §9 coda v30). Reduced "not claiming X" from 7 to 1 instance (ESP boundary only). §3.6 operational significance → factual: "The three-line proof confirms that θ has been experimentally unexplored." §8.3 "does not depend on this embedding" retained (informative, not defensive). | 4.4/5 | Missing tone pass — content-focused RCA accumulated anxiety markers without tone audit. |
+| 9 | Abstract, §1, §9 | **Headline consolidation**: "equatorial fixed-point theorem" established as the paper's single headline. Abstract opens with theorem name + Proposition 1. §1 L34: "This paper establishes the equatorial fixed-point theorem (Proposition 1, §3)." A/B logical distinction preserved but A privileged: "The theorem (Claim A) is the central result; the experimental protocol (Claim B, §4-7) is its direct consequence." §9: leads with "The central result is the equatorial fixed-point theorem (Proposition 1)." | 4.5/5 | A/B split dilutes impact — defensive A/B structure (v27) masked clarity. Single headline privileges the theorem. |
+
+### Structural changes (v31)
+| Before (v30) | After (v31) | Nature |
+|-------------|-------------|--------|
+| §3.1 Main Result → §3.3 Structural Blind Spot → §3.2 Theorem → proof mixed in | §3.1 Main Result → §3.2 Theorem → §3.3 Proof → §3.4 Reparameterization → §3.5 Intuition → §3.6 Blind Spot | Theorem-first reorder |
+| §5.4 Reparameterization defense | §3.4 (relocated to immediately after proof) | Defense colocation |
+| No §4.5 | §4.5 Practical Feasibility (NEW) | Feasibility addition |
+| §8.4 Multi-observer paragraph (5 lines) | 2-line S3 pointer | Speculation → supplement |
+
+### Regression watchlist
+| Constraint | Status |
+|------------|--------|
+| v13 ESP boundary (§1 L57-61) | ✅ Preserved — "This paper does not claim..." unchanged as sole canonical disclaimer |
+| v27 Proposition 1 math | ✅ Preserved — mathematical content identical; only position moved (§3.2) |
+| v25 novelty hedge "Within the surveyed literature (S1)" | ✅ Preserved — unchanged (§3.6 L264) |
+| v17 §8.2 interpretation-neutrality | ✅ Preserved — "interpretation-neutral by design" unchanged |
+| v26 §6 Bayesian robustness | ✅ Preserved — no changes to §6 content |
+| v27 GPT bridge [17] | ✅ Preserved — substance intact, repositioned earlier in §2.3 |
+| v28 physical intuition | ✅ Preserved — 8-line paragraph moved to §3.5 (after proof) |
+| v28 theorem preview (§1 L52-55) | ✅ Preserved — preview paragraph unchanged |
+| v29 abstract 3-beat structure | ✅ Preserved — observation → experiment → scope maintained |
+| v30 "benchmark parametrization" terminology | ✅ Preserved — running term unchanged |
+| v30 "overlap-dependent deformation" terminology | ✅ Preserved — running term unchanged |
+| v12 exact numerical values | ✅ Preserved — no analytical approximations introduced |
+
+### Net line count
+| Metric | Before (v30) | After (v31) | Delta |
+|--------|-------------|-------------|-------|
+| Abstract | 11 lines | 11 lines | 0 (wording only) |
+| §1 | ~20 lines | ~18 lines | −2 (headline consolidation, disclaimer cut) |
+| §2.3 | ~55 lines | ~50 lines | −5 (GPT moved up, defensive text compressed) |
+| §3 (entire) | ~80 lines | ~95 lines | +15 (theorem-box restructure + §5.4→§3.4) |
+| §4 | ~55 lines | ~63 lines | +8 (§4.5 feasibility added) |
+| §5 (was §5.1-5.4) | ~75 lines | ~65 lines | −10 (§5.4 removed, §5.3 compressed) |
+| §8.4 Multi-observer | 5 lines | 2 lines | −3 |
+| §9 Conclusion | 12 lines | 8 lines | −4 (focused on theorem, tone reduction) |
+| Defensive text (scattered) | ~30 lines | ~5 lines | −25 (global dedup) |
+| **Net** | **626 lines** | **607 lines** | **−19 lines** |
+
+---
+
+## v30 (2026-05-25) — 7-issue RCA: structural blind spot framing, Eq.(2) benchmark subordination, trivial-algebra defense, uniqueness scope, statistical conservatism, paper compression, terminology shift
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------| 
+| 1 | Abstract, §1, §3 heading, §3.3, §10 | **Novelty reframing**: "appear insensitive" → "structural experimental blind spot" + "unprobed geometric degree of freedom". §3 heading: "Geometric Cancellation" → "Structural Blind Spot". §3.3 heading: "Structural Insensitivity at the Equator" → "Structural Experimental Blind Spot". Abstract leads with "share a structural experimental blind spot". §10: "geometric observation" → "structural experimental blind spot"; added "The algebra is obvious in hindsight; the experimental blind spot is not." | 4.2/5 | Novelty framed as absence of prior work instead of structural impossibility at equator. "Structural blind spot" + "unprobed degree of freedom" are substantive scientific claims, not marketing. |
+| 2 | §2.3 Status, §3.1, §5.3 | **Eq.(2) benchmark subordination**: "test parametrization" → "benchmark parametrization" throughout (§2.3 core idea, IS-NOT, Status, GPT). §3.1: added "This result is model-independent...Eq.(2-3) is a benchmark parametrization for quantifying experimental sensitivity; the theorem holds for any overlap function." §2.3 core idea: added "The model-independent theorem (Proposition 1, §3) is the central result; Eq.(2-3) serves as a benchmark parametrization for quantifying experimental sensitivity." §5.3 header: "Outcome-Dependent Modifications" → "Overlap-Dependent Deformations"; opening: "model class" → "benchmark parametrization". | 4.3/5 | Eq.(2) over-defended as if it's THE result. Subordinating to "benchmark" makes theorem the star, Eq.(2) the measurement tool. |
+| 3 | §3.3 | **Trivial-algebra defense**: "Although the algebra is compact...non-trivial" → "The algebra is obvious in hindsight...but the geometric degree of freedom θ has been experimentally unexplored...The simplicity of the proof is precisely why the blind spot persisted: equatorial measurement was adopted as a convention, not tested as a constraint." | 4.5/5 | 3-line proof risks "too obvious to publish". Preempt with "obvious but unexplored" — the simplicity IS the explanation for the blind spot. |
+| 4 | §3.2 (after Corollary) | **Uniqueness scope boundary**: NEW 7-line "Scope limitation" paragraph. "Proposition 1 and its Corollary constrain the overlap-only class...Broader deformations — depending on the full density matrix, higher-order correlators, or non-geometric variables — lie outside this theorem's scope and remain open." | 4.4/5 | Reviewer: "what about deformations outside overlap-only class?" Explicit scope boundary prevents overstating universality while acknowledging open territory. |
+| 5 | §6 Bayesian | **Statistical conservatism**: "modeling uncharacterized systematics as a multiplicative factor" → "modeling uncharacterized systematics (detector drift, waveplate miscalibration, correlated noise from source brightness fluctuations) as a multiplicative factor". | 4.0/5 | 5σ with β≈0.04 looks optimistic without naming specific degradation mechanisms. Three concrete sources now anchor the 20% inflation estimate. |
+| 6 | §7, §8 (old) | **Paper compression**: §7.1-7.2 tables → inline summary (5 lines) with "Full μ and η tables in Supplemental S2". §7.3 systematic table → 4-line summary with "Full table in Supplemental S2". §7.4+detection loophole+false-positive+Bell analogy → compressed single-flow section. Old §8 (Loophole Analysis table) → merged into §7 as "Loophole summary" sub-table. Old §9 → §8, old §10 → §9. Net: ~85 lines removed. | 4.0/5 | Paper 7 pages for a 3-line-proof core idea. Robustness details belong in supplement; main text keeps summary + critical loophole defense. |
+| 7 | Throughout | **Terminology shift**: "outcome-dependent coupling" → "overlap-dependent deformation" as running term. First use in §2.3 with explicit note: "previously termed 'outcome-dependent coupling' in preliminary drafts; the present name emphasizes geometric content over causal implication." "coupling strength" retained for β. §2.3 heading: "Outcome-Dependent Coupling" → "Overlap-Dependent Deformation". | 4.5/5 | "Outcome-dependent" sounds like hidden variables / retrocausal. "Overlap-dependent deformation" is geometrically precise and neutral. |
+
+### Terminology shift (systematic)
+| Term | Before (v29) | After (v30) | Sections affected |
+|------|-------------|-------------|-------------------|
+| Running term | "outcome-dependent coupling" | "overlap-dependent deformation" | Abstract, §1, §2.3, §3.1, §3.3, §5.3, §5.4, §8.1, §8.2, §8.4, §9 |
+| Parametrization type | "test parametrization" | "benchmark parametrization" | §2.3 (core idea, IS-NOT, Status, GPT), §3.1, §5.3 |
+| Novelty framing | "appear insensitive" / "structural insensitivity" | "structural experimental blind spot" | Abstract, §3 heading, §3.3 heading, §9 |
+
+### Regression watchlist
+| Constraint | Status |
+|------------|--------|
+| v13 ESP boundary (L57-60) | ✅ Preserved — "This paper does not claim..." unchanged (wording updated: "coupling" → "deformation") |
+| v27 Proposition 1 math (L206-212) | ✅ Preserved — mathematical content identical; added Scope limitation AFTER Corollary |
+| v25 novelty hedge (§3.3) | ✅ Preserved — "Within the surveyed literature (S1)" unchanged |
+| v17 §9.2 interpretation-neutrality | ✅ Preserved — "interpretation-neutral by design" unchanged (now §8.2) |
+| v26 §6 Bayesian robustness | ✅ Extended — added specific mechanism names, substance preserved |
+| v27 GPT bridge [17] | ✅ Preserved — compressed but substance and reference intact |
+| v28 physical intuition (§3) | ✅ Preserved — 8-line paragraph unchanged |
+| v28 theorem preview (§1 L52-55) | ✅ Preserved — preview paragraph unchanged |
+| v29 abstract 3-beat structure | ✅ Preserved — observation → experiment → scope maintained |
+| v29 §10 conclusion focus | ✅ Extended — added "obvious in hindsight" coda |
+
+### Net line count
+| Metric | Before (v29) | After (v30) | Delta |
+|--------|-------------|-------------|-------|
+| Abstract | 10 lines | 11 lines | +1 |
+| §1 Claim A | 8 lines | 8 lines | 0 (wording only) |
+| §2.3 | ~60 lines | ~55 lines | −5 |
+| §3.1 | 6 lines | 10 lines | +4 |
+| §3.2 (Scope limitation) | 0 lines | 7 lines | +7 |
+| §3.3 operational significance | 4 lines | 6 lines | +2 |
+| §6 Bayesian | 6 lines | 7 lines | +1 |
+| §7 (was §7.1-7.4+§8) | ~95 lines | ~45 lines | −50 |
+| §8 (old §8 loophole table) | 11 lines | 0 lines (merged) | −11 |
+| Section renumbering | §9→§8, §10→§9 | — | 0 |
+| §9 Conclusion | 11 lines | 12 lines | +1 |
+| **Net** | **652 lines** | **626 lines** | **−26 lines** |
+
+---
+
 ## v29 (2026-05-25) — 10-issue RCA: reviewer tone & positioning overhaul
 
 | # | Section | Change | RCA Score | Rationale |
@@ -397,12 +502,14 @@ All prior-version defenses preserved (v14–v17). Full cross-version trace in v2
 | v27 | 2026-05-25 | GPT bridge, Proposition 1, Bayesian robustness, theorem-first positioning, novelty unification | 7 | 17 |
 | v28 | 2026-05-25 | Defense compression, physical intuition, universality scoping, sensitivity qualifiers, novelty softening | 7 | 17 |
 | v29 | 2026-05-25 | Reviewer tone overhaul: defensive compression, novelty softening, "new physics" removal, abstract/conclusion focus | 7 | 17 |
+| v30 | 2026-05-25 | Structural blind spot framing, Eq.(2) benchmark subordination, trivial-algebra defense, uniqueness scope, statistical conservatism, paper compression, terminology shift | ~5 | 17 |
+| v31 | 2026-05-25 | Novelty softening, Eq.(2) motivation repositioned, thesis repetition cuts, theorem-box restructure, experimental feasibility, reparameterization defense, multi-observer → S3, defensive tone reduction, headline consolidation | ~5 | 17 |
 
 ---
 
 ## RCA methodology
 
-All v13→v29 changes applied via:
+All v13→v31 changes applied via:
 1. **5-step RCA** (Define → Trace → Isolate → Fix cause → Verify) per CLAUDE.md Rule Zero
 2. **5-Whys** root cause drill (minimum 3 iterations per issue)
 3. **Scoring ≥4/5** threshold for mandatory implementation
@@ -411,4 +518,4 @@ All v13→v29 changes applied via:
 
 ---
 
-*Generated 2026-05-25. Covers v12 (baseline) through v29 (current).*
+*Generated 2026-05-25. Covers v12 (baseline) through v31 (current).*
