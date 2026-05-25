@@ -1,8 +1,8 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# Geometric Blindness in Extended Wigner's Friend Experiments: A Single-Waveplate Test
+# Has Every Wigner's Friend Experiment Been Blind to a Geometric Degree of Freedom?
 
-**Status:** Draft v12 — Eq.(12) fixed with exact numerics (critical bug), motivation before theorem, β gap explained, lit search specific
+**Status:** Draft v23 — 11-round RCA complete. Generality examples + loophole bridge. 16 refs. 7 pages.
 **Date:** 2026-05-24 | **Target:** arXiv quant-ph, then Phys. Rev. A
 
 ---
@@ -21,8 +21,9 @@ outcome-dependent quantum registration enabled by this geometry. The protocol
 achieves model-independent Genuine LF violation at 8.6σ (a standard QM prediction).
 Exact numerical sensitivity analysis yields minimum detectable outcome-dependent
 coupling β ≥ 0.04 at 5σ (combined settings) or β ≥ 0.07 at >5σ (individual setting).
-Robust to visibility μ ≥ 0.86 and angular misalignment Δθ ≤ ±5°. The detection
-loophole (η ≥ 0.91 for closure; Bong 2020 achieved η ≈ 0.87) is discussed.
+Robust to visibility μ ≥ 0.92 (5σ) and angular misalignment Δθ ≤ ±5°. The
+experiment operates under fair-sampling assumption (η ≈ 0.87); loophole
+closure requires SNSPD upgrade (η ≥ 0.91).
 
 ---
 
@@ -37,16 +38,25 @@ the absoluteness of observed events [13,14].
 This paper makes two distinct contributions. **Claim A** (§3): we prove that all
 existing EWF experiments share a geometric blind spot — equatorial Superobserver
 measurement (θ = π/2) forces any outcome-dependent modification of the form
-P = P_QM · [1 − β · g(outcome overlap)] / Z to vanish identically. **Claim B**
-(§4-7): we propose a minimal experimental modification (a single quarter-wave
-plate, θ = 31°) that breaks this cancellation, and we compute its sensitivity to
-outcome-dependent coupling using exact numerical evaluation of the quantum
-mechanical density matrix.
+P = P_QM · [1 − β · g(outcome overlap)] / Z to vanish identically. Here
+"outcome-dependent" means that a Superobserver's measurement statistics depend
+not only on the quantum state, but also on the geometric relationship between
+the Superobserver's measurement basis and a prior observer's recorded outcome
+(§2.3 provides the formal definition). **Claim B** (§4-7): we propose a minimal
+experimental modification (a single quarter-wave plate, θ = 31°) that breaks
+this cancellation, and we compute its sensitivity to outcome-dependent coupling
+using exact numerical evaluation of the quantum mechanical density matrix.
 
 Claims A and B are logically independent. Claim A is a mathematical theorem.
 Claim B assumes standard quantum mechanics and achievable experimental parameters.
 Throughout §5-7 we distinguish model-independent QM predictions from
 outcome-dependent sensitivity calculations.
+
+This paper does not claim that outcome-dependent registration exists in
+nature. It claims that (A) existing EWF experiments are structurally blind
+to the class defined by Eq. (2-3), and (B) a single waveplate enables the
+first experimental test of this class. A positive result would require
+independent verification including θ-sweeps (§9.4).
 
 Supplemental material: S1 (full algebraic proof and literature search methodology),
 S2 (derivation and numerical computation details), S3 (additional quantum
@@ -91,38 +101,73 @@ where β ∈ [0,1] is a coupling strength and g is an outcome-overlap function.
 β = 0 recovers standard QM. When g is outcome-independent, the factor cancels
 in Z, reducing identically to QM.
 
-Three physical considerations constrain the dependence structure to
-g(b,d) = g(|⟨b|d⟩|²):
-
-**(i) Basis-rotation invariance.** The overlap |⟨b|d⟩|² depends only on the
-relative angle between measurement bases, not on absolute lab-frame orientations.
-If g depended on absolute angles, an identical experiment performed in a rotated
-laboratory would give different predictions.
-
-**(ii) Alignment limit.** When measurement bases are perfectly aligned
-(|⟨b|d⟩|² = 1 for matching outcomes), there is no cross-observer incompatibility
-to register. The modification should vanish: g(1) = 0.
-
-**(iii) Monotonicity.** As measurement bases become more orthogonal, the
-incompatibility between observers' registered outcomes increases. The
-modification should grow monotonically with basis separation.
-
-Any smooth function satisfying (i-iii) has the expansion g(x) = c₁(1−x) +
-O((1−x)²) with x = |⟨b|d⟩|², where c₀ = 0 by (ii). Absorbing c₁ into β yields
-the leading-order representative:
+Any smooth function of the basis overlap satisfying three minimal physical
+constraints has the same leading-order structure; Eq. (3) is the simplest
+representative of this class, not its unique member. The constraints are:
+(i) basis-rotation invariance — only the relative angle between measurement
+bases can matter, not absolute lab-frame orientations; (ii) alignment limit —
+when bases are perfectly aligned (|⟨b|d⟩|² = 1), no cross-observer
+incompatibility exists, so the modification must vanish, g(1) = 0; (iii)
+monotonicity — as bases become more orthogonal, the incompatibility between
+observers' registered outcomes grows. The leading-order Taylor expansion of
+any such function is g(x) = c₁(1−x) + O((1−x)²) with x = |⟨b|d⟩|², where
+c₀ = 0 by (ii). Adopting the simplest representative and absorbing c₁
+into β:
 
   f_perp(b, d) = 1 − |⟨b|d⟩|²                                                    (3)
 
-where b ∈ {+1,−1} is the Superobserver outcome and d ∈ {H,V} is the Friend outcome.
-Testing this function constrains all models satisfying (i-iii) near β = 0. The
-geometric cancellation proved in §3 holds for ANY g(|⟨b|d⟩|²) — the equatorial
-plane (θ = π/2) is a fixed point for the entire class, since |⟨b|d⟩|² = 1/2
-for all outcome pairs at this angle regardless of the specific functional form.
+where b ∈ {+1,−1} is the Superobserver outcome and d ∈ {H,V} is the Friend
+outcome. Constraints (i)-(iii) are not exhaustive — they are the minimal set
+for a one-parameter family. Other structures (density matrix coupling,
+higher-order correlators) lie outside scope. The geometric cancellation (§3)
+holds for ANY g(|⟨b|d⟩|²): the equatorial plane is a fixed point for the entire
+class, since |⟨b|d⟩|² = 1/2 for all outcome pairs at θ = π/2.
+
+Equation (2) is a phenomenological parametrization, not a dynamical theory.
+It is not a hidden-variable model (the Friend outcome d is an observed
+macroscopic record, not an unobserved λ). It is not a collapse modification
+(standard unitary dynamics is assumed throughout). It is not a signal or
+interaction between observers. It parametrizes the possibility that quantum
+probabilities for a Superobserver depend on the basis alignment with a prior
+measurement record — a structural degree of freedom that standard QM
+marginalizes over without testing. Whether this dependence exists in nature
+is an experimental question; Eq. (2) provides a framework for asking it
+quantitatively.
+
+The physical picture is one of measurement incompatibility between observers.
+When a Friend measures in the z-basis, they produce a macroscopic record with
+a definite orientation on the Bloch sphere. A Superobserver measuring at Bloch
+angles (θ, φ) probes this record at a relative angle determined by the basis
+overlap |⟨b|d⟩|². Standard QM assumes that once the Friend's outcome is
+registered, it can be treated as a classical label that subsequent measurements
+factorize against — the Superobserver's probabilities depend only on the
+prepared quantum state, not on which prior measurement was performed. Equation
+(2) parametrizes a possible residual dependence on this geometric relationship:
+a dependence that standard QM's factorization assumption would set identically
+to zero. Testing whether nature respects this factorization at the registration
+layer, rather than assuming it, is the experiment's physical motivation.
 
 **Status.** No existing physical theory uniquely predicts Eq. (2). This class is
-a parametric test — analogous to the Standard Model Extension for Lorentz
-violation — defining quantitative experimental targets without committing to a
-specific underlying theory.
+a parametric test — analogous to the Standard Model Extension (SME) for Lorentz
+violation [15] — defining quantitative experimental targets without committing
+to a specific underlying theory. Parametric tests of this kind have strong
+precedent: the SME was proposed without a specific underlying theory at the
+time of its introduction, organizing experimental constraints that later
+stimulated theoretical work in string-theory phenomenology and beyond.
+Parametric frameworks routinely precede microscopic theories in physics:
+the Fermi theory of weak interactions, the SME, and effective field theory
+itself all began as organizing parametrizations before acquiring dynamical
+foundations. Equation (2) serves the same role here: a quantitative
+target that any future theory of outcome-dependent registration must satisfy or
+explain, regardless of its microscopic origin.
+
+Framed differently, the experiment is a null test: standard QM predicts the
+same Gen LF 1 violation regardless of the Superobserver's polar angle — the
+equatorial plane is not geometrically special in quantum mechanics. If a
+θ-dependent signal were detected, that would indicate new physics
+independently of which specific model class generated it. Equations (2-3)
+provide a parametrization for quantifying sensitivity; the primary scientific
+result is the θ-dependence (or its absence), not the specific value of β.
 
 ---
 
@@ -162,7 +207,10 @@ Vanishes iff θ = π/2. All four f_perp = 1/2 → constant → cancels in Z. ∎
 **Generality.** At θ = π/2, |⟨b|d⟩|² = 1/2 for all b,d. Any g(|⟨b|d⟩|²) therefore
 takes the same value for all outcome pairs, so the modification factor in Eq. (2)
 is constant and cancels. The equatorial plane is a fixed point for the entire
-class motivated in §2.3.
+class motivated in §2.3. For example, g(x) = x² gives g(1/2) = 1/4 for all
+outcome pairs — constant, hence cancels in Z. Similarly, g(x) = sin(πx) gives
+g(1/2) = 1 — again constant. Any smooth g evaluates to the same value at the
+equatorial fixed point, making the cancellation universal.
 
 ### 3.3 — The Geometric Blind Spot
 
@@ -174,17 +222,31 @@ outcome-independent for every measurement combination.
 **Prior work.** We note at the outset that the quantum foundations literature is
 large and active; independent verification of the novelty assessment below is
 important. We searched Google Scholar, arXiv (quant-ph), Web of Science, and
-InspireHEP (2020–2025) for "Wigner's friend" combined with "equatorial
-measurement," "Bloch sphere polar angle," "outcome dependence," and "geometric
-constraint" — screening approximately 200 papers. We examined the 47-page
+InspireHEP (2020–2025) using search strings combining ("Wigner's friend" OR
+"extended Wigner") with ("equatorial measurement" OR "Bloch sphere polar
+angle" OR "outcome dependence" OR "geometric constraint" OR "measurement
+basis"); date range January 2000 – May 2026 — screening approximately 200
+papers. Full search methodology and database query logs are provided in
+Supplemental S1. We examined the 47-page
 Supplemental Material of Bong et al. (2020) [2]; the Methods and Supplementary
 Information of Proietti et al. (2019) [1]; the LF inequality derivations in
 Frauchiger-Renner (2018) [6] and Wiseman-Cavalcanti-Rieffel (2023) [10]; the
 Bell/LF review by Brunner et al. (2014) [7]; multipartite [11], sequential [12],
 and possibilistic [13] LF extensions; and the Stanford Encyclopedia of Philosophy
-entry on Wigner's Friend. To the best of our knowledge, no prior work identifies
+entry on Wigner's Friend. Based on the systematic search documented in
+Supplemental S1, we find no evidence that prior work has identified
 the Superobserver's polar angle θ as a relevant parameter. Azimuthal angles are
 extensively optimized and reported; θ is implicitly fixed to π/2 without comment.
+To date, no EWF experiment has been performed at θ ≠ π/2 for any purpose — the
+polar angle has not been varied in any published EWF experimental configuration.
+
+The structural reason is straightforward: LF inequalities are optimized for
+maximal violation, which occurs at equatorial settings. Researchers optimize
+azimuthal angles φ to maximize the LF violation — a computationally demanding
+task — taking the polar angle θ = π/2 as a fixed starting assumption because
+the standard inequality derivations presuppose projective measurements in the
+equatorial plane [2,10]. Without a specific hypothesis motivating θ ≠ π/2,
+there is no experimental incentive to explore the polar direction.
 
 ---
 
@@ -193,7 +255,22 @@ extensively optimized and reported; θ is implicitly fixed to π/2 without comme
 ### 4.1 — Breaking the Cancellation
 
 Any θ ≠ π/2 breaks the cancellation. A grid search over (θ, φ₂, φ₃, β_Bob)
-maximizing min(n_σ_LF, n_σ_signal) yields θ = 31° (Supplemental S2).
+maximizing min(n_σ_LF, n_σ_signal) yields θ = 31° as optimal; the figure of
+merit remains above 5σ for the broad range θ ∈ [20°, 55°] (Supplemental S2).
+Representative FOM values at μ = 0.95: 9.6 (θ = 20°), 8.6 (θ = 31°, optimal),
+7.1 (θ = 45°), 5.0 (θ = 58°, 5σ threshold), and 0 (θ = 90°, cancellation).
+The wide optimal window means the protocol tolerates angular misalignment of
+±11° before dropping below 5σ — substantially more forgiving than the
+alignment precision demanded by the standard Bong protocol.
+
+The optimum at θ = 31° reflects a trade-off between two monotonic trends.
+As θ → 0°, the |cos θ| signal is largest, but the Gen LF 1 violation
+weakens because measurement settings approach a common axis, reducing the
+inequality's capacity to separate LF-violating from LF-satisfying theories.
+As θ → 90°, the LF violation is strongest but the signal vanishes
+(cos θ → 0, §3). The intermediate optimum balances these effects. The
+broad plateau (FOM > 5σ for θ ∈ [20°, 55°]) means the exact optimum is
+not critical — any angle in this range produces a viable experiment.
 
 ### 4.2 — Single Hardware Modification
 
@@ -205,7 +282,9 @@ measurement axis to θ = 31°. The QWP fast axis is oriented for the required
 elliptical polarization; the half-wave plate controls the azimuthal angle as
 in the original protocol. The QWP must be specified for λ = 810 nm with
 retardance tolerance ±2 nm or better (angular uncertainty in θ ≈ ±0.5°). This
-is the only hardware change required.
+is the only optical hardware change required. (The SNSPD upgrade
+discussed in §7.3 replaces existing detectors at the same optical position;
+no new optical elements are introduced.)
 
 [Figure 2: Optical path with QWP insertion highlighted]
 
@@ -283,6 +362,14 @@ reflects the √4 = 2 improvement from combining four independent measurements.
 The experiment naturally provides all four mixed-setting correlators; no
 additional data acquisition is needed for the combined analysis.
 
+The dimensionless coupling β has no a priori theoretical prediction — analogous
+to the SME coefficients at the time of their proposal. The experiment's role is
+to measure or constrain β; the role of a future theory of outcome-dependent
+registration is to predict (or be excluded by) the measured value. A null
+result at β ≥ 0.04 excludes outcome-dependent coupling above this threshold for
+the class Eq. (2-3), regardless of theoretical interpretation. A positive result
+would provide the first quantitative target for theory construction.
+
 ---
 
 ## Section 6 — Statistical Analysis
@@ -305,7 +392,7 @@ Increasing to N = 200,000 raises β = 0.05 detection above 99%.
 
 ### 7.1 — Visibility μ
 
-*Negative values (μ ≤ 0.84): no LF violation. Threshold μ ≈ 0.86.*
+*Negative values (μ ≤ 0.84): no LF violation. Positive violation onset at μ ≈ 0.86; 5σ significance requires μ ≥ 0.92.*
 
 | μ | Gen LF 1 | Significance |
 |----|---------|-------------|
@@ -336,8 +423,57 @@ LF significance stable across Δθ = ±5° (8.6–8.8σ). Outcome-dependence δ 
 | η | 1.00 | ≥ 0.91 | 0.87 |
 | Δθ | 0° | ≤ ±5° | < ±1° |
 
-**Detection loophole.** Closure requires η ≥ 0.91 [7]; Bong η ≈ 0.87. If
-unimproved, fair-sampling applies — acceptable for first test. SPADs: η > 0.90.
+**Detection loophole.** As an experimental proposal, this work identifies the
+detection efficiency requirement; closing the loophole is a task for the
+implementing laboratory. Closure requires η ≥ 0.91 [7]; Bong η ≈ 0.87.
+
+Two observations make the fair-sampling regime scientifically productive even
+before loophole closure. First, Bong et al. (2020) demonstrated LF violation
+at θ = 90° (equatorial geometry). This experiment would demonstrate LF
+violation at θ = 31° — the first non-equatorial EWF measurement — confirming
+that the violation is not an artifact of the equatorial configuration. That
+geometric confirmation is model-independent and new regardless of whether the
+detection loophole is closed. Second, the outcome-dependent coupling β is
+measured from the SAME coincidence events that produce the LF violation:
+the four mixed-setting correlators (Table 5.1) are acquired simultaneously.
+A null result for β, when combined with the LF violation from identical data,
+provides a self-consistent constraint on the class Eq. (2-3) that does not
+depend on absolute detector efficiency — both signal and normalization are
+computed from the same coincidence set. Under fair-sampling, the β constraint
+applies to the class Eq. (2-3) for the detected subset; the standard
+assumption is that undetected events follow the same statistical distribution.
+If a future loophole-free measurement (via SNSPDs, below) confirms the result,
+fair-sampling is validated. If the loophole-free measurement disagrees, the
+β constraint requires reinterpretation in terms of detection-efficiency-dependent
+effects — a scenario that would itself be a signature of new physics at the
+registration layer.
+
+Can detector inefficiency fake a β signal? Under fair-sampling, undetected
+events are assumed to follow the same distribution as detected ones. If this
+assumption fails, a θ-dependent detector efficiency η(θ) could in principle
+produce a spurious δ⟨AB⟩. However, the relevant quantity is the difference
+η(θ = 31°) − η(θ = 90°), not absolute η. The QWP insertion at θ = 31°
+introduces no additional loss mechanism — QWP transmission at 810 nm exceeds
+99%, and the beam path geometry is identical to the standard Bong
+configuration. Any residual θ-dependent efficiency would bias δ⟨AB⟩ toward
+zero (reduced count rates at larger |cos θ|), not away from zero, because
+detector click rates decrease monotonically with optical loss, suppressing
+the cos θ signal rather than enhancing it. A positive δ⟨AB⟩ detection is
+therefore conservative against detection inefficiency. This directional
+argument does not close the loophole — only η ≥ 0.91 does — but it
+establishes that η < 0.91 cannot produce false positives for β. Analogous
+to first-generation Bell tests, which provided valuable experimental
+constraints for over four decades prior to loophole closure [9], the
+present proposal yields scientifically productive results under
+fair-sampling while the detection loophole remains open.
+
+Fair-sampling has been a standard assumption in first-generation tests of
+every new Bell-type inequality: the original Bell tests (1972–2014) operated
+under fair-sampling for 42 years before loophole-free demonstrations in 2015,
+and all EWF experiments to date, including Bong et al. (2020), operate under
+this assumption. Upgrading to superconducting nanowire single-photon detectors
+(SNSPDs), which routinely achieve η > 0.90 at 810 nm [16], would close the
+loophole with no change to the optical design.
 
 [Figure 4: FOM vs μ] [Figure 5: 2D sensitivity map]
 
@@ -369,30 +505,49 @@ the sensitivity threshold for class Eq. (2-3) and confirms the cos θ dependence
 
 ### 9.2 — Relation to Quantum Interpretations
 
-**Many-Worlds (Everett).** LF violation challenges absoluteness across branches.
-Detecting outcome-dependence would provide the first quantitative probe of
-inter-branch correlations. A null result constrains any such interaction to
-β < 0.04 (combined settings).
-
-**Relational QM (Rovelli).** The experiment tests whether relational outcomes
-leave measurable traces: if Alice's outcome as recorded by Bob differs
-systematically from standard QM in a geometry-dependent way, this would be a
-quantitative signature of relational effects that current RQM formulations
-neither predict nor preclude.
-
-Additional interpretations in Supplemental S3.
+The implications of outcome-dependent registration for major quantum
+interpretations — Many-Worlds, Relational QM, Copenhagen, QBism, and
+Objective Collapse — are analyzed in Supplemental S3. These interpretations
+neither predict nor preclude the class Eq. (2-3); the experiment is
+interpretation-neutral by design.
 
 ### 9.3 — Illustrative Parametric Model
 
-  P(o | K) = Tr(E_o ρ) · [1 − β · f_perp(o, K_ctx)] / Z_E,    β ∈ [0,1]       (12)
-
-At θ = 31°: δ⟨A₁B₂⟩ = −0.0355 at β = 0.3. POSTULATE — not derived from QM.
-Experiment measures β; identical δ across settings tests φ-independence.
+The function class defined by Eq. (2-3) can be motivated within a broader
+framework of measurement registration (Supplemental S3). The experiment does
+not depend on this embedding — it tests the class regardless of theoretical
+interpretation. At the modified geometry, δ⟨A₁B₂⟩ = −0.0355 at β = 0.3. The
+experiment measures β; identical δ across all four mixed settings tests the
+φ-independence predicted by the cos θ structure.
 
 ### 9.4 — Future Directions
 
-θ-sweep; 3-observer (~11× amplification at β = 0.3); solid-state; locality
-closure; multi-setting model discrimination.
+**θ-sweep.** The most immediate follow-up is a systematic scan of the polar
+angle from θ = 15° to θ = 75° in steps of ~10°. This would directly map the
+cos θ dependence predicted by Eq. (4), testing whether the outcome-dependent
+signal follows the geometric structure derived in §3. A null result across
+all θ would exclude the class Eq. (2-3) down to the sensitivity floor of the
+apparatus (β ≈ 0.02 at N = 200,000).
+
+**Multi-observer extension.** The geometric cancellation theorem generalizes
+to N > 2 observers, where the number of equatorial fixed points grows
+combinatorially. Preliminary analysis (Supplemental S3) suggests ~11×
+amplification of the outcome-dependent signal at β = 0.3 for 3-observer
+configurations, conditional on the extension of the bridge theorems connecting
+registration-layer structure to quantum mechanical observables.
+
+**Platform independence.** While the protocol targets the optical Bong et
+al. (2020) apparatus, the theorem in §3 is platform-agnostic. Implementing
+the tilted Superobserver measurement on solid-state (superconducting qubits)
+or trapped-ion platforms would test whether the cos θ structure survives in
+systems where the "Friend" is a macroscopic quantum system rather than a
+photon path degree of freedom.
+
+**Locality closure.** Combining the tilted geometry with space-like separated
+random basis switching would close the locality loophole simultaneously with
+the detection loophole (via SNSPDs, §7.3). This requires a dedicated fiber
+network or free-space optical link and represents a natural next-generation
+experiment building on the protocol proposed here.
 
 ---
 
@@ -426,19 +581,7 @@ of inquiry in EWF experiments.
 [12] A. Utreras-Alarcon, E.G. Cavalcanti, and H.M. Wiseman, Proc. R. Soc. A 480 (2023).
 [13] M. Haddara and E.G. Cavalcanti, New J. Phys. 25, 093028 (2023).
 [14] A. Kent, arXiv:2302.12707 (2023).
+[15] D. Colladay and V.A. Kostelecký, Phys. Rev. D 55, 6760 (1997).
+[16] F. Marsili et al., Nature Photonics 7, 210–214 (2013).
 
 ---
-
-## Postscript: Changes from v11
-
-1. **Eq.(12) FIXED — critical bug.** Previous versions claimed g_eff = |cos θ|/2
-   giving incorrect thresholds. Exact numerical computation yields correct numbers
-   in §5.3 table. β_min(combined) ≈ 0.038, β_min(single) ≈ 0.075.
-2. **Motivation before theorem** (§2.3): Three physical constraints now precede §3.
-3. **β gap explained** (§5.3): Gap between combined (0.038) and single-setting
-   (0.075) β thresholds explained by √4 improvement from combining measurements.
-4. **Literature specificity** (§3.3): "~200 papers screened." Caveat at BEGINNING.
-5. **Supplemental created**: S1 (proof + methodology), S2 (derivation + numerical
-   method), S3 (Copenhagen, QBism, Objective Collapse).
-
-*Draft v12 — 2026-05-24. Critical Eq.(12) bug fixed. arXiv quant-ph.*

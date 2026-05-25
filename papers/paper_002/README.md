@@ -1,13 +1,15 @@
 # Paper 002: Geometric Blindness in EWF Experiments
 
-**Title:** Geometric Blindness in Extended Wigner's Friend Experiments: A Single-Waveplate Test
-**Status:** Draft v12 — ready for arXiv | **Date:** 2026-05-24 | **Target:** arXiv quant-ph → Phys. Rev. A
+**Title:** Has Every Wigner's Friend Experiment Been Blind to a Geometric Degree of Freedom?
+**Status:** Draft v19 — arXiv-ready | **Date:** 2026-05-25 | **Target:** arXiv quant-ph → Phys. Rev. A
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `manuscript.md` | Draft v12 — 10 sections + Abstract + 14 refs (~5,500 words) |
+| `manuscript.md` | Draft v19 — 10 sections + Abstract + 16 refs (~7,500 words) |
+| `manuscript.tex` | LaTeX source — revtex4-2 (Phys. Rev. A), v19 |
+| `CHANGELOG.md` | Full version history v12→v17 with RCA traceability |
 | `paper_plan_single_waveplate_EWF.md` | Writing plan from K9-S12 |
 | `QC_checklist.md` | 15/15 PASS |
 
@@ -21,11 +23,12 @@
 | 4 | `figures/fig4_fom_vs_mu.png` | FOM vs visibility mu |
 | 5 | `figures/fig5_2d_heatmap.png` | 2D sensitivity (mu, eta) |
 
-### Supplemental (4)
+### Supplemental (5)
 
 | File | Content |
 |------|---------|
-| `supplemental/S1_full_proof.md` | Full proof + literature search |
+| `supplemental/S1_full_proof.md` | Full algebraic proof |
+| `supplemental/S1_search_audit.md` | Literature search audit trail (reproducible) |
 | `supplemental/S2_derivation.md` | Eq.(12) derivation |
 | `supplemental/S2_correlator_table.md` | 9-correlator table |
 | `supplemental/S3_code_index.md` | Reproducible code |
