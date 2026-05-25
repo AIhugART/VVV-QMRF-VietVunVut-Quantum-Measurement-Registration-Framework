@@ -5,6 +5,124 @@
 
 ---
 
+## v29 (2026-05-25) — 10-issue RCA: reviewer tone & positioning overhaul
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | Header | **Version bump**: v28 → v29. | — | Tracking. |
+| 2 | Abstract | **3-beat restructure**: "All published...share" → "Existing...appear insensitive to a geometric degree of freedom". Compressed from 15 → 10 lines. Removed intermediate proof steps; leads with observation, consequence, then limitations. | 4.5/5 | Abstract read as proof-of-theorem; reviewer wants concise pitch. 3-beat (observation → experiment → scope) is standard PRA abstract. |
+| 3 | §1 | **Claim A soften**: "we prove that all existing...share" → "we show that existing EWF implementations appear insensitive to". | 4.2/5 | "Prove all" invites "but you didn't check X". "Show...appear" matches epistemic status (S1 audit-backed, not exhaustive). |
+| 4 | §2.3 Status | **Compress**: 7 lines → 3 lines. Removed "Parametric frameworks routinely precede..." (redundant with SME cite). Single sentence: "Like SME, this is a test parametrization — a target, not a theory." | 4.3/5 | Defensive accretion from v14/v16 — reviewer reads repetition as uncertainty. |
+| 5 | §2.3 GPT | **Compress**: 12 lines → 6 lines. Removed detailed constraint-mapping narrative. Kept: "simplest one-parameter deformation... preserves normalization, respects (i)-(iii), remains admissible." | 4.4/5 | v27 GPT bridge over-elaborated admissibility conditions. Compact version signals confidence. |
+| 6 | §2.3 null test | **"new physics" → "departure from standard QM"**: "that would indicate new physics independently of which specific model class" → "that would indicate a departure from standard QM predictions independently of model class". | 4.6/5 | "New physics" is marketing language that invites rejection. "Departure from QM predictions" is operationally precise. |
+| 7 | §3.3 (after proof) | **Operational significance bridge**: 4-line paragraph — "Although the algebra is compact (three-line proof), its experimental consequence is non-trivial: θ constitutes a previously unprobed geometric parameter..." | 4.0/5 | Gap between compact proof and experimental implications. Reader needs explicit "so what?" bridge. |
+| 8 | §5.4 | **Compress**: 9 lines → 4 lines. Full argument moved to Supplemental S3; main text retains (a)/(b)/(c) summary with S3 pointer. | 4.1/5 | Defensive text that duplicates S3 content. Main text needs conclusion, not full proof. |
+| 9 | §7.3 | **Detection loophole compress**: 25 lines → 8 lines (two-obs defense) + 13 lines → 12 lines (false-positive argument + fair-sampling + SNSPD merged). Net: −18 lines. Bell-test analogy sharpened to single reference [9]. | 4.5/5 | §7.3 was longest defense section (50+ lines). Redundant elaboration (future loophole-free scenarios, fair-sampling historical recap) removed; substance preserved. |
+| 10 | §10 | **Conclusion focus**: 19 lines → 11 lines. "geometric theorem" → "geometric observation". Removed θ-sweep and cos θ functional dependence (already in §9.4). Two clean paragraphs: result + experiment. | 4.3/5 | Conclusion restated material from §3 and §9.4. Compact conclusion signals paper is tight and complete. |
+
+### Regression watchlist
+| Constraint | Status |
+|------------|--------|
+| v13 ESP boundary (L57-60) | ✅ Preserved — "This paper does not claim..." unchanged |
+| v27 Proposition 1 math (L180) | ✅ Preserved — f_perp equation and proof identical |
+| v25 novelty hedge (§3.3) | ✅ Preserved — "Within the surveyed literature (S1)" unchanged |
+| v17 §9.2 interpretation-neutrality | ✅ Preserved — "interpretation-neutral by design" unchanged |
+| v26 §6 Bayesian robustness | ✅ Preserved — no changes to §6 content |
+| v27 GPT bridge [17] | ✅ Preserved — compressed but substance and reference intact |
+| v28 physical intuition (§3) | ✅ Preserved — 8-line paragraph unchanged |
+| v28 theorem preview (§1 L52-55) | ✅ Preserved — preview paragraph unchanged |
+
+### Net line count
+| Metric | Before (v28) | After (v29) | Delta |
+|--------|-------------|-------------|-------|
+| Abstract | 15 lines | 10 lines | −5 |
+| §1 Claim A | 2 lines | 2 lines | 0 (wording only) |
+| §2.3 Status | 7 lines | 3 lines | −4 |
+| §2.3 GPT | 12 lines | 6 lines | −6 |
+| §3.3 operational bridge | 0 lines | 4 lines | +4 |
+| §5.4 | 9 lines | 4 lines | −5 |
+| §7.3 detection loophole | 50 lines | 20 lines | −30 |
+| §10 Conclusion | 19 lines | 11 lines | −8 |
+| **Net** | **706 lines** | **652 lines** | **−54 lines** |
+
+---
+
+## v28 (2026-05-25) — 7-issue RCA: defense compression, physical intuition, universality scoping, sensitivity qualifiers, novelty softening
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | §2.3 | **Heading + Core idea reframe**: "Outcome-Dependent Registration" → "Outcome-Dependent Coupling". Core idea uses "symmetry-constrained test parametrization" instead of "phenomenological parametrization". "any smooth function" → "any function" (Prop 1 already covers non-smooth). | 4.2/5 | "Registration" sounds ad hoc / phenomenological. "Coupling" + "test parametrization" aligns with SME analogy and signals no ontological commitment. |
+| 2 | Abstract, §2.3, §3.2, §10 | **Universality scoping**: "ANY smooth function" → "any function" (lowercase, drop "smooth" since Prop 1 requires no smoothness). Proposition 1 title: "Universality of equatorial cancellation" → "Universality within overlap-only deformations". Added "overlap-only" qualifier throughout. | 4.4/5 | "ANY smooth g" overstates — reviewer could construct non-overlap dependence. Scoping to "overlap-only deformations" is precise and defensible. |
+| 3 | §7, §1 | **Novelty softening**: "the first non-equatorial EWF measurement" → "to our knowledge, the first non-equatorial EWF measurement". §1 ESP boundary: added "to our knowledge" before "the first experimental test of this class". | 4.0/5 | Absolute novelty claims are attack surfaces. "To our knowledge" + S1-backed methodology is both honest and defensible. |
+| 4 | §2.3 | **Defense compression (~33%)**: IS-NOT block (10 lines → 6): collapsed three negations into single compound sentence + pointer to S3. Contextuality block (10 lines → 5): removed "physical picture" narrative, kept classification + S3 pointer. Status block (13 lines → 7): compressed SME precedent paragraph by cutting redundant examples. Net: ~19 lines cut. | 4.6/5 | Defensive accretion inflated §2.3 to 80+ lines. Reviewer reads repetition as uncertainty. Compressed prose preserves all logical content while signaling confidence. |
+| 5 | §3 (after Examples) | **Physical intuition paragraph**: 8 lines explaining WHY equatorial cancellation occurs. At θ=π/2, |⟨b|H⟩|²=|⟨b|V⟩|²=1/2 → Superobserver maximally symmetric w.r.t. Friend outcomes → indistinguishable from "no geometric relationship". Tilting breaks this → cos θ asymmetry. | 4.8/5 | Theorem is algebraically clear but physically opaque. Reviewers want to understand WHY, not just verify proof. Intuition bridges formalism to physical picture. |
+| 6 | Abstract, §5.3, §10 | **Sensitivity qualifier**: "sensitivity β ≥ 0.04" → "order-of-magnitude sensitivity β ≥ 0.04". Added "(under idealized Poisson statistics; see §6)" to §5.3 threshold statement. | 4.0/5 | Bare "sensitivity" without qualifier invites challenge on systematics. "Order-of-magnitude" is honest and §6 provides Bayesian robustness analysis. |
+| 7 | §1 | **Theorem preview**: Added 4-line preview after ESP boundary: "The geometric result itself is compact: f_perp(+1,H) − f_perp(−1,H) = −cos θ (Eq. 4). At θ = π/2, this vanishes for any function of the basis overlap (Proposition 1). The full proof is three lines (§3.2); §2 provides motivation and notation." | 4.3/5 | Reader currently waits until §3.2 to see the theorem. Preview in §1 rewards early reading and signals the paper has a clean, verifiable core result. |
+
+### Terminology shift (systematic)
+| Term | Before | After | Sections affected |
+|------|--------|-------|-------------------|
+| Registration | "outcome-dependent registration" | "outcome-dependent coupling" | Abstract, §1, §2.3, §5.3, §9.1, §9.2, §10 |
+| Parametrization | "phenomenological parametrization" | "symmetry-constrained test parametrization" | §2.3 (IS-NOT, Status) |
+
+### Regression watchlist
+| Constraint | Status |
+|------------|--------|
+| v13 ESP boundary (L57-61) | ✅ Preserved — added theorem preview + "to our knowledge" without altering ESP structure |
+| v27 Proposition 1 math | ✅ Preserved — only title and surrounding prose changed; mathematical content identical |
+| v25 novelty hedge (§3.3) | ✅ Preserved — no changes to §3.3 novelty sentence |
+| v17 §9.2 interpretation-neutrality | ✅ Preserved — only "registration" → "coupling"; no theory claims added |
+| v26 §6 Bayesian robustness | ✅ Preserved — no changes to §6 content |
+
+### Net line count
+| Metric | Before (v27) | After (v28) | Delta |
+|--------|-------------|-------------|-------|
+| §2.3 IS-NOT block | 10 lines | 6 lines | −4 |
+| §2.3 Contextuality block | 10 lines | 5 lines | −5 |
+| §2.3 Status block | 13 lines | 7 lines | −6 |
+| Physical intuition (§3) | 0 lines | 8 lines | +8 |
+| Theorem preview (§1) | 0 lines | 4 lines | +4 |
+| **Net** | — | — | **−3 lines** |
+
+---
+
+## v27 (2026-05-25) — 6-issue RCA: GPT bridge, Proposition 1 (universality), Bayesian robustness, theorem-first positioning, novelty unification
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------| 
+| 1 | §2.3 | **GPT/operational bridge expansion**: Replaced shallow POVM mention with explicit GPT framework [17] connection. Eq.(2) = simplest one-parameter deformation within GPT-admissible probability polytope. Constraints (i)-(iii) mapped to GPT admissibility conditions (basis-independence, QM recovery, geometric compatibility). 12 lines replacing 6. | 4.2/5 | "Why THIS modification?" — reviewer wants theoretical grounding deeper than "simplest parametrization". GPT framework provides operational justification without theory commitment. |
+| 2 | Abstract, §1, §10 | **Theorem-first positioning**: Abstract restructured — geometry leads, model formula delayed. Proposition 1 cited in abstract. §1 L47-52: "Claim A — the geometric cancellation theorem — is the central result of this paper; Claim B — the experimental protocol — is its direct experimental consequence." §10: leads with "The central result of this paper is a geometric theorem" + Proposition 1 universality. | 4.5/5 | Paper strongest as "geometric blind spot" discovery, not "new outcome-dependent physics". Reviewer more likely to accept theorem than speculative model. |
+| 3 | §3.2 | **Proposition 1 + Corollary (formalized universality)**: Replaced informal "Generality" paragraph with numbered Proposition 1: "For ANY function g: [0,1]→ℝ, the modification factor is outcome-independent at θ=π/2." Added Corollary: "No overlap-only deformation evades equatorial cancellation." Added third example g(x)=(1−x)^n. | 4.6/5 | "Infinitely many other deformations exist" — Proposition 1 proves ALL of them cancel at equator. Addresses uniqueness concern by showing the cancellation is universal, making the specific choice of g irrelevant. |
+| 4 | §6 | **Bayesian robustness estimate**: 6-line quantitative paragraph. 20% systematic inflation → ~6.5σ effective LF significance, β_min≈0.046. FOM plateau survives up to ~40% inflation. | 4.0/5 | "8.6σ Poisson-only is optimistic" — reviewer wants realistic systematics. Quantitative estimate (not just qualitative v26 recommendation) shows experiment robust under substantial degradation. |
+| 5 | §3.3 | **Novelty hedge unification**: Replaced 3-line double-hedged statement ("we are unaware of any...the polar angle does not appear to have been varied") with single sentence: "Within the surveyed literature (S1), we find no published EWF experiment that varies θ from π/2." Single hedge, single sentence. | 4.0/5 | Oscillating strong/soft novelty claims across v17/v19/v25 — unified to one consistent voice. Preserves substance while minimizing attack surface. |
+| 6 | Abstract | **Proposition 1 in abstract**: "This cancellation holds for ANY smooth function g of the basis overlap, not just the specific form Eq.(3) (Proposition 1)." Signals universality from first read. | 4.3/5 | Abstract previously pitched specific model; now pitches universal geometric theorem — aligned with "blind spot" positioning. |
+
+### New reference
+| # | Reference |
+|---|-----------|
+| [17] | J. Barrett, Phys. Rev. A 75, 032304 (2007). — GPT framework for operational quantum foundations. |
+
+### Rejected changes (below threshold)
+None — all 6 issues scored ≥ 4.0/5.
+
+### Regression check
+- v13 ESP boundary (L54-58): PRESERVED — "This paper does not claim..." unchanged
+- v14 SME precedent (L156-168): PRESERVED — full SME paragraph + Fermi/EFT precedent untouched
+- v15 VVV-QMRF removal: PRESERVED — no re-addition
+- v16 S1 search audit + θ-sensitivity FOM: PRESERVED — main text pipeline summary + FOM values untouched
+- v17 constraints "not exhaustive" (L128) + β meaning: PRESERVED — Proposition 1 doesn't claim exhaustivity
+- v18 ontological IS-NOT (L134-143) + null test (L181-187): PRESERVED
+- v19 physical intuition + novelty hedge: hedge unified (Issue 5) — substance preserved, form improved
+- v20 class-representative framing (L93, L113, L122): PRESERVED
+- v21 μ-threshold + honest abstract: PRESERVED — abstract adds priority but preserves all disclosures
+- v22 intuitive gloss (L43-44) + structural blind-spot explanation: PRESERVED
+- v23 generality examples: incorporated into Proposition 1 Examples block — content preserved, formalized
+- v24 §2.3 succinct opening + search pipeline + temperature: PRESERVED
+- v25 tone softening + contextuality § + systematic table + discriminator: PRESERVED
+- v26 POVM bridge (EXTENDED to GPT) + non-absorption proof + naturalness + stats (EXTENDED with Bayesian): all extended, none deleted
+
+---
+
 ## v26 (2026-05-25) — 8-issue RCA: POVM bridge, non-absorption proof, naturalness, stats, S3 move, theorem-first
 
 | # | Section | Change | RCA Score | Rationale |
@@ -276,12 +394,15 @@ All prior-version defenses preserved (v14–v17). Full cross-version trace in v2
 | v24 | 2026-05-25 | §2.3 succinct opening + search pipeline + temperature | 7 | 16 |
 | v25 | 2026-05-25 | 12-point review RCA: tone, contextuality, systematics, discriminator | 7 | 16 |
 | v26 | 2026-05-25 | POVM bridge, non-absorption proof, naturalness, stats, S3 move, theorem-first | 7 | 16 |
+| v27 | 2026-05-25 | GPT bridge, Proposition 1, Bayesian robustness, theorem-first positioning, novelty unification | 7 | 17 |
+| v28 | 2026-05-25 | Defense compression, physical intuition, universality scoping, sensitivity qualifiers, novelty softening | 7 | 17 |
+| v29 | 2026-05-25 | Reviewer tone overhaul: defensive compression, novelty softening, "new physics" removal, abstract/conclusion focus | 7 | 17 |
 
 ---
 
 ## RCA methodology
 
-All v13→v25 changes applied via:
+All v13→v29 changes applied via:
 1. **5-step RCA** (Define → Trace → Isolate → Fix cause → Verify) per CLAUDE.md Rule Zero
 2. **5-Whys** root cause drill (minimum 3 iterations per issue)
 3. **Scoring ≥4/5** threshold for mandatory implementation
@@ -290,4 +411,4 @@ All v13→v25 changes applied via:
 
 ---
 
-*Generated 2026-05-25. Covers v12 (baseline) through v26 (current).*
+*Generated 2026-05-25. Covers v12 (baseline) through v29 (current).*
