@@ -5,22 +5,430 @@
 
 ---
 
+## v64 (2026-05-25) — 2/4-issue RCA (threshold 4.5/5): Survey wording refined (observation, not general claim); Phase 1 framed as screening stage
+
+**Scoring summary (4 issues):** 2 implemented (≥4.5/5), 2 rejected (<4.5/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | 2 thí nghiệm — quá ít để kết luận pattern tổng quát | 4.5/5 | **Implemented** — "both are equatorial" → "Both happen to be equatorial — an observation about the existing literature, not a claim that all possible EWF implementations must be equatorial." Also: "we include all published instances" → "the table enumerates all published instances." |
+| 2 | Overlap-only tự định nghĩa — chưa có lý thuyết dự đoán | 3.5/5 | Rejected — already stated explicitly: "phenomenological null test" (v53 Abstract), "no existing theory predicts this specific form" (v54 §2.3), "plausibility argument, not a derivation from a complete theory" (v55 §2.3), "illustrative benchmark" (v54 §5.3) |
+| 3 | β ~ 0.07 không có lý do vật lý — O(10⁻²) cần justification | 3.5/5 | Rejected — v55 §5.3 "β in context" already compares to SME (<10⁻²³), CSL (~10⁻¹⁶), weak measurement (~10⁻²), with explicit motivation: "postselection-conditioned weak values manifest at the same order, and any overlap-dependent registration-layer structure would naturally appear at the precision where measurement-context effects become distinguishable from Poisson noise" |
+| 4 | Phase 1 loophole-open — null result dễ bị phản bác | 4.5/5 | **Implemented** — Phase 1 reframed as "screening test" (not just "null test"). Added: "Phase 1 is a screening stage: a positive signal would motivate immediate Phase 2; a null result is suggestive but remains open to the detection-loophole objection." Also: "self-consistent exclusion" → "self-consistent but not loophole-free exclusion." |
+
+### Implemented changes (v64)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | §3.5 | **Survey wording refined:** "Both are equatorial" → "Both happen to be equatorial — an observation about the existing literature, not a claim that all possible EWF implementations must be equatorial." + "we include all published instances meeting our search criteria rather than a selective sample" → "the table enumerates all published instances meeting our search criteria." | 4.5/5 | v63 contextualized the 2-row table by explaining WHY only 2 exist. But "both are equatorial" still carried an implicit "therefore all EWF experiments are equatorial." The refined wording explicitly decouples the observation (these two happen to be equatorial) from the generalization (therefore all EWF experiments are equatorial). The word "happen" does the work — it signals contingency, not necessity. |
+| 4 | §7 | **Phase 1 as screening stage:** "loophole-open null test" → "loophole-open screening test." Added: "Phase 1 is a screening stage: a positive signal would motivate immediate Phase 2; a null result is suggestive but remains open to the detection-loophole objection." Changed: "a self-consistent exclusion independent of absolute detector efficiency" → "a self-consistent but not loophole-free exclusion." | 4.5/5 | v62 added the two-phase framing; v63 mentioned it in the Abstract. But Phase 1 was still described as a "null test" — language that implies a definitive result. "Screening test" accurately conveys the role: Phase 1 tells you whether to proceed to Phase 2, not whether the hypothesis is true. The "suggestive but not definitive" language sets honest expectations. |
+
+### Regression
+Δ: Minor wording refinements only — no structural or claim changes.
+
+---
+
+## v63 (2026-05-25) — 5/5-issue RCA (threshold 4.5/5): Survey table contextualized + explicit caveat; Lemma 1 de-circularized; explicit FOM formula; two-phase in Abstract
+
+**Scoring summary (5 issues):** 5 implemented (≥4.5/5), 0 rejected. Second consecutive all-accept round.
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Survey table chỉ có 2 dòng — trông mỏng, reader sẽ hỏi "chỉ 2 thí nghiệm?" | 4.5/5 | **Implemented** — Table lead-in rewritten: "Only two published optical EWF experiments exist within our systematic search scope...The small number reflects the reality that optical EWF implementations remain rare; we include all published instances meeting our search criteria rather than a selective sample." |
+| 2 | Claim dựa trên ~47 papers — reviewer có thể phản bác bằng unpublished work | 4.5/5 | **Implemented** — Explicit caveat added: "We cannot rule out unpublished results, conference proceedings, or implementations outside our database scope that may have varied θ." |
+| 3 | Lemma 1 proof hơi circular — "passive relabeling predicts δ⟨AB⟩=0" là định nghĩa, không phải proof | 4.7/5 | **Implemented** — Proof restructured with explicit distinction: (i) passive relabeling (change of description, δ⟨AB⟩=0 identically) vs (ii) active physical rotation (change of measurement axis, alters \|⟨b\|d⟩\|²). Key insight added: "The cos θ term...is a function of the physical angle θ, not of the basis labels; it cannot be removed by any relabeling U because relabeling does not change θ." |
+| 5 | FOM formula không hiển thị tường minh trong §5.3 — reader phải lần ngược §4.1 | 4.5/5 | **Implemented** — Explicit FOM formula added to §5.3: FOM(θ, β, N) = min(n_σ_LF(θ, N), n_σ_signal(θ, β, N)) with n_σ_LF and n_σ_signal defined in terms of Gen LF 1 and δ⟨AB⟩ significances |
+| 6 | Two-phase program introduced muộn (§7) — reader không biết scope đến cuối paper | 4.5/5 | **Implemented** — Abstract updated: "under fair-sampling, as the first phase of a two-phase program (loophole-open null test at η ≈ 0.87, followed by loophole-closed confirmation via SNSPD upgrade to η ≥ 0.91)" |
+
+### Implemented changes (v63)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | §3.5 | **Survey table contextualized (+4 lines):** Table lead-in changed from generic "lists all published optical EWF experiments examined" to explicit: "Only two published optical EWF experiments exist within our systematic search scope...The small number reflects the reality that optical EWF implementations remain rare; we include all published instances meeting our search criteria rather than a selective sample." | 4.5/5 | A 2-row table invites the question "is that all?" The revised lead-in preempts this: yes, that IS all — not because we selected only two, but because only two exist within scope. Reframes "thin table" as "complete enumeration." |
+| 2 | §3.5 | **Explicit survey caveat (+2 lines):** "We cannot rule out unpublished results, conference proceedings, or implementations outside our database scope that may have varied θ." | 4.5/5 | The survey methodology is documented in S1, but the main text should acknowledge the inherent limitation: a literature search cannot prove non-existence, only non-discovery within scope. This one sentence prevents a reviewer from countering with a single obscure conference paper. |
+| 3 | §3.2 | **Lemma 1 proof de-circularized (+6 lines):** Old proof stated "passive relabeling...basis redefinition relabels outcomes without altering probabilities" — which is the DEFINITION of passive relabeling, not a proof about cos θ. New proof explicitly distinguishes (i) passive relabeling (change of description → δ⟨AB⟩=0) from (ii) active physical rotation (change of measurement axis → alters overlap). Key addition: "The cos θ term...is a function of the physical angle θ, not of the basis labels; it cannot be removed by any relabeling U because relabeling does not change θ." | 4.7/5 | The original proof was technically correct but structurally weak — it defined passive relabeling as "leaves probabilities invariant," then concluded that it leaves probabilities invariant. The restructured proof makes the logical chain explicit: (1) passive relabeling changes description, not physics → δ⟨AB⟩=0; (2) Eq.(2) depends on physical θ, not basis labels; (3) therefore relabeling cannot absorb the cos θ term. |
+| 5 | §5.3 | **Explicit FOM formula (+6 lines):** "The figure of merit governing experimental sensitivity is FOM(θ, β, N) = min(n_σ_LF(θ, N), n_σ_signal(θ, β, N)), where n_σ_LF = \|Gen LF 1(θ)\|/σ_LF...and n_σ_signal = \|δ⟨AB⟩\|/σ_AB...The optimum at θ = 31° reported in §4.1 maximizes this FOM via grid search." | 4.5/5 | The FOM was described qualitatively in §4.1 (FOM ∝ min(\|cos θ\|, f_LF(θ))) and used implicitly in §5.3 sensitivity tables. Writing it explicitly with all dependencies — FOM(θ, β, N) — makes the connection between §4.1 optimization and §5.3 sensitivity transparent. |
+| 6 | Abstract | **Two-phase in Abstract (+2 lines):** "under fair-sampling, as the first phase of a two-phase program (loophole-open null test at η ≈ 0.87, followed by loophole-closed confirmation via SNSPD upgrade to η ≥ 0.91)" | 4.5/5 | The two-phase program was added to §7 in v62 but the Abstract still read as if the experiment was a single-shot proposal. The updated Abstract sets scope immediately: Phase 1 is the near-term null test; Phase 2 is the definitive loophole-closed version. |
+
+### Regression
+Δ: C3 refined with explicit unpublished-work caveat; Lemma 1 proof restructured (content preserved, logic clarified).
+
+---
+
+## v62 (2026-05-25) — 5/5-issue RCA (threshold 4.5/5): Physical motivation→§1; Lemma 1 numerical example; two-phase experimental program; figure placeholders resolved; GPT abbreviation clarified
+
+**Scoring summary (5 issues):** 5 implemented (≥4.5/5), 0 rejected. First all-accept round since v54 — a high-quality review with genuinely new, non-oscillating concerns.
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Motivation buried in §2.3 — reader encounters class in Abstract/§1 without knowing why it's natural | 4.7/5 | **Implemented** — one-sentence motivation added to §1 before Proposition 1 definition: "The basis overlap \|⟨b\|d⟩\|² is the simplest scalar quantifying the geometric relationship between successive measurements — any deformation coupling Superobserver statistics to a prior observer's recorded outcome depends on this relationship at lowest order (§2.3)." |
+| 2 | Lemma 1 proof too concise — skeptical reviewer may not find algebraic proof convincing | 4.5/5 | **Implemented** — numerical illustration added after Lemma 1 proof: at θ=31°, β=0.07, overlap model predicts δ⟨AB⟩≈0.008 (4.7σ); swapping \|+1⟩↔\|−1⟩ via U=σ_x leaves all correlators invariant (δ⟨AB⟩=0) while Eq.(2) still predicts δ⟨AB⟩≈0.008 |
+| 3 | Null result under fair-sampling remains open to detection-loophole objection — expectations for η≈0.87 vs η≥0.91 unclear | 4.6/5 | **Implemented** — "Two-phase experimental program" added to §7: Phase 1 (near-term, η≈0.87, loophole-open null test constraining β~0.07 under fair-sampling); Phase 2 (loophole-closed, η≥0.91 via SNSPD upgrade, converts to loophole-free conclusion) |
+| 4 | [Figure X] and [Figure S1] placeholders remain — undermines presentation before arXiv submission | 4.5/5 | **Implemented** — [Figure X]→[Figure 2]; [Figure S1] replaced with descriptive prose pointing to Supplemental S1; duplicate figure numbering resolved (Figures 1-5 now sequential) |
+| 5 | "GPT" in Supplemental S3 description likely misread as large language model rather than General Probabilistic Theories | 4.5/5 | **Implemented** — "GPT/weak-measurement development" → "General Probabilistic Theories (GPT) / weak-measurement development" |
+
+### Implemented changes (v62)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | §1 | **Physical motivation (+2 lines):** Added before Proposition 1 definition: "The basis overlap \|⟨b\|d⟩\|² is the simplest scalar quantifying the geometric relationship between successive measurements — any deformation coupling Superobserver statistics to a prior observer's recorded outcome depends on this relationship at lowest order (§2.3)." | 4.7/5 | The "Why overlap-only?" motivation was in §2.3 — a reader encountering the class in the Abstract and §1 had to wait until page 2-3 to learn why this particular deformation structure deserves attention. Moving the core motivation to §1 answers the "why this class?" question at the point of first encounter. The §2.3 cross-ref directs detail-seekers to the full justification. |
+| 2 | §3.2 | **Lemma 1 numerical example (+5 lines):** "Numerical illustration. At θ = 31° with β = 0.07, the overlap-only model predicts δ⟨AB⟩ ≈ 0.008 (4.7σ at N = 91,000). Any unitary relabeling of the Superobserver basis — e.g., swapping \|+1⟩ ↔ \|−1⟩ via U = σ_x — leaves all correlators identically invariant (δ⟨AB⟩ = 0), while Eq. (2) still predicts δ⟨AB⟩ ≈ 0.008. The two predictions are numerically and operationally distinct." | 4.5/5 | The algebraic proof shows that basis relabeling predicts δ⟨AB⟩=0 while Eq.(2) predicts δ⟨AB⟩≠0. A skeptical reviewer may object that the two could coincide for specific parameter choices. The numerical example — using the paper's own benchmark values (θ=31°, β=0.07) — eliminates this objection: δ⟨AB⟩=0 vs δ⟨AB⟩≈0.008 are separated by 4.7σ. The explicit unitary (U=σ_x) makes the example concrete. |
+| 3 | §7 | **Two-phase program (+8 lines):** "**Two-phase experimental program.** The experiment naturally splits into two phases. Phase 1 (near-term, η ≈ 0.87): a loophole-open null test using existing Bong et al. (2020) hardware plus one QWP. A null result at this stage would already constrain the overlap-only class at the β ~ 0.07 level under fair-sampling — a self-consistent exclusion independent of absolute detector efficiency, since β is measured from the same coincidence events as the LF violation. Phase 2 (loophole-closed, η ≥ 0.91 via SNSPD upgrade [16]): closes the detection loophole with no optical redesign, converting the null test into a loophole-free conclusion." | 4.6/5 | The paper previously mentioned fair-sampling and SNSPD upgrade in passing but didn't structure them as a coherent experimental program. The two-phase framing sets clear expectations: Phase 1 establishes the constraint under fair-sampling (a self-consistent but loophole-open result); Phase 2 closes the loophole. This prevents a reviewer from dismissing Phase 1 as inconclusive while acknowledging that Phase 2 is the definitive test. |
+| 4 | §2.1, §4.1, §4.2, §6, §7 | **Figure placeholders resolved + numbering fixed:** [Figure X]→[Figure 2] (§4.1). [Figure S1]→descriptive prose + S1 pointer (§2.1). [Figure 2]→[Figure 3] (§4.2). [Figure 3]→[Figure 4] (§6). [Figure 4]→[Figure 5] (§7). Figures now sequentially numbered 1-5. | 4.5/5 | Placeholder figures undermine a manuscript's credibility — they signal incompleteness to a reviewer. The [Figure X] in §4.1 was the last unresolved placeholder in the main text. The EWF setup schematic (§2.1) was reclassified as supplemental material rather than a numbered main-text figure. |
+| 5 | §1 | **GPT abbreviation clarified (+2 words):** "GPT/weak-measurement development" → "General Probabilistic Theories (GPT) / weak-measurement development" in Supplemental S3 description. | 4.5/5 | In 2026, "GPT" is overwhelmingly read as Generative Pre-trained Transformer. A reviewer scanning the supplemental description who reads "GPT/weak-measurement development" may wonder why large language models appear in a quantum foundations paper. The full term on first use eliminates this distracting misreading. |
+
+### Structural changes (v62)
+| Before (v61) | After (v62) | Nature |
+|-------------|-------------|--------|
+| §1: Proposition 1 starts with definition | +"The basis overlap \|⟨b\|d⟩\|² is the simplest scalar...any deformation...depends on this relationship at lowest order (§2.3)." → definition | Motivation front-loaded |
+| §3.2 Lemma 1: Proof ends at ∎ → Operational invariant | +"Numerical illustration. At θ=31° with β=0.07...δ⟨AB⟩≈0.008...U=σ_x leaves correlators invariant...numerically and operationally distinct." → Operational invariant | Numerical example |
+| §7: "...biases δ toward zero [9]. Full robustness analysis..." | +"**Two-phase experimental program.** Phase 1...Phase 2..." → "Full robustness analysis..." | Two-phase framing |
+| §2.1: "[Figure S1: EWF setup...]" | "[Schematic of the EWF setup...is provided in Supplemental S1.]" | Placeholder resolved |
+| §4.1: "[Figure X: FOM vs polar angle...]" | "[Figure 2: FOM vs polar angle...]" | Placeholder resolved |
+| §4.2: "[Figure 2: Optical path...]" | "[Figure 3: Optical path...]" | Renumbered |
+| §6: "[Figure 3: Monte Carlo...]" | "[Figure 4: Monte Carlo...]" | Renumbered |
+| §7: "[Figure 4: FOM vs μ]" | "[Figure 5: FOM vs μ]" | Renumbered |
+| §1 supplemental: "GPT/weak-measurement" | "General Probabilistic Theories (GPT) / weak-measurement" | Abbreviation clarified |
+
+### Regression
+Δ: §1 motivation does not modify existing constraints — it adds a forward-ref to §2.3. Lemma 1 numerical example is purely illustrative. Two-phase program reframes existing content without changing claims.
+
+---
+
+## v61 (2026-05-25) — 1/10-issue RCA (threshold 4.5/5): θ=31° analytic intuition in §1; title change REVERTED after RCA on premise; 9 issues rejected
+
+**Scoring summary (10 issues):** 1 implemented (≥4.5/5), 1 implemented-then-reverted (RCA failure on premise), 8 rejected (<4.5/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Overlap-only ad hoc → symmetry/no-go | — | → Recurring |
+| 2 | "Blind spot" → "unisolated degree of freedom" | — | → Recurring |
+| 3 | Toy mechanism cụ thể hơn | — | → Recurring |
+| 4 | β scale ~10⁻² → dimensional estimate | — | → Recurring |
+| 5 | Reparameterization → operational observable | — | → Recurring |
+| 6 | Cắt 20-30% defensive | — | → Recurring |
+| 7 | "What classes of hidden dynamics generate overlap dependence" | 2.0/5 | Rejected — speculative, violates C1 |
+| 8 | θ=31° numerically tuned → analytic intuition sớm hơn | 4.5/5 | **Implemented** — one-line intuition added to §1 |
+| 9 | Figure "equator flatline vs tilted emergence" | — | → Recurring |
+| 10 | Title aggressive → mềm hơn | 4.7→REVERTED | **Implemented then REVERTED.** Title changed, then reverted: "Blind" is standard scientific terminology, not a colloquial accusation. |
+
+### RCA post-mortem on the title change
+
+**What happened:** User suggested title was too aggressive. I accepted the premise without applying RCA to it — treating "Blind" as a colloquial accusation rather than scientific terminology. Title was changed from the investigative question format to a declarative statement. User then asked for RCA on the decision itself, revealing the premise was weak (~3/10).
+
+**Root cause of the error:** RCA was applied to scoring the suggestion (is it new? does it conflict with CHANGELOG?) but NOT to validating the user's premise (is "Blind" actually aggressive in scientific context?). This is an incomplete RCA application — Step 1 (Define) requires separating symptom from cause, and the "symptom" here was the user's characterization of "Blind" as aggressive, which should have been challenged before acting.
+
+**Lesson:** When a user asserts a characterization ("X is aggressive"), apply RCA to the characterization itself, not just to the proposed fix. "Blind" in quantum foundations literature is neutral technical terminology.
+
+### Implemented change (v61, retained)
+
+**§1 θ=31° analytic intuition (+2 lines):** "The optimum at 31° emerges from two competing trends — signal strength ∝ |cos θ| vs. LF violation strength — whose intersection determines the figure of merit (§4.1)."
+
+---
+
+## v60 (2026-05-25) — 2/10-issue RCA (threshold 4.5/5): LF optimization distinction (§3.5); QM vs overlap-model prediction table (§8.1); 8/10 issues rejected as oscillation repeats
+
+**Scoring summary (10 issues):** 2 implemented (≥4.5/5), 8 rejected (<4.5/5). Eight of ten issues are repeats of items rejected in v53-v59.
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Toy microscopic model | — | → Recurring |
+| 2 | "Never tested" → "not systematically isolated" | — | → Recurring |
+| 3 | Cắt 20-30% equatorial cancellation | — | → Recurring |
+| 4 | β physical intuition từ decoherence/weak measurement | — | → Recurring |
+| 5 | Coordinate artifact — operational observable sớm hơn | — | → Recurring |
+| 6 | Figure raw counts/error bars | — | → Recurring |
+| 7 | Abstract overloaded | 3.0/5 | Rejected — already compressed 13→8 lines (v53) |
+| 8 | Novelty vs LF optimization literature | 4.5/5 | **Implemented** — "Distinction from LF optimization" paragraph added to §3.5 |
+| 9 | Scope limitation buried → kéo lên sớm | 3.5/5 | Rejected — §3.2 is the correct location for scope |
+| 10 | Falsifiable prediction table | 4.5/5 | **Implemented** — QM vs overlap-model prediction table added to §8.1 |
+
+### Implemented changes (v60)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 8 | §3.5 | **"Distinction from LF optimization" (+11 lines):** New paragraph at end of §3.5: "This work is complementary to, not competitive with, the LF inequality optimization literature [2,10-12]. LF optimization varies azimuthal angles φ at fixed θ = π/2 to maximize inequality violation; this work varies the polar angle θ to test for overlap-dependent deformation. The two address different questions: LF optimization asks 'how strongly does nature violate Local Friendliness?'; this work asks 'has the overlap-only class ever been tested?' The single-waveplate protocol preserves the optimized LF violation (8.6σ) while adding the θ degree of freedom — combining both tests in one experiment." | 4.5/5 | Genuinely new. No prior version systematically distinguished this work from the LF optimization literature. The distinction is important: a reviewer might think "LF optimization already varies measurement angles — what's new?" The answer: LF optimization varies φ at fixed θ=π/2 within the equatorial plane; this work varies θ out of the equatorial plane, testing a different hypothesis. The two are complementary and the protocol does both simultaneously. |
+| 10 | §8.1 | **QM vs overlap-model prediction table (+8 lines):** 4-row table: Gen LF 1 at θ=31° (QM: +0.0891, overlap: same), δ⟨AB⟩ at θ=31° (QM: 0, overlap: β cos(31°) ≈ 0.857β), δ⟨AB⟩ at θ=π/2 (QM: 0, overlap: 0 by cancellation), δ⟨AB⟩(θ) functional form (QM: δ=0 ∀θ, overlap: δ ∝ cos θ). | 4.5/5 | v56 added falsification conditions in prose. A table crystallizes the predictions side-by-side, making the experimental discriminator immediately visible. The table shows both where the models AGREE (Gen LF 1, equatorial δ⟨AB⟩) and where they DIVERGE (δ⟨AB⟩ at tilted θ, functional form). This format is standard in experimental proposal papers. |
+
+### Structural changes (v60)
+| Before (v59) | After (v60) | Nature |
+|-------------|-------------|--------|
+| §3.5: ends at "Tilting the Superobserver opens access..." → §4 | +"**Distinction from LF optimization.** This work is complementary to...combining both tests in one experiment." → §4 | Novelty boundary vs LF literature |
+| §8.1: ends at "Either outcome is informative..." | +Prediction table (4 rows: Gen LF 1, δ⟨AB⟩ at 31°, δ⟨AB⟩ at π/2, functional form) | Falsifiable predictions |
+
+### Regression
+Δ: LF optimization distinction is new content — does not modify existing constraints.
+
+---
+
+## v59 (2026-05-25) — 1/8-issue RCA (threshold 4.5/5): Blind θ-sweep protocol added to §8.2; 7/8 issues rejected as oscillation repeats
+
+**Scoring summary (8 issues):** 1 implemented (≥4.5/5), 7 rejected (<4.5/5). Seven of eight issues are repeats of items rejected or addressed in v53-v58.
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Toy model động lực học | — | → Recurring |
+| 2 | "Why this class?" — EFT benchmark | — | → Recurring |
+| 3 | Calibration artifact — blind θ-sweep | 4.5/5 | **Implemented** — blind protocol added to §8.2 |
+| 4 | Claim aggressive — "all", "entire", "blind" | — | → Recurring |
+| 5 | Smoking gun prediction — signature phụ | 2.5/5 | Rejected — directly violates C20 ("smoking gun" deliberately removed v37) |
+| 6 | Paper dài và lặp — cắt 20-25% | — | → Recurring |
+| 7 | Experiment > theory — đẩy theorem | 3.5/5 | Rejected — theorem IS the paper's strongest asset; deliberate structural choice |
+| 8 | Trivial geometry — unisolated parameter | — | → Recurring |
+
+### Implemented change (v59)
+
+**§8.2 θ-sweep (+2 lines):** Added blind protocol: "To prevent analysis bias, the sweep should be performed blind: randomize the θ sequence and analyze δ⟨AB⟩(θ) without knowledge of the θ-to-data mapping until the cos θ fit is finalized."
+
+| RCA Score | Rationale |
+|-----------|-----------|
+| 4.5/5 | Genuinely new — no prior version proposed a blind protocol. The θ-sweep has been mentioned as a future direction since v35 but never specified HOW to perform it rigorously. A blind protocol prevents the analyst from (unconsciously) selecting data subsets or analysis parameters that favor the cos θ hypothesis. This is standard practice in precision tests (e.g., blinding in particle physics and cosmology) but was missing from the EWF proposal. |
+
+### Regression
+Δ: §8.2 θ-sweep upgraded from conceptual to protocol-level with blinding.
+
+---
+
+## v58 (2026-05-25) — 2/9-issue RCA (threshold 4.5/5): §3.2 structural cleanup (Corollary+Examples cut, Hierarchy→Scope, Operational Invariant tightened); §3.1 cosθ dedup; 7/9 issues rejected as oscillation repeats
+
+**Scoring summary (9 issues):** 2 implemented (≥4.5/5), 7 rejected (<4.5/5). Seven of nine issues are variants of items rejected in v55-v57 — the RCA threshold mechanism continues to prevent oscillation.
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Overlap-only ad-hoc | — | → Recurring |
+| 2 | Quá dài, lặp cosθ | 4.5/5 | **Implemented** — §3.1 dedup: 3 "cos θ" in 6 lines → 1 |
+| 3 | Physics motivation yếu | — | → Recurring |
+| 4 | Reparameterization | — | → Recurring |
+| 5 | β arbitrary | — | → Recurring |
+| 6 | Defensive writing | 4.2/5 | Rejected — v55+v57 already reduced; remaining hedging is functional C1 boundary |
+| 7 | Section 3 overloaded | 4.8/5 | **Implemented** — §3.2 structural cleanup (−17 lines) |
+| 8 | Novelty boundary unclear | — | → Recurring |
+| 9 | Null at symmetry trivial | — | → Recurring |
+
+### Implemented changes (v58)
+
+| # | Section | Change | Rationale |
+|---|---------|--------|-----------|
+| 7 | §3.2 | **Structural cleanup (−17 lines):** Corollary (5 lines) merged into Proposition 1 (key sentence "no overlap-dependent modification evades this cancellation..." appended to Prop 1). Examples block (5 lines: g(x)=x², sin(πx), (1−x)^n) cut — all show g(1/2)=constant, already proven by Proposition 1 and §3.3. Deformation Hierarchy (8 lines standalone block) merged into Scope Limitation as compact inline (3 lines: "Level 0...Level 1...Level 2...Level 3"). Operational Invariant tightened from 11 to 5 lines — removed overlap with Lemma 1 Proof (the mechanism of invariance is already proven there; Operational Invariant now states the consequence). §3.2 went from 10 labeled blocks (Definition, Prop 1, Corollary, Lemma 1, Proof, Operational Invariant, Scope, Hierarchy, Examples, Contextuality) → 7 blocks. | §3.2 accumulated layers across v44-v56: v44 added Contextuality, v54 added outside-scope examples, v55 added Deformation Hierarchy + expanded Operational Invariant, v56 added comparison table. Each addition was individually justified but collectively created bloat. This cleanup removes content that is (a) proven elsewhere (Examples redundant with §3.3 proof), (b) restates what was just said (Corollary restates Proposition 1), or (c) can be compactly merged (Hierarchy→Scope). |
+| 2 | §3.1 | **cosθ dedup (−3 lines):** "The distinctive experimental signature is cos θ scaling: any non-zero δ⟨AB⟩ ∝ cos θ...making a cos θ signal difficult...This cos θ dependence is a genuine observable" → "The distinctive experimental signature is δ⟨AB⟩ ∝ cos θ: this scaling...and is a genuine observable, not a gauge artifact (Lemma 1, §3.2)." Three "cos θ" in 6 lines → one. | cosθ is the paper's mathematical signature — it SHOULD appear in equations and key statements. But 3 occurrences in 6 consecutive lines is stylistic redundancy, not functional signposting. |
+
+### Regression
+Δ: Corollary content preserved in Proposition 1 (one appended sentence); Hierarchy content preserved in compact Scope form; Operational Invariant key claim ("only β=0 or θ=π/2 removes it") preserved.
+
+---
+
+## v57 (2026-05-25) — 2/7-issue RCA (threshold 4.5/5): §7 compressed 67→12 lines (detail→S2); §8.1 compressed 22→10 lines; §3.2 contextuality prose→table; paper 714→649 lines (−9%)
+
+**Scoring summary (7 issues):** 2 implemented (≥4.5/5), 5 rejected (<4.5/5). Notably, 5 of 7 issues are repeats of items rejected in v55 or v56 — the RCA threshold mechanism is correctly preventing oscillation.
+
+| # | Issue | RCA Score | Root Cause / Rejection Reason | Action |
+|---|-------|-----------|-------------------------------|--------|
+| 1 | overlap-only ad hoc — toy mechanism | — | → Recurring |
+| 2 | Paper quá dài — cắt 30-40% | 4.7/5 | **Implemented** — §7→12-line summary + S2 pointer; §8.1→10 lines merged; paper 714→649 lines |
+| 3 | Theorem buried — đẩy Proposition 1 sớm hơn | 4.2/5 | Rejected — Proposition 1 already §1 ¶2 (v45) |
+| 4 | Coordinate artifact — invariant rõ hơn | — | → Recurring |
+| 5 | β scale — weak-measurement derivation | — | → Recurring |
+| 6 | "first ever" — soften wording | — | → Recurring |
+| 7 | Contextuality defensive — rút ngắn | 4.5/5 | **Implemented** — Prose cut from 10→3 lines; table retained |
+
+### Implemented changes (v57)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 2 | §7 | **Robustness compressed 67→12 lines (−55):** Old: full §7 with visibility/detector efficiency/angular tolerance (6 lines), systematic-error budget (8 lines), φ-scramble control (16 lines), robustness summary table (8 lines), detection loophole discussion (14 lines), loophole summary table (10 lines). New: single compact paragraph covering all key numbers (μ≥0.92, η≥0.91, six-source error budget, φ-scramble with fit equation, detector inefficiency bias direction) + S2 pointer. Full analysis, tables, and Monte Carlo in Supplemental S2. | 4.7/5 | The previous §7 was a mini-review paper on systematics — proportionally heavy for a paper whose core contribution is a 3-line geometric proof. The compressed version preserves every key number and the φ-scramble protocol while moving implementation detail to S2 where referees can verify it. This is the single largest cut in the paper's history (−55 lines in one edit). |
+| 2 | §8.1 | **Interpretation compressed 22→10 lines (−12):** Merged "Interpretation" + "Falsification conditions" into "Interpretation and Falsification." Cut: "Interpreting this as overlap-dependent deformation specifically requires θ-sweeps and multi-observer follow-up" (redundant — already in §8.2 θ-sweep), "A null result...excludes...above sensitivity threshold" (redundant — falsification conditions say same thing more precisely), "A non-zero signal that does not scale as cos θ would indicate physics beyond the overlap-only class — still interesting, but not what this proposal targets" (verbose — folded into falsification condition ii). Kept: δ≠0 interpretation, two falsification criteria, "either outcome informative," S3 pointer. | 4.5/5 | The interpretation subsection had accumulated layers: v53 merged §8.1+§8.2, v56 added falsification conditions. The result was 22 lines with overlapping content. Compressed version is 10 lines doing the same work. |
+| 7 | §3.2 | **Contextuality prose→table (−9 lines):** Old: 10-line prose distinction (v44) + 6-line comparison table (v56) = 16 lines. New: 3-line intro ("logically independent...concerns measurement registration, not measurement setting") + 6-line table = 9 lines. | 4.5/5 | The v44 prose and v56 table covered the same distinction twice. The table is more information-dense; the prose is now a compact intro to the table rather than a parallel explanation. |
+
+### Structural changes (v57)
+| Before (v56) | After (v57) | Nature |
+|-------------|-------------|--------|
+| §7: 67 lines (full robustness analysis with subsections, tables, loophole discussion) | 12 lines (compact summary + S2 pointer) | Major compression |
+| §8.1: 22 lines (Interpretation + Falsification conditions subsections) | 10 lines (merged Interpretation and Falsification) | Compression |
+| §3.2: 16 lines (contextuality prose + table) | 9 lines (compact intro + table) | Prose dedup |
+| Paper: 714 lines (~5 pages) | 649 lines (~4 pages) | −65 lines (−9%) |
+
+### Regression
+Δ: §7 robustness detail → S2 (C17 strengthened); φ-scramble quantitative protocol preserved in compressed form; falsification conditions preserved; contextuality comparison table preserved.
+
+---
+
+## v56 (2026-05-25) — 4/10-issue RCA (threshold 4.5/5): Reparameterization defense §1; falsification roadmap §8.1; quantitative φ-scramble §7; contextuality comparison table §3.2
+
+**Scoring summary (10 issues):** 4 implemented (≥4.5/5), 6 rejected (<4.5/5).
+
+| # | Issue | RCA Score | Root Cause | Action |
+|---|-------|-----------|------------|--------|
+| 1 | Physical mechanism chưa rõ — cần toy model | — | → Recurring |
+| 2 | β ad-hoc — liên hệ parameter theory | — | → Recurring |
+| 3 | Reparameterization — defense cần sớm hơn | 4.5/5 | **Implemented** — one sentence added to §1 |
+| 4 | "Mọi EWF mù" wording mềm hơn | — | → Recurring |
+| 5 | Thiếu falsification roadmap | 4.7/5 | **Implemented** — "Falsification conditions" paragraph in §8.1 |
+| 6 | Theorem mạnh hơn physics | 4.2/5 | Rejected — deliberate structural choice |
+| 7 | Birefringence fake cosθ — control định lượng | 4.5/5 | **Implemented** — Quantitative φ-scramble protocol |
+| 8 | Paper dài, cắt defensive wording | — | → Recurring |
+| 9 | Hình minh họa đơn giản hơn | — | → Recurring |
+| 10 | Novelty vs contextuality — cần bảng so sánh | 4.5/5 | **Implemented** — 3-row comparison table |
+
+### Implemented changes (v56)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 3 | §1 | **Reparameterization defense (+2 lines):** After "class that has remained structurally untested," added: "The predicted cos θ signal is invariant under any basis redefinition of the Superobserver alone (Lemma 1, §3.2) — it is a genuine observable, not a coordinate artifact." | 4.5/5 | The "just a basis change" objection is the single most common reviewer reflex. v41 added a forward-ref from §3.1, v42+v46 moved/expanded Lemma 1, v55 expanded the operational invariant — but none of this reached §1 where the casual reader forms their first impression. One sentence in §1 preempts the objection before it forms. |
+| 5 | §8.1 | **Falsification roadmap (+9 lines):** Added "**Falsification conditions.**" paragraph: (i) θ-sweep null at ±0.003 floor (N=200k) excludes cos θ; (ii) δ⟨AB⟩(θ) deviating from cos θ indicates physics beyond overlap-only class. Closes with: "Either outcome is informative: falsification closes the overlap-only window; a cos θ signal opens it." | 4.7/5 | Genuinely new — no prior version had explicit falsification criteria. The null-test framing is strengthened by telling reviewers exactly what result would kill the idea. The "either outcome is informative" framing positions the experiment as win-win: null = falsification, positive = discovery. |
+| 7 | §7 | **Quantitative φ-scramble (+8 lines):** Expanded from conceptual to quantitative: N_φ ≥ 10 uniformly spaced values; fit model δ⟨AB⟩(φ) = A + B cos(2φ) + C sin(2φ); geometric predicts A≠0, B,C≈0; birefringence predicts non-zero B or C; σ_A ≈ 0.0017 distinguishes β=0.07 at 4.7σ. | 4.5/5 | The v43 φ-scramble was qualitative ("randomize φ, if signal persists, it's geometric"). An experimentalist needs: how many φ values? What fit? What's the discrimination threshold? The expanded protocol answers all three. |
+| 10 | §3.2 | **Contextuality comparison table (+6 lines):** 3-row table comparing KS Contextuality, Overlap-Dependence (this work), and Weak Measurement [18] across Property, Depends on, Observable, and Constrained by dimensions. | 4.5/5 | v44 added contextuality distinction prose; v44 explicitly rejected a table as "disproportionate for 5-page paper" (RCA 3.0/5). This v56 change reverses that decision: the table is 6 lines, compact, and makes the novelty boundary immediately visible. Reviewer sees at a glance: overlap-dependence is about registration, not setting; constrained by Proposition 1, not Bell-KS. |
+
+### Structural changes (v56)
+| Before (v55) | After (v56) | Nature |
+|-------------|-------------|--------|
+| §1: "class that has remained structurally untested." | +"The predicted cos θ signal is invariant under any basis redefinition of the Superobserver alone (Lemma 1, §3.2) — it is a genuine observable, not a coordinate artifact." | Reparameterization preemption |
+| §8.1: "A null result...excludes...above sensitivity threshold. Implications..." | +"**Falsification conditions.** The overlap-only class would be definitively falsified if: (i)...(ii)...Either outcome is informative..." | Falsification roadmap |
+| §7 φ-scramble: 8 lines (conceptual: "randomize φ...if signal persists, geometric") | 14 lines (quantitative: N_φ≥10, fit model, discrimination thresholds, σ_A values) | Quantitative control protocol |
+| §3.2: contextuality distinction prose ends → §3.3 | +Comparison table (KS Contextuality vs Overlap-Dependence vs Weak Measurement) → §3.3 | Novelty comparison table |
+
+### Regression
+Δ: C18 Lemma 1 now forward-referenced from §1; C19 φ-scramble upgraded from conceptual to quantitative.
+
+---
+
+## v55 (2026-05-25) — 5/9-issue RCA (threshold 4.5/5): Physical context + weak-measurement toy model; operational invariant expanded; deformation hierarchy; defensive qualifier density reduced
+
+**Scoring summary (9 issues):** 5 implemented (≥4.5/5), 4 rejected (<4.5/5).
+
+| # | Issue | RCA Score | Root Cause | Action |
+|---|-------|-----------|------------|--------|
+| 1 | overlap-only class arbitrary — needs toy model | 4.5/5 | **Implemented** — "Physical context" paragraph + weak measurement + decoherence + minimal toy model |
+| 2 | theorem obvious mathematically | — | → Recurring |
+| 3 | "why would nature depend on overlap?" | 4.5/5 | **Implemented** — Combined with #1: weak measurement + decoherence connections |
+| 4 | β lacks physical scale | — | → Recurring |
+| 5 | reparameterization artifact | 4.5/5 | **Implemented** — Operational invariant expanded |
+| 6 | repetition of "equator cancellation" | 4.2/5 | Rejected — diminishing returns |
+| 7 | too defensive — "we do not claim…" | 4.7/5 | **Implemented** — Reduced defensive density |
+| 8 | signal survival with realistic optics | 4.0/5 | Rejected — S2 is the right location |
+| 9 | theorem scoped too narrowly | 4.6/5 | **Implemented** — "Deformation hierarchy" (§3.2) |
+
+### Implemented changes (v55)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1+3 | §2.3 | **"Physical context" paragraph (+10 lines):** Replaced defensive "Eq. (2-3) is a search target, not a theory prediction — the paper proposes a null-test protocol, not an alternative interpretation" with: weak measurement precedent (postselection-conditioned weak values depend on same \|⟨ψ_pre\|ψ_post⟩\|² structural overlap), decoherence precedent (environmental monitoring via pointer-state overlap), and minimal toy model (Superobserver measurement weakly disturbs Friend's record proportionally to basis overlap → leading-order correction takes form Eq. 2-3, derivation in S3). Closes with: "This is a plausibility argument, not a derivation from a complete theory — it shows that overlap-dependence is a structurally natural hypothesis, not an arbitrary choice." | 4.5/5 | v53 cut GPT/weak-measurement motivation → paper felt arbitrary. v54 added "Why overlap-only?" as logical/minimal motivation. This v55 change adds PHYSICAL precedent without over-claiming mechanism. The toy model ("measurement disturbs Friend's record proportionally to basis overlap") gives reviewers a concrete mental model. The disclaimer ("plausibility argument, not a derivation") prevents over-interpretation. Weak measurement [18] and decoherence provide established structural precedent for overlap-dependence in quantum foundations. |
+| 5 | §3.2 | **Operational invariant expanded (+5 lines):** After "No basis redefinition of the Superobserver alone can generate this signal," added: "Physically, this means the cos θ signal is as robust as the correlator ⟨AB⟩ itself — it cannot be eliminated by any choice of Superobserver measurement coordinates. The only way to remove it is β = 0 (standard QM) or θ = π/2 (equatorial measurement). Any non-zero δ⟨AB⟩ at θ ≠ π/2 therefore indicates departure from the standard Born rule, independent of measurement-basis convention." | 4.5/5 | The mathematical invariant was stated but the physical consequence was not drawn. "As robust as ⟨AB⟩ itself" gives an intuitive benchmark. "Only way to remove it is β=0 or θ=π/2" makes the no-go explicit. "Departure from standard Born rule, independent of measurement-basis convention" directly counters "reparameterization artifact" objection. |
+| 9 | §3.2 | **Deformation hierarchy (+8 lines):** After scope limitation, added: "**Deformation hierarchy.** The overlap-only class is the first level of a natural hierarchy: Level 0 — overlap-only (P' depends on \|⟨b\|d⟩\|²; this work, constrained by Proposition 1); Level 1 — density-matrix-dependent (P' depends on ρ_F, e.g., Tr[ρ_F²]); Level 2 — multi-partite (P' depends on correlations between multiple Friends); Level 3 — non-geometric (timing, path, or other degrees of freedom). Each level beyond 0 is unconstrained by Proposition 1 and requires independent experimental designs. The single-waveplate protocol (§4-7) targets Level 0 as the first step in a broader research program." | 4.6/5 | v54 added one concrete outside-scope example (Tr[ρ_F²]). This v55 change structures the examples into a hierarchy, showing the paper is the FIRST step in a research program — Level 0 is the natural starting point because it's the simplest geometric deformation. Reframes "class too narrow" as "deliberate first step." |
+| 7 | Abstract, §1, §2.3, §9 | **Defensive qualifier density reduced:** Abstract: "illustrative benchmark sensitivity β ~ 0.07" → "sensitivity β ~ 0.07". §1: same. §1 ESP: "This paper proposes a null-test protocol, not an alternative interpretation of quantum mechanics. It makes no claim about the existence of overlap-dependent deformation in nature." → "This paper makes no claim about the existence of overlap-dependent deformation in nature — it proposes a null-test protocol." (2 sentences → 1, "not an alternative interpretation" removed as redundant). §2.3: "Eq. (2-3) is a search target, not a theory prediction — the paper proposes a null-test protocol, not an alternative interpretation of quantum mechanics" → removed (replaced by physical context paragraph). §9: "illustrative benchmark sensitivity β ~ 0.07" → "sensitivity β ~ 0.07". §5.3: "illustrative benchmark" language retained (qualifiers belong in methodology section, not headlines). | 4.7/5 | v54 increased qualifier density to address "overclaim" concern — but over-corrected into defensiveness. v55 restores confident voice at core claims (Abstract, §1, §9) while keeping precision qualifiers in §5.3 methodology where they belong. The ESP boundary (C1) is preserved but compressed from 2 defensive sentences to 1 compact factual statement. |
+
+### Structural changes (v55)
+| Before (v54) | After (v55) | Nature |
+|-------------|-------------|--------|
+| §2.3: "Eq. (2-3) is a search target, not a theory prediction — the paper proposes a null-test protocol, not an alternative interpretation of quantum mechanics." + "**Why overlap-only?**...without invoking a specific microphysical mechanism." | "**Why overlap-only?**...structurally untested." + "**Physical context.** Basis-overlap dependence has established precedent...weak measurement...decoherence...toy model (measurement disturbance ∝ basis overlap → Eq. 2-3)...plausibility argument, not arbitrary choice." | Physical precedent + toy model |
+| §3.2 operational invariant: ends at "No basis redefinition of the Superobserver alone can generate this signal." | +"Physically, this means the cos θ signal is as robust as the correlator ⟨AB⟩ itself...only way to remove it is β=0 or θ=π/2...indicates departure from standard Born rule, independent of measurement-basis convention." | Physical intuition expansion |
+| §3.2: "The experiment (§4-7) constrains the overlap-only class; independent designs are needed for broader classes." → "**Examples.**" | +"**Deformation hierarchy.** Level 0 (overlap-only, this work) → Level 1 (density-matrix) → Level 2 (multi-partite) → Level 3 (non-geometric)...first step in a broader research program." → "**Examples.**" | Hierarchy |
+| Abstract, §1, §9: "illustrative benchmark sensitivity β ~ 0.07" | "sensitivity β ~ 0.07" | Less defensive |
+| §1 ESP: "This paper proposes a null-test protocol, not an alternative interpretation of quantum mechanics. It makes no claim..." | "This paper makes no claim about the existence of overlap-dependent deformation in nature — it proposes a null-test protocol. Its two claims are structural:" | Compressed + confident |
+| §2.3: "Eq. (2-3) is a search target, not a theory prediction — the paper proposes a null-test protocol, not an alternative interpretation" | Removed (replaced by physical context) | Defensive line removed |
+
+### Regression
+Δ: C1 ESP boundary compressed but retained; C6 weak-measurement connection restored (v53 cut → v55 selectively restored with "precedent" framing, not "mechanism"); C10 benchmark language retained in §5.3; defense level recalibrated (less hedging at core claims, qualifiers in methodology section).
+
+---
+
+## v54 (2026-05-25) — 7-issue RCA (threshold 4.5/5): "Why overlap-only?" minimal operational deformation; concrete outside-scope examples; killer Figure 1; ~20 lines repetition cut; sensitivity→illustrative benchmark; qualifier density; null-test framing
+
+**Scoring summary (7 issues):** 7 implemented (≥4.5/5), 0 rejected.
+
+| # | Issue | RCA Score | Root Cause | Action |
+|---|-------|-----------|------------|--------|
+| 1 | Overclaim — need more qualifiers | 4.5/5 | Qualifiers clustered in §1 ESP; not woven into experimental claims throughout | **Implemented** — "overlap-only class" qualifier added to Abstract, §1 claim B, §5.3 discriminator |
+| 2 | Phenomenology lacks foundation | 4.7/5 | §2.3 explained HOW parametrization works but never WHY overlap-only is the MINIMAL class to test | **Implemented** — New "Why overlap-only?" subsection in §2.3: overlap is simplest geometric scalar → minimal operational deformation → isolates θ without microphysical mechanism |
+| 3 | "Toy model" vulnerability | 4.6/5 | β sensitivity thresholds presented as precise predictions rather than search targets | **Implemented** — "Eq. (2-3) is a search target, not a theory prediction — the paper proposes a null-test protocol, not an alternative interpretation" added to §2.3; ESP paragraph reframed |
+| 4 | Class too narrow | 4.5/5 | Scope limitation listed categories abstractly without concrete physical counterexamples | **Implemented** — §3.2 Scope limitation expanded with explicit example: P' ∝ P_QM · h(Tr[ρ_F²]) depends on Friend state purity, not basis overlap, so does NOT cancel at equator |
+| 5 | Repetition of "equatorial cancellation" | 4.7/5 | Thesis re-stated in ~8 locations; many redundant signposting | **Implemented** — ~20 lines cut: §3.1 discriminator paragraph compressed; §3.5 "three-line proof" + "structural reason" merged 13→5 lines; §5.3 "exact fixed point" restatement cut; §9 conclusion compressed |
+| 6 | Experimental claim inflated | 4.8/5 | Headline sensitivity numbers (abstract/§1/§9) dropped the "benchmark parametrization" qualifier from §5.3 body | **Implemented** — "β ≥ 0.07" → "β ~ 0.07" with "illustrative benchmark sensitivity" in Abstract, §1, §5.3, §9. §5.3 adds explicit disclaimer: "These thresholds are illustrative — no existing theory predicts a specific β value" |
+| 7 | Missing killer figure | 4.5/5 | Central geometric insight (flatline → emergence) had no dedicated figure | **Implemented** — Detailed Figure 1 specification in §3.4: Bloch sphere equator vs tilted, overlap asymmetry values, δ⟨AB⟩ ∝ cos θ curve with null at 90° and sensitive region at 31° |
+
+### Implemented changes (v54)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 2+3 | §2.3 | **"Why overlap-only?" subsection (+8 lines) + null-test framing.** After EFT analogy: "Eq. (2-3) is a search target, not a theory prediction — the paper proposes a null-test protocol, not an alternative interpretation of quantum mechanics." New subsection: "**Why overlap-only?** The basis overlap \|⟨b\|d⟩\|² is the simplest scalar quantifying the geometric relationship between two measurement bases. Any deformation coupling Superobserver statistics to a prior observer's recorded outcome must depend on this relationship at lowest order; the overlap-only class is therefore the minimal operational deformation — it isolates the geometric degree of freedom (θ) that equatorial measurements leave structurally untested, without invoking a specific microphysical mechanism." | 4.7/5 | v53 cut GPT/weak-measurement motivation but left a gap: WHY this class? The new subsection answers with internal logic rather than external physics — overlap is the simplest geometric scalar, any outcome-coupling deformation depends on it at lowest order, therefore overlap-only is the minimal class. "Without invoking a specific microphysical mechanism" directly counters "toy model" by owning the phenomenological nature. |
+| 4 | §3.2 | **Concrete outside-scope examples (+3 lines).** Scope limitation expanded: "Broader deformations — depending on the full reduced density matrix ρ_F of the Friend (rather than only \|⟨b\|d⟩\|²), on the concurrence between Friend and Superobserver subsystems, or on non-geometric variables such as timing or path — lie outside this theorem's scope. For instance, a deformation P' ∝ P_QM · h(Tr[ρ_F²]) would depend on Friend state purity, not basis overlap, and would not cancel at the equator." | 4.5/5 | Abstract categories ("full density matrix, higher-order correlators") give no intuition. The concrete example (ρ_F purity) shows exactly what the theorem does NOT cover — a physically meaningful deformation that survives at the equator. This makes the overlap-only scope feel like a deliberate choice, not an oversight. |
+| 7 | §3.4 | **Killer Figure 1 specification (+5 lines).** Replaced generic "[Figure X: Balanced vs tilted overlap geometry...]" with detailed 3-panel specification: Left (Bloch sphere at equator, all overlaps = 1/2, δ⟨AB⟩ = 0 flatline), Right (axis tilted to θ = 31°, overlap asymmetry values), Lower (δ⟨AB⟩ ∝ cos θ curve, null at 90°, sensitive region at 31° with dashed vertical line). | 4.5/5 | The paper's central geometric insight was carried entirely by text. A 3-panel figure showing the flatline → emergence transition makes the theorem VISUAL — reviewers see the null point and the cos θ onset without parsing algebra. |
+| 5 | §3.1, §3.5, §5.3, §9 | **Repetition cuts (−20 lines):** §3.1: discriminator paragraph compressed (removed "equatorial measurements sit at an exact fixed point where all overlap-dependent deformations vanish identically; tilting away from equator produces linear onset" — repeats §3.2 Proposition 1+Corollary). §3.5: merged "structural reason" (7 lines) + "three-line proof" (8 lines) → 5 compact lines. §5.3: cut "the equator (θ = π/2) is an exact fixed point where all overlap-dependent deformations vanish identically; tilting away from the equator produces a linear onset ∝ cos θ" — repeats §3.1. §9: compressed 15→9 lines; cut "for any function g of the basis overlap, not just Eq. (3)" + removed one layer of S1-wrapped hedging (stated 3× in conclusion → stated once). | 4.7/5 | The equatorial cancellation was re-stated in ~8 locations: Abstract, §1, §2.3, §3.1, §3.2, §3.5, §5.3, §9. After cuts, the theorem is stated formally in §1 and §3.2 (Proposition 1), referenced functionally elsewhere. The paper no longer re-derives its own result in every section. |
+| 1+6 | Abstract, §1, §5.3, §9 | **"Illustrative benchmark" + qualifier language:** Abstract: "with sensitivity β ≥ 0.07 at 5σ" → "with illustrative benchmark sensitivity β ~ 0.07 at 5σ"; "first isolated test of this class" → "first isolated test of the overlap-only class". §1: "providing sensitivity β ≥ 0.07 at 5σ" → "providing illustrative benchmark sensitivity β ~ 0.07 at 5σ"; ESP: "enables the first experimental probe" → "enables the first experimental probe of this class"; added lead sentence: "This paper proposes a null-test protocol, not an alternative interpretation of quantum mechanics." §5.3: "the minimum detectable coupling at 5σ confidence is β ≥ 0.07" → "For the benchmark parametrization Eq. (2-3), the illustrative 5σ detection threshold is β ~ 0.07"; added: "These thresholds are illustrative — no existing theory predicts a specific β value; they quantify the experiment's capability for the benchmark parametrization." §9: "providing sensitivity β ≥ 0.07 at >5σ" → "providing illustrative benchmark sensitivity β ~ 0.07 at >5σ". | 4.8/5 | Highest priority fix. The paper's headline numbers (β ≥ 0.07) read as unconditional experimental predictions. Adding "illustrative benchmark" + "β ~" instead of "β ≥" signals that these are sensitivity estimates for a parametrization no theory predicts. The §5.3 disclaimer ("no existing theory predicts a specific β value") makes the instrumental nature of β explicit. |
+
+### Structural changes (v54)
+| Before (v53) | After (v54) | Nature |
+|-------------|-------------|--------|
+| §2.3: EFT analogy ends → "Consider modifications..." | +"Eq. (2-3) is a search target, not a theory prediction..." + "**Why overlap-only?** The basis overlap \|⟨b\|d⟩\|² is the simplest scalar..." | New subsection + null-test framing |
+| §3.2 Scope: "...Broader deformations — depending on the full density matrix, higher-order correlators, or non-geometric variables — lie outside this theorem's scope." | "...Broader deformations — depending on the full reduced density matrix ρ_F of the Friend (rather than only \|⟨b\|d⟩\|²), on the concurrence between Friend and Superobserver subsystems, or on non-geometric variables such as timing or path — lie outside this theorem's scope. For instance, a deformation P' ∝ P_QM · h(Tr[ρ_F²]) would depend on Friend state purity, not basis overlap, and would not cancel at the equator." | Concrete counterexample |
+| §3.4: "[Figure X: Balanced vs tilted overlap geometry...]" | "[Figure 1: **Equatorial flatline vs. tilted cos θ emergence.** Left panel...Right panel...Lower panel...]" | Killer figure specification |
+| §3.1 discriminator: 9 lines (fixed-point restatement + cosθ emergence + systematic distinction) | 6 lines (cosθ signature + systematic distinction; fixed-point restatement removed) | Repetition cut |
+| §3.5 closing: 15 lines ("structural reason" 7 lines + "three-line proof" 8 lines) | 5 lines (merged reason + consequence) | Repetition cut (−10) |
+| §5.3 discriminator: includes "the equator (θ = π/2) is an exact fixed point where all overlap-dependent deformations vanish identically; tilting away from the equator produces a linear onset ∝ cos θ" | Removed fixed-point restatement; discriminator focuses on cosθ signature vs systematics | Repetition cut |
+| §5.3 sensitivity: "the minimum detectable coupling at 5σ confidence is β ≥ 0.07" | "For the benchmark parametrization Eq. (2-3), the illustrative 5σ detection threshold is β ~ 0.07...These thresholds are illustrative — no existing theory predicts a specific β value" | Illustrative benchmark reframe |
+| §9 conclusion: 15 lines (theorem restatement + S1 ×3 + experiment + S1 ×2 + closing) | 9 lines (compact theorem + S1 ×1 + experiment + closing) | Repetition cut (−6) |
+| Abstract, §1: "sensitivity β ≥ 0.07 at 5σ" | "illustrative benchmark sensitivity β ~ 0.07 at 5σ" | Illustrative benchmark |
+| §1 ESP: "enables the first experimental probe." | "enables the first experimental probe of this class." + lead: "This paper proposes a null-test protocol, not an alternative interpretation of quantum mechanics." | Qualifier + framing |
+
+### Regression
+Δ: C1 ESP strengthened (null-test framing added); C3 S1 qualifier retained in §1, §3.5, §9; C10 benchmark language strengthened to "illustrative benchmark"; C17 strengthened (microphysical mechanism → not invoked).
+
+---
+
+## v53 (2026-05-25) — 6-issue RCA (threshold 4.5/5): Abstract theorem+null-test+consequence; §2.3 GPT/weak-measurement stripped; §8.1+§8.2 merged; novelty reframed; "phenomenological null test" genre explicit
+
+**Scoring summary (6 issues):** 6 implemented (≥4.5/5), 0 rejected.
+
+| # | Issue | RCA Score | Root Cause | Action |
+|---|-------|-----------|------------|--------|
+| 1 | Claims too strong — "all experiments blind" | 4.5/5 | S1 qualifier structurally separated from claim; "every measurement has been at equator" reads as absolute | **Implemented** — Abstract claims now bounded by theorem scope ("for the entire overlap-only class"), S1 qualifier in §1 |
+| 2 | Physical motivation weak — GPT/weak-measurement narrative | 4.7/5 | §2.3 fought against paper's own strength (geometric theorem) by reaching for external justification | **Implemented** — §2.3 Core idea stripped ~10 lines: GPT framework, registration-memory coupling, weak measurement connection, context-compatibility chain all removed |
+| 3 | Repetition — discussion/defensive wording | 4.6/5 | §8.1 (operational) and §8.2 (model-context) overlapped functionally; both pointed to S3 | **Implemented** — §8.1+§8.2 merged into single "Interpretation" subsection; "Neither predict nor preclude" defensive wording cut |
+| 4 | "Trivial symmetry" vulnerability | 4.6/5 | Novelty framed as mathematical discovery ("we prove") rather than experimental gap identification | **Implemented** — §1: "The novelty is not the overlap formula itself...but the recognition that θ has never been isolated as an independent control parameter in actual EWF implementations" |
+| 5 | Abstract overloaded | 4.7/5 | Abstract accumulated defensive qualifiers (S1, fair-sampling, SNSPD) that belong in body | **Implemented** — Abstract compressed 13→8 lines: theorem statement + phenomenological null test + measurable consequence |
+| 6 | Scope unclear — genre not stated | 4.5/5 | "Phenomenological null-test proposal" never explicitly named; abstract prioritized results over genre | **Implemented** — "phenomenological null test" added to Abstract sentence 2; §1 novelty reframe reinforces scope |
+
+### Implemented changes (v53)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1+5+6 | Abstract | **Compressed 13→8 lines (−5):** Old: "Within currently surveyed optical EWF implementations (Supplemental S1), the Superobserver's polar angle θ...has not previously been isolated...We prove...We propose a single-waveplate null test..." New: "We prove an equatorial cancellation theorem (Proposition 1): at θ = π/2, every overlap-dependent modification P = P_QM · g(\|⟨b\|d⟩\|²) / Z cancels identically for any function g — the equatorial plane is a geometric null point for the entire overlap-only class. We propose a phenomenological null test: a single waveplate tilts the Bong et al. (2020) apparatus to θ = 31°, providing the first isolated test of this class, with sensitivity β ≥ 0.07 at 5σ (single-setting) while preserving 8.6σ Genuine LF violation, under fair-sampling (η ≈ 0.87; closure via SNSPD upgrade to η ≥ 0.91)." | 4.6/5 | Combined fix for issues 1 (claims), 5 (overload), 6 (scope). Theorem leads; "phenomenological null test" explicitly names the paper's genre; S1 qualifier and "three lines" detail moved to §1 where they belong. Abstract now does one job: sell the paper. C9 (3-beat structure) preserved — theorem + proposal + consequence. |
+| 2 | §2.3 | **GPT/weak-measurement stripped (−10 lines):** Removed: "We define a single-parameter deformation...Within the GPT framework [17]...state-effect duality derivation and information-geometric motivation in Supplemental S3" + "Physically, β functions as a registration-memory coupling strength...connection to weak measurement formalism [18] developed in Supplemental S3" + "Conceptually, basis overlap \|⟨b\|d⟩\|² quantifies measurement-context compatibility...GPT state-effect duality [17]; weak measurement precedent [18]; further development in Supplemental S3" + "The model-independent theorem (Proposition 1, §3) is the central result; Eq. (2-3) serves as a benchmark parametrization." Kept: theorem lead → constraints derivation → EFT/SME analogy. | 4.7/5 | v43 cut GPT ~40% (9→4 lines conceptual chain). This cut removes the remaining ~60% — all GPT framework, registration-memory coupling, weak measurement connection, and context-compatibility chain. The overlap-only class is now motivated by geometry (theorem constrains it) and operational simplicity (EFT analogy), not by speculative physical mechanism. C10 (benchmark parametrization) and C17 (detail→S3) preserved. |
+| 3 | §8 | **§8.1+§8.2 merged (−8 lines):** Old: Two subsections — §8.1 "Interpretation of Results" (7 lines) and §8.2 "Interpretation and Model Context" (7 lines). New: Single §8.1 "Interpretation" (7 lines): δ≠0 interpretation + null result + "Implications for major quantum interpretations are analyzed in Supplemental S3; the experiment is interpretation-neutral by design." Removed: "Neither the interpretations nor the embedding predict or preclude the class Eq. (2-3)" (defensive), explicit enumeration of interpretations, redundant "at this previously untested geometry." §8.3 "Future Directions" → §8.2. | 4.6/5 | For a ~5-page paper, two interpretation subsections is one too many. The merged version states what the experiment shows (operational), then points to S3 for model context. |
+| 4 | §1 | **Novelty reframed around unisolated control parameter (+2 lines net):** Old: "This structural non-identifiability has not previously been remarked because...The proof is three lines of Bloch-sphere algebra (§3.3); §2 provides motivation and notation." New: "The novelty is not the overlap formula itself (three lines of Bloch-sphere algebra, §3.3) but the recognition that the polar angle θ has never been isolated as an independent control parameter in actual EWF implementations: LF inequalities are optimized precisely at equatorial settings [2,10], so researchers adopted θ = π/2 as standard without a specific hypothesis motivating polar tilt. The equator is therefore an accidental fixed point — a geometric null point for the entire overlap-only class that has remained structurally untested." | 4.6/5 | Directly preempts "trivial symmetry" reviewer reflex: the paper openly acknowledges the math is 3 lines of algebra, then states the novelty is experimental (identifying an unisolated parameter), not mathematical (discovering a new formula). "Accidental fixed point" rebrands the equatorial convention as historical accident — the null point was not chosen; it was the default. |
+
+### Structural changes (v53)
+| Before (v52) | After (v53) | Nature |
+|-------------|-------------|--------|
+| Abstract: 13 lines (S1 qualifier + theorem + experiment + consequence) | 8 lines (theorem → phenomenological null test → measurable consequence) | Compression + genre |
+| §1 ¶2: "This structural non-identifiability has not previously been remarked because...The proof is three lines of Bloch-sphere algebra (§3.3); §2 provides motivation and notation." | "The novelty is not the overlap formula itself (three lines of Bloch-sphere algebra, §3.3) but the recognition that the polar angle θ has never been isolated...The equator is therefore an accidental fixed point" | Novelty reframe |
+| §2.3 Core idea: ~22 lines (theorem lead + GPT framework + registration-memory coupling + weak measurement + context-compatibility chain + EFT analogy) | ~12 lines (theorem lead + constraints derivation + EFT analogy) | GPT/weak-measurement stripped |
+| §8: §8.1 "Interpretation of Results" (7 lines) + §8.2 "Interpretation and Model Context" (7 lines) + §8.3 "Future Directions" | §8.1 "Interpretation" (7 lines merged) + §8.2 "Future Directions" | Merge + renumber |
+| §1: (§8.3) cross-ref | (§8.2) cross-ref | Updated |
+| §2.3: (§8.3) cross-ref | (§8.2) cross-ref | Updated |
+| §3.1: (§5.3, §8.4) cross-ref | (§5.3, §7) cross-ref | Stale ref fixed |
+| §5.3: (§8.3) cross-ref | (§8.2) cross-ref | Updated |
+
+### Regression
+Δ: C3 S1 qualifier moved from Abstract to §1 (stronger placement — directly in ESP paragraph); C9 Abstract evolved from 3-beat to tighter 3-beat (theorem+proposal+consequence, each single-purpose); C10 benchmark language retained; C17 strengthened (more GPT/weak-measurement detail → S3).
+
+---
+
 ## v52 (2026-05-25) — 10-point review RCA (threshold 4.5/5): de-defensify — trimmed 2 redundant "model-independent", tightened ESP paragraph
 
 **Scoring summary (10 points):** 1 implemented (≥4.5/5), 9 rejected (<4.5/5).
 
 | # | Point | RCA Score | Action |
 |---|-------|-----------|--------|
-| 1 | β ad-hoc — push theorem to main claim harder | 2.5/5 | Rejected — v51 just did this |
-| 2 | Intro too long — cut 25-30% | 3.5/5 | Rejected — already compressed 21% (v45) |
-| 3 | Repeated disclaimers — consolidate into 1 subsection | 4.2/5 | Rejected — hedges functionally placed; consolidation adds length |
-| 4 | "Just basis reparameterization" — operational intuition earlier | 3.0/5 | Rejected — Lemma 1 + operational invariant already adjacent to Prop 1 (v42/v46) |
+| 1 | β ad-hoc — push theorem to main claim harder | — | → Recurring |
+| 2 | Intro too long — cut 25-30% | — | → Recurring |
+| 3 | Repeated disclaimers — consolidate | 4.2/5 | Rejected — hedges functionally placed |
+| 4 | "Just basis reparameterization" | — | → Recurring |
 | 5 | §3 too dense — split theorem/intuition/scope | 4.0/5 | Rejected — labeled blocks within §3.2 already provide structure |
-| 6 | Novelty vs contextuality unclear — add comparison table | 3.0/5 | Rejected — prose distinction exists (v44); table disproportionate for 5-page paper |
-| 7 | "first" claim dangerous — rephrase with S1 tightly attached | 4.2/5 | Rejected — S1 qualifier in Abstract sentence 1 already bounds scope |
-| 8 | Missing killer figure — Bloch sphere early in paper | 4.0/5 | Rejected — fig ref exists in §3.4; can't create images |
+| 6 | Novelty vs contextuality unclear | — | → Recurring |
+| 7 | "first" claim dangerous | — | → Recurring |
+| 8 | Missing killer figure — Bloch sphere | — | → Recurring |
 | 9 | Stats overkill — move more to supplement | 3.0/5 | Rejected — §6 just compressed 30→13 lines (v51) |
-| 10 | No physical mechanism — add "why overlap is natural operationally" | 3.5/5 | Rejected — context-compatibility concept already in §2.3 (v43) |
+| 10 | No physical mechanism | — | → Recurring |
 | — | **Paper feels defensive** — trim redundant hedges | 4.5/5 | **Implemented** — 2 "model-independent" removed + ESP tightened |
 
 ### Implemented change (v52)
@@ -36,7 +444,7 @@
 **RCA:** 4.5/5. The paper accumulated hedges across 38 versions — each individually justified (C1-C21), but collectively creating a tone of "anticipating reviewer attack." This change removes 2 redundant "model-independent" labels (the underlying facts are stated without the defensive wrapper) and tightens the ESP paragraph to be more direct while preserving the C1 boundary. "Model-independent" still appears 3 times where functional (§1, §5.2 table, §2.3). Net: paper reads as confident rather than preemptively defensive.
 
 ### Regression
-✅ C1–C21 preserved. Δ: C1 ESP + C3 S1 qualifier retained.
+Δ: C1 ESP + C3 S1 qualifier retained.
 
 ---
 
@@ -69,7 +477,7 @@
 | §9: "first experimental window" | "a new experimental window...within surveyed implementations (Supplemental S1)" | Soften + S1-qualify |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C3 S1 extended to §9; C10 refined "minimal operational benchmark".
+Δ: C3 S1 extended to §9; C10 refined "minimal operational benchmark".
 
 ---
 
@@ -97,7 +505,7 @@
 | 4 | §8.1 | "and confirms the cos θ dependence" → "at this previously untested geometry" | Logic error: a null result (δ≈0) excludes the cos θ signal; it cannot simultaneously "confirm" it. The corrected phrasing states the geometric fact (previously untested) without claiming confirmation of the null hypothesis. |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C3 S1 + C9 Abstract structure preserved.
+Δ: C3 S1 + C9 Abstract structure preserved.
 
 ---
 
@@ -113,12 +521,12 @@
 
 | # | Point | RCA Score | Action |
 |---|-------|-----------|--------|
-| 1 | β ad-hoc — derive from toy physical model | 2.5/5 | Rejected — ESP boundary violation (v13); consistently rejected v33/v36/v45 |
-| 2 | Basis rotation objection — add observable immune to unitary | 3.0/5 | Rejected — v42 operational invariant already does this: δ⟨AB⟩_θ invariant under any U on Superobserver alone |
-| 3 | Overlap-only class unmotivated — connect to weak measurement/decoherence | 4.2/5 | Rejected — already 3 weak measurement connections in main text (§2.3 ×2, §5.3 ×1); strengthening returns to v42 state cut as "too speculative" |
-| 4 | Theorem strong but physics weak — "experimental blind spot" language | 3.0/5 | Rejected — "blind spot" deliberately removed v37 (tone); current "structural non-identifiability" (v45) is stronger and non-accusatory |
-| 5 | Paper too long/defensive — cut 20-30% philosophy | 3.5/5 | Rejected — paper already ~650 lines (~5 pages); no large defensive blocks remain after v35/v43/v45 compressions |
-| 6 | "Why should anyone care?" — open with "geometric null point" | 4.5/5 | **Implemented** — "null point" added to §1 ¶2 |
+| 1 | β ad-hoc — derive from toy physical model | — | → Recurring |
+| 2 | Basis rotation objection | — | → Recurring |
+| 3 | Overlap-only class unmotivated | — | → Recurring |
+| 4 | Theorem strong but physics weak — "blind spot" language | 3.0/5 | Rejected — "blind spot" deliberately removed v37 |
+| 5 | Paper too long/defensive — cut 20-30% | — | → Recurring |
+| 6 | "Why should anyone care?" — "geometric null point" | 4.5/5 | **Implemented** — "null point" added to §1 ¶2 |
 
 ### Implemented change (v48)
 
@@ -134,7 +542,6 @@
 | §1 ¶2: "fixed point of every overlap-only deformation" | "geometric null point for every overlap-only deformation" | Narrative hook |
 
 ### Regression
-✅ C1–C21 preserved — one-phrase change.
 
 ---
 
@@ -158,7 +565,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | D | §8 | Renumbered §8.4→§8.3 (Future Directions). Updated 4 cross-references: (§8.4)→(§8.3) in §1, §2.3, §3.1, §5.3. | v35 merged §8.2+§8.3 into "Interpretation and Model Context" but left §8.4 as-is, creating a numbering gap (§8.1, §8.2, §8.4). Looks like an error to reviewers. |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C3 repaired in §9.
+Δ: C3 repaired in §9.
 
 ---
 
@@ -168,13 +575,13 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 
 | # | Point | RCA Score | Action |
 |---|-------|-----------|--------|
-| 1 | Motivation class weak — add symmetry/no-go argument | 4.3/5 | Rejected — constraints (i)-(iii) + Taylor expansion already provide the mathematical structure: every smooth function satisfying them shares leading-order form g(x)∝(1−x) |
-| 2 | Claim overgeneralized — emphasize "within overlap-only class" | 3.5/5 | Rejected — Scope limitation already explicit in §3.2 (v36); C11 terminology established |
-| 3 | Supplemental overloaded with philosophy — cut GPT/interpretation | N/A | Out of scope — supplemental files (S3), not manuscript.md |
-| 4 | Ad-hoc phenomenology — SME/EFT analogy earlier and shorter | 4.0/5 | Rejected — already 2 SME/EFT mentions in §2.3; adding 3rd to §1 is redundant |
-| 5 | Significance aggressive — add conservative estimate | 3.5/5 | Rejected — v40 already uses conservative single-setting β≥0.07 as headline |
-| 6 | Theorem buried — Proposition 1 + Figure even earlier | 2.5/5 | Rejected — v45 already put Proposition 1 on page 1 (¶2); only EWF background precedes it |
-| 7 | Missing killer prediction — θ-sweep cosθ as smoking gun | 3.0/5 | Rejected — violates C20 (v37 corrected "smoking gun"→"distinctive signature") |
+| 1 | Motivation class weak — add symmetry/no-go argument | 4.3/5 | Rejected — constraints (i)-(iii) + Taylor expansion already provide the mathematical structure |
+| 2 | Claim overgeneralized — "within overlap-only class" | — | → Recurring |
+| 3 | Supplemental overloaded with philosophy | N/A | Out of scope — supplemental files (S3) |
+| 4 | Ad-hoc phenomenology — SME/EFT analogy | — | → Recurring |
+| 5 | Significance aggressive — add conservative estimate | — | → Recurring |
+| 6 | Theorem buried — Proposition 1 + Figure even earlier | 2.5/5 | Rejected — v45 already put Proposition 1 on page 1 |
+| 7 | Missing killer prediction — θ-sweep cosθ as smoking gun | 3.0/5 | Rejected — violates C20 |
 | 8 | "Just basis rotation?" — Lemma 1 closer to theorem | 4.6/5 | **Implemented** — Lemma 1 moved from §3.4 to §3.2 |
 
 ### Implemented changes (v46)
@@ -194,7 +601,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §5.3: "(see also Lemma 1, §3.4)" | "(see also Lemma 1, §3.2)" | Cross-ref updated |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C18 Lemma 1 repositioned to §3.2.
+Δ: C18 Lemma 1 repositioned to §3.2.
 
 ---
 
@@ -204,16 +611,16 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 
 | # | Point | RCA Score | Action |
 |---|-------|-----------|--------|
-| 1 | Overclaim — reduce "first", "entire class", "new observable" | 4.0/5 | Rejected — "first" already hedged (v41 S1 qualifier); "entire class" is mathematical fact from theorem; "new observable" not found in manuscript |
-| 2 | Too much hype — cut 25-30% rhetoric | 3.5/5 | Rejected — vague; paper de-hyped across 15+ versions (v29–v44); no specific rhetoric targets identified |
-| 3 | Theorem looks trivial — emphasize structural non-identifiability | 3.0/5 | Rejected — v44 already did this (RCA 4.6/5): "structural, not historical" reframe |
-| 4 | Overlap-only class lacks physical motivation — add toy model | 2.5/5 | Rejected — consistently rejected across v33/v36/v37; ESP boundary violation (v13: "does not claim overlap-dependent deformation exists in nature") |
-| 5 | Experimental claims strong — move σ-results to Supplement | 4.0/5 | Rejected — β≥0.07 at 5σ and 8.6σ LF are the paper's operational claims; moving to supplement guts Claim B |
-| 6 | Intro too long — get to theorem sooner | 4.5/5 | **Implemented** — §1 restructured; theorem reaches Proposition 1 in ¶2 (was ¶4 equivalent in v44) |
-| 7 | "cos θ" repeated too much | 4.2/5 | Rejected — "cos θ" is the mathematical signature; functional repetition (theorem statement, proof, discriminator, θ-sweep) |
-| 8 | "Why not known already?" — add factual historical reason | 4.6/5 | **Implemented** — historical reason embedded in §1 ¶2 |
-| 9 | GPT/contextuality diffuse — cut more from main text | 3.5/5 | Rejected — already minimal (v43 cut 40%); remaining is 2 compact conceptual lines |
-| 10 | Main contribution buried — Proposition 1 on page 1 | 4.7/5 | **Implemented** — Proposition 1 formally stated in §1 ¶2 with Definition + statement + consequence |
+| 1 | Overclaim — reduce "first", "entire class" | — | → Recurring |
+| 2 | Too much hype — cut 25-30% rhetoric | — | → Recurring |
+| 3 | Theorem looks trivial — emphasize structural non-identifiability | — | → Recurring |
+| 4 | Overlap-only class lacks physical motivation — add toy model | — | → Recurring |
+| 5 | Experimental claims strong — move σ-results to Supplement | 4.0/5 | Rejected — β≥0.07 at 5σ and 8.6σ LF are the paper's operational claims |
+| 6 | Intro too long — get to theorem sooner | 4.5/5 | **Implemented** — §1 restructured; Proposition 1 in ¶2 |
+| 7 | "cos θ" repeated too much | 4.2/5 | Rejected — functional repetition |
+| 8 | "Why not known already?" — add historical reason | 4.6/5 | **Implemented** — historical reason in §1 ¶2 |
+| 9 | GPT/contextuality diffuse — cut more from main text | — | → Recurring |
+| 10 | Main contribution buried — Proposition 1 on page 1 | 4.7/5 | **Implemented** — Proposition 1 formally stated in §1 ¶2 |
 
 ### Implemented changes (v45)
 
@@ -232,7 +639,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | Claim A/B labels in §1 | Removed — §3 and §4 headers retain labels; no cross-references broken | De-duplication |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C1+C3 preserved; C8 strengthened (formal Prop 1 in §1).
+Δ: C1+C3 preserved; C8 strengthened (formal Prop 1 in §1).
 
 ---
 
@@ -242,15 +649,15 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 
 | # | Point | RCA Score | Action |
 |---|-------|-----------|--------|
-| 1+10 | Novelty weak + theorem buried — reframe as structural non-identifiability, center theorem | 4.5+4.6/5 | **Implemented** — combined reframe in §1 |
-| 2 | Eq.(2) ad-hoc → emphasize benchmark EFT parametrization | 3.0/5 | Rejected — v30 C10 + v39 "phenomenological" + v38 "lowest-order" = 3 layers already |
-| 3 | "all experiments blind" → "all surveyed optical EWF" | 2.0/5 | Rejected — v38 already applied S1 qualifier to all 5 locations (C3) |
-| 4 | Paper too long → cut 20-30% interpretation/GPT/weak measurement | 3.5/5 | Rejected — §8.2 is 5-line S3 pointer (v35); §2.3 already cut 40% (v43) |
-| 5 | Weak measurement/GPT → push nearly all to Supplemental | 4.2/5 | Rejected — remaining GPT/weak measurement content is 3 compact lines with S3 pointer (v43); further cuts leave overlap-only class with zero theoretical context |
+| 1+10 | Novelty weak + theorem buried — reframe as structural non-identifiability | 4.5+4.6/5 | **Implemented** — combined reframe in §1 |
+| 2 | Eq.(2) ad-hoc → emphasize benchmark EFT parametrization | — | → Recurring |
+| 3 | "all experiments blind" → "all surveyed optical EWF" | — | → Recurring |
+| 4 | Paper too long → cut 20-30% | — | → Recurring |
+| 5 | Weak measurement/GPT → push nearly all to Supplemental | — | → Recurring |
 | 6 | Signal vs ordinary contextuality → add subsection | 4.7/5 | **Implemented** — contextuality distinction added to §3.2 |
-| 7 | "first isolated test" → "to our knowledge, within surveyed literature" | 4.2/5 | Rejected — S1 qualifier already bounds claim scope; "to our knowledge" is redundant epistemic hedging on top of methodological hedge |
-| 8 | Experimental feasibility optimistic → soften to "appears experimentally accessible" | 4.5/5 | **Implemented** — §4.5 softened |
-| 9 | Abstract overloaded → simplify further | 3.5/5 | Rejected — v42 already compressed to 3-sentence 1+1+1 structure with zero jargon |
+| 7 | "first isolated test" → redundant epistemic hedging | — | → Recurring |
+| 8 | Experimental feasibility optimistic → soften | 4.5/5 | **Implemented** — §4.5 softened |
+| 9 | Abstract overloaded → simplify further | 3.5/5 | Rejected — v42 already compressed to 3-sentence 1+1+1 structure |
 | 10 | Center paper around theorem → merged with #1 | — | See #1 |
 
 ### Implemented changes (v44)
@@ -270,7 +677,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §4.5: "yield a complete run...drift are sub-dominant to Poisson uncertainty" | "would require a data-acquisition run of approximately one hour under Bong et al. conditions, assuming source and detector stability over this timescale. Practical feasibility depends on the specific apparatus" | Feasibility softening |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C1+C3 intact; C8 reframed structural; C6 GPT→contextuality link.
+Δ: C1+C3 intact; C8 reframed structural; C6 GPT→contextuality link.
 
 ---
 
@@ -280,15 +687,15 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 
 | # | Point | RCA Score | Action |
 |---|-------|-----------|--------|
-| 1 | "first isolated test" → "to our knowledge, first explicit isolation" | 4.2/5 | Rejected — S1 qualifier (C3) functionally equivalent; redundant hedging |
+| 1 | "first isolated test" → redundant hedging | — | → Recurring |
 | 2 | GPT/weak measurement §2.3 too long/speculative — cut ~40%→S3 | 4.6/5 | **Implemented** — v42 conceptual chain compressed 9→4 lines |
-| 3 | β definition ad hoc → emphasize "phenomenological benchmark parameter" | 3.0/5 | Rejected — v30 C10 + v39 "phenomenological" + v38 "lowest-order" = 3 layers already |
-| 4 | "equatorial cancellation" repeated too much → consolidate | 4.0/5 | Rejected — functional signposting (Abstract/§3/§9), not wasteful echo |
-| 5 | Add Bloch sphere figure showing symmetric vs tilted overlap | 3.5/5 | Rejected — fig ref + description already in §3.5 (v37) |
-| 6 | Systematic fake cosθ — φ-scramble control experiment | 4.6/5 | **Implemented** — added to §7 systematic-error budget |
-| 7 | "All published" → "within surveyed optical EWF" | 2.0/5 | Rejected — already done v38 across all 5 locations (C3) |
-| 8 | §5 too many numbers — move tables to supplement | 4.6/5 | **Implemented** — §5.1 correlator table→S2, key numbers kept in prose |
-| 9 | Lemma 1 triết học wording → operational hơn | 3.0/5 | Rejected — v42 already added operational invariant |
+| 3 | β definition ad hoc | — | → Recurring |
+| 4 | "equatorial cancellation" repeated too much | 4.0/5 | Rejected — functional signposting, not wasteful echo |
+| 5 | Add Bloch sphere figure | — | → Recurring |
+| 6 | Systematic fake cosθ — φ-scramble control experiment | 4.6/5 | **Implemented** — added to §7 |
+| 7 | "All published" → "within surveyed optical EWF" | — | → Recurring |
+| 8 | §5 too many numbers — move tables to supplement | 4.6/5 | **Implemented** — §5.1 correlator table→S2 |
+| 9 | Lemma 1 triết học wording → operational hơn | — | → Recurring |
 | 10 | Abstract overloaded — giảm GPT/contextuality jargon | 2.0/5 | Rejected — v42 abstract already zero GPT/contextuality |
 
 ### Implemented changes (v43)
@@ -308,7 +715,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §5.1 heading: unchanged | unchanged | — |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C6, C10, C12, C17 intact; C17 strengthened (more detail→S3).
+Δ: C6, C10, C12, C17 intact; C17 strengthened (more detail→S3).
 
 ---
 
@@ -342,7 +749,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | Abstract: 14 lines, 5 sentences | 11 lines, 3 sentences (insight → experiment → consequence) | 1+1+1 compression |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C3 (S1 qualifier), C9 (evolved to insight+experiment+consequence), C18 (strengthened with operational invariant).
+Δ: C3 (S1 qualifier), C9 (evolved to insight+experiment+consequence), C18 (strengthened with operational invariant).
 
 ---
 
@@ -352,15 +759,15 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 
 | # | Point | RCA Score | Action |
 |---|-------|-----------|--------|
-| 1 | "Overlap-only class" sounds self-made | 4.2/5 | Rejected — multi-layer defense already: 3 constraints + GPT + EFT + lowest-order |
+| 1 | "Overlap-only class" sounds self-made | — | → Recurring |
 | 2 | "Just a change of basis?" | 4.5/5 | **Implemented** — Lemma 1 forward-ref added to §3.1 |
-| 3 | Repetition of "equator blind spot" | 3.5/5 | Rejected — "blind spot" already removed v37; remaining repetition is functional signposting |
-| 4 | Non-physicist intuition / Bloch figure | 3.0/5 | Rejected — figure ref + physical intuition already in §3.5 (v37) |
-| 5 | "Who scanned θ?" literature review | 3.0/5 | Rejected — S1 survey + table + 5-location S1-tied hedging done v34–v40 |
-| 6 | Sensitivity too optimistic | 4.0/5 | Rejected — conservative β headline (v40) + §6 Bayesian + §7 error budget already |
+| 3 | Repetition of "equator blind spot" | 3.5/5 | Rejected — "blind spot" already removed v37 |
+| 4 | Non-physicist intuition / Bloch figure | — | → Recurring |
+| 5 | "Who scanned θ?" literature review | 3.0/5 | Rejected — S1 survey + table already done v34–v40 |
+| 6 | Sensitivity too optimistic | — | → Recurring |
 | 7 | β too abstract | 4.6/5 | **Implemented** — operational definition added to §2.3 |
-| 8 | Abstract too long | 3.8/5 | Rejected — C9-protected 3-beat structure; ~13 lines appropriate for PRA |
-| 9 | §2.3 too heavy on EFT/GPT jargon | 4.0/5 | Rejected — GPT/weak-measurement already → S3 (v37); remaining is essential |
+| 8 | Abstract too long | 3.8/5 | Rejected — C9-protected 3-beat structure |
+| 9 | §2.3 too heavy on EFT/GPT jargon | — | → Recurring |
 | 10 | "first experimental test" overclaim | 4.5/5 | **Implemented** — "first experimental test" → "first isolated test" |
 
 ### Implemented changes (v41)
@@ -379,7 +786,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §1: "the first experimental test of" | "the first isolated test of" | Precision hedge |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C3 extended (first isolated test), C18 strengthened (Lemma 1 forward-ref from §3.1).
+Δ: C3 extended (first isolated test), C18 strengthened (Lemma 1 forward-ref from §3.1).
 
 ---
 
@@ -389,11 +796,11 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 
 | # | Point | RCA Score | Action |
 |---|-------|-----------|--------|
-| 1 | "Overlooked" → "not previously isolated" | 4.7/5 | **Implemented** — 3 locations (Abstract, §1, §3.6 heading) |
-| 2 | Eq.(2) ad-hoc — further reduce ontological | 4.2/5 | Rejected — v38+v39 already addressed; further cuts risk C17 regression |
+| 1 | "Overlooked" → "not previously isolated" | 4.7/5 | **Implemented** — 3 locations |
+| 2 | Eq.(2) ad-hoc — further reduce ontological | — | → Recurring |
 | 3 | Non-identifiability of whole model class | 4.5/5 | **Implemented** — 1 sentence added to §3.1 |
 | 4 | Conservative β in main text | 4.5/5 | **Implemented** — Abstract, §9, §5.3 restructured |
-| 5 | Length reduction 20-30% | 3.8/5 | Rejected — same as v39; ~639 lines ~5 pages is PRA-appropriate |
+| 5 | Length reduction 20-30% | — | → Recurring |
 
 ### Implemented changes (v40)
 
@@ -415,7 +822,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §5.3: led with β_min ≈ 0.038 combined | led with conservative single-setting β ≥ 0.07 | Structural reorder |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C3, C8, C12, C15, C17 intact; conservative β headline in Abstract.
+Δ: C3, C8, C12, C15, C17 intact; conservative β headline in Abstract.
 
 ---
 
@@ -426,15 +833,15 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | # | Point | RCA Score | Action |
 |---|-------|-----------|--------|
 | 1 | Novelty→structural blindness emphasis | 4.5/5 | **Implemented** — merged with #4 (§1 reframe) |
-| 2 | Eq.(2) ontological→phenomenological | 4.5/5 | **Implemented** — "ontological classification"→"phenomenological classification" |
+| 2 | Eq.(2) ontological→phenomenological | 4.5/5 | **Implemented** |
 | 3 | Survey qualifier everywhere | — | **Already done v38** |
-| 4 | "Experimental consequence overlooked" lede | 4.7/5 | **Implemented** — §1 restructured to lead with overlooked structural assumption |
-| 5 | Length reduction ~3-4 pages | 3.8/5 | Rejected — high regression risk, ~155-line cut |
-| 6 | Killer Bloch sphere figure | 3.5/5 | Rejected — figure ref already in §3.5 (v37) |
-| 7 | θ-sweep smoking gun | 3.5/5 | Rejected — already covered §5.3 discriminator + §8.4 |
-| 8 | Waveplate tolerance simulation | 4.0/5 | Rejected — prose tolerance already in §4.1; detail→S2 |
-| 9 | Remove interpretation/philosophy | 4.2/5 | Rejected — §8.2 already 6-line S3 pointer (v35) |
-| 10 | Rename "Fixed-Point"→"Cancellation" | 4.8/5 | **Implemented** — 6 name occurrences changed; descriptive "fixed point" kept |
+| 4 | "Experimental consequence overlooked" lede | 4.7/5 | **Implemented** — §1 restructured |
+| 5 | Length reduction ~3-4 pages | — | → Recurring |
+| 6 | Killer Bloch sphere figure | — | → Recurring |
+| 7 | θ-sweep smoking gun | 3.5/5 | Rejected — already covered §5.3 + §8.4 |
+| 8 | Waveplate tolerance simulation | 4.0/5 | Rejected — prose tolerance already in §4.1 |
+| 9 | Remove interpretation/philosophy | — | → Recurring |
+| 10 | Rename "Fixed-Point"→"Cancellation" | 4.8/5 | **Implemented** |
 
 ### Implemented changes (v39)
 
@@ -458,7 +865,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §9: "equatorial fixed-point theorem" | "equatorial cancellation theorem" | Rename |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C2 preserved (rename only), C8 reframed (structural consequence), C10+C11 intact.
+Δ: C2 preserved (rename only), C8 reframed (structural consequence), C10+C11 intact.
 
 ---
 
@@ -480,7 +887,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §1: "The full proof is three lines...§2 provides..." | +"The novelty is geometric, not algebraic: an overlooked Bloch-sphere degree of freedom, with a single-waveplate operational consequence." | Framing |
 
 ### Regression
-✅ C1–C21 preserved. Δ: C3 extended to all 5 claim locations; C10 extended with lowest-order justification.
+Δ: C3 extended to all 5 claim locations; C10 extended with lowest-order justification.
 
 ## v37 (2026-05-25) — 10-point review RCA (threshold 4.5/5): EFT-style framing, GPT/weak-measurement→S3, Lemma 1 formalized, survey table, smoking-gun soften, β ecosystem, null-point narrative, analytic θ=31°, statistical robustness methodology, overlap-symmetry fig ref
 
@@ -515,7 +922,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §1: S2/S3 descriptions | Expanded: S2 + robustness, S3 + GPT + weak measurement | Index |
 
 ### Regression
-✅ C1–C21 preserved/extended. Δ: C17 detail→S3; C18 Lemma 1 formalized; C20 corrected v36 overreach.
+Δ: C17 detail→S3; C18 Lemma 1 formalized; C20 corrected v36 overreach.
 
 ---
 
@@ -552,7 +959,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | References: 17 refs | 18 refs (+[18] Aharonov et al. 1988) | Citation |
 
 ### Regression
-✅ C1–C18 preserved. Δ: C6+C7 extended (GPT deepened). Blind-spot wording zeroed.
+Δ: C6+C7 extended (GPT deepened). Blind-spot wording zeroed.
 | **Net** | **~600 lines** | **~603 lines** | **+3 lines** |
 
 ---
@@ -574,7 +981,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §3.5: 23 lines with meta-phrases + redundant sentences | 19 lines, all conceptual content preserved | Tightening |
 
 ### Regression
-✅ C1–C16 preserved. Δ: C7 compressed, content preserved.
+Δ: C7 compressed, content preserved.
 
 ---
 
@@ -601,7 +1008,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §9: "Every published EWF experiment..." | "Within the surveyed literature (Supplemental S1), published EWF implementations..." | S1-tied softening |
 
 ### Regression
-✅ C1–C15 preserved. Δ: C16 NEW (S1-tied softening §9); C3+C14 extended.
+Δ: C16 NEW (S1-tied softening §9); C3+C14 extended.
 
 ---
 
@@ -627,7 +1034,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §9: "constrain a smaller theory space than previously assumed: all published implementations operate..." | "Every published EWF experiment has operated at this fixed point; the overlap-only class has therefore remained structurally invisible to all existing tests" | De-echo |
 
 ### Regression
-✅ C1–C15 preserved. Δ: C7 extended; C13+C14 harmonized (de-echo).
+Δ: C7 extended; C13+C14 harmonized (de-echo).
 
 ---
 
@@ -657,7 +1064,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §9: "any" + one "To our knowledge" | "every" + theory-space constraint + closing sentence, hedge removed | Assertiveness + reframing |
 
 ### Regression
-✅ C1–C15 preserved + C21 NEW. Δ: C7+C9 extended; C13+C14+C15 harmonized.
+Δ: C7+C9 extended; C13+C14+C15 harmonized.
 
 ---
 
@@ -684,7 +1091,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | §8.4 Multi-observer paragraph (5 lines) | 2-line S3 pointer | Speculation → supplement |
 
 ### Regression
-✅ C1–C12 preserved. Δ: C2+C6 repositioned; C7 moved to §3.5.
+Δ: C2+C6 repositioned; C7 moved to §3.5.
 
 ---
 
@@ -708,7 +1115,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | Novelty framing | "appear insensitive" / "structural insensitivity" | "structural experimental blind spot" | Abstract, §3 heading, §3.3 heading, §9 |
 
 ### Regression
-✅ C1–C12 preserved. Δ: C10+C11 NEW (terminology shift); C5 extended.
+Δ: C10+C11 NEW (terminology shift); C5 extended.
 
 ---
 
@@ -728,7 +1135,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | 10 | §10 | **Conclusion focus**: 19 lines → 11 lines. "geometric theorem" → "geometric observation". Removed θ-sweep and cos θ functional dependence (already in §9.4). Two clean paragraphs: result + experiment. | 4.3/5 | Conclusion restated material from §3 and §9.4. Compact conclusion signals paper is tight and complete. |
 
 ### Regression
-✅ C1–C9 preserved. Δ: −54 lines (C9 Abstract 3-beat NEW; C6 GPT bridge compressed).
+Δ: −54 lines (C9 Abstract 3-beat NEW; C6 GPT bridge compressed).
 
 ---
 
@@ -751,7 +1158,7 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | Parametrization | "phenomenological parametrization" | "symmetry-constrained test parametrization" | §2.3 (IS-NOT, Status) |
 
 ### Regression
-✅ C1–C8 preserved. Δ: −3 lines (C7 Physical intuition NEW; C8 Theorem preview NEW).
+Δ: −3 lines (C7 Physical intuition NEW; C8 Theorem preview NEW).
 
 ---
 
@@ -772,7 +1179,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | [17] | J. Barrett, Phys. Rev. A 75, 032304 (2007). — GPT framework for operational quantum foundations. |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
@@ -796,7 +1202,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | S3 | manuscript.md L58-60 | S3 description updated: "quantum interpretations, contextuality comparison, and measurement incompatibility physical picture". |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
@@ -821,7 +1226,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | R2 | "All existing" → "Existing canonical optical EWF implementations" | 3.0/5 |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
@@ -840,7 +1244,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | R2 | Lab availability | 2.0/5 |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
@@ -852,7 +1255,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | 2 | §7.3 | **Bridge sentence** connecting directional argument (“η < 0.91 cannot produce false positives”) to Bell-test precedent: “Analogous to first-generation Bell tests…the present proposal yields scientifically productive results under fair-sampling.” | 4.0/5 | Fragmented exposition: directional argument (v20) and Bell precedent (v15) written in separate rounds, lacked connecting sentence. |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
@@ -869,7 +1271,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | R1 | Supplementals S1-S3 not in file | 2.0/5 |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
@@ -882,7 +1283,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | 3 | §9.2 | **MOVED** MWI + RQM paragraphs → Supplemental S3 reference. 14 lines → 5 lines. "interpretation-neutral by design." | 4.0/5 | Speculative interpretation claims create reviewer attack surface. S3 already exists. |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
@@ -900,7 +1300,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | R3 | Question-format title | 2.5/5 |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
@@ -914,7 +1313,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | 4 | §3.3 | Novelty hedge: "To the best of our knowledge" → "Based on the systematic search documented in Supplemental S1, we find no evidence" | 3.0/5 | Tie claim to methodology, not personal knowledge |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
@@ -928,7 +1326,6 @@ Self-audit round — no user suggestions. Three issues identified and fixed via 
 | 4 | §4.1 | θ=31° trade-off explanation: θ→0° → signal max but LF violation weakens (settings collapse). θ→90° → LF max but signal vanishes. 31° = intermediate balance. Broad plateau means exact optimum not critical. | 4.0/5 | "Tại sao θ=31°?" → physical trade-off, not just numerical optimization |
 
 ### Regression
-✅ Prior constraints preserved.
 
 ---
 
