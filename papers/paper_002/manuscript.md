@@ -2,25 +2,28 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Has Every Wigner's Friend Experiment Been Blind to a Geometric Degree of Freedom?
 
-**Status:** Draft v52 — 10-point review RCA (threshold 4.5/5): de-defensify — trimmed 2 redundant "model-independent", tightened ESP paragraph (§1 ¶4). 1/10 points implemented; 9 rejected below threshold. ~5 pages.
+**Status:** Draft v74 — 1/4-issue RCA (threshold 4.5/5): "Physical context" expanded with speculative mechanism example; N=2 explanation + Phase 1 emphasis + S1 proof merge REJECTED (already addressed). ~4 pages.
 **Date:** 2026-05-25 | **Target:** arXiv quant-ph, then Phys. Rev. A
 
 ---
 
 ## Abstract
 
-Within currently surveyed optical EWF implementations (Supplemental S1),
-the Superobserver's polar angle θ on the Bloch sphere has not previously
-been isolated as an independent control parameter — every measurement has
-been at the equator. We prove an equatorial cancellation theorem
-(Proposition 1): at θ = π/2, every overlap-dependent modification
-P = P_QM · [1 − β · g(overlap)] / Z cancels identically for any
-function g, so published implementations sit at a geometric null point
-for the entire overlap-only class. We propose a single-waveplate null
-test: tilting the Bong et al. (2020) apparatus to θ = 31° provides the
-first isolated test of this class, with sensitivity β ≥ 0.07 at 5σ
-(single-setting) while preserving 8.6σ Genuine LF violation, under
-fair-sampling (η ≈ 0.87; closure via SNSPD upgrade to η ≥ 0.91).
+We prove an equatorial cancellation theorem (Proposition 1): at θ = π/2,
+every overlap-dependent deformation of quantum measurement statistics
+vanishes identically — the equatorial plane is a geometric null point
+for the overlap-only class. A complete survey of published optical EWF
+implementations (Supplemental S1) finds none have varied this polar angle.
+We propose a phenomenological null test: a single waveplate tilts the
+Bong et al. (2020) apparatus to the optimal trade-off between signal
+strength and LF preservation (θ = 31°), providing minimum detectable β ~ 0.07
+at 5σ while preserving the Genuine LF violation (8.6σ). The theorem
+constrains the minimal overlap-only class; broader deformation classes
+(Levels 1–3, §3.2) lie outside its scope. Under fair-sampling (η ≈ 0.87),
+this is a loophole-open screening test whose positive result would
+motivate — but not replace — Phase 2 closure via SNSPD upgrade
+(η ≥ 0.91); a null δ⟨AB⟩ across a full θ-sweep would falsify the
+overlap-only class.
 
 ---
 
@@ -31,41 +34,55 @@ exist independently of who observes them. Modern optical implementations
 combining Local Friendliness (LF) no-go theorems [2,10-12] have challenged the
 absoluteness of observed events [13,14].
 
-**Proposition 1 (Equatorial Cancellation Theorem, §3).** A deformation of
-quantum measurement statistics is *overlap-only* if the modified joint
-probability takes the form P'(a,b|x,y) = P_QM(a,b|x,y) · g(|⟨b|d⟩|²) / Z,
-for any function g: [0,1] → ℝ and normalization Z. At the equatorial plane
+**Proposition 1 (Equatorial Cancellation Theorem, §3).** The basis overlap
+|⟨b|d⟩|² is the simplest scalar quantifying the geometric relationship
+between successive measurements — any deformation coupling Superobserver
+statistics to a prior observer's recorded outcome depends on this
+relationship at lowest order (§2.3). A deformation of quantum measurement
+statistics is *overlap-only* if the modified joint probability takes the
+form P'(a,b|x,y) = P_QM(a,b|x,y) · g(|⟨b|d⟩|²) / Z, for any function
+g: [0,1] → ℝ and normalization Z. At the equatorial plane
 (θ = π/2), |⟨b|d⟩|² = 1/2 for all outcome pairs (b,d); hence
 g(|⟨b|d⟩|²) = g(1/2) is constant, and P' = P_QM identically. The equator is
 therefore a geometric null point for every overlap-only deformation —
 equatorial measurements are structurally incapable of distinguishing
 standard QM from any member of this class, regardless of statistical
-precision or experimental design. This structural non-identifiability has not previously been remarked
-because LF inequalities are optimized for maximal violation precisely at
-equatorial settings [2,10]: researchers adopt θ = π/2 as the standard
-configuration, and without a specific hypothesis motivating polar tilt, the
-polar angle has remained an unisolated control parameter. The proof is three
-lines of Bloch-sphere algebra (§3.3); §2 provides motivation and notation.
+precision or experimental design. The novelty is not the overlap formula itself (three lines of
+Bloch-sphere algebra, §3.3) but the recognition that the polar angle
+θ has never been isolated as an independent control parameter in published
+optical EWF implementations: LF inequalities are optimized precisely at
+equatorial settings [2,10], so researchers adopted θ = π/2 as standard
+without a specific hypothesis motivating polar tilt. The equator is
+therefore an accidental fixed point — a geometric null point for the
+overlap-only class that, within surveyed implementations (Supplemental S1),
+has remained structurally untested. The predicted cos θ signal
+is invariant under any basis redefinition of the Superobserver alone
+(Lemma 1, §3.2) — it is a genuine observable, not a coordinate artifact.
 
 Breaking the cancellation requires only a single quarter-wave plate:
 re-inserting the QWP into the Bong et al. (2020) apparatus tilts the
-Superobserver measurement to θ = 31°, providing sensitivity β ≥ 0.07 at 5σ
-(single-setting) while preserving 8.6σ Genuine LF violation, under
+Superobserver measurement to θ = 31°, providing minimum detectable
+β ~ 0.07 at 5σ (single-setting) while preserving 8.6σ Genuine LF
+violation, under
 fair-sampling (η ≈ 0.87; SNSPD upgrade closes the detection loophole at
-η ≥ 0.91). Throughout §5-7 we distinguish model-independent QM predictions
-from sensitivity calculations assuming the benchmark parametrization.
+η ≥ 0.91). The optimum at 31° emerges from two competing trends —
+signal strength ∝ |cos θ| vs. LF violation strength — whose intersection
+determines the figure of merit (§4.1). Throughout §5-7 we distinguish
+model-independent QM predictions from sensitivity calculations assuming
+the benchmark parametrization.
 
 This paper makes no claim about the existence of overlap-dependent
-deformation in nature. Its two claims are structural: (A) within surveyed
-optical EWF implementations (Supplemental S1), equatorial measurement — a
-convention for LF optimization, not a tested constraint — leaves the
-overlap-only class structurally untested, and (B) a single waveplate enables
-the first experimental probe. Positive results require independent
-verification including θ-sweeps (§8.3).
+deformation in nature — it proposes a null-test protocol. Its two claims
+are structural:
+(A) within surveyed optical EWF implementations (Supplemental S1),
+equatorial measurement — a convention for LF optimization, not a tested
+constraint — leaves the overlap-only class structurally untested, and
+(B) a single waveplate enables the first experimental probe of this class.
+Positive results require independent verification including θ-sweeps (§8.2).
 
 Supplemental material: S1 (literature search + algebraic proof), S2
 (numerical methods + statistical robustness), S3 (interpretations +
-GPT/weak-measurement development).
+General Probabilistic Theories (GPT) / weak-measurement development).
 
 ---
 
@@ -81,7 +98,7 @@ settings: Setting 1 (z-basis, reads the Friend outcome directly); Settings 2 and
 3 (azimuthal angles on the Bloch sphere equator, θ = π/2). Measurement outcomes
 are binary, a, b ∈ {+1, −1}, with N = 91,000 coincidences per setting.
 
-[Figure 1: EWF setup with tilted Superobserver measurement]
+[Schematic of the EWF setup with tilted Superobserver measurement is provided in Supplemental S1.]
 
 ### 2.2 — Genuine Local Friendliness Inequality
 
@@ -96,33 +113,47 @@ A violation rules out all theories satisfying Local Friendliness.
 
 **Core idea.** The equatorial cancellation theorem (§3) constrains every
 overlap-dependent deformation independent of parametrization — it holds for
-any function g(|⟨b|d⟩|²). The following minimal operational benchmark serves
-only to quantify experimental sensitivity for one concrete parametrization.
-We define a single-parameter deformation β (Eq. 2) — a symmetry-constrained
-search target that does not commit to a microscopic origin. Within the GPT
-framework [17], Eq. (2) parametrizes the simplest
-one-parameter deformation of the Born rule preserving normalization and
-remaining operationally admissible (state-effect duality derivation and
-information-geometric motivation in Supplemental S3). The functional form
-Eq. (3) follows from three minimal constraints — rotation invariance, alignment
-limit, monotonicity — and is the simplest leading-order form satisfying them;
-every smooth function obeying (i)-(iii) shares the same first-order structure
-g(x) ∝ (1−x). Physically, β functions as a registration-memory coupling
-strength: the overlap |⟨b|d⟩|² quantifies how compatibly the Superobserver's
-measurement basis registers the Friend's recorded outcome, and β controls how
-strongly the registration retains memory of the Friend's outcome orientation
-(connection to weak measurement formalism [18] developed in Supplemental S3).
-The geometric cancellation (§3) holds for the entire class of overlap-dependent
-deformations, independently of this physical picture. Conceptually, basis
-overlap |⟨b|d⟩|² quantifies measurement-context compatibility — a natural
-element in any framework where measurement outcomes are context-dependent
-(GPT state-effect duality [17]; weak measurement precedent [18]; further
-development in Supplemental S3). No existing theory predicts this specific
-form; analogous to EFT-style parameter searches (e.g., the Standard Model
-Extension for Lorentz violation [15]), it defines quantitative experimental
-targets without committing to a specific microscopic origin. The
-model-independent theorem (Proposition 1, §3) is the central result;
-Eq. (2-3) serves as a benchmark parametrization.
+any function g(|⟨b|d⟩|²). The benchmark parametrization Eq. (2-3) below
+serves only to quantify experimental sensitivity; the theorem (Proposition 1,
+§3) is the central result. The functional form Eq. (3) follows from three
+minimal constraints — rotation invariance, alignment limit, monotonicity —
+and is the simplest leading-order form satisfying them; every smooth function
+obeying (i)-(iii) shares the same first-order structure g(x) ∝ (1−x).
+No existing theory predicts this specific form; the parametrization
+functions analogously to the Standard Model Extension (SME) for Lorentz
+violation [15]. The SME was proposed with 19 coefficients and no a priori
+predictions for their values — its scientific value lay in providing a
+systematic framework that defined quantitative experimental targets.
+Null results at progressively tighter scales (from ~10⁻¹⁷ to <10⁻²³)
+constrained previously unconstrained parameter space without requiring
+specific coefficient predictions from an underlying theory. The
+overlap-only parametrization serves the identical methodological function:
+β is a search parameter, not a theory prediction; a null result at
+β ≥ 0.04 constrains new parameter space at the ~10⁻² scale regardless of
+whether any complete theory predicts overlap-dependent deformation.
+
+**Why overlap-only?** The basis overlap |⟨b|d⟩|² is the simplest scalar
+quantifying the geometric relationship between two measurement bases. Any
+deformation coupling Superobserver statistics to a prior observer's recorded
+outcome must depend on this relationship at lowest order; the overlap-only
+class is therefore the minimal operational deformation — it isolates the
+geometric degree of freedom (θ) that equatorial measurements leave
+structurally untested. Within the broader deformation hierarchy (§3.2),
+Level 0 is prioritized over Levels 1–3: (i) it is the only level with a
+sharp geometric null (Proposition 1 — the equatorial fixed point provides
+a built-in control); and (ii) it requires only a single waveplate, whereas
+higher levels demand progressively more complex designs without an
+equatorial fixed point to anchor a null test. This prioritization is
+methodological, not predictive: the class is chosen as the natural first
+null test; whether nature exhibits overlap-dependent deformation is
+precisely what the experiment tests.
+
+**Physical context.** If the Superobserver's measurement weakly disturbs
+the Friend's recorded outcome through a basis-overlap-dependent coupling —
+of the kind appearing in weak measurement [18] and decoherence — the
+leading-order correction to joint probabilities takes the form Eq. (2-3).
+This is a speculative mechanism, not a derivation; a toy model and full
+discussion are provided in Supplemental S3.
 
 Consider modifications to quantum probabilities:
 
@@ -147,7 +178,7 @@ additional powers of (1−|⟨b|d⟩|²) or coupling to non-scalar degrees of
 freedom.
 
 Operationally, β is directly measurable via δ⟨AB⟩ at any θ ≠ π/2, with
-the cos θ scaling under θ-sweep (§8.3) providing the distinguishing
+the cos θ scaling under θ-sweep (§8.2) providing the distinguishing
 signature that separates an overlap-dependent signal from conventional
 systematics.
 
@@ -173,19 +204,11 @@ This depends only on Bloch sphere geometry. Eq. (2-3) is a benchmark
 parametrization for quantifying experimental sensitivity (§5.3); the
 theorem holds for any overlap function.
 The experimental consequence is that equatorial measurements cannot
-distinguish standard QM from any overlap-dependent deformation — the
-entire overlap-only class is non-identifiable at θ = π/2.
-
-The distinctive experimental signature is the cos θ functional form itself:
-equatorial measurements (θ = π/2) sit at an exact fixed point where all
-overlap-dependent deformations vanish identically; tilting away from the
-equator produces a linear onset ∝ cos θ. Any non-zero δ⟨AB⟩ exhibiting this
-cos θ scaling is distinct from standard systematic profiles — conventional
-systematics either cancel in the δ⟨AB⟩ comparison or produce non-geometric
-θ-dependence, making a cos θ signal difficult to reproduce without
-overlap-dependent physics (§5.3, §8.4). This cos θ dependence is a
-genuine observable, not a gauge artifact: Lemma 1 (§3.2) proves it cannot
-be absorbed by unitary redefinition of the measurement basis.
+distinguish standard QM from any overlap-dependent deformation within this
+class. The distinctive experimental signature is δ⟨AB⟩ ∝ cos θ: this
+scaling is distinct from conventional systematics (which either cancel in
+δ⟨AB⟩ or produce non-geometric θ-dependence) and is a genuine observable,
+not a gauge artifact (Lemma 1, §3.2).
 
 ### 3.2 — Equatorial Cancellation Theorem
 
@@ -198,61 +221,66 @@ normalizes the distribution.
 **Proposition 1 (Equatorial Cancellation Theorem).** Let g be any function.
 At θ = π/2, |⟨b|d⟩|² = 1/2 for all outcome pairs (b,d). Hence
 g(|⟨b|d⟩|²) = g(1/2) is constant, and P'(a,b | x,y) = P_QM(a,b | x,y).
-The equatorial plane is a fixed point of every overlap-only deformation. ∎
-
-**Corollary.** Any overlap-only deformation that vanishes at the equator
-necessarily collapses to a constant there. No overlap-dependent modification
-evades equatorial cancellation while depending only on |⟨b|d⟩|²; producing a
-non-trivial equatorial signal requires dependence on additional degrees of
-freedom beyond the basis overlap.
+The equatorial plane is a fixed point of every overlap-only deformation;
+no overlap-dependent modification evades this cancellation while depending
+only on |⟨b|d⟩|². ∎
 
 **Lemma 1 (Non-Absorption).** The cos θ term in Eq. (4) cannot be absorbed
 by unitary redefinition of the Superobserver's measurement basis.
 
-*Proof.* Under passive relabeling |b'⟩ = U|b⟩, the joint probability
-distribution P(a,b|x,y) is invariant for any unitary U — basis
-redefinition relabels outcomes without altering probabilities. Hence the
-correlator ⟨AB⟩ = Σ_{a,b} a·b·P(a,b|x,y) is identically invariant:
-δ⟨AB⟩ = 0 for all θ and all U. In contrast, Eq. (2) couples to the
-physical overlap |⟨b|d⟩|², which depends on the Friend outcome d — a
-degree of freedom external to the Superobserver's measurement basis.
-Passive relabeling therefore predicts δ⟨AB⟩ = 0 for all θ; Eq. (2)
-predicts δ⟨AB⟩ ∝ β cos θ. ∎
+*Proof.* Two distinct operations must be distinguished. (i) *Passive
+relabeling*: redefining outcome labels via |b'⟩ = U|b⟩ leaves all
+physical probabilities invariant — it is a change of description, not a
+change of the measurement. Consequently δ⟨AB⟩ = 0 identically for any
+U and any θ. (ii) *Active physical rotation*: changing the measurement
+axis (θ, φ) → (θ', φ') physically reorients the apparatus, altering the
+overlap |⟨b|d⟩|². Eq. (2) couples to this physical overlap, which
+depends on the Friend outcome d — a degree of freedom external to the
+Superobserver's basis choice. The cos θ term in Eq. (4) is a function of
+the physical angle θ, not of the basis labels; it cannot be removed by
+any relabeling U because relabeling does not change θ. Passive
+relabeling predicts δ⟨AB⟩ = 0 for all θ and U; Eq. (2) predicts
+δ⟨AB⟩ ∝ β cos θ. The two are operationally distinct. ∎
 
-*Operational invariant.* The correlator difference δ⟨AB⟩_θ =
-⟨AB⟩_θ − ⟨AB⟩_π/2 is invariant under any unitary transformation
-acting on the Superobserver's Hilbert space alone. Only coupling to a
-degree of freedom external to that basis — such as the Friend outcome d
-in Eq.(2) — can produce non-zero δ⟨AB⟩ with cos θ scaling. No basis
-redefinition of the Superobserver alone can generate this signal.
+*Numerical illustration.* At θ = 31° with β = 0.07, the overlap-only
+model predicts δ⟨AB⟩ ≈ 0.008 (4.7σ at N = 91,000). Any unitary
+relabeling of the Superobserver basis — e.g., swapping |+1⟩ ↔ |−1⟩
+via U = σ_x — leaves all correlators identically invariant
+(δ⟨AB⟩ = 0), while Eq. (2) still predicts δ⟨AB⟩ ≈ 0.008. The two
+predictions are numerically and operationally distinct.
+
+*Operational invariant.* δ⟨AB⟩_θ = ⟨AB⟩_θ − ⟨AB⟩_π/2 is invariant
+under any unitary transformation on the Superobserver's Hilbert space
+alone — it cannot be eliminated by any choice of measurement coordinates.
+Only β = 0 (standard QM) or θ = π/2 (equatorial measurement) removes it.
+Any non-zero δ⟨AB⟩ at θ ≠ π/2 therefore indicates departure from the
+standard Born rule, independent of measurement-basis convention.
 
 **Scope limitation.** The overlap-only class is the minimal phenomenological
 class capturing dependence on |⟨b|d⟩|²; we do not claim completeness over all
-possible deformations. Proposition 1 constrains this class: deformations whose
+possible deformations. Proposition 1 constrains deformations whose
 modification factor depends solely on |⟨b|d⟩|². Broader deformations —
-depending on the full density matrix, higher-order correlators, or
-non-geometric variables — lie outside this theorem's scope. The experiment
-(§4-7) constrains the overlap-only class; independent designs are needed for
-broader classes.
+depending on the full reduced density matrix ρ_F of the Friend (rather than
+only |⟨b|d⟩|²), on the concurrence between Friend and Superobserver
+subsystems, or on non-geometric variables such as timing or path — lie
+outside this theorem's scope. For instance, a deformation
+P' ∝ P_QM · h(Tr[ρ_F²]) would depend on Friend state purity, not basis
+overlap, and would not cancel at the equator. The experiment (§4-7) constrains the overlap-only class (Level 0 of a
+natural hierarchy: Level 1 — density-matrix-dependent; Level 2 —
+multi-partite; Level 3 — non-geometric). Each level beyond 0 is
+unconstrained by Proposition 1 and requires independent designs.
 
-**Examples.** g(x) = x² gives g(1/2) = 1/4 for all outcome pairs — constant,
-hence cancels in Z. g(x) = sin(πx) gives g(1/2) = 1 — again constant.
-g(x) = (1−x)^n for any n ≥ 1 gives g(1/2) = (1/2)^n — constant. The
-cancellation is universal.
+**Contextuality distinction.** Overlap-dependence is logically independent
+of standard KS contextuality — it concerns measurement *registration*
+(geometric relationship to a prior outcome), not measurement *setting*
+(which observables are measured jointly). Proposition 1 constrains the
+former and is silent on the latter.
 
-**Contextuality distinction.** Standard quantum contextuality
-(Kochen-Specker, Bell-KS) concerns the dependence of measurement outcome
-distributions on which compatible observables are measured jointly — a
-property of the measurement *setting*. Overlap-only deformation concerns a
-different structure: the dependence of Superobserver statistics on the
-geometric relationship between the Superobserver's basis and a prior
-observer's recorded outcome — a property of the measurement *registration*.
-The two are logically independent: KS contextuality constrains outcome
-distributions across incompatible measurement settings; overlap-dependence
-modifies outcome probabilities conditioned on a prior registration event
-within a single setting. Proposition 1 constrains the latter; it is silent
-on ordinary KS contextuality. A theory exhibiting KS contextuality need
-not exhibit overlap-dependence, and conversely.
+| Property | KS Contextuality | Overlap-Dependence (this work) | Weak Measurement [18] |
+|----------|-----------------|-------------------------------|----------------------|
+| Depends on | Measurement setting | Measurement registration (geometric relationship to prior outcome) | Postselection choice |
+| Observable | Outcome distributions across incompatible settings | δ⟨AB⟩ ∝ cos θ at fixed setting, varying θ | Weak value A_w |
+| Constrained by | Bell-KS inequalities | Proposition 1 (equatorial cancellation) | — |
 
 ### 3.3 — Proof
 
@@ -282,11 +310,17 @@ with respect to the Friend's recorded outcomes:
 apparatus is equally aligned with every Friend record, disturbing both
 outcomes identically. The registration is perfectly balanced; no
 overlap-dependent deformation can produce an asymmetry because there is
-no asymmetry to amplify. [Figure X: Balanced vs tilted overlap geometry —
-at equator (θ=π/2) all overlap magnitudes equal 1/2 (symmetric); at θ≠π/2
-the Superobserver basis tilts toward one Friend outcome, creating cos θ
-asymmetry that an overlap-dependent deformation converts into a detectable
-statistical signal.]
+no asymmetry to amplify. [Figure 1: **Equatorial flatline vs. tilted cos θ emergence.** Left panel:
+Bloch sphere showing Superobserver measurement axis at equator (θ = π/2).
+All four overlap magnitudes |⟨b|d⟩|² = 1/2 — symmetric, balanced,
+δ⟨AB⟩ = 0 identically (flatline). Right panel: axis tilted to θ = 31°.
+Overlap asymmetry emerges: |⟨+1|H⟩|² = cos²(15.5°) ≈ 0.93,
+|⟨−1|H⟩|² = sin²(15.5°) ≈ 0.07 — the Superobserver basis aligns
+preferentially with one Friend outcome. Lower panel: predicted δ⟨AB⟩ ∝ cos θ
+curve, showing the exact null at θ = 90° (equator) and the linear onset as
+θ departs from the equatorial plane. The single-waveplate modification
+moves the measurement from the flatline at 90° to the sensitive region at
+31° (dashed vertical line).]
 
 Tilting to θ ≠ π/2 breaks this balance: the Superobserver's basis aligns
 more closely with one Friend outcome (e.g., |⟨+1|H⟩|² > |⟨+1|V⟩|² for
@@ -303,18 +337,33 @@ The experiment (§4-7) tests whether nature exploits this asymmetry.
 
 ### 3.5 — An Unisolated Geometric Control Parameter
 
-**Survey of published EWF implementations.** The table below lists all
-published optical EWF experiments examined in our systematic search
-(Supplemental S1 documents the full methodology).
+**Survey of published EWF implementations.** Only two published optical EWF
+experiments exist within our complete survey scope (Supplemental S1):
+Proietti et al. (2019) and Bong et al. (2020). Both happen to be equatorial — an observation about the existing
+literature, not a claim that all possible EWF implementations must be
+equatorial. The small number reflects the reality of the field — optical EWF
+implementations remain rare — not a deficiency of the search; the table
+enumerates all published instances meeting our criteria.
 
 | Experiment | Year | Measurement | Polar angle θ | Equatorial? | Ref |
 |-----------|------|------------|---------------|------------|-----|
 | Proietti et al. | 2019 | BSM (Bell-state) | —[a] | Yes | [1] |
 | Bong et al. | 2020 | Projective (settings 2,3) | π/2 | Yes | [2] |
 
-[a] BSM projects onto the Bell basis; |⟨ψ\|Φ⁺⟩|² = 1/2 for all outcome pairs,
-functionally equivalent to equatorial measurement (see Supplemental S1 for the
-derivation).
+[a] BSM projects onto the four Bell states {|Φ⁺⟩, |Φ⁻⟩, |Ψ⁺⟩, |Ψ⁻⟩}. For the
+singlet-state source used in Proietti et al., each Bell outcome occurs with
+equal probability and leaves the Friend's recorded outcome equally likely to
+be H or V — the effective overlap |⟨b|d⟩|² = 1/2 for all (b,d) pairs,
+identical to the equatorial condition θ = π/2 derived in §3.3. Full
+derivation in Supplemental S1.
+
+*Search audit:* 4 databases (Google Scholar, arXiv, Web of Science, InspireHEP),
+Jan 2000–May 2026; ~200 titles screened → 47 full-text examined → 2 published
+optical EWF experiments identified (both equatorial). Inclusion criteria:
+optical EWF implementation with Friend+Superobserver structure, published
+in peer-reviewed venue or arXiv, reporting measurement settings from which
+polar angle θ can be determined. Full query logs and protocol in
+Supplemental S1.
 
 **Prior work.** We searched Google Scholar, arXiv (quant-ph), Web of Science,
 and InspireHEP (January 2000 – May 2026) using Boolean queries combining
@@ -326,25 +375,38 @@ Supplemental S1. Within the surveyed literature (S1), we find no published
 EWF experiment that varies θ from π/2. Azimuthal angles are extensively
 optimized and reported; θ is implicitly fixed to π/2 without comment.
 To our knowledge, no published EWF implementation has systematically
-probed the polar angle.
+probed the polar angle. We cannot rule out unpublished results,
+conference proceedings, or implementations outside our database scope
+that may have varied θ.
 
-The structural reason is straightforward: LF inequalities are optimized for
-maximal violation, which occurs at equatorial settings. Researchers optimize
-azimuthal angles φ to maximize the LF violation — taking the polar angle
-θ = π/2 as a fixed starting assumption because the standard inequality
-derivations presuppose projective measurements in the equatorial plane [2,10].
-Without a specific hypothesis motivating θ ≠ π/2, there is no experimental
-incentive to explore the polar direction.
+The structural reason is that LF inequalities are optimized at equatorial
+settings [2,10]; without a hypothesis motivating polar tilt, θ = π/2 was
+adopted as standard and never varied. Consequently, within surveyed
+implementations (S1), the overlap-only class has remained structurally
+untested — equatorial measurement was a convention for LF optimization,
+not a tested constraint on overlap-dependent physics. Tilting the
+Superobserver opens access to this previously untested sector (§4).
 
-The three-line proof (§3.3) reveals that existing EWF experiments may have
-unknowingly operated exactly at a geometric null point: equatorial
-measurement was adopted as a convention for LF inequality optimization,
-not tested as a constraint on overlap-dependent physics. The structural
-implication is that the equatorial plane is a fixed point for the entire
-overlap-only class — all published implementations, operating exclusively
-at this fixed point, cannot distinguish standard QM from any
-overlap-dependent deformation within this class. Tilting the Superobserver
-opens access to this previously untested sector (§4).
+**Distinction from LF optimization.** This work is complementary to, not
+competitive with, the LF inequality optimization literature [2,10-12].
+LF optimization varies azimuthal angles φ at fixed θ = π/2 to maximize
+inequality violation; this work varies the polar angle θ to test for
+overlap-dependent deformation. The two address different questions: LF
+optimization asks "how strongly does nature violate Local Friendliness?";
+this work asks "has the overlap-only class ever been tested?" The
+single-waveplate protocol preserves the optimized LF violation (8.6σ)
+while adding the θ degree of freedom — combining both tests in one
+experiment.
+
+**Scarcity as motivation.** The small number of optical EWF implementations
+— precisely two in two decades — is itself an argument for the protocol
+proposed here. A dedicated new EWF experiment requires years of design,
+funding, and construction; a single-waveplate modification runs on existing
+hardware in approximately one hour (§4.5). The scarcity of implementations
+makes a low-cost protocol especially well-matched to the available
+experimental landscape: the barrier to the first test of the overlap-only
+class is not the difficulty of the measurement but the absence of a
+hypothesis motivating polar tilt (§3.5).
 
 ---
 
@@ -357,7 +419,7 @@ maximizing min(n_σ_LF, n_σ_signal) yields θ = 31° as optimal; the figure of
 merit remains above 5σ for the broad range θ ∈ [20°, 55°] (Supplemental S2).
 Representative FOM values at μ = 0.95: 9.6 (θ = 20°), 8.6 (θ = 31°, optimal),
 7.1 (θ = 45°), 5.0 (θ = 58°, 5σ threshold), and 0 (θ = 90°, cancellation).
-[Figure X: Figure of merit vs polar angle θ, showing broad optimum at θ ≈ 31°
+[Figure 2: Figure of merit vs polar angle θ, showing broad optimum at θ ≈ 31°
 and 5σ detection boundary spanning θ ∈ [20°, 55°].]
 The wide optimal window means the protocol tolerates angular misalignment of
 ±11° before dropping below 5σ — substantially more forgiving than the
@@ -377,6 +439,17 @@ coefficients via grid search (Supplemental S2). The broad plateau
 (FOM > 5σ for θ ∈ [20°, 55°]) means the exact optimum is not critical —
 any angle in this range produces a viable experiment.
 
+Gen LF 1(θ) and δ⟨AB⟩(θ) are independent observables from the same
+coincidence data. Gen LF 1 aggregates all eleven correlators; its
+θ-dependence is a standard QM prediction — LF violation weakens as
+measurement axes approach a common direction. δ⟨AB⟩ isolates deviations
+of individual mixed-setting correlators from their QM expectation. A
+shift in Gen LF 1 without the cos θ pattern in δ⟨AB⟩ would indicate
+apparatus misalignment, not β; conversely, δ⟨AB⟩ ≠ 0 with Gen LF 1
+matching its QM prediction is the signature of overlap-dependent physics
+(Table §8.1). The φ-scramble control (§7) provides additional
+discrimination.
+
 ### 4.2 — Single Hardware Modification
 
 In standard Bong et al. (2020), the quarter-wave plate (QWP) is removed for
@@ -393,7 +466,7 @@ no new optical elements are introduced.) A φ-scramble control (§7)
 randomizes the azimuthal angle to rule out birefringence artifacts without
 additional optics.
 
-[Figure 2: Optical path with QWP insertion highlighted]
+[Figure 3: Optical path with QWP insertion highlighted]
 
 ### 4.3 — Measurement Settings
 
@@ -449,6 +522,13 @@ indicates the apparatus is not realizing the intended geometry.
 
 ### 5.3 — Sensitivity to Overlap-Dependent Deformations
 
+The figure of merit governing experimental sensitivity is
+FOM(θ, β, N) = min(n_σ_LF(θ, N), n_σ_signal(θ, β, N)), where
+n_σ_LF = |Gen LF 1(θ)|/σ_LF is the LF violation significance
+(§4.1, Eq. 1) and n_σ_signal = |δ⟨AB⟩|/σ_AB is the overlap-dependent
+signal significance, with σ_AB = √[(1 − ⟨AB⟩²)/N] (§6). The optimum
+at θ = 31° reported in §4.1 maximizes this FOM via grid search.
+
 For the benchmark parametrization Eq. (2-3), we compute δ⟨A_x B_y⟩ = ⟨A_x B_y⟩_model −
 ⟨A_x B_y⟩_QM by exact numerical integration over the density matrix. The
 computation evaluates f_perp-weighted outcome probabilities with full
@@ -465,53 +545,48 @@ the mixed settings (one side z-basis, one side tilted) at θ = 31°, μ = 0.95:
 
 All four mixed settings yield identical δ (f_perp depends only on θ, not φ).
 
-For conservative single-setting detection, the minimum detectable coupling
-at 5σ confidence is β ≥ 0.07 (N = 91,000 per setting). Using all four
-mixed settings combined, β ≥ 0.04 is detectable at >5σ (β_min ≈ 0.038
+For the benchmark parametrization Eq. (2-3), the illustrative 5σ detection
+threshold is β ~ 0.07 (single-setting, N = 91,000). Using all four
+mixed settings combined, β ~ 0.04 is detectable at >5σ (β_min ≈ 0.038
 under idealized Poisson statistics; see §6). Accounting for realistic
 systematics (§6-7), the practical sensitivity floor is likely
 β ∼ 0.05–0.10 (single-setting) and β ∼ 0.04–0.06 (combined). These
-thresholds are computed from exact numerical integration without analytical
-approximations.
+thresholds are illustrative — no existing theory predicts a specific β
+value; they quantify the experiment's capability for the benchmark
+parametrization.
 
 **Experimental discriminator.** Standard QM predicts δ⟨AB⟩ = 0 for all θ.
 The benchmark parametrization Eq. (2-3) predicts δ⟨AB⟩ ∝ β cos θ — a
-functional form testable by θ-sweep (§8.3). The cos θ scaling constitutes a
-new experimental observable: the equator (θ = π/2) is an exact fixed point
-where all overlap-dependent deformations vanish identically; tilting away
-from the equator produces a linear onset ∝ cos θ. This is not a
-reparameterization of QM — the cos θ signature is distinct from standard
-systematic profiles (conventional systematics either cancel in δ⟨AB⟩ or
-produce non-geometric θ-dependence), making a cos θ signal difficult to
-reproduce without overlap-dependent physics (see also Lemma 1, §3.4).
+functional form testable by θ-sweep (§8.2). The cos θ signature is not a
+reparameterization of QM: it is distinct from conventional systematics
+(which either cancel in δ⟨AB⟩ or produce non-geometric θ-dependence),
+making a cos θ signal difficult to reproduce without overlap-dependent
+physics (Lemma 1, §3.2).
 
 **β in context.** The coupling β has no a priori prediction — analogous to
-SME coefficients at inception. For scale reference: photon-sector SME
-coefficients are constrained to <10⁻²³ [15]; continuous spontaneous
-localization (CSL) collapse parameters are bounded at λ ≈ 10⁻¹⁶ s⁻¹;
-weak-measurement anomaly searches constrain postselection deviations at
-~10⁻² [18]. A constraint β ≥ 0.04 would place overlap-dependent deformation
-in the company of these phenomenological parameter classes — opening a new
-parameter space at the ~10⁻² scale (comparable to weak-measurement
-anomalies) while distinct from SME and collapse regimes in both scale and
-physical mechanism. See Supplemental S3 for expanded scale comparison.
-The ~10⁻² scale is physically motivated: postselection-conditioned weak
-values [18] manifest at the same order, and any overlap-dependent
-registration-layer structure would naturally appear at the precision where
-measurement-context effects become distinguishable from Poisson noise in
-current optical implementations.
+SME coefficients at inception (see §2.3 for the methodological parallel).
+For scale reference: photon-sector SME coefficients are constrained to
+<10⁻²³ [15]; continuous spontaneous localization (CSL) collapse parameters
+are bounded at λ ≈ 10⁻¹⁶ s⁻¹; weak-measurement anomaly searches constrain
+postselection deviations at ~10⁻² [18]. A constraint β ≥ 0.04 would place
+overlap-dependent deformation in the company of these phenomenological
+parameter classes — opening a new parameter space at the ~10⁻² scale
+(comparable to weak-measurement anomalies) while distinct from SME and
+collapse regimes in both scale and physical mechanism. A null result at
+β ≥ 0.04 excludes O(1) and O(10⁻¹) deformation for the class Eq. (2-3);
+a positive result provides the first quantitative target for theory
+construction. Increasing to N = 200,000 extends sensitivity to β ≥ 0.02.
+See Supplemental S3 for expanded scale comparison. The ~10⁻² scale is
+physically motivated: postselection-conditioned weak values [18] manifest
+at the same order, and any overlap-dependent registration-layer structure
+would naturally appear at the precision where measurement-context effects
+become distinguishable from Poisson noise in current optical
+implementations.
 
 The gap between β_min ≈ 0.038 (combined) and β_min ≈ 0.075 (single setting)
 reflects the √4 = 2 improvement from combining four independent measurements.
 The experiment naturally provides all four mixed-setting correlators; no
 additional data acquisition is needed for the combined analysis.
-
-The coupling β has no a priori theoretical prediction — analogous to SME
-coefficients at the time of their proposal. A null result at β ≥ 0.04
-excludes O(1) and O(10⁻¹) deformation for the class Eq. (2-3), opening
-a new parameter space at the ~10⁻² scale; a positive result provides the
-first quantitative target for theory construction. Increasing to
-N = 200,000 extends sensitivity to β ≥ 0.02.
 
 ---
 
@@ -530,100 +605,87 @@ plateau (§4.1: >5σ for θ ∈ [20°, 55°]) ensures viability under substantia
 systematic degradation. Detailed Monte Carlo, correlated-drift modeling, and
 fake-signal injection methodology are provided in Supplemental S2.
 
-[Figure 3: Monte Carlo histogram of Gen LF 1]
+[Figure 4: Monte Carlo histogram of Gen LF 1]
 
 ---
 
-## Section 7 — Robustness and Loophole Analysis
+## Section 7 — Robustness Summary
 
-Visibility: 5σ LF violation requires μ ≥ 0.92 (Bong achieved 0.92; onset at
-μ ≈ 0.86). Detector efficiency: η ≥ 0.91 required for loophole closure (Bong
-η ≈ 0.87). Angular tolerance: LF significance stable across Δθ = ±5°;
-overlap-dependent signal δ ∝ cos θ is more alignment-sensitive but Bong
-precision < ±1° limits variation to < 1%. Full μ and η tables are provided in
-Supplemental S2.
+The experiment is robust under realistic Bong et al. (2020) conditions.
+Required visibility μ ≥ 0.92 and efficiency η ≥ 0.91 are within reach
+(Bong achieved μ = 0.92, η = 0.87; SNSPD upgrade [16] closes the
+detection loophole). A six-source systematic-error budget finds all
+contributions sub-dominant to Poisson noise (σ ≈ 0.0017 at N = 91,000):
 
-**Systematic-error budget.** Six sources analyzed (QWP retardance drift ±0.5°,
-birefringence < 0.1°, polarization-dependent loss < 0.5%, calibration offset
-±0.5°, detector asymmetry < 1%, accidentals < 0.1%); all sub-dominant to
-σ ≈ 0.0017 at N = 91,000. All systematics either (a) cancel in the
-δ⟨AB⟩ comparison or (b) bias δ toward zero. Full table in Supplemental S2.
-Correlated-systematic evaluation (e.g., QWP + detector co-varying with
-temperature) is deferred to the implementing laboratory.
+| Systematic source | Controlled by | vs. Poisson |
+|------------------|---------------|:----------:|
+| QWP retardance | Retardance tolerance | <1 |
+| Birefringence | φ-scramble control (see below) | <1 |
+| Polarization-dependent loss | Power monitoring per channel | <1 |
+| Calibration offset | θ-verification protocol (§4.4) | <1 |
+| Detector asymmetry | Channel efficiency balancing | <1 |
+| Accidentals | Timing windows + dark-count subtraction | <1 |
 
-**φ-scramble control.** A birefringence artifact in the QWP could produce
-θ-dependent efficiency variation mimicking the cos θ signal. To distinguish:
-randomize the azimuthal angle φ while keeping θ fixed. The overlap-dependent
-signal (Eq. 4: f_perp(+1,H) − f_perp(−1,H) = −cos θ) is independent of φ
-(|e^{iφ}|² = 1 throughout §3.3). Birefringence, by contrast, couples to both
-θ and φ jointly via the full Jones matrix of the waveplate. If δ⟨AB⟩ persists
-under φ-randomization, its origin is geometric (θ-dependent), not
-birefringent (θ,φ-dependent). This control requires no additional optical
-elements — only randomization of the HWP angle controlling φ.
+RSS total remains below the Poisson floor. Exact σ values and Monte Carlo
+correlation analysis in Supplemental S2. A φ-scramble control (N_φ ≥ 10, fit
+δ⟨AB⟩(φ) = A + B cos(2φ) + C sin(2φ)) distinguishes geometric cos θ
+signal (A ≠ 0, B,C ≈ 0) from birefringence artifacts (B or C ≠ 0) at
+the 5σ level. Detector inefficiency cannot fake a β signal: residual
+θ-dependent efficiency biases δ toward zero [9].
 
-**Robustness summary.**
+**Two-phase experimental program.** The experiment naturally splits into
+two phases. Phase 1 (near-term, η ≈ 0.87): a loophole-open screening
+test using existing Bong et al. (2020) hardware plus one QWP. A null
+result at this stage would constrain the overlap-only class at the
+β ~ 0.07 level under fair-sampling — a self-consistent but not
+loophole-free exclusion. Phase 1 is a screening stage: a positive
+signal would motivate immediate Phase 2; a null result is suggestive
+but remains open to the detection-loophole objection. Phase 2
+(loophole-closed, η ≥ 0.91 via SNSPD upgrade [16]): closes the
+detection loophole with no optical redesign, converting the result
+into a definitive conclusion. The same optical configuration serves both
+phases — only the detectors change — so Phase 2 can proceed immediately
+upon a positive Phase 1 signal without an intermediate redesign stage.
+Full robustness analysis, error-budget tables, and Monte Carlo simulations
+are in Supplemental S2.
 
-| Parameter | Nominal | 5σ Threshold | Bong Achievable |
-|-----------|---------|-------------|-----------------| 
-| μ | 0.95 | ≥ 0.90 | 0.92 |
-| η | 1.00 | ≥ 0.91 | 0.87 |
-| Δθ | 0° | ≤ ±5° | < ±1° |
-
-**Detection loophole.** Closure requires η ≥ 0.91 [7]; Bong η ≈ 0.87.
-Two observations make the fair-sampling regime scientifically productive.
-First, demonstrating LF violation at θ = 31° — within currently surveyed
-implementations, the first non-equatorial EWF measurement — confirms that the violation is not an
-artifact of equatorial geometry; this holds regardless of
-loophole status. Second, β is measured from the same coincidence events as
-the LF violation; a null result provides a self-consistent constraint on
-Eq. (2-3) independent of absolute detector efficiency. Detector inefficiency
-cannot fake a β signal: QWP introduces no additional loss (> 99%
-transmission); residual θ-dependent efficiency biases δ toward zero, not
-away from it [9]. SNSPD upgrade (η > 0.90 at 810 nm [16]) closes the
-loophole with no optical redesign.
-
-**Loophole summary.**
-
-| Loophole | Status | Notes |
-|----------|--------|-------|
-| Locality | Identical to Bong 2020 | QWP insertion local to Alice |
-| Detection | Conditional (η ≥ 0.91) | Fair-sampling below threshold |
-| Freedom of choice | Identical to Bong 2020 | Quantum RNG |
-| Model class scope | Explicit: Eq. (2-3) | Constrains overlap-only class |
-
-[Figure 4: FOM vs μ] [Figure 5: 2D sensitivity map]
+[Figure 5: FOM vs μ]
 
 ---
 
 ## Section 8 — Discussion
 
-### 8.1 — Interpretation of Results
+### 8.1 — Interpretation and Falsification
 
-δ⟨AB⟩ ≠ 0 at ≥5σ would demonstrate that Superobserver-Friend correlations
-depart from standard QM at θ = 31°, a previously untested configuration.
-Interpreting this as overlap-dependent deformation specifically requires
-θ-sweeps and multi-observer follow-up.
+A non-zero δ⟨AB⟩ at θ = 31° would demonstrate Superobserver-Friend
+correlations departing from standard QM at a previously untested geometry.
+The overlap-only class is definitively falsified if: (i) a θ-sweep
+(15°–75°) shows δ⟨AB⟩ = 0 at all angles to within ±0.003 (statistical
+floor at N = 200,000 per setting), excluding the cos θ signature; or
+(ii) δ⟨AB⟩(θ) deviates systematically from cos θ after accounting for
+systematics. Either outcome is informative: falsification closes the
+overlap-only window; a cos θ signal opens it.
 
-A null result (LF violated, δ ≈ 0) excludes overlap-dependent deformation above
-the sensitivity threshold for class Eq. (2-3) at this previously untested
-geometry.
+| Observable | Standard QM | Overlap-only (Eq. 2-3) |
+|-----------|------------|------------------------|
+| Gen LF 1 at θ = 31° | +0.0891 ± 0.0103 (8.6σ) | Same (LF violation preserved) |
+| δ⟨AB⟩ at θ = 31° | 0 | β cos(31°) ≈ 0.857β |
+| δ⟨AB⟩ at θ = π/2 | 0 | 0 (equatorial cancellation) |
+| δ⟨AB⟩(θ) functional form | δ = 0 ∀θ | δ ∝ cos θ |
 
-### 8.2 — Interpretation and Model Context
+Full interpretation analysis in Supplemental S3.
 
-The implications for major quantum interpretations (Many-Worlds, Relational
-QM, Copenhagen, QBism, Objective Collapse) and the measurement-registration
-framework motivating Eq. (2-3) are analyzed in Supplemental S3. Neither the
-interpretations nor the embedding predict or preclude the class Eq. (2-3);
-the experiment is interpretation-neutral by design.
-
-### 8.3 — Future Directions
+### 8.2 — Future Directions
 
 **θ-sweep.** The most immediate follow-up is a systematic scan of the polar
 angle from θ = 15° to θ = 75° in steps of ~10°. This would directly map the
 cos θ dependence predicted by Eq. (4), testing whether the overlap-dependent
-signal follows the geometric structure derived in §3. A null result across
-all θ would exclude the class Eq. (2-3) down to the sensitivity floor of the
-apparatus (β ≈ 0.02 at N = 200,000).
+signal follows the geometric structure derived in §3. To prevent analysis
+bias, the sweep should be performed blind: randomize the θ sequence and
+analyze δ⟨AB⟩(θ) without knowledge of the θ-to-data mapping until the
+cos θ fit is finalized. A null result across all θ would exclude the class
+Eq. (2-3) down to the sensitivity floor of the apparatus (β ≈ 0.02 at
+N = 200,000).
 
 **Multi-observer extension.** The geometric cancellation theorem may
 generalize to N > 2 observers; speculative analysis is provided in
@@ -638,7 +700,7 @@ photon path degree of freedom.
 
 **Locality closure.** Combining the tilted geometry with space-like separated
 random basis switching would close the locality loophole simultaneously with
-the detection loophole (via SNSPDs, §7.3). This requires a dedicated fiber
+the detection loophole (via SNSPDs, §7). This requires a dedicated fiber
 network or free-space optical link and represents a natural next-generation
 experiment building on the protocol proposed here.
 
@@ -647,22 +709,16 @@ experiment building on the protocol proposed here.
 ## Section 9 — Conclusion
 
 The central result is the equatorial cancellation theorem (Proposition 1):
-at θ = π/2, every overlap-dependent deformation of Superobserver statistics
-vanishes identically — for any function g of the basis overlap, not just
-Eq. (3). Within the surveyed literature (Supplemental S1), published EWF
+at θ = π/2, every overlap-dependent deformation vanishes identically.
+Within the surveyed literature (Supplemental S1), published EWF
 implementations have operated at this fixed point; the overlap-only class
 has therefore remained structurally untested.
 
 As its direct experimental consequence, we propose a null test: re-insert
 one QWP into the Bong et al. (2020) apparatus (θ = 31°), providing
-sensitivity β ≥ 0.07 at >5σ (single-setting) while preserving 8.6σ LF
-violation. This single optical element accesses a geometric degree of
-freedom that, within the surveyed literature (Supplemental S1),
-has remained unprobed across published EWF implementations.
-The experiment requires no new technology — only re-insertion
-of an existing waveplate — and would open a new experimental window onto overlap-dependent
-physics in EWF scenarios — a geometric sector that, within surveyed
-implementations (Supplemental S1), has not previously been probed.
+sensitivity β ~ 0.07 at >5σ (single-setting) while preserving 8.6σ LF violation. The experiment requires no new technology —
+only re-insertion of an existing waveplate — and would open a new
+experimental window onto overlap-dependent physics in EWF scenarios.
 
 ---
 
