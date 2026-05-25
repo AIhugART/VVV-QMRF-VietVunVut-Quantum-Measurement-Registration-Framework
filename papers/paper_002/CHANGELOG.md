@@ -5,6 +5,90 @@
 
 ---
 
+## v26 (2026-05-25) — 8-issue RCA: POVM bridge, non-absorption proof, naturalness, stats, S3 move, theorem-first
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | §2.3 | **POVM/operational bridge**: 6-line "Operational framing" paragraph connecting Eq.(2) to minimal symmetry parametrization of POVM statistics. Emphasizes constraints (i)-(iii) → simplest Born-rule deformation. No theory commitment. | 4.3/5 | "Why THIS modification?" — connects to generalized measurement theory without committing to reconstruction program. |
+| 2 | Abstract, §3.3 | **Novelty softening**: Abstract "property" → "insensitivity". §3.3 L262-264: "no EWF experiment has been performed at θ ≠ π/2 for any purpose" → "we are unaware of any EWF experiment performed at θ ≠ π/2". Softens absolute negative while preserving S1-backed methodology. | 4.0/5 | "No prior work identified θ" too strong → soften without regressing v19 systematic-search hedge. |
+| 3 | §5.4 (NEW) | **Non-absorption proof**: 3-point argument why Eq.(2) cannot be absorbed into measurement redefinition: (a) unitary preserves trace → δ=0, (b) outcome-pair asymmetry absent from symmetric POVM, (c) θ-sweep empirical discriminator. | 4.4/5 | "This is just adding a bias term" → formal proof it's not gauge-away-able. |
+| 4 | §5.3 | **Scale context/naturalness**: 5-line paragraph. Null result at β ≥ 0.04 excludes O(1)/O(10⁻¹). SME comparison (10⁻²³ after decades). First β constraint at ~10⁻² = new parameter space opening. N=200k extends to β ≥ 0.02. | 4.2/5 | β free parameter without natural scale → frame as discovery-phase constraint + scale comparison. |
+| 5 | §6, §7.3 | **Statistical robustness**: (a) 10-line "Statistical model limitations" paragraph in §6: Poisson idealization, recommend bootstrap + detector-drift sim. (b) 5-line correlated-systematic note in §7.3: QWP+detector co-variance unmodeled, recommend time-stamped auxiliary data. | 4.0/5 | Sigma estimates "too clean" → acknowledge model limitations + recommend implementing-lab validation. |
+| 6 | §2.3 → S3 | **Defense text → supplement**: Moved 25-line contextuality comparison + physical picture from §2.3 to new S3_interpretations.md. Replaced with 10-line compact reference. Net: −15 lines from main text. | 4.1/5 | Paper too long for PRA → move interpretation/philosophy to supplement, keep theorem centerpiece. |
+| 7 | Abstract | **Null-test framing**: "structural property" → "structural insensitivity". Aligns abstract with null-test pitch throughout paper. | 4.0/5 | "Foundations speculation" rejection risk → pitch as geometric null test, not new physics of observers. |
+| 8 | §3.1 | **Theorem emphasis**: "3.1 — Statement" → "3.1 — Main Result". Combined with Issue 6 compression, theorem becomes visual centerpiece. | 4.2/5 | Theorem buried under phenomenology → theorem-first narrative. |
+
+### Supplemental changes
+| # | File | Change |
+|---|------|--------|
+| S3 | S3_interpretations.md (NEW) | Proper S3 with 4 sections: contextuality comparison (from §2.3), physical picture (from §2.3), quantum interpretations (5 frameworks), multi-observer extension. |
+| S3 | manuscript.md L58-60 | S3 description updated: "quantum interpretations, contextuality comparison, and measurement incompatibility physical picture". |
+
+### Rejected changes (below threshold)
+None — all 8 issues scored ≥ 4.0/5.
+
+### Regression check
+- v13 ESP boundary (L52-56): PRESERVED — "This paper does not claim..." unchanged
+- v14 SME precedent (L154-166): PRESERVED — full SME paragraph + Fermi/EFT precedent untouched
+- v15 VVV-QMRF removal: PRESERVED — no re-addition
+- v16 S1 search audit + θ-sensitivity FOM: PRESERVED — main text pipeline summary + FOM values untouched
+- v17 constraints "not exhaustive" (L126) + β meaning (L388-395): PRESERVED
+- v18 ontological IS-NOT (L132-141) + null test (L175-181): PRESERVED — IS-NOT kept in main text; contextuality detail moved to S3 (extends, does not delete)
+- v19 physical intuition + novelty hedge: PRESERVED — hedge strengthened (softer language, same S1 link); physical picture moved to S3 (preserved, not deleted)
+- v20 class-representative framing (L93, L111, L120): PRESERVED
+- v21 μ-threshold + honest abstract + §9.2→S3: PRESERVED — abstract still discloses fair-sampling
+- v22 intuitive gloss (L41-44) + structural blind-spot explanation (L258-264): PRESERVED — gloss untouched; blind-spot explanation softened (Issue 2) but content preserved
+- v23 generality examples (L221-224) + loophole bridge: PRESERVED
+- v24 §2.3 succinct opening (L89-96) + search pipeline (L240-243) + temperature (L301-302): PRESERVED
+- v25 tone softening + contextuality § + systematic table + discriminator + abstract: contextuality § compressed (Issue 6) but content preserved in S3; all other v25 changes preserved
+
+---
+
+## v25 (2026-05-25) — 12-point review RCA: tone, contextuality, systematics, discriminator
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | Abstract, §1, §3.3, §10 | **Tone softening**: "geometric blind spot" → "structural insensitivity" (4 instances). "first test" → "targeted test". "opens a new axis" → "accesses a previously unprobed geometric degree of freedom". §3.3 heading renamed. | 4.3/5 | Reviewer foundations dị ứng strong marketing wording. Inconsistent softening across sections after v22 only touched §1/§3.3. |
+| 2 | Abstract | **A/B distinction**: explicit "Claim A (model-independent theorem)" / "Claim B (null test)" labels in abstract. Mirrors §1 L38-53 structure. | 4.1/5 | Abstract mixed model-independent and assumption-dependent claims without distinction. |
+| 3 | §2.3 | **Contextuality comparison**: 13-line paragraph distinguishing Eq.(2) from (a) Kochen-Specker contextuality (no hidden λ), (b) retrocausality, (c) standard measurement contextuality. Dependence is on registration geometry, not measurement context. | 4.2/5 | Reviewer certain to ask "how is this different from contextuality?" v18 IS-NOT paragraph says what Eq.(2) is NOT, but never names Kochen-Specker explicitly. |
+| 4 | §3.3 | **Novelty softening**: "To date, no EWF experiment" → "Within the literature surveyed (Supplemental S1), no EWF experiment". Ties claim to methodology. | 4.0/5 | v17 absolute statement ("no EWF experiment has been performed... for any purpose") maximally vulnerable. v19 hedge one paragraph above insufficient. |
+| 5 | §5.3 | **Explicit discriminator**: "Standard QM predicts δ⟨AB⟩ = 0 for all θ. Model class predicts δ⟨AB⟩ ∝ β cos θ." Crisp mathematical statement + "not a reparameterization" defense. | 4.5/5 | "Is this genuinely beyond QM?" — discriminator described in prose but never as a displayed statement. |
+| 6 | §7.3 (NEW) | **Systematic-error budget table**: 6 sources (QWP drift, birefringence, polarization-dependent loss, calibration offset, detector asymmetry, accidentals). All sub-dominant to σ ≈ 0.0017. Directional argument: all bias δ toward zero, not away. | 4.4/5 | Experimental reviewer will demand consolidated error budget. Individual systematics addressed in v18/v20/v24 but never tabulated. |
+| 7 | §10 | **Conclusion reframed**: null-test framing lead. θ-sweep reference added. "Fix:" imperative removed. "A single waveplate opens a new axis" → "accesses a previously unprobed geometric degree of freedom." | 4.0/5 | §10 did not mirror §2.3 null-test framing (v18). |
+| 8 | Abstract | **Slimmed**: 15 lines → 12 lines. Removed β ≥ 0.07, μ ≥ 0.92, Δθ ≤ ±5° (moved to body). Kept 8.6σ, β ≥ 0.04, θ = 31°, fair-sampling. | 4.0/5 | 7 numbers in abstract overwhelms first-time reader. |
+| 9 | Abstract | **"All existing" → "All published"**: minimal defensive qualifier. | 3.5/5 | Below threshold but costless and ties to S1 audit scope. |
+| 10 | §10 | **θ-sweep emphasis**: 1 sentence referencing cos θ functional dependence and θ ∈ [20°, 55°] range (§9.4). | 3.8/5 | Below threshold but user explicitly flagged. Added in §10 only (abstract already dense). |
+
+### Rejected changes (below threshold)
+| # | Review Point | RCA Score | Reason |
+|---|-------------|-----------|--------|
+| R1 | Dedicated "Why THIS parametrization?" subsection | 2.5/5 | **6 prior defense layers** (v14 SME, v17 constraint scope, v18 IS-NOT, v19 intuition, v20 class-representative, v24 succinct opening). New subsection would duplicate ~40 lines and risk v13 ESP boundary regression. |
+| R2 | "All existing" → "Existing canonical optical EWF implementations" (full qualifier) | 3.0/5 | S1 audit comprehensively covers all known implementations including non-optical proposals. Over-qualifying weakens the claim without adding information. Abstract changed to "All published" as minimal defense. |
+
+### Regression check
+All prior-version defenses preserved (v13–v24). Full cross-version trace in v26 regression check.
+
+---
+
+## v24 (2026-05-25) — §2.3 succinct opening + search pipeline + temperature detail
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | §2.3 | **Executive summary** at top of §2.3: "Core idea" paragraph front-loading the answer to "why this class?" — parametrize via β, form follows from 3 physical constraints (rotation invariance, alignment limit, monotonicity), simplest representative, no theory predicts it, SME-analogous parametric test. | 4.2/5 | §2.3 buried the lede: meta-commentary ("Before presenting the theorem…") before substance. Reviewer asks "why this class?" and has to read 20 lines. Fix: answer in 2 sentences, then elaborate. |
+| 2 | §3.3 | **Screening pipeline** in main text: "title/abstract filtering → full-text examination of 47 candidate documents → targeted follow-up on citing/cited works." Bridges gap between "~200 screened" and full S1 audit. | 4.0/5 | "~200 papers is small" — reviewer can't assess coverage without seeing methodology. Main text showed *what* was searched but not *how*. Fix: summarize pipeline stages. |
+| 3 | §4.2 | **Temperature insensitivity**: "retardance temperature coefficient ~0.01 nm/°C; lab ΔT ±2°C → ~0.02 nm drift, well within ±2 nm tolerance." | 4.0/5 | Standard experimental parameter missing. Preempts reviewer question about thermal effects on retardance. |
+
+### Rejected changes (below threshold)
+| # | Review Point | RCA Score | Reason |
+|---|-------------|-----------|--------|
+| R1 | QWP position detail | 2.5/5 | **Already specified** at L279-284 (v18): "before the PBS, after beam displacer BD2" with fast-axis orientation and retardance tolerance. Restructuring paragraph for emphasis is marginal. |
+| R2 | Lab availability ("who can do this soonest?") | 2.0/5 | **External coordination**, not text edit. Paper references Bong et al. (2020) apparatus extensively — any group with that setup can implement. Naming labs could date the paper. |
+
+### Regression check
+All prior-version defenses preserved (v13–v23). Full cross-version trace in v26 regression check.
+
+---
+
 ## v23 (2026-05-25) — Generality examples + loophole bridge sentence
 
 | # | Section | Change | RCA Score | Rationale |
@@ -18,16 +102,7 @@
 | R1 | Theoretical motivation for Eq.(2) in RQM or other interpretation (§9.2/S3) | 2.0/5 | **Quadruple regression** (v13 ESP + v17 β-meaning + v18 ontological IS-NOT + v21 S3 move). Already rejected v21-R1 at 2.0/5 with identical rationale. Existing defenses (SME precedent L150-162, null test L164-170, S3 analysis) are stronger because they don’t commit to any theoretical origin. |
 
 ### Regression check
-- v13 ESP boundary: PRESERVED (L55-59)
-- v14 SME precedent: PRESERVED (L150-162)
-- v15 VVV-QMRF removal: PRESERVED
-- v16 S1 search audit + θ-sensitivity FOM: PRESERVED
-- v17 constraints “not exhaustive” + β meaning: PRESERVED
-- v18 ontological IS-NOT + null test: PRESERVED
-- v19 physical intuition + novelty hedge: PRESERVED (L233-234)
-- v20 class-representative framing + η-direction analysis: PRESERVED
-- v21 μ-threshold + honest abstract + §9.2→S3: PRESERVED
-- v22 intuitive gloss + structural blind-spot: PRESERVED (L240-246)
+All prior-version defenses preserved (v13–v22). Full cross-version trace in v26 regression check.
 
 ---
 
@@ -45,15 +120,7 @@
 | R2 | β ad hoc / SME has string theory basis | 2.0/5 | Reviewer's SME claim **factually incorrect** (1997 SME had no string theory). Already corrected at L150-153 (v14/v16). 5 defense layers (v14-v18). |
 
 ### Regression check
-- v13 ESP boundary: PRESERVED (L55-59)
-- v14 SME precedent: PRESERVED (L150-162)
-- v15 VVV-QMRF removal: PRESERVED
-- v16 S1 search audit + θ-sensitivity FOM: PRESERVED
-- v17 constraints "not exhaustive" + β meaning: PRESERVED
-- v18 ontological IS-NOT + null test: PRESERVED
-- v19 physical intuition + novelty hedge: PRESERVED (L233-234)
-- v20 class-representative framing + η-direction analysis: PRESERVED
-- v21 μ-threshold + honest abstract + §9.2→S3: PRESERVED
+All prior-version defenses preserved (v13–v21). Full cross-version trace in v26 regression check.
 
 ---
 
@@ -72,14 +139,7 @@
 | R2 | Literature novelty hedging → "To the best of our knowledge" | 1.5/5 | Would **regress** v19 fix #4. Current "Based on systematic search…S1" is strictly better. |
 
 ### Regression check
-- v13 ESP boundary: PRESERVED (L52-56)
-- v14 SME precedent: PRESERVED (L147-158)
-- v15 VVV-QMRF removal: PRESERVED
-- v16 S1 search audit + θ-sensitivity FOM: PRESERVED
-- v17 constraints "not exhaustive" + β meaning: PRESERVED
-- v18 ontological IS-NOT + null test: PRESERVED
-- v19 physical intuition + novelty hedge: PRESERVED (L230-231)
-- v20 class-representative framing + η-direction analysis: PRESERVED
+All prior-version defenses preserved (v13–v20). Full cross-version trace in v26 regression check.
 
 ---
 
@@ -98,12 +158,7 @@
 | R3 | Question-format title | 2.5/5 | Low risk. Backup title prepared if PRA editor objects. |
 
 ### Regression check
-- v14 SME precedent: PRESERVED
-- v15 VVV-QMRF removal: PRESERVED (no re-addition)
-- v16 S1 search audit + θ-sensitivity FOM: PRESERVED
-- v17 constraint scope ("not exhaustive") + 2-observation loophole + β meaning: PRESERVED
-- v18 ontological classification + null test framing + θ trade-off: PRESERVED
-- v19 physical intuition paragraph + compressed (i-iii) + novelty hedge: PRESERVED
+All prior-version defenses preserved (v14–v19). Full cross-version trace in v26 regression check.
 
 ---
 
@@ -117,11 +172,7 @@
 | 4 | §3.3 | Novelty hedge: "To the best of our knowledge" → "Based on the systematic search documented in Supplemental S1, we find no evidence" | 3.0/5 | Tie claim to methodology, not personal knowledge |
 
 ### Regression check
-- v14 SME precedent: PRESERVED
-- v15 VVV-QMRF removal: PRESERVED
-- v16 θ-sensitivity + proposal framing: PRESERVED
-- v17 constraint scope + 2-observation loophole + β meaning: PRESERVED
-- v18 ontological classification + null test + optical hardware + θ trade-off: PRESERVED
+All prior-version defenses preserved (v14–v18). Full cross-version trace in v26 regression check.
 
 ---
 
@@ -135,12 +186,7 @@
 | 4 | §4.1 | θ=31° trade-off explanation: θ→0° → signal max but LF violation weakens (settings collapse). θ→90° → LF max but signal vanishes. 31° = intermediate balance. Broad plateau means exact optimum not critical. | 4.0/5 | "Tại sao θ=31°?" → physical trade-off, not just numerical optimization |
 
 ### Regression check
-- v14 SME precedent: PRESERVED
-- v15 VVV-QMRF removal: PRESERVED (no re-addition)
-- v16 θ-sensitivity data: PRESERVED
-- v17 constraint scope limitation: PRESERVED
-- v17 2-observation loophole defense: PRESERVED
-- v17 β physical meaning: PRESERVED
+All prior-version defenses preserved (v14–v17). Full cross-version trace in v26 regression check.
 
 ---
 
@@ -227,12 +273,15 @@
 | v21 | 2026-05-25 | μ-threshold fix + honest abstract + §9.2→S3 | 7 | 16 |
 | v22 | 2026-05-25 | Intuitive gloss + structural blind-spot explanation | 7 | 16 |
 | v23 | 2026-05-25 | Generality examples + loophole bridge sentence | 7 | 16 |
+| v24 | 2026-05-25 | §2.3 succinct opening + search pipeline + temperature | 7 | 16 |
+| v25 | 2026-05-25 | 12-point review RCA: tone, contextuality, systematics, discriminator | 7 | 16 |
+| v26 | 2026-05-25 | POVM bridge, non-absorption proof, naturalness, stats, S3 move, theorem-first | 7 | 16 |
 
 ---
 
 ## RCA methodology
 
-All v13→v23 changes applied via:
+All v13→v25 changes applied via:
 1. **5-step RCA** (Define → Trace → Isolate → Fix cause → Verify) per CLAUDE.md Rule Zero
 2. **5-Whys** root cause drill (minimum 3 iterations per issue)
 3. **Scoring ≥4/5** threshold for mandatory implementation
@@ -241,4 +290,4 @@ All v13→v23 changes applied via:
 
 ---
 
-*Generated 2026-05-25. Covers v12 (baseline) through v23 (current).*
+*Generated 2026-05-25. Covers v12 (baseline) through v26 (current).*
