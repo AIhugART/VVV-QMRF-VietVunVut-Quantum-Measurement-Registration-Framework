@@ -5,6 +5,231 @@
 
 ---
 
+## v35 (2026-05-25) — 2-issue RCA (threshold 4.5/5): §3.4 compress, paper de-overpack (interpretation→S3, search compress, trim verbose sections)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | §3.4 | **Compress (−10 lines)**: 18-line defensive exposition → 8-line crisp distinction. Removed: explicit trace formula, POVM equivalence detail, three-observation bullet list. Kept: "passive relabeling relabels outcomes without altering the joint probability distribution" vs "Eq.(2) couples to the physical overlap...which depends on the Friend outcome d — a degree of freedom external to the Superobserver's measurement basis." Added empirical test summary: "passive relabeling predicts δ⟨AB⟩ = 0 for all θ; Eq.(2) predicts δ⟨AB⟩ ∝ β cos θ, verifiable by θ-sweep." | 4.5/5 | §3.4 had grown to 18 lines across v26→v33 as defenses accumulated (non-absorption proof v26, explicit POVM v32, passive-relabeling v33). The core distinction is one sentence: "passive relabeling ≠ coupling to Friend outcome." Three-observation bullet list was redundant with the prose. |
+| 2 | §3.6, §8.2+§8.3, §5.3, §3.5 | **Paper de-overpack (−25 lines total)**: (a) §3.6 literature search: 22 lines → 13 lines — removed examined-documents inventory ("We examined the 47-page Supplemental Material of Bong..."), kept search methodology summary + S1 pointer. (b) §8.2+§8.3 merged: "Relation to Quantum Interpretations" (7 lines) + "Illustrative Parametric Model" (8 lines) → single "Interpretation and Model Context" (5 lines) with S3 pointer. Removed δ⟨A₁B₂⟩ = −0.0355 (redundant with §5.3 table) and φ-independence discussion (covered in §5.3). (c) §5.3 Scale context: 5-line SME comparison paragraph → 2-line compact: "A null result at β ≥ 0.04 excludes O(1) and O(10⁻¹) deformation...opening a new parameter space; N = 200,000 extends sensitivity to β ≥ 0.02." SME comparison removed (redundant with §2.3). (d) §3.5 Physical Intuition: 23 lines → 19 lines — removed "In the language of measurement disturbance:" meta-phrase, merged redundant symmetry sentences. Geometric content + measurement disturbance + directional probe + mathematical observation all preserved. | 4.8/5 | The paper had accumulated content across 22 versions without a "main text vs supplement" audit. At 627 lines for a 5-page PRA target, every section was competing for space. The principle: main text = theorem + geometry + minimal protocol + one sensitivity estimate; interpretation + philosophy + detailed methodology → supplement. |
+
+### Structural changes (v35)
+| Before (v34) | After (v35) | Nature |
+|-------------|-------------|--------|
+| §3.4: 18 lines, explicit trace formula + POVM detail + (a)/(b)/(c) list | 8 lines, crisp passive-vs-physical distinction + empirical test | Compression |
+| §3.6: 22-line search methodology with examined-documents inventory | 13-line compact version with S1 pointer | Methodology→supplement |
+| §8.2: 7 lines (interpretations) + §8.3: 8 lines (parametric model) | §8.2: 5 lines merged "Interpretation and Model Context" | Merge + S3 pointer |
+| §5.3: 5-line "Scale context" SME comparison paragraph | 2-line compact parameter-space statement | Redundancy removal |
+| §3.5: 23 lines with meta-phrases + redundant sentences | 19 lines, all conceptual content preserved | Tightening |
+
+### Regression watchlist
+| Constraint | Status |
+|------------|--------|
+| v13 ESP boundary (§1) | ✅ Preserved — untouched |
+| v27 Proposition 1 math | ✅ Preserved — Definition + Proposition intact |
+| v25 novelty hedge "Within the surveyed literature (S1)" | ✅ Preserved — kept in §3.6 |
+| v17 §8.2 interpretation-neutrality | ✅ Preserved — "interpretation-neutral by design" in merged §8.2 |
+| v26 §6 Bayesian robustness | ✅ Preserved — untouched |
+| v27 GPT bridge [17] | ✅ Preserved — untouched |
+| v28 physical intuition | ✅ Compressed but content preserved — geometric symmetry + measurement disturbance + directional probe + mathematical observation all intact |
+| v28 theorem preview (§1) | ✅ Preserved — untouched |
+| v29 abstract 3-beat | ✅ Preserved — untouched |
+| v30 "benchmark parametrization" | ✅ Preserved |
+| v30 "overlap-dependent deformation" | ✅ Preserved |
+| v12 exact numerical values | ✅ Preserved — untouched |
+| v32 §2.3 Core idea ↔ constraints | ✅ Preserved — untouched |
+| v32 theory-space constraint framing | ✅ Preserved — untouched |
+| v32 practical sensitivity range | ✅ Preserved — untouched in §5.3 |
+| v34 S1-tied novelty softening (§9) | ✅ Preserved — untouched |
+
+### Rejected changes (below 4.5/5 threshold)
+| # | Issue | RCA Score | Reason |
+|---|-------|-----------|--------|
+| R1 | Novelty overclaim — further soften "every published EWF" | 3.8/5 | Already heavily hedged (v25 "Within surveyed literature", v31 consistent "to our knowledge", v34 S1-tied §9). Remaining absolute statements are backed by S1 audit methodology. |
+| R2 | Model β ad-hoc — add more theoretical motivation | 3.5/5 | User acknowledges "paper đã làm rồi." GPT bridge (v27), benchmark terminology (v30), measurement disturbance (v32), structural observation (v33) — 4 layers of motivation already present. |
+| R3 | Physical motivation not "inevitable" | 4.2/5 | SME "search before theory" framing already in §2.3 (v14, v33 "phenomenological parameter searches"). The paper's framing is already correct: it's a symmetry-class search, not a theory prediction. |
+| R4 | β~0.04 optimistic — add more caveats | 4.0/5 | Practical range β∼0.05–0.10 already quoted (v32), Bayesian analysis in §6 (v26), "order-of-magnitude" qualifier (v28). Three layers of caveats already present. |
+
+### Net line count
+| Metric | Before (v34) | After (v35) | Delta |
+|--------|-------------|-------------|-------|
+| §3.4 | 18 lines | 8 lines | −10 |
+| §3.6 search | 22 lines | 13 lines | −9 |
+| §8.2 + §8.3 | 15 lines | 5 lines | −10 |
+| §5.3 Scale context | 5 lines | 3 lines | −2 |
+| §3.5 | 23 lines | 19 lines | −4 |
+| Other (line reflow) | — | — | +8 |
+| **Net** | **~627 lines** | **~600 lines** | **−27 lines** |
+
+---
+
+## v34 (2026-05-25) — 4-issue RCA: abstract compression, §2.3 de-lawyer, novelty S1-tied softening, Proposition 1 Definition+compact
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | Abstract | **Compression (−3 lines)**: "of the form P = P_QM · [1 − β · g(overlap)] / Z cancels identically — for any function g whatsoever, not just Eq. (3)" → "P = P_QM · [1 − β · g(overlap)] / Z cancels identically for any function g." "Consequently, existing EWF experiments constrain a smaller theory space than previously assumed: all published implementations operate at the equatorial fixed point and are structurally silent on the overlap-only class." → "Consequently, published EWF implementations are structurally insensitive to the overlap-only class." | 4.3/5 | Abstract was packing 6 distinct pieces of information (theorem, universality, theory-space claim, experiment, sensitivity, loophole). Compressed theory-space sentence from 3 lines to 1 while making it MORE forceful ("structurally insensitive" is sharper than "constrain a smaller theory space than previously assumed"). |
+| 2 | §2.3 | **De-lawyer (−12 lines)**: (a) Removed meta-paragraph "Before presenting the theorem, we explain which class..." (3 lines). (b) Compressed Eq.(2) terminology note: "previously termed outcome-dependent coupling in preliminary drafts..." → deleted (2 lines). (c) Compressed constraints: 8-line detailed (i)-(iii) → 4-line compact version: "The three constraints — (i) rotation invariance, (ii) alignment limit g(1)=0, (iii) monotonicity — force the leading-order Taylor expansion g(x) = c₁(1−x) + O((1−x)²)." (d) Removed "Constraints (i)-(iii) are not exhaustive — they are the minimal set for a one-parameter family" (implied by the structure; defense unnecessary). (e) Compressed null test from 5 lines to 2: "The experiment is a null test: standard QM predicts the same LF violation regardless of θ; a θ-dependent signal would indicate a departure from standard QM independently of model class." | 4.5/5 | §2.3 was doing defend+define+motivate+disclaim+compare GPT+compare SME+explain geometry — 7 rhetorical moves in one section. The "lawyer-like" feel came from arguing against imaginary reviewers. Cuts preserve all substantive content while removing meta-commentary and defensive accretion. Section now reads as confident exposition, not preemptive defense. |
+| 3 | §9 | **Novelty S1-tied softening**: "Every published EWF experiment has operated at this fixed point; the overlap-only class has therefore remained structurally invisible to all existing tests." → "Within the surveyed literature (Supplemental S1), published EWF implementations have operated at this fixed point; the overlap-only class has therefore remained structurally untested." | 4.3/5 | Absolute novelty claims ("Every published...") are maximally vulnerable to one obscure counterexample. Tying the claim to the S1 audit methodology converts an absolute negative into a methodology-backed finding. "Structurally untested" is more precise than "structurally invisible." |
+| 4 | §3.2 | **Proposition 1 formalization**: Added formal **Definition (Overlap-only class)** before Proposition 1: "P'(a,b \| x,y) = P_QM(a,b \| x,y) · g(\|⟨b\|d⟩\|²) / Z, where g: [0,1] → ℝ is any function and Z normalizes the distribution." Proposition 1 reformatted as compact theorem statement: "Let g be any function. At θ = π/2, \|⟨b\|d⟩\|² = 1/2 for all outcome pairs (b,d). Hence g(\|⟨b\|d⟩\|²) = g(1/2) is constant, and P'(a,b \| x,y) = P_QM(a,b \| x,y). The equatorial plane is a fixed point of every overlap-only deformation. ∎" Title changed from "Universality within overlap-only deformations" → "Equatorial Fixed-Point Theorem." | 4.5/5 | Proposition 1 was prose-heavy ("Therefore...and the modification factor [1 − β · g(...)] / Z reduces to..."). The Definition→Theorem structure makes the mathematical content immediately visible to reviewers scanning for rigor. "Equatorial Fixed-Point Theorem" as the proposition name reinforces the paper's single headline (v31). |
+
+### Structural changes (v34)
+| Before (v33) | After (v34) | Nature |
+|-------------|-------------|--------|
+| Abstract: 14 lines, 6 info pieces | 11 lines, 5 info pieces (theory-space claim absorbed into "structurally insensitive") | Compression |
+| §2.3: ~60 lines, 7 rhetorical moves | ~48 lines, 4 rhetorical moves (define, motivate, compare SME, frame null test) | De-lawyer |
+| §2.3: Meta-paragraph "Before presenting the theorem..." | Deleted | Anti-meta |
+| §2.3: Terminology note "(previously termed...)" | Deleted | Anti-internal-tracking |
+| §2.3: 8-line constraint exposition | 4-line compact version | Compression |
+| §2.3: "Constraints not exhaustive" defense | Deleted | Anti-defensive |
+| §2.3: 5-line null test exposition | 2-line compact version | Compression |
+| §3.2: Prose-heavy Proposition 1 | Definition + compact Proposition 1 | Formalization |
+| §9: "Every published EWF experiment..." | "Within the surveyed literature (Supplemental S1), published EWF implementations..." | S1-tied softening |
+
+### Regression watchlist
+| Constraint | Status |
+|------------|--------|
+| v13 ESP boundary (§1 L58-61) | ✅ Preserved — untouched |
+| v27 Proposition 1 math | ✅ Preserved — same content, reformatted with Definition |
+| v25 novelty hedge "Within the surveyed literature (S1)" | ✅ Preserved — in §3.6; now ALSO in §9 (consistent S1-tying) |
+| v17 §8.2 interpretation-neutrality | ✅ Preserved — untouched |
+| v26 §6 Bayesian robustness | ✅ Preserved — untouched |
+| v27 GPT bridge [17] | ✅ Preserved — reference intact at §2.3 L97 |
+| v28 physical intuition | ✅ Preserved — §3.5 intact |
+| v28 theorem preview (§1 L53-56) | ✅ Preserved — untouched |
+| v29 abstract 3-beat structure | ✅ Preserved — observation → theorem → consequence → experiment → scope |
+| v30 "benchmark parametrization" | ✅ Preserved |
+| v30 "overlap-dependent deformation" | ✅ Preserved |
+| v12 exact numerical values | ✅ Preserved — untouched |
+| v32 §2.3 Core idea ↔ L129 consistency | ✅ Preserved — "simplest leading-order form" + "three constraints force the leading-order Taylor expansion" harmonized |
+| v32 theory-space constraint across Abstract/§3.6/§9 | ✅ Preserved — Abstract compact canonical, §3.6 varied, §9 S1-tied |
+| v32 practical sensitivity range | ✅ Preserved — untouched in §5.3 |
+
+### Net line count
+| Metric | Before (v33) | After (v34) | Delta |
+|--------|-------------|-------------|-------|
+| Abstract | 14 lines | 11 lines | −3 |
+| §2.3 (entire) | ~60 lines | ~48 lines | −12 |
+| §3.2 | 8 lines | 12 lines | +4 (Definition added) |
+| §9 | 13 lines | 13 lines | 0 (wording only) |
+| **Net** | **~638 lines** | **~627 lines** | **−11 lines** |
+
+---
+
+## v33 (2026-05-25) — 6-issue RCA: uniqueness→simplest hedge, §3.4 passive-relabeling soften, scope qualifier, SME→phenomenological, repetition de-echo, registration-fidelity structural observation
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | §2.3 Core idea | **"Unique"→"simplest" hedge**: "is the unique (to leading order) one-parameter form" → "is the simplest leading-order form satisfying them — every smooth function obeying (i)-(iii) shares the same first-order structure g(x) ∝ (1−x)." | 4.5/5 | "Unique" under unspecified regularity assumptions invites mathematician/philosopher attack. "Simplest" + explicit statement that all share the same leading-order structure is both safer and more precise. |
+| 2 | §3.4 | **Passive-relabeling soften**: "they produce identical joint statistics with any second-system measurement" → "under passive basis relabeling, they represent the same physical measurement and the joint statistics are unchanged." | 4.2/5 | "Any second-system measurement" overclaims — technically correct for fixed POVM but could be read as "any operational context." "Passive basis relabeling" is the precise mathematical operation and cannot be misinterpreted. |
+| 3 | §3.6 | **Scope qualifier**: "so no equatorial experiment can detect or exclude any member of this class" → "no equatorial experiment can detect or exclude any member of this class, within the overlap-only class" (v32). v33 further refined to: "cannot distinguish standard QM from any overlap-dependent deformation within this class." | 4.0/5 | "Exclude any member" without scope qualifier invites "exclude under THIS parametrization only." Explicit "within this class" + "overlap-dependent deformation" closes the ambiguity. |
+| 4 | §2.3 | **SME→phenomenological parameter searches**: "like the Standard Model Extension for Lorentz violation [15], it defines..." → "similar in spirit to phenomenological parameter searches (e.g., the Standard Model Extension for Lorentz violation [15]), it defines..." | 4.2/5 | Quantum foundations reviewers can be allergic to SME analogies when no deep EFT structure exists. "Phenomenological parameter searches" is the genus; SME is an example species. Reduces attack surface while preserving the analogy's force. |
+| 5 | §3.6, §9 | **Repetition de-echo**: "constrain a smaller theory space than previously assumed" appeared verbatim in Abstract, §3.6, and §9 (v32). §3.6 reworded to: "The structural implication is that...existing experiments, operating exclusively at this fixed point, cannot distinguish standard QM from any overlap-dependent deformation within this class." §9 reworded to: "Every published EWF experiment has operated at this fixed point; the overlap-only class has therefore remained structurally invisible to all existing tests." | 4.0/5 | Three verbatim repetitions of the same headline sentence across Abstract/body/Conclusion read as padding. Varied wording preserves the claim while avoiding echo. Abstract keeps canonical statement. |
+| 6 | §3.5 | **Registration-fidelity structural observation**: Added 5-line mathematical observation after directional probe metaphor. "Mathematically, such terms are the leading-order expression of any smooth registration-fidelity function that depends on measurement alignment: the first-order correction away from perfect alignment generically has the structure 1 − β·(1 − |⟨b|d⟩|²). Eq.(2-3) isolates this universal geometric structure without committing to a specific physical mechanism." | 3.8/5 | User-requested partial fix. Stops short of a full toy model (which would invite attack as speculative) but demonstrates that the term's structure is mathematically generic — any smooth fidelity function has this leading-order form. Framed as mathematical observation, not physical claim. |
+
+### Structural changes (v33)
+| Before (v32) | After (v33) | Nature |
+|-------------|-------------|--------|
+| §2.3: "is the unique (to leading order) one-parameter form" | "is the simplest leading-order form — every smooth function obeying (i)-(iii) shares the same first-order structure g(x) ∝ (1−x)" | Mathematical hedge |
+| §2.3: "like the Standard Model Extension for Lorentz violation [15]" | "similar in spirit to phenomenological parameter searches (e.g., the Standard Model Extension for Lorentz violation [15])" | SME genus-species reframe |
+| §3.4: "produce identical joint statistics with any second-system measurement" | "under passive basis relabeling, they represent the same physical measurement and the joint statistics are unchanged" | Overclaim reduction |
+| §3.5: No structural observation | +5-line registration-fidelity mathematical observation | Plausibility demonstration |
+| §3.6: "constrain a smaller theory space than previously assumed: the equatorial plane..." | "The structural implication is that the equatorial plane...cannot distinguish standard QM from any overlap-dependent deformation within this class" | De-echo |
+| §9: "constrain a smaller theory space than previously assumed: all published implementations operate..." | "Every published EWF experiment has operated at this fixed point; the overlap-only class has therefore remained structurally invisible to all existing tests" | De-echo |
+
+### Regression watchlist
+| Constraint | Status |
+|------------|--------|
+| v13 ESP boundary (§1 L60-64) | ✅ Preserved — untouched |
+| v27 Proposition 1 math | ✅ Preserved — untouched |
+| v25 novelty hedge "Within the surveyed literature (S1)" | ✅ Preserved — untouched |
+| v17 §8.2 interpretation-neutrality | ✅ Preserved — untouched |
+| v26 §6 Bayesian robustness | ✅ Preserved — untouched |
+| v27 GPT bridge [17] | ✅ Preserved — reference and GPT framing intact |
+| v28 physical intuition | ✅ Extended — geometric content preserved, structural observation added |
+| v28 theorem preview (§1) | ✅ Preserved — untouched |
+| v29 abstract 3-beat structure | ✅ Preserved — abstract unchanged |
+| v30 "benchmark parametrization" | ✅ Preserved |
+| v30 "overlap-dependent deformation" | ✅ Preserved |
+| v12 exact numerical values | ✅ Preserved — untouched |
+| v32 §2.3 Core idea ↔ L129 consistency | ✅ Preserved — "simplest leading-order form" + "shares the same first-order structure" harmonized |
+| v32 theory-space constraint across Abstract/§3.6/§9 | ✅ Preserved — Abstract keeps canonical, §3.6/§9 intentionally varied |
+| v32 practical sensitivity range | ✅ Preserved — untouched |
+
+### Net line count
+| Metric | Before (v32) | After (v33) | Delta |
+|--------|-------------|-------------|-------|
+| §2.3 Core idea | 16 lines | 17 lines | +1 |
+| §3.4 | 17 lines | 17 lines | 0 (wording only) |
+| §3.5 | 15 lines | 20 lines | +5 (structural observation) |
+| §3.6 closing | 8 lines | 6 lines | −2 (de-echo) |
+| §9 Conclusion | 13 lines | 13 lines | 0 (wording only) |
+| **Net** | **634 lines** | **638 lines** | **+4 lines** |
+
+---
+
+## v32 (2026-05-25) — 7-issue RCA: Eq.(2) uniqueness+measurement disturbance, universality sharpening, explicit δ⟨AB⟩=0 no-go, practical sensitivity range, defensive tone trim, observer-record alignment narrative, theory-space constraint reframing
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | Abstract, §2.3, §3.5 | **Eq.(2) physical grounding**: §2.3 Core idea — "is the unique (to leading order) one-parameter form satisfying them" replaces "any function...has identical leading-order structure." Added measurement-disturbance framing: "Physically, Eq.(2) parametrizes a residual measurement disturbance: the overlap |⟨b|d⟩|² quantifies how compatibly the Superobserver's measurement basis registers the Friend's recorded outcome." Harmonized L129 "not its unique member" → "shares the same leading-order structure g(x) ∝ (1−x); Eq.(3) adopts the simplest full representative." | 3.8/5 | User-requested partial fix. GPT bridge (v27) + benchmark (v30) already provide substantial grounding. Strengthening uniqueness claim + measurement-disturbance narrative adds physical motivation without fabricating a toy model. |
+| 2 | Abstract, §9 | **Universality sharpening**: "any overlap-dependent modification" → "every overlap-dependent modification." "for every function g" → "for any function g whatsoever." "establish" → "prove" (Abstract). "As its experimental consequence" → "As its direct experimental consequence" (§9). | 4.2/5 | v27/v30/v31 already centered the theorem but language was not maximally forceful. The universality is the paper's single strongest claim — the wording should reflect that. |
+| 3 | §3.4 | **Explicit no-go δ⟨AB⟩=0 calculation**: Added explicit unitary POVM equivalence argument. "Under a unitary change of measurement basis |b'⟩ = U|b⟩, the correlator ⟨AB⟩ = Σ_{a,b} a·b·Tr(Π'_a ⊗ Π_b ρ) is identically invariant...Π'_a = U Π_a U†; since {Π'_a} and {Π_a} are unitarily equivalent POVMs on the same Hilbert space, they produce identical joint statistics." Contrasted with Eq.(2): "the modification couples to the Friend outcome d, which is external to the Superobserver's measurement basis." | 4.5/5 | v26 non-absorption proof was qualitative. Reviewer's #1 attack ("isn't this just basis relabeling?") requires quantitative counter-demonstration. Explicit δ⟨AB⟩=0 for unitary case vs δ⟨AB⟩∝β cos θ for Eq.(2) is the decisive discriminator. |
+| 4 | §5.3 | **Practical sensitivity range**: Added "Accounting for realistic systematics (§6-7), the practical sensitivity floor is likely β ∼ 0.05–0.10 (single-setting) and β ∼ 0.04–0.06 (combined)." | 4.0/5 | v26 Bayesian + v28 "order-of-magnitude" qualifier + v30 mechanism names already addressed optimism. Explicit range quote preempts "this assumes perfect conditions" objection. |
+| 5 | §2.3 IS-NOT, §9 | **Defensive tone trim**: §2.3 IS-NOT triple negation ("not a hidden-variable model, not a collapse modification, not a signal between observers") → single S3 pointer ("ontological classification in Supplemental S3"). §9 removed one "To our knowledge" — theory-space constraint sentence implies novelty without explicit hedge. | 3.8/5 | User-requested partial fix. v29 (−54 lines) + v31 (−25 lines) already cut most defensive accretion. Remaining cuts are surgical: IS-NOT triple was the last redundant negation block; §9 hedge made redundant by theory-space reframing. |
+| 6 | §3.5 | **Observer-record alignment narrative**: Extended physical intuition from purely geometric symmetry argument to measurement-disturbance language. "The Superobserver's measurement apparatus is equally aligned with every Friend record — the act of reading the record disturbs both outcomes identically." "At the equator, the registration is perfectly balanced." "The measurement apparatus becomes a directional probe for registration-layer structure." | 4.2/5 | v19+v28 geometric intuition explained WHY geometrically but not WHY physically. "Observer-record alignment" + "measurement disturbance" + "directional probe" provide the physical narrative reviewers will ask for. |
+| 7 | Abstract, §3.6, §9 | **Theory-space constraint reframing**: NEW framing: "Consequently, existing EWF experiments constrain a smaller theory space than previously assumed: all published implementations operate at the equatorial fixed point and are structurally silent on the overlap-only class." Applied in Abstract (L18-20), §3.6 (L297-301), §9 (L605-607). §3.6 addition: "no equatorial experiment can detect or exclude any member of this class." §9 addition: "The experiment accesses a geometric degree of freedom that has remained unprobed across every published EWF implementation." | 4.5/5 | Completely new reframing. Converts "we found a blind spot" (negative framing) into "existing experiments constrain a smaller theory space than assumed" (substantive reframing). Addresses the "just a null test" objection by grounding the paper's contribution in what existing experiments FAIL to constrain. |
+
+### Structural changes (v32)
+| Before (v31) | After (v32) | Nature |
+|-------------|-------------|--------|
+| Abstract: "We establish" + 3-beat | "We prove" + 4-beat (observation → theorem → theory-space constraint → experiment → scope) | Assertiveness + reframing |
+| §2.3 Core idea: "any function...identical leading-order" | "is the unique (to leading order) one-parameter form" + measurement disturbance | Uniqueness + physical motivation |
+| §2.3 L129: "not its unique member" | "shares the same leading-order structure g(x) ∝ (1−x); Eq.(3) adopts the simplest full representative" | Harmonization with Core idea |
+| §2.3 IS-NOT: triple negation | Single S3 pointer | Defensive compression |
+| §3.4: Qualitative non-absorption | Explicit δ⟨AB⟩=0 calculation via unitary POVM equivalence | Quantitative no-go |
+| §3.5: Geometric symmetry only | Measurement disturbance + directional probe narrative | Physical narrative |
+| §3.6: "Tilting...opens access" | Theory-space constraint reframing + "previously invisible sector" | Reframing |
+| §5.3: Idealized β_min only | + practical sensitivity range β ∼ 0.05–0.10 | Realistic quoting |
+| §9: "any" + one "To our knowledge" | "every" + theory-space constraint + closing sentence, hedge removed | Assertiveness + reframing |
+
+### Regression watchlist
+| Constraint | Status |
+|------------|--------|
+| v13 ESP boundary (§1 L60-64) | ✅ Preserved — "This paper does not claim..." unchanged as sole canonical disclaimer |
+| v27 Proposition 1 math | ✅ Preserved — mathematical content identical |
+| v25 novelty hedge "Within the surveyed literature (S1)" | ✅ Preserved — unchanged (§3.6 L284) |
+| v17 §8.2 interpretation-neutrality | ✅ Preserved — "interpretation-neutral by design" unchanged |
+| v26 §6 Bayesian robustness | ✅ Preserved — no changes to §6 content |
+| v27 GPT bridge [17] | ✅ Preserved — substance intact, extended with uniqueness + measurement disturbance |
+| v28 physical intuition | ✅ Extended — original geometric content preserved, measurement-disturbance narrative added |
+| v28 theorem preview (§1 L55-58) | ✅ Preserved — preview paragraph unchanged |
+| v29 abstract 3-beat structure | ✅ Preserved — extended to 4-beat (observation → theorem → theory-space → experiment → scope) |
+| v30 "benchmark parametrization" terminology | ✅ Preserved — running term unchanged |
+| v30 "overlap-dependent deformation" terminology | ✅ Preserved — running term unchanged |
+| v12 exact numerical values | ✅ Preserved — no analytical approximations introduced |
+
+### v32-specific constraints (new)
+| Constraint | Status |
+|------------|--------|
+| §2.3 Core idea "unique to leading order" consistent with L129 "same leading-order structure" | ✅ Harmonized — both now say leading-order is shared/unique, full function has multiple representatives |
+| §3.4 explicit calculation references Friend outcome d as external to Superobserver basis | ✅ Consistent with §2.3 Eq.(2) definition and §3.1 model-independence |
+| Theory-space constraint framing consistent across Abstract/§3.6/§9 | ✅ Verbatim-aligned: all three locations use "constrain a smaller theory space than previously assumed" |
+| Practical sensitivity range consistent with §6 Bayesian β_min ≈ 0.046 | ✅ β ∼ 0.04–0.06 (combined) brackets the Bayesian estimate; β ∼ 0.05–0.10 (single) brackets the idealized 0.075 |
+
+### Net line count
+| Metric | Before (v31) | After (v32) | Delta |
+|--------|-------------|-------------|-------|
+| Abstract | 11 lines | 14 lines | +3 (theory-space sentence + tightening) |
+| §2.3 Core idea | 13 lines | 16 lines | +3 (uniqueness + measurement disturbance) |
+| §2.3 IS-NOT | 3 lines | 2 lines | −1 |
+| §3.4 | 12 lines | 17 lines | +5 (explicit no-go calculation) |
+| §3.5 | 9 lines | 15 lines | +6 (observer-record alignment narrative) |
+| §3.6 closing | 4 lines | 8 lines | +4 (theory-space constraint reframing) |
+| §5.3 sensitivity | 7 lines | 10 lines | +3 (practical range) |
+| §9 Conclusion | 9 lines | 13 lines | +4 (theory-space + closing sentence) |
+| **Net** | **607 lines** | **634 lines** | **+27 lines** |
+
+---
+
 ## v31 (2026-05-25) — 9-issue RCA: novelty softening, Eq.(2) motivation repositioned, thesis repetition cuts, theorem-box restructure, experimental feasibility, reparameterization defense, multi-observer → S3, defensive tone reduction, headline consolidation
 
 | # | Section | Change | RCA Score | Rationale |
@@ -504,12 +729,16 @@ All prior-version defenses preserved (v14–v17). Full cross-version trace in v2
 | v29 | 2026-05-25 | Reviewer tone overhaul: defensive compression, novelty softening, "new physics" removal, abstract/conclusion focus | 7 | 17 |
 | v30 | 2026-05-25 | Structural blind spot framing, Eq.(2) benchmark subordination, trivial-algebra defense, uniqueness scope, statistical conservatism, paper compression, terminology shift | ~5 | 17 |
 | v31 | 2026-05-25 | Novelty softening, Eq.(2) motivation repositioned, thesis repetition cuts, theorem-box restructure, experimental feasibility, reparameterization defense, multi-observer → S3, defensive tone reduction, headline consolidation | ~5 | 17 |
+| v32 | 2026-05-25 | Eq.(2) uniqueness+measurement disturbance, universality sharpening, explicit δ⟨AB⟩=0 no-go, practical sensitivity range, defensive tone trim, observer-record alignment narrative, theory-space constraint reframing | ~5 | 17 |
+| v33 | 2026-05-25 | uniqueness→simplest hedge, §3.4 passive-relabeling soften, scope qualifier, SME→phenomenological, repetition de-echo, registration-fidelity structural observation | ~5 | 17 |
+| v34 | 2026-05-25 | Abstract compression, §2.3 de-lawyer, novelty S1-tied softening, Proposition 1 Definition+compact formalization | ~5 | 17 |
+| v35 | 2026-05-25 | §3.4 compress, paper de-overpack (interpretation→S3, search compress, trim verbose sections) | ~5 | 17 |
 
 ---
 
 ## RCA methodology
 
-All v13→v31 changes applied via:
+All v13→v35 changes applied via:
 1. **5-step RCA** (Define → Trace → Isolate → Fix cause → Verify) per CLAUDE.md Rule Zero
 2. **5-Whys** root cause drill (minimum 3 iterations per issue)
 3. **Scoring ≥4/5** threshold for mandatory implementation
@@ -518,4 +747,4 @@ All v13→v31 changes applied via:
 
 ---
 
-*Generated 2026-05-25. Covers v12 (baseline) through v31 (current).*
+*Generated 2026-05-25. Covers v12 (baseline) through v35 (current).*
