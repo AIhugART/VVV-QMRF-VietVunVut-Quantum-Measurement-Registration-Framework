@@ -2,7 +2,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?
 
-**Status:** Draft v91 — 3/3-issue RCA (threshold 4/5): §1 restructured (61→42 lines, −31%). (1) "In brief." + Proposition 1 separated by function — "In brief." = sole contribution summary + ESP/SME; Proposition 1 = math only. (2) Protocol preview compressed 11→5 lines (FOM/fair-sampling/SNSPD → §4-7). (3) Claims paragraph de-checklisted — ESP/SME moved to "In brief.", claims crisp 2 sentences. §2.3 FROZEN. §3.5 FROZEN. §1 FROZEN. ~4 pages.
+**Status:** Draft v92 — RCA corrections (2026-05-26): (1) §5 density matrix formula fixed: I/4 → (|HV⟩⟨HV|+|VH⟩⟨VH|)/2 (SPDC subspace). (2) §4.1 FOM values specify β=0.30; β=0.07 window added. (3) §6 Monte Carlo β=0.07 single-setting detection rate corrected: >99% → ~38% at 5σ (n_σ=4.7). (4) "δ⟨AB⟩ ∝ cos θ" qualified as "at leading order in β" throughout. §2.3 FROZEN. §3.5 FROZEN. §1 FROZEN.
 **Date:** 2026-05-26 | **Target:** arXiv quant-ph, then Phys. Rev. A
 
 ---
@@ -39,8 +39,8 @@ for LF optimization, not by design — the one measurement geometry (θ = π/2)
 at which an entire class of overlap-dependent quantum deformations cancels
 identically. A single waveplate breaks this accidental fixed point, enabling
 the first experimental probe of this class. The predicted signal
-δ⟨AB⟩ ∝ cos θ is a genuine observable, not a coordinate artifact
-(Lemma 1, §3.2). The paper's contribution is twofold: a geometric null
+δ⟨AB⟩ ∝ cos θ (at leading order in β) is a genuine observable, not a
+coordinate artifact (Lemma 1, §3.2). The paper's contribution is twofold: a geometric null
 theorem (Proposition 1) showing that equatorial measurements leave the
 overlap-only class systematically unexplored, and a single-waveplate
 protocol (§4–7) enabling its first experimental test. This paper makes no
@@ -180,8 +180,8 @@ This depends only on Bloch sphere geometry. Eq. (2-3) serves only to quantify ex
 the theorem holds for any overlap function.
 The experimental consequence is that equatorial measurements cannot
 distinguish standard QM from any overlap-dependent deformation within this
-class. The distinctive experimental signature is δ⟨AB⟩ ∝ cos θ: this
-scaling is distinct from conventional systematics (which either cancel in
+class. The distinctive experimental signature is δ⟨AB⟩ ∝ cos θ (at leading order
+in β): this scaling is distinct from conventional systematics (which either cancel in
 δ⟨AB⟩ or produce non-geometric θ-dependence) and is a genuine observable,
 not a gauge artifact (Lemma 1, §3.2).
 
@@ -377,10 +377,14 @@ Tilting the Superobserver opens access to this previously untested sector (§4).
 ### 4.1 — Breaking the Cancellation
 
 Any θ ≠ π/2 breaks the cancellation. A grid search over (θ, φ₂, φ₃, β_Bob)
-maximizing min(n_σ_LF, n_σ_signal) yields θ = 31° as optimal; the figure of
-merit remains above 5σ for the broad range θ ∈ [20°, 55°] (Supplemental S2).
-Representative FOM values at μ = 0.95: 9.6 (θ = 20°), 8.6 (θ = 31°, optimal),
-7.1 (θ = 45°), 5.0 (θ = 58°, 5σ threshold), and 0 (θ = 90°, cancellation).
+maximizing FOM(θ, β, N) = min(n_σ_LF, n_σ_signal) with β = 0.30 yields
+θ = 31° as optimal. At β = 0.30, n_σ_signal ≫ n_σ_LF across all θ, so
+the FOM curve tracks the Gen LF 1 violation significance. Representative
+FOM values at μ = 0.95, β = 0.30: 9.6 (θ = 20°), 8.6 (θ = 31°, optimal),
+7.1 (θ = 45°), 5.0 (θ = 58°, 5σ threshold), and 0 (θ = 90°, cancellation);
+FOM > 5σ for θ ∈ [20°, 55°]. At the minimum detectable β ≈ 0.07, the
+FOM is signal-limited: optimal θ = 46° (FOM = 5.4) and >5σ range
+θ ∈ [35°, 46°] (Supplemental S2).
 [Figure 2: Figure of merit vs polar angle θ, showing broad optimum at θ ≈ 31°
 and 5σ detection boundary spanning θ ∈ [20°, 55°].]
 The wide optimal window means the protocol tolerates angular misalignment of
@@ -462,7 +466,9 @@ timing and stability estimates are provided in Supplemental S2.
 ## Section 5 — Model-Independent QM Predictions
 
 All numerical values are computed from the density matrix ρ_μ = μ|Φ⁻⟩⟨Φ⁻| +
-(1−μ)I/4 for the singlet state with visibility μ = 0.95.
+(1−μ)/2 · (|HV⟩⟨HV| + |VH⟩⟨VH|) for the singlet state with visibility μ = 0.95.
+SPDC produces photon pairs only in the {|HV⟩, |VH⟩} subspace; the noise term
+is the maximally mixed state within that subspace, not the full I/4.
 
 ### 5.1 — Correlators at θ = 31°, μ = 0.95
 
@@ -517,7 +523,7 @@ thresholds are illustrative — no existing theory predicts a specific β
 value; they quantify the experiment's capability for Eq. (2-3).
 
 **Experimental discriminator.** Standard QM predicts δ⟨AB⟩ = 0 for all θ.
-Eq. (2-3) predicts δ⟨AB⟩ ∝ β cos θ — a
+Eq. (2-3) predicts δ⟨AB⟩ ∝ β cos θ at leading order — a
 functional form testable by θ-sweep (§8.2). The cos θ signature is not a
 reparameterization of QM: it is distinct from conventional systematics
 (which either cancel in δ⟨AB⟩ or produce non-geometric θ-dependence),
@@ -559,8 +565,9 @@ Poisson statistics: σ(⟨A_x B_y⟩) = √[(1 − ⟨A_x B_y⟩²) / N]. For Ge
 Minimum sample for 5σ LF detection: N_min ≈ 30,800. N = 91,000 provides a
 factor of 3 margin.
 
-Monte Carlo (10,000 runs): Gen LF 1 ≥ 5σ in 99.97%; β = 0.07 detected in >99%
-(single setting), β = 0.05 in ~90% (combined). A conservative Bayesian analysis
+Monte Carlo (10,000 runs): Gen LF 1 ≥ 5σ in 99.97%; β = 0.07 detected in
+~38% at 5σ (single setting, n_σ = 4.7; see §5.3), >99% (four combined settings,
+n_σ = 9.4); β = 0.05 in ~90% at 5σ (combined, n_σ = 6.7). A conservative Bayesian analysis
 inflating Poisson uncertainties by 20% yields β_min ≈ 0.046 (combined); the FOM
 plateau (§4.1: >5σ for θ ∈ [20°, 55°]) ensures viability under substantial
 systematic degradation. Detailed Monte Carlo, correlated-drift modeling, and
@@ -623,7 +630,7 @@ overlap-only window; a cos θ signal opens it.
 | Gen LF 1 at θ = 31° | +0.0891 ± 0.0103 (8.6σ) | Same (LF violation preserved) |
 | δ⟨AB⟩ at θ = 31° | 0 | β cos(31°) ≈ 0.857β |
 | δ⟨AB⟩ at θ = π/2 | 0 | 0 (equatorial cancellation) |
-| δ⟨AB⟩(θ) functional form | δ = 0 ∀θ | δ ∝ cos θ |
+| δ⟨AB⟩(θ) functional form | δ = 0 ∀θ | δ ∝ cos θ (leading order) |
 
 Full interpretation analysis in Supplemental S3.
 
