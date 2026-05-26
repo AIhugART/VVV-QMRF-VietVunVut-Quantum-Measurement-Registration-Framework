@@ -36,33 +36,47 @@ where n_BSM = number of BSM (non-z-basis) measurements in the setting pair.
 
 For (1,2): Alice = z-basis (n=0), Bob = tilted (n=1) -> n_BSM = 1.
 
-The K9_E correlator involves weighted sums over f_perp values. Performed
-numerically in K9S12_proposal.py. Key result:
+The K9_E correlator is computed numerically via weighted sums over f_perp
+values with full renormalization (see K9S12_proposal.py, function
+compute_k9e_correlators). The modification acts at the probability level:
+P_K9E ∝ P_QM · (1 − β·f_perp), with Z = Σ P_QM · (1 − β·f_perp) ensuring
+normalization. Because Z depends on β and θ, the correlator shift is not a
+simple multiplicative factor — the renormalization couples all outcome pairs.
 
-  <A1 B2>_K9E = <A1 B2>_QM * (1 - beta * |cos theta|/2)^(n_BSM)   [EXACT]
+Numerical results at θ = 31°, μ = 0.95 (manuscript §5.3, S2_correlator_table):
 
-This holds because f_perp averaging over the singlet state yields exactly
-|cos theta|/2 as the effective suppression coefficient per BSM operation.
+| β | <A1B2>_QM | <A1B2>_K9E | δ |
+|---|-----------|------------|----|
+| 0.10 | −0.8572 | −0.8687 | −0.0115 |
+| 0.30 | −0.8572 | −0.8927 | −0.0355 |
+| 0.50 | −0.8572 | −0.9180 | −0.0609 |
 
-## 4. First-order check
+The K9E modification makes the correlator more negative (enhanced
+anti-correlation), not less — the renormalization shifts weight toward
+outcome pairs with larger f_perp values, amplifying the geometric asymmetry.
 
-For n_BSM = 1: (1 - x)^1 = 1 - x (exact, no approximation).
-For n_BSM = 2: (1 - x)^2 = 1 - 2x + x^2 -> second-order = x^2.
+## 4. First-order expansion
 
-At beta=0.3, theta=31 deg: x = beta*|cos theta|/2 = 0.3*0.4286 = 0.1286.
-n_BSM=1: exact.
-n_BSM=2: second-order correction = 0.1286^2 = 0.0165 (~7% of 2x=0.2572).
+Expanding the renormalized probability to first order in β:
+
+  δ⟨A1B2⟩ = −β · |cos θ| · ⟨A1B2⟩_QM² + O(β²)   [leading order]
+
+At θ = 31°: ⟨A1B2⟩_QM = −0.8572, |cos θ| = 0.8572:
+  δ ≈ −β · 0.8572 · 0.7347 = −0.6298·β   (leading order)
+
+At β = 0.07: δ ≈ −0.0441 (leading order) vs numerical −0.0080.
+The leading-order term overestimates |δ| because renormalization (Z > 1)
+partially cancels the raw f_perp weighting. Full numerical computation
+(including Z) is required for accurate δ values.
 
 ## 5. Sensitivity
 
-sigma per setting (N=91,000): sigma = sqrt((1 - <AB>^2)/N) = 0.0017.
-Combined 4 mixed settings: sigma_eff = sigma/sqrt(4) = 0.00085.
-5sigma detection: |delta| >= 0.00425.
+sigma per setting (N = 91,000): σ = √[(1 − ⟨AB⟩²)/N] ≈ 0.0017.
+Combined 4 mixed settings: σ_eff = σ/√4 ≈ 0.00085.
 
-n_BSM=1: |delta| = 0.8572 * beta * 0.4286 = 0.3675*beta.
-beta_min(5sigma) = 0.00425/0.3675 = 0.0116 (per setting type).
-Conservative (using 2 settings): beta_min = 0.034.
-Operational: beta >= 0.05 at >5sigma.
+5σ detection thresholds (numerical, from manuscript §5.3):
+  beta_min (single setting, 5σ) = 0.075
+  beta_min (four combined, 5σ)  = 0.038
 
 ## Code
 

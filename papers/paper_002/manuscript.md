@@ -2,7 +2,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?
 
-**Status:** Draft v92 — RCA corrections (2026-05-26): (1) §5 density matrix formula fixed: I/4 → (|HV⟩⟨HV|+|VH⟩⟨VH|)/2 (SPDC subspace). (2) §4.1 FOM values specify β=0.30; β=0.07 window added. (3) §6 Monte Carlo β=0.07 single-setting detection rate corrected: >99% → ~38% at 5σ (n_σ=4.7). (4) "δ⟨AB⟩ ∝ cos θ" qualified as "at leading order in β" throughout. §2.3 FROZEN. §3.5 FROZEN. §1 FROZEN.
+**Status:** Draft v93 — RCA corrections round 2 (2026-05-27): (1) §4.1 FOM values corrected to RCA_fom_beta03.py per-theta optimization results: 5.8 (20°), 8.6 (31°), 6.0 (45°), 0 (58°, Gen LF 1 negative), 0 (90°); >5σ range [20°, 45°]. (2) S2_derivation.md: removed incorrect "EXACT" multiplicative formula; replaced with numerical table + leading-order expansion. §2.3 FROZEN. §3.5 FROZEN. §1 FROZEN.
 **Date:** 2026-05-26 | **Target:** arXiv quant-ph, then Phys. Rev. A
 
 ---
@@ -379,14 +379,15 @@ Tilting the Superobserver opens access to this previously untested sector (§4).
 Any θ ≠ π/2 breaks the cancellation. A grid search over (θ, φ₂, φ₃, β_Bob)
 maximizing FOM(θ, β, N) = min(n_σ_LF, n_σ_signal) with β = 0.30 yields
 θ = 31° as optimal. At β = 0.30, n_σ_signal ≫ n_σ_LF across all θ, so
-the FOM curve tracks the Gen LF 1 violation significance. Representative
-FOM values at μ = 0.95, β = 0.30: 9.6 (θ = 20°), 8.6 (θ = 31°, optimal),
-7.1 (θ = 45°), 5.0 (θ = 58°, 5σ threshold), and 0 (θ = 90°, cancellation);
-FOM > 5σ for θ ∈ [20°, 55°]. At the minimum detectable β ≈ 0.07, the
-FOM is signal-limited: optimal θ = 46° (FOM = 5.4) and >5σ range
+the FOM is bounded by n_σ_LF. Representative FOM values at μ = 0.95,
+β = 0.30 (per-theta angle re-optimization, Supplemental S2): 5.8
+(θ = 20°), 8.6 (θ = 31°, optimal), 6.0 (θ = 45°), 0 (θ = 58°,
+Gen LF 1 becomes negative), and 0 (θ = 90°, cancellation); FOM > 5σ for
+θ ∈ [20°, 45°]. At the minimum detectable β ≈ 0.07, the FOM is
+signal-limited: optimal θ = 46° (FOM = 5.4) and >5σ range
 θ ∈ [35°, 46°] (Supplemental S2).
-[Figure 2: Figure of merit vs polar angle θ, showing broad optimum at θ ≈ 31°
-and 5σ detection boundary spanning θ ∈ [20°, 55°].]
+[Figure 2: Figure of merit vs polar angle θ, showing optimum at θ ≈ 31°
+(β = 0.30) and 5σ detection boundary spanning θ ∈ [20°, 45°].]
 The wide optimal window means the protocol tolerates angular misalignment of
 ±11° before dropping below 5σ — substantially more forgiving than the
 alignment precision demanded by the standard Bong protocol.
