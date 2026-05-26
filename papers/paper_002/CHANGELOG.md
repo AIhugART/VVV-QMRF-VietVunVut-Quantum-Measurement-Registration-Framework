@@ -640,15 +640,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 8 | signal survival with realistic optics | 4.0/5 | Rejected — S2 is the right location |
 | 9 | theorem scoped too narrowly | 4.6/5 | **Implemented** — "Deformation hierarchy" (§3.2) |
 
-**Key changes:**
-  - "Physical context" paragraph + weak measurement + decoherence + minimal toy model
-  - Combined with #1: weak measurement + decoherence connections
-  - Operational invariant expanded
-  - Reduced defensive density
-  - "Deformation hierarchy" (§3.2) (§3.2))
-
 ### Regression
-Δ: C1 ESP boundary compressed but retained; C6 weak-measurement connection restored (v53 cut → v55 selectively restored with "precedent" framing, not "mechanism"); C10 benchmark language retained in §5.3; defense level recalibrated (less hedging at...
+Δ: C1/C6/C10 preserved; defense recalibrated.
 ---
 
 ## v54 (2026-05-25) — 7-issue RCA (threshold 4.5/5): "Why overlap-only?" minimal operational deformation; concrete outside-scope examples; killer Figure 1; ~20 lines repetition cut; sensitivity→illustrative benchmark; qualifier density; null-test framing
@@ -665,16 +658,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 6 | Experimental claim inflated | 4.8/5 | Headline sensitivity numbers (abstract/§1/§9) dropped the "benchmark parametrization" qualifier from §5.3 body | **Implemented** — "β ≥ 0.07" → "β ~ 0.07" with "illustrative benchmark sensitivity" in Abstract, §1, §5.3, §9. §5.3 adds explicit disclaimer: "These thresholds are illustrative — no existing theory predicts a specific β value" |
 | 7 | Missing killer figure | 4.5/5 | Central geometric insight (flatline → emergence) had no dedicated figure | **Implemented** — Detailed Figure 1 specification in §3.4: Bloch sphere equator vs tilted, overlap asymmetry values, δ⟨AB⟩ ∝ cos θ curve with null at 90° and sensitive region at 31° |
 
-**Key changes:**
-  - Overclaim — need more qualifiers
-  - Phenomenology lacks foundation
-  - "Toy model" vulnerability
-  - Class too narrow
-  - Repetition of "equatorial cancellation"
-  - Experimental claim inflated
-
 ### Regression
-Δ: C1 ESP strengthened (null-test framing added); C3 S1 qualifier retained in §1, §3.5, §9; C10 benchmark language strengthened to "illustrative benchmark"; C17 strengthened (microphysical mechanism → not invoked).
+Δ: C1/C3/C10/C17 strengthened.
 ---
 
 ## v53 (2026-05-25) — 6-issue RCA (threshold 4.5/5): Abstract theorem+null-test+consequence; §2.3 GPT/weak-measurement stripped; §8.1+§8.2 merged; novelty reframed; "phenomenological null test" genre explicit
