@@ -1370,6 +1370,44 @@ These are identity/policy-level decisions. RCA pipeline CANNOT auto-approve chan
 
 ---
 
+## Internal Stability Assessment — v91 (2026-05-26)
+
+**Overall score: 8.0/10 — Internal asymptotic stability reached.**
+
+### 5-Whys RCA
+
+**Q:** Đã đạt trạng thái ổn định tốt nhất chưa?
+
+1. **Why still uncertain?** — Về mặt kỹ thuật, luôn có thể chỉnh sửa thêm. Nhưng câu hỏi thực sự là: *chỉnh sửa thêm có tạo ra cải thiện thật hay chỉ oscillation?*
+2. **How to distinguish real improvement vs oscillation?** — CHANGELOG đã ghi nhận oscillation pattern trên 11 topics, tất cả đều bị reject ≥4 lần. Các topic này giờ nằm trong **Recurring Rejected Changes** — hệ thống đã tự nhận diện được ngưỡng bão hòa.
+3. **Why is uncertainty still present?** — Toàn bộ 80+ versions (v12→v91) là internal RCA, chưa có external reviewer feedback. **Đây là root cause của uncertainty còn lại.**
+4. **Root cause:** Paper đã đạt **internal asymptotic stability** — mọi internal RCA tiếp theo sẽ rơi vào oscillation pattern đã được document. Trạng thái hiện tại là tốt nhất có thể đạt được nếu không có external feedback. Điểm bị trừ (−2.0) đến từ việc thiếu external calibration, không phải từ chất lượng nội tại.
+
+### Stability evidence (strengths)
+
+| Mechanism | Description | Status |
+|-----------|------------|--------|
+| **FROZEN ITEMS (5)** | Title, Abstract structure, §1, §2.3, §3.5 — all frozen at v87–v91 | Locked |
+| **Recurring Rejected Changes (11)** | 11 oscillation patterns auto-rejected: β ad-hoc (12×), "cut 20-30%" (6×), novelty overclaim (8×), Phase 1 framing (7+×), abstract hook wording, abstract word-count, abstract structure order, etc. | Auto-blocked |
+| **Regression Constraint Master (C1–C21)** | 21 constraints verified across all versions | Preserved |
+| **v81 Genre Boundary** | Paper IS: phenomenological null test with geometric insight / IS NOT: theory derivation | Scope locked |
+| **Version density convergence** | v88→v91 all structural consolidation, no content oscillation | Converged |
+| **CHANGELOG maturity** | ~1462 lines, 4 dedup rounds, structural tables | Documented |
+
+### Score deductions (−2.0)
+
+| Factor | Impact | Explanation |
+|--------|--------|-------------|
+| **No external reviewer feedback** | −1.0 | Post-arXiv submission may reveal structural weaknesses invisible to internal RCA. This is the single largest unknown. |
+| **N=2 is a hard constraint** | −0.5 | Despite structural defense (v77 "Structural, not coincidental"), this remains a weakness unfixable by internal refinement. |
+| **RCA scoring self-referential** | −0.5 | Threshold 4.5/5 calibrated on internal consensus, no external ground truth. Systematic bias risk is low but real. |
+
+### Decision
+
+Paper is **ready for arXiv submission** at current state. Further internal RCA edits are unlikely to produce net improvement — the remaining uncertainty (−2.0) cannot be resolved without external reviewer feedback. After arXiv submission and reviewer response, revisit FROZEN ITEMS and Recurring Rejected Changes with real external data.
+
+---
+
 ## Version summary
 
 | Version | Date | Focus | ~Lines | Δ | Refs |
