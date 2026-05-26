@@ -5,6 +5,138 @@
 
 ---
 
+## v88 (2026-05-26) — 3/7-issue RCA (threshold 4.5/5): Operational observable in "In brief"; §2.3 + §7 compressed; Novelty crystallization
+
+**Scoring summary (7 issues):** 3 implemented (≥4.0/5), 4 rejected.
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | "Blind spot" overclaim → assertive reduction | 2.5/5 | **Rejected** — Oscillation. v87 just softened abstract; body "systematically unexplored" = v79 RCA 4.5/5 |
+| 2 | Toy physical mechanism in main text | 1.5/5 | **Rejected** — v81 genre boundary auto-reject; v84+v85 already added physical context + info-theoretic |
+| 3 | Cắt 20-25% defensive justification | 3.5/5 | **Rejected** — v85+v86 already merged duplicates + dedup; remaining granular |
+| 4 | Operational observable earlier in §1 | 4.0/5 | **Implemented** — δ⟨AB⟩ ∝ cos θ + Lemma 1 moved to "In brief" paragraph |
+| 5 | Compress §2.3 + §7 framing | 4.5/5 | **Implemented** — §2.3: SME paragraph −4 lines, "Why overlap-only" −3 lines, Core idea −1 line. §7: Two-phase −8 lines. Total −16 lines |
+| 6 | Schematic/visual "1-hour mod" | 2.5/5 | **Rejected** — §4.5 already states ~1 hour; schematics in supplemental (v57) |
+| 7 | Novelty crystallization — theorem or protocol? | 4.2/5 | **Implemented** — "In brief" now ends: "The paper's contribution is twofold: a geometric null theorem (Proposition 1) showing that equatorial measurements leave the overlap-only class systematically unexplored, and a single-waveplate protocol (§4–7) enabling its first experimental test." |
+
+### Implemented changes (v88)
+
+| # | Section | Change | Rationale |
+|---|---------|--------|-----------|
+| 4 | §1 | **Operational observable + novelty in "In brief" (+2 sentences):** Old: "...proposes the null-test protocol (§4–7)." New: "...The predicted signal δ⟨AB⟩ ∝ cos θ is a genuine observable, not a coordinate artifact (Lemma 1, §3.2). The paper's contribution is twofold: a geometric null theorem (Proposition 1) showing that equatorial measurements leave the overlap-only class systematically unexplored, and a single-waveplate protocol (§4–7) enabling its first experimental test." | Operational observable defense was buried at end of Proposition 1 paragraph. Moving to "In brief" preempts "basis artifact" criticism before technical content. Novelty sentence crystallizes what was spread across 3 paragraphs. |
+| 5a | §2.3 Core idea | **Trimmed constraint preview (−1 line):** "simplest leading-order form satisfying them"→"simplest form satisfying them." Removed redundancy with full constraint derivation at Eq.(2-3). | Lines 178-181 restate the same constraints in detail. Preview doesn't need "leading-order" qualifier. |
+| 5b | §2.3 SME | **SME paragraph condensed (−4 lines):** Cut explicit scale values (~10⁻¹⁷ to <10⁻²³), tightened prose. "functions analogously to the Standard Model Extension (SME) for Lorentz violation [15]. The SME was proposed with..."→"functions analogously to SME coefficients [15]: the SME was proposed with..." | SME scale values are SME-specific — not needed for the methodological analogy. "β is a search parameter; a null result at β ≥ 0.04 constrains"→"β is a search parameter whose null result constrains" — single clause replaces two. |
+| 5c | §2.3 Why overlap-only | **Prioritization trimmed (−3 lines):** "Level 0 is prioritized over Levels 1–3: (i)...(ii) whereas higher levels demand progressively more complex designs without an equatorial fixed point to anchor a null test."→"Level 0 is prioritized: (i)...(ii)." | Verbose sub-clause about higher levels cut — already implied by "only level with sharp geometric null" + "only requires single waveplate." |
+| 5d | §7 | **Two-phase compressed (−8 lines):** 13→5 lines. Cut redundant Phase 1 hedging ("self-consistent but not loophole-free exclusion," "screening stage," "null result is suggestive but remains open to the detection-loophole objection"), Phase 2 redundancy ("converting the result into a definitive conclusion," "so Phase 2 can proceed immediately...without an intermediate redesign stage"). | Two-phase concept explained at abstract + §1 + §7. §7 paragraph had 4 sentences restating the Phase-1-is-screening idea. Core info preserved: Phase 1 = η≈0.87 screening, Phase 2 = η≥0.91 SNSPD closure, same optics. |
+
+### Regression
+Δ: §1 +2 sentences (operational observable + novelty). §2.3 −8 lines. §7 −8 lines. Net: −14 lines. C1/C3/C10/C17 preserved. Two-phase content preserved (shorter). All v84-v87 changes retained.
+
+---
+
+## v87 (2026-05-26) — 3/3-issue RCA (threshold 4.5/5): Abstract tightened + factual opening; §2.3 benchmark explicitly "phenomenological ansatz"
+
+**Scoring summary (3 issues):** 3 implemented (≥4.2/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Abstract ~185 words, fix spread across S1+S4 | 4.7/5 | **Implemented** — Tightened to ~150 words. "operated exclusively at...fixed point" → "single waveplate breaks this cancellation" in S1+S2. Cut "reflecting the experimental scarcity," "optimal trade-off...LF preservation," "Phase 2 closure via SNSPD" detail. |
+| 2 | "unnoticed geometric blind spot" overclaim with N=2 | 4.2/5 | **Implemented** — Abstract: "share an unnoticed geometric blind spot"→"have operated exclusively at...a fixed point." Factual, mathematical language. Body text "systematically unexplored" preserved (v79 RCA 4.5/5 — changing = oscillation). Title untouched (v80 freeze). |
+| 3 | Benchmark could be misread as physical model | 4.5/5 | **Implemented** — §2.3 Eq.(2) definition: "a benchmark parametrization — the lowest-order scalar..."→"a benchmark parametrization — a phenomenological ansatz, not derived from any underlying physical theory — representing the lowest-order scalar..." |
+
+### Implemented changes (v87)
+
+| # | Section | Change | Rationale |
+|---|---------|--------|-----------|
+| 1 | Abstract | **Tightened + factual opening (~150 words):** S1: "have operated exclusively at an equatorial measurement geometry (θ = π/2) — a fixed point where..." S2: "A single waveplate breaks this cancellation." Cuts: "reflecting the experimental scarcity," "optimal trade-off between signal strength and LF preservation," "whose positive result would motivate Phase 2 closure via SNSPD upgrade (η ≥ 0.91)." Survey + scope + falsification compressed. | "Operated exclusively at" is factual (both experiments DID operate at θ=π/2), not interpretive. "Fixed point" is mathematical, not anthropomorphic. 150 words vs prior 185 — every sentence carries weight. |
+| 2 | Abstract | **Softer claim language:** "share an unnoticed geometric blind spot"→"have operated exclusively at an equatorial measurement geometry (θ = π/2) — a fixed point." Body occurrences of "systematically unexplored" (v79) KEPT — v79 RCA 4.5/5 was deliberate. "Blind spot" retained only in §3.5 title and body where scoped by survey qualifiers. | Reviewer reading abstract first sees factual claim about measurement geometry, not rhetorical claim about blindness. The structural argument (v77 "Structural, not coincidental," v85 "θ as independent DoF") now lands on firmer footing. |
+| 3 | §2.3 | **Phenomenological explicit disclaimer (+6 words):** "Equation (2) is a benchmark parametrization — the lowest-order scalar..."→"Equation (2) is a benchmark parametrization — a phenomenological ansatz, not derived from any underlying physical theory — representing the lowest-order scalar..." | The defining paragraph for Eq.(2) now states the phenomenological nature explicitly at the point of definition. Reviewer cannot claim the paper presents Eq.(2) as a physical model. Complements existing disclaimers at §1 ("no claim about existence"), §2.3 SME paragraph, §5.3 ("no existing theory predicts"). |
+
+### Regression
+Δ: Abstract −35 words (185→150). §2.3 +6 words. Net: −29 words. C1/C3/C10/C17 preserved. "Systematically unexplored" (v79) preserved in body. Title unchanged. All v84/v85/v86 changes retained.
+
+---
+
+## v86 (2026-05-26) — 3/3-issue RCA (threshold 4.5/5): Abstract restructured (fix in S1); §1 plain-English summary; "benchmark parametrization" dedup
+
+**Scoring summary (3 issues):** 3 implemented (≥4.5/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Abstract buries fix after theorem+survey | 4.7/5 | **Implemented** — S1: "blind spot...and a single waveplate breaks it." Survey moved before proposal. ~185 words. |
+| 2 | §1 inaccessible to non-EWF readers | 4.5/5 | **Implemented** — **In brief.** paragraph (3 sentences): plain-English summary before Proposition 1. |
+| 3 | "benchmark parametrization" repeated 7× | 4.5/5 | **Implemented** — Cut 4 occurrences (§3.1, §5.3×3). Now 3×: §1, §2.3×2. C10 preserved. |
+
+### Implemented changes (v86)
+
+| # | Section | Change | Rationale |
+|---|---------|--------|-----------|
+| 1 | Abstract | **Restructured (fix-first):** S1: "...blind spot for the overlap-only class — and a single waveplate breaks it." Survey moved before proposal. "phenomenological null test" cut (implied). "— but not replace —" cut (implicit). ~185 words, 6 sentences. | Prior: blind spot→theorem→survey→proposal. Reader doesn't see payoff until S3. New: hook+fix→theorem→survey→proposal. Fix in sentence 1. |
+| 2 | §1 | **Plain-English summary (+3 sentences):** "**In brief.** Every published optical EWF experiment has used — by convention for LF optimization, not by design — the one measurement geometry (θ = π/2) at which an entire class of overlap-dependent quantum deformations cancels identically. A single waveplate breaks this accidental fixed point, enabling the first experimental probe of this class. This paper proves the equatorial cancellation theorem (Proposition 1), surveys the literature (§3.5, Supplemental S1), and proposes the null-test protocol (§4–7)." | Non-EWF physicists need accessible entry point. "By convention, not by design" captures insight without jargon. Three-part "proves...surveys...proposes" previews structure. |
+| 3 | §3.1, §5.3 | **"benchmark parametrization" dedup (7→3):** §3.1: "is a benchmark parametrization"→"serves only to quantify." §5.3×3: "For the benchmark parametrization Eq. (2-3)"→"For Eq. (2-3)"; "The benchmark parametrization Eq. (2-3) predicts"→"Eq. (2-3) predicts." Term retained at §1 + §2.3×2 (defining instances). C10 preserved. | By §5.3 reader has seen term 3 times; "Eq. (2-3)" unambiguous. §3.1 cut avoids repetition with §2.3 Core idea. |
+
+### Regression
+Δ: Abstract S1 +5 words (fix clause), −3 words (cut "phenomenological null test"). §1 +50 words (plain-English), −10 words (old preview removed). §3.1 −2 words. §5.3 −15 words (4 cuts). Net: ~+25 words. C1/C3/C10/C17 preserved. All v84/v85 changes retained.
+
+---
+
+## v85 (2026-05-26) — 5/10-issue RCA (threshold 4.5/5): θ as independent LF DoF; §3.5 duplicate merge; §1/§9 experimental focus; §2.3 disclaimers consolidated; Information-theoretic overlap
+
+**Scoring summary (10 issues):** 5 implemented (≥4.2/5), 5 rejected (≤3.0/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Toy model Hamiltonian cụ thể hơn | 2.0/5 | **Rejected** — v81 genre boundary: paper is phenomenological null test, not theory derivation |
+| 2 | "Chỉ đổi coordinate/gauge" defense | 2.5/5 | **Rejected** — Lemma 1 + φ-scramble + numerical illustration already sufficient (v79 #3 precedent) |
+| 3 | Novelty phụ thuộc "chưa ai sweep θ" | 4.5/5 | **Implemented** — §3.5 "Distinction from LF optimization": LF inequality coefficients are structurally independent of θ; θ is genuine independent DoF orthogonal to LF constraint surface |
+| 4 | β parameter motivation scale | 3.0/5 | **Rejected** — Already at §5.3 (SME <10⁻²³, CSL ~10⁻¹⁶, weak-meas ~10⁻²); v79 #4/v73 #2/v64 #3 all rejected |
+| 5 | Cắt ~25% defensive | 4.2/5 | **Implemented** — §3.5 "Search audit" + "Prior work" merged (80% duplicate, −8 lines) |
+| 6 | Theorem "obvious" → emphasize experiment | 4.5/5 | **Implemented** — §1 opening: +1 sentence previewing protocol contribution. §9 rebalanced: finding→consequence flow replaces theorem-name-first |
+| 7 | "Blind spot" softer wording | 3.0/5 | **Rejected** — Oscillation (v61 #2, v79 #6); v84 already scoped with "for the overlap-only class" |
+| 8 | Consolidate "not replacing QM" disclaimers | 4.5/5 | **Implemented** — §2.3: removed redundant "β is a search parameter, not a theory prediction" from SME closing (duplicate of opening). "Why overlap-only?" closing trimmed (−10 words) |
+| 9 | Tolerance simulation in main text | 2.5/5 | **Rejected** — S2 by design (v57 compression); angular tolerance ±11° already in §4.1; v76 #4/v74 #4 precedent |
+| 10 | Information-theoretic interpretation | 4.2/5 | **Implemented** — §2.3 Physical context: +3 lines. |⟨b\|d⟩|² = cos²(θ/2) is fidelity between basis states; quantifies basis distinguishability → accessible information |
+
+### Implemented changes (v85)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 3 | §3.5 | **θ as independent LF DoF (+3 lines):** Added to "Distinction from LF optimization": "The LF inequality coefficients (Eq. 1) are structurally independent of θ — the polar angle enters only through the correlator values, which are free parameters in any LF test. θ is therefore a genuine independent degree of freedom orthogonal to the LF constraint surface; LF optimization treats θ as a fixed convention, not as a variable to be tested." | 4.5/5 | Novelty has relied on "nobody varied θ" — an empirical claim. This adds a structural claim: LF inequalities DO NOT constrain θ, so varying it is genuinely new physics reach, not just a literature gap. Makes novelty independent of N=2. |
+| 5 | §3.5 | **Search audit + Prior work merged (−8 lines):** Two paragraphs (~13 + 6 = 19 lines) merged into one (11 lines). Removed repeated enumeration of 4 databases, ~200 screened → 47 full-text → 2 identified, Boolean query detail, search period — stated once instead of twice. Key findings preserved: no published EWF varies θ, azimuthal angles optimized, θ fixed without comment, unpublished caveat. | 4.2/5 | "Search audit" (v67) and "Prior work" (v63-v67) accumulated independently. Both describe the same search — databases, screening pipeline, result count. Merging eliminates ~80% overlap. Different from prior "cắt defensive" rounds (v79 #5, v61 #6) which targeted general hedging — this is a specific structural duplicate. |
+| 6 | §1, §9 | **Experimental consequence foregrounded:** §1 opening: +1 sentence — "This paper identifies a geometric fixed point shared by all published implementations — and proposes a single-waveplate protocol that breaks it." §9: theorem-as-name opening → finding-then-consequence flow. "The central result is the equatorial cancellation theorem (Proposition 1)..." → "All published optical EWF implementations have operated at an equatorial fixed point (θ = π/2) where every overlap-dependent deformation vanishes identically (Proposition 1)..." | 4.5/5 | §1 previously opened with generic EWF context → Proposition 1 theorem statement. Reader sees "trivial math" before "why it matters." New opening previews BOTH contributions (finding + protocol) in sentence 3. §9 rebalanced: finding leads, theorem named parenthetically, protocol paragraph stands as equal partner. |
+| 8 | §2.3 | **Disclaimer consolidation (−15 words):** (i) SME paragraph closing: "β is a search parameter, not a theory prediction; a null result at" → "β is a search parameter; a null result at" (redundant with opening "No existing theory predicts this specific form"). (ii) "Why overlap-only?" closing: "This prioritization is methodological, not predictive: the class is chosen as the natural first null test; whether nature exhibits overlap-dependent deformation is precisely what the experiment tests" → "This prioritization is methodological, not predictive — the experiment tests whether nature exhibits overlap-dependent deformation." | 4.5/5 | v79 #5 rejected consolidating SME across 5 locations. This is different: trimming within-§2.3 redundancy where "not a theory prediction" appears in both SME paragraph opening AND closing. Second occurrence adds no new information. |
+| 10 | §2.3 | **Information-theoretic interpretation (+3 lines):** Added to Physical context ¶1: "Information-theoretically, |⟨b\|d⟩|² = cos²(θ/2) is the fidelity between measurement basis states — it quantifies basis distinguishability, which controls accessible information in any quantum measurement [18]." | 4.2/5 | Addresses "why should nature care about overlap?" without violating v81 genre boundary. Basis distinguishability is a standard QI concept — not new physics. The overlap is not an arbitrary scalar; it's the fidelity between measurement bases, a quantity with operational meaning in quantum information. Grounds the overlap-only class in known QI structure. |
+
+### Regression
+Δ: §1 +1 sentence (contribution preview). §2.3 Physical context +3 lines (QI interpretation). §2.3 SME −5 words (dedup close). §2.3 Why overlap-only −10 words (dedup close). §3.5 −8 lines (merge). §3.5 Distinction from LF +3 lines (θ as independent DoF). §9 rebalanced (content preserved, emphasis shifted). Net: ~−5 lines. C1/C3/C10/C17 preserved. Title unchanged (v80 freeze). All v84 changes retained.
+
+---
+
+## v84 (2026-05-26) — 3/3-issue RCA (threshold 4.5/5): Abstract "overlap-only" qualifier; §2.3 Physical context expanded; §8.2 + S3 trimmed
+
+*Re-application of v82 changes after session compaction reverted to v81. Title preserved at v77/v81 wording (no title change).*
+
+**Scoring summary (3 issues):** 3 implemented (≥4.2/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Abstract overclaim: "blind spot" without scope qualifier implies universal | 4.8/5 | **Implemented** — Abstract S1: "blind spot" → "blind spot for the overlap-only class: both operate at θ = π/2..." Merged hook + theorem into single sentence. |
+| 2 | Physical motivation weak: "simplest class" needs physics grounding | 4.2/5 | **Implemented** — §2.3 Physical context expanded (3→9 lines): two short paragraphs connecting to weak measurement [18] structural analogue, decoherence precedent, and registration-layer coupling. "Speculative mechanism, not a derivation" label preserved. |
+| 3 | §8.2 + S3 verbose: interpretive detail dilutes theorem+protocol | 4.5/5 | **Implemented** — §8.2: 25→15 lines (−10). S3.3 interpretations: 40→15 lines (−25, ~60%). S3.4 multi-observer: 10→5 lines. S3.1 contextuality: light trim. |
+
+### Implemented changes (v84)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | Abstract S1 | **Scope qualifier (+4 words):** "share an unnoticed geometric blind spot" → "share an unnoticed geometric blind spot for the overlap-only class: both operate at θ = π/2, where every overlap-dependent deformation...vanishes identically (Proposition 1, equatorial cancellation theorem)." Hook + theorem merged into single sentence. "We prove..." removed as separate sentence (redundant with Proposition 1 naming). | 4.8/5 | S1 without "overlap-only" qualifier implies universal geometric blind spot. Added qualifier immediately scopes the claim. Merge with theorem statement eliminates the 1-sentence gap where reader could form wrong impression. Abstract retains 5-sentence structure (was 6); wording more modest. |
+| 2 | §2.3 | **Physical context expanded (+6 lines):** Old: 3 lines (weak measurement + decoherence mention + S3 pointer). New: two short paragraphs — ¶1: weak measurement structural analogue (A_w depends on postselection overlap → basis-alignment dependence is known feature) + decoherence precedent (basis-alignment-dependent coherence loss). ¶2: overlap-only class as parametrization of residual geometric coupling between bases in sequential observation — coupling QM factorization sets to zero but has structural analogues in established phenomena. | 4.2/5 | v69 reduced physical context (12→2 lines, RCA 4.7/5); v74 expanded (2→4, user-persistence); v81 strategic "không cần physics motivation." User request differs: connect to EXISTING physics (weak measurement [18], decoherence, registration), not invent theory. All content grounded in [18]; label preserved. |
+| 3 | §8.2, S3.1–S3.4 | **Trim (−35 lines net):** §8.2: θ-sweep (8→5 lines, blind protocol preserved), multi-observer (3→2), platform independence (6→4), locality closure (5→3). S3.1: prose compressed. S3.3: 5 interpretations 40→15 lines (~60% cut; each 7-8→3 lines). S3.4: 10→5 lines. Key message "none predicts, none precludes" preserved. | 4.5/5 | Paper ~4 pages. Theorem + protocol are the core strength. S3.3's detailed interpretation analysis (40 lines for 5 interpretations) disproportionate for phenomenological null-test paper. Core message retained: interpretation-neutral, none predicts Eq. (2-3), none precludes it. |
+
+### Regression
+Δ: Abstract S1 +4 words + merge with theorem (−1 sentence, net −22 words). §2.3 +6 lines. §8.2 −10 lines. S3 −30 lines. Net: paper stays ~4 pages. Title unchanged (v80 freeze respected). C1/C3/C10/C17 preserved. No claim changes. "Systematically unexplored" (v79) preserved. N=2 acknowledgment (v75) preserved. β-SME clause (v76) preserved.
+
+---
+
 ## v81 (2026-05-26+) — Strategic clarification: Paper genre / physics-motivation boundary
 
 **Not a version change — meta-note recorded in CHANGELOG for future reference.**
@@ -1217,6 +1349,24 @@ These objections recurred across ≥4 versions. Each was RCA-scored <4.5/5 every
 | **Missing killer figure (Bloch sphere)** | v37, v39, v45, v48, v52 | Fig ref exists in §3.5 (v37). Cannot create images in text. |
 | **Overlap-only class lacks physical motivation / add toy model** | v33, v36, v37, v45, v48 | ESP boundary (C1): paper does not claim existence in nature. Theorem is structural, not theory-derived. |
 | **GPT/contextuality/weak-measurement too speculative** | v39, v43, v44, v45 | GPT derivation → S3 (v37); conceptual chain compressed ~55% (v43). Main text retains 3-4 compact conceptual lines. |
+| **Phase 1/Phase 2 framing — "screening test" chưa đủ rõ / cần nhấn mạnh Phase 2 là definitive** | v71, v72, v73, v74, v75, v76, v77 (≥7 consecutive) | Abstract S5 đã rõ: "loophole-open screening test whose positive result would motivate — but not replace — Phase 2 closure." §7: "definitive conclusion." Genre boundary v81: paper là phenomenological null test với two-phase screening architecture. Phase 1 numerical emphasis là do Phase 1 là novel proposal, không phải framing sai. |
+| **Abstract hook wording oscillation — "blind spot" vs "operated exclusively at" vs "fixed point"** | v77, v78, v79, v84, v86, v87 | Hook sentence (~10 words) carries dual burden: rhetorical grab + technical precision. These functions conflict — no single wording perfectly satisfies both. Policy: hook's primary function is rhetorical; technical precision lives in S2-S4. As long as hook contains no factual error, wording variants are aesthetic → auto-reject. |
+| **Abstract word-count optimization (5↔6 sentences, 150↔185 words)** | v68, v69, v77, v86, v87 | No objective word/sentence target exists — PRA has no formal limit. Without a target, every RCA round finds the abstract either "too long" or "missing key information." Soft range: 150-185 words, 5-6 sentences. Revise only if crossing these bounds. |
+| **Abstract structure order oscillation (theorem-first → hook-first → fix-first → factual opening)** | v68, v77, v86, v87 | No external feedback ground truth — all critiques are internal/simulated. Without real reviewer feedback, structure optimization is infinite speculation about an unknown audience. Freeze at v87 structure (factual opening). Revisit only after external feedback (post-arXiv submission). |
+
+---
+
+## FROZEN ITEMS
+
+These are identity/policy-level decisions. RCA pipeline CANNOT auto-approve changes to these items. User override only.
+
+| Item | Frozen Since | Scope | Trigger to Unfreeze |
+|------|-------------|-------|---------------------|
+| **Title** | v80 (2026-05-26) | Wording frozen at v77: "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?" | User explicitly requests title change |
+| **Abstract structure order** | v87 (2026-05-26) | Structure frozen at v87: factual opening → theorem → survey → proposal → scope | External reviewer feedback (post-arXiv submission) |
+| **§2.3 "Overlap-Dependent Deformation"** | v89 (2026-05-26) | Structure frozen at v89: 4-block hierarchy — (a) Definition & motivation, (b) Methodological role, (c) Physical context (speculative), (d) Null test. ~62 lines. | Genre boundary change (v81 strategic clarification superseded) or external reviewer feedback |
+| **§3.5 "An Unisolated Geometric Control Parameter"** | v90 (2026-05-26) | Structure frozen at v90: 3-block hierarchy — (a) Survey findings (table + footnote + search audit), (b) Structural independence from LF optimization, (c) Protocol motivation. ~60 lines. | External reviewer feedback (post-arXiv submission) |
+| **§1 "Introduction"** | v91 (2026-05-26) | Structure frozen at v91: 5-block — (a) EWF context (3 lines), (b) "In brief." plain-English summary + ESP/SME, (c) Proposition 1 math-only definition, (d) Protocol preview (3 lines, pointer to §4-7), (e) Claims A+B + verification. ~42 lines. | External reviewer feedback (post-arXiv submission) |
 
 ---
 
@@ -1309,4 +1459,4 @@ All v13→v37 changes applied via:
 
 ---
 
-*Generated 2026-05-25, dedup-optimized 2026-05-26. Covers v12 (baseline) through v81 (current).*
+*Generated 2026-05-25, dedup-optimized 2026-05-26. Covers v12 (baseline) through v88 (current).*
