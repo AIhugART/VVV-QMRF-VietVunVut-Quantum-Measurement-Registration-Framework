@@ -1,4 +1,4 @@
-# Supplemental S2: Complete Correlator Table (alpha=31 deg, mu=0.95, N=91,000)
+# Supplemental S2: Complete Correlator Table (theta=31 deg, mu=0.95, N=91,000)
 
 ## All 9 correlators
 
@@ -24,6 +24,6 @@ f_perp(+1,V)=0.9286, f_perp(-1,V)=0.0714
 
 ## Optimized angles
 
-alpha=31 deg, phi2=112 deg, phi3=217 deg, beta=20 deg
+theta=31 deg, phi2=112 deg, phi3=217 deg, beta_Bob=20 deg
 Coarse grid 15 deg steps (13,824 configs) + fine scan 2 deg around top candidates.
 FOM = min(n_sigma_LF, n_sigma_K9E) maximized.

@@ -23,11 +23,14 @@ At theta = 31 deg: |cos 31 deg|/2 = 0.8572/2 = 0.4286.
 
 ## 2. QM correlator for mixed setting (x=1, y=2)
 
-Standard QM, singlet state, visibility mu = 0.95:
+Standard QM, singlet state with SPDC noise, visibility mu = 0.95:
 
-  <A1 B2>_QM = -mu * cos(theta_alice - theta_bob)
+  <A1 B2>_QM = -cos(theta)
 
-At modified Bong geometry: <A1 B2>_QM = -0.8572 (numerical, see Table 5.1).
+For the SPDC noise model (noise within {|HV>, |VH>} subspace), both the
+pure singlet and the noise term yield identical z-vs-tilted correlators
+(-cos theta), so the mixed-setting correlator is mu-independent.
+At modified Bong geometry (theta=31 deg): <A1 B2>_QM = -cos(31) = -0.8572.
 
 ## 3. K9_E-modified correlator
 
@@ -57,17 +60,32 @@ outcome pairs with larger f_perp values, amplifying the geometric asymmetry.
 
 ## 4. First-order expansion
 
-Expanding the renormalized probability to first order in β:
+Expanding the renormalized probability to first order in β (BEFORE
+renormalization by Z):
 
-  δ⟨A1B2⟩ = −β · |cos θ| · ⟨A1B2⟩_QM² + O(β²)   [leading order]
+  δ⟨A1B2⟩ = −β · |cos θ| · ⟨A1B2⟩_QM² + O(β²)   [unrenormalized leading order]
 
 At θ = 31°: ⟨A1B2⟩_QM = −0.8572, |cos θ| = 0.8572:
-  δ ≈ −β · 0.8572 · 0.7347 = −0.6298·β   (leading order)
+  δ ≈ −β · 0.8572 · 0.7347 = −0.6298·β   (unrenormalized)
 
-At β = 0.07: δ ≈ −0.0441 (leading order) vs numerical −0.0080.
-The leading-order term overestimates |δ| because renormalization (Z > 1)
-partially cancels the raw f_perp weighting. Full numerical computation
-(including Z) is required for accurate δ values.
+**WARNING: This unrenormalized expansion overestimates |δ| by approximately
+a factor of 5.5.** The ratio numerical/LO is nearly constant across β:
+
+| β    | δ (LO)   | δ (numerical) | ratio |
+|------|----------|---------------|-------|
+| 0.01 | −0.0063  | −0.0011       | 0.181 |
+| 0.07 | −0.0441  | −0.0080       | 0.182 |
+| 0.10 | −0.0630  | −0.0115       | 0.183 |
+| 0.30 | −0.1889  | −0.0355       | 0.188 |
+| 0.50 | −0.3149  | −0.0609       | 0.193 |
+
+The overestimate arises because renormalization (Z = Σ P_QM · (1 − β·f_perp))
+contributes at the same order as the numerator shift: both are O(β), so the
+ratio P'/P_QM involves a cancellation between numerator and denominator
+corrections. The unrenormalized formula captures the correct **structural
+dependence** (vanishes iff θ = π/2, non-zero otherwise) but not the correct
+**magnitude**. All manuscript values (Table §5.3, β_min thresholds) use
+exact numerical computation including full renormalization.
 
 ## 5. Sensitivity
 

@@ -1,6 +1,6 @@
 # Supplemental S3: Reproducible Code Index
 
-All numerical predictions reproducible via `07_fits/` scripts.
+All numerical predictions reproducible via `papers/paper_002/supplemental/` scripts.
 
 ## Scripts
 
@@ -8,12 +8,12 @@ All numerical predictions reproducible via `07_fits/` scripts.
 |--------|---------|---------------|
 | K9S12_proposal.py | Full protocol: angle optimization, correlator table, K9_E predictions | 4-5 |
 | statistical_significance.py | FOM scan, Monte Carlo, sigma computations | 6 |
-| universal_theorem_lf_check.py | Sympy verification of Equatorial Cancellation Theorem | 3 |
+| RCA_full_verification_v93.py | Complete RCA verification of all manuscript v93 claims | All |
 
 ## Reproducing key numbers
 
 ```bash
-cd 07_fits
+cd papers/paper_002/supplemental
 python K9S12_proposal.py
 # Gen LF 1 = +0.0891 +- 0.0103 (8.6sigma)
 # delta<A1B2> = -0.0355 (20.8sigma at beta=0.3)
@@ -23,11 +23,15 @@ python K9S12_proposal.py
 
 Python 3.9+, numpy, scipy. No external data files needed (parameters inline).
 
-## Two K9_E models
+## K9_E deformation model
 
-- Additive (k9e_predictor.py): E = E_QM*(1 - beta*n_BSM*g_ctx), g_ctx=0.039
-- Multiplicative (proietti_raw_fit.py): E = E_QM*(1 - beta*g_eff)^n_BSM, g_eff=0.146
-Both predict suppression ratio ~2. See T1B_model_comparison_RCA.md for full analysis.
+The manuscript (Eq. 2-3) uses the overlap-dependent form:
+
+  P_K9E(a,b|x,y) = P_QM(a,b|x,y) * (1 - beta * f_perp(b,d)) / Z
+
+where f_perp(b,d) = 1 - |<b|d>|^2 and Z normalizes. This acts at the
+probability level, modifying outcome weights by the geometric overlap
+between Superobserver outcome b and Friend outcome d.
 
 ## Model parameters
 

@@ -2,7 +2,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?
 
-**Status:** Draft v93 — RCA corrections round 2 (2026-05-27): (1) §4.1 FOM values corrected to RCA_fom_beta03.py per-theta optimization results: 5.8 (20°), 8.6 (31°), 6.0 (45°), 0 (58°, Gen LF 1 negative), 0 (90°); >5σ range [20°, 45°]. (2) S2_derivation.md: removed incorrect "EXACT" multiplicative formula; replaced with numerical table + leading-order expansion. §2.3 FROZEN. §3.5 FROZEN. §1 FROZEN.
+**Status:** Draft v94 — RCA round 4 (2026-05-27): (1) Downgraded 'δ ∝ cos θ' to accurate 'δ vanishes iff θ = π/2; non-zero otherwise (exact θ-dependence numerical)' in §1, §3.1, §3.2 table, §5.3, §8.1–8.2, Discussion Table — cos θ is the unrenormalized leading-order structure but overestimates |δ| by ~5.5×; all manuscript values use exact numerical computation. (2) Softened θ = 31° from 'optimal' to 'near-optimal' (grid search shows θ = 35° yields FOM = 8.8 vs 8.6; broad plateau makes exact optimum non-critical). (3) S2_derivation.md: added quantitative 5.5× overestimate warning. (4) Updated stale RCA scripts. §2.3 FROZEN. §3.5 FROZEN.
 **Date:** 2026-05-26 | **Target:** arXiv quant-ph, then Phys. Rev. A
 
 ---
@@ -39,8 +39,9 @@ for LF optimization, not by design — the one measurement geometry (θ = π/2)
 at which an entire class of overlap-dependent quantum deformations cancels
 identically. A single waveplate breaks this accidental fixed point, enabling
 the first experimental probe of this class. The predicted signal
-δ⟨AB⟩ ∝ cos θ (at leading order in β) is a genuine observable, not a
-coordinate artifact (Lemma 1, §3.2). The paper's contribution is twofold: a geometric null
+δ⟨AB⟩ vanishes identically at θ = π/2 and is generically non-zero
+otherwise — a genuine observable, not a coordinate artifact (Lemma 1,
+§3.2). The paper's contribution is twofold: a geometric null
 theorem (Proposition 1) showing that equatorial measurements leave the
 overlap-only class systematically unexplored, and a single-waveplate
 protocol (§4–7) enabling its first experimental test. This paper makes no
@@ -54,8 +55,8 @@ probability takes the form P'(a,b|x,y) = P_QM(a,b|x,y) · g(|⟨b|d⟩|²) / Z,
 for any function g: [0,1] → ℝ and normalization Z. At the equatorial
 plane (θ = π/2), |⟨b|d⟩|² = 1/2 for all outcome pairs (b,d); hence
 g(|⟨b|d⟩|²) is constant and P' = P_QM identically — the equator is a
-geometric null point for every overlap-only deformation. The cos θ
-signal is invariant under any basis redefinition (Lemma 1, §3.2).
+geometric null point for every overlap-only deformation. The signal
+δ⟨AB⟩(θ) is invariant under any basis redefinition (Lemma 1, §3.2).
 
 Breaking the cancellation requires only a single quarter-wave plate:
 re-inserting the QWP into the Bong et al. (2020) apparatus tilts the
@@ -180,10 +181,12 @@ This depends only on Bloch sphere geometry. Eq. (2-3) serves only to quantify ex
 the theorem holds for any overlap function.
 The experimental consequence is that equatorial measurements cannot
 distinguish standard QM from any overlap-dependent deformation within this
-class. The distinctive experimental signature is δ⟨AB⟩ ∝ cos θ (at leading order
-in β): this scaling is distinct from conventional systematics (which either cancel in
-δ⟨AB⟩ or produce non-geometric θ-dependence) and is a genuine observable,
-not a gauge artifact (Lemma 1, §3.2).
+class. The distinctive experimental signature is that δ⟨AB⟩ vanishes
+identically at θ = π/2 and is generically non-zero for θ ≠ π/2 (exact
+θ-dependence determined numerically, §5.3): this structure is distinct from
+conventional systematics (which either cancel in δ⟨AB⟩ or produce
+non-geometric θ-dependence) and is a genuine observable, not a gauge
+artifact (Lemma 1, §3.2).
 
 ### 3.2 — Equatorial Cancellation Theorem
 
@@ -215,7 +218,7 @@ Superobserver's basis choice. The cos θ term in Eq. (4) is a function of
 the physical angle θ, not of the basis labels; it cannot be removed by
 any relabeling U because relabeling does not change θ. Passive
 relabeling predicts δ⟨AB⟩ = 0 for all θ and U; Eq. (2) predicts
-δ⟨AB⟩ ∝ β cos θ. The two are operationally distinct. ∎
+δ⟨AB⟩ ≠ 0 for θ ≠ π/2. The two are operationally distinct. ∎
 
 *Numerical illustration.* At θ = 31° with β = 0.07, the overlap-only
 model predicts δ⟨AB⟩ ≈ 0.008 (4.7σ at N = 91,000). Any unitary
@@ -254,7 +257,7 @@ former and is silent on the latter.
 | Property | KS Contextuality | Overlap-Dependence (this work) | Weak Measurement [18] |
 |----------|-----------------|-------------------------------|----------------------|
 | Depends on | Measurement setting | Measurement registration (geometric relationship to prior outcome) | Postselection choice |
-| Observable | Outcome distributions across incompatible settings | δ⟨AB⟩ ∝ cos θ at fixed setting, varying θ | Weak value A_w |
+| Observable | Outcome distributions across incompatible settings | δ⟨AB⟩(θ) vanishing iff θ = π/2, at fixed setting | Weak value A_w |
 | Constrained by | Bell-KS inequalities | Proposition 1 (equatorial cancellation) | — |
 
 ### 3.3 — Proof
@@ -291,10 +294,11 @@ All four overlap magnitudes |⟨b|d⟩|² = 1/2 — symmetric, balanced,
 δ⟨AB⟩ = 0 identically (flatline). Right panel: axis tilted to θ = 31°.
 Overlap asymmetry emerges: |⟨+1|H⟩|² = cos²(15.5°) ≈ 0.93,
 |⟨−1|H⟩|² = sin²(15.5°) ≈ 0.07 — the Superobserver basis aligns
-preferentially with one Friend outcome. Lower panel: predicted δ⟨AB⟩ ∝ cos θ
-curve, showing the exact null at θ = 90° (equator) and the linear onset as
-θ departs from the equatorial plane. The single-waveplate modification
-moves the measurement from the flatline at 90° to the sensitive region at
+preferentially with one Friend outcome. Lower panel: predicted δ⟨AB⟩(θ)
+curve (numerical), showing the exact null at θ = 90° (equator) and the
+onset of non-zero signal as θ departs from the equatorial plane. The
+single-waveplate modification moves the measurement from the flatline at
+90° to the sensitive region at
 31° (dashed vertical line).]
 
 Tilting to θ ≠ π/2 breaks this balance: the Superobserver's basis aligns
@@ -378,40 +382,39 @@ Tilting the Superobserver opens access to this previously untested sector (§4).
 
 Any θ ≠ π/2 breaks the cancellation. A grid search over (θ, φ₂, φ₃, β_Bob)
 maximizing FOM(θ, β, N) = min(n_σ_LF, n_σ_signal) with β = 0.30 yields
-θ = 31° as optimal. At β = 0.30, n_σ_signal ≫ n_σ_LF across all θ, so
-the FOM is bounded by n_σ_LF. Representative FOM values at μ = 0.95,
-β = 0.30 (per-theta angle re-optimization, Supplemental S2): 5.8
-(θ = 20°), 8.6 (θ = 31°, optimal), 6.0 (θ = 45°), 0 (θ = 58°,
-Gen LF 1 becomes negative), and 0 (θ = 90°, cancellation); FOM > 5σ for
-θ ∈ [20°, 45°]. At the minimum detectable β ≈ 0.07, the FOM is
-signal-limited: optimal θ = 46° (FOM = 5.4) and >5σ range
-θ ∈ [35°, 46°] (Supplemental S2).
-[Figure 2: Figure of merit vs polar angle θ, showing optimum at θ ≈ 31°
-(β = 0.30) and 5σ detection boundary spanning θ ∈ [20°, 45°].]
+a broad plateau peaking near θ ≈ 31°–35° (FOM = 8.6–8.8). At β = 0.30,
+n_σ_signal ≫ n_σ_LF across all θ, so the FOM is bounded by n_σ_LF.
+Representative FOM values at μ = 0.95, β = 0.30 (per-theta angle
+re-optimization, Supplemental S2): 5.8 (θ = 20°), 8.6 (θ = 31°),
+8.8 (θ = 35°), 6.0 (θ = 45°), 0 (θ = 58°, Gen LF 1 becomes negative),
+and 0 (θ = 90°, cancellation); FOM > 5σ for θ ∈ [20°, 45°]. At the
+minimum detectable β ≈ 0.07, the FOM is signal-limited: optimal θ = 46°
+(FOM = 5.4) and >5σ range θ ∈ [35°, 46°] (Supplemental S2).
+[Figure 2: Figure of merit vs polar angle θ, showing plateau near
+θ ≈ 31°–35° (β = 0.30) and 5σ detection boundary spanning θ ∈ [20°, 45°].]
 The wide optimal window means the protocol tolerates angular misalignment of
 ±11° before dropping below 5σ — substantially more forgiving than the
 alignment precision demanded by the standard Bong protocol.
 
-The optimum at θ = 31° reflects a trade-off between two monotonic trends.
-As θ → 0°, the |cos θ| signal is largest, but the Gen LF 1 violation
-weakens because measurement settings approach a common axis, reducing the
-inequality's capacity to separate LF-violating from LF-satisfying theories.
-As θ → 90°, the LF violation is strongest but the signal vanishes
-(cos θ → 0, §3). Analytically, the figure of merit approximates
-FOM(θ) ∝ min(|cos θ|, f_LF(θ)), where f_LF(θ) is a monotonically
-increasing function of θ (strongest LF violation at equator); the
-intermediate optimum emerges from the intersection of these competing
-trends, with the exact location set by the Gen LF 1 inequality
-coefficients via grid search (Supplemental S2). The broad plateau
-(FOM > 5σ for θ ∈ [20°, 55°]) means the exact optimum is not critical —
-any angle in this range produces a viable experiment.
+The plateau near θ ≈ 31°–35° reflects a trade-off between two monotonic
+trends. As θ → 0°, the overlap asymmetry is largest, but the Gen LF 1
+violation weakens because measurement settings approach a common axis,
+reducing the inequality's capacity to separate LF-violating from
+LF-satisfying theories. As θ → 90°, the LF violation is strongest but
+the signal vanishes (equatorial cancellation, §3). The intermediate
+plateau emerges from the intersection of these competing trends, with the
+exact location set by the Gen LF 1 inequality coefficients via grid search
+(Supplemental S2). The broad plateau (FOM > 5σ for θ ∈ [20°, 45°]) means
+the exact optimum is not critical — any angle in this range produces a
+viable experiment. We adopt θ = 31° as the reference angle throughout
+because it coincides with the QWP-determined tilt in the Bong apparatus.
 
 Gen LF 1(θ) and δ⟨AB⟩(θ) are independent observables from the same
 coincidence data. Gen LF 1 aggregates all eleven correlators; its
 θ-dependence is a standard QM prediction — LF violation weakens as
 measurement axes approach a common direction. δ⟨AB⟩ isolates deviations
 of individual mixed-setting correlators from their QM expectation. A
-shift in Gen LF 1 without the cos θ pattern in δ⟨AB⟩ would indicate
+shift in Gen LF 1 without the θ-dependent pattern in δ⟨AB⟩ would indicate
 apparatus misalignment, not β; conversely, δ⟨AB⟩ ≠ 0 with Gen LF 1
 matching its QM prediction is the signature of overlap-dependent physics
 (Table §8.1). The φ-scramble control (§7) provides additional
@@ -524,12 +527,15 @@ thresholds are illustrative — no existing theory predicts a specific β
 value; they quantify the experiment's capability for Eq. (2-3).
 
 **Experimental discriminator.** Standard QM predicts δ⟨AB⟩ = 0 for all θ.
-Eq. (2-3) predicts δ⟨AB⟩ ∝ β cos θ at leading order — a
-functional form testable by θ-sweep (§8.2). The cos θ signature is not a
-reparameterization of QM: it is distinct from conventional systematics
-(which either cancel in δ⟨AB⟩ or produce non-geometric θ-dependence),
-making a cos θ signal difficult to reproduce without overlap-dependent
-physics (Lemma 1, §3.2).
+Eq. (2-3) predicts δ⟨AB⟩ = 0 at θ = π/2 (equatorial cancellation) and
+δ⟨AB⟩ ≠ 0 for θ ≠ π/2, with exact θ-dependence determined numerically
+(the unrenormalized leading-order structure goes as cos θ, but
+renormalization modifies the functional form; see Supplemental S2). This
+signature is testable by θ-sweep (§8.2) and is not a reparameterization
+of QM: it is distinct from conventional systematics (which either cancel
+in δ⟨AB⟩ or produce non-geometric θ-dependence), making a θ-dependent
+δ⟨AB⟩ difficult to reproduce without overlap-dependent physics
+(Lemma 1, §3.2).
 
 **β in context.** The coupling β has no a priori prediction — analogous to
 SME coefficients at inception (see §2.3 for the methodological parallel).
@@ -561,7 +567,9 @@ additional data acquisition is needed for the combined analysis.
 ## Section 6 — Statistical Analysis
 
 Poisson statistics: σ(⟨A_x B_y⟩) = √[(1 − ⟨A_x B_y⟩²) / N]. For Gen LF 1
-(11 terms, coefficients up to ±2): σ(S_LF1) = √20/√N ≈ 0.0103 at N = 91,000.
+(11 terms, coefficients up to ±2): σ(S_LF1) = √[Σ c_i²(1 − ⟨v_i⟩²)/N] ≈ 0.0103
+at N = 91,000 (exact term-by-term propagation; the upper bound √20/√N ≈ 0.015
+assumes all correlators near zero).
 
 Minimum sample for 5σ LF detection: N_min ≈ 30,800. N = 91,000 provides a
 factor of 3 margin.
@@ -570,7 +578,7 @@ Monte Carlo (10,000 runs): Gen LF 1 ≥ 5σ in 99.97%; β = 0.07 detected in
 ~38% at 5σ (single setting, n_σ = 4.7; see §5.3), >99% (four combined settings,
 n_σ = 9.4); β = 0.05 in ~90% at 5σ (combined, n_σ = 6.7). A conservative Bayesian analysis
 inflating Poisson uncertainties by 20% yields β_min ≈ 0.046 (combined); the FOM
-plateau (§4.1: >5σ for θ ∈ [20°, 55°]) ensures viability under substantial
+plateau (§4.1: >5σ for θ ∈ [20°, 45°]) ensures viability under substantial
 systematic degradation. Detailed Monte Carlo, correlated-drift modeling, and
 fake-signal injection methodology are provided in Supplemental S2.
 
@@ -597,7 +605,7 @@ contributions sub-dominant to Poisson noise (σ ≈ 0.0017 at N = 91,000):
 
 RSS total remains below the Poisson floor. Exact σ values and Monte Carlo
 correlation analysis in Supplemental S2. A φ-scramble control (N_φ ≥ 10, fit
-δ⟨AB⟩(φ) = A + B cos(2φ) + C sin(2φ)) distinguishes geometric cos θ
+δ⟨AB⟩(φ) = A + B cos(2φ) + C sin(2φ)) distinguishes geometric θ-dependent
 signal (A ≠ 0, B,C ≈ 0) from birefringence artifacts (B or C ≠ 0) at
 the 5σ level. Detector inefficiency cannot fake a β signal: residual
 θ-dependent efficiency biases δ toward zero [9].
@@ -620,28 +628,30 @@ Full robustness analysis in Supplemental S2.
 A non-zero δ⟨AB⟩ at θ = 31° would demonstrate Superobserver-Friend
 correlations departing from standard QM at a previously untested geometry.
 The overlap-only class is definitively falsified if: (i) a θ-sweep
-(15°–75°) shows δ⟨AB⟩ = 0 at all angles to within ±0.003 (statistical
-floor at N = 200,000 per setting), excluding the cos θ signature; or
-(ii) δ⟨AB⟩(θ) deviates systematically from cos θ after accounting for
-systematics. Either outcome is informative: falsification closes the
-overlap-only window; a cos θ signal opens it.
+(15°–75°) shows δ⟨AB⟩ = 0 at all non-equatorial angles to within ±0.003
+(statistical floor at N = 200,000 per setting); or (ii) δ⟨AB⟩(θ) is
+non-zero at θ = π/2 (violating the equatorial cancellation theorem) after
+accounting for systematics. Either outcome is informative: falsification
+closes the overlap-only window; a θ-dependent signal opens it.
 
 | Observable | Standard QM | Overlap-only (Eq. 2-3) |
 |-----------|------------|------------------------|
 | Gen LF 1 at θ = 31° | +0.0891 ± 0.0103 (8.6σ) | Same (LF violation preserved) |
-| δ⟨AB⟩ at θ = 31° | 0 | β cos(31°) ≈ 0.857β |
-| δ⟨AB⟩ at θ = π/2 | 0 | 0 (equatorial cancellation) |
-| δ⟨AB⟩(θ) functional form | δ = 0 ∀θ | δ ∝ cos θ (leading order) |
+| δ⟨AB⟩ at θ = 31° | 0 | ≈ 0.115β (numerical) |
+| δ⟨AB⟩ at θ = π/2 | 0 | 0 (equatorial cancellation, exact) |
+| δ⟨AB⟩(θ) functional form | δ = 0 ∀θ | δ = 0 iff θ = π/2; non-zero otherwise (exact form numerical) |
 
 Full interpretation analysis in Supplemental S3.
 
 ### 8.2 — Future Directions
 
 **θ-sweep.** A systematic scan from θ = 15° to 75° in ~10° steps would
-directly map the cos θ dependence predicted by Eq. (4). To prevent
-analysis bias, the sweep should be performed blind (randomized θ sequence,
-cos θ fit finalized before unmasking). A null result across all θ
-excludes the overlap-only class to β ≈ 0.02 (N = 200,000 per setting).
+directly map the θ-dependence of δ⟨AB⟩ predicted by Eq. (2-3), testing
+for the equatorial zero (δ = 0 at θ = 90°) and non-zero signal at
+θ ≠ 90°. To prevent analysis bias, the sweep should be performed blind
+(randomized θ sequence, analysis finalized before unmasking). A null
+result across all θ excludes the overlap-only class to β ≈ 0.02
+(N = 200,000 per setting).
 
 **Multi-observer extension.** A generalization to N > 2 observers is
 outlined in Supplemental S3; rigorous derivation of the required bridge

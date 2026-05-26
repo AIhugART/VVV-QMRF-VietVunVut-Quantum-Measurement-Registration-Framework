@@ -10,13 +10,34 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Compass:** VVV-QMRF-EX (intelligence only — EX flag K-PENDING-RCA, stress points)
 **Method:** 3-Round RCA x 5-Why x scoring threshold 4/5
 **Ranking formula:** Risk Score = H x W x (1 + A)
-**Tiebreaker:** Risk Score bang nhau -> sort by H (desc) -> W (desc) -> A (desc)
+**Tiebreaker:** Risk Score bang nhau -> sort by H (desc) -> W (desc) -> A (desc) -> Trace score (ascending)
 **Shared component rule:** Components appearing in both tables (T5 K_ctx, K5_prospective) MUST have identical H/W/A/Risk scores. Any score change to a shared component MUST be applied to both tables.
 
-**Ngay:** 2026-05-24 16:22 UTC+7
-**Version:** v1.4 — K9E-PAT CLOSED (UNRESOLVABLE) + K9_E impl DOCUMENTED (Post-v30 RCA session, 2x 4.92/5)
-**Previous:** v1.3 (2026-05-24) — Dual-table split: Table 1 + Table 2
+**Ngay:** 2026-05-25 14:30 UTC+7
+**Version:** v1.5 — AHP Status Model Extension (DORMANT+ARCHIVED) + Tiebreaker #4 (Trace score) + v1.0→v1.1 changelog (3-Round RCA decisions A/B/C, 2026-05-25)
+**Previous:** v1.4 (2026-05-24) — K9E-PAT CLOSED (UNRESOLVABLE) + K9_E impl DOCUMENTED
 **Next audit:** 2026-05-31
+
+---
+
+## Changelog v1.4 -> v1.5
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|-------------|
+| **METHODOLOGY** | Tiebreaker chain | H→W→A (3-level) | H→W→A→Trace (4-level) | 3-Round RCA Decision A (5.00/5): 3 dead-tie pairs khong the phan biet voi H/W/A alone. Trace score (SOT) breaks 2/3 ties. Pair con lai (E1-E16=BE↔QM) o LOW band → chap nhan arbitrary. |
+| **RESOLVE** | E1-E16 SOT | SOT=2-4/6 (range) | SOT=2/6 (worst-case) | Decision A prerequisite: "weakest link" principle — risk cua 16-postulate group = risk of weakest postulate. |
+| **EXTENSION** | AHP Status Model | 5 statuses (OPEN, MONITORING, DEFERRED, DECISION-LOCKED, CLOSED) | 7 statuses (+DORMANT, +ARCHIVED) | 3-Round RCA Decision C (4.33/5): AHP thieu category cho unactionable risks (DECISION-LOCKED→DORMANT) va resolved-but-kept risks (CLOSED-UNRESOLVABLE→ARCHIVED). New section: AHP Status Model Extension. |
+| **RECLASSIFY** | P10-TIM | Status=DECISION-LOCKED, Label=[AH-LOCK] | Status=DORMANT, Label=[AH-DORMANT] | Decision C: P10-TIM la "unactionable" — raw event data external dependency. DORMANT = risk real nhung khong the action, reactivates on trigger. |
+| **RECLASSIFY** | K9E-PAT | Status=CLOSED (v31), Label=[CLOSED-UNRESOLVABLE] | Status=ARCHIVED (v31), Label=[AH-ARCHIVED] [CLOSED-UNRESOLVABLE] | Decision C: K9E-PAT RCA 4.92/5 → ARCHIVED. Kept in table for historical traceability, audit N/A, reactivate only with K9-S12 data. |
+| **ADD** | v1.0→v1.1 Changelog | Missing historical delta | T5 H=6→5 delta documented (T9 eliminated A-E1) | Decision B (4/5): documentation gap — T5 score change reason not previously documented. Reconstructed from Score Evolution table + T9 RCA verdict. |
+| **FIX** | K9E-PAT Score Evolution row | 5 columns (missing v1.2 Risk) | 6 columns (aligned with header) | Decision B (5/5): markup error — manual edit after CLOSED status left misaligned column. Root cause: no automated column count validation. |
+| **UPDATE** | Audit Schedule | K9E-PAT=Weekly, P10-TIM=N/A | K9E-PAT=On trigger (ARCHIVED), P10-TIM=On trigger (DORMANT) | Sync with new status model. ARCHIVED items have no active audit cycle. |
+| **FIX** | Rank inversion P10-TIM↔BE↔QM | P10-TIM #9 (9.0), BE↔QM #10 (9.6) | BE↔QM #9 (9.6), P10-TIM #10 (9.0) | RCA 5-Why: BE↔QM Risk=9.6 > P10-TIM Risk=9.0 → BE↔QM must rank above P10-TIM. Root cause: BE↔QM appended at #10 in v1.2 without re-ranking P10-TIM (grandfathered). Methodology gap: no "insert & re-rank" verification step for new components. |
+| **ADD** | Dead-tie note E1-E16↔BE↔QM | No documentation | Dead-tie note on both components | E1-E16=BE↔QM: all 4 tiebreakers equal (H=4, W=2, A=0.2, Trace=2). Arbitrary order; E1-E16 first by historical precedence. |
+| **FIX** | Header tiebreaker | 3-level (H→W→A) | 4-level (H→W→A→Trace) | Sync with methodology section — missed in Decision A implementation. |
+| **RECLASSIFY** | phi-map status | OPEN | DEFERRED | RCA 5-Why: "OPEN" misleading — phi-map is in long-term Track B research program (P3), not unattended gap. Giai phap uu tien already DEFER. Both Table 1 and Table 2 updated. |
+| **FIX** | K9_E impl status inconsistency | Detail=DOCUMENTED, Summary=OPEN | Detail=MONITORING, Summary=MONITORING | RCA 5-Why: divergence characterized in v31 but Status Summary never updated. Now MONITORING — active watch until K9-S12 selects canonical. |
+| **UPDATE** | Status Summaries (both tables) | Table 1: OPEN=2; Table 2: OPEN=1 | Table 1: OPEN=0, DEFERRED=2, MONITORING=5; Table 2: OPEN=0, DEFERRED=2 | All OPEN components reclassified. OPEN count = 0 across both tables. |
 
 ---
 
@@ -125,6 +146,17 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | **β** (K9_E suppression strength) | β=0.598 (Proietti D1 fit) | **FREE PARAMETER (MEASUREMENT TARGET)** | Measured, not derived. Analogous to α ≈ 1/137, G, g. | H=2, Risk=6.0 (LOW) |
 | β universal | Modeling choice (Occam's razor) | **MODELING CHOICE** — cross-experiment verification pending | 1 dataset only (D1). 3-observer experiment can cross-check. | H=2, Risk=3.0 (LOW) |
 
+## Changelog v1.0 -> v1.1
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|-------------|
+| **SCORE CHANGE** | T5 K_ctx | H=6, Risk=21.6 (#2) | H=5, Risk=18.0 (#3) | [A-E1] ELIMINATED boi T9 (2026-05-24). T9 cung cap formal construction cho K_ctx — khong con la "missing definition." Residual risk: observer set selection chua formal hoa. |
+| **SCORE CHANGE** | phi-map K→B(H) | H=6, Risk=21.6 (#1) | H=6, Risk=18.0 (#2) | W giam 3→2: structural weight reassessed — phi-map la Class D conjecture, khong block K9_E Class C. |
+| **SCORE CHANGE** | P10-NOISE | H=5, Risk=22.5 (#3) | H=5, Risk=18.0 (#4) | A giam 0.5→0.2: anchor penalty reassessed — co experimental literature ve phase noise, khong con WEAK anchor. |
+| Re-rank (all) | — | [A-E3] #1 (22.5), T5 #2 (21.6), phi-map #6 (18.0) | phi-map #1, T5 #3, P10-NOISE #2 | [A-E3] removed in v1.2; pre-removal T5 scored higher. Full score evolution tracked in Score Evolution table. |
+
+Note: v1.0 changelog reconstructed from Score Evolution table + git history (`897028b`, `bc6f2fc`). Delta reasoning extracted from component status fields and T9 RCA verdict.
+
 ---
 
 ## Ranking Methodology (3-Round RCA)
@@ -150,8 +182,12 @@ Risk = H x W x (1 + A)
   W = Structural weight (1-3)
   A = Anchor penalty (0-0.5)
 
-Tiebreaker: H (desc) -> W (desc) -> A (desc)
+Tiebreaker: H (desc) -> W (desc) -> A (desc) -> Trace score (ascending)
 ```
+
+**Trace score** = SOT traceability score (0-6) from `03_sot_traceability.md`. Lower score = fewer SOT anchors = higher hallucination risk. When H, W, A are equal, the component with lower Trace score ranks higher. If Trace score is also equal (persistent dead-tie), order is arbitrary with methodology note.
+
+**E1-E16 SOT resolution:** E1-E16 trace score resolved to `2` (worst-case/minimum of range 2-4). Applies "weakest link" principle: risk of the 16-postulate group = risk of the postulate with weakest trace.
 
 ### Round 3 — Calibrate & Lock
 
@@ -178,8 +214,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Risk Score** | 6 x 2 x 1.5 = **18.0** |
 | **Risk Score band** | **HIGH** (15-19.9) |
 | **Root cause type** | Type 5 — Structural Gap |
-| **Status** | **OPEN** — Track B ongoing, Phases 1-3 complete |
-| **Full Label** | `[AH-WARN] [RS-HIGH] [AH-WEAK]` |
+| **Status** | **DEFERRED** — Track B ongoing (Phases 1-3 complete, Phases 4+ pending). Class D conjecture; not actively blocking. RCA 5-Why (2026-05-25): "OPEN" misleading — phi-map is in long-term research program, not unattended gap. |
+| **Full Label** | `[AH-WARN] [RS-HIGH] [AH-DEFER]` |
 | **EX compass** | Flag: phi-map la "largest structural unknown" trong VVV-QMRF |
 | **Giai phap uu tien** | DEFER (long-term research program) |
 | **Neu hallucination that:** | Khong anh huong K9_E Class C, nhung VVV-QMRF mat "bridge to QM" |
@@ -258,8 +294,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Risk Score** | 5 x 2 x 1.2 = **12.0** |
 | **Risk Score band** | **MEDIUM** (10-14.9) |
 | **Root cause type** | Type 3 — Broken Trace (data precision gap: 4 data points, sigma~0.04 → ratio error ±1.72) |
-| **Status** | **CLOSED (v31)** — VERDICT C: UNRESOLVABLE with current data. "Ratio = -0.78" la red herring: ratio cua hai sub-sigma residuals. Ca hai model deu predict ratio ~2 (additive: 2.000, multiplicative: 1.913). 4 data points khong du de test pattern. P10-NOISE confirms. Deferred to K9-S12 optical experiment. RCA 4.92/5. See `04_governance/T1C_k9e_pat_resolution.md`. |
-| **Full Label** | `[AH-LOW] [RS-LOW] [CLOSED-UNRESOLVABLE]` |
+| **Status** | **ARCHIVED (v31)** — VERDICT C: UNRESOLVABLE with current data. "Ratio = -0.78" la red herring: ratio cua hai sub-sigma residuals. Ca hai model deu predict ratio ~2 (additive: 2.000, multiplicative: 1.913). 4 data points khong du de test pattern. P10-NOISE confirms. Deferred to K9-S12 optical experiment. RCA 4.92/5. See `04_governance/T1C_k9e_pat_resolution.md`. |
+| **Full Label** | `[AH-LOW] [RS-LOW] [AH-ARCHIVED] [CLOSED-UNRESOLVABLE]` |
 | **Deadline** | RESOLVED — deferred to K9-S12 experiment |
 
 ### Rank 6: K9_E two implementations — Additive vs Multiplicative divergence
@@ -275,9 +311,9 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Risk Score** | 4 x 2 x 1.5 = **12.0** |
 | **Risk Score band** | **MEDIUM** (10-14.9) |
 | **Root cause type** | Type 2 — Missing Definition |
-| **Status** | **DOCUMENTED (v31)** — Additive vs multiplicative divergence phan tich xong. Additive (g_ctx=0.039): delta_1BSM=-0.0164, ratio=2.000. Multiplicative (g_eff=0.146): delta_1BSM=-0.0580, ratio=1.913. Hai model agree ve PATTERN (ratio~2) nhung khac ve MAGNITUDE (~3.5x). Khong the phan biet voi 4 data points. See `04_governance/T1B_model_comparison_RCA.md`. |
-| **Full Label** | `[AH-LOW] [RS-MED] [AH-DOCUMENTED]` |
-| **Deadline** | P2 — duoc giam nhe. Van con 2 implementations, nhung divergence da duoc characterize. |
+| **Status** | **MONITORING** — Divergence characterized (v31): additive vs multiplicative agree on PATTERN (ratio~2), differ on MAGNITUDE (~3.5x). 4 data points insufficient to select canonical. Canonical resolution deferred to K9-S12 optical experiment. See `04_governance/T1B_model_comparison_RCA.md`. RCA 5-Why (2026-05-25): was DOCUMENTED but counted as OPEN in summary — inconsistency fixed. MONITORING = active watch until K9-S12 data selects canonical. |
+| **Full Label** | `[AH-LOW] [RS-MED]` |
+| **Deadline** | P2 — duoc giam nhe. Van con 2 implementations, divergence characterized. K9-S12 experiment expected to resolve canonical choice. |
 
 ### Rank 7: K5_prospective — v29 axiom extension
 
@@ -305,32 +341,16 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Hallucination score (H)** | **4/10** (Xanh duong — BE lineage ro rang, cross-domain interpretive) |
 | **Structural weight (W)** | **2** (MEDIUM — BE grounding, K9_E khong depends on all 16) |
 | **Anchor penalty (A)** | **0.2** (MODERATE) |
-| **Trace score (SOT)** | 2-4/6 |
+| **Trace score (SOT)** | 2/6 |
 | **Risk Score** | 4 x 2 x 1.2 = **9.6** |
 | **Risk Score band** | **LOW** (< 10) |
 | **Root cause type** | Type 1 — Category Error (risk: BE as physical registration logic) |
 | **Status** | **MONITORING** |
 | **Full Label** | `[AH-LOW] [RS-LOW]` |
 | **Deadline** | LOW (P3) |
+| **Dead-tie note** | #8 E1-E16 = #9 BE↔QM (H=4=4, W=2=2, A=0.2=0.2, Trace=2=2 — all 4 tiebreakers equal). Arbitrary order; E1-E16 placed first by historical precedence (added to Top 10 v1.0, BE↔QM added v1.2). |
 
-### Rank 9: P10-TIM — Null-model N0 omitted (DECISION-LOCKED)
-
-| Thuoc tinh | Gia tri |
-|------------|---------|
-| **Component** | Null-model N0: "QM with uniform visibility V=1" — omitted, needs raw event data |
-| **Project** | VVV-QMRF Class C — K9_E null-model validation |
-| **Hallucination score (H)** | **3/10** (Xanh duong — omitted analysis, khong hallucination) |
-| **Structural weight (W)** | **2** (MEDIUM) |
-| **Anchor penalty (A)** | **0.5** (WEAK — can raw event data khong co san) |
-| **Trace score (SOT)** | 1/6 |
-| **Risk Score** | 3 x 2 x 1.5 = **9.0** |
-| **Risk Score band** | **LOW** (< 10) |
-| **Root cause type** | Type 5 — Structural Gap (raw event data unavailable) |
-| **Status** | **DECISION-LOCKED** — RCA Round 4 |
-| **Full Label** | `[AH-LOW] [RS-LOW] [AH-LOCK]` |
-| **Deadline** | LOW (P3) — depends on external data |
-
-### Rank 10: BE↔QM cross-domain mapping — Category error risk (NEW)
+### Rank 9: BE↔QM cross-domain mapping — Category error risk
 
 | Thuoc tinh | Gia tri |
 |------------|---------|
@@ -349,6 +369,24 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Giai phap uu tien** | DOCUMENT (boundary statement cho tung mapping link) |
 | **Neu hallucination that:** | BE-QM mapping tro thanh pseudo-science |
 | **Deadline** | LOW (P3) — documentation improvement |
+| **Dead-tie note** | #8 E1-E16 = #9 BE↔QM (H=4=4, W=2=2, A=0.2=0.2, Trace=2=2 — all 4 tiebreakers equal). Arbitrary order; E1-E16 placed first by historical precedence (added to Top 10 before BE↔QM). |
+
+### Rank 10: P10-TIM — Null-model N0 omitted (DORMANT)
+
+| Thuoc tinh | Gia tri |
+|------------|---------|
+| **Component** | Null-model N0: "QM with uniform visibility V=1" — omitted, needs raw event data |
+| **Project** | VVV-QMRF Class C — K9_E null-model validation |
+| **Hallucination score (H)** | **3/10** (Xanh duong — omitted analysis, khong hallucination) |
+| **Structural weight (W)** | **2** (MEDIUM) |
+| **Anchor penalty (A)** | **0.5** (WEAK — can raw event data khong co san) |
+| **Trace score (SOT)** | 1/6 |
+| **Risk Score** | 3 x 2 x 1.5 = **9.0** |
+| **Risk Score band** | **LOW** (< 10) |
+| **Root cause type** | Type 5 — Structural Gap (raw event data unavailable) |
+| **Status** | **DORMANT** — DECISION-LOCKED (RCA Round 4); reactivates when raw event data available |
+| **Full Label** | `[AH-LOW] [RS-LOW] [AH-DORMANT]` |
+| **Deadline** | LOW (P3) — depends on external data |
 
 ---
 
@@ -367,10 +405,11 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 
 | Status | Count | Components |
 |--------|-------|------------|
-| **OPEN** | 2 | phi-map, K9_E implementations |
-| **MONITORING** | 4 | T5 K_ctx, K5_prospective, E1-E16, BE↔QM |
-| **DEFERRED** | 1 | T4-H Steps 3-4 |
-| **DECISION-LOCKED** | 1 | P10-TIM |
+| **OPEN** | 0 | — |
+| **MONITORING** | 5 | T5 K_ctx, K5_prospective, K9_E implementations, E1-E16, BE↔QM |
+| **DEFERRED** | 2 | phi-map, T4-H Steps 3-4 |
+| **DORMANT** | 1 | P10-TIM |
+| **ARCHIVED** | 1 | K9E-PAT |
 | **RECLASSIFIED** | 1 | [A-E3] → FREE PARAMETER (removed v1.2) |
 
 ---
@@ -394,8 +433,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Risk Score** | 6 x 2 x 1.5 = **18.0** |
 | **Risk Score band** | **HIGH** (15-19.9) |
 | **Root cause type** | Type 5 — Structural Gap |
-| **Status** | **OPEN** — Track B ongoing, Phases 1-3 complete |
-| **Full Label** | `[AH-WARN] [RS-HIGH] [AH-WEAK]` |
+| **Status** | **DEFERRED** — Track B ongoing (Phases 1-3 complete, Phases 4+ pending). Class D conjecture; long-term research program. |
+| **Full Label** | `[AH-WARN] [RS-HIGH] [AH-DEFER]` |
 | **Giai phap uu tien** | DEFER (long-term research program) |
 | **Neu hallucination that:** | VVV-QMRF mat "bridge to QM" |
 | **Deadline** | LOW (P3) — long-term |
@@ -464,7 +503,7 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Hallucination score (H)** | **4/10** (Xanh duong — BE lineage ro rang, cross-domain interpretive) |
 | **Structural weight (W)** | **2** (MEDIUM — BE grounding, K9_E khong depends on all 16) |
 | **Anchor penalty (A)** | **0.2** (MODERATE) |
-| **Trace score (SOT)** | 2-4/6 |
+| **Trace score (SOT)** | 2/6 |
 | **Risk Score** | 4 x 2 x 1.2 = **9.6** |
 | **Risk Score band** | **LOW** (< 10) |
 | **Root cause type** | Type 1 — Category Error (risk: BE as physical registration logic) |
@@ -508,9 +547,9 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 
 | Status | Count | Components |
 |--------|-------|------------|
-| **OPEN** | 1 | phi-map |
+| **OPEN** | 0 | — |
 | **MONITORING** | 4 | T5 K_ctx, K5_prospective, E1-E16, BE↔QM |
-| **DEFERRED** | 1 | T4-H Steps 3-4 |
+| **DEFERRED** | 2 | phi-map, T4-H Steps 3-4 |
 
 #### Theo Classification
 
@@ -530,12 +569,12 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | P10-NOISE | 18.0 (#4) | 18.0 (#3) | **18.0 (#2)** | Table 1 | — |
 | T5 K_ctx | 21.6 (#2) | 18.0 (#4) | **18.0 (#3)** | Table 1 + Table 2 (Shared) | — |
 | T4-H Steps 3-4 | 18.0 (#3) | 18.0 (#5) | **18.0 (#4)** | Table 1 + Table 2 | — |
-| K9E-PAT | 12.0 (#5) | **CLOSED (v1.4)** | Table 1 | — |
+| K9E-PAT | 12.0 (#5) | 12.0 (#5) | **CLOSED (v1.4)** | Table 1 | ↓↓ |
 | K9_E implementations | 12.0 (#8) | 12.0 (#7) | **12.0 (#6)** | Table 1 | — |
 | K5_prospective | 12.0 (#9) | 12.0 (#8) | **12.0 (#7)** | Table 1 + Table 2 (Shared) | — |
 | E1-E16 | 9.6 (#7) | 9.6 (#9) | **9.6 (#8)** | Table 1 + Table 2 | — |
-| P10-TIM | 9.0 (#10) | 9.0 (#10) | **9.0 (#9)** | Table 1 | — |
-| BE↔QM mapping | — | — | **9.6 (#10)** | Table 1 + Table 2 | NEW |
+| P10-TIM | 9.0 (#10) | 9.0 (#10) | **9.0 (#10)** | Table 1 | — |
+| BE↔QM mapping | — | — | **9.6 (#9)** | Table 1 + Table 2 | NEW |
 
 ---
 
@@ -558,13 +597,43 @@ Khong nam trong Top 10 (khong phai assumption), nhung can duoc track:
 | P10-NOISE | Table 1 | 2026-05-31 | Weekly | Truoc khi public "genuine" claim |
 | T5 K_ctx | Both | 2026-05-31 | Weekly | Moi khi T3/T9 duoc update. Sync both tables. |
 | T4-H Steps 3-4 | Both | 2026-06-30 | Monthly | Khi co resource |
-| K9E-PAT | Table 1 | 2026-05-31 | Weekly | Moi khi re-analyze raw data |
+| K9E-PAT | Table 1 | N/A | On trigger (reactivate) | ARCHIVED; reactivate if K9-S12 experiment provides new data |
 | K9_E implementations | Table 1 | 2026-05-31 | Weekly | Moi numerical prediction |
 | K5_prospective | Both | 2026-05-31 | Weekly | Moi khi K5/K9_E thay doi. Sync both tables. |
 | E1-E16 | Both | 2026-06-30 | Monthly | Moi khi BE SOT thay doi |
-| P10-TIM | Table 1 | N/A | On trigger | Khi raw event data available |
+| P10-TIM | Table 1 | N/A | On trigger (reactivate) | DORMANT; reactivates khi raw event data available |
 | BE↔QM mapping | Both | 2026-06-30 | Monthly | Moi khi mapping files thay doi |
 | **β (Free Param)** | Table 1 | 2026-05-31 | Weekly | Moi experimental data moi |
+
+---
+
+## AHP Status Model Extension (v1.5)
+
+**Purpose:** Mo rong AHP status model de phan biet "unactionable" risks (DORMANT) va "resolved-but-kept" risks (ARCHIVED). Tranh nham lan giua active monitoring, deferred, va truly dormant.
+
+**RCA Decision:** 3-Round RCA (C2+C3, 4.33/5) — AHP thieu category cho DECISION-LOCKED (dormant, unactionable) va CLOSED-UNRESOLVABLE (archived, kept for reference). Them 2 status moi:
+
+### Status Definitions
+
+| Status | Meaning | Action | Example |
+|--------|---------|--------|---------|
+| **DORMANT** | Risk is real but unactionable — blocked by external dependency. Not currently monitored. Reactivates automatically when blocker resolves. | Remove from active monitoring; keep in table with `[AH-DORMANT]` label; re-evaluate when trigger fires. | P10-TIM: needs raw event data from Proietti |
+| **ARCHIVED** | Risk has been RCA'd to exhaustion (RCA >= 4.5/5) and found UNRESOLVABLE with current data. Kept in table for historical traceability and to prevent re-litigation. | Reduce audit frequency to N/A; mark with `[AH-ARCHIVED]` label; keep in table for reference; reactivate only if new experiment provides qualitatively new data. | K9E-PAT: multiplicative pattern untestable (sigma_ratio > ratio value) |
+
+### Status Lifecycle
+
+```
+OPEN → MONITORING → DEFERRED → DORMANT → (reactivate) → MONITORING
+                                          ↘ ARCHIVED (end state)
+OPEN → MONITORING → ARCHIVED (RCA >= 4.5/5, UNRESOLVABLE)
+```
+
+### Current Assignments (v1.5)
+
+| Component | Old Status | New Status | Reason |
+|-----------|-----------|------------|--------|
+| P10-TIM | DECISION-LOCKED | **DORMANT** | Raw event data unavailable; reactivates when data released |
+| K9E-PAT | CLOSED (v31) | **ARCHIVED** | RCA 4.92/5; UNRESOLVABLE with 4 data points; deferred to K9-S12 |
 
 ---
 
@@ -579,4 +648,4 @@ Khong nam trong Top 10 (khong phai assumption), nhung can duoc track:
 
 ---
 
-*Top 10 Hallucination Risk Record v1.3 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores in both tables. 0 CRITICAL + 4 HIGH + 3 MEDIUM + 3 LOW. 0 hallucination that su (9-10). 3-Round RCA Classification Decision: 4.83/5. Next audit: 2026-05-31.*
+*Top 10 Hallucination Risk Record v1.5 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). Next audit: 2026-05-31.*
