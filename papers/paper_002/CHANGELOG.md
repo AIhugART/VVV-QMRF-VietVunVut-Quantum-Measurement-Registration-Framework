@@ -230,7 +230,7 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 2 | §3.5 | **"Not a deficiency of the search" (+few words):** "The small number reflects the reality that optical EWF implementations remain rare" → "The small number reflects the reality of the field — optical EWF implementations remain rare — not a... | 4.0/5 | The N=2 survey has been defended through multiple angles: v63 contextualized rarity, v67 added search audit, v70 added scarcity→low-cost reframing,... |
 
 ### Regression
-Δ: §2.3 loses 7 lines (duplicate reason + redundant prose removed); §3.5 gains minimal wording. No content lost — the removed reason (ii) is fully covered by the opening sentence; the removed methodological prose is fully covered by reasons (i)+(ii) immediately above. C1/C3/C10/C17 preserved. All...
+Δ: §2.3 −7 lines; C1/C3/C10/C17 preserved.
 ---
 
 ## v71 (2026-05-26) — 3/5-issue RCA (threshold 4.5/5): β repetition cut (−2 occurrences); "sensitivity"→"minimum detectable β"; inclusion criteria in §3.5 search audit; survey rename + scope-in-abstract + Phase 1 consolidation REJECTED
@@ -329,7 +329,7 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 1 | §2.3 | **Methodological-choice framing (+6 lines):** After Level 0 prioritization (v66), added: "This prioritization is methodological, not predictive: the overlap-only class is chosen as the natural first null test because it combines a sharp geometric... | 4.5/5 | The paper has long struggled with the "why this class?" question. v53 stripped GPT/weak-measurement motivation; v54 added "Why overlap-only?"... |
 
 ### Regression
-Δ: Abstract restructured but all key claims preserved (Proposition 1, β~0.07, 5σ, 8.6σ, fair-sampling, two-phase, scope hierarchy). §2.3 gains 6 lines (methodological framing). C1/C3/C10/C17 preserved. The removed abstract content (formula, ~10⁻² comparison, redundant qualifiers) remains in the...
+Δ: Abstract restructured; C1/C3/C10/C17 preserved.
 ---
 
 ## v67 (2026-05-25) — 4/4-issue RCA (threshold 4.5/5): Survey search audit (§3.5); β ~10⁻² weak-measurement comparison (Abstract); error budget table (§7); scope limitation (Abstract)
@@ -675,16 +675,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 5 | Abstract overloaded | 4.7/5 | Abstract accumulated defensive qualifiers (S1, fair-sampling, SNSPD) that belong in body | **Implemented** — Abstract compressed 13→8 lines: theorem statement + phenomenological null test + measurable consequence |
 | 6 | Scope unclear — genre not stated | 4.5/5 | "Phenomenological null-test proposal" never explicitly named; abstract prioritized results over genre | **Implemented** — "phenomenological null test" added to Abstract sentence 2; §1 novelty reframe reinforces scope |
 
-**Key changes:**
-  - Claims too strong — "all experiments blind"
-  - Physical motivation weak — GPT/weak-measurement narrative
-  - Repetition — discussion/defensive wording
-  - "Trivial symmetry" vulnerability
-  - Abstract overloaded
-  - Scope unclear — genre not stated
-
 ### Regression
-Δ: C3 S1 qualifier moved from Abstract to §1 (stronger placement — directly in ESP paragraph); C9 Abstract evolved from 3-beat to tighter 3-beat (theorem+proposal+consequence, each single-purpose); C10 benchmark language retained; C17 strengthened...
+Δ: C3/C9/C10/C17 preserved.
 ---
 
 ## v52 (2026-05-25) — 10-point review RCA (threshold 4.5/5): de-defensify — trimmed 2 redundant "model-independent", tightened ESP paragraph
@@ -705,11 +697,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 10 | No physical mechanism | — | → Recurring |
 | — | **Paper feels defensive** — trim redundant hedges | 4.5/5 | **Implemented** — 2 "model-independent" removed + ESP tightened |
 
-**Key changes:**
-  - 2 "model-independent" removed + ESP tightened
-
 ### Regression
-Δ: C1 ESP + C3 S1 qualifier retained.
+Δ: C1/C3 preserved.
 ---
 
 ## v51 (2026-05-25) — 6-point review RCA (threshold 4.5/5): β-model subordinated to theorem (§2.3), "minimal operational benchmark" (§2.3), "first"→"new" window (§9), §6 compressed 30→13 lines
@@ -725,14 +714,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 5 | Verbose, lặp ý — cut 25-30% | 3.5/5 | Rejected — already lean; no large removable blocks remain |
 | 6 | Eq.(2) ad-hoc — "toy operational benchmark" | 4.7/5 | **Implemented** — "minimal operational benchmark" language in §2.3 |
 
-**Key changes:**
-  - theorem-subordinating lead sentence in §2.3 (§2.3)
-  - "first"→"new" + S1 qualifier in §9 (§9)
-  - §6 compressed 30→13 lines (§6)
-  - "minimal operational benchmark" language in §2.3 (§2.3)
-
 ### Regression
-Δ: C3 S1 extended to §9; C10 refined "minimal operational benchmark".
+Δ: C3/C10 preserved.
 ---
 
 ## v50 (2026-05-25) — 5-point review RCA (threshold 4.5/5): Abstract "geometric null point", φ-scramble forward-ref (§4.2), Conclusion call-to-action, §8.1 logic fix (+ v49 §2.3 merge)
@@ -749,13 +732,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | — | §8.1 logic error (self-audit) | 4.8/5 | **Fixed** — "confirms cos θ dependence" removed (null result can't confirm what it fails to find) |
 | — | §2.3 double "Equation (2)" (v49 self-audit) | 4.5/5 | Fixed in v49, rolled into v50 |
 
-**Key changes:**
-  - "structurally insensitive" → "sit at a geometric null point"
-  - forward-ref added to §4.2 (§4.2)
-  - "no new technology required" closing sentence
-
 ### Regression
-Δ: C3 S1 + C9 Abstract structure preserved.
+Δ: C3/C9 preserved.
 ---
 
 ## v49 (2026-05-25) — RCA audit (threshold 4.5/5): §2.3 double "Equation (2)" sentence start merged
@@ -774,9 +752,6 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 4 | Theorem strong but physics weak — "blind spot" language | 3.0/5 | Rejected — "blind spot" deliberately removed v37 |
 | 5 | Paper too long/defensive — cut 20-30% | — | → Recurring |
 | 6 | "Why should anyone care?" — "geometric null point" | 4.5/5 | **Implemented** — "null point" added to §1 ¶2 |
-
-**Key changes:**
-  - "null point" added to §1 ¶2 (§1)
 
 ---
 
@@ -808,11 +783,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 7 | Missing killer prediction — θ-sweep cosθ as smoking gun | 3.0/5 | Rejected — violates C20 |
 | 8 | "Just basis rotation?" — Lemma 1 closer to theorem | 4.6/5 | **Implemented** — Lemma 1 moved from §3.4 to §3.2 |
 
-**Key changes:**
-  - Lemma 1 moved from §3.4 to §3.2 (§3.4)
-
 ### Regression
-Δ: C18 Lemma 1 repositioned to §3.2.
+Δ: C18 repositioned.
 ---
 
 ## v45 (2026-05-25) — 10-point review RCA (threshold 4.5/5): Proposition 1 on page 1 (§1 restructured), historical reason for unvaried θ (§1), intro compressed 53→42 lines (−21%)
@@ -832,13 +804,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 9 | GPT/contextuality diffuse — cut more from main text | — | → Recurring |
 | 10 | Main contribution buried — Proposition 1 on page 1 | 4.7/5 | **Implemented** — Proposition 1 formally stated in §1 ¶2 |
 
-**Key changes:**
-  - §1 restructured; Proposition 1 in ¶2 (§1)
-  - historical reason in §1 ¶2 (§1)
-  - Proposition 1 formally stated in §1 ¶2 (§1)
-
 ### Regression
-Δ: C1+C3 preserved; C8 strengthened (formal Prop 1 in §1).
+Δ: C1/C3/C8 preserved.
 ---
 
 ## v44 (2026-05-25) — 10-point review RCA (threshold 4.5/5): structural non-identifiability novelty reframe (§1), contextuality distinction (§3.2), experimental feasibility softening (§4.5)
@@ -858,13 +825,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 9 | Abstract overloaded → simplify further | 3.5/5 | Rejected — v42 already compressed to 3-sentence 1+1+1 structure |
 | 10 | Center paper around theorem → merged with #1 | — | See #1 |
 
-**Key changes:**
-  - combined reframe in §1 (§1)
-  - contextuality distinction added to §3.2 (§3.2)
-  - §4.5 softened (§4.5)
-
 ### Regression
-Δ: C1+C3 intact; C8 reframed structural; C6 GPT→contextuality link.
+Δ: C1/C3/C6/C8 preserved.
 ---
 
 ## v43 (2026-05-25) — 10-point review RCA (threshold 4.5/5): GPT/weak-measurement §2.3 cut ~40%→S3, φ-scramble control experiment (§7), §5.1 correlator table→S2
@@ -884,13 +846,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 9 | Lemma 1 triết học wording → operational hơn | — | → Recurring |
 | 10 | Abstract overloaded — giảm GPT/contextuality jargon | 2.0/5 | Rejected — v42 abstract already zero GPT/contextuality |
 
-**Key changes:**
-  - v42 conceptual chain compressed 9→4 lines
-  - added to §7 (§7)
-  - §5.1 correlator table→S2 (§5.1)
-
 ### Regression
-Δ: C6, C10, C12, C17 intact; C17 strengthened (more detail→S3).
+Δ: C6/C10/C12/C17 preserved.
 ---
 
 ## v42 (2026-05-25) — 5-point review RCA (threshold 4.5/5): GPT-contextuality conceptual chain (§2.3), Lemma 1 operational invariant (§3.4), β weak-measurement scale bridge (§5.3), Abstract 1+1+1 compression
@@ -905,14 +862,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 4 | Abstract too long and defensive — compress to 1+1+1 | 4.6/5 | **Implemented** — Abstract restructured to insight+experiment+consequence |
 | 5 | Paper covering too much — reduce philosophy/coverage | 3.5/5 | Rejected — §8.2 already 5-line S3 pointer (v35); no remaining philosophy to cut |
 
-**Key changes:**
-  - conceptual chain added to §2.3 (§2.3)
-  - operational invariant added to §3.4 (§3.4)
-  - weak-measurement scale bridge (+3 lines §5.3) (§5.3))
-  - Abstract restructured to insight+experiment+consequence
-
 ### Regression
-Δ: C3 (S1 qualifier), C9 (evolved to insight+experiment+consequence), C18 (strengthened with operational invariant).
+Δ: C3/C9/C18 preserved.
 ---
 
 ## v41 (2026-05-25) — 10-point review RCA (threshold 4.5/5): Lemma 1 forward-ref (§3.1), operational β definition (§2.3), first isolated test hedging (§1)
@@ -932,13 +883,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 9 | §2.3 too heavy on EFT/GPT jargon | — | → Recurring |
 | 10 | "first experimental test" overclaim | 4.5/5 | **Implemented** — "first experimental test" → "first isolated test" |
 
-**Key changes:**
-  - Lemma 1 forward-ref added to §3.1 (§3.1)
-  - operational definition added to §2.3 (§2.3)
-  - "first experimental test" → "first isolated test"
-
 ### Regression
-Δ: C3 extended (first isolated test), C18 strengthened (Lemma 1 forward-ref from §3.1).
+Δ: C3/C18 preserved.
 ---
 
 ## v40 (2026-05-25) — 5-point review RCA (threshold 4.5/5): overlooked→not-previously-isolated, non-identifiability consequence, conservative β in abstract
@@ -953,13 +899,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 4 | Conservative β in main text | 4.5/5 | **Implemented** — Abstract, §9, §5.3 restructured |
 | 5 | Length reduction 20-30% | — | → Recurring |
 
-**Key changes:**
-  - 3 locations
-  - 1 sentence added to §3.1 (§3.1)
-  - Abstract, §9, §5.3 restructured (§9,)
-
 ### Regression
-Δ: C3, C8, C12, C15, C17 intact; conservative β headline in Abstract.
+Δ: C3/C8/C12/C15/C17 preserved.
 ---
 
 ## v39 (2026-05-25) — 10-point review RCA (threshold 4.5/5): equatorial cancellation rename, §1 reframe (overlooked structural consequence lede), ontological→phenomenological
@@ -979,14 +920,8 @@ Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree
 | 9 | Remove interpretation/philosophy | — | → Recurring |
 | 10 | Rename "Fixed-Point"→"Cancellation" | 4.8/5 | **Implemented** |
 
-**Key changes:**
-  - merged with #4 (§1 reframe) (§1)
-  - Eq.(2) ontological→phenomenological
-  - §1 restructured (§1)
-  - Rename "Fixed-Point"→"Cancellation"
-
 ### Regression
-Δ: C2 preserved (rename only), C8 reframed (structural consequence), C10+C11 intact.
+Δ: C2/C8/C10/C11 preserved.
 ---
 
 ## v38 (2026-05-25) — 3-point review RCA (threshold 4.5/5): survey-qualified hedging, lowest-order expansion justification, novelty-as-geometry framing
@@ -1374,4 +1309,4 @@ All v13→v37 changes applied via:
 
 ---
 
-*Generated 2026-05-25. Covers v12 (baseline) through v44 (current).*
+*Generated 2026-05-25, dedup-optimized 2026-05-26. Covers v12 (baseline) through v81 (current).*
