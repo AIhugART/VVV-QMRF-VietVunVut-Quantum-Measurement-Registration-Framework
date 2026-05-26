@@ -1,23 +1,27 @@
 Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-# Has Every Wigner's Friend Experiment Been Blind to a Geometric Degree of Freedom?
+# Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?
 
-**Status:** Draft v74 — 1/4-issue RCA (threshold 4.5/5): "Physical context" expanded with speculative mechanism example; N=2 explanation + Phase 1 emphasis + S1 proof merge REJECTED (already addressed). ~4 pages.
-**Date:** 2026-05-25 | **Target:** arXiv quant-ph, then Phys. Rev. A
+**Status:** Draft v81 — 1/1-issue RCA (threshold 4.5/5): Proietti BSM→equatorial equivalence caveat; "Both happen to be equatorial"→"Both correspond to equatorial symmetry conditions." ~4 pages.
+**Date:** 2026-05-26 | **Target:** arXiv quant-ph, then Phys. Rev. A
 
 ---
 
 ## Abstract
 
-We prove an equatorial cancellation theorem (Proposition 1): at θ = π/2,
-every overlap-dependent deformation of quantum measurement statistics
-vanishes identically — the equatorial plane is a geometric null point
-for the overlap-only class. A complete survey of published optical EWF
-implementations (Supplemental S1) finds none have varied this polar angle.
+The two published optical Wigner's Friend experiments share an unnoticed
+geometric blind spot. We prove an equatorial cancellation theorem
+(Proposition 1): at θ = π/2, every overlap-dependent deformation of
+quantum measurement statistics vanishes identically — the equatorial
+plane is a geometric null point for the overlap-only class. A complete survey of published optical EWF
+implementations (Supplemental S1) finds none have varied this polar angle;
+only two such implementations exist (Proietti 2019, Bong 2020), reflecting
+the experimental scarcity of this field.
 We propose a phenomenological null test: a single waveplate tilts the
 Bong et al. (2020) apparatus to the optimal trade-off between signal
 strength and LF preservation (θ = 31°), providing minimum detectable β ~ 0.07
-at 5σ while preserving the Genuine LF violation (8.6σ). The theorem
+at 5σ — a search parameter whose methodological role parallels SME
+coefficients [15] (§2.3) — while preserving the Genuine LF violation (8.6σ). The theorem
 constrains the minimal overlap-only class; broader deformation classes
 (Levels 1–3, §3.2) lie outside its scope. Under fair-sampling (η ≈ 0.87),
 this is a loophole-open screening test whose positive result would
@@ -34,30 +38,22 @@ exist independently of who observes them. Modern optical implementations
 combining Local Friendliness (LF) no-go theorems [2,10-12] have challenged the
 absoluteness of observed events [13,14].
 
-**Proposition 1 (Equatorial Cancellation Theorem, §3).** The basis overlap
-|⟨b|d⟩|² is the simplest scalar quantifying the geometric relationship
-between successive measurements — any deformation coupling Superobserver
-statistics to a prior observer's recorded outcome depends on this
-relationship at lowest order (§2.3). A deformation of quantum measurement
-statistics is *overlap-only* if the modified joint probability takes the
-form P'(a,b|x,y) = P_QM(a,b|x,y) · g(|⟨b|d⟩|²) / Z, for any function
-g: [0,1] → ℝ and normalization Z. At the equatorial plane
-(θ = π/2), |⟨b|d⟩|² = 1/2 for all outcome pairs (b,d); hence
-g(|⟨b|d⟩|²) = g(1/2) is constant, and P' = P_QM identically. The equator is
-therefore a geometric null point for every overlap-only deformation —
-equatorial measurements are structurally incapable of distinguishing
-standard QM from any member of this class, regardless of statistical
-precision or experimental design. The novelty is not the overlap formula itself (three lines of
-Bloch-sphere algebra, §3.3) but the recognition that the polar angle
-θ has never been isolated as an independent control parameter in published
-optical EWF implementations: LF inequalities are optimized precisely at
-equatorial settings [2,10], so researchers adopted θ = π/2 as standard
-without a specific hypothesis motivating polar tilt. The equator is
-therefore an accidental fixed point — a geometric null point for the
-overlap-only class that, within surveyed implementations (Supplemental S1),
-has remained structurally untested. The predicted cos θ signal
-is invariant under any basis redefinition of the Superobserver alone
-(Lemma 1, §3.2) — it is a genuine observable, not a coordinate artifact.
+**Proposition 1 (Equatorial Cancellation Theorem, §3).** A deformation
+of quantum measurement statistics is *overlap-only* if the modified joint
+probability takes the form P'(a,b|x,y) = P_QM(a,b|x,y) · g(|⟨b|d⟩|²) / Z,
+for any function g: [0,1] → ℝ and normalization Z. At the equatorial
+plane (θ = π/2), |⟨b|d⟩|² = 1/2 for all outcome pairs (b,d); hence
+g(|⟨b|d⟩|²) is constant and P' = P_QM identically — the equator is a
+geometric null point for every overlap-only deformation. The novelty is
+not the formula itself (Bloch-sphere algebra, §3.3) but the finding that
+the polar angle θ has never been varied in published optical EWF
+implementations: LF inequalities are optimized at equatorial settings
+[2,10], so θ = π/2 was adopted as standard without a hypothesis
+motivating polar tilt — an accidental fixed point at which the
+overlap-only class has remained systematically unexplored (§3.5,
+Supplemental S1). The cos θ signal is invariant under any basis
+redefinition (Lemma 1, §3.2) — a genuine observable, not a coordinate
+artifact.
 
 Breaking the cancellation requires only a single quarter-wave plate:
 re-inserting the QWP into the Bong et al. (2020) apparatus tilts the
@@ -72,11 +68,12 @@ model-independent QM predictions from sensitivity calculations assuming
 the benchmark parametrization.
 
 This paper makes no claim about the existence of overlap-dependent
-deformation in nature — it proposes a null-test protocol. Its two claims
+deformation in nature — it proposes a null-test protocol (analogous in
+method to the Standard Model Extension [15]; §2.3). Its two claims
 are structural:
 (A) within surveyed optical EWF implementations (Supplemental S1),
 equatorial measurement — a convention for LF optimization, not a tested
-constraint — leaves the overlap-only class structurally untested, and
+constraint — leaves the overlap-only class systematically unexplored, and
 (B) a single waveplate enables the first experimental probe of this class.
 Positive results require independent verification including θ-sweeps (§8.2).
 
@@ -138,7 +135,7 @@ deformation coupling Superobserver statistics to a prior observer's recorded
 outcome must depend on this relationship at lowest order; the overlap-only
 class is therefore the minimal operational deformation — it isolates the
 geometric degree of freedom (θ) that equatorial measurements leave
-structurally untested. Within the broader deformation hierarchy (§3.2),
+systematically unexplored. Within the broader deformation hierarchy (§3.2),
 Level 0 is prioritized over Levels 1–3: (i) it is the only level with a
 sharp geometric null (Proposition 1 — the equatorial fixed point provides
 a built-in control); and (ii) it requires only a single waveplate, whereas
@@ -339,9 +336,11 @@ The experiment (§4-7) tests whether nature exploits this asymmetry.
 
 **Survey of published EWF implementations.** Only two published optical EWF
 experiments exist within our complete survey scope (Supplemental S1):
-Proietti et al. (2019) and Bong et al. (2020). Both happen to be equatorial — an observation about the existing
-literature, not a claim that all possible EWF implementations must be
-equatorial. The small number reflects the reality of the field — optical EWF
+Proietti et al. (2019) and Bong et al. (2020). Both correspond to equatorial symmetry conditions — for Bong et al.
+this is direct (θ = π/2); for Proietti et al. the equivalence follows
+from the BSM structure (see footnote [a]). This is an observation about
+the existing literature, not a claim that all possible EWF implementations
+must be equatorial. The small number reflects the reality of the field — optical EWF
 implementations remain rare — not a deficiency of the search; the table
 enumerates all published instances meeting our criteria.
 
@@ -359,7 +358,7 @@ derivation in Supplemental S1.
 
 *Search audit:* 4 databases (Google Scholar, arXiv, Web of Science, InspireHEP),
 Jan 2000–May 2026; ~200 titles screened → 47 full-text examined → 2 published
-optical EWF experiments identified (both equatorial). Inclusion criteria:
+optical EWF experiments identified (both effectively equatorial; see footnote [a]). Inclusion criteria:
 optical EWF implementation with Friend+Superobserver structure, published
 in peer-reviewed venue or arXiv, reporting measurement settings from which
 polar angle θ can be determined. Full query logs and protocol in
@@ -386,6 +385,15 @@ implementations (S1), the overlap-only class has remained structurally
 untested — equatorial measurement was a convention for LF optimization,
 not a tested constraint on overlap-dependent physics. Tilting the
 Superobserver opens access to this previously untested sector (§4).
+
+**Structural, not coincidental.** That both surveyed implementations
+are equatorial follows directly from the LF optimization convention —
+it is not an artifact of the small sample. Any EWF experiment, on any
+physical platform (optical, superconducting, trapped-ion), that optimizes
+LF violation would adopt equatorial settings by default; the convention
+is platform-agnostic. The gap identified here is therefore structural,
+not coincidental — it would persist regardless of how many optical EWF
+implementations exist.
 
 **Distinction from LF optimization.** This work is complementary to, not
 competitive with, the LF inequality optimization literature [2,10-12].
@@ -712,7 +720,7 @@ The central result is the equatorial cancellation theorem (Proposition 1):
 at θ = π/2, every overlap-dependent deformation vanishes identically.
 Within the surveyed literature (Supplemental S1), published EWF
 implementations have operated at this fixed point; the overlap-only class
-has therefore remained structurally untested.
+has therefore remained systematically unexplored.
 
 As its direct experimental consequence, we propose a null test: re-insert
 one QWP into the Bong et al. (2020) apparatus (θ = 31°), providing

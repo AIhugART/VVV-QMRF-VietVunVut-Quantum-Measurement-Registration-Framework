@@ -1,7 +1,184 @@
-# CHANGELOG — "Has Every Wigner's Friend Experiment Been Blind to a Geometric Degree of Freedom?"
+# CHANGELOG — "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?"
 
 **Paper ID:** paper_002 | **Target:** arXiv quant-ph → Phys. Rev. A
 **Author:** VietVunVut (Viet — Nguyen Xuan)
+
+---
+
+## v81 (2026-05-26+) — Strategic clarification: Paper genre / physics-motivation boundary
+
+**Not a version change — meta-note recorded in CHANGELOG for future reference.**
+
+### Paper genre: Phenomenological null test with geometric insight
+
+| This paper IS | This paper IS NOT |
+|---------------|-------------------|
+| "Có một blind spot hình học — hãy test nó" | "Có lý do vật lý mạnh để blind spot này chứa new physics" |
+| Geometric insight + experimental protocol | Theory derivation of deformation |
+| SME-style: define quantitative target in unconstrained parameter space | Predict new physics from underlying theory |
+
+### Strategic rationale
+
+- Không có theory nào predict overlap-dependent deformation → **bịa physics motivation sẽ là không trung thực, reviewer càng bắt bẻ**
+- Sức mạnh của paper nằm ở **geometry insight gốc** (θ = π/2 là fixed point cho MỌI overlap-only deformation — mathematical fact) + **protocol simplicity** (1 waveplate, ~1h)
+- §2.3 "Physical context" đã gợi ý weak measurement/decoherence connection với label "speculative mechanism, not a derivation" — đây là mức độ đúng
+- SME [15] không chứng minh Lorentz violation phải tồn tại; nó nói "có coefficients chưa constrain, đây là cách đo" — paper này làm cùng một việc
+
+### Decision
+**Paper không cần thêm physics motivation.** Đây là lựa chọn chiến lược đúng, không phải điểm yếu. Mọi RCA suggestion "thêm lý do vật lý mạnh" trong tương lai → auto-reject (genre boundary, không phải text-level gap).
+
+---
+
+## v81 (2026-05-26) — 1/1-issue RCA (threshold 4.5/5): Proietti BSM→equatorial equivalence caveat — "Both happen to be equatorial"→"Both correspond to equatorial symmetry conditions"
+
+**Scoring summary (1 issue):** 1 implemented (4.8/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | "Both happen to be equatorial" overclaim — Proietti dùng BSM, không explicit set θ | 4.8/5 | **Implemented** — 2 locations: (i) "Both happen to be equatorial"→"Both correspond to equatorial symmetry conditions — for Bong et al. this is direct (θ = π/2); for Proietti et al. the equivalence follows from the BSM structure (see footnote [a])." (ii) "(both equatorial)"→"(both effectively equatorial; see footnote [a])." |
+
+### Implemented changes (v81)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | §3.5 | **BSM equivalence caveat:** Phân biệt Bong (direct θ = π/2) vs Proietti (BSM → effective |⟨b\|d⟩\|² = 1/2). Footnote [a] đã có derivation, giờ language trong text phản ánh rằng Proietti case là equivalence, không phải direct setting. | 4.8/5 | Proietti 2019 không viết "θ = π/2" — họ dùng Bell-state measurement. Map BSM sang equatorial condition là diễn giải thêm. "Both happen to be equatorial" ngụ ý cả hai explicit set θ, gây overclaim. Distinction Bong=direct / Proietti=equivalence chính xác, an toàn với reviewer. Claim A không đổi — gap vẫn là chưa ai vary θ khỏi equatorial condition. |
+
+### Regression
+Δ: §3.5 +2 lines (Bong/Proietti distinction). C1/C3/C10/C17 preserved.
+
+---
+
+## v80 (2026-05-26) — 1/4-issue RCA (threshold 4.5/5): Title change REVERTED (RCA overreach); 3 other points REJECTED; **TITLE FROZEN**
+
+**Scoring summary (4 issues):** 0 implemented, 1 reverted (RCA overreach), 3 rejected (≤3.5/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | "Systematically unexplored" → "not yet probed" | 2.5/5 | **Rejected** — Oscillation. v79 vừa set "systematically unexplored." |
+| 2 | Tách phenomenology (SME) khỏi toy model | 3.0/5 | **Rejected** — §2.3 đã tách rõ. |
+| 3 | Title "Blind to" → trung tính hơn | 4.5/5 → **REVERTED** | RCA sai — title là high-level identity element, không thuộc phạm vi RCA chỉnh sửa thông thường. User override. **Title frozen at v77 wording.** |
+| 4 | β~0.04 combined + θ-sweep emphasis | 3.5/5 | **Rejected** — Đã có ở §5.3 + §6 + §8.2. |
+
+### RCA post-mortem (title)
+Title "Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?" được set tại v77 (scope: "Has Every"→"Have Optical"). RCA v80 sai khi approved title change — title là identity element, vượt quá phạm vi RCA text-level review. **Title hiện tại frozen. Mọi thay đổi title trong tương lai phải do user trực tiếp yêu cầu, không qua RCA pipeline.**
+
+### Regression
+Δ: Không có thay đổi nội dung nào. Title restored về v77 wording. C1/C3/C10/C17 preserved.
+
+---
+
+## v79 (2026-05-26) — 1/6-issue RCA (threshold 4.5/5): "structurally untested"→"systematically unexplored" (4 occurrences); 5 other points REJECTED
+
+**Scoring summary (6 issues):** 1 implemented (4.5/5), 5 rejected (≤3.5/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | Overlap-only model ad-hoc → nhấn mạnh EFT/SME benchmark framework | 3.0/5 | **Rejected** — Already framed as SME benchmark at 4 locations (abstract, §1, §2.3, §5.3). "Benchmark parametrization" + "serves only to quantify experimental sensitivity" + "not a theory prediction." |
+| 2 | "Structurally untested" quá mạnh với N=2 → "systematically unexplored" | 4.5/5 | **Implemented** — 4 occurrences replaced: §1 ¶2, §1 Claim A, §2.3, §9 Conclusion. "Untested" ngụ ý field lẽ ra phải test; "unexplored" là observational fact. |
+| 3 | "Chỉ đổi basis chứ không có physics mới" → strengthen operational distinction + simulation | 3.0/5 | **Rejected** — Lemma 1 (§3.2) đã chứng minh cos θ không thể bị hấp thụ bởi basis redefinition. φ-scramble control (§7) đã phân biệt geometric signal với birefringence artifacts. |
+| 4 | β arbitrary → connect với weak measurement/contextuality/decoherence scales | 3.5/5 | **Rejected** — Connections đã có: weak measurement + decoherence ở §2.3 "Physical context"; contextuality distinction table ở §3.2; ~10⁻² weak-measurement scale ở §5.3. |
+| 5 | Paper dài và defensive → cắt repeated disclaimer, nhất là SME | 3.5/5 | **Rejected** — SME ở 5 vị trí: abstract (1 clause), §1 (7 words), §2.3 (full argument), §5.3 (2 refs). Cắt §1 parenthetical chỉ tiết kiệm 7 từ. Cắt §2.3 SME argument sẽ giảm persuasive power. |
+| 6 | "Hidden null geometry" narrative thay vì "new physics deformation" | 3.0/5 | **Rejected** — Current narrative đã là "hidden null geometry": hook = "blind spot," theorem = "geometric null point," title = question về blindness. "New physics" framing chỉ có ở proposal section (§4-7) và đã được gọi là "null test." |
+
+### Implemented changes (v79)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 2 | §1 ¶2, §1 Claim A, §2.3, §9 | **"structurally untested"→"systematically unexplored" (4 occurrences, replace_all):** "remained structurally untested" → "remained systematically unexplored"; "leaves the overlap-only class structurally untested" → "leaves the overlap-only class systematically unexplored"; "equatorial measurements leave structurally untested" → "equatorial measurements leave systematically unexplored." | 4.5/5 | "Untested" carries implicit criticism — the field SHOULD have tested this. Với N=2, đó là overstatement. "Unexplored" là observational: θ chưa từng được systematically varied, đó là fact, không phải accusation. Softer, equally accurate, phù hợp với N=2. |
+
+### Regression
+Δ: 4 từ thay đổi (mỗi occurrence 2 từ). C1/C3/C10/C17 preserved. Không thay đổi claim nào — chỉ thay đổi mức độ assertion. "Systematically unexplored" vẫn communicate đúng gap: chưa ai systematically probe θ.
+
+---
+
+## v78 (2026-05-26) — 1/4-issue RCA (threshold 4.5/5): Abstract hook precision ("All published"→"The two"); β positive-reason + Phase 1 emphasis + §2.3/§3.2 overlap REJECTED
+
+**Scoring summary (4 issues):** 1 implemented (4.5/5), 3 rejected (≤3.5/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | "All published optical" → ngụ ý large field, thực tế N=2 | 4.5/5 | **Implemented** — Abstract hook: "All published"→"The two published optical Wigner's Friend experiments..." Chính xác N=2, không inflate perceived sample size. |
+| 2 | Chưa có lý do positive "tại sao class này đáng kiểm tra ngay bây giờ" | 3.5/5 | **Rejected** — Positive reasons đã có: §2.3 "Why overlap-only?" (geometric null + single waveplate), §3.5 "Scarcity as motivation" (low-cost). Abstract đã 6 câu, thêm positive reason sẽ quá dài. |
+| 3 | Phase 1 screening — cần nổi bật hơn ở Abstract | 2.0/5 | **Rejected** — Lần thứ 10 (v68→v78). "loophole-open screening test" + "motivate — but not replace — Phase 2 closure" đã rõ. |
+| 4 | Over-edited — §2.3 và §3.2 lặp ý overlap-only class | 3.0/5 | **Rejected** — §2.3 = motivation (WHY this class), §3.2 = formal definition (WHAT it is). Khác chức năng, không lặp nội dung. "Tin vào độc giả" là advice đúng nhưng không có redundant text cụ thể để cắt. |
+
+### Implemented changes (v78)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | Abstract S1 | **Hook precision (1 word):** "All published optical" → "The two published optical Wigner's Friend experiments share an unnoticed geometric blind spot." | 4.5/5 | "All published" là phrasing chuẩn cho large literature — nhưng ở đây N=2. "The two" vừa chính xác tuyệt đối vừa giữ được rhetorical force: "The two...experiments share an unnoticed blind spot" vẫn là hook mạnh. Khác với prior N=2 defenses (thêm explanation) — đây là precision edit ở wording hook. |
+
+### Regression
+Δ: Abstract S1 thay 1 từ ("All"→"The two"). Abstract vẫn 6 sentences. C1/C3/C10/C17 preserved. Không thay đổi claim nào.
+
+---
+
+## v77 (2026-05-26) — 2/4-issue RCA (threshold 4.5/5): Abstract hook sentence ("unnoticed geometric blind spot"); §3.5 "Structural, not coincidental" paragraph; β-SME + Phase 1 REJECTED
+
+**Scoring summary (4 issues):** 2 implemented (4.5/5), 2 rejected (≤2.0/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | N=2 quá ít → giải thích non-optical experiments cũng không cover được gap | 4.5/5 | **Implemented** — §3.5: "Structural, not coincidental" paragraph (+7 lines). That both implementations are equatorial follows from LF optimization convention, not from small N. Any EWF experiment on any platform (optical, superconducting, trapped-ion) that optimizes LF violation would adopt θ = π/2 by default. Gap is structural, platform-agnostic. |
+| 2 | β không có theory prediction → nhấn mạnh SME analogy ngay abstract | 1.0/5 | **Rejected** — Already implemented in v76. Abstract S3: "a search parameter whose methodological role parallels SME coefficients [15] (§2.3)." |
+| 3 | Phase 1 loophole-open → Phase 2 là kết luận cuối, đừng để nghĩ Phase 1 đủ | 2.0/5 | **Rejected** — 8th consecutive rejection (v71→v77). Abstract S5: "loophole-open screening test whose positive result would motivate — but not replace — Phase 2 closure." §7: Phase 2 = "definitive conclusion." |
+| 4 | Abstract hơi kỹ thuật nặng → thêm câu mở đầu nêu stake | 4.5/5 | **Implemented** — Abstract: "All published optical Wigner's Friend experiments share an unnoticed geometric blind spot." (9 words) trước S1 theorem statement. Tells reader WHY this matters trước khi nói WHAT was found. |
+
+### Implemented changes (v77)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 4 | Abstract | **Hook sentence (+9 words):** "We prove..." → "All published optical Wigner's Friend experiments share an unnoticed geometric blind spot. We prove..." | 4.5/5 | Abstract trước đây mở đầu bằng "We prove an equatorial cancellation theorem..." — chính xác về mặt kỹ thuật nhưng không trả lời "why should anyone care?" trước khi nêu kết quả. PRA có broad audience; câu hook 9 từ tạo ngữ cảnh: tất cả thí nghiệm Wigner's Friend đều có chung một blind spot. Sau đó theorem statement giải thích blind spot đó là gì. |
+| 1 | §3.5 | **"Structural, not coincidental" (+7 lines):** Sau "Tilting the Superobserver opens access to this previously untested sector (§4)," thêm paragraph giải thích: equatorial convention là hệ quả trực tiếp của LF optimization, không phải artifact của N=2 nhỏ. Bất kỳ EWF experiment nào trên bất kỳ nền tảng vật lý nào (optical, superconducting, trapped-ion) mà tối ưu LF violation đều sẽ adopt θ = π/2. Gap là structural, không phải coincidental. | 4.5/5 | N=2 là điểm yếu dai dẳng nhất của paper (v63→v76, 13 version defenses). Tất cả defense trước đây tập trung vào methodology (search audit, scope qualifier, "not a deficiency," scarcity→low-cost). Defense mới này là structural: gap không biến mất nếu có thêm experiment, vì MỌI EWF experiment tối ưu LF đều sẽ equatorial. Lập luận platform-agnostic, không cần cite thêm experiment cụ thể. |
+
+### Regression
+Δ: Abstract +1 sentence (9 words, hook). §3.5 +7 lines (structural argument). C1/C3/C10/C17 preserved. Abstract giờ 6 sentences (was 5 since v68). Hook sentence không thay đổi bất kỳ claim nào — chỉ thêm ngữ cảnh "why care."
+
+---
+
+## v76 (2026-05-26) — 1/4-issue RCA (threshold 4.5/5): Abstract S3 β-SME methodological clause; N=2 scoping + Phase 1 reframing + S1→main REJECTED
+
+**Scoring summary (4 issues):** 1 implemented (4.5/5), 3 rejected (≤2.5/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | N=2 survey mỏng → "hạ tông" nhất quán hơn ở abstract | 2.5/5 | **Rejected** — Abstract S2 đã nói "published optical EWF implementations" — chính xác là "trong phạm vi các thí nghiệm quang học đã công bố." v73+v75 đã xử lý scope qualifier + N=2 acknowledgment. Không còn chỗ nào trong abstract nói "chưa ai kiểm tra" mà thiếu scope. |
+| 2 | β không có theory prediction → cần 1 câu abstract giải thích tại sao null test vẫn có giá trị | 4.5/5 | **Implemented** — Abstract S3: "providing minimum detectable β ~ 0.07 at 5σ — a search parameter whose methodological role parallels SME coefficients [15] (§2.3) — while preserving..." Giải thích WHY null test có giá trị khoa học dù không ai dự đoán β: giống như SME, giá trị nằm ở việc định nghĩa quantitative experimental target trong parameter space chưa được constrain. |
+| 3 | Phase 1 loophole-open → đặt Phase 2 làm mục tiêu chính, Phase 1 là "feasibility check" | 2.5/5 | **Rejected** — 6th consecutive rejection (v71→v76). Abstract S5 đã rõ: "loophole-open screening test" + "motivate — but not replace — Phase 2 closure." §7: Phase 2 là "loophole-closed...definitive conclusion." Framing đã đặt Phase 2 làm đích đến; Phase 1 numerical emphasis là do Phase 1 là novel proposal, không phải do framing sai. |
+| 4 | Supplemental S1-S3 chứa nội dung quan trọng → đưa vào main text cho PRA (đặc biệt proof S1) | 2.0/5 | **Rejected** — Trùng v74 #4 (2.0/5). BSM proof sketch đã ở footnote [a] (v70); Bloch sphere proof ở §3.3; search audit ở §3.5; error budget table ở §7. Key results đã trong main text; S1-S3 chứa supplementary detail phù hợp với venue. |
+
+### Implemented changes (v76)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 2 | Abstract S3 | **β-SME methodological clause (+12 words):** "providing minimum detectable β ~ 0.07 at 5σ while preserving..." → "providing minimum detectable β ~ 0.07 at 5σ — a search parameter whose methodological role parallels SME coefficients [15] (§2.3) — while preserving..." | 4.5/5 | Abstract trước đây chỉ nói WHAT (β ~ 0.07, 5σ) mà không nói WHY null test với tham số không được theory nào dự đoán vẫn có giá trị. SME analogy là câu trả lời chuẩn: SME được đề xuất với 19 coefficients không có a priori predictions; giá trị khoa học nằm ở việc định nghĩa quantitative experimental targets. β phục vụ cùng chức năng phương pháp luận. Chưa từng có trong abstract; đây là lần đầu SME được flag ở abstract level. |
+
+### Regression
+Δ: Abstract S3 +12 words (SME methodological clause). Abstract vẫn 5 sentences. C1/C3/C10/C17 preserved. Không tạo repetition — SME giờ xuất hiện ở abstract + §1 + §2.3 + §5.3 (4 vị trí methodologically distinct).
+
+---
+
+## v75 (2026-05-26) — 3/4-issue RCA (threshold 4.5/5): Abstract N=2 acknowledgment; §1 Proposition 1 merge (−9 lines); §1 SME methodological flag; Phase 1 rewording REJECTED
+
+**Scoring summary (4 issues):** 3 implemented (≥4.2/5), 1 rejected (2.5/5).
+
+| # | Issue | RCA Score | Action |
+|---|-------|-----------|--------|
+| 1 | N=2 sample nhỏ → thêm acknowledgment trong abstract | 4.8/5 | **Implemented** — Abstract S2: "only two such implementations exist (Proietti 2019, Bong 2020), reflecting the experimental scarcity of this field." Khác với v74 #1 (body text) — đây là lần đầu N=2 được flag trực tiếp trong abstract. |
+| 2 | Overlap-only class tự định nghĩa → nhấn mạnh SME comparison | 4.2/5 | **Implemented** (user-persistence exception) — §1 claims paragraph: "it proposes a null-test protocol (analogous in method to the Standard Model Extension [15]; §2.3)." Brief parenthetical flag; SME argument đầy đủ vẫn ở §2.3. |
+| 3 | Phase 1 screening → "nói thẳng là screening test, không phải bằng chứng" | 2.5/5 | **Rejected** — 6th consecutive rejection (v71→v75). Abstract S5 đã nói rõ: "loophole-open screening test" + "motivate — but not replace — Phase 2 closure." Nội dung đã đủ. |
+| 4 | Introduction quá dài, lặp Proposition 1 → cắt bớt | 4.7/5 | **Implemented** — §1 Proposition 1 merged từ 2 mô tả song song (23 dòng) → 1 unified (14 dòng, −9 lines, −39%). |
+
+### Implemented changes (v75)
+
+| # | Section | Change | RCA Score | Rationale |
+|---|---------|--------|-----------|-----------|
+| 1 | Abstract S2 | **N=2 acknowledgment (+1 line):** "A complete survey...finds none have varied this polar angle" → "...none have varied this polar angle; only two such implementations exist (Proietti 2019, Bong 2020), reflecting the experimental scarcity of this field." | 4.8/5 | Abstract chưa từng explicitly acknowledge sample size. Prior defenses (v70 "Scarcity as motivation," v72 "not a deficiency of the search") đều ở §3.5 body text. Reviewer đọc abstract không biết N=2 cho đến khi tới §3.5 — cảm giác như hidden weakness. Proactive acknowledgment trong abstract biến potential objection thành honest limitation. Khác scope với v74 #1 (body text explanation). |
+| 2 | §1 | **SME methodological flag (+7 words):** "it proposes a null-test protocol" → "it proposes a null-test protocol (analogous in method to the Standard Model Extension [15]; §2.3)." | 4.2/5 | SME parallel là lập luận mạnh nhất bào chữa cho "no underlying theory" — nhưng trước đây chỉ xuất hiện từ §2.3. Reviewer hình thành objection "self-defined class" khi đọc §1 có thể không tới §2.3 với open mind. Brief parenthetical flag sớm, không tạo repetition (SME giờ ở §1 + §2.3 + §5.3 — methodologically distinct locations). Dưới 4.5/5 nhưng accepted per user-persistence exception (v74 precedent). |
+| 4 | §1 | **Proposition 1 merge (−9 lines, 23→14, −39%):** Hai mô tả song song merged thành 1 unified flow: (1) formal definition → (2) theorem → (3) novelty/finding → (4) Lemma 1. | 4.7/5 | §1 gốc mô tả Proposition 1 hai lần: formal (old lines 37-49) + accessible re-description (old lines 50-60). Hai mô tả tích lũy qua nhiều version không được consolidate. Merged version cho reader mỗi idea đúng 1 lần. Formal definition cũng có ở §3.2; giữ compact version trong §1 đảm bảo self-contained readability. Chưa có CHANGELOG rejection nào; v72 §2.3 condensation là precedent. |
+
+### Regression
+Δ: Abstract +1 line (N=2); §1 −9 lines (Proposition 1 merge) + 7 words (SME flag). Net: §1 ~8 lines shorter. No claim changes. C1/C3/C10/C17 preserved. All regression watchlist items intact.
 
 ---
 
