@@ -1,7 +1,7 @@
 {
   "script": "bb_vvv_v1v2_verification.py",
   "version": "2.0 (corrected V1 analysis)",
-  "timestamp": "2026-05-27T20:05:08.404962",
+  "timestamp": "2026-05-27T23:16:33.203368",
   "fit_plan_version": "v1.2",
   "V1": {
     "fraction_neg": 0.164264,
