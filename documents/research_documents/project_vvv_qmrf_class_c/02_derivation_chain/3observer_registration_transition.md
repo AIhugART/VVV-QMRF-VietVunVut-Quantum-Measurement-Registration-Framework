@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Document type:** Derivation chain — Layer 2 application
 **Version:** v1.0 (2026-05-27)
-**Status:** Class C-conditional (depends on [A-3O-1] T4 colimit for N=3 — T4-H Steps 2-4 deferred)
+**Status:** Class C (T4-H Steps 3-4 VERIFIED 2026-05-28, RCA 4.74/5 — all conditional gates resolved)
 **Parent:** `K_Space_Axiomatization.md` v2.4 (§K7_trace, §D_enc — canonical Layer 2)
 **Extends:** `Phase11_3observer_prediction.md` (prediction focus) — THIS file focuses on registration transition MECHANISM
 **Schema:** Follows `documents/research_documents/vvv-qmrf/schema_guide.md`
@@ -12,7 +12,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 > **DISCLAIMER:** VVV-QMRF is independent Class C personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
 
-> **DEPENDENCY WARNING:** All derivations in this document are CONDITIONAL on [A-3O-1]: T4 colimit construction for N=3 (T4-H Steps 2-4 deferred). If T4-H fails, this document downgrades to Class D (conjectured). See `Phase11_3observer_prediction.md` ERRATUM for full dependency chain.
+> **DEPENDENCY RESOLVED (2026-05-28):** [A-3O-1] T4 colimit construction for N=3 — T4-H Steps 3-4 VERIFIED (RCA 4.74/5, `T4_H_steps3_4_k1k8_universal.md`). This document upgrades from Class C-conditional to **Class C**. See `Phase11_3observer_prediction.md` ERRATUM for remaining dependency chain (K9_E + T4-H → delta_M3 prediction).
 
 ---
 
@@ -24,7 +24,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | **← Upstream (mechanisms)** | [`K_Space_Axiomatization.md §D_enc`](../01_axiomatization/K_Space_Axiomatization.md) | D_enc formal definition (canonical Layer 2) — Enc predicate |
 | **→ Forward (predictions)** | [`Phase11_3observer_prediction.md`](Phase11_3observer_prediction.md) | Prediction focus: delta_M3 = -0.223 at beta=0.3 (illustrative). THIS file provides the registration transition mechanism that Phase11 presupposes. |
 | **← Upstream (T_BB bridge)** | [`BB_VVV_fit_plan.md §18-§19`](../09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) | Original local definition of K7_trace and D_enc; T_BB no-awareness bridge (2-observer case) |
-| **← Upstream (T4-H)** | [`T4_H_proof_gap_analysis.md`](T4_H_proof_gap_analysis.md) | T4-H dependency status — CONDITIONAL |
+| **← Upstream (T4-H)** | [`T4_H_proof_gap_analysis.md`](T4_H_proof_gap_analysis.md) | T4-H dependency status — RESOLVED (THEOREM 4/4, 2026-05-28) |
 
 ---
 
@@ -131,11 +131,11 @@ delta_M3 prediction (Phase11, ILLUSTRATIVE, conditional on T4-H)
 | Component | Class | Condition |
 |---|---|---|
 | K7_trace application to hierarchical chain | C-canonical | K7_trace is canonical Layer 2; derivation uses K7 only |
-| D_enc application to F1 via F2 chain | C-conditional | Requires T4-H (N=3 K_joint) for chain to be well-defined |
-| No-awareness propagation (Steps H1-H4) | C-conditional | Same T4-H dependency |
+| D_enc application to F1 via F2 chain | **C** | T4-H VERIFIED 2026-05-28 (N=3 K_joint established) |
+| No-awareness propagation (Steps H1-H4) | **C** | Same T4-H dependency — now resolved |
 | Numerical prediction (delta_M3) | See Phase11 | Phase11 scope — NOT this document |
 
-**Upgrade path:** When T4-H Steps 2-4 are proven, this document upgrades to Class C (non-conditional). No other gate required (K7_trace and D_enc are already canonical Layer 2).
+**Upgrade status:** T4-H Steps 3-4 VERIFIED (2026-05-28, RCA 4.74/5). This document is now Class C (non-conditional). K7_trace and D_enc are already canonical Layer 2.
 
 ---
 
@@ -147,7 +147,7 @@ delta_M3 prediction (Phase11, ILLUSTRATIVE, conditional on T4-H)
 | F2 | K7_trace boundary clause violated: if Delta_closure somehow creates new tuples or modifies V_final -> Steps H1-H2 invalid |
 | F3 | D_enc predicate creates circular dependency: if Enc evaluation requires V_prov after closure (not Delta_closure substitute) -> Step H3 invalid |
 
-None of F1-F3 are currently triggered. F1 is the only relevant open risk.
+None of F1-F3 are currently triggered. F1 is RESOLVED (T4-H VERIFIED 2026-05-28). F2 and F3 remain non-triggered.
 
 ---
 
@@ -155,12 +155,12 @@ None of F1-F3 are currently triggered. F1 is the only relevant open risk.
 
 | ID | Item | Priority |
 |---|---|---|
-| OI-1 | Prove T4-H Steps 2-4 (colimit for N=3) | HIGH — blocks Class C upgrade |
+| OI-1 | Prove T4-H Steps 2-4 (colimit for N=3) | RESOLVED (2026-05-28) — T4-H VERIFIED, Class C upgrade complete |
 | OI-2 | Formalize the "F2 encodes Delta_closure(k_F1)" causal chain mathematically | MEDIUM — currently described structurally |
 | OI-3 | Link to Phase11 K9_E prediction with explicit dependency graph | LOW — cross-reference exists |
 
 ---
 
-*3observer_registration_transition.md v1.0 — 2026-05-27*
-*Class C-conditional. Extends Phase11_3observer_prediction.md (mechanism layer).*
+*3observer_registration_transition.md v1.1 — 2026-05-28*
+*Class C (upgraded from Class C-conditional — T4-H VERIFIED 2026-05-28). Extends Phase11_3observer_prediction.md (mechanism layer).*
 *Canonical Layer 2 dependencies: K7_trace + D_enc (K_Space_Axiomatization.md v2.4).*

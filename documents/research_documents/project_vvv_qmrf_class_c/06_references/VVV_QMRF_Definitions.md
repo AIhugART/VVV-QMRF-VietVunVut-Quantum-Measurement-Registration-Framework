@@ -5,7 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Role:** Scholarly reference for VVV-QMRF terminology and framework structure.
 Replaces CLAUDE.md as the external-facing source of truth.
 
-**Date:** 2026-05-24 | **Version:** v1.0
+**Date:** 2026-05-27 | **Version:** v1.1 — K7_trace + D_enc canonical Layer 2 added (promotion 2026-05-27, RCA 4.77/5)
 
 ---
 
@@ -23,7 +23,7 @@ are registered, validated, and related across multiple observers.
 | Layer | Content | Status |
 |-------|---------|--------|
 | Layer 1 | K1-K8 Registration-logic axioms | Frozen — structural definitions |
-| Layer 2 | T1-T8 Bridge theorems | Updatable — connections to physical contexts |
+| Layer 2 | T1-T9 Bridge theorems + K7_trace + D_enc | Updatable — connections to physical contexts |
 | Layer 3 | K9_E Probability postulate (P9) | Testable hypothesis |
 
 ---
@@ -66,7 +66,45 @@ K-space: mathematical space of registration states.
 
 Source: `K_Space_Axiomatization.md` (canonical copy, checked into repo).
 
-### 3.3 K9_E Postulate (P9, Layer 3)
+### 3.3 Layer 2 Conservative Extensions (canonical, v2.4)
+
+Promoted to canonical Layer 2 on 2026-05-27 via `Theoretical_Integration_plan.md` v1 (RCA 4.77/5).
+Source: `K_Space_Axiomatization.md` v2.4 §K7_trace, §D_enc.
+
+#### K7_trace — Closure Transition Record
+
+Conservative extension of K7. Records the validity transition at closure as metadata, without modifying K7 semantics or creating new tuples.
+
+```
+Δ_closure(k, t_close) := V_prov(k) − V_final(k)  ∈ {0, 1}
+```
+
+- `Δ_closure = 0`: V_prov = V_final — closure did not change validity (standard case)
+- `Δ_closure = 1`: V_prov = 1, V_final = 0 — K5 invalidation occurred at closure
+
+**Boundary:** K7_trace only reads V_prov and V_final; it does not modify them or create new K-tuples. Layer 1 (K7) is not changed.
+
+**BE lineage:** Kṣaṇabhaṅgavāda (N_BE_00029 — momentary dissolution), Arthakriyā (N_BE_00022 — efficacy).
+
+#### D_enc — Transition-Encoding Registration Act
+
+Layer 2 semantic definition. Binary counterfactual predicate: determines whether a post-closure registration act M_aware encodes the closure transition metadata from K7_trace.
+
+```
+Enc(M_aware, k_F) = 1  iff
+    o(M_aware | Δ_closure(k_F) ≠ 0) ≠ o(M_aware | Δ_closure(k_F) = 0)
+```
+
+- `Enc = 1`: M_aware's outcome counterfactually depends on whether closure transition occurred → encodes Δ_closure
+- `Enc = 0`: M_aware is informationally independent of the closure transition
+
+**Use:** D_enc is the condition in T_BB (no-awareness bridge theorem) and in the 3-OBS hierarchical transition chain.
+
+**BE lineage:** Svabhāvapratibandha-tadutpatti (N_BE_00021 — causal efficacy), Vyāpti (N_BE_00019 — invariable concomitance).
+
+---
+
+### 3.4 K9_E Postulate (P9, Layer 3)
 
 K9_E is a **testable hypothesis** proposing that measurement registration
 affects outcome probabilities under cross-observer incompatibility:
@@ -122,6 +160,8 @@ Project A → (motivates) → Project B → (motivates) → Project C
 | Registration | Act of observer recording measurement outcome with contextual conditions |
 | K-space | Mathematical space of registration states |
 | bot_K | Incommensurability relation (K5) |
+| K7_trace | Closure Transition Record: Δ_closure := V_prov − V_final ∈ {0,1} (canonical Layer 2) |
+| D_enc | Enc(M_aware, k_F): whether post-closure act encodes Δ_closure (canonical Layer 2) |
 | K_ctx | Registration context: K-states from other observers in joint measurement |
 | f_perp | Outcome-overlap: fraction of contextual observers with incompatible outcomes |
 | beta | K9_E coupling strength in [0,1]; beta=0 = standard QM |
@@ -156,4 +196,4 @@ Project A → (motivates) → Project B → (motivates) → Project C
 
 ---
 
-*VVV-QMRF Formal Definitions v1.0 — 2026-05-24. Replaces CLAUDE.md as external-facing SOT.*
+*VVV-QMRF Formal Definitions v1.1 — 2026-05-27. K7_trace + D_enc added as canonical Layer 2 (§3.3). Replaces CLAUDE.md as external-facing SOT.*

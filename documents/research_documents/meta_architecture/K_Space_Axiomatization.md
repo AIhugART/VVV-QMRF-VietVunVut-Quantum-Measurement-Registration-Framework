@@ -1149,7 +1149,7 @@ T4-H — Colimit Existence Hypothesis (explicit conditional — F-RCA-P4-06 Opti
     For any finite diagram D of K-spaces with K1-K8-preserving morphisms,
     the colimit colim(D) exists in C_{K-space}.
 
-  Status: CONDITIONAL THEOREM (2/4 steps verified — 2026-05-23 RCA).
+  Status: THEOREM (4/4 steps verified — Steps 3-4: 2026-05-28, RCA 4.74/5 PASS).
 
     Step 1 (C_{K-space} category): VERIFIED — identity, composition, associativity.
     Step 2 (colimit construction): VERIFIED — K_colim = (∐_i K_i)/~ constructed;
@@ -1159,22 +1159,22 @@ T4-H — Colimit Existence Hypothesis (explicit conditional — F-RCA-P4-06 Opti
       to Step 3); 5/5 verification gates PASS.
       Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_step2_colimit_construction.md
       (3-Round RCA, aggregate 4.73/5).
-    Step 3 (K1-K8 preservation through quotient): DEFERRED — K5 cross-K_R ⊥ paths,
-      V dynamics, cycle detection in <_colim.
-    Step 4 (universal property): DEFERRED — existence + uniqueness of mediating
-      morphism.
-    K1-K8 define the structure of individual K-spaces; they do NOT by themselves
-    prove that C_{K-space} is cocomplete. T4 conclusions hold CONDITIONAL on
-    T4-H Steps 1-4.
+    Step 3 (K1-K8 preservation through quotient): VERIFIED (2026-05-28) — K1-K8
+      all PASS; T-PRES Lemma (K8-morphisms preserve t) + T-REP Corollary resolve
+      K2 acyclicity; K5 cross-K_R ⊥ consistent; V monotone dynamics ensure
+      non-contradiction. RCA 4.74/5.
+      Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_steps3_4_k1k8_universal.md
+    Step 4 (universal property): VERIFIED (2026-05-28) — u([k,i]) := f_i(k)
+      well-defined (diagram compatibility + T-REP), K8-preserving, unique.
+      Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_steps3_4_k1k8_universal.md
+    T4-H is a FULL THEOREM. T4 conclusions valid for all N ≥ 2 (no further gates).
 
-  Conditional scope:
-    If T4-H Steps 1-4 hold  → T4 conclusions valid for all N ≥ 2.
-    If T4-H fails  → N-observer colimit may not exist in general; T1
-                     (N = 2, constructive) remains valid independently
-                     because T1 builds K_joint explicitly without invoking
-                     the colimit universal property.
-    Current (2/4): K_colim EXISTS as a well-defined set with well-defined K1
-    tuple fields. Steps 3-4 remain deferred but the construction is explicit.
+  Scope (T4-H THEOREM):
+    T4-H holds (4/4) → T4 conclusions valid for all N ≥ 2.
+    T1 (N = 2, constructive) remains independently valid without invoking
+    the colimit universal property.
+    Current (4/4): K_colim EXISTS, satisfies K1-K8, and satisfies the universal
+    property. T4-H is no longer conditional.
 
 Non-transitivity of ⊥_K:
   Counter-example possibility:
@@ -1254,9 +1254,9 @@ Conditional scope:
 | **Level 4 dependency** | `requires_K_joint`, `D_joint`, `AdmJoint` (for admissibility of each K_joint step) |
 | **EX anchor** | No direct EX intersection node — internal algebraic theorem; EX compass used as sanity check (no K_joint composition tension in EX graph) |
 | **BE lineage** | Continuity of K-side registration structure across sequential joint contexts — structural extension of K2 chain property to multi-K_R scope |
-| **Claim class** | D (proposed) — conditional on T4-H which is itself a hypothesis |
-| **Freeze status** | Conditional on T4-H + Level 4 freeze |
-| **Update trigger** | If T4-H is established or refuted; if K_joint compatibility conditions change; if global commutativity (F7d) conditions are revised |
+| **Claim class** | D (proposed) — T4-H is now THEOREM (2026-05-28); T5 upgrade to Class C pending Level 4 freeze (remaining gate) |
+| **Freeze status** | Conditional on Level 4 freeze (T4-H gate resolved) |
+| **Update trigger** | If K_joint compatibility conditions change; if global commutativity (F7d) conditions are revised; if Level 4 freeze changes |
 
 ---
 
@@ -1401,9 +1401,9 @@ F-T7-01 (T5 dependency):
 | **Level 4 dependency** | `requires_K_joint`, `D_joint`, `AdmJoint` (for all pairwise + N=3 admissibility checks); IRB-induced D_joint scope |
 | **EX anchor** | `N_QM_VVV_00025` (IRB / Entanglement) — intersection node; BE anchor: `N_BE_00021` (Essential relation / svabhāvapratibandha); QM anchors: `N_QM_00047` (Entanglement), `N_QM_00090` (Bell correlations) |
 | **BE lineage** | Svabhāvapratibandha extended via E15 IRB — registration non-separability as the K-side analogue of intrinsic-nature relational binding in Dharmakīrti; extended to multi-body scope |
-| **Claim class** | D (proposed) — conditional on T4-H, E15 wording stability, and Level 4 freeze |
-| **Freeze status** | Conditional on T4-H + Level 4 freeze + E15 wording |
-| **Update trigger** | If E15 IRB definition is revised; if T4-H is established or refuted; if T5 is revised; if Level 4 `requires_K_joint` scope changes for IRB-induced D_joint demands |
+| **Claim class** | D (proposed) — T4-H is now THEOREM (2026-05-28); T7 upgrade to Class C pending Level 4 freeze + E15 wording stability (remaining gates) |
+| **Freeze status** | Conditional on Level 4 freeze + E15 wording (T4-H gate resolved) |
+| **Update trigger** | If E15 IRB definition is revised; if T5 is revised; if Level 4 `requires_K_joint` scope changes for IRB-induced D_joint demands |
 
 ### T8 — K5_prospective Frequency Bridge Theorem
 
@@ -1699,7 +1699,7 @@ Non-linear alternatives like f_perp = (c/n)² satisfy permutation invariance but
 
 ### K7_trace — Closure Transition Record (Conservative Extension of K7)
 
-> **Promotion record (2026-05-27):** Promoted from BB-VVV local definition (`09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §18`) to canonical Layer 2. RCA gate: 4.77/5 aggregate (Theoretical_Integration_plan.md v1). Pre-promotion RCA: 4.48/5 (`rca_k7_trace_gate.md`). Second consumer: 3-OBS hierarchical transition (CONDITIONAL on T4-H Steps 2-4).
+> **Promotion record (2026-05-27):** Promoted from BB-VVV local definition (`09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §18`) to canonical Layer 2. RCA gate: 4.77/5 aggregate (Theoretical_Integration_plan.md v1). Pre-promotion RCA: 4.48/5 (`rca_k7_trace_gate.md`). Second consumer: 3-OBS hierarchical transition — T4-H VERIFIED (2026-05-28); 3-OBS upgraded to Class C.
 
 ```
 K7_trace — Closure Transition Record Extension (Conservative Extension of K7)
@@ -1743,7 +1743,7 @@ Relationship to K7 (parent axiom):
 | **BE lineage** | Kṣaṇabhaṅgavāda (N_BE_00029): closure is a kṣaṇa; Δ_closure is its saṃskāra (causal imprint of a vanished moment). Arthakriyā (N_BE_00022): Δ_closure records whether closure had non-trivial causal consequences |
 | **Claim class** | C-canonical (conservative extension; promoted from Class D-local 2026-05-27) |
 | **Freeze status** | Updatable (Layer 2 bridge). If K7 closure definition changes, K7_trace updates. |
-| **Consumers** | (1) T_BB V3 Step 1: Δ_closure provides formal V_prov substitute after closure. (2) D_enc (§D_enc below): parent for transition-encoding predicate. (3) 3-OBS hierarchical transition (CONDITIONAL on T4-H Steps 2-4). |
+| **Consumers** | (1) T_BB V3 Step 1: Δ_closure provides formal V_prov substitute after closure. (2) D_enc (§D_enc below): parent for transition-encoding predicate. (3) 3-OBS hierarchical transition — T4-H VERIFIED (2026-05-28); 3-OBS upgraded to Class C. |
 | **Boundary** | K7_trace does NOT restore V_prov. Does NOT create new registration tuples. Does NOT reverse K5 invalidation. Does NOT provide o(k) content. Δ_closure records a magnitude (0 or 1), not a state. |
 | **Source** | `09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §18` (local origin); canonical as of v2.4 (2026-05-27) |
 
@@ -1801,10 +1801,10 @@ Structural properties:
 | T1 | K_joint construction | `requires_K_joint`, `D_joint`, embeddings | Pending | Theorem statement updates; K1-K8 unchanged |
 | T2 | ⊥_K derivation | `AdmJoint` (i)-(v), `⊥_K` boundary clauses | Pending | Derivation chain updates; K1-K8 unchanged |
 | T3 | Bridge_EWF formalization | `Bridge_EWF` lemma, **AJVS** (Semantic Postulate Layer 0.5 — relativization defense, formalized) | Pending | Derivation chain may need revision if AJVS challenged; K1-K8 unchanged |
-| T4 | N-observer generalization | All Level 4, generalized to N; **T4-H** Colimit Existence Hypothesis (conditional) | New — Class D | Conditional on T4-H; independently updatable |
-| T5 | K_joint composition (algebraic associativity) | `requires_K_joint`, `D_joint`, `AdmJoint` (per T1+T4) | Conditional on T4-H | K_joint composition structure updates; K1-K8 unchanged |
+| T4 | N-observer generalization | All Level 4, generalized to N; **T4-H** Colimit Existence THEOREM (4/4 VERIFIED 2026-05-28) | Class D → pending Class C upgrade (Level 4 freeze gate remaining) | Independently updatable; T4-H no longer a gate |
+| T5 | K_joint composition (algebraic associativity) | `requires_K_joint`, `D_joint`, `AdmJoint` (per T1+T4) | T4-H gate resolved (2026-05-28); pending Level 4 freeze | K_joint composition structure updates; K1-K8 unchanged |
 | T6 | Decoherence-induced registration update (Path A: K5 invalidation; Path B: k_new instantiation) | `requires_K_joint`, C_K, `⊥_K` boundary clauses (Path A only) | Pending Level 4 freeze | Path A K5 conditions update; K3 intrinsic cert unchanged |
-| T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | Conditional on T4-H + Level 4 + E15 | If E15 IRB changes or T4-H fails; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
+| T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | T4-H gate resolved (2026-05-28); pending Level 4 freeze + E15 wording | If E15 IRB changes; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
 | T8 | K5_prospective Frequency Bridge — f_perp = E[I(K5_prospective fires)]; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas) | `requires_K_joint`, C_K (via K5_prospective); `⊥_K` boundary clauses (inherited) | Updatable (Layer 2). Structural uniqueness via T8-H1. Conditional on K_ctx uniformity + K6 non-hierarchy | If K5_prospective revised; if K_ctx definition changes (weighting); if new continuous contradiction-strength axiom added → T8 weighted generalization |
 | T9 | K_ctx Construction Theorem (T3-Morphism Channel Formalization) — φ_ij = i_j (K8-constrained T1 embedding); 5 lemmas (L1-L5); [A-E1] FULLY ELIMINATED | `requires_K_joint`, C_K (via K5 precondition); `D_joint` scope (via K6 Auth — inherited). No NEW Level 4 dependency. | Updatable (Layer 2). φ_ij = i_j identification holds for any T1-supplied embedding; structural core (L1-L2) is T1-independent — K8 constraint alone determines φ_ij. | If T1 K_joint construction revised; if K5 requires_K_joint scope changes; if K8 field-preservation constraint modified |
 | K7_trace | Closure Transition Record (Conservative Extension of K7) — Δ_closure(k) := V_prov(k) − V_final(k) at t_close ∈ {−1,0,1}; metadata of closure event (no new tuples, no V modification); enables T_BB Step 1; second consumer: 3-OBS hierarchical transition (CONDITIONAL on T4-H Steps 2-4). Promoted from BB-VVV local §18 to canonical Layer 2 (2026-05-27). RCA 4.77/5. | None (derives from K7 closure values only). No Level 4 dependency. | Updatable (Layer 2 conservative extension). Promoted from Class D-local (BB-VVV §18) to Class C-canonical (2026-05-27). | If K7 closure definition changed; otherwise self-contained. |
