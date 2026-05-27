@@ -8,9 +8,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Document type:** `meta_architecture` (Class C working copy)
 **Date:** 2026-05-19 (updated 2026-05-24)
-**Version:** 2.3
+**Version:** 2.4
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** v2.3 — Layer 1 extended with K5_prospective (P9 bridge, v29). Layer 2 extended with T8 (K5_prospective Frequency Bridge + H1-H4) + T9 (K_ctx Construction Theorem / T3-Morphism Channel Formalization, L1-L5). **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. **UPDATE (2026-05-24):** T8 bridges K5_prospective ↔ K9_E f_perp; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas). T9 formalizes φ_ij morphism channel; [A-E1] FULLY ELIMINATED via L1-L5 (5 lemmas, 3-Round RCA). Only [A-E3] remains (1/4 original K9_E assumptions). Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D; T8, T9 are Class C (structural derivation from K5_prospective / K8 embedding).
+**Status:** v2.4 — Layer 1 extended with K5_prospective (P9 bridge, v29). Layer 2 extended with T8 (K5_prospective Frequency Bridge + H1-H4) + T9 (K_ctx Construction Theorem / T3-Morphism Channel Formalization, L1-L5) + **K7_trace** (Closure Transition Record, canonical promotion 2026-05-27) + **D_enc** (Transition-Encoding Registration Act, canonical promotion 2026-05-27). **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. **UPDATE (2026-05-24):** T8 bridges K5_prospective ↔ K9_E f_perp; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas). T9 formalizes φ_ij morphism channel; [A-E1] FULLY ELIMINATED via L1-L5 (5 lemmas, 3-Round RCA). Only [A-E3] remains (1/4 original K9_E assumptions). **UPDATE (2026-05-27):** K7_trace and D_enc promoted from BB-VVV local (fit plan §18-§19) to canonical Layer 2. RCA gate: 4.77/5 (Theoretical_Integration_plan.md v1). Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D; T8, T9 are Class C (structural derivation from K5_prospective / K8 embedding); K7_trace and D_enc are Class C-canonical (conservative extensions, promoted 2026-05-27).
 **Source:** Derived from VVV-QMRF Working Paper v2.0 Section 7.2 deferred item #5
 **Cite:** VVV-QMRF §K-AXIOM
 **Plan reference:** `papers/Testable_Prediction_Section/extended_wigners_friend_k_side_incommensurability/plan/VVV-QMRF_K_Space_Axiomatization_Plan.md`
@@ -1922,6 +1922,103 @@ ADDITIVITY (implicit in K5 binary evaluation):
 | **[A-E2] impact** | **[A-E2b] outcome filter `o(k_j) ≠ o` is now STRUCTURALLY DETERMINED, not assumed.** The outcome filter is the ONLY way to construct an outcome-dependent binary indicator from K5_prospective. Any alternative filter (e.g., quantum overlap) uses resources unavailable in K1-K8. [A-E2] status: WEAK → STRONG (counting, T8) → **BOTH STRONG** (counting + filter, T8-H1). The assumption is eliminated — what remains is the recognition that K1-K8 primitives admit exactly one form |
 | **Residual** | The only residual non-uniqueness is the choice of `≠` vs `=` in the outcome filter (`o(k_j) ≠ o` vs `o(k_j) = o`). This is resolved by: (a) PP-2 v2 — `=` filter makes f_perp outcome-INDEPENDENT → cancellation → δP=0, so `≠` is forced; (b) BE: a contradictor must register a DIFFERENT outcome to serve as bādhaka (same outcome would confirm, not contradict). Therefore `≠` is also structurally forced |
 
+### K7_trace — Closure Transition Record (Conservative Extension of K7)
+
+> **Promotion record (2026-05-27):** Promoted from BB-VVV local definition (`09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §18`) to canonical Layer 2. RCA gate: 4.77/5 aggregate (Theoretical_Integration_plan.md v1). Pre-promotion RCA: 4.48/5 (`rca_k7_trace_gate.md`). Second consumer: 3-OBS hierarchical transition (CONDITIONAL on T4-H Steps 2-4).
+
+```
+K7_trace — Closure Transition Record Extension (Conservative Extension of K7)
+Layer:        2 (conservative extension of K7)
+Parent axiom: K7 (Registration Process Closure)
+Precedent:    K5_prospective (conservative extension of K5, v29)
+
+Statement:
+  At the moment of closure t_close(K_R), when V_prov(k) → V_final(k)
+  for all k ∈ K_R [per K7], the closure event itself carries a
+  structural record:
+
+  Δ_closure(k, t_close) := V_prov(k) − V_final(k)     ∈ {−1, 0, 1}
+
+  where:
+    Δ_closure = 0   →  no validity change at closure (most common)
+    Δ_closure = 1   →  V_prov was 1, V_final is 0 (K5 invalidation confirmed)
+    Δ_closure = −1  →  impossible under K4+K5 (V_prov cannot be 0 with V_final 1)
+
+  Δ_closure is a PROPERTY OF THE CLOSURE EVENT, not a new k ∈ K_R.
+  Δ_closure is computed from values that already exist in K7 at closure.
+  Δ_closure does NOT create new tuples, does NOT modify V_final, and
+  does NOT extend K_R beyond t_close.
+
+Relationship to K7 (parent axiom):
+  K7 (closure):  V_prov(k) → V_final(k) at t_close. K_R closed.
+                 Target: actual tuples k ∈ K_R. Effect: V finalized.
+  K7_trace:      Δ_closure(k) := V_prov(k) − V_final(k) at t_close.
+                 Target: same tuples k ∈ K_R. Effect: NONE on V.
+                 Records: transition metadata only.
+  Same closure. Same tuples. No new structural effect.
+  K7 outputs V_final. K7_trace outputs Δ_closure (derivative information).
+```
+
+| Property | Value |
+|---|---|
+| **Layer** | 2 (conservative extension) |
+| **Parent** | K7 (Closure) |
+| **Precedent** | K5_prospective (same conservative extension pattern) |
+| **Level 4 dependency** | None — derives from K7 closure values at t_close only |
+| **BE lineage** | Kṣaṇabhaṅgavāda (N_BE_00029): closure is a kṣaṇa; Δ_closure is its saṃskāra (causal imprint of a vanished moment). Arthakriyā (N_BE_00022): Δ_closure records whether closure had non-trivial causal consequences |
+| **Claim class** | C-canonical (conservative extension; promoted from Class D-local 2026-05-27) |
+| **Freeze status** | Updatable (Layer 2 bridge). If K7 closure definition changes, K7_trace updates. |
+| **Consumers** | (1) T_BB V3 Step 1: Δ_closure provides formal V_prov substitute after closure. (2) D_enc (§D_enc below): parent for transition-encoding predicate. (3) 3-OBS hierarchical transition (CONDITIONAL on T4-H Steps 2-4). |
+| **Boundary** | K7_trace does NOT restore V_prov. Does NOT create new registration tuples. Does NOT reverse K5 invalidation. Does NOT provide o(k) content. Δ_closure records a magnitude (0 or 1), not a state. |
+| **Source** | `09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §18` (local origin); canonical as of v2.4 (2026-05-27) |
+
+---
+
+### D_enc — Transition-Encoding Registration Act (Layer 2 Semantic Definition)
+
+> **Promotion record (2026-05-27):** Promoted from BB-VVV local definition (`09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §19`) to canonical Layer 2. RCA gate: 4.77/5 aggregate (same gate as K7_trace; Theoretical_Integration_plan.md v1). Pre-promotion RCA: 4.67/5 (`rca_g9_d_enc_gate.md`). Resolves G9 (T_BB Step 2 completion).
+
+```
+Definition D_enc — Transition-Encoding Registration Act (Layer 2)
+Layer:     2 (semantic definition, no axiom)
+Parent:    K7_trace (§K7_trace above)
+Precedent: K5_prospective evaluation mode (binary classification of hypothetical act)
+
+Let K_R be a closed K-space (t ≥ t_close(K_R)).
+Let k_F ∈ K_R have Δ_closure(k_F, t_close) computed per K7_trace.
+
+A registration act M_aware in K_R (or in K_R' sharing a comparison
+context C_K with K_R) ENCODES TRANSITION INFORMATION about k_F iff:
+
+  Enc(M_aware, k_F) = 1  iff  o(M_aware | Δ_closure(k_F) ≠ 0)
+                                ≠ o(M_aware | Δ_closure(k_F) = 0)
+
+Equivalently: M_aware encodes transition information iff removing
+the Δ_closure ≠ 0 fact would change o(M_aware).
+
+Structural properties:
+  (i)   Enc is a binary predicate on (M_aware, k_F) pairs
+  (ii)  Enc does NOT modify V, cert, t, or M of any tuple
+  (iii) Enc does NOT create new tuples in any K-space
+  (iv)  Enc ONLY classifies existing or hypothetical M_aware acts
+  (v)   Enc requires K7_trace (Δ_closure must be defined)
+```
+
+| Property | Value |
+|---|---|
+| **Layer** | 2 (semantic definition) |
+| **Parent** | K7_trace (Δ_closure must be defined before Enc can be evaluated) |
+| **Precedent** | K5_prospective — same pattern: binary classification of hypothetical act |
+| **Level 4 dependency** | None (binary predicate over K7_trace values; no ρ-side or Level 4 input) |
+| **BE lineage** | Svabhāvapratibandha-tadutpatti (N_BE_00021): Δ_closure (hetu) has causal essential relation to o(M_aware) (sādhya); Enc = 1 iff this causal bond exists. Vyāpti (N_BE_00019): Enc counterfactual IS the vyāpti test. Arthakriyā (N_BE_00022): Enc tests whether Δ_closure has causal efficacy on o(M_aware). |
+| **Claim class** | C-canonical (semantic definition; promoted from Class D-local 2026-05-27) |
+| **Freeze status** | Updatable (Layer 2 semantic definition). If K7_trace revised, D_enc updates. If K5_prospective evaluation pattern changes, D_enc generalization path updates. |
+| **Consumers** | T_BB V3 Step 2 (COMPLETE via D_enc): Enc(M_aware, k_F) = 1 → requires_K_joint(M_aware, M_W) = 1 → C_K formed → K5 fires → V(M_aware) = 0 → no-awareness derived. |
+| **Boundary** | D_enc does NOT create new tuples. Does NOT modify V, cert, or outcome of any existing tuple. The counterfactual o(M_aware | Δ ≠ 0) is a hypothetical evaluation mode only — it does not instantiate a new registration act. |
+| **Source** | `09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §19` (local origin); canonical as of v2.4 (2026-05-27) |
+
+---
+
 ### Layer 2 Summary / Tổng kết Tầng 2
 
 | Theorem | Bridges axioms to | Level 4 dependency | Freeze status | Risk if Level 4 changes |
@@ -1935,6 +2032,8 @@ ADDITIVITY (implicit in K5 binary evaluation):
 | T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | Conditional on T4-H + Level 4 + E15 | If E15 IRB changes or T4-H fails; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
 | T8 | K5_prospective Frequency Bridge — f_perp = E[I(K5_prospective fires)]; upgrades [A-E2] WEAK → STRONG | `requires_K_joint`, C_K (via K5_prospective); `⊥_K` boundary clauses (inherited from K5_prospective) | Updatable (Layer 2). Derivation is a statistical identity over binary K5/K6 primitives. Conditional on K_ctx uniformity. | If K5_prospective revised; if K_ctx definition changes (weighting); if new continuous contradiction-strength axiom added → T8 weighted generalization |
 | T9 | K_ctx Construction Theorem (T3-Morphism Channel Formalization) — φ_ij = i_j (K8-constrained T1 embedding); 5 lemmas (L1-L5); [A-E1] FULLY ELIMINATED | `requires_K_joint`, C_K (via K5 precondition); `D_joint` scope (via K6 Auth — inherited). No NEW Level 4 dependency. | Updatable (Layer 2). φ_ij = i_j identification holds for any T1-supplied embedding; structural core (L1-L2) is T1-independent — K8 constraint alone determines φ_ij. | If T1 K_joint construction revised; if K5 requires_K_joint scope changes; if K8 field-preservation constraint modified |
+| K7_trace | Closure Transition Record (Conservative Extension of K7) — Δ_closure(k) := V_prov(k) − V_final(k) at t_close ∈ {−1,0,1}; metadata of closure event (no new tuples, no V modification); enables T_BB Step 1; second consumer: 3-OBS hierarchical transition (CONDITIONAL on T4-H Steps 2-4). Promoted from BB-VVV local §18 to canonical Layer 2 (2026-05-27). RCA 4.77/5. | None (derives from K7 closure values only). No Level 4 dependency. | Updatable (Layer 2 conservative extension). Promoted from Class D-local (BB-VVV §18) to Class C-canonical (2026-05-27). | If K7 closure definition changed; otherwise self-contained. |
+| D_enc | Transition-Encoding Registration Act (Layer 2 Semantic Definition) — Enc(M_aware, k_F) = 1 iff o(M_aware\|Δ≠0) ≠ o(M_aware\|Δ=0); binary counterfactual predicate; enables T_BB Step 2 (G9 CLOSED, G1 CLOSED); no new tuples, no V modification. Promoted from BB-VVV local §19 to canonical Layer 2 (2026-05-27). RCA 4.77/5. | None (binary predicate over K7_trace values; no ρ-side or Level 4 dependency). | Updatable (Layer 2 semantic definition). Promoted from Class D-local (BB-VVV §19) to Class C-canonical (2026-05-27). | If K7_trace revised (parent); otherwise self-contained. |
 
 ---
 
