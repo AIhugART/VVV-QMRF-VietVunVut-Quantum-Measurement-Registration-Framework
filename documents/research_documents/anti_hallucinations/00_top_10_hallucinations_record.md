@@ -13,10 +13,21 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Tiebreaker:** Risk Score bang nhau -> sort by H (desc) -> W (desc) -> A (desc) -> Trace score (ascending)
 **Shared component rule:** Components appearing in both tables (T5 K_ctx, K5_prospective) MUST have identical H/W/A/Risk scores. Any score change to a shared component MUST be applied to both tables.
 
-**Ngay:** 2026-05-25 14:30 UTC+7
-**Version:** v1.5 — AHP Status Model Extension (DORMANT+ARCHIVED) + Tiebreaker #4 (Trace score) + v1.0→v1.1 changelog (3-Round RCA decisions A/B/C, 2026-05-25)
-**Previous:** v1.4 (2026-05-24) — K9E-PAT CLOSED (UNRESOLVABLE) + K9_E impl DOCUMENTED
+**Ngay:** 2026-05-27 UTC+7
+**Version:** v1.6 — K7_trace + D_enc AHP evaluation (Layer 2 promotion, 2026-05-27): both GREEN/LOW, G2 gate PASS, no Top 10 entry required
+**Previous:** v1.5 (2026-05-25) — AHP Status Model Extension (DORMANT+ARCHIVED) + Tiebreaker #4 (Trace score) + v1.0→v1.1 changelog
 **Next audit:** 2026-05-31
+
+---
+
+## Changelog v1.5 -> v1.6
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|-------------|
+| **EVALUATE** | K7_trace (Closure Transition Record) | Not in AHP pipeline | G2 PASS: H=2, W=2, A=0.2, Risk=4.8 (GREEN/LOW). Trace=3/6 (K7 axiom SOT + BB_VVV_fit_plan §18 + K_Space_Axiomatization.md v2.4). Score ≤ 8, trace ≥ 1, no [AH-CRIT]. | Layer 2 promotion 2026-05-27 (Theoretical_Integration_plan.md v1, RCA 4.77/5). AHP gate mandatory per CLAUDE.md. Risk below Top 10 minimum (9.0) — no table entry required. |
+| **EVALUATE** | D_enc (Transition-Encoding Registration Act) | Not in AHP pipeline | G2 PASS: H=3, W=2, A=0.2, Risk=7.2 (GREEN/LOW). Trace=2/6 (K7_trace canonical SOT + BB_VVV_fit_plan §19). Score ≤ 8, trace ≥ 1, no [AH-CRIT]. | Layer 2 promotion 2026-05-27 (same RCA gate). Risk below Top 10 minimum (9.0) — no table entry required. |
+
+**G2 Gate verdict (2026-05-27):** K7_trace Risk=4.8 PASS, D_enc Risk=7.2 PASS. No Yellow/Red. Top 10 tables unchanged.
 
 ---
 
