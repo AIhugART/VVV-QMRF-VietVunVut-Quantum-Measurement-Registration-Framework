@@ -1491,7 +1491,7 @@ K9_D proposes `P(o|k) = [cert(k)·1 + (1-cert(k))·α]·Tr(E_o ρ)/Z_D`. FAIL-FA
 | `03_k9_sprints/k9_analysis/K9S2_candidate_F.md` | T4-B1 status: ❌ OPEN → ⚠️ PARTIAL (Step 2 VERIFIED; Steps 3–4 DEFERRED) |
 | `04_governance/CHANGELOG.md` | Entry #26 Pending line corrected (P5/P6 swap); this entry #27 added |
 
-**Status:** P6 (K9_E) COMPLETED — see entry #28 below. P7 synthesis pending.
+**Status:** P6 (K9_E) COMPLETED — see entry #28. P7 (Cross-K9 synthesis) COMPLETED — see entry #29.
 
 ---
 
@@ -1526,4 +1526,39 @@ K9_D proposes `P(o|k) = [cert(k)·1 + (1-cert(k))·α]·Tr(E_o ρ)/Z_D`. FAIL-FA
 | `03_k9_sprints/k9_deep_review/index.md` | Status → P6 ✅; P6 row completed; change log P6 v1.0 entry added; footer v0.3 |
 | `04_governance/CHANGELOG.md` | Entry #27 Pending → Status corrected; this entry #28 added |
 
-**Pending:** P7 — Cross-K9 synthesis (`synthesis_k9_a_to_f.md`). All P1–P6 audits COMPLETE.
+**Status:** P7 COMPLETED — see entry #29 below. K9 Deep Review program closed.
+
+---
+
+## 29. K9 Deep Review — P7 Cross-K9 Synthesis (2026-05-27)
+
+**Program:** K9 Deep Review (Provenance & SOT Traceability), Phase P7 (final)
+**Method:** Aggregate synthesis across P1–P6 audits. No new SOT lookups; all data sourced from per-K9 reports.
+
+### Summary
+
+| Metric | Value |
+|--------|-------|
+| Total components aggregated | 90 (across 6 K9 candidates) |
+| Program mean H-score | **3.07** (BLUE band, `[AH-LOW]`) |
+| Total orphans | 6 (all resolved/deferred/dead — 0 affect Class C) |
+| PEER-SYNC open items | 4 (PS-A1, PS-A2, PS-A3, PS-C1 — all LOW priority) |
+| OI open items | 1 (OI-E1 — non-blocking, defer to K9-S12 paper prep) |
+| Success criteria §8 | ALL 4 PASS |
+| Class C re-issuance | CONFIRMED (K9_E Class C qualified, 0 orphans, mean H=2.3) |
+
+### P7 Key Findings
+
+**Three-filter structural funnel:** K9 candidates are eliminated by three successive structural barriers: (1) PP-2-SI Cancellation — outcome-independent modifiers cancel in normalization (eliminates K9_B, K9_D, K9_C/InterpA); (2) Frozen K1-K8 Extension — new K-state tuple fields blocked by frozen Layer 1 (eliminates K9_C/InterpB); (3) T4-H Algebraic Gap — Steps 3-4 unproven (defers K9_F). K9_E is the unique candidate passing all three filters.
+
+**Cross-K9 shared structure:** `Tr(E_o ρ)` Born rule is universal (all 6 candidates). `cert(k)=1` structural constant (K9_A/B/D) is the root cause of two FAIL-FATAL eliminations. `⊥_K` appears in K9_B (outcome-independent → fails) and K9_E (outcome-filtering → survives) — same operator, different structural role.
+
+**v31 net impact on K9_E:** T9 + T8-H1 + K5_prospective reduced K9_E mean H from estimated ~4.0 (pre-v31) to actual 2.3 — strongest provenance grounding among all 6 candidates, and the only candidate with 0 orphans and 0 H≥7 components.
+
+### Files Modified
+
+| File | Change |
+|------|--------|
+| `03_k9_sprints/k9_deep_review/synthesis_k9_a_to_f.md` | NEW — P7 deliverable; aggregate table, shared-component analysis, failure taxonomy (Mode 0–3), action register, success criteria check, Class C re-issuance statement |
+| `03_k9_sprints/k9_deep_review/index.md` | Status → P7 ✅ ALL COMPLETE; P7 row completed; Change Log P7 v1.0 entry; footer v0.4; program closed |
+| `04_governance/CHANGELOG.md` | Entry #27 Status corrected; entry #28 Pending → Status corrected; this entry #29 added |
