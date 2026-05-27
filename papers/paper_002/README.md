@@ -1,7 +1,7 @@
 # Paper 002: Geometric Blindness in EWF Experiments
 
 **Title:** Has Every Wigner's Friend Experiment Been Blind to a Geometric Degree of Freedom?
-**Status:** Draft v19 — arXiv-ready | **Date:** 2026-05-25 | **Target:** arXiv quant-ph → Phys. Rev. A
+**Status:** Submitted to arXiv (2026-05-27) | **Date:** 2026-05-27 | **Target:** arXiv quant-ph → Phys. Rev. A
 
 ## Files
 
@@ -38,8 +38,8 @@
 - [x] 10/10 sections + Abstract
 - [x] 5/5 figures + 4/4 supplemental
 - [x] 14 references + QC 15/15
-- [ ] LaTeX conversion
-- [ ] arXiv submit
+- [x] LaTeX conversion
+- [x] arXiv submit
 
 ## Key Results
 

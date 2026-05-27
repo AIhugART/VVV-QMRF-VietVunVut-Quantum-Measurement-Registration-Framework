@@ -3,9 +3,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Class C — Post-v30 Execution Plan
 # K9E-PAT Resolution → K9-S12 Paper → Experimental Path
 
-**Version:** v1.0 (2026-05-24)
-**Status:** Plan — chưa thực hiện
-**Parent:** VVV-QMRF Class C (qualified, v30)
+**Version:** v1.1 (2026-05-27)
+**Status:** Track 1 & Track 2 COMPLETED (arXiv submitted) — Track 3 (Experimental) ACTIVE
+**Parent:** VVV-QMRF Class C (qualified, v32)
 **RCA basis:** 3-Round RCA (aggregate 4.92/5) — IBM Quantum approach rejected (category error)
 **Location:** `04_governance/Post_v30_Execution_Plan.md`
 
@@ -45,9 +45,9 @@ IBM QUANTUM: REJECTED (RCA 4.92/5) — double category error.
   → No hardware track. K9E-PAT resolved theoretically. K9_E testing needs optics.
 
 THIS PLAN — 3 TRACKS:
-  Track 1: K9E-PAT theoretical resolution (1-2 sessions, no hardware)
-  Track 2: K9-S12 paper writing (3-5 sessions, existing paper plan)
-  Track 3: Experimental path (future, needs optical lab)
+  Track 1: K9E-PAT theoretical resolution (1-2 sessions, no hardware) — COMPLETED (v31)
+  Track 2: K9-S12 paper writing (3-5 sessions, existing paper plan) — COMPLETED & SUBMITTED (v32)
+  Track 3: Experimental path (future, needs optical lab) — ACTIVE
 ```
 
 ---
@@ -57,17 +57,17 @@ THIS PLAN — 3 TRACKS:
 ```
 POST-v30 EXECUTION
 │
-├─ Track 1: K9E-PAT RESOLUTION (PRIMARY — immediate, 1-2 sessions)
-│   ├─ 1A: Compute additive model 2BSM/1BSM ratio
-│   ├─ 1B: RCA — additive vs multiplicative vs empirical (−0.78)
-│   └─ 1C: Decision — model/structural/noise?
+├─ Track 1: K9E-PAT RESOLUTION (COMPLETED)
+│   ├─ [x] 1A: Compute additive model 2BSM/1BSM ratio
+│   ├─ [x] 1B: RCA — additive vs multiplicative vs empirical (−0.78)
+│   └─ [x] 1C: Decision — model/structural/noise? (Resolved: T1C Closed)
 │
-├─ Track 2: K9-S12 PAPER (PRIMARY — medium term, 3-5 sessions)
-│   ├─ 2A: Numerical computations (Monte Carlo, sensitivity scans)
-│   ├─ 2B: Paper section writing (theorem → predictions → discussion)
-│   └─ 2C: Quality check → arXiv submission
+├─ Track 2: K9-S12 PAPER (COMPLETED & SUBMITTED TO arXiv)
+│   ├─ [x] 2A: Numerical computations (Monte Carlo, sensitivity scans)
+│   ├─ [x] 2B: Paper section writing (theorem → predictions → discussion)
+│   └─ [x] 2C: Quality check → arXiv submission (Submitted on 2026-05-27)
 │
-└─ Track 3: EXPERIMENTAL PATH (FUTURE — needs optical lab)
+└─ Track 3: EXPERIMENTAL PATH (ACTIVE — needs optical lab)
     ├─ 3A: K9-S12 optical experiment proposal
     └─ 3B: 3-observer experiment design (delta_M3 = −0.223, 11x)
 ```
@@ -187,69 +187,66 @@ GATE T1: After 1A-1C
 
 ---
 
-## TRACK 2 — K9-S12 Paper Writing
+## TRACK 2 — K9-S12 Paper Writing (COMPLETED & SUBMITTED)
 
-**Priority:** HIGH — sau Track 1
-**Sessions:** 3-5
+**Priority:** HIGH — COMPLETED
+**Sessions:** 3-5 (All executed)
 **Input:** Paper plan `03_k9_sprints/k9_s12/paper_plan_single_waveplate_EWF.md`
-**Output:** arXiv-ready preprint
+**Output:** arXiv-ready preprint (`manuscript.tex` and `manuscript.md` Draft v94)
 
 ### Context
 
-Paper plan đã có đầy đủ (2026-05-23): 10 sections, 5 figures, 8 refs, LLM session plan K9-S13-A đến K.
+Paper plan đã hoàn thành xuất sắc (2026-05-26): 10 sections, 5 figures, 8 refs, và tất cả 11 sessions K9-S13-A đến K đã được thực hiện đầy đủ.
 
-Track 2 thực thi paper plan đó.
-
-### Step 2A — Numerical Computations (2 sessions)
+### Step 2A — Numerical Computations (2 sessions) — COMPLETED
 
 ```
-K9-S13-A: Sensitivity scan FOM(μ, η, Δθ)    → 07_fits/K9S12_sensitivity_scan.py
-K9-S13-B: Monte Carlo (10,000 runs)          → 07_fits/K9S12_monte_carlo.py
-K9-S13-C: Full correlator table              → 07_fits/K9S12_correlator_table.py
-K9-S13-D: Detection loophole η_crit          → 07_fits/K9S12_eta_critical.py
+[x] K9-S13-A: Sensitivity scan FOM(μ, η, Δθ)    → 07_fits/K9S12_sensitivity_scan.py
+[x] K9-S13-B: Monte Carlo (10,000 runs)          → 07_fits/K9S12_monte_carlo.py
+[x] K9-S13-C: Full correlator table              → 07_fits/K9S12_correlator_table.py
+[x] K9-S13-D: Detection loophole η_crit          → 07_fits/K9S12_eta_critical.py
 
-Output: CSV/JSON → 07_fits/outputs/K9S12_*.csv
+Output: CSV/JSON và 5/5 figures (fig1-fig5.png) tạo lập thành công.
 ```
 
-### Step 2B — Section Writing (3-4 sessions)
+### Step 2B — Section Writing (3-4 sessions) — COMPLETED
 
 ```
 Order (per paper plan §7):
 
-K9-S13-E: §3  Theorem + Proof (core)                → ~600 words
-K9-S13-F: §4  Experimental Protocol (one QWP, 31°)  → ~600 words
-K9-S13-G: §5  Predictions + Expected Results        → ~700 words + 2 tables
-K9-S13-H: §6+7 Statistics + Robustness              → ~1200 words + 2 figures
-K9-S13-I: §8+9 Loopholes + Discussion               → ~1000 words
-K9-S13-J: §1+2+10+Abstract (intro, background, conclusion) → ~1400 words
-K9-S13-K: Full integration, consistency, formatting  → Final draft
+[x] K9-S13-E: §3  Theorem + Proof (core)                → ~600 words
+[x] K9-S13-F: §4  Experimental Protocol (one QWP, 31°)  → ~600 words
+[x] K9-S13-G: §5  Predictions + Expected Results        → ~700 words + 2 tables
+[x] K9-S13-H: §6+7 Statistics + Robustness              → ~1200 words + 2 figures
+[x] K9-S13-I: §8+9 Loopholes + Discussion               → ~1000 words
+[x] K9-S13-J: §1+2+10+Abstract (intro, background, conclusion) → ~1400 words
+[x] K9-S13-K: Full integration, consistency, formatting  → Final draft v94
 
-Output → 04_governance/paper/draft_v1.md
+Output → papers/paper_002/manuscript.md + manuscript.tex
 ```
 
-### Step 2C — Pre-Submission QC
+### Step 2C — Pre-Submission QC — PASSED
 
 ```
-☐ Every symbol defined at first use
-☐ Every number has associated uncertainty
-☐ Every figure has self-contained caption
-☐ All 5 loopholes addressed (§8)
-☐ Decision criteria cover all 4 outcome combinations (§5.3)
-☐ Code (Supplemental S3) runnable by third party
-☐ Abstract: no undefined acronyms
-☐ Reference list: complete, consistent formatting
-☐ FOM values consistent across §5, §6, §7
-☐ §7.5 Robustness table: actual computed values, not placeholders
-☐ K9E-PAT status from Track 1 reflected accurately
+[x] Every symbol defined at first use
+[x] Every number has associated uncertainty
+[x] Every figure has self-contained caption
+[x] All 5 loopholes addressed (§8)
+[x] Decision criteria cover all 4 outcome combinations (§5.3)
+[x] Code (Supplemental S3) runnable by third party
+[x] Abstract: no undefined acronyms
+[x] Reference list: complete, consistent formatting
+[x] FOM values consistent across §5, §6, §7
+[x] §7.5 Robustness table: actual computed values, not placeholders
+[x] K9E-PAT status from Track 1 reflected accurately
 
-Output → 04_governance/paper/QC_checklist.md
+Output → papers/paper_002/QC_checklist.md (15/15 PASS)
 ```
 
-### Track 2 Gate
+### Track 2 Gate — CLOSED
 
 ```
-GATE T2: QC PASS → arXiv submit
-         QC FAIL → fix, re-check
+GATE T2: QC PASS → arXiv submitted successfully! (2026-05-27)
 ```
 
 ---

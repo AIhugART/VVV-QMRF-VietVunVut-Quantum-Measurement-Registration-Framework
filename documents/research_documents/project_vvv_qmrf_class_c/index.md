@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v32 (2026-05-27) — Formal definitions + SOT clarified + 3-project boundary + mapping-as-analogy + framework disclaimer + BB-VVV fit (09)
+**Version:** v33 (2026-05-27) — Track 2 COMPLETED & submitted to arXiv + POST-v30 Plan updated
 **Zenodo DOI:** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0)
 **License:** CC BY 4.0
 
@@ -26,7 +26,7 @@ VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 
 |---|---------|------|--------|
 | **A** | BE↔QM Comparative Mapping | Interpretive framework (comparative philosophy) | 30 nodes, 39 edges |
 | **B** | VVV-QMRF Conceptual Framework | Conceptual architecture (K1-K8, T1-T8, E1-E16) | Frozen (Layer 1) |
-| **C** | K9_E Testable Hypothesis | Falsifiable hypothesis + experimental proposal | Paper draft v2 |
+| **C** | K9_E Testable Hypothesis | Falsifiable hypothesis + experimental proposal | Preprint submitted to arXiv (paper_002) |
 
 > **MOTIVATION CHAIN (one-way, not derivational):**
 > Project A → (motivates) → Project B → (motivates) → Project C.
@@ -293,7 +293,7 @@ pip install -r requirements.txt
 | A1 | ~~K5 prospective firing — promote from "semantic extension" to axiom text~~ | **RESOLVED (v29)** — upgraded to K5_prospective clause in K_Space_Axiomatization.md | ~~HIGH~~ |
 | K9E-PAT | ~~K9_E multiplicative pattern (2BSM/1BSM ratio ~2) not confirmed by raw data (ratio = -0.78)~~ | **CLOSED (UNRESOLVABLE, v31)** — empirical ratio = two sub-σ residuals divided → red herring. Both models predict ratio ~2. 4 data points insufficient. Deferred to K9-S12 experiment. See [T1C Resolution](04_governance/T1C_k9e_pat_resolution.md) | ~~HIGH~~ |
 | IBM-Q | ~~IBM Quantum execution plan for K9_E testing~~ | **REJECTED (v31)** — double category error (K9_E requires K-space structure; IBM QPU has none). See [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) | ~~HIGH~~ |
-| POST-v30 | Post-v30 execution plan (K9E-PAT → K9-S12 paper → experiment) | New (v31) — [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) | HIGH |
+| POST-v30 | Post-v30 execution plan (K9E-PAT → K9-S12 paper → experiment) | Track 1 & 2 CLOSED — [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) | HIGH |
 | 3-OBS | 3-observer experiment — delta_M3 = -0.223 (11x) prediction ready, experimental design deferred | **FUTURE WORK** | HIGH |
 | P10-NOISE | Non-uniform experimental noise cannot be ruled out as alternative explanation for genuine fit improvement | New (v29) | MEDIUM |
 | P10-TIM | Null-model N0 fit omitted — requires raw event-level data; deferred | DECISION-LOCKED (RCA R4) | MEDIUM |
