@@ -6,6 +6,48 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v34 (2026-05-27) — Theoretical Integration: K7_trace + D_enc canonical promotion
+
+### Added (Layer 2)
+- K7_trace (Closure Transition Record) promoted to canonical Layer 2 in
+  K_Space_Axiomatization.md (both peer copies). Source: BB_VVV_fit_plan.md §18.
+- D_enc (Transition-Encoding Registration Act) promoted to canonical Layer 2.
+  Source: BB_VVV_fit_plan.md §19.
+- 02_derivation_chain/3observer_registration_transition.md (NEW) — hierarchical
+  registration transition mechanism for 3-Observer EWF. Extends Phase11.
+
+### Changed
+- K_Space_Axiomatization.md: v2.3 → v2.4 (both Class C copy & canonical peer copy).
+- BB_VVV_fit_plan.md §18.6 boundary clause #5: extended with promotion notice
+  (original text preserved; UPDATE line added).
+- index.md: v33 → v34. File Map, Folder Index, Open Items, Architecture
+  Overview updated to reflect canonical K7_trace + D_enc.
+
+### Class changes
+- K7_trace: Class D (local) → Class C-canonical (Layer 2).
+- D_enc: Class D (local) → Class C-canonical (Layer 2).
+- 3-OBS hierarchical transition: NEW Class C-conditional (T4-H Steps 2-4 deferred).
+- T_BB no-awareness bridge: unchanged (Class C-conditional on physical EWF setup).
+
+### RCA basis
+- Promotion RCA: 4.77/5 aggregate (Round 1 Generality 4.80, Round 2 EX Compass
+  4.90, Round 3 Formal Readiness 4.60). Pre-promotion gates: K7_trace 4.48/5
+  (rca_k7_trace_gate.md), D_enc 4.67/5 (rca_g9_d_enc_gate.md).
+- Meta-RCA Plan v1: 4.40/5 aggregate (Feasibility 4.50, Risk 4.40,
+  Verification 4.30).
+
+### Verification
+- G1 backward compat: bb_vvv_v1v2_verification.py 9/9 + 3/3 PASS.
+- G2 AHP: K7_trace + D_enc score ≤ 8, trace ≥ 1 (no orphan, no [AH-CRIT]).
+- G3 PEER-SYNC: scripts/sync_check_k_space.sh exit 0.
+- G4 Index integrity: manual check PASS.
+
+### Risks acknowledged
+- R3 (HIGH): 3-OBS second-consumer biện minh CONDITIONAL trên T4-H Steps 2-4.
+  Nếu T4-H fail, downgrade 3observer_registration_transition.md sang Class D.
+
+---
+
 ## v29 — Class C (genuine) Upgrade (2026-05-23)
 
 3-Round RCA triggered by v28 review finding "Class C (qualified) overly optimistic."
