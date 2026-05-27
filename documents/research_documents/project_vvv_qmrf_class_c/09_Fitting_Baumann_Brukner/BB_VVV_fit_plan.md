@@ -906,6 +906,7 @@ RCA Gate: 4.67/5 PASS (all 3 rounds ≥ 4.5).
 3. K7_trace does NOT reverse K5 invalidation. V_final(k) = 0 stays 0.
 4. K7_trace does NOT provide o(k) content. Knowing Δ = 1 does NOT reveal what o(k) was.
 5. K7_trace does NOT claim K7_trace should be added to K_Space_Axiomatization.md (that requires a separate proposal with peer review).
+   **UPDATE 2026-05-27:** This boundary has been superseded. K7_trace was promoted to canonical Layer 2 in `K_Space_Axiomatization.md` v2.4 via a separate proposal (`04_governance/Theoretical_Integration_plan.md` v1, RCA gate 4.77/5). The original boundary clause is preserved here for historical traceability.
 
 ---
 
