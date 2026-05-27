@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v32 (2026-05-24) — Formal definitions + SOT clarified + 3-project boundary + mapping-as-analogy + framework disclaimer
+**Version:** v32 (2026-05-27) — Formal definitions + SOT clarified + 3-project boundary + mapping-as-analogy + framework disclaimer + BB-VVV fit (09)
 **Zenodo DOI:** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0)
 **License:** CC BY 4.0
 
@@ -219,6 +219,9 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | How was K9E-PAT resolved (RCA)? | [T1B Model Comparison RCA](04_governance/T1B_model_comparison_RCA.md) → [T1C Resolution](04_governance/T1C_k9e_pat_resolution.md) |
 | What is the Post-v30 execution plan? | [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) |
 | What happened in the v31 RCA session? | [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) |
+| How does B&B (2024) fit VVV-QMRF? | [BB_VVV_fit_plan.md](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) (v1.4 — T_BB Class C) |
+| What is the BB-VVV compatibility result? | [BB_VVV_compatibility_section.md](09_Fitting_Baumann_Brukner/BB_VVV_compatibility_section.md) (v2.0) |
+| What are K7_trace and D_enc? | [BB_VVV_fit_plan.md §18-§19](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) (Layer 2, conservative extensions, RCA 4.48/4.67) |
 
 ### Folder Index
 
@@ -233,6 +236,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | `06_references/` | VVV-QMRF core terminology + bridge documents | 8 |
 | `07_fits/` | Python reproduction scripts + utils/ module + SOT data + requirements.txt | 18 |
 | `08_archives/` | Archived meta-architecture documents | 7 |
+| `09_Fitting_Baumann_Brukner/` | B&B (2024) fit plan v1.4 + compatibility v2.0 + verification script + 4 RCA gates + source paper | 18 |
 
 ---
 
@@ -320,4 +324,4 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
 
 ---
 
-*Project VVV-QMRF Class C — Master Index v31 (2026-05-24). Post-v30 RCA session: IBM Quantum plan rejected, K9E-PAT CLOSED (UNRESOLVABLE). Post-v30 Execution Plan created. Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
+*Project VVV-QMRF Class C — Master Index v32 (2026-05-27). BB-VVV fit plan v1.4: T_BB Class C (conditional), G1 CLOSED via K7_trace + D_enc. 4 RCA gates (3 PASS, 1 DEFER). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
