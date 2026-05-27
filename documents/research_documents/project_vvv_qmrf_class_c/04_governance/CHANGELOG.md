@@ -1491,4 +1491,39 @@ K9_D proposes `P(o|k) = [cert(k)·1 + (1-cert(k))·α]·Tr(E_o ρ)/Z_D`. FAIL-FA
 | `03_k9_sprints/k9_analysis/K9S2_candidate_F.md` | T4-B1 status: ❌ OPEN → ⚠️ PARTIAL (Step 2 VERIFIED; Steps 3–4 DEFERRED) |
 | `04_governance/CHANGELOG.md` | Entry #26 Pending line corrected (P5/P6 swap); this entry #27 added |
 
-**Pending:** P6 (K9_E — deepest audit, cross-links Phase 8–13). P7 synthesis after P6.
+**Status:** P6 (K9_E) COMPLETED — see entry #28 below. P7 synthesis pending.
+
+---
+
+## 28. K9 Deep Review — P6 K9_E Provenance Audit (2026-05-27)
+
+**Program:** K9 Deep Review (Provenance & SOT Traceability), Phase P6
+**Method:** AHP-driven component provenance audit + 4-layer RCA. Audited last (anti-bias R8: K9_E is the selected candidate; scores derived independently before consulting K9-S3 prior verdict).
+
+### Summary
+
+| Phase | K9 | Verdict | Components | Mean H | Key Finding |
+|-------|-----|---------|------------|--------|-------------|
+| P6 | K9_E (⊥_K Suppression) | Class C qualified CONFIRMED | 23 | 2.3 | Lowest mean H in program. v31 (T9+T8-H1+K5_prospective) reduced hallucination risk ~43% vs. pre-v31 estimate. 0 orphans. 1 H≥5 (E-22 documentation gap only). Anti-bias R8 SATISFIED. |
+
+### P6 Key Findings
+
+**v31 net impact:** T9 eliminates [A-E1] (K_ctx existence now THEOREM); T8-H1 derives [A-E2a] (f_perp frequency ratio structure DERIVED); K5_prospective formalizes [A-E3] as FREE PARAMETER and auto-satisfies C-NONNEG/C-NONDIV. Combined: mean H dropped from ~4.0 (pre-v31 estimate) to 2.3 actual — the strongest post-v31 anchoring among all 6 K9 candidates.
+
+**E-22 [A-E2b] documentation gap (only elevated component, H=5):** OI-1 Hybrid Option C resolution (outcome comparability map C(o_i,o_j) from ρ_joint at initialization) exists in Tier4_K9E_deep_analysis.md (3-Round RCA 5/5/5 PASS) but has not been back-propagated to K_Space_Axiomatization.md. Root cause = documentation workflow gap, not structural incompleteness. Action: CONFIRM+NOTE (non-blocking).
+
+**Cluster C-E1 coherence:** T9 → T8-H1 → K5_prospective form a directed dependency chain with no circular dependencies. K9S2 STEP 7 inter-K-space ⊥_K concern CLOSED post-v31 (T9 embeds k' into K_joint shared C_K via φ_ij=i_j).
+
+**Anti-bias R8 SATISFIED:** K9_E audited in P6 (final phase). H-scores derived from first principles against SOTs. Independent verdict (Class C qualified CONFIRMED) converges with K9-S3 prior verdict.
+
+### Files Modified
+
+| File | Change |
+|------|--------|
+| `03_k9_sprints/k9_deep_review/k9_e/report_k9_e_traceability_matrix.md` | NEW — 23-row matrix, mean H=2.3, v31 Compatibility columns, 0 orphans |
+| `03_k9_sprints/k9_deep_review/k9_e/rca_k9_e_chains.md` | NEW — 4-layer RCA; Layer 0 meta (5-Whys selection, Class C meaning, v31 net impact); Layer 1 E-22 5-Whys; Layer 2 Cluster C-E1 + C-E2 (BE anchor chain); Layer 3 verdict (Class C CONFIRMED, R8 SATISFIED); Layer 4 cross-K9 comparison |
+| `03_k9_sprints/k9_deep_review/k9_e/plan_k9_e_deep_review.md` | v1.0 change log entry added (execution complete) |
+| `03_k9_sprints/k9_deep_review/index.md` | Status → P6 ✅; P6 row completed; change log P6 v1.0 entry added; footer v0.3 |
+| `04_governance/CHANGELOG.md` | Entry #27 Pending → Status corrected; this entry #28 added |
+
+**Pending:** P7 — Cross-K9 synthesis (`synthesis_k9_a_to_f.md`). All P1–P6 audits COMPLETE.
