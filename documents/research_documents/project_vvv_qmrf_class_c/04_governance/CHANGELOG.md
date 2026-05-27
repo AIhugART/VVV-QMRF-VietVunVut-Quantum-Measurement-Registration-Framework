@@ -1424,3 +1424,35 @@ The following items were removed from `K_Space_Axiomatization.md` current open i
 **Principle:** "Extend, not overwrite" — ERRATUM blocks added at top of each file preserving all existing content. No conclusions changed; transparency added.
 
 **Verification:** All edits verified by re-reading modified files. Cross-file consistency: Phase 8/10 errata now cascaded to all downstream Phase documents.
+
+---
+
+## 26. K9 Deep Review — P1–P4 Provenance Audit (2026-05-27)
+
+**Program:** K9 Deep Review (Provenance & SOT Traceability), Phases P1–P4
+**Method:** AHP-driven component provenance audit + 4-layer RCA (Layer 0 Meta / Layer 1 Per-Component / Layer 2 Cluster / Layer 3 Verdict) applied to each K9 candidate. P1–P4 executed 2026-05-27.
+
+### Summary Table
+
+| Phase | K9 | Verdict | Components | Mean H | Key Finding |
+|-------|-----|---------|------------|--------|-------------|
+| P1 | K9_A (V-Filter) | CONDITIONAL PASS | 23 | 3.7 | 3 PEER-SYNC (PS-1 citation drift, PS-2 Layer 3+4, PS-3 bādhaka). DIM-2=2/5 confirmed. |
+| P2 | K9_B (Reg-Conditioned) | FAIL-FATAL | 9 | 2.1 | Cluster C-1 (per-tuple anchoring). PP-2-SI impossibility theorem confirmed. 0 PEER-SYNC. |
+| P3 | K9_C (Reg Latency) | FAIL-FIXABLE | 12 | 5.0 | Cluster C-C1 (No-τ_reg, 5 components). 2 orphans [AH-DEFER]. PS-1 (K2 kṣaṇabhaṅga). |
+| P4 | K9_D (Cert Discount) | FAIL-FATAL | 9 | 1.3 | Cluster C-D1 (cert structural cascade, 4 components). Simplest failure: Layer 1 axiom lookup only. |
+
+### P4 Key Finding: K9_D — Certification Discount
+
+K9_D proposes `P(o|k) = [cert(k)·1 + (1-cert(k))·α]·Tr(E_o ρ)/Z_D`. FAIL-FATAL confirmed via single K1 axiom lookup: `cert(k) = 1 ∀k ∈ K_R` (K1 admission rule, L135-148 + PG-01 L142-147) renders `(1-cert(k))·α = 0` always → `Z_D = 1` → Born rule exactly. K9_D is the "earliest failure" in the K-space hierarchy. Orphan `D-04` (α, Trace=0/6, H=3) is a confirmed dead parameter.
+
+**"K-logic constants barrier"** (P2 + P4): K9_B and K9_D both express the same structural boundary — any K9 postulate built on K1-K8 structural constants (cert=1, per-tuple V) cancels in normalization. K9_E survives because `f_perp(K_ctx)` uses K_ctx, a contextual variable that genuinely varies across scenarios.
+
+### Files Modified
+
+| File | Change |
+|------|--------|
+| `03_k9_sprints/k9_deep_review/index.md` | Status P3→P4 ✅; P4 row completed; change log entry added |
+| `03_k9_sprints/k9_deep_review/k9_d/report_k9_d_traceability_matrix.md` | NEW — 9-row matrix, mean H=1.3, 1 orphan (D-04) |
+| `03_k9_sprints/k9_deep_review/k9_d/rca_k9_d_chains.md` | NEW — Layer 0–3 RCA chains; Cluster C-D1 |
+
+**Pending:** P5 (K9_E — deepest audit, cross-links Phase 8–13) and P6 (K9_F — T4-H deferred) remain. P7 synthesis after P5+P6.

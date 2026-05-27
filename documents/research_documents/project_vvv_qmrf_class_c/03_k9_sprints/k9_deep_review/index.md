@@ -5,7 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Program name:** K9 Deep Review (Provenance & SOT Traceability)
 **Scope:** All six K9 candidates — K9_A, K9_B, K9_C, K9_D, K9_E, K9_F
 **Method:** Anti-Hallucination Pipeline (AHP) steps 2–5 applied to each candidate (component inventory → SOT traceability → 5-Whys RCA → 0–10 H-score → AHP label).
-**Status:** P3 (K9_C audit COMPLETED) — 2026-05-27. P1 (K9_A) ✅ + P2 (K9_B) ✅ + P3 (K9_C) ✅ executed. P4 (K9_D) next.
+**Status:** P4 (K9_D audit COMPLETED) — 2026-05-27. P1 (K9_A) ✅ + P2 (K9_B) ✅ + P3 (K9_C) ✅ + P4 (K9_D) ✅ executed. P5 (K9_E) next.
 **Parent project:** [project_vvv_qmrf_class_c/index.md](../../index.md)
 
 ---
@@ -132,7 +132,7 @@ For each K9 candidate X ∈ {A, B, C, D, E, F}:
 | **P1 — K9_A audit** | `k9_a/plan_k9_a_deep_review.md` + `k9_a/report_k9_a_traceability_matrix.md` + `k9_a/rca_k9_a_chains.md` | ✅ Completed (2026-05-27) — 23 components, mean H=3.7, 3 PEER-SYNC suggestions, CONDITIONAL PASS confirmed | VietVunVut |
 | **P2 — K9_B audit** | `k9_b/plan_k9_b_deep_review.md` + `k9_b/report_k9_b_traceability_matrix.md` + `k9_b/rca_k9_b_chains.md` | ✅ Completed (2026-05-27) — 9 components, mean H=2.1, 0 PEER-SYNC, FAIL-FATAL confirmed | VietVunVut |
 | P3 — K9_C audit | `k9_c/plan_k9_c_deep_review.md` + `k9_c/report_k9_c_traceability_matrix.md` + `k9_c/rca_k9_c_chains.md` | ✅ Completed (2026-05-27) — 12 components, mean H=5.0, Cluster C-C1 (No-τ_reg, 5 components), FAIL-FIXABLE confirmed, 2 orphans [AH-DEFER], PS-1 (K2 boundary) | VietVunVut |
-| P4 — K9_D audit | `k9_d/plan_k9_d_deep_review.md` + `k9_d/report_k9_d_traceability_matrix.md` + `k9_d/rca_k9_d_chains.md` | ⏳ Pending P3 | TBD |
+| P4 — K9_D audit | `k9_d/plan_k9_d_deep_review.md` + `k9_d/report_k9_d_traceability_matrix.md` + `k9_d/rca_k9_d_chains.md` | ✅ Completed (2026-05-27) — 9 components, mean H=1.3, Cluster C-D1 (cert structural cascade, 4 components), FAIL-FATAL confirmed, 0 PEER-SYNC | VietVunVut |
 | P5 — K9_E audit | `k9_e/plan_k9_e_deep_review.md` + `k9_e/report_k9_e_traceability_matrix.md` + `k9_e/rca_k9_e_chains.md` (deepest — cross-link Phase 8–13) | ⏳ Pending P4 | TBD |
 | P6 — K9_F audit | `k9_f/plan_k9_f_deep_review.md` + `k9_f/report_k9_f_traceability_matrix.md` + `k9_f/rca_k9_f_chains.md` (links T4-H Step 2) | ⏳ Pending P5 | TBD |
 | P7 — Cross-K9 synthesis | `synthesis_k9_a_to_f.md` — aggregate trace tables, common orphans, action register | ⏳ Pending P1–P6 | TBD |
@@ -217,6 +217,7 @@ The program is complete when:
 | 2026-05-27 | P1 v1.0 | K9_A deep review executed. 23 components, mean H=3.7, 3 PEER-SYNC suggestions (PS-1 citation drift, PS-2 Layer 3+4 hybrid, PS-3 bādhaka). CONDITIONAL PASS confirmed (Class D, DIM-2=2/5). |
 | 2026-05-27 | P2 v1.0 | K9_B deep review executed. 9 components (B-01…B-09), mean H=2.1. Layer 2 Cluster C-1 (per-tuple anchoring). FAIL-FATAL confirmed. 0 PEER-SYNC. C5 gap (SNR) confirmed closed. |
 | 2026-05-27 | P3 v1.0 | K9_C deep review executed. 12 components (C-01…C-12), mean H=5.0. Layer 2 Cluster C-C1 (No-τ_reg, 5 components). FAIL-FIXABLE confirmed. 2 orphans (C-09, C-11) [AH-DEFER]. PS-1 (K2 kṣaṇabhaṅga boundary). 3 AC (Confirm + Defer + PEER-SYNC). |
+| 2026-05-27 | P4 v1.0 | K9_D deep review executed. 9 components (D-01…D-09), mean H=1.3. Layer 2 Cluster C-D1 (cert structural cascade, 4 components). FAIL-FATAL confirmed. Simplest failure in K9 program (Layer 1 axiom lookup only). 0 PEER-SYNC. |
 
 ---
 

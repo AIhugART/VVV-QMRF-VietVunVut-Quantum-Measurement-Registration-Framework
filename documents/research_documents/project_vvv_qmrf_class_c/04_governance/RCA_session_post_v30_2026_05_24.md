@@ -139,7 +139,7 @@ Track 3: Experimental Path (FUTURE)
 
 | File | Reason |
 |------|--------|
-| `09_ibm_quantum/VVV_QMRF_IBM_Quantum_Execution_Plan.md` | RCA rejected — double category error (IBM Quantum cannot test K9_E) |
+| `08_archives/09_ibm_quantum/VVV_QMRF_IBM_Quantum_Execution_Plan.md` | RCA rejected — double category error (IBM Quantum cannot test K9_E) |
 
 ---
 
