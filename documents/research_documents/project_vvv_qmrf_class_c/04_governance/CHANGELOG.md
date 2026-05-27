@@ -1455,4 +1455,40 @@ K9_D proposes `P(o|k) = [cert(k)·1 + (1-cert(k))·α]·Tr(E_o ρ)/Z_D`. FAIL-FA
 | `03_k9_sprints/k9_deep_review/k9_d/report_k9_d_traceability_matrix.md` | NEW — 9-row matrix, mean H=1.3, 1 orphan (D-04) |
 | `03_k9_sprints/k9_deep_review/k9_d/rca_k9_d_chains.md` | NEW — Layer 0–3 RCA chains; Cluster C-D1 |
 
-**Pending:** P5 (K9_E — deepest audit, cross-links Phase 8–13) and P6 (K9_F — T4-H deferred) remain. P7 synthesis after P5+P6.
+**Pending (corrected per anti-bias R8 swap, commit b163512):** P5 (K9_F — T4-H deferred; executed 2026-05-27) and P6 (K9_E — deepest audit, cross-links Phase 8–13) remain. P7 synthesis after P5+P6. → See entry #27 for P5 completion.
+
+---
+
+## 27. K9 Deep Review — P5 K9_F Provenance Audit (2026-05-27)
+
+**Program:** K9 Deep Review (Provenance & SOT Traceability), Phase P5
+**Method:** AHP-driven component provenance audit + 4-layer RCA. Re-run from scratch (user request, 2026-05-27) — independent of prior-session results.
+
+### Summary
+
+| Phase | K9 | Verdict | Components | Mean H | Key Finding |
+|-------|-----|---------|------------|--------|-------------|
+| P5 | K9_F (Colimit Probability) | DEFERRED CONFIRMED | 14 | 3.4 | Double-deferral: T4-H Steps 3–4 unproven + trigger not met (K9_A=COND PASS, K9_E=SELECTED). Cluster C-F1 (F-08/F-09/F-13, sequential Step 3→4 lock). |
+
+### P5 Key Findings
+
+**Double-deferral structure:** K9_F blocked by two independent conditions: (1) Mathematical — T4-H Steps 3–4 unproven (K1-K8 preservation through quotient; universal property / uniqueness of mediating morphism); (2) Governance — trigger rule not met (requires K9_A/C/E all eliminated; K9_E was SELECTED at v31).
+
+**Cluster C-F1 (T4-H dependency cluster):** Components F-08 (Step 3 K1-K8 preservation), F-09 (Step 4 universal property), F-13 (global commutativity F7d guard) share one root cause — novelty of K-space categorical structure relative to established colimit theory. Sequential Step 3→4 lock: Step 4 requires Step 3's output (K_colim is a valid K-space) as logical prerequisite; cannot parallelize.
+
+**T4-B1 partial resolution (stale K9S2 corrected):** K9S2_candidate_F.md (2026-05-23) listed T4-B1 as fully `❌ OPEN`. Fresh audit finds T4-H Step 2 VERIFIED (SET existence, K_colim=(∐K_i)/~, RCA 4.73/5); K-SPACE compliance (Steps 3–4) still DEFERRED. T4-B1 updated to `⚠️ PARTIAL` in K9S2_candidate_F.md.
+
+**C-FALSI proof-contingent (vs K9_E experimental):** K9_F's distinguishability question is analytical (resolved after Step 3 proves K1-K8 preservation), not experimentally resolvable before T4-H.
+
+### Files Modified
+
+| File | Change |
+|------|--------|
+| `03_k9_sprints/k9_deep_review/k9_f/report_k9_f_traceability_matrix.md` | NEW (v0.2 re-run) — 14-row matrix, mean H=3.4, T4-H Status column, Cluster C-F1 |
+| `03_k9_sprints/k9_deep_review/k9_f/rca_k9_f_chains.md` | NEW (v0.2 re-run) — 4-layer RCA; Layer 0 double-deferral 5-Whys; Layer 2 C-F1 cluster; Layer 3 v29-v31 impact table |
+| `03_k9_sprints/k9_deep_review/k9_f/plan_k9_f_deep_review.md` | Status → COMPLETED v0.3; Change Log entry added |
+| `03_k9_sprints/k9_deep_review/index.md` | P5 row updated: re-run v0.2, sequential lock, T4-B1 stale note |
+| `03_k9_sprints/k9_analysis/K9S2_candidate_F.md` | T4-B1 status: ❌ OPEN → ⚠️ PARTIAL (Step 2 VERIFIED; Steps 3–4 DEFERRED) |
+| `04_governance/CHANGELOG.md` | Entry #26 Pending line corrected (P5/P6 swap); this entry #27 added |
+
+**Pending:** P6 (K9_E — deepest audit, cross-links Phase 8–13). P7 synthesis after P6.

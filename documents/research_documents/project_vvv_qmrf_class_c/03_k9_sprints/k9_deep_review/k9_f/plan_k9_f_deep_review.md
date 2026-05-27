@@ -3,17 +3,17 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Plan — K9_F Deep Review (Provenance + 4-Layer RCA)
 
 **Target candidate:** K9_F — Colimit Probability (DEFERRED, T4-dependent)
-**Phase:** P6 (executes this plan)
+**Phase:** P5 (executes this plan)
 **Method:** AHP-driven component provenance audit + 4-layer Root Cause Analysis
 **Parent program:** [K9 Deep Review Master Index](../index.md)
 **Pre-existing sources:** [K9S2_candidate_F.md](../../k9_analysis/K9S2_candidate_F.md), [K_Space_Axiomatization_plan.md](../../04_governance/K_Space_Axiomatization_plan.md)
-**Status:** Plan v0.1 (2026-05-27) — READY FOR EXECUTION. K9_F DEFERRED due to T4 (colimit) remaining in Phases 2–4. Audit traces K9_F dependence on T4-H and verifies deferral decision.
+**Status:** Plan v0.3 (2026-05-27) — COMPLETED (re-run). K9_F DEFERRED CONFIRMED — double-deferral: T4-H Steps 3–4 unproven (Cluster C-F1) + trigger not met (K9_A = CONDITIONAL PASS, K9_E = SELECTED). Step 2 VERIFIED (3-Round RCA, 4.73/5; proof: 02_derivation_chain/T4_H_step2_colimit_construction.md). 14 components, mean H=3.4, 0 orphans, 0 PEER-SYNC.
 
 ---
 
 ## §1. Objective
 
-Run a **provenance audit** on K9_F components **AND** a **4-layer RCA** verifying the deferral decision. K9_F proposes colimit probability: for multi-observer scenarios, construct joint probability from multiple K-spaces via colimit. T4-H (colimit construction) Steps 2–4 remain unproven (Phases 2–4 deferred). Audit will:
+Run a **provenance audit** on K9_F components **AND** a **4-layer RCA** verifying the deferral decision. K9_F proposes colimit probability: for multi-observer scenarios, construct joint probability from multiple K-spaces via colimit. T4-H Steps 1–2 are VERIFIED; Steps 3–4 remain unproven (K1-K8 preservation through quotient; universal property). Audit will:
 - Inventory K9_F's ~12–15 components
 - Identify T4-H dependency chains
 - Verify K9_F cannot proceed without T4-H Steps 2–4
@@ -33,15 +33,19 @@ K9_F — Colimit Probability (Multi-Observer Joint Probability):
     = constructed from K_1, K_2, ..., K_N aggregated probabilities
       via colimit construction (T4, T4-H Steps 1-4)
   
-  T4-H Steps (from K_Space_Axiomatization_plan.md):
-    Step 1: Constructive proof (N=2 case) — COMPLETE ✅ (v29)
-    Step 2: Closure under colimit — DEFERRED (Phase 2)
-    Step 3: Associativity / Multi-observer — DEFERRED (Phase 3)
-    Step 4: Contrapositive consistency — DEFERRED (Phase 4)
+  T4-H Steps (from K_Space_Axiomatization.md §T4-H, status 2026-05-23):
+    Step 1: C_{K-space} category structure — VERIFIED ✅ (identity, composition, associativity)
+    Step 2: Colimit construction — VERIFIED ✅ (K_colim = (∐_i K_i)/~; 5/5 verification
+            gates PASS; proof: 02_derivation_chain/T4_H_step2_colimit_construction.md,
+            3-Round RCA aggregate 4.73/5)
+    Step 3: K1-K8 preservation through quotient — DEFERRED (K5 cross-K_R ⊥ paths,
+            V dynamics, cycle detection in <_colim)
+    Step 4: Universal property — DEFERRED (existence + uniqueness of mediating morphism)
   
-  BLOCKER: K9_F requires T4-H complete. Without Steps 2–4,
-           K9_F is a conjecture without structural grounding.
-           Deferral to Phase 3–4 (after T4-H completion) necessary.
+  BLOCKER: K9_F requires T4-H Steps 3–4 complete. Without them,
+           K9_F cannot guarantee K1-K8 structure is preserved in K_colim
+           nor that the mediating morphism exists uniquely.
+           Deferral continues until T4-H Steps 3-4 proven.
 ```
 
 ---
@@ -73,7 +77,7 @@ Expected H-score: BLUE for K-space aggregation; YELLOW for colimit construction 
 - **Total components:** ~14
 - **Mean H-score:** ~4.5–5.0 (BLUE/YELLOW median)
 - **Orphans:** 0 (colimit well-founded in K_Space theory)
-- **T4-H dependencies:** 3–4 components BLOCKED (Steps 2–4 unproven)
+- **T4-H dependencies:** 2–3 components BLOCKED (Steps 3–4 unproven; Step 2 now VERIFIED)
 - **Primary RCA:** Layer 0 (deferral) + Layer 2 (T4-H dependency)
 - **Actions:** 1–2 (confirm deferral sound, schedule K9_F re-eval after T4-H Phases 3–4)
 
@@ -91,10 +95,10 @@ Expected H-score: BLUE for K-space aggregation; YELLOW for colimit construction 
 
 ## §7. Pre-Execution Checklist
 
-- [ ] K9_A–K9_E audits complete
-- [ ] K9S2_candidate_F.md read
-- [ ] T4-H Phase breakdown understood (Step 1 COMPLETE, Steps 2–4 DEFERRED)
-- [ ] Estimated 4–5 hours
+- [x] K9_A–K9_D audits complete (K9_F = P5; K9_E = P6 anti-bias)
+- [x] K9S2_candidate_F.md read
+- [x] T4-H Phase breakdown understood (Steps 1–2 VERIFIED, Steps 3–4 DEFERRED)
+- [x] Executed (re-run, 2026-05-27)
 
 ---
 
@@ -102,9 +106,9 @@ Expected H-score: BLUE for K-space aggregation; YELLOW for colimit construction 
 
 **report_k9_f_traceability_matrix.md:**
 - 14-row component matrix
-- T4-H Dependency Status column (COMPLETE / DEFERRED Phase 2 / 3 / 4)
-- Mean H ≈ 4.5–5.0
-- BLOCKED count: 3–4 components await T4-H Steps 2–4
+- T4-H Dependency Status column (VERIFIED / DEFERRED-Step3 / DEFERRED-Step4 / N/A)
+- Mean H ≈ 4.0–4.5 (Step 2 VERIFIED reduces T4-H uncertainty vs. initial estimate)
+- BLOCKED count: 2–3 components await T4-H Steps 3–4 (Step 2 no longer blocking)
 
 **rca_k9_f_chains.md:**
 - Layer 0 RCA: Why defer? T4-H prerequisite?
@@ -119,5 +123,7 @@ Expected H-score: BLUE for K-space aggregation; YELLOW for colimit construction 
 | Date | Version | Notes |
 |------|---------|-------|
 | 2026-05-27 | v0.1 | Initial plan for P6 K9_F audit. T4-H dependency + deferral verification. |
+| 2026-05-27 | v0.2 | Phase 0 corrections: P6→P5 (order swap 2026-05-27); T4-H Step 2 DEFERRED→VERIFIED (K_Space_Axiomatization.md L1155–1160, 3-Round RCA 4.73/5); checklist K9_A–K9_E→K9_A–K9_D; expected metrics updated (BLOCKED count 3-4→2-3, mean H 4.5–5.0→4.0–4.5). |
+| 2026-05-27 | v0.3 | Re-run from scratch (user request). COMPLETED. Same 14 components, mean H=3.4, DEFERRED CONFIRMED. Fresh additions: T4-B1 partial-resolution nuance (SET vs K-SPACE); sequential Step 3→4 lock formalized; C-FALSI proof-contingent vs experimental (K9_E) sharpened. Status updated READY→COMPLETED. |
 
 *Plan K9_F Deep Review v0.1 (2026-05-27). Ready to verify T4-H blocking and deferral rationale.*

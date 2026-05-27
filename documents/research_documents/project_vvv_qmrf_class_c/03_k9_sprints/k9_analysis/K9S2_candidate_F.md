@@ -23,11 +23,11 @@ K9_F — Colimit Probability:
 
 | Blocker | Status | Resolution Path |
 |---|---|---|
-| T4-B1: T4-H Colimit Existence (unproven) | ❌ OPEN | Tier 5 (5-7h) |
+| T4-B1: T4-H Colimit Existence (Steps 3–4) | ⚠️ PARTIAL — Step 2 VERIFIED (SET existence, K_colim=(∐K_i)/~, RCA 4.73/5, 2026-05-27); K-SPACE Steps 3–4 DEFERRED (K1-K8 preservation + universal property) | Steps 3–4 remain: Tier 5 (~3-5h) |
 | T4-B2: F7d Global Commutativity (unproven) | ❌ OPEN | Tier 6 (4-6h) |
 | T4-B3: N>2 concrete model missing | ❌ OPEN | Tier 7 (9-11h) |
 
-**Total effort to unblock K9_F: ~18-24h (Tiers 5+6+7)**
+**Total effort to unblock K9_F: ~16-20h (T4-B1 Step 2 VERIFIED reduces original Tier 5 estimate)**
 
 ## Conditional Pre-Assessment (if T4 were proven)
 

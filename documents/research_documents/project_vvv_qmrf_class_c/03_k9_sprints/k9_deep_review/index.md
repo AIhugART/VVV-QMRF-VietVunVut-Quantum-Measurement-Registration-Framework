@@ -5,7 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Program name:** K9 Deep Review (Provenance & SOT Traceability)
 **Scope:** All six K9 candidates — K9_A, K9_B, K9_C, K9_D, K9_E, K9_F
 **Method:** Anti-Hallucination Pipeline (AHP) steps 2–5 applied to each candidate (component inventory → SOT traceability → 5-Whys RCA → 0–10 H-score → AHP label).
-**Status:** P4 (K9_D audit COMPLETED) — 2026-05-27. P1 (K9_A) ✅ + P2 (K9_B) ✅ + P3 (K9_C) ✅ + P4 (K9_D) ✅ executed. P5 (K9_F) next — K9_E moved to P6 (anti-bias R8: audited last after full H-score calibration).
+**Status:** P5 (K9_F audit COMPLETED) — 2026-05-27. P1 (K9_A) ✅ + P2 (K9_B) ✅ + P3 (K9_C) ✅ + P4 (K9_D) ✅ + P5 (K9_F) ✅ executed. P6 (K9_E, anti-bias R8) next.
 **Parent project:** [project_vvv_qmrf_class_c/index.md](../../index.md)
 
 ---
@@ -133,7 +133,7 @@ For each K9 candidate X ∈ {A, B, C, D, E, F}:
 | **P2 — K9_B audit** | `k9_b/plan_k9_b_deep_review.md` + `k9_b/report_k9_b_traceability_matrix.md` + `k9_b/rca_k9_b_chains.md` | ✅ Completed (2026-05-27) — 9 components, mean H=2.1, 0 PEER-SYNC, FAIL-FATAL confirmed | VietVunVut |
 | P3 — K9_C audit | `k9_c/plan_k9_c_deep_review.md` + `k9_c/report_k9_c_traceability_matrix.md` + `k9_c/rca_k9_c_chains.md` | ✅ Completed (2026-05-27) — 12 components, mean H=5.0, Cluster C-C1 (No-τ_reg, 5 components), FAIL-FIXABLE confirmed, 2 orphans [AH-DEFER], PS-1 (K2 boundary) | VietVunVut |
 | P4 — K9_D audit | `k9_d/plan_k9_d_deep_review.md` + `k9_d/report_k9_d_traceability_matrix.md` + `k9_d/rca_k9_d_chains.md` | ✅ Completed (2026-05-27) — 9 components, mean H=1.3, Cluster C-D1 (cert structural cascade, 4 components), FAIL-FATAL confirmed, 0 PEER-SYNC | VietVunVut |
-| P5 — K9_F audit | `k9_f/plan_k9_f_deep_review.md` + `k9_f/report_k9_f_traceability_matrix.md` + `k9_f/rca_k9_f_chains.md` (links T4-H Step 2) | ⏳ Pending P4 | TBD |
+| P5 — K9_F audit | `k9_f/plan_k9_f_deep_review.md` + `k9_f/report_k9_f_traceability_matrix.md` + `k9_f/rca_k9_f_chains.md` (links T4-H Step 2) | ✅ Completed (2026-05-27, re-run v0.2) — 14 components, mean H=3.4, T4-H Status column (first use in program), 0 orphans, Cluster C-F1 (T4-H dependency: F-08/F-09/F-13, sequential Step 3→4 lock), DEFERRED CONFIRMED (double-deferral: T4-H Steps 3-4 + trigger not met), T4-H Step 2 VERIFIED (corrects K9S2 stale T4-B1 — SET existence confirmed, K-SPACE pending), 5 Defer + 7 Confirm, 0 PEER-SYNC | VietVunVut |
 | P6 — K9_E audit | `k9_e/plan_k9_e_deep_review.md` + `k9_e/report_k9_e_traceability_matrix.md` + `k9_e/rca_k9_e_chains.md` (deepest — cross-link Phase 8–13; done last to avoid R8 confirmation bias) | ⏳ Pending P5 | TBD |
 | P7 — Cross-K9 synthesis | `synthesis_k9_a_to_f.md` — aggregate trace tables, common orphans, action register | ⏳ Pending P1–P6 | TBD |
 
@@ -219,6 +219,7 @@ The program is complete when:
 | 2026-05-27 | P3 v1.0 | K9_C deep review executed. 12 components (C-01…C-12), mean H=5.0. Layer 2 Cluster C-C1 (No-τ_reg, 5 components). FAIL-FIXABLE confirmed. 2 orphans (C-09, C-11) [AH-DEFER]. PS-1 (K2 kṣaṇabhaṅga boundary). 3 AC (Confirm + Defer + PEER-SYNC). |
 | 2026-05-27 | P4 v1.0 | K9_D deep review executed. 9 components (D-01…D-09), mean H=1.3. Layer 2 Cluster C-D1 (cert structural cascade, 4 components). FAIL-FATAL confirmed. Simplest failure in K9 program (Layer 1 axiom lookup only). 0 PEER-SYNC. |
 | 2026-05-27 | P0 v0.3 | P5↔P6 order swapped: K9_F → P5, K9_E → P6. Rationale: anti-bias R8 (K9_E is selected candidate — audited last after full H-score calibration across P1–P5) + T4-H boundary information from K9_F feeds K9_E Layer 3 verdict. |
+| 2026-05-27 | P5 v1.0 | K9_F deep review executed. 14 components (F-01…F-14), mean H=3.4. T4-H Status column (first use in program). 0 orphans. Layer 2 Cluster C-F1 (T4-H dependency: F-08 Step 3, F-09 Step 4, F-13 global commutativity — sequential Step 3→4 lock). DEFERRED CONFIRMED — double-deferral: (1) T4-H Steps 3-4 unproven, (2) conditional-deferral trigger (K9_A/K9_C/K9_E eliminated) NOT met. T4-H Step 2 VERIFIED (corrects plan v0.1 stale DEFERRED; proof 4.73/5). 5 components H≥5 with 5-Whys (F-08, F-09, F-11 C-FALSI H=7, F-13, F-14). 7 Confirm (2 conditional) + 5 Defer. 0 PEER-SYNC. K9_F = most derivable candidate (0 params) pending T4-H + trigger. |
 
 ---
 
