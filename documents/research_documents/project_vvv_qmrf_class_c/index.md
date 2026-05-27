@@ -16,7 +16,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 Standard Quantum Mechanics has four physical postulates (P1–P4) describing state space, observables, measurement, and dynamics. These postulates are silent on the **registration architecture** of measurement — they do not specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the registering system.
 
-VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 (Layer 1, frozen) with bridge theorems T1–T8 (Layer 2). The framework identifies where standard QM interpretations lack the structural machinery to formalize registration-layer conditions.
+VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 (Layer 1, frozen) with bridge theorems T1–T9 (Layer 2). The framework identifies where standard QM interpretations lack the structural machinery to formalize registration-layer conditions.
 
 **IMPORTANT:** VVV-QMRF is a **conceptual framework**, not a physical theory. It provides language and structure for analyzing measurement registration but does not propose new physical dynamics. The framework itself is not directly falsifiable. The **testable hypothesis** emerging from this framework is K9_E (P9) — see §2 and [Formal Definitions](06_references/VVV_QMRF_Definitions.md).
 
@@ -55,8 +55,10 @@ See [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md
 Layer 1 (FROZEN)     K1–K8 Registration-logic axioms
        |              binary cert/V in {0,1}, bot_K, AdmJoint
        v
-Layer 2 (UPDATABLE)  T1–T7 Bridge theorems
+Layer 2 (UPDATABLE)  T1–T9 Bridge theorems + conservative extensions
        |              K_joint construction, colimit, relativization
+       |              K5_prospective (v29), T8 frequency bridge, T9 K_ctx morphism
+       |              K7_trace + D_enc (BB-VVV v1.4, in fit plan — not canonical)
        v
 Layer 3 (Class C)    K9_E Probability postulate (P9)
        |              P(o|K) = Tr(E_o rho) * f_perp(K_ctx)
@@ -67,6 +69,7 @@ Layer 4 (Class D)    Multi-paper data fit
        |              D1 Proietti CHSH: beta=0.598 (genuine fit), V=0.939, 2.31sigma
        |              D2 Bong LF: Phase 10b analysis INVALIDATED (K9-S8 marginalization)
        |              D3 Frauchiger–Renner: AVOIDED via K5 V_prov
+       |              D4 Baumann&Brukner: T_BB Class C (conditional), G1 CLOSED (K7_trace+D_enc)
        v
 Layer 5 (Class D)    Prediction + Reduction + Assessment
                      3-observer: delta_M3=-0.223 at beta=0.3 (11x; illustrative)
@@ -296,6 +299,7 @@ pip install -r requirements.txt
 | P10-TIM | Null-model N0 fit omitted — requires raw event-level data; deferred | DECISION-LOCKED (RCA R4) | MEDIUM |
 | BONG | Bong LF modified protocol proposal (K9-S12) | In progress | MEDIUM |
 | PUB | Publication path — Foundations of Physics / Phys Rev A submission readiness | Outlined in Phase 13 | MEDIUM |
+| BB-VVV | Baumann & Brukner (2024) fit plan | **COMPLETE (v1.4, v32)** — T_BB Class C (conditional), G1 CLOSED. K7_trace + D_enc in fit plan (not canonical, DEFER). See [09_Fitting_Baumann_Brukner/](09_Fitting_Baumann_Brukner/) | ~~MEDIUM~~ |
 
 ---
 
