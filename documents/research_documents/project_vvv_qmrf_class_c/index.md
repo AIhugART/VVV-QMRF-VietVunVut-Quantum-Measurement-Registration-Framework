@@ -35,7 +35,7 @@ VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 
 
 VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H), where B(H) is the algebra of bounded operators on Hilbert space (Class D conjecture; Track B Phases 1–3 complete).
 
-## 2. What is Class C (genuine)?
+## 2. What is Class C (qualified)?
 
 **Class C** means VVV-QMRF K9_E provides a probability postulate (P9) motivated by K1–K8 structure that produces predictions **structurally different** from Standard QM (delta_S != 0 when beta > 0), passes all adversarial tests (4/4), avoids the Frauchiger–Renner paradox via K5 V_prov mechanism, and reduces Copenhagen/MWI as special cases. K9_E is a postulate, not a derivation from K1–K8; the axioms define structural properties only (see §3).
 
@@ -321,7 +321,7 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
   year      = {2026},
   doi       = {10.5281/zenodo.20289261},
   publisher = {Zenodo},
-  note      = {Working Paper v2.0. Class C (genuine).
+  note      = {Working Paper v2.0. Class C (qualified).
                Independent personal research, not peer-reviewed.}
 }
 ```
