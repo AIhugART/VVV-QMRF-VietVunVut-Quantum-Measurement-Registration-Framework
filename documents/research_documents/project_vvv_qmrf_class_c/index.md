@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v34 (2026-05-27) — K7_trace + D_enc promoted to canonical Layer 2 (K_Space_Axiomatization.md v2.4, RCA 4.77/5); 3-OBS mechanism file added (Class C-conditional)
+**Version:** v35 (2026-05-28) — T4-H Steps 3-4 VERIFIED (THEOREM 4/4, RCA 4.74/5); 3-OBS upgraded Class C-conditional → Class C; T4_H_steps3_4_k1k8_universal.md added
 **Zenodo DOI:** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0)
 **License:** CC BY 4.0
 
@@ -43,7 +43,7 @@ VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H)
 
 **Downgrade reason (v30, 2026-05-24):** Noise sensitivity analysis (Delta_chi2 Decomposition + Noise Budget Analysis, RCA 4.77/5) returned **FAIL**: noise_threshold = 0.10 sigma RMS (threshold for PASS: > 3.0 sigma). With only 4 data points and K9_E's directional sensitivity, random noise at ANY magnitude produces Delta_chi2 >= 5.35 in ~50% of realizations. The 2.31sigma "signal" is a noise-detection threshold, not evidence for K9_E suppression. See `07_fits/noise_sensitivity_analysis.py` and `04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md`.
 
-**Remaining empirical path:** Confirmation or rejection requires a 3-observer experiment with dedicated noise characterization (prediction: delta_M3 = -0.223 at beta=0.3, illustrative, conditional on T4-H Steps 2-4). See §4 for full 3-Round RCA.
+**Remaining empirical path:** Confirmation or rejection requires a 3-observer experiment with dedicated noise characterization (prediction: delta_M3 = -0.223 at beta=0.3, illustrative, T4-H now THEOREM — conditional only on K9_E postulate P9). See §4 for full 3-Round RCA.
 
 See [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) for the v29 upgrade RCA (aggregate 4.50/5) and [P10-NOISE Methodology Decision](04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md) for the v30 downgrade RCA (aggregate 4.77/5).
 
@@ -157,7 +157,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 > **v29 upgrades (3 conditions — structural foundation remains valid):**
 > 1. **Genuine empirical evidence:** Raw Proietti Figure 3 data used for non-circular fit. However, noise sensitivity analysis (v30) shows this evidence is NOT robust — single-setting perturbation of 1.85 sigma at A0B0 eliminates the K9_E advantage. A0B0 alone drives 80% of Delta_chi2.
 > 2. **A1 upgraded:** K5_prospective added as conservative extension to K5. Zero Class D assumptions remain.
-> 3. **T4-H weakened:** Step 1 proven. Steps 2-4 deferred. K9_E only needs T1.
+> 3. **T4-H THEOREM (4/4, 2026-05-28):** All 4 steps proven. K9_E only needs T1 (independent). 3-OBS upgraded to Class C.
 
 ---
 
@@ -172,7 +172,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | chi2/DOF | 0.670 (DOF=2) | Good fit quality, p=0.51 | `[G]` genuine fit |
 | Delta_chi2 (K9_E vs QM-only) | 5.35 (2.31sigma) | K9_E improves over QM-uniform-visibility | `[G]` genuine fit |
 | delta_S (beta=0.5, CHSH) | -0.055 | Theoretical distinguishability magnitude | `[T]` structural |
-| delta_M3 (beta=0.3, 3-observer) | -0.223 | 11x amplification (illustrative, conditional on T4-H Steps 2-4) | `[I]` illustrative |
+| delta_M3 (beta=0.3, 3-observer) | -0.223 | 11x amplification (illustrative, T4-H THEOREM — conditional on K9_E P9 only) | `[I]` illustrative |
 | FR paradox | AVOIDED | K5 V_prov breaks assumption chain C | `[T]` structural |
 | Born recovery | cert=1 and V=1 => Born exact | Verified | `[T]` structural |
 | Adversarial tests | 4/4 PASS | No counterexample, 0 axiom violations | `[T]` structural |
@@ -201,7 +201,8 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | What is the Marginalization Cancellation? | [03_k9_sprints/k9_analysis/K9S8_composition_law.md](03_k9_sprints/k9_analysis/K9S8_composition_law.md) |
 | Does K9_E avoid the FR paradox? | [02_derivation_chain/Phase10c_fr_consistency.md](02_derivation_chain/Phase10c_fr_consistency.md) |
 | What is the 3-observer prediction? | [02_derivation_chain/Phase11_3observer_prediction.md](02_derivation_chain/Phase11_3observer_prediction.md) |
-| What is the 3-OBS registration transition mechanism? | [02_derivation_chain/3observer_registration_transition.md](02_derivation_chain/3observer_registration_transition.md) (Class C-conditional, T4-H dependency) |
+| What is the 3-OBS registration transition mechanism? | [02_derivation_chain/3observer_registration_transition.md](02_derivation_chain/3observer_registration_transition.md) (Class C — T4-H VERIFIED 2026-05-28) |
+| How are T4-H Steps 3-4 proven? | [02_derivation_chain/T4_H_steps3_4_k1k8_universal.md](02_derivation_chain/T4_H_steps3_4_k1k8_universal.md) (T-PRES Lemma + K1-K8 verification + universal property, RCA 4.74/5) |
 | How do interpretations reduce? | [02_derivation_chain/Phase12_structural_reduction.md](02_derivation_chain/Phase12_structural_reduction.md) |
 | What is the honest assessment? | [02_derivation_chain/Phase13_honest_assessment.md](02_derivation_chain/Phase13_honest_assessment.md) |
 | What is the full plan with RCA verdicts? | [04_governance/K_Space_Axiomatization_plan.md](04_governance/K_Space_Axiomatization_plan.md) |
@@ -233,7 +234,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 |--------|----------|------------|
 | `00_source_papers/` | arXiv sources for D1 (Proietti), D2 (Bong), D3 (FR) | ~25 |
 | `01_axiomatization/` | K_Space_Axiomatization.md + K->BH map + meta-architecture documents | 10 |
-| `02_derivation_chain/` | Phase 7–13 deliverables + supporting analyses + v29 RCA + 3-OBS mechanism | 20 |
+| `02_derivation_chain/` | Phase 7–13 deliverables + supporting analyses + v29 RCA + 3-OBS mechanism + T4-H Steps 3-4 proof | 21 |
 | `03_k9_sprints/` | K9 analysis chain (S1–S12) + K9 analysis plan | ~22 |
 | `04_governance/` | Master plan + Post-v30 plan + Track 1 reports + CHANGELOG + decisions + RCA reports | ~24 |
 | `05_ex_compass/` | VVV-QMRF-EX snapshot (compass reference, not structure import) | ~65 |
@@ -295,7 +296,7 @@ pip install -r requirements.txt
 | K9E-PAT | ~~K9_E multiplicative pattern (2BSM/1BSM ratio ~2) not confirmed by raw data (ratio = -0.78)~~ | **CLOSED (UNRESOLVABLE, v31)** — empirical ratio = two sub-σ residuals divided → red herring. Both models predict ratio ~2. 4 data points insufficient. Deferred to K9-S12 experiment. See [T1C Resolution](04_governance/T1C_k9e_pat_resolution.md) | ~~HIGH~~ |
 | IBM-Q | ~~IBM Quantum execution plan for K9_E testing~~ | **REJECTED (v31)** — double category error (K9_E requires K-space structure; IBM QPU has none). See [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) | ~~HIGH~~ |
 | POST-v30 | Post-v30 execution plan (K9E-PAT → K9-S12 paper → experiment) | Track 1 & 2 CLOSED — [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) | HIGH |
-| 3-OBS | 3-observer experiment — delta_M3 = -0.223 (11x) prediction ready, experimental design deferred | **FUTURE WORK** — mechanism file: [3observer_registration_transition.md](02_derivation_chain/3observer_registration_transition.md) (Class C-conditional, T4-H Steps 2-4 pending) | HIGH |
+| 3-OBS | 3-observer experiment — delta_M3 = -0.223 (11x) prediction ready, experimental design deferred | **FUTURE WORK** — mechanism file: [3observer_registration_transition.md](02_derivation_chain/3observer_registration_transition.md) (Class C — T4-H THEOREM 4/4, 2026-05-28) | HIGH |
 | P10-NOISE | Non-uniform experimental noise cannot be ruled out as alternative explanation for genuine fit improvement | New (v29) | MEDIUM |
 | P10-TIM | Null-model N0 fit omitted — requires raw event-level data; deferred | DECISION-LOCKED (RCA R4) | MEDIUM |
 | BONG | Bong LF modified protocol proposal (K9-S12) | In progress | MEDIUM |
@@ -329,4 +330,4 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
 
 ---
 
-*Project VVV-QMRF Class C — Master Index v34 (2026-05-27). K7_trace + D_enc canonical Layer 2 (K_Space_Axiomatization.md v2.4, RCA 4.77/5). BB-VVV fit plan v1.4: T_BB Class C (conditional), G1 CLOSED. 3-OBS mechanism: Class C-conditional (T4-H Steps 2-4 pending). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
+*Project VVV-QMRF Class C — Master Index v35 (2026-05-28). T4-H: THEOREM (4/4, RCA 4.74/5) — Steps 3-4 VERIFIED (T-PRES Lemma + K1-K8 + universal property). 3-OBS: Class C (upgraded from Class C-conditional). K7_trace + D_enc: canonical Layer 2 (v2.4, RCA 4.77/5). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*

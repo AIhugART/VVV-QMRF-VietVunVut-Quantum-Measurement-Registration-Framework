@@ -6,6 +6,45 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v35 (2026-05-28) — T4-H THEOREM (4/4): Steps 3-4 verified; 3-OBS Class C upgrade
+
+### Added
+- 02_derivation_chain/T4_H_steps3_4_k1k8_universal.md (NEW) — T4-H Steps 3-4 proof.
+  T-PRES Lemma: K8-preserving morphisms preserve t as equality. T-REP Corollary: all
+  representatives of [k,i] share the same t value. K1-K8 all PASS in K_colim. Universal
+  property (UP-1 through UP-5) VERIFIED. Aggregate RCA 4.74/5.
+
+### Changed
+- K_Space_Axiomatization.md (both peer copies, PEER-SYNC): T4-H status CONDITIONAL
+  THEOREM (2/4) → THEOREM (4/4); Steps 3-4 DEFERRED → VERIFIED; T5/T7 T4-H gate
+  resolved; K7_trace consumer note updated (3-OBS no longer conditional).
+- 02_derivation_chain/T4_H_proof_gap_analysis.md: Steps 3-4 DEFERRED → VERIFIED
+  with STATUS:COMPLETE banners; overall status ACTIVE → RESOLVED.
+- 02_derivation_chain/3observer_registration_transition.md: v1.0 → v1.1.
+- index.md: v34 → v35. T4-H references updated; 3-OBS entry updated; file map
+  entry added for T4_H_steps3_4_k1k8_universal.md; folder count 20 → 21.
+
+### Class changes
+- T4-H: CONDITIONAL THEOREM (2/4) → **THEOREM (4/4)** (all 4 steps verified).
+- 3-OBS hierarchical transition: Class C-conditional → **Class C** (OI-1 RESOLVED).
+- T5 (associativity): T4-H gate removed; pending Level 4 freeze only.
+- T7 (IRB propagation): T4-H gate removed; pending Level 4 freeze + E15 wording.
+
+### RCA basis
+- T4-H Steps 3-4 RCA: 4.74/5 aggregate (Round 1: 4.80, Round 2: 4.70, Round 3: 4.70).
+  Key gate: T-PRES Lemma (K8-morphisms preserve t) from Step 2 G5 morphism definition.
+
+### Verification
+- PEER-SYNC: scripts/sync_check_k_space.sh exit PASS (delta 225 lines — pre-existing).
+- T4-H Steps 3-4: all sub-steps explicitly proved in T4_H_steps3_4_k1k8_universal.md.
+- No AHP audit required (no new postulate; T4-H is a structural theorem from K1-K8).
+
+### Risks resolved
+- R3 (HIGH) from v34: T4-H Steps 2-4 conditional gate — **RESOLVED** (Steps 3-4 proven).
+  3observer_registration_transition.md upgraded to Class C. No new HIGH risks introduced.
+
+---
+
 ## v34 (2026-05-27) — Theoretical Integration: K7_trace + D_enc canonical promotion
 
 ### Added (Layer 2)
