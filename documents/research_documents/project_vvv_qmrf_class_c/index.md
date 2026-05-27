@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v33 (2026-05-27) — Track 2 COMPLETED & submitted to arXiv + POST-v30 Plan updated
+**Version:** v34 (2026-05-27) — K7_trace + D_enc promoted to canonical Layer 2 (K_Space_Axiomatization.md v2.4, RCA 4.77/5); 3-OBS mechanism file added (Class C-conditional)
 **Zenodo DOI:** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0)
 **License:** CC BY 4.0
 
@@ -58,7 +58,7 @@ Layer 1 (FROZEN)     K1–K8 Registration-logic axioms
 Layer 2 (UPDATABLE)  T1–T9 Bridge theorems + conservative extensions
        |              K_joint construction, colimit, relativization
        |              K5_prospective (v29), T8 frequency bridge, T9 K_ctx morphism
-       |              K7_trace + D_enc (BB-VVV v1.4, in fit plan — not canonical)
+       |              K7_trace + D_enc (canonical Layer 2, K_Space_Axiomatization.md v2.4, RCA 4.77/5)
        v
 Layer 3 (Class C)    K9_E Probability postulate (P9)
        |              P(o|K) = Tr(E_o rho) * f_perp(K_ctx)
@@ -201,6 +201,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | What is the Marginalization Cancellation? | [03_k9_sprints/k9_analysis/K9S8_composition_law.md](03_k9_sprints/k9_analysis/K9S8_composition_law.md) |
 | Does K9_E avoid the FR paradox? | [02_derivation_chain/Phase10c_fr_consistency.md](02_derivation_chain/Phase10c_fr_consistency.md) |
 | What is the 3-observer prediction? | [02_derivation_chain/Phase11_3observer_prediction.md](02_derivation_chain/Phase11_3observer_prediction.md) |
+| What is the 3-OBS registration transition mechanism? | [02_derivation_chain/3observer_registration_transition.md](02_derivation_chain/3observer_registration_transition.md) (Class C-conditional, T4-H dependency) |
 | How do interpretations reduce? | [02_derivation_chain/Phase12_structural_reduction.md](02_derivation_chain/Phase12_structural_reduction.md) |
 | What is the honest assessment? | [02_derivation_chain/Phase13_honest_assessment.md](02_derivation_chain/Phase13_honest_assessment.md) |
 | What is the full plan with RCA verdicts? | [04_governance/K_Space_Axiomatization_plan.md](04_governance/K_Space_Axiomatization_plan.md) |
@@ -224,7 +225,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | What happened in the v31 RCA session? | [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) |
 | How does B&B (2024) fit VVV-QMRF? | [BB_VVV_fit_plan.md](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) (v1.4 — T_BB Class C) |
 | What is the BB-VVV compatibility result? | [BB_VVV_compatibility_section.md](09_Fitting_Baumann_Brukner/BB_VVV_compatibility_section.md) (v2.0) |
-| What are K7_trace and D_enc? | [BB_VVV_fit_plan.md §18-§19](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) (Layer 2, conservative extensions, RCA 4.48/4.67) |
+| What are K7_trace and D_enc? | [K_Space_Axiomatization.md §K7_trace/§D_enc](01_axiomatization/K_Space_Axiomatization.md) (canonical Layer 2, v2.4, RCA 4.77/5). Origin: [BB_VVV_fit_plan.md §18-§19](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) |
 
 ### Folder Index
 
@@ -232,7 +233,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 |--------|----------|------------|
 | `00_source_papers/` | arXiv sources for D1 (Proietti), D2 (Bong), D3 (FR) | ~25 |
 | `01_axiomatization/` | K_Space_Axiomatization.md + K->BH map + meta-architecture documents | 10 |
-| `02_derivation_chain/` | Phase 7–13 deliverables + supporting analyses + v29 RCA | 19 |
+| `02_derivation_chain/` | Phase 7–13 deliverables + supporting analyses + v29 RCA + 3-OBS mechanism | 20 |
 | `03_k9_sprints/` | K9 analysis chain (S1–S12) + K9 analysis plan | ~22 |
 | `04_governance/` | Master plan + Post-v30 plan + Track 1 reports + CHANGELOG + decisions + RCA reports | ~24 |
 | `05_ex_compass/` | VVV-QMRF-EX snapshot (compass reference, not structure import) | ~65 |
@@ -294,12 +295,12 @@ pip install -r requirements.txt
 | K9E-PAT | ~~K9_E multiplicative pattern (2BSM/1BSM ratio ~2) not confirmed by raw data (ratio = -0.78)~~ | **CLOSED (UNRESOLVABLE, v31)** — empirical ratio = two sub-σ residuals divided → red herring. Both models predict ratio ~2. 4 data points insufficient. Deferred to K9-S12 experiment. See [T1C Resolution](04_governance/T1C_k9e_pat_resolution.md) | ~~HIGH~~ |
 | IBM-Q | ~~IBM Quantum execution plan for K9_E testing~~ | **REJECTED (v31)** — double category error (K9_E requires K-space structure; IBM QPU has none). See [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) | ~~HIGH~~ |
 | POST-v30 | Post-v30 execution plan (K9E-PAT → K9-S12 paper → experiment) | Track 1 & 2 CLOSED — [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) | HIGH |
-| 3-OBS | 3-observer experiment — delta_M3 = -0.223 (11x) prediction ready, experimental design deferred | **FUTURE WORK** | HIGH |
+| 3-OBS | 3-observer experiment — delta_M3 = -0.223 (11x) prediction ready, experimental design deferred | **FUTURE WORK** — mechanism file: [3observer_registration_transition.md](02_derivation_chain/3observer_registration_transition.md) (Class C-conditional, T4-H Steps 2-4 pending) | HIGH |
 | P10-NOISE | Non-uniform experimental noise cannot be ruled out as alternative explanation for genuine fit improvement | New (v29) | MEDIUM |
 | P10-TIM | Null-model N0 fit omitted — requires raw event-level data; deferred | DECISION-LOCKED (RCA R4) | MEDIUM |
 | BONG | Bong LF modified protocol proposal (K9-S12) | In progress | MEDIUM |
 | PUB | Publication path — Foundations of Physics / Phys Rev A submission readiness | Outlined in Phase 13 | MEDIUM |
-| BB-VVV | Baumann & Brukner (2024) fit plan | **COMPLETE (v1.4, v32)** — T_BB Class C (conditional), G1 CLOSED. K7_trace + D_enc in fit plan (not canonical, DEFER). See [09_Fitting_Baumann_Brukner/](09_Fitting_Baumann_Brukner/) | ~~MEDIUM~~ |
+| BB-VVV | Baumann & Brukner (2024) fit plan | **COMPLETE (v1.4, v34)** — T_BB Class C (conditional), G1 CLOSED. K7_trace + D_enc **promoted to canonical Layer 2** (K_Space_Axiomatization.md v2.4, 2026-05-27, RCA 4.77/5). See [09_Fitting_Baumann_Brukner/](09_Fitting_Baumann_Brukner/) | ~~MEDIUM~~ |
 
 ---
 
@@ -328,4 +329,4 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
 
 ---
 
-*Project VVV-QMRF Class C — Master Index v32 (2026-05-27). BB-VVV fit plan v1.4: T_BB Class C (conditional), G1 CLOSED via K7_trace + D_enc. 4 RCA gates (3 PASS, 1 DEFER). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
+*Project VVV-QMRF Class C — Master Index v34 (2026-05-27). K7_trace + D_enc canonical Layer 2 (K_Space_Axiomatization.md v2.4, RCA 4.77/5). BB-VVV fit plan v1.4: T_BB Class C (conditional), G1 CLOSED. 3-OBS mechanism: Class C-conditional (T4-H Steps 2-4 pending). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
