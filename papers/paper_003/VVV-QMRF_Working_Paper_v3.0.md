@@ -3,11 +3,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # When Does a Physical Interaction Become a Valid Registered Measurement?
 ## A VVV-QMRF Registration-Layer Framework with the K9_E Class C Testable Hypothesis and an Experimental Specification for Extended Wigner's Friend
 
-**Working Paper v3.0** *(draft — Phases 1-5 complete; P6-P7 finalized 2026-05-28; ready for review)*
+**Working Paper v3.0** *(promoted from draft 2026-05-28 — all phases P1-P7 complete)*
 **Author:** Viet Nguyen Xuan (VietVunVut)
 **Repository:** https://github.com/AIhugART/VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework
 **Date:** 2026-05-28
-**Status:** Working paper draft. All formal claims are Class D (proposed) or Class C (conjecture/qualified) unless stated otherwise. Critique is explicitly invited.
+**Status:** Working paper. All formal claims are Class D (proposed) or Class C (conjecture/qualified) unless stated otherwise. Critique is explicitly invited.
 **Plan reference:** `papers/paper_003/VVV-QMRF_Working_Paper_v3.0_plan.md`
 **Base version:** v2.0 (`papers/Testable_Prediction_Section/.../VVV-QMRF_Working_Paper_v2.0.md`)
 
@@ -1063,19 +1063,17 @@ What distinguishes VVV-QMRF is that the constraints are explicitly named, traced
 10. Proietti, M. et al. (2019). Experimental test of local observer independence. *Science Advances* 5(9), eaaw9832. DOI: 10.1126/sciadv.aaw9832.
 11. Bong, K.W. et al. (2020). A strong no-go theorem on the Wigner's friend paradox. *Nature Physics* 16, 1199–1205. DOI: 10.1038/s41567-020-0990-x.
 12. Jordan, A.N. and Siddiqi, I.A. (2024). *Quantum Measurement Theory and Practice.* Cambridge University Press. DOI: 10.1017/9781009103909.
-13. Baumann, V. and Brukner, \v{C}. (2023). Wigner's friend's memory and the no-signaling principle. *arXiv preprint arXiv:2305.15497v2*.
-14. VietVunVut (Viet - Nguyen Xuan) (2026). Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom? *arXiv preprint arXiv:2605.16109* (submitted 2026-05-27).
+13. Baumann, V. and Brukner, Č. (2024). Wigner's friend's memory and the no-signaling principle. *Quantum* 8, 1481. arXiv:2305.15497.
+14. VietVunVut (Viet - Nguyen Xuan) (2026). Has Every Wigner's Friend Experiment Been Blind to a Geometric Degree of Freedom? Submitted to arXiv 2026-05-27 (arXiv ID pending confirmation). Internal ref: `papers/paper_002/manuscript.md`.
 15. VietVunVut (Viet - Nguyen Xuan) (2026). VVV-QMRF Class C. Working Paper v2.0. DOI: 10.5281/zenodo.20289261. Zenodo.
 
 ---
 
 ## Appendices
 
-The following appendices provide links to repository directories and key source files containing the formal mathematics, code implementations, and reproduction scripts associated with this working paper:
-
-**Appendix A** — K9_E reproduction scripts: [07_fits](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/project_vvv_qmrf_class_c/07_fits/)
-**Appendix B** — K_Space_Axiomatization v2.4: [K_Space_Axiomatization.md](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/meta_architecture/K_Space_Axiomatization.md)
-**Appendix C** — AHP audit footprint: [anti_hallucinations](file:///c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement/documents/research_documents/anti_hallucinations/)
+**Appendix A** — K9_E reproduction scripts: `documents/research_documents/project_vvv_qmrf_class_c/07_fits/`
+**Appendix B** — K_Space_Axiomatization v2.4: `documents/research_documents/meta_architecture/K_Space_Axiomatization.md`
+**Appendix C** — AHP audit footprint: `documents/research_documents/anti_hallucinations/`
 
 ---
 
@@ -1093,8 +1091,7 @@ The following appendices provide links to repository directories and key source 
 
 ---
 
-*VVV-QMRF Working Paper v3.0 draft — Phase 1+2 complete (2026-05-28).*
-*All phases P1-P7 complete (2026-05-28). All mini-RCA PASS (4.57–4.6/5). Average 4.58/5.*
-*Draft complete: Abstract (8 para) + §1–§13 (~14,500w). Supporting files: CHANGELOG.md, README.md, plan.*
-*Next: Author review → revisions if needed → promote to VVV-QMRF_Working_Paper_v3.0.md (final).*
+*VVV-QMRF Working Paper v3.0 — All phases P1-P7 complete (2026-05-28). All mini-RCA PASS (4.57–4.6/5). Average 4.58/5.*
+*Promoted from draft to final 2026-05-28. Abstract (8 para) + §1–§13 (~14,500w). Supporting files: CHANGELOG.md, README.md, plan.*
+*References [13] and [14] finalized; [14] arXiv ID pending confirmation post-submission.*
 *All formal claims classified by evidence level. Class C = structurally testable, empirically UNCONFIRMED. Class D = proposed.*
