@@ -13,7 +13,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)<br/>
 **Legacy name:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)<br/>
 **Author:** VietVunVut (Viet - Nguyen Xuan)<br/>
-**Version:** v4.3 — Three-project architecture + Class C integration (2026-05-24)<br/>
+**Version:** v35 — Track 2 COMPLETED (arXiv submitted) + K7_trace / D_enc canonical Layer 2 (2026-05-28)<br/>
 **Zenodo DOI:** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0)<br/>
 **License:** CC BY 4.0<br/>
 **Canonical master reference:** [Project VVV-QMRF Class C — Master Index](documents/research_documents/project_vvv_qmrf_class_c/index.md)<br/>
@@ -75,8 +75,10 @@ VVV-QMRF đề xuất một **cấu trúc logic ghi nhận K**, được tiên �
 | v29 | 2026-05-23 | Class C (genuine) | 3-round RCA upgrade: genuine non-circular fit β=0.598, 2.31σ |
 | v30 | 2026-05-24 | Class C (qualified) | **DOWNGRADE:** Noise sensitivity analysis FAIL (noise_threshold = 0.10σ RMS). Random noise at ANY magnitude produces Δχ² ≥ 5.35 in ~50% of realizations. A0B0 alone drives 80% of Δχ². |
 | v31 | 2026-05-24 | Class C (qualified) | K9E-PAT CLOSED (UNRESOLVABLE), IBM Quantum REJECTED. Post-v30 Execution Plan created. K9-S12 proposed as first dedicated test. |
+| v32 | 2026-05-27 | Class C (qualified) | **arXiv preprint submitted** (quant-ph). K9-S12 paper completed (Draft v94). Track 1 & 2 CLOSED. |
+| v35 | 2026-05-27 | Class C (qualified) | T4-H colimit verified (N=3, Class C). K7_trace + D_enc promoted to canonical Layer 2 (RCA 4.77/5). Track 3 ACTIVE. |
 
-**Remaining empirical path / Con đường thực nghiệm còn lại:** Confirmation or rejection requires a dedicated experiment. K9-S12 Modified Bong protocol (single QWP, α=31°) proposed as FIRST test: Gen LF 1 = +0.0891 (8.6σ), δ⟨A₁B₂⟩ = -0.0355 (20.8σ).
+**Remaining empirical path / Con đường thực nghiệm còn lại:** Confirmation or rejection requires a dedicated experiment. K9-S12 Modified Bong protocol (single QWP, α=31°) proposed as FIRST test: Gen LF 1 = +0.0891 (8.6σ), δ⟨A₁B₂⟩ = -0.0355 (20.8σ). **arXiv preprint submitted 2026-05-27.** Track 3 (Experimental Path) now ACTIVE — awaiting optical lab collaboration.
 
 ---
 
@@ -228,12 +230,14 @@ buddhist-epistemology-quantum-measurement/
 
 | # | Item | Status / Trạng thái | Priority / Ưu tiên |
 |---|------|---------------------|:---:|
-| POST-v30 | Post-v30 execution plan (K9E-PAT → K9-S12 paper → experiment) | Active | HIGH |
-| K9-S12 | Modified Bong protocol paper + experimental proposal | In progress | HIGH |
-| 3-OBS | 3-observer experiment — δM₃ = -0.223 (11×) | FUTURE WORK | HIGH |
+| POST-v30 | Post-v30 execution plan (Track 1 & 2 COMPLETED, Track 3 ACTIVE) | Active | HIGH |
+| K9-S12 | Modified Bong protocol paper + experimental proposal | **arXiv SUBMITTED (2026-05-27)** | HIGH |
+| 3-OBS | 3-observer experiment — δM₃ = -0.223 (11×) | FUTURE WORK (Track 3B) | HIGH |
 | K9E-PAT | Multiplicative pattern test | **CLOSED (UNRESOLVABLE, v31)** | — |
 | IBM-Q | IBM Quantum execution | **REJECTED (v31)** | — |
-| PUB | Publication path — Foundations of Physics / Phys Rev A | Outlined | MEDIUM |
+| K7_trace | Closure Transition Record — canonical Layer 2 | **PROMOTED (v35, RCA 4.77/5)** | — |
+| D_enc | Transition-Encoding Registration Act — canonical Layer 2 | **PROMOTED (v35, RCA 4.77/5)** | — |
+| PUB | Publication path — Foundations of Physics / Phys Rev A | arXiv submitted, awaiting feedback | MEDIUM |
 
 ---
 
@@ -326,7 +330,9 @@ buddhist-epistemology-quantum-measurement/
 | v1–v3 | 2026-05-10–14 | Initial release: E1–E7, BE↔QM mapping, rename VVV-EQM→VVV-QMRF |
 | v4 final | 2026-05-16 | Registration-layer formalization: E1–E16, E17 proposal, 2 lemmas |
 | v4.2 | 2026-05-21 | K-space axiomatization README refresh: K1–K8, T1–T4 |
-| **v4.3** | **2026-05-24** | **Three-project architecture + Class C integration. README restructured per [Class C Master Index](documents/research_documents/project_vvv_qmrf_class_c/index.md). Legacy v4.2 detail backed up to [README_v4.2_backup_2026_05_24.md](README_v4.2_backup_2026_05_24.md).** |
+| v4.3 | 2026-05-24 | Three-project architecture + Class C integration. README restructured per [Class C Master Index](documents/research_documents/project_vvv_qmrf_class_c/index.md). Legacy v4.2 detail backed up to [README_v4.2_backup_2026_05_24.md](README_v4.2_backup_2026_05_24.md). |
+| v32 | 2026-05-27 | arXiv preprint submitted (K9-S12 paper, Draft v94). Track 1 & 2 CLOSED. T4-H colimit verified (N=3). |
+| **v35** | **2026-05-28** | **K7_trace + D_enc promoted to canonical Layer 2 (RCA 4.77/5). Track 3 (Experimental Path) ACTIVE. README updated to reflect v35 state.** |
 
 ---
 

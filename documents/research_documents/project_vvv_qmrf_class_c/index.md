@@ -43,7 +43,7 @@ VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H)
 
 **Downgrade reason (v30, 2026-05-24):** Noise sensitivity analysis (Delta_chi2 Decomposition + Noise Budget Analysis, RCA 4.77/5) returned **FAIL**: noise_threshold = 0.10 sigma RMS (threshold for PASS: > 3.0 sigma). With only 4 data points and K9_E's directional sensitivity, random noise at ANY magnitude produces Delta_chi2 >= 5.35 in ~50% of realizations. The 2.31sigma "signal" is a noise-detection threshold, not evidence for K9_E suppression. See `07_fits/noise_sensitivity_analysis.py` and `04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md`.
 
-**Remaining empirical path:** Confirmation or rejection requires a 3-observer experiment with dedicated noise characterization (prediction: delta_M3 = -0.223 at beta=0.3, illustrative, T4-H now THEOREM — conditional only on K9_E postulate P9). See §4 for full 3-Round RCA.
+**Remaining empirical path:** Confirmation or rejection requires a dedicated experiment with dedicated noise characterization (prediction: delta_M3 = -0.223 at beta=0.3, illustrative, T4-H now THEOREM — conditional only on K9_E postulate P9). **K9-S12 Modified Bong protocol paper submitted to arXiv (2026-05-27).** Track 3 (Experimental Path) now ACTIVE — awaiting optical lab collaboration. See §4 for full 3-Round RCA.
 
 See [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) for the v29 upgrade RCA (aggregate 4.50/5) and [P10-NOISE Methodology Decision](04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md) for the v30 downgrade RCA (aggregate 4.77/5).
 
@@ -297,12 +297,12 @@ pip install -r requirements.txt
 | A1 | ~~K5 prospective firing — promote from "semantic extension" to axiom text~~ | **RESOLVED (v29)** — upgraded to K5_prospective clause in K_Space_Axiomatization.md | ~~HIGH~~ |
 | K9E-PAT | ~~K9_E multiplicative pattern (2BSM/1BSM ratio ~2) not confirmed by raw data (ratio = -0.78)~~ | **CLOSED (UNRESOLVABLE, v31)** — empirical ratio = two sub-σ residuals divided → red herring. Both models predict ratio ~2. 4 data points insufficient. Deferred to K9-S12 experiment. See [T1C Resolution](04_governance/T1C_k9e_pat_resolution.md) | ~~HIGH~~ |
 | IBM-Q | ~~IBM Quantum execution plan for K9_E testing~~ | **REJECTED (v31)** — double category error (K9_E requires K-space structure; IBM QPU has none). See [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) | ~~HIGH~~ |
-| POST-v30 | Post-v30 execution plan (K9E-PAT → K9-S12 paper → experiment) | Track 1 & 2 CLOSED — [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) | HIGH |
+| POST-v30 | Post-v30 execution plan (K9E-PAT → K9-S12 paper → experiment) | **Track 1 & 2 COMPLETED** (arXiv submitted 2026-05-27). Track 3 ACTIVE — [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) | HIGH |
 | 3-OBS | 3-observer experiment — delta_M3 = -0.223 (11x) prediction ready, experimental design deferred | **FUTURE WORK** — mechanism file: [3observer_registration_transition.md](02_derivation_chain/3observer_registration_transition.md) (Class C — T4-H THEOREM 4/4, 2026-05-28) | HIGH |
 | P10-NOISE | Non-uniform experimental noise cannot be ruled out as alternative explanation for genuine fit improvement | New (v29) | MEDIUM |
 | P10-TIM | Null-model N0 fit omitted — requires raw event-level data; deferred | DECISION-LOCKED (RCA R4) | MEDIUM |
-| BONG | Bong LF modified protocol proposal (K9-S12) | In progress | MEDIUM |
-| PUB | Publication path — Foundations of Physics / Phys Rev A submission readiness | Outlined in Phase 13 | MEDIUM |
+| BONG | Bong LF modified protocol proposal (K9-S12) | **arXiv SUBMITTED (2026-05-27)** — Paper: "A Single-Waveplate Test of Outcome-Dependent Quantum Registration in Extended Wigner's Friend Scenarios" (Draft v94, papers/paper_002/). Track 3 ACTIVE: awaiting optical lab collaboration. | ~~MEDIUM~~ |
+| PUB | Publication path — Foundations of Physics / Phys Rev A submission readiness | arXiv preprint submitted (2026-05-27). Next: journal submission after community feedback. | MEDIUM |
 | BB-VVV | Baumann & Brukner (2024) fit plan | **COMPLETE (v2.1, 2026-05-28)** — T_BB Class C (conditional), T_BB' CLOSED (superseded), P2-C π/8 exact (first-principles), G1 CLOSED. K7_trace + D_enc canonical Layer 2 (v2.4, RCA 4.77/5; 4 consumers). See [09_Fitting_Baumann_Brukner/](09_Fitting_Baumann_Brukner/) | ~~MEDIUM~~ |
 | FR-VVV | Frauchiger & Renner (2018) fit plan | **V_FR2 PASS (2026-05-28)** — K7_trace 4th canonical consumer confirmed; T_FR 2-agent sketch Class D (G_FR2 blocks full formalization). See [10_Fitting_Frauchiger_Renner/](10_Fitting_Frauchiger_Renner/) | MEDIUM |
 

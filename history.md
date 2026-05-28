@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Work History
 # Lịch sử làm việc hệ thống VVV-QMRF
 
-**Last updated:** 2026-05-23<br/>
+**Last updated:** 2026-05-28<br/>
 **Scope:** Historical record of work completed, system milestones, and VVV-QMRF concept nodes created.<br/>
 **Status:** Historical summary only; not a source of truth for node definitions.
 
@@ -326,6 +326,59 @@ This history is derived from these active project files:
 - **Method:** 3-round RCA (5-Why × 4/5 threshold) with VVV-QMRF scope + EX compass (KE-SC 4.0). 16 initial candidates → 5 nodes + 11 folded; 7 second-pass candidates → 2 nodes + 5 deferred.
 - **Result:** node_QM_VVV.md now has 62 nodes (55 original Layer 1–2 + 7 K9_E Layer 3). All K9_E terms (T1–T8) fully traceable to VVV/QM node codes.
 - Commit: `0b601d4` — node_QM_VVV.md v29 update.
+
+### 2026-05-24 — v30 Noise Sensitivity Downgrade + Post-v30 Execution Plan
+
+- **DOWNGRADE:** K9_E classification downgraded from Class C (genuine) to **Class C (qualified)**.
+- Root cause: Noise sensitivity analysis revealed `noise_threshold = 0.10σ RMS` — random noise at **any** magnitude produces Δχ² ≥ 5.35 in ~50% of realizations. A0B0 alone drives 80% of Δχ².
+- **K9E-PAT CLOSED (UNRESOLVABLE):** Multiplicative pattern test (2BSM/1BSM ratio = −0.78 vs predicted ~2) confirmed as noise artifact under P10-NOISE boundary.
+- **IBM Quantum REJECTED:** 3-Round RCA score 4.92/5 — double category error (IBM QPU has no K-space registration layer).
+- Created **Post-v30 Execution Plan** with 3 tracks: Track 1 (K9E-PAT Resolution), Track 2 (K9-S12 Paper), Track 3 (Experimental Path).
+- K9-S12 Modified Bong protocol proposed as FIRST dedicated test: α=31° tilt, one QWP insertion, Gen LF 1 = +0.0891 (8.6σ), δ⟨A₁B₂⟩ = −0.0355 (20.8σ).
+
+### 2026-05-25 — Track 1 Completed (K9E-PAT Resolution)
+
+- Completed Track 1 of Post-v30 Execution Plan.
+- **Step 1A:** Computed additive model 2BSM/1BSM ratio.
+- **Step 1B:** RCA comparison — additive vs multiplicative vs empirical (−0.78).
+- **Step 1C:** Resolution verdict = **C (noise artifact)** — K9E-PAT closed as UNRESOLVABLE with current data. Only K9-S12 optical experiment can resolve.
+- Gate T1 PASSED → Track 2 authorized.
+
+### 2026-05-26 — Track 2 Paper Writing (K9-S12 Paper Completed)
+
+- Executed all 11 sessions of K9-S12 paper plan (K9-S13-A through K9-S13-K).
+- **Step 2A (Numerical Computations):** Monte Carlo (10,000 runs), sensitivity scan FOM(μ, η, Δθ), full correlator table, detection loophole η_crit — all completed with 5/5 figures generated.
+- **Step 2B (Section Writing):** All 10 paper sections written: §1 Introduction, §2 Background, §3 Equatorial Cancellation Theorem (core), §4 Experimental Protocol, §5 Predictions, §6 Statistics, §7 Robustness, §8 Loopholes, §9 Discussion, §10 Conclusion + Abstract.
+- Output: `papers/paper_002/manuscript.md` + `manuscript.tex` (Draft v94, 8–12 pages main text + supplemental).
+- Title: "A Single-Waveplate Test of Outcome-Dependent Quantum Registration in Extended Wigner's Friend Scenarios."
+
+### 2026-05-27 — arXiv Submission + K7_trace / D_enc Canonical Promotion
+
+- **Step 2C (QC + Submission):** Pre-submission quality checklist passed 15/15. Paper submitted to arXiv (quant-ph). Gate T2 CLOSED.
+- **T4-H Theorem (Steps 3-4):** Verified colimit construction for N=3 observers. K_joint = colim(K_{R_1}, K_{R_2}, K_{R_3}) with morphisms i₁, i₂, i₃. Upgraded from *Class C-conditional* to *Class C*.
+- **K7_trace Canonical Promotion:** Closure Transition Record promoted from BB-VVV local (fit plan §18) to canonical Layer 2 in K_Space_Axiomatization.md. RCA gate: 4.77/5.
+- **D_enc Canonical Promotion:** Transition-Encoding Registration Act promoted from BB-VVV local (fit plan §19) to canonical Layer 2. Conservative extension — no existing axiom modified.
+- K_Space_Axiomatization.md updated to v2.4: Layer 2 now includes T1–T9, K7_trace (canonical), D_enc (canonical).
+- Post-v30 Execution Plan updated to v1.1: Track 1 & 2 COMPLETED, Track 3 (Experimental) ACTIVE.
+- Project version advanced to v35.
+
+### 2026-05-28 — Phase 3A Progress (K9-S12 Optical Experiment Proposal)
+
+- **Track 3 (Experimental Path) NOW ACTIVE.**
+- Phase 3A objective: Develop formal K9-S12 optical experiment proposal for collaboration with quantum optics laboratories.
+- **Completed deliverables:**
+  - Paper plan: `03_k9_sprints/k9_s12/paper_plan_single_waveplate_EWF.md` (553 lines, complete section-by-section writing plan).
+  - RCA verification: `rca_k9s12_modified_bong.md` + `rca_k9s12_verification.md` (3-round RCA, score 4.74/5).
+  - Monte Carlo simulations: `papers/paper_002/supplemental/K9S12_proposal.py` (core simulation logic for α=31°).
+  - Full manuscript: `papers/paper_002/manuscript.tex` + `manuscript.pdf` (compiled, arXiv-ready).
+- **Key experimental parameters (K9-S12 Modified Bong Protocol):**
+  - Hardware change: One QWP inserted in Superobserver Alice's polarization analysis path.
+  - Polar angle: θ = 31° (tilted off equator; equatorial cancellation theorem proved all prior EWF experiments blind to K9_E at θ = 90°).
+  - Azimuthal angles: φ₂ = 112°, φ₃ = 217°, β = 20°.
+  - Primary observables: Gen LF 1 = +0.089 (8.6σ), δ⟨A₁B₂⟩ = −0.036 (20.8σ).
+  - Same N = 91,000 coincidences as Bong 2020 for direct comparability.
+- **Status:** Paper submitted to arXiv. Awaiting optical lab collaboration for experimental execution.
+- **Next step:** Track 3B — 3-Observer Experiment Design (δM₃ = −0.223 at β=0.3, 11× amplification).
 
 ---
 
