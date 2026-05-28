@@ -5,6 +5,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Working Paper v3.0** *(promoted from draft 2026-05-28 — all phases P1-P7 complete)*
 **Author:** Viet Nguyen Xuan (VietVunVut)
+**Affiliation:** Independent Researcher, Vietnam
+**Contact:** viet@vvvqmrf.com | https://vvvqmrf.com
 **Repository:** https://github.com/AIhugART/VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework
 **Date:** 2026-05-28
 **Status:** Working paper. All formal claims are Class D (proposed) or Class C (conjecture/qualified) unless stated otherwise. Critique is explicitly invited.
