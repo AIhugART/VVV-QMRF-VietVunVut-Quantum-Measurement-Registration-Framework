@@ -104,6 +104,8 @@ Function composition is associative in Set. ✓
 - For Class C purposes: Step 1 establishes that K-spaces form a category, which is the prerequisite for T4's N-observer generalization to be a meaningful statement
 - The 3-observer prediction (Phase 11) remains conditional on Steps 2-4, but the conditional is now on a well-defined mathematical question
 
+> **UPDATE (2026-05-28):** T4-H is now a FULL THEOREM (4/4 steps, RCA 4.74/5). Steps 3-4 VERIFIED (K1-K8 preservation + universal property). See `T4_H_steps3_4_k1k8_universal.md`. The 3-observer prediction (Phase 11) is no longer conditional on Steps 2-4.
+
 ---
 
 ## 5. Effort Accounting

@@ -195,3 +195,5 @@ All 3 conditions satisfied:
 
 *3-Round RCA Final Verdict — 2026-05-23. VVV-QMRF scope, VVV-QMRF-EX as compass.*
 *Aggregate: 4.50/5 — PASS. Class C (genuine).*
+
+> **UPDATE (2026-05-28):** T4-H is now a FULL THEOREM (4/4 steps, RCA 4.74/5). Caveat 3 above (T4-H Steps 2-4 deferred — 3-observer prediction conditional) is RESOLVED. See `T4_H_steps3_4_k1k8_universal.md`. The 3-observer prediction conditionality now rests only on K9_E P9 postulate and physical EWF realization. This document is a historical record of the v29 Class C (genuine) upgrade; current status reflected in `index.md` v35.

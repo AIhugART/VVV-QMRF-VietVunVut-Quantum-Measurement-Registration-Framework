@@ -11,6 +11,7 @@
 > 1. **F1 — Circular Fit:** Phase 10's "beta_fit=0" and "beta_max=0.21" derive from a circular fit (data reconstructed as V*QM; see Phase 10 ERRATUM). The beta=0.3 value used below for delta_M3 prediction is ILLUSTRATIVE — it is above the PATH A 1-sigma bound (beta<=0.175, itself from circular fit). At beta=0 (circular fit best-fit), delta_M3 = 0.
 > 2. **F2 — K9_E is a POSTULATE (P9), not derived from K1-K8:** See Phase 8 ERRATUM. The 3-observer extension below uses K9_E as a postulate with additional conditional assumptions [A-3O-1] through [A-3O-4].
 > 3. **F3 — T4-H Proof Gap:** Predictions below depend on [A-3O-1] "T4 colimit exists for N=3" — T4 is a HYPOTHESIS, not a proven theorem (see T4_H_proof_gap_analysis.md). If T4-H fails, the 3-observer K_joint construction is invalid and all delta_M3 predictions below are unsupported.
+> **UPDATE (2026-05-28):** T4-H is now a FULL THEOREM (4/4 steps VERIFIED, RCA 4.74/5). See `T4_H_steps3_4_k1k8_universal.md`. [A-3O-1] is RESOLVED. Remaining conditionality on delta_M3: K9_E postulate P9 (F2 above) and physical EWF realization only.
 >
 > See [Phase 8 ERRATUM](Phase8_candidate_equation.md), [Phase 10 ERRATUM](Phase10_data_fitting.md), [T4-H Proof Gap Analysis](T4_H_proof_gap_analysis.md), and [index.md §4 ERRATUM](../index.md).
 

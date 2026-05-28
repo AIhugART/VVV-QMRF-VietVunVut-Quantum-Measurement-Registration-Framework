@@ -68,6 +68,8 @@ Toàn bộ codebase có **2 loại mention** của P(o_F, o_W):
 
 4. **Why T4-H chưa proven?** Vì colimit existence trong K-space category là một mathematical conjecture chưa ai chứng minh. K_Space_Axiomatization.md Open Item #9: "T4 N>2 verification: Requires multi-observer EWF modeling".
 
+> **UPDATE (2026-05-28):** T4-H is now a FULL THEOREM (4/4 steps, RCA 4.74/5). See `T4_H_steps3_4_k1k8_universal.md`. However, K9_F remains DEFERRED: T4-B2 (F7d Global Commutativity) and T4-B3 (N>2 concrete model) are still open. The structural gap analysis below remains valid for the joint probability composition problem.
+
 5. **Root cause:** **VVV-QMRF has a SINGLE-OBSERVER probability rule (K9_E) but NO multi-observer composition law.**
 
 ### The gap illustrated

@@ -384,6 +384,8 @@ T1 constructs <_joint as (i_A(<_A) ∪ i_B(<_B) ∪ cross-rel)^+ — exactly the
 | Step 4 (universal property) | DEFERRED | DEFERRED |
 | Overall T4-H | CONDITIONAL THEOREM (1/4) | **CONDITIONAL THEOREM (2/4)** |
 
+> **UPDATE (2026-05-28):** T4-H is now a FULL THEOREM (4/4 steps, RCA 4.74/5). Steps 3-4 VERIFIED (K1-K8 preservation + universal property). See `T4_H_steps3_4_k1k8_universal.md`. Overall T4-H = **THEOREM (4/4)**.
+
 ### What Step 2 Proves
 
 1. **K_colim EXISTS as a set** — the quotient construction (∐_i K_i)/~ produces a well-defined set for any finite commutative diagram D.

@@ -1,9 +1,9 @@
 # K9-S2: Individual Candidate Analysis — K9_F (Colimit Probability)
-# DEFERRED — T4 BLOCKED
+# DEFERRED — T4-H THEOREM (Steps 1-4 VERIFIED 2026-05-28); T4-B2/T4-B3 remain open
 
 **Candidate:** K9_F — Colimit Probability (T4-dependent)
 **Date:** 2026-05-23
-**Status:** ⚠️ DEFERRED — T4-H Colimit Existence Hypothesis unproven
+**Status:** ⚠️ DEFERRED — T4-H FULL THEOREM (4/4 steps VERIFIED 2026-05-28, RCA 4.74/5); T4-B2 F7d Global Commutativity and T4-B3 N>2 concrete model remain open
 
 ---
 
@@ -23,11 +23,11 @@ K9_F — Colimit Probability:
 
 | Blocker | Status | Resolution Path |
 |---|---|---|
-| T4-B1: T4-H Colimit Existence (Steps 3–4) | ⚠️ PARTIAL — Step 2 VERIFIED (SET existence, K_colim=(∐K_i)/~, RCA 4.73/5, 2026-05-27); K-SPACE Steps 3–4 DEFERRED (K1-K8 preservation + universal property) | Steps 3–4 remain: Tier 5 (~3-5h) |
+| T4-B1: T4-H Colimit Existence (Steps 3–4) | ✅ RESOLVED (2026-05-28) — Steps 3-4 VERIFIED (K1-K8 preservation + universal property, RCA 4.74/5). See `T4_H_steps3_4_k1k8_universal.md`. | Steps 1-4 complete. T4-B1 unblocked. |
 | T4-B2: F7d Global Commutativity (unproven) | ❌ OPEN | Tier 6 (4-6h) |
 | T4-B3: N>2 concrete model missing | ❌ OPEN | Tier 7 (9-11h) |
 
-**Total effort to unblock K9_F: ~16-20h (T4-B1 Step 2 VERIFIED reduces original Tier 5 estimate)**
+**Total effort to unblock K9_F: ~10-15h (T4-B1 fully RESOLVED 2026-05-28 — T4-H THEOREM). Remaining blockers: T4-B2 (F7d Global Commutativity, Tier 6, 4-6h) + T4-B3 (N>2 concrete model, Tier 7, 9-11h).**
 
 ## Conditional Pre-Assessment (if T4 were proven)
 

@@ -26,13 +26,13 @@
 | [A-E3] | ~~β universal~~ → **FREE PARAMETER (MEASUREMENT TARGET)** | β is a free parameter measured from experiment (β=0.598, Proietti D1). Universality is a MODELING CHOICE (Occam's razor), cross-experiment verification pending. See [RCA A-E3 Final Verdict](../04_governance/RCA_A_E3_beta_universal_final_verdict.md). | **RECLASSIFIED** — 0 assumptions remain |
 | [A-E4] | ⊥_K^str (K9_E) distinct from ⊥_K^dyn (K5) | If same mechanism → K5 fires first → V=0 → K9_E moot → only K9_A | **JUSTIFIED** — Tier 4 OI-4; BE lineage supports dual modes |
 | [A-NS] | No-signaling for N > 2 | If violated → K9_E creates faster-than-light communication → physically impossible | **WEAKLY JUSTIFIED** — proven for N=2, assumed for N>2; needs formal proof |
-| [A-3O-1] | T4 colimit for N=3 | 3-observer predictions (Phase 11) may be invalid | **CONDITIONAL** — T4-H hypothesis; plausibility argument only |
-| [A-3O-2] | T5 K_joint composition | 3-observer K_joint construction may fail | **CONDITIONAL** — depends on T4-H |
+| [A-3O-1] | T4 colimit for N=3 | 3-observer predictions (Phase 11) may be invalid | **RESOLVED (2026-05-28)** — T4-H FULL THEOREM (4/4 steps, RCA 4.74/5). See `T4_H_steps3_4_k1k8_universal.md`. |
+| [A-3O-2] | T5 K_joint composition | 3-observer K_joint construction may fail | **CONDITIONAL** — T4-H gate resolved (2026-05-28); T5 pending Level 4 freeze |
 | [A-3O-3] | β same for 3-obs as 2-obs | If β depends on N → Phase 11 predictions wrong | **WEAKLY JUSTIFIED** — untested |
 
-**Total: 8 items. 2 ELIMINATED, 1 DERIVED, 2 JUSTIFIED, 1 WEAKLY JUSTIFIED, 2 CONDITIONAL. [A-E1] FULLY ELIMINATED (T9); [A-E2] SPLIT ([A-E2a] DERIVED).**
+**Total: 8 items. 2 ELIMINATED, 1 DERIVED, 2 JUSTIFIED, 1 WEAKLY JUSTIFIED, 1 CONDITIONAL (T5, pending freeze), 1 RESOLVED ([A-3O-1] T4-H THEOREM 2026-05-28). [A-E1] FULLY ELIMINATED (T9); [A-E2] SPLIT ([A-E2a] DERIVED).**
 
-**The conditional assumptions (T4-H) are the weakest point.** If T4-H fails, the 3-observer prediction (Phase 11) is invalidated, but the 2-observer results (Phases 7-10) remain valid.
+> **UPDATE (2026-05-28):** T4-H is now a FULL THEOREM (4/4 steps, RCA 4.74/5). [A-3O-1] is RESOLVED. The weakest remaining point is [A-3O-2] (T5 K_joint composition, T4-H gate resolved but T5 pending Level 4 freeze) and [A-3O-3] (β same for 3-obs, WEAKLY JUSTIFIED). The 2-observer results (Phases 7-10) remain fully valid.
 
 ---
 
@@ -256,7 +256,7 @@ HONEST ASSESSMENT:
 | 3 | **No-signaling proof for general N** | MEDIUM | Done for N=2. N>2 needs induction argument. |
 | 4 | **Numerical predictions** — compute δP for specific experiments | EASY | Already done (Phase 10-11). Needs polish. |
 | 5 | **Comparison with collapse models** — discriminating predictions | MEDIUM | Assessment 3 sketched this. Needs quantitative comparison. |
-| 6 | **T4-H resolution** — prove or weaken colimit hypothesis | HARD | Required for 3-observer predictions. May need collaborator. |
+| 6 | **T4-H resolution** — prove or weaken colimit hypothesis | ~~HARD~~ **RESOLVED (2026-05-28)** | T4-H FULL THEOREM (4/4 steps, RCA 4.74/5). See `T4_H_steps3_4_k1k8_universal.md`. 3-observer predictions now conditioned on K9_E P9 only. |
 | 7 | **Experimental proposal** — specific lab setup for testing | REQUIRES_EXPERT_COLLABORATION | Quantum optics experimentalist needed. |
 | 8 | **Philosophical positioning** — relate to existing interpretations literature | MEDIUM | Phase 12 provides the analysis. Needs scholarly context. |
 | 9 | **Proietti data reanalysis** — extract individual ⟨A_xB_y⟩ from Figure 3 | EASY | D1-BLK-1, visual extraction from PDF. |

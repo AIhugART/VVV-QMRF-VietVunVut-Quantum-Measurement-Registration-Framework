@@ -614,7 +614,7 @@ This section verifies all necessary conditions N_1–N_T against the EWF 2-obser
 | φ-O4 (pre/post-closure) resolved via N_7 | ✅ |
 | N_6 authority-composition (necessary direction) | ✅ |
 | φ-O2 sufficiency — documented as FUNDAMENTAL BOUNDARY (§6.1) | ✅ RESOLVED |
-| φ-O5 N-observer (requires T4-H Steps 2-4) | ⚠️ Deferred (valid) |
+| φ-O5 N-observer (T4-H Steps 2-4 VERIFIED 2026-05-28; pending T4 Level 4 freeze) | ⚠️ Deferred — T4-H gate resolved |
 | φ-O6 Better codomain M = vN({P_o}) | ⚠️ Deferred (optimization) |
 | φ-O7 EX factorization | ⚠️ Deferred (compass-only) |
 | WP v2.0 §6.1 φ-conditional analysis (Phase 3) | ✅ |
