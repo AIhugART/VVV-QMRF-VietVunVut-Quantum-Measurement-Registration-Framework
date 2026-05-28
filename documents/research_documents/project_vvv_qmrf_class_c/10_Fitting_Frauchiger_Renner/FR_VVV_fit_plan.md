@@ -168,7 +168,7 @@ K7_trace: At t_close, Δ_closure(k, t_close) := V_prov(k) − V_final(k) ∈ {0,
 
 This definition is **scenario-agnostic** — it applies identically in B&B and FR. The only difference is which registration act `k` undergoes closure.
 
-**Verdict:** ✅ **CONFIRMED** — K7_trace is the second consumer. This directly upgrades the Action 4 generality score from 2.5/5 (1 consumer) toward 4.0/5 (2 independent consumers in distinct papers with distinct paradox structures).
+**Verdict:** ✅ **CONFIRMED + CANONICALLY INTEGRATED (2026-05-28)** — K7_trace is FR's second independent-paper consumer. V_FR2 added to canonical `K_Space_Axiomatization.md` v2.4 (PEER-SYNC both copies) as consumer (4): T_BB + D_enc + 3-OBS + FR. K7_trace confirmed scenario-agnostic across B&B (angle-sweep) and FR (coherent/projective).
 
 ---
 
@@ -284,7 +284,7 @@ K7_trace ecosystem (B&B + FR):
 | Round 3 (Readiness) | **2.33/5 FAIL** | ~3.0–3.5/5 (needs peer review + multi-scenario) |
 | Aggregate | **3.12/5 FAIL** | **~3.83/5** (approaching threshold) |
 
-Full canonical promotion requires: V_FR2 computational script + peer review of K7_trace + D_enc definitions. Trajectory: generality PASS → aggregate approaches 4.0 → EXECUTE canonical promotion after peer review.
+**UPDATE (2026-05-28):** K7_trace + D_enc were canonically promoted 2026-05-27 (RCA 4.77/5, `Theoretical_Integration_plan.md v1`) — see `K_Space_Axiomatization.md v2.4`. V_FR2 subsequently added to canonical consumers list (PEER-SYNC, 2026-05-28). The trajectory above is historical; canonical promotion is complete.
 
 ---
 

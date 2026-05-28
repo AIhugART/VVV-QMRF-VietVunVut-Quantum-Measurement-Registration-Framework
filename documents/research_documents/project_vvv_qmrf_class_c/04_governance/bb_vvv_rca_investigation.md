@@ -92,16 +92,23 @@ This gate evaluated whether `K7_trace` and `D_enc` should be added to the canoni
 
 ## 3b. Post-RCA Implementation Status (2026-05-28)
 
-Two follow-up actions from the original RCA review were executed in session 2026-05-28:
+Five follow-up actions from the original RCA review were executed in session 2026-05-28:
 
 | Action | RCA Gate | Status | Output |
 |---|---|---|---|
 | **P1-A:** Write T_BB verification script | Design decision 4.30/5 (PASS) | ✅ **COMPLETED** | `scripts/bb_vvv_t_bb_verification.py` v1.0 — OVERALL PASS |
 | **P1-B:** Resolve T_BB' (Option C) open status | 3-round RCA 4.27/5 (PASS) | ✅ **COMPLETED** | `BB_VVV_compatibility_section.md` v2.1 — T_BB' CLOSED (superseded) |
+| **FR-1 (V_FR2):** K7_trace second consumer verification (FR) | 3-round RCA 4.28/5 (PASS; before P2-C) | ✅ **COMPLETED** | `10_Fitting_Frauchiger_Renner/scripts/fr_vvv_k7trace_consumer_verification.py` v1.0 — OVERALL PASS; V_FR2 confirmed: K7_trace scenario-agnostic (B&B angle-sweep vs FR coherent/projective) |
+| **P2-C:** requires_K_joint first-principles derivation | 3-round RCA 4.0/5 (PASS) | ✅ **COMPLETED** | `bb_vvv_t_bb_verification.py` updated: sin²(2x)>0.5 criterion; π/8 validated as **exact** (not approximation). `BB_VVV_fit_plan.md` §20 added. |
+| **PEER-SYNC:** Add FR as K7_trace 4th canonical consumer | 3-round RCA 4.5/5 (PASS) | ✅ **COMPLETED** | Both `K_Space_Axiomatization.md` copies updated (2026-05-28): FR-VVV avoidance chain Step 2 as consumer (4). K7_trace: 4 consumers × 2 independent papers (B&B + FR). |
 
 **P1-A summary:** `bb_vvv_t_bb_verification.py` implements K7_trace, D_enc, and requires_K_joint_ewf, then traces all 4 T_BB derivation steps. Result: T_BB holds for all 1000 interference-regime points; F_TB1–F_TB4 falsification conditions none triggered; V2 cross-check consistent. T_BB Class C (conditional) is now computationally supported, not just formally argued.
 
 **P1-B summary:** T_BB' (Option C / No-Signaling Recast) was OPEN as "NEEDS V1-AWARE REVISION" in v2.0. The 3-round RCA (4.27/5) found: R1 Coherence 4.33/5 (fit plan already marks superseded), R2 Structural Necessity 4.33/5 (no independent path), R3 AHP Risk 4.17/5 (open status is inconsistency risk). Decision: CLOSE as superseded. `BB_VVV_compatibility_section.md` updated to v2.1.
+
+**FR-1 / V_FR2 summary:** `fr_vvv_k7trace_consumer_verification.py` confirms K7_trace is identical in B&B and FR contexts. FR uses scenario-defining K5 trigger (coherent measurement); B&B uses angle-dependent trigger (sin²(2x)>0.5). Both produce identical K7_trace delta_closure mechanics. V_FR2 subsequently integrated into canonical `K_Space_Axiomatization.md` v2.4 (PEER-SYNC both copies, 2026-05-28).
+
+**P2-C summary:** π/8 threshold was labeled "approximation" but is the exact 50%-coherence boundary from K5 condition (iii): sin²(2x)>0.5 → x∈(π/8, 3π/8). Approximation label removed. T_BB re-run: OVERALL PASS unchanged.
 
 ---
 

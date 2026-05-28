@@ -68,8 +68,8 @@ Layer 3 (Class C)    K9_E Probability postulate (P9)
 Layer 4 (Class D)    Multi-paper data fit
        |              D1 Proietti CHSH: beta=0.598 (genuine fit), V=0.939, 2.31sigma
        |              D2 Bong LF: Phase 10b analysis INVALIDATED (K9-S8 marginalization)
-       |              D3 Frauchiger–Renner: AVOIDED via K5 V_prov
-       |              D4 Baumann&Brukner: T_BB Class C (conditional), G1 CLOSED (K7_trace+D_enc)
+       |              D3 Frauchiger–Renner: AVOIDED via K5 V_prov; V_FR2 PASS (2026-05-28) — K7_trace 4th canonical consumer; FR_VVV_fit_plan.md v0.1
+       |              D4 Baumann&Brukner: T_BB Class C (conditional), T_BB' CLOSED, G1 CLOSED (K7_trace+D_enc), P2-C π/8 first-principles; v2.1
        v
 Layer 5 (Class D)    Prediction + Reduction + Assessment
                      3-observer: delta_M3=-0.223 at beta=0.3 (11x; illustrative)
@@ -224,9 +224,10 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | How was K9E-PAT resolved (RCA)? | [T1B Model Comparison RCA](04_governance/T1B_model_comparison_RCA.md) → [T1C Resolution](04_governance/T1C_k9e_pat_resolution.md) |
 | What is the Post-v30 execution plan? | [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) |
 | What happened in the v31 RCA session? | [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) |
-| How does B&B (2024) fit VVV-QMRF? | [BB_VVV_fit_plan.md](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) (v1.4 — T_BB Class C) |
-| What is the BB-VVV compatibility result? | [BB_VVV_compatibility_section.md](09_Fitting_Baumann_Brukner/BB_VVV_compatibility_section.md) (v2.0) |
-| What are K7_trace and D_enc? | [K_Space_Axiomatization.md §K7_trace/§D_enc](01_axiomatization/K_Space_Axiomatization.md) (canonical Layer 2, v2.4, RCA 4.77/5). Origin: [BB_VVV_fit_plan.md §18-§19](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) |
+| How does B&B (2024) fit VVV-QMRF? | [BB_VVV_fit_plan.md](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) (v1.4 — T_BB Class C, P2-C §20 first-principles) |
+| What is the BB-VVV compatibility result? | [BB_VVV_compatibility_section.md](09_Fitting_Baumann_Brukner/BB_VVV_compatibility_section.md) (v2.1 — T_BB' CLOSED, P2-C π/8 exact) |
+| How does FR (2018) fit VVV-QMRF? | [FR_VVV_fit_plan.md](10_Fitting_Frauchiger_Renner/FR_VVV_fit_plan.md) (v0.1 — V_FR2 PASS, K7_trace 4th canonical consumer confirmed) |
+| What are K7_trace and D_enc? | [K_Space_Axiomatization.md §K7_trace/§D_enc](01_axiomatization/K_Space_Axiomatization.md) (canonical Layer 2, v2.4, RCA 4.77/5; 4 consumers: T_BB+D_enc+3-OBS+FR). Origin: [BB_VVV_fit_plan.md §18-§19](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) |
 
 ### Folder Index
 
@@ -241,7 +242,8 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | `06_references/` | VVV-QMRF core terminology + bridge documents | 8 |
 | `07_fits/` | Python reproduction scripts + utils/ module + SOT data + requirements.txt | 18 |
 | `08_archives/` | Archived meta-architecture documents | 7 |
-| `09_Fitting_Baumann_Brukner/` | B&B (2024) fit plan v1.4 + compatibility v2.0 + verification script + 4 RCA gates + source paper | 18 |
+| `09_Fitting_Baumann_Brukner/` | B&B (2024) fit plan v1.4 + compatibility v2.1 (T_BB' CLOSED) + verification scripts (T_BB PASS, P2-C) + 5 RCA gates + source paper | 21 |
+| `10_Fitting_Frauchiger_Renner/` | FR (2018) fit plan v0.1 + K7_trace consumer verification script (V_FR2 PASS 2026-05-28) | 4 |
 
 ---
 
@@ -301,7 +303,8 @@ pip install -r requirements.txt
 | P10-TIM | Null-model N0 fit omitted — requires raw event-level data; deferred | DECISION-LOCKED (RCA R4) | MEDIUM |
 | BONG | Bong LF modified protocol proposal (K9-S12) | In progress | MEDIUM |
 | PUB | Publication path — Foundations of Physics / Phys Rev A submission readiness | Outlined in Phase 13 | MEDIUM |
-| BB-VVV | Baumann & Brukner (2024) fit plan | **COMPLETE (v1.4, v34)** — T_BB Class C (conditional), G1 CLOSED. K7_trace + D_enc **promoted to canonical Layer 2** (K_Space_Axiomatization.md v2.4, 2026-05-27, RCA 4.77/5). See [09_Fitting_Baumann_Brukner/](09_Fitting_Baumann_Brukner/) | ~~MEDIUM~~ |
+| BB-VVV | Baumann & Brukner (2024) fit plan | **COMPLETE (v2.1, 2026-05-28)** — T_BB Class C (conditional), T_BB' CLOSED (superseded), P2-C π/8 exact (first-principles), G1 CLOSED. K7_trace + D_enc canonical Layer 2 (v2.4, RCA 4.77/5; 4 consumers). See [09_Fitting_Baumann_Brukner/](09_Fitting_Baumann_Brukner/) | ~~MEDIUM~~ |
+| FR-VVV | Frauchiger & Renner (2018) fit plan | **V_FR2 PASS (2026-05-28)** — K7_trace 4th canonical consumer confirmed; T_FR 2-agent sketch Class D (G_FR2 blocks full formalization). See [10_Fitting_Frauchiger_Renner/](10_Fitting_Frauchiger_Renner/) | MEDIUM |
 
 ---
 
