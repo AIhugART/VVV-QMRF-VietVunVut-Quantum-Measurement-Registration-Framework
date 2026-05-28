@@ -1,11 +1,11 @@
 # BB-VVV Structural Compatibility Analysis
 ## Baumann & Brukner (2024) × VVV-QMRF K1-K8
 
-**Version:** 2.0 (2026-05-27)
+**Version:** 2.1 (2026-05-28)
 **Source:** BB_VVV_fit_plan.md v1.4 — Phase 1 verification + K7_trace (§18) + D_enc (§19) + Phase 3 writeup
-**RCA gate:** 3-round RCA × 5-Why × threshold 4/5 (DI-01 5.0, DI-02 5.0, DI-07 4.0, Action3 4.80)
+**RCA gate:** 3-round RCA × 5-Why × threshold 4/5 (DI-01 5.0, DI-02 5.0, DI-07 4.0, Action3 4.80, T_BB'_close 4.27)
 **Scope:** Structural compatibility assessment (Class D/C); NOT identity claim
-**Script:** `scripts/bb_vvv_v1v2_verification.py` v2.0
+**Scripts:** `scripts/bb_vvv_v1v2_verification.py` v2.0 · `scripts/bb_vvv_t_bb_verification.py` v1.0 (T_BB Steps 1-4 PASS)
 
 ---
 
@@ -17,7 +17,7 @@
 | V2 (K7 ↔ B&B Δp) | ✅ **PASS** | K7 closure magnitude matches B&B memory change Δp for asymmetric state. |
 | E7 trace | ✅ **RESOLVED** | E7 maps to K4/K5/K7. T_BB Step 3 citation fixed: E7 → K5. |
 | T_BB (Option A) | ✅ **Class C (conditional)** | G1 CLOSED via K7_trace (§18) + D_enc (§19). Derivation complete. |
-| T_BB' (Option C) | ⚠️ **NEEDS REVISION** | V1 finding invalidates Step 1 premise. Must be restructured. |
+| T_BB' (Option C) | ✅ **CLOSED (superseded)** | V1 falsifies Step 1 premise. T_BB (Option A) computationally verified. T_BB' superseded by Option A (fit plan v1.4). |
 
 ---
 
@@ -180,7 +180,7 @@ E7 = "Validity Location" postulate (Level 2 in VVV-QMRF architecture):
 | F1 | R_BB ≠ R_K5 | ⚠️ **TRIGGERED** — V1 shows failure regions differ |
 | F4 | K5 fires but q₀₀ ≥ 0 (or vice versa) | ⚠️ **TRIGGERED** — at x=π/4 and x≈0 |
 | F5 | V1 bidirectional impossible | **DEFERRED** (moot: forward already fails) |
-| F6 | T_BB ≠ T_BB' scope | **DEFERRED** (T_BB' needs V1-aware revision) |
+| F6 | T_BB ≠ T_BB' scope | ✅ **CLOSED (moot)** | T_BB' superseded by Option A (v2.1, 2026-05-28) — scope comparison no longer applicable |
 | F7 | E7 absent or conflicts | ✅ **CLOSED** (E7 found, maps to K4/K5/K7) |
 | G1 | V_prov reference undefined after closure | ✅ **CLOSED** (K7_trace §18 + D_enc §19) |
 | G9 | "Encoding Δ_closure" undefined | ✅ **CLOSED** (D_enc §19, RCA 4.67/5) |
@@ -232,14 +232,14 @@ Step 4 [K4]:            V = 0 → M_aware invalid. QED.
 
 ## 9. Claim Classification Summary
 
-| Item | Pre-verification | Post-verification (v1.0) | Post-K7_trace+D_enc (v2.0) | Reason |
-|---|---|---|---|---|
-| V1 forward (K5 ↔ q₀₀) | D (proposed) | D (PARTIAL, F4 triggered) | D (PARTIAL, F4 triggered) | R_BB ≠ R_K5; different failure modes |
-| V1 bidirectional | D (proposed) | DEFERRED + MOOT | DEFERRED + MOOT | Forward already fails |
-| V2 (K7 ↔ Δp) | D (proposed) | D (script-verified) | D (script-verified) | Functional form matches exactly |
-| T_BB (Option A) | D (proposed) | BLOCKED (G1) | **C (conditional)** | G1 CLOSED via K7_trace + D_enc |
-| T_BB' (Option C) | D (proposed) | NEEDS V1-AWARE REVISION | NEEDS V1-AWARE REVISION | Step 1 premise invalidated |
-| E7 trace | Action item | RESOLVED | RESOLVED | E7 → K4/K5/K7 mapping confirmed |
+| Item | Pre-verification | Post-verification (v1.0) | Post-K7_trace+D_enc (v2.0) | v2.1 (T_BB' close) | Reason |
+|---|---|---|---|---|---|
+| V1 forward (K5 ↔ q₀₀) | D (proposed) | D (PARTIAL, F4 triggered) | D (PARTIAL, F4 triggered) | D (PARTIAL, F4 triggered) | R_BB ≠ R_K5; different failure modes |
+| V1 bidirectional | D (proposed) | DEFERRED + MOOT | DEFERRED + MOOT | DEFERRED + MOOT | Forward already fails |
+| V2 (K7 ↔ Δp) | D (proposed) | D (script-verified) | D (script-verified) | D (script-verified) | Functional form matches exactly |
+| T_BB (Option A) | D (proposed) | BLOCKED (G1) | **C (conditional)** | **C (conditional) — script PASS** | G1 CLOSED; T_BB Steps 1-4 verified |
+| T_BB' (Option C) | D (proposed) | NEEDS V1-AWARE REVISION | NEEDS V1-AWARE REVISION | **CLOSED (superseded by A)** | Step 1 falsified; Option A complete |
+| E7 trace | Action item | RESOLVED | RESOLVED | RESOLVED | E7 → K4/K5/K7 mapping confirmed |
 
 ---
 
@@ -248,13 +248,31 @@ Step 4 [K4]:            V = 0 → M_aware invalid. QED.
 1. **✅ DONE — Publish V1 finding:** R_BB ≠ R_K5 documented as honest falsification (§2).
 2. **✅ DONE — Preserve V2 result:** K7 ↔ Δp alignment documented (§3).
 3. **✅ DONE — Resolve T_BB:** K7_trace + D_enc close G1, T_BB derivable (§8).
-4. **Revise T_BB':** Restructure Option C to not depend on V1 equivalence claim. Possible reframing: T_BB' as "K7-based compatibility" rather than "K5-based equivalence."
+4. **✅ CLOSED — T_BB' superseded:** 3-round RCA gate (4.27/5 PASS, 2026-05-28) decided T_BB' (Option C) is superseded by Option A. Rationale: (a) fit plan v1.4 already marks T_BB' superseded; (b) Step 1 premise (V1 equivalence K5=q₀₀<0) falsified by F4; (c) T_BB (Option A) fully derivable and computationally verified (`bb_vvv_t_bb_verification.py` v1.0 PASS); (d) no publication dependency on T_BB'. No further revision of T_BB' required.
 5. **Document F1/F4 boundary:** The non-equivalence of R_BB and R_K5 is itself informative for VVV-QMRF — it clarifies where K5's registration-theoretic notion of incommensurability differs from B&B's no-signaling notion.
 6. **Assess K7_trace + D_enc for K_Space_Axiomatization.md:** The two Layer 2 extensions have passed RCA gates but are NOT yet proposed for inclusion in the canonical axiomatization. A separate proposal with peer review is required.
 
 ---
 
 ## 11. Revision Log
+
+### v2.0 → v2.1 changes (2026-05-28)
+
+**Added (extend-not-overwrite):**
+- Header: Scripts field now includes `bb_vvv_t_bb_verification.py` v1.0 (T_BB Steps 1-4 PASS); RCA gate list + T_BB'_close 4.27
+- §1 Summary table: T_BB' row upgraded from NEEDS REVISION → CLOSED (superseded)
+- §9 Claim classification: v2.1 column added; T_BB' → CLOSED (superseded by A); T_BB → C (conditional) + script PASS note
+- §10 Next Steps item 4: marked CLOSED with full RCA rationale
+
+**Unchanged (verbatim from v2.0):**
+- Sections 2 (V1), 3 (V2), 4, 5 (E7), 6 (disambiguation), 7 (falsification), 8 (T_BB resolution)
+
+**Backward compatibility guarantee:**
+- Every v2.0 ID and claim retains identical meaning in v2.1.
+- T_BB' closure is additive: the v2.0 "NEEDS REVISION" assessment is superseded by a documented 3-round RCA decision, not silently overwritten.
+- T_BB Class C status unchanged; v2.1 adds computational verification note only.
+
+---
 
 ### v1.0 → v2.0 changes (2026-05-27)
 
@@ -282,8 +300,8 @@ Step 4 [K4]:            V = 0 → M_aware invalid. QED.
 
 ---
 
-*BB-VVV Compatibility Analysis v2.0 — 2026-05-27*
-*Extends v1.0 with: T_BB resolution (K7_trace + D_enc) · G1 CLOSED · T_BB Class C*
-*RCA gate: 3-round × 5-Why × 4/5 threshold (Action3: 4.80/5)*
-*Honest result: V2 passes, V1 reveals structural difference, T_BB derivable*
+*BB-VVV Compatibility Analysis v2.1 — 2026-05-28*
+*Extends v2.0 with: T_BB' CLOSED (superseded) · T_BB computational verification PASS*
+*RCA gates: 3-round × 5-Why × 4/5 threshold (Action3: 4.80/5 · T_BB'_close: 4.27/5)*
+*Honest result: V2 passes, V1 reveals structural difference, T_BB derivable + verified, T_BB' superseded*
 
