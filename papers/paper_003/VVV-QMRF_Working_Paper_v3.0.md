@@ -1051,8 +1051,6 @@ What distinguishes VVV-QMRF is that the constraints are explicitly named, traced
 
 ## References
 
-[Phase 6 — carry v2.0 refs 1-12 + ~6 new; placeholders marked below]
-
 1. von Neumann, J. (1932). *Mathematical Foundations of Quantum Mechanics.* Princeton University Press.
 2. Bohr, N. (1935). Can Quantum-Mechanical Description of Physical Reality Be Considered Complete? *Physical Review* 48, 696–702.
 3. Heisenberg, W. (1958). *Physics and Philosophy.* Harper & Row.

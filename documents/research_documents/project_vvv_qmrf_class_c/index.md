@@ -214,6 +214,8 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | What is the testability status after K9-S12? | [03_k9_sprints/k9_s12/paper_plan_single_waveplate_EWF.md](03_k9_sprints/k9_s12/paper_plan_single_waveplate_EWF.md) |
 | What changed in v29 (Class C genuine)? | [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) |
 | What is the genuine non-circular fit? | [Genuine Fit RCA Round 1](02_derivation_chain/Phase10_genuine_fit_RCA_Round1.md) |
+| Where is the core Working Paper v3.0? | [../../papers/paper_003/VVV-QMRF_Working_Paper_v3.0.md](../../papers/paper_003/VVV-QMRF_Working_Paper_v3.0.md) (Finalized core paper) |
+| Where is the single-waveplate child paper (paper_002)? | [../../papers/paper_002/manuscript.md](../../papers/paper_002/manuscript.md) (arXiv preprint, submitted 2026-05-27) |
 | How was A1 upgraded? | [K_Space_Axiomatization.md §K5_prospective](01_axiomatization/K_Space_Axiomatization.md) |
 | How was T4-H Step 1 proven? | [T4-H Step 1 Category Proof](02_derivation_chain/T4_H_step1_category_proof.md) |
 | How was T4-H Step 2 colimit constructed? | [T4-H Step 2 Colimit Construction](02_derivation_chain/T4_H_step2_colimit_construction.md) |
