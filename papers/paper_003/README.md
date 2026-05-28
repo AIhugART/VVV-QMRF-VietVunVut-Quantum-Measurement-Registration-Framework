@@ -34,7 +34,8 @@ Working Paper v3.0 updates v2.0 with five months of research progress. The centr
 | `VVV-QMRF_Working_Paper_v3.0_plan.md` | RCA decision record + section map |
 | `CHANGELOG.md` | v2.0 → v3.0 delta: 13 changes (D1–D13) |
 | `README.md` | This file |
-| `VVV-QMRF_Working_Paper_v3.0.md` | *(not yet created)* — promoted after review |
+| `VVV-QMRF_Working_Paper_v3.0.md` | Promoted final copy (2026-05-28) |
+| `zenodo/` | Zenodo upload package: PDF (447 KB), .md source, metadata, checklist |
 
 ---
 
@@ -74,12 +75,12 @@ A→B→C is one-way motivation, NOT logical derivation. A null K9_E result (K9-
 
 ## Next Steps
 
-1. Author reviews `VVV-QMRF_Working_Paper_v3.0_draft.md`
-2. Revisions if needed → update draft
-3. Author approves → promote to `VVV-QMRF_Working_Paper_v3.0.md`
-4. Update project index `documents/research_documents/project_vvv_qmrf_class_c/index.md` to reference v3.0
-5. Zenodo DOI assignment for v3.0 (separate from v2.0 DOI: 10.5281/zenodo.20289261)
+1. ~~Author reviews `VVV-QMRF_Working_Paper_v3.0_draft.md`~~ ✓ Done
+2. ~~Author approves → promote to `VVV-QMRF_Working_Paper_v3.0.md`~~ ✓ Done
+3. ~~Export Zenodo upload package (PDF + metadata)~~ ✓ Done 2026-05-28
+4. **Upload PDF to Zenodo** — follow `zenodo/UPLOAD_CHECKLIST.md`
+5. After publish: update `documents/research_documents/project_vvv_qmrf_class_c/index.md` + `CLAUDE.md` with v3.0 version DOI
 
 ---
 
-*README v1.0 — 2026-05-28*
+*README v1.1 — 2026-05-28 (zenodo package complete)*

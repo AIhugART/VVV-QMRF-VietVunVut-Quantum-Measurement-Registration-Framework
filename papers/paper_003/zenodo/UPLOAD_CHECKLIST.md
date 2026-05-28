@@ -12,7 +12,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | File | Purpose |
 |---|---|
-| `VVV-QMRF_Working_Paper_v3.0.md` | **Upload this file** to Zenodo |
+| `VVV-QMRF_Working_Paper_v3.0.pdf` | **Primary upload** — PDF generated 2026-05-28 (447 KB, pdflatex) |
+| `VVV-QMRF_Working_Paper_v3.0.md` | Markdown source (alternative upload if PDF rejected) |
+| `latex_header.tex` | pdflatex Unicode header used for PDF generation (not uploaded) |
 | `zenodo_metadata.json` | Copy-paste source for all metadata fields |
 | `UPLOAD_CHECKLIST.md` | This file |
 
@@ -26,7 +28,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ### Step 2 — Upload file
 - Delete any old files if prompted
-- Upload: **`VVV-QMRF_Working_Paper_v3.0.md`**
+- Upload: **`VVV-QMRF_Working_Paper_v3.0.pdf`** (preferred — renders inline on Zenodo)
+- Alternative: `VVV-QMRF_Working_Paper_v3.0.md` if PDF upload fails
 
 ### Step 3 — Fill metadata (copy from `zenodo_metadata.json`)
 
