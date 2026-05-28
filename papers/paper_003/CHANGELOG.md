@@ -106,5 +106,7 @@ Working Paper v3.0 is a substantial update of v2.0. The central claim shifts fro
 | **latex_header.tex** | `zenodo/latex_header.tex` — pdflatex Unicode header (70+ char mappings: Greek, math, subscripts, Sanskrit diacritics) |
 | **RCA** | 3 root causes resolved: (1) `unicode-math` XeLaTeX-only → replaced with `inputenc`+`fontenc`; (2) 70+ Unicode chars unmapped → comprehensive `newunicodechar` suite; (3) U+0302 combining circumflex → `\^{}` fallback |
 | **Upload target** | Zenodo record `10.5281/zenodo.20289260` → New version v3.0 |
+| **DOI (v3.0)** | **`10.5281/zenodo.20431310`** — Published 2026-05-28 |
+| **Record URL** | https://zenodo.org/records/20431310 |
 
-*CHANGELOG v1.1 — 2026-05-28. Zenodo export complete.*
+*CHANGELOG v1.2 — 2026-05-28. Zenodo v3.0 published. DOI: 10.5281/zenodo.20431310.*

@@ -103,7 +103,7 @@ Once Zenodo assigns the v3.0 version DOI, update these files:
 | `10.5281/zenodo.20289260` | **Concept DOI** | Always → latest version |
 | `10.5281/zenodo.20289261` | Version DOI | v2.0 (May 19, 2026) |
 | `10.5281/zenodo.20356782` | Version DOI | v2 (May 23, 2026) |
-| `10.5281/zenodo.XXXXXXXX` | Version DOI | **v3.0** (pending) |
+| `10.5281/zenodo.20431310` | Version DOI | **v3.0** (published 2026-05-28) |
 
 ---
 

@@ -1067,7 +1067,7 @@ What distinguishes VVV-QMRF is that the constraints are explicitly named, traced
 12. Jordan, A.N. and Siddiqi, I.A. (2024). *Quantum Measurement Theory and Practice.* Cambridge University Press. DOI: 10.1017/9781009103909.
 13. Baumann, V. and Brukner, Č. (2024). Wigner's friend's memory and the no-signaling principle. *Quantum* 8, 1481. arXiv:2305.15497.
 14. VietVunVut (Viet - Nguyen Xuan) (2026). Has Every Wigner's Friend Experiment Been Blind to a Geometric Degree of Freedom? Submitted to arXiv 2026-05-27 (arXiv ID pending confirmation). Internal ref: `papers/paper_002/manuscript.md`.
-15. VietVunVut (Viet - Nguyen Xuan) (2026). VVV-QMRF Class C. Working Paper v2.0. DOI: 10.5281/zenodo.20289261. Zenodo.
+15. VietVunVut (Viet - Nguyen Xuan) (2026). VVV-QMRF Class C. Working Paper v3.0. DOI: 10.5281/zenodo.20431310. Zenodo.
 
 ---
 
