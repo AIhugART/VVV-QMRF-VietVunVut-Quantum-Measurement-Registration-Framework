@@ -3,6 +3,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # Action 4 — Canonical Promotion Assessment v2
 ## Should K7_trace + D_enc be promoted to K_Space_Axiomatization.md?
 
+> **⚠ CORRECTION (2026-05-28):** This assessment (3.93/5 DEFER) was written without knowledge that K7_trace + D_enc were **already canonically promoted on 2026-05-27** (RCA 4.77/5, `Theoretical_Integration_plan.md v1`) — see `K_Space_Axiomatization.md v2.4`. The DEFER verdict and peer-review-as-blocker framing are therefore **moot**. This document is preserved for audit trail only. The canonical state is: K7_trace + D_enc = Class C-canonical Layer 2. FR consumer (V_FR2 PASS 2026-05-28) added to canonical consumers list 2026-05-28.
+
 **Date:** 2026-05-28
 **Supersedes:** `rca_action4_canonical_assessment.md` (v1, 2026-05-27, 3.12/5 DEFER)
 **Trigger:** P3-C (scored 4.67/5 via 3-round RCA; approved for execution)
