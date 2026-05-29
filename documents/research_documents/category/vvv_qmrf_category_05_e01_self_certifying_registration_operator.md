@@ -11,6 +11,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Date:** 2026-05-11
 **Status:** Proposal — Registration class D (Derived, awaiting formal verification)
 **Lineage:** gap/ (BIAN-2, 6, 17) → category/ (Category 05) → framework/ (E1)
+**Cross-reference:** R̂_svasa ≡̂ σ_R(M) — structural co-extensionality established 2026-05-29 (E1 §3c, RCA 4.53/5). Bridge rule: σ_R(M) = 1 ⇔ R̂_svasa has fired for M in R's context. See [framework E1 §3c](../framework/vvv_qmrf_framework_e01_self_certifying_registration_postulate.md) for the full ≡̂ bridge definition.
 
 > **Context / Ngữ cảnh:** This document formally establishes a new registration category for Quantum Mechanics (QM) to resolve the structural gaps **BIAN-2, BIAN-6, and BIAN-17** identified in the Buddhist Epistemology - Quantum Measurement mapping. These gaps highlight QM's inability to stop the infinite von Neumann measurement chain without appealing to an external meta-registering system (using the absence/presence contrast around *Svasaṃvedana* - Self-awareness in Buddhist logic as a bounded source analogue).
 >

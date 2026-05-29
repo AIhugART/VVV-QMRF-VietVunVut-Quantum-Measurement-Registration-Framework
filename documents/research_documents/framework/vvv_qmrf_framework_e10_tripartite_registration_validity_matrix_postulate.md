@@ -31,40 +31,114 @@ E10 closes this gap by using Dignāga's *Trairūpya* (Three Conditions of a Vali
 
 ---
 
-## 3. Formal Sketch
+## 3. Formal Definition / Định nghĩa Hình thức
 
-### 3a. Three conditions
+### 3a. Operator Signature
 
-```
-Condition 1 — Pakṣadharmatā (Presence in Subject):
-  ∃ H_int: H_int couples the intended observable O_system to pointer basis |Aᵢ⟩
-  → The apparatus is configured for the right observable in the stated context
+```text
+𝕍_tri : Ctx × I_boundary → V_status
 
-Condition 2 — Sapakṣasattva (Positive Concomitance):
-  ∀ |λᵢ⟩: P(Aᵢ | λᵢ) ≥ 1 − ε_det  (high fidelity in calibration)
-  → When the target property is present, the detector registers it with calibrated reliability
+Domain:
+  Ctx = (O_intended, ε_det, ε_fp, cal_set)
+    O_intended  : target observable (Hermitian operator on H_S)
+    ε_det       : detection efficiency threshold, 0 < ε_det ≤ 1
+    ε_fp        : false-positive bound, ε_fp ≥ 0 (ε_fp = 0 is idealized
+                  formal limit, not physically realizable)
+    cal_set     : calibration measurement set {|λ_i⟩}
 
-Condition 3 — Vipakṣāsattva (Negative Concomitance):
-  ∀ |λⱼ⟩ ⊥ |λᵢ⟩: P(Aᵢ | λⱼ) ≤ ε_fp  (false-positive bound; ε_fp = 0 only in the ideal limit)
-  → When the target property is absent, false registration remains within the accepted model/calibration bound
-```
+  I_boundary = (M_act, t_int, o_det)   [E3 §3e — physical interaction
+                                         boundary record]
 
-### 3b. Validity Tensor $\mathbb{V}_{tri}$
-
-```
-\mathbb{V}_{tri} = C1 ∧ C2 ∧ C3
-
-If \mathbb{V}_{tri} = TRUE  → H_int has valid measurement-registration authority in context
-If \mathbb{V}_{tri} = FALSE → the event lacks valid K-side registration authority in that context
+Codomain:
+  V_status ∈ {VALID, FAIL_C1, FAIL_C2, FAIL_C3}
 ```
 
-### 3c. Failure classification
+### 3b. Three Conditions (Trairūpya) — Formalized
 
-| Failed condition | Classification | E-postulate |
-|-----------------|----------------|-------------|
-| C1 fails | Wrong observable — not a measurement | E10 |
-| C2 fails | Inefficient/no-result registration; may enter NRE domain if interaction occurred without valid K-side output | E9 |
-| C3 fails | False-positive or dark-count registration; may enter bhrānti / override domain | E8 |
+```text
+Condition 1 — Pakṣadharmatā (coupling existence) [→ K1 carrier set]:
+
+  C1(Ctx, I_boundary) = TRUE
+    iff ∃ H_int coupling O_intended to the apparatus pointer basis
+    {|A_i⟩} such that the interaction can produce a k_tuple with
+    o ∈ spectrum(O_intended) in its outcome slot per K1.
+
+  If ¬C1: the interaction is not a measurement of O_intended in
+    this context — no k_tuple claiming O_intended-registration
+    authority can be instantiated. This is a pre-K-side failure:
+    the physical interaction lacks the structural prerequisites
+    for any registration claim on the target observable.
+
+Condition 2 — Sapakṣasattva (positive concomitance) [→ K4(a) default validity]:
+
+  C2(Ctx, I_boundary) = TRUE
+    iff ∀ |λ_i⟩ ∈ cal_set ∩ target_eigenspace:
+      P(detector_response | state = |λ_i⟩) ≥ 1 - ε_det
+
+  If ¬C2: the apparatus fails to register the target property with
+    calibrated reliability. The interaction occurred (I_boundary
+    exists) but no valid non-null k_tuple is produced.
+    → Routes to E9 (Null Registering-System Event) domain.
+
+Condition 3 — Vipakṣāsattva (negative concomitance) [→ K4(b) null-event bound]:
+
+  C3(Ctx, I_boundary) = TRUE
+    iff ∀ |λ_j⟩ ∈ cal_set, |λ_j⟩ ⊥ target_eigenspace:
+      P(detector_response | state = |λ_j⟩) ≤ ε_fp
+
+  If ¬C3: false-positive rate exceeds the calibrated bound.
+    The apparatus produces registration claims on O_intended
+    for states where the target property is absent.
+    → Routes to E8 (Retroactive Registration Override / bhrānti) domain.
+```
+
+### 3c. Operator Output
+
+```text
+𝕍_tri(Ctx, I_boundary) =
+
+  VALID    if C1 ∧ C2 ∧ C3
+           → Registration authority granted for O_intended in this Ctx.
+             NECESSARY but NOT SUFFICIENT for V-hat firing — E3's tier
+             co-extensionality conditions (I)∧(D)∧(SC) [E3 §3d] must
+             also hold for k_tuple instantiation.
+
+  FAIL_C1  if ¬C1
+           → Wrong observable. Not a measurement of O_intended.
+             No E-postulate override: the interaction simply lacks
+             the structural prerequisites for registration authority.
+
+  FAIL_C2  if C1 ∧ ¬C2
+           → Detection failure. Target property present but not
+             registered with calibrated reliability.
+             → E9 pathway: may enter NRE domain.
+
+  FAIL_C3  if C1 ∧ C2 ∧ ¬C3
+           → False-positive registration. Apparatus claims O_intended
+             registration for states where target property is absent.
+             → E8 pathway: may enter bhrānti / retroactive override domain.
+```
+
+### 3d. K-axiom Anchor Table
+
+| Condition | K-axiom | Mapping |
+|-----------|---------|---------|
+| C1 (coupling existence) | **K1** (carrier set) | Interaction must be structurally capable of producing k_tuple with O_intended in outcome slot |
+| C2 (positive concomitance) | **K4(a)** (default validity) | When target property is present, non-null k_tuple must instantiate with calibrated reliability |
+| C3 (negative concomitance) | **K4(b)** (null event bound) | Non-target states must not produce excessive false registration claims; bounds k_null rate |
+| 𝕍_tri = VALID | **K4** + **E3** | Necessary but not sufficient for V-hat; E3 (I)∧(D)∧(SC) also required |
+| 𝕍_tri = FAIL_C2 | **K4(b)** + **E9** | Routes to null registration event domain |
+| 𝕍_tri = FAIL_C3 | **K5** + **E8** | Routes to invalidation / retroactive override domain |
+
+### 3e. Failure Routing (Formally Derivable)
+
+| 𝕍_tri output | Classification | E-postulate | K-axiom path |
+|:---:|--------|:---:|------|
+| FAIL_C1 | Wrong observable — not a measurement of O_intended | — (pre-K-side) | K1 not satisfied |
+| FAIL_C2 | Detection failure; may enter NRE domain | E9 | K4(b) |
+| FAIL_C3 | False-positive registration; may enter bhrānti domain | E8 | K5 invalidation |
+
+> **RCA verdict (2026-05-29):** 3-round RCA × 5-Why × 4/5 threshold. R1=4.5 (root cause: conceptual architecture complete, formal operator deferred), R2=4.80 (𝕍_tri designed: typed domain/codomain, 3 formalized conditions, K-anchor table), R3=5.00 (formal operator established; additive-only, zero postulate change). Aggregate 4.77/5 PASS. E3-F2 CLOSED.
 
 ---
 
@@ -156,5 +230,5 @@ E10 defines the gate; E8 and E9 handle specific failure modes (C3 failure → E8
 | Document type declared | Pass | Declared as `framework` for schema alignment. |
 | Source traceability | Pass | Existing source/cross-reference sections provide the trace base. |
 | Claim traceability | Pass | Existing assertion/claim sections classify the major claims. |
-| Boundary / non-claim guardrail | Review required | Add explicit non-identity and non-physical-law boundaries before reuse. |
+| Boundary / non-claim guardrail | Pass | Explicit K-side validity classifier boundary; 𝕍_tri is necessary not sufficient for V-hat; no physical measurement operator claim. |
 | Validation rule | Pass | Reuse only with source, claim type, and boundary preserved; unresolved items must be marked `TODO(HOTFIX)` before publication use. |

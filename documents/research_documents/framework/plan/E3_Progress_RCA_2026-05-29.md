@@ -117,7 +117,7 @@
 **Trạng thái thực tế:**
 - ❌ **CHƯA integrate vào canonical E3 file.** Canonical không có open problems section.
 - ✅ **Plan v2.0 Step 7** có đầy đủ 5 problems và next steps.
-- ✅ **Một số open problems đã có tiến độ riêng:** E10 Formalization Plan tồn tại (`meta_architecture/plan/E10_Tripartite_Validity_Formalization_Plan.md`); E16 Plan tồn tại (`E16_Structured_Doubt_Formalization_Plan.md`).
+- ✅ **Một số open problems đã có tiến độ riêng:** E10 Tripartite Validity formalization và E16 Structured Doubt formalization được tracked trong E3 Completion RCA Report §5 (`framework/plan/E3_Completion_RCA_Report_2026-05-29.md`) như các future work items không blocking.
 
 **Verdict:** ❌ NOT YET (in canonical E3) / ✅ PARTIAL progress (in sibling plans)
 
@@ -157,7 +157,7 @@
 | # | Question | Answer |
 |---|---------|--------|
 | **W1** | Tại sao Step 7 chưa vào canonical? | Open problems section thường là "living document" — không đặt trong framework file vì framework là stable definition. |
-| **W2** | Tại sao vậy? | Framework files (E1-E16) là postulate definitions, không phải research roadmaps. Roadmap đặt trong plan/ và meta_architecture/plan/. |
+| **W2** | Tại sao vậy? | Framework files (E1-E16) là postulate definitions, không phải research roadmaps. Roadmap đặt trong `framework/plan/`. |
 | **W3** | Có vấn đề gì không? | Không — E10 plan và E16 plan đã tồn tại và reference E3. Lineage được preserve. |
 | **W4** | Root cause? | **Architectural choice đúng:** Open problems vào plan files, không vào framework files. Step 7 đã "done" theo nghĩa plan-level, chỉ chưa vào canonical (và đây là intentional). |
 
@@ -222,8 +222,8 @@
 | 1 | Thêm Step 5 consequences vào canonical §5 (new) | `framework/vvv_qmrf_framework_e03_registration_lock_postulate.md` | LOW |
 | 2 | Thêm [A-E3] note vào canonical §3e | Same | LOW |
 | 3 | Sync EX-snapshot với canonical (update §3d/§3e) | `vvv-qmrf-ex/source_snapshot/framework/vvv_qmrf_framework_e03_...md` | LOW |
-| 4 | T6 ↔ E3 boundary theorem (Open problem 3 in plan) | `meta_architecture/plan/` | HIGH |
-| 5 | E10 Tripartite Validity formalization | `meta_architecture/plan/E10_...` (EXISTS) | HIGH |
+| 4 | T6 ↔ E3 boundary theorem (Future work item 1 in E3 Completion RCA §5) | `framework/plan/E3_Completion_RCA_Report_2026-05-29.md` §5 | HIGH |
+| 5 | E10 Tripartite Validity formalization (Future work item 2 in E3 Completion RCA §5) | `framework/plan/E3_Completion_RCA_Report_2026-05-29.md` §5 | HIGH |
 
 ---
 
@@ -279,8 +279,8 @@ This update completes the remaining plan-level gaps identified in §§3-7 using 
 |------|--------|
 | `documents/research_documents/framework/vvv_qmrf_framework_e03_registration_lock_postulate.md` | Added §3f distinctness, §3g T6/null boundary, §3h Class D consequences, and [A-E3] note |
 | `documents/research_documents/vvv-qmrf-ex/source_snapshot/framework/vvv_qmrf_framework_e03_registration_lock_postulate.md` | Synced §3c-§3h from canonical with EX compass-only note |
-| `documents/research_documents/meta_architecture/plan/E3_Progress_RCA_2026-05-29.md` | Added this completion update |
-| `documents/research_documents/meta_architecture/plan/E3_Completion_RCA_Report_2026-05-29.md` | Standalone completion RCA report for commit-level traceability |
+| `documents/research_documents/framework/plan/E3_Progress_RCA_2026-05-29.md` | Added this completion update |
+| `documents/research_documents/framework/plan/E3_Completion_RCA_Report_2026-05-29.md` | Standalone completion RCA report for commit-level traceability |
 
 ---
 

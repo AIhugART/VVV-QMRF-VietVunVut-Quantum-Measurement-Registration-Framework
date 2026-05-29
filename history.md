@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Work History
 # Lịch sử làm việc hệ thống VVV-QMRF
 
-**Last updated:** 2026-05-28<br/>
+**Last updated:** 2026-05-29<br/>
 **Scope:** Historical record of work completed, system milestones, and VVV-QMRF concept nodes created.<br/>
 **Status:** Historical summary only; not a source of truth for node definitions.
 
@@ -316,6 +316,16 @@ This history is derived from these active project files:
 - Preserved the boundary that VVV-QMRF is a K-side registration-layer framework, not a replacement for Standard Quantum Mechanics, Born-rule probability, Schrödinger evolution, physical collapse, detector physics, or Hilbert-space dynamics.
 - Commit pushed to `origin/main`: `93b75ff docs: formalize VVV-QMRF registration formulas`.
 
+### 2026-05-22 — E18 Delayed-Choice Registration Boundary Promoted to Framework Postulate
+
+- **G7 user authorization:** E18 promoted from Tier 1 narrow draft to frozen extension postulate in `documents/research_documents/framework/`.
+- **RCA lineage:** RCA-supported candidate → narrow draft → framework postulate (G7 DONE 2026-05-22).
+- **Two case validations PASS:** Wheeler delayed-choice + quantum eraser.
+- **Core content:** E18 names the K-side classification rule by which a later context `C_f` (with sorting relation `S` when needed) locks one prior candidate registration window `W_j` as the operative valid window `W_valid`.
+- **Boundary:** E18 is NOT retrocausation, NOT Born-rule modification, NOT a Standard QM replacement.
+- **Framework index updated:** E18 listed in `framework/index.md` Section 4.3 alongside E8–E16 as extension postulates.
+- **File:** [vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md](documents/research_documents/framework/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md)
+
 ### 2026-05-23 — K9_E Layer 3 Node Extraction (2-Pass RCA)
 
 - Extracted 7 new K9_E Layer 3 nodes from [project_vvv_qmrf_class_c/index.md](documents/research_documents/project_vvv_qmrf_class_c/index.md) v29 into [node_QM_VVV.md](documents/research_documents/vvv-qmrf/node_QM_VVV.md).
@@ -380,6 +390,48 @@ This history is derived from these active project files:
 - **K_Space_Axiomatization.md** (canonical + Class C PEER-SYNC): reverse-anchor notes added to K2/K3/K4/K5/K6/K7 Source rows. sync_check PASS.
 - **AHP 03_sot_traceability.md:** E-postulate source-chain closure note added after B.1.
 - Result: K2/K3/K4/K5/K6/K7 all have fully bidirectional traceable source chains. AHP trace score maintained ≥4/6 (STRONG).
+
+### 2026-05-29 — E3 Registration Lock Framework-Level Completion + Framework Directory Reorganization
+
+- **E3 Completion RCA (4.80/5):** E3 Registration Lock formalization completed at framework level.
+- **Canonical E3 now states:** `V-hat : I_boundary × D → K_R ∪ {k_null}` — explicitly K-side, distinct from P3, separate from beta/K9_E, and bounded against T6.
+- **RCA 3-round result:** Root cause = plan/canonical synchronization gap after HOTFIX stage, not a failure of E3 formal architecture. Round 2 score 4.88/5.
+- **Framework directory reorganization:**
+  - Active postulates: `documents/research_documents/framework/vvv_qmrf_framework_e01` through `e18` (E1–E18, with E17 as interface principle).
+  - `framework/plan/` — E3 completion RCA report + progress report.
+  - `framework/archives/` — old E1–E17 files + old formal model + old index (superseded).
+  - `framework/promote_postulate/` — E18 promotion history + postulate promotion protocol.
+  - `framework/drafts/` — reserved for future draft material.
+- **E3 completion RCA report:** [framework/plan/E3_Completion_RCA_Report_2026-05-29.md](documents/research_documents/framework/plan/E3_Completion_RCA_Report_2026-05-29.md)
+- **Framework index:** [framework/index.md](documents/research_documents/framework/index.md) — reading map for all framework files with recommended reading order, boundary rules, and schema validation checklist.
+
+### 2026-05-29 — Comprehensive RCA: 11 Open Items Resolution (4.74/5 avg)
+
+- **Scope:** All 11 open items from E1 §11.5 (6 items) + E3 Completion RCA §5 (5 items). Method: 3-round RCA × 5-Why × ≥4/5 threshold per item. VVV-QMRF scope, VVV-QMRF-EX as compass.
+- **Result:** 10/11 resolved or closed; 1/11 confirmed deferred. Average RCA score 4.74/5 (range 4.53–4.83).
+
+**E1 Cluster (6/6 resolved):**
+- **E1-O1 (4.75):** Sufficient direction resolved — 3 edge case refinements (A/D partial-entanglement boundary, B' indirect comparison via C_K, A' cascaded interference). Necessary direction deferred (E7 Axiom 2 Class D).
+- **E1-O2 (4.83):** Step 4 re-anchored from E7 Axiom 2 (Class D) → K5 (Layer 1 FROZEN). K5 conditions (i)-(iii) verified from Step 3 outputs. E7 Axiom 2 preserved as BE interpretive framing.
+- **E1-O3 (4.53):** `σ_R(M) ≡̂ R̂_svasa` — structural co-extensionality established. Bridge rule: σ_R(M)=1 ⇔ R̂_svasa fired. Updated E1 §3c + Category 05 cross-reference.
+- **E1-O4 (4.77):** Proietti mapping — canonical Condition A case: Wigner BSM active on all settings → requires_K_joint=1.
+- **E1-O5 (4.77):** Bong mapping — setting-dependent: x∈{0,1}→=1, x=2→=0. K9-S8 distinction: requires_K_joint (structural) ≠ K9_E effect (probabilistic).
+- **E1-O6 (4.67):** Condition D verified — 10-step formal proof: separable + non-overlapping → no shared event → =0.
+
+**E3 Cluster (4/5 resolved, 1 deferred):**
+- **E3-F1 (4.67):** T6↔E3 Boundary Theorem established. E3=gatekeeper (V-hat creates k_new), T6=responder (K5 effect on priors). 3-case (NULL/Path A/Path B) + 4 boundary clauses.
+- **E3-F2 (4.77):** E10 formalized — 𝕍_tri : Ctx × I_boundary → {VALID, FAIL_C1, FAIL_C2, FAIL_C3}. 6-row K-axiom anchor table. Failure routing formally derivable.
+- **E3-F3 (4.67):** Closed — subsumed by E1 resolution chain (all 6 E1 items resolved).
+- **E3-F4 (4.83):** Closed — category error identified. D_enc is stipulative semantic definition, not theorem. Adequacy verified: well-posedness + structural consistency + consumer adequacy.
+- **E3-F5 (4.83):** Confirmed deferred. Requires empirical apparatus parameters from specific experimental setup. Un-defer when K9-S12 lab collaboration established.
+
+**Key architectural insights:**
+- K5 (Layer 1 FROZEN) is the correct formal anchor for K_joint failure — E7 Axiom 2 is BE interpretive framing, not formal dependency.
+- ≡̂ (structural co-extensionality) vs = (mathematical identity) — σ_R(M) is predicate, R̂_svasa is operator; same K3 anchor, different formal type.
+- E3=gatekeeper, T6=responder — functional separation of registration lock and decoherence response.
+- requires_K_joint (structural) ≠ K9_E effect (probabilistic) — K9-S8 distinction critical for Bong mapping.
+
+**Files modified:** 10 files + 1 new (Comprehensive_RCA_Summary_2026-05-29.md). See [framework/plan/Comprehensive_RCA_Summary_2026-05-29.md](documents/research_documents/framework/plan/Comprehensive_RCA_Summary_2026-05-29.md) for full report.
 
 ### 2026-05-28 — Phase 3A Progress (K9-S12 Optical Experiment Proposal)
 

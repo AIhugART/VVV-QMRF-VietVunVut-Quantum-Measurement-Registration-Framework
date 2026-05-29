@@ -175,22 +175,65 @@ Therefore:
 
 > RCA score: 4.70/5. Root cause removed: E3 is no longer framed as an H-space operator competing with P3, but as a K-side registration function whose output is a K-state tuple.
 
-### 3g. T6 Boundary and Null Registration Event
+### 3g. T6 ↔ E3 Boundary Theorem (RCA 2026-05-29, 4.67/5)
 
-E3 defines what the registration-lock operation is. T6 addresses when decoherence-context transitions instantiate or fail to instantiate a K-side registration event. Therefore E3 references T6 but does not re-derive it.
+**Functional separation:** E3 is the **gatekeeper** — V-hat determines whether a detector response creates a K-side registration tuple. T6 is the **responder** — given that a new k_new has been created, T6 determines whether it triggers K5 invalidation on prior registrations.
 
+```text
+T6 ↔ E3 Boundary Theorem (Class D)
+
+Let d be a detector response at I_boundary, and let
+  k_out = V-hat(I_boundary, d)   [E3 §3e — registration-lock function]
+
+═══ Case NULL — T6 not applicable ═══
+
+  If k_out = k_null (K4(b): isNull(k_null) = TRUE, V=0):
+    T6 does not apply.
+    No new K-side registration exists to trigger either path.
+    Prior registrations are unaffected by this non-event.
+    E3's role: produced k_null (interaction encountered, no valid outcome).
+    T6's role: none — no registration to respond to.
+
+═══ Case REG — T6 applies ═══
+
+  If k_out = k_new ∈ K_R (K4(a): non-null, V=1):
+    T6 governs the effect on each prior k_prior ∈ K_R:
+
+    Path A — K5 invalidation triggered:
+      IF  (i)  C_K exists for {k_new, k_prior}
+               (requires_K_joint = 1, per Level 4 §4.3)
+      AND (ii) k_new ⊥_K k_prior within C_K
+               (K5 condition ii: incommensurability)
+      AND (iii) Auth(k_new → k_prior, C_K) = 1
+               (K6: cross-registration authority)
+      THEN K5 fires: V_prov(k_prior) → 0.
+      E3's role: created k_new (the triggering tuple).
+      T6's role: specifies that this k_new activates K5 on k_prior.
+
+    Path B — prior preserved:
+      OTHERWISE (any of (i)-(iii) fails):
+        V(k_prior) is unchanged by this decoherence event.
+        k_new and k_prior coexist in K_R without invalidation.
+      E3's role: created k_new.
+      T6's role: specifies no K5 cascade.
+
+═══ Boundary Clauses ═══
+
+  BC-1 (E3 scope): E3 defines V-hat — the mechanism that creates k_new
+      or k_null. E3 does NOT re-derive T6's path logic.
+  BC-2 (T6 scope): T6 assumes k_new was created by E3. T6 has no
+      mechanism for creating K-side tuples independent of V-hat.
+  BC-3 (co-instantaneity): V-hat firing and T6 path determination are
+      co-instantaneous at the registration layer — not a temporal
+      sequence. The separation is functional, not chronological.
+  BC-4 (T6 freeze caveat): T6 is Class D (pending Level 4 freeze,
+      K_Space_Axiomatization.md §T6). This theorem mirrors T6's
+      current Path A conditions. If T6's conditions change during
+      the Level 4 freeze, this theorem's Path A mirror must be
+      updated accordingly.
 ```
-T6 Path A: decoherence-context transition → K5 invalidation of a prior registration candidate.
-T6 Path B: decoherence-context transition → V-hat fires → new k instantiated in K_R.
 
-E3 successful lock:
-  V-hat(I_boundary, d) = k = ⟨M, o, cert=1, t, V=1⟩  [K4(a)]
-
-E3 non-lock / null event:
-  V-hat(I_boundary, d) = k_null = ⟨M, ∅, cert=1, t, V=0⟩  [K4(b)]
-```
-
-The null event is not the absence of all registration structure. It is a K-side null registration tuple: the interaction boundary is self-certified as encountered, but it does not yield a valid non-null registered outcome.
+> **RCA verdict (2026-05-29):** 3-round RCA × 5-Why × 4/5 threshold. R1=4.5 (root cause: missing positive functional separation theorem), R2=4.60 (E3=gatekeeper, T6=responder structure isolated), R3=4.90 (theorem established with 4 boundary clauses). Aggregate 4.67/5 PASS. E3-F1 CLOSED.
 
 ### 3h. Testable Consequences — Class D Candidates
 

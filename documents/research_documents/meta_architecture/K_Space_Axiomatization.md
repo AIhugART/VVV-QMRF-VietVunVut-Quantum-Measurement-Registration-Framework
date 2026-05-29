@@ -1324,8 +1324,9 @@ K3 preservation note (mandatory):
 | **EX anchor** | `N_QM_VVV_00032` (Registration Error / Bhrānti Status) — intersection node; BE anchor: `N_BE_00006` (Erroneous cognition); QM anchor: `N_QM_00095` (Decoherence & Environment as Measurement) |
 | **BE lineage** | Bhrānti (erroneous cognition) via N_BE_00006 — Path A maps decoherence-induced K5 invalidation to the K-side analogue of a cognition revealed as erroneous; Path B maps to fresh k instantiation (svataḥ prāmāṇya — K4 default validity on new registration) |
 | **Claim class** | D (proposed) |
+| **E3 boundary** | T6↔E3 Boundary Theorem established 2026-05-29 (RCA 4.67/5). See E3 §3g: E3=gatekeeper (V-hat creates k_new), T6=responder (determines K5 effect on priors). 3-case structure (NULL/Path A/Path B) with 4 boundary clauses. |
 | **Freeze status** | Pending Level 4 freeze (Path A uses `requires_K_joint` + `⊥_K` boundary clauses) |
-| **Update trigger** | If Level 4 `⊥_K` boundary clauses change (affects Path A K5 firing condition); if `requires_K_joint` scope changes; if E9 or E14 definitions are revised (disambiguation section may need update) |
+| **Update trigger** | If Level 4 `⊥_K` boundary clauses change (affects Path A K5 firing condition); if `requires_K_joint` scope changes; if E9 or E14 definitions are revised (disambiguation section may need update); if T6↔E3 Boundary Theorem Path A mirror requires sync |
 
 ---
 
@@ -1789,7 +1790,8 @@ Structural properties:
 | **Claim class** | C-canonical (semantic definition; promoted from Class D-local 2026-05-27) |
 | **Freeze status** | Updatable (Layer 2 semantic definition). If K7_trace revised, D_enc updates. |
 | **Consumers** | T_BB V3 Step 2 (COMPLETE via D_enc): Enc(M_aware, k_F) = 1 → requires_K_joint(M_aware, M_W) = 1 → C_K formed → K5 fires → V(M_aware) = 0 → no-awareness derived. |
-| **Boundary** | D_enc does NOT create new tuples. Does NOT modify V, cert, or outcome of any existing tuple. The counterfactual o(M_aware | Δ ≠ 0) is a hypothetical evaluation mode only — it does not instantiate a new registration act. |
+| **Boundary** | D_enc does NOT create new tuples. Does NOT modify V, cert, or outcome of any existing tuple. The counterfactual o(M_aware \| Δ ≠ 0) is a hypothetical evaluation mode only — it does not instantiate a new registration act. |
+| **Adequacy Verification** | **CLOSED 2026-05-29 (RCA 4.83/5).** D_enc is a stipulative semantic definition, not a theorem — "completeness" is a category error for definitions. Adequacy verified via 3-tier check: **(1) Well-posedness** — counterfactual conditional on well-defined o and Δ_closure, no circularity. **(2) Structural consistency** — all 5 properties (i)-(v) consistent with definition; Enc is binary predicate, not modifier, not creator. **(3) Consumer adequacy** — T_BB V3 Step 2 COMPLETE (G9 CLOSED, G1 CLOSED); Enc provides the exact predicate needed to bridge Δ_closure → requires_K_joint. See E3 Completion RCA §5 item 4. |
 | **Source** | `09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §19` (local origin); canonical as of v2.4 (2026-05-27) |
 
 ---

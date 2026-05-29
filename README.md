@@ -193,9 +193,9 @@ trong đó / where:
 | Numerical fits / Khớp số | [07_fits/](documents/research_documents/project_vvv_qmrf_class_c/07_fits/) |
 | BE↔QM comparative mapping / Ánh xạ so sánh BE↔QM | [refine_mapping.md](documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_refine_mapping.md) |
 | BE SOT for RCA / Nguồn sự thật BE | [system_be_full.md](SYSTEM_Buddhist_Epistemology/system_be_full.md) |
-| E3 Registration Lock completion RCA / RCA hoàn tất E3 Registration Lock | [E3_Completion_RCA_Report_2026-05-29.md](documents/research_documents/meta_architecture/plan/E3_Completion_RCA_Report_2026-05-29.md) |
+| E3 Registration Lock completion RCA / RCA hoàn tất E3 Registration Lock | [E3_Completion_RCA_Report_2026-05-29.md](documents/research_documents/framework/plan/E3_Completion_RCA_Report_2026-05-29.md) |
 | E3 canonical framework postulate / Tiên đề E3 canonical | [vvv_qmrf_framework_e03_registration_lock_postulate.md](documents/research_documents/framework/vvv_qmrf_framework_e03_registration_lock_postulate.md) |
-| E1–E16 postulates (legacy detail) / Tiên đề E1–E16 (chi tiết kế thừa) | [framework/](documents/research_documents/framework/) |
+| E1–E18 postulates (frozen extension) / Tiên đề E1–E18 (mở rộng đã đóng băng) | [framework/](documents/research_documents/framework/) |
 | Paper draft (K9-S12) / Bản nháp bài báo | [draft_v2.md](documents/research_documents/project_vvv_qmrf_class_c/04_governance/paper/draft_v2.md) |
 
 ---
@@ -225,7 +225,7 @@ buddhist-epistemology-quantum-measurement/
 │   │   │   ├── 06_references/         ← VVV-QMRF core terminology + definitions
 │   │   │   ├── 07_fits/               ← Python reproduction scripts
 │   │   │   └── 09_ibm_quantum/        ← IBM Quantum approach (REJECTED)
-│   │   ├── framework/                 ← E1–E16 postulates (legacy detail)
+│   │   ├── framework/                 ← E1–E18 postulates (frozen extension, includes plan/ archives/ promote_postulate/)
 │   │   ├── mapping/                   ← BE↔QM mapping documents
 │   │   ├── meta_architecture/         ← K-space axiomatization (canonical copy)
 │   │   └── anti_hallucinations/       ← Anti-Hallucination Pipeline
@@ -249,7 +249,8 @@ buddhist-epistemology-quantum-measurement/
 | IBM-Q | IBM Quantum execution | **REJECTED (v31)** | — |
 | K7_trace | Closure Transition Record — canonical Layer 2 | **PROMOTED (v35, RCA 4.77/5)** | ✅ DONE |
 | D_enc | Transition-Encoding Registration Act — canonical Layer 2 | **PROMOTED (v35, RCA 4.77/5)** | ✅ DONE |
-| E3-RCA | E3 Registration Lock framework-level completion | **COMPLETE (2026-05-29, RCA 4.80/5)** — K-side `V-hat : I_boundary × D → K_R ∪ {k_null}`, P3 distinctness, T6 boundary, [A-E3] separation | ✅ DONE |
+| E3-RCA | E3 Registration Lock framework-level completion | **COMPLETE (2026-05-29, RCA 4.80/5)** — K-side `V-hat : I_boundary × D → K_R ∪ {k_null}`, P3 distinctness, T6 boundary, [A-E3] separation. Report at [framework/plan/E3_Completion_RCA_Report_2026-05-29.md](documents/research_documents/framework/plan/E3_Completion_RCA_Report_2026-05-29.md) | ✅ DONE |
+| E18-PROMOTE | E18 Delayed-Choice Registration Boundary — framework postulate | **PROMOTED (2026-05-22, G7)** — Frozen extension postulate at [framework/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md](documents/research_documents/framework/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md). Covers K-side context-conditioned locking of prior candidate registration windows. | ✅ DONE |
 | arXiv-002 | arXiv ID confirmation for paper_002 (K9-S12) | Pending confirmation | MEDIUM |
 | PUB | Publication path — Foundations of Physics / Phys Rev A | arXiv submitted, awaiting feedback | MEDIUM |
 
@@ -257,11 +258,11 @@ buddhist-epistemology-quantum-measurement/
 
 ## 8. BE↔QM Framework (Legacy Detail — Tóm tắt Kế thừa)
 
-**EN:** Projects A and B provide the conceptual foundation. VVV-QMRF maps 30 Buddhist Epistemology nodes (N_BE_00001–N_BE_00030) and 39 edges (ED_BE_00001–ED_BE_00039) onto quantum measurement structure. This yields 16 stable registration-layer postulates (E1–E16), an E17 measurement-interface proposal, and 2 lemmas (S1-Λ, S2-Δ). The two strongest structural convergences between BE and QM are: (C1) Niḥsvabhāvatā → Bell's Theorem (no context-independent intrinsic nature), and (C2) Arthakriyā → predictive success as validity criterion.
+**EN:** Projects A and B provide the conceptual foundation. VVV-QMRF maps 30 Buddhist Epistemology nodes (N_BE_00001–N_BE_00030) and 39 edges (ED_BE_00001–ED_BE_00039) onto quantum measurement structure. This yields 16 stable registration-layer postulates (E1–E16), an E17 measurement-interface proposal, an E18 delayed-choice registration boundary postulate, and 2 lemmas (S1-Λ, S2-Δ). The two strongest structural convergences between BE and QM are: (C1) Niḥsvabhāvatā → Bell's Theorem (no context-independent intrinsic nature), and (C2) Arthakriyā → predictive success as validity criterion.
 
 **VN:** Dự án A và B cung cấp nền tảng khái niệm. VVV-QMRF ánh xạ 30 node Nhận thức luận Phật giáo (N_BE_00001–N_BE_00030) và 39 cạnh (ED_BE_00001–ED_BE_00039) vào cấu trúc đo lường lượng tử. Kết quả là 16 tiên đề ổn định ở tầng ghi nhận (E1–E16), một đề xuất giao diện phép đo E17, và 2 bổ đề (S1-Λ, S2-Δ). Hai hội tụ cấu trúc mạnh nhất giữa BE và QM: (C1) Niḥsvabhāvatā → Bell's Theorem (không có tính chất nội tại độc lập ngữ cảnh), và (C2) Arthakriyā → thành công dự đoán như tiêu chí hợp lệ.
 
-> For full E1–E16 detail, BIAN gaps, synthesis patterns, and compatibility tables, see the [legacy README v4.2 backup](README_v4.2_backup_2026_05_24.md) and [framework/](documents/research_documents/framework/).
+> For full E1–E18 detail, BIAN gaps, synthesis patterns, and compatibility tables, see the [framework index](documents/research_documents/framework/index.md) and [legacy README v4.2 backup](README_v4.2_backup_2026_05_24.md).
 
 ---
 
@@ -355,6 +356,7 @@ buddhist-epistemology-quantum-measurement/
 | v35 | 2026-05-28 | K7_trace + D_enc promoted to canonical Layer 2 (RCA 4.77/5). Track 3 (Experimental Path) ACTIVE. |
 | **v3.0** | **2026-05-28** | **Working Paper v3.0: all phases P1–P7 complete. T4-H upgraded to THEOREM (4/4 steps, RCA 4.74/5). 3-OBS prediction upgraded to Class C. Zenodo DOI: 10.5281/zenodo.20431310. Average mini-RCA 4.58/5. README updated to v3.0.** |
 | v3.0-E3-RCA | 2026-05-29 | E3 Registration Lock framework-level RCA completed (4.80/5): canonical E3 now states K-side `V-hat : I_boundary × D → K_R ∪ {k_null}`, P3 distinctness, T6 boundary, [A-E3] separation, and EX compass-only sync. |
+| **v3.0-FINAL** | **2026-05-29** | **Comprehensive RCA: 11 open items resolved (avg 4.74/5). 10/11 closed, 1 deferred (E3-F5). E1 fully verified (6/6), E3-F1 T6↔E3 theorem, E3-F2 𝕍_tri operator, E3-F4 D_enc adequacy. E1-O2 K5 re-anchoring — key architectural fix. Framework now in most complete state. See [Comprehensive RCA Summary](documents/research_documents/framework/plan/Comprehensive_RCA_Summary_2026-05-29.md).** |
 
 ---
 

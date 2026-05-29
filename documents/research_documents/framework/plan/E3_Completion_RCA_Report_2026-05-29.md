@@ -70,7 +70,7 @@ Decision: E3 Registration Lock formalization plan is complete at framework level
 |------|---------|
 | `documents/research_documents/framework/vvv_qmrf_framework_e03_registration_lock_postulate.md` | Canonical E3 completion: [A-E3] separation, P3 distinctness, T6/null boundary, Class D consequences |
 | `documents/research_documents/vvv-qmrf-ex/source_snapshot/framework/vvv_qmrf_framework_e03_registration_lock_postulate.md` | EX snapshot synced from canonical with compass-only note |
-| `documents/research_documents/meta_architecture/plan/E3_Progress_RCA_2026-05-29.md` | Completion update and scoring |
+| `documents/research_documents/framework/plan/E3_Progress_RCA_2026-05-29.md` | Completion update and scoring |
 | `documents/research_documents/framework/index.md` | E3 index role updated to reflect formal type signature and boundaries |
 | `documents/research_documents/vvv-qmrf-ex/source_snapshot/framework/index.md` | EX snapshot index updated |
 | `documents/research_documents/project_vvv_qmrf_class_c/05_ex_compass/source_snapshot/framework/index.md` | Class C EX compass index updated |
@@ -98,11 +98,11 @@ Decision: E3 Registration Lock formalization plan is complete at framework level
 
 These are not blockers for E3 completion:
 
-1. T6 <-> E3 exact boundary theorem.
-2. E10 Tripartite Validity formalization.
-3. E1 Self-Certification proof refinement.
-4. D_enc completeness theorem.
-5. Optional Class D apparatus-threshold model if a dedicated experiment is later defined.
+1. T6 ↔ E3 exact boundary theorem. **→ RESOLVED 2026-05-29 (RCA 4.67/5).** See E3 §3g for the formal T6↔E3 Boundary Theorem (E3=gatekeeper, T6=responder, 3-case structure with 4 boundary clauses).
+2. E10 Tripartite Validity formalization. **→ RESOLVED 2026-05-29 (RCA 4.77/5).** See E10 §3a-e: 𝕍_tri : Ctx × I_boundary → V_status with typed domain/codomain, 3 formalized Trairūpya conditions, 6-row K-axiom anchor table, and formally derivable failure routing.
+3. E1 Self-Certification proof refinement. **→ CLOSED 2026-05-29 (RCA 4.67/5).** Subsumed by E1 resolution chain — all 6 E1 open items resolved: E1-O1 sufficient direction (4.75), E1-O2 K5 re-anchoring (4.83), E1-O3 ≡̂ bridge (4.53), E1-O4 Proietti (4.77), E1-O5 Bong (4.77), E1-O6 Condition D (4.67). No independent content remains.
+4. D_enc completeness theorem. **→ CLOSED 2026-05-29 (RCA 4.83/5).** D_enc is a stipulative semantic definition, not a theorem — "completeness" is a category error for definitions. Adequacy verified via 3-tier check: well-posedness (trivial), structural consistency (5/5 properties verified), consumer adequacy (T_BB Step 2 COMPLETE, G9+G1 CLOSED). See K_Space_Axiomatization.md §D_enc Adequacy Verification row.
+5. Optional Class D apparatus-threshold model if a dedicated experiment is later defined. **→ CONFIRMED DEFERRED 2026-05-29 (RCA 4.83/5).** Requires empirical apparatus parameters (η, ε_dark, V_vis, d_min) from a specific experimental setup. Un-defer conditions: (1) K9-S12 proposal accepted by optical lab, (2) lab provides apparatus specifications, (3) calibration data available, (4) d_min determinable from hardware. Currently blocked — no lab collaboration established. Abstract functional form can be written but has no predictive content without real parameters.
 
 ---
 

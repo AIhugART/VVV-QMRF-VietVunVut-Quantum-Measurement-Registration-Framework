@@ -40,6 +40,9 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 4. **Read the extension postulates:** E8-E16, then E18  
    These extend the framework to special or boundary cases such as override, null event, validity, absence, relation, structured doubt, and context-conditioned locking of prior candidate registration windows in delayed-choice scenarios.
 
+5. **Consult supporting documents as needed:** [plan/](plan/) and [promote_postulate/](promote_postulate/)  
+   See §4.4 for the list. These provide governance records (E3 completion RCA), progress audits, promotion history (E18), and the standardized 7-gate promotion protocol for future postulate candidates.
+
 ---
 
 ## 3. Framework boundary / Ranh giới framework
@@ -93,6 +96,19 @@ The framework contribution is on the `K` side: the structure of registration-sta
 | E15 | [vvv_qmrf_framework_e15_intrinsic_relational_binding_postulate.md](vvv_qmrf_framework_e15_intrinsic_relational_binding_postulate.md) | Intrinsic Relational Binding Postulate / Tiên đề Liên kết Quan hệ Nội tại | Covers intrinsic relation or binding within the registration framework. |
 | E16 | [vvv_qmrf_framework_e16_pre_measurement_registration_indeterminacy_postulate.md](vvv_qmrf_framework_e16_pre_measurement_registration_indeterminacy_postulate.md) | Pre-Measurement Registration Indeterminacy Postulate / Tiên đề Bất định Ghi nhận Tiền đo | Covers structured doubt as a registration-state condition. |
 | E18 | [vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md](vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md) | Delayed-Choice Registration Boundary Postulate / Tiên đề Ranh giới Ghi nhận trong Delayed-Choice | Covers K-side context-conditioned locking of a prior candidate registration window as the operative valid window, with an optional sorting relation when post-selection or coincidence partitioning is needed. |
+
+### 4.4 Supporting documents / Tài liệu hỗ trợ
+
+Các file trong `plan/` và `promote_postulate/` không phải là postulates — chúng là tài liệu quản trị, kế hoạch, và lịch sử hỗ trợ cho việc phát triển và bảo trì framework.
+
+| File | Title / Tiêu đề | Role / Vai trò |
+|------|-----------------|----------------|
+| [plan/E3_Completion_RCA_Report_2026-05-29.md](plan/E3_Completion_RCA_Report_2026-05-29.md) | E3 Registration Lock — Completion RCA Report | Báo cáo hoàn tất RCA cho E3 ở cấp framework (4.80/5). Ghi nhận canonical E3 update, EX-snapshot sync, và 5 future work items không blocking. |
+| [plan/E3_Progress_RCA_2026-05-29.md](plan/E3_Progress_RCA_2026-05-29.md) | E3 Registration Lock — Progress RCA | Kiểm tra tiến độ Plan E3 v2.0: đối chiếu canonical vs plan vs paper vs EX-snapshot. Ghi nhận 6.5/8 steps integrated trước khi completion. |
+| [promote_postulate/e18_promotion_history_report.md](promote_postulate/e18_promotion_history_report.md) | E18 Promotion History Report | Lịch sử toàn diện quá trình nâng cấp E18: từ candidate (2026-05-21) → frozen postulate (2026-05-22) qua 7 gates G1–G7. Bao gồm 3 case validations, BE anchor decision, EX recoverability check, và G7 authorization. |
+| [promote_postulate/postulate_promotion_protocol.md](promote_postulate/postulate_promotion_protocol.md) | VVV-QMRF Postulate Promotion Protocol v1.0 | Quy trình chuẩn hóa 7-gate (G1–G7) để nâng cấp postulate mới từ candidate → frozen framework postulate. Được rút ra từ E18 path. Dùng làm template cho các lần promotion sau. |
+
+> **Lưu ý:** Các file trong `archives/` là phiên bản cũ của E1–E17 + formal model + index cũ — đã bị thay thế bởi các file active trong thư mục gốc `framework/`. Không dùng archives/ làm nguồn tham chiếu. Thư mục `drafts/` hiện trống (E18 đã được promote ra ngoài qua G7).
 
 ---
 
