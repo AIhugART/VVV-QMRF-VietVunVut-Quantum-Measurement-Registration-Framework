@@ -480,10 +480,108 @@ C-NONDIV proof:
 C-PARAM statement:
   [Count free parameters. State DOF = 4 - [param count] for D1 fit.]
 
-C-FALSI statement:
-  [State the falsification rule:
-   "K9 is falsified if [observable] = [value] within [uncertainty],
-   after controlling [confounders]."]
+C-FALSI statement (v1.0, pre-registered 2026-05-29, 3-round RCA 4.5/5):
+
+  === K9_E FALSIFICATION RULE (Level 0: Overlap-Only Class) ===
+
+  C-FALSI-L0-EXCLUSION (Parameter exclusion -> Class falsification):
+    K9_E overlap-only class (Eq. 2-3, manuscript paper_002) is FALSIFIED
+    if BOTH Condition A and Condition B hold in a dedicated EWF experiment
+    with tilted Superobserver measurement (K9-S12 or equivalent):
+
+  CONDITION A -- Null at near-optimal angle (theta = 31 deg):
+    |delta_AB_combined(theta=31deg)| < 3 * sigma_stat(theta=31deg, N)
+    where sigma_stat = sqrt(SUM_i (d_delta/d_AB_i)^2 * sigma^2(AB_i))
+    and sigma(AB_i) = sqrt((1 - AB_i^2) / N)
+    (Poisson error, propagation through delta_AB formula)
+
+  CONDITION B -- No theta-dependence (functional form null):
+    chi^2(delta_AB=0 model) / DOF < chi^2_critical(DOF, alpha=0.05)
+    where the model "delta_AB=0" is fit to measured delta_AB(theta_i)
+    across theta_i in {20deg, 31deg, 35deg, 45deg, 58deg} (>=5 angles),
+    DOF = number_of_angles (model has zero free parameters: delta=0 for all theta)
+
+  IF BOTH HOLD:
+    -> K9_E overlap-only class (Level 0) is FALSIFIED.
+    -> beta >= beta_min excluded at 95% CL (beta_min = achieved sensitivity).
+    -> Higher-order g(x) classes (Levels 1-3) survive.
+    -> f_perp framework (K9_E core) is NOT falsified by Level 0 rejection.
+
+  IF CONDITION A holds but CONDITION B fails:
+    -> Inconsistent pattern. Check systematics (esp. phi-scramble).
+    -> If systematics ruled out: overlap functional form wrong;
+       higher-order g(x) required. Level 0 falsified; framework survives.
+
+  IF CONDITION A fails (|delta_AB| >= 3sigma at 31deg):
+    -> Evidence for beta > 0. Proceed to fit beta and verify theta-dependence.
+    -> If beta > 0 AND delta_AB(pi/2) = 0: K9_E overlap-only class SURVIVES.
+
+  IF delta_AB(pi/2) != 0 (equatorial cancellation violated):
+    -> Proposition 1 (equatorial cancellation theorem) is violated.
+    -> Overlap-only class is FALSIFIED regardless of beta.
+    -> This would indicate a fundamental error in the theoretical framework.
+
+  === GATE CONDITIONS (must be satisfied before unblinding) ===
+
+  C-FALSI-GATE-LF:
+    Gen LF 1 violation MUST be confirmed at >= 5sigma.
+    If Gen LF 1 < 5sigma: no EWF setup -> experiment INCONCLUSIVE.
+
+  C-FALSI-GATE-SENSITIVITY:
+    Achieved beta_min MUST be <= 0.10 (Phase 1) or <= 0.05 (Phase 2).
+    If beta_min > 2x target: experiment INCONCLUSIVE regardless of delta_AB.
+    (Prevents "low-sensitivity null" masquerading as falsification.)
+
+  C-FALSI-GATE-SYSTEMATICS:
+    ALL six systematic error sources (S7 error budget) MUST be
+    individually < 1.0 * Poisson sigma at the measured N.
+    phi-scramble control MUST show: B ~ 0, C ~ 0 (no birefringence).
+
+  C-FALSI-GATE-BLINDING:
+    Analysis pipeline (theta unmasking, delta_AB computation, chi^2 test)
+    MUST be frozen and committed to Git before theta-sequence is unmasked.
+    Pre-registration timestamp: git commit hash of analysis scripts.
+
+  === CONFOUNDERS CONTROLLED ===
+
+  1. QWP retardance tolerance (< 1x Poisson)
+  2. Birefringence (phi-scramble: B,C ~ 0 at >= 5sigma)
+  3. Polarization-dependent loss (power monitoring per channel)
+  4. Calibration offset (theta-verification protocol S4.4)
+  5. Detector asymmetry (channel efficiency balancing)
+  6. Accidentals (timing windows + dark-count subtraction)
+  7. Fair-sampling assumption (Phase 1: stated; Phase 2: closed via eta >= 0.91)
+  8. Analysis confirmation bias (blinding protocol)
+
+  === IMPORTANT DISTINCTIONS ===
+
+  "Falsified" != "beta = 0 proven":
+    C-FALSI excludes beta >= beta_min; it does NOT prove beta = 0.
+    beta < beta_min is always possible (and unfalsifiable below sensitivity).
+
+  "Inconclusive" != "Confirmed" != "Falsified":
+    Inconclusive: achieved beta_min > target (experiment not sensitive enough)
+    Confirmed: |delta_AB| >= 3sigma at theta != pi/2 AND delta_AB(pi/2) = 0
+    Falsified: BOTH Condition A AND Condition B hold
+
+  Level 0 falsification != K9_E falsification:
+    Level 0 is the SIMPLEST representative of the overlap-dependent class.
+    Higher-order g(x) and alternative f_perp forms survive Level 0 rejection.
+    Full K9_E falsification requires multiple independent null protocols.
+
+  === PRE-REGISTRATION ===
+
+  This rule was pre-registered on 2026-05-29, BEFORE any K9-S12
+  experimental data exists. It was derived via 3-round RCA (4.5/5)
+  referencing: K1-K8 axiomatization, K9_E v31 (Class C qualified),
+  K9-S12 manuscript v94, P10a-C4 pre-registered fitting criterion
+  (Delta_chi^2 > 3.84), and VVV-QMRF-EX compass.
+
+  C-FALSI-L1/L2/L3 (higher-order classes): TBD -- requires dedicated
+  predictions for each level. See [Falsification Hierarchy](../04_governance/Falsification_Hierarchy.md)
+  for the complete 4-level deformation hierarchy (Level 0-3 + full K9_E),
+  including preliminary C-FALSI-L1/L2/L3 rules and falsification-vs-confirmation
+  asymmetry analysis. Pre-registered 2026-05-29.
 
 SECTION 4: DISTINGUISHABILITY STATEMENT
 

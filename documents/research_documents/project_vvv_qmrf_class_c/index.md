@@ -47,6 +47,10 @@ VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H)
 
 **Remaining empirical path:** Confirmation or rejection requires a dedicated experiment with dedicated noise characterization (prediction: delta_M3 = -0.223 at beta=0.3, illustrative, T4-H now THEOREM — conditional only on K9_E postulate P9). **K9-S12 Modified Bong protocol paper submitted to arXiv (2026-05-27).** Track 3 (Experimental Path) now ACTIVE — awaiting optical lab collaboration. See §4 for full 3-Round RCA.
 
+> **→ K→p(o) Bridge Law — Single Entry Point:** [K_to_p_bridge_law.md](K_to_p_bridge_law.md) —
+> the formula, predictions, falsification rule, experimental protocol, and canonical source map
+> in one page. Read this FIRST if you want to understand the core output of Class C.
+
 See [RCA Final Verdict](02_derivation_chain/RCA_Final_Verdict_Class_C_Genuine.md) for the v29 upgrade RCA (aggregate 4.50/5) and [P10-NOISE Methodology Decision](04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md) for the v30 downgrade RCA (aggregate 4.77/5).
 
 ---

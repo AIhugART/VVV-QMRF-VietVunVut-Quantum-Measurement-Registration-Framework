@@ -372,6 +372,44 @@ This history is derived from these active project files:
 - Post-v30 Execution Plan updated to v1.1: Track 1 & 2 COMPLETED, Track 3 (Experimental) ACTIVE.
 - Project version advanced to v35.
 
+### 2026-05-29 — K9_E Falsification Architecture: C-FALSI + Hierarchy + Pre-Registration Protocol + Bridge Law Index
+
+**Trigger:** RCA analysis of `tuong_lai.bak` (2026-05-16 RCA conversation record) which asked: "Does the repo have enough information to revise or modify Standard Quantum Mechanics?" and listed 7 requirements for a "K-rho Coupling Physical Prediction Model."
+
+**Method:** 3-round RCA x 5-Why x scoring threshold >=4/5 for all decisions. VVV-QMRF-EX as compass.
+
+**P0 -- C-FALSI v1.0 (RCA 4.5/5):**
+Filled the empty C-FALSI template in K9 Analysis Plan with a complete pre-registered falsification rule for K9_E Level 0 (overlap-only class):
+- Condition A: |delta_AB(31 deg)| < 3sigma -> null at near-optimal angle
+- Condition B: chi^2(delta=0) across theta-sweep < critical -> no theta-dependence
+- 4 decision branches + 4 GATE conditions + 8 confounders controlled
+- File: `03_k9_sprints/VVV_QMRF_K9_Analysis_Plan.md` (edited, SC-FALSI)
+
+**P1 vs P2 ordering (RCA 4.8/5):** P1 first (structural prerequisite), P2 immediately after.
+
+**P1 -- Falsification Hierarchy (RCA 4.6/5):**
+4-level deformation hierarchy (Overlap-only -> Density-matrix -> Multi-partite -> Non-geometric). Each level: math definition, observable, falsification condition, survival conditions, K-axiom traceability. Full K9_E falsification = all levels excluded (decadal program).
+- File: `04_governance/Falsification_Hierarchy.md` (new)
+- Updated C-FALSI dangling reference -> explicit path
+
+**P2 -- K9-S12 Pre-Registration Protocol (RCA 4.5/5):**
+Comprehensive operational protocol: 4-person blinding, Fixed-N stopping (91K/setting), 6 automated data exclusion criteria, frozen 6-script analysis pipeline with Monte Carlo verification, pre-registered statistical tests, error budget verification, publication policy (ANY outcome within 6 months), Zenodo DOI mechanism, 35-item audit trail checklist, 3 contingencies.
+- File: `04_governance/K9S12_PreRegistration_Protocol.md` (new)
+
+**GAP-C -- Bridge Law Index (RCA 4.8/5):**
+Single-entry-point document: K->p(o) formula, component origin table, 6 boundary conditions, prediction table, canonical source map (12 rows), tuong_lai.bak 7-item checklist. Resolves organizational gap (122 files -> 1 entry point).
+- File: `K_to_p_bridge_law.md` (new)
+- Updated: `index.md` (added bridge law link)
+
+**tuong_lai.bak:** Added SUPERSEDED annotation documenting resolved/unresolved items. Retained as historical artifact.
+
+**3-GAP analysis:**
+- GAP-A (empirical): UNRESOLVED -- needs K9-S12 experiment
+- GAP-B (formula): RESOLVED -- additive->multiplicative refinement
+- GAP-C (organization): RESOLVED -- K_to_p_bridge_law.md
+
+**Files created:** 4 new. **Files modified:** 2 edited. **Aggregate RCA:** 4.6/5.
+
 ### 2026-05-29 — WP v3.0 Confirmed Published on Zenodo
 
 - **DOI:** [10.5281/zenodo.20431310](https://zenodo.org/records/20431310) — PUBLISHED 2026-05-28
