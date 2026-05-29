@@ -205,7 +205,7 @@ Discreteness (S2-Δ lemma):
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E6 (Registering-System-as-Process) + S2-Δ lemma |
+| **Source** | Level 2: E6 (Registering-System-as-Process) + S2-Δ lemma — ↔ E6 §3d-anchor (2026-05-29): E6⇒order part |
 | **BE lineage** | Kṣaṇabhaṅgavāda — momentariness: registration time is discrete; no continuous registration identity between events |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E6, S2-Δ). No Level 4 dependency. |
@@ -245,7 +245,7 @@ Reflexivity (E1 core property):
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E1 (Self-Certifying Registration) |
+| **Source** | Level 2: E1 (Self-Certifying Registration) — ↔ E1 §3e-anchor (2026-05-29) |
 | **BE lineage** | Svasaṃvedana — self-awareness/self-certifying cognition: a cognition certifies its own occurrence without requiring a second-order cognition |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E1). No Level 4 dependency. |
@@ -290,7 +290,7 @@ Provision: V(k) = 1 is provisional until the registration process closes
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E7 Axiom 1 (Default validity) |
+| **Source** | Level 2: E7 Axiom 1 (Default validity) — ↔ E7 §3f-anchor (2026-05-29) |
 | **BE lineage** | Svataḥ prāmāṇya — intrinsic validity: a cognition is valid by default in virtue of its occurrence (arthakriyā — causal efficacy) |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E7 Axiom 1). No Level 4 dependency. |
@@ -381,7 +381,7 @@ K_R disambiguation (cross-space context):
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E7 Axioms 2-3 (Invalidation + Asymmetry) |
+| **Source** | Level 2: E7 Axioms 2-3 (Invalidation + Asymmetry) — ↔ E7 §3f-anchor (2026-05-29) |
 | **BE lineage** | Parataḥ prāmāṇya — invalidity is detected extrinsically. Bādhaka pramāṇa — a contradicting cognition (bādhaka) retroactively voids the earlier cognition. |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E7 Axioms 2-3). Uses `⊥` and "cross-registration authority" as **primitive predicates** whose full formalization is in Level 4 (paper v2.0 §4.4). K5 asserts the structural rule; the precise conditions for `k2 ⊥ k1` and "valid cross-registration authority" are defined in the bridge theorems (T1-T3). **2nd-order Layer 2 dependencies — Dep-A:** C_K existence precondition requires Level 4 predicate `requires_K_joint = 1` (Level 4 §4.3); K5 does not fire when C_K is absent (also reflected in Layer 1 Summary K5 row Role 1, via F4). **Dep-B (F7a non-circularity guard):** K5 condition (i) is defined natively by K2's `<_R` ordering. In cross-space application, K5 can only be evaluated after a candidate `K_joint` has already been constructed. T1 constructs `<_joint>` from K2 native orders + Level 4 cross-structure temporal relations + K8 field preservation; K5 does not define or prove `<_joint>`. Therefore Dep-B is an application-order dependency only: K5 uses `<_joint>` inside `K_joint` after T1 supplies the candidate joint order, so no circular dependency is introduced. |
@@ -505,7 +505,7 @@ Non-transitivity proof sketch (counterexample):
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E7 Axiom 2 + paper v2.0 §4.4 cross-registration authority section |
+| **Source** | Level 2: E7 Axiom 2 + paper v2.0 §4.4 cross-registration authority section — ↔ E7 §3f-anchor (2026-05-29) |
 | **BE lineage** | Bādhaka pramāṇa — a contradicting cognition must be a valid cognition (pramāṇa) itself to serve as bādhaka. An invalid cognition cannot void another. |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E7 Axiom 2). Uses `C_K` and `D_joint` from Level 4 with three Auth roles: (1) existential precondition — K6 operates only when C_K exists (requires_K_joint = 1); (2) C_K-sphere membership parameter (condition a); (3) D_joint scope parameter (condition c). **Dep-A (2nd-order Layer 2 dependency):** Auth(k2→k1, C_K) requires C_K to exist (requires_K_joint = 1, Level 4 §4.3); K6 does not operate when C_K is absent — analog K5 Dep-A. **Conditional semantic dependency (I-03 pattern):** condition (c) `k1 ∈ scope(D_joint)` means Level 4 changes to D_joint scope alter which k1 have Auth = 1, without altering K6 text (syntactic freeze holds); analogous to K5 ⊥_K boundary clauses (I-03/F3). |
@@ -555,7 +555,7 @@ Pre-closure:
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E7 (V_prov vs V_final distinction, paper v2.0 §2.2) |
+| **Source** | Level 2: E7 (V_prov vs V_final distinction, paper v2.0 §2.2) — ↔ E7 §3f-anchor (2026-05-29) |
 | **BE lineage** | Niścaya (ascertainment/determination) — a cognition becomes determinate when the cognitive process reaches closure; before that, it is provisional (saṃśaya — doubt is possible) |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E7 V_prov/V_final distinction). Uses `requires_K_joint` and `D_joint` from Level 4 as closure condition inputs. **Dep-B (2nd-order Layer 2 dependency):** K7 closure condition `pending(K_R, K_X) = ∅` uses the concept of "resolved demand" — a requires_K_joint demand is resolved when a K_joint registration event satisfying T2 AdmJoint conditions has occurred; without T2, "resolved" is an undefined primitive in K7; T2 is a silent Layer 2 dependency for closure semantics — analog K5 Dep-B (T1 `<_joint` for K5 condition (i)). **Conditional semantic dependency (I-03 pattern):** Level 4 extensional scope of `requires_K_joint` (which event types require joint registration) directly determines t_close timing — expanding the scope delays closure, narrowing it advances closure; K7 text is frozen but t_close (and therefore when V_prov → V_final and when K5 irreversibility becomes absolute) depends on Level 4 content; analogous to K5 ⊥_K boundary clauses (I-03/F3) and K6 D_joint scope (I-03/F6a). |

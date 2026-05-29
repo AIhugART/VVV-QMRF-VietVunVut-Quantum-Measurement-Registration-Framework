@@ -122,6 +122,39 @@ Với hai hệ ghi nhận R1 và R2:
 
 Ranh giới trạng thái: `σ_R(M)` là mở rộng Class D của formalism E1. Predicate ghi nhận chung `requires_K_joint(R1, R2, M)` vẫn là Class C cho tới khi điều kiện hợp lệ, điều kiện thất bại, và quan hệ với E6/E7 được đặc tả trong một phân tích riêng về nhiều hệ ghi nhận. `J(R1, R2, M)` chỉ nên dùng như cách viết tắt trong diễn dịch hình thức.
 
+### 3e. K1-K8 Source-Chain Anchor (RCA 2026-05-29)
+
+> Closes the BE-SOT → E1 → K-axiom chain bidirectionally. `K_Space_Axiomatization.md` viện dẫn "E1 (Self-Certifying Registration)" cho K3; mục này xác nhận chiều ngược lại từ phía E1.
+
+**K1-K8 anchor table:**
+
+| E1 content | K-axiom target | Mapping note |
+|---|---|---|
+| §3a σ(M): "M has occurred, determined by M itself, not by M′" — intrinsic self-certification | **K3** Self-Certification | K3 formalizes E1 core: σ_R(M)=1 iff M has occurred as K-side event of R, determined intrinsically within K_R. K3 "Reflexivity (E1 core property)": certification of M is part of M's own K-side instantiation — no second-order meta-registration required. |
+| §3d/§11.2 σ_R(M) extension: observer-indexed, independent across R,R' | **K3** observer-indexed independence clause | K3 "Observer-indexed independence: σ_R(M) independent of σ_{R′}(M′) for R′≠R" directly formalizes the E1 §3d/§11.2 extension. |
+
+*R̂_svasa (Category 05 formalism, §3b) ↔ K3 structural equivalence is Class C conjecture (E1 §3c open item "σ(M) ≡ R̂_svasa unproven") — not a separate anchor target until proven.*
+
+**AHP trace (SOT links):**
+
+| SOT | Anchor | Status |
+|---|---|---|
+| SOT-1 (BE Full) | N_BE_00011 Svasaṃvedana (self-awareness, system_be_full.md L43) | E1 §5b confirmed |
+| SOT-2 (K-Space canonical) | K3 Source row + §3e reverse-anchor note (2026-05-29) | `meta_architecture/K_Space_Axiomatization.md` |
+| SOT-3 (K-Space Class C) | PEER-SYNC mirror of SOT-2 | `project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md` |
+| SOT-4 (CLAUDE.md) | E1 listed as Level 2 E-postulate source for K3 | CLAUDE.md identity §Layer 1 |
+
+Trace score: 4/4 K-side SOTs verified. Anchor strength: **STRONG**.
+
+**RCA verdict (3-round × 5-Why × ≥4/5):**
+
+| Round | Score | Finding |
+|---|---|---|
+| R1 (Define/Trace) | 4.5/5 | Root cause: E1 §3a σ(M) lacked explicit "→ K3" anchor; K3 references E1 one-way |
+| R2 (Isolate) | 4.5/5 | Clean 1:1: σ(M) core → K3 Reflexivity; σ_R(M) extension → K3 observer-indexed independence |
+| R3 (Fix+Verify) | 4.8/5 | 5 criteria: SOT-correct ✓, K-text-correct ✓, no loop ✓, no overclaim ✓ (R̂_svasa bounded), boundary clear ✓ |
+| **Aggregate** | **4.6/5 PASS** | ≥4/5 threshold met. Anchor confirmed. |
+
 ---
 
 ## 4. Mathematical Notation / Ký hiệu Toán học

@@ -362,6 +362,17 @@ This history is derived from these active project files:
 - Post-v30 Execution Plan updated to v1.1: Track 1 & 2 COMPLETED, Track 3 (Experimental) ACTIVE.
 - Project version advanced to v35.
 
+### 2026-05-29 — E7/E1/E6 K-axiom Source-Chain Anchoring (Bidirectional Closure)
+
+- **Task:** Close the BE-SOT → E-postulate → K-axiom source chain bidirectionally for E7/E1/E6 (sources of K4–K7/K3/K2). Prior state: one-directional (K→E only); E-postulate files had no reverse anchor.
+- **Method:** 3-round RCA × 5-Why × ≥4/5 threshold per postulate. EX as compass only.
+- **E7 §3f** (RCA 4.5/5): E7-Ax1/2/3 labels formalized; anchor table K4/K5/K6/K7. E7-Ax1→K4 (svataḥ), E7-Ax2→K5+K6 (bādhaka+authority), E7-Ax3→K5+K7 (irreversibility/V_prov→V_final).
+- **E1 §3e** (RCA 4.6/5): σ(M)/σ_R(M) → K3 Reflexivity + observer-indexed independence. R̂_svasa bounded as Class C conjecture.
+- **E6 §3d** (RCA 4.6/5): E6⇒K2 strict total order (Anātmavāda/N_BE_00066). **RCA Round 2:** K2 discreteness (S2-Δ) derives from Kṣaṇabhaṅgavāda (N_BE_00029) — separate lineage, boundary explicit.
+- **K_Space_Axiomatization.md** (canonical + Class C PEER-SYNC): reverse-anchor notes added to K2/K3/K4/K5/K6/K7 Source rows. sync_check PASS.
+- **AHP 03_sot_traceability.md:** E-postulate source-chain closure note added after B.1.
+- Result: K2/K3/K4/K5/K6/K7 all have fully bidirectional traceable source chains. AHP trace score maintained ≥4/6 (STRONG).
+
 ### 2026-05-28 — Phase 3A Progress (K9-S12 Optical Experiment Proposal)
 
 - **Track 3 (Experimental Path) NOW ACTIVE.**

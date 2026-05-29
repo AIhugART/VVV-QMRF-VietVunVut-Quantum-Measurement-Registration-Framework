@@ -87,6 +87,45 @@ Properties:
 | R(t) = ⊕ r_k | Category 07 | Class D |
 | Equivalence? | Unproven | Class C |
 
+### 3d. K1-K8 Source-Chain Anchor (RCA 2026-05-29)
+
+> Closes the BE-SOT → E6 → K-axiom chain bidirectionally. `K_Space_Axiomatization.md` viện dẫn "E6 (Registering-System-as-Process) + S2-Δ lemma" cho K2; mục này xác nhận đóng góp của E6 (phần total-order).
+
+**K1-K8 anchor table:**
+
+| E6 content | K-axiom target | Mapping note |
+|---|---|---|
+| §3a R = {M₁,...,Mₙ}, Mᵢ→Mᵢ₊₁ (causal link), t(M₁)<...<t(Mₙ) | **K2** Temporal Order (total-order part) | K2 Consistency row confirms: "E6's definition of R as an ordered sequence {M_1,...,M_n} with t(M_1)<...<t(M_n) confirms strict totality." E6 is the architectural source for K2's strict total order (chain) within K_R. |
+
+**Boundary — K2 discreteness (S2-Δ) is NOT anchored by E6:**
+
+| K2 component | Source | BE lineage |
+|---|---|---|
+| Strict total order (<_R) | **E6** (this anchor) | Anātmavāda (N_BE_00066) — causal sequence = santāna; process without persistent identity |
+| Discreteness (S2-Δ lemma) | S2-Δ + Kṣaṇabhaṅgavāda | N_BE_00029 (Kṣaṇikavāda — Momentariness) — distinct from Anātmavāda |
+
+The S2-Δ lemma ("no K-side registration-state identity between consecutive events") derives from Kṣaṇabhaṅgavāda/momentariness — related to E6 (E6 §5b: "Related: N_BE_00029") but architecturally separate. K_Space K2 BE lineage states "Kṣaṇabhaṅgavāda", not Anātmavāda. E6 contributes the ordering/sequence structure; momentariness principle supplies discreteness. *E6 → K2 scope: order (strict totality) only.*
+
+**AHP trace (SOT links):**
+
+| SOT | Anchor | Status |
+|---|---|---|
+| SOT-1 (BE Full) | N_BE_00066 Anātmavāda (system_be_full.md L98) — order part; N_BE_00029 Kṣaṇikavāda — discreteness (separate lineage) | E6 §5b confirmed |
+| SOT-2 (K-Space canonical) | K2 Source row + §3d reverse-anchor note (2026-05-29); K2 Consistency row already cites E6 explicitly | `meta_architecture/K_Space_Axiomatization.md` |
+| SOT-3 (K-Space Class C) | PEER-SYNC mirror of SOT-2 | `project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md` |
+| SOT-4 (CLAUDE.md) | E6 listed as Level 2 E-postulate source for K2 | CLAUDE.md identity §Layer 1 |
+
+Trace score: 4/4 K-side SOTs verified. Anchor strength: **STRONG**.
+
+**RCA verdict (3-round × 5-Why × ≥4/5):**
+
+| Round | Score | Finding |
+|---|---|---|
+| R1 (Define/Trace) | 4.5/5 | Root cause: K2 has 2 sources; E6 document did not anchor its specific contribution |
+| R2 (Isolate) | 4.5/5 | K2 Consistency already confirms E6→strict totality; discreteness boundary isolated to S2-Δ/Kṣaṇabhaṅgavāda (N_BE_00029 ≠ N_BE_00066) |
+| R3 (Fix+Verify) | 4.7/5 | 5 criteria: SOT-correct ✓, K-text-correct ✓, no loop ✓, no overclaim ✓, boundary table explicit ✓ |
+| **Aggregate** | **4.6/5 PASS** | ≥4/5 threshold met. RCA Round 2 decision confirmed: E6⇒order; S2-Δ/Kṣaṇabhaṅgavāda⇒discreteness. |
+
 ---
 
 ## 4. Mathematical Notation / Ký hiệu Toán học

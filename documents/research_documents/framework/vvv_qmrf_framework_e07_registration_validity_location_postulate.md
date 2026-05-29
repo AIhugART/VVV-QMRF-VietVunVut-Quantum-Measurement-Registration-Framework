@@ -122,6 +122,52 @@ E7 (Validity Location)
       → Category 01 (Retroactive Override) executes invalidation
 ```
 
+### 3f. K1-K8 Source-Chain Anchor (RCA 2026-05-29)
+
+> Closes the BE-SOT → E7 → K-axiom chain bidirectionally. `K_Space_Axiomatization.md` viện dẫn "E7 Axiom 1 / Axioms 2-3 / E7 Axiom 2 / E7 (V_prov/V_final)" cho K4/K5/K6/K7; mục này xác nhận chiều ngược lại từ phía E7.
+
+**Formal axiom labels** (three implicit rules in §3a–§3b, now named for K-Space traceability):
+
+| Label | E7 content | K-Space "Source" reference |
+|---|---|---|
+| **E7-Ax1** | §3a "Default: M is valid (svataḥ)" — intrinsic default validity | K4 Source: "E7 Axiom 1 (Default validity)" |
+| **E7-Ax2** | §3a "Invalidity detection: ∃M' contradicts M → bādhaka" + §3b M'⊥M conditions + authority | K5 Source: "E7 Axioms 2-3 (Invalidation + Asymmetry)"; K6 Source: "E7 Axiom 2 + §4.4" |
+| **E7-Ax3** | §3a "Asymmetry: validity ≠ M', invalidity = M'" — irreversibility / V_prov vs V_final | K5 Source: "E7 Axioms 2-3"; K7 Source: "E7 (V_prov vs V_final)" |
+
+*Note: "E7 Axiom 3" is also referenced internally in K5 formal block ("Asymmetry (E7 Axiom 3, post-closure)") — this label is now anchored to E7-Ax3 above.*
+
+**K1-K8 anchor table:**
+
+| E7 axiom | K-axiom target | Mapping note |
+|---|---|---|
+| E7-Ax1 (svataḥ prāmāṇya — default validity) | **K4** Default Validity | K4 operationalizes E7-Ax1: cert=1 ∧ ¬isNull(k) → V(k)=1 upon instantiation. BE lineage: svataḥ prāmāṇya (intrinsic validity via arthakriyā — causal efficacy). |
+| E7-Ax2 (parataḥ + bādhaka — invalidation) | **K5** Invalidation (conditions i-iii) | K5 conditions (i) temporal order, (ii) ⊥ contradiction, (iii) authority = structural form of E7-Ax2 "∃M' contradicts M with valid authority → V(M)→0". |
+| E7-Ax2 (bādhaka authority sub-condition) | **K6** Cross-Registration Authority | K6 formalizes E7-Ax2 authority sub-condition: Auth(k2→k1, C_K)=1 iff same C_K-sphere + V(k2)=1 + k1 ∈ scope(D_joint). BE lineage: bādhaka must itself be a valid pramāṇa. |
+| E7-Ax3 (asymmetry / irreversibility) | **K5** post-closure irreversibility | K5 "V_final(k)→0 is absolute" (post-closure clause) = E7-Ax3 irreversibility. Also cross-referenced as "E7 Axiom 3" in K5 formal block. |
+| E7-Ax3 (V_prov vs V_final) | **K7** Registration Process Closure | K7 V_prov→V_final transition formalizes E7-Ax3 asymmetry. BE lineage: Niścaya — ascertainment/determination at closure. |
+
+*K5_prospective (Layer 2 bridge) inherits E7-Ax2 structural conditions (i)-(iii) via K5 — not a separate E7 anchor target; mediated through K5.*
+
+**AHP trace (SOT links):**
+
+| SOT | Anchor | Status |
+|---|---|---|
+| SOT-1 (BE Full) | svataḥ/parataḥ prāmāṇya — T6.03 (no dedicated node, L792); bādhaka — N_BE_00006; niścaya — K7 BE lineage | E7 §5b + K_Space K7 property |
+| SOT-2 (K-Space canonical) | K4/K5/K6/K7 Source rows + §3f reverse-anchor note (2026-05-29) | `meta_architecture/K_Space_Axiomatization.md` |
+| SOT-3 (K-Space Class C) | PEER-SYNC mirror of SOT-2 | `project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md` |
+| SOT-4 (CLAUDE.md) | E7 listed as Level 2 E-postulate source for K4-K7 | CLAUDE.md identity §Layer 1 |
+
+Trace score: 4/4 K-side SOTs verified. Anchor strength: **STRONG**.
+
+**RCA verdict (3-round × 5-Why × ≥4/5):**
+
+| Round | Score | Finding |
+|---|---|---|
+| R1 (Define/Trace) | 4.5/5 | Root cause: E7 prose lacked explicit Axiom 1/2/3 labels → K_Space reference floating |
+| R2 (Isolate) | 4.2/5 | Stress points: K6 ← E7-Ax2 authority sub-condition (isolated); K7 ← E7-Ax3 V_prov/V_final (isolated) |
+| R3 (Fix+Verify) | 4.8/5 | 5 criteria: SOT-correct ✓, K-text-correct ✓, no loop ✓, no overclaim ✓, boundary clear ✓ |
+| **Aggregate** | **4.5/5 PASS** | ≥4/5 threshold met. Anchor confirmed. |
+
 ---
 
 ## 4. Mathematical Notation / Ký hiệu Toán học

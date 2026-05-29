@@ -6,6 +6,48 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v36 (2026-05-29) — E7/E1/E6 K-axiom source-chain anchoring (bidirectional closure)
+
+### Added
+- `framework/vvv_qmrf_framework_e07_registration_validity_location_postulate.md` §3f (NEW):
+  K1-K8 Source-Chain Anchor for E7. Formalizes E7-Ax1/2/3 labels. Anchor table:
+  E7-Ax1→K4, E7-Ax2→K5+K6, E7-Ax3→K5+K7. AHP trace 4/4 SOTs. RCA 4.5/5.
+- `framework/vvv_qmrf_framework_e01_self_certifying_registration_postulate.md` §3e (NEW):
+  K1-K8 Source-Chain Anchor for E1. σ(M)/σ_R(M) → K3 Reflexivity + observer-indexed
+  independence. R̂_svasa bounded as Class C conjecture. RCA 4.6/5.
+- `framework/vvv_qmrf_framework_e06_registering_system_as_process_postulate.md` §3d (NEW):
+  K1-K8 Source-Chain Anchor for E6. E6⇒K2 strict total order only. Boundary table:
+  discreteness (S2-Δ) ← Kṣaṇabhaṅgavāda/N_BE_00029 (separate from Anātmavāda/E6).
+  RCA 4.6/5. RCA Round 2 decision: E6⇒order; S2-Δ⇒discreteness.
+
+### Changed
+- `meta_architecture/K_Space_Axiomatization.md` (canonical): K2/K3/K4/K5/K6/K7 Source
+  rows extended with reverse-anchor cross-references (↔ E6/E1/E7 §anchor, 2026-05-29).
+  Syntactic freeze intact: axiom text unchanged; Source metadata row extended only.
+- `project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md` (Class C):
+  PEER-SYNC mirror of canonical changes above.
+- `anti_hallucinations/03_sot_traceability.md`: E-postulate source-chain anchor closure
+  note added after B.1 table.
+- `history.md`: 2026-05-29 entry added.
+
+### RCA basis
+- E7 §3f: 3-round RCA 4.5/5 (R1:4.5 / R2:4.2 / R3:4.8). Root: E7 prose lacked Axiom
+  1/2/3 labels → K_Space reference floating. Fix: formalize labels + anchor table.
+- E1 §3e: 3-round RCA 4.6/5 (R1:4.5 / R2:4.5 / R3:4.8). Clean 1:1 σ(M)→K3.
+- E6 §3d: 3-round RCA 4.6/5 (R1:4.5 / R2:4.5 / R3:4.7). Key decision: E6⇒order;
+  S2-Δ/Kṣaṇabhaṅgavāda⇒discreteness (N_BE_00029 ≠ N_BE_00066).
+
+### Verification
+- PEER-SYNC: scripts/sync_check_k_space.sh PASS (delta 225 lines — pre-existing).
+- AHP: K2/K3/K4/K5/K6/K7 STRONG (≥4/6 SOTs). No ORPHANED components.
+- No claim class changes. No Level 4 structural changes. No K1-K8 axiom text changes.
+
+### Risks resolved
+- AHP orphan risk for K2/K3/K4–K7 source chain: **RESOLVED**.
+- Floating "E7 Axiom 1/2/3" reference in K_Space: **RESOLVED** (labels in E7 §3f).
+
+---
+
 ## v35 (2026-05-28) — T4-H THEOREM (4/4): Steps 3-4 verified; 3-OBS Class C upgrade
 
 ### Added

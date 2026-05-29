@@ -54,6 +54,11 @@ Bang ma tran truy vet — moi dong la 1 component, moi cot la 1 SOT. Dau `+` = c
 | K7 — Closure | N_BE_00007 (niscaya) | L441-500 | L441-500 | + | - | - | 4/6 | STRONG |
 | K8 — Cross-Space Preservation | ED_BE_00039 (anugama) | L501-550 | L501-550 | + | - | - | 4/6 | STRONG |
 
+> **E-Postulate Source-Chain Anchors (2026-05-29):** K2/K3/K4/K5/K6/K7 Level-2 source chain now closed bidirectionally. Framework E-postulate files carry explicit K1-K8 anchor sections (RCA ≥4/5 each):
+> - K2 (order part) ↔ **E6 §3d** — E6⇒strict totality; S2-Δ/Kṣaṇabhaṅgavāda⇒discreteness (boundary explicit)
+> - K3 ↔ **E1 §3e** — σ(M)/σ_R(M) → K3 Reflexivity + observer-indexed independence
+> - K4/K5/K6/K7 ↔ **E7 §3f** — E7-Ax1→K4; E7-Ax2→K5+K6; E7-Ax3→K5+K7 (axiom labels formalized)
+
 ### B.2 Bridge Theorems (Layer 2 — UPDATABLE)
 
 | Component | SOT-1 (BE) | SOT-2 (K-Can) | SOT-3 (K-ClC) | SOT-4 (CLAUDE) | SOT-5 (Std QM) | SOT-6 (Proietti) | Trace Score | Anchor Strength |
