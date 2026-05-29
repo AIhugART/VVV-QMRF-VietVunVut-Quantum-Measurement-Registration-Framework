@@ -196,6 +196,7 @@ trong đó / where:
 | E3 Registration Lock completion RCA / RCA hoàn tất E3 Registration Lock | [E3_Completion_RCA_Report_2026-05-29.md](documents/research_documents/framework/plan/E3_Completion_RCA_Report_2026-05-29.md) |
 | E3 canonical framework postulate / Tiên đề E3 canonical | [vvv_qmrf_framework_e03_registration_lock_postulate.md](documents/research_documents/framework/vvv_qmrf_framework_e03_registration_lock_postulate.md) |
 | E1–E18 postulates (frozen extension) / Tiên đề E1–E18 (mở rộng đã đóng băng) | [framework/](documents/research_documents/framework/) |
+| Comprehensive RCA Summary (11 open items) / Tổng kết RCA toàn diện (11 mục) | [Comprehensive_RCA_Summary_2026-05-29.md](documents/research_documents/framework/plan/Comprehensive_RCA_Summary_2026-05-29.md) |
 | Paper draft (K9-S12) / Bản nháp bài báo | [draft_v2.md](documents/research_documents/project_vvv_qmrf_class_c/04_governance/paper/draft_v2.md) |
 
 ---
@@ -251,6 +252,7 @@ buddhist-epistemology-quantum-measurement/
 | D_enc | Transition-Encoding Registration Act — canonical Layer 2 | **PROMOTED (v35, RCA 4.77/5)** | ✅ DONE |
 | E3-RCA | E3 Registration Lock framework-level completion | **COMPLETE (2026-05-29, RCA 4.80/5)** — K-side `V-hat : I_boundary × D → K_R ∪ {k_null}`, P3 distinctness, T6 boundary, [A-E3] separation. Report at [framework/plan/E3_Completion_RCA_Report_2026-05-29.md](documents/research_documents/framework/plan/E3_Completion_RCA_Report_2026-05-29.md) | ✅ DONE |
 | E18-PROMOTE | E18 Delayed-Choice Registration Boundary — framework postulate | **PROMOTED (2026-05-22, G7)** — Frozen extension postulate at [framework/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md](documents/research_documents/framework/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md). Covers K-side context-conditioned locking of prior candidate registration windows. | ✅ DONE |
+| RCA-11 | Comprehensive RCA — 11 open items resolution | **COMPLETE (2026-05-29, avg 4.74/5)** — 10/11 resolved, 1 deferred (E3-F5). E1 fully verified (6/6), E3-F1 T6↔E3 theorem, E3-F2 𝕍_tri operator, E3-F4 D_enc adequacy. Report at [Comprehensive RCA Summary](documents/research_documents/framework/plan/Comprehensive_RCA_Summary_2026-05-29.md). | ✅ DONE |
 | arXiv-002 | arXiv ID confirmation for paper_002 (K9-S12) | Pending confirmation | MEDIUM |
 | PUB | Publication path — Foundations of Physics / Phys Rev A | arXiv submitted, awaiting feedback | MEDIUM |
 
