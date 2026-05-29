@@ -90,6 +90,16 @@ Working Paper v3.0 is a substantial update of v2.0. The central claim shifts fro
 
 ---
 
+## Publication Record
+
+| Event | Date | Details |
+|---|---|---|
+| Draft complete (all phases P1–P7) | 2026-05-28 | `papers/paper_003/VVV-QMRF_Working_Paper_v3.0.md` + PDF 447 KB |
+| **Zenodo publish** | **2026-05-28** | **DOI: [10.5281/zenodo.20431310](https://zenodo.org/records/20431310)** — PUBLISHED |
+| E-postulate anchoring (post-publish) | 2026-05-29 | E7/E1/E6 §3d/3e/3f K-axiom anchors added (v36); does not affect published PDF |
+
+---
+
 ## Superseded Legacy Plan
 
 `papers/Testable_Prediction_Section/.../plan/VVV-QMRF_Working_Paper_v3.0_structure.md` (2026-05-23) — φ-centric plan, outdated relative to index v35. **Superseded** by `papers/paper_003/VVV-QMRF_Working_Paper_v3.0_plan.md`.

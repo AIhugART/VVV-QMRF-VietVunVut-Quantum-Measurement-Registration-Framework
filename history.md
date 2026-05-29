@@ -362,6 +362,14 @@ This history is derived from these active project files:
 - Post-v30 Execution Plan updated to v1.1: Track 1 & 2 COMPLETED, Track 3 (Experimental) ACTIVE.
 - Project version advanced to v35.
 
+### 2026-05-29 — WP v3.0 Confirmed Published on Zenodo
+
+- **DOI:** [10.5281/zenodo.20431310](https://zenodo.org/records/20431310) — PUBLISHED 2026-05-28
+- **Title:** "When Does a Physical Interaction Become a Valid Registered Measurement? A VVV-QMRF Registration-Layer Framework with the K9_E Class C Testable Hypothesis and an Experimental Specification for Extended Wigner's Friend"
+- **File:** `VVV-QMRF_Working_Paper_v3.0.pdf` (447 KB, pdflatex)
+- Updated `index.md` DOI: v2.0 → v3.0 (10.5281/zenodo.20431310); version v35 → v36.
+- Updated memory + `papers/paper_003/CHANGELOG.md` with publication record.
+
 ### 2026-05-29 — E7/E1/E6 K-axiom Source-Chain Anchoring (Bidirectional Closure)
 
 - **Task:** Close the BE-SOT → E-postulate → K-axiom source chain bidirectionally for E7/E1/E6 (sources of K4–K7/K3/K2). Prior state: one-directional (K→E only); E-postulate files had no reverse anchor.
