@@ -13,7 +13,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)<br/>
 **Legacy name:** VietVunVut Epistemic Quantum Measurement (VVV-EQM)<br/>
 **Author:** VietVunVut (Viet - Nguyen Xuan)<br/>
-**Version:** v3.0 — All phases P1–P7 complete. Promoted from draft 2026-05-28. Average mini-RCA 4.58/5.<br/>
+**Version:** v3.0 — All phases P1–P7 complete. Promoted from draft 2026-05-28. Average mini-RCA 4.58/5. E3 framework-level RCA completion recorded 2026-05-29.<br/>
 **Zenodo DOI (v3.0):** [10.5281/zenodo.20431310](https://doi.org/10.5281/zenodo.20431310) (Working Paper v3.0 — **CURRENT**)<br/>
 **Zenodo DOI (v2.0):** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (Working Paper v2.0 — archived)<br/>
 **License:** CC BY 4.0<br/>
@@ -30,11 +30,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **EN:** Standard Quantum Mechanics has four physical postulates (P1–P4): state space, observables, measurement, and dynamics. These postulates are **silent** on the registration architecture of measurement — they do not specify what certifies a measurement, what distinguishes measurement from interaction, or what constitutes the registering system.
 
-VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 (Layer 1, frozen) with bridge theorems T1–T9 (Layer 2, updatable), including K7_trace and D_enc as canonical Layer 2 constructs. The framework identifies where standard QM interpretations lack the structural machinery to formalize registration-layer conditions. **T4-H** (N-observer colimit existence) has been verified as a full theorem (4/4 steps, RCA 4.74/5, 2026-05-28).
+VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 (Layer 1, frozen) with bridge theorems T1–T9 (Layer 2, updatable), including K7_trace and D_enc as canonical Layer 2 constructs. The framework identifies where standard QM interpretations lack the structural machinery to formalize registration-layer conditions. **T4-H** (N-observer colimit existence) has been verified as a full theorem (4/4 steps, RCA 4.74/5, 2026-05-28). **E3 Registration Lock** was completed at framework level on 2026-05-29 (RCA 4.80/5): `V-hat : I_boundary × D → K_R ∪ {k_null}` is now explicitly K-side, distinct from P3, separate from beta/K9_E, and bounded against T6.
 
 **VN:** Cơ học Lượng tử chuẩn có bốn tiên đề vật lý (P1–P4): không gian trạng thái, đại lượng quan sát, phép đo, và động lực học. Các tiên đề này **im lặng** về kiến trúc ghi nhận của phép đo — chúng không chỉ ra điều gì chứng nhận một phép đo, điều gì phân biệt phép đo với tương tác, hay điều gì cấu thành hệ thống ghi nhận.
 
-VVV-QMRF đề xuất một **cấu trúc logic ghi nhận K**, được tiên đề hóa qua K1–K8 (Tầng 1, đóng băng) với các định lý cầu nối T1–T9 (Tầng 2, có thể cập nhật), bao gồm K7_trace và D_enc là các phần tử Tầng 2 canonical. Khung lý thuyết xác định nơi các diễn giải QM chuẩn thiếu bộ máy cấu trúc để hình thức hóa các điều kiện ở tầng ghi nhận. **T4-H** (sự tồn tại colimit N-observer) đã được xác minh là định lý đầy đủ (4/4 bước, RCA 4.74/5, 2026-05-28).
+VVV-QMRF đề xuất một **cấu trúc logic ghi nhận K**, được tiên đề hóa qua K1–K8 (Tầng 1, đóng băng) với các định lý cầu nối T1–T9 (Tầng 2, có thể cập nhật), bao gồm K7_trace và D_enc là các phần tử Tầng 2 canonical. Khung lý thuyết xác định nơi các diễn giải QM chuẩn thiếu bộ máy cấu trúc để hình thức hóa các điều kiện ở tầng ghi nhận. **T4-H** (sự tồn tại colimit N-observer) đã được xác minh là định lý đầy đủ (4/4 bước, RCA 4.74/5, 2026-05-28). **E3 Registration Lock** đã hoàn tất ở cấp framework ngày 2026-05-29 (RCA 4.80/5): `V-hat : I_boundary × D → K_R ∪ {k_null}` được xác định rõ là hàm phía K, khác P3, tách khỏi beta/K9_E, và có ranh giới với T6.
 
 ### Ba Dự án Độc lập / Three Independent Projects
 
@@ -188,6 +188,8 @@ trong đó / where:
 | Numerical fits / Khớp số | [07_fits/](documents/research_documents/project_vvv_qmrf_class_c/07_fits/) |
 | BE↔QM comparative mapping / Ánh xạ so sánh BE↔QM | [refine_mapping.md](documents/research_documents/mapping/Buddhist_Epistemology_and_Quantum_Measurement_refine_mapping.md) |
 | BE SOT for RCA / Nguồn sự thật BE | [system_be_full.md](SYSTEM_Buddhist_Epistemology/system_be_full.md) |
+| E3 Registration Lock completion RCA / RCA hoàn tất E3 Registration Lock | [E3_Completion_RCA_Report_2026-05-29.md](documents/research_documents/meta_architecture/plan/E3_Completion_RCA_Report_2026-05-29.md) |
+| E3 canonical framework postulate / Tiên đề E3 canonical | [vvv_qmrf_framework_e03_registration_lock_postulate.md](documents/research_documents/framework/vvv_qmrf_framework_e03_registration_lock_postulate.md) |
 | E1–E16 postulates (legacy detail) / Tiên đề E1–E16 (chi tiết kế thừa) | [framework/](documents/research_documents/framework/) |
 | Paper draft (K9-S12) / Bản nháp bài báo | [draft_v2.md](documents/research_documents/project_vvv_qmrf_class_c/04_governance/paper/draft_v2.md) |
 
@@ -242,6 +244,7 @@ buddhist-epistemology-quantum-measurement/
 | IBM-Q | IBM Quantum execution | **REJECTED (v31)** | — |
 | K7_trace | Closure Transition Record — canonical Layer 2 | **PROMOTED (v35, RCA 4.77/5)** | ✅ DONE |
 | D_enc | Transition-Encoding Registration Act — canonical Layer 2 | **PROMOTED (v35, RCA 4.77/5)** | ✅ DONE |
+| E3-RCA | E3 Registration Lock framework-level completion | **COMPLETE (2026-05-29, RCA 4.80/5)** — K-side `V-hat : I_boundary × D → K_R ∪ {k_null}`, P3 distinctness, T6 boundary, [A-E3] separation | ✅ DONE |
 | arXiv-002 | arXiv ID confirmation for paper_002 (K9-S12) | Pending confirmation | MEDIUM |
 | PUB | Publication path — Foundations of Physics / Phys Rev A | arXiv submitted, awaiting feedback | MEDIUM |
 
@@ -346,6 +349,7 @@ buddhist-epistemology-quantum-measurement/
 | v32 | 2026-05-27 | arXiv preprint submitted (K9-S12 paper, Draft v94). Track 1 & 2 CLOSED. T4-H colimit verified (N=3). |
 | v35 | 2026-05-28 | K7_trace + D_enc promoted to canonical Layer 2 (RCA 4.77/5). Track 3 (Experimental Path) ACTIVE. |
 | **v3.0** | **2026-05-28** | **Working Paper v3.0: all phases P1–P7 complete. T4-H upgraded to THEOREM (4/4 steps, RCA 4.74/5). 3-OBS prediction upgraded to Class C. Zenodo DOI: 10.5281/zenodo.20431310. Average mini-RCA 4.58/5. README updated to v3.0.** |
+| v3.0-E3-RCA | 2026-05-29 | E3 Registration Lock framework-level RCA completed (4.80/5): canonical E3 now states K-side `V-hat : I_boundary × D → K_R ∪ {k_null}`, P3 distinctness, T6 boundary, [A-E3] separation, and EX compass-only sync. |
 
 ---
 
