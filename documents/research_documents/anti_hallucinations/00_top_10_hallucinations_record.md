@@ -200,6 +200,8 @@ Tiebreaker: H (desc) -> W (desc) -> A (desc) -> Trace score (ascending)
 
 **E1-E16 SOT resolution:** E1-E16 trace score resolved to `2` (worst-case/minimum of range 2-4). Applies "weakest link" principle: risk of the 16-postulate group = risk of the postulate with weakest trace.
 
+**E3 state change 2026-05-29 (commit cfbca7d):** E3 trace improved — §3d K1-K8 anchor (SOT-2), tier co-extensionality via K4 (Class D), §3e L4 type signature. E3 individual trace: ~2/6 → ~3-4/6. Group minimum (2/6) and Risk Score (9.6) **unchanged pending full weekly re-audit** of remaining E4-E16 postulates.
+
 ### Round 3 — Calibrate & Lock
 
 Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.

@@ -128,6 +128,27 @@ D_enc connection:
 > E3 anchor table above is now the operative K1-K8 grounding for this postulate.
 > Full formalization plan: archives/plan/E3_Registration_Lock_Formalization_Plan.md v2.0.
 
+### 3e. Unified Formal Type Signature (L4)
+
+```
+V-hat : I_boundary × D → K_R ∪ {k_null}
+
+where:
+  I_boundary    = (M_act, t_int, o_det)        [physical interaction boundary record]
+  D             = set of valid detector response events
+  k  ∈ K_R     = ⟨M, o, cert=1, t, V=1⟩       [K4(a): non-null, default validity]
+  k_null ∈ K_R  = ⟨M, ∅, cert=1, t, V=0⟩       [K4(b): isNull]
+
+V-hat fires (→ k) when (I) ∧ (D) ∧ (SC) hold jointly [§3d].
+V-hat non-fires (→ k_null) when any condition fails [K4(b)].
+
+L_K(I) = 1  ↔  V-hat fires  ↔  ¬isNull(k)     [tier co-extensionality, §3d]
+L_K(I) = 0  ↔  V-hat non-fires ↔ isNull(k_null) [K4(b)]
+```
+
+> Formalization level: L4 (type-theoretic operator definition). Substance: §3d.
+> E3 is interpretation-neutral: K-side registration layer independent of collapse interpretation.
+
 ---
 
 ## 4. Mathematical Notation / Ký hiệu Toán học
