@@ -3,12 +3,14 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # K-Space Axiomatization — Registration-Logic Foundation for VVV-QMRF
 # Tiên đề hóa Không gian K — Nền tảng Registration-Logic cho VVV-QMRF
 
+> **PEER-SYNC (2026-05-24):** This file has a PEER copy at `documents/research_documents/meta_architecture/K_Space_Axiomatization.md`. The two files are **peer-level equals** — any structural change (axiom, theorem, definition, open item) made to one MUST be mirrored to the other. Header metadata (version, date, status) must be kept consistent. Rule enforced by `CLAUDE.md` §PEER-SYNC and verifiable via `scripts/sync_check_k_space.sh`.
+
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
-**Document type:** `meta_architecture`
-**Date:** 2026-05-19
-**Version:** 2.1
+**Document type:** `meta_architecture` (Class C working copy)
+**Date:** 2026-05-19 (updated 2026-05-24)
+**Version:** 2.4
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** v2.1 — algebraic layer extension. Layer 1 (K1-K8) is frozen; Layer 2 extended with T5-T7. **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D proposed registration-layer structures unless separately upgraded.
+**Status:** v2.4 — Layer 1 extended with K5_prospective (P9 bridge, v29). Layer 2 extended with T8 (K5_prospective Frequency Bridge + H1-H4) + T9 (K_ctx Construction Theorem / T3-Morphism Channel Formalization, L1-L5) + **K7_trace** (Closure Transition Record, canonical promotion 2026-05-27) + **D_enc** (Transition-Encoding Registration Act, canonical promotion 2026-05-27). **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. **UPDATE (2026-05-24):** T8 bridges K5_prospective ↔ K9_E f_perp; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas). T9 formalizes φ_ij morphism channel; [A-E1] FULLY ELIMINATED via L1-L5 (5 lemmas, 3-Round RCA). Only [A-E3] remains (1/4 original K9_E assumptions). **UPDATE (2026-05-27):** K7_trace and D_enc promoted from BB-VVV local (fit plan §18-§19) to canonical Layer 2. RCA gate: 4.77/5 (Theoretical_Integration_plan.md v1). Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D; T8, T9 are Class C (structural derivation from K5_prospective / K8 embedding); K7_trace and D_enc are Class C-canonical (conservative extensions, promoted 2026-05-27).
 **Source:** Derived from VVV-QMRF Working Paper v2.0 Section 7.2 deferred item #5
 **Cite:** VVV-QMRF §K-AXIOM
 **Plan reference:** `papers/Testable_Prediction_Section/extended_wigners_friend_k_side_incommensurability/plan/VVV-QMRF_K_Space_Axiomatization_Plan.md`
@@ -203,7 +205,7 @@ Discreteness (S2-Δ lemma):
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E6 (Registering-System-as-Process) + S2-Δ lemma |
+| **Source** | Level 2: E6 (Registering-System-as-Process) + S2-Δ lemma — ↔ E6 §3d-anchor (2026-05-29): E6⇒order part |
 | **BE lineage** | Kṣaṇabhaṅgavāda — momentariness: registration time is discrete; no continuous registration identity between events |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E6, S2-Δ). No Level 4 dependency. |
@@ -243,7 +245,7 @@ Reflexivity (E1 core property):
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E1 (Self-Certifying Registration) |
+| **Source** | Level 2: E1 (Self-Certifying Registration) — ↔ E1 §3e-anchor (2026-05-29) |
 | **BE lineage** | Svasaṃvedana — self-awareness/self-certifying cognition: a cognition certifies its own occurrence without requiring a second-order cognition |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E1). No Level 4 dependency. |
@@ -288,7 +290,7 @@ Provision: V(k) = 1 is provisional until the registration process closes
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E7 Axiom 1 (Default validity) |
+| **Source** | Level 2: E7 Axiom 1 (Default validity) — ↔ E7 §3f-anchor (2026-05-29) |
 | **BE lineage** | Svataḥ prāmāṇya — intrinsic validity: a cognition is valid by default in virtue of its occurrence (arthakriyā — causal efficacy) |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E7 Axiom 1). No Level 4 dependency. |
@@ -379,7 +381,7 @@ K_R disambiguation (cross-space context):
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E7 Axioms 2-3 (Invalidation + Asymmetry) |
+| **Source** | Level 2: E7 Axioms 2-3 (Invalidation + Asymmetry) — ↔ E7 §3f-anchor (2026-05-29) |
 | **BE lineage** | Parataḥ prāmāṇya — invalidity is detected extrinsically. Bādhaka pramāṇa — a contradicting cognition (bādhaka) retroactively voids the earlier cognition. |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E7 Axioms 2-3). Uses `⊥` and "cross-registration authority" as **primitive predicates** whose full formalization is in Level 4 (paper v2.0 §4.4). K5 asserts the structural rule; the precise conditions for `k2 ⊥ k1` and "valid cross-registration authority" are defined in the bridge theorems (T1-T3). **2nd-order Layer 2 dependencies — Dep-A:** C_K existence precondition requires Level 4 predicate `requires_K_joint = 1` (Level 4 §4.3); K5 does not fire when C_K is absent (also reflected in Layer 1 Summary K5 row Role 1, via F4). **Dep-B (F7a non-circularity guard):** K5 condition (i) is defined natively by K2's `<_R` ordering. In cross-space application, K5 can only be evaluated after a candidate `K_joint` has already been constructed. T1 constructs `<_joint>` from K2 native orders + Level 4 cross-structure temporal relations + K8 field preservation; K5 does not define or prove `<_joint>`. Therefore Dep-B is an application-order dependency only: K5 uses `<_joint>` inside `K_joint` after T1 supplies the candidate joint order, so no circular dependency is introduced. |
@@ -503,7 +505,7 @@ Non-transitivity proof sketch (counterexample):
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E7 Axiom 2 + paper v2.0 §4.4 cross-registration authority section |
+| **Source** | Level 2: E7 Axiom 2 + paper v2.0 §4.4 cross-registration authority section — ↔ E7 §3f-anchor (2026-05-29) |
 | **BE lineage** | Bādhaka pramāṇa — a contradicting cognition must be a valid cognition (pramāṇa) itself to serve as bādhaka. An invalid cognition cannot void another. |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E7 Axiom 2). Uses `C_K` and `D_joint` from Level 4 with three Auth roles: (1) existential precondition — K6 operates only when C_K exists (requires_K_joint = 1); (2) C_K-sphere membership parameter (condition a); (3) D_joint scope parameter (condition c). **Dep-A (2nd-order Layer 2 dependency):** Auth(k2→k1, C_K) requires C_K to exist (requires_K_joint = 1, Level 4 §4.3); K6 does not operate when C_K is absent — analog K5 Dep-A. **Conditional semantic dependency (I-03 pattern):** condition (c) `k1 ∈ scope(D_joint)` means Level 4 changes to D_joint scope alter which k1 have Auth = 1, without altering K6 text (syntactic freeze holds); analogous to K5 ⊥_K boundary clauses (I-03/F3). |
@@ -553,7 +555,7 @@ Pre-closure:
 
 | Property | Value |
 |---|---|
-| **Source** | Level 2: E7 (V_prov vs V_final distinction, paper v2.0 §2.2) |
+| **Source** | Level 2: E7 (V_prov vs V_final distinction, paper v2.0 §2.2) — ↔ E7 §3f-anchor (2026-05-29) |
 | **BE lineage** | Niścaya (ascertainment/determination) — a cognition becomes determinate when the cognitive process reaches closure; before that, it is provisional (saṃśaya — doubt is possible) |
 | **Claim class** | D (proposed) |
 | **Dependency** | Level 2 (E7 V_prov/V_final distinction). Uses `requires_K_joint` and `D_joint` from Level 4 as closure condition inputs. **Dep-B (2nd-order Layer 2 dependency):** K7 closure condition `pending(K_R, K_X) = ∅` uses the concept of "resolved demand" — a requires_K_joint demand is resolved when a K_joint registration event satisfying T2 AdmJoint conditions has occurred; without T2, "resolved" is an undefined primitive in K7; T2 is a silent Layer 2 dependency for closure semantics — analog K5 Dep-B (T1 `<_joint` for K5 condition (i)). **Conditional semantic dependency (I-03 pattern):** Level 4 extensional scope of `requires_K_joint` (which event types require joint registration) directly determines t_close timing — expanding the scope delays closure, narrowing it advances closure; K7 text is frozen but t_close (and therefore when V_prov → V_final and when K5 irreversibility becomes absolute) depends on Level 4 content; analogous to K5 ⊥_K boundary clauses (I-03/F3) and K6 D_joint scope (I-03/F6a). |
@@ -901,6 +903,218 @@ AJVS boundary:
 
 ---
 
+### T9 — K_ctx Construction Theorem (T3-Morphism Channel Formalization)
+
+> **[A-E1] ELIMINATION (2026-05-24):** T9 formally constructs the morphism channel φ_ij from K1-K8 primitives + T1 (K_joint construction). K_ctx is no longer defined via an assumed "T3-morphism" — the morphism IS the K8-constrained embedding i_j: K_{R_j} → K_joint supplied by T1. [A-E1] FULLY ELIMINATED via 5 lemmas (L1-L5) with 3-Round RCA. Assumptions remaining: 0. [A-E3] RECLASSIFIED as FREE PARAMETER (measurement target). See [RCA A-E3 Final Verdict](../04_governance/RCA_A_E3_beta_universal_final_verdict.md).
+
+**Statement:**
+> For any two registering systems R_i, R_j with requires_K_joint(K_{R_i}, K_{R_j}) = 1, the morphism φ_{ij}: K_{R_j} → K_joint is defined as φ_{ij}(k_j) = i_j(k_j), where i_j: K_{R_j} → K_joint is the canonical K8-constrained embedding supplied by T1 (K_joint construction, N=2). φ_{ij} preserves all five K-state tuple fields (M, o, cert, t, V). Consequently, K_ctx is a THEOREM construction, not an assumption: K_ctx(k_i, Exp) = {φ_{ij}(k_j) : k_j ∈ K_{R_j}, requires_K_joint(R_i, R_j) = 1, k_j temporally compatible with k_i}.
+
+**Derivation from axioms:**
+```
+Primitives (Layer 1):
+  K1:  K-state tuple ⟨M, o, cert, t, V⟩ — defines what k_j IS.
+  K2:  (K_R, <_R) strict total order — defines temporal compatibility.
+  K5:  requires_K_joint = 1 → C_K exists — defines WHEN φ_ij is needed.
+  K6:  Auth(k_a → k_b, C_K) — authority within shared C_K; φ_ij carries
+       k_j into C_K where Auth is evaluable.
+  K8:  i_{R→X}: K_R → K_X preserves all 5 fields (M, o, cert, t, V) —
+       defines structural CONSTRAINTS on any valid embedding.
+
+Bridge (Layer 2):
+  T1:  K_joint(R_i, R_j) construction (N=2) — supplies canonical embeddings
+       i_i: K_{R_i} → K_joint and i_j: K_{R_j} → K_joint.
+
+Construction:
+  φ_{ij}(k_j) := i_j(k_j) ∈ K_joint
+    where i_j is the canonical embedding from T1,
+    constrained by K8 to preserve all 5 tuple fields.
+
+  This is IDENTICAL to the embedding already used by T3 (Bridge_EWF)
+  to place k_F and k_W into K_joint for cross-observer evaluation.
+  The label "T3-morphism" was a synonym for "K8-constrained embedding
+  into K_joint" — T9 makes this identification explicit and formal.
+
+Precondition:
+  requires_K_joint(R_i, R_j) = 1  (C_K exists — K5 firing precondition)
+  Without C_K, φ_ij is undefined (no joint space to embed into).
+```
+
+#### Lemma L1 — Existence of φ_ij
+
+**Statement:**
+> For any pair (R_i, R_j) with requires_K_joint(R_i, R_j) = 1, the morphism φ_{ij}: K_{R_j} → K_joint exists and is given by φ_{ij} = i_j where i_j is the canonical T1 embedding.
+
+**Proof:**
+```
+1. requires_K_joint(R_i, R_j) = 1                     [premise]
+2. ⇒ T1 applicable: K_joint(R_i, R_j) exists          [T1, N=2 constructive]
+3. ⇒ ∃ i_j: K_{R_j} → K_joint                         [T1 canonical embedding]
+4. Define φ_{ij} := i_j                               [definition]
+5. φ_{ij} exists.                                     [from 3,4] ∎
+```
+
+#### Lemma L2 — Uniqueness of φ_ij
+
+**Statement:**
+> φ_{ij} is the UNIQUE morphism K_{R_j} → K_joint that preserves all five K-state tuple fields. Any alternative ψ: K_{R_j} → K_joint satisfying K8 field-preservation constraints must equal φ_{ij}.
+
+**Proof:**
+```
+1. Let ψ: K_{R_j} → K_joint be any morphism satisfying K8:
+     ψ preserves M, o, cert, t, V for all k_j ∈ K_{R_j}.   [K8 constraint]
+2. T1 constructs K_joint from the images i_i(K_{R_i}) and i_j(K_{R_j}):
+     Elements of K_joint are of the form i_i(k) or i_j(k) for k in
+     the respective source spaces.                           [T1 construction]
+3. For k_j ∈ K_{R_j}, ψ(k_j) ∈ K_joint must be a tuple
+   with fields (M, o, cert, t, V) = fields of k_j.          [K8, from 1]
+4. The only element of K_joint with exactly those fields
+   is i_j(k_j) — because K_joint has no other elements
+   carrying the same (M, o, cert, t) combination
+   (K1 t-injectivity in K_joint, inherited from T1).        [K1 + T1]
+5. Therefore ψ(k_j) = i_j(k_j) = φ_{ij}(k_j).               [from 3,4]
+6. ψ = φ_{ij} for all k_j ∈ K_{R_j}.                        [universal generalization] ∎
+```
+
+**Why uniqueness holds (structural forcing):**
+```
+K8 mandates: ψ(k_j) must have the SAME 5 fields as k_j.
+T1 supplies:  exactly ONE element in K_joint with those fields (i_j(k_j)).
+
+No alternative construction can satisfy K8 without producing i_j(k_j),
+because any tuple in K_joint with identical (M, o, cert, t) IS i_j(k_j)
+by K1 t-injectivity. The morphism is STRUCTURALLY FORCED.
+```
+
+#### Lemma L3 — Field Preservation (Sufficiency for K_ctx)
+
+**Statement:**
+> φ_{ij} preserves all 5 tuple fields. These are SUFFICIENT for all K_ctx operations: K5_prospective needs o(k_j) (contradiction check), t(k_j) (temporal compatibility), V(k_j) (Auth condition (b)), cert(k_j) (K1 admission guarantee), and M(k_j) (act identification).
+
+**Proof:**
+```
+1. φ_{ij} = i_j with K8 constraint                            [L1 + K8]
+2. K8 explicitly preserves: M, o, cert, t, V.                 [K8 statement]
+3. K_ctx operations:
+     (a) Temporal compatibility:  uses t(k_j)                 [K2]
+     (b) Contradiction check:     uses o(k_j)                 [K5 ⊥ definition]
+     (c) Auth condition (b):      uses V(k_j)                 [K6]
+     (d) K1 admission:            uses cert(k_j) = 1          [K1]
+     (e) Act identification:      uses M(k_j)                 [K1]
+   All fields needed are preserved by φ_{ij}.                 [from 2] ∎
+```
+
+#### Lemma L4 — K_ctx as Theorem (Elimination of [A-E1])
+
+**Statement:**
+> K_ctx(k_i, Exp) = {φ_{ij}(k_j) : k_j ∈ K_{R_j}, requires_K_joint(R_i, R_j) = 1, k_j temporally compatible with k_i}. This definition uses ONLY K1-K8 primitives + T1 constructive embedding. No new assumption is required. [A-E1] is ELIMINATED.
+
+**Proof:**
+```
+Original K_ctx definition (requiring [A-E1]):
+  K_ctx(k_i, Exp) = {k_j ∈ K_{R_j} : ∃ T3-morphism φ_{ij} ∧ temporally compatible}
+  ↑ "∃ T3-morphism φ_{ij}" was the [A-E1] assumption.
+
+New K_ctx definition (post-T9):
+  K_ctx(k_i, Exp) = {φ_{ij}(k_j) : k_j ∈ K_{R_j},
+                     requires_K_joint(R_i, R_j) = 1,         [K5 precondition]
+                     k_j <_joint k_i  ∨  k_i <_joint k_j}    [K2 compatibility]
+
+  where φ_{ij}(k_j) = i_j(k_j) ∈ K_joint is constructed by:
+    - K5:  requires_K_joint = 1 ⇒ C_K exists                [Layer 1]
+    - T1:  K_joint exists with canonical embedding i_j      [Layer 2, N=2]
+    - K8:  i_j preserves all 5 fields                       [Layer 1]
+
+  Every element of this definition is derived from K1-K8 or T1.
+  T1 is a Layer 2 theorem (K1-K8 inputs), not a new assumption.
+  K5 precondition (requires_K_joint = 1) is already required
+    by K5 itself — K_ctx inherits it, does not add it.
+
+  Therefore K_ctx definition requires ZERO new assumptions beyond
+  what K1-K8 + T1 already provide. [A-E1] FULLY ELIMINATED. ∎
+```
+
+#### Lemma L5 — Comparative: Alternative Channels Excluded
+
+**Statement:**
+> Alternative constructions for accessing k_j from K_{R_j} in a cross-observer context are either (a) undefined (no C_K), (b) violate K8 field preservation, or (c) equivalent to φ_{ij} (redundant). φ_{ij} is the unique valid channel.
+
+**Proof (exhaustion over 4 alternatives):**
+```
+Alternative A: Direct cross-K-space comparison (no K_joint).
+  → Without K_joint, no C_K exists for cross-space evaluation.
+  → K5 condition (ii) requires C_K for ⊥ evaluation.
+  → Direct comparison is UNDEFINED for K5 operations.         [DEAD]
+
+Alternative B: ρ-side correlation (tensor product H_A ⊗ H_B).
+  → ρ-side correlation is physical, not registration-layer.
+  → K_ctx requires K-side fields (o, cert, V, t) — ρ cannot supply these.
+  → Category error: K_ctx is K-side set, not H-side correlation. [DEAD]
+
+Alternative C: Weighted embedding (non-uniform field preservation).
+  → K8 mandates field preservation: any valid embedding preserves
+    all 5 fields exactly. No "partial" or "weighted" embedding
+    is admitted by K8.
+  → Violating K8 is not a valid alternative within K1-K8 framework. [DEAD]
+
+Alternative D: Independent morphism ψ ≠ i_j but K8-compliant.
+  → Lemma L2 proves ψ = i_j = φ_{ij} (uniqueness).
+  → Any K8-compliant morphism IS φ_{ij}.                       [EQUIVALENT — redundant]
+```
+
+**Summary:**
+```
+  4 alternatives examined:
+    A (direct, no K_joint) → UNDEFINED (no C_K)
+    B (ρ-side)             → CATEGORY ERROR (ρ ≠ K)
+    C (non-K8 compliant)   → VIOLATES K8 (not a valid embedding)
+    D (different K8 embed) → EQUIVALENT to φ_{ij} (Lemma L2 uniqueness)
+
+  φ_{ij} is the UNIQUE valid structural channel. ∎
+```
+
+#### K_ctx Construction — Complete Theorem Statement
+
+```
+DEFINITION (Theorem, not assumption):
+  For a registering system R_i performing experiment Exp, the
+  contextual K-state set K_ctx(k_i, Exp) is defined as:
+
+    K_ctx(k_i, Exp) = { φ_{ij}(k_j) ∈ K_joint :
+        k_j ∈ K_{R_j}                                         [K1: tuple in source space]
+        ∧ requires_K_joint(R_i, R_j) = 1                      [K5: C_K exists]
+        ∧ (t(k_j) < t(k_i) ∨ t(k_i) < t(k_j))                [K2: temporal compatibility]
+        ∧ R_j is an observer in Exp other than R_i }          [experimental scope]
+
+  where φ_{ij}(k_j) = i_j(k_j) is the K8-constrained T1 embedding.
+
+  For the special case where K_joint contains k_i and multiple k_j
+  from distinct source spaces, the joint order <_joint (from T1)
+  is used for temporal compatibility checking.
+
+  K_ctx is well-defined because:
+    - requires_K_joint = 1 ensures C_K and K_joint exist   [K5 + T1]
+    - K8 ensures all needed fields are preserved            [K8]
+    - K2 ensures temporal compatibility is decidable        [K2 strict total order]
+    - K1 t-injectivity ensures no duplicate elements        [K1]
+```
+
+| Property | Value |
+|---|---|
+| **Theorem number** | T9 (K_ctx Construction Theorem) |
+| **Layer** | Layer 2 (Bridge theorem — connects K1-K8 structural primitives to K_ctx operational definition) |
+| **Layer 1 dependency** | K1 (tuple structure), K2 (temporal order), K5 (requires_K_joint, C_K existence), K6 (Auth within C_K), K8 (field-preserving embedding constraint) |
+| **Layer 2 dependency** | T1 (K_joint construction, N=2 — supplies canonical embedding i_j) |
+| **Level 4 dependency** | requires_K_joint predicate (determines when C_K exists — inherited from K5); D_joint scope (Auth condition (c) — inherited from K6). No NEW Level 4 dependency beyond those already in K5/K6 |
+| **BE lineage** | Svabhāvapratibandha (essential relation): k_j is accessible from k_i's context because R_i and R_j share an essential relation (entanglement in QM, requires_K_joint in VVV-QMRF). The morphism φ_ij embodies the structural channel that makes cross-observer registration evaluation possible — analogous to how svabhāvapratibandha makes inference (anumāna) from one cognition to another structurally grounded. `N_BE_00021` (Essential relation) |
+| **EX anchor** | `N_QM_VVV_00025` (IRB / Intrinsic Relational Binding) — φ_ij is the formal channel implementing IRB. Anchor strength: **STRONG** (structural identity — φ_ij IS the T1 embedding, not a conceptual link) |
+| **Claim class** | C — T9 is a structural identification theorem (φ_ij = i_j), not a new postulate. The construction uses only K1-K8 + T1; the proof is deductive (5 lemmas). Claim boundary: T9 does not assert K_joint exists for N>2 (T4-H scope), does not assert φ_ij is computable, and does not modify T1 or K8 text |
+| **[A-E1] impact** | **FULLY ELIMINATED.** K_ctx definition no longer requires an assumed "T3-morphism." φ_ij is the K8-constrained T1 embedding — derived from K1-K8 + T1. L1 (existence) + L2 (uniqueness) + L3 (sufficiency) + L4 (K_ctx theorem) + L5 (exhaustion) = complete elimination |
+| **Freeze status** | Updatable (Layer 2 bridge). T9 depends on T1 (pending Level 4 freeze) and K5/K6 (conditional semantic dependencies on Level 4). If T1 construction or K5 precondition changes, T9 derivation updates. T9 does not modify Layer 1 |
+| **Update trigger** | If T1 K_joint construction is revised; if requires_K_joint scope changes (Level 4); if K8 field-preservation constraint is modified |
+
+---
+
 ### T4 — N-Observer Generalization Theorem
 
 **Statement:**
@@ -935,27 +1149,32 @@ T4-H — Colimit Existence Hypothesis (explicit conditional — F-RCA-P4-06 Opti
     For any finite diagram D of K-spaces with K1-K8-preserving morphisms,
     the colimit colim(D) exists in C_{K-space}.
 
-  Status: HYPOTHESIS, not a theorem derivable from K1-K8 alone.
-    K1-K8 define the structure of individual K-spaces; they do NOT by
-    themselves prove that C_{K-space} is cocomplete (has all colimits).
-    T4 conclusions hold CONDITIONAL on T4-H.
+  Status: THEOREM (4/4 steps verified — Steps 3-4: 2026-05-27, RCA 4.74/5 PASS).
 
-  Plausibility argument (not a proof — see Open Item A5):
-    Each K_R is a finite totally-ordered set (K2 chain) of K1-structured
-    tuples with binary V (K4-K5) and intrinsic cert (K3). The category
-    of finite totally-ordered sets with order-preserving maps has finite
-    colimits (disjoint union + quotient by morphism-imposed equivalences).
-    K1-K8 morphisms preserve the five-field tuple structure; shared cross-rel
-    and global commutativity (F7d) impose the identification conditions.
-    A finite colimit of such sets is therefore structurally plausible, but
-    the rigorous category-theoretic proof is deferred to Open Item A5.
+    Step 1 (C_{K-space} category): VERIFIED — identity, composition, associativity.
+    Step 2 (colimit construction): VERIFIED — K_colim = (∐_i K_i)/~ constructed;
+      all 5 tuple fields well-defined via lexicographic t-assignment (SP1 resolved)
+      and embedding-time V snapshot (SP2 resolved); <_colim constructed via
+      T1-generalized transitive closure (SP3 constructed, cycle detection deferred
+      to Step 3); 5/5 verification gates PASS.
+      Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_step2_colimit_construction.md
+      (3-Round RCA, aggregate 4.73/5).
+    Step 3 (K1-K8 preservation through quotient): VERIFIED (2026-05-27) — K1-K8
+      all PASS; T-PRES Lemma (K8-morphisms preserve t) + T-REP Corollary resolve
+      K2 acyclicity; K5 cross-K_R ⊥ consistent; V monotone dynamics ensure
+      non-contradiction. RCA 4.74/5.
+      Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_steps3_4_k1k8_universal.md
+    Step 4 (universal property): VERIFIED (2026-05-27) — u([k,i]) := f_i(k)
+      well-defined (diagram compatibility + T-REP), K8-preserving, unique.
+      Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_steps3_4_k1k8_universal.md
+    T4-H is a FULL THEOREM. T4 conclusions valid for all N ≥ 2 (no further gates).
 
-  Conditional scope:
-    If T4-H holds  → T4 conclusions valid for all N ≥ 2.
-    If T4-H fails  → N-observer colimit may not exist in general; T1
-                     (N = 2, constructive) remains valid independently
-                     because T1 builds K_joint explicitly without invoking
-                     the colimit universal property.
+  Scope (T4-H THEOREM):
+    T4-H holds (4/4) → T4 conclusions valid for all N ≥ 2.
+    T1 (N = 2, constructive) remains independently valid without invoking
+    the colimit universal property.
+    Current (4/4): K_colim EXISTS, satisfies K1-K8, and satisfies the universal
+    property. T4-H is no longer conditional.
 
 Non-transitivity of ⊥_K:
   Counter-example possibility:
@@ -1035,9 +1254,9 @@ Conditional scope:
 | **Level 4 dependency** | `requires_K_joint`, `D_joint`, `AdmJoint` (for admissibility of each K_joint step) |
 | **EX anchor** | No direct EX intersection node — internal algebraic theorem; EX compass used as sanity check (no K_joint composition tension in EX graph) |
 | **BE lineage** | Continuity of K-side registration structure across sequential joint contexts — structural extension of K2 chain property to multi-K_R scope |
-| **Claim class** | D (proposed) — conditional on T4-H which is itself a hypothesis |
-| **Freeze status** | Conditional on T4-H + Level 4 freeze |
-| **Update trigger** | If T4-H is established or refuted; if K_joint compatibility conditions change; if global commutativity (F7d) conditions are revised |
+| **Claim class** | D (proposed) — T4-H is now THEOREM (2026-05-27); T5 upgrade to Class C pending Level 4 freeze (remaining gate) |
+| **Freeze status** | Conditional on Level 4 freeze (T4-H gate resolved) |
+| **Update trigger** | If K_joint compatibility conditions change; if global commutativity (F7d) conditions are revised; if Level 4 freeze changes |
 
 ---
 
@@ -1182,9 +1401,623 @@ F-T7-01 (T5 dependency):
 | **Level 4 dependency** | `requires_K_joint`, `D_joint`, `AdmJoint` (for all pairwise + N=3 admissibility checks); IRB-induced D_joint scope |
 | **EX anchor** | `N_QM_VVV_00025` (IRB / Entanglement) — intersection node; BE anchor: `N_BE_00021` (Essential relation / svabhāvapratibandha); QM anchors: `N_QM_00047` (Entanglement), `N_QM_00090` (Bell correlations) |
 | **BE lineage** | Svabhāvapratibandha extended via E15 IRB — registration non-separability as the K-side analogue of intrinsic-nature relational binding in Dharmakīrti; extended to multi-body scope |
-| **Claim class** | D (proposed) — conditional on T4-H, E15 wording stability, and Level 4 freeze |
-| **Freeze status** | Conditional on T4-H + Level 4 freeze + E15 wording |
-| **Update trigger** | If E15 IRB definition is revised; if T4-H is established or refuted; if T5 is revised; if Level 4 `requires_K_joint` scope changes for IRB-induced D_joint demands |
+| **Claim class** | D (proposed) — T4-H is now THEOREM (2026-05-27); T7 upgrade to Class C pending Level 4 freeze + E15 wording stability (remaining gates) |
+| **Freeze status** | Conditional on Level 4 freeze + E15 wording (T4-H gate resolved) |
+| **Update trigger** | If E15 IRB definition is revised; if T5 is revised; if Level 4 `requires_K_joint` scope changes for IRB-induced D_joint demands |
+
+### T8 — K5_prospective Frequency Bridge Theorem
+
+**Statement:**
+> The K9_E perpendicularity fraction `f_perp(o, k_i, K_ctx)` is the expected frequency of K5_prospective firing events over the context set K_ctx. The fraction functional form `|{k_j: ...}| / |K_ctx|` is not an independent modeling assumption — it is a statistical identity derived from counting binary K5_prospective evaluations over a uniform context set. T8 bridges probability postulate K9_E (P9) to structural axiom K5_prospective, upgrading the EX anchor of f_perp from WEAK (conceptual link) to STRONG (structural derivation chain through K5 → K5_prospective → T8 → f_perp).
+
+**Derivation from axioms:**
+```
+Inputs (Layer 1 + Layer 2):
+  K5_prospective (Layer 1 extension, v29):
+    For hypothetical tuple k_o* = ⟨M*, o, cert=1, t*, V=1⟩ and
+    k_prev ∈ K_joint:
+    K5 fires prospectively on k_o* vs k_prev iff requires_K_joint = 1 AND
+      (i)   k_prev <_joint k_o*
+      (ii)  k_o* ⊥ k_prev within C_K
+      (iii) Auth(k_o* → k_prev, C_K) = 1
+
+  T3 (Layer 2, Bridge_EWF):
+    K_ctx(k_i, Exp) = {k_j ∈ K_{R_j} : ∃ T3-morphism φ_{ij} ∧ temporally compatible}
+    NOTE: T9 (2026-05-24) now formalizes φ_{ij} = i_j (K8-constrained T1 embedding).
+    K_ctx is a THEOREM construction — see T9 for full 5-lemma proof.
+
+  K6 (Layer 1):
+    Auth is binary: Auth(k_a → k_b, C_K) ∈ {0,1}
+
+  ⊥_K (Layer 1, K5 primitive):
+    Registered contradiction is binary: k_a ⊥ k_b ∈ {0,1}
+
+Frequency interpretation:
+  For each k_j ∈ K_ctx(k_i, Exp):
+    Construct hypothetical k_o* for outcome o.
+    Evaluate K5_prospective(k_o*, k_j) ∈ {0,1} — fires (1) or not (0).
+
+    Define indicator:
+      I_j(o) = 1 if K5_prospective fires on k_o* vs k_j AND o(k_j) ≠ o
+      I_j(o) = 0 otherwise
+
+    Then: f_perp(o, k_i, K_ctx) = (1/|K_ctx|) * Σ_{j=1}^{|K_ctx|} I_j(o)
+                                 = E[I_j(o)] over uniform K_ctx
+
+Uniformity justification:
+  The uniform weight 1/|K_ctx| follows from the binary nature of K5/K6
+  primitives. K5 ⊥ is binary (contradiction holds or not). K6 Auth is
+  binary (authority holds or not). K2 temporal order is binary (precedes
+  or not). No K1-K8 axiom provides a continuous "contradiction strength"
+  metric. Therefore each k_j ∈ K_ctx carries equal structural weight —
+  the fraction form is the UNIQUE form consistent with binary K5/K6
+  primitives over a uniform context set.
+
+  If a future axiom (e.g., K10) introduced continuous contradiction
+  strength w_j ∈ [0,1], f_perp would generalize to weighted sum:
+    f_perp_weighted = Σ w_j · I_j(o) / Σ w_j
+  T8 provides the baseline: w_j = 1 ∀j (binary primitives, uniform context).
+
+[A-E2] upgrade path:
+  BEFORE T8:
+    [A-E2] "f_perp = fraction form" — independent modeling assumption
+    EX anchor: N_QM_VVV_00029 (bādhaka) — WEAK
+    Justification: "simplest form, physically motivated"
+
+  AFTER T8:
+    [A-E2] is SPLIT into two sub-components:
+      [A-E2a] Fraction counting — DERIVED from K5_prospective binary
+              evaluation + uniform K_ctx. This is an EXPECTATION over
+              binary indicators, not an independent modeling choice.
+              EX anchor: N_QM_VVV_00029 via K5 → K5_prospective → T8.
+              Strength: STRONG.
+      [A-E2b] Outcome filter (o(k_j) ≠ o) — still assumed, anchored to
+              compatibility map C(o_i, o_j) from Tier 4 OI-1 + PP-2 v2
+              cancellation avoidance. Strength: MODERATE.
+
+  Net upgrade: WEAK → STRONG for the counting mechanism;
+               outcome filter sub-component remains MODERATE.
+
+K9_E f_perp formal connection (P9 anchor):
+  K9_E defines:
+    f_perp(o, k_i, K_ctx) = |{k_j ∈ K_ctx : k_j ⊥_K k_i ∧ o(k_j) ≠ o}| / |K_ctx|
+
+  T8 supplies:
+    f_perp(o, k_i, K_ctx) = E[I(K5_prospective fires on k_o* vs k_j ∈ K_ctx)]
+
+  These are IDENTICAL because:
+    I_j(o) = 1 ⇔ K5_prospective fires on k_o* vs k_j ∧ o(k_j) ≠ o
+           ⇔ (k_o* ⊥ k_j) ∧ (o(k_j) ≠ o)    [K5_prospective definition]
+           ⇔ (k_j ⊥_K k_i) ∧ (o(k_j) ≠ o)    [k_o* carries outcome o;
+                                               ⊥ is content-symmetric]
+    Therefore: |{k_j: I_j(o)=1}| ≡ |{k_j: k_j ⊥_K k_i ∧ o(k_j) ≠ o}|
+    Therefore: f_perp (K9_E def) ≡ f_perp (T8 frequency). ∎
+
+T8 conservativity (mandatory boundary clause):
+  T8 is a READ-ONLY bridge. It does NOT modify:
+    - K5_prospective evaluation rules (reads only)
+    - K5 post-hoc invalidation behavior
+    - K_ctx definition (reads only)
+    - K9_E functional form (explains it, does not change it)
+    - K6 Auth binary nature
+    - K7 closure mechanism
+```
+
+**Worked Example — Proietti EWF, setting x=1 (Alice does BSM):**
+```
+K_ctx for Friend F_A: {k_A, k_FB, k_B}  (|K_ctx| = 3)
+
+Evaluate f_perp(o=+1, k_FA, K_ctx) via T8:
+
+  For each k_j ∈ K_ctx, evaluate K5_prospective on k_o*=(F_A,+1) vs k_j:
+
+  k_A (Alice, BSM outcome a):
+    requires_K_joint = 1  (BSM setting — C_K exists)
+    (i)   t_FA < t_A  ✓  (F measures first, Alice does BSM later)
+    (ii)  k_o* ⊥ k_A? → Alice's BSM contradicts F_A's definite outcome in C_K
+    (iii) Auth(k_o* → k_A)? → K6: same C_K, V=1, within D_joint scope → Auth=1
+    → K5_prospective FIRES when o(k_A) ≠ +1
+    → I_A(+1) = 1 if A's outcome ≠ +1, else 0
+
+  k_FB (Bob's Friend, measures photon_b in {h,v}):
+    (ii) k_o* ⊥ k_FB? → Different photons (a vs b) → no direct contradiction
+    → K5_prospective does NOT fire → I_FB(+1) = 0 (always)
+
+  k_B (Bob, BSM on photon_b + F_B memory):
+    (ii) k_o* ⊥ k_B? → Bob measures photon_b, not photon_a → no direct
+    contradiction. (Via entanglement, indirect contradiction possible but
+    T8 uses conservative ⊥: direct only.)
+    → K5_prospective does NOT fire → I_B(+1) = 0
+
+  f_perp(+1) = (I_A + I_FB + I_B) / 3 = I_A(+1) / 3
+
+  For fixed Alice outcome: f_perp(+1) ≠ f_perp(−1) → δP ≠ 0.
+  Matches K9-S4 worked example result exactly.
+```
+
+| Property | Value |
+|---|---|
+| **Bridges axioms to** | K5_prospective (pre-instantiation evaluation) → K9_E f_perp (probability fraction). Structural derivation chain closing the gap between Layer 1 K5 and Layer 3 P9 |
+| **Layer 1 dependency** | K5_prospective (evaluation rules), K5 (⊥ primitive, binary), K6 (Auth, binary), K2 (temporal order, binary) |
+| **Layer 2 dependency** | T3 (K_ctx definition via T3-morphism — K_ctx is now formalized by T9; T8 reads K_ctx, does not redefine it). T9 (φ_ij = K8-constrained T1 embedding) supplies the morphism channel. |
+| **Level 4 dependency** | `requires_K_joint`, C_K existence (for K5_prospective firing precondition); `⊥_K` boundary clauses (inherited from K5_prospective — T8 adds no new Level 4 dependency) |
+| **EX anchor** | `N_QM_VVV_00029` (bādhaka / Override) — chain: K5 post-hoc → K5_prospective pre-instantiation (v29) → T8 frequency bridge → K9_E f_perp. Anchor strength: **STRONG** (structural chain, not conceptual link). BE anchor: `N_BE_00001` (bādhaka pramāṇa — uniform epistemic weight: every contradicting cognition counts equally in the bādhaka evaluation). QM anchor: `N_QM_00102` (Measurement Reversal) |
+| **BE lineage** | Parataḥ prāmāṇya (extrinsic validity): f_perp counts contradicting cognitions uniformly because each pramāṇa (valid cognition) carries equal epistemic weight. The fraction form reflects the Buddhist epistemological principle that validity is challenged by the NUMBER of contradictors, not by a weighted "strength." See `SYSTEM_Buddhist_Epistemology/system_be_full.md` N_BE_00001 (bādhaka pramāṇa) and N_BE_00005 (viruddha / Contradiction) |
+| **Claim class** | C — T8 is a structural frequency interpretation derived from Class C K5_prospective. The derivation is a statistical identity (expectation of binary indicators over uniform sample), not a new postulate. The only condition is that K_ctx provides a uniform sample space for K5_prospective evaluations |
+| **Freeze status** | Updatable (Layer 2 bridge). T8 does not modify Layer 1. If K5_prospective conditions (i)-(iii) change, T8 derivation updates automatically — it reads K5_prospective, does not redefine it |
+| **Update trigger** | If K5_prospective is revised; if K_ctx definition changes (e.g., weighting introduced → T8 weighted generalization applies); if a new axiom provides continuous contradiction strength metric |
+| **[A-E2] impact** | **SPLIT:** [A-E2a] fraction counting → DERIVED (no longer an assumption). [A-E2b] outcome filter → assumed but upgraded MODERATE (was WEAK). Net: WEAK → STRONG for the core counting mechanism |
+
+#### T8-H3 — BE Principle Justification: Uniform Epistemic Weight
+
+**Statement:**
+> The uniform weight `w_j = 1` assigned to each `k_j ∈ K_ctx` in T8's frequency interpretation is not an arbitrary modeling choice — it reflects a structural principle from Buddhist Pramāṇavāda epistemology: **every pramāṇa (valid cognition) carries equal epistemic standing in a bādhaka (contradiction) evaluation.** This principle — termed *samāna-pramāṇatā* (equal epistemic standing) — eliminates the need for a continuous contradiction-strength metric and provides philosophical justification for why K5/K6 primitives are binary.
+
+**BE Source Analysis:**
+```
+Dharmakīrti's definition of pramāṇa (Nyāyabindu 1.1, PV 2.1):
+  pramāṇam aviṣaṃvādi-jñānam
+  "A pramāṇa is non-deceptive knowledge."
+  → ED_BE_00075: Dharmakīrti (N_BE_00040) → aviṣaṃvāditva (N_BE_00234)
+
+Key insight — binary nature of validity:
+  Aviṣaṃvāditva is a BINARY property: knowledge is either non-deceptive
+  (pramāṇa) or deceptive (apramāṇa/bhrānti). There is no "partially
+  non-deceptive" cognition. A cognition that is 70% reliable but 30%
+  misleading is bhrānti (erroneous) — it fails the aviṣaṃvāditva criterion
+  categorically.
+
+Application to bādhaka (contradicting cognition):
+  For a later cognition to serve as bādhaka (contradictor) of an earlier
+  cognition, it must itself be a pramāṇa (K6 Auth condition (b): V(k2)=1).
+  Since pramāṇa status is binary, EVERY bādhaka carries the same
+  epistemic weight — there is no "stronger" or "weaker" contradictor.
+
+  Dharmakīrti's PV 2.47-48 (bādhakapramāṇa discussion):
+    A contradicting cognition voids the contradicted cognition not by
+    DEGREE of contradiction, but by the mere FACT of valid contradiction.
+    Multiple contradictors each carry full bādhaka force independently.
+
+Therefore in T8:
+  f_perp = (1/|K_ctx|) * Σ I_j(o)  with uniform weight w_j = 1
+
+  This is NOT an assumption that contradictions have "equal strength."
+  It is the RECOGNITION that binary pramāṇa/apramāṇa status provides
+  no gradation that could justify differential weighting.
+
+  If a future VVV-QMRF extension (e.g., K10) introduces a continuous
+  contradiction-strength metric grounded in arthakriyā (pragmatic
+  efficacy), then T8 generalizes naturally to weighted form:
+    f_perp_weighted = Σ w_j · I_j / Σ w_j
+  This is T8's built-in generalization path — see Update trigger.
+```
+
+**BE lineage mapping (3-node chain):**
+```
+N_BE_00040 (Dharmakīrti)
+  └─ED_BE_00075→ N_BE_00234 (aviṣaṃvāditva — non-deceptive cognition)
+                   └─→ Binary pramāṇa/apramāṇa distinction
+                        └─→ Uniform bādhaka weight → T8 w_j = 1
+
+N_BE_00001 (Pramāṇa / Valid cognition)
+  └─→ Every valid cognition satisfies aviṣaṃvāditva → equal standing
+
+N_BE_00006 (Bhrānti / Erroneous cognition)
+  └─→ Fails aviṣaṃvāditva → not a bādhaka → excluded from K_ctx by K6(b)
+```
+
+**Boundary clause:**
+This is an EPISTEMOLOGICAL interpretation, not a logical derivation. BE provides the philosophical framework for WHY binary primitives are appropriate; T8 provides the structural proof that binary primitives → uniform counting. The BE lineage does not independently prove the fraction form — it explains why no alternative weighting is philosophically motivated within the VVV-QMRF framework.
+
+| Property | Value |
+|---|---|
+| **BE source** | Dharmakīrti: `pramāṇam aviṣaṃvādi-jñānam` (Nyāyabindu 1.1). ED_BE_00075. PV 2.47-48 (bādhaka discussion). SYSTEM_Buddhist_Epistemology/system_be_full.md N_BE_00001, N_BE_00006, ED_BE_00075 |
+| **Role in T8** | Philosophical justification for uniform weight w_j = 1. Eliminates the question "why not weighted?" — because pramāṇa status is binary, no gradation exists to weight by |
+| **Strength** | MODERATE — this is interpretation, not direct textual citation of a "samāna-pramāṇatā" doctrine. The binary nature of pramāṇa is well-established; the application to f_perp counting is VVV-QMRF interpretation |
+| **Risk** | If Buddhist epistemology scholarship challenges the binary interpretation (e.g., if some traditions recognize degrees of pramāṇa), T8's uniformity remains justified on STRUCTURAL grounds (binary K5/K6 primitives) — the BE lineage is supplementary, not load-bearing |
+
+#### T8-H4 — Comparative Analysis: Why Fraction Form is the Unique Survivor
+
+**Statement:**
+> The fraction form `f_perp = |{k_j: ...}| / |K_ctx|` is not an arbitrary choice among equally viable alternatives. A systematic comparative analysis of four alternative functional forms shows that each alternative is independently eliminated by structural constraints from K1-K8, PP-2 v2 cancellation, or parameter economy. Fraction form is the UNIQUE survivor — the only functional form satisfying all five design constraints simultaneously.
+
+**Design Constraints (from K9-S1):**
+```
+(D1) OUTCOME-DEPENDENCE:  f_perp must vary with o to produce δP ≠ 0
+     (PP-2 v2: per-tuple multiplicative modulation cancels if f_perp is
+      outcome-independent → δP = 0 → K9_E = Born rule)
+
+(D2) K-SIDE PURITY:       f_perp must use only K-side primitives (⊥, Auth, V, cert)
+     (OI-1 flag: ρ-side inputs like quantum overlap are circular — they
+      use the very Born-rule probabilities K9_E is trying to modify)
+
+(D3) PARAMETER ECONOMY:   f_perp must not introduce new free parameters beyond β
+     (C-PARAM: ≤2 total parameters. β already counts as 1)
+
+(D4) BOUNDEDNESS:         f_perp ∈ [0, 1] for all possible K_ctx configurations
+     (C-NONNEG requires β·f_perp ≤ 1. f_perp ∈ [0,1] is sufficient)
+
+(D5) STRUCTURAL GROUNDING: Every component of f_perp must trace to K1-K8 or
+     flagged assumption (C-TRACE)
+```
+
+**Alternative Analysis:**
+```
+ALTERNATIVE A1 — Weighted by Quantum Overlap:
+  f_perp = Σ_j |⟨o|o_j⟩|² · I_j / Σ_j |⟨o|o_j⟩|²
+
+  VIOLATES (D2) — K-SIDE PURITY.
+  |⟨o|o_j⟩|² IS the Born-rule probability that K9_E is trying to modify.
+  Using it as a weight creates a CIRCULAR dependency:
+    f_perp depends on quantum overlap → which depends on Born rule →
+    which K9_E modifies → which depends on f_perp.
+  This is the Tier 4 OI-1 circularity flag exactly.
+  ELIMINATED by OI-1 boundary clause.
+
+  VERDICT: ❌ DEAD (circular ρ-side dependency)
+
+
+ALTERNATIVE A2 — Binary Contradiction Indicator:
+  f_perp = 1 if ∃k_j: k_j ⊥_K k_i ∧ o(k_j) ≠ o, else 0
+
+  VIOLATES (D1) — OUTCOME-DEPENDENCE.
+  f_perp ∈ {0, 1} for ALL outcomes simultaneously.
+  For a given K_ctx configuration:
+    If ANY k_j contradicts → f_perp = 1 for ALL outcomes o
+    → [1 − β·f_perp] = constant across o
+    → PP-2 v2 cancellation: constant multiplier cancels in Z_E
+    → δP = 0 → K9_E = Born rule identically.
+
+  PP-2 v2 proof: P(o) = Tr(E_o ρ) · (1-β) / Σ_o' Tr(E_o' ρ) · (1-β)
+                      = Tr(E_o ρ) · (1-β) / (1-β)
+                      = Tr(E_o ρ).  ∎
+
+  VERDICT: ❌ DEAD (PP-2 v2 cancellation — δP = 0)
+
+
+ALTERNATIVE A3 — Weighted by Auth "Strength":
+  f_perp = Σ_j Auth(k_j → k_i, C_K) · I_j / Σ_j Auth(k_j → k_i, C_K)
+
+  VIOLATES (D5) — STRUCTURAL GROUNDING.
+  Auth ∈ {0, 1} per K6 definition. There is NO continuous Auth strength
+  in K1-K8. K6 defines Auth as a binary relation satisfying three
+  binary conditions (a)-(c). Weighting by Auth would require:
+    (a) Either redefining Auth as continuous → modifies Layer 1 (frozen)
+    (b) Or inventing a new "Auth strength" metric → adds assumption
+
+  Even if Auth weight = Auth binary value:
+    Auth(k_j → k_i) = 1 for all k_j with V=1 in same C_K (K6 conditions)
+    → Uniform weight = 1 for all valid contradictors
+    → Reduces to fraction form identically.
+
+  VERDICT: ❌ DEAD (Auth is structurally binary — K6)
+
+
+ALTERNATIVE A4 — Weighted by Temporal Distance:
+  f_perp = Σ_j exp(−|t_j − t_i|/τ) · I_j / Σ_j exp(−|t_j − t_i|/τ)
+
+  VIOLATES (D3) — PARAMETER ECONOMY.
+  Introduces new free parameter τ (temporal decay constant).
+  C-PARAM limit: ≤2 total parameters. β + τ = 2 → saturation.
+  No room for future parameters (e.g., measurement-specific β).
+  Also: K2 discreteness (S2-Δ lemma) makes temporal distance between
+  registration events undefined at K-side level between consecutive
+  events — there is no continuous time between k_i and k_{i+1}.
+
+  VERDICT: ❌ DEAD (parameter budget + K2 discreteness)
+
+
+ALTERNATIVE A5 — Fraction Form (T8 baseline):
+  f_perp = (1/|K_ctx|) · Σ_j I_j(o)
+
+  SATISFIES ALL FIVE CONSTRAINTS:
+    (D1) ✓ Outcome-dependent via I_j(o) filter
+    (D2) ✓ Pure K-side: ⊥ (K5), Auth (K6), temporal order (K2)
+    (D3) ✓ Zero new parameters (β is separate)
+    (D4) ✓ f_perp ∈ [0,1] by construction (average of indicators)
+    (D5) ✓ Every component traced: I_j ← K5_prospective ← K5/K6/K2
+
+  UNIQUE SURVIVOR: A1-A4 all independently eliminated by structural
+  constraints. A5 is the ONLY functional form satisfying all five.
+
+  VERDICT: ✅ UNIQUE VIABLE FORM
+```
+
+**Summary matrix:**
+
+| Alternative | (D1) Outcome-dep | (D2) K-purity | (D3) Param econ | (D4) Bounded | (D5) Grounded | Verdict |
+|-------------|:---:|:---:|:---:|:---:|:---:|---------|
+| A1: Quantum overlap weight | ✓ | ❌ CIRC | ✓ | ✓ | ❌ | DEAD |
+| A2: Binary indicator | ❌ CANCEL | ✓ | ✓ | ✓ | ✓ | DEAD |
+| A3: Auth-weighted | ✓ | ✓ | ✓ | ✓ | ❌ | DEAD |
+| A4: Temporal-weighted | ✓ | ✓ | ❌ +τ | ✓ | ❌ | DEAD |
+| **A5: Fraction (uniform)** | **✓** | **✓** | **✓** | **✓** | **✓** | **PASS** |
+
+**Negative evidence strength:**
+The elimination of A1-A4 is NOT a proof of uniqueness in the mathematical sense (there could exist A6, A7, ... not yet considered). However, the four alternatives span the NATURAL design space:
+- A1: Continuous weight from ρ-side (most "physical" alternative)
+- A2: Simplest possible binary form
+- A3: Weight from existing K-side primitive (Auth)
+- A4: Weight from temporal structure
+
+That all four natural alternatives fail independently suggests the fraction form is not merely "chosen" — it is the ONLY form that survives the constraint gauntlet. This constitutes strong NEGATIVE EVIDENCE for uniqueness.
+
+**K9-S6 skip justification (reinforced):**
+K9-S6 (New Candidate Generation) was skipped because the candidate pool was deemed sufficient. H4 strengthens this justification: the natural design space around fraction form has been searched, and alternatives fail systematically. Unless a new structural primitive is added to K1-K8 (e.g., continuous contradiction strength), no qualitatively different candidate is expected to emerge.
+
+| Property | Value |
+|---|---|
+| **Method** | Constraint-based elimination — NOT exhaustive search. Four natural alternatives covering the design space (continuous ρ-weight, binary, Auth-weight, temporal-weight) independently eliminated |
+| **Strength** | MODERATE — negative evidence, not mathematical uniqueness proof. The fraction form is the ONLY KNOWN SURVIVOR, not the ONLY POSSIBLE form. Future alternatives (A6+) not ruled out |
+| **Relationship to T8** | T8 provides positive derivation (f_perp = E[I(K5_prospective)]). H4 provides negative evidence (why NOT the alternatives). Together: positive + negative → strong justification |
+| **Relationship to H3** | H3 explains WHY the design space is constrained to binary primitives (BE: binary pramāṇa status). H4 confirms that binary primitives → fraction form uniquely |
+| **Limitation** | If a future axiom introduces continuous contradiction strength, A1/A3/A4 become viable and the fraction form may be superseded. T8's generalization path handles this — the baseline w_j=1 is the uniform special case |
+
+#### T8-H1 — Structural Uniqueness: Uniform Weight is Forced, Not Chosen
+
+**Statement:**
+> Under K1-K8 binary primitives and K6 non-hierarchy within a shared comparison context C_K, the uniform weight `w_j = 1` for all `k_j ∈ K_ctx` is the UNIQUE admissible weighting for `f_perp` aggregation. The fraction form `f_perp = (1/|K_ctx|) Σ_j I_j(o)` is therefore not merely the "simplest choice" among viable alternatives — it is STRUCTURALLY FORCED by the binary type system of K1-K8. Any non-uniform weighting would require a continuous-valued primitive that does not exist in K1-K8. This upgrades [A-E2b] from an assumed outcome filter to a structurally determined necessity.
+
+**Formal proof (structural uniqueness, not mathematical uniqueness):**
+
+```
+THEOREM (T8-H1 — Uniformity from Binary Primitives):
+
+  Let K_ctx = {k_1, ..., k_n} be a finite context set.
+  Let I_j(o) ∈ {0,1} be the K5_prospective firing indicator for k_j.
+  Let f_perp(o) = Σ_j w_j · I_j(o) / Σ_j w_j  for weights w_j ∈ [0,∞).
+    (This is the most general linear aggregation of binary indicators.
+     T8 proves f_perp = E_w[I_j]; the weighted sum is the general form.)
+
+  CLAIM: Under K1-K8 constraints, w_j = const for all j ∈ K_ctx.
+  Therefore f_perp(o) = (1/n) · Σ_j I_j(o) uniquely.
+
+
+  PROOF:
+
+  LEMMA 1 (Weight source constraint):
+    Any weight w_j assigned to k_j must derive its value from:
+      (a) K1-K8 primitives evaluated on (k_i, k_j, C_K), OR
+      (b) A new free parameter, OR
+      (c) A ρ-side quantum mechanical quantity.
+    
+    Options (b) and (c) are blocked:
+      (b) → violates C-PARAM (parameter budget: β already counts as 1)
+      (c) → violates OI-1 K-side purity (circular: uses Born rule to modify Born rule)
+    
+    Therefore w_j must be a function of K1-K8 primitives only.
+    ∎
+
+  LEMMA 2 (Binary type inventory):
+    The K1-K8 primitives evaluable on the pair (k_i, k_j) within C_K are:
+    
+    | Primitive | Axiom | Type | Values |
+    |-----------|-------|------|--------|
+    | k_j ⊥_K k_i | K5 | Binary | {0,1} |
+    | Auth(k_j → k_i, C_K) | K6 | Binary | {0,1} |
+    | V(k_j) | K4 | Binary | {0,1} |
+    | cert(k_j) | K3 | Structural constant | {1} within K_R |
+    | k_i <_joint k_j | K2/T1 | Binary relation | {0,1} |
+    | k_j ∈ C_K | K5/K6 | Binary (membership) | {0,1} |
+    | t(k_j) | K2 | Timestamp | Discrete index |
+    
+    CRITICAL OBSERVATION: All primitives are BINARY-valued in {0,1},
+    except t(k_j) which is a discrete index. There is NO K1-K8 primitive
+    that takes CONTINUOUS values in [0,∞) or (0,1).
+    
+    Therefore any function w(k_i, k_j, C_K) built from K1-K8 primitives
+    can only take values in a discrete set generated by Boolean combinations
+    of binary inputs. A continuous weight w_j ∈ [0,∞) cannot be constructed
+    from purely binary primitives without an external scaling parameter.
+    ∎
+
+  LEMMA 3 (Temporal weight impossibility):
+    The only non-binary primitive is t(k_j) ∈ T_R (K2). Could temporal
+    proximity serve as a continuous weight source?
+    
+    (a) K2 S2-Δ lemma: "Between any two consecutive registration events,
+        there is no K-side registration-state identity." The time between
+        events is UNDEFINED as a K-side quantity — K2 defines only the
+        ORDER relation <_R, not a metric |t_j - t_i|.
+    
+    (b) T1 supplies cross-structure temporal relations from laboratory
+        history (Level 4 input), but these encode only ORDER (t_F < t_W),
+        not continuous duration.
+    
+    (c) Even if a metric existed, converting it to a weight would require
+        a decay constant τ (new parameter) → violates C-PARAM.
+    
+    Therefore temporal information cannot supply continuous weights. ∎
+
+  LEMMA 4 (Permutation invariance from K6):
+    K6 states: "Cross-registration authority is NOT a hierarchy of
+    observers; it is a structural relation within a shared comparison
+    context." Within a single C_K, Auth(k_j → k_i) = 1 for all k_j
+    satisfying K6 conditions (a)-(c). K6 explicitly permits mutual
+    authority and rejects observer hierarchy.
+    
+    Therefore, ALL k_j ∈ K_ctx that satisfy K6 conditions (same C_K,
+    V=1, within D_joint scope) have IDENTICAL structural standing
+    with respect to the contradiction evaluation against k_i.
+    
+    Consequence: f_perp must be INVARIANT under any permutation σ
+    of K_ctx elements:
+      f_perp(I_1, ..., I_n) = f_perp(I_{σ(1)}, ..., I_{σ(n)})
+    
+    Proof of invariance: If observer j and observer k could be assigned
+    different weights w_j ≠ w_k despite having identical Auth standing,
+    the weight difference would constitute a hierarchy — contradicting
+    K6's explicit "NOT a hierarchy" clause. ∎
+
+  LEMMA 5 (Permutation invariance → equal weights):
+    Let f_perp(I_1, ..., I_n) = Σ_j w_j · I_j / Σ_j w_j with weights w_j.
+    
+    Suppose ∃ a, b such that w_a ≠ w_b.
+    Choose indicator configuration: I_a = 1, I_b = 0, all other I_j = 0.
+    
+    Before swap:  f_perp = w_a / (w_a + w_b + Σ_{j≠a,b} w_j)
+    After σ=(a↔b): f_perp' = w_b / (w_a + w_b + Σ_{j≠a,b} w_j)
+    
+    For permutation invariance: f_perp = f_perp' ⇒ w_a = w_b.
+    Contradiction. Therefore w_j = w for all j. ∎
+
+  COROLLARY (Unique form):
+    With w_j = w (constant), the weighted average reduces to:
+      f_perp = Σ_j w · I_j / Σ_j w = w · Σ_j I_j / (w · n) = (1/n) · Σ_j I_j
+    
+    This is the FRACTION FORM — and it is the UNIQUE form satisfying
+    Lemmas 1-5. Any deviation from fraction form requires either:
+      - Non-uniform weights (→ violates K6 non-hierarchy, Lemma 4-5)
+      - Continuous weight source (→ unavailable in binary K1-K8, Lemma 2-3)
+      - External parameter (→ violates C-PARAM, Lemma 1)
+      - ρ-side input (→ violates K-side purity, Lemma 1)
+    
+    All escape routes are independently blocked. ∎
+```
+
+**Scope and limitations:**
+
+This is a STRUCTURAL uniqueness proof, not a mathematical uniqueness proof in the sense of functional equations over ℝⁿ. The proof shows that:
+1. Any alternative weighting requires a resource (continuous primitive, parameter, ρ-input) that K1-K8 does not provide.
+2. The only K1-K8-compatible weighting is uniform.
+3. Therefore, within the VVV-QMRF axiomatic system, fraction form is unique.
+
+A mathematical uniqueness proof over ALL possible functions f: {0,1}ⁿ → [0,1] would be a stronger result but would require formalizing the language of K1-K8 as a formal system — which is a separate undertaking (and would still arrive at the same conclusion, since the binary type system restricts the definable functions).
+
+**What this does NOT prove:**
+- That fraction form is the unique probability modifier in ALL possible extensions of QM (only within K1-K8).
+- That a future K10 (continuous contradiction strength) couldn't generalize to weighted form (T8 already has this generalization path).
+- That c²/n², c³/n³, or other non-linear counting functions are impossible (they satisfy permutation invariance but violate ADDITIVITY — see below).
+
+**Additivity supplement (why c²/n² is excluded):**
+
+The non-linear alternative `f_perp = (c/n)²` satisfies permutation invariance but violates a natural structural condition:
+
+```
+ADDITIVITY (implicit in K5 binary evaluation):
+  When K_ctx = C₁ ∪ C₂ with C₁ ∩ C₂ = ∅, the contribution of each
+  sub-context should combine linearly:
+  
+  f_perp(C₁ ∪ C₂) = (|C₁|·f_perp(C₁) + |C₂|·f_perp(C₂)) / |C₁ ∪ C₂|
+  
+  This follows from K5's independent evaluation: each k_j is evaluated
+  for K5_prospective INDEPENDENTLY — there is no interaction term
+  between contradictors in K5's conditions (i)-(iii).
+
+  Fraction form: f_perp = c/n satisfies this.
+    f_perp(C₁∪C₂) = (c₁+c₂)/(n₁+n₂) = (n₁·(c₁/n₁) + n₂·(c₂/n₂))/(n₁+n₂) ✓
+  
+  Quadratic form: f_perp = (c/n)² violates this.
+    (c₁+c₂)²/(n₁+n₂)² ≠ (n₁·(c₁/n₁)² + n₂·(c₂/n₂)²)/(n₁+n₂) in general ✗
+```
+
+| Property | Value |
+|---|---|
+| **Theorem type** | Structural uniqueness — proof by type-system exhaustion (binary primitives → uniform weight), not functional-equation uniqueness over ℝⁿ |
+| **Key dependency** | K6 non-hierarchy clause ("NOT a hierarchy of observers") — this is the LOAD-BEARING axiom for permutation invariance (Lemma 4). If K6 were revised to permit observer hierarchy, Lemma 4 would fail and uniform weight would no longer be forced |
+| **K6 load-bearing audit** | K6's non-hierarchy clause was originally a BOUNDARY clarification (what Auth is NOT). T8-H1 elevates it to a LOAD-BEARING structural role: it is the sole K1-K8 justification for permutation invariance → uniform weight. This is acceptable because: (a) K6 is part of the frozen Layer 1; (b) the non-hierarchy clause has been stable since v1.0; (c) it is independently motivated by BE lineage (all pramāṇas have equal standing — H3) |
+| **Relationship to H3** | H3 provides the BE philosophical basis for non-hierarchy (all pramāṇas equal). T8-H1 provides the STRUCTURAL proof that non-hierarchy → uniform weight. H3 + T8-H1 together close the loop: philosophical ground + structural necessity |
+| **Relationship to H4** | H4 eliminated 4 named alternatives by specific constraints. T8-H1 generalizes this: ANY alternative is eliminated by the type system, not just the 4 enumerated ones. H4 = specific instances; T8-H1 = general proof |
+| **Claim class** | C — structural proof within VVV-QMRF axiomatic system. The proof is valid conditioned on K1-K8 (specifically K6 non-hierarchy + binary primitives). A mathematical uniqueness proof over all functions would be Class B |
+| **[A-E2] impact** | **[A-E2b] outcome filter `o(k_j) ≠ o` is now STRUCTURALLY DETERMINED, not assumed.** The outcome filter is the ONLY way to construct an outcome-dependent binary indicator from K5_prospective. Any alternative filter (e.g., quantum overlap) uses resources unavailable in K1-K8. [A-E2] status: WEAK → STRONG (counting, T8) → **BOTH STRONG** (counting + filter, T8-H1). The assumption is eliminated — what remains is the recognition that K1-K8 primitives admit exactly one form |
+| **Residual** | The only residual non-uniqueness is the choice of `≠` vs `=` in the outcome filter (`o(k_j) ≠ o` vs `o(k_j) = o`). This is resolved by: (a) PP-2 v2 — `=` filter makes f_perp outcome-INDEPENDENT → cancellation → δP=0, so `≠` is forced; (b) BE: a contradictor must register a DIFFERENT outcome to serve as bādhaka (same outcome would confirm, not contradict). Therefore `≠` is also structurally forced |
+
+### K7_trace — Closure Transition Record (Conservative Extension of K7)
+
+> **Promotion record (2026-05-27):** Promoted from BB-VVV local definition (`09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §18`) to canonical Layer 2. RCA gate: 4.77/5 aggregate (Theoretical_Integration_plan.md v1). Pre-promotion RCA: 4.48/5 (`rca_k7_trace_gate.md`). Second consumer: 3-OBS hierarchical transition — T4-H VERIFIED (2026-05-28); 3-OBS upgraded to Class C. Third consumer (2026-05-28): FR-VVV — Frauchiger & Renner (2018) avoidance chain Step 2 (V_FR2 PASS, `fr_vvv_k7trace_consumer_verification.py`); K7_trace confirmed scenario-agnostic across B&B (angle-sweep) and FR (coherent/projective).
+
+```
+K7_trace — Closure Transition Record Extension (Conservative Extension of K7)
+Layer:        2 (conservative extension of K7)
+Parent axiom: K7 (Registration Process Closure)
+Precedent:    K5_prospective (conservative extension of K5, v29)
+
+Statement:
+  At the moment of closure t_close(K_R), when V_prov(k) → V_final(k)
+  for all k ∈ K_R [per K7], the closure event itself carries a
+  structural record:
+
+  Δ_closure(k, t_close) := V_prov(k) − V_final(k)     ∈ {−1, 0, 1}
+
+  where:
+    Δ_closure = 0   →  no validity change at closure (most common)
+    Δ_closure = 1   →  V_prov was 1, V_final is 0 (K5 invalidation confirmed)
+    Δ_closure = −1  →  impossible under K4+K5 (V_prov cannot be 0 with V_final 1)
+
+  Δ_closure is a PROPERTY OF THE CLOSURE EVENT, not a new k ∈ K_R.
+  Δ_closure is computed from values that already exist in K7 at closure.
+  Δ_closure does NOT create new tuples, does NOT modify V_final, and
+  does NOT extend K_R beyond t_close.
+
+Relationship to K7 (parent axiom):
+  K7 (closure):  V_prov(k) → V_final(k) at t_close. K_R closed.
+                 Target: actual tuples k ∈ K_R. Effect: V finalized.
+  K7_trace:      Δ_closure(k) := V_prov(k) − V_final(k) at t_close.
+                 Target: same tuples k ∈ K_R. Effect: NONE on V.
+                 Records: transition metadata only.
+  Same closure. Same tuples. No new structural effect.
+  K7 outputs V_final. K7_trace outputs Δ_closure (derivative information).
+```
+
+| Property | Value |
+|---|---|
+| **Layer** | 2 (conservative extension) |
+| **Parent** | K7 (Closure) |
+| **Precedent** | K5_prospective (same conservative extension pattern) |
+| **Level 4 dependency** | None — derives from K7 closure values at t_close only |
+| **BE lineage** | Kṣaṇabhaṅgavāda (N_BE_00029): closure is a kṣaṇa; Δ_closure is its saṃskāra (causal imprint of a vanished moment). Arthakriyā (N_BE_00022): Δ_closure records whether closure had non-trivial causal consequences |
+| **Claim class** | C-canonical (conservative extension; promoted from Class D-local 2026-05-27) |
+| **Freeze status** | Updatable (Layer 2 bridge). If K7 closure definition changes, K7_trace updates. |
+| **Consumers** | (1) T_BB V3 Step 1: Δ_closure provides formal V_prov substitute after closure. (2) D_enc (§D_enc below): parent for transition-encoding predicate. (3) 3-OBS hierarchical transition — T4-H VERIFIED (2026-05-28); 3-OBS upgraded to Class C. (4) FR-VVV avoidance chain Step 2 — Frauchiger & Renner (2018) K5→K6→V=0 path (V_FR2 PASS 2026-05-28, `fr_vvv_k7trace_consumer_verification.py`); K7_trace scenario-agnostic across B&B (angle-sweep) and FR (coherent/projective). |
+| **Boundary** | K7_trace does NOT restore V_prov. Does NOT create new registration tuples. Does NOT reverse K5 invalidation. Does NOT provide o(k) content. Δ_closure records a magnitude (0 or 1), not a state. |
+| **Source** | `09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §18` (local origin); canonical as of v2.4 (2026-05-27) |
+
+---
+
+### D_enc — Transition-Encoding Registration Act (Layer 2 Semantic Definition)
+
+> **Promotion record (2026-05-27):** Promoted from BB-VVV local definition (`09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §19`) to canonical Layer 2. RCA gate: 4.77/5 aggregate (same gate as K7_trace; Theoretical_Integration_plan.md v1). Pre-promotion RCA: 4.67/5 (`rca_g9_d_enc_gate.md`). Resolves G9 (T_BB Step 2 completion).
+
+```
+Definition D_enc — Transition-Encoding Registration Act (Layer 2)
+Layer:     2 (semantic definition, no axiom)
+Parent:    K7_trace (§K7_trace above)
+Precedent: K5_prospective evaluation mode (binary classification of hypothetical act)
+
+Let K_R be a closed K-space (t ≥ t_close(K_R)).
+Let k_F ∈ K_R have Δ_closure(k_F, t_close) computed per K7_trace.
+
+A registration act M_aware in K_R (or in K_R' sharing a comparison
+context C_K with K_R) ENCODES TRANSITION INFORMATION about k_F iff:
+
+  Enc(M_aware, k_F) = 1  iff  o(M_aware | Δ_closure(k_F) ≠ 0)
+                                ≠ o(M_aware | Δ_closure(k_F) = 0)
+
+Equivalently: M_aware encodes transition information iff removing
+the Δ_closure ≠ 0 fact would change o(M_aware).
+
+Structural properties:
+  (i)   Enc is a binary predicate on (M_aware, k_F) pairs
+  (ii)  Enc does NOT modify V, cert, t, or M of any tuple
+  (iii) Enc does NOT create new tuples in any K-space
+  (iv)  Enc ONLY classifies existing or hypothetical M_aware acts
+  (v)   Enc requires K7_trace (Δ_closure must be defined)
+```
+
+| Property | Value |
+|---|---|
+| **Layer** | 2 (semantic definition) |
+| **Parent** | K7_trace (Δ_closure must be defined before Enc can be evaluated) |
+| **Precedent** | K5_prospective — same pattern: binary classification of hypothetical act |
+| **Level 4 dependency** | None (binary predicate over K7_trace values; no ρ-side or Level 4 input) |
+| **BE lineage** | Svabhāvapratibandha-tadutpatti (N_BE_00021): Δ_closure (hetu) has causal essential relation to o(M_aware) (sādhya); Enc = 1 iff this causal bond exists. Vyāpti (N_BE_00019): Enc counterfactual IS the vyāpti test. Arthakriyā (N_BE_00022): Enc tests whether Δ_closure has causal efficacy on o(M_aware). |
+| **Claim class** | C-canonical (semantic definition; promoted from Class D-local 2026-05-27) |
+| **Freeze status** | Updatable (Layer 2 semantic definition). If K7_trace revised, D_enc updates. If K5_prospective evaluation pattern changes, D_enc generalization path updates. |
+| **Consumers** | T_BB V3 Step 2 (COMPLETE via D_enc): Enc(M_aware, k_F) = 1 → requires_K_joint(M_aware, M_W) = 1 → C_K formed → K5 fires → V(M_aware) = 0 → no-awareness derived. |
+| **Boundary** | D_enc does NOT create new tuples. Does NOT modify V, cert, or outcome of any existing tuple. The counterfactual o(M_aware | Δ ≠ 0) is a hypothetical evaluation mode only — it does not instantiate a new registration act. |
+| **Source** | `09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md §19` (local origin); canonical as of v2.4 (2026-05-27) |
+
+---
 
 ### Layer 2 Summary / Tổng kết Tầng 2
 
@@ -1193,10 +2026,14 @@ F-T7-01 (T5 dependency):
 | T1 | K_joint construction | `requires_K_joint`, `D_joint`, embeddings | Pending | Theorem statement updates; K1-K8 unchanged |
 | T2 | ⊥_K derivation | `AdmJoint` (i)-(v), `⊥_K` boundary clauses | Pending | Derivation chain updates; K1-K8 unchanged |
 | T3 | Bridge_EWF formalization | `Bridge_EWF` lemma, **AJVS** (Semantic Postulate Layer 0.5 — relativization defense, formalized) | Pending | Derivation chain may need revision if AJVS challenged; K1-K8 unchanged |
-| T4 | N-observer generalization | All Level 4, generalized to N; **T4-H** Colimit Existence Hypothesis (conditional) | New — Class D | Conditional on T4-H; independently updatable |
-| T5 | K_joint composition (algebraic associativity) | `requires_K_joint`, `D_joint`, `AdmJoint` (per T1+T4) | Conditional on T4-H | K_joint composition structure updates; K1-K8 unchanged |
+| T4 | N-observer generalization | All Level 4, generalized to N; **T4-H** Colimit Existence THEOREM (4/4 VERIFIED 2026-05-27) | Class D → pending Class C upgrade (Level 4 freeze gate remaining) | Independently updatable; T4-H no longer a gate |
+| T5 | K_joint composition (algebraic associativity) | `requires_K_joint`, `D_joint`, `AdmJoint` (per T1+T4) | T4-H gate resolved (2026-05-27); pending Level 4 freeze | K_joint composition structure updates; K1-K8 unchanged |
 | T6 | Decoherence-induced registration update (Path A: K5 invalidation; Path B: k_new instantiation) | `requires_K_joint`, C_K, `⊥_K` boundary clauses (Path A only) | Pending Level 4 freeze | Path A K5 conditions update; K3 intrinsic cert unchanged |
-| T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | Conditional on T4-H + Level 4 + E15 | If E15 IRB changes or T4-H fails; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
+| T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | T4-H gate resolved (2026-05-27); pending Level 4 freeze + E15 wording | If E15 IRB changes; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
+| T8 | K5_prospective Frequency Bridge — f_perp = E[I(K5_prospective fires)]; upgrades [A-E2] WEAK → STRONG | `requires_K_joint`, C_K (via K5_prospective); `⊥_K` boundary clauses (inherited from K5_prospective) | Updatable (Layer 2). Derivation is a statistical identity over binary K5/K6 primitives. Conditional on K_ctx uniformity. | If K5_prospective revised; if K_ctx definition changes (weighting); if new continuous contradiction-strength axiom added → T8 weighted generalization |
+| T9 | K_ctx Construction Theorem (T3-Morphism Channel Formalization) — φ_ij = i_j (K8-constrained T1 embedding); 5 lemmas (L1-L5); [A-E1] FULLY ELIMINATED | `requires_K_joint`, C_K (via K5 precondition); `D_joint` scope (via K6 Auth — inherited). No NEW Level 4 dependency. | Updatable (Layer 2). φ_ij = i_j identification holds for any T1-supplied embedding; structural core (L1-L2) is T1-independent — K8 constraint alone determines φ_ij. | If T1 K_joint construction revised; if K5 requires_K_joint scope changes; if K8 field-preservation constraint modified |
+| K7_trace | Closure Transition Record (Conservative Extension of K7) — Δ_closure(k) := V_prov(k) − V_final(k) at t_close ∈ {−1,0,1}; metadata of closure event (no new tuples, no V modification); enables T_BB Step 1; consumers: 3-OBS (T4-H VERIFIED 2026-05-28) + FR-VVV avoidance chain (V_FR2 PASS 2026-05-28). Promoted from BB-VVV local §18 to canonical Layer 2 (2026-05-27). RCA 4.77/5. | None (derives from K7 closure values only). No Level 4 dependency. | Updatable (Layer 2 conservative extension). Promoted from Class D-local (BB-VVV §18) to Class C-canonical (2026-05-27). | If K7 closure definition changed; otherwise self-contained. |
+| D_enc | Transition-Encoding Registration Act (Layer 2 Semantic Definition) — Enc(M_aware, k_F) = 1 iff o(M_aware\|Δ≠0) ≠ o(M_aware\|Δ=0); binary counterfactual predicate; enables T_BB Step 2 (G9 CLOSED, G1 CLOSED); no new tuples, no V modification. Promoted from BB-VVV local §19 to canonical Layer 2 (2026-05-27). RCA 4.77/5. | None (binary predicate over K7_trace values; no ρ-side or Level 4 dependency). | Updatable (Layer 2 semantic definition). Promoted from Class D-local (BB-VVV §19) to Class C-canonical (2026-05-27). | If K7_trace revised (parent); otherwise self-contained. |
 
 ---
 
@@ -1217,7 +2054,7 @@ F-T7-01 (T5 dependency):
 | 10 | Update paper v2.0 Section 7.2 deferred item #5 status | After community feedback on this document | Low |
 | 11 | RCA re-audit after community feedback | After Level 4 freeze and T1-T3 finalization | High |
 | 12 | `CHANGELOG.md` §3.3 Operational Bridge semantic dependency on K4-K7 untracked | `CHANGELOG.md` §3.3 lists 7 sufficient-condition bridges (Condition A, B, B2, C, D, E, ODC_K) for raising `requires_K_joint`. The verdict notes B, B2, and ODC_K have indirect semantic dependency on K4-K7 validity propagation, but the table does not annotate which K-axioms each Condition row depends on. Add K-axiom dependency annotations (e.g., K4, K5, K7) to each §3.3 Condition row. Note: the predicate-level mapping (σ, V, ⊥, Auth, D_joint, requires_K_joint, C_K → K-axioms) is a separate task belonging to Layer 4 §4.4, not to §3.3. | Medium |
-| 13 | **Probability postulate (K9/P9)** | **Partially Addressed** — K9-S8 defines joint probability composition law ($P9-JC$) for two observers, proving Marginalization Cancellation. However, it remains a postulate rather than derived from K1-K8. Full Layer 1 or Layer 2 formal integration in this document is still pending. | **Critical** |
+| 13 | **Probability postulate (K9/P9)** | **Strengthened (2026-05-24)** — T8 bridges K9_E f_perp to K5_prospective: [A-E2] FULLY ELIMINATED (T8-H1, 5 lemmas). T9 formalizes φ_ij morphism channel: [A-E1] FULLY ELIMINATED (L1-L5, 5 lemmas). Only [A-E3] (β universal) remains — 1/4 original assumptions. Full Layer 1/2 formal integration: T8 provides K5 → K5_prospective → T8 → f_perp → K9_E chain; T9 provides K8 → T1 → φ_ij → K_ctx structural foundation. Status: "Structurally Anchored." | **Critical → Medium** |
 | 14 | **Non-circular data comparison** | **Ongoing** — Known that marginal CHSH correlators cannot test the deviation due to Marginalization Cancellation. A genuine non-circular comparison requires extracting individual conditional correlators or joint outcome histograms from Proietti Figure 3 raw data. | **Critical** |
 | 15 | **Code consistency** | **Addressed (fits/K9S9)** — Formalized and implemented the exact P9-JC conditional prediction engine (`K9S9_conditional_predictions.py`), achieving 11% deviation at beta=0.3. Approximations in `k9e_predictor.py` and `d1_blk1_4point_fit.py` are deprecated. | High |
 | 16 | **Numerical predictions in main document** | **Ongoing** — First genuine numerical predictions generated in `plan/k9_analysis/K9S9_conditional_predictions.md`. Stating them formally in this main document is pending community review. | **Critical** |

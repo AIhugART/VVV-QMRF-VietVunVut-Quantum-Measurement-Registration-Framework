@@ -3,10 +3,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF-EX Plan — RCA Checkpoint
 
 > **Purpose:** Single-source checkpoint for all RCA findings applied to `vvv-qmrf-ex-plan.md`. Tracks which fixes are applied at which plan version, and which findings remain open.
-> **Last updated:** 2026-05-21 (Phase 11 v1.7 catch-up — added F-RCA-15 from KE-SC threshold tightening)
-> **Plan current version:** v1.7 EXECUTED
-> **Total findings to date:** 26 (3 v0→v1.0 isolation + 6 v1.0→v1.1 RCA review + 1 Phase 1 execution + 8 post-execution audit v1.2→v1.3 + 4 plan-implementation audit v1.4→v1.5 + 3 Phase 9 execution v1.5→v1.6 + 1 Phase 11 threshold tightening v1.6→v1.7)
-> **Status:** Phases 0–11 ✅ ALL COMPLETE. Closed findings: 25 (v1.6 prior) + F-RCA-15 (1 Phase 11 v1.7) = **26 closed**. **0 open findings.**
+> **Last updated:** 2026-05-29 (source snapshot sync RCA — added F-RCA-23)
+> **Plan current version:** v1.8+source-snapshot-sync
+> **Total findings to date:** 27 (3 v0→v1.0 isolation + 6 v1.0→v1.1 RCA review + 1 Phase 1 execution + 8 post-execution audit v1.2→v1.3 + 4 plan-implementation audit v1.4→v1.5 + 3 Phase 9 execution v1.5→v1.6 + 1 Phase 11 threshold tightening v1.6→v1.7 + 1 source snapshot sync F-RCA-23)
+> **Status:** Phases 0–11 ✅ ALL COMPLETE. Source snapshot sync RCA closed as F-RCA-23. **27 closed. 0 open findings.**
 
 ---
 
@@ -24,6 +24,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 | F5 | 🟡 Medium (revised from 🟢 Low) | RCA review of v1.0 (this session) | v1.1 | ✅ Closed | §10 — Per-node K/ρ coverage criteria |
 | F6 | 🔴 High (revised from 🟢 Low) | RCA review of v1.0 (this session) | v1.1 | ✅ Closed | §7 Phase 0 — Environment Setup |
 | F7 | 🟡 Medium | Phase 1 execution — VVV node count discrepancy | v1.2 | ✅ Closed | §1.1, §2.2, §4.2, §5.2 (code comment), §7 Step 1.2, §7 Step 3.2-3.3, §12 |
+| F-RCA-23 | 🟡 Medium | `rca_source_snapshot_sync_2026_05_29.md` | source-snapshot-sync 2026-05-29 | ✅ Closed | `vvv-qmrf-ex-plan.md` §26 + `SNAPSHOT_MANIFEST.md` |
 
 ---
 

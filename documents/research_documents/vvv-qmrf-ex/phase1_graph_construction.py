@@ -4,10 +4,10 @@ Plan: vvv-qmrf-ex-plan.md §7 Phase 1 (Steps 1.1–1.6)
 Execution: C:/Users/PC/AppData/Local/Programs/Python/Python312/python.exe
 
 Steps:
-  1.1 Parse 263 BE nodes  (system_be_full.md)
-  1.2 Parse  55 VVV nodes (node_QM_VVV.md)
-  1.3 Parse 105 QM nodes  (system_qm_full.md)
-  1.4 Parse 115 VVV edges + 15 BR bridges + 19 draft bridges
+  1.1 Parse 263 BE nodes  (source_snapshot/system_be/system_be_full.md)
+  1.2 Parse  62 VVV nodes (source_snapshot/vvv_qmrf_core/node_QM_VVV.md)
+  1.3 Parse 105 QM nodes  (source_snapshot/system_qm/system_qm_full.md)
+  1.4 Parse 131 VVV edges + 15 BR bridges + 19 draft bridges from source_snapshot
   1.5 Build NetworkX MultiDiGraph → save vvv_qmrf_ex_graph.json
   1.6 Validate: zero dangling edge refs (orphan nodes permitted per F3 RCA fix)
 """
@@ -30,12 +30,14 @@ SUFFIX = os.environ.get("VVV_QMRF_EX_SUFFIX", "")
 BASE = Path("c:/Stable_Diffusion/Buddhist_Epistemology_Quantum_Measurement")
 OUT  = BASE / "documents/research_documents/vvv-qmrf-ex/data"
 
-BE_SOT       = BASE / "SYSTEM_Buddhist_Epistemology/system_be_full.md"
-VVV_NODES    = BASE / "documents/research_documents/vvv-qmrf-ex/source_snapshot/vvv_qmrf_core/node_QM_VVV.md"
-QM_SOT       = BASE / "SYSTEM_Quantum_Measurement/system_qm_full.md"
-VVV_EDGES    = BASE / "documents/research_documents/vvv-qmrf/edge_QM_VVV.md"
-BRIDGE_FILE  = BASE / "documents/research_documents/vvv-qmrf/bridge_QM_standard_to_VVV_QMRF.md"
-DRAFT_FILE   = BASE / "SYSTEM_Buddhist_Epistemology/be_263_node_expansion/bridge_draft/BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCDEF.md"
+SNAPSHOT = BASE / "documents/research_documents/vvv-qmrf-ex/source_snapshot"
+
+BE_SOT       = SNAPSHOT / "system_be/system_be_full.md"
+VVV_NODES    = SNAPSHOT / "vvv_qmrf_core/node_QM_VVV.md"
+QM_SOT       = SNAPSHOT / "system_qm/system_qm_full.md"
+VVV_EDGES    = SNAPSHOT / "vvv_qmrf_core/edge_QM_VVV.md"
+BRIDGE_FILE  = SNAPSHOT / "vvv_qmrf_core/bridge_QM_standard_to_VVV_QMRF.md"
+DRAFT_FILE   = SNAPSHOT / "be_263_audit/BE_QM_Bridge_Registry_Consolidated_Draft_Batch_BCDEF.md"
 
 # BIAN → primary VVV root node (derived from node_QM_VVV.md BIAN annotations)
 BIAN_TO_VVV = {
@@ -328,7 +330,7 @@ if __name__ == "__main__":
     p2 = sum(1 for e in vvv_edges if e["edge_type"] == "VVV_TO_QM")
     p3 = sum(1 for e in vvv_edges if e["edge_type"] == "VVV_TO_BE")
     print(f"\nStep 1.4  VVV edges:   {len(vvv_edges):>4}  "
-          f"(P1={p1} P2={p2} P3={p3};  expected 115)")
+          f"(P1={p1} P2={p2} P3={p3};  expected 131)")
     print(f"          BR bridges:  {len(bridge_edges):>4}  "
           f"(expected ~13 with node codes; {len(skipped)} boundary guards skipped)")
     print(f"          Draft links: {len(draft_edges):>4}  "
@@ -349,8 +351,8 @@ if __name__ == "__main__":
     print(f"  BE nodes:  {report['be_nodes']:>4}  (expected 263)")
     print(f"  VVV nodes: {report['vvv_nodes']:>4}  (expected 62)")
     print(f"  QM nodes:  {report['qm_nodes']:>4}  (expected 105)")
-    print(f"  Total:     {report['total_nodes']}  (expected 423)")
-    print(f"  Edges:     {report['total_edges']}  (expected ~149)")
+    print(f"  Total:     {report['total_nodes']}  (expected 430)")
+    print(f"  Edges:     {report['total_edges']}  (expected ~165)")
     print(f"  Edge types: {report['edge_type_counts']}")
     print(f"  Dangling:  {report['dangling_count']}  (MUST be 0)")
     print(f"  Orphans:   {report['orphan_count']}  (permitted at Phase 1)")

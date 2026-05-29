@@ -1527,5 +1527,21 @@ No C2 artifact is promoted to active coverage without one of these later approva
 
 ---
 
+## 26. Source Snapshot Sync RCA Closure (2026-05-29)
+
+**Trigger:** User requested RCA sync of `documents/research_documents/vvv-qmrf-ex/source_snapshot/` with the current codebase.
+
+**Root cause F-RCA-23:** The source snapshot had become stale after later Core/K-space updates, and `phase1_graph_construction.py` still mixed snapshot inputs with live codebase paths. Copying files alone would not remove the root cause because future Phase 1 runs could bypass the snapshot contract.
+
+**Fix applied:** `node_QM_VVV.md` and `K_Space_Axiomatization.md` were re-copied into `source_snapshot`; `SNAPSHOT_MANIFEST.md` now records the 2026-05-29 partial re-snapshot; Phase 1 input paths now resolve through `source_snapshot` for BE, QM, VVV edge, bridge, and draft-bridge sources.
+
+**Verification:** Hash checks pass for the checked source/snapshot pairs; parser counts are `BE=263`, `VVV=62`, `QM=105`, `VVV edges=131`, `BR graphable=13`, `draft links=21`; K-space peer sync script returns PASS. No `data/*.json` files were regenerated or mutated.
+
+**Boundary:** This is a source-input sync only. It does not recompute frozen EX metrics, activate draft bridges, promote EX content into Core, or create any new Standard Quantum Mechanics / Buddhist Epistemology equivalence claim.
+
+**Report:** See `reviews/rca_source_snapshot_sync_2026_05_29.md`.
+
+---
+
 © 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
 To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
