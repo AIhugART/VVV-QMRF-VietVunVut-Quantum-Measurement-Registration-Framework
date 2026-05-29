@@ -285,7 +285,7 @@ Symbols below 3.5/5 must be moved to a provisional list, sourced more strongly, 
 |---|---|---|---|---|
 | E1 | Self-certifying registration | `framework/vvv_qmrf_framework_e01_self_certifying_registration_postulate.md` | Blocks K-side regress by making primary registration self-certifying. | Not a consciousness claim and not `ρ`-side collapse. |
 | E2 | Registration self-completion | `framework/vvv_qmrf_framework_e02_registration_self_completion_postulate.md` | Treats act/result completion as K-side registration structure. | Not physical identity in `ℋ`. |
-| E3 | Registration lock | `framework/vvv_qmrf_framework_e03_registration_lock_postulate.md` | Locks an available interaction into registered status. | Not by itself physical collapse. |
+| E3 | Registration lock | `framework/vvv_qmrf_framework_e03_registration_lock_postulate.md` | Defines `V-hat : I_boundary × D → K_R ∪ {k_null}` as the K-side lock from interaction boundary to registered/null tuple. | Not physical collapse, not P3, and not beta/K9_E. |
 | E4 | Pre-symbolic registration stratum | `framework/vvv_qmrf_framework_e04_pre_symbolic_registration_stratum_postulate.md` | Defines raw registration before symbolic value. | Not mystical perception and not absence of physical interaction. |
 | E5 | Internal representation encoding | `framework/vvv_qmrf_framework_e05_internal_representation_encoding_postulate.md` | Encodes registered outcome internally. | Not a second apparatus measurement. |
 | E6 | Registering system as process | `framework/vvv_qmrf_framework_e06_registering_system_as_process_postulate.md` | Treats registering system as ordered events. | Not a fixed substantial observer. |

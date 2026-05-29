@@ -148,6 +148,82 @@ L_K(I) = 0  ↔  V-hat non-fires ↔ isNull(k_null) [K4(b)]
 
 > Formalization level: L4 (type-theoretic operator definition). Substance: §3d.
 > E3 is interpretation-neutral: K-side registration layer independent of collapse interpretation.
+> [A-E3] separation: beta (K9_E suppression strength) is independent of E3. E3 defines the structural registration-lock operation; beta remains a free K9_E measurement parameter, not an E3 condition.
+
+### 3f. Distinctness from P3 — K ≠ H Boundary (RCA 2026-05-29)
+
+**Primary argument:** P3 operates inside H-space, while E3 operates at the K-side registration boundary. P3 gives outcome probabilities and post-measurement states for quantum observables. E3 asks when a physical interaction receives K-side measurement-registration status as a tuple `k ∈ K_R`. Because `K ≠ H`, no projection operator `Π ∈ L(H)` is identical to the E3 registration-lock function.
+
+```
+P3:   |ψ⟩ or ρ  →  {(p_i, post-state_i)}        [H-side probability + post-state]
+E3:   I_boundary × D  →  k ∈ K_R ∪ {k_null}     [K-side registration-status tuple]
+
+Therefore:
+  P3 does not imply E3.
+  E3 does not modify P3.
+  E3 supplies the registration-layer condition absent from P1-P4.
+```
+
+**Secondary structural gaps preserved from the v2.0 plan:**
+
+| Gap | Standard QM scope boundary | E3/K-space anchor |
+|-----|----------------------------|-------------------|
+| Registration timing | P3 does not specify when interaction becomes registered status | K2 temporal order + K7 closure |
+| Detector validity | P3 does not classify detector response as valid/null registration | K4 default validity + K4(b) null event + K5 invalidation |
+| Registration irreversibility | P3 does not define K-side post-closure finality | K7 `V_final` |
+| Self-completion | P3 does not address meta-certification regress | K3 intrinsic certification |
+
+> RCA score: 4.70/5. Root cause removed: E3 is no longer framed as an H-space operator competing with P3, but as a K-side registration function whose output is a K-state tuple.
+
+### 3g. T6 Boundary and Null Registration Event
+
+E3 defines what the registration-lock operation is. T6 addresses when decoherence-context transitions instantiate or fail to instantiate a K-side registration event. Therefore E3 references T6 but does not re-derive it.
+
+```
+T6 Path A: decoherence-context transition → K5 invalidation of a prior registration candidate.
+T6 Path B: decoherence-context transition → V-hat fires → new k instantiated in K_R.
+
+E3 successful lock:
+  V-hat(I_boundary, d) = k = ⟨M, o, cert=1, t, V=1⟩  [K4(a)]
+
+E3 non-lock / null event:
+  V-hat(I_boundary, d) = k_null = ⟨M, ∅, cert=1, t, V=0⟩  [K4(b)]
+```
+
+The null event is not the absence of all registration structure. It is a K-side null registration tuple: the interaction boundary is self-certified as encountered, but it does not yield a valid non-null registered outcome.
+
+### 3h. Testable Consequences — Class D Candidates
+
+These consequences are retained as Class D candidates. They show what E3 would make expressible beyond P1-P4, but they are not empirical confirmations of E3.
+
+**Candidate 1 — Registration Threshold [Class D, illustrative]**
+
+```
+If a registering architecture R has a minimal detector-response threshold d_min,
+then:
+  |d| < d_min  →  V-hat(I_boundary, d) = k_null
+  |d| ≥ d_min  →  V-hat(I_boundary, d) = k, if K4/K7 conditions hold
+
+The threshold is a property of the registering architecture, not of ρ alone.
+```
+
+This candidate is not derivable from K1-K8 alone and is not claimed as currently measured. Its purpose is to mark the registration-layer distinction: two apparatus architectures may share the same H-side model while differing in K-side registration criteria.
+
+**Candidate 2 — Retroactive Override via K5 + K7 [Class D, structural]**
+
+```
+At t1:
+  V-hat fires → k1 ∈ K_R with V_prov(k1) = 1.
+
+At t2 > t1, before closure:
+  k2 ⊥_K k1 within C_K and Auth(k2→k1, C_K) = 1
+  → K5 invalidates V_prov(k1).
+
+After K7 closure:
+  V_final(k1) = 0 becomes irreversible.
+```
+
+This is a registration-layer override mechanism, not a revision of Standard QM dynamics. It shows how E3 interacts with K5 and K7 when a later authenticated registration changes provisional K-side status before closure.
 
 ---
 
