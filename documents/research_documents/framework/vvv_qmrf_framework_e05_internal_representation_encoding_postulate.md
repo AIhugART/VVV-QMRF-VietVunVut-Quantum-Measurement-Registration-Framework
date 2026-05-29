@@ -75,6 +75,15 @@ The Internal Encoding Operator Â_kāra:
     Phase 1: Nirvikalpaka (physical trace)  → E4
     Phase 2: Â_kāra (internal encoding)    → E5 (THIS)
     Phase 3: V̂_yava (commitment)           → E3
+
+K1 connection (Weak mapping — RCA 2026-05-29):
+  Â_kāra(D_i) = M_i produces the registration content that populates
+  the o field (K1: o ∈ O ∪ {∅}) of the K-state tuple upon V̂_yava
+  lock (E3, Phase 3). E5 defines how D_i becomes a member of O at
+  the ρ-K boundary. K1-K8 are post-admission axioms and are by design
+  silent about this boundary encoding process — E5 names the process
+  that K1 presupposes. No new K-axiom is required (K ≠ H separation
+  places boundary encoding outside K-space axiom scope).
 ```
 
 ### 3c. Equivalence status

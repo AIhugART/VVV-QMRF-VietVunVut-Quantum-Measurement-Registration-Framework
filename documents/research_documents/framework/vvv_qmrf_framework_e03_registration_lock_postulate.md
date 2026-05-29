@@ -82,7 +82,51 @@ The Registration-Lock Operator V̂_yava acts on internal correlate M_i:
 |-----------|--------|--------|
 | L_K(I) ∈ {0,1} | Framework E3 | Class D |
 | V̂_yava | Category 08 | Class D |
-| Equivalence? | Unproven | Class C |
+| Tier co-extensionality via K4 | RCA 2026-05-29 | **Class D (established)** |
+
+### 3d. Tier Co-extensionality — L_K(I) ↔ V̂_yava (RCA 2026-05-29)
+
+```
+NOT operational identity: L_K and V̂_yava have different inputs and tiers.
+  L_K: {physical interactions I} → {0,1}      [framework tier, external view]
+  V̂_yava: {M_i} → {K_i}                       [category tier, mechanism view]
+
+TIER CO-EXTENSIONALITY (derivable from K1 + K4):
+  L_K(I) = 1  ↔  V̂_yava fires  ↔  ¬isNull(k)  ↔  K4(a) applies
+
+Proof sketch (3 steps):
+
+  Step 1 — L_K(I) = 1 → V̂_yava fires:
+    L_K(I) = 1
+      [def L_K] → I locked as irreversible registration-state update
+      [3-phase] → Phase 2 completes: Â_kāra(I) = M_i with ΔI ≠ 0
+      [Phase 3] → V̂_yava(M_i) = K_i fires  ✓
+
+  Step 2 — V̂_yava fires → L_K(I) = 1:
+    V̂_yava fires
+      [Cat 08] → K_i = definite state with o(K_i) ≠ ∅
+      [K4(a)]  → ¬isNull(k) → V(k) = 1, k admitted to K_R
+      [def L_K] → interaction locked → L_K(I) = 1  ✓
+
+  Step 3 — K4 exhaustiveness (confirmatory):
+    K4 joint exhaustiveness: cert=1 + isNull dichotomy partition ALL k ∈ K_R.
+    L_K = 0 ↔ isNull(k) ↔ V̂_yava did not fire ↔ K4(b): V=0
+    L_K = 1 ↔ ¬isNull(k) ↔ V̂_yava fired   ↔ K4(a): V=1
+
+K1-K8 anchor table (Phase 3 / V̂_yava scope):
+  (I) Irreversibility  →  K7 (V_final post-closure absolute)
+  (D) Distinctness     →  K1 + K≠H (K-state tuple ≠ H-space operator)
+  (SC) Self-Completion →  K3 (σ_R(M) intrinsic, no meta-registration)
+
+D_enc connection:
+  When V̂_yava fires (L_K = 1), a D_enc event is registered in K_R.
+  D_enc = Transition-Encoding Registration Act (canonical Layer 2, 2026-05-27).
+```
+
+> Status: TODO(HOTFIX) **RESOLVED** 2026-05-29.
+> Both preconditions satisfied: (a) Ā_kāra = E5 domain [E5 §3b Weak mapping, RCA 4.90/5]; (b) L_K↔V̂_yava co-extensionality via K4 [this section, RCA 4.80/5].
+> E3 anchor table above is now the operative K1-K8 grounding for this postulate.
+> Full formalization plan: archives/plan/E3_Registration_Lock_Formalization_Plan.md v2.0.
 
 ---
 
