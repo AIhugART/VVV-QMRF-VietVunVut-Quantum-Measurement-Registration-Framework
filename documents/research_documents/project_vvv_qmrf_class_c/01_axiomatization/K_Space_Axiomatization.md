@@ -637,7 +637,7 @@ or any cross-space structure):
 | K6 | Cross-registration authority — structural relation within C_K, non-hierarchical | V (authority condition) | Level 2 | Frozen (syntactic) | C_K roles: (1) existential precondition for all Auth checks; (2) C_K-sphere membership parameter (condition a); (3) D_joint scope parameter (condition c) | None direct |
 | K7 | Registration process closure — V_prov → V_final, absolute irreversibility | V (closure) | Level 2 | Frozen (syntactic) | Uses requires_K_joint for pending check only | **T2** (Dep-B): "resolved demand" semantics (when pending = ∅) requires T2 AdmJoint resolution definition; K7 closure timing depends on T2 |
 | K8 | Cross-space embedding preservation — V preserved at embedding time; fields preserved | V (embedding) + M, o, cert, t | Level 3 | Frozen | None | None |
-| K5p | K5_prospective — pre-instantiation evaluation mode for P9 (K9_E). Same conditions (i)-(iii) as K5; target = hypothetical k_o*. Conservative extension: new evaluation mode, no modification to K5 post-hoc behavior. | f_perp (probability) | K5 (parent) + K9_E (P9) | Updatable (Layer 2 bridge) | C_K existence (requires_K_joint=1, same as K5) | **P9** (K9_E): f_perp defined via K5p |
+| K5p | K5_prospective — pre-instantiation evaluation mode for P9 (K9_E). Same conditions (i)-(iii) as K5; target = hypothetical k_o*. Conservative extension: new evaluation mode, no modification to K5 post-hoc behavior. | f_perp (probability) | K5 (parent) + K9_E (P9) | Updatable (Layer 2 bridge) | C_K existence (requires_K_joint=1, same as K5) | **P9** (K9_E): f_perp defined via K5p; **T8**: f_perp = E[I(K5p fires)] |
 
 **Dependency isolation:** K1-K8 depend ONLY on Level 0-3 (BE SOT, K≠H, E1-E7, K-state tuple). Where K5-K7 reference Level 4 concepts (C_K, D_joint, requires_K_joint), they reference them for **scope identification only** (e.g., "is k1 in the same C_K as k2?"), not for their internal structure or definition.
 
@@ -1149,7 +1149,7 @@ T4-H — Colimit Existence Hypothesis (explicit conditional — F-RCA-P4-06 Opti
     For any finite diagram D of K-spaces with K1-K8-preserving morphisms,
     the colimit colim(D) exists in C_{K-space}.
 
-  Status: THEOREM (4/4 steps verified — Steps 3-4: 2026-05-27, RCA 4.74/5 PASS).
+  Status: THEOREM (4/4 steps verified — Steps 3-4: 2026-05-28, RCA 4.74/5 PASS).
 
     Step 1 (C_{K-space} category): VERIFIED — identity, composition, associativity.
     Step 2 (colimit construction): VERIFIED — K_colim = (∐_i K_i)/~ constructed;
@@ -1159,12 +1159,12 @@ T4-H — Colimit Existence Hypothesis (explicit conditional — F-RCA-P4-06 Opti
       to Step 3); 5/5 verification gates PASS.
       Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_step2_colimit_construction.md
       (3-Round RCA, aggregate 4.73/5).
-    Step 3 (K1-K8 preservation through quotient): VERIFIED (2026-05-27) — K1-K8
+    Step 3 (K1-K8 preservation through quotient): VERIFIED (2026-05-28) — K1-K8
       all PASS; T-PRES Lemma (K8-morphisms preserve t) + T-REP Corollary resolve
       K2 acyclicity; K5 cross-K_R ⊥ consistent; V monotone dynamics ensure
       non-contradiction. RCA 4.74/5.
       Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_steps3_4_k1k8_universal.md
-    Step 4 (universal property): VERIFIED (2026-05-27) — u([k,i]) := f_i(k)
+    Step 4 (universal property): VERIFIED (2026-05-28) — u([k,i]) := f_i(k)
       well-defined (diagram compatibility + T-REP), K8-preserving, unique.
       Proof: project_vvv_qmrf_class_c/02_derivation_chain/T4_H_steps3_4_k1k8_universal.md
     T4-H is a FULL THEOREM. T4 conclusions valid for all N ≥ 2 (no further gates).
@@ -1254,7 +1254,7 @@ Conditional scope:
 | **Level 4 dependency** | `requires_K_joint`, `D_joint`, `AdmJoint` (for admissibility of each K_joint step) |
 | **EX anchor** | No direct EX intersection node — internal algebraic theorem; EX compass used as sanity check (no K_joint composition tension in EX graph) |
 | **BE lineage** | Continuity of K-side registration structure across sequential joint contexts — structural extension of K2 chain property to multi-K_R scope |
-| **Claim class** | D (proposed) — T4-H is now THEOREM (2026-05-27); T5 upgrade to Class C pending Level 4 freeze (remaining gate) |
+| **Claim class** | D (proposed) — T4-H is now THEOREM (2026-05-28); T5 upgrade to Class C pending Level 4 freeze (remaining gate) |
 | **Freeze status** | Conditional on Level 4 freeze (T4-H gate resolved) |
 | **Update trigger** | If K_joint compatibility conditions change; if global commutativity (F7d) conditions are revised; if Level 4 freeze changes |
 
@@ -1324,8 +1324,9 @@ K3 preservation note (mandatory):
 | **EX anchor** | `N_QM_VVV_00032` (Registration Error / Bhrānti Status) — intersection node; BE anchor: `N_BE_00006` (Erroneous cognition); QM anchor: `N_QM_00095` (Decoherence & Environment as Measurement) |
 | **BE lineage** | Bhrānti (erroneous cognition) via N_BE_00006 — Path A maps decoherence-induced K5 invalidation to the K-side analogue of a cognition revealed as erroneous; Path B maps to fresh k instantiation (svataḥ prāmāṇya — K4 default validity on new registration) |
 | **Claim class** | D (proposed) |
+| **E3 boundary** | T6↔E3 Boundary Theorem established 2026-05-29 (RCA 4.67/5). See E3 §3g: E3=gatekeeper (V-hat creates k_new), T6=responder (determines K5 effect on priors). 3-case structure (NULL/Path A/Path B) with 4 boundary clauses. |
 | **Freeze status** | Pending Level 4 freeze (Path A uses `requires_K_joint` + `⊥_K` boundary clauses) |
-| **Update trigger** | If Level 4 `⊥_K` boundary clauses change (affects Path A K5 firing condition); if `requires_K_joint` scope changes; if E9 or E14 definitions are revised (disambiguation section may need update) |
+| **Update trigger** | If Level 4 `⊥_K` boundary clauses change (affects Path A K5 firing condition); if `requires_K_joint` scope changes; if E9 or E14 definitions are revised (disambiguation section may need update); if T6↔E3 Boundary Theorem Path A mirror requires sync |
 
 ---
 
@@ -1401,7 +1402,7 @@ F-T7-01 (T5 dependency):
 | **Level 4 dependency** | `requires_K_joint`, `D_joint`, `AdmJoint` (for all pairwise + N=3 admissibility checks); IRB-induced D_joint scope |
 | **EX anchor** | `N_QM_VVV_00025` (IRB / Entanglement) — intersection node; BE anchor: `N_BE_00021` (Essential relation / svabhāvapratibandha); QM anchors: `N_QM_00047` (Entanglement), `N_QM_00090` (Bell correlations) |
 | **BE lineage** | Svabhāvapratibandha extended via E15 IRB — registration non-separability as the K-side analogue of intrinsic-nature relational binding in Dharmakīrti; extended to multi-body scope |
-| **Claim class** | D (proposed) — T4-H is now THEOREM (2026-05-27); T7 upgrade to Class C pending Level 4 freeze + E15 wording stability (remaining gates) |
+| **Claim class** | D (proposed) — T4-H is now THEOREM (2026-05-28); T7 upgrade to Class C pending Level 4 freeze + E15 wording stability (remaining gates) |
 | **Freeze status** | Conditional on Level 4 freeze + E15 wording (T4-H gate resolved) |
 | **Update trigger** | If E15 IRB definition is revised; if T5 is revised; if Level 4 `requires_K_joint` scope changes for IRB-induced D_joint demands |
 

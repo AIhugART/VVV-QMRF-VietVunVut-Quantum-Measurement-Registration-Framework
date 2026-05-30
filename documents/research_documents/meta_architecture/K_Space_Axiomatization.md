@@ -1620,24 +1620,108 @@ This is an EPISTEMOLOGICAL interpretation, not a logical derivation. BE provides
 #### T8-H4 — Comparative Analysis: Why Fraction Form is the Unique Survivor
 
 **Statement:**
-> The fraction form `f_perp = |{k_j: ...}| / |K_ctx|` is not an arbitrary choice among equally viable alternatives. A systematic comparative analysis of four alternative functional forms shows that each alternative is independently eliminated by structural constraints from K1-K8, PP-2 v2 cancellation, or parameter economy.
+> The fraction form `f_perp = |{k_j: ...}| / |K_ctx|` is not an arbitrary choice among equally viable alternatives. A systematic comparative analysis of four alternative functional forms shows that each alternative is independently eliminated by structural constraints from K1-K8, PP-2 v2 cancellation, or parameter economy. Fraction form is the UNIQUE survivor — the only functional form satisfying all five design constraints simultaneously.
 
 **Design Constraints (from K9-S1):**
 ```
 (D1) OUTCOME-DEPENDENCE:  f_perp must vary with o to produce δP ≠ 0
-(D2) K-SIDE PURITY:       f_perp must use only K-side primitives
+     (PP-2 v2: per-tuple multiplicative modulation cancels if f_perp is
+      outcome-independent → δP = 0 → K9_E = Born rule)
+
+(D2) K-SIDE PURITY:       f_perp must use only K-side primitives (⊥, Auth, V, cert)
+     (OI-1 flag: ρ-side inputs like quantum overlap are circular — they
+      use the very Born-rule probabilities K9_E is trying to modify)
+
 (D3) PARAMETER ECONOMY:   f_perp must not introduce new free parameters beyond β
-(D4) BOUNDEDNESS:         f_perp ∈ [0, 1]
-(D5) STRUCTURAL GROUNDING: Every component must trace to K1-K8 or flagged assumption
+     (C-PARAM: ≤2 total parameters. β already counts as 1)
+
+(D4) BOUNDEDNESS:         f_perp ∈ [0, 1] for all possible K_ctx configurations
+     (C-NONNEG requires β·f_perp ≤ 1. f_perp ∈ [0,1] is sufficient)
+
+(D5) STRUCTURAL GROUNDING: Every component of f_perp must trace to K1-K8 or
+     flagged assumption (C-TRACE)
 ```
 
 **Alternative Analysis:**
 ```
-A1 — Weighted by Quantum Overlap: ❌ DEAD (circular ρ-side dependency, OI-1)
-A2 — Binary Contradiction Indicator: ❌ DEAD (PP-2 v2 cancellation → δP=0)
-A3 — Weighted by Auth "Strength": ❌ DEAD (Auth is structurally binary — K6)
-A4 — Weighted by Temporal Distance: ❌ DEAD (+τ parameter + K2 discreteness)
-A5 — Fraction Form (T8 baseline): ✅ UNIQUE VIABLE FORM
+ALTERNATIVE A1 — Weighted by Quantum Overlap:
+  f_perp = Σ_j |⟨o|o_j⟩|² · I_j / Σ_j |⟨o|o_j⟩|²
+
+  VIOLATES (D2) — K-SIDE PURITY.
+  |⟨o|o_j⟩|² IS the Born-rule probability that K9_E is trying to modify.
+  Using it as a weight creates a CIRCULAR dependency:
+    f_perp depends on quantum overlap → which depends on Born rule →
+    which K9_E modifies → which depends on f_perp.
+  This is the Tier 4 OI-1 circularity flag exactly.
+  ELIMINATED by OI-1 boundary clause.
+
+  VERDICT: ❌ DEAD (circular ρ-side dependency)
+
+
+ALTERNATIVE A2 — Binary Contradiction Indicator:
+  f_perp = 1 if ∃k_j: k_j ⊥_K k_i ∧ o(k_j) ≠ o, else 0
+
+  VIOLATES (D1) — OUTCOME-DEPENDENCE.
+  f_perp ∈ {0, 1} for ALL outcomes simultaneously.
+  For a given K_ctx configuration:
+    If ANY k_j contradicts → f_perp = 1 for ALL outcomes o
+    → [1 − β·f_perp] = constant across o
+    → PP-2 v2 cancellation: constant multiplier cancels in Z_E
+    → δP = 0 → K9_E = Born rule identically.
+
+  PP-2 v2 proof: P(o) = Tr(E_o ρ) · (1-β) / Σ_o' Tr(E_o' ρ) · (1-β)
+                      = Tr(E_o ρ) · (1-β) / (1-β)
+                      = Tr(E_o ρ).  ∎
+
+  VERDICT: ❌ DEAD (PP-2 v2 cancellation — δP = 0)
+
+
+ALTERNATIVE A3 — Weighted by Auth "Strength":
+  f_perp = Σ_j Auth(k_j → k_i, C_K) · I_j / Σ_j Auth(k_j → k_i, C_K)
+
+  VIOLATES (D5) — STRUCTURAL GROUNDING.
+  Auth ∈ {0, 1} per K6 definition. There is NO continuous Auth strength
+  in K1-K8. K6 defines Auth as a binary relation satisfying three
+  binary conditions (a)-(c). Weighting by Auth would require:
+    (a) Either redefining Auth as continuous → modifies Layer 1 (frozen)
+    (b) Or inventing a new "Auth strength" metric → adds assumption
+
+  Even if Auth weight = Auth binary value:
+    Auth(k_j → k_i) = 1 for all k_j with V=1 in same C_K (K6 conditions)
+    → Uniform weight = 1 for all valid contradictors
+    → Reduces to fraction form identically.
+
+  VERDICT: ❌ DEAD (Auth is structurally binary — K6)
+
+
+ALTERNATIVE A4 — Weighted by Temporal Distance:
+  f_perp = Σ_j exp(−|t_j − t_i|/τ) · I_j / Σ_j exp(−|t_j − t_i|/τ)
+
+  VIOLATES (D3) — PARAMETER ECONOMY.
+  Introduces new free parameter τ (temporal decay constant).
+  C-PARAM limit: ≤2 total parameters. β + τ = 2 → saturation.
+  No room for future parameters (e.g., measurement-specific β).
+  Also: K2 discreteness (S2-Δ lemma) makes temporal distance between
+  registration events undefined at K-side level between consecutive
+  events — there is no continuous time between k_i and k_{i+1}.
+
+  VERDICT: ❌ DEAD (parameter budget + K2 discreteness)
+
+
+ALTERNATIVE A5 — Fraction Form (T8 baseline):
+  f_perp = (1/|K_ctx|) · Σ_j I_j(o)
+
+  SATISFIES ALL FIVE CONSTRAINTS:
+    (D1) ✓ Outcome-dependent via I_j(o) filter
+    (D2) ✓ Pure K-side: ⊥ (K5), Auth (K6), temporal order (K2)
+    (D3) ✓ Zero new parameters (β is separate)
+    (D4) ✓ f_perp ∈ [0,1] by construction (average of indicators)
+    (D5) ✓ Every component traced: I_j ← K5_prospective ← K5/K6/K2
+
+  UNIQUE SURVIVOR: A1-A4 all independently eliminated by structural
+  constraints. A5 is the ONLY functional form satisfying all five.
+
+  VERDICT: ✅ UNIQUE VIABLE FORM
 ```
 
 **Summary matrix:**

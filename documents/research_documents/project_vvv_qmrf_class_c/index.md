@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v37 (2026-05-30) — NORM-1 Conv 2 fully closed (C1–C5 + EXTENDED); logic audit 4.2/5; post-audit RCA D1–D4 all ≥ 4.0/5
+**Version:** v38 (2026-05-30) — NORM-1 CLOSED + Logic audit 4.2/5 + PEER-SYNC CLOSED (4.53/5): K_Space_Axiomatization.md 2-copy sync (8 fixes, T8-H4 full proofs, E3 boundary, T4-H dates)
 **Zenodo DOI (v3.0):** [10.5281/zenodo.20431310](https://zenodo.org/records/20431310) — Working Paper v3.0 **PUBLISHED 2026-05-28**
 **Zenodo DOI (v2.0):** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (archived)
 **Concept DOI (cite-all):** [10.5281/zenodo.20289260](https://doi.org/10.5281/zenodo.20289260)
@@ -344,4 +344,4 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
 
 ---
 
-*Project VVV-QMRF Class C — Master Index v35 (2026-05-28). T4-H: THEOREM (4/4, RCA 4.74/5) — Steps 3-4 VERIFIED (T-PRES Lemma + K1-K8 + universal property). 3-OBS: Class C (upgraded from Class C-conditional). K7_trace + D_enc: canonical Layer 2 (v2.4, RCA 4.77/5). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
+*Project VVV-QMRF Class C — Master Index v37 (2026-05-30). NORM-1 CLOSED: Conv 2 canonical across all docs (C1–C5 + EXTENDED, RCA 4.33/5). Logic audit 4.2/5 (3-Round RCA, all layers PASS). T4-H: THEOREM (4/4, RCA 4.74/5) — Steps 3-4 VERIFIED 2026-05-28. PEER-SYNC: K_Space_Axiomatization.md synced (T4-H dates, E3 boundary row, K5p T8 ref, update trigger). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*

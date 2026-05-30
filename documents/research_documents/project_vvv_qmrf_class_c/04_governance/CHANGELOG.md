@@ -6,6 +6,43 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v38 (2026-05-30) — PEER-SYNC Comprehensive Audit (4.53/5) + K_Space_Axiomatization.md Sync
+
+### Added
+- `04_governance/RCA_PEER_SYNC_comprehensive_audit_2026_05_30.md` — comprehensive audit report:
+  PEER-SYNC drift (8 items), file map integrity (0 broken links), Conv 2 re-verification,
+  classification consistency, index footer fix. Aggregate 4.53/5.
+
+### Changed (PEER-SYNC — Class C working copy ← canonical)
+- `01_axiomatization/K_Space_Axiomatization.md` (Class C): 7 structural sync fixes:
+  - T4-H Status + Step 3 + Step 4 dates: `2026-05-27` → `2026-05-28` (×3)
+  - T5 claim class date: `2026-05-27` → `2026-05-28`
+  - T7 claim class date: `2026-05-27` → `2026-05-28`
+  - K5p table: thêm `; **T8**: f_perp = E[I(K5p fires)]`
+  - T6 table: thêm E3 boundary row (T6↔E3 Boundary Theorem 2026-05-29, RCA 4.67/5)
+  - T6 Update trigger: thêm T6↔E3 Boundary Theorem sync clause
+
+### Changed (PEER-SYNC — canonical ← Class C working copy)
+- `documents/research_documents/meta_architecture/K_Space_Axiomatization.md` (canonical):
+  - T8-H4 Statement: thêm "UNIQUE survivor" suffix
+  - T8-H4 Design Constraints D1-D5: expand với parenthetical justifications
+  - T8-H4 Alternative Analysis: expand A1-A4 full formal proofs
+
+### Changed (index)
+- `index.md` footer: v35 (2026-05-28) → v37 (2026-05-30) + NORM-1 + PEER-SYNC notes
+- `index.md` header: v37 → v38 (2026-05-30) — PEER-SYNC CLOSED
+
+### RCA basis
+- PEER-SYNC Audit (2026-05-30): 3-Round RCA 4.53/5. R1=4.7 / R2=4.5 / R3=4.4.
+- PS-1–7 (Canonical→Class C): 4.53/5 → APPLIED. PS-ASYM (Class C→Canonical): 4.3/5 → APPLIED.
+
+### Verification
+- PEER-SYNC: CLOSED — 2 bản K_Space_Axiomatization.md đồng nhất
+- File map: 0 broken links (30+ paths verified)
+- Conv 2: 0 live Conv 1 instances post-NORM-1
+
+---
+
 ## v37 (2026-05-30) — NORM-1 Conv 2 Canonicalization + Logic Audit + Post-Audit RCA
 
 ### Added
