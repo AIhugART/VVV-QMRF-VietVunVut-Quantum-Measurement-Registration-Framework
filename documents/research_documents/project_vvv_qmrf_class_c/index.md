@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v38 (2026-05-30) — NORM-1 CLOSED + Logic audit 4.2/5 + PEER-SYNC CLOSED (4.53/5): K_Space_Axiomatization.md 2-copy sync (8 fixes, T8-H4 full proofs, E3 boundary, T4-H dates)
+**Version:** v39 (2026-05-30) — NORM-1 + PEER-SYNC CLOSED; T5 conditional proof plan READY (RCA 4.3/5): [A-3O-2] plan ready, [A-NS] induction path identified; proof session pending
 **Zenodo DOI (v3.0):** [10.5281/zenodo.20431310](https://zenodo.org/records/20431310) — Working Paper v3.0 **PUBLISHED 2026-05-28**
 **Zenodo DOI (v2.0):** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (archived)
 **Concept DOI (cite-all):** [10.5281/zenodo.20289260](https://doi.org/10.5281/zenodo.20289260)
@@ -310,6 +310,8 @@ pip install -r requirements.txt
 | IBM-Q | ~~IBM Quantum execution plan for K9_E testing~~ | **REJECTED (v31)** — double category error (K9_E requires K-space structure; IBM QPU has none). See [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) | ~~HIGH~~ |
 | POST-v30 | Post-v30 execution plan (K9E-PAT → K9-S12 paper → experiment) | **Track 1 & 2 COMPLETED** (arXiv submitted 2026-05-27). Track 3 ACTIVE — [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) | HIGH |
 | 3-OBS | 3-observer experiment — delta_M3 = -0.223 (11x) prediction ready, experimental design deferred | **FUTURE WORK** — mechanism file: [3observer_registration_transition.md](02_derivation_chain/3observer_registration_transition.md) (Class C — T4-H THEOREM 4/4, 2026-05-28) | HIGH |
+| **[A-3O-2]** | T5 K_joint composition associativity — proof planned | **PLAN READY** — [T5_conditional_proof_plan.md](04_governance/T5_conditional_proof_plan.md) (RCA 4.3/5). Key insight: T4-H Step 3 K5 content-based → F7d resolves. Proof = next dedicated session. | HIGH |
+| **[A-NS]** | No-signaling N>2 — depends on T5 | **DEFERRED → ADVANCEMENT PLANNED** — N=2 proven (Phase 7 B-5). N>2 conditional induction follows T5 conditional proof. See T5 plan §6. | HIGH |
 | P10-NOISE | Non-uniform experimental noise cannot be ruled out as alternative explanation for genuine fit improvement | New (v29) | MEDIUM |
 | P10-TIM | Null-model N0 fit omitted — requires raw event-level data; deferred | DECISION-LOCKED (RCA R4) | MEDIUM |
 | BONG | Bong LF modified protocol proposal (K9-S12) | **arXiv SUBMITTED (2026-05-27)** — Paper: "A Single-Waveplate Test of Outcome-Dependent Quantum Registration in Extended Wigner's Friend Scenarios" (Draft v94, papers/paper_002/). Track 3 ACTIVE: awaiting optical lab collaboration. | ~~MEDIUM~~ |
@@ -344,4 +346,4 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
 
 ---
 
-*Project VVV-QMRF Class C — Master Index v37 (2026-05-30). NORM-1 CLOSED: Conv 2 canonical across all docs (C1–C5 + EXTENDED, RCA 4.33/5). Logic audit 4.2/5 (3-Round RCA, all layers PASS). T4-H: THEOREM (4/4, RCA 4.74/5) — Steps 3-4 VERIFIED 2026-05-28. PEER-SYNC: K_Space_Axiomatization.md synced (T4-H dates, E3 boundary row, K5p T8 ref, update trigger). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
+*Project VVV-QMRF Class C — Master Index v39 (2026-05-30). T5 conditional proof plan READY (RCA 4.3/5) — proof session pending. [A-3O-2] plan ready; [A-NS] advancement planned via T5 induction. NORM-1 + PEER-SYNC CLOSED. Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
