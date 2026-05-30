@@ -100,15 +100,18 @@ Layer 5 (Class D)    Prediction + Reduction + Assessment
 K9_E is a **postulate** (probability assignment rule), not a theorem derived from K1–K8. K1–K8 define structural properties (registration, validity, incommensurability) but do not uniquely determine a probability rule. K9_E fills this gap as Postulate P9 — a Type B framework extension motivated by K-space structure (bot_K, K_ctx) but carrying its own assumption (A1: K5 prospective firing). See [Phase 8 ERRATUM](02_derivation_chain/Phase8_candidate_equation.md).
 
 ```
-P(o | K) = Tr(E_o rho) * f_perp(K_ctx)
+P(o | K) = Tr(E_o rho) * [1 - beta * f_perp(o, K_ctx)] / Z_E
 
 where:
-  f_perp(K_ctx) = 1 - beta * K_ctx
-  K_ctx = sum_{i != j} I(k_i bot k_j) / N_pairs
-  beta in [0, 1] — single free parameter
+  f_perp(o, K_ctx) = E[I(K5_prospective fires)]  [T8 — structural derivation]
+                   = |{k_j in K_ctx : k_j bot_K and outcome-inconsistent with o}| / |K_ctx|
+  K_ctx  = contextual K-state set  [T9 — K1-K8 + T1]
+  beta   in [0, 1] — single free parameter
   Born limit: beta = 0 => P(o|K) = Tr(E_o rho) (exact — K9_E reduces to QM)
   Distinguishability: delta_S(beta=0.5) = -0.055 (theoretical — no empirical detection yet)
 ```
+
+> **Canonical form (Conv 2, standardized 2026-05-30):** `f_perp` is the bot_K fraction (T8 derivation); `[1 − beta·f_perp]` is the suppression factor; `K_ctx` is the set of contextual K-states (T9). Code (`k9e_predictor.py`) uses scalar approximation: `suppression_factor = 1 − beta·K_ctx_scalar` where `K_ctx_scalar = n_bsm·G_CTX`. In the N=2 Level 0 projection, the fraction evaluates to `1 − |⟨b|d⟩|²` — a projection, not a general identity (`f_perp ≠ f(|⟨b|d⟩|²)` in general). RCA: [`04_governance/RCA_NORM1_standardize_conv2_2026_05_30.md`](04_governance/RCA_NORM1_standardize_conv2_2026_05_30.md).
 
 ### K9_E Term-by-Term Provenance (8 terms)
 

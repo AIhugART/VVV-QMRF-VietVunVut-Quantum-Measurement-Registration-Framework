@@ -80,7 +80,7 @@ The VVV-QMRF framework organizes the registration-logic structure K in five arch
 |-------|--------|---------|
 | Layer 1 | FROZEN | K1-K8 Registration-logic axioms: binary cert, V in {0,1}, bot_K incommensurability, AdmJoint |
 | Layer 2 | UPDATABLE | T1-T7 Bridge theorems: K_joint construction (T1 N=2 constructive), colimit (T4-H), relativization |
-| Layer 3 | Class C qualified (v31) | K9_E Probability postulate (P9): P(o|K) = Tr(E_o rho) * f_perp(K_ctx) |
+| Layer 3 | Class C qualified (v31) | K9_E Probability postulate (P9): P(o|K) = Tr(E_o rho) * [1 - beta * f_perp(o, K_ctx)] / Z_E |
 | Layer 4 | Class D | Multi-paper data fit: D1 Proietti CHSH, D2 Bong LF, D3 Frauchiger-Renner (AVOIDED) |
 | Layer 5 | Class D | Prediction + Reduction + Assessment: 3-observer prediction (conditional on T4-H) |
 

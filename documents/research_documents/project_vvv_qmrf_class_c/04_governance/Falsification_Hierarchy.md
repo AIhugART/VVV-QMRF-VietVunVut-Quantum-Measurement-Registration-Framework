@@ -109,7 +109,7 @@ Summary:
 | ✅ **Survives** | Level 1: g(ρ_F) — depends on full Friend density matrix |
 | ✅ **Survives** | Level 2: g(Concurrence) — depends on multi-partite structure |
 | ✅ **Survives** | Level 3: g(timing, path) — non-geometric variables |
-| ✅ **Survives** | f_perp framework: P(o|K) = Tr(E_o ρ) × f_perp(K_ctx) with f_perp ≠ f(|⟨b|d⟩|²) |
+| ✅ **Survives** | f_perp framework: P(o|K) = Tr(E_o ρ) × [1 − β·f_perp(K_ctx)]/Z with f_perp (= bot_K fraction) ≠ f(|⟨b|d⟩|²) |
 
 ### 2.6 Current Status
 

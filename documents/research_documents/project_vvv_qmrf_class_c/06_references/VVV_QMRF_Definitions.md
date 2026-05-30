@@ -109,8 +109,13 @@ Enc(M_aware, k_F) = 1  iff
 K9_E is a **testable hypothesis** proposing that measurement registration
 affects outcome probabilities under cross-observer incompatibility:
 
-  P(o | K) = Tr(E_o rho) * f_perp(K_ctx) / Z_E
-  f_perp(K_ctx) = 1 - beta * K_ctx,  beta in [0,1]
+  P(o | K) = Tr(E_o rho) * [1 - beta * f_perp(o, K_ctx)] / Z_E
+  f_perp(o, K_ctx) = E[I(K5_prospective fires)]  [T8 — structural derivation]
+                   = |{k_j in K_ctx : k_j bot_K and outcome-inconsistent with o}| / |K_ctx|
+  K_ctx = contextual K-state set  [T9 — K1-K8 + T1]
+  beta in [0,1],  Born limit: beta=0 => standard QM exactly
+
+**Canonical form (Conv 2, standardized 2026-05-30, RCA NORM-1 score 4.33/5).** `f_perp(o, K_ctx)` is the bot_K fraction (T8 structural derivation); `[1 − beta·f_perp]` is the suppression factor; `K_ctx` is the set (T9). Code (`k9e_predictor.py`) uses scalar approximation: `suppression_factor = 1 − beta·K_ctx_scalar` where `K_ctx_scalar = n_bsm·G_CTX`. In the N=2 Level 0 projection, the fraction evaluates to `1 − |⟨b|d⟩|²`; this is a projection, **not** a general identity (`f_perp ≠ f(|⟨b|d⟩|²)` in general — see `04_governance/Falsification_Hierarchy.md §2.5`). RCA: `04_governance/RCA_NORM1_standardize_conv2_2026_05_30.md`.
 
 **Critical:** K9_E is a POSTULATE, not a theorem derivable from K1-K8. It
 carries one assumption (K5 prospective firing). It is offered as a hypothesis

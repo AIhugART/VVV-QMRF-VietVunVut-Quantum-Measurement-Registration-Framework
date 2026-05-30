@@ -1,9 +1,9 @@
 """
 k9e_predictor.py — K9_E (f_perp registration suppression) predictions.
 
-Model: P(o|K) = Tr(E_o rho) * f_perp(K_ctx)
-       f_perp(K_ctx) = 1 - beta * K_ctx
-       K_ctx = sum_{i!=j} I(k_i bot k_j) / N_pairs
+Model: P(o|K) = Tr(E_o rho) * [1 - beta * f_perp(K_ctx)] / Z  [Conv 2 canonical]
+       f_perp(K_ctx) = bot_K fraction = E[I(K5_prospective fires)]  [T8]
+       k9e_suppression_factor = 1 - beta * f_perp  (scalar approx: 1 - beta * K_ctx_scalar)
 
 Uses additive K_ctx approximation for the 2-observer EWF context:
   E_K9E(x,y) = E_QM(x,y) * (1 - beta * K_ctx(x,y))
@@ -80,14 +80,15 @@ def k9e_K_ctx(x: int, y: int) -> float:
     return n_bsm * G_CTX
 
 
-def k9e_f_perp(K_ctx: float, beta: float) -> float:
+def k9e_suppression_factor(K_ctx: float, beta: float) -> float:
     """
-    Registration suppression factor.
+    Registration suppression factor [1 - beta * f_perp] (Conv 2 canonical).
 
-    f_perp = 1 - beta * K_ctx
+    f_perp = bot_K fraction (T8); K_ctx here is the scalar approximation of f_perp.
+    suppression_factor = 1 - beta * K_ctx_scalar
 
-    At beta=0: f_perp = 1 (Born recovery).
-    At beta>0, K_ctx>0: f_perp < 1 (suppression).
+    At beta=0: suppression_factor = 1 (Born recovery).
+    At beta>0, K_ctx>0: suppression_factor < 1 (suppression).
     """
     return 1.0 - beta * K_ctx
 
@@ -96,10 +97,10 @@ def k9e_correlator(x: int, y: int, beta: float) -> float:
     """
     K9_E predicted correlator for setting (x, y) at given beta.
 
-    E_K9E(x,y) = E_QM(x,y) * (1 - beta * K_ctx(x,y))
+    E_K9E(x,y) = E_QM(x,y) * [1 - beta * f_perp(x,y)]
     """
     K_ctx = k9e_K_ctx(x, y)
-    return E_QM[(x, y)] * k9e_f_perp(K_ctx, beta)
+    return E_QM[(x, y)] * k9e_suppression_factor(K_ctx, beta)
 
 
 def k9e_chsh_S(

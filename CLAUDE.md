@@ -1,4 +1,4 @@
-﻿Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
 # CLAUDE.md
 
@@ -54,7 +54,7 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 - **Layer 2 (UPDATABLE) — T1–T7 Bridge theorems:** K_joint construction (T1 N=2 constructive), colimit (T4-H Step 1 proven, Steps 2–4 deferred), relativization. Bridge theorems connect K-space structure to registration contexts. K9_E requires only T1 (N=2 constructive), not T4. The framework derives K-side incommensurability (K_F ⊥_K K_W) in Extended Wigner's Friend scenarios, identifying where standard QM interpretations lack the structural machinery to formalize registration-layer conditions.
 
-- **Layer 3 (Class C qualified, v31) — K9_E Probability postulate (P9):** P(o|K) = Tr(E_o rho) * f_perp(K_ctx) where f_perp(K_ctx) = 1 - beta * K_ctx, beta in [0,1]. K9_E is a POSTULATE, not a theorem derivable from K1–K8 alone — K1–K8 define structural properties but do not uniquely determine a probability rule. Born limit: beta = 0 recovers Standard QM exactly. Genuine non-circular fit yields beta=0.598, V=0.939, Delta_chi2=5.35 (2.31sigma). HOWEVER: noise sensitivity analysis (v30) FAIL (noise_threshold=0.10 sigma RMS << 1.0; A0B0 drives 80% of Delta_chi2). K9E-PAT CLOSED as UNRESOLVABLE (v31, RCA 4.92/5) — empirical ratio -0.78 is ratio of two sub-sigma residuals (red herring); both additive (ratio=2.000) and multiplicative (ratio=1.913) models predict ~2. K9_E avoids FR paradox via K5 V_prov. Adversarial tests 4/4 PASS. K9-S12 Modified Bong protocol (single QWP, alpha=31 deg) proposed as FIRST dedicated test: Gen LF 1 = +0.0891 (8.6sigma), delta<A1B2> = -0.0355 (20.8sigma).
+- **Layer 3 (Class C qualified, v31) — K9_E Probability postulate (P9):** P(o|K) = Tr(E_o rho) * [1 - beta * f_perp(o, K_ctx)] / Z_E where f_perp(o, K_ctx) = E[I(K5_prospective fires)] (T8 structural derivation), beta in [0,1]. [Conv 2 canonical — RCA NORM-1 2026-05-30] K9_E is a POSTULATE, not a theorem derivable from K1–K8 alone — K1–K8 define structural properties but do not uniquely determine a probability rule. Born limit: beta = 0 recovers Standard QM exactly. Genuine non-circular fit yields beta=0.598, V=0.939, Delta_chi2=5.35 (2.31sigma). HOWEVER: noise sensitivity analysis (v30) FAIL (noise_threshold=0.10 sigma RMS << 1.0; A0B0 drives 80% of Delta_chi2). K9E-PAT CLOSED as UNRESOLVABLE (v31, RCA 4.92/5) — empirical ratio -0.78 is ratio of two sub-sigma residuals (red herring); both additive (ratio=2.000) and multiplicative (ratio=1.913) models predict ~2. K9_E avoids FR paradox via K5 V_prov. Adversarial tests 4/4 PASS. K9-S12 Modified Bong protocol (single QWP, alpha=31 deg) proposed as FIRST dedicated test: Gen LF 1 = +0.0891 (8.6sigma), delta<A1B2> = -0.0355 (20.8sigma).
 
 - **Layer 4 (Class D) — Multi-paper data fit:** D1 Proietti CHSH (genuine fit), D2 Bong LF (Phase 10b analysis invalidated by K9-S8 marginalization), D3 Frauchiger–Renner (AVOIDED via K5 V_prov; V_FR2 PASS 2026-05-28 — K7_trace 4th canonical consumer confirmed; FR_VVV_fit_plan.md v0.1), D4 Baumann&Brukner (T_BB Class C conditional, T_BB' CLOSED superseded, G1 CLOSED K7_trace+D_enc, P2-C π/8 exact first-principles; BB_VVV_fit_plan.md v1.4, compatibility v2.1).
 
@@ -176,3 +176,47 @@ This environment operates based on simulated logic commands (functions). When th
 
 © 2026 VietVunVut (Viet - Nguyen Xuan). Licensed under CC BY 4.0.
 To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
+
+<!-- gitnexus:start -->
+# GitNexus — Code Intelligence
+
+This project is indexed by GitNexus as **VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework** (21390 symbols, 22814 relationships, 116 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+
+> If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
+
+## Always Do
+
+- **MUST run impact analysis before editing any symbol.** Before modifying a function, class, or method, run `gitnexus_impact({target: "symbolName", direction: "upstream"})` and report the blast radius (direct callers, affected processes, risk level) to the user.
+- **MUST run `gitnexus_detect_changes()` before committing** to verify your changes only affect expected symbols and execution flows.
+- **MUST warn the user** if impact analysis returns HIGH or CRITICAL risk before proceeding with edits.
+- When exploring unfamiliar code, use `gitnexus_query({query: "concept"})` to find execution flows instead of grepping. It returns process-grouped results ranked by relevance.
+- When you need full context on a specific symbol — callers, callees, which execution flows it participates in — use `gitnexus_context({name: "symbolName"})`.
+
+## Never Do
+
+- NEVER edit a function, class, or method without first running `gitnexus_impact` on it.
+- NEVER ignore HIGH or CRITICAL risk warnings from impact analysis.
+- NEVER rename symbols with find-and-replace — use `gitnexus_rename` which understands the call graph.
+- NEVER commit changes without running `gitnexus_detect_changes()` to check affected scope.
+
+## Resources
+
+| Resource | Use for |
+|----------|---------|
+| `gitnexus://repo/VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework/context` | Codebase overview, check index freshness |
+| `gitnexus://repo/VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework/clusters` | All functional areas |
+| `gitnexus://repo/VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework/processes` | All execution flows |
+| `gitnexus://repo/VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework/process/{name}` | Step-by-step execution trace |
+
+## CLI
+
+| Task | Read this skill file |
+|------|---------------------|
+| Understand architecture / "How does X work?" | `.claude/skills/gitnexus/gitnexus-exploring/SKILL.md` |
+| Blast radius / "What breaks if I change X?" | `.claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md` |
+| Trace bugs / "Why is X failing?" | `.claude/skills/gitnexus/gitnexus-debugging/SKILL.md` |
+| Rename / extract / split / refactor | `.claude/skills/gitnexus/gitnexus-refactoring/SKILL.md` |
+| Tools, resources, schema reference | `.claude/skills/gitnexus/gitnexus-guide/SKILL.md` |
+| Index, status, clean, wiki CLI commands | `.claude/skills/gitnexus/gitnexus-cli/SKILL.md` |
+
+<!-- gitnexus:end -->
