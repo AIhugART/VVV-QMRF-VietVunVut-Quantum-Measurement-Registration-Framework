@@ -67,9 +67,9 @@ Layer 2 (UPDATABLE)  T1–T9 Bridge theorems + conservative extensions
        |              K7_trace + D_enc (canonical Layer 2, K_Space_Axiomatization.md v2.4, RCA 4.77/5)
        v
 Layer 3 (Class C)    K9_E Probability postulate (P9)
-       |              P(o|K) = Tr(E_o rho) * f_perp(K_ctx)
-       |              1 parameter beta, 8 terms with K-space provenance
-       |              1 assumption A1 (K5 prospective firing, UPGRADED to K5_prospective axiom — v29)
+       |              P(o|K) = Tr(E_o rho) * [1-beta*f_perp(o,K_ctx)]/Z_E  [Conv 2]
+       |              1 free parameter beta; 0 assumptions; 8 terms with K-space provenance
+       |              [A-E1]–[A-E4] ELIMINATED/RECLASSIFIED (v29)
        v              K9_E is a POSTULATE, not derivable from K1–K8 alone
 Layer 4 (Class D)    Multi-paper data fit
        |              D1 Proietti CHSH: beta=0.598 (genuine fit), V=0.939, 2.31sigma

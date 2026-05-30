@@ -155,7 +155,8 @@ Changes applied 2026-05-30:
 - [x] C2: `Definitions §3.4` — formula rewritten to Conv 2; dual-convention note → canonical statement
 - [x] C3: `Falsification_Hierarchy §2.5 L112` — `f_perp(K_ctx)` → `[1-beta*f_perp(K_ctx)]/Z`
 - [x] C4: `k9e_predictor.py` — `k9e_f_perp` renamed `k9e_suppression_factor`; math UNCHANGED
-- [ ] EXTENDED: `CLAUDE.md` Layer 3 — user decision pending
+- [x] C5: `index.md Architecture Overview diagram` — L70 formula Conv 1 → Conv 2 [NORM-1 miss, patched 2026-05-30 via RCA 4.5/5]
+- [x] EXTENDED: `CLAUDE.md` Layer 3 — VERIFIED Conv 2 `[Conv 2 canonical — RCA NORM-1 2026-05-30]`; CLOSED 2026-05-30
 
 ---
 
