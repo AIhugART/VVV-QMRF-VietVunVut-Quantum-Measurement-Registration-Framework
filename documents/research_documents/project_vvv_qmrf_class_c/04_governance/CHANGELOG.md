@@ -6,6 +6,51 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v37 (2026-05-30) — NORM-1 Conv 2 Canonicalization + Logic Audit + Post-Audit RCA
+
+### Added
+- `04_governance/rca_class_c_logic_audit_2026_05_30.md` — 3-round logic audit (4.2/5):
+  5-layer consistency check (K1–K8, T1–T9, K9_E postulate, D1 fit, predictions).
+  Key findings: K9_E = POSTULATE (not theorem), 0 assumptions, 4/4 adversarial PASS.
+  Class C (qualified) status VALID. §9 post-audit RCA added (D1–D4, all ≥ 4.0/5).
+- `04_governance/RCA_F_IDX_fperp_notation_2026_05_30.md` — precursor dual-convention
+  detection (Option B reconciliation note, superseded by NORM-1).
+- `04_governance/RCA_NORM1_standardize_conv2_2026_05_30.md` — NORM-1 decision RCA
+  (4.33/5): Conv 2 canonical. Implementation Record C1–C5 + EXTENDED all closed.
+- `04_governance/rca_session_summary_2026_05_30.md` — session report.
+
+### Changed
+- `index.md`: Version v36 → v37 (2026-05-30)
+  - Architecture Overview: Conv 1 → Conv 2 [NORM-1 C5]
+    `P(o|K) = Tr(E_o rho) * f_perp(K_ctx)` → `[1-beta*f_perp(o,K_ctx)]/Z_E`
+  - L71–72: `0 assumptions; 1 free parameter beta; [A-E1]–[A-E4] ELIMINATED/RECLASSIFIED`
+  - §K9_E Postulate (P9): Conv 1 → Conv 2 canonical form [NORM-1 C1]
+- `06_references/VVV_QMRF_Definitions.md §3.4`: Conv 2 canonical [NORM-1 C2]
+- `04_governance/Falsification_Hierarchy.md §2.5 L112`: Conv 2 [NORM-1 C3]
+- `07_fits/k9e_predictor.py`: `k9e_f_perp` → `k9e_suppression_factor` (math UNCHANGED) [C4]
+- `04_governance/RCA_NORM1_standardize_conv2_2026_05_30.md`: C5 + EXTENDED CLOSED.
+
+### RCA basis
+- NORM-1 (2026-05-30): 3-round RCA 4.33/5. C1–C5 + EXTENDED CLOSED.
+- Logic Audit (2026-05-30): 3-round RCA 4.2/5. Class C (qualified) VALID.
+- Post-Audit RCA (2026-05-30): D1 4.5 · D3 4.07 · D4 4.33 (all ≥ 4.0/5).
+
+### Verification
+- Conv 2 canonical across ALL framework documents. NORM-1 FULLY CLOSED.
+- PEER-SYNC: not triggered (no K_Space_Axiomatization.md structural change).
+
+### Risks resolved
+- Architecture Overview Conv 1 residual (external reader hazard): **RESOLVED** (C5)
+- CLAUDE.md EXTENDED item: **RESOLVED** (verified Conv 2)
+- Dual-convention ambiguity: **RESOLVED** (NORM-1 complete)
+
+### Open items added to tracking
+- [A-NS] no-signaling N>2: DEFERRED (after K9-S12 or Level 4 unfreeze)
+- [A-3O-2] T5 K_joint: CONDITIONAL (after Level 4 freeze)
+- [A-3O-3] β universality: OPEN (after K9-S12 result)
+
+---
+
 ## v36 (2026-05-29) — E7/E1/E6 K-axiom source-chain anchoring (bidirectional closure)
 
 ### Added

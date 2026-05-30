@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v36 (2026-05-29) — E7/E1/E6 K-axiom source-chain anchoring — bidirectional closure; PEER-SYNC PASS
+**Version:** v37 (2026-05-30) — NORM-1 Conv 2 fully closed (C1–C5 + EXTENDED); logic audit 4.2/5; post-audit RCA D1–D4 all ≥ 4.0/5
 **Zenodo DOI (v3.0):** [10.5281/zenodo.20431310](https://zenodo.org/records/20431310) — Working Paper v3.0 **PUBLISHED 2026-05-28**
 **Zenodo DOI (v2.0):** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (archived)
 **Concept DOI (cite-all):** [10.5281/zenodo.20289260](https://doi.org/10.5281/zenodo.20289260)
