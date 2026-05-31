@@ -110,21 +110,28 @@ Inclusions:    ι_i: B(H_{R_i}) → B(H),  ι_i(A) = 1⊗...⊗A_i⊗...⊗1
 
 ## 4. New Conditions for N>2
 
-### 4.1 φ-N1: Colimit Uniqueness
+### 4.1 φ-N1: Colimit Uniqueness — THEOREM (not a condition)
 
-**Source:** T4-H Step 4 — universal property.
+**Source:** φ-7 (universal) + T4-H Step 4.
+**Status:** **THEOREM** — proven from existing premises. NOT an independent new condition. See `RCA_phi_O5_1_phi_N1_theorem_2026_05_31.md` (3-Round RCA 4.63/5).
 
 ```
-φ-N1 (Colimit Uniqueness):
-  φ_colim: K_colim → B(H) is the UNIQUE K-structure-preserving map
-  satisfying φ-7-N.
+THEOREM φ-N1 (Colimit Uniqueness):
+  Given {φ_i: K_{R_i}→B(H_{R_i})} satisfying φ-7 universally,
+  the map φ_colim: K_colim→B(H_joint) satisfying φ-7-N is UNIQUE.
 
-  Once {φ_i: K_{R_i} → B(H_{R_i})} are fixed,
-  φ_colim has no additional degrees of freedom.
-  Any two maps satisfying φ-7-N are equal on all of K_colim.
+PROOF (4 steps):
+  1. φ-7 applied to f_{ij}: K_i→K_j:
+       ι_j(φ_j(f_{ij}(k))) = ι_i(φ_i(k))
+     ∴ {ι_i∘φ_i} is a compatible family for diagram D.
+  2. T4-H Step 4: ∃! u: K_colim→B(H_joint) with u∘e_i=ι_i∘φ_i.
+     Set φ_colim:=u.
+  3. φ_colim satisfies φ-7-N: φ_colim(e_i(k)) = ι_i(φ_i(k)). ✅
+  4. Any φ'_colim satisfying φ-7-N satisfies u'∘e_i=ι_i∘φ_i
+     → u'=u by T4-H Step 4 → φ'_colim=φ_colim. ✅  QED. ∎
 ```
 
-*Status:* Explicit corollary of φ-7-N + T4-H Step 4. Not logically independent of φ-7-N, but requires explicit statement: in N=2 (T1 constructive) φ was defined freely on K_F and K_W — uniqueness was not invoked.
+*Consequence:* The genuinely new CONDITIONS for N>2 are only **φ-N2** and **φ-N3**. φ-N1 is a theorem — it does not expand the condition set.
 
 ### 4.2 φ-N2: Associativity Preservation
 
@@ -193,9 +200,9 @@ K_F1⊥_K K_W ∧ K_F2⊥_K K_W ⇏ K_F1⊥_K K_F2  [BC-2 MANDATORY]
 | φ-6 → φ-6-N Authority-composition | ✅ 1 pair | ✅ N(N-1)/2 pairs independent | Generalized |
 | φ-7 → φ-7-N Embedding naturality | ✅ 1 embedding | ✅ N embeddings | Generalized |
 | φ-7′ Closure finalization | ✅ | ✅ unchanged | Inherited |
-| **φ-N1 Colimit Uniqueness** | N/A | **NEW (corollary φ-7-N+T4-H)** | New |
-| **φ-N2 Associativity** | N/A | **NEW (conditional T5)** | New |
-| **φ-N3 Pair-Independent Commutator** | N/A | **NEW (⊥_K non-transitivity)** | New |
+| φ-N1 Colimit Uniqueness | N/A | **THEOREM** (φ-7+T4-H Step 4) — not a condition | Theorem |
+| **φ-N2 Associativity** | N/A | **NEW CONDITION** (conditional T5) | New |
+| **φ-N3 Pair-Independent Commutator** | N/A | **NEW CONDITION** (⊥_K non-transitivity) | New |
 
 ---
 
@@ -250,10 +257,10 @@ Individual maps:
 
 | Component | Class | Basis |
 |-----------|-------|-------|
-| φ-N1 | D proposed | Corollary of φ-7-N + T4-H Step 4 (Class C) |
-| φ-N2 | D proposed | Conditional on T5 Class C-Conditional (all gates ✅) |
-| φ-N3 | D proposed | T4 §Non-transitivity + T7 BC-2 MANDATORY (Class C) |
-| Sufficiency | OPEN | Analogous to φ-O2 N_6 gap in N=2 |
+| φ-N1 | **C THEOREM** | Proven: φ-7 (universal) + T4-H Step 4 (Class C). 4-step proof. See §4.1. |
+| φ-N2 | D proposed condition | Conditional on T5 Class C-Conditional (all gates ✅) |
+| φ-N3 | D proposed condition | T4 §Non-transitivity + T7 BC-2 MANDATORY (Class C) |
+| Sufficiency of φ-N2+φ-N3 | OPEN | Analogous to φ-O2 N_6 gap in N=2 |
 
 ---
 
@@ -264,8 +271,9 @@ Individual maps:
 | φ-O5-1 | Is φ-N1 a strict logical consequence of φ-7-N? Formal proof needed. | High |
 | φ-O5-2 | Are φ-N1+N2+N3 sufficient for φ: K_colim→B(H) to be structure-preserving? | High |
 | ~~φ-O5-3~~ | ~~N=3 concrete model~~ | ✅ **VERIFIED** (hierarchical topology, RCA 4.57/5, `RCA_phi_O5_3_n3_concrete_model_2026_05_31.md`). See §4 bis. Sub-items open: φ-O5-3b (parallel topology), φ-O5-3c (circuit language). | — |
-| φ-O5-1 | Is φ-N1 a strict logical consequence of φ-7-N? Formal proof. | High |
-| φ-O5-2 | Are φ-N1+N2+N3 sufficient for structure-preservation? | High |
+| ~~φ-O5-1~~ | ~~φ-N1 strict consequence?~~ | ✅ **RESOLVED** — φ-N1 = THEOREM (φ-7+T4-H Step 4, RCA 4.63/5, `RCA_phi_O5_1_phi_N1_theorem_2026_05_31.md`). φ-N1 demoted from condition to theorem. Conditions for N>2: 5+3+**2**. | — |
+| φ-O5-1b | Is ι_j∘ι_{ij}=ι_i proven for general N? | Low (non-blocking) |
+| φ-O5-2 | Are φ-N2+φ-N3 sufficient (with 5+3 conditions)? | High |
 | φ-O5-3b | Parallel topology: verify φ-N1/N2/N3 when W measures F1 and F2 independently. | Medium |
 | φ-O5-3c | Quantum circuit language for φ-N3 Case A/B (experimental connection). | Medium |
 | φ-O5-4 | Explicit B(L_2) expression for φ-N2 commutativity with T5 isomorphism. | Medium |
@@ -279,7 +287,8 @@ Individual maps:
 |------|---------|--------|
 | 2026-05-31 | 0.1 | Initial draft. φ-N1 (colimit uniqueness), φ-N2 (associativity), φ-N3 (pair-independent commutator) derived from 3-Round RCA (4.54/5). 3 generalized conditions (φ-2-N, φ-6-N, φ-7-N). 5 open items. Class D. |
 | 2026-05-31 | 0.2 | §4 bis N=3 Concrete Model added (hierarchical F1,F2,W). φ-O5-3 VERIFIED (3-Round RCA 4.57/5, `RCA_phi_O5_3_n3_concrete_model_2026_05_31.md`). φ-N1/N2/N3 all verified. BC-2 non-transitivity confirmed. §8 open items updated: φ-O5-3 closed; φ-O5-3b/3c added. |
+| 2026-05-31 | 0.3 | φ-O5-1 RESOLVED: φ-N1 demoted to **THEOREM** (φ-7 universal + T4-H Step 4, RCA 4.63/5, `RCA_phi_O5_1_phi_N1_theorem_2026_05_31.md`). §4.1 rewritten with 4-step proof. §5 table: φ-N1 → THEOREM (Class C). §7 claim classification updated: φ-N1 Class C THEOREM. §8: φ-O5-1 closed, φ-O5-1b added, φ-O5-2 promoted. Genuinely new conditions for N>2: **2** (φ-N2 + φ-N3). |
 
 ---
 
-*φ-O5 v0.2 — 2026-05-31. φ-N1/N2/N3 Class D proposed + verified in hierarchical N=3. Next: φ-O5-1 (φ-N1 formal proof) or φ-O5-3b (parallel topology).*
+*φ-O5 v0.3 — 2026-05-31. Conditions for N>2: 5 inherited + 3 generalized + 2 genuinely new (φ-N2, φ-N3) + 1 theorem (φ-N1). Next: φ-O5-2 (sufficiency of φ-N2+φ-N3).*
