@@ -7,8 +7,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Document type:** `meta_architecture` (canonical source copy)
-**Date:** 2026-05-19 (updated 2026-05-31)
-**Version:** 2.5
+**Date:** 2026-05-19 (updated 2026-05-31 v2.6)
+**Version:** 2.6
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **Status:** v2.5 — Layer 1 extended with K5_prospective (P9 bridge, v29). Layer 2 extended with T8 (K5_prospective Frequency Bridge + H1-H4) + T9 (K_ctx Construction Theorem / T3-Morphism Channel Formalization, L1-L5) + **K7_trace** (Closure Transition Record, canonical promotion 2026-05-27) + **D_enc** (Transition-Encoding Registration Act, canonical promotion 2026-05-27) + **D_obs** (Observer Set Definition, [A-Obs] ELIMINATED, 2026-05-31). **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. **UPDATE (2026-05-24):** T8 bridges K5_prospective ↔ K9_E f_perp; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas). T9 formalizes φ_ij morphism channel; [A-E1] FULLY ELIMINATED via L1-L5 (5 lemmas, 3-Round RCA). Only [A-E3] remains (1/4 original K9_E assumptions). **UPDATE (2026-05-27):** K7_trace and D_enc promoted from BB-VVV local (fit plan §18-§19) to canonical Layer 2. RCA gate: 4.77/5 (Theoretical_Integration_plan.md v1). **UPDATE (2026-05-31):** Level 4 freeze declared (3-Round RCA 4.69/5, `RCA_phi_map_track_b_preparation_2026_05_31.md`). T4 → Class C; T7 → Class C (E15 anchor done 2026-05-31). Claim boundary updated: K1 Class C; K2-K8 remain Class D; **T4 Class C** (Level 4 freeze 2026-05-31); **T5 Class C-Conditional** (2026-05-30); **T7 Class C** (Level 4 freeze + E15 done 2026-05-31); T8, T9 Class C; K7_trace, D_enc, D_obs Class C-canonical; T1/T2/T3/T6 pending separate governance review.
 **Source:** Derived from VVV-QMRF Working Paper v2.0 Section 7.2 deferred item #5
@@ -2004,6 +2004,7 @@ K_ctx formal update (replaces T9 informal clause):
 | 14 | **Non-circular data comparison** | **Ongoing** — Known that marginal CHSH correlators cannot test the deviation due to Marginalization Cancellation. A genuine non-circular comparison requires extracting individual conditional correlators or joint outcome histograms from Proietti Figure 3 raw data. | **Critical** |
 | 15 | **Code consistency** | **Addressed (fits/K9S9)** — Formalized and implemented the exact P9-JC conditional prediction engine (`K9S9_conditional_predictions.py`), achieving 11% deviation at beta=0.3. Approximations in `k9e_predictor.py` and `d1_blk1_4point_fit.py` are deprecated. | High |
 | 16 | **Numerical predictions in main document** | **Ongoing** — First genuine numerical predictions generated in `plan/k9_analysis/K9S9_conditional_predictions.md`. Stating them formally in this main document is pending community review. | **Critical** |
+| 17 | **Registration Capacity Postulate (K10_R) — Layer 3** | **Adopted Class D (2026-05-31)** — C₁ (Admission Capacity ← K1), C₂ (Binary Validity ← K4), C₃ (Temporal Ordering ← K2), C₄ (Self-Certification ← K3). Grounds ValidReg(X,R) Condition 2 (X → M_X admission). Handles N_QM_VVV_00038 (Measured-but-Unregistered K-State). Prerequisite for K9_E application. EX compass: fills N_QM_VVV_00012 gap. 3-Round RCA 4.60/5 (9 rounds × threshold 4/5, 2026-05-31). Full text: `meta_architecture/K10_R_Registration_Capacity_Postulate.md`. | **High** |
 
 ---
 
@@ -2020,6 +2021,8 @@ K_ctx formal update (replaces T9 informal clause):
 | `synthesis/vvv_qmrf_synthesis_s3_registering_system_as_process_foundation.md` | Upstream — Source for K2 discreteness (Δ lemma) |
 | `SYSTEM_Buddhist_Epistemology/system_be_full.md` | Diagonal — BE SOT for lineage annotations |
 | `vvv-qmrf/schema_guide.md` | Process — Document creation contract; this document follows schema |
+| `meta_architecture/K10_R_Registration_Capacity_Postulate.md` | Layer 3 postulate — Registration Capacity (C₁–C₄ from K1–K4); grounds ValidReg(X,R) Condition 2; Class D adopted 2026-05-31 via 3-Round RCA 4.60/5 |
+| `papers/Testable_Prediction_Section/vvv_qmrf_valid_registered_measurement/VVV-QMRF_Valid_Registered_Measurement_Research_working_paper_draft.md` | Downstream Layer 3 — ValidReg(X,R) criterion; K10_R grounds its Condition 2 |
 
 ---
 
