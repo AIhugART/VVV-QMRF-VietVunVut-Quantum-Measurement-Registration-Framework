@@ -247,6 +247,49 @@ Individual maps:
 
 ---
 
+## 4 (ter). N=3 Concrete Model — EWF Parallel Topology (F1, F2, W)
+
+**RCA basis:** `04_governance/RCA_phi_O5_3b_parallel_topology_2026_05_31.md` (3-Round, 4.57/5 PASS)
+**Topology:** Parallel — F1 and F2 measure INDEPENDENT systems S1, S2; W measures their joint lab L_W.
+
+```
+Diagram D: K_{F1}→K_W AND K_{F2}→K_W  (SPAN — no K_{F1}→K_{F2})
+
+H_joint = L_W = H_{S1} ⊗ H_{F1_mem} ⊗ H_{S2} ⊗ H_{F2_mem}
+
+ι_1(A) = A ⊗ 1_{F1} ⊗ 1_{S2} ⊗ 1_{F2}  [H_{S1} factor only]
+ι_2(A) = 1_{S1} ⊗ 1_{F1} ⊗ A ⊗ 1_{F2}  [H_{S2} factor only]
+ι_W = identity on B(L_W)
+
+φ_colim assignments (unique by φ-N1):
+  k_F1 → P_{o_F1} ⊗ 1_{F1_mem} ⊗ 1_{S2} ⊗ 1_{F2_mem}  ∈ B(L_W)
+  k_F2 → 1_{S1} ⊗ 1_{F1_mem} ⊗ P_{o_F2} ⊗ 1_{F2_mem}  ∈ B(L_W)
+  k_W  → P_{o_W}                                          ∈ B(L_W)
+```
+
+### Verification Table
+
+| Condition | Result | Notes |
+|-----------|--------|-------|
+| φ-N1 Colimit Uniqueness | ✅ VERIFIED | Span: only f_{1W},f_{2W} compatibility needed; simpler than chain |
+| φ-N2 Associativity | ✅ VERIFIED | Route A (coproduct→K_joint) = Route B (direct colimit) |
+| φ-N3 Pair (F1,W) | ✅ [P_{o_F1}⊗1⊗1⊗1, P_{o_W}] ≠ 0 | W interference on L_W |
+| φ-N3 Pair (F2,W) | ✅ [1⊗1⊗P_{o_F2}⊗1, P_{o_W}] ≠ 0 | W interference on L_W |
+| φ-N3 Pair (F1,F2) | ✅ Commutator = 0 | Independent systems → K_F1⊬_K K_F2 → no constraint |
+| BC-2 Non-transitivity | ✅ MANDATORY CONFIRMED | **New mechanism:** independent system structure |
+| ρ-entanglement of S1,S2 | ✅ Does NOT create K-side ⊥_K | K≠H boundary: ρ-entanglement ≠ requires_K_joint=1 |
+
+**New research result:**
+> BC-2 non-transitivity has TWO physical mechanisms:
+> 1. **Hierarchical §4bis:** F2 product basis on same system (basis choice)
+> 2. **Parallel §4ter:** F1 and F2 on independent systems (system structure)
+> Both → K-side `requires_K_joint(F1,F2)=0` → commutator = 0. φ-N3 robust across topologies.
+
+**Claim class:** Class D (2 concrete topologies verified; general N still open).
+**Open:** φ-O5-3b-sub1 (span colimit K1-K8 formal check), φ-O5-3c (circuit language).
+
+---
+
 ## 6.2 φ-O5-2 Boundary Statement — Sufficiency Limits for N>2
 
 **RCA basis:** `RCA_phi_O5_2_sufficiency_2026_05_31.md` (3-Round, 4.57/5 PASS).
@@ -294,7 +337,7 @@ The N>2 condition set is **necessary but NOT provably sufficient** for two funda
 | ~~φ-O5-1~~ | ~~φ-N1 strict consequence?~~ | ✅ **RESOLVED** — φ-N1 = THEOREM (φ-7+T4-H Step 4, RCA 4.63/5, `RCA_phi_O5_1_phi_N1_theorem_2026_05_31.md`). φ-N1 demoted from condition to theorem. Conditions for N>2: 5+3+**2**. | — |
 | φ-O5-1b | Is ι_j∘ι_{ij}=ι_i proven for general N? | Low (non-blocking) |
 | ~~φ-O5-2~~ | ~~Sufficiency?~~ | ✅ **FUNDAMENTAL BOUNDARY** (2 gaps, RCA 4.57/5, `RCA_phi_O5_2_sufficiency_2026_05_31.md`). See §6.2. Gap 1: φ-N3 biconditional (C_K/D_joint no B(H) analogue). Gap 2: global vs pairwise ⊥_K (K_joint path-commutativity, no B(H) encoding). Conditions: necessary, not provably sufficient. | — |
-| φ-O5-3b | Parallel topology: verify φ-N1/N2/N3 when W measures F1 and F2 independently. | Medium |
+| ~~φ-O5-3b~~ | ~~Parallel topology~~ | ✅ **VERIFIED** (RCA 4.57/5, `RCA_phi_O5_3b_parallel_topology_2026_05_31.md`). See §4 ter. BC-2 via independent system structure. K≠H: ρ-entanglement ≠ K-side ⊥_K. Open: φ-O5-3b-sub1 (span colimit K1-K8 formal). | — |
 | φ-O5-3c | Quantum circuit language for φ-N3 Case A/B (experimental connection). | Medium |
 | φ-O5-4 | Explicit B(L_2) expression for φ-N2 commutativity with T5 isomorphism. | Medium |
 | φ-O5-5 | EX compass validation: K↔ρ for N=3 consistent with φ-N1/N2/N3. | Medium |
@@ -309,7 +352,8 @@ The N>2 condition set is **necessary but NOT provably sufficient** for two funda
 | 2026-05-31 | 0.2 | §4 bis N=3 Concrete Model added (hierarchical F1,F2,W). φ-O5-3 VERIFIED (3-Round RCA 4.57/5, `RCA_phi_O5_3_n3_concrete_model_2026_05_31.md`). φ-N1/N2/N3 all verified. BC-2 non-transitivity confirmed. §8 open items updated: φ-O5-3 closed; φ-O5-3b/3c added. |
 | 2026-05-31 | 0.3 | φ-O5-1 RESOLVED: φ-N1 demoted to **THEOREM** (φ-7 universal + T4-H Step 4, RCA 4.63/5, `RCA_phi_O5_1_phi_N1_theorem_2026_05_31.md`). §4.1 rewritten with 4-step proof. §5 table: φ-N1 → THEOREM (Class C). §7 claim classification updated: φ-N1 Class C THEOREM. §8: φ-O5-1 closed, φ-O5-1b added, φ-O5-2 promoted. Genuinely new conditions for N>2: **2** (φ-N2 + φ-N3). |
 | 2026-05-31 | 0.4 | φ-O5-2 RESOLVED: Sufficiency = **FUNDAMENTAL BOUNDARY** (2 gaps, RCA 4.57/5, `RCA_phi_O5_2_sufficiency_2026_05_31.md`). §6.2 Boundary Statement added. §7 sufficiency row updated. §8 φ-O5-2 closed (FUNDAMENTAL BOUNDARY). Gap 1: φ-N3 biconditional (C_K/D_joint no B(H) analogue, analogue of φ-O2). Gap 2: global vs pairwise ⊥_K (K_joint path-commutativity, NEW for N>2). |
+| 2026-05-31 | 0.5 | φ-O5-3b VERIFIED: Parallel topology (F1,F2 independent systems, W measures joint lab). §4 ter added. BC-2 via independent system structure (new mechanism vs hierarchical basis choice). K≠H: ρ-entanglement ≠ requires_K_joint=1. φ-N1/N2/N3 all verified. §8 φ-O5-3b closed. |
 
 ---
 
-*φ-O5 v0.4 — 2026-05-31. Condition set: 5+3+2 (necessary, not provably sufficient). φ-N1 = Class C THEOREM. φ-N2, φ-N3 = Class D conditions. Sufficiency = FUNDAMENTAL BOUNDARY (2 gaps). Remaining: φ-O5-1b (non-blocking), φ-O5-3b (parallel topology).*
+*φ-O5 v0.5 — 2026-05-31. Conditions: 5+3+2 necessary (not provably sufficient). Verified: hierarchical (§4bis) + parallel (§4ter) topologies. φ-N3 robust across both physical mechanisms of BC-2. Open: φ-O5-1b (non-blocking), φ-O5-3b-sub1 (span colimit K1-K8), φ-O5-3c (circuit language).*

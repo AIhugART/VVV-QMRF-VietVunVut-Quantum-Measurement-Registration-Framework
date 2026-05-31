@@ -6,6 +6,37 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v47 (2026-05-31) — φ-O5-3b VERIFIED: Parallel Topology (F1,F2 independent systems), RCA 4.57/5
+
+### Added
+- `04_governance/RCA_phi_O5_3b_parallel_topology_2026_05_31.md` — 3-Round RCA (4.57/5). φ-N1/N2/N3 verified for parallel topology (span diagram: K_F1→K_W, K_F2→K_W; no K_F1→K_F2).
+
+### Updated
+- `meta_architecture/phi_O5_n_observer_extension_v0_1.md` v0.4→v0.5:
+  - §4 ter Parallel Model added: H_joint=H_{S1}⊗H_{F1_mem}⊗H_{S2}⊗H_{F2_mem}; verification table
+  - §8 φ-O5-3b closed (VERIFIED); φ-O5-3b-sub1 added (span colimit K1-K8, non-blocking)
+  - §9 v0.5 changelog entry
+
+### Verified
+- φ-N1: Unique φ_colim via span diagram (simpler than chain — only f_{1W},f_{2W} needed)
+- φ-N2: Route A (coproduct K_F1∐K_F2 → K_joint with K_W) = Route B (direct colimit)
+- φ-N3 (F1,W): [P_{o_F1}⊗1⊗1⊗1, P_{o_W}] ≠ 0 ✅
+- φ-N3 (F2,W): [1⊗1⊗P_{o_F2}⊗1, P_{o_W}] ≠ 0 ✅
+- φ-N3 (F1,F2): Commutator = 0 (independent systems → requires_K_joint=0)
+- BC-2 MANDATORY: K_F1⊥_K K_W ∧ K_F2⊥_K K_W ⇏ K_F1⊥_K K_F2 ✅
+
+### New Research Result
+BC-2 non-transitivity has TWO physical mechanisms:
+1. Hierarchical (§4bis): F2 product basis on same system (measurement basis choice)
+2. Parallel (§4ter): F1,F2 on independent systems (independent system structure)
+Both correctly predicted by K-side `requires_K_joint` check. φ-N3 robust across topologies.
+
+### Key Insight: K≠H boundary explicitly confirmed
+ρ-entanglement of S1,S2 does NOT create K-side incommensurability (requires_K_joint).
+Physical state entanglement (H-layer) ≠ registration-logic joint validity demand (K-layer).
+
+---
+
 ## v46 (2026-05-31) — φ-O5-2 RESOLVED: Sufficiency = FUNDAMENTAL BOUNDARY (2 Gaps, RCA 4.57/5)
 
 ### Added
