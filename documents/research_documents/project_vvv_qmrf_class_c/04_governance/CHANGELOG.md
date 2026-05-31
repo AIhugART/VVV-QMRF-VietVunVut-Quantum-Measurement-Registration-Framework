@@ -6,6 +6,30 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v40 (2026-05-30) — T5 Conditional THEOREM (RCA 4.4/5)
+
+### Added
+- `02_derivation_chain/T5_conditional_theorem_proof.md` — T5 K_joint associativity proof (NEW)
+  Hybrid A+B approach: Path B (F7d via T4-H Step 3 K5 content-basedness) + Path A (UP chain)
+  All lemmas PASS: B1/B2/B3 (CE-1/CE-2/CE-3 resolved) + A1/A2/A3/A4
+  Conditional scope: (C1) T4-H THEOREM, (C2) T1+T4 admissibility, (C3) F7d commutativity
+- `04_governance/rca_session_summary_T5_proof.md` — session summary (NEW)
+
+### Updated
+- `01_axiomatization/K_Space_Axiomatization.md §T5` — Claim class: D (proposed) → Class C Conditional THEOREM
+- `meta_architecture/K_Space_Axiomatization.md §T5` — PEER-SYNC (same update)
+- `index.md` — [A-3O-2] RESOLVED (conditional), [A-NS] Conditional THEOREM, version v39→v40
+
+### Closed
+- **[A-3O-2] T5 K_joint composition** — RESOLVED (conditional, RCA 4.4/5)
+- **[A-NS] No-signaling N>2** — Conditional THEOREM (induction via T5 §6)
+
+### RCA basis
+- Pre-proof RCA (2026-05-30): R1=4.5 / R2=4.3 / R3=4.4 → Aggregate 4.4/5 ✅
+- Post-proof verification: same scoring, all lemmas PASS
+
+---
+
 ## v39 (2026-05-30) — T5 Conditional Proof Plan (RCA 4.3/5)
 
 ### Added

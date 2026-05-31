@@ -13,10 +13,31 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Tiebreaker:** Risk Score bang nhau -> sort by H (desc) -> W (desc) -> A (desc) -> Trace score (ascending)
 **Shared component rule:** Components appearing in both tables (T5 K_ctx, K5_prospective) MUST have identical H/W/A/Risk scores. Any score change to a shared component MUST be applied to both tables.
 
-**Ngay:** 2026-05-27 UTC+7
-**Version:** v1.6 — K7_trace + D_enc AHP evaluation (Layer 2 promotion, 2026-05-27): both GREEN/LOW, G2 gate PASS, no Top 10 entry required
-**Previous:** v1.5 (2026-05-25) — AHP Status Model Extension (DORMANT+ARCHIVED) + Tiebreaker #4 (Trace score) + v1.0→v1.1 changelog
-**Next audit:** 2026-05-31
+**Ngay:** 2026-05-31 UTC+7
+**Version:** v1.7 — Weekly audit 2026-05-31: 5 components PASS, 0 score changes; T5 K_ctx §6 + K5_prospective B2 structural notes (v40 delta)
+**Previous:** v1.6 (2026-05-27) — K7_trace + D_enc AHP evaluation (Layer 2 promotion, 2026-05-27): both GREEN/LOW, G2 gate PASS
+**Next audit:** 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β)
+
+---
+
+## Changelog v1.6 -> v1.7
+
+**Audit date:** 2026-05-31 UTC+7 — Scheduled weekly audit
+**Project delta:** project_vvv_qmrf_class_c v1.6 (2026-05-27) → v40 (2026-05-30)
+**Method:** 3-Round RCA × 5-Why × scoring threshold 4/5 (CLAUDE.md Rule Zero)
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|------------|
+| **AUDIT** | P10-NOISE | Risk=18.0, ANALYZED—FAIL | **UNCHANGED** | No new Proietti D1 raw event data. No new noise analysis scripts in `07_fits/` since 2026-05-27. noise_threshold=0.10 sigma RMS FAIL persists. Next: raw event data or 3-observer experiment (external). |
+| **AUDIT** | T5 K_ctx | Risk=18.0, MONITORING | **UNCHANGED** | 5-Why RCA: Bridge theorem T5 ([A-3O-2], Conditional THEOREM v40) = K_joint associativity ≠ AHP T5 K_ctx (K9_E term 5 = K_ctx context set). Two distinct "T5"s. T5 theorem §6 establishes K_ctx **setting-independence** (K_ctx does NOT depend on observer N+1's setting choice — content-based via B2). However: residual risk = observer **set selection rule** (WHICH observers are in K_ctx), not setting-independence. §6 constrains K_ctx behavior; does not define K_ctx domain membership. Observer set selection unformalized → H=5 maintained. |
+| **STRUCTURAL NOTE** | T5 K_ctx | Trace=3/6 (T9-morphism + T3 + K2) | +§6 of `T5_conditional_theorem_proof.md`: K_ctx setting-independence proven | New structural property: K_ctx content is setting-independent (no-signaling induction, §6). Does NOT resolve observer set selection rule. Trace integer 3/6 unchanged; improvement noted for next full re-audit. |
+| **AUDIT** | K9_E implementations | Risk=12.0, MONITORING | **UNCHANGED** | No new scripts in `07_fits/` since 2026-05-27. `utils/k9e_predictor.py` (additive) and `proietti_raw_fit.py` (multiplicative) still co-exist. Canonical model selection deferred to K9-S12 optical experiment. |
+| **AUDIT** | K5_prospective | Risk=12.0, MONITORING | **UNCHANGED** | PEER-SYNC v38 addition "T8: f_perp = E[I(K5p fires)]" in K5p table makes T8 dependency explicit (T8 already in trace=3/6 — no new SOT source). 5-Why RCA: T5 Theorem Lemma B2 validates K5 content-basedness (conditions i-iii path-independent under K8-morphisms). K5_prospective inherits same conditions (i)-(iii). However: K5_prospective's novel contribution is hypothetical k_o* evaluation target — not directly addressed by B2 (B2 proves actual K-state content-basedness, not hypothetical tuple handling). Type 4 residual not eliminated. H=5 maintained. |
+| **STRUCTURAL NOTE** | K5_prospective | T5 B2 not yet validated | +T5 Lemma B2 (`T5_conditional_theorem_proof.md §2`): K5 content-basedness proven via T4-H Step 3 | K5's conditions (i)(ii)(iii) content-based and path-independent. K5_prospective inherits structural support. Hypothetical k_o* mode residual persists. Trace integer 3/6 unchanged; improvement noted. |
+| **AUDIT** | β (FP-1) | β=0.598 (Proietti D1), MODELING CHOICE | **UNCHANGED** | No new experimental data. FREE PARAMETER (measurement target). Cross-experiment verification pending K9-S12. |
+| **INFORM** | E1-E16 | Trace=2/6 (group minimum), Risk=9.6 | **NO CHANGE THIS CYCLE** — Monthly (2026-06-30) | Multiple K-axiom anchor improvements 2026-05-29: E1 §3f, E3 §3d, E6 §3d, E7 §3f, E9 §3d-3e, E11 §3e-3f. Group minimum may have moved. Full re-audit deferred to 2026-06-30 per Monthly schedule. |
+
+**G3 Gate verdict (2026-05-31):** 5 components audited. 0 score changes. 0 CRITICAL/HIGH escalations. 2 structural notes (T5 K_ctx + K5_prospective — new structural properties, no score impact). All PASS. Next audit: 2026-06-07.
 
 ---
 
@@ -607,16 +628,16 @@ Khong nam trong Top 10 (khong phai assumption), nhung can duoc track:
 | Component | Table(s) | Next Audit | Frequency | Trigger |
 |-----------|----------|-----------|-----------|---------|
 | phi-map K→B(H) | Both | 2026-06-30 | Monthly | Moi Track B milestone |
-| P10-NOISE | Table 1 | 2026-05-31 | Weekly | Truoc khi public "genuine" claim |
-| T5 K_ctx | Both | 2026-05-31 | Weekly | Moi khi T3/T9 duoc update. Sync both tables. |
+| P10-NOISE | Table 1 | 2026-06-07 | Weekly | Truoc khi public "genuine" claim |
+| T5 K_ctx | Both | 2026-06-07 | Weekly | Moi khi T3/T9 duoc update. Sync both tables. |
 | T4-H Steps 3-4 | Both | 2026-06-30 | Monthly | Khi co resource |
 | K9E-PAT | Table 1 | N/A | On trigger (reactivate) | ARCHIVED; reactivate if K9-S12 experiment provides new data |
-| K9_E implementations | Table 1 | 2026-05-31 | Weekly | Moi numerical prediction |
-| K5_prospective | Both | 2026-05-31 | Weekly | Moi khi K5/K9_E thay doi. Sync both tables. |
-| E1-E16 | Both | 2026-06-30 | Monthly | Moi khi BE SOT thay doi |
+| K9_E implementations | Table 1 | 2026-06-07 | Weekly | Moi numerical prediction |
+| K5_prospective | Both | 2026-06-07 | Weekly | Moi khi K5/K9_E thay doi. Sync both tables. |
+| E1-E16 | Both | 2026-06-30 | Monthly | Moi khi BE SOT thay doi. Multiple postulate anchors improved 2026-05-29 (E1/E3/E6/E7/E9/E11) — consider early re-audit. |
 | P10-TIM | Table 1 | N/A | On trigger (reactivate) | DORMANT; reactivates khi raw event data available |
 | BE↔QM mapping | Both | 2026-06-30 | Monthly | Moi khi mapping files thay doi |
-| **β (Free Param)** | Table 1 | 2026-05-31 | Weekly | Moi experimental data moi |
+| **β (Free Param)** | Table 1 | 2026-06-07 | Weekly | Moi experimental data moi |
 
 ---
 
@@ -661,4 +682,4 @@ OPEN → MONITORING → ARCHIVED (RCA >= 4.5/5, UNRESOLVABLE)
 
 ---
 
-*Top 10 Hallucination Risk Record v1.5 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). Next audit: 2026-05-31.*
+*Top 10 Hallucination Risk Record v1.7 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). Weekly audit 2026-05-31: 5 PASS, 0 score changes. Next audit: 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β).*

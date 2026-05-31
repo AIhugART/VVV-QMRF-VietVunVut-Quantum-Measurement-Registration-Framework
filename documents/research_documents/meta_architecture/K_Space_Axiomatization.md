@@ -1254,8 +1254,8 @@ Conditional scope:
 | **Level 4 dependency** | `requires_K_joint`, `D_joint`, `AdmJoint` (for admissibility of each K_joint step) |
 | **EX anchor** | No direct EX intersection node — internal algebraic theorem; EX compass used as sanity check (no K_joint composition tension in EX graph) |
 | **BE lineage** | Continuity of K-side registration structure across sequential joint contexts — structural extension of K2 chain property to multi-K_R scope |
-| **Claim class** | D (proposed) — T4-H is now THEOREM (2026-05-28); T5 upgrade to Class C pending Level 4 freeze (remaining gate) |
-| **Freeze status** | Conditional on Level 4 freeze (T4-H gate resolved) |
+| **Claim class** | Class C Conditional THEOREM (2026-05-30, RCA 4.4/5) — proven via Hybrid A+B: (C1) T4-H THEOREM, (C2) T1+T4 admissibility per Level 4, (C3) F7d commutativity via T4-H Step 3 K5 content-basedness. See `02_derivation_chain/T5_conditional_theorem_proof.md`. |
+| **Freeze status** | Conditional on (C1)(C2)(C3) — T4-H gate resolved; Level 4 stability conditional |
 | **Update trigger** | If K_joint compatibility conditions change; if global commutativity (F7d) conditions are revised; if Level 4 freeze changes |
 
 ---
