@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v41 (2026-05-31) — D_obs Observer Set Formal Definition (RCA 4.3/5): [A-Obs] ELIMINATED; K_ctx derivation chain complete (K1-K8 + T1 + T9 + D_obs); T8 `|K_ctx|` bounded; 0 open assumptions
+**Version:** v42 (2026-05-31) — K10_R Registration Capacity Postulate adopted Layer 3 Class C (qualified) (RCA 4.67/5): C₁–C₄ from K1–K4; grounds ValidReg Condition 2; fills N_QM_VVV_00012; K_Space_Axiomatization.md v2.6 + Open Item #17. v41: D_obs [A-Obs] ELIMINATED; K_ctx derivation chain complete
 **Zenodo DOI (v3.0):** [10.5281/zenodo.20431310](https://zenodo.org/records/20431310) — Working Paper v3.0 **PUBLISHED 2026-05-28**
 **Zenodo DOI (v2.0):** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (archived)
 **Concept DOI (cite-all):** [10.5281/zenodo.20289260](https://doi.org/10.5281/zenodo.20289260)
@@ -67,11 +67,13 @@ Layer 2 (UPDATABLE)  T1–T9 Bridge theorems + conservative extensions
        |              K7_trace + D_enc (canonical Layer 2, K_Space_Axiomatization.md v2.4, RCA 4.77/5)
        |              D_obs (Observer Set Definition, Layer 2, RCA 4.3/5, [A-Obs] ELIMINATED 2026-05-31)
        v
-Layer 3 (Class C)    K9_E Probability postulate (P9)
-       |              P(o|K) = Tr(E_o rho) * [1-beta*f_perp(o,K_ctx)]/Z_E  [Conv 2]
+Layer 3 (Class C)    K9_E Probability postulate (P9) + K10_R Registration Capacity Postulate
+       |              K9_E: P(o|K) = Tr(E_o rho) * [1-beta*f_perp(o,K_ctx)]/Z_E  [Conv 2]
        |              1 free parameter beta; 0 assumptions; 8 terms with K-space provenance
-       |              [A-E1]–[A-E4] ELIMINATED/RECLASSIFIED (v29)
-       v              K9_E is a POSTULATE, not derivable from K1–K8 alone
+       |              [A-E1]–[A-E4] ELIMINATED/RECLASSIFIED (v29); K9_E is a POSTULATE
+       |              K10_R: S valid K-registrar iff C₁(←K1)∧C₂(←K4)∧C₃(←K2)∧C₄(←K3)
+       |              Grounds ValidReg Condition 2; fills N_QM_VVV_00012; RCA 4.67/5 (2026-05-31)
+       v              Both K9_E and K10_R are POSTULATES, not derivable from K1–K8 alone
 Layer 4 (Class D)    Multi-paper data fit
        |              D1 Proietti CHSH: beta=0.598 (genuine fit), V=0.939, 2.31sigma
        |              D2 Bong LF: Phase 10b analysis INVALIDATED (K9-S8 marginalization)

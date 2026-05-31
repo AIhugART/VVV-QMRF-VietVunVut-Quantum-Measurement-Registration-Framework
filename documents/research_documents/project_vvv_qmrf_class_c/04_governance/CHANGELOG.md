@@ -2025,3 +2025,48 @@ K9_D proposes `P(o|k) = [cert(k)·1 + (1-cert(k))·α]·Tr(E_o ρ)/Z_D`. FAIL-FA
 | `03_k9_sprints/k9_deep_review/synthesis_k9_a_to_f.md` | NEW — P7 deliverable; aggregate table, shared-component analysis, failure taxonomy (Mode 0–3), action register, success criteria check, Class C re-issuance statement |
 | `03_k9_sprints/k9_deep_review/index.md` | Status → P7 ✅ ALL COMPLETE; P7 row completed; Change Log P7 v1.0 entry; footer v0.4; program closed |
 | `04_governance/CHANGELOG.md` | Entry #27 Status corrected; entry #28 Pending → Status corrected; this entry #29 added |
+
+---
+
+## 30. K10_R Registration Capacity Postulate — Layer 3 Class C (qualified) (2026-05-31)
+
+**Scope:** VVV-QMRF meta_architecture Layer 3 — new postulate adoption and Class C promotion.
+**Method:** 3-Round RCA × 5-Why × threshold 4/5. Total 15 rounds across two phases.
+**RCA aggregate:** Phase 1 (governance) 4.60/5; Phase 2 (Class C promotion) 4.67/5. Both PASS.
+
+### Summary
+
+K10_R (Registration Capacity Postulate) adopted as Layer 3 postulate and promoted to Class C (qualified) in the same session.
+
+**Root cause:** ValidReg(X,R) Condition 2 (X → M_X admission) had no physical grounding. K1–K8 axiomatize K-space element properties but not the physical CONDITIONS a system must satisfy to instantiate them.
+
+**K10_R formal definition:** S is valid K-registrar iff C₁(Admission Capacity←K1) ∧ C₂(Binary Validity←K4) ∧ C₃(Temporal Ordering←K2) ∧ C₄(Self-Certification←K3).
+
+**ValidReg Condition 2 (K10_R-grounded):**
+X → M_X ∈ R iff (2a) K10_R(R) [NECESSARY] AND (2b) C₁-threshold(X,R) [SUFFICIENT given (2a)].
+
+**Key correction on Class C bar:**
+- WRONG: "Promotes to Class C when φ-map proven OR experimentally confirmed" (= Class B/A bar)
+- CORRECT: WP v3.0 §7 defines Class C = "structurally testable, empirically UNCONFIRMED"
+- φ-map is NOT required for Class C
+
+**Class C (qualified) basis:**
+- Testability: C₁-threshold variation protocol via N_QM_00021 (System-Meter Coupling)
+- Disconfirmation: N_QM_VVV_00038 (3 QM anchors: weak measurement, IFM, partial measurement)
+- K9_E prerequisite domain (K1-analogy from WP v3.0)
+- "Qualified" source: C₄ self-certification lacks K∩ρ EX anchor
+
+**EX compass nodes:** N_QM_VVV_00012 (gap filled), N_QM_VVV_00038 (stress case), N_QM_VVV_00044 (C₁ threshold), N_QM_VVV_00039 (C₃ temporal).
+
+### Files Modified
+
+| File | Change |
+|------|--------|
+| `meta_architecture/K10_R_Registration_Capacity_Postulate.md` | NEW — Layer 3 postulate, Class C (qualified), C₁–C₄ formal definition, testability target, EX compass nodes |
+| `meta_architecture/K_Space_Axiomatization.md` (canonical) | v2.5→v2.6; Open Item #17 (K10_R adopted Class D → promoted Class C); 2 cross-references added |
+| `project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md` (Class C) | PEER-SYNC — same Open Item #17 + cross-references |
+| `history.md` | Session entry added (2026-05-31 K10_R) |
+| `project_vvv_qmrf_class_c/04_governance/CHANGELOG.md` | This entry #30 |
+| `project_vvv_qmrf_class_c/index.md` | Layer 3 architecture updated to include K10_R |
+
+**Commits:** ce567e1 (adopt Class D + PEER-SYNC v2.6) + 0854c83 (promote Class C qualified).

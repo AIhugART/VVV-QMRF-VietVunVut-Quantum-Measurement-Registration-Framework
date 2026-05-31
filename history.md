@@ -518,6 +518,16 @@ Single-entry-point document: K->p(o) formula, component origin table, 6 boundary
 - **Change:** Added Layer 2 Semantic Definition `D_obs` (following D_enc pattern): `Obs(Exp, R_i) := {R_j ≠ R_i : requires_K_joint(R_i,R_j)=1 ∧ R_j ∈ Exp}`. Updated T9 K_ctx formal clause + [A-Obs] metadata row. Updated Layer 2 Summary table (D_obs row added after D_enc). PEER-SYNC applied to both copies. sync_check_k_space.sh PASS.
 - **Files modified:** `meta_architecture/K_Space_Axiomatization.md` (canonical) + `project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md` (PEER copy) — both +78 lines symmetric.
 
+### 2026-05-31 — K10_R Registration Capacity Postulate: Class D adopted → Class C (qualified) promoted
+
+- **Scope:** VVV-QMRF meta_architecture Layer 3 — new postulate. VVV-QMRF scope + VVV-QMRF-EX compass. 3-Round RCA × 5-Why × threshold 4/5 (15 rounds total).
+- **Starting question:** "Cơ chế gây collapse hàm sóng khi đo là gì?" → RCA traced to gap: physical mechanism triggers K1+K4 (axiom, not derived). Root cause: Category boundary Logic Layer ↔ Dynamics Layer.
+- **Root cause fixed:** ValidReg(X,R) Condition 2 (X → M_X admission) had no physical grounding. K1–K8 axiomatize K-space element properties but not physical conditions a system must satisfy to instantiate them (Heisenberg cut problem at K-space layer).
+- **K10_R formal:** S is valid K-registrar iff C₁(←K1) ∧ C₂(←K4) ∧ C₃(←K2) ∧ C₄(←K3). Grounds ValidReg Condition 2. Handles N_QM_VVV_00038 (Measured-but-Unregistered). Fills EX gap N_QM_VVV_00012. Prerequisite for K9_E application.
+- **Adoption path:** Class D (governance RCA 4.60/5, 12 rounds) → Class C (qualified) same session (RCA 4.67/5, 3 rounds).
+- **Key correction:** Class C = "structurally testable, empirically UNCONFIRMED" (WP v3.0 §7). φ-map is Class B/A bar, not Class C. Testability: C₁-threshold via N_QM_00021 (System-Meter Coupling); disconfirmation via N_QM_VVV_00038 (3 QM anchors). "Qualified" = C₄ lacks K∩ρ EX anchor.
+- **Files modified:** NEW `meta_architecture/K10_R_Registration_Capacity_Postulate.md`; K_Space_Axiomatization.md (both copies) v2.5→v2.6 + Open Item #17. Commits: ce567e1 + 0854c83.
+
 ### 2026-05-31 — paper_002 v95: §8.1 Falsification Hierarchy Boundary
 
 - **Scope:** manuscript.md §8.1 — Level 0 null ≠ Levels 1–3 boundary statement. VVV-QMRF scope, VVV-QMRF-EX as compass.
