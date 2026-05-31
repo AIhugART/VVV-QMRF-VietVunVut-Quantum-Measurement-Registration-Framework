@@ -8,7 +8,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Date:** 2026-05-31
 **Version:** 1.0
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** Class D (proposed) — Adopted via 3-Round RCA 4.60/5 (9 rounds × threshold 4/5, 2026-05-31)
+**Status:** Class C (qualified) — Promoted via 3-Round RCA 4.67/5 (2026-05-31). Structurally testable, empirically UNCONFIRMED. "Qualified" because C₄ self-certification lacks K∩ρ EX anchor — operationalization requires careful experimental design.
 **Layer:** 3 (postulate, alongside K9_E)
 **Peer reference:** K_Space_Axiomatization.md Open Item #17
 
@@ -37,7 +37,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 ```
 POSTULATE K10_R — Registration Capacity Postulate
-Layer 3 | Class D (proposed) | 2026-05-31
+Layer 3 | Class C (qualified) | Adopted 2026-05-31 | Promoted 2026-05-31
 
 S is a valid K-registrar  ⟺  C₁(S) ∧ C₂(S) ∧ C₃(S) ∧ C₄(S)
 
@@ -120,7 +120,43 @@ K10_R does NOT modify the K9_E probability formula. β = 0 always recovers Born 
 
 ---
 
-## 6. EX Compass Nodes (internal-first — EX used as verification only)
+## 6. Class C Testability Target
+
+```
+Formal testability question:
+  "Does physical system R satisfy K10_R(R) — i.e., C₁∧C₂∧C₃∧C₄?"
+
+Structural testability protocol (Class C basis):
+  C₁: Vary coupling strength X. Detect pointer-state transition
+      s → s_k in R (quantum state tomography of detector).
+      EX anchor: N_QM_00021 (System-Meter Coupling). Testable ✅
+  C₂: Verify binary outcomes (click/no-click statistics).
+      Standard QM experimental statistics. Testable ✅
+  C₃: Verify discrete injective timestamp ordering.
+      Standard time-tagging electronics. Testable ✅
+  C₄: Verify self-report of registration without external certifier.
+      Coincidence detection circuit.
+      No K∩ρ EX anchor found → operationalization requires care.
+      Testable (with design effort) → "qualified" source ⚠
+
+Disconfirmation target [N_QM_VVV_00038 — ρ-count = 3]:
+  Predict: ValidReg(X_weak, R) = FALSE when X below C₁ threshold.
+  Test scenarios (3 QM anchors):
+    (a) Weak measurement (below threshold coupling)
+    (b) Interaction-free measurement (N_QM_00033)
+    (c) Partial measurement (insufficient information transfer)
+  Falsification: R satisfying K10_R produces valid registration
+  while violating C₁ OR C₂ OR C₃ OR C₄.
+
+Class C vs higher classes:
+  Class C (now): Structurally testable, empirically UNCONFIRMED
+  Class B:       Protocol run + confirming experimental results
+  Class A:       Independent replication
+```
+
+---
+
+## 7. EX Compass Nodes (internal-first — EX used as verification only)
 
 | EX Node | Concept | Role for K10_R |
 |---------|---------|----------------|
@@ -137,13 +173,15 @@ K10_R does NOT modify the K9_E probability formula. β = 0 always recovers Born 
 
 | Property | Value |
 |----------|-------|
-| **Claim class** | D (proposed) |
+| **Claim class** | C (qualified) — structurally testable, empirically UNCONFIRMED |
 | **Layer** | 3 (postulate) |
 | **K-axiom grounding** | C₁ ← K1, C₂ ← K4, C₃ ← K2, C₄ ← K3 |
 | **Level 4 dependency** | None |
 | **Interpretation** | Neutral — Copenhagen / MWI / GRW / decoherence compatible |
-| **Governance** | 3-Round RCA Phase A 4.73/5 + Phase B 4.80/5 = overall 4.60/5 (2026-05-31) |
-| **Promotes to Class C when** | φ: K→B(H) map proven OR physical registrar conditions experimentally confirmed |
+| **Governance** | Adopted Class D (RCA 4.60/5, 2026-05-31); promoted Class C (RCA 4.67/5, 2026-05-31) |
+| **Class C basis** | (1) Structural testability: C₁-threshold protocol via N_QM_00021 System-Meter Coupling; (2) Disconfirmation target: N_QM_VVV_00038 (3 QM anchors); (3) K9_E prerequisite domain (K1-analogy) |
+| **"Qualified" source** | C₄ self-certification: no K∩ρ EX anchor found; operationalization requires dedicated experimental design |
+| **Promotes to Class B when** | C₁-C₄ protocol run + confirming results (empirical confirmation) |
 | **PEER-SYNC** | Open Item #17 in both K_Space_Axiomatization.md copies |
 
 ---
