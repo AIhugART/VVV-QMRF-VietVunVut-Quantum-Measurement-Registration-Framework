@@ -77,6 +77,17 @@ Hierarchy condition:
 | REO category | Category 03 | Class D |
 | Equivalence? | Unproven | Class C |
 
+### 3d. K-axiom Anchor Table
+
+| Dimension | K-axiom | Anchor type | Mapping |
+|-----------|---------|-------------|---------|
+| Retroactive validity revocation V=1→V=0 | **K4** (validity field) | Direct | E8 retroactive override = K4 V-field update: M1's k_tuple has its V set from 1 to 0; bhrānti reclassification = k_tuple moved from valid registry to invalidated registry at the K-layer |
+| Temporal ordering M2 posterior to M1 | **K2** (temporal injectivity) | Supporting | K2 assigns unique timestamps to each event; M2 must have t₂ > t₁ for the override to be "retroactive"; without K2 temporal ordering, the direction of override is undefined |
+| K-layer override only (physical event preserved) | **K4** + **K≠H** | Scope boundary | E8 voids M1's registration authority at the K-layer only; the physical ρ-interaction still occurred; override does not undo the physical event |
+| E10 FAIL_C3 upstream routing | **K5** → **E8** (incoming) | Consumer relationship | E10 FAIL_C3 (false-positive, K5 trigger) routes to E8 domain; but K5 (incompatible observables condition) is NOT a direct anchor of E8's own mechanism — E8's trigger is same-observable orthogonality, governed by K4 directly |
+
+> **RCA verdict (2026-05-31):** 3-round RCA × 5-Why × 4/5 threshold. R1=4.5 (root cause: no §3d anchor; K4/K5 question unresolved), R2=4.83 (K5 disambiguation: K5 is upstream router from E10 FAIL_C3, NOT a direct E8 anchor; E8 trigger is same-observable orthogonality, governed by K4), R3=4.0 (K4 direct anchor confirmed; K2 supporting; K5 consumer relationship documented). Aggregate **4.44/5 PASS**. K-axiom anchor COMPLETE.
+
 ---
 
 ## 4. Mathematical Notation / Ký hiệu Toán học

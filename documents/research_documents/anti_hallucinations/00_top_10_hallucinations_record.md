@@ -14,9 +14,23 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Shared component rule:** Components appearing in both tables (T5 K_ctx, K5_prospective) MUST have identical H/W/A/Risk scores. Any score change to a shared component MUST be applied to both tables.
 
 **Ngay:** 2026-05-31 UTC+7
-**Version:** v1.7 — Weekly audit 2026-05-31: 5 components PASS, 0 score changes; T5 K_ctx §6 + K5_prospective B2 structural notes (v40 delta)
-**Previous:** v1.6 (2026-05-27) — K7_trace + D_enc AHP evaluation (Layer 2 promotion, 2026-05-27): both GREEN/LOW, G2 gate PASS
+**Version:** v1.8 — E-postulate K-axiom anchor completion 2026-05-31: E4/E5/E8/E13/E14/E15/E16 §3d added; K1-K8 100% coverage; E1-E16 group trace improvement noted (full re-audit scheduled 2026-06-30)
+**Previous:** v1.7 (2026-05-31) — Weekly audit: 5 components PASS, 0 score changes; T5 K_ctx §6 + K5_prospective B2 structural notes (v40 delta)
 **Next audit:** 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β)
+
+---
+
+## Changelog v1.7 -> v1.8
+
+**Audit date:** 2026-05-31 UTC+7 — E-postulate K-axiom anchor completion
+**Method:** 3-Round RCA × 5-Why × scoring threshold 4/5 (CLAUDE.md Rule Zero)
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|------------|
+| **INFORM** | E1-E16 | Trace=2/6 (group minimum), Risk=9.6 | **NO SCORE CHANGE** — trace improvement noted | K-axiom §3d anchor tables added for E4/E5/E8/E13/E14/E15/E16 (2026-05-31): 7 postulates gain formal K1-K8 anchor, K1-K8 100% coverage. Session aggregate 4.84/5 PASS. Group minimum trace may have improved. Full re-audit scheduled 2026-06-30 per Monthly cadence. See `framework/plan/E_Postulate_K_Axiom_Anchor_RCA_2026-05-31.md`. |
+| **STRUCTURAL NOTE** | E1-E16 | K8 had no E-postulate anchor | K8 first anchor via E15 (IRB, K8 non-factorability, 4.5/5) | E15 §3d establishes K5(i) partial + K8 structural constraint. K8 = cross-space structure-preserving map non-factorability for entangled states. No score impact; trace improvement noted. |
+
+**Gate verdict (2026-05-31):** 0 score changes. 0 CRITICAL/HIGH escalations. E1-E16 group trace improved but Monthly re-audit schedule maintained. Next weekly audit: 2026-06-07.
 
 ---
 

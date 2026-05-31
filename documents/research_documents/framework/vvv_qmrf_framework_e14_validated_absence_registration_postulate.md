@@ -64,6 +64,17 @@ Anupalabdhi conditions check:
   3. Therefore absent:               valid registration ✅
 ```
 
+### 3d. K-axiom Anchor Table
+
+| Dimension | K-axiom | Anchor type | Mapping |
+|-----------|---------|-------------|---------|
+| Null result as valid K1 instance | **K1** (act-result co-instantiation) | Direct | K1 outcome slot `o ∈ O ∪ {∅}`; null result = k_tuple with o=∅; ∅ is explicitly included in K1 domain; null result IS a K1 instance, not a K1 failure |
+| Null k_tuple validity V=1 | **K4(a)** (default validity, via E10) | Conditional | Under E10=VALID (C1∧C2∧C3), null result inherits K4(a) default validity → V=1; E14 authority = K4(a) validity authority applied to the null k_tuple |
+| K-layer absence registration authority | **K4** | Direct | V=1 null k_tuple has same K-side registration authority as positive-detection k_tuple within the valid E10 measurement context |
+| Conditional dependency on E10 | **E10** §3d → **K1** + **K4** | Dependency chain | Without E10=VALID, null result routes to E9 (V=0, Null Registering-System Event, FAIL_C2 path); E14 applies only when E10 conditions hold |
+
+> **RCA verdict (2026-05-31):** 3-round RCA × 5-Why × 4/5 threshold. R1=5.0 (root cause: no §3d anchor; K1 o=∅ instance and K4(a) conditional validity are the two direct anchors), R2=5.0 (K1 o∈O∪{∅} confirmed; K4(a) validity under E10=VALID confirmed), R3=5.0 (no category error; absence registration is K-layer authority, not physical undoing). Aggregate **5.0/5 PASS**. K-axiom anchor COMPLETE.
+
 ---
 
 ## 4. Three-way Distinction (E8 / E9 / E14)

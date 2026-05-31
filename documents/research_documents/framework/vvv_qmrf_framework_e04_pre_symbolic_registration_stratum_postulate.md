@@ -66,6 +66,17 @@ Boundary: Λ_K classifies registration content; it does not replace the physical
 | ε(M), Λ_K operator | Framework E4 | Class D |
 | No Category formalism | category/vvv_qmrf_category_10_e04_pre_symbolic_stratum.md | ✅ Created 2026-05-11 |
 
+### 3d. K-axiom Anchor Table
+
+| Dimension | K-axiom | Anchor type | Mapping |
+|-----------|---------|-------------|---------|
+| Pre-symbolic trace as K1 input | **K1** (act-result co-instantiation) | Structural prerequisite | ε(M) is the physical precursor that enables K1 co-instantiation; K1's `o` field is populated from ε(M) via Λ_K encoding (E5); K1 presupposes E4 has fired |
+| Temporal precedence ε(M) < λ-assignment | **K2** (temporal injectivity) | Temporal ordering | K2 assigns a unique timestamp to each registration event; ε(M) event (t_ε) must precede λ-assignment event (t_λ); K2 guarantees t_ε < t_λ as distinct ordered events in the K-timeline |
+| Boundary encoding outside K-scope | **K≠H** | Scope boundary | ε(M) exists at the ρ-K boundary before k_tuple construction; K1-K8 are post-admission axioms; E4 names the pre-admission physical trace stage that K1 presupposes |
+| Phase 1 in Category 08 chain | **K1** ← **E4** ← **E5** ← **E3** | Process chain | E4 (ε(M) pre-symbolic trace) → E5 (Â_kāra encoding → o-field) → E3 (V̂_yava lock → k_tuple admitted to K); K1 fires at E3 Phase 3 |
+
+> **RCA verdict (2026-05-31):** 3-round RCA × 5-Why × 4/5 threshold. R1=5.0 (root cause: no §3d anchor; E4 is Phase 1 of Category 08 chain, symmetric with E5 Phase 2 which has §3d), R2=5.0 (K1 structural prerequisite + K2 temporal ordering confirmed), R3=5.0 (no category error; ρ-K boundary correctly scoped). Aggregate **5.0/5 PASS**. K-axiom anchor COMPLETE.
+
 ---
 
 ## 4. Mathematical Notation / Ký hiệu Toán học

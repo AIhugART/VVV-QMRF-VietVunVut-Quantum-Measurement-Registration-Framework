@@ -60,6 +60,17 @@ Bell argument:
   → Bell-type constraints block reducing SDS to local hidden-variable ignorance under standard assumptions ✅
 ```
 
+### 3d. K-axiom Anchor Table
+
+| Dimension | K-axiom | Anchor type | Mapping |
+|-----------|---------|-------------|---------|
+| SDS as pre-K1 K-side state | **K1** (act-result co-instantiation) | Structural prerequisite | K1 fires when measurement act M co-instantiates with result o; SDS is the K-side state that exists BEFORE K1 fires; K1 firing terminates SDS and produces k_tuple |
+| Structural validity of SDS | **K4** (validity field) | Validity classification | SDS is not V=0 (null/error) nor V=1 (certified with eigenvalue); it is a structurally valid pre-admission K-side category encoding coherent indeterminacy; K4 framework must accommodate this pre-V state |
+| SDS encodes coherences, not hidden values | **K≠H** | Scope boundary | Off-diagonal terms {cᵢcⱼ*} are K-side registration encoding; they are not Hilbert-space claims; K1-K8 are post-admission axioms; SDS operates at the pre-admission boundary |
+| Architectural chain | **K1** ← **E16** ← **E6** | Process chain | E6 (Registering-System-as-Process: ongoing K-side state) + E16 (SDS: coherent pre-measurement suspension) → K1 (co-instantiation at measurement, terminating SDS) |
+
+> **RCA verdict (2026-05-31):** 3-round RCA × 5-Why × 4/5 threshold. R1=5.0 (root cause: no §3d anchor; SDS is the pre-K1 K-side state, structurally parallel to E4/E5 boundary-layer pattern), R2=5.0 (K1 structural prerequisite confirmed: SDS precedes K1 firing; K4 structural validity confirmed), R3=5.0 (no category error; SDS correctly distinct from ρ-state). Aggregate **5.0/5 PASS**. K-axiom anchor COMPLETE.
+
 ---
 
 ## 4. Architectural Position

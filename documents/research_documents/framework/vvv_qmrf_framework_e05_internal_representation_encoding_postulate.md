@@ -94,6 +94,16 @@ K1 connection (Weak mapping — RCA 2026-05-29):
 | Â_kāra operator | Category 08 | Class D |
 | Equivalence? | Unproven | Class C |
 
+### 3d. K-axiom Anchor Table
+
+| Dimension | K-axiom | Anchor type | Mapping |
+|-----------|---------|-------------|---------|
+| o-field content production | **K1** (act-result co-instantiation) | Structural prerequisite | Â_kāra(D_i)=M_i produces the outcome content that populates the `o` field of the k-state tuple (K1: `o ∈ O ∪ {∅}`) upon V̂_yava lock (E3); E5 names the process that K1 presupposes |
+| Boundary encoding scope | **K≠H** | Scope boundary | ρ-K boundary encoding is outside K-space axiom scope by design; K1-K8 are post-admission axioms; E5 operates at the admission boundary |
+| Phase 2 in Category 08 chain | **K1** ← **E4** ← **E5** ← **E3** | Process chain | E4 (ε(M) pre-symbolic trace) → E5 (Â_kāra encoding → o-field) → E3 (V̂_yava lock → k_tuple admitted to K); K1 co-instantiation fires at E3 Phase 3 |
+
+> **RCA verdict (2026-05-31):** 3-round RCA × 5-Why × 4/5 threshold. R1=5.0 (root cause: anchor already in §3b prose, needs §3d table for consistency with E3/E10 pattern), R2=5.0 (K1 structural prerequisite confirmed; no additional K-axiom required), R3=5.0 (no category error; boundary layer correctly scoped). Aggregate **5.0/5 PASS**. K-axiom anchor formalization COMPLETE.
+
 ---
 
 ## 4. Mathematical Notation / Ký hiệu Toán học

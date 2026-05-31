@@ -60,6 +60,17 @@ Dharmakīrti's recognized svabhāvapratibandha types and VVV-QMRF extension:
   IRB (VVV-QMRF extension, not a classical subtype) → Bell-nonlocal entanglement ← BIAN-10 / E15
 ```
 
+### 3d. K-axiom Anchor Table
+
+| Dimension | K-axiom | Anchor type | Mapping |
+|-----------|---------|-------------|---------|
+| Shared quantum state as shared K-system | **K5** (condition i: shared system) | Partial | K5 condition (i): shared system S_AB exists; for entangled \|ψ_AB⟩, K_A and K_B are both registration spaces for subsystems of S_AB; IRB applies K5(i) without requiring K5(ii) (incompatible observables) — K5(ii) is not a prerequisite for non-separability |
+| Non-factorability of K_AB | **K8** (cross-space structure) | Direct | K8 governs structure-preserving maps between K-spaces; if K_AB were separable, a factoring map K_AB → K_A ⊗ K_B would exist; IRB = K8 structural constraint asserting this factoring is forbidden for entangled states; anchors to K8 structural framing only, not the full Class D φ-map conjecture |
+| Bell non-separability at registration layer | **K5(i)** + **K8** | Joint | K5(i) (shared system) + K8 (non-factorability) jointly ground the K-side reading of Bell non-separability; QM Bell statistics remain on the ρ-side |
+| Scope boundary (analogy, not taxonomy revision) | **K≠H** | Scope boundary | IRB is a VVV-QMRF extension relation grounded by analogy in svabhāvapratibandha; it does not revise Dharmakīrti's two-type taxonomy; K8 is the structural anchor, not a claim about Dharmakīrti's framework |
+
+> **RCA verdict (2026-05-31):** 3-round RCA × 5-Why × 4/5 threshold. R1=4.5 (root cause: no §3d anchor; K5/K8 disambiguation required), R2=4.83 (K5 partial application confirmed: condition (i) shared system applies; condition (ii) incompatible observables not required by IRB; K8 non-factorability is the direct structural anchor), R3=4.17 (K8 structural constraint confirmed as Class D compatible; no φ-map import). Aggregate **4.5/5 PASS**. K-axiom anchor COMPLETE.
+
 ---
 
 ## 4. Implications for Hidden Variable Debate

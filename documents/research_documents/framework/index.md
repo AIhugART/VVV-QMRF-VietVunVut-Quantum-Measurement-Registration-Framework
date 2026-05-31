@@ -103,6 +103,7 @@ Các file trong `plan/` và `promote_postulate/` không phải là postulates �
 
 | File | Title / Tiêu đề | Role / Vai trò |
 |------|-----------------|----------------|
+| [plan/E_Postulate_K_Axiom_Anchor_RCA_2026-05-31.md](plan/E_Postulate_K_Axiom_Anchor_RCA_2026-05-31.md) | E-Postulate K-Axiom Anchor RCA — 2026-05-31 | RCA anchor E4/E5/E8/E10/E13/E14/E15/E16 vào K1-K8 (4.84/5). §3d anchor tables cho 7 postulate mới + verify E10. K1-K8 100% coverage. K5 consumer≠governor (E8). K8 first anchor via E15. |
 | [plan/E3_Completion_RCA_Report_2026-05-29.md](plan/E3_Completion_RCA_Report_2026-05-29.md) | E3 Registration Lock — Completion RCA Report | Báo cáo hoàn tất RCA cho E3 ở cấp framework (4.80/5). Ghi nhận canonical E3 update, EX-snapshot sync, và 5 future work items không blocking. |
 | [plan/E3_Progress_RCA_2026-05-29.md](plan/E3_Progress_RCA_2026-05-29.md) | E3 Registration Lock — Progress RCA | Kiểm tra tiến độ Plan E3 v2.0: đối chiếu canonical vs plan vs paper vs EX-snapshot. Ghi nhận 6.5/8 steps integrated trước khi completion. |
 | [promote_postulate/e18_promotion_history_report.md](promote_postulate/e18_promotion_history_report.md) | E18 Promotion History Report | Lịch sử toàn diện quá trình nâng cấp E18: từ candidate (2026-05-21) → frozen postulate (2026-05-22) qua 7 gates G1–G7. Bao gồm 3 case validations, BE anchor decision, EX recoverability check, và G7 authorization. |

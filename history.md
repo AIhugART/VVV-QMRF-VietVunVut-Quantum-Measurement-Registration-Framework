@@ -471,6 +471,25 @@ Single-entry-point document: K->p(o) formula, component origin table, 6 boundary
 
 **Files modified:** 10 files + 1 new (Comprehensive_RCA_Summary_2026-05-29.md). See [framework/plan/Comprehensive_RCA_Summary_2026-05-29.md](documents/research_documents/framework/plan/Comprehensive_RCA_Summary_2026-05-29.md) for full report.
 
+### 2026-05-31 — E-Postulate K-Axiom Anchor Completion (K1-K8 Full Coverage)
+
+- **Scope:** E4, E5, E8, E10, E13, E14, E15, E16. Method: 3-round RCA × 5-Why × ≥4/5 threshold. VVV-QMRF scope, VVV-QMRF-EX as compass.
+- **Result:** All 8 postulates PASS. §3d K-axiom anchor tables added to 7 postulates (E10 verified complete from 2026-05-29). Session aggregate 4.84/5. **K1-K8 100% coverage achieved.**
+
+**Anchor map:**
+- E4 (5.0): K1 structural prerequisite + K2 temporal ordering (t_ε < t_λ)
+- E5 (5.0): K1 structural prerequisite — §3b prose formalized into §3d table
+- E8 (4.44): K4 direct (V=1→V=0 retroactive) + K2 supporting. **K5 disambiguation: K5 = upstream router via E10 FAIL_C3, NOT direct E8 anchor. Consumer ≠ governor.**
+- E10 (4.77): Verified complete (prior session)
+- E13 (5.0): K2 direct (kṣaṇa discreteness = temporal injectivity) + K1 (each kṣaṇa = K1 firing)
+- E14 (5.0): K1 (o=∅ ∈ O∪{∅} valid K1 instance) + K4(a) (V=1 under E10=VALID)
+- E15 (4.5): K5(i) partial (shared system) + **K8 non-factorability — first K8 anchor in the framework**
+- E16 (5.0): K1 structural prerequisite (SDS precedes K1) + K4 (pre-admission structural validity)
+
+**Key findings:** Three anchor types (structural prerequisite / direct governance / validation gateway). K5 consumer≠governor distinction formalized. K8 first anchor via E15 IRB. AHP updated to v1.8; E1-E16 group full re-audit 2026-06-30.
+
+**Files modified:** 7 framework postulate files + framework/index.md §4.4 + AHP v1.8 + 1 new report. See [framework/plan/E_Postulate_K_Axiom_Anchor_RCA_2026-05-31.md](documents/research_documents/framework/plan/E_Postulate_K_Axiom_Anchor_RCA_2026-05-31.md).
+
 ### 2026-05-28 — Phase 3A Progress (K9-S12 Optical Experiment Proposal)
 
 - **Track 3 (Experimental Path) NOW ACTIVE.**

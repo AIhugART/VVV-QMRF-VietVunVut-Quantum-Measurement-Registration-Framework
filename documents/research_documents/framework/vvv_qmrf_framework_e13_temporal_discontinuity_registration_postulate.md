@@ -55,6 +55,17 @@ Registration causal chain:
   (mirrors: kṣaṇa causal dependence in Buddhist Dependent Arising)
 ```
 
+### 3d. K-axiom Anchor Table
+
+| Dimension | K-axiom | Anchor type | Mapping |
+|-----------|---------|-------------|---------|
+| Kṣaṇa discreteness of registration events | **K2** (temporal injectivity) | Direct | K2: no two distinct registration events share the same timestamp; this implies events are discrete — each kṣaṇa unit has unique t_i; if timestamps were shared (non-injective), kṣaṇa units could not be distinguished |
+| Each kṣaṇa event = one K1 firing | **K1** (act-result co-instantiation) | Direct | Each kṣaṇa registration unit IS a K1 event: measurement act M and result o are co-instantiated at unique timestamp t_i; K1 firing = kṣaṇa sealing |
+| Between-event evolution (ρ-side silence) | **K≠H** | Scope boundary | Schrödinger evolution between K1 events operates on ρ; K-axioms govern registration events only, not inter-event intervals; K-side is structurally silent between kṣaṇa events |
+| Architectural chain | **K2** + **E6** ← **E13** | Process chain | E6 (Registering-System-as-Process: causal series of K-states) + E13 (K2-grounded kṣaṇa discreteness) → each K-state transition is a distinct K1/K2-governed event |
+
+> **RCA verdict (2026-05-31):** 3-round RCA × 5-Why × 4/5 threshold. R1=5.0 (root cause: no §3d anchor; kṣaṇa discreteness directly maps to K2 temporal injectivity), R2=5.0 (K2 injectivity = kṣaṇa distinctness confirmed; K1 each-event anchor confirmed), R3=5.0 (no category error; ρ-side evolution correctly excluded from K-axiom scope). Aggregate **5.0/5 PASS**. K-axiom anchor COMPLETE.
+
 ---
 
 ## 4. Architectural Position
