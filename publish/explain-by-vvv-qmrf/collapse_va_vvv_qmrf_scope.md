@@ -1,203 +1,199 @@
-# Cơ chế Collapse Hàm Sóng và VVV-QMRF Scope
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
 
-**Author:** VietVunVut (Viet — Nguyen Xuan)
+> **DISCLAIMER / CẢNH BÁO:** VVV-QMRF là nghiên cứu cá nhân độc lập ở Class D, không phải Standard Quantum Mechanics, chưa peer-reviewed hoặc kiểm chứng thực nghiệm, và không dùng cho ứng dụng kỹ thuật ngoài thực tế. Giao thức giới hạn đầy đủ: `DISCLAIMER.md`.
+
+# Cơ chế gây collapse hàm sóng khi đo — theo VVV-QMRF
+
+**Tác giả:** VietVunVut (Viet — Nguyen Xuan)
 **Framework:** VVV-QMRF (VietVunVut Quantum Measurement Registration Framework)
-**Date:** 2026-05-31
-**Source paper:** *Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?* (Draft v95)
+**Ngày:** 2026-05-31
+**Nguồn axiom:** `documents/research_documents/meta_architecture/K_Space_Axiomatization.md` v2.5
+**Thuật ngữ:** tuân theo `documents/research_documents/vvv-qmrf/dictionary.md`
 
 ---
 
-## 1. Câu hỏi gốc: Cơ chế gây collapse hàm sóng khi đo là gì?
+## 1. Điểm khởi đầu: Tách biệt K-side và ρ-side
 
-Đây là câu hỏi trung tâm của cơ học lượng tử kể từ thế kỷ 20. Trước khi đo, hệ lượng tử ở trạng thái **chồng chất** (superposition):
-
-$$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle, \qquad |\alpha|^2 + |\beta|^2 = 1$$
-
-Sau khi đo, ta chỉ thấy **một** kết quả. Điều gì khiến $|\psi\rangle$ "sập" thành một trạng thái duy nhất?
-
-### Các lý thuyết chính hiện có
-
-| Lý thuyết | Cơ chế | Vấn đề còn lại |
-|---|---|---|
-| **Copenhagen** | Thiết bị đo cổ điển gây collapse | Không có cơ chế vật lý; ranh giới lượng tử/cổ điển ở đâu? |
-| **Decoherence** (Zurek) | Hệ rò thông tin ra môi trường → off-diagonal terms → 0 | Không giải thích tại sao ta thấy *một* kết quả cụ thể |
-| **Many-Worlds** (Everett) | Không có collapse — tất cả nhánh tồn tại | Không thể falsify; vấn đề Born rule |
-| **Chuỗi von Neumann** | Collapse bị trì hoãn vô tận dọc chuỗi $S \to M_1 \to M_2 \to \cdots$ | Không có điểm dừng tự nhiên |
-
----
-
-## 2. VVV-QMRF Scope: Phân tách 2 tầng
-
-VVV-QMRF **không** đưa ra lý thuyết mới về cơ chế collapse vật lý. Thay vào đó, framework đề xuất phân tách Quantum Measurement thành **hai tầng độc lập**:
+VVV-QMRF **không giải thích và không đề xuất cơ chế collapse vật lý mới** ở phía ρ-side. Cơ học lượng tử chuẩn vẫn cung cấp đầy đủ:
 
 ```
-┌──────────────────────────────────────────────────────────────┐
-│                    CÂU HỎI: Collapse là gì?                  │
-└──────────────────────┬───────────────────────────────────────┘
-                       │
-          ┌────────────┴────────────┐
-          ▼                        ▼
-   P-layer (vật lý)         K-layer (registration)
-          │                        │
-   "Tại sao |ψ⟩ → |o⟩?"    "Sau khi |o⟩ đã xảy ra,
-          │                  K-space ghi nhận như thế nào?"
-          │                        │
-   ❌ Ngoài scope VVV-QMRF   ✅ VVV-QMRF hoạt động ở đây
-   (QM chuẩn không thay đổi)
+p_QM(o) = Tr(E_o ρ)     — quy tắc Born
+ρ_after                  — trạng thái vật lý sau phép đo
 ```
 
-### Tầng P-layer (Physical layer)
-
-- Hilbert space $\mathcal{H}$, density matrix $\rho$, Born rule
-- Decoherence, entanglement, unitary evolution
-- **VVV-QMRF không sửa đổi và không tuyên bố giải thích phần này**
-
-> *"This document does not modify Standard Quantum Mechanics, does not change any VVV-QMRF postulate (E1–E16), and does not claim K-space is a canonical QM object."*
-> — K_Space_Axiomatization.md §0, Line 20
-
-### Tầng K-layer (Registration layer)
-
-- K-state tuple: $k = \langle M, o, \text{cert}, t, V \rangle \in K_R$
-- Khi nào một outcome được "đăng ký" (cert = 1)?
-- Registration event có hợp lệ không? (V = 1 hay V = 0?)
-- Contradiction giữa hai registrations: $k_2 \perp k_1$?
-- **Overlap geometry có ảnh hưởng đến thống kê đo lường không?**
-
----
-
-## 3. Câu trả lời của VVV-QMRF ở tầng K-layer
-
-> **Sau khi P-layer interaction đã xảy ra và outcome đã được đăng ký (cert = 1), cấu trúc geometric của registration — cụ thể là overlap $|\langle b|d\rangle|^2$ giữa basis đo của Superobserver và outcome đã ghi nhận của Friend — có thể để lại dấu vết thống kê đo được.**
-
-### 3.1 Deformation class (Overlap-only)
-
-Nếu K-layer có cấu trúc phụ thuộc overlap, xác suất đo bị biến dạng:
-
-$$\boxed{P'(a,b \mid x,y) = \frac{P_{\rm QM}(a,b \mid x,y) \cdot g\!\left(|\langle b|d\rangle|^2\right)}{Z}}$$
-
-trong đó:
-- $b \in \{+1,-1\}$: outcome của Superobserver
-- $d \in \{H,V\}$: outcome đã đăng ký của Friend
-- $g: [0,1] \to \mathbb{R}$: **hàm bất kỳ** — theorem đúng với mọi $g$
-- $Z$: chuẩn hóa
-
-**Đại diện tối giản** (thỏa 3 ràng buộc vật lý: bất biến quay, căn chỉnh hoàn hảo, đơn điệu):
-
-$$f_\perp(b,d) = 1 - |\langle b|d\rangle|^2$$
-
-### 3.2 Equatorial Cancellation Theorem (Proposition 1)
-
-Basis đo của Superobserver tại góc Bloch sphere $(\theta, \phi)$:
-
-$$|b=+1\rangle = \cos(\theta/2)|H\rangle + e^{i\phi}\sin(\theta/2)|V\rangle$$
-$$|b=-1\rangle = \sin(\theta/2)|H\rangle - e^{i\phi}\cos(\theta/2)|V\rangle$$
-
-Squared overlaps ($\phi$ triệt tiêu vì $|e^{i\phi}|^2 = 1$):
-
-$$|\langle b{=}+1|H\rangle|^2 = \cos^2(\theta/2), \qquad |\langle b{=}-1|H\rangle|^2 = \sin^2(\theta/2)$$
-
-Sự khác biệt giữa hai nhánh — chính là **observable signal**:
-
-$$\boxed{f_\perp(+1,H) - f_\perp(-1,H) = -\cos\theta}$$
-
-**Triệt tiêu khi và chỉ khi $\theta = \pi/2$:**
-
-$$\theta = \frac{\pi}{2} \implies \cos\theta = 0 \implies f_\perp = \frac{1}{2} = \text{const} \implies P' \equiv P_{\rm QM} \quad \forall g \quad \blacksquare$$
-
-### 3.3 Observable và chữ ký thực nghiệm
-
-Signal đo được — bất biến dưới mọi basis redefinition (Lemma 1):
-
-$$\delta\langle AB\rangle_\theta = \langle AB\rangle_\theta - \langle AB\rangle_{\pi/2}$$
-
-| Điều kiện | QM chuẩn | VVV-QMRF (nếu K-layer có cấu trúc) |
-|---|---|---|
-| $\theta = \pi/2$ | $\delta\langle AB\rangle = 0$ | $\delta\langle AB\rangle = 0$ (bắt buộc — Proposition 1) |
-| $\theta \neq \pi/2$ | $\delta\langle AB\rangle = 0$ | $\delta\langle AB\rangle \approx 0.115\beta \neq 0$ |
-| $\theta$-sweep đầy đủ | $\delta = 0 \ \forall\theta$ | $\delta = 0$ iff $\theta = \pi/2$ |
-
-### 3.4 Root Cause: Tại sao mọi thí nghiệm EWF đều bỏ qua điều này?
-
-**Phát hiện gốc:** Cả hai thí nghiệm EWF đã được công bố (Proietti 2019, Bong 2020) đều đo tại $\theta = \pi/2$ — không phải vì thiết kế, mà vì **convention tối ưu hóa LF violation**.
+VVV-QMRF chỉ thêm **tầng ghi nhận phía K-side**, hình thức hóa bằng:
 
 ```
-Tại θ = π/2:  |⟨b|H⟩|² = |⟨b|V⟩|² = 1/2  (cho cả b = ±1)
-→ g(1/2) = const → P' ≡ P_QM → δ⟨AB⟩ ≡ 0
+K_after = U_K(K_before, o)
 ```
 
-Đây là **điểm mù hình học** (geometric blind spot) — mọi deformation phụ thuộc overlap đều **triệt tiêu hoàn toàn** tại xích đạo Bloch sphere.
+Điểm mới nằm ở `U_K` — **cập nhật trạng thái ghi nhận** — không phải ở Born rule hay luật collapse vật lý.
 
----
-
-## 4. Ngưỡng phát hiện thực nghiệm
-
-Tại $\theta = 31°$, $N = 91{,}000$ coincidences, $\mu = 0.95$:
-
-| $\beta$ | $|\delta\langle AB\rangle|$ | $n_\sigma$ (1 setting) | $n_\sigma$ (4 kết hợp) |
+| Tầng | Ký hiệu | Nội dung | VVV-QMRF có thay đổi không? |
 |---|---|---|---|
-| $0.05$ | $0.0057$ | $3.3\sigma$ | $6.7\sigma$ |
-| **0.07** | **0.0080** | **4.7σ** | **9.4σ** |
-| $0.10$ | $0.0115$ | $6.7\sigma$ | $13.5\sigma$ |
-| $0.30$ | $0.0355$ | $20.8\sigma$ | $41.6\sigma$ |
+| Vật lý (ρ-side) | `ρ`, `\|ψ⟩` | Hàm sóng, collapse, Born rule | ❌ Giữ nguyên QM chuẩn |
+| Ghi nhận (K-side) | `K_R`, `k = ⟨M, o, cert, t, V⟩` | Trạng thái ghi nhận, tính hợp lệ V | ✅ Phạm vi của VVV-QMRF |
 
-**Ngưỡng $5\sigma$:** $\beta_{\min} \approx 0.038$ (4 settings kết hợp).
-**Một quarter-wave plate** tái-chèn vào apparatus Bong (2020) → $\theta = 31°$ → phá vỡ điểm mù.
-
----
-
-## 5. Bảng phân tách scope
-
-| Câu hỏi | Layer | VVV-QMRF scope? |
-|---|---|---|
-| Tại sao $\|\psi\rangle \to \|o\rangle$ khi đo? | P-layer | ❌ Ngoài scope |
-| Decoherence xảy ra nhanh bao nhiêu? | P-layer | ❌ Ngoài scope |
-| GRW/CSL collapse parameter $\lambda$? | P-layer | ❌ Ngoài scope |
-| Khi Friend đo xong, Superobserver có thống kê khác không? | P/K boundary | ✅ Câu hỏi VVV-QMRF |
-| $\delta\langle AB\rangle(\theta) \neq 0$ tại $\theta \neq \pi/2$? | K → P signal | ✅ Trong scope |
-| $P'(a,b\|x,y) = P_{\rm QM} \cdot g(\|\langle b\|d\rangle\|^2)/Z$? | K-layer deformation | ✅ Trong scope |
-| Registration event: cert=1, V=1? | K-layer | ✅ Trong scope |
+> **Lưu ý thuật ngữ bắt buộc (dictionary.md §0, §1):**
+> - Tầng ghi nhận = **K-side registration layer** — KHÔNG phải "tầng đăng ký nhận thức"
+> - Hệ thực hiện phép đo = **hệ ghi nhận** (registering system) — KHÔNG phải "quan sát viên có nhận thức"
+> - Điểm mới của VVV-QMRF = **cập nhật trạng thái ghi nhận** (`U_K`) — KHÔNG phải "luật collapse mới"
 
 ---
 
-## 6. Câu trả lời cô đọng nhất
-
-**VVV-QMRF không giải thích *tại sao* collapse xảy ra ở P-layer.**
-
-VVV-QMRF hỏi và kiểm tra:
-
-> *"Nếu K-layer có cấu trúc registration phụ thuộc overlap, liệu $\delta\langle AB\rangle(\theta) = 0$ iff $\theta = \pi/2$? — một dự đoán mà tất cả thí nghiệm EWF hiện có, do convention cố định $\theta = \pi/2$, về mặt cấu trúc không thể kiểm tra."*
-
-**Null test:** $\beta \sim 0.07$ tại $5\sigma$, $\theta = 31°$, một waveplate, apparatus Bong (2020).
-
----
-
-## 7. Luồng logic hoàn chỉnh
+## 2. Chuỗi cơ chế — 5 bước chính
 
 ```
-P-layer collapse xảy ra (QM chuẩn, không thay đổi)
-         │
-         ▼
-Outcome lan đến K-layer → registration event (cert=1, V=1)
-         │
-         ▼  ← VVV-QMRF bắt đầu từ đây
-K-layer: registration geometry có phụ thuộc vào θ không?
-         │
-    ┌────┴────┐
-    ▼         ▼
-  β = 0     β ≠ 0
-    │         │
-  QM chuẩn  P'(a,b|x,y) ≠ P_QM
-  đúng hoàn  δ⟨AB⟩(θ) ≠ 0 tại θ ≠ π/2
-  toàn       δ⟨AB⟩(π/2) = 0 (luôn luôn)
-                   │
-                   ▼
-             Kiểm tra: θ = 31°, 1 QWP
-             Falsify class nếu δ = 0 ∀θ
-             Discover nếu δ ≠ 0 tại θ ≠ π/2
+K3 — Ghi nhận tự chứng                  cert = σ_R(M) = 1
+              ↓
+K4 — Tính hợp lệ ghi nhận mặc định       V(k) = 1  (tạm thời, V_prov)
+              ↓
+K5 — Phủ quyết ghi nhận hồi tố           V(k1) → 0  khi bị vô hiệu hóa
+              ↓
+K6 — Thẩm quyền chéo ghi nhận           Auth(k2 → k1, C_K) = 1
+              ↓
+K7 — Đóng quá trình ghi nhận             V_prov → V_final  (không đảo ngược)
 ```
 
 ---
 
-*Tài liệu này được tổng hợp từ VVV-QMRF Working Paper v95 và K_Space_Axiomatization.md v2.5.*
-*Xem paper đầy đủ: `papers/paper_002/arxiv/blind_equator_ArxivR/main.tex`*
-*Xem axiom hóa K-space: `documents/research_documents/meta_architecture/K_Space_Axiomatization.md`*
+### Bước 1 — K3: Ghi nhận tự chứng *(N_QM_VVV_00033, 00034 — svasaṃvedana)*
+
+Khi hệ ghi nhận R thực hiện phép đo `M`, một K-state tuple được sinh ra và nhập `K_R`:
+
+```
+k = ⟨M, o, cert=1, t, V⟩
+```
+
+`cert = σ_R(M) = 1` được xác định **nội tại** trong `K_R` — hệ ghi nhận R tự xác nhận rằng hành động ghi nhận `M` đã xảy ra, **không cần** một phép đo thứ hai đến ghi nhận phép đo thứ nhất. Đây là nguyên lý **chấm dứt chuỗi lùi ghi nhận**, giải quyết vấn đề chuỗi von Neumann ở phía K-side.
+
+> **Biên giới bắt buộc:** `cert = 1` chỉ xác nhận *hành động ghi nhận đã xảy ra ở K-side*. Không xác nhận kết quả vật lý đúng hay sai. Không phải ý thức. Không phải phản ứng detector ở ρ-side.
+
+---
+
+### Bước 2 — K4: Tính hợp lệ ghi nhận mặc định *(svataḥ prāmāṇya)*
+
+Mọi `k ∈ K_R` với `¬isNull(k)` đều được gán `V(k) = 1` ngay khi nhập `K_R`. Đây là **tính hợp lệ ghi nhận mặc định** — tạm thời (V_prov), không cần xác nhận từ bên ngoài.
+
+```
+¬isNull(k)  →  V_prov(k) = 1
+ isNull(k)  →  V(k) = 0       [sự kiện ghi nhận rỗng E9: tương tác xảy ra, không truyền thông tin]
+```
+
+> **Biên giới bắt buộc:** `V = 1` không có nghĩa kết quả vật lý đúng, không tính xác suất Born rule. Chỉ có nghĩa: trong `K_R`, tuple này được xem là hợp lệ cho đến khi có mâu thuẫn ghi nhận.
+
+---
+
+### Bước 3 — K5: Phủ quyết ghi nhận hồi tố *(N_QM_VVV_00029, 00030)*
+
+Đây là bước trung tâm — **cơ chế cập nhật trạng thái ghi nhận** của VVV-QMRF:
+
+> `V(k1) → 0` khi và chỉ khi tồn tại `k2` thỏa đồng thời:
+
+```
+(i)   k1 <_R k2                      k2 đến SAU k1 theo thứ tự thời gian ghi nhận (K2)
+(ii)  k2 ⊥ k1  trong C_K            mâu thuẫn ghi nhận trong ngữ cảnh so sánh chung
+(iii) Auth(k2 → k1, C_K) = 1        k2 có thẩm quyền chéo ghi nhận hợp lệ (K6)
+```
+
+**Điều kiện tiên quyết kích hoạt:** K5 chỉ kích hoạt khi `requires_K_joint = 1` — tức là chỉ trong bối cảnh **đa hệ ghi nhận** khi ngữ cảnh so sánh `C_K` tồn tại. Phép đo đơn lẻ không có so sánh chéo → K5 không kích hoạt → `V(k)` giữ nguyên = 1.
+
+**Ví dụ — Extended Wigner's Friend (EWF):**
+
+```
+k_F = ⟨M_F, |h⟩, cert=1, t_F, V=1⟩
+      Friend ghi nhận kết quả rõ ràng |h⟩  (tại t_F)
+
+k_W = ⟨M_W, o_W, cert=1, t_W, V=1⟩
+      Wigner ghi nhận phòng lab dạng chồng chất
+      (không bảo toàn |h⟩ là claim hợp lệ)  (tại t_W > t_F)
+
+Trong K_joint:
+  k_F <_joint k_W            ✓  (điều kiện i)
+  k_W ⊥ k_F  trong C_K      ✓  (điều kiện ii — mâu thuẫn ghi nhận)
+  Auth(k_W → k_F, C_K) = 1  ✓  (điều kiện iii)
+  → K5 kích hoạt: V(k_F) → 0
+```
+
+> **Biên giới bắt buộc:** K5 **không** xóa tương tác vật lý. Sự kiện vật lý của Friend vẫn xảy ra theo QM chuẩn. K5 chỉ vô hiệu hóa **tính hợp lệ ghi nhận K-side** của `k_F`. Đây là **phủ quyết ghi nhận hồi tố** (N_QM_VVV_00029) — không phải đảo ngược lịch sử vật lý.
+
+**Tính đảo ngược trước khi đóng (K7):**
+- Nếu `k2` chính nó bị vô hiệu hóa (`V(k2) → 0`) **trước** khi quá trình ghi nhận đóng → điều kiện (iii) thất bại → `V_prov(k1)` quay về K4 mặc định = 1.
+- Tính đảo ngược này **chỉ áp dụng** trong giai đoạn tạm thời (V_prov). Sau khi đóng (K7), hoàn toàn không đảo ngược.
+
+---
+
+### Bước 4 — K6: Thẩm quyền chéo ghi nhận *(N_QM_VVV_00031)*
+
+K5 chỉ kích hoạt khi `k2` có thẩm quyền chéo ghi nhận hợp lệ:
+
+```
+Auth(k2 → k1, C_K) = 1  khi và chỉ khi cả ba thỏa:
+
+  (a)  k1 và k2 cùng thuộc ngữ cảnh so sánh C_K
+  (b)  V(k2) = 1        bản thân k2 chưa bị vô hiệu hóa
+  (c)  k1 ∈ scope(D_joint)   claim của k1 nằm trong phạm vi yêu cầu hợp lệ chung
+```
+
+Đây **không phải** phân cấp quan sát viên — là quan hệ cấu trúc trong ngữ cảnh so sánh chung. Thẩm quyền mất ngay khi `V(k2) → 0`: một tuple ghi nhận đã bị vô hiệu hóa không thể phủ quyết tuple khác. Điều này ngăn vòng lặp vô hạn trong chuỗi vô hiệu hóa.
+
+> **Tính không bắc cầu:** `Auth(k2→k1, C_K) ∧ Auth(k3→k2, C_K') ⇏ Auth(k3→k1, ·)` khi `C_K ≠ C_K'`. Thẩm quyền bị ràng buộc vào từng ngữ cảnh so sánh cụ thể.
+
+---
+
+### Bước 5 — K7: Đóng quá trình ghi nhận *(niścaya)*
+
+Quá trình ghi nhận của `K_R` đóng tại `t_close` khi không còn yêu cầu hợp lệ chung nào chờ xử lý:
+
+```
+R đóng tại t_close  khi:
+  ∀ cặp (K_R, K_X):  pending(K_R, K_X) = ∅
+
+Tại t_close:
+  V_prov(k)  →  V_final(k)   cho mọi k ∈ K_R
+```
+
+**Sau khi đóng — bốn hệ quả không thể đảo ngược:**
+
+| | Hệ quả |
+|---|---|
+| **(a)** | Không có `k` mới nào được tạo trong `K_R` |
+| **(b)** | `V_final(k) = 0` là **vĩnh viễn** — không thể phục hồi bởi bất kỳ sự kiện nào |
+| **(c)** | Không có yêu cầu hợp lệ chung `D_joint` mới nào liên quan `K_R` có thể được đặt ra |
+| **(d)** | `K_joint` liên quan `K_R` trở nên chung cuộc — không thể tái cấu hình |
+
+- **Trước khi đóng:** `V_prov(k1) → 0` có thể đảo ngược nếu `k2` gây ra nó cũng bị vô hiệu hóa trước `t_close`.
+- **Sau khi đóng:** `V_final(k) = 0` là **vĩnh viễn, tuyệt đối**.
+
+> **Biên giới bắt buộc:** K7 định nghĩa khi nào **quá trình ghi nhận phía K-side** đóng. Nó không tuyên bố tương tác vật lý đã kết thúc, không tuyên bố trạng thái H-space đã đạt giá trị chung cuộc. Đóng là thuộc tính phía K-side thuần túy.
+
+---
+
+## 3. Tóm tắt bảng
+
+| Axiom | Tên VVV-QMRF (tiếng Việt) | Node tham chiếu | Vai trò trong cập nhật trạng thái ghi nhận |
+|---|---|---|---|
+| K3 | Ghi nhận tự chứng | N_QM_VVV_00033, 00034 | Chấm dứt chuỗi lùi ghi nhận — không cần meta-phép đo |
+| K4 | Tính hợp lệ ghi nhận mặc định | N_QM_VVV_00011 | `V_prov = 1` mặc định khi nhập `K_R` |
+| K5 | Phủ quyết ghi nhận hồi tố | N_QM_VVV_00029, 00030 | `V(k1) → 0` — vô hiệu hóa tính hợp lệ K-side |
+| K6 | Thẩm quyền chéo ghi nhận | N_QM_VVV_00031 | Điều kiện để K5 kích hoạt — chặn vòng lặp vô hạn |
+| K7 | Đóng quá trình ghi nhận | N_QM_VVV_00023 analog | `V_prov → V_final` — không thể đảo ngược |
+
+---
+
+## 4. Lưu ý quan trọng
+
+> **K5 chỉ kích hoạt trong bối cảnh đa hệ ghi nhận.** Điều kiện `requires_K_joint = 1` là bắt buộc — ngữ cảnh so sánh `C_K` phải tồn tại. Phép đo đơn lẻ không có so sánh chéo: K5 **không kích hoạt**, `V(k)` giữ nguyên = 1. Phủ quyết ghi nhận là hiện tượng của bối cảnh đa hệ ghi nhận, không phải của mọi phép đo.
+
+> **Thuật ngữ bị loại bỏ theo dictionary.md:**
+> - ❌ ~~tầng đăng ký nhận thức~~ → ✅ **tầng ghi nhận (K-side)**
+> - ❌ ~~collapse K-side~~ → ✅ **phủ quyết ghi nhận hồi tố** / **cập nhật trạng thái ghi nhận**
+> - ❌ ~~quan sát viên có nhận thức~~ → ✅ **hệ ghi nhận** (registering system)
+
+> **Giới hạn framework:** VVV-QMRF là nghiên cứu cá nhân Class D — chưa được peer-review, chưa kiểm chứng thực nghiệm. Tầng K-side axiomatization trong `K_Space_Axiomatization.md` là thuần cấu trúc — không chứa phương trình xác suất, không chứa dữ liệu thực nghiệm (xem §0.6), không thay thế Cơ học lượng tử chuẩn.
+
+---
+
+*Nguồn axiom: `documents/research_documents/meta_architecture/K_Space_Axiomatization.md` v2.5*
+*Thuật ngữ: `documents/research_documents/vvv-qmrf/dictionary.md`*
+*Xem axiom chi tiết: K1–K8 (Layer 1), T1–T9 (Layer 2)*
