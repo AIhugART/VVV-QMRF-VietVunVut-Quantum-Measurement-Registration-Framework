@@ -374,8 +374,8 @@ The N>2 condition set is **necessary but NOT provably sufficient** for two funda
 | ~~φ-O5-3b~~ | ~~Parallel topology~~ | ✅ **VERIFIED** (RCA 4.57/5, `RCA_phi_O5_3b_parallel_topology_2026_05_31.md`). See §4 ter. BC-2 via independent system structure. K≠H: ρ-entanglement ≠ K-side ⊥_K. Open: φ-O5-3b-sub1 (span colimit K1-K8 formal). | — |
 | ~~φ-O5-3b-sub1~~ | ~~Span colimit K1-K8~~ | ✅ **TRIVIALLY TRUE** — T4-H covers "any finite diagram D" (universal). Span is finite. Applies directly. | — |
 | ~~φ-O5-3c~~ | ~~Circuit language for φ-N3~~ | ✅ **RESOLVED** — requires_K_joint=1 ↔ quantum channel (CNOT/CX). BC-2 = "no implicit channel" rule. Proietti 6-photon directly confirms (F1,W1) pair. See §5. `RCA_phi_O5_closure_2026_05_31.md` (4.60/5). | — |
-| φ-O5-4 | Explicit B(L_2) expression for φ-N2 commutativity with T5 isomorphism. | Medium |
-| φ-O5-5 | EX compass validation: K↔ρ for N=3 consistent with φ-N1/N2/N3. | Medium |
+| ~~φ-O5-4~~ | ~~B(H)⊗N for φ-N2 T5~~ | ✅ **TRIVIAL** — α(P_{o_i}⊗1^{N-1}) = P_{o_i}⊗1^{N-1} (canonical tensor product associativity). φ-N2 B(H) form invariant under all regroupings. `RCA_phi_O5_45_final_2026_05_31.md` (4.63/5). | — |
+| ~~φ-O5-5~~ | ~~EX N=3 consistency~~ | ✅ **RESOLVED** — EX K↔ρ and φ K→P_o consistent via Born rule Tr(P_{o_i}·ρ_i). φ-N1/N2/N3 all consistent with EX structural validation. `RCA_phi_O5_45_final_2026_05_31.md`. | — |
 
 ---
 
@@ -389,7 +389,8 @@ The N>2 condition set is **necessary but NOT provably sufficient** for two funda
 | 2026-05-31 | 0.4 | φ-O5-2 RESOLVED: Sufficiency = **FUNDAMENTAL BOUNDARY** (2 gaps, RCA 4.57/5, `RCA_phi_O5_2_sufficiency_2026_05_31.md`). §6.2 Boundary Statement added. §7 sufficiency row updated. §8 φ-O5-2 closed (FUNDAMENTAL BOUNDARY). Gap 1: φ-N3 biconditional (C_K/D_joint no B(H) analogue, analogue of φ-O2). Gap 2: global vs pairwise ⊥_K (K_joint path-commutativity, NEW for N>2). |
 | 2026-05-31 | 0.5 | φ-O5-3b VERIFIED: Parallel topology (F1,F2 independent systems, W measures joint lab). §4 ter added. BC-2 via independent system structure (new mechanism vs hierarchical basis choice). K≠H: ρ-entanglement ≠ requires_K_joint=1. φ-N1/N2/N3 all verified. §8 φ-O5-3b closed. |
 | 2026-05-31 | 0.6 | φ-O5 Phase 2 CLOSED (all non-blocking items). φ-O5-1b TRIVIAL (tensor product associativity). φ-O5-3b-sub1 TRIVIAL (T4-H any finite diagram). φ-O5-3c RESOLVED — circuit language: requires_K_joint=1 ↔ CNOT channel; BC-2 = no implicit channel rule; Proietti 6-photon direct confirmation. §5 Circuit Language section added. §8 all non-blocking items closed. `RCA_phi_O5_closure_2026_05_31.md` (3-Round RCA 4.60/5). |
+| 2026-05-31 | 0.7 | φ-O5 FULLY COMPLETE. φ-O5-4 TRIVIAL: α(P_{o_i}⊗1^{N-1})=P_{o_i}⊗1^{N-1} (canonical tensor product associativity; φ-N2 B(H) form invariant under all regroupings). φ-O5-5 RESOLVED: EX K↔ρ and φ K→P_o consistent via Born rule Tr(P_{o_i}·ρ_i) for N=3; structural validation for all φ-N1/N2/N3. `RCA_phi_O5_45_final_2026_05_31.md` (3-Round RCA 4.63/5). §8 all 9 items closed. |
 
 ---
 
-*φ-O5 v0.6 — 2026-05-31. Phase 2 COMPLETE. Conditions: 5+3+2 necessary, not provably sufficient (FUNDAMENTAL BOUNDARY). Verified topologies: hierarchical (§4bis) + parallel (§4ter). φ-N3 in circuit language: requires_K_joint=1 ↔ CNOT; BC-2 = no implicit channel. Remaining deferred: φ-O5-4 (B(H)⊗N explicit for φ-N2), φ-O5-5 (EX N=3 full validation).*
+*φ-O5 v0.7 — 2026-05-31. **FULLY COMPLETE.** All 9 items resolved. Conditions for N>2: 5+3+2 necessary, not provably sufficient (FUNDAMENTAL BOUNDARY 2 gaps). φ-N1 = Class C THEOREM. Topologies: hierarchical (§4bis) + parallel (§4ter). Circuit language: requires_K_joint ↔ CNOT; BC-2 = no implicit channel. EX/φ consistent via Born rule. Class D N-observer extension of Track B φ-map — research program complete.*
