@@ -6,6 +6,22 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v42 (2026-05-31) — Level 4 Freeze Declared: T4+T7 Class C, φ-O5 ACTIVE (3-Round RCA 4.69/5)
+
+### Added
+- `04_governance/RCA_phi_map_track_b_preparation_2026_05_31.md` — 3-Round RCA decision document (NEW): Level 4 freeze declaration, T4 Class D→C, T7 Class D→C, φ-O5 DEFERRED→ACTIVE.
+
+### Updated
+- `01_axiomatization/K_Space_Axiomatization.md` — Version 2.4→2.5. Level 4 freeze declaration block added before Layer 2 Summary. T4 row: "Class D → pending Class C" → **"Class C (Level 4 freeze 2026-05-31)"**. T5 row: freeze status updated to Class C-Conditional (Level 4 freeze note added). T7 row: "pending Level 4 freeze + E15 wording" → **"Class C (Level 4 freeze 2026-05-31 + E15 anchor done 2026-05-31)"**. T1/T2/T3/T6 rows: Freeze status → "Pending (separate governance review)".
+- `meta_architecture/K_Space_Axiomatization.md` — PEER-SYNC (identical changes).
+- `meta_architecture/K_to_BH_Structure_Preserving_Map_v0_1.md` — Version 0.3→0.4. φ-O5 in §5, §7, §8: DEFERRED → **ACTIVE**. Change log entry added.
+- `CLAUDE.md` — Layer 2 bullet: "T4-H Step 1 proven, Steps 2–4 deferred" → **"T4-H FULL THEOREM 4/4 VERIFIED 2026-05-28; T4 Class C 2026-05-31"**. Level 4 freeze note added. Layer 5 T4-H gate note updated.
+
+### Closed
+- [φ-O5 Level 4 freeze gate] — Level 4 freeze declared. T4 Class C. φ-O5 N-observer φ-map → ACTIVE (open research, not complete).
+
+---
+
 ## v41 (2026-05-31) — D_obs: Observer Set Formal Definition ([A-Obs] ELIMINATED, RCA 4.3/5)
 
 ### Added

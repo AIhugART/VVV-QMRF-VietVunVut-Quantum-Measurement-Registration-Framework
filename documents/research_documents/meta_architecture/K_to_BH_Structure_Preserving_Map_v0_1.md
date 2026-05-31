@@ -424,7 +424,7 @@ Standard quantum mechanics: the projector P_{o_F} on H_S extends to P_{o_F} ⊗ 
 | **φ-O2** | Verify φ-6 authority-composition: is Auth(k2→k1, C_K)=1 ↔ P_{o2}·P_{o1}≠0 a correct and complete characterization, or only necessary? | Phase 2 | High |
 | **φ-O3** | For V = 0: is φ(k) = 0 the correct choice, or should φ be a partial function (undefined for V=0)? Does φ(k_null) = 0 conflate K5 invalidation with K4(b) null events (both give V=0)? | Phase 2 | Medium |
 | **φ-O4** | Pre-closure φ_prov vs post-closure φ_final: should φ only be defined post-closure (φ_final), or should the provisional stage be tracked? If φ_prov only, what is the operator image during the open registration window? | Phase 2 | Medium |
-| **φ-O5** | Does φ extend naturally to N-observer K_joint (T4 Class D in Layer 2)? The 2-observer model works; the N-observer case requires T4 to be better supported. | Deferred | Low |
+| **φ-O5** | Does φ extend naturally to N-observer K_joint? The 2-observer model works; the N-observer case requires T4 Class C backing. **ACTIVE (2026-05-31): T4 Level 4 freeze gate resolved (3-Round RCA 4.69/5, `RCA_phi_map_track_b_preparation_2026_05_31.md`). T4 → Class C. N-observer extension is the next Track B research step.** | Phase 2 (Active) | Medium |
 | **φ-O6** | Is the von Neumann algebra M = vN({P_o : o ∈ O}) a better codomain than B(H)? Necessary conditions stated over M would be weaker but more precise. | Phase 2 | Low |
 | **φ-O7** | EX compass question: does a factorization φ = Born ∘ φ_EX exist? Here φ_EX: K → ρ (EX's K↔ρ map) and Born: ρ ↦ P_o via Born-rule post-measurement state. If yes, φ is decomposable from existing maps. | Compass | Medium |
 
@@ -582,7 +582,7 @@ This section verifies all necessary conditions N_1–N_T against the EWF 2-obser
 | Item | Status |
 |------|--------|
 | φ-O2 (partial): N_6 sufficiency — Auth↔P·P≠0 biconditional | ⚠️ Necessary only; sufficiency deferred |
-| φ-O5: N-observer K_joint (T4 Class D) | ⚠️ Deferred; requires T4 Level 4 freeze |
+| φ-O5: N-observer K_joint | ✅ **ACTIVE** (T4 Level 4 freeze declared 2026-05-31, RCA 4.69/5) — T4 → Class C |
 | φ-O6: von Neumann algebra M=vN({P_o}) as codomain | ⚠️ Open; B(H) remains working target |
 | φ-O7: EX factorization φ=Born∘φ_EX | ⚠️ Compass-only; not imported |
 
@@ -614,7 +614,7 @@ This section verifies all necessary conditions N_1–N_T against the EWF 2-obser
 | φ-O4 (pre/post-closure) resolved via N_7 | ✅ |
 | N_6 authority-composition (necessary direction) | ✅ |
 | φ-O2 sufficiency — documented as FUNDAMENTAL BOUNDARY (§6.1) | ✅ RESOLVED |
-| φ-O5 N-observer (T4-H Steps 2-4 VERIFIED 2026-05-28; pending T4 Level 4 freeze) | ⚠️ Deferred — T4-H gate resolved |
+| φ-O5 N-observer | ✅ **ACTIVE** (T4 Level 4 freeze declared 2026-05-31, T4 → Class C) |
 | φ-O6 Better codomain M = vN({P_o}) | ⚠️ Deferred (optimization) |
 | φ-O7 EX factorization | ⚠️ Deferred (compass-only) |
 | WP v2.0 §6.1 φ-conditional analysis (Phase 3) | ✅ |
@@ -645,6 +645,7 @@ All four components C1–C4 ≥ 8/10. Promotion gate satisfied.
 | 2026-05-22 | 0.1 | Initial Phase 1 working draft. §1–§5 drafted. EWF concrete model in §4. C2 readiness updated from 1.5/10 to ~5.5–6.0/10. φ-1 to φ-7′ conditions defined. Three reference papers connected. |
 | 2026-05-22 | 0.2 | Phase 2 complete. Added §6 Necessary Conditions (N_1–N_T derived from K1–K8 + T1–T7). Added §7 Concrete Model Consistency Check (all N_i verified against EWF 2-observer model). Resolved φ-O1, φ-O3, φ-O4. φ-O2 partially resolved (necessary direction only). C2 readiness updated from 5.5–6.0/10 to ~7.0–7.5/10. Old §6–§8 renumbered to §8–§10. |
 | 2026-05-24 | 0.3 | Post-Phase 4 + 3-round RCA (aggregate 4.80/5). Added §6.1 N_6 Boundary Statement — φ-O2 resolved as fundamental boundary (K6's C_K/D_joint have no B(H) analogue). Updated §8 C2 readiness from 7.0–7.5 to 8.0/10 with boundary justification. Added K9_E noise boundary note to §0 Proietti row. φ-O5/φ-O6/φ-O7 classified as DEFERRED with rationale. Bumped version v0.2→v0.3. See RCA Phi-Map Round 3. |
+| 2026-05-31 | 0.4 | Level 4 freeze declared (3-Round RCA 4.69/5, `RCA_phi_map_track_b_preparation_2026_05_31.md`). φ-O5 upgraded from DEFERRED → ACTIVE. T4 → Class C, T7 → Class C. §5 φ-O5 row updated. §7 open items table updated. §8 φ-O5 row updated. |
 
 ---
 

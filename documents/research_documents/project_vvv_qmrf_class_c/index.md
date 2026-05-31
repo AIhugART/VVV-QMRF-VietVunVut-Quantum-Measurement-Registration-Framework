@@ -35,7 +35,7 @@ VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 
 >
 > K9_E (Project C) can be tested independently of Projects A and B. A null result falsifies K9_E but does not invalidate the framework. A positive result confirms the hypothesis but does not prove the framework. Each project stands or falls on its own. See [Formal Definitions §4](06_references/VVV_QMRF_Definitions.md).
 
-VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H), where B(H) is the algebra of bounded operators on Hilbert space (Class D conjecture; Track B Phases 1–3 complete).
+VVV-QMRF conjectures the existence of a structure-preserving map phi: K → B(H), where B(H) is the algebra of bounded operators on Hilbert space (Class D conjecture; Track B Phases 1–4 complete 2026-05-22). **Level 4 freeze declared 2026-05-31 (3-Round RCA 4.69/5):** T4 → Class C; T7 → Class C; φ-O5 N-observer extension → ACTIVE. See `04_governance/RCA_phi_map_track_b_preparation_2026_05_31.md`.
 
 ## 2. What is Class C (qualified)?
 

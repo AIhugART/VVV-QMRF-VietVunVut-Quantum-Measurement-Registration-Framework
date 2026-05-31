@@ -7,10 +7,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Framework:** VietVunVut Quantum Measurement Registration Framework (VVV-QMRF)
 **Document type:** `meta_architecture` (canonical source copy)
-**Date:** 2026-05-19 (updated 2026-05-24)
-**Version:** 2.4
+**Date:** 2026-05-19 (updated 2026-05-31)
+**Version:** 2.5
 **Author:** VietVunVut (Viet - Nguyen Xuan)
-**Status:** v2.4 — Layer 1 extended with K5_prospective (P9 bridge, v29). Layer 2 extended with T8 (K5_prospective Frequency Bridge + H1-H4) + T9 (K_ctx Construction Theorem / T3-Morphism Channel Formalization, L1-L5) + **K7_trace** (Closure Transition Record, canonical promotion 2026-05-27) + **D_enc** (Transition-Encoding Registration Act, canonical promotion 2026-05-27). **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. **UPDATE (2026-05-24):** T8 bridges K5_prospective ↔ K9_E f_perp; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas). T9 formalizes φ_ij morphism channel; [A-E1] FULLY ELIMINATED via L1-L5 (5 lemmas, 3-Round RCA). Only [A-E3] remains (1/4 original K9_E assumptions). **UPDATE (2026-05-27):** K7_trace and D_enc promoted from BB-VVV local (fit plan §18-§19) to canonical Layer 2. RCA gate: 4.77/5 (Theoretical_Integration_plan.md v1). Claim boundary: K1 is Class C; K2-K8 and T1-T7 remain Class D; T8, T9 are Class C (structural derivation from K5_prospective / K8 embedding); K7_trace and D_enc are Class C-canonical (conservative extensions, promoted 2026-05-27).
+**Status:** v2.5 — Layer 1 extended with K5_prospective (P9 bridge, v29). Layer 2 extended with T8 (K5_prospective Frequency Bridge + H1-H4) + T9 (K_ctx Construction Theorem / T3-Morphism Channel Formalization, L1-L5) + **K7_trace** (Closure Transition Record, canonical promotion 2026-05-27) + **D_enc** (Transition-Encoding Registration Act, canonical promotion 2026-05-27) + **D_obs** (Observer Set Definition, [A-Obs] ELIMINATED, 2026-05-31). **STATUS AUDIT (2026-05-23):** This document is PURELY STRUCTURAL — contains zero probability equations, zero numerical values, zero experimental data, zero data comparisons. K9_E probability postulate exists only in separate plan documents (not part of this axiomatization). See §0.6 for full audit. **UPDATE (2026-05-24):** T8 bridges K5_prospective ↔ K9_E f_perp; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas). T9 formalizes φ_ij morphism channel; [A-E1] FULLY ELIMINATED via L1-L5 (5 lemmas, 3-Round RCA). Only [A-E3] remains (1/4 original K9_E assumptions). **UPDATE (2026-05-27):** K7_trace and D_enc promoted from BB-VVV local (fit plan §18-§19) to canonical Layer 2. RCA gate: 4.77/5 (Theoretical_Integration_plan.md v1). **UPDATE (2026-05-31):** Level 4 freeze declared (3-Round RCA 4.69/5, `RCA_phi_map_track_b_preparation_2026_05_31.md`). T4 → Class C; T7 → Class C (E15 anchor done 2026-05-31). Claim boundary updated: K1 Class C; K2-K8 remain Class D; **T4 Class C** (Level 4 freeze 2026-05-31); **T5 Class C-Conditional** (2026-05-30); **T7 Class C** (Level 4 freeze + E15 done 2026-05-31); T8, T9 Class C; K7_trace, D_enc, D_obs Class C-canonical; T1/T2/T3/T6 pending separate governance review.
 **Source:** Derived from VVV-QMRF Working Paper v2.0 Section 7.2 deferred item #5
 **Cite:** VVV-QMRF §K-AXIOM
 **Plan reference:** `papers/Testable_Prediction_Section/extended_wigners_friend_k_side_incommensurability/plan/VVV-QMRF_K_Space_Axiomatization_Plan.md`
@@ -1955,17 +1955,26 @@ K_ctx formal update (replaces T9 informal clause):
 
 ---
 
+### Level 4 Freeze Declaration (2026-05-31)
+
+> **Level 4 predicates (`D_joint`, `requires_K_joint`, `AdmJoint`, `⊥_K`, `Bridge_EWF`, `ODC_K`) declared stable (frozen) as of 2026-05-31.**
+> Basis: 6/6 predicates audited STABLE; 0/7 trigger cases present; WP v3.0 published (Zenodo 2026-05-28), no reviewer feedback requiring Level 4 change. RCA: `04_governance/RCA_phi_map_track_b_preparation_2026_05_31.md` (3-Round, aggregate 4.69/5 PASS).
+> Consequences: T4 → Class C; T7 → Class C; φ-O5 (N-observer φ-map) → ACTIVE.
+> Reversibility: Level 4 may be unfrozen via 5-gate protocol in `vvv_qmrf_meta_architecture_level_4_unfreeze_gate.md`.
+
+---
+
 ### Layer 2 Summary / Tổng kết Tầng 2
 
 | Theorem | Bridges axioms to | Level 4 dependency | Freeze status | Risk if Level 4 changes |
 |---|---|---|---|---|
-| T1 | K_joint construction | `requires_K_joint`, `D_joint`, embeddings | Pending | Theorem statement updates; K1-K8 unchanged |
-| T2 | ⊥_K derivation | `AdmJoint` (i)-(v), `⊥_K` boundary clauses | Pending | Derivation chain updates; K1-K8 unchanged |
-| T3 | Bridge_EWF formalization | `Bridge_EWF` lemma, **AJVS** (Semantic Postulate Layer 0.5 — relativization defense, formalized) | Pending | Derivation chain may need revision if AJVS challenged; K1-K8 unchanged |
-| T4 | N-observer generalization | All Level 4, generalized to N; **T4-H** Colimit Existence THEOREM (4/4 VERIFIED 2026-05-28) | Class D → pending Class C upgrade (Level 4 freeze gate remaining) | Independently updatable; T4-H no longer a gate |
-| T5 | K_joint composition (algebraic associativity) | `requires_K_joint`, `D_joint`, `AdmJoint` (per T1+T4) | T4-H gate resolved (2026-05-28); pending Level 4 freeze | K_joint composition structure updates; K1-K8 unchanged |
-| T6 | Decoherence-induced registration update (Path A: K5 invalidation; Path B: k_new instantiation) | `requires_K_joint`, C_K, `⊥_K` boundary clauses (Path A only) | Pending Level 4 freeze | Path A K5 conditions update; K3 intrinsic cert unchanged |
-| T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | T4-H gate resolved (2026-05-28); pending Level 4 freeze + E15 wording | If E15 IRB changes; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
+| T1 | K_joint construction | `requires_K_joint`, `D_joint`, embeddings | Pending (separate governance review) | Theorem statement updates; K1-K8 unchanged |
+| T2 | ⊥_K derivation | `AdmJoint` (i)-(v), `⊥_K` boundary clauses | Pending (separate governance review) | Derivation chain updates; K1-K8 unchanged |
+| T3 | Bridge_EWF formalization | `Bridge_EWF` lemma, **AJVS** (Semantic Postulate Layer 0.5 — relativization defense, formalized) | Pending (separate governance review) | Derivation chain may need revision if AJVS challenged; K1-K8 unchanged |
+| T4 | N-observer generalization | All Level 4, generalized to N; **T4-H** Colimit Existence THEOREM (4/4 VERIFIED 2026-05-28) | **Class C** (Level 4 freeze declared 2026-05-31, RCA 4.69/5; T4-H THEOREM 4/4) | Independently updatable; T4-H no longer a gate |
+| T5 | K_joint composition (algebraic associativity) | `requires_K_joint`, `D_joint`, `AdmJoint` (per T1+T4) | **Class C-Conditional** (T4-H gate resolved 2026-05-28; Level 4 freeze 2026-05-31, RCA 4.4/5) | K_joint composition structure updates; K1-K8 unchanged |
+| T6 | Decoherence-induced registration update (Path A: K5 invalidation; Path B: k_new instantiation) | `requires_K_joint`, C_K, `⊥_K` boundary clauses (Path A only) | Pending (separate governance review) | Path A K5 conditions update; K3 intrinsic cert unchanged |
+| T7 | IRB registration-scope propagation (E15 → extended C_K for A-B-C) | `requires_K_joint`, `D_joint`, `AdmJoint` for A-B-C; IRB-induced D_joint scope; E15 framework | **Class C** (Level 4 freeze 2026-05-31 + E15 K-anchor done 2026-05-31; RCA 4.69/5) | If E15 IRB changes; T4 ⊥_K non-transitivity preserved; K1-K8 unchanged |
 | T8 | K5_prospective Frequency Bridge — f_perp = E[I(K5_prospective fires)]; [A-E2] FULLY ELIMINATED via T8-H1 (5 lemmas) | `requires_K_joint`, C_K (via K5_prospective); `⊥_K` boundary clauses (inherited) | Updatable (Layer 2). Structural uniqueness via T8-H1. Conditional on K_ctx uniformity + K6 non-hierarchy | If K5_prospective revised; if K_ctx definition changes (weighting); if new continuous contradiction-strength axiom added → T8 weighted generalization |
 | T9 | K_ctx Construction Theorem (T3-Morphism Channel Formalization) — φ_ij = i_j (K8-constrained T1 embedding); 5 lemmas (L1-L5); [A-E1] FULLY ELIMINATED | `requires_K_joint`, C_K (via K5 precondition); `D_joint` scope (via K6 Auth — inherited). No NEW Level 4 dependency. | Updatable (Layer 2). φ_ij = i_j identification holds for any T1-supplied embedding; structural core (L1-L2) is T1-independent — K8 constraint alone determines φ_ij. | If T1 K_joint construction revised; if K5 requires_K_joint scope changes; if K8 field-preservation constraint modified |
 | K7_trace | Closure Transition Record (Conservative Extension of K7) — Δ_closure(k) := V_prov(k) − V_final(k) at t_close ∈ {−1,0,1}; metadata of closure event (no new tuples, no V modification); enables T_BB Step 1; consumers: 3-OBS (T4-H VERIFIED 2026-05-28) + FR-VVV avoidance chain (V_FR2 PASS 2026-05-28). Promoted from BB-VVV local §18 to canonical Layer 2 (2026-05-27). RCA 4.77/5. | None (derives from K7 closure values only). No Level 4 dependency. | Updatable (Layer 2 conservative extension). Promoted from Class D-local (BB-VVV §18) to Class C-canonical (2026-05-27). | If K7 closure definition changed; otherwise self-contained. |
