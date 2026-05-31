@@ -490,6 +490,13 @@ Single-entry-point document: K->p(o) formula, component origin table, 6 boundary
 
 **Files modified:** 7 framework postulate files + framework/index.md §4.4 + AHP v1.8 + 1 new report. See [framework/plan/E_Postulate_K_Axiom_Anchor_RCA_2026-05-31.md](documents/research_documents/framework/plan/E_Postulate_K_Axiom_Anchor_RCA_2026-05-31.md).
 
+### 2026-05-31 — D_obs: Observer Set Formal Definition for K_ctx ([A-Obs] ELIMINATED)
+
+- **Scope:** K_Space_Axiomatization.md Layer 2 — formal axiomatization of `Obs(Exp, R_i)` (Observer Set for experiment Exp). VVV-QMRF scope, VVV-QMRF-EX as compass.
+- **Root cause fixed:** T9 (K_ctx Construction Theorem) Lemma L4 closed [A-E1] (morphism assumption) but retained informal clause `"R_j is an observer in Exp other than R_i"` — implicitly invoking `Obs(Exp)` with no formal definition in K1-K8 or T1-T9. K_ctx derivation chain was incomplete. Source gap: [A-Obs] unnamed assumption. 3-round RCA aggregate 4.3/5 ≥ threshold 4.0.
+- **Change:** Added Layer 2 Semantic Definition `D_obs` (following D_enc pattern): `Obs(Exp, R_i) := {R_j ≠ R_i : requires_K_joint(R_i,R_j)=1 ∧ R_j ∈ Exp}`. Updated T9 K_ctx formal clause + [A-Obs] metadata row. Updated Layer 2 Summary table (D_obs row added after D_enc). PEER-SYNC applied to both copies. sync_check_k_space.sh PASS.
+- **Files modified:** `meta_architecture/K_Space_Axiomatization.md` (canonical) + `project_vvv_qmrf_class_c/01_axiomatization/K_Space_Axiomatization.md` (PEER copy) — both +78 lines symmetric.
+
 ### 2026-05-31 — paper_002 v95: §8.1 Falsification Hierarchy Boundary
 
 - **Scope:** manuscript.md §8.1 — Level 0 null ≠ Levels 1–3 boundary statement. VVV-QMRF scope, VVV-QMRF-EX as compass.

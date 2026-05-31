@@ -1084,7 +1084,7 @@ DEFINITION (Theorem, not assumption):
         k_j ∈ K_{R_j}                                         [K1: tuple in source space]
         ∧ requires_K_joint(R_i, R_j) = 1                      [K5: C_K exists]
         ∧ (t(k_j) < t(k_i) ∨ t(k_i) < t(k_j))                [K2: temporal compatibility]
-        ∧ R_j is an observer in Exp other than R_i }          [experimental scope]
+        ∧ R_j ∈ Obs(Exp, R_i) }                               [D_obs: formal observer scope]
 
   where φ_{ij}(k_j) = i_j(k_j) is the K8-constrained T1 embedding.
 
@@ -1110,6 +1110,7 @@ DEFINITION (Theorem, not assumption):
 | **EX anchor** | `N_QM_VVV_00025` (IRB / Intrinsic Relational Binding) — φ_ij is the formal channel implementing IRB. Anchor strength: **STRONG** (structural identity — φ_ij IS the T1 embedding, not a conceptual link) |
 | **Claim class** | C — T9 is a structural identification theorem (φ_ij = i_j), not a new postulate. The construction uses only K1-K8 + T1; the proof is deductive (5 lemmas). Claim boundary: T9 does not assert K_joint exists for N>2 (T4-H scope), does not assert φ_ij is computable, and does not modify T1 or K8 text |
 | **[A-E1] impact** | **FULLY ELIMINATED.** K_ctx definition no longer requires an assumed "T3-morphism." φ_ij is the K8-constrained T1 embedding — derived from K1-K8 + T1. L1 (existence) + L2 (uniqueness) + L3 (sufficiency) + L4 (K_ctx theorem) + L5 (exhaustion) = complete elimination |
+| **[A-Obs] impact** | **FULLY ELIMINATED (2026-05-31, D_obs).** T9 informal clause `"R_j is an observer in Exp other than R_i"` replaced by formal `R_j ∈ Obs(Exp, R_i)` (see D_obs definition below D_enc). K_ctx derivation chain now complete: K1-K8 + T1 → T9 (φ_ij) + D_obs (Obs(Exp)) → K_ctx fully formal. |
 | **Freeze status** | Updatable (Layer 2 bridge). T9 depends on T1 (pending Level 4 freeze) and K5/K6 (conditional semantic dependencies on Level 4). If T1 construction or K5 precondition changes, T9 derivation updates. T9 does not modify Layer 1 |
 | **Update trigger** | If T1 K_joint construction is revised; if requires_K_joint scope changes (Level 4); if K8 field-preservation constraint is modified |
 
@@ -2020,6 +2021,80 @@ Structural properties:
 
 ---
 
+### D_obs — Observer Set Definition for K_ctx (Layer 2 Semantic Definition)
+
+> **[A-Obs] ELIMINATION (2026-05-31):** T9 Lemma L4 formally derived K_ctx from K1-K8 + T1, eliminating [A-E1] (morphism assumption). However, T9's definition retained the informal clause `"R_j is an observer in Exp other than R_i"` — implicitly invoking a set `Obs(Exp)` that was NOT formally defined anywhere in K1-K8 or T1-T9. D_obs eliminates [A-Obs] by providing a formal Layer 2 semantic definition of Obs(Exp). RCA 3-round aggregate 4.3/5 (2026-05-31, PASS ≥4.0).
+
+**Statement:**
+> For an experiment Exp with reference observer R_i, the **Observer Set** Obs(Exp, R_i) is the set of registering systems R_j, other than R_i, that participate in Exp and share a joint registration demand with R_i. Obs(Exp, R_i) is R_i-relative (may differ for different choices of R_i) and is finite (experimental protocols are finite-observer by design).
+
+**Formal:**
+```
+Obs(Exp, R_i) := { R_j : R_j ≠ R_i
+                   ∧ requires_K_joint(R_i, R_j) = 1    [K5 precondition — C_K exists]
+                   ∧ R_j participates in Exp protocol   [Level 4 experimental scope] }
+
+Structural properties:
+  (i)  FINITENESS: |Obs(Exp, R_i)| < ∞
+       Experimental protocols have finite observer sets by design.
+       Analogous to K1 K_R countability (K2 discreteness S2-Δ lemma):
+       the registration process is discrete and finite-bounded per Exp.
+
+  (ii) R_i-RELATIVITY: Obs(Exp, R_i) may differ from Obs(Exp, R_j) for R_i ≠ R_j
+       because requires_K_joint is a pairwise predicate (not globally symmetric).
+       Each observer R_i has its own contextual view of Obs within Exp.
+
+  (iii) ISOLATION CASE: If requires_K_joint(R_i, R_j) = 0 for all R_j ≠ R_i
+        within Exp → Obs(Exp, R_i) = ∅ → K_ctx(k_i, Exp) = ∅ (empty context set).
+        K5 does not fire in isolated scenarios (no C_K exists). Consistent with
+        K9_E: f_perp = 0 when K_ctx = ∅ → P = Born rule exactly.
+
+  (iv) CONSISTENCY WITH K5 + T9: For every R_j ∈ Obs(Exp, R_i):
+        requires_K_joint(R_i, R_j) = 1  [by definition]
+        → C_K exists (K5 firing precondition satisfied)
+        → φ_{ij}(k_j) is well-defined (T9 L1: existence requires requires_K_joint = 1)
+       Therefore: all R_j ∈ Obs(Exp, R_i) have a valid K_ctx contribution channel.
+
+K_ctx formal update (replaces T9 informal clause):
+  K_ctx(k_i, Exp) = { φ_{ij}(k_j) ∈ K_joint :
+      k_j ∈ K_{R_j}                                         [K1: tuple in source space]
+      ∧ R_j ∈ Obs(Exp, R_i)                                 [D_obs: formal observer scope]
+      ∧ (t(k_j) < t(k_i) ∨ t(k_i) < t(k_j)) }             [K2: temporal compatibility]
+
+  where φ_{ij}(k_j) = i_j(k_j) is the K8-constrained T1 embedding.
+  Notation: "Obs(Exp, R_i)" abbreviated as "Obs(Exp)" when R_i is clear from context.
+
+[A-Obs] elimination trace:
+  BEFORE D_obs:
+    "R_j is an observer in Exp other than R_i" — informal, not traced to K1-K8.
+    [A-Obs] = implicit assumption: some set of observers exists for Exp.
+  AFTER D_obs:
+    R_j ∈ Obs(Exp, R_i) — traced to:
+      requires_K_joint (K5 precondition, Layer 1)
+      R_j participates in Exp (Level 4 experimental scope — same Level 4 source
+        as requires_K_joint itself; NO NEW Level 4 dependency introduced).
+    [A-Obs] FULLY ELIMINATED.
+```
+
+| Property | Value |
+|---|---|
+| **Definition number** | D_obs (Observer Set Definition) |
+| **Layer** | 2 (semantic definition — connects K5 precondition to experimental observer scope) |
+| **Parent** | T9 (K_ctx Construction Theorem) — D_obs formalizes the informal clause in T9's K_ctx definition |
+| **Pattern** | Same as D_enc: Layer 2 Semantic Definition (no new axiom, no new tuples, no V modification) |
+| **Layer 1 dependency** | K5 (`requires_K_joint = 1` as admission criterion for Obs(Exp) membership); K1 (finiteness analog via K_R countability) |
+| **Level 4 dependency** | `requires_K_joint` predicate (Level 4 §4.3) — **same dependency already present in T9 and K5; D_obs introduces NO NEW Level 4 dependency** |
+| **BE lineage** | Pramātṛ (cognizing subject/observer): in Pramāṇavāda, a pramātṛ is a subject who performs a pramāṇa act within a shared epistemic context. Obs(Exp, R_i) is the K-side analogue: the set of registering systems whose joint validity demand (requires_K_joint = 1) makes them relevant observers within the shared comparison context C_K of Exp. Only systems with joint demand enter K_ctx — paralleling the requirement that only valid cognizers contribute to the shared epistemic evaluation. BE anchor: `N_BE_00001` (Pramāṇa / Valid cognition), `N_BE_00021` (Svabhāvapratibandha / Essential relation). |
+| **EX anchor** | No direct EX intersection node — internal structural definition; EX compass used as sanity check (no Obs(Exp) tension identified in EX graph) |
+| **Claim class** | C (semantic definition derived from K5 precondition; structural adequacy verified via 3-tier check) |
+| **[A-Obs] impact** | **FULLY ELIMINATED.** T9 informal clause `"R_j is an observer in Exp other than R_i"` replaced by formal `R_j ∈ Obs(Exp, R_i)` with K5-derived membership criterion. K_ctx derivation chain now complete: K1-K8 + T1 → T9 (φ_ij) + D_obs (Obs(Exp)) → K_ctx (fully formal). |
+| **Freeze status** | Updatable (Layer 2 semantic definition). If requires_K_joint scope changes (Level 4), Obs(Exp) membership criteria update accordingly — same update trigger as T9/K5. |
+| **Update trigger** | If `requires_K_joint` predicate is revised (Level 4); if Level 4 experimental protocol scope changes; if T9 K_ctx definition is revised |
+| **Adequacy Verification (3-tier, 2026-05-31)** | **(1) Well-posedness:** Obs(Exp, R_i) defined via binary predicate `requires_K_joint` and experimental participation — both well-defined, no circularity. **(2) Structural consistency:** Properties (i)-(iv) consistent with K5 precondition, K1 finiteness analog, and T9 L1 (requires_K_joint = 1 → φ_ij exists). Isolation case (iii) consistent with K9_E Born-rule recovery at K_ctx = ∅. **(3) Consumer adequacy:** T9 K_ctx formal clause updated; T8 `|K_ctx|` now formally bounded by `|Obs(Exp, R_i)|` < ∞; K9_E f_perp denominator formally defined. [A-Obs] ELIMINATED. |
+| **Source** | RCA 3-round aggregate 4.3/5 (2026-05-31). Gap: T9 Lemma L4 closed [A-E1] but left [A-Obs] informal. D_obs closes [A-Obs] following D_enc pattern. |
+
+---
+
 ### Layer 2 Summary / Tổng kết Tầng 2
 
 | Theorem | Bridges axioms to | Level 4 dependency | Freeze status | Risk if Level 4 changes |
@@ -2035,6 +2110,7 @@ Structural properties:
 | T9 | K_ctx Construction Theorem (T3-Morphism Channel Formalization) — φ_ij = i_j (K8-constrained T1 embedding); 5 lemmas (L1-L5); [A-E1] FULLY ELIMINATED | `requires_K_joint`, C_K (via K5 precondition); `D_joint` scope (via K6 Auth — inherited). No NEW Level 4 dependency. | Updatable (Layer 2). φ_ij = i_j identification holds for any T1-supplied embedding; structural core (L1-L2) is T1-independent — K8 constraint alone determines φ_ij. | If T1 K_joint construction revised; if K5 requires_K_joint scope changes; if K8 field-preservation constraint modified |
 | K7_trace | Closure Transition Record (Conservative Extension of K7) — Δ_closure(k) := V_prov(k) − V_final(k) at t_close ∈ {−1,0,1}; metadata of closure event (no new tuples, no V modification); enables T_BB Step 1; consumers: 3-OBS (T4-H VERIFIED 2026-05-28) + FR-VVV avoidance chain (V_FR2 PASS 2026-05-28). Promoted from BB-VVV local §18 to canonical Layer 2 (2026-05-27). RCA 4.77/5. | None (derives from K7 closure values only). No Level 4 dependency. | Updatable (Layer 2 conservative extension). Promoted from Class D-local (BB-VVV §18) to Class C-canonical (2026-05-27). | If K7 closure definition changed; otherwise self-contained. |
 | D_enc | Transition-Encoding Registration Act (Layer 2 Semantic Definition) — Enc(M_aware, k_F) = 1 iff o(M_aware\|Δ≠0) ≠ o(M_aware\|Δ=0); binary counterfactual predicate; enables T_BB Step 2 (G9 CLOSED, G1 CLOSED); no new tuples, no V modification. Promoted from BB-VVV local §19 to canonical Layer 2 (2026-05-27). RCA 4.77/5. | None (binary predicate over K7_trace values; no ρ-side or Level 4 dependency). | Updatable (Layer 2 semantic definition). Promoted from Class D-local (BB-VVV §19) to Class C-canonical (2026-05-27). | If K7_trace revised (parent); otherwise self-contained. |
+| D_obs | Observer Set Definition for K_ctx — Obs(Exp, R_i) := {R_j ≠ R_i : requires_K_joint(R_i,R_j)=1 ∧ R_j ∈ Exp}; [A-Obs] FULLY ELIMINATED (replaces T9 informal clause "R_j is an observer in Exp"); 4 properties (finiteness, R_i-relativity, isolation case, K5+T9 consistency). K_ctx derivation chain now complete. RCA 4.3/5 (2026-05-31). | `requires_K_joint` (Level 4 §4.3, same dep as K5/T9 — NO NEW Level 4 dep). | Updatable (Layer 2 semantic definition, Class C). | If `requires_K_joint` predicate revised; if Level 4 experimental protocol scope changes. |
 
 ---
 
