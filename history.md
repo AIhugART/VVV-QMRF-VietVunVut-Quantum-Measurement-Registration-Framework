@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Work History
 # Lịch sử làm việc hệ thống VVV-QMRF
 
-**Last updated:** 2026-05-29<br/>
+**Last updated:** 2026-05-31<br/>
 **Scope:** Historical record of work completed, system milestones, and VVV-QMRF concept nodes created.<br/>
 **Status:** Historical summary only; not a source of truth for node definitions.
 
@@ -470,6 +470,27 @@ Single-entry-point document: K->p(o) formula, component origin table, 6 boundary
 - requires_K_joint (structural) ≠ K9_E effect (probabilistic) — K9-S8 distinction critical for Bong mapping.
 
 **Files modified:** 10 files + 1 new (Comprehensive_RCA_Summary_2026-05-29.md). See [framework/plan/Comprehensive_RCA_Summary_2026-05-29.md](documents/research_documents/framework/plan/Comprehensive_RCA_Summary_2026-05-29.md) for full report.
+
+### 2026-05-31 — φ-map Track B: Level 4 Freeze + φ-O5 N-Observer Extension COMPLETE
+
+- **Scope:** φ: K_joint(R_1,...,R_N) → B(H) — N-observer extension of Track B φ-map. 8 commits, 9 RCA sessions (all 3-Round × 5-Why × ≥4/5). VVV-QMRF scope, VVV-QMRF-EX as compass.
+
+**Key milestones:**
+
+- **Level 4 freeze (RCA 4.69/5):** Level 4 predicates DE FACTO stable — formal freeze declared. T4 → Class C; T7 → Class C. φ-O5 ACTIVE. K_Space_Axiomatization.md v2.4→v2.5 (PEER-SYNC).
+- **φ-O5 conditions derived (RCA 4.54/5):** For N>2: φ-N2 (Associativity/T5), φ-N3 (Pair-Independent Commutator/⊥_K non-transitivity). φ-N1 proven as Class C THEOREM (RCA 4.63/5) — not a separate condition.
+- **Concrete models verified:** Hierarchical F1→F2→W (RCA 4.57/5); Parallel F1,F2→W span (RCA 4.57/5). Two physical mechanisms for BC-2 non-transitivity: basis choice vs independent system structure.
+- **Sufficiency = FUNDAMENTAL BOUNDARY (RCA 4.57/5):** Gap 1 (biconditional, C_K/D_joint no B(H) analogue — analogue of φ-O2); Gap 2 (global vs pairwise ⊥_K — NEW for N>2, §T4 explicit).
+- **Circuit language (φ-O5-3c):** requires_K_joint=1 ↔ CNOT/CX channel. BC-2 = "no implicit channel." Proietti (2019) 6-photon 5σ CHSH directly confirms φ-N3 (F1,W1). K≠H: ρ-entanglement ≠ requires_K_joint=1.
+- **φ-O5 FULLY COMPLETE (v0.7):** All 9 items resolved. Conditions 5+3+2 (necessary). Sufficiency = FUNDAMENTAL BOUNDARY. Document: `meta_architecture/phi_O5_n_observer_extension_v0_1.md`.
+
+**Key research results:**
+1. φ-N1 = Class C THEOREM — simplifies N-observer to 2 genuinely new conditions (φ-N2, φ-N3).
+2. BC-2 has two physical mechanisms: measurement basis choice (hierarchical) + independent system structure (parallel).
+3. Sufficiency boundary for N>2 is STRONGER than N=2 (Gap 2 = global path-commutativity is irreducible).
+4. Circuit language provides direct experimental connection to Proietti 2019.
+
+**Files modified (8 commits):** `meta_architecture/phi_O5_n_observer_extension_v0_1.md` (NEW, v0.7), `K_to_BH_Structure_Preserving_Map_v0_1.md` (v0.5), `K_Space_Axiomatization.md` (v2.5, PEER-SYNC ×2), `04_governance/` (8 new RCA docs + CHANGELOG.md v42–v49), `CLAUDE.md`, `index.md`, `phi_map_track_b_roadmap.md`.
 
 ### 2026-05-31 — E-Postulate K-Axiom Anchor Completion (K1-K8 Full Coverage)
 
