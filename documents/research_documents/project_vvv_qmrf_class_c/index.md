@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v42 (2026-05-31) — K10_R Registration Capacity Postulate adopted Layer 3 Class C (qualified) (RCA 4.67/5): C₁–C₄ from K1–K4; grounds ValidReg Condition 2; fills N_QM_VVV_00012; K_Space_Axiomatization.md v2.6 + Open Item #17. v41: D_obs [A-Obs] ELIMINATED; K_ctx derivation chain complete
+**Version:** v43 (2026-06-01) — Long-Term Research Plan v1.0 adopted (3-Pillar × 5-Phase, RCA 4.69/5 PASS): Pillar I φ-map maturation, Pillar II K9_E empirical resolution, Pillar III theoretical integration. v42: K10_R Registration Capacity Postulate adopted Layer 3 Class C (qualified) (RCA 4.67/5). v41: D_obs [A-Obs] ELIMINATED; K_ctx derivation chain complete
 **Zenodo DOI (v3.0):** [10.5281/zenodo.20431310](https://zenodo.org/records/20431310) — Working Paper v3.0 **PUBLISHED 2026-05-28**
 **Zenodo DOI (v2.0):** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (archived)
 **Concept DOI (cite-all):** [10.5281/zenodo.20289260](https://doi.org/10.5281/zenodo.20289260)
@@ -236,7 +236,8 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | How is P10-NOISE noise sensitivity analyzed? | [RCA Methodology Decision](04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md) + [Spec](07_fits/noise_sensitivity_analysis_spec.md) |
 | How was phi-map K→B(H) resolved (RCA)? | [RCA Phi-Map Round 1](04_governance/RCA_phi_map_round1_structural_audit.md) → [Round 2](04_governance/RCA_phi_map_round2_structural_resolution.md) → [Round 3 Decision](04_governance/RCA_phi_map_round3_final_decision.md) |
 | How was K9E-PAT resolved (RCA)? | [T1B Model Comparison RCA](04_governance/T1B_model_comparison_RCA.md) → [T1C Resolution](04_governance/T1C_k9e_pat_resolution.md) |
-| What is the Post-v30 execution plan? | [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) |
+| What is the Post-v30 execution plan? | [Post_v30_Execution_Plan.md](04_governance/Post_v30_Execution_Plan.md) (Tracks 1 & 2 COMPLETED) |
+| What is the long-term research plan (2026-2028+)? | [Long_Term_Research_Plan_2026_05_31.md](04_governance/Long_Term_Research_Plan_2026_05_31.md) (3-Pillar × 5-Phase, RCA 4.69/5 PASS, 2026-05-31) |
 | What happened in the v31 RCA session? | [RCA Session Report](04_governance/RCA_session_post_v30_2026_05_24.md) |
 | How does B&B (2024) fit VVV-QMRF? | [BB_VVV_fit_plan.md](09_Fitting_Baumann_Brukner/BB_VVV_fit_plan.md) (v1.4 — T_BB Class C, P2-C §20 first-principles) |
 | What is the BB-VVV compatibility result? | [BB_VVV_compatibility_section.md](09_Fitting_Baumann_Brukner/BB_VVV_compatibility_section.md) (v2.1 — T_BB' CLOSED, P2-C π/8 exact) |
@@ -251,7 +252,7 @@ See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equat
 | `01_axiomatization/` | K_Space_Axiomatization.md + K->BH map + meta-architecture documents | 10 |
 | `02_derivation_chain/` | Phase 7–13 deliverables + supporting analyses + v29 RCA + 3-OBS mechanism + T4-H Steps 3-4 proof | 21 |
 | `03_k9_sprints/` | K9 analysis chain (S1–S12) + K9 analysis plan | ~22 |
-| `04_governance/` | Master plan + Post-v30 plan + Track 1 reports + CHANGELOG + decisions + RCA reports | ~24 |
+| `04_governance/` | Master plan + Post-v30 plan + Long-Term Research Plan + Track 1 reports + CHANGELOG + decisions + RCA reports | ~25 |
 | `05_ex_compass/` | VVV-QMRF-EX snapshot (compass reference, not structure import) | ~65 |
 | `06_references/` | VVV-QMRF core terminology + bridge documents | 8 |
 | `07_fits/` | Python reproduction scripts + utils/ module + SOT data + requirements.txt | 18 |

@@ -217,6 +217,7 @@ Estimates are for **research effort**, not calendar elapsed. Project pace is gov
 | 2026-05-22 | 1.0 | Initial roadmap. Phase 1–4 defined. Phase 1 not yet started. |
 | 2026-05-22 | 2.0 | All phases complete. Phase 1: φ defined, C2 → 5.5–6.0/10. Phase 2: N_1–N_T derived, C2 → 8.0/10, C3 → 8.0/10. Phase 3: §6.1 φ-conditional analysis in WP v2.0, C4 → 8.0/10. Phase 4: CLAUDE.md promoted to Track B target claim. WP v3.0 and public_documents update deferred. |
 | 2026-05-24 | 2.1 | 3-round RCA (aggregate 4.80/5) on phi-map completeness. φ-O2 resolved as FUNDAMENTAL BOUNDARY (K6's C_K/D_joint have no B(H) analogue). C2=8.0 confirmed defensible. φ-O5/φ-O6/φ-O7 DEFERRED. CLAUDE.md synced "1–3"→"1–4." Phi-map doc v0.2→v0.3 with §6.1 N_6 Boundary Statement + K9_E noise note. |
+| 2026-06-01 | 3.0 | Long-Term Research Plan adopted (RCA 4.69/5). φ-O5 FULLY COMPLETE (v0.7, 9/9 items, 2026-05-31). Level 4 freeze declared. Track B Phases 1-4 complete. φ-map embedded in 3-Pillar × 5-Phase roadmap: Pillar I (φ-map maturation → Phase 1 boundary theorem → Phase 2 restricted existence → Phase 4 standalone paper). See `project_vvv_qmrf_class_c/04_governance/Long_Term_Research_Plan_2026_05_31.md`. |
 
 ---
 
