@@ -88,7 +88,17 @@ Symptom: A section claims Buddhist Epistemology "solves" Quantum Measurement.
 
 - Use the project skill `/rca-scientific-paper` only for scientific paper documents (`scientific paper`) when planning, reviewing, or revising scientific paper claims.
 
-### VVV-QMRF core / EX integration rule
+### GIT WORKFLOW — Branch rule (MANDATORY, NO EXCEPTIONS)
+
+**ROOT CAUSE NOTE (2026-05-29):** An AI agent created branch `rca-source-snapshot-sync-2026-05-29` for "isolation", causing 18 files to be lost in a stash (commit `e1275e7`). This rule prevents recurrence.
+
+- **ALWAYS work on `main` branch.** NEVER create a new branch for any reason — not for isolation, not for experiments, not for snapshots, not for RCA sessions. This project has ONE branch: `main`.
+- **NEVER run:** `git checkout -b <anything>`, `git switch -c <anything>`, `git branch <name>`. These commands are FORBIDDEN for AI agents in this project.
+- **Before ending any session:** run `git status -s`. If any `??` (untracked) lines appear for `.md`, `.py`, or `.tex` files — run `git add -A && git commit -m "WIP: save all files"` IMMEDIATELY. Do not leave untracked files across sessions.
+- **NEVER use `git stash`** without explicitly naming it and noting the name in the session log. Anonymous stash causes silent data loss.
+- **Verify current branch before ANY git operation:** `git branch --show-current` must return `main`. If not, run `git checkout main` immediately before proceeding.
+
+
 
 - Develop the VVV-QMRF / VVV-QMRC core by the rule: "Internal-first, VVV-QMRF-EX-verified, selectively imported."
 - VVV-QMRC core may be extended from VVV-QMRF-EX only when the EX element reveals a structural necessity already implicit in the core registration problem.
