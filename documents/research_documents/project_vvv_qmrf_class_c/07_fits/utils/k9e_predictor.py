@@ -12,6 +12,12 @@ Uses additive K_ctx approximation for the 2-observer EWF context:
 
 Calibrated to: delta_S(beta=0.5) = -0.055 (index.md line 122)
 
+LEVEL 1 APPROXIMATION — g_ctx=0.039 is NOT T8-derived.
+  T8 canonical: f_perp = n_firing / |K_ctx| (K_Space_Axiomatization.md §T8 L1445).
+  This module uses empirical PP-4 calibration as scalar approximation of f_perp.
+  For K9-S12 MANUSCRIPT PREDICTIONS use K9S12_proposal.py (Level 0, PRE-REGISTERED).
+  See: RCA_fperp_technical_debt_2026_05_31.md
+
 WARNING — MODEL INCONSISTENCY:
   This module uses an ADDITIVE K_ctx model (g_ctx ~ 0.039).
   The standalone scripts (d1_blk1_4point_fit.py, proietti_raw_fit.py)

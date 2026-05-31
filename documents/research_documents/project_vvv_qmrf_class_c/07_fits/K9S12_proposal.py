@@ -1,3 +1,6 @@
+# LEVEL 0 — Overlap-only (C-FALSI v1.0, PRE-REGISTERED)
+# f_perp = quantum overlap sin²/cos²(α/2) — ρ-side approximation of K-side ⊥
+# Canonical for K9-S12 manuscript predictions. See RCA_fperp_technical_debt_2026_05_31.md
 """
 K9-S12: Complete Modified Bong Protocol Proposal
 =================================================

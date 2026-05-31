@@ -72,6 +72,9 @@ The reconstructed data used in `d1_blk1_4point_fit.py` assumed uniform visibilit
 differs per setting. The 0-BSM setting (A0B0) has the largest deviation from
 QM prediction, while the 1-BSM setting (A1B0) is closest. This non-uniformity
 is why the genuine fit (proietti_raw_fit.py) yields beta=0.598 (not 0).
+> **ARCHIVED:** `proietti_raw_fit.py` is Level 1 alternative, NOT canonical K9_E.
+> K9E-PAT CLOSED UNRESOLVABLE (v31). beta=0.598 invalidated — noise sensitivity FAIL.
+> See `04_governance/RCA_fperp_technical_debt_2026_05_31.md`.
 
 > **CAUTION:** The non-uniform pattern does NOT confirm K9_E multiplicative
 > suppression. The pattern check (2BSM/1BSM residual ratio = -0.78, expected ~2)

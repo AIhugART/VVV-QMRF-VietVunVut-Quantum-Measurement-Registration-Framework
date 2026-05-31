@@ -1,3 +1,8 @@
+# LEVEL 1 ALTERNATIVE — multiplicative form NOT canonical K9_E.
+# ARCHIVED: K9E-PAT CLOSED UNRESOLVABLE (v31, RCA 4.92/5, 2026-05-24).
+# beta=0.598 INVALIDATED — noise sensitivity FAIL (noise_threshold=0.10 RMS << 1.0).
+# Do NOT cite beta=0.598 as empirical evidence for K9_E.
+# See: RCA_fperp_technical_debt_2026_05_31.md
 """
 Genuine Non-Circular Fit: K9_E vs Raw Proietti Figure 3 Correlator Data
 =======================================================================

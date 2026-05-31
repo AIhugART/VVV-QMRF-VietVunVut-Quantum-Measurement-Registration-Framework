@@ -197,6 +197,7 @@ Falsification hierarchy (4 levels) | [Falsification_Hierarchy.md](04_governance/
 Pre-registration protocol (K9-S12) | [K9S12_PreRegistration_Protocol.md](04_governance/K9S12_PreRegistration_Protocol.md) | toan bo
 Formal terminology | [VVV_QMRF_Definitions.md](06_references/VVV_QMRF_Definitions.md) | SK9_E
 Noise sensitivity analysis | [RCA_P10_NOISE](04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md) | toan bo
+f_perp level labeling (technical debt) | [RCA_fperp_technical_debt_2026_05_31.md](04_governance/RCA_fperp_technical_debt_2026_05_31.md) | toan bo
 Phan tich additive->multiplicative (GAP-B) | [Falsification_Hierarchy.md](04_governance/Falsification_Hierarchy.md) | S6.2 + RCA response
 Historical context (tuong_lai.bak) | [tuong_lai.bak](../tuong_lai.bak) | toan bo
 VVV-QMRF-EX compass map | [K9S7_final_lock.md](03_k9_sprints/k9_analysis/K9S7_final_lock.md) | SEX COMPASS FINAL ANCHORING
