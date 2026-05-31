@@ -247,6 +247,26 @@ Individual maps:
 
 ---
 
+## 6.2 φ-O5-2 Boundary Statement — Sufficiency Limits for N>2
+
+**RCA basis:** `RCA_phi_O5_2_sufficiency_2026_05_31.md` (3-Round, 4.57/5 PASS).
+
+The N>2 condition set is **necessary but NOT provably sufficient** for two fundamental reasons:
+
+**Boundary 1 (φ-N3 biconditional — analogue of φ-O2 §6.1):**
+> [ι_i(P_{o_i}), ι_j(P_{o_j})] ≠ 0  ⇏  K_{R_i} ⊥_K K_{R_j}
+> C_K sphere membership and D_joint scope are K-side structural concepts with **no B(H) operator-algebraic analogue**. Non-commutativity in B(H) cannot certify K-side incommensurability.
+
+**Boundary 2 (Global vs pairwise — NEW for N>2):**
+> N(N-1)/2 pairwise commutator conditions do NOT determine global path-commutativity of K_joint(R_1,...,R_N).
+> K_Space_Axiomatization §T4: *"pairwise AdmJoint checks are necessary local, NOT sufficient global conditions."* Global path-commutativity has **no B(H) encoding**.
+
+**Stronger than N=2:** Even with full biconditional for all pairs, global sufficiency would still require a global condition beyond pairwise B(H) information — absent in the N=2 case.
+
+**Open possibility:** Operator-algebraic encodings of C_K sphere membership or global K_joint connectivity would unlock sufficiency. Both boundaries reflect current understanding, not permanent impossibility.
+
+---
+
 ## 6. K ≠ H Boundary Check
 
 φ-N1/N2/N3 do NOT: modify K1-K8; assert K_colim ∈ H; determine ρ_joint; import EX edges. **K ≠ H: PRESERVED** ✅
@@ -260,7 +280,7 @@ Individual maps:
 | φ-N1 | **C THEOREM** | Proven: φ-7 (universal) + T4-H Step 4 (Class C). 4-step proof. See §4.1. |
 | φ-N2 | D proposed condition | Conditional on T5 Class C-Conditional (all gates ✅) |
 | φ-N3 | D proposed condition | T4 §Non-transitivity + T7 BC-2 MANDATORY (Class C) |
-| Sufficiency of φ-N2+φ-N3 | OPEN | Analogous to φ-O2 N_6 gap in N=2 |
+| Sufficiency of {conditions} | **FUNDAMENTAL BOUNDARY** (2 gaps, 2026-05-31) — see §6.2 and `RCA_phi_O5_2_sufficiency_2026_05_31.md` |
 
 ---
 
@@ -273,7 +293,7 @@ Individual maps:
 | ~~φ-O5-3~~ | ~~N=3 concrete model~~ | ✅ **VERIFIED** (hierarchical topology, RCA 4.57/5, `RCA_phi_O5_3_n3_concrete_model_2026_05_31.md`). See §4 bis. Sub-items open: φ-O5-3b (parallel topology), φ-O5-3c (circuit language). | — |
 | ~~φ-O5-1~~ | ~~φ-N1 strict consequence?~~ | ✅ **RESOLVED** — φ-N1 = THEOREM (φ-7+T4-H Step 4, RCA 4.63/5, `RCA_phi_O5_1_phi_N1_theorem_2026_05_31.md`). φ-N1 demoted from condition to theorem. Conditions for N>2: 5+3+**2**. | — |
 | φ-O5-1b | Is ι_j∘ι_{ij}=ι_i proven for general N? | Low (non-blocking) |
-| φ-O5-2 | Are φ-N2+φ-N3 sufficient (with 5+3 conditions)? | High |
+| ~~φ-O5-2~~ | ~~Sufficiency?~~ | ✅ **FUNDAMENTAL BOUNDARY** (2 gaps, RCA 4.57/5, `RCA_phi_O5_2_sufficiency_2026_05_31.md`). See §6.2. Gap 1: φ-N3 biconditional (C_K/D_joint no B(H) analogue). Gap 2: global vs pairwise ⊥_K (K_joint path-commutativity, no B(H) encoding). Conditions: necessary, not provably sufficient. | — |
 | φ-O5-3b | Parallel topology: verify φ-N1/N2/N3 when W measures F1 and F2 independently. | Medium |
 | φ-O5-3c | Quantum circuit language for φ-N3 Case A/B (experimental connection). | Medium |
 | φ-O5-4 | Explicit B(L_2) expression for φ-N2 commutativity with T5 isomorphism. | Medium |
@@ -288,7 +308,8 @@ Individual maps:
 | 2026-05-31 | 0.1 | Initial draft. φ-N1 (colimit uniqueness), φ-N2 (associativity), φ-N3 (pair-independent commutator) derived from 3-Round RCA (4.54/5). 3 generalized conditions (φ-2-N, φ-6-N, φ-7-N). 5 open items. Class D. |
 | 2026-05-31 | 0.2 | §4 bis N=3 Concrete Model added (hierarchical F1,F2,W). φ-O5-3 VERIFIED (3-Round RCA 4.57/5, `RCA_phi_O5_3_n3_concrete_model_2026_05_31.md`). φ-N1/N2/N3 all verified. BC-2 non-transitivity confirmed. §8 open items updated: φ-O5-3 closed; φ-O5-3b/3c added. |
 | 2026-05-31 | 0.3 | φ-O5-1 RESOLVED: φ-N1 demoted to **THEOREM** (φ-7 universal + T4-H Step 4, RCA 4.63/5, `RCA_phi_O5_1_phi_N1_theorem_2026_05_31.md`). §4.1 rewritten with 4-step proof. §5 table: φ-N1 → THEOREM (Class C). §7 claim classification updated: φ-N1 Class C THEOREM. §8: φ-O5-1 closed, φ-O5-1b added, φ-O5-2 promoted. Genuinely new conditions for N>2: **2** (φ-N2 + φ-N3). |
+| 2026-05-31 | 0.4 | φ-O5-2 RESOLVED: Sufficiency = **FUNDAMENTAL BOUNDARY** (2 gaps, RCA 4.57/5, `RCA_phi_O5_2_sufficiency_2026_05_31.md`). §6.2 Boundary Statement added. §7 sufficiency row updated. §8 φ-O5-2 closed (FUNDAMENTAL BOUNDARY). Gap 1: φ-N3 biconditional (C_K/D_joint no B(H) analogue, analogue of φ-O2). Gap 2: global vs pairwise ⊥_K (K_joint path-commutativity, NEW for N>2). |
 
 ---
 
-*φ-O5 v0.3 — 2026-05-31. Conditions for N>2: 5 inherited + 3 generalized + 2 genuinely new (φ-N2, φ-N3) + 1 theorem (φ-N1). Next: φ-O5-2 (sufficiency of φ-N2+φ-N3).*
+*φ-O5 v0.4 — 2026-05-31. Condition set: 5+3+2 (necessary, not provably sufficient). φ-N1 = Class C THEOREM. φ-N2, φ-N3 = Class D conditions. Sufficiency = FUNDAMENTAL BOUNDARY (2 gaps). Remaining: φ-O5-1b (non-blocking), φ-O5-3b (parallel topology).*

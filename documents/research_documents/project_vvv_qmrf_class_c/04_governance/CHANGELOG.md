@@ -6,6 +6,28 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v46 (2026-05-31) — φ-O5-2 RESOLVED: Sufficiency = FUNDAMENTAL BOUNDARY (2 Gaps, RCA 4.57/5)
+
+### Added
+- `04_governance/RCA_phi_O5_2_sufficiency_2026_05_31.md` — 3-Round RCA (4.57/5). Sufficiency of {5+3+2 conditions} classified as FUNDAMENTAL BOUNDARY with 2 characterized gaps.
+
+### Updated
+- `meta_architecture/phi_O5_n_observer_extension_v0_1.md` v0.3→v0.4:
+  - §6.2 Boundary Statement added (analogous to φ-O2 §6.1 for N=2)
+  - §7 sufficiency row updated to "FUNDAMENTAL BOUNDARY"
+  - §8 φ-O5-2 closed (FUNDAMENTAL BOUNDARY), remaining: φ-O5-1b, φ-O5-3b
+  - §9 v0.4 changelog entry
+
+### Characterized Boundaries
+- **Gap 1 (φ-N3 biconditional — analogue of φ-O2):** [P_i,P_j]≠0 ⇏ K_i⊥_K K_j. C_K sphere membership / D_joint scope have no B(H) operator-algebraic analogue.
+- **Gap 2 (Global vs pairwise — NEW for N>2):** N(N-1)/2 pairwise commutator conditions do NOT determine global K_joint path-commutativity. K_Space_Axiomatization §T4 explicitly: "pairwise are necessary local, NOT sufficient global." Gap 2 is stronger than N=2 analogue: even with full biconditional, global sufficiency still requires a global condition B(H) cannot provide.
+
+### Open
+- [φ-O5-1b] ι_j∘ι_{ij}=ι_i general N — non-blocking
+- [φ-O5-3b] Parallel topology verification
+
+---
+
 ## v45 (2026-05-31) — φ-O5-1 RESOLVED: φ-N1 = THEOREM (φ-7 + T4-H Step 4), Conditions 3→2
 
 ### Added
