@@ -3,7 +3,7 @@
 **Paper:** Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **Email:** viet@vvvqmrf.com | **Web:** https://vvvqmrf.com
-**Date:** 2026-05-27
+**Date:** 2026-05-31
 **Target:** arXiv quant-ph → Phys. Rev. A
 
 ## File Inventory
@@ -11,7 +11,7 @@
 ### Main Paper
 | File | Description |
 |------|-------------|
-| `main.tex` | LaTeX source (revtex4-2, v94) — 9 sections + 18 references |
+| `main.tex` | LaTeX source (revtex4-2, v95) — 9 sections + 18 references |
 | `main.bib` | BibTeX bibliography (18 entries) — alternative to inline thebibliography |
 | `main.pdf` | Compiled PDF — 9 pages (pre-verified compilation) |
 
@@ -27,8 +27,8 @@
 ### Supplemental Material
 | File | Description |
 |------|-------------|
-| `supplemental.tex` | LaTeX source — S1 (proof + literature search), S2 (numerical methods + derivation + robustness), S3 (interpretations + GPT context) |
-| `supplemental.pdf` | Compiled supplemental PDF — 5 pages |
+| `supplemental.tex` | LaTeX source — S1 (proof + literature search), S2 (numerical methods + derivation + robustness), S3 (interpretations + GPT context + code index) |
+| `supplemental.pdf` | Compiled supplemental PDF — 10 pages |
 
 ## arXiv Upload Instructions
 
@@ -50,8 +50,8 @@
 ## Pre-Compilation Checklist
 
 - [x] main.tex compiles cleanly (9 pages, 0 undefined references)
-- [x] supplemental.tex compiles cleanly (5 pages)
-- [x] All 18 references match manuscript.md v94
+- [x] supplemental.tex compiles cleanly (10 pages)
+- [x] All 18 references match manuscript.md v95
 - [x] Title matches frozen v77 wording
 - [x] All 9 sections present
 - [x] Proposition 1 + Lemma 1 present

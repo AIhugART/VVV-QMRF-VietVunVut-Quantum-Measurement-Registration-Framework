@@ -1,0 +1,2782 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+  11pt,
+]{article}
+\usepackage{xcolor}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{newunicodechar}
+
+% --- Greek letters ---
+\newunicodechar{Δ}{\ensuremath{\Delta}}
+\newunicodechar{Σ}{\ensuremath{\Sigma}}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{β}{\ensuremath{\beta}}
+\newunicodechar{δ}{\ensuremath{\delta}}
+\newunicodechar{η}{\ensuremath{\eta}}
+\newunicodechar{θ}{\ensuremath{\theta}}
+\newunicodechar{ι}{\ensuremath{\iota}}
+\newunicodechar{μ}{\ensuremath{\mu}}
+\newunicodechar{π}{\ensuremath{\pi}}
+\newunicodechar{ρ}{\ensuremath{\rho}}
+\newunicodechar{σ}{\ensuremath{\sigma}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{φ}{\ensuremath{\varphi}}
+\newunicodechar{χ}{\ensuremath{\chi}}
+\newunicodechar{ψ}{\ensuremath{\psi}}
+
+% --- Math operators ---
+\newunicodechar{⟨}{\ensuremath{\langle}}
+\newunicodechar{⟩}{\ensuremath{\rangle}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{∉}{\ensuremath{\notin}}
+\newunicodechar{⊥}{\ensuremath{\perp}}
+\newunicodechar{↦}{\ensuremath{\mapsto}}
+\newunicodechar{∐}{\ensuremath{\coprod}}
+\newunicodechar{≠}{\ensuremath{\neq}}
+\newunicodechar{≅}{\ensuremath{\cong}}
+\newunicodechar{⊕}{\ensuremath{\oplus}}
+\newunicodechar{⊗}{\ensuremath{\otimes}}
+\newunicodechar{⊆}{\ensuremath{\subseteq}}
+\newunicodechar{∀}{\ensuremath{\forall}}
+\newunicodechar{∃}{\ensuremath{\exists}}
+\newunicodechar{∅}{\ensuremath{\emptyset}}
+\newunicodechar{⟺}{\ensuremath{\Longleftrightarrow}}
+\newunicodechar{−}{\ensuremath{-}}
+\newunicodechar{∧}{\ensuremath{\wedge}}
+\newunicodechar{∪}{\ensuremath{\cup}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\newunicodechar{≡}{\ensuremath{\equiv}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{↑}{\ensuremath{\uparrow}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{↓}{\ensuremath{\downarrow}}
+\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
+\newunicodechar{′}{\ensuremath{\prime}}
+\newunicodechar{×}{\ensuremath{\times}}
+\newunicodechar{¬}{\ensuremath{\neg}}
+
+% --- Subscripts ---
+\newunicodechar{₀}{\textsubscript{0}}
+\newunicodechar{₁}{\textsubscript{1}}
+\newunicodechar{₂}{\textsubscript{2}}
+\newunicodechar{₃}{\textsubscript{3}}
+\newunicodechar{₄}{\textsubscript{4}}
+\newunicodechar{₅}{\textsubscript{5}}
+\newunicodechar{₆}{\textsubscript{6}}
+\newunicodechar{₇}{\textsubscript{7}}
+\newunicodechar{ₖ}{\textsubscript{k}}
+
+% --- Status indicators ---
+\newunicodechar{✅}{\textbf{[YES]}}
+\newunicodechar{⚠}{\textbf{[WARN]}}
+\newunicodechar{❌}{\textbf{[NO]}}
+
+% --- Sanskrit / Pali diacritics (not covered by T1 inputenc) ---
+\newunicodechar{ḥ}{\d{h}}
+\newunicodechar{ṃ}{\d{m}}
+\newunicodechar{ṅ}{\.{n}}
+\newunicodechar{ṇ}{\d{n}}
+\newunicodechar{ṣ}{\d{s}}
+
+% --- Combining characters ---
+\newunicodechar{̂}{\^{}}
+
+% --- Miscellaneous ---
+\newunicodechar{–}{--}
+\newunicodechar{—}{---}
+\newunicodechar{·}{\textperiodcentered}
+\newunicodechar{²}{\textsuperscript{2}}
+\newunicodechar{°}{\textdegree}
+\newunicodechar{§}{\S}
+\newunicodechar{─}{---}
+\newunicodechar{️}{}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub:
+https://github.com/AIhugART/; Facebook:
+https://www.facebook.com/xuanviet
+
+\section{When Does a Physical Interaction Become a Valid Registered
+Measurement?}\label{when-does-a-physical-interaction-become-a-valid-registered-measurement}
+
+\subsection{A VVV-QMRF Registration-Layer Framework with the K9\_E Class
+C Testable Hypothesis and an Experimental Specification for Extended
+Wigner's
+Friend}\label{a-vvv-qmrf-registration-layer-framework-with-the-k9_e-class-c-testable-hypothesis-and-an-experimental-specification-for-extended-wigners-friend}
+
+\textbf{Working Paper v3.0} \emph{(promoted from draft 2026-05-28 ---
+all phases P1-P7 complete)} \textbf{Author:} Viet Nguyen Xuan
+(VietVunVut) \textbf{Affiliation:} Independent Researcher, Vietnam
+\textbf{Contact:} viet@vvvqmrf.com \textbar{} https://vvvqmrf.com
+\textbf{Repository:}
+https://github.com/AIhugART/VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework
+\textbf{Date:} 2026-05-28 \textbf{Status:} Working paper. All formal
+claims are Class D (proposed) or Class C (conjecture/qualified) unless
+stated otherwise. Critique is explicitly invited. \textbf{Plan
+reference:}
+\texttt{papers/paper\_003/VVV-QMRF\_Working\_Paper\_v3.0\_plan.md}
+\textbf{Base version:} v2.0
+(\texttt{papers/Testable\_Prediction\_Section/.../VVV-QMRF\_Working\_Paper\_v2.0.md})
+
+\begin{quote}
+\textbf{DISCLAIMER:} VVV-QMRF is independent personal research, not
+Standard Quantum Mechanics, not peer-reviewed, and not experimentally
+confirmed. K9\_E (P9) is classified \textbf{Class C (qualified)}:
+structurally testable but empirically unconfirmed. Evidence is real but
+ambiguous; noise as an alternative explanation cannot be ruled out (v30
+noise sensitivity analysis FAIL). Confirmation or rejection requires a
+purpose-designed K9-S12 photonic Extended Wigner's Friend experiment.
+VVV-QMRF does not replace Standard QM, revise the Born rule, or invoke
+consciousness. Full boundary protocol: \texttt{DISCLAIMER.md}. Formal
+definitions:
+\texttt{documents/research\_documents/project\_vvv\_qmrf\_class\_c/06\_references/VVV\_QMRF\_Definitions.md}.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Abstract}\label{abstract}
+
+Standard quantum mechanics specifies, via postulate P3, that a
+measurement of observable A on state \textbar ψ⟩ yields eigenvalue aₖ
+with probability \textbar⟨aₖ\textbar ψ⟩\textbar². What P3 does not
+specify is \emph{when} a physical interaction constitutes a valid
+registered measurement event. This silence generates the von Neumann
+chain problem --- every measuring apparatus becomes entangled with the
+system it measures, with no postulate indicating where this chain
+terminates --- and leaves the Heisenberg cut formally undefined.
+
+This paper proposes VVV-QMRF (VietVunVut Quantum Measurement
+Registration Framework): a registration-layer extension of quantum
+mechanics grounded in Buddhist Pramāṇa epistemology
+(Dignāga--Dharmakīrti tradition). The framework introduces a K-side
+registration space K, structurally separate from the physical Hilbert
+space H (K ≠ H), and proposes a six-condition test for valid registered
+measurement. These six conditions formalize when a physical interaction
+crosses from the ρ-side into the K-side as a self-certified,
+validity-bearing registration event. Applied to Extended Wigner's Friend
+(EWF) scenarios, this yields the K-side incommensurability conjecture:
+K\_F ⊥\_K K\_W holds when a joint registration space K\_joint is
+structurally required but cannot satisfy all six conditions
+simultaneously for both observers.
+
+The K-side registration space is axiomatized via eight frozen
+registration-logic axioms (K1--K8, Layer 1) and nine updatable bridge
+theorems (T1--T9, Layer 2). K1 defines the K-state carrier set
+(five-tuple: M, o, cert, t, V); K2 imposes a strict total temporal
+order; K3 formalizes self-certification; K4 assigns default validity; K5
+governs invalidation and cross-registration contradiction; K6 defines
+cross-registration authority; K7 formalizes registration process closure
+(provisional → final validity); K8 guarantees validity preservation
+under cross-space embeddings. Layer 2 extends this structure with bridge
+theorems T1--T9, including K5\_prospective (a conservative
+pre-instantiation evaluation mode required for probability assignment),
+K7\_trace (a closure transition record), and D\_enc (a
+transition-encoding semantic definition). T4-H --- the N-observer
+colimit existence hypothesis --- has been verified as a full theorem
+across all four steps (RCA 4.74/5, 2026-05-28), upgrading the
+three-observer prediction to Class C.
+
+K9\_E is the probability postulate (Postulate P9) motivated by the
+K-space architecture. It is not a theorem derivable from K1--K8 alone
+--- the core axioms define structural properties (registration,
+validity, incommensurability) but do not uniquely determine a
+probability rule. K9\_E fills this gap as P9: P(o\textbar K) = Tr(E\_o
+ρ) · (1 − β·K\_ctx), where β ∈ {[}0,1{]} is a single free parameter and
+K\_ctx is the fraction of contextual observer registrations in
+prospective incommensurability with the current registration. At β = 0,
+K9\_E reduces exactly to the Born rule. Six of the eight terms in K9\_E
+are entirely new concepts not present in Standard QM. The proposed
+experimental specification (K9-S12 Modified Bong Protocol --- single
+waveplate at angle α = 31°) predicts Genuine LF 1 = +0.0891 (8.6σ),
+δ⟨A₁B₂⟩ = −0.0355 (20.8σ), and figure of merit FOM = 8.6; this proposal
+was submitted to arXiv as a separate experimental child paper
+(paper\_002, 2026-05-27).
+
+\textbf{Empirical status (Class C qualified):} A genuine non-circular
+fit to raw Proietti et al.~(2019) data yields β = 0.598, visibility V =
+0.939, Δχ² = 5.35 (2.31σ) in favor of K9\_E over quantum mechanics with
+uniform visibility. However, a v30 noise sensitivity analysis returned
+FAIL: the noise threshold for evidence robustness is 0.10 σ RMS (well
+below the 3.0 σ threshold for PASS). Random noise at any magnitude
+produces Δχ² ≥ 5.35 in approximately 50\% of realizations due to K9\_E's
+directional sensitivity and the small sample of four data points. The
+A0B0 setting alone drives 80\% of the Δχ² improvement. The 2.31σ signal
+reflects model flexibility, not confirmed physical suppression.
+Adversarial tests (4/4 PASS) and operationalizability gates (3/3 PASS)
+confirm K9\_E's structural robustness, but empirical confirmation
+remains open and requires the K9-S12 photonic EWF experiment with
+dedicated noise characterization.
+
+This paper presents three logically independent projects under a one-way
+motivation chain. \textbf{Project A} (BE↔QM Comparative Mapping)
+provides a 30-node, 39-edge comparative framework between Buddhist
+Pramāṇa epistemology and quantum measurement --- an interpretive
+framework that motivated the registration-layer architecture but does
+not itself constitute evidence for that architecture. \textbf{Project B}
+(VVV-QMRF Conceptual Framework) develops the formal K-space
+axiomatization (K1--K8, Layer 1 frozen) and bridge theorem suite
+(T1--T9, Layer 2 updatable), including the conjectured
+structure-preserving map φ: K → B(H) with necessary conditions N₁--N\_T
+(Class D supporting conjecture). \textbf{Project C} (K9\_E Testable
+Hypothesis) is the scientifically falsifiable claim: the K9\_E
+probability postulate (P9) produces predictions structurally different
+from Standard QM (δ\_S ≠ 0 when β \textgreater{} 0), avoids the
+Frauchiger--Renner paradox via K5 V\_prov mechanism, and is falsifiable
+via the K9-S12 Modified Bong Protocol. A→B→C is a one-way motivation
+chain, not a logical derivation. A null K9\_E result falsifies Project C
+but does not invalidate Projects A or B.
+
+VVV-QMRF does not replace Standard Quantum Mechanics. It does not revise
+postulates P1--P4 or the Born rule (K9\_E recovers Born exactly at β =
+0). It does not invoke consciousness. It does not claim Buddhist
+epistemology proves quantum mechanics. All formal claims are classified
+by evidence level; classification criteria are stated in the project's
+formal definitions document. Falsification requires a photonic EWF
+experiment with the K9-S12 single-waveplate protocol or equivalent.
+Critique is explicitly invited.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{1. The Registration Layer
+Gap}\label{the-registration-layer-gap}
+
+\subsubsection{1.1 What Quantum Mechanics
+Specifies}\label{what-quantum-mechanics-specifies}
+
+Standard quantum mechanics is built on four postulates:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{P1 (State):} A physical system is represented by a density
+  operator ρ ∈ D(H).
+\item
+  \textbf{P2 (Observables):} Physical quantities are represented by
+  self-adjoint operators A on H.
+\item
+  \textbf{P3 (Measurement):} Measurement of A on state \textbar ψ⟩
+  yields eigenvalue aₖ with probability \textbar⟨aₖ\textbar ψ⟩\textbar²,
+  after which the state updates to the corresponding eigenstate.
+\item
+  \textbf{P4 (Dynamics):} Between measurements, the state evolves
+  unitarily via the Schrödinger equation.
+\end{itemize}
+
+P3 specifies what outcome appears and with what probability. P3 does not
+specify when a physical interaction counts as a measurement, what
+structural conditions distinguish a measurement from a non-measurement
+interaction, or what stops the measurement chain. This is the
+registration layer gap.
+
+\subsubsection{1.2 The Von Neumann Chain
+Problem}\label{the-von-neumann-chain-problem}
+
+Von Neumann (1932) observed that if apparatus A1 measures system S, A1
+becomes entangled with S. If apparatus A2 then measures A1, A2 becomes
+entangled with A1+S. No postulate of standard QM specifies where this
+chain terminates. Decoherence (Zurek 2003) explains why superpositions
+become effectively classical at the macroscopic scale, but it does not
+explain when a physical interaction constitutes a registration event in
+the sense of a definite recorded outcome. The von Neumann chain problem
+is a registration-layer problem, not a decoherence problem.
+
+\subsubsection{1.3 The Heisenberg Cut}\label{the-heisenberg-cut}
+
+Copenhagen quantum mechanics (Bohr 1935; Heisenberg 1958) assigns
+measurement authority to ``the classical apparatus'' without formally
+defining what makes an apparatus classical, why it has registration
+authority, or what structural conditions produce a definite outcome.
+VVV-QMRF addresses both problems by introducing a registration layer K,
+separate from the physical layer ρ, and proposing formal conditions for
+valid registration events within K. The K1--K8 axioms (§4) formalize
+this registration layer structurally.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{2. The K-side Registration
+Space}\label{the-k-side-registration-space}
+
+\subsubsection{2.1 Layer Separation}\label{layer-separation}
+
+VVV-QMRF introduces a strict separation between two layers:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Physical layer (ρ-side):} Physical states, observables, and
+  dynamics as described by Standard QM. This layer is not modified.
+\item
+  \textbf{Registration layer (K-side):} The space of registration
+  events, recording conditions, and validity states. K ≠ H. K-side
+  structure does not alter ρ-side dynamics.
+\end{itemize}
+
+\subsubsection{2.2 Minimal K-state}\label{minimal-k-state}
+
+A registration event is represented by a minimal K-state tuple:
+
+\begin{verbatim}
+k = ⟨M, o, cert, t, V⟩
+\end{verbatim}
+
+The K-side registration space K is the collection of such tuples
+produced by a registering system R over time. Section §4 formalizes this
+minimal K-state as the K1--K8 axiom set.
+
+\subsubsection{2.3 Source: Buddhist Pramāṇa Epistemology (Project
+A)}\label{source-buddhist-pramux101ux1e47a-epistemology-project-a}
+
+The registration-layer architecture is structurally derived from
+Buddhist Pramāṇa epistemology (Dignāga, 5th century; Dharmakīrti, 7th
+century). The structural extraction concerns: \textbf{Svasaṃvedana}
+(self-certifying cognition, source for K3), \textbf{Arthakriyā}
+(validity as functional success, source for K4/K7), and
+\textbf{Anumāna/Pratyakṣa} (inference and perception as distinct
+registration modes). This is Project A: a comparative interpretive
+framework. Project A motivates Project B via one-way structural
+inspiration; it does not constitute empirical evidence for the K-space
+architecture or K9\_E.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{3. The Valid Registered Measurement
+Test}\label{the-valid-registered-measurement-test}
+
+\subsubsection{3.1 The Six Conditions}\label{the-six-conditions}
+
+\textbf{Interaction X is a valid registered measurement for registering
+system R if and only if:}
+
+\begin{verbatim}
+Condition 1 (Physical):    X occurs at the physical ρ-side.
+Condition 2 (Admission):   X is admitted into K-side as M_X for system R.
+Condition 3 (Process):     M_X ∈ R ordered by registration time.          [K2, E6]
+Condition 4 (Self-cert):   σ_R(M_X) = 1 intrinsically within K_R.         [K3, E1]
+Condition 5 (Validity):    V(M_X) = 1 by default upon admission.           [K4, E7]
+Condition 6 (Non-invalid): No later M′ revises V(M_X) to 0.               [K5, K7, E7]
+\end{verbatim}
+
+The cert and V fields are formalized as K3 (self-certification) and
+K4/K5/K7 (default validity and invalidation) in §4.
+
+\subsubsection{3.2 The K-side Stopping
+Proposition}\label{the-k-side-stopping-proposition}
+
+\textbf{Proposition (Class D proposed):} If Conditions 1--6 hold for
+M\_X, no further K-side registration act is required to certify M\_X.
+The von Neumann registration regress terminates at M\_X on the K-side
+without modifying ρ-side dynamics. Condition 4 (self-certification)
+provides the formal property that Copenhagen assigns to ``classical
+apparatus'' without definition.
+
+\subsubsection{3.3 Observer-Indexed
+Self-Certification}\label{observer-indexed-self-certification}
+
+For multi-observer scenarios: σ\_R(M) = 1 iff M occurred as a K-side
+registration event of R, determined intrinsically within K\_R, not by
+any M′ ≠ M and not by any R′ ≠ R. The independence σ\_F(M\_F) ⊥
+σ\_W(M\_W) is formalized in K3 (§4.1).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{4. K-Space Architecture: Axioms K1--K8 and Layer
+2}\label{k-space-architecture-axioms-k1k8-and-layer-2}
+
+This section presents the formal axiomatization of the K-side
+registration space. The axioms and bridge theorems are the structural
+backbone of VVV-QMRF and the foundation on which K9\_E (§5) and the EWF
+incommensurability result (§6) rest.
+
+\begin{quote}
+\textbf{Scope boundary (v2.4 §0.6 audit):} The K-space axiomatization in
+this section is \textbf{purely structural}. It contains zero probability
+equations, zero numerical values, and zero experimental data. K9\_E (§5)
+is a separate probability postulate (P9) that is \textbf{not derivable
+from K1--K8 alone} --- the axioms define structural properties
+(registration, validity, incommensurability) but do not uniquely
+determine a probability rule. Data fitting (§7) is a separate empirical
+analysis. This three-layer separation is architectural: K1--K8
+(structure) → K9\_E (postulate) → data fitting (empirical).
+\end{quote}
+
+The authoritative peer-synced source is
+\texttt{documents/research\_documents/meta\_architecture/K\_Space\_Axiomatization.md}
+(canonical) and
+\texttt{documents/research\_documents/project\_vvv\_qmrf\_class\_c/01\_axiomatization/K\_Space\_Axiomatization.md}
+(working copy), both v2.4.
+
+\subsubsection{4.1 Layer 1 (Frozen): Axioms
+K1--K8}\label{layer-1-frozen-axioms-k1k8}
+
+Layer 1 contains eight registration-logic axioms whose text is frozen
+unconditionally. K1--K4 and K8 carry no Level 4 semantic dependencies.
+K5, K6, and K7 have conditional semantic dependencies on Level 4 scope
+(when they fire / when closure occurs) but their text is frozen
+regardless of Level 4 changes.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Axiom
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Core function
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+BE lineage
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Class
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{K1} & Carrier Set & K\_R = set of 5-tuples k = ⟨M, o, cert, t,
+V⟩; cert = 1 for all k ∈ K\_R (admission invariant); t-injectivity:
+distinct events have distinct timestamps & Pramāṇa --- cognition as
+structured event: act, object, self-awareness, result, validity & C \\
+\textbf{K2} & Temporal Order & (K\_R, \textless\_R) is strict total
+order (chain): k₁ \textless\_R k₂ iff t(k₁) \textless{} t(k₂); discrete:
+no K-side registration identity between consecutive events &
+Kṣaṇabhaṅgavāda --- momentariness; registration time is discrete within
+K\_R & D \\
+\textbf{K3} & Self-Certification & cert(k) = σ\_R(M) ∈ \{0,1\}
+determined intrinsically within K\_R; independent of any R′ ≠ R;
+observer-indexed independence & Svasaṃvedana --- self-certifying
+cognition: a cognition certifies its own occurrence without a
+second-order cognition & D \\
+\textbf{K4} & Default Validity & V(k) = 1 upon instantiation for
+¬isNull(k); V(k) = 0 for null events (isNull: o = ∅ ∧ ΔI = 0); V is
+provisional until K7 closure & Svataḥ prāmāṇya --- intrinsic validity by
+default; arthakriyā (causal efficacy) & D \\
+\textbf{K5} & Invalidation & V(k₁) → 0 iff ∃k₂ later in K2 order, k₂ ⊥
+k₁ in shared C\_K, k₂ has Auth(K6); fires only when requires\_K\_joint =
+1; pre-closure reversible, post-closure absolute & Parataḥ prāmāṇya ---
+invalidity detected extrinsically; bādhaka pramāṇa & D \\
+\textbf{K6} & Cross-Reg. Authority & Auth(k₂ → k₁, C\_K) = 1 iff: both
+in same C\_K; V(k₂) = 1; k₁ ∈ scope(D\_joint); non-transitive across
+distinct C\_K & Bādhaka pramāṇa --- a contradicting cognition must
+itself be a valid pramāṇa & D \\
+\textbf{K7} & Closure & R closes at t\_close when no pending
+requires\_K\_joint demands remain; V\_prov → V\_final; post-closure: no
+new k, K5 irreversibility absolute, no new D\_joint & Niścaya
+(ascertainment) --- a cognition becomes determinate at cognitive closure
+& D \\
+\textbf{K8} & Embedding Preservation & For embedding i: K\_R → K\_X:
+V\_X(i(k)) = V\_R(k) at t\_embed; all five fields preserved;
+post-embedding V evolves under K\_X's K4--K7 & Anugama --- continuity:
+validity accompanies a cognition into a broader context & D \\
+\end{longtable}
+}
+
+\textbf{Note on K1 claim class:} K1 is classified C because the K-state
+tuple definition is shared with the K9\_E postulate (which is Class C);
+K1 provides K9\_E's domain. K2--K8 remain Class D as structural axioms
+without empirical content.
+
+\subsubsection{4.2 K5\_prospective: Conservative Pre-Instantiation
+Evaluation
+Extension}\label{k5_prospective-conservative-pre-instantiation-evaluation-extension}
+
+K9\_E requires assessing incommensurability \emph{before} an outcome is
+registered --- to compute the suppression factor f\_perp(o) = P(K5 fires
+prospectively on hypothetical outcome o). K5's standard post-hoc mode
+(modifying V of an actual tuple) is not designed for this.
+K5\_prospective is a \textbf{conservative extension} that adds a new
+evaluation target while preserving K5's identical conditions (i)--(iii):
+
+\begin{verbatim}
+K5 (post-hoc):     V(k₁) → 0 iff ∃k₂: k₁ <_R k₂ ∧ k₂ ⊥ k₁ ∧ Auth(k₂→k₁)
+                   Target: actual k₁ ∈ K_R.    Effect: V_prov modified.
+
+K5_prospective:    K5 fires on k_o* iff ∃k_prev: k_prev <_joint k_o*
+                     ∧ k_o* ⊥ k_prev ∧ Auth(k_o*→k_prev)
+                   Target: hypothetical k_o* = ⟨M*, o, cert=1, t*, V=1⟩.
+                   Effect: contributes to f_perp(o) in K9_E only.
+\end{verbatim}
+
+\textbf{Same conditions (i)--(iii). Same structural logic. Different
+target and effect.} K5\_prospective does NOT modify V of any actual
+tuple in K\_R. It has no operational role outside K9\_E. This
+conservative extension was upgraded from ``semantic extension'' to an
+explicit axiom-level clause in v29 (2026-05-23, 3-Round RCA Round 2
+score 4.90/5), resolving assumption {[}A-E1{]} through the T9
+construction theorem.
+
+\textbf{Claim class:} C (conservative extension of K5; same conditions;
+new evaluation mode only).
+
+\subsubsection{4.3 Layer 2 (Updatable): Bridge Theorems
+T1--T9}\label{layer-2-updatable-bridge-theorems-t1t9}
+
+Layer 2 bridge theorems connect K1--K8 to the framework's operational
+definitions (Level 4 predicates: D\_joint, requires\_K\_joint,
+Bridge\_EWF, ODC\_K). Layer 2 is updatable independently of K1--K8.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Theorem
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Core function
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & K\_joint Construction & K\_joint exists as categorical
+colimit of embedding diagram when requires\_K\_joint = 1; order =
+transitive closure of embedded orders + cross-temporal relations & D &
+Pending L4 freeze \\
+\textbf{T2} & ⊥\_K Derivation & K\_A ⊥\_K K\_B iff requires\_K\_joint =
+1 ∧ no admissible K\_joint; traced to K5 conflict (V\_prov forced to 0
+in candidate K\_joint) or K7 lock & D & Pending L4 freeze \\
+\textbf{T3} & Bridge\_EWF & Bridge\_EWF = 1 derivable from K5 in EWF:
+M\_F registers definite o\_F; M\_W registers same lab as superposition;
+no reinterpretation preserves both without changing validity claim;
+conditional on AJVS & D/C & Pending L4 freeze \\
+\textbf{T4} & N-Observer Colimit & K\_joint(R₁,\ldots,R\_N) exists as
+colimit for N ≥ 2 when pairwise AdmJoint + global commutativity hold;
+⊥\_K non-transitive in general & D & \textbf{T4-H THEOREM 4/4
+(2026-05-28)} \\
+\textbf{T5} & K\_joint Associativity & K\_joint(K\_joint(A,B),C) ≅
+K\_joint(A,B,C) as K1--K8-preserving isomorphism; conditional on T4-H &
+D & T4-H resolved; L4 freeze pending \\
+\textbf{T6} & Decoherence Update & Decoherence-induced ρ-side change
+produces K-side registration-state update when Conditions 1--6 hold & D
+& Updatable \\
+\textbf{T7} & IRB Scope Propagation & Intrinsic Relational Binding
+(entanglement) between R\_i and R\_j induces requires\_K\_joint = 1
+under specific conditions & D & Updatable \\
+\textbf{T8} & K5\_prospective Frequency Bridge & f\_perp =
+E{[}I(K5\_prospective fires){]} = fraction of K\_ctx with prospective ⊥;
+derives K9\_E suppression term structurally; eliminates assumption
+{[}A-E2{]} & C & Structural derivation from K5p \\
+\textbf{T9} & K\_ctx Construction & K\_ctx = \{φ\_ij(k\_j) ∈ K\_joint :
+k\_j ∈ K\_\{R\_j\}, requires\_K\_joint = 1, temporally compatible\};
+φ\_ij = canonical K8-constrained T1 embedding; eliminates {[}A-E1{]} via
+5 lemmas (L1-L5) & C & L1--L5 proven \\
+\end{longtable}
+}
+
+\textbf{T4-H THEOREM (4/4, 2026-05-28, RCA 4.74/5):} All four steps
+verified: - Step 1: C\_\{K-space\} satisfies category axioms (identity,
+composition, associativity). - Step 2: K\_colim = (∐\_i
+K\_i)/\textasciitilde{} constructed; all five fields well-defined via
+lexicographic t-assignment and embedding-time V snapshot; 5/5
+verification gates PASS. - Step 3: K1--K8 preserved through quotient
+construction via T-PRES Lemma + T-REP Corollary (K2 acyclicity resolved)
++ V monotone dynamics. - Step 4: Universal property verified:
+u({[}k,i{]}) := f\_i(k) is well-defined (diagram compatibility + T-REP),
+K8-preserving, and unique.
+
+T4-H is no longer a hypothesis. T4 conclusions hold for all N ≥ 2. The
+three-observer prediction (§10) is upgraded from Class C-conditional to
+Class C. T1 (N=2 constructive) remains independently valid without
+invoking the colimit universal property.
+
+\subsubsection{4.4 K7\_trace and D\_enc: Canonical Layer 2 (v2.4,
+2026-05-27)}\label{k7_trace-and-d_enc-canonical-layer-2-v2.4-2026-05-27}
+
+\textbf{K7\_trace --- Closure Transition Record:} A conservative
+extension of K7. Defines Δ\_closure(k) := V\_prov(k) − V\_final(k) at
+t\_close. Records the transition magnitude (0 or 1) without modifying V
+or creating new tuples. Claim class: C-canonical. Promoted from BB-VVV
+local origin to canonical Layer 2 by RCA 4.77/5.
+
+\textbf{D\_enc --- Transition-Encoding Registration Act:} A semantic
+definition (parent: K7\_trace). Enc(M\_aware, k\_F) = 1 iff o(M\_aware)
+depends counterfactually on Δ\_closure(k\_F). Pattern: same as
+K5\_prospective (binary classification of hypothetical act). Claim
+class: C-canonical.
+
+\textbf{Four canonical consumers of K7\_trace (cross-validation of
+architectural status):}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Consumer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Usage
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T\_BB V3 Step 1 (BB-VVV) & Δ\_closure as V\_prov substitute post-closure
+(Baumann-Brukner 2024) & §9.1 --- T\_BB Class C conditional \\
+D\_enc & Parent for Enc predicate & Canonical Layer 2 \\
+3-OBS hierarchical registration transition & T4-H THEOREM unlocks Class
+C upgrade for 3-observer prediction & §10 --- Class C (2026-05-28) \\
+FR-VVV avoidance chain Step 2 & Frauchiger-Renner K5→K6→V=0 path;
+K7\_trace scenario-agnostic across B\&B and FR & §9.2 --- V\_FR2 PASS
+(2026-05-28) \\
+\end{longtable}
+}
+
+The four-consumer canonical status confirms K7\_trace is an
+architectural element, not a single-use construct.
+
+\subsubsection{4.5 K-Space and Buddhist Pramāṇa: One-Way Motivation, Not
+Empirical
+Evidence}\label{k-space-and-buddhist-pramux101ux1e47a-one-way-motivation-not-empirical-evidence}
+
+The BE lineage entries in §4.1 record the structural inspiration for
+each axiom. This is Project A's role in VVV-QMRF: a one-way motivation
+from Pramāṇa theory's analysis of valid cognition to K-space's analysis
+of valid registration.
+
+\textbf{What this does NOT mean:} - Buddhist epistemology does not prove
+K1--K8. - K1--K8 are not derived from Buddhist texts; they are derived
+from the registration-layer problem posed by Standard QM. - Project A's
+30-node, 39-edge BE↔QM comparative mapping is a separate independent
+project (see §12.3 for the A→B→C independence statement). - A result
+that falsifies K9\_E does not falsify Buddhist epistemology, the BE↔QM
+mapping, or the K-space architecture.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{5. K9\_E: Probability Postulate
+(P9)}\label{k9_e-probability-postulate-p9}
+
+\begin{quote}
+\textbf{ERRATUM note (from Phase 8 source document, 2026-05-23):} This
+section was formerly titled ``K9\_E Formal Derivation.'' K9\_E is
+\textbf{NOT derived from K1--K8}. It is a \textbf{POSTULATE} --- a
+probability assignment rule motivated by K-space structure (⊥\_K,
+K\_ctx) but not uniquely determined by K1--K8 axioms. This distinction
+is load-bearing: the entire §5 must be read as proposing P9, not proving
+it.
+\end{quote}
+
+\subsubsection{5.1 Why K1--K8 Alone Do Not Determine a Probability
+Rule}\label{why-k1k8-alone-do-not-determine-a-probability-rule}
+
+The eight axioms of Layer 1 define the structural properties of the
+K-side registration space: what tuples are admitted (K1), how they are
+ordered (K2), how self-certification works (K3), how default validity is
+assigned (K4), how cross-registration contradiction fires (K5), what
+counts as authority for invalidation (K6), when the registration process
+closes (K7), and how validity is preserved under embedding (K8).
+
+Nowhere in K1--K8 is there a formula that maps K-state tuples to
+real-valued probabilities. The axioms determine:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Which} registration events are valid (cert = 1, V = 1)
+\item
+  \emph{When} one event invalidates another (K5 conditions)
+\item
+  \emph{How} events embed across K-spaces (K8)
+\end{itemize}
+
+They do not determine \emph{how much probability} to assign to each
+outcome. Multiple distinct probability functions are consistent with the
+K1--K8 structure. In particular, the Born rule P(o) = Tr(E\_o ρ) is
+consistent with K1--K8 (with β = 0, the K-space constraints are
+satisfied trivially). But so is any function that respects the V-gate (V
+= 0 → no probability), the isNull-gate (isNull(k) → no probability), and
+normalizes over the outcome space.
+
+K9\_E fills this gap by adding a specific probability assignment rule as
+\textbf{Postulate P9}, motivated by the K-space incommensurability
+structure (K5\_prospective, T8, T9) but not derivable from it. This is
+analogous to how the Born rule P3 in Standard QM is an irreducible
+postulate of the theory --- it is not derivable from P1 (state), P2
+(observables), or P4 (dynamics).
+
+\subsubsection{5.2 The K9\_E Equation}\label{the-k9_e-equation}
+
+\textbf{Postulate P9 (K9\_E Probability Postulate):}
+
+\begin{verbatim}
+P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)]
+                  ─────────────────────────────────────────────────
+                                    Z_E(k_i)
+
+where:
+  f_perp(o, k_i, K_ctx) = |{k_j ∈ K_ctx : K5_prospective fires on k_o* vs k_j}|
+                           ────────────────────────────────────────────────────────
+                                              |K_ctx|
+
+  K_ctx(k_i, Exp) = {φ_ij(k_j) ∈ K_joint : k_j ∈ K_{R_j},
+                     requires_K_joint(R_i, R_j) = 1,
+                     temporally compatible with k_i}        [T9]
+
+  Z_E(k_i) = Σ_{o'} Tr(E_{o'} ρ_i) · [1 − β · f_perp(o')]  [normalization]
+
+  β ∈ [0, 1)  — single free parameter (suppression strength)
+\end{verbatim}
+
+\textbf{Born rule limit (exact, not approximate):}
+
+K9\_E reduces to the Born rule exactly under any of the following
+equivalent conditions:
+
+\begin{verbatim}
+P(o|k) = Tr(E_o ρ)   iff any of:
+
+  (i)   β = 0                  [suppression OFF — K-space has no effect on P]
+  (ii)  K_ctx = ∅              [no contextual observers — f_perp undefined → 0 by convention]
+  (iii) f_perp(o) = 0 ∀ o     [all outcomes compatible — no prospective K5 firing]
+  (iv)  Single observer N=1   [implies K_ctx = ∅ → (ii)]
+\end{verbatim}
+
+For condition (i): β = 0 → {[}1 − 0·f\_perp{]} = 1 for all o → Z\_E = Σ
+Tr(E\_o ρ) = 1 → P = Tr(E\_o ρ). Standard single-observer laboratory
+experiments have N = 1 (condition iv) and therefore K9\_E is
+observationally equivalent to Standard QM in all non-EWF contexts.
+
+\subsubsection{5.3 Eight-Term Provenance: What Is New in
+K9\_E}\label{eight-term-provenance-what-is-new-in-k9_e}
+
+K9\_E assembles eight structural components. Six of these eight terms
+are entirely new concepts not present in Standard QM. This table records
+the provenance of each term --- it is a traceability record, not a
+derivation proof.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Term
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Definition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+In Standard QM?
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & \texttt{Tr(E\_o\ ρ\_i)} & Born rule probability (POVM formulation)
+& \textbf{Standard QM} & ✅ \\
+T2 & \texttt{β} & Suppression strength, β ∈ {[}0,1) & \textbf{Free
+parameter} --- the single adjustable parameter of K9\_E; analogous to
+coupling constants (α, G, g) in physics & ❌ \textbf{NEW} \\
+T3 & \texttt{f\_perp(o,\ k\_i,\ K\_ctx)} & Fraction of contextual
+registrations prospectively incommensurable with outcome o &
+\textbf{K5\_prospective + T8} --- structural derivation from binary
+K5/K6 primitives (T8-H1: fraction form is uniquely forced) & ❌
+\textbf{NEW} \\
+T4 & \texttt{C(o\_i,\ o\_j)} & Compatibility map: 1 if outcomes are
+QM-orthogonal (incompatible), 0 otherwise & \textbf{K-space
+construction} from ρ\_joint at setup, stored as K-side lookup & ❌
+\textbf{NEW} \\
+T5 & \texttt{K\_ctx(k\_i,\ Exp)} & Set of contextual K-states from other
+observers via T9 morphism + temporal compatibility & \textbf{T9 + K2}
+--- K\_ctx is a theorem, not an assumption (L1--L5 in T9) & ❌
+\textbf{NEW} \\
+T6 & \texttt{Z\_E(k\_i)} & Normalization: Σ\_\{o'\} Tr(E\_\{o'\}
+ρ\_i)·{[}1−β·f\_perp(o'){]} & Modified from QM (Standard QM
+auto-normalizes; K9\_E suppression breaks auto-normalization, requiring
+explicit Z) & ⚠️ \textbf{MODIFIED} \\
+T7 & \texttt{V(k)\ =\ 0\ →\ no\ P} & Bhrānti gate: invalid registrations
+receive no probability & \textbf{K4 + K5 → PP-1 v2} --- grounded in BE
+concept bhrānti (erroneous cognition) & ❌ \textbf{NEW} \\
+T8 & \texttt{isNull(k)\ →\ no\ P} & Anupalabdhi gate: null events (o =
+∅, ΔI = 0) receive no probability & \textbf{K4 isNull guard} ---
+grounded in BE concept anupalabdhi (non-apprehension) & ❌
+\textbf{NEW} \\
+\end{longtable}
+}
+
+\textbf{Summary:} Of eight terms in K9\_E: 1 from Standard QM (T1: Born
+rule), 1 modified from QM (T6: normalization), \textbf{6 entirely new}
+(T2--T5, T7, T8). The four original K9\_E construction assumptions
+({[}A-E1{]}--{[}A-E4{]}) are fully resolved: {[}A-E1{]} ELIMINATED (T9,
+5 lemmas), {[}A-E2{]} ELIMINATED (T8/T8-H1), {[}A-E3{]} RECLASSIFIED as
+free parameter β, {[}A-E4{]} BE-anchored. \textbf{Net: 0 orphaned
+assumptions, 1 free parameter (β).}
+
+\subsubsection{5.4 K9\_E Is a Postulate, Not a
+Theorem}\label{k9_e-is-a-postulate-not-a-theorem}
+
+\textbf{This is the most important boundary statement in this section.}
+
+K9\_E is \textbf{Postulate P9} --- a proposed probability assignment
+rule added to the VVV-QMRF framework alongside K1--K8. It is not
+derivable from K1--K8 alone. The axioms define structural properties
+(registration, validity, incommensurability) but do not uniquely
+determine a probability rule.
+
+The relationship between K1--K8 and K9\_E is the same as the
+relationship between P1, P2, P4 (state, observables, dynamics) and P3
+(Born rule) in Standard QM: the structural postulates define the
+mathematical space, but the probability rule is an additional postulate
+with its own empirical motivation.
+
+\textbf{What K1--K8 do:} Define the K-space structural constraints
+(carrier, order, certification, validity, invalidation, authority,
+closure, embedding). Supply the structural vocabulary used in K9\_E
+(K5\_prospective, T8, T9). Constrain the form of a probability rule
+(V-gate via T7, isNull-gate via T8), but do not determine β or the
+specific suppression formula.
+
+\textbf{What K9\_E adds:} A specific probability assignment rule
+P(o\textbar K) with a single free parameter β. The suppression term
+f\_perp is structurally motivated by K5\_prospective incommensurability
+and formally derived (via T8, T9) to have the fraction form --- but the
+\emph{presence} of the suppression term (i.e., that β ≠ 0 in nature) is
+a postulate, not a derivation.
+
+\textbf{Consequence:} K9\_E is falsifiable (β = 0 recovers Born exactly;
+any measured β ≠ 0 confirms K9\_E; K9-S12 protocol provides the
+definitive test). K1--K8 are not individually falsifiable --- they are
+structural definitions of the registration layer.
+
+\subsubsection{5.5 Distinguishability from Standard
+QM}\label{distinguishability-from-standard-qm}
+
+When β \textgreater{} 0, K9\_ctx ≠ ∅, and f\_perp is outcome-dependent,
+K9\_E produces predictions structurally different from Standard QM.
+
+\textbf{Distinguishability condition:} δP(o) = P\_\{K9E\}(o) − Tr(E\_o
+ρ) ≠ 0 iff ALL of:
+
+\begin{verbatim}
+  (I)   β > 0
+  (II)  K_ctx ≠ ∅   (requires_K_joint = 1 for at least one observer pair)
+  (III) ∃ o, o' : f_perp(o) ≠ f_perp(o')
+\end{verbatim}
+
+Condition (III) is critical: if f\_perp is constant across outcomes, the
+suppression factor {[}1 − β·f\_perp{]} is a uniform multiplier that
+cancels in the normalized ratio P/Z\_E → Tr(E\_o ρ). This is the PP-2 v2
+cancellation insight: K9\_E must suppress \emph{differentially} across
+outcomes to produce an observable signal.
+
+In EWF scenarios with Bell-State Measurement (BSM), the compatibility
+map C(o\_F, o\_W) is outcome-dependent (some (o\_F, o\_W) pairs are
+compatible, others are incommensurable), producing outcome-dependent
+f\_perp and therefore a genuine δP ≠ 0.
+
+\textbf{Theoretical magnitude (CHSH, β = 0.5):} δ\_S = −0.055. This is a
+\emph{theoretical} value --- the predicted deviation in the CHSH
+parameter for Proietti-type 2-observer EWF. At β = 0.9, δ\_S = −0.179 (≈
+2.4σ detection horizon). No empirical detection of δ\_S has been
+achieved to date. See §7 for empirical status.
+
+\textbf{3-observer amplification (Class C, T4-H THEOREM):} The
+3-observer K\_ctx is larger, producing an amplification factor of
+approximately 11× relative to 2-observer. Predicted δ\_M3 = −0.223 at β
+= 0.3 (illustrative, conditional only on K9\_E postulate P9 --- T4-H is
+now THEOREM, §10).
+
+\subsubsection{5.6 Projects B and C Are Independent
+Claims}\label{projects-b-and-c-are-independent-claims}
+
+The φ-map conjecture (§11, Project B) and K9\_E (Project C) are
+logically independent:
+
+\textbf{Project B (φ-map):} Conjectures the existence of a
+structure-preserving map φ: K → B(H). Derives necessary conditions
+N₁--N\_T. Provides φ-conditional scope boundaries for existing QM
+interpretations. This conjecture is Class D and concerns the
+\emph{formal relationship} between K-space and the algebra of bounded
+operators. It does not make testable predictions about measurement
+statistics.
+
+\textbf{Project C (K9\_E):} Proposes a probability postulate P9 with a
+single free parameter β. Makes testable predictions (K9-S12). Can be
+confirmed or falsified by experiment. K9\_E's empirical status is
+entirely independent of whether φ exists.
+
+\textbf{Independence in both directions:} - A proof that φ: K → B(H)
+exists (or does not exist) would not confirm or falsify K9\_E. - A
+K9-S12 experimental confirmation of K9\_E (β ≠ 0 measured) would not
+prove φ exists. - A K9-S12 null result (β = 0 measured) would falsify
+K9\_E but would not falsify the φ-map conjecture or the K-space
+architecture.
+
+This independence is architectural: Project B concerns the structural
+embedding of K into H; Project C concerns the probability assignment
+within K. They share the K-space vocabulary (K1--K8, T1--T9) but their
+claims are logically disjoint.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{6. Extended Wigner's Friend and K-side
+Incommensurability}\label{extended-wigners-friend-and-k-side-incommensurability}
+
+\subsubsection{6.1 The Extended Wigner's Friend
+Setup}\label{the-extended-wigners-friend-setup}
+
+In the Extended Wigner's Friend scenario (Frauchiger and Renner 2018;
+Brukner 2018), two observer pairs interact with a shared quantum system:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Friend F} measures quantum system S inside a sealed
+  laboratory. From F's perspective, a definite outcome o\_F is recorded:
+  σ\_F(M\_F) = 1.
+\item
+  \textbf{Wigner W} models the entire laboratory (F + S) as a unitarily
+  evolving quantum state, then performs an interference measurement M\_W
+  on F's laboratory.
+\end{itemize}
+
+Standard QM describes both perspectives as valid without providing a
+formal account of their structural incompatibility. This is where the
+registration layer offers new structure.
+
+\subsubsection{6.2 Applying the Six Conditions to Each
+Observer}\label{applying-the-six-conditions-to-each-observer}
+
+\textbf{Friend F:}
+
+\begin{verbatim}
+X_F → M_F ∈ R_F         [Condition 3, K2]
+σ_F(M_F) = 1             [Condition 4, K3]
+V_F(M_F) = 1             [Condition 5, K4]
+No M′ contradicts M_F    [Condition 6, K5/K7]
+→ M_F is a valid registered measurement within K_F.
+\end{verbatim}
+
+\textbf{Wigner W:}
+
+\begin{verbatim}
+X_W → M_W ∈ R_W         [Condition 3, K2]
+σ_W(M_W) = 1             [Condition 4, K3]
+V_W(M_W) = 1             [Condition 5, K4]
+No M′ contradicts M_W    [Condition 6, K5/K7]
+→ M_W is a valid registered measurement within K_W.
+\end{verbatim}
+
+Both observers satisfy the six conditions independently within their own
+K-sides. The question is whether a joint registration space K\_joint can
+contain both K\_F and K\_W as jointly valid entries.
+
+\subsubsection{6.3 The requires\_K\_joint
+Predicate}\label{the-requires_k_joint-predicate}
+
+\textbf{Definition (admissible joint K-side registration space, Class D
+proposed):}
+
+\begin{verbatim}
+AdmJoint(K_joint; A, B) = 1
+  iff  there exist embeddings i_A: A → K_joint and i_B: B → K_joint such that:
+    (i)   embeddings preserve act, outcome, cert, registration time/order, validity;
+    (ii)  self-certification remains intrinsic to each embedded act;
+    (iii) Conditions 1-6 remain satisfied for each embedded structure;
+    (iv)  no required registration-state update in K_joint invalidates either embedded
+          structure while both are still claimed as jointly valid;
+    (v)   K_joint does not import an external certifier as source of self-certification.
+\end{verbatim}
+
+\textbf{Definition (requires\_K\_joint predicate, Class D proposed):}
+
+\begin{verbatim}
+requires_K_joint(A, B) = 1
+  iff  A and B are each valid or provisionally valid within their own K-side
+  AND  A and B are brought under a shared validity demand D_joint
+  AND  D_joint requires both to be assessed as parts of the same registration target,
+       history, counterfactual claim, or validity claim
+  AND  truth of D_joint cannot be evaluated while leaving A and B in fully independent K-sides
+  AND  preserving D_joint requires a K_joint in which A and B are jointly valid.
+
+requires_K_joint(A, B) = 0
+  iff  no shared D_joint is imposed, or D_joint can be evaluated without embedding A and B
+       into one candidate K_joint.
+\end{verbatim}
+
+\textbf{Operational sufficient conditions for requires\_K\_joint = 1:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Condition A (Wigner interference):} W performs an interference
+  measurement on F's lab; M\_W registers a superposition description
+  while M\_F registers a definite outcome for the same lab. →
+  requires\_K\_joint = 1.
+\item
+  \textbf{Condition B (Direct comparison):} F and W directly compare
+  records and a logical contradiction is detectable. →
+  requires\_K\_joint = 1.
+\item
+  \textbf{Condition B2 (LF constraint):} An LF inequality requires
+  F-side and W-side claims to have simultaneous cross-observer validity.
+  → requires\_K\_joint = 1.
+\end{itemize}
+
+\textbf{Operational sufficient conditions for requires\_K\_joint = 0:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Condition C (No interference, no comparison):} W does not
+  perform interference on F's lab. → requires\_K\_joint = 0.
+\item
+  \textbf{Condition D (Separable state):} Shared state is separable;
+  M\_F and M\_W act on non-overlapping subsystems. → requires\_K\_joint
+  = 0.
+\item
+  \textbf{Condition E (Independent bookkeeping):} Records stored
+  together but no joint validity demand imposed. → requires\_K\_joint =
+  0.
+\end{itemize}
+
+\subsubsection{6.4 Formal Definition of K-side
+Incommensurability}\label{formal-definition-of-k-side-incommensurability}
+
+**Definition (K-side incommensurability relation ⊥\_K, Class D
+proposed):**
+
+\begin{verbatim}
+A ⊥_K B
+  iff  requires_K_joint(A, B) = 1
+  AND  there exists no admissible K_joint such that:
+       (i)   A and B both embed into K_joint,
+       (ii)  their respective self-certifications are preserved,
+       (iii) their respective validity conditions remain satisfied, and
+       (iv)  no required registration-state update in K_joint invalidates
+             either A or B while both are still claimed as jointly valid.
+\end{verbatim}
+
+\textbf{Definition (K-side comparison context C\_K):} A minimal shared
+frame in which two registration acts are evaluated for compatibility.
+C\_K requires: (a) both acts admitted into the same comparison domain;
+(b) both indexed to the same registration target; (c) comparison does
+not presuppose joint validity. C\_K is strictly weaker than AdmJoint.
+
+\textbf{Definition (cross-registration authority):} In C\_K, M\_later
+has valid cross-registration authority w.r.t. M\_earlier iff: (a) both
+belong to same C\_K; (b) V(M\_later) = 1; (c) M\_later's content
+directly concerns the same registration target as M\_earlier; (d) the
+comparison architecture does not arbitrarily privilege one observer.
+
+\textbf{Boundary clauses:} - ⊥\_K does not assert that either physical
+event fails to occur on the ρ-side. - ⊥\_K does not mean either
+observer's outcome is false within its own K-side. - ⊥\_K is not
+equivalent to a registration-null event Null\_K(e). - ⊥\_K applies only
+when both sides are valid/provisionally valid within their own K-sides.
+
+\subsubsection{6.5 K\_joint Failure and K-side
+Incommensurability}\label{k_joint-failure-and-k-side-incommensurability}
+
+\textbf{Bridge lemma (Class D proposed; application status: Class C):}
+
+\begin{verbatim}
+Bridge_EWF(D_joint; M_F, M_W) = 1
+  iff  D_joint requires F-side and W-side registrations to be evaluated as jointly valid
+       parts of one laboratory registration history
+  AND  M_F registers a definite friend-side outcome o_F
+  AND  M_W registers the same laboratory as coherent superposition (no definite o_F as W-side claim)
+  AND  LF/no-go comparison requires both claims to support one cross-observer validity constraint
+  AND  no reinterpretation inside K_joint preserves both without changing the validity claim
+       of at least one side.
+
+Bridge_EWF(D_joint; M_F, M_W) = 1 → M_W ⊥ M_F.
+\end{verbatim}
+
+\textbf{Relativization defense (rejected):} A relativized K\_joint
+hosting only meta-descriptions (``within K\_F, M\_F registered
+\textbar h⟩'') does not satisfy D\_joint. D\_joint requires joint
+validity of the \emph{original} registration claims, not
+meta-descriptions of them. Relativizing the contents abandons D\_joint
+rather than satisfying it.
+
+\textbf{Conditional lemma (K\_joint failure, Class D proposed):} Under
+requires\_K\_joint = 1, Bridge\_EWF = 1, and valid cross-registration
+authority, no admissible K\_joint exists such that σ\_F(M\_F) = 1,
+σ\_W(M\_W) = 1, V(M\_F) = 1, and V(M\_W) = 1 simultaneously hold. K\_F
+⊥\_K K\_W follows. \textbf{Claim class of Step 4:} C/D boundary ---
+conditional on full Bridge\_EWF semantic proof.
+
+\subsubsection{6.6 The Falsifiable Prediction and
+ODC\_K}\label{the-falsifiable-prediction-and-odc_k}
+
+VVV-QMRF conjectures that configurations satisfying requires\_K\_joint =
+1 are the natural candidates for LF-level violation when the quantum
+state is sufficiently entangled.
+
+\textbf{Operational data criterion (ODC\_K, Class C proposed):}
+
+\begin{verbatim}
+ODC_K(Data, Cfg) = K_joint_fails
+  iff  Cfg satisfies requires_K_joint = 1 via D_joint and Bridge_EWF,
+  AND  no joint registration model J_K satisfying:
+       (i)   jointly valid F-side and W-side registrations,
+       (ii)  Conditions 1-3, 5, 6 preserved (Condition 4 by construction),
+       (iii) AdmJoint condition (iv): no required invalidation while both are jointly claimed,
+       (iv)  observed probability distribution reproduced within predeclared tolerance τ,
+       (v)   not reclassifying a Bridge_EWF config as mere independent bookkeeping.
+\end{verbatim}
+
+τ must be fixed before data collection; ODC\_K is sensitive to the
+choice of τ.
+
+\textbf{Compatibility checks with existing data:}
+
+\emph{Proietti et al.~(2019):} The three correlators with
+requires\_K\_joint = 1 (⟨A₁B₁⟩, ⟨A₁B₀⟩, ⟨A₀B₁⟩) contribute positively to
+the violated expression S = 2.407; the one term with requires\_K\_joint
+= 0 (⟨A₀B₀⟩) is subtracted. This allocation is structurally compatible.
+The VVV-QMRF reading is a term-role interpretation of an aggregate
+inequality, not a per-configuration experimental confirmation.
+
+\emph{Bong et al.~(2020):} Two-regime structure:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+μ regime
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Reported result
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+VVV-QMRF reading
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+μ = 0.80-0.81 & Bell non-LF violated; LF inequalities NOT violated &
+Regime 1: requires\_K\_joint = 1 active, entanglement insufficient for
+LF failure \\
+μ ≈ 0.87 & First LF violation (Semi-Brukner) & Transition Regime 1 →
+2 \\
+High μ & All categories violated including Genuine LF & Regime 2:
+K\_joint failure exposed \\
+\end{longtable}
+}
+
+\textbf{Per-facet μ-threshold ODC\_K prediction:}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Facet class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+μ=0.80-0.81
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+High-μ
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Bell non-LF & K\_joint\_fails (violated) & K\_joint\_fails (violated) \\
+Brukner & K\_joint\_exists (not violated) & K\_joint\_fails
+(violated) \\
+Semi-Brukner & K\_joint\_exists (not violated) & K\_joint\_fails
+(violated) \\
+Genuine LF & K\_joint\_exists (not violated) & K\_joint\_fails
+(violated) \\
+\end{longtable}
+}
+
+The prediction hierarchy (Bell non-LF first, then Semi-Brukner, then
+Genuine LF) matches the observed μ-threshold ordering. \textbf{Not yet a
+facet-level confirmation} --- full ODC\_K stage 3 model-fit test has not
+been performed. These are compatibility checks.
+
+\subsubsection{6.7 Connection to K1--K8 and
+K5\_prospective}\label{connection-to-k1k8-and-k5_prospective}
+
+The Level 4 formalism of §6.1--6.6 can now be traced directly to Layer 1
+axioms via the K-space architecture (§4):
+
+\textbf{requires\_K\_joint = K5 precondition:}
+
+\begin{verbatim}
+requires_K_joint(A, B) = 1
+  ⟺  K5 firing precondition met: comparison context C_K exists
+  ⟺  D_joint imposes a shared validity demand on K_F and K_W
+     (K5 formal block: "fires only when requires_K_joint = 1")
+\end{verbatim}
+
+K5 does not fire in isolation --- it fires only when there is a joint
+validity demand. The requires\_K\_joint = 0/1 distinction in §6 is
+precisely the K5 precondition distinction in Layer 1. Every operational
+sufficient condition A--E for requires\_K\_joint maps to whether K5's
+precondition is met.
+
+\textbf{Bridge\_EWF = K5\_prospective evaluation:}
+
+\begin{verbatim}
+Bridge_EWF(D_joint; M_F, M_W) = 1
+  ⟺  K5_prospective fires on hypothetical k_o* vs k_prev = k_F:
+     — k_F <_joint k_o*         [K2 temporal order in K_joint from T1]
+     — k_o* ⊥ k_F within C_K   [K5 registered contradiction, minimal ⊥ definition]
+     — Auth(k_o* → k_F, C_K) = 1  [K6 authority]
+\end{verbatim}
+
+Bridge\_EWF = 1 means exactly that K5\_prospective would fire if W's
+hypothetical registration k\_o* were realized --- the structural bridge
+between Level 4 formalism and Layer 1 axioms. This is the connection
+exploited by T8 to derive f\_perp (§5.3).
+
+\textbf{K7\_trace and K\_joint failure:} When K\_F ⊥\_K K\_W is
+established, K7\_trace records Δ\_closure(k\_F) := V\_prov(k\_F) −
+V\_final(k\_F). The four canonical consumers of K7\_trace (§4.4, §9.3)
+all derive from this same closure event in structurally distinct EWF
+scenarios.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{7. Empirical Status (Class C
+Qualified)}\label{empirical-status-class-c-qualified}
+
+\textbf{Classification:} K9\_E = \textbf{Class C (qualified)} ---
+structurally testable, empirically \textbf{UNCONFIRMED}. Evidence is
+real (a genuine non-circular fit shows 2.31σ improvement over
+QM-uniform-visibility) but ambiguous (noise at any magnitude produces an
+equivalent improvement in \textasciitilde50\% of realizations).
+Confirmation or rejection requires the K9-S12 purpose-designed photonic
+EWF experiment.
+
+\subsubsection{7.1 D1 Proietti: Genuine Non-Circular
+Fit}\label{d1-proietti-genuine-non-circular-fit}
+
+\textbf{Version history (critical):} The Phase 10 data fitting document
+(2026-05-23) identified a \emph{circular fit} error in the earlier Phase
+10 analysis: the ``data'' used were reconstructed as E\_exp = V\_exp ·
+E\_QM, mathematically guaranteeing β = 0 as the best-fit result (a
+tautology, not an empirical finding). The v29 analysis (2026-05-23)
+replaced this with a \textbf{genuine non-circular fit} using raw
+correlator values extracted directly from Proietti et al.~(2019) Figure
+3 (\texttt{Wigner\_figure\_3.md} SOT document).
+
+\textbf{Genuine fit results (raw Proietti Figure 3 data):}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Quantity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Meaning
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+β (best-fit) & \textbf{0.598} & K9\_E suppression parameter at genuine
+fit \\
+V (visibility, fitted) & \textbf{0.939} & Higher than circular-fit V =
+0.854; non-uniform visibility detected \\
+χ²/DOF & 0.670 (DOF = 2) & Good fit quality, p = 0.51 \\
+Δχ² (K9\_E vs QM-uniform-V) & \textbf{5.35} & K9\_E improves fit over QM
+with uniform visibility \\
+σ-significance & \textbf{2.31σ} & Marginal detection level \\
+\end{longtable}
+}
+
+\textbf{Why the raw data differs from reconstructed data:} The raw
+Proietti Figure 3 correlator values (e.g., A0B0 = −0.678) differ
+substantially from reconstructed values (−0.604 in the circular-fit
+analysis). The non-uniform pattern across the four correlators is what
+drives the genuine-fit improvement --- when K9\_E's directional
+suppression is applied, it preferentially reduces some correlators
+(those with high requires\_K\_joint = 1 contribution) over others
+(requires\_K\_joint = 0), producing a better fit than a
+uniform-visibility model.
+
+\textbf{Two K9\_E model variants co-exist} with different calibration
+paths: - \textbf{Additive model} (\texttt{utils/k9e\_predictor.py}): E =
+E\_QM · {[}1 − β·n\_BSM·g\_ctx{]}, g\_ctx ≈ 0.039 (from theoretical δ\_S
+= −0.055 at β = 0.5). - \textbf{Multiplicative model}
+(\texttt{proietti\_raw\_fit.py}): E = E\_QM · {[}1 −
+β·g\_eff{]}\^{}n\_BSM, g\_eff = 0.146 (from PP-4 sanity check). Produces
+larger suppression; used for genuine fit.
+
+The two models agree at first order in β·g but diverge for β
+\textgreater{} 0.3.
+
+\subsubsection{7.2 v30 Noise Sensitivity Analysis:
+FAIL}\label{v30-noise-sensitivity-analysis-fail}
+
+The v30 noise sensitivity analysis (P10-NOISE, 2026-05-24) asked:
+\emph{How large must non-uniform noise be to produce Δχ² ≥ 5.35 by
+chance?}
+
+\textbf{Result:} \textbf{FAIL.} The noise threshold is 0.10 σ RMS ---
+far below the 3.0 σ threshold required for PASS.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Metric
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Value
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Interpretation
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Noise threshold (2σ, B4 Monte Carlo) & \textbf{0.10 σ RMS} & Noise at
+ANY magnitude produces Δχ² ≥ 5.35 in \textasciitilde50\% of
+realizations \\
+PASS threshold & 3.0 σ RMS & Threshold for ``noise ruled out'' \\
+Verdict & \textbf{FAIL} (0.10 \textless\textless{} 3.0) & Non-uniform
+noise cannot be ruled out as explanation \\
+Single-setting fragility (B2) & \textbf{1.85 σ at A0B0} & Only a 1.85σ
+shift at A0B0 eliminates K9\_E advantage \\
+A0B0 contribution to Δχ² & \textbf{80\%} & Nearly the entire K9\_E
+``signal'' is driven by one data point \\
+\end{longtable}
+}
+
+\textbf{What this means:} The 2.31σ signal reflects \textbf{model
+flexibility} (K9\_E has one more degree of freedom than
+QM-uniform-visibility), not confirmed physical K9\_E suppression. With
+only 4 correlator values and K9\_E's directional sensitivity, random
+noise at any magnitude produces a Δχ² ≥ 5.35 improvement approximately
+half the time. The genuine fit improvement is real but not
+distinguishable from a noise artifact with current data.
+
+\textbf{Why this downgraded K9\_E from ``genuine'' to ``qualified'':}
+The v29 upgrade to Class C (genuine) was based on three conditions: (1)
+genuine non-circular fit, (2) K5\_prospective axiom upgrade, (3) T4-H
+Step 1. Conditions (2) and (3) remain valid. Condition (1) still holds
+as a genuine fit, but the noise analysis reveals that the fit evidence
+is insufficient to rule out noise. The v30 P10-NOISE FAIL downgraded the
+empirical sub-condition from ``real evidence'' to ``real but ambiguous
+evidence.'' Class C structural qualification is unchanged; the (genuine)
+→ (qualified) downgrade concerns the empirical confidence level only.
+
+\textbf{Methodology rationale (conservative):} The noise analysis was
+designed to ERR ON THE SIDE OF CAUTION --- a Type I error (falsely
+claiming noise is ruled out) is fatal to project credibility; a Type II
+error (correctly noting that noise cannot be ruled out) is recoverable
+via the K9-S12 experiment.
+
+\subsubsection{7.3 K9E-PAT: CLOSED as
+UNRESOLVABLE}\label{k9e-pat-closed-as-unresolvable}
+
+\textbf{Open item K9E-PAT} asked whether the K9\_E multiplicative
+suppression pattern (predicted 2BSM/1BSM ratio ≈ 2) is confirmed by
+Proietti data.
+
+\textbf{Result:} \textbf{CLOSED as UNRESOLVABLE (v31 RCA 4.92/5).}
+
+The empirical 2BSM/1BSM ratio of −0.78 is not a meaningful test of the
+K9\_E pattern:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The ratio −0.78 is computed from A0B1 + A1B0 avg = −0.0235 divided by
+  A1B1 = +0.0179 --- both are sub-σ residuals (consistent with zero).
+\item
+  The ratio of two near-zero numbers carries no physical information
+  about suppression structure.
+\item
+  Both K9\_E model variants predict suppression ratio ≈ 2: additive
+  (2.000 exactly), multiplicative (1.913). The predicted value ≈ 2 is
+  not discriminating for current data quality.
+\item
+  P10-NOISE already established that 4 data points are insufficient to
+  test any pattern --- A0B0 alone drives 80\% of Δχ².
+\end{enumerate}
+
+The path to pattern confirmation is K9-S12: an alpha-sweep protocol (QWP
+angle 0°--90°) with N = 91,000 events and dedicated noise
+characterization, providing direct 2BSM/1BSM comparison with sufficient
+statistics.
+
+\subsubsection{7.4 Adversarial Tests (4/4 PASS) and Operationalizability
+Gates (3/3
+PASS)}\label{adversarial-tests-44-pass-and-operationalizability-gates-33-pass}
+
+Despite the empirically qualified status, K9\_E passes all structural
+validity tests:
+
+\textbf{Adversarial tests (4/4 PASS --- Phase 9):} 1. Born limit
+recovery: β = 0 → P = Tr(E\_o ρ) exactly (verified analytically and
+numerically). 2. Single-observer reduction: N = 1 → K\_ctx = ∅ → K9\_E =
+Born (verified). 3. V-gate (Bhrānti): V = 0 events receive no
+probability (verified). 4. isNull-gate (Anupalabdhi): null events (o =
+∅) receive no probability (verified).
+
+\textbf{Operationalizability gates (3/3 PASS --- G1/G2/G3, all 5.0/5):}
+- G1: K9\_E is operationally distinguishable from Standard QM (δ\_S ≠ 0
+when β \textgreater{} 0 and K\_ctx ≠ ∅): PASS. - G2: K9\_E has a
+predeclared falsification condition (K9-S12 protocol, §8): PASS. - G3:
+K9\_E's free parameter β is measurable in principle (Proietti-type EWF
+experiment): PASS.
+
+\textbf{Important boundary:} Adversarial tests and operationalizability
+gates confirm that K9\_E is \emph{structurally consistent and testable}.
+They do not confirm it is empirically correct. The 4/4 PASS result
+establishes that K9\_E is a well-formed scientific hypothesis; the
+P10-NOISE FAIL establishes that current empirical evidence is
+insufficient to confirm it.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{8. K9-S12 Modified Bong
+Protocol}\label{k9-s12-modified-bong-protocol}
+
+This section summarizes the experimental specification for the first
+dedicated test of the K9\_E probability postulate. The full protocol is
+presented in the experimental child paper (paper\_002, arXiv submitted
+2026-05-27). Section §8 provides the VVV-QMRF-level framing; the
+photonic implementation details are in paper\_002.
+
+\subsubsection{8.1 The Equatorial Gap: Why No Prior Test
+Exists}\label{the-equatorial-gap-why-no-prior-test-exists}
+
+\textbf{Proposition 1 (Equatorial Cancellation Theorem, paper\_002 §3):}
+Every published optical EWF experiment --- Proietti et al.~(2019) and
+Bong et al.~(2020) --- used Superobserver measurement settings at the
+Bloch sphere equatorial plane (θ = π/2). At θ = π/2, the squared basis
+overlaps \textbar⟨b\textbar d⟩\textbar² = 1/2 for all outcome pairs (b,
+d). This makes the overlap-dependent suppression factor f\_perp constant
+across all outcomes --- the suppression cancels in the normalization
+Z\_E and P\_K9E reduces exactly to the Born rule. This is not a special
+property of K9\_E; it holds for \textbf{any} overlap-only deformation of
+the form P′ = P\_QM · g(\textbar⟨b\textbar d⟩\textbar²) / Z.
+
+\textbf{Consequence:} Both published optical EWF experiments are
+geometrically blind to the entire overlap-only class of deformations,
+including K9\_E. No published experiment has varied the polar angle θ.
+The K9-S12 protocol is the first proposal to break this fixed point.
+
+\textbf{Signal structure:} The K9\_E signal δ⟨AB⟩(θ) vanishes
+identically at θ = π/2 and is generically non-zero otherwise:
+
+\begin{verbatim}
+f_perp(+1, H) − f_perp(−1, H) = −cos θ                           [Eq. 11, paper_002]
+
+At θ = π/2:  cos(π/2) = 0  →  f_perp constant  →  δ⟨AB⟩ = 0     [equatorial null]
+At θ = 31°:  cos(31°) ≈ 0.857  →  f_perp outcome-dependent  →    [non-zero signal]
+             δ⟨AB⟩ ≠ 0 for β > 0
+\end{verbatim}
+
+This vanishing-at-equator structure is a \textbf{genuine observable}
+(Lemma 1, paper\_002 §3.2): it cannot be eliminated by any unitary
+relabeling of the Superobserver's measurement basis.
+
+\subsubsection{8.2 Single-QWP Design and
+Predictions}\label{single-qwp-design-and-predictions}
+
+\textbf{Experimental modification:} A single quarter-wave plate (QWP) is
+re-inserted into the Bong et al.~(2020) apparatus, tilting the
+Superobserver measurement from θ = π/2 to θ = 31°. No other hardware
+change is required. N = 91,000 coincidences per setting (same as Bong
+2020).
+
+\textbf{Why θ = 31° (near-optimal):} Grid search over θ ∈ {[}0°, 90°{]}
+shows θ = 35° yields FOM = 8.8 vs.~8.6 at θ = 31°. The broad plateau
+means the exact optimum is non-critical: θ = 31° is near-optimal, not
+uniquely optimal (paper\_002 v94 update). The key criterion is that θ ≠
+π/2 --- any angle away from the equator probes the signal.
+
+\textbf{Quantitative predictions at θ = 31° (exact numerical
+computation):}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Observable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prediction
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Significance
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Role
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Gen LF 1 (Genuine LF Facet 1) & \textbf{+0.0891} & \textbf{8.6σ} &
+Confirms LF violation is preserved at θ = 31° \\
+δ⟨A₁B₂⟩ = ⟨A₁B₂⟩\emph{\{θ=31°\} − ⟨A₁B₂⟩}\{θ=π/2\} & \textbf{−0.0355} &
+\textbf{20.8σ} & Core K9\_E signal --- non-zero iff K9\_E with β
+\textgreater{} 0 \\
+Minimum detectable β at 5σ & \textbf{0.07} & --- & Search sensitivity \\
+Figure of Merit (FOM) & \textbf{8.6} & --- & Combined LF + K9\_E
+signal \\
+\end{longtable}
+}
+
+\textbf{Scope boundary (paper\_002 §2.3):} These predictions assume the
+overlap-only class (Level 0). The experiment tests whether nature
+exhibits overlap-dependent deformation; it does not test the full K9\_E
+framework. Broader deformation classes (Level 1:
+density-matrix-dependent; Level 2: multi-partite; Level 3:
+non-geometric) lie outside Proposition 1's scope and require independent
+experimental designs.
+
+\textbf{Loophole status:} Under fair-sampling (η ≈ 0.87), K9-S12 is a
+\textbf{loophole-open screening test}. A positive result (δ⟨A₁B₂⟩ ≠ 0 at
+θ = 31°) requires independent verification including θ-sweeps
+(paper\_002 §8.2). A null δ⟨AB⟩ across a full θ-sweep would falsify the
+overlap-only class.
+
+\textbf{Falsification conditions:} K9\_E (overlap-only class) is
+falsified if δ⟨AB⟩ = 0 at θ = 31° within predeclared statistical
+tolerance, confirmed by θ-sweep.
+
+\subsubsection{8.3 Why IBM Quantum Was
+Rejected}\label{why-ibm-quantum-was-rejected}
+
+The IBM Quantum approach to K9\_E testing was evaluated and rejected
+(v31 RCA 4.92/5) on the basis of a \textbf{double category error}:
+
+\textbf{Error 1 (registration structure):} K9\_E requires a K-space
+registration structure --- tuples k = ⟨M, o, cert, t, V⟩ with K3
+self-certification (cert = 1 intrinsic), K4 default validity (V = 1 upon
+admission), K5 invalidation (V → 0 via cross-registration
+contradiction), and K7 closure (V\_prov → V\_final). Gate-model QPUs
+implement unitary circuits with binary qubit states. There is no concept
+of a K-side registration tuple, K\_R carrier set, or validity field V ∈
+\{0,1\} on a QPU. K-space does not exist as a computational object on
+IBM Quantum hardware.
+
+\textbf{Error 2 (EWF scenario):} K9\_E specifically requires an Extended
+Wigner's Friend configuration --- a Friend observer registering a
+definite outcome within a sealed laboratory, and a Superobserver
+performing an interference measurement on the entire Friend+system
+composite. Gate-model circuits simulate quantum evolution but do not
+implement the structural architecture of multiple registering systems
+with K\_joint construction and cross-registration authority. The
+``Friend'' and ``Superobserver'' roles in K9\_E are K-space structural
+roles, not qubit register labels.
+
+\textbf{Conclusion:} K9\_E's testable predictions are predictions about
+photonic EWF statistics. Only an optical EWF apparatus implementing the
+K9-S12 protocol (or equivalent) constitutes a valid test platform.
+
+\subsubsection{8.4 Relationship to
+paper\_002}\label{relationship-to-paper_002}
+
+paper\_002 (``Have Optical Wigner's Friend Experiments Been Blind to a
+Geometric Degree of Freedom?'') was submitted to arXiv 2026-05-27 as an
+independent experimental child paper. The VVV-QMRF framing in §8.1--8.3
+provides the K-space motivation for the experimental protocol; the
+photonic implementation details, statistical analysis, and Supplemental
+materials are in paper\_002.
+
+paper\_002 is self-contained as a physics paper: it presents the
+Equatorial Cancellation Theorem (Proposition 1) and single-waveplate
+protocol without requiring the VVV-QMRF K-space framework. The K9\_E
+postulate (§5) provides one theoretical motivation for the
+overlap-dependent deformation parameter β; paper\_002 frames β as a
+phenomenological search parameter analogous to Standard Model Extension
+(SME) coefficients.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{9. Connections to Baumann-Brukner and
+Frauchiger-Renner}\label{connections-to-baumann-brukner-and-frauchiger-renner}
+
+This section documents how two specific papers in the EWF literature
+connect to VVV-QMRF's K-space structure. These are \textbf{Layer 4
+(Class D) structural compatibility assessments} --- they show that
+VVV-QMRF's machinery can be applied to the scenarios in these papers,
+not that the papers empirically confirm K9\_E.
+
+\subsubsection{9.1 Baumann \& Brukner (2024): T\_BB Class C
+Conditional}\label{baumann-brukner-2024-t_bb-class-c-conditional}
+
+\textbf{Paper reference:} Baumann, V. and Brukner, Č. (2024). ``Wigner's
+friend as a rational agent.'' {[}arXiv reference; fit plan source:
+\texttt{09\_Fitting\_Baumann\_Brukner/BB\_VVV\_fit\_plan.md} v1.4{]}
+
+\textbf{Scenario:} A Friend F measures a quantum system inside a sealed
+lab; a Wigner W performs either a coherent (interference) measurement or
+a projective (read-out) measurement on the lab. B\&B show that a
+rational agent (W) cannot consistently assign memory to F after a
+coherent measurement --- the ``no-awareness'' result.
+
+\textbf{VVV-QMRF compatibility analysis
+(BB\_VVV\_compatibility\_section.md v2.1):}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Verification
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Finding
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+V1: K5 ↔ B\&B q₀₀ \textless{} 0 condition & ⚠️ \textbf{PARTIAL (F4
+triggered)} & R\_BB (near-readout, x ≈ 0) ≠ R\_K5 (interference, x ≈
+π/4). B\&B's no-valid-joint-model fires near readout; K5 fires at
+interference. Structurally \textbf{different failure modes} --- not
+mathematically equivalent. F4 finding: at x = π/4 (maximum
+interference), q₀₀ = 0.5 \textgreater{} 0 always, while
+requires\_K\_joint = 1 and K5 fires. \\
+V2: K7 closure ↔ B\&B memory change Δp & ✅ \textbf{PASS} & K7 closure
+magnitude Δp = \textbar1 − 2α²\textbar{} · sin²(2x) / 2 matches B\&B
+memory change with identical functional form. Verified at 5 test points
+including readout (x≈0), maximal interference (x=π/4), and transition
+region. \\
+T\_BB (Option A) & ✅ \textbf{Class C (conditional)} & No-awareness
+result derived via K5 → K6 → V=0 chain using K7\_trace + D\_enc. G1
+CLOSED by K7\_trace §18 + D\_enc §19. Computational verification PASS
+(\texttt{bb\_vvv\_t\_bb\_verification.py}). \\
+T\_BB' (Option C) & ✅ \textbf{CLOSED (superseded)} & V1 F4 finding
+falsifies T\_BB' Step 1 premise (R\_BB = R\_K5 was required). T\_BB
+(Option A) computationally verified; T\_BB' superseded. \\
+\end{longtable}
+}
+
+\textbf{P2-C (π/8 first-principles):} The compatibility check at angle x
+= π/8 yields Δp = \textbar1 − 2α²\textbar{} / 4 exactly --- a
+first-principles derivation from K7 closure (no free parameters). This
+is \textbf{exact} for all α² ≠ 0.5 (symmetric state degeneracy at α² =
+0.5 confirmed as expected: Δp = 0).
+
+\textbf{T\_BB derivation chain:}
+
+\begin{verbatim}
+K5_prospective: W's coherent measurement → requires_K_joint(K_F, K_W) = 1
+K7 closure:     K_F closes at t_close(K_F)
+K7_trace:       Δ_closure(k_F) := V_prov(k_F) − V_final(k_F) ∈ {0,1}
+D_enc:          Enc(M_aware, k_F) = 1 iff o(M_aware) counterfactually depends on Δ_closure
+K5 fires:       requires_K_joint(M_aware, M_W) = 1 → V(M_aware) → 0
+Result:         Friend F cannot retain awareness (V=0) → T_BB no-awareness result
+\end{verbatim}
+
+\textbf{Key boundary:} V1's F4 finding does not invalidate T\_BB. T\_BB
+uses K7\_trace + D\_enc (Layer 2), not the R\_BB = R\_K5 equivalence.
+What F4 establishes is that B\&B's no-valid-joint-model condition and
+VVV-QMRF's K5 incommensurability capture \textbf{structurally different
+aspects} of the Wigner's Friend problem --- they are compatible
+frameworks analyzing different failure modes.
+
+\subsubsection{9.2 Frauchiger \& Renner (2018): FR Paradox Avoided via
+K5
+V\_prov}\label{frauchiger-renner-2018-fr-paradox-avoided-via-k5-v_prov}
+
+\textbf{Paper reference:} Frauchiger, D. and Renner, R. (2018).
+``Quantum theory cannot consistently describe the use of itself.''
+\emph{Nature Communications} 9, 3711.
+
+\textbf{Scenario:} Four agents (F1, F2, W1, W2) in nested EWF setups. FR
+show that under three assumptions (Q: universality, C: consistency, S:
+single-outcome), agents reach mutually contradictory predictions. The
+contradiction requires that V(k\_F1) = 1 AND V(k\_W1) = 1 simultaneously
+--- both the Friend's registration and the Wigner's registration are
+valid at the same time under the same cross-observer validity demand.
+
+\textbf{VVV-QMRF FR avoidance chain:}
+
+\begin{verbatim}
+FR contradiction requires:   V(k_F1) = 1  AND  V(k_W1) = 1  simultaneously
+                                              ↓
+K5 fires at t₂:              K_F1 ⊥_K K_W1 within comparison context C_K
+                              (W1's coherent measurement ≡ requires_K_joint = 1)
+                                              ↓
+K6 Authority:                 Auth(K_W1 → K_F1) = 1
+                              → V(k_F1) → 0  (K5 post-closure irreversible)
+                                              ↓
+Premise fails:                V(k_F1) = 1 AND V(k_W1) = 1 NEVER simultaneously satisfied
+                                              ↓
+FR contradiction:             AVOIDED — K5 gates the joint validity condition at source
+\end{verbatim}
+
+\textbf{VVV-QMRF recast of FR assumption (S):} The FR argument requires
+F1's outcome and W1's outcome to belong to the same validity domain
+(joint cross-observer fact). K5 ⊥\_K prevents this: they are
+structurally incommensurable registrations. VVV-QMRF does not
+\emph{reject} (S); it \emph{scopes} (S) to within a single K-context.
+The FR contradiction never assembles within VVV-QMRF's structural
+machinery because the joint validity demand is blocked by K5 before it
+can be evaluated.
+
+\textbf{V\_FR2 verification (script-verified, 2026-05-28):} K7\_trace
+records Δ\_closure(k\_F1) := V\_prov(k\_F1) − V\_final(k\_F1) at W1's
+coherent measurement. This is \textbf{structurally identical} to T\_BB
+Step 2 in B\&B --- the same K7\_trace definition applies unchanged to a
+different scenario with different agents and a different contradiction
+mechanism. \texttt{fr\_vvv\_k7trace\_consumer\_verification.py} v1.0:
+OVERALL PASS.
+
+\textbf{T\_FR status (Class D, blocked by G\_FR2):} A full T\_FR
+(No-Joint-Validity Bridge Theorem) for the 4-agent scenario (F1, F2, W1,
+W2) requires the N=4 K\_joint construction, which depends on T4-H for
+N=4. T4-H is THEOREM for N=2 (T1 constructive) and general N (abstract
+colimit proof, Steps 1-4). The N=4 concrete instantiation has not been
+explicitly verified. A simplified 2-agent version (F1+W1) is feasible
+and structurally established by V\_FR2.
+
+\subsubsection{9.3 K7\_trace + D\_enc: Canonical Layer 2 with Four
+Consumers}\label{k7_trace-d_enc-canonical-layer-2-with-four-consumers}
+
+The V\_FR2 result confirms K7\_trace as a \textbf{scenario-agnostic}
+Layer 2 primitive --- it applies with identical definition across
+structurally distinct scenarios:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Consumer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Scenario
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Role
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T\_BB} (BB-VVV) & Baumann-Brukner (2024): F + W angle sweep &
+V\_prov substitute after K7 closure for T\_BB no-awareness derivation &
+Class C conditional \\
+\textbf{D\_enc} & All scenarios with K7 closure & Parent: Enc(M\_aware,
+k\_F) = 1 iff counterfactual dependence on Δ\_closure & Class
+C-canonical \\
+\textbf{3-OBS} & Three-observer hierarchical EWF & Δ\_closure
+propagation through F1→F2→W hierarchy (§10) & Class C (T4-H verified) \\
+\textbf{FR} (FR-VVV) & Frauchiger-Renner (2018): 4-agent nested EWF &
+V\_FR2: Δ\_closure(k\_F1) after W1's coherent measurement --- blocks FR
+joint validity & Class D (T\_FR blocked by G\_FR2) \\
+\end{longtable}
+}
+
+\textbf{Architectural significance:} K7\_trace being consumed by four
+structurally distinct analyses (B\&B angle-sweep, D\_enc semantic, 3-OBS
+hierarchical, FR nested) confirms it is a legitimate Layer 2 primitive
+--- not a single-use BB-VVV construct. This cross-validation was the
+primary criterion for canonical promotion (RCA 4.77/5, 2026-05-27).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{10. T4-H THEOREM and 3-Observer
+Prediction}\label{t4-h-theorem-and-3-observer-prediction}
+
+\subsubsection{10.1 T4-H: From Hypothesis to Theorem (4/4 Steps,
+2026-05-28)}\label{t4-h-from-hypothesis-to-theorem-44-steps-2026-05-28}
+
+T4-H is the N-observer Colimit Existence Theorem for the category
+C\_\{K-space\}. It states: \emph{for any finite diagram D of K-spaces
+with K1--K8-preserving morphisms, the colimit K\_colim exists and
+satisfies K1--K8.}
+
+T4-H was originally framed as a hypothesis (``T4-H'') because its proof
+required four sequential steps. As of 2026-05-28 all four are verified
+(RCA 4.74/5):
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Step
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Claim
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Key technique
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Step 1 & C\_\{K-space\} is a valid category & Identity morphisms +
+composition + associativity via K8-preserving maps &
+\textbf{VERIFIED} \\
+Step 2 & K\_colim = (∐\_i K\_i)/\textasciitilde{} is constructible &
+Lexicographic t-assignment (SP1), V-snapshot at embedding (SP2),
+transitive closure for \textless\_colim (SP3); 5/5 gates PASS &
+\textbf{VERIFIED} (RCA 4.73/5) \\
+Step 3 & K\_colim satisfies K1--K8 & \textbf{T-PRES Lemma} (all
+morphisms preserve t exactly, resolving K2 acyclicity); K3--K8 verified
+via quotient structure & \textbf{VERIFIED} (RCA 4.74/5, 2026-05-28) \\
+Step 4 & K\_colim satisfies universal property & u({[}k,i{]}) := f\_i(k)
+well-defined (T-REP corollary), K8-preserving, unique &
+\textbf{VERIFIED} (2026-05-28) \\
+\end{longtable}
+}
+
+\textbf{T-PRES Lemma (key to Step 3):} Any morphism f: K\_i → K\_j in
+C\_\{K-space\} satisfies t\_j(f(k)) = t\_i(k) for all k ∈ K\_i. This is
+because K8-preservation requires all five tuple fields (M, o, cert, t,
+V) to be preserved exactly. Consequence: all representatives of any
+equivalence class {[}k, i{]} share the same t value (T-REP Corollary),
+ensuring K2's acyclicity condition holds in K\_colim without cycles.
+
+\textbf{Claim class:} T4-H is now a \textbf{full THEOREM}, not a
+hypothesis or conditional claim. T1 (N=2 constructive) remains
+independently valid without invoking T4-H's universal property. T4, T5
+(K\_joint Associativity) are upgraded accordingly.
+
+\subsubsection{10.2 Upgrade: 3-Observer Prediction from Class
+C-Conditional to Class
+C}\label{upgrade-3-observer-prediction-from-class-c-conditional-to-class-c}
+
+The 3-observer registration transition mechanism
+(\texttt{3observer\_registration\_transition.md}, v1.1, 2026-05-28) was
+previously classified \textbf{Class C-conditional} pending T4-H Steps
+3-4. With T4-H THEOREM confirmed, the conditional gate is resolved.
+
+\textbf{3-observer hierarchical configuration:}
+
+\begin{verbatim}
+Hierarchy: t_F1 < t_F2 < t_W
+
+  F1 measures system S → registers k_F1 in K_{F1}
+  F2 measures F1's lab → registers k_F2 in K_{F2}
+  W (Superobserver) measures joint F1+F2 lab
+     (requires_K_joint = 1; interference measurement)
+\end{verbatim}
+
+The registration transition mechanism traces via four steps:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{H1:} K7\_trace records Δ\_closure(k\_F1) = V\_prov(k\_F1) −
+  V\_final(k\_F1) at t\_close(K\_\{F1\}).
+\item
+  \textbf{H2:} K7\_trace records Δ\_closure(k\_F2) similarly at
+  t\_close(K\_\{F2\}).
+\item
+  \textbf{H3:} D\_enc evaluates: Enc(M\_aware, k\_F1) = 1 iff the
+  post-closure act M\_aware's outcome depends counterfactually on
+  Δ\_closure(k\_F1). In the 3-OBS case, this propagation requires
+  K\_joint for N=3, provided by T4-H.
+\item
+  \textbf{H4:} If Enc = 1 → requires\_K\_joint(M\_aware, M\_W) = 1 → K5
+  fires → V(M\_aware) → 0 → no-awareness result propagates
+  hierarchically.
+\end{itemize}
+
+\textbf{Upgraded classification:}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Component
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prior class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Current class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Condition
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+K7\_trace + D\_enc application & C-conditional & \textbf{Class C} & T4-H
+THEOREM 2026-05-28 \\
+No-awareness propagation (H1-H4) & C-conditional & \textbf{Class C} &
+T4-H THEOREM 2026-05-28 \\
+Numerical prediction δ\_M3 & Illustrative & Illustrative & Conditional
+on K9\_E P9 only (see §10.3) \\
+\end{longtable}
+}
+
+\subsubsection{10.3 3-Observer Numerical Prediction
+(Illustrative)}\label{observer-numerical-prediction-illustrative}
+
+\textbf{Important scope boundary:} The 3-observer \emph{structural
+mechanism} (§10.2) is Class C --- it follows from K-space axioms K1--K8
++ Layer 2 (K7\_trace, D\_enc) + T4-H THEOREM. The 3-observer
+\emph{numerical prediction} (δ\_M3) requires the additional K9\_E
+postulate (P9) --- it is illustrative and conditional on K9\_E.
+
+\textbf{Prediction (conditional on K9\_E P9):}
+
+\begin{verbatim}
+δ_M3 = −0.223  at β = 0.3  (illustrative, not a measurement)
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  3-observer K\_ctx is larger than 2-observer K\_ctx → amplification
+  factor ≈ 11× relative to 2-observer δ\_S.
+\item
+  At β = 0.3, the 2-observer prediction gives δ\_S ≈ −0.020; the
+  3-observer setup predicts δ\_M3 ≈ −0.223.
+\item
+  The amplification arises because K\_ctx(k\_i, Exp) includes two
+  contextual observer registrations instead of one, increasing f\_perp.
+\end{itemize}
+
+\textbf{Dependency chain for numerical prediction:}
+
+\begin{verbatim}
+K7_trace + D_enc (Layer 2, canonical)
+    ↓ mechanism (Class C)
+T4-H THEOREM (N=3 K_joint — resolved)
+    ↓ structural substrate
+K9_E postulate P9 (Class C qualified — not yet confirmed)
+    ↓ probability assignment
+δ_M3 = −0.223 at β=0.3 (illustrative)
+\end{verbatim}
+
+\textbf{Caveat:} β = 0.3 is chosen for illustration (not from a fit to
+3-observer data, which does not yet exist). The true β value, if K9\_E
+is correct, would be determined by a future 3-observer experiment. The
+11× amplification factor itself is structural (from K\_ctx size) and
+holds for any non-zero β, not just β = 0.3.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{11. φ Conjecture: Structure-Preserving Map K → B(H) (Class D
+Supporting)}\label{ux3c6-conjecture-structure-preserving-map-k-bh-class-d-supporting}
+
+\begin{quote}
+\textbf{This section is Class D supporting material --- NOT the central
+claim of v3.0.} The central claims of this paper are the K-space
+architecture (§4), the K9\_E postulate (§5), and the K9-S12 experimental
+specification (§8). The φ conjecture (Project B) is logically
+independent of K9\_E (Project C) --- see §5.6 for the independence
+statement.
+\end{quote}
+
+\subsubsection{11.1 The Conjecture and Its
+Motivation}\label{the-conjecture-and-its-motivation}
+
+\textbf{Conjecture (Class D):} There exists a structure-preserving map
+φ: K → B(H), where B(H) is the algebra of bounded operators on Hilbert
+space H, such that φ encodes the registration-logic properties of
+K-space (K1--K8) in the operator-algebraic language of Standard QM.
+
+\textbf{Motivation:} VVV-QMRF's K-space axiomatizes \emph{what gets
+registered} (registration-logic structure). Standard QM's B(H)
+axiomatizes \emph{what can be measured} (operator-algebraic structure).
+If φ exists, it would formalize the correspondence between registration
+events in K and observable operators in B(H) --- not by identifying K
+with H, but by showing that K's registration-logic has a faithful
+structural image in operator-algebraic language.
+
+\textbf{Phase 1--4 completion (Project B Track B):} The φ-map research
+program has completed four phases: - \textbf{Phase 1:} Target selection
+--- B(H) chosen as codomain with image Im(φ) ⊆ \{P\_o\} ∪ \{0\}
+(projection sub-lattice). Three counter-arguments against B(H) resolved.
+- \textbf{Phase 2:} Necessary conditions N₁--N\_T derived from K1--K8
+and T1--T9 (§11.2). - \textbf{Phase 3:} φ-conditional interpretation
+scope analysis (§12.2). - \textbf{Phase 4:} Open items documented (φ-O2:
+N₆ sufficiency boundary confirmed as fundamental; C2 readiness 8.0/10).
+
+\textbf{Why B(H) as codomain (not C*-algebra, von Neumann algebra, or
+projection lattice):}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Alternative
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Problem
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+P(H) projection lattice & Not an algebra --- K6 authority-composition
+(φ-6) has no natural image \\
+Von Neumann algebra M & Requires specifying which subalgebra --- adds
+unwarranted structural choice \\
+Functor to category C\_obs & Loses concrete B(H) operator intuition;
+abstract for current phase \\
+\textbf{B(H) (chosen)} & Contains all projections P\_o; admits φ-1
+through φ-7' conditions; standard QM home \\
+\end{longtable}
+}
+
+\textbf{EWF connection:} In the EWF scenario, K\_F ⊥\_K K\_W on the
+K-side maps to {[}ι(P\_\{o\_F\}), P\_\{o\_W\}{]} ≠ 0 in B(H) --- the
+familiar non-commutativity of quantum observables. The φ-conditional
+analysis (§12.2) re-frames each interpretation's structural gap as the
+specific necessary condition N\_i it lacks machinery to satisfy.
+
+\subsubsection{11.2 Necessary Conditions N₁--N\_T (Derived from
+K1--K8)}\label{necessary-conditions-nux2081n_t-derived-from-k1k8}
+
+The following necessary conditions must hold for any map φ: K → B(H) to
+qualify as structure-preserving. These are necessary conditions --- not
+sufficient for φ's existence.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Condition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source axiom
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+B(H) encoding
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{φ-1} (Well-Definedness) & K1 & φ: K\_R → B(H) is a total
+function; ∀k ∈ K\_R, φ(k) ∈ B(H) defined & cert(k) = 1 for all k ∈ K\_R
+→ no undefined images \\
+\textbf{φ-2} (Lüders Order) & K2 & k₁ \textless{}\emph{R k₂ maps to
+Lüders update: ρ ↦ P}\{o₂\} · P\_\{o₁\} · ρ · P\_\{o₁\} · P\_\{o₂\}
+(application order from temporal order) & Non-commutativity of
+P\_\{o₁\}, P\_\{o₂\} mirrors non-symmetry of \textless\_R \\
+\textbf{φ-3} (Cert-Reflection) & K3 & φ(k) is determined by k's own
+tuple fields alone; for all R' ≠ R: φ\_R(k) ∉ φ\_\{R'\}(k') & P\_o =
+\textbar o⟩⟨o\textbar{} determined entirely by the registered outcome o
+--- intrinsic \\
+\textbf{φ-4} (Validity-Positivity) & K4 & V(k) = 1 → φ(k) = P\_o ≥ 0,
+φ(k) ≠ 0; V(k) = 0 → φ(k) = 0 & Connects to AOE (Bong 2020): V(k) = 1
+(default validity) → non-zero positive operator \\
+\textbf{φ-5} (Invalidation-Absorption) & K5 & V\_final(k) = 0
+(post-closure irreversible) → φ(k) = 0; P\_o → 0 is irreversible in B(H)
+& Zero operator is an absorbing element: 0·A = A·0 = 0; no recovery
+without additional info \\
+\textbf{φ-6} (Authority-Composition) & K6 & Auth(k₂ → k₁, C\_K) = 1 maps
+to P\_\{o₂\} · P\_\{o₁\} ≠ 0 (non-annihilating composition) & k₂ has
+authority over k₁ only if their projectors are not onto orthogonal
+subspaces \\
+\textbf{φ-7} (Embedding Naturality) & K8 & Diagram commutes: φ\_X(i(k))
+= ι(φ\_R(k)) where ι: B(H\_R) → B(H\_X) is tensor extension & ι(P\_o) =
+P\_o ⊗ 1\_\{H\_extra\} --- standard tensor product inclusion of
+subsystem projector \\
+\textbf{φ-7′} (Closure Finalization) & K7 & φ\_final(k) = φ\_prov(k) at
+t\_close; post-closure φ is fixed; provisional φ\_prov can change
+pre-closure & Fixes the operator image at t\_close --- after that, φ(k)
+= 0 or P\_o cannot change \\
+\textbf{N\_T} (Theorem bridge) & T2, T3 & K\_F ⊥\_K K\_W (K-side) →
+{[}ι(P\_\{o\_F\}), P\_\{o\_W\}{]} ≠ 0 (B(H)-side): non-commutativity as
+image of incommensurability & This is the φ-conditional EWF connection:
+operator non-commutativity is the B(H) image of K-side ⊥\_K \\
+\end{longtable}
+}
+
+\textbf{Derivation status:} N₁--N\_T are derived under the assumption
+that φ exists. They state what φ \emph{must} satisfy; they do not prove
+φ \emph{does} exist. The relationship is: φ exists → N₁--N\_T hold. The
+converse (N₁--N\_T hold → φ exists) remains unproven. Open item φ-O2 (N₆
+sufficiency for K6 authority-composition) is documented as a fundamental
+boundary.
+
+\subsubsection{11.3 K ≠ H Boundary
+Reaffirmed}\label{k-h-boundary-reaffirmed}
+
+A critical architectural boundary: \textbf{φ is a map from K to B(H),
+not an identification K = H.}
+
+Three distinct layers remain separate throughout the φ analysis: -
+\textbf{K (registration layer):} Tuples ⟨M, o, cert, t, V⟩ with
+registration-logic operations (K1--K8). Not a Hilbert space, not a
+probability space. - \textbf{ρ (physical state layer):} Density
+operators ρ ∈ D(H), evolving under Standard QM (P1--P4). Not modified by
+VVV-QMRF. - \textbf{B(H) (observable algebra):} Bounded operators,
+containing projection operators P\_o. The codomain of φ.
+
+φ: K → B(H) maps registration events to operators, but it does not
+collapse K into H. The image Im(φ) ⊆ \{P\_o\} ∪ \{0\} is a small subset
+of B(H) --- φ selects the operators relevant to registration from within
+the full operator algebra. This is the formal expression of K ≠ H:
+K-side validity events map \emph{into} B(H) without being
+\emph{identified with} H.
+
+\textbf{Why this matters:} If K = H were asserted, VVV-QMRF would be
+claiming that every registration event has a direct physical
+correspondent in the Hilbert space --- this would constitute a
+modification of Standard QM. K ≠ H (preserved by φ) ensures VVV-QMRF
+remains a registration-layer analysis rather than a modification of
+quantum dynamics.
+
+\subsubsection{11.4 Class D Supporting
+Status}\label{class-d-supporting-status}
+
+The φ conjecture is Class D: - The \textbf{existence} of φ is not
+proven. No constructive proof has been given that a map satisfying all
+of φ-1 through φ-7', N\_T is well-defined for all K-spaces. - The
+necessary conditions are \textbf{not sufficient}. Satisfying N₁--N\_T
+would be required for φ to exist, but whether it is sufficient is an
+open mathematical question. - \textbf{No empirical prediction} derives
+solely from φ. K9\_E (§5) provides all testable predictions
+independently of φ. - φ is \textbf{not falsified} by a K9\_E null
+result. The φ conjecture concerns the formal relationship K → B(H), not
+the probability assignment P(o\textbar K).
+
+The value of the φ analysis is interpretive: it provides the formal
+language for §12.2 (φ-conditional scope boundaries for existing QM
+interpretations) and maps the VVV-QMRF framework into a notation
+familiar to operator-algebraic quantum mechanics. It is supporting
+infrastructure for the project's long-term formalization goal, not its
+current testable claim.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{12. Positioning Against Existing
+Interpretations}\label{positioning-against-existing-interpretations}
+
+\subsubsection{12.1 Architectural
+Comparison}\label{architectural-comparison}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Interpretation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Response to EWF paradox
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+VVV-QMRF difference
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Copenhagen & WF is ill-posed; classical apparatus required & K3/K4
+formalize why apparatus has registration authority: σ\_R(M) = 1
+intrinsically (no Heisenberg cut needed) \\
+Many-Worlds & All outcomes occur; no paradox & Registration events are
+singular per K-side (K1 cert = 1 invariant); not globally branching \\
+QBism & Facts are agent-relative; no paradox & Agrees on
+agent-relativity; adds formal K-side structure (K1--K8, six conditions)
+that QBism does not supply \\
+Relational QM & Facts are relation-relative; no paradox & Closest
+existing framework; VVV-QMRF adds formal machinery (K3 self-cert, K7
+closure, requires\_K\_joint) that RQM does not \\
+Objective Collapse (GRW) & Physical collapse restores absolute facts &
+VVV-QMRF does not require physical collapse on ρ-side; K5 operates on
+K-side validity, independent of ρ dynamics \\
+\end{longtable}
+}
+
+\textbf{Relation to Relational Quantum Mechanics:} Rovelli (1996) argues
+quantum states are relative to observers. VVV-QMRF adds the formal
+registration-layer structure explaining \emph{why} they are relative:
+σ\_R(M) operates intrinsically within K\_R, independently of K\_\{R′\}.
+K\_F ⊥\_K K\_W is the registration-layer account of Rovelli's
+observer-relativity. This is a genuine extension: VVV-QMRF supplies the
+formal conditions (K3 self-cert, K2 temporal order, K5 invalidation, K7
+closure, requires\_K\_joint predicate) that Relational QM does not.
+
+\subsubsection{12.2 φ-Conditional Scope Boundaries (Class
+D)}\label{ux3c6-conditional-scope-boundaries-class-d}
+
+Section §11 derives necessary conditions N₁--N\_T for any
+structure-preserving map φ: K → B(H). These conditions re-frame each
+architectural gap in §12.1 as a \textbf{φ-conditional scope boundary}:
+the specific condition N\_i that the interpretation lacks the structural
+machinery to satisfy.
+
+\textbf{Scope boundary convention:} ``Lacks the structural machinery for
+N\_i'' means the interpretation does not supply the formal element
+required by N\_i --- not that the interpretation is incorrect within its
+own domain.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Interpretation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Architectural gap (§12.1)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+φ-conditional scope boundary
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+N\_i lacking
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Copenhagen & No formal definition of classical apparatus & Cannot
+construct φ-domain element k = ⟨M, o, cert, t, V⟩ with cert field → φ
+has no defined domain & \textbf{N₃} (cert-reflection, §11.2): cert =
+σ\_R(M) = 1 required to admit k into K\_R \\
+Many-Worlds & No physical observable distinguishes branches & No
+singular admission act per branch → K\_R carrier set underspecified → φ
+total function (N₁) has no well-defined domain & \textbf{N₁}
+(well-definedness, §11.2): φ total requires K\_R well-defined; branching
+leaves carrier set underspecified \\
+QBism & Subjective probability is not a physical quantity & No
+structural V(k) ∈ \{0,1\} field: agent-relative belief is not a binary
+validity predicate → φ cannot satisfy validity-positivity & \textbf{N₄}
+(validity-positivity, §11.2): V(k) = 1 → φ(k) = P\_o ≥ 0 requires V as
+structural field, not degree of belief \\
+Relational QM & No temporal closure event & RQM has relational facts but
+no t\_close → φ\_final cannot be fixed & \textbf{N₇}
+(closure-finalization, §11.2): φ = φ\_final fixed at t\_close requires
+temporal closure boundary absent from RQM \\
+Objective Collapse (GRW) & Collapse on ρ-side only & GRW collapse
+operates on ρ-side state; K-side V: 1→0 irreversible transition not
+formally supplied & \textbf{N₅} (invalidation-absorption, §11.2): K-side
+V-update and post-closure irreversibility not entailed by ρ-side
+collapse \\
+\end{longtable}
+}
+
+\textbf{Status --- Class D:} N₁--N\_T are derived under the assumption
+that φ: K → B(H) exists (§11). This §12.2 analysis means: \emph{if φ
+were to exist, these are the structural elements existing
+interpretations would need to supply.} Neither φ's existence nor the
+empirical correctness of these scope boundaries is asserted. See §13.4
+for the relationship between this φ-conditional analysis and the broader
+architectural constraint framing.
+
+\subsubsection{12.3 Three Logically Independent
+Projects}\label{three-logically-independent-projects}
+
+VVV-QMRF comprises three projects related by a one-way motivation chain.
+This section makes that independence explicit to prevent the critique
+that Buddhist epistemology is post-hoc justification for a physics
+claim.
+
+\textbf{Project A --- BE↔QM Comparative Mapping (interpretive
+framework):} - 30 nodes (N\_BE\_00001--N\_BE\_00030), 39 edges
+(ED\_BE\_00001--ED\_BE\_00039) - Comparative framework between Buddhist
+Pramāṇa epistemology and quantum measurement concepts - Independently
+testable as a comparative-philosophy framework (internal consistency,
+historical accuracy of BE nodes, adequacy of QM node definitions) -
+\textbf{Does NOT constitute evidence for K-space axioms or K9\_E}
+
+\textbf{Project B --- VVV-QMRF Conceptual Framework (formal
+axiomatization):} - K1--K8 frozen Layer 1 axioms; T1--T9 updatable Layer
+2 bridge theorems; φ-map Class D conjecture - Independently testable as
+a formal axiom system (consistency, non-redundancy, expressive power) -
+Motivated by Project A's structural analysis of valid registration, but
+not logically derived from it - \textbf{Does NOT make testable physical
+predictions by itself}
+
+\textbf{Project C --- K9\_E Testable Hypothesis (falsifiable claim):} -
+K9\_E postulate P9 with one free parameter β; Class C (qualified) -
+Falsifiable via K9-S12 Modified Bong Protocol (§8); predicts δ⟨A₁B₂⟩ ≠ 0
+at θ = 31° - Motivated by Project B's K-space structure (K5\_prospective
+→ T8 → f\_perp), but K9\_E is a \emph{postulate} not \emph{derivable}
+from K1--K8 - \textbf{This is the only project with a current
+falsification path}
+
+\textbf{A→B→C: one-way motivation, not logical derivation:}
+
+\begin{verbatim}
+Project A (BE↔QM)  →(motivates)→  Project B (K-space)  →(motivates)→  Project C (K9_E)
+    ↑                                    ↑                                    ↑
+interpretive                          formal                             testable
+framework                          axiomatization                       hypothesis
+\end{verbatim}
+
+Each project is independently falsifiable: - Project A is falsified if
+the BE node definitions are historically inaccurate or the QM node
+definitions mischaracterize Standard QM. - Project B is falsified if
+K1--K8 are internally inconsistent, or if the K-space formalism cannot
+be applied consistently to any EWF scenario. - Project C is falsified if
+δ⟨AB⟩ = 0 at θ = 31° across a full θ-sweep (K9-S12 null result).
+
+\textbf{A null K9\_E result (β = 0 measured by K9-S12) falsifies Project
+C but does not invalidate Project B (the K-space architecture remains
+valid as a formal structure) or Project A (the BE↔QM comparative
+framework stands independently).}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{13. Scope, Limitations, and Open
+Items}\label{scope-limitations-and-open-items}
+
+\subsubsection{13.1 What This Paper Does Not
+Claim}\label{what-this-paper-does-not-claim}
+
+\begin{itemize}
+\tightlist
+\item
+  Does not replace Standard Quantum Mechanics or revise P1--P4.
+\item
+  Does not revise the Born rule or unitary evolution (K9\_E recovers
+  Born exactly at β = 0).
+\item
+  Does not claim Buddhist epistemology proves quantum mechanics (Project
+  A is interpretive framework, not evidence).
+\item
+  Does not claim K-side incommensurability is experimentally confirmed.
+\item
+  Does not claim that consciousness plays any role in registration.
+\item
+  Does not claim the EWF paradox is fully resolved on the ρ-side.
+\item
+  Does not claim requires\_K\_joint is a necessary-and-sufficient
+  condition for all LF violations; it is proposed only as a necessary
+  registration-layer condition.
+\item
+  \textbf{Does not claim K9\_E is experimentally confirmed} --- K9\_E is
+  Class C (qualified): structurally testable, empirically unconfirmed.
+  The 2.31σ Proietti fit is real but ambiguous; noise cannot be ruled
+  out as an alternative explanation (§7).
+\item
+  \textbf{Does not claim the φ-map φ: K → B(H) is proven to exist} ---
+  the map is conjectured (Class D). The necessary conditions N₁--N\_T
+  are derived but not sufficient for φ's existence (§11).
+\item
+  \textbf{Does not claim K9\_E is the unique probability rule consistent
+  with K1--K8} --- K1--K8 are structural axioms that do not uniquely
+  determine a probability rule; K9\_E is one motivated postulate, not
+  the only possibility.
+\item
+  \textbf{Does not claim the 3-observer prediction δ\_M3 = -0.223 is
+  independent of β} --- this value is illustrative at β = 0.3; the true
+  β is unknown until experimental measurement.
+\end{itemize}
+
+\subsubsection{13.2 Formal Phase Summary and Open
+Items}\label{formal-phase-summary-and-open-items}
+
+The ⊥\_K formal definition chain is complete at the proposed Class D/C
+level:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Formal layer & Symbol & Class & Defined in \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+K-side incommensurability & ⊥\_K & D & §6.4 \\
+Admissible joint K-space & K\_joint / AdmJoint & D & §6.3 \\
+Joint-validity demand & D\_joint / requires\_K\_joint & D & §6.3 \\
+K-side comparison context & C\_K & D & §6.4 \\
+Bridge lemma & Bridge\_EWF & D/C & §6.5 \\
+Operational data criterion & ODC\_K & C & §6.6 \\
+K-Space axioms (Layer 1) & K1--K8 & D (K1=C) & §4.1--4.2 \\
+Bridge theorems (Layer 2) & T1--T9, K7\_trace, D\_enc & D/C &
+§4.3--4.4 \\
+Probability postulate & K9\_E (P9) & C (qualified) & §5 \\
+Experimental protocol & K9-S12 & C & §8 \\
+φ conjecture & φ: K → B(H) & D (supporting) & §11 \\
+\end{longtable}
+}
+
+\textbf{Resolved items (updated from v2.0):}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+v2.0 status
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+v3.0 status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Axiomatize K as full mathematical structure & Deferred long-term task &
+\textbf{RESOLVED} --- K1--K8 v2.4, T1--T9, K7\_trace, D\_enc (§4) \\
+K5\_prospective (A1 assumption) & Class D semantic extension &
+\textbf{RESOLVED} --- upgraded to K5\_prospective clause (§4.2) \\
+T4-H colimit existence & Conditional hypothesis & \textbf{THEOREM} (4/4
+steps, RCA 4.74/5, 2026-05-28, §10.1) \\
+3-OBS Class C-conditional & Conditional on T4-H & \textbf{Class C} (T4-H
+resolved, §10.2) \\
+K7\_trace canonical status & BB-VVV local construct & \textbf{Canonical
+Layer 2} (4 consumers, RCA 4.77/5, §4.4) \\
+\end{longtable}
+}
+
+\textbf{Deferred proof items (not required for current claim class):}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Deferred item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Reason deferred
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Full semantic proof for Bridge\_EWF & Requires formal semantics of ``no
+admissible reinterpretation''; paper uses operational sufficient
+conditions \\
+Full formal proof for ⊥\_K as mathematical relation & K1--K8 structural
+definition complete; full topological/order-theoretic treatment
+deferred \\
+AdmJoint necessary-and-sufficient conditions & Currently sufficient
+conditions A--E; full characterization is an open item \\
+Equivalence of σ(M) and R̂\_svasa formalisms & Separate research track \\
+\end{longtable}
+}
+
+\subsubsection{13.3 Falsification Condition
+(Restated)}\label{falsification-condition-restated}
+
+\textbf{K9\_E (Project C) is falsified} by: a K9-S12 experimental result
+with δ⟨A₁B₂⟩ = 0 at θ = 31° within predeclared statistical tolerance
+across a full θ-sweep. This would falsify the overlap-only class of
+deformations (the class that K9\_E belongs to), not just a specific β
+value.
+
+\textbf{The K-side incommensurability conjecture is falsified} by: an
+EWF experiment producing results consistent with a single K\_joint
+registration model satisfying Conditions 1--6 for both observers
+simultaneously, for a configuration independently classified as
+requires\_K\_joint = 1 via D\_joint and Bridge\_EWF. If K\_joint exists
+empirically, the Bridge\_EWF conditional bridge requires revision.
+
+\textbf{K9\_E falsification (K9-S12 null result) does not falsify:} -
+The K-space architectural framework (K1--K8 + Layer 2) --- Project B -
+The K-side incommensurability conjecture (K\_F ⊥\_K K\_W) --- a
+different structural claim - The BE↔QM comparative mapping --- Project A
+
+Operationally, all three falsification tests require a predefined data
+criterion (tolerance τ fixed before data collection); otherwise the
+criterion becomes post-hoc.
+
+\subsubsection{13.4 Architectural Constraints of the K-side/ρ-side
+Separation}\label{architectural-constraints-of-the-k-sideux3c1-side-separation}
+
+The core architectural commitment of VVV-QMRF is K ≠ H: the registration
+layer is structurally distinct from the physical layer (§2.1). This
+separation enables the framework to address the registration layer gap.
+It also imposes two architectural constraints that are inherent
+consequences of the layer separation, not oversights.
+
+\textbf{Constraint 1 --- Self-certification is not a ρ-side observable.}
+Condition 4 requires σ\_R(M) = 1 to be determined intrinsically within
+K\_R. Any physical measurement of σ would itself require a second-order
+registration act, re-entering the von Neumann regress that K3 is
+designed to terminate. The operational compromise is stated in ODC\_K
+condition (ii): self-certification is treated as a structural postulate
+satisfied by construction when the registering system meets the
+architectural definition of a K-side observer.
+
+\textbf{Constraint 2 --- D\_joint is a framework-level classification,
+not a physical observable.} The predicate D\_joint(A, B, Arch)
+classifies whether a comparison architecture demands joint validity.
+Operational sufficient conditions A--E (§6.3) connect observable
+features of the setup (interference vs.~readout, comparison vs.~no
+comparison) to D\_joint values in a reproducible way. But the mapping is
+a VVV-QMRF classification of the experimental architecture, not a
+measurement of a physical quantity.
+
+\textbf{These constraints are typical of the measurement problem, not
+unique to VVV-QMRF.} Every interpretation or extension of quantum
+mechanics that addresses measurement introduces an unobservable
+primitive:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Framework
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Central concept
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Why not directly observable
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Copenhagen & Classical apparatus / Heisenberg cut & No formal definition
+of what makes an apparatus classical \\
+Many-Worlds (Everett) & Branching of worlds & No physical observable
+distinguishes one branch \\
+QBism & Agent's degree of belief & Subjective probability is not a
+physical quantity \\
+Relational QM (Rovelli) & Facts relative to observer & Relata are only
+defined within the relation \\
+Objective Collapse (GRW) & Collapse mechanism & Collapse events are
+postulated, not yet detected \\
+\textbf{VVV-QMRF} & \textbf{Self-certification / D\_joint} &
+\textbf{K-side properties are not ρ-side observables (K ≠ H)} \\
+\end{longtable}
+}
+
+What distinguishes VVV-QMRF is that the constraints are explicitly
+named, traced to a single architectural commitment (K ≠ H), and given
+operational bridges (ODC\_K, conditions A--E) that define what can and
+cannot be tested under the current formalism.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{References}\label{references}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  von Neumann, J. (1932). \emph{Mathematical Foundations of Quantum
+  Mechanics.} Princeton University Press.
+\item
+  Bohr, N. (1935). Can Quantum-Mechanical Description of Physical
+  Reality Be Considered Complete? \emph{Physical Review} 48, 696--702.
+\item
+  Heisenberg, W. (1958). \emph{Physics and Philosophy.} Harper \& Row.
+\item
+  Wigner, E.P. (1961). Remarks on the mind-body question. In: \emph{The
+  Scientist Speculates,} Good (ed.), pp.~284--302.
+\item
+  Rovelli, C. (1996). Relational quantum mechanics. \emph{International
+  Journal of Theoretical Physics} 35, 1637--1678.
+\item
+  Prasad, H.S. (2023). Buddhist Pramāṇa-Epistemology. \emph{Studia
+  Humana} 12(1-2), 21--52. DOI: 10.2478/sh-2023-0004.
+\item
+  Zurek, W.H. (2003). Decoherence, einselection, and the quantum origins
+  of the classical. \emph{Reviews of Modern Physics} 75, 715--775.
+\item
+  Frauchiger, D. and Renner, R. (2018). Quantum theory cannot
+  consistently describe the use of itself. \emph{Nature Communications}
+  9, 3711.
+\item
+  Brukner, C. (2018). A no-go theorem for observer-independent facts.
+  \emph{Entropy} 20(5), 350.
+\item
+  Proietti, M. et al.~(2019). Experimental test of local observer
+  independence. \emph{Science Advances} 5(9), eaaw9832. DOI:
+  10.1126/sciadv.aaw9832.
+\item
+  Bong, K.W. et al.~(2020). A strong no-go theorem on the Wigner's
+  friend paradox. \emph{Nature Physics} 16, 1199--1205. DOI:
+  10.1038/s41567-020-0990-x.
+\item
+  Jordan, A.N. and Siddiqi, I.A. (2024). \emph{Quantum Measurement
+  Theory and Practice.} Cambridge University Press. DOI:
+  10.1017/9781009103909.
+\item
+  Baumann, V. and Brukner, Č. (2024). Wigner's friend's memory and the
+  no-signaling principle. \emph{Quantum} 8, 1481. arXiv:2305.15497.
+\item
+  VietVunVut (Viet - Nguyen Xuan) (2026). Has Every Wigner's Friend
+  Experiment Been Blind to a Geometric Degree of Freedom? Submitted to
+  arXiv 2026-05-27 (arXiv ID pending confirmation). Internal ref:
+  \texttt{papers/paper\_002/manuscript.md}.
+\item
+  VietVunVut (Viet - Nguyen Xuan) (2026). VVV-QMRF Class C. Working
+  Paper v2.0. DOI: 10.5281/zenodo.20289261. Zenodo.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Appendices}\label{appendices}
+
+\textbf{Appendix A} --- K9\_E reproduction scripts:
+\texttt{documents/research\_documents/project\_vvv\_qmrf\_class\_c/07\_fits/}
+\textbf{Appendix B} --- K\_Space\_Axiomatization v2.4:
+\texttt{documents/research\_documents/meta\_architecture/K\_Space\_Axiomatization.md}
+\textbf{Appendix C} --- AHP audit footprint:
+\texttt{documents/research\_documents/anti\_hallucinations/}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Draft phase status}\label{draft-phase-status}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Phase
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sections
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{P1} & Skeleton + Abstract (8 paras) + §4 K-Space Architecture &
+\textbf{COMPLETE 2026-05-28} \\
+\textbf{P2} & §5 K9\_E Postulate + §7 Empirical Status &
+\textbf{COMPLETE 2026-05-28} \\
+\textbf{P3} & §8 K9-S12 + §10 T4-H + 3-OBS & \textbf{COMPLETE
+2026-05-28} \\
+\textbf{P4} & §9 BB+FR + §11 φ-map Class D & \textbf{COMPLETE
+2026-05-28} \\
+\textbf{P5} & Carry-over §1, §2, §3 (headers) + §6 + §12 + §13 &
+\textbf{COMPLETE 2026-05-28} \\
+\textbf{P6} & Abstract finalization + header update & \textbf{COMPLETE
+2026-05-28} \\
+\textbf{P7} & CHANGELOG + README + AHP footprint verified &
+\textbf{COMPLETE 2026-05-28} \\
+\end{longtable}
+}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{VVV-QMRF Working Paper v3.0 --- All phases P1-P7 complete
+(2026-05-28). All mini-RCA PASS (4.57--4.6/5). Average 4.58/5.}
+\emph{Promoted from draft to final 2026-05-28. Abstract (8 para) +
+§1--§13 (\textasciitilde14,500w). Supporting files: CHANGELOG.md,
+README.md, plan.} \emph{References {[}13{]} and {[}14{]} finalized;
+{[}14{]} arXiv ID pending confirmation post-submission.} \emph{All
+formal claims classified by evidence level. Class C = structurally
+testable, empirically UNCONFIRMED. Class D = proposed.}
+
+\end{document}

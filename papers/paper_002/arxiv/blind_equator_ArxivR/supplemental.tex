@@ -21,7 +21,7 @@ Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Fre
 \email{viet@vvvqmrf.com}
 \homepage{https://vvvqmrf.com}
 \affiliation{Independent Researcher, Vietnam}
-\date{2026-05-27}
+\date{2026-05-31}
 \maketitle
 
 \renewcommand{\thesection}{S\arabic{section}}
@@ -69,6 +69,20 @@ f_\perp(+1, H) - f_\perp(-1, H) &= \sin^2(\theta/2) - \cos^2(\theta/2)\\
 &= -\cos\theta.
 \end{align}
 Vanishes iff $\theta = \pi/2$. At this angle, all four $f_\perp = 1/2$, constant across all outcome pairs. $\square$
+
+\subsubsection*{Step 5: $K9\_E$ reduction}
+When $f_\perp$ is outcome-independent:
+\begin{equation}
+P(o|K) = \text{Tr}(E_o \rho) \cdot \frac{1 - \beta \cdot \text{constant}}{1 - \beta \cdot \text{constant}} = \text{Tr}(E_o \rho)
+\end{equation}
+$K9\_E = 0$ for all equatorial measurements. $\square$
+
+\subsubsection*{Sympy verification}
+\begin{verbatim}
+import sympy as sp
+theta = sp.Symbol('theta', real=True)
+assert sp.simplify(sp.sin(theta/2)**2 - sp.cos(theta/2)**2 + sp.cos(theta)) == 0
+\end{verbatim}
 
 \subsubsection*{Generality}
 At $\theta = \pi/2$, $|\langle b|d\rangle|^2 = 1/2$ for all $b,d$. Any $g(|\langle b|d\rangle|^2)$ therefore takes the same value for all outcome pairs. The equatorial plane is a fixed point for the entire class --- the cancellation is not specific to $f_\perp$.
@@ -203,20 +217,20 @@ The discrepancy arises because the normalization factor $Z = \sum P_{\rm QM} [1 
 
 \begin{table}[h]
 \centering
-\caption{All nine $\langle A_x B_y\rangle$ correlators with uncertainties ($N = 91{,}000$).}
-\begin{tabular}{ccc}
+\caption{All nine $\langle A_x B_y\rangle$ correlators with uncertainties ($N = 91{,}000$) and $K9\_E$ deformed predictions.}
+\begin{tabular}{cccccc}
 \toprule
-$(x,y)$ & $\langle AB\rangle_{\rm QM}$ & $\sigma$ \\
+$(x,y)$ & $\langle AB\rangle_{\rm QM}$ & $\sigma$ & $\langle AB\rangle_{\rm K9E}$ ($\beta=0.1$) & $\langle AB\rangle_{\rm K9E}$ ($\beta=0.3$) & $\langle AB\rangle_{\rm K9E}$ ($\beta=0.5$) \\
 \midrule
-$(1,1)$ & $-1.0000$ & $0.0000$ \\
-$(1,2)$ & $-0.8572$ & $0.0017$ \\
-$(1,3)$ & $-0.8572$ & $0.0017$ \\
-$(2,1)$ & $-0.8572$ & $0.0017$ \\
-$(2,2)$ & $-0.5045$ & $0.0029$ \\
-$(2,3)$ & $-0.8933$ & $0.0015$ \\
-$(3,1)$ & $-0.8572$ & $0.0017$ \\
-$(3,2)$ & $-0.8933$ & $0.0015$ \\
-$(3,3)$ & $-0.8829$ & $0.0016$ \\
+$(1,1)$ & $-1.0000$ & $0.0000$ & $-1.0000$ & $-1.0000$ & $-1.0000$ \\
+$(1,2)$ & $-0.8572$ & $0.0017$ & $-0.8687$ & $-0.8927$ & $-0.9181$ \\
+$(1,3)$ & $-0.8572$ & $0.0017$ & $-0.8687$ & $-0.8927$ & $-0.9181$ \\
+$(2,1)$ & $-0.8572$ & $0.0017$ & $-0.8687$ & $-0.8927$ & $-0.9181$ \\
+$(2,2)$ & $-0.5045$ & $0.0029$ & $-0.5045$ & $-0.5045$ & $-0.5045$ \\
+$(2,3)$ & $-0.8933$ & $0.0015$ & $-0.8933$ & $-0.8933$ & $-0.8933$ \\
+$(3,1)$ & $-0.8572$ & $0.0017$ & $-0.8687$ & $-0.8927$ & $-0.9181$ \\
+$(3,2)$ & $-0.8933$ & $0.0015$ & $-0.8933$ & $-0.8933$ & $-0.8933$ \\
+$(3,3)$ & $-0.8829$ & $0.0016$ & $-0.8829$ & $-0.8829$ & $-0.8829$ \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -308,5 +322,45 @@ Overlap-dependent $\beta$ (this work) & $\sim\!10^{-2}$ (proposed) & --- \\
 \subsection{Multi-Observer Extension (Preliminary)}
 
 For $N > 2$ observers, the geometric cancellation structure generalizes. Preliminary analysis suggests $\sim\!11\times$ amplification at $\beta = 0.3$ for three observers, conditional on bridge theorems connecting registration-layer structure to QM observables for $N > 2$. Rigorous derivation is left for future work.
+
+\subsection{Reproducible Code Index}
+All numerical predictions are reproducible via the scripts in the \texttt{papers/paper\_002/supplemental/} directory.
+
+\subsubsection*{Scripts}
+\begin{table}[h]
+\centering
+\caption{Replication script inventory.}
+\begin{tabular}{lll}
+\toprule
+Script & Purpose & Paper Section \\
+\midrule
+\texttt{K9S12\_proposal.py} & Full protocol: angle optimization, correlator table, $K9\_E$ predictions & 4--5 \\
+\texttt{statistical\_significance.py} & FOM scan, Monte Carlo, $\sigma$ computations & 6 \\
+\texttt{RCA\_full\_verification\_v93.py} & Complete RCA verification of all manuscript v93 claims & All \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Reproducing key numbers}
+To reproduce the primary predictions:
+\begin{verbatim}
+cd papers/paper_002/supplemental
+python K9S12_proposal.py
+# Gen LF 1 = +0.0891 +- 0.0103 (8.6sigma)
+# delta<A1B2> = -0.0355 (20.8sigma at beta=0.3)
+\end{verbatim}
+
+\subsubsection*{Requirements}
+Python 3.9+, \texttt{numpy}, \texttt{scipy}. No external data files are needed (all parameters are inline).
+
+\subsubsection*{$K9\_E$ deformation model}
+The manuscript (Eq.~(2)--(3)) uses the overlap-dependent form:
+\begin{equation}
+P_{\rm K9E}(a,b|x,y) = P_{\rm QM}(a,b|x,y) \cdot \frac{1 - \beta f_\perp(b,d)}{Z}
+\end{equation}
+where $f_\perp(b,d) = 1 - |\langle b|d\rangle|^2$ and $Z$ is the normalization factor. This acts at the probability level, modifying outcome weights by the geometric overlap between Superobserver outcome $b$ and Friend outcome $d$.
+
+\subsubsection*{Model parameters}
+$N = 91{,}000$ (Bong 2020), $\lambda = 810$~nm SPDC, $\mu = 0.95$ (nominal), $\mu_{\rm threshold} = 0.86$.
 
 \end{document}
