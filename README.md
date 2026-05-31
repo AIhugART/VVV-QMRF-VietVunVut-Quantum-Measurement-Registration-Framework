@@ -84,6 +84,7 @@ VVV-QMRF đề xuất một **cấu trúc logic ghi nhận K**, được tiên �
 | v32 | 2026-05-27 | Class C (qualified) | **arXiv preprint submitted** (quant-ph). K9-S12 paper completed (Draft v94). Track 1 & 2 CLOSED. |
 | v35 | 2026-05-27 | Class C (qualified) | T4-H colimit verified (N=3, Class C). K7_trace + D_enc promoted to canonical Layer 2 (RCA 4.77/5). Track 3 ACTIVE. |
 | **v3.0** | **2026-05-28** | **Class C (qualified)** | **All phases P1–P7 complete. T4-H upgraded to THEOREM (4/4 steps, RCA 4.74/5). 3-OBS prediction upgraded to Class C. Working Paper v3.0 published on Zenodo. DOI: 10.5281/zenodo.20431310.** |
+| **v40** | **2026-05-30** | **Class C (qualified)** | **T5 Conditional THEOREM (RCA 4.4/5): [A-3O-2] RESOLVED (conditional — hybrid A+B proof, T4-H + admissibility + K5 content-basedness). [A-NS] No-signaling N>2 Conditional THEOREM via induction on T5. NORM-1 (Conv 2 canonical form) + PEER-SYNC CLOSED.** |
 
 **Remaining empirical path / Con đường thực nghiệm còn lại:** Confirmation or rejection requires a dedicated experiment. K9-S12 Modified Bong protocol (single QWP, α=31°) proposed as FIRST test: Gen LF 1 = +0.0891 (8.6σ), δ⟨A₁B₂⟩ = -0.0355 (20.8σ). **arXiv preprint submitted 2026-05-27.** Track 3 (Experimental Path) now ACTIVE — awaiting optical lab collaboration.
 
@@ -99,7 +100,7 @@ Layer 2 (UPDATABLE)  T1–T9 Bridge theorems + K7_trace + D_enc (canonical)
        |              K_joint construction, T4-H THEOREM (N-obs colimit proven)
        v
 Layer 3 (Class C)    K9_E Probability postulate (P9) / Tiên đề xác suất
-       |              P(o|K) = Tr(E_o ρ) · f_perp(K_ctx)
+       |              P(o|K) = Tr(E_o ρ) · [1 − β · f_perp(o, K_ctx)] / Z_E  [Conv 2]
        |              1 parameter β, 8 terms with K-space provenance
        v              K9_E is a POSTULATE, not derivable from K1–K8 alone
 Layer 4 (Class D)    Multi-paper data fit / Khớp dữ liệu đa bài báo
@@ -127,14 +128,17 @@ Layer 5 (Class D)    Prediction + Reduction + Assessment
 ### K9_E Postulate (P9) / Tiên đề K9_E
 
 ```
-P(o | K) = Tr(E_o ρ) · f_perp(K_ctx)
+P(o | K) = Tr(E_o ρ) · [1 − β · f_perp(o, K_ctx)] / Z_E
 
 trong đó / where:
-  f_perp(K_ctx) = 1 - β · K_ctx
-  K_ctx = Σ_{i≠j} I(k_i ⊥ k_j) / N_pairs
+  f_perp(o, K_ctx) = E[I(K5_prospective fires)]  [T8 — structural derivation]
+                   = |{k_j ∈ K_ctx : k_j ⊥_K and outcome-inconsistent with o}| / |K_ctx|
+  K_ctx  = contextual K-state set  [T9 — K1–K8 + T1]
   β ∈ [0, 1] — single free parameter / tham số tự do duy nhất
   Born limit: β = 0 ⇒ P(o|K) = Tr(E_o ρ) (exact — K9_E reduces to QM)
 ```
+
+> **Canonical form (Conv 2, standardized 2026-05-30, NORM-1 RCA 4.33/5):** `f_perp` là bot_K fraction (T8 derivation); `[1 − β·f_perp]` là suppression factor; `K_ctx` là tập contextual K-states (T9). Born limit: β = 0 → exact QM. RCA: [`04_governance/RCA_NORM1_standardize_conv2_2026_05_30.md`](documents/research_documents/project_vvv_qmrf_class_c/04_governance/RCA_NORM1_standardize_conv2_2026_05_30.md).
 
 **8 terms in K9_E / 8 thành phần trong K9_E:**
 
@@ -177,6 +181,7 @@ trong đó / where:
 | Question / Câu hỏi | File |
 |--------------------|------|
 | Full master index (canonical) / Mục lục tổng thể | [Class C Master Index](documents/research_documents/project_vvv_qmrf_class_c/index.md) |
+| K→p(o) Bridge Law — single entry point for the core output of Class C / Luật cầu nối K→p(o) — điểm vào duy nhất cho output cốt lõi Class C | [K_to_p_bridge_law.md](documents/research_documents/project_vvv_qmrf_class_c/K_to_p_bridge_law.md) |
 | Formal definitions / Định nghĩa hình thức | [VVV_QMRF_Definitions.md](documents/research_documents/project_vvv_qmrf_class_c/06_references/VVV_QMRF_Definitions.md) |
 | K1–K8 axioms + T1–T9 bridge theorems + K7_trace + D_enc / Tiên đề K1–K8 + định lý cầu nối T1–T9 | [K_Space_Axiomatization.md](documents/research_documents/meta_architecture/K_Space_Axiomatization.md) |
 | Working Paper v3.0 (Zenodo) / Bài báo làm việc v3.0 | [VVV-QMRF_Working_Paper_v3.0.md](papers/paper_003/zenodo/VVV-QMRF_Working_Paper_v3.0.md) |
@@ -253,6 +258,9 @@ buddhist-epistemology-quantum-measurement/
 | E3-RCA | E3 Registration Lock framework-level completion | **COMPLETE (2026-05-29, RCA 4.80/5)** — K-side `V-hat : I_boundary × D → K_R ∪ {k_null}`, P3 distinctness, T6 boundary, [A-E3] separation. Report at [framework/plan/E3_Completion_RCA_Report_2026-05-29.md](documents/research_documents/framework/plan/E3_Completion_RCA_Report_2026-05-29.md) | ✅ DONE |
 | E18-PROMOTE | E18 Delayed-Choice Registration Boundary — framework postulate | **PROMOTED (2026-05-22, G7)** — Frozen extension postulate at [framework/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md](documents/research_documents/framework/vvv_qmrf_framework_e18_delayed_choice_registration_boundary_postulate.md). Covers K-side context-conditioned locking of prior candidate registration windows. | ✅ DONE |
 | RCA-11 | Comprehensive RCA — 11 open items resolution | **COMPLETE (2026-05-29, avg 4.74/5)** — 10/11 resolved, 1 deferred (E3-F5). E1 fully verified (6/6), E3-F1 T6↔E3 theorem, E3-F2 𝕍_tri operator, E3-F4 D_enc adequacy. Report at [Comprehensive RCA Summary](documents/research_documents/framework/plan/Comprehensive_RCA_Summary_2026-05-29.md). | ✅ DONE |
+| **[A-3O-2]** | T5 K_joint composition associativity | **RESOLVED (conditional, 2026-05-30, RCA 4.4/5)** — [T5_conditional_theorem_proof.md](documents/research_documents/project_vvv_qmrf_class_c/02_derivation_chain/T5_conditional_theorem_proof.md). Hybrid A+B proof: (C1) T4-H THEOREM, (C2) admissibility, (C3) F7d via K5 content-basedness. | ✅ DONE |
+| **[A-NS]** | No-signaling N>2 — depends on T5 | **Conditional THEOREM (2026-05-30)** — N=2 proven (Phase 7 B-5). N>2: conditional induction via T5 (§6 of T5 proof). Same (C1)(C2)(C3) scope. See [T5_conditional_theorem_proof.md §6](documents/research_documents/project_vvv_qmrf_class_c/02_derivation_chain/T5_conditional_theorem_proof.md). | ✅ DONE (cond.) |
+| NORM-1 | Conv 2 canonical form standardization | **CLOSED (2026-05-30, RCA 4.33/5)** — `[1−β·f_perp(o,K_ctx)]/Z_E` standardized as canonical; Conv 1 retired. PEER-SYNC K_Space_Axiomatization.md dual-copy verified. | ✅ DONE |
 | arXiv-002 | arXiv ID confirmation for paper_002 (K9-S12) | Pending confirmation | MEDIUM |
 | PUB | Publication path — Foundations of Physics / Phys Rev A | arXiv submitted, awaiting feedback | MEDIUM |
 
@@ -359,6 +367,7 @@ buddhist-epistemology-quantum-measurement/
 | **v3.0** | **2026-05-28** | **Working Paper v3.0: all phases P1–P7 complete. T4-H upgraded to THEOREM (4/4 steps, RCA 4.74/5). 3-OBS prediction upgraded to Class C. Zenodo DOI: 10.5281/zenodo.20431310. Average mini-RCA 4.58/5. README updated to v3.0.** |
 | v3.0-E3-RCA | 2026-05-29 | E3 Registration Lock framework-level RCA completed (4.80/5): canonical E3 now states K-side `V-hat : I_boundary × D → K_R ∪ {k_null}`, P3 distinctness, T6 boundary, [A-E3] separation, and EX compass-only sync. |
 | **v3.0-FINAL** | **2026-05-29** | **Comprehensive RCA: 11 open items resolved (avg 4.74/5). 10/11 closed, 1 deferred (E3-F5). E1 fully verified (6/6), E3-F1 T6↔E3 theorem, E3-F2 𝕍_tri operator, E3-F4 D_enc adequacy. E1-O2 K5 re-anchoring — key architectural fix. Framework now in most complete state. See [Comprehensive RCA Summary](documents/research_documents/framework/plan/Comprehensive_RCA_Summary_2026-05-29.md).** |
+| **v40** | **2026-05-30** | **T5 Conditional THEOREM (RCA 4.4/5): [A-3O-2] RESOLVED (conditional), [A-NS] Conditional THEOREM via induction on T5. NORM-1 (Conv 2 `[1−β·f_perp]/Z_E` canonical) + PEER-SYNC CLOSED. K_to_p_bridge_law.md designated as single entry point for K→p(o) core output.** |
 
 ---
 

@@ -9,6 +9,10 @@
 \usepackage{amsmath,amssymb,graphicx,booktabs,hyperref,geometry}
 \geometry{margin=1in}
 
+\newcommand{\email}[1]{\par\noindent\centering{\small\texttt{#1}}}
+\newcommand{\homepage}[1]{\par\noindent\centering{\small\url{#1}}}
+\newcommand{\affiliation}[1]{\par\noindent\centering{\small#1}}
+
 \begin{document}
 
 \title{Supplemental Material:\\
@@ -17,7 +21,7 @@ Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Fre
 \email{viet@vvvqmrf.com}
 \homepage{https://vvvqmrf.com}
 \affiliation{Independent Researcher, Vietnam}
-\date{2026-05-26}
+\date{2026-05-27}
 \maketitle
 
 \renewcommand{\thesection}{S\arabic{section}}
@@ -104,9 +108,9 @@ Proietti et al.\ use Bell-state measurement (BSM) rather than projective measure
 
 \subsection{Exact Numerical Integration Method}
 
-All numerical predictions use the density matrix for the singlet state with finite visibility:
+All numerical predictions use the density matrix for the singlet state with finite visibility under the SPDC noise model (where noise is confined to the $\{|HV\rangle, |VH\rangle\}$ subspace):
 \begin{equation}
-\rho_\mu = \mu|\Phi^-\rangle\langle\Phi^-| + \frac{1-\mu}{4}I.
+\rho_\mu = \mu|\Phi^-\rangle\langle\Phi^-| + \frac{1-\mu}{2}(|HV\rangle\langle HV| + |VH\rangle\langle VH|).
 \end{equation}
 
 For the overlap-dependent model Eq.~(2--3) of the main text:
@@ -116,6 +120,84 @@ P(a,b \mid x,y) = P_{\rm QM}(a,b \mid x,y) \cdot [1 - \beta f_\perp(b,d)] / Z,
 with full renormalization $Z = \sum_{a,b} P_{\rm QM}(a,b \mid x,y) \cdot [1 - \beta f_\perp(b,d)]$.
 
 All computations performed via \texttt{K9S12\_proposal.py}, \texttt{statistical\_significance.py}. The algebraic cancellation theorem is independently verified via symbolic computation (\texttt{universal\_theorem\_lf\_check.py}).
+
+\subsection{Derivation of the Sensitivity Formula and First-Order Overestimate Warning}
+\label{sec:S2_derivation}
+
+\subsubsection{f\_perp values at polar angle $\theta$}
+The Superobserver measurement basis at $(\theta, \phi)$ is:
+\begin{align}
+|b=+1\rangle &= \cos(\theta/2)|H\rangle + e^{i\phi}\sin(\theta/2)|V\rangle,\\
+|b=-1\rangle &= \sin(\theta/2)|H\rangle - e^{i\phi}\cos(\theta/2)|V\rangle.
+\end{align}
+The squared overlaps with the Friend's $z$-basis outcomes (where $\phi$ drops out since $|e^{i\phi}|^2 = 1$) are:
+\begin{align}
+|\langle b=+1|H\rangle|^2 &= \cos^2(\theta/2), \quad |\langle b=+1|V\rangle|^2 = \sin^2(\theta/2),\\
+|\langle b=-1|H\rangle|^2 &= \sin^2(\theta/2), \quad |\langle b=-1|V\rangle|^2 = \cos^2(\theta/2).
+\end{align}
+Using the incompatibility function $f_\perp(b,d) = 1 - |\langle b|d\rangle|^2$, we obtain:
+\begin{align}
+f_\perp(+1,H) &= \sin^2(\theta/2), \quad f_\perp(+1,V) = \cos^2(\theta/2),\\
+f_\perp(-1,H) &= \cos^2(\theta/2), \quad f_\perp(-1,V) = \sin^2(\theta/2).
+\end{align}
+The outcome-dependence difference parameter is:
+\begin{equation}
+|f_\perp(+1,H) - f_\perp(-1,H)|/2 = |\cos\theta|/2.
+\end{equation}
+At the tilted angle $\theta = 31^\circ$, this yields:
+\begin{equation}
+|\cos 31^\circ|/2 = 0.8572/2 = 0.4286.
+\end{equation}
+
+\subsubsection{QM correlator for mixed setting $(x=1, y=2)$}
+For the SPDC noise model (where noise is confined to the $\{|HV\rangle, |VH\rangle\}$ subspace), both the pure singlet and the noise term yield identical $z$-vs-tilted correlators ($-\cos\theta$), so the mixed-setting correlator is independent of visibility $\mu$. At the reference angle $\theta = 31^\circ$:
+\begin{equation}
+\langle A_1 B_2 \rangle_{\rm QM} = -\cos(31^\circ) = -0.8572.
+\end{equation}
+
+\subsubsection{K9\_E deformed correlator}
+For the multiplicative model, the K9\_E probability is:
+\begin{equation}
+P_{\rm K9E}(a,b|x,y) \propto P_{\rm QM}(a,b|x,y) \cdot [1 - \beta f_\perp(b,d)],
+\end{equation}
+with the full normalization $Z = \sum_{a,b} P_{\rm QM} \cdot [1 - \beta f_\perp(b,d)]$ ensuring probability conservation. Because the normalization factor $Z$ depends on both $\beta$ and $\theta$, the shift in the correlator is coupled across all outcome pairs. Numerical results at $\theta = 31^\circ, \mu = 0.95$ yield:
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+$\beta$ & $\langle A_1 B_2 \rangle_{\rm QM}$ & $\langle A_1 B_2 \rangle_{\rm K9E}$ & $\delta$ \\
+\midrule
+$0.10$ & $-0.8572$ & $-0.8687$ & $-0.0115$ \\
+$0.30$ & $-0.8572$ & $-0.8927$ & $-0.0355$ \\
+$0.50$ & $-0.8572$ & $-0.9180$ & $-0.0609$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The deformation shifts the correlator to more negative values (enhancing anti-correlation) because the renormalization shifts probability weight toward outcome pairs with larger $f_\perp$ values, amplifying the geometric asymmetry.
+
+\subsubsection{First-order expansion and overestimate warning}
+Expanding the renormalized probability to first order in $\beta$ (before full renormalization by $Z$):
+\begin{equation}
+\delta\langle A_1 B_2 \rangle \approx -\beta \cdot |\cos\theta| \cdot \langle A_1 B_2 \rangle_{\rm QM}^2 + O(\beta^2).
+\end{equation}
+At $\theta = 31^\circ$, this unrenormalized expansion yields:
+\begin{equation}
+\delta \approx -\beta \cdot 0.8572 \cdot 0.7347 = -0.6298\beta.
+\end{equation}
+\textbf{Warning: This unrenormalized first-order expansion overestimates $|\delta|$ by approximately a factor of 5.5.} The ratio of the numerical value to the leading-order expansion is nearly constant across all $\beta$:
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+$\beta$ & $\delta$ (LO) & $\delta$ (numerical) & ratio \\
+\midrule
+$0.01$ & $-0.0063$ & $-0.0011$ & $0.181$ \\
+$0.07$ & $-0.0441$ & $-0.0080$ & $0.182$ \\
+$0.10$ & $-0.0630$ & $-0.0115$ & $0.183$ \\
+$0.30$ & $-0.1889$ & $-0.0355$ & $0.188$ \\
+$0.50$ & $-0.3149$ & $-0.0609$ & $0.193$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The discrepancy arises because the normalization factor $Z = \sum P_{\rm QM} [1 - \beta f_\perp]$ is also $O(\beta)$, leading to a cancellation between the numerator and denominator corrections. Therefore, the unrenormalized formula captures the correct qualitative structural dependence (vanishing iff $\theta = \pi/2$) but severely overestimates its magnitude. All manuscript values use exact numerical computation.
 
 \subsection{Complete Correlator Table ($\theta = 31^\circ$, $\mu = 0.95$)}
 
@@ -145,7 +227,7 @@ A grid search over $(\theta, \phi_2, \phi_3, \beta_{\rm Bob})$ maximizes:
 \begin{equation}
 \text{FOM}(\theta) = \min\left( n_\sigma^{\rm LF}(\theta), n_\sigma^{\rm signal}(\theta, \beta) \right),
 \end{equation}
-yielding $\theta = 31^\circ$, $\phi_2 = 112^\circ$, $\phi_3 = 217^\circ$, $\beta_{\rm Bob} = 20^\circ$. FOM remains above $5\sigma$ for $\theta \in [20^\circ, 55^\circ]$ at $\beta = 0.07$, $N = 91{,}000$.
+yielding $\theta = 31^\circ$, $\phi_2 = 112^\circ$, $\phi_3 = 217^\circ$, $\beta_{\rm Bob} = 20^\circ$. FOM remains above $5\sigma$ for $\theta \in [20^\circ, 45^\circ]$ at $\beta = 0.30$ and for $\theta \in [35^\circ, 46^\circ]$ at $\beta = 0.07$, $N = 91{,}000$.
 
 \subsection{Monte Carlo Validation}
 
@@ -153,11 +235,11 @@ yielding $\theta = 31^\circ$, $\phi_2 = 112^\circ$, $\phi_3 = 217^\circ$, $\beta
 
 \subsection{Angular Stability}
 
-LF significance varies ${<}3\%$ across $\Delta\theta = \pm 5^\circ$. $\delta\langle AB\rangle \propto \cos\theta$: $\sim$1\% at $\pm 1^\circ$ (Bong's reported precision).
+LF significance varies ${<}3\%$ across $\Delta\theta = \pm 5^\circ$. $\delta\langle AB\rangle$ (exact numerical $\theta$-dependence): ${<}1.5\%$ variation at $\pm 1^\circ$ (Bong's reported precision).
 
 \subsection{$\phi$-Scramble Control Protocol}
 
-Rotate HWP to $N_\phi \geq 10$ random azimuthal angles $\phi \in [0^\circ, 360^\circ)$, fit $\delta\langle AB\rangle(\phi) = A + B\cos(2\phi) + C\sin(2\phi)$. Test: $A \neq 0$ with $B, C \approx 0$ indicates geometric $\cos\theta$ signal; $B$ or $C \neq 0$ indicates birefringence/alignment artifacts.
+Rotate HWP to $N_\phi \geq 10$ random azimuthal angles $\phi \in [0^\circ, 360^\circ)$, fit $\delta\langle AB\rangle(\phi) = A + B\cos(2\phi) + C\sin(2\phi)$. Test: $A \neq 0$ with $B, C \approx 0$ indicates geometric $\theta$-dependent signal; $B$ or $C \neq 0$ indicates birefringence/alignment artifacts.
 
 % ===================================================================
 \section{Interpretations and Physical Context}

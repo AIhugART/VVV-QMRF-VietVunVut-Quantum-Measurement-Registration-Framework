@@ -5,6 +5,42 @@
 
 ---
 
+## v94 (2026-05-27) — RCA round 4: cos θ overcharacterization & optimal angle softening
+
+**Implemented changes:**
+- **Downgrade cos θ scaling:** Downgraded "δ ∝ cos θ" to "δ vanishes iff θ = π/2; non-zero otherwise (exact θ-dependence numerical)" in §1, §3.1, §3.2 table, §5.3, §8.1–8.2, Discussion Table. cos θ is the unrenormalized leading-order structure but overestimates |δ| by ~5.5×; all manuscript values use exact numerical computation.
+- **Soften optimal angle:** Softened θ = 31° from "optimal" to "near-optimal" (grid search shows θ = 35° yields FOM = 8.8 vs 8.6; broad plateau makes exact optimum non-critical).
+- **S2_derivation warning:** Added quantitative 5.5× overestimate warning.
+- **Update scripts:** Updated stale RCA scripts.
+- **Freeze:** §2.3 and §3.5 marked FROZEN.
+
+---
+
+## v93 (2026-05-27) — RCA corrections round 2: FOM values & S2 derivation
+
+**Implemented changes:**
+- **FOM values corrected:** Corrected §4.1 FOM values to per-theta re-optimization results: 5.8 (20°), 8.6 (31°), 6.0 (45°), 0 (58°), 0 (90°); >5σ range [20°, 45°] replaces incorrect [20°, 55°].
+- **S2_derivation correction:** Removed incorrect "[EXACT]" multiplicative formula from S2_derivation.md; replaced with numerical table, leading-order expansion, and verified beta_min thresholds.
+
+---
+
+## v92 (2026-05-26) — RCA corrections (4 fixes)
+
+**Implemented changes:**
+- **Density matrix correction:** Corrected §5 density matrix formula text: I/4 → (|HV⟩⟨HV|+|VH⟩⟨VH|)/2 (SPDC subspace, text matched to computational model).
+- **Grid search β parameter:** Specified β=0.30 for grid search and FOM values; added β≈0.07 window [35°, 46°].
+- **Monte Carlo rate correction:** Corrected β=0.07 single-setting 5σ detection rate from >99% to ~38% (consistent with n_σ=4.7 in §5.3).
+- **cos θ qualification:** Qualified δ⟨AB⟩ ∝ cos θ as "at leading order in β" throughout (§1, §3.1, §5.3, §8.1).
+
+---
+
+## v89–v91 (2026-05-26) — RCA structural consolidation
+
+**Implemented changes:**
+- Restructured and froze §1, §2.3, and §3.5 to prevent conceptual drift.
+
+---
+
 ## v88 (2026-05-26) — 3/7-issue RCA (threshold 4.5/5): Operational observable in "In brief"; §2.3 + §7 compressed; Novelty crystallization
 
 **Scoring summary (7 issues):** 3 implemented (≥4.0/5), 4 rejected.

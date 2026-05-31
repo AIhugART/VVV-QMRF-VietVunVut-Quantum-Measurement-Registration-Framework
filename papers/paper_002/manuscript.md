@@ -2,8 +2,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?
 
-**Status:** Draft v94 — RCA round 4 (2026-05-27): (1) Downgraded 'δ ∝ cos θ' to accurate 'δ vanishes iff θ = π/2; non-zero otherwise (exact θ-dependence numerical)' in §1, §3.1, §3.2 table, §5.3, §8.1–8.2, Discussion Table — cos θ is the unrenormalized leading-order structure but overestimates |δ| by ~5.5×; all manuscript values use exact numerical computation. (2) Softened θ = 31° from 'optimal' to 'near-optimal' (grid search shows θ = 35° yields FOM = 8.8 vs 8.6; broad plateau makes exact optimum non-critical). (3) S2_derivation.md: added quantitative 5.5× overestimate warning. (4) Updated stale RCA scripts. §2.3 FROZEN. §3.5 FROZEN.
-**Date:** 2026-05-26 | **Target:** arXiv quant-ph, then Phys. Rev. A
+**Status:** Draft v95 — RCA round 5 (2026-05-31): §8.1 added Level 0 null ≠ Levels 1–3 boundary sentence (3-round RCA 4.1/5 approved; Falsification_Hierarchy.md integration). v94 — RCA round 4 (2026-05-27): (1) Downgraded 'δ ∝ cos θ' to accurate 'δ vanishes iff θ = π/2; non-zero otherwise (exact θ-dependence numerical)' in §1, §3.1, §3.2 table, §5.3, §8.1–8.2, Discussion Table — cos θ is the unrenormalized leading-order structure but overestimates |δ| by ~5.5×; all manuscript values use exact numerical computation. (2) Softened θ = 31° from 'optimal' to 'near-optimal' (grid search shows θ = 35° yields FOM = 8.8 vs 8.6; broad plateau makes exact optimum non-critical). (3) S2_derivation.md: added quantitative 5.5× overestimate warning. (4) Updated stale RCA scripts. §2.3 FROZEN. §3.5 FROZEN.
+**Date:** 2026-05-31 | **Target:** arXiv quant-ph, then Phys. Rev. A
 
 ---
 
@@ -144,8 +144,9 @@ results constrained previously unconstrained parameter space. The
 overlap-only parametrization serves the identical methodological function
 — β is a search parameter whose null result constrains new parameter space
 at the ~10⁻² scale. Operationally, β is directly measurable via δ⟨AB⟩ at
-any θ ≠ π/2, with the cos θ scaling under θ-sweep (§8.2) providing the
-distinguishing signature that separates an overlap-dependent signal from
+any θ ≠ π/2, with the θ-dependent variation under θ-sweep (§8.2) providing the
+distinguishing signature (vanishing identically at θ = π/2 and determined
+numerically otherwise) that separates an overlap-dependent signal from
 conventional systematics.
 
 **Physical context (speculative).** In weak measurement [18], the weak
@@ -446,14 +447,14 @@ additional optics.
 | Alice φ₂ | 0° | **112°** |
 | Alice φ₃ | 118° | **217°** |
 | Bob β_Bob | 175° | **20°** |
-| μ required | not specified | ≥ 0.86 |
+| μ required (onset) | not specified | ≥ 0.86 |
 | N | 91,000 | 91,000 |
 
 ### 4.4 — Calibration
 
 1. Verify polar angle: |⟨σ_z⟩| = cos(31°) ≈ 0.857 on H-polarized state (±0.01).
 2. Verify azimuthal alignment with entangled state (count rates within 2% of QM).
-3. Measure μ via CHSH S-parameter (μ ≥ 0.86 required).
+3. Measure μ via CHSH S-parameter (μ ≥ 0.86 required for LF violation onset).
 
 ### 4.5 — Practical Feasibility
 
@@ -589,7 +590,7 @@ fake-signal injection methodology are provided in Supplemental S2.
 ## Section 7 — Robustness Summary
 
 The experiment is robust under realistic Bong et al. (2020) conditions.
-Required visibility μ ≥ 0.92 and efficiency η ≥ 0.91 are within reach
+Required loophole-closed 5σ detection thresholds (visibility μ ≥ 0.92, efficiency η ≥ 0.91) are within reach
 (Bong achieved μ = 0.92, η = 0.87; SNSPD upgrade [16] closes the
 detection loophole). A six-source systematic-error budget finds all
 contributions sub-dominant to Poisson noise (σ ≈ 0.0017 at N = 91,000):
@@ -640,6 +641,8 @@ closes the overlap-only window; a θ-dependent signal opens it.
 | δ⟨AB⟩ at θ = 31° | 0 | ≈ 0.115β (numerical) |
 | δ⟨AB⟩ at θ = π/2 | 0 | 0 (equatorial cancellation, exact) |
 | δ⟨AB⟩(θ) functional form | δ = 0 ∀θ | δ = 0 iff θ = π/2; non-zero otherwise (exact form numerical) |
+
+A null result at Level 0 (β < β_min across the full θ-sweep) falsifies the overlap-only class but leaves Levels 1–3 unconstrained: density-matrix-dependent (ρ_F), multi-partite (concurrence), and non-geometric (timing, path) deformations are not bounded by Proposition 1 and each requires independent experimental designs.
 
 Full interpretation analysis in Supplemental S3.
 

@@ -3,10 +3,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # K9_E Source of Truth — Single-Waveplate Test of Outcome-Dependent Quantum Registration in Extended Wigner's Friend Scenarios
 
 **SOT type:** INTERNAL — K9_E Completeness Reference
-**Date synthesized:** 2026-05-25
-**Sources:** draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v21, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v21 + supplemental S1-S3
-**Relationship to manuscript v21:** This SOT contains full K9_E context, VVV-QMRF language, and technical detail removed from the public-facing manuscript. Manuscript v21 is the academically-defended subset for Phys. Rev. A submission.
-**Version lineage:** v4 (K9-S12 proposal) -> v12 (Eq.12 corrected, watershed) -> v21 (academic polish). This SOT synthesizes the best from all versions, prioritizing K9_E completeness.
+**Date synthesized:** 2026-05-25 (re-synced 2026-05-31 to manuscript v94)
+**Sources:** draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v94, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v94 + supplemental S1-S3
+**Relationship to manuscript v94:** This SOT contains full K9_E context, VVV-QMRF language, and technical detail removed from the public-facing manuscript. Manuscript v94 is the academically-defended subset for Phys. Rev. A submission.
+**Version lineage:** v4 (K9-S12 proposal) -> v12 (Eq.12 corrected, watershed) -> v21 (academic polish) -> v94 (RCA round 4: cos θ downgrade, per-θ FOM re-optimization, SPDC density matrix). This SOT synthesizes the best from all versions, prioritizing K9_E completeness.
 
 ---
 
@@ -230,11 +230,11 @@ At theta = pi/2, |<b|d>|^2 = 1/2 for all b,d pairs. Any function g(|<b|d>|^2) th
 
 The optimum at theta = 31 deg reflects a trade-off between two monotonic trends:
 
-- As theta -> 0 deg: the |cos theta| K9_E signal is largest, but the Gen LF 1 violation weakens because measurement settings approach a common axis, reducing the inequality's capacity to separate LF-violating from LF-satisfying theories
-- As theta -> 90 deg: the LF violation is strongest, but the K9_E signal vanishes (cos theta -> 0, Section 4.2)
-- The intermediate optimum (theta = 31 deg) balances these effects
+- As theta -> 0 deg: the K9_E signal is largest (overlap asymmetry maximized), but the Gen LF 1 violation weakens because measurement settings approach a common axis, reducing the inequality's capacity to separate LF-violating from LF-satisfying theories
+- As theta -> 90 deg: the LF violation is strongest, but the K9_E signal vanishes identically (equatorial cancellation, Section 4.2)
+- The intermediate near-optimum (theta ~ 31-35 deg) balances these effects
 
-Representative FOM values at mu = 0.95: 9.6 (theta = 20 deg), 8.6 (theta = 31 deg, optimal), 7.1 (theta = 45 deg), 5.0 (theta = 58 deg, 5sigma threshold), 0 (theta = 90 deg, cancellation). The broad plateau (FOM > 5sigma for theta in [20 deg, 55 deg] -> +/-11 deg tolerance) means the exact optimum is not critical.
+Representative FOM values at mu = 0.95, beta = 0.30 (per-theta angle re-optimization): 5.8 (theta = 20 deg), 8.6 (theta = 31 deg), 8.8 (theta = 35 deg), 6.0 (theta = 45 deg), 0 (theta = 58 deg, Gen LF 1 becomes negative), 0 (theta = 90 deg, cancellation). The broad plateau (FOM > 5sigma for theta in [20 deg, 45 deg] -> +/-11 deg tolerance) means the exact optimum is not critical. theta = 31 deg is adopted as the reference angle because it coincides with the QWP-determined tilt in the Bong apparatus.
 
 ---
 
@@ -286,7 +286,7 @@ Angles optimized via coarse grid (15 deg steps, 13,824 configurations) + fine sc
 
 ### 6.1 -- QM Correlators (theta = 31 deg, mu = 0.95, N = 91,000)
 
-All values computed from density matrix rho_mu = mu|Phi-><Phi-| + (1-mu)I/4 for the singlet state.
+All values computed from density matrix rho_mu = mu|Phi-><Phi-| + (1-mu)/2 * (|HV><HV| + |VH><VH|) for the singlet state. SPDC produces photon pairs only in the {|HV>, |VH>} subspace; the noise term is the maximally mixed state within that subspace, not the full I/4.
 
 | (x,y) | <AB>_QM | sigma (N=91,000) | | (x,y) | <AB>_QM | sigma (N=91,000) |
 |-------|---------|--------------|--|-------|---------|--------------|
@@ -428,7 +428,7 @@ Threshold: eta >= 0.91 at mu = 0.95 for 5sigma detection. Bong achieved eta ~ 0.
 
 ### 8.3 -- Angular Misalignment Delta_theta
 
-LF significance remarkably stable across Delta_theta = +/-5 deg (8.6-8.8sigma). K9_E delta proportional to cos theta -- more alignment-sensitive. At Bong angular precision (< +/-1 deg): delta variation < 1%.
+LF significance remarkably stable across Delta_theta = +/-5 deg (8.6-8.8sigma). K9_E delta vanishes iff theta = pi/2 and is generically non-zero otherwise (exact theta-dependence numerical; unrenormalized leading-order structure goes as cos theta but overestimates |delta| by ~5.5x). At Bong angular precision (< +/-1 deg): delta variation < 1%.
 
 | Delta_theta | theta_actual | Gen LF 1 | n_sigma |
 |-----|---------|---------|-----|
@@ -489,7 +489,7 @@ Two observations make the fair-sampling regime scientifically productive even be
 
 delta<A1B2> != 0 at >= 5sigma would be first evidence for outcome-dependent quantum registration. Combined with LF violation, this simultaneously rules out Local Friendliness AND supports K9_E as a candidate mechanism. Does NOT contradict standard QM (which is silent on registration architecture).
 
-Key caveat: The experiment demonstrates a departure from standard QM at theta = 31 deg -- a previously untested geometric configuration. Interpreting this as outcome-dependent registration specifically requires theta-sweeps and multi-observer follow-up to verify the cos theta structure predicted by Eq. (4).
+Key caveat: The experiment demonstrates a departure from standard QM at theta = 31 deg -- a previously untested geometric configuration. Interpreting this as outcome-dependent registration specifically requires theta-sweeps and multi-observer follow-up to verify the theta-dependent structure predicted by Eq. (4) (exact theta-dependence numerical; vanishes iff theta = pi/2).
 
 ### 10.2 -- Null Result
 
@@ -514,7 +514,7 @@ The experiment is interpretation-neutral by design. Standard QM predicts the sam
 
 ### 11.1 -- theta-Sweep (Highest Priority)
 
-The most immediate follow-up is a systematic scan of the polar angle from theta = 15 deg to theta = 75 deg in steps of ~10 deg. This would directly map the cos theta dependence predicted by Eq. (4), testing whether the outcome-dependent signal follows the geometric structure derived in Section 4. A null result across all theta would exclude the class Eq. (2-3) down to the sensitivity floor of the apparatus (beta ~ 0.02 at N = 200,000).
+The most immediate follow-up is a systematic scan of the polar angle from theta = 15 deg to theta = 75 deg in steps of ~10 deg. This would directly map the theta-dependence predicted by Eq. (4) — delta vanishes iff theta = pi/2 and is generically non-zero otherwise (exact functional form determined numerically; the unrenormalized leading-order structure goes as cos theta but overestimates |delta| by ~5.5x due to renormalization). A null result across all theta would exclude the class Eq. (2-3) down to the sensitivity floor of the apparatus (beta ~ 0.02 at N = 200,000).
 
 ### 11.2 -- Multi-Observer Extension
 
@@ -522,7 +522,7 @@ The geometric cancellation theorem generalizes to N > 2 observers, where the num
 
 ### 11.3 -- Platform Independence
 
-While the protocol targets the optical Bong et al. apparatus, the theorem in Section 4 is platform-agnostic. Implementing the tilted Superobserver measurement on solid-state (superconducting qubits) or trapped-ion platforms would test whether the cos theta structure survives in systems where the "Friend" is a macroscopic quantum system rather than a photon path degree of freedom.
+While the protocol targets the optical Bong et al. apparatus, the theorem in Section 4 is platform-agnostic. Implementing the tilted Superobserver measurement on solid-state (superconducting qubits) or trapped-ion platforms would test whether the theta-dependent structure (vanishing iff theta = pi/2, non-zero otherwise) persists when the "Friend" is a macroscopic quantum system rather than a photon path degree of freedom.
 
 ### 11.4 -- Locality Closure
 
@@ -602,7 +602,7 @@ Both predict suppression ratio ~2 for 2BSM/1BSM. See `T1B_model_comparison_RCA.m
 
 ---
 
-## Section 15 -- Cross-Reference: SOT -> Manuscript v21
+## Section 15 -- Cross-Reference: SOT -> Manuscript v94
 
 | SOT Section | Manuscript v21 Section | Preserved? | Notes |
 |------------|----------------------|-----------|-------|
@@ -687,4 +687,4 @@ All values from exact numerical density matrix computation (v12+).
 
 ---
 
-*SOT synthesized 2026-05-25. Sources: draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v21, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v21 + supplemental S1-S3. All numbers from exact numerical density matrix computation (v12+).*
+*SOT synthesized 2026-05-25, re-synced 2026-05-31 to manuscript v94. Sources: draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v94, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v94 + supplemental S1-S3. All numbers from exact numerical density matrix computation (v12+). Density matrix: SPDC noise model rho_mu = mu|Phi->⟨Phi-| + (1-mu)/2·(|HV>⟨HV|+|VH>⟨VH|). cos θ downgrade: all instances updated to "vanishes iff θ=π/2; non-zero otherwise; exact θ-dependence numerical". FOM table: per-θ-reoptimized values from manuscript v94 (theta window [20°,45°], not [20°,55°]).*

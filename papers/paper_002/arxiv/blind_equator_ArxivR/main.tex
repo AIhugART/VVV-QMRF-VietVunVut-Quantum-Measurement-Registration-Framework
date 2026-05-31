@@ -1,7 +1,7 @@
 % ===================================================================
 % Have Optical Wigner's Friend Experiments Been Blind to a Geometric
 % Degree of Freedom?
-% Draft v91 — 2026-05-26
+% Draft v94 — 2026-05-27
 % Target: arXiv quant-ph → Phys. Rev. A
 % ===================================================================
 
@@ -25,7 +25,7 @@
 \homepage{https://vvvqmrf.com}
 \affiliation{Independent Researcher, Vietnam}
 
-\date{2026-05-26}
+\date{2026-05-27}
 
 \begin{abstract}
 The two published optical Wigner's Friend experiments have operated
@@ -61,7 +61,8 @@ for LF optimization, not by design --- the one measurement geometry ($\theta = \
 at which an entire class of overlap-dependent quantum deformations cancels
 identically. A single waveplate breaks this accidental fixed point, enabling
 the first experimental probe of this class. The predicted signal
-$\delta\langle AB\rangle \propto \cos\theta$ is a genuine observable, not a coordinate artifact
+$\delta\langle AB\rangle$ vanishes identically at $\theta = \pi/2$ and is generically non-zero
+otherwise --- a genuine observable, not a coordinate artifact
 (Lemma~1, \S\ref{sec:lemma}). The paper's contribution is twofold: a geometric null
 theorem (Proposition~1) showing that equatorial measurements leave the
 overlap-only class systematically unexplored, and a single-waveplate
@@ -76,8 +77,8 @@ probability takes the form $P'(a,b|x,y) = P_{\rm QM}(a,b|x,y) \cdot g(|\langle b
 for any function $g: [0,1] \to \mathbb{R}$ and normalization $Z$. At the equatorial
 plane ($\theta = \pi/2$), $|\langle b|d\rangle|^2 = 1/2$ for all outcome pairs $(b,d)$; hence
 $g(|\langle b|d\rangle|^2)$ is constant and $P' = P_{\rm QM}$ identically --- the equator is a
-geometric null point for every overlap-only deformation. The $\cos\theta$
-signal is invariant under any basis redefinition (Lemma~1, \S\ref{sec:lemma}).
+geometric null point for every overlap-only deformation. The signal
+$\delta\langle AB\rangle(\theta)$ is invariant under any basis redefinition (Lemma~1, \S\ref{sec:lemma}).
 
 Breaking the cancellation requires only a single quarter-wave plate:
 re-inserting the QWP into the Bong et al.\ (2020) apparatus tilts the
@@ -176,8 +177,9 @@ results constrained previously unconstrained parameter space. The
 overlap-only parametrization serves the identical methodological function
 --- $\beta$ is a search parameter whose null result constrains new parameter space
 at the $\sim\!10^{-2}$ scale. Operationally, $\beta$ is directly measurable via $\delta\langle AB\rangle$ at
-any $\theta \neq \pi/2$, with the $\cos\theta$ scaling under $\theta$-sweep (\S\ref{sec:discussion}) providing the
-distinguishing signature that separates an overlap-dependent signal from
+any $\theta \neq \pi/2$, with the $\theta$-dependent variation under $\theta$-sweep (\S\ref{sec:discussion}) providing the
+distinguishing signature (vanishing identically at $\theta = \pi/2$ and determined
+numerically otherwise) that separates an overlap-dependent signal from
 conventional systematics.
 
 \textbf{Physical context (speculative).} In weak measurement~\cite{Aharonov1988}, the weak
@@ -215,8 +217,10 @@ This depends only on Bloch sphere geometry. Eq.~(\ref{eq:model_class})--(\ref{eq
 the theorem holds for any overlap function.
 The experimental consequence is that equatorial measurements cannot
 distinguish standard QM from any overlap-dependent deformation within this
-class. The distinctive experimental signature is $\delta\langle AB\rangle \propto \cos\theta$: this
-scaling is distinct from conventional systematics (which either cancel in
+class. The distinctive experimental signature is that $\delta\langle AB\rangle$ vanishes
+identically at $\theta = \pi/2$ and is generically non-zero for $\theta \neq \pi/2$ (exact
+$\theta$-dependence determined numerically, \S\ref{sec:sensitivity}): this
+structure is distinct from conventional systematics (which either cancel in
 $\delta\langle AB\rangle$ or produce non-geometric $\theta$-dependence) and is a genuine observable,
 not a gauge artifact (Lemma~1, \S\ref{sec:lemma}).
 
@@ -297,12 +301,12 @@ former and is silent on the latter.
 \centering
 \caption{Distinction between KS contextuality, overlap-dependence, and weak measurement.}
 \label{tab:contextuality}
-\begin{tabular}{p{0.22\columnwidth}p{0.30\columnwidth}p{0.30\columnwidth}}
+\begin{tabular}{p{0.18\columnwidth}p{0.24\columnwidth}p{0.26\columnwidth}p{0.24\columnwidth}}
 \toprule
 Property & KS Contextuality & Overlap-Dependence (this work) & Weak Measurement~\cite{Aharonov1988} \\
 \midrule
 Depends on & Measurement setting & Measurement registration (geometric relationship to prior outcome) & Postselection choice \\
-Observable & Outcome distributions across incompatible settings & $\delta\langle AB\rangle \propto \cos\theta$ at fixed setting, varying $\theta$ & Weak value $A_w$ \\
+Observable & Outcome distributions across incompatible settings & $\delta\langle AB\rangle(\theta)$ vanishing iff $\theta = \pi/2$, at fixed setting & Weak value $A_w$ \\
 Constrained by & Bell-KS inequalities & Proposition~1 (equatorial cancellation) & --- \\
 \bottomrule
 \end{tabular}
@@ -456,20 +460,12 @@ Tilting the Superobserver opens access to this previously untested sector (\S\re
 \subsection{Breaking the Cancellation}
 \label{sec:breaking}
 
-Any $\theta \neq \pi/2$ breaks the cancellation. A grid search over
-$(\theta, \phi_2, \phi_3, \beta_{\rm Bob})$
-maximizing $\min(n_\sigma^{\rm LF}, n_\sigma^{\rm signal})$ yields
-$\theta = 31^\circ$ as optimal; the figure of
-merit remains above $5\sigma$ for the broad range $\theta \in [20^\circ, 55^\circ]$
-(Supplemental~S2).
-Representative FOM values at $\mu = 0.95$: $9.6$ ($\theta = 20^\circ$), $8.6$ ($\theta = 31^\circ$, optimal),
-$7.1$ ($\theta = 45^\circ$), $5.0$ ($\theta = 58^\circ$, $5\sigma$ threshold), and $0$ ($\theta = 90^\circ$, cancellation).
+Any $\theta \neq \pi/2$ breaks the cancellation. A grid search over $(\theta, \phi_2, \phi_3, \beta_{\rm Bob})$ maximizing $\text{FOM}(\theta, \beta, N) = \min(n_\sigma^{\rm LF}, n_\sigma^{\rm signal})$ with $\beta = 0.30$ yields a broad plateau peaking near $\theta \approx 31^\circ$--$35^\circ$ ($\text{FOM} = 8.6$--$8.8$). At $\beta = 0.30$, $n_\sigma^{\rm signal} \gg n_\sigma^{\rm LF}$ across all $\theta$, so the FOM is bounded by $n_\sigma^{\rm LF}$. Representative FOM values at $\mu = 0.95$, $\beta = 0.30$ (per-$\theta$ angle re-optimization, Supplemental~S2): $5.8$ ($\theta = 20^\circ$), $8.6$ ($\theta = 31^\circ$), $8.8$ ($\theta = 35^\circ$), $6.0$ ($\theta = 45^\circ$), $0$ ($\theta = 58^\circ$, Gen LF 1 becomes negative), and $0$ ($\theta = 90^\circ$, cancellation); $\text{FOM} > 5\sigma$ for $\theta \in [20^\circ, 45^\circ]$. At the minimum detectable $\beta \approx 0.07$, the FOM is signal-limited: optimal $\theta = 46^\circ$ ($\text{FOM} = 5.4$) and $>5\sigma$ range $\theta \in [35^\circ, 46^\circ]$ (Supplemental~S2).
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{fig2_fom_vs_theta.png}
-\caption{Figure of merit vs polar angle $\theta$, showing broad optimum at $\theta \approx 31^\circ$
-and $5\sigma$ detection boundary spanning $\theta \in [20^\circ, 55^\circ]$.}
+\caption{Figure of merit vs polar angle $\theta$, showing plateau near $\theta \approx 31^\circ$--$35^\circ$ ($\beta = 0.30$) and $5\sigma$ detection boundary spanning $\theta \in [20^\circ, 45^\circ]$.}
 \label{fig:fom_theta}
 \end{figure}
 
@@ -477,19 +473,18 @@ The wide optimal window means the protocol tolerates angular misalignment of
 $\pm 11^\circ$ before dropping below $5\sigma$ --- substantially more forgiving than the
 alignment precision demanded by the standard Bong protocol.
 
-The optimum at $\theta = 31^\circ$ reflects a trade-off between two monotonic trends.
-As $\theta \to 0^\circ$, the $|\cos\theta|$ signal is largest, but the Gen LF~1 violation
+The optimum at $\theta \approx 31^\circ$--$35^\circ$ reflects a trade-off between two monotonic trends.
+As $\theta \to 0^\circ$, the overlap asymmetry is largest, but the Gen LF~1 violation
 weakens because measurement settings approach a common axis, reducing the
 inequality's capacity to separate LF-violating from LF-satisfying theories.
 As $\theta \to 90^\circ$, the LF violation is strongest but the signal vanishes
-($\cos\theta \to 0$, \S\ref{sec:theorem}). Analytically, the figure of merit approximates
-$\text{FOM}(\theta) \propto \min(|\cos\theta|, f_{\rm LF}(\theta))$, where $f_{\rm LF}(\theta)$ is a monotonically
-increasing function of $\theta$ (strongest LF violation at equator); the
-intermediate optimum emerges from the intersection of these competing
+(equatorial cancellation, \S\ref{sec:theorem}). The intermediate
+plateau emerges from the intersection of these competing
 trends, with the exact location set by the Gen LF~1 inequality
 coefficients via grid search (Supplemental~S2). The broad plateau
-(FOM $> 5\sigma$ for $\theta \in [20^\circ, 55^\circ]$) means the exact optimum is not critical ---
-any angle in this range produces a viable experiment.
+(FOM $> 5\sigma$ for $\theta \in [20^\circ, 45^\circ]$) means the exact optimum is not critical ---
+any angle in this range produces a viable experiment. We adopt $\theta = 31^\circ$ as the reference angle throughout
+because it coincides with the QWP-determined tilt in the Bong apparatus.
 
 Gen LF~1($\theta$) and $\delta\langle AB\rangle(\theta)$ are independent observables from the same
 coincidence data. Gen LF~1 aggregates all eleven correlators; its
@@ -572,8 +567,10 @@ timing and stability estimates are provided in Supplemental~S2.
 \label{sec:predictions}
 
 All numerical values are computed from the density matrix
-$\rho_\mu = \mu|\Phi^-\rangle\langle\Phi^-| + (1-\mu)I/4$ for the
-singlet state with visibility $\mu = 0.95$.
+$\rho_\mu = \mu|\Phi^-\rangle\langle\Phi^-| + (1-\mu)(|HV\rangle\langle HV| + |VH\rangle\langle VH|)/2$ for the
+singlet state with visibility $\mu = 0.95$. SPDC produces photon pairs only in the
+$\{|HV\rangle, |VH\rangle\}$ subspace; the noise term is the maximally mixed state
+within that subspace, not the full $I/4$.
 
 \subsection{Correlators at $\theta = 31^\circ$, $\mu = 0.95$}
 \label{sec:correlators}
@@ -648,13 +645,7 @@ $\beta \sim 0.05$--$0.10$ (single-setting) and $\beta \sim 0.04$--$0.06$ (combin
 thresholds are illustrative --- no existing theory predicts a specific $\beta$
 value; they quantify the experiment's capability for Eq.~(\ref{eq:model_class})--(\ref{eq:fperp}).
 
-\textbf{Experimental discriminator.} Standard QM predicts $\delta\langle AB\rangle = 0$ for all $\theta$.
-Eq.~(\ref{eq:model_class})--(\ref{eq:fperp}) predicts $\delta\langle AB\rangle \propto \beta \cos\theta$ --- a
-functional form testable by $\theta$-sweep (\S\ref{sec:discussion}). The $\cos\theta$ signature is not a
-reparameterization of QM: it is distinct from conventional systematics
-(which either cancel in $\delta\langle AB\rangle$ or produce non-geometric $\theta$-dependence),
-making a $\cos\theta$ signal difficult to reproduce without overlap-dependent
-physics (Lemma~1, \S\ref{sec:lemma}).
+\textbf{Experimental discriminator.} Standard QM predicts $\delta\langle AB\rangle = 0$ for all $\theta$. Eq.~(\ref{eq:model_class})--(\ref{eq:fperp}) predicts $\delta\langle AB\rangle = 0$ at $\theta = \pi/2$ (equatorial cancellation) and $\delta\langle AB\rangle \neq 0$ for $\theta \neq \pi/2$, with exact $\theta$-dependence determined numerically (the unrenormalized leading-order structure goes as $\cos\theta$, but renormalization modifies the functional form; see Supplemental~S2). This signature is testable by $\theta$-sweep (\S\ref{sec:discussion}) and is not a reparameterization of QM: it is distinct from conventional systematics (which either cancel in $\delta\langle AB\rangle$ or produce non-geometric $\theta$-dependence), making a $\theta$-dependent $\delta\langle AB\rangle$ signal difficult to reproduce without overlap-dependent physics (Lemma~1, \S\ref{sec:lemma}).
 
 \textbf{$\beta$ in context.} The coupling $\beta$ has no a priori prediction --- analogous to
 SME coefficients at inception (see \S\ref{sec:why_class} for the methodological parallel).
@@ -735,7 +726,7 @@ Accidentals & Timing windows $+$ dark-count subtraction & ${<}1$ \\
 
 RSS total remains below the Poisson floor. Exact $\sigma$ values and Monte Carlo
 correlation analysis in Supplemental~S2. A $\phi$-scramble control ($N_\phi \ge 10$, fit
-$\delta\langle AB\rangle(\phi) = A + B\cos(2\phi) + C\sin(2\phi)$) distinguishes geometric $\cos\theta$
+$\delta\langle AB\rangle(\phi) = A + B\cos(2\phi) + C\sin(2\phi)$) distinguishes geometric $\theta$-dependent
 signal ($A \neq 0$, $B,C \approx 0$) from birefringence artifacts ($B$ or $C \neq 0$) at
 the $5\sigma$ level. Detector inefficiency cannot fake a $\beta$ signal: residual
 $\theta$-dependent efficiency biases $\delta$ toward zero~\cite{Giustina2015}.
@@ -764,11 +755,11 @@ Full robustness analysis in Supplemental~S2.
 A non-zero $\delta\langle AB\rangle$ at $\theta = 31^\circ$ would demonstrate Superobserver-Friend
 correlations departing from standard QM at a previously untested geometry.
 The overlap-only class is definitively falsified if: (i)~a $\theta$-sweep
-($15^\circ$--$75^\circ$) shows $\delta\langle AB\rangle = 0$ at all angles to within $\pm 0.003$ (statistical
-floor at $N = 200{,}000$ per setting), excluding the $\cos\theta$ signature; or
-(ii)~$\delta\langle AB\rangle(\theta)$ deviates systematically from $\cos\theta$ after accounting for
-systematics. Either outcome is informative: falsification closes the
-overlap-only window; a $\cos\theta$ signal opens it.
+($15^\circ$--$75^\circ$) shows $\delta\langle AB\rangle = 0$ at all non-equatorial angles to within $\pm 0.003$
+(statistical floor at $N = 200{,}000$ per setting); or
+(ii)~$\delta\langle AB\rangle(\theta)$ is non-zero at $\theta = \pi/2$ (violating the equatorial cancellation theorem) after
+accounting for systematics. Either outcome is informative: falsification closes the
+overlap-only window; a $\theta$-dependent signal opens it.
 
 \begin{table}[H]
 \centering
@@ -779,9 +770,9 @@ overlap-only window; a $\cos\theta$ signal opens it.
 Observable & Standard QM & Overlap-only (Eq.~\ref{eq:model_class}--\ref{eq:fperp}) \\
 \midrule
 Gen LF~1 at $\theta = 31^\circ$ & $+0.0891 \pm 0.0103$ ($8.6\sigma$) & Same (LF violation preserved) \\
-$\delta\langle AB\rangle$ at $\theta = 31^\circ$ & $0$ & $\beta\cos(31^\circ) \approx 0.857\beta$ \\
+$\delta\langle AB\rangle$ at $\theta = 31^\circ$ & $0$ & $\approx 0.115\beta$ (numerical) \\
 $\delta\langle AB\rangle$ at $\theta = \pi/2$ & $0$ & $0$ (equatorial cancellation) \\
-$\delta\langle AB\rangle(\theta)$ functional form & $\delta = 0$ $\forall\theta$ & $\delta \propto \cos\theta$ \\
+$\delta\langle AB\rangle(\theta)$ functional form & $\delta = 0$ $\forall\theta$ & $\delta = 0$ iff $\theta = \pi/2$; non-zero otherwise (exact form numerical) \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -792,9 +783,11 @@ Full interpretation analysis in Supplemental~S3.
 \label{sec:future}
 
 \textbf{$\theta$-sweep.} A systematic scan from $\theta = 15^\circ$ to $75^\circ$ in $\sim\!10^\circ$ steps would
-directly map the $\cos\theta$ dependence predicted by Eq.~(\ref{eq:cancel}). To prevent
+directly map the $\theta$-dependence of $\delta\langle AB\rangle$ predicted by Eq.~(\ref{eq:model_class}), testing
+for the equatorial zero ($\delta = 0$ at $\theta = 90^\circ$) and non-zero signal at
+$\theta \neq 90^\circ$. To prevent
 analysis bias, the sweep should be performed blind (randomized $\theta$ sequence,
-$\cos\theta$ fit finalized before unmasking). A null result across all $\theta$
+analysis finalized before unmasking). A null result across all $\theta$
 excludes the overlap-only class to $\beta \approx 0.02$ ($N = 200{,}000$ per setting).
 
 \textbf{Multi-observer extension.} A generalization to $N > 2$ observers is
