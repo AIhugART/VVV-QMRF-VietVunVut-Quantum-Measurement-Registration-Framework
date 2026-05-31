@@ -199,6 +199,47 @@ K_F1⊥_K K_W ∧ K_F2⊥_K K_W ⇏ K_F1⊥_K K_F2  [BC-2 MANDATORY]
 
 ---
 
+## 4 (bis). N=3 Concrete Model — EWF Hierarchical (F1, F2, W)
+
+**RCA basis:** `04_governance/RCA_phi_O5_3_n3_concrete_model_2026_05_31.md` (3-Round, 4.57/5 PASS)
+**Topology:** Hierarchical — F1 measures S, F2 measures F1's lab L_1, W measures joint lab L_2.
+
+```
+H_joint = L_2 = H_S ⊗ H_{F1_mem} ⊗ H_{F2_mem}
+
+ι_1: B(H_S) → B(L_2):  A ↦ A ⊗ 1_{F1_mem} ⊗ 1_{F2_mem}
+ι_2: B(L_1) → B(L_2):  A ↦ A ⊗ 1_{F2_mem}
+ι_W = identity on B(L_2)
+
+Individual maps:
+  φ_1(k_F1) = P_{o_F1} ∈ B(H_S)
+  φ_2(k_F2) = P_{o_F2} ∈ B(L_1)
+  φ_W(k_W)  = P_{o_W}  ∈ B(L_2)
+
+φ_colim assignments (unique by φ-N1):
+  k_F1 → P_{o_F1} ⊗ 1_{F1_mem} ⊗ 1_{F2_mem}  ∈ B(L_2)
+  k_F2 → P_{o_F2} ⊗ 1_{F2_mem}                 ∈ B(L_2)
+  k_W  → P_{o_W}                                ∈ B(L_2)
+```
+
+### Verification Table
+
+| Condition | Result | Notes |
+|-----------|--------|-------|
+| φ-N1 Colimit Uniqueness | ✅ VERIFIED | Unique map from T4-H Step 4 + nested ι_i consistency |
+| φ-N2 Associativity | ✅ VERIFIED | Route A (K_joint(K_{12},K_W)) = Route B (direct colimit) for all events |
+| φ-N3 Pair (F1,W) | ✅ [ι_1(P_{o_F1}), P_{o_W}] ≠ 0 | P_{o_W} entangled across L_2; P_{o_F1}⊗1⊗1 acts on H_S only |
+| φ-N3 Pair (F2,W) | ✅ [ι_2(P_{o_F2}), P_{o_W}] ≠ 0 | P_{o_W} entangled across L_1⊗H_{F2_mem}; P_{o_F2}⊗1 acts on L_1 |
+| φ-N3 Pair (F1,F2) Case A | ✅ [ι_1(P_{o_F1}), ι_2(P_{o_F2})] ≠ 0 | F2 interference basis on L_1 → K_{F1}⊥_K K_{F2} |
+| φ-N3 Pair (F1,F2) Case B | ✅ Commutator = 0 | F2 product basis → K_{F1}⊬_K K_{F2} (correct — no ⊥_K) |
+| BC-2 Non-transitivity | ✅ MANDATORY CONFIRMED | K_{F1}⊥_K K_W ∧ K_{F2}⊥_K K_W ⇏ K_{F1}⊥_K K_{F2} |
+
+**Consistency verdict:** φ-N1/N2/N3 all verified in hierarchical 3-OBS scenario.
+**Claim class:** Class D (1 concrete scenario; general N proof deferred to φ-O5-1/φ-O5-2).
+**Open sub-items:** φ-O5-3b (parallel topology); φ-O5-3c (quantum circuit language).
+
+---
+
 ## 6. K ≠ H Boundary Check
 
 φ-N1/N2/N3 do NOT: modify K1-K8; assert K_colim ∈ H; determine ρ_joint; import EX edges. **K ≠ H: PRESERVED** ✅
@@ -222,9 +263,13 @@ K_F1⊥_K K_W ∧ K_F2⊥_K K_W ⇏ K_F1⊥_K K_F2  [BC-2 MANDATORY]
 |----|----------|---------|
 | φ-O5-1 | Is φ-N1 a strict logical consequence of φ-7-N? Formal proof needed. | High |
 | φ-O5-2 | Are φ-N1+N2+N3 sufficient for φ: K_colim→B(H) to be structure-preserving? | High |
-| **φ-O5-3** | **N=3 concrete model: verify φ-N1/N2/N3 for (F1,F2,W) from 3observer_registration_transition.md. Worked example analogous to N=2 §4+§7.** | **High — first priority** |
-| φ-O5-4 | B(H⊗H⊗H) explicit expression for φ-N2 commutativity with T5 isomorphism. | Medium |
-| φ-O5-5 | EX compass validation for N=3: does K↔ρ EX for N=3 produce consistent predictions when φ-N1/N2/N3 hold? | Medium |
+| ~~φ-O5-3~~ | ~~N=3 concrete model~~ | ✅ **VERIFIED** (hierarchical topology, RCA 4.57/5, `RCA_phi_O5_3_n3_concrete_model_2026_05_31.md`). See §4 bis. Sub-items open: φ-O5-3b (parallel topology), φ-O5-3c (circuit language). | — |
+| φ-O5-1 | Is φ-N1 a strict logical consequence of φ-7-N? Formal proof. | High |
+| φ-O5-2 | Are φ-N1+N2+N3 sufficient for structure-preservation? | High |
+| φ-O5-3b | Parallel topology: verify φ-N1/N2/N3 when W measures F1 and F2 independently. | Medium |
+| φ-O5-3c | Quantum circuit language for φ-N3 Case A/B (experimental connection). | Medium |
+| φ-O5-4 | Explicit B(L_2) expression for φ-N2 commutativity with T5 isomorphism. | Medium |
+| φ-O5-5 | EX compass validation: K↔ρ for N=3 consistent with φ-N1/N2/N3. | Medium |
 
 ---
 
@@ -233,7 +278,8 @@ K_F1⊥_K K_W ∧ K_F2⊥_K K_W ⇏ K_F1⊥_K K_F2  [BC-2 MANDATORY]
 | Date | Version | Change |
 |------|---------|--------|
 | 2026-05-31 | 0.1 | Initial draft. φ-N1 (colimit uniqueness), φ-N2 (associativity), φ-N3 (pair-independent commutator) derived from 3-Round RCA (4.54/5). 3 generalized conditions (φ-2-N, φ-6-N, φ-7-N). 5 open items. Class D. |
+| 2026-05-31 | 0.2 | §4 bis N=3 Concrete Model added (hierarchical F1,F2,W). φ-O5-3 VERIFIED (3-Round RCA 4.57/5, `RCA_phi_O5_3_n3_concrete_model_2026_05_31.md`). φ-N1/N2/N3 all verified. BC-2 non-transitivity confirmed. §8 open items updated: φ-O5-3 closed; φ-O5-3b/3c added. |
 
 ---
 
-*φ-O5 v0.1 — 2026-05-31. Class D proposed conditions. Next: φ-O5-3 N=3 concrete model.*
+*φ-O5 v0.2 — 2026-05-31. φ-N1/N2/N3 Class D proposed + verified in hierarchical N=3. Next: φ-O5-1 (φ-N1 formal proof) or φ-O5-3b (parallel topology).*
