@@ -6,6 +6,20 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v43 (2026-05-31) — φ-O5 Conditions Derived: φ-N1+φ-N2+φ-N3 for N>2 (3-Round RCA 4.54/5)
+
+### Added
+- `04_governance/RCA_phi_O5_n_observer_conditions_2026_05_31.md` — 3-Round RCA decision (NEW): 3 new conditions (φ-N1/N2/N3) for N>2 derived. Aggregate 4.54/5 PASS.
+- `meta_architecture/phi_O5_n_observer_extension_v0_1.md` — φ-O5 derivation document (NEW): φ-N1 (Colimit Uniqueness, corollary T4-H), φ-N2 (Associativity, conditional T5), φ-N3 (Pair-Independent Commutator, ⊥_K non-transitivity). Class D proposed necessary conditions. 5 open items (φ-O5-1…φ-O5-5), next priority: φ-O5-3 (N=3 concrete model).
+
+### Updated
+- `meta_architecture/K_to_BH_Structure_Preserving_Map_v0_1.md` — Version 0.4→0.5. §5 φ-O5 row: derivation summary added. §10 changelog entry added.
+
+### Open
+- [φ-O5-3] N=3 concrete model — verify φ-N1/N2/N3 for (F1,F2,W) scenario. First priority for next session.
+
+---
+
 ## v42 (2026-05-31) — Level 4 Freeze Declared: T4+T7 Class C, φ-O5 ACTIVE (3-Round RCA 4.69/5)
 
 ### Added
