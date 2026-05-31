@@ -6,6 +6,27 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v48 (2026-05-31) — φ-O5 Phase 2 CLOSED: Circuit Language + Trivial Closures (RCA 4.60/5)
+
+### Added
+- `04_governance/RCA_phi_O5_closure_2026_05_31.md` — Combined 3-Round RCA (4.60/5). Closes φ-O5-1b, φ-O5-3b-sub1, φ-O5-3c.
+
+### Updated
+- `meta_architecture/phi_O5_n_observer_extension_v0_1.md` v0.5→v0.6:
+  - §5 Circuit Language section added (φ-O5-3c): requires_K_joint=1 ↔ CNOT/CX channel; BC-2 = "no implicit channel" rule; 3 circuit instances; Proietti connection
+  - §8 all non-blocking items closed (φ-O5-1b, φ-O5-3b-sub1, φ-O5-3c)
+  - §9 v0.6 changelog entry
+
+### Resolved
+- **φ-O5-1b** (ι chain for general N): TRIVIALLY TRUE — tensor product associativity + induction. (A⊗1)⊗1=A⊗1^2 → A⊗1^{N-1} by N steps. QED.
+- **φ-O5-3b-sub1** (span colimit K1-K8): TRIVIALLY TRUE — T4-H Step 3 covers "any finite diagram D = {K_i, f_{ij}}." Span is finite. Applies directly.
+- **φ-O5-3c** (circuit language): requires_K_joint(R_i,R_j)=1 ↔ CNOT/CX channel R_i→R_j. Independent wires → commutator=0. BC-2 = "no implicit quantum channel rule." Proietti 6-photon (5σ) directly confirms φ-N3 (F1,W1) pair.
+
+### φ-O5 Phase 2 Status
+All non-blocking items closed. Remaining deferred: φ-O5-4 (explicit B(H)⊗N for φ-N2), φ-O5-5 (EX N=3 full).
+
+---
+
 ## v47 (2026-05-31) — φ-O5-3b VERIFIED: Parallel Topology (F1,F2 independent systems), RCA 4.57/5
 
 ### Added

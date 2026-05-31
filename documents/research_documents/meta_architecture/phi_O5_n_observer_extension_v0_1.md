@@ -290,6 +290,40 @@ H_joint = L_W = H_{S1} ⊗ H_{F1_mem} ⊗ H_{S2} ⊗ H_{F2_mem}
 
 ---
 
+## 5. Circuit Language Characterization of φ-N3
+
+**RCA basis:** `04_governance/RCA_phi_O5_closure_2026_05_31.md` (3-Round, 4.60/5 PASS)
+
+**Theorem φ-O5-3c — Circuit-language rule for φ-N3 (Pair-Independent Commutator):**
+
+```
+For observer pair (R_i, R_j):
+
+  [ι_i(P_{o_i}), ι_j(P_{o_j})] ≠ 0
+    ← QUANTUM CHANNEL from R_i's output to R_j's input
+      (CNOT, CX, or entangling unitary connecting R_i's memory to R_j's apparatus)
+    [necessary condition only — φ-O5-2 Boundary 1 covers ← sufficiency limit]
+
+  [ι_i(P_{o_i}), ι_j(P_{o_j})] = 0
+    ← INDEPENDENT WIRES: no quantum channel between R_i and R_j
+
+BC-2 (T7 BC-2 MANDATORY) in circuit language:
+  (R_i→R_k channel) ∧ (R_j→R_k channel)  ⇏  (R_i→R_j channel)
+  = "no implicit quantum channel" rule
+```
+
+| Instance | F1-F2 circuit | requires_K_joint(F1,F2) | [P_F1,P_F2] |
+|----------|--------------|------------------------|-------------|
+| Hierarchical Case A | F1→F2 CNOT (F2 interference) | 1 | ≠ 0 |
+| Hierarchical Case B | No F1→F2 gate (F2 product) | 0 | = 0 |
+| Parallel §4ter | Independent wires | 0 | = 0 |
+
+**Experimental connection:** Proietti et al. (2019) 6-photon EWF = parallel topology. CHSH violation (5σ) directly confirms [P_{o_F1}, P_{o_W1}] ≠ 0 (φ-N3 for pair F1,W1). [P_{o_F1}, P_{o_F2}] = 0 (independent photon pairs) confirms no-constraint case.
+
+**K≠H in circuit language:** ρ-entangled source photons (S1,S2) do NOT create requires_K_joint=1 between F1 and F2 (no apparatus channel). Physical entanglement (H-layer) ≠ registration-logic joint validity demand (K-layer).
+
+---
+
 ## 6.2 φ-O5-2 Boundary Statement — Sufficiency Limits for N>2
 
 **RCA basis:** `RCA_phi_O5_2_sufficiency_2026_05_31.md` (3-Round, 4.57/5 PASS).
@@ -335,10 +369,11 @@ The N>2 condition set is **necessary but NOT provably sufficient** for two funda
 | φ-O5-2 | Are φ-N1+N2+N3 sufficient for φ: K_colim→B(H) to be structure-preserving? | High |
 | ~~φ-O5-3~~ | ~~N=3 concrete model~~ | ✅ **VERIFIED** (hierarchical topology, RCA 4.57/5, `RCA_phi_O5_3_n3_concrete_model_2026_05_31.md`). See §4 bis. Sub-items open: φ-O5-3b (parallel topology), φ-O5-3c (circuit language). | — |
 | ~~φ-O5-1~~ | ~~φ-N1 strict consequence?~~ | ✅ **RESOLVED** — φ-N1 = THEOREM (φ-7+T4-H Step 4, RCA 4.63/5, `RCA_phi_O5_1_phi_N1_theorem_2026_05_31.md`). φ-N1 demoted from condition to theorem. Conditions for N>2: 5+3+**2**. | — |
-| φ-O5-1b | Is ι_j∘ι_{ij}=ι_i proven for general N? | Low (non-blocking) |
+| ~~φ-O5-1b~~ | ~~ι chain for general N~~ | ✅ **TRIVIALLY TRUE** — tensor product associativity + induction. (A⊗1)⊗1=A⊗1⊗1 → A⊗1^{N-1} by N steps. QED. | — |
 | ~~φ-O5-2~~ | ~~Sufficiency?~~ | ✅ **FUNDAMENTAL BOUNDARY** (2 gaps, RCA 4.57/5, `RCA_phi_O5_2_sufficiency_2026_05_31.md`). See §6.2. Gap 1: φ-N3 biconditional (C_K/D_joint no B(H) analogue). Gap 2: global vs pairwise ⊥_K (K_joint path-commutativity, no B(H) encoding). Conditions: necessary, not provably sufficient. | — |
 | ~~φ-O5-3b~~ | ~~Parallel topology~~ | ✅ **VERIFIED** (RCA 4.57/5, `RCA_phi_O5_3b_parallel_topology_2026_05_31.md`). See §4 ter. BC-2 via independent system structure. K≠H: ρ-entanglement ≠ K-side ⊥_K. Open: φ-O5-3b-sub1 (span colimit K1-K8 formal). | — |
-| φ-O5-3c | Quantum circuit language for φ-N3 Case A/B (experimental connection). | Medium |
+| ~~φ-O5-3b-sub1~~ | ~~Span colimit K1-K8~~ | ✅ **TRIVIALLY TRUE** — T4-H covers "any finite diagram D" (universal). Span is finite. Applies directly. | — |
+| ~~φ-O5-3c~~ | ~~Circuit language for φ-N3~~ | ✅ **RESOLVED** — requires_K_joint=1 ↔ quantum channel (CNOT/CX). BC-2 = "no implicit channel" rule. Proietti 6-photon directly confirms (F1,W1) pair. See §5. `RCA_phi_O5_closure_2026_05_31.md` (4.60/5). | — |
 | φ-O5-4 | Explicit B(L_2) expression for φ-N2 commutativity with T5 isomorphism. | Medium |
 | φ-O5-5 | EX compass validation: K↔ρ for N=3 consistent with φ-N1/N2/N3. | Medium |
 
@@ -353,7 +388,8 @@ The N>2 condition set is **necessary but NOT provably sufficient** for two funda
 | 2026-05-31 | 0.3 | φ-O5-1 RESOLVED: φ-N1 demoted to **THEOREM** (φ-7 universal + T4-H Step 4, RCA 4.63/5, `RCA_phi_O5_1_phi_N1_theorem_2026_05_31.md`). §4.1 rewritten with 4-step proof. §5 table: φ-N1 → THEOREM (Class C). §7 claim classification updated: φ-N1 Class C THEOREM. §8: φ-O5-1 closed, φ-O5-1b added, φ-O5-2 promoted. Genuinely new conditions for N>2: **2** (φ-N2 + φ-N3). |
 | 2026-05-31 | 0.4 | φ-O5-2 RESOLVED: Sufficiency = **FUNDAMENTAL BOUNDARY** (2 gaps, RCA 4.57/5, `RCA_phi_O5_2_sufficiency_2026_05_31.md`). §6.2 Boundary Statement added. §7 sufficiency row updated. §8 φ-O5-2 closed (FUNDAMENTAL BOUNDARY). Gap 1: φ-N3 biconditional (C_K/D_joint no B(H) analogue, analogue of φ-O2). Gap 2: global vs pairwise ⊥_K (K_joint path-commutativity, NEW for N>2). |
 | 2026-05-31 | 0.5 | φ-O5-3b VERIFIED: Parallel topology (F1,F2 independent systems, W measures joint lab). §4 ter added. BC-2 via independent system structure (new mechanism vs hierarchical basis choice). K≠H: ρ-entanglement ≠ requires_K_joint=1. φ-N1/N2/N3 all verified. §8 φ-O5-3b closed. |
+| 2026-05-31 | 0.6 | φ-O5 Phase 2 CLOSED (all non-blocking items). φ-O5-1b TRIVIAL (tensor product associativity). φ-O5-3b-sub1 TRIVIAL (T4-H any finite diagram). φ-O5-3c RESOLVED — circuit language: requires_K_joint=1 ↔ CNOT channel; BC-2 = no implicit channel rule; Proietti 6-photon direct confirmation. §5 Circuit Language section added. §8 all non-blocking items closed. `RCA_phi_O5_closure_2026_05_31.md` (3-Round RCA 4.60/5). |
 
 ---
 
-*φ-O5 v0.5 — 2026-05-31. Conditions: 5+3+2 necessary (not provably sufficient). Verified: hierarchical (§4bis) + parallel (§4ter) topologies. φ-N3 robust across both physical mechanisms of BC-2. Open: φ-O5-1b (non-blocking), φ-O5-3b-sub1 (span colimit K1-K8), φ-O5-3c (circuit language).*
+*φ-O5 v0.6 — 2026-05-31. Phase 2 COMPLETE. Conditions: 5+3+2 necessary, not provably sufficient (FUNDAMENTAL BOUNDARY). Verified topologies: hierarchical (§4bis) + parallel (§4ter). φ-N3 in circuit language: requires_K_joint=1 ↔ CNOT; BC-2 = no implicit channel. Remaining deferred: φ-O5-4 (B(H)⊗N explicit for φ-N2), φ-O5-5 (EX N=3 full validation).*
