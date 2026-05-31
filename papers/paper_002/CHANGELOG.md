@@ -5,6 +5,14 @@
 
 ---
 
+## v95 (2026-05-31) — §8.1 Falsification Hierarchy boundary (3-round RCA 4.1/5)
+
+**Implemented changes:**
+- **§8.1 boundary sentence:** Added Level 0 null ≠ Levels 1–3 boundary statement after comparison table. Root cause: §8.1 implicitly treated "Level 0 null" = "all overlap-dependent deformations null" — category error relative to the hierarchy introduced in §3.2. 3-round RCA approved (4.1/5 ≥ 4.0 threshold). Source: Falsification_Hierarchy.md (pre-reg 4.6/5).
+- **Text added:** "A null result at Level 0 (β < β_min across the full θ-sweep) falsifies the overlap-only class but leaves Levels 1–3 unconstrained: density-matrix-dependent (ρ_F), multi-partite (concurrence), and non-geometric (timing, path) deformations are not bounded by Proposition 1 and each requires independent experimental designs."
+
+---
+
 ## v94 (2026-05-27) — RCA round 4: cos θ overcharacterization & optimal angle softening
 
 **Implemented changes:**

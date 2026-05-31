@@ -7,7 +7,7 @@
 
 | File | Description |
 |------|-------------|
-| `manuscript.md` | Draft v94 — Sections 1–9 + Abstract + 18 refs (~7,500 words) |
+| `manuscript.md` | Draft v95 — Sections 1–9 + Abstract + 18 refs (~7,500 words); §8.1 Falsification Hierarchy boundary added (2026-05-31) |
 | `CHANGELOG.md` | Full version history v12→v94 with RCA traceability |
 | `paper_plan_v2.0_RCA_update.md` | RCA satellite synchronization plan |
 | `QC_checklist.md` | 15/15 PASS |

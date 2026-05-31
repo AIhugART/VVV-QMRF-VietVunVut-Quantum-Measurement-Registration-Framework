@@ -3,10 +3,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # K9_E Source of Truth — Single-Waveplate Test of Outcome-Dependent Quantum Registration in Extended Wigner's Friend Scenarios
 
 **SOT type:** INTERNAL — K9_E Completeness Reference
-**Date synthesized:** 2026-05-25 (re-synced 2026-05-31 to manuscript v94)
-**Sources:** draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v94, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v94 + supplemental S1-S3
-**Relationship to manuscript v94:** This SOT contains full K9_E context, VVV-QMRF language, and technical detail removed from the public-facing manuscript. Manuscript v94 is the academically-defended subset for Phys. Rev. A submission.
-**Version lineage:** v4 (K9-S12 proposal) -> v12 (Eq.12 corrected, watershed) -> v21 (academic polish) -> v94 (RCA round 4: cos θ downgrade, per-θ FOM re-optimization, SPDC density matrix). This SOT synthesizes the best from all versions, prioritizing K9_E completeness.
+**Date synthesized:** 2026-05-25 (re-synced 2026-05-31 to manuscript v95)
+**Sources:** draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v95, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v95 + supplemental S1-S3
+**Relationship to manuscript v95:** This SOT contains full K9_E context, VVV-QMRF language, and technical detail removed from the public-facing manuscript. Manuscript v95 is the academically-defended subset for Phys. Rev. A submission.
+**Version lineage:** v4 (K9-S12 proposal) -> v12 (Eq.12 corrected, watershed) -> v21 (academic polish) -> v94 (RCA round 4: cos θ downgrade, per-θ FOM re-optimization, SPDC density matrix) -> v95 (§8.1 Falsification Hierarchy boundary, 3-round RCA 4.1/5). This SOT synthesizes the best from all versions, prioritizing K9_E completeness.
 
 ---
 

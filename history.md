@@ -490,6 +490,13 @@ Single-entry-point document: K->p(o) formula, component origin table, 6 boundary
 
 **Files modified:** 7 framework postulate files + framework/index.md §4.4 + AHP v1.8 + 1 new report. See [framework/plan/E_Postulate_K_Axiom_Anchor_RCA_2026-05-31.md](documents/research_documents/framework/plan/E_Postulate_K_Axiom_Anchor_RCA_2026-05-31.md).
 
+### 2026-05-31 — paper_002 v95: §8.1 Falsification Hierarchy Boundary
+
+- **Scope:** manuscript.md §8.1 — Level 0 null ≠ Levels 1–3 boundary statement. VVV-QMRF scope, VVV-QMRF-EX as compass.
+- **Root cause fixed:** §8.1 implicitly treated "Level 0 null" = "all overlap-dependent deformations null" — category error relative to the hierarchy introduced in §3.2. Source: Falsification_Hierarchy.md (pre-reg 4.6/5). 3-round RCA aggregate 4.1/5 ≥ threshold.
+- **Change:** Added 1 sentence after §8.1 comparison table: density-matrix-dependent (ρ_F), multi-partite (concurrence), and non-geometric (timing, path) deformations are not bounded by Proposition 1 and each requires independent experimental designs.
+- **Files modified:** manuscript.md (v94→v95), CHANGELOG.md, README.md, QC_checklist.md, SOT/paper_002_SOT.md, history.md.
+
 ### 2026-05-28 — Phase 3A Progress (K9-S12 Optical Experiment Proposal)
 
 - **Track 3 (Experimental Path) NOW ACTIVE.**

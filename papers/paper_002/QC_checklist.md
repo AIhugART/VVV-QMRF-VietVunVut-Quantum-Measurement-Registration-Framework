@@ -1,6 +1,7 @@
 # Paper QC Checklist -- K9-S12 Single-Waveplate Test
 
-**Date:** 2026-05-31 | **Paper:** manuscript.md (v94) | **QC:** 15/15 PASS
+**Date:** 2026-05-31 | **Paper:** manuscript.md (v95) | **QC:** 15/15 PASS
+**v95 note:** §8.1 post-submission addition — Level 0 null ≠ Levels 1–3 boundary sentence (3-round RCA 4.1/5). Does not affect any QC criterion; no new claims, equations, or figures.
 
 ## Quality Gates
 
