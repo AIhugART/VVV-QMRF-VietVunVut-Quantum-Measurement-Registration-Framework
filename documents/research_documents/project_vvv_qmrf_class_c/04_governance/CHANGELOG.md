@@ -6,6 +6,44 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v41 (2026-05-31) — D_obs: Observer Set Formal Definition ([A-Obs] ELIMINATED, RCA 4.3/5)
+
+### Added
+- `04_governance/rca_session_summary_D_obs_2026_05_31.md` — D_obs session summary (NEW)
+- `D_obs` — Observer Set Definition (Layer 2 Semantic Definition) added to both PEER copies:
+  `Obs(Exp, R_i) := {R_j ≠ R_i : requires_K_joint(R_i,R_j)=1 ∧ R_j ∈ Exp}`.
+  Properties: (i) Finiteness, (ii) R_i-relativity, (iii) Isolation case, (iv) K5+T9 consistency.
+  Pattern: D_enc (Layer 2 Semantic Definition, no new axiom, no V modification).
+
+### Updated
+- `01_axiomatization/K_Space_Axiomatization.md §T9` — informal clause `"R_j is an observer in Exp"` → `R_j ∈ Obs(Exp, R_i)` + `[A-Obs]` metadata row added
+- `meta_architecture/K_Space_Axiomatization.md §T9` — PEER-SYNC (same update)
+- `01_axiomatization/K_Space_Axiomatization.md §Layer 2 Summary` — D_obs row added after D_enc
+- `meta_architecture/K_Space_Axiomatization.md §Layer 2 Summary` — PEER-SYNC (same update)
+- `history.md` — D_obs entry added
+
+### Closed
+- **[A-Obs] Observer Set assumption** — FULLY ELIMINATED (D_obs, 2026-05-31, RCA 4.3/5)
+  K_ctx derivation chain now complete: K1-K8 + T1 → T9 (φ_ij) + D_obs (Obs(Exp)) → K_ctx fully formal.
+  T8 `|K_ctx|` denominator formally bounded. K9_E f_perp denominator formally defined.
+
+### Assumption audit post-v41
+- [A-E1]: ELIMINATED (T9 L1-L5)
+- [A-E2]: ELIMINATED (T8-H1)
+- [A-E3]: FREE PARAMETER (β)
+- [A-E4]: BE-anchored
+- **[A-Obs]: ELIMINATED (D_obs)** ← NEW
+- **Net: 0 open assumptions, 1 free parameter (β)**
+
+### RCA basis
+- R1 (Define) = 4.3/5 | R2 (Impact) = 4.2/5 | R3 (Fix) = 4.4/5
+- Aggregate: **4.3/5** ✅ (≥4.0 threshold)
+
+### PEER-SYNC
+- `sync_check_k_space.sh` PASS. Both copies: +78 lines symmetric. Commit `f5ca012`.
+
+---
+
 ## v40 (2026-05-30) — T5 Conditional THEOREM (RCA 4.4/5)
 
 ### Added

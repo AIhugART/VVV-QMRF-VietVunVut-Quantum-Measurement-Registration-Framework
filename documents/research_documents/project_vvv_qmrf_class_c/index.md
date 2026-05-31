@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
-**Version:** v40 (2026-05-30) — T5 Conditional THEOREM (RCA 4.4/5): [A-3O-2] RESOLVED (conditional), [A-NS] Conditional THEOREM (induction via T5); NORM-1 + PEER-SYNC CLOSED
+**Version:** v41 (2026-05-31) — D_obs Observer Set Formal Definition (RCA 4.3/5): [A-Obs] ELIMINATED; K_ctx derivation chain complete (K1-K8 + T1 + T9 + D_obs); T8 `|K_ctx|` bounded; 0 open assumptions
 **Zenodo DOI (v3.0):** [10.5281/zenodo.20431310](https://zenodo.org/records/20431310) — Working Paper v3.0 **PUBLISHED 2026-05-28**
 **Zenodo DOI (v2.0):** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (archived)
 **Concept DOI (cite-all):** [10.5281/zenodo.20289260](https://doi.org/10.5281/zenodo.20289260)
@@ -65,6 +65,7 @@ Layer 2 (UPDATABLE)  T1–T9 Bridge theorems + conservative extensions
        |              K_joint construction, colimit, relativization
        |              K5_prospective (v29), T8 frequency bridge, T9 K_ctx morphism
        |              K7_trace + D_enc (canonical Layer 2, K_Space_Axiomatization.md v2.4, RCA 4.77/5)
+       |              D_obs (Observer Set Definition, Layer 2, RCA 4.3/5, [A-Obs] ELIMINATED 2026-05-31)
        v
 Layer 3 (Class C)    K9_E Probability postulate (P9)
        |              P(o|K) = Tr(E_o rho) * [1-beta*f_perp(o,K_ctx)]/Z_E  [Conv 2]
@@ -136,7 +137,7 @@ where:
 ├── 1 term from Standard QM (T1: Born rule)
 ├── 1 term modified from QM (T6: normalization)
 ├── 6 terms ENTIRELY NEW (T2, T3, T4, T5, T7, T8)
-└── 0 orphaned assumptions. Originally 4 assumptions [A-E1]–[A-E4]. [A-E1] FULLY ELIMINATED (T9, L1-L5). [A-E2] FULLY ELIMINATED (T8-H1). [A-E3] RECLASSIFIED: FREE PARAMETER (β — measurement target, not assumption). [A-E4] BE-anchored. Net: 0 assumptions, 1 free parameter (β). See [RCA A-E3 Final Verdict](04_governance/RCA_A_E3_beta_universal_final_verdict.md).
+└── 0 orphaned assumptions. Originally 4 assumptions [A-E1]–[A-E4] + [A-Obs] (unnamed). [A-E1] FULLY ELIMINATED (T9, L1-L5). [A-E2] FULLY ELIMINATED (T8-H1). [A-E3] RECLASSIFIED: FREE PARAMETER (β — measurement target, not assumption). [A-E4] BE-anchored. [A-Obs] FULLY ELIMINATED (D_obs, 2026-05-31, RCA 4.3/5). Net: 0 assumptions, 1 free parameter (β). See [RCA A-E3 Final Verdict](04_governance/RCA_A_E3_beta_universal_final_verdict.md).
 ```
 
 See [Phase 8 Term-by-Term Provenance](02_derivation_chain/Phase8_candidate_equation.md) for the full decomposition.
@@ -346,4 +347,4 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
 
 ---
 
-*Project VVV-QMRF Class C — Master Index v40 (2026-05-30). T5 Conditional THEOREM (RCA 4.4/5). [A-3O-2] RESOLVED (conditional). [A-NS] Conditional THEOREM via induction. NORM-1 + PEER-SYNC CLOSED. Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
+*Project VVV-QMRF Class C — Master Index v41 (2026-05-31). D_obs Observer Set Formal Definition (RCA 4.3/5). [A-Obs] FULLY ELIMINATED. K_ctx derivation chain complete. T5 Conditional THEOREM (RCA 4.4/5). [A-3O-2] RESOLVED (conditional). [A-NS] Conditional THEOREM via induction. 0 open assumptions. 1 free parameter (β). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
