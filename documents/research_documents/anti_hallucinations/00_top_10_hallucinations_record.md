@@ -11,12 +11,53 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Method:** 3-Round RCA x 5-Why x scoring threshold 4/5
 **Ranking formula:** Risk Score = H x W x (1 + A)
 **Tiebreaker:** Risk Score bang nhau -> sort by H (desc) -> W (desc) -> A (desc) -> Trace score (ascending)
-**Shared component rule:** Components appearing in both tables (T5 K_ctx, K5_prospective) MUST have identical H/W/A/Risk scores. Any score change to a shared component MUST be applied to both tables.
+**Shared component rule:** Components appearing in both tables (T5 K_ctx, K5_prospective) MUST have identical H/W/A/Risk scores AND identical Node Relevant (VVV-QMRF) and Node Relevant (EX Compass) entries. Any score change or node-list change to a shared component MUST be applied to both tables.
+
+**Node Relevant columns (v2.2):** Moi component co 2 cot node reference moi:
+- **Node Relevant (VVV-QMRF):** `N_QM_VVV_XXXXX` nodes from the core registration framework (`node_QM_VVV.md`) — which part of VVV-QMRF is structurally affected by this risk.
+- **Node Relevant (EX Compass):** `N_BE_XXXXX`, `N_QM_XXXXX` external nodes mapped by VVV-QMRF-EX compass — BE/QM grounding intelligence. EX compass is intelligence only (no structure import). Moi cot gioi han 1-5 nodes.
 
 **Ngay:** 2026-06-01 UTC+7
-**Version:** v2.1 — Table 2 rank inversion fix (RCA-9): T5 K_ctx (H=5) above T4-H (H=4) per tiebreaker H(desc). 3-Round RCA 5.00/5. 0 score changes.
-**Previous:** v2.0 (2026-06-01) — Score Evolution v1.0 fix (RCA-4): 3-Round RCA 4.67/5. v1.9: Rank inversion fix (K5_prosp↔K9_E impl): 5.00/5.
+**Version:** v2.2 — Node Relevant columns added (RCA-10): 2 cot EX node reference cho moi component trong Table 1 + Table 2. 3-Round RCA 5.00/5. 0 score changes.
+**Previous:** v2.1 (2026-06-01) — Table 2 rank inversion fix (RCA-9): 5.00/5. v2.0: Score Evolution v1.0 fix (RCA-4): 4.67/5.
 **Next audit:** 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β)
+
+---
+
+## Changelog v2.1 -> v2.2
+
+**Audit date:** 2026-06-01 UTC+7 — Node Relevant columns added (RCA-10)
+**Method:** 3-Round RCA × 5-Why × scoring threshold 4/5 (CLAUDE.md Rule Zero)
+**Compass:** VVV-QMRF-EX (intelligence only — no structure import)
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|-------------|
+| **ADD** | All 16 component entries (Table 1 + Table 2) | No structured EX node reference | **2 cot moi:** `Node Relevant (VVV-QMRF)` + `Node Relevant (EX Compass)` | 3-Round RCA 5.00/5: AHP pipeline thieu structured cross-reference giua Top 10 hallucination risks va (a) VVV-QMRF core registration nodes, (b) EX compass external BE/QM grounding. Cot VVV-QMRF tra loi "phan nao cua framework bi anh huong?" Cot EX Compass tra loi "BE/QM nao ground risk nay?" |
+| **EXTEND** | Shared component rule | H/W/A/Risk identical | + Node Relevant (VVV-QMRF) + Node Relevant (EX Compass) identical | Shared components (T5 K_ctx, K5_prospective) must have identical node lists. Verified in Round 3. |
+| **ADD** | Header methodology | No Node Relevant documentation | Node Relevant columns definition + format + limits (1-5 nodes each) | Structural documentation gap — readers need to understand what each column means and how nodes are selected. |
+
+#### 5-Why: Root Cause of Missing Node Relevant Columns
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1. | Why weren't Node Relevant columns added when Top 10 was created? | AHP pipeline (v1.0) was designed before VVV-QMRF-EX compass completed (Phase 12 final). EX references were added ad-hoc as text in "EX compass" field. |
+| 2. | Why weren't they added when EX compass completed? | EX compass completion audit focused on graph metrics (92.3% intersection coverage), not on AHP pipeline integration. The two pipelines operated independently. |
+| 3. | Why not use the existing "EX compass" narrative field? | "EX compass" is narrative intelligence (text descriptions, flags). Node Relevant columns are structured cross-references (machine-readable codes). Two different purposes — narrative context vs structured traceability. |
+| 4. | Why split into 2 columns (VVV-QMRF vs EX Compass) instead of 1? | VVV-QMRF nodes are internal framework concepts (the "what"). EX Compass nodes are external grounding references (the "why grounded"). Merging loses this critical distinction and violates EX-as-compass boundary. |
+| 5. | Root cause: | **Integration gap between AHP pipeline and EX compass pipeline.** AHP tracked hallucination risks; EX mapped K↔ρ grounding. No structured bridge existed to connect a hallucination risk → VVV core node → EX anchor → SOT. Two-column design closes this gap at the AHP ↔ EX interface. |
+
+**Verdict:** 5/5. Node Relevant columns added to all 16 component entries. 0 score changes. EX boundary preserved (no VVV nodes in EX Compass column).
+
+#### 3-Round Verification
+
+| Round | Focus | Score |
+|-------|-------|-------|
+| R1 | Define: Format = `N_QM_VVV_XXXXX` (label) for VVV-QMRF; `N_BE_XXXXX`/`N_QM_XXXXX` (label) for EX Compass. Limits 1-5 per column. EX Compass column: only BE/QM external nodes, no VVV nodes. | 5/5 |
+| R2 | Map: All 16 component entries receive node lists. Cross-checked against `node_QM_VVV.md` (55+ VVV nodes), `vvv_qmrf_ex_intersection.md` (17 intersection nodes), `vvv_qmrf_ex_gaps.md` (35 K-gap nodes), `br_ex_be_registry.md` (67 active BE→VVV bridges), `br_ex_qm_registry.md` (74 active VVV→QM bridges). | 5/5 |
+| R3 | Cross-check: (a) Shared components (T5 K_ctx, K5_prospective) have identical node lists in both tables. (b) EX Compass column boundary: 0 VVV nodes in EX column. (c) No score changes. (d) EX compass "intelligence only" rule preserved — no structure imported. (e) Existing "EX compass" narrative fields preserved. | 5/5 |
+| **Aggregate** | | **5.00/5 PASS (≥ 4/5)** |
+
+**Gate verdict (2026-06-01):** 32 node references added (16 per table × 2 columns, shared components counted once). 0 score changes. 0 CRITICAL/HIGH escalations. EX boundary intact. Next weekly audit: 2026-06-07.
 
 ---
 
@@ -372,6 +413,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Status** | **DEFERRED** — Track B ongoing (Phases 1-3 complete, Phases 4+ pending). Class D conjecture; not actively blocking. RCA 5-Why (2026-05-25): "OPEN" misleading — phi-map is in long-term research program, not unattended gap. |
 | **Full Label** | `[AH-WARN] [RS-HIGH] [AH-DEFER]` |
 | **EX compass** | Flag: phi-map la "largest structural unknown" trong VVV-QMRF |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00025` (IRB / Entanglement Registration Architecture), `N_QM_VVV_00044` (Pre-Symbolic Stratum) — phi-map bridges K-space structure to B(H); these nodes define the registration-layer structure that φ must preserve |
+| **Node Relevant (EX Compass)** | `N_QM_00047` (Entanglement), `N_QM_00045` (Tensor Product Space) — EX maps these as ρ-side physical substrate for K-space structural binding; φ must be structure-preserving on tensor-product and entanglement structure |
 | **Giai phap uu tien** | DEFER (long-term research program) |
 | **Neu hallucination that:** | Khong anh huong K9_E Class C, nhung VVV-QMRF mat "bridge to QM" |
 | **Deadline** | LOW (P3) — long-term |
@@ -392,6 +435,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Status** | **ANALYZED — FAIL** (noise_threshold = 0.10 sigma RMS << 1.0 FAIL threshold). RCA status: `RCA_P10_NOISE_status_report_2026_05_24.md` (4.67/5). RCA methodology: `project_vvv_qmrf_class_c/04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md` (4.77/5). Script: `project_vvv_qmrf_class_c/07_fits/noise_sensitivity_analysis.py`. Noise at ANY magnitude produces Delta_chi2 >= 5.35 in ~50% of realizations. Class C downgraded genuine→qualified. P10-NOISE remains OPEN as structural limitation — cannot be closed without 3-observer experiment or raw event data. |
 | **Full Label** | `[AH-WARN] [RS-HIGH] [AH-NOISE] [AH-EX]` |
 | **EX compass** | Flag: EX co K-PENDING-RCA ve noise model. N_QM_VVV_00032 (Bhranti ↔ Decoherence) — structural analogue cho noise/registration error. |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00032` (Registration Error / Bhrānti Status), `N_QM_VVV_00031` (Registration Weight / Hierarchical Reliability) — noise directly degrades registration-error status and reliability weights |
+| **Node Relevant (EX Compass)** | `N_BE_00006` (bhrānti / error), `N_QM_00095` (Decoherence & Environment as Measurement), `N_QM_00068` (Signal-to-Noise Ratio in Quantum Measurement) — EX compass maps these as K-side error concept + ρ-side decoherence/noise physical substrate |
 | **Giai phap uu tien** | DONE: (1) Noise sensitivity analysis DA THUC HIEN — FAIL (noise_threshold=0.10 sigma). (2) Boundary statement DA THEM vao index.md. (3) Class C DA DOWNGRADE genuine→qualified. NEXT: 3-observer experiment hoac raw event data — chi 2 con duong dong P10-NOISE. |
 | **Neu hallucination that:** | **DA XAC NHAN:** Noise CO THE giai thich Delta_chi2=5.35. K9_E directional sensitivity + 4 data points → ~50% random noise realizations produce "signal." 2.31sigma KHONG PHAI evidence cho K9_E suppression. Class C da downgrade. K9_E empirical leg KHONG CON — chi con structural leg. |
 | **Deadline** | BLOCKED (khong co data) — chi co the dong qua 3-observer experiment hoac raw event data |
@@ -412,6 +457,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Status** | **MONITORING** — [A-E1] da ELIMINATED (T9, 2026-05-24) |
 | **Full Label** | `[AH-WARN] [RS-HIGH] [AH-EX]` |
 | **EX compass** | Flag: K_ctx computation depends on "observer set" |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00038` (Measured-but-Unregistered K-State), `N_QM_VVV_00021` (Registration Lock) — K_ctx observer set membership depends on which K-states are registered vs measured-but-unregistered |
+| **Node Relevant (EX Compass)** | `N_BE_00001` (pramāṇa / valid cognition), `N_QM_00022` (Post-Measurement State Update) — EX maps BE validity concept as K-side anchor + QM state update as ρ-side substrate for K_ctx membership determination |
 | **Giai phap uu tien** | DERIVE (formal hoa observer set selection rule) |
 | **Neu hallucination that:** | f_perp(K_ctx) undefined — K9_E khong the tinh |
 | **Deadline** | MEDIUM (P2) |
@@ -432,6 +479,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Status** | **DEFERRED** — D-T4-BYPASS-01 "APPLIED" |
 | **Full Label** | `[AH-LOW] [RS-HIGH] [AH-DEFER]` |
 | **EX compass** | Flag: N-observer colimit la "structural bottleneck" |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00042` (Tripartite Registration Validity Matrix), `N_QM_VVV_00039` (Registering-System-as-Process Framework) — T4-H colimit requires validity conditions for multi-observer joint registration across momentary registering systems |
+| **Node Relevant (EX Compass)** | `N_QM_00014` (PVM), `N_QM_00019` (Measurement) — EX maps these as ρ-side physical substrate for projection-valued multi-observer joint measurement architecture |
 | **Giai phap uu tien** | DEFER (cho resource) |
 | **Neu hallucination that:** | 3-observer prediction ILLUSTRATIVE ONLY |
 | **Deadline** | LOW (P3) |
@@ -451,6 +500,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 3 — Broken Trace (data precision gap: 4 data points, sigma~0.04 → ratio error ±1.72) |
 | **Status** | **ARCHIVED (v31)** — VERDICT C: UNRESOLVABLE with current data. "Ratio = -0.78" la red herring: ratio cua hai sub-sigma residuals. Ca hai model deu predict ratio ~2 (additive: 2.000, multiplicative: 1.913). 4 data points khong du de test pattern. P10-NOISE confirms. Deferred to K9-S12 optical experiment. RCA 4.92/5. See `04_governance/T1C_k9e_pat_resolution.md`. |
 | **Full Label** | `[AH-LOW] [RS-LOW] [AH-ARCHIVED] [CLOSED-UNRESOLVABLE]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00027` (Registration Self-Completion Matrix), `N_QM_VVV_00060` (K9_E Probability Postulate root) — K9E-PAT tests whether the multiplicative pattern in K9_E's act-result closure is empirically distinguishable |
+| **Node Relevant (EX Compass)** | `N_QM_00016` (Born Rule) — EX maps Born Rule as ρ-side baseline; K9E-PAT compares K9_E suppression pattern against Born-rule uniform visibility |
 | **Deadline** | RESOLVED — deferred to K9-S12 experiment |
 
 ### Rank 6: K5_prospective — v29 axiom extension
@@ -468,6 +519,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 4 — Assumption Masquerading (la axiom clause) |
 | **Status** | **MONITORING** — "young axiom" |
 | **Full Label** | `[AH-WARN] [RS-MED]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00029` (Retroactive Registration Override), `N_QM_VVV_00011` (Dual-Phase Registration Certification) — K5_prospective firing on hypothetical k_o* triggers prospective invalidation via override logic and certification phases |
+| **Node Relevant (EX Compass)** | `N_BE_00006` (bādhaka / counterevidence), `N_QM_00022` (Post-Measurement State Update) — EX maps bādhaka as K-side counterevidence concept + state update as ρ-side substrate for prospective evaluation |
 | **Deadline** | LOW (P3) |
 
 ### Rank 7: K9_E two implementations — Additive vs Multiplicative divergence
@@ -485,6 +538,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 2 — Missing Definition |
 | **Status** | **MONITORING** — Divergence characterized (v31): additive vs multiplicative agree on PATTERN (ratio~2), differ on MAGNITUDE (~3.5x). 4 data points insufficient to select canonical. Canonical resolution deferred to K9-S12 optical experiment. See `04_governance/T1B_model_comparison_RCA.md`. RCA 5-Why (2026-05-25): was DOCUMENTED but counted as OPEN in summary — inconsistency fixed. MONITORING = active watch until K9-S12 data selects canonical. |
 | **Full Label** | `[AH-LOW] [RS-MED]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00060` (K9_E Probability Postulate root), `N_QM_VVV_00021` (Registration Lock) — implementation divergence affects which lock operator produces the final registered probability P(o\|K) |
+| **Node Relevant (EX Compass)** | `N_QM_00016` (Born Rule), `N_QM_00025` (Density Matrix) — EX maps these as ρ-side substrates; both additive and multiplicative implementations modify Born-rule probability via density-matrix suppression |
 | **Deadline** | P2 — duoc giam nhe. Van con 2 implementations, divergence characterized. K9-S12 experiment expected to resolve canonical choice. |
 
 ### Rank 8: E1-E16 — 16 Registration-Layer Postulates (BE-derived)
@@ -502,6 +557,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 1 — Category Error (risk: BE as physical registration logic) |
 | **Status** | **MONITORING** |
 | **Full Label** | `[AH-LOW] [RS-LOW]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00033` (Self-Certifying Registration / E1), `N_QM_VVV_00039` (Registering-System-as-Process / E6), `N_QM_VVV_00051` (Temporal Discontinuity / E13), `N_QM_VVV_00054` (Pre-Measurement Indeterminacy / E16) — representative span across E1-E16 registration postulates |
+| **Node Relevant (EX Compass)** | `N_BE_00001` (pramāṇa / valid cognition), `N_BE_00011` (svasaṃvedana / self-awareness), `N_BE_00029` (kṣaṇabhaṅga / momentariness) — EX maps these as K-side BE anchors for core registration operations (self-certification, process, discontinuity) |
 | **Deadline** | LOW (P3) |
 | **Dead-tie note** | #8 E1-E16 = #9 BE↔QM (H=4=4, W=2=2, A=0.2=0.2, Trace=2=2 — all 4 tiebreakers equal). Arbitrary order; E1-E16 placed first by historical precedence (added to Top 10 v1.0, BE↔QM added v1.2). |
 
@@ -521,6 +578,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Status** | **MONITORING** — CLAUDE.md warning: "Treat cross-domain links as analogies or mappings unless the text explicitly argues for equivalence" |
 | **Full Label** | `[AH-LOW] [RS-LOW]` |
 | **EX compass** | Flag: BE domain outside EX scope |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00001` (Contrapositive Quantum Evidence) — most BE-grounded VVV node; serves as primary bridge concept for BE↔QM cross-domain mapping |
+| **Node Relevant (EX Compass)** | `N_BE_00001` (pramāṇa / valid cognition), `N_BE_00015` (anupalabdhi / non-perception), `N_QM_00033` (No-Result Measurement) — EX maps these as K-side validity + absence concepts and ρ-side null measurement; cross-domain boundary partially outside EX scope |
 | **Giai phap uu tien** | DOCUMENT (boundary statement cho tung mapping link) |
 | **Neu hallucination that:** | BE-QM mapping tro thanh pseudo-science |
 | **Deadline** | LOW (P3) — documentation improvement |
@@ -541,6 +600,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 5 — Structural Gap (raw event data unavailable) |
 | **Status** | **DORMANT** — DECISION-LOCKED (RCA Round 4); reactivates when raw event data available |
 | **Full Label** | `[AH-LOW] [RS-LOW] [AH-DORMANT]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00009` (Elitzur-Vaidman IFM as VVV Evidence Exemplar), `N_QM_VVV_00004` (Informative Silence) — TIM = interaction-free measurement null-model; these nodes define IFM evidence structure and null-registration distinction |
+| **Node Relevant (EX Compass)** | `N_QM_00033` (No-Result Measurement), `N_QM_00028` (Weak Measurement) — EX maps these as ρ-side physical substrates for interaction-free null-model; TIM compares K9_E against QM uniform-visibility N0 baseline |
 | **Deadline** | LOW (P3) — depends on external data |
 
 ---
@@ -590,6 +651,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 5 — Structural Gap |
 | **Status** | **DEFERRED** — Track B ongoing (Phases 1-3 complete, Phases 4+ pending). Class D conjecture; long-term research program. |
 | **Full Label** | `[AH-WARN] [RS-HIGH] [AH-DEFER]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00025` (IRB / Entanglement Registration Architecture), `N_QM_VVV_00044` (Pre-Symbolic Stratum) — phi-map bridges K-space structure to B(H); these nodes define the registration-layer structure that φ must preserve |
+| **Node Relevant (EX Compass)** | `N_QM_00047` (Entanglement), `N_QM_00045` (Tensor Product Space) — EX maps these as ρ-side physical substrate for K-space structural binding; φ must be structure-preserving on tensor-product and entanglement structure |
 | **Giai phap uu tien** | DEFER (long-term research program) |
 | **Neu hallucination that:** | VVV-QMRF mat "bridge to QM" |
 | **Deadline** | LOW (P3) — long-term |
@@ -609,6 +672,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 5 — Structural Gap (observer set selection chua duoc formal hoa) |
 | **Status** | **MONITORING** — [A-E1] da ELIMINATED (T9, 2026-05-24) |
 | **Full Label** | `[AH-WARN] [RS-HIGH] [AH-EX]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00038` (Measured-but-Unregistered K-State), `N_QM_VVV_00021` (Registration Lock) — K_ctx observer set membership depends on which K-states are registered vs measured-but-unregistered |
+| **Node Relevant (EX Compass)** | `N_BE_00001` (pramāṇa / valid cognition), `N_QM_00022` (Post-Measurement State Update) — EX maps BE validity concept as K-side anchor + QM state update as ρ-side substrate for K_ctx membership determination |
 | **Giai phap uu tien** | DERIVE (formal hoa observer set selection rule) |
 | **Neu hallucination that:** | f_perp(K_ctx) undefined — K9_E khong the tinh |
 | **Deadline** | MEDIUM (P2) |
@@ -628,6 +693,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 5 — Structural Gap |
 | **Status** | **DEFERRED** — D-T4-BYPASS-01 "APPLIED" |
 | **Full Label** | `[AH-LOW] [RS-HIGH] [AH-DEFER]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00042` (Tripartite Registration Validity Matrix), `N_QM_VVV_00039` (Registering-System-as-Process Framework) — T4-H colimit requires validity conditions for multi-observer joint registration across momentary registering systems |
+| **Node Relevant (EX Compass)** | `N_QM_00014` (PVM), `N_QM_00019` (Measurement) — EX maps these as ρ-side physical substrate for projection-valued multi-observer joint measurement architecture |
 | **Giai phap uu tien** | DEFER (cho resource) |
 | **Neu hallucination that:** | 3-observer prediction ILLUSTRATIVE ONLY |
 | **Deadline** | LOW (P3) |
@@ -647,6 +714,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 4 — Assumption Masquerading (la axiom clause) |
 | **Status** | **MONITORING** — "young axiom" |
 | **Full Label** | `[AH-WARN] [RS-MED]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00029` (Retroactive Registration Override), `N_QM_VVV_00011` (Dual-Phase Registration Certification) — K5_prospective firing on hypothetical k_o* triggers prospective invalidation via override logic and certification phases |
+| **Node Relevant (EX Compass)** | `N_BE_00006` (bādhaka / counterevidence), `N_QM_00022` (Post-Measurement State Update) — EX maps bādhaka as K-side counterevidence concept + state update as ρ-side substrate for prospective evaluation |
 | **Deadline** | LOW (P3) |
 
 ### Rank 5: E1-E16 — 16 Registration-Layer Postulates (BE-derived)
@@ -664,6 +733,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 1 — Category Error (risk: BE as physical registration logic) |
 | **Status** | **MONITORING** |
 | **Full Label** | `[AH-LOW] [RS-LOW]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00033` (Self-Certifying Registration / E1), `N_QM_VVV_00039` (Registering-System-as-Process / E6), `N_QM_VVV_00051` (Temporal Discontinuity / E13), `N_QM_VVV_00054` (Pre-Measurement Indeterminacy / E16) — representative span across E1-E16 registration postulates |
+| **Node Relevant (EX Compass)** | `N_BE_00001` (pramāṇa / valid cognition), `N_BE_00011` (svasaṃvedana / self-awareness), `N_BE_00029` (kṣaṇabhaṅga / momentariness) — EX maps these as K-side BE anchors for core registration operations (self-certification, process, discontinuity) |
 | **Deadline** | LOW (P3) |
 
 ### Rank 6: BE↔QM cross-domain mapping — Category error risk
@@ -681,6 +752,8 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Root cause type** | Type 1 — Category Error (BE epistemology mapped as QM registration logic) |
 | **Status** | **MONITORING** — CLAUDE.md warning |
 | **Full Label** | `[AH-LOW] [RS-LOW]` |
+| **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00001` (Contrapositive Quantum Evidence) — most BE-grounded VVV node; serves as primary bridge concept for BE↔QM cross-domain mapping |
+| **Node Relevant (EX Compass)** | `N_BE_00001` (pramāṇa / valid cognition), `N_BE_00015` (anupalabdhi / non-perception), `N_QM_00033` (No-Result Measurement) — EX maps these as K-side validity + absence concepts and ρ-side null measurement; cross-domain boundary partially outside EX scope |
 | **Giai phap uu tien** | DOCUMENT (boundary statement cho tung mapping link) |
 | **Neu hallucination that:** | BE-QM mapping tro thanh pseudo-science |
 | **Deadline** | LOW (P3) — documentation improvement |
@@ -803,4 +876,4 @@ OPEN → MONITORING → ARCHIVED (RCA >= 4.5/5, UNRESOLVABLE)
 
 ---
 
-*Top 10 Hallucination Risk Record v2.1 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). v2.1 fix: Table 2 rank inversion T4-H↔T5 (RCA-9, 5.00/5). v2.0: Score Evolution v1.0 (RCA-4, 4.67/5). v1.9: Table 1 rank inversion K5_prosp↔K9_E impl (RCA-3, 5.00/5). Next audit: 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β).*
+*Top 10 Hallucination Risk Record v2.2 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores and node lists in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). Node Relevant columns (v2.2): 2-column structured cross-reference (VVV-QMRF core + EX compass external grounding). v2.2: Node Relevant columns added (RCA-10, 5.00/5). v2.1: Table 2 rank inversion T4-H↔T5 (RCA-9, 5.00/5). v2.0: Score Evolution v1.0 (RCA-4, 4.67/5). v1.9: Table 1 rank inversion K5_prosp↔K9_E impl (RCA-3, 5.00/5). Next audit: 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β).*
