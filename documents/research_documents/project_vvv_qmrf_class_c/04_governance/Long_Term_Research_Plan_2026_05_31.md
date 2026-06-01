@@ -5,7 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Date:** 2026-05-31
 **Method:** 3-Round RCA × 5-Why × Scoring threshold 4/5
 **Scope:** VVV-QMRF core; VVV-QMRF-EX as compass (not cargo)
-**Status:** PLAN — awaiting user (Viet) approval before execution
+**Status:** ACTIVE — Gate 0 approved 2026-06-01 (Viet). Phase 1 execution authorized.
 **RCA basis:** Rule Zero §Five-step process + CLAUDE.md §Core Principles
 
 > **DISCLAIMER:** VVV-QMRF is independent Class C/D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
@@ -832,6 +832,7 @@ AGGREGATE SCORE: 4.69/5 — PASS (≥ 4/5)
 | Date | Version | Change |
 |------|---------|--------|
 | 2026-05-31 | 1.0 | Initial plan. 3-Round RCA (aggregate 4.69/5). 3 Pillars × 5 Phases. Decision gates defined. Awaiting user (Viet) approval. |
+| 2026-06-01 | 1.1 | Gate 0 approved by user (Viet). Status → ACTIVE. Phase 1 execution authorized. B1/B2 → PENDING; B3 → RESOLVED. |
 
 ---
 

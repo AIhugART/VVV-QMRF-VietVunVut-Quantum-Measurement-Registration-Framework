@@ -296,12 +296,27 @@ Cost of amendments: **+2-3 sessions** for position paper. All other amendments a
 
 ---
 
+## BLOCKER STATUS (2026-06-01)
+
+| Blocker | Description | Status |
+|---------|-------------|--------|
+| B0 | v2.0 amendments untracked (git violation) | **RESOLVED** — committed 2026-06-01 (15c3e82) |
+| B1 | Gate 0.5 — arXiv accessibility not confirmed | **PENDING** — awaiting arXiv ID for K9-S12 paper |
+| B2 | External lab dependency (Phase 3A) | **PENDING** — outreach plan defined (A2); execution starts Phase 2 |
+| B3 | Plan approval Gate 0 not recorded | **RESOLVED** — Gate 0 approved 2026-06-01 by user (Viet); v1.0 → v1.1 |
+| B4 | AHP gate conditions not operationalized | **RESOLVED** — A5 in force (committed 15c3e82) |
+| B5 | φ-map sufficiency fundamental boundary | **MANAGED** — boundary theorem I.1 scheduled Phase 1 |
+| B6 | Funding Phase 3A vague | **MANAGED** — 3 options A/B/C defined (A4); Gate 2.5 added |
+
+---
+
 ## CHANGE LOG
 
 | Date | Version | Change |
 |------|---------|--------|
 | 2026-05-31 | 1.0 | Initial plan. 3-Round RCA (aggregate 4.69/5). Base plan. |
 | 2026-06-01 | 2.0 | 6 amendments (A1-A6). Meta-review score 4.08/5. Additive only. No structural change to v1.0. |
+| 2026-06-01 | 2.1 | Blocker status table added. B0/B3/B4 → RESOLVED; B1/B2 → PENDING; B5/B6 → MANAGED. |
 
 ---
 
