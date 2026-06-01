@@ -18,9 +18,46 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 - **Node Relevant (EX Compass):** `N_BE_XXXXX`, `N_QM_XXXXX` external nodes mapped by VVV-QMRF-EX compass — BE/QM grounding intelligence. EX compass is intelligence only (no structure import). Moi cot gioi han 1-5 nodes.
 
 **Ngay:** 2026-06-01 UTC+7
-**Version:** v2.2 — Node Relevant columns added (RCA-10): 2 cot EX node reference cho moi component trong Table 1 + Table 2. 3-Round RCA 5.00/5. 0 score changes.
-**Previous:** v2.1 (2026-06-01) — Table 2 rank inversion fix (RCA-9): 5.00/5. v2.0: Score Evolution v1.0 fix (RCA-4): 4.67/5.
+**Version:** v2.3 — Gate 1 Phase 1 audit (RCA-11): I.1 + III.1 new content scanned. 3-Round RCA 4.96/5. 0 score changes. Gate 1 AHP: PASS. phi-map + T4-H status notes added.
+**Previous:** v2.2 (2026-06-01) — Node Relevant columns (RCA-10): 5.00/5. v2.1: Table 2 rank inversion (RCA-9): 5.00/5.
 **Next audit:** 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β)
+
+---
+
+## Changelog v2.2 -> v2.3
+
+**Audit date:** 2026-06-01 UTC+7 — Gate 1 Phase 1 audit (RCA-11)
+**Method:** 3-Round RCA × 5-Why × scoring threshold 4/5 (CLAUDE.md Rule Zero)
+**Trigger:** A5 amendment (Long_Term_Research_Plan_amendments_v2_0.md) mandates AHP re-audit before Gate 1 PASS.
+**New content scanned:** I.1 `phi_map_boundary_theorem_v1_0.md` + III.1 `phi_k9e_born_composition_v1_0.md`
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|------------|
+| **STATUS NOTE** | phi-map (Rank 1) | DEFERRED (no Phase note) | DEFERRED + Phase 1 note | I.1 = first Phase 1 Track B output. Boundary characterized in `phi_map_boundary_theorem_v1_0.md`. φ existence still unproven; H=6 unchanged. |
+| **STATUS NOTE** | T4-H (Rank 4 Table 1 / Rank 3 Table 2) | DEFERRED (no conditional note) | DEFERRED + conditional note | Theorem B (I.1) is conditional on T4-H universal property. Dependency chain now explicit. H=4 unchanged. |
+| **SCAN** | I.1 new content (Theorem A, Theorem B, EX note) | Not in AHP | Scanned: H_max=3, Risk_max=6.6. NO Top 10 entry. NO [AH-CRIT]. | Theorem A→K6 (H=2). Theorem B→T4-H absorbed by Rank 4 entry (H=3). |
+| **SCAN** | III.1 new content (diagram, proof, K≠H) | Not in AHP | Scanned: H_max=2, Risk_max=4.4. NO Top 10 entry. NO [AH-CRIT]. | All content documents existing framework. Cites φ-O5-5 (pre-verified). |
+
+#### 5-Why: Why AHP audit needed for Gate 1?
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1. | Why is AHP gate condition required for Gate 1? | A5 amendment (v2.0 amendments) operationalizes CLAUDE.md "re-audit top-10 after each Phase." |
+| 2. | Why wasn't this in original v1.0 plan? | v1.0 treats AHP as cross-cutting rule but has no gate enforcement mechanism. A5 closes this gap. |
+| 3. | What specific risk does this prevent? | New Phase 1 documents could introduce overclaims (e.g., claiming φ is proven when it's conjectured). AHP scan catches these. |
+| 4. | What did the scan find? | All new content H ≤ 3. No [AH-CRIT]. Two status notes added (phi-map + T4-H). |
+| 5. | Root cause assessment: | I.1 + III.1 formalize existing content — they don't introduce new assumptions. Risk is low because "formalization" reduces H relative to "new assumption." |
+
+**Gate verdict (2026-06-01):** 0 score changes. 2 status notes (phi-map + T4-H). 0 CRITICAL/HIGH escalations. Gate 1 AHP: **PASS** ✅. See `AHP_Gate1_Phase1_Audit_2026_06_01.md` (3-Round RCA 4.96/5).
+
+#### 3-Round Verification
+
+| Round | Focus | Score |
+|-------|-------|-------|
+| R1 | New content scan: I.1 Theorem A (H=2, K6), Theorem B (H=3, T4-H conditional), III.1 composition (H=2, φ-O5-5 cited). H_max=3. All traceable. | 5/5 |
+| R2 | EX compass: phi-map "largest unknown" still accurate; T4-H "bottleneck" still accurate; K5_prospective unchanged; all others unchanged. No score changes. | 5/5 |
+| R3 | Gate checklist: [AH-CRIT]=0, OPEN=0, new claims traceable, status notes added. Gate 1 AHP PASS. | 4.88/5 |
+| **Aggregate** | | **4.96/5 PASS (≥ 4/5)** |
 
 ---
 
@@ -410,7 +447,7 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Risk Score** | 6 x 2 x 1.5 = **18.0** |
 | **Risk Score band** | **HIGH** (15-19.9) |
 | **Root cause type** | Type 5 — Structural Gap |
-| **Status** | **DEFERRED** — Track B ongoing (Phases 1-3 complete, Phases 4+ pending). Class D conjecture; not actively blocking. RCA 5-Why (2026-05-25): "OPEN" misleading — phi-map is in long-term research program, not unattended gap. |
+| **Status** | **DEFERRED** — Track B ongoing (Phases 1-3 complete, Phases 4+ pending). Class D conjecture; not actively blocking. RCA 5-Why (2026-05-25): "OPEN" misleading — phi-map is in long-term research program, not unattended gap. **Phase 1 note (2026-06-01):** I.1 `phi_map_boundary_theorem_v1_0.md` = first Phase 1 Track B output — boundary characterized formally (Theorem A + B). Does NOT prove φ exists; H=6 unchanged. |
 | **Full Label** | `[AH-WARN] [RS-HIGH] [AH-DEFER]` |
 | **EX compass** | Flag: phi-map la "largest structural unknown" trong VVV-QMRF |
 | **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00025` (IRB / Entanglement Registration Architecture), `N_QM_VVV_00044` (Pre-Symbolic Stratum) — phi-map bridges K-space structure to B(H); these nodes define the registration-layer structure that φ must preserve |
@@ -476,7 +513,7 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Risk Score** | 4 x 3 x 1.5 = **18.0** |
 | **Risk Score band** | **HIGH** (15-19.9) |
 | **Root cause type** | Type 5 — Structural Gap |
-| **Status** | **DEFERRED** — D-T4-BYPASS-01 "APPLIED" |
+| **Status** | **DEFERRED** — D-T4-BYPASS-01 "APPLIED". **Phase 1 note (2026-06-01):** Theorem B (I.1 `phi_map_boundary_theorem_v1_0.md`) is conditional on T4-H universal property. If T4-H Steps 3-4 fail, Theorem B fails. Dependency now explicit. H=4 unchanged. |
 | **Full Label** | `[AH-LOW] [RS-HIGH] [AH-DEFER]` |
 | **EX compass** | Flag: N-observer colimit la "structural bottleneck" |
 | **Node Relevant (VVV-QMRF)** | `N_QM_VVV_00042` (Tripartite Registration Validity Matrix), `N_QM_VVV_00039` (Registering-System-as-Process Framework) — T4-H colimit requires validity conditions for multi-observer joint registration across momentary registering systems |
@@ -876,4 +913,4 @@ OPEN → MONITORING → ARCHIVED (RCA >= 4.5/5, UNRESOLVABLE)
 
 ---
 
-*Top 10 Hallucination Risk Record v2.2 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores and node lists in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). Node Relevant columns (v2.2): 2-column structured cross-reference (VVV-QMRF core + EX compass external grounding). v2.2: Node Relevant columns added (RCA-10, 5.00/5). v2.1: Table 2 rank inversion T4-H↔T5 (RCA-9, 5.00/5). v2.0: Score Evolution v1.0 (RCA-4, 4.67/5). v1.9: Table 1 rank inversion K5_prosp↔K9_E impl (RCA-3, 5.00/5). Next audit: 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β).*
+*Top 10 Hallucination Risk Record v2.3 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores and node lists in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). Node Relevant columns (v2.2): 2-column structured cross-reference (VVV-QMRF core + EX compass external grounding). v2.3: Gate 1 Phase 1 audit (RCA-11, 4.96/5) — 0 score changes, 2 status notes (phi-map + T4-H), Gate 1 AHP PASS. v2.2: Node Relevant columns (RCA-10, 5.00/5). v2.1: Table 2 rank inversion (RCA-9, 5.00/5). v2.0: Score Evolution v1.0 (RCA-4, 4.67/5). Next audit: 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β).*
