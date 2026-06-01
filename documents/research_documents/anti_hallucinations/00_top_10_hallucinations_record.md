@@ -14,9 +14,43 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Shared component rule:** Components appearing in both tables (T5 K_ctx, K5_prospective) MUST have identical H/W/A/Risk scores. Any score change to a shared component MUST be applied to both tables.
 
 **Ngay:** 2026-06-01 UTC+7
-**Version:** v2.0 — Score Evolution v1.0 fix (RCA-4): P10-NOISE 18.0→22.5, phi-map 18.0→21.6, phi-map undocumented A change added. 3-Round RCA 4.67/5. 0 current-score changes.
-**Previous:** v1.9 (2026-06-01) — Rank inversion fix (K5_prosp↔K9_E impl): 3-Round RCA 5.00/5, tiebreaker H (desc) re-verified for Risk=12.0 band
+**Version:** v2.1 — Table 2 rank inversion fix (RCA-9): T5 K_ctx (H=5) above T4-H (H=4) per tiebreaker H(desc). 3-Round RCA 5.00/5. 0 score changes.
+**Previous:** v2.0 (2026-06-01) — Score Evolution v1.0 fix (RCA-4): 3-Round RCA 4.67/5. v1.9: Rank inversion fix (K5_prosp↔K9_E impl): 5.00/5.
 **Next audit:** 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β)
+
+---
+
+## Changelog v2.0 -> v2.1
+
+**Audit date:** 2026-06-01 UTC+7 — Table 2 rank inversion fix (RCA-9)
+**Method:** 3-Round RCA × 5-Why × scoring threshold 4/5 (CLAUDE.md Rule Zero)
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|-----------|
+| **FIX** | Table 2 rank inversion T4-H↔T5 | T4-H Rank 2 (H=4), T5 Rank 3 (H=5) | **T5 Rank 2** (H=5), **T4-H Rank 3** (H=4) | 3-Round RCA 5.00/5: Tiebreaker H(desc) requires H=5 above H=4 within Risk=18.0 band. Same root cause pattern as RCA-3 (Table 1). Table 2 was created in v1.3 with classification-based grouping (Full exclusive first, Shared second) instead of tiebreaker ordering. Table 1 unaffected (T5 already #3, T4-H #4 — correct). |
+
+#### 5-Why: Root Cause of Table 2 Rank Inversion (T4-H↔T5)
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1. | Why is T4-H (#2) ranked above T5 (#3) in Table 2? | Table 2 was created in v1.3 with structural components (phi-map, T4-H) listed before shared components (T5, K5_prosp) — grouping by classification, not by tiebreaker. |
+| 2. | Why wasn't tiebreaker applied to Table 2 in v1.3? | v1.3 Classification Decision Round 3 (T3 check, 4.5/5) verified "self-consistent and independently readable" but did not cross-verify Table 2 internal ordering against tiebreaker chain. |
+| 3. | Why wasn't this caught in v1.5 (4-level tiebreaker update)? | v1.5 re-ranking focused on Table 1. Table 2 was treated as a derivative structure with its own versioning (v1.0). |
+| 4. | Why wasn't this caught in v1.9 (RCA-3)? | RCA-3 only examined Table 1 Risk=12.0 band. Table 2 was confirmed "unaffected" without re-auditing Table 2 internal ordering. |
+| 5. | Root cause: | **Scope gap in tiebreaker verification** — tiebreaker was only systematically applied to Table 1. Table 2 inherited v1.3 classification ordering without independent tiebreaker pass. Same class of error as RCA-3 (rank inversion from historical ordering). |
+
+**Verdict:** 5/5. Table 2 rank inversion confirmed. Fix: swap T5 to Rank 2, T4-H to Rank 3.
+
+#### 3-Round Verification
+
+| Round | Focus | Score |
+|-------|-------|-------|
+| R1 | Identify: T4-H H=4 ranked above T5 H=5 in Table 2 → violates H(desc) tiebreaker. Scope: Table 2 only. Table 1 unaffected (T5 #3, T4-H #4 — already correct). | 5/5 |
+| R2 | Verify correct Table 2 order: phi-map #1 (H=6) → T5 #2 (H=5, W=3, A=0.2) → T4-H #3 (H=4, W=3, A=0.5). No score changes. Shared component rule: T5 scores identical in both tables. | 5/5 |
+| R3 | Cross-check: Table 1 ordering unchanged. Score Evolution Table(s) column unaffected (no Table 2 rank numbers in Score Evolution). Summary table HIGH band order updated. Footer version synced. | 5/5 |
+| **Aggregate** | | **5.00/5 PASS (≥ 4/5)** |
+
+**Gate verdict (2026-06-01):** 1 rank fix (Table 2 only). 0 score changes. 0 CRITICAL/HIGH escalations. Table 1 unchanged. Next weekly audit: 2026-06-07.
 
 ---
 
@@ -560,26 +594,7 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Neu hallucination that:** | VVV-QMRF mat "bridge to QM" |
 | **Deadline** | LOW (P3) — long-term |
 
-### Rank 2: T4-H Steps 3-4 — N-observer colimit (DEFERRED)
-
-| Thuoc tinh | Gia tri |
-|------------|---------|
-| **Component** | T4-H Steps 3-4 — N-observer K_joint colimit construction (global commutativity) |
-| **Project** | VVV-QMRF (Layer 2) — N-observer colimit, deferred structural gap |
-| **Hallucination score (H)** | **4/10** (Xanh duong — Steps 1-2 proven, Steps 3-4 DEFERRED) |
-| **Structural weight (W)** | **3** (HIGH — blocks 3-observer prediction structural validation) |
-| **Anchor penalty (A)** | **0.5** (WEAK — Steps 3-4 chua duoc prove) |
-| **Trace score (SOT)** | 2/6 |
-| **Risk Score** | 4 x 3 x 1.5 = **18.0** |
-| **Risk Score band** | **HIGH** (15-19.9) |
-| **Root cause type** | Type 5 — Structural Gap |
-| **Status** | **DEFERRED** — D-T4-BYPASS-01 "APPLIED" |
-| **Full Label** | `[AH-LOW] [RS-HIGH] [AH-DEFER]` |
-| **Giai phap uu tien** | DEFER (cho resource) |
-| **Neu hallucination that:** | 3-observer prediction ILLUSTRATIVE ONLY |
-| **Deadline** | LOW (P3) |
-
-### Rank 3: T5 — K_ctx context set definition (Shared with Table 1)
+### Rank 2: T5 — K_ctx context set definition (Shared with Table 1)
 
 | Thuoc tinh | Gia tri |
 |------------|---------|
@@ -597,6 +612,25 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Giai phap uu tien** | DERIVE (formal hoa observer set selection rule) |
 | **Neu hallucination that:** | f_perp(K_ctx) undefined — K9_E khong the tinh |
 | **Deadline** | MEDIUM (P2) |
+
+### Rank 3: T4-H Steps 3-4 — N-observer colimit (DEFERRED)
+
+| Thuoc tinh | Gia tri |
+|------------|---------|
+| **Component** | T4-H Steps 3-4 — N-observer K_joint colimit construction (global commutativity) |
+| **Project** | VVV-QMRF (Layer 2) — N-observer colimit, deferred structural gap |
+| **Hallucination score (H)** | **4/10** (Xanh duong — Steps 1-2 proven, Steps 3-4 DEFERRED) |
+| **Structural weight (W)** | **3** (HIGH — blocks 3-observer prediction structural validation) |
+| **Anchor penalty (A)** | **0.5** (WEAK — Steps 3-4 chua duoc prove) |
+| **Trace score (SOT)** | 2/6 |
+| **Risk Score** | 4 x 3 x 1.5 = **18.0** |
+| **Risk Score band** | **HIGH** (15-19.9) |
+| **Root cause type** | Type 5 — Structural Gap |
+| **Status** | **DEFERRED** — D-T4-BYPASS-01 "APPLIED" |
+| **Full Label** | `[AH-LOW] [RS-HIGH] [AH-DEFER]` |
+| **Giai phap uu tien** | DEFER (cho resource) |
+| **Neu hallucination that:** | 3-observer prediction ILLUSTRATIVE ONLY |
+| **Deadline** | LOW (P3) |
 
 ### Rank 4: K5_prospective — v29 axiom extension (Shared with Table 1)
 
@@ -660,7 +694,7 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | Risk Score Range | Count | Components |
 |------------------|-------|------------|
 | **20+ (CRITICAL)** | **0** | — |
-| **15-20 (HIGH)** | 3 | phi-map (18.0), T4-H (18.0), T5 K_ctx (18.0) |
+| **15-20 (HIGH)** | 3 | phi-map (18.0), T5 K_ctx (18.0), T4-H (18.0) |
 | **10-15 (MEDIUM)** | 1 | K5_prosp. (12.0) |
 | **5-10 (LOW)** | 2 | E1-E16 (9.6), BE↔QM (9.6) |
 
@@ -769,4 +803,4 @@ OPEN → MONITORING → ARCHIVED (RCA >= 4.5/5, UNRESOLVABLE)
 
 ---
 
-*Top 10 Hallucination Risk Record v2.0 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). v2.0 fixes: Score Evolution v1.0 values corrected (RCA-4, 4.67/5), rank inversion fixed (RCA-3, 5.00/5). Next audit: 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β).*
+*Top 10 Hallucination Risk Record v2.1 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). v2.1 fix: Table 2 rank inversion T4-H↔T5 (RCA-9, 5.00/5). v2.0: Score Evolution v1.0 (RCA-4, 4.67/5). v1.9: Table 1 rank inversion K5_prosp↔K9_E impl (RCA-3, 5.00/5). Next audit: 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β).*
