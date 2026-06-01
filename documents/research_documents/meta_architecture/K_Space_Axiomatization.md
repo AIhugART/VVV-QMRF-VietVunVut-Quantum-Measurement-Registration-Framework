@@ -448,9 +448,26 @@ Auth(k2 → k1, C_K) = 1  iff  all of:
   (c)  k1 ∈ scope(D_joint)                   [k1's claim falls within D_joint scope]
 
   where:
-    C_K-sphere(k) is the comparison context that k belongs to.
-    scope(D_joint) is the set of registration acts whose claims D_joint demands
-    joint validity evaluation for.
+    C_K-sphere(k) is the comparison context that k belongs to
+      (structural co-location — which comparison frame contains k).
+
+    scope(D_joint; Arch) := {k in K_R : the claim content o(k) is of a claim type
+      that D_joint(., ., Arch) demands joint validity evaluation for}
+      (semantic relevance — which claims within C_K are subject to D_joint).
+      For all current operational conditions A-E: scope(D_joint; Arch) includes
+      all outcome claims (o(k) != empty) of acts whose K-spaces are brought under
+      D_joint. Non-outcome claims (timing, certification, validity status) are
+      reserved for future operational conditions.
+
+    WARNING RCA I-03 (2026-06-01): Relationship C_K-sphere <-> scope(D_joint)
+      C_K-sphere(k) identifies structural membership; scope(D_joint) identifies
+      semantic relevance. For all k: k in scope(D_joint) => C_K-sphere(k) defined
+      (scope is always within a comparison context). For all current operational
+      conditions A-E: C_K-sphere(k) defined <-> k in scope(D_joint) for outcome
+      claims — the two membership concepts are co-extensive for the only claim
+      type currently modeled. Future claim types may break co-extensiveness
+      (D_joint may demand joint evaluation of outcome claims but not timing
+      claims, even though timing claims reside in the same C_K).
 
 Notation note:
   Auth(k2 → k1, C_K) is an INSTANCE-LEVEL relation, not a global direction.

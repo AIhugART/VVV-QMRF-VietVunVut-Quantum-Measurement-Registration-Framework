@@ -6,6 +6,22 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v50 (2026-06-01) — Level 4 Internal Consistency Audit: D_joint, AdmJoint, requires_K_joint (RCA 4.1/5)
+
+### Added
+- `04_governance/RCA_Level_4_Internal_Consistency_Audit_2026_06_01.md` — 3-Round RCA (4.1/5). Audits internal consistency of D_joint, AdmJoint conditions (i)-(v), and requires_K_joint predicate across 7 SOT documents.
+
+### Findings
+- **7 candidates identified:** 2 structural defects, 3 thin-definition gaps, 2 benign.
+- **I-01 (4.7/5):** `scope(D_joint)` undefined in all SOTs — used in K6(c) but never formally defined. STRUCTURAL DEFECT.
+- **I-03 (4.3/5):** C_K-sphere(k) vs scope(D_joint) — dual membership concepts in K6 without documented relationship. STRUCTURAL DEFECT.
+- **Level 4 freeze MAINTAINED.** Fixes are non-semantic clarifications (add scope(D_joint) definition, document C_K-sphere/scope relationship).
+
+### Cross-reference
+- `RCA_P3_P4_Relationship_Blockers_2026_06_01.md` — B_PHI shares same C_K/D_joint category boundary family as I-01/I-03.
+
+---
+
 ## v49 (2026-05-31) — φ-O5 FULLY COMPLETE: φ-O5-4 + φ-O5-5 Resolved (RCA 4.63/5)
 
 ### Added

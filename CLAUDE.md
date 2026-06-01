@@ -190,7 +190,7 @@ To view a copy of this license, visit https://creativecommons.org/licenses/by/4.
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
-This project is indexed by GitNexus as **VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework** (22351 symbols, 23788 relationships, 116 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
+This project is indexed by GitNexus as **VVV-QMRF-VietVunVut-Quantum-Measurement-Registration-Framework** (22393 symbols, 23830 relationships, 116 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
 
 > If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
 
