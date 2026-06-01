@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # VVV-QMRF Edge Registry
 
 > **SOT:** `node_QM_VVV.md` Section 3 + Section 2. **BE analogue check:** `SYSTEM_Buddhist_Epistemology/system_be_full.md`.
-> **Date:** 2026-05-21. **Status:** All 4 phases complete. **Total:** 131 edges.
+> **Date:** 2026-06-01. **Status:** All 5 phases complete. **Total:** 135 edges.
 > **Bridge layer:** Direct inter-graph bridge edges between Standard QM and VVV-QMRF are maintained separately in `bridge_QM_standard_to_VVV_QMRF.md` using `BR_XXXXX` codes. Phase 2 edges below remain VVV-QMRF registry edges; bridge edges provide stricter cross-system boundary and verification rules.
 
 ---
@@ -447,6 +447,25 @@ ED_QM_VVV_00131: N_QM_VVV_00001 (Contrapositive Evidence) → N_QM_VVV_00054 (Pr
 
 ---
 
+## Phase 5 — v33 φ_R Correspondence Edges (4 edges)
+
+*Added 2026-06-01 for N_QM_VVV_00067 (φ_R — Restricted Existence Map, Class C THEOREM).*
+
+ED_QM_VVV_00132: N_QM_VVV_00067 (φ_R Restricted Existence Map) → N_QM_VVV_00032 (Registration Error / Bhrānti Status)
+- **Relation:** maps_invalid_to_zero — V(k)=0 K-states (registration error status) are the K-side condition for φ_R(k)=0_{B(H)}. φ_R absorbs all K5-invalidated registrations to the zero projector, making the K-side invalidity structurally explicit in B(H).
+
+ED_QM_VVV_00133: N_QM_VVV_00067 (φ_R Restricted Existence Map) → N_QM_VVV_00036 (Null Registering-System Event / NRE)
+- **Relation:** maps_null_to_zero — isNull(k) K-states (NRE: physical interaction without registration encoding) also yield φ_R(k)=0. The domain K_R excludes both invalid (N_QM_VVV_00032) and null (N_QM_VVV_00036) K-states; both collapse to the zero projector at the B(H) image level.
+
+ED_QM_VVV_00134: N_QM_VVV_00067 (φ_R Restricted Existence Map) → N_QM_VVV_00060 (K9_E Probability Postulate / P9)
+- **Relation:** provides_projection_basis_for — φ_R supplies P_o = |o⟩⟨o| ∈ P(H)∪{0} to the Born rule: P_QM = Tr(P_o·ρ). K9_E then modifies P_QM by the K_ctx suppression factor. The sequential composition φ_R → Born → K9_E is the full VVV-QMRF probability stack (`phi_k9e_born_composition_v1_0.md`). φ_R and K9_E are logically independent; Born rule is the shared interface.
+
+ED_QM_VVV_00135: N_QM_VVV_00067 (φ_R Restricted Existence Map) → N_QM_00018 (Projection Operator)
+- **Relation:** maps_valid_registration_to — Valid K-states (V(k)=1, k ∈ K_R) map to rank-1 projectors |o⟩⟨o| ∈ B(H) via φ_R. This is the Phase 2 cross-system edge: the K-side registration outcome o becomes the QM-side projector P_o. Codomain P(H)∪{0} is the tightest B(H) subset needed (Im(φ_R) = outcome projectors + zero operator only). Boundary: φ_R is a correspondence map, not a homomorphism/functor (Theorem A+B, `phi_map_boundary_theorem_v1_0.md`).
+- **Cross-system:** VVV-QMRF K-space → Standard QM B(H)
+
+---
+
 ## Summary
 
 | Phase | Type | Edges | Status |
@@ -455,4 +474,5 @@ ED_QM_VVV_00131: N_QM_VVV_00001 (Contrapositive Evidence) → N_QM_VVV_00054 (Pr
 | 2 | VVV → QM cross-system | 60 | ✅ Complete |
 | 3 | VVV → BE source analogue | 15 | ✅ Complete |
 | 4 | VVV ↔ VVV internal (cross-category) | 16 | ✅ Complete (Tier A: 7, Tier B: 6, Tier C: 3) |
-| **Total** | | **131** | ✅ **All phases complete** |
+| 5 | φ_R correspondence edges (v33, N_QM_VVV_00067) | 4 | ✅ Complete |
+| **Total** | | **135** | ✅ **All phases complete** |
