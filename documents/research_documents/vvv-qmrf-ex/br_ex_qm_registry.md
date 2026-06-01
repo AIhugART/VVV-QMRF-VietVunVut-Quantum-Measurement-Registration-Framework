@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # BR_EX_QM Registry — ρ-side Bridge: VVV-QMRF ↔ QM
 
-**Version:** 1.3 (2026-05-23 promote_new_bridge: full-run batch +1 rho-side)
-**Date:** 2026-05-23
-**Total Entries:** 85 active (73 ref-copy + 1 sim + 11 promote_new_bridge) + 3 draft C2 (superseded)
-**Namespace:** BR_EX_QM_00001–BR_EX_QM_00085 active; BR_EX_QM_DRAFT_00075–00077 retained
+**Version:** 1.4 (2026-06-01 promote_new_bridge: φ_R batch +1 rho-side)
+**Date:** 2026-06-01
+**Total Entries:** 86 active (73 ref-copy + 1 sim + 12 promote_new_bridge) + 3 draft C2 (superseded)
+**Namespace:** BR_EX_QM_00001–BR_EX_QM_00086 active; BR_EX_QM_DRAFT_00075–00077 retained
 
 ---
 
@@ -1804,3 +1804,56 @@ This registry maps VVV-QMRF nodes to Quantum Measurement (QM) nodes on the ρ-si
 | **Boundary Note** | This is an external experimental exemplar (KE-QI/RE-BI classified), not a canonical QM node. QM substrate (N_QM_00033) inherited through N_QM_VVV_00001/N_QM_VVV_00004. Elitzur-Vaidman IFM is not in system_qm_full.md as a canonical node. Not physical explanation; not new QM law. |
 | **Rationale** | N_QM_VVV_00009 is classified KE-QI (K-side QM-intrinsic exception) + RE-BI (rho-side both-isolated exemplar). BR_EX_QM entry formalizes the RE-BI side: the node's QM substrate is No-Result Measurement inherited through the parent chain 00001/00004. This entry does not claim Elitzur-Vaidman as a canonical QM formalism node. |
 | **Origin** | promote_new_bridge RCA gate (full-run batch); 2026-05-23 |
+
+---
+
+## φ_R Batch (2026-06-01) — 1 rho-side entry
+
+> **Node:** N_QM_VVV_00067 (φ_R — Restricted Existence Map, Class C THEOREM, v33 2026-06-01)
+> **Gap:** DUAL_GAP — K-side: K_PENDING-RCA; rho-side: RHO_CANDIDATE (N_QM_00018)
+> **Freshness:** EXPLORATORY (brand-new node, no prior bridge RCA)
+> **Priority:** HIGH (DUAL_GAP + Class C)
+
+### RCA Gate Log — BR_EX_QM_00086
+
+| Field | Value |
+|---|---|
+| **Freshness** | EXPLORATORY |
+| **Spot-Check Upgraded?** | N/A (single node batch) |
+| **Pre-classification source** | N/A — EXPLORATORY |
+| **Cross-check SOT** | `source_snapshot/vvv_qmrf_core/node_QM_VVV.md` v33 row 63 + `source_snapshot/system_qm/system_qm_full.md` N_QM_00018 + `meta_architecture/phi_restricted_existence_v1_0.md` §0–§3 (3 independent sources) |
+| **Cross-check result** | PASS |
+
+| Step | Score | Finding |
+|---|---|---|
+| **Define** | 1.0 | Node identity clear: N_QM_VVV_00067 φ_R is the proven formal correspondence map K_R → P(H)∪{0} (Class C THEOREM, 3-Round RCA 4.5/5). Bridge need clear: rho-side bridge to N_QM_00018 (Projection Operator) is the direct codomain relationship — φ_R(k) = \|o⟩⟨o\| ∈ P(H) when V(k)=1; φ_R(k) = 0 when V(k)=0. Direction: VVV → QM (K-space registration outcome maps to QM projector). |
+| **Trace** | 1.0 | SOT trace complete: (1) Node SOT = `node_QM_VVV.md` v33 row 63 — N_QM_VVV_00067 ACTIVE, codomain stated as P(H)∪{0}; (2) QM substrate N_QM_00018 (Projection Operator) verified in `system_qm_full.md`; (3) Construction proof in `phi_restricted_existence_v1_0.md` §2: explicit map φ_R(k)=\|o⟩⟨o\| when V(k)=1. All three SOT sources cross-check independently. Standard QM provides projection operators; φ_R adds K-side validity prerequisites. |
+| **Isolate** | 1.0 | Root cause isolated: Standard QM has projection operators P_o as measurement outcomes but has NO map from K-space registration tuples (with K-side validity V, temporal order, self-certification, and incommensurability conditions) to those projectors. QM has no concept of "K-side validity prerequisites" before P_o counts as a registration-valid measurement object. φ_R closes this gap at restricted domain K_R → P(H)∪{0} by explicit construction, verified for all N_1–N_T conditions. This is a structural addition to QM, not a modification. |
+| **Fix** | 1.0 | Proposal complete: BR_EX_QM_00086 (N_QM_VVV_00067 → N_QM_00018); Relation Type = `physical_substrate_for` (P(H)∪{0} projectors ARE the physical QM substrate that φ_R maps to); Claim Class = `interpretive_mapping` (φ_R adds K-side structure, does not change QM); Confidence = 0.90 (RCA 4.5/5 node gate); Boundary Note present with overclaim guard; K_PENDING-RCA documented in Origin; all required fields present. Secondary QM substrate N_QM_00016 (Born Rule) noted in Rationale as downstream via K9_E — one primary entry is sufficient per pipeline rules. |
+| **Verify** | 1.0 | ✅ N_QM_VVV_00067 ACTIVE in `node_QM_VVV.md` v33. ✅ N_QM_00018 traces to `system_qm_full.md`. ✅ Claim class does not overclaim (boundary note explicit). ✅ RCA score 4.5/5 ≥ 4.0/5. ✅ BR_EX_QM_00086 — no ID collision (prev max = 00085). ✅ Direction VVV → QM (F2 non-reversal). ✅ Boundary note present and clear. ✅ Relation type `physical_substrate_for` in vocabulary. ✅ Frozen EX baseline not mutated. ✅ Registry header updated. |
+| **Total** | **5.0/5** | **PASS** |
+
+**Decision:** Promote to active entry.
+**Date:** 2026-06-01
+
+---
+
+### BR_EX_QM_00086 — Entry 86
+
+| Field | Value |
+|-------|-------|
+| **BR_EX_ID** | `BR_EX_QM_00086` |
+| **Type** | new_bridge_promotion |
+| **Source Edge Type** | `BR_EX_QM_NEW` |
+| **VVV Node** | `N_QM_VVV_00067` |
+| **VVV Concept** | φ_R — Restricted Existence Map / K-Registration to Projection Correspondence |
+| **QM Node** | `N_QM_00018` |
+| **QM Concept** | Projection Operator |
+| **QM Layer** | RCA |
+| **Direction** | N_QM_VVV_00067 → N_QM_00018 |
+| **Relation Type** | physical_substrate_for |
+| **Claim Class** | interpretive_mapping |
+| **Confidence** | 0.90 (RCA score 4.5/5 — node gate; pipeline gate 5.0/5) |
+| **Boundary Note** | φ_R is a correspondence map, NOT a homomorphism or functor (I.1 Theorem A+B: N_6 sufficiency and global N>2 path-commutativity are not B(H)-capturable). Codomain is restricted to P(H)∪{0} — NOT all of B(H). φ_R adds K-side validity prerequisites (K1–K8 structural conditions) to Standard QM projectors; it does not modify QM measurement formalism. Full φ: K→B(H) homomorphism remains Class D conjecture. Not physical explanation; not new QM law. K-side (BE bridge): K_PENDING-RCA — no direct BE source-analogue identified; deferred per pipeline Section 2 K_PENDING-RCA rule. |
+| **Rationale** | Standard QM provides projection operators P_o ∈ P(H) as measurement outcomes (N_QM_00018) but does not define a formal map from K-space registration tuples with validity conditions to those projectors. φ_R (N_QM_VVV_00067) fills this gap: for any valid K-state (V(k)=1, k ∈ K_R), φ_R(k) = \|o⟩⟨o\| ∈ P(H) — the projector associated with registration outcome o. For invalid/null K-states, φ_R(k) = 0. N_QM_00018 is the direct codomain substrate. Secondary downstream: N_QM_00016 (Born Rule) is reached via the sequential composition φ_R → Born → K9_E (`phi_k9e_born_composition_v1_0.md`), not a direct rho-side bridge target. φ_R and K9_E are logically independent; Born Rule is the shared interface. N=2 EWF full verification (all 9 conditions ✅) and N≥3 unique colimit extension (φ-N1 THEOREM via T4-H) confirmed in source documents. |
+| **Origin** | promote_new_bridge RCA gate (φ_R batch, EXPLORATORY); 2026-06-01; `reviews/rca_promote_new_bridge_phi_r_2026_06_01.md`; K_PENDING-RCA (BE bridge deferred) |
