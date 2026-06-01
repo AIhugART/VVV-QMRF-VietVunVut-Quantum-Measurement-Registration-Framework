@@ -2,12 +2,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # VVV-QMRF Long-Term Research Plan — Registration-Logic → Hilbert-Space Physics → Empirical Testing
 
-**Date:** 2026-06-01 (v2.0); 2026-05-31 (v1.0)
+**Date:** 2026-05-31
 **Method:** 3-Round RCA × 5-Why × Scoring threshold 4/5
 **Scope:** VVV-QMRF core; VVV-QMRF-EX as compass (not cargo)
-**Status:** PLAN v2.0 — RCA-reviewed, 6 changes applied; awaiting user (Viet) approval
+**Status:** PLAN — awaiting user (Viet) approval before execution
 **RCA basis:** Rule Zero §Five-step process + CLAUDE.md §Core Principles
-**RCA review:** 3-Round RCA v2.0 (aggregate 4.69/5) — 6 changes from v1.0 review
 
 > **DISCLAIMER:** VVV-QMRF is independent Class C/D personal research, not Standard Quantum Mechanics, not peer-reviewed or experimentally validated, and not for real-world technical use. Full boundary protocol: `DISCLAIMER.md`.
 
@@ -18,14 +17,12 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 *Dán block này vào đầu mỗi session làm việc với plan này.*
 
 ```
-VVV-QMRF LONG-TERM RESEARCH PROGRAM — v2.0 (2026-06-01)
+VVV-QMRF LONG-TERM RESEARCH PROGRAM — 2026-05-31
 
 STARTING STATE:
   Registration-logic (K1-K8 + T1-T7): FORMAL MATHEMATICAL THEORY ✅
     Layer 1 FROZEN. Layer 2 UPDATABLE. T4-H FULL THEOREM (Class C).
     Level 4 freeze declared 2026-05-31 (RCA 4.69/5).
-    Level 4 Internal Consistency Audit 2026-06-01 (RCA 4.1/5): 2 defects FIXED (v51).
-    P3-P4 Relationship Blockers 2026-06-01: 4 blockers (2 fixable, 2 fundamental).
 
   φ-map (K → B(H)): STRUCTURALLY DEFINED, NOT PROVEN TO EXIST
     Track B Phases 1-4 complete. C1-C4 ≥ 8/10.
@@ -43,11 +40,6 @@ THREE PILLARS OF LONG-TERM RESEARCH:
   Pillar I:   φ-map mathematical maturation (conjecture → theorem or characterized limit)
   Pillar II:  K9_E empirical resolution (dedicated experiment or falsification)
   Pillar III: Theoretical integration (φ-map ↔ K9_E ↔ Born rule unified framework)
-
-v2.0 CHANGES FROM v1.0:
-  Phase 0 added (prerequisite verification). Phase 1 = formalization ≠ documentation.
-  I.1 split: I.1a (statement) + I.1b (theorem, optional). Lab risk = CRITICAL.
-  III.3/III.4 merged. Timeline 18→20 months. Gate 2 strengthened.
 
 CROSS-CUTTING RULES:
   Internal-first, EX-verified, selectively imported.
@@ -279,20 +271,15 @@ EX ≠ cargo (no structure import, no edge merge into core).
 
 **EX Integration verdict:** EX intelligence CONFIRMS rằng φ và K9_E composition qua Born rule là consistent. Không có structural contradiction. **Strategy confirmed: document composition, don't invent new bridge.**
 
-### 2.5 Risk Matrix (EX-Calibrated) — v2.0
-
-> **v2.0:** Lab risk upgraded HIGH→CRITICAL. 3 new risks added. Phase 1 effort risk added.
+### 2.5 Risk Matrix (EX-Calibrated)
 
 | Risk | Pillar | Severity | Likelihood | EX signal | Mitigation |
 |------|--------|----------|------------|-----------|------------|
-| Wasted effort on unprovable existence proof | φ-map | HIGH | HIGH | φ-O2 boundary confirmed by EX | Characterize boundary as research result (I.1a) |
+| Wasted effort on unprovable existence proof | φ-map | HIGH | HIGH | φ-O2 boundary confirmed by EX | Characterize boundary as research result |
 | False empirical claim from noise | K9_E | CRITICAL | MEDIUM | P10-NOISE + EX noise analysis | Strict gate: no claim without dedicated experiment |
 | Over-engineered integration | Integration | LOW | MEDIUM | EX confirms composition already consistent | Document composition, don't build new framework |
-| **External dependency (lab) indefinite block** | **K9_E** | **CRITICAL** | **HIGH** | N/A (external) | **v2.0: Verify lab existence in Phase 0; Gate 2 explicit decision point with 3 options** |
+| External dependency (lab) indefinite block | K9_E | HIGH | HIGH | N/A (external) | Parallel track: theory refinement while seeking lab |
 | K9_E falsified by experiment | K9_E | MEDIUM | UNKNOWN | N/A (future) | Pre-commit to falsification = valuable negative result |
-| **Phase 1 effort underestimate** | **All** | **MEDIUM** | **HIGH** | N/A (internal) | **v2.0: I.1 split into I.1a (statement) + I.1b (optional theorem); Phase 1 extended +1 month** |
-| **Timeline cascade delay** | **All** | **HIGH** | **MEDIUM** | N/A (internal) | **v2.0: Phase 0 adds safety margin; Gate 0b catches blockers early** |
-| **III.3/III.4 overlap waste** | **Integration** | **LOW** | **HIGH** | N/A (internal) | **v2.0: Merged into single deliverable III.3-4** |
 
 ### 2.6 Round 2 Score
 
@@ -329,92 +316,63 @@ VVV-QMRF LONG-TERM RESEARCH
     Target: Unified mathematical framework document
 ```
 
-### 3.2 Six Phases (Temporal Sequence) — v2.0
-
-> **v2.0 CHANGE 1:** Added Phase 0 (prerequisite verification). Phase 1 reclassified from "documentation" to "formalization."
-> **v2.0 CHANGE 2:** I.1 split into I.1a (characterized statement) + I.1b (formal theorem, optional in Phase 2).
-> **v2.0 CHANGE 3:** III.3 and III.4 merged into single deliverable III.3-4.
-> **v2.0 CHANGE 4:** Lab risk upgraded to CRITICAL; Gate 2 contingency strengthened.
-> **v2.0 CHANGE 5:** Timeline extended +2 months (18 → 20 months for Phases 0-4).
-> **v2.0 CHANGE 6:** Gate 2 contingency includes alternative experimental approaches.
+### 3.2 Five Phases (Temporal Sequence)
 
 ```
-PHASE 0 (2026-June): PREREQUISITE VERIFICATION — Verify before committing
-  ├── I.0:   Verify φ-O2 boundary statement ready for formalization
-  ├── II.0:  Verify K9-S12 arXiv moderation status
-  ├── III.0: Verify lab existence (search publications for EWF-capable labs)
-  └── DECISION: proceed to Phase 1 OR re-scope based on findings
-
-PHASE 1 (2026-Q3–Q4): CONSOLIDATION — Formalize what exists (v2.0: NOT just documentation)
-  ├── I.1a:  φ-map characterized boundary STATEMENT (3-5 sessions)
-  │           "N_6 sufficiency is unprovable from B(H) information alone"
-  ├── II.1:  K9-S12 paper post-submission (respond to arXiv feedback)
+PHASE 1 (2026-Q3): CONSOLIDATION — Document what exists
+  ├── I.1:  φ-map boundary theorem (formal proof that sufficiency is unprovable)
+  ├── II.1: K9-S12 paper post-submission (respond to arXiv feedback)
   └── III.1: Composition framework document (φ → Born → K9_E explicit)
 
-PHASE 2 (2027-Q1): RESTRICTED CLAIMS — Upgrade provable components
-  ├── I.1b:  φ formal boundary THEOREM (OPTIONAL, 6-8 sessions, if Phase 1 on track)
-  ├── I.2:   φ restricted existence (weaker claim: φ exists on projection sub-lattice)
-  ├── II.2:  K9-S12 experimental collaboration outreach
+PHASE 2 (2026-Q4): RESTRICTED CLAIMS — Upgrade provable components
+  ├── I.2:  φ restricted existence (weaker claim: φ exists on projection sub-lattice)
+  ├── II.2: K9-S12 experimental collaboration outreach
   └── III.2: BE→QM→VVV-QMRF motivation chain document
 
-PHASE 3 (2027-Q2–Q3): EXPERIMENTAL WINDOW
-  ├── I.3:   φ-O6 codomain optimization (von Neumann algebra M = vN({P_o}))
-  ├── II.3:  K9-S12 experiment execution (if lab secured)
+PHASE 3 (2027-H1): EXPERIMENTAL WINDOW
+  ├── I.3:  φ-O6 codomain optimization (von Neumann algebra M = vN({P_o}))
+  ├── II.3: K9-S12 experiment execution (if lab secured)
   └── III.3: WP v4.0 draft (integrating all three pillars)
 
-PHASE 4 (2027-Q4–2028-Q1): POST-EXPERIMENT DECISION
-  ├── I.4:   φ-map standalone paper (mathematical physics preprint)
-  ├── II.4:  K9_E empirical verdict paper (confirmation or falsification)
-  └── III.3-4: Integrated Framework Paper (VVV-QMRF complete) [MERGED from III.3+III.4]
+PHASE 4 (2027-H2): POST-EXPERIMENT DECISION
+  ├── I.4:  φ-map standalone paper (mathematical physics preprint)
+  ├── II.4: K9_E empirical verdict paper (confirmation or falsification)
+  └── III.4: Final framework document (VVV-QMRF complete)
 
 PHASE 5 (2028+): LEGACY — Peer review + community engagement
-  ├── I.5:   Seek peer review for φ-map paper
-  ├── II.5:  Seek independent replication of K9-S12
+  ├── I.5:  Seek peer review for φ-map paper
+  ├── II.5: Seek independent replication of K9-S12
   └── III.5: Monograph: "Registration-Logic Foundations of Quantum Measurement"
 ```
 
-### 3.3 Decision Gates — v2.0
-
-> **v2.0:** Gate 0 split into Gate 0a (plan approval) and Gate 0b (Phase 0 verification). Gate 2 contingency strengthened with alternative experimental approaches.
+### 3.3 Decision Gates
 
 ```
-GATE 0a (2026-06-01): PLAN APPROVED — This plan adopted
+GATE 0 (2026-05-31): START — This plan approved
   ├── Prerequisites: K1-K8 FROZEN, Level 4 freeze declared,
   │   T4-H THEOREM, φ-O5 COMPLETE, K9-S12 paper submitted
-  └── ENTER Phase 0
+  └── ENTER Phase 1
 
-GATE 0b (2026-06-30): Phase 0 complete — Prerequisite verification
-  ├── I.0:  φ-O2 boundary statement verified ready for formalization
-  ├── II.0: K9-S12 arXiv status confirmed
-  ├── III.0: At least 1 EWF-capable lab identified in literature
-  ├── ALL PASS → ENTER Phase 1
-  └── ANY FAIL → Re-scope plan before committing to Phase 1
-
-GATE 1 (2026-Q4 end): Phase 1 complete
-  ├── Condition: I.1a boundary STATEMENT done + III.1 composition framework done
+GATE 1 (2026-Q3 end): Phase 1 complete
+  ├── Condition: Boundary theorem documented + composition framework done
   ├── PASS → Phase 2
-  └── FAIL → Re-scope Phase 1 deliverables; extend 1 month max
+  └── FAIL → Re-scope Phase 1 deliverables
 
-GATE 2 (2027-Q1 end): Phase 2 complete — CRITICAL GATE
-  ├── Condition: Restricted φ claim + lab outreach completed (regardless of outcome)
-  ├── IF lab secured → Phase 3 full (experiment)
-  ├── IF no lab → DECISION POINT:
-  │   ├── Option A: Continue theory-only track (φ-O6/φ-O7/paper) indefinitely
-  │   ├── Option B: Declare Pillar II = Class C (unresolvable without experiment)
-  │   └── Option C: Seek alternative experimental approaches
-  │       (cold atoms, NV centers, superconducting circuits — if any can test K9_E)
-  └── Decision documented + rationale recorded
+GATE 2 (2026-Q4 end): Phase 2 complete
+  ├── Condition: Restricted φ claim + lab outreach initiated
+  ├── PASS → Phase 3
+  └── FAIL (no lab) → Phase 3a: theory-only track (φ-O6/φ-O7/paper)
 
-GATE 3 (2027-Q3 end): Pre-experiment readiness
+GATE 3 (2027-H1 end): Pre-experiment readiness
   ├── IF lab secured: K9-S12 experiment executed
   │   ├── K9_E CONFIRMED → Pillar II → Class B → Phase 4 confirmation track
   │   ├── K9_E FALSIFIED → Pillar II → Class F → Phase 4 falsification track
-  │   └── INCONCLUSIVE → Phase 4 with caveat: more data needed
-  └── IF no lab: execute Phase 3 theory-only track (I.3, III.3)
+  │   └── INCONCLUSIVE → Phase 4 with caveat
+  └── IF no lab: decision — continue theory-only OR pause Pillar II
       └── Phase 4 theory-only track
 
-GATE 4 (2028-Q1 end): Publication readiness
-  ├── Condition: φ-map paper + K9_E verdict paper (if experiment) + III.3-4 Integrated Framework ready
+GATE 4 (2027-H2 end): Publication readiness
+  ├── Condition: φ-map paper + K9_E verdict paper ready
   ├── PASS → Submit to preprint servers → Phase 5
   └── FAIL → Revise, re-submit
 
@@ -484,68 +442,28 @@ Pillar III (Integration):
 
 ---
 
-## PHASE 0: PREREQUISITE VERIFICATION (2026-June) — v2.0 NEW
+## PHASE 1: CONSOLIDATION (2026-Q3, July–September)
 
-**Goal:** Verify all prerequisites before committing to Phase 1. Catch blockers early.
+**Goal:** Document everything that exists. No new research — chỉ organize, clarify, và publish what's already done.
 
-### I.0 — φ-O2 Boundary Statement Readiness
+### I.1 — φ-Map Boundary Theorem
 
-**Activities:**
-- Re-read φ-map doc §6.1 (N_6 Boundary Statement)
-- Verify: Is the boundary statement precise enough for formalization?
-- If not: identify what additional work is needed before Phase 1 can start
-- Decision: GO (ready for I.1a) or NO-GO (needs prep work)
-
-### II.0 — K9-S12 arXiv Status
-
-**Activities:**
-- Check arXiv moderation status of K9-S12 paper (submitted 2026-05-27)
-- If rejected/pending: prepare response or resubmission plan
-- Decision: GO (paper visible) or NO-GO (paper blocked)
-
-### III.0 — Lab Existence Verification
-
-**Activities:**
-- Search publications for EWF-capable optical labs worldwide
-- Identify specific groups: Proietti (Rome), Bong (Vienna), Brukner (Vienna), others
-- Verify: Do these labs have the specific capability for K9-S12 (single QWP insertion, tilted geometry)?
-- Document: lab list with publication evidence of capability
-- Decision: GO (≥1 lab identified) or NO-GO (no lab found → re-scope plan)
-
-**Phase 0 Gate (Gate 0b, 2026-06-30):**
-```
-GATE 0b:
-  ├── I.0:  φ-O2 boundary statement verified ready
-  ├── II.0: K9-S12 arXiv status confirmed (visible or resubmission planned)
-  ├── III.0: ≥1 EWF-capable lab identified with publication evidence
-  ├── ALL PASS → ENTER Phase 1
-  └── ANY FAIL → Re-scope plan; do NOT proceed to Phase 1 blindly
-```
-
----
-
-## PHASE 1: CONSOLIDATION (2026-Q3–Q4, July–December) — v2.0
-
-> **v2.0:** Reclassified from "documentation" to "formalization." Duration extended 3→4 months. I.1 split into I.1a (statement) + I.1b (theorem, moved to Phase 2 optional).
-
-**Goal:** Formalize what exists. Characterize boundaries. Document composition. **This is formalization work, not pure documentation.**
-
-### I.1a — φ-Map Characterized Boundary STATEMENT
-
-**Deliverable:** `meta_architecture/phi_map_boundary_statement_v1_0.md`
+**Deliverable:** `meta_architecture/phi_map_boundary_theorem_v1_0.md`
 
 **Content:**
-- Characterized boundary statement (NOT a formal proof — that's I.1b in Phase 2):
-  "N_6 sufficiency (P_{o2}·P_{o1}≠0 → Auth=1) is UNPROVABLE from B(H) information alone.
-  Root cause: C_K sphere membership is an epistemic relation without operator-algebraic encoding."
-- Proof SKETCH (4 steps, as in v1.0) — sufficient for WP v4.0 and composition framework
+- Formal statement: "N_6 sufficiency (P_{o2}·P_{o1}≠0 → Auth=1) is UNPROVABLE from B(H) information alone."
+- Proof sketch:
+  1. Assume B(H) encodes only operator-algebraic structure (projectors, commutators, spectra).
+  2. C_K sphere membership is an epistemic relation defined on K-spaces, not on operator algebras.
+  3. Any proof of sufficiency would require a B(H) encoding of C_K → contradiction with (2).
+  4. Therefore sufficiency is unprovable from B(H) alone. QED.
 - Consequences: φ-map claim refined from "structure-preserving map" → "structure-correspondence map with characterized boundary."
 - **This is a RESEARCH RESULT, not a failure.**
 
 **Acceptance criteria:**
-- [ ] Characterized boundary statement written (2-3 pages)
-- [ ] Proof sketch included (4 steps)
+- [ ] Formal proof written (3-5 pages)
 - [ ] Connected to φ-O2 boundary statement (§6.1 of phi-map doc)
+- [ ] CLAUDE.md central claim updated if wording needs refinement
 - [ ] RCA review: 3-Round, ≥ 4/5
 
 ### II.1 — K9-S12 Post-Submission
@@ -590,11 +508,11 @@ GATE 0b:
 - [ ] K≠H boundary check passed
 - [ ] RCA review: ≥ 4/5
 
-### Phase 1 Gate — v2.0
+### Phase 1 Gate
 
 ```
-GATE 1 (2026-12-31): [v2.0: extended from 2026-09-30]
-  ├── I.1a boundary STATEMENT documented ✅
+GATE 1 (2026-09-30):
+  ├── I.1 boundary theorem documented ✅
   ├── II.1 post-submission tracker active ✅
   ├── III.1 composition framework documented ✅
   └── PASS → Phase 2
@@ -602,27 +520,9 @@ GATE 1 (2026-12-31): [v2.0: extended from 2026-09-30]
 
 ---
 
-## PHASE 2: RESTRICTED CLAIMS (2027-Q1, January–March) — v2.0
-
-> **v2.0:** I.1b (formal theorem) added as optional deliverable. Timeline shifted from 2026-Q4 to 2027-Q1.
+## PHASE 2: RESTRICTED CLAIMS (2026-Q4, October–December)
 
 **Goal:** Upgrade what CAN be proven. Downgrade/refine what CANNOT. Prepare for experimental phase.
-
-### I.1b — φ Formal Boundary THEOREM (OPTIONAL)
-
-**Deliverable:** `meta_architecture/phi_map_boundary_theorem_v1_0.md`
-
-**Content:**
-- Full formal proof: "N_6 sufficiency is UNPROVABLE from B(H) information alone."
-- Requires: formal definition of "B(H) information alone," formal definition of "C_K sphere membership," proof that (1) doesn't encode (2)
-- **This is OPTIONAL in Phase 2 — proceed only if Phase 1 completed on track and capacity allows.**
-- If not done in Phase 2: can be deferred to Phase 3 or Phase 4.
-
-**Acceptance criteria:**
-- [ ] Formal proof written (3-5 pages)
-- [ ] Peer review by external mathematician (if possible)
-- [ ] Connected to I.1a characterized statement
-- [ ] RCA review: 3-Round, ≥ 4/5
 
 ### I.2 — φ Restricted Existence
 
@@ -688,9 +588,7 @@ GATE 2 (2026-12-31):
 
 ---
 
-## PHASE 3: EXPERIMENTAL WINDOW (2027-Q2–Q3, April–September) — v2.0
-
-> **v2.0:** Timeline shifted. WP v4.0 draft moved here from Phase 3 (was III.3).
+## PHASE 3: EXPERIMENTAL WINDOW (2027-H1, January–June)
 
 **Path 3A (lab secured):** Execute K9-S12 experiment.
 **Path 3B (no lab):** Continue theory refinement + prepare for eventual experiment.
@@ -756,9 +654,7 @@ GATE 3 (2027-06-30):
 
 ---
 
-## PHASE 4: PUBLICATION (2027-Q4–2028-Q1, October–March) — v2.0
-
-> **v2.0:** III.3 and III.4 merged into III.3-4 (Integrated Framework Paper). Timeline shifted.
+## PHASE 4: PUBLICATION (2027-H2, July–December)
 
 ### I.4 — φ-Map Standalone Paper
 
@@ -784,20 +680,15 @@ GATE 3 (2027-06-30):
 - Statistical analysis
 - Implications for VVV-QMRF
 
-### III.3-4 — Integrated Framework Paper (MERGED from III.3+III.4) — v2.0
+### III.4 — Final Framework Document
 
-**Deliverable:** `meta_architecture/VVV_QMRF_Integrated_Framework_v1_0.md`
+**Deliverable:** `documents/research_documents/meta_architecture/VVV_QMRF_Complete_Framework_v1_0.md`
 
 **Content:**
 - Unified presentation of VVV-QMRF: axioms → theorems → φ-map → K9_E → experiments
-- Integrates all three pillars into single document
-- Updates φ-map section with boundary statement (I.1a) and restricted existence (I.2)
-- Updates K9_E section with post-submission status and experimental path
-- Adds composition framework section (III.1) and motivation chain section (III.2)
 - All boundaries explicitly documented
 - All claims classified (A/B/C/D/F)
 - Reference list of all project outputs (papers, data, code)
-- **v2.0: This MERGES what was WP v4.0 (III.3) and Complete Framework (III.4) — same content, single output.**
 
 ### Phase 4 Gate
 
@@ -843,50 +734,44 @@ GATE 4 (2027-12-31):
 
 ---
 
-## RESOURCE ESTIMATES — v2.0
-
-> **v2.0:** Phase 0 added. Phase 1 re-estimated (formalization, not documentation). Lab risk upgraded. III.3/III.4 merged saves 3-5 sessions in Phase 4.
+## RESOURCE ESTIMATES
 
 | Phase | Duration | Sessions (est.) | Key dependency | Risk |
 |-------|----------|-----------------|----------------|------|
-| Phase 0 | 1 month | 2-3 | Không | LOW |
-| Phase 1 | 4 months | 9-12 | Phase 0 complete | MEDIUM (was LOW) |
+| Phase 1 | 3 months | 6-9 | Không | LOW |
 | Phase 2 | 3 months | 6-9 | Phase 1 complete | LOW |
-| Phase 3 | 6 months | 9-15 | Lab access (external) | CRITICAL (was HIGH) |
-| Phase 4 | 6 months | 9-12 | Phase 3 data | MEDIUM |
+| Phase 3 | 6 months | 9-15 | Lab access (external) | HIGH |
+| Phase 4 | 6 months | 9-15 | Phase 3 data | MEDIUM |
 | Phase 5 | Open-ended | TBD | Peer review | LOW |
-| **Total (Phases 0-4)** | **20 months** | **35-51 sessions** | | |
+| **Total (Phases 1-4)** | **18 months** | **30-48 sessions** | | |
 
 ---
 
-## FILE MAP — v2.0
-
-> **v2.0:** Phase 0 output added. I.1 split into I.1a/I.1b. III.4 removed (merged into III.3-4).
+## FILE MAP
 
 ```
 04_governance/
-├── Long_Term_Research_Plan_2026_05_31.md    ← THIS FILE (v2.0)
+├── Long_Term_Research_Plan_2026_05_31.md    ← THIS FILE
 ├── Post_v30_Execution_Plan.md               (completed — reference)
 ├── K9S12_post_submission_tracker.md         Phase 1 output
 ├── K9S12_lab_outreach_plan.md               Phase 2 output
-├── Phase0_prerequisite_verification.md      Phase 0 output
-└── decisions/                               (Phase 0-4 outputs)
+└── decisions/                               (Phase 1-4 outputs)
 
 meta_architecture/
 ├── K_to_BH_Structure_Preserving_Map_v0_1.md (existing — baseline)
 ├── phi_O5_n_observer_extension_v0_1.md      (existing — baseline)
-├── phi_map_boundary_statement_v1_0.md       Phase 1 output (I.1a)
-├── phi_map_boundary_theorem_v1_0.md         Phase 2 output (I.1b, OPTIONAL)
+├── phi_map_boundary_theorem_v1_0.md         Phase 1 output
 ├── phi_restricted_existence_v1_0.md         Phase 2 output
 ├── phi_O6_von_neumann_algebra_v1_0.md       Phase 3 output
 ├── phi_k9e_born_composition_v1_0.md         Phase 1 output
 ├── motivation_chain_be_qm_vvv_qmrf_v1_0.md  Phase 2 output
-└── VVV_QMRF_Integrated_Framework_v1_0.md   Phase 4 output (III.3-4, MERGED)
+└── VVV_QMRF_Complete_Framework_v1_0.md     Phase 4 output
 
 papers/
 ├── paper_002/                               (submitted — K9-S12 protocol)
 ├── paper_003_phi_map/                       Phase 4 output
-├── paper_004_k9e_verdict/                   Phase 4 output (if experiment)
+├── paper_004_k9e_verdict/                   Phase 4 output
+├── working_paper_v4_0/                      Phase 3 output
 └── monograph/                               Phase 5 output
 ```
 
@@ -908,45 +793,36 @@ papers/
 
 ---
 
-## DECISION RECORD — v2.0
+## DECISION RECORD
 
 ```
-DECISION: Adopt 3-Pillar × 6-Phase Long-Term Research Plan (v2.0).
+DECISION: Adopt 3-Pillar × 5-Phase Long-Term Research Plan.
 
 PILLARS:
   I:   φ-map mathematical maturation (conjecture → theorem or characterized limit)
   II:  K9_E empirical resolution (experiment → confirmation or falsification)
   III: Theoretical integration (implicit consistency → explicit composition framework)
 
-PHASES (v2.0):
-  0 (2026-June):    Prerequisite verification — verify before committing
-  1 (2026-Q3–Q4):   Consolidation — formalize what exists (NOT just documentation)
-  2 (2027-Q1):      Restricted claims — upgrade provable components
-  3 (2027-Q2–Q3):   Experimental window — execute or theory-only
-  4 (2027-Q4–2028): Publication — papers + integrated framework
-  5 (2028+):        Legacy — peer review + monograph
+PHASES:
+  1 (2026-Q3): Consolidation — document what exists
+  2 (2026-Q4): Restricted claims — upgrade provable components
+  3 (2027-H1): Experimental window — execute or theory-only
+  4 (2027-H2): Publication — papers + framework document
+  5 (2028+):   Legacy — peer review + monograph
 
-KEY PRINCIPLES (unchanged from v1.0):
+KEY PRINCIPLES:
   - ERR ON TYPE II (delay, don't falsely claim) — inherited from P10-NOISE.
   - φ-map is a CORRESPONDENCE MAP, not a homomorphism — boundary is a feature.
   - K9_E is BLOCKED ON EXPERIMENT, not theory.
   - Integration is ARCHITECTURAL (composition), not derivational (unification).
   - EX = compass, not cargo.
 
-v2.0 ADDITIONS:
-  - Phase 0 added (prerequisite verification, 1 month).
-  - Phase 1 reclassified: formalization ≠ documentation (MEDIUM risk, not LOW).
-  - I.1 split: I.1a (characterized statement, Phase 1) + I.1b (formal theorem, Phase 2 optional).
-  - Lab risk upgraded to CRITICAL; Gate 2 strengthened with 3 explicit options.
-  - III.3/III.4 merged into III.3-4 (Integrated Framework Paper).
-  - Timeline extended 18→20 months (Phases 0-4).
-
-DECISION GATES (v2.0):
-  7 gates: Gate 0a (plan approved) → Gate 0b (Phase 0) → Gate 1 (Phase 1) → ... → Gate 5 (Legacy).
-  Gate 2 strengthened: explicit 3-option decision point for no-lab scenario.
+DECISION GATES:
+  5 gates with PASS/FAIL conditions. Contingency path for no-lab scenario.
+  Gate 0 (this plan approved) → Gate 1 (Phase 1) → ... → Gate 5 (Legacy).
 
 RCA METHOD: 3-Round RCA × 5-Why × scoring threshold 4/5
-AGGREGATE SCORE (v2.0 review): 4.69/5 — PASS (≥ 4/5)
+AGGREGATE SCORE: 4.69/5 — PASS (≥ 4/5)
 ```
 
 ---
@@ -956,8 +832,7 @@ AGGREGATE SCORE (v2.0 review): 4.69/5 — PASS (≥ 4/5)
 | Date | Version | Change |
 |------|---------|--------|
 | 2026-05-31 | 1.0 | Initial plan. 3-Round RCA (aggregate 4.69/5). 3 Pillars × 5 Phases. Decision gates defined. Awaiting user (Viet) approval. |
-| 2026-06-01 | 2.0 | RCA review (aggregate 4.69/5). 6 changes applied: (1) Phase 0 added (prerequisite verification). (2) Phase 1 reclassified: formalization ≠ documentation; risk LOW→MEDIUM. (3) I.1 split into I.1a (characterized statement) + I.1b (formal theorem, optional Phase 2). (4) Lab risk upgraded HIGH→CRITICAL; Gate 2 strengthened with 3 explicit options. (5) III.3/III.4 merged into III.3-4 (Integrated Framework Paper). (6) Timeline extended 18→20 months. Awaiting user (Viet) approval. |
 
 ---
 
-*Long-Term Research Plan v2.0 — 2026-06-01. RCA review aggregate 4.69/5 PASS. 6 changes from v1.0 review. Ready for user review and approval.*
+*Long-Term Research Plan v1.0 — 2026-05-31. Aggregate RCA 4.69/5 PASS. Ready for user review and approval.*
