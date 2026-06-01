@@ -6,6 +6,22 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Scope:** This file preserves the sprint history, audit matrices, proof-attempt records, and freeze-check records separated from `K_Space_Axiomatization.md`.
 **Canonical Reference:** Use `K_Space_Axiomatization.md` for the current K-space axioms, bridge theorems, and open items.
 
+## v51 (2026-06-01) — Level 4 Thin-Definition Gaps RESOLVED: I-02, I-06, I-07 (RCA 4.1/5 audit follow-up)
+
+### Fixed
+- **I-02 (4.2/5):** D_joint formal thinness — added structural criterion definition: D_joint = 1 when Arch creates a situation where A's claims cannot be assessed independently of B's. Documented definitional layering (structural ground -> operational signs), not circularity.
+- **I-06 (4.0/5):** D_joint Arch parameter drift — documented that v3.0 drops Arch parameter for brevity; v2.0 includes it explicitly. `scope(D_joint; Arch)` in K6(c) resolves downstream ambiguity.
+- **I-07 (3.5/5):** requires_K_joint condition 5 self-reference — separated object-level conditions (1-4) from methodology-level condition (5). Documented that predicate name describes structural demand; condition 5 describes evaluation procedure. Distinct subjects -> no circularity.
+
+### Changed
+- `K_Space_Axiomatization.md` (both peer copies): K5 "Comparison Context (C_K)" definition block expanded to include D_joint structural criterion, Arch parameter note, and requires_K_joint object/methodology separation.
+- PEER-SYNC verified (sync_check PASS).
+
+### Status
+- **All 7 audit candidates resolved.** 2 structural defects FIXED (v50), 3 thin-definition gaps RESOLVED (v51), 2 benign (no action). Level 4 freeze MAINTAINED.
+
+---
+
 ## v50 (2026-06-01) — Level 4 Internal Consistency Audit: D_joint, AdmJoint, requires_K_joint (RCA 4.1/5)
 
 ### Added

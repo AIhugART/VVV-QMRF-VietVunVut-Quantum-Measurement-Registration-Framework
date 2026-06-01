@@ -314,8 +314,22 @@ Provision: V(k) = 1 is provisional until the registration process closes
    >
    > Full formalization of ⊥ conditions (including boundary clauses: not physical erasure, not null event, not invalid when both sides are independently valid) is in Level 4 (paper v2.0 §4.4). The above minimal definition is sufficient for K5 operational closure.
 
-2. **Comparison Context (C_K):**
+2. **Comparison Context (C_K) and D_joint / requires_K_joint:**
    > A comparison context C_K is a K-side structure in which registration contents from multiple K-state tuples are evaluated for mutual consistency. C_K is defined by the D_joint demand (Level 4, §4.3): a C_K exists iff `requires_K_joint` = 1 for the relevant K-spaces.
+   >
+   > **D_joint — Shared Validity Demand (Level 4, Class D):**
+   > D_joint(A, B, Arch) ∈ {0,1} — a predicate evaluating to 1 when comparison architecture Arch creates a structural situation where the validity of A's registration claims cannot be assessed independently of B's, because both concern the same registration target, history, counterfactual claim, or validity claim under potentially incompatible K-side descriptions. D_joint is a structural feature of Arch (the experimental design — EWF setup, LF inequality, direct comparison protocol), not imposed by any single observer.
+   >
+   > ⚠ RCA I-06 (2026-06-01): Published WP v3.0 §6.3 references D_joint without the explicit Arch parameter for brevity; WP v2.0 §4.3 includes it as D_joint(A, B, Arch). The Arch parameter is structurally present in both versions — operational conditions A-E describe specific architectures. `scope(D_joint; Arch)` in K6(c) carries the Arch parameter to resolve scope under a specific architecture.
+   >
+   > ⚠ RCA I-02 (2026-06-01): D_joint is a THIN PREDICATE — its formal content is the structural criterion above (Arch demands shared validity); its operational content is entirely through requires_K_joint conditions A-E. This is definitional LAYERING (structural criterion → operational signs), not logical circularity. D_joint is the structural ground; conditions A-E are the operational detection mechanism. In all current operational conditions, D_joint = 1 ⇔ requires_K_joint = 1. Future architectures may distinguish them if a configuration is found where shared validity is structurally demanded (D_joint = 1) but evaluation is possible without K_joint construction (requires_K_joint = 0).
+   >
+   > **requires_K_joint — Joint K-Side Check Predicate (Level 4, Class D):**
+   > requires_K_joint(A, B) = 1 iff D_joint is imposed AND the truth of D_joint cannot be evaluated without constructing a candidate K_joint. The five conjunctive conditions (WP v3.0 §6.3) separate into two logical types:
+   >   (a) **Object-level** (conditions 1-4): A,B valid in own K-side; D_joint imposed; D_joint requires joint assessment of same registration target; cannot evaluate while A,B independent.
+   >   (b) **Methodology-level** (condition 5): "preserving D_joint requires a candidate K_joint" — this is a statement about EVALUATION PROCEDURE ("to check whether both can be jointly valid, you need a joint space"), not a logical definition of requires_K_joint itself.
+   >
+   > ⚠ RCA I-07 (2026-06-01): The methodology-level condition is notationally imprecise (the word "requires" appears in both the predicate name and condition 5) but structurally coherent. The predicate name "requires_K_joint" describes the STRUCTURAL DEMAND (this configuration needs a joint check); condition 5 describes the EVALUATION PROCEDURE (the check can only be done by constructing K_joint). These are distinct: the predicate asserts a fact about the configuration; condition 5 asserts a fact about how we verify that fact. No logical circularity — the two uses of "requires" have different subjects (the configuration vs the evaluation procedure).
 
 3. **Cross-Registration Authority — deferred to K6:**
    > The "valid cross-registration authority" condition is formalized in Axiom K6 below.
