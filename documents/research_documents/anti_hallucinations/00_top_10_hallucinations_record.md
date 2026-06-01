@@ -13,10 +13,83 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Tiebreaker:** Risk Score bang nhau -> sort by H (desc) -> W (desc) -> A (desc) -> Trace score (ascending)
 **Shared component rule:** Components appearing in both tables (T5 K_ctx, K5_prospective) MUST have identical H/W/A/Risk scores. Any score change to a shared component MUST be applied to both tables.
 
-**Ngay:** 2026-05-31 UTC+7
-**Version:** v1.8 — E-postulate K-axiom anchor completion 2026-05-31: E4/E5/E8/E13/E14/E15/E16 §3d added; K1-K8 100% coverage; E1-E16 group trace improvement noted (full re-audit scheduled 2026-06-30)
-**Previous:** v1.7 (2026-05-31) — Weekly audit: 5 components PASS, 0 score changes; T5 K_ctx §6 + K5_prospective B2 structural notes (v40 delta)
+**Ngay:** 2026-06-01 UTC+7
+**Version:** v2.0 — Score Evolution v1.0 fix (RCA-4): P10-NOISE 18.0→22.5, phi-map 18.0→21.6, phi-map undocumented A change added. 3-Round RCA 4.67/5. 0 current-score changes.
+**Previous:** v1.9 (2026-06-01) — Rank inversion fix (K5_prosp↔K9_E impl): 3-Round RCA 5.00/5, tiebreaker H (desc) re-verified for Risk=12.0 band
 **Next audit:** 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β)
+
+---
+
+## Changelog v1.9 -> v2.0
+
+**Audit date:** 2026-06-01 UTC+7 — Score Evolution v1.0 correction (RCA-4)
+**Method:** 3-Round RCA × 5-Why × scoring threshold 4/5 (CLAUDE.md Rule Zero)
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|------------|
+| **FIX** | Score Evolution v1.0: P10-NOISE | v1.0 Risk = 18.0 (#4) | v1.0 Risk = **22.5** (#2) | Changelog v1.0→v1.1 states "A giảm 0.5→0.2" → v1.0 = 5×3×(1+0.5) = 22.5, not 18.0. Score Evolution had v1.1 value in v1.0 column. |
+| **FIX** | Score Evolution v1.0: phi-map | v1.0 Risk = 18.0 (#6) | v1.0 Risk = **21.6** (#4) | Changelog v1.0→v1.1 states "W giảm 3→2" + undocumented A: 0.2→0.5 → v1.0 = 6×3×(1+0.2) = 21.6, not 18.0. |
+| **FIX** | Changelog v1.0→v1.1: phi-map | Only documented "W giảm 3→2" | Now documents **both** W (3→2) **and** A (0.2→0.5) | Undocumented A change: A went 0.2→0.5 in same version. Without both changes, v1.0→v1.1 delta is unexplained (21.6→18.0 requires both W and A changes). |
+| **FIX** | Changelog v1.0→v1.1: Re-rank row | "phi-map #6 (18.0)" in Before | Corrected to reflect actual v1.0 values | Re-rank Before column was contaminated by incorrect Score Evolution v1.0 data. |
+| **FIX** | Score Evolution v1.3: K5_prosp/K9_E impl ranks | K9_E impl #6, K5_prosp #7 | K5_prosp **#6**, K9_E impl **#7** | Propagates RCA-3 rank fix (v1.9) into Score Evolution v1.3 column. |
+| **FIX** | Score Evolution: P10-NOISE + phi-map Trend | "—" (flat) | "↓" (decreased v1.0→v1.1) | Score changes now visible in Trend column. |
+
+#### 5-Why: Root Cause of Score Evolution v1.0 Error
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1. | Why does Score Evolution show P10-NOISE v1.0 = 18.0 instead of 22.5? | The v1.0 column was populated with the POST-change (v1.1) values instead of the PRE-change (v1.0) values. |
+| 2. | Why wasn't this caught when the changelog v1.0→v1.1 was written? | Changelog v1.0→v1.1 was **reconstructed** (L238 note: "reconstructed from Score Evolution table + git history"). The reconstruction used the already-incorrect Score Evolution as a source. |
+| 3. | Why was the Score Evolution v1.0 column wrong in the first place? | v1.0 was the initial version. Score Evolution was likely created in v1.1 or later, and the author back-filled v1.0 values from memory or current (v1.1) state instead of git-diffing to v1.0. |
+| 4. | Why wasn't this caught in v1.2-v1.9 audits? | Score Evolution is a historical reference table. Audits focused on current scores (Table 1/Table 2), not historical accuracy. No audit procedure existed for cross-validating Score Evolution against changelog deltas. |
+| 5. | Root cause: | **Circular reference error** — Score Evolution v1.0 was populated with v1.1 values. Changelog v1.0→v1.1 was then reconstructed FROM the incorrect Score Evolution, embedding the error in two places. The SCORE CHANGE rows preserved correct delta info ("A giảm", "W giảm") but the Re-rank row and rank numbers were contaminated. |
+
+**Verdict:** 5/5. Score Evolution v1.0 error confirmed. Fix: correct v1.0 values and ranks, document phi-map's undocumented A change.
+
+#### 3-Round Verification
+
+| Round | Focus | Score |
+|-------|-------|-------|
+| R1 | Identify: Score Evolution v1.0 shows P10-NOISE=18.0 and phi-map=18.0, but changelog deltas prove v1.0 values were 22.5 and 21.6 respectively. Two independent evidence chains: (a) "A giảm 0.5→0.2" → v1.0 A=0.5 → Risk=22.5, (b) "W giảm 3→2" + phi-map v1.1=18.0=6×2×1.5 → v1.0=6×3×1.2=21.6 (A was 0.2, changed to 0.5). | 5/5 |
+| R2 | Verify: Corrected v1.0 rank order is self-consistent. [A-E3]=22.5(#1) > P10-NOISE=22.5(#2) > T5=21.6(#3) > phi-map=21.6(#4) > T4-H=18.0(#5) > K9E-PAT=12.0(#6) > remaining. All v1.1 and v1.2+ values unchanged. Changelog SCORE CHANGE Before values match corrected Score Evolution. | 4/5 |
+| R3 | Cross-check: (a) No impact on current scores (Table 1/Table 2 unchanged). (b) EX compass: no Score Evolution-dependent flags. (c) phi-map's undocumented A change (0.2→0.5) is now documented. (d) Reconstructed changelog note (L238) retained — explains provenance. (e) Re-rank row corrected. | 5/5 |
+| **Aggregate** | | **4.67/5 PASS (≥ 4/5)** |
+
+**Gate verdict (2026-06-01):** 2 Score Evolution v1.0 value fixes. 1 undocumented change recovery. 0 current-score changes. 0 CRITICAL/HIGH escalations. Tables 1 & 2 unchanged. Next weekly audit: 2026-06-07.
+
+---
+
+## Changelog v1.8 -> v1.9
+
+**Audit date:** 2026-06-01 UTC+7 — Rank inversion fix (RCA-3)
+**Method:** 3-Round RCA × 5-Why × scoring threshold 4/5 (CLAUDE.md Rule Zero)
+
+| Change | Component | Before | After | RCA Reason |
+|--------|-----------|--------|-------|------------|
+| **FIX** | Rank inversion K5_prosp↔K9_E impl | K9_E impl #6 (H=4), K5_prosp #7 (H=5) | **K5_prosp #6** (H=5), **K9_E impl #7** (H=4) | 3-Round RCA 5.00/5: Tiebreaker H (desc) requires H=5 above H=4 within Risk=12.0 band. Root cause (5-Why): v1.5 re-rank verified dead-ties only (identical H/W/A), missed coincidental ties (different factors, same Risk Score). No score changes. Table 2 unaffected. |
+
+#### 5-Why: Root Cause of Rank Inversion (K5_prosp↔K9_E impl)
+
+| # | Question | Answer |
+|---|----------|--------|
+| 1. | Why is K5_prosp (#7) ranked below K9_E impl (#6)? | Historical ordering: K9_E impl was added before K5_prosp, order preserved through versions. |
+| 2. | Why wasn't this corrected in v1.5 (4-level tiebreaker)? | v1.5 Decision A focused on dead-ties (identical H/W/A) and added Trace as 4th level. Did not re-verify components with DIFFERENT factors producing the SAME Risk Score. |
+| 3. | Why same Risk Score despite different H/A? | Risk = H×W×(1+A): K5_prosp = 5×2×1.2 = 12.0, K9_E impl = 4×2×1.5 = 12.0. Different factor paths, same product. |
+| 4. | Why not caught in v1.6-v1.8 audits? | Weekly audits checked score changes and status updates, not rank ordering within bands. |
+| 5. | Root cause: | **Methodology gap** — v1.5 "insert & re-rank" fix targeted specific identified pair (P10-TIM↔BE↔QM). No systematic re-verification of ALL rank orderings against 4-level tiebreaker for coincidental ties. |
+
+**Verdict:** 5/5. Rank inversion confirmed. Fix: swap K5_prosp to #6, K9_E impl to #7.
+
+#### 3-Round Verification
+
+| Round | Focus | Score |
+|-------|-------|-------|
+| R1 | Identify: K9_E impl H=4 ranked above K5_prosp H=5 → violates H (desc) tiebreaker. Scope: Table 1 only. Table 2 unaffected (K5_prosp sole MEDIUM at Rank 4; K9_E impl not in Table 2). | 5/5 |
+| R2 | Verify correct order: K9E-PAT #5 (H=5,Trace=2) → K5_prosp #6 (H=5,Trace=3) → K9_E impl #7 (H=4). No score changes. All 5 consistency checks PASS. | 5/5 |
+| R3 | Cross-check: EX compass (no rank-dependent flags), shared component rule (K5_prosp Table 2 Rank 4 unchanged), audit schedule (name-based, not rank-based), full 10-rank verification PASS. | 5/5 |
+| **Aggregate** | | **5.00/5 PASS (≥ 4/5)** |
+
+**Gate verdict (2026-06-01):** 1 rank fix. 0 score changes. 0 CRITICAL/HIGH escalations. Table 2 unchanged. Next weekly audit: 2026-06-07.
 
 ---
 
@@ -196,12 +269,12 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Change | Component | Before | After | RCA Reason |
 |--------|-----------|--------|-------|-------------|
-| **SCORE CHANGE** | T5 K_ctx | H=6, Risk=21.6 (#2) | H=5, Risk=18.0 (#3) | [A-E1] ELIMINATED boi T9 (2026-05-24). T9 cung cap formal construction cho K_ctx — khong con la "missing definition." Residual risk: observer set selection chua formal hoa. |
-| **SCORE CHANGE** | phi-map K→B(H) | H=6, Risk=21.6 (#1) | H=6, Risk=18.0 (#2) | W giam 3→2: structural weight reassessed — phi-map la Class D conjecture, khong block K9_E Class C. |
-| **SCORE CHANGE** | P10-NOISE | H=5, Risk=22.5 (#3) | H=5, Risk=18.0 (#4) | A giam 0.5→0.2: anchor penalty reassessed — co experimental literature ve phase noise, khong con WEAK anchor. |
-| Re-rank (all) | — | [A-E3] #1 (22.5), T5 #2 (21.6), phi-map #6 (18.0) | phi-map #1, T5 #3, P10-NOISE #2 | [A-E3] removed in v1.2; pre-removal T5 scored higher. Full score evolution tracked in Score Evolution table. |
+| **SCORE CHANGE** | T5 K_ctx | H=6, Risk=21.6 (#3) | H=5, Risk=18.0 (#3) | [A-E1] ELIMINATED boi T9 (2026-05-24). T9 cung cap formal construction cho K_ctx — khong con la "missing definition." Residual risk: observer set selection chua formal hoa. |
+| **SCORE CHANGE** | phi-map K→B(H) | H=6, W=3, A=0.2, Risk=21.6 (#4) | H=6, W=2, A=0.5, Risk=18.0 (#2) | W giam 3→2 (structural weight reassessed — phi-map la Class D conjecture, khong block K9_E Class C) **AND** A tang 0.2→0.5 (anchor weakened: Class D conjecture co ít experimental support hon Class C components). Net effect: Risk 21.6→18.0 (giam). |
+| **SCORE CHANGE** | P10-NOISE | H=5, Risk=22.5 (#2) | H=5, Risk=18.0 (#4) | A giam 0.5→0.2: anchor penalty reassessed — co experimental literature ve phase noise, khong con WEAK anchor. |
+| Re-rank (all) | — | [A-E3] #1 (22.5), P10-NOISE #2 (22.5), T5 #3 (21.6), phi-map #4 (21.6) | phi-map #1, P10-NOISE #2, T5 #3 | [A-E3] removed in v1.2; pre-removal ranking by Risk Score (desc). Full score evolution tracked in Score Evolution table. |
 
-Note: v1.0 changelog reconstructed from Score Evolution table + git history (`897028b`, `bc6f2fc`). Delta reasoning extracted from component status fields and T9 RCA verdict.
+Note: v1.0 changelog reconstructed from git history (`897028b`, `bc6f2fc`). Delta reasoning extracted from component status fields and T9 RCA verdict. Score Evolution v1.0 column corrected in v2.0 (was circular reference error — see RCA-4).
 
 ---
 
@@ -346,24 +419,7 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Full Label** | `[AH-LOW] [RS-LOW] [AH-ARCHIVED] [CLOSED-UNRESOLVABLE]` |
 | **Deadline** | RESOLVED — deferred to K9-S12 experiment |
 
-### Rank 6: K9_E two implementations — Additive vs Multiplicative divergence
-
-| Thuoc tinh | Gia tri |
-|------------|---------|
-| **Component** | `k9e_predictor.py` (additive) vs `proietti_raw_fit.py` (multiplicative) — divergence tai beta > 0.3 |
-| **Project** | VVV-QMRF Class C — K9_E implementation divergence |
-| **Hallucination score (H)** | **4/10** (Xanh duong — implementation issue) |
-| **Structural weight (W)** | **2** (MEDIUM) |
-| **Anchor penalty (A)** | **0.5** (WEAK — ambiguity trong operationalization) |
-| **Trace score (SOT)** | 1/6 |
-| **Risk Score** | 4 x 2 x 1.5 = **12.0** |
-| **Risk Score band** | **MEDIUM** (10-14.9) |
-| **Root cause type** | Type 2 — Missing Definition |
-| **Status** | **MONITORING** — Divergence characterized (v31): additive vs multiplicative agree on PATTERN (ratio~2), differ on MAGNITUDE (~3.5x). 4 data points insufficient to select canonical. Canonical resolution deferred to K9-S12 optical experiment. See `04_governance/T1B_model_comparison_RCA.md`. RCA 5-Why (2026-05-25): was DOCUMENTED but counted as OPEN in summary — inconsistency fixed. MONITORING = active watch until K9-S12 data selects canonical. |
-| **Full Label** | `[AH-LOW] [RS-MED]` |
-| **Deadline** | P2 — duoc giam nhe. Van con 2 implementations, divergence characterized. K9-S12 experiment expected to resolve canonical choice. |
-
-### Rank 7: K5_prospective — v29 axiom extension
+### Rank 6: K5_prospective — v29 axiom extension
 
 | Thuoc tinh | Gia tri |
 |------------|---------|
@@ -379,6 +435,23 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | **Status** | **MONITORING** — "young axiom" |
 | **Full Label** | `[AH-WARN] [RS-MED]` |
 | **Deadline** | LOW (P3) |
+
+### Rank 7: K9_E two implementations — Additive vs Multiplicative divergence
+
+| Thuoc tinh | Gia tri |
+|------------|---------|
+| **Component** | `k9e_predictor.py` (additive) vs `proietti_raw_fit.py` (multiplicative) — divergence tai beta > 0.3 |
+| **Project** | VVV-QMRF Class C — K9_E implementation divergence |
+| **Hallucination score (H)** | **4/10** (Xanh duong — implementation issue) |
+| **Structural weight (W)** | **2** (MEDIUM) |
+| **Anchor penalty (A)** | **0.5** (WEAK — ambiguity trong operationalization) |
+| **Trace score (SOT)** | 1/6 |
+| **Risk Score** | 4 x 2 x 1.5 = **12.0** |
+| **Risk Score band** | **MEDIUM** (10-14.9) |
+| **Root cause type** | Type 2 — Missing Definition |
+| **Status** | **MONITORING** — Divergence characterized (v31): additive vs multiplicative agree on PATTERN (ratio~2), differ on MAGNITUDE (~3.5x). 4 data points insufficient to select canonical. Canonical resolution deferred to K9-S12 optical experiment. See `04_governance/T1B_model_comparison_RCA.md`. RCA 5-Why (2026-05-25): was DOCUMENTED but counted as OPEN in summary — inconsistency fixed. MONITORING = active watch until K9-S12 data selects canonical. |
+| **Full Label** | `[AH-LOW] [RS-MED]` |
+| **Deadline** | P2 — duoc giam nhe. Van con 2 implementations, divergence characterized. K9-S12 experiment expected to resolve canonical choice. |
 
 ### Rank 8: E1-E16 — 16 Registration-Layer Postulates (BE-derived)
 
@@ -446,7 +519,7 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 |------------------|-------|------------|
 | **20+ (CRITICAL)** | **0** | — (was 1: [A-E3], removed v1.2) |
 | **15-20 (HIGH)** | 4 | phi-map (18.0), P10-NOISE (18.0), T5 K_ctx (18.0), T4-H (18.0) |
-| **10-15 (MEDIUM)** | 3 | K9E-PAT (12.0), K9_E impl (12.0), K5_prosp. (12.0) |
+| **10-15 (MEDIUM)** | 3 | K9E-PAT (12.0), K5_prosp. (12.0), K9_E impl (12.0) |
 | **5-10 (LOW)** | 3 | E1-E16 (9.6), BE↔QM (9.6), P10-TIM (9.0) |
 
 #### Theo Status
@@ -613,14 +686,14 @@ Cross-check voi EX compass + BE SOT + RCA verdicts. Khoa ranking.
 | Component | v1.0 Risk | v1.1 Risk | v1.2 Risk | v1.3 Table(s) | Trend |
 |-----------|-----------|-----------|-----------|---------------|-------|
 | [A-E3] beta universal | 22.5 (#1) | 22.5 (#1) | **REMOVED** (→ FREE PARAMETER) | — | ↓↓ |
-| phi-map K→B(H) | 18.0 (#6) | 18.0 (#2) | **18.0 (#1)** | Table 1 + Table 2 | — |
-| P10-NOISE | 18.0 (#4) | 18.0 (#3) | **18.0 (#2)** | Table 1 | — |
-| T5 K_ctx | 21.6 (#2) | 18.0 (#4) | **18.0 (#3)** | Table 1 + Table 2 (Shared) | — |
-| T4-H Steps 3-4 | 18.0 (#3) | 18.0 (#5) | **18.0 (#4)** | Table 1 + Table 2 | — |
-| K9E-PAT | 12.0 (#5) | 12.0 (#5) | **CLOSED (v1.4)** | Table 1 | ↓↓ |
-| K9_E implementations | 12.0 (#8) | 12.0 (#7) | **12.0 (#6)** | Table 1 | — |
-| K5_prospective | 12.0 (#9) | 12.0 (#8) | **12.0 (#7)** | Table 1 + Table 2 (Shared) | — |
-| E1-E16 | 9.6 (#7) | 9.6 (#9) | **9.6 (#8)** | Table 1 + Table 2 | — |
+| P10-NOISE | **22.5** (#2) | 18.0 (#3) | **18.0 (#2)** | Table 1 | ↓ (v1.0→v1.1: A 0.5→0.2) |
+| T5 K_ctx | 21.6 (#3) | 18.0 (#4) | **18.0 (#3)** | Table 1 + Table 2 (Shared) | ↓ (v1.0→v1.1: H 6→5) |
+| phi-map K→B(H) | **21.6** (#4) | 18.0 (#2) | **18.0 (#1)** | Table 1 + Table 2 | ↓ (v1.0→v1.1: W 3→2, A 0.2→0.5) |
+| T4-H Steps 3-4 | 18.0 (#5) | 18.0 (#5) | **18.0 (#4)** | Table 1 + Table 2 | — |
+| K9E-PAT | 12.0 (#6) | 12.0 (#6) | **CLOSED (v1.4)** | Table 1 | ↓↓ |
+| K9_E implementations | 12.0 (#7) | 12.0 (#7) | **12.0 (#7)** | Table 1 | — |
+| K5_prospective | 12.0 (#8) | 12.0 (#8) | **12.0 (#6)** | Table 1 + Table 2 (Shared) | — |
+| E1-E16 | 9.6 (#9) | 9.6 (#9) | **9.6 (#8)** | Table 1 + Table 2 | — |
 | P10-TIM | 9.0 (#10) | 9.0 (#10) | **9.0 (#10)** | Table 1 | — |
 | BE↔QM mapping | — | — | **9.6 (#9)** | Table 1 + Table 2 | NEW |
 
@@ -696,4 +769,4 @@ OPEN → MONITORING → ARCHIVED (RCA >= 4.5/5, UNRESOLVABLE)
 
 ---
 
-*Top 10 Hallucination Risk Record v1.7 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). Weekly audit 2026-05-31: 5 PASS, 0 score changes. Next audit: 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β).*
+*Top 10 Hallucination Risk Record v2.0 — Dual-table architecture: Table 1 (VVV-QMRF Class C, 10 components) + Table 2 (VVV-QMRF Full Scope, 6 components). 2 shared components (T5 K_ctx, K5_prospective) with identical scores in both tables. 0 CRITICAL + 4 HIGH + 2 MEDIUM + 2 LOW + 1 DORMANT + 1 ARCHIVED. 0 hallucination that su (9-10). Tiebreaker: H→W→A→Trace. AHP Status Model: 7 statuses (v1.5 extension). v2.0 fixes: Score Evolution v1.0 values corrected (RCA-4, 4.67/5), rank inversion fixed (RCA-3, 5.00/5). Next audit: 2026-06-07 (P10-NOISE, T5 K_ctx, K9_E impl, K5_prospective, β).*
