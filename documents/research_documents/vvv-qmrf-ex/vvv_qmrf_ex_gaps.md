@@ -4,7 +4,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 **Version:** Phase 4 Final + v33 φ_R update (2026-06-01)
 **Date:** 2026-06-01
-**Graph:** 421 nodes, 229 edges (v33: +1 node N_QM_VVV_00067; rho-side bridged BR_EX_QM_00086)
+**Graph:** 421 nodes, 229 edges (v33: +1 node N_QM_VVV_00067; rho-side bridged BR_EX_QM_00086; K-side KE-QI exception)
 
 ---
 
@@ -12,7 +12,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 | Gap Type | Count | Status |
 |----------|-------|--------|
-| K-side gaps (no BE anchor) | 36 | Require domain expert mapping or BIAN classification |
+| K-side gaps (no BE anchor) | 35 | Require domain expert mapping or BIAN classification |
 | ρ-side gaps (no QM anchor) | 0 | Require domain expert mapping |
 | Both-side gaps (isolated) | 0 | No structural connection to BE or QM layers |
 | Phase 3 new Tier2 BE→VVV | 2 | Added to graph; pending expert review |
@@ -61,7 +61,6 @@ These nodes have ρ-side (QM) connections but lack K-side (BE) grounding.
 | `N_QM_VVV_00052` | Discrete Transition Operator `T̂_kṣaṇa` | 1 | N_QM_00042 | Manual review needed |
 | `N_QM_VVV_00053` | Kṣaṇa Registration Event / Registration Seal | 1 | N_QM_00037 | Manual review needed |
 | `N_QM_VVV_00055` | Indeterminacy Operator `Ŝ_saṃśaya` | 1 | N_QM_00025 | Manual review needed |
-| `N_QM_VVV_00067` | φ_R — Restricted Existence Map | 1 | N_QM_00018 | K_PENDING-RCA (v33 2026-06-01; rho-side bridged BR_EX_QM_00086; BE source-analogue not yet identified) |
 
 
 ---
