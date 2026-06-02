@@ -1,7 +1,9 @@
 % ===================================================================
+% Author: VietVunVut (Viet - Nguyen Xuan)
+% GitHub: https://github.com/AIhugART/ ; Facebook: https://www.facebook.com/xuanviet
 % Have Optical Wigner's Friend Experiments Been Blind to a Geometric
 % Degree of Freedom?
-% Draft v95 — 2026-05-31
+% Draft v96 — 2026-06-02
 % Target: arXiv quant-ph → Phys. Rev. A
 % ===================================================================
 
@@ -35,7 +37,7 @@ statistics vanishes identically (Proposition~1, equatorial cancellation
 theorem). A single waveplate breaks this cancellation. Re-inserting one
 quarter-wave plate into the Bong et al.\ (2020) apparatus tilts the
 Superobserver measurement to $\theta = 31^\circ$, providing minimum detectable
-$\beta \sim 0.07$ at $5\sigma$ --- a search parameter whose methodological role parallels
+$\beta \sim 0.075$ at $5\sigma$ (single-setting) --- a search parameter whose methodological role parallels
 SME coefficients~\cite{Colladay1997} (\S\ref{sec:why_class}) --- while preserving the Genuine LF violation
 ($8.6\sigma$). A complete survey (Supplemental~S1) finds no published
 implementation has varied this polar angle; only two exist (Proietti~2019,
@@ -83,7 +85,7 @@ $\delta\langle AB\rangle(\theta)$ is invariant under any basis redefinition (Lem
 Breaking the cancellation requires only a single quarter-wave plate:
 re-inserting the QWP into the Bong et al.\ (2020) apparatus tilts the
 Superobserver measurement to $\theta = 31^\circ$, providing minimum detectable
-$\beta \sim 0.07$ at $5\sigma$ (single-setting) while preserving $8.6\sigma$ Genuine LF
+$\beta \sim 0.075$ at $5\sigma$ (single-setting) while preserving $8.6\sigma$ Genuine LF
 violation (\S\ref{sec:protocol}--\ref{sec:robustness}).
 
 Its two claims are structural: (A) within surveyed optical EWF
@@ -94,8 +96,7 @@ first experimental probe of this class. Positive results require
 independent verification including $\theta$-sweeps (\S\ref{sec:discussion}).
 
 Supplemental material: S1 (literature search + algebraic proof), S2
-(numerical methods + statistical robustness), S3 (interpretations +
-General Probabilistic Theories (GPT) / weak-measurement development).
+(numerical methods + statistical robustness).
 
 % ===================================================================
 \section{Background}
@@ -168,9 +169,8 @@ This prioritization is methodological, not predictive --- the experiment
 tests whether nature exhibits overlap-dependent deformation.
 
 \textbf{Methodological role.} Equation~(\ref{eq:model_class}) is a benchmark parametrization --- a
-phenomenological ansatz, not derived from any underlying physical theory
-(full phenomenological classification in Supplemental~S3). No existing
-theory predicts this specific form. The parametrization functions
+phenomenological ansatz, not derived from any underlying physical theory.
+No existing theory predicts this specific form. The parametrization functions
 analogously to SME coefficients~\cite{Colladay1997}: the SME was proposed with 19
 coefficients and no a priori predictions, yet progressively tighter null
 results constrained previously unconstrained parameter space. The
@@ -181,17 +181,6 @@ any $\theta \neq \pi/2$, with the $\theta$-dependent variation under $\theta$-sw
 distinguishing signature (vanishing identically at $\theta = \pi/2$ and determined
 numerically otherwise) that separates an overlap-dependent signal from
 conventional systematics.
-
-\textbf{Physical context (speculative).} In weak measurement~\cite{Aharonov1988}, the weak
-value depends explicitly on the overlap between pre- and postselected
-states --- basis-alignment dependence is a known structural feature of
-measurement theory. Information-theoretically, $|\langle b|d\rangle|^2 = \cos^2(\theta/2)$ is
-the fidelity between measurement basis states, quantifying basis
-distinguishability and accessible information~\cite{Aharonov1988}. If the Superobserver's
-measurement couples to the Friend's recorded outcome through an analogous
-overlap-dependent mechanism, the leading-order correction takes the form
-Eq.~(\ref{eq:model_class})--(\ref{eq:fperp}). This is a speculative mechanism, not a derivation; a toy model
-and full discussion in Supplemental~S3.
 
 \textbf{Null test.} The experiment is a null test: standard QM predicts the same
 LF violation regardless of $\theta$; a $\theta$-dependent signal would indicate a
@@ -292,7 +281,7 @@ multi-partite; Level~3 --- non-geometric). Each level beyond~0 is
 unconstrained by Proposition~1 and requires independent designs.
 
 \textbf{Contextuality distinction.} Overlap-dependence is logically independent
-of standard KS contextuality --- it concerns measurement \emph{registration}
+of standard KS contextuality --- it concerns measurement \emph{record}
 (geometric relationship to a prior outcome), not measurement \emph{setting}
 (which observables are measured jointly). Proposition~1 constrains the
 former and is silent on the latter.
@@ -305,7 +294,7 @@ former and is silent on the latter.
 \toprule
 Property & KS Contextuality & Overlap-Dependence (this work) & Weak Measurement~\cite{Aharonov1988} \\
 \midrule
-Depends on & Measurement setting & Measurement registration (geometric relationship to prior outcome) & Postselection choice \\
+Depends on & Measurement setting & Recorded outcome (geometric relationship to prior outcome) & Postselection choice \\
 Observable & Outcome distributions across incompatible settings & $\delta\langle AB\rangle(\theta)$ vanishing iff $\theta = \pi/2$, at fixed setting & Weak value $A_w$ \\
 Constrained by & Bell-KS inequalities & Proposition~1 (equatorial cancellation) & --- \\
 \bottomrule
@@ -349,7 +338,7 @@ At $\theta = \pi/2$, the Superobserver's measurement basis is maximally symmetri
 with respect to the Friend's recorded outcomes:
 $|\langle b|H\rangle|^2 = |\langle b|V\rangle|^2 = 1/2$ for both $b = \pm 1$ --- the Superobserver's measurement
 apparatus is equally aligned with every Friend record, disturbing both
-outcomes identically. The registration is perfectly balanced; no
+outcomes identically. The overlap is perfectly balanced; no
 overlap-dependent deformation can produce an asymmetry because there is
 no asymmetry to amplify.
 
@@ -375,9 +364,8 @@ more closely with one Friend outcome (e.g., $|\langle+1|H\rangle|^2 > |\langle+1
 $\theta < \pi/2$), creating a $\cos\theta$ asymmetry. An overlap-dependent deformation
 would convert this geometric imbalance into a detectable statistical
 signal --- the measurement apparatus becomes a directional probe for
-registration-layer structure. Mathematically, such terms are the
-leading-order expression of any smooth registration-fidelity function
-that depends on measurement alignment; the first-order correction away
+alignment-dependent coupling. Mathematically, such terms are the leading-order expression of any smooth function coupling
+Superobserver statistics to basis alignment with the Friend outcome; the first-order correction away
 from perfect alignment generically has the structure
 $1 - \beta\cdot(1 - |\langle b|d\rangle|^2)$. Eq.~(\ref{eq:model_class})--(\ref{eq:fperp}) isolates this universal geometric
 structure without committing to a specific physical mechanism.
@@ -460,7 +448,7 @@ Tilting the Superobserver opens access to this previously untested sector (\S\re
 \subsection{Breaking the Cancellation}
 \label{sec:breaking}
 
-Any $\theta \neq \pi/2$ breaks the cancellation. A grid search over $(\theta, \phi_2, \phi_3, \beta_{\rm Bob})$ maximizing $\text{FOM}(\theta, \beta, N) = \min(n_\sigma^{\rm LF}, n_\sigma^{\rm signal})$ with $\beta = 0.30$ yields a broad plateau peaking near $\theta \approx 31^\circ$--$35^\circ$ ($\text{FOM} = 8.6$--$8.8$). At $\beta = 0.30$, $n_\sigma^{\rm signal} \gg n_\sigma^{\rm LF}$ across all $\theta$, so the FOM is bounded by $n_\sigma^{\rm LF}$. Representative FOM values at $\mu = 0.95$, $\beta = 0.30$ (per-$\theta$ angle re-optimization, Supplemental~S2): $5.8$ ($\theta = 20^\circ$), $8.6$ ($\theta = 31^\circ$), $8.8$ ($\theta = 35^\circ$), $6.0$ ($\theta = 45^\circ$), $0$ ($\theta = 58^\circ$, Gen LF 1 becomes negative), and $0$ ($\theta = 90^\circ$, cancellation); $\text{FOM} > 5\sigma$ for $\theta \in [20^\circ, 45^\circ]$. At the minimum detectable $\beta \approx 0.07$, the FOM is signal-limited: optimal $\theta = 46^\circ$ ($\text{FOM} = 5.4$) and $>5\sigma$ range $\theta \in [35^\circ, 46^\circ]$ (Supplemental~S2).
+Any $\theta \neq \pi/2$ breaks the cancellation. A grid search over $(\theta, \phi_2, \phi_3, \beta_{\rm Bob})$ maximizing $\text{FOM}(\theta, \beta, N) = \min(n_\sigma^{\rm LF}, n_\sigma^{\rm signal})$ with $\beta = 0.30$ yields a broad plateau peaking near $\theta \approx 31^\circ$--$35^\circ$ ($\text{FOM} = 8.6$--$8.8$). At $\beta = 0.30$, $n_\sigma^{\rm signal} \gg n_\sigma^{\rm LF}$ across all $\theta$, so the FOM is bounded by $n_\sigma^{\rm LF}$. Representative FOM values at $\mu = 0.95$, $\beta = 0.30$ (per-$\theta$ angle re-optimization, Supplemental~S2): $5.8$ ($\theta = 20^\circ$), $8.6$ ($\theta = 31^\circ$), $8.8$ ($\theta = 35^\circ$), $6.0$ ($\theta = 45^\circ$), $0$ ($\theta = 58^\circ$, Gen LF 1 becomes negative), and $0$ ($\theta = 90^\circ$, cancellation); $\text{FOM} > 5\sigma$ for $\theta \in [20^\circ, 45^\circ]$. At $\beta \approx 0.07$ (single-setting, just below the single-setting $5\sigma$ threshold $\beta \approx 0.075$), the FOM is signal-limited: optimal $\theta = 46^\circ$ ($\text{FOM} = 5.4$) and single-setting $>5\sigma$ range $\theta \in [35^\circ, 46^\circ]$ (Supplemental~S2). The reference angle $\theta = 31^\circ$ gives single-setting significance $4.7\sigma$ at $\beta = 0.07$; reaching $5\sigma$ there requires $\beta \gtrsim 0.075$ (single-setting) or combining the four mixed settings ($9.4\sigma$ at $\beta = 0.07$, \S\ref{sec:sensitivity}). The $\beta = 0.30$ plateau $\theta \in [20^\circ, 45^\circ]$ does include $\theta = 31^\circ$.
 
 \begin{figure}[t]
 \centering
@@ -473,16 +461,18 @@ The wide optimal window means the protocol tolerates angular misalignment of
 $\pm 11^\circ$ before dropping below $5\sigma$ --- substantially more forgiving than the
 alignment precision demanded by the standard Bong protocol.
 
-The optimum at $\theta \approx 31^\circ$--$35^\circ$ reflects a trade-off between two monotonic trends.
-As $\theta \to 0^\circ$, the overlap asymmetry is largest, but the Gen LF~1 violation
-weakens because measurement settings approach a common axis, reducing the
-inequality's capacity to separate LF-violating from LF-satisfying theories.
-As $\theta \to 90^\circ$, the LF violation is strongest but the signal vanishes
-(equatorial cancellation, \S\ref{sec:theorem}). The intermediate
-plateau emerges from the intersection of these competing
-trends, with the exact location set by the Gen LF~1 inequality
-coefficients via grid search (Supplemental~S2). The broad plateau
-(FOM $> 5\sigma$ for $\theta \in [20^\circ, 45^\circ]$) means the exact optimum is not critical ---
+The optimum at $\theta \approx 31^\circ$--$35^\circ$ reflects how the two significances vary with $\theta$.
+In this tilted-Superobserver geometry the Gen LF~1 violation is itself maximized at an
+intermediate tilt: it weakens as $\theta \to 0^\circ$ (settings~2,3 collapse onto the $z$-basis
+of setting~1, removing the angular spread the Facet~1 inequality requires) and also weakens
+toward the equator, the achievable violation falling to zero near $\theta \approx 55^\circ$ (Gen LF~1
+turns negative by $\theta \approx 58^\circ$; Supplemental~S2 grid search). The overlap signal
+independently vanishes at $\theta = 90^\circ$ (equatorial cancellation, \S\ref{sec:theorem}) and is
+non-zero otherwise. At $\beta = 0.30$ the FOM is LF-limited, so its $\theta \approx 31^\circ$--$35^\circ$
+plateau tracks the peak of the Gen LF~1 violation; at $\beta \approx 0.07$ the FOM is signal-limited
+and the optimum shifts toward $\theta \approx 46^\circ$. The exact location is set by the Gen LF~1
+inequality coefficients via grid search (Supplemental~S2). The broad plateau
+(FOM $> 5\sigma$ for $\theta \in [20^\circ, 45^\circ]$ at $\beta = 0.30$) means the exact optimum is not critical ---
 any angle in this range produces a viable experiment. We adopt $\theta = 31^\circ$ as the reference angle throughout
 because it coincides with the QWP-determined tilt in the Bong apparatus.
 
@@ -491,7 +481,7 @@ coincidence data. Gen LF~1 aggregates all eleven correlators; its
 $\theta$-dependence is a standard QM prediction --- LF violation weakens as
 measurement axes approach a common direction. $\delta\langle AB\rangle$ isolates deviations
 of individual mixed-setting correlators from their QM expectation. A
-shift in Gen LF~1 without the $\cos\theta$ pattern in $\delta\langle AB\rangle$ would indicate
+shift in Gen LF~1 without the $\theta$-dependent pattern in $\delta\langle AB\rangle$ would indicate
 apparatus misalignment, not $\beta$; conversely, $\delta\langle AB\rangle \neq 0$ with Gen LF~1
 matching its QM prediction is the signature of overlap-dependent physics
 (Table~\ref{tab:observables}). The $\phi$-scramble control (\S\ref{sec:robustness}) provides additional
@@ -536,7 +526,7 @@ Polar angle $\theta$     & $90^\circ$ (equatorial) & $\mathbf{31^\circ}$ \\
 Alice $\phi_2$           & $0^\circ$   & $\mathbf{112^\circ}$ \\
 Alice $\phi_3$           & $118^\circ$ & $\mathbf{217^\circ}$ \\
 Bob $\beta_{\rm Bob}$    & $175^\circ$ & $\mathbf{20^\circ}$ \\
-$\mu$ required           & not specified & $\ge 0.86$ \\
+$\mu$ required (onset)   & not specified & $\ge 0.86$ \\
 $N$                      & 91{,}000    & 91{,}000 \\
 \bottomrule
 \end{tabular}
@@ -548,7 +538,7 @@ $N$                      & 91{,}000    & 91{,}000 \\
 \begin{enumerate}
 \item Verify polar angle: $|\langle\sigma_z\rangle| = \cos(31^\circ) \approx 0.857$ on $H$-polarized state ($\pm 0.01$).
 \item Verify azimuthal alignment with entangled state (count rates within $2\%$ of QM).
-\item Measure $\mu$ via CHSH $S$-parameter ($\mu \ge 0.86$ required).
+\item Measure $\mu$ via CHSH $S$-parameter ($\mu \ge 0.86$ required for LF violation onset).
 \end{enumerate}
 
 \subsection{Practical Feasibility}
@@ -660,10 +650,10 @@ collapse regimes in both scale and physical mechanism. A null result at
 $\beta \ge 0.04$ excludes $O(1)$ and $O(10^{-1})$ deformation for the class Eq.~(\ref{eq:model_class})--(\ref{eq:fperp});
 a positive result provides the first quantitative target for theory
 construction. Increasing to $N = 200{,}000$ extends sensitivity to $\beta \ge 0.02$.
-See Supplemental~S3 for expanded scale comparison. The $\sim\!10^{-2}$ scale is
+The $\sim\!10^{-2}$ scale is
 physically motivated: postselection-conditioned weak values~\cite{Aharonov1988} manifest
-at the same order, and any overlap-dependent registration-layer structure
-would naturally appear at the precision where measurement-context effects
+at the same order, and any overlap-dependent structure would naturally appear at the precision where
+measurement-context effects
 become distinguishable from Poisson noise in current optical
 implementations.
 
@@ -705,16 +695,18 @@ fake-signal injection methodology are provided in Supplemental~S2.
 \label{sec:robustness}
 
 The experiment is robust under realistic Bong et al.\ (2020) conditions.
-Required visibility $\mu \ge 0.92$ and efficiency $\eta \ge 0.91$ are within reach
+Required loophole-closed $5\sigma$ detection thresholds (visibility $\mu \ge 0.92$,
+efficiency $\eta \ge 0.91$) are within reach
 (Bong achieved $\mu = 0.92$, $\eta = 0.87$; SNSPD upgrade~\cite{Marsili2013} closes the
 detection loophole). A six-source systematic-error budget finds all
 contributions sub-dominant to Poisson noise ($\sigma \approx 0.0017$ at $N = 91{,}000$):
 
 \begin{table}[H]
 \centering
+\small
 \caption{Systematic-error budget.}
 \label{tab:systematics}
-\begin{tabular}{lcc}
+\begin{tabular}{p{0.29\columnwidth}p{0.44\columnwidth}p{0.15\columnwidth}}
 \toprule
 Systematic source & Controlled by & vs.\ Poisson \\
 \midrule
@@ -769,21 +761,20 @@ overlap-only window; a $\theta$-dependent signal opens it.
 \centering
 \caption{Observable predictions: Standard QM vs.\ overlap-only model.}
 \label{tab:observables}
-\begin{tabular}{p{0.25\columnwidth}cc}
+\small
+\begin{tabular}{p{0.26\columnwidth}p{0.28\columnwidth}p{0.38\columnwidth}}
 \toprule
 Observable & Standard QM & Overlap-only (Eq.~\ref{eq:model_class}--\ref{eq:fperp}) \\
 \midrule
 Gen LF~1 at $\theta = 31^\circ$ & $+0.0891 \pm 0.0103$ ($8.6\sigma$) & Same (LF violation preserved) \\
 $\delta\langle AB\rangle$ at $\theta = 31^\circ$ & $0$ & $\approx 0.115\beta$ (numerical) \\
-$\delta\langle AB\rangle$ at $\theta = \pi/2$ & $0$ & $0$ (equatorial cancellation) \\
+$\delta\langle AB\rangle$ at $\theta = \pi/2$ & $0$ & $0$ (equatorial cancellation, exact) \\
 $\delta\langle AB\rangle(\theta)$ functional form & $\delta = 0$ $\forall\theta$ & $\delta = 0$ iff $\theta = \pi/2$; non-zero otherwise (exact form numerical) \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 A null result at Level~0 ($\beta < \beta_{\rm min}$ across the full $\theta$-sweep) falsifies the overlap-only class but leaves Levels~1--3 unconstrained: density-matrix-dependent ($\rho_F$), multi-partite (concurrence), and non-geometric (timing, path) deformations are not bounded by Proposition~1 and each requires independent experimental designs.
-
-Full interpretation analysis in Supplemental~S3.
 
 \subsection{Future Directions}
 \label{sec:future}
@@ -796,9 +787,9 @@ analysis bias, the sweep should be performed blind (randomized $\theta$ sequence
 analysis finalized before unmasking). A null result across all $\theta$
 excludes the overlap-only class to $\beta \approx 0.02$ ($N = 200{,}000$ per setting).
 
-\textbf{Multi-observer extension.} A generalization to $N > 2$ observers is
-outlined in Supplemental~S3; rigorous derivation of the required bridge
-theorems is left for future work.
+\textbf{Multi-observer extension.} Extension to $N > 2$ observers is a natural
+next step; the geometric cancellation condition generalizes to multi-observer
+overlap products and is left for future work.
 
 \textbf{Platform independence.} The theorem in \S\ref{sec:theorem} is platform-agnostic.
 Implementing tilted Superobserver measurements on solid-state or
@@ -820,8 +811,8 @@ identically (Proposition~1), leaving the overlap-only class systematically
 unexplored within the surveyed literature (Supplemental~S1).
 
 We propose a null test to probe this class: re-insert one QWP into the
-Bong et al.\ (2020) apparatus ($\theta = 31^\circ$), providing sensitivity $\beta \sim 0.07$
-at ${>}5\sigma$ (single-setting) while preserving $8.6\sigma$ LF violation. The
+Bong et al.\ (2020) apparatus ($\theta = 31^\circ$), providing sensitivity $\beta \sim 0.075$
+at $5\sigma$ (single-setting) while preserving $8.6\sigma$ LF violation. The
 experiment requires no new technology --- only re-insertion of an existing
 waveplate --- and would open the first experimental window onto
 overlap-dependent physics in EWF scenarios.

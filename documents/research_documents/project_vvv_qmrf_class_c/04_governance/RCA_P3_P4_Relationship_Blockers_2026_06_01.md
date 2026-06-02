@@ -295,7 +295,38 @@ K9-S12 Modified Bong protocol (single QWP, α=31°, N=91,000):
 
 ---
 
-## PART E — DECISION RECORD
+## PART E — COMMON GROUND & DUALITY ANALYSIS
+
+### E.1 Do P3 and P4 Share a Common Ground?
+
+Despite their apparent mathematical contradictions (unitary/non-unitary, continuous/discontinuous, deterministic/probabilistic), standard Postulates P3 and P4 share a foundational substrate:
+1.  **Shared Physical Substrate ($\rho$-side):** Both operate directly on the same physical representation — the density matrix $\rho$ in the Hilbert space $\mathcal{H}$.
+2.  **Boundary Definition (Heisenberg Cut):** Both are activated by a user-defined physical boundary. P4 governs below the cut (isolated system evolution); P3 is applied at/above the cut (outcome selection at measurement interface).
+3.  **Registration-Layer Silence:** Neither postulate explains the transition mechanism from physical dynamics to registered records.
+
+### E.2 Are P3 and P4 Two Sides of the Same Coin?
+
+Under VVV-QMRF, the answer is bifurcated: **No structurally, but Yes epistemically (under BE compass).**
+
+*   **No Structurally (Category Gap):**
+    P3 and P4 belong to mathematically incommensurable categories:
+    *   P4 belongs to the continuous **operator algebra** $B(\mathcal{H})$ (physical compatibility).
+    *   P3 acts at the boundary between $B(\mathcal{H})$ and the discrete **registration logic** $K$.
+    *   *Blockers B_K9E and B_PHI:* No logic-to-measure mapping (B_K9E) or epistemic-to-algebraic mapping (B_PHI) exists to merge them into a single mathematical object. They remain distinct layers.
+
+*   **Yes Epistemically (Registration Pipeline under BE Compass):**
+    Using Buddhist Epistemology as a translation compass, P4 and P3 represent **two sequential phases of a unified quantum registration pipeline**:
+    1.  **Pre-Symbolic Stratum (Svalaksana-like / P4):**
+        Corresponds to non-conceptual perception (*Nirvikalpaka pratyakṣa*). This is the raw physical interaction under P4, representing momentary, fleeting particular occurrences ($\varepsilon(M)$) before symbolic registration or validation occurs.
+    2.  **Symbolization Phase (Sāmānyalakṣana-like / P3):**
+        Corresponds to conceptual certification (*Savikalpaka kalpana*). This is the registration-lock stage where the event is assigned a symbolic projector ($P_o$) and validated under E3/E10, enabling the application of Born rule probabilities.
+    
+    *   **The Connective Tissue:**
+        The transition is governed by the **Registration Natural Interface (ENI)** (represented by the $\Lambda$ operator), a non-trivial map that preserves causal content while adding symbolic structure.
+
+---
+
+## PART F — DECISION RECORD
 
 ```
 DECISION: 4 BLOCKERS for the P3-P4 relationship in VVV-QMRF (full scope).

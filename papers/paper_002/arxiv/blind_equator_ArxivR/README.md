@@ -3,7 +3,7 @@
 **Paper:** Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?
 **Author:** VietVunVut (Viet - Nguyen Xuan)
 **Email:** viet@vvvqmrf.com | **Web:** https://vvvqmrf.com
-**Date:** 2026-05-31
+**Date:** 2026-06-02
 **Target:** arXiv quant-ph → Phys. Rev. A
 
 ## File Inventory
@@ -11,7 +11,7 @@
 ### Main Paper
 | File | Description |
 |------|-------------|
-| `main.tex` | LaTeX source (revtex4-2, v95) — 9 sections + 18 references |
+| `main.tex` | LaTeX source (revtex4-2, v96) — 9 sections + 18 references |
 | `main.bib` | BibTeX bibliography (18 entries) — alternative to inline thebibliography |
 | `main.pdf` | Compiled PDF — 9 pages (pre-verified compilation) |
 

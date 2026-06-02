@@ -5,6 +5,41 @@
 
 ---
 
+## v96 (2026-06-02) — Internal-logic RCA: 5 cross-section consistency fixes (3-round RCA × 5-Why, threshold 4/5; all PASS)
+
+**Trigger:** User-requested internal-logic RCA of the arXiv package (`arxiv/blind_equator_ArxivR/`). Five cross-section inconsistencies isolated; each traced by 5-Why, scored over 3 rounds (threshold 4.0/5), all implemented. Every numerical claim re-verified by independent computation + grid search (`RCA_fom_sweep.py`); both `main.tex` (9 pp) and `supplemental.tex` (7 pp) recompile cleanly. Scope: VVV-QMRF (paper_002 K9-S12 test); VVV-QMRF-EX used only as compass (no EX import). Frozen sections §2.3, §3.5 untouched. Title untouched (v77/v80 freeze).
+
+**Scoring summary (5 findings):** 5 implemented (all ≥ 4.0/5).
+
+| # | Finding (symptom) | 5-Why root cause | R1 | R2 | R3 | Avg | Action |
+|---|-------------------|------------------|----|----|----|-----|--------|
+| 1 | Abstract/§1/§9 say "β ~ 0.07 at 5σ (single-setting)" but Lemma 1 + §5.3 table say β = 0.07 → **4.7σ** single | The round protocol value β = 0.07 was reused as the 5σ *threshold*; true single-setting threshold is β ≈ 0.075 (0.07 → 4.69σ, verified). Rounding 0.075→0.07 then labelling "5σ" created one number with two σ values. | 4.8 | 4.7 | 4.9 | **4.80** | **Implemented** — headline → β ~ 0.075 at 5σ (single-setting) in abstract, §1, §9 |
+| 2 | Reference angle θ = 31° paired with "5σ", but §4.1 states the β = 0.07 single-setting >5σ window is [35°,46°] — **excludes 31°** | θ = 31° is fixed by hardware (QWP tilt) + the β = 0.30 plateau [20°,45°], but the abstract coupled it to β = 0.07 sensitivity, which optimises at 46°. Single-setting 5σ at 31° needs β ≳ 0.075. | 4.5 | 4.6 | 4.7 | **4.60** | **Implemented** — §4.1 adds: 31° gives 4.7σ single at β=0.07; 5σ needs β≳0.075 single or 4-combined (9.4σ); β=0.30 plateau [20°,45°] does include 31° |
+| 3 | §4.1 trade-off claims "As θ → 90°, the LF violation is **strongest**", contradicting the same paragraph's "Gen LF 1 becomes negative at θ = 58°" | Imported a generic "equator = LF-optimal" intuition. In the *tilted-Superobserver* parametrisation, grid search (Supplemental S2 / `RCA_fom_sweep.py`) shows Gen LF 1 peaks at θ ≈ 31°–35° (n_LF ≈ 8.0) and is **negative** by θ ≈ 55°–58° (−4.05 at 90°). The narrative was factually inverted. | 5.0 | 4.9 | 5.0 | **4.97** | **Implemented** — trade-off rewritten: LF violation maximised at intermediate tilt, falls to 0 near 55°; FOM LF-limited (β=0.30) → plateau 31–35°, signal-limited (β=0.07) → optimum 46° |
+| 4 | arXiv `main.tex` states μ ≥ 0.86 "required" (settings table, §4.4) AND μ ≥ 0.92 "Required" (§7) — two conflicting minimum-visibility thresholds | The arXiv export **dropped the distinguishing qualifiers** that `manuscript.md` (source) carries: 0.86 = "for LF violation onset" (Phase 1), 0.92 = "loophole-closed 5σ detection" (Phase 2). Source was already correct; only the derived `main.tex` regressed. | 4.6 | 4.7 | 4.8 | **4.70** | **Implemented** — restored "(onset)" / "for LF violation onset" / "loophole-closed 5σ detection thresholds" qualifiers into `main.tex` |
+| 5 | `supplemental.tex` S2.5 Monte Carlo: "β = 0.07: >99% power **(single)**" — but main §6 says β = 0.07 single = ~38% (4.7σ); >99% is the **combined** result (9.4σ) | Same single/combined confusion family as #1. The >99% power belongs to the four-combined-settings analysis; the "(single)" label was misattached during supplemental condensation. | 4.7 | 4.8 | 4.8 | **4.77** | **Implemented** — relabelled: ">99% power (four combined settings, n_σ=9.4; ~38% single-setting, n_σ=4.7)" |
+
+### Numerical verification (independent recomputation)
+
+- σ(⟨AB⟩) at −0.8572 = 0.00171; β = 0.07 → δ = 0.0080 → **4.69σ single / 9.37σ combined** (confirms Lemma 1, refutes "0.07 at 5σ"). Exact single-setting 5σ threshold β = 0.0742 ≈ 0.075.
+- Gen LF 1 significance: 0.0891/0.0103 = 8.65σ ✓; N_min(5σ) = 30,402 ✓ (paper: ≈30,800).
+- Grid search `RCA_fom_sweep.py` (β_K9E = 0.07): optimal θ = 46°, FOM = 5.4, >5σ range [35°,46°] ✓; max achievable n_LF by θ: 31°→8.0, 35°→8.0, 45°→5.9, 55°→0 (GenLF1 = −1.74), 90°→0 (GenLF1 = −4.05) — confirms Finding 3.
+- LO overestimate factor: 0.6299/0.115 = 5.48 ≈ 5.5 ✓ (S2 warning intact).
+
+### Files changed (source + derived kept in sync)
+
+| File | Findings applied |
+|------|------------------|
+| `manuscript.md` (source) | 1, 2, 3 (Finding 4 already correct in source; status → v96) |
+| `arxiv/.../main.tex` | 1, 2, 3, 4 (+ author header, v96) |
+| `arxiv/.../supplemental.tex` | 5 |
+| `arxiv/.../README.md` | version/date → v96 / 2026-06-02 |
+
+### Regression
+Δ: Abstract/§1/§9 β-threshold 0.07→0.075 (3 sites). §4.1 +1 clarification sentence (31° reconciliation) + trade-off paragraph corrected (no false "strongest at 90°"). §4.3/§4.4/§7 μ-qualifiers restored (arXiv only). Supplemental S2.5 single→combined label fixed. No claim-class changes; Proposition 1 / Lemma 1 algebra untouched (independently re-verified sound). C1/C3/C10/C17 preserved. Frozen §2.3/§3.5 and title untouched. Both PDFs recompile (main 9 pp, supplemental 7 pp, exit 0).
+
+---
+
 ## v95 (2026-05-31) — §8.1 Falsification Hierarchy boundary (3-round RCA 4.1/5)
 
 **Implemented changes:**

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.19)  31 MAY 2026 20:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.19)  2 JUN 2026 20:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -374,14 +374,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box71
 )
 Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 18.
+lass! (Proceeding with fingers crossed.) on input line 20.
 
 
 Class revtex4-2 Warning: Repair the float package.
 
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 18.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 18.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 18.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 20.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 20.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 20.
 
 (C:\Users\PC\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex
 .def
@@ -390,24 +390,24 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 (C:\Users\PC\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -432,37 +432,37 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\PC\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 20.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 18.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 20.
 \openout3 = `mainNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
 
 
 (C:\Users\PC\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
 
 
 (C:\Users\PC\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 2435) in paragraph at lines 83--88
+Underfull \hbox (badness 2435) in paragraph at lines 85--90
 []\OT1/cmr/m/n/10 Breaking the can-cel-la-tion re-quires only a sin-gle
  []
 
 
-Overfull \hbox (77.13364pt too wide) detected at line 130
+Overfull \hbox (77.13364pt too wide) detected at line 131
 []
  []
 
 [1{C:/Users/PC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (20.37254pt too wide) detected at line 148
+Overfull \hbox (20.37254pt too wide) detected at line 149
 [][][]\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; b \OMS/cmsy/m/n/10
  j \OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 a; b \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10
@@ -471,120 +471,109 @@ Overfull \hbox (20.37254pt too wide) detected at line 148
 b; []\OT1/cmr/m/n/10 )]\OML/cmm/m/it/10 =Z;
  []
 
-
-Underfull \hbox (badness 1281) in paragraph at lines 170--184
-\OT1/cmr/m/n/10 phe-nomeno-log-i-cal clas-si-fi-ca-tion in Sup-ple-men-tal S3).
-
- []
-
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 306--306
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 []\OT1/cmr/m/n/9 Overlap-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--306
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 \OT1/cmr/m/n/9 Dependence
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 []\OT1/cmr/m/n/9 Weak Mea-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
 []\OT1/cmr/m/n/9 Depends
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
 []\OT1/cmr/m/n/9 Measurement
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
-[]\OT1/cmr/m/n/9 Measurement
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[]\OT1/cmr/m/n/9 Recorded out-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
-\OT1/cmr/m/n/9 reg-is-tra-tion
+Underfull \hbox (badness 3108) in paragraph at lines 297--297
+\OT1/cmr/m/n/9 come (ge-o-met-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
-\OT1/cmr/m/n/9 (ge-o-met-ric re-
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
+\OT1/cmr/m/n/9 to prior out-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
-\OT1/cmr/m/n/9 la-tion-ship to
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 []\OT1/cmr/m/n/9 Postselection
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
 []\OT1/cmr/m/n/9 Outcome
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
 \OT1/cmr/m/n/9 dis-tri-bu-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
 \OT1/cmr/m/n/9 across in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 298--298
 \OT1/cmr/m/n/9 com-pat-i-ble
  []
 
 
-Underfull \hbox (badness 5475) in paragraph at lines 309--309
+Underfull \hbox (badness 5475) in paragraph at lines 298--298
 []$\OML/cmm/m/it/9 ^^N\OMS/cmsy/m/n/9 h\OML/cmm/m/it/9 AB\OMS/cmsy/m/n/9 i\OT1/
 cmr/m/n/9 (\OML/cmm/m/it/9 ^^R\OT1/cmr/m/n/9 )$ van-
  []
 
 
-Underfull \hbox (badness 5091) in paragraph at lines 309--309
+Underfull \hbox (badness 5091) in paragraph at lines 298--298
 \OML/cmm/m/it/9 ^^Y=\OT1/cmr/m/n/9 2$, at fixed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 []\OT1/cmr/m/n/9 Weak value
  []
 
 
-Overfull \hbox (4.61661pt too wide) in paragraph at lines 310--310
+Overfull \hbox (4.61661pt too wide) in paragraph at lines 299--299
 []\OT1/cmr/m/n/9 Constrained
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--310
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 []\OT1/cmr/m/n/9 Bell-KS in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--310
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 []\OT1/cmr/m/n/9 Proposition 1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--310
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
 \OT1/cmr/m/n/9 (equa-to-rial
  []
 
 
-Overfull \hbox (7.20825pt too wide) detected at line 333
+Overfull \hbox (7.20825pt too wide) detected at line 322
 []
  []
 
@@ -593,26 +582,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.333 \end{align}
-                 ]
-<fig1_bloch_equatorial_vs_tilted.png, id=233, 860.4948pt x 582.2553pt>
+l.344 
+      ]
+<fig1_bloch_equatorial_vs_tilted.png, id=234, 860.4948pt x 582.2553pt>
 File: fig1_bloch_equatorial_vs_tilted.png Graphic file (type png)
 <use fig1_bloch_equatorial_vs_tilted.png>
 Package pdftex.def Info: fig1_bloch_equatorial_vs_tilted.png  used on input lin
-e 358.
+e 347.
 (pdftex.def)             Requested size: 246.0pt x 166.4509pt.
 
-Overfull \hbox (44.49252pt too wide) in paragraph at lines 399--407
+Overfull \hbox (44.49252pt too wide) in paragraph at lines 387--395
  []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--414
+Underfull \hbox (badness 10000) in paragraph at lines 397--402
 []$[]$\OT1/cmr/m/n/8 BSM projects onto the four Bell states
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 409--414
+Underfull \hbox (badness 1975) in paragraph at lines 397--402
 \OMS/cmsy/m/n/8 fj\OT1/cmr/m/n/8 ^^H[]\OMS/cmsy/m/n/8 i\OML/cmm/m/it/8 ; \OMS/c
 msy/m/n/8 j\OT1/cmr/m/n/8 ^^H[]\OMS/cmsy/m/n/8 i\OML/cmm/m/it/8 ; \OMS/cmsy/m/n
 /8 j\OT1/cmr/m/n/8 	[]\OMS/cmsy/m/n/8 i\OML/cmm/m/it/8 ; \OMS/cmsy/m/n/8 j\OT1/
@@ -625,81 +614,90 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.448 
+l.436 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.448 
+l.436 
        <./fig1_bloch_equatorial_vs_tilted.png>]
-Underfull \hbox (badness 1038) in paragraph at lines 463--464
+Underfull \hbox (badness 1038) in paragraph at lines 451--452
 []\OT1/cmr/m/n/10 Any $\OML/cmm/m/it/10 ^^R \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 =
  \OML/cmm/m/it/10 ^^Y=\OT1/cmr/m/n/10 2$ breaks the can-cel-la-tion. A grid
  []
 
-<fig2_fom_vs_theta.png, id=260, 711.8595pt x 425.6703pt>
+<fig2_fom_vs_theta.png, id=257, 711.8595pt x 425.6703pt>
 File: fig2_fom_vs_theta.png Graphic file (type png)
 <use fig2_fom_vs_theta.png>
-Package pdftex.def Info: fig2_fom_vs_theta.png  used on input line 467.
+Package pdftex.def Info: fig2_fom_vs_theta.png  used on input line 455.
 (pdftex.def)             Requested size: 246.0pt x 147.10323pt.
+<fig3_optical_path.png, id=263, 856.03815pt x 292.6935pt>
+File: fig3_optical_path.png Graphic file (type png)
+<use fig3_optical_path.png>
+Package pdftex.def Info: fig3_optical_path.png  used on input line 509.
+(pdftex.def)             Requested size: 246.0pt x 84.11076pt.
 [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.516 
+l.534 
        <./fig2_fom_vs_theta.png>]
-<fig3_optical_path.png, id=273, 856.03815pt x 292.6935pt>
-File: fig3_optical_path.png Graphic file (type png)
-<use fig3_optical_path.png>
-Package pdftex.def Info: fig3_optical_path.png  used on input line 519.
-(pdftex.def)             Requested size: 246.0pt x 84.11076pt.
 
-Underfull \hbox (badness 2269) in paragraph at lines 569--574
+LaTeX Warning: A float is stuck (cannot be placed) on input line 534.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 534.
+
+
+Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 559--564
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 95$. SPDC pro-duces pho-ton 
 pairs only in the
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
+(hyperref)                removing `math shift' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\theta' on input line 575.
+(hyperref)                removing `\theta' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 575.
+(hyperref)                removing `superscript' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\circ' on input line 575.
+(hyperref)                removing `\circ' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
+(hyperref)                removing `math shift' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
+(hyperref)                removing `math shift' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 575.
+(hyperref)                removing `\mu' on input line 565.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 575.
+(hyperref)                removing `math shift' on input line 565.
 
 
-Overfull \hbox (46.39632pt too wide) in paragraph at lines 592--599
+Overfull \hbox (46.39632pt too wide) in paragraph at lines 582--589
  []$[]$ 
  []
 
 
-Overfull \hbox (28.41982pt too wide) in paragraph at lines 624--635
+Overfull \hbox (28.41982pt too wide) in paragraph at lines 614--625
  []$[]$ 
  []
 
@@ -708,71 +706,85 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.636 
-      
+l.629 F
+       or Eq.~(\ref{eq:model_class})--(\ref{eq:fperp}), the illustrative $5\...
+
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.636 
-      
+l.629 F
+       or Eq.~(\ref{eq:model_class})--(\ref{eq:fperp}), the illustrative $5\...
+
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.636 
-       <./fig3_optical_path.png>]
-Underfull \hbox (badness 1478) in paragraph at lines 679--683
+l.629 F
+       or Eq.~(\ref{eq:model_class})--(\ref{eq:fperp}), the illustrative $5\...
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
+ been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.629 F
+       or Eq.~(\ref{eq:model_class})--(\ref{eq:fperp}), the illustrative $5\...
+ <./fig3_optical_path.png>]
+Underfull \hbox (badness 1478) in paragraph at lines 669--673
 \OT1/cmr/m/n/10 For Gen LF 1 (11 terms, co-ef-fi-cients up to $\OMS/cmsy/m/n/10
  ^^F\OT1/cmr/m/n/10 2$):
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 679--683
+Underfull \hbox (badness 1430) in paragraph at lines 669--673
 \OT1/cmr/m/n/10 (ex-act term-by-term prop-a-ga-tion; the up-per bound
  []
 
-<fig4_monte_carlo.png, id=311, 578.16pt x 361.35pt>
+<fig4_monte_carlo.png, id=309, 578.16pt x 361.35pt>
 File: fig4_monte_carlo.png Graphic file (type png)
 <use fig4_monte_carlo.png>
-Package pdftex.def Info: fig4_monte_carlo.png  used on input line 698.
+Package pdftex.def Info: fig4_monte_carlo.png  used on input line 688.
 (pdftex.def)             Requested size: 246.0pt x 153.74539pt.
 
-Overfull \hbox (94.03322pt too wide) in paragraph at lines 717--729
- []$[]$ 
+Underfull \hbox (badness 10000) in paragraph at lines 715--715
+[]\OT1/cmr/m/n/9 Polarization-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--715
+[]\OT1/cmr/m/n/9 Power mon-i-tor-ing per
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--716
+[]$\OML/cmm/m/it/9 ^^R$\OT1/cmr/m/n/9 -verification pro-to-col
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--717
+[]\OT1/cmr/m/n/9 Detector asym-
  []
 
 [7
-pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
- been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.730 
-      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.730 
+l.722 
        <./fig4_monte_carlo.png>]
-<fig5_fom_vs_mu.png, id=325, 578.16pt x 361.35pt>
+<fig5_fom_vs_mu.png, id=322, 578.16pt x 361.35pt>
 File: fig5_fom_vs_mu.png Graphic file (type png)
 <use fig5_fom_vs_mu.png>
-Package pdftex.def Info: fig5_fom_vs_mu.png  used on input line 747.
+Package pdftex.def Info: fig5_fom_vs_mu.png  used on input line 739.
 (pdftex.def)             Requested size: 246.0pt x 153.74539pt.
 
-Underfull \hbox (badness 1019) in paragraph at lines 770--770
+Underfull \hbox (badness 1019) in paragraph at lines 762--762
 []\OT1/cmr/m/n/9 TABLE VII. []Observable pre-dic-tions: Stan-dard QM vs.
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 776--776
-[]\OT1/cmr/m/n/9 Gen LF 1 at
- []
-
-
-Overfull \hbox (169.60216pt too wide) in paragraph at lines 772--782
- []$[]$ 
+Underfull \hbox (badness 10000) in paragraph at lines 769--770
+[]\OT1/cmr/m/n/9 Same (LF vi-o-la-tion
  []
 
 [8
@@ -780,21 +792,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.821 
+l.812 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.821 
+l.812 
       
 pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.821 
+l.812 
        <./fig5_fom_vs_mu.png>]
-Underfull \hbox (badness 6348) in paragraph at lines 886--887
+Underfull \hbox (badness 6348) in paragraph at lines 877--878
  []\OT1/cmr/m/n/9 Y. Aharonov, D. Z. Al-bert, and L. Vaid-man,
  []
 
@@ -803,17 +815,21 @@ Underfull \hbox (badness 6348) in paragraph at lines 886--887
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 8B28EF26FAA3ED9FC5FCBD6D68E69CA9;6156.
  ) 
 Here is how much of TeX's memory you used:
- 12050 strings out of 467871
- 180657 string characters out of 5419828
- 623181 words of memory out of 5000000
- 40702 multiletter control sequences out of 15000+600000
+ 12047 strings out of 467871
+ 180629 string characters out of 5419828
+ 627181 words of memory out of 5000000
+ 40699 multiletter control sequences out of 15000+600000
  638257 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,1097b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,1527b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm080
 0.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx
 1000.pk> <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
@@ -843,9 +859,9 @@ lic/amsfonts/cm/cmsy8.pfb><C:/Users/PC/AppData/Local/Programs/MiKTeX/fonts/type
 /fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/PC/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/PC/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (9 pages, 1177771 bytes).
+Output written on main.pdf (9 pages, 1177664 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
+ 480 PDF objects out of 1000 (max. 8388607)
  86 named destinations out of 1000 (max. 500000)
  282 words of extra memory for PDF output out of 10000 (max. 10000000)
 
