@@ -28,9 +28,11 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 ## Findings & Resolutions
 
 ### Finding 1 — RESOLVED: Density Matrix Formula (§5, line 464)
-- **Status:** CLOSED (v92)
-- **Action:** Updated manuscript to correct formula: $\rho_\mu = \mu|\Phi^-\rangle\langle\Phi^-| + (1-\mu)/2 \cdot (|HV\rangle\langle HV| + |VH\rangle\langle VH|)$.
-- **Verification:** All 9 correlators and Gen LF 1 violation match the physical model to machine precision.
+- **Status:** PARTIALLY CLOSED at v92; FULLY CLOSED at v97
+- **Action (v92):** Corrected the noise term from $I/4$ to the SPDC subspace model: $\rho_\mu = \mu|\Phi^-\rangle\langle\Phi^-| + (1-\mu)/2 \cdot (|HV\rangle\langle HV| + |VH\rangle\langle VH|)$.
+- **Residual error (fixed v97):** The signal ket $|\Phi^-\rangle$ above is incorrect. $|\Phi^-\rangle=(|HH\rangle-|VV\rangle)/\sqrt{2}$ lives in $\{|HH\rangle,|VV\rangle\}$ and gives $\langle A_1 B_1\rangle=+1$, contradicting the reported $-1.0000$. The correct signal state is the singlet $|\Psi^-\rangle=(|HV\rangle-|VH\rangle)/\sqrt{2}$, which lives in $\{|HV\rangle,|VH\rangle\}$, gives $\langle A_1 B_1\rangle=-1$ exactly, and is rotationally invariant (explaining the $-\cos\theta$ mixed correlators and their $\mu$-independence).
+- **Action (v97, 2026-06-02):** Corrected signal ket $|\Phi^-\rangle\to|\Psi^-\rangle$ across manuscript §5, `main.tex`, `supplemental.tex`, `SOT/` (8 sites total). No numerical value changed — all tables were already computed from the singlet. RCA round 7, 3-round $\times$ 5-Why, score 4.93/5.
+- **Verification:** $\langle A_1 B_1\rangle=-1.0000$, $\langle A_1 B_2\rangle=-\cos 31^\circ=-0.8572$, $\mu$-independence of mixed correlators — all consistent only with $|\Psi^-\rangle$. ✓
 
 ### Finding 2 — RESOLVED: FOM vs θ Sweep (§4.1)
 - **Status:** CLOSED (v93)

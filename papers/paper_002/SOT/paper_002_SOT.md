@@ -3,8 +3,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # K9_E Source of Truth — Single-Waveplate Test of Outcome-Dependent Quantum Registration in Extended Wigner's Friend Scenarios
 
 **SOT type:** INTERNAL — K9_E Completeness Reference
-**Date synthesized:** 2026-05-25 (re-synced 2026-05-31 to manuscript v95)
-**Sources:** draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v95, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v95 + supplemental S1-S3
+**Date synthesized:** 2026-05-25 (re-synced 2026-05-31 to manuscript v95; updated 2026-06-02: RCA K9_E Completeness 3-round 4.7/5 PASS — added φ_R restricted existence I.2 + §8.1 Falsification Hierarchy + version lineage v21→v95)
+**Sources:** draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v95, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v95 + supplemental S1-S3 + phi_restricted_existence_v1_0.md (2026-06-01, I.2 Class C THEOREM)
 **Relationship to manuscript v95:** This SOT contains full K9_E context, VVV-QMRF language, and technical detail removed from the public-facing manuscript. Manuscript v95 is the academically-defended subset for Phys. Rev. A submission.
 **Version lineage:** v4 (K9-S12 proposal) -> v12 (Eq.12 corrected, watershed) -> v21 (academic polish) -> v94 (RCA round 4: cos θ downgrade, per-θ FOM re-optimization, SPDC density matrix) -> v95 (§8.1 Falsification Hierarchy boundary, 3-round RCA 4.1/5). This SOT synthesizes the best from all versions, prioritizing K9_E completeness.
 
@@ -286,7 +286,7 @@ Angles optimized via coarse grid (15 deg steps, 13,824 configurations) + fine sc
 
 ### 6.1 -- QM Correlators (theta = 31 deg, mu = 0.95, N = 91,000)
 
-All values computed from density matrix rho_mu = mu|Phi-><Phi-| + (1-mu)/2 * (|HV><HV| + |VH><VH|) for the singlet state. SPDC produces photon pairs only in the {|HV>, |VH>} subspace; the noise term is the maximally mixed state within that subspace, not the full I/4.
+All values computed from density matrix rho_mu = mu|Psi-><Psi-| + (1-mu)/2 * (|HV><HV| + |VH><VH|) for the singlet state. SPDC produces photon pairs only in the {|HV>, |VH>} subspace; the noise term is the maximally mixed state within that subspace, not the full I/4.
 
 | (x,y) | <AB>_QM | sigma (N=91,000) | | (x,y) | <AB>_QM | sigma (N=91,000) |
 |-------|---------|--------------|--|-------|---------|--------------|
@@ -345,7 +345,7 @@ The sqrt(4) = 2 gap between combined and single-setting thresholds reflects the 
 FOM = min(n_sigma_LF, n_sigma_K9E) = min(8.6, 20.8) = 8.6
 ```
 
-FOM ensures both quantities are simultaneously significant. Compare: FOM(theta = 90 deg) = 0 (standard Bong -- K9_E invisible). FOM > 5sigma maintained for theta in [20 deg, 55 deg].
+FOM ensures both quantities are simultaneously significant. Compare: FOM(theta = 90 deg) = 0 (standard Bong -- K9_E invisible). FOM > 5sigma maintained for theta in [20 deg, 45 deg] (v93 correction — per-theta re-optimized at beta = 0.30; prior [20 deg, 55 deg] was pre-optimization error).
 
 ### 6.6 -- beta Physical Meaning
 
@@ -584,7 +584,9 @@ Both predict suppression ratio ~2 for 2BSM/1BSM. See `T1B_model_comparison_RCA.m
 
 ---
 
-## Section 14 -- Version Evolution Summary: v4 -> v21
+## Section 14 -- Version Evolution Summary: v4 -> v95
+
+### 14.1 — v4 to v21: K9_E Identity → Academic Polish
 
 | Version | Date | Key Change | K9_E Impact |
 |---------|------|-----------|-------------|
@@ -600,11 +602,34 @@ Both predict suppression ratio ~2 for 2BSM/1BSM. See `T1B_model_comparison_RCA.m
 | v20 | 2026-05-25 | f_perp class-representative framing + eta-direction analysis | Class scope clarified |
 | v21 | 2026-05-25 | mu-threshold 0.86->0.92(5sigma) + honest abstract + Section 9.2->S3 | Academic honesty |
 
+### 14.2 — v21 to v95: Watershed RCA Decisions
+
+| Version | Date | Key Change | Manuscript Impact |
+|---------|------|-----------|------------------|
+| v53 | 2026-05-25 | **Genre crystallization**: "phenomenological null test" explicit. GPT/weak-measurement stripped from §2.3. §8.1+§8.2 merged. Abstract compressed 13→8 lines. | K9_E publicly = Eq.(2-3) only. Genre locked. |
+| v54 | 2026-05-25 | "Why overlap-only?" new subsection in §2.3. SME benchmark framing ("search target, not theory prediction"). f_perp class-representative. | β-motivation established. |
+| v57 | 2026-05-25 | §7 compressed 67→12 lines (detail→S2). §8.1 compressed 22→10 lines. Paper 714→649 lines. | K9_E experimental detail moved to S2. |
+| v62 | 2026-05-25 | Two-phase program (§7): Phase 1 loophole-open / Phase 2 SNSPD closure. BSM equivalence footnote [a]. | Protocol structure finalized. |
+| v63 | 2026-05-25 | Survey table contextualized (N=2 explicit). Lemma 1 de-circularized. Two-phase in Abstract. FOM formula explicit. | All-accept RCA round. N=2 addressed. |
+| v65 | 2026-05-25 | §2.3 SME analogy developed (7 lines). Abstract survey bridge sentence added. | β = search parameter established as §2.3 argument. |
+| v75 | 2026-05-26 | Abstract N=2 acknowledgment: "only two such implementations exist." §1 Proposition 1 merged (−9 lines). | N=2 in abstract = proactive acknowledgment. |
+| v77 | 2026-05-26 | Abstract hook: "have operated exclusively at θ=π/2 — a fixed point." §3.5 "Structural, not coincidental" (+7 lines). **TITLE FROZEN.** | Factual, not anthropomorphic. N=2 gap = structural. |
+| v79 | 2026-05-26 | "structurally untested" → "systematically unexplored" (4 occurrences). | Observational fact vs implicit accusation. |
+| v81 | 2026-05-26 | **GENRE BOUNDARY FROZEN**: "paper does not need more physics motivation." Auto-reject rule for "add physical mechanism" RCA suggestions. | Physics motivation at §2.3 level = correct depth. |
+| v84 | 2026-05-26 | Abstract: "blind spot for the overlap-only class" (scope qualifier). §2.3 Physical context expanded (weak measurement + decoherence). §8.2 + S3 trimmed (−35 lines). | Scope qualifier in hook = prevents overclaim. |
+| v85 | 2026-05-26 | §3.5: θ as INDEPENDENT LF DoF (+3 lines). §3.5 "Search audit" + "Prior work" merged (−8 lines). §1 + §9 rebalanced. | Structural novelty = θ orthogonal to LF constraint surface. |
+| v87 | 2026-05-26 | Abstract tightened ~150 words. "unnoticed geometric blind spot" → "have operated exclusively at... fixed point" (factual). §2.3: "phenomenological ansatz, not derived from any underlying physical theory." | Abstract = factual, 150 words. |
+| v88 | 2026-05-26 | "In brief" paragraph: operational observable + novelty crystallization. Two contributions stated: (1) Proposition 1 null theorem, (2) single-waveplate protocol. | Structure of paper crystallized in plain English. |
+| v92 | 2026-05-26 | §5 density matrix corrected: I/4 → (|HV⟩⟨HV|+|VH⟩⟨VH|)/2. β=0.07 window [35°,46°] noted. MC rate at β=0.07 corrected >99%→~38%. | SPDC subspace model explicit. |
+| v93 | 2026-05-27 | FOM values corrected to per-theta re-optimization: [20°,45°] replaces [20°,55°]. S2_derivation "[EXACT]" formula removed. | **FOM window corrected: [20°,45°].** |
+| v94 | 2026-05-27 | **cos θ DOWNGRADED**: "δ ∝ cos θ" → "δ vanishes iff θ=π/2; non-zero otherwise; exact θ-dependence numerical." cos θ overestimates |δ| by ~5.5×. θ=31° "optimal" → "near-optimal." S2: 5.5× overestimate warning added. §2.3 + §3.5 FROZEN. | **Central claim precision corrected.** |
+| v95 | 2026-05-31 | **§8.1 Falsification Hierarchy boundary**: Level 0 null ≠ Levels 1–3. Boundary sentence added after comparison table. 3-round RCA 4.1/5. | See Section 18 of this SOT. |
+
 ---
 
-## Section 15 -- Cross-Reference: SOT -> Manuscript v94
+## Section 15 -- Cross-Reference: SOT -> Manuscript v95
 
-| SOT Section | Manuscript v21 Section | Preserved? | Notes |
+| SOT Section | Manuscript v95 Section | Preserved? | Notes |
 |------------|----------------------|-----------|-------|
 | Section 1 K9_E Postulate P9 | Section 2.3 Eq. (2-3) | Rescoped | P9 -> phenomenological parametrization |
 | Section 2 VVV-QMRF Architecture | Section 9.3 (prose only) | Minimized | "framework of measurement registration" only |
@@ -619,8 +644,10 @@ Both predict suppression ratio ~2 for 2BSM/1BSM. See `T1B_model_comparison_RCA.m
 | Section 11 Future Directions | Section 9.4 | **Preserved** | |
 | Section 12 Reproducibility | S3 (code index) | Preserved | |
 | Section 13 Literature Search Audit | S1 (search audit) | Preserved | |
-| FOM definition | Section 6.4 (prose) | Rescoped | FOM concept in Section 4.1, not separate section |
+| FOM definition | §4.1 (prose) | Rescoped | FOM = min(n_σ_LF, n_σ_signal) explicit in §5.3 |
 | beta = 0.598 Proietti fit | -- | **Removed** | v4 removed (honest: "empirically unconstrained") |
+| Section 17 φ_R Restricted Existence | -- | **NOT in manuscript** | Internal VVV-QMRF context (I.2, 2026-06-01) |
+| Section 18 Falsification Hierarchy | §8.1 (boundary sentence) | Preserved (partial) | "Level 0 null ≠ Levels 1–3" added v95 |
 
 ---
 
@@ -645,6 +672,124 @@ Both predict suppression ratio ~2 for 2BSM/1BSM. See `T1B_model_comparison_RCA.m
 | P10-NOISE threshold | 0.10 sigma RMS | v30 |
 | K9E-PAT status | CLOSED UNRESOLVABLE | v31 |
 | Class C classification | qualified (v31) | v31 |
+
+---
+
+## Section 17 -- φ_R Restricted Existence (I.2, 2026-06-01) — VVV-QMRF Layer 2/3 Context
+
+**Status:** Class C THEOREM (proven by explicit construction, RCA 4.79/5)
+**Source:** `documents/research_documents/meta_architecture/phi_restricted_existence_v1_0.md` v1.0
+**Relevance to paper_002:** K9_E (Layer 3) requires K-space structural context from Layers 1-2. I.2 proves the K→B(H) correspondence map exists (restricted), which grounds K9_E's claim that K-space registration structure has a B(H) image.
+
+### 17.1 -- What Was Proven
+
+```
+THEOREM (φ_R Restricted Existence):
+  φ_R: K_R → P(H) ∪ {0}  (projection sub-lattice, NOT full B(H))
+  
+  CONSTRUCTION:
+    φ_R(k) := |o⟩⟨o|      if V(k) = 1  (valid outcome k)
+    φ_R(k) := 0_{B(H)}     if V(k) = 0  (invalidated / null)
+  
+  CLAIM (all proven):
+    (1) φ_R total and well-defined on K_R
+    (2) φ_R satisfies N_1–N_8 and N_T (all necessary conditions)
+    (3) Im(φ_R) ⊆ P(H) ∪ {0} — tight, nothing more
+    (4) N ≥ 3: unique colimit extension φ_colim via T4-H Step 4
+        satisfying φ-N2, φ-N3
+```
+
+### 17.2 -- What This Changes vs Prior Status
+
+| Aspect | Before I.2 | After I.2 |
+|--------|-----------|-----------|
+| φ-map claim | "VVV-QMRF conjectures existence of φ: K → B(H)" | "φ_R: K_R → P(H)∪{0} **proven** (Class C THEOREM)" |
+| Codomain | B(H) (full operator algebra) | P(H) ∪ {0} (outcome projectors + zero only) |
+| Class | D conjecture | **C THEOREM** (restricted existence) |
+| N≥3 extension | Conditional (T4-H Steps 2-4 deferred) | **φ-N1 THEOREM**: unique colimit, φ-N2, φ-N3 ✅ |
+
+### 17.3 -- What Was NOT Proven (Boundary, I.1)
+
+```
+NOT PROVEN (characterized boundary — I.1 Theorem A+B):
+  ✗ N_6 sufficiency: P_{o2}·P_{o1}≠0 → Auth=1  [I.1 Theorem A]
+  ✗ Global K_joint path-commutativity has B(H) encoding  [I.1 Theorem B]
+  ✗ φ_R is a homomorphism/functor in strict categorical sense
+
+CODOMAIN NOTE:
+  φ_R does NOT map to: ρ (density operators), x̂, p̂, or any observable
+  without K-registration analogue. P(H)∪{0} = outcome projectors + 0 ONLY.
+  The restriction is TIGHT — Im(φ_R) is smallest B(H) subset needed.
+```
+
+### 17.4 -- Relationship to K9_E (paper_002 Experiment)
+
+K9_E (Layer 3) predicts probability modification at the registration layer. I.2 proves that K-space registration events map to projection operators in B(H) — the operators through which K9_E modifies Born-rule probabilities. The chain is:
+
+```
+K1–K8 (axioms) → K_R (registration space)
+                       ↓ φ_R [I.2 THEOREM]
+                  P(H)∪{0} ⊂ B(H)
+                       ↓ K9_E [Layer 3 postulate]
+  P(o|K) = Tr(E_o ρ) · [1 − β·f_perp(o, K_ctx)] / Z_E
+                       ↓ Equatorial Cancellation Theorem
+  f_perp(+1,H) − f_perp(−1,H) = −cos θ  → vanishes iff θ = π/2
+```
+
+**Key scope note:** I.2 proves existence of φ_R on P(H)∪{0}. K9_E applies to the FULL Tr(E_o ρ) Born rule. The two are structurally consistent (K9_E multiplies Born-rule probabilities by f_perp factors derived from the same K-space geometry). I.2 does NOT prove K9_E holds — K9_E remains Class C qualified (postulate, not theorem).
+
+### 17.5 -- AHP Check for SOT Addition
+
+| Criterion | Status |
+|-----------|--------|
+| I.2 traces to K1–K8 (frozen) | ✅ Construction from K4 (V→projector), K5 (V=0→zero), K1 (total) |
+| "Restricted" explicit throughout | ✅ P(H)∪{0}, not B(H) |
+| Boundary cited | ✅ §17.3 cites I.1 Theorem A+B |
+| K ≠ H preserved | ✅ Im(φ_R) ⊆ P(H)∪{0}, observables ≠ states ρ |
+| K9_E independence preserved | ✅ I.2 grounds K-space structure; K9_E = separate postulate |
+
+---
+
+## Section 18 -- Falsification Hierarchy Level Boundary (v95, §8.1)
+
+**Source:** manuscript.md v95, §8.1. RCA 4.1/5, 3-round review 2026-05-31.
+**Root cause resolved:** v93-v94 §8.1 implicitly treated "Level 0 null" = "all overlap-dependent deformations null" — category error vs the four-level hierarchy defined in §3.2.
+
+### 18.1 -- The Four-Level Deformation Hierarchy (§3.2)
+
+| Level | Class | Dependence | Geometric null? |
+|-------|-------|-----------|----------------|
+| 0 (overlap-only) | f(|⟨b|d⟩|²) only | Basis overlap scalar | **YES** — at θ=π/2 identically |
+| 1 (density-matrix) | f(ρ_F, |⟨b|d⟩|²) | Friend state purity | No |
+| 2 (multi-partite) | f(concurrence, |⟨b|d⟩|²) | Entanglement | No |
+| 3 (non-geometric) | timing, path, other | Non-geometric | No |
+
+K9_E as parametrized by Eq. (2-3) targets **Level 0 only**. Proposition 1 (equatorial cancellation theorem) applies to Level 0. Levels 1–3 are NOT constrained by the θ=π/2 fixed-point argument.
+
+### 18.2 -- Boundary Sentence Added (v95)
+
+**Text added to §8.1 after comparison table (v95, RCA 4.1/5):**
+
+> "A null result at Level 0 (β < β_min across the full θ-sweep) falsifies the overlap-only class but leaves Levels 1–3 unconstrained: density-matrix-dependent (ρ_F), multi-partite (concurrence), and non-geometric (timing, path) deformations are not bounded by Proposition 1 and each requires independent experimental designs."
+
+### 18.3 -- Implication for K9_E Classification
+
+| Outcome | K9_E Interpretation |
+|---------|-------------------|
+| δ⟨AB⟩ ≠ 0 at θ=31°, ≥5σ | K9_E (Level 0) supported at tested β |
+| δ⟨AB⟩ ~ 0 (full θ-sweep) | K9_E Level 0 **falsified** at tested β; Levels 1–3 open |
+| δ⟨AB⟩ ~ 0 (single θ=31°) | Inconclusive: β below sensitivity OR K9_E absent |
+
+A null result from this experiment (K9-S12, θ=31°) constrains the specific parametrization Eq.(2-3) but does NOT generically falsify "outcome-dependent quantum registration" at all levels.
+
+### 18.4 -- Scope Precision for Future Revision
+
+When revising paper_002 or designing follow-up experiments, keep in mind:
+- **Proposition 1** = Level 0 geometric theorem (tight scope)
+- **K9_E** = Level 0 parametrization (β, f_perp = |⟨b|d⟩|-based)
+- **K9-S12 protocol** = first experimental test of Level 0 at θ=31°
+- **θ-sweep** = necessary to fully constrain Level 0 (Section 11.1)
+- **Level 1-3 tests** = require different experimental designs (not this experiment)
 
 ---
 
@@ -687,4 +832,4 @@ All values from exact numerical density matrix computation (v12+).
 
 ---
 
-*SOT synthesized 2026-05-25, re-synced 2026-05-31 to manuscript v94. Sources: draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v94, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v94 + supplemental S1-S3. All numbers from exact numerical density matrix computation (v12+). Density matrix: SPDC noise model rho_mu = mu|Phi->⟨Phi-| + (1-mu)/2·(|HV>⟨HV|+|VH>⟨VH|). cos θ downgrade: all instances updated to "vanishes iff θ=π/2; non-zero otherwise; exact θ-dependence numerical". FOM table: per-θ-reoptimized values from manuscript v94 (theta window [20°,45°], not [20°,55°]).*
+*SOT synthesized 2026-05-25, re-synced 2026-05-31 to manuscript v95, updated 2026-06-02 (RCA K9_E Completeness 3-round 4.7/5 PASS). Sources: draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v95, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v95 + supplemental S1-S3 + phi_restricted_existence_v1_0.md (2026-06-01 I.2). All numbers from exact numerical density matrix computation (v12+). Density matrix: SPDC noise model ρ_μ = μ|Ψ⁻⟩⟨Ψ⁻| + (1−μ)/2·(|HV⟩⟨HV|+|VH⟩⟨VH|). cos θ: all instances "vanishes iff θ=π/2; non-zero otherwise; exact θ-dependence numerical; unrenormalized leading-order cos θ overestimates |δ| by ~5.5×" (v94). FOM window: [20°,45°] per-θ-reoptimized (v93). New sections 2026-06-02: §17 φ_R restricted existence (I.2, Class C THEOREM), §18 Falsification Hierarchy Level Boundary (v95 §8.1). Version lineage extended: v21→v95 in Section 14.2.*

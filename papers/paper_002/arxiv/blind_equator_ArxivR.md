@@ -456,7 +456,7 @@ timing and stability estimates are provided in Supplemental S2.
 
 ## Section 5 — Model-Independent QM Predictions
 
-All numerical values are computed from the density matrix ρ_μ = μ|Φ⁻⟩⟨Φ⁻| +
+All numerical values are computed from the density matrix ρ_μ = μ|Ψ⁻⟩⟨Ψ⁻| +
 (1−μ)/2 · (|HV⟩⟨HV| + |VH⟩⟨VH|) for the singlet state with visibility μ = 0.95.
 SPDC produces photon pairs only in the {|HV⟩, |VH⟩} subspace; the noise term
 is the maximally mixed state within that subspace, not the full I/4.

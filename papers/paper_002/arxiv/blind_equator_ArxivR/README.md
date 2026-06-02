@@ -11,7 +11,7 @@
 ### Main Paper
 | File | Description |
 |------|-------------|
-| `main.tex` | LaTeX source (revtex4-2, v96) — 9 sections + 18 references |
+| `main.tex` | LaTeX source (revtex4-2, v97) — 9 sections + 18 references |
 | `main.bib` | BibTeX bibliography (18 entries) — alternative to inline thebibliography |
 | `main.pdf` | Compiled PDF — 9 pages (pre-verified compilation) |
 

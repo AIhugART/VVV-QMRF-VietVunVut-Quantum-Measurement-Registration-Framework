@@ -54,3 +54,4 @@ The following synchronization fixes were made to the satellite documents to alig
   - $\theta = 58^\circ$: FOM = 0.0 (Claimed = 0) — **MATCH**
   - $\theta = 90^\circ$: FOM = 0.0 (Claimed = 0) — **MATCH**
 - Verified that all same-basis QM correlations are preserved (e.g. $\langle A_1 B_1 \rangle = -1.0000$) using the correct SPDC noise model.
+- **[Correction v97, 2026-06-02]** The noise term was correctly fixed to the $\{|HV\rangle,|VH\rangle\}$ subspace at this stage, but the *signal* ket was inadvertently written as $|\Phi^-\rangle$ (a $\{|HH\rangle,|VV\rangle\}$ state). The correct signal state is the singlet $|\Psi^-\rangle = (|HV\rangle-|VH\rangle)/\sqrt{2}$, which lives in $\{|HV\rangle,|VH\rangle\}$ and is the only state consistent with $\langle A_1 B_1\rangle=-1.0000$, the $-\cos\theta$ mixed correlators, and their $\mu$-independence. Corrected $|\Phi^-\rangle\to|\Psi^-\rangle$ in manuscript v97 (RCA round 7, 3-round $\times$ 5-Why, 4.93/5).

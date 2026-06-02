@@ -1,14 +1,14 @@
 # Paper 002: Geometric Blindness in EWF Experiments
 
 **Title:** Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?
-**Status:** Submitted to arXiv (2026-05-27) | **Date:** 2026-05-27 | **Target:** arXiv quant-ph → Phys. Rev. A
+**Status:** Submitted to arXiv (2026-05-27) | **Date:** 2026-06-02 (v97) | **Target:** arXiv quant-ph → Phys. Rev. A
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `manuscript.md` | Draft v95 — Sections 1–9 + Abstract + 18 refs (~7,500 words); §8.1 Falsification Hierarchy boundary added (2026-05-31) |
-| `CHANGELOG.md` | Full version history v12→v94 with RCA traceability |
+| `manuscript.md` | Draft v97 — Sections 1–9 + Abstract + 18 refs (~7,500 words); §5 density-matrix signal ket corrected |Φ⁻⟩→|Ψ⁻⟩ (singlet, 2026-06-02) |
+| `CHANGELOG.md` | Full version history v12→v97 with RCA traceability |
 | `paper_plan_v2.0_RCA_update.md` | RCA satellite synchronization plan |
 | `QC_checklist.md` | 15/15 PASS |
 
@@ -47,4 +47,4 @@
 
 ## Evolution
 
-v1→v4→v8→v10→v11→v12 (Eq.(12) bug fixed, exact numerics)→v21→v25→v88→v92→v93→**v94** (cos θ downgrade, θ = 31° near-optimal)
+v1→v4→v8→v10→v11→v12 (Eq.(12) bug fixed, exact numerics)→v21→v25→v88→v92→v93→v94 (cos θ downgrade, θ = 31° near-optimal)→v95 (§8.1 falsification-hierarchy boundary)→v96 (5 cross-section consistency fixes)→**v97** (§5 density-matrix ket |Φ⁻⟩→|Ψ⁻⟩, singlet)
