@@ -3,7 +3,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 # K9_E Source of Truth — Single-Waveplate Test of Outcome-Dependent Quantum Registration in Extended Wigner's Friend Scenarios
 
 **SOT type:** INTERNAL — K9_E Completeness Reference
-**Date synthesized:** 2026-05-25 (re-synced 2026-05-31 to manuscript v95; updated 2026-06-02: RCA K9_E Completeness 3-round 4.7/5 PASS — added φ_R restricted existence I.2 + §8.1 Falsification Hierarchy + version lineage v21→v95)
+**Date synthesized:** 2026-05-25 (re-synced 2026-05-31 to manuscript v95; updated 2026-06-02: RCA K9_E Completeness 3-round 4.7/5 PASS — added φ_R restricted existence I.2 + §8.1 Falsification Hierarchy + version lineage v21→v95; v98 sync 2026-06-02: §4.5 BSM overlap → conditional probability P(d|b)=1/2 [C2], §7.1 σ(Gen LF 1)=0.0103 is exact not √20/√N≈0.0148 [S1], §16 FOM window [20°,55°]→[20°,45°] [S2])
 **Sources:** draft_v1.md (v4, K9-S12 proposal) + manuscript.md (v95, academic paper) + v12 Eq.(12) fix + CHANGELOG v12-v95 + supplemental S1-S3 + phi_restricted_existence_v1_0.md (2026-06-01, I.2 Class C THEOREM)
 **Relationship to manuscript v95:** This SOT contains full K9_E context, VVV-QMRF language, and technical detail removed from the public-facing manuscript. Manuscript v95 is the academically-defended subset for Phys. Rev. A submission.
 **Version lineage:** v4 (K9-S12 proposal) -> v12 (Eq.12 corrected, watershed) -> v21 (academic polish) -> v94 (RCA round 4: cos θ downgrade, per-θ FOM re-optimization, SPDC density matrix) -> v95 (§8.1 Falsification Hierarchy boundary, 3-round RCA 4.1/5). This SOT synthesizes the best from all versions, prioritizing K9_E completeness.
@@ -222,7 +222,7 @@ At theta = pi/2, |<b|d>|^2 = 1/2 for all b,d pairs. Any function g(|<b|d>|^2) th
 
 **Bong et al. (2020):** All Superobserver settings (2 and 3) are equatorial (theta = pi/2). QWP removed explicitly for these settings. f_perp outcome-independent for every measurement combination -> K9_E = 0.
 
-**Proietti et al. (2019):** Bell-state measurement projects onto |Phi+>, |Phi->, |Psi+>, |Psi->. For any Friend outcome, |<psi_BSM|d>|^2 = 1/2 -> equivalent to equatorial configuration -> K9_E = 0.
+**Proietti et al. (2019):** Bell-state measurement projects onto |Phi+>, |Phi->, |Psi+>, |Psi->. Conditioned on any Bell outcome b, the Friend's recorded outcome d is equally likely to be H or V: P(d|b) = 1/2. (Because b is a two-photon Bell state and d a single-photon record, the meaningful object is this conditional probability, not a single-photon overlap |<b|d>|^2; the 1/2 plays the same role as the equatorial overlap |<b|d>|^2 = 1/2.) -> equivalent to equatorial configuration -> K9_E = 0.
 
 **Conclusion: K9_E has NEVER been experimentally tested.** The question remains entirely open.
 
@@ -379,9 +379,11 @@ sigma(<A_x B_y>) = sqrt[(1 - <A_x B_y>^2) / N]
 For Gen LF 1 (11 terms, coefficients up to +/-2):
 
 ```
-sigma^2(Gen LF 1) = sum_i c_i^2 sigma_i^2
-sigma(Gen LF 1) = sqrt(20) / sqrt(N) ~ 0.0103 at N = 91,000
+sigma^2(Gen LF 1) = sum_i c_i^2 sigma_i^2 = sum_i c_i^2 (1 - <v_i>^2)/N
+sigma(Gen LF 1) ~ 0.0103 at N = 91,000   (exact term-by-term propagation)
 ```
+
+Note: 0.0103 is the EXACT term-by-term value (the mixed correlators sit near -0.86 .. -1, so 1 - <v_i>^2 is small). The loose upper bound sqrt(20)/sqrt(N) ~ 0.0148 assumes all eleven correlators near zero and therefore overestimates sigma; it is NOT the value 0.0103. (Main text carries this distinction explicitly.)
 
 ### 7.2 -- Sample Size
 
@@ -514,7 +516,7 @@ The experiment is interpretation-neutral by design. Standard QM predicts the sam
 
 ### 11.1 -- theta-Sweep (Highest Priority)
 
-The most immediate follow-up is a systematic scan of the polar angle from theta = 15 deg to theta = 75 deg in steps of ~10 deg. This would directly map the theta-dependence predicted by Eq. (4) — delta vanishes iff theta = pi/2 and is generically non-zero otherwise (exact functional form determined numerically; the unrenormalized leading-order structure goes as cos theta but overestimates |delta| by ~5.5x due to renormalization). A null result across all theta would exclude the class Eq. (2-3) down to the sensitivity floor of the apparatus (beta ~ 0.02 at N = 200,000).
+The most immediate follow-up is a systematic scan of the polar angle over the pre-registered angle set {20, 31, 35, 45, 58, 90} deg (90 deg = equatorial control; per K9S12_PreRegistration_Protocol.md). This would directly map the theta-dependence predicted by Eq. (4) — delta vanishes iff theta = pi/2 and is generically non-zero otherwise (exact functional form determined numerically; the unrenormalized leading-order structure goes as cos theta but overestimates |delta| by ~5.5x due to renormalization). A null result across all theta would exclude the class Eq. (2-3) down to the sensitivity floor of the apparatus (beta ~ 0.02 at N = 200,000).
 
 ### 11.2 -- Multi-Observer Extension
 
@@ -666,7 +668,7 @@ Both predict suppression ratio ~2 for 2BSM/1BSM. See `T1B_model_comparison_RCA.m
 | mu threshold (5sigma) | 0.92 | **v21 (corrected)** |
 | eta threshold (5sigma, at mu = 0.95) | 0.91 | v12 |
 | Delta_theta tolerance (5sigma) | <= +/-5 deg | v12 |
-| FOM > 5sigma window (theta range) | [20 deg, 55 deg] | v16 |
+| FOM > 5sigma window (theta range) | [20 deg, 45 deg] | v93 (per-theta re-opt; [20,55] was pre-opt error) |
 | N_min (5sigma LF) | 30,800 | v12 |
 | MC: Gen LF 1 >= 5sigma | 99.97% | v12 |
 | P10-NOISE threshold | 0.10 sigma RMS | v30 |

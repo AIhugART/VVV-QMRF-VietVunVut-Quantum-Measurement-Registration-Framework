@@ -2,7 +2,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # Have Optical Wigner's Friend Experiments Been Blind to a Geometric Degree of Freedom?
 
-**Status:** Draft v97 — RCA round 7 (2026-06-02): internal-logic RCA (3-round × 5-Why, threshold 4/5) corrected a Bell-state mislabel in the §5 density matrix — the signal/source ket was written |Φ⁻⟩ (a {|HH⟩,|VV⟩} state) while every dependent quantity is the singlet |Ψ⁻⟩: ⟨A₁B₁⟩ = −1.0000 (z-basis anti-correlation), the {|HV⟩,|VH⟩} SPDC subspace, and the −cosθ mixed correlators (and their μ-independence) all hold only for |Ψ⁻⟩. Fixed |Φ⁻⟩ → |Ψ⁻⟩ in ρ_μ across manuscript §5 + arXiv main.tex/supplemental.tex + SOT; BSM four-Bell-state enumerations [a] left intact; no numerical value changed (avg 4.93/5). v96 — RCA round 6 (2026-06-02): internal-logic RCA (3-round × 5-Why, threshold 4/5) fixed 4 cross-section inconsistencies — (1) β headline 0.07-at-5σ vs Lemma 4.7σ → single-setting 5σ threshold corrected to β ≈ 0.075 (abstract/§1/§9); (2) θ = 31° reconciled with the β = 0.07 [35°,46°] window (added 4.7σ-single / 9.4σ-combined / β=0.30-plateau clarification in §4.1); (3) corrected the false "LF strongest at θ→90°" trade-off claim — grid search (Supplemental S2) shows Gen LF 1 peaks at θ ≈ 31°–35° and turns negative by θ ≈ 58° (§4.1); (4) restored dropped μ-threshold qualifiers in the arXiv main.tex (onset 0.86 vs loophole-closed 0.92 — source manuscript was already correct). v95 — RCA round 5 (2026-05-31): §8.1 added Level 0 null ≠ Levels 1–3 boundary sentence (3-round RCA 4.1/5 approved; Falsification_Hierarchy.md integration). v94 — RCA round 4 (2026-05-27): (1) Downgraded 'δ ∝ cos θ' to accurate 'δ vanishes iff θ = π/2; non-zero otherwise (exact θ-dependence numerical)' in §1, §3.1, §3.2 table, §5.3, §8.1–8.2, Discussion Table — cos θ is the unrenormalized leading-order structure but overestimates |δ| by ~5.5×; all manuscript values use exact numerical computation. (2) Softened θ = 31° from 'optimal' to 'near-optimal' (grid search shows θ = 35° yields FOM = 8.8 vs 8.6; broad plateau makes exact optimum non-critical). (3) S2_derivation.md: added quantitative 5.5× overestimate warning. (4) Updated stale RCA scripts. §2.3 FROZEN. §3.5 FROZEN.
+**Status:** Draft v99 — RCA round 9 (2026-06-02): cross-document RCA vs the K9-S12 Pre-Registration Protocol (3-round × 5-Why, threshold 4/5). Manuscript-facing fix (P3): the §8.1/§8.2 θ-sweep was described as "15°–75° in ~10° steps", inconsistent with the pre-registered angle grid {20°,31°,35°,45°,58°,90°} (which includes the 90° equatorial control and the 58° LF-null per v96); reconciled the manuscript to cite the pre-registered set. Companion protocol fixes (logged in CHANGELOG v99, not manuscript): P1 protocol's "β=0.07 at 5σ single" → 0.075 (matching the v96 manuscript correction); P2 protocol reference v94→v98; P4 protocol's "8σ at θ=π/2 standard Bong" clarified as the 8.6σ θ=31° modified-geometry prediction. No theorem or numerical table value changed (avg 4.35/5). v98 — RCA round 8 (2026-06-02): internal-logic RCA (3-round × 5-Why, threshold 4/5) fixed two cross-system rigor issues plus two stale SOT numbers. (C1) Lemma 1 "Non-Absorption" proof conflated the model−QM deviation δ⟨AB⟩ with a bare correlator value and mis-stated a σ_x label-swap as leaving "all correlators invariant" — a swap flips ⟨AB⟩→−⟨AB⟩ but acts identically on model and QM, so the *deviation* δ stays 0; rephrased to the precise gauge argument (conclusion: cosθ is physical, not gauge — unchanged). (C2) BSM footnote [a] wrote an ill-defined single-photon overlap |⟨b|d⟩|² between a two-photon Bell state b and a single-photon record d; replaced by the conditional probability P(d|b)=1/2, the physically meaningful object playing the equatorial role (four-Bell-state enumeration left intact). (S1) SOT §7.1: σ(Gen LF 1)=0.0103 is the exact term-by-term value, not √20/√N≈0.0148 (that is the loose all-correlators-near-zero upper bound). (S2) SOT §16 FOM window [20°,55°]→[20°,45°] per v93. No theorem, claim class, or numerical table value changed (avg 4.49/5). v97 — RCA round 7 (2026-06-02): internal-logic RCA (3-round × 5-Why, threshold 4/5) corrected a Bell-state mislabel in the §5 density matrix — the signal/source ket was written |Φ⁻⟩ (a {|HH⟩,|VV⟩} state) while every dependent quantity is the singlet |Ψ⁻⟩: ⟨A₁B₁⟩ = −1.0000 (z-basis anti-correlation), the {|HV⟩,|VH⟩} SPDC subspace, and the −cosθ mixed correlators (and their μ-independence) all hold only for |Ψ⁻⟩. Fixed |Φ⁻⟩ → |Ψ⁻⟩ in ρ_μ across manuscript §5 + arXiv main.tex/supplemental.tex + SOT; BSM four-Bell-state enumerations [a] left intact; no numerical value changed (avg 4.93/5). v96 — RCA round 6 (2026-06-02): internal-logic RCA (3-round × 5-Why, threshold 4/5) fixed 4 cross-section inconsistencies — (1) β headline 0.07-at-5σ vs Lemma 4.7σ → single-setting 5σ threshold corrected to β ≈ 0.075 (abstract/§1/§9); (2) θ = 31° reconciled with the β = 0.07 [35°,46°] window (added 4.7σ-single / 9.4σ-combined / β=0.30-plateau clarification in §4.1); (3) corrected the false "LF strongest at θ→90°" trade-off claim — grid search (Supplemental S2) shows Gen LF 1 peaks at θ ≈ 31°–35° and turns negative by θ ≈ 58° (§4.1); (4) restored dropped μ-threshold qualifiers in the arXiv main.tex (onset 0.86 vs loophole-closed 0.92 — source manuscript was already correct). v95 — RCA round 5 (2026-05-31): §8.1 added Level 0 null ≠ Levels 1–3 boundary sentence (3-round RCA 4.1/5 approved; Falsification_Hierarchy.md integration). v94 — RCA round 4 (2026-05-27): (1) Downgraded 'δ ∝ cos θ' to accurate 'δ vanishes iff θ = π/2; non-zero otherwise (exact θ-dependence numerical)' in §1, §3.1, §3.2 table, §5.3, §8.1–8.2, Discussion Table — cos θ is the unrenormalized leading-order structure but overestimates |δ| by ~5.5×; all manuscript values use exact numerical computation. (2) Softened θ = 31° from 'optimal' to 'near-optimal' (grid search shows θ = 35° yields FOM = 8.8 vs 8.6; broad plateau makes exact optimum non-critical). (3) S2_derivation.md: added quantitative 5.5× overestimate warning. (4) Updated stale RCA scripts. §2.3 FROZEN. §3.5 FROZEN.
 **Date:** 2026-06-02 | **Target:** arXiv quant-ph, then Phys. Rev. A
 
 ---
@@ -194,11 +194,14 @@ only on |⟨b|d⟩|². ∎
 **Lemma 1 (Non-Absorption).** The cos θ term in Eq. (4) cannot be absorbed
 by unitary redefinition of the Superobserver's measurement basis.
 
-*Proof.* Two distinct operations must be distinguished. (i) *Passive
-relabeling*: redefining outcome labels via |b'⟩ = U|b⟩ leaves all
-physical probabilities invariant — it is a change of description, not a
-change of the measurement. Consequently δ⟨AB⟩ = 0 identically for any
-U and any θ. (ii) *Active physical rotation*: changing the measurement
+*Proof.* Throughout, δ⟨AB⟩ ≡ ⟨AB⟩_model − ⟨AB⟩_QM denotes the
+deviation of the deformed model from standard QM (the same quantity
+tabulated in §5.3), not a bare correlator value. Two distinct operations
+must be distinguished. (i) *Passive relabeling*: redefining outcome
+labels via |b'⟩ = U|b⟩ is a change of description, not a change of the
+measurement — it acts identically on the deformed model and on standard
+QM. It therefore cannot generate any model–QM deviation: δ⟨AB⟩ = 0
+identically for any U and any θ. (ii) *Active physical rotation*: changing the measurement
 axis (θ, φ) → (θ', φ') physically reorients the apparatus, altering the
 overlap |⟨b|d⟩|². Eq. (2) couples to this physical overlap, which
 depends on the Friend outcome d — a degree of freedom external to the
@@ -211,9 +214,11 @@ relabeling predicts δ⟨AB⟩ = 0 for all θ and U; Eq. (2) predicts
 *Numerical illustration.* At θ = 31° with β = 0.07, the overlap-only
 model predicts δ⟨AB⟩ ≈ 0.008 (4.7σ at N = 91,000). Any unitary
 relabeling of the Superobserver basis — e.g., swapping |+1⟩ ↔ |−1⟩
-via U = σ_x — leaves all correlators identically invariant
-(δ⟨AB⟩ = 0), while Eq. (2) still predicts δ⟨AB⟩ ≈ 0.008. The two
-predictions are numerically and operationally distinct.
+via U = σ_x — flips the sign of each individual correlator
+(⟨AB⟩ → −⟨AB⟩) but acts identically on the model and on QM, leaving
+their difference at zero (δ⟨AB⟩ = 0); Eq. (2), by contrast, still
+predicts a nonzero deviation δ⟨AB⟩ ≈ 0.008. The two predictions are
+numerically and operationally distinct.
 
 *Operational invariant.* δ⟨AB⟩_θ = ⟨AB⟩_θ − ⟨AB⟩_π/2 is invariant
 under any unitary transformation on the Superobserver's Hilbert space
@@ -316,9 +321,12 @@ BSM structure (see footnote [a]).
 
 [a] BSM projects onto the four Bell states {|Φ⁺⟩, |Φ⁻⟩, |Ψ⁺⟩, |Ψ⁻⟩}. For the
 singlet-state source used in Proietti et al., each Bell outcome occurs with
-equal probability and leaves the Friend's recorded outcome equally likely to
-be H or V — the effective overlap |⟨b|d⟩|² = 1/2 for all (b,d) pairs,
-identical to the equatorial condition θ = π/2 derived in §3.3. Full
+equal probability and, conditioned on any Bell outcome b, leaves the Friend's
+recorded outcome equally likely to be H or V: P(d|b) = 1/2 for all (b,d) pairs.
+Because b is a two-photon Bell state and d a single-photon record, the relevant
+object is this conditional probability, not a single-photon overlap |⟨b|d⟩|²;
+the value 1/2 plays the same role here as the equatorial overlap |⟨b|d⟩|² = 1/2
+derived in §3.3, so the BSM configuration is effectively equatorial. Full
 derivation in Supplemental S1.
 
 *Search audit:* 4 databases (Google Scholar, arXiv, Web of Science, InspireHEP),
@@ -620,9 +628,10 @@ Full robustness analysis in Supplemental S2.
 
 A non-zero δ⟨AB⟩ at θ = 31° would demonstrate Superobserver-Friend
 correlations departing from standard QM at a previously untested geometry.
-The overlap-only class is definitively falsified if: (i) a θ-sweep
-(15°–75°) shows δ⟨AB⟩ = 0 at all non-equatorial angles to within ±0.003
-(statistical floor at N = 200,000 per setting); or (ii) δ⟨AB⟩(θ) is
+The overlap-only class is definitively falsified if: (i) a θ-sweep over
+the pre-registered angle set {20°, 31°, 35°, 45°, 58°} shows δ⟨AB⟩ = 0 at
+all these non-equatorial angles to within ±0.003 (90° serves as the
+equatorial control; statistical floor at N = 200,000 per setting); or (ii) δ⟨AB⟩(θ) is
 non-zero at θ = π/2 (violating the equatorial cancellation theorem) after
 accounting for systematics. Either outcome is informative: falsification
 closes the overlap-only window; a θ-dependent signal opens it.
@@ -638,7 +647,8 @@ A null result at Level 0 (β < β_min across the full θ-sweep) falsifies the ov
 
 ### 8.2 — Future Directions
 
-**θ-sweep.** A systematic scan from θ = 15° to 75° in ~10° steps would
+**θ-sweep.** A systematic scan over the pre-registered angle set
+{20°, 31°, 35°, 45°, 58°, 90°} (90° = equatorial control) would
 directly map the θ-dependence of δ⟨AB⟩ predicted by Eq. (2-3), testing
 for the equatorial zero (δ = 0 at θ = 90°) and non-zero signal at
 θ ≠ 90°. To prevent analysis bias, the sweep should be performed blind

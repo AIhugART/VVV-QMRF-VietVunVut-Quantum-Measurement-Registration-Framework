@@ -2,10 +2,10 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 
 # K9-S12 Phase 1 Pre-Registration Protocol
 
-**Date:** 2026-05-29
-**Status:** PRE-REGISTERED -- 3-round RCA 4.5/5
+**Date:** 2026-05-29 (revised 2026-06-02: synced to manuscript v98 — 3-round RCA cross-check vs paper_002, 4 findings ≥4/5)
+**Status:** DRAFT PRE-REGISTERED (not yet frozen — commit hash / Zenodo DOI still TO BE FILLED) -- 3-round RCA 4.5/5; v98-sync revision 4.35/5
 **Scope:** VVV-QMRF Class C -- K9-S12 Modified Bong Protocol (paper_002)
-**References:** C-FALSI v1.0, Falsification Hierarchy v1.0, manuscript paper_002 v94
+**References:** C-FALSI v1.0, Falsification Hierarchy v1.0, manuscript paper_002 v98 (originally drafted against v94; sensitivity numbers re-synced to the v96-corrected single-setting threshold)
 **VVV-QMRF-EX:** Compass only -- operational protocol, not structural import
 
 ---
@@ -43,7 +43,9 @@ Modification:   One QWP inserted before Superobserver measurement
                 (theta ~ 31 deg, single waveplate, no new optical elements beyond QWP)
 Observable:     delta_AB(theta) = AB_measured(theta) - AB_QM(theta)
 Prediction:     delta_AB(theta) = 0 iff theta = pi/2; non-zero otherwise (when beta > 0)
-Target:         beta_min ~ 0.07 at 5sigma (single setting), beta_min ~ 0.038 (combined)
+Target:         beta_min ~ 0.075 at 5sigma (single setting), beta_min ~ 0.038 (combined)
+                (beta = 0.07 gives 4.7sigma single / 9.4sigma combined; the single-setting
+                 5sigma threshold is beta ~ 0.075 per manuscript v96 correction)
 Null hypothesis: beta = 0 (Standard QM Born rule)
 Status:         Loophole-open screening test (eta ~ 0.87, fair-sampling assumed)
 ```
@@ -52,8 +54,12 @@ Status:         Loophole-open screening test (eta ~ 0.87, fair-sampling assumed)
 
 ```
 Phase 1A -- SETUP & CALIBRATION
-  - Verify LF violation >= 8sigma at theta = pi/2 (standard Bong configuration)
+  - Verify LF violation in standard Bong configuration (theta = pi/2; reproduce Bong et al. 2020)
+    [NOTE: the 8.6sigma headline is the MODIFIED-geometry prediction at theta = 31 deg, mu = 0.95,
+     NOT the standard theta = pi/2 value; in this experiment's tilted parametrization Gen LF 1
+     peaks at theta ~ 31-35 deg and is negative by theta ~ 58 deg (manuscript v96)]
   - QWP insertion + theta calibration (S4.4 of manuscript)
+  - After insertion, verify predicted Gen LF 1 = 8.6sigma at theta = 31 deg (modified geometry)
   - phi-scramble control verification
   - Monte Carlo verification of frozen analysis pipeline
   - Generate randomized theta sequence + commit hash
@@ -632,7 +638,8 @@ providing an immutable timestamp that proves pre-registration.
   [ ] Label->angle mapping delivered to Independent Unblinder (Person D)
   [ ] Zenodo DOI pre-assigned (S9.2)
   [ ] Error budget verification: all 6 sources PASS (S7.1)
-  [ ] LF violation confirmed at >= 8sigma in standard Bong configuration
+  [ ] LF violation confirmed in standard Bong configuration (theta = pi/2; reproduce Bong 2020)
+  [ ] Modified-geometry Gen LF 1 = 8.6sigma verified at theta = 31 deg, mu = 0.95 (post-QWP)
   [ ] theta calibration verified (all 6 angles, accuracy < 0.5deg)
   [ ] phi-scramble control: B ~ 0, C ~ 0 verified
   [ ] All hardware monitors calibrated and logging
@@ -733,7 +740,7 @@ BEFORE any K9-S12 experimental data exists.
 It was derived via 3-round RCA (4.5/5) referencing:
   -- C-FALSI v1.0 (K9 Analysis Plan)
   -- Falsification Hierarchy v1.0 (04_governance/)
-  -- manuscript paper_002 v94 (S4-8)
+  -- manuscript paper_002 v98 (S4-8) [drafted vs v94; sensitivity re-synced to v96-corrected threshold]
   -- K1-K8 axiomatization (K5 bot_K structural constraint)
   -- VVV-QMRF-EX compass (operational gaps identified, no EX import)
 
@@ -762,7 +769,7 @@ test, with all researcher degrees of freedom eliminated in advance.
 | Stopping:         Fixed-N, NO early stop                    |
 | Primary test:     C-FALSI v1.0 Conditions A + B             |
 | Threshold:        3sigma (Cond A), chi^2(5, 0.05) (Cond B) |
-| Sensitivity:      beta_min ~ 0.07 (single), ~ 0.038 (comb) |
+| Sensitivity:      beta_min ~ 0.075 (single), ~ 0.038 (comb)|
 | Exclusion:        Automated, blind, <= 10% total            |
 | Publication:      <= 6 months, any outcome                  |
 | Pre-reg:          Git hash + Zenodo DOI                     |

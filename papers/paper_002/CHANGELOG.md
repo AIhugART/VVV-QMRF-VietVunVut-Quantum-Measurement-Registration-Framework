@@ -5,6 +5,126 @@
 
 ---
 
+## v100 (2026-06-03) — Session RCA: cross-doc logic audit (F-01–F-07) + figure drift fix + build pipeline
+
+**Trigger:** User-requested full RCA session: (1) cross-document internal-logic audit of `project_vvv_qmrf_class_c` (3-round × 5-Why ≥4/5) — 7 findings resolved; (2) RCA paper_002 vs core fixes — no scientific change needed; (3) RCA `main.pdf` vs `main.tex` — PDF + figures stale; (4) figure regeneration + anti-drift build pipeline.
+
+No scientific claim, theorem, correlator value, β/σ/FOM headline, or pre-registered value changed.
+
+**Scope:** VVV-QMRF core + paper_002. VVV-QMRF-EX as compass only.
+
+### Part 1 — Cross-document RCA `project_vvv_qmrf_class_c` (commit ad4e487)
+
+| ID | Finding | Score | Resolution |
+|----|---------|-------|------------|
+| F-01 | Version desync: index header v44 / footer v41 / CHANGELOG v51 | 4.8 | Footer → v44; counter-note added |
+| F-02 | `T#` collision: bridge theorems T1–T9 vs K9_E formula terms T1–T8 | 4.6 | Disambiguation notes (index, Phase8) + registry in Definitions §5 |
+| F-03 | Stale "T1–T8 bridge theorems" — T9 exists since 2026-05-24 | 4.5 | `T1-T8` → `T1-T9` |
+| F-04 | `VVV_QMRF_Definitions.md` v1.1 missing K10_R + D_obs; stale T count | 4.5 | → v1.2: K10_R §3.5, D_obs §3.6, binding update rule §6 |
+| F-05 | K9_E well-definedness overclaim: "β=1 EXCLUDED" vs proof `Z_E>0 ∀β` | 4.6 | Overclaims removed; β∈[0,1) kept as convention; β=1 also well-defined |
+| F-06 | Superseded verdict lacks SUPERSEDED banner at top | 4.2 | Banner + author metadata + version-agnostic link |
+| F-07 | `sync_check_k_space.sh` prints WARNING+PASS simultaneously | 4.1 | Line-delta → advisory INFO; contract clarified |
+| F-08 | EX-compass discipline | — | PASS — no action |
+
+### Part 2 — RCA paper_002 vs core
+
+- β∈[0,1] in paper: compatible with F-05 (both intervals documented-equivalent). No change.
+- Bell `|Ψ⁻⟩`, θ-grid `{20,31,35,45,58,90}`, headline numbers: all consistent. QC 15/15 PASS.
+- P5/P6/P7 deferred items remain open for pipeline freeze.
+
+### Part 3 — Figure drift fix + build pipeline (commit 8d85bf4)
+
+**Root cause:** no figure-generation script existed; PNG/PDF drifted when main.tex was edited (v97 Bell-fix, v99 θ-grid). PDF was stale (mtime 21:02, pre-v97 commit 21:07).
+
+| Fig | Defect | Fix |
+|-----|--------|-----|
+| fig1 | Stale "[20°,55°]" box | Removed |
+| fig2 | Pre-reopt FOM data; window "[20,55]" vs text "[20,45]" | Correct data: 5.8/8.6/8.8/6.0/0/0; window [20,45] |
+| fig3/4/5 | Baked-in "Figure 2/3/4" titles (off-by-one) | Titles removed |
+
+New build pipeline: `supplemental/regenerate_figures.py` (single source) + `arxiv/.../build.sh` (atomic: regen + `latexmk -g`) + README "Build Procedure (MANDATORY)" + QC_checklist Gate 16.
+
+---
+
+## v99 (2026-06-02) — Cross-document RCA vs K9-S12 Pre-Registration Protocol (3-round RCA × 5-Why, threshold 4/5; PASS)
+
+**Trigger:** User-requested RCA comparison of paper_002 (manuscript v98) against the *original* reference `documents/research_documents/project_vvv_qmrf_class_c/04_governance/K9S12_PreRegistration_Protocol.md` (drafted 2026-05-29 against manuscript **v94**, before the v95–v98 RCA rounds). Seven candidate discrepancies; four passed the 4.0/5 threshold over 3 rounds and were implemented, three deferred. Direction decisions (user-confirmed): P1/P2/P4 → fix the protocol toward the corrected paper; P3 → reconcile the manuscript toward the pre-registered angle grid. The protocol is a **draft** pre-registration (all commit hashes / Zenodo DOI still `[TO BE FILLED]`, no authors), so it can be revised before freeze. Scope: VVV-QMRF (paper_002 K9-S12 test); VVV-QMRF-EX compass only. Frozen §2.3/§3.5 and title untouched. No theorem, claim class, β/σ/FOM, or correlator value changed.
+
+**Scoring summary (7 findings):** 4 implemented (avg 4.35/5 ≥ 4.0), 3 deferred (< 4.0).
+
+| # | Finding (symptom) | 5-Why root cause | R1 | R2 | R3 | Avg | Action |
+|---|-------------------|------------------|----|----|----|-----|--------|
+| P1 | Protocol headline "β_min ~ 0.07 at 5σ (single setting)" (§1.1, Quick-Ref) — yet protocol §5.2 TEST CASE 2 itself states β=0.07 → 4.7σ (single). Self-contradictory and contradicts paper v98 ("β ~ 0.075 at 5σ single"). | The protocol was drafted against manuscript v94; manuscript v96 (finding #1) later corrected exactly this number (0.07 → 0.075, since β=0.07 → 4.69σ single, the 5σ single threshold is β≈0.0742). The protocol never received the v96 correction, so it carries the now-known-wrong headline. | 4.5 | 4.7 | 4.8 | **4.67** | **Implemented** — protocol §1.1 + Quick-Ref → β_min ~ 0.075 (single), 0.038 (combined) retained; added explicit "β=0.07 → 4.7σ single / 9.4σ combined" note. |
+| P2 | Protocol References + Pre-Registration Statement cite "manuscript paper_002 **v94**"; current is v98 (now v99). | Provenance staleness: 4 RCA rounds (v95–v98) post-date the 2026-05-29 draft; the protocol was never re-pointed. Draft not yet frozen (hashes TO BE FILLED), so update is admissible. | 4.3 | 4.4 | 4.5 | **4.40** | **Implemented** — ref → v98, with "(drafted vs v94; sensitivity re-synced to v96-corrected threshold)"; Date line annotated with the 2026-06-02 revision; Status marked DRAFT (not yet frozen). |
+| P3 | θ-sweep angle set mismatch: manuscript §8.1/§8.2 say "15°–75° in ~10° steps"; protocol pre-registers **{20°,31°,35°,45°,58°,90°}** (incl. 90° equatorial control + 58° LF-null per v96). | The manuscript "future directions" θ-grid was written as a generic range and never aligned to the binding pre-registered grid; the manuscript range also omits the 90° control (its own falsification test (ii) relies on θ=π/2) and the 58° angle where Gen LF 1 turns negative. | 4.2 | 4.3 | 4.4 | **4.30** | **Implemented** (manuscript → protocol, per user) — manuscript §8.1 falsification set → {20°,31°,35°,45°,58°} (90° = control); §8.2 scan → {20°,31°,35°,45°,58°,90°}; synced to main.tex (2 sites) + SOT §11.1. |
+| P4 | Protocol §1.2 + §10.1 require "LF violation ≥ 8σ at θ=π/2 (standard Bong configuration)" — but the 8.6σ figure is the MODIFIED-geometry prediction at θ=31°, μ=0.95; in this tilted parametrization Gen LF 1 peaks at θ≈31–35° and is *negative* by θ≈58° (so it is not 8σ at θ=π/2). | The 8.6σ headline (θ=31° modified) was mis-attached to the standard-config calibration gate. Phase 1A should (a) reproduce Bong's standard LF violation, then (b) after QWP insertion verify the 8.6σ θ=31° prediction — two distinct checks the protocol had merged. | 4.0 | 4.0 | 4.1 | **4.03** | **Implemented** — protocol §1.2 + §10.1 split into "reproduce Bong (θ=π/2)" + "verify 8.6σ at θ=31° post-QWP", with a note on the θ=31°-vs-π/2 attribution and the v96 LF-vs-θ shape. |
+| P5 | Protocol §5.2 TEST CASE 3: "β=0.30 → \|δ_AB(31°)\| ~ 0.034" vs paper 0.0355 (SOT §6.4). | Stale/rounded pre-v92 value (0.0355 rounds to 0.036, not 0.034). | 3.6 | — | — | **3.60** | **Deferred** (< 4.0) — within Monte-Carlo "~" tolerance; revisit at pipeline freeze. |
+| P6 | Protocol §8.1 publication policy: "EXCLUDING β ≥ **0.07**" vs manuscript "β ≥ **0.04** excludes…" (combined). | Single-vs-combined framing difference; both defensible, not a hard error. | 3.7 | — | — | **3.70** | **Deferred** (< 4.0). |
+| P7 | Protocol §5.2 TEST CASE 2: "n_σ ~ 4.7, Condition A likely FAIL (depends on realization)" — but Condition A is defined on δ_AB_*combined* (§6.1), where β=0.07 → 9.4σ at the 3σ threshold ⇒ robust reject, not "depends on realization". | Mixes single (4.7σ) vs combined (9.4σ) and the 3σ-Condition-A vs 5σ-detection frames. | 3.5 | — | — | **3.50** | **Deferred** (< 4.0) — clarify at pipeline freeze alongside Script 3. |
+
+### Numerical verification
+
+- **P1:** σ(⟨AB⟩) at −0.8572 = 0.00171; β=0.07 → δ=0.0080 → 4.69σ single / 9.37σ combined; single-setting 5σ threshold β=0.0742 ≈ 0.075. Confirms protocol's "0.07 at 5σ single" is wrong, paper's 0.075 is right. Combined 0.038 unchanged (correct in both).
+- **P4:** 8.6σ is Gen LF 1 = +0.0891 ± 0.0103 at θ=31°, μ=0.95 (manuscript Table, SOT §6.2). Per v96, Gen LF 1 turns negative by θ≈58° in this parametrization ⇒ it is not ≥8σ at θ=π/2.
+
+### Files changed
+
+| File | Edit |
+|------|------|
+| `…/04_governance/K9S12_PreRegistration_Protocol.md` | P1 §1.1 + Quick-Ref β_min 0.07→0.075; P2 References + §12 + Date/Status; P4 §1.2 + §10.1 LF-calibration split |
+| `manuscript.md` (source) | P3 §8.1 falsification angle set + §8.2 scan set; Status → v99 (round 9) |
+| `arxiv/blind_equator_ArxivR/main.tex` | P3 §Discussion θ-sweep (2 sites); header comment → v99 |
+| `arxiv/blind_equator_ArxivR/README.md` | main.tex version label → v99 |
+| `SOT/paper_002_SOT.md` | P3 §11.1 θ-sweep angle set; header sync note |
+
+### Notes / regression
+
+- **Not changed (intentional):** Proposition 1; Lemma 1; all β/σ/FOM/correlator tables; supplemental.tex / sot_export.tex (no θ-sweep angle set or protocol-only number present); deferred P5–P7. The protocol's Condition-A/B logic, blinding, and stopping rule were not altered.
+- **Pre-registration integrity:** the protocol remains a *draft* (commit hash / Zenodo DOI `[TO BE FILLED]`). These revisions are admissible pre-freeze; once frozen, no further edits are permitted and any change makes a result "exploratory" (per protocol §5.3 / §11.2).
+- PDFs not recompiled (no LaTeX toolchain invoked); all `.tex` edits compile-safe.
+
+---
+
+## v98 (2026-06-02) — Internal-logic RCA: Lemma 1 gauge-argument precision + BSM overlap category fix + 2 stale SOT numbers (3-round RCA × 5-Why, threshold 4/5; PASS)
+
+**Trigger:** User-requested internal-logic RCA of the arXiv package (`arxiv/blind_equator_ArxivR/`) + full source/SOT sync (`manuscript.md`, `SOT/`). Six candidate findings; four passed the 4.0/5 threshold over 3 rounds and were implemented, two deferred below threshold. No theorem, claim class, β/σ/FOM headline, or correlator-table value changed — all four fixes are notation/arithmetic-consistency corrections. Scope: VVV-QMRF (paper_002 K9-S12 test); VVV-QMRF-EX used only as compass (no EX import). Frozen sections §2.3, §3.5 and title (v77/v80 freeze) untouched. Proposition 1 (Equatorial Cancellation Theorem) untouched.
+
+**Scoring summary (6 findings):** 4 implemented (avg 4.49/5 ≥ 4.0), 2 deferred (< 4.0).
+
+| # | Finding (symptom) | 5-Why root cause | R1 | R2 | R3 | Avg | Action |
+|---|-------------------|------------------|----|----|----|-----|--------|
+| C1 | Lemma 1 (Non-Absorption) proof states a σ_x label-swap "leaves all correlators identically invariant (δ⟨AB⟩ = 0)" — but swapping \|+1⟩↔\|−1⟩ flips the sign of every correlator (⟨AB⟩→−⟨AB⟩); literally false as written. | δ⟨AB⟩ is overloaded: the paper's primary definition (§5.3) is the *model−QM deviation*, but the Lemma silently used it as a *bare correlator value* and then mis-applied "invariant" to a sign-flipping relabel. The intended (correct) claim is that a passive relabel acts identically on model and QM, so it cannot generate a deviation — the deviation, not the correlator, is what stays 0. The correct "Operational invariant" paragraph already sat 4 lines below, masking the looseness. Prior rounds audited numbers, not proof prose. | 4.0 | 4.2 | 4.4 | **4.20** | **Implemented** — δ⟨AB⟩ ≡ ⟨AB⟩_model − ⟨AB⟩_QM defined at proof head; passive-relabel sentence rephrased to the gauge argument; numerical illustration now states the σ_x swap flips ⟨AB⟩→−⟨AB⟩ but leaves the model−QM difference at 0. Conclusion (cosθ physical, not gauge) unchanged. |
+| C2 | Survey footnote [a] (Proietti BSM) writes "the effective overlap \|⟨b\|d⟩\|² = 1/2", where b is a two-photon Bell state (4-dim) and d a single-photon record (2-dim) — the inner product ⟨b\|d⟩ is between mismatched Hilbert spaces and is ill-defined. | The equatorial-equivalence argument borrowed the single-photon overlap symbol \|⟨b\|d⟩\|² from the projective (Bong) case and reused it for the BSM (Proietti) case, where the physically meaningful object is the conditional probability P(d\|b) that the Friend record is d given Bell outcome b. Both equal 1/2, so no number was wrong — only the symbol was category-mismatched. A PRA referee would flag it. | 4.4 | 4.5 | 4.6 | **4.50** | **Implemented** — footnote [a] (manuscript §3.6 + main.tex) + supplemental S1.2 + SOT §4.5 + SOT export: replaced \|⟨b\|d⟩\|² with P(d\|b)=1/2, with a one-clause note that b is two-photon / d single-photon; four-Bell-state enumeration left intact. |
+| S1 | SOT §7.1 (and SOT export) write "σ(Gen LF 1) = √20/√N ≈ 0.0103" — but √20/√91000 ≈ 0.0148, not 0.0103; the formula and the number are mutually inconsistent. | 0.0103 is the *exact* term-by-term value (Σ c_i²(1−⟨v_i⟩²)/N, with mixed correlators near −0.86…−1 so 1−⟨v_i⟩² is small); √20/√N is the *loose upper bound* (all correlators near zero). main.tex carries both correctly; the SOT condensation glued the loose-bound *formula* onto the exact-value *number*. | 4.5 | 4.5 | 4.6 | **4.53** | **Implemented** — SOT §7.1 + export: formula shown as exact Σ c_i²(1−⟨v_i⟩²)/N → 0.0103; explicit note that √20/√N≈0.0148 is the loose bound, not 0.0103. |
+| S2 | SOT §16 quick-reference: "FOM > 5σ window (θ range) = [20°, 55°] (v16)" — stale; v93 corrected the per-θ-re-optimized window to [20°, 45°] (SOT §6.5 already says [20°,45°]; export already [20°,45°]). | The §16 quick-ref table was not re-synced when §6.5 was corrected at v93; the pre-optimization [20°,55°] survived only in this one table. | 4.7 | 4.7 | 4.8 | **4.73** | **Implemented** — SOT §16: [20°,55°] → [20°,45°], provenance relabelled v16 → v93. |
+| S3 | Discussion Table: "δ⟨AB⟩ at θ=31° ≈ 0.115β (numerical)" presented as if exactly linear, though the ratio drifts 0.114 (β=0.07) → 0.118 (β=0.30). | Renormalization makes δ(β) only quasi-linear; "(numerical)" tag partially covers it and the drift is <4%. | 3.4 | — | — | **3.40** | **Deferred** (< 4.0) — "(numerical)" already signals non-exactness; revisit only if a referee asks. |
+| M1/M2 | Supplemental Step-5 Z=1−β·const note could be one line clearer; abstract "β~0.075 at 5σ" could append "(N=91,000)". | Minor clarity, no logical defect. | <4 | — | — | — | **Deferred** (< 4.0). |
+
+### Numerical verification
+
+- **C2:** Proietti singlet source → each of the four Bell outcomes equiprobable (1/4); conditioned on any Bell outcome the Friend marginal is maximally mixed ⇒ P(d|b)=1/2 for d∈{H,V}. Mirrors the equatorial overlap |⟨b|d⟩|²=1/2 (θ=π/2). Conclusion (K9_E=0 for Proietti) unchanged.
+- **S1:** √20/√91000 = 4.4721/301.66 = 0.01483 (the loose bound, main.tex rounds to 0.015); the exact term-by-term value with the actual correlators is 0.0103. Confirms 0.0103 ≠ √20/√N.
+- No β, σ, FOM, Gen LF 1, or correlator value recomputed or changed.
+
+### Files changed (source + derived + SOT kept in sync)
+
+| File | Edit |
+|------|------|
+| `manuscript.md` (source) | §3 Lemma 1 proof (C1, 2 sites); §3.6 footnote [a] (C2); Status → v98 (round 8) |
+| `arxiv/blind_equator_ArxivR/main.tex` | §3.3 Lemma 1 proof (C1, 2 sites); footnote a (C2); header comment → v98 |
+| `arxiv/blind_equator_ArxivR/supplemental.tex` | S1.2 BSM equivalence (C2) |
+| `arxiv/blind_equator_ArxivR/README.md` | main.tex version label → v98 |
+| `SOT/paper_002_SOT.md` | §4.5 BSM (C2); §7.1 σ formula (S1); §16 FOM window (S2); header sync note |
+| `SOT/export/sot_export.tex` | §4.5 BSM (C2); §7 σ formula (S1) [export FOM window already [20°,45°]] |
+
+### Notes / regression
+
+- **Not changed (intentional):** Proposition 1 / Equatorial Cancellation Theorem proof; all β/σ/FOM/correlator tables; BSM four-Bell-state lists `{|Φ⁺⟩,|Φ⁻⟩,|Ψ⁺⟩,|Ψ⁻⟩}`; frozen §2.3, §3.5; title. The "Operational invariant" paragraph in Lemma 1 was already correct and was left as the anchor for the C1 rephrase.
+- **Out of scope (flagged):** `paper_002/README.md` independently stale (v94/v95), not re-synced this round; `arxiv/blind_equator_ArxivR.md` stale v95 duplicate not touched.
+- PDFs not recompiled this session (no LaTeX toolchain invoked); all `.tex` edits are prose/math-mode and compile-safe (no new macros, no environment changes).
+
+---
+
 ## v97 (2026-06-02) — Internal-logic RCA: Bell-state mislabel in §5 density matrix (3-round RCA × 5-Why, threshold 4/5; PASS)
 
 **Trigger:** User-requested internal-logic RCA of the arXiv package + source sync (`manuscript.md`, `arxiv/blind_equator_ArxivR/`, `SOT/`). One root-cause inconsistency isolated, traced by 5-Why, scored over 3 rounds (threshold 4.0/5), implemented across source + derived + SOT. No numerical recomputation needed: the fix is a notation correction whose numbers were already those of the correct state. Scope: VVV-QMRF (paper_002 K9-S12 test); VVV-QMRF-EX used only as compass (no EX import). Frozen sections §2.3, §3.5 and title (v77/v80 freeze) untouched.
