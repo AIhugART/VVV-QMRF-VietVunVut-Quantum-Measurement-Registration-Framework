@@ -3,7 +3,7 @@
 % GitHub: https://github.com/AIhugART/ ; Facebook: https://www.facebook.com/xuanviet
 % Have Optical Wigner's Friend Experiments Been Blind to a Geometric
 % Degree of Freedom?
-% Draft v97 — 2026-06-02
+% Draft v99 — 2026-06-02
 % Target: arXiv quant-ph → Phys. Rev. A
 % ===================================================================
 
@@ -235,10 +235,14 @@ only on $|\langle b|d\rangle|^2$. $\square$
 \textbf{Lemma~1 (Non-Absorption).} The $\cos\theta$ term in Eq.~(\ref{eq:cancel}) cannot be absorbed
 by unitary redefinition of the Superobserver's measurement basis.
 
-\emph{Proof.} Two distinct operations must be distinguished. (i)~\emph{Passive
-relabeling}: redefining outcome labels via $|b'\rangle = U|b\rangle$ leaves all
-physical probabilities invariant --- it is a change of description, not a
-change of the measurement. Consequently $\delta\langle AB\rangle = 0$ identically for any
+\emph{Proof.} Throughout, $\delta\langle AB\rangle \equiv \langle AB\rangle_{\rm model} - \langle AB\rangle_{\rm QM}$
+denotes the deviation of the deformed model from standard QM (the same
+quantity tabulated in \S\ref{sec:sensitivity}), not a bare correlator value.
+Two distinct operations must be distinguished. (i)~\emph{Passive
+relabeling}: redefining outcome labels via $|b'\rangle = U|b\rangle$ is a change
+of description, not a change of the measurement --- it acts identically on the
+deformed model and on standard QM. It therefore cannot generate any
+model--QM deviation: $\delta\langle AB\rangle = 0$ identically for any
 $U$ and any $\theta$. (ii)~\emph{Active physical rotation}: changing the measurement
 axis $(\theta, \phi) \to (\theta', \phi')$ physically reorients the apparatus, altering the
 overlap $|\langle b|d\rangle|^2$. Eq.~(\ref{eq:model_class}) couples to this physical overlap, which
@@ -252,8 +256,10 @@ $\delta\langle AB\rangle \neq 0$ for $\theta \neq \pi/2$. The two are operationa
 \emph{Numerical illustration.} At $\theta = 31^\circ$ with $\beta = 0.07$, the overlap-only
 model predicts $\delta\langle AB\rangle \approx 0.008$ ($4.7\sigma$ at $N = 91{,}000$). Any unitary
 relabeling of the Superobserver basis --- e.g., swapping $|+1\rangle \leftrightarrow |-1\rangle$
-via $U = \sigma_x$ --- leaves all correlators identically invariant
-($\delta\langle AB\rangle = 0$), while Eq.~(\ref{eq:model_class}) still predicts $\delta\langle AB\rangle \approx 0.008$. The two
+via $U = \sigma_x$ --- flips the sign of each individual correlator
+($\langle AB\rangle \to -\langle AB\rangle$) but acts identically on the model and on QM, leaving
+their difference at zero ($\delta\langle AB\rangle = 0$); Eq.~(\ref{eq:model_class}), by contrast, still
+predicts a nonzero deviation $\delta\langle AB\rangle \approx 0.008$. The two
 predictions are numerically and operationally distinct.
 
 \emph{Operational invariant.} $\delta\langle AB\rangle_\theta = \langle AB\rangle_\theta - \langle AB\rangle_{\pi/2}$ is invariant
@@ -396,9 +402,12 @@ Bong et al.\ & 2020 & Projective (settings~2,3) & $\pi/2$ & Yes \\
 \vspace{-0.5em}
 {\footnotesize \textsuperscript{a}BSM projects onto the four Bell states $\{|\Phi^+\rangle, |\Phi^-\rangle, |\Psi^+\rangle, |\Psi^-\rangle\}$. For the
 singlet-state source used in Proietti et al., each Bell outcome occurs with
-equal probability and leaves the Friend's recorded outcome equally likely to
-be $H$ or $V$ --- the effective overlap $|\langle b|d\rangle|^2 = 1/2$ for all $(b,d)$ pairs,
-identical to the equatorial condition $\theta = \pi/2$ derived in \S\ref{sec:proof}. Full
+equal probability and, conditioned on any Bell outcome $b$, leaves the Friend's
+recorded outcome equally likely to be $H$ or $V$: $P(d|b) = 1/2$ for all $(b,d)$ pairs.
+Because $b$ is a two-photon Bell state and $d$ a single-photon record, the relevant
+object is this conditional probability, not a single-photon overlap $|\langle b|d\rangle|^2$;
+the value $1/2$ plays the same role here as the equatorial overlap $|\langle b|d\rangle|^2 = 1/2$
+derived in \S\ref{sec:proof}, so the BSM configuration is effectively equatorial. Full
 derivation in Supplemental~S1.\par}
 
 \emph{Search audit:} 4~databases (Google Scholar, arXiv, Web of Science, InspireHEP),
@@ -750,9 +759,10 @@ Full robustness analysis in Supplemental~S2.
 
 A non-zero $\delta\langle AB\rangle$ at $\theta = 31^\circ$ would demonstrate Superobserver-Friend
 correlations departing from standard QM at a previously untested geometry.
-The overlap-only class is definitively falsified if: (i)~a $\theta$-sweep
-($15^\circ$--$75^\circ$) shows $\delta\langle AB\rangle = 0$ at all non-equatorial angles to within $\pm 0.003$
-(statistical floor at $N = 200{,}000$ per setting); or
+The overlap-only class is definitively falsified if: (i)~a $\theta$-sweep over
+the pre-registered angle set $\{20^\circ, 31^\circ, 35^\circ, 45^\circ, 58^\circ\}$ shows $\delta\langle AB\rangle = 0$ at all
+these non-equatorial angles to within $\pm 0.003$ ($90^\circ$ serves as the equatorial control;
+statistical floor at $N = 200{,}000$ per setting); or
 (ii)~$\delta\langle AB\rangle(\theta)$ is non-zero at $\theta = \pi/2$ (violating the equatorial cancellation theorem) after
 accounting for systematics. Either outcome is informative: falsification closes the
 overlap-only window; a $\theta$-dependent signal opens it.
@@ -779,7 +789,8 @@ A null result at Level~0 ($\beta < \beta_{\rm min}$ across the full $\theta$-swe
 \subsection{Future Directions}
 \label{sec:future}
 
-\textbf{$\theta$-sweep.} A systematic scan from $\theta = 15^\circ$ to $75^\circ$ in $\sim\!10^\circ$ steps would
+\textbf{$\theta$-sweep.} A systematic scan over the pre-registered angle set
+$\{20^\circ, 31^\circ, 35^\circ, 45^\circ, 58^\circ, 90^\circ\}$ ($90^\circ$ = equatorial control) would
 directly map the $\theta$-dependence of $\delta\langle AB\rangle$ predicted by Eq.~(\ref{eq:model_class}), testing
 for the equatorial zero ($\delta = 0$ at $\theta = 90^\circ$) and non-zero signal at
 $\theta \neq 90^\circ$. To prevent

@@ -28,6 +28,14 @@
 | 14 | K9_E model clearly defined | PASS | Section 2.3: P9, f_perp, beta |
 | 15 | No overclaim about empirical status | PASS | "empirically UNCONFIRMED" |
 
+## Build / Anti-Drift Gate (added 2026-06-03)
+
+| # | Criterion | Status | Notes |
+|---|-----------|--------|-------|
+| 16 | **Artifacts rebuilt from source this revision** | **MANDATORY** | Before any (re)submit, run `bash arxiv/blind_equator_ArxivR/build.sh` (= `regenerate_figures.py` + `latexmk`). Verify `main.pdf` mtime is **newer** than `main.tex` and all `fig*.png`. Root cause of v97/v99 drift: PNG/PDF are derived artifacts that lagged `main.tex`. Never hand-edit a PNG or ship a stale PDF. |
+
+> **Rule:** `fig*.png`, `main.pdf`, `supplemental.pdf` are DERIVED. Any change to `main.tex` / `supplemental.tex` / figure data ⇒ re-run `build.sh` in the same session. See `arxiv/blind_equator_ArxivR/README.md` → "Build Procedure".
+
 ## Remaining
 
 | Item | Priority | Notes |
@@ -35,4 +43,4 @@
 | LaTeX conversion | COMPLETED | arXiv format |
 | arXiv submit | COMPLETED | Submitted 2026-05-27 |
 
-**Verdict: 15/15 PASS. Submitted to arXiv.**
+**Verdict: 15/15 PASS + Gate 16 (build-from-source) added. Re-run build.sh before next submit.**

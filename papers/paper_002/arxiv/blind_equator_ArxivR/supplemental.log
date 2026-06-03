@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.19)  2 JUN 2026 21:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.19)  3 JUN 2026 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,6 +461,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 216.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -485,11 +488,11 @@ Package rerunfilecheck Info: File `supplemental.out' has not changed.
 Here is how much of TeX's memory you used:
  10325 strings out of 467871
  157700 string characters out of 5419828
- 579209 words of memory out of 5000000
+ 581209 words of memory out of 5000000
  39026 multiletter control sequences out of 15000+600000
  639674 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,566b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,831b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\PC\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm120
 0.pk><C:/Users/PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx12.pfb><C:/Users/PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
@@ -507,7 +510,7 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users
 /PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:
 /Users/PC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb>
-Output written on supplemental.pdf (7 pages, 216004 bytes).
+Output written on supplemental.pdf (7 pages, 216142 bytes).
 PDF statistics:
  230 PDF objects out of 1000 (max. 8388607)
  63 named destinations out of 1000 (max. 500000)
