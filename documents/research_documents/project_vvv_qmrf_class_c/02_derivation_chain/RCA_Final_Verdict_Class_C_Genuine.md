@@ -1,3 +1,7 @@
+Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; Facebook: https://www.facebook.com/xuanviet
+
+> **⚠️ SUPERSEDED (v30, 2026-05-24) — HISTORICAL RECORD.** This document records the **v29 (2026-05-23)** upgrade decision to "Class C **(genuine)**" (aggregate 4.50/5). That verdict was **reversed** by the v30 noise-sensitivity analysis ([`04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md`](../04_governance/RCA_P10_NOISE_methodology_decision_2026_05_24.md)). **Current status: Class C (qualified)** — see [`index.md`](../index.md) (current version) for the authoritative status. Read the "genuine" conclusions below as the 2026-05-23 state, not the present one.
+
 # 3-Round RCA Final Verdict — Class C Upgrade Decision
 # VVV-QMRF scope, VVV-QMRF-EX as compass
 # 3-Round RCA x 5-Why x Scoring Threshold 4/5

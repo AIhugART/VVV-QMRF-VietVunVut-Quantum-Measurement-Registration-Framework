@@ -47,7 +47,7 @@ f_perp(o) = 1 → 1 − 1·1 = 0 → P(o) = 0
 BUT if f_perp(o) = 1 for ALL o → Z_E = 0 → DIVISION BY ZERO ⚠️
 ```
 
-**Fix:** β ∈ [0, 1) (open interval) prevents this. β = 1 is EXCLUDED by definition.
+**Convention:** the K9_E definition adopts `β ∈ [0, 1)` (open interval) — it guarantees `1 − β·f_perp > 0` directly. Note that `β = 1` is in fact also well-defined: the only failure mode (`f_perp(o) = 1` for ALL `o`) is structurally impossible (proven immediately below), so `Z_E > 0` even at `β = 1`. The open interval is therefore a convention choice (simplest non-divergence guarantee), not a necessity.
 
 **Can f_perp = 1 for all o simultaneously?**
 ```

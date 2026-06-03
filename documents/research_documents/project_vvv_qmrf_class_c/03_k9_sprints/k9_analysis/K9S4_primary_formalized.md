@@ -89,7 +89,7 @@ K9_E (Formalized):
   
   Z_E = Σ_o' Tr(E_o' ρ) · [1 − β · f_perp(o', k, K_ctx)]
   
-  β ∈ [0, 1): suppression strength (strict inequality for C-NONDIV)
+  β ∈ [0, 1): suppression strength (open interval by convention; C-NONDIV also holds at β=1 — Phase9 Test 1a)
   
   For V(k)=0 (Bhrānti): no P assignment (PP-1 v2 Case 2)
   For isNull (Anupalabdhi): no P assignment (PP-1 v2 Case 3)

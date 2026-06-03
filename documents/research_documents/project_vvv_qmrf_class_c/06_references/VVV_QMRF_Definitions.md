@@ -5,7 +5,7 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Role:** Scholarly reference for VVV-QMRF terminology and framework structure.
 Replaces CLAUDE.md as the external-facing source of truth.
 
-**Date:** 2026-05-27 | **Version:** v1.1 — K7_trace + D_enc canonical Layer 2 added (promotion 2026-05-27, RCA 4.77/5)
+**Date:** 2026-06-03 | **Version:** v1.2 — K10_R + D_obs added; T1-T9 count fixed; T# namespace note; Layer-3 update rule (2026-06-03). v1.1 (2026-05-27): K7_trace + D_enc canonical Layer 2 (RCA 4.77/5)
 
 ---
 
@@ -23,8 +23,8 @@ are registered, validated, and related across multiple observers.
 | Layer | Content | Status |
 |-------|---------|--------|
 | Layer 1 | K1-K8 Registration-logic axioms | Frozen — structural definitions |
-| Layer 2 | T1-T9 Bridge theorems + K7_trace + D_enc | Updatable — connections to physical contexts |
-| Layer 3 | K9_E Probability postulate (P9) | Testable hypothesis |
+| Layer 2 | T1-T9 Bridge theorems + K7_trace + D_enc + D_obs | Updatable — connections to physical contexts |
+| Layer 3 | K9_E (P9) + K10_R Registration Capacity postulates | Testable hypotheses |
 
 ---
 
@@ -113,7 +113,11 @@ affects outcome probabilities under cross-observer incompatibility:
   f_perp(o, K_ctx) = E[I(K5_prospective fires)]  [T8 — structural derivation]
                    = |{k_j in K_ctx : k_j bot_K and outcome-inconsistent with o}| / |K_ctx|
   K_ctx = contextual K-state set  [T9 — K1-K8 + T1]
-  beta in [0,1],  Born limit: beta=0 => standard QM exactly
+  beta in [0,1),  Born limit: beta=0 => standard QM exactly
+  (Convention: open interval — the simplest guarantee that 1-beta*f_perp > 0.
+   beta=1 is in fact also well-defined since f_perp(o)=1 for every o is impossible
+   [each k_j is consistent with its own outcome o(k_j)]; the open interval is a
+   convention choice, not a necessity. See Phase9_adversarial_testing.md Test 1a.)
 
 **Canonical form (Conv 2, standardized 2026-05-30, RCA NORM-1 score 4.33/5).** `f_perp(o, K_ctx)` is the bot_K fraction (T8 structural derivation); `[1 − beta·f_perp]` is the suppression factor; `K_ctx` is the set (T9). Code (`k9e_predictor.py`) uses scalar approximation: `suppression_factor = 1 − beta·K_ctx_scalar` where `K_ctx_scalar = n_bsm·G_CTX`. In the N=2 Level 0 projection, the fraction evaluates to `1 − |⟨b|d⟩|²`; this is a projection, **not** a general identity (`f_perp ≠ f(|⟨b|d⟩|²)` in general — see `04_governance/Falsification_Hierarchy.md §2.5`). RCA: `04_governance/RCA_NORM1_standardize_conv2_2026_05_30.md`.
 
@@ -125,6 +129,37 @@ to be tested experimentally.
 Superobserver measurement is non-equatorial (theta != pi/2). A null result at
 sufficient sensitivity falsifies K9_E at the tested beta. K9-S12 protocol
 (alpha=31 deg, N=91,000) provides sensitivity to beta >= 0.05 at >5 sigma.
+
+---
+
+### 3.5 K10_R Postulate (Registration Capacity, Layer 3)
+
+K10_R (Class C qualified; promoted 2026-05-31, RCA 4.67/5) defines **when a
+physical system S is a valid K-registrar**:
+
+  S is a valid K-registrar  ⟺  C₁(S) ∧ C₂(S) ∧ C₃(S) ∧ C₄(S)
+  C₁ Admission Capacity   ← K1  (distinguishable physical states s_k ↔ r_k)
+  C₂ Binary Validity      ← K4  (V(S) ∈ {0,1}, no stable intermediate)
+  C₃ Temporal Ordering    ← K2  (discrete, injective record of admitted events)
+  C₄ Self-Certification   ← K3  (S distinguishes σ_S=1 from σ_S=0 without external S′)
+
+K10_R grounds `ValidReg(X, R)` Condition 2 (fills `N_QM_VVV_00012`). Like K9_E,
+K10_R is a **POSTULATE**, not derivable from K1–K8 alone; it defines structural
+CAPACITY only and does not specify collapse dynamics.
+Source: `meta_architecture/K10_R_Registration_Capacity_Postulate.md`.
+
+### 3.6 D_obs — Observer Set Definition (Layer 2)
+
+D_obs (2026-05-31, RCA 4.3/5) formalizes the observer set used by `K_ctx`,
+eliminating the residual `[A-Obs]` informal clause in T9:
+
+  Obs(Exp, R_i) := { R_j : R_j ≠ R_i, R_j participates in Exp,
+                     and R_j shares a joint registration demand with R_i }
+
+Properties: (i) finite; (ii) R_i-relative; (iii) `Obs = ∅ ⇒ K_ctx = ∅`
+(single-observer limit → Born). With T9 (φ_ij) + D_obs, the K_ctx derivation
+chain K1-K8 + T1 → K_ctx is fully formal.
+Source: `K_Space_Axiomatization.md` §D_obs.
 
 ---
 
@@ -140,7 +175,7 @@ This repository contains **three logically independent projects:**
   mathematical identities. Value is heuristic, not derivational.
 
 ### Project B — VVV-QMRF Conceptual Framework
-- K1-K8 axioms + T1-T8 bridge theorems + E1-E16 registration postulates
+- K1-K8 axioms + T1-T9 bridge theorems + E1-E16 registration postulates
 - phi-map conjecture: K → B(H) structure-preserving map
 - **Type:** Conceptual architecture (formal definitions)
 - **Boundary:** Framework itself is not falsifiable — it provides language
@@ -169,8 +204,11 @@ Project A → (motivates) → Project B → (motivates) → Project C
 | D_enc | Enc(M_aware, k_F): whether post-closure act encodes Δ_closure (canonical Layer 2) |
 | K_ctx | Registration context: K-states from other observers in joint measurement |
 | f_perp | Outcome-overlap: fraction of contextual observers with incompatible outcomes |
-| beta | K9_E coupling strength in [0,1]; beta=0 = standard QM |
+| beta | K9_E coupling strength in [0,1) (convention; beta=1 also well-defined); beta=0 = standard QM |
 | Equatorial Cancellation | Theorem: f_perp(+1,H) - f_perp(-1,H) = -cos(theta) |
+| T1–T9 (theorems) | **Bridge theorems (Layer 2).** Namespace note: the 8 K9_E *formula terms* are also labeled T1–T8 in some provenance tables — those are formula terms, **not** bridge theorems. |
+| K10_R | Registration Capacity Postulate (Layer 3): valid K-registrar ⟺ C₁∧C₂∧C₃∧C₄ (← K1–K4). Postulate, not derivable from K1–K8. |
+| D_obs | Obs(Exp,R_i): finite, R_i-relative set of other registering systems sharing a joint registration demand with R_i; completes the K_ctx derivation (Layer 2). |
 
 ---
 
@@ -199,6 +237,14 @@ Project A → (motivates) → Project B → (motivates) → Project C
 > of truth for scholarly purposes. Internal governance documents (GOV-1 through
 > GOV-3) are project management tools, not scholarly authorities.
 
+### Maintenance rule (binding)
+
+> **Any Layer-1/2/3 promotion (new/changed axiom, bridge theorem, or postulate)
+> MUST update this document in the same session** — analogous to the PEER-SYNC
+> rule for `K_Space_Axiomatization.md`. This document is the declared
+> external-facing SOT; if it lags the framework, downstream readers cite stale
+> structure. (Added 2026-06-03 after K10_R/D_obs were found missing from v1.1.)
+
 ---
 
-*VVV-QMRF Formal Definitions v1.1 — 2026-05-27. K7_trace + D_enc added as canonical Layer 2 (§3.3). Replaces CLAUDE.md as external-facing SOT.*
+*VVV-QMRF Formal Definitions v1.2 — 2026-06-03. Added K10_R (§3.5), D_obs (§3.6), T1-T9 count fix, T# namespace note (§5), and a binding Layer-1/2/3 update rule (§6). v1.1 (2026-05-27): K7_trace + D_enc canonical Layer 2 (§3.3). Replaces CLAUDE.md as external-facing SOT.*

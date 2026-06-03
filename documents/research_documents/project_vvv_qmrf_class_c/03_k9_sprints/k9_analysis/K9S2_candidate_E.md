@@ -66,7 +66,7 @@ f_perp(o₁, K_context) ≠ f_perp(o₂, K_context) in general
 |---|---|---|
 | **C-BORN** | ⚠️ CONDITIONAL | When ⊥_K silent → no k' ⊥_K k → f_perp = 0 → [1−0] = 1 → P = Tr(E_o ρ)/1 = Tr(E_o ρ). ✅ BUT: requires K_context = ∅ or no ⊥_K events. In EWF with multiple observers, K_context may be non-empty even in "standard" conditions. Need: ⊥_K silent ↔ K_context has no contradicting k'. |
 | **C-NORM** | ✅ PASS | Z_E explicitly normalizes: Σ P(o) = Σ Tr(E_o ρ)·[1−β·f_perp(o)]/Z_E = Z_E/Z_E = 1. |
-| **C-NONDIV** | ⚠️ CONDITIONAL | Z_E = 0 iff [1−β·f_perp(o)] = 0 for all o with Tr(E_o ρ) > 0. Since f_perp ∈ [0,1] and β ∈ [0,1]: [1−β·f_perp] ∈ [1−β, 1]. If β < 1: [1−β·f_perp] > 0 always → Z_E > 0. If β = 1 and f_perp = 1 for all outcomes: Z_E = 0. **Convention: β < 1 strictly, or exclude f_perp=1 case.** |
+| **C-NONDIV** | ✅ PASS (convention β<1) | Z_E = 0 iff [1−β·f_perp(o)] = 0 for all o with Tr(E_o ρ) > 0. Since f_perp ∈ [0,1] and β ∈ [0,1): [1−β·f_perp] > 0 always → Z_E > 0. **Convention: β ∈ [0,1) (open interval).** (β = 1 is in fact also non-divergent — the failure mode f_perp = 1 for all outcomes is impossible, since each k_j ∈ K_ctx is consistent with its own outcome o(k_j); see Phase9 Test 1a — so the open interval is a convention, not a necessity.) |
 | **C-PARAM** | ✅ PASS | 1 free parameter (β). Satisfies ≤1 or ≤2. |
 | **C-TRACE** | ✅ PASS (post-T9) | **K_context WAS an assumption — NOW a theorem.** T9 (2026-05-24) constructs K_ctx from K1-K8 + T1: φ_ij = i_j (K8-constrained T1 embedding), 5 lemmas L1-L5. ~~[A-E1] K_context exists~~ → [A-E1] FULLY ELIMINATED. [A-E2] f_perp form → SPLIT ([A-E2a] DERIVED via T8+H1, [A-E2b] MODERATE). [A-E3] β is universal → FREE PARAMETER. |
 | **C-FALSI** | ✅ PASS (under Interp B conditions) | f_perp IS outcome-dependent → δP ≠ 0 in scenarios where different outcomes have different f_perp values. Genuine probability-level deviation from Born rule. |
@@ -243,7 +243,7 @@ VERDICT: CONDITIONAL PASS
 
 Satisfies: C-BORN (when ⊥_K silent), C-NORM, C-PARAM, C-FALSI (genuine δP≠0)
 Conditional on:
-  C-NONDIV: requires β < 1 or exclusion of fully-contradicted case
+  C-NONDIV: β < 1 (convention) suffices; β = 1 is also non-divergent because the fully-contradicted case (f_perp=1 for all o) is impossible (Phase9 Test 1a)
   C-NONNEG: requires β ≤ 1/max(f_perp)
   C-TRACE: 3 assumptions (K_context, f_perp form, β); K_context requires
            Level 3/4 structure not in Layer 1.

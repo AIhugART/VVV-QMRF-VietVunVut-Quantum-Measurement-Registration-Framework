@@ -28,6 +28,8 @@ P(o | k_i, Exp) = Tr(E_o ρ_i) · [1 − β · f_perp(o, k_i, K_ctx)]
 
 > [!NOTE]
 > The term-by-term table below traces each component of K9_E to its K-space or external source. This is a PROVENANCE trace, not a derivation proof. K9_E as a whole is a POSTULATE that assembles these components into a probability rule.
+>
+> **Label note:** the `T1`–`T8` identifiers in this table index the **8 K9_E formula terms** — a namespace **distinct** from the Layer-2 **bridge theorems** `T1`–`T9` (e.g., "T8" here = the `isNull` gate, not the T8 frequency-bridge theorem). See `06_references/VVV_QMRF_Definitions.md` §5.
 
 | # | Term | Definition | Source | EX Anchor |
 |---|---|---|---|---|

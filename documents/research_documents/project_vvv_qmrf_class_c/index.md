@@ -5,6 +5,8 @@ Author: VietVunVut (Viet - Nguyen Xuan); GitHub: https://github.com/AIhugART/; F
 **Project name:** VVV-QMRF Class C (VietVunVut Quantum Measurement Registration Framework — Class C testable)
 **Status:** Class C (qualified) — structurally testable, empirically UNCONFIRMED (noise not ruled out)
 **Version:** v44 (2026-06-01) — Level 4 Internal Consistency Audit (RCA 4.1/5) + P3-P4 Relationship Blockers Analysis (RCA 4.3/5). v43: Long-Term Research Plan v1.0 adopted
+
+> **Version counter note:** this `vNN` is the **master-index content version**. The detailed [`04_governance/CHANGELOG.md`](04_governance/CHANGELOG.md) maintains a **separate**, finer-grained K-Space/sprint counter (currently v51); the two `vNN` sequences are **independent and need not match** (e.g., index v43 ≠ CHANGELOG v43 content). Cite the index version for overall project state.
 **Zenodo DOI (v3.0):** [10.5281/zenodo.20431310](https://zenodo.org/records/20431310) — Working Paper v3.0 **PUBLISHED 2026-05-28**
 **Zenodo DOI (v2.0):** [10.5281/zenodo.20289261](https://doi.org/10.5281/zenodo.20289261) (archived)
 **Concept DOI (cite-all):** [10.5281/zenodo.20289260](https://doi.org/10.5281/zenodo.20289260)
@@ -27,7 +29,7 @@ VVV-QMRF proposes a **registration-logic structure K**, axiomatized via K1–K8 
 | # | Project | Type | Status |
 |---|---------|------|--------|
 | **A** | BE↔QM Comparative Mapping | Interpretive framework (comparative philosophy) | 30 nodes, 39 edges |
-| **B** | VVV-QMRF Conceptual Framework | Conceptual architecture (K1-K8, T1-T8, E1-E16) | Frozen (Layer 1) |
+| **B** | VVV-QMRF Conceptual Framework | Conceptual architecture (K1-K8, T1-T9, E1-E16) | Frozen (Layer 1) |
 | **C** | K9_E Testable Hypothesis | Falsifiable hypothesis + experimental proposal | Preprint submitted to arXiv (paper_002) |
 
 > **MOTIVATION CHAIN (one-way, not derivational):**
@@ -120,6 +122,8 @@ where:
 
 > **K9_E có 8 thành phần (T1–T8). 6/8 là khái niệm mới, không có trong Standard QM.**
 > K9_E has 8 terms (T1–T8). 6/8 are new concepts not present in Standard QM.
+>
+> *Label note / Lưu ý ký hiệu:* the `T1–T8` identifiers in the table below index the **8 K9_E formula terms** — a namespace **distinct** from the Layer-2 **bridge theorems** `T1–T9` (e.g., "T8" here = the `isNull` gate, **not** the T8 frequency-bridge theorem). See `06_references/VVV_QMRF_Definitions.md` §5.
 
 | # | Term | Definition | Source | In Standard QM? |
 |---|------|-----------|--------|-----------------|
@@ -352,4 +356,4 @@ Rule: `Internal-first, VVV-QMRF-EX-verified, selectively imported.`
 
 ---
 
-*Project VVV-QMRF Class C — Master Index v41 (2026-05-31). D_obs Observer Set Formal Definition (RCA 4.3/5). [A-Obs] FULLY ELIMINATED. K_ctx derivation chain complete. T5 Conditional THEOREM (RCA 4.4/5). [A-3O-2] RESOLVED (conditional). [A-NS] Conditional THEOREM via induction. 0 open assumptions. 1 free parameter (β). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*
+*Project VVV-QMRF Class C — Master Index v44 (2026-06-01). Level 4 Internal Consistency Audit (RCA 4.1/5) + P3-P4 Relationship Blockers (RCA 4.3/5). D_obs Observer Set Formal Definition (RCA 4.3/5). [A-Obs] FULLY ELIMINATED. K_ctx derivation chain complete. T5 Conditional THEOREM (RCA 4.4/5). [A-3O-2] RESOLVED (conditional). [A-NS] Conditional THEOREM via induction. 0 open assumptions. 1 free parameter (β). Class C (qualified) — structurally testable, empirically UNCONFIRMED.*

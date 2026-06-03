@@ -196,7 +196,7 @@ Z_E = Σ Tr(E_o' ρ) · [1 − β·f_perp(o')] > 0  (since at least one term > 0
 → P(o|k) ≥ 0  ✓
 ```
 
-**Key insight:** β < 1 (strict) guarantees `1 − β·f_perp > 0` even when `f_perp = 1`. This is why K9_E definition uses `β ∈ [0, 1)` (open interval), not `[0, 1]`.
+**Key insight:** β < 1 (strict) is a *sufficient* guarantee that `1 − β·f_perp > 0` even when `f_perp = 1` for a single outcome, which is why the K9_E definition adopts `β ∈ [0, 1)` (open interval) by convention. Note this is a convention, **not a necessity**: `β = 1` is also well-defined because `f_perp = 1` for *all* outcomes simultaneously is impossible (each `k_j` is consistent with its own outcome — see `Phase9_adversarial_testing.md` Test 1a), so `Z_E > 0` holds at `β = 1` too.
 
 **Verification (Python):** Sanity check **4G PASS** — all probabilities ≥ 0.
 
