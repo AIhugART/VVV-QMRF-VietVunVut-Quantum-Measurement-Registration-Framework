@@ -1,0 +1,1305 @@
+% ============================================================
+% K-Space: An Axiomatic Framework for Observer-Relative
+% Measurement Registration in Quantum Theory
+% Draft v0.1 -- 2026-06-02
+% Generated from plan v1.2 (3-Round RCA PASS 4.17/5)
+% STATUS: DRAFT -- internal review only, NOT FOR SUBMISSION
+% SELF-CONTAINED: all theorem content inlined (no external "companion paper"
+%   dependency for proofs). Appendices A--E carry T8, Born corollary,
+%   restricted phi_R existence + boundary Theorems A/B, Level-4 admissibility
+%   definitions, T2/T3/AJVS, T4-H colimit existence, and the T5 proof.
+%   Source of truth: K_Space_Axiomatization.md (Class C working copy) +
+%   phi_map_boundary_theorem_v1_0.md + phi_restricted_existence_v1_0.md +
+%   T5_conditional_theorem_proof.md. VVV-QMRF/BE branding sanitized.
+% ============================================================
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable,skins}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+% ------ Theorem environments --------------------------------
+\theoremstyle{plain}
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{postulate}{Postulate}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem{corollary}{Corollary}[theorem]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+
+% ------ Notation shortcuts ----------------------------------
+\newcommand{\KR}{K_{\!R}}
+\newcommand{\Kjoint}{K_{\mathrm{joint}}}
+\newcommand{\Kctx}{K_{\mathrm{ctx}}}
+\newcommand{\Vp}{V_{\mathrm{prov}}}
+\newcommand{\Vf}{V_{\mathrm{final}}}
+\newcommand{\fperp}{f_{\!\perp}}
+\newcommand{\phiij}{\varphi_{ij}}
+\newcommand{\CK}{C_K}
+\newcommand{\tclose}{t_{\mathrm{close}}}
+\newcommand{\isNull}{\mathrm{isNull}}
+\newcommand{\Auth}{\mathrm{Auth}}
+\newcommand{\bk}[1]{\langle #1 \rangle}
+\newcommand{\DI}{\Delta I}
+
+% Draft annotation commands
+\newcommand{\DRAFT}[1]{\textcolor{blue}{\textbf{[DRAFT: #1]}}}
+\newcommand{\FIXME}[1]{\textcolor{red}{\textbf{[FIXME: #1]}}}
+
+% ============================================================
+\title{\textbf{K-Space: An Axiomatic Framework for\\
+Observer-Relative Measurement Registration\\
+in Quantum Theory}}
+
+\author{Viet Nguyen Xuan\\[6pt]
+\small\texttt{viet@vvvqmrf.com}}
+
+\date{Draft v0.1 \quad 2026-06-02\\[4pt]
+\small Preprint anchor:
+\href{https://doi.org/10.5281/zenodo.20493403}{DOI:~10.5281/zenodo.20493403}
+\quad (CC~BY~4.0)}
+
+% ============================================================
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+% ============================================================
+\begin{abstract}
+% Target 150--200 words. Requirements from plan Section 1.
+We introduce K-space, a formal structure defined by eight axioms (K1--K8)
+representing the content of observer-relative measurement registrations in
+quantum theory. K-space is not a physical space; it is a bookkeeping
+structure for what an observer has registered from quantum measurements,
+organized as a temporally ordered chain of K-state tuples, each carrying a
+registered outcome, a self-certification marker, a timestamp, and a validity
+status. The axioms define: the carrier set with admission and injectivity
+conditions (K1); a discrete temporal order (K2); intrinsic self-certification
+(K3); default validity with a null-event guard (K4); cross-observer
+invalidation dynamics (K5); cross-registration authority (K6); process closure
+transitioning provisional to final validity (K7); and cross-space embedding
+preservation (K8). A postulate K9\_E extends K-space to a probability
+assignment $P(o\mid k_i,\Kctx) = \mathrm{Tr}(E_o\rho)[1-\beta\fperp]/Z_E$,
+where $\beta\in[0,1]$; setting $\beta=0$ recovers the Born rule as a
+corollary. Three bridge theorems (T1, T9, T5) connect the axioms to
+operational constructions in multi-observer scenarios; the supporting
+Level-4 admissibility conditions, the incommensurability and EWF bridges
+(T2, T3), the colimit existence theorem (T4-H), and the associativity proof
+(T5) are developed self-containedly in the appendices. The framework is
+interpretively neutral and requires no prior familiarity with any
+particular interpretive or motivational context.
+\end{abstract}
+
+\smallskip
+\noindent\textbf{Keywords:} quantum measurement; axiomatic framework;
+observer-relative states; measurement registration; quantum foundations;
+K-space.
+
+\smallskip
+\noindent\textbf{MSC 2020:} 81P10; 81P13; 03G12.
+
+% ============================================================
+\section{Introduction}
+\label{sec:intro}
+% ============================================================
+
+A recurring difficulty in quantum foundations is specifying, in formal terms,
+what it means for a particular observer to \emph{have} a measurement outcome.
+Standard quantum mechanics is silent on this: the Born rule assigns
+probabilities to outcomes, and the Hilbert space formalism evolves states,
+but neither provides a structure-theoretic account of the content of
+observer-relative measurement registrations.
+Approaches that center on the observer --- Everett's relative-state
+formulation \cite{Everett1957}, Wigner's Friend gedankenexperiments
+\cite{Wigner1961}, and extended multi-observer scenarios
+\cite{FR2018,Bong2020,Wiseman2023} --- expose the need for a precise
+bookkeeping structure for ``what one observer has registered and how that
+registration relates to what another has registered.''
+
+Existing observer-relative frameworks do not fully supply this structure.
+Quantum Bayesianism (QBism)~\cite{Fuchs2014} locates quantum states in
+an agent's degrees of belief but does not axiomatize a registration-content
+object or a validity lifecycle for that content.
+Relational quantum mechanics~\cite{Rovelli1996} makes all properties
+observer-relative but leaves the internal structure of ``what the observer
+has'' informal.
+Consistent histories~\cite{Griffiths2002} assigns probabilities to sequences
+of projections at the ensemble level, not to individual observer registration
+events.
+The many-worlds interpretation~\cite{Everett1957} identifies branches through
+decoherence but provides no formal bookkeeping for the specific content that
+one branch-observer has registered versus another.
+The Spekkens toy model~\cite{Spekkens2007} provides axiomatic epistemic states,
+but these track knowledge of preparation procedures over ontic states, not
+time-stamped registration events with a validity lifecycle.
+
+This paper introduces K-space to fill exactly this gap. A K-space $\KR$ for
+registering system $R$ is a set of tuples $k=\bk{M,o,\mathrm{cert},t,V}$
+representing individual registration events, equipped with a temporal chain
+order (K2), intrinsic certification (K3), default validity with invalidation
+dynamics (K4--K6), and a process-closure mechanism (K7). K-space is not a
+Hilbert space, not a phase space, and not a probability space; it is a
+registration-logic structure whose primitive predicates (cert, $V$, $\bot$,
+Auth) are epistemological rather than physical.
+
+We also introduce postulate K9\_E, which generalizes the Born rule by
+inserting a structural correction factor $[1-\beta\fperp]$ derived from the
+K-side context. At $\beta=0$, K9\_E reduces to the Born rule by corollary.
+At $\beta\neq0$, K9\_E produces measurable deviations in extended Wigner's
+Friend experiments; the empirical determination of $\beta$ is addressed in a
+companion paper~\cite{K9S12_Zenodo}.
+
+\medskip\noindent
+\textbf{Paper structure.}
+Section~\ref{sec:axioms} states and motivates the eight axioms K1--K8.
+Section~\ref{sec:K9E} introduces K9\_E and derives the Born rule as a
+corollary.
+Section~\ref{sec:theorems} presents three bridge theorems (T1, T9, T5).
+Section~\ref{sec:comparison} compares K-space with existing frameworks.
+Section~\ref{sec:open} states three open problems.
+Section~\ref{sec:conclusion} concludes.
+Appendices~\ref{app:T8}--\ref{app:T5} make the paper self-contained: T8 and the
+Born corollary (\ref{app:T8}--\ref{app:born}), restricted $\varphi_R$ existence
+(\ref{app:phiR}), the Level-4 admissibility definitions (\ref{app:level4}),
+the supporting bridges T2/T3/AJVS (\ref{app:bridges}), the colimit existence
+theorem T4-H (\ref{app:T4H}), and the associativity proof T5 (\ref{app:T5}).
+
+% ============================================================
+\section{K-Space Axioms K1--K8}
+\label{sec:axioms}
+% ============================================================
+
+\noindent\textbf{Notation.}
+$\mathcal{M}_K$ denotes the set of measurement-registration act identifiers
+(tokens, not types: two events of the same act type at different times are
+distinct tokens). $O$ is the outcome alphabet; $\emptyset\in O$ is reserved
+for null events (zero information transfer). $T_R$ is the discrete
+registration-time index set of $R$.
+$\DI(k)$ denotes the \emph{information-transfer delta} of registration
+event $k$: the number of distinct field-values contributed by $k$ to
+$\KR$ beyond what a null token would contribute; $\DI(k)=0$ iff $k$
+delivers no new information to $\KR$.
+Two K-state tuples $k_1,k_2$ are \emph{K-incommensurable}, written
+$k_1\perp_K k_2$, iff: (i)~they fall within the same comparison
+context $\CK$ (a Level-4 structural input supplied by the experimental
+protocol; defined in Appendix~\ref{app:level4}, see also \S\ref{open:obs}),
+and (ii)~$o(k_1)\neq o(k_2)$
+(conflicting registered outcomes). Equivalently, K5(ii) fires:
+$k_2\bot k_1$ within $\CK$. For K-spaces,
+$K_{R_1}\perp_K K_{R_2}$ holds whenever $\exists\,k_1\in K_{R_1},\,k_2\in K_{R_2}$
+such that $k_1\perp_K k_2$ (the generic K5-conflict trigger). This
+outcome-conflict condition is \emph{sufficient} but not necessary: the
+complete admissibility-level characterization---under which $\perp_K$ may also
+arise from a closure lock (K7) with no outcome conflict---is Theorem~T2
+(Appendix~\ref{app:bridges}), which identifies $K_{R_1}\perp_K K_{R_2}$ with
+the non-existence of an admissible $\Kjoint$.
+
+\begin{tcolorbox}[colback=gray!8,colframe=gray!50,
+    title=\textbf{Scope Note},fonttitle=\small,
+    breakable]
+\small
+Axioms K1--K8 define K-space as a formal object. They do \emph{not}
+derive quantum mechanics from K-space, nor establish the existence of a full
+structure-preserving map $\varphi\colon K \to \mathcal{B}(\mathcal{H})$.
+
+\medskip
+\noindent\textbf{Partial result.} A restricted map $\varphi_R\colon K_R \to
+\mathcal{P}(\mathcal{H})\cup\{0\}$ has been shown to exist for the $N=2$
+extended Wigner's Friend case (Class~C theorem, 2026-06-01;
+Appendix~\ref{app:phiR}). This partial result does not imply the full
+$\varphi$-conjecture.
+
+\medskip
+\noindent\textbf{Open conjecture.} The full map $\varphi\colon K \to
+\mathcal{B}(\mathcal{H})$ remains an open problem
+(\S\ref{open:phi}).
+\end{tcolorbox}
+
+\begin{axiom}[Carrier Set --- K1]\label{ax:K1}
+The K-side registration space of a registering system $R$ is a set $\KR$
+whose elements are K-state tuples:
+\[
+  \KR = \bigl\{\, k \;\big|\; k = \bk{M,\; o,\; \mathrm{cert},\; t,\; V} \bigr\}
+\]
+with $M \in \mathcal{M}_K$, $o \in O \cup \{\emptyset\}$,
+$\mathrm{cert} \in \{0,1\}$, $t \in T_R$, $V \in \{0,1\}$.
+
+\smallskip
+\noindent\textit{Admission rule}: $k \in \KR \Rightarrow \mathrm{cert}(k) = 1$
+(only self-certified events are admitted to $\KR$).
+
+\noindent\textit{Injectivity}: $t\!\upharpoonright\!\KR$ is injective:
+$\forall k_1,k_2 \in \KR,\; t(k_1) = t(k_2) \Rightarrow k_1 = k_2$.
+
+\smallskip
+\noindent\textit{Claim class}: C (conjectural formal definition).
+\end{axiom}
+
+\begin{remark}
+$\KR$ records \emph{what was registered}, not what physically exists.
+Elements $k$ are not density matrices, not wave functions, and not probability
+values. The slot $o = \emptyset$ is reserved for null events (K4).
+K1 carries claim class~C because the carrier-set definition is, as a whole,
+a conjectural formal claim about the existence of a well-formed registration
+space; K2--K8 carry class~D as proposed structural operations acting on an
+already-admitted carrier.
+Among the five fields, $M,o,\mathrm{cert},t$ are the immutable record of the
+event; $V$ is the only \emph{dynamic} field. The value $V$ listed in the tuple
+is the validity status \emph{at instantiation}; its subsequent value is the
+time-indexed status $\Vp(k)$ (provisional, pre-closure) or $\Vf(k)$ (final,
+post-closure), governed by K4--K5 and K7. References to $V(k)$ in K5--K8 denote
+$\Vp(k)$ before K7 closure and $\Vf(k)$ after.
+\end{remark}
+
+\begin{axiom}[Temporal Order --- K2]\label{ax:K2}
+$(\KR,{<_R})$ is a strict total order (chain) where
+$k_1 <_R k_2 \iff t(k_1) < t(k_2)$.
+The order is \emph{discrete}: for any consecutive pair $k_i, k_{i+1} \in \KR$
+with no element strictly between them, no registration state exists in the
+open interval $(t(k_i), t(k_{i+1}))$ on the K-side.
+
+\smallskip
+\noindent\textit{Claim class}: D (proposed).
+\end{axiom}
+
+\begin{remark}
+K2 does not claim physical time is discrete; only the K-side
+registration-time index within $\KR$ is discrete. Physical time in Hilbert
+space remains continuous.
+\end{remark}
+
+\begin{axiom}[Self-Certification --- K3]\label{ax:K3}
+$\sigma_R\colon \mathcal{M}_K \to \{0,1\}$ with
+\[
+  \sigma_R(M) = 1 \iff M \text{ has occurred as a K-side registration
+  event of }R,
+\]
+determined \emph{intrinsically} within $\KR$. For all $k \in \KR$:
+$\mathrm{cert}(k) = \sigma_R(M(k))$.
+
+\smallskip
+\noindent\textit{Observer-indexed independence}:
+$\sigma_R(M)$ is independent of $\sigma_{R'}(M')$ for any $R' \neq R$.
+
+\smallskip
+\noindent\textit{Claim class}: D.
+\end{axiom}
+
+\begin{remark}
+$\sigma_R(M)$ certifies the \emph{occurrence} of $M$ as a K-side event.
+It does not certify that the physical outcome is ``correct,'' is not
+consciousness, and is not a second-order measurement act.
+\end{remark}
+
+\begin{axiom}[Default Validity --- K4]\label{ax:K4}
+Define $\isNull(k) := o(k) = \emptyset \wedge \DI(k) = 0$
+(zero-information-transfer event). For all $k \in \KR$:
+\begin{itemize}[noitemsep,topsep=2pt]
+  \item[(a)] $\neg\isNull(k) \Rightarrow V(k) = 1$ upon instantiation,
+  \item[(b)] $\isNull(k) \Rightarrow V(k) = 0$.
+\end{itemize}
+\noindent\textit{Claim class}: D.
+\end{axiom}
+
+\begin{remark}
+$V(k) = 1$ is the default K-side validity for non-null events: it means
+this registration is treated as valid within $\KR$ until contradicted (K5).
+It does not mean the physical outcome is correct. Validity is provisional
+until process closure (K7).
+\end{remark}
+
+\begin{axiom}[Invalidation --- K5]\label{ax:K5}
+K5 fires only when a comparison context $\CK$ exists
+(i.e., when joint registration is structurally demanded).
+$V(k_1) \to 0$ iff $\exists\, k_2$ in the relevant K-space such that:
+\begin{itemize}[noitemsep,topsep=2pt]
+  \item[(i)]  $k_1 <_R k_2$ \hfill(K2: $k_2$ is temporally later),
+  \item[(ii)] $k_2 \bot k_1$ within shared $\CK$ \hfill(registered
+              contradiction),
+  \item[(iii)] $\Auth(k_2 \to k_1, \CK) = 1$ \hfill(K6:
+              cross-registration authority).
+\end{itemize}
+K5 \emph{does not fire} when no $\CK$ exists. Before process closure
+(K7), $V(k_1) = \Vp(k_1)$ is provisional and in principle reversible
+(if $k_2$ is itself invalidated before closure). After K7 closure,
+$\Vf(k_1) = 0$ is absolute and irreversible.
+
+\smallskip
+\noindent\textit{Claim class}: D.
+\end{axiom}
+
+\begin{tcolorbox}[colback=orange!7,colframe=orange!60,
+    title=\small\textbf{K5\_prospective~[EXTENSION --- required for K9\_E only]},
+    fonttitle=\small,breakable]
+\small
+For probability assignment via K9\_E (\S\ref{sec:K9E}), K5 admits a
+\emph{prospective evaluation mode} on hypothetical tuples
+$k_o^* = \bk{M^*, o, 1, t^*, 1}$ representing a registration that
+\emph{would} be instantiated if outcome $o$ were realized.
+
+\smallskip
+K5 fires prospectively on $k_o^*$ iff
+$\mathrm{requires\_K\_joint} = 1$ and
+$\exists\, k_{\mathrm{prev}} \in \Kjoint$ such that:
+\textup{(i)} $k_{\mathrm{prev}} <_{\mathrm{joint}} k_o^*$,
+\textup{(ii)} $k_o^* \bot k_{\mathrm{prev}}$ within $\CK$,
+\textup{(iii)} $\Auth(k_o^* \to k_{\mathrm{prev}}, \CK) = 1$.
+Conditions (i)--(iii) are identical to K5; only the evaluation target
+differs. Prospective firing does \emph{not} modify any $V$ in $\KR$;
+it contributes only to $\fperp(o)$ in K9\_E (Theorem~T8,
+Appendix~\ref{app:T8}).
+\end{tcolorbox}
+
+\begin{axiom}[Cross-Registration Authority --- K6]\label{ax:K6}
+$\Auth(k_2 \to k_1, \CK) = 1$ iff all of:
+\begin{itemize}[noitemsep,topsep=2pt]
+  \item[(a)] $\CK\text{-sphere}(k_1) = \CK\text{-sphere}(k_2)$
+             \hfill(same comparison context),
+  \item[(b)] $V(k_2) = 1$ \hfill($k_2$ not invalidated at check time),
+  \item[(c)] $k_1 \in \mathrm{scope}(D_{\mathrm{joint}})$
+             \hfill($k_1$'s claim is within the joint-validity demand).
+\end{itemize}
+Authority is non-hierarchical and non-transitive across distinct contexts.
+Two observers in the same $\CK$ may hold mutual authority when both are
+valid.
+
+\smallskip
+\noindent\textit{Claim class}: D.
+\end{axiom}
+
+\begin{axiom}[Registration Process Closure --- K7]\label{ax:K7}
+$R$ closes at $\tclose(\KR)$ iff all pending joint-validity demands
+involving $\KR$ are resolved. At closure, for all $k \in \KR$:
+$\Vp(k) \to \Vf(k)$.
+Post-closure properties:
+\begin{itemize}[noitemsep,topsep=2pt]
+  \item[(a)] No new $k$ can be instantiated in $\KR$,
+  \item[(b)] K5 irreversibility is absolute ($\Vf(k) = 0$ is permanent),
+  \item[(c)] No new joint-validity demand $D_{\mathrm{joint}}$ involving
+             $\KR$ can be raised,
+  \item[(d)] $\Kjoint$ involving $\KR$ is final.
+\end{itemize}
+\noindent\textit{Claim class}: D.
+\end{axiom}
+
+\begin{axiom}[Cross-Space Embedding Preservation --- K8]\label{ax:K8}
+For any embedding $i\colon \KR \to K_X$ (where $K_X$ is a joint or
+cross-space structure):
+\begin{itemize}[noitemsep,topsep=2pt]
+  \item[(i)]  $V_X(i(k)) = V_R(k)$ at embedding time $t_{\mathrm{embed}}$
+              for all $k \in \KR$ (validity snapshot preserved),
+  \item[(ii)] All five tuple fields $(M,o,\mathrm{cert},t,V)$ are
+              preserved exactly under $i$,
+  \item[(iii)] After embedding, $V_X(i(k))$ evolves by K4--K7 rules
+               within $K_X$; K8 does not immunize against future K5
+               invalidation in $K_X$.
+\end{itemize}
+K8 is independent of K4: K4 governs validity at native instantiation;
+K8 governs validity-preservation at cross-space transfer.
+
+\smallskip
+\noindent\textit{Claim class}: D.
+\end{axiom}
+
+\medskip
+Table~\ref{tab:axioms} summarizes the layer-1 axiom cluster.
+
+\begin{table}[ht]
+\centering\small
+\caption{K-space axioms K1--K8: roles, field coverage, and claim class.
+Class C = structurally testable conjecture; Class D = proposed.
+Neither modifies standard QM.
+``Lvl-4'' indicates a conditional semantic dependency on Level-4
+structural definitions (comparison context $\CK$,
+joint-validity demand $D_{\mathrm{joint}}$, predicate
+$\mathrm{requires\_K\_joint}$).}
+\label{tab:axioms}
+\begin{tabular}{@{}lllcc@{}}
+\toprule
+\textbf{Axiom} & \textbf{Name} & \textbf{Fields} &
+\textbf{Class} & \textbf{Lvl-4 dep.} \\
+\midrule
+K1 & Carrier set      & $M,o,\mathrm{cert},t,V$ & C & None \\
+K2 & Temporal order   & $t$                      & D & None \\
+K3 & Self-cert.       & cert                     & D & None \\
+K4 & Default validity & $V$ (default)            & D & None \\
+K5 & Invalidation     & $V$ (transition)         & D & $\CK$ \\
+K6 & Authority        & $V$ (auth.\ cond.)       & D & $\CK$, scope($D_j$) \\
+K7 & Closure          & $V$ (closure)            & D & req.$_{KJ}$ \\
+K8 & Embedding pres.  & all five                 & D & None \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+\section{K9\_E: Probability Postulate}
+\label{sec:K9E}
+% ============================================================
+
+Axioms K1--K8 define K-space as a structural object but do not assign
+probabilities. Postulate K9\_E supplies the probability assignment.
+
+\begin{definition}[K-context set]\label{def:Kctx}
+For registering system $R_i$ performing experiment $\mathrm{Exp}$,
+the \emph{contextual K-state set} is
+\begin{multline}
+  \Kctx(k_i, \mathrm{Exp}) = \bigl\{\, \phiij(k_j) \in \Kjoint
+  \;\big|\; k_j \in K_{R_j}, \\
+  R_j \in \mathrm{Obs}(\mathrm{Exp}, R_i),\;
+  k_j\text{ temporally compatible with }k_i \bigr\}
+  \label{eq:Kctx}
+\end{multline}
+where $\phiij$ is the K8-constrained canonical embedding constructed in
+Theorem~T9 (\S\ref{sec:theorems}) below; its existence and uniqueness
+are established there without additional assumption (beyond K1--K8 + T1).
+The (finite, $R_i$-relative) \emph{observer set} is
+\[
+  \mathrm{Obs}(\mathrm{Exp}, R_i) := \{\, R_j \neq R_i :
+  \mathrm{requires\_K\_joint}(R_i, R_j) = 1
+  \text{ and } R_j \text{ participates in } \mathrm{Exp} \,\};
+\]
+this membership criterion (definition D\_obs) replaces the earlier informal
+``other observer'' clause and makes $\Kctx$ fully formal
+(see Appendix~\ref{app:level4} for the underlying Level-4 predicates).
+When $\mathrm{Obs}(\mathrm{Exp}, R_i) = \emptyset$ one has $\Kctx = \emptyset$
+and K9\_E reduces to the Born rule (cf.\ the empty-context convention in
+Def.~\ref{def:fperp}).
+\end{definition}
+
+\begin{definition}[Perpendicularity fraction]\label{def:fperp}
+\begin{equation}
+  \fperp(o, \Kctx)
+  = \frac{\bigl|\{k_j \in \Kctx : k_o^* \perp_K k_j\}\bigr|}
+         {|\Kctx|}
+  \label{eq:fperp}
+\end{equation}
+where $k_o^* = \bk{M^*, o, 1, t^*, 1}$ is the hypothetical outcome-$o$ tuple
+(cf.\ the K5\_prospective box, \S\ref{ax:K5}). Since all $k_j \in \Kctx$
+share the comparison context, $k_o^* \perp_K k_j \iff o(k_j) \neq o$;
+thus $\fperp(o,\cdot)$ counts the fraction of context registrations whose
+outcome \emph{conflicts} with the candidate $o$, and is therefore genuinely
+$o$-dependent --- the property that makes the $[1-\beta\fperp]$ factor
+survive normalization (cf.\ alternative A2 in Theorem~T8).
+Equivalently by Theorem~T8 (Appendix~\ref{app:T8}):
+\[
+  \fperp(o,\Kctx) = \mathbb{E}\bigl[\mathbf{1}(\text{K5\_prospective fires on }
+  k_o^*\text{ vs }k_j \in \Kctx)\bigr].
+\]
+\emph{Empty-context convention}: when $|\Kctx| = 0$ (no other registering
+system satisfies $\mathrm{requires\_K\_joint}$), set
+$\fperp(o,\Kctx) := 0$. By Eq.~\eqref{eq:K9E} this collapses K9\_E to the
+Born rule, consistent with Corollary~\ref{cor:born}: an isolated observer
+incurs no K-side suppression.
+\end{definition}
+
+\begin{postulate}[K9\_E Probability Postulate]\label{ax:K9E}
+\begin{equation}
+  \boxed{P(o \mid k_i, \Kctx)
+  = \frac{\mathrm{Tr}(E_o\rho)\,[1 - \beta\,\fperp(o,\Kctx)]}{Z_E}}
+  \label{eq:K9E}
+\end{equation}
+where $E_o$ is the POVM element for outcome $o$, $\rho$ is the quantum
+state, $\beta \in [0,1]$ is a free parameter, and
+$Z_E = \sum_{o'} \mathrm{Tr}(E_{o'}\rho)\,[1-\beta\,\fperp(o',\Kctx)]$
+ensures $\sum_o P(o\mid k_i,\Kctx) = 1$.
+
+\smallskip
+\noindent\textit{Well-posedness ($Z_E > 0$).}
+$Z_E > 0$ holds whenever there exists an outcome $o'$ with
+$\mathrm{Tr}(E_{o'}\rho) > 0$ and $\beta\,\fperp(o',\Kctx) < 1$
+(in particular for any $\beta < 1$, since
+$\fperp \le 1$ and $\sum_{o'}\mathrm{Tr}(E_{o'}\rho) = 1$).
+The sole degenerate case $Z_E = 0$ requires $\beta = 1$ together with
+$\fperp(o',\Kctx) = 1$ for every outcome $o'$ carrying nonzero Born weight;
+in this degenerate boundary configuration K9\_E is left undefined and the
+assignment defaults to the Born rule by the convention of
+Corollary~\ref{cor:born}.
+\end{postulate}
+
+\begin{corollary}[Born Rule Recovery]\label{cor:born}
+At $\beta = 0$, K9\_E recovers the Born rule exactly:
+$P(o \mid k_i, \Kctx)\big|_{\beta=0} = \mathrm{Tr}(E_o\rho)$.
+\end{corollary}
+
+\begin{proof}
+At $\beta=0$: $Z_E = \sum_{o'}\mathrm{Tr}(E_{o'}\rho) = \mathrm{Tr}(\mathbf{1}\rho)=1$
+by POVM completeness. Therefore $P(o) = \mathrm{Tr}(E_o\rho)$.
+\end{proof}
+
+\begin{remark}
+K9\_E is a generalization of the Born rule parameterized by $\beta$.
+At $\beta=0$, K-space is present but produces no deviation from standard
+QM predictions. The empirical determination of whether $\beta \neq 0$ in
+nature is the scope of a companion paper~\cite{K9S12_Zenodo}, which proposes
+a modified Bong et al.\ protocol sensitive to K-side suppression effects.
+\end{remark}
+
+% ============================================================
+\section{Bridge Theorems}
+\label{sec:theorems}
+% ============================================================
+
+We present three bridge theorems connecting K1--K8 to operational
+constructions in multi-observer scenarios.
+The labels T1, T9, T5 follow the framework's internal numbering; the
+supporting results (Level-4 admissibility conditions, the incommensurability
+theorem T2, the EWF bridge T3, and the colimit existence theorem T4-H) are
+developed self-containedly in
+Appendices~\ref{app:level4}--\ref{app:T5}. The three theorems are presented
+here in operational dependency order (T1 $\to$ T9 $\to$ T5) rather than index
+order.
+
+\subsection{T1: K$_{\mathrm{joint}}$ Construction}
+
+\begin{theorem}[Joint K-Space Construction --- T1]\label{thm:T1}
+Given registering systems $A$, $B$ with
+$\mathrm{requires\_K\_joint}(A,B) = 1$ via a shared joint-validity demand
+$D_{\mathrm{joint}}$, there exists a candidate joint K-space
+$\Kjoint(A,B)$ as the categorical colimit of the embedding diagram
+$(K_A, K_B)$ with K1--K8-preserving morphisms $i_A\colon K_A \to \Kjoint$
+and $i_B\colon K_B \to \Kjoint$.
+
+The combined order is the transitive closure
+\[
+  {<}_{\mathrm{joint}}
+  = \bigl(i_A({<_A}) \cup i_B({<_B}) \cup \mathrm{cross\text{-}rel}\bigr)^+,
+\]
+where $\mathrm{cross\text{-}rel}$ encodes cross-structure temporal relations
+from the shared laboratory history. $(\Kjoint, {<}_{\mathrm{joint}})$ is a
+partial order; restricted to each $i_X(K_X)$ it is a chain (from K2).
+\end{theorem}
+
+\begin{remark}
+T1 is a \emph{composition theorem}, not a pure K1--K8 derivation. It combines
+K1--K8 with external Level-4 inputs (cross-structure temporal relations from
+laboratory protocol). K1--K8 alone do not supply these relations. Existence
+of a candidate $\Kjoint$ does not guarantee admissibility; the full
+admissibility conditions $\mathrm{AdmJoint}$~(i)--(v) are given in
+Appendix~\ref{app:level4}.
+\end{remark}
+
+\subsection{T9: K$_{\mathrm{ctx}}$ Construction}
+
+\begin{theorem}[K$_{\mathrm{ctx}}$ as Theorem --- T9]\label{thm:T9}
+When $\mathrm{requires\_K\_joint}(R_i,R_j) = 1$, define
+$\phiij\colon K_{R_j} \to \Kjoint$ by $\phiij(k_j) = i_j(k_j)$,
+where $i_j$ is the K8-constrained canonical embedding from T1.
+Then $\phiij$ is the unique morphism preserving all five tuple fields, and
+$\Kctx$ (Eq.~\eqref{eq:Kctx}) is a theorem construction from K1--K8 + T1
+with no additional assumption.
+\end{theorem}
+
+\begin{proof}[Proof (four lemmas)]
+\textbf{L1 (Existence).}
+$\mathrm{requires\_K\_joint}(R_i,R_j)=1 \Rightarrow$ T1 constructs
+$\Kjoint$ with canonical embedding $i_j$. Define $\phiij = i_j$; existence
+follows. \\
+\textbf{L2 (Uniqueness).}
+Let $\psi\colon K_{R_j} \to \Kjoint$ satisfy K8 field preservation.
+For each $k_j$, $\psi(k_j)$ must have the same five fields as $k_j$
+(K8). By K1 t-injectivity, $\Kjoint$ contains exactly one element with
+those fields: $i_j(k_j)$. Hence $\psi = \phiij$; the morphism is
+structurally forced. \\
+\textbf{L3 (Field sufficiency).}
+K8 preserves $M, o, \mathrm{cert}, t, V$, which are exactly the fields
+required by K5\_prospective (outcome $o$, temporal $t$, authority $V$,
+admission cert) and by K6 (validity $V$). \\
+\textbf{L4 (Exhaustion).}
+Alternative channels are eliminated: (A) direct cross-space comparison
+without $\Kjoint$ is undefined (no $\CK$); (B) $\rho$-side correlation
+is a category error (K-side requires tuple fields); (C) non-K8-compliant
+embeddings violate K8; (D) any other K8-compliant embedding equals
+$\phiij$ by L2.
+\end{proof}
+
+\begin{remark}[Historical note: elimination of assumption {[A-E1]}]
+Earlier drafts of T9 required an explicit assumption {[A-E1]}: ``a
+T3-morphism $K_{R_j}\to\Kjoint$ exists.'' Lemmas L1--L3 above show this
+assumption is redundant: the K8-constrained canonical embedding $\phiij$
+exists (L1), is unique (L2), and supplies all fields required by
+K5\_prospective and K6 (L3). Assumption {[A-E1]} is therefore
+eliminated; no assumption beyond K1--K8 + T1 is required. The supporting
+bridge theorems T2--T3 (Appendix~\ref{app:bridges}) record the general
+morphism and incommensurability theory from which {[A-E1]} was originally
+drawn.
+\end{remark}
+
+\subsection{T5: Associativity (Conditional)}
+
+\begin{theorem}[K$_{\mathrm{joint}}$ Associativity --- T5, conditional]
+\label{thm:T5}
+Given admissible K-side spaces $K_A$, $K_B$, $K_C$:
+\[
+  \Kjoint\!\bigl(\Kjoint(A,B),\, C\bigr) \;\cong\; \Kjoint(A,B,C)
+\]
+as K1--K8-structured sets. This is conditional on: \textup{(C1)} the
+N-observer colimit existence theorem T4-H (Full Theorem, 4/4 steps
+verified 2026-05-28); and \textup{(C2)} the global commutativity condition
+F7d for the $N=3$ embedding diagram (confirmed via T4-H Step~3
+content-basedness of K5).
+\end{theorem}
+
+\begin{remark}[T5: proof in Appendix~\ref{app:T5}]
+A self-contained proof of T5 is given in Appendix~\ref{app:T5}: the colimit
+existence theorem T4-H (Appendix~\ref{app:T4H}) supplies the universal
+property, and the content-basedness of K5 firing in the colimit
+(Appendix~\ref{app:T5}, Lemma~B2) establishes the global commutativity
+condition F7d for the $N=3$ embedding diagram.
+\end{remark}
+
+\begin{remark}[Bridge\_EWF application (T3, Appendix~\ref{app:bridges})]
+In an Extended Wigner's Friend (EWF) configuration, Friend $F$ registers
+definite outcome $o_F$ and Wigner $W$ registers the same laboratory in a
+coherent superposition. The EWF setup fixes the laboratory time order
+$t_F < t_W$ (so $k_F <_{\mathrm{joint}} k_W$); the derivation presupposes this
+ordering and is not stated for $t_W < t_F$. Under candidate $\Kjoint$, K5 then
+forces a conflict: $k_W \bot k_F$ within $\CK$ with $\Auth(k_W\to k_F, \CK)=1$,
+so $V(k_F)\to 0$ (at the admissibility level, at least one of $V(k_F), V(k_W)$
+must drop), violating the admissibility condition. The firing \emph{direction}
+is set by the laboratory time order, not by the axioms alone. This derivation
+additionally requires the Axiom of Joint
+Validity Semantics (AJVS --- a named semantic postulate requiring that
+$\Kjoint$ hosts original first-order K-side validity claims, not
+meta-descriptions of the form ``within $K_F$, $M_F$ registered $|h\rangle$'';
+see Appendix~\ref{app:bridges} for the full statement).
+\end{remark}
+
+% ============================================================
+\section{Relation to Existing Frameworks}
+\label{sec:comparison}
+% ============================================================
+
+Table~\ref{tab:comparison} compares K-space with five existing frameworks.
+
+\begin{table}[ht]
+\centering\small
+\caption{Structural comparison of K-space with observer-relative and
+epistemic quantum frameworks. CH: Consistent Histories. MWI: Many-Worlds.
+$^*$Spekkens tracks epistemic states over ontic states, not
+time-stamped registration tuples with a validity lifecycle.}
+\label{tab:comparison}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Property} & \textbf{K-space} & \textbf{QBism} &
+\textbf{RQM} & \textbf{CH} & \textbf{MWI} & \textbf{Spekkens} \\
+\midrule
+Observer-indexed   & Yes         & Yes    & Yes     & No    & No (branch) & Yes     \\
+Formal axioms      & K1--K8      & No     & Partial & Yes   & Partial     & Yes     \\
+Registration content & Yes       & No     & No      & No    & No          & No$^*$  \\
+Invalidation rule  & K5          & ---    & ---     & ---   & ---         & ---     \\
+Closure property   & K7          & ---    & ---     & ---   & ---         & ---     \\
+Born rule          & K9\_E ($\beta{=}0$) & Agent & Relat.& Std. & Derived & Analog \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{vs.\ QBism~\cite{Fuchs2014}.}
+QBism centers on agent degrees of belief; K-space centers on formal
+registration content. K9\_E is a structural postulate, not a subjective
+prior.
+
+\paragraph{vs.\ Relational QM~\cite{Rovelli1996}.}
+Both are observer-relative. K-space additionally axiomatizes the
+\emph{content} of what is registered (K1--K4), an invalidation mechanism
+(K5--K6), and a closure property (K7). RQM leaves the registration
+structure informal.
+
+\paragraph{vs.\ Consistent Histories~\cite{Griffiths2002}.}
+CH assigns probabilities to projection sequences at the ensemble level.
+K-space operates at the level of individual observer registration events
+with a validity lifecycle.
+
+\paragraph{vs.\ Many-Worlds~\cite{Everett1957}.}
+Everett branching identifies branches through decoherence but provides no
+formal bookkeeping for the content of what one branch-observer has
+registered versus another. K-space supplies this via K1--K8 and the
+$\Kjoint$ construction (T1).
+
+\paragraph{vs.\ Spekkens toy model~\cite{Spekkens2007}.}
+Spekkens tracks degrees of knowledge about preparation procedures
+(epistemic states over ontic states). K-space tracks registered
+\emph{outcomes} as formal tuples $\bk{M,o,\mathrm{cert},t,V}$ with a
+validity lifecycle (K4$\to$K5$\to$K7). These are orthogonal formalization
+targets: preparation-epistemic vs.\ outcome-registration-formal.
+
+\paragraph{Non-claim.}
+K-space is not presented as superior to these frameworks. It provides a
+minimal formal complement: axioms for registration content that the
+other frameworks leave implicit.
+
+% ============================================================
+\section{Open Problems}
+\label{sec:open}
+% ============================================================
+
+\subsection{The full $\varphi$-map conjecture}
+\label{open:phi}
+
+\begin{description}[leftmargin=0pt]
+\item[\textit{Conjecture.}]
+Does there exist a full structure-preserving map
+$\varphi\colon K \to \mathcal{B}(\mathcal{H})$?
+
+\item[\textit{Partial result.}]
+A restricted map $\varphi_R\colon K_R \to \mathcal{P}(\mathcal{H})\cup\{0\}$
+has been shown to exist for the $N=2$ EWF case (Class~C theorem, 2026-06-01;
+Appendix~\ref{app:phiR}). Necessary conditions $N_1$--$N_8$ and $N_T$ for
+the full map have been derived from K1--K8.
+
+\item[\textit{Why open.}]
+Extending the restricted existence result to the full K-space requires
+characterizing the image of $\varphi$ in $\mathcal{B}(\mathcal{H})$ under
+all K1--K8 structure-preserving constraints --- a question in the
+representation theory of registration-logic structures.
+\end{description}
+
+\subsection{Observer set selection rule for $\Kctx$}
+\label{open:obs}
+
+\begin{description}[leftmargin=0pt]
+\item[\textit{Problem.}]
+$\Kctx$ is formally constructed by T9 (Theorem~\ref{thm:T9}), and the observer
+set $\mathrm{Obs}(\mathrm{Exp}, R_i)$ now has a formal membership criterion ---
+$\mathrm{requires\_K\_joint}(R_i, R_j) = 1$ together with participation in
+$\mathrm{Exp}$ (definition D\_obs, stated with Eq.~\eqref{eq:Kctx}). What remains open
+is not the \emph{form} of $\mathrm{Obs}$ but its \emph{extension}: the rule
+fixing \emph{which} physical interactions set
+$\mathrm{requires\_K\_joint} = 1$ is supplied by the experimental protocol
+(Level-4 $D_{\mathrm{joint}}$ scope), not by K1--K8 alone.
+
+\item[\textit{Why open.}]
+The predicate $\mathrm{requires\_K\_joint}$ encodes which physical interactions
+create mutual validity dependencies. A fully axiomatic treatment requires
+connecting the K-side registration layer to the experimental-design layer.
+\end{description}
+
+\subsection{Full N-observer colimit chain}
+\label{open:colimit}
+
+\begin{description}[leftmargin=0pt]
+\item[\textit{Problem.}]
+T4-H (N-observer colimit existence) is a Full Theorem (4/4 steps,
+2026-05-28). T5 (composition associativity) is Class~C conditional
+(on T4-H and global commutativity F7d). The full chain for $N > 3$
+observers requires extending the F7d commutativity check to arbitrary
+observer diagrams.
+
+\item[\textit{Why open.}]
+Non-transitivity of K-side incommensurability
+($K_A \perp_K K_B \wedge K_B \perp_K K_C \not\Rightarrow K_A \perp_K K_C$,
+by T4) means each pair in an $N$-observer configuration requires an
+independent check. For large $N$, the combinatorial structure of the
+$N(N-1)/2$ required checks may reveal structural constraints not visible
+at $N=2,3$.
+\end{description}
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% ============================================================
+
+We have introduced K-space, a formal structure defined by eight axioms
+(K1--K8) representing observer-relative measurement registrations in
+quantum theory. The axioms collectively define a carrier set with
+admission and injectivity conditions (K1), a discrete temporal chain
+order (K2), intrinsic self-certification (K3), default validity with a
+null-event guard (K4), cross-observer invalidation (K5), cross-registration
+authority (K6), process closure transitioning provisional to final validity
+(K7), and cross-space embedding preservation (K8). Three bridge theorems
+--- T1 ($\Kjoint$ construction), T9 ($\Kctx$ as a derived theorem,
+eliminating a prior morphism assumption via four lemmas), and T5
+(associativity, conditional) --- connect K1--K8 to operational constructions
+in multi-observer scenarios.
+
+Postulate K9\_E generalizes the Born rule to
+$P(o\mid k_i,\Kctx) = \mathrm{Tr}(E_o\rho)[1-\beta\fperp]/Z_E$,
+with $\beta=0$ recovering the Born rule exactly (Corollary~\ref{cor:born}).
+The empirical determination of $\beta$ is the subject of the companion
+paper~\cite{K9S12_Zenodo}.
+
+Three open problems are identified with precise formulations: the full
+$\varphi$-map conjecture (with a partial restricted-existence result for the
+$N=2$ EWF case), the observer set selection rule for $\Kctx$, and the full
+$N$-observer colimit chain. These problems define a research program.
+
+% ============================================================
+\section*{Acknowledgments}
+% ============================================================
+
+The formal structure of K-space was developed within the VVV-QMRF
+research framework. The author thanks the quantum foundations community
+for discussions on observer-relative approaches to quantum measurement.
+
+% ============================================================
+% REFERENCES
+% ============================================================
+\bibliographystyle{plain}
+\begin{thebibliography}{99}
+
+\bibitem{Everett1957}
+H.~Everett,
+``Relative state'' formulation of quantum mechanics,
+\textit{Rev.\ Mod.\ Phys.}\ \textbf{29}, 454 (1957).
+
+\bibitem{Wigner1961}
+E.~P.~Wigner,
+Remarks on the mind-body question,
+in \textit{The Scientist Speculates}, ed.\ I.~J.~Good
+(Heinemann, 1961).
+
+\bibitem{FR2018}
+D.~Frauchiger and R.~Renner,
+Quantum theory cannot consistently describe the use of itself,
+\textit{Nat.\ Commun.}\ \textbf{9}, 3711 (2018).
+
+\bibitem{Bong2020}
+K.-W.~Bong \textit{et al.},
+A strong no-go theorem on the Wigner's friend paradox,
+\textit{Nat.\ Phys.}\ \textbf{16}, 1199--1205 (2020).
+
+\bibitem{Wiseman2023}
+H.~M.~Wiseman, E.~G.~Cavalcanti, and E.~G.~Rieffel,
+A ``thoughtful'' local friendliness no-go theorem,
+\textit{Quantum}\ \textbf{7}, 1112 (2023).
+
+\bibitem{Fuchs2014}
+C.~A.~Fuchs, N.~D.~Mermin, and R.~Schack,
+An introduction to QBism with an application to the locality of
+quantum mechanics,
+\textit{Am.\ J.\ Phys.}\ \textbf{82}, 749 (2014).
+
+\bibitem{Rovelli1996}
+C.~Rovelli,
+Relational quantum mechanics,
+\textit{Int.\ J.\ Theor.\ Phys.}\ \textbf{35}, 1637 (1996).
+
+\bibitem{Griffiths2002}
+R.~B.~Griffiths,
+\textit{Consistent Quantum Theory}
+(Cambridge University Press, 2002).
+
+\bibitem{Spekkens2007}
+R.~W.~Spekkens,
+Evidence for the epistemic view of quantum states: A toy theory,
+\textit{Phys.\ Rev.\ A}\ \textbf{75}, 032110 (2007).
+
+
+\bibitem{K9S12_Zenodo}
+V.~Nguyen Xuan,
+Have optical Wigner's friend experiments been blind to a geometric
+degree of freedom?
+Zenodo,
+\href{https://doi.org/10.5281/zenodo.20506279}%
+     {DOI:~10.5281/zenodo.20506279} (2026).
+
+\end{thebibliography}
+
+% ============================================================
+\appendix
+\section{Supplemental Proofs}
+\label{app:proofs}
+% ============================================================
+
+\subsection{Theorem T8: K5\_prospective Frequency Bridge}
+\label{app:T8}
+
+\begin{theorem}[T8 --- K5\_prospective Frequency Bridge]\label{thm:T8}
+Under K1--K8 binary primitives and a uniform context set $\Kctx$,
+\[
+  \fperp(o, \Kctx)
+  = \mathbb{E}\bigl[\mathbf{1}(\textup{K5\_prospective fires on }k_o^*
+    \textup{ vs }k_j \in \Kctx)\bigr].
+\]
+The fraction form \eqref{eq:fperp} is the unique functional form
+consistent with binary K-side primitives.
+\end{theorem}
+
+\begin{proof}
+For each $k_j \in \Kctx$, define indicator
+$I_j(o) = 1$ iff K5\_prospective fires on $k_o^*$ vs $k_j$
+(equivalently $k_o^* \perp_K k_j$, i.e.\ $o(k_j) \neq o$ within the shared
+$\CK$); else $I_j(o) = 0$. Then:
+\[
+  \frac{1}{|\Kctx|}\sum_j I_j(o)
+  = \frac{|\{k_j : k_o^* \perp_K k_j\}|}{|\Kctx|}
+  = \fperp(o, \Kctx).
+\]
+Uniformity of weight ($w_j = 1$ for all $j$) is structurally forced:
+all K-side primitives ($\perp$, Auth, $V$, cert, temporal order) are
+binary-valued in $\{0,1\}$ (K2--K6); no continuous
+contradiction-strength metric exists in K1--K8.
+Four natural alternative weightings are each independently eliminated
+by structural constraints: (A1) quantum-overlap weight is circular
+(uses Born-rule probabilities that K9\_E is intended to modify);
+(A2) outcome-independent binary indicator collapses to $\delta P = 0$
+under normalization; (A3) Auth-weighted form reduces to uniform because
+Auth $\in \{0,1\}$ (K6); (A4) temporal-decay weight introduces a new
+free parameter beyond the $\beta$ budget. The fraction form is the
+unique survivor.
+\end{proof}
+
+\subsection{Born Rule Corollary: Proof}
+\label{app:born}
+
+Restated for completeness: at $\beta = 0$,
+$Z_E = \sum_{o'}\mathrm{Tr}(E_{o'}\rho) = \mathrm{Tr}(\mathbf{1}\rho) = 1$
+by POVM completeness, so $P(o) = \mathrm{Tr}(E_o\rho)$. \qed
+
+\subsection{Restricted $\varphi_R$ Existence (Summary)}
+\label{app:phiR}
+
+% Source: phi_restricted_existence_v1_0.md v1.0 (2026-06-01, Class C THEOREM)
+% RCA: 3-Round 4.2/5 PASS -- safe to include. Notation sanitized (no VVV-QMRF branding).
+
+\begin{theorem}[Restricted existence of $\varphi_R$]\label{thm:phiR}
+Let $K_R$ be a K-space satisfying K1--K8, with outcome set
+$O = \{o_1,\ldots,o_m\}$ for measurement $M \in K_R$.
+Let $\mathcal{H}$ be a Hilbert space with $\dim\mathcal{H} \ge |O|$ and
+orthonormal basis $\{|o_i\rangle\}_{i=1}^{m}$.
+Define
+\begin{equation}
+  \varphi_R(k) \;:=\;
+  \begin{cases}
+    |o\rangle\langle o| & \text{if } V(k) = 1 \;\; (o = \text{outcome of }k),\\
+    0_{\mathcal{B}(\mathcal{H})} & \text{if } V(k) = 0.
+  \end{cases}
+  \label{eq:phiR}
+\end{equation}
+Then $\varphi_R \colon K_R \to \mathcal{P}(\mathcal{H})\cup\{0\}$ is total
+and well-defined, and satisfies necessary conditions $N_1$--$N_8$ and $N_T$
+derived from K1--K8 and Theorems T1--T3 (verified in
+Table~\ref{tab:phi_verification}; T2 and T3 are stated in
+Appendix~\ref{app:bridges}). For $N_T$: when $K_{R_1}\perp_K K_{R_2}$, the two
+registrations stem from \emph{incompatible} measurements whose outcome
+projectors are non-orthogonal on the shared registration Hilbert space, so
+$[\iota(\varphi_R(k_1)),\varphi_R(k_2)]\ne 0$. (The orthonormal basis
+$\{|o_i\rangle\}$ indexes the outcomes of a \emph{single} measurement $M$;
+outcomes of distinct incommensurable measurements are not mutually orthogonal,
+which is precisely what makes the commutator nonzero.)
+
+For $N \ge 3$ registering systems, a unique colimit extension
+$\varphi_{\mathrm{colim}}\colon \Kjoint(R_1,\ldots,R_N) \to
+\mathcal{B}(\mathcal{H}_{\mathrm{joint}})$
+exists via the universal property of T4-H (Full Theorem, 2026-05-28)
+and satisfies conditions $\varphi$-N1 (uniqueness), $\varphi$-N2
+(associativity, conditional on T5), and $\varphi$-N3 (pair commutator).
+The $N \ge 3$ extension is \emph{Class~C conditional}: $\varphi$-N2 inherits
+the conditional status of T5 (\S\ref{sec:theorems}, \S\ref{open:colimit}),
+whose proof is given in Appendix~\ref{app:T5}. The $N = 2$ restricted
+existence result above is unconditional (Class~C theorem).
+\end{theorem}
+
+\begin{proof}
+Construction~\eqref{eq:phiR} is explicit and unambiguous (K1 admission
+guarantees well-definedness; K4 dichotomy covers all $k \in K_R$). Every
+$V(k)=1$ event of $M$ carries a genuine outcome $o\in O$, so $|o\rangle$ is a
+basis vector; the reserved null slot $o=\emptyset$ has $V=0$ by K4(b) and maps
+to $0_{\mathcal{B}(\mathcal{H})}$, so $\varphi_R$ is total on $K_R$.
+Table~\ref{tab:phi_verification} verifies each condition.
+For $N \ge 3$: the compatible family $\{\iota_i \circ \varphi_i\}$ satisfies
+T4-H Step~4 universality (Appendix~\ref{app:T4H}); the unique mediating
+morphism $\varphi_{\mathrm{colim}}$ is set equal to it (T5 associativity:
+Appendix~\ref{app:T5}).
+\end{proof}
+
+\begin{table}[ht]
+\centering\small
+\caption{Verification of necessary conditions $N_1$--$N_8$ and $N_T$
+for $\varphi_R$ defined by Eq.~\eqref{eq:phiR}.}
+\label{tab:phi_verification}
+\begin{tabular}{@{}l l p{5.2cm} c@{}}
+\toprule
+\textbf{Cond.} & \textbf{Source} & \textbf{Verification} & \textbf{OK} \\
+\midrule
+$N_1$ (well-def.)   & K1 & $\varphi_R$ total; image closed under Lüders products & \checkmark \\
+$N_2$ (Lüders ord.) & K2 & $t(k_1){<}t(k_2)\Rightarrow P_{o_2}P_{o_1}P_{o_2}$ Lüders & \checkmark \\
+$N_3$ (cert-refl.)  & K3 & $P_o^2{=}P_o{=}P_o^\dagger$; Im$(\varphi_R)\subseteq\mathrm{Proj}\cup\{0\}$ & \checkmark \\
+$N_4$ (valid-pos.)  & K4 & $V{=}1\Rightarrow|o\rangle\langle o|\ge 0$; isNull$\Rightarrow\varphi_R{=}0$ & \checkmark \\
+$N_5$ (inval.-abs.) & K5 & $V\to 0$ absorbing: $\varphi_R{=}0_{\mathcal{B}(\mathcal{H})}$ & \checkmark \\
+$N_6$ (auth.-comp.) & K6 & Auth$=1\Rightarrow P_{o_2}P_{o_1}\ne 0$ (necessary); sufficiency: boundary & \checkmark$^*$ \\
+$N_7$ (closure-fin.)& K7 & $\varphi_{\mathrm{final}}$ fixed at $t_{\mathrm{close}}$; no post-closure change & \checkmark \\
+$N_8$ (embed.-nat.) & K8 & $\varphi_X\circ i = \iota\circ\varphi_R$; $\iota(P_o)=P_o\otimes\mathbf{1}$ & \checkmark \\
+$N_T$ (K-incomm.)   & T2/T3 & $K_{R_1}{\perp_K}K_{R_2}\Rightarrow[\iota(\varphi_R(k_1)),\varphi_R(k_2)]\ne 0$ (non-orth.\ projectors) & \checkmark \\
+\bottomrule
+\end{tabular}\\[4pt]
+\raggedright\footnotesize
+$^*$Necessary direction holds; the converse (sufficiency,
+$P_{o_2}P_{o_1}\ne 0 \Rightarrow \mathrm{Auth}=1$) is the boundary of
+Theorem~A (box below). $N_T$ holds because incommensurable registrations map
+to non-orthogonal projectors on the shared registration Hilbert space
+(Appendix~\ref{app:bridges}, T2/T3).
+\end{table}
+
+\begin{tcolorbox}[colback=gray!8,colframe=gray!50,
+    title=\textbf{Boundary of restricted existence},fonttitle=\small]
+\small
+The map $\varphi_R$ on $\mathcal{P}(\mathcal{H})\cup\{0\}$ is proven.
+Two structural limits apply, with proof sketches below:
+
+\medskip
+\textbf{Theorem A ($N_6$ sufficiency boundary).}
+The necessary direction $\mathrm{Auth}(k_2\to k_1,\CK)=1 \Rightarrow
+P_{o_2}P_{o_1}\ne 0$ holds; the converse is \emph{not provable} from
+$\mathcal{B}(\mathcal{H})$ alone. Sketch (4 steps):
+\textup{(1)} $\mathcal{B}(\mathcal{H})$ encodes only operator-algebraic data
+(projectors, products, commutators, spectra), not epistemic-sphere membership
+or authority scope;
+\textup{(2)} by K6, $\mathrm{Auth}=1$ requires $\CK$-sphere co-membership~(a)
+and $k_1\in\mathrm{scope}(D_{\mathrm{joint}})$~(c), both K-side predicates with
+no operator-algebraic definition;
+\textup{(3)} two projectors with $P_{o_2}P_{o_1}\ne 0$ can lie in
+\emph{different} $\CK$-spheres (independent experiments sharing $\mathcal{H}$),
+which $\mathcal{B}(\mathcal{H})$ cannot distinguish from co-membership;
+\textup{(4)} hence no $\mathcal{B}(\mathcal{H})$-only proof of the converse
+exists.
+
+\medskip
+\textbf{Theorem B (global commutativity boundary, $N>2$).}
+The pairwise conditions $K_{R_i}\perp_K K_{R_j}\Rightarrow
+[\iota_i(P_{o_i}),\iota_j(P_{o_j})]\ne 0$ hold, but global $K_{\mathrm{joint}}$
+path-commutativity is \emph{not} determined by them. Sketch (2 steps):
+\textup{(1)} $K_{\mathrm{joint}}(R_1,\ldots,R_N)=\mathrm{colim}(D)$ is fixed by
+a global universal property (Appendix~\ref{app:T4H}, Step~4), and
+path-commutativity is a global categorical property, not decomposable into
+pairwise relations without the coherence supplied by T5
+(Appendix~\ref{app:T5});
+\textup{(2)} the $N(N-1)/2$ pairwise commutators encode only binary relations,
+so no pairwise $\mathcal{B}(\mathcal{H})$ data recovers global colimit
+coherence.
+
+\medskip
+These are characterized limits, not defects, and reflect current understanding
+rather than permanent impossibility: an operator-algebraic encoding of
+$\CK$-sphere membership would resolve Theorem~A, and a
+$\mathcal{B}(\mathcal{H})$-expressible global coherence condition would resolve
+Theorem~B.
+
+\medskip
+\noindent
+$\varphi_R$ is a \emph{correspondence map} with precisely characterized
+limits. $\mathrm{Im}(\varphi_R) = \{|o\rangle\langle o|\} \cup \{0\}$
+is the tightest $\mathcal{B}(\mathcal{H})$ subset needed; $\varphi_R$ does
+not map to density operators, observables, or any operator without a
+direct K-registration analogue.
+\end{tcolorbox}
+
+% ============================================================
+\section{Level-4 Structural Inputs}
+\label{app:level4}
+% ============================================================
+
+Axioms K5--K7 and the bridge theorems reference four structural predicates
+supplied by the experimental-design layer (``Level~4''). They are collected
+here for self-containedness; none modifies K1--K8.
+
+\paragraph{Shared validity demand $D_{\mathrm{joint}}$.}
+$D_{\mathrm{joint}}(A,B,\mathrm{Arch}) \in \{0,1\}$ evaluates to $1$ when the
+comparison architecture $\mathrm{Arch}$ (the experimental design) demands that
+$A$ and $B$ support one shared registration-validity claim. $D_{\mathrm{joint}}$
+is a structural feature of $\mathrm{Arch}$, not imposed by any single observer.
+
+\paragraph{Joint-check predicate $\mathrm{requires\_K\_joint}$.}
+$\mathrm{requires\_K\_joint}(A,B) = 1$ iff all of:
+(a)~$A$ and $B$ are each valid or provisionally valid within their own K-side;
+(b)~$A,B$ are brought under a shared $D_{\mathrm{joint}}$;
+(c)~$D_{\mathrm{joint}}$ requires both to be assessed as parts of the same
+registration target, history, counterfactual claim, or validity claim;
+(d)~the truth of $D_{\mathrm{joint}}$ cannot be evaluated while leaving $A,B$ in
+fully independent K-sides;
+(e)~preserving $D_{\mathrm{joint}}$ requires a $\Kjoint$ in which $A,B$ are
+jointly valid.
+It is $0$ iff no shared $D_{\mathrm{joint}}$ is imposed, or $D_{\mathrm{joint}}$
+can be evaluated without embedding $A,B$ into one candidate $\Kjoint$.
+
+\paragraph{Comparison context $\CK$.}
+$\CK$ is the minimal shared frame in which two registration acts are evaluated
+for compatibility. It requires: (a)~both acts admitted into the same comparison
+domain; (b)~both indexed to the same registration target; (c)~comparison does
+not presuppose joint validity. $\CK$ is strictly weaker than
+$\mathrm{AdmJoint}$: it enables comparison without requiring that joint validity
+be preserved.
+
+\paragraph{Admissible joint space $\mathrm{AdmJoint}$.}
+$\mathrm{AdmJoint}(\Kjoint; A, B) = 1$ iff there exist embeddings
+$i_A\colon A \to \Kjoint$ and $i_B\colon B \to \Kjoint$ such that:
+\begin{itemize}[noitemsep,topsep=2pt]
+  \item[(i)]   the embeddings preserve act, outcome, certification,
+               registration time/order, and validity;
+  \item[(ii)]  self-certification remains intrinsic to each embedded act;
+  \item[(iii)] the six validity conditions below remain satisfied for each
+               embedded structure;
+  \item[(iv)]  no required registration-state update in $\Kjoint$ invalidates
+               either embedded structure while both are still claimed as
+               jointly valid;
+  \item[(v)]   $\Kjoint$ does not import an external certifier as the source of
+               self-certification.
+\end{itemize}
+The six \emph{validity conditions} for a registered measurement are: physical
+occurrence; admission across the K-side boundary; process membership;
+self-certification ($\sigma_R(M)=1$); default validity ($V=1$); and
+non-invalidation (no later contradicting registration).
+
+% ============================================================
+\section{Supporting Bridge Theorems: T2, T3, and AJVS}
+\label{app:bridges}
+% ============================================================
+
+These results support T9 and the EWF application
+(Remark in \S\ref{sec:theorems}). T2 and T3 are Class~D; AJVS is a declared
+semantic postulate. None modifies K1--K8.
+
+\subsection{T2 --- K-Incommensurability Derivation}
+
+\begin{theorem}[$\perp_K$ derivation --- T2]\label{thm:T2}
+For K-spaces $K_A, K_B$: $K_A \perp_K K_B$ iff
+$\mathrm{requires\_K\_joint}(A,B) = 1$ and no admissible $\Kjoint$ exists
+satisfying $\mathrm{AdmJoint}$~(i)--(v) (Appendix~\ref{app:level4}) while
+preserving K4 (default validity) and K5 (no invalidation) for both embedded
+sides simultaneously.
+\end{theorem}
+
+\noindent\emph{Derivation (K5-conflict trace).}
+Under a candidate $\Kjoint$, suppose $\exists\, k_A \in i_A(K_A),
+k_B \in i_B(K_B)$ with $k_B \perp k_A$ within $\CK$ and
+$\Auth(k_B \to k_A, \CK) = 1$ (K6). Then K5 forces $\Vp(k_A) \to 0$ or
+$\Vp(k_B) \to 0$, violating $\mathrm{AdmJoint}$~(iv) (no invalidation while both
+are jointly claimed valid). Hence no admissible $\Kjoint$ exists, i.e.\
+$K_A \perp_K K_B$. The K5 conflict is \emph{sufficient}, not necessary:
+admissibility can also fail by a closure lock (K7: if $K_A$ has already closed,
+no new act demanded by $D_{\mathrm{joint}}$ can be instantiated, so
+$\mathrm{AdmJoint}$~(i) fails with no K5 contradiction).
+
+\subsection{T3 --- Extended Wigner's Friend Bridge}
+
+\begin{theorem}[Bridge\_EWF --- T3]\label{thm:T3}
+In an Extended Wigner's Friend configuration with laboratory time order
+$t_F < t_W$, where $M_F$ registers a definite outcome $o_F$
+($k_F = \bk{M_F, o_F, 1, t_F, 1}$) and $M_W$ registers the same laboratory as a
+coherent superposition in which no definite $o_F$ is preserved
+($k_W = \bk{M_W, o_W, 1, t_W, 1}$): under a candidate $\Kjoint$,
+$k_W \perp k_F$ within $\CK$ with $\Auth(k_W \to k_F, \CK) = 1$, so K5 forces
+$V(k_F) \to 0$ (the authority direction $k_W \to k_F$, fixed by the laboratory
+order $t_F < t_W$, makes $k_F$ the invalidated side; at the admissibility level
+it suffices that at least one of $V(k_F), V(k_W)$ drop), violating
+$\mathrm{AdmJoint}$~(iv).
+Consequently $M_W \perp M_F$ at the act level.
+\end{theorem}
+
+\noindent The derivation presupposes the EWF ordering $t_F < t_W$ (it is not
+stated for $t_W < t_F$) and is conditional on AJVS below.
+
+\subsection{AJVS --- Axiom of Joint Validity Semantics}
+
+\begin{postulate}[AJVS]\label{post:AJVS}
+A candidate $\Kjoint$ satisfies $D_{\mathrm{joint}}(A,B)$ iff it hosts the
+\emph{original} K-side validity claims of both $K_A$ and $K_B$ as jointly
+evaluable first-order claims in a shared $\CK$. Hosting only meta-descriptions
+of the form ``within $K_A$, $M_A$ registered $o_A$'' does \emph{not} satisfy
+$D_{\mathrm{joint}}$: relativizing registration contents to sub-context
+descriptions abandons $D_{\mathrm{joint}}$ rather than satisfying it.
+\end{postulate}
+
+\noindent AJVS is a declared semantic postulate, separate from K1--K8. If AJVS
+is rejected, the T3 conclusion does not follow from K1--K8 alone; K1--K8 remain
+structurally valid, and only the semantic scope of $D_{\mathrm{joint}}$ changes.
+
+% ============================================================
+\section{N-Observer Colimit Existence (T4-H)}
+\label{app:T4H}
+% ============================================================
+
+Let $\mathcal{C}_K$ be the category whose objects are K-spaces (sets satisfying
+K1--K8) and whose morphisms are K1--K8-preserving embeddings.
+
+\begin{theorem}[Colimit existence --- T4-H]\label{thm:T4H}
+Every finite diagram $D$ in $\mathcal{C}_K$ has a colimit $\mathrm{colim}(D)$
+in $\mathcal{C}_K$.
+\end{theorem}
+
+\noindent\emph{Verification (4 steps).}
+\begin{itemize}[topsep=2pt]
+  \item[\textbf{S1}] \textbf{Category.} $\mathcal{C}_K$ has identities,
+        composition, and associativity of K1--K8-preserving embeddings.
+  \item[\textbf{S2}] \textbf{Construction.}
+        $K_{\mathrm{colim}} = \bigl(\coprod_i K_i\bigr)/\!\sim$, with all five
+        tuple fields well-defined: $t$ assigned lexicographically and $V$ as the
+        embedding-time snapshot (K8); the order $<_{\mathrm{colim}}$ is the
+        transitive closure of the embedded orders plus cross-structure relations
+        (T1-generalized).
+  \item[\textbf{S3}] \textbf{K1--K8 preservation.} All eight axioms survive the
+        quotient. Key lemma (T-PRES): K8-morphisms preserve $t$, so
+        $t_{\mathrm{colim}}([k,i]) := t_i(k)$ is representative-independent;
+        K2 acyclicity follows, K5 cross-component $\perp$ is content-based, and
+        the monotone $V$-dynamics are non-contradictory.
+  \item[\textbf{S4}] \textbf{Universal property.} For any compatible cocone
+        $\{f_i\}$, the map $u([k,i]) := f_i(k)$ is well-defined (diagram
+        compatibility $+$ T-PRES), K8-preserving, and unique.
+\end{itemize}
+Hence $K_{\mathrm{colim}}$ exists, satisfies K1--K8, and is universal. The
+construction is constructive for $N=2$ (this is T1) and extends to all finite
+$N$.
+
+% ============================================================
+\section{Associativity of $\Kjoint$ (T5)}
+\label{app:T5}
+% ============================================================
+
+We prove T5 (\S\ref{sec:theorems}) conditional on: \textup{(C1)}~T4-H
+(Appendix~\ref{app:T4H}); \textup{(C2)}~$\mathrm{requires\_K\_joint} = 1$ with
+$\mathrm{AdmJoint}$ satisfied for each pairwise and triple construction;
+\textup{(C3)}~the global commutativity condition F7d, established below.
+
+\begin{theorem}[Associativity --- T5, conditional]\label{thm:T5proof}
+Under \textup{(C1)--(C3)}:
+$\Kjoint\bigl(\Kjoint(A,B), C\bigr) \cong \Kjoint(A,B,C)$
+as K1--K8-structured sets.
+\end{theorem}
+
+\noindent\textbf{Lemma B1 (field preservation).}
+Any K8-preserving morphism preserves all five tuple fields as equalities; in
+particular $t_{\mathrm{colim}}([k,i]) = t_i(k)$ is path-independent (T-PRES).
+
+\noindent\textbf{Lemma B2 (content-based K5).}
+For $[k,i], [k',j]$ in the colimit with $i \ne j$, K5 fires iff
+\textup{(i)}~$i \ne j$ (observer identity),
+\textup{(ii)}~$o([k,i]) \ne o([k',j])$ (outcome content), and
+\textup{(iii)}~$t_{\mathrm{colim}}([k,i]), t_{\mathrm{colim}}([k',j])$ are
+co-temporal. All three depend only on tuple content, hence are path-independent.
+
+\noindent\textbf{Theorem B3 (F7d holds).}
+By B1--B2, the set of K5 events firing against any $k$ is identical along the
+incremental and one-shot construction paths; therefore $V$ is path-independent
+and the global commutativity condition F7d holds.
+
+\noindent\textbf{Lemmas A1--A4 (universal property).}
+$\Kjoint(A,B)$ and the iterate $\Kjoint(\Kjoint(A,B),C)$ are objects of
+$\mathcal{C}_K$ (T4-H Step~3). The composed embeddings $j_A, j_B, j_C$ form a
+valid cocone for the 3-diagram $D = \{K_A, K_B, K_C\}$ (B3 gives $V$-agreement),
+and $\Kjoint(\Kjoint(A,B),C)$ satisfies the universal property for $D$: the T1
+universal property gives a unique $u_{AB}$, and the T4-H universal property
+(Appendix~\ref{app:T4H}, S4) then gives a unique mediating $u$, with uniqueness
+inherited from both.
+
+\begin{proof}[Proof of T5]
+Both $\Kjoint(\Kjoint(A,B),C)$ (Lemmas A1--A4) and $\Kjoint(A,B,C)$
+(T4 $+$ T4-H) are colimits of the same diagram $D$. Two colimits of one diagram
+are canonically isomorphic, so the unique mediating morphisms compose to
+identities in both directions, and the isomorphism is K1--K8-preserving. Thus
+$\Kjoint$ is associative up to K1--K8-preserving isomorphism. T5 asserts K-side
+structural isomorphism only --- not $\rho$-side associativity, physical outcome
+composition, or any modification of standard QM.
+\end{proof}
+
+\end{document}
